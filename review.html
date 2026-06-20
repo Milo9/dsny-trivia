@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question Flag Review</title>
+  <style>
+    body { font-family: monospace; background: #111; color: #eee; padding: 24px; max-width: 900px; margin: 0 auto; }
+    h1 { color: #ffd700; margin-bottom: 4px; }
+    .meta { color: #888; font-size: 13px; margin-bottom: 24px; }
+    .controls { display: flex; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; }
+    button { background: #222; color: #eee; border: 1px solid #444; padding: 7px 14px; cursor: pointer; font-family: monospace; font-size: 13px; border-radius: 4px; }
+    button:hover { background: #333; }
+    button.danger { border-color: #b00; color: #f88; }
+    button.danger:hover { background: #2a0000; }
+    .empty { color: #666; font-size: 15px; padding: 40px 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th { text-align: left; padding: 8px 10px; background: #1a1a1a; color: #ffd700; border-bottom: 1px solid #333; white-space: nowrap; }
+    td { padding: 10px 10px; border-bottom: 1px solid #222; vertical-align: top; }
+    tr:hover td { background: #1a1a1a; }
+    .q-id    { color: #888; width: 40px; }
+    .q-text  { color: #fff; max-width: 280px; }
+    .q-ans   { color: #4ade80; }
+    .q-diff  { }
+    .q-cat   { color: #a78bfa; }
+    .q-who   { color: #60a5fa; white-space: nowrap; }
+    .q-time  { color: #888; white-space: nowrap; font-size: 11px; }
+    .q-note  { color: #fbbf24; font-style: italic; }
+    .badge-easy   { color: #4ade80; }
+    .badge-medium { color: #fbbf24; }
+    .badge-hard   { color: #f87171; }
+    .actions td { padding: 12px 10px; }
+    .resolved { opacity: 0.35; }
+    .tag-resolved { color: #888; font-size: 11px; }
+    #json-out { display: none; background: #1a1a1a; border: 1px solid #333; padding: 16px; font-size: 12px; overflow-x: auto; white-space: pre; margin-top: 16px; color: #ccc; border-radius: 4px; }
+  </style>
+</head>
+<body>
+<h1>🚩 Flag Review</h1>
+<p class="meta">Flagged questions submitted by players. Open this page in the same browser where the game is running.</p>
+
+<div class="controls">
+  <button onclick="loadFlags()">↻ Refresh</button>
+  <button onclick="exportJSON()">⬇ Export JSON</button>
+  <button onclick="clearResolved()">✓ Remove Resolved</button>
+  <button class="danger" onclick="clearAll()">✕ Clear All Flags</button>
+</div>
+
+<div id="output"></div>
+<pre id="json-out"></pre>
+
+<script>
+const STORAGE_KEY = 'disney_trivia_v1';
+
+function load() {
+  try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch { return {}; }
+}
+function save(data) { localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); }
+function getFlags() { return load().flags || []; }
+
+function formatDate(iso) {
+  try {
+    const d = new Date(iso);
+    return d.toLocaleDateString('en-US', {month:'short',day:'numeric',year:'numeric'}) + ' ' +
+           d.toLocaleTimeString('en-US', {hour:'numeric',minute:'2-digit'});
+  } catch { return iso; }
+}
+
+function resolveFlag(idx) {
+  const data = load();
+  if (!data.flags) return;
+  data.flags[idx]._resolved = true;
+  save(data);
+  loadFlags();
+}
+
+function unresolveFlag(idx) {
+  const data = load();
+  if (!data.flags) return;
+  delete data.flags[idx]._resolved;
+  save(data);
+  loadFlags();
+}
+
+function deleteFlag(idx) {
+  const data = load();
+  if (!data.flags) return;
+  data.flags.splice(idx, 1);
+  save(data);
+  loadFlags();
+}
+
+function clearResolved() {
+  if (!confirm('Remove all resolved flags?')) return;
+  const data = load();
+  data.flags = (data.flags || []).filter(f => !f._resolved);
+  save(data);
+  loadFlags();
+}
+
+function clearAll() {
+  if (!confirm('Delete ALL flags? This cannot be undone.')) return;
+  const data = load();
+  data.flags = [];
+  save(data);
+  loadFlags();
+}
+
+function exportJSON() {
+  const el = document.getElementById('json-out');
+  if (el.style.display === 'none' || el.style.display === '') {
+    el.style.display = 'block';
+    el.textContent = JSON.stringify(getFlags(), null, 2);
+  } else {
+    el.style.display = 'none';
+  }
+}
+
+function loadFlags() {
+  const flags = getFlags();
+  const out   = document.getElementById('output');
+
+  if (flags.length === 0) {
+    out.innerHTML = '<p class="empty">No flags yet — looks like the questions are all good! 🎉</p>';
+    return;
+  }
+
+  const pending  = flags.filter(f => !f._resolved).length;
+  const resolved = flags.length - pending;
+
+  let html = `<p class="meta">${flags.length} total &nbsp;·&nbsp; ${pending} pending &nbsp;·&nbsp; ${resolved} resolved</p>`;
+  html += '<table><thead><tr>';
+  html += '<th>#</th><th>Q ID</th><th>Question</th><th>Correct Answer</th><th>Diff</th><th>Cat</th><th>By</th><th>Comment</th><th>Date</th><th>Action</th>';
+  html += '</tr></thead><tbody>';
+
+  flags.forEach((f, i) => {
+    const rowClass = f._resolved ? ' class="resolved"' : '';
+    const diffClass = `badge-${f.difficulty || 'easy'}`;
+    html += `<tr${rowClass}>`;
+    html += `<td class="q-id">${i + 1}</td>`;
+    html += `<td class="q-id">${f.questionId}</td>`;
+    html += `<td class="q-text">${esc(f.questionText)}</td>`;
+    html += `<td class="q-ans">${esc(f.correctAnswer)}</td>`;
+    html += `<td class="${diffClass}">${f.difficulty || '—'}</td>`;
+    html += `<td class="q-cat">${f.category || '—'}</td>`;
+    html += `<td class="q-who">${esc(f.reportedBy || '—')}</td>`;
+    html += `<td class="q-note">${f.comment ? esc(f.comment) : '<span style="color:#444">—</span>'}</td>`;
+    html += `<td class="q-time">${formatDate(f.timestamp)}</td>`;
+    html += `<td style="white-space:nowrap">`;
+    if (f._resolved) {
+      html += `<span class="tag-resolved">✓ resolved</span> `;
+      html += `<button onclick="unresolveFlag(${i})">Undo</button> `;
+    } else {
+      html += `<button onclick="resolveFlag(${i})">✓ Resolve</button> `;
+    }
+    html += `<button class="danger" onclick="deleteFlag(${i})">Delete</button>`;
+    html += `</td></tr>`;
+  });
+
+  html += '</tbody></table>';
+  out.innerHTML = html;
+}
+
+function esc(str) {
+  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+loadFlags();
+</script>
+</body>
+</html>

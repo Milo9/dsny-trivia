@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>✨ Disney Trivia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+
+  <!-- HOME SCREEN -->
+  <div class="screen" id="screen-home">
+    <div class="home-header">
+      <div class="magic-star">✨</div>
+      <h1 class="app-title">Disney Trivia</h1>
+      <p class="app-subtitle">Test Your Disney Knowledge!</p>
+    </div>
+    <div class="section-label">Who's playing?</div>
+    <div id="user-list" class="user-list"></div>
+    <div id="add-user-section">
+      <button class="btn-secondary" id="btn-show-add-user">+ Add Player</button>
+      <div id="add-user-form" class="hidden">
+        <input type="text" id="new-user-input" placeholder="Enter name…" maxlength="20" autocomplete="off">
+        <div class="form-row">
+          <button class="btn-primary" id="btn-add-user">Add Player</button>
+          <button class="btn-ghost" id="btn-cancel-add-user">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <button class="btn-leaderboard" id="btn-go-leaderboard">🏆 Leaderboard</button>
+  </div>
+
+  <!-- SETTINGS SCREEN -->
+  <div class="screen hidden" id="screen-settings">
+    <div class="screen-header">
+      <button class="btn-back" id="btn-settings-back">← Back</button>
+      <h2 class="screen-title gold">Ready, <span id="settings-user-name"></span>?</h2>
+    </div>
+    <div class="settings-body">
+      <div class="setting-group">
+        <div class="setting-label">Difficulty</div>
+        <div class="pill-group" id="difficulty-group">
+          <button class="pill active" data-value="all">All</button>
+          <button class="pill" data-value="easy">Easy</button>
+          <button class="pill" data-value="medium">Medium</button>
+          <button class="pill" data-value="hard">Hard</button>
+        </div>
+      </div>
+      <div class="setting-group">
+        <div class="setting-label">Categories</div>
+        <div class="category-grid" id="category-grid">
+          <label class="cat-chip"><input type="checkbox" value="movies" checked><span>🎬 Movies</span></label>
+          <label class="cat-chip"><input type="checkbox" value="characters" checked><span>🐭 Characters</span></label>
+          <label class="cat-chip"><input type="checkbox" value="parks" checked><span>🎢 Disney Parks</span></label>
+          <label class="cat-chip"><input type="checkbox" value="walt" checked><span>🎩 Walt Disney</span></label>
+          <label class="cat-chip"><input type="checkbox" value="cruise" checked><span>🚢 Cruise Line</span></label>
+          <label class="cat-chip"><input type="checkbox" value="music" checked><span>🎵 Music & Songs</span></label>
+          <label class="cat-chip"><input type="checkbox" value="pixar" checked><span>🤖 Pixar</span></label>
+        </div>
+        <div id="cat-error" class="error-text hidden">Select at least one category.</div>
+      </div>
+      <div class="setting-group">
+        <div class="setting-label">Number of Questions</div>
+        <div class="pill-group" id="count-group">
+          <button class="pill active" data-value="10">10</button>
+          <button class="pill" data-value="20">20</button>
+          <button class="pill" data-value="30">30</button>
+          <button class="pill" data-value="50">50</button>
+        </div>
+        <div id="available-hint" class="hint-text"></div>
+      </div>
+      <button class="btn-primary btn-full btn-large" id="btn-start-game">Let's Play! ✨</button>
+    </div>
+  </div>
+
+  <!-- GAME SCREEN -->
+  <div class="screen hidden" id="screen-game">
+    <div class="game-top">
+      <div class="game-meta">
+        <span id="game-progress" class="game-progress">Q 1 of 10</span>
+        <span id="game-cat-badge" class="cat-badge"></span>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px;">
+        <div id="game-score-display" class="game-score">0 ✓</div>
+        <button class="btn-exit" id="btn-exit-game" title="Exit game">✕ Exit</button>
+      </div>
+    </div>
+    <div class="progress-track">
+      <div id="progress-fill" class="progress-fill"></div>
+    </div>
+    <div id="question-diff" class="diff-badge"></div>
+    <div class="question-card">
+      <p id="question-text"></p>
+    </div>
+    <div id="answers-grid" class="answers-grid"></div>
+    <div id="feedback-area" class="feedback-area hidden">
+      <div id="feedback-msg" class="feedback-msg"></div>
+      <div class="feedback-actions">
+        <button class="btn-primary btn-flex" id="btn-next">Next →</button>
+        <button class="btn-flag" id="btn-flag" title="Flag this question">👎 Flag</button>
+      </div>
+      <div id="flag-form" class="flag-form hidden">
+        <input type="text" id="flag-comment" placeholder="What's wrong? (optional)" maxlength="200" autocomplete="off">
+        <div class="form-row">
+          <button class="btn-primary" id="btn-flag-submit">Send Report</button>
+          <button class="btn-ghost" id="btn-flag-cancel">Cancel</button>
+        </div>
+      </div>
+      <div id="flag-thanks" class="flag-thanks hidden">Thanks! Reported. ✓</div>
+    </div>
+  </div>
+
+  <!-- RESULTS SCREEN -->
+  <div class="screen hidden" id="screen-results">
+    <div class="results-header">
+      <div id="results-emoji" class="results-emoji">🎉</div>
+      <h2 id="results-title" class="gold">Great Job!</h2>
+      <div id="results-fraction" class="results-fraction"></div>
+      <div id="results-pct" class="results-pct"></div>
+    </div>
+    <div id="results-breakdown" class="breakdown-list"></div>
+    <div id="missed-section" class="missed-section hidden">
+      <button class="btn-ghost" id="btn-review-missed"></button>
+      <div id="missed-list" class="missed-list hidden"></div>
+    </div>
+    <div class="results-actions">
+      <button class="btn-primary btn-full" id="btn-play-again">Play Again</button>
+      <button class="btn-secondary btn-full" id="btn-results-home">Home</button>
+      <button class="btn-leaderboard" id="btn-results-leaderboard">🏆 Leaderboard</button>
+    </div>
+  </div>
+
+  <!-- LEADERBOARD SCREEN -->
+  <div class="screen hidden" id="screen-leaderboard">
+    <div class="screen-header">
+      <button class="btn-back" id="btn-leaderboard-back">← Back</button>
+      <h2 class="screen-title gold">🏆 Leaderboard</h2>
+    </div>
+    <div id="leaderboard-list" class="leaderboard-list"></div>
+    <div id="leaderboard-empty" class="empty-state hidden">No games played yet — be the first!</div>
+  </div>
+
+</div>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+<script src="questions.js"></script>
+<script src="storage.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
