@@ -94,13 +94,18 @@ service cloud.firestore {
 - Flagging does NOT auto-remove the question; that's always a manual edit to the shard JSON
 
 ## Deploying Changes
-The app is hosted on GitHub Pages from the `main` branch. To push an update:
+The app is hosted on GitHub Pages from the `main` branch. Use the deploy script:
 
+```powershell
+.\deploy.ps1 -Message "your commit message"
+```
+
+`deploy.ps1` stages all changes, commits, and pushes in one step. Omitting `-Message` defaults to `"update app"`. GitHub Pages redeploys automatically within ~1 minute.
+
+**Manual fallback:**
 ```
 git add -A && git commit -m "your message" && git push
 ```
-
-GitHub Pages redeploys automatically within ~1 minute.
 
 ## Key app.js Globals
 | Variable | What it holds |
