@@ -420,6 +420,13 @@ input[type="text"]::placeholder { color: var(--muted); }
 .cat-chip:has(input[value="music"]):has(input:checked)      { border-color: #ec4899; background: rgba(236,72,153,0.13); color: #ec4899; }
 .cat-chip:has(input[value="pixar"]):has(input:checked)      { border-color: #f97316; background: rgba(249,115,22,0.13); color: #f97316; }
 
+.setting-sublabel { font-size: 12px; font-weight: 600; color: var(--muted); }
+
+.cat-chip:has(input:not(:checked)) {
+  opacity: 0.35;
+  text-decoration: line-through;
+}
+
 .hint-text  { font-size: 12px; color: var(--muted); }
 .error-text { font-size: 12px; color: var(--red); }
 
