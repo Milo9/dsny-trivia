@@ -37,7 +37,7 @@
 </head>
 <body>
 <h1>🚩 Flag Review</h1>
-<p class="meta">Flagged questions submitted by players. Open this page in the same browser where the game is running.</p>
+<p class="meta">Flagged questions submitted by players. Reads from Firestore — works from any device.</p>
 
 <div class="controls">
   <button onclick="loadFlags()">↻ Refresh</button>
@@ -46,63 +46,68 @@
   <button class="danger" onclick="clearAll()">✕ Clear All Flags</button>
 </div>
 
-<div id="output"></div>
+<div id="output"><p class="meta">Loading…</p></div>
 <pre id="json-out"></pre>
 
+<!-- Firebase compat SDK (same version as storage.js) -->
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
 <script>
-const STORAGE_KEY = 'disney_trivia_v1';
+firebase.initializeApp({
+  apiKey:            "AIzaSyC_keHyGc1Z46rzqB9wNKJ36wZgHscfGrQ",
+  authDomain:        "disneytrivia-38ac6.firebaseapp.com",
+  projectId:         "disneytrivia-38ac6",
+  storageBucket:     "disneytrivia-38ac6.firebasestorage.app",
+  messagingSenderId: "817552679289",
+  appId:             "1:817552679289:web:1e82c3f0c72eeed2020fa8"
+});
+const db = firebase.firestore();
 
-function load() {
-  try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch { return {}; }
+let cachedFlags = [];
+
+async function fetchFlags() {
+  const snap = await db.collection('flags').get();
+  return snap.docs.map(d => ({ _docId: d.id, ...d.data() }));
 }
-function save(data) { localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); }
-function getFlags() { return load().flags || []; }
 
 function formatDate(iso) {
   try {
     const d = new Date(iso);
     return d.toLocaleDateString('en-US', {month:'short',day:'numeric',year:'numeric'}) + ' ' +
            d.toLocaleTimeString('en-US', {hour:'numeric',minute:'2-digit'});
-  } catch { return iso; }
+  } catch { return iso || '—'; }
 }
 
-function resolveFlag(idx) {
-  const data = load();
-  if (!data.flags) return;
-  data.flags[idx]._resolved = true;
-  save(data);
+async function resolveFlag(docId) {
+  await db.collection('flags').doc(docId).update({ _resolved: true });
   loadFlags();
 }
 
-function unresolveFlag(idx) {
-  const data = load();
-  if (!data.flags) return;
-  delete data.flags[idx]._resolved;
-  save(data);
+async function unresolveFlag(docId) {
+  await db.collection('flags').doc(docId).update({ _resolved: firebase.firestore.FieldValue.delete() });
   loadFlags();
 }
 
-function deleteFlag(idx) {
-  const data = load();
-  if (!data.flags) return;
-  data.flags.splice(idx, 1);
-  save(data);
+async function deleteFlag(docId) {
+  await db.collection('flags').doc(docId).delete();
   loadFlags();
 }
 
-function clearResolved() {
+async function clearResolved() {
   if (!confirm('Remove all resolved flags?')) return;
-  const data = load();
-  data.flags = (data.flags || []).filter(f => !f._resolved);
-  save(data);
+  const flags = await fetchFlags();
+  const batch = db.batch();
+  flags.filter(f => f._resolved).forEach(f => batch.delete(db.collection('flags').doc(f._docId)));
+  await batch.commit();
   loadFlags();
 }
 
-function clearAll() {
+async function clearAll() {
   if (!confirm('Delete ALL flags? This cannot be undone.')) return;
-  const data = load();
-  data.flags = [];
-  save(data);
+  const flags = await fetchFlags();
+  const batch = db.batch();
+  flags.forEach(f => batch.delete(db.collection('flags').doc(f._docId)));
+  await batch.commit();
   loadFlags();
 }
 
@@ -110,15 +115,18 @@ function exportJSON() {
   const el = document.getElementById('json-out');
   if (el.style.display === 'none' || el.style.display === '') {
     el.style.display = 'block';
-    el.textContent = JSON.stringify(getFlags(), null, 2);
+    el.textContent = JSON.stringify(cachedFlags, null, 2);
   } else {
     el.style.display = 'none';
   }
 }
 
-function loadFlags() {
-  const flags = getFlags();
-  const out   = document.getElementById('output');
+async function loadFlags() {
+  const out = document.getElementById('output');
+  out.innerHTML = '<p class="meta">Loading…</p>';
+
+  const flags = await fetchFlags();
+  cachedFlags = flags;
 
   if (flags.length === 0) {
     out.innerHTML = '<p class="empty">No flags yet — looks like the questions are all good! 🎉</p>';
@@ -136,6 +144,7 @@ function loadFlags() {
   flags.forEach((f, i) => {
     const rowClass = f._resolved ? ' class="resolved"' : '';
     const diffClass = `badge-${f.difficulty || 'easy'}`;
+    const docId = f._docId;
     html += `<tr${rowClass}>`;
     html += `<td class="q-id">${i + 1}</td>`;
     html += `<td class="q-id">${f.questionId}</td>`;
@@ -149,11 +158,11 @@ function loadFlags() {
     html += `<td style="white-space:nowrap">`;
     if (f._resolved) {
       html += `<span class="tag-resolved">✓ resolved</span> `;
-      html += `<button onclick="unresolveFlag(${i})">Undo</button> `;
+      html += `<button onclick="unresolveFlag('${docId}')">Undo</button> `;
     } else {
-      html += `<button onclick="resolveFlag(${i})">✓ Resolve</button> `;
+      html += `<button onclick="resolveFlag('${docId}')">✓ Resolve</button> `;
     }
-    html += `<button class="danger" onclick="deleteFlag(${i})">Delete</button>`;
+    html += `<button class="danger" onclick="deleteFlag('${docId}')">Delete</button>`;
     html += `</td></tr>`;
   });
 
