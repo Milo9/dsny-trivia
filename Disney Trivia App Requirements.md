@@ -1,0 +1,13 @@
+- Disney Trivia, everything is fair game that's Disney related except TV Shows.
+- To start Generate 200 questions and answers, but create a system where we can drop in additional questions/answers in the future
+- Make a mix of questions that are Easy, Medium, Hard. Also each question should have a sub category like Disney Parks, Movies, Walt, Disney Cruise Line, etc
+- The game should have some options that the user can control before a game starts:
+	- Difficulty level included
+	- Number of questions
+	- Genre selection (the category designation mentioned above)
+	- What user is playing? By default create users for Kristen and Cara, which functionality for a new person to input a name and create a new user.
+- The game will be hosted online so my wife's sister can also play. I'm thinking something like Github Pages? But we can discuss what is best for this later.
+- The game should have a simple leaderboard that tracks:
+	- Number of questions answered and correct answer percentage per user. 
+- Include basic quality of life features that users will expect.
+- Game design and layout should be mobile friendly so it is playable on an iPhone.

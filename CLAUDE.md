@@ -43,9 +43,8 @@ Screens are `<div class="screen">` elements that get `.hidden` toggled. Only one
 
 **Adding questions:** Append to the `QUESTIONS` array in `questions.js`. Use the next available integer ID. Correct answer must be at index 0.
 
-**Current count:** 200 questions. Target distribution:
-- movies 50, characters 35, parks 30, pixar 30, walt 20, music 20, cruise 15
-- easy ~80, medium ~84, hard ~36
+**Current count:** 500 questions. Distribution:
+- movies 128, characters 90, parks 75, pixar 62, walt 52, music 52, cruise 41
 
 **Removing a question:** Delete its object from the array. IDs do not need to be contiguous — gaps are fine.
 
