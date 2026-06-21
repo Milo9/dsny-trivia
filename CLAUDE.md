@@ -16,6 +16,7 @@ A static single-page trivia app built for Kristen and Cara to practice before a 
 | `questions/manifest.json` | Lists the shard filenames. `app.js` fetches this first, then fetches each shard. |
 | `questions/q-001.json` | Questions 1–250. |
 | `questions/q-002.json` | Questions 251–500. |
+| `questions/q-003.json` | Questions 501–750 (210 active; 40 gaps from audit). |
 | `review.html` | Standalone admin page for reviewing flagged questions. Shares the same Firestore `flags` collection. |
 
 ## The 5 Screens
@@ -42,10 +43,10 @@ Screens are `<div class="screen">` elements that get `.hidden` toggled. Only one
 
 **No TV shows** — the requirement explicitly excludes Disney Channel, streaming series, etc. This is easy to accidentally violate (Mandalorian, WandaVision, DuckTales reboot, etc.) — hold the line.
 
-**Adding questions:** Append JSON objects to the last shard (`questions/q-002.json` is current). Use the next available integer ID. Correct answer must be at index 0. When a shard reaches ~250 questions, create the next shard (`q-003.json`, etc.) and add it to `questions/manifest.json` — no change to `index.html` needed.
+**Adding questions:** Append JSON objects to the last shard (`questions/q-003.json` is current). Use the next available integer ID (751+). Correct answer must be at index 0. When a shard reaches ~250 questions, create the next shard (`q-004.json`, etc.) and add it to `questions/manifest.json` — no change to `index.html` needed.
 
-**Current count:** 491 questions (IDs 1–500, with 9 gaps from removed duplicates/errors). Distribution:
-- movies 128, characters 86, parks 74, pixar 59, walt 51, music 52, cruise 41
+**Current count:** 701 questions (IDs 1–750, with 49 gaps from removed duplicates/errors). Distribution:
+- movies 170, characters 110, parks 106, pixar 90, walt 78, music 82, cruise 65
 
 **Removing a question:** Delete its object from the shard JSON. IDs do not need to be contiguous — gaps are fine.
 
