@@ -293,12 +293,12 @@ function renderGameQuestion() {
 function handleAnswer(selectedIdx) {
   const q         = gameState.questions[gameState.currentIndex];
   const chosen    = shuffledOpts[selectedIdx];
-  const isCorrect = chosen.originalIndex === q.correct;
+  const isCorrect = chosen.originalIndex === 0;
 
   document.querySelectorAll('.answer-btn').forEach(b => b.disabled = true);
 
   document.querySelectorAll('.answer-btn').forEach((b, i) => {
-    if (shuffledOpts[i].originalIndex === q.correct) {
+    if (shuffledOpts[i].originalIndex === 0) {
       b.classList.add(i === selectedIdx ? 'correct' : 'reveal');
     } else if (i === selectedIdx && !isCorrect) {
       b.classList.add('wrong');
@@ -314,7 +314,7 @@ function handleAnswer(selectedIdx) {
     feedbackMsg.textContent = '✓ Correct!';
     feedbackMsg.className   = 'feedback-msg fb-correct';
   } else {
-    feedbackMsg.textContent = `✗ The correct answer was: ${q.answers[q.correct]}`;
+    feedbackMsg.textContent = `✗ The correct answer was: ${q.answers[0]}`;
     feedbackMsg.className   = 'feedback-msg fb-wrong';
   }
 
@@ -372,7 +372,7 @@ async function submitFlag() {
   await storage.flagReport({
     questionId:    q.id,
     questionText:  q.question,
-    correctAnswer: q.answers[q.correct],
+    correctAnswer: q.answers[0],
     allAnswers:    q.answers,
     difficulty:    q.difficulty,
     category:      q.category,
@@ -455,7 +455,7 @@ function renderResults() {
       item.className = 'missed-item';
       item.innerHTML = `
         <div class="missed-q">${a.question.question}</div>
-        <div class="missed-ca">✓ ${a.question.answers[a.question.correct]}</div>
+        <div class="missed-ca">✓ ${a.question.answers[0]}</div>
         <div class="missed-ua">✗ You said: ${a.selectedText}</div>
       `;
       missedList.appendChild(item);
