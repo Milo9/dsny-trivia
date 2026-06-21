@@ -43,10 +43,10 @@ Screens are `<div class="screen">` elements that get `.hidden` toggled. Only one
 
 **No TV shows** — the requirement explicitly excludes Disney Channel, streaming series, etc. This is easy to accidentally violate (Mandalorian, WandaVision, DuckTales reboot, etc.) — hold the line.
 
-**Adding questions:** Append JSON objects to the last shard (`questions/q-003.json` is current). Use the next available integer ID (751+). Correct answer must be at index 0. When a shard reaches ~250 questions, create the next shard (`q-004.json`, etc.) and add it to `questions/manifest.json` — no change to `index.html` needed.
+**Adding questions:** Append JSON objects to the last shard (`questions/q-003.json` is current). Use the next available integer ID (801+). Correct answer must be at index 0. When a shard reaches ~250 questions, create the next shard (`q-004.json`, etc.) and add it to `questions/manifest.json` — no change to `index.html` needed.
 
-**Current count:** 701 questions (IDs 1–750, with 49 gaps from removed duplicates/errors). Distribution:
-- movies 170, characters 110, parks 106, pixar 90, walt 78, music 82, cruise 65
+**Current count:** 751 questions (IDs 1–800, with 49 gaps from removed duplicates/errors). Distribution:
+- movies 181, characters 121, parks 114, pixar 97, walt 82, music 87, cruise 69
 
 **Removing a question:** Delete its object from the shard JSON. IDs do not need to be contiguous — gaps are fine.
 
@@ -126,6 +126,27 @@ git add -A && git commit -m "your message" && git push
 
 ## Players
 Default users seeded on first load: **Kristen** and **Cara**. Seeding is in `FirebaseAdapter._seed()` — it checks if the doc exists before writing, so it's safe to run on every page load. Do not remove them from the seed.
+
+## Question Quality Rules (Lessons from Audits)
+
+These rules were derived from real mistakes found during shard audits. Follow them every time questions are generated.
+
+**Before adding any new question:**
+1. **Cross-shard duplicate check** — Grep all three shard files for key terms (character name, attraction name, film title) before writing. Questions about the same topic often exist already. Easy/obvious topics (Mickey's dog, Donald's nephews, Tinker Bell's dress color, Simba's father) are almost certainly covered — check first.
+
+**Answer structure:**
+2. **Never embed the answer in the question text.** If the question says "What type of animal is Geppetto's cat?" and the answer is "Figaro is a kitten," the word "cat" telegraphs the answer. Ask "What is the name of Geppetto's kitten?" instead.
+3. **Never include explanatory prose in answer strings.** Answers must be short noun phrases, not sentences. Bad: `"Figaro is a kitten"`. Good: `"Figaro"`.
+4. **Never use "All of the above" as a wrong answer** if all the listed options could plausibly be correct. Verify that wrong answers are actually wrong before using them.
+5. **Wrong answers must be wrong.** If a question lists three "wrong" options and all three happen to be correct real-world answers, the question is broken. Replace them with genuinely incorrect options.
+
+**Factual accuracy:**
+6. **Avoid time-sensitive superlatives.** Phrases like "newest," "latest," or "most recent" become false when new things launch. Name the specific year instead: "the ship that launched in 2022" rather than "the newest ship."
+7. **Verify ride/attraction names and statuses.** Brandings change — Rock 'n' Roller Coaster dropped "Starring Aerosmith" at WDW in 2024; Splash Mountain became Tiana's Bayou Adventure in 2024. Check before writing.
+8. **Verify ship-specific facts.** DCL restaurant and venue names vary by ship (After Hours on Magic/Wonder, The District on Dream, Europa on Fantasy, Enchanté on Wish). Never write a question about "the adult area on Disney ships" — pin it to a specific ship.
+
+**Category:**
+9. **Pixar films use `pixar`, not `movies`.** Brave, Coco, Up, Inside Out, Finding Dory, Onward, Luca, Elemental, Toy Story, Monsters Inc., A Bug's Life, Cars, Ratatouille, WALL-E — all are `pixar`. If in doubt, check whether Pixar Animation Studios is the credited studio.
 
 ## What NOT to Do
 - Do not introduce a build step, bundler, or npm unless explicitly asked
