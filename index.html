@@ -10,14 +10,20 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="stars" aria-hidden="true"></div>
+<div id="stars2" aria-hidden="true"></div>
 <div id="app">
 
   <!-- HOME SCREEN -->
   <div class="screen" id="screen-home">
     <div class="home-header">
-      <div class="magic-star">✨</div>
+      <div class="mickey-wrap" aria-hidden="true">
+        <svg class="mickey-svg" xmlns="http://www.w3.org/2000/svg" viewBox="-92 -92 512 422">
+          <circle r="92"/><circle cx="328" r="92"/><circle cx="164" cy="172" r="158"/>
+        </svg>
+      </div>
       <h1 class="app-title">Disney Trivia</h1>
-      <p class="app-subtitle">Test Your Disney Knowledge!</p>
+      <p class="app-subtitle">✨ A Magical Trivia Adventure</p>
     </div>
     <div class="section-label">Who's playing?</div>
     <div id="user-list" class="user-list"></div>
@@ -55,11 +61,11 @@
         <div class="category-grid" id="category-grid">
           <label class="cat-chip"><input type="checkbox" value="movies" checked><span>🎬 Movies</span></label>
           <label class="cat-chip"><input type="checkbox" value="characters" checked><span>🐭 Characters</span></label>
-          <label class="cat-chip"><input type="checkbox" value="parks" checked><span>🎢 Disney Parks</span></label>
+          <label class="cat-chip"><input type="checkbox" value="parks" checked><span>🏰 Disney Parks</span></label>
           <label class="cat-chip"><input type="checkbox" value="walt" checked><span>🎩 Walt Disney</span></label>
-          <label class="cat-chip"><input type="checkbox" value="cruise" checked><span>🚢 Cruise Line</span></label>
+          <label class="cat-chip"><input type="checkbox" value="cruise" checked><span>⛴️ Cruise Line</span></label>
           <label class="cat-chip"><input type="checkbox" value="music" checked><span>🎵 Music & Songs</span></label>
-          <label class="cat-chip"><input type="checkbox" value="pixar" checked><span>🤖 Pixar</span></label>
+          <label class="cat-chip"><input type="checkbox" value="pixar" checked><span>💡 Pixar</span></label>
         </div>
         <div id="cat-error" class="error-text hidden">Select at least one category.</div>
       </div>

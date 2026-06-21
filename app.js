@@ -26,13 +26,21 @@ function initials(name) {
   return name.trim().split(/\s+/).map(w => w[0].toUpperCase()).join('').slice(0, 2);
 }
 
+const DISNEY_AVATARS = ['🐭','👸','🦁','🤠','🐠','❄️','🧚','🧞'];
+
+function disneyAvatar(name) {
+  let h = 0;
+  for (let i = 0; i < name.length; i++) h = (h * 31 + name.charCodeAt(i)) & 0xffff;
+  return DISNEY_AVATARS[h % DISNEY_AVATARS.length];
+}
+
 function slugId(name) {
   return name.toLowerCase().replace(/\s+/g, '_') + '_' + Date.now();
 }
 
 const CAT_LABELS = {
-  movies: '🎬 Movies', characters: '🐭 Characters', parks: '🎢 Disney Parks',
-  walt: '🎩 Walt Disney', cruise: '🚢 Cruise Line', music: '🎵 Music & Songs', pixar: '🤖 Pixar'
+  movies: '🎬 Movies', characters: '🐭 Characters', parks: '🏰 Disney Parks',
+  walt: '🎩 Walt Disney', cruise: '⛴️ Cruise Line', music: '🎵 Music & Songs', pixar: '💡 Pixar'
 };
 
 function catLabel(c) { return CAT_LABELS[c] || c; }
@@ -70,7 +78,7 @@ async function renderHome() {
       ? `${user.totalAnswered} questions · ${pct(user.totalCorrect, user.totalAnswered)} correct`
       : 'No games yet';
     card.innerHTML = `
-      <div class="user-avatar">${initials(user.name)}</div>
+      <div class="user-avatar">${disneyAvatar(user.name)}</div>
       <div class="user-info">
         <div class="user-name">${user.name}</div>
         <div class="user-stats">${stat}</div>
@@ -144,7 +152,7 @@ async function renderLeaderboard() {
       : 'No games yet';
     entry.innerHTML = `
       <div class="lb-rank">${medals[i] || (i + 1)}</div>
-      <div class="lb-avatar">${initials(u.name)}</div>
+      <div class="lb-avatar">${disneyAvatar(u.name)}</div>
       <div class="lb-info">
         <div class="lb-name">${u.name}</div>
         <div class="lb-detail">${detail}</div>
@@ -386,11 +394,11 @@ function renderResults() {
   const percentage = Math.round((score / total) * 100);
 
   let emoji, title;
-  if (percentage === 100)      { emoji = '🏆'; title = 'Perfect Score!'; }
-  else if (percentage >= 80)   { emoji = '🌟'; title = 'Excellent!'; }
-  else if (percentage >= 60)   { emoji = '😄'; title = 'Well Done!'; }
+  if (percentage === 100)      { emoji = '🏰'; title = 'Perfect Score!'; }
+  else if (percentage >= 80)   { emoji = '✨'; title = 'Enchanting!'; }
+  else if (percentage >= 60)   { emoji = '🐭'; title = 'Well Done!'; }
   else if (percentage >= 40)   { emoji = '📚'; title = 'Keep Practicing!'; }
-  else                         { emoji = '💪'; title = 'Keep Trying!'; }
+  else                         { emoji = '🪄'; title = 'Keep Trying!'; }
 
   document.getElementById('results-emoji').textContent   = emoji;
   document.getElementById('results-title').textContent   = title;

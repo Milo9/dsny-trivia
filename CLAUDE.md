@@ -13,7 +13,7 @@ A static single-page trivia app built for Kristen and Cara to practice before a 
 | `style.css` | All styling. Dark Disney theme, mobile-first, CSS variables at the top. |
 | `app.js` | All game logic. Loaded last. Depends on `questions.js` and `storage.js`. |
 | `storage.js` | Storage abstraction. `FirebaseAdapter` is active. `LocalStorageAdapter` is kept below it as a fallback. |
-| `questions.js` | 200 trivia questions as a `const QUESTIONS` array. |
+| `questions.js` | 500 trivia questions as a `const QUESTIONS` array. |
 | `review.html` | Standalone admin page for reviewing flagged questions. Shares the same Firestore `flags` collection. |
 
 ## The 5 Screens
