@@ -11,9 +11,11 @@ A static single-page trivia app built for Kristen and Cara to practice before a 
 |---|---|
 | `index.html` | Single-page shell. All 5 screens live here as hidden divs. |
 | `style.css` | All styling. Dark Disney theme, mobile-first, CSS variables at the top. |
-| `app.js` | All game logic. Loaded last. Depends on `questions.js` and `storage.js`. |
+| `app.js` | All game logic. Loaded last. Depends on `storage.js` and the `questions/` shards. |
 | `storage.js` | Storage abstraction. `FirebaseAdapter` is active. `LocalStorageAdapter` is kept below it as a fallback. |
-| `questions.js` | 500 trivia questions as a `const QUESTIONS` array. |
+| `questions/manifest.json` | Lists the shard filenames. `app.js` fetches this first, then fetches each shard. |
+| `questions/q-001.json` | Questions 1–250. |
+| `questions/q-002.json` | Questions 251–500. |
 | `review.html` | Standalone admin page for reviewing flagged questions. Shares the same Firestore `flags` collection. |
 
 ## The 5 Screens
@@ -41,12 +43,14 @@ Screens are `<div class="screen">` elements that get `.hidden` toggled. Only one
 
 **No TV shows** — the requirement explicitly excludes Disney Channel, streaming series, etc. This is easy to accidentally violate (Mandalorian, WandaVision, DuckTales reboot, etc.) — hold the line.
 
-**Adding questions:** Append to the `QUESTIONS` array in `questions.js`. Use the next available integer ID. Correct answer must be at index 0.
+**Adding questions:** Append JSON objects to the last shard (`questions/q-002.json` is current). Use the next available integer ID. Correct answer must be at index 0. When a shard reaches ~250 questions, create the next shard (`q-003.json`, etc.) and add it to `questions/manifest.json` — no change to `index.html` needed.
 
-**Current count:** 500 questions. Distribution:
+**Current count:** 500 questions (IDs 1–500). Distribution:
 - movies 128, characters 90, parks 75, pixar 62, walt 52, music 52, cruise 41
 
-**Removing a question:** Delete its object from the array. IDs do not need to be contiguous — gaps are fine.
+**Removing a question:** Delete its object from the shard JSON. IDs do not need to be contiguous — gaps are fine.
+
+**Local testing note:** `fetch()` is blocked on `file://`. Run a local server to test (`python -m http.server 8000`). On GitHub Pages it works fine.
 
 ## Storage Layer — Firebase (active)
 User stats and flags are stored in **Firestore**, project `disneytrivia-38ac6`.
@@ -87,8 +91,8 @@ service cloud.firestore {
 - Players tap **👎 Flag** after answering to report a bad question
 - Stored in Firestore `flags` collection via `storage.flagReport()`
 - `review.html` is the admin triage page — open it at https://milo9.github.io/dsny-trivia/review.html
-- After fixing a question in `questions.js`, mark the flag Resolved in `review.html`
-- Flagging does NOT auto-remove the question; that's always a manual edit to `questions.js`
+- After fixing a question in the appropriate shard JSON, mark the flag Resolved in `review.html`
+- Flagging does NOT auto-remove the question; that's always a manual edit to the shard JSON
 
 ## Deploying Changes
 The app is hosted on GitHub Pages from the `main` branch. To push an update:
@@ -102,6 +106,7 @@ GitHub Pages redeploys automatically within ~1 minute.
 ## Key app.js Globals
 | Variable | What it holds |
 |---|---|
+| `QUESTIONS` | Flat array of all question objects, populated at boot by `loadQuestions()` |
 | `currentUser` | The user object selected on the home screen |
 | `gameSettings` | `{ difficulty, categories[], questionCount }` — set on settings screen |
 | `gameState` | `{ questions[], currentIndex, answers[], score }` — active game |
