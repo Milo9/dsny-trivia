@@ -32,8 +32,7 @@ Screens are `<div class="screen">` elements that get `.hidden` toggled. Only one
 {
   id: 1,                        // unique integer, never reuse
   question: "Question text?",
-  answers: ["Correct", "Wrong1", "Wrong2", "Wrong3"],
-  correct: 0,                   // always index 0; app.js shuffles display order
+  answers: ["Correct", "Wrong1", "Wrong2", "Wrong3"],  // correct answer is always index 0; app.js shuffles display order
   difficulty: "easy",           // "easy" | "medium" | "hard"
   category: "movies"            // see categories below
 }
