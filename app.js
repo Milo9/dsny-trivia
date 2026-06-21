@@ -1,4 +1,4 @@
-const APP_VERSION = '1.2';
+const APP_VERSION = '1.3';
 
 // =============================================================================
 // State
@@ -68,9 +68,16 @@ async function renderHome() {
   document.getElementById('btn-show-add-user').classList.remove('hidden');
   document.getElementById('new-user-input').value = '';
 
-  const users = await storage.getUsers();
-  const list  = document.getElementById('user-list');
+  const list = document.getElementById('user-list');
   list.innerHTML = '';
+
+  let users;
+  try {
+    users = await storage.getUsers();
+  } catch (e) {
+    list.innerHTML = `<p class="load-error">Couldn't load players.<br><small>${e.message || e}</small><br><a href="" onclick="location.reload()">Tap to retry</a></p>`;
+    return;
+  }
 
   const lastId = localStorage.getItem('disney_last_user');
 

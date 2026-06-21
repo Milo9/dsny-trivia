@@ -422,6 +422,16 @@ input[type="text"]::placeholder { color: var(--muted); }
 
 .setting-sublabel { font-size: 12px; font-weight: 600; color: var(--muted); }
 
+.load-error {
+  text-align: center;
+  color: var(--red);
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 20px 0;
+}
+.load-error small { color: var(--muted); font-size: 11px; word-break: break-all; }
+.load-error a { color: var(--primary); }
+
 .cat-chip:has(input:not(:checked)) {
   opacity: 0.35;
   text-decoration: line-through;
