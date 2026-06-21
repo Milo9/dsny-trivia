@@ -666,6 +666,15 @@ input[type="text"]::placeholder { color: var(--muted); }
 
 .empty-state { text-align: center; color: var(--muted); font-size: 16px; padding: 40px 20px; }
 
+.app-version {
+  text-align: center;
+  font-size: 11px;
+  color: var(--muted);
+  opacity: 0.5;
+  margin-top: 20px;
+  letter-spacing: 0.04em;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 374px) {
   .app-title   { font-size: 36px; }

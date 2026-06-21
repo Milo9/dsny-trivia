@@ -1,3 +1,5 @@
+const APP_VERSION = '1.1';
+
 // =============================================================================
 // State
 // =============================================================================
@@ -59,6 +61,7 @@ function showScreen(id) {
 // =============================================================================
 async function renderHome() {
   showScreen('screen-home');
+  document.getElementById('app-version').textContent = 'v' + APP_VERSION;
 
   // Reset add-user form state
   document.getElementById('add-user-form').classList.add('hidden');
