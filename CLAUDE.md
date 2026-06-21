@@ -44,8 +44,8 @@ Screens are `<div class="screen">` elements that get `.hidden` toggled. Only one
 
 **Adding questions:** Append JSON objects to the last shard (`questions/q-002.json` is current). Use the next available integer ID. Correct answer must be at index 0. When a shard reaches ~250 questions, create the next shard (`q-003.json`, etc.) and add it to `questions/manifest.json` — no change to `index.html` needed.
 
-**Current count:** 500 questions (IDs 1–500). Distribution:
-- movies 128, characters 90, parks 75, pixar 62, walt 52, music 52, cruise 41
+**Current count:** 491 questions (IDs 1–500, with 9 gaps from removed duplicates/errors). Distribution:
+- movies 128, characters 86, parks 74, pixar 59, walt 51, music 52, cruise 41
 
 **Removing a question:** Delete its object from the shard JSON. IDs do not need to be contiguous — gaps are fine.
 
