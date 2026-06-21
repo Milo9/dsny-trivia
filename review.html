@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Question Flag Review</title>
   <style>
-    body { font-family: monospace; background: #111; color: #eee; padding: 24px; max-width: 900px; margin: 0 auto; }
+    body { font-family: monospace; background: #111; color: #eee; padding: 24px; max-width: 1400px; margin: 0 auto; }
     h1 { color: #ffd700; margin-bottom: 4px; }
     .meta { color: #888; font-size: 13px; margin-bottom: 24px; }
     .controls { display: flex; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; }
@@ -14,15 +14,27 @@
     button.danger { border-color: #b00; color: #f88; }
     button.danger:hover { background: #2a0000; }
     .empty { color: #666; font-size: 15px; padding: 40px 0; }
-    table { width: 100%; border-collapse: collapse; font-size: 13px; }
-    th { text-align: left; padding: 8px 10px; background: #1a1a1a; color: #ffd700; border-bottom: 1px solid #333; white-space: nowrap; }
-    td { padding: 10px 10px; border-bottom: 1px solid #222; vertical-align: top; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; table-layout: fixed; }
+    th { text-align: left; padding: 8px 10px; background: #1a1a1a; color: #ffd700; border-bottom: 1px solid #333; white-space: nowrap; overflow: hidden; }
+    th:nth-child(1)  { width: 35px; }
+    th:nth-child(2)  { width: 50px; }
+    th:nth-child(3)  { width: 95px; }
+    /* th:nth-child(4) = Question: fills remaining space */
+    th:nth-child(5)  { width: 155px; }
+    th:nth-child(6)  { width: 65px; }
+    th:nth-child(7)  { width: 80px; }
+    th:nth-child(8)  { width: 75px; }
+    th:nth-child(9)  { width: 155px; }
+    th:nth-child(10) { width: 135px; }
+    th:nth-child(11) { width: 145px; }
+    td { padding: 10px 10px; border-bottom: 1px solid #222; vertical-align: top; overflow-wrap: break-word; word-break: break-word; }
     tr:hover td { background: #1a1a1a; }
-    .q-id    { color: #888; width: 40px; }
-    .q-text  { color: #fff; max-width: 280px; }
+    .q-id    { color: #888; }
+    .q-shard { color: #94a3b8; font-size: 11px; white-space: nowrap; }
+    .q-text  { color: #fff; }
     .q-ans   { color: #4ade80; }
-    .q-diff  { }
-    .q-cat   { color: #a78bfa; }
+    .q-diff  { white-space: nowrap; }
+    .q-cat   { color: #a78bfa; white-space: nowrap; }
     .q-who   { color: #60a5fa; white-space: nowrap; }
     .q-time  { color: #888; white-space: nowrap; font-size: 11px; }
     .q-note  { color: #fbbf24; font-style: italic; }
@@ -64,6 +76,11 @@ firebase.initializeApp({
 const db = firebase.firestore();
 
 let cachedFlags = [];
+
+function shardFor(qid) {
+  const n = Math.ceil(qid / 250);
+  return 'q-' + String(n).padStart(3, '0') + '.json';
+}
 
 async function fetchFlags() {
   const snap = await db.collection('flags').get();
@@ -138,7 +155,7 @@ async function loadFlags() {
 
   let html = `<p class="meta">${flags.length} total &nbsp;·&nbsp; ${pending} pending &nbsp;·&nbsp; ${resolved} resolved</p>`;
   html += '<table><thead><tr>';
-  html += '<th>#</th><th>Q ID</th><th>Question</th><th>Correct Answer</th><th>Diff</th><th>Cat</th><th>By</th><th>Comment</th><th>Date</th><th>Action</th>';
+  html += '<th>#</th><th>Q ID</th><th>Shard</th><th>Question</th><th>Correct Answer</th><th>Diff</th><th>Cat</th><th>By</th><th>Comment</th><th>Date</th><th>Action</th>';
   html += '</tr></thead><tbody>';
 
   flags.forEach((f, i) => {
@@ -148,6 +165,7 @@ async function loadFlags() {
     html += `<tr${rowClass}>`;
     html += `<td class="q-id">${i + 1}</td>`;
     html += `<td class="q-id">${f.questionId}</td>`;
+    html += `<td class="q-shard">${shardFor(f.questionId)}</td>`;
     html += `<td class="q-text">${esc(f.questionText)}</td>`;
     html += `<td class="q-ans">${esc(f.correctAnswer)}</td>`;
     html += `<td class="${diffClass}">${f.difficulty || '—'}</td>`;
