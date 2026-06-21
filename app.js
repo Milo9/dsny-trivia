@@ -3,6 +3,7 @@ const APP_VERSION = '1.4';
 // =============================================================================
 // State
 // =============================================================================
+let QUESTIONS     = [];
 let currentUser   = null;
 let gameSettings  = { difficulty: 'all', categories: ['movies','characters','parks','walt','cruise','music','pixar'], questionCount: 10 };
 let gameState     = { questions: [], currentIndex: 0, answers: [], score: 0 };
@@ -478,4 +479,20 @@ document.getElementById('btn-results-home').addEventListener('click', renderHome
 // =============================================================================
 // Boot
 // =============================================================================
-renderHome();
+async function loadQuestions() {
+  const manifest = await fetch('questions/manifest.json').then(r => r.json());
+  const shards = await Promise.all(manifest.shards.map(s => fetch(s).then(r => r.json())));
+  QUESTIONS = shards.flat();
+}
+
+async function init() {
+  try {
+    await loadQuestions();
+  } catch (e) {
+    document.getElementById('app').innerHTML =
+      `<p style="padding:2rem;color:var(--red)">Failed to load questions: ${e.message}.<br><a href="" onclick="location.reload()">Tap to retry</a></p>`;
+    return;
+  }
+  renderHome();
+}
+init();
