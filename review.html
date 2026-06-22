@@ -61,6 +61,15 @@
 <div id="output"><p class="meta">Loading…</p></div>
 <pre id="json-out"></pre>
 
+<hr style="border:none;border-top:1px solid #333;margin:36px 0 24px;">
+<h2 style="color:#ffd700;margin-bottom:4px;">👥 Users &amp; Score Reset</h2>
+<p class="meta">Reset stats, points, streaks, and daily history for one or all players.</p>
+<div class="controls">
+  <button onclick="loadUsers()">↻ Refresh Users</button>
+  <button class="danger" onclick="resetAllUsers()">⚠ Reset ALL Scores</button>
+</div>
+<div id="users-output"><p class="meta">Loading…</p></div>
+
 <!-- Firebase compat SDK (same version as storage.js) -->
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
@@ -192,7 +201,66 @@ function esc(str) {
   return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
+// =============================================================================
+// Users & Score Reset
+// =============================================================================
+const SCORE_ZERO = {
+  totalAnswered: 0, totalCorrect: 0, gamesPlayed: 0, totalPoints: 0,
+  dailyStreak: 0, lastDailyDate: null, lastDailyScore: null, lastDailyPoints: 0
+};
+
+async function fetchUsers() {
+  const snap = await db.collection('users').get();
+  return snap.docs.map(d => ({ _docId: d.id, ...d.data() }));
+}
+
+async function resetUser(userId, userName) {
+  if (!confirm(`Reset ALL scores for ${userName}?\n\nThis clears: points, games, correct %, streak, daily history.\n\nThis cannot be undone.`)) return;
+  await db.collection('users').doc(userId).update(SCORE_ZERO);
+  loadUsers();
+}
+
+async function resetAllUsers() {
+  if (!confirm('Reset scores for EVERY player?\n\nThis clears ALL points, games, streaks, and daily history for everyone.\n\nThis cannot be undone.')) return;
+  if (!confirm('Are you absolutely sure? This affects all players permanently.')) return;
+  const users = await fetchUsers();
+  const batch = db.batch();
+  users.forEach(u => batch.update(db.collection('users').doc(u._docId), SCORE_ZERO));
+  await batch.commit();
+  loadUsers();
+}
+
+async function loadUsers() {
+  const out = document.getElementById('users-output');
+  out.innerHTML = '<p class="meta">Loading…</p>';
+  const users = await fetchUsers();
+  if (!users.length) {
+    out.innerHTML = '<p class="empty">No users found.</p>';
+    return;
+  }
+  let html = '<table><thead><tr>';
+  html += '<th>Name</th><th>Games</th><th>Questions</th><th>Correct %</th><th>Points</th><th>Streak</th><th>Last Daily</th><th>Action</th>';
+  html += '</tr></thead><tbody>';
+  users.forEach(u => {
+    const pct = u.totalAnswered ? Math.round(u.totalCorrect / u.totalAnswered * 100) + '%' : '—';
+    const pts = (u.totalPoints || 0).toLocaleString();
+    html += `<tr>
+      <td style="color:#fff;font-weight:bold">${esc(u.name)}</td>
+      <td>${u.gamesPlayed || 0}</td>
+      <td>${u.totalAnswered || 0}</td>
+      <td>${pct}</td>
+      <td style="color:#ffd700">${pts}</td>
+      <td>${u.dailyStreak ? '🔥 ' + u.dailyStreak : '—'}</td>
+      <td style="color:#888;font-size:11px">${u.lastDailyDate || '—'}</td>
+      <td><button class="danger" onclick="resetUser('${esc(u._docId)}','${esc(u.name)}')">Reset</button></td>
+    </tr>`;
+  });
+  html += '</tbody></table>';
+  out.innerHTML = html;
+}
+
 loadFlags();
+loadUsers();
 </script>
 </body>
 </html>
