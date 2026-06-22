@@ -21,6 +21,19 @@ function shuffle(arr) {
   return a;
 }
 
+const SEEN_MAX = 100;
+
+function getSeenIds(userId) {
+  try { return JSON.parse(localStorage.getItem('disney_seen_' + userId)) || []; }
+  catch { return []; }
+}
+
+function addSeenIds(userId, ids) {
+  let seen = getSeenIds(userId).concat(ids);
+  if (seen.length > SEEN_MAX) seen = seen.slice(seen.length - SEEN_MAX);
+  localStorage.setItem('disney_seen_' + userId, JSON.stringify(seen));
+}
+
 function pct(correct, total) {
   return total ? Math.round((correct / total) * 100) + '%' : '—';
 }
@@ -241,7 +254,12 @@ document.getElementById('btn-start-game').addEventListener('click', () => {
   const pool  = filteredPool();
   if (pool.length === 0) return;
   const count = Math.min(gameSettings.questionCount, pool.length);
-  gameState = { questions: shuffle(pool).slice(0, count), currentIndex: 0, answers: [], score: 0 };
+
+  const seen  = new Set(getSeenIds(currentUser.id));
+  const fresh = pool.filter(q => !seen.has(q.id));
+  const src   = fresh.length >= count ? fresh : pool;
+
+  gameState = { questions: shuffle(src).slice(0, count), currentIndex: 0, answers: [], score: 0 };
   renderGameQuestion();
 });
 
@@ -341,6 +359,7 @@ document.getElementById('btn-exit-game').addEventListener('click', async () => {
   if (confirm(msg)) {
     if (answered > 0) {
       await storage.updateStats(currentUser.id, answered, gameState.score);
+      addSeenIds(currentUser.id, gameState.answers.map(a => a.question.id));
     }
     renderHome();
   }
@@ -391,6 +410,7 @@ async function submitFlag() {
 // =============================================================================
 async function endGame() {
   await storage.updateStats(currentUser.id, gameState.questions.length, gameState.score);
+  addSeenIds(currentUser.id, gameState.questions.map(q => q.id));
   // Refresh user data
   const users = await storage.getUsers();
   currentUser = users.find(u => u.id === currentUser.id) || currentUser;
