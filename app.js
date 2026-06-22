@@ -21,7 +21,7 @@ function shuffle(arr) {
   return a;
 }
 
-const SEEN_MAX = 100;
+const SEEN_MAX = 300;
 
 function getSeenIds(userId) {
   try { return JSON.parse(localStorage.getItem('disney_seen_' + userId)) || []; }
