@@ -63,9 +63,12 @@ function catLabel(c) { return CAT_LABELS[c] || c; }
 
 // --- Daily challenge helpers ---
 
+// Daily resets at 2am Mountain Time (UTC-6 summer / MDT).
+// Subtracting 8h shifts the UTC day boundary to 8am UTC = 2am MDT = 4am EDT.
+// getUTC* is correct here because the offset is baked into the timestamp.
 function todayKey() {
-  const d = new Date();
-  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+  const d = new Date(Date.now() - 8 * 3600000);
+  return `${d.getUTCFullYear()}-${String(d.getUTCMonth()+1).padStart(2,'0')}-${String(d.getUTCDate()).padStart(2,'0')}`;
 }
 
 // Returns calendar days between two "YYYY-MM-DD" keys. Returns Infinity if prev is falsy.

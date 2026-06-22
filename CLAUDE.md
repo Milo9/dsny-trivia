@@ -118,7 +118,7 @@ git add -A && git commit -m "your message" && git push
 ## Daily Challenge
 A second game mode accessible from the settings screen. Always 10 questions, all categories, no difficulty filter. Uses a deterministic seeded shuffle so **all players see the same questions on a given calendar day**.
 
-- Date key: local calendar date formatted as `"YYYY-MM-DD"` (not UTC) via `todayKey()`
+- Date key: `"YYYY-MM-DD"` via `todayKey()`, which subtracts 8h from UTC so the day rolls over at 2am MDT (Mountain Daylight Time) = 4am EDT. This ensures both Eastern and Alberta players always share the same question set.
 - Seed: `dateToSeed(key)` hashes the string; `seededShuffle()` uses an inline mulberry32 step
 - Questions are stable-sorted by `id` before shuffling so shard load order doesn't affect results
 - Streak (`dailyStreak`, `lastDailyDate`) stored in Firestore on the user doc — cross-device
