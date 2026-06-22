@@ -737,6 +737,85 @@ input[type="text"]::placeholder { color: var(--muted); }
   letter-spacing: 0.04em;
 }
 
+/* ===== STREAK BANNER ===== */
+.streak-banner {
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  font-size: 17px;
+  color: #ff7a2f;
+  background: rgba(255,122,47,0.12);
+  border: 1px solid rgba(255,122,47,0.3);
+  border-radius: var(--r-sm);
+  padding: 6px 16px;
+  animation: streakPop 0.4s ease-out;
+}
+
+@keyframes streakPop {
+  0%   { transform: scale(0.82); opacity: 0.4; }
+  60%  { transform: scale(1.07); }
+  100% { transform: scale(1);    opacity: 1; }
+}
+
+/* ===== MUTE BUTTON ===== */
+.btn-mute {
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  padding: 5px 9px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+  flex-shrink: 0;
+}
+.btn-mute:hover  { color: var(--text); border-color: var(--muted); }
+.btn-mute.muted  { opacity: 0.45; }
+
+/* ===== DAILY CHALLENGE (settings screen) ===== */
+.daily-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.btn-daily {
+  background: linear-gradient(135deg, #1a2d6e, #5b2d9e);
+  color: var(--gold);
+  border: 2px solid rgba(255,215,0,0.35);
+  border-radius: var(--r-sm);
+  padding: 15px 22px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px; font-weight: 800;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  transition: opacity 0.2s, transform 0.1s;
+  box-shadow: 0 3px 16px rgba(255,215,0,0.1);
+}
+.btn-daily:hover  { opacity: 0.88; }
+.btn-daily:active { transform: scale(0.97); }
+
+.daily-status {
+  font-size: 12px;
+  color: var(--muted);
+  text-align: center;
+  min-height: 16px;
+}
+.daily-status.daily-done   { color: var(--green); }
+.daily-status.daily-active { color: #ff9c3c; }
+
+.settings-divider {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  opacity: 0.5;
+  border-top: 1px solid var(--border);
+  padding-top: 14px;
+  margin-top: -6px;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 374px) {
   .app-title   { font-size: 36px; }

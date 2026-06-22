@@ -110,6 +110,28 @@ The app is hosted on GitHub Pages from the `main` branch. Use the deploy script:
 git add -A && git commit -m "your message" && git push
 ```
 
+## Daily Challenge
+A second game mode accessible from the settings screen. Always 10 questions, all categories, no difficulty filter. Uses a deterministic seeded shuffle so **all players see the same questions on a given calendar day**.
+
+- Date key: local calendar date formatted as `"YYYY-MM-DD"` (not UTC) via `todayKey()`
+- Seed: `dateToSeed(key)` hashes the string; `seededShuffle()` uses an inline mulberry32 step
+- Questions are stable-sorted by `id` before shuffling so shard load order doesn't affect results
+- Streak (`dailyStreak`, `lastDailyDate`) stored in Firestore on the user doc — cross-device
+- Replay is allowed; streak only increments once per calendar day
+- Counts toward leaderboard stats just like a regular game
+- `gameState.isDaily = true` when a daily challenge is active; `endGame()` checks this flag
+
+New user doc fields (Firestore): `dailyStreak: number`, `lastDailyDate: "YYYY-MM-DD"`. Existing docs without these fields default gracefully (`|| 0` / `|| null`).
+
+## Sound Effects
+Web Audio API (synthesized, no audio files). Wrapped in the `sounds` IIFE in `app.js`:
+
+- `sounds.correct()` — two-note ascending chime (C5 → E5)
+- `sounds.wrong()` — single low triangle-wave thud (A3)
+- `sounds.fanfare()` — C major arpeggio (C5→E5→G5→C6), plays at results screen
+- `sounds.toggle()` — flip muted state; persists in `localStorage` key `disney_sound_muted`
+- Mute button (🔊/🔇) is in the game screen top bar next to Exit
+
 ## Key app.js Globals
 | Variable | What it holds |
 |---|---|

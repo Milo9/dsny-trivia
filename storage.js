@@ -45,6 +45,15 @@ class LocalStorageAdapter {
     return u;
   }
 
+  async updateDailyStreak(userId, streak, dateKey) {
+    const data = this._load();
+    const u = data.users[userId];
+    if (!u) throw new Error('User not found: ' + userId);
+    u.dailyStreak    = streak;
+    u.lastDailyDate  = dateKey;
+    this._save(data);
+  }
+
   async flagReport(report) {
     const data = this._load();
     if (!data.flags) data.flags = [];
@@ -116,6 +125,13 @@ class FirebaseAdapter {
         totalCorrect:  d.totalCorrect  + correct,
         gamesPlayed:   d.gamesPlayed   + 1
       });
+    });
+  }
+
+  async updateDailyStreak(userId, streak, dateKey) {
+    await this.db.collection('users').doc(userId).update({
+      dailyStreak:   streak,
+      lastDailyDate: dateKey
     });
   }
 

@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=1.5">
+  <link rel="stylesheet" href="style.css?v=1.6">
 </head>
 <body>
 <div id="stars" aria-hidden="true"></div>
@@ -64,6 +64,11 @@
       <h2 class="screen-title gold">Ready, <span id="settings-user-name"></span>?</h2>
     </div>
     <div class="settings-body">
+      <div class="daily-section">
+        <button class="btn-daily" id="btn-daily-challenge">⭐ Daily Challenge</button>
+        <div id="daily-status" class="daily-status"></div>
+      </div>
+      <div class="settings-divider">— or customize your game —</div>
       <div class="setting-group">
         <div class="setting-label">Difficulty</div>
         <div class="pill-group" id="difficulty-group">
@@ -107,14 +112,16 @@
         <span id="game-progress" class="game-progress">Q 1 of 10</span>
         <span id="game-cat-badge" class="cat-badge"></span>
       </div>
-      <div style="display:flex;align-items:center;gap:12px;">
+      <div style="display:flex;align-items:center;gap:8px;">
         <div id="game-score-display" class="game-score">0 ✓</div>
+        <button class="btn-mute" id="btn-mute-sound" title="Toggle sound">🔊</button>
         <button class="btn-exit" id="btn-exit-game" title="Exit game">✕ Exit</button>
       </div>
     </div>
     <div class="progress-track">
       <div id="progress-fill" class="progress-fill"></div>
     </div>
+    <div id="streak-banner" class="streak-banner hidden">🔥 <span id="streak-count"></span> in a row!</div>
     <div id="question-diff" class="diff-badge"></div>
     <div class="question-card">
       <p id="question-text"></p>
@@ -161,7 +168,8 @@
       <div id="missed-list" class="missed-list hidden"></div>
     </div>
     <div class="results-actions">
-      <button class="btn-primary btn-full" id="btn-play-again">Play Again</button>
+      <button class="btn-primary btn-full" id="btn-rematch">Rematch ↺</button>
+      <button class="btn-secondary btn-full" id="btn-play-again">Change Settings</button>
       <button class="btn-secondary btn-full" id="btn-results-home">Home</button>
       <button class="btn-leaderboard" id="btn-results-leaderboard">🏆 Leaderboard</button>
     </div>
@@ -180,7 +188,7 @@
 </div>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
-<script src="storage.js?v=1.5"></script>
-<script src="app.js?v=1.5"></script>
+<script src="storage.js?v=1.6"></script>
+<script src="app.js?v=1.6"></script>
 </body>
 </html>

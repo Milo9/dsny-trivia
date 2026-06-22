@@ -1,4 +1,4 @@
-const APP_VERSION = '1.5';
+const APP_VERSION = '1.6';
 
 // =============================================================================
 // State
@@ -6,7 +6,7 @@ const APP_VERSION = '1.5';
 let QUESTIONS     = [];
 let currentUser   = null;
 let gameSettings  = { difficulty: 'all', categories: ['movies','characters','parks','walt','cruise','music','pixar'], questionCount: 10 };
-let gameState     = { questions: [], currentIndex: 0, answers: [], score: 0 };
+let gameState     = { questions: [], currentIndex: 0, answers: [], score: 0, currentStreak: 0, isDaily: false };
 let shuffledOpts  = [];   // [{text, originalIndex}] for current question display
 
 // =============================================================================
@@ -61,6 +61,102 @@ const CAT_LABELS = {
 
 function catLabel(c) { return CAT_LABELS[c] || c; }
 
+// --- Daily challenge helpers ---
+
+function todayKey() {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+
+// Returns number of calendar days between two "YYYY-MM-DD" keys (today - prev).
+// Returns Infinity if prev is falsy (never played).
+function computeDaysDiff(prev, today) {
+  if (!prev) return Infinity;
+  const [py, pm, pd] = prev.split('-').map(Number);
+  const [ty, tm, td] = today.split('-').map(Number);
+  return Math.round((new Date(ty, tm - 1, td) - new Date(py, pm - 1, pd)) / 86400000);
+}
+
+// Deterministic Fisher-Yates using an inline mulberry32 step. Same seed → same result.
+function seededShuffle(arr, seed) {
+  const a = [...arr];
+  let s = seed | 0;
+  for (let i = a.length - 1; i > 0; i--) {
+    s = (s + 0x6D2B79F5) | 0;
+    let t = Math.imul(s ^ (s >>> 15), 1 | s);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    const j = ((t ^ (t >>> 14)) >>> 0) % (i + 1);
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function dateToSeed(key) {
+  let h = 0;
+  for (let i = 0; i < key.length; i++) h = (h * 31 + key.charCodeAt(i)) & 0x7fffffff;
+  return h;
+}
+
+// Returns the same 10 questions for all players on a given calendar day.
+// Stable-sorts by id first so shard/load order doesn't affect the result.
+function getDailyQuestions(count = 10) {
+  const sorted = [...QUESTIONS].sort((a, b) => a.id - b.id);
+  return seededShuffle(sorted, dateToSeed(todayKey())).slice(0, count);
+}
+
+// =============================================================================
+// Sound effects (Web Audio API, synthesized — no audio files needed)
+// =============================================================================
+const sounds = (() => {
+  let ctx = null;
+  let _muted = localStorage.getItem('disney_sound_muted') === '1';
+
+  function getCtx() {
+    if (!ctx) ctx = new (window.AudioContext || window.webkitAudioContext)();
+    if (ctx.state === 'suspended') ctx.resume();
+    return ctx;
+  }
+
+  function tone(freq, start, dur, type = 'sine', vol = 0.28) {
+    try {
+      const c  = getCtx();
+      const osc = c.createOscillator();
+      const g   = c.createGain();
+      osc.connect(g); g.connect(c.destination);
+      osc.type = type;
+      osc.frequency.value = freq;
+      const t0 = c.currentTime + start;
+      g.gain.setValueAtTime(0, t0);
+      g.gain.linearRampToValueAtTime(vol, t0 + 0.01);
+      g.gain.linearRampToValueAtTime(0,   t0 + dur);
+      osc.start(t0);
+      osc.stop(t0 + dur + 0.02);
+    } catch(e) {}
+  }
+
+  return {
+    get muted() { return _muted; },
+    toggle() {
+      _muted = !_muted;
+      localStorage.setItem('disney_sound_muted', _muted ? '1' : '0');
+      return _muted;
+    },
+    correct() {
+      if (_muted) return;
+      tone(523.25, 0,   0.12); // C5
+      tone(659.25, 0.1, 0.20); // E5
+    },
+    wrong() {
+      if (_muted) return;
+      tone(220, 0, 0.30, 'triangle', 0.18); // A3 — dull thud
+    },
+    fanfare() {
+      if (_muted) return;
+      [[523.25,0],[659.25,0.13],[783.99,0.26],[1046.5,0.39]].forEach(([f,t]) => tone(f, t, 0.22));
+    }
+  };
+})();
+
 // =============================================================================
 // Screen navigation
 // =============================================================================
@@ -98,9 +194,11 @@ async function renderHome() {
   users.forEach(user => {
     const card = document.createElement('div');
     card.className = 'user-card';
+    const streak     = user.dailyStreak || 0;
+    const streakText = streak > 0 ? ` · 🔥 ${streak}` : '';
     const stat = user.totalAnswered
-      ? `${user.totalAnswered} questions · ${pct(user.totalCorrect, user.totalAnswered)} correct`
-      : 'No games yet';
+      ? `${user.totalAnswered} questions · ${pct(user.totalCorrect, user.totalAnswered)} correct${streakText}`
+      : streak > 0 ? `🔥 ${streak} day streak` : 'No games yet';
     card.innerHTML = `
       <div class="user-avatar">${disneyAvatar(user.name)}</div>
       <div class="user-info">
@@ -112,7 +210,7 @@ async function renderHome() {
     card.addEventListener('click', () => selectUser(user));
     list.appendChild(card);
 
-    // Auto-highlight last player (subtle — just scroll into view)
+    // Auto-highlight last player (subtle — just border tint)
     if (user.id === lastId) card.style.borderColor = 'var(--primary)';
   });
 }
@@ -194,9 +292,35 @@ function renderSettings() {
   showScreen('screen-settings');
   document.getElementById('settings-user-name').textContent = currentUser.name;
   updateAvailableHint();
+
+  // Daily challenge card
+  const today   = todayKey();
+  const streak  = currentUser.dailyStreak || 0;
+  const played  = currentUser.lastDailyDate === today;
+  const statusEl = document.getElementById('daily-status');
+  const btn      = document.getElementById('btn-daily-challenge');
+
+  if (played) {
+    statusEl.textContent = `✓ Played today · 🔥 ${streak} day streak`;
+    statusEl.className   = 'daily-status daily-done';
+    btn.textContent      = '⭐ Daily Challenge (Replay)';
+  } else if (streak > 0) {
+    statusEl.textContent = `🔥 ${streak} day streak — keep it going!`;
+    statusEl.className   = 'daily-status daily-active';
+    btn.textContent      = '⭐ Daily Challenge';
+  } else {
+    statusEl.textContent = 'Same 10 questions for everyone today. Start your streak!';
+    statusEl.className   = 'daily-status';
+    btn.textContent      = '⭐ Daily Challenge';
+  }
 }
 
 document.getElementById('btn-settings-back').addEventListener('click', renderHome);
+
+document.getElementById('btn-daily-challenge').addEventListener('click', () => {
+  gameState = { questions: getDailyQuestions(10), currentIndex: 0, answers: [], score: 0, currentStreak: 0, isDaily: true };
+  renderGameQuestion();
+});
 
 // Difficulty pills
 document.getElementById('difficulty-group').addEventListener('click', e => {
@@ -259,7 +383,7 @@ document.getElementById('btn-start-game').addEventListener('click', () => {
   const fresh = pool.filter(q => !seen.has(q.id));
   const src   = fresh.length >= count ? fresh : pool;
 
-  gameState = { questions: shuffle(src).slice(0, count), currentIndex: 0, answers: [], score: 0 };
+  gameState = { questions: shuffle(src).slice(0, count), currentIndex: 0, answers: [], score: 0, currentStreak: 0, isDaily: false };
   renderGameQuestion();
 });
 
@@ -300,6 +424,20 @@ function renderGameQuestion() {
     grid.appendChild(btn);
   });
 
+  // Sync streak banner
+  const banner = document.getElementById('streak-banner');
+  if (gameState.currentStreak >= 2) {
+    document.getElementById('streak-count').textContent = gameState.currentStreak;
+    banner.classList.remove('hidden');
+  } else {
+    banner.classList.add('hidden');
+  }
+
+  // Sync mute button
+  const muteBtn = document.getElementById('btn-mute-sound');
+  muteBtn.textContent = sounds.muted ? '🔇' : '🔊';
+  muteBtn.classList.toggle('muted', sounds.muted);
+
   // Reset feedback area
   document.getElementById('feedback-area').classList.add('hidden');
   document.getElementById('flag-form').classList.add('hidden');
@@ -323,7 +461,28 @@ function handleAnswer(selectedIdx) {
     }
   });
 
-  if (isCorrect) gameState.score++;
+  if (isCorrect) {
+    gameState.score++;
+    gameState.currentStreak++;
+    sounds.correct();
+  } else {
+    gameState.currentStreak = 0;
+    sounds.wrong();
+  }
+
+  // Update streak banner
+  const banner = document.getElementById('streak-banner');
+  if (gameState.currentStreak >= 2) {
+    document.getElementById('streak-count').textContent = gameState.currentStreak;
+    banner.classList.remove('hidden');
+    // Re-trigger pop animation
+    banner.style.animation = 'none';
+    banner.offsetHeight; // force reflow
+    banner.style.animation = '';
+  } else {
+    banner.classList.add('hidden');
+  }
+
   gameState.answers.push({ question: q, selectedText: chosen.text, correct: isCorrect });
   document.getElementById('game-score-display').textContent = `${gameState.score} ✓`;
 
@@ -363,6 +522,14 @@ document.getElementById('btn-exit-game').addEventListener('click', async () => {
     }
     renderHome();
   }
+});
+
+// Mute toggle
+document.getElementById('btn-mute-sound').addEventListener('click', () => {
+  const muted = sounds.toggle();
+  const btn   = document.getElementById('btn-mute-sound');
+  btn.textContent = muted ? '🔇' : '🔊';
+  btn.classList.toggle('muted', muted);
 });
 
 // Flag / thumbs-down
@@ -410,6 +577,19 @@ async function submitFlag() {
 // =============================================================================
 async function endGame() {
   await storage.updateStats(currentUser.id, gameState.questions.length, gameState.score);
+
+  // Daily challenge streak update (idempotent — only increments once per calendar day)
+  if (gameState.isDaily) {
+    const today = todayKey();
+    if (currentUser.lastDailyDate !== today) {
+      const diff      = computeDaysDiff(currentUser.lastDailyDate, today);
+      const newStreak = diff === 1 ? (currentUser.dailyStreak || 0) + 1 : 1;
+      try {
+        await storage.updateDailyStreak(currentUser.id, newStreak, today);
+      } catch(e) {}
+    }
+  }
+
   addSeenIds(currentUser.id, gameState.questions.map(q => q.id));
   // Refresh user data
   const users = await storage.getUsers();
@@ -419,6 +599,7 @@ async function endGame() {
 
 function renderResults() {
   showScreen('screen-results');
+  sounds.fanfare();
 
   const total      = gameState.questions.length;
   const score      = gameState.score;
@@ -431,10 +612,10 @@ function renderResults() {
   else if (percentage >= 40)   { emoji = '📚'; title = 'Keep Practicing!'; }
   else                         { emoji = '🪄'; title = 'Keep Trying!'; }
 
-  document.getElementById('results-emoji').textContent   = emoji;
-  document.getElementById('results-title').textContent   = title;
+  document.getElementById('results-emoji').textContent    = emoji;
+  document.getElementById('results-title').textContent    = title;
   document.getElementById('results-fraction').textContent = `${score} out of ${total} correct`;
-  document.getElementById('results-pct').textContent     = percentage + '%';
+  document.getElementById('results-pct').textContent      = percentage + '%';
 
   // Category breakdown
   const breakdown = {};
@@ -491,6 +672,20 @@ document.getElementById('btn-review-missed').addEventListener('click', () => {
   btn.textContent = hidden
     ? `Review ${count} Missed Question${count !== 1 ? 's' : ''}`
     : 'Hide Missed Questions';
+});
+
+document.getElementById('btn-rematch').addEventListener('click', () => {
+  if (gameState.isDaily) {
+    gameState = { questions: getDailyQuestions(10), currentIndex: 0, answers: [], score: 0, currentStreak: 0, isDaily: true };
+  } else {
+    const pool  = filteredPool();
+    const count = Math.min(gameSettings.questionCount, pool.length);
+    const seen  = new Set(getSeenIds(currentUser.id));
+    const fresh = pool.filter(q => !seen.has(q.id));
+    const src   = fresh.length >= count ? fresh : pool;
+    gameState = { questions: shuffle(src).slice(0, count), currentIndex: 0, answers: [], score: 0, currentStreak: 0, isDaily: false };
+  }
+  renderGameQuestion();
 });
 
 document.getElementById('btn-play-again').addEventListener('click', renderSettings);
