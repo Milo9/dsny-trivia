@@ -48,7 +48,7 @@ class LocalStorageAdapter {
       u.lastDailyScore  = dailyUpdate.score;
       u.lastDailyPoints = dailyUpdate.points;
       u.lastDailyDate   = dailyUpdate.dateKey;
-      u.dailyStreak     = dailyUpdate.streak;
+      if (dailyUpdate.streak !== null) u.dailyStreak = dailyUpdate.streak;
     }
     this._save(data);
     return u;
@@ -142,7 +142,7 @@ class FirebaseAdapter {
         update.lastDailyScore  = dailyUpdate.score;
         update.lastDailyPoints = dailyUpdate.points;
         update.lastDailyDate   = dailyUpdate.dateKey;
-        update.dailyStreak     = dailyUpdate.streak;
+        if (dailyUpdate.streak !== null) update.dailyStreak = dailyUpdate.streak;
       }
       tx.update(ref, update);
     });

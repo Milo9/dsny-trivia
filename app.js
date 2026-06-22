@@ -643,11 +643,13 @@ async function endGame() {
   gameState.pointsEarned   = bd.total;
   gameState.scoreBreakdown = bd;
 
-  const dailyUpdate = isFirstDailyToday ? {
+  // Always save score/pts display fields for any daily game.
+  // streak is only updated on first play (null tells storage to leave it unchanged).
+  const dailyUpdate = gameState.isDaily ? {
     score:   gameState.score,
     points:  bd.total,
     dateKey: today,
-    streak:  newDailyStreak
+    streak:  isFirstDailyToday ? newDailyStreak : null
   } : null;
 
   await storage.updateStats(currentUser.id, gameState.questions.length, gameState.score, bd.total, dailyUpdate);
