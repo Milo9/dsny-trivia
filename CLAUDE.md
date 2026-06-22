@@ -16,7 +16,9 @@ A static single-page trivia app built for Kristen and Cara to practice before a 
 | `questions/manifest.json` | Lists the shard filenames. `app.js` fetches this first, then fetches each shard. |
 | `questions/q-001.json` | Questions 1–250. |
 | `questions/q-002.json` | Questions 251–500. |
-| `questions/q-003.json` | Questions 501–750 (210 active; 40 gaps from audit). |
+| `questions/q-003.json` | Questions 501–800 (210 active; 40 gaps from audit). |
+| `questions/q-004.json` | Questions 801–1050 (246 active; 4 gaps from quality pass). |
+| `questions/q-005.json` | Questions 1051–1300 (247 active; 3 gaps from quality pass). |
 | `review.html` | Standalone admin page for reviewing flagged questions. Shares the same Firestore `flags` collection. |
 
 ## The 5 Screens
@@ -43,10 +45,10 @@ Screens are `<div class="screen">` elements that get `.hidden` toggled. Only one
 
 **No TV shows** — the requirement explicitly excludes Disney Channel, streaming series, etc. This is easy to accidentally violate (Mandalorian, WandaVision, DuckTales reboot, etc.) — hold the line.
 
-**Adding questions:** Append JSON objects to the last shard (`questions/q-003.json` is current). Use the next available integer ID (801+). Correct answer must be at index 0. When a shard reaches ~250 questions, create the next shard (`q-004.json`, etc.) and add it to `questions/manifest.json` — no change to `index.html` needed.
+**Adding questions:** Append JSON objects to the last shard (`questions/q-005.json` is current). Use the next available integer ID (1301+). Correct answer must be at index 0. When a shard reaches ~250 questions, create the next shard (`q-006.json`, etc.) and add it to `questions/manifest.json` — no change to `index.html` needed.
 
-**Current count:** 751 questions (IDs 1–800, with 49 gaps from removed duplicates/errors). Distribution:
-- movies 181, characters 121, parks 114, pixar 97, walt 82, music 87, cruise 69
+**Current count:** 1,243 questions (IDs 1–1300, with ~57 gaps from removed duplicates/errors). Distribution:
+- movies 277, characters 192, parks 195, pixar 159, walt 141, music 151, cruise 128
 
 **Removing a question:** Delete its object from the shard JSON. IDs do not need to be contiguous — gaps are fine.
 
@@ -132,7 +134,7 @@ Default users seeded on first load: **Kristen** and **Cara**. Seeding is in `Fir
 These rules were derived from real mistakes found during shard audits. Follow them every time questions are generated.
 
 **Before adding any new question:**
-1. **Cross-shard duplicate check** — Grep all three shard files for key terms (character name, attraction name, film title) before writing. Questions about the same topic often exist already. Easy/obvious topics (Mickey's dog, Donald's nephews, Tinker Bell's dress color, Simba's father) are almost certainly covered — check first.
+1. **Cross-shard duplicate check** — Grep all five shard files for key terms (character name, attraction name, film title) before writing. Questions about the same topic often exist already. Easy/obvious topics (Mickey's dog, Donald's nephews, Tinker Bell's dress color, Simba's father) are almost certainly covered — check first.
 
 **Answer structure:**
 2. **Never embed the answer in the question text.** If the question says "What type of animal is Geppetto's cat?" and the answer is "Figaro is a kitten," the word "cat" telegraphs the answer. Ask "What is the name of Geppetto's kitten?" instead.

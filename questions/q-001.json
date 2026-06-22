@@ -1081,7 +1081,7 @@
   },
   {
     "id": 91,
-    "question": "What is the name of the Disney World theme park known for its animal exhibits and conservation focus?",
+    "question": "Which Walt Disney World theme park is centered on wildlife habitats and conservation?",
     "answers": [
       "Animal Kingdom",
       "EPCOT",
@@ -1500,18 +1500,6 @@
     "category": "walt"
   },
   {
-    "id": 126,
-    "question": "What famous TV show did Walt Disney create to help promote Disneyland?",
-    "answers": [
-      "Disneyland (The Wonderful World of Disney)",
-      "The Mickey Mouse Club",
-      "Walt Disney Presents",
-      "Fantasy Hour"
-    ],
-    "difficulty": "medium",
-    "category": "walt"
-  },
-  {
     "id": 127,
     "question": "What were the names of Walt Disney's two daughters?",
     "answers": [
@@ -1687,18 +1675,6 @@
       "Treasure Cay",
       "Magic Isle",
       "Adventure Bay"
-    ],
-    "difficulty": "medium",
-    "category": "cruise"
-  },
-  {
-    "id": 142,
-    "question": "What Disney Cruise Line ship launched in November 2024?",
-    "answers": [
-      "Disney Treasure",
-      "Disney Wish",
-      "Disney Dream",
-      "Disney Destiny"
     ],
     "difficulty": "medium",
     "category": "cruise"
@@ -2998,5 +2974,29 @@
     ],
     "difficulty": "medium",
     "category": "movies"
+  },
+  {
+    "id": 126,
+    "question": "Which Mickey Mouse short introduced Mickey's white gloves?",
+    "answers": [
+      "The Opry House",
+      "Steamboat Willie",
+      "Plane Crazy",
+      "The Karnival Kid"
+    ],
+    "difficulty": "hard",
+    "category": "walt"
+  },
+  {
+    "id": 142,
+    "question": "Which character statue stands in the Disney Magic's atrium?",
+    "answers": [
+      "Helmsman Mickey",
+      "Admiral Donald",
+      "Mademoiselle Minnie",
+      "Captain Minnie"
+    ],
+    "difficulty": "hard",
+    "category": "cruise"
   }
 ]

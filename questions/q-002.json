@@ -252,18 +252,6 @@
     "category": "movies"
   },
   {
-    "id": 272,
-    "question": "What is the name of the butler villain in The Aristocats who stands to inherit everything?",
-    "answers": [
-      "Edgar",
-      "Henri",
-      "Ferdinand",
-      "Jacques"
-    ],
-    "difficulty": "hard",
-    "category": "movies"
-  },
-  {
     "id": 273,
     "question": "In Tarzan, what is the full name of Jane's scientist father?",
     "answers": [
@@ -768,30 +756,6 @@
     "category": "characters"
   },
   {
-    "id": 317,
-    "question": "In Lilo & Stitch, what is the name of the social worker who tries to take Lilo away?",
-    "answers": [
-      "Cobra Bubbles",
-      "Agent Hood",
-      "Mr. Stern",
-      "Officer Reynolds"
-    ],
-    "difficulty": "medium",
-    "category": "characters"
-  },
-  {
-    "id": 318,
-    "question": "In Tarzan, what is the name of Tarzan's gorilla best friend?",
-    "answers": [
-      "Terk",
-      "Kala",
-      "Tantor",
-      "Kerchak"
-    ],
-    "difficulty": "medium",
-    "category": "characters"
-  },
-  {
     "id": 319,
     "question": "In Wreck-It Ralph, what is King Candy's true identity?",
     "answers": [
@@ -936,18 +900,6 @@
     "category": "characters"
   },
   {
-    "id": 333,
-    "question": "In The Rescuers, what are the names of Madame Medusa's two pet alligators?",
-    "answers": [
-      "Brutus and Nero",
-      "Snap and Crunch",
-      "Jaws and Rex",
-      "Fluffy and Spike"
-    ],
-    "difficulty": "hard",
-    "category": "characters"
-  },
-  {
     "id": 334,
     "question": "In which Walt Disney World park is Pandora — The World of Avatar located?",
     "answers": [
@@ -985,7 +937,7 @@
   },
   {
     "id": 337,
-    "question": "What is the name of the main entrance street at Magic Kingdom?",
+    "question": "What is the name of the entrance avenue at Magic Kingdom?",
     "answers": [
       "Main Street, U.S.A.",
       "Main Boulevard",
@@ -1045,7 +997,7 @@
   },
   {
     "id": 342,
-    "question": "What is the name of the Disney Skyliner gondola system that connects resorts and parks at Walt Disney World?",
+    "question": "What gondola system connects select resorts and parks at Walt Disney World?",
     "answers": [
       "Disney Skyliner",
       "Disney Sky Gondola",
@@ -1441,7 +1393,7 @@
   },
   {
     "id": 376,
-    "question": "What Disneyland attraction opened in 1959 was also the world's first daily-operating monorail in the Western Hemisphere?",
+    "question": "What transportation attraction opened at Disneyland in 1959 as the first daily-operating system of its kind in the Western Hemisphere?",
     "answers": [
       "Disneyland Monorail",
       "The WEDway PeopleMover",
@@ -1591,18 +1543,6 @@
       "Ward Disney",
       "Ray Disney",
       "Robert Disney"
-    ],
-    "difficulty": "easy",
-    "category": "walt"
-  },
-  {
-    "id": 389,
-    "question": "What city was Walt Disney born in?",
-    "answers": [
-      "Chicago, Illinois",
-      "Kansas City, Missouri",
-      "Los Angeles, California",
-      "New York City, New York"
     ],
     "difficulty": "easy",
     "category": "walt"
@@ -1836,18 +1776,6 @@
     "category": "walt"
   },
   {
-    "id": 410,
-    "question": "Which art school did Walt Disney briefly attend in Chicago as a teenager?",
-    "answers": [
-      "The Chicago Academy of Fine Arts",
-      "The Art Institute of Chicago",
-      "Columbia College Chicago",
-      "DePaul Art School"
-    ],
-    "difficulty": "hard",
-    "category": "walt"
-  },
-  {
     "id": 411,
     "question": "What are the names of the two original Disney Cruise Line ships that launched in the late 1990s?",
     "answers": [
@@ -2040,18 +1968,6 @@
     "category": "cruise"
   },
   {
-    "id": 427,
-    "question": "What is the name of the Disney Cruise ship that launched in November 2024?",
-    "answers": [
-      "Disney Treasure",
-      "Disney Adventure",
-      "Disney Destiny",
-      "Disney Legend"
-    ],
-    "difficulty": "medium",
-    "category": "cruise"
-  },
-  {
     "id": 428,
     "question": "What is the approximate passenger capacity of the Disney Wish?",
     "answers": [
@@ -2143,18 +2059,6 @@
       "Rainforest Falls",
       "Cascade Pool",
       "Neptune's Retreat"
-    ],
-    "difficulty": "hard",
-    "category": "cruise"
-  },
-  {
-    "id": 436,
-    "question": "What year did the Disney Dream launch?",
-    "answers": [
-      "2011",
-      "2009",
-      "2013",
-      "2015"
     ],
     "difficulty": "hard",
     "category": "cruise"
@@ -2736,18 +2640,6 @@
     "category": "pixar"
   },
   {
-    "id": 487,
-    "question": "In Monsters University, what fraternity do Mike and Sulley join to compete in the Scare Games?",
-    "answers": [
-      "Oozma Kappa (OK)",
-      "Roar Omega Roar (ROR)",
-      "Python Nu Kappa (PNK)",
-      "Eta Hiss Hiss (HSS)"
-    ],
-    "difficulty": "easy",
-    "category": "pixar"
-  },
-  {
     "id": 489,
     "question": "In The Incredibles, what are Violet's two superpowers?",
     "answers": [
@@ -2889,6 +2781,222 @@
       "Limbo"
     ],
     "difficulty": "hard",
+    "category": "pixar"
+  },
+  {
+    "id": 272,
+    "question": "In The Aristocats, which mouse helps Duchess and her kittens?",
+    "answers": [
+      "Roquefort",
+      "Toulouse",
+      "Berlioz",
+      "Lafayette"
+    ],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  {
+    "id": 309,
+    "question": "In Inside Out, which emotion is purple?",
+    "answers": [
+      "Fear",
+      "Disgust",
+      "Anger",
+      "Sadness"
+    ],
+    "difficulty": "easy",
+    "category": "pixar"
+  },
+  {
+    "id": 316,
+    "question": "In Moana, what is Moana's mother's name?",
+    "answers": [
+      "Sina",
+      "Tala",
+      "Pepa",
+      "Tui"
+    ],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  {
+    "id": 317,
+    "question": "At Disneyland, which Fantasyland dark ride uses caterpillar-shaped ride vehicles?",
+    "answers": [
+      "Alice in Wonderland",
+      "Mr. Toad's Wild Ride",
+      "Peter Pan's Flight",
+      "Pinocchio's Daring Journey"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  {
+    "id": 318,
+    "question": "In The Great Mouse Detective, which London landmark is the setting for Basil and Ratigan's final fight?",
+    "answers": [
+      "Big Ben",
+      "Tower Bridge",
+      "Buckingham Palace",
+      "Westminster Abbey"
+    ],
+    "difficulty": "hard",
+    "category": "movies"
+  },
+  {
+    "id": 326,
+    "question": "In The Great Mouse Detective, what pet belongs to Professor Ratigan?",
+    "answers": [
+      "Felicia",
+      "Fidget",
+      "Olivia",
+      "Dawson"
+    ],
+    "difficulty": "hard",
+    "category": "characters"
+  },
+  {
+    "id": 329,
+    "question": "Which Disney animated film includes the song Good Company?",
+    "answers": [
+      "Oliver & Company",
+      "The Aristocats",
+      "The Rescuers",
+      "The Fox and the Hound"
+    ],
+    "difficulty": "medium",
+    "category": "music"
+  },
+  {
+    "id": 333,
+    "question": "At EPCOT, which World Showcase pavilion presents the Circle-Vision film Far and Wide?",
+    "answers": [
+      "Canada",
+      "United Kingdom",
+      "France",
+      "The American Adventure"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  {
+    "id": 375,
+    "question": "Which producer's contract dispute led Walt Disney to lose Oswald the Lucky Rabbit?",
+    "answers": [
+      "Charles Mintz",
+      "Carl Laemmle",
+      "Roy O. Disney",
+      "Pat Powers"
+    ],
+    "difficulty": "hard",
+    "category": "walt"
+  },
+  {
+    "id": 389,
+    "question": "In Fantasia, which creatures appear in The Rite of Spring segment?",
+    "answers": [
+      "Dinosaurs",
+      "Centaur families",
+      "Dancing mushrooms",
+      "Flying whales"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  {
+    "id": 406,
+    "question": "At Tokyo DisneySea, which port is themed to New York Harbor and Cape Cod?",
+    "answers": [
+      "American Waterfront",
+      "Mediterranean Harbor",
+      "Port Discovery",
+      "Lost River Delta"
+    ],
+    "difficulty": "hard",
+    "category": "parks"
+  },
+  {
+    "id": 410,
+    "question": "Who composed the orchestral score for Up?",
+    "answers": [
+      "Michael Giacchino",
+      "Randy Newman",
+      "Thomas Newman",
+      "Patrick Doyle"
+    ],
+    "difficulty": "hard",
+    "category": "music"
+  },
+  {
+    "id": 427,
+    "question": "On Castaway Cay, what runDisney-style island activity is offered on select sailings?",
+    "answers": [
+      "Castaway Cay 5K",
+      "Pelican Plunge Sprint",
+      "Serenity Bay Dash",
+      "Mickey Mile"
+    ],
+    "difficulty": "medium",
+    "category": "cruise"
+  },
+  {
+    "id": 436,
+    "question": "What adult-only restaurant takes its name from a Venetian mooring pole?",
+    "answers": [
+      "Palo",
+      "Remy",
+      "Enchante",
+      "Lumiere's"
+    ],
+    "difficulty": "hard",
+    "category": "cruise"
+  },
+  {
+    "id": 469,
+    "question": "In The Incredibles, which superhero is Lucius Best's alter ego?",
+    "answers": [
+      "Frozone",
+      "Gazerbeam",
+      "Dynaguy",
+      "Splashdown"
+    ],
+    "difficulty": "medium",
+    "category": "pixar"
+  },
+  {
+    "id": 478,
+    "question": "In Monsters, Inc., what powers Monstropolis after the factory changes direction?",
+    "answers": [
+      "Laughter",
+      "Screams",
+      "Solar energy",
+      "Door power"
+    ],
+    "difficulty": "medium",
+    "category": "pixar"
+  },
+  {
+    "id": 487,
+    "question": "In Finding Nemo, which schoolmate is a seahorse?",
+    "answers": [
+      "Sheldon",
+      "Tad",
+      "Pearl",
+      "Squirt"
+    ],
+    "difficulty": "medium",
+    "category": "pixar"
+  },
+  {
+    "id": 488,
+    "question": "In Cars, what tire shop does Luigi own?",
+    "answers": [
+      "Casa Della Tires",
+      "Luigi's Wheel Works",
+      "Radiator Rubber",
+      "Piston Cup Tires"
+    ],
+    "difficulty": "medium",
     "category": "pixar"
   }
 ]

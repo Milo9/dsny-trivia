@@ -49,13 +49,6 @@
     "category": "movies"
   },
   {
-    "id": 512,
-    "question": "What is the villain in The Black Cauldron called?",
-    "answers": ["The Horned King", "The Dark Lord", "The Shadow King", "The Skeleton King"],
-    "difficulty": "medium",
-    "category": "movies"
-  },
-  {
     "id": 514,
     "question": "In Fantasia, what piece of music accompanies Mickey Mouse's sorcerer's apprentice segment?",
     "answers": ["The Sorcerer's Apprentice by Paul Dukas", "Night on Bald Mountain by Mussorgsky", "The Nutcracker Suite by Tchaikovsky", "Symphony No. 5 by Beethoven"],
@@ -91,15 +84,8 @@
     "category": "movies"
   },
   {
-    "id": 519,
-    "question": "In Lilo & Stitch, what is Stitch's experiment number?",
-    "answers": ["626", "328", "420", "515"],
-    "difficulty": "medium",
-    "category": "movies"
-  },
-  {
     "id": 520,
-    "question": "In Brother Bear, what does the main character Kenai get transformed into?",
+    "question": "In the 2003 film about Kenai, what does he get transformed into?",
     "answers": ["A bear", "A wolf", "A deer", "An eagle"],
     "difficulty": "medium",
     "category": "movies"
@@ -108,13 +94,6 @@
     "id": 521,
     "question": "What classic novel is Disney's Treasure Planet based on?",
     "answers": ["Treasure Island", "Gulliver's Travels", "Robinson Crusoe", "20,000 Leagues Under the Sea"],
-    "difficulty": "medium",
-    "category": "movies"
-  },
-  {
-    "id": 523,
-    "question": "What is the name of the candy-themed racing game in Wreck-It Ralph?",
-    "answers": ["Sugar Rush", "Candy Dash", "Sweet Racer", "Candy Land Racing"],
     "difficulty": "medium",
     "category": "movies"
   },
@@ -175,13 +154,6 @@
     "category": "movies"
   },
   {
-    "id": 533,
-    "question": "What are the names of the two main animal characters in The Fox and the Hound?",
-    "answers": ["Tod and Copper", "Fido and Rex", "Rusty and Flash", "Charlie and Bruno"],
-    "difficulty": "hard",
-    "category": "movies"
-  },
-  {
     "id": 534,
     "question": "In The Great Mouse Detective, which famous fictional detective is the story a parody of?",
     "answers": ["Sherlock Holmes", "Hercule Poirot", "Philip Marlowe", "Sam Spade"],
@@ -224,13 +196,6 @@
     "category": "movies"
   },
   {
-    "id": 540,
-    "question": "In Mulan, what is the name of Mulan's lucky cricket?",
-    "answers": ["Cri-Kee", "Chi-Chi", "Lucky", "Ling"],
-    "difficulty": "hard",
-    "category": "movies"
-  },
-  {
     "id": 541,
     "question": "In Tangled, what magical power does Rapunzel's long hair have?",
     "answers": ["It heals wounds and glows when she sings", "It grants wishes", "It can stretch infinitely", "It makes people fall asleep"],
@@ -252,13 +217,6 @@
     "category": "movies"
   },
   {
-    "id": 545,
-    "question": "In Encanto, who is the only Madrigal family member without a magical gift?",
-    "answers": ["Mirabel", "Luisa", "Dolores", "Camilo"],
-    "difficulty": "easy",
-    "category": "movies"
-  },
-  {
     "id": 546,
     "question": "In Pocahontas, what is the name of Pocahontas's raccoon companion?",
     "answers": ["Meeko", "Flit", "Percy", "Kocoum"],
@@ -269,13 +227,6 @@
     "id": 547,
     "question": "In The Hunchback of Notre Dame, what is the name of the female lead Quasimodo falls for?",
     "answers": ["Esmeralda", "Madeline", "Colette", "Isabelle"],
-    "difficulty": "medium",
-    "category": "movies"
-  },
-  {
-    "id": 548,
-    "question": "In Hercules, what is the name of Hercules's satyr trainer?",
-    "answers": ["Phil (Philoctetes)", "Zeus", "Hades", "Pain"],
     "difficulty": "medium",
     "category": "movies"
   },
@@ -302,8 +253,8 @@
   },
   {
     "id": 556,
-    "question": "What type of insect is Jiminy Cricket in Pinocchio?",
-    "answers": ["A cricket", "A grasshopper", "A frog", "A caterpillar"],
+    "question": "In Pinocchio, what item does the Blue Fairy give Jiminy Cricket to mark his official role?",
+    "answers": ["A gold badge", "A magic umbrella", "A tiny top hat", "A silver whistle"],
     "difficulty": "easy",
     "category": "characters"
   },
@@ -367,13 +318,6 @@
     "id": 569,
     "question": "What type of crustacean is Sebastian in The Little Mermaid?",
     "answers": ["A crab", "A lobster", "A shrimp", "A starfish"],
-    "difficulty": "medium",
-    "category": "characters"
-  },
-  {
-    "id": 572,
-    "question": "What is the name of the enchanted teapot in Beauty and the Beast?",
-    "answers": ["Mrs. Potts", "Lady Crumpet", "Dame Rosette", "Madame Teacup"],
     "difficulty": "medium",
     "category": "characters"
   },
@@ -465,13 +409,6 @@
     "id": 592,
     "question": "What is the iconic geodesic sphere structure at EPCOT called?",
     "answers": ["Spaceship Earth", "The World Sphere", "Globe of Tomorrow", "The Earth Ball"],
-    "difficulty": "easy",
-    "category": "parks"
-  },
-  {
-    "id": 593,
-    "question": "What is the name of the iconic castle at Magic Kingdom?",
-    "answers": ["Cinderella Castle", "Sleeping Beauty Castle", "Belle's Castle", "Snow White's Castle"],
     "difficulty": "easy",
     "category": "parks"
   },
@@ -581,30 +518,9 @@
     "category": "parks"
   },
   {
-    "id": 613,
-    "question": "What year did EPCOT Center open at Walt Disney World?",
-    "answers": ["1982", "1971", "1975", "1989"],
-    "difficulty": "hard",
-    "category": "parks"
-  },
-  {
     "id": 615,
     "question": "What is the name of the Disney theme park in Paris, France?",
     "answers": ["Disneyland Paris", "Euro Disney", "Paris Disney", "Disney France"],
-    "difficulty": "hard",
-    "category": "parks"
-  },
-  {
-    "id": 616,
-    "question": "What is the name of the Disney theme park in Tokyo, Japan?",
-    "answers": ["Tokyo Disneyland", "Japan Disney", "Disney Orient", "Tokyo Disney Magic"],
-    "difficulty": "hard",
-    "category": "parks"
-  },
-  {
-    "id": 617,
-    "question": "What is the name of the Disney theme park in Shanghai, China?",
-    "answers": ["Shanghai Disneyland", "China Disney Park", "Oriental Disney", "Shanghai Disney Magic"],
     "difficulty": "hard",
     "category": "parks"
   },
@@ -645,7 +561,7 @@
   },
   {
     "id": 623,
-    "question": "What is the name of the Cars-themed land at Disney California Adventure?",
+    "question": "What is the name of Disney California Adventure's Route 66-inspired land?",
     "answers": ["Cars Land", "Radiator Springs", "Lightning Lane", "Pixar Place"],
     "difficulty": "medium",
     "category": "parks"
@@ -679,23 +595,9 @@
     "category": "parks"
   },
   {
-    "id": 629,
-    "question": "What is the name of the Hong Kong Disney theme park?",
-    "answers": ["Hong Kong Disneyland", "Disney Asia Park", "HK Disney Magic", "Eastern Disneyland"],
-    "difficulty": "hard",
-    "category": "parks"
-  },
-  {
     "id": 631,
     "question": "In Toy Story 2, who is the cowgirl doll that Woody meets?",
     "answers": ["Jessie", "Annie", "Daisy", "Bonnie"],
-    "difficulty": "easy",
-    "category": "pixar"
-  },
-  {
-    "id": 632,
-    "question": "In Finding Nemo, what is Nemo's father's name?",
-    "answers": ["Marlin", "Marvin", "Martin", "Marco"],
     "difficulty": "easy",
     "category": "pixar"
   },
@@ -745,13 +647,6 @@
     "id": 640,
     "question": "In Monsters, Inc., what do children's screams power in Monstropolis?",
     "answers": ["The city's electricity", "The transportation system", "The factory machines", "The communication network"],
-    "difficulty": "medium",
-    "category": "pixar"
-  },
-  {
-    "id": 641,
-    "question": "In The Incredibles, what is the real name of the villain Syndrome?",
-    "answers": ["Buddy Pine", "Gazerbeam", "Screenslaver", "Underminer"],
     "difficulty": "medium",
     "category": "pixar"
   },
@@ -812,30 +707,9 @@
     "category": "pixar"
   },
   {
-    "id": 651,
-    "question": "In Monsters University, what fraternity do Mike and Sully join to compete in the Scare Games?",
-    "answers": ["Oozma Kappa", "Roar Omega Roar", "Eta Hiss Hiss", "Python Nu Kappa"],
-    "difficulty": "medium",
-    "category": "pixar"
-  },
-  {
     "id": 652,
     "question": "In Coco, who is Miguel's idol musician that he discovers is actually the villain?",
     "answers": ["Ernesto de la Cruz", "Héctor", "Chicharrón", "Pepita"],
-    "difficulty": "medium",
-    "category": "pixar"
-  },
-  {
-    "id": 653,
-    "question": "In Soul, what is the name of the place where new souls develop their personalities before being born?",
-    "answers": ["The Great Before", "The Great Beyond", "The Soul World", "Limbo"],
-    "difficulty": "medium",
-    "category": "pixar"
-  },
-  {
-    "id": 654,
-    "question": "In Cars, what is the name of the small town where Lightning McQueen gets stranded?",
-    "answers": ["Radiator Springs", "Cooler Creek", "Engine Town", "Piston Peak"],
     "difficulty": "medium",
     "category": "pixar"
   },
@@ -910,13 +784,6 @@
     "category": "walt"
   },
   {
-    "id": 667,
-    "question": "In what U.S. state is Walt Disney World located?",
-    "answers": ["Florida", "California", "New York", "Texas"],
-    "difficulty": "easy",
-    "category": "walt"
-  },
-  {
     "id": 668,
     "question": "What was Walt Disney's middle name?",
     "answers": ["Elias", "Edward", "Eugene", "Ernest"],
@@ -931,13 +798,6 @@
     "category": "walt"
   },
   {
-    "id": 670,
-    "question": "In what city was Walt Disney born?",
-    "answers": ["Chicago, Illinois", "Kansas City, Missouri", "Los Angeles, California", "New York, New York"],
-    "difficulty": "medium",
-    "category": "walt"
-  },
-  {
     "id": 671,
     "question": "What was the name of Walt Disney's brother who handled the business side of the company?",
     "answers": ["Roy O. Disney", "Herbert Disney", "Raymond Disney", "Arthur Disney"],
@@ -945,23 +805,9 @@
     "category": "walt"
   },
   {
-    "id": 672,
-    "question": "In what year did Walt Disney pass away?",
-    "answers": ["1966", "1971", "1960", "1975"],
-    "difficulty": "medium",
-    "category": "walt"
-  },
-  {
     "id": 674,
     "question": "Who was Walt Disney's longtime artistic collaborator who helped design Mickey Mouse?",
     "answers": ["Ub Iwerks", "Floyd Gottfredson", "Carl Barks", "Ward Kimball"],
-    "difficulty": "medium",
-    "category": "walt"
-  },
-  {
-    "id": 675,
-    "question": "What was the name of the TV show Walt Disney hosted that helped fund the building of Disneyland?",
-    "answers": ["Disneyland", "Walt's World", "The Disney Hour", "Magic Kingdom Tonight"],
     "difficulty": "medium",
     "category": "walt"
   },
@@ -990,13 +836,6 @@
     "id": 680,
     "question": "What was the name of Walt Disney's early cartoon series that combined a live-action girl with an animated world?",
     "answers": ["Alice Comedies", "Laugh-O-Grams", "Oswald Shorts", "Mickey's Toons"],
-    "difficulty": "hard",
-    "category": "walt"
-  },
-  {
-    "id": 681,
-    "question": "What special Oscar did Walt Disney receive for Snow White and the Seven Dwarfs at the 1939 Academy Awards?",
-    "answers": ["One full-size Oscar and seven miniature Oscars", "The Irving G. Thalberg Award", "A lifetime achievement award", "The Jean Hersholt Humanitarian Award"],
     "difficulty": "hard",
     "category": "walt"
   },
@@ -1130,13 +969,6 @@
     "id": 701,
     "question": "Who sang 'Let It Go' in the original Frozen film?",
     "answers": ["Idina Menzel", "Demi Lovato", "Kristen Bell", "Celine Dion"],
-    "difficulty": "medium",
-    "category": "music"
-  },
-  {
-    "id": 702,
-    "question": "Who composed the music for The Little Mermaid, Beauty and the Beast, and Aladdin?",
-    "answers": ["Alan Menken", "Elton John", "Hans Zimmer", "Stephen Schwartz"],
     "difficulty": "medium",
     "category": "music"
   },
@@ -1302,13 +1134,6 @@
     "category": "music"
   },
   {
-    "id": 726,
-    "question": "What is the name of Disney's private island in the Bahamas?",
-    "answers": ["Castaway Cay", "Treasure Cay", "Fantasy Island", "Paradise Bay"],
-    "difficulty": "easy",
-    "category": "cruise"
-  },
-  {
     "id": 727,
     "question": "What year did Disney Cruise Line launch its first voyages?",
     "answers": ["1998", "1995", "2000", "2003"],
@@ -1333,13 +1158,6 @@
     "id": 731,
     "question": "What is the name of the adult-only Italian restaurant available on Disney cruise ships?",
     "answers": ["Palo", "Remy", "Triton's", "Lumiere's"],
-    "difficulty": "medium",
-    "category": "cruise"
-  },
-  {
-    "id": 732,
-    "question": "What is the name of the water coaster attraction on the Disney Wish?",
-    "answers": ["AquaMouse", "AquaDuck", "Wave Rider", "Water Rush"],
     "difficulty": "medium",
     "category": "cruise"
   },
@@ -1422,7 +1240,7 @@
   },
   {
     "id": 744,
-    "question": "What is the name of the It's a Small World-themed nursery for very young children on Disney ships?",
+    "question": "What nursery for very young children on Disney ships shares its name with a classic boat ride?",
     "answers": ["It's a Small World Nursery", "Tiny Tots Room", "Little Ones Club", "Baby Anchor"],
     "difficulty": "hard",
     "category": "cruise"
@@ -1484,13 +1302,6 @@
     "category": "movies"
   },
   {
-    "id": 753,
-    "question": "In 101 Dalmatians, how many puppies do Pongo and Perdita have of their own?",
-    "answers": ["15", "8", "12", "20"],
-    "difficulty": "medium",
-    "category": "movies"
-  },
-  {
     "id": 754,
     "question": "In The Princess and the Frog, who is the villain known as the 'Shadow Man' who deals in dark magic?",
     "answers": ["Dr. Facilier", "Lawrence", "Louis", "Mama Odie"],
@@ -1548,16 +1359,9 @@
   },
   {
     "id": 762,
-    "question": "In Pinocchio, who is the magical fairy who brings Pinocchio to life and appoints Jiminy Cricket as his conscience?",
+    "question": "In Pinocchio, who brings Pinocchio to life and appoints Jiminy Cricket as his conscience?",
     "answers": ["The Blue Fairy", "Tinker Bell", "Fairy Godmother", "The Good Witch"],
     "difficulty": "easy",
-    "category": "characters"
-  },
-  {
-    "id": 763,
-    "question": "What are the names of Ursula's two eel minions in The Little Mermaid?",
-    "answers": ["Flotsam and Jetsam", "Scylla and Charybdis", "Slash and Burn", "Spike and Squirm"],
-    "difficulty": "hard",
     "category": "characters"
   },
   {
@@ -1652,13 +1456,6 @@
     "category": "parks"
   },
   {
-    "id": 777,
-    "question": "What year did Pirates of the Caribbean first open at Disneyland?",
-    "answers": ["1967", "1955", "1971", "1976"],
-    "difficulty": "hard",
-    "category": "parks"
-  },
-  {
     "id": 778,
     "question": "What is the name of the Star Wars ride at Galaxy's Edge where guests co-pilot the Millennium Falcon on a smuggling mission?",
     "answers": ["Millennium Falcon: Smugglers Run", "Star Wars: Rise of the Resistance", "Star Tours: The Adventures Continue", "Galaxy's Edge Starfighter"],
@@ -1725,20 +1522,6 @@
     "id": 787,
     "question": "During World War I, what organization did a teenage Walt Disney join to serve overseas after being too young to enlist in the Army?",
     "answers": ["The American Red Cross Ambulance Corps", "The French Foreign Legion", "The Salvation Army", "The U.S. Army Reserves"],
-    "difficulty": "hard",
-    "category": "walt"
-  },
-  {
-    "id": 788,
-    "question": "Which television network partnered with Walt Disney to fund Disneyland's construction in exchange for broadcasting rights to his TV show?",
-    "answers": ["ABC", "NBC", "CBS", "Fox"],
-    "difficulty": "hard",
-    "category": "walt"
-  },
-  {
-    "id": 789,
-    "question": "Which U.S. President awarded Walt Disney the Presidential Medal of Freedom in 1964?",
-    "answers": ["Lyndon B. Johnson", "John F. Kennedy", "Richard Nixon", "Dwight D. Eisenhower"],
     "difficulty": "hard",
     "category": "walt"
   },
@@ -1818,5 +1601,152 @@
     "answers": ["Castaway Club", "Repeat Voyager Club", "Disney Loyal Cruiser", "Sea Captain's Club"],
     "difficulty": "medium",
     "category": "cruise"
+  },
+  {
+    "id": 502,
+    "question": "Which two stories are adapted in The Adventures of Ichabod and Mr. Toad?",
+    "answers": ["The Wind in the Willows and The Legend of Sleepy Hollow", "Peter Pan and Alice in Wonderland", "Bongo and Mickey and the Beanstalk", "The Reluctant Dragon and The Old Mill"],
+    "difficulty": "hard",
+    "category": "movies"
+  },
+  {
+    "id": 503,
+    "question": "In The Adventures of Ichabod and Mr. Toad, who is the schoolmaster in Sleepy Hollow?",
+    "answers": ["Ichabod Crane", "Brom Bones", "Angus MacBadger", "J. Thaddeus Toad"],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  {
+    "id": 508,
+    "question": "In Fun and Fancy Free, what giant appears in Mickey and the Beanstalk?",
+    "answers": ["Willie the Giant", "Big Bad Wolf", "Monstro", "Goliath"],
+    "difficulty": "hard",
+    "category": "movies"
+  },
+  {
+    "id": 511,
+    "question": "Which Disney film includes the song Lavender Blue?",
+    "answers": ["So Dear to My Heart", "Make Mine Music", "Melody Time", "Fun and Fancy Free"],
+    "difficulty": "hard",
+    "category": "music"
+  },
+  {
+    "id": 512,
+    "question": "At Disneyland Paris, what is the Haunted Mansion-style attraction called?",
+    "answers": ["Phantom Manor", "Mystic Manor", "Ravenswood Hall", "Manor of Shadows"],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  {
+    "id": 513,
+    "question": "At Shanghai Disneyland, what pirate-themed land is home to Battle for the Sunken Treasure?",
+    "answers": ["Treasure Cove", "Adventure Isle", "Gardens of Imagination", "Fantasyland"],
+    "difficulty": "hard",
+    "category": "parks"
+  },
+  {
+    "id": 519,
+    "question": "In The Emperor's New Groove, what is Pacha's wife's name?",
+    "answers": ["Chicha", "Malina", "Yzma", "Mata"],
+    "difficulty": "hard",
+    "category": "characters"
+  },
+  {
+    "id": 522,
+    "question": "Which eccentric digger on Milo's expedition is obsessed with dirt?",
+    "answers": ["Gaetan Moliere", "Vinny Santorini", "Dr. Sweet", "Cookie"],
+    "difficulty": "hard",
+    "category": "characters"
+  },
+  {
+    "id": 523,
+    "question": "In The Rescuers Down Under, what country is the setting?",
+    "answers": ["Australia", "New Zealand", "South Africa", "Brazil"],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  {
+    "id": 531,
+    "question": "Which Disney animated film includes the song Once Upon a Time in New York City?",
+    "answers": ["Oliver & Company", "The Rescuers", "The Great Mouse Detective", "The Aristocats"],
+    "difficulty": "hard",
+    "category": "music"
+  },
+  {
+    "id": 533,
+    "question": "Which Disney artist led the stylized background look of Sleeping Beauty?",
+    "answers": ["Eyvind Earle", "Mary Blair", "Marc Davis", "Ken Anderson"],
+    "difficulty": "hard",
+    "category": "walt"
+  },
+  {
+    "id": 540,
+    "question": "In Frozen 2, what are the giant rock spirits called?",
+    "answers": ["Earth Giants", "Stone Keepers", "Rock Trolls", "Mountain Titans"],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  {
+    "id": 542,
+    "question": "In Encanto, which Madrigal family member controls weather with her emotions?",
+    "answers": ["Pepa", "Dolores", "Julieta", "Isabela"],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  {
+    "id": 545,
+    "question": "At Animal Kingdom, what theater attraction about insects opened with the park?",
+    "answers": ["It's Tough to Be a Bug!", "Festival of the Lion King", "Flights of Wonder", "Finding Nemo: The Musical"],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  {
+    "id": 548,
+    "question": "Which Disney animated film includes The Bells of Notre Dame?",
+    "answers": ["The Hunchback of Notre Dame", "Beauty and the Beast", "Hercules", "Pocahontas"],
+    "difficulty": "medium",
+    "category": "music"
+  },
+  {
+    "id": 551,
+    "question": "Which EPCOT nighttime show debuted for Walt Disney World's 50th anniversary celebration?",
+    "answers": ["Harmonious", "IllumiNations", "EPCOT Forever", "Luminous"],
+    "difficulty": "hard",
+    "category": "parks"
+  },
+  {
+    "id": 552,
+    "question": "On the Disney Fantasy, which rotational restaurant is themed to royal Disney stories?",
+    "answers": ["Royal Court", "Royal Palace", "Animator's Palate", "Enchanted Garden"],
+    "difficulty": "medium",
+    "category": "cruise"
+  },
+  {
+    "id": 554,
+    "question": "On the Disney Dream, which rotational restaurant is themed to royal Disney stories?",
+    "answers": ["Royal Palace", "Royal Court", "Animator's Palate", "Enchanted Garden"],
+    "difficulty": "medium",
+    "category": "cruise"
+  },
+  {
+    "id": 555,
+    "question": "In Brave, which three clans compete for Merida's hand?",
+    "answers": ["Dingwall, Macintosh, and MacGuffin", "DunBroch, Mor'du, and Harris", "MacLeod, Fraser, and Campbell", "Hubert, Hamish, and Fergus"],
+    "difficulty": "hard",
+    "category": "pixar"
+  },
+  {
+    "id": 557,
+    "question": "In The Good Dinosaur, what kind of work does Arlo's family do?",
+    "answers": ["Farming", "Mining", "Fishing", "Trading"],
+    "difficulty": "medium",
+    "category": "pixar"
+  },
+  {
+    "id": 558,
+    "question": "In Onward, what is Barley Lightfoot's van called?",
+    "answers": ["Guinevere", "Valkyrie", "The Manticore", "Phoenix"],
+    "difficulty": "medium",
+    "category": "pixar"
   }
 ]
