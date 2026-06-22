@@ -28,7 +28,7 @@ Screens are `<div class="screen">` elements that get `.hidden` toggled. Only one
 2. `screen-settings` — difficulty, categories, question count
 3. `screen-game` — active game
 4. `screen-results` — score, category breakdown, missed question review
-5. `screen-leaderboard` — all players ranked by correct-answer percentage
+5. `screen-leaderboard` — all players ranked by total points (lifetime)
 
 ## Question Format
 ```js
@@ -64,14 +64,19 @@ Collections:
 Document shape:
 ```js
 // users/{userId}
-{ id, name, totalAnswered, totalCorrect, gamesPlayed }
+{ id, name, totalAnswered, totalCorrect, gamesPlayed,
+  totalPoints,       // accumulated lifetime points — PRIMARY STATE, not derived (sequence-dependent bonuses make it non-recomputable)
+  dailyStreak,       // consecutive days with a daily challenge
+  lastDailyDate,     // "YYYY-MM-DD" of last daily played
+  lastDailyScore,    // correct count (0–10) in last daily
+  lastDailyPoints }  // pts earned in last daily
 
 // flags/{autoId}
 { questionId, questionText, correctAnswer, allAnswers, difficulty, category,
   reportedBy, comment, timestamp, _resolved? }
 ```
 
-Stats stored as raw counters (`totalAnswered`, `totalCorrect`); percentage is always derived, never stored. `updateStats` uses a Firestore transaction to avoid race conditions when two players finish at the same time.
+Stats stored as raw counters (`totalAnswered`, `totalCorrect`); percentage is always derived, never stored. `totalPoints` looks like a derived value but is **primary state** — streak and bonus mechanics make it non-recomputable from counters alone. `updateStats` uses a Firestore transaction to avoid race conditions when two players finish at the same time. The `dailyUpdate` payload (score, points, dateKey, streak) is written inside the same transaction so daily fields are always consistent with the stats update.
 
 **Firebase console:** https://console.firebase.google.com/project/disneytrivia-38ac6
 
@@ -132,13 +137,33 @@ Web Audio API (synthesized, no audio files). Wrapped in the `sounds` IIFE in `ap
 - `sounds.toggle()` — flip muted state; persists in `localStorage` key `disney_sound_muted`
 - Mute button (🔊/🔇) is in the game screen top bar next to Exit
 
+## Scoring System
+Points are computed by `scoreBreakdown(answers, earnDailyBonus, dailyStreak)` in `app.js` and stored atomically to Firestore inside the `updateStats` transaction. Earning formula:
+
+| Component | Value |
+|---|---|
+| Correct answer — easy | 100 pts |
+| Correct answer — medium | 150 pts |
+| Correct answer — hard | 200 pts |
+| In-game streak bonus (run ≥ 3) | +25 per correct while streak holds |
+| Perfect game (all correct) | +500 pts |
+| Daily challenge completion (first play of day) | +200 pts flat |
+| Daily streak scaling (first play of day) | +10 × min(dailyStreak, 30) |
+
+- `SCORING` constant object in `app.js` holds all values — edit there to rebalance
+- `scoreBreakdown()` returns `{ base, streakBonus, perfectBonus, dailyBonus, total }`
+- Leaderboard sorts by `totalPoints` descending; percentage is the secondary tiebreaker
+- Results screen shows full breakdown when more than one component contributed
+- Replaying the daily challenge earns base + streak bonus only (no daily bonus for second play)
+- Exiting mid-game awards base + streak bonus for answered questions only, no perfect/daily bonus
+
 ## Key app.js Globals
 | Variable | What it holds |
 |---|---|
 | `QUESTIONS` | Flat array of all question objects, populated at boot by `loadQuestions()` |
 | `currentUser` | The user object selected on the home screen |
 | `gameSettings` | `{ difficulty, categories[], questionCount }` — set on settings screen |
-| `gameState` | `{ questions[], currentIndex, answers[], score }` — active game |
+| `gameState` | `{ questions[], currentIndex, answers[], score, currentStreak, isDaily, pointsEarned, scoreBreakdown }` — active game |
 | `shuffledOpts` | `[{text, originalIndex}]` — display order for current question's answers |
 
 ## Styling Conventions

@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=1.6">
+  <link rel="stylesheet" href="style.css?v=1.7">
 </head>
 <body>
 <div id="stars" aria-hidden="true"></div>
@@ -43,6 +43,10 @@
     </div>
     <div class="section-label">Who's playing?</div>
     <div id="user-list" class="user-list"></div>
+    <div id="daily-card" class="daily-card hidden">
+      <div class="daily-card-title">📅 Today's Challenge</div>
+      <div id="daily-card-body"></div>
+    </div>
     <div id="add-user-section">
       <button class="btn-secondary" id="btn-show-add-user">+ Add Player</button>
       <div id="add-user-form" class="hidden">
@@ -160,6 +164,7 @@
       <div id="results-emoji" class="results-emoji">🎉</div>
       <h2 id="results-title" class="gold">Great Job!</h2>
       <div id="results-fraction" class="results-fraction"></div>
+      <div id="results-points-display" class="results-points-wrap"></div>
       <div id="results-pct" class="results-pct"></div>
     </div>
     <div id="results-breakdown" class="breakdown-list"></div>
@@ -188,7 +193,7 @@
 </div>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
-<script src="storage.js?v=1.6"></script>
-<script src="app.js?v=1.6"></script>
+<script src="storage.js?v=1.7"></script>
+<script src="app.js?v=1.7"></script>
 </body>
 </html>

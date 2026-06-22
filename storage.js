@@ -15,8 +15,8 @@ class LocalStorageAdapter {
     const data = this._load();
     if (!data.users) {
       data.users = {
-        kristen: { id: 'kristen', name: 'Kristen', totalAnswered: 0, totalCorrect: 0, gamesPlayed: 0 },
-        cara:    { id: 'cara',    name: 'Cara',    totalAnswered: 0, totalCorrect: 0, gamesPlayed: 0 }
+        kristen: { id: 'kristen', name: 'Kristen', totalAnswered: 0, totalCorrect: 0, gamesPlayed: 0, totalPoints: 0 },
+        cara:    { id: 'cara',    name: 'Cara',    totalAnswered: 0, totalCorrect: 0, gamesPlayed: 0, totalPoints: 0 }
       };
       this._save(data);
     }
@@ -34,13 +34,22 @@ class LocalStorageAdapter {
     return user;
   }
 
-  async updateStats(userId, answered, correct) {
+  // points — pts earned this game (primary state; not recomputable from counters alone)
+  // dailyUpdate — {score, points, dateKey, streak} or null
+  async updateStats(userId, answered, correct, points, dailyUpdate) {
     const data = this._load();
     const u = data.users[userId];
     if (!u) throw new Error('User not found: ' + userId);
     u.totalAnswered += answered;
     u.totalCorrect  += correct;
     u.gamesPlayed   += 1;
+    u.totalPoints    = (u.totalPoints || 0) + points;
+    if (dailyUpdate) {
+      u.lastDailyScore  = dailyUpdate.score;
+      u.lastDailyPoints = dailyUpdate.points;
+      u.lastDailyDate   = dailyUpdate.dateKey;
+      u.dailyStreak     = dailyUpdate.streak;
+    }
     this._save(data);
     return u;
   }
@@ -68,10 +77,11 @@ class LocalStorageAdapter {
   async getLeaderboard() {
     const users = Object.values(this._load().users || {});
     return users.sort((a, b) => {
+      const ptsDiff = (b.totalPoints || 0) - (a.totalPoints || 0);
+      if (ptsDiff !== 0) return ptsDiff;
       const pa = a.totalAnswered ? a.totalCorrect / a.totalAnswered : -1;
       const pb = b.totalAnswered ? b.totalCorrect / b.totalAnswered : -1;
-      if (pb !== pa) return pb - pa;
-      return b.totalAnswered - a.totalAnswered;
+      return pb - pa;
     });
   }
 }
@@ -95,8 +105,8 @@ class FirebaseAdapter {
 
   async _seed() {
     const defaults = [
-      { id: 'kristen', name: 'Kristen', totalAnswered: 0, totalCorrect: 0, gamesPlayed: 0 },
-      { id: 'cara',    name: 'Cara',    totalAnswered: 0, totalCorrect: 0, gamesPlayed: 0 }
+      { id: 'kristen', name: 'Kristen', totalAnswered: 0, totalCorrect: 0, gamesPlayed: 0, totalPoints: 0 },
+      { id: 'cara',    name: 'Cara',    totalAnswered: 0, totalCorrect: 0, gamesPlayed: 0, totalPoints: 0 }
     ];
     for (const u of defaults) {
       const ref  = this.db.collection('users').doc(u.id);
@@ -115,16 +125,26 @@ class FirebaseAdapter {
     return user;
   }
 
-  async updateStats(userId, answered, correct) {
+  // points — pts earned this game (primary state; not recomputable from counters alone)
+  // dailyUpdate — {score, points, dateKey, streak} or null
+  async updateStats(userId, answered, correct, points, dailyUpdate) {
     const ref = this.db.collection('users').doc(userId);
     await this.db.runTransaction(async tx => {
       const doc = await tx.get(ref);
       const d   = doc.data();
-      tx.update(ref, {
+      const update = {
         totalAnswered: d.totalAnswered + answered,
         totalCorrect:  d.totalCorrect  + correct,
-        gamesPlayed:   d.gamesPlayed   + 1
-      });
+        gamesPlayed:   d.gamesPlayed   + 1,
+        totalPoints:   (d.totalPoints || 0) + points
+      };
+      if (dailyUpdate) {
+        update.lastDailyScore  = dailyUpdate.score;
+        update.lastDailyPoints = dailyUpdate.points;
+        update.lastDailyDate   = dailyUpdate.dateKey;
+        update.dailyStreak     = dailyUpdate.streak;
+      }
+      tx.update(ref, update);
     });
   }
 
@@ -148,10 +168,11 @@ class FirebaseAdapter {
     const snap  = await this.db.collection('users').get();
     const users = snap.docs.map(d => d.data());
     return users.sort((a, b) => {
+      const ptsDiff = (b.totalPoints || 0) - (a.totalPoints || 0);
+      if (ptsDiff !== 0) return ptsDiff;
       const pa = a.totalAnswered ? a.totalCorrect / a.totalAnswered : -1;
       const pb = b.totalAnswered ? b.totalCorrect / b.totalAnswered : -1;
-      if (pb !== pa) return pb - pa;
-      return b.totalAnswered - a.totalAnswered;
+      return pb - pa;
     });
   }
 }

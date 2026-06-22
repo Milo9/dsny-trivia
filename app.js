@@ -1,4 +1,4 @@
-const APP_VERSION = '1.6';
+const APP_VERSION = '1.7';
 
 // =============================================================================
 // State
@@ -6,7 +6,7 @@ const APP_VERSION = '1.6';
 let QUESTIONS     = [];
 let currentUser   = null;
 let gameSettings  = { difficulty: 'all', categories: ['movies','characters','parks','walt','cruise','music','pixar'], questionCount: 10 };
-let gameState     = { questions: [], currentIndex: 0, answers: [], score: 0, currentStreak: 0, isDaily: false };
+let gameState     = { questions: [], currentIndex: 0, answers: [], score: 0, currentStreak: 0, isDaily: false, pointsEarned: 0, scoreBreakdown: null };
 let shuffledOpts  = [];   // [{text, originalIndex}] for current question display
 
 // =============================================================================
@@ -68,8 +68,7 @@ function todayKey() {
   return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
 }
 
-// Returns number of calendar days between two "YYYY-MM-DD" keys (today - prev).
-// Returns Infinity if prev is falsy (never played).
+// Returns calendar days between two "YYYY-MM-DD" keys. Returns Infinity if prev is falsy.
 function computeDaysDiff(prev, today) {
   if (!prev) return Infinity;
   const [py, pm, pd] = prev.split('-').map(Number);
@@ -97,11 +96,44 @@ function dateToSeed(key) {
   return h;
 }
 
-// Returns the same 10 questions for all players on a given calendar day.
 // Stable-sorts by id first so shard/load order doesn't affect the result.
 function getDailyQuestions(count = 10) {
   const sorted = [...QUESTIONS].sort((a, b) => a.id - b.id);
   return seededShuffle(sorted, dateToSeed(todayKey())).slice(0, count);
+}
+
+// =============================================================================
+// Scoring
+// =============================================================================
+const SCORING = {
+  easy: 100, medium: 150, hard: 200,  // pts per correct answer
+  streak: 25,                          // per correct while in-game run ≥ 3
+  perfect: 500,                        // all correct in one game
+  dailyFlat: 200,                      // daily challenge completion
+  dailyPerDay: 10,                     // × min(streak, dailyStreakCap)
+  dailyStreakCap: 30
+};
+
+// Returns {base, streakBonus, perfectBonus, dailyBonus, total}.
+// earnDailyBonus — true only on first daily play of the calendar day.
+// dailyStreak    — the new streak value after this game.
+function scoreBreakdown(answers, earnDailyBonus, dailyStreak) {
+  let base = 0, streakBonus = 0, run = 0;
+  for (const a of answers) {
+    if (a.correct) {
+      base += SCORING[a.question.difficulty] || SCORING.easy;
+      run++;
+      if (run >= 3) streakBonus += SCORING.streak;
+    } else {
+      run = 0;
+    }
+  }
+  const perfectBonus = (answers.length > 0 && answers.every(a => a.correct)) ? SCORING.perfect : 0;
+  let dailyBonus = 0;
+  if (earnDailyBonus) {
+    dailyBonus = SCORING.dailyFlat + Math.min(dailyStreak, SCORING.dailyStreakCap) * SCORING.dailyPerDay;
+  }
+  return { base, streakBonus, perfectBonus, dailyBonus, total: base + streakBonus + perfectBonus + dailyBonus };
 }
 
 // =============================================================================
@@ -173,7 +205,6 @@ async function renderHome() {
   showScreen('screen-home');
   document.getElementById('app-version').textContent = 'v' + APP_VERSION;
 
-  // Reset add-user form state
   document.getElementById('add-user-form').classList.add('hidden');
   document.getElementById('btn-show-add-user').classList.remove('hidden');
   document.getElementById('new-user-input').value = '';
@@ -190,14 +221,16 @@ async function renderHome() {
   }
 
   const lastId = localStorage.getItem('disney_last_user');
+  const today  = todayKey();
 
   users.forEach(user => {
-    const card = document.createElement('div');
-    card.className = 'user-card';
+    const card       = document.createElement('div');
+    card.className   = 'user-card';
     const streak     = user.dailyStreak || 0;
     const streakText = streak > 0 ? ` · 🔥 ${streak}` : '';
-    const stat = user.totalAnswered
-      ? `${user.totalAnswered} questions · ${pct(user.totalCorrect, user.totalAnswered)} correct${streakText}`
+    const pts        = user.totalPoints || 0;
+    const stat       = user.totalAnswered
+      ? `${pts.toLocaleString()} pts · ${pct(user.totalCorrect, user.totalAnswered)} correct${streakText}`
       : streak > 0 ? `🔥 ${streak} day streak` : 'No games yet';
     card.innerHTML = `
       <div class="user-avatar">${disneyAvatar(user.name)}</div>
@@ -209,10 +242,31 @@ async function renderHome() {
     `;
     card.addEventListener('click', () => selectUser(user));
     list.appendChild(card);
-
-    // Auto-highlight last player (subtle — just border tint)
     if (user.id === lastId) card.style.borderColor = 'var(--primary)';
   });
+
+  // Daily challenge comparison card
+  const dailyCard = document.getElementById('daily-card');
+  const dailyBody = document.getElementById('daily-card-body');
+  dailyBody.innerHTML = '';
+  users.forEach(user => {
+    const played = user.lastDailyDate === today;
+    const row    = document.createElement('div');
+    row.className = 'daily-cmp-row';
+    if (played) {
+      row.innerHTML = `
+        <span class="dcmp-name">${disneyAvatar(user.name)} ${user.name}</span>
+        <span class="dcmp-score">${user.lastDailyScore ?? 0}/10 · <strong>${(user.lastDailyPoints||0).toLocaleString()} pts</strong> ✓</span>
+      `;
+    } else {
+      row.innerHTML = `
+        <span class="dcmp-name">${disneyAvatar(user.name)} ${user.name}</span>
+        <span class="dcmp-not-played">—</span>
+      `;
+    }
+    dailyBody.appendChild(row);
+  });
+  dailyCard.classList.toggle('hidden', users.length === 0);
 }
 
 function selectUser(user) {
@@ -241,7 +295,7 @@ async function addUser() {
   const input = document.getElementById('new-user-input');
   const name  = input.value.trim();
   if (!name) return;
-  await storage.saveUser({ id: slugId(name), name, totalAnswered: 0, totalCorrect: 0, gamesPlayed: 0 });
+  await storage.saveUser({ id: slugId(name), name, totalAnswered: 0, totalCorrect: 0, gamesPlayed: 0, totalPoints: 0 });
   renderHome();
 }
 
@@ -266,12 +320,13 @@ async function renderLeaderboard() {
   empty.classList.add('hidden');
 
   users.forEach((u, i) => {
-    const entry = document.createElement('div');
-    entry.className = `lb-entry${i < 3 ? ' rank-' + (i + 1) : ''}`;
+    const entry      = document.createElement('div');
+    entry.className  = `lb-entry${i < 3 ? ' rank-' + (i + 1) : ''}`;
     const percentage = u.totalAnswered ? Math.round((u.totalCorrect / u.totalAnswered) * 100) : null;
-    const detail = u.totalAnswered
+    const detail     = u.totalAnswered
       ? `${u.totalAnswered} q · ${u.gamesPlayed} game${u.gamesPlayed !== 1 ? 's' : ''}`
       : 'No games yet';
+    const pts = (u.totalPoints || 0).toLocaleString();
     entry.innerHTML = `
       <div class="lb-rank">${medals[i] || (i + 1)}</div>
       <div class="lb-avatar">${disneyAvatar(u.name)}</div>
@@ -279,7 +334,10 @@ async function renderLeaderboard() {
         <div class="lb-name">${u.name}</div>
         <div class="lb-detail">${detail}</div>
       </div>
-      <div class="lb-pct">${percentage !== null ? percentage + '%' : '—'}</div>
+      <div class="lb-score-block">
+        <div class="lb-pts">${pts}</div>
+        <div class="lb-pct">${percentage !== null ? percentage + '%' : '—'}</div>
+      </div>
     `;
     list.appendChild(entry);
   });
@@ -293,10 +351,9 @@ function renderSettings() {
   document.getElementById('settings-user-name').textContent = currentUser.name;
   updateAvailableHint();
 
-  // Daily challenge card
-  const today   = todayKey();
-  const streak  = currentUser.dailyStreak || 0;
-  const played  = currentUser.lastDailyDate === today;
+  const today    = todayKey();
+  const streak   = currentUser.dailyStreak || 0;
+  const played   = currentUser.lastDailyDate === today;
   const statusEl = document.getElementById('daily-status');
   const btn      = document.getElementById('btn-daily-challenge');
 
@@ -318,7 +375,7 @@ function renderSettings() {
 document.getElementById('btn-settings-back').addEventListener('click', renderHome);
 
 document.getElementById('btn-daily-challenge').addEventListener('click', () => {
-  gameState = { questions: getDailyQuestions(10), currentIndex: 0, answers: [], score: 0, currentStreak: 0, isDaily: true };
+  gameState = { questions: getDailyQuestions(10), currentIndex: 0, answers: [], score: 0, currentStreak: 0, isDaily: true, pointsEarned: 0, scoreBreakdown: null };
   renderGameQuestion();
 });
 
@@ -383,7 +440,7 @@ document.getElementById('btn-start-game').addEventListener('click', () => {
   const fresh = pool.filter(q => !seen.has(q.id));
   const src   = fresh.length >= count ? fresh : pool;
 
-  gameState = { questions: shuffle(src).slice(0, count), currentIndex: 0, answers: [], score: 0, currentStreak: 0, isDaily: false };
+  gameState = { questions: shuffle(src).slice(0, count), currentIndex: 0, answers: [], score: 0, currentStreak: 0, isDaily: false, pointsEarned: 0, scoreBreakdown: null };
   renderGameQuestion();
 });
 
@@ -407,7 +464,6 @@ function renderGameQuestion() {
 
   document.getElementById('question-text').textContent = q.question;
 
-  // Shuffle answer positions
   const indices = shuffle([0, 1, 2, 3]);
   shuffledOpts  = indices.map(i => ({ text: q.answers[i], originalIndex: i }));
 
@@ -424,7 +480,6 @@ function renderGameQuestion() {
     grid.appendChild(btn);
   });
 
-  // Sync streak banner
   const banner = document.getElementById('streak-banner');
   if (gameState.currentStreak >= 2) {
     document.getElementById('streak-count').textContent = gameState.currentStreak;
@@ -433,12 +488,10 @@ function renderGameQuestion() {
     banner.classList.add('hidden');
   }
 
-  // Sync mute button
   const muteBtn = document.getElementById('btn-mute-sound');
   muteBtn.textContent = sounds.muted ? '🔇' : '🔊';
   muteBtn.classList.toggle('muted', sounds.muted);
 
-  // Reset feedback area
   document.getElementById('feedback-area').classList.add('hidden');
   document.getElementById('flag-form').classList.add('hidden');
   document.getElementById('flag-thanks').classList.add('hidden');
@@ -470,14 +523,13 @@ function handleAnswer(selectedIdx) {
     sounds.wrong();
   }
 
-  // Update streak banner
   const banner = document.getElementById('streak-banner');
   if (gameState.currentStreak >= 2) {
     document.getElementById('streak-count').textContent = gameState.currentStreak;
     banner.classList.remove('hidden');
     // Re-trigger pop animation
     banner.style.animation = 'none';
-    banner.offsetHeight; // force reflow
+    banner.offsetHeight;
     banner.style.animation = '';
   } else {
     banner.classList.add('hidden');
@@ -517,7 +569,8 @@ document.getElementById('btn-exit-game').addEventListener('click', async () => {
     : 'Exit this game? You haven\'t answered any questions yet.';
   if (confirm(msg)) {
     if (answered > 0) {
-      await storage.updateStats(currentUser.id, answered, gameState.score);
+      const pts = scoreBreakdown(gameState.answers, false, 0).total;
+      await storage.updateStats(currentUser.id, answered, gameState.score, pts, null);
       addSeenIds(currentUser.id, gameState.answers.map(a => a.question.id));
     }
     renderHome();
@@ -576,22 +629,30 @@ async function submitFlag() {
 // RESULTS SCREEN
 // =============================================================================
 async function endGame() {
-  await storage.updateStats(currentUser.id, gameState.questions.length, gameState.score);
+  const today             = todayKey();
+  const isFirstDailyToday = gameState.isDaily && currentUser.lastDailyDate !== today;
 
-  // Daily challenge streak update (idempotent — only increments once per calendar day)
-  if (gameState.isDaily) {
-    const today = todayKey();
-    if (currentUser.lastDailyDate !== today) {
-      const diff      = computeDaysDiff(currentUser.lastDailyDate, today);
-      const newStreak = diff === 1 ? (currentUser.dailyStreak || 0) + 1 : 1;
-      try {
-        await storage.updateDailyStreak(currentUser.id, newStreak, today);
-      } catch(e) {}
-    }
+  // Compute new daily streak before scoring so the bonus uses the correct level
+  let newDailyStreak = currentUser.dailyStreak || 0;
+  if (isFirstDailyToday) {
+    const diff = computeDaysDiff(currentUser.lastDailyDate, today);
+    newDailyStreak = diff === 1 ? (currentUser.dailyStreak || 0) + 1 : 1;
   }
 
+  const bd = scoreBreakdown(gameState.answers, isFirstDailyToday, newDailyStreak);
+  gameState.pointsEarned   = bd.total;
+  gameState.scoreBreakdown = bd;
+
+  const dailyUpdate = isFirstDailyToday ? {
+    score:   gameState.score,
+    points:  bd.total,
+    dateKey: today,
+    streak:  newDailyStreak
+  } : null;
+
+  await storage.updateStats(currentUser.id, gameState.questions.length, gameState.score, bd.total, dailyUpdate);
   addSeenIds(currentUser.id, gameState.questions.map(q => q.id));
-  // Refresh user data
+
   const users = await storage.getUsers();
   currentUser = users.find(u => u.id === currentUser.id) || currentUser;
   renderResults();
@@ -617,6 +678,21 @@ function renderResults() {
   document.getElementById('results-fraction').textContent = `${score} out of ${total} correct`;
   document.getElementById('results-pct').textContent      = percentage + '%';
 
+  // Points breakdown
+  const bd   = gameState.scoreBreakdown;
+  const ptEl = document.getElementById('results-points-display');
+  if (bd) {
+    const lines = [];
+    if (bd.base > 0)         lines.push(`Base: ${bd.base.toLocaleString()}`);
+    if (bd.streakBonus > 0)  lines.push(`🔥 Streak: +${bd.streakBonus.toLocaleString()}`);
+    if (bd.perfectBonus > 0) lines.push(`⭐ Perfect: +${bd.perfectBonus.toLocaleString()}`);
+    if (bd.dailyBonus > 0)   lines.push(`📅 Daily: +${bd.dailyBonus.toLocaleString()}`);
+    ptEl.innerHTML = `<div class="pts-total">+${bd.total.toLocaleString()} pts</div>` +
+      (lines.length > 1 ? `<div class="pts-breakdown">${lines.join(' · ')}</div>` : '');
+  } else {
+    ptEl.innerHTML = '';
+  }
+
   // Category breakdown
   const breakdown = {};
   gameState.answers.forEach(a => {
@@ -639,10 +715,10 @@ function renderResults() {
   });
 
   // Missed questions
-  const missed      = gameState.answers.filter(a => !a.correct);
-  const missedSec   = document.getElementById('missed-section');
-  const reviewBtn   = document.getElementById('btn-review-missed');
-  const missedList  = document.getElementById('missed-list');
+  const missed    = gameState.answers.filter(a => !a.correct);
+  const missedSec = document.getElementById('missed-section');
+  const reviewBtn = document.getElementById('btn-review-missed');
+  const missedList = document.getElementById('missed-list');
 
   if (missed.length === 0) {
     missedSec.classList.add('hidden');
@@ -676,14 +752,14 @@ document.getElementById('btn-review-missed').addEventListener('click', () => {
 
 document.getElementById('btn-rematch').addEventListener('click', () => {
   if (gameState.isDaily) {
-    gameState = { questions: getDailyQuestions(10), currentIndex: 0, answers: [], score: 0, currentStreak: 0, isDaily: true };
+    gameState = { questions: getDailyQuestions(10), currentIndex: 0, answers: [], score: 0, currentStreak: 0, isDaily: true, pointsEarned: 0, scoreBreakdown: null };
   } else {
     const pool  = filteredPool();
     const count = Math.min(gameSettings.questionCount, pool.length);
     const seen  = new Set(getSeenIds(currentUser.id));
     const fresh = pool.filter(q => !seen.has(q.id));
     const src   = fresh.length >= count ? fresh : pool;
-    gameState = { questions: shuffle(src).slice(0, count), currentIndex: 0, answers: [], score: 0, currentStreak: 0, isDaily: false };
+    gameState = { questions: shuffle(src).slice(0, count), currentIndex: 0, answers: [], score: 0, currentStreak: 0, isDaily: false, pointsEarned: 0, scoreBreakdown: null };
   }
   renderGameQuestion();
 });
