@@ -24,7 +24,7 @@ A static single-page trivia app built for Kristen and Cara to practice before a 
 ## The 5 Screens
 Screens are `<div class="screen">` elements that get `.hidden` toggled. Only one is visible at a time. Navigation is handled by `showScreen(id)` in `app.js`.
 
-1. `screen-home` — player selection, add new player
+1. `screen-home` — player selection, add new player; shows today's and yesterday's daily challenge comparison cards
 2. `screen-settings` — difficulty, categories, question count
 3. `screen-game` — active game
 4. `screen-results` — score, category breakdown, missed question review
@@ -118,7 +118,7 @@ git add -A && git commit -m "your message" && git push
 ## Daily Challenge
 A second game mode accessible from the settings screen. Always 10 questions, all categories, no difficulty filter. Uses a deterministic seeded shuffle so **all players see the same questions on a given calendar day**.
 
-- Date key: `"YYYY-MM-DD"` via `todayKey()`, which subtracts 8h from UTC so the day rolls over at 2am MDT (Mountain Daylight Time) = 4am EDT. This ensures both Eastern and Alberta players always share the same question set.
+- Date key: `"YYYY-MM-DD"` via `dayKey(daysAgo=0)` (or the `todayKey()` wrapper), which subtracts 8h from UTC so the day rolls over at 2am MDT (Mountain Daylight Time) = 4am EDT. This ensures both Eastern and Alberta players always share the same question set. `dayKey(1)` gives yesterday using the same offset — do not compute yesterday via string arithmetic.
 - Seed: `dateToSeed(key)` hashes the string; `seededShuffle()` uses an inline mulberry32 step
 - Questions are stable-sorted by `id` before shuffling so shard load order doesn't affect results
 - Streak (`dailyStreak`, `lastDailyDate`) stored in Firestore on the user doc — cross-device

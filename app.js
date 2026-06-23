@@ -66,10 +66,12 @@ function catLabel(c) { return CAT_LABELS[c] || c; }
 // Daily resets at 2am Mountain Time (UTC-6 summer / MDT).
 // Subtracting 8h shifts the UTC day boundary to 8am UTC = 2am MDT = 4am EDT.
 // getUTC* is correct here because the offset is baked into the timestamp.
-function todayKey() {
-  const d = new Date(Date.now() - 8 * 3600000);
+// daysAgo=0 → today, daysAgo=1 → yesterday (same 8h offset, no string arithmetic).
+function dayKey(daysAgo = 0) {
+  const d = new Date(Date.now() - 8 * 3600000 - daysAgo * 86400000);
   return `${d.getUTCFullYear()}-${String(d.getUTCMonth()+1).padStart(2,'0')}-${String(d.getUTCDate()).padStart(2,'0')}`;
 }
+function todayKey() { return dayKey(0); }
 
 // Returns calendar days between two "YYYY-MM-DD" keys. Returns Infinity if prev is falsy.
 function computeDaysDiff(prev, today) {
@@ -270,6 +272,33 @@ async function renderHome() {
     dailyBody.appendChild(row);
   });
   dailyCard.classList.toggle('hidden', users.length === 0);
+
+  // Yesterday's challenge — visible when the day has rolled but yesterday's scores haven't been overwritten
+  const yesterday     = dayKey(1);
+  const yesterdayCard = document.getElementById('yesterday-card');
+  const yesterdayBody = document.getElementById('yesterday-card-body');
+  yesterdayBody.innerHTML = '';
+  const anyYesterday = users.some(u => u.lastDailyDate === yesterday);
+  if (anyYesterday) {
+    users.forEach(user => {
+      const played = user.lastDailyDate === yesterday;
+      const row    = document.createElement('div');
+      row.className = 'daily-cmp-row';
+      if (played) {
+        row.innerHTML = `
+          <span class="dcmp-name">${disneyAvatar(user.name)} ${user.name}</span>
+          <span class="dcmp-score">${user.lastDailyScore ?? 0}/10 · <strong>${(user.lastDailyPoints||0).toLocaleString()} pts</strong> ✓</span>
+        `;
+      } else {
+        row.innerHTML = `
+          <span class="dcmp-name">${disneyAvatar(user.name)} ${user.name}</span>
+          <span class="dcmp-not-played">—</span>
+        `;
+      }
+      yesterdayBody.appendChild(row);
+    });
+  }
+  yesterdayCard.classList.toggle('hidden', !anyYesterday);
 }
 
 function selectUser(user) {
