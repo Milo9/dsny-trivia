@@ -45,6 +45,12 @@ class LocalStorageAdapter {
     u.gamesPlayed   += 1;
     u.totalPoints    = (u.totalPoints || 0) + points;
     if (dailyUpdate) {
+      // First play of a new day: shift current slot into prev before overwriting
+      if (dailyUpdate.streak !== null && u.lastDailyDate && u.lastDailyDate !== dailyUpdate.dateKey) {
+        u.prevDailyDate   = u.lastDailyDate;
+        u.prevDailyScore  = u.lastDailyScore  ?? 0;
+        u.prevDailyPoints = u.lastDailyPoints ?? 0;
+      }
       u.lastDailyScore  = dailyUpdate.score;
       u.lastDailyPoints = dailyUpdate.points;
       u.lastDailyDate   = dailyUpdate.dateKey;
@@ -139,6 +145,12 @@ class FirebaseAdapter {
         totalPoints:   (d.totalPoints || 0) + points
       };
       if (dailyUpdate) {
+        // First play of a new day: shift current slot into prev before overwriting
+        if (dailyUpdate.streak !== null && d.lastDailyDate && d.lastDailyDate !== dailyUpdate.dateKey) {
+          update.prevDailyDate   = d.lastDailyDate;
+          update.prevDailyScore  = d.lastDailyScore  ?? 0;
+          update.prevDailyPoints = d.lastDailyPoints ?? 0;
+        }
         update.lastDailyScore  = dailyUpdate.score;
         update.lastDailyPoints = dailyUpdate.points;
         update.lastDailyDate   = dailyUpdate.dateKey;

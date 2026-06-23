@@ -69,7 +69,10 @@ Document shape:
   dailyStreak,       // consecutive days with a daily challenge
   lastDailyDate,     // "YYYY-MM-DD" of last daily played
   lastDailyScore,    // correct count (0–10) in last daily
-  lastDailyPoints }  // pts earned in last daily
+  lastDailyPoints,   // pts earned in last daily
+  prevDailyDate,     // "YYYY-MM-DD" of the daily before last (populated when day rolls)
+  prevDailyScore,    // correct count (0–10) for prevDailyDate
+  prevDailyPoints }  // pts earned for prevDailyDate
 
 // flags/{autoId}
 { questionId, questionText, correctAnswer, allAnswers, difficulty, category,

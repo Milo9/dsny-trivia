@@ -273,21 +273,27 @@ async function renderHome() {
   });
   dailyCard.classList.toggle('hidden', users.length === 0);
 
-  // Yesterday's challenge — visible when the day has rolled but yesterday's scores haven't been overwritten
+  // Yesterday's challenge — checks lastDailyDate (haven't played today yet) and
+  // prevDailyDate (already played today, yesterday's data shifted to prev slot)
   const yesterday     = dayKey(1);
   const yesterdayCard = document.getElementById('yesterday-card');
   const yesterdayBody = document.getElementById('yesterday-card-body');
   yesterdayBody.innerHTML = '';
-  const anyYesterday = users.some(u => u.lastDailyDate === yesterday);
+  const getYesterdayData = u => {
+    if (u.lastDailyDate === yesterday) return { score: u.lastDailyScore, points: u.lastDailyPoints };
+    if (u.prevDailyDate === yesterday) return { score: u.prevDailyScore, points: u.prevDailyPoints };
+    return null;
+  };
+  const anyYesterday = users.some(u => getYesterdayData(u));
   if (anyYesterday) {
     users.forEach(user => {
-      const played = user.lastDailyDate === yesterday;
-      const row    = document.createElement('div');
+      const yd  = getYesterdayData(user);
+      const row = document.createElement('div');
       row.className = 'daily-cmp-row';
-      if (played) {
+      if (yd) {
         row.innerHTML = `
           <span class="dcmp-name">${disneyAvatar(user.name)} ${user.name}</span>
-          <span class="dcmp-score">${user.lastDailyScore ?? 0}/10 · <strong>${(user.lastDailyPoints||0).toLocaleString()} pts</strong> ✓</span>
+          <span class="dcmp-score">${yd.score ?? 0}/10 · <strong>${(yd.points||0).toLocaleString()} pts</strong> ✓</span>
         `;
       } else {
         row.innerHTML = `
