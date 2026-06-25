@@ -18,7 +18,7 @@ A static single-page trivia app built for Kristen and Cara to practice before a 
 | `questions/q-002.json` | Questions 251–500. |
 | `questions/q-003.json` | Questions 501–800 (210 active; 40 gaps from audit). |
 | `questions/q-004.json` | Questions 801–1050 (246 active; 4 gaps from quality pass). |
-| `questions/q-005.json` | Questions 1051–1300 (247 active; 3 gaps from quality pass). |
+| `questions/q-005.json` | Questions 1051–1400 (347 active; 3 gaps from quality pass). |
 | `review.html` | Standalone admin page for reviewing flagged questions. Shares the same Firestore `flags` collection. |
 
 ## The 5 Screens
@@ -52,12 +52,12 @@ Example line:
 {"id": 1, "question": "What color is Cinderella's iconic ball gown?", "answers": ["Blue", "Pink", "Yellow", "White"], "difficulty": "easy", "category": "movies"},
 ```
 
-**Adding questions:** Append to the last shard (`questions/q-005.json` is current), one object per line, no pretty-printing. Use the next available integer ID (1301+). Correct answer must be at index 0. When a shard reaches ~250 questions, create the next shard (`q-006.json`, etc.) and add it to `questions/manifest.json` — no change to `index.html` needed.
+**Adding questions:** Append to the last shard (`questions/q-005.json` is current), one object per line, no pretty-printing. Use the next available integer ID (1401+). Correct answer must be at index 0. When a shard reaches ~250 questions, create the next shard (`q-006.json`, etc.) and add it to `questions/manifest.json` — no change to `index.html` needed.
 
 **Dedup workflow (grep-first, mandatory):** Before writing any new question, grep all shards for 2–3 key terms from the topic. Because each question is one line, a Grep hit returns the entire question + all answers — eyeball it immediately to confirm it's a true duplicate or a distinct angle. Do not read whole shard files for dedup.
 
-**Current count:** 1,243 questions (IDs 1–1300, with ~57 gaps from removed duplicates/errors). Distribution:
-- movies 277, characters 192, parks 195, pixar 159, walt 141, music 151, cruise 128
+**Current count:** 1,343 questions (IDs 1–1400, with ~57 gaps from removed duplicates/errors). Distribution:
+- movies 290, characters 205, parks 210, pixar 179, walt 153, music 163, cruise 143
 
 **Removing a question:** Delete its object from the shard JSON. IDs do not need to be contiguous — gaps are fine.
 
