@@ -1,4 +1,4 @@
-const APP_VERSION = '1.7';
+const APP_VERSION = '1.8';
 
 // =============================================================================
 // State
@@ -60,6 +60,17 @@ const CAT_LABELS = {
 };
 
 function catLabel(c) { return CAT_LABELS[c] || c; }
+
+function buildCatStats(answers) {
+  const stats = {};
+  for (const a of answers) {
+    const c = a.question.category;
+    if (!stats[c]) stats[c] = { answered: 0, correct: 0 };
+    stats[c].answered++;
+    if (a.correct) stats[c].correct++;
+  }
+  return stats;
+}
 
 // --- Daily challenge helpers ---
 
@@ -384,9 +395,31 @@ async function renderLeaderboard() {
 // =============================================================================
 // SETTINGS SCREEN
 // =============================================================================
+const CAT_ORDER = ['movies', 'characters', 'parks', 'walt', 'cruise', 'music', 'pixar'];
+
+function renderCatStats(user) {
+  const section = document.getElementById('cat-stats-section');
+  const body    = document.getElementById('cat-stats-body');
+  const stats   = user.categoryStats || {};
+  const played  = CAT_ORDER.filter(c => stats[c] && stats[c].answered > 0);
+  if (played.length === 0) { section.classList.add('hidden'); return; }
+  section.classList.remove('hidden');
+  body.innerHTML = played.map(c => {
+    const { answered, correct } = stats[c];
+    const p = Math.round(correct / answered * 100);
+    return `<div class="cstat-row">
+      <span class="cstat-label">${catLabel(c)}</span>
+      <div class="cstat-bar-wrap"><div class="cstat-bar cstat-${c}" style="width:${p}%"></div></div>
+      <span class="cstat-pct">${p}%</span>
+      <span class="cstat-count">${answered}q</span>
+    </div>`;
+  }).join('');
+}
+
 function renderSettings() {
   showScreen('screen-settings');
   document.getElementById('settings-user-name').textContent = currentUser.name;
+  renderCatStats(currentUser);
   updateAvailableHint();
 
   const today    = todayKey();
@@ -608,7 +641,7 @@ document.getElementById('btn-exit-game').addEventListener('click', async () => {
   if (confirm(msg)) {
     if (answered > 0) {
       const pts = scoreBreakdown(gameState.answers, false, 0).total;
-      await storage.updateStats(currentUser.id, answered, gameState.score, pts, null);
+      await storage.updateStats(currentUser.id, answered, gameState.score, pts, null, buildCatStats(gameState.answers));
       addSeenIds(currentUser.id, gameState.answers.map(a => a.question.id));
     }
     renderHome();
@@ -690,7 +723,7 @@ async function endGame() {
     streak:  isFirstDailyToday ? newDailyStreak : null
   } : null;
 
-  await storage.updateStats(currentUser.id, gameState.questions.length, gameState.score, bd.total, dailyUpdate);
+  await storage.updateStats(currentUser.id, gameState.questions.length, gameState.score, bd.total, dailyUpdate, buildCatStats(gameState.answers));
   addSeenIds(currentUser.id, gameState.questions.map(q => q.id));
 
   const users = await storage.getUsers();

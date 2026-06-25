@@ -36,7 +36,8 @@ class LocalStorageAdapter {
 
   // points — pts earned this game (primary state; not recomputable from counters alone)
   // dailyUpdate — {score, points, dateKey, streak} or null
-  async updateStats(userId, answered, correct, points, dailyUpdate) {
+  // catStats    — {category: {answered, correct}, ...} or null
+  async updateStats(userId, answered, correct, points, dailyUpdate, catStats) {
     const data = this._load();
     const u = data.users[userId];
     if (!u) throw new Error('User not found: ' + userId);
@@ -44,6 +45,13 @@ class LocalStorageAdapter {
     u.totalCorrect  += correct;
     u.gamesPlayed   += 1;
     u.totalPoints    = (u.totalPoints || 0) + points;
+    if (catStats) {
+      if (!u.categoryStats) u.categoryStats = {};
+      for (const [cat, counts] of Object.entries(catStats)) {
+        const prev = u.categoryStats[cat] || { answered: 0, correct: 0 };
+        u.categoryStats[cat] = { answered: prev.answered + counts.answered, correct: prev.correct + counts.correct };
+      }
+    }
     if (dailyUpdate) {
       // First play of a new day: shift current slot into prev before overwriting
       if (dailyUpdate.streak !== null && u.lastDailyDate && u.lastDailyDate !== dailyUpdate.dateKey) {
@@ -133,7 +141,8 @@ class FirebaseAdapter {
 
   // points — pts earned this game (primary state; not recomputable from counters alone)
   // dailyUpdate — {score, points, dateKey, streak} or null
-  async updateStats(userId, answered, correct, points, dailyUpdate) {
+  // catStats    — {category: {answered, correct}, ...} or null
+  async updateStats(userId, answered, correct, points, dailyUpdate, catStats) {
     const ref = this.db.collection('users').doc(userId);
     await this.db.runTransaction(async tx => {
       const doc = await tx.get(ref);
@@ -144,6 +153,15 @@ class FirebaseAdapter {
         gamesPlayed:   d.gamesPlayed   + 1,
         totalPoints:   (d.totalPoints || 0) + points
       };
+      if (catStats) {
+        const existing = d.categoryStats || {};
+        const merged   = { ...existing };
+        for (const [cat, counts] of Object.entries(catStats)) {
+          const prev = merged[cat] || { answered: 0, correct: 0 };
+          merged[cat] = { answered: prev.answered + counts.answered, correct: prev.correct + counts.correct };
+        }
+        update.categoryStats = merged;
+      }
       if (dailyUpdate) {
         // First play of a new day: shift current slot into prev before overwriting
         if (dailyUpdate.streak !== null && d.lastDailyDate && d.lastDailyDate !== dailyUpdate.dateKey) {

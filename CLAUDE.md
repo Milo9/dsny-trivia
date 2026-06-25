@@ -72,14 +72,15 @@ Document shape:
   lastDailyPoints,   // pts earned in last daily
   prevDailyDate,     // "YYYY-MM-DD" of the daily before last (populated when day rolls)
   prevDailyScore,    // correct count (0–10) for prevDailyDate
-  prevDailyPoints }  // pts earned for prevDailyDate
+  prevDailyPoints,   // pts earned for prevDailyDate
+  categoryStats }    // { movies: {answered, correct}, characters: ..., ... } — per-category counters, absent on old docs (treated as {})
 
 // flags/{autoId}
 { questionId, questionText, correctAnswer, allAnswers, difficulty, category,
   reportedBy, comment, timestamp, _resolved? }
 ```
 
-Stats stored as raw counters (`totalAnswered`, `totalCorrect`); percentage is always derived, never stored. `totalPoints` looks like a derived value but is **primary state** — streak and bonus mechanics make it non-recomputable from counters alone. `updateStats` uses a Firestore transaction to avoid race conditions when two players finish at the same time. The `dailyUpdate` payload (score, points, dateKey, streak) is written inside the same transaction so daily fields are always consistent with the stats update.
+Stats stored as raw counters (`totalAnswered`, `totalCorrect`, `categoryStats`); percentages are always derived, never stored. `totalPoints` looks like a derived value but is **primary state** — streak and bonus mechanics make it non-recomputable from counters alone. `updateStats` uses a Firestore transaction to avoid race conditions when two players finish at the same time. The `dailyUpdate` payload (score, points, dateKey, streak) and the `catStats` per-category delta are written inside the same transaction so all fields are always consistent.
 
 **Firebase console:** https://console.firebase.google.com/project/disneytrivia-38ac6
 
