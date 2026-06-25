@@ -45,7 +45,16 @@ Screens are `<div class="screen">` elements that get `.hidden` toggled. Only one
 
 **No TV shows** — the requirement explicitly excludes Disney Channel, streaming series, etc. This is easy to accidentally violate (Mandalorian, WandaVision, DuckTales reboot, etc.) — hold the line.
 
-**Adding questions:** Append JSON objects to the last shard (`questions/q-005.json` is current). Use the next available integer ID (1301+). Correct answer must be at index 0. When a shard reaches ~250 questions, create the next shard (`q-006.json`, etc.) and add it to `questions/manifest.json` — no change to `index.html` needed.
+**Shard format:** Each shard is a JSON array with **one question object per line** (compact, not pretty-printed). `app.js` loads shards via `r.json()` so indentation is irrelevant to the app. The compact format means each line contains the full question + all answers, making Grep results immediately useful for duplicate checking without reading whole files.
+
+Example line:
+```
+{"id": 1, "question": "What color is Cinderella's iconic ball gown?", "answers": ["Blue", "Pink", "Yellow", "White"], "difficulty": "easy", "category": "movies"},
+```
+
+**Adding questions:** Append to the last shard (`questions/q-005.json` is current), one object per line, no pretty-printing. Use the next available integer ID (1301+). Correct answer must be at index 0. When a shard reaches ~250 questions, create the next shard (`q-006.json`, etc.) and add it to `questions/manifest.json` — no change to `index.html` needed.
+
+**Dedup workflow (grep-first, mandatory):** Before writing any new question, grep all shards for 2–3 key terms from the topic. Because each question is one line, a Grep hit returns the entire question + all answers — eyeball it immediately to confirm it's a true duplicate or a distinct angle. Do not read whole shard files for dedup.
 
 **Current count:** 1,243 questions (IDs 1–1300, with ~57 gaps from removed duplicates/errors). Distribution:
 - movies 277, characters 192, parks 195, pixar 159, walt 141, music 151, cruise 128
@@ -185,7 +194,7 @@ Default users seeded on first load: **Kristen** and **Cara**. Seeding is in `Fir
 These rules were derived from real mistakes found during shard audits. Follow them every time questions are generated.
 
 **Before adding any new question:**
-1. **Cross-shard duplicate check** — Grep all five shard files for key terms (character name, attraction name, film title) before writing. Questions about the same topic often exist already. Easy/obvious topics (Mickey's dog, Donald's nephews, Tinker Bell's dress color, Simba's father) are almost certainly covered — check first.
+1. **Cross-shard duplicate check** — Grep all five shard files for key terms (character name, attraction name, film title) before writing. Because shards are one-question-per-line, each Grep hit shows the full question + answers — no need to open the file. Questions about the same topic often exist already. Easy/obvious topics (Mickey's dog, Donald's nephews, Tinker Bell's dress color, Simba's father) are almost certainly covered — check first.
 
 **Answer structure:**
 2. **Never embed the answer in the question text.** If the question says "What type of animal is Geppetto's cat?" and the answer is "Figaro is a kitten," the word "cat" telegraphs the answer. Ask "What is the name of Geppetto's kitten?" instead.
