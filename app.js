@@ -1,4 +1,4 @@
-const APP_VERSION = '1.8';
+const APP_VERSION = '1.9';
 
 // =============================================================================
 // State
@@ -431,21 +431,28 @@ function renderSettings() {
   if (played) {
     statusEl.textContent = `✓ Played today · 🔥 ${streak} day streak`;
     statusEl.className   = 'daily-status daily-done';
-    btn.textContent      = '⭐ Daily Challenge (Replay)';
+    btn.textContent      = '📋 Review Today\'s Questions';
+    btn.classList.add('done');
   } else if (streak > 0) {
     statusEl.textContent = `🔥 ${streak} day streak — keep it going!`;
     statusEl.className   = 'daily-status daily-active';
     btn.textContent      = '⭐ Daily Challenge';
+    btn.classList.remove('done');
   } else {
     statusEl.textContent = 'Same 10 questions for everyone today. Start your streak!';
     statusEl.className   = 'daily-status';
     btn.textContent      = '⭐ Daily Challenge';
+    btn.classList.remove('done');
   }
 }
 
 document.getElementById('btn-settings-back').addEventListener('click', renderHome);
 
 document.getElementById('btn-daily-challenge').addEventListener('click', () => {
+  if (currentUser.lastDailyDate === todayKey()) {
+    renderDailyReview(false);
+    return;
+  }
   gameState = { questions: getDailyQuestions(10), currentIndex: 0, answers: [], score: 0, currentStreak: 0, isDaily: true, pointsEarned: 0, scoreBreakdown: null };
   renderGameQuestion();
 });
@@ -715,12 +722,17 @@ async function endGame() {
   gameState.scoreBreakdown = bd;
 
   // Always save score/pts display fields for any daily game.
-  // streak is only updated on first play (null tells storage to leave it unchanged).
+  // streak/answers only updated on first play (null tells storage to leave them unchanged).
   const dailyUpdate = gameState.isDaily ? {
     score:   gameState.score,
     points:  bd.total,
     dateKey: today,
-    streak:  isFirstDailyToday ? newDailyStreak : null
+    streak:  isFirstDailyToday ? newDailyStreak : null,
+    answers: isFirstDailyToday ? gameState.answers.map(a => ({
+      questionId:   a.question.id,
+      correct:      a.correct,
+      selectedText: a.selectedText
+    })) : null
   } : null;
 
   await storage.updateStats(currentUser.id, gameState.questions.length, gameState.score, bd.total, dailyUpdate, buildCatStats(gameState.answers));
@@ -787,6 +799,10 @@ function renderResults() {
     breakdownEl.appendChild(row);
   });
 
+  // Rematch / review daily
+  document.getElementById('btn-rematch').classList.toggle('hidden', gameState.isDaily);
+  document.getElementById('btn-review-daily').classList.toggle('hidden', !gameState.isDaily);
+
   // Missed questions
   const missed    = gameState.answers.filter(a => !a.correct);
   const missedSec = document.getElementById('missed-section');
@@ -823,10 +839,66 @@ document.getElementById('btn-review-missed').addEventListener('click', () => {
     : 'Hide Missed Questions';
 });
 
+document.getElementById('btn-review-daily').addEventListener('click', () => renderDailyReview(true));
+document.getElementById('btn-daily-review-back').addEventListener('click', () => {
+  if (_dailyReviewFromResults) renderResults(); else renderSettings();
+});
+
+let _dailyReviewFromResults = false;
+
+async function renderDailyReview(fromResults = false) {
+  _dailyReviewFromResults = fromResults;
+  showScreen('screen-daily-review');
+
+  const list = document.getElementById('daily-review-list');
+  list.innerHTML = '<p class="dr-loading">Loading…</p>';
+
+  const questions = getDailyQuestions(10);
+  const today = todayKey();
+  let users;
+  try {
+    users = await storage.getUsers();
+  } catch(e) {
+    list.innerHTML = `<p class="load-error">Couldn't load player data.<br><a href="" onclick="location.reload()">Tap to retry</a></p>`;
+    return;
+  }
+
+  const playedUsers   = users.filter(u => u.lastDailyDate === today && u.lastDailyAnswers);
+  const unplayedUsers = users.filter(u => u.lastDailyDate !== today);
+
+  list.innerHTML = '';
+  questions.forEach((q, idx) => {
+    const item = document.createElement('div');
+    item.className = 'dr-item';
+
+    let playerHtml = '';
+    playedUsers.forEach(u => {
+      const ans = u.lastDailyAnswers.find(a => a.questionId === q.id);
+      if (!ans) return;
+      const cls  = ans.correct ? 'dr-correct' : 'dr-wrong';
+      const icon = ans.correct ? '✓' : '✗';
+      playerHtml += `<div class="dr-player-ans ${cls}">${disneyAvatar(u.name)} ${u.name}: <em>${ans.selectedText}</em> ${icon}</div>`;
+    });
+    unplayedUsers.forEach(u => {
+      playerHtml += `<div class="dr-player-ans dr-not-played">${disneyAvatar(u.name)} ${u.name}: —</div>`;
+    });
+
+    item.innerHTML = `
+      <div class="dr-header">
+        <span class="dr-qnum">Q${idx + 1}</span>
+        <span class="dr-cat">${catLabel(q.category)}</span>
+      </div>
+      <div class="dr-question">${q.question}</div>
+      <div class="dr-correct-ans">✓ ${q.answers[0]}</div>
+      <div class="dr-players">${playerHtml}</div>
+    `;
+    list.appendChild(item);
+  });
+}
+
 document.getElementById('btn-rematch').addEventListener('click', () => {
-  if (gameState.isDaily) {
-    gameState = { questions: getDailyQuestions(10), currentIndex: 0, answers: [], score: 0, currentStreak: 0, isDaily: true, pointsEarned: 0, scoreBreakdown: null };
-  } else {
+  if (gameState.isDaily) return;
+  {
     const pool  = filteredPool();
     const count = Math.min(gameSettings.questionCount, pool.length);
     const seen  = new Set(getSeenIds(currentUser.id));

@@ -9,7 +9,7 @@ A static single-page trivia app built for Kristen and Cara to practice before a 
 ## File Map
 | File | Role |
 |---|---|
-| `index.html` | Single-page shell. All 5 screens live here as hidden divs. |
+| `index.html` | Single-page shell. All 6 screens live here as hidden divs. |
 | `style.css` | All styling. Dark Disney theme, mobile-first, CSS variables at the top. |
 | `app.js` | All game logic. Loaded last. Depends on `storage.js` and the `questions/` shards. |
 | `storage.js` | Storage abstraction. `FirebaseAdapter` is active. `LocalStorageAdapter` is kept below it as a fallback. |
@@ -23,14 +23,15 @@ A static single-page trivia app built for Kristen and Cara to practice before a 
 | `review.html` | Standalone admin page for reviewing flagged questions. Shares the same Firestore `flags` collection. |
 | `scripts/count_topics.py` | Counts questions per Disney/Pixar film (question + correct answer only, not distractors). Run from project root: `python scripts/count_topics.py`. Re-run after large batches of additions to update the Per-film coverage map in this file. |
 
-## The 5 Screens
+## The 6 Screens
 Screens are `<div class="screen">` elements that get `.hidden` toggled. Only one is visible at a time. Navigation is handled by `showScreen(id)` in `app.js`.
 
 1. `screen-home` — player selection, add new player; shows today's and yesterday's daily challenge comparison cards
-2. `screen-settings` — difficulty, categories, question count
+2. `screen-settings` — difficulty, categories, question count; daily button becomes "Review Today's Questions" after the player has played
 3. `screen-game` — active game
-4. `screen-results` — score, category breakdown, missed question review
-5. `screen-leaderboard` — all players ranked by total points (lifetime)
+4. `screen-results` — score, category breakdown, missed question review; shows "Review All Questions" button for daily games
+5. `screen-daily-review` — all 10 daily questions with each player's answer and the correct answer; reachable from results (after playing) or from the settings daily button (once played)
+6. `screen-leaderboard` — all players ranked by total points (lifetime)
 
 ## Question Format
 ```js
@@ -119,22 +120,23 @@ Document shape:
 ```js
 // users/{userId}
 { id, name, totalAnswered, totalCorrect, gamesPlayed,
-  totalPoints,       // accumulated lifetime points — PRIMARY STATE, not derived (sequence-dependent bonuses make it non-recomputable)
-  dailyStreak,       // consecutive days with a daily challenge
-  lastDailyDate,     // "YYYY-MM-DD" of last daily played
-  lastDailyScore,    // correct count (0–10) in last daily
-  lastDailyPoints,   // pts earned in last daily
-  prevDailyDate,     // "YYYY-MM-DD" of the daily before last (populated when day rolls)
-  prevDailyScore,    // correct count (0–10) for prevDailyDate
-  prevDailyPoints,   // pts earned for prevDailyDate
-  categoryStats }    // { movies: {answered, correct}, characters: ..., ... } — per-category counters, absent on old docs (treated as {})
+  totalPoints,        // accumulated lifetime points — PRIMARY STATE, not derived (sequence-dependent bonuses make it non-recomputable)
+  dailyStreak,        // consecutive days with a daily challenge
+  lastDailyDate,      // "YYYY-MM-DD" of last daily played
+  lastDailyScore,     // correct count (0–10) in last daily
+  lastDailyPoints,    // pts earned in last daily
+  lastDailyAnswers,   // [{questionId, correct, selectedText}] — per-question picks from last daily; used by screen-daily-review
+  prevDailyDate,      // "YYYY-MM-DD" of the daily before last (populated when day rolls)
+  prevDailyScore,     // correct count (0–10) for prevDailyDate
+  prevDailyPoints,    // pts earned for prevDailyDate
+  categoryStats }     // { movies: {answered, correct}, characters: ..., ... } — per-category counters, absent on old docs (treated as {})
 
 // flags/{autoId}
 { questionId, questionText, correctAnswer, allAnswers, difficulty, category,
   reportedBy, comment, timestamp, _resolved? }
 ```
 
-Stats stored as raw counters (`totalAnswered`, `totalCorrect`, `categoryStats`); percentages are always derived, never stored. `totalPoints` looks like a derived value but is **primary state** — streak and bonus mechanics make it non-recomputable from counters alone. `updateStats` uses a Firestore transaction to avoid race conditions when two players finish at the same time. The `dailyUpdate` payload (score, points, dateKey, streak) and the `catStats` per-category delta are written inside the same transaction so all fields are always consistent.
+Stats stored as raw counters (`totalAnswered`, `totalCorrect`, `categoryStats`); percentages are always derived, never stored. `totalPoints` looks like a derived value but is **primary state** — streak and bonus mechanics make it non-recomputable from counters alone. `updateStats` uses a Firestore transaction to avoid race conditions when two players finish at the same time. The `dailyUpdate` payload (score, points, dateKey, streak, answers) and the `catStats` per-category delta are written inside the same transaction so all fields are always consistent.
 
 **Firebase console:** https://console.firebase.google.com/project/disneytrivia-38ac6
 
@@ -180,11 +182,12 @@ A second game mode accessible from the settings screen. Always 10 questions, all
 - Seed: `dateToSeed(key)` hashes the string; `seededShuffle()` uses an inline mulberry32 step
 - Questions are stable-sorted by `id` before shuffling so shard load order doesn't affect results
 - Streak (`dailyStreak`, `lastDailyDate`) stored in Firestore on the user doc — cross-device
-- Replay is allowed; streak only increments once per calendar day
+- **Replay is blocked** — each player can play the daily exactly once per calendar day. The settings button becomes "📋 Review Today's Questions" after playing; the results-screen Rematch button is hidden for daily games.
+- Per-question answers stored in Firestore as `lastDailyAnswers` on first play, so the daily review screen can show both players' picks cross-device.
 - Counts toward leaderboard stats just like a regular game
 - `gameState.isDaily = true` when a daily challenge is active; `endGame()` checks this flag
 
-New user doc fields (Firestore): `dailyStreak: number`, `lastDailyDate: "YYYY-MM-DD"`. Existing docs without these fields default gracefully (`|| 0` / `|| null`).
+New user doc fields (Firestore): `dailyStreak: number`, `lastDailyDate: "YYYY-MM-DD"`, `lastDailyAnswers: [{questionId, correct, selectedText}]`. Existing docs without these fields default gracefully.
 
 ## Sound Effects
 Web Audio API (synthesized, no audio files). Wrapped in the `sounds` IIFE in `app.js`:
@@ -212,7 +215,6 @@ Points are computed by `scoreBreakdown(answers, earnDailyBonus, dailyStreak)` in
 - `scoreBreakdown()` returns `{ base, streakBonus, perfectBonus, dailyBonus, total }`
 - Leaderboard sorts by `totalPoints` descending; percentage is the secondary tiebreaker
 - Results screen shows full breakdown when more than one component contributed
-- Replaying the daily challenge earns base + streak bonus only (no daily bonus for second play)
 - Exiting mid-game awards base + streak bonus for answered questions only, no perfect/daily bonus
 
 ## Key app.js Globals

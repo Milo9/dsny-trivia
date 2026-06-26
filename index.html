@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=1.8">
+  <link rel="stylesheet" href="style.css?v=1.9">
 </head>
 <body>
 <div id="stars" aria-hidden="true"></div>
@@ -182,10 +182,20 @@
     </div>
     <div class="results-actions">
       <button class="btn-primary btn-full" id="btn-rematch">Rematch ↺</button>
+      <button class="btn-secondary btn-full hidden" id="btn-review-daily">📋 Review All Questions</button>
       <button class="btn-secondary btn-full" id="btn-play-again">Change Settings</button>
       <button class="btn-secondary btn-full" id="btn-results-home">Home</button>
       <button class="btn-leaderboard" id="btn-results-leaderboard">🏆 Leaderboard</button>
     </div>
+  </div>
+
+  <!-- DAILY REVIEW SCREEN -->
+  <div class="screen hidden" id="screen-daily-review">
+    <div class="screen-header">
+      <button class="btn-back" id="btn-daily-review-back">← Back</button>
+      <h2 class="screen-title gold">📅 Daily Review</h2>
+    </div>
+    <div id="daily-review-list" class="daily-review-list"></div>
   </div>
 
   <!-- LEADERBOARD SCREEN -->
@@ -201,7 +211,7 @@
 </div>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
-<script src="storage.js?v=1.8"></script>
-<script src="app.js?v=1.8"></script>
+<script src="storage.js?v=1.9"></script>
+<script src="app.js?v=1.9"></script>
 </body>
 </html>
