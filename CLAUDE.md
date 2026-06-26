@@ -19,7 +19,7 @@ A static single-page trivia app built for Kristen and Cara to practice before a 
 | `questions/q-003.json` | Questions 501–799 (222 active; gaps from audit and dedup passes). |
 | `questions/q-004.json` | Questions 801–1050 (246 active). |
 | `questions/q-005.json` | Questions 1051–1300 (247 active). |
-| `questions/q-006.json` | Questions 1302–1400 (89 active). |
+| `questions/q-006.json` | Questions 1302–1550 (239 active). |
 | `review.html` | Standalone admin page for reviewing flagged questions. Shares the same Firestore `flags` collection. |
 | `scripts/count_topics.py` | Counts questions per Disney/Pixar film (question + correct answer only, not distractors). Run from project root: `python scripts/count_topics.py`. Re-run after large batches of additions to update the Per-film coverage map in this file. |
 
@@ -55,12 +55,12 @@ Example line:
 {"id": 1, "question": "What color is Cinderella's iconic ball gown?", "answers": ["Blue", "Pink", "Yellow", "White"], "difficulty": "easy", "category": "movies"},
 ```
 
-**Adding questions:** Append to the last shard (`questions/q-006.json` is current), one object per line, no pretty-printing. Use the next available integer ID (1401+). Correct answer must be at index 0. When a shard reaches ~250 questions, create the next shard (`q-007.json`, etc.) and add it to `questions/manifest.json` — no change to `index.html` needed.
+**Adding questions:** Append to the last shard (`questions/q-006.json` is current), one object per line, no pretty-printing. Use the next available integer ID (1551+). Correct answer must be at index 0. When a shard reaches ~250 questions, create the next shard (`q-007.json`, etc.) and add it to `questions/manifest.json` — no change to `index.html` needed.
 
 **Dedup workflow (grep-first, mandatory):** Before writing any new question, grep all shards for 2–3 key terms from the topic. Because each question is one line, a Grep hit returns the entire question + all answers — eyeball it immediately to confirm it's a true duplicate or a distinct angle. Do not read whole shard files for dedup.
 
-**Current count:** 1,298 questions (IDs 1–1400, with ~102 gaps from removed duplicates/errors). Distribution:
-- movies 290, characters 199, parks 200, pixar 170, walt 148, music 163, cruise 128
+**Current count:** 1,448 questions (IDs 1–1550, with ~102 gaps from removed duplicates/errors). Distribution (approximate — re-run count_topics.py for exact):
+- movies ~330, characters ~215, parks ~222, pixar ~210, walt ~160, music ~185, cruise ~126
 
 **Per-film coverage map** (questions that are *about* this film — correct answer or question text, not distractors). Saturated films (≥20) need a genuinely fresh angle before adding more. Well-covered (10–19) are fine for clearly distinct questions. Under-covered (<10) are welcome territory.
 
@@ -87,21 +87,21 @@ Example line:
 | Ratatouille | 11 | Well-covered |
 | WALL-E | 10 | Well-covered |
 | Cars | 10 | Well-covered |
-| Zootopia | 10 | Well-covered |
-| Big Hero 6 | 10 | Well-covered |
-| The Emperor's New Groove | 9 | Under-covered |
+| Zootopia | ~11 | Well-covered |
+| Big Hero 6 | ~12 | Well-covered |
+| The Emperor's New Groove | ~13 | Well-covered |
+| Atlantis: The Lost Empire | ~10 | Well-covered |
+| Wreck-It Ralph | ~13 | Well-covered |
+| Coco | ~18 | Well-covered |
+| Soul | ~8 | Under-covered |
+| Inside Out 2 | ~10 | Well-covered |
+| Hercules | ~8 | Under-covered |
+| Up | ~11 | Well-covered |
+| Onward | ~7 | Under-covered |
 | A Bug's Life | 8 | Under-covered |
-| Atlantis: The Lost Empire | 8 | Under-covered |
-| Wreck-It Ralph | 6 | Under-covered |
-| Coco | 6 | Under-covered |
-| Soul | 5 | Under-covered |
-| Inside Out 2 | 5 | Under-covered |
-| Hercules | 4 | Under-covered |
-| Up | 4 | Under-covered |
-| Onward | 4 | Under-covered |
-| Turning Red | 3 | Under-covered |
-| Luca | 3 | Under-covered |
-| Elemental | ~3 | Under-covered |
+| Turning Red | ~11 | Well-covered |
+| Luca | ~6 | Under-covered |
+| Elemental | ~8 | Under-covered |
 
 This table is updated manually; re-run `scripts/count_topics.py` (see below) to regenerate it after large batches of additions.
 
