@@ -861,7 +861,6 @@ async function renderDailyReview(backTarget = 'settings', daysAgo = 0) {
   const list = document.getElementById('daily-review-list');
   list.innerHTML = '<p class="dr-loading">Loading…</p>';
 
-  const questions = getDailyQuestions(10, daysAgo);
   let users;
   try {
     users = await storage.getUsers();
@@ -875,6 +874,32 @@ async function renderDailyReview(backTarget = 'settings', daysAgo = 0) {
     if (u.prevDailyDate === targetDate && u.prevDailyAnswers) return u.prevDailyAnswers;
     return null;
   };
+
+  // Rebuild question list from stored answer questionIds so the review stays
+  // stable even if the question pool changes between play and review.
+  // Prefer currentUser's data (they just played); fall back to any player with
+  // stored answers; last resort: regenerate from the live pool.
+  const qMap = new Map(QUESTIONS.map(q => [q.id, q]));
+  const currentUserFresh = users.find(u => u.id === currentUser?.id);
+  const orderedSources = [
+    ...(currentUserFresh ? [currentUserFresh] : []),
+    ...users.filter(u => u.id !== currentUser?.id)
+  ];
+  let questions = null;
+  for (const u of orderedSources) {
+    const ans = getUserAnswers(u);
+    if (ans && ans.length > 0) {
+      const qs = ans.map(a => qMap.get(a.questionId)).filter(Boolean);
+      if (qs.length > 0) { questions = qs; break; }
+    }
+  }
+  if (!questions) questions = getDailyQuestions(10, daysAgo);
+
+  // Classify players for the footer of each question card.
+  // "played — details unavailable": lastDailyDate matches but no stored answers.
+  const hasPlayedDate = u => u.lastDailyDate === targetDate || u.prevDailyDate === targetDate;
+  const playedNoDetailUsers = users.filter(u => !getUserAnswers(u) && hasPlayedDate(u));
+  const notPlayedUsers      = users.filter(u => !getUserAnswers(u) && !hasPlayedDate(u));
 
   list.innerHTML = '';
   const letters = ['A', 'B', 'C', 'D'];
@@ -916,11 +941,12 @@ async function renderDailyReview(backTarget = 'settings', daysAgo = 0) {
       </div>`;
     });
 
-    // Players who haven't played at all
-    const notPlayedHtml = users
-      .filter(u => !getUserAnswers(u))
-      .map(u => `<div class="dr-player-ans dr-not-played">${disneyAvatar(u.name)} ${u.name}: —</div>`)
-      .join('');
+    const footerHtml = [
+      ...playedNoDetailUsers.map(u =>
+        `<div class="dr-player-ans dr-not-played">${disneyAvatar(u.name)} ${u.name}: played — details unavailable</div>`),
+      ...notPlayedUsers.map(u =>
+        `<div class="dr-player-ans dr-not-played">${disneyAvatar(u.name)} ${u.name}: —</div>`)
+    ].join('');
 
     item.innerHTML = `
       <div class="dr-header">
@@ -929,7 +955,7 @@ async function renderDailyReview(backTarget = 'settings', daysAgo = 0) {
       </div>
       <div class="dr-question">${q.question}</div>
       <div class="dr-choices">${choicesHtml}</div>
-      ${notPlayedHtml ? `<div class="dr-players">${notPlayedHtml}</div>` : ''}
+      ${footerHtml ? `<div class="dr-players">${footerHtml}</div>` : ''}
     `;
     list.appendChild(item);
   });
