@@ -14,12 +14,14 @@ A static single-page trivia app built for Kristen and Cara to practice before a 
 | `app.js` | All game logic. Loaded last. Depends on `storage.js` and the `questions/` shards. |
 | `storage.js` | Storage abstraction. `FirebaseAdapter` is active. `LocalStorageAdapter` is kept below it as a fallback. |
 | `questions/manifest.json` | Lists the shard filenames. `app.js` fetches this first, then fetches each shard. |
-| `questions/q-001.json` | Questions 1–250. |
-| `questions/q-002.json` | Questions 251–500. |
-| `questions/q-003.json` | Questions 501–800 (210 active; 40 gaps from audit). |
-| `questions/q-004.json` | Questions 801–1050 (246 active; 4 gaps from quality pass). |
-| `questions/q-005.json` | Questions 1051–1400 (347 active; 3 gaps from quality pass). |
+| `questions/q-001.json` | Questions 1–250 (249 active). |
+| `questions/q-002.json` | Questions 251–500 (245 active). |
+| `questions/q-003.json` | Questions 501–799 (222 active; gaps from audit and dedup passes). |
+| `questions/q-004.json` | Questions 801–1050 (246 active). |
+| `questions/q-005.json` | Questions 1051–1300 (247 active). |
+| `questions/q-006.json` | Questions 1302–1400 (89 active). |
 | `review.html` | Standalone admin page for reviewing flagged questions. Shares the same Firestore `flags` collection. |
+| `scripts/count_topics.py` | Counts questions per Disney/Pixar film (question + correct answer only, not distractors). Run from project root: `python scripts/count_topics.py`. Re-run after large batches of additions to update the Per-film coverage map in this file. |
 
 ## The 5 Screens
 Screens are `<div class="screen">` elements that get `.hidden` toggled. Only one is visible at a time. Navigation is handled by `showScreen(id)` in `app.js`.
@@ -52,12 +54,55 @@ Example line:
 {"id": 1, "question": "What color is Cinderella's iconic ball gown?", "answers": ["Blue", "Pink", "Yellow", "White"], "difficulty": "easy", "category": "movies"},
 ```
 
-**Adding questions:** Append to the last shard (`questions/q-005.json` is current), one object per line, no pretty-printing. Use the next available integer ID (1401+). Correct answer must be at index 0. When a shard reaches ~250 questions, create the next shard (`q-006.json`, etc.) and add it to `questions/manifest.json` — no change to `index.html` needed.
+**Adding questions:** Append to the last shard (`questions/q-006.json` is current), one object per line, no pretty-printing. Use the next available integer ID (1401+). Correct answer must be at index 0. When a shard reaches ~250 questions, create the next shard (`q-007.json`, etc.) and add it to `questions/manifest.json` — no change to `index.html` needed.
 
 **Dedup workflow (grep-first, mandatory):** Before writing any new question, grep all shards for 2–3 key terms from the topic. Because each question is one line, a Grep hit returns the entire question + all answers — eyeball it immediately to confirm it's a true duplicate or a distinct angle. Do not read whole shard files for dedup.
 
-**Current count:** 1,343 questions (IDs 1–1400, with ~57 gaps from removed duplicates/errors). Distribution:
-- movies 290, characters 205, parks 210, pixar 179, walt 153, music 163, cruise 143
+**Current count:** 1,298 questions (IDs 1–1400, with ~102 gaps from removed duplicates/errors). Distribution:
+- movies 290, characters 199, parks 200, pixar 170, walt 148, music 163, cruise 128
+
+**Per-film coverage map** (questions that are *about* this film — correct answer or question text, not distractors). Saturated films (≥20) need a genuinely fresh angle before adding more. Well-covered (10–19) are fine for clearly distinct questions. Under-covered (<10) are welcome territory.
+
+| Film | Count | Status |
+|---|---|---|
+| Toy Story | 32 | Saturated |
+| The Lion King | 30 | Saturated |
+| Frozen | 28 | Saturated |
+| The Little Mermaid | 27 | Saturated |
+| Finding Nemo / Finding Dory | 23 | Saturated |
+| Beauty and the Beast | 22 | Saturated |
+| Aladdin | 22 | Saturated |
+| Moana | 18 | Well-covered |
+| Pocahontas | 18 | Well-covered |
+| Encanto | 17 | Well-covered |
+| Mulan | 17 | Well-covered |
+| Tangled | 17 | Well-covered |
+| The Hunchback of Notre Dame | 17 | Well-covered |
+| Inside Out | 16 | Well-covered |
+| Tarzan | 15 | Well-covered |
+| The Incredibles | 14 | Well-covered |
+| Monsters Inc. / Monsters University | 12 | Well-covered |
+| Brave | 12 | Well-covered |
+| Ratatouille | 11 | Well-covered |
+| WALL-E | 10 | Well-covered |
+| Cars | 10 | Well-covered |
+| Zootopia | 10 | Well-covered |
+| Big Hero 6 | 10 | Well-covered |
+| The Emperor's New Groove | 9 | Under-covered |
+| A Bug's Life | 8 | Under-covered |
+| Atlantis: The Lost Empire | 8 | Under-covered |
+| Wreck-It Ralph | 6 | Under-covered |
+| Coco | 6 | Under-covered |
+| Soul | 5 | Under-covered |
+| Inside Out 2 | 5 | Under-covered |
+| Hercules | 4 | Under-covered |
+| Up | 4 | Under-covered |
+| Onward | 4 | Under-covered |
+| Turning Red | 3 | Under-covered |
+| Luca | 3 | Under-covered |
+| Elemental | ~3 | Under-covered |
+
+This table is updated manually; re-run `scripts/count_topics.py` (see below) to regenerate it after large batches of additions.
 
 **Removing a question:** Delete its object from the shard JSON. IDs do not need to be contiguous — gaps are fine.
 
@@ -194,7 +239,7 @@ Default users seeded on first load: **Kristen** and **Cara**. Seeding is in `Fir
 These rules were derived from real mistakes found during shard audits. Follow them every time questions are generated.
 
 **Before adding any new question:**
-1. **Cross-shard duplicate check** — Grep all five shard files for key terms (character name, attraction name, film title) before writing. Because shards are one-question-per-line, each Grep hit shows the full question + answers — no need to open the file. Questions about the same topic often exist already. Easy/obvious topics (Mickey's dog, Donald's nephews, Tinker Bell's dress color, Simba's father) are almost certainly covered — check first.
+1. **Cross-shard duplicate check** — Grep all shard files for key terms (character name, attraction name, film title) before writing. Because shards are one-question-per-line, each Grep hit shows the full question + answers — no need to open the file. Questions about the same topic often exist already. Easy/obvious topics (Mickey's dog, Donald's nephews, Tinker Bell's dress color, Simba's father) are almost certainly covered — check first. Also check the Per-film coverage map above: if a film is Saturated (≥20), skip it unless the angle is clearly distinct from what's there.
 
 **Answer structure:**
 2. **Never embed the answer in the question text.** If the question says "What type of animal is Geppetto's cat?" and the answer is "Figaro is a kitten," the word "cat" telegraphs the answer. Ask "What is the name of Geppetto's kitten?" instead.
