@@ -880,23 +880,50 @@ async function renderDailyReview(backTarget = 'settings', daysAgo = 0) {
   };
 
   list.innerHTML = '';
+  const letters = ['A', 'B', 'C', 'D'];
   questions.forEach((q, idx) => {
     const item = document.createElement('div');
     item.className = 'dr-item';
 
-    let playerHtml = '';
-    users.forEach(u => {
-      const answers = getUserAnswers(u);
-      if (!answers) {
-        playerHtml += `<div class="dr-player-ans dr-not-played">${disneyAvatar(u.name)} ${u.name}: —</div>`;
-        return;
-      }
-      const ans = answers.find(a => a.questionId === q.id);
-      if (!ans) return;
-      const cls  = ans.correct ? 'dr-correct' : 'dr-wrong';
-      const icon = ans.correct ? '✓' : '✗';
-      playerHtml += `<div class="dr-player-ans ${cls}">${disneyAvatar(u.name)} ${u.name}: <em>${ans.selectedText}</em> ${icon}</div>`;
+    // Shuffle answer order consistently per question so correct isn't always first
+    const answerOrder = seededShuffle([0, 1, 2, 3], q.id);
+
+    let choicesHtml = '';
+    answerOrder.forEach((origIdx, displayPos) => {
+      const text      = q.answers[origIdx];
+      const isCorrect = origIdx === 0;
+
+      // Which players chose this answer?
+      const choosers = [];
+      users.forEach(u => {
+        const uAnswers = getUserAnswers(u);
+        if (!uAnswers) return;
+        const ans = uAnswers.find(a => a.questionId === q.id);
+        if (ans && ans.selectedText === text) choosers.push({ user: u, correct: ans.correct });
+      });
+
+      const cls = 'dr-choice' + (isCorrect ? ' dr-choice-correct' : choosers.length ? ' dr-choice-wrong-picked' : '');
+
+      const chipsHtml = choosers.length
+        ? `<div class="dr-chips">${choosers.map(c =>
+            `<span class="dr-chip ${c.correct ? 'dr-chip-correct' : 'dr-chip-wrong'}">${disneyAvatar(c.user.name)} ${c.user.name} ${c.correct ? '✓' : '✗'}</span>`
+          ).join('')}</div>`
+        : '';
+
+      choicesHtml += `<div class="${cls}">
+        <span class="dr-choice-letter">${letters[displayPos]}</span>
+        <div class="dr-choice-body">
+          <span class="dr-choice-text">${text}${isCorrect ? ' <span class="dr-tick">✓</span>' : ''}</span>
+          ${chipsHtml}
+        </div>
+      </div>`;
     });
+
+    // Players who haven't played at all
+    const notPlayedHtml = users
+      .filter(u => !getUserAnswers(u))
+      .map(u => `<div class="dr-player-ans dr-not-played">${disneyAvatar(u.name)} ${u.name}: —</div>`)
+      .join('');
 
     item.innerHTML = `
       <div class="dr-header">
@@ -904,8 +931,8 @@ async function renderDailyReview(backTarget = 'settings', daysAgo = 0) {
         <span class="dr-cat">${catLabel(q.category)}</span>
       </div>
       <div class="dr-question">${q.question}</div>
-      <div class="dr-correct-ans">✓ ${q.answers[0]}</div>
-      <div class="dr-players">${playerHtml}</div>
+      <div class="dr-choices">${choicesHtml}</div>
+      ${notPlayedHtml ? `<div class="dr-players">${notPlayedHtml}</div>` : ''}
     `;
     list.appendChild(item);
   });

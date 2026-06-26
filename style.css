@@ -969,16 +969,54 @@ input[type="text"]::placeholder { color: var(--muted); }
 
 .dr-question { font-size: 14px; font-weight: 700; line-height: 1.4; }
 
-.dr-correct-ans {
-  font-size: 13px; font-weight: 700;
-  color: var(--green);
-  padding: 5px 10px;
-  background: rgba(34,197,94,0.08);
-  border-radius: var(--r-sm);
-  border-left: 3px solid var(--green);
+.dr-choices { display: flex; flex-direction: column; gap: 6px; }
+
+.dr-choice {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1.5px solid var(--border);
 }
 
-.dr-players { display: flex; flex-direction: column; gap: 4px; }
+.dr-choice-correct      { border-color: var(--green); background: rgba(34,197,94,0.08); }
+.dr-choice-wrong-picked { border-color: var(--red);   background: rgba(239,68,68,0.06); }
+
+.dr-choice-letter {
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  background: var(--border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; font-weight: 800;
+  flex-shrink: 0;
+  color: var(--muted);
+  margin-top: 1px;
+}
+
+.dr-choice-correct .dr-choice-letter      { background: var(--green); color: #fff; }
+.dr-choice-wrong-picked .dr-choice-letter { background: var(--red);   color: #fff; }
+
+.dr-choice-body { display: flex; flex-direction: column; gap: 4px; flex: 1; }
+
+.dr-choice-text { font-size: 13px; font-weight: 600; line-height: 1.35; }
+.dr-choice-correct .dr-choice-text      { color: var(--green); }
+.dr-choice-wrong-picked .dr-choice-text { color: var(--red); }
+
+.dr-tick { font-weight: 800; }
+
+.dr-chips { display: flex; flex-wrap: wrap; gap: 4px; }
+
+.dr-chip {
+  font-size: 11px; font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 999px;
+}
+
+.dr-chip-correct { background: rgba(34,197,94,0.15); color: var(--green); }
+.dr-chip-wrong   { background: rgba(239,68,68,0.15);  color: var(--red); }
+
+.dr-players { display: flex; flex-direction: column; gap: 4px; margin-top: 2px; }
 
 .dr-player-ans {
   font-size: 13px; font-weight: 600;
@@ -986,9 +1024,7 @@ input[type="text"]::placeholder { color: var(--muted); }
   border-radius: 6px;
 }
 
-.dr-correct      { color: var(--green); background: rgba(34,197,94,0.07); }
-.dr-wrong        { color: var(--red);   background: rgba(239,68,68,0.07); }
-.dr-not-played   { color: var(--muted); }
+.dr-not-played { color: var(--muted); }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 374px) {
