@@ -172,6 +172,8 @@ The app is hosted on GitHub Pages from the `main` branch. Use the deploy script:
 
 `deploy.ps1` stages all changes, commits, and pushes in one step. Omitting `-Message` defaults to `"update app"`. GitHub Pages redeploys automatically within ~1 minute.
 
+**Cache-busting for code files:** `index.html` loads `style.css`, `storage.js`, and `app.js` with a `?v=1.9` query string. When making code changes, bump `APP_VERSION` in `app.js` **and** update the matching `?v=` strings in `index.html` so browsers discard their cached copies. Question shard files (fetched via `fetch()`) use `{ cache: 'no-cache' }` and don't need manual versioning.
+
 **Manual fallback:**
 ```
 git add -A && git commit -m "your message" && git push
