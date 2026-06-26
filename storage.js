@@ -55,9 +55,10 @@ class LocalStorageAdapter {
     if (dailyUpdate) {
       // First play of a new day: shift current slot into prev before overwriting
       if (dailyUpdate.streak !== null && u.lastDailyDate && u.lastDailyDate !== dailyUpdate.dateKey) {
-        u.prevDailyDate   = u.lastDailyDate;
-        u.prevDailyScore  = u.lastDailyScore  ?? 0;
-        u.prevDailyPoints = u.lastDailyPoints ?? 0;
+        u.prevDailyDate    = u.lastDailyDate;
+        u.prevDailyScore   = u.lastDailyScore  ?? 0;
+        u.prevDailyPoints  = u.lastDailyPoints ?? 0;
+        u.prevDailyAnswers = u.lastDailyAnswers || null;
       }
       u.lastDailyScore  = dailyUpdate.score;
       u.lastDailyPoints = dailyUpdate.points;
@@ -166,9 +167,10 @@ class FirebaseAdapter {
       if (dailyUpdate) {
         // First play of a new day: shift current slot into prev before overwriting
         if (dailyUpdate.streak !== null && d.lastDailyDate && d.lastDailyDate !== dailyUpdate.dateKey) {
-          update.prevDailyDate   = d.lastDailyDate;
-          update.prevDailyScore  = d.lastDailyScore  ?? 0;
-          update.prevDailyPoints = d.lastDailyPoints ?? 0;
+          update.prevDailyDate    = d.lastDailyDate;
+          update.prevDailyScore   = d.lastDailyScore  ?? 0;
+          update.prevDailyPoints  = d.lastDailyPoints ?? 0;
+          update.prevDailyAnswers = d.lastDailyAnswers || null;
         }
         update.lastDailyScore  = dailyUpdate.score;
         update.lastDailyPoints = dailyUpdate.points;

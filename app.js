@@ -113,9 +113,9 @@ function dateToSeed(key) {
 }
 
 // Stable-sorts by id first so shard/load order doesn't affect the result.
-function getDailyQuestions(count = 10) {
+function getDailyQuestions(count = 10, daysAgo = 0) {
   const sorted = [...QUESTIONS].sort((a, b) => a.id - b.id);
-  return seededShuffle(sorted, dateToSeed(todayKey())).slice(0, count);
+  return seededShuffle(sorted, dateToSeed(dayKey(daysAgo))).slice(0, count);
 }
 
 // =============================================================================
@@ -450,7 +450,7 @@ document.getElementById('btn-settings-back').addEventListener('click', renderHom
 
 document.getElementById('btn-daily-challenge').addEventListener('click', () => {
   if (currentUser.lastDailyDate === todayKey()) {
-    renderDailyReview(false);
+    renderDailyReview('settings', 0);
     return;
   }
   gameState = { questions: getDailyQuestions(10), currentIndex: 0, answers: [], score: 0, currentStreak: 0, isDaily: true, pointsEarned: 0, scoreBreakdown: null };
@@ -839,22 +839,29 @@ document.getElementById('btn-review-missed').addEventListener('click', () => {
     : 'Hide Missed Questions';
 });
 
-document.getElementById('btn-review-daily').addEventListener('click', () => renderDailyReview(true));
+document.getElementById('btn-review-daily').addEventListener('click', () => renderDailyReview('results', 0));
+document.getElementById('btn-view-yesterday').addEventListener('click', () => renderDailyReview('home', 1));
 document.getElementById('btn-daily-review-back').addEventListener('click', () => {
-  if (_dailyReviewFromResults) renderResults(); else renderSettings();
+  if (_dailyReviewBack === 'results') renderResults();
+  else if (_dailyReviewBack === 'home') renderHome();
+  else renderSettings();
 });
 
-let _dailyReviewFromResults = false;
+let _dailyReviewBack = 'settings';
 
-async function renderDailyReview(fromResults = false) {
-  _dailyReviewFromResults = fromResults;
+// backTarget: 'results' | 'settings' | 'home'
+// daysAgo: 0 = today, 1 = yesterday
+async function renderDailyReview(backTarget = 'settings', daysAgo = 0) {
+  _dailyReviewBack = backTarget;
   showScreen('screen-daily-review');
+  document.getElementById('daily-review-title').textContent =
+    daysAgo === 0 ? '📅 Today\'s Review' : '📅 Yesterday\'s Review';
 
+  const targetDate = dayKey(daysAgo);
   const list = document.getElementById('daily-review-list');
   list.innerHTML = '<p class="dr-loading">Loading…</p>';
 
-  const questions = getDailyQuestions(10);
-  const today = todayKey();
+  const questions = getDailyQuestions(10, daysAgo);
   let users;
   try {
     users = await storage.getUsers();
@@ -863,8 +870,11 @@ async function renderDailyReview(fromResults = false) {
     return;
   }
 
-  const playedUsers   = users.filter(u => u.lastDailyDate === today && u.lastDailyAnswers);
-  const unplayedUsers = users.filter(u => u.lastDailyDate !== today);
+  const getUserAnswers = u => {
+    if (u.lastDailyDate === targetDate && u.lastDailyAnswers) return u.lastDailyAnswers;
+    if (u.prevDailyDate === targetDate && u.prevDailyAnswers) return u.prevDailyAnswers;
+    return null;
+  };
 
   list.innerHTML = '';
   questions.forEach((q, idx) => {
@@ -872,15 +882,17 @@ async function renderDailyReview(fromResults = false) {
     item.className = 'dr-item';
 
     let playerHtml = '';
-    playedUsers.forEach(u => {
-      const ans = u.lastDailyAnswers.find(a => a.questionId === q.id);
+    users.forEach(u => {
+      const answers = getUserAnswers(u);
+      if (!answers) {
+        playerHtml += `<div class="dr-player-ans dr-not-played">${disneyAvatar(u.name)} ${u.name}: —</div>`;
+        return;
+      }
+      const ans = answers.find(a => a.questionId === q.id);
       if (!ans) return;
       const cls  = ans.correct ? 'dr-correct' : 'dr-wrong';
       const icon = ans.correct ? '✓' : '✗';
       playerHtml += `<div class="dr-player-ans ${cls}">${disneyAvatar(u.name)} ${u.name}: <em>${ans.selectedText}</em> ${icon}</div>`;
-    });
-    unplayedUsers.forEach(u => {
-      playerHtml += `<div class="dr-player-ans dr-not-played">${disneyAvatar(u.name)} ${u.name}: —</div>`;
     });
 
     item.innerHTML = `

@@ -851,6 +851,22 @@ input[type="text"]::placeholder { color: var(--muted); }
 }
 .daily-cmp-row:last-child { border-bottom: none; }
 
+.btn-review-link {
+  display: block;
+  width: 100%;
+  background: transparent;
+  color: var(--primary);
+  border: none;
+  padding: 8px 0 2px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 13px; font-weight: 700;
+  cursor: pointer;
+  text-align: right;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+.btn-review-link:hover { opacity: 1; }
+
 .dcmp-name        { color: var(--text); font-weight: 600; }
 .dcmp-score       { color: var(--green); font-size: 13px; }
 .dcmp-not-played  { color: var(--muted); font-size: 13px; }

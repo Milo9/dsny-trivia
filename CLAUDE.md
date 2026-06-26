@@ -30,7 +30,7 @@ Screens are `<div class="screen">` elements that get `.hidden` toggled. Only one
 2. `screen-settings` — difficulty, categories, question count; daily button becomes "Review Today's Questions" after the player has played
 3. `screen-game` — active game
 4. `screen-results` — score, category breakdown, missed question review; shows "Review All Questions" button for daily games
-5. `screen-daily-review` — all 10 daily questions with each player's answer and the correct answer; reachable from results (after playing) or from the settings daily button (once played)
+5. `screen-daily-review` — all 10 daily questions with each player's answer and the correct answer; reachable from results (after playing today), settings daily button (once played today), or the "View Questions →" link on yesterday's home card; title updates dynamically (Today's Review / Yesterday's Review)
 6. `screen-leaderboard` — all players ranked by total points (lifetime)
 
 ## Question Format
@@ -129,6 +129,7 @@ Document shape:
   prevDailyDate,      // "YYYY-MM-DD" of the daily before last (populated when day rolls)
   prevDailyScore,     // correct count (0–10) for prevDailyDate
   prevDailyPoints,    // pts earned for prevDailyDate
+  prevDailyAnswers,   // [{questionId, correct, selectedText}] — per-question picks shifted from lastDailyAnswers when day rolls
   categoryStats }     // { movies: {answered, correct}, characters: ..., ... } — per-category counters, absent on old docs (treated as {})
 
 // flags/{autoId}
@@ -183,7 +184,7 @@ A second game mode accessible from the settings screen. Always 10 questions, all
 - Questions are stable-sorted by `id` before shuffling so shard load order doesn't affect results
 - Streak (`dailyStreak`, `lastDailyDate`) stored in Firestore on the user doc — cross-device
 - **Replay is blocked** — each player can play the daily exactly once per calendar day. The settings button becomes "📋 Review Today's Questions" after playing; the results-screen Rematch button is hidden for daily games.
-- Per-question answers stored in Firestore as `lastDailyAnswers` on first play, so the daily review screen can show both players' picks cross-device.
+- Per-question answers stored in Firestore as `lastDailyAnswers` on first play; shifted to `prevDailyAnswers` when the next day's challenge is played. Used by `screen-daily-review` for both today and yesterday views.
 - Counts toward leaderboard stats just like a regular game
 - `gameState.isDaily = true` when a daily challenge is active; `endGame()` checks this flag
 
