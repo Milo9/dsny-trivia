@@ -283,6 +283,8 @@ async function renderHome() {
     dailyBody.appendChild(row);
   });
   dailyCard.classList.toggle('hidden', users.length === 0);
+  const anyPlayedToday = users.some(u => u.lastDailyDate === today);
+  document.getElementById('btn-view-today').classList.toggle('hidden', !anyPlayedToday);
 
   // Yesterday's challenge — checks lastDailyDate (haven't played today yet) and
   // prevDailyDate (already played today, yesterday's data shifted to prev slot)
@@ -840,6 +842,7 @@ document.getElementById('btn-review-missed').addEventListener('click', () => {
 });
 
 document.getElementById('btn-review-daily').addEventListener('click', () => renderDailyReview('results', 0));
+document.getElementById('btn-view-today').addEventListener('click', () => renderDailyReview('home', 0));
 document.getElementById('btn-view-yesterday').addEventListener('click', () => renderDailyReview('home', 1));
 document.getElementById('btn-daily-review-back').addEventListener('click', () => {
   if (_dailyReviewBack === 'results') renderResults();
