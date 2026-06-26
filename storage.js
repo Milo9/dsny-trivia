@@ -79,6 +79,18 @@ class LocalStorageAdapter {
     this._save(data);
   }
 
+  async getDailyPins(dateKey) {
+    const data = this._load();
+    return (data.dailies && data.dailies[dateKey]) ? data.dailies[dateKey] : null;
+  }
+
+  async saveDailyPins(dateKey, questionIds) {
+    const data = this._load();
+    if (!data.dailies) data.dailies = {};
+    data.dailies[dateKey] = questionIds;
+    this._save(data);
+  }
+
   async flagReport(report) {
     const data = this._load();
     if (!data.flags) data.flags = [];
@@ -187,6 +199,15 @@ class FirebaseAdapter {
       dailyStreak:   streak,
       lastDailyDate: dateKey
     });
+  }
+
+  async getDailyPins(dateKey) {
+    const doc = await this.db.collection('dailies').doc(dateKey).get();
+    return doc.exists ? (doc.data().questionIds || null) : null;
+  }
+
+  async saveDailyPins(dateKey, questionIds) {
+    await this.db.collection('dailies').doc(dateKey).set({ questionIds });
   }
 
   async flagReport(report) {

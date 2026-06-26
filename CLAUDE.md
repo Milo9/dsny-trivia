@@ -115,6 +115,7 @@ User stats and flags are stored in **Firestore**, project `disneytrivia-38ac6`.
 Collections:
 - `users` — one doc per player, keyed by user ID
 - `flags` — one doc per flag report (auto-ID)
+- `dailies` — one doc per calendar day, keyed by `"YYYY-MM-DD"` date key; stores `{ questionIds: [id, ...] }` written by the first player who plays that day
 
 Document shape:
 ```js
@@ -180,6 +181,7 @@ git add -A && git commit -m "your message" && git push
 A second game mode accessible from the settings screen. Always 10 questions, all categories, no difficulty filter. Uses a deterministic seeded shuffle so **all players see the same questions on a given calendar day**.
 
 - Date key: `"YYYY-MM-DD"` via `dayKey(daysAgo=0)` (or the `todayKey()` wrapper), which subtracts 8h from UTC so the day rolls over at 2am MDT (Mountain Daylight Time) = 4am EDT. This ensures both Eastern and Alberta players always share the same question set. `dayKey(1)` gives yesterday using the same offset — do not compute yesterday via string arithmetic.
+- **Pinned question IDs**: When the first player starts the daily challenge, the 10 question IDs are written to `dailies/{dateKey}` in Firestore. Every subsequent player (and the review screen) reads from this doc, so everyone plays the same questions regardless of question deploys that happen later in the day. `getDailyPins(dateKey)` / `saveDailyPins(dateKey, ids)` in `storage.js`.
 - Seed: `dateToSeed(key)` hashes the string; `seededShuffle()` uses an inline mulberry32 step
 - Questions are stable-sorted by `id` before shuffling so shard load order doesn't affect results
 - Streak (`dailyStreak`, `lastDailyDate`) stored in Firestore on the user doc — cross-device

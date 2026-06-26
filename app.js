@@ -448,12 +448,33 @@ function renderSettings() {
 
 document.getElementById('btn-settings-back').addEventListener('click', renderHome);
 
-document.getElementById('btn-daily-challenge').addEventListener('click', () => {
-  if (currentUser.lastDailyDate === todayKey()) {
+document.getElementById('btn-daily-challenge').addEventListener('click', async () => {
+  const today = todayKey();
+  if (currentUser.lastDailyDate === today) {
     renderDailyReview('settings', 0);
     return;
   }
-  gameState = { questions: getDailyQuestions(10), currentIndex: 0, answers: [], score: 0, currentStreak: 0, isDaily: true, pointsEarned: 0, scoreBreakdown: null };
+
+  const btn = document.getElementById('btn-daily-challenge');
+  btn.disabled = true;
+
+  let questions;
+  try {
+    const pinnedIds = await storage.getDailyPins(today);
+    if (pinnedIds && pinnedIds.length > 0) {
+      const qMap = new Map(QUESTIONS.map(q => [q.id, q]));
+      const qs = pinnedIds.map(id => qMap.get(id)).filter(Boolean);
+      if (qs.length > 0) questions = qs;
+    }
+  } catch(e) {}
+
+  if (!questions) {
+    questions = getDailyQuestions(10);
+    try { await storage.saveDailyPins(today, questions.map(q => q.id)); } catch(e) {}
+  }
+
+  btn.disabled = false;
+  gameState = { questions, currentIndex: 0, answers: [], score: 0, currentStreak: 0, isDaily: true, pointsEarned: 0, scoreBreakdown: null };
   renderGameQuestion();
 });
 
@@ -875,24 +896,37 @@ async function renderDailyReview(backTarget = 'settings', daysAgo = 0) {
     return null;
   };
 
-  // Rebuild question list from stored answer questionIds so the review stays
-  // stable even if the question pool changes between play and review.
-  // Prefer currentUser's data (they just played); fall back to any player with
-  // stored answers; last resort: regenerate from the live pool.
   const qMap = new Map(QUESTIONS.map(q => [q.id, q]));
-  const currentUserFresh = users.find(u => u.id === currentUser?.id);
-  const orderedSources = [
-    ...(currentUserFresh ? [currentUserFresh] : []),
-    ...users.filter(u => u.id !== currentUser?.id)
-  ];
+
+  // 1. Canonical pinned list — written by the first player who played that day.
+  //    Immune to any pool changes before or after play.
   let questions = null;
-  for (const u of orderedSources) {
-    const ans = getUserAnswers(u);
-    if (ans && ans.length > 0) {
-      const qs = ans.map(a => qMap.get(a.questionId)).filter(Boolean);
-      if (qs.length > 0) { questions = qs; break; }
+  try {
+    const pinnedIds = await storage.getDailyPins(targetDate);
+    if (pinnedIds && pinnedIds.length > 0) {
+      const qs = pinnedIds.map(id => qMap.get(id)).filter(Boolean);
+      if (qs.length > 0) questions = qs;
+    }
+  } catch(e) {}
+
+  // 2. Stored answer questionIds — stable for the player who has them, may
+  //    differ from other players if the pool changed during that day.
+  if (!questions) {
+    const currentUserFresh = users.find(u => u.id === currentUser?.id);
+    const orderedSources = [
+      ...(currentUserFresh ? [currentUserFresh] : []),
+      ...users.filter(u => u.id !== currentUser?.id)
+    ];
+    for (const u of orderedSources) {
+      const ans = getUserAnswers(u);
+      if (ans && ans.length > 0) {
+        const qs = ans.map(a => qMap.get(a.questionId)).filter(Boolean);
+        if (qs.length > 0) { questions = qs; break; }
+      }
     }
   }
+
+  // 3. Last resort: regenerate from live pool.
   if (!questions) questions = getDailyQuestions(10, daysAgo);
 
   // Classify players for the footer of each question card.
@@ -981,8 +1015,8 @@ document.getElementById('btn-results-home').addEventListener('click', renderHome
 // Boot
 // =============================================================================
 async function loadQuestions() {
-  const manifest = await fetch('questions/manifest.json').then(r => r.json());
-  const shards = await Promise.all(manifest.shards.map(s => fetch(s).then(r => r.json())));
+  const manifest = await fetch('questions/manifest.json', { cache: 'no-cache' }).then(r => r.json());
+  const shards = await Promise.all(manifest.shards.map(s => fetch(s, { cache: 'no-cache' }).then(r => r.json())));
   QUESTIONS = shards.flat();
 }
 
