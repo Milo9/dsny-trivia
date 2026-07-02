@@ -20,13 +20,14 @@ A static single-page trivia app built for Kristen and Cara to practice before a 
 | `questions/q-004.json` | Questions 801–1050 (246 active). |
 | `questions/q-005.json` | Questions 1051–1300 (247 active). |
 | `questions/q-006.json` | Questions 1302–1550 (239 active). |
+| `movies.json` | Weekly Homework movie pool — flat array of `{id, title, year, studio}`, Disney animated + Pixar canon. Fetched by `app.js` at boot alongside questions. |
 | `review.html` | Standalone admin page for reviewing flagged questions. Shares the same Firestore `flags` collection. |
 | `scripts/count_topics.py` | Counts questions per Disney/Pixar film (question + correct answer only, not distractors). Run from project root: `python scripts/count_topics.py`. Re-run after large batches of additions to update the Per-film coverage map in this file. |
 
 ## The 6 Screens
 Screens are `<div class="screen">` elements that get `.hidden` toggled. Only one is visible at a time. Navigation is handled by `showScreen(id)` in `app.js`.
 
-1. `screen-home` — player selection, add new player; shows today's and yesterday's daily challenge comparison cards
+1. `screen-home` — player selection, add new player; shows today's and yesterday's daily challenge comparison cards, plus the Weekly Homework card (this week's assigned movie)
 2. `screen-settings` — difficulty, categories, question count; daily button becomes "Review Today's Questions" after the player has played
 3. `screen-game` — active game
 4. `screen-results` — score, category breakdown, missed question review; shows "Review All Questions" button for daily games
@@ -116,6 +117,7 @@ Collections:
 - `users` — one doc per player, keyed by user ID
 - `flags` — one doc per flag report (auto-ID)
 - `dailies` — one doc per calendar day, keyed by `"YYYY-MM-DD"` date key; stores `{ questionIds: [id, ...] }` written by the first player who plays that day
+- `weeklyHomework` — single doc `state`; stores the current Weekly Homework movie pick (see below)
 
 Document shape:
 ```js
@@ -136,6 +138,15 @@ Document shape:
 // flags/{autoId}
 { questionId, questionText, correctAnswer, allAnswers, difficulty, category,
   reportedBy, comment, timestamp, _resolved? }
+
+// weeklyHomework/state
+{ weekKey,      // "YYYY-MM-DD" of the Thursday this pick belongs to, from homeworkWeekKey()
+  movieId,      // id into movies.json for the current pick
+  pickedAt,     // ISO timestamp of the last pick/shuffle
+  watchedIds }  // [id, ...] movies already assigned in a past week — excluded from future picks.
+                // NOT seed-derived like the daily challenge — watched-exclusion and the
+                // shuffle veto make the pick stateful and non-reproducible. Do not "simplify"
+                // this back to a deterministic weekly shuffle.
 ```
 
 Stats stored as raw counters (`totalAnswered`, `totalCorrect`, `categoryStats`); percentages are always derived, never stored. `totalPoints` looks like a derived value but is **primary state** — streak and bonus mechanics make it non-recomputable from counters alone. `updateStats` uses a Firestore transaction to avoid race conditions when two players finish at the same time. The `dailyUpdate` payload (score, points, dateKey, streak, answers) and the `catStats` per-category delta are written inside the same transaction so all fields are always consistent.
@@ -172,7 +183,7 @@ The app is hosted on GitHub Pages from the `main` branch. Use the deploy script:
 
 `deploy.ps1` stages all changes, commits, and pushes in one step. Omitting `-Message` defaults to `"update app"`. GitHub Pages redeploys automatically within ~1 minute.
 
-**Cache-busting for code files:** `index.html` loads `style.css`, `storage.js`, and `app.js` with a `?v=1.9` query string. When making code changes, bump `APP_VERSION` in `app.js` **and** update the matching `?v=` strings in `index.html` so browsers discard their cached copies. Question shard files (fetched via `fetch()`) use `{ cache: 'no-cache' }` and don't need manual versioning.
+**Cache-busting for code files:** `index.html` loads `style.css`, `storage.js`, and `app.js` with a `?v=1.10` query string. When making code changes, bump `APP_VERSION` in `app.js` **and** update the matching `?v=` strings in `index.html` so browsers discard their cached copies. Question shard files and `movies.json` (fetched via `fetch()`) use `{ cache: 'no-cache' }` and don't need manual versioning.
 
 **Manual fallback:**
 ```
@@ -193,6 +204,18 @@ A second game mode accessible from the settings screen. Always 10 questions, all
 - `gameState.isDaily = true` when a daily challenge is active; `endGame()` checks this flag
 
 New user doc fields (Firestore): `dailyStreak: number`, `lastDailyDate: "YYYY-MM-DD"`, `lastDailyAnswers: [{questionId, correct, selectedText}]`. Existing docs without these fields default gracefully.
+
+## Weekly Homework
+A tongue-in-cheek "assignment" feature: a Disney/Pixar movie is picked for family movie night, refreshed every Thursday. Movie pool lives in `movies.json`; pick state lives in Firestore `weeklyHomework/state` (see Document shape above). Card shows on `screen-home`.
+
+- **Not seed-derived.** Unlike the daily challenge, the pick is not deterministic from a seed — watched-exclusion and the shuffle veto make it genuinely stateful. `rollHomeworkIfStale()` reads the stored state; if it's absent or belongs to a past week, it rolls to a new one.
+- **Week boundary:** `homeworkWeekKey()` reuses the daily challenge's 8h-UTC-shift trick to roll over at 08:00 UTC = 3am EST / 4am EDT **Thursday**, returning that Thursday's date key. Like the daily challenge, this is a client-triggered check on app load — there is no server-side cron. The new week's movie is picked (and written to Firestore) by whichever player's device happens to load the app first after the boundary passes.
+- **Rollover vs. shuffle — two separate code paths, not a shared helper:**
+  - `rollHomeworkIfStale()` (boot-time, automatic): the outgoing movie is assumed watched ("homework complete") and pushed onto `watchedIds`, then a new movie is drawn from the unwatched pool.
+  - `shuffleHomework()` (manual veto button): draws a new movie excluding `watchedIds` **and** the current pick, but does **not** touch `watchedIds` — a vetoed movie goes back into the pool for a future week.
+- **Pool exhaustion:** if every movie is watched, `pickFromMoviePool()` resets and draws from the full pool again (`watchedIds` cleared in the caller).
+- **Kristen-only shuffle:** the 🔀 Shuffle button (`#btn-shuffle-homework`) is shown only when `localStorage.disney_last_user === 'kristen'`. This is a loose, client-side-only gate (last selected user, not a real session) consistent with the rest of the app's security model — it's a light veto-power joke for a 2-person household, not access control.
+- Graceful degradation: if `movies.json` or the Firestore read fails, the card just stays hidden (`init()` catches the error separately from question loading so a homework failure never blocks the trivia app itself).
 
 ## Sound Effects
 Web Audio API (synthesized, no audio files). Wrapped in the `sounds` IIFE in `app.js`:
@@ -226,10 +249,12 @@ Points are computed by `scoreBreakdown(answers, earnDailyBonus, dailyStreak)` in
 | Variable | What it holds |
 |---|---|
 | `QUESTIONS` | Flat array of all question objects, populated at boot by `loadQuestions()` |
+| `MOVIES` | Flat array of all movie objects, populated at boot by `loadMovies()` |
 | `currentUser` | The user object selected on the home screen |
 | `gameSettings` | `{ difficulty, categories[], questionCount }` — set on settings screen |
 | `gameState` | `{ questions[], currentIndex, answers[], score, currentStreak, isDaily, pointsEarned, scoreBreakdown }` — active game |
 | `shuffledOpts` | `[{text, originalIndex}]` — display order for current question's answers |
+| `homeworkState` | `{ weekKey, movieId, pickedAt, watchedIds[] }` — this week's Weekly Homework pick, mirrors Firestore `weeklyHomework/state` |
 
 ## Styling Conventions
 - CSS variables defined in `:root` at the top of `style.css` — use these, don't hardcode colors

@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=1.9">
+  <link rel="stylesheet" href="style.css?v=1.10">
 </head>
 <body>
 <div id="stars" aria-hidden="true"></div>
@@ -51,6 +51,12 @@
       <div class="daily-card-title">📅 Yesterday's Challenge</div>
       <div id="yesterday-card-body"></div>
       <button class="btn-review-link" id="btn-view-yesterday">View Questions →</button>
+    </div>
+    <div id="homework-card" class="homework-card hidden">
+      <div class="homework-card-title">🎬 Weekly Homework</div>
+      <div id="homework-movie-title" class="homework-movie-title"></div>
+      <div class="homework-card-sub">Assigned every Thursday. No skipping. 😉</div>
+      <button class="btn-shuffle-homework hidden" id="btn-shuffle-homework">🔀 Shuffle (veto pick)</button>
     </div>
     <div id="add-user-section">
       <button class="btn-secondary" id="btn-show-add-user">+ Add Player</button>
@@ -212,7 +218,7 @@
 </div>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
-<script src="storage.js?v=1.9"></script>
-<script src="app.js?v=1.9"></script>
+<script src="storage.js?v=1.10"></script>
+<script src="app.js?v=1.10"></script>
 </body>
 </html>

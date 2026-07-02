@@ -1,13 +1,15 @@
-const APP_VERSION = '1.9';
+const APP_VERSION = '1.10';
 
 // =============================================================================
 // State
 // =============================================================================
 let QUESTIONS     = [];
+let MOVIES        = [];
 let currentUser   = null;
 let gameSettings  = { difficulty: 'all', categories: ['movies','characters','parks','walt','cruise','music','pixar'], questionCount: 10 };
 let gameState     = { questions: [], currentIndex: 0, answers: [], score: 0, currentStreak: 0, isDaily: false, pointsEarned: 0, scoreBreakdown: null };
 let shuffledOpts  = [];   // [{text, originalIndex}] for current question display
+let homeworkState = null; // { weekKey, movieId, pickedAt, watchedIds[] } — this week's Weekly Homework pick
 
 // =============================================================================
 // Utilities
@@ -110,6 +112,29 @@ function dateToSeed(key) {
   let h = 0;
   for (let i = 0; i < key.length; i++) h = (h * 31 + key.charCodeAt(i)) & 0x7fffffff;
   return h;
+}
+
+// --- Weekly Homework helpers ---
+
+// Same 8h-shift trick as dayKey(): rolls over at 08:00 UTC = 3am EST / 4am EDT.
+// Returns the date key ("YYYY-MM-DD") of the most recent Thursday at/after that boundary,
+// i.e. the identifier for the current homework week.
+function homeworkWeekKey() {
+  const shifted = new Date(Date.now() - 8 * 3600000);
+  const day  = shifted.getUTCDay();       // 0=Sun ... 4=Thu
+  const diff = (day - 4 + 7) % 7;         // days since the most recent Thursday
+  shifted.setUTCDate(shifted.getUTCDate() - diff);
+  return `${shifted.getUTCFullYear()}-${String(shifted.getUTCMonth()+1).padStart(2,'0')}-${String(shifted.getUTCDate()).padStart(2,'0')}`;
+}
+
+// Picks a random movie not in excludeIds. If that leaves nothing, falls back to the
+// full pool (reset: true) so the pool never runs dry.
+function pickFromMoviePool(excludeIds) {
+  const excl = new Set(excludeIds);
+  let candidates = MOVIES.filter(m => !excl.has(m.id));
+  let reset = false;
+  if (candidates.length === 0) { candidates = MOVIES; reset = true; }
+  return { movie: candidates[Math.floor(Math.random() * candidates.length)], reset };
 }
 
 // Stable-sorts by id first so shard/load order doesn't affect the result.
@@ -316,6 +341,8 @@ async function renderHome() {
     });
   }
   yesterdayCard.classList.toggle('hidden', !anyYesterday);
+
+  renderHomeworkCard();
 }
 
 function selectUser(user) {
@@ -391,6 +418,67 @@ async function renderLeaderboard() {
     list.appendChild(entry);
   });
 }
+
+// =============================================================================
+// WEEKLY HOMEWORK — a new movie assigned every Thursday for family movie night
+// =============================================================================
+
+// Called once at boot. If the stored pick belongs to a prior homework week, the
+// outgoing movie is assumed watched (homework complete!) and a fresh one is drawn
+// from the unwatched pool. Never called by the shuffle button — rollover and veto
+// must stay separate, since only rollover marks a movie watched.
+async function rollHomeworkIfStale() {
+  let state = null;
+  try { state = await storage.getHomeworkState(); } catch(e) {}
+  const wk = homeworkWeekKey();
+
+  if (state && state.weekKey === wk) {
+    homeworkState = state;
+    return;
+  }
+
+  let watchedIds = state ? [...new Set(state.watchedIds || [])] : [];
+  if (state && state.movieId != null && !watchedIds.includes(state.movieId)) {
+    watchedIds.push(state.movieId);
+  }
+
+  const { movie, reset } = pickFromMoviePool(watchedIds);
+  if (reset) watchedIds = []; // pool exhausted — everything's fair game again
+
+  homeworkState = { weekKey: wk, movieId: movie.id, pickedAt: new Date().toISOString(), watchedIds };
+  try { await storage.saveHomeworkState(homeworkState); } catch(e) {}
+}
+
+// Vetoes the current pick and draws a new one from the pool. The vetoed movie goes
+// back into the pool — it is NOT added to watchedIds. Kristen-only (gated in the UI).
+async function shuffleHomework() {
+  if (!homeworkState) return;
+  const exclude = [...(homeworkState.watchedIds || []), homeworkState.movieId];
+  const { movie } = pickFromMoviePool(exclude);
+  homeworkState = { ...homeworkState, movieId: movie.id, pickedAt: new Date().toISOString() };
+  try { await storage.saveHomeworkState(homeworkState); } catch(e) {}
+}
+
+function renderHomeworkCard() {
+  const card = document.getElementById('homework-card');
+  if (!homeworkState || !MOVIES.length) { card.classList.add('hidden'); return; }
+  const movie = MOVIES.find(m => m.id === homeworkState.movieId);
+  if (!movie) { card.classList.add('hidden'); return; }
+
+  card.classList.remove('hidden');
+  document.getElementById('homework-movie-title').textContent = `${movie.title} (${movie.year})`;
+
+  const isKristen = localStorage.getItem('disney_last_user') === 'kristen';
+  document.getElementById('btn-shuffle-homework').classList.toggle('hidden', !isKristen);
+}
+
+document.getElementById('btn-shuffle-homework').addEventListener('click', async () => {
+  const btn = document.getElementById('btn-shuffle-homework');
+  btn.disabled = true;
+  await shuffleHomework();
+  renderHomeworkCard();
+  btn.disabled = false;
+});
 
 // =============================================================================
 // SETTINGS SCREEN
@@ -1020,6 +1108,11 @@ async function loadQuestions() {
   QUESTIONS = shards.flat();
 }
 
+async function loadMovies() {
+  const data = await fetch('movies.json', { cache: 'no-cache' }).then(r => r.json());
+  MOVIES = data.movies;
+}
+
 async function init() {
   try {
     await loadQuestions();
@@ -1027,6 +1120,14 @@ async function init() {
     document.getElementById('app').innerHTML =
       `<p style="padding:2rem;color:var(--red)">Failed to load questions: ${e.message}.<br><a href="" onclick="location.reload()">Tap to retry</a></p>`;
     return;
+  }
+  // Weekly Homework is a bonus feature — never let it block the trivia app from loading.
+  try {
+    await loadMovies();
+    await rollHomeworkIfStale();
+  } catch (e) {
+    MOVIES = [];
+    homeworkState = null;
   }
   renderHome();
 }

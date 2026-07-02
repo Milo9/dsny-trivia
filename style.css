@@ -871,6 +871,54 @@ input[type="text"]::placeholder { color: var(--muted); }
 .dcmp-score       { color: var(--green); font-size: 13px; }
 .dcmp-not-played  { color: var(--muted); font-size: 13px; }
 
+/* ===== WEEKLY HOMEWORK CARD (home screen) ===== */
+.homework-card {
+  background: linear-gradient(135deg, rgba(78,142,255,0.10), rgba(76,0,130,0.14));
+  border: 1px solid rgba(78,142,255,0.28);
+  border-radius: var(--r);
+  padding: 13px 16px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.homework-card-title {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+
+.homework-movie-title {
+  font-family: 'Fredoka One', cursive;
+  font-size: 19px;
+  color: var(--text);
+}
+
+.homework-card-sub {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.btn-shuffle-homework {
+  display: block;
+  margin: 10px auto 0;
+  background: var(--bg-hover);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  padding: 8px 16px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s, background 0.2s;
+}
+.btn-shuffle-homework:hover     { background: var(--bg-card); }
+.btn-shuffle-homework:disabled  { opacity: 0.5; cursor: default; }
+
 /* ===== RESULTS POINTS ===== */
 .results-points-wrap { text-align: center; margin: 4px 0; }
 

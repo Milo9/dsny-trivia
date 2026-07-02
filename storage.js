@@ -91,6 +91,17 @@ class LocalStorageAdapter {
     this._save(data);
   }
 
+  async getHomeworkState() {
+    const data = this._load();
+    return data.weeklyHomework || null;
+  }
+
+  async saveHomeworkState(state) {
+    const data = this._load();
+    data.weeklyHomework = state;
+    this._save(data);
+  }
+
   async flagReport(report) {
     const data = this._load();
     if (!data.flags) data.flags = [];
@@ -208,6 +219,15 @@ class FirebaseAdapter {
 
   async saveDailyPins(dateKey, questionIds) {
     await this.db.collection('dailies').doc(dateKey).set({ questionIds });
+  }
+
+  async getHomeworkState() {
+    const doc = await this.db.collection('weeklyHomework').doc('state').get();
+    return doc.exists ? doc.data() : null;
+  }
+
+  async saveHomeworkState(state) {
+    await this.db.collection('weeklyHomework').doc('state').set(state);
   }
 
   async flagReport(report) {
