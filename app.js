@@ -1,4 +1,4 @@
-const APP_VERSION = '1.11';
+const APP_VERSION = '1.12';
 
 // =============================================================================
 // State
@@ -423,6 +423,25 @@ async function renderLeaderboard() {
 // WEEKLY HOMEWORK — a new movie assigned every Thursday for family movie night
 // =============================================================================
 
+// Older saved states used a bare watchedIds:[id,...] array with no per-movie date.
+// Upgrades those in place to watched:[{id, watchedAt}, ...] so date-sorting always works.
+function normalizeHomeworkState(state) {
+  if (state.watched) return state;
+  const fallbackDate = state.pickedAt || new Date(0).toISOString();
+  const watched = (state.watchedIds || []).map(id => ({ id, watchedAt: fallbackDate }));
+  const { watchedIds, ...rest } = state;
+  return { ...rest, watched };
+}
+
+// Adds/updates a {id, watchedAt} entry for id, keeping one entry per movie.
+function upsertWatched(watched, id, watchedAt) {
+  const idx = watched.findIndex(w => w.id === id);
+  if (idx === -1) return [...watched, { id, watchedAt }];
+  const copy = [...watched];
+  copy[idx] = { id, watchedAt };
+  return copy;
+}
+
 // Called once at boot. If the stored pick belongs to a prior homework week, the
 // outgoing movie is assumed watched (homework complete!) and a fresh one is drawn
 // from the unwatched pool. Never called by the shuffle button — rollover and veto
@@ -433,27 +452,28 @@ async function rollHomeworkIfStale() {
   const wk = homeworkWeekKey();
 
   if (state && state.weekKey === wk) {
-    homeworkState = state;
+    homeworkState = normalizeHomeworkState(state);
     return;
   }
 
-  let watchedIds = state ? [...new Set(state.watchedIds || [])] : [];
-  if (state && state.movieId != null && !watchedIds.includes(state.movieId)) {
-    watchedIds.push(state.movieId);
+  let watched = state ? normalizeHomeworkState(state).watched : [];
+  if (state && state.movieId != null) {
+    watched = upsertWatched(watched, state.movieId, new Date().toISOString());
   }
 
-  const { movie, reset } = pickFromMoviePool(watchedIds);
-  if (reset) watchedIds = []; // pool exhausted — everything's fair game again
+  // pickFromMoviePool falls back to the full pool once everything's been watched —
+  // history is intentionally kept (not wiped) so a rewatch just updates that entry's date.
+  const { movie } = pickFromMoviePool(watched.map(w => w.id));
 
-  homeworkState = { weekKey: wk, movieId: movie.id, pickedAt: new Date().toISOString(), watchedIds };
+  homeworkState = { weekKey: wk, movieId: movie.id, pickedAt: new Date().toISOString(), watched };
   try { await storage.saveHomeworkState(homeworkState); } catch(e) {}
 }
 
 // Vetoes the current pick and draws a new one from the pool. The vetoed movie goes
-// back into the pool — it is NOT added to watchedIds. Kristen-only (gated in the UI).
+// back into the pool — it is NOT added to watched. Kristen-only (gated in the UI).
 async function shuffleHomework() {
   if (!homeworkState) return;
-  const exclude = [...(homeworkState.watchedIds || []), homeworkState.movieId];
+  const exclude = [...homeworkState.watched.map(w => w.id), homeworkState.movieId];
   const { movie } = pickFromMoviePool(exclude);
   homeworkState = { ...homeworkState, movieId: movie.id, pickedAt: new Date().toISOString() };
   try { await storage.saveHomeworkState(homeworkState); } catch(e) {}
@@ -462,7 +482,7 @@ async function shuffleHomework() {
 // Un-watches a movie, putting it back in the pool. Open to any player — no Kristen gate.
 async function removeFromWatched(movieId) {
   if (!homeworkState) return;
-  homeworkState = { ...homeworkState, watchedIds: (homeworkState.watchedIds || []).filter(id => id !== movieId) };
+  homeworkState = { ...homeworkState, watched: homeworkState.watched.filter(w => w.id !== movieId) };
   try { await storage.saveHomeworkState(homeworkState); } catch(e) {}
 }
 
@@ -481,33 +501,54 @@ function renderHomeworkCard() {
   renderWatchedList();
 }
 
+const HW_DATE_FMT = d => new Date(d).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+
+// Renders the full movie pool as two groups: Watched (newest watch date first, with an
+// ✕ to un-watch) and everything not yet assigned (alphabetical, read-only). The current
+// week's pick is shown separately up top already, so it's excluded from both groups here.
 function renderWatchedList() {
   const toggleBtn = document.getElementById('btn-toggle-watched');
-  const listEl    = document.getElementById('homework-watched-list');
-  const watchedIds = (homeworkState && homeworkState.watchedIds) || [];
-
-  if (watchedIds.length === 0) {
-    toggleBtn.classList.add('hidden');
-    listEl.classList.add('hidden');
-    listEl.innerHTML = '';
-    return;
-  }
+  const listEl     = document.getElementById('homework-watched-list');
+  if (!MOVIES.length || !homeworkState) { toggleBtn.classList.add('hidden'); return; }
 
   toggleBtn.classList.remove('hidden');
   const isOpen = !listEl.classList.contains('hidden');
-  toggleBtn.textContent = isOpen ? 'Hide Watched List' : `📜 Watched (${watchedIds.length})`;
+  toggleBtn.textContent = isOpen ? 'Hide Movie List' : '🎬 View Full Movie List';
 
-  const movies = watchedIds
-    .map(id => MOVIES.find(m => m.id === id))
-    .filter(Boolean)
+  const watchedIdSet = new Set(homeworkState.watched.map(w => w.id));
+
+  const watchedMovies = homeworkState.watched
+    .slice()
+    .sort((a, b) => new Date(b.watchedAt) - new Date(a.watchedAt))
+    .map(w => { const m = MOVIES.find(mv => mv.id === w.id); return m ? { ...m, watchedAt: w.watchedAt } : null; })
+    .filter(Boolean);
+
+  const unwatchedMovies = MOVIES
+    .filter(m => !watchedIdSet.has(m.id) && m.id !== homeworkState.movieId)
+    .slice()
     .sort((a, b) => a.title.localeCompare(b.title));
 
-  listEl.innerHTML = movies.map(m => `
-    <div class="watched-row">
-      <span class="watched-title">${m.title} <span class="watched-year">(${m.year})</span></span>
-      <button class="watched-remove" data-id="${m.id}" title="Put back in the pool">✕</button>
-    </div>
-  `).join('');
+  const watchedHtml = watchedMovies.length
+    ? `<div class="watched-section-label">✅ Watched (${watchedMovies.length})</div>` +
+      watchedMovies.map(m => `
+        <div class="watched-row">
+          <span class="watched-title">${m.title} <span class="watched-year">(${m.year})</span></span>
+          <span class="watched-date">${HW_DATE_FMT(m.watchedAt)}</span>
+          <button class="watched-remove" data-id="${m.id}" title="Put back in the pool">✕</button>
+        </div>
+      `).join('')
+    : '';
+
+  const unwatchedHtml = unwatchedMovies.length
+    ? `<div class="watched-section-label">🍿 Not Yet Assigned (${unwatchedMovies.length})</div>` +
+      unwatchedMovies.map(m => `
+        <div class="watched-row">
+          <span class="watched-title">${m.title} <span class="watched-year">(${m.year})</span></span>
+        </div>
+      `).join('')
+    : '';
+
+  listEl.innerHTML = watchedHtml + unwatchedHtml;
 }
 
 document.getElementById('btn-shuffle-homework').addEventListener('click', async () => {

@@ -140,13 +140,16 @@ Document shape:
   reportedBy, comment, timestamp, _resolved? }
 
 // weeklyHomework/state
-{ weekKey,      // "YYYY-MM-DD" of the Thursday this pick belongs to, from homeworkWeekKey()
-  movieId,      // id into movies.json for the current pick
-  pickedAt,     // ISO timestamp of the last pick/shuffle
-  watchedIds }  // [id, ...] movies already assigned in a past week — excluded from future picks.
-                // NOT seed-derived like the daily challenge — watched-exclusion and the
-                // shuffle veto make the pick stateful and non-reproducible. Do not "simplify"
-                // this back to a deterministic weekly shuffle.
+{ weekKey,   // "YYYY-MM-DD" of the Thursday this pick belongs to, from homeworkWeekKey()
+  movieId,   // id into movies.json for the current pick
+  pickedAt,  // ISO timestamp of the last pick/shuffle
+  watched }  // [{id, watchedAt}, ...] movies already assigned in a past week, with the date
+             // watched — excluded from future picks and rendered as watch history.
+             // Older docs may have a bare `watchedIds:[id,...]` instead; app.js's
+             // normalizeHomeworkState() upgrades that shape in memory on read.
+             // NOT seed-derived like the daily challenge — watched-exclusion and the
+             // shuffle veto make the pick stateful and non-reproducible. Do not "simplify"
+             // this back to a deterministic weekly shuffle.
 ```
 
 Stats stored as raw counters (`totalAnswered`, `totalCorrect`, `categoryStats`); percentages are always derived, never stored. `totalPoints` looks like a derived value but is **primary state** — streak and bonus mechanics make it non-recomputable from counters alone. `updateStats` uses a Firestore transaction to avoid race conditions when two players finish at the same time. The `dailyUpdate` payload (score, points, dateKey, streak, answers) and the `catStats` per-category delta are written inside the same transaction so all fields are always consistent.
@@ -183,7 +186,7 @@ The app is hosted on GitHub Pages from the `main` branch. Use the deploy script:
 
 `deploy.ps1` stages all changes, commits, and pushes in one step. Omitting `-Message` defaults to `"update app"`. GitHub Pages redeploys automatically within ~1 minute.
 
-**Cache-busting for code files:** `index.html` loads `style.css`, `storage.js`, and `app.js` with a `?v=1.11` query string. When making code changes, bump `APP_VERSION` in `app.js` **and** update the matching `?v=` strings in `index.html` so browsers discard their cached copies. Question shard files and `movies.json` (fetched via `fetch()`) use `{ cache: 'no-cache' }` and don't need manual versioning.
+**Cache-busting for code files:** `index.html` loads `style.css`, `storage.js`, and `app.js` with a `?v=1.12` query string. When making code changes, bump `APP_VERSION` in `app.js` **and** update the matching `?v=` strings in `index.html` so browsers discard their cached copies. Question shard files and `movies.json` (fetched via `fetch()`) use `{ cache: 'no-cache' }` and don't need manual versioning.
 
 **Manual fallback:**
 ```
@@ -215,7 +218,10 @@ A tongue-in-cheek "assignment" feature: a Disney/Pixar movie is picked for famil
   - `shuffleHomework()` (manual veto button): draws a new movie excluding `watchedIds` **and** the current pick, but does **not** touch `watchedIds` — a vetoed movie goes back into the pool for a future week.
 - **Pool exhaustion:** if every movie is watched, `pickFromMoviePool()` resets and draws from the full pool again (`watchedIds` cleared in the caller).
 - **Kristen-only shuffle:** the 🔀 Shuffle button (`#btn-shuffle-homework`) is shown only when `localStorage.disney_last_user === 'kristen'`. This is a loose, client-side-only gate (last selected user, not a real session) consistent with the rest of the app's security model — it's a light veto-power joke for a 2-person household, not access control.
-- **Watched history:** a `📜 Watched (N)` toggle (`#btn-toggle-watched`) expands `#homework-watched-list`, listing every movie in `watchedIds` alphabetically with an ✕ button. Clicking ✕ calls `removeFromWatched(movieId)`, which pulls that id out of `watchedIds` and saves — putting the movie back in the pool for future picks. **Open to any player, no Kristen gate** (unlike shuffle).
+- **Full movie list:** a `🎬 View Full Movie List` toggle (`#btn-toggle-watched`) expands `#homework-watched-list`, showing the *entire* pool as two groups (current week's pick is excluded from both — it's already shown above):
+  - **✅ Watched** — sorted newest-watched first (`watchedAt` descending), each row has an ✕. Clicking it calls `removeFromWatched(movieId)`, pulling that entry out of `watched` and saving — the movie goes back in the pool for future picks/shuffles.
+  - **🍿 Not Yet Assigned** — everything else, alphabetical, read-only.
+  - **Open to any player, no Kristen gate** on the ✕ (unlike shuffle).
 - Graceful degradation: if `movies.json` or the Firestore read fails, the card just stays hidden (`init()` catches the error separately from question loading so a homework failure never blocks the trivia app itself).
 
 ## Sound Effects
@@ -255,7 +261,7 @@ Points are computed by `scoreBreakdown(answers, earnDailyBonus, dailyStreak)` in
 | `gameSettings` | `{ difficulty, categories[], questionCount }` — set on settings screen |
 | `gameState` | `{ questions[], currentIndex, answers[], score, currentStreak, isDaily, pointsEarned, scoreBreakdown }` — active game |
 | `shuffledOpts` | `[{text, originalIndex}]` — display order for current question's answers |
-| `homeworkState` | `{ weekKey, movieId, pickedAt, watchedIds[] }` — this week's Weekly Homework pick, mirrors Firestore `weeklyHomework/state` |
+| `homeworkState` | `{ weekKey, movieId, pickedAt, watched: [{id, watchedAt}] }` — this week's Weekly Homework pick, mirrors Firestore `weeklyHomework/state` |
 
 ## Styling Conventions
 - CSS variables defined in `:root` at the top of `style.css` — use these, don't hardcode colors

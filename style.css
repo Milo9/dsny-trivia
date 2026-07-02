@@ -939,22 +939,32 @@ input[type="text"]::placeholder { color: var(--muted); }
   padding-top: 10px;
   border-top: 1px solid rgba(255,255,255,0.08);
   text-align: left;
-  max-height: 220px;
+  max-height: 320px;
   overflow-y: auto;
 }
+
+.watched-section-label {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--gold);
+  margin: 12px 0 4px;
+}
+.watched-section-label:first-child { margin-top: 0; }
 
 .watched-row {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 8px;
   padding: 5px 2px;
   font-size: 13px;
 }
 .watched-row:not(:last-child) { border-bottom: 1px solid rgba(255,255,255,0.04); }
 
-.watched-title { color: var(--text); }
+.watched-title { color: var(--text); flex: 1; }
 .watched-year  { color: var(--muted); font-size: 12px; }
+.watched-date  { color: var(--muted); font-size: 11px; white-space: nowrap; }
 
 .watched-remove {
   flex-shrink: 0;
