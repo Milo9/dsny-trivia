@@ -1,4 +1,4 @@
-const APP_VERSION = '1.12';
+const APP_VERSION = '1.13';
 
 // =============================================================================
 // State
@@ -495,7 +495,12 @@ function renderHomeworkCard() {
   card.classList.remove('hidden');
   document.getElementById('homework-movie-title').textContent = `${movie.title} (${movie.year})`;
 
-  const isKristen = localStorage.getItem('disney_last_user') === 'kristen';
+  // Gated on currentUser (this session's actual login), not the localStorage
+  // "last user" — that persists across sessions on a shared device, so anyone
+  // opening the app after Kristen last used it would see the button before
+  // ever selecting a player. Requiring a real selectUser() call this session
+  // means the button only appears once Kristen has actually logged in.
+  const isKristen = currentUser && currentUser.id === 'kristen';
   document.getElementById('btn-shuffle-homework').classList.toggle('hidden', !isKristen);
 
   renderWatchedList();
