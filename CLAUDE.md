@@ -183,7 +183,7 @@ The app is hosted on GitHub Pages from the `main` branch. Use the deploy script:
 
 `deploy.ps1` stages all changes, commits, and pushes in one step. Omitting `-Message` defaults to `"update app"`. GitHub Pages redeploys automatically within ~1 minute.
 
-**Cache-busting for code files:** `index.html` loads `style.css`, `storage.js`, and `app.js` with a `?v=1.10` query string. When making code changes, bump `APP_VERSION` in `app.js` **and** update the matching `?v=` strings in `index.html` so browsers discard their cached copies. Question shard files and `movies.json` (fetched via `fetch()`) use `{ cache: 'no-cache' }` and don't need manual versioning.
+**Cache-busting for code files:** `index.html` loads `style.css`, `storage.js`, and `app.js` with a `?v=1.11` query string. When making code changes, bump `APP_VERSION` in `app.js` **and** update the matching `?v=` strings in `index.html` so browsers discard their cached copies. Question shard files and `movies.json` (fetched via `fetch()`) use `{ cache: 'no-cache' }` and don't need manual versioning.
 
 **Manual fallback:**
 ```
@@ -215,6 +215,7 @@ A tongue-in-cheek "assignment" feature: a Disney/Pixar movie is picked for famil
   - `shuffleHomework()` (manual veto button): draws a new movie excluding `watchedIds` **and** the current pick, but does **not** touch `watchedIds` — a vetoed movie goes back into the pool for a future week.
 - **Pool exhaustion:** if every movie is watched, `pickFromMoviePool()` resets and draws from the full pool again (`watchedIds` cleared in the caller).
 - **Kristen-only shuffle:** the 🔀 Shuffle button (`#btn-shuffle-homework`) is shown only when `localStorage.disney_last_user === 'kristen'`. This is a loose, client-side-only gate (last selected user, not a real session) consistent with the rest of the app's security model — it's a light veto-power joke for a 2-person household, not access control.
+- **Watched history:** a `📜 Watched (N)` toggle (`#btn-toggle-watched`) expands `#homework-watched-list`, listing every movie in `watchedIds` alphabetically with an ✕ button. Clicking ✕ calls `removeFromWatched(movieId)`, which pulls that id out of `watchedIds` and saves — putting the movie back in the pool for future picks. **Open to any player, no Kristen gate** (unlike shuffle).
 - Graceful degradation: if `movies.json` or the Firestore read fails, the card just stays hidden (`init()` catches the error separately from question loading so a homework failure never blocks the trivia app itself).
 
 ## Sound Effects

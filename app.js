@@ -1,4 +1,4 @@
-const APP_VERSION = '1.10';
+const APP_VERSION = '1.11';
 
 // =============================================================================
 // State
@@ -459,6 +459,13 @@ async function shuffleHomework() {
   try { await storage.saveHomeworkState(homeworkState); } catch(e) {}
 }
 
+// Un-watches a movie, putting it back in the pool. Open to any player — no Kristen gate.
+async function removeFromWatched(movieId) {
+  if (!homeworkState) return;
+  homeworkState = { ...homeworkState, watchedIds: (homeworkState.watchedIds || []).filter(id => id !== movieId) };
+  try { await storage.saveHomeworkState(homeworkState); } catch(e) {}
+}
+
 function renderHomeworkCard() {
   const card = document.getElementById('homework-card');
   if (!homeworkState || !MOVIES.length) { card.classList.add('hidden'); return; }
@@ -470,6 +477,37 @@ function renderHomeworkCard() {
 
   const isKristen = localStorage.getItem('disney_last_user') === 'kristen';
   document.getElementById('btn-shuffle-homework').classList.toggle('hidden', !isKristen);
+
+  renderWatchedList();
+}
+
+function renderWatchedList() {
+  const toggleBtn = document.getElementById('btn-toggle-watched');
+  const listEl    = document.getElementById('homework-watched-list');
+  const watchedIds = (homeworkState && homeworkState.watchedIds) || [];
+
+  if (watchedIds.length === 0) {
+    toggleBtn.classList.add('hidden');
+    listEl.classList.add('hidden');
+    listEl.innerHTML = '';
+    return;
+  }
+
+  toggleBtn.classList.remove('hidden');
+  const isOpen = !listEl.classList.contains('hidden');
+  toggleBtn.textContent = isOpen ? 'Hide Watched List' : `📜 Watched (${watchedIds.length})`;
+
+  const movies = watchedIds
+    .map(id => MOVIES.find(m => m.id === id))
+    .filter(Boolean)
+    .sort((a, b) => a.title.localeCompare(b.title));
+
+  listEl.innerHTML = movies.map(m => `
+    <div class="watched-row">
+      <span class="watched-title">${m.title} <span class="watched-year">(${m.year})</span></span>
+      <button class="watched-remove" data-id="${m.id}" title="Put back in the pool">✕</button>
+    </div>
+  `).join('');
 }
 
 document.getElementById('btn-shuffle-homework').addEventListener('click', async () => {
@@ -478,6 +516,19 @@ document.getElementById('btn-shuffle-homework').addEventListener('click', async 
   await shuffleHomework();
   renderHomeworkCard();
   btn.disabled = false;
+});
+
+document.getElementById('btn-toggle-watched').addEventListener('click', () => {
+  document.getElementById('homework-watched-list').classList.toggle('hidden');
+  renderWatchedList();
+});
+
+document.getElementById('homework-watched-list').addEventListener('click', async e => {
+  const btn = e.target.closest('.watched-remove');
+  if (!btn) return;
+  btn.disabled = true;
+  await removeFromWatched(parseInt(btn.dataset.id, 10));
+  renderHomeworkCard();
 });
 
 // =============================================================================

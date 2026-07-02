@@ -919,6 +919,58 @@ input[type="text"]::placeholder { color: var(--muted); }
 .btn-shuffle-homework:hover     { background: var(--bg-card); }
 .btn-shuffle-homework:disabled  { opacity: 0.5; cursor: default; }
 
+.btn-toggle-watched {
+  display: block;
+  margin: 8px auto 0;
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+.btn-toggle-watched:hover { color: var(--text); }
+
+.homework-watched-list {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  text-align: left;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.watched-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 5px 2px;
+  font-size: 13px;
+}
+.watched-row:not(:last-child) { border-bottom: 1px solid rgba(255,255,255,0.04); }
+
+.watched-title { color: var(--text); }
+.watched-year  { color: var(--muted); font-size: 12px; }
+
+.watched-remove {
+  flex-shrink: 0;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  line-height: 1;
+  font-size: 12px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+.watched-remove:hover { color: var(--red); border-color: var(--red); }
+
 /* ===== RESULTS POINTS ===== */
 .results-points-wrap { text-align: center; margin: 4px 0; }
 
