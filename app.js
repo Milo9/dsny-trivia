@@ -1,4 +1,4 @@
-const APP_VERSION = '1.16';
+const APP_VERSION = '1.17';
 
 // =============================================================================
 // State
@@ -250,6 +250,7 @@ async function renderHome() {
   document.getElementById('add-user-form').classList.add('hidden');
   document.getElementById('btn-show-add-user').classList.remove('hidden');
   document.getElementById('new-user-input').value = '';
+  document.getElementById('add-user-error').classList.add('hidden');
 
   const list = document.getElementById('user-list');
   list.innerHTML = '';
@@ -367,13 +368,33 @@ document.getElementById('btn-cancel-add-user').addEventListener('click', () => {
 
 document.getElementById('btn-add-user').addEventListener('click', addUser);
 document.getElementById('new-user-input').addEventListener('keydown', e => { if (e.key === 'Enter') addUser(); });
+document.getElementById('new-user-input').addEventListener('input', () => {
+  document.getElementById('add-user-error').classList.add('hidden');
+});
 
 async function addUser() {
   const input = document.getElementById('new-user-input');
+  const errEl = document.getElementById('add-user-error');
+  const btn   = document.getElementById('btn-add-user');
   const name  = input.value.trim();
-  if (!name) return;
-  await storage.saveUser({ id: slugId(name), name, totalAnswered: 0, totalCorrect: 0, gamesPlayed: 0, totalPoints: 0 });
-  renderHome();
+  if (!name || btn.disabled) return;
+  btn.disabled = true;
+  errEl.classList.add('hidden');
+  try {
+    const users = await storage.getUsers();
+    if (users.some(u => u.name.trim().toLowerCase() === name.toLowerCase())) {
+      errEl.textContent = `There's already a player named ${name}.`;
+      errEl.classList.remove('hidden');
+      return;
+    }
+    await storage.saveUser({ id: slugId(name), name, totalAnswered: 0, totalCorrect: 0, gamesPlayed: 0, totalPoints: 0 });
+    renderHome();
+  } catch (e) {
+    errEl.textContent = "Couldn't add player — check your connection.";
+    errEl.classList.remove('hidden');
+  } finally {
+    btn.disabled = false;
+  }
 }
 
 // Leaderboard links
