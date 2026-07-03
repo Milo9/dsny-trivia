@@ -1,4 +1,4 @@
-const APP_VERSION = '1.15';
+const APP_VERSION = '1.16';
 
 // =============================================================================
 // State
@@ -43,10 +43,6 @@ function pct(correct, total) {
 // Escapes user-entered text (player names) before innerHTML interpolation.
 function esc(s) {
   return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-}
-
-function initials(name) {
-  return name.trim().split(/\s+/).map(w => w[0].toUpperCase()).join('').slice(0, 2);
 }
 
 const DISNEY_AVATARS = ['🐭','👸','🦁','🤠','🐠','❄️','🧚','🧞'];
@@ -788,6 +784,7 @@ function renderGameQuestion() {
   document.getElementById('flag-thanks').classList.add('hidden');
   document.getElementById('flag-comment').value = '';
   document.getElementById('btn-flag').classList.remove('active');
+  document.getElementById('btn-flag').disabled = false; // re-enable after a flag on a previous question
 }
 
 function handleAnswer(selectedIdx) {
@@ -860,9 +857,13 @@ document.getElementById('btn-exit-game').addEventListener('click', async () => {
     : 'Exit this game? You haven\'t answered any questions yet.';
   if (confirm(msg)) {
     if (answered > 0) {
-      const pts = scoreBreakdown(gameState.answers, false, 0).total;
-      await storage.updateStats(currentUser.id, answered, gameState.score, pts, null, buildCatStats(gameState.answers));
-      addSeenIds(currentUser.id, gameState.answers.map(a => a.question.id));
+      try {
+        const pts = scoreBreakdown(gameState.answers, false, 0).total;
+        await storage.updateStats(currentUser.id, answered, gameState.score, pts, null, buildCatStats(gameState.answers));
+        addSeenIds(currentUser.id, gameState.answers.map(a => a.question.id));
+      } catch (e) {
+        alert("Couldn't save your progress — check your connection.");
+      }
     }
     renderHome();
   }
@@ -897,23 +898,33 @@ document.getElementById('btn-flag-submit').addEventListener('click', submitFlag)
 document.getElementById('flag-comment').addEventListener('keydown', e => { if (e.key === 'Enter') submitFlag(); });
 
 async function submitFlag() {
+  const submitBtn = document.getElementById('btn-flag-submit');
+  if (submitBtn.disabled) return; // guard against double-click / rapid Enter
+  submitBtn.disabled = true;
+
   const q       = gameState.questions[gameState.currentIndex];
   const comment = document.getElementById('flag-comment').value.trim();
-  await storage.flagReport({
-    questionId:    q.id,
-    questionText:  q.question,
-    correctAnswer: q.answers[0],
-    allAnswers:    q.answers,
-    difficulty:    q.difficulty,
-    category:      q.category,
-    reportedBy:    currentUser.name,
-    comment:       comment || null,
-    timestamp:     new Date().toISOString()
-  });
-  document.getElementById('flag-form').classList.add('hidden');
-  document.getElementById('flag-thanks').classList.remove('hidden');
-  document.getElementById('btn-flag').classList.remove('active');
-  document.getElementById('btn-flag').disabled = true;
+  try {
+    await storage.flagReport({
+      questionId:    q.id,
+      questionText:  q.question,
+      correctAnswer: q.answers[0],
+      allAnswers:    q.answers,
+      difficulty:    q.difficulty,
+      category:      q.category,
+      reportedBy:    currentUser.name,
+      comment:       comment || null,
+      timestamp:     new Date().toISOString()
+    });
+    document.getElementById('flag-form').classList.add('hidden');
+    document.getElementById('flag-thanks').classList.remove('hidden');
+    document.getElementById('btn-flag').classList.remove('active');
+    document.getElementById('btn-flag').disabled = true;
+  } catch (e) {
+    alert("Couldn't send the report — check your connection."); // form stays open for retry
+  } finally {
+    submitBtn.disabled = false;
+  }
 }
 
 // =============================================================================
@@ -948,11 +959,18 @@ async function endGame() {
     })) : null
   } : null;
 
-  await storage.updateStats(currentUser.id, gameState.questions.length, gameState.score, bd.total, dailyUpdate, buildCatStats(gameState.answers));
-  addSeenIds(currentUser.id, gameState.questions.map(q => q.id));
-
-  const users = await storage.getUsers();
-  currentUser = users.find(u => u.id === currentUser.id) || currentUser;
+  // If the save fails (offline), still show the results screen with a warning
+  // instead of stranding the player on the game screen. Seen-ids stay unmarked so
+  // an unsaved game's questions can come around again.
+  gameState.saveFailed = false;
+  try {
+    await storage.updateStats(currentUser.id, gameState.questions.length, gameState.score, bd.total, dailyUpdate, buildCatStats(gameState.answers));
+    addSeenIds(currentUser.id, gameState.questions.map(q => q.id));
+    const users = await storage.getUsers();
+    currentUser = users.find(u => u.id === currentUser.id) || currentUser;
+  } catch (e) {
+    gameState.saveFailed = true;
+  }
   renderResults();
 }
 
@@ -973,6 +991,7 @@ function renderResults() {
 
   document.getElementById('results-emoji').textContent    = emoji;
   document.getElementById('results-title').textContent    = title;
+  document.getElementById('save-warning').classList.toggle('hidden', !gameState.saveFailed);
   document.getElementById('results-fraction').textContent = `${score} out of ${total} correct`;
   document.getElementById('results-pct').textContent      = percentage + '%';
 

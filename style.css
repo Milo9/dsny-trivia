@@ -1117,6 +1117,17 @@ input[type="text"]::placeholder { color: var(--muted); }
 }
 .watched-remove:hover { color: var(--red); border-color: var(--red); }
 
+.save-warning {
+  font-size: 13px;
+  font-weight: 700;
+  color: #fbbf24;
+  background: rgba(251,191,36,0.1);
+  border: 1px solid rgba(251,191,36,0.3);
+  border-radius: var(--r-sm);
+  padding: 8px 14px;
+  margin-top: 6px;
+}
+
 /* ===== RESULTS POINTS ===== */
 .results-points-wrap { text-align: center; margin: 4px 0; }
 

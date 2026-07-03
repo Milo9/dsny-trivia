@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#060614">
   <title>✨ Disney Trivia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=1.15">
+  <link rel="stylesheet" href="style.css?v=1.16">
 </head>
 <body>
 <div id="stars" aria-hidden="true"></div>
@@ -193,6 +193,7 @@
       <div id="results-fraction" class="results-fraction"></div>
       <div id="results-points-display" class="results-points-wrap"></div>
       <div id="results-pct" class="results-pct"></div>
+      <div id="save-warning" class="save-warning hidden">⚠️ Couldn't save this score — check your connection.</div>
     </div>
     <div id="results-breakdown" class="breakdown-list"></div>
     <div id="missed-section" class="missed-section hidden">
@@ -230,7 +231,7 @@
 </div>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
-<script src="storage.js?v=1.15"></script>
-<script src="app.js?v=1.15"></script>
+<script src="storage.js?v=1.16"></script>
+<script src="app.js?v=1.16"></script>
 </body>
 </html>
