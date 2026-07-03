@@ -139,7 +139,9 @@ class FirebaseAdapter {
       appId:             "1:817552679289:web:1e82c3f0c72eeed2020fa8"
     });
     this.db = firebase.firestore();
-    this._seed();
+    // Fire-and-forget: swallow so an offline load doesn't surface an unhandled
+    // rejection. getUsers() will show its own error UI if Firestore is unreachable.
+    this._seed().catch(() => {});
   }
 
   async _seed() {

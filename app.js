@@ -1,4 +1,4 @@
-const APP_VERSION = '1.14';
+const APP_VERSION = '1.15';
 
 // =============================================================================
 // State
@@ -38,6 +38,11 @@ function addSeenIds(userId, ids) {
 
 function pct(correct, total) {
   return total ? Math.round((correct / total) * 100) + '%' : '—';
+}
+
+// Escapes user-entered text (player names) before innerHTML interpolation.
+function esc(s) {
+  return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
 function initials(name) {
@@ -276,7 +281,7 @@ async function renderHome() {
     card.innerHTML = `
       <div class="user-avatar">${disneyAvatar(user.name)}</div>
       <div class="user-info">
-        <div class="user-name">${user.name}</div>
+        <div class="user-name">${esc(user.name)}</div>
         <div class="user-stats">${stat}</div>
       </div>
       <span class="user-arrow">›</span>
@@ -296,12 +301,12 @@ async function renderHome() {
     row.className = 'daily-cmp-row';
     if (played) {
       row.innerHTML = `
-        <span class="dcmp-name">${disneyAvatar(user.name)} ${user.name}</span>
+        <span class="dcmp-name">${disneyAvatar(user.name)} ${esc(user.name)}</span>
         <span class="dcmp-score">${user.lastDailyScore ?? 0}/10 · <strong>${(user.lastDailyPoints||0).toLocaleString()} pts</strong> ✓</span>
       `;
     } else {
       row.innerHTML = `
-        <span class="dcmp-name">${disneyAvatar(user.name)} ${user.name}</span>
+        <span class="dcmp-name">${disneyAvatar(user.name)} ${esc(user.name)}</span>
         <span class="dcmp-not-played">—</span>
       `;
     }
@@ -328,12 +333,12 @@ async function renderHome() {
       row.className = 'daily-cmp-row';
       if (yd) {
         row.innerHTML = `
-          <span class="dcmp-name">${disneyAvatar(user.name)} ${user.name}</span>
+          <span class="dcmp-name">${disneyAvatar(user.name)} ${esc(user.name)}</span>
           <span class="dcmp-score">${yd.score ?? 0}/10 · <strong>${(yd.points||0).toLocaleString()} pts</strong> ✓</span>
         `;
       } else {
         row.innerHTML = `
-          <span class="dcmp-name">${disneyAvatar(user.name)} ${user.name}</span>
+          <span class="dcmp-name">${disneyAvatar(user.name)} ${esc(user.name)}</span>
           <span class="dcmp-not-played">—</span>
         `;
       }
@@ -407,7 +412,7 @@ async function renderLeaderboard() {
       <div class="lb-rank">${medals[i] || (i + 1)}</div>
       <div class="lb-avatar">${disneyAvatar(u.name)}</div>
       <div class="lb-info">
-        <div class="lb-name">${u.name}</div>
+        <div class="lb-name">${esc(u.name)}</div>
         <div class="lb-detail">${detail}</div>
       </div>
       <div class="lb-score-block">
@@ -447,8 +452,10 @@ function upsertWatched(watched, id, watchedAt) {
 // from the unwatched pool. Never called by the shuffle button — rollover and veto
 // must stay separate, since only rollover marks a movie watched.
 async function rollHomeworkIfStale() {
-  let state = null;
-  try { state = await storage.getHomeworkState(); } catch(e) {}
+  // Let a failed read propagate to init()'s catch (card stays hidden). Swallowing it
+  // here would treat "couldn't read" as "no state" and roll a fresh pick with an empty
+  // watched list — clobbering the real state and watch history on a transient error.
+  const state = await storage.getHomeworkState();
   const wk = homeworkWeekKey();
 
   if (state && state.weekKey === wk) {
@@ -1147,7 +1154,7 @@ async function renderDailyReview(backTarget = 'settings', daysAgo = 0) {
 
       const chipsHtml = choosers.length
         ? `<div class="dr-chips">${choosers.map(c =>
-            `<span class="dr-chip ${c.correct ? 'dr-chip-correct' : 'dr-chip-wrong'}">${disneyAvatar(c.user.name)} ${c.user.name} ${c.correct ? '✓' : '✗'}</span>`
+            `<span class="dr-chip ${c.correct ? 'dr-chip-correct' : 'dr-chip-wrong'}">${disneyAvatar(c.user.name)} ${esc(c.user.name)} ${c.correct ? '✓' : '✗'}</span>`
           ).join('')}</div>`
         : '';
 
@@ -1162,9 +1169,9 @@ async function renderDailyReview(backTarget = 'settings', daysAgo = 0) {
 
     const footerHtml = [
       ...playedNoDetailUsers.map(u =>
-        `<div class="dr-player-ans dr-not-played">${disneyAvatar(u.name)} ${u.name}: played — details unavailable</div>`),
+        `<div class="dr-player-ans dr-not-played">${disneyAvatar(u.name)} ${esc(u.name)}: played — details unavailable</div>`),
       ...notPlayedUsers.map(u =>
-        `<div class="dr-player-ans dr-not-played">${disneyAvatar(u.name)} ${u.name}: —</div>`)
+        `<div class="dr-player-ans dr-not-played">${disneyAvatar(u.name)} ${esc(u.name)}: —</div>`)
     ].join('');
 
     item.innerHTML = `

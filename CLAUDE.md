@@ -186,7 +186,7 @@ The app is hosted on GitHub Pages from the `main` branch. Use the deploy script:
 
 `deploy.ps1` stages all changes, commits, and pushes in one step. Omitting `-Message` defaults to `"update app"`. GitHub Pages redeploys automatically within ~1 minute.
 
-**Cache-busting for code files:** `index.html` loads `style.css`, `storage.js`, and `app.js` with a `?v=` query string matching `APP_VERSION` (currently 1.14). When making code changes, bump `APP_VERSION` in `app.js` **and** update the matching `?v=` strings in `index.html` so browsers discard their cached copies. Question shard files and `movies.json` (fetched via `fetch()`) use `{ cache: 'no-cache' }` and don't need manual versioning.
+**Cache-busting for code files:** `index.html` loads `style.css`, `storage.js`, and `app.js` with a `?v=` query string matching `APP_VERSION` (currently 1.15). When making code changes, bump `APP_VERSION` in `app.js` **and** update the matching `?v=` strings in `index.html` so browsers discard their cached copies. Question shard files and `movies.json` (fetched via `fetch()`) use `{ cache: 'no-cache' }` and don't need manual versioning.
 
 **Manual fallback:**
 ```

@@ -86,9 +86,28 @@ const db = firebase.firestore();
 
 let cachedFlags = [];
 
+// Exact question-id → shard filename map, built from the live manifest. Shard ID
+// ranges aren't uniform (q-003 spans 501–799), so computing the shard from the id
+// mislabels some questions — look it up instead.
+let shardMap = null;
+
+async function buildShardMap() {
+  try {
+    const manifest = await fetch('questions/manifest.json', { cache: 'no-cache' }).then(r => r.json());
+    const entries = await Promise.all(manifest.shards.map(async s => {
+      const qs = await fetch(s, { cache: 'no-cache' }).then(r => r.json());
+      const file = s.split('/').pop();
+      return qs.map(q => [q.id, file]);
+    }));
+    shardMap = new Map(entries.flat());
+  } catch (e) {
+    shardMap = null; // shard column shows '?' — flags still fully usable
+  }
+}
+
 function shardFor(qid) {
-  const n = Math.ceil(qid / 250);
-  return 'q-' + String(n).padStart(3, '0') + '.json';
+  if (!shardMap) return '?';
+  return shardMap.get(qid) || 'removed';
 }
 
 async function fetchFlags() {
@@ -206,17 +225,25 @@ function esc(str) {
 // =============================================================================
 const SCORE_ZERO = {
   totalAnswered: 0, totalCorrect: 0, gamesPlayed: 0, totalPoints: 0,
-  dailyStreak: 0, lastDailyDate: null, lastDailyScore: null, lastDailyPoints: 0
+  dailyStreak: 0, lastDailyDate: null, lastDailyScore: null, lastDailyPoints: 0,
+  lastDailyAnswers: null, categoryStats: {},
+  prevDailyDate: null, prevDailyScore: null, prevDailyPoints: null, prevDailyAnswers: null
 };
+
+let cachedUsers = [];
 
 async function fetchUsers() {
   const snap = await db.collection('users').get();
   return snap.docs.map(d => ({ _docId: d.id, ...d.data() }));
 }
 
-async function resetUser(userId, userName) {
-  if (!confirm(`Reset ALL scores for ${userName}?\n\nThis clears: points, games, correct %, streak, daily history.\n\nThis cannot be undone.`)) return;
-  await db.collection('users').doc(userId).update(SCORE_ZERO);
+// Takes an index into cachedUsers rather than inline string args — names with
+// quotes/apostrophes would break an inline onclick handler.
+async function resetUser(idx) {
+  const u = cachedUsers[idx];
+  if (!u) return;
+  if (!confirm(`Reset ALL scores for ${u.name}?\n\nThis clears: points, games, correct %, streak, daily history.\n\nThis cannot be undone.`)) return;
+  await db.collection('users').doc(u._docId).update(SCORE_ZERO);
   loadUsers();
 }
 
@@ -234,6 +261,7 @@ async function loadUsers() {
   const out = document.getElementById('users-output');
   out.innerHTML = '<p class="meta">Loading…</p>';
   const users = await fetchUsers();
+  cachedUsers = users;
   if (!users.length) {
     out.innerHTML = '<p class="empty">No users found.</p>';
     return;
@@ -241,7 +269,7 @@ async function loadUsers() {
   let html = '<table><thead><tr>';
   html += '<th>Name</th><th>Games</th><th>Questions</th><th>Correct %</th><th>Points</th><th>Streak</th><th>Last Daily</th><th>Action</th>';
   html += '</tr></thead><tbody>';
-  users.forEach(u => {
+  users.forEach((u, i) => {
     const pct = u.totalAnswered ? Math.round(u.totalCorrect / u.totalAnswered * 100) + '%' : '—';
     const pts = (u.totalPoints || 0).toLocaleString();
     html += `<tr>
@@ -252,14 +280,14 @@ async function loadUsers() {
       <td style="color:#ffd700">${pts}</td>
       <td>${u.dailyStreak ? '🔥 ' + u.dailyStreak : '—'}</td>
       <td style="color:#888;font-size:11px">${u.lastDailyDate || '—'}</td>
-      <td><button class="danger" onclick="resetUser('${esc(u._docId)}','${esc(u.name)}')">Reset</button></td>
+      <td><button class="danger" onclick="resetUser(${i})">Reset</button></td>
     </tr>`;
   });
   html += '</tbody></table>';
   out.innerHTML = html;
 }
 
-loadFlags();
+buildShardMap().then(loadFlags);
 loadUsers();
 </script>
 </body>
