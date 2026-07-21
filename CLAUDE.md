@@ -60,51 +60,53 @@ Example line:
 
 **Dedup workflow (grep-first, mandatory):** Before writing any new question, grep all shards for 2–3 key terms from the topic. Because each question is one line, a Grep hit returns the entire question + all answers — eyeball it immediately to confirm it's a true duplicate or a distinct angle. Do not read whole shard files for dedup.
 
-**Current count:** 1,448 questions (IDs 1–1550, with ~102 gaps from removed duplicates/errors). Distribution (approximate — re-run count_topics.py for exact):
-- movies ~330, characters ~215, parks ~222, pixar ~210, walt ~160, music ~185, cruise ~126
+**Current count:** 1,332 questions (IDs 1–1550, with ~218 gaps from removed duplicates/errors — 116 near-duplicates removed in a 2026-07-21 dedup audit, see below). Distribution (exact, via count_topics.py):
+- movies 311, parks 203, pixar 191, characters 188, music 167, walt 150, cruise 122
 
 **Per-film coverage map** (questions that are *about* this film — correct answer or question text, not distractors). Saturated films (≥20) need a genuinely fresh angle before adding more. Well-covered (10–19) are fine for clearly distinct questions. Under-covered (<10) are welcome territory.
 
 | Film | Count | Status |
 |---|---|---|
-| Toy Story | 32 | Saturated |
-| The Lion King | 30 | Saturated |
-| Frozen | 28 | Saturated |
-| The Little Mermaid | 27 | Saturated |
+| Toy Story | 34 | Saturated |
+| Frozen | 30 | Saturated |
+| The Lion King | 29 | Saturated |
+| The Little Mermaid | 28 | Saturated |
 | Finding Nemo / Finding Dory | 23 | Saturated |
-| Beauty and the Beast | 22 | Saturated |
-| Aladdin | 22 | Saturated |
-| Moana | 18 | Well-covered |
-| Pocahontas | 18 | Well-covered |
+| Beauty and the Beast | 21 | Saturated |
+| Moana | 19 | Well-covered |
+| Aladdin | 19 | Well-covered |
+| Inside Out | 19 | Well-covered |
+| Pocahontas | 17 | Well-covered |
 | Encanto | 17 | Well-covered |
-| Mulan | 17 | Well-covered |
 | Tangled | 17 | Well-covered |
-| The Hunchback of Notre Dame | 17 | Well-covered |
-| Inside Out | 16 | Well-covered |
+| Mulan | 15 | Well-covered |
+| The Hunchback of Notre Dame | 15 | Well-covered |
 | Tarzan | 15 | Well-covered |
 | The Incredibles | 14 | Well-covered |
-| Monsters Inc. / Monsters University | 12 | Well-covered |
-| Brave | 12 | Well-covered |
-| Ratatouille | 11 | Well-covered |
-| WALL-E | 10 | Well-covered |
-| Cars | 10 | Well-covered |
-| Zootopia | ~11 | Well-covered |
-| Big Hero 6 | ~12 | Well-covered |
-| The Emperor's New Groove | ~13 | Well-covered |
-| Atlantis: The Lost Empire | ~10 | Well-covered |
-| Wreck-It Ralph | ~13 | Well-covered |
-| Coco | ~18 | Well-covered |
-| Soul | ~8 | Under-covered |
-| Inside Out 2 | ~10 | Well-covered |
-| Hercules | ~8 | Under-covered |
-| Up | ~11 | Well-covered |
-| Onward | ~7 | Under-covered |
-| A Bug's Life | 8 | Under-covered |
-| Turning Red | ~11 | Well-covered |
-| Luca | ~6 | Under-covered |
-| Elemental | ~8 | Under-covered |
+| The Emperor's New Groove | 13 | Well-covered |
+| Ratatouille | 12 | Well-covered |
+| Monsters Inc. / Monsters University | 11 | Well-covered |
+| Brave | 11 | Well-covered |
+| Cars | 11 | Well-covered |
+| Wreck-It Ralph | 11 | Well-covered |
+| Turning Red | 11 | Well-covered |
+| Big Hero 6 | 10 | Well-covered |
+| Atlantis: The Lost Empire | 10 | Well-covered |
+| WALL-E | 9 | Under-covered |
+| Zootopia | 9 | Under-covered |
+| Inside Out 2 | 8 | Under-covered |
+| Elemental | 8 | Under-covered |
+| A Bug's Life | 7 | Under-covered |
+| Hercules | 7 | Under-covered |
+| Soul | 7 | Under-covered |
+| Onward | 5 | Under-covered |
+| Luca | 5 | Under-covered |
+| Coco | 4 | Under-covered |
+| Up | 4 | Under-covered |
 
-This table is updated manually; re-run `scripts/count_topics.py` (see below) to regenerate it after large batches of additions.
+This table is updated manually; re-run `scripts/count_topics.py` (see below) to regenerate it after large batches of additions. Note: the script's keyword regexes only match question text + correct answer, and require fairly specific phrase co-occurrence (e.g. Coco requires `coco`+`pixar` or `miguel`+`guitar` etc. in the same string) — some films are likely undercounted relative to their true coverage; treat this table as a floor, not an exact census.
+
+**Duplicate audit (2026-07-21):** Players reported near-duplicate questions — same fact tested with reworded question text (not exact text matches). Ran a script-assisted audit: grouped all questions by normalized correct answer (ignoring honorifics/articles) plus a film/category-blocked word-overlap pass, then manually reviewed ~150 candidate clusters to separate true duplicates (same fact, reworded) from coincidental matches (different facts that happen to share an answer, e.g. two unrelated questions both answering "1971"). Removed 116 true duplicates, always keeping the better-worded/more-accurately-categorized copy. This is a one-time cleanup — the existing grep-first dedup workflow above remains the process for preventing new duplicates.
 
 **Removing a question:** Delete its object from the shard JSON. IDs do not need to be contiguous — gaps are fine.
 
