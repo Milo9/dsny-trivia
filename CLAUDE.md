@@ -60,53 +60,57 @@ Example line:
 
 **Dedup workflow (grep-first, mandatory):** Before writing any new question, grep all shards for 2–3 key terms from the topic. Because each question is one line, a Grep hit returns the entire question + all answers — eyeball it immediately to confirm it's a true duplicate or a distinct angle. Do not read whole shard files for dedup.
 
-**Current count:** 1,332 questions (IDs 1–1550, with ~218 gaps from removed duplicates/errors — 116 near-duplicates removed in a 2026-07-21 dedup audit, see below). Distribution (exact, via count_topics.py):
-- movies 311, parks 203, pixar 191, characters 188, music 167, walt 150, cruise 122
+**Current count:** 1,404 questions (IDs 1–1624, with gaps from removed duplicates/errors). Distribution (exact, via count_topics.py):
+- movies 322, characters 212, parks 205, pixar 203, music 174, walt 157, cruise 131
 
 **Per-film coverage map** (questions that are *about* this film — correct answer or question text, not distractors). Saturated films (≥20) need a genuinely fresh angle before adding more. Well-covered (10–19) are fine for clearly distinct questions. Under-covered (<10) are welcome territory.
 
 | Film | Count | Status |
 |---|---|---|
+| Frozen | 39 | Saturated* |
 | Toy Story | 34 | Saturated |
-| Frozen | 30 | Saturated |
-| The Lion King | 29 | Saturated |
+| The Lion King | 30 | Saturated |
 | The Little Mermaid | 28 | Saturated |
 | Finding Nemo / Finding Dory | 23 | Saturated |
+| Inside Out | 22 | Saturated* |
 | Beauty and the Beast | 21 | Saturated |
+| The Incredibles | 20 | Saturated* |
 | Moana | 19 | Well-covered |
 | Aladdin | 19 | Well-covered |
-| Inside Out | 19 | Well-covered |
 | Pocahontas | 17 | Well-covered |
 | Encanto | 17 | Well-covered |
 | Tangled | 17 | Well-covered |
 | Mulan | 15 | Well-covered |
 | The Hunchback of Notre Dame | 15 | Well-covered |
 | Tarzan | 15 | Well-covered |
-| The Incredibles | 14 | Well-covered |
+| Ratatouille | 15 | Well-covered |
+| Monsters Inc. / Monsters University | 13 | Well-covered |
 | The Emperor's New Groove | 13 | Well-covered |
-| Ratatouille | 12 | Well-covered |
-| Monsters Inc. / Monsters University | 11 | Well-covered |
+| WALL-E | 12 | Well-covered |
 | Brave | 11 | Well-covered |
 | Cars | 11 | Well-covered |
+| Zootopia | 11 | Well-covered |
 | Wreck-It Ralph | 11 | Well-covered |
+| Inside Out 2 | 11 | Well-covered |
 | Turning Red | 11 | Well-covered |
+| Elemental | 11 | Well-covered |
 | Big Hero 6 | 10 | Well-covered |
+| A Bug's Life | 10 | Well-covered |
 | Atlantis: The Lost Empire | 10 | Well-covered |
-| WALL-E | 9 | Under-covered |
-| Zootopia | 9 | Under-covered |
-| Inside Out 2 | 8 | Under-covered |
-| Elemental | 8 | Under-covered |
-| A Bug's Life | 7 | Under-covered |
+| Soul | 8 | Under-covered |
 | Hercules | 7 | Under-covered |
-| Soul | 7 | Under-covered |
+| Luca | 6 | Under-covered |
 | Onward | 5 | Under-covered |
-| Luca | 5 | Under-covered |
 | Coco | 4 | Under-covered |
 | Up | 4 | Under-covered |
+
+\* The script's `Frozen`/`Inside Out`/`Incredibles` regexes also match `Frozen 2`/`Inside Out 2`/`Incredibles 2` mentions (no sequel-exclusion in the pattern), so these three rows overstate the original film's own coverage — treat them as "franchise total," not "saturated, don't touch," when deciding whether a fresh angle on the *first* film is welcome.
 
 This table is updated manually; re-run `scripts/count_topics.py` (see below) to regenerate it after large batches of additions. Note: the script's keyword regexes only match question text + correct answer, and require fairly specific phrase co-occurrence (e.g. Coco requires `coco`+`pixar` or `miguel`+`guitar` etc. in the same string) — some films are likely undercounted relative to their true coverage; treat this table as a floor, not an exact census.
 
 **Duplicate audit (2026-07-21):** Players reported near-duplicate questions — same fact tested with reworded question text (not exact text matches). Ran a script-assisted audit: grouped all questions by normalized correct answer (ignoring honorifics/articles) plus a film/category-blocked word-overlap pass, then manually reviewed ~150 candidate clusters to separate true duplicates (same fact, reworded) from coincidental matches (different facts that happen to share an answer, e.g. two unrelated questions both answering "1971"). Removed 116 true duplicates, always keeping the better-worded/more-accurately-categorized copy. This is a one-time cleanup — the existing grep-first dedup workflow above remains the process for preventing new duplicates.
+
+**Content expansion (2026-07-21):** Added 72 new questions (IDs 1553–1624, gaps intentional) after discovering the bank is far more comprehensively mined than raw per-film counts suggest — grepping candidate films before drafting repeatedly turned up existing coverage of the "obvious" facts, even for films the coverage table shows as under-covered. The effective workflow that worked: grep/dump existing coverage for a whole category or film *before* drafting a single question (not after), harvest only facts you're fully certain of, and WebSearch-verify anything post-2023 (new cruise ships, recent park changes) rather than guessing. A dedup pass (answer-normalized, new-vs-new and new-vs-existing) at the end caught 3 genuine duplicates a per-topic grep had missed. This is why the batch landed at 72 rather than a pre-set target — see the deploy notes/commit for the honest accounting.
 
 **Removing a question:** Delete its object from the shard JSON. IDs do not need to be contiguous — gaps are fine.
 
