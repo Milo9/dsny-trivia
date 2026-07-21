@@ -19,7 +19,8 @@ A static single-page trivia app built for Kristen and Cara to practice before a 
 | `questions/q-003.json` | Questions 501–799 (222 active; gaps from audit and dedup passes). |
 | `questions/q-004.json` | Questions 801–1050 (246 active). |
 | `questions/q-005.json` | Questions 1051–1300 (247 active). |
-| `questions/q-006.json` | Questions 1302–1550 (239 active). |
+| `questions/q-006.json` | Questions 1302–2017 (250 active). |
+| `questions/q-007.json` | Questions 2018–2135 (118 active). |
 | `movies.json` | Weekly Homework movie pool — flat array of `{id, title, year, studio}`, Disney animated + Pixar canon. Fetched by `app.js` at boot alongside questions. |
 | `review.html` | Standalone admin page for reviewing flagged questions. Shares the same Firestore `flags` collection. |
 | `scripts/count_topics.py` | Counts questions per Disney/Pixar film (question + correct answer only, not distractors). Run from project root: `python scripts/count_topics.py`. Re-run after large batches of additions to update the Per-film coverage map in this file. |
@@ -56,41 +57,41 @@ Example line:
 {"id": 1, "question": "What color is Cinderella's iconic ball gown?", "answers": ["Blue", "Pink", "Yellow", "White"], "difficulty": "easy", "category": "movies"},
 ```
 
-**Adding questions:** Append to the last shard (`questions/q-006.json` is current), one object per line, no pretty-printing. Use the next available integer ID (1551+). Correct answer must be at index 0. When a shard reaches ~250 questions, create the next shard (`q-007.json`, etc.) and add it to `questions/manifest.json` — no change to `index.html` needed.
+**Adding questions:** Append to the last shard (`questions/q-007.json` is current), one object per line, no pretty-printing. Use the next available integer ID (2136+). Correct answer must be at index 0. When a shard reaches ~250 questions, create the next shard (`q-008.json`, etc.) and add it to `questions/manifest.json` — no change to `index.html` needed.
 
 **Dedup workflow (grep-first, mandatory):** Before writing any new question, grep all shards for 2–3 key terms from the topic. Because each question is one line, a Grep hit returns the entire question + all answers — eyeball it immediately to confirm it's a true duplicate or a distinct angle. Do not read whole shard files for dedup.
 
-**Current count:** 1,404 questions (IDs 1–1624, with gaps from removed duplicates/errors). Distribution (exact, via count_topics.py):
-- movies 322, characters 212, parks 205, pixar 203, music 174, walt 157, cruise 131
+**Current count:** 1,539 questions (IDs 1–2135, with gaps from removed duplicates/errors). Distribution (exact, via count_topics.py):
+- movies 366, characters 269, pixar 215, parks 209, music 179, walt 168, cruise 133
 
-**Per-film coverage map** (questions that are *about* this film — correct answer or question text, not distractors). Saturated films (≥20) need a genuinely fresh angle before adding more. Well-covered (10–19) are fine for clearly distinct questions. Under-covered (<10) are welcome territory.
+**Per-film coverage map** (questions that are *about* this film — correct answer or question text, not distractors). **The counts below are a rough signal, not a cap.** A film at 30 can still take a 31st question if the fact is genuinely un-asked — the real gate is always "is this a distinct fact, verified against a grep of the existing stems," never "is the count already high." Treat "Saturated" as "the obvious tier-1 facts are probably taken, go deeper (secondary characters, specific scenes/songs, production trivia, direct-to-video sequels, shorts) rather than skip the film," not as "stop." Under-covered rows are just as likely to reflect the count_topics.py regex undercounting (see note below) as genuinely thin coverage — grep the real stems before assuming either way.
 
 | Film | Count | Status |
 |---|---|---|
-| Frozen | 39 | Saturated* |
-| Toy Story | 34 | Saturated |
-| The Lion King | 30 | Saturated |
-| The Little Mermaid | 28 | Saturated |
+| Frozen | 46 | Saturated* |
+| Toy Story | 40 | Saturated* |
+| The Lion King | 35 | Saturated* |
+| The Little Mermaid | 31 | Saturated* |
+| Aladdin | 29 | Saturated* |
+| Beauty and the Beast | 28 | Saturated* |
 | Finding Nemo / Finding Dory | 23 | Saturated |
+| Moana | 22 | Saturated* |
 | Inside Out | 22 | Saturated* |
-| Beauty and the Beast | 21 | Saturated |
+| Pocahontas | 20 | Saturated* |
 | The Incredibles | 20 | Saturated* |
-| Moana | 19 | Well-covered |
-| Aladdin | 19 | Well-covered |
-| Pocahontas | 17 | Well-covered |
+| Tangled | 19 | Well-covered |
+| Mulan | 18 | Well-covered* |
+| The Hunchback of Notre Dame | 18 | Well-covered* |
 | Encanto | 17 | Well-covered |
-| Tangled | 17 | Well-covered |
-| Mulan | 15 | Well-covered |
-| The Hunchback of Notre Dame | 15 | Well-covered |
-| Tarzan | 15 | Well-covered |
+| Tarzan | 17 | Well-covered* |
+| The Emperor's New Groove | 16 | Well-covered* |
 | Ratatouille | 15 | Well-covered |
-| Monsters Inc. / Monsters University | 13 | Well-covered |
-| The Emperor's New Groove | 13 | Well-covered |
+| Monsters Inc. / Monsters University | 15 | Well-covered |
+| Wreck-It Ralph | 15 | Well-covered* |
 | WALL-E | 12 | Well-covered |
+| Cars | 12 | Well-covered* |
 | Brave | 11 | Well-covered |
-| Cars | 11 | Well-covered |
 | Zootopia | 11 | Well-covered |
-| Wreck-It Ralph | 11 | Well-covered |
 | Inside Out 2 | 11 | Well-covered |
 | Turning Red | 11 | Well-covered |
 | Elemental | 11 | Well-covered |
@@ -99,16 +100,18 @@ Example line:
 | Atlantis: The Lost Empire | 10 | Well-covered |
 | Soul | 8 | Under-covered |
 | Hercules | 7 | Under-covered |
-| Luca | 6 | Under-covered |
 | Onward | 5 | Under-covered |
+| Luca | 5 | Under-covered |
 | Coco | 4 | Under-covered |
 | Up | 4 | Under-covered |
 
-\* The script's `Frozen`/`Inside Out`/`Incredibles` regexes also match `Frozen 2`/`Inside Out 2`/`Incredibles 2` mentions (no sequel-exclusion in the pattern), so these three rows overstate the original film's own coverage — treat them as "franchise total," not "saturated, don't touch," when deciding whether a fresh angle on the *first* film is welcome.
+\* These rows count a whole franchise, not just the named film — the script's regex has no sequel-exclusion, so a row like "Aladdin" also picks up its direct-to-video sequels (The Return of Jafar, Aladdin and the King of Thieves), "Pocahontas" picks up Pocahontas II, "Moana" picks up Moana 2, "Frozen"/"Inside Out"/"Incredibles"/"Tangled...Toy Story" etc. all pick up their numbered sequels and shorts the same way. Treat these as "franchise total," not "the original film is saturated, don't touch" — a direct-to-video sequel or short with near-zero prior coverage is still wide open even when the row above it says Saturated.
 
 This table is updated manually; re-run `scripts/count_topics.py` (see below) to regenerate it after large batches of additions. Note: the script's keyword regexes only match question text + correct answer, and require fairly specific phrase co-occurrence (e.g. Coco requires `coco`+`pixar` or `miguel`+`guitar` etc. in the same string) — some films are likely undercounted relative to their true coverage; treat this table as a floor, not an exact census.
 
 **Duplicate audit (2026-07-21):** Players reported near-duplicate questions — same fact tested with reworded question text (not exact text matches). Ran a script-assisted audit: grouped all questions by normalized correct answer (ignoring honorifics/articles) plus a film/category-blocked word-overlap pass, then manually reviewed ~150 candidate clusters to separate true duplicates (same fact, reworded) from coincidental matches (different facts that happen to share an answer, e.g. two unrelated questions both answering "1971"). Removed 116 true duplicates, always keeping the better-worded/more-accurately-categorized copy. This is a one-time cleanup — the existing grep-first dedup workflow above remains the process for preventing new duplicates.
+
+**Content generation strategy (2026-07-21, revised same day):** An initial attempt to add 250 questions from memory recall landed at only 72 clean ones — memory of "obvious" facts per film runs out fast in a bank this size. Revised approach, which then added a further 135 questions cleanly in one sitting: **generate WebSearch-primary, not memory-primary.** Research a film/topic's plot, characters, and production details via search, then harvest the facts not already in the bank from that same reading — the source you're reading from doubles as the verification, so this is nearly free of the hallucination risk memory-only drafting carries. One search reliably yields enough material for 5–10 questions. The richest under-mined veins turned out to be: direct-to-video sequels (The Lion King II, Return of Jafar/King of Thieves, Little Mermaid II, Mulan II, Pocahontas II, Hunchback II, Cinderella III, Brother Bear 2, 101 Dalmatians II, Jungle Book 2, Tarzan II, Fox and the Hound 2, Kronk's New Groove, Bambi II — nearly all had zero prior coverage), theatrical shorts (Frozen Fever, Olaf's Frozen Adventure, Geri's Game, Piper, Bao), classic package-film segments (Three Caballeros, Fun and Fancy Free, Fantasia/Fantasia 2000 segments beyond the two or three already covered), specific songs that only ever appeared as wrong-answer distractors and were never the actual target of a question, and verified post-2023 park/cruise facts. Still corroborate surprising specifics (dates, "first/only" claims, exact figures) — two invented-sounding facts were caught and fixed this way before deploy (see git log). The dedup gate is unchanged and non-negotiable: recon-first grep, then an end-of-batch answer-normalized pass covering new-vs-new AND new-vs-existing, PLUS an ignore-thresholds same-answer0 dump (a real duplicate — WALL-E's Axiom ship name — slipped past the thresholded pass in the first round and was only caught this way).
 
 **Content expansion (2026-07-21):** Added 72 new questions (IDs 1553–1624, gaps intentional) after discovering the bank is far more comprehensively mined than raw per-film counts suggest — grepping candidate films before drafting repeatedly turned up existing coverage of the "obvious" facts, even for films the coverage table shows as under-covered. The effective workflow that worked: grep/dump existing coverage for a whole category or film *before* drafting a single question (not after), harvest only facts you're fully certain of, and WebSearch-verify anything post-2023 (new cruise ships, recent park changes) rather than guessing. A dedup pass (answer-normalized, new-vs-new and new-vs-existing) at the end caught 3 genuine duplicates a per-topic grep had missed. This is why the batch landed at 72 rather than a pre-set target — see the deploy notes/commit for the honest accounting.
 
