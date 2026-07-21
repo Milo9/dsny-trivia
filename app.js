@@ -1,4 +1,4 @@
-const APP_VERSION = '1.17';
+const APP_VERSION = '1.18';
 
 // =============================================================================
 // State
@@ -672,7 +672,17 @@ document.getElementById('btn-daily-challenge').addEventListener('click', async (
     const pinnedIds = await storage.getDailyPins(today);
     if (pinnedIds && pinnedIds.length > 0) {
       const qMap = new Map(QUESTIONS.map(q => [q.id, q]));
-      const qs = pinnedIds.map(id => qMap.get(id)).filter(Boolean);
+      let qs = pinnedIds.map(id => qMap.get(id)).filter(Boolean);
+      // Some pinned IDs may have been removed from the shards (e.g. a dedup
+      // pass) since this day's pins were first written — top back up to the
+      // original count from the live pool and re-save so later players/review
+      // see a consistent, full-length set.
+      if (qs.length > 0 && qs.length < pinnedIds.length) {
+        const usedIds = new Set(qs.map(q => q.id));
+        const extras = shuffle(QUESTIONS.filter(q => !usedIds.has(q.id))).slice(0, pinnedIds.length - qs.length);
+        qs = qs.concat(extras);
+        try { await storage.saveDailyPins(today, qs.map(q => q.id)); } catch(e) {}
+      }
       if (qs.length > 0) questions = qs;
     }
   } catch(e) {}

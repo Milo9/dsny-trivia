@@ -188,7 +188,7 @@ The app is hosted on GitHub Pages from the `main` branch. Use the deploy script:
 
 `deploy.ps1` stages all changes, commits, and pushes in one step. Omitting `-Message` defaults to `"update app"`. GitHub Pages redeploys automatically within ~1 minute.
 
-**Cache-busting for code files:** `index.html` loads `style.css`, `storage.js`, and `app.js` with a `?v=` query string matching `APP_VERSION` (currently 1.17). When making code changes, bump `APP_VERSION` in `app.js` **and** update the matching `?v=` strings in `index.html` so browsers discard their cached copies. Question shard files and `movies.json` (fetched via `fetch()`) use `{ cache: 'no-cache' }` and don't need manual versioning.
+**Cache-busting for code files:** `index.html` loads `style.css`, `storage.js`, and `app.js` with a `?v=` query string matching `APP_VERSION` (currently 1.18). When making code changes, bump `APP_VERSION` in `app.js` **and** update the matching `?v=` strings in `index.html` so browsers discard their cached copies. Question shard files and `movies.json` (fetched via `fetch()`) use `{ cache: 'no-cache' }` and don't need manual versioning.
 
 **Manual fallback:**
 ```
@@ -200,6 +200,7 @@ A second game mode accessible from the settings screen. Always 10 questions, all
 
 - Date key: `"YYYY-MM-DD"` via `dayKey(daysAgo=0)` (or the `todayKey()` wrapper), which subtracts 8h from UTC so the day rolls over at 2am MDT (Mountain Daylight Time) = 4am EDT. This ensures both Eastern and Alberta players always share the same question set. `dayKey(1)` gives yesterday using the same offset — do not compute yesterday via string arithmetic.
 - **Pinned question IDs**: When the first player starts the daily challenge, the 10 question IDs are written to `dailies/{dateKey}` in Firestore. Every subsequent player (and the review screen) reads from this doc, so everyone plays the same questions regardless of question deploys that happen later in the day. `getDailyPins(dateKey)` / `saveDailyPins(dateKey, ids)` in `storage.js`.
+  - If a pinned ID no longer exists in the shards by the time someone reads it (e.g. it was removed as a duplicate after being pinned), the game-start handler backfills the missing slot(s) from the live pool and re-saves the pins so the day stays at its original count; the review screen instead just omits the missing question (it can't reconstruct what a removed question's text/choices were, so a day whose pins referenced a since-deleted question may show fewer than 10 entries in review — this is expected, not a bug).
 - Seed: `dateToSeed(key)` hashes the string; `seededShuffle()` uses an inline mulberry32 step
 - Questions are stable-sorted by `id` before shuffling so shard load order doesn't affect results
 - Streak (`dailyStreak`, `lastDailyDate`) stored in Firestore on the user doc — cross-device
