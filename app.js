@@ -1,4 +1,4 @@
-const APP_VERSION = '1.20';
+const APP_VERSION = '1.21';
 
 // =============================================================================
 // State
@@ -679,11 +679,20 @@ function renderSettings() {
   const statusEl = document.getElementById('daily-status');
   const btn      = document.getElementById('btn-daily-challenge');
 
+  const progress = getDailyProgress(currentUser.id);
+  const resumeCount = (!played && progress && progress.dateKey === today && Array.isArray(progress.answers))
+    ? progress.answers.length : 0;
+
   if (played) {
     statusEl.textContent = `✓ Played today · 🔥 ${streak} day streak`;
     statusEl.className   = 'daily-status daily-done';
     btn.textContent      = '📋 Review Today\'s Questions';
     btn.classList.add('done');
+  } else if (resumeCount > 0) {
+    statusEl.textContent = `▶️ ${resumeCount} of 10 answered — pick up where you left off`;
+    statusEl.className   = 'daily-status daily-active';
+    btn.textContent      = `▶️ Resume Daily Challenge (${resumeCount}/10)`;
+    btn.classList.remove('done');
   } else if (streak > 0) {
     statusEl.textContent = `🔥 ${streak} day streak — keep it going!`;
     statusEl.className   = 'daily-status daily-active';
@@ -1027,6 +1036,12 @@ async function submitFlag() {
 // RESULTS SCREEN
 // =============================================================================
 async function endGame() {
+  // Guards against double-committing stats — a double-click on the final
+  // "See Results" tap, or two near-simultaneous "resume already-complete
+  // daily" calls, would otherwise both race storage.updateStats().
+  if (gameState.ended) return;
+  gameState.ended = true;
+
   const today             = todayKey();
   const isFirstDailyToday = gameState.isDaily && currentUser.lastDailyDate !== today;
 
