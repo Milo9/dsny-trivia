@@ -23,7 +23,12 @@ A static single-page trivia app built for Kristen and Cara to practice before a 
 | `questions/q-007.json` | Questions 2018–2135 (118 active). |
 | `movies.json` | Weekly Homework movie pool — flat array of `{id, title, year, studio}`, Disney animated + Pixar canon. Fetched by `app.js` at boot alongside questions. |
 | `review.html` | Standalone admin page for reviewing flagged questions. Shares the same Firestore `flags` collection. |
-| `scripts/count_topics.py` | Counts questions per Disney/Pixar film (question + correct answer only, not distractors). Run from project root: `python scripts/count_topics.py`. Re-run after large batches of additions to update the Per-film coverage map in this file. |
+| `scripts/count_topics.py` | Counts questions per Disney/Pixar film (question + correct answer only, not distractors); parent-film counts exclude sequel/short matches, which are reported separately. Run from project root: `python scripts/count_topics.py`. Re-run after large batches of additions to update the Per-film coverage map in this file. |
+| `scripts/_common.py` | Shared helpers (corpus loader, text normalization, the `SEQUELS_AND_SHORTS` registry) used by the scripts below. Not run directly. |
+| `scripts/recon.py` | Compact `id + question` dump for a keyword/film — token-cheap alternative to reading full Grep hits during pre-draft recon. See Question-Bank Tooling below. |
+| `scripts/find_gaps.py` | Novelty gap-finder: distractor-only entities and sequel/short coverage, lowest-covered first. See Question-Bank Tooling below. |
+| `scripts/find_near_dupes.py` | Lexical near-duplicate detector, whole-corpus or `--new` against a draft batch. See Question-Bank Tooling below. |
+| `scripts/validate_batch.py` | Pre-append sanity check for a drafted batch (IDs, enums, exact dupes, answer-format heuristics). See Question-Bank Tooling below. |
 
 ## The 6 Screens
 Screens are `<div class="screen">` elements that get `.hidden` toggled. Only one is visible at a time. Navigation is handled by `showScreen(id)` in `app.js`.
@@ -59,7 +64,7 @@ Example line:
 
 **Adding questions:** Append to the last shard (`questions/q-007.json` is current), one object per line, no pretty-printing. Use the next available integer ID (2136+). Correct answer must be at index 0. When a shard reaches ~250 questions, create the next shard (`q-008.json`, etc.) and add it to `questions/manifest.json` — no change to `index.html` needed.
 
-**Dedup workflow (grep-first, mandatory):** Before writing any new question, grep all shards for 2–3 key terms from the topic. Because each question is one line, a Grep hit returns the entire question + all answers — eyeball it immediately to confirm it's a true duplicate or a distinct angle. Do not read whole shard files for dedup.
+**Dedup workflow (grep-first, mandatory):** Before writing any new question, grep all shards for 2–3 key terms from the topic (or use `scripts/recon.py`, which does the same search but prints a compact one-line-per-question digest instead of full Grep hits — cheaper to read for a saturated film). Because each question is one line, a Grep hit returns the entire question + all answers — eyeball it immediately to confirm it's a true duplicate or a distinct angle. Do not read whole shard files for dedup. Before appending a drafted batch, run `scripts/validate_batch.py` (format/enum/exact-dup checks) and `scripts/find_near_dupes.py --new` (lexical near-duplicate check, new-vs-existing and new-vs-new) — see Question-Bank Tooling below for the full workflow.
 
 **Current count:** 1,539 questions (IDs 1–2135, with gaps from removed duplicates/errors). Distribution (exact, via count_topics.py):
 - movies 366, characters 269, pixar 215, parks 209, music 179, walt 168, cruise 133
@@ -68,46 +73,52 @@ Example line:
 
 | Film | Count | Status |
 |---|---|---|
-| Frozen | 46 | Saturated* |
-| Toy Story | 40 | Saturated* |
-| The Lion King | 35 | Saturated* |
-| The Little Mermaid | 31 | Saturated* |
-| Aladdin | 29 | Saturated* |
-| Beauty and the Beast | 28 | Saturated* |
+| Frozen | 42 | Saturated |
+| Toy Story | 40 | Saturated |
+| The Lion King | 29 | Saturated |
+| Beauty and the Beast | 28 | Saturated |
+| The Little Mermaid | 28 | Saturated |
+| Cinderella | 24 | Saturated |
 | Finding Nemo / Finding Dory | 23 | Saturated |
-| Moana | 22 | Saturated* |
-| Inside Out | 22 | Saturated* |
-| Pocahontas | 20 | Saturated* |
-| The Incredibles | 20 | Saturated* |
+| Aladdin | 23 | Saturated |
+| Moana | 22 | Saturated |
+| Inside Out | 22 | Saturated |
+| The Incredibles | 20 | Saturated |
 | Tangled | 19 | Well-covered |
-| Mulan | 18 | Well-covered* |
-| The Hunchback of Notre Dame | 18 | Well-covered* |
+| Pocahontas | 17 | Well-covered |
 | Encanto | 17 | Well-covered |
-| Tarzan | 17 | Well-covered* |
-| The Emperor's New Groove | 16 | Well-covered* |
+| The Emperor's New Groove | 16 | Well-covered |
+| The Jungle Book | 16 | Well-covered |
+| Mulan | 15 | Well-covered |
+| The Hunchback of Notre Dame | 15 | Well-covered |
+| Tarzan | 15 | Well-covered |
 | Ratatouille | 15 | Well-covered |
 | Monsters Inc. / Monsters University | 15 | Well-covered |
-| Wreck-It Ralph | 15 | Well-covered* |
+| Wreck-It Ralph | 15 | Well-covered |
 | WALL-E | 12 | Well-covered |
-| Cars | 12 | Well-covered* |
+| Cars | 12 | Well-covered |
 | Brave | 11 | Well-covered |
 | Zootopia | 11 | Well-covered |
 | Inside Out 2 | 11 | Well-covered |
 | Turning Red | 11 | Well-covered |
 | Elemental | 11 | Well-covered |
+| 101 Dalmatians | 11 | Well-covered |
 | Big Hero 6 | 10 | Well-covered |
 | A Bug's Life | 10 | Well-covered |
 | Atlantis: The Lost Empire | 10 | Well-covered |
+| Bambi | 9 | Under-covered |
+| Brother Bear | 9 | Under-covered |
 | Soul | 8 | Under-covered |
 | Hercules | 7 | Under-covered |
+| The Fox and the Hound | 6 | Under-covered |
 | Onward | 5 | Under-covered |
 | Luca | 5 | Under-covered |
 | Coco | 4 | Under-covered |
 | Up | 4 | Under-covered |
 
-\* These rows count a whole franchise, not just the named film — the script's regex has no sequel-exclusion, so a row like "Aladdin" also picks up its direct-to-video sequels (The Return of Jafar, Aladdin and the King of Thieves), "Pocahontas" picks up Pocahontas II, "Moana" picks up Moana 2, "Frozen"/"Inside Out"/"Incredibles"/"Tangled...Toy Story" etc. all pick up their numbered sequels and shorts the same way. Treat these as "franchise total," not "the original film is saturated, don't touch" — a direct-to-video sequel or short with near-zero prior coverage is still wide open even when the row above it says Saturated.
+These counts still fold numbered theatrical sequels into their parent row (Frozen includes Frozen II, Toy Story includes 2–4, etc.) since that's one continuously-active franchise, not a stale catalog title. **Direct-to-video sequels and shorts are excluded from the parent row and tracked separately** — run `python scripts/count_topics.py` for their counts or `python scripts/find_gaps.py --sequels` for the same list sorted lowest-coverage-first. A direct-to-video sequel or short at or near zero is wide open even when the row above it says Saturated; see `scripts/_common.py:SEQUELS_AND_SHORTS` for the tracked list (Lion King II, Return of Jafar, King of Thieves, Little Mermaid II, Mulan II, Pocahontas II, Hunchback II, Cinderella II/III, Brother Bear 2, 101 Dalmatians II, Jungle Book 2, Tarzan II, Fox and the Hound 2, Kronk's New Groove, Bambi II, Frozen Fever, Olaf's Frozen Adventure, Geri's Game, Piper, Bao).
 
-This table is updated manually; re-run `scripts/count_topics.py` (see below) to regenerate it after large batches of additions. Note: the script's keyword regexes only match question text + correct answer, and require fairly specific phrase co-occurrence (e.g. Coco requires `coco`+`pixar` or `miguel`+`guitar` etc. in the same string) — some films are likely undercounted relative to their true coverage; treat this table as a floor, not an exact census.
+This table is updated manually; re-run `scripts/count_topics.py` to regenerate it after large batches of additions. Note: the script's keyword regexes only match question text + correct answer, and require fairly specific phrase co-occurrence (e.g. Coco requires `coco`+`pixar` or `miguel`+`guitar` etc. in the same string) — some films are likely undercounted relative to their true coverage; treat this table as a floor, not an exact census.
 
 **Duplicate audit (2026-07-21):** Players reported near-duplicate questions — same fact tested with reworded question text (not exact text matches). Ran a script-assisted audit: grouped all questions by normalized correct answer (ignoring honorifics/articles) plus a film/category-blocked word-overlap pass, then manually reviewed ~150 candidate clusters to separate true duplicates (same fact, reworded) from coincidental matches (different facts that happen to share an answer, e.g. two unrelated questions both answering "1971"). Removed 116 true duplicates, always keeping the better-worded/more-accurately-categorized copy. This is a one-time cleanup — the existing grep-first dedup workflow above remains the process for preventing new duplicates.
 
@@ -118,6 +129,19 @@ This table is updated manually; re-run `scripts/count_topics.py` (see below) to 
 **Removing a question:** Delete its object from the shard JSON. IDs do not need to be contiguous — gaps are fine.
 
 **Local testing note:** `fetch()` is blocked on `file://`. Run a local server to test (`python -m http.server 8000`). On GitHub Pages it works fine.
+
+## Question-Bank Tooling (scripts/)
+All scripts are read-only against the shards — they print reports/candidates for a human to eyeball, they never edit shard JSON (adding/removing a question is still always a manual shard edit, per the rule below). Run from the project root with `python scripts/<name>.py`.
+
+| Script | Purpose |
+|---|---|
+| `recon.py <regex>` | `id + question` dump for a keyword/film — the token-cheap replacement for reading full Grep hits during the mandatory pre-draft recon pass. `--all-fields` also searches wrong answers; `--show-answer` includes the correct answer. |
+| `find_gaps.py` | Two novelty reports: distractor-only entities (names/terms that have appeared as a wrong answer but never as a correct one — candidate seeds for new questions) and sequel/short coverage counts, lowest first. Run before drafting to find genuinely unmined material instead of relying on memory for what's "obviously" missing. `--distractors` / `--sequels` isolates one report; `--min-count`/`--limit` tune the distractor report (expect some noise — generic words and colors show up; it's advisory, not a verdict). |
+| `find_near_dupes.py` | Lexical near-duplicate detector. No args = whole-corpus self-audit (same method as the 2026-07-21 audit below, but scriptable/repeatable). `--new drafts.json` checks a drafted batch against the existing corpus and against itself before appending. Two passes: question-text Jaccard similarity (`--threshold`, default 0.5) catches reworded restatements; same-normalized-answer grouping catches same-fact-different-wording that a text-similarity threshold can miss. Catches lexical overlap only — semantically-equivalent questions with low word overlap still need a human read. Always eyeball flagged pairs; a shared answer or wording doesn't automatically mean duplicate (e.g. two different songs both answering "Pocahontas"). |
+| `validate_batch.py drafts.json` | Pre-append sanity check: valid JSON, ID collisions (against the corpus and within the batch), next-available-ID, category/difficulty enum membership, exact-duplicate question text, and advisory heuristics for the Answer structure rules below (sentence-like answers, answer text leaking into the question). Exits non-zero on errors. |
+| `count_topics.py` | Per-film coverage counts — see Per-film coverage map below. |
+
+**Recommended batch workflow:** `recon.py` (and/or `find_gaps.py` for topic ideas) to confirm a fact isn't already covered → draft the batch as a scratch JSON file → `validate_batch.py` → `find_near_dupes.py --new` → append the survivors to the current shard, bump IDs/counts in this file.
 
 ## Storage Layer — Firebase (active)
 User stats and flags are stored in **Firestore**, project `disneytrivia-38ac6`.
