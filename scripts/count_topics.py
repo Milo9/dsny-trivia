@@ -73,17 +73,15 @@ for entry in SEQUELS_AND_SHORTS:
     if entry['parent']:
         children_by_parent.setdefault(entry['parent'], []).append(entry['pattern'])
 
+haystacks = [(q, q['question'] + ' ' + q['answers'][0]) for q in all_questions]
+
 film_counts = []
 for film, pattern in film_keywords.items():
-    haystacks = [(q, q['question'] + ' ' + q['answers'][0]) for q in all_questions]
-    matched = [q for q, h in haystacks if re.search(pattern, h, re.IGNORECASE)]
+    matched = [(q, h) for q, h in haystacks if re.search(pattern, h, re.IGNORECASE)]
     child_patterns = children_by_parent.get(film)
     if child_patterns:
         combined_child = '|'.join(f'(?:{p})' for p in child_patterns)
-        matched = [
-            q for q in matched
-            if not re.search(combined_child, q['question'] + ' ' + q['answers'][0], re.IGNORECASE)
-        ]
+        matched = [(q, h) for q, h in matched if not re.search(combined_child, h, re.IGNORECASE)]
     film_counts.append((film, len(matched)))
 
 film_counts.sort(key=lambda x: -x[1])
@@ -97,10 +95,7 @@ print(f'\n{"Sequel / Short":<42} {"Count":>5}  {"Status"}')
 print('-' * 65)
 seq_counts = []
 for entry in SEQUELS_AND_SHORTS:
-    count = sum(
-        1 for q in all_questions
-        if re.search(entry['pattern'], q['question'] + ' ' + q['answers'][0], re.IGNORECASE)
-    )
+    count = sum(1 for q, h in haystacks if re.search(entry['pattern'], h, re.IGNORECASE))
     seq_counts.append((entry['title'], count))
 seq_counts.sort(key=lambda x: -x[1])
 for title, count in seq_counts:

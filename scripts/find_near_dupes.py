@@ -11,7 +11,11 @@ Two passes, mirroring the method used in the 2026-07-21 dedup audit:
      dumped regardless of question-text similarity. This is the
      "same answer, different framing" case a similarity threshold can miss
      (this is how the WALL-E Axiom duplicate slipped past the thresholded
-     pass in the original audit).
+     pass in the original audit). In whole-corpus mode, groups larger than
+     --max-group-size are skipped (usually just a common name). In --new
+     mode that cap is NOT applied, since output is already scoped to groups
+     touching the draft -- capping there would silently hide the exact case
+     this pass exists to catch.
 
 Usage:
   python scripts/find_near_dupes.py                    # whole-corpus self-audit
@@ -45,19 +49,15 @@ def find_similar_pairs(pool_a, pool_b, threshold, same_pool):
             index[t].append(j)
 
     results = []
-    seen_pairs = set()
     for i, toks_a in enumerate(tokens_a):
         candidates = set()
         for t in toks_a:
             candidates.update(index[t])
         for j in candidates:
+            # j <= i already guarantees each unordered pair is visited once
+            # in same_pool mode, so no separate seen-pairs tracking is needed.
             if same_pool and j <= i:
                 continue
-            key = (i, j)
-            if same_pool:
-                if key in seen_pairs:
-                    continue
-                seen_pairs.add(key)
             score = jaccard(toks_a, tokens_b[j])
             if score >= threshold:
                 results.append((score, pool_a[i], pool_b[j]))
@@ -66,8 +66,14 @@ def find_similar_pairs(pool_a, pool_b, threshold, same_pool):
 
 
 def group_by_answer(pool, max_group_size, require_from=None):
-    """Group questions by normalized answers[0]; return groups sized 2..max.
-    If require_from is given, only return groups with >=1 member from it."""
+    """Group questions by normalized answers[0]; return groups sized >=2.
+    If require_from is given, only return groups with >=1 member from it, and
+    max_group_size is NOT applied -- require_from already keeps the output
+    scoped to the draft, so the cap would otherwise silently drop exactly the
+    "draft answer matches a common existing answer" case this pass exists to
+    catch. Without require_from (whole-corpus self-audit), groups above
+    max_group_size are dropped since they're usually a common name, not a
+    duplicate cluster."""
     groups = defaultdict(list)
     for q in pool:
         norm = normalize_answer(q["answers"][0])
@@ -78,9 +84,12 @@ def group_by_answer(pool, max_group_size, require_from=None):
     require_ids = {id(q) for q in require_from} if require_from is not None else None
     flagged = {}
     for norm, members in groups.items():
-        if not (2 <= len(members) <= max_group_size):
+        if len(members) < 2:
             continue
-        if require_ids is not None and not any(id(m) in require_ids for m in members):
+        if require_ids is not None:
+            if not any(id(m) in require_ids for m in members):
+                continue
+        elif len(members) > max_group_size:
             continue
         flagged[norm] = members
     return flagged
@@ -112,7 +121,9 @@ def main():
     ap.add_argument("--threshold", type=float, default=0.5)
     ap.add_argument(
         "--max-group-size", type=int, default=6,
-        help="skip answer-groups larger than this (likely a common name, not a duplicate cluster)",
+        help="whole-corpus self-audit only: skip answer-groups larger than this "
+             "(likely a common name, not a duplicate cluster). Ignored with --new, "
+             "where output is already scoped to groups touching the draft.",
     )
     args = ap.parse_args()
 
@@ -137,6 +148,12 @@ def main():
         print("PASS B: same normalized correct-answer groups (must include >=1 draft question)")
         print("=" * 70)
         print_groups(group_by_answer(draft + corpus, args.max_group_size, require_from=draft))
+        print(
+            "\n(Pass B on --new is not size-capped -- a draft answer matching a "
+            "common existing answer will show here even in a large group. Eyeball "
+            "for the 'same fact, different wording' case; a shared answer alone "
+            "isn't proof of a duplicate.)"
+        )
 
     else:
         print(f"Whole-corpus self-audit over {len(corpus)} questions.\n")
