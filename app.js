@@ -1,4 +1,4 @@
-const APP_VERSION = '1.18';
+const APP_VERSION = '1.19';
 
 // =============================================================================
 // State
@@ -159,7 +159,9 @@ const SCORING = {
 // Returns {base, streakBonus, perfectBonus, dailyBonus, total}.
 // earnDailyBonus — true only on first daily play of the calendar day.
 // dailyStreak    — the new streak value after this game.
-function scoreBreakdown(answers, earnDailyBonus, dailyStreak) {
+// awardPerfect   — false for a mid-game exit, where "all answered so far correct"
+//                  isn't a completed perfect game and shouldn't earn the bonus.
+function scoreBreakdown(answers, earnDailyBonus, dailyStreak, awardPerfect = true) {
   let base = 0, streakBonus = 0, run = 0;
   for (const a of answers) {
     if (a.correct) {
@@ -170,7 +172,7 @@ function scoreBreakdown(answers, earnDailyBonus, dailyStreak) {
       run = 0;
     }
   }
-  const perfectBonus = (answers.length > 0 && answers.every(a => a.correct)) ? SCORING.perfect : 0;
+  const perfectBonus = (awardPerfect && answers.length > 0 && answers.every(a => a.correct)) ? SCORING.perfect : 0;
   let dailyBonus = 0;
   if (earnDailyBonus) {
     dailyBonus = SCORING.dailyFlat + Math.min(dailyStreak, SCORING.dailyStreakCap) * SCORING.dailyPerDay;
@@ -889,7 +891,7 @@ document.getElementById('btn-exit-game').addEventListener('click', async () => {
   if (confirm(msg)) {
     if (answered > 0) {
       try {
-        const pts = scoreBreakdown(gameState.answers, false, 0).total;
+        const pts = scoreBreakdown(gameState.answers, false, 0, false).total;
         await storage.updateStats(currentUser.id, answered, gameState.score, pts, null, buildCatStats(gameState.answers));
         addSeenIds(currentUser.id, gameState.answers.map(a => a.question.id));
       } catch (e) {
