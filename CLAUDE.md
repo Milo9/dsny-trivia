@@ -195,7 +195,7 @@ The app is hosted on GitHub Pages from the `main` branch. Use the deploy script:
 
 `deploy.ps1` stages all changes, commits, and pushes in one step. Omitting `-Message` defaults to `"update app"`. GitHub Pages redeploys automatically within ~1 minute.
 
-**Cache-busting for code files:** `index.html` loads `style.css`, `storage.js`, and `app.js` with a `?v=` query string matching `APP_VERSION` (currently 1.19). When making code changes, bump `APP_VERSION` in `app.js` **and** update the matching `?v=` strings in `index.html` so browsers discard their cached copies. Question shard files and `movies.json` (fetched via `fetch()`) use `{ cache: 'no-cache' }` and don't need manual versioning.
+**Cache-busting for code files:** `index.html` loads `style.css`, `storage.js`, and `app.js` with a `?v=` query string matching `APP_VERSION` (currently 1.20). When making code changes, bump `APP_VERSION` in `app.js` **and** update the matching `?v=` strings in `index.html` so browsers discard their cached copies. Question shard files and `movies.json` (fetched via `fetch()`) use `{ cache: 'no-cache' }` and don't need manual versioning.
 
 **Manual fallback:**
 ```
@@ -212,6 +212,7 @@ A second game mode accessible from the settings screen. Always 10 questions, all
 - Questions are stable-sorted by `id` before shuffling so shard load order doesn't affect results
 - Streak (`dailyStreak`, `lastDailyDate`) stored in Firestore on the user doc — cross-device
 - **Replay is blocked** — each player can play the daily exactly once per calendar day. The settings button becomes "📋 Review Today's Questions" after playing; the results-screen Rematch button is hidden for daily games.
+- **Exit mid-daily → resume, don't restart.** Nothing is committed to Firestore stats until all 10 are answered. Exiting locks in the answered-so-far questions to `localStorage` (`disney_daily_progress_{userId}`, via `saveDailyProgress`/`getDailyProgress`/`clearDailyProgress` in `app.js`) — not Firestore, so this is per-device, like the other `disney_*` localStorage keys. Re-opening the Daily Challenge (`buildDailyGameState()`) resumes at the next unanswered question with the locked-in answers' score/streak already applied; those questions are never re-shown or re-editable. If a resume's saved answers no longer line up position-by-position with today's pinned questions (e.g. a backfill re-pinned the day after the exit), only the still-matching prefix is kept and the rest is treated as unanswered — never silently miscounted. Progress is cleared only after a successful Firestore save in `endGame()`; if that save fails (offline), progress is kept and the next "Daily Challenge" tap detects the already-complete answer set and retries `endGame()` directly instead of restarting the game.
 - Per-question answers stored in Firestore as `lastDailyAnswers` on first play; shifted to `prevDailyAnswers` when the next day's challenge is played. Used by `screen-daily-review` for both today and yesterday views.
 - Counts toward leaderboard stats just like a regular game
 - `gameState.isDaily = true` when a daily challenge is active; `endGame()` checks this flag

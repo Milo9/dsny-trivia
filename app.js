@@ -1,4 +1,4 @@
-const APP_VERSION = '1.19';
+const APP_VERSION = '1.20';
 
 // =============================================================================
 // State
@@ -34,6 +34,46 @@ function addSeenIds(userId, ids) {
   let seen = getSeenIds(userId).concat(ids);
   if (seen.length > SEEN_MAX) seen = seen.slice(seen.length - SEEN_MAX);
   localStorage.setItem('disney_seen_' + userId, JSON.stringify(seen));
+}
+
+// --- Daily challenge in-progress state (per-device, per-user) ---
+// Lets a player exit mid-daily and resume later without losing or re-answering
+// already-locked-in questions. Cleared only once that day's daily is actually
+// completed and saved (see endGame). Not synced to Firestore — resuming on a
+// different device just starts fresh, same as this app's other local-only state.
+function dailyProgressKey(userId) { return 'disney_daily_progress_' + userId; }
+
+function getDailyProgress(userId) {
+  try { return JSON.parse(localStorage.getItem(dailyProgressKey(userId))); }
+  catch { return null; }
+}
+
+function saveDailyProgress(userId, dateKey, answers) {
+  localStorage.setItem(dailyProgressKey(userId), JSON.stringify({ dateKey, answers }));
+}
+
+function clearDailyProgress(userId) {
+  localStorage.removeItem(dailyProgressKey(userId));
+}
+
+// Rebuilds gameState for the daily challenge, resuming from saved progress when
+// it exists, matches today's date, and lines up with today's pinned question
+// order (position-by-position) — if pins shifted underneath a saved answer
+// (e.g. a backfill after the exit), only the still-matching prefix is kept.
+function buildDailyGameState(questions, today) {
+  const progress = getDailyProgress(currentUser.id);
+  const answers  = [];
+  if (progress && progress.dateKey === today && Array.isArray(progress.answers)) {
+    for (const a of progress.answers) {
+      const q = questions[answers.length];
+      if (!q || q.id !== a.questionId) break;
+      answers.push({ question: q, selectedText: a.selectedText, correct: a.correct });
+    }
+  }
+  let currentStreak = 0;
+  for (let i = answers.length - 1; i >= 0 && answers[i].correct; i--) currentStreak++;
+  const score = answers.filter(a => a.correct).length;
+  return { questions, currentIndex: answers.length, answers, score, currentStreak, isDaily: true, pointsEarned: 0, scoreBreakdown: null };
 }
 
 function pct(correct, total) {
@@ -695,8 +735,12 @@ document.getElementById('btn-daily-challenge').addEventListener('click', async (
   }
 
   btn.disabled = false;
-  gameState = { questions, currentIndex: 0, answers: [], score: 0, currentStreak: 0, isDaily: true, pointsEarned: 0, scoreBreakdown: null };
-  renderGameQuestion();
+  gameState = buildDailyGameState(questions, today);
+  if (gameState.currentIndex >= gameState.questions.length) {
+    endGame(); // all questions were answered before a previous exit — finish it now
+  } else {
+    renderGameQuestion();
+  }
 });
 
 // Difficulty pills
@@ -885,6 +929,25 @@ document.getElementById('btn-next').addEventListener('click', () => {
 // Exit game
 document.getElementById('btn-exit-game').addEventListener('click', async () => {
   const answered = gameState.answers.length;
+
+  // Daily challenge: nothing is committed to stats until the full 10 are done.
+  // Answers get locked in locally instead, so re-opening the Daily Challenge
+  // resumes at the next question rather than restarting or re-scoring them.
+  if (gameState.isDaily) {
+    const msg = answered > 0
+      ? `Exit the Daily Challenge? Your ${answered} answered question${answered !== 1 ? 's' : ''} are locked in — come back later to finish.`
+      : 'Exit the Daily Challenge? You haven\'t answered any questions yet.';
+    if (confirm(msg)) {
+      if (answered > 0) {
+        saveDailyProgress(currentUser.id, todayKey(), gameState.answers.map(a => ({
+          questionId: a.question.id, correct: a.correct, selectedText: a.selectedText
+        })));
+      }
+      renderHome();
+    }
+    return;
+  }
+
   const msg = answered > 0
     ? `Exit this game? Your ${answered} answered question${answered !== 1 ? 's' : ''} will be saved to your stats.`
     : 'Exit this game? You haven\'t answered any questions yet.';
@@ -999,6 +1062,7 @@ async function endGame() {
   try {
     await storage.updateStats(currentUser.id, gameState.questions.length, gameState.score, bd.total, dailyUpdate, buildCatStats(gameState.answers));
     addSeenIds(currentUser.id, gameState.questions.map(q => q.id));
+    if (gameState.isDaily) clearDailyProgress(currentUser.id);
     const users = await storage.getUsers();
     currentUser = users.find(u => u.id === currentUser.id) || currentUser;
   } catch (e) {
