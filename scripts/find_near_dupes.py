@@ -6,7 +6,10 @@ human eyeball pass only has to look at flagged pairs, not the whole corpus.
 Two passes, mirroring the method used in the 2026-07-21 dedup audit:
 
   A. Token-Jaccard similarity on question text, above --threshold. Catches
-     questions that are reworded restatements of each other.
+     questions that are reworded restatements of each other. Tokens are
+     lightly stemmed (see _common.py:stem) so plural/tense variants like
+     "kitten"/"kittens" or "sings"/"singing" count as the same token instead
+     of silently missing each other.
   B. Exact match on normalized correct answer (answers[0]), grouped and
      dumped regardless of question-text similarity. This is the
      "same answer, different framing" case a similarity threshold can miss

@@ -39,9 +39,26 @@ def load_corpus():
     return questions
 
 
+def stem(word):
+    """Cheap suffix-stripping, not a full Porter stemmer -- good enough to fold
+    plurals/tense variants (kitten/kittens, sings/sang... well, not irregulars,
+    but sing/singing/sung's shared prefix) into one token for near-dupe recall."""
+    if len(word) > 4 and word.endswith("ies"):
+        return word[:-3] + "y"
+    if len(word) > 5 and word.endswith("ing"):
+        return word[:-3]
+    if len(word) > 4 and word.endswith("ed") and not word.endswith("eed"):
+        return word[:-2]
+    if len(word) > 4 and word.endswith("es"):
+        return word[:-2]
+    if len(word) > 3 and word.endswith("s") and not word.endswith(("ss", "us")):
+        return word[:-1]
+    return word
+
+
 def tokenize(text):
     words = re.findall(r"[a-z0-9']+", text.lower())
-    return {w for w in words if w not in STOPWORDS and len(w) > 1}
+    return {stem(w) for w in words if w not in STOPWORDS and len(w) > 1}
 
 
 def normalize_answer(text):
