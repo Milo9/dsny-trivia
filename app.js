@@ -1,4 +1,4 @@
-const APP_VERSION = '1.23';
+const APP_VERSION = '1.24';
 
 // =============================================================================
 // State
@@ -30,10 +30,34 @@ function getSeenIds(userId) {
   catch { return []; }
 }
 
-function addSeenIds(userId, ids) {
-  let seen = getSeenIds(userId).concat(ids);
+// Pure — computes the next capped seen-ids list without writing anything, so
+// callers can pass it to storage.updateStats() first and only persist locally
+// once that save actually succeeds (mirrors the existing "don't mark seen on
+// a failed/offline save" behavior).
+function computeSeenIds(userId, newIds) {
+  let seen = getSeenIds(userId).concat(newIds);
   if (seen.length > SEEN_MAX) seen = seen.slice(seen.length - SEEN_MAX);
+  return seen;
+}
+
+function saveSeenIds(userId, seen) {
   localStorage.setItem('disney_seen_' + userId, JSON.stringify(seen));
+}
+
+// Union of every player's recently-seen question IDs (synced to each user's
+// Firestore doc as `recentQuestionIds`) — used only when generating a brand
+// new day's daily-challenge pin, so it doesn't repeat something any player,
+// in any mode, on any device, *just* played. Fails open (empty set) on a
+// read error — daily generation must never be blocked by this.
+async function recentlySeenByAnyone() {
+  try {
+    const users = await storage.getUsers();
+    const ids = new Set();
+    users.forEach(u => (u.recentQuestionIds || []).forEach(id => ids.add(id)));
+    return ids;
+  } catch (e) {
+    return new Set();
+  }
 }
 
 // --- Daily challenge in-progress state (per-device, per-user) ---
@@ -179,9 +203,16 @@ function pickFromMoviePool(excludeIds) {
 }
 
 // Stable-sorts by id first so shard/load order doesn't affect the result.
-function getDailyQuestions(count = 10, daysAgo = 0) {
-  const sorted = [...QUESTIONS].sort((a, b) => a.id - b.id);
-  return seededShuffle(sorted, dateToSeed(dayKey(daysAgo))).slice(0, count);
+// excludeIds only matters for a brand-new day's pin generation (see the
+// btn-daily-challenge handler) — the review screen's regenerate-from-live-pool
+// fallback deliberately calls this with no excludeIds, since "what's recently
+// seen right now" has no meaning when reconstructing a past day.
+function getDailyQuestions(count = 10, daysAgo = 0, excludeIds = new Set()) {
+  const sorted   = [...QUESTIONS].sort((a, b) => a.id - b.id);
+  const shuffled = seededShuffle(sorted, dateToSeed(dayKey(daysAgo)));
+  const fresh    = shuffled.filter(q => !excludeIds.has(q.id));
+  const src      = fresh.length >= count ? fresh : shuffled;
+  return src.slice(0, count);
 }
 
 // =============================================================================
@@ -729,8 +760,12 @@ document.getElementById('btn-daily-challenge').addEventListener('click', async (
       // original count from the live pool and re-save so later players/review
       // see a consistent, full-length set.
       if (qs.length > 0 && qs.length < pinnedIds.length) {
-        const usedIds = new Set(qs.map(q => q.id));
-        const extras = shuffle(QUESTIONS.filter(q => !usedIds.has(q.id))).slice(0, pinnedIds.length - qs.length);
+        const usedIds     = new Set(qs.map(q => q.id));
+        const candidates  = QUESTIONS.filter(q => !usedIds.has(q.id));
+        const excludeIds  = await recentlySeenByAnyone();
+        const freshCands  = candidates.filter(q => !excludeIds.has(q.id));
+        const extrasSrc   = freshCands.length >= (pinnedIds.length - qs.length) ? freshCands : candidates;
+        const extras      = shuffle(extrasSrc).slice(0, pinnedIds.length - qs.length);
         qs = qs.concat(extras);
         try { await storage.saveDailyPins(today, qs.map(q => q.id)); } catch(e) {}
       }
@@ -739,7 +774,8 @@ document.getElementById('btn-daily-challenge').addEventListener('click', async (
   } catch(e) {}
 
   if (!questions) {
-    questions = getDailyQuestions(10);
+    const excludeIds = await recentlySeenByAnyone();
+    questions = getDailyQuestions(10, 0, excludeIds);
     try { await storage.saveDailyPins(today, questions.map(q => q.id)); } catch(e) {}
   }
 
@@ -951,7 +987,13 @@ document.getElementById('btn-exit-game').addEventListener('click', async () => {
         saveDailyProgress(currentUser.id, todayKey(), gameState.answers.map(a => ({
           questionId: a.question.id, correct: a.correct, selectedText: a.selectedText
         })));
-        addSeenIds(currentUser.id, gameState.answers.map(a => a.question.id));
+        // Local marking always happens (no stats transaction to gate it on here —
+        // nothing's committed to Firestore until the daily is fully finished).
+        // The cross-player Firestore sync is best-effort: swallow a failure so an
+        // offline exit still locks in local progress.
+        const newSeen = computeSeenIds(currentUser.id, gameState.answers.map(a => a.question.id));
+        saveSeenIds(currentUser.id, newSeen);
+        storage.saveRecentQuestionIds(currentUser.id, newSeen).catch(() => {});
       }
       renderHome();
     }
@@ -964,9 +1006,10 @@ document.getElementById('btn-exit-game').addEventListener('click', async () => {
   if (confirm(msg)) {
     if (answered > 0) {
       try {
-        const pts = scoreBreakdown(gameState.answers, false, 0, false).total;
-        await storage.updateStats(currentUser.id, answered, gameState.score, pts, null, buildCatStats(gameState.answers));
-        addSeenIds(currentUser.id, gameState.answers.map(a => a.question.id));
+        const pts     = scoreBreakdown(gameState.answers, false, 0, false).total;
+        const newSeen = computeSeenIds(currentUser.id, gameState.answers.map(a => a.question.id));
+        await storage.updateStats(currentUser.id, answered, gameState.score, pts, null, buildCatStats(gameState.answers), newSeen);
+        saveSeenIds(currentUser.id, newSeen);
       } catch (e) {
         alert("Couldn't save your progress — check your connection.");
       }
@@ -1076,8 +1119,9 @@ async function endGame() {
   // an unsaved game's questions can come around again.
   gameState.saveFailed = false;
   try {
-    await storage.updateStats(currentUser.id, gameState.questions.length, gameState.score, bd.total, dailyUpdate, buildCatStats(gameState.answers));
-    addSeenIds(currentUser.id, gameState.questions.map(q => q.id));
+    const newSeen = computeSeenIds(currentUser.id, gameState.questions.map(q => q.id));
+    await storage.updateStats(currentUser.id, gameState.questions.length, gameState.score, bd.total, dailyUpdate, buildCatStats(gameState.answers), newSeen);
+    saveSeenIds(currentUser.id, newSeen);
     if (gameState.isDaily) clearDailyProgress(currentUser.id);
     const users = await storage.getUsers();
     currentUser = users.find(u => u.id === currentUser.id) || currentUser;

@@ -37,7 +37,11 @@ class LocalStorageAdapter {
   // points — pts earned this game (primary state; not recomputable from counters alone)
   // dailyUpdate — {score, points, dateKey, streak} or null
   // catStats    — {category: {answered, correct}, ...} or null
-  async updateStats(userId, answered, correct, points, dailyUpdate, catStats) {
+  // recentQuestionIds — this player's full capped seen-ids list (already computed
+  //   client-side), or null to leave the field untouched. Mirrors localStorage's
+  //   `disney_seen_{userId}` into Firestore so daily-pin generation can exclude
+  //   anything any player has recently played, in any mode.
+  async updateStats(userId, answered, correct, points, dailyUpdate, catStats, recentQuestionIds) {
     const data = this._load();
     const u = data.users[userId];
     if (!u) throw new Error('User not found: ' + userId);
@@ -66,8 +70,17 @@ class LocalStorageAdapter {
       if (dailyUpdate.streak !== null) u.dailyStreak = dailyUpdate.streak;
       if (dailyUpdate.answers)         u.lastDailyAnswers = dailyUpdate.answers;
     }
+    if (recentQuestionIds) u.recentQuestionIds = recentQuestionIds;
     this._save(data);
     return u;
+  }
+
+  async saveRecentQuestionIds(userId, ids) {
+    const data = this._load();
+    const u = data.users[userId];
+    if (!u) throw new Error('User not found: ' + userId);
+    u.recentQuestionIds = ids;
+    this._save(data);
   }
 
   async getDailyPins(dateKey) {
@@ -160,7 +173,13 @@ class FirebaseAdapter {
   // points — pts earned this game (primary state; not recomputable from counters alone)
   // dailyUpdate — {score, points, dateKey, streak} or null
   // catStats    — {category: {answered, correct}, ...} or null
-  async updateStats(userId, answered, correct, points, dailyUpdate, catStats) {
+  // recentQuestionIds — this player's full capped seen-ids list (already computed
+  //   client-side), or null to leave the field untouched. Mirrors localStorage's
+  //   `disney_seen_{userId}` into Firestore so daily-pin generation can exclude
+  //   anything any player has recently played, in any mode. Written inside this
+  //   same transaction (no extra round trip) since every call site that reaches
+  //   here already has stats to commit.
+  async updateStats(userId, answered, correct, points, dailyUpdate, catStats, recentQuestionIds) {
     const ref = this.db.collection('users').doc(userId);
     await this.db.runTransaction(async tx => {
       const doc = await tx.get(ref);
@@ -171,6 +190,7 @@ class FirebaseAdapter {
         gamesPlayed:   d.gamesPlayed   + 1,
         totalPoints:   (d.totalPoints || 0) + points
       };
+      if (recentQuestionIds) update.recentQuestionIds = recentQuestionIds;
       if (catStats) {
         const existing = d.categoryStats || {};
         const merged   = { ...existing };
@@ -196,6 +216,14 @@ class FirebaseAdapter {
       }
       tx.update(ref, update);
     });
+  }
+
+  // Standalone (no stats transaction) sync point for a partial daily-challenge
+  // exit — nothing is committed to stats until the daily is fully finished, but
+  // the already-answered questions still need to count as "recently seen" for
+  // daily-pin exclusion. Callers treat this as best-effort and swallow errors.
+  async saveRecentQuestionIds(userId, ids) {
+    await this.db.collection('users').doc(userId).update({ recentQuestionIds: ids });
   }
 
   async getDailyPins(dateKey) {
