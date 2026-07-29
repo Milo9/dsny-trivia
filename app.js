@@ -1,4 +1,4 @@
-const APP_VERSION = '1.22';
+const APP_VERSION = '1.23';
 
 // =============================================================================
 // State
@@ -23,7 +23,7 @@ function shuffle(arr) {
   return a;
 }
 
-const SEEN_MAX = 500;
+const SEEN_MAX = 300;
 
 function getSeenIds(userId) {
   try { return JSON.parse(localStorage.getItem('disney_seen_' + userId)) || []; }
@@ -951,6 +951,7 @@ document.getElementById('btn-exit-game').addEventListener('click', async () => {
         saveDailyProgress(currentUser.id, todayKey(), gameState.answers.map(a => ({
           questionId: a.question.id, correct: a.correct, selectedText: a.selectedText
         })));
+        addSeenIds(currentUser.id, gameState.answers.map(a => a.question.id));
       }
       renderHome();
     }
