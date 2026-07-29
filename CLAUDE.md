@@ -22,7 +22,7 @@ A static single-page trivia app built for Kristen and Cara to practice before a 
 | `questions/q-006.json` | Questions 1302–2017 (250 active). |
 | `questions/q-007.json` | Questions 2018–2267 (250 active). |
 | `questions/q-008.json` | Questions 2268–2524 (250 active). |
-| `questions/q-009.json` | Questions 2525–2578 (54 active). |
+| `questions/q-009.json` | Questions 2525–2655 (131 active). |
 | `movies.json` | Weekly Homework movie pool — flat array of `{id, title, year, studio}`, Disney animated + Pixar canon. Fetched by `app.js` at boot alongside questions. |
 | `review.html` | Standalone admin page for reviewing flagged questions. Shares the same Firestore `flags` collection. |
 | `scripts/count_topics.py` | Counts questions per Disney/Pixar film (question + correct answer only, not distractors); parent-film counts exclude sequel/short matches, which are reported separately. Run from project root: `python scripts/count_topics.py`. Re-run after large batches of additions to update the Per-film coverage map in this file. |
@@ -68,27 +68,27 @@ Example line:
 
 **Dedup workflow (grep-first, mandatory):** Before writing any new question, grep all shards for 2–3 key terms from the topic. Because each question is one line, a Grep hit returns the entire question + all answers — eyeball it immediately to confirm it's a true duplicate or a distinct angle. Do not read whole shard files for dedup. For the initial "has this stem/angle been asked at all" scan on a saturated film, `scripts/recon.py` is a cheaper first pass (compact one-line-per-question digest instead of full Grep hits) — but it hides the correct answer by default (`--show-answer` adds only answers[0], never distractors), so once a candidate stem looks close, confirm with a real Grep hit or `--show-answer` before judging it a true duplicate; recon narrows the search, it doesn't replace the eyeball. Before appending a drafted batch, run `scripts/validate_batch.py` (format/enum/exact-dup checks) and `scripts/find_near_dupes.py --new` (lexical near-duplicate check, new-vs-existing and new-vs-new) — see Question-Bank Tooling below for the full workflow.
 
-**Current count:** 1,973 questions (IDs 1–2578, with gaps from removed duplicates/errors). Distribution (exact, via count_topics.py):
-- movies 445, characters 355, pixar 296, parks 288, music 219, walt 202, cruise 168
+**Current count:** 2,050 questions (IDs 1–2655, with gaps from removed duplicates/errors). Distribution (exact, via count_topics.py):
+- movies 465, characters 370, pixar 307, parks 310, music 221, walt 209, cruise 168
 
 **Per-film coverage map** (questions that are *about* this film — correct answer or question text, not distractors). **The counts below are a rough signal, not a cap.** A film at 30 can still take a 31st question if the fact is genuinely un-asked — the real gate is always "is this a distinct fact, verified against a grep of the existing stems," never "is the count already high." Treat "Saturated" as "the obvious tier-1 facts are probably taken, go deeper (secondary characters, specific scenes/songs, production trivia, direct-to-video sequels, shorts) rather than skip the film," not as "stop." Under-covered rows are just as likely to reflect the count_topics.py regex undercounting (see note below) as genuinely thin coverage — grep the real stems before assuming either way.
 
 | Film | Count | Status |
 |---|---|---|
+| Toy Story | 56 | Saturated |
 | Frozen | 55 | Saturated |
-| Toy Story | 54 | Saturated |
 | Beauty and the Beast | 35 | Saturated |
 | The Little Mermaid | 30 | Saturated |
 | The Lion King | 30 | Saturated |
+| Moana | 30 | Saturated |
 | Finding Nemo / Finding Dory | 30 | Saturated |
 | Cinderella | 29 | Saturated |
-| Moana | 28 | Saturated |
 | Aladdin | 27 | Saturated |
+| Zootopia | 26 | Saturated |
 | Encanto | 24 | Saturated |
-| Zootopia | 23 | Saturated |
 | Inside Out | 22 | Saturated |
+| The Incredibles | 22 | Saturated |
 | Tangled | 21 | Saturated |
-| The Incredibles | 21 | Saturated |
 | Pocahontas | 20 | Saturated |
 | Ratatouille | 19 | Well-covered |
 | The Emperor's New Groove | 19 | Well-covered |
@@ -100,25 +100,25 @@ Example line:
 | The Jungle Book | 17 | Well-covered |
 | Mulan | 16 | Well-covered |
 | Wreck-It Ralph | 15 | Well-covered |
-| Big Hero 6 | 14 | Well-covered |
+| Atlantis: The Lost Empire | 15 | Well-covered |
+| Elemental | 15 | Well-covered |
+| A Bug's Life | 14 | Well-covered |
+| 101 Dalmatians | 14 | Well-covered |
 | Brother Bear | 14 | Well-covered |
+| Brave | 13 | Well-covered |
+| Big Hero 6 | 13 | Well-covered |
 | Turning Red | 13 | Well-covered |
-| 101 Dalmatians | 13 | Well-covered |
+| The Fox and the Hound | 13 | Well-covered |
 | WALL-E | 12 | Well-covered |
 | Soul | 12 | Well-covered |
-| Brave | 11 | Well-covered |
-| A Bug's Life | 11 | Well-covered |
 | Inside Out 2 | 11 | Well-covered |
-| Elemental | 11 | Well-covered |
-| The Fox and the Hound | 11 | Well-covered |
-| Atlantis: The Lost Empire | 10 | Well-covered |
-| Hercules | 9 | Under-covered |
-| Coco | 9 | Under-covered |
-| Onward | 7 | Under-covered |
-| Luca | 7 | Under-covered |
-| Up | 6 | Under-covered |
+| Hercules | 9 | Under-covered (unreliable — see note) |
+| Coco | 9 | Under-covered (unreliable — see note) |
+| Up | 7 | Under-covered (unreliable — see note) |
+| Onward | 7 | Under-covered (unreliable — see note) |
+| Luca | 7 | Under-covered (unreliable — see note) |
 
-**Note on Hercules/Coco/Onward/Luca/Up specifically:** the 2026-07-24 batch added 5–7 new questions to each of these per the table above, but a fork's recon during that batch found 30–38 *existing* Grep hits per film — 3–5x what this regex-based table shows. The count_topics.py regex undercounts these five badly (likely a phrasing/keyword-co-occurrence gap in the script, not a real coverage gap). Treat these five rows as especially unreliable; grep the actual stems before assuming they're wide open.
+**Note on Hercules/Coco/Onward/Luca/Up specifically:** the 2026-07-24 batch added 5–7 new questions to each of these per the table above, but a fork's recon during that batch found 30–38 *existing* Grep hits per film — 3–5x what this regex-based table shows. The count_topics.py regex undercounts these five badly (likely a phrasing/keyword-co-occurrence gap in the script, not a real coverage gap). Treat these five rows as especially unreliable; grep the actual stems before assuming they're wide open. **Reconfirmed 2026-07-29:** a fork targeting exactly these five films for the 100-question batch below recon'd all five and found Hercules, Coco, Onward, and Soul (also mistakenly assumed under-covered) fully saturated on every fresh angle it tried — it added zero questions to any of them and redirected its budget to Up, A Bug's Life, Brave, Elemental, Fox and the Hound, and Atlantis instead. Up still took only 3 clean new questions before thinning out. **These five rows should be treated as effectively saturated already, not as open opportunities**, despite what the table's raw number suggests.
 
 These counts still fold numbered theatrical sequels into their parent row (Frozen includes Frozen II, Toy Story includes 2–4, etc.) since that's one continuously-active franchise, not a stale catalog title. **Direct-to-video sequels and shorts are excluded from the parent row and tracked separately** — run `python scripts/count_topics.py` for their counts or `python scripts/find_gaps.py --sequels` for the same list sorted lowest-coverage-first; see `scripts/_common.py:SEQUELS_AND_SHORTS` for the tracked list (Lion King II, Return of Jafar, King of Thieves, Little Mermaid II, Mulan II, Pocahontas II, Hunchback II, Cinderella II/III, Brother Bear 2, 101 Dalmatians II, Jungle Book 2, Tarzan II, Fox and the Hound 2, Kronk's New Groove, Bambi II, Frozen Fever, Olaf's Frozen Adventure, Geri's Game, Piper, Bao). **These titles are soft-capped, not a priority vein — see "Content balance" rule 10 below; a low/zero count here is no longer, by itself, a reason to draft for one.**
 
@@ -143,6 +143,8 @@ This table is updated manually; re-run `scripts/count_topics.py` to regenerate i
 **Follow-up not yet done — distractor correctness:** This pass verified that correct answers (answers[0]) hold up, but did not verify rule 5 ("wrong answers must be wrong") at scale — the ~5,900 distractors across the corpus were never systematically fact-checked, only the ones noticed incidentally while reading for other issues. This needs real per-question verification (no script can judge whether a wrong answer is secretly also true), so it's slow and was deliberately deferred rather than rushed. Next time quality-auditing this bank, budget time for it separately — likely scoped to high-risk categories first (walt/music "first to win X" and similar record-claim questions, where a distractor can accidentally also be a true fact about a different film/person).
 
 **Superlative sweep (2026-07-29):** Grepped all shards for "first/only/largest/biggest/smallest/longest/record/unprecedented/ever made" in question text — 137 hits. Nearly all were permanently-true historical facts (e.g. "first Mickey Mouse cartoon," "Walt's father's first name") that can't rot regardless of what launches later, so they needed no check. WebSearch-verified the ~10 that were genuinely current-record claims about an active/ongoing category (World of Disney "world's largest Disney character store," World of Frozen "world's first and largest Frozen-themed land," Germaine Franco "first woman to score a WDAS feature," Barlow & Bear "first all-female songwriting team" for Moana 2, Disney Adventure's "cruises to nowhere" itinerary) — all still hold up as of today. **Found one genuine factual error this way:** #2364 asked how many artists share the Billboard-record credit on 'We Don't Talk About Bruno,' with "Six" as the stored correct answer — multiple sources (Forbes, Billboard) confirm the actual record-breaking count is **seven** (six named performers plus the ensemble "Encanto cast" credit). Fixed to "Seven." This was not a stale-superlative case (nothing changed over time) — the fact was wrong from whenever it was drafted, only surfaced by actually checking a "record" claim instead of assuming a stored number was right. Worth remembering: a "current record" claim needs the same real verification as a "first/only" claim, even if it isn't the time-sensitive-superlative pattern rule 6 warns about.
+
+**Content expansion (2026-07-29, first batch under the rule 10 sequel/short soft cap):** User asked for 100 new questions. Landed at 77 clean (IDs 2579–2655, one gap from a cut duplicate) via **4 parallel fork agents** on disjoint buckets, explicitly excluding direct-to-video sequels/shorts per the same-day rule 10 policy: (A) the five films CLAUDE.md's table calls "under-covered" — Hercules/Coco/Onward/Luca/Up/Soul, landed 20/25 after confirming on recon that Hercules, Coco, Onward, Soul, and Luca are already fully saturated (redirected to Up/A Bug's Life/Brave/Elemental/Fox and the Hound/Atlantis instead); (B) films with no row at all in the coverage table, confirmed genuinely thin via an advisor-recommended pre-dispatch recon spot-check (4–14 existing hits vs. the corpus's 15–40 norm) — Home on the Range, Chicken Little, Dinosaur, Bolt, Treasure Planet, Lilo & Stitch, Rescuers Down Under, Winnie the Pooh, Dumbo — landed the full 25/25, confirming this was the strongest vein in the batch; (C) parks (secondary/lesser attractions plus international-park depth), landed 22/25 after cutting 5 drafts that turned out to be true duplicates caught during the fork's own recon; (D) music/walt/cruise/secondary characters, landed only 11/25 — recon confirmed this territory (already flagged as heavily-mined in the 2026-07-23 and -24 notes) is now close to exhausted on any angle other than individual Imagineer biographies, which is where this fork's yield came from. Raw yield across all 4 files was 78; the merge-gate `find_near_dupes.py --new` pass caught one true duplicate (Up's Best Original Score composer, Michael Giacchino — same fact as existing #410 and #1502, just phrased with an added "first Pixar win" qualifier that didn't change the underlying tested fact) among several coincidental shared-answer matches (different facts that happen to share a one-word answer, e.g. multiple unrelated questions all answering "Six") that were correctly not duplicates. **This batch is the first real-world test of the rule 10 soft cap** — zero sequel/short questions were drafted by design, and the fork-A recon reconfirmed (a third time now, after 2026-07-24 and this same batch) that the coverage table's "under-covered" label on Hercules/Coco/Onward/Luca/Soul is actively misleading; the table and its reliability note above were updated in the same commit as this batch to say so plainly rather than just flag it as "unreliable."
 
 **Removing a question:** Delete its object from the shard JSON. IDs do not need to be contiguous — gaps are fine.
 
