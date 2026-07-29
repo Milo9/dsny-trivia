@@ -1,4 +1,4 @@
-const APP_VERSION = '1.21';
+const APP_VERSION = '1.22';
 
 // =============================================================================
 // State
@@ -23,7 +23,7 @@ function shuffle(arr) {
   return a;
 }
 
-const SEEN_MAX = 300;
+const SEEN_MAX = 500;
 
 function getSeenIds(userId) {
   try { return JSON.parse(localStorage.getItem('disney_seen_' + userId)) || []; }
