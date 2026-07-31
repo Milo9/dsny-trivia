@@ -1,4 +1,4 @@
-const APP_VERSION = '1.24';
+const APP_VERSION = '1.25';
 
 // =============================================================================
 // State
@@ -44,20 +44,29 @@ function saveSeenIds(userId, seen) {
   localStorage.setItem('disney_seen_' + userId, JSON.stringify(seen));
 }
 
-// Union of every player's recently-seen question IDs (synced to each user's
-// Firestore doc as `recentQuestionIds`) — used only when generating a brand
-// new day's daily-challenge pin, so it doesn't repeat something any player,
-// in any mode, on any device, *just* played. Fails open (empty set) on a
-// read error — daily generation must never be blocked by this.
-async function recentlySeenByAnyone() {
+// Exclusion set for generating a brand new day's daily-challenge pin: the
+// union of (a) every player's recently-seen question IDs (synced to each
+// user's Firestore doc as `recentQuestionIds`), so it doesn't repeat
+// something any player, in any mode, on any device, *just* played, and
+// (b) every question ID ever pinned as a past daily challenge (`dailies/*`),
+// regardless of whether anyone actually played that day. (b) exists because
+// (a) alone has two gaps: a pinned daily nobody ever finishes/exits never
+// marks its questions seen anywhere, and (a) is capped at SEEN_MAX per user —
+// heavy regular-game play can push a genuinely-recent daily question out of
+// that window well before it should be eligible to repeat as a daily. Each
+// source fails open (silently contributes nothing) on its own read error —
+// daily generation must never be blocked by this.
+async function dailyExclusionSet() {
+  const ids = new Set();
   try {
     const users = await storage.getUsers();
-    const ids = new Set();
     users.forEach(u => (u.recentQuestionIds || []).forEach(id => ids.add(id)));
-    return ids;
-  } catch (e) {
-    return new Set();
-  }
+  } catch (e) {}
+  try {
+    const pastDaily = await storage.getAllDailyQuestionIds();
+    pastDaily.forEach(id => ids.add(id));
+  } catch (e) {}
+  return ids;
 }
 
 // --- Daily challenge in-progress state (per-device, per-user) ---
@@ -762,7 +771,7 @@ document.getElementById('btn-daily-challenge').addEventListener('click', async (
       if (qs.length > 0 && qs.length < pinnedIds.length) {
         const usedIds     = new Set(qs.map(q => q.id));
         const candidates  = QUESTIONS.filter(q => !usedIds.has(q.id));
-        const excludeIds  = await recentlySeenByAnyone();
+        const excludeIds  = await dailyExclusionSet();
         const freshCands  = candidates.filter(q => !excludeIds.has(q.id));
         const extrasSrc   = freshCands.length >= (pinnedIds.length - qs.length) ? freshCands : candidates;
         const extras      = shuffle(extrasSrc).slice(0, pinnedIds.length - qs.length);
@@ -774,7 +783,7 @@ document.getElementById('btn-daily-challenge').addEventListener('click', async (
   } catch(e) {}
 
   if (!questions) {
-    const excludeIds = await recentlySeenByAnyone();
+    const excludeIds = await dailyExclusionSet();
     questions = getDailyQuestions(10, 0, excludeIds);
     try { await storage.saveDailyPins(today, questions.map(q => q.id)); } catch(e) {}
   }

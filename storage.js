@@ -95,6 +95,17 @@ class LocalStorageAdapter {
     this._save(data);
   }
 
+  // Every question ID ever pinned as a daily challenge, across all dates —
+  // independent of whether anyone actually played that day. Used alongside
+  // recentQuestionIds so daily-pin generation doesn't depend on someone having
+  // recently played.
+  async getAllDailyQuestionIds() {
+    const data = this._load();
+    const ids = new Set();
+    Object.values(data.dailies || {}).forEach(arr => (arr || []).forEach(id => ids.add(id)));
+    return Array.from(ids);
+  }
+
   async getHomeworkState() {
     const data = this._load();
     return data.weeklyHomework || null;
@@ -233,6 +244,20 @@ class FirebaseAdapter {
 
   async saveDailyPins(dateKey, questionIds) {
     await this.db.collection('dailies').doc(dateKey).set({ questionIds });
+  }
+
+  // Every question ID ever pinned as a daily challenge, across all dates —
+  // independent of whether anyone actually played that day. Used alongside
+  // recentQuestionIds so daily-pin generation doesn't depend on someone having
+  // recently played, and doesn't get bypassed by heavy regular-game play
+  // pushing a daily question out of any one player's capped seen-ids window.
+  // The `dailies` collection only grows ~1 doc/day, so a full-collection read
+  // stays cheap at this app's scale.
+  async getAllDailyQuestionIds() {
+    const snap = await this.db.collection('dailies').get();
+    const ids = new Set();
+    snap.docs.forEach(d => (d.data().questionIds || []).forEach(id => ids.add(id)));
+    return Array.from(ids);
   }
 
   async getHomeworkState() {
