@@ -95,14 +95,18 @@ class LocalStorageAdapter {
     this._save(data);
   }
 
-  // Every question ID ever pinned as a daily challenge, across all dates —
-  // independent of whether anyone actually played that day. Used alongside
-  // recentQuestionIds so daily-pin generation doesn't depend on someone having
-  // recently played.
-  async getAllDailyQuestionIds() {
+  // Every question ID pinned as a daily challenge on or after sinceDateKey
+  // ("YYYY-MM-DD", lexically comparable) — independent of whether anyone
+  // actually played that day. Used alongside recentQuestionIds so daily-pin
+  // generation doesn't depend on someone having recently played. Rolling
+  // window, not all-time: see the caller in app.js for why an unbounded
+  // history isn't safe long-term.
+  async getAllDailyQuestionIds(sinceDateKey) {
     const data = this._load();
     const ids = new Set();
-    Object.values(data.dailies || {}).forEach(arr => (arr || []).forEach(id => ids.add(id)));
+    Object.entries(data.dailies || {}).forEach(([dateKey, arr]) => {
+      if (dateKey >= sinceDateKey) (arr || []).forEach(id => ids.add(id));
+    });
     return Array.from(ids);
   }
 
@@ -246,15 +250,23 @@ class FirebaseAdapter {
     await this.db.collection('dailies').doc(dateKey).set({ questionIds });
   }
 
-  // Every question ID ever pinned as a daily challenge, across all dates —
-  // independent of whether anyone actually played that day. Used alongside
-  // recentQuestionIds so daily-pin generation doesn't depend on someone having
-  // recently played, and doesn't get bypassed by heavy regular-game play
-  // pushing a daily question out of any one player's capped seen-ids window.
-  // The `dailies` collection only grows ~1 doc/day, so a full-collection read
-  // stays cheap at this app's scale.
-  async getAllDailyQuestionIds() {
-    const snap = await this.db.collection('dailies').get();
+  // Every question ID pinned as a daily challenge on or after sinceDateKey
+  // ("YYYY-MM-DD") — independent of whether anyone actually played that day.
+  // Used alongside recentQuestionIds so daily-pin generation doesn't depend
+  // on someone having recently played, and doesn't get bypassed by heavy
+  // regular-game play pushing a daily question out of any one player's
+  // capped seen-ids window. Rolling window (not all-time): doc IDs are
+  // "YYYY-MM-DD" so they sort lexically = chronologically, letting Firestore
+  // do the filtering server-side instead of reading the whole collection —
+  // this also keeps the read cost flat as the app ages instead of growing
+  // ~1 doc/day forever. See the caller in app.js for why unbounded history
+  // isn't safe: with a ~2,050-question corpus and 10 exclusions/day, an
+  // all-time union would exhaust the corpus in ~205 days and then silently
+  // fall back to zero exclusion every day after that.
+  async getAllDailyQuestionIds(sinceDateKey) {
+    const snap = await this.db.collection('dailies')
+      .where(firebase.firestore.FieldPath.documentId(), '>=', sinceDateKey)
+      .get();
     const ids = new Set();
     snap.docs.forEach(d => (d.data().questionIds || []).forEach(id => ids.add(id)));
     return Array.from(ids);

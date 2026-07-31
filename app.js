@@ -1,4 +1,4 @@
-const APP_VERSION = '1.25';
+const APP_VERSION = '1.26';
 
 // =============================================================================
 // State
@@ -44,18 +44,28 @@ function saveSeenIds(userId, seen) {
   localStorage.setItem('disney_seen_' + userId, JSON.stringify(seen));
 }
 
+// How far back to exclude past daily-challenge pins when generating a new
+// day's pick. A rolling window, not all-time: with a ~2,050-question corpus
+// and 10 exclusions added/day, permanent history would exhaust the corpus in
+// ~205 days and then silently fall back to zero exclusion every day after
+// (see getDailyQuestions' fresh/src fallback) — 180 days keeps ~1,800 IDs
+// excluded at steady state, safely under the corpus size, while still being
+// far longer than anyone will remember a specific daily's questions.
+const DAILY_HISTORY_DAYS = 180;
+
 // Exclusion set for generating a brand new day's daily-challenge pin: the
 // union of (a) every player's recently-seen question IDs (synced to each
 // user's Firestore doc as `recentQuestionIds`), so it doesn't repeat
 // something any player, in any mode, on any device, *just* played, and
-// (b) every question ID ever pinned as a past daily challenge (`dailies/*`),
-// regardless of whether anyone actually played that day. (b) exists because
-// (a) alone has two gaps: a pinned daily nobody ever finishes/exits never
-// marks its questions seen anywhere, and (a) is capped at SEEN_MAX per user —
-// heavy regular-game play can push a genuinely-recent daily question out of
-// that window well before it should be eligible to repeat as a daily. Each
-// source fails open (silently contributes nothing) on its own read error —
-// daily generation must never be blocked by this.
+// (b) every question ID pinned as a daily challenge in the last
+// DAILY_HISTORY_DAYS days (`dailies/*`), regardless of whether anyone
+// actually played that day. (b) exists because (a) alone has two gaps: a
+// pinned daily nobody ever finishes/exits never marks its questions seen
+// anywhere, and (a) is capped at SEEN_MAX per user — heavy regular-game play
+// can push a genuinely-recent daily question out of that window well before
+// it should be eligible to repeat as a daily. Each source fails open
+// (silently contributes nothing) on its own read error — daily generation
+// must never be blocked by this.
 async function dailyExclusionSet() {
   const ids = new Set();
   try {
@@ -63,7 +73,7 @@ async function dailyExclusionSet() {
     users.forEach(u => (u.recentQuestionIds || []).forEach(id => ids.add(id)));
   } catch (e) {}
   try {
-    const pastDaily = await storage.getAllDailyQuestionIds();
+    const pastDaily = await storage.getAllDailyQuestionIds(dayKey(DAILY_HISTORY_DAYS));
     pastDaily.forEach(id => ids.add(id));
   } catch (e) {}
   return ids;
