@@ -1,4 +1,4 @@
-const APP_VERSION = '1.27';
+const APP_VERSION = '1.28';
 
 // =============================================================================
 // State
@@ -368,15 +368,19 @@ async function renderHome() {
 
   const lastId = localStorage.getItem('disney_last_user');
   const today  = todayKey();
+  const curMonth = monthKey();
 
   users.forEach(user => {
     const card       = document.createElement('div');
     card.className   = 'user-card';
     const streak     = user.dailyStreak || 0;
     const streakText = streak > 0 ? ` · 🔥 ${streak}` : '';
-    const pts        = user.totalPoints || 0;
+    // Home-card points mirror the leaderboard's "This Month" view (not
+    // totalPoints) so this rivalry-facing number is the one that's always
+    // winnable — see the monthly-leaderboard note in CLAUDE.md.
+    const pts        = user.monthlyKey === curMonth ? (user.monthlyPoints || 0) : 0;
     const stat       = user.totalAnswered
-      ? `${pts.toLocaleString()} pts · ${pct(user.totalCorrect, user.totalAnswered)} correct${streakText}`
+      ? `${pts.toLocaleString()} pts this month · ${pct(user.totalCorrect, user.totalAnswered)} correct${streakText}`
       : streak > 0 ? `🔥 ${streak} day streak` : 'No games yet';
     card.innerHTML = `
       <div class="user-avatar">${disneyAvatar(user.name)}</div>
