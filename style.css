@@ -30,6 +30,8 @@ body {
   min-height: 100vh;
   -webkit-tap-highlight-color: transparent;
   overscroll-behavior: none;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+           env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 h2, h3 { font-family: 'Fredoka One', cursive; }

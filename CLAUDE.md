@@ -25,6 +25,9 @@ A static single-page trivia app built for Kristen and Cara to practice before a 
 | `questions/q-009.json` | Questions 2525–2655 (131 active). |
 | `movies.json` | Weekly Homework movie pool — flat array of `{id, title, year, studio}`, Disney animated + Pixar canon. Fetched by `app.js` at boot alongside questions. |
 | `review.html` | Standalone admin page for reviewing flagged questions. Shares the same Firestore `flags` collection. |
+| `manifest.json` | Web app manifest (PWA). Referenced from `index.html`'s `<head>`. See PWA / Home Screen Install below. |
+| `icons/` | Generated PNG icons for the manifest, apple-touch-icon, and favicon — see `scripts/generate_icons.py`. Not hand-edited; re-run the script to regenerate. |
+| `scripts/generate_icons.py` | Synthesizes all files in `icons/` from scratch with Pillow (gold Mickey-ears silhouette on the app's navy-purple gradient) — no external art. Run from project root: `python scripts/generate_icons.py`. Re-run after any theme-color change. Requires `pip install pillow`. |
 | `scripts/count_topics.py` | Counts questions per Disney/Pixar film (question + correct answer only, not distractors); parent-film counts exclude sequel/short matches, which are reported separately. Run from project root: `python scripts/count_topics.py`. Re-run after large batches of additions to update the Per-film coverage map in this file. |
 | `scripts/_common.py` | Shared helpers (corpus loader, text normalization, the `SEQUELS_AND_SHORTS` registry) used by the scripts below. Not run directly. |
 | `scripts/recon.py` | Compact `id + question` dump for a keyword/film — token-cheap alternative to reading full Grep hits during pre-draft recon. See Question-Bank Tooling below. |
@@ -245,6 +248,15 @@ service cloud.firestore {
 - After fixing a question in the appropriate shard JSON, mark the flag Resolved in `review.html`
 - Flagging does NOT auto-remove the question; that's always a manual edit to the shard JSON
 
+## PWA / Home Screen Install (added 2026-08)
+The app installs like a native app when added to a phone's home screen — no service worker, no offline mode (deliberately: the app is Firestore-first, so "working offline" would mean silently stale/unsaved data, which is worse than just failing to load). This is icon + manifest polish only, not an offline-capable PWA.
+
+- **`manifest.json`** (repo root) — `display: "standalone"` (hides browser chrome), `theme_color`/`background_color` matching `--bg` (`#060614`), `start_url`/`scope` are relative (`./index.html` / `./`) so this works whether the site is served from a domain root or a GitHub Pages subpath. Two icon purposes per size (192/512): `"any"` (rounded-square, used as-is) and `"maskable"` (opaque full-bleed square with the glyph padded into a safe zone, since Android launchers apply their own shape mask and would clip an unpadded icon).
+- **`icons/`** — all 7 files (`favicon-16/32.png`, `apple-touch-icon.png` @180, `icon-192/512.png`, `icon-192/512-maskable.png`) are generated, not hand-drawn — see `scripts/generate_icons.py` in the File Map above. Re-run that script rather than editing PNGs directly if the theme colors or icon glyph ever change.
+- **`index.html` `<head>`** — `<link rel="manifest">`, favicon links, `<link rel="apple-touch-icon">`, and the `apple-mobile-web-app-*` / `mobile-web-app-capable` meta tags (iOS still needs these even though it now also reads the manifest, for older-Safari compatibility). The viewport meta has `viewport-fit=cover` so the page can draw under the iPhone notch/Dynamic Island and home indicator when installed standalone (no browser chrome to naturally avoid them).
+- **Safe-area insets** — `body` in `style.css` has `padding: env(safe-area-inset-*)` on all four sides. This only has any effect in standalone mode on a notched device (resolves to `0px` everywhere else, including normal browser tabs), so it's safe to leave on unconditionally.
+- **Why no service worker:** a service worker's main value here would be offline play, but every write (scores, streaks, leaderboard, flags) goes straight to Firestore with no local queue/sync layer — an offline session would let someone play a full game that then silently fails to save. Adding a cache-only service worker just for "installs faster" without solving that would be a half-feature; skip it unless offline play is explicitly requested as its own project.
+
 ## Deploying Changes
 The app is hosted on GitHub Pages from the `main` branch. Use the deploy script:
 
@@ -254,7 +266,7 @@ The app is hosted on GitHub Pages from the `main` branch. Use the deploy script:
 
 `deploy.ps1` stages all changes, commits, and pushes in one step. Omitting `-Message` defaults to `"update app"`. GitHub Pages redeploys automatically within ~1 minute.
 
-**Cache-busting for code files:** `index.html` loads `style.css`, `storage.js`, and `app.js` with a `?v=` query string matching `APP_VERSION` (currently 1.30). When making code changes, bump `APP_VERSION` in `app.js` **and** update the matching `?v=` strings in `index.html` so browsers discard their cached copies. Question shard files and `movies.json` (fetched via `fetch()`) use `{ cache: 'no-cache' }` and don't need manual versioning.
+**Cache-busting for code files:** `index.html` loads `style.css`, `storage.js`, and `app.js` with a `?v=` query string matching `APP_VERSION` (currently 1.31). When making code changes, bump `APP_VERSION` in `app.js` **and** update the matching `?v=` strings in `index.html` so browsers discard their cached copies. Question shard files and `movies.json` (fetched via `fetch()`) use `{ cache: 'no-cache' }` and don't need manual versioning.
 
 **Manual fallback:**
 ```
