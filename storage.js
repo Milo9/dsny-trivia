@@ -53,6 +53,13 @@ class LocalStorageAdapter {
     u.gamesPlayed   += 1;
     u.totalPoints    = (u.totalPoints || 0) + points;
     if (monthKey) {
+      // First play of a new month: shift the outgoing month's total into
+      // prev before overwriting, same pattern as the daily prev-shift below —
+      // this is what makes a "Last Month" leaderboard view possible.
+      if (u.monthlyKey && u.monthlyKey !== monthKey) {
+        u.prevMonthlyKey    = u.monthlyKey;
+        u.prevMonthlyPoints = u.monthlyPoints || 0;
+      }
       u.monthlyPoints = (u.monthlyKey === monthKey ? (u.monthlyPoints || 0) : 0) + points;
       u.monthlyKey    = monthKey;
     }
@@ -139,16 +146,19 @@ class LocalStorageAdapter {
     return this._load().flags || [];
   }
 
-  // monthKey — optional "YYYY-MM". When passed, each returned user gets an
-  // `effectiveMonthlyPoints` field (0 if their stored monthlyKey isn't this
-  // month, i.e. they haven't played yet this month) and the sort uses that
-  // instead of lifetime totalPoints. Computed here for display only — never
-  // written back, per the no-derived-values-in-storage rule.
-  async getLeaderboard(monthKey = null) {
+  // targetMonthKey — optional "YYYY-MM", either the current month (for "This
+  // Month") or the one before it (for "Last Month", see prevMonthKey() in
+  // app.js). Each returned user gets an `effectivePeriodPoints` field: their
+  // `monthlyPoints` if `monthlyKey` matches the target (the target is the
+  // month they're currently accumulating), else their `prevMonthlyPoints` if
+  // `prevMonthlyKey` matches (the target is the month they just rolled out
+  // of), else 0 (they didn't play at all in that month). Computed here for
+  // display only — never written back, per the no-derived-values-in-storage rule.
+  async getLeaderboard(targetMonthKey = null) {
     let users = Object.values(this._load().users || {});
-    if (monthKey) {
-      users = users.map(u => ({ ...u, effectiveMonthlyPoints: u.monthlyKey === monthKey ? (u.monthlyPoints || 0) : 0 }));
-      return users.sort((a, b) => b.effectiveMonthlyPoints - a.effectiveMonthlyPoints);
+    if (targetMonthKey) {
+      users = users.map(u => ({ ...u, effectivePeriodPoints: this._effectivePeriodPoints(u, targetMonthKey) }));
+      return users.sort((a, b) => b.effectivePeriodPoints - a.effectivePeriodPoints);
     }
     return users.sort((a, b) => {
       const ptsDiff = (b.totalPoints || 0) - (a.totalPoints || 0);
@@ -157,6 +167,12 @@ class LocalStorageAdapter {
       const pb = b.totalAnswered ? b.totalCorrect / b.totalAnswered : -1;
       return pb - pa;
     });
+  }
+
+  _effectivePeriodPoints(u, targetMonthKey) {
+    if (u.monthlyKey === targetMonthKey) return u.monthlyPoints || 0;
+    if (u.prevMonthlyKey === targetMonthKey) return u.prevMonthlyPoints || 0;
+    return 0;
   }
 }
 
@@ -224,6 +240,13 @@ class FirebaseAdapter {
         totalPoints:   (d.totalPoints || 0) + points
       };
       if (monthKey) {
+        // First play of a new month: shift the outgoing month's total into
+        // prev before overwriting, same pattern as the daily prev-shift below —
+        // this is what makes a "Last Month" leaderboard view possible.
+        if (d.monthlyKey && d.monthlyKey !== monthKey) {
+          update.prevMonthlyKey    = d.monthlyKey;
+          update.prevMonthlyPoints = d.monthlyPoints || 0;
+        }
         update.monthlyPoints = (d.monthlyKey === monthKey ? (d.monthlyPoints || 0) : 0) + points;
         update.monthlyKey    = monthKey;
       }
@@ -312,17 +335,20 @@ class FirebaseAdapter {
     return snap.docs.map(d => ({ _id: d.id, ...d.data() }));
   }
 
-  // monthKey — optional "YYYY-MM". When passed, each returned user gets an
-  // `effectiveMonthlyPoints` field (0 if their stored monthlyKey isn't this
-  // month, i.e. they haven't played yet this month) and the sort uses that
-  // instead of lifetime totalPoints. Computed here for display only — never
-  // written back, per the no-derived-values-in-storage rule.
-  async getLeaderboard(monthKey = null) {
+  // targetMonthKey — optional "YYYY-MM", either the current month (for "This
+  // Month") or the one before it (for "Last Month", see prevMonthKey() in
+  // app.js). Each returned user gets an `effectivePeriodPoints` field: their
+  // `monthlyPoints` if `monthlyKey` matches the target (the target is the
+  // month they're currently accumulating), else their `prevMonthlyPoints` if
+  // `prevMonthlyKey` matches (the target is the month they just rolled out
+  // of), else 0 (they didn't play at all in that month). Computed here for
+  // display only — never written back, per the no-derived-values-in-storage rule.
+  async getLeaderboard(targetMonthKey = null) {
     const snap  = await this.db.collection('users').get();
     let users = snap.docs.map(d => d.data());
-    if (monthKey) {
-      users = users.map(u => ({ ...u, effectiveMonthlyPoints: u.monthlyKey === monthKey ? (u.monthlyPoints || 0) : 0 }));
-      return users.sort((a, b) => b.effectiveMonthlyPoints - a.effectiveMonthlyPoints);
+    if (targetMonthKey) {
+      users = users.map(u => ({ ...u, effectivePeriodPoints: this._effectivePeriodPoints(u, targetMonthKey) }));
+      return users.sort((a, b) => b.effectivePeriodPoints - a.effectivePeriodPoints);
     }
     return users.sort((a, b) => {
       const ptsDiff = (b.totalPoints || 0) - (a.totalPoints || 0);
@@ -331,6 +357,12 @@ class FirebaseAdapter {
       const pb = b.totalAnswered ? b.totalCorrect / b.totalAnswered : -1;
       return pb - pa;
     });
+  }
+
+  _effectivePeriodPoints(u, targetMonthKey) {
+    if (u.monthlyKey === targetMonthKey) return u.monthlyPoints || 0;
+    if (u.prevMonthlyKey === targetMonthKey) return u.prevMonthlyPoints || 0;
+    return 0;
   }
 }
 

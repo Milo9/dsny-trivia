@@ -1,4 +1,4 @@
-const APP_VERSION = '1.28';
+const APP_VERSION = '1.29';
 
 // =============================================================================
 // State
@@ -173,6 +173,15 @@ function todayKey() { return dayKey(0); }
 // "YYYY-MM" for the current month, using the same 8h-shifted boundary as
 // dayKey() so the month rolls over at the same instant the day does.
 function monthKey() { return dayKey(0).slice(0, 7); }
+
+// "YYYY-MM" for the calendar month before the current one — used for the
+// leaderboard's "Last Month" view. Built from a real Date so it correctly
+// rolls the year back in January (JS normalizes a negative month index).
+function prevMonthKey() {
+  const [y, m] = monthKey().split('-').map(Number);
+  const d = new Date(y, m - 2, 1);
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`;
+}
 
 // Returns calendar days between two "YYYY-MM-DD" keys. Returns Infinity if prev is falsy.
 function computeDaysDiff(prev, today) {
@@ -514,18 +523,22 @@ document.getElementById('btn-results-leaderboard').addEventListener('click', ren
 // =============================================================================
 // Lifetime totalPoints never resets, so once one player pulls ahead the
 // trailing player has nothing left to play for. "This Month" gives a
-// regularly-resetting board (see monthKey()) so there's always a fresh race.
-let _lbMode = 'lifetime';
+// regularly-resetting board (see monthKey()) so there's always a fresh race;
+// "Last Month" (prevMonthKey()) lets that race be looked back on once it ends.
+let _lbMode = 'lifetime'; // 'lifetime' | 'month' | 'lastmonth'
+
+const LB_PERIOD_KEY = { month: monthKey, lastmonth: prevMonthKey };
 
 async function renderLeaderboard(mode) {
   if (mode) _lbMode = mode;
   showScreen('screen-leaderboard');
   document.querySelectorAll('#lb-mode-group .pill').forEach(p => p.classList.toggle('active', p.dataset.mode === _lbMode));
 
-  const isMonth = _lbMode === 'month';
-  const users   = await storage.getLeaderboard(isMonth ? monthKey() : null);
-  const list    = document.getElementById('leaderboard-list');
-  const empty   = document.getElementById('leaderboard-empty');
+  const isPeriod   = _lbMode !== 'lifetime';
+  const periodKey  = isPeriod ? LB_PERIOD_KEY[_lbMode]() : null;
+  const users      = await storage.getLeaderboard(periodKey);
+  const list       = document.getElementById('leaderboard-list');
+  const empty      = document.getElementById('leaderboard-empty');
   list.innerHTML = '';
 
   const medals = ['🥇', '🥈', '🥉'];
@@ -533,14 +546,16 @@ async function renderLeaderboard(mode) {
   if (!users.length) { empty.classList.remove('hidden'); return; }
   empty.classList.add('hidden');
 
+  const periodLabel = _lbMode === 'month' ? 'this month' : 'last month';
+
   users.forEach((u, i) => {
     const entry      = document.createElement('div');
     entry.className  = `lb-entry${i < 3 ? ' rank-' + (i + 1) : ''}`;
-    const percentage = !isMonth && u.totalAnswered ? Math.round((u.totalCorrect / u.totalAnswered) * 100) : null;
-    const detail      = isMonth
-      ? '🗓️ Points this month'
+    const percentage = !isPeriod && u.totalAnswered ? Math.round((u.totalCorrect / u.totalAnswered) * 100) : null;
+    const detail      = isPeriod
+      ? `🗓️ Points ${periodLabel}`
       : (u.totalAnswered ? `${u.totalAnswered} q · ${u.gamesPlayed} game${u.gamesPlayed !== 1 ? 's' : ''}` : 'No games yet');
-    const pts = ((isMonth ? u.effectiveMonthlyPoints : u.totalPoints) || 0).toLocaleString();
+    const pts = ((isPeriod ? u.effectivePeriodPoints : u.totalPoints) || 0).toLocaleString();
     entry.innerHTML = `
       <div class="lb-rank">${medals[i] || (i + 1)}</div>
       <div class="lb-avatar">${disneyAvatar(u.name)}</div>
