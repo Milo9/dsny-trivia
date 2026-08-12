@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=1.29">
+  <link rel="stylesheet" href="style.css?v=1.30">
 </head>
 <body>
 <div id="stars" aria-hidden="true"></div>
@@ -46,7 +46,9 @@
       </div>
     </div>
     <div class="section-label">Who's playing?</div>
-    <div id="user-list" class="user-list"></div>
+    <div id="user-list" class="user-list">
+      <p class="boot-loading">✨ Gathering pixie dust…</p>
+    </div>
     <div id="daily-card" class="daily-card hidden">
       <div class="daily-card-title">📅 Today's Challenge</div>
       <div id="daily-card-body"></div>
@@ -147,7 +149,7 @@
     <div class="progress-track">
       <div id="progress-fill" class="progress-fill"></div>
     </div>
-    <div id="streak-banner" class="streak-banner hidden">🔥 <span id="streak-count"></span> in a row!</div>
+    <div id="streak-banner" class="streak-banner hidden">✨ <span id="streak-count"></span> in a row!</div>
     <div id="question-diff" class="diff-badge"></div>
     <div class="question-card">
       <p id="question-text" tabindex="-1"></p>
@@ -185,8 +187,9 @@
         <rect x="0" y="185" width="200" height="55"/>
       </svg>
     </div>
-    <div class="fireworks" aria-hidden="true">
+    <div id="results-fireworks" class="fireworks" aria-hidden="true">
       <span class="fw fw1"></span><span class="fw fw2"></span><span class="fw fw3"></span>
+      <span class="fw fw4"></span><span class="fw fw5"></span>
     </div>
     <div class="results-header">
       <div id="results-emoji" class="results-emoji">🎉</div>
@@ -204,9 +207,11 @@
     <div class="results-actions">
       <button class="btn-primary btn-full" id="btn-rematch">Rematch ↺</button>
       <button class="btn-secondary btn-full hidden" id="btn-review-daily">📋 Review All Questions</button>
-      <button class="btn-secondary btn-full" id="btn-play-again">Change Settings</button>
       <button class="btn-secondary btn-full" id="btn-results-home">Home</button>
-      <button class="btn-leaderboard" id="btn-results-leaderboard">🏆 Leaderboard</button>
+      <div class="results-actions-minor">
+        <button class="btn-ghost" id="btn-play-again">Change Settings</button>
+        <button class="btn-ghost" id="btn-results-leaderboard">🏆 Leaderboard</button>
+      </div>
     </div>
   </div>
 
@@ -237,7 +242,7 @@
 </div>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
-<script src="storage.js?v=1.29"></script>
-<script src="app.js?v=1.29"></script>
+<script src="storage.js?v=1.30"></script>
+<script src="app.js?v=1.30"></script>
 </body>
 </html>

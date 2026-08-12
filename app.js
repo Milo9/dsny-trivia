@@ -1,4 +1,4 @@
-const APP_VERSION = '1.29';
+const APP_VERSION = '1.30';
 
 // =============================================================================
 // State
@@ -134,6 +134,12 @@ function disneyAvatar(name) {
   let h = 0;
   for (let i = 0; i < name.length; i++) h = (h * 31 + name.charCodeAt(i)) & 0xffff;
   return DISNEY_AVATARS[h % DISNEY_AVATARS.length];
+}
+
+function streakStars(streak) {
+  const filled = Math.min(streak, 5);
+  const empty  = 5 - filled;
+  return `<span class="stars-filled">${'★'.repeat(filled)}</span><span class="stars-empty">${'☆'.repeat(empty)}</span>`;
 }
 
 function slugId(name) {
@@ -396,6 +402,7 @@ async function renderHome() {
       <div class="user-info">
         <div class="user-name">${esc(user.name)}</div>
         <div class="user-stats">${stat}</div>
+        ${streak > 0 ? `<div class="streak-stars" aria-hidden="true">${streakStars(streak)}</div>` : ''}
       </div>
       <span class="user-arrow">›</span>
     `;
@@ -929,7 +936,9 @@ function renderGameQuestion() {
   document.getElementById('game-progress').textContent      = `Q ${cur} of ${total}`;
   document.getElementById('progress-fill').style.width      = `${((cur - 1) / total) * 100}%`;
   document.getElementById('game-score-display').textContent = `${gameState.score} ✓`;
-  document.getElementById('game-cat-badge').textContent     = catLabel(q.category);
+  const catBadge = document.getElementById('game-cat-badge');
+  catBadge.textContent = catLabel(q.category);
+  catBadge.className   = `cat-badge cat-${q.category}`;
 
   const diffEl = document.getElementById('question-diff');
   diffEl.textContent = q.difficulty.charAt(0).toUpperCase() + q.difficulty.slice(1);
@@ -1000,6 +1009,7 @@ function handleAnswer(selectedIdx) {
   } else {
     gameState.currentStreak = 0;
     sounds.wrong();
+    if (navigator.vibrate) navigator.vibrate(80);
   }
 
   const banner = document.getElementById('streak-banner');
@@ -1219,6 +1229,7 @@ function renderResults() {
 
   document.getElementById('results-emoji').textContent    = emoji;
   document.getElementById('results-title').textContent    = title;
+  document.getElementById('results-fireworks').classList.toggle('perfect', percentage === 100);
   document.getElementById('save-warning').classList.toggle('hidden', !gameState.saveFailed);
   document.getElementById('results-fraction').textContent = `${score} out of ${total} correct`;
   document.getElementById('results-pct').textContent      = percentage + '%';
@@ -1251,7 +1262,7 @@ function renderResults() {
   breakdownEl.innerHTML = '';
   Object.entries(breakdown).forEach(([cat, data]) => {
     const row = document.createElement('div');
-    row.className = 'breakdown-row';
+    row.className = `breakdown-row cat-${cat}`;
     row.innerHTML = `
       <span class="breakdown-cat">${catLabel(cat)}</span>
       <span class="breakdown-score">${data.correct}/${data.total} (${Math.round(data.correct / data.total * 100)}%)</span>
