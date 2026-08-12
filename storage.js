@@ -41,7 +41,10 @@ class LocalStorageAdapter {
   //   client-side), or null to leave the field untouched. Mirrors localStorage's
   //   `disney_seen_{userId}` into Firestore so daily-pin generation can exclude
   //   anything any player has recently played, in any mode.
-  async updateStats(userId, answered, correct, points, dailyUpdate, catStats, recentQuestionIds) {
+  // monthKey — "YYYY-MM" for the month this game's points count toward (primary
+  //   state, same reset-on-new-key pattern as the daily streak fields below —
+  //   not derived, since there's no history of past games to recompute it from).
+  async updateStats(userId, answered, correct, points, dailyUpdate, catStats, recentQuestionIds, monthKey) {
     const data = this._load();
     const u = data.users[userId];
     if (!u) throw new Error('User not found: ' + userId);
@@ -49,6 +52,10 @@ class LocalStorageAdapter {
     u.totalCorrect  += correct;
     u.gamesPlayed   += 1;
     u.totalPoints    = (u.totalPoints || 0) + points;
+    if (monthKey) {
+      u.monthlyPoints = (u.monthlyKey === monthKey ? (u.monthlyPoints || 0) : 0) + points;
+      u.monthlyKey    = monthKey;
+    }
     if (catStats) {
       if (!u.categoryStats) u.categoryStats = {};
       for (const [cat, counts] of Object.entries(catStats)) {
@@ -132,8 +139,17 @@ class LocalStorageAdapter {
     return this._load().flags || [];
   }
 
-  async getLeaderboard() {
-    const users = Object.values(this._load().users || {});
+  // monthKey — optional "YYYY-MM". When passed, each returned user gets an
+  // `effectiveMonthlyPoints` field (0 if their stored monthlyKey isn't this
+  // month, i.e. they haven't played yet this month) and the sort uses that
+  // instead of lifetime totalPoints. Computed here for display only — never
+  // written back, per the no-derived-values-in-storage rule.
+  async getLeaderboard(monthKey = null) {
+    let users = Object.values(this._load().users || {});
+    if (monthKey) {
+      users = users.map(u => ({ ...u, effectiveMonthlyPoints: u.monthlyKey === monthKey ? (u.monthlyPoints || 0) : 0 }));
+      return users.sort((a, b) => b.effectiveMonthlyPoints - a.effectiveMonthlyPoints);
+    }
     return users.sort((a, b) => {
       const ptsDiff = (b.totalPoints || 0) - (a.totalPoints || 0);
       if (ptsDiff !== 0) return ptsDiff;
@@ -194,7 +210,9 @@ class FirebaseAdapter {
   //   anything any player has recently played, in any mode. Written inside this
   //   same transaction (no extra round trip) since every call site that reaches
   //   here already has stats to commit.
-  async updateStats(userId, answered, correct, points, dailyUpdate, catStats, recentQuestionIds) {
+  // monthKey — "YYYY-MM" for the month this game's points count toward (primary
+  //   state — resets on a new key, same pattern as the daily streak fields below).
+  async updateStats(userId, answered, correct, points, dailyUpdate, catStats, recentQuestionIds, monthKey) {
     const ref = this.db.collection('users').doc(userId);
     await this.db.runTransaction(async tx => {
       const doc = await tx.get(ref);
@@ -205,6 +223,10 @@ class FirebaseAdapter {
         gamesPlayed:   d.gamesPlayed   + 1,
         totalPoints:   (d.totalPoints || 0) + points
       };
+      if (monthKey) {
+        update.monthlyPoints = (d.monthlyKey === monthKey ? (d.monthlyPoints || 0) : 0) + points;
+        update.monthlyKey    = monthKey;
+      }
       if (recentQuestionIds) update.recentQuestionIds = recentQuestionIds;
       if (catStats) {
         const existing = d.categoryStats || {};
@@ -290,9 +312,18 @@ class FirebaseAdapter {
     return snap.docs.map(d => ({ _id: d.id, ...d.data() }));
   }
 
-  async getLeaderboard() {
+  // monthKey — optional "YYYY-MM". When passed, each returned user gets an
+  // `effectiveMonthlyPoints` field (0 if their stored monthlyKey isn't this
+  // month, i.e. they haven't played yet this month) and the sort uses that
+  // instead of lifetime totalPoints. Computed here for display only — never
+  // written back, per the no-derived-values-in-storage rule.
+  async getLeaderboard(monthKey = null) {
     const snap  = await this.db.collection('users').get();
-    const users = snap.docs.map(d => d.data());
+    let users = snap.docs.map(d => d.data());
+    if (monthKey) {
+      users = users.map(u => ({ ...u, effectiveMonthlyPoints: u.monthlyKey === monthKey ? (u.monthlyPoints || 0) : 0 }));
+      return users.sort((a, b) => b.effectiveMonthlyPoints - a.effectiveMonthlyPoints);
+    }
     return users.sort((a, b) => {
       const ptsDiff = (b.totalPoints || 0) - (a.totalPoints || 0);
       if (ptsDiff !== 0) return ptsDiff;

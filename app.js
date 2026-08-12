@@ -1,4 +1,4 @@
-const APP_VERSION = '1.26';
+const APP_VERSION = '1.27';
 
 // =============================================================================
 // State
@@ -170,6 +170,10 @@ function dayKey(daysAgo = 0) {
 }
 function todayKey() { return dayKey(0); }
 
+// "YYYY-MM" for the current month, using the same 8h-shifted boundary as
+// dayKey() so the month rolls over at the same instant the day does.
+function monthKey() { return dayKey(0).slice(0, 7); }
+
 // Returns calendar days between two "YYYY-MM-DD" keys. Returns Infinity if prev is falsy.
 function computeDaysDiff(prev, today) {
   if (!prev) return Infinity;
@@ -326,10 +330,17 @@ const sounds = (() => {
 // =============================================================================
 // Screen navigation
 // =============================================================================
+// Moves focus to the new screen's heading (or the screen itself, if it has
+// none) so screen-reader/keyboard users get an announcement of where they
+// landed instead of focus silently staying on a now-hidden button.
 function showScreen(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.add('hidden'));
-  document.getElementById(id).classList.remove('hidden');
+  const el = document.getElementById(id);
+  el.classList.remove('hidden');
   window.scrollTo(0, 0);
+  const target = el.querySelector('h1, h2') || el;
+  if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
+  target.focus({ preventScroll: true });
 }
 
 // =============================================================================
@@ -497,11 +508,20 @@ document.getElementById('btn-results-leaderboard').addEventListener('click', ren
 // =============================================================================
 // LEADERBOARD
 // =============================================================================
-async function renderLeaderboard() {
+// Lifetime totalPoints never resets, so once one player pulls ahead the
+// trailing player has nothing left to play for. "This Month" gives a
+// regularly-resetting board (see monthKey()) so there's always a fresh race.
+let _lbMode = 'lifetime';
+
+async function renderLeaderboard(mode) {
+  if (mode) _lbMode = mode;
   showScreen('screen-leaderboard');
-  const users = await storage.getLeaderboard();
-  const list  = document.getElementById('leaderboard-list');
-  const empty = document.getElementById('leaderboard-empty');
+  document.querySelectorAll('#lb-mode-group .pill').forEach(p => p.classList.toggle('active', p.dataset.mode === _lbMode));
+
+  const isMonth = _lbMode === 'month';
+  const users   = await storage.getLeaderboard(isMonth ? monthKey() : null);
+  const list    = document.getElementById('leaderboard-list');
+  const empty   = document.getElementById('leaderboard-empty');
   list.innerHTML = '';
 
   const medals = ['🥇', '🥈', '🥉'];
@@ -512,11 +532,11 @@ async function renderLeaderboard() {
   users.forEach((u, i) => {
     const entry      = document.createElement('div');
     entry.className  = `lb-entry${i < 3 ? ' rank-' + (i + 1) : ''}`;
-    const percentage = u.totalAnswered ? Math.round((u.totalCorrect / u.totalAnswered) * 100) : null;
-    const detail     = u.totalAnswered
-      ? `${u.totalAnswered} q · ${u.gamesPlayed} game${u.gamesPlayed !== 1 ? 's' : ''}`
-      : 'No games yet';
-    const pts = (u.totalPoints || 0).toLocaleString();
+    const percentage = !isMonth && u.totalAnswered ? Math.round((u.totalCorrect / u.totalAnswered) * 100) : null;
+    const detail      = isMonth
+      ? '🗓️ Points this month'
+      : (u.totalAnswered ? `${u.totalAnswered} q · ${u.gamesPlayed} game${u.gamesPlayed !== 1 ? 's' : ''}` : 'No games yet');
+    const pts = ((isMonth ? u.effectiveMonthlyPoints : u.totalPoints) || 0).toLocaleString();
     entry.innerHTML = `
       <div class="lb-rank">${medals[i] || (i + 1)}</div>
       <div class="lb-avatar">${disneyAvatar(u.name)}</div>
@@ -532,6 +552,12 @@ async function renderLeaderboard() {
     list.appendChild(entry);
   });
 }
+
+document.getElementById('lb-mode-group').addEventListener('click', e => {
+  const pill = e.target.closest('.pill');
+  if (!pill) return;
+  renderLeaderboard(pill.dataset.mode);
+});
 
 // =============================================================================
 // WEEKLY HOMEWORK — a new movie assigned every Thursday for family movie night
@@ -926,6 +952,11 @@ function renderGameQuestion() {
   document.getElementById('flag-comment').value = '';
   document.getElementById('btn-flag').classList.remove('active');
   document.getElementById('btn-flag').disabled = false; // re-enable after a flag on a previous question
+
+  // showScreen() only fires once per game (screen-game has no h1/h2 to land on
+  // anyway); each new question is effectively its own "screen" for a screen
+  // reader, so move focus to the question text every time one renders.
+  document.getElementById('question-text').focus({ preventScroll: true });
 }
 
 function handleAnswer(selectedIdx) {
@@ -967,6 +998,12 @@ function handleAnswer(selectedIdx) {
   gameState.answers.push({ question: q, selectedText: chosen.text, correct: isCorrect });
   document.getElementById('game-score-display').textContent = `${gameState.score} ✓`;
 
+  const isLast = gameState.currentIndex === gameState.questions.length - 1;
+  document.getElementById('btn-next').textContent = isLast ? 'See Results ✨' : 'Next →';
+  document.getElementById('feedback-area').classList.remove('hidden');
+
+  // Set the live-region text after unhiding, not before — a screen reader won't
+  // reliably announce a change to a node's content while it's still display:none.
   const feedbackMsg = document.getElementById('feedback-msg');
   if (isCorrect) {
     feedbackMsg.textContent = '✓ Correct!';
@@ -975,10 +1012,6 @@ function handleAnswer(selectedIdx) {
     feedbackMsg.textContent = `✗ The correct answer was: ${q.answers[0]}`;
     feedbackMsg.className   = 'feedback-msg fb-wrong';
   }
-
-  const isLast = gameState.currentIndex === gameState.questions.length - 1;
-  document.getElementById('btn-next').textContent = isLast ? 'See Results ✨' : 'Next →';
-  document.getElementById('feedback-area').classList.remove('hidden');
 }
 
 document.getElementById('btn-next').addEventListener('click', () => {
@@ -1027,7 +1060,7 @@ document.getElementById('btn-exit-game').addEventListener('click', async () => {
       try {
         const pts     = scoreBreakdown(gameState.answers, false, 0, false).total;
         const newSeen = computeSeenIds(currentUser.id, gameState.answers.map(a => a.question.id));
-        await storage.updateStats(currentUser.id, answered, gameState.score, pts, null, buildCatStats(gameState.answers), newSeen);
+        await storage.updateStats(currentUser.id, answered, gameState.score, pts, null, buildCatStats(gameState.answers), newSeen, monthKey());
         saveSeenIds(currentUser.id, newSeen);
       } catch (e) {
         alert("Couldn't save your progress — check your connection.");
@@ -1139,7 +1172,7 @@ async function endGame() {
   gameState.saveFailed = false;
   try {
     const newSeen = computeSeenIds(currentUser.id, gameState.questions.map(q => q.id));
-    await storage.updateStats(currentUser.id, gameState.questions.length, gameState.score, bd.total, dailyUpdate, buildCatStats(gameState.answers), newSeen);
+    await storage.updateStats(currentUser.id, gameState.questions.length, gameState.score, bd.total, dailyUpdate, buildCatStats(gameState.answers), newSeen, monthKey());
     saveSeenIds(currentUser.id, newSeen);
     if (gameState.isDaily) clearDailyProgress(currentUser.id);
     const users = await storage.getUsers();

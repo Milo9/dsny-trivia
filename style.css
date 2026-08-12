@@ -1291,6 +1291,12 @@ input[type="text"]:focus-visible {
   outline-offset: 2px;
 }
 
+/* Screen-transition focus targets (see showScreen()/renderGameQuestion() in
+   app.js) use tabindex="-1" — they're reachable only by script, never by Tab —
+   so the browser's default focus ring would just be visual noise on every
+   screen change, not a real keyboard-navigation cue. */
+[tabindex="-1"]:focus { outline: none; }
+
 .homework-watched-list::-webkit-scrollbar { width: 6px; }
 .homework-watched-list::-webkit-scrollbar-thumb { background: var(--border); border-radius: 999px; }
 .homework-watched-list::-webkit-scrollbar-track { background: transparent; }

@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=1.26">
+  <link rel="stylesheet" href="style.css?v=1.27">
 </head>
 <body>
 <div id="stars" aria-hidden="true"></div>
@@ -150,11 +150,11 @@
     <div id="streak-banner" class="streak-banner hidden">🔥 <span id="streak-count"></span> in a row!</div>
     <div id="question-diff" class="diff-badge"></div>
     <div class="question-card">
-      <p id="question-text"></p>
+      <p id="question-text" tabindex="-1"></p>
     </div>
     <div id="answers-grid" class="answers-grid"></div>
     <div id="feedback-area" class="feedback-area hidden">
-      <div id="feedback-msg" class="feedback-msg"></div>
+      <div id="feedback-msg" class="feedback-msg" role="status" aria-live="polite"></div>
       <div class="feedback-actions">
         <button class="btn-primary btn-flex" id="btn-next">Next →</button>
         <button class="btn-flag" id="btn-flag" title="Flag this question">👎 Flag</button>
@@ -166,7 +166,7 @@
           <button class="btn-ghost" id="btn-flag-cancel">Cancel</button>
         </div>
       </div>
-      <div id="flag-thanks" class="flag-thanks hidden">Thanks! Reported. ✓</div>
+      <div id="flag-thanks" class="flag-thanks hidden" role="status" aria-live="polite">Thanks! Reported. ✓</div>
     </div>
   </div>
 
@@ -225,6 +225,10 @@
       <button class="btn-back" id="btn-leaderboard-back">← Back</button>
       <h2 class="screen-title gold">🏆 Leaderboard</h2>
     </div>
+    <div class="pill-group lb-mode-group" id="lb-mode-group">
+      <button class="pill active" data-mode="lifetime">Lifetime</button>
+      <button class="pill" data-mode="month">This Month</button>
+    </div>
     <div id="leaderboard-list" class="leaderboard-list"></div>
     <div id="leaderboard-empty" class="empty-state hidden">No games played yet — be the first!</div>
   </div>
@@ -232,7 +236,7 @@
 </div>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
-<script src="storage.js?v=1.26"></script>
-<script src="app.js?v=1.26"></script>
+<script src="storage.js?v=1.27"></script>
+<script src="app.js?v=1.27"></script>
 </body>
 </html>

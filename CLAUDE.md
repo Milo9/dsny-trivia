@@ -40,7 +40,7 @@ Screens are `<div class="screen">` elements that get `.hidden` toggled. Only one
 3. `screen-game` — active game
 4. `screen-results` — score, category breakdown, missed question review; shows "Review All Questions" button for daily games
 5. `screen-daily-review` — all 10 daily questions with each player's answer and the correct answer; reachable from results (after playing today), settings daily button (once played today), or the "View Questions →" link on yesterday's home card; title updates dynamically (Today's Review / Yesterday's Review)
-6. `screen-leaderboard` — all players ranked by total points (lifetime)
+6. `screen-leaderboard` — all players ranked by points; toggle between **Lifetime** (all-time `totalPoints`) and **This Month** (`monthlyPoints`, resets each calendar month) — see Storage Layer below
 
 ## Question Format
 ```js
@@ -177,6 +177,12 @@ Document shape:
 // users/{userId}
 { id, name, totalAnswered, totalCorrect, gamesPlayed,
   totalPoints,        // accumulated lifetime points — PRIMARY STATE, not derived (sequence-dependent bonuses make it non-recomputable)
+  monthlyPoints,       // points accumulated since monthlyKey was set — PRIMARY STATE, same reason as totalPoints.
+  monthlyKey,          // "YYYY-MM" (see monthKey() in app.js) this monthlyPoints total belongs to. Every
+                       // updateStats() call passes the current monthKey(); if it doesn't match the stored
+                       // monthlyKey, monthlyPoints resets to just this game's points instead of accumulating —
+                       // this is what makes the leaderboard's "This Month" view winnable even for a player who's
+                       // far behind on lifetime totalPoints. Absent on old docs (treated as monthlyPoints: 0).
   dailyStreak,        // consecutive days with a daily challenge
   lastDailyDate,      // "YYYY-MM-DD" of last daily played
   lastDailyScore,     // correct count (0–10) in last daily
@@ -208,7 +214,9 @@ Document shape:
              // this back to a deterministic weekly shuffle.
 ```
 
-Stats stored as raw counters (`totalAnswered`, `totalCorrect`, `categoryStats`); percentages are always derived, never stored. `totalPoints` looks like a derived value but is **primary state** — streak and bonus mechanics make it non-recomputable from counters alone. `updateStats` uses a Firestore transaction to avoid race conditions when two players finish at the same time. The `dailyUpdate` payload (score, points, dateKey, streak, answers), the `catStats` per-category delta, and the optional `recentQuestionIds` seen-ids mirror are all written inside the same transaction so all fields are always consistent.
+Stats stored as raw counters (`totalAnswered`, `totalCorrect`, `categoryStats`); percentages are always derived, never stored. `totalPoints` looks like a derived value but is **primary state** — streak and bonus mechanics make it non-recomputable from counters alone. `monthlyPoints`/`monthlyKey` are the same kind of primary state, just reset-on-new-key instead of ever-accumulating (see the Document shape comment above and getLeaderboard's `monthKey` param below) — `getLeaderboard()`'s `effectiveMonthlyPoints` is the one legitimate derived value here, computed for display only and never written back. `updateStats` uses a Firestore transaction to avoid race conditions when two players finish at the same time. The `dailyUpdate` payload (score, points, dateKey, streak, answers), the `catStats` per-category delta, the optional `recentQuestionIds` seen-ids mirror, and `monthKey` are all written inside the same transaction so all fields are always consistent.
+
+**Monthly leaderboard (added 2026-08):** `totalPoints` never resets, so a player who falls behind early has no realistic way to catch up on the lifetime board — a permanently stale race for whoever's trailing. `storage.getLeaderboard(monthKey)` takes an optional `"YYYY-MM"` (from `monthKey()` in `app.js`, same 8h-shifted boundary as `dayKey()`); when passed, it sorts by each user's `effectiveMonthlyPoints` (0 if their stored `monthlyKey` isn't the current month, i.e. they haven't played yet this month) instead of `totalPoints`. The leaderboard screen's pill toggle (`#lb-mode-group`, `_lbMode` in `app.js`) switches between the two calls. `updateStats()` is what actually rolls `monthlyPoints` over to 0 on a new key — see the Document shape comment above.
 
 **Firebase console:** https://console.firebase.google.com/project/disneytrivia-38ac6
 
@@ -242,7 +250,7 @@ The app is hosted on GitHub Pages from the `main` branch. Use the deploy script:
 
 `deploy.ps1` stages all changes, commits, and pushes in one step. Omitting `-Message` defaults to `"update app"`. GitHub Pages redeploys automatically within ~1 minute.
 
-**Cache-busting for code files:** `index.html` loads `style.css`, `storage.js`, and `app.js` with a `?v=` query string matching `APP_VERSION` (currently 1.26). When making code changes, bump `APP_VERSION` in `app.js` **and** update the matching `?v=` strings in `index.html` so browsers discard their cached copies. Question shard files and `movies.json` (fetched via `fetch()`) use `{ cache: 'no-cache' }` and don't need manual versioning.
+**Cache-busting for code files:** `index.html` loads `style.css`, `storage.js`, and `app.js` with a `?v=` query string matching `APP_VERSION` (currently 1.27). When making code changes, bump `APP_VERSION` in `app.js` **and** update the matching `?v=` strings in `index.html` so browsers discard their cached copies. Question shard files and `movies.json` (fetched via `fetch()`) use `{ cache: 'no-cache' }` and don't need manual versioning.
 
 **Manual fallback:**
 ```
@@ -347,6 +355,12 @@ Points are computed by `scoreBreakdown(answers, earnDailyBonus, dailyStreak, awa
 - Border-radius variables: `--r` (cards), `--r-sm` (buttons/inputs)
 - All new screens follow the pattern: `.screen` div → `screen-header` → content → actions at bottom
 - Mobile-first. Max width 480px centered. Test at 375px (iPhone SE) as the floor.
+
+## Accessibility (added 2026-08)
+- `showScreen(id)` (`app.js`) moves focus to the new screen's `h1`/`h2` (falling back to the screen `<div>` itself if it has none) on every navigation, adding `tabindex="-1"` the first time so it's focusable without joining the normal Tab order. This announces screen changes to screen-reader users instead of leaving focus stranded on a now-hidden button.
+- `renderGameQuestion()` additionally focuses `#question-text` (also `tabindex="-1"`) on every call — each new question is effectively its own "screen" for a screen reader, and `showScreen('screen-game')` only fires once per game, not once per question.
+- `style.css` suppresses the default `:focus` outline on any `tabindex="-1"` element (`[tabindex="-1"]:focus { outline: none; }`) since these are reachable only by script, never by Tab — the browser's default ring there would just be visual noise on every screen change, not a real keyboard cue. Real interactive elements (buttons/pills/inputs) keep their existing `:focus-visible` gold outline, unaffected.
+- `#feedback-msg` (correct/wrong text) and `#flag-thanks` (flag-report confirmation) both have `role="status" aria-live="polite"`. `handleAnswer()` unhides `#feedback-area` *before* setting `feedbackMsg.textContent` — a screen reader won't reliably announce a text change to a node that was still `display:none` at the moment the change happened, so the unhide has to come first for the live region to actually fire.
 
 ## Players
 Default users seeded on first load: **Kristen** and **Cara**. Seeding is in `FirebaseAdapter._seed()` — it checks if the doc exists before writing, so it's safe to run on every page load. Do not remove them from the seed.
