@@ -153,6 +153,8 @@ This table is updated manually; re-run `scripts/count_topics.py` to regenerate i
 
 **Local testing note:** `fetch()` is blocked on `file://`. Run a local server to test (`python -m http.server 8000`). On GitHub Pages it works fine.
 
+**Browser-driving this app for QA (added 2026-08-12):** `storage.js`'s active adapter is live production Firestore (project `disneytrivia-38ac6` — see Storage Layer below), not a sandbox. A headless-browser verification pass (Playwright, etc.) that clicks through Play Game / answers questions / exits will call the real `storage.updateStats()` against whichever player card it clicks (almost always the first-listed one) — this happened during the 2026-08-12 Disney-theming pass and inflated Cara's `gamesPlayed`/`totalPoints`/`monthlyPoints`/`totalAnswered` with test-game data, and also **overwrote her `recentQuestionIds` seen-history** down to just the fresh browser profile's tiny local list (see the per-device-state limitation under Regular Game: Answer Order & Repeat Avoidance) — the exact pre-test deltas weren't reconstructible after the fact. **Before browser-driving this app for any UI verification, switch the last line of `storage.js` to `new LocalStorageAdapter()`** (see Switching back to localStorage below), run the check, then switch it back — never leave a verification session pointed at the live Firebase project.
+
 ## Question-Bank Tooling (scripts/)
 All scripts are read-only against the shards — they print reports/candidates for a human to eyeball, they never edit shard JSON (adding/removing a question is still always a manual shard edit, per the rule below). Run from the project root with `python scripts/<name>.py`.
 
@@ -257,6 +259,24 @@ The app installs like a native app when added to a phone's home screen — no se
 - **Safe-area insets** — `body` in `style.css` has `padding: env(safe-area-inset-*)` on all four sides. This only has any effect in standalone mode on a notched device (resolves to `0px` everywhere else, including normal browser tabs), so it's safe to leave on unconditionally.
 - **Why no service worker:** a service worker's main value here would be offline play, but every write (scores, streaks, leaderboard, flags) goes straight to Firestore with no local queue/sync layer — an offline session would let someone play a full game that then silently fails to save. Adding a cache-only service worker just for "installs faster" without solving that would be a half-feature; skip it unless offline play is explicitly requested as its own project.
 
+## Disney Theming Pass (added 2026-08-12, v1.32)
+A look-and-feel pass — no gameplay/mode changes, CSS/JS/SVG-only, no new external assets. Requested explicitly as "make it feel more Disney" for this non-commercial household app.
+
+- **Script headings** — `.screen-title` (all screen `h2`s, including `#results-title`) and `.homework-movie-title` now use the `Pacifico` font already loaded for the home `app-title`, instead of `Fredoka One`. Numeric displays (`game-score`, `results-pct`) intentionally stay on Fredoka One. *Not* the fan-made "Waltograph" font specifically — no safe way to source/redistribute that file — Pacifico was the practical substitute; swap it in later if the user supplies the font file.
+- **Night-sky castle** — `.castle-deco` opacity raised 0.13→0.2 on home; both castle SVGs (home + results) gained a `.castle-windows` group of small twinkling gold circles (`windowTwinkle` keyframe). Added a second, dimmer "Tinker Bell" sparkle trail (`body::before`, `tinkerTrail` keyframe) alongside the existing shooting-star trail (`body::after`).
+- **Pixie-dust sparkle burst** — `spawnSparkles()` in `app.js`, called from `handleAnswer()` only on a correct answer. Spawns 7 `.pixie-spark` spans at `document.body` (fixed-position, coords from the tapped button's `getBoundingClientRect()` — appending inside the button risks ancestor clipping/transform issues). Skipped entirely under `prefers-reduced-motion` via `matchMedia`, not just left to the global animation-duration override, since that alone wouldn't stop the DOM churn.
+- **Circle-wipe screen transitions** — `.screen`'s old `fadeIn` keyframe replaced with `circleWipeIn` (`clip-path: circle()` iris wipe, 0.35s). `display:none → flex` restarts it automatically on every `showScreen()` call; no JS timing changes needed, and the existing reduced-motion media query still neutralizes it.
+- **Musical motifs** — see Sound Effects above. `sounds.fanfare()` now plays "When You Wish Upon a Star"'s opening phrase instead of a generic C-major arpeggio; `sounds.wrong()` is now a slide-whistle-down frequency ramp (new `slide()` helper in the `sounds` IIFE) instead of a flat thud.
+- **Hidden Mickeys** — `.hidden-mickey` (reuses the `.user-avatar` three-circle ear trick), one each on home/settings/results at ~0.06 opacity, `aria-hidden`, non-interactive. Classic Disney-fan easter egg, purely decorative.
+- **Mickey-head progress dots** — `#progress-dots` in `renderGameQuestion()`, one mini Mickey-silhouette dot per question, only rendered for ≤12 questions (falls back to the existing progress bar above it for longer games — dots would crowd/wrap at the 375px floor). `#game-progress` text is unchanged and remains the accessible equivalent; the dot row is `aria-hidden`. `handleAnswer()` colors the *current* dot green/red immediately on tap, ahead of the next `renderGameQuestion()` call, so it reacts to the answer instead of only updating on the next question.
+- **"Wishing on a star" boot screen** — the static "Gathering pixie dust…" boot text is now a twinkling star + a rotating real Walt Disney quote (`BOOT_QUOTES` in `app.js`, `startBootQuotes()`/`stopBootQuotes()`, started at the top of `init()` and stopped once loading finishes). Guards `document.body.contains(el)` in the interval tick so a stray late tick after `renderHome()` replaces the list can't throw.
+- **Ticket-stub player cards** — `.user-card` gained a corner "ADMIT ONE" ribbon (`::after`) and a perforated divider. The divider is a `border-left: dashed` **on `.user-arrow` itself** (in-flow), not an absolutely-positioned overlay — an earlier version used an absolutely-positioned `::before` line, which visually crossed through the stats line's text on cards where it wraps (e.g. a long "pts this month · NN% correct · 🔥 streak" line at 375-390px). Keep any future ticket-stub tweaks in-flow for the same reason.
+- **Storybook results page** — `.storybook-page` wraps the existing results-header/breakdown/missed-section content, reusing the `.question-card`-style filigree corner-wedge technique (gold corner accents + inset border) via its own `::after`. A `.storybook-end` "~ The End ~" flourish (also Pacifico) sits below it, before the action buttons. `.storybook-page` is `display:flex; flex-direction:column; gap:22px` to preserve the original `.screen`-level spacing now that those elements are nested one level deeper.
+
+**Bug found and fixed during this pass (unrelated to theming):** `btn-go-leaderboard` and `btn-results-leaderboard` were bound directly as `renderLeaderboard`'s click listener (`addEventListener('click', renderLeaderboard)`), which forwards the click `Event` object as `renderLeaderboard`'s `mode` argument — a truthy non-string value corrupts `_lbMode`, and `LB_PERIOD_KEY[_lbMode]()` then throws `is not a function`, breaking the leaderboard screen from either entry point. Fixed to `addEventListener('click', () => renderLeaderboard())`. The pill-group binding (`renderLeaderboard(pill.dataset.mode)`) was already correct and untouched.
+
+**Verification note:** this pass was checked by browser-driving the app with Playwright against the live `FirebaseAdapter` (not `LocalStorageAdapter`), which polluted the "Cara" player's stats with test-game data and reset her `recentQuestionIds` seen-history to the test browser's empty local list — see the browser-driving-for-QA note under Local testing note above. Disclosed to the user rather than guess-corrected; not repeated in future verification passes.
+
 ## Deploying Changes
 The app is hosted on GitHub Pages from the `main` branch. Use the deploy script:
 
@@ -266,7 +286,7 @@ The app is hosted on GitHub Pages from the `main` branch. Use the deploy script:
 
 `deploy.ps1` stages all changes, commits, and pushes in one step. Omitting `-Message` defaults to `"update app"`. GitHub Pages redeploys automatically within ~1 minute.
 
-**Cache-busting for code files:** `index.html` loads `style.css`, `storage.js`, and `app.js` with a `?v=` query string matching `APP_VERSION` (currently 1.31). When making code changes, bump `APP_VERSION` in `app.js` **and** update the matching `?v=` strings in `index.html` so browsers discard their cached copies. Question shard files and `movies.json` (fetched via `fetch()`) use `{ cache: 'no-cache' }` and don't need manual versioning.
+**Cache-busting for code files:** `index.html` loads `style.css`, `storage.js`, and `app.js` with a `?v=` query string matching `APP_VERSION` (currently 1.32). When making code changes, bump `APP_VERSION` in `app.js` **and** update the matching `?v=` strings in `index.html` so browsers discard their cached copies. Question shard files and `movies.json` (fetched via `fetch()`) use `{ cache: 'no-cache' }` and don't need manual versioning.
 
 **Manual fallback:**
 ```
@@ -330,8 +350,8 @@ A tongue-in-cheek "assignment" feature: a Disney/Pixar movie is picked for famil
 Web Audio API (synthesized, no audio files). Wrapped in the `sounds` IIFE in `app.js`:
 
 - `sounds.correct()` — two-note ascending chime (C5 → E5)
-- `sounds.wrong()` — single low triangle-wave thud (A3)
-- `sounds.fanfare()` — C major arpeggio (C5→E5→G5→C6), plays at results screen
+- `sounds.wrong()` — comedic slide-whistle-down (520Hz → 140Hz frequency ramp via `slide()`, added 2026-08-12; was a flat A3 thud)
+- `sounds.fanfare()` — the opening phrase of "When You Wish Upon a Star" (D4-D5-C#5-B4-G#4-A4-E5, added 2026-08-12; was a generic C-major arpeggio), plays at results screen
 - `sounds.toggle()` — flip muted state; persists in `localStorage` key `disney_sound_muted`
 - Mute button (🔊/🔇) is in the game screen top bar next to Exit
 - A wrong answer also triggers `navigator.vibrate(80)` (`handleAnswer()`, app.js) on devices that support it — no mute gate on this, it's independent of the sound toggle

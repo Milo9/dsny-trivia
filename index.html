@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=1.31">
+  <link rel="stylesheet" href="style.css?v=1.32">
 </head>
 <body>
 <div id="stars" aria-hidden="true"></div>
@@ -27,6 +27,7 @@
 
   <!-- HOME SCREEN -->
   <div class="screen" id="screen-home">
+    <div class="hidden-mickey hidden-mickey-home" aria-hidden="true"></div>
     <div class="castle-deco" aria-hidden="true">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 200 260" fill="currentColor">
         <rect x="99.3" y="-17" width="1.4" height="17"/><polygon points="100.7,-17 114,-13 100.7,-9"/>
@@ -38,6 +39,13 @@
         <polygon points="142,30 154,100 130,100"/><rect x="130" y="95" width="24" height="90"/>
         <polygon points="178,55 187,120 169,120"/><rect x="169" y="115" width="18" height="85"/>
         <rect x="0" y="185" width="200" height="55"/>
+        <g class="castle-windows">
+          <circle cx="100" cy="95" r="2.2"/><circle cx="100" cy="120" r="2.2"/>
+          <circle cx="92" cy="150" r="2"/><circle cx="108" cy="150" r="2"/>
+          <circle cx="58" cy="115" r="1.8"/><circle cx="58" cy="145" r="1.8"/>
+          <circle cx="142" cy="115" r="1.8"/><circle cx="142" cy="145" r="1.8"/>
+          <circle cx="22" cy="140" r="1.6"/><circle cx="178" cy="140" r="1.6"/>
+        </g>
       </svg>
     </div>
     <div class="home-header">
@@ -57,7 +65,10 @@
     </div>
     <div class="section-label">Who's playing?</div>
     <div id="user-list" class="user-list">
-      <p class="boot-loading">✨ Gathering pixie dust…</p>
+      <div class="boot-loading">
+        <div class="boot-star" aria-hidden="true">⭐</div>
+        <p id="boot-quote">Wishing on a star…</p>
+      </div>
     </div>
     <div id="daily-card" class="daily-card hidden">
       <div class="daily-card-title">📅 Today's Challenge</div>
@@ -93,6 +104,7 @@
 
   <!-- SETTINGS SCREEN -->
   <div class="screen hidden" id="screen-settings">
+    <div class="hidden-mickey hidden-mickey-settings" aria-hidden="true"></div>
     <div class="screen-header">
       <button class="btn-back" id="btn-settings-back">← Back</button>
       <h2 class="screen-title gold">Ready, <span id="settings-user-name"></span>?</h2>
@@ -159,6 +171,7 @@
     <div class="progress-track">
       <div id="progress-fill" class="progress-fill"></div>
     </div>
+    <div id="progress-dots" class="progress-dots hidden" aria-hidden="true"></div>
     <div id="streak-banner" class="streak-banner hidden">✨ <span id="streak-count"></span> in a row!</div>
     <div id="question-diff" class="diff-badge"></div>
     <div class="question-card">
@@ -184,6 +197,7 @@
 
   <!-- RESULTS SCREEN -->
   <div class="screen hidden" id="screen-results">
+    <div class="hidden-mickey hidden-mickey-results" aria-hidden="true"></div>
     <div class="castle-deco castle-results" aria-hidden="true">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 200 260" fill="currentColor">
         <rect x="99.3" y="-17" width="1.4" height="17"/><polygon points="100.7,-17 114,-13 100.7,-9"/>
@@ -195,25 +209,35 @@
         <polygon points="142,30 154,100 130,100"/><rect x="130" y="95" width="24" height="90"/>
         <polygon points="178,55 187,120 169,120"/><rect x="169" y="115" width="18" height="85"/>
         <rect x="0" y="185" width="200" height="55"/>
+        <g class="castle-windows">
+          <circle cx="100" cy="95" r="2.2"/><circle cx="100" cy="120" r="2.2"/>
+          <circle cx="92" cy="150" r="2"/><circle cx="108" cy="150" r="2"/>
+          <circle cx="58" cy="115" r="1.8"/><circle cx="58" cy="145" r="1.8"/>
+          <circle cx="142" cy="115" r="1.8"/><circle cx="142" cy="145" r="1.8"/>
+          <circle cx="22" cy="140" r="1.6"/><circle cx="178" cy="140" r="1.6"/>
+        </g>
       </svg>
     </div>
     <div id="results-fireworks" class="fireworks" aria-hidden="true">
       <span class="fw fw1"></span><span class="fw fw2"></span><span class="fw fw3"></span>
       <span class="fw fw4"></span><span class="fw fw5"></span>
     </div>
-    <div class="results-header">
-      <div id="results-emoji" class="results-emoji">🎉</div>
-      <h2 id="results-title" class="gold">Great Job!</h2>
-      <div id="results-fraction" class="results-fraction"></div>
-      <div id="results-points-display" class="results-points-wrap"></div>
-      <div id="results-pct" class="results-pct"></div>
-      <div id="save-warning" class="save-warning hidden">⚠️ Couldn't save this score — check your connection.</div>
+    <div class="storybook-page">
+      <div class="results-header">
+        <div id="results-emoji" class="results-emoji">🎉</div>
+        <h2 id="results-title" class="screen-title gold">Great Job!</h2>
+        <div id="results-fraction" class="results-fraction"></div>
+        <div id="results-points-display" class="results-points-wrap"></div>
+        <div id="results-pct" class="results-pct"></div>
+        <div id="save-warning" class="save-warning hidden">⚠️ Couldn't save this score — check your connection.</div>
+      </div>
+      <div id="results-breakdown" class="breakdown-list"></div>
+      <div id="missed-section" class="missed-section hidden">
+        <button class="btn-ghost" id="btn-review-missed"></button>
+        <div id="missed-list" class="missed-list hidden"></div>
+      </div>
     </div>
-    <div id="results-breakdown" class="breakdown-list"></div>
-    <div id="missed-section" class="missed-section hidden">
-      <button class="btn-ghost" id="btn-review-missed"></button>
-      <div id="missed-list" class="missed-list hidden"></div>
-    </div>
+    <div class="storybook-end" aria-hidden="true">~ The End ~</div>
     <div class="results-actions">
       <button class="btn-primary btn-full" id="btn-rematch">Rematch ↺</button>
       <button class="btn-secondary btn-full hidden" id="btn-review-daily">📋 Review All Questions</button>
@@ -252,7 +276,7 @@
 </div>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
-<script src="storage.js?v=1.31"></script>
-<script src="app.js?v=1.31"></script>
+<script src="storage.js?v=1.32"></script>
+<script src="app.js?v=1.32"></script>
 </body>
 </html>

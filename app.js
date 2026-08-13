@@ -1,4 +1,4 @@
-const APP_VERSION = '1.31';
+const APP_VERSION = '1.32';
 
 // =============================================================================
 // State
@@ -319,6 +319,26 @@ const sounds = (() => {
     } catch(e) {}
   }
 
+  // Frequency sweep — used for the wrong-answer slide-whistle-down. exponentialRamp
+  // needs both endpoints > 0, which a musical pitch always satisfies.
+  function slide(freqStart, freqEnd, start, dur, type = 'sine', vol = 0.28) {
+    try {
+      const c   = getCtx();
+      const osc = c.createOscillator();
+      const g   = c.createGain();
+      osc.connect(g); g.connect(c.destination);
+      osc.type = type;
+      const t0 = c.currentTime + start;
+      osc.frequency.setValueAtTime(freqStart, t0);
+      osc.frequency.exponentialRampToValueAtTime(freqEnd, t0 + dur);
+      g.gain.setValueAtTime(0, t0);
+      g.gain.linearRampToValueAtTime(vol, t0 + 0.01);
+      g.gain.linearRampToValueAtTime(0,   t0 + dur);
+      osc.start(t0);
+      osc.stop(t0 + dur + 0.02);
+    } catch(e) {}
+  }
+
   return {
     get muted() { return _muted; },
     toggle() {
@@ -333,14 +353,55 @@ const sounds = (() => {
     },
     wrong() {
       if (_muted) return;
-      tone(220, 0, 0.30, 'triangle', 0.18); // A3 — dull thud
+      slide(520, 140, 0, 0.32, 'triangle', 0.2); // comedic slide-whistle-down
     },
     fanfare() {
       if (_muted) return;
-      [[523.25,0],[659.25,0.13],[783.99,0.26],[1046.5,0.39]].forEach(([f,t]) => tone(f, t, 0.22));
+      // "When you wish upon a star" — Leigh Harline's opening phrase (Pinocchio,
+      // 1940), transcribed from a beginner letter-note sheet (noobnotes.net) so the
+      // synthesized fanfare is actually recognizable instead of a generic arpeggio.
+      // One note corrected from that source: "wish" is the leading tone (C#), not
+      // the natural C a beginner sheet would simplify to for playability.
+      [
+        [293.66, 0],     // D4   When
+        [587.33, 0.18],  // D5   you
+        [554.37, 0.36],  // C#5  wish  (leading tone — do-do'-ti; a beginner
+                         //             sheet's un-sharped "C" reads flat-7 here)
+        [493.88, 0.54],  // B4   up-
+        [415.30, 0.70],  // G#4  on
+        [440.00, 0.86],  // A4   a
+        [659.25, 1.04]   // E5   star
+      ].forEach(([f, t]) => tone(f, t, 0.22));
     }
   };
 })();
+
+// =============================================================================
+// Pixie-dust sparkle burst — fired from the tapped answer button on a correct
+// answer. Appended to document.body with fixed coords from getBoundingClientRect()
+// (not appended inside the button) so ancestor transforms/overflow can't clip it.
+// Skipped entirely under prefers-reduced-motion rather than relying on the global
+// animation-duration override, since that would still churn the DOM for nothing.
+function spawnSparkles(originEl) {
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const rect  = originEl.getBoundingClientRect();
+  const cx    = rect.left + rect.width / 2;
+  const cy    = rect.top + rect.height / 2;
+  const count = 7;
+  for (let i = 0; i < count; i++) {
+    const spark = document.createElement('span');
+    spark.className   = 'pixie-spark';
+    spark.textContent = i % 2 === 0 ? '✦' : '✧';
+    const angle = (Math.PI * 2 * i) / count + (Math.random() * 0.6 - 0.3);
+    const dist  = 40 + Math.random() * 30;
+    spark.style.left = cx + 'px';
+    spark.style.top  = cy + 'px';
+    spark.style.setProperty('--dx', (Math.cos(angle) * dist) + 'px');
+    spark.style.setProperty('--dy', (Math.sin(angle) * dist) + 'px');
+    spark.addEventListener('animationend', () => spark.remove());
+    document.body.appendChild(spark);
+  }
+}
 
 // =============================================================================
 // Screen navigation
@@ -521,9 +582,11 @@ async function addUser() {
 }
 
 // Leaderboard links
-document.getElementById('btn-go-leaderboard').addEventListener('click', renderLeaderboard);
+// Bound via an arrow wrapper, not passed directly — a direct listener would
+// forward the click Event as renderLeaderboard's `mode` arg, corrupting _lbMode.
+document.getElementById('btn-go-leaderboard').addEventListener('click', () => renderLeaderboard());
 document.getElementById('btn-leaderboard-back').addEventListener('click', () => renderHome());
-document.getElementById('btn-results-leaderboard').addEventListener('click', renderLeaderboard);
+document.getElementById('btn-results-leaderboard').addEventListener('click', () => renderLeaderboard());
 
 // =============================================================================
 // LEADERBOARD
@@ -936,6 +999,22 @@ function renderGameQuestion() {
   document.getElementById('game-progress').textContent      = `Q ${cur} of ${total}`;
   document.getElementById('progress-fill').style.width      = `${((cur - 1) / total) * 100}%`;
   document.getElementById('game-score-display').textContent = `${gameState.score} ✓`;
+
+  const dotsWrap = document.getElementById('progress-dots');
+  dotsWrap.classList.toggle('hidden', total > 12);
+  if (total <= 12) {
+    dotsWrap.innerHTML = '';
+    for (let i = 0; i < total; i++) {
+      const dot = document.createElement('span');
+      dot.className = 'progress-dot';
+      if (i < gameState.answers.length) {
+        dot.classList.add(gameState.answers[i].correct ? 'correct' : 'wrong');
+      } else if (i === gameState.currentIndex) {
+        dot.classList.add('current');
+      }
+      dotsWrap.appendChild(dot);
+    }
+  }
   const catBadge = document.getElementById('game-cat-badge');
   catBadge.textContent = catLabel(q.category);
   catBadge.className   = `cat-badge cat-${q.category}`;
@@ -1006,10 +1085,20 @@ function handleAnswer(selectedIdx) {
     gameState.score++;
     gameState.currentStreak++;
     sounds.correct();
+    const selectedBtn = document.querySelector(`.answer-btn[data-idx="${selectedIdx}"]`);
+    if (selectedBtn) spawnSparkles(selectedBtn);
   } else {
     gameState.currentStreak = 0;
     sounds.wrong();
     if (navigator.vibrate) navigator.vibrate(80);
+  }
+
+  // React the current dot immediately on tap rather than waiting for the next
+  // renderGameQuestion() call, so the dot row feels tied to the answer itself.
+  const curDot = document.getElementById('progress-dots').children[gameState.currentIndex];
+  if (curDot) {
+    curDot.classList.remove('current');
+    curDot.classList.add(isCorrect ? 'correct' : 'wrong');
   }
 
   const banner = document.getElementById('streak-banner');
@@ -1475,10 +1564,42 @@ async function loadMovies() {
   MOVIES = data.movies;
 }
 
+// Boot-screen quote rotation ("Wishing on a star…") — real Walt Disney quotes,
+// cycled while questions/movies load. Most sessions load fast enough that only
+// the first quote is ever seen; the rotation is for the rare slow-connection case.
+const BOOT_QUOTES = [
+  'All our dreams can come true, if we have the courage to pursue them.',
+  "It's kind of fun to do the impossible.",
+  'The way to get started is to quit talking and begin doing.',
+  'If you can dream it, you can do it.'
+];
+let _bootQuoteTimer = null;
+
+function startBootQuotes() {
+  let i = 0;
+  _bootQuoteTimer = setInterval(() => {
+    const el = document.getElementById('boot-quote');
+    if (!el || !document.body.contains(el)) { stopBootQuotes(); return; }
+    i = (i + 1) % BOOT_QUOTES.length;
+    el.classList.add('fading');
+    setTimeout(() => {
+      const target = document.getElementById('boot-quote');
+      if (target) target.textContent = BOOT_QUOTES[i];
+      if (target) target.classList.remove('fading');
+    }, 250);
+  }, 2600);
+}
+
+function stopBootQuotes() {
+  if (_bootQuoteTimer) { clearInterval(_bootQuoteTimer); _bootQuoteTimer = null; }
+}
+
 async function init() {
+  startBootQuotes();
   try {
     await loadQuestions();
   } catch (e) {
+    stopBootQuotes();
     document.getElementById('app').innerHTML =
       `<p style="padding:2rem;color:var(--red)">Failed to load questions: ${e.message}.<br><a href="" onclick="location.reload()">Tap to retry</a></p>`;
     return;
@@ -1491,6 +1612,7 @@ async function init() {
     MOVIES = [];
     homeworkState = null;
   }
+  stopBootQuotes();
   renderHome();
 }
 init();

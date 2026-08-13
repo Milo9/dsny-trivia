@@ -150,6 +150,33 @@ body::after {
   100% { transform: translate(700px, 380px) rotate(-25deg); opacity: 0; }
 }
 
+/* Second, smaller "Tinker Bell" sparkle trail — dimmer, offset path/timing so
+   it reads as a companion twinkle rather than a duplicate of body::after. */
+body::before {
+  content: '';
+  position: fixed;
+  top: 340px;
+  left: -80px;
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.9), rgba(255,215,0,0.5), transparent);
+  border-radius: 2px;
+  transform: rotate(18deg);
+  animation: tinkerTrail 24s ease-in 11s infinite;
+  pointer-events: none;
+  z-index: 0;
+  box-shadow:
+    14px 3px 0 1.5px rgba(255,255,255,0.85),
+    30px 5px 0 1px rgba(255,215,0,0.7);
+}
+
+@keyframes tinkerTrail {
+  0%   { transform: translate(0, 0) rotate(18deg); opacity: 0; }
+  2%   { opacity: 1; }
+  14%  { transform: translate(460px, 180px) rotate(18deg); opacity: 0; }
+  100% { transform: translate(460px, 180px) rotate(18deg); opacity: 0; }
+}
+
 /* ===== APP SHELL ===== */
 #app {
   max-width: 480px;
@@ -164,13 +191,17 @@ body::after {
   display: flex;
   flex-direction: column;
   gap: 22px;
-  animation: fadeIn 0.25s ease;
+  animation: circleWipeIn 0.35s ease;
   position: relative;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(6px); }
-  to   { opacity: 1; transform: translateY(0); }
+/* Classic cartoon iris-wipe on every screen change — display:none → flex
+   restarts the animation automatically on each showScreen() call, no JS timing
+   needed. 150% clip-path radius comfortably exceeds the element's diagonal at
+   any viewport this app targets, so the circle always ends fully open. */
+@keyframes circleWipeIn {
+  from { clip-path: circle(0% at 50% 0%);   opacity: 0.6; }
+  to   { clip-path: circle(150% at 50% 0%); opacity: 1; }
 }
 
 .hidden { display: none !important; }
@@ -187,7 +218,7 @@ body::after {
   pointer-events: none;
   z-index: -1;
   color: #7ab8ff;
-  opacity: 0.13;
+  opacity: 0.2;
 }
 
 .castle-deco.castle-results {
@@ -197,6 +228,46 @@ body::after {
   color: var(--gold);
   opacity: 0.07;
 }
+
+/* Lit castle windows — small glowing dots twinkling independently of the
+   castle silhouette's own (very low) opacity, so the skyline reads as "night,
+   with the castle lit up" rather than just a faint outline. */
+.castle-windows circle {
+  fill: var(--gold);
+  opacity: 0.3;
+  animation: windowTwinkle 4.5s ease-in-out infinite;
+}
+.castle-windows circle:nth-child(2n)   { animation-delay: 1.1s; }
+.castle-windows circle:nth-child(3n)   { animation-delay: 2.3s; }
+.castle-windows circle:nth-child(5n+1) { animation-delay: 0.6s; }
+
+@keyframes windowTwinkle {
+  0%, 100% { opacity: 0.2; }
+  50%      { opacity: 0.85; }
+}
+
+/* ===== HIDDEN MICKEYS ===== */
+/* Classic Disney-fan-service easter egg: a barely-there three-circle silhouette
+   (same ear trick as .user-avatar) tucked into a screen's background. Purely
+   decorative — not tappable, not announced. */
+.hidden-mickey, .hidden-mickey::before, .hidden-mickey::after {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--gold);
+}
+.hidden-mickey {
+  width: 22px; height: 22px;
+  opacity: 0.06;
+  pointer-events: none;
+  z-index: 0;
+}
+.hidden-mickey::before, .hidden-mickey::after { content: ''; width: 11px; height: 11px; top: -5px; }
+.hidden-mickey::before { left: -3px; }
+.hidden-mickey::after  { right: -3px; }
+
+.hidden-mickey-home     { top: 4px; right: 10px; }
+.hidden-mickey-settings { top: 54px; left: 6px; }
+.hidden-mickey-results  { bottom: 86px; right: 14px; }
 
 /* ===== HOME ===== */
 .home-header { text-align: center; padding: 10px 0 4px; }
@@ -293,18 +364,35 @@ body::after {
 .user-list { display: flex; flex-direction: column; gap: 10px; }
 
 .boot-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
   text-align: center;
   color: var(--muted);
   font-size: 14px;
   font-weight: 600;
-  padding: 24px 0;
-  animation: bootPulse 1.6s ease-in-out infinite;
+  padding: 24px 16px;
 }
 
-@keyframes bootPulse {
-  0%, 100% { opacity: 0.45; }
-  50%      { opacity: 1; }
+.boot-star {
+  font-size: 22px;
+  animation: bootStarTwinkle 1.6s ease-in-out infinite;
+  filter: drop-shadow(0 0 8px rgba(255,215,0,0.6));
 }
+
+@keyframes bootStarTwinkle {
+  0%, 100% { opacity: 0.45; transform: scale(1); }
+  50%      { opacity: 1;    transform: scale(1.15); }
+}
+
+#boot-quote {
+  max-width: 280px;
+  font-style: italic;
+  transition: opacity 0.25s ease;
+}
+
+#boot-quote.fading { opacity: 0; }
 
 .user-card {
   background: var(--bg-card);
@@ -316,6 +404,26 @@ body::after {
   align-items: center;
   gap: 14px;
   transition: border-color 0.2s, background 0.2s, transform 0.1s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ticket-stub flourish: a corner "ADMIT ONE" ribbon plus a perforated divider
+   on the chevron itself (.user-arrow, below) so it reads as the tear-off stub
+   — a retro-park-E-ticket feel. The divider lives on the arrow's own border,
+   not an absolutely-positioned overlay, so it can't cross into the info
+   column's text on cards where the stats line wraps. CSS-only, markup/behavior
+   unchanged. */
+.user-card::after {
+  content: 'ADMIT ONE';
+  position: absolute;
+  top: 7px; right: -20px;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: rgba(255,215,0,0.4);
+  transform: rotate(30deg);
+  pointer-events: none;
 }
 
 .user-card:hover  { border-color: var(--primary); background: var(--bg-hover); box-shadow: 0 4px 18px rgba(78,142,255,0.12); }
@@ -355,7 +463,13 @@ body::after {
 .streak-stars { font-size: 11px; letter-spacing: 2px; margin-top: 3px; }
 .streak-stars .stars-filled { color: var(--gold); text-shadow: 0 0 4px rgba(255,215,0,0.5); }
 .streak-stars .stars-empty  { color: var(--border); }
-.user-arrow { color: var(--muted); font-size: 18px; transition: transform 0.2s, color 0.2s; }
+.user-arrow {
+  color: var(--muted);
+  font-size: 18px;
+  transition: transform 0.2s, color 0.2s;
+  padding-left: 10px;
+  border-left: 2px dashed rgba(255,215,0,0.28);
+}
 .user-card:hover .user-arrow { transform: translateX(3px); color: var(--gold); }
 
 /* ===== ADD USER ===== */
@@ -485,6 +599,19 @@ input[type="text"]::placeholder { color: var(--muted); }
 .screen-header { display: flex; align-items: center; gap: 14px; }
 .screen-title  { font-size: 24px; }
 .gold { color: var(--gold); }
+
+/* Disney-signature script font on screen titles, reusing the Pacifico face
+   already loaded for the home app-title — gives every screen a consistent
+   "storybook" voice. .homework-movie-title gets the same treatment via its own
+   rule further down (it already sets font-family, so it's not duplicated here
+   — a second equal-specificity rule for it previously caused the later one in
+   file order to silently win with Fredoka One instead). Numeric displays
+   (game-score, results-pct) intentionally stay on Fredoka One, which reads
+   better at a glance than a script face. */
+.screen-title {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+}
 
 /* ===== SETTINGS ===== */
 .settings-body { display: flex; flex-direction: column; gap: 28px; flex: 1; }
@@ -618,6 +745,39 @@ input[type="text"]::placeholder { color: var(--muted); }
     0 0 8px rgba(255,215,0,0.7);
 }
 
+/* Mickey-head progress dots — mini silhouettes (same ear trick as .user-avatar)
+   filling in as each question is answered. Only shown at <=12 questions; the
+   bar above is the fallback for longer games where dots would wrap/crowd at
+   the 375px floor. aria-hidden since #game-progress text is the accessible
+   equivalent, not a duplicate of it. */
+.progress-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.progress-dot, .progress-dot::before, .progress-dot::after {
+  position: relative;
+  border-radius: 50%;
+  background: var(--border);
+  transition: background 0.25s;
+}
+.progress-dot { width: 12px; height: 12px; }
+.progress-dot::before, .progress-dot::after {
+  content: '';
+  position: absolute;
+  width: 6px; height: 6px;
+  top: -3px;
+  background: inherit;
+}
+.progress-dot::before { left: -2px; }
+.progress-dot::after  { right: -2px; }
+
+.progress-dot.current { background: var(--primary); box-shadow: 0 0 6px rgba(78,142,255,0.5); }
+.progress-dot.correct { background: var(--green); }
+.progress-dot.wrong   { background: var(--red); opacity: 0.75; }
+
 .diff-badge {
   align-self: flex-start;
   font-size: 11px; font-weight: 800;
@@ -737,6 +897,24 @@ input[type="text"]::placeholder { color: var(--muted); }
 
 .answer-btn.reveal { border-color: var(--green) !important; background: rgba(34,197,94,0.06); }
 
+/* ===== PIXIE-DUST SPARKLE BURST (spawnSparkles() in app.js) ===== */
+.pixie-spark {
+  position: fixed;
+  z-index: 999;
+  color: var(--gold);
+  font-size: 16px;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  animation: pixieBurst 0.7s ease-out forwards;
+  text-shadow: 0 0 6px rgba(255,215,0,0.8);
+}
+
+@keyframes pixieBurst {
+  0%   { opacity: 0; transform: translate(-50%, -50%) scale(0.3); }
+  20%  { opacity: 1; }
+  100% { opacity: 0; transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(1); }
+}
+
 /* ===== EXIT BUTTON ===== */
 .btn-exit {
   background: transparent;
@@ -794,6 +972,44 @@ input[type="text"]::placeholder { color: var(--muted); }
   font-size: 13px; font-weight: 700;
   color: var(--green);
   padding: 6px;
+}
+
+/* ===== STORYBOOK RESULTS PAGE ===== */
+/* Reuses the .question-card storybook-filigree corner technique (inset border +
+   gold corner wedges) so results reads as a finished storybook page rather than
+   a plain summary screen. Flex column + matching gap preserves the original
+   .screen-level spacing between header/breakdown/missed-section now that
+   they're nested one level deeper. */
+.storybook-page {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  position: relative;
+  padding: 8px 4px 4px;
+}
+
+.storybook-page::after {
+  content: '';
+  position: absolute;
+  inset: -2px 2px 2px;
+  border: 1px solid rgba(255,215,0,0.14);
+  border-radius: var(--r);
+  pointer-events: none;
+  background:
+    linear-gradient(135deg, var(--gold) 0, var(--gold) 2px, transparent 2px, transparent 12px) top left / 12px 12px no-repeat,
+    linear-gradient(-135deg, var(--gold) 0, var(--gold) 2px, transparent 2px, transparent 12px) top right / 12px 12px no-repeat,
+    linear-gradient(45deg, var(--gold) 0, var(--gold) 2px, transparent 2px, transparent 12px) bottom left / 12px 12px no-repeat,
+    linear-gradient(-45deg, var(--gold) 0, var(--gold) 2px, transparent 2px, transparent 12px) bottom right / 12px 12px no-repeat;
+  opacity: 0.3;
+}
+
+.storybook-end {
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 18px;
+  color: var(--gold);
+  opacity: 0.55;
+  margin-top: -8px;
 }
 
 /* ===== RESULTS ===== */
@@ -1114,7 +1330,7 @@ input[type="text"]::placeholder { color: var(--muted); }
 }
 
 .homework-movie-title {
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Pacifico', cursive;
   font-size: 19px;
   color: var(--text);
 }
