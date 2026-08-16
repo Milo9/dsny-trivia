@@ -195,6 +195,32 @@ class FirebaseAdapter {
     this._seed().catch(() => {});
   }
 
+  // Wraps a *read* call with a timeout + one retry. Firestore's SDK does not
+  // reject promptly on a degraded (not fully offline) connection — its
+  // internal stream just keeps retrying, which can hang a read for a very
+  // long time with nothing on screen ever changing. Without this, a flaky
+  // connection looks identical to a silent app bug: the caller's own
+  // try/catch never fires because nothing ever rejects. fn is called fresh
+  // on each attempt (not a pre-started promise) so the retry is a real new
+  // request, not a re-await of the same stuck one. Never used for writes —
+  // a timed-out write whose first attempt actually landed server-side would
+  // double-apply on retry (see updateStats, which is deliberately excluded).
+  _withTimeout(fn, { attempts = 2, timeoutMs = 8000 } = {}) {
+    const attempt = () => Promise.race([
+      fn(),
+      new Promise((_, reject) => setTimeout(
+        () => reject(new Error('Request timed out — check your connection.')), timeoutMs
+      ))
+    ]);
+    return (async () => {
+      let lastErr;
+      for (let i = 0; i < attempts; i++) {
+        try { return await attempt(); } catch (e) { lastErr = e; }
+      }
+      throw lastErr;
+    })();
+  }
+
   async _seed() {
     const defaults = [
       { id: 'kristen', name: 'Kristen', totalAnswered: 0, totalCorrect: 0, gamesPlayed: 0, totalPoints: 0 },
@@ -208,8 +234,10 @@ class FirebaseAdapter {
   }
 
   async getUsers() {
-    const snap = await this.db.collection('users').get();
-    return snap.docs.map(d => d.data());
+    return this._withTimeout(async () => {
+      const snap = await this.db.collection('users').get();
+      return snap.docs.map(d => d.data());
+    });
   }
 
   async saveUser(user) {
@@ -287,8 +315,10 @@ class FirebaseAdapter {
   }
 
   async getDailyPins(dateKey) {
-    const doc = await this.db.collection('dailies').doc(dateKey).get();
-    return doc.exists ? (doc.data().questionIds || null) : null;
+    return this._withTimeout(async () => {
+      const doc = await this.db.collection('dailies').doc(dateKey).get();
+      return doc.exists ? (doc.data().questionIds || null) : null;
+    });
   }
 
   async saveDailyPins(dateKey, questionIds) {
@@ -309,17 +339,21 @@ class FirebaseAdapter {
   // all-time union would exhaust the corpus in ~205 days and then silently
   // fall back to zero exclusion every day after that.
   async getAllDailyQuestionIds(sinceDateKey) {
-    const snap = await this.db.collection('dailies')
-      .where(firebase.firestore.FieldPath.documentId(), '>=', sinceDateKey)
-      .get();
-    const ids = new Set();
-    snap.docs.forEach(d => (d.data().questionIds || []).forEach(id => ids.add(id)));
-    return Array.from(ids);
+    return this._withTimeout(async () => {
+      const snap = await this.db.collection('dailies')
+        .where(firebase.firestore.FieldPath.documentId(), '>=', sinceDateKey)
+        .get();
+      const ids = new Set();
+      snap.docs.forEach(d => (d.data().questionIds || []).forEach(id => ids.add(id)));
+      return Array.from(ids);
+    });
   }
 
   async getHomeworkState() {
-    const doc = await this.db.collection('weeklyHomework').doc('state').get();
-    return doc.exists ? doc.data() : null;
+    return this._withTimeout(async () => {
+      const doc = await this.db.collection('weeklyHomework').doc('state').get();
+      return doc.exists ? doc.data() : null;
+    });
   }
 
   async saveHomeworkState(state) {
@@ -331,8 +365,10 @@ class FirebaseAdapter {
   }
 
   async getFlags() {
-    const snap = await this.db.collection('flags').get();
-    return snap.docs.map(d => ({ _id: d.id, ...d.data() }));
+    return this._withTimeout(async () => {
+      const snap = await this.db.collection('flags').get();
+      return snap.docs.map(d => ({ _id: d.id, ...d.data() }));
+    });
   }
 
   // targetMonthKey — optional "YYYY-MM", either the current month (for "This
@@ -344,18 +380,20 @@ class FirebaseAdapter {
   // of), else 0 (they didn't play at all in that month). Computed here for
   // display only — never written back, per the no-derived-values-in-storage rule.
   async getLeaderboard(targetMonthKey = null) {
-    const snap  = await this.db.collection('users').get();
-    let users = snap.docs.map(d => d.data());
-    if (targetMonthKey) {
-      users = users.map(u => ({ ...u, effectivePeriodPoints: this._effectivePeriodPoints(u, targetMonthKey) }));
-      return users.sort((a, b) => b.effectivePeriodPoints - a.effectivePeriodPoints);
-    }
-    return users.sort((a, b) => {
-      const ptsDiff = (b.totalPoints || 0) - (a.totalPoints || 0);
-      if (ptsDiff !== 0) return ptsDiff;
-      const pa = a.totalAnswered ? a.totalCorrect / a.totalAnswered : -1;
-      const pb = b.totalAnswered ? b.totalCorrect / b.totalAnswered : -1;
-      return pb - pa;
+    return this._withTimeout(async () => {
+      const snap  = await this.db.collection('users').get();
+      let users = snap.docs.map(d => d.data());
+      if (targetMonthKey) {
+        users = users.map(u => ({ ...u, effectivePeriodPoints: this._effectivePeriodPoints(u, targetMonthKey) }));
+        return users.sort((a, b) => b.effectivePeriodPoints - a.effectivePeriodPoints);
+      }
+      return users.sort((a, b) => {
+        const ptsDiff = (b.totalPoints || 0) - (a.totalPoints || 0);
+        if (ptsDiff !== 0) return ptsDiff;
+        const pa = a.totalAnswered ? a.totalCorrect / a.totalAnswered : -1;
+        const pb = b.totalAnswered ? b.totalCorrect / b.totalAnswered : -1;
+        return pb - pa;
+      });
     });
   }
 

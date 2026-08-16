@@ -277,6 +277,19 @@ A look-and-feel pass — no gameplay/mode changes, CSS/JS/SVG-only, no new exter
 
 **Verification note:** this pass was checked by browser-driving the app with Playwright against the live `FirebaseAdapter` (not `LocalStorageAdapter`), which polluted the "Cara" player's stats with test-game data and reset her `recentQuestionIds` seen-history to the test browser's empty local list — see the browser-driving-for-QA note under Local testing note above. Disclosed to the user rather than guess-corrected; not repeated in future verification passes.
 
+## Loading Resilience (added 2026-08-16, v1.33)
+Users reported the home screen's player list / leaderboard sometimes just never loads (no error, no data — a permanently empty screen). Root causes, found by reading the actual load paths rather than guessing:
+
+- **`renderLeaderboard()` had no try/catch at all** — a genuinely unhandled path, not just a missing-timeout one. If `storage.getLeaderboard()` ever rejected, the leaderboard screen was already shown with an empty list and stayed that way forever, no error UI, no retry link. `renderHome()`'s `storage.getUsers()` call *did* have a try/catch, but that only helps if the underlying call actually rejects.
+- **Nothing had a timeout.** Firestore's compat SDK does not reject promptly on a degraded-but-not-fully-offline connection (spotty hotel/ship wifi, etc.) — its internal stream just keeps retrying indefinitely. A stalled (not failed) `fetch()` for the question shards behaves the same way. Existing try/catch blocks are useless against a promise that never settles either way — this is why the failure looked like "sometimes doesn't load" rather than a reproducible error.
+
+Fixes, all read-only (writes are deliberately untouched — see below):
+- `FirebaseAdapter._withTimeout(fn, {attempts=2, timeoutMs=8000})` in `storage.js` wraps every Firestore **read** method (`getUsers`, `getLeaderboard`, `getHomeworkState`, `getDailyPins`, `getAllDailyQuestionIds`, `getFlags`) — races each attempt against an 8s timeout, retries once, then rejects for real so the caller's existing try/catch actually fires. `fn` is re-invoked fresh on each attempt (a new Firestore call, not a re-await of the same stuck one).
+- `renderLeaderboard()` (`app.js`) now has the same try/catch + "Tap to retry" pattern `renderHome()` already used, plus both now show a `.load-status` loading placeholder (new class, `style.css`) *before* the await so a slow-but-eventually-successful load doesn't look identical to a blank/broken screen while it's in flight.
+- `fetchWithTimeout()` (`app.js`) wraps the question-shard/movies-pool `fetch()` calls in `loadQuestions()`/`loadMovies()` with an `AbortController` 10s timeout, so a stalled boot fetch becomes a real rejection the existing boot error screen ("Failed to load questions… Tap to retry") can catch, instead of hanging behind the quote rotation forever.
+
+**Writes are deliberately excluded from the retry wrapper** (`updateStats`, `saveUser`, `saveDailyPins`, `saveHomeworkState`, `flagReport`, `saveRecentQuestionIds`) — a timed-out write whose first attempt actually landed server-side (Firestore transactions aren't instantly abortable client-side) would double-apply on an automatic retry, e.g. double-counting points. If write-path hangs turn out to be a real problem too, that needs a timeout-without-retry treatment, not this same wrapper — not done here since it wasn't the reported symptom.
+
 ## Deploying Changes
 The app is hosted on GitHub Pages from the `main` branch. Use the deploy script:
 
@@ -286,7 +299,7 @@ The app is hosted on GitHub Pages from the `main` branch. Use the deploy script:
 
 `deploy.ps1` stages all changes, commits, and pushes in one step. Omitting `-Message` defaults to `"update app"`. GitHub Pages redeploys automatically within ~1 minute.
 
-**Cache-busting for code files:** `index.html` loads `style.css`, `storage.js`, and `app.js` with a `?v=` query string matching `APP_VERSION` (currently 1.32). When making code changes, bump `APP_VERSION` in `app.js` **and** update the matching `?v=` strings in `index.html` so browsers discard their cached copies. Question shard files and `movies.json` (fetched via `fetch()`) use `{ cache: 'no-cache' }` and don't need manual versioning.
+**Cache-busting for code files:** `index.html` loads `style.css`, `storage.js`, and `app.js` with a `?v=` query string matching `APP_VERSION` (currently 1.33). When making code changes, bump `APP_VERSION` in `app.js` **and** update the matching `?v=` strings in `index.html` so browsers discard their cached copies. Question shard files and `movies.json` (fetched via `fetch()`) use `{ cache: 'no-cache' }` and don't need manual versioning.
 
 **Manual fallback:**
 ```

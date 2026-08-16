@@ -678,6 +678,13 @@ input[type="text"]::placeholder { color: var(--muted); }
 .load-error small { color: var(--muted); font-size: 11px; word-break: break-all; }
 .load-error a { color: var(--primary); }
 
+.load-status {
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+  padding: 20px 0;
+}
+
 .cat-chip:has(input:not(:checked)) {
   opacity: 0.35;
   text-decoration: line-through;

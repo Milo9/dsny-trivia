@@ -1,4 +1,4 @@
-const APP_VERSION = '1.32';
+const APP_VERSION = '1.33';
 
 // =============================================================================
 // State
@@ -432,7 +432,7 @@ async function renderHome() {
   document.getElementById('add-user-error').classList.add('hidden');
 
   const list = document.getElementById('user-list');
-  list.innerHTML = '';
+  list.innerHTML = '<p class="load-status">Loading players…</p>';
 
   let users;
   try {
@@ -441,6 +441,7 @@ async function renderHome() {
     list.innerHTML = `<p class="load-error">Couldn't load players.<br><small>${e.message || e}</small><br><a href="" onclick="location.reload()">Tap to retry</a></p>`;
     return;
   }
+  list.innerHTML = '';
 
   const lastId = localStorage.getItem('disney_last_user');
   const today  = todayKey();
@@ -606,9 +607,18 @@ async function renderLeaderboard(mode) {
 
   const isPeriod   = _lbMode !== 'lifetime';
   const periodKey  = isPeriod ? LB_PERIOD_KEY[_lbMode]() : null;
-  const users      = await storage.getLeaderboard(periodKey);
   const list       = document.getElementById('leaderboard-list');
   const empty      = document.getElementById('leaderboard-empty');
+  empty.classList.add('hidden');
+  list.innerHTML = '<p class="load-status">Loading leaderboard…</p>';
+
+  let users;
+  try {
+    users = await storage.getLeaderboard(periodKey);
+  } catch (e) {
+    list.innerHTML = `<p class="load-error">Couldn't load the leaderboard.<br><small>${e.message || e}</small><br><a href="" onclick="location.reload()">Tap to retry</a></p>`;
+    return;
+  }
   list.innerHTML = '';
 
   const medals = ['🥇', '🥈', '🥉'];
@@ -1553,14 +1563,24 @@ document.getElementById('btn-results-home').addEventListener('click', renderHome
 // =============================================================================
 // Boot
 // =============================================================================
+// A stalled (not failed) fetch never rejects on its own, so a flaky connection
+// would otherwise hang boot behind the quote rotation forever with no error
+// shown. AbortController turns that stall into a real rejection the existing
+// try/catch + "Tap to retry" UI can handle.
+function fetchWithTimeout(url, opts = {}, timeoutMs = 10000) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  return fetch(url, { ...opts, signal: controller.signal }).finally(() => clearTimeout(timer));
+}
+
 async function loadQuestions() {
-  const manifest = await fetch('questions/manifest.json', { cache: 'no-cache' }).then(r => r.json());
-  const shards = await Promise.all(manifest.shards.map(s => fetch(s, { cache: 'no-cache' }).then(r => r.json())));
+  const manifest = await fetchWithTimeout('questions/manifest.json', { cache: 'no-cache' }).then(r => r.json());
+  const shards = await Promise.all(manifest.shards.map(s => fetchWithTimeout(s, { cache: 'no-cache' }).then(r => r.json())));
   QUESTIONS = shards.flat();
 }
 
 async function loadMovies() {
-  const data = await fetch('movies.json', { cache: 'no-cache' }).then(r => r.json());
+  const data = await fetchWithTimeout('movies.json', { cache: 'no-cache' }).then(r => r.json());
   MOVIES = data.movies;
 }
 
