@@ -77,6 +77,78 @@ def jaccard(a, b):
     return len(a & b) / union if union else 0.0
 
 
+def _tokens_overlap(a, b):
+    """True if two already-stemmed tokens are the same word, or one is a
+    length->=5 prefix of the other. The prefix branch exists because `stem()`
+    only strips ies/ing/ed/es/s -- it does not strip -er, so "shoemaking" (->
+    "shoemak") and "shoemaker" (unchanged) never land on the same stem. Adding
+    -er-stripping to `stem()` itself would corrupt unrelated tokens ("water" ->
+    "wat") for every other script that shares it, so the tolerance lives here
+    instead, local to leak detection."""
+    if a == b:
+        return True
+    shorter, longer = (a, b) if len(a) <= len(b) else (b, a)
+    return len(shorter) >= 5 and longer.startswith(shorter)
+
+
+def find_answer_leaks(q):
+    """Detect the correct answer (answers[0]) leaking into the question's own
+    text -- CLAUDE.md rule #2. Two tiers:
+
+    Tier 1 (high precision): the full normalized answer string appears
+    verbatim inside the question text. This is the original validate_batch.py
+    check, now shared so both drafts and a whole-corpus pass use it.
+
+    Tier 2 (advisory): a content word from the correct answer -- matched via
+    _tokens_overlap, so morphological variants like shoemaker/shoemaking count
+    -- also appears in the question, AND that same word does NOT appear (by
+    the same matching rule) in any of the 3 distractors. The distractor check
+    is what keeps this from flagging ordinary shared category vocabulary (a
+    question and all 4 answers about the same film, say) -- it only fires when
+    the overlap is specific to the correct answer.
+
+    Both tiers are lexical/stem-based only. A pure-synonym leak (question says
+    "canine," answer is "Dog") shares no stem and is NOT detectable this way --
+    same residual class the find_near_dupes.py dedup tooling already accepts
+    and leaves to a human read. Always eyeball hits; this is advisory, not
+    proof of a violation (e.g. a title-answer that must legitimately contain
+    a franchise word the question also mentions, like "Frozen Fever" answering
+    a question that says "Frozen").
+
+    Returns a list of {"tier": 1|2, "token": str} hits (empty if none, or if
+    `q` doesn't have exactly 4 answers).
+    """
+    answers = q.get("answers") or []
+    if len(answers) != 4 or not isinstance(q.get("question"), str):
+        return []
+
+    question_text = q["question"]
+    norm_q = question_text.strip().lower()
+    correct_raw = re.sub(r"[^\w\s]", "", answers[0]).strip().lower()
+
+    hits = []
+
+    if len(correct_raw) >= 4 and correct_raw in norm_q:
+        hits.append({"tier": 1, "token": answers[0]})
+
+    q_tokens = tokenize(question_text)
+    correct_tokens = tokenize(answers[0])
+    distractor_tokens = set()
+    for a in answers[1:]:
+        distractor_tokens |= tokenize(a)
+
+    for tok in sorted(correct_tokens):
+        if len(tok) < 4:
+            continue
+        if not any(_tokens_overlap(tok, qt) for qt in q_tokens):
+            continue
+        if any(_tokens_overlap(tok, dt) for dt in distractor_tokens):
+            continue
+        hits.append({"tier": 2, "token": tok})
+
+    return hits
+
+
 # Direct-to-video sequels and theatrical shorts historically under-mined
 # relative to their parent film (see CLAUDE.md "richest under-mined veins").
 # `parent` names a key in count_topics.py's film_keywords so its matches can

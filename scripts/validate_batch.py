@@ -5,11 +5,14 @@ pasted into a shard JSON file.
 Checks: valid JSON, required fields present, id type/uniqueness (against
 both the existing corpus and within the batch itself), difficulty/category
 enum membership, exactly 4 answers, exact-duplicate question text against
-the corpus, and two advisory heuristics for the "Answer structure" rules in
-CLAUDE.md (answers that read like sentences rather than short noun phrases,
-and an answer0 that appears verbatim inside its own question text). These
-heuristics are advisory, not proof of a violation -- always eyeball what
-gets flagged; this does not verify facts.
+the corpus, and advisory heuristics for the "Answer structure" rules in
+CLAUDE.md: answers that read like sentences rather than short noun phrases,
+plus a two-tier answers[0]-leaked-into-the-question check (see
+find_answer_leaks() in _common.py -- tier 1 is a verbatim substring match,
+tier 2 catches morphological variants and partial-phrase overlaps a
+verbatim check misses, e.g. "shoemaker" in the question vs. "Shoemaking" as
+the answer). These heuristics are advisory, not proof of a violation --
+always eyeball what gets flagged; this does not verify facts.
 
 Usage:
   python scripts/validate_batch.py path/to/draft.json
@@ -17,7 +20,7 @@ Usage:
 import json
 import sys
 
-from _common import VALID_CATEGORIES, VALID_DIFFICULTIES, load_corpus
+from _common import VALID_CATEGORIES, VALID_DIFFICULTIES, find_answer_leaks, load_corpus
 
 
 def main():
@@ -96,11 +99,16 @@ def main():
                     f"{loc}: answers[{j}]='{a}' looks like a sentence, not a short noun phrase (rule #3)"
                 )
 
-        correct = answers[0].strip().lower()
-        if len(correct) >= 4 and correct in norm_q:
-            warnings.append(
-                f"{loc}: answers[0]='{answers[0]}' appears verbatim in the question text (possible leak, rule #2)"
-            )
+        for leak in find_answer_leaks(q):
+            if leak["tier"] == 1:
+                warnings.append(
+                    f"{loc}: answers[0]='{answers[0]}' appears verbatim in the question text (possible leak, rule #2)"
+                )
+            else:
+                warnings.append(
+                    f"{loc}: answers[0]='{answers[0]}' shares word '{leak['token']}' with the question, "
+                    f"not present in the other 3 answers (possible leak, rule #2, tier 2)"
+                )
 
     print(f"Checked {len(draft)} draft questions against {len(corpus)} existing.")
     print(f"Next available id after current corpus: {next_id}\n")
