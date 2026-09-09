@@ -11,8 +11,12 @@ plus a two-tier answers[0]-leaked-into-the-question check (see
 find_answer_leaks() in _common.py -- tier 1 is a verbatim substring match,
 tier 2 catches morphological variants and partial-phrase overlaps a
 verbatim check misses, e.g. "shoemaker" in the question vs. "Shoemaking" as
-the answer). These heuristics are advisory, not proof of a violation --
-always eyeball what gets flagged; this does not verify facts.
+the answer), and a movies-vs-pixar category check (find_category_bugs.py's
+check_category() -- rule #9 recurs on new drafts even after a whole-corpus
+sweep, per the 2026-07-29 and 2026-09-08 audits, so it needs to run here
+too, not just as a one-off pass). These heuristics are advisory, not proof
+of a violation -- always eyeball what gets flagged; this does not verify
+facts.
 
 Usage:
   python scripts/validate_batch.py path/to/draft.json
@@ -21,6 +25,7 @@ import json
 import sys
 
 from _common import VALID_CATEGORIES, VALID_DIFFICULTIES, find_answer_leaks, load_corpus
+from find_category_bugs import check_category
 
 
 def main():
@@ -98,6 +103,11 @@ def main():
                 warnings.append(
                     f"{loc}: answers[{j}]='{a}' looks like a sentence, not a short noun phrase (rule #3)"
                 )
+
+        for film, wrong, right in check_category(q):
+            warnings.append(
+                f"{loc}: category '{wrong}' but question matches {film} -- should likely be '{right}' (rule #9)"
+            )
 
         for leak in find_answer_leaks(q):
             if leak["tier"] == 1:

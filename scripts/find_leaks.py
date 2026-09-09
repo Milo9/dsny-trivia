@@ -17,6 +17,15 @@ also mentions, e.g. "Frozen Fever" answering a question that says "Frozen").
 Both tiers are lexical/stem-based only -- a pure-synonym leak (question says
 "canine," answer is "Dog") shares no stem and will not be caught here.
 
+Tier 2 in the `music` category deserves extra scrutiny: song titles are
+short and a question describing a song almost has to paraphrase it, so a
+tier-2 hit there is close to a guaranteed real leak (found 5 in the
+2026-09-08 audit: "wishes to be part of the human world" -> "Part of Your
+World", "wishes and dreams" -> "A Dream Is a Wish...", "impatience to
+become king" -> "I Just Can't Wait to Be King", "around the next bend in
+the river" -> "Just Around the Riverbend", "while getting lost" -> "Lost
+in the Woods"). Prioritize eyeballing that category's hits first.
+
 Usage:
   python scripts/find_leaks.py            # both tiers
   python scripts/find_leaks.py --tier1    # verbatim only

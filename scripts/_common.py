@@ -6,6 +6,17 @@ count_topics.py and find_gaps.py.
 import json
 import os
 import re
+import sys
+
+# Windows' default console codepage (cp1252) can't encode some question text
+# (accented names, smart quotes) -- this crashed find_near_dupes.py under
+# output redirection (e.g. `> report.txt`) on a `ā` character. Every
+# script here imports _common, so fixing it once here covers all of them.
+try:
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
+except (AttributeError, ValueError):
+    pass
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
