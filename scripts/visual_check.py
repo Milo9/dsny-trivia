@@ -30,6 +30,7 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
+sys.stdout.reconfigure(encoding="utf-8")  # labels can include ✓ etc.; Windows' cp1252 console can't encode them
 ROOT = Path(__file__).resolve().parent.parent
 FIREBASE_LINE = "const storage = new FirebaseAdapter();"
 LOCAL_LINE = "const storage = new LocalStorageAdapter();"
@@ -44,10 +45,13 @@ def copy_site(dest: Path) -> None:
             continue  # deleted in the working tree but not yet committed
         (dest / rel).parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(src, dest / rel)
-    # Pick up new, not-yet-committed files the page loads.
-    for extra in ["game-logic.js"]:
-        if (ROOT / extra).is_file() and not (dest / extra).exists():
-            shutil.copy2(ROOT / extra, dest / extra)
+    # Pick up new, not-yet-committed files too (e.g. a new script the page loads).
+    untracked = subprocess.run(["git", "ls-files", "-z", "--others", "--exclude-standard"],
+                               cwd=ROOT, capture_output=True, check=True).stdout
+    for rel in filter(None, untracked.decode("utf-8").split("\0")):
+        if (ROOT / rel).is_file():
+            (dest / rel).parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(ROOT / rel, dest / rel)
     storage = dest / "storage.js"
     text = storage.read_text(encoding="utf-8")
     text = text.replace(FIREBASE_LINE, LOCAL_LINE)
@@ -127,6 +131,12 @@ def main():
             def progress_text():
                 return page.inner_text("#game-progress")
 
+            def answered(user):  # LocalStorageAdapter's committed totalAnswered
+                return page.evaluate(f"JSON.parse(localStorage.getItem('disney_trivia_v1')).users.{user}.totalAnswered || 0")
+
+            def checkpoint(user):
+                return page.evaluate(f"localStorage.getItem('disney_game_progress_{user}')")
+
             print("Regular game")
             page.goto(base)
             boot()
@@ -144,8 +154,8 @@ def main():
             page.wait_for_selector("#screen-results:not(.hidden)")
             c.ok(True, "finished a 10-question game")
             c.shot("results")
-            c.ok(page.evaluate("localStorage.getItem('disney_game_progress_kristen')") is None,
-                 "checkpoint cleared after a saved game")
+            c.ok(checkpoint("kristen") is None, "checkpoint cleared after a saved game")
+            c.ok(answered("kristen") == 10, "finished game committed exactly 10 answers")
 
             print("Leaderboard")
             page.click("#btn-results-leaderboard")
@@ -166,6 +176,7 @@ def main():
             page.wait_for_selector("#screen-game:not(.hidden)")
             answer(2)
             c.ok(progress_text().startswith("Q 3 "), "on Q3 before reload")
+            score_before = page.inner_text("#game-score-display")
             page.reload()
             boot()
             page.wait_for_timeout(300)
@@ -178,7 +189,7 @@ def main():
             page.click("#confirm-ok")
             page.wait_for_selector("#screen-game:not(.hidden)")
             c.ok(progress_text().startswith("Q 3 "), "resumed at Q3")
-            c.ok(page.inner_text("#game-score-display").strip() != "", "score restored")
+            c.ok(page.inner_text("#game-score-display") == score_before, f"score restored ({score_before})")
 
             print("Back button mid-game")
             page.go_back()
@@ -193,12 +204,13 @@ def main():
             page.keyboard.press("Escape")
             page.wait_for_timeout(200)
             c.ok(c.visible("#screen-game"), "Escape dismisses the exit sheet")
+            before = answered("kristen")
             page.click("#btn-exit-game")
             page.wait_for_selector("#confirm-overlay:not(.hidden)")
             page.click("#confirm-ok")
             page.wait_for_selector("#screen-home:not(.hidden)")
-            c.ok(page.evaluate("localStorage.getItem('disney_game_progress_kristen')") is None,
-                 "Exit commits and clears the checkpoint")
+            c.ok(checkpoint("kristen") is None, "Exit commits and clears the checkpoint")
+            c.ok(answered("kristen") == before + 2, "Exit after 2 answers commits exactly 2")
 
             print("Start new with a leftover checkpoint")
             pick_player("Kristen")
@@ -211,17 +223,46 @@ def main():
             page.wait_for_selector("#confirm-overlay:not(.hidden)")
             page.click("#confirm-cancel")  # "Not now"
             page.wait_for_timeout(200)
-            c.ok(page.evaluate("localStorage.getItem('disney_game_progress_kristen')") is not None,
-                 "'Not now' keeps the checkpoint")
+            c.ok(checkpoint("kristen") is not None, "'Not now' keeps the checkpoint")
+            before = answered("kristen")
             page.click("#btn-start-game")
             page.wait_for_selector("#confirm-overlay:not(.hidden)")
             c.ok(page.inner_text("#confirm-cancel") == "Start new", "starting a game offers 'Start new'")
             page.click("#confirm-cancel")
             page.wait_for_selector("#screen-game:not(.hidden)")
             c.ok(progress_text().startswith("Q 1 "), "'Start new' starts a fresh game")
+            c.ok(answered("kristen") == before + 1, "'Start new' commits the 1 leftover answer exactly once")
             page.click("#btn-exit-game")
             page.wait_for_selector("#confirm-overlay:not(.hidden)")
             page.click("#confirm-ok")
+            page.wait_for_selector("#screen-home:not(.hidden)")
+            c.ok(answered("kristen") == before + 1, "exiting with 0 answers commits nothing")
+
+            print("Failed save is kept and offered again")
+            pick_player("Kristen")
+            page.click("#btn-start-game")
+            page.wait_for_selector("#screen-game:not(.hidden)")
+            answer(9)
+            before = answered("kristen")
+            page.evaluate("() => { storage.updateStats = () => Promise.reject(new Error('offline')); }")
+            answer(1)
+            page.wait_for_selector("#screen-results:not(.hidden)")
+            c.ok(c.visible("#save-warning"), "results show the save warning")
+            c.shot("results-save-failed")
+            c.ok(checkpoint("kristen") is not None, "failed save keeps the checkpoint")
+            c.ok(answered("kristen") == before, "failed save committed nothing")
+            page.reload()  # restores the real updateStats
+            boot()
+            pick_player("Kristen")
+            page.wait_for_selector("#confirm-overlay:not(.hidden)")
+            c.ok(page.inner_text("#confirm-title") == "Unsaved game", "player is offered the unsaved game")
+            c.shot("unsaved-game-prompt")
+            page.click("#confirm-ok")
+            page.wait_for_selector("#screen-results:not(.hidden)")
+            c.ok(not c.visible("#save-warning"), "'Save it' saves without a warning")
+            c.ok(answered("kristen") == before + 10, "'Save it' commits exactly 10")
+            c.ok(checkpoint("kristen") is None, "checkpoint cleared after 'Save it'")
+            page.click("#btn-results-home")
             page.wait_for_selector("#screen-home:not(.hidden)")
 
             print("Daily: kill, resume, finish, review")
@@ -237,20 +278,30 @@ def main():
             page.click("#btn-daily-challenge")
             page.wait_for_selector("#screen-game:not(.hidden)")
             c.ok(progress_text().startswith("Q 4 of 10"), "daily resumed at Q4")
-            answer(7)
+            answer(6)
+            # The post-save refresh failing (flaky wifi) must not report a failed
+            # save, and must not leave the finished daily replayable.
+            page.evaluate("() => { window._realGetUsers = storage.getUsers; storage.getUsers = () => Promise.reject(new Error('timeout')); }")
+            answer(1)
             page.wait_for_selector("#screen-results:not(.hidden)")
+            c.ok(not c.visible("#save-warning"), "refresh timeout after a landed save shows no warning")
+            c.ok(answered("cara") == 10, "daily committed exactly 10")
             c.shot("daily-results")
-            page.click("#btn-review-daily")
+            page.click("#btn-play-again")
+            page.wait_for_selector("#screen-settings:not(.hidden)")
+            c.ok("Review" in page.inner_text("#btn-daily-challenge"), "finished daily is replay-blocked despite the refresh timeout")
+            page.evaluate("() => { storage.getUsers = window._realGetUsers; }")
+            page.click("#btn-daily-challenge")
             page.wait_for_selector("#screen-daily-review:not(.hidden)")
             page.wait_for_timeout(500)
             c.ok(page.locator("#daily-review-list > *").count() >= 10, "daily review lists the 10 questions")
             c.shot("daily-review")
             page.go_back()
-            page.wait_for_selector("#screen-results:not(.hidden)")
-            c.ok(True, "Back from daily review returns to results")
+            page.wait_for_selector("#screen-settings:not(.hidden)")
+            c.ok(True, "Back from daily review returns to settings")
 
             print("Update toast")
-            page.click("#btn-results-home")
+            page.click("#btn-settings-back")
             page.wait_for_selector("#screen-home:not(.hidden)")
             idx = site / "index.html"
             orig = idx.read_text(encoding="utf-8")

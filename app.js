@@ -1,4 +1,4 @@
-const APP_VERSION = '1.35';
+const APP_VERSION = '1.36';
 
 // =============================================================================
 // State
@@ -1450,6 +1450,10 @@ async function endGame() {
   // If the save fails (offline), still show the results screen with a warning
   // instead of stranding the player on the game screen. Seen-ids stay unmarked so
   // an unsaved game's questions can come around again.
+  // saveFailed means "updateStats rejected" and nothing else — the refresh
+  // below is separate so a timed-out read after a landed write can't claim
+  // the score was kept on-device (it was already cleared) or leave the daily
+  // replayable via a stale lastDailyDate.
   gameState.saveFailed = false;
   try {
     const newSeen = computeSeenIds(currentUser.id, gameState.questions.map(q => q.id));
@@ -1457,10 +1461,19 @@ async function endGame() {
     saveSeenIds(currentUser.id, newSeen);
     if (gameState.isDaily) clearDailyProgress(currentUser.id);
     else clearGameCheckpoint(currentUser.id);
-    const users = await storage.getUsers();
-    currentUser = users.find(u => u.id === currentUser.id) || currentUser;
   } catch (e) {
     gameState.saveFailed = true;
+  }
+  if (!gameState.saveFailed) {
+    try {
+      const users = await storage.getUsers();
+      currentUser = users.find(u => u.id === currentUser.id) || currentUser;
+    } catch (e) {
+      if (isFirstDailyToday) {
+        currentUser.lastDailyDate = today;
+        currentUser.dailyStreak   = newDailyStreak;
+      }
+    }
   }
   renderResults();
 }
