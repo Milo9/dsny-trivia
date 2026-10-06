@@ -369,7 +369,7 @@ In order, `deploy.ps1` (modeled on Offline Trivia's `ship`):
 4. **Gates** (skip with `-SkipChecks`) — `scripts/validate_corpus.py` if anything under `questions/` changed; `node --test test/game-logic.test.js` always (skipped with a warning if node is missing). A failure aborts before anything is staged.
 5. `git add -A`, commit, push. `-DryRun` stops before this step (the bump/sync from steps 2–3 still lands in the working tree).
 
-**Cache-busting:** `index.html` loads `style.css`, `storage.js`, `game-logic.js`, and `app.js` with `?v=` matching `APP_VERSION` (currently 1.35). `deploy.ps1` handles it — **don't hand-bump**. The `app.js?v=` change is also what triggers the update-available toast (see above): a deploy that skipped it would never tell already-open apps a new build exists. If you ever must edit `index.html` outside the Edit tool, use `sed`/.NET, not PowerShell `Set-Content`/`-replace`. Question shard files and `movies.json` (fetched via `fetch()`) use `{ cache: 'no-cache' }` and don't need versioning.
+**Cache-busting:** `index.html` loads `style.css`, `storage.js`, `game-logic.js`, and `app.js` with `?v=` matching `APP_VERSION` (see `app.js` line 1 — not recorded here since every code deploy bumps it). `deploy.ps1` handles it — **don't hand-bump**. The `app.js?v=` change is also what triggers the update-available toast (see above): a deploy that skipped it would never tell already-open apps a new build exists. If you ever must edit `index.html` outside the Edit tool, use `sed`/.NET, not PowerShell `Set-Content`/`-replace`. Question shard files and `movies.json` (fetched via `fetch()`) use `{ cache: 'no-cache' }` and don't need versioning.
 
 **Manual fallback** (skips the bump and gates — only if `deploy.ps1` itself is broken):
 ```
