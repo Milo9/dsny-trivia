@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=1.34">
+  <link rel="stylesheet" href="style.css?v=1.35">
 </head>
 <body>
 <div id="stars" aria-hidden="true"></div>
@@ -229,7 +229,7 @@
         <div id="results-fraction" class="results-fraction"></div>
         <div id="results-points-display" class="results-points-wrap"></div>
         <div id="results-pct" class="results-pct"></div>
-        <div id="save-warning" class="save-warning hidden">⚠️ Couldn't save this score — check your connection.</div>
+        <div id="save-warning" class="save-warning hidden">⚠️ Couldn't save this score — check your connection. It's kept on this device and you'll be offered it again next time.</div>
       </div>
       <div id="results-breakdown" class="breakdown-list"></div>
       <div id="missed-section" class="missed-section hidden">
@@ -275,6 +275,17 @@
 
 </div>
 
+<div id="confirm-overlay" class="confirm-overlay hidden">
+  <div class="confirm-sheet" role="dialog" aria-modal="true" aria-labelledby="confirm-title" aria-describedby="confirm-message">
+    <h3 id="confirm-title" class="confirm-title"></h3>
+    <p id="confirm-message" class="confirm-message"></p>
+    <div class="confirm-actions">
+      <button id="confirm-cancel" class="btn-secondary" type="button">Cancel</button>
+      <button id="confirm-ok" class="btn-primary" type="button">OK</button>
+    </div>
+  </div>
+</div>
+
 <div id="update-toast" class="update-toast hidden" role="status" aria-live="polite">
   <span class="update-toast-text">✨ A new version is ready!</span>
   <div class="update-toast-actions">
@@ -285,7 +296,8 @@
 
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
-<script src="storage.js?v=1.34"></script>
-<script src="app.js?v=1.34"></script>
+<script src="storage.js?v=1.35"></script>
+<script src="game-logic.js?v=1.35"></script>
+<script src="app.js?v=1.35"></script>
 </body>
 </html>

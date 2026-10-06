@@ -1,4 +1,4 @@
-const APP_VERSION = '1.34';
+const APP_VERSION = '1.35';
 
 // =============================================================================
 // State
@@ -14,16 +14,9 @@ let homeworkState = null; // { weekKey, movieId, pickedAt, watchedIds[] } — th
 // =============================================================================
 // Utilities
 // =============================================================================
-function shuffle(arr) {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
-
-const SEEN_MAX = 300;
+// Pure rules (shuffle, dates, scoring, daily selection, checkpoint reconcile)
+// live in game-logic.js, loaded before this file and unit-tested by
+// test/game-logic.test.js. This file only adds DOM, storage, and globals.
 
 function getSeenIds(userId) {
   try { return JSON.parse(localStorage.getItem('disney_seen_' + userId)) || []; }
@@ -35,9 +28,7 @@ function getSeenIds(userId) {
 // once that save actually succeeds (mirrors the existing "don't mark seen on
 // a failed/offline save" behavior).
 function computeSeenIds(userId, newIds) {
-  let seen = getSeenIds(userId).concat(newIds);
-  if (seen.length > SEEN_MAX) seen = seen.slice(seen.length - SEEN_MAX);
-  return seen;
+  return capSeenIds(getSeenIds(userId), newIds);
 }
 
 function saveSeenIds(userId, seen) {
@@ -99,24 +90,97 @@ function clearDailyProgress(userId) {
   localStorage.removeItem(dailyProgressKey(userId));
 }
 
-// Rebuilds gameState for the daily challenge, resuming from saved progress when
-// it exists, matches today's date, and lines up with today's pinned question
-// order (position-by-position) — if pins shifted underneath a saved answer
-// (e.g. a backfill after the exit), only the still-matching prefix is kept.
-function buildDailyGameState(questions, today) {
-  const progress = getDailyProgress(currentUser.id);
-  const answers  = [];
-  if (progress && progress.dateKey === today && Array.isArray(progress.answers)) {
-    for (const a of progress.answers) {
-      const q = questions[answers.length];
-      if (!q || q.id !== a.questionId) break;
-      answers.push({ question: q, selectedText: a.selectedText, correct: a.correct });
+// --- Regular game checkpoint (per-device, per-user) ---
+// Written after every answer so a game survives the app being killed, a
+// reload, or the update toast's "Update now". Cleared once the game's answers
+// are committed to Firestore (endGame or an Exit); kept on a failed save so
+// they can be committed later. See offerGameResume().
+function gameCheckpointKey(userId) { return 'disney_game_progress_' + userId; }
+
+function getGameCheckpoint(userId) {
+  try { return JSON.parse(localStorage.getItem(gameCheckpointKey(userId))); }
+  catch { return null; }
+}
+
+function clearGameCheckpoint(userId) {
+  try { localStorage.removeItem(gameCheckpointKey(userId)); } catch (e) {}
+}
+
+// Checkpoints the active game. Called from handleAnswer() right after the
+// answer is recorded — not on Next — since the correct answer is revealed on
+// tap, and saving later would let a killed app re-answer a revealed question.
+function checkpointGame() {
+  if (!currentUser || gameState.answers.length === 0) return;
+  try {
+    if (gameState.isDaily) {
+      saveDailyProgress(currentUser.id, gameState.dateKey || todayKey(), serializeAnswers(gameState.answers));
+    } else {
+      localStorage.setItem(gameCheckpointKey(currentUser.id), JSON.stringify({
+        questionIds: gameState.questions.map(q => q.id),
+        answers:     serializeAnswers(gameState.answers),
+        savedAt:     new Date().toISOString()
+      }));
     }
+  } catch (e) {
+    // storage full / blocked — the game still plays, it just can't be resumed
   }
-  let currentStreak = 0;
-  for (let i = answers.length - 1; i >= 0 && answers[i].correct; i--) currentStreak++;
-  const score = answers.filter(a => a.correct).length;
-  return { questions, currentIndex: answers.length, answers, score, currentStreak, isDaily: true, pointsEarned: 0, scoreBreakdown: null };
+}
+
+// Commits a regular game's answers to stats — the shared path for finishing,
+// exiting, and settling a leftover checkpoint. Perfect bonus only if complete.
+async function commitRegularAnswers(answers, complete) {
+  const pts     = scoreBreakdown(answers, false, 0, complete).total;
+  const newSeen = computeSeenIds(currentUser.id, answers.map(a => a.question.id));
+  await storage.updateStats(currentUser.id, answers.length, answers.filter(a => a.correct).length, pts, null, buildCatStats(answers), newSeen, monthKey());
+  saveSeenIds(currentUser.id, newSeen);
+}
+
+// If this player has a leftover regular-game checkpoint, offers to resume it
+// (or, if every question was answered but the save failed, to save it).
+//   mode 'select' — on picking a player. "Not now" and dismiss both leave the
+//                   checkpoint for later.
+//   mode 'start'  — about to start a different game. Cancel ("Start new")
+//                   commits the leftover answers first so they're never
+//                   silently dropped; dismiss aborts the new game.
+// Returns 'resumed' | 'proceed' | 'abort'.
+async function offerGameResume(mode) {
+  const cp = getGameCheckpoint(currentUser.id);
+  if (!cp) return 'proceed';
+  const gs = reconcileRegularCheckpoint(cp, new Map(QUESTIONS.map(q => [q.id, q])));
+  if (!gs || gs.answers.length === 0) { clearGameCheckpoint(currentUser.id); return 'proceed'; }
+
+  const n = gs.answers.length, total = gs.questions.length, complete = n >= total;
+  const choice = await showConfirm({
+    title:       complete ? 'Unsaved game' : 'Resume your game?',
+    message:     complete
+      ? `Your last ${total}-question game didn't get saved. Save it to your stats now?`
+      : `You were ${n} of ${total} questions into a game. Pick up where you left off?`,
+    confirmText: complete ? 'Save it' : 'Resume',
+    cancelText:  mode === 'start' ? (complete ? 'Save & start new' : 'Start new') : 'Not now'
+  });
+
+  if (choice === true) {
+    gameState = gs;
+    if (complete) endGame(); else renderGameQuestion();
+    return 'resumed';
+  }
+  if (mode === 'select' || choice === null) return mode === 'select' ? 'proceed' : 'abort';
+
+  // mode 'start' + explicit cancel: commit the leftover answers, then go on.
+  try {
+    await commitRegularAnswers(gs.answers, complete);
+    clearGameCheckpoint(currentUser.id);
+    return 'proceed';
+  } catch (e) {
+    await showAlert("Couldn't save", "Your unfinished game couldn't be saved — check your connection. It's still kept on this device.");
+    return 'abort';
+  }
+}
+
+// Rebuilds gameState for the daily challenge, resuming from saved progress
+// (see reconcileDailyProgress in game-logic.js for the matching rules).
+function buildDailyGameState(questions, today) {
+  return reconcileDailyProgress(questions, getDailyProgress(currentUser.id), today);
 }
 
 function pct(correct, total) {
@@ -153,140 +217,15 @@ const CAT_LABELS = {
 
 function catLabel(c) { return CAT_LABELS[c] || c; }
 
-function buildCatStats(answers) {
-  const stats = {};
-  for (const a of answers) {
-    const c = a.question.category;
-    if (!stats[c]) stats[c] = { answered: 0, correct: 0 };
-    stats[c].answered++;
-    if (a.correct) stats[c].correct++;
-  }
-  return stats;
-}
+// Thin wrappers binding game-logic.js's pure functions to app globals.
+function pickFromMoviePool(excludeIds) { return pickMovie(MOVIES, excludeIds); }
 
-// --- Daily challenge helpers ---
-
-// Daily resets at 2am Mountain Time (UTC-6 summer / MDT).
-// Subtracting 8h shifts the UTC day boundary to 8am UTC = 2am MDT = 4am EDT.
-// getUTC* is correct here because the offset is baked into the timestamp.
-// daysAgo=0 → today, daysAgo=1 → yesterday (same 8h offset, no string arithmetic).
-function dayKey(daysAgo = 0) {
-  const d = new Date(Date.now() - 8 * 3600000 - daysAgo * 86400000);
-  return `${d.getUTCFullYear()}-${String(d.getUTCMonth()+1).padStart(2,'0')}-${String(d.getUTCDate()).padStart(2,'0')}`;
-}
-function todayKey() { return dayKey(0); }
-
-// "YYYY-MM" for the current month, using the same 8h-shifted boundary as
-// dayKey() so the month rolls over at the same instant the day does.
-function monthKey() { return dayKey(0).slice(0, 7); }
-
-// "YYYY-MM" for the calendar month before the current one — used for the
-// leaderboard's "Last Month" view. Built from a real Date so it correctly
-// rolls the year back in January (JS normalizes a negative month index).
-function prevMonthKey() {
-  const [y, m] = monthKey().split('-').map(Number);
-  const d = new Date(y, m - 2, 1);
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`;
-}
-
-// Returns calendar days between two "YYYY-MM-DD" keys. Returns Infinity if prev is falsy.
-function computeDaysDiff(prev, today) {
-  if (!prev) return Infinity;
-  const [py, pm, pd] = prev.split('-').map(Number);
-  const [ty, tm, td] = today.split('-').map(Number);
-  return Math.round((new Date(ty, tm - 1, td) - new Date(py, pm - 1, pd)) / 86400000);
-}
-
-// Deterministic Fisher-Yates using an inline mulberry32 step. Same seed → same result.
-function seededShuffle(arr, seed) {
-  const a = [...arr];
-  let s = seed | 0;
-  for (let i = a.length - 1; i > 0; i--) {
-    s = (s + 0x6D2B79F5) | 0;
-    let t = Math.imul(s ^ (s >>> 15), 1 | s);
-    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
-    const j = ((t ^ (t >>> 14)) >>> 0) % (i + 1);
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
-
-function dateToSeed(key) {
-  let h = 0;
-  for (let i = 0; i < key.length; i++) h = (h * 31 + key.charCodeAt(i)) & 0x7fffffff;
-  return h;
-}
-
-// --- Weekly Homework helpers ---
-
-// Same 8h-shift trick as dayKey(): rolls over at 08:00 UTC = 3am EST / 4am EDT.
-// Returns the date key ("YYYY-MM-DD") of the most recent Thursday at/after that boundary,
-// i.e. the identifier for the current homework week.
-function homeworkWeekKey() {
-  const shifted = new Date(Date.now() - 8 * 3600000);
-  const day  = shifted.getUTCDay();       // 0=Sun ... 4=Thu
-  const diff = (day - 4 + 7) % 7;         // days since the most recent Thursday
-  shifted.setUTCDate(shifted.getUTCDate() - diff);
-  return `${shifted.getUTCFullYear()}-${String(shifted.getUTCMonth()+1).padStart(2,'0')}-${String(shifted.getUTCDate()).padStart(2,'0')}`;
-}
-
-// Picks a random movie not in excludeIds. If that leaves nothing, falls back to the
-// full pool (reset: true) so the pool never runs dry.
-function pickFromMoviePool(excludeIds) {
-  const excl = new Set(excludeIds);
-  let candidates = MOVIES.filter(m => !excl.has(m.id));
-  let reset = false;
-  if (candidates.length === 0) { candidates = MOVIES; reset = true; }
-  return { movie: candidates[Math.floor(Math.random() * candidates.length)], reset };
-}
-
-// Stable-sorts by id first so shard/load order doesn't affect the result.
 // excludeIds only matters for a brand-new day's pin generation (see the
 // btn-daily-challenge handler) — the review screen's regenerate-from-live-pool
 // fallback deliberately calls this with no excludeIds, since "what's recently
 // seen right now" has no meaning when reconstructing a past day.
 function getDailyQuestions(count = 10, daysAgo = 0, excludeIds = new Set()) {
-  const sorted   = [...QUESTIONS].sort((a, b) => a.id - b.id);
-  const shuffled = seededShuffle(sorted, dateToSeed(dayKey(daysAgo)));
-  const fresh    = shuffled.filter(q => !excludeIds.has(q.id));
-  const src      = fresh.length >= count ? fresh : shuffled;
-  return src.slice(0, count);
-}
-
-// =============================================================================
-// Scoring
-// =============================================================================
-const SCORING = {
-  easy: 100, medium: 150, hard: 200,  // pts per correct answer
-  streak: 25,                          // per correct while in-game run ≥ 3
-  perfect: 500,                        // all correct in one game
-  dailyFlat: 200,                      // daily challenge completion
-  dailyPerDay: 10,                     // × min(streak, dailyStreakCap)
-  dailyStreakCap: 30
-};
-
-// Returns {base, streakBonus, perfectBonus, dailyBonus, total}.
-// earnDailyBonus — true only on first daily play of the calendar day.
-// dailyStreak    — the new streak value after this game.
-// awardPerfect   — false for a mid-game exit, where "all answered so far correct"
-//                  isn't a completed perfect game and shouldn't earn the bonus.
-function scoreBreakdown(answers, earnDailyBonus, dailyStreak, awardPerfect = true) {
-  let base = 0, streakBonus = 0, run = 0;
-  for (const a of answers) {
-    if (a.correct) {
-      base += SCORING[a.question.difficulty] || SCORING.easy;
-      run++;
-      if (run >= 3) streakBonus += SCORING.streak;
-    } else {
-      run = 0;
-    }
-  }
-  const perfectBonus = (awardPerfect && answers.length > 0 && answers.every(a => a.correct)) ? SCORING.perfect : 0;
-  let dailyBonus = 0;
-  if (earnDailyBonus) {
-    dailyBonus = SCORING.dailyFlat + Math.min(dailyStreak, SCORING.dailyStreakCap) * SCORING.dailyPerDay;
-  }
-  return { base, streakBonus, perfectBonus, dailyBonus, total: base + streakBonus + perfectBonus + dailyBonus };
+  return pickDailyQuestions(QUESTIONS, dayKey(daysAgo), count, excludeIds);
 }
 
 // =============================================================================
@@ -409,15 +348,147 @@ function spawnSparkles(originEl) {
 // Moves focus to the new screen's heading (or the screen itself, if it has
 // none) so screen-reader/keyboard users get an announcement of where they
 // landed instead of focus silently staying on a now-hidden button.
+let _currentScreen = 'screen-home';
+
 function showScreen(id) {
   document.querySelectorAll('.screen').forEach(s => s.classList.add('hidden'));
   const el = document.getElementById(id);
   el.classList.remove('hidden');
+  _currentScreen = id;
+  syncHistory(id);
   window.scrollTo(0, 0);
   const target = el.querySelector('h1, h2') || el;
   if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
   target.focus({ preventScroll: true });
   if (id !== 'screen-game') maybeShowUpdateToast();
+}
+
+// =============================================================================
+// BACK BUTTON (browser history)
+// =============================================================================
+// Ported from Offline Trivia. Browser history holds at most two entries for
+// this app — home (depth 0) and whichever other screen is showing (depth 1;
+// moving between non-home screens replaces it). So the phone's Back button
+// means "this screen's own Back" instead of closing the installed app, and
+// mid-game it opens the same exit confirm as the Exit button. Route every
+// screen change through showScreen(); don't push history entries elsewhere.
+// No unconditional replaceState at boot: a reload ("Update now", "Tap to
+// retry") from a depth-1 screen keeps that entry, and renderHome()'s
+// syncHistory collapses it.
+let _ignoreNextPop = false;
+
+function historyDepth() {
+  return history.state && typeof history.state.depth === 'number' ? history.state.depth : 0;
+}
+
+function syncHistory(id) {
+  try {
+    if (id === 'screen-home') {
+      if (historyDepth() > 0) {
+        _ignoreNextPop = true; // the popstate this back() triggers isn't a user Back press
+        history.back();
+      }
+    } else if (historyDepth() > 0) {
+      history.replaceState({ depth: 1, screen: id }, '');
+    } else {
+      history.pushState({ depth: 1, screen: id }, '');
+    }
+  } catch (e) {
+    // history API unavailable — Back just won't be intercepted
+  }
+}
+
+window.addEventListener('popstate', () => {
+  if (_ignoreNextPop) { _ignoreNextPop = false; return; }
+  if (_confirmState) {
+    // Back while a confirm sheet is open just dismisses it; re-push the entry
+    // the Back press consumed so the app stays on this screen.
+    history.pushState({ depth: 1, screen: _currentScreen }, '');
+    _confirmState.close(null);
+    return;
+  }
+  if (historyDepth() > 0) {
+    // Forward navigation onto our depth-1 entry — nothing to restore.
+    _ignoreNextPop = true;
+    history.back();
+    return;
+  }
+  if (_currentScreen === 'screen-home') return;
+  // Re-push first so a cancelled confirm (or a non-home target) leaves the app
+  // on a depth-1 entry; going home collapses it again via syncHistory.
+  history.pushState({ depth: 1, screen: _currentScreen }, '');
+  if (_currentScreen === 'screen-game') { exitGameFlow(); return; }
+  const backBtn = document.querySelector(`#${_currentScreen} .btn-back`);
+  if (backBtn) backBtn.click();
+  else renderHome();
+});
+
+// =============================================================================
+// CONFIRM SHEET
+// =============================================================================
+// In-theme replacement for confirm()/alert(). Resolves true (confirm button),
+// false (cancel button), or null (dismissed: Escape, tapping the backdrop, or
+// the phone's Back button) — callers that need "decide later" treat null
+// differently from an explicit cancel. Behaves like a real modal: #app goes
+// inert, focus moves in and back out, Tab cycles between the two buttons.
+// single: true hides the cancel button (alert-style).
+let _confirmState = null;
+
+function showConfirm({ title, message, confirmText = 'OK', cancelText = 'Cancel', danger = false, single = false }) {
+  if (_confirmState) return Promise.resolve(null); // never stack two sheets (double-tap, Back while open)
+  const overlay = document.getElementById('confirm-overlay');
+  const okBtn   = document.getElementById('confirm-ok');
+  const noBtn   = document.getElementById('confirm-cancel');
+  const app     = document.getElementById('app');
+  const previouslyFocused = document.activeElement;
+
+  document.getElementById('confirm-title').textContent   = title;
+  document.getElementById('confirm-message').textContent = message;
+  okBtn.textContent = confirmText;
+  noBtn.textContent = cancelText;
+  overlay.querySelector('.confirm-sheet').classList.toggle('danger', danger);
+  overlay.querySelector('.confirm-actions').classList.toggle('single', single);
+
+  return new Promise(resolve => {
+    function onKeyDown(e) {
+      if (e.key === 'Escape') { e.preventDefault(); close(null); }
+      else if (e.key === 'Tab' && !single) {
+        e.preventDefault();
+        (document.activeElement === noBtn ? okBtn : noBtn).focus();
+      } else if (e.key === 'Tab') {
+        e.preventDefault();
+      }
+    }
+    const onOk  = () => close(true);
+    const onNo  = () => close(false);
+    const onBackdrop = e => { if (e.target === overlay) close(null); };
+    function close(result) {
+      overlay.classList.add('hidden');
+      app.inert = false;
+      okBtn.removeEventListener('click', onOk);
+      noBtn.removeEventListener('click', onNo);
+      overlay.removeEventListener('click', onBackdrop);
+      document.removeEventListener('keydown', onKeyDown, true);
+      _confirmState = null;
+      if (previouslyFocused && document.contains(previouslyFocused) && typeof previouslyFocused.focus === 'function') {
+        previouslyFocused.focus({ preventScroll: true });
+      }
+      resolve(result);
+    }
+    _confirmState = { close };
+    okBtn.addEventListener('click', onOk);
+    noBtn.addEventListener('click', onNo);
+    overlay.addEventListener('click', onBackdrop);
+    document.addEventListener('keydown', onKeyDown, true);
+    overlay.classList.remove('hidden');
+    app.inert = true;
+    // Cancel is the safe default focus for two-button sheets.
+    (single ? okBtn : noBtn).focus();
+  });
+}
+
+function showAlert(title, message) {
+  return showConfirm({ title, message, confirmText: 'OK', single: true });
 }
 
 // =============================================================================
@@ -599,6 +670,7 @@ function selectUser(user) {
   currentUser = user;
   localStorage.setItem('disney_last_user', user.id);
   renderSettings();
+  offerGameResume('select');
 }
 
 // Add player
@@ -954,7 +1026,9 @@ document.getElementById('btn-daily-challenge').addEventListener('click', async (
   }
 
   const btn = document.getElementById('btn-daily-challenge');
+  if (btn.disabled) return;
   btn.disabled = true;
+  if (await offerGameResume('start') !== 'proceed') { btn.disabled = false; return; }
 
   let questions;
   try {
@@ -988,6 +1062,7 @@ document.getElementById('btn-daily-challenge').addEventListener('click', async (
 
   btn.disabled = false;
   gameState = buildDailyGameState(questions, today);
+  gameState.dateKey = today; // checkpoint under the day this daily belongs to, even if answered past the rollover
   if (gameState.currentIndex >= gameState.questions.length) {
     endGame(); // all questions were answered before a previous exit — finish it now
   } else {
@@ -1043,21 +1118,23 @@ function updateAvailableHint() {
   }
 }
 
+// Starts a fresh regular game from the current settings. Settles any leftover
+// checkpoint first (resume it, or commit it and start new).
+async function startRegularGame() {
+  const pool  = filteredPool();
+  if (pool.length === 0) return;
+  if (await offerGameResume('start') !== 'proceed') return;
+  const count = Math.min(gameSettings.questionCount, pool.length);
+  gameState = { questions: pickRegularQuestions(pool, getSeenIds(currentUser.id), count), currentIndex: 0, answers: [], score: 0, currentStreak: 0, isDaily: false, pointsEarned: 0, scoreBreakdown: null };
+  renderGameQuestion();
+}
+
 document.getElementById('btn-start-game').addEventListener('click', () => {
   if (gameSettings.categories.length === 0) {
     document.getElementById('cat-error').classList.remove('hidden');
     return;
   }
-  const pool  = filteredPool();
-  if (pool.length === 0) return;
-  const count = Math.min(gameSettings.questionCount, pool.length);
-
-  const seen  = new Set(getSeenIds(currentUser.id));
-  const fresh = pool.filter(q => !seen.has(q.id));
-  const src   = fresh.length >= count ? fresh : pool;
-
-  gameState = { questions: shuffle(src).slice(0, count), currentIndex: 0, answers: [], score: 0, currentStreak: 0, isDaily: false, pointsEarned: 0, scoreBreakdown: null };
-  renderGameQuestion();
+  startRegularGame();
 });
 
 // =============================================================================
@@ -1187,6 +1264,7 @@ function handleAnswer(selectedIdx) {
   }
 
   gameState.answers.push({ question: q, selectedText: chosen.text, correct: isCorrect });
+  checkpointGame();
   document.getElementById('game-score-display').textContent = `${gameState.score} ✓`;
 
   const isLast = gameState.currentIndex === gameState.questions.length - 1;
@@ -1214,52 +1292,66 @@ document.getElementById('btn-next').addEventListener('click', () => {
   }
 });
 
-// Exit game
-document.getElementById('btn-exit-game').addEventListener('click', async () => {
-  const answered = gameState.answers.length;
+// Exit game — shared by the Exit button and the phone's Back button.
+let _exitInFlight = false;
 
-  // Daily challenge: nothing is committed to stats until the full 10 are done.
-  // Answers get locked in locally instead, so re-opening the Daily Challenge
-  // resumes at the next question rather than restarting or re-scoring them.
-  if (gameState.isDaily) {
-    const msg = answered > 0
-      ? `Exit the Daily Challenge? Your ${answered} answered question${answered !== 1 ? 's' : ''} are locked in — come back later to finish.`
-      : 'Exit the Daily Challenge? You haven\'t answered any questions yet.';
-    if (confirm(msg)) {
+async function exitGameFlow() {
+  if (gameState.ended || _exitInFlight) return;
+  _exitInFlight = true;
+  try {
+    const answered = gameState.answers.length;
+    const plural   = answered !== 1 ? 's' : '';
+
+    // Daily challenge: nothing is committed to stats until the full 10 are done.
+    // Answers are already checkpointed locally after every tap (checkpointGame),
+    // so re-opening the Daily Challenge resumes at the next question.
+    if (gameState.isDaily) {
+      const ok = await showConfirm({
+        title:       'Leave the Daily Challenge?',
+        message:     answered > 0
+          ? `Your ${answered} answered question${plural} are locked in — come back later to finish.`
+          : "You haven't answered any questions yet.",
+        confirmText: 'Exit',
+        cancelText:  'Keep playing'
+      });
+      if (ok !== true) return;
       if (answered > 0) {
-        saveDailyProgress(currentUser.id, todayKey(), gameState.answers.map(a => ({
-          questionId: a.question.id, correct: a.correct, selectedText: a.selectedText
-        })));
-        // Local marking always happens (no stats transaction to gate it on here —
-        // nothing's committed to Firestore until the daily is fully finished).
-        // The cross-player Firestore sync is best-effort: swallow a failure so an
-        // offline exit still locks in local progress.
+        // Local marking always happens (nothing's committed to Firestore until
+        // the daily is fully finished). The cross-player Firestore sync is
+        // best-effort: swallow a failure so an offline exit still works.
         const newSeen = computeSeenIds(currentUser.id, gameState.answers.map(a => a.question.id));
         saveSeenIds(currentUser.id, newSeen);
         storage.saveRecentQuestionIds(currentUser.id, newSeen).catch(() => {});
       }
       renderHome();
+      return;
     }
-    return;
-  }
 
-  const msg = answered > 0
-    ? `Exit this game? Your ${answered} answered question${answered !== 1 ? 's' : ''} will be saved to your stats.`
-    : 'Exit this game? You haven\'t answered any questions yet.';
-  if (confirm(msg)) {
+    const ok = await showConfirm({
+      title:       'Leave this game?',
+      message:     answered > 0
+        ? `Your ${answered} answered question${plural} will be saved to your stats.`
+        : "You haven't answered any questions yet.",
+      confirmText: 'Exit',
+      cancelText:  'Keep playing'
+    });
+    if (ok !== true) return;
     if (answered > 0) {
       try {
-        const pts     = scoreBreakdown(gameState.answers, false, 0, false).total;
-        const newSeen = computeSeenIds(currentUser.id, gameState.answers.map(a => a.question.id));
-        await storage.updateStats(currentUser.id, answered, gameState.score, pts, null, buildCatStats(gameState.answers), newSeen, monthKey());
-        saveSeenIds(currentUser.id, newSeen);
+        await commitRegularAnswers(gameState.answers, false);
+        clearGameCheckpoint(currentUser.id);
       } catch (e) {
-        alert("Couldn't save your progress — check your connection.");
+        // Checkpoint stays — offerGameResume() offers it again next time.
+        await showAlert("Couldn't save", "Your answers couldn't be saved — check your connection. They're kept on this device, and you'll be offered them next time you pick your player.");
       }
     }
     renderHome();
+  } finally {
+    _exitInFlight = false;
   }
-});
+}
+
+document.getElementById('btn-exit-game').addEventListener('click', exitGameFlow);
 
 // Mute toggle
 document.getElementById('btn-mute-sound').addEventListener('click', () => {
@@ -1313,7 +1405,7 @@ async function submitFlag() {
     document.getElementById('btn-flag').classList.remove('active');
     document.getElementById('btn-flag').disabled = true;
   } catch (e) {
-    alert("Couldn't send the report — check your connection."); // form stays open for retry
+    showAlert("Couldn't send", "Your report couldn't be sent — check your connection and try again."); // form stays open for retry
   } finally {
     submitBtn.disabled = false;
   }
@@ -1333,11 +1425,9 @@ async function endGame() {
   const isFirstDailyToday = gameState.isDaily && currentUser.lastDailyDate !== today;
 
   // Compute new daily streak before scoring so the bonus uses the correct level
-  let newDailyStreak = currentUser.dailyStreak || 0;
-  if (isFirstDailyToday) {
-    const diff = computeDaysDiff(currentUser.lastDailyDate, today);
-    newDailyStreak = diff === 1 ? (currentUser.dailyStreak || 0) + 1 : 1;
-  }
+  const newDailyStreak = isFirstDailyToday
+    ? nextDailyStreak(currentUser.lastDailyDate, currentUser.dailyStreak, today)
+    : (currentUser.dailyStreak || 0);
 
   const bd = scoreBreakdown(gameState.answers, isFirstDailyToday, newDailyStreak);
   gameState.pointsEarned   = bd.total;
@@ -1366,6 +1456,7 @@ async function endGame() {
     await storage.updateStats(currentUser.id, gameState.questions.length, gameState.score, bd.total, dailyUpdate, buildCatStats(gameState.answers), newSeen, monthKey());
     saveSeenIds(currentUser.id, newSeen);
     if (gameState.isDaily) clearDailyProgress(currentUser.id);
+    else clearGameCheckpoint(currentUser.id);
     const users = await storage.getUsers();
     currentUser = users.find(u => u.id === currentUser.id) || currentUser;
   } catch (e) {
@@ -1609,15 +1700,7 @@ async function renderDailyReview(backTarget = 'settings', daysAgo = 0) {
 
 document.getElementById('btn-rematch').addEventListener('click', () => {
   if (gameState.isDaily) return;
-  {
-    const pool  = filteredPool();
-    const count = Math.min(gameSettings.questionCount, pool.length);
-    const seen  = new Set(getSeenIds(currentUser.id));
-    const fresh = pool.filter(q => !seen.has(q.id));
-    const src   = fresh.length >= count ? fresh : pool;
-    gameState = { questions: shuffle(src).slice(0, count), currentIndex: 0, answers: [], score: 0, currentStreak: 0, isDaily: false, pointsEarned: 0, scoreBreakdown: null };
-  }
-  renderGameQuestion();
+  startRegularGame();
 });
 
 document.getElementById('btn-play-again').addEventListener('click', renderSettings);

@@ -11,7 +11,10 @@ A static single-page trivia app built for Kristen and Cara to practice before a 
 |---|---|
 | `index.html` | Single-page shell. All 6 screens live here as hidden divs. |
 | `style.css` | All styling. Dark Disney theme, mobile-first, CSS variables at the top. |
-| `app.js` | All game logic. Loaded last. Depends on `storage.js` and the `questions/` shards. |
+| `game-logic.js` | Pure game rules — shuffle, date keys (`dayKey`/`monthKey`/`prevMonthKey`/`homeworkWeekKey`, all taking an optional `now`), daily selection (`pickDailyQuestions`, `seededShuffle`), regular selection (`pickRegularQuestions`), `SCORING`/`scoreBreakdown`, `buildCatStats`, and checkpoint reconcile (`reconcileDailyProgress`, `reconcileRegularCheckpoint`). No DOM/storage/globals. Loaded as a classic script before `app.js` (its top-level names become browser globals) and `require()`-able from Node for tests. **Change a rule here and add a test — don't reimplement it inline in `app.js`.** Don't redeclare any of its names in `app.js`: a duplicate top-level `const` is a SyntaxError that kills the whole app; a duplicate `function` silently shadows the tested one. |
+| `test/game-logic.test.js` | Unit tests for `game-logic.js` (`node --test test/game-logic.test.js` — built-in `node:test`, no npm/package.json). Run automatically by `deploy.ps1`. |
+| `app.js` | DOM, storage, and screen logic. Loaded last. Depends on `storage.js`, `game-logic.js`, and the `questions/` shards. |
+| `deploy.ps1` | Deploy script — version bump, `?v=` sync, gates, commit, push. See Deploying Changes. Keep it pure ASCII (PowerShell 5.1 reads a BOM-less script as ANSI). |
 | `storage.js` | Storage abstraction. `FirebaseAdapter` is active. `LocalStorageAdapter` is kept below it as a fallback. |
 | `questions/manifest.json` | Lists the shard filenames. `app.js` fetches this first, then fetches each shard. |
 | `questions/q-001.json` | Questions 1–250 (249 active). |
@@ -35,6 +38,8 @@ A static single-page trivia app built for Kristen and Cara to practice before a 
 | `scripts/find_near_dupes.py` | Lexical near-duplicate detector, whole-corpus or `--new` against a draft batch. See Question-Bank Tooling below. |
 | `scripts/validate_batch.py` | Pre-append sanity check for a drafted batch (IDs, enums, exact dupes, answer-format heuristics). See Question-Bank Tooling below. |
 | `scripts/find_leaks.py` | Whole-corpus scan for rule #2 (answer leaked into the question text), using the same two-tier detector `validate_batch.py` runs on drafts. See Question-Bank Tooling below. |
+| `scripts/validate_corpus.py` | Whole-corpus structural gate (valid JSON, manifest files exist, unique IDs, 4 distinct non-empty answers, valid enums, no all/none-of-the-above). Exit 1 on any error. Run automatically by `deploy.ps1` when anything under `questions/` changed. Advisory checks (leaks, near-dupes, categories) are deliberately not gates. |
+| `scripts/visual_check.py` | End-to-end Playwright smoke test against an **isolated copy** of the app switched to `LocalStorageAdapter` (asserted), with Firestore requests blocked — safe to run any time, never touches live player data. Covers a full game, leaderboard modes, kill-and-resume (regular + daily), Back button mid-game, "Start new" with a leftover checkpoint, daily review, and the update toast. Run `python scripts/visual_check.py [--out DIR]`, then **look at the screenshots** — a pass doesn't prove the layout is right. |
 | `scripts/find_category_bugs.py` | Whole-corpus scan for rule #9 (Pixar films tagged `movies`, or vice versa), via `check_category()`, also wired into `validate_batch.py` so new drafts get the same check. Advisory/lexical only — always eyeball hits. See Question-Bank Tooling below. |
 
 ## The 6 Screens
@@ -189,7 +194,7 @@ Three of the six buckets (cruise, parks, and — after 8 fixes — everything el
 
 **Local testing note:** `fetch()` is blocked on `file://`. Run a local server to test (`python -m http.server 8000`). On GitHub Pages it works fine.
 
-**Browser-driving this app for QA (added 2026-08-12):** `storage.js`'s active adapter is live production Firestore (project `disneytrivia-38ac6` — see Storage Layer below), not a sandbox. A headless-browser verification pass (Playwright, etc.) that clicks through Play Game / answers questions / exits will call the real `storage.updateStats()` against whichever player card it clicks (almost always the first-listed one) — this happened during the 2026-08-12 Disney-theming pass and inflated Cara's `gamesPlayed`/`totalPoints`/`monthlyPoints`/`totalAnswered` with test-game data, and also **overwrote her `recentQuestionIds` seen-history** down to just the fresh browser profile's tiny local list (see the per-device-state limitation under Regular Game: Answer Order & Repeat Avoidance) — the exact pre-test deltas weren't reconstructible after the fact. **Before browser-driving this app for any UI verification, switch the last line of `storage.js` to `new LocalStorageAdapter()`** (see Switching back to localStorage below), run the check, then switch it back — never leave a verification session pointed at the live Firebase project.
+**Browser-driving this app for QA (added 2026-08-12):** `storage.js`'s active adapter is live production Firestore (project `disneytrivia-38ac6` — see Storage Layer below), not a sandbox. A headless-browser verification pass (Playwright, etc.) that clicks through Play Game / answers questions / exits will call the real `storage.updateStats()` against whichever player card it clicks (almost always the first-listed one) — this happened during the 2026-08-12 Disney-theming pass and inflated Cara's `gamesPlayed`/`totalPoints`/`monthlyPoints`/`totalAnswered` with test-game data, and also **overwrote her `recentQuestionIds` seen-history** down to just the fresh browser profile's tiny local list (see the per-device-state limitation under Regular Game: Answer Order & Repeat Avoidance) — the exact pre-test deltas weren't reconstructible after the fact. **For UI verification, use `python scripts/visual_check.py`** (added 2026-10-05) — it runs against a throwaway copy with `LocalStorageAdapter` and Firestore requests blocked, so the working tree's `storage.js` is never touched. For a narrower one-off Playwright script, follow the same pattern (copy the site to the scratchpad, switch the copy's adapter, serve that) rather than editing the real `storage.js` and remembering to switch it back.
 
 ## Question-Bank Tooling (scripts/)
 All scripts are read-only against the shards — they print reports/candidates for a human to eyeball, they never edit shard JSON (adding/removing a question is still always a manual shard edit, per the rule below). Run from the project root with `python scripts/<name>.py`.
@@ -221,7 +226,7 @@ Document shape:
 { id, name, totalAnswered, totalCorrect, gamesPlayed,
   totalPoints,        // accumulated lifetime points — PRIMARY STATE, not derived (sequence-dependent bonuses make it non-recomputable)
   monthlyPoints,       // points accumulated since monthlyKey was set — PRIMARY STATE, same reason as totalPoints.
-  monthlyKey,          // "YYYY-MM" (see monthKey() in app.js) this monthlyPoints total belongs to. Every
+  monthlyKey,          // "YYYY-MM" (see monthKey() in game-logic.js) this monthlyPoints total belongs to. Every
                        // updateStats() call passes the current monthKey(); if it doesn't match the stored
                        // monthlyKey, monthlyPoints resets to just this game's points instead of accumulating —
                        // this is what makes the leaderboard's "This Month" view winnable even for a player who's
@@ -332,9 +337,20 @@ Fixes, all read-only (writes are deliberately untouched — see below):
 Ported from the Offline Trivia repo's "new version is ready" toast so players don't have to kill and relaunch the installed app to pick up a deploy. **Not service-worker based** (that repo's version is; this app deliberately has none — see PWA above). Instead, `checkForUpdate()` in `app.js` re-fetches `index.html?t=<now>` with `cache: 'no-store'` (the `?t=` buster is needed to get past GitHub Pages' ~10 min CDN `max-age`; `no-store` alone only bypasses the browser cache), extracts its `app.js?v=` value, and compares it to the `app.js?v=` of the `<script>` tag the running page actually loaded (`loadedAppVersion()`) — deliberately *not* to the `APP_VERSION` constant, so a mismatch between the two can't produce a toast that never goes away.
 
 - **When it checks:** once after `init()` finishes, on every `visibilitychange` → visible (the real case: resuming the home-screen app from the background), and every 20 min while visible. Throttled to at most once a minute. All errors are swallowed silently — offline/flaky wifi never surfaces anything.
-- **Never shown mid-game.** Unlike Offline Trivia (which checkpoints rounds), a reload here loses a regular game outright and drops a daily's in-flight answers (daily progress is only saved via the Exit path). `maybeShowUpdateToast()` returns early while `screen-game` is visible; the pending version is surfaced by `showScreen()` the next time the player lands on any other screen.
+- **Never shown mid-game.** Since v1.35 a reload mid-game no longer loses anything (see Game Checkpoint & Resume), so this is about not interrupting play, not data safety: `maybeShowUpdateToast()` returns early while `screen-game` is visible; the pending version is surfaced by `showScreen()` the next time the player lands on any other screen.
 - **"Later"** stores the dismissed version in `sessionStorage` (`disney_update_dismissed`) so it doesn't re-pop on every app resume for the same build; a newer build still shows it. **"Update now"** is just `location.reload()`.
 - Markup is `#update-toast` in `index.html`, outside `#app` (so the boot error screen's `#app` innerHTML replacement can't remove it); styles are at the bottom of `style.css`.
+
+## Game Checkpoint & Resume, Back Button, Confirm Sheet (added 2026-10-05, v1.35)
+Ported from Offline Trivia. Before this, a regular game was lost outright if the app was killed (iOS does this to backgrounded PWAs), reloaded, or updated, and a daily only saved progress if the player tapped Exit — a killed app mid-daily replayed the same questions with no saved answers.
+
+- **Checkpoint after every answer** — `checkpointGame()` (`app.js`), called from `handleAnswer()` right after the answer is recorded. Deliberately on the *tap*, not on Next: the correct answer is revealed on tap, so saving later would let a killed app re-answer a revealed question. Dailies write the existing `disney_daily_progress_{userId}` (so the existing "▶️ Resume Daily Challenge (n/10)" button covers them, no extra prompt); regular games write `disney_game_progress_{userId}` = `{questionIds, answers, savedAt}`. Both per-device localStorage, like the app's other `disney_*` keys.
+- **Regular checkpoint lifecycle** — cleared only after its answers are committed to Firestore (`endGame()` success, or a successful Exit). **Kept on a failed save** (offline) instead of the old alert-and-lose behavior; the results screen's save warning says so.
+- **Resume** — `offerGameResume(mode)`, rebuilt via `reconcileRegularCheckpoint()` (game-logic.js; drops questions deleted from the shards since, answered-first ordering so `currentIndex === answers.length`). A fully-answered checkpoint (save failed) offers "Save it", which calls `endGame()` directly.
+  - `'select'` (picking a player): Resume / "Not now". "Not now" and dismissing both keep the checkpoint for later.
+  - `'start'` (Start Game, Rematch, or Daily while a checkpoint exists): Resume / "Start new". "Start new" commits the leftover answers to stats first (`commitRegularAnswers()`, same as Exit) so they're never silently dropped; dismissing aborts the new game.
+- **Back button** — `syncHistory()`/`popstate` in `app.js`. History holds at most two entries: home (depth 0) and the current other screen (depth 1, replaced on each screen change). Back = the visible screen's own `.btn-back` (falls back to home), mid-game = the same `exitGameFlow()` as the Exit button, and Back while a confirm sheet is open just dismisses it. Route every screen change through `showScreen()`; don't push history entries elsewhere. No unconditional `replaceState` at boot: a reload from a depth-1 screen keeps that entry and `renderHome()`'s `syncHistory` collapses it.
+- **Confirm sheet** — `showConfirm({title, message, confirmText, cancelText, danger, single})` / `showAlert(title, message)` replace every native `confirm()`/`alert()` in `app.js`. Resolves `true` (confirm), `false` (cancel button), or `null` (dismissed: Escape, backdrop tap, phone Back) — `offerGameResume` relies on `false` vs `null` being different. Never stacks (a second call while one is open resolves `null`). `#confirm-overlay` sits outside `#app` (which goes `inert` while open) and at z-index 1100, above the update toast. Don't reintroduce native dialogs.
 
 ## Deploying Changes
 The app is hosted on GitHub Pages from the `main` branch. Use the deploy script:
@@ -343,11 +359,18 @@ The app is hosted on GitHub Pages from the `main` branch. Use the deploy script:
 .\deploy.ps1 -Message "your commit message"
 ```
 
-`deploy.ps1` stages all changes, commits, and pushes in one step. Omitting `-Message` defaults to `"update app"`. GitHub Pages redeploys automatically within ~1 minute.
+For a multi-line message (e.g. with a Co-Authored-By trailer), write it to a file **outside the repo** (scratchpad) and pass `-MessageFile <path>` — PowerShell 5.1 mangles multi-line/quoted native arguments, and a same-repo file would get swept in by `git add -A`.
 
-**Cache-busting for code files:** `index.html` loads `style.css`, `storage.js`, and `app.js` with a `?v=` query string matching `APP_VERSION` (currently 1.34). When making code changes, bump `APP_VERSION` in `app.js` **and** update the matching `?v=` strings in `index.html` so browsers discard their cached copies. **The `app.js?v=` bump is also what triggers the update-available toast** (see above) — forget it and already-open apps never get told a new build exists. Use a plain-text edit (Edit tool / `sed`), not PowerShell `Set-Content`/`-replace` on `index.html`: Windows PowerShell 5.1 reads it as ANSI and mangles every emoji in the file. Question shard files and `movies.json` (fetched via `fetch()`) use `{ cache: 'no-cache' }` and don't need manual versioning.
+In order, `deploy.ps1` (modeled on Offline Trivia's `ship`):
+1. **Untracked-file guard** — lists untracked files and aborts unless `-IncludeUntracked` is passed, so stray scratch/draft files never ride along in an unrelated commit. Check the list, then re-run with the switch when the new files are intended.
+2. **Version bump** — if any of `app.js`, `style.css`, `storage.js`, `game-logic.js`, `index.html` changed vs HEAD and `APP_VERSION` still equals HEAD's, bumps the minor version (1.35 → 1.36). A hand-bump in the same change is respected.
+3. **`?v=` sync** — rewrites every `.js?v=`/`.css?v=` in `index.html` to `APP_VERSION` and asserts they all match. Reads/writes via .NET with UTF-8-no-BOM (PowerShell `Set-Content`/`-replace` would mangle the emoji in `index.html`).
+4. **Gates** (skip with `-SkipChecks`) — `scripts/validate_corpus.py` if anything under `questions/` changed; `node --test test/game-logic.test.js` always (skipped with a warning if node is missing). A failure aborts before anything is staged.
+5. `git add -A`, commit, push. `-DryRun` stops before this step (the bump/sync from steps 2–3 still lands in the working tree).
 
-**Manual fallback:**
+**Cache-busting:** `index.html` loads `style.css`, `storage.js`, `game-logic.js`, and `app.js` with `?v=` matching `APP_VERSION` (currently 1.35). `deploy.ps1` handles it — **don't hand-bump**. The `app.js?v=` change is also what triggers the update-available toast (see above): a deploy that skipped it would never tell already-open apps a new build exists. If you ever must edit `index.html` outside the Edit tool, use `sed`/.NET, not PowerShell `Set-Content`/`-replace`. Question shard files and `movies.json` (fetched via `fetch()`) use `{ cache: 'no-cache' }` and don't need versioning.
+
+**Manual fallback** (skips the bump and gates — only if `deploy.ps1` itself is broken):
 ```
 git add -A && git commit -m "your message" && git push
 ```
@@ -382,7 +405,7 @@ A second game mode accessible from the settings screen. Always 10 questions, all
 - Questions are stable-sorted by `id` before shuffling so shard load order doesn't affect results
 - Streak (`dailyStreak`, `lastDailyDate`) stored in Firestore on the user doc — cross-device
 - **Replay is blocked** — each player can play the daily exactly once per calendar day. The settings button becomes "📋 Review Today's Questions" after playing; the results-screen Rematch button is hidden for daily games.
-- **Exit mid-daily → resume, don't restart.** Nothing is committed to Firestore stats until all 10 are answered. Exiting locks in the answered-so-far questions to `localStorage` (`disney_daily_progress_{userId}`, via `saveDailyProgress`/`getDailyProgress`/`clearDailyProgress` in `app.js`) — not Firestore, so this is per-device, like the other `disney_*` localStorage keys. Re-opening the Daily Challenge (`buildDailyGameState()`) resumes at the next unanswered question with the locked-in answers' score/streak already applied; those questions are never re-shown or re-editable. If a resume's saved answers no longer line up position-by-position with today's pinned questions (e.g. a backfill re-pinned the day after the exit), only the still-matching prefix is kept and the rest is treated as unanswered — never silently miscounted. Progress is cleared only after a successful Firestore save in `endGame()`; if that save fails (offline), progress is kept and the next "Daily Challenge" tap detects the already-complete answer set and retries `endGame()` directly instead of restarting the game. The settings screen shows a "▶️ Resume Daily Challenge (n/10)" state (reading the same localStorage progress) so a mid-exit isn't silently invisible. `endGame()` sets `gameState.ended` as a re-entrancy guard so a double-click on the final question (or two near-simultaneous resume-complete calls) can't double-commit stats.
+- **Exit (or a killed app) mid-daily → resume, don't restart.** Nothing is committed to Firestore stats until all 10 are answered. Every answer is checkpointed the moment it's tapped (`checkpointGame()`, since v1.35 — before that only the Exit button saved it, so a killed app lost progress) to `localStorage` (`disney_daily_progress_{userId}`, via `saveDailyProgress`/`getDailyProgress`/`clearDailyProgress` in `app.js`, keyed by `gameState.dateKey`, the day the daily belongs to) — not Firestore, so this is per-device, like the other `disney_*` localStorage keys. Re-opening the Daily Challenge (`buildDailyGameState()` → `reconcileDailyProgress()` in game-logic.js) resumes at the next unanswered question with the locked-in answers' score/streak already applied; those questions are never re-shown or re-editable. If a resume's saved answers no longer line up position-by-position with today's pinned questions (e.g. a backfill re-pinned the day after the exit), only the still-matching prefix is kept and the rest is treated as unanswered — never silently miscounted. Progress is cleared only after a successful Firestore save in `endGame()`; if that save fails (offline), progress is kept and the next "Daily Challenge" tap detects the already-complete answer set and retries `endGame()` directly instead of restarting the game. The settings screen shows a "▶️ Resume Daily Challenge (n/10)" state (reading the same localStorage progress) so a mid-exit isn't silently invisible. `endGame()` sets `gameState.ended` as a re-entrancy guard so a double-click on the final question (or two near-simultaneous resume-complete calls) can't double-commit stats.
 - Per-question answers stored in Firestore as `lastDailyAnswers` on first play; shifted to `prevDailyAnswers` when the next day's challenge is played. Used by `screen-daily-review` for both today and yesterday views.
 - Counts toward leaderboard stats just like a regular game
 - `gameState.isDaily = true` when a daily challenge is active; `endGame()` checks this flag
@@ -416,7 +439,7 @@ Web Audio API (synthesized, no audio files). Wrapped in the `sounds` IIFE in `ap
 - A wrong answer also triggers `navigator.vibrate(80)` (`handleAnswer()`, app.js) on devices that support it — no mute gate on this, it's independent of the sound toggle
 
 ## Scoring System
-Points are computed by `scoreBreakdown(answers, earnDailyBonus, dailyStreak, awardPerfect = true)` in `app.js` and stored atomically to Firestore inside the `updateStats` transaction. `awardPerfect` is passed `false` only from the mid-game exit handler — otherwise "all answered so far were correct" on a partial (unfinished) set would incorrectly earn the perfect-game bonus. Earning formula:
+Points are computed by `scoreBreakdown(answers, earnDailyBonus, dailyStreak, awardPerfect = true)` in `game-logic.js` and stored atomically to Firestore inside the `updateStats` transaction. `awardPerfect` is passed `false` only from the mid-game exit handler — otherwise "all answered so far were correct" on a partial (unfinished) set would incorrectly earn the perfect-game bonus. Earning formula:
 
 | Component | Value |
 |---|---|
@@ -428,7 +451,7 @@ Points are computed by `scoreBreakdown(answers, earnDailyBonus, dailyStreak, awa
 | Daily challenge completion (first play of day) | +200 pts flat |
 | Daily streak scaling (first play of day) | +10 × min(dailyStreak, 30) |
 
-- `SCORING` constant object in `app.js` holds all values — edit there to rebalance
+- `SCORING` constant object in `game-logic.js` holds all values — edit there to rebalance (and update `test/game-logic.test.js`)
 - `scoreBreakdown()` returns `{ base, streakBonus, perfectBonus, dailyBonus, total }`
 - Leaderboard sorts by `totalPoints` descending; percentage is the secondary tiebreaker
 - Results screen shows full breakdown when more than one component contributed
@@ -441,7 +464,7 @@ Points are computed by `scoreBreakdown(answers, earnDailyBonus, dailyStreak, awa
 | `MOVIES` | Flat array of all movie objects, populated at boot by `loadMovies()` |
 | `currentUser` | The user object selected on the home screen |
 | `gameSettings` | `{ difficulty, categories[], questionCount }` — set on settings screen |
-| `gameState` | `{ questions[], currentIndex, answers[], score, currentStreak, isDaily, pointsEarned, scoreBreakdown }` — active game |
+| `gameState` | `{ questions[], currentIndex, answers[], score, currentStreak, isDaily, pointsEarned, scoreBreakdown, dateKey?, ended? }` — active game. `dateKey` is set for dailies (the day the daily belongs to, so a checkpoint written past the 2am rollover still matches); `ended` is endGame()'s re-entrancy guard |
 | `shuffledOpts` | `[{text, originalIndex}]` — display order for current question's answers |
 | `homeworkState` | `{ weekKey, movieId, pickedAt, watched: [{id, watchedAt}] }` — this week's Weekly Homework pick, mirrors Firestore `weeklyHomework/state` |
 
@@ -456,6 +479,7 @@ Points are computed by `scoreBreakdown(answers, earnDailyBonus, dailyStreak, awa
 - `showScreen(id)` (`app.js`) moves focus to the new screen's `h1`/`h2` (falling back to the screen `<div>` itself if it has none) on every navigation, adding `tabindex="-1"` the first time so it's focusable without joining the normal Tab order. This announces screen changes to screen-reader users instead of leaving focus stranded on a now-hidden button.
 - `renderGameQuestion()` additionally focuses `#question-text` (also `tabindex="-1"`) on every call — each new question is effectively its own "screen" for a screen reader, and `showScreen('screen-game')` only fires once per game, not once per question.
 - `style.css` suppresses the default `:focus` outline on any `tabindex="-1"` element (`[tabindex="-1"]:focus { outline: none; }`) since these are reachable only by script, never by Tab — the browser's default ring there would just be visual noise on every screen change, not a real keyboard cue. Real interactive elements (buttons/pills/inputs) keep their existing `:focus-visible` gold outline, unaffected.
+- The confirm sheet (`showConfirm()`) is a real modal: `role="dialog" aria-modal="true"` with `aria-labelledby`/`aria-describedby`, `#app` set `inert` while open, focus moved to Cancel (the safe default) and restored afterwards, Tab cycling between its two buttons, Escape dismissing.
 - `#feedback-msg` (correct/wrong text) and `#flag-thanks` (flag-report confirmation) both have `role="status" aria-live="polite"`. `handleAnswer()` unhides `#feedback-area` *before* setting `feedbackMsg.textContent` — a screen reader won't reliably announce a text change to a node that was still `display:none` at the moment the change happened, so the unhide has to come first for the live region to actually fire.
 
 ## Players
