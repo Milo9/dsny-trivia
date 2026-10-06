@@ -1,4 +1,4 @@
-const APP_VERSION = '1.33';
+const APP_VERSION = '1.34';
 
 // =============================================================================
 // State
@@ -417,7 +417,70 @@ function showScreen(id) {
   const target = el.querySelector('h1, h2') || el;
   if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
   target.focus({ preventScroll: true });
+  if (id !== 'screen-game') maybeShowUpdateToast();
 }
+
+// =============================================================================
+// UPDATE-AVAILABLE TOAST
+// =============================================================================
+// No service worker here (see PWA notes in CLAUDE.md), so "is there a new
+// build?" is answered by re-fetching index.html and comparing its app.js?v=
+// against the one this page actually loaded with. Comparing the same string
+// from the same file (not APP_VERSION) means a forgotten bump in one place
+// can't produce a toast that never goes away.
+const UPDATE_CHECK_MIN_GAP_MS = 60 * 1000;
+const UPDATE_CHECK_INTERVAL_MS = 20 * 60 * 1000;
+let _lastUpdateCheck = 0;
+let _pendingUpdateVersion = null;
+
+function loadedAppVersion() {
+  const s = document.querySelector('script[src*="app.js"]');
+  const m = s && s.getAttribute('src').match(/app\.js\?v=([^"'&]+)/);
+  return m ? m[1] : null;
+}
+
+async function checkForUpdate() {
+  if (Date.now() - _lastUpdateCheck < UPDATE_CHECK_MIN_GAP_MS) return;
+  _lastUpdateCheck = Date.now();
+  const current = loadedAppVersion();
+  if (!current) return;
+  try {
+    // The ?t= buster gets past GitHub Pages' ~10 min CDN max-age; no-store only bypasses the browser cache.
+    const res = await fetchWithTimeout('index.html?t=' + Date.now(), { cache: 'no-store' });
+    if (!res.ok) return;
+    const m = (await res.text()).match(/app\.js\?v=([^"'&]+)/);
+    if (m && m[1] !== current) {
+      _pendingUpdateVersion = m[1];
+      maybeShowUpdateToast();
+    }
+  } catch (e) {
+    // Offline / flaky wifi — silently try again next time.
+  }
+}
+
+// Never shown mid-game: a reload there loses a regular game outright, and a
+// daily's in-flight answers are only saved via the Exit path. The pending
+// version is surfaced by showScreen() once the player lands anywhere else.
+function maybeShowUpdateToast() {
+  if (!_pendingUpdateVersion) return;
+  if (!document.getElementById('screen-game').classList.contains('hidden')) return;
+  let dismissed = null;
+  try { dismissed = sessionStorage.getItem('disney_update_dismissed'); } catch (e) {}
+  if (dismissed === _pendingUpdateVersion) return;
+  document.getElementById('update-toast').classList.remove('hidden');
+}
+
+document.getElementById('btn-update-reload').addEventListener('click', () => location.reload());
+document.getElementById('btn-update-dismiss').addEventListener('click', () => {
+  try { sessionStorage.setItem('disney_update_dismissed', _pendingUpdateVersion); } catch (e) {}
+  document.getElementById('update-toast').classList.add('hidden');
+});
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible') checkForUpdate();
+});
+setInterval(() => {
+  if (document.visibilityState === 'visible') checkForUpdate();
+}, UPDATE_CHECK_INTERVAL_MS);
 
 // =============================================================================
 // HOME SCREEN
@@ -1634,5 +1697,6 @@ async function init() {
   }
   stopBootQuotes();
   renderHome();
+  checkForUpdate();
 }
 init();

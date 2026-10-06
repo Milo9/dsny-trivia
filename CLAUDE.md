@@ -295,7 +295,7 @@ The app installs like a native app when added to a phone's home screen — no se
 - **`icons/`** — all 7 files (`favicon-16/32.png`, `apple-touch-icon.png` @180, `icon-192/512.png`, `icon-192/512-maskable.png`) are generated, not hand-drawn — see `scripts/generate_icons.py` in the File Map above. Re-run that script rather than editing PNGs directly if the theme colors or icon glyph ever change.
 - **`index.html` `<head>`** — `<link rel="manifest">`, favicon links, `<link rel="apple-touch-icon">`, and the `apple-mobile-web-app-*` / `mobile-web-app-capable` meta tags (iOS still needs these even though it now also reads the manifest, for older-Safari compatibility). The viewport meta has `viewport-fit=cover` so the page can draw under the iPhone notch/Dynamic Island and home indicator when installed standalone (no browser chrome to naturally avoid them).
 - **Safe-area insets** — `body` in `style.css` has `padding: env(safe-area-inset-*)` on all four sides. This only has any effect in standalone mode on a notched device (resolves to `0px` everywhere else, including normal browser tabs), so it's safe to leave on unconditionally.
-- **Why no service worker:** a service worker's main value here would be offline play, but every write (scores, streaks, leaderboard, flags) goes straight to Firestore with no local queue/sync layer — an offline session would let someone play a full game that then silently fails to save. Adding a cache-only service worker just for "installs faster" without solving that would be a half-feature; skip it unless offline play is explicitly requested as its own project.
+- **Why no service worker:** a service worker's main value here would be offline play, but every write (scores, streaks, leaderboard, flags) goes straight to Firestore with no local queue/sync layer — an offline session would let someone play a full game that then silently fails to save. Adding a cache-only service worker just for "installs faster" without solving that would be a half-feature; skip it unless offline play is explicitly requested as its own project. (The "new version available" toast does not need one either — see Update-Available Toast below.)
 
 ## Disney Theming Pass (added 2026-08-12, v1.32)
 A look-and-feel pass — no gameplay/mode changes, CSS/JS/SVG-only, no new external assets. Requested explicitly as "make it feel more Disney" for this non-commercial household app.
@@ -328,6 +328,14 @@ Fixes, all read-only (writes are deliberately untouched — see below):
 
 **Writes are deliberately excluded from the retry wrapper** (`updateStats`, `saveUser`, `saveDailyPins`, `saveHomeworkState`, `flagReport`, `saveRecentQuestionIds`) — a timed-out write whose first attempt actually landed server-side (Firestore transactions aren't instantly abortable client-side) would double-apply on an automatic retry, e.g. double-counting points. If write-path hangs turn out to be a real problem too, that needs a timeout-without-retry treatment, not this same wrapper — not done here since it wasn't the reported symptom.
 
+## Update-Available Toast (added 2026-10-05, v1.34)
+Ported from the Offline Trivia repo's "new version is ready" toast so players don't have to kill and relaunch the installed app to pick up a deploy. **Not service-worker based** (that repo's version is; this app deliberately has none — see PWA above). Instead, `checkForUpdate()` in `app.js` re-fetches `index.html?t=<now>` with `cache: 'no-store'` (the `?t=` buster is needed to get past GitHub Pages' ~10 min CDN `max-age`; `no-store` alone only bypasses the browser cache), extracts its `app.js?v=` value, and compares it to the `app.js?v=` of the `<script>` tag the running page actually loaded (`loadedAppVersion()`) — deliberately *not* to the `APP_VERSION` constant, so a mismatch between the two can't produce a toast that never goes away.
+
+- **When it checks:** once after `init()` finishes, on every `visibilitychange` → visible (the real case: resuming the home-screen app from the background), and every 20 min while visible. Throttled to at most once a minute. All errors are swallowed silently — offline/flaky wifi never surfaces anything.
+- **Never shown mid-game.** Unlike Offline Trivia (which checkpoints rounds), a reload here loses a regular game outright and drops a daily's in-flight answers (daily progress is only saved via the Exit path). `maybeShowUpdateToast()` returns early while `screen-game` is visible; the pending version is surfaced by `showScreen()` the next time the player lands on any other screen.
+- **"Later"** stores the dismissed version in `sessionStorage` (`disney_update_dismissed`) so it doesn't re-pop on every app resume for the same build; a newer build still shows it. **"Update now"** is just `location.reload()`.
+- Markup is `#update-toast` in `index.html`, outside `#app` (so the boot error screen's `#app` innerHTML replacement can't remove it); styles are at the bottom of `style.css`.
+
 ## Deploying Changes
 The app is hosted on GitHub Pages from the `main` branch. Use the deploy script:
 
@@ -337,7 +345,7 @@ The app is hosted on GitHub Pages from the `main` branch. Use the deploy script:
 
 `deploy.ps1` stages all changes, commits, and pushes in one step. Omitting `-Message` defaults to `"update app"`. GitHub Pages redeploys automatically within ~1 minute.
 
-**Cache-busting for code files:** `index.html` loads `style.css`, `storage.js`, and `app.js` with a `?v=` query string matching `APP_VERSION` (currently 1.33). When making code changes, bump `APP_VERSION` in `app.js` **and** update the matching `?v=` strings in `index.html` so browsers discard their cached copies. Question shard files and `movies.json` (fetched via `fetch()`) use `{ cache: 'no-cache' }` and don't need manual versioning.
+**Cache-busting for code files:** `index.html` loads `style.css`, `storage.js`, and `app.js` with a `?v=` query string matching `APP_VERSION` (currently 1.34). When making code changes, bump `APP_VERSION` in `app.js` **and** update the matching `?v=` strings in `index.html` so browsers discard their cached copies. **The `app.js?v=` bump is also what triggers the update-available toast** (see above) — forget it and already-open apps never get told a new build exists. Use a plain-text edit (Edit tool / `sed`), not PowerShell `Set-Content`/`-replace` on `index.html`: Windows PowerShell 5.1 reads it as ANSI and mangles every emoji in the file. Question shard files and `movies.json` (fetched via `fetch()`) use `{ cache: 'no-cache' }` and don't need manual versioning.
 
 **Manual fallback:**
 ```
