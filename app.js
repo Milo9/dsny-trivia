@@ -1,4 +1,4 @@
-const APP_VERSION = '1.36';
+const APP_VERSION = '1.37';
 
 // =============================================================================
 // State
@@ -1030,35 +1030,44 @@ document.getElementById('btn-daily-challenge').addEventListener('click', async (
   btn.disabled = true;
   if (await offerGameResume('start') !== 'proceed') { btn.disabled = false; return; }
 
-  let questions;
-  try {
-    const pinnedIds = await storage.getDailyPins(today);
-    if (pinnedIds && pinnedIds.length > 0) {
-      const qMap = new Map(QUESTIONS.map(q => [q.id, q]));
-      let qs = pinnedIds.map(id => qMap.get(id)).filter(Boolean);
-      // Some pinned IDs may have been removed from the shards (e.g. a dedup
-      // pass) since this day's pins were first written — top back up to the
-      // original count from the live pool and re-save so later players/review
-      // see a consistent, full-length set.
-      if (qs.length > 0 && qs.length < pinnedIds.length) {
-        const usedIds     = new Set(qs.map(q => q.id));
-        const candidates  = QUESTIONS.filter(q => !usedIds.has(q.id));
-        const excludeIds  = await dailyExclusionSet();
-        const freshCands  = candidates.filter(q => !excludeIds.has(q.id));
-        const extrasSrc   = freshCands.length >= (pinnedIds.length - qs.length) ? freshCands : candidates;
-        const extras      = shuffle(extrasSrc).slice(0, pinnedIds.length - qs.length);
-        qs = qs.concat(extras);
-        try { await storage.saveDailyPins(today, qs.map(q => q.id)); } catch(e) {}
-      }
-      if (qs.length > 0) questions = qs;
+  const qMap = new Map(QUESTIONS.map(q => [q.id, q]));
+  const resolvePins = async pinnedIds => {
+    let qs = pinnedIds.map(id => qMap.get(id)).filter(Boolean);
+    // Some pinned IDs may have been removed from the shards (e.g. a dedup
+    // pass) since this day's pins were first written — top back up to the
+    // original count from the live pool and re-save so later players/review
+    // see a consistent, full-length set.
+    if (qs.length < pinnedIds.length) {
+      const usedIds     = new Set(qs.map(q => q.id));
+      const candidates  = QUESTIONS.filter(q => !usedIds.has(q.id));
+      const excludeIds  = await dailyExclusionSet();
+      const freshCands  = candidates.filter(q => !excludeIds.has(q.id));
+      const extrasSrc   = freshCands.length >= (pinnedIds.length - qs.length) ? freshCands : candidates;
+      const extras      = shuffle(extrasSrc).slice(0, pinnedIds.length - qs.length);
+      qs = qs.concat(extras);
+      try { await storage.saveDailyPins(today, qs.map(q => q.id)); } catch(e) {}
     }
-  } catch(e) {}
+    return qs;
+  };
 
-  if (!questions) {
+  // A failed read must NOT be treated as "no pin yet": generating a fresh set
+  // and writing it over an existing pin is what split 2026-10-21 into two
+  // question sets. Any new set goes through claimDailyPins (create-if-absent),
+  // and if that can't reach Firestore either, nobody plays an unpinned set.
+  let pinnedIds = null;
+  try { pinnedIds = await storage.getDailyPins(today); } catch(e) {}
+  if (!pinnedIds || pinnedIds.length === 0) {
     const excludeIds = await dailyExclusionSet();
-    questions = getDailyQuestions(10, 0, excludeIds);
-    try { await storage.saveDailyPins(today, questions.map(q => q.id)); } catch(e) {}
+    const candidateIds = getDailyQuestions(10, 0, excludeIds).map(q => q.id);
+    try {
+      pinnedIds = await storage.claimDailyPins(today, candidateIds);
+    } catch(e) {
+      btn.disabled = false;
+      await showAlert("Couldn't load today's challenge", "Check your connection and try again — the daily needs to reach the server so everyone gets the same questions.");
+      return;
+    }
   }
+  const questions = await resolvePins(pinnedIds);
 
   btn.disabled = false;
   gameState = buildDailyGameState(questions, today);

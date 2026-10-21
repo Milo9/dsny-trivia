@@ -109,6 +109,13 @@ class LocalStorageAdapter {
     this._save(data);
   }
 
+  async claimDailyPins(dateKey, questionIds) {
+    const existing = await this.getDailyPins(dateKey);
+    if (existing && existing.length > 0) return existing;
+    await this.saveDailyPins(dateKey, questionIds);
+    return questionIds;
+  }
+
   // Every question ID pinned as a daily challenge on or after sinceDateKey
   // ("YYYY-MM-DD", lexically comparable) — independent of whether anyone
   // actually played that day. Used alongside recentQuestionIds so daily-pin
@@ -323,6 +330,24 @@ class FirebaseAdapter {
 
   async saveDailyPins(dateKey, questionIds) {
     await this.db.collection('dailies').doc(dateKey).set({ questionIds });
+  }
+
+  // Create-if-absent pin for a new day: writes questionIds only if no pin
+  // exists yet, and returns whichever pin is actually stored — the caller must
+  // play what comes back, not its own candidates. A plain set() here let a
+  // device whose getDailyPins read failed (timeout on flaky wifi) overwrite a
+  // pin someone had already played, splitting the day into two question sets
+  // (happened 2026-10-21). Safe to retry via _withTimeout: same questionIds on
+  // every attempt, and a late-landing first attempt just gets read back.
+  async claimDailyPins(dateKey, questionIds) {
+    return this._withTimeout(() => this.db.runTransaction(async tx => {
+      const ref = this.db.collection('dailies').doc(dateKey);
+      const doc = await tx.get(ref);
+      const existing = doc.exists ? doc.data().questionIds : null;
+      if (existing && existing.length > 0) return existing;
+      tx.set(ref, { questionIds });
+      return questionIds;
+    }));
   }
 
   // Every question ID pinned as a daily challenge on or after sinceDateKey
