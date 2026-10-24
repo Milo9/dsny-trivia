@@ -236,12 +236,49 @@ function reconcileRegularCheckpoint(checkpoint, questionsById) {
   };
 }
 
+// --- Game log ------------------------------------------------------------------
+
+// Per-player game history (users/{id}.gameLog), newest first, capped. A
+// diagnostic trail for "we got different questions" style reports, not game
+// state — nothing in the app reads it back.
+const GAME_LOG_MAX = 30;
+
+function appendGameLog(log, entry, max = GAME_LOG_MAX) {
+  return [entry].concat(Array.isArray(log) ? log : []).slice(0, max);
+}
+
+// status: 'complete' | 'exited' (left mid-game) | 'abandoned' (an unfinished
+// checkpoint committed by "Start new"). questionIds is the whole game in play
+// order; the first `answered` of them were shown. A daily exit commits no
+// stats, so its points are 0. Every value is non-undefined: Firestore rejects
+// undefined fields, which would fail the stats transaction this rides in.
+function buildGameLogEntry({ mode, status, questionIds, answers, points, dateKey,
+                             resumed, firstDaily, device, platform, version, now = Date.now() }) {
+  const entry = {
+    at:          new Date(now).toISOString(),
+    day:         dateKey ?? null,
+    mode:        mode ?? null,
+    status:      status ?? null,
+    questionIds: (questionIds || []).slice(),
+    answered:    (answers || []).length,
+    correct:     (answers || []).filter(a => a.correct).length,
+    points:      points ?? 0,
+    resumed:     !!resumed,
+    device:      device ?? null,
+    platform:    platform ?? null,
+    v:           version ?? null
+  };
+  if (mode === 'daily') entry.firstDaily = !!firstDaily;
+  return entry;
+}
+
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = {
     shuffle, SEEN_MAX, capSeenIds, pickRegularQuestions,
     dayKey, todayKey, monthKey, prevMonthKey, computeDaysDiff, nextDailyStreak, homeworkWeekKey,
     seededShuffle, dateToSeed, pickDailyQuestions, pickMovie,
     SCORING, scoreBreakdown, buildCatStats,
-    serializeAnswers, trailingStreak, reconcileDailyProgress, reconcileRegularCheckpoint
+    serializeAnswers, trailingStreak, reconcileDailyProgress, reconcileRegularCheckpoint,
+    GAME_LOG_MAX, appendGameLog, buildGameLogEntry
   };
 }

@@ -44,7 +44,9 @@ class LocalStorageAdapter {
   // monthKey — "YYYY-MM" for the month this game's points count toward (primary
   //   state, same reset-on-new-key pattern as the daily streak fields below —
   //   not derived, since there's no history of past games to recompute it from).
-  async updateStats(userId, answered, correct, points, dailyUpdate, catStats, recentQuestionIds, monthKey) {
+  // logEntry — a buildGameLogEntry() record prepended to the capped `gameLog`
+  //   diagnostic history (see game-logic.js), or null to skip.
+  async updateStats(userId, answered, correct, points, dailyUpdate, catStats, recentQuestionIds, monthKey, logEntry) {
     const data = this._load();
     const u = data.users[userId];
     if (!u) throw new Error('User not found: ' + userId);
@@ -85,15 +87,17 @@ class LocalStorageAdapter {
       if (dailyUpdate.answers)         u.lastDailyAnswers = dailyUpdate.answers;
     }
     if (recentQuestionIds) u.recentQuestionIds = recentQuestionIds;
+    if (logEntry) u.gameLog = appendGameLog(u.gameLog, logEntry);
     this._save(data);
     return u;
   }
 
-  async saveRecentQuestionIds(userId, ids) {
+  async saveRecentQuestionIds(userId, ids, logEntry) {
     const data = this._load();
     const u = data.users[userId];
     if (!u) throw new Error('User not found: ' + userId);
     u.recentQuestionIds = ids;
+    if (logEntry) u.gameLog = appendGameLog(u.gameLog, logEntry);
     this._save(data);
   }
 
@@ -263,7 +267,10 @@ class FirebaseAdapter {
   //   here already has stats to commit.
   // monthKey — "YYYY-MM" for the month this game's points count toward (primary
   //   state — resets on a new key, same pattern as the daily streak fields below).
-  async updateStats(userId, answered, correct, points, dailyUpdate, catStats, recentQuestionIds, monthKey) {
+  // logEntry — a buildGameLogEntry() record prepended to the capped `gameLog`
+  //   diagnostic history (see game-logic.js), or null to skip. Prepended inside
+  //   this transaction, since arrayUnion can't order or cap.
+  async updateStats(userId, answered, correct, points, dailyUpdate, catStats, recentQuestionIds, monthKey, logEntry) {
     const ref = this.db.collection('users').doc(userId);
     await this.db.runTransaction(async tx => {
       const doc = await tx.get(ref);
@@ -286,6 +293,7 @@ class FirebaseAdapter {
         update.monthlyKey    = monthKey;
       }
       if (recentQuestionIds) update.recentQuestionIds = recentQuestionIds;
+      if (logEntry) update.gameLog = appendGameLog(d.gameLog, logEntry);
       if (catStats) {
         const existing = d.categoryStats || {};
         const merged   = { ...existing };
@@ -317,8 +325,18 @@ class FirebaseAdapter {
   // exit — nothing is committed to stats until the daily is fully finished, but
   // the already-answered questions still need to count as "recently seen" for
   // daily-pin exclusion. Callers treat this as best-effort and swallow errors.
-  async saveRecentQuestionIds(userId, ids) {
-    await this.db.collection('users').doc(userId).update({ recentQuestionIds: ids });
+  // logEntry (optional) is prepended to `gameLog` — needs a transaction, since
+  // a blind update can't prepend to or cap an array.
+  async saveRecentQuestionIds(userId, ids, logEntry) {
+    const ref = this.db.collection('users').doc(userId);
+    if (!logEntry) {
+      await ref.update({ recentQuestionIds: ids });
+      return;
+    }
+    await this.db.runTransaction(async tx => {
+      const doc = await tx.get(ref);
+      tx.update(ref, { recentQuestionIds: ids, gameLog: appendGameLog(doc.data().gameLog, logEntry) });
+    });
   }
 
   async getDailyPins(dateKey) {

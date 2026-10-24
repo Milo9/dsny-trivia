@@ -239,3 +239,40 @@ test('reconcileRegularCheckpoint: a fully answered checkpoint lands at the end',
   assert.equal(gs.currentIndex, gs.questions.length);
   assert.equal(gs.currentStreak, 2);
 });
+
+// --- Game log ------------------------------------------------------------------
+
+test('appendGameLog prepends newest first and caps the length', () => {
+  assert.deepEqual(L.appendGameLog(undefined, 'a'), ['a']);
+  assert.deepEqual(L.appendGameLog(['b', 'c'], 'a'), ['a', 'b', 'c']);
+  const full = Array.from({ length: L.GAME_LOG_MAX }, (_, i) => i);
+  const next = L.appendGameLog(full, 'new');
+  assert.equal(next.length, L.GAME_LOG_MAX);
+  assert.equal(next[0], 'new');
+  assert.equal(next[next.length - 1], L.GAME_LOG_MAX - 2);
+  assert.deepEqual(full.slice(0, 2), [0, 1]); // input not mutated
+});
+
+test('buildGameLogEntry counts answers and stamps the time', () => {
+  const answers = [{ correct: true }, { correct: false }, { correct: true }];
+  const e = L.buildGameLogEntry({
+    mode: 'regular', status: 'exited', questionIds: [1, 2, 3, 4], answers, points: 225,
+    dateKey: '2026-10-24', device: 'abc123', platform: 'iPhone app', version: '1.38',
+    now: Date.UTC(2026, 9, 24, 19, 28)
+  });
+  assert.equal(e.at, '2026-10-24T19:28:00.000Z');
+  assert.equal(e.answered, 3);
+  assert.equal(e.correct, 2);
+  assert.deepEqual(e.questionIds, [1, 2, 3, 4]);
+  assert.equal('firstDaily' in e, false);
+});
+
+test('buildGameLogEntry never emits undefined (Firestore rejects it)', () => {
+  for (const mode of ['daily', 'regular']) {
+    for (const status of ['complete', 'exited', 'abandoned']) {
+      const e = L.buildGameLogEntry({ mode, status }); // everything else missing
+      for (const [k, v] of Object.entries(e)) assert.notEqual(v, undefined, `${mode}/${status}.${k}`);
+      assert.equal(e.firstDaily === undefined, mode !== 'daily');
+    }
+  }
+});

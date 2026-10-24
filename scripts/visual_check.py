@@ -118,6 +118,21 @@ def main():
             def boot():
                 page.wait_for_selector("#screen-home:not(.hidden) .user-card", timeout=20000)
                 page.wait_for_timeout(SETTLE_MS)
+                # Firestore rejects undefined field values but LocalStorageAdapter's
+                # JSON.stringify silently drops them, so check game-log entries the
+                # way Firestore would. Hits survive reloads via sessionStorage.
+                page.evaluate("""() => {
+                  const bad = msg => { const l = JSON.parse(sessionStorage.getItem('vc_badlog') || '[]');
+                    l.push(msg); sessionStorage.setItem('vc_badlog', JSON.stringify(l)); };
+                  const chk = (e, where) => {
+                    if (e == null) { bad(where + ': no entry'); return; }
+                    for (const [k, v] of Object.entries(e)) if (v === undefined) bad(where + '.' + k);
+                  };
+                  const u = storage.updateStats.bind(storage);
+                  storage.updateStats = (...a) => { chk(a[8], 'updateStats'); return u(...a); };
+                  const r = storage.saveRecentQuestionIds.bind(storage);
+                  storage.saveRecentQuestionIds = (...a) => { chk(a[2], 'saveRecentQuestionIds'); return r(...a); };
+                }""")
 
             def pick_player(name):
                 page.locator(".user-card", has_text=name).first.click()
@@ -133,6 +148,9 @@ def main():
 
             def answered(user):  # LocalStorageAdapter's committed totalAnswered
                 return page.evaluate(f"JSON.parse(localStorage.getItem('disney_trivia_v1')).users.{user}.totalAnswered || 0")
+
+            def game_log(user):
+                return page.evaluate(f"JSON.parse(localStorage.getItem('disney_trivia_v1')).users.{user}.gameLog || []")
 
             def checkpoint(user):
                 return page.evaluate(f"localStorage.getItem('disney_game_progress_{user}')")
@@ -265,11 +283,21 @@ def main():
             page.click("#btn-results-home")
             page.wait_for_selector("#screen-home:not(.hidden)")
 
-            print("Daily: kill, resume, finish, review")
+            print("Daily: exit, kill, resume, finish, review")
             pick_player("Cara")
             page.click("#btn-daily-challenge")
             page.wait_for_selector("#screen-game:not(.hidden)")
-            answer(3)
+            answer(2)
+            page.click("#btn-exit-game")
+            page.wait_for_selector("#confirm-overlay:not(.hidden)")
+            page.click("#confirm-ok")
+            page.wait_for_selector("#screen-home:not(.hidden)")
+            page.wait_for_timeout(300)  # best-effort log write is fire-and-forget
+            pick_player("Cara")
+            page.click("#btn-daily-challenge")
+            page.wait_for_selector("#screen-game:not(.hidden)")
+            c.ok(progress_text().startswith("Q 3 of 10"), "daily resumed at Q3 after Exit")
+            answer(1)
             page.reload()
             boot()
             pick_player("Cara")
@@ -299,6 +327,23 @@ def main():
             page.go_back()
             page.wait_for_selector("#screen-settings:not(.hidden)")
             c.ok(True, "Back from daily review returns to settings")
+
+            print("Game log")
+            kl = [(e["mode"], e["status"], e["answered"], e["resumed"]) for e in game_log("kristen")]
+            c.ok(kl == [("regular", "complete", 10, True), ("regular", "abandoned", 1, True),
+                        ("regular", "exited", 2, True), ("regular", "complete", 10, False)],
+                 f"Kristen's log, newest first: Save it / Start new / Exit / finished (got {kl})")
+            cl = game_log("cara")
+            c.ok([(e["mode"], e["status"], e["answered"]) for e in cl] == [("daily", "complete", 10), ("daily", "exited", 2)],
+                 f"Cara's log: daily complete, then the earlier daily exit (got {[(e['mode'], e['status'], e['answered']) for e in cl]})")
+            c.ok(bool(cl) and cl[0].get("firstDaily") is True and cl[0]["resumed"] is True
+                 and len(cl[0]["questionIds"]) == 10 and cl[0]["correct"] <= 10,
+                 "daily entry: firstDaily, resumed, 10 question ids")
+            c.ok(all(e["device"] and e["platform"] and e["v"] and e["day"] for e in game_log("kristen") + cl),
+                 "every entry has device, platform, version and day")
+            c.ok(len({e["device"] for e in game_log("kristen") + cl}) == 1, "one device tag across the session")
+            badlog = page.evaluate("JSON.parse(sessionStorage.getItem('vc_badlog') || '[]')")
+            c.ok(not badlog, f"no undefined/missing game-log fields (Firestore-safe) {badlog}")
 
             print("Update toast")
             page.click("#btn-settings-back")

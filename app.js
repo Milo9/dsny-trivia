@@ -1,4 +1,4 @@
-const APP_VERSION = '1.37';
+const APP_VERSION = '1.38';
 
 // =============================================================================
 // State
@@ -33,6 +33,55 @@ function computeSeenIds(userId, newIds) {
 
 function saveSeenIds(userId, seen) {
   localStorage.setItem('disney_seen_' + userId, JSON.stringify(seen));
+}
+
+// --- Game log (users/{id}.gameLog — diagnostics only, see game-logic.js) ---
+
+// Random per-device id, so a log entry from a second phone is obvious. Lives
+// in localStorage, so clearing site data gives the device a new one.
+function deviceTag() {
+  try {
+    let id = localStorage.getItem('disney_device_id');
+    if (!id) {
+      id = Math.random().toString(36).slice(2, 8);
+      localStorage.setItem('disney_device_id', id);
+    }
+    return id;
+  } catch (e) { return null; }
+}
+
+// Coarse "what is this" hint, e.g. "iPhone app" / "Windows browser".
+function platformTag() {
+  const ua = navigator.userAgent || '';
+  const os = /iPhone/.test(ua) ? 'iPhone'
+    : /iPad/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1) ? 'iPad'
+    : /Android/.test(ua) ? 'Android'
+    : /Windows/.test(ua) ? 'Windows'
+    : /Macintosh/.test(ua) ? 'Mac'
+    : 'Other';
+  const standalone = navigator.standalone === true ||
+    (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches);
+  return os + (standalone ? ' app' : ' browser');
+}
+
+// Never throws — a logging bug must not fail the stats save it rides along
+// with, so a failure just means no entry.
+function gameLogEntry(state, status, points, firstDaily) {
+  try {
+    return buildGameLogEntry({
+      mode:        state.isDaily ? 'daily' : 'regular',
+      status,
+      questionIds: state.questions.map(q => q.id),
+      answers:     state.answers,
+      points,
+      dateKey:     state.dateKey || todayKey(),
+      resumed:     state.resumed,
+      firstDaily,
+      device:      deviceTag(),
+      platform:    platformTag(),
+      version:     APP_VERSION
+    });
+  } catch (e) { return null; }
 }
 
 // How far back to exclude past daily-challenge pins when generating a new
@@ -126,12 +175,15 @@ function checkpointGame() {
   }
 }
 
-// Commits a regular game's answers to stats — the shared path for finishing,
-// exiting, and settling a leftover checkpoint. Perfect bonus only if complete.
-async function commitRegularAnswers(answers, complete) {
+// Commits a regular game's answers to stats — the shared path for exiting and
+// settling a leftover checkpoint. Perfect bonus only if complete. `status` is
+// the game-log status ('exited' / 'abandoned' / 'complete').
+async function commitRegularAnswers(state, complete, status) {
+  const answers = state.answers;
   const pts     = scoreBreakdown(answers, false, 0, complete).total;
   const newSeen = computeSeenIds(currentUser.id, answers.map(a => a.question.id));
-  await storage.updateStats(currentUser.id, answers.length, answers.filter(a => a.correct).length, pts, null, buildCatStats(answers), newSeen, monthKey());
+  await storage.updateStats(currentUser.id, answers.length, answers.filter(a => a.correct).length, pts, null, buildCatStats(answers), newSeen, monthKey(),
+    gameLogEntry(state, status, pts));
   saveSeenIds(currentUser.id, newSeen);
 }
 
@@ -148,6 +200,7 @@ async function offerGameResume(mode) {
   if (!cp) return 'proceed';
   const gs = reconcileRegularCheckpoint(cp, new Map(QUESTIONS.map(q => [q.id, q])));
   if (!gs || gs.answers.length === 0) { clearGameCheckpoint(currentUser.id); return 'proceed'; }
+  gs.resumed = true;
 
   const n = gs.answers.length, total = gs.questions.length, complete = n >= total;
   const choice = await showConfirm({
@@ -168,7 +221,7 @@ async function offerGameResume(mode) {
 
   // mode 'start' + explicit cancel: commit the leftover answers, then go on.
   try {
-    await commitRegularAnswers(gs.answers, complete);
+    await commitRegularAnswers(gs, complete, complete ? 'complete' : 'abandoned');
     clearGameCheckpoint(currentUser.id);
     return 'proceed';
   } catch (e) {
@@ -180,7 +233,9 @@ async function offerGameResume(mode) {
 // Rebuilds gameState for the daily challenge, resuming from saved progress
 // (see reconcileDailyProgress in game-logic.js for the matching rules).
 function buildDailyGameState(questions, today) {
-  return reconcileDailyProgress(questions, getDailyProgress(currentUser.id), today);
+  const gs = reconcileDailyProgress(questions, getDailyProgress(currentUser.id), today);
+  gs.resumed = gs.answers.length > 0;
+  return gs;
 }
 
 function pct(correct, total) {
@@ -1330,7 +1385,7 @@ async function exitGameFlow() {
         // best-effort: swallow a failure so an offline exit still works.
         const newSeen = computeSeenIds(currentUser.id, gameState.answers.map(a => a.question.id));
         saveSeenIds(currentUser.id, newSeen);
-        storage.saveRecentQuestionIds(currentUser.id, newSeen).catch(() => {});
+        storage.saveRecentQuestionIds(currentUser.id, newSeen, gameLogEntry(gameState, 'exited', 0, false)).catch(() => {});
       }
       renderHome();
       return;
@@ -1347,7 +1402,7 @@ async function exitGameFlow() {
     if (ok !== true) return;
     if (answered > 0) {
       try {
-        await commitRegularAnswers(gameState.answers, false);
+        await commitRegularAnswers(gameState, false, 'exited');
         clearGameCheckpoint(currentUser.id);
       } catch (e) {
         // Checkpoint stays — offerGameResume() offers it again next time.
@@ -1466,7 +1521,8 @@ async function endGame() {
   gameState.saveFailed = false;
   try {
     const newSeen = computeSeenIds(currentUser.id, gameState.questions.map(q => q.id));
-    await storage.updateStats(currentUser.id, gameState.questions.length, gameState.score, bd.total, dailyUpdate, buildCatStats(gameState.answers), newSeen, monthKey());
+    await storage.updateStats(currentUser.id, gameState.questions.length, gameState.score, bd.total, dailyUpdate, buildCatStats(gameState.answers), newSeen, monthKey(),
+      gameLogEntry(gameState, 'complete', bd.total, isFirstDailyToday));
     saveSeenIds(currentUser.id, newSeen);
     if (gameState.isDaily) clearDailyProgress(currentUser.id);
     else clearGameCheckpoint(currentUser.id);
