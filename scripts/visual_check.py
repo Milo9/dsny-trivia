@@ -29,6 +29,7 @@ import time
 from pathlib import Path
 
 from playwright.sync_api import sync_playwright
+from browser_regressions import run_regressions
 
 sys.stdout.reconfigure(encoding="utf-8")  # labels can include ✓ etc.; Windows' cp1252 console can't encode them
 ROOT = Path(__file__).resolve().parent.parent
@@ -88,6 +89,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", type=Path, default=None)
     ap.add_argument("--headed", action="store_true")
+    ap.add_argument("--browser", choices=["chromium","webkit"], default="chromium")
+    ap.add_argument("--regressions-only", action="store_true")
     args = ap.parse_args()
 
     site = Path(tempfile.mkdtemp(prefix="disney-visual-site-"))
@@ -102,7 +105,13 @@ def main():
     try:
         time.sleep(1.0)
         with sync_playwright() as p:
-            browser = p.chromium.launch(headless=not args.headed)
+            browser = getattr(p,args.browser).launch(headless=not args.headed)
+            if args.regressions_only:
+                c = Check(None, out)
+                run_regressions(browser, base, c, lambda: (server.terminate(), server.wait(timeout=5)))
+                browser.close()
+                print(f"Screenshots: {out}")
+                return 1 if c.failures else 0
             ctx = browser.new_context(viewport={"width": 375, "height": 667})
 
             def guard(route):
@@ -351,7 +360,7 @@ def main():
             idx = site / "index.html"
             orig = idx.read_text(encoding="utf-8")
             try:
-                idx.write_text(orig.replace("app.js?v=", "app.js?v=999-"), encoding="utf-8")
+                idx.write_text(orig.replace("bootstrap.js?v=", "bootstrap.js?v=999-"), encoding="utf-8")
                 page.evaluate("_lastUpdateCheck = 0; checkForUpdate()")
                 page.wait_for_selector("#update-toast:not(.hidden)", timeout=5000)
                 c.ok(True, "update toast appears for a new build")
@@ -359,6 +368,7 @@ def main():
             finally:
                 idx.write_text(orig, encoding="utf-8")
 
+            run_regressions(browser, base, c, lambda: (server.terminate(), server.wait(timeout=5)))
             browser.close()
     finally:
         server.terminate()

@@ -1,5 +1,12 @@
 # Disney Trivia App — Claude Reference
 
+> **v1.39 audit fixes:** Read [DEVELOPMENT.md](DEVELOPMENT.md) and
+> [SECURITY.md](SECURITY.md) before changing runtime, storage, scoring, daily pins,
+> release checks, or offline behavior. These supersede older historical notes
+> below about ID-only pins, all-or-nothing repeat exclusion, per-device overwrite,
+> synchronous Firebase boot, score resets, and the absence of a service worker.
+> The owner explicitly declined adding accounts/passwords. Preserve that choice.
+
 ## What This Is
 A static single-page trivia app built for Kristen and Cara to practice before a Disney Cruise. No build step, no framework, no package manager.
 

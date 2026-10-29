@@ -14,6 +14,8 @@ Run from project root: python scripts/validate_corpus.py
 import json
 import os
 import sys
+import re
+from urllib.parse import urlparse
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from _common import BASE, VALID_CATEGORIES, VALID_DIFFICULTIES, normalize_answer  # noqa: E402
@@ -30,6 +32,7 @@ def main():
         return 1
 
     seen_ids = {}
+    seen_facts = {}
     total = 0
     for rel in shards:
         path = os.path.join(BASE, rel)
@@ -68,6 +71,24 @@ def main():
                 errors.append(f"{where}: invalid category {q.get('category')!r}")
             if q.get("difficulty") not in VALID_DIFFICULTIES:
                 errors.append(f"{where}: invalid difficulty {q.get('difficulty')!r}")
+            fact = q.get('factId')
+            if fact is not None:
+                if not isinstance(fact, str) or not re.fullmatch(r'[a-z0-9][a-z0-9.-]+', fact):
+                    errors.append(f'{where}: invalid factId')
+                elif fact in seen_facts:
+                    errors.append(f'{where}: repeated factId {fact} (also {seen_facts[fact]})')
+                else:
+                    seen_facts[fact] = qid
+            if 'explanation' in q and (not isinstance(q['explanation'], str) or not q['explanation'].strip()):
+                errors.append(f'{where}: invalid explanation')
+            if 'film' in q and (not isinstance(q['film'], str) or not q['film'].strip()):
+                errors.append(f'{where}: invalid film topic')
+            if 'source' in q:
+                source = urlparse(q['source']) if isinstance(q['source'], str) else None
+                if not source or source.scheme != 'https' or not source.netloc:
+                    errors.append(f'{where}: source must be an HTTPS URL')
+            if 'verifiedAt' in q and (not isinstance(q['verifiedAt'], str) or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', q['verifiedAt'])):
+                errors.append(f'{where}: verifiedAt must be YYYY-MM-DD')
 
     for e in errors:
         print("ERROR " + e)

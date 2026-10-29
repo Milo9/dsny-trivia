@@ -1,0 +1,98 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Password-free family app, per owner preference. These rules validate shape
+    // and protect immutable records; they do NOT establish player/admin identity.
+    function nonnegative(n) { return n is int && n >= 0; }
+    function player(d, id) {
+      return d.keys().hasOnly(['id','name','totalAnswered','totalCorrect','gamesPlayed','totalPoints',
+        'dailyStreak','lastDailyDate','lastDailyScore','lastDailyPoints','lastDailyAnswers',
+        'prevDailyDate','prevDailyScore','prevDailyPoints','prevDailyAnswers','categoryStats',
+        'monthlyKey','monthlyPoints','prevMonthlyKey','prevMonthlyPoints','monthlyTotals',
+        'recentQuestionIds','gameLog','completedDailyDates','missedQuestionIds','questionStats','resetRevision'])
+        && d.id == id && d.name is string && d.name.size() > 0 && d.name.size() <= 20
+        && nonnegative(d.totalAnswered) && nonnegative(d.totalCorrect) && d.totalCorrect <= d.totalAnswered
+        && nonnegative(d.gamesPlayed) && nonnegative(d.totalPoints)
+        && (!('resetRevision' in d) || nonnegative(d.resetRevision))
+        && (!('recentQuestionIds' in d) || (d.recentQuestionIds is list && d.recentQuestionIds.size() <= 300))
+        && (!('gameLog' in d) || (d.gameLog is list && d.gameLog.size() <= 30))
+        && (!('monthlyTotals' in d) || d.monthlyTotals is map)
+        && (!('categoryStats' in d) || d.categoryStats is map)
+        && (!('questionStats' in d) || d.questionStats is map)
+        && (!('missedQuestionIds' in d) || (d.missedQuestionIds is list && d.missedQuestionIds.size() <= 10000))
+        && (!('completedDailyDates' in d) || (d.completedDailyDates is list && d.completedDailyDates.size() <= 10000));
+    }
+    function daily(d) {
+      return d.keys().hasOnly(['questionIds','questions']) && d.questionIds is list
+        && d.questionIds.size() == 10 && d.questionIds.toSet().size() == 10
+        && d.questions is list && d.questions.size() == 10
+        && d.questions[0].id == d.questionIds[0] && d.questions[1].id == d.questionIds[1]
+        && d.questions[2].id == d.questionIds[2] && d.questions[3].id == d.questionIds[3]
+        && d.questions[4].id == d.questionIds[4] && d.questions[5].id == d.questionIds[5]
+        && d.questions[6].id == d.questionIds[6] && d.questions[7].id == d.questionIds[7]
+        && d.questions[8].id == d.questionIds[8] && d.questions[9].id == d.questionIds[9];
+    }
+    match /users/{id} {
+      allow read: if true;
+      allow create: if player(request.resource.data,id)
+        && request.resource.data.totalAnswered == 0 && request.resource.data.totalPoints == 0;
+      allow update: if player(request.resource.data,id) && request.resource.data.name == resource.data.name;
+      allow delete: if false;
+      match /games/{receipt} {
+        allow read: if true;
+        allow create: if request.resource.data.keys().hasOnly(['breakdown','firstDaily','points','score','answers'])
+          && nonnegative(request.resource.data.points) && nonnegative(request.resource.data.score)
+          && request.resource.data.score <= 50 && request.resource.data.firstDaily is bool
+          && request.resource.data.breakdown is map && request.resource.data.answers is list
+          && request.resource.data.answers.size() <= 50;
+        allow update, delete: if false;
+      }
+      match /backups/{backup} {
+        allow read: if true;
+        allow create: if request.resource.data.keys().hasOnly(['at','user'])
+          && request.resource.data.at is string && request.resource.data.user is map
+          && request.resource.data.user.id == id;
+        allow update, delete: if false;
+      }
+    }
+    match /playerNames/{name} {
+      allow read: if true;
+      allow create: if request.resource.data.keys().hasOnly(['userId']) && request.resource.data.userId is string;
+      allow update, delete: if false;
+    }
+    match /dailies/{date} {
+      allow read: if true;
+      allow create: if date.matches('^[0-9]{4}-[0-9]{2}-[0-9]{2}$') && daily(request.resource.data);
+      // One-way upgrade for legacy ID-only pins. Never replace a published set.
+      allow update: if !('questions' in resource.data) && daily(request.resource.data)
+        && request.resource.data.questionIds == resource.data.questionIds;
+      allow delete: if false;
+    }
+    match /weeklyHomework/state {
+      allow read: if true;
+      allow create, update: if request.resource.data.keys().hasOnly(['weekKey','movieId','pickedAt','watched'])
+        && request.resource.data.weekKey is string && request.resource.data.movieId is int
+        && request.resource.data.pickedAt is string && request.resource.data.watched is list
+        && request.resource.data.watched.size() <= 200;
+      allow delete: if false;
+    }
+    match /flags/{flag} {
+      allow read: if true;
+      allow create: if request.resource.data.keys().hasOnly(['questionId','questionText','correctAnswer',
+        'allAnswers','difficulty','category','reportedBy','comment','timestamp'])
+        && request.resource.data.questionId is int && request.resource.data.questionText is string
+        && request.resource.data.questionText.size() <= 2000 && request.resource.data.correctAnswer is string
+        && request.resource.data.correctAnswer.size() <= 1000
+        && request.resource.data.allAnswers is list && request.resource.data.allAnswers.size() == 4
+        && request.resource.data.difficulty in ['easy','medium','hard']
+        && request.resource.data.category in ['movies','characters','parks','walt','cruise','music','pixar']
+        && request.resource.data.reportedBy is string && request.resource.data.reportedBy.size() <= 20
+        && (request.resource.data.comment == null || (request.resource.data.comment is string && request.resource.data.comment.size() <= 200))
+        && request.resource.data.timestamp is string;
+      allow update: if request.resource.data.diff(resource.data).affectedKeys().hasOnly(['_resolved'])
+        && (!('_resolved' in request.resource.data) || request.resource.data._resolved is bool);
+      allow delete: if true;
+    }
+    match /{document=**} { allow read, write: if false; }
+  }
+}

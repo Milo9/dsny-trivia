@@ -79,15 +79,16 @@ test('pickDailyQuestions ignores pool order and honors exclusions', () => {
   assert.ok(c.every(x => !excl.has(x.id)));
 });
 
-test('pickDailyQuestions drops exclusion entirely when it would leave too few', () => {
+test('pickDailyQuestions preserves fresh questions and relaxes oldest exclusions first', () => {
   const pool = Array.from({ length: 12 }, (_, i) => q(i + 1));
   const excl = new Set([1, 2, 3, 4, 5]);
   const picked = L.pickDailyQuestions(pool, '2026-10-05', 10, excl);
   assert.equal(picked.length, 10);
-  assert.deepEqual(picked.map(x => x.id), L.pickDailyQuestions(pool, '2026-10-05', 10).map(x => x.id));
+  assert.ok(picked.slice(0,7).every(x=>x.id>5));
+  assert.deepEqual(picked.slice(7).map(x=>x.id),[1,2,3]);
 });
 
-test('pickRegularQuestions prefers unseen, else uses the whole pool', () => {
+test('pickRegularQuestions preserves unseen questions and tops up with oldest repeats', () => {
   const pool = Array.from({ length: 20 }, (_, i) => q(i + 1));
   const seen = Array.from({ length: 8 }, (_, i) => i + 1);
   const fresh = L.pickRegularQuestions(pool, seen, 10, seqRng(3));
@@ -97,12 +98,15 @@ test('pickRegularQuestions prefers unseen, else uses the whole pool', () => {
   const mixed = L.pickRegularQuestions(pool, seen15, 10, seqRng(3));
   assert.equal(mixed.length, 10);
   assert.equal(new Set(mixed.map(x => x.id)).size, 10);
+  assert.ok(mixed.slice(0,5).every(x=>x.id>15));
+  assert.deepEqual(mixed.slice(5).map(x=>x.id),[1,2,3,4,5]);
 });
 
 test('capSeenIds keeps only the most recent entries', () => {
   assert.deepEqual(L.capSeenIds([1, 2, 3], [4, 5], 4), [2, 3, 4, 5]);
   assert.deepEqual(L.capSeenIds([], [1], 4), [1]);
-  assert.equal(L.capSeenIds(Array(299).fill(0), [1, 2, 3]).length, L.SEEN_MAX);
+  assert.equal(L.capSeenIds(Array.from({length:299},(_,i)=>i), [299,300,301]).length, L.SEEN_MAX);
+  assert.deepEqual(L.capSeenIds([1,2,3],[2,4]),[1,3,2,4]);
 });
 
 test('pickMovie excludes watched and resets when the pool is exhausted', () => {
@@ -275,4 +279,11 @@ test('buildGameLogEntry never emits undefined (Firestore rejects it)', () => {
       assert.equal(e.firstDaily === undefined, mode !== 'daily');
     }
   }
+});
+
+test('runtime question validation rejects malformed published data', () => {
+  assert.ok(L.validQuestion(q(1)));
+  assert.equal(!!L.validQuestion({...q(1),category:'<img onerror=alert(1)>'}),false);
+  assert.equal(!!L.validQuestion({...q(1),answers:['a','a','c','d']}),false);
+  assert.equal(!!L.validQuestion({...q(1),question:''}),false);
 });

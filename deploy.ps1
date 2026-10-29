@@ -43,7 +43,7 @@ $changed = @(git diff --name-only HEAD) + $untracked
 # hand in this change; then every ?v= in index.html is synced to it. The
 # app.js?v= value is what the in-app update toast compares, so this is what
 # tells already-open apps that a new build exists.
-$codeFiles = @('app.js', 'style.css', 'storage.js', 'game-logic.js', 'index.html')
+$codeFiles = @('app.js', 'style.css', 'storage.js', 'game-logic.js', 'data-logic.js', 'bootstrap.js', 'sw.js', 'index.html')
 $codeChanged = @($changed | Where-Object { $codeFiles -contains $_ }).Count -gt 0
 
 $appText = [System.IO.File]::ReadAllText($appJs)
@@ -77,6 +77,16 @@ if ($synced -ne $html) {
 $vs = [regex]::Matches([System.IO.File]::ReadAllText($indexHtml), '\.(?:js|css)\?v=([^"'']+)') | ForEach-Object { $_.Groups[1].Value } | Select-Object -Unique
 if (@($vs).Count -ne 1 -or $vs -ne $version) { Fail "index.html ?v= strings don't all match APP_VERSION $version : $($vs -join ', ')" }
 
+# Keep the bootstrap fallback and offline shell on the same build as the page.
+foreach ($name in @('bootstrap.js','sw.js','review.html')) {
+    $path = Join-Path $PSScriptRoot $name
+    $text = [System.IO.File]::ReadAllText($path)
+    $text = [regex]::Replace($text, '(\?v=)\d+\.\d+', ('${1}' + $version))
+    $text = [regex]::Replace($text, 'disney-practice-\d+\.\d+', ('disney-practice-' + $version))
+    if ($name -eq 'bootstrap.js') { $text = [regex]::Replace($text, "\|\| '\d+\.\d+'", ("|| '" + $version + "'")) }
+    [System.IO.File]::WriteAllText($path, $text, $utf8NoBom)
+}
+
 # --- Gates -----------------------------------------------------------------------
 if (-not $SkipChecks) {
     if (@($changed | Where-Object { $_ -like 'questions/*' }).Count -gt 0) {
@@ -86,13 +96,21 @@ if (-not $SkipChecks) {
     }
     if (Get-Command node -ErrorAction SilentlyContinue) {
         Write-Host "Running unit tests..." -ForegroundColor Cyan
-        $testOut = node --test --test-reporter=dot test/game-logic.test.js
+        $testOut = node --test --test-reporter=dot test/game-logic.test.js test/storage.test.js test/admin.test.js
         $testCode = $LASTEXITCODE
         $testOut | ForEach-Object { Write-Host "  $_" }
         if ($testCode -ne 0) { Fail "Unit tests failed - run 'node --test test/game-logic.test.js' for details." }
     } else {
-        Write-Host "node not found - skipping unit tests." -ForegroundColor Yellow
+        Fail "node is required for release checks."
     }
+    python -m unittest discover -s test -p 'test_*.py'
+    if ($LASTEXITCODE -ne 0) { Fail "Content-tool tests failed." }
+    python scripts/visual_check.py
+    if ($LASTEXITCODE -ne 0) { Fail "Isolated browser checks failed." }
+    python scripts/visual_check.py --browser webkit
+    if ($LASTEXITCODE -ne 0) { Fail "WebKit browser checks failed." }
+    npm.cmd run test:emulator
+    if ($LASTEXITCODE -ne 0) { Fail "Firestore emulator checks failed. Run npm ci and install Java 21 first." }
 }
 
 if ($DryRun) {

@@ -1,450 +1,219 @@
+// Persistent operations share pure rules in data-logic.js. Never retry a score
+// by inventing a new game id; its receipt and counters commit atomically.
 class LocalStorageAdapter {
-  constructor() {
-    this.KEY = 'disney_trivia_v1';
-    this._seed();
-  }
-
-  _load() {
-    try { return JSON.parse(localStorage.getItem(this.KEY)) || {}; }
-    catch { return {}; }
-  }
-
+  constructor() { this.KEY = 'disney_trivia_v1'; this._seed(); }
+  _load() { try { return JSON.parse(localStorage.getItem(this.KEY)) || {}; } catch { return {}; } }
   _save(data) { localStorage.setItem(this.KEY, JSON.stringify(data)); }
-
   _seed() {
-    const data = this._load();
-    if (!data.users) {
-      data.users = {
-        kristen: { id: 'kristen', name: 'Kristen', totalAnswered: 0, totalCorrect: 0, gamesPlayed: 0, totalPoints: 0 },
-        cara:    { id: 'cara',    name: 'Cara',    totalAnswered: 0, totalCorrect: 0, gamesPlayed: 0, totalPoints: 0 }
-      };
-      this._save(data);
+    const d = this._load();
+    if (!d.users) {
+      d.users = Object.fromEntries(['Kristen', 'Cara'].map(name => [name.toLowerCase(), {
+        id: name.toLowerCase(), name, totalAnswered: 0, totalCorrect: 0, gamesPlayed: 0, totalPoints: 0
+      }]));
+      this._save(d);
     }
   }
-
-  async getUsers() {
-    return Object.values(this._load().users || {});
-  }
-
+  async getUsers() { return Object.values(this._load().users || {}); }
   async saveUser(user) {
-    const data = this._load();
-    if (!data.users) data.users = {};
-    data.users[user.id] = user;
-    this._save(data);
-    return user;
+    const d = this._load();
+    if (Object.values(d.users).some(u => u.name.toLowerCase() === user.name.toLowerCase())) throw new Error('Player already exists.');
+    d.users[user.id] = user; this._save(d); return user;
   }
-
-  // points — pts earned this game (primary state; not recomputable from counters alone)
-  // dailyUpdate — {score, points, dateKey, streak} or null
-  // catStats    — {category: {answered, correct}, ...} or null
-  // recentQuestionIds — this player's full capped seen-ids list (already computed
-  //   client-side), or null to leave the field untouched. Mirrors localStorage's
-  //   `disney_seen_{userId}` into Firestore so daily-pin generation can exclude
-  //   anything any player has recently played, in any mode.
-  // monthKey — "YYYY-MM" for the month this game's points count toward (primary
-  //   state, same reset-on-new-key pattern as the daily streak fields below —
-  //   not derived, since there's no history of past games to recompute it from).
-  // logEntry — a buildGameLogEntry() record prepended to the capped `gameLog`
-  //   diagnostic history (see game-logic.js), or null to skip.
-  async updateStats(userId, answered, correct, points, dailyUpdate, catStats, recentQuestionIds, monthKey, logEntry) {
-    const data = this._load();
-    const u = data.users[userId];
-    if (!u) throw new Error('User not found: ' + userId);
-    u.totalAnswered += answered;
-    u.totalCorrect  += correct;
-    u.gamesPlayed   += 1;
-    u.totalPoints    = (u.totalPoints || 0) + points;
-    if (monthKey) {
-      // First play of a new month: shift the outgoing month's total into
-      // prev before overwriting, same pattern as the daily prev-shift below —
-      // this is what makes a "Last Month" leaderboard view possible.
-      if (u.monthlyKey && u.monthlyKey !== monthKey) {
-        u.prevMonthlyKey    = u.monthlyKey;
-        u.prevMonthlyPoints = u.monthlyPoints || 0;
-      }
-      u.monthlyPoints = (u.monthlyKey === monthKey ? (u.monthlyPoints || 0) : 0) + points;
-      u.monthlyKey    = monthKey;
+  async updateStats(userId, answered, correct, points, daily, cats, recent, period, log, op) {
+    const d = this._load(), u = d.users[userId];
+    if (!u) throw new Error('Player not found.');
+    if (op && (op.resetRevision || 0) !== (u.resetRevision || 0)) throw Object.assign(new Error('Scores were reset. Start a new game.'), {code:'reset-game'});
+    const key = op ? `${u.resetRevision || 0}_${daily ? 'daily_' + daily.dateKey : op.gameId}` : null;
+    d.receipts ||= {};
+    const saved = key && d.receipts[userId + '/' + key];
+    if (saved) return {...saved, user:u, alreadySaved:true};
+    // Existing pre-receipt daily results also block duplicate awards.
+    if (daily && (u.completedDailyDates || [u.lastDailyDate, u.prevDailyDate]).includes(daily.dateKey)) {
+      return {user:u, alreadySaved:true, points:0, breakdown:scoreBreakdown([],false,0), score:correct};
     }
-    if (catStats) {
-      if (!u.categoryStats) u.categoryStats = {};
-      for (const [cat, counts] of Object.entries(catStats)) {
-        const prev = u.categoryStats[cat] || { answered: 0, correct: 0 };
-        u.categoryStats[cat] = { answered: prev.answered + counts.answered, correct: prev.correct + counts.correct };
-      }
-    }
-    if (dailyUpdate) {
-      // First play of a new day: shift current slot into prev before overwriting
-      if (dailyUpdate.streak !== null && u.lastDailyDate && u.lastDailyDate !== dailyUpdate.dateKey) {
-        u.prevDailyDate    = u.lastDailyDate;
-        u.prevDailyScore   = u.lastDailyScore  ?? 0;
-        u.prevDailyPoints  = u.lastDailyPoints ?? 0;
-        u.prevDailyAnswers = u.lastDailyAnswers || null;
-      }
-      u.lastDailyScore  = dailyUpdate.score;
-      u.lastDailyPoints = dailyUpdate.points;
-      u.lastDailyDate   = dailyUpdate.dateKey;
-      if (dailyUpdate.streak !== null) u.dailyStreak = dailyUpdate.streak;
-      if (dailyUpdate.answers)         u.lastDailyAnswers = dailyUpdate.answers;
-    }
-    if (recentQuestionIds) u.recentQuestionIds = recentQuestionIds;
-    if (logEntry) u.gameLog = appendGameLog(u.gameLog, logEntry);
-    this._save(data);
-    return u;
+    const result = prepareStatsUpdate(u, [answered,correct,points,daily,cats,recent,period,log], op);
+    const receipt = {...result}; delete receipt.user;
+    if (key) d.receipts[userId + '/' + key] = receipt;
+    d.users[userId] = result.user; this._save(d); return result;
   }
-
-  async saveRecentQuestionIds(userId, ids, logEntry) {
-    const data = this._load();
-    const u = data.users[userId];
-    if (!u) throw new Error('User not found: ' + userId);
-    u.recentQuestionIds = ids;
-    if (logEntry) u.gameLog = appendGameLog(u.gameLog, logEntry);
-    this._save(data);
+  async saveRecentQuestionIds(userId, ids, log) {
+    const d = this._load(), u = d.users[userId];
+    u.recentQuestionIds = capSeenIds(u.recentQuestionIds || [], ids);
+    if (log) u.gameLog = appendGameLog(u.gameLog, log);
+    this._save(d);
   }
-
-  async getDailyPins(dateKey) {
-    const data = this._load();
-    return (data.dailies && data.dailies[dateKey]) ? data.dailies[dateKey] : null;
+  async getDailyPins(date) {
+    const entry = this._load().dailies?.[date];
+    return Array.isArray(entry) ? entry : entry?.questionIds || null;
   }
-
-  async saveDailyPins(dateKey, questionIds) {
-    const data = this._load();
-    if (!data.dailies) data.dailies = {};
-    data.dailies[dateKey] = questionIds;
-    this._save(data);
+  async getDailyQuestions(date) { return this._load().dailies?.[date]?.questions || null; }
+  async claimDailyQuestions(date, candidates, pool) {
+    const d = this._load(); d.dailies ||= {};
+    if (!d.dailies[date]?.questions) d.dailies[date] = canonicalDaily(d.dailies[date], candidates, pool);
+    this._save(d); return d.dailies[date].questions;
   }
-
-  async claimDailyPins(dateKey, questionIds) {
-    const existing = await this.getDailyPins(dateKey);
-    if (existing && existing.length > 0) return existing;
-    await this.saveDailyPins(dateKey, questionIds);
-    return questionIds;
+  async saveDailyPins(date, ids) {
+    const d = this._load(); d.dailies ||= {};
+    if (!d.dailies[date]) { d.dailies[date] = ids; this._save(d); }
   }
-
-  // Every question ID pinned as a daily challenge on or after sinceDateKey
-  // ("YYYY-MM-DD", lexically comparable) — independent of whether anyone
-  // actually played that day. Used alongside recentQuestionIds so daily-pin
-  // generation doesn't depend on someone having recently played. Rolling
-  // window, not all-time: see the caller in app.js for why an unbounded
-  // history isn't safe long-term.
-  async getAllDailyQuestionIds(sinceDateKey) {
-    const data = this._load();
-    const ids = new Set();
-    Object.entries(data.dailies || {}).forEach(([dateKey, arr]) => {
-      if (dateKey >= sinceDateKey) (arr || []).forEach(id => ids.add(id));
-    });
-    return Array.from(ids);
+  async claimDailyPins(date, ids) { await this.saveDailyPins(date,ids); return this.getDailyPins(date); }
+  async getAllDailyQuestionIds(since) {
+    return [...new Set(Object.entries(this._load().dailies || {}).filter(([date]) => date >= since)
+      .sort(([a],[b])=>a.localeCompare(b)).flatMap(([,d]) => Array.isArray(d) ? d : d.questionIds || []))];
   }
-
-  async getHomeworkState() {
-    const data = this._load();
-    return data.weeklyHomework || null;
+  async getHomeworkState() { return this._load().weeklyHomework || null; }
+  async updateHomework(action, movies, week, at) {
+    const d = this._load(); const next = mutateHomework(d.weeklyHomework,action,movies,week,at);
+    d.weeklyHomework = next; this._save(d); return next;
   }
-
-  async saveHomeworkState(state) {
-    const data = this._load();
-    data.weeklyHomework = state;
-    this._save(data);
-  }
-
-  async flagReport(report) {
-    const data = this._load();
-    if (!data.flags) data.flags = [];
-    data.flags.push(report);
-    this._save(data);
-  }
-
-  async getFlags() {
-    return this._load().flags || [];
-  }
-
-  // targetMonthKey — optional "YYYY-MM", either the current month (for "This
-  // Month") or the one before it (for "Last Month", see prevMonthKey() in
-  // app.js). Each returned user gets an `effectivePeriodPoints` field: their
-  // `monthlyPoints` if `monthlyKey` matches the target (the target is the
-  // month they're currently accumulating), else their `prevMonthlyPoints` if
-  // `prevMonthlyKey` matches (the target is the month they just rolled out
-  // of), else 0 (they didn't play at all in that month). Computed here for
-  // display only — never written back, per the no-derived-values-in-storage rule.
-  async getLeaderboard(targetMonthKey = null) {
-    let users = Object.values(this._load().users || {});
-    if (targetMonthKey) {
-      users = users.map(u => ({ ...u, effectivePeriodPoints: this._effectivePeriodPoints(u, targetMonthKey) }));
-      return users.sort((a, b) => b.effectivePeriodPoints - a.effectivePeriodPoints);
-    }
-    return users.sort((a, b) => {
-      const ptsDiff = (b.totalPoints || 0) - (a.totalPoints || 0);
-      if (ptsDiff !== 0) return ptsDiff;
-      const pa = a.totalAnswered ? a.totalCorrect / a.totalAnswered : -1;
-      const pb = b.totalAnswered ? b.totalCorrect / b.totalAnswered : -1;
-      return pb - pa;
-    });
-  }
-
-  _effectivePeriodPoints(u, targetMonthKey) {
-    if (u.monthlyKey === targetMonthKey) return u.monthlyPoints || 0;
-    if (u.prevMonthlyKey === targetMonthKey) return u.prevMonthlyPoints || 0;
-    return 0;
-  }
+  async flagReport(report) { const d=this._load(); (d.flags ||= []).push(report); this._save(d); }
+  async getFlags() { return this._load().flags || []; }
+  async getLeaderboard(period = null) { return sortLeaderboard(await this.getUsers(),period); }
+  _effectivePeriodPoints(u,k) { return effectivePeriodPoints(u,k); }
 }
 
-// =============================================================================
-// Firebase adapter — shared leaderboard across devices
-// =============================================================================
+function canonicalDaily(existing, candidates, pool) {
+  if (existing?.questions?.length) return existing;
+  const ids = Array.isArray(existing) ? existing : existing?.questionIds;
+  // Upgrade legacy ID-only records without changing their order or replacing a question.
+  const questions = ids?.length ? ids.map(id => pool.find(q => q.id === id)) : candidates;
+  if (!questions?.length || questions.some(q=>!q)) throw new Error('This older challenge is unavailable. Please try another game.');
+  return {questionIds:questions.map(q=>q.id), questions:JSON.parse(JSON.stringify(questions))};
+}
+function sortLeaderboard(users, period) {
+  if (period) return users.map(u=>({...u,effectivePeriodPoints:effectivePeriodPoints(u,period)}))
+    .sort((a,b)=>b.effectivePeriodPoints-a.effectivePeriodPoints || a.name.localeCompare(b.name));
+  return users.sort((a,b)=>(b.totalPoints||0)-(a.totalPoints||0)
+    || (b.totalAnswered ? b.totalCorrect/b.totalAnswered : -1)-(a.totalAnswered ? a.totalCorrect/a.totalAnswered : -1)
+    || a.name.localeCompare(b.name));
+}
+
 class FirebaseAdapter {
-  constructor() {
-    firebase.initializeApp({
-      apiKey:            "AIzaSyC_keHyGc1Z46rzqB9wNKJ36wZgHscfGrQ",
-      authDomain:        "disneytrivia-38ac6.firebaseapp.com",
-      projectId:         "disneytrivia-38ac6",
-      storageBucket:     "disneytrivia-38ac6.firebasestorage.app",
-      messagingSenderId: "817552679289",
-      appId:             "1:817552679289:web:1e82c3f0c72eeed2020fa8"
-    });
-    this.db = firebase.firestore();
-    // Fire-and-forget: swallow so an offline load doesn't surface an unhandled
-    // rejection. getUsers() will show its own error UI if Firestore is unreachable.
-    this._seed().catch(() => {});
+  constructor() { this.initialization=null; }
+  async _initialize() {
+    try {
+      if(globalThis.firebaseReady) await globalThis.firebaseReady;
+      if (typeof firebase === 'undefined') throw new Error('The online connection could not load. Check your connection or use offline practice.');
+      if (!firebase.apps.length) firebase.initializeApp({
+        apiKey:'AIzaSyC_keHyGc1Z46rzqB9wNKJ36wZgHscfGrQ', authDomain:'disneytrivia-38ac6.firebaseapp.com',
+        projectId:'disneytrivia-38ac6', storageBucket:'disneytrivia-38ac6.firebasestorage.app',
+        messagingSenderId:'817552679289', appId:'1:817552679289:web:1e82c3f0c72eeed2020fa8'
+      });
+      this.db = firebase.firestore();
+      this.seedReady = this._seed(); this.seedReady.catch(()=>{});
+    } catch (e) { this.initError=e; }
   }
-
-  // Wraps a *read* call with a timeout + one retry. Firestore's SDK does not
-  // reject promptly on a degraded (not fully offline) connection — its
-  // internal stream just keeps retrying, which can hang a read for a very
-  // long time with nothing on screen ever changing. Without this, a flaky
-  // connection looks identical to a silent app bug: the caller's own
-  // try/catch never fires because nothing ever rejects. fn is called fresh
-  // on each attempt (not a pre-started promise) so the retry is a real new
-  // request, not a re-await of the same stuck one. Never used for writes —
-  // a timed-out write whose first attempt actually landed server-side would
-  // double-apply on retry (see updateStats, which is deliberately excluded).
-  _withTimeout(fn, { attempts = 2, timeoutMs = 8000 } = {}) {
-    const attempt = () => Promise.race([
-      fn(),
-      new Promise((_, reject) => setTimeout(
-        () => reject(new Error('Request timed out — check your connection.')), timeoutMs
-      ))
-    ]);
-    return (async () => {
-      let lastErr;
-      for (let i = 0; i < attempts; i++) {
-        try { return await attempt(); } catch (e) { lastErr = e; }
-      }
-      throw lastErr;
-    })();
+  async _ready() {
+    this.initialization ||= this._initialize();
+    await this.initialization;
+    if(this.initError) throw this.initError;
   }
-
+  async _withTimeout(fn, {attempts=2,timeoutMs=8000}={}) {
+    await this._ready(); let error;
+    for(let i=0;i<attempts;i++) {
+      let timer;
+      try { return await Promise.race([Promise.resolve().then(fn),new Promise((_,reject)=>{
+        timer=setTimeout(()=>reject(new Error('Request timed out. Check your connection.')),timeoutMs);
+      })]); } catch(e) {error=e;} finally {clearTimeout(timer);}
+    }
+    throw error;
+  }
   async _seed() {
-    const defaults = [
-      { id: 'kristen', name: 'Kristen', totalAnswered: 0, totalCorrect: 0, gamesPlayed: 0, totalPoints: 0 },
-      { id: 'cara',    name: 'Cara',    totalAnswered: 0, totalCorrect: 0, gamesPlayed: 0, totalPoints: 0 }
-    ];
-    for (const u of defaults) {
-      const ref  = this.db.collection('users').doc(u.id);
-      const snap = await ref.get();
-      if (!snap.exists) await ref.set(u);
-    }
+    await Promise.all(['Kristen','Cara'].map(name=>this.db.runTransaction(async tx=>{
+      const ref=this.db.collection('users').doc(name.toLowerCase()), snap=await tx.get(ref);
+      if(!snap.exists) tx.set(ref,{id:name.toLowerCase(),name,totalAnswered:0,totalCorrect:0,gamesPlayed:0,totalPoints:0});
+    })));
   }
-
   async getUsers() {
-    return this._withTimeout(async () => {
-      const snap = await this.db.collection('users').get();
-      return snap.docs.map(d => d.data());
+    return this._withTimeout(async()=>{
+      await this.seedReady;
+      return (await this.db.collection('users').get()).docs.map(d=>d.data());
     });
   }
-
   async saveUser(user) {
-    await this.db.collection('users').doc(user.id).set(user);
-    return user;
+    await this._ready();
+    // A normalized name claim prevents simultaneous devices creating duplicates.
+    const claim=this.db.collection('playerNames').doc(encodeURIComponent(user.name.trim().toLowerCase()));
+    await this.db.runTransaction(async tx=>{
+      const s=await tx.get(claim);
+      if(s.exists) throw new Error('Player already exists.');
+      tx.set(claim,{userId:user.id}); tx.set(this.db.collection('users').doc(user.id),user);
+    }); return user;
   }
-
-  // points — pts earned this game (primary state; not recomputable from counters alone)
-  // dailyUpdate — {score, points, dateKey, streak} or null
-  // catStats    — {category: {answered, correct}, ...} or null
-  // recentQuestionIds — this player's full capped seen-ids list (already computed
-  //   client-side), or null to leave the field untouched. Mirrors localStorage's
-  //   `disney_seen_{userId}` into Firestore so daily-pin generation can exclude
-  //   anything any player has recently played, in any mode. Written inside this
-  //   same transaction (no extra round trip) since every call site that reaches
-  //   here already has stats to commit.
-  // monthKey — "YYYY-MM" for the month this game's points count toward (primary
-  //   state — resets on a new key, same pattern as the daily streak fields below).
-  // logEntry — a buildGameLogEntry() record prepended to the capped `gameLog`
-  //   diagnostic history (see game-logic.js), or null to skip. Prepended inside
-  //   this transaction, since arrayUnion can't order or cap.
-  async updateStats(userId, answered, correct, points, dailyUpdate, catStats, recentQuestionIds, monthKey, logEntry) {
-    const ref = this.db.collection('users').doc(userId);
-    await this.db.runTransaction(async tx => {
-      const doc = await tx.get(ref);
-      const d   = doc.data();
-      const update = {
-        totalAnswered: d.totalAnswered + answered,
-        totalCorrect:  d.totalCorrect  + correct,
-        gamesPlayed:   d.gamesPlayed   + 1,
-        totalPoints:   (d.totalPoints || 0) + points
-      };
-      if (monthKey) {
-        // First play of a new month: shift the outgoing month's total into
-        // prev before overwriting, same pattern as the daily prev-shift below —
-        // this is what makes a "Last Month" leaderboard view possible.
-        if (d.monthlyKey && d.monthlyKey !== monthKey) {
-          update.prevMonthlyKey    = d.monthlyKey;
-          update.prevMonthlyPoints = d.monthlyPoints || 0;
-        }
-        update.monthlyPoints = (d.monthlyKey === monthKey ? (d.monthlyPoints || 0) : 0) + points;
-        update.monthlyKey    = monthKey;
+  async updateStats(userId, answered, correct, points, daily, cats, recent, period, log, op) {
+    await this._ready();
+    if(!op?.gameId) throw new Error('A persistent game ID is required.');
+    const ref=this.db.collection('users').doc(userId);
+    const key=`${op.resetRevision || 0}_${daily ? 'daily_'+daily.dateKey : op.gameId}`;
+    const receiptRef=ref.collection('games').doc(key);
+    return this.db.runTransaction(async tx=>{
+      const [snap,saved]=await Promise.all([tx.get(ref),tx.get(receiptRef)]);
+      if(!snap.exists) throw new Error('Player not found.');
+      const u=snap.data();
+      if((op.resetRevision||0)!==(u.resetRevision||0)) throw Object.assign(new Error('Scores were reset. Start a new game.'),{code:'reset-game'});
+      if(saved.exists) return {...saved.data(),user:u,alreadySaved:true};
+      if(daily && (u.completedDailyDates || [u.lastDailyDate,u.prevDailyDate]).includes(daily.dateKey)) {
+        return {user:u,alreadySaved:true,points:0,breakdown:scoreBreakdown([],false,0),score:correct};
       }
-      if (recentQuestionIds) update.recentQuestionIds = recentQuestionIds;
-      if (logEntry) update.gameLog = appendGameLog(d.gameLog, logEntry);
-      if (catStats) {
-        const existing = d.categoryStats || {};
-        const merged   = { ...existing };
-        for (const [cat, counts] of Object.entries(catStats)) {
-          const prev = merged[cat] || { answered: 0, correct: 0 };
-          merged[cat] = { answered: prev.answered + counts.answered, correct: prev.correct + counts.correct };
-        }
-        update.categoryStats = merged;
-      }
-      if (dailyUpdate) {
-        // First play of a new day: shift current slot into prev before overwriting
-        if (dailyUpdate.streak !== null && d.lastDailyDate && d.lastDailyDate !== dailyUpdate.dateKey) {
-          update.prevDailyDate    = d.lastDailyDate;
-          update.prevDailyScore   = d.lastDailyScore  ?? 0;
-          update.prevDailyPoints  = d.lastDailyPoints ?? 0;
-          update.prevDailyAnswers = d.lastDailyAnswers || null;
-        }
-        update.lastDailyScore  = dailyUpdate.score;
-        update.lastDailyPoints = dailyUpdate.points;
-        update.lastDailyDate   = dailyUpdate.dateKey;
-        if (dailyUpdate.streak !== null) update.dailyStreak = dailyUpdate.streak;
-        if (dailyUpdate.answers)         update.lastDailyAnswers = dailyUpdate.answers;
-      }
-      tx.update(ref, update);
+      const result=prepareStatsUpdate(u,[answered,correct,points,daily,cats,recent,period,log],op);
+      const receipt={...result}; delete receipt.user;
+      tx.set(receiptRef,receipt); tx.update(ref,result.user); return result;
     });
   }
-
-  // Standalone (no stats transaction) sync point for a partial daily-challenge
-  // exit — nothing is committed to stats until the daily is fully finished, but
-  // the already-answered questions still need to count as "recently seen" for
-  // daily-pin exclusion. Callers treat this as best-effort and swallow errors.
-  // logEntry (optional) is prepended to `gameLog` — needs a transaction, since
-  // a blind update can't prepend to or cap an array.
-  async saveRecentQuestionIds(userId, ids, logEntry) {
-    const ref = this.db.collection('users').doc(userId);
-    if (!logEntry) {
-      await ref.update({ recentQuestionIds: ids });
-      return;
-    }
-    await this.db.runTransaction(async tx => {
-      const doc = await tx.get(ref);
-      tx.update(ref, { recentQuestionIds: ids, gameLog: appendGameLog(doc.data().gameLog, logEntry) });
+  async saveRecentQuestionIds(userId,ids,log) {
+    await this._ready(); const ref=this.db.collection('users').doc(userId);
+    await this.db.runTransaction(async tx=>{
+      const snap=await tx.get(ref); if(!snap.exists) return;
+      const u=snap.data(); const patch={recentQuestionIds:capSeenIds(u.recentQuestionIds||[],ids)};
+      if(log) patch.gameLog=appendGameLog(u.gameLog,log);
+      tx.update(ref,patch);
     });
   }
-
-  async getDailyPins(dateKey) {
-    return this._withTimeout(async () => {
-      const doc = await this.db.collection('dailies').doc(dateKey).get();
-      return doc.exists ? (doc.data().questionIds || null) : null;
-    });
+  async getDailyPins(date) {
+    return this._withTimeout(async()=>{const s=await this.db.collection('dailies').doc(date).get();return s.exists?s.data().questionIds:null;});
   }
-
-  async saveDailyPins(dateKey, questionIds) {
-    await this.db.collection('dailies').doc(dateKey).set({ questionIds });
+  async getDailyQuestions(date) {
+    return this._withTimeout(async()=>{const s=await this.db.collection('dailies').doc(date).get();return s.exists?s.data().questions||null:null;});
   }
-
-  // Create-if-absent pin for a new day: writes questionIds only if no pin
-  // exists yet, and returns whichever pin is actually stored — the caller must
-  // play what comes back, not its own candidates. A plain set() here let a
-  // device whose getDailyPins read failed (timeout on flaky wifi) overwrite a
-  // pin someone had already played, splitting the day into two question sets
-  // (happened 2026-10-21). Safe to retry via _withTimeout: same questionIds on
-  // every attempt, and a late-landing first attempt just gets read back.
-  async claimDailyPins(dateKey, questionIds) {
-    return this._withTimeout(() => this.db.runTransaction(async tx => {
-      const ref = this.db.collection('dailies').doc(dateKey);
-      const doc = await tx.get(ref);
-      const existing = doc.exists ? doc.data().questionIds : null;
-      if (existing && existing.length > 0) return existing;
-      tx.set(ref, { questionIds });
-      return questionIds;
+  async claimDailyQuestions(date,candidates,pool) {
+    return this._withTimeout(()=>this.db.runTransaction(async tx=>{
+      const ref=this.db.collection('dailies').doc(date), s=await tx.get(ref);
+      const old=s.exists?s.data():null;
+      const canonical=canonicalDaily(old,candidates,pool);
+      if(!old?.questions?.length) tx.set(ref,canonical);
+      return canonical.questions;
     }));
   }
-
-  // Every question ID pinned as a daily challenge on or after sinceDateKey
-  // ("YYYY-MM-DD") — independent of whether anyone actually played that day.
-  // Used alongside recentQuestionIds so daily-pin generation doesn't depend
-  // on someone having recently played, and doesn't get bypassed by heavy
-  // regular-game play pushing a daily question out of any one player's
-  // capped seen-ids window. Rolling window (not all-time): doc IDs are
-  // "YYYY-MM-DD" so they sort lexically = chronologically, letting Firestore
-  // do the filtering server-side instead of reading the whole collection —
-  // this also keeps the read cost flat as the app ages instead of growing
-  // ~1 doc/day forever. See the caller in app.js for why unbounded history
-  // isn't safe: with a ~2,050-question corpus and 10 exclusions/day, an
-  // all-time union would exhaust the corpus in ~205 days and then silently
-  // fall back to zero exclusion every day after that.
-  async getAllDailyQuestionIds(sinceDateKey) {
-    return this._withTimeout(async () => {
-      const snap = await this.db.collection('dailies')
-        .where(firebase.firestore.FieldPath.documentId(), '>=', sinceDateKey)
-        .get();
-      const ids = new Set();
-      snap.docs.forEach(d => (d.data().questionIds || []).forEach(id => ids.add(id)));
-      return Array.from(ids);
+  async saveDailyPins(date,ids) { return this.claimDailyPins(date,ids); }
+  async claimDailyPins(date,ids) {
+    return this._withTimeout(()=>this.db.runTransaction(async tx=>{
+      const ref=this.db.collection('dailies').doc(date),s=await tx.get(ref);
+      if(s.exists) return s.data().questionIds;
+      tx.set(ref,{questionIds:ids});return ids;
+    }));
+  }
+  async getAllDailyQuestionIds(since) {
+    return this._withTimeout(async()=>{
+      const s=await this.db.collection('dailies').where(firebase.firestore.FieldPath.documentId(),'>=',since).get();
+      return [...new Set(s.docs.sort((a,b)=>a.id.localeCompare(b.id)).flatMap(d=>d.data().questionIds||[]))];
     });
   }
-
   async getHomeworkState() {
-    return this._withTimeout(async () => {
-      const doc = await this.db.collection('weeklyHomework').doc('state').get();
-      return doc.exists ? doc.data() : null;
+    return this._withTimeout(async()=>{const s=await this.db.collection('weeklyHomework').doc('state').get();return s.exists?s.data():null;});
+  }
+  async updateHomework(action,movies,week,at) {
+    await this._ready();
+    return this.db.runTransaction(async tx=>{
+      const ref=this.db.collection('weeklyHomework').doc('state'),s=await tx.get(ref);
+      const old=s.exists?s.data():null, next=mutateHomework(old,action,movies,week,at);
+      if(JSON.stringify(old)!==JSON.stringify(next)) tx.set(ref,next);
+      return next;
     });
   }
-
-  async saveHomeworkState(state) {
-    await this.db.collection('weeklyHomework').doc('state').set(state);
-  }
-
-  async flagReport(report) {
-    await this.db.collection('flags').add(report);
-  }
-
-  async getFlags() {
-    return this._withTimeout(async () => {
-      const snap = await this.db.collection('flags').get();
-      return snap.docs.map(d => ({ _id: d.id, ...d.data() }));
-    });
-  }
-
-  // targetMonthKey — optional "YYYY-MM", either the current month (for "This
-  // Month") or the one before it (for "Last Month", see prevMonthKey() in
-  // app.js). Each returned user gets an `effectivePeriodPoints` field: their
-  // `monthlyPoints` if `monthlyKey` matches the target (the target is the
-  // month they're currently accumulating), else their `prevMonthlyPoints` if
-  // `prevMonthlyKey` matches (the target is the month they just rolled out
-  // of), else 0 (they didn't play at all in that month). Computed here for
-  // display only — never written back, per the no-derived-values-in-storage rule.
-  async getLeaderboard(targetMonthKey = null) {
-    return this._withTimeout(async () => {
-      const snap  = await this.db.collection('users').get();
-      let users = snap.docs.map(d => d.data());
-      if (targetMonthKey) {
-        users = users.map(u => ({ ...u, effectivePeriodPoints: this._effectivePeriodPoints(u, targetMonthKey) }));
-        return users.sort((a, b) => b.effectivePeriodPoints - a.effectivePeriodPoints);
-      }
-      return users.sort((a, b) => {
-        const ptsDiff = (b.totalPoints || 0) - (a.totalPoints || 0);
-        if (ptsDiff !== 0) return ptsDiff;
-        const pa = a.totalAnswered ? a.totalCorrect / a.totalAnswered : -1;
-        const pb = b.totalAnswered ? b.totalCorrect / b.totalAnswered : -1;
-        return pb - pa;
-      });
-    });
-  }
-
-  _effectivePeriodPoints(u, targetMonthKey) {
-    if (u.monthlyKey === targetMonthKey) return u.monthlyPoints || 0;
-    if (u.prevMonthlyKey === targetMonthKey) return u.prevMonthlyPoints || 0;
-    return 0;
-  }
+  async flagReport(report) { await this._ready(); await this.db.collection('flags').add(report); }
+  async getFlags() { return this._withTimeout(async()=>(await this.db.collection('flags').get()).docs.map(d=>({_id:d.id,...d.data()}))); }
+  async getLeaderboard(period=null) {return sortLeaderboard(await this.getUsers(),period);}
+  _effectivePeriodPoints(u,k) {return effectivePeriodPoints(u,k);}
 }
 
 const storage = new FirebaseAdapter();

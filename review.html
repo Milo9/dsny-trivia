@@ -68,11 +68,19 @@
   <button onclick="loadUsers()">↻ Refresh Users</button>
   <button class="danger" onclick="resetAllUsers()">⚠ Reset ALL Scores</button>
 </div>
+<div class="controls">
+  <button onclick="downloadBackup()">Download full data backup</button>
+  <label>Restore player stats from backup <input id="restore-file" type="file" accept="application/json,.json"></label>
+  <button onclick="exportDifficultyReport()">Export difficulty recommendations</button>
+</div>
+<p id="admin-status" role="status" aria-live="polite"></p>
 <div id="users-output"><p class="meta">Loading…</p></div>
 
 <!-- Firebase compat SDK (same version as storage.js) -->
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+<script src="game-logic.js?v=1.39"></script>
+<script src="data-logic.js?v=1.39"></script>
 <script>
 firebase.initializeApp({
   apiKey:            "AIzaSyC_keHyGc1Z46rzqB9wNKJ36wZgHscfGrQ",
@@ -124,17 +132,17 @@ function formatDate(iso) {
 }
 
 async function resolveFlag(docId) {
-  await db.collection('flags').doc(docId).update({ _resolved: true });
+  await db.collection('flags').doc(decodeURIComponent(docId)).update({ _resolved: true });
   loadFlags();
 }
 
 async function unresolveFlag(docId) {
-  await db.collection('flags').doc(docId).update({ _resolved: firebase.firestore.FieldValue.delete() });
+  await db.collection('flags').doc(decodeURIComponent(docId)).update({ _resolved: firebase.firestore.FieldValue.delete() });
   loadFlags();
 }
 
 async function deleteFlag(docId) {
-  await db.collection('flags').doc(docId).delete();
+  await db.collection('flags').doc(decodeURIComponent(docId)).delete();
   loadFlags();
 }
 
@@ -189,16 +197,16 @@ async function loadFlags() {
 
   flags.forEach((f, i) => {
     const rowClass = f._resolved ? ' class="resolved"' : '';
-    const diffClass = `badge-${f.difficulty || 'easy'}`;
-    const docId = f._docId;
+    const diffClass = `badge-${['easy','medium','hard'].includes(f.difficulty) ? f.difficulty : 'easy'}`;
+    const docId = encodeURIComponent(f._docId).replace(/'/g,'%27');
     html += `<tr${rowClass}>`;
     html += `<td class="q-id">${i + 1}</td>`;
-    html += `<td class="q-id">${f.questionId}</td>`;
+    html += `<td class="q-id">${esc(f.questionId)}</td>`;
     html += `<td class="q-shard">${shardFor(f.questionId)}</td>`;
     html += `<td class="q-text">${esc(f.questionText)}</td>`;
     html += `<td class="q-ans">${esc(f.correctAnswer)}</td>`;
-    html += `<td class="${diffClass}">${f.difficulty || '—'}</td>`;
-    html += `<td class="q-cat">${f.category || '—'}</td>`;
+    html += `<td class="${diffClass}">${esc(f.difficulty || '—')}</td>`;
+    html += `<td class="q-cat">${esc(f.category || '—')}</td>`;
     html += `<td class="q-who">${esc(f.reportedBy || '—')}</td>`;
     html += `<td class="q-note">${f.comment ? esc(f.comment) : '<span style="color:#444">—</span>'}</td>`;
     html += `<td class="q-time">${formatDate(f.timestamp)}</td>`;
@@ -224,38 +232,112 @@ function esc(str) {
 // =============================================================================
 // Users & Score Reset
 // =============================================================================
-const SCORE_ZERO = {
-  totalAnswered: 0, totalCorrect: 0, gamesPlayed: 0, totalPoints: 0,
-  dailyStreak: 0, lastDailyDate: null, lastDailyScore: null, lastDailyPoints: 0,
-  lastDailyAnswers: null, categoryStats: {},
-  prevDailyDate: null, prevDailyScore: null, prevDailyPoints: null, prevDailyAnswers: null
-};
-
 let cachedUsers = [];
-
+let adminBusy=false;
 async function fetchUsers() {
-  const snap = await db.collection('users').get();
-  return snap.docs.map(d => ({ _docId: d.id, ...d.data() }));
+  const snap=await db.collection('users').get();
+  return snap.docs.map(d=>({_docId:d.id,...d.data()}));
 }
-
-// Takes an index into cachedUsers rather than inline string args — names with
-// quotes/apostrophes would break an inline onclick handler.
+async function adminAction(action) {
+  if(adminBusy) return;
+  adminBusy=true; document.getElementById('admin-status').textContent='Saving…';
+  try { await action(); document.getElementById('admin-status').textContent='Saved ✓'; await loadUsers(); }
+  catch(e) { document.getElementById('admin-status').textContent='Could not finish: '+e.message; }
+  finally { adminBusy=false; }
+}
+async function resetPlayer(id) {
+  const ref=db.collection('users').doc(id),backup=ref.collection('backups').doc();
+  await db.runTransaction(async tx=>{
+    const snap=await tx.get(ref);if(!snap.exists)throw new Error('Player not found.');
+    const user=snap.data();
+    tx.set(backup,{at:new Date().toISOString(),user});
+    tx.set(ref,scoreReset(user));
+  });
+}
 async function resetUser(idx) {
-  const u = cachedUsers[idx];
-  if (!u) return;
-  if (!confirm(`Reset ALL scores for ${u.name}?\n\nThis clears: points, games, correct %, streak, daily history.\n\nThis cannot be undone.`)) return;
-  await db.collection('users').doc(u._docId).update(SCORE_ZERO);
-  loadUsers();
+  const u=cachedUsers[idx];if(!u)return;
+  if(!confirm(`Reset all scores for ${u.name}? A recoverable snapshot will be kept. Existing unfinished games will be invalidated.`))return;
+  await adminAction(()=>resetPlayer(u._docId));
 }
-
 async function resetAllUsers() {
-  if (!confirm('Reset scores for EVERY player?\n\nThis clears ALL points, games, streaks, and daily history for everyone.\n\nThis cannot be undone.')) return;
-  if (!confirm('Are you absolutely sure? This affects all players permanently.')) return;
-  const users = await fetchUsers();
-  const batch = db.batch();
-  users.forEach(u => batch.update(db.collection('users').doc(u._docId), SCORE_ZERO));
-  await batch.commit();
-  loadUsers();
+  if(!confirm('Reset all scores for every player? A recoverable snapshot will be kept for each player. Existing unfinished games will be invalidated.'))return;
+  await adminAction(async()=>{for(const u of await fetchUsers())await resetPlayer(u._docId);});
+}
+async function restoreLastReset(idx) {
+  const u=cachedUsers[idx];if(!u)return;
+  if(!confirm(`Restore ${u.name}'s latest pre-reset snapshot? Scores earned since that reset will be replaced.`))return;
+  await adminAction(async()=>{
+    const ref=db.collection('users').doc(u._docId);
+    const list=await ref.collection('backups').orderBy('at','desc').limit(1).get();
+    if(list.empty)throw new Error('No reset snapshot exists for this player.');
+    const backup=ref.collection('backups').doc();
+    await db.runTransaction(async tx=>{
+      const [live,saved]=await Promise.all([tx.get(ref),tx.get(list.docs[0].ref)]);
+      if(!saved.exists)throw new Error('Snapshot no longer exists.');
+      tx.set(backup,{at:new Date().toISOString(),user:live.data()});
+      tx.set(ref,{...saved.data().user,id:live.data().id,name:live.data().name,resetRevision:(live.data().resetRevision||0)+1});
+    });
+  });
+}
+function downloadJSON(value,name) {
+  const url=URL.createObjectURL(new Blob([JSON.stringify(value,null,2)],{type:'application/json'}));
+  const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+async function downloadBackup() {
+  if(adminBusy)return;
+  adminBusy=true;document.getElementById('admin-status').textContent='Preparing backup…';
+  try {
+    const backup={schema:1,at:new Date().toISOString(),users:await fetchUsers(),games:{},dailies:[],flags:[],homework:null};
+    for(const u of backup.users)backup.games[u._docId]=(await db.collection('users').doc(u._docId).collection('games').get()).docs.map(d=>({id:d.id,...d.data()}));
+    backup.dailies=(await db.collection('dailies').get()).docs.map(d=>({id:d.id,...d.data()}));
+    backup.flags=await fetchFlags();
+    const hw=await db.collection('weeklyHomework').doc('state').get();backup.homework=hw.exists?hw.data():null;
+    downloadJSON(backup,'disney-trivia-backup-'+backup.at.slice(0,10)+'.json');
+    document.getElementById('admin-status').textContent='Backup downloaded.';
+  } catch(e) {document.getElementById('admin-status').textContent='Backup failed: '+e.message;}
+  finally {adminBusy=false;}
+}
+document.getElementById('restore-file').addEventListener('change',async e=>{
+  const file=e.target.files[0];if(!file)return;
+  try {
+    if(file.size>20*1024*1024)throw new Error('Backup is too large.');
+    const data=JSON.parse(await file.text());
+    if(data.schema!==1 || !Array.isArray(data.users) || !data.users.length || data.users.length>100)throw new Error('Unsupported backup format.');
+    const ids=new Set();
+    for(const u of data.users) {
+      if(!validPlayerBackup(u))throw new Error('Invalid player stats in backup. Nothing was changed.');
+      if(typeof u.id!=='string' || !u.id || u.id.includes('/') || u.id==='__proto__' || ids.has(u.id) || typeof u.name!=='string' || !u.name.trim() || u.name.length>20)throw new Error('Invalid or duplicate player in backup.');
+      ids.add(u.id);
+      for(const key of ['totalAnswered','totalCorrect','gamesPlayed','totalPoints'])if(!Number.isSafeInteger(u[key])||u[key]<0)throw new Error('Invalid score counters in backup.');
+      if(u.totalCorrect>u.totalAnswered)throw new Error('Invalid accuracy in backup.');
+    }
+    if(!confirm(`Restore player stats for ${data.users.length} players from ${data.at}? Current stats will be backed up first. Daily question pins and flags will stay unchanged.`))return;
+    await adminAction(async()=>{
+      for(const saved of data.users) {
+        const {_docId,...user}=saved;
+        const ref=db.collection('users').doc(user.id),backup=ref.collection('backups').doc();
+        await db.runTransaction(async tx=>{
+          const live=await tx.get(ref);
+          if(!live.exists)throw new Error('Create this player before restoring their stats: '+user.name);
+          if(live.exists)tx.set(backup,{at:new Date().toISOString(),user:live.data()});
+          tx.set(ref,{...user,resetRevision:Math.max(user.resetRevision||0,live.data()?.resetRevision||0)+1});
+        });
+      }
+    });
+  } catch(error) {document.getElementById('admin-status').textContent='Restore failed: '+error.message;}
+  finally {e.target.value='';}
+});
+async function exportDifficultyReport() {
+  try {
+    const users=await fetchUsers(),totals={};
+    for(const u of users)for(const [id,stat] of Object.entries(u.questionStats||{})) {
+      const t=totals[id] ||= {answered:0,correct:0};t.answered+=stat.answered;t.correct+=stat.correct;
+    }
+    const report=Object.entries(totals).filter(([,s])=>s.answered>=20).map(([id,s])=>({id:Number(id),...s,
+      accuracy:s.correct/s.answered,suggestedDifficulty:s.correct/s.answered>=0.8?'easy':s.correct/s.answered>=0.45?'medium':'hard'}));
+    downloadJSON({minimumAnswers:20,questions:report},'difficulty-review.json');
+    document.getElementById('admin-status').textContent=report.length+' questions have enough answers for review. Recommendations do not change questions automatically.';
+  }catch(e){document.getElementById('admin-status').textContent=e.message;}
 }
 
 async function loadUsers() {
@@ -280,16 +362,19 @@ async function loadUsers() {
       <td>${pct}</td>
       <td style="color:#ffd700">${pts}</td>
       <td>${u.dailyStreak ? '🔥 ' + u.dailyStreak : '—'}</td>
-      <td style="color:#888;font-size:11px">${u.lastDailyDate || '—'}</td>
-      <td><button class="danger" onclick="resetUser(${i})">Reset</button></td>
+      <td style="color:#888;font-size:11px">${esc(u.lastDailyDate || '—')}</td>
+      <td><button class="danger" onclick="resetUser(${i})">Reset</button> <button onclick="restoreLastReset(${i})">Undo reset</button></td>
     </tr>`;
   });
   html += '</tbody></table>';
   out.innerHTML = html;
 }
 
-buildShardMap().then(loadFlags);
-loadUsers();
+window.addEventListener('unhandledrejection',event=>{
+  event.preventDefault();document.getElementById('admin-status').textContent='Request failed. Check your connection and retry.';
+});
+buildShardMap().then(loadFlags).catch(()=>{document.getElementById('output').textContent='Could not load flags. Retry with Refresh.';});
+loadUsers().catch(()=>{document.getElementById('users-output').textContent='Could not load players. Retry with Refresh Users.';});
 </script>
 </body>
 </html>

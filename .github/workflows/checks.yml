@@ -1,0 +1,32 @@
+name: App checks
+on: [push, pull_request]
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: npm ci
+      - run: npm test
+      - run: npm run test:emulator
+      - run: python scripts/validate_corpus.py
+      - run: python -m unittest discover -s test -p 'test_*.py'
+      - run: pip install playwright==1.60.0
+      - run: python -m playwright install --with-deps chromium webkit
+      - run: python scripts/visual_check.py --browser chromium --out artifacts/chromium
+      - run: python scripts/visual_check.py --browser webkit --out artifacts/webkit
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-screenshots
+          path: artifacts/

@@ -1,12 +1,30 @@
-const APP_VERSION = '1.38';
+const APP_VERSION = '1.39';
+
+const _localMemory = new Map();
+let _localDurable = true;
+const safeLocal = {
+  getItem(key) { try { return localStorage.getItem(key) ?? _localMemory.get(key) ?? null; } catch { _localDurable=false; return _localMemory.get(key) ?? null; } },
+  setItem(key,value) { _localMemory.set(key,value); try { localStorage.setItem(key,value); return true; } catch { _localDurable=false; return false; } },
+  removeItem(key) { _localMemory.delete(key); try { localStorage.removeItem(key); } catch { _localDurable=false; } }
+};
+function newGameId() { return globalThis.crypto?.randomUUID?.() || `game_${Date.now()}_${Math.random().toString(36).slice(2)}`; }
+function saveSettings() { safeLocal.setItem('disney_settings',JSON.stringify(gameSettings)); }
+let _navigationEpoch = 0;
+let _startInFlight = false;
+let _offlinePractice = false;
 
 // =============================================================================
 // State
 // =============================================================================
 let QUESTIONS     = [];
+let RETIRED_QUESTIONS = [];
 let MOVIES        = [];
 let currentUser   = null;
-let gameSettings  = { difficulty: 'all', categories: ['movies','characters','parks','walt','cruise','music','pixar'], questionCount: 10 };
+let gameSettings = { difficulty: 'all', categories: ['movies','characters','parks','walt','cruise','music','pixar'], questionCount: 10 };
+try {
+  const saved = JSON.parse(safeLocal.getItem('disney_settings'));
+  if (saved && ['all','easy','medium','hard'].includes(saved.difficulty) && [10,20,30,50].includes(saved.questionCount) && Array.isArray(saved.categories) && saved.categories.length && saved.categories.every(c=>gameSettings.categories.includes(c))) gameSettings=saved;
+} catch {}
 let gameState     = { questions: [], currentIndex: 0, answers: [], score: 0, currentStreak: 0, isDaily: false, pointsEarned: 0, scoreBreakdown: null };
 let shuffledOpts  = [];   // [{text, originalIndex}] for current question display
 let homeworkState = null; // { weekKey, movieId, pickedAt, watchedIds[] } — this week's Weekly Homework pick
@@ -19,7 +37,7 @@ let homeworkState = null; // { weekKey, movieId, pickedAt, watchedIds[] } — th
 // test/game-logic.test.js. This file only adds DOM, storage, and globals.
 
 function getSeenIds(userId) {
-  try { return JSON.parse(localStorage.getItem('disney_seen_' + userId)) || []; }
+  try { return JSON.parse(safeLocal.getItem('disney_seen_' + userId)) || []; }
   catch { return []; }
 }
 
@@ -32,7 +50,7 @@ function computeSeenIds(userId, newIds) {
 }
 
 function saveSeenIds(userId, seen) {
-  localStorage.setItem('disney_seen_' + userId, JSON.stringify(seen));
+  safeLocal.setItem('disney_seen_' + userId, JSON.stringify(seen));
 }
 
 // --- Game log (users/{id}.gameLog — diagnostics only, see game-logic.js) ---
@@ -41,10 +59,10 @@ function saveSeenIds(userId, seen) {
 // in localStorage, so clearing site data gives the device a new one.
 function deviceTag() {
   try {
-    let id = localStorage.getItem('disney_device_id');
+    let id = safeLocal.getItem('disney_device_id');
     if (!id) {
       id = Math.random().toString(36).slice(2, 8);
-      localStorage.setItem('disney_device_id', id);
+      safeLocal.setItem('disney_device_id', id);
     }
     return id;
   } catch (e) { return null; }
@@ -108,14 +126,12 @@ const DAILY_HISTORY_DAYS = 180;
 // must never be blocked by this.
 async function dailyExclusionSet() {
   const ids = new Set();
-  try {
-    const users = await storage.getUsers();
-    users.forEach(u => (u.recentQuestionIds || []).forEach(id => ids.add(id)));
-  } catch (e) {}
-  try {
-    const pastDaily = await storage.getAllDailyQuestionIds(dayKey(DAILY_HISTORY_DAYS));
-    pastDaily.forEach(id => ids.add(id));
-  } catch (e) {}
+  const [past,users]=await Promise.allSettled([
+    storage.getAllDailyQuestionIds(dayKey(DAILY_HISTORY_DAYS)),storage.getUsers()
+  ]);
+  const append=id=>{ids.delete(id);ids.add(id);};
+  if(past.status==='fulfilled') past.value.forEach(append);
+  if(users.status==='fulfilled') users.value.forEach(u=>(u.recentQuestionIds||[]).forEach(append));
   return ids;
 }
 
@@ -126,17 +142,27 @@ async function dailyExclusionSet() {
 // different device just starts fresh, same as this app's other local-only state.
 function dailyProgressKey(userId) { return 'disney_daily_progress_' + userId; }
 
-function getDailyProgress(userId) {
-  try { return JSON.parse(localStorage.getItem(dailyProgressKey(userId))); }
-  catch { return null; }
+function pendingDailies(userId) {
+  let entries={};
+  try { entries=JSON.parse(safeLocal.getItem('disney_daily_archive_'+userId)) || {}; } catch {}
+  try {
+    const old=JSON.parse(safeLocal.getItem(dailyProgressKey(userId)));
+    if(old?.dateKey && !entries[old.dateKey]) entries[old.dateKey]=old;
+  } catch {}
+  return entries;
 }
-
-function saveDailyProgress(userId, dateKey, answers) {
-  localStorage.setItem(dailyProgressKey(userId), JSON.stringify({ dateKey, answers }));
+function getDailyProgress(userId,date=todayKey()) { return pendingDailies(userId)[date] || null; }
+function saveDailyProgress(userId,dateKey,answers) {
+  const entries=pendingDailies(userId);
+  entries[dateKey]={dateKey,answers,questions:gameState.questions,gameId:gameState.gameId,
+    resetRevision:gameState.resetRevision || 0};
+  safeLocal.setItem('disney_daily_archive_'+userId,JSON.stringify(entries));
+  safeLocal.setItem(dailyProgressKey(userId),JSON.stringify(entries[dateKey]));
 }
-
-function clearDailyProgress(userId) {
-  localStorage.removeItem(dailyProgressKey(userId));
+function clearDailyProgress(userId,date=todayKey()) {
+  const entries=pendingDailies(userId); delete entries[date];
+  safeLocal.setItem('disney_daily_archive_'+userId,JSON.stringify(entries));
+  try { const old=JSON.parse(safeLocal.getItem(dailyProgressKey(userId))); if(old?.dateKey===date) safeLocal.removeItem(dailyProgressKey(userId)); } catch {}
 }
 
 // --- Regular game checkpoint (per-device, per-user) ---
@@ -147,25 +173,27 @@ function clearDailyProgress(userId) {
 function gameCheckpointKey(userId) { return 'disney_game_progress_' + userId; }
 
 function getGameCheckpoint(userId) {
-  try { return JSON.parse(localStorage.getItem(gameCheckpointKey(userId))); }
+  try { return JSON.parse(safeLocal.getItem(gameCheckpointKey(userId))); }
   catch { return null; }
 }
 
-function clearGameCheckpoint(userId) {
-  try { localStorage.removeItem(gameCheckpointKey(userId)); } catch (e) {}
+function clearGameCheckpoint(userId,gameId) {
+  const cp=getGameCheckpoint(userId);
+  if(!gameId || !cp?.gameId || cp.gameId===gameId) safeLocal.removeItem(gameCheckpointKey(userId));
 }
 
 // Checkpoints the active game. Called from handleAnswer() right after the
 // answer is recorded — not on Next — since the correct answer is revealed on
 // tap, and saving later would let a killed app re-answer a revealed question.
 function checkpointGame() {
-  if (!currentUser || gameState.answers.length === 0) return;
+  if (!currentUser || gameState.answers.length === 0 || gameState.isPractice) return;
   try {
     if (gameState.isDaily) {
       saveDailyProgress(currentUser.id, gameState.dateKey || todayKey(), serializeAnswers(gameState.answers));
     } else {
-      localStorage.setItem(gameCheckpointKey(currentUser.id), JSON.stringify({
-        questionIds: gameState.questions.map(q => q.id),
+      safeLocal.setItem(gameCheckpointKey(currentUser.id), JSON.stringify({
+        gameId: gameState.gameId, dateKey: gameState.dateKey, resetRevision: gameState.resetRevision || 0,
+        questions: gameState.questions, questionIds: gameState.questions.map(q => q.id),
         answers:     serializeAnswers(gameState.answers),
         savedAt:     new Date().toISOString()
       }));
@@ -178,13 +206,17 @@ function checkpointGame() {
 // Commits a regular game's answers to stats — the shared path for exiting and
 // settling a leftover checkpoint. Perfect bonus only if complete. `status` is
 // the game-log status ('exited' / 'abandoned' / 'complete').
-async function commitRegularAnswers(state, complete, status) {
-  const answers = state.answers;
-  const pts     = scoreBreakdown(answers, false, 0, complete).total;
-  const newSeen = computeSeenIds(currentUser.id, answers.map(a => a.question.id));
-  await storage.updateStats(currentUser.id, answers.length, answers.filter(a => a.correct).length, pts, null, buildCatStats(answers), newSeen, monthKey(),
-    gameLogEntry(state, status, pts));
-  saveSeenIds(currentUser.id, newSeen);
+async function commitRegularAnswers(state,complete,status) {
+  if(state.isPractice) return;
+  const userId=state.userId || currentUser.id;
+  const answers=state.answers, date=state.dateKey || todayKey();
+  state.gameId ||= newGameId();
+  const result=await storage.updateStats(userId,answers.length,answers.filter(a=>a.correct).length,0,null,
+    buildCatStats(answers),answers.map(a=>a.question.id),date.slice(0,7),gameLogEntry(state,status,0),
+    {gameId:state.gameId,resetRevision:state.resetRevision||0,dateKey:date,answers,complete});
+  saveSeenIds(userId,result.user.recentQuestionIds || []);
+  if(currentUser?.id===userId) currentUser=result.user;
+  return result;
 }
 
 // If this player has a leftover regular-game checkpoint, offers to resume it
@@ -198,9 +230,10 @@ async function commitRegularAnswers(state, complete, status) {
 async function offerGameResume(mode) {
   const cp = getGameCheckpoint(currentUser.id);
   if (!cp) return 'proceed';
-  const gs = reconcileRegularCheckpoint(cp, new Map(QUESTIONS.map(q => [q.id, q])));
+  if ((cp.resetRevision || 0)!==(currentUser.resetRevision || 0)) { clearGameCheckpoint(currentUser.id); return 'proceed'; }
+  const gs = reconcileRegularCheckpoint(cp, new Map([...QUESTIONS,...RETIRED_QUESTIONS,...(cp.questions || [])].map(q => [q.id, q])));
   if (!gs || gs.answers.length === 0) { clearGameCheckpoint(currentUser.id); return 'proceed'; }
-  gs.resumed = true;
+  gs.resumed = true; gs.userId=currentUser.id;
 
   const n = gs.answers.length, total = gs.questions.length, complete = n >= total;
   const choice = await showConfirm({
@@ -233,7 +266,10 @@ async function offerGameResume(mode) {
 // Rebuilds gameState for the daily challenge, resuming from saved progress
 // (see reconcileDailyProgress in game-logic.js for the matching rules).
 function buildDailyGameState(questions, today) {
-  const gs = reconcileDailyProgress(questions, getDailyProgress(currentUser.id), today);
+  const progress=getDailyProgress(currentUser.id,today);
+  const valid=progress && (progress.resetRevision||0)===(currentUser.resetRevision||0) ? progress : null;
+  const gs = reconcileDailyProgress(questions, valid, today);
+  gs.gameId='daily_'+today; gs.dateKey=today; gs.userId=currentUser.id; gs.resetRevision=currentUser.resetRevision||0;
   gs.resumed = gs.answers.length > 0;
   return gs;
 }
@@ -262,7 +298,7 @@ function streakStars(streak) {
 }
 
 function slugId(name) {
-  return name.toLowerCase().replace(/\s+/g, '_') + '_' + Date.now();
+  return 'player_' + newGameId();
 }
 
 const CAT_LABELS = {
@@ -288,7 +324,7 @@ function getDailyQuestions(count = 10, daysAgo = 0, excludeIds = new Set()) {
 // =============================================================================
 const sounds = (() => {
   let ctx = null;
-  let _muted = localStorage.getItem('disney_sound_muted') === '1';
+  let _muted = safeLocal.getItem('disney_sound_muted') === '1';
 
   function getCtx() {
     if (!ctx) ctx = new (window.AudioContext || window.webkitAudioContext)();
@@ -337,7 +373,7 @@ const sounds = (() => {
     get muted() { return _muted; },
     toggle() {
       _muted = !_muted;
-      localStorage.setItem('disney_sound_muted', _muted ? '1' : '0');
+      safeLocal.setItem('disney_sound_muted', _muted ? '1' : '0');
       return _muted;
     },
     correct() {
@@ -406,6 +442,8 @@ function spawnSparkles(originEl) {
 let _currentScreen = 'screen-home';
 
 function showScreen(id) {
+  if(id!==_currentScreen) _navigationEpoch++;
+  if(id==='screen-game') document.getElementById('update-toast').classList.add('hidden');
   document.querySelectorAll('.screen').forEach(s => s.classList.add('hidden'));
   const el = document.getElementById(id);
   el.classList.remove('hidden');
@@ -549,8 +587,8 @@ function showAlert(title, message) {
 // =============================================================================
 // UPDATE-AVAILABLE TOAST
 // =============================================================================
-// No service worker here (see PWA notes in CLAUDE.md), so "is there a new
-// build?" is answered by re-fetching index.html and comparing its app.js?v=
+// Update probes bypass the offline cache. Re-fetch index.html and compare
+// its bootstrap.js?v=
 // against the one this page actually loaded with. Comparing the same string
 // from the same file (not APP_VERSION) means a forgotten bump in one place
 // can't produce a toast that never goes away.
@@ -560,8 +598,8 @@ let _lastUpdateCheck = 0;
 let _pendingUpdateVersion = null;
 
 function loadedAppVersion() {
-  const s = document.querySelector('script[src*="app.js"]');
-  const m = s && s.getAttribute('src').match(/app\.js\?v=([^"'&]+)/);
+  const s = document.querySelector('script[src*="bootstrap.js"]') || document.querySelector('script[src*="app.js"]');
+  const m = s && s.getAttribute('src').match(/(?:app|bootstrap)\.js\?v=([^"'&]+)/);
   return m ? m[1] : null;
 }
 
@@ -574,7 +612,7 @@ async function checkForUpdate() {
     // The ?t= buster gets past GitHub Pages' ~10 min CDN max-age; no-store only bypasses the browser cache.
     const res = await fetchWithTimeout('index.html?t=' + Date.now(), { cache: 'no-store' });
     if (!res.ok) return;
-    const m = (await res.text()).match(/app\.js\?v=([^"'&]+)/);
+    const m = (await res.text()).match(/(?:app|bootstrap)\.js\?v=([^"'&]+)/);
     if (m && m[1] !== current) {
       _pendingUpdateVersion = m[1];
       maybeShowUpdateToast();
@@ -584,8 +622,8 @@ async function checkForUpdate() {
   }
 }
 
-// Never shown mid-game: a reload there loses a regular game outright, and a
-// daily's in-flight answers are only saved via the Exit path. The pending
+// Never shown mid-game: answers are checkpointed, but an update should not
+// interrupt play. The pending
 // version is surfaced by showScreen() once the player lands anywhere else.
 function maybeShowUpdateToast() {
   if (!_pendingUpdateVersion) return;
@@ -602,7 +640,7 @@ document.getElementById('btn-update-dismiss').addEventListener('click', () => {
   document.getElementById('update-toast').classList.add('hidden');
 });
 document.addEventListener('visibilitychange', () => {
-  if (document.visibilityState === 'visible') checkForUpdate();
+  if (document.visibilityState === 'visible') { checkForUpdate(); refreshDayState(); }
 });
 setInterval(() => {
   if (document.visibilityState === 'visible') checkForUpdate();
@@ -613,6 +651,7 @@ setInterval(() => {
 // =============================================================================
 async function renderHome() {
   showScreen('screen-home');
+  updateResetClock();
   document.getElementById('app-version').textContent = 'v' + APP_VERSION;
 
   document.getElementById('add-user-form').classList.add('hidden');
@@ -622,29 +661,32 @@ async function renderHome() {
 
   const list = document.getElementById('user-list');
   list.innerHTML = '<p class="load-status">Loading players…</p>';
+  const epoch=_navigationEpoch;
 
   let users;
   try {
     users = await storage.getUsers();
   } catch (e) {
-    list.innerHTML = `<p class="load-error">Couldn't load players.<br><small>${e.message || e}</small><br><a href="" onclick="location.reload()">Tap to retry</a></p>`;
+    list.innerHTML = `<p class="load-error">Couldn't load players.<br><small>${esc(e.message || e)}</small><br><a href="" onclick="location.reload()">Tap to retry</a></p>`;
     return;
   }
+  if(epoch!==_navigationEpoch || _currentScreen!=='screen-home') return;
   list.innerHTML = '';
 
-  const lastId = localStorage.getItem('disney_last_user');
+  const lastId = safeLocal.getItem('disney_last_user');
   const today  = todayKey();
   const curMonth = monthKey();
 
   users.forEach(user => {
-    const card       = document.createElement('div');
+    const card       = document.createElement('button');
+    card.type='button';
     card.className   = 'user-card';
-    const streak     = user.dailyStreak || 0;
+    const streak     = Math.max(0,Number(user.dailyStreak)||0);
     const streakText = streak > 0 ? ` · 🔥 ${streak}` : '';
     // Home-card points mirror the leaderboard's "This Month" view (not
     // totalPoints) so this rivalry-facing number is the one that's always
     // winnable — see the monthly-leaderboard note in CLAUDE.md.
-    const pts        = user.monthlyKey === curMonth ? (user.monthlyPoints || 0) : 0;
+    const pts        = Number(effectivePeriodPoints(user,curMonth))||0;
     const stat       = user.totalAnswered
       ? `${pts.toLocaleString()} pts this month · ${pct(user.totalCorrect, user.totalAnswered)} correct${streakText}`
       : streak > 0 ? `🔥 ${streak} day streak` : 'No games yet';
@@ -673,7 +715,7 @@ async function renderHome() {
     if (played) {
       row.innerHTML = `
         <span class="dcmp-name">${disneyAvatar(user.name)} ${esc(user.name)}</span>
-        <span class="dcmp-score">${user.lastDailyScore ?? 0}/10 · <strong>${(user.lastDailyPoints||0).toLocaleString()} pts</strong> ✓</span>
+        <span class="dcmp-score">${esc(user.lastDailyScore ?? 0)}/10 · <strong>${(Number(user.lastDailyPoints)||0).toLocaleString()} pts</strong> ✓</span>
       `;
     } else {
       row.innerHTML = `
@@ -705,7 +747,7 @@ async function renderHome() {
       if (yd) {
         row.innerHTML = `
           <span class="dcmp-name">${disneyAvatar(user.name)} ${esc(user.name)}</span>
-          <span class="dcmp-score">${yd.score ?? 0}/10 · <strong>${(yd.points||0).toLocaleString()} pts</strong> ✓</span>
+          <span class="dcmp-score">${esc(yd.score ?? 0)}/10 · <strong>${(Number(yd.points)||0).toLocaleString()} pts</strong> ✓</span>
         `;
       } else {
         row.innerHTML = `
@@ -722,8 +764,8 @@ async function renderHome() {
 }
 
 function selectUser(user) {
-  currentUser = user;
-  localStorage.setItem('disney_last_user', user.id);
+  currentUser = user; _offlinePractice=false;
+  safeLocal.setItem('disney_last_user', user.id);
   renderSettings();
   offerGameResume('select');
 }
@@ -786,14 +828,16 @@ document.getElementById('btn-results-leaderboard').addEventListener('click', () 
 // trailing player has nothing left to play for. "This Month" gives a
 // regularly-resetting board (see monthKey()) so there's always a fresh race;
 // "Last Month" (prevMonthKey()) lets that race be looked back on once it ends.
+let _lbRequest=0;
 let _lbMode = 'lifetime'; // 'lifetime' | 'month' | 'lastmonth'
 
 const LB_PERIOD_KEY = { month: monthKey, lastmonth: prevMonthKey };
 
 async function renderLeaderboard(mode) {
   if (mode) _lbMode = mode;
+  const request=++_lbRequest, requestedMode=_lbMode;
   showScreen('screen-leaderboard');
-  document.querySelectorAll('#lb-mode-group .pill').forEach(p => p.classList.toggle('active', p.dataset.mode === _lbMode));
+  document.querySelectorAll('#lb-mode-group .pill').forEach(p => (p.classList.toggle('active', p.dataset.mode === _lbMode),p.setAttribute('aria-pressed',String(p.dataset.mode===_lbMode))));
 
   const isPeriod   = _lbMode !== 'lifetime';
   const periodKey  = isPeriod ? LB_PERIOD_KEY[_lbMode]() : null;
@@ -805,8 +849,10 @@ async function renderLeaderboard(mode) {
   let users;
   try {
     users = await storage.getLeaderboard(periodKey);
+    if(request!==_lbRequest || _currentScreen!=='screen-leaderboard') return;
   } catch (e) {
-    list.innerHTML = `<p class="load-error">Couldn't load the leaderboard.<br><small>${e.message || e}</small><br><a href="" onclick="location.reload()">Tap to retry</a></p>`;
+    if(request!==_lbRequest || _currentScreen!=='screen-leaderboard') return;
+    list.innerHTML = `<p class="load-error">Couldn't load the leaderboard.<br><small>${esc(e.message || e)}</small><br><a href="" onclick="location.reload()">Tap to retry</a></p>`;
     return;
   }
   list.innerHTML = '';
@@ -816,7 +862,7 @@ async function renderLeaderboard(mode) {
   if (!users.length) { empty.classList.remove('hidden'); return; }
   empty.classList.add('hidden');
 
-  const periodLabel = _lbMode === 'month' ? 'this month' : 'last month';
+  const periodLabel = requestedMode === 'month' ? 'this month' : 'last month';
 
   users.forEach((u, i) => {
     const entry      = document.createElement('div');
@@ -825,7 +871,7 @@ async function renderLeaderboard(mode) {
     const detail      = isPeriod
       ? `🗓️ Points ${periodLabel}`
       : (u.totalAnswered ? `${u.totalAnswered} q · ${u.gamesPlayed} game${u.gamesPlayed !== 1 ? 's' : ''}` : 'No games yet');
-    const pts = ((isPeriod ? u.effectivePeriodPoints : u.totalPoints) || 0).toLocaleString();
+    const pts = (Number(isPeriod ? u.effectivePeriodPoints : u.totalPoints) || 0).toLocaleString();
     entry.innerHTML = `
       <div class="lb-rank">${medals[i] || (i + 1)}</div>
       <div class="lb-avatar">${disneyAvatar(u.name)}</div>
@@ -875,47 +921,15 @@ function upsertWatched(watched, id, watchedAt) {
 // outgoing movie is assumed watched (homework complete!) and a fresh one is drawn
 // from the unwatched pool. Never called by the shuffle button — rollover and veto
 // must stay separate, since only rollover marks a movie watched.
-async function rollHomeworkIfStale() {
-  // Let a failed read propagate to init()'s catch (card stays hidden). Swallowing it
-  // here would treat "couldn't read" as "no state" and roll a fresh pick with an empty
-  // watched list — clobbering the real state and watch history on a transient error.
-  const state = await storage.getHomeworkState();
-  const wk = homeworkWeekKey();
-
-  if (state && state.weekKey === wk) {
-    homeworkState = normalizeHomeworkState(state);
-    return;
-  }
-
-  let watched = state ? normalizeHomeworkState(state).watched : [];
-  if (state && state.movieId != null) {
-    watched = upsertWatched(watched, state.movieId, new Date().toISOString());
-  }
-
-  // pickFromMoviePool falls back to the full pool once everything's been watched —
-  // history is intentionally kept (not wiped) so a rewatch just updates that entry's date.
-  const { movie } = pickFromMoviePool(watched.map(w => w.id));
-
-  homeworkState = { weekKey: wk, movieId: movie.id, pickedAt: new Date().toISOString(), watched };
-  try { await storage.saveHomeworkState(homeworkState); } catch(e) {}
+let _homeworkRequest=0;
+async function changeHomework(action) {
+  const request=++_homeworkRequest;
+  const next=await storage.updateHomework(action,MOVIES,homeworkWeekKey(),new Date().toISOString());
+  if(request===_homeworkRequest) homeworkState=normalizeHomeworkState(next);
 }
-
-// Vetoes the current pick and draws a new one from the pool. The vetoed movie goes
-// back into the pool — it is NOT added to watched. Kristen-only (gated in the UI).
-async function shuffleHomework() {
-  if (!homeworkState) return;
-  const exclude = [...homeworkState.watched.map(w => w.id), homeworkState.movieId];
-  const { movie } = pickFromMoviePool(exclude);
-  homeworkState = { ...homeworkState, movieId: movie.id, pickedAt: new Date().toISOString() };
-  try { await storage.saveHomeworkState(homeworkState); } catch(e) {}
-}
-
-// Un-watches a movie, putting it back in the pool. Open to any player — no Kristen gate.
-async function removeFromWatched(movieId) {
-  if (!homeworkState) return;
-  homeworkState = { ...homeworkState, watched: homeworkState.watched.filter(w => w.id !== movieId) };
-  try { await storage.saveHomeworkState(homeworkState); } catch(e) {}
-}
+async function rollHomeworkIfStale() { await changeHomework({type:'refresh'}); }
+async function shuffleHomework() { await changeHomework({type:'shuffle'}); }
+async function removeFromWatched(movieId) { await changeHomework({type:'unwatch',movieId}); }
 
 function renderHomeworkCard() {
   const card = document.getElementById('homework-card');
@@ -934,6 +948,9 @@ function renderHomeworkCard() {
   const isKristen = currentUser && currentUser.id === 'kristen';
   document.getElementById('btn-shuffle-homework').classList.toggle('hidden', !isKristen);
 
+  const watched=homeworkState.watched.some(w=>w.id===homeworkState.movieId);
+  document.getElementById('btn-mark-watched').disabled=watched;
+  document.getElementById('btn-mark-watched').textContent=watched ? '✓ Watched' : '✓ Mark watched';
   renderWatchedList();
 }
 
@@ -968,9 +985,9 @@ function renderWatchedList() {
     ? `<div class="watched-section-label">✅ Watched (${watchedMovies.length})</div>` +
       watchedMovies.map(m => `
         <div class="watched-row">
-          <span class="watched-title">${m.title} <span class="watched-year">(${m.year})</span></span>
+          <span class="watched-title">${esc(m.title)} <span class="watched-year">(${m.year})</span></span>
           <span class="watched-date">${HW_DATE_FMT(m.watchedAt)}</span>
-          <button class="watched-remove" data-id="${m.id}" title="Put back in the pool">✕</button>
+          <button class="watched-remove" data-id="${m.id}" title="Put back in the pool" aria-label="Mark ${esc(m.title)} unwatched">✕</button>
         </div>
       `).join('')
     : '';
@@ -979,7 +996,7 @@ function renderWatchedList() {
     ? `<div class="watched-section-label">🍿 Not Yet Assigned (${unwatchedMovies.length})</div>` +
       unwatchedMovies.map(m => `
         <div class="watched-row">
-          <span class="watched-title">${m.title} <span class="watched-year">(${m.year})</span></span>
+          <span class="watched-title">${esc(m.title)} <span class="watched-year">(${m.year})</span></span>
         </div>
       `).join('')
     : '';
@@ -990,9 +1007,9 @@ function renderWatchedList() {
 document.getElementById('btn-shuffle-homework').addEventListener('click', async () => {
   const btn = document.getElementById('btn-shuffle-homework');
   btn.disabled = true;
-  await shuffleHomework();
-  renderHomeworkCard();
-  btn.disabled = false;
+  try { await shuffleHomework(); renderHomeworkCard(); }
+  catch { await showAlert("Couldn't save homework",'The previous pick is unchanged. Check your connection and try again.'); }
+  finally { btn.disabled=false; }
 });
 
 document.getElementById('btn-toggle-watched').addEventListener('click', () => {
@@ -1004,8 +1021,9 @@ document.getElementById('homework-watched-list').addEventListener('click', async
   const btn = e.target.closest('.watched-remove');
   if (!btn) return;
   btn.disabled = true;
-  await removeFromWatched(parseInt(btn.dataset.id, 10));
-  renderHomeworkCard();
+  try { await removeFromWatched(parseInt(btn.dataset.id,10)); renderHomeworkCard(); }
+  catch { await showAlert("Couldn't save homework",'The watch history is unchanged. Please try again.'); }
+  finally {btn.disabled=false;}
 });
 
 // =============================================================================
@@ -1024,7 +1042,7 @@ function renderCatStats(user) {
     const { answered, correct } = stats[c];
     const p = Math.round(correct / answered * 100);
     return `<div class="cstat-row">
-      <span class="cstat-label">${catLabel(c)}</span>
+      <span class="cstat-label">${esc(catLabel(c))}</span>
       <div class="cstat-bar-wrap"><div class="cstat-bar cstat-${c}" style="width:${p}%"></div></div>
       <span class="cstat-pct">${p}%</span>
       <span class="cstat-count">${answered}q</span>
@@ -1034,6 +1052,18 @@ function renderCatStats(user) {
 
 function renderSettings() {
   showScreen('screen-settings');
+  for(const [group,value] of [['difficulty-group',gameSettings.difficulty],['count-group',String(gameSettings.questionCount)]]) {
+    document.querySelectorAll('#'+group+' .pill').forEach(p=>{const active=p.dataset.value===value;p.classList.toggle('active',active);p.setAttribute('aria-pressed',String(active));});
+  }
+  document.querySelectorAll('#category-grid input').forEach(i=>i.checked=gameSettings.categories.includes(i.value));
+  document.getElementById('btn-practice-missed').disabled=!(currentUser.missedQuestionIds || []).some(id=>QUESTIONS.some(q=>q.id===id));
+  document.getElementById('btn-practice-weakest').disabled=!Object.values(currentUser.categoryStats || {}).some(s=>s.answered>0);
+  document.querySelector('.practice-actions').classList.toggle('hidden',document.getElementById('btn-practice-missed').disabled && document.getElementById('btn-practice-weakest').disabled);
+  const pending=Object.values(pendingDailies(currentUser.id)).filter(p=>p.dateKey!==todayKey() && p.answers?.length && (p.resetRevision||0)===(currentUser.resetRevision||0));
+  document.getElementById('btn-pending-daily').classList.toggle('hidden',!pending.length);
+  document.getElementById('btn-pending-daily').textContent=pending.length ? 'Resume unsaved challenge from '+pending[0].dateKey : '';
+  document.getElementById('btn-daily-challenge').disabled=_offlinePractice;
+  updateResetClock();
   document.getElementById('settings-user-name').textContent = currentUser.name;
   renderCatStats(currentUser);
   updateAvailableHint();
@@ -1069,69 +1099,40 @@ function renderSettings() {
     btn.textContent      = '⭐ Daily Challenge';
     btn.classList.remove('done');
   }
+  if(_offlinePractice) statusEl.textContent='Practice games do not save scores. Select a player online to play the daily.';
 }
 
 document.getElementById('btn-settings-back').addEventListener('click', renderHome);
 
-document.getElementById('btn-daily-challenge').addEventListener('click', async () => {
-  const today = todayKey();
-  if (currentUser.lastDailyDate === today) {
-    renderDailyReview('settings', 0);
-    return;
-  }
-
-  const btn = document.getElementById('btn-daily-challenge');
-  if (btn.disabled) return;
-  btn.disabled = true;
-  if (await offerGameResume('start') !== 'proceed') { btn.disabled = false; return; }
-
-  const qMap = new Map(QUESTIONS.map(q => [q.id, q]));
-  const resolvePins = async pinnedIds => {
-    let qs = pinnedIds.map(id => qMap.get(id)).filter(Boolean);
-    // Some pinned IDs may have been removed from the shards (e.g. a dedup
-    // pass) since this day's pins were first written — top back up to the
-    // original count from the live pool and re-save so later players/review
-    // see a consistent, full-length set.
-    if (qs.length < pinnedIds.length) {
-      const usedIds     = new Set(qs.map(q => q.id));
-      const candidates  = QUESTIONS.filter(q => !usedIds.has(q.id));
-      const excludeIds  = await dailyExclusionSet();
-      const freshCands  = candidates.filter(q => !excludeIds.has(q.id));
-      const extrasSrc   = freshCands.length >= (pinnedIds.length - qs.length) ? freshCands : candidates;
-      const extras      = shuffle(extrasSrc).slice(0, pinnedIds.length - qs.length);
-      qs = qs.concat(extras);
-      try { await storage.saveDailyPins(today, qs.map(q => q.id)); } catch(e) {}
+async function startDaily(date=todayKey(),pending=null) {
+  if(_startInFlight || _offlinePractice) return;
+  if(!pending && currentUser.lastDailyDate===date) { renderDailyReview('settings',0); return; }
+  _startInFlight=true;
+  const owner=currentUser, epoch=_navigationEpoch;
+  const btn=document.getElementById('btn-daily-challenge'); btn.disabled=true;
+  try {
+    if(await offerGameResume('start')!=='proceed') return;
+    let questions=pending?.questions;
+    if(!questions?.length) {
+      questions=await storage.getDailyQuestions(date);
+      if(!questions?.length) {
+        const exclusions=await dailyExclusionSet();
+        const candidates=pickDailyQuestions(QUESTIONS,date,10,exclusions);
+        questions=await storage.claimDailyQuestions(date,candidates,QUESTIONS.concat(RETIRED_QUESTIONS));
+      }
     }
-    return qs;
-  };
-
-  // A failed read must NOT be treated as "no pin yet": generating a fresh set
-  // and writing it over an existing pin is what split 2026-10-21 into two
-  // question sets. Any new set goes through claimDailyPins (create-if-absent),
-  // and if that can't reach Firestore either, nobody plays an unpinned set.
-  let pinnedIds = null;
-  try { pinnedIds = await storage.getDailyPins(today); } catch(e) {}
-  if (!pinnedIds || pinnedIds.length === 0) {
-    const excludeIds = await dailyExclusionSet();
-    const candidateIds = getDailyQuestions(10, 0, excludeIds).map(q => q.id);
-    try {
-      pinnedIds = await storage.claimDailyPins(today, candidateIds);
-    } catch(e) {
-      btn.disabled = false;
-      await showAlert("Couldn't load today's challenge", "Check your connection and try again — the daily needs to reach the server so everyone gets the same questions.");
-      return;
-    }
-  }
-  const questions = await resolvePins(pinnedIds);
-
-  btn.disabled = false;
-  gameState = buildDailyGameState(questions, today);
-  gameState.dateKey = today; // checkpoint under the day this daily belongs to, even if answered past the rollover
-  if (gameState.currentIndex >= gameState.questions.length) {
-    endGame(); // all questions were answered before a previous exit — finish it now
-  } else {
-    renderGameQuestion();
-  }
+    if(!questions.length || !questions.every(validQuestion) || new Set(questions.map(q=>q.id)).size!==questions.length) throw new Error('This challenge could not be verified. Please try again.');
+    if(epoch!==_navigationEpoch || currentUser?.id!==owner.id) return;
+    gameState=buildDailyGameState(questions,date);
+    if(gameState.currentIndex>=questions.length) endGame(); else renderGameQuestion();
+  } catch(e) {
+    if(epoch===_navigationEpoch) await showAlert("Couldn't load the challenge",e.message || 'Check your connection and try again.');
+  } finally {_startInFlight=false;btn.disabled=false;}
+}
+document.getElementById('btn-daily-challenge').addEventListener('click',()=>startDaily());
+document.getElementById('btn-pending-daily').addEventListener('click',()=>{
+  const pending=Object.values(pendingDailies(currentUser.id)).filter(p=>p.dateKey!==todayKey() && p.answers?.length && (p.resetRevision||0)===(currentUser.resetRevision||0)).sort((a,b)=>a.dateKey.localeCompare(b.dateKey))[0];
+  if(pending) startDaily(pending.dateKey,pending);
 });
 
 // Difficulty pills
@@ -1140,8 +1141,9 @@ document.getElementById('difficulty-group').addEventListener('click', e => {
   if (!pill) return;
   document.querySelectorAll('#difficulty-group .pill').forEach(p => p.classList.remove('active'));
   pill.classList.add('active');
+  pill.parentElement.querySelectorAll('.pill').forEach(p=>p.setAttribute('aria-pressed',String(p===pill)));
   gameSettings.difficulty = pill.dataset.value;
-  updateAvailableHint();
+  saveSettings(); updateAvailableHint();
 });
 
 // Count pills
@@ -1150,8 +1152,9 @@ document.getElementById('count-group').addEventListener('click', e => {
   if (!pill) return;
   document.querySelectorAll('#count-group .pill').forEach(p => p.classList.remove('active'));
   pill.classList.add('active');
+  pill.parentElement.querySelectorAll('.pill').forEach(p=>p.setAttribute('aria-pressed',String(p===pill)));
   gameSettings.questionCount = parseInt(pill.dataset.value, 10);
-  updateAvailableHint();
+  saveSettings(); updateAvailableHint();
 });
 
 // Category checkboxes
@@ -1159,7 +1162,7 @@ document.getElementById('category-grid').addEventListener('change', () => {
   gameSettings.categories = [...document.querySelectorAll('#category-grid input:checked')].map(i => i.value);
   const err = document.getElementById('cat-error');
   err.classList.toggle('hidden', gameSettings.categories.length > 0);
-  updateAvailableHint();
+  saveSettings(); updateAvailableHint();
 });
 
 function filteredPool() {
@@ -1184,13 +1187,21 @@ function updateAvailableHint() {
 
 // Starts a fresh regular game from the current settings. Settles any leftover
 // checkpoint first (resume it, or commit it and start new).
-async function startRegularGame() {
-  const pool  = filteredPool();
-  if (pool.length === 0) return;
-  if (await offerGameResume('start') !== 'proceed') return;
-  const count = Math.min(gameSettings.questionCount, pool.length);
-  gameState = { questions: pickRegularQuestions(pool, getSeenIds(currentUser.id), count), currentIndex: 0, answers: [], score: 0, currentStreak: 0, isDaily: false, pointsEarned: 0, scoreBreakdown: null };
-  renderGameQuestion();
+async function startRegularGame(practicePool=null) {
+  if(_startInFlight) return;
+  const pool=practicePool || filteredPool();
+  if(!pool.length) return;
+  _startInFlight=true;
+  const owner=currentUser, epoch=_navigationEpoch;
+  try {
+    if(!_offlinePractice && await offerGameResume('start')!=='proceed') return;
+    if(epoch!==_navigationEpoch || currentUser?.id!==owner.id) return;
+    const count=Math.min(gameSettings.questionCount,pool.length);
+    gameState={gameId:newGameId(),userId:owner.id,resetRevision:owner.resetRevision||0,dateKey:todayKey(),
+      questions:pickRegularQuestions(pool,capSeenIds(owner.recentQuestionIds||[],getSeenIds(owner.id)),count),
+      currentIndex:0,answers:[],score:0,currentStreak:0,isDaily:false,isPractice:!!practicePool || _offlinePractice,pointsEarned:0,scoreBreakdown:null};
+    renderGameQuestion();
+  } finally {_startInFlight=false;}
 }
 
 document.getElementById('btn-start-game').addEventListener('click', () => {
@@ -1250,7 +1261,7 @@ function renderGameQuestion() {
     const btn = document.createElement('button');
     btn.className = 'answer-btn';
     btn.dataset.idx = i;
-    btn.innerHTML = `<span class="answer-letter">${letters[i]}</span><span>${opt.text}</span>`;
+    btn.innerHTML = `<span class="answer-letter">${letters[i]}</span><span>${esc(opt.text)}</span>`;
     btn.addEventListener('click', () => handleAnswer(i));
     grid.appendChild(btn);
   });
@@ -1267,6 +1278,8 @@ function renderGameQuestion() {
   muteBtn.textContent = sounds.muted ? '🔇' : '🔊';
   muteBtn.classList.toggle('muted', sounds.muted);
 
+  document.getElementById('answer-explanation').classList.add('hidden');
+  document.getElementById('practice-indicator').classList.toggle('hidden',!gameState.isPractice);
   document.getElementById('feedback-area').classList.add('hidden');
   document.getElementById('flag-form').classList.add('hidden');
   document.getElementById('flag-thanks').classList.add('hidden');
@@ -1281,6 +1294,7 @@ function renderGameQuestion() {
 }
 
 function handleAnswer(selectedIdx) {
+  if(_exitInFlight || gameState.answers.length>gameState.currentIndex || gameState.ended) return;
   const q         = gameState.questions[gameState.currentIndex];
   const chosen    = shuffledOpts[selectedIdx];
   const isCorrect = chosen.originalIndex === 0;
@@ -1331,6 +1345,7 @@ function handleAnswer(selectedIdx) {
   checkpointGame();
   document.getElementById('game-score-display').textContent = `${gameState.score} ✓`;
 
+  renderExplanation(q);
   const isLast = gameState.currentIndex === gameState.questions.length - 1;
   document.getElementById('btn-next').textContent = isLast ? 'See Results ✨' : 'Next →';
   document.getElementById('feedback-area').classList.remove('hidden');
@@ -1348,6 +1363,7 @@ function handleAnswer(selectedIdx) {
 }
 
 document.getElementById('btn-next').addEventListener('click', () => {
+  if(_exitInFlight || gameState.ended || gameState.answers.length<=gameState.currentIndex) return;
   gameState.currentIndex++;
   if (gameState.currentIndex >= gameState.questions.length) {
     endGame();
@@ -1363,6 +1379,7 @@ async function exitGameFlow() {
   if (gameState.ended || _exitInFlight) return;
   _exitInFlight = true;
   try {
+    if(gameState.isPractice) {renderSettings();return;}
     const answered = gameState.answers.length;
     const plural   = answered !== 1 ? 's' : '';
 
@@ -1450,7 +1467,8 @@ async function submitFlag() {
   if (submitBtn.disabled) return; // guard against double-click / rapid Enter
   submitBtn.disabled = true;
 
-  const q       = gameState.questions[gameState.currentIndex];
+  const owner=currentUser, state=gameState, index=gameState.currentIndex;
+  const q       = state.questions[index];
   const comment = document.getElementById('flag-comment').value.trim();
   try {
     await storage.flagReport({
@@ -1460,15 +1478,17 @@ async function submitFlag() {
       allAnswers:    q.answers,
       difficulty:    q.difficulty,
       category:      q.category,
-      reportedBy:    currentUser.name,
+      reportedBy:    owner.name,
       comment:       comment || null,
       timestamp:     new Date().toISOString()
     });
+    if(gameState!==state || gameState.currentIndex!==index || _currentScreen!=='screen-game') return;
     document.getElementById('flag-form').classList.add('hidden');
     document.getElementById('flag-thanks').classList.remove('hidden');
     document.getElementById('btn-flag').classList.remove('active');
     document.getElementById('btn-flag').disabled = true;
   } catch (e) {
+    if(gameState!==state || gameState.currentIndex!==index || _currentScreen!=='screen-game') return;
     showAlert("Couldn't send", "Your report couldn't be sent — check your connection and try again."); // form stays open for retry
   } finally {
     submitBtn.disabled = false;
@@ -1479,74 +1499,52 @@ async function submitFlag() {
 // RESULTS SCREEN
 // =============================================================================
 async function endGame() {
-  // Guards against double-committing stats — a double-click on the final
-  // "See Results" tap, or two near-simultaneous "resume already-complete
-  // daily" calls, would otherwise both race storage.updateStats().
-  if (gameState.ended) return;
-  gameState.ended = true;
-
-  const today             = todayKey();
-  const isFirstDailyToday = gameState.isDaily && currentUser.lastDailyDate !== today;
-
-  // Compute new daily streak before scoring so the bonus uses the correct level
-  const newDailyStreak = isFirstDailyToday
-    ? nextDailyStreak(currentUser.lastDailyDate, currentUser.dailyStreak, today)
-    : (currentUser.dailyStreak || 0);
-
-  const bd = scoreBreakdown(gameState.answers, isFirstDailyToday, newDailyStreak);
-  gameState.pointsEarned   = bd.total;
-  gameState.scoreBreakdown = bd;
-
-  // Always save score/pts display fields for any daily game.
-  // streak/answers only updated on first play (null tells storage to leave them unchanged).
-  const dailyUpdate = gameState.isDaily ? {
-    score:   gameState.score,
-    points:  bd.total,
-    dateKey: today,
-    streak:  isFirstDailyToday ? newDailyStreak : null,
-    answers: isFirstDailyToday ? gameState.answers.map(a => ({
-      questionId:   a.question.id,
-      correct:      a.correct,
-      selectedText: a.selectedText
-    })) : null
-  } : null;
-
-  // If the save fails (offline), still show the results screen with a warning
-  // instead of stranding the player on the game screen. Seen-ids stay unmarked so
-  // an unsaved game's questions can come around again.
-  // saveFailed means "updateStats rejected" and nothing else — the refresh
-  // below is separate so a timed-out read after a landed write can't claim
-  // the score was kept on-device (it was already cleared) or leave the daily
-  // replayable via a stale lastDailyDate.
-  gameState.saveFailed = false;
-  try {
-    const newSeen = computeSeenIds(currentUser.id, gameState.questions.map(q => q.id));
-    await storage.updateStats(currentUser.id, gameState.questions.length, gameState.score, bd.total, dailyUpdate, buildCatStats(gameState.answers), newSeen, monthKey(),
-      gameLogEntry(gameState, 'complete', bd.total, isFirstDailyToday));
-    saveSeenIds(currentUser.id, newSeen);
-    if (gameState.isDaily) clearDailyProgress(currentUser.id);
-    else clearGameCheckpoint(currentUser.id);
-  } catch (e) {
-    gameState.saveFailed = true;
-  }
-  if (!gameState.saveFailed) {
-    try {
-      const users = await storage.getUsers();
-      currentUser = users.find(u => u.id === currentUser.id) || currentUser;
-    } catch (e) {
-      if (isFirstDailyToday) {
-        currentUser.lastDailyDate = today;
-        currentUser.dailyStreak   = newDailyStreak;
-      }
-    }
-  }
+  const state=gameState, owner=currentUser;
+  if(state.saving || (state.ended && !state.saveFailed)) return;
+  state.ended=true; state.saving=true; state.saveFailed=false;
+  state.gameId ||= state.isDaily ? 'daily_'+state.dateKey : newGameId();
+  const date=state.dateKey || todayKey(); state.dateKey=date;
+  state.scoreBreakdown=state.isPractice ? {base:0,streakBonus:0,perfectBonus:0,dailyBonus:0,total:0}
+    : scoreBreakdown(state.answers,state.isDaily && owner.lastDailyDate!==date,nextDailyStreak(owner.lastDailyDate,owner.dailyStreak,date));
+  state.pointsEarned=state.scoreBreakdown.total;
   renderResults();
+  if(state.isPractice) {state.saving=false;renderResults();return;}
+  const daily=state.isDaily ? {score:state.score,points:0,dateKey:date,streak:null,answers:serializeAnswers(state.answers)} : null;
+  try {
+    const result=await storage.updateStats(owner.id,state.answers.length,state.score,0,daily,buildCatStats(state.answers),
+      state.answers.map(a=>a.question.id),date.slice(0,7),gameLogEntry(state,'complete',0,false),
+      {gameId:state.gameId,resetRevision:state.resetRevision||0,dateKey:date,answers:state.answers,complete:true});
+    state.alreadySaved=!!result.alreadySaved;
+    state.scoreBreakdown=result.breakdown || state.scoreBreakdown;
+    state.pointsEarned=result.points;
+    if(result.answers?.length) {
+      const map=new Map(state.questions.map(q=>[q.id,q]));
+      state.answers=result.answers.map(a=>({question:map.get(a.questionId),correct:a.correct,selectedText:a.selectedText})).filter(a=>a.question);
+      state.score=result.score;
+    }
+    if(currentUser?.id===owner.id && gameState===state) currentUser=result.user;
+    saveSeenIds(owner.id,result.user.recentQuestionIds||[]);
+    if(state.isDaily) clearDailyProgress(owner.id,date); else clearGameCheckpoint(owner.id,state.gameId);
+  } catch(e) {
+    state.saveFailed=true; state.saveError=e.message;
+    if(e.code==='reset-game') {
+      state.resetInvalid=true;
+      if(state.isDaily) clearDailyProgress(owner.id,date);else clearGameCheckpoint(owner.id,state.gameId);
+    }
+  } finally {
+    state.saving=false;
+    if(gameState===state && _currentScreen==='screen-results') renderResults();
+  }
 }
 
 function renderResults() {
   showScreen('screen-results');
-  sounds.fanfare();
+  if(!gameState.fanfarePlayed) {sounds.fanfare();gameState.fanfarePlayed=true;}
 
+  const status=document.getElementById('save-status');
+  status.textContent=gameState.isPractice ? 'Practice complete · leaderboard unchanged' : gameState.saving ? 'Saving…' : gameState.saveFailed ? (gameState.saveError || 'Could not save. Your game is kept on this device.') : gameState.alreadySaved ? 'Already saved · counted once' : 'Saved ✓';
+  document.getElementById('btn-retry-save').classList.toggle('hidden',!gameState.saveFailed || gameState.resetInvalid);
+  document.getElementById('btn-retry-save').disabled=!!gameState.saving;
   const total      = gameState.questions.length;
   const score      = gameState.score;
   const percentage = Math.round((score / total) * 100);
@@ -1595,7 +1593,7 @@ function renderResults() {
     const row = document.createElement('div');
     row.className = `breakdown-row cat-${cat}`;
     row.innerHTML = `
-      <span class="breakdown-cat">${catLabel(cat)}</span>
+      <span class="breakdown-cat">${esc(catLabel(cat))}</span>
       <span class="breakdown-score">${data.correct}/${data.total} (${Math.round(data.correct / data.total * 100)}%)</span>
     `;
     breakdownEl.appendChild(row);
@@ -1622,9 +1620,9 @@ function renderResults() {
       const item = document.createElement('div');
       item.className = 'missed-item';
       item.innerHTML = `
-        <div class="missed-q">${a.question.question}</div>
-        <div class="missed-ca">✓ ${a.question.answers[0]}</div>
-        <div class="missed-ua">✗ You said: ${a.selectedText}</div>
+        <div class="missed-q">${esc(a.question.question)}</div>
+        <div class="missed-ca">✓ ${esc(a.question.answers[0])}</div>
+        <div class="missed-ua">✗ You said: ${esc(a.selectedText)}</div>
       `;
       missedList.appendChild(item);
     });
@@ -1659,6 +1657,7 @@ async function renderDailyReview(backTarget = 'settings', daysAgo = 0) {
   document.getElementById('daily-review-title').textContent =
     daysAgo === 0 ? '📅 Today\'s Review' : '📅 Yesterday\'s Review';
 
+  const reviewEpoch=_navigationEpoch;
   const targetDate = dayKey(daysAgo);
   const list = document.getElementById('daily-review-list');
   list.innerHTML = '<p class="dr-loading">Loading…</p>';
@@ -1677,13 +1676,15 @@ async function renderDailyReview(backTarget = 'settings', daysAgo = 0) {
     return null;
   };
 
-  const qMap = new Map(QUESTIONS.map(q => [q.id, q]));
+  const qMap = new Map(QUESTIONS.concat(RETIRED_QUESTIONS).map(q => [q.id, q]));
 
   // 1. Canonical pinned list — written by the first player who played that day.
   //    Immune to any pool changes before or after play.
   let questions = null;
   try {
-    const pinnedIds = await storage.getDailyPins(targetDate);
+    const snapshots=await storage.getDailyQuestions(targetDate);
+    if(snapshots?.length && snapshots.every(validQuestion)) questions=snapshots;
+    const pinnedIds = questions ? null : await storage.getDailyPins(targetDate);
     if (pinnedIds && pinnedIds.length > 0) {
       const qs = pinnedIds.map(id => qMap.get(id)).filter(Boolean);
       if (qs.length > 0) questions = qs;
@@ -1707,8 +1708,11 @@ async function renderDailyReview(backTarget = 'settings', daysAgo = 0) {
     }
   }
 
-  // 3. Last resort: regenerate from live pool.
-  if (!questions) questions = getDailyQuestions(10, daysAgo);
+  // Never invent a historical question set from today's edited pool.
+  if (!questions) {
+    if(reviewEpoch===_navigationEpoch && _currentScreen==='screen-daily-review') list.textContent="This challenge's questions are unavailable. Check your connection and try again.";
+    return;
+  }
 
   // Classify players for the footer of each question card.
   // "played — details unavailable": lastDailyDate matches but no stored answers.
@@ -1716,6 +1720,7 @@ async function renderDailyReview(backTarget = 'settings', daysAgo = 0) {
   const playedNoDetailUsers = users.filter(u => !getUserAnswers(u) && hasPlayedDate(u));
   const notPlayedUsers      = users.filter(u => !getUserAnswers(u) && !hasPlayedDate(u));
 
+  if(reviewEpoch!==_navigationEpoch || _currentScreen!=='screen-daily-review') return;
   list.innerHTML = '';
   const letters = ['A', 'B', 'C', 'D'];
   questions.forEach((q, idx) => {
@@ -1750,7 +1755,7 @@ async function renderDailyReview(backTarget = 'settings', daysAgo = 0) {
       choicesHtml += `<div class="${cls}">
         <span class="dr-choice-letter">${letters[displayPos]}</span>
         <div class="dr-choice-body">
-          <span class="dr-choice-text">${text}${isCorrect ? ' <span class="dr-tick">✓</span>' : ''}</span>
+          <span class="dr-choice-text">${esc(text)}${isCorrect ? ' <span class="dr-tick">✓</span>' : ''}</span>
           ${chipsHtml}
         </div>
       </div>`;
@@ -1766,9 +1771,9 @@ async function renderDailyReview(backTarget = 'settings', daysAgo = 0) {
     item.innerHTML = `
       <div class="dr-header">
         <span class="dr-qnum">Q${idx + 1}</span>
-        <span class="dr-cat">${catLabel(q.category)}</span>
+        <span class="dr-cat">${esc(catLabel(q.category))}</span>
       </div>
-      <div class="dr-question">${q.question}</div>
+      <div class="dr-question">${esc(q.question)}</div>
       <div class="dr-choices">${choicesHtml}</div>
       ${footerHtml ? `<div class="dr-players">${footerHtml}</div>` : ''}
     `;
@@ -1778,7 +1783,7 @@ async function renderDailyReview(backTarget = 'settings', daysAgo = 0) {
 
 document.getElementById('btn-rematch').addEventListener('click', () => {
   if (gameState.isDaily) return;
-  startRegularGame();
+  startRegularGame(gameState.isPractice ? gameState.questions : null);
 });
 
 document.getElementById('btn-play-again').addEventListener('click', renderSettings);
@@ -1801,6 +1806,8 @@ async function loadQuestions() {
   const manifest = await fetchWithTimeout('questions/manifest.json', { cache: 'no-cache' }).then(r => r.json());
   const shards = await Promise.all(manifest.shards.map(s => fetchWithTimeout(s, { cache: 'no-cache' }).then(r => r.json())));
   QUESTIONS = shards.flat();
+  if(!QUESTIONS.length || !QUESTIONS.every(validQuestion)) throw new Error('Question data could not be verified.');
+  if(manifest.retired) RETIRED_QUESTIONS=await fetchWithTimeout(manifest.retired,{cache:'no-cache'}).then(r=>r.json());
 }
 
 async function loadMovies() {
@@ -1845,19 +1852,66 @@ async function init() {
   } catch (e) {
     stopBootQuotes();
     document.getElementById('app').innerHTML =
-      `<p style="padding:2rem;color:var(--red)">Failed to load questions: ${e.message}.<br><a href="" onclick="location.reload()">Tap to retry</a></p>`;
+      `<p style="padding:2rem;color:var(--red)">Failed to load questions: ${esc(e.message)}.<br><a href="" onclick="location.reload()">Tap to retry</a></p>`;
     return;
-  }
-  // Weekly Homework is a bonus feature — never let it block the trivia app from loading.
-  try {
-    await loadMovies();
-    await rollHomeworkIfStale();
-  } catch (e) {
-    MOVIES = [];
-    homeworkState = null;
   }
   stopBootQuotes();
   renderHome();
+  loadOptionalHomework();
   checkForUpdate();
+  if('serviceWorker' in navigator && location.protocol!=='file:') navigator.serviceWorker.register('sw.js').catch(()=>{});
 }
+async function loadOptionalHomework() {
+  try { await loadMovies(); await rollHomeworkIfStale(); document.getElementById('homework-load-status').textContent=''; renderHomeworkCard(); }
+  catch { document.getElementById('homework-load-status').textContent='Homework unavailable. Tap to retry.'; }
+}
+function renderExplanation(q) {
+  const el=document.getElementById('answer-explanation'); el.replaceChildren();
+  if(!q.explanation && !q.source) return;
+  if(q.explanation) {const p=document.createElement('p');p.textContent=q.explanation;el.appendChild(p);}
+  if(q.source) {
+    try {const url=new URL(q.source);if(url.protocol==='https:') {const a=document.createElement('a');a.href=url.href;a.target='_blank';a.rel='noopener noreferrer';a.textContent='Learn more ↗';el.appendChild(a);}}catch{}
+  }
+  el.classList.remove('hidden');
+}
+function updateResetClock() {
+  if(!document.getElementById('daily-reset-clock')) return;
+  const next=new Date(Date.now()-8*3600000);next.setUTCHours(0,0,0,0);next.setUTCDate(next.getUTCDate()+1);
+  const reset=new Date(next.getTime()+8*3600000), remaining=Math.max(0,Math.ceil((reset-Date.now())/60000));
+  document.getElementById('daily-reset-clock').textContent=`Resets in ${Math.floor(remaining/60)}h ${remaining%60}m · ${reset.toLocaleTimeString([],{hour:'numeric',minute:'2-digit'})} your time`;
+  document.getElementById('local-storage-warning').classList.toggle('hidden',_localDurable);
+}
+let _lastDay=todayKey();
+async function refreshDayState() {
+  _lastDay=todayKey();updateResetClock();
+  // Shared homework can change on another device within the same week too.
+  // Refresh independently; it must never interrupt or block an active game.
+  loadOptionalHomework();
+  if(_currentScreen==='screen-game' || gameState.saving) return;
+  if(_currentScreen==='screen-home') renderHome();
+  else if(_currentScreen==='screen-settings' && currentUser && !_offlinePractice) {
+    const owner=currentUser.id,epoch=_navigationEpoch;
+    try {const users=await storage.getUsers();if(epoch!==_navigationEpoch||currentUser?.id!==owner)return;currentUser=users.find(u=>u.id===owner)||currentUser;renderSettings();}catch{}
+  }
+}
+setInterval(()=>{if(document.visibilityState==='visible'){updateResetClock();if(_lastDay!==todayKey())refreshDayState();}},30000);
+document.getElementById('btn-retry-save').addEventListener('click',()=>endGame());
+document.getElementById('homework-load-status').addEventListener('click',()=>loadOptionalHomework());
+document.getElementById('btn-mark-watched').addEventListener('click',async()=>{
+  const btn=document.getElementById('btn-mark-watched');btn.disabled=true;
+  try {await changeHomework({type:'watch'});renderHomeworkCard();}
+  catch {await showAlert("Couldn't save homework",'The watch history is unchanged. Please try again.');}
+  finally {btn.disabled=false;}
+});
+document.getElementById('btn-practice-missed').addEventListener('click',()=>{
+  const ids=new Set(currentUser.missedQuestionIds||[]);startRegularGame(QUESTIONS.filter(q=>ids.has(q.id)));
+});
+document.getElementById('btn-practice-weakest').addEventListener('click',()=>{
+  const weakest=Object.entries(currentUser.categoryStats||{}).filter(([,s])=>s.answered>0).sort(([,a],[,b])=>a.correct/a.answered-b.correct/b.answered)[0];
+  if(weakest) startRegularGame(QUESTIONS.filter(q=>q.category===weakest[0]));
+});
+document.getElementById('btn-offline-practice').addEventListener('click',()=>{
+  if(!QUESTIONS.length) return;
+  currentUser={id:'offline',name:'Practice',totalAnswered:0,totalCorrect:0};_offlinePractice=true;renderSettings();
+});
 init();

@@ -21,24 +21,24 @@ const SEEN_MAX = 300;
 
 // Appends newIds to a seen-ids list, keeping only the most recent SEEN_MAX.
 function capSeenIds(seen, newIds, max = SEEN_MAX) {
-  const all = seen.concat(newIds);
+  const all = [...new Set(seen.concat(newIds).reverse())].reverse();
   return all.length > max ? all.slice(all.length - max) : all;
 }
 
-// Regular-game question pick: only unseen questions if there are enough to
-// fill the game, otherwise the exclusion is dropped entirely (never a partial
-// top-up with repeats).
+// Unseen first, then the least recently seen. Never discard fresh questions.
 function pickRegularQuestions(pool, seenIds, count, rng = Math.random) {
   const seen  = new Set(seenIds);
   const fresh = pool.filter(q => !seen.has(q.id));
-  const src   = fresh.length >= count ? fresh : pool;
-  return shuffle(src, rng).slice(0, count);
+  const age = new Map(seenIds.map((id, i) => [id, i]));
+  const repeats = shuffle(pool.filter(q => seen.has(q.id)), rng)
+    .sort((a, b) => age.get(a.id) - age.get(b.id));
+  return shuffle(fresh, rng).concat(repeats).slice(0, count);
 }
 
 // --- Dates -------------------------------------------------------------------
 
-// Daily resets at 2am Mountain Time (UTC-6 summer / MDT).
-// Subtracting 8h shifts the UTC day boundary to 8am UTC = 2am MDT = 4am EDT.
+// Shared daily boundary: 08:00 UTC year-round (4am Toronto summer, 3am winter).
+// A fixed instant avoids changing the challenge's duration on DST transitions.
 // getUTC* is correct here because the offset is baked into the timestamp.
 // daysAgo=0 → today, daysAgo=1 → yesterday (same 8h offset, no string arithmetic).
 function dayKey(daysAgo = 0, now = Date.now()) {
@@ -108,13 +108,15 @@ function dateToSeed(key) {
 }
 
 // Stable-sorts by id first so shard/load order doesn't affect the result.
-// Falls back to the unexcluded order if exclusion leaves fewer than `count`.
+// Exclusions are insertion-ordered oldest first, allowing gradual cooldown relaxation.
 function pickDailyQuestions(pool, dateKeyStr, count = 10, excludeIds = new Set()) {
   const sorted   = [...pool].sort((a, b) => a.id - b.id);
   const shuffled = seededShuffle(sorted, dateToSeed(dateKeyStr));
   const fresh    = shuffled.filter(q => !excludeIds.has(q.id));
-  const src      = fresh.length >= count ? fresh : shuffled;
-  return src.slice(0, count);
+  const age = new Map([...excludeIds].map((id, i) => [id, i]));
+  const repeats = shuffled.filter(q => excludeIds.has(q.id))
+    .sort((a, b) => age.get(a.id) - age.get(b.id));
+  return fresh.concat(repeats).slice(0, count);
 }
 
 // Picks a random movie not in excludeIds. If that leaves nothing, falls back to the
@@ -171,6 +173,13 @@ function buildCatStats(answers) {
     if (a.correct) stats[c].correct++;
   }
   return stats;
+}
+
+function validQuestion(q) {
+  return q && Number.isSafeInteger(q.id) && q.id>0 && typeof q.question==='string' && q.question.trim()
+    && ['movies','characters','parks','walt','cruise','music','pixar'].includes(q.category)
+    && ['easy','medium','hard'].includes(q.difficulty) && Array.isArray(q.answers) && q.answers.length===4
+    && q.answers.every(a=>typeof a==='string' && a.trim()) && new Set(q.answers).size===4;
 }
 
 // --- Checkpoint / resume -------------------------------------------------------
@@ -230,6 +239,10 @@ function reconcileRegularCheckpoint(checkpoint, questionsById) {
   const questions = answers.map(a => a.question).concat(remaining);
   if (questions.length === 0) return null;
   return {
+    gameId: checkpoint.gameId || `legacy_${dateToSeed(JSON.stringify(checkpoint))}`,
+    resetRevision: checkpoint.resetRevision || 0,
+    dateKey: checkpoint.dateKey || (checkpoint.savedAt ? todayKey(Date.parse(checkpoint.savedAt)) : todayKey()),
+    isPractice: !!checkpoint.isPractice,
     questions, currentIndex: answers.length, answers,
     score: answers.filter(a => a.correct).length, currentStreak: trailingStreak(answers),
     isDaily: false, pointsEarned: 0, scoreBreakdown: null
@@ -277,7 +290,7 @@ if (typeof module !== 'undefined' && module.exports) {
     shuffle, SEEN_MAX, capSeenIds, pickRegularQuestions,
     dayKey, todayKey, monthKey, prevMonthKey, computeDaysDiff, nextDailyStreak, homeworkWeekKey,
     seededShuffle, dateToSeed, pickDailyQuestions, pickMovie,
-    SCORING, scoreBreakdown, buildCatStats,
+    SCORING, scoreBreakdown, buildCatStats, validQuestion,
     serializeAnswers, trailingStreak, reconcileDailyProgress, reconcileRegularCheckpoint,
     GAME_LOG_MAX, appendGameLog, buildGameLogEntry
   };

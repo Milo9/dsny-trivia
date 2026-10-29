@@ -139,7 +139,7 @@ def find_answer_leaks(q):
 
     hits = []
 
-    if len(correct_raw) >= 4 and correct_raw in norm_q:
+    if len(correct_raw) >= 4 and re.search(r"(?<!\w)" + re.escape(correct_raw) + r"(?!\w)", norm_q):
         hits.append({"tier": 1, "token": answers[0]})
 
     q_tokens = tokenize(question_text)

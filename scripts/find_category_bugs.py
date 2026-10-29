@@ -39,7 +39,7 @@ FILM_IDENTITY = [
     ("Cars", r"lightning mcqueen|mater\b.*tow truck|radiator springs\b|chick hicks\b|doc hudson\b|piston cup\b|francesco bernoulli\b", True),
     ("Ratatouille", r"ratatouille\b|\bremy\b.*rat|linguini\b|gusteau\b|anton ego\b", True),
     ("WALL-E", r"wall.?e\b|buy n large\b|\baxiom\b.*ship", True),
-    ("Up", r"carl fredricksen\b|ellie fredricksen\b|russell\b.*wilderness\b|\bdug\b.*talking dog\b|paradise falls\b", True),
+    ("Up", r"(?-i:\bUp\b)|carl fredricksen\b|ellie fredricksen\b|russell\b.*wilderness\b|\bdug\b.*talking dog\b|paradise falls\b", True),
     ("Brave", r"\bmerida\b|king fergus\b|queen elinor\b|mor.?du\b|dingwall\b.*clan", True),
     ("Inside Out", r"inside out\b|bing bong\b|core memories\b|hockey island\b|\briley\b.*emotions", True),
     ("Coco", r"\bcoco\b.*pixar|miguel\b.*guitar|hector\b.*rivera|ernesto.*de la cruz|land of the dead\b", True),
@@ -53,7 +53,7 @@ FILM_IDENTITY = [
     ("The Good Dinosaur", r"good dinosaur\b|\barlo\b.*dinosaur|\bspot\b.*good dinosaur", True),
     ("Beauty and the Beast", r"beauty.*beast|\blumiere\b|cogsworth\b|mrs\.? potts\b", False),
     ("The Little Mermaid", r"little mermaid\b|\bariel\b|\bursula\b|prince eric\b|king triton\b|scuttle\b", False),
-    ("Frozen", r"\bfrozen\b|\belsa\b|arendelle\b|\bkristoff\b|\bolaf\b|let it go\b", False),
+    ("Frozen", r"(?-i:Frozen)\b|\belsa\b|arendelle\b|\bkristoff\b|\bolaf\b|let it go\b", False),
     ("The Lion King", r"lion king\b|\bsimba\b|\bmufasa\b|\btimon\b|\bpumbaa\b|\brafiki\b|pride rock\b", False),
     ("Moana", r"\bmoana\b|\bmaui\b.*demigod|te fiti\b|te ka\b|\btamatoa\b|\bheihei\b|motunui\b", False),
     ("Aladdin", r"\baladdin\b|\bgenie\b.*lamp|\bjafar\b|\bjasmine\b.*agrabah|\bagrabah\b|cave of wonders\b", False),
@@ -85,7 +85,7 @@ def check_category(q):
     cat = q.get("category")
     if cat not in ("movies", "pixar"):
         return []
-    haystack = q.get("question", "") + " " + (q.get("answers") or [""])[0]
+    haystack = q.get("film") or (q.get("question", "") + " " + (q.get("answers") or [""])[0])
     hits = []
     for film, pattern, is_pixar in FILM_IDENTITY:
         if re.search(pattern, haystack, re.IGNORECASE):

@@ -655,7 +655,23 @@ input[type="text"]::placeholder { color: var(--muted); }
   user-select: none;
 }
 
-.cat-chip input[type="checkbox"] { display: none; }
+.cat-chip input[type="checkbox"] {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip-path: inset(50%); white-space: nowrap;
+}
+.cat-chip:focus-within { outline: 3px solid var(--gold); outline-offset: 3px; }
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip-path: inset(50%); white-space: nowrap;
+}
+.user-card { width: 100%; color: inherit; font: inherit; text-align: left; }
+.practice-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0; }
+.btn-primary:disabled, .btn-secondary:disabled, .btn-daily:disabled { opacity: 0.5; cursor: default; }
+.answer-explanation { margin: 12px 0; padding: 12px; border-left: 3px solid var(--gold); font-size: 15px; line-height: 1.5; }
+.answer-explanation a { color: var(--gold); }
+#save-status { font-size: 15px; margin: 12px 0; }
+#daily-reset-clock { margin-top: 12px; }
+#homework-load-status:empty { display: none; }
 
 /* Per-category color theming when checked */
 .cat-chip:has(input[value="movies"]):has(input:checked)     { border-color: #a855f7; background: rgba(168,85,247,0.13); color: #a855f7; }

@@ -18,12 +18,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=1.38">
+  <link rel="stylesheet" href="style.css?v=1.39">
 </head>
 <body>
 <div id="stars" aria-hidden="true"></div>
 <div id="stars2" aria-hidden="true"></div>
 <div id="app">
+<p id="local-storage-warning" class="save-warning hidden" role="status">This browser cannot keep progress after closing. Online scores can still save.</p>
 
   <!-- HOME SCREEN -->
   <div class="screen" id="screen-home">
@@ -73,6 +74,7 @@
     <div id="daily-card" class="daily-card hidden">
       <div class="daily-card-title">📅 Today's Challenge</div>
       <div id="daily-card-body"></div>
+      <p id="daily-reset-clock" class="hint-text"></p>
     </div>
     <div id="yesterday-card" class="daily-card hidden">
       <div class="daily-card-title">📅 Yesterday's Challenge</div>
@@ -82,14 +84,17 @@
     <div id="homework-card" class="homework-card hidden">
       <div class="homework-card-title">🎬 Weekly Homework</div>
       <div id="homework-movie-title" class="homework-movie-title"></div>
-      <div class="homework-card-sub">Assigned every Thursday. No skipping. 😉</div>
+      <div class="homework-card-sub">Assigned every Thursday. Mark it watched when you finish.</div>
+      <button class="btn-secondary" id="btn-mark-watched">✓ Mark watched</button>
       <button class="btn-shuffle-homework hidden" id="btn-shuffle-homework">🔀 Shuffle (veto pick)</button>
       <button class="btn-toggle-watched hidden" id="btn-toggle-watched"></button>
       <div id="homework-watched-list" class="homework-watched-list hidden"></div>
     </div>
+    <button id="homework-load-status" class="btn-ghost" type="button" aria-live="polite"></button>
     <div id="add-user-section">
       <button class="btn-secondary" id="btn-show-add-user">+ Add Player</button>
       <div id="add-user-form" class="hidden">
+        <label for="new-user-input" class="visually-hidden">Player name</label>
         <input type="text" id="new-user-input" placeholder="Enter name…" maxlength="20" autocomplete="off">
         <div id="add-user-error" class="error-text hidden"></div>
         <div class="form-row">
@@ -98,6 +103,7 @@
         </div>
       </div>
     </div>
+    <button class="btn-secondary btn-full" id="btn-offline-practice">Practice without saving · available offline</button>
     <button class="btn-leaderboard" id="btn-go-leaderboard">🏆 Leaderboard</button>
     <p id="app-version" class="app-version"></p>
   </div>
@@ -113,15 +119,17 @@
       <div class="daily-section">
         <button class="btn-daily" id="btn-daily-challenge">⭐ Daily Challenge</button>
         <div id="daily-status" class="daily-status"></div>
+        <button id="btn-pending-daily" class="btn-secondary hidden"></button>
       </div>
       <div class="cat-stats-section hidden" id="cat-stats-section">
         <div class="setting-label">📊 Your Category Stats</div>
         <div id="cat-stats-body" class="cat-stats-body"></div>
       </div>
+      <div class="practice-actions"><button class="btn-secondary" id="btn-practice-missed">Practice missed questions</button><button class="btn-secondary" id="btn-practice-weakest">Practice weakest category</button></div>
       <div class="settings-divider">— or customize your game —</div>
       <div class="setting-group">
         <div class="setting-label">Difficulty</div>
-        <div class="pill-group" id="difficulty-group">
+        <div class="pill-group" id="difficulty-group" role="group" aria-label="Difficulty">
           <button class="pill active" data-value="all">All</button>
           <button class="pill" data-value="easy">Easy</button>
           <button class="pill" data-value="medium">Medium</button>
@@ -143,7 +151,7 @@
       </div>
       <div class="setting-group">
         <div class="setting-label">Number of Questions</div>
-        <div class="pill-group" id="count-group">
+        <div class="pill-group" id="count-group" role="group" aria-label="Number of questions">
           <button class="pill active" data-value="10">10</button>
           <button class="pill" data-value="20">20</button>
           <button class="pill" data-value="30">30</button>
@@ -157,6 +165,7 @@
 
   <!-- GAME SCREEN -->
   <div class="screen hidden" id="screen-game">
+    <p id="practice-indicator" class="hint-text hidden">Practice · no leaderboard points</p>
     <div class="game-top">
       <div class="game-meta">
         <span id="game-progress" class="game-progress">Q 1 of 10</span>
@@ -180,11 +189,13 @@
     <div id="answers-grid" class="answers-grid"></div>
     <div id="feedback-area" class="feedback-area hidden">
       <div id="feedback-msg" class="feedback-msg" role="status" aria-live="polite"></div>
+      <div id="answer-explanation" class="answer-explanation hidden"></div>
       <div class="feedback-actions">
         <button class="btn-primary btn-flex" id="btn-next">Next →</button>
         <button class="btn-flag" id="btn-flag" title="Flag this question">👎 Flag</button>
       </div>
       <div id="flag-form" class="flag-form hidden">
+        <label for="flag-comment" class="visually-hidden">What is wrong with this question? Optional.</label>
         <input type="text" id="flag-comment" placeholder="What's wrong? (optional)" maxlength="200" autocomplete="off">
         <div class="form-row">
           <button class="btn-primary" id="btn-flag-submit">Send Report</button>
@@ -229,6 +240,8 @@
         <div id="results-fraction" class="results-fraction"></div>
         <div id="results-points-display" class="results-points-wrap"></div>
         <div id="results-pct" class="results-pct"></div>
+        <p id="save-status" role="status" aria-live="polite"></p>
+        <button id="btn-retry-save" class="btn-secondary hidden">Retry save</button>
         <div id="save-warning" class="save-warning hidden">⚠️ Couldn't save this score — check your connection. It's kept on this device and you'll be offered it again next time.</div>
       </div>
       <div id="results-breakdown" class="breakdown-list"></div>
@@ -264,7 +277,7 @@
       <button class="btn-back" id="btn-leaderboard-back">← Back</button>
       <h2 class="screen-title gold">🏆 Leaderboard</h2>
     </div>
-    <div class="pill-group lb-mode-group" id="lb-mode-group">
+    <div class="pill-group lb-mode-group" id="lb-mode-group" role="group" aria-label="Leaderboard period">
       <button class="pill active" data-mode="lifetime">Lifetime</button>
       <button class="pill" data-mode="month">This Month</button>
       <button class="pill" data-mode="lastmonth">Last Month</button>
@@ -294,10 +307,6 @@
   </div>
 </div>
 
-<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
-<script src="storage.js?v=1.38"></script>
-<script src="game-logic.js?v=1.38"></script>
-<script src="app.js?v=1.38"></script>
+<script src="bootstrap.js?v=1.39" defer></script>
 </body>
 </html>
