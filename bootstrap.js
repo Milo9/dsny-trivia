@@ -1,7 +1,7 @@
 // Core files load independently of optional CDN scripts. Bound each CDN wait,
 // so the local practice screen remains reachable on unreliable connections.
 (() => {
-  const version = new URL(document.currentScript.src).searchParams.get('v') || '1.40';
+  const version = new URL(document.currentScript.src).searchParams.get('v') || '1.41';
   const load = (src, timeout = 10000) => new Promise((resolve, reject) => {
     const script = document.createElement('script');
     const timer = setTimeout(() => { script.remove(); reject(new Error('Connection timed out.')); }, timeout);

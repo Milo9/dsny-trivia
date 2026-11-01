@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=1.40">
+  <link rel="stylesheet" href="style.css?v=1.41">
 </head>
 <body>
 <div id="stars" aria-hidden="true"></div>
@@ -29,28 +29,8 @@
   <!-- HOME SCREEN -->
   <div class="screen" id="screen-home">
     <div class="hidden-mickey hidden-mickey-home" aria-hidden="true"></div>
-    <div class="castle-deco" aria-hidden="true">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 200 260" fill="currentColor">
-        <rect x="99.3" y="-17" width="1.4" height="17"/><polygon points="100.7,-17 114,-13 100.7,-9"/>
-        <rect x="57.5" y="12" width="1.2" height="18"/><polygon points="58.7,12 70,15.5 58.7,19"/>
-        <rect x="141.3" y="12" width="1.2" height="18"/><polygon points="141.3,12 130,15.5 141.3,19"/>
-        <polygon points="22,55 31,120 13,120"/><rect x="13" y="115" width="18" height="85"/>
-        <polygon points="58,30 70,100 46,100"/><rect x="46" y="95" width="24" height="90"/>
-        <polygon points="100,0 118,75 82,75"/><rect x="82" y="70" width="36" height="115"/>
-        <polygon points="142,30 154,100 130,100"/><rect x="130" y="95" width="24" height="90"/>
-        <polygon points="178,55 187,120 169,120"/><rect x="169" y="115" width="18" height="85"/>
-        <rect x="0" y="185" width="200" height="55"/>
-        <g class="castle-windows">
-          <circle cx="100" cy="95" r="2.2"/><circle cx="100" cy="120" r="2.2"/>
-          <circle cx="92" cy="150" r="2"/><circle cx="108" cy="150" r="2"/>
-          <circle cx="58" cy="115" r="1.8"/><circle cx="58" cy="145" r="1.8"/>
-          <circle cx="142" cy="115" r="1.8"/><circle cx="142" cy="145" r="1.8"/>
-          <circle cx="22" cy="140" r="1.6"/><circle cx="178" cy="140" r="1.6"/>
-        </g>
-      </svg>
-    </div>
     <div class="home-header">
-      <p class="magic-kicker">A little pixie dust. A little friendly competition.</p>
+      <p class="magic-kicker">Be Our Guest</p>
       <div class="hero-icons" aria-hidden="true">
         <svg class="mickey-svg" xmlns="http://www.w3.org/2000/svg" viewBox="-92 -92 512 422">
           <circle r="92"/><circle cx="328" r="92"/><circle cx="164" cy="172" r="158"/>
@@ -58,6 +38,33 @@
       </div>
       <h1 class="app-title">Disney Trivia</h1>
       <p class="app-subtitle">⛴️ Disney Cruise Edition</p>
+
+      <div class="enchanted-rose" aria-hidden="true">
+        <svg viewBox="0 0 260 220" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="belle-glass" x2="1" y2="1"><stop stop-color="#b8dfff" stop-opacity=".18"/><stop offset=".5" stop-color="#c5e9ff" stop-opacity=".02"/><stop offset="1" stop-color="#b8dfff" stop-opacity=".15"/></linearGradient>
+            <radialGradient id="belle-glow"><stop stop-color="#e65777" stop-opacity=".35"/><stop offset="1" stop-color="#e65777" stop-opacity="0"/></radialGradient>
+          </defs>
+          <ellipse cx="130" cy="110" rx="100" ry="95" fill="url(#belle-glow)"/>
+          <path d="M64 190V86a66 66 0 0 1 132 0v104Z" fill="url(#belle-glass)" stroke="#d5e7fa" stroke-opacity=".55" stroke-width="1.5"/>
+          <circle cx="130" cy="16" r="5" fill="#e9c779"/>
+          <path d="M75 166V88q0-37 28-49" fill="none" stroke="#e5f3ff" stroke-opacity=".4" stroke-width="3" stroke-linecap="round"/>
+          <path d="M132 184q-18-37 0-64t-6-34" fill="none" stroke="#729d76" stroke-width="4"/>
+          <path d="M126 150q-28 3-31-23 26-1 31 23M132 126q25-1 29-22-24 0-29 22" fill="#527d60" stroke="#9bbc82"/>
+          <g fill="#b8204c" stroke="#ef6c89" stroke-width="1.4">
+            <path d="M128 103C100 96 94 71 108 61q15-8 25 6 19-13 29 0 9 24-34 36Z"/>
+            <path d="M128 95q-24-12-15-30 10-10 22 3 20 4 9 19Z" fill="#df365f"/>
+            <path d="M125 82q-10-16 3-18 16 0 13 14l-14 9Z" fill="#f26482"/>
+            <path d="M122 75q8-6 13 2l-7 7Z" fill="#971438"/>
+          </g>
+          <path class="rose-petal" d="M157 112q17 1 9 14-13 4-9-14Z" fill="#ec587c"/>
+          <ellipse cx="130" cy="193" rx="83" ry="10" fill="#654331" stroke="#e7c67e" stroke-width="2"/>
+          <ellipse cx="130" cy="190" rx="73" ry="5" fill="#b48a4c"/>
+          <path d="M146 187q15-10 20 0-11 5-20 0" fill="#ce355c"/>
+          <g fill="#ffe5a0"><path d="m48 83 2-6 2 6 6 2-6 2-2 6-2-6-6-2ZM204 137l2-5 2 5 5 2-5 2-2 5-2-5-5-2Z"/></g>
+        </svg>
+      </div>
+      <p class="library-caption">Belle&#8217;s Enchanted Library</p>
       <div class="title-sparkles" aria-hidden="true">
         <span class="spark s1">✦</span>
         <span class="spark s2">✦</span>
@@ -65,7 +72,7 @@
         <span class="spark s4">★</span>
       </div>
     </div>
-    <p class="magic-welcome">Every great adventure begins with you.</p>
+    <p class="magic-welcome">A tale as old as time&#8230; a new adventure every round.</p>
     <div class="section-label">Who's playing?</div>
     <div id="user-list" class="user-list">
       <div class="boot-loading">
@@ -107,6 +114,10 @@
     </div>
     <button class="btn-secondary btn-full" id="btn-offline-practice">Practice without saving · available offline</button>
     <button class="btn-leaderboard" id="btn-go-leaderboard">🏆 Leaderboard</button>
+    <details class="chip-secret">
+      <summary aria-label="Discover the little teacup"><svg viewBox="0 0 70 65" aria-hidden="true"><path d="M49 22q22-5 16 13-5 10-16 5" fill="none" stroke="#edce82" stroke-width="5"/><path d="M13 19h12l4 6 5-6h20l-3 26q-18 18-35-1Z" fill="#fff1d3" stroke="#dab766" stroke-width="2"/><ellipse cx="33" cy="53" rx="24" ry="4" fill="#a48ac2"/><circle cx="26" cy="34" r="2" fill="#322a4c"/><circle cx="41" cy="34" r="2" fill="#322a4c"/><path d="M28 41q6 7 12-1" fill="none" stroke="#322a4c" stroke-width="2"/></svg></summary>
+      <p>You found Chip! There&#8217;s always room for one more story.</p>
+    </details>
     <p id="app-version" class="app-version"></p>
   </div>
 
@@ -309,6 +320,6 @@
   </div>
 </div>
 
-<script src="bootstrap.js?v=1.40" defer></script>
+<script src="bootstrap.js?v=1.41" defer></script>
 </body>
 </html>

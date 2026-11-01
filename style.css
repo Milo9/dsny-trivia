@@ -1823,3 +1823,26 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .home-header *, .castle-deco * { animation: none !important; }
 }
+
+/* Belle's library: warm gilding, velvet blue and the enchanted rose. */
+body { background: radial-gradient(ellipse at 50% 0%, #343451, transparent 55%), linear-gradient(180deg, #101d37, #181126); background-attachment: fixed; }
+.home-header { padding: 26px 12px 16px; border-radius: 90px 90px 16px 16px; background: repeating-linear-gradient(90deg, transparent 0 46px, #e4bc6610 47px 48px), linear-gradient(180deg, #192c48, #231b30); }
+.home-header::after { display: none; }
+.magic-kicker { color: #ffe0a0; font-family: Georgia, serif; font-size: 17px; letter-spacing: .15em; margin-bottom: 12px; }
+.enchanted-rose { width: min(100%, 260px); margin: 0 auto; pointer-events: none; }
+.enchanted-rose svg { display: block; width: 100%; height: auto; }
+.library-caption { font-family: Georgia, serif; color: #f4d797; letter-spacing: .08em; font-size: 14px; }
+.home-header .title-sparkles { height: 8px; }
+.magic-welcome { font-size: 16px; padding: 0 12px; }
+.user-card { background: linear-gradient(115deg, #293850, #211e38); border-color: #aa9163; }
+.daily-card, .homework-card { background: linear-gradient(135deg, #30243e, #191f38); }
+.question-card { background: linear-gradient(145deg, #29334a, #201c34); }
+.chip-secret { align-self: flex-end; max-width: 230px; text-align: right; color: #f4d797; font-size: 13px; }
+.chip-secret summary { cursor: pointer; list-style: none; width: 48px; margin-left: auto; border-radius: 8px; }
+.chip-secret summary::-webkit-details-marker { display: none; }
+.chip-secret summary svg { width: 48px; height: 48px; }
+.chip-secret summary:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
+.chip-secret p { padding-top: 8px; }
+.rose-petal { animation: enchantedPetal 7s ease-in-out infinite; transform-origin: 160px 120px; }
+@keyframes enchantedPetal { 0%, 100% { transform: translateY(0) rotate(-12deg); opacity: .8; } 65% { transform: translate(-8px, 42px) rotate(30deg); opacity: .25; } }
+@media (prefers-reduced-motion: reduce) { .rose-petal { animation: none; } }
