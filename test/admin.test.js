@@ -28,7 +28,7 @@ function admin() {
   script=script.slice(0,script.indexOf("window.addEventListener('unhandledrejection'"));
   vm.runInContext(script,context);
   vm.runInContext('downloadJSON=(value,name)=>{globalThis.downloaded={value,name};}',context);
-  return {data,context,original,listeners,run:code=>vm.runInContext(code,context)};
+  return {data,context,original,listeners,elements,run:code=>vm.runInContext(code,context)};
 }
 test('actual admin reset clears monthly points and undo restores the pre-reset snapshot',async()=>{
   const a=admin();await a.run('loadUsers()');await a.run('resetUser(0)');
@@ -56,4 +56,39 @@ test('invalid nested stats and duplicate players are rejected before any restore
   const before=JSON.stringify([...a.data]);const backup={schema:1,users:[a.original,a.original]};
   await a.listeners.get('restore-file:change')({target:{files:[{size:100,text:async()=>JSON.stringify(backup)}],value:'file'}});
   assert.equal(JSON.stringify([...a.data]),before);
+});
+
+test('flag decisions preserve reasons and fix references through reopening and exports',async()=>{
+  const a=admin();
+  await a.run("saveFlagResolution('f','fixed','Corrected attribution.','https://github.com/Milo9/dsny-trivia/commit/abc','Milo')");
+  assert.equal(a.data.get('flags/f')._resolved,true);
+  await a.run("saveFlagResolution('f','reopened','Another option may be true.','','Milo')");
+  assert.equal(a.data.get('flags/f')._resolved,false);
+  const history=[...a.data].filter(([key])=>key.startsWith('flags/f/resolutions/'));
+  assert.equal(history.length,2);
+  assert.equal(history[0][1].reference,'https://github.com/Milo9/dsny-trivia/commit/abc');
+  await a.run('downloadBackup()');
+  assert.equal(a.context.downloaded.value.flags[0]._history.length,2);
+});
+
+test('flag decisions reject missing rationale, reviewer and unsafe or missing fix links before writing',async()=>{
+  const a=admin(),before=JSON.stringify([...a.data]);
+  for(const code of [
+    "saveFlagResolution('f','fixed','Reason','','Milo')",
+    "saveFlagResolution('f','accepted','  ','','Milo')",
+    "saveFlagResolution('f','accepted','Reason','','')",
+    "saveFlagResolution('f','accepted','Reason','javascript:alert(1)','Milo')"
+  ])await assert.rejects(a.run(code));
+  assert.equal(JSON.stringify([...a.data]),before);
+});
+
+test('resolution rendering escapes notes and exposes legacy gaps without deleting reports',async()=>{
+  const a=admin();a.data.set('flags/f',{questionId:1,_resolved:true,comment:'Old flag'});
+  await a.run('loadFlags()');
+  assert.match(a.elements.get('output').innerHTML,/Legacy resolution/);
+  await a.run("saveFlagResolution('f','accepted','<img src=x onerror=alert(1)>','','Milo')");
+  await a.run('loadFlags()');
+  assert.match(a.elements.get('output').innerHTML,/&lt;img/);
+  assert.doesNotMatch(a.elements.get('output').innerHTML,/<img/);
+  assert.doesNotMatch(a.elements.get('output').innerHTML,/deleteFlag/);
 });

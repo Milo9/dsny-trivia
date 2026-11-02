@@ -43,7 +43,7 @@ $changed = @(git diff --name-only HEAD) + $untracked
 # hand in this change; then every ?v= in index.html is synced to it. The
 # app.js?v= value is what the in-app update toast compares, so this is what
 # tells already-open apps that a new build exists.
-$codeFiles = @('app.js', 'style.css', 'storage.js', 'game-logic.js', 'data-logic.js', 'bootstrap.js', 'sw.js', 'index.html')
+$codeFiles = @('app.js', 'style.css', 'storage.js', 'game-logic.js', 'data-logic.js', 'bootstrap.js', 'sw.js', 'index.html', 'review.html')
 $codeChanged = @($changed | Where-Object { $codeFiles -contains $_ }).Count -gt 0
 
 $appText = [System.IO.File]::ReadAllText($appJs)
@@ -94,6 +94,9 @@ if (-not $SkipChecks) {
         python scripts/validate_corpus.py
         if ($LASTEXITCODE -ne 0) { Fail "Corpus validation failed - fix the errors above before deploying." }
     }
+    Write-Host "Checking question audit evidence and scheduled rechecks..." -ForegroundColor Cyan
+    python scripts/question_audit.py check
+    if ($LASTEXITCODE -ne 0) { Fail "Question audit gate failed - see QUESTION_AUDIT.md." }
     if (Get-Command node -ErrorAction SilentlyContinue) {
         Write-Host "Running unit tests..." -ForegroundColor Cyan
         $testOut = node --test --test-reporter=dot test/game-logic.test.js test/storage.test.js test/admin.test.js

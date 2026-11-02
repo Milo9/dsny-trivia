@@ -1,0 +1,26 @@
+name: Monthly question audit queue
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 13 1 * *'
+permissions:
+  contents: read
+jobs:
+  prepare-review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Report coverage, open concerns and scheduled rechecks
+        run: python scripts/question_audit.py report --out artifacts/question-audit.json
+      - name: Prepare a fresh risk and random review batch
+        run: python scripts/question_audit.py plan --seed "monthly-${{ github.run_id }}" --limit 30 --sample-per-category 3 --out artifacts/review-plan.json
+      - name: Check for overdue reviews and incomplete new content
+        run: python scripts/question_audit.py check
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: question-audit-queue
+          path: artifacts/

@@ -89,3 +89,32 @@ test('flag schema rejects markup in enums and accepts normal reports',async()=>{
   await assertSucceeds(adapter.flagReport(report));
   await assertFails(adapter.flagReport({...report,category:'<img onerror=alert(1)>'}));
 });
+
+test('flag resolutions retain immutable reasons and require an atomic parent decision',async()=>{
+  const flag=db.collection('flags').doc('audit-report');
+  const report={questionId:1,questionText:'Q?',correctAnswer:'A',allAnswers:['A','B','C','D'],
+    category:'movies',difficulty:'easy',reportedBy:'Kristen',comment:null,timestamp:'2026-11-01T12:00:00Z'};
+  await flag.set(report);
+  const fixed={at:'2026-11-01T13:00:00Z',reviewer:'Milo',outcome:'fixed',
+    reason:'Checked the credits.\nCorrected the attribution.',reference:'https://github.com/Milo9/dsny-trivia/commit/abc'};
+  const save=(id,event,resolved=true)=>{
+    const batch=db.batch();batch.set(flag.collection('resolutions').doc(id),event);
+    batch.update(flag,{_resolved:resolved,_resolutionId:id});return batch.commit();
+  };
+  await assertFails(flag.update({_resolved:true}));
+  await assertFails(save('bad',{...fixed,reason:'   '}));
+  await assertFails(save('bad',{...fixed,reference:''}));
+  await assertFails(save('bad',{...fixed,reference:'javascript:alert(1)'}));
+  await assertFails(save('bad',{...fixed,reviewer:''}));
+  await assertFails(save('bad',{...fixed,extra:'unexpected'}));
+  await assertFails(save('bad',{...fixed,outcome:'reopened'},true));
+  await assertFails(flag.collection('resolutions').doc('orphan').set(fixed));
+  await assertSucceeds(save('fix',fixed));
+  await assertFails(flag.update({_resolved:true,_resolutionId:'fix'}));
+  await assertFails(flag.collection('resolutions').doc('fix').update({reason:'erased'}));
+  await assertFails(flag.collection('resolutions').doc('fix').delete());
+  await assertFails(flag.delete());
+  await assertSucceeds(save('reopen',{...fixed,outcome:'reopened',reason:'Another option needs checking.',reference:''},false));
+  assert.equal((await flag.collection('resolutions').get()).size,2);
+  await assertSucceeds(save('accept',{...fixed,outcome:'accepted',reason:'Distinct facts after review.',reference:'https://example.org'}));
+});

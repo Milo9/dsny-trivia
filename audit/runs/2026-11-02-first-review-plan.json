@@ -1,0 +1,298 @@
+{
+  "schema": 1,
+  "createdAt": "2026-11-02",
+  "seed": "adoption-2026-11-02",
+  "riskLimit": 30,
+  "samplePerCategory": 3,
+  "corpusHash": "ed46cd38bb9af3ac1fd7b42e8acd66a434f2c2f0fd98261d39d5c2fcbf8a0612",
+  "questionIds": [
+    95,
+    96,
+    130,
+    136,
+    143,
+    148,
+    153,
+    365,
+    376,
+    426,
+    430,
+    436,
+    437,
+    438,
+    453,
+    510,
+    618,
+    692,
+    729,
+    742,
+    743,
+    791,
+    796,
+    813,
+    834,
+    846,
+    862,
+    867,
+    890,
+    937,
+    954,
+    956,
+    961,
+    975,
+    988,
+    1122,
+    1136,
+    1193,
+    1201,
+    1205,
+    1238,
+    1317,
+    1326,
+    1374,
+    1401,
+    1475,
+    1611,
+    2057,
+    2346,
+    2565,
+    2643
+  ],
+  "riskSelected": {
+    "376": [
+      "cross-answer-collision",
+      "exact-number-or-date",
+      "record-or-superlative",
+      "ship-or-venue"
+    ],
+    "743": [
+      "cross-answer-collision",
+      "exact-number-or-date",
+      "record-or-superlative",
+      "ship-or-venue"
+    ],
+    "1374": [
+      "exact-number-or-date",
+      "plot-or-attribute",
+      "record-or-superlative",
+      "tv-scope"
+    ],
+    "1475": [
+      "exact-number-or-date",
+      "record-or-superlative",
+      "ship-or-venue",
+      "specific-attribution"
+    ],
+    "1611": [
+      "exact-number-or-date",
+      "plot-or-attribute",
+      "ship-or-venue",
+      "tv-scope"
+    ],
+    "2346": [
+      "cross-answer-collision",
+      "exact-number-or-date",
+      "record-or-superlative",
+      "ship-or-venue"
+    ],
+    "2643": [
+      "changing-fact",
+      "exact-number-or-date",
+      "record-or-superlative",
+      "ship-or-venue"
+    ],
+    "96": [
+      "cross-answer-collision",
+      "exact-number-or-date",
+      "record-or-superlative"
+    ],
+    "130": [
+      "cross-answer-collision",
+      "record-or-superlative",
+      "tv-scope"
+    ],
+    "136": [
+      "cross-answer-collision",
+      "record-or-superlative",
+      "ship-or-venue"
+    ],
+    "143": [
+      "cross-answer-collision",
+      "record-or-superlative",
+      "ship-or-venue"
+    ],
+    "148": [
+      "cross-answer-collision",
+      "record-or-superlative",
+      "ship-or-venue"
+    ],
+    "426": [
+      "cross-answer-collision",
+      "exact-number-or-date",
+      "ship-or-venue"
+    ],
+    "436": [
+      "cross-answer-collision",
+      "record-or-superlative",
+      "ship-or-venue"
+    ],
+    "453": [
+      "cross-answer-collision",
+      "exact-number-or-date",
+      "specific-attribution"
+    ],
+    "510": [
+      "cross-answer-collision",
+      "exact-number-or-date",
+      "plot-or-attribute"
+    ],
+    "618": [
+      "changing-fact",
+      "cross-answer-collision",
+      "exact-number-or-date"
+    ],
+    "692": [
+      "cross-answer-collision",
+      "exact-number-or-date",
+      "ship-or-venue"
+    ],
+    "729": [
+      "cross-answer-collision",
+      "exact-number-or-date",
+      "ship-or-venue"
+    ],
+    "742": [
+      "exact-number-or-date",
+      "record-or-superlative",
+      "ship-or-venue"
+    ],
+    "791": [
+      "cross-answer-collision",
+      "exact-number-or-date",
+      "specific-attribution"
+    ],
+    "796": [
+      "cross-answer-collision",
+      "exact-number-or-date",
+      "ship-or-venue"
+    ],
+    "813": [
+      "cross-answer-collision",
+      "plot-or-attribute",
+      "record-or-superlative"
+    ],
+    "890": [
+      "cross-answer-collision",
+      "plot-or-attribute",
+      "ship-or-venue"
+    ],
+    "954": [
+      "cross-answer-collision",
+      "exact-number-or-date",
+      "ship-or-venue"
+    ],
+    "956": [
+      "cross-answer-collision",
+      "exact-number-or-date",
+      "ship-or-venue"
+    ],
+    "961": [
+      "cross-answer-collision",
+      "exact-number-or-date",
+      "ship-or-venue"
+    ],
+    "975": [
+      "cross-answer-collision",
+      "record-or-superlative",
+      "ship-or-venue"
+    ],
+    "988": [
+      "changing-fact",
+      "cross-answer-collision",
+      "ship-or-venue"
+    ],
+    "1201": [
+      "cross-answer-collision",
+      "exact-number-or-date",
+      "specific-attribution"
+    ]
+  },
+  "randomSampleIds": [
+    95,
+    153,
+    365,
+    430,
+    437,
+    438,
+    834,
+    846,
+    862,
+    867,
+    937,
+    1122,
+    1136,
+    1193,
+    1205,
+    1238,
+    1317,
+    1326,
+    1401,
+    2057,
+    2565
+  ],
+  "population": 2037,
+  "notCurrentlyVerified": 2037,
+  "startingHashes": {
+    "376": "be7c73388e2e1c3cefed2051611aef93582a79995b03982fe129e5cee08126d8",
+    "743": "d9a32890a51f5b558d025718bbc9b9cd4372147095b38938b0e1790f3ee685a5",
+    "1374": "60c1f15d5ecb68360409283d6452e7fed7cd939ed4377d11859a142e0f85f867",
+    "1475": "fd68ee0553e4fdc4b6d73ea565ca6d326df906036aa6e04d0345c243091d6669",
+    "1611": "43618d1c3366a509aa5e12bed280def56d100fc0e77056a4a5a86033636015b7",
+    "2346": "b0fe2ade84763613e188e502d3b90d605e384bcc0ca46eb50290cb7d5277a5f7",
+    "2643": "855e4e2925fc379af75ecca4f78629141b2a181b26cf1f01cc560cc19c87a446",
+    "96": "130f1a1d3bf8b27585e7515f364816e1cfc50e8d040020c72f51476a2e59d9d9",
+    "130": "8c2e0493eaade6504dfacf9d6c4ee0231f74bcdce346debc3c1fc06389292bf4",
+    "136": "b03cc8e27eb88e4d91759ac4266f06c1bbe60de25a59d3708b659aab5f1ec121",
+    "143": "c63e631bc1c4c12005c5aafb708f62d2a3fb4188fac4a08d1866554ce80af116",
+    "148": "4ed2dcba696c8e9b9a10984ff41239f0e46ad66e62c329a4ef3e6fef0e06e9a7",
+    "426": "fce1fdde929da62928f24c30170de9ab3043c897ca5098d06a40820a18b67dbc",
+    "436": "aefae97eed4579ff230f97c24db3d56d87f3a15757abe64d5a8d5e1bdf5fb121",
+    "453": "5af86d0619d0425ae0380320ff9488678220dae9dcb9ff26896f075919a0e1e9",
+    "510": "6eceee38fa31c89a7d35073cbd995e2963e7036b9497a0129c220f6f04c2d540",
+    "618": "2bf585bd44a193675d970e572a90c5adb4c290dad2b00d8ed3faa3ac7a2a3b95",
+    "692": "7ce078d8f5b85f201b899893c8722ba7f36c2e62719c2ca8ffa5ed497794bfca",
+    "729": "6172879335719a1932f8defbe0ed57a9bb72ab6e1389c95af5817d506227649f",
+    "742": "ad58ffe640387cbd5efe537b5845632838449b369538babc7505b0f0ead5815c",
+    "791": "2887684b66b2f33d75f73f81c65bba333e554588aece518aec843f145f3461cd",
+    "796": "0dba9563e9536433b81ca9ad6abffc589ff2eb432fa531bbf4e43a662e9bff3e",
+    "813": "106cb26bc7ea988d9af177d95433ecae66a810ed2e6e72103e90c21b9a305aba",
+    "890": "fe03768e164c393b361ec80e241fe06dcec4ba520b1168b401e21fd8efbaba7c",
+    "954": "361423fea54450a6691bceae98053f14d5e906f70a4b40ed175c75a3ddec9303",
+    "956": "7f3d1d6dc90fd0b306a6692c738c486b6833a47afdb736816cc1bc9dd80c4614",
+    "961": "2e29c0e24bf3e30457b85fd1e1e119481a5220e188778bc7f60a69a672009df5",
+    "975": "4f498ce9fd8f5ce5c9d8af80339175ca9b664a766b1e38deca1f2e267a907a79",
+    "988": "2711493a9eb329198ab3b0ee2a98f5bf364c72c4913bb699f5a64bee6fcc7563",
+    "1201": "c86753353af21ea1bf96847df192f4f87ca6211797cd54205d742c2d5935baa3",
+    "95": "7c582af86e8476aa05050d1d133dfc1f1e6ac55dd816bbfb2bb5094822e86ce7",
+    "153": "f7245da66bf4a72600bed0d6d21f145efe273702c38d24d0045d494de722b475",
+    "365": "bfe2bcad1fb0d8a06c0fb9d82524658083be0c584d75e86d4981a327f8e537af",
+    "430": "90407e781bf8b147b74fa5861058516d3348bee1469f733e6107c206ca691f15",
+    "437": "cee3d936263af3910f58177e3b801599853144b1586bad2513bfff0c72b2c8a1",
+    "438": "f494bf18b10490f617a51bcdddfbba72e90f5a9ed3ad474810cf6e9dfb210484",
+    "834": "8f6d1e4ed5b6454d5e72e7f6718066bd5521388842e953faa74b51fe70157308",
+    "846": "a40df63a1b783e9f40f543053b934a552fbcfc89ba14474e01052b43f1bd0eae",
+    "862": "30e399a8c15dd52bb7c9454ae5ef44502daed4c5cd103e574db63a18bfb127b1",
+    "867": "576fb775412c8e7fa6f2d7bfe69c347ee7e7dcc180ccd05526491949982044b6",
+    "937": "d68eb030122a7e486fc30a532e229be9704a3d35157e2838fd0f6731b11ff876",
+    "1122": "2334e8b87ab8d9366803a3bdf5b7bd52d599a0a081ac3298a60875152cd0e626",
+    "1136": "bcb66db0a4f7a40f62fae44ebdaa87843f2614eff52d969868f2d24156d47fa0",
+    "1193": "341c6e8983a879729c1c93b1f54fed7a72822c7c040b34c2b2b5dfa70cd68680",
+    "1205": "2ecb55d0ba579355922d8e8f5d72ecc25dc5b4c1e45fbdfb27f79e809493d56f",
+    "1238": "1afe45a719cc0b90078359482d6586eb14510c6456a8fb926721867b1f09a24c",
+    "1317": "ba8b4bd763e15c4f110fa87faa9394c07dc9b3e74756f2f9bc98903a54486e79",
+    "1326": "167b28ac8d3b2e1490a974232202282d64c283a737f1787fad41b436d53c94fd",
+    "1401": "01a4fd7324b738af9db600ab202cfc4ed6f552e07d8cf2914a6781f7d92808b0",
+    "2057": "03303410e00aad5e5c01733b028f166b0b1080c7c9014d9e3c709b4679699a4b",
+    "2565": "7157f940a0587a901924a568f157ed8f84dea57e7f190e408d35780028be1b9d"
+  }
+}

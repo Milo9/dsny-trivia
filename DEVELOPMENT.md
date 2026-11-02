@@ -55,6 +55,11 @@ inside transactions, deduplicated, and capped at 300 IDs.
 
 ## Practice and content
 
+The current editorial audit procedure is [QUESTION_AUDIT.md](QUESTION_AUDIT.md).
+Its version-bound ledger distinguishes structural checks, manual review and
+four-option source verification. CI and deployment run its read-only release gate.
+The frozen adoption baseline is a disclosed backlog, not factual approval.
+
 Missed-question and weakest-category practice are available from player settings
 after there is relevant history. Practice does not award competitive points or
 update competitive accuracy. The separate home-screen practice entry also works

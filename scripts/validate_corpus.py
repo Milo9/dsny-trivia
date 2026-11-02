@@ -15,6 +15,7 @@ import json
 import os
 import sys
 import re
+from datetime import date
 from urllib.parse import urlparse
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -32,6 +33,7 @@ def main():
         return 1
 
     seen_ids = {}
+    seen_stems = {}
     seen_facts = {}
     total = 0
     for rel in shards:
@@ -47,16 +49,24 @@ def main():
             continue
         for q in data:
             total += 1
+            if not isinstance(q, dict):
+                errors.append(f'{rel}: question must be an object')
+                continue
             qid = q.get("id")
             where = f"{rel} id={qid}"
-            if not isinstance(qid, int):
-                errors.append(f"{where}: id is not an integer")
+            if type(qid) is not int or qid <= 0:
+                errors.append(f"{where}: id is not a positive integer")
             elif qid in seen_ids:
                 errors.append(f"{where}: duplicate id (also in {seen_ids[qid]})")
             else:
                 seen_ids[qid] = rel
             if not isinstance(q.get("question"), str) or not q["question"].strip():
                 errors.append(f"{where}: missing question text")
+            else:
+                stem = q['question'].strip().casefold()
+                if stem in seen_stems:
+                    errors.append(f'{where}: exact duplicate question text (also id={seen_stems[stem]})')
+                seen_stems[stem] = qid
             answers = q.get("answers")
             if not isinstance(answers, list) or len(answers) != 4 or \
                     not all(isinstance(a, str) and a.strip() for a in answers):
@@ -87,8 +97,33 @@ def main():
                 source = urlparse(q['source']) if isinstance(q['source'], str) else None
                 if not source or source.scheme != 'https' or not source.netloc:
                     errors.append(f'{where}: source must be an HTTPS URL')
-            if 'verifiedAt' in q and (not isinstance(q['verifiedAt'], str) or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', q['verifiedAt'])):
-                errors.append(f'{where}: verifiedAt must be YYYY-MM-DD')
+            if 'verifiedAt' in q:
+                try:
+                    if not isinstance(q['verifiedAt'], str) or date.fromisoformat(q['verifiedAt']).isoformat() != q['verifiedAt']:
+                        raise ValueError('Invalid date')
+                except ValueError:
+                    errors.append(f'{where}: verifiedAt must be a real YYYY-MM-DD date')
+
+    try:
+        with open(os.path.join(qdir, 'retired.json'), encoding='utf-8') as f:
+            retired = json.load(f)
+        if not isinstance(retired, list):
+            raise ValueError('must be an array')
+        retired_ids = set()
+        for q in retired:
+            if not isinstance(q, dict) or type(q.get('id')) is not int or q['id'] <= 0:
+                errors.append('retired.json: invalid question ID')
+                continue
+            qid = q['id']
+            if qid in seen_ids or qid in retired_ids:
+                errors.append(f'retired.json id={qid}: ID reused in active/retired questions')
+            retired_ids.add(qid)
+            if not isinstance(q.get('question'), str) or not q['question'].strip() or not isinstance(q.get('answers'), list) \
+                    or len(q['answers']) != 4 or not all(isinstance(a, str) and a.strip() for a in q['answers']) \
+                    or q.get('category') not in VALID_CATEGORIES or q.get('difficulty') not in VALID_DIFFICULTIES:
+                errors.append(f'retired.json id={qid}: original question snapshot is incomplete')
+    except (OSError, ValueError) as e:
+        errors.append(f'questions/retired.json: {e}')
 
     for e in errors:
         print("ERROR " + e)

@@ -33,3 +33,10 @@ reset revision, invalidating unfinished games from before the restore. Downloade
 backup restore intentionally restores player stats only; daily pins and flags stay
 unchanged. Full exports include daily snapshots, flags, homework and game receipts
 for archival use. Keep backups private.
+
+Question-flag decisions now use immutable `flags/{id}/resolutions/{event}` records
+with reviewer, reason, outcome, timestamp and evidence/fix link. Parent flags cannot
+be deleted, and resolving/reopening requires an atomic event plus pointer update.
+Legacy resolutions remain readable. Deploy review.html and these rules together;
+the old resolve/delete buttons are incompatible with the new retention policy.
+Full backups include resolution events. Reviewer names remain self-reported.

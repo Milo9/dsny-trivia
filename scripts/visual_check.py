@@ -30,6 +30,7 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 from browser_regressions import run_regressions
+from browser_admin_checks import run_admin_checks
 
 sys.stdout.reconfigure(encoding="utf-8")  # labels can include ✓ etc.; Windows' cp1252 console can't encode them
 ROOT = Path(__file__).resolve().parent.parent
@@ -88,6 +89,7 @@ class Check:
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", type=Path, default=None)
+    ap.add_argument("--admin-only", action="store_true", help="Check only the isolated flag-review UI")
     ap.add_argument("--headed", action="store_true")
     ap.add_argument("--browser", choices=["chromium","webkit"], default="chromium")
     ap.add_argument("--regressions-only", action="store_true")
@@ -106,9 +108,11 @@ def main():
         time.sleep(1.0)
         with sync_playwright() as p:
             browser = getattr(p,args.browser).launch(headless=not args.headed)
-            if args.regressions_only:
+            if args.regressions_only or args.admin_only:
                 c = Check(None, out)
-                run_regressions(browser, base, c, lambda: (server.terminate(), server.wait(timeout=5)))
+                run_admin_checks(browser, base, c)
+                if not args.admin_only:
+                    run_regressions(browser, base, c, lambda: (server.terminate(), server.wait(timeout=5)))
                 browser.close()
                 print(f"Screenshots: {out}")
                 return 1 if c.failures else 0
@@ -368,6 +372,7 @@ def main():
             finally:
                 idx.write_text(orig, encoding="utf-8")
 
+            run_admin_checks(browser, base, c)
             run_regressions(browser, base, c, lambda: (server.terminate(), server.wait(timeout=5)))
             browser.close()
     finally:

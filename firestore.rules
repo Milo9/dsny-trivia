@@ -89,9 +89,32 @@ service cloud.firestore {
         && request.resource.data.reportedBy is string && request.resource.data.reportedBy.size() <= 20
         && (request.resource.data.comment == null || (request.resource.data.comment is string && request.resource.data.comment.size() <= 200))
         && request.resource.data.timestamp is string;
-      allow update: if request.resource.data.diff(resource.data).affectedKeys().hasOnly(['_resolved'])
-        && (!('_resolved' in request.resource.data) || request.resource.data._resolved is bool);
-      allow delete: if true;
+      // Every decision points to a newly-created immutable event in the same
+      // transaction. Existing legacy resolutions remain readable.
+      allow update: if request.resource.data.diff(resource.data).affectedKeys().hasOnly(['_resolved','_resolutionId'])
+        && request.resource.data._resolved is bool && request.resource.data._resolutionId is string
+        && request.resource.data._resolutionId.matches('^[a-zA-Z0-9_-]{1,100}$')
+        && !exists(/databases/$(database)/documents/flags/$(flag)/resolutions/$(request.resource.data._resolutionId))
+        && (request.resource.data._resolved
+          ? getAfter(/databases/$(database)/documents/flags/$(flag)/resolutions/$(request.resource.data._resolutionId)).data.outcome in ['fixed','accepted']
+          : getAfter(/databases/$(database)/documents/flags/$(flag)/resolutions/$(request.resource.data._resolutionId)).data.outcome == 'reopened');
+      allow delete: if false;
+      match /resolutions/{event} {
+        allow read: if true;
+        allow create: if event.matches('^[a-zA-Z0-9_-]{1,100}$')
+          && request.resource.data.keys().hasAll(['at','reviewer','outcome','reason','reference'])
+          && request.resource.data.keys().hasOnly(['at','reviewer','outcome','reason','reference'])
+          && request.resource.data.at is string && request.resource.data.at.size() <= 40
+          && request.resource.data.reviewer is string && request.resource.data.reviewer.matches('[\\s\\S]*\\S[\\s\\S]*') && request.resource.data.reviewer.size() <= 80
+          && request.resource.data.outcome in ['fixed','accepted','reopened']
+          && request.resource.data.reason is string && request.resource.data.reason.matches('[\\s\\S]*\\S[\\s\\S]*') && request.resource.data.reason.size() <= 2000
+          && request.resource.data.reference is string && request.resource.data.reference.size() <= 1000
+          && (request.resource.data.reference == '' || request.resource.data.reference.matches('^https://[^/@ \\t\\r\\n]+(/[^ \\t\\r\\n]*)?$'))
+          && (request.resource.data.outcome != 'fixed' || request.resource.data.reference.size() > 0)
+          && getAfter(/databases/$(database)/documents/flags/$(flag)).data._resolutionId == event
+          && !exists(/databases/$(database)/documents/flags/$(flag)/resolutions/$(event));
+        allow update, delete: if false;
+      }
     }
     match /{document=**} { allow read, write: if false; }
   }

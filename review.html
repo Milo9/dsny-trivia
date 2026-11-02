@@ -19,14 +19,16 @@
     th:nth-child(1)  { width: 35px; }
     th:nth-child(2)  { width: 50px; }
     th:nth-child(3)  { width: 95px; }
-    /* th:nth-child(4) = Question: fills remaining space */
+    #output { overflow-x: auto; }
+    #output table { min-width: 1850px; }
+    th:nth-child(4)  { width: 320px; }
     th:nth-child(5)  { width: 155px; }
     th:nth-child(6)  { width: 65px; }
     th:nth-child(7)  { width: 80px; }
     th:nth-child(8)  { width: 75px; }
-    th:nth-child(9)  { width: 155px; }
+    th:nth-child(9)  { width: 300px; }
     th:nth-child(10) { width: 135px; }
-    th:nth-child(11) { width: 145px; }
+    th:nth-child(11) { width: 220px; }
     td { padding: 10px 10px; border-bottom: 1px solid #222; vertical-align: top; overflow-wrap: break-word; word-break: break-word; }
     tr:hover td { background: #1a1a1a; }
     .q-id    { color: #888; }
@@ -42,9 +44,15 @@
     .badge-medium { color: #fbbf24; }
     .badge-hard   { color: #f87171; }
     .actions td { padding: 12px 10px; }
-    .resolved { opacity: 0.35; }
+    .resolved { opacity: 0.7; }
     .tag-resolved { color: #888; font-size: 11px; }
     #json-out { display: none; background: #1a1a1a; border: 1px solid #333; padding: 16px; font-size: 12px; overflow-x: auto; white-space: pre; margin-top: 16px; color: #ccc; border-radius: 4px; }
+    #flag-resolution-form { background: #1a1a1a; padding: 16px; margin: 16px 0; border: 1px solid #444; }
+    #flag-resolution-form label { display: block; margin: 12px 0; }
+    #flag-resolution-form input, #flag-resolution-form textarea, #flag-resolution-form select { display: block; box-sizing: border-box; width: 100%; max-width: 650px; padding: 8px; background: #111; color: #eee; border: 1px solid #666; }
+    #flag-resolution-form select { color-scheme: dark; appearance: none; -webkit-appearance: none; }
+    .flag-history { margin-top: 8px; font-size: 12px; }
+    .flag-history a { color: #93c5fd; }
   </style>
 </head>
 <body>
@@ -54,9 +62,18 @@
 <div class="controls">
   <button onclick="loadFlags()">↻ Refresh</button>
   <button onclick="exportJSON()">⬇ Export JSON</button>
-  <button onclick="clearResolved()">✓ Remove Resolved</button>
-  <button class="danger" onclick="clearAll()">✕ Clear All Flags</button>
 </div>
+<p class="meta">Reports and resolution history are retained. Resolve with a reason; fixes also need a link to the change.</p>
+<form id="flag-resolution-form" hidden>
+  <h2 id="flag-resolution-title">Review report</h2>
+  <label>Reviewer <input id="flag-reviewer" required maxlength="80" autocomplete="name"></label>
+  <label>Decision ▾ <select id="flag-outcome"><option value="fixed">Fixed</option><option value="accepted">Reviewed — no change needed</option><option value="reopened">Reopened</option></select></label>
+  <label>Reason <textarea id="flag-reason" required maxlength="2000" rows="3"></textarea></label>
+  <label>Link to fix or supporting evidence <input id="flag-reference" type="url" maxlength="1000" placeholder="https://github.com/Milo9/dsny-trivia/commit/..."></label>
+  <button type="submit" id="flag-save">Save decision</button>
+  <button type="button" onclick="document.getElementById('flag-resolution-form').hidden=true">Cancel</button>
+</form>
+<p id="flag-status" role="status" aria-live="polite"></p>
 
 <div id="output"><p class="meta">Loading…</p></div>
 <pre id="json-out"></pre>
@@ -79,8 +96,8 @@
 <!-- Firebase compat SDK (same version as storage.js) -->
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
-<script src="game-logic.js?v=1.41"></script>
-<script src="data-logic.js?v=1.41"></script>
+<script src="game-logic.js?v=1.42"></script>
+<script src="data-logic.js?v=1.42"></script>
 <script>
 firebase.initializeApp({
   apiKey:            "AIzaSyC_keHyGc1Z46rzqB9wNKJ36wZgHscfGrQ",
@@ -120,49 +137,65 @@ function shardFor(qid) {
 
 async function fetchFlags() {
   const snap = await db.collection('flags').get();
-  return snap.docs.map(d => ({ _docId: d.id, ...d.data() }));
+  return Promise.all(snap.docs.map(async d => {
+    const events=await db.collection('flags').doc(d.id).collection('resolutions').get();
+    const history=events.docs.map(e=>({id:e.id,...e.data()})).sort((a,b)=>String(a.at).localeCompare(String(b.at)));
+    return { _docId: d.id, ...d.data(), _history: history };
+  }));
 }
 
 function formatDate(iso) {
   try {
     const d = new Date(iso);
+    if (!iso || Number.isNaN(d.getTime())) return '—';
     return d.toLocaleDateString('en-US', {month:'short',day:'numeric',year:'numeric'}) + ' ' +
            d.toLocaleTimeString('en-US', {hour:'numeric',minute:'2-digit'});
   } catch { return iso || '—'; }
 }
 
-async function resolveFlag(docId) {
-  await db.collection('flags').doc(decodeURIComponent(docId)).update({ _resolved: true });
-  loadFlags();
+let editingFlagId=null;
+function resolveFlag(docId) { openFlagResolution(docId,false); }
+function unresolveFlag(docId) { openFlagResolution(docId,true); }
+function openFlagResolution(docId,reopening) {
+  editingFlagId=decodeURIComponent(docId);
+  document.getElementById('flag-resolution-title').textContent=reopening?'Reopen report':'Resolve report';
+  document.getElementById('flag-outcome').value=reopening?'reopened':'fixed';
+  document.getElementById('flag-reason').value='';
+  document.getElementById('flag-reference').value='';
+  document.getElementById('flag-status').textContent='';
+  document.getElementById('flag-resolution-form').hidden=false;
+  document.getElementById('flag-reviewer').focus();
 }
-
-async function unresolveFlag(docId) {
-  await db.collection('flags').doc(decodeURIComponent(docId)).update({ _resolved: firebase.firestore.FieldValue.delete() });
-  loadFlags();
+function validFlagReference(value) {
+  try {const u=new URL(value);return u.protocol==='https:' && !!u.hostname && !u.username && !u.password;}
+  catch {return false;}
 }
-
-async function deleteFlag(docId) {
-  await db.collection('flags').doc(decodeURIComponent(docId)).delete();
-  loadFlags();
+async function saveFlagResolution(docId,outcome,reason,reference,reviewer) {
+  reason=reason.trim();reference=reference.trim();reviewer=reviewer.trim();
+  if(!['fixed','accepted','reopened'].includes(outcome) || !reason || reason.length>2000 || !reviewer || reviewer.length>80)
+    throw new Error('Choose a decision and enter a reviewer and reason.');
+  if(reference.length>1000 || (reference && !validFlagReference(reference)) || (outcome==='fixed' && !reference))
+    throw new Error('A fix requires an HTTPS link to the change. Other evidence links must also use HTTPS.');
+  const ref=db.collection('flags').doc(docId),event=ref.collection('resolutions').doc();
+  await db.runTransaction(async tx=>{
+    const live=await tx.get(ref);
+    if(!live.exists)throw new Error('Report no longer exists.');
+    tx.set(event,{at:new Date().toISOString(),reviewer,outcome,reason,reference});
+    tx.update(ref,{_resolved:outcome!=='reopened',_resolutionId:event.id});
+  });
 }
-
-async function clearResolved() {
-  if (!confirm('Remove all resolved flags?')) return;
-  const flags = await fetchFlags();
-  const batch = db.batch();
-  flags.filter(f => f._resolved).forEach(f => batch.delete(db.collection('flags').doc(f._docId)));
-  await batch.commit();
-  loadFlags();
-}
-
-async function clearAll() {
-  if (!confirm('Delete ALL flags? This cannot be undone.')) return;
-  const flags = await fetchFlags();
-  const batch = db.batch();
-  flags.forEach(f => batch.delete(db.collection('flags').doc(f._docId)));
-  await batch.commit();
-  loadFlags();
-}
+document.getElementById('flag-resolution-form').addEventListener('submit',async e=>{
+  e.preventDefault();const button=document.getElementById('flag-save');button.disabled=true;
+  try {
+    await saveFlagResolution(editingFlagId,document.getElementById('flag-outcome').value,
+      document.getElementById('flag-reason').value,document.getElementById('flag-reference').value,
+      document.getElementById('flag-reviewer').value);
+    document.getElementById('flag-resolution-form').hidden=true;
+    document.getElementById('flag-status').textContent='Decision saved with its history.';
+    await loadFlags();
+  } catch(error) {document.getElementById('flag-status').textContent='Decision failed: '+error.message;}
+  finally {button.disabled=false;}
+});
 
 function exportJSON() {
   const el = document.getElementById('json-out');
@@ -183,7 +216,7 @@ async function loadFlags() {
   cachedFlags = flags;
 
   if (flags.length === 0) {
-    out.innerHTML = '<p class="empty">No flags yet — looks like the questions are all good! 🎉</p>';
+    out.innerHTML = '<p class="empty">No player reports yet. Audit coverage is tracked separately.</p>';
     return;
   }
 
@@ -208,16 +241,23 @@ async function loadFlags() {
     html += `<td class="${diffClass}">${esc(f.difficulty || '—')}</td>`;
     html += `<td class="q-cat">${esc(f.category || '—')}</td>`;
     html += `<td class="q-who">${esc(f.reportedBy || '—')}</td>`;
-    html += `<td class="q-note">${f.comment ? esc(f.comment) : '<span style="color:#444">—</span>'}</td>`;
+    html += `<td class="q-note">${f.comment ? esc(f.comment) : '<span style="color:#444">—</span>'}`;
+    for(const event of f._history || []) {
+      html += `<div class="flag-history">${esc(event.outcome)} · ${esc(event.reviewer)} · ${esc(formatDate(event.at))}<br>${esc(event.reason)}`;
+      if(validFlagReference(event.reference))html += `<br><a href="${esc(event.reference)}" target="_blank" rel="noopener noreferrer">Change / evidence</a>`;
+      html += '</div>';
+    }
+    if(f._resolved && !(f._history || []).length)html += '<div class="flag-history">Legacy resolution — reason not recorded.</div>';
+    html += '</td>';
     html += `<td class="q-time">${formatDate(f.timestamp)}</td>`;
-    html += `<td style="white-space:nowrap">`;
+    html += `<td>`;
     if (f._resolved) {
       html += `<span class="tag-resolved">✓ resolved</span> `;
-      html += `<button onclick="unresolveFlag('${docId}')">Undo</button> `;
+      html += `<button onclick="unresolveFlag('${docId}')">Reopen</button> `;
+      html += `<button onclick="resolveFlag('${docId}')">Add details</button> `;
     } else {
       html += `<button onclick="resolveFlag('${docId}')">✓ Resolve</button> `;
     }
-    html += `<button class="danger" onclick="deleteFlag('${docId}')">Delete</button>`;
     html += `</td></tr>`;
   });
 

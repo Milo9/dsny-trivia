@@ -1,5 +1,9 @@
 # Disney Trivia App — Claude Reference
 
+> **Question audits and additions:** [QUESTION_AUDIT.md](QUESTION_AUDIT.md) is the
+> current authoritative checklist. Run `python scripts/question_audit.py check`
+> before release. Historical audit notes below are context, not current policy.
+
 > **v1.39 audit fixes:** Read [DEVELOPMENT.md](DEVELOPMENT.md) and
 > [SECURITY.md](SECURITY.md) before changing runtime, storage, scoring, daily pins,
 > release checks, or offline behavior. These supersede older historical notes
@@ -85,8 +89,8 @@ Example line:
 
 **Dedup workflow (grep-first, mandatory):** Before writing any new question, grep all shards for 2–3 key terms from the topic. Because each question is one line, a Grep hit returns the entire question + all answers — eyeball it immediately to confirm it's a true duplicate or a distinct angle. Do not read whole shard files for dedup. For the initial "has this stem/angle been asked at all" scan on a saturated film, `scripts/recon.py` is a cheaper first pass (compact one-line-per-question digest instead of full Grep hits) — but it hides the correct answer by default (`--show-answer` adds only answers[0], never distractors), so once a candidate stem looks close, confirm with a real Grep hit or `--show-answer` before judging it a true duplicate; recon narrows the search, it doesn't replace the eyeball. Before appending a drafted batch, run `scripts/validate_batch.py` (format/enum/exact-dup checks) and `scripts/find_near_dupes.py --new` (lexical near-duplicate check, new-vs-existing and new-vs-new) — see Question-Bank Tooling below for the full workflow.
 
-**Current count:** 2,040 questions (IDs 1–2655, with gaps from removed duplicates/errors). Distribution (exact, via count_topics.py):
-- movies 464, characters 370, pixar 306, parks 306, music 220, walt 207, cruise 167
+**Current count:** 2,037 active questions plus three retained retired snapshots (IDs 1–2655, with historical gaps). Current active distribution:
+- movies 462, characters 369, pixar 306, parks 306, music 220, walt 207, cruise 167
 
 **Per-film coverage map** (questions that are *about* this film — correct answer or question text, not distractors). **The counts below are a rough signal, not a cap.** A film at 30 can still take a 31st question if the fact is genuinely un-asked — the real gate is always "is this a distinct fact, verified against a grep of the existing stems," never "is the count already high." Treat "Saturated" as "the obvious tier-1 facts are probably taken, go deeper (secondary characters, specific scenes/songs, production trivia, direct-to-video sequels, shorts) rather than skip the film," not as "stop." Under-covered rows are just as likely to reflect the count_topics.py regex undercounting (see note below) as genuinely thin coverage — grep the real stems before assuming either way.
 
@@ -197,7 +201,7 @@ Three of the six buckets (cruise, parks, and — after 8 fixes — everything el
 
 **Not yet done:** ~535 of the 795 flagged candidates were reviewed by the forks but not individually WebSearched (judged low-risk from general knowledge) — a genuine gap, not a false-negative-free pass. The corpus's other ~1,245 questions (60%) were never triaged at all, since the risk-shape/collision heuristic only flags specific question shapes; a differently-shaped error (e.g. a wrong plot detail with no superlative, cast, or collision signal) would not have surfaced. Next audit should either widen the triage heuristic's risk shapes or accept this as a standing, sampling-based check rather than a completeness guarantee.
 
-**Removing a question:** Delete its object from the shard JSON. IDs do not need to be contiguous — gaps are fine.
+**Removing a question:** Move its original object to `questions/retired.json` before removing it from the active shard. Keep its ID and ledger history; IDs must never be reused. See QUESTION_AUDIT.md.
 
 **Local testing note:** `fetch()` is blocked on `file://`. Run a local server to test (`python -m http.server 8000`). On GitHub Pages it works fine.
 
@@ -216,7 +220,7 @@ All scripts are read-only against the shards — they print reports/candidates f
 | `find_category_bugs.py` | Whole-corpus rule #9 scan (Pixar film tagged `movies`, or a non-Pixar Disney film tagged `pixar`), via `check_category()` (also called by `validate_batch.py` per-draft). Matches question text + answers[0] against a small Pixar-vs-Disney film-identity pattern list. Advisory/lexical only — a pattern match on an incidental mention (e.g. an actor's other, unrelated role named in passing to identify them) is common and not itself a bug; always returns 0 and always eyeball hits. |
 | `count_topics.py` | Per-film coverage counts — see Per-film coverage map below. |
 
-**Recommended batch workflow:** `recon.py` (and/or `find_gaps.py` for topic ideas) — read the full digest for the topic, not just a skim, since that's what catches same-fact-different-answer-wording duplicates no script can — to confirm a fact isn't already covered → draft the batch as a scratch JSON file → `validate_batch.py` (now includes the tier-1/tier-2 leak check) → `find_near_dupes.py --new` → append the survivors to the current shard, bump IDs/counts in this file.
+**Required batch workflow:** Follow QUESTION_AUDIT.md: recon/read the full topic digest → research and draft → `validate_batch.py` and `find_near_dupes.py --new` → append survivors → `question_audit.py sync` → record the final wording's manual review and evidence for all four options → decide applicable warnings → `question_audit.py check`. Keep IDs/counts current. Structural success alone is not factual verification.
 
 ## Storage Layer — Firebase (active)
 User stats and flags are stored in **Firestore**, project `disneytrivia-38ac6`.
@@ -515,13 +519,13 @@ These rules were derived from real mistakes found during shard audits. Follow th
 
 **Answer structure:**
 2. **Never embed the answer in the question text.** If the question says "What type of animal is Geppetto's cat?" and the answer is "Figaro is a kitten," the word "cat" telegraphs the answer. Ask "What is the name of Geppetto's kitten?" instead.
-3. **Never include explanatory prose in answer strings.** Answers must be short noun phrases, not sentences. Bad: `"Figaro is a kitten"`. Good: `"Figaro"`.
+3. **Keep answers concise and parallel.** Prefer short noun phrases for identification questions. Why/what-happens questions may use explanatory answers if all four options have comparable form and length; avoid making the correct answer uniquely elaborate.
 4. **Never use "All of the above" as a wrong answer** if all the listed options could plausibly be correct. Verify that wrong answers are actually wrong before using them.
 5. **Wrong answers must be wrong.** If a question lists three "wrong" options and all three happen to be correct real-world answers, the question is broken. Replace them with genuinely incorrect options.
 
 **Factual accuracy:**
 6. **Avoid time-sensitive superlatives.** Phrases like "newest," "latest," or "most recent" become false when new things launch. Name the specific year instead: "the ship that launched in 2022" rather than "the newest ship."
-7. **Verify ride/attraction names and statuses.** Brandings change — Rock 'n' Roller Coaster dropped "Starring Aerosmith" at WDW in 2024; Splash Mountain became Tiana's Bayou Adventure in 2024. Check before writing.
+7. **Verify ride/attraction names and statuses.** Names, branding and operating status change. Use current official evidence or explicitly anchor the question to a historical date; schedule a recheck for changing facts.
 8. **Verify ship-specific facts.** DCL restaurant and venue names vary by ship (After Hours on Magic/Wonder, The District on Dream, Europa on Fantasy, Enchanté on Wish). Never write a question about "the adult area on Disney ships" — pin it to a specific ship.
 
 **Category:**

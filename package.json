@@ -4,7 +4,8 @@
   "scripts": {
     "test": "node --test test/game-logic.test.js test/storage.test.js test/admin.test.js",
     "test:emulator": "node scripts/run-emulator-tests.cjs",
-    "test:browser": "python scripts/visual_check.py"
+    "test:browser": "python scripts/visual_check.py",
+    "audit:questions": "python scripts/question_audit.py check"
   },
   "devDependencies": {
     "@firebase/rules-unit-testing": "6.0.0",
