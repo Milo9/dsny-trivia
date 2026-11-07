@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 345,
+  "hash": "2460d05855556f13923c2e6395500fec312f4b239976f7f444dcc36405981cac",
+  "questionSnapshot": {
+    "id": 345,
+    "question": "What is the name of the famous nighttime spectacular at Disneyland featuring Mickey Mouse battling villains?",
+    "answers": [
+      "Fantasmic!",
+      "SpectroMagic",
+      "World of Color",
+      "Illuminations"
+    ],
+    "difficulty": "easy",
+    "category": "parks"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Checked the specific Disneyland version against the official current description and the historical entry. World of Color has water effects but does not become this named Disneyland production. 1477 asks the Hollywood Studios version; shared title does not establish the second park location. Retained park-specific coverage, with a scheduled recheck for changeable entertainment. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+  "verification": {
+    "context": "What is the name of the famous nighttime spectacular at Disneyland featuring Mickey Mouse battling villains? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+    "timeSensitive": true,
+    "nextReviewAt": "2027-02-04",
+    "premise": {
+      "reason": "The Disneyland show page names Fantasmic! and describes Mickey confronting villains. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+      "sources": [
+        {
+          "url": "https://disneyland.disney.go.com/entertainment/disneyland/fantasmic/",
+          "locator": "Title and When Dreams Come to Life: Disneyland Rivers of America, Mickey dreaming and defeating villains"
+        },
+        {
+          "url": "https://d23.com/a-to-z/fantasmic/",
+          "locator": "Opening Disneyland production description and later paragraph describing separate Hollywood Studios version"
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Checked the specific Disneyland version against the official current description and the historical entry. World of Color has water effects but does not become this named Disneyland production. 1477 asks the Hollywood Studios version; shared title does not establish the second park location. Retained park-specific coverage, with a scheduled recheck for changeable entertainment."
+    },
+    "options": [
+      {
+        "answer": "Fantasmic!",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The Disneyland show page names Fantasmic! and describes Mickey confronting villains.",
+        "sources": [
+          {
+            "url": "https://disneyland.disney.go.com/entertainment/disneyland/fantasmic/",
+            "locator": "Title and When Dreams Come to Life: Disneyland Rivers of America, Mickey dreaming and defeating villains"
+          },
+          {
+            "url": "https://d23.com/a-to-z/fantasmic/",
+            "locator": "Opening Disneyland production description and later paragraph describing separate Hollywood Studios version"
+          }
+        ]
+      },
+      {
+        "answer": "SpectroMagic",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "SpectroMagic is not the production named by the Disneyland show page.",
+        "sources": [
+          {
+            "url": "https://disneyland.disney.go.com/entertainment/disneyland/fantasmic/",
+            "locator": "Title and When Dreams Come to Life: Disneyland Rivers of America, Mickey dreaming and defeating villains"
+          },
+          {
+            "url": "https://d23.com/a-to-z/fantasmic/",
+            "locator": "Opening Disneyland production description and later paragraph describing separate Hollywood Studios version"
+          }
+        ]
+      },
+      {
+        "answer": "World of Color",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "World of Color is a separate production, not this Disneyland Mickey dream show.",
+        "sources": [
+          {
+            "url": "https://disneyland.disney.go.com/entertainment/disneyland/fantasmic/",
+            "locator": "Title and When Dreams Come to Life: Disneyland Rivers of America, Mickey dreaming and defeating villains"
+          },
+          {
+            "url": "https://d23.com/a-to-z/fantasmic/",
+            "locator": "Opening Disneyland production description and later paragraph describing separate Hollywood Studios version"
+          }
+        ]
+      },
+      {
+        "answer": "Illuminations",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Illuminations is not the production named by the Disneyland show page.",
+        "sources": [
+          {
+            "url": "https://disneyland.disney.go.com/entertainment/disneyland/fantasmic/",
+            "locator": "Title and When Dreams Come to Life: Disneyland Rivers of America, Mickey dreaming and defeating villains"
+          },
+          {
+            "url": "https://d23.com/a-to-z/fantasmic/",
+            "locator": "Opening Disneyland production description and later paragraph describing separate Hollywood Studios version"
+          }
+        ]
+      }
+    ]
+  }
+}

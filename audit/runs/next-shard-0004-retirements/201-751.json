@@ -1,0 +1,30 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "retired": {
+    "id": 201,
+    "question": "What type of animal is Bambi's friend Thumper?",
+    "answers": [
+      "Rabbit",
+      "Squirrel",
+      "Fox",
+      "Raccoon"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "retained": {
+    "id": 751,
+    "question": "In Bambi, what is the name of the young rabbit who befriends Bambi?",
+    "answers": [
+      "Thumper",
+      "Flower",
+      "Friend Owl",
+      "Faline"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "rationale": "Exactly the same Bambi / Thumper / rabbit identity in reverse; retain the character-name version.",
+  "scope": "Retire only the planned ID. Retained questions are duplicate context and receive no new factual approval here."
+}

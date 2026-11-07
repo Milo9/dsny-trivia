@@ -1,0 +1,80 @@
+{
+  "questionId": 30,
+  "hash": "39f28d14fdd07725badf8db45fa16e02d223152caee35d6bde876bfe5008bc2e",
+  "questionSnapshot": {
+    "id": 30,
+    "question": "What is the name of Merida's horse in Brave?",
+    "answers": [
+      "Angus",
+      "Maximus",
+      "Phillip",
+      "Braveheart"
+    ],
+    "difficulty": "medium",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Four short names, medium animal-name recall; correct Pixar category. No other Brave digest question asks Angus' name. Highland Games and family transformations are separate.",
+  "verification": {
+    "context": "Brave, Pixar 2012 film, Merida's horse.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Angus",
+        "verdict": "correct",
+        "reason": "Pixar explicitly names Merida's horse Angus.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/brave",
+            "locator": "Merida profile: Scottish princess and archer rides her horse Angus; the story and Queen Elinor profiles establish her film and family."
+          }
+        ]
+      },
+      {
+        "answer": "Maximus",
+        "verdict": "incorrect",
+        "reason": "Maximus is the guard horse in Tangled.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/tangled",
+            "locator": "The Characters: Rapunzel and chameleon Pascal; Mother Gothel imprisoned her from infancy; Maximus is the guard horse."
+          }
+        ]
+      },
+      {
+        "answer": "Phillip",
+        "verdict": "incorrect",
+        "reason": "Phillip is Sleeping Beauty's human prince, not Merida's horse.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/sleeping-beauty",
+            "locator": "Plot paragraphs: Maleficent curses Princess Aurora; Merryweather, Flora and Fauna raise her; Prince Phillip rescues her."
+          }
+        ]
+      },
+      {
+        "answer": "Braveheart",
+        "verdict": "incorrect",
+        "reason": "Braveheart is not the name assigned to her horse: the studio's Merida profile explicitly names Angus.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/brave",
+            "locator": "Merida profile: Scottish princess and archer rides her horse Angus; the story and Queen Elinor profiles establish her film and family."
+          }
+        ]
+      }
+    ]
+  }
+}

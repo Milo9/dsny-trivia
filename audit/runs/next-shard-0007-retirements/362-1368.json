@@ -1,0 +1,31 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "retired": {
+    "id": 362,
+    "question": "What is the name of the Disney theme park located in Tokyo, Japan?",
+    "answers": [
+      "Tokyo Disneyland",
+      "Disney Japan",
+      "Japan Magic Kingdom",
+      "Tokyo Disney Park"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "retained": {
+    "id": 1368,
+    "question": "Which Disney theme park, opened in 1983, was the first Disney park to open outside the United States?",
+    "answers": [
+      "Tokyo Disneyland",
+      "Disneyland Paris",
+      "Hong Kong Disneyland",
+      "Shanghai Disneyland"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "additionalComparisons": [],
+  "rationale": "The retained question identifies Tokyo Disneyland as the park that opened in 1983 outside the US. The place-name answer directly supplies the intended Tokyo park identity; original 362 additionally misstates the actual location, Urayasu, and ignores Tokyo DisneySea. Retain the historically precise question.",
+  "scope": "Only the planned question is retired. Comparing a replacement does not approve its factual review."
+}

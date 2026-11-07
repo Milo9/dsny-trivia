@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 134,
+  "hash": "8d201a3875fced886fdc41e32289d6f89f63791fe3ec93ad69200c4ed96e3217",
+  "questionSnapshot": {
+    "id": 134,
+    "question": "At which Chicago school did Walt Disney take evening art classes while attending McKinley High School?",
+    "answers": [
+      "The Chicago Academy of Fine Arts",
+      "The Art Institute of Chicago",
+      "Columbia College Chicago",
+      "Kansas City Art Institute"
+    ],
+    "difficulty": "hard",
+    "category": "walt"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Challenged Art Institute confusion and duplicate distractors. Primary biography identifies the academy; the historian supplies its full name. Final four institutions are different.",
+  "verification": {
+    "context": "At which Chicago school did Walt Disney take evening art classes while attending McKinley High School?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Academy identified in the primary biography; Korkis corroborates full Chicago name and evening classes.",
+      "sources": [
+        {
+          "url": "https://d23.com/about-walt-disney/",
+          "locator": "Biography paragraphs: Chicago birth, McKinley school and evening art classes; Hollywood arrival/office; daughters Diane and Sharon."
+        },
+        {
+          "url": "https://mouseplanet.com/chicago-walt/4040/",
+          "locator": "McKinley High School section, paragraph beginning The same year: evening cartooning at Chicago Academy of Fine Arts, 81 East Monroe Street."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged Art Institute confusion and duplicate distractors. Primary biography identifies the academy; the historian supplies its full name. Final four institutions are different."
+    },
+    "options": [
+      {
+        "answer": "The Chicago Academy of Fine Arts",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Academy identified in the primary biography; Korkis corroborates full Chicago name and evening classes.",
+        "sources": [
+          {
+            "url": "https://d23.com/about-walt-disney/",
+            "locator": "Biography paragraphs: Chicago birth, McKinley school and evening art classes; Hollywood arrival/office; daughters Diane and Sharon."
+          },
+          {
+            "url": "https://mouseplanet.com/chicago-walt/4040/",
+            "locator": "McKinley High School section, paragraph beginning The same year: evening cartooning at Chicago Academy of Fine Arts, 81 East Monroe Street."
+          }
+        ]
+      },
+      {
+        "answer": "The Art Institute of Chicago",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "A different institution from the named academy.",
+        "sources": [
+          {
+            "url": "https://d23.com/about-walt-disney/",
+            "locator": "Biography paragraphs: Chicago birth, McKinley school and evening art classes; Hollywood arrival/office; daughters Diane and Sharon."
+          },
+          {
+            "url": "https://mouseplanet.com/chicago-walt/4040/",
+            "locator": "McKinley High School section, paragraph beginning The same year: evening cartooning at Chicago Academy of Fine Arts, 81 East Monroe Street."
+          }
+        ]
+      },
+      {
+        "answer": "Columbia College Chicago",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "A different institution from the named academy.",
+        "sources": [
+          {
+            "url": "https://d23.com/about-walt-disney/",
+            "locator": "Biography paragraphs: Chicago birth, McKinley school and evening art classes; Hollywood arrival/office; daughters Diane and Sharon."
+          },
+          {
+            "url": "https://mouseplanet.com/chicago-walt/4040/",
+            "locator": "McKinley High School section, paragraph beginning The same year: evening cartooning at Chicago Academy of Fine Arts, 81 East Monroe Street."
+          }
+        ]
+      },
+      {
+        "answer": "Kansas City Art Institute",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "A different institution and city from the named Chicago academy.",
+        "sources": [
+          {
+            "url": "https://d23.com/about-walt-disney/",
+            "locator": "Biography paragraphs: Chicago birth, McKinley school and evening art classes; Hollywood arrival/office; daughters Diane and Sharon."
+          },
+          {
+            "url": "https://mouseplanet.com/chicago-walt/4040/",
+            "locator": "McKinley High School section, paragraph beginning The same year: evening cartooning at Chicago Academy of Fine Arts, 81 East Monroe Street."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 167,
+  "hash": "05bea1de7692271b400001fc037c54fbd68a1e6ba6b1978e7a8ee2a683218895",
+  "questionSnapshot": {
+    "id": 167,
+    "question": "The song 'It's a Small World' was originally written for which event before becoming a Disney park attraction?",
+    "answers": [
+      "The 1964 New York World's Fair",
+      "The 1962 Seattle World's Fair",
+      "The 1958 Brussels World's Fair",
+      "The 1967 Montreal World's Fair"
+    ],
+    "difficulty": "hard",
+    "category": "music"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged whether the attraction existed before the song or a different fair fits. The song was commissioned for the fair attraction, which was moved to Disneyland in 1966. Both official accounts specify New York 1964–65, ruling out all other named fairs.",
+  "verification": {
+    "context": "The song 'It's a Small World' was originally written for which event before becoming a Disney park attraction?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Both official histories place the original commission at the 1964–65 New York fair.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/its-a-small-world/",
+          "locator": "Opening: attraction moved from 1964–65 New York World’s Fair; paragraph credits Richard M. and Robert B. Sherman with its repeated multilingual song."
+        },
+        {
+          "url": "https://disneyland.disney.go.com/en_CA/attractions/disneyland/its-a-small-world/",
+          "locator": "One Song, Many Languages and Disney History, After All sections: Sherman brothers song commission and 1964–1965 New York fair origin before Disneyland in 1966."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged whether the attraction existed before the song or a different fair fits. The song was commissioned for the fair attraction, which was moved to Disneyland in 1966. Both official accounts specify New York 1964–65, ruling out all other named fairs."
+    },
+    "options": [
+      {
+        "answer": "The 1964 New York World's Fair",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Both official histories place the original commission at the 1964–65 New York fair.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/its-a-small-world/",
+            "locator": "Opening: attraction moved from 1964–65 New York World’s Fair; paragraph credits Richard M. and Robert B. Sherman with its repeated multilingual song."
+          },
+          {
+            "url": "https://disneyland.disney.go.com/en_CA/attractions/disneyland/its-a-small-world/",
+            "locator": "One Song, Many Languages and Disney History, After All sections: Sherman brothers song commission and 1964–1965 New York fair origin before Disneyland in 1966."
+          }
+        ]
+      },
+      {
+        "answer": "The 1962 Seattle World's Fair",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Seattle 1962 is a different event, not the documented origin.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/its-a-small-world/",
+            "locator": "Opening: attraction moved from 1964–65 New York World’s Fair; paragraph credits Richard M. and Robert B. Sherman with its repeated multilingual song."
+          },
+          {
+            "url": "https://disneyland.disney.go.com/en_CA/attractions/disneyland/its-a-small-world/",
+            "locator": "One Song, Many Languages and Disney History, After All sections: Sherman brothers song commission and 1964–1965 New York fair origin before Disneyland in 1966."
+          }
+        ]
+      },
+      {
+        "answer": "The 1958 Brussels World's Fair",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Brussels 1958 is a different event, not the documented origin.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/its-a-small-world/",
+            "locator": "Opening: attraction moved from 1964–65 New York World’s Fair; paragraph credits Richard M. and Robert B. Sherman with its repeated multilingual song."
+          },
+          {
+            "url": "https://disneyland.disney.go.com/en_CA/attractions/disneyland/its-a-small-world/",
+            "locator": "One Song, Many Languages and Disney History, After All sections: Sherman brothers song commission and 1964–1965 New York fair origin before Disneyland in 1966."
+          }
+        ]
+      },
+      {
+        "answer": "The 1967 Montreal World's Fair",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Montreal 1967 is a different event, later than the documented debut.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/its-a-small-world/",
+            "locator": "Opening: attraction moved from 1964–65 New York World’s Fair; paragraph credits Richard M. and Robert B. Sherman with its repeated multilingual song."
+          },
+          {
+            "url": "https://disneyland.disney.go.com/en_CA/attractions/disneyland/its-a-small-world/",
+            "locator": "One Song, Many Languages and Disney History, After All sections: Sherman brothers song commission and 1964–1965 New York fair origin before Disneyland in 1966."
+          }
+        ]
+      }
+    ]
+  }
+}

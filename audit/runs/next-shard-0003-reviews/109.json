@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 109,
+  "hash": "a672b85898ce516f781dd32e5aa280bf773981852b8893eff9299670b1ce976f",
+  "questionSnapshot": {
+    "id": 109,
+    "question": "When Disneyland opened to the public in July 1955, what was the adult admission price, excluding ride tickets?",
+    "answers": [
+      "$1.00",
+      "$0.50",
+      "$2.50",
+      "$5.00"
+    ],
+    "difficulty": "hard",
+    "category": "parks"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Challenged adult versus child prices, admission versus October coupon bundles, and public opening versus the invitation-only ceremony. Both price and scope are now explicit.",
+  "verification": {
+    "context": "When Disneyland opened to the public in July 1955, what was the adult admission price, excluding ride tickets?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Adult entry was one dollar; rides were separate.",
+      "sources": [
+        {
+          "url": "https://d23.com/e-ticket-memories-five-favorite-facts-about-ticket-books/",
+          "locator": "Section 1: public opening July 18, 1955, $1 gate admission, separate ride tickets; October adult coupon book was $2.50."
+        },
+        {
+          "url": "https://mickeyblog.com/2023/07/17/heres-how-much-disneyland-cost-on-opening-day/",
+          "locator": "Adult admission $1 versus 50 cents for children; used to disambiguate the adult price."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged adult versus child prices, admission versus October coupon bundles, and public opening versus the invitation-only ceremony. Both price and scope are now explicit."
+    },
+    "options": [
+      {
+        "answer": "$1.00",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Adult entry was one dollar; rides were separate.",
+        "sources": [
+          {
+            "url": "https://d23.com/e-ticket-memories-five-favorite-facts-about-ticket-books/",
+            "locator": "Section 1: public opening July 18, 1955, $1 gate admission, separate ride tickets; October adult coupon book was $2.50."
+          },
+          {
+            "url": "https://mickeyblog.com/2023/07/17/heres-how-much-disneyland-cost-on-opening-day/",
+            "locator": "Adult admission $1 versus 50 cents for children; used to disambiguate the adult price."
+          }
+        ]
+      },
+      {
+        "answer": "$0.50",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Child entry price, not adult entry.",
+        "sources": [
+          {
+            "url": "https://d23.com/e-ticket-memories-five-favorite-facts-about-ticket-books/",
+            "locator": "Section 1: public opening July 18, 1955, $1 gate admission, separate ride tickets; October adult coupon book was $2.50."
+          },
+          {
+            "url": "https://mickeyblog.com/2023/07/17/heres-how-much-disneyland-cost-on-opening-day/",
+            "locator": "Adult admission $1 versus 50 cents for children; used to disambiguate the adult price."
+          }
+        ]
+      },
+      {
+        "answer": "$2.50",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "October adult ticket-book bundle price, not July gate-only admission.",
+        "sources": [
+          {
+            "url": "https://d23.com/e-ticket-memories-five-favorite-facts-about-ticket-books/",
+            "locator": "Section 1: public opening July 18, 1955, $1 gate admission, separate ride tickets; October adult coupon book was $2.50."
+          },
+          {
+            "url": "https://mickeyblog.com/2023/07/17/heres-how-much-disneyland-cost-on-opening-day/",
+            "locator": "Adult admission $1 versus 50 cents for children; used to disambiguate the adult price."
+          }
+        ]
+      },
+      {
+        "answer": "$5.00",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the documented adult admission price.",
+        "sources": [
+          {
+            "url": "https://d23.com/e-ticket-memories-five-favorite-facts-about-ticket-books/",
+            "locator": "Section 1: public opening July 18, 1955, $1 gate admission, separate ride tickets; October adult coupon book was $2.50."
+          },
+          {
+            "url": "https://mickeyblog.com/2023/07/17/heres-how-much-disneyland-cost-on-opening-day/",
+            "locator": "Adult admission $1 versus 50 cents for children; used to disambiguate the adult price."
+          }
+        ]
+      }
+    ]
+  }
+}

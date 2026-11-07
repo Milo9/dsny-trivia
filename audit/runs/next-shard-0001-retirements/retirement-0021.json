@@ -1,0 +1,103 @@
+{
+  "questionId": 21,
+  "hash": "bb08f12c0f77885396b087ff0d57d7d0bd615d45526ff5907e4896f16baa540a",
+  "questionSnapshot": {
+    "id": 21,
+    "question": "What spell does the Fairy Godmother say while transforming Cinderella?",
+    "answers": [
+      "Bibbidi-Bobbidi-Boo",
+      "Abracadabra",
+      "Alakazam",
+      "Hocus Pocus"
+    ],
+    "difficulty": "easy",
+    "category": "movies",
+    "factId": "cinderella.transformation-spell",
+    "film": "Cinderella",
+    "explanation": "The Fairy Godmother's magic helps Cinderella attend the Royal Ball.",
+    "source": "https://movies.disney.com/cinderella-1950",
+    "verifiedAt": "2026-10-29"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": false,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Factual option review completed, but fails distinctFact: retained #700 asks the same fact. Not submitted as a passing manual review.",
+  "verification": {
+    "context": "Cinderella (1950), Fairy Godmother transformation.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Bibbidi-Bobbidi-Boo",
+        "verdict": "correct",
+        "reason": "Bibbidi-Bobbidi-Boo is the Fairy Godmother's magic-word song/spell.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/cinderella-1950",
+            "locator": "The Characters: Cinderella, Jaq, Gus and Lady Tremaine profiles; opening synopsis names the two mice and the Fairy Godmother spell."
+          },
+          {
+            "url": "https://d23.com/a-to-z/cinderella-film/",
+            "locator": "Synopsis, second paragraph: midnight flight and the glass slipper; songs paragraph names Bibbidi-Bobbidi-Boo."
+          }
+        ]
+      },
+      {
+        "answer": "Abracadabra",
+        "verdict": "incorrect",
+        "reason": "Abracadabra is not the phrase named for Cinderella's transformation by Disney.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/cinderella-1950",
+            "locator": "The Characters: Cinderella, Jaq, Gus and Lady Tremaine profiles; opening synopsis names the two mice and the Fairy Godmother spell."
+          },
+          {
+            "url": "https://d23.com/a-to-z/cinderella-film/",
+            "locator": "Synopsis, second paragraph: midnight flight and the glass slipper; songs paragraph names Bibbidi-Bobbidi-Boo."
+          }
+        ]
+      },
+      {
+        "answer": "Alakazam",
+        "verdict": "incorrect",
+        "reason": "Alakazam is not the named magic-word song/phrase in the transformation description.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/cinderella-1950",
+            "locator": "The Characters: Cinderella, Jaq, Gus and Lady Tremaine profiles; opening synopsis names the two mice and the Fairy Godmother spell."
+          },
+          {
+            "url": "https://d23.com/a-to-z/cinderella-film/",
+            "locator": "Synopsis, second paragraph: midnight flight and the glass slipper; songs paragraph names Bibbidi-Bobbidi-Boo."
+          }
+        ]
+      },
+      {
+        "answer": "Hocus Pocus",
+        "verdict": "incorrect",
+        "reason": "Hocus Pocus is not the named transformation song/phrase.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/cinderella-1950",
+            "locator": "The Characters: Cinderella, Jaq, Gus and Lady Tremaine profiles; opening synopsis names the two mice and the Fairy Godmother spell."
+          },
+          {
+            "url": "https://d23.com/a-to-z/cinderella-film/",
+            "locator": "Synopsis, second paragraph: midnight flight and the glass slipper; songs paragraph names Bibbidi-Bobbidi-Boo."
+          }
+        ]
+      }
+    ]
+  },
+  "status": "retired-duplicate",
+  "replacedBy": 700
+}

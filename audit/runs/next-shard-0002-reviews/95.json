@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 95,
+  "hash": "7c582af86e8476aa05050d1d133dfc1f1e6ac55dd816bbfb2bb5094822e86ce7",
+  "questionSnapshot": {
+    "id": 95,
+    "question": "What are the four main theme parks at Walt Disney World?",
+    "answers": [
+      "Magic Kingdom, EPCOT, Hollywood Studios, Animal Kingdom",
+      "Magic Kingdom, EPCOT, Hollywood Studios, Universal",
+      "Magic Kingdom, EPCOT, Adventureland, Animal Kingdom",
+      "Magic Kingdom, Hollywood Studios, Animal Kingdom, SeaWorld"
+    ],
+    "difficulty": "easy",
+    "category": "parks"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Distinct from locating one attraction or identifying a park theme. Answer lengths are sufficiently parallel. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "Walt Disney World, specified park/attraction; current naming/layout at review date.",
+    "timeSensitive": true,
+    "nextReviewAt": "2027-01-30",
+    "premise": {
+      "reason": "Disney’s complete destination listing identifies four Walt Disney World theme parks.",
+      "sources": [
+        {
+          "url": "https://disneyworld.disney.go.com/destinations/",
+          "locator": "Complete theme-park listing: Animal Kingdom, Hollywood Studios, EPCOT and Magic Kingdom."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Compared each four-item set against the complete official list, not just its first matching names. Every wrong option has one substitution, so shared correct items do not make an entire list correct. Water parks are outside the stated theme-park set."
+    },
+    "options": [
+      {
+        "answer": "Magic Kingdom, EPCOT, Hollywood Studios, Animal Kingdom",
+        "verdict": "correct",
+        "basis": "exhaustive-list",
+        "reason": "This exactly reproduces the four listed theme parks.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/destinations/",
+            "locator": "Complete theme-park listing: Animal Kingdom, Hollywood Studios, EPCOT and Magic Kingdom."
+          }
+        ]
+      },
+      {
+        "answer": "Magic Kingdom, EPCOT, Hollywood Studios, Universal",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Universal replaces Animal Kingdom and is absent from Disney’s complete list.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/destinations/",
+            "locator": "Complete theme-park listing: Animal Kingdom, Hollywood Studios, EPCOT and Magic Kingdom."
+          }
+        ]
+      },
+      {
+        "answer": "Magic Kingdom, EPCOT, Adventureland, Animal Kingdom",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Adventureland replaces Hollywood Studios; it is not a separately listed theme park.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/destinations/",
+            "locator": "Complete theme-park listing: Animal Kingdom, Hollywood Studios, EPCOT and Magic Kingdom."
+          }
+        ]
+      },
+      {
+        "answer": "Magic Kingdom, Hollywood Studios, Animal Kingdom, SeaWorld",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "SeaWorld replaces EPCOT and is absent from the four-park list.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/destinations/",
+            "locator": "Complete theme-park listing: Animal Kingdom, Hollywood Studios, EPCOT and Magic Kingdom."
+          }
+        ]
+      }
+    ]
+  }
+}

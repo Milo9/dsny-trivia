@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 54,
+  "hash": "fb91a56c589b0bb535c37fec86104e83b831bf9fdb214e6a3f87e62ac26d116b",
+  "questionSnapshot": {
+    "id": 54,
+    "question": "In Disney's animated Peter Pan (1953), what color is Tinker Bell's dress?",
+    "answers": [
+      "Green",
+      "Blue",
+      "Pink",
+      "Yellow"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Ariel’s green tail q15 is a separate character-and-garment fact; fairy identity q285 does not give dress color. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "English-language Disney character naming; original theatrical feature where a film is named. In Disney's animated Peter Pan (1953), what color is Tinker Bell's dress?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The animated Peter Pan character’s signature dress design is green; the final stem fixes the 1953 film context.",
+      "sources": [
+        {
+          "url": "https://www.disneystore.com/movies-shows/disney/peter-pan/",
+          "locator": "Tinker Bell Classic Doll – Peter Pan – 10-inch product description, signature leafy green dress. Licensed design evidence corroborates the animated character; no claim about every later costume."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Rechecked actual garment color rather than fairy glow, wings or hair. The claim is scoped to the animated character design, not every park costume or later adaptation. The official licensed depiction supplies an explicit color, not an inference from a generic homepage."
+    },
+    "options": [
+      {
+        "answer": "Green",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The official Peter Pan product description expressly identifies the signature dress as green.",
+        "sources": [
+          {
+            "url": "https://www.disneystore.com/movies-shows/disney/peter-pan/",
+            "locator": "Tinker Bell Classic Doll – Peter Pan – 10-inch product description, signature leafy green dress. Licensed design evidence corroborates the animated character; no claim about every later costume."
+          }
+        ]
+      },
+      {
+        "answer": "Blue",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Blue is a different hue from the identified garment color.",
+        "sources": [
+          {
+            "url": "https://www.disneystore.com/movies-shows/disney/peter-pan/",
+            "locator": "Tinker Bell Classic Doll – Peter Pan – 10-inch product description, signature leafy green dress. Licensed design evidence corroborates the animated character; no claim about every later costume."
+          }
+        ]
+      },
+      {
+        "answer": "Pink",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Pink is not the signature green garment color.",
+        "sources": [
+          {
+            "url": "https://www.disneystore.com/movies-shows/disney/peter-pan/",
+            "locator": "Tinker Bell Classic Doll – Peter Pan – 10-inch product description, signature leafy green dress. Licensed design evidence corroborates the animated character; no claim about every later costume."
+          }
+        ]
+      },
+      {
+        "answer": "Yellow",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Yellow is not the signature green garment color.",
+        "sources": [
+          {
+            "url": "https://www.disneystore.com/movies-shows/disney/peter-pan/",
+            "locator": "Tinker Bell Classic Doll – Peter Pan – 10-inch product description, signature leafy green dress. Licensed design evidence corroborates the animated character; no claim about every later costume."
+          }
+        ]
+      }
+    ]
+  }
+}

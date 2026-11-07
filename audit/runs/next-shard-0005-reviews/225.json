@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 225,
+  "hash": "fe4b16bde82055f62d95a885dd13dc26a240e5be580c9c73a5ae1c4cc3d7b532",
+  "questionSnapshot": {
+    "id": 225,
+    "question": "In Encanto, what special gift does Luisa possess?",
+    "answers": [
+      "Super strength",
+      "Growing flowers",
+      "Healing powers",
+      "Shape-shifting"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Challenge used the other three recipients, not absence from a short synopsis. The source assigns distinct gifts to named relatives; shared power with Mr. Incredible is a separate character fact.",
+  "verification": {
+    "context": "In Encanto, what special gift does Luisa possess?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Luisa’s profile explicitly assigns super strength.",
+      "sources": [
+        {
+          "url": "https://d23.com/meet-the-characters-of-encanto/",
+          "locator": "Isabela, Luisa, Julieta/Agustin and Camilo sections explicitly distinguish plants, strength, healing through food, and shapeshifting."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenge used the other three recipients, not absence from a short synopsis. The source assigns distinct gifts to named relatives; shared power with Mr. Incredible is a separate character fact."
+    },
+    "options": [
+      {
+        "answer": "Super strength",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Luisa’s profile explicitly assigns super strength.",
+        "sources": [
+          {
+            "url": "https://d23.com/meet-the-characters-of-encanto/",
+            "locator": "Isabela, Luisa, Julieta/Agustin and Camilo sections explicitly distinguish plants, strength, healing through food, and shapeshifting."
+          }
+        ]
+      },
+      {
+        "answer": "Growing flowers",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Isabela’s gift, not Luisa’s.",
+        "sources": [
+          {
+            "url": "https://d23.com/meet-the-characters-of-encanto/",
+            "locator": "Isabela, Luisa, Julieta/Agustin and Camilo sections explicitly distinguish plants, strength, healing through food, and shapeshifting."
+          }
+        ]
+      },
+      {
+        "answer": "Healing powers",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Julieta’s gift, not Luisa’s.",
+        "sources": [
+          {
+            "url": "https://d23.com/meet-the-characters-of-encanto/",
+            "locator": "Isabela, Luisa, Julieta/Agustin and Camilo sections explicitly distinguish plants, strength, healing through food, and shapeshifting."
+          }
+        ]
+      },
+      {
+        "answer": "Shape-shifting",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Camilo’s gift, not Luisa’s.",
+        "sources": [
+          {
+            "url": "https://d23.com/meet-the-characters-of-encanto/",
+            "locator": "Isabela, Luisa, Julieta/Agustin and Camilo sections explicitly distinguish plants, strength, healing through food, and shapeshifting."
+          }
+        ]
+      }
+    ]
+  }
+}

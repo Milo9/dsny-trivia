@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 260,
+  "hash": "f338c26aeb7e0cebe53bbcffe659e4ba77a533e9460283d875b3ee11332f7c9b",
+  "questionSnapshot": {
+    "id": 260,
+    "question": "In Wreck-It Ralph (2012), which Sugar Rush racer is treated as a glitch and teams up with Ralph?",
+    "answers": [
+      "Vanellope von Schweetz",
+      "Taffyta Muttonfudge",
+      "Rancis Fluggerbutter",
+      "Candlehead"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Narrowed from potentially broad befriending racers to the central glitch alliance. Unique identity in official synopsis excludes three other named racers; no claim that Ralph never speaks to them. Sugar Rush game identity and Turbo reveal test different facts.",
+  "verification": {
+    "context": "In Wreck-It Ralph (2012), which Sugar Rush racer is treated as a glitch and teams up with Ralph?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Vanellope is identified as glitch racer and Ralph ally.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/wreck-it-ralph-film/",
+          "locator": "Synopsis identifies Vanellope von Schweetz as the glitch racer who becomes Ralph hope/ally; 2012 feature."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Narrowed from potentially broad befriending racers to the central glitch alliance. Unique identity in official synopsis excludes three other named racers; no claim that Ralph never speaks to them. Sugar Rush game identity and Turbo reveal test different facts."
+    },
+    "options": [
+      {
+        "answer": "Vanellope von Schweetz",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Vanellope is identified as glitch racer and Ralph ally.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/wreck-it-ralph-film/",
+            "locator": "Synopsis identifies Vanellope von Schweetz as the glitch racer who becomes Ralph hope/ally; 2012 feature."
+          }
+        ]
+      },
+      {
+        "answer": "Taffyta Muttonfudge",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Taffyta is not the identified glitch ally Vanellope.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/wreck-it-ralph-film/",
+            "locator": "Synopsis identifies Vanellope von Schweetz as the glitch racer who becomes Ralph hope/ally; 2012 feature."
+          }
+        ]
+      },
+      {
+        "answer": "Rancis Fluggerbutter",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Rancis is not the identified glitch ally Vanellope.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/wreck-it-ralph-film/",
+            "locator": "Synopsis identifies Vanellope von Schweetz as the glitch racer who becomes Ralph hope/ally; 2012 feature."
+          }
+        ]
+      },
+      {
+        "answer": "Candlehead",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Candlehead is not the identified glitch ally Vanellope.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/wreck-it-ralph-film/",
+            "locator": "Synopsis identifies Vanellope von Schweetz as the glitch racer who becomes Ralph hope/ally; 2012 feature."
+          }
+        ]
+      }
+    ]
+  }
+}

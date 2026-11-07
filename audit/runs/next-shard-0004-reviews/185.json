@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 185,
+  "hash": "0ee757310e374ac04ddca5051d3c80354e062fb02cb97bf8fa46582df22601d5",
+  "questionSnapshot": {
+    "id": 185,
+    "question": "In Ratatouille, what is the name of the famous chef whose motto is 'Anyone can cook'?",
+    "answers": [
+      "Auguste Gusteau",
+      "Anton Ego",
+      "Skinner",
+      "Lalo"
+    ],
+    "difficulty": "medium",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged Ego as another famous food authority and Skinner as head chef: Pixar names Gusteau as the Anyone Can Cook author, while assigning distinct critic/successor/staff roles to the alternatives.",
+  "verification": {
+    "context": "In Ratatouille, what is the name of the famous chef whose motto is 'Anyone can cook'?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Gusteau is explicitly the author of Anyone Can Cook and Remy’s inspiration.",
+      "sources": [
+        {
+          "url": "https://www.pixar.com/ratatouille",
+          "locator": "Synopsis and Remy/Emile/Gusteau/Linguini character profiles; Gusteau profile identifies book and Ego downgrade; Chefs identifies Horst and Lalo as kitchen staff."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged Ego as another famous food authority and Skinner as head chef: Pixar names Gusteau as the Anyone Can Cook author, while assigning distinct critic/successor/staff roles to the alternatives."
+    },
+    "options": [
+      {
+        "answer": "Auguste Gusteau",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Gusteau is explicitly the author of Anyone Can Cook and Remy’s inspiration.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/ratatouille",
+            "locator": "Synopsis and Remy/Emile/Gusteau/Linguini character profiles; Gusteau profile identifies book and Ego downgrade; Chefs identifies Horst and Lalo as kitchen staff."
+          }
+        ]
+      },
+      {
+        "answer": "Anton Ego",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "The food critic who downgraded the restaurant, not the author.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/ratatouille",
+            "locator": "Synopsis and Remy/Emile/Gusteau/Linguini character profiles; Gusteau profile identifies book and Ego downgrade; Chefs identifies Horst and Lalo as kitchen staff."
+          }
+        ]
+      },
+      {
+        "answer": "Skinner",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Successor head chef, not Gusteau or the author of the book.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/ratatouille",
+            "locator": "Synopsis and Remy/Emile/Gusteau/Linguini character profiles; Gusteau profile identifies book and Ego downgrade; Chefs identifies Horst and Lalo as kitchen staff."
+          }
+        ]
+      },
+      {
+        "answer": "Lalo",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "A member of the kitchen staff, not the identified author.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/ratatouille",
+            "locator": "Synopsis and Remy/Emile/Gusteau/Linguini character profiles; Gusteau profile identifies book and Ego downgrade; Chefs identifies Horst and Lalo as kitchen staff."
+          }
+        ]
+      }
+    ]
+  }
+}

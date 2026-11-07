@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 85,
+  "hash": "c81c7641714fc50cdb99227f13c1b6dea59695f35194e365ba51f22d42c2363e",
+  "questionSnapshot": {
+    "id": 85,
+    "question": "What are the names of Madame Medusa's two pet reptiles in The Rescuers?",
+    "answers": [
+      "Brutus and Nero",
+      "Snap and Crunch",
+      "Jaws and Rex",
+      "Fluffy and Spike"
+    ],
+    "difficulty": "hard",
+    "category": "characters"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "No other Medusa-pet name question found across shards. Retains hard for relatively obscure paired-name recall; neutral species wording is clarification, not an established factual correction. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "English-language Disney character naming; original theatrical feature where a film is named. What are the names of Madame Medusa's two pet reptiles in The Rescuers?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Disney names Medusa’s pet pair Nero and Brutus; its two entries disagree on the precise crocodilian label.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/nero-and-brutus/",
+          "locator": "Entire entry names Madame Medusa’s pet pair Nero and Brutus and calls them crocodiles."
+        },
+        {
+          "url": "https://d23.com/a-to-z/rescuers-the-film/",
+          "locator": "Second synopsis paragraph calls the two reptiles alligators, contrary to Nero and Brutus entry. Final question avoids choosing between these labels."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged the animal premise against both D23 entries and found alligator/crocodile inconsistency. Pet reptiles remains true under either description. Pair order is immaterial; none of the three alternative pairs matches either canonical name."
+    },
+    "options": [
+      {
+        "answer": "Brutus and Nero",
+        "verdict": "correct",
+        "basis": "exhaustive-list",
+        "reason": "Brutus and Nero is the same pair as Nero and Brutus, in reverse order.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/nero-and-brutus/",
+            "locator": "Entire entry names Madame Medusa’s pet pair Nero and Brutus and calls them crocodiles."
+          },
+          {
+            "url": "https://d23.com/a-to-z/rescuers-the-film/",
+            "locator": "Second synopsis paragraph calls the two reptiles alligators, contrary to Nero and Brutus entry. Final question avoids choosing between these labels."
+          }
+        ]
+      },
+      {
+        "answer": "Snap and Crunch",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Snap and Crunch is not the complete named pair.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/nero-and-brutus/",
+            "locator": "Entire entry names Madame Medusa’s pet pair Nero and Brutus and calls them crocodiles."
+          },
+          {
+            "url": "https://d23.com/a-to-z/rescuers-the-film/",
+            "locator": "Second synopsis paragraph calls the two reptiles alligators, contrary to Nero and Brutus entry. Final question avoids choosing between these labels."
+          }
+        ]
+      },
+      {
+        "answer": "Jaws and Rex",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Jaws and Rex is not the identified pair.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/nero-and-brutus/",
+            "locator": "Entire entry names Madame Medusa’s pet pair Nero and Brutus and calls them crocodiles."
+          },
+          {
+            "url": "https://d23.com/a-to-z/rescuers-the-film/",
+            "locator": "Second synopsis paragraph calls the two reptiles alligators, contrary to Nero and Brutus entry. Final question avoids choosing between these labels."
+          }
+        ]
+      },
+      {
+        "answer": "Fluffy and Spike",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Fluffy and Spike is not the identified pair.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/nero-and-brutus/",
+            "locator": "Entire entry names Madame Medusa’s pet pair Nero and Brutus and calls them crocodiles."
+          },
+          {
+            "url": "https://d23.com/a-to-z/rescuers-the-film/",
+            "locator": "Second synopsis paragraph calls the two reptiles alligators, contrary to Nero and Brutus entry. Final question avoids choosing between these labels."
+          }
+        ]
+      }
+    ]
+  }
+}

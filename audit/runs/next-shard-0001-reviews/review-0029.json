@@ -1,0 +1,88 @@
+{
+  "questionId": 29,
+  "hash": "54426314eb24c068d3f45a08824a6321d1e141094f58cb58eb66f19defa6d4f7",
+  "questionSnapshot": {
+    "id": 29,
+    "question": "In Tarzan, what is the name of Tarzan's gorilla mother?",
+    "answers": [
+      "Kala",
+      "Kerchak",
+      "Terk",
+      "Jane"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Four in-film names with distinct roles. Medium name recall. #77 identifies his friend, #2296 troop leader, and Jane-related questions the human expedition; distinct facts.",
+  "verification": {
+    "context": "Tarzan, Disney animated 1999 film, adoptive gorilla mother.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Kala",
+        "verdict": "correct",
+        "reason": "Kala rescues and raises Tarzan as her own son.",
+        "sources": [
+          {
+            "url": "https://d23.com/our-favorite-disney-monkeys-and-apes/",
+            "locator": "Abu / Aladdin (1992) subsection: Aladdin's pet monkey. Kala and Terk / Tarzan (1999) subsections distinguish adoptive mother and childhood friend."
+          },
+          {
+            "url": "https://d23.com/a-to-z/tarzan-film/",
+            "locator": "Synopsis and cast: troop led by Kerchak and Kala; Terk is gorilla friend; Jane is the human expedition member and love interest. Mother role corroborated by D23 Kala subsection in Our Favorite Disney Monkeys and Apes."
+          }
+        ]
+      },
+      {
+        "answer": "Kerchak",
+        "verdict": "incorrect",
+        "reason": "Kerchak is Kala's male mate and troop leader.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/tarzan-film/",
+            "locator": "Synopsis and cast: troop led by Kerchak and Kala; Terk is gorilla friend; Jane is the human expedition member and love interest. Mother role corroborated by D23 Kala subsection in Our Favorite Disney Monkeys and Apes."
+          }
+        ]
+      },
+      {
+        "answer": "Terk",
+        "verdict": "incorrect",
+        "reason": "Terk is Tarzan's childhood gorilla friend.",
+        "sources": [
+          {
+            "url": "https://d23.com/our-favorite-disney-monkeys-and-apes/",
+            "locator": "Abu / Aladdin (1992) subsection: Aladdin's pet monkey. Kala and Terk / Tarzan (1999) subsections distinguish adoptive mother and childhood friend."
+          },
+          {
+            "url": "https://d23.com/a-to-z/tarzan-film/",
+            "locator": "Synopsis and cast: troop led by Kerchak and Kala; Terk is gorilla friend; Jane is the human expedition member and love interest. Mother role corroborated by D23 Kala subsection in Our Favorite Disney Monkeys and Apes."
+          }
+        ]
+      },
+      {
+        "answer": "Jane",
+        "verdict": "incorrect",
+        "reason": "Jane is the human explorer and love interest, not his gorilla mother.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/tarzan-film/",
+            "locator": "Synopsis and cast: troop led by Kerchak and Kala; Terk is gorilla friend; Jane is the human expedition member and love interest. Mother role corroborated by D23 Kala subsection in Our Favorite Disney Monkeys and Apes."
+          }
+        ]
+      }
+    ]
+  }
+}

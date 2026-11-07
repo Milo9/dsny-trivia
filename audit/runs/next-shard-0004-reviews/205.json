@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 205,
+  "hash": "9ee3868cd6bd3815d97781084585d7afa9c544e2d9125745e52a65e07d47f26e",
+  "questionSnapshot": {
+    "id": 205,
+    "question": "In Beauty and the Beast (1991), what color is Belle's gown during the ballroom dance?",
+    "answers": [
+      "Yellow",
+      "Blue",
+      "Pink",
+      "Red"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged Belle’s other clothing and live-action differences. Final scope specifies 1991 and the ballroom scene; D23 distinguishes the iconic yellow dress from the blue village dress. Pink/red are not the identified ballroom color.",
+  "verification": {
+    "context": "In Beauty and the Beast (1991), what color is Belle's gown during the ballroom dance?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "D23 identifies the iconic yellow dress from the 1991 animation.",
+      "sources": [
+        {
+          "url": "https://d23.com/tale-as-old-as-time-modern-fashion-sensibilities/",
+          "locator": "Opening paragraphs identify iconic yellow dress retained from 1991 animation; later paragraph distinguishes the blue village dress."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged Belle’s other clothing and live-action differences. Final scope specifies 1991 and the ballroom scene; D23 distinguishes the iconic yellow dress from the blue village dress. Pink/red are not the identified ballroom color."
+    },
+    "options": [
+      {
+        "answer": "Yellow",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "D23 identifies the iconic yellow dress from the 1991 animation.",
+        "sources": [
+          {
+            "url": "https://d23.com/tale-as-old-as-time-modern-fashion-sensibilities/",
+            "locator": "Opening paragraphs identify iconic yellow dress retained from 1991 animation; later paragraph distinguishes the blue village dress."
+          }
+        ]
+      },
+      {
+        "answer": "Blue",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "D23 distinguishes the blue village outfit from the iconic dance dress.",
+        "sources": [
+          {
+            "url": "https://d23.com/tale-as-old-as-time-modern-fashion-sensibilities/",
+            "locator": "Opening paragraphs identify iconic yellow dress retained from 1991 animation; later paragraph distinguishes the blue village dress."
+          }
+        ]
+      },
+      {
+        "answer": "Pink",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the documented color of the dance dress.",
+        "sources": [
+          {
+            "url": "https://d23.com/tale-as-old-as-time-modern-fashion-sensibilities/",
+            "locator": "Opening paragraphs identify iconic yellow dress retained from 1991 animation; later paragraph distinguishes the blue village dress."
+          }
+        ]
+      },
+      {
+        "answer": "Red",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the documented color of the dance dress.",
+        "sources": [
+          {
+            "url": "https://d23.com/tale-as-old-as-time-modern-fashion-sensibilities/",
+            "locator": "Opening paragraphs identify iconic yellow dress retained from 1991 animation; later paragraph distinguishes the blue village dress."
+          }
+        ]
+      }
+    ]
+  }
+}

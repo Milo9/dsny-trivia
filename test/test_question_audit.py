@@ -24,9 +24,15 @@ def reviewed(q, time_sensitive=False, due=None):
     value.update(reviewer='Test reviewer', at=AS_OF, manual=dict.fromkeys(audit.CHECKS, True),
                  notes='Read full topic coverage; parallel, distinct and unambiguous options.')
     value['verification'].update(context='The original theatrical film, English credits.',
-                                 timeSensitive=time_sensitive, nextReviewAt=due)
+                                 timeSensitive=time_sensitive, nextReviewAt=due,
+                                 premise={'reason': 'The credited characters establish the premise in this test fixture.',
+                                          'sources': [{'url': 'https://example.org/film/credits', 'locator': 'Cast list'}]},
+                                 challenge={'reviewer': 'Test reviewer', 'at': AS_OF, 'premiseChecked': True,
+                                            'alternativesExcluded': True,
+                                            'notes': 'Compared all four roles and checked that no competing answer fits the stated context.'})
     for i, option in enumerate(value['verification']['options']):
-        option.update(reason='Specific supporting or excluding evidence for option '+str(i),
+        option.update(basis='direct' if i == 0 else 'contradiction',
+                      reason='Specific supporting or excluding evidence for option '+str(i),
                       sources=[{'url': 'https://example.org/film/credits', 'locator': 'End credits, cast section'}])
     return value
 

@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 131,
+  "hash": "de32285fe6970b847f6c161d4796e12f43c5247e82622f4f5c19f701f1bf1439",
+  "questionSnapshot": {
+    "id": 131,
+    "question": "In what city did Walt Disney open his first studio in California?",
+    "answers": [
+      "Los Angeles (Hollywood)",
+      "Burbank",
+      "Anaheim",
+      "San Francisco"
+    ],
+    "difficulty": "hard",
+    "category": "walt"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Final challenge checks the exact named entity/event against each listed alternative, not merely a matching answer keyword.",
+  "verification": {
+    "context": "In what city did Walt Disney open his first studio in California?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The California production began in a Hollywood real estate office, within Los Angeles.",
+      "sources": [
+        {
+          "url": "https://d23.com/about-walt-disney/",
+          "locator": "Biography paragraphs: Chicago birth, McKinley school and evening art classes; Hollywood arrival/office; daughters Diane and Sharon."
+        },
+        {
+          "url": "https://d23.com/a-to-z/alice-comedies/",
+          "locator": "Opening paragraphs: Kansas City pilot versus 56 Hollywood series shorts made 1924–1927."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tried each alternative against the literal final scope: Burbank: The later Burbank studio is not the first Hollywood office. Anaheim: Not the documented first California studio city. San Francisco: Not the documented first California studio city."
+    },
+    "options": [
+      {
+        "answer": "Los Angeles (Hollywood)",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The California production began in a Hollywood real estate office, within Los Angeles.",
+        "sources": [
+          {
+            "url": "https://d23.com/about-walt-disney/",
+            "locator": "Biography paragraphs: Chicago birth, McKinley school and evening art classes; Hollywood arrival/office; daughters Diane and Sharon."
+          },
+          {
+            "url": "https://d23.com/a-to-z/alice-comedies/",
+            "locator": "Opening paragraphs: Kansas City pilot versus 56 Hollywood series shorts made 1924–1927."
+          }
+        ]
+      },
+      {
+        "answer": "Burbank",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "The later Burbank studio is not the first Hollywood office.",
+        "sources": [
+          {
+            "url": "https://d23.com/about-walt-disney/",
+            "locator": "Biography paragraphs: Chicago birth, McKinley school and evening art classes; Hollywood arrival/office; daughters Diane and Sharon."
+          },
+          {
+            "url": "https://d23.com/a-to-z/alice-comedies/",
+            "locator": "Opening paragraphs: Kansas City pilot versus 56 Hollywood series shorts made 1924–1927."
+          }
+        ]
+      },
+      {
+        "answer": "Anaheim",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the documented first California studio city.",
+        "sources": [
+          {
+            "url": "https://d23.com/about-walt-disney/",
+            "locator": "Biography paragraphs: Chicago birth, McKinley school and evening art classes; Hollywood arrival/office; daughters Diane and Sharon."
+          },
+          {
+            "url": "https://d23.com/a-to-z/alice-comedies/",
+            "locator": "Opening paragraphs: Kansas City pilot versus 56 Hollywood series shorts made 1924–1927."
+          }
+        ]
+      },
+      {
+        "answer": "San Francisco",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the documented first California studio city.",
+        "sources": [
+          {
+            "url": "https://d23.com/about-walt-disney/",
+            "locator": "Biography paragraphs: Chicago birth, McKinley school and evening art classes; Hollywood arrival/office; daughters Diane and Sharon."
+          },
+          {
+            "url": "https://d23.com/a-to-z/alice-comedies/",
+            "locator": "Opening paragraphs: Kansas City pilot versus 56 Hollywood series shorts made 1924–1927."
+          }
+        ]
+      }
+    ]
+  }
+}

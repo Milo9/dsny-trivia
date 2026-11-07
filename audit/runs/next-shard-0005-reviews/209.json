@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 209,
+  "hash": "799bc2479c15c2648ff575098c1beacb1f14bdcd202cdcc3d0268a7234b61a18",
+  "questionSnapshot": {
+    "id": 209,
+    "question": "In The Princess and the Frog, what city does Tiana live in?",
+    "answers": [
+      "New Orleans",
+      "Atlanta",
+      "New York",
+      "Savannah"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Separated story geography from the New York premiere; Atlanta, New York and Savannah cannot replace the explicitly named New Orleans setting.",
+  "verification": {
+    "context": "In The Princess and the Frog, what city does Tiana live in?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The synopsis explicitly places Tiana in New Orleans.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/princess-and-the-frog-the-film/",
+          "locator": "Opening synopsis places Tiana in New Orleans and states her lifelong restaurant ambition; cast identifies Ray, Louis and Charlotte."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Separated story geography from the New York premiere; Atlanta, New York and Savannah cannot replace the explicitly named New Orleans setting."
+    },
+    "options": [
+      {
+        "answer": "New Orleans",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The synopsis explicitly places Tiana in New Orleans.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/princess-and-the-frog-the-film/",
+            "locator": "Opening synopsis places Tiana in New Orleans and states her lifelong restaurant ambition; cast identifies Ray, Louis and Charlotte."
+          }
+        ]
+      },
+      {
+        "answer": "Atlanta",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different city from New Orleans.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/princess-and-the-frog-the-film/",
+            "locator": "Opening synopsis places Tiana in New Orleans and states her lifelong restaurant ambition; cast identifies Ray, Louis and Charlotte."
+          }
+        ]
+      },
+      {
+        "answer": "New York",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Exclusive New York screening city is a release location, not Tiana’s home.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/princess-and-the-frog-the-film/",
+            "locator": "Opening synopsis places Tiana in New Orleans and states her lifelong restaurant ambition; cast identifies Ray, Louis and Charlotte."
+          }
+        ]
+      },
+      {
+        "answer": "Savannah",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different city from the story location.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/princess-and-the-frog-the-film/",
+            "locator": "Opening synopsis places Tiana in New Orleans and states her lifelong restaurant ambition; cast identifies Ray, Louis and Charlotte."
+          }
+        ]
+      }
+    ]
+  }
+}

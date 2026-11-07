@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 154,
+  "hash": "e50a06c688902548e29da7645d17420ac3229b1a8e48f7fa035e8cff9586c62c",
+  "questionSnapshot": {
+    "id": 154,
+    "question": "Complete the lyric from Frozen: 'Let it go, let it go, can't hold it back ___.'",
+    "answers": [
+      "anymore",
+      "today",
+      "again",
+      "no more"
+    ],
+    "difficulty": "easy",
+    "category": "music"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Challenged semantic substitutes and the later chorus. This asks exact English wording at the quoted first-chorus position. Licensed stage sheet is corroborated by the film transcription; it is not assumed to prove every film lyric by itself.",
+  "verification": {
+    "context": "Complete the lyric from Frozen: 'Let it go, let it go, can't hold it back ___.'",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The exact missing word is anymore in both licensed sheet and film transcription.",
+      "sources": [
+        {
+          "url": "https://www.mtishows.com/sites/default/files/let_it_go_lyric_sheet.pdf",
+          "locator": "PDF page 1, first chorus, second line; licensed Frozen JR lyric sheet. Film wording corroborated separately, not inferred from the stage adaptation alone."
+        },
+        {
+          "url": "https://www.disneyclips.com/lyrics/frozenlyrics5.html",
+          "locator": "Frozen / Let It Go, first chorus immediately after Well now they know; identifies Idina Menzel as Elsa. Secondary film transcription agrees with licensed sheet."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged semantic substitutes and the later chorus. This asks exact English wording at the quoted first-chorus position. Licensed stage sheet is corroborated by the film transcription; it is not assumed to prove every film lyric by itself."
+    },
+    "options": [
+      {
+        "answer": "anymore",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The exact missing word is anymore in both licensed sheet and film transcription.",
+        "sources": [
+          {
+            "url": "https://www.mtishows.com/sites/default/files/let_it_go_lyric_sheet.pdf",
+            "locator": "PDF page 1, first chorus, second line; licensed Frozen JR lyric sheet. Film wording corroborated separately, not inferred from the stage adaptation alone."
+          },
+          {
+            "url": "https://www.disneyclips.com/lyrics/frozenlyrics5.html",
+            "locator": "Frozen / Let It Go, first chorus immediately after Well now they know; identifies Idina Menzel as Elsa. Secondary film transcription agrees with licensed sheet."
+          }
+        ]
+      },
+      {
+        "answer": "today",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Not the word at that position.",
+        "sources": [
+          {
+            "url": "https://www.mtishows.com/sites/default/files/let_it_go_lyric_sheet.pdf",
+            "locator": "PDF page 1, first chorus, second line; licensed Frozen JR lyric sheet. Film wording corroborated separately, not inferred from the stage adaptation alone."
+          },
+          {
+            "url": "https://www.disneyclips.com/lyrics/frozenlyrics5.html",
+            "locator": "Frozen / Let It Go, first chorus immediately after Well now they know; identifies Idina Menzel as Elsa. Secondary film transcription agrees with licensed sheet."
+          }
+        ]
+      },
+      {
+        "answer": "again",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Not the word at that position.",
+        "sources": [
+          {
+            "url": "https://www.mtishows.com/sites/default/files/let_it_go_lyric_sheet.pdf",
+            "locator": "PDF page 1, first chorus, second line; licensed Frozen JR lyric sheet. Film wording corroborated separately, not inferred from the stage adaptation alone."
+          },
+          {
+            "url": "https://www.disneyclips.com/lyrics/frozenlyrics5.html",
+            "locator": "Frozen / Let It Go, first chorus immediately after Well now they know; identifies Idina Menzel as Elsa. Secondary film transcription agrees with licensed sheet."
+          }
+        ]
+      },
+      {
+        "answer": "no more",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "A different two-word phrase, not the exact lyric completion.",
+        "sources": [
+          {
+            "url": "https://www.mtishows.com/sites/default/files/let_it_go_lyric_sheet.pdf",
+            "locator": "PDF page 1, first chorus, second line; licensed Frozen JR lyric sheet. Film wording corroborated separately, not inferred from the stage adaptation alone."
+          },
+          {
+            "url": "https://www.disneyclips.com/lyrics/frozenlyrics5.html",
+            "locator": "Frozen / Let It Go, first chorus immediately after Well now they know; identifies Idina Menzel as Elsa. Secondary film transcription agrees with licensed sheet."
+          }
+        ]
+      }
+    ]
+  }
+}

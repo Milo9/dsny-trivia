@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 227,
+  "hash": "7ca9856723f810cae615b1c006fb3e20cec5030bf5bda407e1d90f8dedd0cd0e",
+  "questionSnapshot": {
+    "id": 227,
+    "question": "In Lilo & Stitch, what U.S. state does Lilo live in?",
+    "answers": [
+      "Hawaii",
+      "California",
+      "Florida",
+      "Oregon"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Distinguished story setting from Florida animation production and California studio offices. The synopsis expressly places the girl in Hawaii; no other listed state fits.",
+  "verification": {
+    "context": "In Lilo & Stitch, what U.S. state does Lilo live in?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Synopsis places Lilo on Hawaiian Islands.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/lilo-stitch-film/",
+          "locator": "Opening locates Lilo on the Hawaiian Islands; release paragraph establishes 2002 animation, not studio production location in Florida."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Distinguished story setting from Florida animation production and California studio offices. The synopsis expressly places the girl in Hawaii; no other listed state fits."
+    },
+    "options": [
+      {
+        "answer": "Hawaii",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Synopsis places Lilo on Hawaiian Islands.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/lilo-stitch-film/",
+            "locator": "Opening locates Lilo on the Hawaiian Islands; release paragraph establishes 2002 animation, not studio production location in Florida."
+          }
+        ]
+      },
+      {
+        "answer": "California",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different US state from the stated home setting.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/lilo-stitch-film/",
+            "locator": "Opening locates Lilo on the Hawaiian Islands; release paragraph establishes 2002 animation, not studio production location in Florida."
+          }
+        ]
+      },
+      {
+        "answer": "Florida",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "The studio’s Florida production location is not Lilo’s home.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/lilo-stitch-film/",
+            "locator": "Opening locates Lilo on the Hawaiian Islands; release paragraph establishes 2002 animation, not studio production location in Florida."
+          }
+        ]
+      },
+      {
+        "answer": "Oregon",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different US state from the stated home setting.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/lilo-stitch-film/",
+            "locator": "Opening locates Lilo on the Hawaiian Islands; release paragraph establishes 2002 animation, not studio production location in Florida."
+          }
+        ]
+      }
+    ]
+  }
+}

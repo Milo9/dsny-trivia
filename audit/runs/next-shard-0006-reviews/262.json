@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 262,
+  "hash": "412d8b7cefca7967e19779badac05635bf925817250d67df415bad82fd11fe04",
+  "questionSnapshot": {
+    "id": 262,
+    "question": "In The Nightmare Before Christmas, what is the name of Jack Skellington's ragdoll love interest?",
+    "answers": [
+      "Sally",
+      "Shock",
+      "Oogie",
+      "Lock"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Cross-checked explicit roles instead of merely assuming female name Sally. Jack rescue and romance distinguish Oogie/Lock/Shock. q239 asks ghost dog Zero, not this relationship.",
+  "verification": {
+    "context": "In The Nightmare Before Christmas, what is the name of Jack Skellington's ragdoll love interest?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Sally is the ragdoll loved by Jack.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/nightmare-before-christmas-the-film/",
+          "locator": "Synopsis identifies Sally as ragdoll loved by Jack; separates Lock/Shock/Barrel and antagonist Oogie Boogie."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Cross-checked explicit roles instead of merely assuming female name Sally. Jack rescue and romance distinguish Oogie/Lock/Shock. q239 asks ghost dog Zero, not this relationship."
+    },
+    "options": [
+      {
+        "answer": "Sally",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Sally is the ragdoll loved by Jack.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/nightmare-before-christmas-the-film/",
+            "locator": "Synopsis identifies Sally as ragdoll loved by Jack; separates Lock/Shock/Barrel and antagonist Oogie Boogie."
+          }
+        ]
+      },
+      {
+        "answer": "Shock",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Shock is a trick-or-treater, not the ragdoll love interest.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/nightmare-before-christmas-the-film/",
+            "locator": "Synopsis identifies Sally as ragdoll loved by Jack; separates Lock/Shock/Barrel and antagonist Oogie Boogie."
+          }
+        ]
+      },
+      {
+        "answer": "Oogie",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Oogie is the antagonist from whom Jack rescues Sally.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/nightmare-before-christmas-the-film/",
+            "locator": "Synopsis identifies Sally as ragdoll loved by Jack; separates Lock/Shock/Barrel and antagonist Oogie Boogie."
+          }
+        ]
+      },
+      {
+        "answer": "Lock",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Lock is a trick-or-treater, not the ragdoll love interest.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/nightmare-before-christmas-the-film/",
+            "locator": "Synopsis identifies Sally as ragdoll loved by Jack; separates Lock/Shock/Barrel and antagonist Oogie Boogie."
+          }
+        ]
+      }
+    ]
+  }
+}

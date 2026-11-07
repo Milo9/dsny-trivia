@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 304,
+  "hash": "055c983c4d71f7ffe5ffa4af6bed4b382f8c232aa6bedfdc8e12e33bee3aa0f6",
+  "questionSnapshot": {
+    "id": 304,
+    "question": "In Brave (2012), what are the names of Merida's triplet younger brothers?",
+    "answers": [
+      "Harris, Hubert, and Hamish",
+      "Harris, Fergus, and Hamish",
+      "Hubert, Angus, and Hamish",
+      "Harris, Hubert, and Dingwall"
+    ],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Challenged the overlapping name sets individually: retaining two correct names does not make a three-name answer correct. The complete official sibling list excludes every substituted name. Main theatrical film and character category fit; this is name recall, not clan competition in 555. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+  "verification": {
+    "context": "In Brave (2012), what are the names of Merida's triplet younger brothers? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The complete triplet list is Harris, Hubert and Hamish. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+      "sources": [
+        {
+          "url": "https://www.pixar.com/brave",
+          "locator": "The Characters: Triplets; Merida; King Fergus; Angus and the clan lords"
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged the overlapping name sets individually: retaining two correct names does not make a three-name answer correct. The complete official sibling list excludes every substituted name. Main theatrical film and character category fit; this is name recall, not clan competition in 555."
+    },
+    "options": [
+      {
+        "answer": "Harris, Hubert, and Hamish",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The complete triplet list is Harris, Hubert and Hamish.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/brave",
+            "locator": "The Characters: Triplets; Merida; King Fergus; Angus and the clan lords"
+          }
+        ]
+      },
+      {
+        "answer": "Harris, Fergus, and Hamish",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Fergus replaces Hubert; Fergus is their father, not one of the triplets.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/brave",
+            "locator": "The Characters: Triplets; Merida; King Fergus; Angus and the clan lords"
+          }
+        ]
+      },
+      {
+        "answer": "Hubert, Angus, and Hamish",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Angus replaces Harris; Angus is Merida horse, not a brother.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/brave",
+            "locator": "The Characters: Triplets; Merida; King Fergus; Angus and the clan lords"
+          }
+        ]
+      },
+      {
+        "answer": "Harris, Hubert, and Dingwall",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Dingwall replaces Hamish and is not in the exhaustive triplet list.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/brave",
+            "locator": "The Characters: Triplets; Merida; King Fergus; Angus and the clan lords"
+          }
+        ]
+      }
+    ]
+  }
+}

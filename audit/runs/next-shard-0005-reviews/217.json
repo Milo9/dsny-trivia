@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 217,
+  "hash": "dd550eb9ffac1d1bf6f75fc29e6883ac21df0a222b12c69bcbf855eacf6f99d6",
+  "questionSnapshot": {
+    "id": 217,
+    "question": "What is the name of the main character in The Hunchback of Notre Dame?",
+    "answers": [
+      "Quasimodo",
+      "Frollo",
+      "Phoebus",
+      "Clopin"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Challenged multiple important leads: this is protagonist identity, not narrator or composer. Quasimodo’s cathedral home and Menken’s score are separate facts in the comparison questions.",
+  "verification": {
+    "context": "What is the name of the main character in The Hunchback of Notre Dame?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The synopsis centers on Quasimodo’s story.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/hunchback-of-notre-dame-the-film/",
+          "locator": "Opening centers on Quasimodo and distinguishes surrogate father Frollo and guard captain Phoebus; cast separately identifies Clopin."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged multiple important leads: this is protagonist identity, not narrator or composer. Quasimodo’s cathedral home and Menken’s score are separate facts in the comparison questions."
+    },
+    "options": [
+      {
+        "answer": "Quasimodo",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The synopsis centers on Quasimodo’s story.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/hunchback-of-notre-dame-the-film/",
+            "locator": "Opening centers on Quasimodo and distinguishes surrogate father Frollo and guard captain Phoebus; cast separately identifies Clopin."
+          }
+        ]
+      },
+      {
+        "answer": "Frollo",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Frollo is the antagonist/surrogate father, not the protagonist.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/hunchback-of-notre-dame-the-film/",
+            "locator": "Opening centers on Quasimodo and distinguishes surrogate father Frollo and guard captain Phoebus; cast separately identifies Clopin."
+          }
+        ]
+      },
+      {
+        "answer": "Phoebus",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Phoebus is the guard captain and supporting lead.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/hunchback-of-notre-dame-the-film/",
+            "locator": "Opening centers on Quasimodo and distinguishes surrogate father Frollo and guard captain Phoebus; cast separately identifies Clopin."
+          }
+        ]
+      },
+      {
+        "answer": "Clopin",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Clopin is a separate supporting cast member.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/hunchback-of-notre-dame-the-film/",
+            "locator": "Opening centers on Quasimodo and distinguishes surrogate father Frollo and guard captain Phoebus; cast separately identifies Clopin."
+          }
+        ]
+      }
+    ]
+  }
+}

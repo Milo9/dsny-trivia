@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 306,
+  "hash": "e49294ea738f8dc8c493b0447f2471ca338aff71055ec78ef0dee8193e1d50ed",
+  "questionSnapshot": {
+    "id": 306,
+    "question": "In Finding Nemo, what is the name of the great white shark who is trying to give up eating fish?",
+    "answers": [
+      "Bruce",
+      "Anchor",
+      "Chum",
+      "Jaws"
+    ],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Specifically challenged Anchor and Chum: all three give up fish, so the great-white qualification is essential. Pixar identifies Bruce species; secondary cast detail corroborates the other two. Jaws is plausible shark association, not this character. Distinct from Anchor species question 2317. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+  "verification": {
+    "context": "In Finding Nemo, what is the name of the great white shark who is trying to give up eating fish? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Pixar identifies Bruce as the great white and describes the fish-abstaining shark group. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+      "sources": [
+        {
+          "url": "https://www.pixar.com/finding-nemo",
+          "locator": "The Characters: Sharks (Bruce, Anchor and Chum; fish-eaters group); The Sunken Ship production section explicitly identifies Bruce as the great white"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Finding_Nemo",
+          "locator": "Voice cast: Barry Humphries/Bruce great white; Eric Bana/Anchor hammerhead; Bruce Spence/Chum mako"
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Specifically challenged Anchor and Chum: all three give up fish, so the great-white qualification is essential. Pixar identifies Bruce species; secondary cast detail corroborates the other two. Jaws is plausible shark association, not this character. Distinct from Anchor species question 2317."
+    },
+    "options": [
+      {
+        "answer": "Bruce",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Pixar identifies Bruce as the great white and describes the fish-abstaining shark group.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/finding-nemo",
+            "locator": "The Characters: Sharks (Bruce, Anchor and Chum; fish-eaters group); The Sunken Ship production section explicitly identifies Bruce as the great white"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Finding_Nemo",
+            "locator": "Voice cast: Barry Humphries/Bruce great white; Eric Bana/Anchor hammerhead; Bruce Spence/Chum mako"
+          }
+        ]
+      },
+      {
+        "answer": "Anchor",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Anchor is a hammerhead, so the shared fish-abstaining goal does not make him the great white.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/finding-nemo",
+            "locator": "The Characters: Sharks (Bruce, Anchor and Chum; fish-eaters group); The Sunken Ship production section explicitly identifies Bruce as the great white"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Finding_Nemo",
+            "locator": "Voice cast: Barry Humphries/Bruce great white; Eric Bana/Anchor hammerhead; Bruce Spence/Chum mako"
+          }
+        ]
+      },
+      {
+        "answer": "Chum",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Chum is a mako, not the great white specified in the stem.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/finding-nemo",
+            "locator": "The Characters: Sharks (Bruce, Anchor and Chum; fish-eaters group); The Sunken Ship production section explicitly identifies Bruce as the great white"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Finding_Nemo",
+            "locator": "Voice cast: Barry Humphries/Bruce great white; Eric Bana/Anchor hammerhead; Bruce Spence/Chum mako"
+          }
+        ]
+      },
+      {
+        "answer": "Jaws",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "The film group is Bruce, Anchor and Chum; Jaws is not a member or the named Nemo great white.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/finding-nemo",
+            "locator": "The Characters: Sharks (Bruce, Anchor and Chum; fish-eaters group); The Sunken Ship production section explicitly identifies Bruce as the great white"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Finding_Nemo",
+            "locator": "Voice cast: Barry Humphries/Bruce great white; Eric Bana/Anchor hammerhead; Bruce Spence/Chum mako"
+          }
+        ]
+      }
+    ]
+  }
+}

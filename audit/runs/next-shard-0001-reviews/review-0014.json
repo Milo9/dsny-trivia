@@ -1,0 +1,84 @@
+{
+  "questionId": 14,
+  "hash": "06fc319a03297c90e7c4e096a93720c7fe7e810559704077dd5ec6faf43ad351",
+  "questionSnapshot": {
+    "id": 14,
+    "question": "Who is Elsa's younger sister in Frozen?",
+    "answers": [
+      "Anna",
+      "Merida",
+      "Moana",
+      "Tiana"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Four Disney heroines. Easy. #1587 asks Anna's later coronation in Frozen 2; that event is independent of being Elsa's sister.",
+  "verification": {
+    "context": "Frozen, original 2013 film, Elsa's sister.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Anna",
+        "verdict": "correct",
+        "reason": "Anna is Elsa's younger sister; the opening nursery scene explicitly introduces her as the little sister.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/frozen",
+            "locator": "Opening synopsis: Anna seeks her sister Elsa, whose ice powers have frozen Arendelle; confirms named kingdom."
+          },
+          {
+            "url": "https://noamkroll.com/wp-content/uploads/2013/11/frozen-screenplay.pdf",
+            "locator": "Jennifer Lee, Frozen Final Shooting Draft, 23 September 2013, printed page 2: nursery scene introduces Elsa and her little sister Anna. Primary screenplay on third-party host, corroborated by Disney's character synopsis."
+          }
+        ]
+      },
+      {
+        "answer": "Merida",
+        "verdict": "incorrect",
+        "reason": "Merida belongs to Brave's Scottish royal family, not Elsa's family.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/brave",
+            "locator": "Merida profile: Scottish princess and archer rides her horse Angus; the story and Queen Elinor profiles establish her film and family."
+          }
+        ]
+      },
+      {
+        "answer": "Moana",
+        "verdict": "incorrect",
+        "reason": "Moana is the Oceania heroine who travels with Maui, not Elsa's sister.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/moana",
+            "locator": "2016 film synopsis: Moana voyages with demigod Maui; this is a different heroine and film from Frozen."
+          }
+        ]
+      },
+      {
+        "answer": "Tiana",
+        "verdict": "incorrect",
+        "reason": "Tiana is the New Orleans heroine in The Princess and the Frog.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-princess-and-the-frog",
+            "locator": "The Characters: Tiana seeks a New Orleans restaurant; Doctor Facilier makes harmful magical deals with a living shadow; Ray is the friendly firefly. Gallery A Voodoo Man: Facilier entices Naveen and Lawrence."
+          }
+        ]
+      }
+    ]
+  }
+}

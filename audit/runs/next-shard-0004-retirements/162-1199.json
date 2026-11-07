@@ -1,0 +1,30 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "retired": {
+    "id": 162,
+    "question": "Which Disney animated film was the first to win the Academy Award for Best Original Score?",
+    "answers": [
+      "Pinocchio",
+      "Snow White and the Seven Dwarfs",
+      "Fantasia",
+      "The Little Mermaid"
+    ],
+    "difficulty": "hard",
+    "category": "music"
+  },
+  "retained": {
+    "id": 1199,
+    "question": "Which 1940 Disney feature won competitive Oscars for both song and score?",
+    "answers": [
+      "Pinocchio",
+      "Fantasia",
+      "Dumbo",
+      "Bambi"
+    ],
+    "difficulty": "hard",
+    "category": "walt"
+  },
+  "rationale": "The retained question identifies Pinocchio and its competitive song-and-score wins together. It subsumes the score winner recall; keep the richer paired-award question rather than another Pinocchio award identification.",
+  "scope": "Retire only the planned ID. Retained questions are duplicate context and receive no new factual approval here."
+}

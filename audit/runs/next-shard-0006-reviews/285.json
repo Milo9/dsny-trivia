@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 285,
+  "hash": "ae22af77de8d4cd151c33029d6aa7e1736128692ea9d9cebb43162b72ebada4d",
+  "questionSnapshot": {
+    "id": 285,
+    "question": "In Peter Pan (1953), what is the name of Peter's fairy companion?",
+    "answers": [
+      "Tinker Bell",
+      "Pixie",
+      "Glitter",
+      "Fairy Dust"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Specify 1953, ask proper name rather than kind. Pixie describes her but cannot replace the established name. Dress-color q54 asks separate visual information; no TV-only plot needed.",
+  "verification": {
+    "context": "In Peter Pan (1953), what is the name of Peter's fairy companion?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The fairy companion is Tinker Bell.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/tinker-bell/",
+          "locator": "Character entry: pixie protecting Peter Pan, two-word name Tinker Bell; film usage Miss Bell."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Specify 1953, ask proper name rather than kind. Pixie describes her but cannot replace the established name. Dress-color q54 asks separate visual information; no TV-only plot needed."
+    },
+    "options": [
+      {
+        "answer": "Tinker Bell",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The fairy companion is Tinker Bell.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/tinker-bell/",
+            "locator": "Character entry: pixie protecting Peter Pan, two-word name Tinker Bell; film usage Miss Bell."
+          }
+        ]
+      },
+      {
+        "answer": "Pixie",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Pixie is a creature label, not her proper name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/tinker-bell/",
+            "locator": "Character entry: pixie protecting Peter Pan, two-word name Tinker Bell; film usage Miss Bell."
+          }
+        ]
+      },
+      {
+        "answer": "Glitter",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Glitter is not the identified name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/tinker-bell/",
+            "locator": "Character entry: pixie protecting Peter Pan, two-word name Tinker Bell; film usage Miss Bell."
+          }
+        ]
+      },
+      {
+        "answer": "Fairy Dust",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Fairy Dust is magical material, not her identity.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/tinker-bell/",
+            "locator": "Character entry: pixie protecting Peter Pan, two-word name Tinker Bell; film usage Miss Bell."
+          }
+        ]
+      }
+    ]
+  }
+}

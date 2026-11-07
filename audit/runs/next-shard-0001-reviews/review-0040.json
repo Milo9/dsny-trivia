@@ -1,0 +1,96 @@
+{
+  "questionId": 40,
+  "hash": "9a5132bbcce5e527fec764e30ec24db9af0c108fa6e6ccbef3dea043e6d0b73d",
+  "questionSnapshot": {
+    "id": 40,
+    "question": "In Lilo & Stitch, what is Stitch's experiment number?",
+    "answers": [
+      "626",
+      "428",
+      "726",
+      "001"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Four three-digit identifiers with no numerical pattern clue. Medium recall. #587 creator identity and #2615 Elvis music are distinct; no other original-film digest repeats the numeric designation. Exact number independently corroborated.",
+  "verification": {
+    "context": "Lilo & Stitch, original 2002 Disney animated film, Stitch's experiment designation.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "626",
+        "verdict": "correct",
+        "reason": "Stitch is explicitly Experiment 626.",
+        "sources": [
+          {
+            "url": "https://d23.com/d23-event-recaps/d23-members-celebrate-20-years-of-lilo-stitch-with-an-outdoor-extravaganza/",
+            "locator": "Opening paragraph identifies the original 2002 film's alien as experiment 626; June 26 anniversary event provides independent numeric corroboration."
+          },
+          {
+            "url": "https://d23.com/a-to-z/stitch-2/",
+            "locator": "Stitch! The Movie entry opening: explicitly identifies Stitch as Experiment 626, before describing the other 625 experiments. Used only as corroboration of the original character's number."
+          }
+        ]
+      },
+      {
+        "answer": "428",
+        "verdict": "incorrect",
+        "reason": "428 differs from Stitch's documented designation 626.",
+        "sources": [
+          {
+            "url": "https://d23.com/d23-event-recaps/d23-members-celebrate-20-years-of-lilo-stitch-with-an-outdoor-extravaganza/",
+            "locator": "Opening paragraph identifies the original 2002 film's alien as experiment 626; June 26 anniversary event provides independent numeric corroboration."
+          },
+          {
+            "url": "https://d23.com/a-to-z/stitch-2/",
+            "locator": "Stitch! The Movie entry opening: explicitly identifies Stitch as Experiment 626, before describing the other 625 experiments. Used only as corroboration of the original character's number."
+          }
+        ]
+      },
+      {
+        "answer": "726",
+        "verdict": "incorrect",
+        "reason": "726 changes the first digit of the documented 626 designation.",
+        "sources": [
+          {
+            "url": "https://d23.com/d23-event-recaps/d23-members-celebrate-20-years-of-lilo-stitch-with-an-outdoor-extravaganza/",
+            "locator": "Opening paragraph identifies the original 2002 film's alien as experiment 626; June 26 anniversary event provides independent numeric corroboration."
+          },
+          {
+            "url": "https://d23.com/a-to-z/stitch-2/",
+            "locator": "Stitch! The Movie entry opening: explicitly identifies Stitch as Experiment 626, before describing the other 625 experiments. Used only as corroboration of the original character's number."
+          }
+        ]
+      },
+      {
+        "answer": "001",
+        "verdict": "incorrect",
+        "reason": "001 is a different numeric identifier from the documented 626.",
+        "sources": [
+          {
+            "url": "https://d23.com/d23-event-recaps/d23-members-celebrate-20-years-of-lilo-stitch-with-an-outdoor-extravaganza/",
+            "locator": "Opening paragraph identifies the original 2002 film's alien as experiment 626; June 26 anniversary event provides independent numeric corroboration."
+          },
+          {
+            "url": "https://d23.com/a-to-z/stitch-2/",
+            "locator": "Stitch! The Movie entry opening: explicitly identifies Stitch as Experiment 626, before describing the other 625 experiments. Used only as corroboration of the original character's number."
+          }
+        ]
+      }
+    ]
+  }
+}

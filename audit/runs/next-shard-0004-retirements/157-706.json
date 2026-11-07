@@ -1,0 +1,30 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "retired": {
+    "id": 157,
+    "question": "What Disney movie features the song 'Colors of the Wind'?",
+    "answers": [
+      "Pocahontas",
+      "Moana",
+      "Brave",
+      "Mulan"
+    ],
+    "difficulty": "easy",
+    "category": "music"
+  },
+  "retained": {
+    "id": 706,
+    "question": "What is the title of the main song from Pocahontas about nature and the environment?",
+    "answers": [
+      "Colors of the Wind",
+      "Just Around the Riverbend",
+      "Savages",
+      "Listen with Your Heart"
+    ],
+    "difficulty": "medium",
+    "category": "music"
+  },
+  "rationale": "Same Colors of the Wind / Pocahontas association in reverse; keep the version adding the nature-song context.",
+  "scope": "Retire only the planned ID. Retained questions are duplicate context and receive no new factual approval here."
+}

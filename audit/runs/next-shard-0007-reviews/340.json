@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 340,
+  "hash": "572f26a732355371e2026b3a603c0a1cc38b2f32535050a8d22e8cc0e460afe9",
+  "questionSnapshot": {
+    "id": 340,
+    "question": "What is the name of the pineapple soft-serve treat introduced at Magic Kingdom's Aloha Isle in 1984?",
+    "answers": [
+      "Dole Whip",
+      "Citrus Swirl",
+      "Mickey Bar",
+      "Tropical Float"
+    ],
+    "difficulty": "easy",
+    "category": "parks"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Removed the dairy-implying ice cream label and vague beloved wording. Final stem binds the product to a historical venue/year; the source names that product directly. A float may contain the product but is not its name. Castaway Cay availability in 739 is separate from this Aloha Isle introduction and pineapple identity. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+  "verification": {
+    "context": "What is the name of the pineapple soft-serve treat introduced at Magic Kingdom's Aloha Isle in 1984? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The primary history identifies DOLE Whip, originally DOLE Pineapple Whip, with the 1984 Aloha Isle introduction. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+      "sources": [
+        {
+          "url": "https://disneyparksblog.com/disney-experiences/disney-eats-new-dole-whip-day-wallpapers-2024/",
+          "locator": "History bullet list: original DOLE Pineapple Whip name and introduction at Aloha Isle in 1984"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Dole_Whip",
+          "locator": "History: Dole spokesperson explanation and Magic Kingdom debut in 1984, Disneyland in 1986"
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Removed the dairy-implying ice cream label and vague beloved wording. Final stem binds the product to a historical venue/year; the source names that product directly. A float may contain the product but is not its name. Castaway Cay availability in 739 is separate from this Aloha Isle introduction and pineapple identity."
+    },
+    "options": [
+      {
+        "answer": "Dole Whip",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The primary history identifies DOLE Whip, originally DOLE Pineapple Whip, with the 1984 Aloha Isle introduction.",
+        "sources": [
+          {
+            "url": "https://disneyparksblog.com/disney-experiences/disney-eats-new-dole-whip-day-wallpapers-2024/",
+            "locator": "History bullet list: original DOLE Pineapple Whip name and introduction at Aloha Isle in 1984"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Dole_Whip",
+            "locator": "History: Dole spokesperson explanation and Magic Kingdom debut in 1984, Disneyland in 1986"
+          }
+        ]
+      },
+      {
+        "answer": "Citrus Swirl",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Citrus Swirl is not the named product in that documented introduction.",
+        "sources": [
+          {
+            "url": "https://disneyparksblog.com/disney-experiences/disney-eats-new-dole-whip-day-wallpapers-2024/",
+            "locator": "History bullet list: original DOLE Pineapple Whip name and introduction at Aloha Isle in 1984"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Dole_Whip",
+            "locator": "History: Dole spokesperson explanation and Magic Kingdom debut in 1984, Disneyland in 1986"
+          }
+        ]
+      },
+      {
+        "answer": "Mickey Bar",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Mickey Bar is not the pineapple soft-serve identified in the 1984 entry.",
+        "sources": [
+          {
+            "url": "https://disneyparksblog.com/disney-experiences/disney-eats-new-dole-whip-day-wallpapers-2024/",
+            "locator": "History bullet list: original DOLE Pineapple Whip name and introduction at Aloha Isle in 1984"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Dole_Whip",
+            "locator": "History: Dole spokesperson explanation and Magic Kingdom debut in 1984, Disneyland in 1986"
+          }
+        ]
+      },
+      {
+        "answer": "Tropical Float",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Tropical Float is not the documented product name; a serving format is not the brand introduced.",
+        "sources": [
+          {
+            "url": "https://disneyparksblog.com/disney-experiences/disney-eats-new-dole-whip-day-wallpapers-2024/",
+            "locator": "History bullet list: original DOLE Pineapple Whip name and introduction at Aloha Isle in 1984"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Dole_Whip",
+            "locator": "History: Dole spokesperson explanation and Magic Kingdom debut in 1984, Disneyland in 1986"
+          }
+        ]
+      }
+    ]
+  }
+}

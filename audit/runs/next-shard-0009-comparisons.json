@@ -1,0 +1,456 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "comparisons": [
+    {
+      "retiredId": 437,
+      "replacementId": 2283,
+      "question": {
+        "id": 437,
+        "question": "In which Disney film does 'You've Got a Friend in Me' appear?",
+        "answers": [
+          "Toy Story",
+          "Monsters, Inc.",
+          "Cars",
+          "The Incredibles"
+        ],
+        "difficulty": "easy",
+        "category": "music"
+      },
+      "replacement": {
+        "id": 2283,
+        "question": "Which singer-songwriter composed the score and recorded 'You've Got a Friend in Me' for Toy Story, going on to score Monsters, Inc. and Cars as well?",
+        "answers": [
+          "Randy Newman",
+          "Thomas Newman",
+          "Alan Menken",
+          "Michael Giacchino"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      },
+      "reason": "Both expose the You've Got a Friend in Me–Toy Story association; retain the composer/score-career question with additional production context.",
+      "challenge": "Read both complete questions and all eight options. The retained wording already exposes the association needed to answer the removed question; no distinct fact is lost."
+    },
+    {
+      "retiredId": 439,
+      "replacementId": 792,
+      "question": {
+        "id": 439,
+        "question": "In which Disney film does 'I Just Can't Wait to Be King' appear?",
+        "answers": [
+          "The Lion King",
+          "The Jungle Book",
+          "Hercules",
+          "Mulan"
+        ],
+        "difficulty": "easy",
+        "category": "music"
+      },
+      "replacement": {
+        "id": 792,
+        "question": "What is the name of Simba's boastful musical number, in which he romps across the Pride Lands ignoring Zazu's warnings?",
+        "answers": [
+          "I Just Can't Wait to Be King",
+          "Hakuna Matata",
+          "Circle of Life",
+          "Be Prepared"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      },
+      "reason": "Same I Just Can't Wait to Be King–Lion King association in reverse; retain the specific Simba/Zazu musical-number question.",
+      "challenge": "Read both complete questions and all eight options. The retained wording already exposes the association needed to answer the removed question; no distinct fact is lost."
+    },
+    {
+      "retiredId": 440,
+      "replacementId": 1390,
+      "question": {
+        "id": 440,
+        "question": "In which Disney film does 'Someday My Prince Will Come' appear?",
+        "answers": [
+          "Snow White and the Seven Dwarfs",
+          "Cinderella",
+          "Sleeping Beauty",
+          "The Little Mermaid"
+        ],
+        "difficulty": "easy",
+        "category": "music"
+      },
+      "replacement": {
+        "id": 1390,
+        "question": "Which Disney princess sings 'Some Day My Prince Will Come,' a waltz that became one of the most covered songs from any Disney film?",
+        "answers": [
+          "Snow White",
+          "Cinderella",
+          "Aurora",
+          "Belle"
+        ],
+        "difficulty": "easy",
+        "category": "music"
+      },
+      "reason": "Same Some Day My Prince Will Come–Snow White association; retain the character-performance question rather than the film-title version.",
+      "challenge": "Read both complete questions and all eight options. The retained wording already exposes the association needed to answer the removed question; no distinct fact is lost."
+    },
+    {
+      "retiredId": 442,
+      "replacementId": 714,
+      "question": {
+        "id": 442,
+        "question": "In which Disney film does the opening number 'Belle' appear?",
+        "answers": [
+          "Beauty and the Beast",
+          "Cinderella",
+          "Sleeping Beauty",
+          "Enchanted"
+        ],
+        "difficulty": "easy",
+        "category": "music"
+      },
+      "replacement": {
+        "id": 714,
+        "question": "What is the name of the opening number in Beauty and the Beast?",
+        "answers": [
+          "Belle",
+          "Gaston",
+          "Something There",
+          "Be Our Guest"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      },
+      "reason": "Same opening number Belle–Beauty and the Beast fact in reverse; retain the song-identification question.",
+      "challenge": "Read both complete questions and all eight options. The retained wording already exposes the association needed to answer the removed question; no distinct fact is lost."
+    },
+    {
+      "retiredId": 443,
+      "replacementId": 458,
+      "question": {
+        "id": 443,
+        "question": "In which Disney film does 'Can You Feel the Love Tonight' appear?",
+        "answers": [
+          "The Lion King",
+          "Tarzan",
+          "Hercules",
+          "Mulan"
+        ],
+        "difficulty": "easy",
+        "category": "music"
+      },
+      "replacement": {
+        "id": 458,
+        "question": "Which song from The Lion King actually won the Academy Award for Best Original Song?",
+        "answers": [
+          "Can You Feel the Love Tonight",
+          "Hakuna Matata",
+          "Circle of Life",
+          "Be Prepared"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      },
+      "reason": "The Oscar question already gives the Can You Feel the Love Tonight–Lion King association and tests the award; retain its additional award distinction.",
+      "challenge": "Read both complete questions and all eight options. The retained wording already exposes the association needed to answer the removed question; no distinct fact is lost."
+    },
+    {
+      "retiredId": 444,
+      "replacementId": 722,
+      "question": {
+        "id": 444,
+        "question": "In which Disney film does 'Almost There' appear?",
+        "answers": [
+          "The Princess and the Frog",
+          "Moana",
+          "Encanto",
+          "Frozen"
+        ],
+        "difficulty": "easy",
+        "category": "music"
+      },
+      "replacement": {
+        "id": 722,
+        "question": "What is the main song from The Princess and the Frog that Tiana sings about her dreams?",
+        "answers": [
+          "Almost There",
+          "Down in New Orleans",
+          "Friends on the Other Side",
+          "Dig a Little Deeper"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      },
+      "reason": "Same Almost There–Princess and the Frog association in reverse; retain the question locating Tiana's dream song.",
+      "challenge": "Read both complete questions and all eight options. The retained wording already exposes the association needed to answer the removed question; no distinct fact is lost."
+    },
+    {
+      "retiredId": 445,
+      "replacementId": 711,
+      "question": {
+        "id": 445,
+        "question": "In which Disney film does 'Go the Distance' appear?",
+        "answers": [
+          "Hercules",
+          "Mulan",
+          "Pocahontas",
+          "Moana"
+        ],
+        "difficulty": "easy",
+        "category": "music"
+      },
+      "replacement": {
+        "id": 711,
+        "question": "What is the name of the song Hercules sings about his desire to find where he belongs?",
+        "answers": [
+          "Go the Distance",
+          "Zero to Hero",
+          "I Won't Say (I'm in Love)",
+          "A Star Is Born"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      },
+      "reason": "Same Go the Distance–Hercules association in reverse; retain the question describing Hercules's yearning.",
+      "challenge": "Read both complete questions and all eight options. The retained wording already exposes the association needed to answer the removed question; no distinct fact is lost."
+    },
+    {
+      "retiredId": 449,
+      "replacementId": 723,
+      "question": {
+        "id": 449,
+        "question": "In which Disney film does 'Zero to Hero' appear?",
+        "answers": [
+          "Hercules",
+          "Mulan",
+          "The Lion King",
+          "Tarzan"
+        ],
+        "difficulty": "easy",
+        "category": "music"
+      },
+      "replacement": {
+        "id": 723,
+        "question": "What Muses song in Hercules chronicles Hercules's rise to fame?",
+        "answers": [
+          "Zero to Hero",
+          "Go the Distance",
+          "I Won't Say (I'm in Love)",
+          "A Star Is Born"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      },
+      "reason": "Same Zero to Hero–Hercules association in reverse; retain the Muses/rise-to-fame question.",
+      "challenge": "Read both complete questions and all eight options. The retained wording already exposes the association needed to answer the removed question; no distinct fact is lost."
+    },
+    {
+      "retiredId": 452,
+      "replacementId": 791,
+      "question": {
+        "id": 452,
+        "question": "Who wrote and performed the entire musical soundtrack for Tarzan (1999)?",
+        "answers": [
+          "Phil Collins",
+          "Elton John",
+          "Michael Bolton",
+          "Sting"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      },
+      "replacement": {
+        "id": 791,
+        "question": "Who wrote and performed all five original songs for Disney's Tarzan (1999), while composer Mark Mancina handled the orchestral score?",
+        "answers": [
+          "Phil Collins",
+          "Alan Menken",
+          "Hans Zimmer",
+          "Elton John"
+        ],
+        "difficulty": "hard",
+        "category": "music"
+      },
+      "reason": "Same Phil Collins–Tarzan song attribution. Original overclaims the entire soundtrack: Mark Mancina scored it and other performers also sing. Retain the question separating songs from score; its all-five performance wording should be checked when its own scope is audited.",
+      "challenge": "Read both complete questions and all eight options. The retained wording already exposes the association needed to answer the removed question; no distinct fact is lost."
+    },
+    {
+      "retiredId": 454,
+      "replacementId": 703,
+      "question": {
+        "id": 454,
+        "question": "Who wrote the music and lyrics for The Little Mermaid's songs?",
+        "answers": [
+          "Alan Menken (music) and Howard Ashman (lyrics)",
+          "Alan Menken and Tim Rice",
+          "The Sherman Brothers",
+          "Phil Collins and Tim Rice"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      },
+      "replacement": {
+        "id": 703,
+        "question": "Who wrote the lyrics for the songs in The Little Mermaid alongside composer Alan Menken?",
+        "answers": [
+          "Howard Ashman",
+          "Tim Rice",
+          "Lin-Manuel Miranda",
+          "Stephen Schwartz"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      },
+      "reason": "Question 703 supplies Alan Menken as composer and tests Howard Ashman as lyricist, covering the same pair and roles; retain its shorter parallel answers.",
+      "challenge": "Read both complete questions and all eight options. The retained wording already exposes the association needed to answer the removed question; no distinct fact is lost."
+    },
+    {
+      "retiredId": 464,
+      "replacementId": 2313,
+      "question": {
+        "id": 464,
+        "question": "In which Disney film does the notably dark villain song 'Hellfire' appear?",
+        "answers": [
+          "The Hunchback of Notre Dame",
+          "Sleeping Beauty",
+          "The Black Cauldron",
+          "Hercules"
+        ],
+        "difficulty": "hard",
+        "category": "music"
+      },
+      "replacement": {
+        "id": 2313,
+        "question": "What is the title of Frollo's dark musical confession of desire for Esmeralda, sung to the flames of his fireplace in The Hunchback of Notre Dame?",
+        "answers": [
+          "Hellfire",
+          "Heaven's Light",
+          "God Help the Outcasts",
+          "Out There"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      },
+      "reason": "Same Hellfire–Hunchback association in reverse; retain the specific Frollo/fireplace musical-number question.",
+      "challenge": "Read both complete questions and all eight options. The retained wording already exposes the association needed to answer the removed question; no distinct fact is lost."
+    },
+    {
+      "retiredId": 465,
+      "replacementId": 709,
+      "question": {
+        "id": 465,
+        "question": "Who is credited as the lyricist for 'Circle of Life' and 'Can You Feel the Love Tonight' in The Lion King?",
+        "answers": [
+          "Tim Rice",
+          "Elton John",
+          "Hans Zimmer",
+          "Howard Ashman"
+        ],
+        "difficulty": "hard",
+        "category": "music"
+      },
+      "replacement": {
+        "id": 709,
+        "question": "Who wrote the songs for The Lion King (1994) including 'Circle of Life' and 'Can You Feel the Love Tonight'?",
+        "answers": [
+          "Elton John and Tim Rice",
+          "Alan Menken and Howard Ashman",
+          "Phil Collins and Hans Zimmer",
+          "Hans Zimmer alone"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      },
+      "reason": "Same Lion King songwriting partnership: the team question covers the Elton John/Tim Rice attribution; retain the pair question rather than repeat one partner.",
+      "challenge": "Read both complete questions and all eight options. The retained wording already exposes the association needed to answer the removed question; no distinct fact is lost."
+    },
+    {
+      "retiredId": 467,
+      "replacementId": 717,
+      "question": {
+        "id": 467,
+        "question": "Which Disney animated film's song first won the Academy Award for Best Original Song?",
+        "answers": [
+          "\"When You Wish Upon a Star\" (Pinocchio, 1940)",
+          "\"Some Day My Prince Will Come\" (Snow White, 1937)",
+          "\"A Dream Is a Wish Your Heart Makes\" (Cinderella, 1950)",
+          "\"Bibbidi-Bobbidi-Boo\" (Cinderella, 1950)"
+        ],
+        "difficulty": "hard",
+        "category": "music"
+      },
+      "replacement": {
+        "id": 717,
+        "question": "What Disney song won the Academy Award for Best Original Song for the first time, from the 1940 film Pinocchio?",
+        "answers": [
+          "When You Wish Upon a Star",
+          "Give a Little Whistle",
+          "Hi-Diddle-Dee-Dee",
+          "I've Got No Strings"
+        ],
+        "difficulty": "hard",
+        "category": "music"
+      },
+      "reason": "Same first Disney Best Original Song Oscar for When You Wish Upon a Star; retain the shorter song-title question.",
+      "challenge": "Read both complete questions and all eight options. The retained wording already exposes the association needed to answer the removed question; no distinct fact is lost."
+    },
+    {
+      "retiredId": 475,
+      "replacementId": 482,
+      "question": {
+        "id": 475,
+        "question": "In Soul (2020), what is Joe Gardner's lifelong passion?",
+        "answers": [
+          "Jazz music",
+          "Basketball",
+          "Cooking",
+          "Painting"
+        ],
+        "difficulty": "easy",
+        "category": "pixar"
+      },
+      "replacement": {
+        "id": 482,
+        "question": "What is the title of the Pixar film about a jazz musician who accidentally enters the afterlife?",
+        "answers": [
+          "Soul",
+          "Coco",
+          "Inside Out",
+          "Onward"
+        ],
+        "difficulty": "easy",
+        "category": "pixar"
+      },
+      "reason": "Same Soul–jazz protagonist association in reverse; retain the film-identification question with its afterlife premise.",
+      "challenge": "Read both complete questions and all eight options. The retained wording already exposes the association needed to answer the removed question; no distinct fact is lost."
+    },
+    {
+      "retiredId": 476,
+      "replacementId": 786,
+      "question": {
+        "id": 476,
+        "question": "In Toy Story 4, what is the name of the toy made from a plastic spork?",
+        "answers": [
+          "Forky",
+          "Sporky",
+          "Spork",
+          "Combat Carl Jr."
+        ],
+        "difficulty": "easy",
+        "category": "pixar"
+      },
+      "replacement": {
+        "id": 786,
+        "question": "In Toy Story 4, what everyday utensil does Bonnie craft into a new toy on her first day of kindergarten?",
+        "answers": [
+          "A spork",
+          "A fork",
+          "A spoon",
+          "A chopstick"
+        ],
+        "difficulty": "medium",
+        "category": "pixar"
+      },
+      "reason": "Same Toy Story 4 spork-turned-toy fact in reverse; retain the question asking what utensil Bonnie crafts. Forky spelling checked against Pixar, including the resolved historical player flag.",
+      "challenge": "Read both complete questions and all eight options. The retained wording already exposes the association needed to answer the removed question; no distinct fact is lost."
+    }
+  ]
+}

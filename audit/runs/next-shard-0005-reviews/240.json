@@ -1,0 +1,141 @@
+{
+  "schema": 2,
+  "questionId": 240,
+  "hash": "9056fab97d4bcc345e54072cce50b9b120f6f184ebf4022fe637366de4e2dd1e",
+  "questionSnapshot": {
+    "id": 240,
+    "question": "In Pocahontas (1995), which human friend does Pocahontas confide in about John Smith?",
+    "answers": [
+      "Nakoma",
+      "Kocoum",
+      "Grandmother Willow",
+      "Meeko"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Original best-friend wording allowed animal-friend readings. Specified the human confidante about Smith. Licensed reader activities establish Nakoma’s secret and Kocoum’s separate discovery; Disney dialogue corroborates confidence promise. This concerns the fictional film, not historical Pocahontas.",
+  "verification": {
+    "context": "In Pocahontas (1995), which human friend does Pocahontas confide in about John Smith?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Nakoma is the human friend who knows the secret and later tells Kocoum.",
+      "sources": [
+        {
+          "url": "https://it.pearson.com/content/dam/region-core/italy/pearson-italy/pdf/Amazing%20readers/HOME%20-%20AMAZING%20READERS%20-%20book%20of%20the%20week%20-%20PDF%20-%20pocahontas.pdf",
+          "locator": "Licensed Disney reader teaching notes, page 2 characters: Nakoma best friend, Kocoum expected husband, Willow tree spirit; activities 4–5 distinguish Nakoma’s knowledge of Smith from Kocoum’s discovery/attack."
+        },
+        {
+          "url": "https://news.disney.com/pocahontas-quotes",
+          "locator": "Nakoma dialogue: confidence promise and refusal to lie again; Kocoum asks that Pocahontas be told to stop running off. Confidante and intended suitor have different roles."
+        },
+        {
+          "url": "https://d23.com/a-to-z/pocahontas-film/",
+          "locator": "Opening explicitly names Flit hummingbird and Meeko raccoon; Willow tree spirit and Kocoum warrior distinguished."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Original best-friend wording allowed animal-friend readings. Specified the human confidante about Smith. Licensed reader activities establish Nakoma’s secret and Kocoum’s separate discovery; Disney dialogue corroborates confidence promise. This concerns the fictional film, not historical Pocahontas."
+    },
+    "options": [
+      {
+        "answer": "Nakoma",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Nakoma is the human friend who knows the secret and later tells Kocoum.",
+        "sources": [
+          {
+            "url": "https://it.pearson.com/content/dam/region-core/italy/pearson-italy/pdf/Amazing%20readers/HOME%20-%20AMAZING%20READERS%20-%20book%20of%20the%20week%20-%20PDF%20-%20pocahontas.pdf",
+            "locator": "Licensed Disney reader teaching notes, page 2 characters: Nakoma best friend, Kocoum expected husband, Willow tree spirit; activities 4–5 distinguish Nakoma’s knowledge of Smith from Kocoum’s discovery/attack."
+          },
+          {
+            "url": "https://news.disney.com/pocahontas-quotes",
+            "locator": "Nakoma dialogue: confidence promise and refusal to lie again; Kocoum asks that Pocahontas be told to stop running off. Confidante and intended suitor have different roles."
+          },
+          {
+            "url": "https://d23.com/a-to-z/pocahontas-film/",
+            "locator": "Opening explicitly names Flit hummingbird and Meeko raccoon; Willow tree spirit and Kocoum warrior distinguished."
+          }
+        ]
+      },
+      {
+        "answer": "Kocoum",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Kocoum is intended suitor who discovers/attacks Smith, not the confidante in this episode.",
+        "sources": [
+          {
+            "url": "https://it.pearson.com/content/dam/region-core/italy/pearson-italy/pdf/Amazing%20readers/HOME%20-%20AMAZING%20READERS%20-%20book%20of%20the%20week%20-%20PDF%20-%20pocahontas.pdf",
+            "locator": "Licensed Disney reader teaching notes, page 2 characters: Nakoma best friend, Kocoum expected husband, Willow tree spirit; activities 4–5 distinguish Nakoma’s knowledge of Smith from Kocoum’s discovery/attack."
+          },
+          {
+            "url": "https://news.disney.com/pocahontas-quotes",
+            "locator": "Nakoma dialogue: confidence promise and refusal to lie again; Kocoum asks that Pocahontas be told to stop running off. Confidante and intended suitor have different roles."
+          },
+          {
+            "url": "https://d23.com/a-to-z/pocahontas-film/",
+            "locator": "Opening explicitly names Flit hummingbird and Meeko raccoon; Willow tree spirit and Kocoum warrior distinguished."
+          }
+        ]
+      },
+      {
+        "answer": "Grandmother Willow",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Willow is a tree spirit, not the specified human friend.",
+        "sources": [
+          {
+            "url": "https://it.pearson.com/content/dam/region-core/italy/pearson-italy/pdf/Amazing%20readers/HOME%20-%20AMAZING%20READERS%20-%20book%20of%20the%20week%20-%20PDF%20-%20pocahontas.pdf",
+            "locator": "Licensed Disney reader teaching notes, page 2 characters: Nakoma best friend, Kocoum expected husband, Willow tree spirit; activities 4–5 distinguish Nakoma’s knowledge of Smith from Kocoum’s discovery/attack."
+          },
+          {
+            "url": "https://news.disney.com/pocahontas-quotes",
+            "locator": "Nakoma dialogue: confidence promise and refusal to lie again; Kocoum asks that Pocahontas be told to stop running off. Confidante and intended suitor have different roles."
+          },
+          {
+            "url": "https://d23.com/a-to-z/pocahontas-film/",
+            "locator": "Opening explicitly names Flit hummingbird and Meeko raccoon; Willow tree spirit and Kocoum warrior distinguished."
+          }
+        ]
+      },
+      {
+        "answer": "Meeko",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Meeko is a raccoon, not the specified human friend.",
+        "sources": [
+          {
+            "url": "https://it.pearson.com/content/dam/region-core/italy/pearson-italy/pdf/Amazing%20readers/HOME%20-%20AMAZING%20READERS%20-%20book%20of%20the%20week%20-%20PDF%20-%20pocahontas.pdf",
+            "locator": "Licensed Disney reader teaching notes, page 2 characters: Nakoma best friend, Kocoum expected husband, Willow tree spirit; activities 4–5 distinguish Nakoma’s knowledge of Smith from Kocoum’s discovery/attack."
+          },
+          {
+            "url": "https://news.disney.com/pocahontas-quotes",
+            "locator": "Nakoma dialogue: confidence promise and refusal to lie again; Kocoum asks that Pocahontas be told to stop running off. Confidante and intended suitor have different roles."
+          },
+          {
+            "url": "https://d23.com/a-to-z/pocahontas-film/",
+            "locator": "Opening explicitly names Flit hummingbird and Meeko raccoon; Willow tree spirit and Kocoum warrior distinguished."
+          }
+        ]
+      }
+    ]
+  }
+}

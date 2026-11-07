@@ -1,0 +1,80 @@
+{
+  "questionId": 7,
+  "hash": "61fff63054e703223db845cc4e955067c9d15788064790051ea50ebc9dd72fc9",
+  "questionSnapshot": {
+    "id": 7,
+    "question": "What happens to Pinocchio's nose when he tells a lie?",
+    "answers": [
+      "It grows longer",
+      "It glows red",
+      "It changes color",
+      "It shrinks"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Parallel short physical effects. Easy. No other Pinocchio digest question asks the nose/lie reaction; Jiminy's conscience and Blue Fairy identities are separate facts.",
+  "verification": {
+    "context": "Pinocchio, Disney animated 1940 film, the lie reaction rather than his eventual transformation.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "It grows longer",
+        "verdict": "correct",
+        "reason": "The documented reaction is an increase in the nose's length.",
+        "sources": [
+          {
+            "url": "https://d23.com/composer-michael-giacchino-looks-back-on-tomorrowland-10-years-later/",
+            "locator": "Visions and Flickers section, paragraph comparing the score to Pinocchio (1940): the wooden boy's nose lengthens when he lies."
+          }
+        ]
+      },
+      {
+        "answer": "It glows red",
+        "verdict": "incorrect",
+        "reason": "Red illumination is a different effect from the documented growth.",
+        "sources": [
+          {
+            "url": "https://d23.com/composer-michael-giacchino-looks-back-on-tomorrowland-10-years-later/",
+            "locator": "Visions and Flickers section, paragraph comparing the score to Pinocchio (1940): the wooden boy's nose lengthens when he lies."
+          }
+        ]
+      },
+      {
+        "answer": "It changes color",
+        "verdict": "incorrect",
+        "reason": "A change of hue is not the described consequence; the physical change is length.",
+        "sources": [
+          {
+            "url": "https://d23.com/composer-michael-giacchino-looks-back-on-tomorrowland-10-years-later/",
+            "locator": "Visions and Flickers section, paragraph comparing the score to Pinocchio (1940): the wooden boy's nose lengthens when he lies."
+          }
+        ]
+      },
+      {
+        "answer": "It shrinks",
+        "verdict": "incorrect",
+        "reason": "Shrinking reverses the direction of the stated lengthening.",
+        "sources": [
+          {
+            "url": "https://d23.com/composer-michael-giacchino-looks-back-on-tomorrowland-10-years-later/",
+            "locator": "Visions and Flickers section, paragraph comparing the score to Pinocchio (1940): the wooden boy's nose lengthens when he lies."
+          }
+        ]
+      }
+    ]
+  }
+}

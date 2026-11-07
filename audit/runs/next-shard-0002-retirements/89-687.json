@@ -1,0 +1,37 @@
+{
+  "reviewer": "Codex (OpenAI)",
+  "questions": [
+    {
+      "id": 89,
+      "question": "What year did Walt Disney World open?",
+      "answers": [
+        "1971",
+        "1955",
+        "1982",
+        "1965"
+      ],
+      "difficulty": "easy",
+      "category": "parks"
+    },
+    {
+      "id": 687,
+      "question": "On what date did Walt Disney World open?",
+      "answers": [
+        "October 1, 1971",
+        "July 17, 1971",
+        "December 25, 1971",
+        "January 1, 1972"
+      ],
+      "difficulty": "hard",
+      "category": "walt"
+    }
+  ],
+  "decision": "The retained exact opening-date answer October 1, 1971 includes the entire year fact requested here. Preserve the less specific year question as retired.",
+  "evidence": [
+    {
+      "url": "https://d23.com/a-to-z/walt-disney-world-resort/",
+      "locator": "Opening sentence: resort opened near Orlando, Florida on October 1, 1971."
+    }
+  ],
+  "replacementApproved": false
+}

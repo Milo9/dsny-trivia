@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 184,
+  "hash": "49b0656344addde46c5dbafb86ec0ce2875a918a7bc49b848d5603357f5213a3",
+  "questionSnapshot": {
+    "id": 184,
+    "question": "In The Incredibles, what is Elastigirl's real name?",
+    "answers": [
+      "Helen Parr",
+      "Sarah Parr",
+      "Karen Parr",
+      "Lisa Parr"
+    ],
+    "difficulty": "medium",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Tested the three alternative first names against Pixar’s explicit Elastigirl civilian identity; Helen is unique. Bob’s civilian identity is separate recall.",
+  "verification": {
+    "context": "In The Incredibles, what is Elastigirl's real name?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Elastigirl’s profile names Helen Parr.",
+      "sources": [
+        {
+          "url": "https://www.pixar.com/the-incredibles",
+          "locator": "Mr. Incredible and Elastigirl profiles give Bob Parr and Helen Parr; The World / Nomanisan names villain’s island, with Syndrome profile confirming island lair."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tested the three alternative first names against Pixar’s explicit Elastigirl civilian identity; Helen is unique. Bob’s civilian identity is separate recall."
+    },
+    "options": [
+      {
+        "answer": "Helen Parr",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Elastigirl’s profile names Helen Parr.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/the-incredibles",
+            "locator": "Mr. Incredible and Elastigirl profiles give Bob Parr and Helen Parr; The World / Nomanisan names villain’s island, with Syndrome profile confirming island lair."
+          }
+        ]
+      },
+      {
+        "answer": "Sarah Parr",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different first name from the explicitly identified Helen.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/the-incredibles",
+            "locator": "Mr. Incredible and Elastigirl profiles give Bob Parr and Helen Parr; The World / Nomanisan names villain’s island, with Syndrome profile confirming island lair."
+          }
+        ]
+      },
+      {
+        "answer": "Karen Parr",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different first name from the explicitly identified Helen.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/the-incredibles",
+            "locator": "Mr. Incredible and Elastigirl profiles give Bob Parr and Helen Parr; The World / Nomanisan names villain’s island, with Syndrome profile confirming island lair."
+          }
+        ]
+      },
+      {
+        "answer": "Lisa Parr",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different first name from the explicitly identified Helen.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/the-incredibles",
+            "locator": "Mr. Incredible and Elastigirl profiles give Bob Parr and Helen Parr; The World / Nomanisan names villain’s island, with Syndrome profile confirming island lair."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "retired": {
+    "id": 385,
+    "question": "What is the name of Walt Disney's wife?",
+    "answers": [
+      "Lillian Disney",
+      "Edna Disney",
+      "Mary Disney",
+      "Rose Disney"
+    ],
+    "difficulty": "easy",
+    "category": "walt"
+  },
+  "retained": {
+    "id": 1372,
+    "question": "What was the first name of Walt Disney's wife, who he married in 1925 and who remained by his side until his death?",
+    "answers": [
+      "Lillian",
+      "Ruth",
+      "Flora",
+      "Edna"
+    ],
+    "difficulty": "medium",
+    "category": "walt"
+  },
+  "additionalComparisons": [],
+  "rationale": "Both ask Walt's wife's given name; adding Disney to each answer changes no fact. Retain 1372's marriage context.",
+  "sources": [
+    {
+      "sourceNoteId": "disney-family",
+      "url": "https://d23.com/about-walt-disney/",
+      "locator": "1923 Hollywood move; 1925 marriage and daughters; 1940 Burbank paragraphs",
+      "evidence": "Walt moved to Hollywood, California, partnered with Roy O., married Lillian Bounds, and had daughters Diane and Sharon. The Burbank studio was completed in 1940.",
+      "checkedBy": "Codex",
+      "checkedAt": "2026-11-07",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "limitations": "Primary institutional text inspected; no film or video viewing claimed.",
+      "topics": [
+        "walt"
+      ]
+    }
+  ],
+  "originalOptionAssessments": [
+    {
+      "answer": "Lillian Disney",
+      "assessment": "Lillian Bounds Disney was Walt's wife."
+    },
+    {
+      "answer": "Edna Disney",
+      "assessment": "Edna is not his wife's name."
+    },
+    {
+      "answer": "Mary Disney",
+      "assessment": "Mary is not his wife's name."
+    },
+    {
+      "answer": "Rose Disney",
+      "assessment": "Rose is not his wife's name."
+    }
+  ],
+  "finalChallenge": {
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "notes": "Both ask Walt's wife's given name; adding Disney to each answer changes no fact. Retain 1372's marriage context. All four original options inspected. Retirement avoids asserting approval of a flawed premise or an insufficiently excluded alternative."
+  },
+  "scope": "Only the planned ID is retired. Counterpart comparison is not approval of its other claims."
+}

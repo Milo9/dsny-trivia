@@ -1,0 +1,37 @@
+{
+  "reviewer": "Codex (OpenAI)",
+  "questions": [
+    {
+      "id": 60,
+      "question": "What is the name of the crab who watches over Ariel in The Little Mermaid?",
+      "answers": [
+        "Sebastian",
+        "Flounder",
+        "Grimsby",
+        "Chef Louis"
+      ],
+      "difficulty": "easy",
+      "category": "characters"
+    },
+    {
+      "id": 569,
+      "question": "What type of crustacean is Sebastian in The Little Mermaid?",
+      "answers": [
+        "A crab",
+        "A lobster",
+        "A shrimp",
+        "A starfish"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    }
+  ],
+  "decision": "Both test Sebastian being the crab in The Little Mermaid, reversing name and animal. Retain the explicit crustacean question; original q60 snapshot preserves the name question.",
+  "evidence": [
+    {
+      "url": "https://d23.com/a-to-z/little-mermaid-the-film/",
+      "locator": "Opening synopsis: Sebastian the crab is sent by King Triton to watch Ariel."
+    }
+  ],
+  "replacementApproved": false
+}

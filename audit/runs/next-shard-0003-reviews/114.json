@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 114,
+  "hash": "b302fb4ba750530ac93f8019082cab93f7930baa81fb6eafcc835f2f70f44784",
+  "questionSnapshot": {
+    "id": 114,
+    "question": "Which name did the Disney resort near Paris officially adopt on October 1, 1994?",
+    "answers": [
+      "Disneyland Paris",
+      "Euro Disney",
+      "Disney France",
+      "Paris Magic Kingdom"
+    ],
+    "difficulty": "hard",
+    "category": "parks"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Final challenge checks the exact named entity/event against each listed alternative, not merely a matching answer keyword.",
+  "verification": {
+    "context": "Which name did the Disney resort near Paris officially adopt on October 1, 1994?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The official name adopted on the specified date.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/disneyland-paris/",
+          "locator": "Opening paragraph: original Euro Disney name; Disneyland Paris became official October 1, 1994."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tried each alternative against the literal final scope: Euro Disney: Original name superseded by that naming event. Disney France: Not the adopted official name. Paris Magic Kingdom: Not the adopted official name."
+    },
+    "options": [
+      {
+        "answer": "Disneyland Paris",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The official name adopted on the specified date.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/disneyland-paris/",
+            "locator": "Opening paragraph: original Euro Disney name; Disneyland Paris became official October 1, 1994."
+          }
+        ]
+      },
+      {
+        "answer": "Euro Disney",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Original name superseded by that naming event.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/disneyland-paris/",
+            "locator": "Opening paragraph: original Euro Disney name; Disneyland Paris became official October 1, 1994."
+          }
+        ]
+      },
+      {
+        "answer": "Disney France",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the adopted official name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/disneyland-paris/",
+            "locator": "Opening paragraph: original Euro Disney name; Disneyland Paris became official October 1, 1994."
+          }
+        ]
+      },
+      {
+        "answer": "Paris Magic Kingdom",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the adopted official name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/disneyland-paris/",
+            "locator": "Opening paragraph: original Euro Disney name; Disneyland Paris became official October 1, 1994."
+          }
+        ]
+      }
+    ]
+  }
+}

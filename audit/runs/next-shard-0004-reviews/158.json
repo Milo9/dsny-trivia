@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 158,
+  "hash": "9d17262d03a3ac46ebc58147f26686e09ccd1adae13184f4ff7c478c1d6acb5d",
+  "questionSnapshot": {
+    "id": 158,
+    "question": "Which film won the Best Original Song Oscar for 'Under the Sea' at the 1990 ceremony?",
+    "answers": [
+      "The Little Mermaid",
+      "Finding Nemo",
+      "Moana",
+      "The Little Mermaid II"
+    ],
+    "difficulty": "easy",
+    "category": "music"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged sequel reuse and soundtrack compilations: the final wording asks the unique 1990 Oscar-winning film, not whether a tune might be reused elsewhere. Complete Academy results identify only The Little Mermaid for this song.",
+  "verification": {
+    "context": "Which film won the Best Original Song Oscar for 'Under the Sea' at the 1990 ceremony?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The Academy identifies this film as the winner for this song.",
+      "sources": [
+        {
+          "url": "https://www.oscars.org/oscars/ceremonies/1990",
+          "locator": "1990 ceremony header (March 26); Music (Original Song), complete winner/nominee list: Under the Sea, The Little Mermaid, Menken music/Ashman lyric."
+        },
+        {
+          "url": "https://d23.com/a-to-z/little-mermaid-the-film/",
+          "locator": "Release paragraph dates animated film 1989; final paragraphs identify Under the Sea and original-score Oscars."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged sequel reuse and soundtrack compilations: the final wording asks the unique 1990 Oscar-winning film, not whether a tune might be reused elsewhere. Complete Academy results identify only The Little Mermaid for this song."
+    },
+    "options": [
+      {
+        "answer": "The Little Mermaid",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The Academy identifies this film as the winner for this song.",
+        "sources": [
+          {
+            "url": "https://www.oscars.org/oscars/ceremonies/1990",
+            "locator": "1990 ceremony header (March 26); Music (Original Song), complete winner/nominee list: Under the Sea, The Little Mermaid, Menken music/Ashman lyric."
+          },
+          {
+            "url": "https://d23.com/a-to-z/little-mermaid-the-film/",
+            "locator": "Release paragraph dates animated film 1989; final paragraphs identify Under the Sea and original-score Oscars."
+          }
+        ]
+      },
+      {
+        "answer": "Finding Nemo",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the film in the Academy’s complete 1990 song results.",
+        "sources": [
+          {
+            "url": "https://www.oscars.org/oscars/ceremonies/1990",
+            "locator": "1990 ceremony header (March 26); Music (Original Song), complete winner/nominee list: Under the Sea, The Little Mermaid, Menken music/Ashman lyric."
+          },
+          {
+            "url": "https://d23.com/a-to-z/little-mermaid-the-film/",
+            "locator": "Release paragraph dates animated film 1989; final paragraphs identify Under the Sea and original-score Oscars."
+          }
+        ]
+      },
+      {
+        "answer": "Moana",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the film in the Academy’s complete 1990 song results.",
+        "sources": [
+          {
+            "url": "https://www.oscars.org/oscars/ceremonies/1990",
+            "locator": "1990 ceremony header (March 26); Music (Original Song), complete winner/nominee list: Under the Sea, The Little Mermaid, Menken music/Ashman lyric."
+          },
+          {
+            "url": "https://d23.com/a-to-z/little-mermaid-the-film/",
+            "locator": "Release paragraph dates animated film 1989; final paragraphs identify Under the Sea and original-score Oscars."
+          }
+        ]
+      },
+      {
+        "answer": "The Little Mermaid II",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "The sequel is not the 1989 film identified in the Academy’s 1990 results.",
+        "sources": [
+          {
+            "url": "https://www.oscars.org/oscars/ceremonies/1990",
+            "locator": "1990 ceremony header (March 26); Music (Original Song), complete winner/nominee list: Under the Sea, The Little Mermaid, Menken music/Ashman lyric."
+          },
+          {
+            "url": "https://d23.com/a-to-z/little-mermaid-the-film/",
+            "locator": "Release paragraph dates animated film 1989; final paragraphs identify Under the Sea and original-score Oscars."
+          }
+        ]
+      }
+    ]
+  }
+}

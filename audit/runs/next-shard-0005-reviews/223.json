@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 223,
+  "hash": "86753e070cfe2585b56ee6ad63ccecf586101ddc334bcb89726f34857cdbe8fd",
+  "questionSnapshot": {
+    "id": 223,
+    "question": "In The Jungle Book, who is Mowgli's protective panther guardian?",
+    "answers": [
+      "Bagheera",
+      "Baloo",
+      "Shere Khan",
+      "King Louie"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Tried Baloo as a genuine protector: the panther qualifier excludes him. Shere Khan and Louie have distinct species and roles. Ranjan’s guardian in a sequel is a different episode from Mowgli’s original guardian.",
+  "verification": {
+    "context": "In The Jungle Book, who is Mowgli's protective panther guardian?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Bagheera is explicitly the panther escort/guardian.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/jungle-book-the-film/",
+          "locator": "Opening explicitly distinguishes Bagheera the panther escort, Baloo the bear, Shere Khan the tiger, and King Louie of the Apes."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tried Baloo as a genuine protector: the panther qualifier excludes him. Shere Khan and Louie have distinct species and roles. Ranjan’s guardian in a sequel is a different episode from Mowgli’s original guardian."
+    },
+    "options": [
+      {
+        "answer": "Bagheera",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Bagheera is explicitly the panther escort/guardian.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/jungle-book-the-film/",
+            "locator": "Opening explicitly distinguishes Bagheera the panther escort, Baloo the bear, Shere Khan the tiger, and King Louie of the Apes."
+          }
+        ]
+      },
+      {
+        "answer": "Baloo",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Baloo is a bear, despite also protecting Mowgli.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/jungle-book-the-film/",
+            "locator": "Opening explicitly distinguishes Bagheera the panther escort, Baloo the bear, Shere Khan the tiger, and King Louie of the Apes."
+          }
+        ]
+      },
+      {
+        "answer": "Shere Khan",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Shere Khan is the threatening tiger, not the guardian panther.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/jungle-book-the-film/",
+            "locator": "Opening explicitly distinguishes Bagheera the panther escort, Baloo the bear, Shere Khan the tiger, and King Louie of the Apes."
+          }
+        ]
+      },
+      {
+        "answer": "King Louie",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "King Louie is the ape king, not the panther.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/jungle-book-the-film/",
+            "locator": "Opening explicitly distinguishes Bagheera the panther escort, Baloo the bear, Shere Khan the tiger, and King Louie of the Apes."
+          }
+        ]
+      }
+    ]
+  }
+}

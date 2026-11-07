@@ -1,0 +1,84 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "retired": {
+    "id": 379,
+    "question": "What was the name of Walt Disney's first studio, co-founded with his brother Roy?",
+    "answers": [
+      "Disney Brothers Cartoon Studio",
+      "Walt Disney Productions",
+      "Laugh-O-Gram Films",
+      "Mickey Mouse Studios"
+    ],
+    "difficulty": "easy",
+    "category": "walt"
+  },
+  "retained": {
+    "id": 1177,
+    "question": "In what year was the Disney Brothers Cartoon Studio founded?",
+    "answers": [
+      "1923",
+      "1928",
+      "1937",
+      "1955"
+    ],
+    "difficulty": "medium",
+    "category": "walt"
+  },
+  "additionalComparisons": [],
+  "rationale": "1177 already names Disney Brothers Cartoon Studio and asks its founding year. Retire the name-only question, whose first-studio premise also conflicts with earlier Kansas City work.",
+  "sources": [
+    {
+      "sourceNoteId": "disney-company-origin",
+      "url": "https://d23.com/disney-history/",
+      "locator": "Opening 1923 paragraph and 1928 Mickey paragraphs",
+      "evidence": "Walt arrived in California in 1923; the brothers formed Disney Brothers Cartoon Studio. Steamboat Willie opened November 18, 1928, after two silent Mickey shorts.",
+      "checkedBy": "Codex",
+      "checkedAt": "2026-11-07",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "limitations": "Primary institutional text inspected; no film or video viewing claimed.",
+      "topics": [
+        "walt"
+      ]
+    },
+    {
+      "sourceNoteId": "laughogram",
+      "url": "https://d23.com/a-to-z/laugh-o-gram-films/",
+      "locator": "Complete entry",
+      "evidence": "Laugh-O-gram Films was Walt's Kansas City company making fairy-tale shorts in 1922, before the California studio.",
+      "checkedBy": "Codex",
+      "checkedAt": "2026-11-07",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "limitations": "Primary institutional text inspected; no film or video viewing claimed.",
+      "topics": [
+        "walt"
+      ]
+    }
+  ],
+  "originalOptionAssessments": [
+    {
+      "answer": "Disney Brothers Cartoon Studio",
+      "assessment": "Disney Brothers Cartoon Studio is the brothers' 1923 company, but not Walt's first studio overall."
+    },
+    {
+      "answer": "Walt Disney Productions",
+      "assessment": "Walt Disney Productions is a later company name, not the original 1923 name."
+    },
+    {
+      "answer": "Laugh-O-Gram Films",
+      "assessment": "Laugh-O-gram predates the California company, exposing the first-studio ambiguity; the with-Roy qualifier does not make first-studio generally true."
+    },
+    {
+      "answer": "Mickey Mouse Studios",
+      "assessment": "Mickey Mouse Studios is not the original company name."
+    }
+  ],
+  "finalChallenge": {
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "notes": "1177 already names Disney Brothers Cartoon Studio and asks its founding year. Retire the name-only question, whose first-studio premise also conflicts with earlier Kansas City work. All four original options inspected. Retirement avoids asserting approval of a flawed premise or an insufficiently excluded alternative."
+  },
+  "scope": "Only the planned ID is retired. Counterpart comparison is not approval of its other claims."
+}

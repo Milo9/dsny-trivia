@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 101,
+  "hash": "eead03e1b089a1323305b82118ad9425d3ac44c39a4209b1fc2e7ffa0655a534",
+  "questionSnapshot": {
+    "id": 101,
+    "question": "What does EPCOT stand for?",
+    "answers": [
+      "Experimental Prototype Community of Tomorrow",
+      "Experimental Park Community of Tomorrow",
+      "Enhanced Park for Community of Tomorrow",
+      "Expanding Park Center of Tomorrow"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Final challenge checks the exact named entity/event against each listed alternative, not merely a matching answer keyword.",
+  "verification": {
+    "context": "What does EPCOT stand for?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Exact expansion of the acronym.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/epcot/",
+          "locator": "Opening paragraph: acronym coined in 1966 and its exact expansion."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tried each alternative against the literal final scope: Experimental Park Community of Tomorrow: Park replaces Prototype and is not the expansion. Enhanced Park for Community of Tomorrow: Enhanced Park for is not the expansion. Expanding Park Center of Tomorrow: Expanding Park Center is not the expansion."
+    },
+    "options": [
+      {
+        "answer": "Experimental Prototype Community of Tomorrow",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Exact expansion of the acronym.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/epcot/",
+            "locator": "Opening paragraph: acronym coined in 1966 and its exact expansion."
+          }
+        ]
+      },
+      {
+        "answer": "Experimental Park Community of Tomorrow",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Park replaces Prototype and is not the expansion.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/epcot/",
+            "locator": "Opening paragraph: acronym coined in 1966 and its exact expansion."
+          }
+        ]
+      },
+      {
+        "answer": "Enhanced Park for Community of Tomorrow",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Enhanced Park for is not the expansion.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/epcot/",
+            "locator": "Opening paragraph: acronym coined in 1966 and its exact expansion."
+          }
+        ]
+      },
+      {
+        "answer": "Expanding Park Center of Tomorrow",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Expanding Park Center is not the expansion.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/epcot/",
+            "locator": "Opening paragraph: acronym coined in 1966 and its exact expansion."
+          }
+        ]
+      }
+    ]
+  }
+}

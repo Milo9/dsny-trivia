@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 286,
+  "hash": "adb95d907363699c0a848472fc38f721ddcfc1817d8bb11d19e5ef9bf04034bf",
+  "questionSnapshot": {
+    "id": 286,
+    "question": "In Snow White and the Seven Dwarfs (1937), which dwarf does not speak?",
+    "answers": [
+      "Dopey",
+      "Sleepy",
+      "Bashful",
+      "Grumpy"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Restricted to 1937 because remake differs. Non-verbal sounds are not speech; source explicitly identifies the silent dwarf. Do not infer silence from a dwarf name or sleepiness.",
+  "verification": {
+    "context": "In Snow White and the Seven Dwarfs (1937), which dwarf does not speak?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Disney entry identifies Dopey as not speaking.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/dopey/",
+          "locator": "Entire character entry: youngest of Seven Dwarfs, did not speak. Final wording specifically 1937 film, not live-action remake."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Restricted to 1937 because remake differs. Non-verbal sounds are not speech; source explicitly identifies the silent dwarf. Do not infer silence from a dwarf name or sleepiness."
+    },
+    "options": [
+      {
+        "answer": "Dopey",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Disney entry identifies Dopey as not speaking.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/dopey/",
+            "locator": "Entire character entry: youngest of Seven Dwarfs, did not speak. Final wording specifically 1937 film, not live-action remake."
+          }
+        ]
+      },
+      {
+        "answer": "Sleepy",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Sleepy is not the dwarf identified as non-speaking.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/dopey/",
+            "locator": "Entire character entry: youngest of Seven Dwarfs, did not speak. Final wording specifically 1937 film, not live-action remake."
+          }
+        ]
+      },
+      {
+        "answer": "Bashful",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Bashful is not the dwarf identified as non-speaking.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/dopey/",
+            "locator": "Entire character entry: youngest of Seven Dwarfs, did not speak. Final wording specifically 1937 film, not live-action remake."
+          }
+        ]
+      },
+      {
+        "answer": "Grumpy",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Grumpy is not the dwarf identified as non-speaking.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/dopey/",
+            "locator": "Entire character entry: youngest of Seven Dwarfs, did not speak. Final wording specifically 1937 film, not live-action remake."
+          }
+        ]
+      }
+    ]
+  }
+}

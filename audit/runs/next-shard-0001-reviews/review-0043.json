@@ -1,0 +1,84 @@
+{
+  "questionId": 43,
+  "hash": "aca8f5a1fb870020ace4633f76fd05d03c8e00bb8a36677d5cc3f4de2a403dcd",
+  "questionSnapshot": {
+    "id": 43,
+    "question": "What kingdom does the story of Frozen take place in?",
+    "answers": [
+      "Arendelle",
+      "Agrabah",
+      "Corona",
+      "Motunui"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Four fictional place names, medium setting recall; no morphological giveaway. #243 Hans' Southern Isles and #1538 Tangled's Corona ask different settings.",
+  "verification": {
+    "context": "Frozen, original 2013 film, the central kingdom.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Arendelle",
+        "verdict": "correct",
+        "reason": "Disney names the kingdom trapped in winter as Arendelle.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/frozen",
+            "locator": "Opening synopsis: Anna seeks her sister Elsa, whose ice powers have frozen Arendelle; confirms named kingdom."
+          }
+        ]
+      },
+      {
+        "answer": "Agrabah",
+        "verdict": "incorrect",
+        "reason": "Agrabah is Jasmine and Aladdin's city, not Frozen's kingdom.",
+        "sources": [
+          {
+            "url": "https://princess.disney.com/jasmine",
+            "locator": "Aladdin on Disney+ synopsis: Genie and three wishes; Jasmine profile names her tiger Rajah."
+          }
+        ]
+      },
+      {
+        "answer": "Corona",
+        "verdict": "incorrect",
+        "reason": "Corona is not the kingdom named in Frozen's synopsis, which is Arendelle.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/frozen",
+            "locator": "Opening synopsis: Anna seeks her sister Elsa, whose ice powers have frozen Arendelle; confirms named kingdom."
+          }
+        ]
+      },
+      {
+        "answer": "Motunui",
+        "verdict": "incorrect",
+        "reason": "Motunui belongs to Moana's setting, not the frozen kingdom named Arendelle.",
+        "sources": [
+          {
+            "url": "https://princess.disney.com/moana",
+            "locator": "Moana Photos: captions show Moana returning/restoring Te Fiti's heart with Maui; supports the relic identity alongside the creator interview."
+          },
+          {
+            "url": "https://movies.disney.com/frozen",
+            "locator": "Opening synopsis: Anna seeks her sister Elsa, whose ice powers have frozen Arendelle; confirms named kingdom."
+          }
+        ]
+      }
+    ]
+  }
+}

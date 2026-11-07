@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 105,
+  "hash": "9561e5e007198c0a60acefc61b6ac40bb11cc3bdd2b0139058db4e6219b17d5d",
+  "questionSnapshot": {
+    "id": 105,
+    "question": "What is the name of the Disney theme park located in Shanghai, China?",
+    "answers": [
+      "Shanghai Disneyland",
+      "China Disney Park",
+      "Disney Shanghai",
+      "Magic Kingdom Shanghai"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Final challenge checks the exact named entity/event against each listed alternative, not merely a matching answer keyword.",
+  "verification": {
+    "context": "What is the name of the Disney theme park located in Shanghai, China?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Official park name in Shanghai.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/shanghai-disneyland/",
+          "locator": "Opening paragraph: park name and June 16, 2016 opening."
+        },
+        {
+          "url": "https://thewaltdisneycompany.com/news/shanghai-disney-resort-opens-in-mainland-china/",
+          "locator": "June 16, 2016 publication; opening ceremony and park dedication naming Shanghai Disneyland."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tried each alternative against the literal final scope: China Disney Park: Not its official park name. Disney Shanghai: Reverses the words; not its official name. Magic Kingdom Shanghai: Magic Kingdom is not the Shanghai park's name."
+    },
+    "options": [
+      {
+        "answer": "Shanghai Disneyland",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Official park name in Shanghai.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/shanghai-disneyland/",
+            "locator": "Opening paragraph: park name and June 16, 2016 opening."
+          },
+          {
+            "url": "https://thewaltdisneycompany.com/news/shanghai-disney-resort-opens-in-mainland-china/",
+            "locator": "June 16, 2016 publication; opening ceremony and park dedication naming Shanghai Disneyland."
+          }
+        ]
+      },
+      {
+        "answer": "China Disney Park",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not its official park name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/shanghai-disneyland/",
+            "locator": "Opening paragraph: park name and June 16, 2016 opening."
+          },
+          {
+            "url": "https://thewaltdisneycompany.com/news/shanghai-disney-resort-opens-in-mainland-china/",
+            "locator": "June 16, 2016 publication; opening ceremony and park dedication naming Shanghai Disneyland."
+          }
+        ]
+      },
+      {
+        "answer": "Disney Shanghai",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Reverses the words; not its official name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/shanghai-disneyland/",
+            "locator": "Opening paragraph: park name and June 16, 2016 opening."
+          },
+          {
+            "url": "https://thewaltdisneycompany.com/news/shanghai-disney-resort-opens-in-mainland-china/",
+            "locator": "June 16, 2016 publication; opening ceremony and park dedication naming Shanghai Disneyland."
+          }
+        ]
+      },
+      {
+        "answer": "Magic Kingdom Shanghai",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Magic Kingdom is not the Shanghai park's name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/shanghai-disneyland/",
+            "locator": "Opening paragraph: park name and June 16, 2016 opening."
+          },
+          {
+            "url": "https://thewaltdisneycompany.com/news/shanghai-disney-resort-opens-in-mainland-china/",
+            "locator": "June 16, 2016 publication; opening ceremony and park dedication naming Shanghai Disneyland."
+          }
+        ]
+      }
+    ]
+  }
+}

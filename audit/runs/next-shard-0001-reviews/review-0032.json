@@ -1,0 +1,80 @@
+{
+  "questionId": 32,
+  "hash": "e8eeb717a3290859ac81cda41e85a70c2c01df6dbd7e3622a43d4a0fab8478e3",
+  "questionSnapshot": {
+    "id": 32,
+    "question": "Who is the main villain in Disney's The Hunchback of Notre Dame (1996)?",
+    "answers": [
+      "Judge Claude Frollo",
+      "Captain Phoebus",
+      "The Archdeacon",
+      "King Louis"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Explicit film context matters for Frollo's office and the separate Archdeacon. Four male authority figures, medium. #217 protagonist and #725 composer are unrelated roles.",
+  "verification": {
+    "context": "Disney animated The Hunchback of Notre Dame (1996), not the Hugo novel or another screen adaptation.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Judge Claude Frollo",
+        "verdict": "correct",
+        "reason": "Judge Claude Frollo is the evil surrogate father/Minister of Justice who persecutes the protagonists.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/hunchback-of-notre-dame-the-film/",
+            "locator": "1996 synopsis: Frollo is Quasimodo's evil surrogate father/Minister of Justice, Phoebus befriends Quasimodo; cast distinguishes the Archdeacon from Frollo."
+          }
+        ]
+      },
+      {
+        "answer": "Captain Phoebus",
+        "verdict": "incorrect",
+        "reason": "Phoebus befriends Quasimodo and is rescued with Esmeralda, opposing Frollo's hatred.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/hunchback-of-notre-dame-the-film/",
+            "locator": "1996 synopsis: Frollo is Quasimodo's evil surrogate father/Minister of Justice, Phoebus befriends Quasimodo; cast distinguishes the Archdeacon from Frollo."
+          }
+        ]
+      },
+      {
+        "answer": "The Archdeacon",
+        "verdict": "incorrect",
+        "reason": "The Archdeacon is separately credited from Frollo; the villainous office/character in this version is Frollo.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/hunchback-of-notre-dame-the-film/",
+            "locator": "1996 synopsis: Frollo is Quasimodo's evil surrogate father/Minister of Justice, Phoebus befriends Quasimodo; cast distinguishes the Archdeacon from Frollo."
+          }
+        ]
+      },
+      {
+        "answer": "King Louis",
+        "verdict": "incorrect",
+        "reason": "King Louis is not the named persecutor; the antagonist is the minister Frollo, while Phoebus serves the king's guards.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/hunchback-of-notre-dame-the-film/",
+            "locator": "1996 synopsis: Frollo is Quasimodo's evil surrogate father/Minister of Justice, Phoebus befriends Quasimodo; cast distinguishes the Archdeacon from Frollo."
+          }
+        ]
+      }
+    ]
+  }
+}

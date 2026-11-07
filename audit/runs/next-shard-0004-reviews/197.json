@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 197,
+  "hash": "544972a7ea3425f7aa8d6136334ae3a544d160f4c82ed7b469fb1ba86b07fbdc",
+  "questionSnapshot": {
+    "id": 197,
+    "question": "In A Bug's Life, what is the name of the grasshopper who leads the villain gang?",
+    "answers": [
+      "Hopper",
+      "Thumper",
+      "Molt",
+      "Grasshopper"
+    ],
+    "difficulty": "medium",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged Molt as another named grasshopper and Thumper as a dangerous gang member. The source explicitly assigns leadership to Hopper and separates Molt. Grasshopper is the species, not the requested character name. Reduced hard to medium.",
+  "verification": {
+    "context": "In A Bug's Life, what is the name of the grasshopper who leads the villain gang?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "D23 explicitly names Hopper as gang leader.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/bugs-life-a-film/",
+          "locator": "Opening synopsis explicitly identifies Hopper as leader of extorting grasshoppers; cast separately names Molt."
+        },
+        {
+          "url": "https://www.pixar.com/a-bugs-life",
+          "locator": "Hopper, Molt and Hopper’s Hideout profiles distinguish leader from tagalong sibling."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged Molt as another named grasshopper and Thumper as a dangerous gang member. The source explicitly assigns leadership to Hopper and separates Molt. Grasshopper is the species, not the requested character name. Reduced hard to medium."
+    },
+    "options": [
+      {
+        "answer": "Hopper",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "D23 explicitly names Hopper as gang leader.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/bugs-life-a-film/",
+            "locator": "Opening synopsis explicitly identifies Hopper as leader of extorting grasshoppers; cast separately names Molt."
+          },
+          {
+            "url": "https://www.pixar.com/a-bugs-life",
+            "locator": "Hopper, Molt and Hopper’s Hideout profiles distinguish leader from tagalong sibling."
+          }
+        ]
+      },
+      {
+        "answer": "Thumper",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the explicitly identified leader Hopper.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/bugs-life-a-film/",
+            "locator": "Opening synopsis explicitly identifies Hopper as leader of extorting grasshoppers; cast separately names Molt."
+          },
+          {
+            "url": "https://www.pixar.com/a-bugs-life",
+            "locator": "Hopper, Molt and Hopper’s Hideout profiles distinguish leader from tagalong sibling."
+          }
+        ]
+      },
+      {
+        "answer": "Molt",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Pixar distinguishes tagalong brother Molt from Hopper.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/bugs-life-a-film/",
+            "locator": "Opening synopsis explicitly identifies Hopper as leader of extorting grasshoppers; cast separately names Molt."
+          },
+          {
+            "url": "https://www.pixar.com/a-bugs-life",
+            "locator": "Hopper, Molt and Hopper’s Hideout profiles distinguish leader from tagalong sibling."
+          }
+        ]
+      },
+      {
+        "answer": "Grasshopper",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "The insect type is not the character’s proper name Hopper.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/bugs-life-a-film/",
+            "locator": "Opening synopsis explicitly identifies Hopper as leader of extorting grasshoppers; cast separately names Molt."
+          },
+          {
+            "url": "https://www.pixar.com/a-bugs-life",
+            "locator": "Hopper, Molt and Hopper’s Hideout profiles distinguish leader from tagalong sibling."
+          }
+        ]
+      }
+    ]
+  }
+}

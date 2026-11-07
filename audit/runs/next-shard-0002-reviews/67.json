@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 67,
+  "hash": "399c9b650d0a20c8ec83c28032793b437e824e1543c3813bf2a3b4868df691e8",
+  "questionSnapshot": {
+    "id": 67,
+    "question": "What type of animal is Pumbaa in The Lion King?",
+    "answers": [
+      "Warthog",
+      "Hyena",
+      "Rhinoceros",
+      "Hippo"
+    ],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Distinct from Timon’s meerkat identity. This is distractor repair, not a correction to Warthog. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "English-language Disney character naming; original theatrical feature where a film is named. What type of animal is Pumbaa in The Lion King?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Pumbaa is a warthog, which is a member of the pig family.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/lion-king-the-film/",
+          "locator": "Opening three synopsis paragraphs: Scar’s murder and usurpation; Mufasa as king/father; Pumbaa as warthog; Timon as meerkat; Rafiki as guiding shaman."
+        },
+        {
+          "url": "https://animals.sandiegozoo.org/animals/warthog",
+          "locator": "Taxonomy header FAMILY Suidae and FAMILY LIFE section on boars, sows and piglets; explains why original Pig distractor overlaps."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Original Pig overlapped the correct animal family and Wild boar was liable to be read broadly. Both were replaced. None of the final distractors is a broader label that includes warthogs."
+    },
+    "options": [
+      {
+        "answer": "Warthog",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The film synopsis explicitly identifies Pumbaa as a warthog.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/lion-king-the-film/",
+            "locator": "Opening three synopsis paragraphs: Scar’s murder and usurpation; Mufasa as king/father; Pumbaa as warthog; Timon as meerkat; Rafiki as guiding shaman."
+          },
+          {
+            "url": "https://animals.sandiegozoo.org/animals/warthog",
+            "locator": "Taxonomy header FAMILY Suidae and FAMILY LIFE section on boars, sows and piglets; explains why original Pig distractor overlaps."
+          }
+        ]
+      },
+      {
+        "answer": "Hyena",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "A hyena is a different animal from a warthog.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/lion-king-the-film/",
+            "locator": "Opening three synopsis paragraphs: Scar’s murder and usurpation; Mufasa as king/father; Pumbaa as warthog; Timon as meerkat; Rafiki as guiding shaman."
+          },
+          {
+            "url": "https://animals.sandiegozoo.org/animals/warthog",
+            "locator": "Taxonomy header FAMILY Suidae and FAMILY LIFE section on boars, sows and piglets; explains why original Pig distractor overlaps."
+          }
+        ]
+      },
+      {
+        "answer": "Rhinoceros",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "A rhinoceros is a different animal from a warthog.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/lion-king-the-film/",
+            "locator": "Opening three synopsis paragraphs: Scar’s murder and usurpation; Mufasa as king/father; Pumbaa as warthog; Timon as meerkat; Rafiki as guiding shaman."
+          },
+          {
+            "url": "https://animals.sandiegozoo.org/animals/warthog",
+            "locator": "Taxonomy header FAMILY Suidae and FAMILY LIFE section on boars, sows and piglets; explains why original Pig distractor overlaps."
+          }
+        ]
+      },
+      {
+        "answer": "Hippo",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "A hippo is a different animal from a warthog.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/lion-king-the-film/",
+            "locator": "Opening three synopsis paragraphs: Scar’s murder and usurpation; Mufasa as king/father; Pumbaa as warthog; Timon as meerkat; Rafiki as guiding shaman."
+          },
+          {
+            "url": "https://animals.sandiegozoo.org/animals/warthog",
+            "locator": "Taxonomy header FAMILY Suidae and FAMILY LIFE section on boars, sows and piglets; explains why original Pig distractor overlaps."
+          }
+        ]
+      }
+    ]
+  }
+}

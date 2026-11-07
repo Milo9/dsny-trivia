@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 204,
+  "hash": "43a32f583e63ab57706867da68c1820b3254618a401dbf74d35e8147ac1b4beb",
+  "questionSnapshot": {
+    "id": 204,
+    "question": "In Zootopia, what is Judy Hopps' job?",
+    "answers": [
+      "Police officer",
+      "Firefighter",
+      "Teacher",
+      "Journalist"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged temporary parking duty as a different job: it is still police work. D23 explicitly identifies Officer Judy on the police force; firefighter, teacher and journalist fail that stated profession.",
+  "verification": {
+    "context": "In Zootopia, what is Judy Hopps' job?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Opening synopsis explicitly identifies Judy as an officer on the police force.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/zootopia-film/",
+          "locator": "Opening synopsis identifies Officer Judy Hopps, first bunny on police force."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged temporary parking duty as a different job: it is still police work. D23 explicitly identifies Officer Judy on the police force; firefighter, teacher and journalist fail that stated profession."
+    },
+    "options": [
+      {
+        "answer": "Police officer",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Opening synopsis explicitly identifies Judy as an officer on the police force.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/zootopia-film/",
+            "locator": "Opening synopsis identifies Officer Judy Hopps, first bunny on police force."
+          }
+        ]
+      },
+      {
+        "answer": "Firefighter",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different profession from her stated job.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/zootopia-film/",
+            "locator": "Opening synopsis identifies Officer Judy Hopps, first bunny on police force."
+          }
+        ]
+      },
+      {
+        "answer": "Teacher",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different profession from her stated job.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/zootopia-film/",
+            "locator": "Opening synopsis identifies Officer Judy Hopps, first bunny on police force."
+          }
+        ]
+      },
+      {
+        "answer": "Journalist",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different profession from her stated job.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/zootopia-film/",
+            "locator": "Opening synopsis identifies Officer Judy Hopps, first bunny on police force."
+          }
+        ]
+      }
+    ]
+  }
+}

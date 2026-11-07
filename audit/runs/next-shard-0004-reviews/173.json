@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 173,
+  "hash": "e5a7130f6e976da7ed6fbae1de17cb5c57c1b0562edd42b86a46dd245e6f1b60",
+  "questionSnapshot": {
+    "id": 173,
+    "question": "In Finding Nemo, where does Nemo end up after being captured?",
+    "answers": [
+      "A dentist's fish tank in Sydney, Australia",
+      "An aquarium in Tokyo, Japan",
+      "A pet store in London, England",
+      "A research lab in California"
+    ],
+    "difficulty": "easy",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged research-lab confusion with the later Finding Dory institute. D23 explicitly states captured Nemo’s dentist tank overlooks Sydney harbor, so all three institution/country alternatives fail. Address question 479 adds street-number recall and is not a reverse destination question.",
+  "verification": {
+    "context": "In Finding Nemo, where does Nemo end up after being captured?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Official synopsis explicitly locates the captured Nemo in a Sydney dentist aquarium.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/finding-nemo-film/",
+          "locator": "Opening explicitly identifies Sydney harbor dentist tank and Dory as a Regal Blue Tang; cast list separates Nigel/Gill/Bloat."
+        },
+        {
+          "url": "https://www.pixar.com/finding-nemo",
+          "locator": "Synopsis and The Tank describe dentist aquarium; Nigel profile identifies friendly pelican; Gill and Tank Gang profiles distinguish fish."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged research-lab confusion with the later Finding Dory institute. D23 explicitly states captured Nemo’s dentist tank overlooks Sydney harbor, so all three institution/country alternatives fail. Address question 479 adds street-number recall and is not a reverse destination question."
+    },
+    "options": [
+      {
+        "answer": "A dentist's fish tank in Sydney, Australia",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Official synopsis explicitly locates the captured Nemo in a Sydney dentist aquarium.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/finding-nemo-film/",
+            "locator": "Opening explicitly identifies Sydney harbor dentist tank and Dory as a Regal Blue Tang; cast list separates Nigel/Gill/Bloat."
+          },
+          {
+            "url": "https://www.pixar.com/finding-nemo",
+            "locator": "Synopsis and The Tank describe dentist aquarium; Nigel profile identifies friendly pelican; Gill and Tank Gang profiles distinguish fish."
+          }
+        ]
+      },
+      {
+        "answer": "An aquarium in Tokyo, Japan",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different institution and country from the stated capture destination.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/finding-nemo-film/",
+            "locator": "Opening explicitly identifies Sydney harbor dentist tank and Dory as a Regal Blue Tang; cast list separates Nigel/Gill/Bloat."
+          },
+          {
+            "url": "https://www.pixar.com/finding-nemo",
+            "locator": "Synopsis and The Tank describe dentist aquarium; Nigel profile identifies friendly pelican; Gill and Tank Gang profiles distinguish fish."
+          }
+        ]
+      },
+      {
+        "answer": "A pet store in London, England",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different institution and country from the stated capture destination.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/finding-nemo-film/",
+            "locator": "Opening explicitly identifies Sydney harbor dentist tank and Dory as a Regal Blue Tang; cast list separates Nigel/Gill/Bloat."
+          },
+          {
+            "url": "https://www.pixar.com/finding-nemo",
+            "locator": "Synopsis and The Tank describe dentist aquarium; Nigel profile identifies friendly pelican; Gill and Tank Gang profiles distinguish fish."
+          }
+        ]
+      },
+      {
+        "answer": "A research lab in California",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different institution and country from the stated capture destination.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/finding-nemo-film/",
+            "locator": "Opening explicitly identifies Sydney harbor dentist tank and Dory as a Regal Blue Tang; cast list separates Nigel/Gill/Bloat."
+          },
+          {
+            "url": "https://www.pixar.com/finding-nemo",
+            "locator": "Synopsis and The Tank describe dentist aquarium; Nigel profile identifies friendly pelican; Gill and Tank Gang profiles distinguish fish."
+          }
+        ]
+      }
+    ]
+  }
+}

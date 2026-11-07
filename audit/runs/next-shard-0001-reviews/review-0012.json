@@ -1,0 +1,80 @@
+{
+  "questionId": 12,
+  "hash": "31f5f07bed379f3b2e00d73a6ec51973b3d6716d1aa4634f4924f98724649ea4",
+  "questionSnapshot": {
+    "id": 12,
+    "question": "What is the name of Nemo's father in Finding Nemo?",
+    "answers": [
+      "Marlin",
+      "Gill",
+      "Bruce",
+      "Nigel"
+    ],
+    "difficulty": "easy",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "All four occur in the film and have distinct roles. Easy, correct Pixar category. #19 asks Nemo's species; #193/#306 identify Nigel/Bruce through separate animal roles.",
+  "verification": {
+    "context": "Finding Nemo, Pixar 2003 film.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Marlin",
+        "verdict": "correct",
+        "reason": "Marlin is explicitly Nemo's single-parent father.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/finding-nemo",
+            "locator": "Opening synopsis: Marlin is a clownfish living with his son Nemo; profiles Nemo, Marlin, Gill (heading Gil), Sharks (Bruce) and Nigel."
+          }
+        ]
+      },
+      {
+        "answer": "Gill",
+        "verdict": "incorrect",
+        "reason": "Gill leads the aquarium tank gang, not Nemo's family.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/finding-nemo",
+            "locator": "Opening synopsis: Marlin is a clownfish living with his son Nemo; profiles Nemo, Marlin, Gill (heading Gil), Sharks (Bruce) and Nigel."
+          }
+        ]
+      },
+      {
+        "answer": "Bruce",
+        "verdict": "incorrect",
+        "reason": "Bruce is the shark support-group leader, not Nemo's father.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/finding-nemo",
+            "locator": "Opening synopsis: Marlin is a clownfish living with his son Nemo; profiles Nemo, Marlin, Gill (heading Gil), Sharks (Bruce) and Nigel."
+          }
+        ]
+      },
+      {
+        "answer": "Nigel",
+        "verdict": "incorrect",
+        "reason": "Nigel is the pelican who helps the fish, not Nemo's father.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/finding-nemo",
+            "locator": "Opening synopsis: Marlin is a clownfish living with his son Nemo; profiles Nemo, Marlin, Gill (heading Gil), Sharks (Bruce) and Nigel."
+          }
+        ]
+      }
+    ]
+  }
+}

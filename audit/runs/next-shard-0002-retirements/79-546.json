@@ -1,0 +1,37 @@
+{
+  "reviewer": "Codex (OpenAI)",
+  "questions": [
+    {
+      "id": 79,
+      "question": "What type of animal is Meeko in Pocahontas?",
+      "answers": [
+        "Raccoon",
+        "Fox",
+        "Squirrel",
+        "Beaver"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    {
+      "id": 546,
+      "question": "In Pocahontas, what is the name of Pocahontas's raccoon companion?",
+      "answers": [
+        "Meeko",
+        "Flit",
+        "Percy",
+        "Kocoum"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    }
+  ],
+  "decision": "Inverse Meeko/raccoon relationship. Knowing that Meeko is Pocahontas’s raccoon solves both; retain the character-name question.",
+  "evidence": [
+    {
+      "url": "https://d23.com/a-to-z/pocahontas-film/",
+      "locator": "Opening synopsis identifies Meeko as a raccoon and Flit as a hummingbird."
+    }
+  ],
+  "replacementApproved": false
+}

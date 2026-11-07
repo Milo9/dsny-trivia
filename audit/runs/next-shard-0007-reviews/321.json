@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 321,
+  "hash": "c530d10fe862ae3f6b5a3fe6f4767b49eac7ad3c30d82fd642037c7aee570644",
+  "questionSnapshot": {
+    "id": 321,
+    "question": "In Oliver & Company, who is the cool, smooth-talking lead dog of Fagin's gang?",
+    "answers": [
+      "Dodger",
+      "Einstein",
+      "Tito",
+      "Francis"
+    ],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "The head-of-pack role decides the answer, not subjective smoothness or bravery. The primary character passage names the leader; other gang members cannot fill that singular identity in this film. Tito breed in 865 and Sykes guard-dog breeds in 2494 are different facts. Character category and medium recall fit. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+  "verification": {
+    "context": "In Oliver & Company, who is the cool, smooth-talking lead dog of Fagin's gang? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Disney explicitly identifies Dodger as the head of Fagin pack. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+      "sources": [
+        {
+          "url": "https://d23.com/celebrate-lunar-new-year-with-our-favorite-disney-dogs/",
+          "locator": "Item 6, Dodger (Oliver & Company): head of Fagin pack, charismatic and brave leader"
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "The head-of-pack role decides the answer, not subjective smoothness or bravery. The primary character passage names the leader; other gang members cannot fill that singular identity in this film. Tito breed in 865 and Sykes guard-dog breeds in 2494 are different facts. Character category and medium recall fit."
+    },
+    "options": [
+      {
+        "answer": "Dodger",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Disney explicitly identifies Dodger as the head of Fagin pack.",
+        "sources": [
+          {
+            "url": "https://d23.com/celebrate-lunar-new-year-with-our-favorite-disney-dogs/",
+            "locator": "Item 6, Dodger (Oliver & Company): head of Fagin pack, charismatic and brave leader"
+          }
+        ]
+      },
+      {
+        "answer": "Einstein",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Einstein is not the dog identified as that pack head.",
+        "sources": [
+          {
+            "url": "https://d23.com/celebrate-lunar-new-year-with-our-favorite-disney-dogs/",
+            "locator": "Item 6, Dodger (Oliver & Company): head of Fagin pack, charismatic and brave leader"
+          }
+        ]
+      },
+      {
+        "answer": "Tito",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Tito is not the dog identified as that pack head.",
+        "sources": [
+          {
+            "url": "https://d23.com/celebrate-lunar-new-year-with-our-favorite-disney-dogs/",
+            "locator": "Item 6, Dodger (Oliver & Company): head of Fagin pack, charismatic and brave leader"
+          }
+        ]
+      },
+      {
+        "answer": "Francis",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Francis is not the dog identified as that pack head.",
+        "sources": [
+          {
+            "url": "https://d23.com/celebrate-lunar-new-year-with-our-favorite-disney-dogs/",
+            "locator": "Item 6, Dodger (Oliver & Company): head of Fagin pack, charismatic and brave leader"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "questionId": 11,
+  "hash": "06614b5c6391462d907790df8e7fc928e969d0c53b4e69583e2121e623117ed0",
+  "questionSnapshot": {
+    "id": 11,
+    "question": "In Cinderella, what item did Cinderella leave behind at the Prince's ball?",
+    "answers": [
+      "A glass slipper",
+      "A golden ring",
+      "A silk scarf",
+      "A jeweled necklace"
+    ],
+    "difficulty": "easy",
+    "category": "movies",
+    "factId": "cinderella.lost-slipper",
+    "film": "Cinderella",
+    "explanation": "Cinderella leaves a glass slipper on the palace staircase as she flees the ball at midnight.",
+    "source": "https://d23.com/a-to-z/cinderella-film/",
+    "verifiedAt": "2026-11-02"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Replaced the unrelated legacy explanation with the actual lost-object fact. Four comparable wearable items. Easy. #211 asks time, #229 pumpkin transformation, and #287 dress making; distinct facts.",
+  "verification": {
+    "context": "Cinderella, Disney animated 1950 film, departure from the royal ball at midnight.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "A glass slipper",
+        "verdict": "correct",
+        "reason": "She leaves a glass slipper behind while fleeing.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/cinderella-film/",
+            "locator": "Synopsis, second paragraph: midnight flight and the glass slipper; songs paragraph names Bibbidi-Bobbidi-Boo."
+          }
+        ]
+      },
+      {
+        "answer": "A golden ring",
+        "verdict": "incorrect",
+        "reason": "The object left for the prince's search is footwear, not a ring.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/cinderella-film/",
+            "locator": "Synopsis, second paragraph: midnight flight and the glass slipper; songs paragraph names Bibbidi-Bobbidi-Boo."
+          }
+        ]
+      },
+      {
+        "answer": "A silk scarf",
+        "verdict": "incorrect",
+        "reason": "The recovered identifying object is a glass slipper, not a scarf.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/cinderella-film/",
+            "locator": "Synopsis, second paragraph: midnight flight and the glass slipper; songs paragraph names Bibbidi-Bobbidi-Boo."
+          }
+        ]
+      },
+      {
+        "answer": "A jeweled necklace",
+        "verdict": "incorrect",
+        "reason": "The prince and Grand Duke use the glass slipper, not a necklace, to find her.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/cinderella-film/",
+            "locator": "Synopsis, second paragraph: midnight flight and the glass slipper; songs paragraph names Bibbidi-Bobbidi-Boo."
+          }
+        ]
+      }
+    ]
+  }
+}

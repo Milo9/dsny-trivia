@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 289,
+  "hash": "aa48dfdb0a02ce223fc4bc4766a566b1102ccff582b64cbd3aea49b3705673c8",
+  "questionSnapshot": {
+    "id": 289,
+    "question": "In Aladdin, what is the name of Princess Jasmine's pet tiger?",
+    "answers": [
+      "Rajah",
+      "Shere",
+      "Tiger",
+      "Stripes"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Question asks name, so the true animal label Tiger is not a second answer. Shere evokes Jungle Book tiger but cannot identify Jasmine companion. Different from Abu monkey q6.",
+  "verification": {
+    "context": "In Aladdin, what is the name of Princess Jasmine's pet tiger?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Disney names Jasmine tiger Rajah.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/rajah/",
+          "locator": "Entire character entry: Rajah is Jasmine tiger bodyguard in Aladdin."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Question asks name, so the true animal label Tiger is not a second answer. Shere evokes Jungle Book tiger but cannot identify Jasmine companion. Different from Abu monkey q6."
+    },
+    "options": [
+      {
+        "answer": "Rajah",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Disney names Jasmine tiger Rajah.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/rajah/",
+            "locator": "Entire character entry: Rajah is Jasmine tiger bodyguard in Aladdin."
+          }
+        ]
+      },
+      {
+        "answer": "Shere",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Shere is not the identified name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/rajah/",
+            "locator": "Entire character entry: Rajah is Jasmine tiger bodyguard in Aladdin."
+          }
+        ]
+      },
+      {
+        "answer": "Tiger",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Tiger is a species label, not the identified name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/rajah/",
+            "locator": "Entire character entry: Rajah is Jasmine tiger bodyguard in Aladdin."
+          }
+        ]
+      },
+      {
+        "answer": "Stripes",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Stripes is not the identified name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/rajah/",
+            "locator": "Entire character entry: Rajah is Jasmine tiger bodyguard in Aladdin."
+          }
+        ]
+      }
+    ]
+  }
+}

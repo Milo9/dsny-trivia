@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 72,
+  "hash": "929dcbb52497230c671d31e11274b930166fe62f5519ed410cb6d2a265bf5deb",
+  "questionSnapshot": {
+    "id": 72,
+    "question": "In Toy Story (1995), what does Buzz shout before jumping off Andy's bed to demonstrate that he can fly?",
+    "answers": [
+      "To infinity and beyond!",
+      "I'm a Space Ranger!",
+      "Reach for the sky!",
+      "One universe, one destiny!"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Distinct from Buzz’s space-ranger identity and Star Command. Familiar line merits easy; screenplay is primary authored evidence on a third-party mirror. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "English-language Disney character naming; original theatrical feature where a film is named. In Toy Story (1995), what does Buzz shout before jumping off Andy's bed to demonstrate that he can fly?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The final draft gives Buzz’s shouted line directly before his bedpost jump in Andy’s room.",
+      "sources": [
+        {
+          "url": "https://ismbucket.s3.amazonaws.com/scriptLibrary/cleanscripts/TOY%20STORY.pdf",
+          "locator": "November 1995 final draft, PDF page index 25, bedpost jump immediately before rubber-ball bounce and Hot Wheels track; Buzz has one shouted line. Original screenplay on a third-party host, corroborated by Disney’s own quote attribution."
+        },
+        {
+          "url": "https://news.disney.com/ultimate-list-toy-story-quotes",
+          "locator": "Buzz Lightyear subsection attributes To infinity and beyond to Buzz; Woody subsection attributes Reach for the sky to Woody."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Original famous catchphrase wording could invite other actual Buzz quotations. The final scene cue fixes a single utterance; read the line and subsequent bounce/track action together. Each distractor is excluded as a different utterance, not because Buzz could never say it elsewhere."
+    },
+    "options": [
+      {
+        "answer": "To infinity and beyond!",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "This is the line immediately preceding the specified jump.",
+        "sources": [
+          {
+            "url": "https://ismbucket.s3.amazonaws.com/scriptLibrary/cleanscripts/TOY%20STORY.pdf",
+            "locator": "November 1995 final draft, PDF page index 25, bedpost jump immediately before rubber-ball bounce and Hot Wheels track; Buzz has one shouted line. Original screenplay on a third-party host, corroborated by Disney’s own quote attribution."
+          },
+          {
+            "url": "https://news.disney.com/ultimate-list-toy-story-quotes",
+            "locator": "Buzz Lightyear subsection attributes To infinity and beyond to Buzz; Woody subsection attributes Reach for the sky to Woody."
+          }
+        ]
+      },
+      {
+        "answer": "I'm a Space Ranger!",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "This is not the shouted line at that exact cue.",
+        "sources": [
+          {
+            "url": "https://ismbucket.s3.amazonaws.com/scriptLibrary/cleanscripts/TOY%20STORY.pdf",
+            "locator": "November 1995 final draft, PDF page index 25, bedpost jump immediately before rubber-ball bounce and Hot Wheels track; Buzz has one shouted line. Original screenplay on a third-party host, corroborated by Disney’s own quote attribution."
+          },
+          {
+            "url": "https://news.disney.com/ultimate-list-toy-story-quotes",
+            "locator": "Buzz Lightyear subsection attributes To infinity and beyond to Buzz; Woody subsection attributes Reach for the sky to Woody."
+          }
+        ]
+      },
+      {
+        "answer": "Reach for the sky!",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "This is not the bedpost-jump line; Disney’s quote list assigns this phrase to Woody.",
+        "sources": [
+          {
+            "url": "https://ismbucket.s3.amazonaws.com/scriptLibrary/cleanscripts/TOY%20STORY.pdf",
+            "locator": "November 1995 final draft, PDF page index 25, bedpost jump immediately before rubber-ball bounce and Hot Wheels track; Buzz has one shouted line. Original screenplay on a third-party host, corroborated by Disney’s own quote attribution."
+          },
+          {
+            "url": "https://news.disney.com/ultimate-list-toy-story-quotes",
+            "locator": "Buzz Lightyear subsection attributes To infinity and beyond to Buzz; Woody subsection attributes Reach for the sky to Woody."
+          }
+        ]
+      },
+      {
+        "answer": "One universe, one destiny!",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "This does not match the line at the specified screenplay cue.",
+        "sources": [
+          {
+            "url": "https://ismbucket.s3.amazonaws.com/scriptLibrary/cleanscripts/TOY%20STORY.pdf",
+            "locator": "November 1995 final draft, PDF page index 25, bedpost jump immediately before rubber-ball bounce and Hot Wheels track; Buzz has one shouted line. Original screenplay on a third-party host, corroborated by Disney’s own quote attribution."
+          },
+          {
+            "url": "https://news.disney.com/ultimate-list-toy-story-quotes",
+            "locator": "Buzz Lightyear subsection attributes To infinity and beyond to Buzz; Woody subsection attributes Reach for the sky to Woody."
+          }
+        ]
+      }
+    ]
+  }
+}

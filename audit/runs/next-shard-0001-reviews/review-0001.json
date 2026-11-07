@@ -1,0 +1,93 @@
+{
+  "questionId": 1,
+  "hash": "1beb95758c0b0dc894fe7ca6811be90058bfb2d204f801060a8b6b5c3ce5639e",
+  "questionSnapshot": {
+    "id": 1,
+    "question": "In Cinderella (1950), what color is the ball gown when the Fairy Godmother first creates it?",
+    "answers": [
+      "Silver",
+      "Blue",
+      "Pink",
+      "Yellow"
+    ],
+    "difficulty": "medium",
+    "category": "movies",
+    "factId": "cinderella.ball-gown-color-at-transformation",
+    "film": "Cinderella",
+    "explanation": "The gown is silver when it first appears; the animators deliberately make it look blue during the moonlit dance.",
+    "source": "https://d23.com/as-brilliant-as-ever-the-restoration-of-cinderella/",
+    "verifiedAt": "2026-11-02"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Fixed the time/context ambiguity, changed correct answer to silver and removed white as a near-synonym. Four short color options. Unlike #188 (Sadness), this is a different film, object and color. Medium visual-detail recall: the silver creation scene is less familiar than the blue promotional appearance.",
+  "verification": {
+    "context": "Disney animated Cinderella (1950), instant the Fairy Godmother creates the ball gown; original intended colors as documented by the restoration team.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Silver",
+        "verdict": "correct",
+        "reason": "Silver is the intended color at creation, explicitly distinguished by the animation/restoration lead.",
+        "sources": [
+          {
+            "url": "https://d23.com/as-brilliant-as-ever-the-restoration-of-cinderella/",
+            "locator": "SILVER MEDDLE: Eric Goldberg distinguishes the silver gown at its creation from the blue lighting during the moonlit dance; restoration comparison caption."
+          }
+        ]
+      },
+      {
+        "answer": "Blue",
+        "verdict": "incorrect",
+        "reason": "Blue is its later moonlit appearance, so it does not answer the specified creation moment.",
+        "sources": [
+          {
+            "url": "https://d23.com/as-brilliant-as-ever-the-restoration-of-cinderella/",
+            "locator": "SILVER MEDDLE: Eric Goldberg distinguishes the silver gown at its creation from the blue lighting during the moonlit dance; restoration comparison caption."
+          }
+        ]
+      },
+      {
+        "answer": "Pink",
+        "verdict": "incorrect",
+        "reason": "Pink belongs to the earlier homemade dress; it is not the silver gown created in this scene.",
+        "sources": [
+          {
+            "url": "https://d23.com/as-brilliant-as-ever-the-restoration-of-cinderella/",
+            "locator": "SILVER MEDDLE: Eric Goldberg distinguishes the silver gown at its creation from the blue lighting during the moonlit dance; restoration comparison caption."
+          },
+          {
+            "url": "https://movies.disney.com/cinderella-1950",
+            "locator": "The Characters: Cinderella, Jaq, Gus and Lady Tremaine profiles; opening synopsis names the two mice and the Fairy Godmother spell."
+          },
+          {
+            "url": "https://princess.disney.com/cinderella",
+            "locator": "Cinderella Storybook Illustrations from the Walt Disney Archives: third image caption identifies the homemade pink dress made by her animal friends, distinct from the transformed silver gown."
+          }
+        ]
+      },
+      {
+        "answer": "Yellow",
+        "verdict": "incorrect",
+        "reason": "The transformation gown is silver, not yellow; yellow is not an alternative color described for this scene.",
+        "sources": [
+          {
+            "url": "https://d23.com/as-brilliant-as-ever-the-restoration-of-cinderella/",
+            "locator": "SILVER MEDDLE: Eric Goldberg distinguishes the silver gown at its creation from the blue lighting during the moonlit dance; restoration comparison caption."
+          }
+        ]
+      }
+    ]
+  }
+}

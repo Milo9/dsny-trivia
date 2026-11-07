@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 86,
+  "hash": "485e06b8cd1cf1cfb694a201755a5412278591c8cf9c3e36a96830966e5b3e7f",
+  "questionSnapshot": {
+    "id": 86,
+    "question": "In which U.S. state is Walt Disney World located?",
+    "answers": [
+      "Florida",
+      "California",
+      "Texas",
+      "New York"
+    ],
+    "difficulty": "easy",
+    "category": "parks"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Distinct from Disneyland’s Anaheim location. Geography is enduring; no unbounded operational claim. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "Walt Disney World, specified park/attraction; current naming/layout at review date.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The resort is explicitly located near Orlando in Florida.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/walt-disney-world-resort/",
+          "locator": "Opening sentence locates resort near Orlando, Florida and gives October 1, 1971 opening."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Distinguished Walt Disney World from the original Disneyland resort. The full resort’s location is Florida, so the other mutually exclusive state options cannot also answer the question."
+    },
+    "options": [
+      {
+        "answer": "Florida",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Florida is the stated US state.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/walt-disney-world-resort/",
+            "locator": "Opening sentence locates resort near Orlando, Florida and gives October 1, 1971 opening."
+          }
+        ]
+      },
+      {
+        "answer": "California",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "California is not the state identified for this resort.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/walt-disney-world-resort/",
+            "locator": "Opening sentence locates resort near Orlando, Florida and gives October 1, 1971 opening."
+          }
+        ]
+      },
+      {
+        "answer": "Texas",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Texas is not the stated location.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/walt-disney-world-resort/",
+            "locator": "Opening sentence locates resort near Orlando, Florida and gives October 1, 1971 opening."
+          }
+        ]
+      },
+      {
+        "answer": "New York",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "New York is not the stated location.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/walt-disney-world-resort/",
+            "locator": "Opening sentence locates resort near Orlando, Florida and gives October 1, 1971 opening."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "retired": {
+    "id": 386,
+    "question": "How many daughters did Walt Disney have?",
+    "answers": [
+      "Two",
+      "One",
+      "Three",
+      "None"
+    ],
+    "difficulty": "easy",
+    "category": "walt"
+  },
+  "retained": {
+    "id": 127,
+    "question": "What were the names of Walt Disney's two daughters?",
+    "answers": [
+      "Diane and Sharon",
+      "Mary and Susan",
+      "Anne and Patricia",
+      "Jane and Lillian"
+    ],
+    "difficulty": "medium",
+    "category": "walt"
+  },
+  "additionalComparisons": [],
+  "rationale": "127 explicitly says two daughters and asks their names, Diane and Sharon. This count-only question supplies no additional fact.",
+  "sources": [
+    {
+      "sourceNoteId": "disney-family",
+      "url": "https://d23.com/about-walt-disney/",
+      "locator": "1923 Hollywood move; 1925 marriage and daughters; 1940 Burbank paragraphs",
+      "evidence": "Walt moved to Hollywood, California, partnered with Roy O., married Lillian Bounds, and had daughters Diane and Sharon. The Burbank studio was completed in 1940.",
+      "checkedBy": "Codex",
+      "checkedAt": "2026-11-07",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "limitations": "Primary institutional text inspected; no film or video viewing claimed.",
+      "topics": [
+        "walt"
+      ]
+    }
+  ],
+  "originalOptionAssessments": [
+    {
+      "answer": "Two",
+      "assessment": "Two is the count given with Diane and Sharon."
+    },
+    {
+      "answer": "One",
+      "assessment": "One omits a daughter."
+    },
+    {
+      "answer": "Three",
+      "assessment": "Three exceeds the stated count."
+    },
+    {
+      "answer": "None",
+      "assessment": "None contradicts the two named daughters."
+    }
+  ],
+  "finalChallenge": {
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "notes": "127 explicitly says two daughters and asks their names, Diane and Sharon. This count-only question supplies no additional fact. All four original options inspected. Retirement avoids asserting approval of a flawed premise or an insufficiently excluded alternative."
+  },
+  "scope": "Only the planned ID is retired. Counterpart comparison is not approval of its other claims."
+}

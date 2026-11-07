@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 155,
+  "hash": "86e63d77c13f2cc19a530e3dc8e34186b89d9f7955e343745efdd93fc56db88a",
+  "questionSnapshot": {
+    "id": 155,
+    "question": "Complete the lyric from The Lion King: 'Hakuna Matata, what a wonderful ___.'",
+    "answers": [
+      "phrase",
+      "day",
+      "life",
+      "song"
+    ],
+    "difficulty": "easy",
+    "category": "music"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Challenged plausible rhyming/semantic substitutions; the opening phrase has a fixed last noun. Licensed score directly prints it and the film transcription independently agrees. Full official video playback was unavailable, so an uninspected video is not treated as proof.",
+  "verification": {
+    "context": "Complete the lyric from The Lion King: 'Hakuna Matata, what a wonderful ___.'",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Phrase completes the opening line in the licensed score and the film transcription.",
+      "sources": [
+        {
+          "url": "https://www.mtishows.com/sites/default/files/tlkexperience_kids_actors_script.pdf",
+          "locator": "PDF page 3 (printed script pages 4–5), Hakuna Matata opening, measures 1–4; licensed musical excerpt."
+        },
+        {
+          "url": "https://www.disneyclips.com/lyrics/lyrics66.html",
+          "locator": "The Lion King / Hakuna Matata film transcription, opening two lines; corroborates licensed stage score wording independently of the unavailable video playback."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged plausible rhyming/semantic substitutions; the opening phrase has a fixed last noun. Licensed score directly prints it and the film transcription independently agrees. Full official video playback was unavailable, so an uninspected video is not treated as proof."
+    },
+    "options": [
+      {
+        "answer": "phrase",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Phrase completes the opening line in the licensed score and the film transcription.",
+        "sources": [
+          {
+            "url": "https://www.mtishows.com/sites/default/files/tlkexperience_kids_actors_script.pdf",
+            "locator": "PDF page 3 (printed script pages 4–5), Hakuna Matata opening, measures 1–4; licensed musical excerpt."
+          },
+          {
+            "url": "https://www.disneyclips.com/lyrics/lyrics66.html",
+            "locator": "The Lion King / Hakuna Matata film transcription, opening two lines; corroborates licensed stage score wording independently of the unavailable video playback."
+          }
+        ]
+      },
+      {
+        "answer": "day",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Not the word completing that line.",
+        "sources": [
+          {
+            "url": "https://www.mtishows.com/sites/default/files/tlkexperience_kids_actors_script.pdf",
+            "locator": "PDF page 3 (printed script pages 4–5), Hakuna Matata opening, measures 1–4; licensed musical excerpt."
+          },
+          {
+            "url": "https://www.disneyclips.com/lyrics/lyrics66.html",
+            "locator": "The Lion King / Hakuna Matata film transcription, opening two lines; corroborates licensed stage score wording independently of the unavailable video playback."
+          }
+        ]
+      },
+      {
+        "answer": "life",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Not the word completing that line.",
+        "sources": [
+          {
+            "url": "https://www.mtishows.com/sites/default/files/tlkexperience_kids_actors_script.pdf",
+            "locator": "PDF page 3 (printed script pages 4–5), Hakuna Matata opening, measures 1–4; licensed musical excerpt."
+          },
+          {
+            "url": "https://www.disneyclips.com/lyrics/lyrics66.html",
+            "locator": "The Lion King / Hakuna Matata film transcription, opening two lines; corroborates licensed stage score wording independently of the unavailable video playback."
+          }
+        ]
+      },
+      {
+        "answer": "song",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Not the word completing that line.",
+        "sources": [
+          {
+            "url": "https://www.mtishows.com/sites/default/files/tlkexperience_kids_actors_script.pdf",
+            "locator": "PDF page 3 (printed script pages 4–5), Hakuna Matata opening, measures 1–4; licensed musical excerpt."
+          },
+          {
+            "url": "https://www.disneyclips.com/lyrics/lyrics66.html",
+            "locator": "The Lion King / Hakuna Matata film transcription, opening two lines; corroborates licensed stage score wording independently of the unavailable video playback."
+          }
+        ]
+      }
+    ]
+  }
+}

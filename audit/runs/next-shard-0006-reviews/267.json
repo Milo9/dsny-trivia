@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 267,
+  "hash": "a5982588d13310b51623fa4064a023bbd4af587a9c829d077f3c56f176759aaf",
+  "questionSnapshot": {
+    "id": 267,
+    "question": "In The Hunchback of Notre Dame, what are the names of Quasimodo's three gargoyle friends?",
+    "answers": [
+      "Victor, Hugo, and Laverne",
+      "Peter, Paul, and Mary",
+      "Larry, Moe, and Curly",
+      "Faith, Hope, and Charity"
+    ],
+    "difficulty": "hard",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Source exhaustively gives all three names. Famous musical/comedy trios are distractors, not additional gargoyles; whether gargoyles are imagined does not alter their names. Retain hard multi-name recall.",
+  "verification": {
+    "context": "In The Hunchback of Notre Dame, what are the names of Quasimodo's three gargoyle friends?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The complete trio is Victor, Hugo and Laverne.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/hunchback-of-notre-dame-the-film/",
+          "locator": "Synopsis explicitly enumerates the trio Victor, Hugo, Laverne; cast corroborates each name."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Source exhaustively gives all three names. Famous musical/comedy trios are distractors, not additional gargoyles; whether gargoyles are imagined does not alter their names. Retain hard multi-name recall."
+    },
+    "options": [
+      {
+        "answer": "Victor, Hugo, and Laverne",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The complete trio is Victor, Hugo and Laverne.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/hunchback-of-notre-dame-the-film/",
+            "locator": "Synopsis explicitly enumerates the trio Victor, Hugo, Laverne; cast corroborates each name."
+          }
+        ]
+      },
+      {
+        "answer": "Peter, Paul, and Mary",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Not the trio enumerated by Disney.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/hunchback-of-notre-dame-the-film/",
+            "locator": "Synopsis explicitly enumerates the trio Victor, Hugo, Laverne; cast corroborates each name."
+          }
+        ]
+      },
+      {
+        "answer": "Larry, Moe, and Curly",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Not the trio enumerated by Disney.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/hunchback-of-notre-dame-the-film/",
+            "locator": "Synopsis explicitly enumerates the trio Victor, Hugo, Laverne; cast corroborates each name."
+          }
+        ]
+      },
+      {
+        "answer": "Faith, Hope, and Charity",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Not the trio enumerated by Disney.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/hunchback-of-notre-dame-the-film/",
+            "locator": "Synopsis explicitly enumerates the trio Victor, Hugo, Laverne; cast corroborates each name."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "retired": {
+    "id": 156,
+    "question": "In what Disney film does 'Be Our Guest' appear?",
+    "answers": [
+      "Beauty and the Beast",
+      "Cinderella",
+      "Sleeping Beauty",
+      "The Little Mermaid"
+    ],
+    "difficulty": "easy",
+    "category": "music"
+  },
+  "retained": {
+    "id": 705,
+    "question": "What song from Beauty and the Beast is performed by the enchanted household objects?",
+    "answers": [
+      "Be Our Guest",
+      "Gaston",
+      "Something There",
+      "Beauty and the Beast"
+    ],
+    "difficulty": "medium",
+    "category": "music"
+  },
+  "rationale": "Same Be Our Guest / Beauty and the Beast association in reverse; keep the question adding its household-object performance context.",
+  "scope": "Retire only the planned ID. Retained questions are duplicate context and receive no new factual approval here."
+}

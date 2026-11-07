@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 233,
+  "hash": "eb317fa04948c39e904b6b507207609e57b8f6036b4ad79b926d9fc7f624463e",
+  "questionSnapshot": {
+    "id": 233,
+    "question": "What gift does Isabela have in Encanto?",
+    "answers": [
+      "Growing flowers and plants",
+      "Super strength",
+      "Healing",
+      "Shapeshifting"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Did not limit Isabela to roses: plants includes the broader range she discovers. The other powers belong to other named relatives, so their existence in the family does not make them Isabela’s gift.",
+  "verification": {
+    "context": "What gift does Isabela have in Encanto?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Isabela explicitly grows plants and blooms flowers.",
+      "sources": [
+        {
+          "url": "https://d23.com/meet-the-characters-of-encanto/",
+          "locator": "Isabela, Luisa, Julieta/Agustin and Camilo sections explicitly distinguish plants, strength, healing through food, and shapeshifting."
+        },
+        {
+          "url": "https://impact.disney.com/app/uploads/2022/01/ENCANTO_ACTIVITY-PACKET_FNL-web.pdf",
+          "locator": "Welcome to Encanto spread: magical house named Casita; distinguishes the charmed place Encanto from the house; character spread identifies Luisa and Isabela gifts."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Did not limit Isabela to roses: plants includes the broader range she discovers. The other powers belong to other named relatives, so their existence in the family does not make them Isabela’s gift."
+    },
+    "options": [
+      {
+        "answer": "Growing flowers and plants",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Isabela explicitly grows plants and blooms flowers.",
+        "sources": [
+          {
+            "url": "https://d23.com/meet-the-characters-of-encanto/",
+            "locator": "Isabela, Luisa, Julieta/Agustin and Camilo sections explicitly distinguish plants, strength, healing through food, and shapeshifting."
+          },
+          {
+            "url": "https://impact.disney.com/app/uploads/2022/01/ENCANTO_ACTIVITY-PACKET_FNL-web.pdf",
+            "locator": "Welcome to Encanto spread: magical house named Casita; distinguishes the charmed place Encanto from the house; character spread identifies Luisa and Isabela gifts."
+          }
+        ]
+      },
+      {
+        "answer": "Super strength",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Luisa’s explicitly assigned gift.",
+        "sources": [
+          {
+            "url": "https://d23.com/meet-the-characters-of-encanto/",
+            "locator": "Isabela, Luisa, Julieta/Agustin and Camilo sections explicitly distinguish plants, strength, healing through food, and shapeshifting."
+          },
+          {
+            "url": "https://impact.disney.com/app/uploads/2022/01/ENCANTO_ACTIVITY-PACKET_FNL-web.pdf",
+            "locator": "Welcome to Encanto spread: magical house named Casita; distinguishes the charmed place Encanto from the house; character spread identifies Luisa and Isabela gifts."
+          }
+        ]
+      },
+      {
+        "answer": "Healing",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Julieta’s explicitly assigned gift.",
+        "sources": [
+          {
+            "url": "https://d23.com/meet-the-characters-of-encanto/",
+            "locator": "Isabela, Luisa, Julieta/Agustin and Camilo sections explicitly distinguish plants, strength, healing through food, and shapeshifting."
+          },
+          {
+            "url": "https://impact.disney.com/app/uploads/2022/01/ENCANTO_ACTIVITY-PACKET_FNL-web.pdf",
+            "locator": "Welcome to Encanto spread: magical house named Casita; distinguishes the charmed place Encanto from the house; character spread identifies Luisa and Isabela gifts."
+          }
+        ]
+      },
+      {
+        "answer": "Shapeshifting",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Camilo’s explicitly assigned gift.",
+        "sources": [
+          {
+            "url": "https://d23.com/meet-the-characters-of-encanto/",
+            "locator": "Isabela, Luisa, Julieta/Agustin and Camilo sections explicitly distinguish plants, strength, healing through food, and shapeshifting."
+          },
+          {
+            "url": "https://impact.disney.com/app/uploads/2022/01/ENCANTO_ACTIVITY-PACKET_FNL-web.pdf",
+            "locator": "Welcome to Encanto spread: magical house named Casita; distinguishes the charmed place Encanto from the house; character spread identifies Luisa and Isabela gifts."
+          }
+        ]
+      }
+    ]
+  }
+}

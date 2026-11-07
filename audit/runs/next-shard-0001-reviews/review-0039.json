@@ -1,0 +1,80 @@
+{
+  "questionId": 39,
+  "hash": "97ae5752c1a1b91cbed9cbb075163c126ff5db7de79c090bb7d81180ddd8946f",
+  "questionSnapshot": {
+    "id": 39,
+    "question": "Which of these Madrigals does not receive a magical gift in Encanto (2021)?",
+    "answers": [
+      "Mirabel",
+      "Luisa",
+      "Isabela",
+      "Julieta"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Removed overbroad only-family-member claim; the in-laws also lack personal gifts. All four are female Madrigals. Medium identification. #1497 asks the song title, not merely Mirabel's gift status.",
+  "verification": {
+    "context": "Encanto, Disney 2021 film, restricted to Mirabel, Luisa, Isabela and Julieta listed as answers.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Mirabel",
+        "verdict": "correct",
+        "reason": "Mirabel's individual profile says she did not receive a magical gift.",
+        "sources": [
+          {
+            "url": "https://d23.com/meet-the-characters-of-encanto/",
+            "locator": "Individual profiles: Mirabel lacks a gift; Julieta heals through food; Isabela grows plants; Luisa has super strength. Agustin is described separately as marrying into the family."
+          }
+        ]
+      },
+      {
+        "answer": "Luisa",
+        "verdict": "incorrect",
+        "reason": "Luisa received super strength.",
+        "sources": [
+          {
+            "url": "https://d23.com/meet-the-characters-of-encanto/",
+            "locator": "Individual profiles: Mirabel lacks a gift; Julieta heals through food; Isabela grows plants; Luisa has super strength. Agustin is described separately as marrying into the family."
+          }
+        ]
+      },
+      {
+        "answer": "Isabela",
+        "verdict": "incorrect",
+        "reason": "Isabela can make plants and flowers grow.",
+        "sources": [
+          {
+            "url": "https://d23.com/meet-the-characters-of-encanto/",
+            "locator": "Individual profiles: Mirabel lacks a gift; Julieta heals through food; Isabela grows plants; Luisa has super strength. Agustin is described separately as marrying into the family."
+          }
+        ]
+      },
+      {
+        "answer": "Julieta",
+        "verdict": "incorrect",
+        "reason": "Julieta can heal through food.",
+        "sources": [
+          {
+            "url": "https://d23.com/meet-the-characters-of-encanto/",
+            "locator": "Individual profiles: Mirabel lacks a gift; Julieta heals through food; Isabela grows plants; Luisa has super strength. Agustin is described separately as marrying into the family."
+          }
+        ]
+      }
+    ]
+  }
+}

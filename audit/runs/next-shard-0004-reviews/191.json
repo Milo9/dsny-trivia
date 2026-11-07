@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 191,
+  "hash": "d65b0265e9c8c0da7ae8f8c92f2027dca35e4447889fdf07020dbd43b31040af",
+  "questionSnapshot": {
+    "id": 191,
+    "question": "In Brave, what does the spell Merida uses on her mother accidentally turn her into?",
+    "answers": [
+      "A bear",
+      "A deer",
+      "A wolf",
+      "A fox"
+    ],
+    "difficulty": "medium",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged intention versus outcome: Merida intends to change her mother, but the bear transformation is unintended. The primary story summary explicitly identifies Elinor as a bear; deer, wolf and fox do not fit. Cake question 1309 tests the mechanism/food, a different fact.",
+  "verification": {
+    "context": "In Brave, what does the spell Merida uses on her mother accidentally turn her into?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The Story of Brave explicitly says Elinor becomes a bear.",
+      "sources": [
+        {
+          "url": "https://www.pixar.com/brave",
+          "locator": "Synopsis and The Story of Brave / Merida profiles: heroine is Merida; mother Queen Elinor is transformed into a bear."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged intention versus outcome: Merida intends to change her mother, but the bear transformation is unintended. The primary story summary explicitly identifies Elinor as a bear; deer, wolf and fox do not fit. Cake question 1309 tests the mechanism/food, a different fact."
+    },
+    "options": [
+      {
+        "answer": "A bear",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The Story of Brave explicitly says Elinor becomes a bear.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/brave",
+            "locator": "Synopsis and The Story of Brave / Merida profiles: heroine is Merida; mother Queen Elinor is transformed into a bear."
+          }
+        ]
+      },
+      {
+        "answer": "A deer",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different animal from the explicitly described transformation.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/brave",
+            "locator": "Synopsis and The Story of Brave / Merida profiles: heroine is Merida; mother Queen Elinor is transformed into a bear."
+          }
+        ]
+      },
+      {
+        "answer": "A wolf",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different animal from the explicitly described transformation.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/brave",
+            "locator": "Synopsis and The Story of Brave / Merida profiles: heroine is Merida; mother Queen Elinor is transformed into a bear."
+          }
+        ]
+      },
+      {
+        "answer": "A fox",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different animal from the explicitly described transformation.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/brave",
+            "locator": "Synopsis and The Story of Brave / Merida profiles: heroine is Merida; mother Queen Elinor is transformed into a bear."
+          }
+        ]
+      }
+    ]
+  }
+}

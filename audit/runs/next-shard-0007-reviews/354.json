@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 354,
+  "hash": "f530a9a9070cb375bdf4990413e8ebe2537df72c7ea7eac88d39a71a1edf5985",
+  "questionSnapshot": {
+    "id": 354,
+    "question": "In what year did the Haunted Mansion open at Magic Kingdom?",
+    "answers": [
+      "1971",
+      "1969",
+      "1975",
+      "1980"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Challenged the common Disneyland/Florida confusion: two primary histories explicitly separate the 1969 and 1971 openings. Opening is a unique dated event and excludes other years without assuming every Haunted Mansion opened together. 599 asks land and 398 asks Roy death; neither tests this opening date. Historical fact, no routine recheck needed. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+  "verification": {
+    "context": "In what year did the Haunted Mansion open at Magic Kingdom? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Magic Kingdom Haunted Mansion opened October 1, 1971. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/haunted-mansion/",
+          "locator": "Separate opening dates: Disneyland August 9, 1969 and Magic Kingdom Liberty Square October 1, 1971"
+        },
+        {
+          "url": "https://disneyparksblog.com/disney-experiences/hauntingly-historic-mansion-celebrates-55-years-next-week/",
+          "locator": "Paragraph following 1969 Disneyland opening; Florida opening in 1971; Spine-Tingling Start on the East Coast identifies Magic Kingdom"
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged the common Disneyland/Florida confusion: two primary histories explicitly separate the 1969 and 1971 openings. Opening is a unique dated event and excludes other years without assuming every Haunted Mansion opened together. 599 asks land and 398 asks Roy death; neither tests this opening date. Historical fact, no routine recheck needed."
+    },
+    "options": [
+      {
+        "answer": "1971",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Magic Kingdom Haunted Mansion opened October 1, 1971.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/haunted-mansion/",
+            "locator": "Separate opening dates: Disneyland August 9, 1969 and Magic Kingdom Liberty Square October 1, 1971"
+          },
+          {
+            "url": "https://disneyparksblog.com/disney-experiences/hauntingly-historic-mansion-celebrates-55-years-next-week/",
+            "locator": "Paragraph following 1969 Disneyland opening; Florida opening in 1971; Spine-Tingling Start on the East Coast identifies Magic Kingdom"
+          }
+        ]
+      },
+      {
+        "answer": "1969",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "1969 is Disneyland opening, not Magic Kingdom opening.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/haunted-mansion/",
+            "locator": "Separate opening dates: Disneyland August 9, 1969 and Magic Kingdom Liberty Square October 1, 1971"
+          },
+          {
+            "url": "https://disneyparksblog.com/disney-experiences/hauntingly-historic-mansion-celebrates-55-years-next-week/",
+            "locator": "Paragraph following 1969 Disneyland opening; Florida opening in 1971; Spine-Tingling Start on the East Coast identifies Magic Kingdom"
+          }
+        ]
+      },
+      {
+        "answer": "1975",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "1975 is not the documented Magic Kingdom opening year.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/haunted-mansion/",
+            "locator": "Separate opening dates: Disneyland August 9, 1969 and Magic Kingdom Liberty Square October 1, 1971"
+          },
+          {
+            "url": "https://disneyparksblog.com/disney-experiences/hauntingly-historic-mansion-celebrates-55-years-next-week/",
+            "locator": "Paragraph following 1969 Disneyland opening; Florida opening in 1971; Spine-Tingling Start on the East Coast identifies Magic Kingdom"
+          }
+        ]
+      },
+      {
+        "answer": "1980",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "1980 is not the documented Magic Kingdom opening year.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/haunted-mansion/",
+            "locator": "Separate opening dates: Disneyland August 9, 1969 and Magic Kingdom Liberty Square October 1, 1971"
+          },
+          {
+            "url": "https://disneyparksblog.com/disney-experiences/hauntingly-historic-mansion-celebrates-55-years-next-week/",
+            "locator": "Paragraph following 1969 Disneyland opening; Florida opening in 1971; Spine-Tingling Start on the East Coast identifies Magic Kingdom"
+          }
+        ]
+      }
+    ]
+  }
+}

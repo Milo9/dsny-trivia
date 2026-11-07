@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 74,
+  "hash": "5e27ed695715fa6e0601ceca9a004b89c48a8cc94d4347b7e8ef5009baa2786e",
+  "questionSnapshot": {
+    "id": 74,
+    "question": "In the animated Lilo & Stitch (2002), what is the name of the social worker assessing Nani's care of Lilo?",
+    "answers": [
+      "Cobra Bubbles",
+      "Agent Hood",
+      "Mr. Big",
+      "Officer Reynolds"
+    ],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Distinct from Nani’s name, David Kawena’s role and the alien officials; assess-care wording avoids implying that removing Lilo is his sole motive. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "English-language Disney character naming; original theatrical feature where a film is named. In the animated Lilo & Stitch (2002), what is the name of the social worker assessing Nani's care of Lilo?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The animated 2002 film’s social worker is Cobra Bubbles.",
+      "sources": [
+        {
+          "url": "https://d23.com/giving-thanks-for-our-favorite-disney-families/",
+          "locator": "Lilo and Stitch subsection, following the ohana explanation: identifies Cobra Bubbles as the social worker in the sisters’ family circle."
+        },
+        {
+          "url": "https://d23.com/a-to-z/lilo-stitch-film/",
+          "locator": "2002 animated-film entry and cast identifies Cobra Bubbles, voiced by Ving Rhames."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Fixed the animated 2002 context to exclude the changed social-services roles in the 2025 remake. Rechecked the family article’s direct role attribution, rather than using a cast name alone to prove occupation. None of the other proper names identifies this worker."
+    },
+    "options": [
+      {
+        "answer": "Cobra Bubbles",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Cobra Bubbles is the identified social worker and animated-film cast character.",
+        "sources": [
+          {
+            "url": "https://d23.com/giving-thanks-for-our-favorite-disney-families/",
+            "locator": "Lilo and Stitch subsection, following the ohana explanation: identifies Cobra Bubbles as the social worker in the sisters’ family circle."
+          },
+          {
+            "url": "https://d23.com/a-to-z/lilo-stitch-film/",
+            "locator": "2002 animated-film entry and cast identifies Cobra Bubbles, voiced by Ving Rhames."
+          }
+        ]
+      },
+      {
+        "answer": "Agent Hood",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Agent Hood is not the social worker identified in these references.",
+        "sources": [
+          {
+            "url": "https://d23.com/giving-thanks-for-our-favorite-disney-families/",
+            "locator": "Lilo and Stitch subsection, following the ohana explanation: identifies Cobra Bubbles as the social worker in the sisters’ family circle."
+          },
+          {
+            "url": "https://d23.com/a-to-z/lilo-stitch-film/",
+            "locator": "2002 animated-film entry and cast identifies Cobra Bubbles, voiced by Ving Rhames."
+          }
+        ]
+      },
+      {
+        "answer": "Mr. Big",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Mr. Big is not the identified social worker.",
+        "sources": [
+          {
+            "url": "https://d23.com/giving-thanks-for-our-favorite-disney-families/",
+            "locator": "Lilo and Stitch subsection, following the ohana explanation: identifies Cobra Bubbles as the social worker in the sisters’ family circle."
+          },
+          {
+            "url": "https://d23.com/a-to-z/lilo-stitch-film/",
+            "locator": "2002 animated-film entry and cast identifies Cobra Bubbles, voiced by Ving Rhames."
+          }
+        ]
+      },
+      {
+        "answer": "Officer Reynolds",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Officer Reynolds is not the identified social worker.",
+        "sources": [
+          {
+            "url": "https://d23.com/giving-thanks-for-our-favorite-disney-families/",
+            "locator": "Lilo and Stitch subsection, following the ohana explanation: identifies Cobra Bubbles as the social worker in the sisters’ family circle."
+          },
+          {
+            "url": "https://d23.com/a-to-z/lilo-stitch-film/",
+            "locator": "2002 animated-film entry and cast identifies Cobra Bubbles, voiced by Ving Rhames."
+          }
+        ]
+      }
+    ]
+  }
+}

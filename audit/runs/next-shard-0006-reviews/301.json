@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 301,
+  "hash": "ff1cb7081725037207d0f2d78bb24d2ceea799c2bb8808b5784f225354f4d920",
+  "questionSnapshot": {
+    "id": 301,
+    "question": "In Zootopia (2016), who poses as Nick Wilde's young son during the ice-pop scam?",
+    "answers": [
+      "Finnick",
+      "Duke Weaselton",
+      "Jerry Vole",
+      "Peter Moosebridge"
+    ],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Narrowed tiny con partner to precise ice-pop role so other small criminals cannot fit. Script stage directions identify Finnick, subsequent cash/diaper reveal rules out genuine son. This is the 2016 film; externally hosted studio screenplay provenance recorded.",
+  "verification": {
+    "context": "In Zootopia (2016), who poses as Nick Wilde's young son during the ice-pop scam?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Script identifies apparent son as Finnick in scam reveal.",
+      "sources": [
+        {
+          "url": "https://assets.scriptslug.com/live/pdf/scripts/zootopia-2016.pdf",
+          "locator": "Studio screenplay hosted externally, printed pages 24-25: ice-pop scam, Nick apparent son identified as FINNICK; payment/diaper reveal."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Narrowed tiny con partner to precise ice-pop role so other small criminals cannot fit. Script stage directions identify Finnick, subsequent cash/diaper reveal rules out genuine son. This is the 2016 film; externally hosted studio screenplay provenance recorded."
+    },
+    "options": [
+      {
+        "answer": "Finnick",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Script identifies apparent son as Finnick in scam reveal.",
+        "sources": [
+          {
+            "url": "https://assets.scriptslug.com/live/pdf/scripts/zootopia-2016.pdf",
+            "locator": "Studio screenplay hosted externally, printed pages 24-25: ice-pop scam, Nick apparent son identified as FINNICK; payment/diaper reveal."
+          }
+        ]
+      },
+      {
+        "answer": "Duke Weaselton",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Duke Weaselton is not the apparent-son character identified.",
+        "sources": [
+          {
+            "url": "https://assets.scriptslug.com/live/pdf/scripts/zootopia-2016.pdf",
+            "locator": "Studio screenplay hosted externally, printed pages 24-25: ice-pop scam, Nick apparent son identified as FINNICK; payment/diaper reveal."
+          }
+        ]
+      },
+      {
+        "answer": "Jerry Vole",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Jerry Vole is not the apparent-son character identified.",
+        "sources": [
+          {
+            "url": "https://assets.scriptslug.com/live/pdf/scripts/zootopia-2016.pdf",
+            "locator": "Studio screenplay hosted externally, printed pages 24-25: ice-pop scam, Nick apparent son identified as FINNICK; payment/diaper reveal."
+          }
+        ]
+      },
+      {
+        "answer": "Peter Moosebridge",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Peter Moosebridge is not the apparent-son character identified.",
+        "sources": [
+          {
+            "url": "https://assets.scriptslug.com/live/pdf/scripts/zootopia-2016.pdf",
+            "locator": "Studio screenplay hosted externally, printed pages 24-25: ice-pop scam, Nick apparent son identified as FINNICK; payment/diaper reveal."
+          }
+        ]
+      }
+    ]
+  }
+}

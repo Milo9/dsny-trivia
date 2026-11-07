@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 312,
+  "hash": "444a021cffccb840a96132e878ccf0f15d3cd73994ce28f6fbb202c5e04ef1f1",
+  "questionSnapshot": {
+    "id": 312,
+    "question": "In The Nightmare Before Christmas, what are the names of Oogie Boogie's three trick-or-treat helpers?",
+    "answers": [
+      "Lock, Shock, and Barrel",
+      "Grim, Ghost, and Ghoul",
+      "Trick, Treat, and Terror",
+      "Bone, Blood, and Bite"
+    ],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Confirmed the group belongs to Oogie as well as doing Jack errands; those roles coexist. Official introduction explicitly supplies the full trio, excluding all invented alternative sets. Main theatrical film, character category and medium three-name recall; no same-fact question in the full Nightmare search. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+  "verification": {
+    "context": "In The Nightmare Before Christmas, what are the names of Oogie Boogie's three trick-or-treat helpers? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Disney names the minion trio Lock, Shock and Barrel. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+      "sources": [
+        {
+          "url": "https://news.disney.com/quiz-are-you-lock-shock-or-barrel-from-the-nightmare-before-christmas",
+          "locator": "Introduction explicitly names Lock, Shock and Barrel as Oogie Boogie minions and discusses capturing Sandy Claws"
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Confirmed the group belongs to Oogie as well as doing Jack errands; those roles coexist. Official introduction explicitly supplies the full trio, excluding all invented alternative sets. Main theatrical film, character category and medium three-name recall; no same-fact question in the full Nightmare search."
+    },
+    "options": [
+      {
+        "answer": "Lock, Shock, and Barrel",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Disney names the minion trio Lock, Shock and Barrel.",
+        "sources": [
+          {
+            "url": "https://news.disney.com/quiz-are-you-lock-shock-or-barrel-from-the-nightmare-before-christmas",
+            "locator": "Introduction explicitly names Lock, Shock and Barrel as Oogie Boogie minions and discusses capturing Sandy Claws"
+          }
+        ]
+      },
+      {
+        "answer": "Grim, Ghost, and Ghoul",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Grim, Ghost and Ghoul is not the identified trio.",
+        "sources": [
+          {
+            "url": "https://news.disney.com/quiz-are-you-lock-shock-or-barrel-from-the-nightmare-before-christmas",
+            "locator": "Introduction explicitly names Lock, Shock and Barrel as Oogie Boogie minions and discusses capturing Sandy Claws"
+          }
+        ]
+      },
+      {
+        "answer": "Trick, Treat, and Terror",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Trick, Treat and Terror is not the identified trio.",
+        "sources": [
+          {
+            "url": "https://news.disney.com/quiz-are-you-lock-shock-or-barrel-from-the-nightmare-before-christmas",
+            "locator": "Introduction explicitly names Lock, Shock and Barrel as Oogie Boogie minions and discusses capturing Sandy Claws"
+          }
+        ]
+      },
+      {
+        "answer": "Bone, Blood, and Bite",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Bone, Blood and Bite is not the identified trio.",
+        "sources": [
+          {
+            "url": "https://news.disney.com/quiz-are-you-lock-shock-or-barrel-from-the-nightmare-before-christmas",
+            "locator": "Introduction explicitly names Lock, Shock and Barrel as Oogie Boogie minions and discusses capturing Sandy Claws"
+          }
+        ]
+      }
+    ]
+  }
+}

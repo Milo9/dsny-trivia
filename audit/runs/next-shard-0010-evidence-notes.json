@@ -1,0 +1,2183 @@
+{
+  "schema": 1,
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "sourcesChecked": [
+    "b10-5k",
+    "b10-5kpanel",
+    "b10-alice",
+    "b10-aristocats",
+    "b10-bigben",
+    "b10-bugs",
+    "b10-canada",
+    "b10-coco",
+    "b10-colors",
+    "b10-command",
+    "b10-evelyn",
+    "b10-evelyndialogue",
+    "b10-fantasiamap",
+    "b10-fear",
+    "b10-fearinterview",
+    "b10-felicia",
+    "b10-fidget",
+    "b10-finaldeath",
+    "b10-flik",
+    "b10-goodcatalog",
+    "b10-goodcompany",
+    "b10-hal",
+    "b10-halroach",
+    "b10-incredibles",
+    "b10-inside",
+    "b10-island",
+    "b10-islandlist",
+    "b10-laugh",
+    "b10-luca",
+    "b10-luigi",
+    "b10-mintz",
+    "b10-nemoscene",
+    "b10-nemospecies",
+    "b10-nemoturtles",
+    "b10-onward",
+    "b10-palo",
+    "b10-pan",
+    "b10-pinocchio",
+    "b10-ports",
+    "b10-rite",
+    "b10-roquefort",
+    "b10-sina",
+    "b10-sinacast",
+    "b10-soul",
+    "b10-toad",
+    "b10-toy2",
+    "b10-toy4",
+    "b10-up",
+    "b10-wall",
+    "b10-wet",
+    "b10-whales"
+  ],
+  "reviews": [
+    {
+      "questionId": 482,
+      "hash": "263bcf602b5072a425eec92ae3e0af0cf1aee9f6e4837f311e5d4e6772ca4a86",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Easy film-premise recognition; distinct from 1437 piano instrument and 661 soul number; no real TV scope.",
+      "context": "Pixar feature identity from its jazz protagonist and accidental cosmic journey.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Joe Gardner is Soul's jazz pianist, entering the cosmic realm after a misstep.",
+        "sources": [
+          "b10-soul",
+          "b10-coco",
+          "b10-inside",
+          "b10-onward"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Soul has the identified jazz protagonist and journey.",
+          "sources": [
+            "b10-soul",
+            "b10-coco",
+            "b10-inside",
+            "b10-onward"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Coco follows young Miguel and his ancestors, not jazz pianist Joe.",
+          "sources": [
+            "b10-soul",
+            "b10-coco",
+            "b10-inside",
+            "b10-onward"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Inside Out follows Riley's emotions, not a jazz musician in an afterlife.",
+          "sources": [
+            "b10-soul",
+            "b10-coco",
+            "b10-inside",
+            "b10-onward"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Onward follows elf brothers on a magical quest, not Joe's journey.",
+          "sources": [
+            "b10-soul",
+            "b10-coco",
+            "b10-inside",
+            "b10-onward"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Coco also depicts the dead and music, but its child guitarist does not fit the jazz-musician conjunction. Inside Out's mental world is not this cosmic journey."
+      }
+    },
+    {
+      "questionId": 483,
+      "hash": "5deb7af51df1860c568623b0b168fad5de94885b02bf19d20ffef5c7df7013a4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Correct film title and medium twist recall; q1289 asks public DevTech leadership, q1573 hypnosis device, q1575 vehicle, all separate facts.",
+      "context": "Original 2018 Incredibles 2; mastermind rather than delivery-driver decoy.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Evelyn confesses creating the Screenslaver and controlling the delivery driver; the plot account corroborates.",
+        "sources": [
+          "b10-evelyn",
+          "b10-evelyndialogue"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Evelyn creates and controls the scheme.",
+          "sources": [
+            "b10-evelyn",
+            "b10-evelyndialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Evelyn explicitly says Winston does not know; he is her unwitting brother.",
+          "sources": [
+            "b10-evelyn",
+            "b10-evelyndialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Underminer is the separate opening robber, not this plot's creator.",
+          "sources": [
+            "b10-evelyn",
+            "b10-evelyndialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Selick is the diplomat targeted by the plot, not its creator.",
+          "sources": [
+            "b10-evelyn",
+            "b10-evelyndialogue"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The man initially arrested is a hypnotized decoy. Masterminds precisely identifies Evelyn without incorrectly treating every masked wearer as her."
+      }
+    },
+    {
+      "questionId": 484,
+      "hash": "6fd41b69400a79b979720a6ae7992b084005a956e75e6fa0c373e46c55928046",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Hard: the proper name is obscure and not introduced in dialogue. No second Hal identity question found in the full-bank search.",
+      "context": "WALL-E companion name, not a word for his species.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney explicitly names the cockroach Hal and labels him in the gallery.",
+        "sources": [
+          "b10-hal",
+          "b10-halroach"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Hal is the documented proper name.",
+          "sources": [
+            "b10-hal",
+            "b10-halroach"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hank is a different name, not the named cockroach.",
+          "sources": [
+            "b10-hal",
+            "b10-halroach"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bug describes a kind of creature but is not the proper name Disney gives him.",
+          "sources": [
+            "b10-hal",
+            "b10-halroach"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rex is not the companion's documented name.",
+          "sources": [
+            "b10-hal",
+            "b10-halroach"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Lowercase bug could describe him, but the question asks his name; Disney's two specific captions/articles establish Hal."
+      }
+    },
+    {
+      "questionId": 485,
+      "hash": "49bf2b897a20d2698a290fd31bbc004b1dc503b7384ca198531cd1951570b8fb",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium setting-name recall; distinct from ancestor names, holiday, instrument, shoemaking trade and guitar provenance.",
+      "context": "Fictional living-world town, not a real filming location.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar's Santa Cecilia section places Miguel's family compound there.",
+        "sources": [
+          "b10-coco"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Santa Cecilia names the documented town.",
+          "sources": [
+            "b10-coco"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Santa María differs from the specified town name.",
+          "sources": [
+            "b10-coco"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "San Miguel is not the documented town, despite matching Miguel's given name.",
+          "sources": [
+            "b10-coco"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Santa Rosa is not that town's name.",
+          "sources": [
+            "b10-coco"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Real Mexican towns or production inspirations do not rename the fictional setting. All four are parallel Spanish place names."
+      }
+    },
+    {
+      "questionId": 486,
+      "hash": "fe7172474f7a5d7319c8db2665f2473e01c64ea682338f5ae5feb0135082f3c9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Easy central reunion; distinct from q2003's Giggle friend and q2365's Molly identity. Clarified rather than changed the keyed answer.",
+      "context": "Toy Story 4 reunion after years of separation.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar specifically describes Bo as a long-lost friend separated for years and Woody's unexpected reunion.",
+        "sources": [
+          "b10-toy4"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Bo Peep is the long-lost friend.",
+          "sources": [
+            "b10-toy4"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Buzz is still part of the gang; he is not the friend absent for years.",
+          "sources": [
+            "b10-toy4"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jessie remains with the gang rather than being this long-lost friend.",
+          "sources": [
+            "b10-toy4"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Forky is newly created by Bonnie and cannot be a friend from years earlier.",
+          "sources": [
+            "b10-toy4"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Woody meets Buzz and Jessie again after brief separations too, so final wording requires years apart. Forky is new, eliminating another literal reading of reunion."
+      }
+    },
+    {
+      "questionId": 489,
+      "hash": "df1e182139a8002cf2030f34fc3d428e5e3e429f818afecdab6703b1029a4a60",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium paired recall; distinct from q634 Bob's strength and q1571 Voyd's portals; options comparable in form.",
+      "context": "Violet's canonical pair of powers in The Incredibles.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Violet profile expressly pairs invisibility with force fields; profiles distinguish Dash's speed and Helen's stretch.",
+        "sources": [
+          "b10-incredibles"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Both force fields and invisibility are Violet's powers.",
+          "sources": [
+            "b10-incredibles"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Flying and super strength is not her documented pair.",
+          "sources": [
+            "b10-incredibles"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Speed is Dash's power, so speed plus invisibility does not match Violet's pair.",
+          "sources": [
+            "b10-incredibles"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Elasticity is Helen's power, so elasticity plus force fields does not match Violet's pair.",
+          "sources": [
+            "b10-incredibles"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Running or being carried through the air is not super-speed or flight. A partially true pair does not satisfy the request for both canonical powers."
+      }
+    },
+    {
+      "questionId": 490,
+      "hash": "147604414bdca8c10b37bba8bd628de39c9cd645660cad8ba3ab1aad476bda33",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium action attribution; distinct from q656 Prospector identity, q1023 franchise and q631 Jessie identity.",
+      "context": "Human who kidnaps Woody for the Japanese museum sale in Toy Story 2.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar names Al McWhiggin as kidnapper and describes his museum sale ambition.",
+        "sources": [
+          "b10-toy2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Al is the collector who steals Woody.",
+          "sources": [
+            "b10-toy2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Stinky Pete is one of the collected toys; wanting the sale does not make him the thief.",
+          "sources": [
+            "b10-toy2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Zurg is Buzz's enemy, not Woody's human kidnapper.",
+          "sources": [
+            "b10-toy2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lotso is not the named kidnapper Al; he is a different toy character.",
+          "sources": [
+            "b10-toy2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Stinky Pete favors the museum and obstructs escape, but the question asks who steals Woody. The explicit actor-action relation excludes him."
+      }
+    },
+    {
+      "questionId": 491,
+      "hash": "b0b69eca9ab3c395c9195e42c62bd346fe0d86b55db24522e63521245d36c9ec",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium invention recall; distinct from q1022 circus-bug recruitment, q650 villain species and q197 Hopper name. Changed to parallel animal alternatives and a precise model-shape premise.",
+      "context": "Animal imitated by Flik's grasshopper-frightening model, not the living bird in the climax.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "D23 directly identifies the bird-shaped aircraft built to frighten grasshoppers.",
+        "sources": [
+          "b10-flik"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The model imitates a bird.",
+          "sources": [
+            "b10-flik"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A bat has a different animal form from the specified bird model.",
+          "sources": [
+            "b10-flik"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A frog has a different animal form from that model.",
+          "sources": [
+            "b10-flik"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A spider has a different animal form from that model.",
+          "sources": [
+            "b10-flik"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The question asks the model's particular shape rather than every invention Flik might build. The bird-shaped attribution directly excludes the three other shapes without relying on silence about other traps."
+      }
+    },
+    {
+      "questionId": 492,
+      "hash": "82d8e12980fa1ba36988bf5579858157a4735faa1528bb3d43431188dc1f0799",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium world-name recall; q1414 asks the sequel's camp sport, an additional film/event relation, not this island label.",
+      "context": "Original Inside Out; Riley's sport-linked Personality Island.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney's core-memory clip description names Hockey Island.",
+        "sources": [
+          "b10-island",
+          "b10-islandlist"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Hockey Island is the named sporting island.",
+          "sources": [
+            "b10-island",
+            "b10-islandlist"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Soccer Island is not the documented island name.",
+          "sources": [
+            "b10-island",
+            "b10-islandlist"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Baseball Island is not its name.",
+          "sources": [
+            "b10-island",
+            "b10-islandlist"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Skating Island differs from the specific Hockey Island name.",
+          "sources": [
+            "b10-island",
+            "b10-islandlist"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Hockey uses skating but the label is Hockey Island, not Skating Island. These are competing proper labels, not general activities Riley might enjoy."
+      }
+    },
+    {
+      "questionId": 493,
+      "hash": "a15923e639d43199e85bb2a4a472143dcadafcce7ec6a1e2df61417e555a6769",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium destination recall; q1431 asks the wife's identity, q2183 her written message and q1432 Muntz's motive, all requiring separate facts.",
+      "context": "Carl and Ellie's named dream destination in Up.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Ellie's profile names their pledged destination Paradise Falls.",
+        "sources": [
+          "b10-up"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Paradise Falls is the named fictional destination.",
+          "sources": [
+            "b10-up"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Angel Falls is a real-world inspiration, not its story name.",
+          "sources": [
+            "b10-up"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Victoria Falls is not their named destination.",
+          "sources": [
+            "b10-up"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Iguazu Falls is not their named destination.",
+          "sources": [
+            "b10-up"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A visual inspiration in Venezuela does not turn Angel Falls into the fictional proper name. The story destination is explicit."
+      }
+    },
+    {
+      "questionId": 495,
+      "hash": "9f4aa7842e7a3a3ff35efd38b41f28cb2a3b8422a22530a406f0d529e76c32a0",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium ship-name recall; distinct from Auto identity, captain name, consumer corporation and EVE acronym.",
+      "context": "The Captain's luxury ship, with no claim about every surviving human.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar names the human-carrying luxury mother ship the Axiom.",
+        "sources": [
+          "b10-wall"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Axiom is the documented ship.",
+          "sources": [
+            "b10-wall"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Genesis differs from its name.",
+          "sources": [
+            "b10-wall"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Elysium differs from its name.",
+          "sources": [
+            "b10-wall"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Olympus differs from its name.",
+          "sources": [
+            "b10-wall"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The original all-remaining-humans quantifier was not established. Final wording identifies the Captain's particular luxury ship and requires only its unique name."
+      }
+    },
+    {
+      "questionId": 496,
+      "hash": "ac1ece389087cf3df790cf3e1ea5686d663e0f7d3c225b273dfd015cce4f9342",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium terminology recall; q2370 asks the preceding song, a different fact. Corrected unsupported forever claim and made all options parallel terms.",
+      "context": "Héctor's label after Chicharrón fades; no claim about unknown subsequent existence.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Printed p.67 calls disappearance from this world the Final Death.",
+        "sources": [
+          "b10-finaldeath"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Final Death is Héctor's explicit term.",
+          "sources": [
+            "b10-finaldeath"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Second Journey is not the term in that explanation.",
+          "sources": [
+            "b10-finaldeath"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Rebirth is not the term used there.",
+          "sources": [
+            "b10-finaldeath"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Spirit Awakening is not his term.",
+          "sources": [
+            "b10-finaldeath"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Héctor says no one knows where Chicharrón went. Asking the term avoids making unsupported assertions about reincarnation, ghosts or forever after disappearance."
+      }
+    },
+    {
+      "questionId": 497,
+      "hash": "d70b06d84d7d1caa944e6f3b1ea3558e075eea0a551bb656030b4932aece9e7b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium transformation rule; distinct from film identity q472, town q781 and race q1043. Parallel visual alternatives eliminate the former long-answer clue.",
+      "context": "Luca and Alberto's visible wet body regions on land.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The production discussion describes wet/dry-triggered human-to-monster transformation with variable scale coverage.",
+        "sources": [
+          "b10-wet",
+          "b10-luca"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Wet parts reveal their sea-monster form.",
+          "sources": [
+            "b10-wet",
+            "b10-luca"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Human appearance is their dry camouflage, not the wet appearance.",
+          "sources": [
+            "b10-wet",
+            "b10-luca"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The wet transformation produces scales and monster features, not stone.",
+          "sources": [
+            "b10-wet",
+            "b10-luca"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The transformation produces physical monster features, not transparency.",
+          "sources": [
+            "b10-wet",
+            "b10-luca"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A splash need not transform the whole body. Body-parts wording accommodates partial coverage and asks appearance, avoiding unsupported exclusion of simultaneous strength or breathing abilities."
+      }
+    },
+    {
+      "questionId": 498,
+      "hash": "f7a5db46958709686717c4b4cf962a97d5ea5318b2c08b968e836f6eb3b08a72",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium organization-name recall; no television-content scope expansion. Distinct from q298 toy identity and q72 catchphrase.",
+      "context": "Buzz's belief about his mission in Toy Story (1995), not the later television series.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Buzz profile says he believes he is on a secret mission for Star Command.",
+        "sources": [
+          "b10-command"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Star Command is the named mission organization.",
+          "sources": [
+            "b10-command"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Space Rangers Inc. is not the organization named by Pixar.",
+          "sources": [
+            "b10-command"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Galaxy Patrol is not that name.",
+          "sources": [
+            "b10-command"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Universe Corps is not that name.",
+          "sources": [
+            "b10-command"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Buzz is a toy who believes the mission is real; the question preserves that distinction. Space Ranger is his role, not evidence of an astronaut training program."
+      }
+    },
+    {
+      "questionId": 499,
+      "hash": "ee686ee2f632258df40c1645cfb893cc187a828e7e244720c109eaf15057847c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium location recall. q1272 asks royalty, not island name; the outside-scope Atta/Dot ambiguity is not resolved by this review.",
+      "context": "Flik's colony location name in the original theatrical A Bug's Life.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar's synopsis explicitly calls the threatened home Ant Island.",
+        "sources": [
+          "b10-bugs"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Ant Island is the stated home.",
+          "sources": [
+            "b10-bugs"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Colony Alpha is not its proper name.",
+          "sources": [
+            "b10-bugs"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bug Haven is not its proper name.",
+          "sources": [
+            "b10-bugs"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Grassland Colony is not its proper name.",
+          "sources": [
+            "b10-bugs"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Ant is a species but Ant Island is the actual place name; the other generic colony labels are not alternate names supplied by the source."
+      }
+    },
+    {
+      "questionId": 500,
+      "hash": "0650392c3f9f41a6c3e7bb1f65c766551fed89a8b9d36e14eac138a3b5571a3a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium central world-building recall; q1439 asks Terry's identity and q2165 the composers, distinct facts.",
+      "context": "The realm in Soul for forming new souls' personalities.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar's opening synopsis identifies the Great Before and its personality-forming purpose.",
+        "sources": [
+          "b10-soul"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Great Before is the realm with the stated purpose.",
+          "sources": [
+            "b10-soul"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Great Beyond is the distinct destination Terry counts entrants to, not this realm for new souls.",
+          "sources": [
+            "b10-soul"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Soul World is not the specified proper name.",
+          "sources": [
+            "b10-soul"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Limbo is not the specified proper name.",
+          "sources": [
+            "b10-soul"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "You Seminar is another designation used in the film but was removed from the sole parenthetical answer. Final stem avoids repeating before and all options are parallel place names."
+      }
+    },
+    {
+      "questionId": 272,
+      "hash": "65f425431a0578ba2163a3308bad5f341d3f0f045c50541993b7be3b7af1e307",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium character-role recall; q1063 asks Madame Bonfamille's ownership, not Roquefort's rescue role; q311 asks the kitten trio.",
+      "context": "The mouse involved in rescuing Duchess's family.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "D23 directly calls Roquefort a mouse and identifies his rescue role.",
+        "sources": [
+          "b10-aristocats",
+          "b10-roquefort"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Roquefort is the rescuing mouse.",
+          "sources": [
+            "b10-aristocats",
+            "b10-roquefort"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Toulouse is one of Duchess's kittens, not the mouse.",
+          "sources": [
+            "b10-aristocats",
+            "b10-roquefort"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Berlioz is another kitten, not the mouse.",
+          "sources": [
+            "b10-aristocats",
+            "b10-roquefort"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lafayette is not the specifically identified mouse Roquefort.",
+          "sources": [
+            "b10-aristocats",
+            "b10-roquefort"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Helping cats alone is too broad, but the mouse qualifier separates Roquefort from the kittens and the farm dog. It does not ask the family's human owner."
+      }
+    },
+    {
+      "questionId": 309,
+      "hash": "10edaa322746dbf56886829ad4502a3ad860ccb751eea70e76d53cab5facc617",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Easy visual-design recognition; q1284 tests Disgust/green and q1313 Joy/yellow, different color-to-character facts.",
+      "context": "Body color of Fear in original Inside Out.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Museum and production-interview text agree Fear's design is purple; the cast listing contrasts the other colors.",
+        "sources": [
+          "b10-fear",
+          "b10-fearinterview",
+          "b10-colors"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Fear is purple.",
+          "sources": [
+            "b10-fear",
+            "b10-fearinterview",
+            "b10-colors"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Disgust is green, not purple.",
+          "sources": [
+            "b10-fear",
+            "b10-fearinterview",
+            "b10-colors"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Anger is red, not purple.",
+          "sources": [
+            "b10-fear",
+            "b10-fearinterview",
+            "b10-colors"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Sadness is blue, not purple.",
+          "sources": [
+            "b10-fear",
+            "b10-fearinterview",
+            "b10-colors"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The question concerns the character's design color, not clothes, illumination or an emotion-colored memory orb. Each distractor has a different documented color."
+      }
+    },
+    {
+      "questionId": 316,
+      "hash": "ed15f3e91f914ea3e378e394abbabfa76e8d90247ff56fd662d096e7ed2c3283",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium family-name recall; q884 grandmother and q1095 father are separate relations; no remake-only evidence used.",
+      "context": "Moana's mother in the original animated film.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The official Sina biography calls her Moana's mother, with original-cast English name confirmation.",
+        "sources": [
+          "b10-sina",
+          "b10-sinacast"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Sina is Moana's mother.",
+          "sources": [
+            "b10-sina",
+            "b10-sinacast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tala is her grandmother, not mother.",
+          "sources": [
+            "b10-sina",
+            "b10-sinacast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pepa is not the mother identified by the official Sina biography.",
+          "sources": [
+            "b10-sina",
+            "b10-sinacast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tui is Moana's father and Sina's husband, not her mother.",
+          "sources": [
+            "b10-sina",
+            "b10-sinacast"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A mother-figure reading does not make grandmother Tala the named mother. The exact family role and name are established."
+      }
+    },
+    {
+      "questionId": 317,
+      "hash": "f54d40185d8faf87ea5a2eee111971923740249eb5f3e769a19afba7ac7cfa79",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium vehicle recall; q947 tests Lewis Carroll film adaptation and q905 identifies Toad from its story, different facts.",
+      "context": "Disneyland California Fantasyland vehicles; current configuration.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Disney describes the Alice ride as an oversized caterpillar and gives different vehicles for each distractor.",
+        "sources": [
+          "b10-alice",
+          "b10-toad",
+          "b10-pan",
+          "b10-pinocchio"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Alice uses the caterpillar.",
+          "sources": [
+            "b10-alice",
+            "b10-toad",
+            "b10-pan",
+            "b10-pinocchio"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Mr. Toad uses a motorcar.",
+          "sources": [
+            "b10-alice",
+            "b10-toad",
+            "b10-pan",
+            "b10-pinocchio"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Peter Pan uses a pirate ship.",
+          "sources": [
+            "b10-alice",
+            "b10-toad",
+            "b10-pan",
+            "b10-pinocchio"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Pinocchio uses a woodcarver's cart.",
+          "sources": [
+            "b10-alice",
+            "b10-toad",
+            "b10-pan",
+            "b10-pinocchio"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Fantasyland setting alone fits several choices; the actual vehicles distinguish all four. Alice's film authorship is unrelated to vehicle identity."
+      }
+    },
+    {
+      "questionId": 318,
+      "hash": "4ee5b14035bdfa1cecde9799dd642ec8a73938f067fd6e4d91dc81ce3aa9aa69",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Hard final-scene location recall; distinct from q1332 Basil's home address and q325 Ratigan's species.",
+      "context": "Final Basil-Ratigan confrontation in the 1986 film.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "D23 explicitly places the climactic gearworks fight in Big Ben.",
+        "sources": [
+          "b10-bigben"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Big Ben is the named location.",
+          "sources": [
+            "b10-bigben"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tower Bridge is not the documented clockwork fight location.",
+          "sources": [
+            "b10-bigben"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Buckingham Palace is part of the royal plot but not the final clockwork duel.",
+          "sources": [
+            "b10-bigben"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Westminster Abbey is not the final fight location.",
+          "sources": [
+            "b10-bigben"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguish the palace plot from the later climax. Big Ben is the familiar landmark name used by Disney for the clock-tower sequence."
+      }
+    },
+    {
+      "questionId": 326,
+      "hash": "7594c4d77e5ca9b631d7104d5a0d490c60133094bcb5895223267f4c6457ece7",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Hard secondary-character name; q1115 asks the bat henchman and q2500 his peg leg, separate facts.",
+      "context": "Name of Ratigan's cat, not any servant associated with him.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Felicia entry names the feline; Fidget has the separate henchman role, while Olivia and Dawson oppose Ratigan.",
+        "sources": [
+          "b10-felicia",
+          "b10-fidget",
+          "b10-bigben"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Felicia is the named feline.",
+          "sources": [
+            "b10-felicia",
+            "b10-fidget",
+            "b10-bigben"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fidget is Ratigan's henchman, not his cat.",
+          "sources": [
+            "b10-felicia",
+            "b10-fidget",
+            "b10-bigben"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Olivia is the kidnapped toymaker's daughter, not the cat.",
+          "sources": [
+            "b10-felicia",
+            "b10-fidget",
+            "b10-bigben"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dawson is Basil's doctor companion, not the cat.",
+          "sources": [
+            "b10-felicia",
+            "b10-fidget",
+            "b10-bigben"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The original pet wording could be stretched to Fidget; explicitly asking the pet cat excludes this reading. Each distractor's role is documented."
+      }
+    },
+    {
+      "questionId": 329,
+      "hash": "52fabf7b72a64dd460935cc64eb1040dea57308982d404fe49574b3e9d9c5a9d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium soundtrack recall; q531 asks a different opening song, while q1003 asks Dodger's solo and q1254 Rita's, all separate credits.",
+      "context": "Original film attribution of the song Good Company.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Scene commentary and the specific soundtrack catalog place Good Company in Oliver & Company.",
+        "sources": [
+          "b10-goodcompany",
+          "b10-goodcatalog"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Oliver & Company contains the Jenny/Oliver song.",
+          "sources": [
+            "b10-goodcompany",
+            "b10-goodcatalog"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Aristocats is not the film credited for this specific song and scene.",
+          "sources": [
+            "b10-goodcompany",
+            "b10-goodcatalog"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Rescuers is not the film credited for this specific song and scene.",
+          "sources": [
+            "b10-goodcompany",
+            "b10-goodcatalog"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Fox and the Hound is not the film credited for this specific song and scene.",
+          "sources": [
+            "b10-goodcompany",
+            "b10-goodcatalog"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Both cat films can depict companionship, but that theme cannot substitute for the actual song credit. Company shared by the song and film titles is necessary nomenclature, not a source establishing the credit."
+      }
+    },
+    {
+      "questionId": 333,
+      "hash": "b2f2870e870dcb0a3f38e9d37ae0266e7e2c472b698a50e024f1c6828cb57d41",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium park-film location; q2224 asks China's separate Circle-Vision title. Current attraction recheck scheduled.",
+      "context": "EPCOT World Showcase location of Far and Wide; not the full answer-giving title in the stem.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Disney names the Canada presentation Canada Far and Wide in Circle-Vision 360.",
+        "sources": [
+          "b10-canada"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Canada is the identified pavilion.",
+          "sources": [
+            "b10-canada"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "United Kingdom is a different pavilion, not the named Canada presentation's location.",
+          "sources": [
+            "b10-canada"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "France is a different pavilion, not this presentation's location.",
+          "sources": [
+            "b10-canada"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The American Adventure is a different pavilion, not this Canadian presentation's location.",
+          "sources": [
+            "b10-canada"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The shortened title preserves a meaningful location question. Sharing projection technology with other countries does not move this particular named film."
+      }
+    },
+    {
+      "questionId": 375,
+      "hash": "30f41601b020a3c58c45c130f81b2d162c46808aa56ac1097fbf9ac061523d31",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Hard distribution-history recall; q408 asks rights-owning studio, while q2422 asks Mickey's creation link. Clarified actor/event without changing answer.",
+      "context": "1928 Oswald distribution contract renewal; no implication that Walt legally owned the character.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Museum documentation states Mintz demanded a cut instead of the raise Walt requested.",
+        "sources": [
+          "b10-mintz"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Charles Mintz made that demand.",
+          "sources": [
+            "b10-mintz"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Carl Laemmle's Universal owned the character, but the negotiation demand is attributed to Mintz.",
+          "sources": [
+            "b10-mintz"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Roy is Walt's partner, not the distributor demanding the cut.",
+          "sources": [
+            "b10-mintz"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pat Powers belongs to the later Mickey sound/distribution arrangement.",
+          "sources": [
+            "b10-mintz"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Universal ownership is a different question from who demanded the cut. Date and negotiation event distinguish Mintz from the subsequent Powers conflict."
+      }
+    },
+    {
+      "questionId": 389,
+      "hash": "8e540f7e8dd81e303d633f1528a0be27e16875482720b6a622097b3db0444ea7",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium segment imagery; q2036 asks the flying-whale sequel's music, requiring another association.",
+      "context": "Rite of Spring within Fantasia (1940), not other segments or the sequel.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Museum and AFI descriptions specifically identify dinosaurs in Rite of Spring.",
+        "sources": [
+          "b10-rite",
+          "b10-fantasiamap",
+          "b10-whales"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Dinosaurs appear in this evolution sequence.",
+          "sources": [
+            "b10-rite",
+            "b10-fantasiamap",
+            "b10-whales"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Centaurs belong to Pastoral Symphony, a different segment.",
+          "sources": [
+            "b10-rite",
+            "b10-fantasiamap",
+            "b10-whales"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The dancing mushrooms belong to Nutcracker Suite, a different segment.",
+          "sources": [
+            "b10-rite",
+            "b10-fantasiamap",
+            "b10-whales"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Flying whales belong to Pines of Rome in Fantasia/2000, not this sequence.",
+          "sources": [
+            "b10-rite",
+            "b10-fantasiamap",
+            "b10-whales"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The stem specifies the segment, not the whole Fantasia franchise. Its prehistoric life sequence excludes the two mapped fantasy ballets and flying whales."
+      }
+    },
+    {
+      "questionId": 406,
+      "hash": "8f5b85d679c5b4179da38180c7391bb6753db5ff37af13d53f19916d50da7f3d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Hard international-park geography; q2641 asks railway transport, q2507 Lost River Delta's regional inspiration, different facts.",
+      "context": "Tokyo DisneySea themed ports, current description.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The official overview explicitly assigns New York and Cape Cod to American Waterfront.",
+        "sources": [
+          "b10-ports"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "American Waterfront has the two American harbors.",
+          "sources": [
+            "b10-ports"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Mediterranean Harbor is Southern European.",
+          "sources": [
+            "b10-ports"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Port Discovery is a futuristic marina.",
+          "sources": [
+            "b10-ports"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Lost River Delta is Central American jungle ruins.",
+          "sources": [
+            "b10-ports"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "New York and Cape Cod are a paired geographic theme, not just any waterfront or harbor. All four full official descriptions distinguish the ports."
+      }
+    },
+    {
+      "questionId": 427,
+      "hash": "e4e51ecfa71707949d841a023c7ac317677ecdf9d7fdfc6743d7bec7bee59b86",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium recreation-name recall; q141 island name and q1211 waterslide structure are distinct. Scheduled 90-day recheck; production flags left untouched.",
+      "context": "Self-paced Castaway Cay run/walk, bounded to November 2026.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The official island guide names the Castaway Cay 5K and classifies it as self-paced.",
+        "sources": [
+          "b10-5k",
+          "b10-5kpanel"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Castaway Cay 5K is the identified activity.",
+          "sources": [
+            "b10-5k",
+            "b10-5kpanel"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pelican Plunge Sprint is not the official self-paced activity name.",
+          "sources": [
+            "b10-5k",
+            "b10-5kpanel"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Serenity Bay Dash is not the identified activity name.",
+          "sources": [
+            "b10-5k",
+            "b10-5kpanel"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mickey Mile is not the island activity named in this guide.",
+          "sources": [
+            "b10-5k",
+            "b10-5kpanel"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "No formal start or registration is implied. Pelican Plunge and Serenity Bay exist as island places but do not make the invented run names valid; Mickey Mile is not this named 5K."
+      }
+    },
+    {
+      "questionId": 436,
+      "hash": "ede8ac097ba90f9196dfe4cc2e3f4bfe80cd1fd33bff878a2bed40942686f88c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Hard name-origin fact; q430 cuisine and q148 French-restaurant name are distinct. Restored Enchanté's spelling.",
+      "context": "Disney Cruise Line venue-name origin, not cuisine or present onboard service availability.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney expressly derives Palo from the gondoliers' long Venetian poles.",
+        "sources": [
+          "b10-palo"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Palo has the stated derivation.",
+          "sources": [
+            "b10-palo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Remy is not the venue named in the derivation.",
+          "sources": [
+            "b10-palo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Enchanté is not the venue named in that derivation.",
+          "sources": [
+            "b10-palo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lumiere's is not the venue named in that derivation.",
+          "sources": [
+            "b10-palo"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The final question follows Disney's wording for poles without asserting a particular use or an unbounded age policy. It asks etymology, not which restaurants serve Italian food."
+      }
+    },
+    {
+      "questionId": 469,
+      "hash": "68b646b751c5209305e1257488c7045a31b47c346185c4e4514d18bfb4185d15",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium civilian-name recall; distinct from Bob and Helen identities and Violet's powers.",
+      "context": "Lucius Best's superhero identity in The Incredibles.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar's Frozone profile explicitly maps Lucius Best to Frozone.",
+        "sources": [
+          "b10-incredibles"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Frozone is Lucius's hero identity.",
+          "sources": [
+            "b10-incredibles"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gazerbeam is not the hero identity assigned to Lucius.",
+          "sources": [
+            "b10-incredibles"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dynaguy is not the identity assigned to Lucius.",
+          "sources": [
+            "b10-incredibles"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Splashdown is not the identity assigned to Lucius.",
+          "sources": [
+            "b10-incredibles"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All options are superhero names, but the question asks a particular individual's alias. Other supers' existence does not create another Lucius alias."
+      }
+    },
+    {
+      "questionId": 478,
+      "hash": "eee9280350f3234a09bbea0f2ab837e50a35a1eb76044f5a91002ae8fa0d9c72",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium ending recall. q640 concerns the prior scream system; this asks the replacement. Series press material is evidence for film ending, with no series trivia added.",
+      "context": "End of theatrical Monsters, Inc.; after the change from scare work.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Official post-film continuity describes the plant harvesting laughter to fuel Monstropolis.",
+        "sources": [
+          "b10-laugh"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Laughter is the new power source.",
+          "sources": [
+            "b10-laugh"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Screams are the old power source replaced by laughter.",
+          "sources": [
+            "b10-laugh"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Solar energy is not the new source identified in this transition.",
+          "sources": [
+            "b10-laugh"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Doors provide access to children, not the newly harvested energy itself.",
+          "sources": [
+            "b10-laugh"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Doors need power and route the workers, but the energy input is laughter. After the change excludes the formerly correct screams answer."
+      }
+    },
+    {
+      "questionId": 487,
+      "hash": "c2062f68d27a4bb619c0d26b1c7ca85ffb0452415b92069421ac55ab310d5228",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium minor-character identity; q1299 asks Crush's son and q1049 teacher, separate relationships.",
+      "context": "Nemo's classmate Sheldon's species in Finding Nemo.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Aquarium and scene commentary identify Sheldon as a seahorse and distinguish Tad and Pearl; Pixar identifies Squirt as a turtle.",
+        "sources": [
+          "b10-nemospecies",
+          "b10-nemoscene",
+          "b10-nemoturtles"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Sheldon is the seahorse.",
+          "sources": [
+            "b10-nemospecies",
+            "b10-nemoscene",
+            "b10-nemoturtles"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Tad is a butterflyfish, not a seahorse.",
+          "sources": [
+            "b10-nemospecies",
+            "b10-nemoscene",
+            "b10-nemoturtles"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Pearl is an octopus, not a seahorse.",
+          "sources": [
+            "b10-nemospecies",
+            "b10-nemoscene",
+            "b10-nemoturtles"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Squirt is a turtle, not a seahorse.",
+          "sources": [
+            "b10-nemospecies",
+            "b10-nemoscene",
+            "b10-nemoturtles"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Although Squirt joins the school at the ending, he is still a turtle. This does not make the schoolmate qualifier an ambiguous species test."
+      }
+    },
+    {
+      "questionId": 488,
+      "hash": "5a35261fc686e6ca67f75baae9a582ffaf5a46272a37e2f8638b5c93a1c09431",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium storefront-name recall; distinct from Ramone's body-shop identity and Sally's motel role.",
+      "context": "Luigi's tire-shop proper name in Cars.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar explicitly names Luigi's Casa Della Tires.",
+        "sources": [
+          "b10-luigi"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Casa Della Tires is the documented shop name with Luigi's prefix omitted.",
+          "sources": [
+            "b10-luigi"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Luigi's Wheel Works is not the stated shop name.",
+          "sources": [
+            "b10-luigi"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Radiator Rubber is not the stated shop name.",
+          "sources": [
+            "b10-luigi"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Piston Cup Tires is not the stated shop name.",
+          "sources": [
+            "b10-luigi"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A generic business owned by Luigi could have many descriptive names; only Casa Della Tires matches the proper name. Guido assists rather than renames the shop."
+      }
+    }
+  ]
+}

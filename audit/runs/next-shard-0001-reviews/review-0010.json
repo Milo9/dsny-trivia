@@ -1,0 +1,80 @@
+{
+  "questionId": 10,
+  "hash": "d57f7ff0009fe02e6a8f79cf3b856e84f558a8c03bba1ab546f9f9df88b78930",
+  "questionSnapshot": {
+    "id": 10,
+    "question": "What special ability does Dumbo discover he has?",
+    "answers": [
+      "He can fly",
+      "He is super strong",
+      "He can speak",
+      "He is invisible"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Parallel powers, easy. #506 asks which body part enables flight; that is a new anatomical fact beyond naming the ability. #1054 concerns the confidence-giving feather.",
+  "verification": {
+    "context": "Dumbo, original 1941 animated film.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "He can fly",
+        "verdict": "correct",
+        "reason": "Dumbo discovers flight using his enormous ears.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/dumbo-film/",
+            "locator": "Opening synopsis: Dumbo discovers flight using oversized ears with help from his mouse friend Timothy; voice credits name Timothy."
+          }
+        ]
+      },
+      {
+        "answer": "He is super strong",
+        "verdict": "incorrect",
+        "reason": "The discovered unusual ability is aerial flight, not super strength.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/dumbo-film/",
+            "locator": "Opening synopsis: Dumbo discovers flight using oversized ears with help from his mouse friend Timothy; voice credits name Timothy."
+          }
+        ]
+      },
+      {
+        "answer": "He can speak",
+        "verdict": "incorrect",
+        "reason": "His discovery with Timothy concerns flying, not learning to speak.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/dumbo-film/",
+            "locator": "Opening synopsis: Dumbo discovers flight using oversized ears with help from his mouse friend Timothy; voice credits name Timothy."
+          }
+        ]
+      },
+      {
+        "answer": "He is invisible",
+        "verdict": "incorrect",
+        "reason": "Invisibility is not the discovered ability; he physically flies with his ears.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/dumbo-film/",
+            "locator": "Opening synopsis: Dumbo discovers flight using oversized ears with help from his mouse friend Timothy; voice credits name Timothy."
+          }
+        ]
+      }
+    ]
+  }
+}

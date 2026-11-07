@@ -1,0 +1,81 @@
+{
+  "questionId": 38,
+  "hash": "a655faaef07f404f5b856320e1752f591d4e96ab69e947c3dda3e7a67343ff0c",
+  "questionSnapshot": {
+    "id": 38,
+    "question": "In Up, what is the name of the exotic bird Carl and Russell encounter?",
+    "answers": [
+      "Kevin",
+      "Dug",
+      "Alpha",
+      "Beta"
+    ],
+    "difficulty": "medium",
+    "category": "pixar",
+    "film": "Up"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Four in-film animal names. Medium and Pixar category. #645 identifies the explorer Muntz, not the bird; #2057 and #2580 concern Kevin's sex, outside this fixed scope.",
+  "verification": {
+    "context": "Up, Pixar 2009 film.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Kevin",
+        "verdict": "correct",
+        "reason": "Kevin is the rare bird whom Russell names.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/upfilm",
+            "locator": "The Characters: Kevin is the bird named by Russell; Dug is a golden retriever; Alpha is a Doberman and Beta a Rottweiler in the Alpha Pack."
+          }
+        ]
+      },
+      {
+        "answer": "Dug",
+        "verdict": "incorrect",
+        "reason": "Dug is a golden retriever.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/upfilm",
+            "locator": "The Characters: Kevin is the bird named by Russell; Dug is a golden retriever; Alpha is a Doberman and Beta a Rottweiler in the Alpha Pack."
+          }
+        ]
+      },
+      {
+        "answer": "Alpha",
+        "verdict": "incorrect",
+        "reason": "Alpha is the Doberman dog-pack leader.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/upfilm",
+            "locator": "The Characters: Kevin is the bird named by Russell; Dug is a golden retriever; Alpha is a Doberman and Beta a Rottweiler in the Alpha Pack."
+          }
+        ]
+      },
+      {
+        "answer": "Beta",
+        "verdict": "incorrect",
+        "reason": "Beta is the Rottweiler lieutenant.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/upfilm",
+            "locator": "The Characters: Kevin is the bird named by Russell; Dug is a golden retriever; Alpha is a Doberman and Beta a Rottweiler in the Alpha Pack."
+          }
+        ]
+      }
+    ]
+  }
+}

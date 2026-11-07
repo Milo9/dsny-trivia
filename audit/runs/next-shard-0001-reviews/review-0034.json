@@ -1,0 +1,80 @@
+{
+  "questionId": 34,
+  "hash": "42dbdcc88462c36cb17d9472b66a82ca8ea917bb3c47e3c7d258ddaf4025e6b7",
+  "questionSnapshot": {
+    "id": 34,
+    "question": "Who presents Simba to the animals at the beginning of The Lion King?",
+    "answers": [
+      "Rafiki",
+      "Zazu",
+      "Mufasa",
+      "Sarabi"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Four participating court/family names. Medium scene recall. Rafiki's species and spiritual guidance are different facts; #2 parent identity cannot establish who performs this ritual.",
+  "verification": {
+    "context": "The Lion King, Disney animated 1994 film, opening newborn presentation on Pride Rock.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Rafiki",
+        "verdict": "correct",
+        "reason": "Rafiki's profile and the newborn gallery caption identify him as the anointer/presenter holding Simba.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-lion-king",
+            "locator": "The Characters: Simba, Zazu, Rafiki, Scar and Mufasa/Sarabi profiles; gallery caption identifies Rafiki holding newborn Simba, with Mufasa and Sarabi alongside."
+          }
+        ]
+      },
+      {
+        "answer": "Zazu",
+        "verdict": "incorrect",
+        "reason": "Zazu is the advisor; the gallery identifies Rafiki as the figure holding the baby.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-lion-king",
+            "locator": "The Characters: Simba, Zazu, Rafiki, Scar and Mufasa/Sarabi profiles; gallery caption identifies Rafiki holding newborn Simba, with Mufasa and Sarabi alongside."
+          }
+        ]
+      },
+      {
+        "answer": "Mufasa",
+        "verdict": "incorrect",
+        "reason": "Mufasa is Simba's father and stands alongside the presenter rather than holding him aloft.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-lion-king",
+            "locator": "The Characters: Simba, Zazu, Rafiki, Scar and Mufasa/Sarabi profiles; gallery caption identifies Rafiki holding newborn Simba, with Mufasa and Sarabi alongside."
+          }
+        ]
+      },
+      {
+        "answer": "Sarabi",
+        "verdict": "incorrect",
+        "reason": "Sarabi is Simba's mother, shown alongside Rafiki rather than performing the presentation.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-lion-king",
+            "locator": "The Characters: Simba, Zazu, Rafiki, Scar and Mufasa/Sarabi profiles; gallery caption identifies Rafiki holding newborn Simba, with Mufasa and Sarabi alongside."
+          }
+        ]
+      }
+    ]
+  }
+}

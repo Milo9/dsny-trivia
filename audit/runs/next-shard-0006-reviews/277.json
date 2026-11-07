@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 277,
+  "hash": "e47c8432c3965e95ebc807ed276c1cd5ba43aed9fdb7bfc2ed503db77e1a5abc",
+  "questionSnapshot": {
+    "id": 277,
+    "question": "In The Hunchback of Notre Dame, what is the name of Esmeralda's pet goat?",
+    "answers": [
+      "Djali",
+      "Clopin",
+      "Achilles",
+      "Quasi"
+    ],
+    "difficulty": "hard",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Retail character description explicitly connects goat and Esmeralda in 1996 film; no reliance on variable price/availability. Different Hunchback character names cannot substitute for the identified goat; hard minor-character name recall.",
+  "verification": {
+    "context": "In The Hunchback of Notre Dame, what is the name of Esmeralda's pet goat?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Disney identifies Djali as Esmeralda goat companion.",
+      "sources": [
+        {
+          "url": "https://www.disneystore.eu/djali-plush-the-hunchback-of-notre-dame---28cm-415150892328.html",
+          "locator": "Product Details / Magic in the details: identifies Djali as Esmeralda goat companion, explicitly inspired by 1996 film. Retail source used only for stable character identity."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Retail character description explicitly connects goat and Esmeralda in 1996 film; no reliance on variable price/availability. Different Hunchback character names cannot substitute for the identified goat; hard minor-character name recall."
+    },
+    "options": [
+      {
+        "answer": "Djali",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Disney identifies Djali as Esmeralda goat companion.",
+        "sources": [
+          {
+            "url": "https://www.disneystore.eu/djali-plush-the-hunchback-of-notre-dame---28cm-415150892328.html",
+            "locator": "Product Details / Magic in the details: identifies Djali as Esmeralda goat companion, explicitly inspired by 1996 film. Retail source used only for stable character identity."
+          }
+        ]
+      },
+      {
+        "answer": "Clopin",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Clopin is not the goat identity Djali.",
+        "sources": [
+          {
+            "url": "https://www.disneystore.eu/djali-plush-the-hunchback-of-notre-dame---28cm-415150892328.html",
+            "locator": "Product Details / Magic in the details: identifies Djali as Esmeralda goat companion, explicitly inspired by 1996 film. Retail source used only for stable character identity."
+          }
+        ]
+      },
+      {
+        "answer": "Achilles",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Achilles is not the goat identity Djali.",
+        "sources": [
+          {
+            "url": "https://www.disneystore.eu/djali-plush-the-hunchback-of-notre-dame---28cm-415150892328.html",
+            "locator": "Product Details / Magic in the details: identifies Djali as Esmeralda goat companion, explicitly inspired by 1996 film. Retail source used only for stable character identity."
+          }
+        ]
+      },
+      {
+        "answer": "Quasi",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Quasi is not the goat identity Djali.",
+        "sources": [
+          {
+            "url": "https://www.disneystore.eu/djali-plush-the-hunchback-of-notre-dame---28cm-415150892328.html",
+            "locator": "Product Details / Magic in the details: identifies Djali as Esmeralda goat companion, explicitly inspired by 1996 film. Retail source used only for stable character identity."
+          }
+        ]
+      }
+    ]
+  }
+}

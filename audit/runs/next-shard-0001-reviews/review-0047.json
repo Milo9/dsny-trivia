@@ -1,0 +1,85 @@
+{
+  "questionId": 47,
+  "hash": "8b97287798b4a8ab4b596a038ad9338d2c019ed78d0a551e80dde9c6739baf3e",
+  "questionSnapshot": {
+    "id": 47,
+    "question": "What is the name of the main villain in The Black Cauldron?",
+    "answers": [
+      "The Horned King",
+      "Taran",
+      "Princess Eilonwy",
+      "Fflewddur Fflam"
+    ],
+    "difficulty": "medium",
+    "category": "movies",
+    "factId": "black-cauldron.main-villain",
+    "film": "The Black Cauldron",
+    "explanation": "Taran, an assistant pig keeper, challenges the Horned King's attempt to possess the cauldron.",
+    "source": "https://movies.disney.com/the-black-cauldron",
+    "verifiedAt": "2026-10-29"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Replaced generic invented villain names with actual film characters whose allegiances are clear in the primary synopsis. Medium, film scope. Existing retired #1454 preserves the duplicate; no other active direct main-villain fact.",
+  "verification": {
+    "context": "The Black Cauldron, Disney animated 1985 film.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "The Horned King",
+        "verdict": "correct",
+        "reason": "The Horned King seeks the cauldron and opposes the heroes.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-black-cauldron",
+            "locator": "Opening two synopsis paragraphs: Horned King seeks cauldron; Taran opposes him with Princess Eilonwy and minstrel Fflewddur Fflam."
+          }
+        ]
+      },
+      {
+        "answer": "Taran",
+        "verdict": "incorrect",
+        "reason": "Taran is the young assistant pig keeper challenging the Horned King.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-black-cauldron",
+            "locator": "Opening two synopsis paragraphs: Horned King seeks cauldron; Taran opposes him with Princess Eilonwy and minstrel Fflewddur Fflam."
+          }
+        ]
+      },
+      {
+        "answer": "Princess Eilonwy",
+        "verdict": "incorrect",
+        "reason": "Eilonwy joins Taran's group on the quest opposing the evil.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-black-cauldron",
+            "locator": "Opening two synopsis paragraphs: Horned King seeks cauldron; Taran opposes him with Princess Eilonwy and minstrel Fflewddur Fflam."
+          }
+        ]
+      },
+      {
+        "answer": "Fflewddur Fflam",
+        "verdict": "incorrect",
+        "reason": "Fflewddur Fflam is the minstrel in Taran's allied team.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-black-cauldron",
+            "locator": "Opening two synopsis paragraphs: Horned King seeks cauldron; Taran opposes him with Princess Eilonwy and minstrel Fflewddur Fflam."
+          }
+        ]
+      }
+    ]
+  }
+}

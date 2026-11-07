@@ -1,0 +1,70 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "retired": {
+    "id": 401,
+    "question": "What is the full name of the company responsible for designing and building all Disney theme parks?",
+    "answers": [
+      "Walt Disney Imagineering",
+      "WED Enterprises",
+      "Disney Creative Group",
+      "Disney Theme Park Design"
+    ],
+    "difficulty": "medium",
+    "category": "walt"
+  },
+  "retained": {
+    "id": 1191,
+    "question": "What is WED Enterprises known as today?",
+    "answers": [
+      "Walt Disney Imagineering",
+      "Disney Animation Research",
+      "Walt Disney Archives",
+      "Disney Consumer Products"
+    ],
+    "difficulty": "medium",
+    "category": "walt"
+  },
+  "additionalComparisons": [],
+  "rationale": "1191 asks WED Enterprises' later name and supplies the same Walt Disney Imagineering identity. Retire 401, whose unbounded wording also allows WED Enterprises historically.",
+  "sources": [
+    {
+      "sourceNoteId": "wed-initials",
+      "url": "https://d23.com/this-day/walt-disney-founds-wed-enterprises/",
+      "locator": "December 16, 1952 entry; WED name explanation",
+      "evidence": "WED derives from Walter Elias Disney's initials; the design company later became Walt Disney Imagineering.",
+      "checkedBy": "Codex",
+      "checkedAt": "2026-11-07",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "limitations": "Primary institutional text inspected; no film or video viewing claimed.",
+      "topics": [
+        "walt"
+      ]
+    }
+  ],
+  "originalOptionAssessments": [
+    {
+      "answer": "Walt Disney Imagineering",
+      "assessment": "Walt Disney Imagineering is the later name of the design organization."
+    },
+    {
+      "answer": "WED Enterprises",
+      "assessment": "WED Enterprises is its genuine former name and historically participated in park design, so the unbounded original is not cleanly exclusive."
+    },
+    {
+      "answer": "Disney Creative Group",
+      "assessment": "Disney Creative Group is not the documented name."
+    },
+    {
+      "answer": "Disney Theme Park Design",
+      "assessment": "Disney Theme Park Design is not the documented name."
+    }
+  ],
+  "finalChallenge": {
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "notes": "1191 asks WED Enterprises' later name and supplies the same Walt Disney Imagineering identity. Retire 401, whose unbounded wording also allows WED Enterprises historically. All four original options inspected. Retirement avoids asserting approval of a flawed premise or an insufficiently excluded alternative."
+  },
+  "scope": "Only the planned ID is retired. Counterpart comparison is not approval of its other claims."
+}

@@ -1,0 +1,31 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "retired": {
+    "id": 363,
+    "question": "What is the name of the Disney theme park in Hong Kong?",
+    "answers": [
+      "Hong Kong Disneyland",
+      "Asia Magic Kingdom",
+      "Disney China",
+      "Hong Kong Disney Park"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "retained": {
+    "id": 2102,
+    "question": "In what year did Hong Kong Disneyland, the first Disney park in Greater China, officially open?",
+    "answers": [
+      "2005",
+      "2001",
+      "2008",
+      "2016"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "additionalComparisons": [],
+  "rationale": "The retained Hong Kong Disneyland opening-year question supplies the entire park name in its stem, directly answering this name-only question. Retain the opening-year fact, avoiding place-name giveaway options.",
+  "scope": "Only the planned question is retired. Comparing a replacement does not approve its factual review."
+}

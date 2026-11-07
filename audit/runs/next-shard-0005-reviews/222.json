@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 222,
+  "hash": "f8fcbf04572c44341dff711401628c12afda6df2b241c473e5af6a442bc5ce21",
+  "questionSnapshot": {
+    "id": 222,
+    "question": "In Coco, which instrument does Miguel secretly build and teach himself to play?",
+    "answers": [
+      "Guitar",
+      "Trumpet",
+      "Piano",
+      "Violin"
+    ],
+    "difficulty": "easy",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Narrowed from any instrument Miguel might touch to his secretly built self-taught instrument. Trumpet/piano/violin cannot describe the explicit skull-guitar construction; no unsupported never-plays claim is needed.",
+  "verification": {
+    "context": "In Coco, which instrument does Miguel secretly build and teach himself to play?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Miguel profile expressly says he constructs and self-teaches guitar.",
+      "sources": [
+        {
+          "url": "https://www.pixar.com/coco",
+          "locator": "Miguel profile: he secretly constructs a skull guitar and teaches himself to play it."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Narrowed from any instrument Miguel might touch to his secretly built self-taught instrument. Trumpet/piano/violin cannot describe the explicit skull-guitar construction; no unsupported never-plays claim is needed."
+    },
+    "options": [
+      {
+        "answer": "Guitar",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Miguel profile expressly says he constructs and self-teaches guitar.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/coco",
+            "locator": "Miguel profile: he secretly constructs a skull guitar and teaches himself to play it."
+          }
+        ]
+      },
+      {
+        "answer": "Trumpet",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different instrument from the explicitly constructed guitar.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/coco",
+            "locator": "Miguel profile: he secretly constructs a skull guitar and teaches himself to play it."
+          }
+        ]
+      },
+      {
+        "answer": "Piano",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different instrument from the explicitly constructed guitar.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/coco",
+            "locator": "Miguel profile: he secretly constructs a skull guitar and teaches himself to play it."
+          }
+        ]
+      },
+      {
+        "answer": "Violin",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different instrument from the explicitly constructed guitar.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/coco",
+            "locator": "Miguel profile: he secretly constructs a skull guitar and teaches himself to play it."
+          }
+        ]
+      }
+    ]
+  }
+}

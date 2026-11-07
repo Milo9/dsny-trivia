@@ -1,0 +1,141 @@
+{
+  "schema": 2,
+  "questionId": 190,
+  "hash": "2392c8b61edf6617b85f05dce8efb6487ba99b24cfdca6468aaaebdb553e48d2",
+  "questionSnapshot": {
+    "id": 190,
+    "question": "In Finding Dory, where does Dory discover she grew up?",
+    "answers": [
+      "The Marine Life Institute in Morro Bay, California",
+      "The Great Barrier Reef in Australia",
+      "A coral reef in Hawaii",
+      "The Pacific Ocean near Japan"
+    ],
+    "difficulty": "medium",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged later reef home versus childhood home and geographic alternatives. Pixar confirms MLI/Morro Bay/California, but not childhood by itself. Third-party film-dialogue transcription explicitly says born there; the independent plot account corroborates childhood pipe-pal and undertow separation. Direct studio screenplay unavailable: limitation retained rather than claiming the homepage alone proves childhood.",
+  "verification": {
+    "context": "In Finding Dory, where does Dory discover she grew up?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Institute childhood is explicit in reunion dialogue and corroborated by childhood pipe-pal/undertow account; Pixar supplies Morro Bay, California.",
+      "sources": [
+        {
+          "url": "https://www.pixar.com/finding-dory",
+          "locator": "Synopsis and Dory profile identify blue tang and California institute; The World / Marine Life Institute calls MLI the Jewel of Morro Bay."
+        },
+        {
+          "url": "https://www.scripts.com/script-pdf-body.php?id=8194",
+          "locator": "PDF page index 53 (printed page 54/67), reunion dialogue immediately after institute speaker announcement: parents identify MLI as where Dory was born. Third-party dialogue transcription, not an inspected studio screenplay."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Finding_Dory",
+          "locator": "Plot, institute/quarantine and Destiny paragraphs: Dory’s childhood pipe-pal and undertow separation establish that the institute was her childhood home. Secondary corroboration of transcript."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged later reef home versus childhood home and geographic alternatives. Pixar confirms MLI/Morro Bay/California, but not childhood by itself. Third-party film-dialogue transcription explicitly says born there; the independent plot account corroborates childhood pipe-pal and undertow separation. Direct studio screenplay unavailable: limitation retained rather than claiming the homepage alone proves childhood."
+    },
+    "options": [
+      {
+        "answer": "The Marine Life Institute in Morro Bay, California",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Institute childhood is explicit in reunion dialogue and corroborated by childhood pipe-pal/undertow account; Pixar supplies Morro Bay, California.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/finding-dory",
+            "locator": "Synopsis and Dory profile identify blue tang and California institute; The World / Marine Life Institute calls MLI the Jewel of Morro Bay."
+          },
+          {
+            "url": "https://www.scripts.com/script-pdf-body.php?id=8194",
+            "locator": "PDF page index 53 (printed page 54/67), reunion dialogue immediately after institute speaker announcement: parents identify MLI as where Dory was born. Third-party dialogue transcription, not an inspected studio screenplay."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Finding_Dory",
+            "locator": "Plot, institute/quarantine and Destiny paragraphs: Dory’s childhood pipe-pal and undertow separation establish that the institute was her childhood home. Secondary corroboration of transcript."
+          }
+        ]
+      },
+      {
+        "answer": "The Great Barrier Reef in Australia",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Her later home with Marlin/Nemo, distinguished from institute childhood.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/finding-dory",
+            "locator": "Synopsis and Dory profile identify blue tang and California institute; The World / Marine Life Institute calls MLI the Jewel of Morro Bay."
+          },
+          {
+            "url": "https://www.scripts.com/script-pdf-body.php?id=8194",
+            "locator": "PDF page index 53 (printed page 54/67), reunion dialogue immediately after institute speaker announcement: parents identify MLI as where Dory was born. Third-party dialogue transcription, not an inspected studio screenplay."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Finding_Dory",
+            "locator": "Plot, institute/quarantine and Destiny paragraphs: Dory’s childhood pipe-pal and undertow separation establish that the institute was her childhood home. Secondary corroboration of transcript."
+          }
+        ]
+      },
+      {
+        "answer": "A coral reef in Hawaii",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the childhood institute identified by dialogue and corroboration.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/finding-dory",
+            "locator": "Synopsis and Dory profile identify blue tang and California institute; The World / Marine Life Institute calls MLI the Jewel of Morro Bay."
+          },
+          {
+            "url": "https://www.scripts.com/script-pdf-body.php?id=8194",
+            "locator": "PDF page index 53 (printed page 54/67), reunion dialogue immediately after institute speaker announcement: parents identify MLI as where Dory was born. Third-party dialogue transcription, not an inspected studio screenplay."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Finding_Dory",
+            "locator": "Plot, institute/quarantine and Destiny paragraphs: Dory’s childhood pipe-pal and undertow separation establish that the institute was her childhood home. Secondary corroboration of transcript."
+          }
+        ]
+      },
+      {
+        "answer": "The Pacific Ocean near Japan",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the childhood institute identified by dialogue and corroboration.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/finding-dory",
+            "locator": "Synopsis and Dory profile identify blue tang and California institute; The World / Marine Life Institute calls MLI the Jewel of Morro Bay."
+          },
+          {
+            "url": "https://www.scripts.com/script-pdf-body.php?id=8194",
+            "locator": "PDF page index 53 (printed page 54/67), reunion dialogue immediately after institute speaker announcement: parents identify MLI as where Dory was born. Third-party dialogue transcription, not an inspected studio screenplay."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Finding_Dory",
+            "locator": "Plot, institute/quarantine and Destiny paragraphs: Dory’s childhood pipe-pal and undertow separation establish that the institute was her childhood home. Secondary corroboration of transcript."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "retired": {
+    "id": 388,
+    "question": "What was the name of Walt Disney's brother and business partner?",
+    "answers": [
+      "Roy O. Disney",
+      "Ward Disney",
+      "Ray Disney",
+      "Robert Disney"
+    ],
+    "difficulty": "easy",
+    "category": "walt"
+  },
+  "retained": {
+    "id": 1490,
+    "question": "After Walt Disney died in 1966, which family member took over the company and oversaw the opening of Walt Disney World in Florida in 1971?",
+    "answers": [
+      "Roy O. Disney, Walt's older brother",
+      "Roy E. Disney, Walt's nephew",
+      "Lillian Disney, Walt's wife",
+      "Diane Disney Miller, Walt's daughter"
+    ],
+    "difficulty": "medium",
+    "category": "walt"
+  },
+  "additionalComparisons": [],
+  "rationale": "1490 explicitly names Roy O. as Walt's older brother and successor in overseeing the Florida resort. This repeats the brother/business-partner identity.",
+  "sources": [
+    {
+      "sourceNoteId": "disney-family",
+      "url": "https://d23.com/about-walt-disney/",
+      "locator": "1923 Hollywood move; 1925 marriage and daughters; 1940 Burbank paragraphs",
+      "evidence": "Walt moved to Hollywood, California, partnered with Roy O., married Lillian Bounds, and had daughters Diane and Sharon. The Burbank studio was completed in 1940.",
+      "checkedBy": "Codex",
+      "checkedAt": "2026-11-07",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "limitations": "Primary institutional text inspected; no film or video viewing claimed.",
+      "topics": [
+        "walt"
+      ]
+    },
+    {
+      "sourceNoteId": "roy-death",
+      "url": "https://d23.com/a-to-z/disney-roy-oliver/",
+      "locator": "Birth/death line and final Walt Disney World paragraph",
+      "evidence": "Roy O. Disney died December 20, 1971, after attending the Florida resort's October opening.",
+      "checkedBy": "Codex",
+      "checkedAt": "2026-11-07",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "limitations": "Primary institutional text inspected; no film or video viewing claimed.",
+      "topics": [
+        "walt"
+      ]
+    }
+  ],
+  "originalOptionAssessments": [
+    {
+      "answer": "Roy O. Disney",
+      "assessment": "Roy O. was the brother who partnered with Walt."
+    },
+    {
+      "answer": "Ward Disney",
+      "assessment": "Ward Disney is not that partner."
+    },
+    {
+      "answer": "Ray Disney",
+      "assessment": "Ray Disney is not that partner; another relative does not identify the cofounder."
+    },
+    {
+      "answer": "Robert Disney",
+      "assessment": "Robert Disney is not the brother/cofounder identified here."
+    }
+  ],
+  "finalChallenge": {
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "notes": "1490 explicitly names Roy O. as Walt's older brother and successor in overseeing the Florida resort. This repeats the brother/business-partner identity. All four original options inspected. Retirement avoids asserting approval of a flawed premise or an insufficiently excluded alternative."
+  },
+  "scope": "Only the planned ID is retired. Counterpart comparison is not approval of its other claims."
+}

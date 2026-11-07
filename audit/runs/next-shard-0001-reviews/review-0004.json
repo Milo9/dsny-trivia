@@ -1,0 +1,80 @@
+{
+  "questionId": 4,
+  "hash": "b3d86ff403871c5fdcf7d38a9250ee23cb5b2126296f59a034d36cb71d0988d7",
+  "questionSnapshot": {
+    "id": 4,
+    "question": "What animal is the main character Bambi?",
+    "answers": [
+      "Deer",
+      "Rabbit",
+      "Fox",
+      "Bear"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Four animal nouns; easy identification. Thumper's rabbit question #201 concerns a different character; #941 concerns the Salten adaptation, not this species property.",
+  "verification": {
+    "context": "Bambi, Disney animated 1942 film, species rather than a specific deer subspecies.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Deer",
+        "verdict": "correct",
+        "reason": "Bambi is a fawn who grows into a deer.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/bambi-film/",
+            "locator": "Opening synopsis identifies Bambi as a fawn; final paragraph explicitly calls him a deer; Thumper is the rabbit."
+          }
+        ]
+      },
+      {
+        "answer": "Rabbit",
+        "verdict": "incorrect",
+        "reason": "Thumper is the rabbit; Bambi is the deer.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/bambi-film/",
+            "locator": "Opening synopsis identifies Bambi as a fawn; final paragraph explicitly calls him a deer; Thumper is the rabbit."
+          }
+        ]
+      },
+      {
+        "answer": "Fox",
+        "verdict": "incorrect",
+        "reason": "The central animal is explicitly a deer, so fox is the wrong species.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/bambi-film/",
+            "locator": "Opening synopsis identifies Bambi as a fawn; final paragraph explicitly calls him a deer; Thumper is the rabbit."
+          }
+        ]
+      },
+      {
+        "answer": "Bear",
+        "verdict": "incorrect",
+        "reason": "The title fawn is a deer, not a bear; the synopsis follows that deer into adulthood.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/bambi-film/",
+            "locator": "Opening synopsis identifies Bambi as a fawn; final paragraph explicitly calls him a deer; Thumper is the rabbit."
+          }
+        ]
+      }
+    ]
+  }
+}

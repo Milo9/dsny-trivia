@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 75,
+  "hash": "9453e28f722a1868b075313a7122c6de38b71a7f63c4c19a676409f5e9dc44a4",
+  "questionSnapshot": {
+    "id": 75,
+    "question": "What are the names of Hades' two bumbling henchmen in Hercules?",
+    "answers": [
+      "Pain and Panic",
+      "Fear and Dread",
+      "Chaos and Discord",
+      "Slime and Sludge"
+    ],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Distinct from Hades’ villain identity, the Fates’ shared eye and unrelated character duos. Main theatrical feature is in scope. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "English-language Disney character naming; original theatrical feature where a film is named. What are the names of Hades' two bumbling henchmen in Hercules?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The film synopsis gives Hades’ two sidekicks as Pain and Panic.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/hercules-film/",
+          "locator": "Second synopsis paragraph explicitly identifies Pain and Panic as Hades’ two sidekicks; cast separately credits Charlton Heston as opening narrator."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Read the complete two-character identification and checked both entries in each answer. The other paired abstract nouns are plausible invented names but are not alternate identities for the film’s sidekicks."
+    },
+    "options": [
+      {
+        "answer": "Pain and Panic",
+        "verdict": "correct",
+        "basis": "exhaustive-list",
+        "reason": "This exactly matches the named pair.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/hercules-film/",
+            "locator": "Second synopsis paragraph explicitly identifies Pain and Panic as Hades’ two sidekicks; cast separately credits Charlton Heston as opening narrator."
+          }
+        ]
+      },
+      {
+        "answer": "Fear and Dread",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Fear and Dread does not match the named pair.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/hercules-film/",
+            "locator": "Second synopsis paragraph explicitly identifies Pain and Panic as Hades’ two sidekicks; cast separately credits Charlton Heston as opening narrator."
+          }
+        ]
+      },
+      {
+        "answer": "Chaos and Discord",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Chaos and Discord does not match the named pair.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/hercules-film/",
+            "locator": "Second synopsis paragraph explicitly identifies Pain and Panic as Hades’ two sidekicks; cast separately credits Charlton Heston as opening narrator."
+          }
+        ]
+      },
+      {
+        "answer": "Slime and Sludge",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Slime and Sludge does not match the named pair.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/hercules-film/",
+            "locator": "Second synopsis paragraph explicitly identifies Pain and Panic as Hades’ two sidekicks; cast separately credits Charlton Heston as opening narrator."
+          }
+        ]
+      }
+    ]
+  }
+}

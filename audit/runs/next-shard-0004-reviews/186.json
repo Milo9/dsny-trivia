@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 186,
+  "hash": "644e9aff5679c95110ffe2828fb23899c982925814d29523c70b9aade7b363f8",
+  "questionSnapshot": {
+    "id": 186,
+    "question": "In Up, what is the name of the young Wilderness Explorer who accompanies Carl?",
+    "answers": [
+      "Russell",
+      "Kevin",
+      "Dug",
+      "Charles"
+    ],
+    "difficulty": "easy",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged Kevin as a boy’s name and Charles as another explorer: the official profiles distinguish bird, adult and dog from the young Wilderness Explorer Russell. Calibrated to easy character recall.",
+  "verification": {
+    "context": "In Up, what is the name of the young Wilderness Explorer who accompanies Carl?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Russell’s profile identifies the child Wilderness Explorer.",
+      "sources": [
+        {
+          "url": "https://www.pixar.com/upfilm",
+          "locator": "A Dream of Adventure and Carl Fredricksen / Russell / Kevin / Dug / Charles F. Muntz profiles: balloon-house owner, explorer child, bird, dog and childhood hero are distinguished."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged Kevin as a boy’s name and Charles as another explorer: the official profiles distinguish bird, adult and dog from the young Wilderness Explorer Russell. Calibrated to easy character recall."
+    },
+    "options": [
+      {
+        "answer": "Russell",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Russell’s profile identifies the child Wilderness Explorer.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/upfilm",
+            "locator": "A Dream of Adventure and Carl Fredricksen / Russell / Kevin / Dug / Charles F. Muntz profiles: balloon-house owner, explorer child, bird, dog and childhood hero are distinguished."
+          }
+        ]
+      },
+      {
+        "answer": "Kevin",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "The bird, not the human explorer child.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/upfilm",
+            "locator": "A Dream of Adventure and Carl Fredricksen / Russell / Kevin / Dug / Charles F. Muntz profiles: balloon-house owner, explorer child, bird, dog and childhood hero are distinguished."
+          }
+        ]
+      },
+      {
+        "answer": "Dug",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "The dog, not the human explorer child.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/upfilm",
+            "locator": "A Dream of Adventure and Carl Fredricksen / Russell / Kevin / Dug / Charles F. Muntz profiles: balloon-house owner, explorer child, bird, dog and childhood hero are distinguished."
+          }
+        ]
+      },
+      {
+        "answer": "Charles",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "The adult explorer Muntz, not Russell.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/upfilm",
+            "locator": "A Dream of Adventure and Carl Fredricksen / Russell / Kevin / Dug / Charles F. Muntz profiles: balloon-house owner, explorer child, bird, dog and childhood hero are distinguished."
+          }
+        ]
+      }
+    ]
+  }
+}

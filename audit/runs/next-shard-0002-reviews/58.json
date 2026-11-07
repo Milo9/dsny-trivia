@@ -1,0 +1,161 @@
+{
+  "schema": 2,
+  "questionId": 58,
+  "hash": "d2675d90d7c52ddb63b136d9e1bc10d9d46aba20a3d992bb86de17a248ef57d5",
+  "questionSnapshot": {
+    "id": 58,
+    "question": "In which Disney animated film does Maleficent appear as the villain?",
+    "answers": [
+      "Sleeping Beauty",
+      "Snow White",
+      "Cinderella",
+      "Bambi"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "q950 asks a widescreen production process. Knowing Maleficent’s film does not establish its cinematographic process. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "English-language Disney character naming; original theatrical feature where a film is named. In which Disney animated film does Maleficent appear as the villain?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Maleficent is the evil fairy in the 1959 Sleeping Beauty feature; final wording does not claim chronological first appearance.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/maleficent/",
+          "locator": "Single character entry identifies Maleficent as the evil fairy in Sleeping Beauty."
+        },
+        {
+          "url": "https://d23.com/a-to-z/sleeping-beauty-film/",
+          "locator": "Opening synopsis and cast: evil fairy Maleficent, Prince Phillip, Aurora; release January 29, 1959."
+        },
+        {
+          "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+          "locator": "Opening synopsis: Snow White lives in the house of seven dwarfs; the jealous Queen pursues her."
+        },
+        {
+          "url": "https://d23.com/a-to-z/lady-tremaine/",
+          "locator": "Single character entry identifies Lady Tremaine as Cinderella’s evil stepmother."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Removed first to avoid asserting an unnecessary chronology from a role identification. The question is now an animated-film attribution among four titles. The official character entry names Sleeping Beauty, and none of the other proposed titles identifies that feature."
+    },
+    "options": [
+      {
+        "answer": "Sleeping Beauty",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The character entry and 1959 film synopsis agree on Sleeping Beauty.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/maleficent/",
+            "locator": "Single character entry identifies Maleficent as the evil fairy in Sleeping Beauty."
+          },
+          {
+            "url": "https://d23.com/a-to-z/sleeping-beauty-film/",
+            "locator": "Opening synopsis and cast: evil fairy Maleficent, Prince Phillip, Aurora; release January 29, 1959."
+          },
+          {
+            "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+            "locator": "Opening synopsis: Snow White lives in the house of seven dwarfs; the jealous Queen pursues her."
+          },
+          {
+            "url": "https://d23.com/a-to-z/lady-tremaine/",
+            "locator": "Single character entry identifies Lady Tremaine as Cinderella’s evil stepmother."
+          }
+        ]
+      },
+      {
+        "answer": "Snow White",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Snow White’s persecutor is the Queen, not Maleficent.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/maleficent/",
+            "locator": "Single character entry identifies Maleficent as the evil fairy in Sleeping Beauty."
+          },
+          {
+            "url": "https://d23.com/a-to-z/sleeping-beauty-film/",
+            "locator": "Opening synopsis and cast: evil fairy Maleficent, Prince Phillip, Aurora; release January 29, 1959."
+          },
+          {
+            "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+            "locator": "Opening synopsis: Snow White lives in the house of seven dwarfs; the jealous Queen pursues her."
+          },
+          {
+            "url": "https://d23.com/a-to-z/lady-tremaine/",
+            "locator": "Single character entry identifies Lady Tremaine as Cinderella’s evil stepmother."
+          }
+        ]
+      },
+      {
+        "answer": "Cinderella",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Cinderella’s stepmother is Lady Tremaine, not Maleficent.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/maleficent/",
+            "locator": "Single character entry identifies Maleficent as the evil fairy in Sleeping Beauty."
+          },
+          {
+            "url": "https://d23.com/a-to-z/sleeping-beauty-film/",
+            "locator": "Opening synopsis and cast: evil fairy Maleficent, Prince Phillip, Aurora; release January 29, 1959."
+          },
+          {
+            "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+            "locator": "Opening synopsis: Snow White lives in the house of seven dwarfs; the jealous Queen pursues her."
+          },
+          {
+            "url": "https://d23.com/a-to-z/lady-tremaine/",
+            "locator": "Single character entry identifies Lady Tremaine as Cinderella’s evil stepmother."
+          }
+        ]
+      },
+      {
+        "answer": "Bambi",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Bambi is not the Sleeping Beauty feature that introduces this named fairy.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/maleficent/",
+            "locator": "Single character entry identifies Maleficent as the evil fairy in Sleeping Beauty."
+          },
+          {
+            "url": "https://d23.com/a-to-z/sleeping-beauty-film/",
+            "locator": "Opening synopsis and cast: evil fairy Maleficent, Prince Phillip, Aurora; release January 29, 1959."
+          },
+          {
+            "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+            "locator": "Opening synopsis: Snow White lives in the house of seven dwarfs; the jealous Queen pursues her."
+          },
+          {
+            "url": "https://d23.com/a-to-z/lady-tremaine/",
+            "locator": "Single character entry identifies Lady Tremaine as Cinderella’s evil stepmother."
+          }
+        ]
+      }
+    ]
+  }
+}

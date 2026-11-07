@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 237,
+  "hash": "1b57c99b33309dd48c529eba7bf06abd507c06ca4191ebfe40fbfa1216846880",
+  "questionSnapshot": {
+    "id": 237,
+    "question": "In Big Hero 6, what is the name of Hiro's older brother?",
+    "answers": [
+      "Tadashi",
+      "Wasabi",
+      "Fred",
+      "Honey Lemon"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Checked family relationship rather than simply same team membership. The official article expressly refers back to the feature-film role, so TV material is corroboration, not the subject of the question.",
+  "verification": {
+    "context": "In Big Hero 6, what is the name of Hiro's older brother?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "D23 explicitly identifies film Tadashi as Hiro’s brother.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/big-hero-6-film/",
+          "locator": "Opening synopsis explicitly names the fictional city San Fransokyo; cast distinguishes Hiro, Tadashi, Wasabi, Fred and Honey Lemon."
+        },
+        {
+          "url": "https://d23.com/big-hero-6-the-series-launches-saturday-june-9/",
+          "locator": "Guest cast paragraph explicitly says Henney reprises Hiro’s brother Tadashi from the feature film. Used only for the feature-film relationship, not TV trivia."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Checked family relationship rather than simply same team membership. The official article expressly refers back to the feature-film role, so TV material is corroboration, not the subject of the question."
+    },
+    "options": [
+      {
+        "answer": "Tadashi",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "D23 explicitly identifies film Tadashi as Hiro’s brother.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/big-hero-6-film/",
+            "locator": "Opening synopsis explicitly names the fictional city San Fransokyo; cast distinguishes Hiro, Tadashi, Wasabi, Fred and Honey Lemon."
+          },
+          {
+            "url": "https://d23.com/big-hero-6-the-series-launches-saturday-june-9/",
+            "locator": "Guest cast paragraph explicitly says Henney reprises Hiro’s brother Tadashi from the feature film. Used only for the feature-film relationship, not TV trivia."
+          }
+        ]
+      },
+      {
+        "answer": "Wasabi",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different member of the named supporting cast, not the identified brother.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/big-hero-6-film/",
+            "locator": "Opening synopsis explicitly names the fictional city San Fransokyo; cast distinguishes Hiro, Tadashi, Wasabi, Fred and Honey Lemon."
+          },
+          {
+            "url": "https://d23.com/big-hero-6-the-series-launches-saturday-june-9/",
+            "locator": "Guest cast paragraph explicitly says Henney reprises Hiro’s brother Tadashi from the feature film. Used only for the feature-film relationship, not TV trivia."
+          }
+        ]
+      },
+      {
+        "answer": "Fred",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different member of the named supporting cast, not the identified brother.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/big-hero-6-film/",
+            "locator": "Opening synopsis explicitly names the fictional city San Fransokyo; cast distinguishes Hiro, Tadashi, Wasabi, Fred and Honey Lemon."
+          },
+          {
+            "url": "https://d23.com/big-hero-6-the-series-launches-saturday-june-9/",
+            "locator": "Guest cast paragraph explicitly says Henney reprises Hiro’s brother Tadashi from the feature film. Used only for the feature-film relationship, not TV trivia."
+          }
+        ]
+      },
+      {
+        "answer": "Honey Lemon",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different member of the named supporting cast, not the identified brother.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/big-hero-6-film/",
+            "locator": "Opening synopsis explicitly names the fictional city San Fransokyo; cast distinguishes Hiro, Tadashi, Wasabi, Fred and Honey Lemon."
+          },
+          {
+            "url": "https://d23.com/big-hero-6-the-series-launches-saturday-june-9/",
+            "locator": "Guest cast paragraph explicitly says Henney reprises Hiro’s brother Tadashi from the feature film. Used only for the feature-film relationship, not TV trivia."
+          }
+        ]
+      }
+    ]
+  }
+}

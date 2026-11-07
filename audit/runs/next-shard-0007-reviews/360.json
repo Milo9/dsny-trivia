@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 360,
+  "hash": "26ba674bdfa724f95c21ff08885ef6e56184dc58a224a5cb601809781eb77151",
+  "questionSnapshot": {
+    "id": 360,
+    "question": "Which EPCOT attraction opened in 2022 at the Wonders of Xandar pavilion?",
+    "answers": [
+      "Guardians of the Galaxy: Cosmic Rewind",
+      "Remy's Ratatouille Adventure",
+      "Frozen Ever After",
+      "Journey Into Imagination With Figment"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Removed Guardians from the stem and replaced short invented coaster names with comparable real attraction titles. The source binds the one new attraction to both pavilion and year. 913 tests vehicle terminology and 2636 song count; neither provides the Xandar/2022 opening context. Medium venue/year recognition; fixed historical event. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+  "verification": {
+    "context": "Which EPCOT attraction opened in 2022 at the Wonders of Xandar pavilion? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The 2022 opening report names Cosmic Rewind at Wonders of Xandar. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+      "sources": [
+        {
+          "url": "https://disneyparksblog.com/wdw/guardians-of-the-galaxy-cosmic-rewind-opens-at-epcot/",
+          "locator": "May 28, 2022 opening report: new family coaster at EPCOT Wonders of Xandar pavilion"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy:_Cosmic_Rewind",
+          "locator": "History: previews and public grand opening May 27, 2022"
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Removed Guardians from the stem and replaced short invented coaster names with comparable real attraction titles. The source binds the one new attraction to both pavilion and year. 913 tests vehicle terminology and 2636 song count; neither provides the Xandar/2022 opening context. Medium venue/year recognition; fixed historical event."
+    },
+    "options": [
+      {
+        "answer": "Guardians of the Galaxy: Cosmic Rewind",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The 2022 opening report names Cosmic Rewind at Wonders of Xandar.",
+        "sources": [
+          {
+            "url": "https://disneyparksblog.com/wdw/guardians-of-the-galaxy-cosmic-rewind-opens-at-epcot/",
+            "locator": "May 28, 2022 opening report: new family coaster at EPCOT Wonders of Xandar pavilion"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy:_Cosmic_Rewind",
+            "locator": "History: previews and public grand opening May 27, 2022"
+          }
+        ]
+      },
+      {
+        "answer": "Remy's Ratatouille Adventure",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Remy's Ratatouille Adventure is not the new Xandar attraction named in that report.",
+        "sources": [
+          {
+            "url": "https://disneyparksblog.com/wdw/guardians-of-the-galaxy-cosmic-rewind-opens-at-epcot/",
+            "locator": "May 28, 2022 opening report: new family coaster at EPCOT Wonders of Xandar pavilion"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy:_Cosmic_Rewind",
+            "locator": "History: previews and public grand opening May 27, 2022"
+          }
+        ]
+      },
+      {
+        "answer": "Frozen Ever After",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Frozen Ever After is not the new Xandar attraction named in that report.",
+        "sources": [
+          {
+            "url": "https://disneyparksblog.com/wdw/guardians-of-the-galaxy-cosmic-rewind-opens-at-epcot/",
+            "locator": "May 28, 2022 opening report: new family coaster at EPCOT Wonders of Xandar pavilion"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy:_Cosmic_Rewind",
+            "locator": "History: previews and public grand opening May 27, 2022"
+          }
+        ]
+      },
+      {
+        "answer": "Journey Into Imagination With Figment",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Journey Into Imagination With Figment is not the new Xandar attraction named in that report.",
+        "sources": [
+          {
+            "url": "https://disneyparksblog.com/wdw/guardians-of-the-galaxy-cosmic-rewind-opens-at-epcot/",
+            "locator": "May 28, 2022 opening report: new family coaster at EPCOT Wonders of Xandar pavilion"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy:_Cosmic_Rewind",
+            "locator": "History: previews and public grand opening May 27, 2022"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "questionId": 9,
+  "hash": "b8924f5ca1e562da80e876224ad26408a99dfe34da6343dda87d156ebda20768",
+  "questionSnapshot": {
+    "id": 9,
+    "question": "Who is the villain in Sleeping Beauty?",
+    "answers": [
+      "Maleficent",
+      "Ursula",
+      "The Evil Queen",
+      "Cruella de Vil"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": false,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Factual option review completed, but fails distinctFact: retained #58 asks the same fact. Not submitted as a passing manual review.",
+  "verification": {
+    "context": "Sleeping Beauty (1959), Disney animated film.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Maleficent",
+        "verdict": "correct",
+        "reason": "Maleficent is the fairy who curses Aurora.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/sleeping-beauty",
+            "locator": "Plot paragraphs: Maleficent curses Princess Aurora; Merryweather, Flora and Fauna raise her; Prince Phillip rescues her."
+          }
+        ]
+      },
+      {
+        "answer": "Ursula",
+        "verdict": "incorrect",
+        "reason": "Ursula is the sea witch in The Little Mermaid.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-little-mermaid",
+            "locator": "The Characters: Ursula is the evil sea witch; Triton is Ariel's father; Ariel and her companions are identified separately."
+          }
+        ]
+      },
+      {
+        "answer": "The Evil Queen",
+        "verdict": "incorrect",
+        "reason": "The Evil Queen is Snow White's jealous stepmother.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/snow-white-and-the-seven-dwarfs",
+            "locator": "Synopsis: the Magic Mirror identifies Snow White as fairest; The Characters: the jealous Queen and Snow White."
+          }
+        ]
+      },
+      {
+        "answer": "Cruella de Vil",
+        "verdict": "incorrect",
+        "reason": "Cruella is the villainess seeking Dalmatian puppy fur.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/cruella-de-vil/",
+            "locator": "Cruella De Vil entry: puppy-fur-seeking villainess of One Hundred and One Dalmatians."
+          }
+        ]
+      }
+    ]
+  },
+  "status": "retired-duplicate",
+  "replacedBy": 58
+}

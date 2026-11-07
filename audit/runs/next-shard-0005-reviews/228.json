@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 228,
+  "hash": "1f4c2c78f9fd8440ce0edac5fcf3a65f7ad55ef9b56d69aaebc415622d91ba07",
+  "questionSnapshot": {
+    "id": 228,
+    "question": "In Sleeping Beauty (1959), what must Aurora prick her finger on to trigger the curse?",
+    "answers": [
+      "A spinning wheel's spindle",
+      "A rose bush's thorn",
+      "A sewing needle",
+      "A broken mirror"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Removed confusion between Maleficent’s death curse and Merryweather’s sleep mitigation. Final wording tests the trigger, not who changes its consequence. Parallel sharp-object alternatives remove the verbose-answer clue and title giveaway.",
+  "verification": {
+    "context": "In Sleeping Beauty (1959), what must Aurora prick her finger on to trigger the curse?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Original curse explicitly names the spindle of a spinning wheel.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/sleeping-beauty-film/",
+          "locator": "Opening curse specifies pricking finger on a spinning wheel’s spindle; original death curse and Maleficent’s dragon form distinguished."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Removed confusion between Maleficent’s death curse and Merryweather’s sleep mitigation. Final wording tests the trigger, not who changes its consequence. Parallel sharp-object alternatives remove the verbose-answer clue and title giveaway."
+    },
+    "options": [
+      {
+        "answer": "A spinning wheel's spindle",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Original curse explicitly names the spindle of a spinning wheel.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/sleeping-beauty-film/",
+            "locator": "Opening curse specifies pricking finger on a spinning wheel’s spindle; original death curse and Maleficent’s dragon form distinguished."
+          }
+        ]
+      },
+      {
+        "answer": "A rose bush's thorn",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different sharp object from the curse condition.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/sleeping-beauty-film/",
+            "locator": "Opening curse specifies pricking finger on a spinning wheel’s spindle; original death curse and Maleficent’s dragon form distinguished."
+          }
+        ]
+      },
+      {
+        "answer": "A sewing needle",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "A spindle is not the listed sewing needle.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/sleeping-beauty-film/",
+            "locator": "Opening curse specifies pricking finger on a spinning wheel’s spindle; original death curse and Maleficent’s dragon form distinguished."
+          }
+        ]
+      },
+      {
+        "answer": "A broken mirror",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different sharp object from the curse condition.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/sleeping-beauty-film/",
+            "locator": "Opening curse specifies pricking finger on a spinning wheel’s spindle; original death curse and Maleficent’s dragon form distinguished."
+          }
+        ]
+      }
+    ]
+  }
+}

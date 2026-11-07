@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 292,
+  "hash": "52706bbce899fc66f291e19c8652a58004df31aa70d8e2b3594a6de900a08103",
+  "questionSnapshot": {
+    "id": 292,
+    "question": "In Monsters, Inc., what nickname does Sulley give the little girl he befriends?",
+    "answers": [
+      "Boo",
+      "Sue",
+      "Bonnie",
+      "Mary"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Changed name to nickname: Mary is defensible as real name in ancillary material/drawing discussion, but not Sulley chosen label. The screenplay states the naming event, corroborated by Pixar character profile; no guess based only on voice actress name.",
+  "verification": {
+    "context": "In Monsters, Inc., what nickname does Sulley give the little girl he befriends?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Sulley explicitly decides to call the girl Boo.",
+      "sources": [
+        {
+          "url": "https://assets.scriptslug.com/live/pdf/scripts/monsters-inc-2001.pdf",
+          "locator": "Externally hosted studio screenplay, printed page 60: Sulley calls girl Boo and explains he decided to call her that; Mike objects to naming her."
+        },
+        {
+          "url": "https://www.pixar.com/monsters-inc",
+          "locator": "Boo and Sulley character profiles corroborate human girl/monster relationship; nickname event established separately by screenplay."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Changed name to nickname: Mary is defensible as real name in ancillary material/drawing discussion, but not Sulley chosen label. The screenplay states the naming event, corroborated by Pixar character profile; no guess based only on voice actress name."
+    },
+    "options": [
+      {
+        "answer": "Boo",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Sulley explicitly decides to call the girl Boo.",
+        "sources": [
+          {
+            "url": "https://assets.scriptslug.com/live/pdf/scripts/monsters-inc-2001.pdf",
+            "locator": "Externally hosted studio screenplay, printed page 60: Sulley calls girl Boo and explains he decided to call her that; Mike objects to naming her."
+          },
+          {
+            "url": "https://www.pixar.com/monsters-inc",
+            "locator": "Boo and Sulley character profiles corroborate human girl/monster relationship; nickname event established separately by screenplay."
+          }
+        ]
+      },
+      {
+        "answer": "Sue",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Sue is not the chosen nickname.",
+        "sources": [
+          {
+            "url": "https://assets.scriptslug.com/live/pdf/scripts/monsters-inc-2001.pdf",
+            "locator": "Externally hosted studio screenplay, printed page 60: Sulley calls girl Boo and explains he decided to call her that; Mike objects to naming her."
+          },
+          {
+            "url": "https://www.pixar.com/monsters-inc",
+            "locator": "Boo and Sulley character profiles corroborate human girl/monster relationship; nickname event established separately by screenplay."
+          }
+        ]
+      },
+      {
+        "answer": "Bonnie",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Bonnie is not the chosen nickname.",
+        "sources": [
+          {
+            "url": "https://assets.scriptslug.com/live/pdf/scripts/monsters-inc-2001.pdf",
+            "locator": "Externally hosted studio screenplay, printed page 60: Sulley calls girl Boo and explains he decided to call her that; Mike objects to naming her."
+          },
+          {
+            "url": "https://www.pixar.com/monsters-inc",
+            "locator": "Boo and Sulley character profiles corroborate human girl/monster relationship; nickname event established separately by screenplay."
+          }
+        ]
+      },
+      {
+        "answer": "Mary",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Mary is not the nickname Sulley chooses.",
+        "sources": [
+          {
+            "url": "https://assets.scriptslug.com/live/pdf/scripts/monsters-inc-2001.pdf",
+            "locator": "Externally hosted studio screenplay, printed page 60: Sulley calls girl Boo and explains he decided to call her that; Mike objects to naming her."
+          },
+          {
+            "url": "https://www.pixar.com/monsters-inc",
+            "locator": "Boo and Sulley character profiles corroborate human girl/monster relationship; nickname event established separately by screenplay."
+          }
+        ]
+      }
+    ]
+  }
+}

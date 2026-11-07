@@ -1,0 +1,80 @@
+{
+  "questionId": 48,
+  "hash": "40d555f62dffb6f8025f6aa4d8cfad08b685f5d41c686faae7d02dd5918d8d9d",
+  "questionSnapshot": {
+    "id": 48,
+    "question": "In The Aristocats, what is the name of the elegant mother cat?",
+    "answers": [
+      "Duchess",
+      "Marie",
+      "Berlioz",
+      "Toulouse"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "All four are cats from the family. Changed hard to medium for basic mother-name recall. #311 asks the children's names; #2493 asks Eva Gabor's cross-film casting, requiring an independent performer fact.",
+  "verification": {
+    "context": "The Aristocats, Disney animated 1970 film.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Duchess",
+        "verdict": "correct",
+        "reason": "Duchess is the pedigreed mother cat.",
+        "sources": [
+          {
+            "url": "https://d23.com/this-day/the-aristocats-is-released-2/",
+            "locator": "Opening paragraph: mother Duchess and kittens Toulouse, Berlioz, Marie; second paragraph: Roquefort the mouse helps rescue them."
+          }
+        ]
+      },
+      {
+        "answer": "Marie",
+        "verdict": "incorrect",
+        "reason": "Marie is one of Duchess' three kittens.",
+        "sources": [
+          {
+            "url": "https://d23.com/this-day/the-aristocats-is-released-2/",
+            "locator": "Opening paragraph: mother Duchess and kittens Toulouse, Berlioz, Marie; second paragraph: Roquefort the mouse helps rescue them."
+          }
+        ]
+      },
+      {
+        "answer": "Berlioz",
+        "verdict": "incorrect",
+        "reason": "Berlioz is one of Duchess' kittens, not the mother.",
+        "sources": [
+          {
+            "url": "https://d23.com/this-day/the-aristocats-is-released-2/",
+            "locator": "Opening paragraph: mother Duchess and kittens Toulouse, Berlioz, Marie; second paragraph: Roquefort the mouse helps rescue them."
+          }
+        ]
+      },
+      {
+        "answer": "Toulouse",
+        "verdict": "incorrect",
+        "reason": "Toulouse is one of Duchess' kittens, not the mother.",
+        "sources": [
+          {
+            "url": "https://d23.com/this-day/the-aristocats-is-released-2/",
+            "locator": "Opening paragraph: mother Duchess and kittens Toulouse, Berlioz, Marie; second paragraph: Roquefort the mouse helps rescue them."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 55,
+  "hash": "c551d2334f9bece5ecb3db6c2f35fb03864fa0e67e017382836bf86de0e4eae0",
+  "questionSnapshot": {
+    "id": 55,
+    "question": "Who is the main villain in The Lion King?",
+    "answers": [
+      "Scar",
+      "Mufasa",
+      "Zazu",
+      "Rafiki"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Distinct from Scar’s kinship q23 and Be Prepared’s song identity. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "English-language Disney character naming; original theatrical feature where a film is named. Who is the main villain in The Lion King?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Scar drives the murder, usurpation and final opposition to Simba.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/lion-king-the-film/",
+          "locator": "Opening three synopsis paragraphs: Scar’s murder and usurpation; Mufasa as king/father; Pumbaa as warthog; Timon as meerkat; Rafiki as guiding shaman."
+        },
+        {
+          "url": "https://d23.com/a-to-z/zazu/",
+          "locator": "Single character entry: Pride Lands chief of protocol."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tried treating a stern father, adviser or shaman as a villain. Their documented functions differ from Scar’s deliberate murder and usurpation; none rivals him as the film’s main antagonist."
+    },
+    "options": [
+      {
+        "answer": "Scar",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Scar kills Mufasa and takes the throne, establishing him as the main antagonist.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/lion-king-the-film/",
+            "locator": "Opening three synopsis paragraphs: Scar’s murder and usurpation; Mufasa as king/father; Pumbaa as warthog; Timon as meerkat; Rafiki as guiding shaman."
+          },
+          {
+            "url": "https://d23.com/a-to-z/zazu/",
+            "locator": "Single character entry: Pride Lands chief of protocol."
+          }
+        ]
+      },
+      {
+        "answer": "Mufasa",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Mufasa is Simba’s father and the murdered king, not the antagonist.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/lion-king-the-film/",
+            "locator": "Opening three synopsis paragraphs: Scar’s murder and usurpation; Mufasa as king/father; Pumbaa as warthog; Timon as meerkat; Rafiki as guiding shaman."
+          },
+          {
+            "url": "https://d23.com/a-to-z/zazu/",
+            "locator": "Single character entry: Pride Lands chief of protocol."
+          }
+        ]
+      },
+      {
+        "answer": "Zazu",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Zazu is the chief of protocol rather than the usurping villain.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/lion-king-the-film/",
+            "locator": "Opening three synopsis paragraphs: Scar’s murder and usurpation; Mufasa as king/father; Pumbaa as warthog; Timon as meerkat; Rafiki as guiding shaman."
+          },
+          {
+            "url": "https://d23.com/a-to-z/zazu/",
+            "locator": "Single character entry: Pride Lands chief of protocol."
+          }
+        ]
+      },
+      {
+        "answer": "Rafiki",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Rafiki guides Simba toward his rightful role rather than opposing him.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/lion-king-the-film/",
+            "locator": "Opening three synopsis paragraphs: Scar’s murder and usurpation; Mufasa as king/father; Pumbaa as warthog; Timon as meerkat; Rafiki as guiding shaman."
+          },
+          {
+            "url": "https://d23.com/a-to-z/zazu/",
+            "locator": "Single character entry: Pride Lands chief of protocol."
+          }
+        ]
+      }
+    ]
+  }
+}

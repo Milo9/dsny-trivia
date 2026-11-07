@@ -1,0 +1,30 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "retired": {
+    "id": 163,
+    "question": "What Disney film features the song 'I See the Light'?",
+    "answers": [
+      "Tangled",
+      "Frozen",
+      "Brave",
+      "Moana"
+    ],
+    "difficulty": "medium",
+    "category": "music"
+  },
+  "retained": {
+    "id": 1509,
+    "question": "In Tangled, what song do Rapunzel and Flynn Rider share while floating in a boat beneath thousands of sky lanterns rising over the kingdom?",
+    "answers": [
+      "I See the Light",
+      "When Will My Life Begin",
+      "I've Got a Dream",
+      "Something That I Want"
+    ],
+    "difficulty": "medium",
+    "category": "music"
+  },
+  "rationale": "Same I See the Light / Tangled association in reverse; keep the precise lantern-boat duet context.",
+  "scope": "Retire only the planned ID. Retained questions are duplicate context and receive no new factual approval here."
+}

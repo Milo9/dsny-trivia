@@ -1,0 +1,80 @@
+{
+  "questionId": 23,
+  "hash": "a9219a7e63dbf2bd78b0203567a3a91348336453395e48d4d07a3250fda1a0e5",
+  "questionSnapshot": {
+    "id": 23,
+    "question": "In The Lion King, who is Scar to Simba?",
+    "answers": [
+      "Simba's uncle",
+      "Simba's father",
+      "Simba's brother",
+      "Simba's cousin"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Parallel familial relations. Easy. #2 identifies Mufasa as father; establishing his brother Scar as uncle is a separate relationship.",
+  "verification": {
+    "context": "The Lion King, Disney animated 1994 film.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Simba's uncle",
+        "verdict": "correct",
+        "reason": "Scar is the brother of Simba's father Mufasa, making him Simba's uncle.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-lion-king",
+            "locator": "The Characters: Simba, Zazu, Rafiki, Scar and Mufasa/Sarabi profiles; gallery caption identifies Rafiki holding newborn Simba, with Mufasa and Sarabi alongside."
+          }
+        ]
+      },
+      {
+        "answer": "Simba's father",
+        "verdict": "incorrect",
+        "reason": "Mufasa, not Scar, is Simba's father.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-lion-king",
+            "locator": "The Characters: Simba, Zazu, Rafiki, Scar and Mufasa/Sarabi profiles; gallery caption identifies Rafiki holding newborn Simba, with Mufasa and Sarabi alongside."
+          }
+        ]
+      },
+      {
+        "answer": "Simba's brother",
+        "verdict": "incorrect",
+        "reason": "Scar is Mufasa's brother, not Simba's.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-lion-king",
+            "locator": "The Characters: Simba, Zazu, Rafiki, Scar and Mufasa/Sarabi profiles; gallery caption identifies Rafiki holding newborn Simba, with Mufasa and Sarabi alongside."
+          }
+        ]
+      },
+      {
+        "answer": "Simba's cousin",
+        "verdict": "incorrect",
+        "reason": "A father's brother is an uncle, not a cousin.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-lion-king",
+            "locator": "The Characters: Simba, Zazu, Rafiki, Scar and Mufasa/Sarabi profiles; gallery caption identifies Rafiki holding newborn Simba, with Mufasa and Sarabi alongside."
+          }
+        ]
+      }
+    ]
+  }
+}

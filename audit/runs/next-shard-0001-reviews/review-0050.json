@@ -1,0 +1,92 @@
+{
+  "questionId": 50,
+  "hash": "184822a1042da1badee3a2bd4651987cd980bbd94f4c7a5fc9affcb789eabdf6",
+  "questionSnapshot": {
+    "id": 50,
+    "question": "In which Disney film does the villain character Yzma appear?",
+    "answers": [
+      "The Emperor's New Groove",
+      "Hercules",
+      "Mulan",
+      "Treasure Planet"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Four Disney theatrical film titles; reduced hard to medium for character-to-film identification. #83 Kronk and #1424 firing event require separate facts; #2099 concerns Yzma's later return in a different sequel.",
+  "verification": {
+    "context": "Yzma in Disney's theatrical animated The Emperor's New Groove (2000).",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "The Emperor's New Groove",
+        "verdict": "correct",
+        "reason": "Yzma is Kuzco's scheming advisor in The Emperor's New Groove.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-emperors-new-groove",
+            "locator": "Synopsis: Yzma, Kuzco's devious advisor, and henchman Kronk transform him into a llama."
+          }
+        ]
+      },
+      {
+        "answer": "Hercules",
+        "verdict": "incorrect",
+        "reason": "Hercules' central villain is Hades, with a different divine takeover plot.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/hercules",
+            "locator": "1997 synopsis: Hades and Pain and Panic plot to take over, with Hercules opposing him."
+          },
+          {
+            "url": "https://movies.disney.com/the-emperors-new-groove",
+            "locator": "Synopsis: Yzma, Kuzco's devious advisor, and henchman Kronk transform him into a llama."
+          }
+        ]
+      },
+      {
+        "answer": "Mulan",
+        "verdict": "incorrect",
+        "reason": "Mulan's 1998 story concerns the Chinese army and Hun invaders, with Mushu as guardian; Yzma belongs to Kuzco's film.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/mulan",
+            "locator": "1998 synopsis: Mulan's male disguise is Ping; guardian dragon Mushu; lucky cricket Cri-Kee; Captain Shang."
+          },
+          {
+            "url": "https://movies.disney.com/the-emperors-new-groove",
+            "locator": "Synopsis: Yzma, Kuzco's devious advisor, and henchman Kronk transform him into a llama."
+          }
+        ]
+      },
+      {
+        "answer": "Treasure Planet",
+        "verdict": "incorrect",
+        "reason": "Treasure Planet's scheme is Silver's space-pirate mutiny, not Yzma's imperial-court scheme.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/treasure-planet-film/",
+            "locator": "Synopsis: cyborg John Silver leads the mutiny against Jim Hawkins; this is the space-pirate story, distinct from Yzma's imperial-court scheme."
+          },
+          {
+            "url": "https://movies.disney.com/the-emperors-new-groove",
+            "locator": "Synopsis: Yzma, Kuzco's devious advisor, and henchman Kronk transform him into a llama."
+          }
+        ]
+      }
+    ]
+  }
+}

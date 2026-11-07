@@ -1,0 +1,37 @@
+{
+  "reviewer": "Codex (OpenAI)",
+  "questions": [
+    {
+      "id": 82,
+      "question": "In The Aristocats, what is the name of the butler who stands to inherit everything?",
+      "answers": [
+        "Edgar",
+        "Henri",
+        "Ferdinand",
+        "Jacques"
+      ],
+      "difficulty": "hard",
+      "category": "characters"
+    },
+    {
+      "id": 328,
+      "question": "In The Aristocats, what is the full name of the butler villain?",
+      "answers": [
+        "Edgar Balthazar",
+        "Edgar Beaumont",
+        "Edgar Dupont",
+        "Edgar Rousseau"
+      ],
+      "difficulty": "hard",
+      "category": "characters"
+    }
+  ],
+  "decision": "Both request the identity of The Aristocats butler Edgar; the retained surname question requests the more specific name. q82’s inheritance premise also needs the cats-first condition. Retiring avoids retaining the less precise question.",
+  "evidence": [
+    {
+      "url": "https://d23.com/a-to-z/aristocats-the-film/",
+      "locator": "Opening synopsis identifies Edgar and the inheritance left to Madame Bonfamille’s cats; this source does not establish the surname in q328."
+    }
+  ],
+  "replacementApproved": false
+}

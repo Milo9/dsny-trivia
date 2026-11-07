@@ -1,0 +1,70 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "retired": {
+    "id": 421,
+    "question": "What is the name of the large outdoor movie screen mounted on Disney Cruise ships?",
+    "answers": [
+      "Funnel Vision",
+      "Deck Cinema",
+      "Big Screen at Sea",
+      "Movie Deck"
+    ],
+    "difficulty": "easy",
+    "category": "cruise"
+  },
+  "retained": {
+    "id": 750,
+    "question": "What outdoor movie experience do Disney cruise ships offer on their top deck?",
+    "answers": [
+      "Movies Under the Stars on the Funnel Vision screen",
+      "Drive-In at Sea",
+      "The Starlight Cinema",
+      "Open Air Theatre"
+    ],
+    "difficulty": "medium",
+    "category": "cruise"
+  },
+  "additionalComparisons": [],
+  "rationale": "750 asks the outdoor-movie experience and explicitly gives the Funnel Vision screen in its answer. This repeats that same screen identity.",
+  "sources": [
+    {
+      "sourceNoteId": "water-coasters",
+      "url": "https://disneycruise.disney.go.com/en-ph/why-cruise-disney/families/pools-waterslides-coasters/",
+      "locator": "Water coaster description; Disney Movies Poolside",
+      "evidence": "Wish uses AquaMouse. Disney calls the poolside movie screen Funnel Vision.",
+      "checkedBy": "Codex",
+      "checkedAt": "2026-11-07",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "limitations": "Primary institutional text inspected; no film or video viewing claimed.",
+      "topics": [
+        "cruise"
+      ]
+    }
+  ],
+  "originalOptionAssessments": [
+    {
+      "answer": "Funnel Vision",
+      "assessment": "Funnel Vision is the documented screen name."
+    },
+    {
+      "answer": "Deck Cinema",
+      "assessment": "Deck Cinema is not the documented screen name."
+    },
+    {
+      "answer": "Big Screen at Sea",
+      "assessment": "Big Screen at Sea is not the documented screen name."
+    },
+    {
+      "answer": "Movie Deck",
+      "assessment": "Movie Deck is not the documented screen name."
+    }
+  ],
+  "finalChallenge": {
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "notes": "750 asks the outdoor-movie experience and explicitly gives the Funnel Vision screen in its answer. This repeats that same screen identity. All four original options inspected. Retirement avoids asserting approval of a flawed premise or an insufficiently excluded alternative."
+  },
+  "scope": "Only the planned ID is retired. Counterpart comparison is not approval of its other claims."
+}

@@ -1,0 +1,542 @@
+[
+  {
+    "finding": {
+      "id": "duplicate-2a869c9772865c94ae5b",
+      "kind": "duplicate",
+      "questionIds": [
+        424,
+        425
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "2a869c9772865c94ae5b07becd0243aefc904e0df079f2f4e675ed9e709f2b6a",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 424,
+        "question": "On the Disney Wish, which club is advertised for the full age range from 11 through 14?",
+        "answers": [
+          "Edge",
+          "Vibe",
+          "The Loft",
+          "Club Tween"
+        ],
+        "difficulty": "medium",
+        "category": "cruise"
+      },
+      {
+        "id": 425,
+        "question": "On the Disney Wish, which club is advertised for the full age range from 14 through 17?",
+        "answers": [
+          "Vibe",
+          "Edge",
+          "The Loft",
+          "Club Teen"
+        ],
+        "difficulty": "medium",
+        "category": "cruise"
+      }
+    ]
+  },
+  {
+    "finding": {
+      "id": "duplicate-31fe9758f4c589bc8a2a",
+      "kind": "duplicate",
+      "questionIds": [
+        357,
+        394
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "31fe9758f4c589bc8a2a0059070f2deacd818f491fe331400d5f426eecbe2b54",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": {
+        "signature": "31fe9758f4c589bc8a2a0059070f2deacd818f491fe331400d5f426eecbe2b54",
+        "questionIds": [
+          357,
+          394
+        ],
+        "status": "accepted",
+        "at": "2026-11-06",
+        "reviewer": "Codex",
+        "reason": "Different 2006 events: Expedition Everest opening and Disney acquisition of Pixar. The common year is not shared event knowledge.",
+        "reference": "audit/runs/next-shard-0007-comparisons.json",
+        "history": []
+      }
+    },
+    "questions": [
+      {
+        "id": 357,
+        "question": "In what year did Expedition Everest open at Animal Kingdom?",
+        "answers": [
+          "2006",
+          "2004",
+          "2008",
+          "2010"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      },
+      {
+        "id": 394,
+        "question": "In what year did The Walt Disney Company acquire Pixar Animation Studios?",
+        "answers": [
+          "2006",
+          "2003",
+          "2009",
+          "2012"
+        ],
+        "difficulty": "medium",
+        "category": "walt"
+      }
+    ]
+  },
+  {
+    "finding": {
+      "id": "duplicate-3df1a45c7c73f1dd1ef0",
+      "kind": "duplicate",
+      "questionIds": [
+        404,
+        521
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "3df1a45c7c73f1dd1ef002b89a6eb8b37420dea98b5a12dd006caaf39d3bcab5",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 404,
+        "question": "What was Disney's first all-live-action feature film, released in 1950?",
+        "answers": [
+          "Treasure Island",
+          "20,000 Leagues Under the Sea",
+          "Davy Crockett",
+          "The Swiss Family Robinson"
+        ],
+        "difficulty": "hard",
+        "category": "walt"
+      },
+      {
+        "id": 521,
+        "question": "What classic novel is Disney's Treasure Planet based on?",
+        "answers": [
+          "Treasure Island",
+          "Gulliver's Travels",
+          "Robinson Crusoe",
+          "20,000 Leagues Under the Sea"
+        ],
+        "difficulty": "medium",
+        "category": "movies"
+      }
+    ]
+  },
+  {
+    "finding": {
+      "id": "duplicate-45549753fea3aa92000e",
+      "kind": "duplicate",
+      "questionIds": [
+        354,
+        398
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "45549753fea3aa92000e09641ec128f179c9d9b31a488c02a762f2dc51a9c081",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": {
+        "signature": "45549753fea3aa92000e09641ec128f179c9d9b31a488c02a762f2dc51a9c081",
+        "questionIds": [
+          354,
+          398
+        ],
+        "status": "accepted",
+        "at": "2026-11-06",
+        "reviewer": "Codex",
+        "reason": "Magic Kingdom Haunted Mansion opening and Roy Disney death are different historical events that happen to share 1971.",
+        "reference": "audit/runs/next-shard-0007-comparisons.json",
+        "history": []
+      }
+    },
+    "questions": [
+      {
+        "id": 354,
+        "question": "In what year did the Haunted Mansion open at Magic Kingdom?",
+        "answers": [
+          "1971",
+          "1969",
+          "1975",
+          "1980"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      },
+      {
+        "id": 398,
+        "question": "In what year did Roy O. Disney pass away, just months after Walt Disney World opened?",
+        "answers": [
+          "1971",
+          "1973",
+          "1969",
+          "1975"
+        ],
+        "difficulty": "medium",
+        "category": "walt"
+      }
+    ]
+  },
+  {
+    "finding": {
+      "id": "duplicate-4c65f80adf986a43f8dc",
+      "kind": "duplicate",
+      "questionIds": [
+        423,
+        737
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "4c65f80adf986a43f8dc90f33a02256f34b76b93ca7063687df36fd658d81b0d",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 423,
+        "question": "What is the name of the Marvel-themed dining experience on the Disney Wish?",
+        "answers": [
+          "Worlds of Marvel",
+          "Avengers Dining",
+          "Marvel Bistro",
+          "Stark Industries Kitchen"
+        ],
+        "difficulty": "medium",
+        "category": "cruise"
+      },
+      {
+        "id": 737,
+        "question": "What Frozen-themed dining experience debuted on the Disney Wish?",
+        "answers": [
+          "Arendelle: A Frozen Dining Adventure",
+          "Frozen Ever After Dining",
+          "Elsa's Royal Feast",
+          "The Ice Palace Restaurant"
+        ],
+        "difficulty": "medium",
+        "category": "cruise"
+      }
+    ]
+  },
+  {
+    "finding": {
+      "id": "duplicate-4cb3c9dafacdb6db4df7",
+      "kind": "duplicate",
+      "questionIds": [
+        412,
+        2636
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "4cb3c9dafacdb6db4df7b788ecab6eef4d19aa29078fea1b322ee78c35e156e2",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 412,
+        "question": "Including Disney Treasure, how many ships were in Disney Cruise Line's fleet when Treasure began its maiden voyage in December 2024?",
+        "answers": [
+          "Six",
+          "Four",
+          "Five",
+          "Seven"
+        ],
+        "difficulty": "easy",
+        "category": "cruise"
+      },
+      {
+        "id": 2636,
+        "question": "How many different songs can play during the launch coaster portion of EPCOT's Guardians of the Galaxy: Cosmic Rewind, randomly selected each ride?",
+        "answers": [
+          "Six",
+          "Three",
+          "Ten",
+          "One"
+        ],
+        "difficulty": "hard",
+        "category": "parks"
+      }
+    ]
+  },
+  {
+    "finding": {
+      "id": "duplicate-87b9179109bdab9c6803",
+      "kind": "duplicate",
+      "questionIds": [
+        396,
+        1197
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "87b9179109bdab9c6803f783e31a4cc352788e1a286132d0e24681643810fd6f",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 396,
+        "question": "Which Disney animated short was the studio's first made in three-strip Technicolor?",
+        "answers": [
+          "Flowers and Trees",
+          "Steamboat Willie",
+          "The Skeleton Dance",
+          "Three Little Pigs"
+        ],
+        "difficulty": "medium",
+        "category": "walt"
+      },
+      {
+        "id": 1197,
+        "question": "Which Disney short gave Walt Disney his first competitive Academy Award?",
+        "answers": [
+          "Flowers and Trees",
+          "Steamboat Willie",
+          "The Skeleton Dance",
+          "The Old Mill"
+        ],
+        "difficulty": "hard",
+        "category": "walt"
+      }
+    ]
+  },
+  {
+    "finding": {
+      "id": "duplicate-a8cad0b27fe5a917beee",
+      "kind": "duplicate",
+      "questionIds": [
+        5,
+        415
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "a8cad0b27fe5a917beee3227a6348891d57baf1a5c4d4e814853ad7fe4e609d3",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 5,
+        "question": "In Aladdin, how many wishes does Aladdin receive from the Genie?",
+        "answers": [
+          "Three",
+          "One",
+          "Seven",
+          "Unlimited"
+        ],
+        "difficulty": "easy",
+        "category": "movies"
+      },
+      {
+        "id": 415,
+        "question": "How many main restaurants are in a guest's rotational dinner schedule aboard the Disney Wish?",
+        "answers": [
+          "Three",
+          "Two",
+          "Four",
+          "Five"
+        ],
+        "difficulty": "easy",
+        "category": "cruise"
+      }
+    ]
+  },
+  {
+    "finding": {
+      "id": "duplicate-db49873a3d3c7ebb813d",
+      "kind": "duplicate",
+      "questionIds": [
+        381,
+        1374
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "db49873a3d3c7ebb813dff1408dd2a3324ac6d4014a064046595712e9c331172",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 381,
+        "question": "Which Disney theme park did Walt personally oversee and see opened during his lifetime?",
+        "answers": [
+          "Disneyland",
+          "Magic Kingdom",
+          "EPCOT",
+          "Tokyo Disneyland"
+        ],
+        "difficulty": "easy",
+        "category": "walt"
+      },
+      {
+        "id": 1374,
+        "question": "What was the name of Walt Disney's groundbreaking television series that premiered on ABC in October 1954 — one of the first color programs?",
+        "answers": [
+          "Disneyland",
+          "The Wonderful World of Disney",
+          "The Mickey Mouse Club",
+          "Walt Disney Presents"
+        ],
+        "difficulty": "medium",
+        "category": "walt"
+      }
+    ]
+  },
+  {
+    "finding": {
+      "id": "duplicate-e6ace83fa571a1820194",
+      "kind": "duplicate",
+      "questionIds": [
+        412,
+        2237
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "e6ace83fa571a18201946ee6908b86e167f5c4554acfc35f9a65c297a869a72f",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 412,
+        "question": "Including Disney Treasure, how many ships were in Disney Cruise Line's fleet when Treasure began its maiden voyage in December 2024?",
+        "answers": [
+          "Six",
+          "Four",
+          "Five",
+          "Seven"
+        ],
+        "difficulty": "easy",
+        "category": "cruise"
+      },
+      {
+        "id": 2237,
+        "question": "How many guests ride together in each vehicle on Radiator Springs Racers at Disney California Adventure's Cars Land?",
+        "answers": [
+          "Six",
+          "Four",
+          "Eight",
+          "Two"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      }
+    ]
+  },
+  {
+    "finding": {
+      "id": "duplicate-ecd6d7e4cc8962b00bc9",
+      "kind": "duplicate",
+      "questionIds": [
+        404,
+        2407
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "ecd6d7e4cc8962b00bc91ec4e691e4e14c1917f7480c80375e3cd1a4bb7dfbdf",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 404,
+        "question": "What was Disney's first all-live-action feature film, released in 1950?",
+        "answers": [
+          "Treasure Island",
+          "20,000 Leagues Under the Sea",
+          "Davy Crockett",
+          "The Swiss Family Robinson"
+        ],
+        "difficulty": "hard",
+        "category": "walt"
+      },
+      {
+        "id": 2407,
+        "question": "What was the original name of Walt Disney World's Bay Lake wildlife preserve island when it opened to guests in 1974, before it was later renamed?",
+        "answers": [
+          "Treasure Island",
+          "Adventure Island",
+          "Wilderness Island",
+          "Explorer's Island"
+        ],
+        "difficulty": "hard",
+        "category": "parks"
+      }
+    ]
+  },
+  {
+    "finding": {
+      "id": "duplicate-f912e912e3049c9e47af",
+      "kind": "duplicate",
+      "questionIds": [
+        415,
+        2551
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "f912e912e3049c9e47af3fc5658d2e19ab99ace433a5d98a792f81ea08606add",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 415,
+        "question": "How many main restaurants are in a guest's rotational dinner schedule aboard the Disney Wish?",
+        "answers": [
+          "Three",
+          "Two",
+          "Four",
+          "Five"
+        ],
+        "difficulty": "easy",
+        "category": "cruise"
+      },
+      {
+        "id": 2551,
+        "question": "At the 1995 Academy Awards, The Lion King achieved a rare feat by earning Best Original Song nominations for how many of its own songs?",
+        "answers": [
+          "Three",
+          "Two",
+          "Four",
+          "Five"
+        ],
+        "difficulty": "hard",
+        "category": "music"
+      }
+    ]
+  }
+]

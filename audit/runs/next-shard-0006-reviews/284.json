@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 284,
+  "hash": "8a3b18f79eab456f04ee77406a48bd50c6b7b2cb65bc0887d2886892a2d1be15",
+  "questionSnapshot": {
+    "id": 284,
+    "question": "In Beauty and the Beast, which household object is Cogsworth?",
+    "answers": [
+      "A clock",
+      "A candlestick",
+      "A teapot",
+      "A wardrobe"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Cogs are a thematic clue but the name is needed to identify the character; all options are household objects. Source specifically assigns clock, excluding other castle servants. Ensemble song q705 and Lumiere object q765 are separate facts.",
+  "verification": {
+    "context": "In Beauty and the Beast, which household object is Cogsworth?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Cogsworth is explicitly a clock.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/cogsworth/",
+          "locator": "Entire entry identifies enchanted mantle clock Cogsworth in Beauty and the Beast."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Cogs are a thematic clue but the name is needed to identify the character; all options are household objects. Source specifically assigns clock, excluding other castle servants. Ensemble song q705 and Lumiere object q765 are separate facts."
+    },
+    "options": [
+      {
+        "answer": "A clock",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Cogsworth is explicitly a clock.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/cogsworth/",
+            "locator": "Entire entry identifies enchanted mantle clock Cogsworth in Beauty and the Beast."
+          }
+        ]
+      },
+      {
+        "answer": "A candlestick",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Candlestick is a different enchanted object.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/cogsworth/",
+            "locator": "Entire entry identifies enchanted mantle clock Cogsworth in Beauty and the Beast."
+          }
+        ]
+      },
+      {
+        "answer": "A teapot",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Teapot is a different enchanted object.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/cogsworth/",
+            "locator": "Entire entry identifies enchanted mantle clock Cogsworth in Beauty and the Beast."
+          }
+        ]
+      },
+      {
+        "answer": "A wardrobe",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Wardrobe is a different enchanted object.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/cogsworth/",
+            "locator": "Entire entry identifies enchanted mantle clock Cogsworth in Beauty and the Beast."
+          }
+        ]
+      }
+    ]
+  }
+}

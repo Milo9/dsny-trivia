@@ -1,0 +1,141 @@
+{
+  "schema": 2,
+  "questionId": 92,
+  "hash": "5abe0a9ed87cdca3dff39e7967541dad8ef44371c1e5a948875e7d94f4dad592",
+  "questionSnapshot": {
+    "id": 92,
+    "question": "What is the official name of EPCOT's iconic geodesic sphere attraction?",
+    "answers": [
+      "Spaceship Earth",
+      "The Magic Orb",
+      "Epcot Globe",
+      "Future World"
+    ],
+    "difficulty": "easy",
+    "category": "parks"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Distinct from the ride system q912 and narrator q2221; does not assert that no one calls it a globe. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "Walt Disney World, specified park/attraction; current naming/layout at review date.",
+    "timeSensitive": true,
+    "nextReviewAt": "2027-01-30",
+    "premise": {
+      "reason": "The officially named sphere attraction at EPCOT is Spaceship Earth.",
+      "sources": [
+        {
+          "url": "https://disneyworld.disney.go.com/attractions/epcot/spaceship-earth/",
+          "locator": "Page title and A Landmark Attraction section: EPCOT flagship inside iconic geosphere, signature park symbol."
+        },
+        {
+          "url": "https://d23.com/a-to-z/epcot/",
+          "locator": "Opening paragraph gives October 1, 1982 park opening; later original-layout paragraph identifies Future World and World Showcase as areas."
+        },
+        {
+          "url": "https://d23.com/weve-just-begun-to-dream/",
+          "locator": "Walt Disney Archives account, opening paragraph dates public opening October 1, 1982; later paragraph calls Spaceship Earth a geodesic sphere."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Original Epcot Globe option was potentially defensible as an informal label. Official name now makes the requested naming standard explicit. The historical Future World area cannot be substituted for its sphere attraction."
+    },
+    "options": [
+      {
+        "answer": "Spaceship Earth",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Spaceship Earth is the attraction’s official name.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/epcot/spaceship-earth/",
+            "locator": "Page title and A Landmark Attraction section: EPCOT flagship inside iconic geosphere, signature park symbol."
+          },
+          {
+            "url": "https://d23.com/a-to-z/epcot/",
+            "locator": "Opening paragraph gives October 1, 1982 park opening; later original-layout paragraph identifies Future World and World Showcase as areas."
+          },
+          {
+            "url": "https://d23.com/weve-just-begun-to-dream/",
+            "locator": "Walt Disney Archives account, opening paragraph dates public opening October 1, 1982; later paragraph calls Spaceship Earth a geodesic sphere."
+          }
+        ]
+      },
+      {
+        "answer": "The Magic Orb",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "The Magic Orb is not the official name.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/epcot/spaceship-earth/",
+            "locator": "Page title and A Landmark Attraction section: EPCOT flagship inside iconic geosphere, signature park symbol."
+          },
+          {
+            "url": "https://d23.com/a-to-z/epcot/",
+            "locator": "Opening paragraph gives October 1, 1982 park opening; later original-layout paragraph identifies Future World and World Showcase as areas."
+          },
+          {
+            "url": "https://d23.com/weve-just-begun-to-dream/",
+            "locator": "Walt Disney Archives account, opening paragraph dates public opening October 1, 1982; later paragraph calls Spaceship Earth a geodesic sphere."
+          }
+        ]
+      },
+      {
+        "answer": "Epcot Globe",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Epcot Globe is a descriptive nickname rather than the official attraction name.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/epcot/spaceship-earth/",
+            "locator": "Page title and A Landmark Attraction section: EPCOT flagship inside iconic geosphere, signature park symbol."
+          },
+          {
+            "url": "https://d23.com/a-to-z/epcot/",
+            "locator": "Opening paragraph gives October 1, 1982 park opening; later original-layout paragraph identifies Future World and World Showcase as areas."
+          },
+          {
+            "url": "https://d23.com/weve-just-begun-to-dream/",
+            "locator": "Walt Disney Archives account, opening paragraph dates public opening October 1, 1982; later paragraph calls Spaceship Earth a geodesic sphere."
+          }
+        ]
+      },
+      {
+        "answer": "Future World",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Future World was an original park area, not the sphere attraction’s official name.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/epcot/spaceship-earth/",
+            "locator": "Page title and A Landmark Attraction section: EPCOT flagship inside iconic geosphere, signature park symbol."
+          },
+          {
+            "url": "https://d23.com/a-to-z/epcot/",
+            "locator": "Opening paragraph gives October 1, 1982 park opening; later original-layout paragraph identifies Future World and World Showcase as areas."
+          },
+          {
+            "url": "https://d23.com/weve-just-begun-to-dream/",
+            "locator": "Walt Disney Archives account, opening paragraph dates public opening October 1, 1982; later paragraph calls Spaceship Earth a geodesic sphere."
+          }
+        ]
+      }
+    ]
+  }
+}

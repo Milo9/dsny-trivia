@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 300,
+  "hash": "4cd021e09b264566fbb229dd78ef6575de84494c0b2b090e35d3e837d8ccea85",
+  "questionSnapshot": {
+    "id": 300,
+    "question": "In Disney's Winnie the Pooh films, what is the name of Pooh's young human friend?",
+    "answers": [
+      "Christopher Robin",
+      "Michael Darling",
+      "Andy Davis",
+      "Roger Radcliffe"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Specified young human friend in Disney films, avoiding literal real Christopher Robin Milne/Billy Moon nickname ambiguity. All final alternatives are human-character names, so human versus animal no longer eliminates them mechanically. Tigger q280 is a different identity.",
+  "verification": {
+    "context": "In Disney's Winnie the Pooh films, what is the name of Pooh's young human friend?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Disney names boy Christopher Robin.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/christopher-robin/",
+          "locator": "Entire character entry identifies Christopher Robin as the boy character in Winnie the Pooh films."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Specified young human friend in Disney films, avoiding literal real Christopher Robin Milne/Billy Moon nickname ambiguity. All final alternatives are human-character names, so human versus animal no longer eliminates them mechanically. Tigger q280 is a different identity."
+    },
+    "options": [
+      {
+        "answer": "Christopher Robin",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Disney names boy Christopher Robin.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/christopher-robin/",
+            "locator": "Entire character entry identifies Christopher Robin as the boy character in Winnie the Pooh films."
+          }
+        ]
+      },
+      {
+        "answer": "Michael Darling",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Michael Darling is not the identified Pooh boy.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/christopher-robin/",
+            "locator": "Entire character entry identifies Christopher Robin as the boy character in Winnie the Pooh films."
+          }
+        ]
+      },
+      {
+        "answer": "Andy Davis",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Andy Davis is not the identified Pooh boy.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/christopher-robin/",
+            "locator": "Entire character entry identifies Christopher Robin as the boy character in Winnie the Pooh films."
+          }
+        ]
+      },
+      {
+        "answer": "Roger Radcliffe",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Roger Radcliffe is not the identified Pooh boy.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/christopher-robin/",
+            "locator": "Entire character entry identifies Christopher Robin as the boy character in Winnie the Pooh films."
+          }
+        ]
+      }
+    ]
+  }
+}

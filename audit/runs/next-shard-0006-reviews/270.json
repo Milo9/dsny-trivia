@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 270,
+  "hash": "11f6691c56dc1ccd4639b2b7e3dfd9d22bfe6f77a57fa0de81b07f79d30b487d",
+  "questionSnapshot": {
+    "id": 270,
+    "question": "In Dumbo (1941), what is the name of Dumbo's mother?",
+    "answers": [
+      "Mrs. Jumbo",
+      "Nellie",
+      "Ellie",
+      "Dumba"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. The explicit mother identity, scoped to 1941, excludes three other labels, rather than inferring from Dumbo own name. Maternal-name recall is medium; lullaby title q995 is a different musical fact.",
+  "verification": {
+    "context": "In Dumbo (1941), what is the name of Dumbo's mother?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Mrs. Jumbo is the mother identified by Disney.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/mrs-jumbo/",
+          "locator": "Entire character entry: Mrs. Jumbo is Dumbo mother."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "The explicit mother identity, scoped to 1941, excludes three other labels, rather than inferring from Dumbo own name. Maternal-name recall is medium; lullaby title q995 is a different musical fact."
+    },
+    "options": [
+      {
+        "answer": "Mrs. Jumbo",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Mrs. Jumbo is the mother identified by Disney.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/mrs-jumbo/",
+            "locator": "Entire character entry: Mrs. Jumbo is Dumbo mother."
+          }
+        ]
+      },
+      {
+        "answer": "Nellie",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Nellie is not the identified maternal name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/mrs-jumbo/",
+            "locator": "Entire character entry: Mrs. Jumbo is Dumbo mother."
+          }
+        ]
+      },
+      {
+        "answer": "Ellie",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Ellie is not the identified maternal name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/mrs-jumbo/",
+            "locator": "Entire character entry: Mrs. Jumbo is Dumbo mother."
+          }
+        ]
+      },
+      {
+        "answer": "Dumba",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Dumba is not the identified maternal name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/mrs-jumbo/",
+            "locator": "Entire character entry: Mrs. Jumbo is Dumbo mother."
+          }
+        ]
+      }
+    ]
+  }
+}

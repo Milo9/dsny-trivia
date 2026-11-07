@@ -1,0 +1,419 @@
+[
+  {
+    "findingId": "duplicate-039de2ba5e86c2a9aed7",
+    "questions": [
+      {
+        "id": 358,
+        "question": "In what year did Disneyland Paris open?",
+        "answers": [
+          "1992",
+          "1989",
+          "1995",
+          "1999"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      },
+      {
+        "id": 463,
+        "question": "In what year did 'Beauty and the Beast' win the Academy Award for Best Original Song?",
+        "answers": [
+          "1992",
+          "1990",
+          "1994",
+          "1988"
+        ],
+        "difficulty": "hard",
+        "category": "music"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "status": "accepted",
+    "reason": "Different events sharing 1992: Paris park opening versus an Academy Award for a film song. Neither answer establishes the other event date."
+  },
+  {
+    "findingId": "duplicate-1afb2631dba8c2f6ea28",
+    "questions": [
+      {
+        "id": 336,
+        "question": "In which Magic Kingdom land can you find Big Thunder Mountain Railroad?",
+        "answers": [
+          "Frontierland",
+          "Tomorrowland",
+          "Adventureland",
+          "Fantasyland"
+        ],
+        "difficulty": "easy",
+        "category": "parks"
+      },
+      {
+        "id": 1136,
+        "question": "At Disneyland, which original land recreates the Old West with saloons and log cabins?",
+        "answers": [
+          "Frontierland",
+          "Adventureland",
+          "Tomorrowland",
+          "Fantasyland"
+        ],
+        "difficulty": "easy",
+        "category": "parks"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "status": "accepted",
+    "reason": "Magic Kingdom Big Thunder land assignment differs from Disneyland Frontierland overall Old West design. A general theme at another park does not locate this specific Florida attraction."
+  },
+  {
+    "findingId": "duplicate-2fbca0612b38fedadb72",
+    "questions": [
+      {
+        "id": 345,
+        "question": "What is the name of the famous nighttime spectacular at Disneyland featuring Mickey Mouse battling villains?",
+        "answers": [
+          "Fantasmic!",
+          "SpectroMagic",
+          "World of Color",
+          "Illuminations"
+        ],
+        "difficulty": "easy",
+        "category": "parks"
+      },
+      {
+        "id": 1477,
+        "question": "At Disney's Hollywood Studios, what nighttime water spectacular featuring Sorcerer Mickey projects scenes from Disney classics onto a lagoon using mist screens?",
+        "answers": [
+          "Fantasmic!",
+          "Harmonious",
+          "World of Color",
+          "Rivers of Light"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "status": "accepted",
+    "reason": "Distinct park productions: Disneyland Rivers of America versus Hollywood Studios lagoon show. Knowing a show title at one park does not establish that it also runs at the other; retained explicit park-specific coverage."
+  },
+  {
+    "findingId": "duplicate-31fe9758f4c589bc8a2a",
+    "questions": [
+      {
+        "id": 357,
+        "question": "In what year did Expedition Everest open at Animal Kingdom?",
+        "answers": [
+          "2006",
+          "2004",
+          "2008",
+          "2010"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      },
+      {
+        "id": 394,
+        "question": "In what year did The Walt Disney Company acquire Pixar Animation Studios?",
+        "answers": [
+          "2006",
+          "2003",
+          "2009",
+          "2012"
+        ],
+        "difficulty": "medium",
+        "category": "walt"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "status": "accepted",
+    "reason": "Different 2006 events: Expedition Everest opening and Disney acquisition of Pixar. The common year is not shared event knowledge."
+  },
+  {
+    "findingId": "duplicate-3bfa7012c93d3d794a18",
+    "questions": [
+      {
+        "id": 340,
+        "question": "What is the name of the pineapple soft-serve treat introduced at Magic Kingdom's Aloha Isle in 1984?",
+        "answers": [
+          "Dole Whip",
+          "Citrus Swirl",
+          "Mickey Bar",
+          "Tropical Float"
+        ],
+        "difficulty": "easy",
+        "category": "parks"
+      },
+      {
+        "id": 739,
+        "question": "What popular treat is available at Castaway Cay that is also iconic to Disney Parks?",
+        "answers": [
+          "Dole Whip",
+          "Mickey Ice Cream Bar",
+          "Churro",
+          "Beignet"
+        ],
+        "difficulty": "medium",
+        "category": "cruise"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "status": "accepted",
+    "reason": "Aloha Isle 1984 pineapple soft-serve identification differs from Castaway Cay availability. An island menu fact does not establish the product original venue, date or flavor."
+  },
+  {
+    "findingId": "duplicate-45549753fea3aa92000e",
+    "questions": [
+      {
+        "id": 354,
+        "question": "In what year did the Haunted Mansion open at Magic Kingdom?",
+        "answers": [
+          "1971",
+          "1969",
+          "1975",
+          "1980"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      },
+      {
+        "id": 398,
+        "question": "In what year did Roy O. Disney pass away, just months after Walt Disney World opened?",
+        "answers": [
+          "1971",
+          "1973",
+          "1969",
+          "1975"
+        ],
+        "difficulty": "medium",
+        "category": "walt"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "status": "accepted",
+    "reason": "Magic Kingdom Haunted Mansion opening and Roy Disney death are different historical events that happen to share 1971."
+  },
+  {
+    "findingId": "duplicate-46fee28bfa0b3a1aa881",
+    "questions": [
+      {
+        "id": 336,
+        "question": "In which Magic Kingdom land can you find Big Thunder Mountain Railroad?",
+        "answers": [
+          "Frontierland",
+          "Tomorrowland",
+          "Adventureland",
+          "Fantasyland"
+        ],
+        "difficulty": "easy",
+        "category": "parks"
+      },
+      {
+        "id": 1138,
+        "question": "At Magic Kingdom, which land has traditionally housed the Country Bear attraction?",
+        "answers": [
+          "Frontierland",
+          "Liberty Square",
+          "Adventureland",
+          "Fantasyland"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "status": "accepted",
+    "reason": "Distinct attractions in the same land: Big Thunder versus Country Bear. Knowing one location does not supply the other attraction location."
+  },
+  {
+    "findingId": "duplicate-485c8b2f3b7f9b676f7c",
+    "questions": [
+      {
+        "id": 354,
+        "question": "In what year did the Haunted Mansion open at Magic Kingdom?",
+        "answers": [
+          "1971",
+          "1969",
+          "1975",
+          "1980"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      },
+      {
+        "id": 599,
+        "question": "In which Magic Kingdom land is The Haunted Mansion located?",
+        "answers": [
+          "Liberty Square",
+          "Adventureland",
+          "Frontierland",
+          "Fantasyland"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "status": "accepted",
+    "reason": "Different attributes of Haunted Mansion: opening year versus land. A Liberty Square location does not establish 1971."
+  },
+  {
+    "findingId": "duplicate-4efa849535df9a23518f",
+    "questions": [
+      {
+        "id": 325,
+        "question": "In The Great Mouse Detective, what is Professor Ratigan's true species (despite his protests)?",
+        "answers": [
+          "A rat",
+          "A mouse",
+          "A shrew",
+          "A vole"
+        ],
+        "difficulty": "hard",
+        "category": "characters"
+      },
+      {
+        "id": 2481,
+        "question": "In Lady and the Tramp, what creature does Lady fight off to protect the Darling family's new baby?",
+        "answers": [
+          "A rat",
+          "A snake",
+          "A raccoon",
+          "A hawk"
+        ],
+        "difficulty": "easy",
+        "category": "movies"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "status": "accepted",
+    "reason": "Different films and roles: Ratigan species versus the intruder in Lady and the Tramp. Sharing rat as an answer is insufficient for duplication."
+  },
+  {
+    "findingId": "duplicate-78324f5de11dab51423b",
+    "questions": [
+      {
+        "id": 336,
+        "question": "In which Magic Kingdom land can you find Big Thunder Mountain Railroad?",
+        "answers": [
+          "Frontierland",
+          "Tomorrowland",
+          "Adventureland",
+          "Fantasyland"
+        ],
+        "difficulty": "easy",
+        "category": "parks"
+      },
+      {
+        "id": 2526,
+        "question": "In which Disneyland Paris land is the Phantom Manor attraction located?",
+        "answers": [
+          "Frontierland",
+          "Adventureland",
+          "Fantasyland",
+          "Discoveryland"
+        ],
+        "difficulty": "easy",
+        "category": "parks"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "status": "accepted",
+    "reason": "Different parks and attractions: Magic Kingdom Big Thunder versus Disneyland Paris Phantom Manor. Shared land label Frontierland does not locate either from knowledge of the other."
+  },
+  {
+    "findingId": "duplicate-7a467da8ef0e08ff6235",
+    "questions": [
+      {
+        "id": 357,
+        "question": "In what year did Expedition Everest open at Animal Kingdom?",
+        "answers": [
+          "2006",
+          "2004",
+          "2008",
+          "2010"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      },
+      {
+        "id": 922,
+        "question": "At Animal Kingdom, which land includes Expedition Everest?",
+        "answers": [
+          "Asia",
+          "Africa",
+          "DinoLand U.S.A.",
+          "Discovery Island"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "status": "accepted",
+    "reason": "Different Everest facts: opening year and Asia land location. Neither establishes the other."
+  },
+  {
+    "findingId": "duplicate-cb77660980f012d65b28",
+    "questions": [
+      {
+        "id": 338,
+        "question": "Which Disney World park features a 'World Showcase' with pavilions representing different countries?",
+        "answers": [
+          "EPCOT",
+          "Magic Kingdom",
+          "Animal Kingdom",
+          "Hollywood Studios"
+        ],
+        "difficulty": "easy",
+        "category": "parks"
+      },
+      {
+        "id": 1193,
+        "question": "Walt Disney's final filmed appearance presented plans for which Florida concept?",
+        "answers": [
+          "EPCOT",
+          "Animal Kingdom",
+          "Disney-MGM Studios",
+          "Typhoon Lagoon"
+        ],
+        "difficulty": "hard",
+        "category": "walt"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "status": "accepted",
+    "reason": "Existing EPCOT World Showcase location differs from Walt last filmed planning concept. A conceptual-city presentation does not identify the current international-pavilion area."
+  },
+  {
+    "findingId": "leak-470962a9cb331b5f3bfa",
+    "questions": [
+      {
+        "id": 351,
+        "question": "What name does Disney use for the boats serving EPCOT, Hollywood Studios, and the Swan and Dolphin hotels?",
+        "answers": [
+          "Friendship Boats",
+          "Disney Water Taxis",
+          "Resort Launches",
+          "EPCOT Ferries"
+        ],
+        "difficulty": "easy",
+        "category": "parks"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "status": "accepted",
+    "reason": "Boat is the generic transport class, not the distinctive Friendship name. Water Taxis, Resort Launches and EPCOT Ferries also name watercraft; the stem does not reveal Friendship. Exact Disney route naming is supported by the official Swan amenities page."
+  }
+]

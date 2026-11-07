@@ -1,0 +1,37 @@
+{
+  "reviewer": "Codex (OpenAI)",
+  "questions": [
+    {
+      "id": 99,
+      "question": "What was the original name of Disney's Hollywood Studios when it opened in 1989?",
+      "answers": [
+        "Disney-MGM Studios",
+        "Disney Movie Studios",
+        "Hollywood Park",
+        "Disney Film Studios"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    {
+      "id": 618,
+      "question": "In what year did Disney-MGM Studios (now Hollywood Studios) open at Walt Disney World?",
+      "answers": [
+        "1989",
+        "1971",
+        "1982",
+        "1995"
+      ],
+      "difficulty": "hard",
+      "category": "parks"
+    }
+  ],
+  "decision": "The pair supply the 1989 opening event and Disney-MGM Studios name in reverse. Retain q618; the requested old name is already given there. Neither needs both directions of the same opening-event identification.",
+  "evidence": [
+    {
+      "url": "https://d23.com/a-to-z/disney-mgm-studios/",
+      "locator": "Opening sentence gives May 1, 1989 and original Disney-MGM Studios Theme Park name; final paragraph gives 2008 renaming."
+    }
+  ],
+  "replacementApproved": false
+}

@@ -1,0 +1,82 @@
+{
+  "questionId": 31,
+  "hash": "bb223ed6343b7ac3582b5da516f486a835b6310472352362b400493d4e3dd223",
+  "questionSnapshot": {
+    "id": 31,
+    "question": "What is the name of the villain in Tangled?",
+    "answers": [
+      "Mother Gothel",
+      "Lady Tremaine",
+      "The Evil Queen",
+      "Maleficent"
+    ],
+    "difficulty": "medium",
+    "category": "movies",
+    "factId": "tangled.main-villain",
+    "film": "Tangled"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Four villain names from different films. Medium recall. Existing retired #766 preserves the duplicate; active topic digest contains no other direct Mother Gothel/villain identification.",
+  "verification": {
+    "context": "Tangled, Disney animated 2010 film, Rapunzel's captor and principal villain.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Mother Gothel",
+        "verdict": "correct",
+        "reason": "Mother Gothel locked up and falsely raised Rapunzel.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/tangled",
+            "locator": "The Characters: Rapunzel and chameleon Pascal; Mother Gothel imprisoned her from infancy; Maximus is the guard horse."
+          }
+        ]
+      },
+      {
+        "answer": "Lady Tremaine",
+        "verdict": "incorrect",
+        "reason": "Lady Tremaine is Cinderella's wicked stepmother.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/cinderella-1950",
+            "locator": "The Characters: Cinderella, Jaq, Gus and Lady Tremaine profiles; opening synopsis names the two mice and the Fairy Godmother spell."
+          }
+        ]
+      },
+      {
+        "answer": "The Evil Queen",
+        "verdict": "incorrect",
+        "reason": "The Evil Queen is Snow White's jealous stepmother.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/snow-white-and-the-seven-dwarfs",
+            "locator": "Synopsis: the Magic Mirror identifies Snow White as fairest; The Characters: the jealous Queen and Snow White."
+          }
+        ]
+      },
+      {
+        "answer": "Maleficent",
+        "verdict": "incorrect",
+        "reason": "Maleficent is Sleeping Beauty's cursing fairy.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/sleeping-beauty",
+            "locator": "Plot paragraphs: Maleficent curses Princess Aurora; Merryweather, Flora and Fauna raise her; Prince Phillip rescues her."
+          }
+        ]
+      }
+    ]
+  }
+}

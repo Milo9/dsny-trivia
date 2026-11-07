@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 215,
+  "hash": "da5beb133680ea3bef59cca1f1379a47759243683a7a90de5ef9ddb8d9ecf077",
+  "questionSnapshot": {
+    "id": 215,
+    "question": "In Hercules, who is Hercules' divine father?",
+    "answers": [
+      "Zeus",
+      "Hades",
+      "Apollo",
+      "Poseidon"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Checked film continuity rather than general myth variants and earthly adoptive father Amphitryon. Only Zeus among these gods is the father in Disney’s story.",
+  "verification": {
+    "context": "In Hercules, who is Hercules' divine father?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Disney identifies Hercules as the son of Zeus and Hera.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/hercules-film/",
+          "locator": "Opening identifies Hercules as son of Zeus and Hera; Hades is the Underworld antagonist, not the father."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Checked film continuity rather than general myth variants and earthly adoptive father Amphitryon. Only Zeus among these gods is the father in Disney’s story."
+    },
+    "options": [
+      {
+        "answer": "Zeus",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Disney identifies Hercules as the son of Zeus and Hera.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/hercules-film/",
+            "locator": "Opening identifies Hercules as son of Zeus and Hera; Hades is the Underworld antagonist, not the father."
+          }
+        ]
+      },
+      {
+        "answer": "Hades",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "His antagonist, not divine father.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/hercules-film/",
+            "locator": "Opening identifies Hercules as son of Zeus and Hera; Hades is the Underworld antagonist, not the father."
+          }
+        ]
+      },
+      {
+        "answer": "Apollo",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Different god from the father explicitly named.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/hercules-film/",
+            "locator": "Opening identifies Hercules as son of Zeus and Hera; Hades is the Underworld antagonist, not the father."
+          }
+        ]
+      },
+      {
+        "answer": "Poseidon",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Different god from the father explicitly named.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/hercules-film/",
+            "locator": "Opening identifies Hercules as son of Zeus and Hera; Hades is the Underworld antagonist, not the father."
+          }
+        ]
+      }
+    ]
+  }
+}

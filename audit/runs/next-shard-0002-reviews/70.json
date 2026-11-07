@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 70,
+  "hash": "a7d1dd1da34dea7fa4e4d48f8728183abb16e46bd93b85bf4883777e559ec78d",
+  "questionSnapshot": {
+    "id": 70,
+    "question": "In Moana (2016), which crab lives in the realm of monsters, Lalotai?",
+    "answers": [
+      "Tamatoa",
+      "Te Kā",
+      "Tui",
+      "Heihei"
+    ],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "q1386 asks the song title Shiny, not the Lalotai resident’s name. q847 asks which realm Moana enters, not the crab’s identity. Parallel final character-name options. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "English-language Disney character naming; original theatrical feature where a film is named. In Moana (2016), which crab lives in the realm of monsters, Lalotai?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Disney identifies the shiny crustacean living in Lalotai as Tamatoa.",
+      "sources": [
+        {
+          "url": "https://d23.com/5-things-you-might-not-know-about-moana/",
+          "locator": "Word play subsection identifies shiny crustacean Tamatoa living in Lalotai beneath the ocean floor."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Removed the generic Maui’s rival answer, which could describe Tamatoa, and replaced the place-name answer with a character name. Final premise uses exactly the shiny resident and Lalotai relationship supported by the cited section; it no longer requires unlocated fishhook-possession evidence."
+    },
+    "options": [
+      {
+        "answer": "Tamatoa",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Tamatoa is the named resident crab.",
+        "sources": [
+          {
+            "url": "https://d23.com/5-things-you-might-not-know-about-moana/",
+            "locator": "Word play subsection identifies shiny crustacean Tamatoa living in Lalotai beneath the ocean floor."
+          }
+        ]
+      },
+      {
+        "answer": "Te Kā",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Te Kā is not another name for the crab identified here.",
+        "sources": [
+          {
+            "url": "https://d23.com/5-things-you-might-not-know-about-moana/",
+            "locator": "Word play subsection identifies shiny crustacean Tamatoa living in Lalotai beneath the ocean floor."
+          }
+        ]
+      },
+      {
+        "answer": "Tui",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Tui is not another name for Tamatoa.",
+        "sources": [
+          {
+            "url": "https://d23.com/5-things-you-might-not-know-about-moana/",
+            "locator": "Word play subsection identifies shiny crustacean Tamatoa living in Lalotai beneath the ocean floor."
+          }
+        ]
+      },
+      {
+        "answer": "Heihei",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Heihei is not another name for Tamatoa.",
+        "sources": [
+          {
+            "url": "https://d23.com/5-things-you-might-not-know-about-moana/",
+            "locator": "Word play subsection identifies shiny crustacean Tamatoa living in Lalotai beneath the ocean floor."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 195,
+  "hash": "2e2de7ecce7e7c3fdadae22d858969a3ccfbcf8911500ed5f42422965bce1402",
+  "questionSnapshot": {
+    "id": 195,
+    "question": "In Coco, what is the full name of the famous musician Miguel idolizes?",
+    "answers": [
+      "Ernesto de la Cruz",
+      "Héctor Rivera",
+      "Chicharrón",
+      "Papá Julio"
+    ],
+    "difficulty": "medium",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged Héctor as true songwriter and ancestor: those later revelations do not make him the celebrity Miguel idolizes at the outset. The Ernesto profile expressly names Miguel’s idol; Chicharrón and Julio are not that named identity.",
+  "verification": {
+    "context": "In Coco, what is the full name of the famous musician Miguel idolizes?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Ernesto profile explicitly identifies him as Miguel’s idol.",
+      "sources": [
+        {
+          "url": "https://www.pixar.com/coco",
+          "locator": "Héctor, Santa Cecilia, Cemetery, Marigold Bridge and Las Ofrendas sections establish Day of the Dead setting; Ernesto de la Cruz profile explicitly calls him Miguel’s idol."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged Héctor as true songwriter and ancestor: those later revelations do not make him the celebrity Miguel idolizes at the outset. The Ernesto profile expressly names Miguel’s idol; Chicharrón and Julio are not that named identity."
+    },
+    "options": [
+      {
+        "answer": "Ernesto de la Cruz",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Ernesto profile explicitly identifies him as Miguel’s idol.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/coco",
+            "locator": "Héctor, Santa Cecilia, Cemetery, Marigold Bridge and Las Ofrendas sections establish Day of the Dead setting; Ernesto de la Cruz profile explicitly calls him Miguel’s idol."
+          }
+        ]
+      },
+      {
+        "answer": "Héctor Rivera",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "The skeleton partner and later revealed ancestor, not the idol named in the profile.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/coco",
+            "locator": "Héctor, Santa Cecilia, Cemetery, Marigold Bridge and Las Ofrendas sections establish Day of the Dead setting; Ernesto de la Cruz profile explicitly calls him Miguel’s idol."
+          }
+        ]
+      },
+      {
+        "answer": "Chicharrón",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the explicitly named celebrity idol.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/coco",
+            "locator": "Héctor, Santa Cecilia, Cemetery, Marigold Bridge and Las Ofrendas sections establish Day of the Dead setting; Ernesto de la Cruz profile explicitly calls him Miguel’s idol."
+          }
+        ]
+      },
+      {
+        "answer": "Papá Julio",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the explicitly named celebrity idol.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/coco",
+            "locator": "Héctor, Santa Cecilia, Cemetery, Marigold Bridge and Las Ofrendas sections establish Day of the Dead setting; Ernesto de la Cruz profile explicitly calls him Miguel’s idol."
+          }
+        ]
+      }
+    ]
+  }
+}

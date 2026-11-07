@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 164,
+  "hash": "de9c649773a20d89e88c32009443c91f979829074dca25953c80b8ab3700c6da",
+  "questionSnapshot": {
+    "id": 164,
+    "question": "Who sang the main English lead vocals of 'Circle of Life' in The Lion King (1994)?",
+    "answers": [
+      "Carmen Twillie",
+      "Elton John",
+      "Hans Zimmer",
+      "Lebo M"
+    ],
+    "difficulty": "medium",
+    "category": "music"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged both actual alternative performers: Elton John has a separate pop recording and Lebo M sings the African opening. WDR track 1 splits Twillie from African vocals; main English lead and 1994 film scope exclude those interpretations. Zimmer is not in the track vocal list.",
+  "verification": {
+    "context": "Who sang the main English lead vocals of 'Circle of Life' in The Lion King (1994)?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Track 1 credits Twillie as performer of the film version.",
+      "sources": [
+        {
+          "url": "https://disney.go.com/disneyrecords/Soundtracks/LionKing/index.html",
+          "locator": "Track 1 credits Carmen Twillie and separately Lebo M African vocals; track 11 is Elton John’s separate Circle of Life recording."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged both actual alternative performers: Elton John has a separate pop recording and Lebo M sings the African opening. WDR track 1 splits Twillie from African vocals; main English lead and 1994 film scope exclude those interpretations. Zimmer is not in the track vocal list."
+    },
+    "options": [
+      {
+        "answer": "Carmen Twillie",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Track 1 credits Twillie as performer of the film version.",
+        "sources": [
+          {
+            "url": "https://disney.go.com/disneyrecords/Soundtracks/LionKing/index.html",
+            "locator": "Track 1 credits Carmen Twillie and separately Lebo M African vocals; track 11 is Elton John’s separate Circle of Life recording."
+          }
+        ]
+      },
+      {
+        "answer": "Elton John",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "John performs the separate pop track 11, not the film’s main English lead.",
+        "sources": [
+          {
+            "url": "https://disney.go.com/disneyrecords/Soundtracks/LionKing/index.html",
+            "locator": "Track 1 credits Carmen Twillie and separately Lebo M African vocals; track 11 is Elton John’s separate Circle of Life recording."
+          }
+        ]
+      },
+      {
+        "answer": "Hans Zimmer",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not among the track 1 vocal credits.",
+        "sources": [
+          {
+            "url": "https://disney.go.com/disneyrecords/Soundtracks/LionKing/index.html",
+            "locator": "Track 1 credits Carmen Twillie and separately Lebo M African vocals; track 11 is Elton John’s separate Circle of Life recording."
+          }
+        ]
+      },
+      {
+        "answer": "Lebo M",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Credited separately for African vocals, not the main English lead.",
+        "sources": [
+          {
+            "url": "https://disney.go.com/disneyrecords/Soundtracks/LionKing/index.html",
+            "locator": "Track 1 credits Carmen Twillie and separately Lebo M African vocals; track 11 is Elton John’s separate Circle of Life recording."
+          }
+        ]
+      }
+    ]
+  }
+}

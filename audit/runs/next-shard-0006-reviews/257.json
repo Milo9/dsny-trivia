@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 257,
+  "hash": "9f39704e3715c635fdf6023c869e1259065f2861189bf8ab23433a32493c2cf9",
+  "questionSnapshot": {
+    "id": 257,
+    "question": "In Oliver & Company, who is the ruthless loan shark villain?",
+    "answers": [
+      "Sykes",
+      "Fagin",
+      "Dodger",
+      "Roscoe"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Fagin also engages in crime, but borrowing from Sykes does not make him the specified loan shark. Roscoe villainy does not fit the creditor role. Official synopsis plus secondary role enumeration, rather than treating villain as a single shared role.",
+  "verification": {
+    "context": "In Oliver & Company, who is the ruthless loan shark villain?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Sykes is the creditor/loan shark.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/oliver-company-film/",
+          "locator": "Opening sets story in New York and distinguishes Fagin from his boss Sykes; cast lists Dodger separately."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Oliver_%26_Company",
+          "locator": "Plot opening and voice cast: Sykes creditor, Fagin indebted thief, Dodger gang dog, Roscoe one of Sykes Dobermanns. Secondary corroboration of official synopsis; original scene not inspected."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Fagin also engages in crime, but borrowing from Sykes does not make him the specified loan shark. Roscoe villainy does not fit the creditor role. Official synopsis plus secondary role enumeration, rather than treating villain as a single shared role."
+    },
+    "options": [
+      {
+        "answer": "Sykes",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Sykes is the creditor/loan shark.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/oliver-company-film/",
+            "locator": "Opening sets story in New York and distinguishes Fagin from his boss Sykes; cast lists Dodger separately."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Oliver_%26_Company",
+            "locator": "Plot opening and voice cast: Sykes creditor, Fagin indebted thief, Dodger gang dog, Roscoe one of Sykes Dobermanns. Secondary corroboration of official synopsis; original scene not inspected."
+          }
+        ]
+      },
+      {
+        "answer": "Fagin",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Fagin is the debtor, not his creditor.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/oliver-company-film/",
+            "locator": "Opening sets story in New York and distinguishes Fagin from his boss Sykes; cast lists Dodger separately."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Oliver_%26_Company",
+            "locator": "Plot opening and voice cast: Sykes creditor, Fagin indebted thief, Dodger gang dog, Roscoe one of Sykes Dobermanns. Secondary corroboration of official synopsis; original scene not inspected."
+          }
+        ]
+      },
+      {
+        "answer": "Dodger",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Dodger is a gang dog, not the human creditor.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/oliver-company-film/",
+            "locator": "Opening sets story in New York and distinguishes Fagin from his boss Sykes; cast lists Dodger separately."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Oliver_%26_Company",
+            "locator": "Plot opening and voice cast: Sykes creditor, Fagin indebted thief, Dodger gang dog, Roscoe one of Sykes Dobermanns. Secondary corroboration of official synopsis; original scene not inspected."
+          }
+        ]
+      },
+      {
+        "answer": "Roscoe",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Roscoe is a guard dog working for Sykes.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/oliver-company-film/",
+            "locator": "Opening sets story in New York and distinguishes Fagin from his boss Sykes; cast lists Dodger separately."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Oliver_%26_Company",
+            "locator": "Plot opening and voice cast: Sykes creditor, Fagin indebted thief, Dodger gang dog, Roscoe one of Sykes Dobermanns. Secondary corroboration of official synopsis; original scene not inspected."
+          }
+        ]
+      }
+    ]
+  }
+}

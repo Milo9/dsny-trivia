@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 320,
+  "hash": "f764c5f1062c2b409796ab762347cf3f82873e53295182ff6a50b17fc4d3fa4b",
+  "questionSnapshot": {
+    "id": 320,
+    "question": "In Cars (2006), which racer deliberately causes The King's crash near the end of the final race?",
+    "answers": [
+      "Chick Hicks",
+      "Lightning McQueen",
+      "Finn McMissile",
+      "Francesco Bernoulli"
+    ],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "The original main-rival wording also fits the King as a title rival. Replaced it with a specific attributable action, removed the named victim from the options, and fixed the film year. Two secondary plot accounts agree; primary screenplay fetch failed and no primary viewing is claimed. Unique action attribution excludes the alternatives. Cars 2 nationality and Cars 3 rival are different facts. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+  "verification": {
+    "context": "In Cars (2006), which racer deliberately causes The King's crash near the end of the final race? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Chick intentionally damages the King during the tiebreaker. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Cars_(film)",
+          "locator": "Plot: opening Rust-eze/Dinoco sponsorship contrast; final tiebreaker paragraph identifying Chick causing the King crash and Lightning returning to help"
+        },
+        {
+          "url": "https://www.imdb.com/title/tt0317219/plotsummary/",
+          "locator": "Synopsis: final Los Angeles race, Chick employing the PIT maneuver against the King; Lightning stopping and pushing the King"
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "The original main-rival wording also fits the King as a title rival. Replaced it with a specific attributable action, removed the named victim from the options, and fixed the film year. Two secondary plot accounts agree; primary screenplay fetch failed and no primary viewing is claimed. Unique action attribution excludes the alternatives. Cars 2 nationality and Cars 3 rival are different facts."
+    },
+    "options": [
+      {
+        "answer": "Chick Hicks",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Chick intentionally damages the King during the tiebreaker.",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Cars_(film)",
+            "locator": "Plot: opening Rust-eze/Dinoco sponsorship contrast; final tiebreaker paragraph identifying Chick causing the King crash and Lightning returning to help"
+          },
+          {
+            "url": "https://www.imdb.com/title/tt0317219/plotsummary/",
+            "locator": "Synopsis: final Los Angeles race, Chick employing the PIT maneuver against the King; Lightning stopping and pushing the King"
+          }
+        ]
+      },
+      {
+        "answer": "Lightning McQueen",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Lightning stops to help the King finish after the crash; he does not cause it.",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Cars_(film)",
+            "locator": "Plot: opening Rust-eze/Dinoco sponsorship contrast; final tiebreaker paragraph identifying Chick causing the King crash and Lightning returning to help"
+          },
+          {
+            "url": "https://www.imdb.com/title/tt0317219/plotsummary/",
+            "locator": "Synopsis: final Los Angeles race, Chick employing the PIT maneuver against the King; Lightning stopping and pushing the King"
+          }
+        ]
+      },
+      {
+        "answer": "Finn McMissile",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "The incident is attributed to Chick, not Finn McMissile.",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Cars_(film)",
+            "locator": "Plot: opening Rust-eze/Dinoco sponsorship contrast; final tiebreaker paragraph identifying Chick causing the King crash and Lightning returning to help"
+          },
+          {
+            "url": "https://www.imdb.com/title/tt0317219/plotsummary/",
+            "locator": "Synopsis: final Los Angeles race, Chick employing the PIT maneuver against the King; Lightning stopping and pushing the King"
+          }
+        ]
+      },
+      {
+        "answer": "Francesco Bernoulli",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "The incident is attributed to Chick, not Francesco Bernoulli.",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Cars_(film)",
+            "locator": "Plot: opening Rust-eze/Dinoco sponsorship contrast; final tiebreaker paragraph identifying Chick causing the King crash and Lightning returning to help"
+          },
+          {
+            "url": "https://www.imdb.com/title/tt0317219/plotsummary/",
+            "locator": "Synopsis: final Los Angeles race, Chick employing the PIT maneuver against the King; Lightning stopping and pushing the King"
+          }
+        ]
+      }
+    ]
+  }
+}

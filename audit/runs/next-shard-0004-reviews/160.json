@@ -1,0 +1,161 @@
+{
+  "schema": 2,
+  "questionId": 160,
+  "hash": "9f6381767b0186eb62879c95deffce04feb725e3a8be016a565059641db73ad4",
+  "questionSnapshot": {
+    "id": 160,
+    "question": "The songwriting duo Kristen Anderson-Lopez and Robert Lopez wrote the songs for which Disney film?",
+    "answers": [
+      "Frozen",
+      "Moana",
+      "Encanto",
+      "Brave"
+    ],
+    "difficulty": "medium",
+    "category": "music"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged Moana and Brave rather than relying on absence in a Frozen synopsis. Their music teams are explicitly different in the primary introductions/press release; Encanto has Miranda original songs. Frozen stage source expressly identifies original film songs separately from stage additions.",
+  "verification": {
+    "context": "The songwriting duo Kristen Anderson-Lopez and Robert Lopez wrote the songs for which Disney film?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Licensed rights-holder description explicitly attributes the original Frozen film songs to the pair.",
+      "sources": [
+        {
+          "url": "https://www.mtishows.com/disneys-frozen",
+          "locator": "Opening description explicitly identifies the original animated film songs as by Kristen Anderson-Lopez and Robert Lopez, separately from new stage songs."
+        },
+        {
+          "url": "https://d23.com/d23-video/the-magic-makers-behind-the-music-of-moana/",
+          "locator": "Intro text explicitly names Mark Mancina, Lin-Manuel Miranda and Opetaia Foa’i as the Moana music team; text inspected, not unplayed video."
+        },
+        {
+          "url": "https://www.disney.com.au/news/disney-encanto-home-is-where-the-magic-lives",
+          "locator": "Paragraph beginning It was the obvious: Miranda created the eight original songs."
+        },
+        {
+          "url": "https://www.awn.com/news/brave-soundtrack-available-june-19",
+          "locator": "Identified as a Walt Disney Records press release; THE SCORE and ORIGINAL SONGS sections credit Doyle, Mandel/Andrews and Mumford & Sons; full track list follows."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged Moana and Brave rather than relying on absence in a Frozen synopsis. Their music teams are explicitly different in the primary introductions/press release; Encanto has Miranda original songs. Frozen stage source expressly identifies original film songs separately from stage additions."
+    },
+    "options": [
+      {
+        "answer": "Frozen",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Licensed rights-holder description explicitly attributes the original Frozen film songs to the pair.",
+        "sources": [
+          {
+            "url": "https://www.mtishows.com/disneys-frozen",
+            "locator": "Opening description explicitly identifies the original animated film songs as by Kristen Anderson-Lopez and Robert Lopez, separately from new stage songs."
+          },
+          {
+            "url": "https://d23.com/d23-video/the-magic-makers-behind-the-music-of-moana/",
+            "locator": "Intro text explicitly names Mark Mancina, Lin-Manuel Miranda and Opetaia Foa’i as the Moana music team; text inspected, not unplayed video."
+          },
+          {
+            "url": "https://www.disney.com.au/news/disney-encanto-home-is-where-the-magic-lives",
+            "locator": "Paragraph beginning It was the obvious: Miranda created the eight original songs."
+          },
+          {
+            "url": "https://www.awn.com/news/brave-soundtrack-available-june-19",
+            "locator": "Identified as a Walt Disney Records press release; THE SCORE and ORIGINAL SONGS sections credit Doyle, Mandel/Andrews and Mumford & Sons; full track list follows."
+          }
+        ]
+      },
+      {
+        "answer": "Moana",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Moana’s credited team is Miranda, Foa’i and Mancina.",
+        "sources": [
+          {
+            "url": "https://www.mtishows.com/disneys-frozen",
+            "locator": "Opening description explicitly identifies the original animated film songs as by Kristen Anderson-Lopez and Robert Lopez, separately from new stage songs."
+          },
+          {
+            "url": "https://d23.com/d23-video/the-magic-makers-behind-the-music-of-moana/",
+            "locator": "Intro text explicitly names Mark Mancina, Lin-Manuel Miranda and Opetaia Foa’i as the Moana music team; text inspected, not unplayed video."
+          },
+          {
+            "url": "https://www.disney.com.au/news/disney-encanto-home-is-where-the-magic-lives",
+            "locator": "Paragraph beginning It was the obvious: Miranda created the eight original songs."
+          },
+          {
+            "url": "https://www.awn.com/news/brave-soundtrack-available-june-19",
+            "locator": "Identified as a Walt Disney Records press release; THE SCORE and ORIGINAL SONGS sections credit Doyle, Mandel/Andrews and Mumford & Sons; full track list follows."
+          }
+        ]
+      },
+      {
+        "answer": "Encanto",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Disney attributes its eight original songs to Miranda.",
+        "sources": [
+          {
+            "url": "https://www.mtishows.com/disneys-frozen",
+            "locator": "Opening description explicitly identifies the original animated film songs as by Kristen Anderson-Lopez and Robert Lopez, separately from new stage songs."
+          },
+          {
+            "url": "https://d23.com/d23-video/the-magic-makers-behind-the-music-of-moana/",
+            "locator": "Intro text explicitly names Mark Mancina, Lin-Manuel Miranda and Opetaia Foa’i as the Moana music team; text inspected, not unplayed video."
+          },
+          {
+            "url": "https://www.disney.com.au/news/disney-encanto-home-is-where-the-magic-lives",
+            "locator": "Paragraph beginning It was the obvious: Miranda created the eight original songs."
+          },
+          {
+            "url": "https://www.awn.com/news/brave-soundtrack-available-june-19",
+            "locator": "Identified as a Walt Disney Records press release; THE SCORE and ORIGINAL SONGS sections credit Doyle, Mandel/Andrews and Mumford & Sons; full track list follows."
+          }
+        ]
+      },
+      {
+        "answer": "Brave",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "WDR’s press release credits other songwriters and Doyle, not the Lopez pair.",
+        "sources": [
+          {
+            "url": "https://www.mtishows.com/disneys-frozen",
+            "locator": "Opening description explicitly identifies the original animated film songs as by Kristen Anderson-Lopez and Robert Lopez, separately from new stage songs."
+          },
+          {
+            "url": "https://d23.com/d23-video/the-magic-makers-behind-the-music-of-moana/",
+            "locator": "Intro text explicitly names Mark Mancina, Lin-Manuel Miranda and Opetaia Foa’i as the Moana music team; text inspected, not unplayed video."
+          },
+          {
+            "url": "https://www.disney.com.au/news/disney-encanto-home-is-where-the-magic-lives",
+            "locator": "Paragraph beginning It was the obvious: Miranda created the eight original songs."
+          },
+          {
+            "url": "https://www.awn.com/news/brave-soundtrack-available-june-19",
+            "locator": "Identified as a Walt Disney Records press release; THE SCORE and ORIGINAL SONGS sections credit Doyle, Mandel/Andrews and Mumford & Sons; full track list follows."
+          }
+        ]
+      }
+    ]
+  }
+}

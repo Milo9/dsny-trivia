@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 211,
+  "hash": "c4db22609ac35795f4b45458c44874c6d816af0100e7acb5501836114a3b1602",
+  "questionSnapshot": {
+    "id": 211,
+    "question": "In Cinderella, at what time does the Fairy Godmother's spell wear off?",
+    "answers": [
+      "Midnight",
+      "Dawn",
+      "Noon",
+      "Sunset"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Challenged the glass slippers remaining magical: question asks the stated spell deadline, not whether every enchanted object vanishes. Dawn/noon/sunset do not match that deadline.",
+  "verification": {
+    "context": "In Cinderella, at what time does the Fairy Godmother's spell wear off?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The 1950 film synopsis explicitly says midnight.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/cinderella-film/",
+          "locator": "Synopsis, midnight flight paragraph: midnight is the hour the magic is due to end; explicitly 1950 animated feature."
+        },
+        {
+          "url": "https://movies.disney.com/cinderella-1950",
+          "locator": "Film still gallery caption expressly identifies Fairy Godmother transforming a pumpkin into a carriage; midnight departure caption corroborates spell deadline."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged the glass slippers remaining magical: question asks the stated spell deadline, not whether every enchanted object vanishes. Dawn/noon/sunset do not match that deadline."
+    },
+    "options": [
+      {
+        "answer": "Midnight",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The 1950 film synopsis explicitly says midnight.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/cinderella-film/",
+            "locator": "Synopsis, midnight flight paragraph: midnight is the hour the magic is due to end; explicitly 1950 animated feature."
+          },
+          {
+            "url": "https://movies.disney.com/cinderella-1950",
+            "locator": "Film still gallery caption expressly identifies Fairy Godmother transforming a pumpkin into a carriage; midnight departure caption corroborates spell deadline."
+          }
+        ]
+      },
+      {
+        "answer": "Dawn",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Later than the stated deadline.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/cinderella-film/",
+            "locator": "Synopsis, midnight flight paragraph: midnight is the hour the magic is due to end; explicitly 1950 animated feature."
+          },
+          {
+            "url": "https://movies.disney.com/cinderella-1950",
+            "locator": "Film still gallery caption expressly identifies Fairy Godmother transforming a pumpkin into a carriage; midnight departure caption corroborates spell deadline."
+          }
+        ]
+      },
+      {
+        "answer": "Noon",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different clock time from midnight.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/cinderella-film/",
+            "locator": "Synopsis, midnight flight paragraph: midnight is the hour the magic is due to end; explicitly 1950 animated feature."
+          },
+          {
+            "url": "https://movies.disney.com/cinderella-1950",
+            "locator": "Film still gallery caption expressly identifies Fairy Godmother transforming a pumpkin into a carriage; midnight departure caption corroborates spell deadline."
+          }
+        ]
+      },
+      {
+        "answer": "Sunset",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different clock time from midnight.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/cinderella-film/",
+            "locator": "Synopsis, midnight flight paragraph: midnight is the hour the magic is due to end; explicitly 1950 animated feature."
+          },
+          {
+            "url": "https://movies.disney.com/cinderella-1950",
+            "locator": "Film still gallery caption expressly identifies Fairy Godmother transforming a pumpkin into a carriage; midnight departure caption corroborates spell deadline."
+          }
+        ]
+      }
+    ]
+  }
+}

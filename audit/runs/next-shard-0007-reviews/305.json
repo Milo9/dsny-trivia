@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 305,
+  "hash": "3c793f7af2b5713c9ecca5099a321222710fcb3a231a17e2a620b74edb5464bc",
+  "questionSnapshot": {
+    "id": 305,
+    "question": "In Cars (2006), which brand is Lightning McQueen's main racing sponsor?",
+    "answers": [
+      "Rust-eze",
+      "Dinoco",
+      "Octane Gain",
+      "Vitoline"
+    ],
+    "difficulty": "medium",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Bound the question to the first film: later Dinoco/Rust-eze ownership developments cannot change this answer. Main sponsor is a single role; possible minor decals do not count as main sponsorship. Plot evidence is secondary, corroborated only by the official clip title; no claim to have watched that clip. This is Pixar brand trivia, so moved it from characters to pixar. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+  "verification": {
+    "context": "In Cars (2006), which brand is Lightning McQueen's main racing sponsor? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Rust-eze is the sponsorship McQueen already has in the 2006 story. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Cars_(film)",
+          "locator": "Plot: opening Rust-eze/Dinoco sponsorship contrast; final tiebreaker paragraph identifying Chick causing the King crash and Lightning returning to help"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Q4sBvyM-Ruk",
+          "locator": "Disney Jr. official clip title: Lightning McQueen Loves Rust-eze!; corroborating title only, not a claim to have watched its video"
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Bound the question to the first film: later Dinoco/Rust-eze ownership developments cannot change this answer. Main sponsor is a single role; possible minor decals do not count as main sponsorship. Plot evidence is secondary, corroborated only by the official clip title; no claim to have watched that clip. This is Pixar brand trivia, so moved it from characters to pixar."
+    },
+    "options": [
+      {
+        "answer": "Rust-eze",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Rust-eze is the sponsorship McQueen already has in the 2006 story.",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Cars_(film)",
+            "locator": "Plot: opening Rust-eze/Dinoco sponsorship contrast; final tiebreaker paragraph identifying Chick causing the King crash and Lightning returning to help"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Q4sBvyM-Ruk",
+            "locator": "Disney Jr. official clip title: Lightning McQueen Loves Rust-eze!; corroborating title only, not a claim to have watched its video"
+          }
+        ]
+      },
+      {
+        "answer": "Dinoco",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Dinoco is the prestigious sponsor he wants instead, not his main sponsor in this film.",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Cars_(film)",
+            "locator": "Plot: opening Rust-eze/Dinoco sponsorship contrast; final tiebreaker paragraph identifying Chick causing the King crash and Lightning returning to help"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Q4sBvyM-Ruk",
+            "locator": "Disney Jr. official clip title: Lightning McQueen Loves Rust-eze!; corroborating title only, not a claim to have watched its video"
+          }
+        ]
+      },
+      {
+        "answer": "Octane Gain",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "The stated main sponsorship is Rust-eze, not Octane Gain.",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Cars_(film)",
+            "locator": "Plot: opening Rust-eze/Dinoco sponsorship contrast; final tiebreaker paragraph identifying Chick causing the King crash and Lightning returning to help"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Q4sBvyM-Ruk",
+            "locator": "Disney Jr. official clip title: Lightning McQueen Loves Rust-eze!; corroborating title only, not a claim to have watched its video"
+          }
+        ]
+      },
+      {
+        "answer": "Vitoline",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "The stated main sponsorship is Rust-eze, not Vitoline.",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Cars_(film)",
+            "locator": "Plot: opening Rust-eze/Dinoco sponsorship contrast; final tiebreaker paragraph identifying Chick causing the King crash and Lightning returning to help"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Q4sBvyM-Ruk",
+            "locator": "Disney Jr. official clip title: Lightning McQueen Loves Rust-eze!; corroborating title only, not a claim to have watched its video"
+          }
+        ]
+      }
+    ]
+  }
+}

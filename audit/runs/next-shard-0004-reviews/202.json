@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 202,
+  "hash": "ac2faa5a4f1e81a76b89d346636d5b7d2d65bfb17b71fd39106ca8c3480bf3d1",
+  "questionSnapshot": {
+    "id": 202,
+    "question": "What is the name of the snowman that Elsa and Anna built as children in Frozen?",
+    "answers": [
+      "Olaf",
+      "Marshmallow",
+      "Frosty",
+      "Snowflake"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged animated adult Olaf versus the inanimate childhood model. D23 explicitly links the sisters’ first snowman to the name Olaf. Marshmallow is a different creation; Frosty and Snowflake are not this childhood snowman’s name.",
+  "verification": {
+    "context": "What is the name of the snowman that Elsa and Anna built as children in Frozen?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Items 1 and 6 identify the sisters’ childhood snowman as Olaf.",
+      "sources": [
+        {
+          "url": "https://d23.com/times-anna-and-elsa-melted-our-hearts/",
+          "locator": "Numbered items 1 and 6 explicitly identify the snowman built by young Anna/Elsa as Olaf."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged animated adult Olaf versus the inanimate childhood model. D23 explicitly links the sisters’ first snowman to the name Olaf. Marshmallow is a different creation; Frosty and Snowflake are not this childhood snowman’s name."
+    },
+    "options": [
+      {
+        "answer": "Olaf",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Items 1 and 6 identify the sisters’ childhood snowman as Olaf.",
+        "sources": [
+          {
+            "url": "https://d23.com/times-anna-and-elsa-melted-our-hearts/",
+            "locator": "Numbered items 1 and 6 explicitly identify the snowman built by young Anna/Elsa as Olaf."
+          }
+        ]
+      },
+      {
+        "answer": "Marshmallow",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the snowman identified in that childhood scene.",
+        "sources": [
+          {
+            "url": "https://d23.com/times-anna-and-elsa-melted-our-hearts/",
+            "locator": "Numbered items 1 and 6 explicitly identify the snowman built by young Anna/Elsa as Olaf."
+          }
+        ]
+      },
+      {
+        "answer": "Frosty",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the snowman identified in that childhood scene.",
+        "sources": [
+          {
+            "url": "https://d23.com/times-anna-and-elsa-melted-our-hearts/",
+            "locator": "Numbered items 1 and 6 explicitly identify the snowman built by young Anna/Elsa as Olaf."
+          }
+        ]
+      },
+      {
+        "answer": "Snowflake",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the snowman identified in that childhood scene.",
+        "sources": [
+          {
+            "url": "https://d23.com/times-anna-and-elsa-melted-our-hearts/",
+            "locator": "Numbered items 1 and 6 explicitly identify the snowman built by young Anna/Elsa as Olaf."
+          }
+        ]
+      }
+    ]
+  }
+}

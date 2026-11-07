@@ -1,0 +1,141 @@
+{
+  "schema": 2,
+  "questionId": 356,
+  "hash": "f6dd4760989909bd7eb79a0520db6af5d82127681ea7070fddef4517388965ce",
+  "questionSnapshot": {
+    "id": 356,
+    "question": "Which EPCOT attraction opened in 1999 and sends guests in cars around an outdoor high-speed loop?",
+    "answers": [
+      "Test Track",
+      "Mission: SPACE",
+      "Spaceship Earth",
+      "Journey Into Imagination"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Removed simulated speeds: the vehicles really move around the outdoor track. Distinguished the December 1998 soft opening from the documented 1999 grand opening and checked the current page does still describe a high-speed road run after retheming. The 65 mph question 2217 and sponsor question 2216 ask different numeric/production facts. No direct Test-word giveaway remains. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+  "verification": {
+    "context": "Which EPCOT attraction opened in 1999 and sends guests in cars around an outdoor high-speed loop? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+    "timeSensitive": true,
+    "nextReviewAt": "2027-02-04",
+    "premise": {
+      "reason": "Test Track had its grand opening in 1999 and takes cars onto a real high-speed loop outside. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/test-track/",
+          "locator": "Opening paragraphs: grand opening March 17, 1999; vehicles travel on outside loop at real speeds up to 65 mph"
+        },
+        {
+          "url": "https://disneyworld.disney.go.com/attractions/epcot/test-track/",
+          "locator": "Current Portuguese-language page: Viajando para um amanhã mais brilhante describes road journey and electrifying high-speed run, not a stationary speed simulation"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Test_Track",
+          "locator": "History: December 19, 1998 soft opening distinguished from March 17, 1999 official opening"
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Removed simulated speeds: the vehicles really move around the outdoor track. Distinguished the December 1998 soft opening from the documented 1999 grand opening and checked the current page does still describe a high-speed road run after retheming. The 65 mph question 2217 and sponsor question 2216 ask different numeric/production facts. No direct Test-word giveaway remains."
+    },
+    "options": [
+      {
+        "answer": "Test Track",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Test Track had its grand opening in 1999 and takes cars onto a real high-speed loop outside.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/test-track/",
+            "locator": "Opening paragraphs: grand opening March 17, 1999; vehicles travel on outside loop at real speeds up to 65 mph"
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/epcot/test-track/",
+            "locator": "Current Portuguese-language page: Viajando para um amanhã mais brilhante describes road journey and electrifying high-speed run, not a stationary speed simulation"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Test_Track",
+            "locator": "History: December 19, 1998 soft opening distinguished from March 17, 1999 official opening"
+          }
+        ]
+      },
+      {
+        "answer": "Mission: SPACE",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Mission: SPACE is not the 1999 car-loop attraction named in this history.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/test-track/",
+            "locator": "Opening paragraphs: grand opening March 17, 1999; vehicles travel on outside loop at real speeds up to 65 mph"
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/epcot/test-track/",
+            "locator": "Current Portuguese-language page: Viajando para um amanhã mais brilhante describes road journey and electrifying high-speed run, not a stationary speed simulation"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Test_Track",
+            "locator": "History: December 19, 1998 soft opening distinguished from March 17, 1999 official opening"
+          }
+        ]
+      },
+      {
+        "answer": "Spaceship Earth",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Spaceship Earth is not the 1999 car-loop attraction named in this history.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/test-track/",
+            "locator": "Opening paragraphs: grand opening March 17, 1999; vehicles travel on outside loop at real speeds up to 65 mph"
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/epcot/test-track/",
+            "locator": "Current Portuguese-language page: Viajando para um amanhã mais brilhante describes road journey and electrifying high-speed run, not a stationary speed simulation"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Test_Track",
+            "locator": "History: December 19, 1998 soft opening distinguished from March 17, 1999 official opening"
+          }
+        ]
+      },
+      {
+        "answer": "Journey Into Imagination",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Journey Into Imagination is not the 1999 car-loop attraction named in this history.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/test-track/",
+            "locator": "Opening paragraphs: grand opening March 17, 1999; vehicles travel on outside loop at real speeds up to 65 mph"
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/epcot/test-track/",
+            "locator": "Current Portuguese-language page: Viajando para um amanhã mais brilhante describes road journey and electrifying high-speed run, not a stationary speed simulation"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Test_Track",
+            "locator": "History: December 19, 1998 soft opening distinguished from March 17, 1999 official opening"
+          }
+        ]
+      }
+    ]
+  }
+}

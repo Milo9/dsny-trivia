@@ -1,0 +1,3097 @@
+{
+  "schema": 1,
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "sourcesChecked": [
+    "aquamouse",
+    "b13-1965",
+    "b13-1993",
+    "b13-aquaduck",
+    "b13-arendelle",
+    "b13-bare",
+    "b13-bayou",
+    "b13-beautyopening",
+    "b13-beautyscene",
+    "b13-bikes",
+    "b13-bluefairy",
+    "b13-boutique",
+    "b13-bruno",
+    "b13-brunolabel",
+    "b13-castaway",
+    "b13-circle",
+    "b13-colors",
+    "b13-colorsscene",
+    "b13-distance",
+    "b13-distanceofficial",
+    "b13-dream",
+    "b13-dreamofficial",
+    "b13-dreamscene",
+    "b13-dwarfs",
+    "b13-europa",
+    "b13-hercules",
+    "b13-hunchback",
+    "b13-hunchbackmusic",
+    "b13-icecream",
+    "b13-icecream2026",
+    "b13-lumiere",
+    "b13-magic",
+    "b13-mermaidcatalog",
+    "b13-mermaidscene",
+    "b13-moanasolo",
+    "b13-mulan",
+    "b13-nani",
+    "b13-northuldra",
+    "b13-pepita",
+    "b13-ralph",
+    "b13-reflection",
+    "b13-rourke",
+    "b13-snorkel",
+    "b13-snorkellist",
+    "b13-tangled",
+    "b13-tangledcatalog",
+    "b13-tarzanrecord",
+    "b13-thumper",
+    "b13-tiana",
+    "b13-tianasong",
+    "b13-two",
+    "b13-typhoon",
+    "b13-ursula",
+    "b13-zero",
+    "b13-zeroofficial",
+    "b9-ashman",
+    "b9-beautysinger",
+    "b9-letitgo",
+    "b9-moanacreator",
+    "b9-oscars1992",
+    "b9-oscars1995",
+    "b9-unknowncast",
+    "cruise-originals",
+    "fleet-2025-table",
+    "water-coasters",
+    "wish-dining-guide"
+  ],
+  "reviews": [
+    {
+      "questionId": 698,
+      "hash": "1ba03cf2cf85dc1ac8daff59fe5996102d3cc2d89ecdd3faa43f2fa3de994377",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q164 asks lead singer; q1391 asks the opening chant words. Neither answers the song identity.",
+      "context": "The original 1994 opening has one named song.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The original 1994 opening has one named song.",
+        "sources": [
+          "b13-circle"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Circle of Life is the opening number.",
+          "sources": [
+            "b13-circle"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hakuna Matata is not that opening number.",
+          "sources": [
+            "b13-circle"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "I Just Can't Wait to Be King is a separate number.",
+          "sources": [
+            "b13-circle"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Be Prepared is a separate villain number.",
+          "sources": [
+            "b13-circle"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the film opening rather than album sequencing or the stage adaptation."
+      }
+    },
+    {
+      "questionId": 699,
+      "hash": "eebc8d49706d729415fb437a864422bd2e4d2b78780b9dadde2c69ee5ee90e89",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q448 and q1018 ask different songs; q2543 asks the end-credit singer.",
+      "context": "The 2016 heroine has a specific exploratory solo.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 2016 heroine has a specific exploratory solo.",
+        "sources": [
+          "b13-moanasolo",
+          "b9-moanacreator"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "How Far I'll Go expresses her exploratory longing.",
+          "sources": [
+            "b13-moanasolo",
+            "b9-moanacreator"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "You're Welcome is Maui's self-celebration.",
+          "sources": [
+            "b13-moanasolo",
+            "b9-moanacreator"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Shiny is Tamatoa's boast.",
+          "sources": [
+            "b13-moanasolo",
+            "b9-moanacreator"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "We Know the Way concerns ancestral voyaging, not her solo.",
+          "sources": [
+            "b13-moanasolo",
+            "b9-moanacreator"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Specified the 2016 solo; the ancestral ensemble also involves voyaging but cannot fit the solo performance."
+      }
+    },
+    {
+      "questionId": 700,
+      "hash": "cedbc606481d090a00aa23972393f1f6d0136abb50c97484a1c1e186972474f2",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q2361 asks its Oscar loss; q229 asks the carriage's original object.",
+      "context": "The magic transformation has a named Fairy Godmother song.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The magic transformation has a named Fairy Godmother song.",
+        "sources": [
+          "b13-magic"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Bibbidi-Bobbidi-Boo is the transformation number.",
+          "sources": [
+            "b13-magic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A Dream Is a Wish Your Heart Makes is Cinderella's song.",
+          "sources": [
+            "b13-magic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "So This Is Love is the romantic number, not the spell.",
+          "sources": [
+            "b13-magic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sing Sweet Nightingale is not the Fairy Godmother's spell song.",
+          "sources": [
+            "b13-magic"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished the spell scene from heroine and ballroom songs; no claim about a literal single magic word."
+      }
+    },
+    {
+      "questionId": 701,
+      "hash": "2d2c4a92e98672c5bb86c972c210463202fbc3b1c4984bb843ebbaed6d2afeca",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q450 tests a different recording in Frozen 2; q438 asks the fictional singer, not the real performer.",
+      "context": "The question specifies Elsa's English in-story vocals.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The question specifies Elsa's English in-story vocals.",
+        "sources": [
+          "b9-letitgo",
+          "b9-unknowncast"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Menzel performs the official Elsa sequence.",
+          "sources": [
+            "b9-letitgo",
+            "b9-unknowncast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lovato recorded the separate pop/end-credit rendition.",
+          "sources": [
+            "b9-letitgo",
+            "b9-unknowncast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bell voices Anna, not Elsa.",
+          "sources": [
+            "b9-letitgo",
+            "b9-unknowncast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dion is not the credited Elsa performer.",
+          "sources": [
+            "b9-letitgo",
+            "b9-unknowncast"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "End credits are part of a film, so as Elsa is essential to exclude Lovato. English excludes dubbed versions."
+      }
+    },
+    {
+      "questionId": 703,
+      "hash": "fbb5c63e3c8e730430aef375fd00411f3a30cff1f3b3e654dc145de5ab290f4a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q468 asks two different film credits; q159 asks the composer, not the lyricist.",
+      "context": "The original 1989 lyricist is identified separately from composer.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The original 1989 lyricist is identified separately from composer.",
+        "sources": [
+          "b9-ashman",
+          "b13-mermaidcatalog"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Ashman is the original-film lyricist.",
+          "sources": [
+            "b9-ashman",
+            "b13-mermaidcatalog"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rice is not the lyricist for this film.",
+          "sources": [
+            "b9-ashman",
+            "b13-mermaidcatalog"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Miranda contributed to the later remake, not 1989.",
+          "sources": [
+            "b9-ashman",
+            "b13-mermaidcatalog"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Schwartz is a later Menken collaborator, not this credit.",
+          "sources": [
+            "b9-ashman",
+            "b13-mermaidcatalog"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The 1989 date excludes the remake's Miranda songs and other Menken partnerships."
+      }
+    },
+    {
+      "questionId": 704,
+      "hash": "4c9569803585b72bce6c42e68d943c2a4904b567d2bfaa76f0082ded6504b76c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q507 asks which world interests Ariel, not the song title; q2540 concerns another film's production.",
+      "context": "Ariel's grotto solo has a distinct title.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Ariel's grotto solo has a distinct title.",
+        "sources": [
+          "b13-mermaidscene",
+          "b13-mermaidcatalog"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Part of Your World is that solo.",
+          "sources": [
+            "b13-mermaidscene",
+            "b13-mermaidcatalog"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Under the Sea is a different number.",
+          "sources": [
+            "b13-mermaidscene",
+            "b13-mermaidcatalog"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kiss the Girl is a different number.",
+          "sources": [
+            "b13-mermaidscene",
+            "b13-mermaidcatalog"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Poor Unfortunate Souls is Ursula's deal song.",
+          "sources": [
+            "b13-mermaidscene",
+            "b13-mermaidcatalog"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Solo describes the singing, not physical solitude: Flounder and Sebastian may be present. Removed the false alone claim."
+      }
+    },
+    {
+      "questionId": 705,
+      "hash": "cdf1eb9dff5ca6fa02971dec99da0842dd23e70fd5c84966fa15b43183f2d068",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q1255 asks the growing-affection song; q459 asks who sings the ballroom song.",
+      "context": "The elaborate dinner show is one specific scene.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The elaborate dinner show is one specific scene.",
+        "sources": [
+          "b13-beautyscene",
+          "b13-beautyopening",
+          "b9-beautysinger"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Be Our Guest is the dinner presentation.",
+          "sources": [
+            "b13-beautyscene",
+            "b13-beautyopening",
+            "b9-beautysinger"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gaston celebrates the suitor, not dinner for Belle.",
+          "sources": [
+            "b13-beautyscene",
+            "b13-beautyopening",
+            "b9-beautysinger"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Something There accompanies growing affection, not the dinner show.",
+          "sources": [
+            "b13-beautyscene",
+            "b13-beautyopening",
+            "b9-beautysinger"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Beauty and the Beast accompanies the ballroom dance.",
+          "sources": [
+            "b13-beautyscene",
+            "b13-beautyopening",
+            "b9-beautysinger"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Objects sing multiple songs, including the title song and Something There; only the final dinner-presentation wording excludes both."
+      }
+    },
+    {
+      "questionId": 706,
+      "hash": "0d580551a1bd62dc9e003ae9be36871ceb87e0d18b80b817a85fb004c07308e6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q1381 asks lyricist and q2536 pop singer, both independent credits.",
+      "context": "The heroine teaches Smith through a specific song.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The heroine teaches Smith through a specific song.",
+        "sources": [
+          "b13-colorsscene",
+          "b13-colors"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Colors of the Wind is the teaching number.",
+          "sources": [
+            "b13-colorsscene",
+            "b13-colors"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Just Around the Riverbend is a personal-choice solo.",
+          "sources": [
+            "b13-colorsscene",
+            "b13-colors"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Savages is the conflict number, not this lesson.",
+          "sources": [
+            "b13-colorsscene",
+            "b13-colors"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Listen with Your Heart is Willow's guidance, not Pocahontas teaching Smith.",
+          "sources": [
+            "b13-colorsscene",
+            "b13-colors"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Nature alone was broad enough to suggest Willow's song; added the singer and addressee."
+      }
+    },
+    {
+      "questionId": 708,
+      "hash": "673310d82a02cead941382d88871daa5ef126fd5ec1cc7f7f64da45433d282a9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q2364 asks number of credited artists; q2550 asks Grammy category. Player flag retained pending publication.",
+      "context": "The chart event is fixed to 2022 and the gap since 1993.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The chart event is fixed to 2022 and the gap since 1993.",
+        "sources": [
+          "b13-bruno",
+          "b13-brunolabel"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Bruno reached No. 1 in 2022.",
+          "sources": [
+            "b13-bruno",
+            "b13-brunolabel"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Let It Go did not end the gap by reaching No. 1.",
+          "sources": [
+            "b13-bruno",
+            "b13-brunolabel"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "How Far I'll Go did not end the No. 1 gap.",
+          "sources": [
+            "b13-bruno",
+            "b13-brunolabel"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A Whole New World is the 1993 predecessor, not the 2022 event.",
+          "sources": [
+            "b13-bruno",
+            "b13-brunolabel"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Both Bruno and A Whole New World peaked at No. 1. The year and first-since clause make only Bruno defensible; removed the misleading unique-highest implication."
+      }
+    },
+    {
+      "questionId": 709,
+      "hash": "cd3f5f7fc354fee519e61aa276f255b42234a7c15585a603a1f22fecff888454",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q453 asks the score composer; q451 asks the pop recording performer.",
+      "context": "Songwriting and orchestral scoring are separate credits.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Songwriting and orchestral scoring are separate credits.",
+        "sources": [
+          "b9-oscars1995"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "John composed and Rice wrote lyrics for the named songs.",
+          "sources": [
+            "b9-oscars1995"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Menken/Ashman did not write these credited songs.",
+          "sources": [
+            "b9-oscars1995"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Collins/Zimmer are not the credited songwriting pair.",
+          "sources": [
+            "b9-oscars1995"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Zimmer alone scored rather than writing both named songs.",
+          "sources": [
+            "b9-oscars1995"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Zimmer's score and arrangements do not turn him into the credited John/Rice songwriters."
+      }
+    },
+    {
+      "questionId": 711,
+      "hash": "9889ec1c61a7fa824333fe523979dec66c01b9f9a87c5ac5a9b1c50214f0ac25",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q2535 asks Bolton's pop rendition; q723 asks the separate Muses montage.",
+      "context": "Young Hercules has a specific belonging solo.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Young Hercules has a specific belonging solo.",
+        "sources": [
+          "b13-distance",
+          "b13-distanceofficial",
+          "b13-hercules"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Go the Distance expresses his wish to belong.",
+          "sources": [
+            "b13-distance",
+            "b13-distanceofficial",
+            "b13-hercules"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Zero to Hero is the later fame montage.",
+          "sources": [
+            "b13-distance",
+            "b13-distanceofficial",
+            "b13-hercules"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "I Won't Say is Meg's romantic song.",
+          "sources": [
+            "b13-distance",
+            "b13-distanceofficial",
+            "b13-hercules"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A Star Is Born is a celebratory finale.",
+          "sources": [
+            "b13-distance",
+            "b13-distanceofficial",
+            "b13-hercules"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Fame and final belonging are themes elsewhere; the literal Hercules-sung desire solo selects the early number."
+      }
+    },
+    {
+      "questionId": 712,
+      "hash": "c3db6a80a2fed874430e80d5ccbd833d85532f887f276b0094f2a2dc5cd4c608",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q2537 asks the pop singer, not the in-story song identity.",
+      "context": "Mulan's identity-conflict solo follows the failed matchmaking visit.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Mulan's identity-conflict solo follows the failed matchmaking visit.",
+        "sources": [
+          "b13-reflection",
+          "b13-mulan"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Reflection is that solo.",
+          "sources": [
+            "b13-reflection",
+            "b13-mulan"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "I'll Make a Man Out of You is the training number.",
+          "sources": [
+            "b13-reflection",
+            "b13-mulan"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Honor to Us All is the bride-preparation number.",
+          "sources": [
+            "b13-reflection",
+            "b13-mulan"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "True to Your Heart is a separate soundtrack/end-title number.",
+          "sources": [
+            "b13-reflection",
+            "b13-mulan"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Inner conflict alone could be broad; checked the heroine's actual identity solo in the original animated film."
+      }
+    },
+    {
+      "questionId": 713,
+      "hash": "8938f248b5d70b7f89e62cf3a2491451fcdedc7df1a5c1cced8dc3c3151e42c5",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q24 asks the price of the bargain; q3 villain identity, neither asks this song title.",
+      "context": "Ursula offers Ariel a deal through a named song.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Ursula offers Ariel a deal through a named song.",
+        "sources": [
+          "b13-ursula",
+          "b13-mermaidcatalog",
+          "b9-ashman"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Poor Unfortunate Souls is Carroll/Ursula's bargain number.",
+          "sources": [
+            "b13-ursula",
+            "b13-mermaidcatalog",
+            "b9-ashman"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Part of Your World is Ariel's solo, not Ursula's offer.",
+          "sources": [
+            "b13-ursula",
+            "b13-mermaidcatalog",
+            "b9-ashman"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Under the Sea is Sebastian's number, not the offer.",
+          "sources": [
+            "b13-ursula",
+            "b13-mermaidcatalog",
+            "b9-ashman"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kiss the Girl is the romance encouragement, not Ursula's bargain.",
+          "sources": [
+            "b13-ursula",
+            "b13-mermaidcatalog",
+            "b9-ashman"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All distractors are real songs now; distinguished the bargain sequence from other performers and scenes."
+      }
+    },
+    {
+      "questionId": 714,
+      "hash": "466632f7d8cbb85dab870a7f8fb39416c36f6267ff14fa8a667372071ec62aa9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "No equivalent Belle song-identity item in the full music/film digests.",
+      "context": "The village introduction is the opening sung number.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The village introduction is the opening sung number.",
+        "sources": [
+          "b13-beautyopening"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Belle introduces the heroine and town.",
+          "sources": [
+            "b13-beautyopening"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gaston is a later tavern number.",
+          "sources": [
+            "b13-beautyopening"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Something There is the later affection number.",
+          "sources": [
+            "b13-beautyopening"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Be Our Guest is the later dinner show.",
+          "sources": [
+            "b13-beautyopening"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Opening music can include the spoken prologue; the question now specifies the song introducing heroine and village."
+      }
+    },
+    {
+      "questionId": 715,
+      "hash": "492e7e93cb92aed706ea3155fcb42ecb61c49ababecc16df54c7bda6cfbf57eb",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q165 asks song's film; q871 asks character identity, not actor.",
+      "context": "English-language Shang has different speaking and singing performers.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "English-language Shang has different speaking and singing performers.",
+        "sources": [
+          "b13-mulan"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Osmond supplies Shang singing.",
+          "sources": [
+            "b13-mulan"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wong supplies Shang speaking.",
+          "sources": [
+            "b13-mulan"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Chan's dubbed-language role does not fit the English version.",
+          "sources": [
+            "b13-mulan"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Murphy voices Mushu, not Shang.",
+          "sources": [
+            "b13-mulan"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Jackie Chan is a real localized Shang performer; specifying English is necessary and excludes that alternative."
+      }
+    },
+    {
+      "questionId": 716,
+      "hash": "ce6cb34a82757f049b847cf70caf914790bda1810d106d4eca412baa48b57157",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q1261 asks the childhood-growth montage Son of Man, not the opening.",
+      "context": "The opening montage uses one Collins song.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The opening montage uses one Collins song.",
+        "sources": [
+          "b13-two",
+          "b13-tarzanrecord"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Two Worlds accompanies the opening.",
+          "sources": [
+            "b13-two",
+            "b13-tarzanrecord"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "You'll Be in My Heart is the later lullaby.",
+          "sources": [
+            "b13-two",
+            "b13-tarzanrecord"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Trashin' the Camp is a later camp sequence.",
+          "sources": [
+            "b13-two",
+            "b13-tarzanrecord"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Strangers Like Me accompanies later human learning.",
+          "sources": [
+            "b13-two",
+            "b13-tarzanrecord"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Album pop versions and reprises cannot displace the opening film montage named by the sources."
+      }
+    },
+    {
+      "questionId": 718,
+      "hash": "39bd51b48a3fc89df59be052cb2f44652abfcb323262fec5599a4105ec331e95",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q151 asks film attribution; q2534 asks pop duo; q719 asks a different ceremony/song.",
+      "context": "The ceremony year is explicit.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The ceremony year is explicit.",
+        "sources": [
+          "b13-1993",
+          "b9-oscars1992",
+          "b9-oscars1995"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "A Whole New World is the 1993 winner.",
+          "sources": [
+            "b13-1993",
+            "b9-oscars1992",
+            "b9-oscars1995"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Beauty and the Beast won at the 1992 ceremony.",
+          "sources": [
+            "b13-1993",
+            "b9-oscars1992",
+            "b9-oscars1995"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Circle of Life was a later nominee, not the 1993 winner.",
+          "sources": [
+            "b13-1993",
+            "b9-oscars1992",
+            "b9-oscars1995"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Colors of the Wind is not the recorded 1993 winner.",
+          "sources": [
+            "b13-1993",
+            "b9-oscars1992",
+            "b9-oscars1995"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished film release year 1992 from ceremony 1993; the official unique winner excludes the later songs."
+      }
+    },
+    {
+      "questionId": 719,
+      "hash": "04b8eeb5525c2b0ebd6a97c58935296b6a3b269984fd36b913aa05a45e8352b8",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Sherman duo identity questions q168/q1388 do not establish which song won.",
+      "context": "Mary Poppins has one original-song Oscar winner.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Mary Poppins has one original-song Oscar winner.",
+        "sources": [
+          "b13-1965"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Chim Chim Cher-ee is the credited winner.",
+          "sources": [
+            "b13-1965"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A Spoonful of Sugar is not that winner.",
+          "sources": [
+            "b13-1965"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Supercalifragilisticexpialidocious is not that winner.",
+          "sources": [
+            "b13-1965"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Feed the Birds is not that winner.",
+          "sources": [
+            "b13-1965"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The official single Song-category winner excludes the other Mary Poppins titles despite their popularity."
+      }
+    },
+    {
+      "questionId": 720,
+      "hash": "91a98d0ddc2de29e2ed798127c4face98fad7226314bb6f8a9c3ba827ba79df9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q1388 asks brothers' other work; q460 asks King Louie's different number.",
+      "context": "The individual song credit differs from other Jungle Book songs.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The individual song credit differs from other Jungle Book songs.",
+        "sources": [
+          "b13-bare"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Gilkyson wrote this song.",
+          "sources": [
+            "b13-bare"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Richard Sherman wrote other film songs, not this one.",
+          "sources": [
+            "b13-bare"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Menken is not the credited writer.",
+          "sources": [
+            "b13-bare"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "John is not the credited writer.",
+          "sources": [
+            "b13-bare"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The film's Sherman association does not override this specific surviving Gilkyson song credit."
+      }
+    },
+    {
+      "questionId": 721,
+      "hash": "2d5fd7f49820b72313cf5da5b65ad469f06acb7862e0a135724eecabf947486a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q1266 asks the pub ensemble, q1509 the lantern duet; distinct scenes.",
+      "context": "Rapunzel's tower routine is the opening solo.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Rapunzel's tower routine is the opening solo.",
+        "sources": [
+          "b13-tangled",
+          "b13-tangledcatalog"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "When Will My Life Begin? introduces the routine.",
+          "sources": [
+            "b13-tangled",
+            "b13-tangledcatalog"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "I See the Light is the later lantern duet.",
+          "sources": [
+            "b13-tangled",
+            "b13-tangledcatalog"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mother Knows Best belongs to Gothel.",
+          "sources": [
+            "b13-tangled",
+            "b13-tangledcatalog"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Something That I Want is a separate end-credit track.",
+          "sources": [
+            "b13-tangled",
+            "b13-tangledcatalog"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed life from the stem to avoid copying the answer; the routine and tower select the opening solo, not later dream songs."
+      }
+    },
+    {
+      "questionId": 722,
+      "hash": "81b62388de31d5d672efa8f31d945bb8cbf96942c0ea8880d1720d2f2a3a3c32",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q230 asks the dream business; q1014 asks Odie's song. Neither tests this title.",
+      "context": "The restaurant fantasy has a specific song.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The restaurant fantasy has a specific song.",
+        "sources": [
+          "b13-tiana",
+          "b13-tianasong"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Almost There accompanies Tiana's restaurant fantasy.",
+          "sources": [
+            "b13-tiana",
+            "b13-tianasong"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Down in New Orleans introduces the setting.",
+          "sources": [
+            "b13-tiana",
+            "b13-tianasong"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Friends on the Other Side is Facilier's magic.",
+          "sources": [
+            "b13-tiana",
+            "b13-tianasong"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dig a Little Deeper is Mama Odie's advice.",
+          "sources": [
+            "b13-tiana",
+            "b13-tianasong"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tiana can participate in other numbers; the stylized restaurant fantasy uniquely identifies this one."
+      }
+    },
+    {
+      "questionId": 723,
+      "hash": "1c0e72a18ca4dab03fe74d38b1791c9fa28273b69bca5c1403c3a9b86b0b925a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q69 asks the chorus group, q711 the early solo; different facts.",
+      "context": "The Muses narrate Hercules' professional rise in one montage.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Muses narrate Hercules' professional rise in one montage.",
+        "sources": [
+          "b13-zero",
+          "b13-zeroofficial",
+          "b13-hercules"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Zero to Hero is the fame montage.",
+          "sources": [
+            "b13-zero",
+            "b13-zeroofficial",
+            "b13-hercules"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Go the Distance is Hercules' early belonging solo.",
+          "sources": [
+            "b13-zero",
+            "b13-zeroofficial",
+            "b13-hercules"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "I Won't Say concerns Meg's romance, not his rise.",
+          "sources": [
+            "b13-zero",
+            "b13-zeroofficial",
+            "b13-hercules"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A Star Is Born celebrates the finale, not the rise montage.",
+          "sources": [
+            "b13-zero",
+            "b13-zeroofficial",
+            "b13-hercules"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A Star Is Born is also sung by the Muses; distinguished the rise-to-fame montage from the final celebration."
+      }
+    },
+    {
+      "questionId": 724,
+      "hash": "55619fe146450d4efca365b62febd3dfbaa34f7a7a5087a74a2a8572d412ad52",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q700 is the spell song; q1244 the mice's sewing song.",
+      "context": "The early bedroom song is distinct from the chores song.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The early bedroom song is distinct from the chores song.",
+        "sources": [
+          "b13-dream",
+          "b13-dreamscene",
+          "b13-dreamofficial"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "A Dream Is a Wish Your Heart Makes is the bedroom song.",
+          "sources": [
+            "b13-dream",
+            "b13-dreamscene",
+            "b13-dreamofficial"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bibbidi-Bobbidi-Boo is the Fairy Godmother transformation.",
+          "sources": [
+            "b13-dream",
+            "b13-dreamscene",
+            "b13-dreamofficial"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "So This Is Love is the romance number.",
+          "sources": [
+            "b13-dream",
+            "b13-dreamscene",
+            "b13-dreamofficial"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sing Sweet Nightingale is the later scrubbing/laundry sequence.",
+          "sources": [
+            "b13-dream",
+            "b13-dreamscene",
+            "b13-dreamofficial"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Corrected the morning-chores premise; located the early attic sequence. Long answer is the genuine title; did not truncate it into a false song name."
+      }
+    },
+    {
+      "questionId": 725,
+      "hash": "2ef761489856d3676222a7bccdbefefa6fe419e14623e79e3fc5141ba9f69217",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q159 names three other film song scores; this requires the Hunchback credit.",
+      "context": "The 1996 orchestral score composer is separate from lyricists.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 1996 orchestral score composer is separate from lyricists.",
+        "sources": [
+          "b13-hunchback",
+          "b13-hunchbackmusic"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Menken is the score composer.",
+          "sources": [
+            "b13-hunchback",
+            "b13-hunchbackmusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Schwartz is the collaborating lyricist.",
+          "sources": [
+            "b13-hunchback",
+            "b13-hunchbackmusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ashman is not the credited score composer.",
+          "sources": [
+            "b13-hunchback",
+            "b13-hunchbackmusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rice is not the credited score composer.",
+          "sources": [
+            "b13-hunchback",
+            "b13-hunchbackmusic"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Used orchestral score rather than ambiguous musical score to distinguish Schwartz's lyrics from Menken's music."
+      }
+    },
+    {
+      "questionId": 729,
+      "hash": "1c152a9126125333751fb3c19a2577c5ea451b285aa3550e7f5b8183768d7fdd",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q796 asks Treasure's different debut; q1223 a statue; q2352 class/size relationship.",
+      "context": "The ship's maiden voyage has a fixed month/year.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The ship's maiden voyage has a fixed month/year.",
+        "sources": [
+          "fleet-2025-table"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Wish began in July 2022.",
+          "sources": [
+            "fleet-2025-table"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dream began in 2011.",
+          "sources": [
+            "fleet-2025-table"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fantasy began in 2012.",
+          "sources": [
+            "fleet-2025-table"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Treasure began in December 2024.",
+          "sources": [
+            "fleet-2025-table"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Launch may mean float-out rather than passenger debut; final wording asks maiden voyage."
+      }
+    },
+    {
+      "questionId": 733,
+      "hash": "017bd1793837be1a855f8a1c944d7f48a088726fa990eea19bf3926f2caf333f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q418 asks Wish's different ride; q2347 asks AquaDuck's route, not identity.",
+      "context": "Dream and Fantasy have a specifically named water coaster.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Dream and Fantasy have a specifically named water coaster.",
+        "sources": [
+          "b13-aquaduck",
+          "aquamouse"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "AquaDuck is on both named ships.",
+          "sources": [
+            "b13-aquaduck",
+            "aquamouse"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "AquaMouse is a different attraction on Wish-class ships.",
+          "sources": [
+            "b13-aquaduck",
+            "aquamouse"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wave Runner is not the named coaster.",
+          "sources": [
+            "b13-aquaduck",
+            "aquamouse"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sea Slide is not its title.",
+          "sources": [
+            "b13-aquaduck",
+            "aquamouse"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked Dream/Fantasy rather than Wish; other generic aquatic names cannot replace the official attraction title."
+      }
+    },
+    {
+      "questionId": 735,
+      "hash": "47434a594d9cf3ab6051d5ccf0c2d92651e4d0cbf3651d46778f1fd27e16873a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q975 asks onboard pool area; q977 family beach, distinct identities.",
+      "context": "The Castaway Cay adults-only beach has a specific name.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The Castaway Cay adults-only beach has a specific name.",
+        "sources": [
+          "b13-castaway"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Serenity Bay is the designated beach.",
+          "sources": [
+            "b13-castaway"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Paradise Beach is not that official name.",
+          "sources": [
+            "b13-castaway"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Quiet Cove is the onboard pool designation, not the island beach.",
+          "sources": [
+            "b13-castaway"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tranquility Bay is not the designated name.",
+          "sources": [
+            "b13-castaway"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Lookout Cay also has a Serenity Bay; location is specifically Castaway Cay, with Quiet Cove excluded as an onboard venue."
+      }
+    },
+    {
+      "questionId": 737,
+      "hash": "163aaf4975affa67a47af4d34460d24151a12cdd396b4ce0070cd09f684a77cb",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q415 asks count of rotational restaurants; this asks one name.",
+      "context": "Wish introduced a specific Frozen restaurant.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Wish introduced a specific Frozen restaurant.",
+        "sources": [
+          "b13-arendelle",
+          "wish-dining-guide"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Arendelle: A Frozen Dining Adventure is the documented name.",
+          "sources": [
+            "b13-arendelle",
+            "wish-dining-guide"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Frozen Ever After Dining is not its name.",
+          "sources": [
+            "b13-arendelle",
+            "wish-dining-guide"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Elsa's Royal Feast is not its name.",
+          "sources": [
+            "b13-arendelle",
+            "wish-dining-guide"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Ice Palace Restaurant is not its name.",
+          "sources": [
+            "b13-arendelle",
+            "wish-dining-guide"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked full restaurant title rather than EPCOT's Frozen Ever After ride or another ship's stage show."
+      }
+    },
+    {
+      "questionId": 739,
+      "hash": "5ae3913e8b4e71a416d7a2bb85095f7d20247492bedd76a1a8fd1f374b376c16",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q340 identifies Aloha Isle Dole Whip; the new fact is the distinct Castaway self-service dessert.",
+      "context": "The described machine-dispensed dessert has a specific type.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The described machine-dispensed dessert has a specific type.",
+        "sources": [
+          "b13-icecream",
+          "b13-icecream2026"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Soft-serve is explicitly named.",
+          "sources": [
+            "b13-icecream",
+            "b13-icecream2026"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hand-scooped gelato is not the machine dessert described.",
+          "sources": [
+            "b13-icecream",
+            "b13-icecream2026"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rolled ice cream is not the described serving method.",
+          "sources": [
+            "b13-icecream",
+            "b13-icecream2026"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mochi ice cream is a wrapped dessert, not the identified machine product.",
+          "sources": [
+            "b13-icecream",
+            "b13-icecream2026"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed unsupported Dole Whip and vague parks-iconic premise. The source describes the machine product; it does not prove every other dessert is absent islandwide."
+      }
+    },
+    {
+      "questionId": 742,
+      "hash": "0bb59a7358d434b31972ec78a6f4c369a23c01bb21ec1dae2aa91e6000be13a6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q136 asks first ship name and q137 start year; neither alone supplies a year-end fleet count.",
+      "context": "The service timeline is bounded to year-end 1998.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The service timeline is bounded to year-end 1998.",
+        "sources": [
+          "cruise-originals",
+          "fleet-2025-table"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Only Magic was in passenger service.",
+          "sources": [
+            "cruise-originals",
+            "fleet-2025-table"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wonder did not enter service until 1999, so not two.",
+          "sources": [
+            "cruise-originals",
+            "fleet-2025-table"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dream followed in 2011, so not three.",
+          "sources": [
+            "cruise-originals",
+            "fleet-2025-table"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fantasy followed in 2012, so not four.",
+          "sources": [
+            "cruise-originals",
+            "fleet-2025-table"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Ships ordered or under construction do not count as passenger service; this excludes Wonder's 1998 physical launch."
+      }
+    },
+    {
+      "questionId": 743,
+      "hash": "95d68208b68543f126a71f27390f8c77b36b0c23a50ae63bc3965c2764439685",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q1221 statue and q2276 show assignment are different ship attributes.",
+      "context": "The ship has a fixed January 2011 maiden voyage.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The ship has a fixed January 2011 maiden voyage.",
+        "sources": [
+          "cruise-originals",
+          "fleet-2025-table"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Dream is the 2011 ship.",
+          "sources": [
+            "cruise-originals",
+            "fleet-2025-table"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fantasy began in 2012.",
+          "sources": [
+            "cruise-originals",
+            "fleet-2025-table"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wish began in 2022.",
+          "sources": [
+            "cruise-originals",
+            "fleet-2025-table"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Treasure began in 2024.",
+          "sources": [
+            "cruise-originals",
+            "fleet-2025-table"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the needless over-a-decade superlative; maiden voyage avoids float-out ambiguity."
+      }
+    },
+    {
+      "questionId": 746,
+      "hash": "bada88a0dd37116b265839a355531ef2869c1d5c0458231fc65b49134f464e4f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q427 asks run, q1211 slide structure and q747 trail rental; this tests the underwater-statue area.",
+      "context": "The submerged statues belong to a named underwater exploration area.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The submerged statues belong to a named underwater exploration area.",
+        "sources": [
+          "b13-snorkel",
+          "b13-snorkellist",
+          "b13-castaway"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Snorkeling Lagoon contains the documented sunken Mickey statue.",
+          "sources": [
+            "b13-snorkel",
+            "b13-snorkellist",
+            "b13-castaway"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pelican Plunge is a separate waterslide platform, not the named statue-trail lagoon.",
+          "sources": [
+            "b13-snorkel",
+            "b13-snorkellist",
+            "b13-castaway"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Scuttle's Cove is a supervised children's play area, not the underwater-statue location.",
+          "sources": [
+            "b13-snorkel",
+            "b13-snorkellist",
+            "b13-castaway"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "In Da Shade is a game pavilion, not the submerged-statue lagoon.",
+          "sources": [
+            "b13-snorkel",
+            "b13-snorkellist",
+            "b13-castaway"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Reframed around the documented location rather than inferring that a pictured statue proves other objects never coexist underwater. Compared all four named island areas; the dedicated lagoon is distinct from the slide platform and dry play/game areas."
+      }
+    },
+    {
+      "questionId": 747,
+      "hash": "39f29a5f2246f5b260a85eda45133c68c47dfdc4a686d741675cde9d1ad955a7",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q1238 asks the island tram, not the bicycle rental.",
+      "context": "One rental activity travels land pathways through tropical grounds.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "One rental activity travels land pathways through tropical grounds.",
+        "sources": [
+          "b13-bikes",
+          "b13-castaway"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Bicycling is explicitly described along those paths.",
+          "sources": [
+            "b13-bikes",
+            "b13-castaway"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kayaking is water travel, not the land-path rental.",
+          "sources": [
+            "b13-bikes",
+            "b13-castaway"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Snorkeling occurs in water, not on the paths.",
+          "sources": [
+            "b13-bikes",
+            "b13-castaway"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Paddleboarding is water travel, not the land paths.",
+          "sources": [
+            "b13-bikes",
+            "b13-castaway"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Replaced moped/scooter alternatives that could also have two wheels. All final alternatives are real outdoor activities; the land path condition excludes the water activities."
+      }
+    },
+    {
+      "questionId": 748,
+      "hash": "76ceef0249d7a7149e647d81eca6c1704f3545f8160e14806584c97b285f80d0",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "No other character-makeover identity question in the complete cruise digest.",
+      "context": "The onboard character-makeover salon has an official name.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The onboard character-makeover salon has an official name.",
+        "sources": [
+          "b13-boutique"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Bibbidi Bobbidi Boutique is the named salon.",
+          "sources": [
+            "b13-boutique"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Royal Salon is not that title.",
+          "sources": [
+            "b13-boutique"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Princess Pampering Palace is not its title.",
+          "sources": [
+            "b13-boutique"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fairytale Studio is not the identified salon.",
+          "sources": [
+            "b13-boutique"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The Pirates League is a package within the boutique, not a listed competing salon. No claim every package is available on every itinerary."
+      }
+    },
+    {
+      "questionId": 749,
+      "hash": "2c6ea2bbc7474ae9436b3fe8b42b07abd1d097d73ab309be44c37ad9245931d9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q967 tests Dream's District; q968 older-ship naming. Different ship mapping required.",
+      "context": "Fantasy's adult entertainment area has a distinct official name.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Fantasy's adult entertainment area has a distinct official name.",
+        "sources": [
+          "b13-europa"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Europa is the identified area.",
+          "sources": [
+            "b13-europa"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The District is Dream's area.",
+          "sources": [
+            "b13-europa"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "After Hours is used on other ships, not this district.",
+          "sources": [
+            "b13-europa"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Serenity Bay is an island beach, not this district.",
+          "sources": [
+            "b13-europa"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Same cruise line offers several adult areas; ship and European-district context select Europa."
+      }
+    },
+    {
+      "questionId": 750,
+      "hash": "e453f6397489cca09170b64566e0ff4b1c670d5ee7ff5c29f61fcc30dc582e74",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q562 asks the live theatre; movie screen is a separate venue/system.",
+      "context": "The poolside giant screen is named independently of an evening schedule.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The poolside giant screen is named independently of an evening schedule.",
+        "sources": [
+          "water-coasters"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Funnel Vision is the screen name.",
+          "sources": [
+            "water-coasters"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Starlight Cinema is not its name.",
+          "sources": [
+            "water-coasters"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ocean View is not its name.",
+          "sources": [
+            "water-coasters"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Nautical Vision is not its name.",
+          "sources": [
+            "water-coasters"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed Movies Under the Stars as though it were a DCL title; the source uses that phrase descriptively for evening viewing. Specific ship avoids fleet generalization."
+      }
+    },
+    {
+      "questionId": 751,
+      "hash": "a4cd6c712881c2ef4133df1362b6a4a793fe94a441ece3dee46b499e09fbd142",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q218 identifies Flower; q2140 asks family dialogue, not this name.",
+      "context": "Bambi's young rabbit friend is specifically named.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Bambi's young rabbit friend is specifically named.",
+        "sources": [
+          "b13-thumper"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Thumper is the rabbit friend.",
+          "sources": [
+            "b13-thumper"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Flower is the skunk, not the rabbit.",
+          "sources": [
+            "b13-thumper"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Friend Owl is an owl, not the rabbit.",
+          "sources": [
+            "b13-thumper"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Faline is a deer, not the rabbit.",
+          "sources": [
+            "b13-thumper"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The named unique rabbit identity excludes the other friends; checked Bambi rather than A Bug's Life's unrelated Thumper."
+      }
+    },
+    {
+      "questionId": 755,
+      "hash": "5c9b38164ccd205a8feb94bf4a5e063aa9da58035ccac3c9bf48817874c38198",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q234 asks Sugar Rush, q1418 Hero's Duty and q843 hub; separate identities.",
+      "context": "Ralph's home game is distinct from games he visits.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Ralph's home game is distinct from games he visits.",
+        "sources": [
+          "b13-ralph"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Fix-It Felix Jr. is his own arcade game.",
+          "sources": [
+            "b13-ralph"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sugar Rush is a game he visits.",
+          "sources": [
+            "b13-ralph"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hero's Duty is another game he enters.",
+          "sources": [
+            "b13-ralph"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Game Central Station is the connecting hub.",
+          "sources": [
+            "b13-ralph"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Own means the game where he normally works as a villain; does not imply Ralph owns the physical cabinet."
+      }
+    },
+    {
+      "questionId": 758,
+      "hash": "73bc94b33a2c090bf53da8632b82aeadf01ef57687400c6047ba80618152b477",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q1585 asks Runeard's betrayal; q1097 names the river, not Yelana's people.",
+      "context": "Yelana leads a specific named people.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Yelana leads a specific named people.",
+        "sources": [
+          "b13-northuldra"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Northuldra is the named community.",
+          "sources": [
+            "b13-northuldra"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Arendellians are not the Northuldra led by Yelana.",
+          "sources": [
+            "b13-northuldra"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Weseltonians are not her community.",
+          "sources": [
+            "b13-northuldra"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Southern Islanders are not her community.",
+          "sources": [
+            "b13-northuldra"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed Forest People, a plausible descriptive synonym, and the shared trapped condition that also applied to Arendellian soldiers. Leader specifies the unique people."
+      }
+    },
+    {
+      "questionId": 760,
+      "hash": "25a9fc94ff682ecbf0afab2d3e6108fd69ae31a9c2ae0730a5ab94859b8438c6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q2596 asks Rourke's deputy; q1125 demolitions expert; no repeated villain-identity item.",
+      "context": "The synopsis assigns the crystal theft and kidnapping to one expedition leader.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The synopsis assigns the crystal theft and kidnapping to one expedition leader.",
+        "sources": [
+          "b13-rourke"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Rourke steals the crystals and kidnaps Kida.",
+          "sources": [
+            "b13-rourke"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Vinny is not the named kidnapper commanding the theft.",
+          "sources": [
+            "b13-rourke"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dr. Sweet is not the named commander/kidnapper.",
+          "sources": [
+            "b13-rourke"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Audrey is not the named commander/kidnapper.",
+          "sources": [
+            "b13-rourke"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Crew complicity does not make every crew member the leader who takes Kida. Removed commander from both stem and unique option prefix."
+      }
+    },
+    {
+      "questionId": 762,
+      "hash": "cc2789bb7726f099fe1d8bb159ff9e94acc3f826bd70ce7c85b18526fa9e09aa",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q1102 asks Jiminy's appointed role, not the fairy's identity.",
+      "context": "The first animation of the puppet has one named magical agent.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The first animation of the puppet has one named magical agent.",
+        "sources": [
+          "b13-bluefairy"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Blue Fairy animates the puppet.",
+          "sources": [
+            "b13-bluefairy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tinker Bell is not the agent identified for this event.",
+          "sources": [
+            "b13-bluefairy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fairy Godmother is not the Blue Fairy.",
+          "sources": [
+            "b13-bluefairy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Good Witch is not the named agent.",
+          "sources": [
+            "b13-bluefairy"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "First brings to life excludes Geppetto's physical construction and the later real-boy reward; removed the unnecessary second conscience-assignment fact."
+      }
+    },
+    {
+      "questionId": 765,
+      "hash": "97cdce9d1c85b3b580e3f5e5122c22cd1fb2a37de3a92a1e55e8f15ef4080cda",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q284 and q17 ask other characters' forms; q1235 requires a separate cruise restaurant mapping.",
+      "context": "Lumiere's enchanted form is a multi-armed candle holder.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Lumiere's enchanted form is a multi-armed candle holder.",
+        "sources": [
+          "b13-lumiere"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "A candelabra describes his candlestick form.",
+          "sources": [
+            "b13-lumiere"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A clock is Cogsworth's form.",
+          "sources": [
+            "b13-lumiere"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A teapot is Mrs. Potts's form.",
+          "sources": [
+            "b13-lumiere"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A feather duster is a different servant's form.",
+          "sources": [
+            "b13-lumiere"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Candlestick/candelabra terminology is compatible; clock, teapot and duster are distinct physical objects."
+      }
+    },
+    {
+      "questionId": 770,
+      "hash": "cae7197edf29ef14ab4a28c52e10f34c4fac7bacee2530cb5448a9539e403a8f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q74 asks social worker, q1082 surfing friend; different relationships.",
+      "context": "The original 2002 film names Lilo's human older sister.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The original 2002 film names Lilo's human older sister.",
+        "sources": [
+          "b13-nani"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Nani is the older sister.",
+          "sources": [
+            "b13-nani"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pleakley is an alien agent, not her sister.",
+          "sources": [
+            "b13-nani"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Grand Councilwoman is the alien leader, not her sister.",
+          "sources": [
+            "b13-nani"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cobra Bubbles is the social worker, not her sister.",
+          "sources": [
+            "b13-nani"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Explicit original animated version avoids importing the remake's new characters; biological sister excludes a broader found-family interpretation."
+      }
+    },
+    {
+      "questionId": 771,
+      "hash": "00f179430b4d8e44a1fa4f297a3e7edb8a074b4582b7b726a15241feb5f7d8c4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q2054 asks creature class, q2438 asks wing anatomy; neither repeats the name as answer.",
+      "context": "Imelda has a named imposing winged wildcat spirit guide.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Imelda has a named imposing winged wildcat spirit guide.",
+        "sources": [
+          "b13-pepita"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Pepita is Imelda's winged wildcat alebrije.",
+          "sources": [
+            "b13-pepita"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dante is the dog, not her named wildcat guide.",
+          "sources": [
+            "b13-pepita"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ernesto is a deceased human musician.",
+          "sources": [
+            "b13-pepita"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Chicharron is a deceased human, not the winged guide.",
+          "sources": [
+            "b13-pepita"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Dante also becomes an alebrije; the Imelda relationship and large winged creature select Pepita specifically."
+      }
+    },
+    {
+      "questionId": 772,
+      "hash": "96cd872c1802deb559856e908471d344bbeb837234d4b7eee689d031c81de0c5",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q1367 asks gold-rush Big Thunder, not this Snow White coaster.",
+      "context": "The swaying-car jewel-cavern coaster is uniquely named.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The swaying-car jewel-cavern coaster is uniquely named.",
+        "sources": [
+          "b13-dwarfs"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Seven Dwarfs Mine Train is that coaster.",
+          "sources": [
+            "b13-dwarfs"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Big Thunder is not the specified swaying-car Snow White cavern ride.",
+          "sources": [
+            "b13-dwarfs"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Barnstormer is not the jewel-cavern ride.",
+          "sources": [
+            "b13-dwarfs"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Space Mountain is not the specified jewel-cavern ride.",
+          "sources": [
+            "b13-dwarfs"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed mine from the stem and replaced the non-coaster distractor; all four options now name Magic Kingdom coasters."
+      }
+    },
+    {
+      "questionId": 773,
+      "hash": "ff3396afc312acf74caf380afb4458e189096ed2eaf9fbd678a078374311b94f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q2219 asks drop height, not attraction identity.",
+      "context": "The June 2024 Magic Kingdom opening has a fixed title.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The June 2024 Magic Kingdom opening has a fixed title.",
+        "sources": [
+          "b13-bayou"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Tiana's Bayou Adventure is the recorded title.",
+          "sources": [
+            "b13-bayou"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Princess and the Frog River Ride is not the official title.",
+          "sources": [
+            "b13-bayou"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bayou Falls is not the title.",
+          "sources": [
+            "b13-bayou"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Princess Tiana's Journey is not the title.",
+          "sources": [
+            "b13-bayou"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Historical date and Florida park distinguish the later California debut; removed unbounded new-name wording."
+      }
+    },
+    {
+      "questionId": 775,
+      "hash": "13233ec53ebef034122154de64ce45d49744ce8327ce479bcbe0170051c81a8e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q1474 asks the ski-resort water park, a different named setting.",
+      "context": "The water park's storm-wrecked town is fictional theming.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The water park's storm-wrecked town is fictional theming.",
+        "sources": [
+          "b13-typhoon"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Typhoon Lagoon has the storm mythology.",
+          "sources": [
+            "b13-typhoon"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Blizzard Beach has a ski-resort theme.",
+          "sources": [
+            "b13-typhoon"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hurricane Harbor is not this WDW park.",
+          "sources": [
+            "b13-typhoon"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Stormalong Bay is a resort pool complex, not the named water park.",
+          "sources": [
+            "b13-typhoon"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A real destructive storm is not asserted; title identifies the fictional setting rather than a weather event."
+      }
+    }
+  ]
+}

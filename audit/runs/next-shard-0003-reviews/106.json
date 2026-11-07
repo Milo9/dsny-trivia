@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 106,
+  "hash": "5744efde5785683007fcdbc46f1dbfcb87134db56a7528c4e5d2059fa650a178",
+  "questionSnapshot": {
+    "id": 106,
+    "question": "As of November 2026, how many Disney theme park resorts were open worldwide?",
+    "answers": [
+      "6",
+      "5",
+      "7",
+      "8"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Final challenge checks the exact named entity/event against each listed alternative, not merely a matching answer keyword.",
+  "verification": {
+    "context": "As of November 2026, how many Disney theme park resorts were open worldwide?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Six operating resort destinations at the stated date.",
+      "sources": [
+        {
+          "url": "https://disneyexperiences.com/press-room/",
+          "locator": "Opening overview: six resort destinations; International Parks section calls Shanghai sixth and Abu Dhabi a future seventh."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tried each alternative against the literal final scope: 5: Undercounts the six destinations. 7: Counts the announced future seventh resort as if open. 8: Exceeds the six operating destinations."
+    },
+    "options": [
+      {
+        "answer": "6",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Six operating resort destinations at the stated date.",
+        "sources": [
+          {
+            "url": "https://disneyexperiences.com/press-room/",
+            "locator": "Opening overview: six resort destinations; International Parks section calls Shanghai sixth and Abu Dhabi a future seventh."
+          }
+        ]
+      },
+      {
+        "answer": "5",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Undercounts the six destinations.",
+        "sources": [
+          {
+            "url": "https://disneyexperiences.com/press-room/",
+            "locator": "Opening overview: six resort destinations; International Parks section calls Shanghai sixth and Abu Dhabi a future seventh."
+          }
+        ]
+      },
+      {
+        "answer": "7",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Counts the announced future seventh resort as if open.",
+        "sources": [
+          {
+            "url": "https://disneyexperiences.com/press-room/",
+            "locator": "Opening overview: six resort destinations; International Parks section calls Shanghai sixth and Abu Dhabi a future seventh."
+          }
+        ]
+      },
+      {
+        "answer": "8",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Exceeds the six operating destinations.",
+        "sources": [
+          {
+            "url": "https://disneyexperiences.com/press-room/",
+            "locator": "Opening overview: six resort destinations; International Parks section calls Shanghai sixth and Abu Dhabi a future seventh."
+          }
+        ]
+      }
+    ]
+  }
+}

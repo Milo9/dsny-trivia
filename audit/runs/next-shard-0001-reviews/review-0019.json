@@ -1,0 +1,84 @@
+{
+  "questionId": 19,
+  "hash": "a95979a891c95d083c2449293a113a41ba7cbad9e4f2fa909fd410726e7cbded",
+  "questionSnapshot": {
+    "id": 19,
+    "question": "What type of fish is Nemo in Finding Nemo?",
+    "answers": [
+      "Clownfish",
+      "Blue tang",
+      "Goldfish",
+      "Angelfish"
+    ],
+    "difficulty": "easy",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Four plausible fish types. Easy and Pixar category. #174 asks Dory's species; one fish's species does not establish the other's.",
+  "verification": {
+    "context": "Finding Nemo, Pixar 2003 film, Nemo's species.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Clownfish",
+        "verdict": "correct",
+        "reason": "Nemo and his father are the clownfish family introduced in the synopsis.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/finding-nemo",
+            "locator": "Opening synopsis: Marlin is a clownfish living with his son Nemo; profiles Nemo, Marlin, Gill (heading Gil), Sharks (Bruce) and Nigel."
+          }
+        ]
+      },
+      {
+        "answer": "Blue tang",
+        "verdict": "incorrect",
+        "reason": "Blue tang is not the clownfish identity established for Nemo; it is a different kind of fish.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/finding-nemo",
+            "locator": "Opening synopsis: Marlin is a clownfish living with his son Nemo; profiles Nemo, Marlin, Gill (heading Gil), Sharks (Bruce) and Nigel."
+          },
+          {
+            "url": "https://www.pixar.com/finding-dory",
+            "locator": "Opening synopsis calls Dory a blue tang, a different fish from the clownfish Nemo and Marlin in Finding Nemo."
+          }
+        ]
+      },
+      {
+        "answer": "Goldfish",
+        "verdict": "incorrect",
+        "reason": "Nemo is a reef clownfish, not a goldfish.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/finding-nemo",
+            "locator": "Opening synopsis: Marlin is a clownfish living with his son Nemo; profiles Nemo, Marlin, Gill (heading Gil), Sharks (Bruce) and Nigel."
+          }
+        ]
+      },
+      {
+        "answer": "Angelfish",
+        "verdict": "incorrect",
+        "reason": "Angelfish is a different species label from the clownfish family shown and described here.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/finding-nemo",
+            "locator": "Opening synopsis: Marlin is a clownfish living with his son Nemo; profiles Nemo, Marlin, Gill (heading Gil), Sharks (Bruce) and Nigel."
+          }
+        ]
+      }
+    ]
+  }
+}

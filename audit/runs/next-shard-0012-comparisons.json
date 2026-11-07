@@ -1,0 +1,652 @@
+[
+  {
+    "questionId": 605,
+    "replacedBy": 1481,
+    "original": {
+      "id": 605,
+      "question": "In which Walt Disney World park is Toy Story Land located?",
+      "answers": [
+        "Hollywood Studios",
+        "Magic Kingdom",
+        "EPCOT",
+        "Animal Kingdom"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "replacement": {
+      "id": 1481,
+      "question": "At Hollywood Studios, what Toy Story-themed land opened in 2018 features rides including Alien Swirling Saucers and Slinky Dog Dash?",
+      "answers": [
+        "Toy Story Land",
+        "Pixar Place",
+        "Andy's Backyard",
+        "Infinity Land"
+      ],
+      "difficulty": "easy",
+      "category": "parks"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "reason": "The same Hollywood Studios/Toy Story Land location relation is given in reverse, with the retained item adding 2018 and attraction context.",
+    "sources": [
+      {
+        "url": "https://disneyworld.disney.go.com/destinations/hollywood-studios/toy-story-land/",
+        "locator": "Title and opening park identification; attraction list",
+        "evidence": "Toy Story Land is in Hollywood Studios and includes Slinky Dog Dash and Alien Swirling Saucers.",
+        "checkedBy": "Codex",
+        "checkedAt": "2026-11-07",
+        "timeSensitive": true,
+        "nextReviewAt": "2027-02-04",
+        "limitations": "Primary institutional text inspected; no film playback claimed.",
+        "topics": [
+          "parks"
+        ]
+      }
+    ],
+    "challenge": "Read both complete four-option questions and full matching topic context. The same Hollywood Studios/Toy Story Land location relation is given in reverse, with the retained item adding 2018 and attraction context."
+  },
+  {
+    "questionId": 607,
+    "replacedBy": 1486,
+    "original": {
+      "id": 607,
+      "question": "In which EPCOT country pavilion can you ride Frozen Ever After?",
+      "answers": [
+        "Norway",
+        "Canada",
+        "Denmark",
+        "Sweden"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "replacement": {
+      "id": 1486,
+      "question": "At EPCOT, what Norway pavilion boat ride was completely reimagined in 2016 and now features characters and music from Frozen?",
+      "answers": [
+        "Frozen Ever After",
+        "Maelstrom",
+        "Norway Adventure",
+        "Viking Voyage"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "reason": "Same Frozen Ever After/Norway pavilion relation in reverse; the retained question adds the 2016 transformation context.",
+    "sources": [
+      {
+        "url": "https://d23.com/a-to-z/frozen-ever-after/",
+        "locator": "Complete attraction entry",
+        "evidence": "Frozen Ever After opened June 21, 2016 in Norway at EPCOT, replacing Maelstrom.",
+        "checkedBy": "Codex",
+        "checkedAt": "2026-11-07",
+        "timeSensitive": true,
+        "nextReviewAt": "2027-02-04",
+        "limitations": "Primary institutional text inspected; no film playback claimed.",
+        "topics": [
+          "parks"
+        ]
+      }
+    ],
+    "challenge": "Read both complete four-option questions and full matching topic context. Same Frozen Ever After/Norway pavilion relation in reverse; the retained question adds the 2016 transformation context."
+  },
+  {
+    "questionId": 635,
+    "replacedBy": 177,
+    "original": {
+      "id": 635,
+      "question": "In Up, what does Carl Fredricksen use to lift his house into the sky?",
+      "answers": [
+        "Thousands of balloons",
+        "A rocket engine",
+        "A giant fan",
+        "Hot air from a furnace"
+      ],
+      "difficulty": "easy",
+      "category": "pixar"
+    },
+    "replacement": {
+      "id": 177,
+      "question": "In Up, what is the name of the elderly man who floats his house with balloons?",
+      "answers": [
+        "Carl Fredricksen",
+        "Charles Muntz",
+        "Russell Fredricksen",
+        "Ed Asner"
+      ],
+      "difficulty": "easy",
+      "category": "pixar"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "reason": "Same Carl/balloon-lifted-house relation reversed; the retained question identifies Carl while stating the balloon mechanism.",
+    "sources": [
+      {
+        "url": "https://www.pixar.com/upfilm",
+        "locator": "Carl Fredricksen; Dug; Charles F Muntz; Alpha Pack",
+        "evidence": "Carl lifts his house using thousands of balloons. Dug is a golden retriever. Explorer Charles F. Muntz searches for a live bird; Alpha, Beta and Gamma are his dogs.",
+        "checkedBy": "Codex",
+        "checkedAt": "2026-11-07",
+        "timeSensitive": false,
+        "nextReviewAt": null,
+        "limitations": "Primary institutional text inspected; no film playback claimed.",
+        "topics": [
+          "Up"
+        ]
+      }
+    ],
+    "challenge": "Read both complete four-option questions and full matching topic context. Same Carl/balloon-lifted-house relation reversed; the retained question identifies Carl while stating the balloon mechanism."
+  },
+  {
+    "questionId": 665,
+    "replacedBy": 190,
+    "original": {
+      "id": 665,
+      "question": "In Finding Dory, what institution does Dory end up at?",
+      "answers": [
+        "Marine Life Institute",
+        "Monterey Aquarium",
+        "Pacific Ocean Park",
+        "Sea Life Center"
+      ],
+      "difficulty": "hard",
+      "category": "pixar"
+    },
+    "replacement": {
+      "id": 190,
+      "question": "In Finding Dory, where does Dory discover she grew up?",
+      "answers": [
+        "The Marine Life Institute in Morro Bay, California",
+        "The Great Barrier Reef in Australia",
+        "A coral reef in Hawaii",
+        "The Pacific Ocean near Japan"
+      ],
+      "difficulty": "medium",
+      "category": "pixar"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "reason": "The broad institution destination is already supplied by the more precise childhood-home/location question; retain its Morro Bay context.",
+    "sources": [
+      {
+        "url": "https://www.pixar.com/finding-dory",
+        "locator": "Opening synopsis; Hank",
+        "evidence": "Dory travels to the Marine Life Institute in California and meets Hank there.",
+        "checkedBy": "Codex",
+        "checkedAt": "2026-11-07",
+        "timeSensitive": false,
+        "nextReviewAt": null,
+        "limitations": "Primary institutional text inspected; no film playback claimed.",
+        "topics": [
+          "Finding Nemo/Dory"
+        ]
+      }
+    ],
+    "challenge": "Read both complete four-option questions and full matching topic context. The broad institution destination is already supplied by the more precise childhood-home/location question; retain its Morro Bay context."
+  },
+  {
+    "questionId": 668,
+    "replacedBy": 402,
+    "original": {
+      "id": 668,
+      "question": "What was Walt Disney's middle name?",
+      "answers": [
+        "Elias",
+        "Edward",
+        "Eugene",
+        "Ernest"
+      ],
+      "difficulty": "medium",
+      "category": "walt"
+    },
+    "replacement": {
+      "id": 402,
+      "question": "What does WED stand for in WED Enterprises, Walt's personal design company?",
+      "answers": [
+        "Walter Elias Disney",
+        "Walt's Entertainment Division",
+        "World Entertainment Design",
+        "Walt's Engineering Department"
+      ],
+      "difficulty": "medium",
+      "category": "walt"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "reason": "WED expansion already gives Walter Elias Disney in full; middle-name recall adds no new fact.",
+    "sources": [
+      {
+        "url": "https://www.pbs.org/wgbh/americanexperience/features/walt-disney-close/",
+        "locator": "Final archival photo caption, Card Walker and Florida plans",
+        "evidence": "Walt Disney died of lung cancer December 15, 1966. Earlier captions give his full name Walter Elias Disney and 1923 move after Laugh-O-gram bankruptcy.",
+        "checkedBy": "Codex",
+        "checkedAt": "2026-11-07",
+        "timeSensitive": false,
+        "nextReviewAt": null,
+        "limitations": "PBS documentary research and archival-photo captions, not a primary death certificate; corroborated by specialist historical reporting. Wording asks underlying illness, not terminal physiological mechanism.",
+        "topics": [
+          "walt"
+        ]
+      },
+      {
+        "url": "https://d23.com/this-day/walt-disney-founds-wed-enterprises/",
+        "locator": "December 16, 1952 entry; WED name explanation",
+        "evidence": "WED derives from Walter Elias Disney's initials; the design company later became Walt Disney Imagineering.",
+        "checkedBy": "Codex",
+        "checkedAt": "2026-11-07",
+        "timeSensitive": false,
+        "nextReviewAt": null,
+        "limitations": "Primary institutional text inspected; no film or video viewing claimed.",
+        "topics": [
+          "walt"
+        ]
+      }
+    ],
+    "challenge": "Read both complete four-option questions and full matching topic context. WED expansion already gives Walter Elias Disney in full; middle-name recall adds no new fact."
+  },
+  {
+    "questionId": 677,
+    "replacedBy": 1492,
+    "original": {
+      "id": 677,
+      "question": "What was the name of Walt Disney's early film company in Kansas City before he moved to Hollywood?",
+      "answers": [
+        "Laugh-O-Gram Studio",
+        "Disney Animation Studio",
+        "Midwest Movie Studio",
+        "Kansas City Film Company"
+      ],
+      "difficulty": "hard",
+      "category": "walt"
+    },
+    "replacement": {
+      "id": 1492,
+      "question": "What was the name of Walt Disney's early animation studio in Kansas City, founded in 1921, that went bankrupt before he moved to Hollywood?",
+      "answers": [
+        "Laugh-O-Gram Films",
+        "Disney Brothers Studio",
+        "Kansas City Film Co.",
+        "Missouri Motion Pictures"
+      ],
+      "difficulty": "hard",
+      "category": "walt"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "reason": "Both ask the same Kansas City studio identity. Preserve the fuller bankruptcy-context item, but flag its 1921 founding claim separately; retirement does not approve that retained wording.",
+    "sources": [
+      {
+        "url": "https://www.waltdisney.org/blog/how-walt-started-in-animation",
+        "locator": "Paragraph about leaving Kansas City Film Ad Service",
+        "evidence": "Walt incorporated Laugh-O-gram Films in spring 1922.",
+        "checkedBy": "Codex",
+        "checkedAt": "2026-11-07",
+        "timeSensitive": false,
+        "nextReviewAt": null,
+        "limitations": "Primary institutional text inspected; no film playback claimed.",
+        "topics": [
+          "walt"
+        ]
+      }
+    ],
+    "challenge": "Read both complete four-option questions and full matching topic context. Both ask the same Kansas City studio identity. Preserve the fuller bankruptcy-context item, but flag its 1921 founding claim separately; retirement does not approve that retained wording."
+  },
+  {
+    "questionId": 678,
+    "replacedBy": 380,
+    "original": {
+      "id": 678,
+      "question": "Which animated short was the first to synchronize sound with animation, featuring Mickey Mouse?",
+      "answers": [
+        "Steamboat Willie",
+        "Plane Crazy",
+        "Gallopin' Gaucho",
+        "The Jazz Fool"
+      ],
+      "difficulty": "hard",
+      "category": "walt"
+    },
+    "replacement": {
+      "id": 380,
+      "question": "In what year was Mickey Mouse's first synchronized-sound cartoon, Steamboat Willie, released?",
+      "answers": [
+        "1928",
+        "1925",
+        "1930",
+        "1932"
+      ],
+      "difficulty": "easy",
+      "category": "walt"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "reason": "The retained item explicitly names Mickey's synchronized-sound debut and asks its year. Retire the redundant title question and its unbounded global-first assertion.",
+    "sources": [
+      {
+        "url": "https://d23.com/disney-history/",
+        "locator": "Opening 1923 paragraph and 1928 Mickey paragraphs",
+        "evidence": "Walt arrived in California in 1923; the brothers formed Disney Brothers Cartoon Studio. Steamboat Willie opened November 18, 1928, after two silent Mickey shorts.",
+        "checkedBy": "Codex",
+        "checkedAt": "2026-11-07",
+        "timeSensitive": false,
+        "nextReviewAt": null,
+        "limitations": "Primary institutional text inspected; no film or video viewing claimed.",
+        "topics": [
+          "walt"
+        ]
+      }
+    ],
+    "challenge": "Read both complete four-option questions and full matching topic context. The retained item explicitly names Mickey's synchronized-sound debut and asks its year. Retire the redundant title question and its unbounded global-first assertion."
+  },
+  {
+    "questionId": 679,
+    "replacedBy": 123,
+    "original": {
+      "id": 679,
+      "question": "What record does Walt Disney hold at the Academy Awards?",
+      "answers": [
+        "Most Oscar wins by any individual, with 22",
+        "Most nominations in a single year",
+        "Youngest winner",
+        "Most wins in a single ceremony"
+      ],
+      "difficulty": "hard",
+      "category": "walt"
+    },
+    "replacement": {
+      "id": 123,
+      "question": "How many competitive Academy Awards are credited to Walt Disney, including his posthumous win?",
+      "answers": [
+        "22",
+        "10",
+        "15",
+        "30"
+      ],
+      "difficulty": "medium",
+      "category": "walt"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "reason": "Same career Oscar-count fact; retained q123 explicitly specifies competitive awards. Original record question also offered a defensible four-wins-in-one-ceremony distractor.",
+    "sources": [
+      {
+        "url": "https://www.televisionacademy.com/bios/walt-disney",
+        "locator": "Biography Academy Awards paragraph",
+        "evidence": "Walt Disney won 22 competitive Academy Awards.",
+        "checkedBy": "Codex",
+        "checkedAt": "2026-11-07",
+        "timeSensitive": false,
+        "nextReviewAt": null,
+        "limitations": "Primary institutional text inspected; no film playback claimed.",
+        "topics": [
+          "walt"
+        ]
+      },
+      {
+        "url": "https://www.oscars.org/oscars/ceremonies/1954",
+        "locator": "Memorable Moments: Walt Disney",
+        "evidence": "The Academy shows Walt with four Oscars from the 1954 ceremony.",
+        "checkedBy": "Codex",
+        "checkedAt": "2026-11-07",
+        "timeSensitive": false,
+        "nextReviewAt": null,
+        "limitations": "Primary institutional text inspected; no film playback claimed.",
+        "topics": [
+          "walt"
+        ]
+      }
+    ],
+    "challenge": "Read both complete four-option questions and full matching topic context. Same career Oscar-count fact; retained q123 explicitly specifies competitive awards. Original record question also offered a defensible four-wins-in-one-ceremony distractor."
+  },
+  {
+    "questionId": 685,
+    "replacedBy": 1495,
+    "original": {
+      "id": 685,
+      "question": "What Disney animated short was the first to use the revolutionary multiplane camera technique?",
+      "answers": [
+        "The Old Mill (1937)",
+        "Snow White (1937)",
+        "Bambi (1942)",
+        "Fantasia (1940)"
+      ],
+      "difficulty": "hard",
+      "category": "walt"
+    },
+    "replacement": {
+      "id": 1495,
+      "question": "Walt Disney's multiplane camera, first used on The Old Mill in 1937, achieved what unique visual effect in animated films?",
+      "answers": [
+        "It created an illusion of depth by moving multiple layers of artwork at different speeds",
+        "It allowed full-color animation for the first time",
+        "It enabled realistic human characters to be animated",
+        "It recorded real actor movements to trace over"
+      ],
+      "difficulty": "hard",
+      "category": "walt"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "reason": "Retained camera-effect question already states The Old Mill was the 1937 first use; standalone film-title recall adds no fact.",
+    "sources": [
+      {
+        "url": "https://d23.com/a-to-z/old-mill-the-film/",
+        "locator": "Opening release and multiplane sentences",
+        "evidence": "The Old Mill was released in 1937 and first used Disney's multiplane camera.",
+        "checkedBy": "Codex",
+        "checkedAt": "2026-11-07",
+        "timeSensitive": false,
+        "nextReviewAt": null,
+        "limitations": "Primary institutional text inspected; no film playback claimed.",
+        "topics": [
+          "walt"
+        ]
+      }
+    ],
+    "challenge": "Read both complete four-option questions and full matching topic context. Retained camera-effect question already states The Old Mill was the 1937 first use; standalone film-title recall adds no fact."
+  },
+  {
+    "questionId": 686,
+    "replacedBy": 682,
+    "original": {
+      "id": 686,
+      "question": "What is the name of Disney's official company-wide fan club and convention?",
+      "answers": [
+        "D23",
+        "Disney Magic Club",
+        "The Mouse House",
+        "Disney Circle"
+      ],
+      "difficulty": "easy",
+      "category": "walt"
+    },
+    "replacement": {
+      "id": 682,
+      "question": "What does the number 23 in Disney's D23 fan club name commemorate?",
+      "answers": [
+        "The studio's founding in Hollywood in 1923",
+        "The release of Disney's 23rd animated feature",
+        "Walt Disney's birthday falling on the 23rd",
+        "A group of 23 original Disney characters"
+      ],
+      "difficulty": "medium",
+      "category": "walt"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "reason": "The D23 identity is already in the retained name-origin question; club and convention were also incorrectly conflated.",
+    "sources": [
+      {
+        "url": "https://support.d23.com/hc/en-us/articles/48286086753427--What-is-D23",
+        "locator": "What is D23, opening paragraph",
+        "evidence": "D23 is Disney's official fan club; 23 commemorates Walt's first Hollywood studio in 1923.",
+        "checkedBy": "Codex",
+        "checkedAt": "2026-11-07",
+        "timeSensitive": false,
+        "nextReviewAt": null,
+        "limitations": "Primary institutional text inspected; no film playback claimed.",
+        "topics": [
+          "walt"
+        ]
+      }
+    ],
+    "challenge": "Read both complete four-option questions and full matching topic context. The D23 identity is already in the retained name-origin question; club and convention were also incorrectly conflated."
+  },
+  {
+    "questionId": 690,
+    "replacedBy": 959,
+    "original": {
+      "id": 690,
+      "question": "What was the name of the Disney Studio's location where it has operated since 1940?",
+      "answers": [
+        "Burbank, California",
+        "Hollywood, California",
+        "Anaheim, California",
+        "Glendale, California"
+      ],
+      "difficulty": "medium",
+      "category": "walt"
+    },
+    "replacement": {
+      "id": 959,
+      "question": "Which Disney studio facility opened in Burbank in 1940?",
+      "answers": [
+        "Walt Disney Studios",
+        "Hyperion Studio",
+        "Laugh-O-Gram Studio",
+        "Disneyland Studio"
+      ],
+      "difficulty": "medium",
+      "category": "walt"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "reason": "Same 1940 Burbank studio-location relation reversed; retain the facility-identification question.",
+    "sources": [
+      {
+        "url": "https://d23.com/about-walt-disney/",
+        "locator": "1923 Hollywood move; 1925 marriage and daughters; 1940 Burbank paragraphs",
+        "evidence": "Walt moved to Hollywood, California, partnered with Roy O., married Lillian Bounds, and had daughters Diane and Sharon. The Burbank studio was completed in 1940.",
+        "checkedBy": "Codex",
+        "checkedAt": "2026-11-07",
+        "timeSensitive": false,
+        "nextReviewAt": null,
+        "limitations": "Primary institutional text inspected; no film or video viewing claimed.",
+        "topics": [
+          "walt"
+        ]
+      }
+    ],
+    "challenge": "Read both complete four-option questions and full matching topic context. Same 1940 Burbank studio-location relation reversed; retain the facility-identification question."
+  },
+  {
+    "questionId": 691,
+    "replacedBy": 935,
+    "original": {
+      "id": 691,
+      "question": "In what year did Snow White and the Seven Dwarfs premiere?",
+      "answers": [
+        "1937",
+        "1935",
+        "1940",
+        "1932"
+      ],
+      "difficulty": "medium",
+      "category": "walt"
+    },
+    "replacement": {
+      "id": 935,
+      "question": "Which Disney film premiered at Carthay Circle Theatre in 1937?",
+      "answers": [
+        "Snow White and the Seven Dwarfs",
+        "Pinocchio",
+        "Fantasia",
+        "Bambi"
+      ],
+      "difficulty": "medium",
+      "category": "walt"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "reason": "Same Snow White/1937 premiere relation reversed, with Carthay Circle context retained.",
+    "sources": [
+      {
+        "url": "https://www.disneyanimation.com/films/",
+        "locator": "Chronological film list, 1959-1973 entries",
+        "evidence": "The feature sequence runs Sleeping Beauty 1959, 101 Dalmatians 1961, Sword in the Stone 1963, Jungle Book 1967, Aristocats 1970, Robin Hood 1973. Snow White is listed in 1937.",
+        "checkedBy": "Codex",
+        "checkedAt": "2026-11-07",
+        "timeSensitive": false,
+        "nextReviewAt": null,
+        "limitations": "Primary institutional text inspected; no film playback claimed.",
+        "topics": [
+          "walt"
+        ]
+      }
+    ],
+    "challenge": "Read both complete four-option questions and full matching topic context. Same Snow White/1937 premiere relation reversed, with Carthay Circle context retained."
+  },
+  {
+    "questionId": 696,
+    "replacedBy": 717,
+    "original": {
+      "id": 696,
+      "question": "What is the name of the famous wishing song from Pinocchio?",
+      "answers": [
+        "When You Wish Upon a Star",
+        "A Dream Is a Wish Your Heart Makes",
+        "Someday My Prince Will Come",
+        "Bibbidi-Bobbidi-Boo"
+      ],
+      "difficulty": "easy",
+      "category": "music"
+    },
+    "replacement": {
+      "id": 717,
+      "question": "What Disney song won the Academy Award for Best Original Song for the first time, from the 1940 film Pinocchio?",
+      "answers": [
+        "When You Wish Upon a Star",
+        "Give a Little Whistle",
+        "Hi-Diddle-Dee-Dee",
+        "I've Got No Strings"
+      ],
+      "difficulty": "hard",
+      "category": "music"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "reason": "Same Pinocchio/song-title association, with the award distinction in the retained item.",
+    "sources": [
+      {
+        "url": "https://d23.com/a-to-z/pinocchio-film/",
+        "locator": "Awards and song paragraph",
+        "evidence": "Pinocchio features When You Wish Upon a Star, winner of the original-song Oscar.",
+        "checkedBy": "Codex",
+        "checkedAt": "2026-11-07",
+        "timeSensitive": false,
+        "nextReviewAt": null,
+        "limitations": "Primary institutional text inspected; no film playback claimed.",
+        "topics": [
+          "Pinocchio"
+        ]
+      },
+      {
+        "url": "https://www.oscars.org/oscars/ceremonies/1941",
+        "locator": "Music (Song), Winner",
+        "evidence": "When You Wish Upon a Star from Pinocchio won the song award at the 1941 ceremony.",
+        "checkedBy": "Codex",
+        "checkedAt": "2026-11-07",
+        "timeSensitive": false,
+        "nextReviewAt": null,
+        "limitations": "Primary institutional text inspected; no film playback claimed.",
+        "topics": [
+          "Pinocchio"
+        ]
+      }
+    ],
+    "challenge": "Read both complete four-option questions and full matching topic context. Same Pinocchio/song-title association, with the award distinction in the retained item."
+  }
+]

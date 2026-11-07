@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 241,
+  "hash": "dea2b4406e549ff32828374f85b909e88c5e230e905d957c36e11d2177d77908",
+  "questionSnapshot": {
+    "id": 241,
+    "question": "What is the name of Mulan's horse?",
+    "answers": [
+      "Khan",
+      "Angus",
+      "Maximus",
+      "Samson"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. All four are real Disney horse names, but primary profiles assign them to different films/people. Khan alone is Mulan’s, avoiding generic horse-name inference.",
+  "verification": {
+    "context": "What is the name of Mulan's horse?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Khan profile expressly identifies Mulan’s steed.",
+      "sources": [
+        {
+          "url": "https://news.disneylandparis.com/en/celebrate-the-lunar-new-year-of-the-horse-through-the-equine-portraits-at-royal-banquet/",
+          "locator": "Individual Maximus, Khan, Angus and Samson profiles: guard captain’s pursuing horse; Fa family/Mulan steed; Merida horse; Phillip’s horse. Animation studios collaborated on portraits."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "All four are real Disney horse names, but primary profiles assign them to different films/people. Khan alone is Mulan’s, avoiding generic horse-name inference."
+    },
+    "options": [
+      {
+        "answer": "Khan",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Khan profile expressly identifies Mulan’s steed.",
+        "sources": [
+          {
+            "url": "https://news.disneylandparis.com/en/celebrate-the-lunar-new-year-of-the-horse-through-the-equine-portraits-at-royal-banquet/",
+            "locator": "Individual Maximus, Khan, Angus and Samson profiles: guard captain’s pursuing horse; Fa family/Mulan steed; Merida horse; Phillip’s horse. Animation studios collaborated on portraits."
+          }
+        ]
+      },
+      {
+        "answer": "Angus",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Merida’s horse.",
+        "sources": [
+          {
+            "url": "https://news.disneylandparis.com/en/celebrate-the-lunar-new-year-of-the-horse-through-the-equine-portraits-at-royal-banquet/",
+            "locator": "Individual Maximus, Khan, Angus and Samson profiles: guard captain’s pursuing horse; Fa family/Mulan steed; Merida horse; Phillip’s horse. Animation studios collaborated on portraits."
+          }
+        ]
+      },
+      {
+        "answer": "Maximus",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Tangled guard captain’s horse.",
+        "sources": [
+          {
+            "url": "https://news.disneylandparis.com/en/celebrate-the-lunar-new-year-of-the-horse-through-the-equine-portraits-at-royal-banquet/",
+            "locator": "Individual Maximus, Khan, Angus and Samson profiles: guard captain’s pursuing horse; Fa family/Mulan steed; Merida horse; Phillip’s horse. Animation studios collaborated on portraits."
+          }
+        ]
+      },
+      {
+        "answer": "Samson",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Sleeping Beauty prince’s horse.",
+        "sources": [
+          {
+            "url": "https://news.disneylandparis.com/en/celebrate-the-lunar-new-year-of-the-horse-through-the-equine-portraits-at-royal-banquet/",
+            "locator": "Individual Maximus, Khan, Angus and Samson profiles: guard captain’s pursuing horse; Fa family/Mulan steed; Merida horse; Phillip’s horse. Animation studios collaborated on portraits."
+          }
+        ]
+      }
+    ]
+  }
+}

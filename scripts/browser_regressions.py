@@ -146,7 +146,11 @@ def run_regressions(browser, base, check, stop_origin):
     page.click('#btn-results-home')
     page.wait_for_selector('.user-card')
     page.click('#btn-offline-practice')
-    page.evaluate('QUESTIONS=QUESTIONS.filter(q=>q.id===21)')
+    page.evaluate("""() => {
+      const question = QUESTIONS.find(q => q.explanation && q.source);
+      if (!question) throw Error('The active bank must contain an explanation/source fixture');
+      QUESTIONS = [question];
+    }""")
     page.click('#btn-start-game')
     page.locator('.answer-btn').first.click()
     check.ok(page.is_visible('#answer-explanation') and page.locator('#answer-explanation a').get_attribute('href').startswith('https://'), 'answer explanation includes a safe source link')

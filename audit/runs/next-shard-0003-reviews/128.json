@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 128,
+  "hash": "3202559c84d7ec6c4b441aa74211e261ba1e566083df4b891752b634e507962e",
+  "questionSnapshot": {
+    "id": 128,
+    "question": "In Disney's traditional naming story, which name did Lillian Disney persuade Walt to replace with Mickey?",
+    "answers": [
+      "Mortimer Mouse",
+      "Marty Mouse",
+      "Mighty Mouse",
+      "Murray Mouse"
+    ],
+    "difficulty": "medium",
+    "category": "walt"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Challenged legend versus established production history; wording now attributes the traditional story rather than presenting an uncertain private conversation as independently proven.",
+  "verification": {
+    "context": "In Disney's traditional naming story, which name did Lillian Disney persuade Walt to replace with Mickey?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Mortimer is the proposal in the explicitly attributed naming legend.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/mickey-mouse/",
+          "locator": "Opening paragraphs: Walt's primary cartoon character; naming legend about Mortimer, Lillian and Mickey; collaboration with Ub Iwerks."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged legend versus established production history; wording now attributes the traditional story rather than presenting an uncertain private conversation as independently proven."
+    },
+    "options": [
+      {
+        "answer": "Mortimer Mouse",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Mortimer is the proposal in the explicitly attributed naming legend.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/mickey-mouse/",
+            "locator": "Opening paragraphs: Walt's primary cartoon character; naming legend about Mortimer, Lillian and Mickey; collaboration with Ub Iwerks."
+          }
+        ]
+      },
+      {
+        "answer": "Marty Mouse",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the proposed name in that account.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/mickey-mouse/",
+            "locator": "Opening paragraphs: Walt's primary cartoon character; naming legend about Mortimer, Lillian and Mickey; collaboration with Ub Iwerks."
+          }
+        ]
+      },
+      {
+        "answer": "Mighty Mouse",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the proposed name in that account.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/mickey-mouse/",
+            "locator": "Opening paragraphs: Walt's primary cartoon character; naming legend about Mortimer, Lillian and Mickey; collaboration with Ub Iwerks."
+          }
+        ]
+      },
+      {
+        "answer": "Murray Mouse",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the proposed name in that account.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/mickey-mouse/",
+            "locator": "Opening paragraphs: Walt's primary cartoon character; naming legend about Mortimer, Lillian and Mickey; collaboration with Ub Iwerks."
+          }
+        ]
+      }
+    ]
+  }
+}

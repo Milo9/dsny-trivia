@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 245,
+  "hash": "e53156daac661b8787532c257ec5c381c732aaf599f955aa0b81cce37a94f296",
+  "questionSnapshot": {
+    "id": 245,
+    "question": "In The Princess and the Frog, what is the name of the firefly who is in love with a star?",
+    "answers": [
+      "Ray",
+      "Louis",
+      "Charlotte",
+      "James"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Checked firefly identity separately from love-interest astronomy. The character profile names Ray and Evangeline, Disney recap corroborates relationship; Louis/Charlotte/James are different identities. Mr. Ray in Nemo is a different character.",
+  "verification": {
+    "context": "In The Princess and the Frog, what is the name of the firefly who is in love with a star?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Ray is explicitly the lovesick firefly devoted to Evangeline.",
+      "sources": [
+        {
+          "url": "https://movies.disney.com/the-princess-and-the-frog",
+          "locator": "The Characters / Tiana, Louis and Ray: restaurant dream, jazz alligator and lovesick Cajun firefly pining for Evangeline; gallery identifies Charlotte and Ray separately."
+        },
+        {
+          "url": "https://d23.com/d23-event-recaps/gold-members-celebrate-the-princess-and-the-frog-and-tianas-bayou-adventure/",
+          "locator": "Screening recap: Ray/Evangeline pin and radiant love; corroborates the relationship in the official film character profile."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Checked firefly identity separately from love-interest astronomy. The character profile names Ray and Evangeline, Disney recap corroborates relationship; Louis/Charlotte/James are different identities. Mr. Ray in Nemo is a different character."
+    },
+    "options": [
+      {
+        "answer": "Ray",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Ray is explicitly the lovesick firefly devoted to Evangeline.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-princess-and-the-frog",
+            "locator": "The Characters / Tiana, Louis and Ray: restaurant dream, jazz alligator and lovesick Cajun firefly pining for Evangeline; gallery identifies Charlotte and Ray separately."
+          },
+          {
+            "url": "https://d23.com/d23-event-recaps/gold-members-celebrate-the-princess-and-the-frog-and-tianas-bayou-adventure/",
+            "locator": "Screening recap: Ray/Evangeline pin and radiant love; corroborates the relationship in the official film character profile."
+          }
+        ]
+      },
+      {
+        "answer": "Louis",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Louis is the jazz alligator, not the firefly.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-princess-and-the-frog",
+            "locator": "The Characters / Tiana, Louis and Ray: restaurant dream, jazz alligator and lovesick Cajun firefly pining for Evangeline; gallery identifies Charlotte and Ray separately."
+          },
+          {
+            "url": "https://d23.com/d23-event-recaps/gold-members-celebrate-the-princess-and-the-frog-and-tianas-bayou-adventure/",
+            "locator": "Screening recap: Ray/Evangeline pin and radiant love; corroborates the relationship in the official film character profile."
+          }
+        ]
+      },
+      {
+        "answer": "Charlotte",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Charlotte is the human friend who dreams of a prince, not the firefly.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-princess-and-the-frog",
+            "locator": "The Characters / Tiana, Louis and Ray: restaurant dream, jazz alligator and lovesick Cajun firefly pining for Evangeline; gallery identifies Charlotte and Ray separately."
+          },
+          {
+            "url": "https://d23.com/d23-event-recaps/gold-members-celebrate-the-princess-and-the-frog-and-tianas-bayou-adventure/",
+            "locator": "Screening recap: Ray/Evangeline pin and radiant love; corroborates the relationship in the official film character profile."
+          }
+        ]
+      },
+      {
+        "answer": "James",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "James is Tiana’s father, not the named firefly.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-princess-and-the-frog",
+            "locator": "The Characters / Tiana, Louis and Ray: restaurant dream, jazz alligator and lovesick Cajun firefly pining for Evangeline; gallery identifies Charlotte and Ray separately."
+          },
+          {
+            "url": "https://d23.com/d23-event-recaps/gold-members-celebrate-the-princess-and-the-frog-and-tianas-bayou-adventure/",
+            "locator": "Screening recap: Ray/Evangeline pin and radiant love; corroborates the relationship in the official film character profile."
+          }
+        ]
+      }
+    ]
+  }
+}

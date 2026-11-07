@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 219,
+  "hash": "dc895b61f1358aeaa179a282239380417d4d5b8d4913eb07785aabd4cc29e875",
+  "questionSnapshot": {
+    "id": 219,
+    "question": "In Tangled (2010), what does Rapunzel use to knock Flynn Rider unconscious in her tower?",
+    "answers": [
+      "A frying pan",
+      "A sword",
+      "A bow and arrow",
+      "A magic wand"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Scoped to the tower knockout rather than every object Rapunzel could use in combat. The school-hosted licensed novelization gives the event and Disney’s gallery gives the pan; sword, bow and wand do not fit that event.",
+  "verification": {
+    "context": "In Tangled (2010), what does Rapunzel use to knock Flynn Rider unconscious in her tower?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Licensed novelization explicitly ties the tower knockout to the pan; film gallery corroborates object.",
+      "sources": [
+        {
+          "url": "https://content.fimsschools.com/academy.fims.org.pk/Tangled%20%28Irene%20Trimble%29.pdf",
+          "locator": "Disney-copyrighted 2010 junior novelization, PDF pages 30–31: Flynn enters tower, impact knocks him unconscious, Rapunzel marvels at frying pan. Primary licensed adaptation hosted by a school; film gallery independently corroborates pan."
+        },
+        {
+          "url": "https://movies.disney.com/tangled",
+          "locator": "Film gallery caption identifies Rapunzel holding a frying pan, corroborating the licensed novelization’s tower episode."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Scoped to the tower knockout rather than every object Rapunzel could use in combat. The school-hosted licensed novelization gives the event and Disney’s gallery gives the pan; sword, bow and wand do not fit that event."
+    },
+    "options": [
+      {
+        "answer": "A frying pan",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Licensed novelization explicitly ties the tower knockout to the pan; film gallery corroborates object.",
+        "sources": [
+          {
+            "url": "https://content.fimsschools.com/academy.fims.org.pk/Tangled%20%28Irene%20Trimble%29.pdf",
+            "locator": "Disney-copyrighted 2010 junior novelization, PDF pages 30–31: Flynn enters tower, impact knocks him unconscious, Rapunzel marvels at frying pan. Primary licensed adaptation hosted by a school; film gallery independently corroborates pan."
+          },
+          {
+            "url": "https://movies.disney.com/tangled",
+            "locator": "Film gallery caption identifies Rapunzel holding a frying pan, corroborating the licensed novelization’s tower episode."
+          }
+        ]
+      },
+      {
+        "answer": "A sword",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the implement identified in this particular knockout.",
+        "sources": [
+          {
+            "url": "https://content.fimsschools.com/academy.fims.org.pk/Tangled%20%28Irene%20Trimble%29.pdf",
+            "locator": "Disney-copyrighted 2010 junior novelization, PDF pages 30–31: Flynn enters tower, impact knocks him unconscious, Rapunzel marvels at frying pan. Primary licensed adaptation hosted by a school; film gallery independently corroborates pan."
+          },
+          {
+            "url": "https://movies.disney.com/tangled",
+            "locator": "Film gallery caption identifies Rapunzel holding a frying pan, corroborating the licensed novelization’s tower episode."
+          }
+        ]
+      },
+      {
+        "answer": "A bow and arrow",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the implement identified in this particular knockout.",
+        "sources": [
+          {
+            "url": "https://content.fimsschools.com/academy.fims.org.pk/Tangled%20%28Irene%20Trimble%29.pdf",
+            "locator": "Disney-copyrighted 2010 junior novelization, PDF pages 30–31: Flynn enters tower, impact knocks him unconscious, Rapunzel marvels at frying pan. Primary licensed adaptation hosted by a school; film gallery independently corroborates pan."
+          },
+          {
+            "url": "https://movies.disney.com/tangled",
+            "locator": "Film gallery caption identifies Rapunzel holding a frying pan, corroborating the licensed novelization’s tower episode."
+          }
+        ]
+      },
+      {
+        "answer": "A magic wand",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the implement identified in this particular knockout.",
+        "sources": [
+          {
+            "url": "https://content.fimsschools.com/academy.fims.org.pk/Tangled%20%28Irene%20Trimble%29.pdf",
+            "locator": "Disney-copyrighted 2010 junior novelization, PDF pages 30–31: Flynn enters tower, impact knocks him unconscious, Rapunzel marvels at frying pan. Primary licensed adaptation hosted by a school; film gallery independently corroborates pan."
+          },
+          {
+            "url": "https://movies.disney.com/tangled",
+            "locator": "Film gallery caption identifies Rapunzel holding a frying pan, corroborating the licensed novelization’s tower episode."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "retired": {
+    "id": 390,
+    "question": "What was the name of Walt Disney's live-action nature documentary film series?",
+    "answers": [
+      "True-Life Adventures",
+      "Nature's Wonders",
+      "Disney Nature Shorts",
+      "Wild Kingdom"
+    ],
+    "difficulty": "medium",
+    "category": "walt"
+  },
+  "retained": {
+    "id": 946,
+    "question": "What was the first feature-length True-Life Adventure film released by Disney?",
+    "answers": [
+      "The Living Desert",
+      "Seal Island",
+      "The Vanishing Prairie",
+      "White Wilderness"
+    ],
+    "difficulty": "hard",
+    "category": "walt"
+  },
+  "additionalComparisons": [],
+  "rationale": "946 explicitly names the True-Life Adventure series while asking its first feature. Keep that additional theatrical-film fact rather than repeating the series name.",
+  "sources": [
+    {
+      "sourceNoteId": "true-life",
+      "url": "https://d23.com/a-to-z/true-life-adventures-film/",
+      "locator": "Opening description and complete list of original films",
+      "evidence": "True-Life Adventures was a theatrical nature-film series of shorts and features from 1948-1960; The Living Desert was among its features.",
+      "checkedBy": "Codex",
+      "checkedAt": "2026-11-07",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "limitations": "Primary institutional text inspected; no film or video viewing claimed.",
+      "topics": [
+        "walt"
+      ]
+    }
+  ],
+  "originalOptionAssessments": [
+    {
+      "answer": "True-Life Adventures",
+      "assessment": "True-Life Adventures is the documented nature-film series."
+    },
+    {
+      "answer": "Nature's Wonders",
+      "assessment": "Nature's Wonders is not its name."
+    },
+    {
+      "answer": "Disney Nature Shorts",
+      "assessment": "Disney Nature Shorts is not its name."
+    },
+    {
+      "answer": "Wild Kingdom",
+      "assessment": "Wild Kingdom is not this Disney series."
+    }
+  ],
+  "finalChallenge": {
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "notes": "946 explicitly names the True-Life Adventure series while asking its first feature. Keep that additional theatrical-film fact rather than repeating the series name. All four original options inspected. Retirement avoids asserting approval of a flawed premise or an insufficiently excluded alternative."
+  },
+  "scope": "Only the planned ID is retired. Counterpart comparison is not approval of its other claims."
+}

@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 287,
+  "hash": "c38ea99712a7f61a3315e2f5d31c224d72bf3bf1e5bbcd82770387725770a181",
+  "questionSnapshot": {
+    "id": 287,
+    "question": "In Cinderella (1950), what do the mice and birds sew for Cinderella before her Fairy Godmother arrives?",
+    "answers": [
+      "A dress",
+      "A pair of slippers",
+      "A cloak",
+      "A pair of gloves"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Pinpointed animal-made first outfit before Fairy Godmother, rather than attributing later magical gown to sewing mice. Parallel sewn garments replace carriage/tiara options. Dress-making song q1244 adds musical title; gown-color q1 is a different outfit.",
+  "verification": {
+    "context": "In Cinderella (1950), what do the mice and birds sew for Cinderella before her Fairy Godmother arrives?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The animal friends create the dress.",
+      "sources": [
+        {
+          "url": "https://princess.disney.com/cinderella",
+          "locator": "Cinderella Storybook Illustrations from Walt Disney Archives, third illustration: animal friends create pink dress; subsequent illustrations separately identify coach and Fairy Godmother transformation."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Pinpointed animal-made first outfit before Fairy Godmother, rather than attributing later magical gown to sewing mice. Parallel sewn garments replace carriage/tiara options. Dress-making song q1244 adds musical title; gown-color q1 is a different outfit."
+    },
+    "options": [
+      {
+        "answer": "A dress",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The animal friends create the dress.",
+        "sources": [
+          {
+            "url": "https://princess.disney.com/cinderella",
+            "locator": "Cinderella Storybook Illustrations from Walt Disney Archives, third illustration: animal friends create pink dress; subsequent illustrations separately identify coach and Fairy Godmother transformation."
+          }
+        ]
+      },
+      {
+        "answer": "A pair of slippers",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Slippers are not the garment identified in the sewing illustration.",
+        "sources": [
+          {
+            "url": "https://princess.disney.com/cinderella",
+            "locator": "Cinderella Storybook Illustrations from Walt Disney Archives, third illustration: animal friends create pink dress; subsequent illustrations separately identify coach and Fairy Godmother transformation."
+          }
+        ]
+      },
+      {
+        "answer": "A cloak",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Cloak is not the created dress.",
+        "sources": [
+          {
+            "url": "https://princess.disney.com/cinderella",
+            "locator": "Cinderella Storybook Illustrations from Walt Disney Archives, third illustration: animal friends create pink dress; subsequent illustrations separately identify coach and Fairy Godmother transformation."
+          }
+        ]
+      },
+      {
+        "answer": "A pair of gloves",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Gloves are not the created dress.",
+        "sources": [
+          {
+            "url": "https://princess.disney.com/cinderella",
+            "locator": "Cinderella Storybook Illustrations from Walt Disney Archives, third illustration: animal friends create pink dress; subsequent illustrations separately identify coach and Fairy Godmother transformation."
+          }
+        ]
+      }
+    ]
+  }
+}

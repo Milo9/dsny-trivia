@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 236,
+  "hash": "5220be7a7f6c05a9d887a9341521e0d459a4bbb9ce7c3a7c0857b9dbc6749e79",
+  "questionSnapshot": {
+    "id": 236,
+    "question": "In Zootopia (2016), who masterminds the plot to make predators go savage?",
+    "answers": [
+      "Bellwether",
+      "Mayor Lionheart",
+      "Mr. Big",
+      "Duke Weaselton"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Scoped to the 2016 predator conspiracy, not all villains in the franchise. The official sequel script reproduces original-film confession and arrest, distinguishing Lionheart’s wrongdoing from Bellwether’s mastermind role. Removed unsupported first name Dawn.",
+  "verification": {
+    "context": "In Zootopia (2016), who masterminds the plot to make predators go savage?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Official script recap identifies Bellwether as villain and records her predator-dart conspiracy confession.",
+      "sources": [
+        {
+          "url": "https://assets.debut.disney.com/documents/Zootopia%202%20Script.pdf",
+          "locator": "Page 1 recap expressly identifies Bellwether as movie one villain, confession framing Lionheart, recording of plan to dart every predator, and her arrest."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Scoped to the 2016 predator conspiracy, not all villains in the franchise. The official sequel script reproduces original-film confession and arrest, distinguishing Lionheart’s wrongdoing from Bellwether’s mastermind role. Removed unsupported first name Dawn."
+    },
+    "options": [
+      {
+        "answer": "Bellwether",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Official script recap identifies Bellwether as villain and records her predator-dart conspiracy confession.",
+        "sources": [
+          {
+            "url": "https://assets.debut.disney.com/documents/Zootopia%202%20Script.pdf",
+            "locator": "Page 1 recap expressly identifies Bellwether as movie one villain, confession framing Lionheart, recording of plan to dart every predator, and her arrest."
+          }
+        ]
+      },
+      {
+        "answer": "Mayor Lionheart",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Bellwether explicitly says she framed Lionheart; he is not this plot’s mastermind.",
+        "sources": [
+          {
+            "url": "https://assets.debut.disney.com/documents/Zootopia%202%20Script.pdf",
+            "locator": "Page 1 recap expressly identifies Bellwether as movie one villain, confession framing Lionheart, recording of plan to dart every predator, and her arrest."
+          }
+        ]
+      },
+      {
+        "answer": "Mr. Big",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the conspirator who makes the confession and is arrested.",
+        "sources": [
+          {
+            "url": "https://assets.debut.disney.com/documents/Zootopia%202%20Script.pdf",
+            "locator": "Page 1 recap expressly identifies Bellwether as movie one villain, confession framing Lionheart, recording of plan to dart every predator, and her arrest."
+          }
+        ]
+      },
+      {
+        "answer": "Duke Weaselton",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the conspirator who makes the confession and is arrested.",
+        "sources": [
+          {
+            "url": "https://assets.debut.disney.com/documents/Zootopia%202%20Script.pdf",
+            "locator": "Page 1 recap expressly identifies Bellwether as movie one villain, confession framing Lionheart, recording of plan to dart every predator, and her arrest."
+          }
+        ]
+      }
+    ]
+  }
+}

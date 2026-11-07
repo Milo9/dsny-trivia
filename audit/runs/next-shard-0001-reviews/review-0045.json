@@ -1,0 +1,96 @@
+{
+  "questionId": 45,
+  "hash": "d148fcd9a0988b4e403b720f1b9cc1e9ca2211dace58d9a96994ffa3fb6eb25c",
+  "questionSnapshot": {
+    "id": 45,
+    "question": "What year was the Disney film Fantasia originally released?",
+    "answers": [
+      "1940",
+      "1937",
+      "1942",
+      "1950"
+    ],
+    "difficulty": "hard",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Four plausible classic-era years. Hard date recall retained. Independently corroborated by AFI and Disney. #169 Oscar timing and #400 Burbank move merely share a year; #939 requires the separate Fantasound/film association.",
+  "verification": {
+    "context": "Fantasia, original US world-premiere release in 1940, not Fantasia 2000 or later reissues.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "1940",
+        "verdict": "correct",
+        "reason": "The original premiere was November 13, 1940.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/fantasia-film/",
+            "locator": "Film entry: premiere at Broadway Theater, New York, November 13, 1940; reissue years listed separately."
+          },
+          {
+            "url": "https://catalog.afi.com/Film/27633-FANTASIA?cp=1&pos=2&sid=c5193785-56fd-4d16-90b9-0410b9dfa091&sr=2.8317978",
+            "locator": "AFI catalog heading Fantasia (1940), 13 November 1940; History documents development beginning in 1937, distinct from release."
+          }
+        ]
+      },
+      {
+        "answer": "1937",
+        "verdict": "incorrect",
+        "reason": "1937 is when development began, not its release year.",
+        "sources": [
+          {
+            "url": "https://catalog.afi.com/Film/27633-FANTASIA?cp=1&pos=2&sid=c5193785-56fd-4d16-90b9-0410b9dfa091&sr=2.8317978",
+            "locator": "AFI catalog heading Fantasia (1940), 13 November 1940; History documents development beginning in 1937, distinct from release."
+          },
+          {
+            "url": "https://d23.com/a-to-z/fantasia-film/",
+            "locator": "Film entry: premiere at Broadway Theater, New York, November 13, 1940; reissue years listed separately."
+          }
+        ]
+      },
+      {
+        "answer": "1942",
+        "verdict": "incorrect",
+        "reason": "1942 follows the documented 1940 premiere and is not the original-release year.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/fantasia-film/",
+            "locator": "Film entry: premiere at Broadway Theater, New York, November 13, 1940; reissue years listed separately."
+          },
+          {
+            "url": "https://catalog.afi.com/Film/27633-FANTASIA?cp=1&pos=2&sid=c5193785-56fd-4d16-90b9-0410b9dfa091&sr=2.8317978",
+            "locator": "AFI catalog heading Fantasia (1940), 13 November 1940; History documents development beginning in 1937, distinct from release."
+          }
+        ]
+      },
+      {
+        "answer": "1950",
+        "verdict": "incorrect",
+        "reason": "1950 is ten years after the original premiere; it is not the original release.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/fantasia-film/",
+            "locator": "Film entry: premiere at Broadway Theater, New York, November 13, 1940; reissue years listed separately."
+          },
+          {
+            "url": "https://catalog.afi.com/Film/27633-FANTASIA?cp=1&pos=2&sid=c5193785-56fd-4d16-90b9-0410b9dfa091&sr=2.8317978",
+            "locator": "AFI catalog heading Fantasia (1940), 13 November 1940; History documents development beginning in 1937, distinct from release."
+          }
+        ]
+      }
+    ]
+  }
+}

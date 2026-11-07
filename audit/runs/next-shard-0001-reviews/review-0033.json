@@ -1,0 +1,96 @@
+{
+  "questionId": 33,
+  "hash": "52b78a8db496146269b18abf29e6ea58c0f0b5f5b0a8b2d06f0cacf53f7c67f1",
+  "questionSnapshot": {
+    "id": 33,
+    "question": "In Disney's animated Pocahontas (1995), who is Pocahontas's English love interest?",
+    "answers": [
+      "John Smith",
+      "John Ratcliffe",
+      "Thomas",
+      "Captain Newport"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Added version/year to avoid historical or sequel confusion. All four are English male names; medium. #2043 asks John Smith's hooded return in the sequel, a separate plot event.",
+  "verification": {
+    "context": "Disney animated Pocahontas (1995), fictional film romance rather than historical biography or Pocahontas II.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "John Smith",
+        "verdict": "correct",
+        "reason": "John Smith is the English captain in the central relationship described by Disney.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/pocahontas",
+            "locator": "1995 synopsis: Pocahontas meets Captain John Smith, forming the central relationship; credits distinguish the principal actors."
+          },
+          {
+            "url": "https://d23.com/a-to-z/pocahontas-film/",
+            "locator": "Synopsis paragraphs 2-3: John Smith and Pocahontas fall in love; Governor Ratcliffe leads the gold-seeking settlers and shoots Smith; Thomas is the inexperienced settler who kills Kocoum. Credits name Mel Gibson as Captain John Smith, not Captain Newport."
+          }
+        ]
+      },
+      {
+        "answer": "John Ratcliffe",
+        "verdict": "incorrect",
+        "reason": "Governor Ratcliffe leads the gold-seeking colonists and shoots Smith; he is the antagonist, not her romantic partner.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/pocahontas",
+            "locator": "1995 synopsis: Pocahontas meets Captain John Smith, forming the central relationship; credits distinguish the principal actors."
+          },
+          {
+            "url": "https://d23.com/a-to-z/pocahontas-film/",
+            "locator": "Synopsis paragraphs 2-3: John Smith and Pocahontas fall in love; Governor Ratcliffe leads the gold-seeking settlers and shoots Smith; Thomas is the inexperienced settler who kills Kocoum. Credits name Mel Gibson as Captain John Smith, not Captain Newport."
+          }
+        ]
+      },
+      {
+        "answer": "Thomas",
+        "verdict": "incorrect",
+        "reason": "Thomas is the inexperienced settler who kills Kocoum; Smith, not Thomas, has the central romance with Pocahontas.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/pocahontas",
+            "locator": "1995 synopsis: Pocahontas meets Captain John Smith, forming the central relationship; credits distinguish the principal actors."
+          },
+          {
+            "url": "https://d23.com/a-to-z/pocahontas-film/",
+            "locator": "Synopsis paragraphs 2-3: John Smith and Pocahontas fall in love; Governor Ratcliffe leads the gold-seeking settlers and shoots Smith; Thomas is the inexperienced settler who kills Kocoum. Credits name Mel Gibson as Captain John Smith, not Captain Newport."
+          }
+        ]
+      },
+      {
+        "answer": "Captain Newport",
+        "verdict": "incorrect",
+        "reason": "Captain Newport is not the captain named in this romance; Disney explicitly identifies and credits that character as Captain John Smith.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/pocahontas",
+            "locator": "1995 synopsis: Pocahontas meets Captain John Smith, forming the central relationship; credits distinguish the principal actors."
+          },
+          {
+            "url": "https://d23.com/a-to-z/pocahontas-film/",
+            "locator": "Synopsis paragraphs 2-3: John Smith and Pocahontas fall in love; Governor Ratcliffe leads the gold-seeking settlers and shoots Smith; Thomas is the inexperienced settler who kills Kocoum. Credits name Mel Gibson as Captain John Smith, not Captain Newport."
+          }
+        ]
+      }
+    ]
+  }
+}

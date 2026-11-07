@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 174,
+  "hash": "bf5f26ed0f1fa1a93249ead582f797dc749f74ac1c8fc2d7d4441497a986ecd4",
+  "questionSnapshot": {
+    "id": 174,
+    "question": "What type of fish is Dory in Finding Nemo?",
+    "answers": [
+      "Blue tang",
+      "Clownfish",
+      "Goldfish",
+      "Angelfish"
+    ],
+    "difficulty": "easy",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged confusing Nemo’s species or treating Blue as merely a color: primary sources explicitly say Regal Blue Tang. Clownfish, goldfish and angelfish are distinct types, not synonyms.",
+  "verification": {
+    "context": "What type of fish is Dory in Finding Nemo?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Both primary profiles identify Dory as a blue tang.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/finding-nemo-film/",
+          "locator": "Opening explicitly identifies Sydney harbor dentist tank and Dory as a Regal Blue Tang; cast list separates Nigel/Gill/Bloat."
+        },
+        {
+          "url": "https://www.pixar.com/finding-dory",
+          "locator": "Synopsis and Dory profile identify blue tang and California institute; The World / Marine Life Institute calls MLI the Jewel of Morro Bay."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged confusing Nemo’s species or treating Blue as merely a color: primary sources explicitly say Regal Blue Tang. Clownfish, goldfish and angelfish are distinct types, not synonyms."
+    },
+    "options": [
+      {
+        "answer": "Blue tang",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Both primary profiles identify Dory as a blue tang.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/finding-nemo-film/",
+            "locator": "Opening explicitly identifies Sydney harbor dentist tank and Dory as a Regal Blue Tang; cast list separates Nigel/Gill/Bloat."
+          },
+          {
+            "url": "https://www.pixar.com/finding-dory",
+            "locator": "Synopsis and Dory profile identify blue tang and California institute; The World / Marine Life Institute calls MLI the Jewel of Morro Bay."
+          }
+        ]
+      },
+      {
+        "answer": "Clownfish",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Nemo/Marlin’s type, not the species explicitly assigned to Dory.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/finding-nemo-film/",
+            "locator": "Opening explicitly identifies Sydney harbor dentist tank and Dory as a Regal Blue Tang; cast list separates Nigel/Gill/Bloat."
+          },
+          {
+            "url": "https://www.pixar.com/finding-dory",
+            "locator": "Synopsis and Dory profile identify blue tang and California institute; The World / Marine Life Institute calls MLI the Jewel of Morro Bay."
+          }
+        ]
+      },
+      {
+        "answer": "Goldfish",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "A distinct fish type, excluded by Dory’s explicit blue-tang identity.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/finding-nemo-film/",
+            "locator": "Opening explicitly identifies Sydney harbor dentist tank and Dory as a Regal Blue Tang; cast list separates Nigel/Gill/Bloat."
+          },
+          {
+            "url": "https://www.pixar.com/finding-dory",
+            "locator": "Synopsis and Dory profile identify blue tang and California institute; The World / Marine Life Institute calls MLI the Jewel of Morro Bay."
+          }
+        ]
+      },
+      {
+        "answer": "Angelfish",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "A distinct fish type, excluded by Dory’s explicit blue-tang identity.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/finding-nemo-film/",
+            "locator": "Opening explicitly identifies Sydney harbor dentist tank and Dory as a Regal Blue Tang; cast list separates Nigel/Gill/Bloat."
+          },
+          {
+            "url": "https://www.pixar.com/finding-dory",
+            "locator": "Synopsis and Dory profile identify blue tang and California institute; The World / Marine Life Institute calls MLI the Jewel of Morro Bay."
+          }
+        ]
+      }
+    ]
+  }
+}

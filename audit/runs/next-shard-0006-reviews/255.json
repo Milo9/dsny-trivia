@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 255,
+  "hash": "da19025861edfebb68b87adc4629d514863d6052745e6f1339bdb714acf9ba91",
+  "questionSnapshot": {
+    "id": 255,
+    "question": "In Mulan (1998), what is the name of the Hun leader?",
+    "answers": [
+      "Shan Yu",
+      "General Li",
+      "Chi Fu",
+      "Emperor Shang"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Pinned 1998 animation to exclude live-action Bori Khan. Even though other options suggest military authority, none is the unique leader named by the character entry. Chinese command and Emperor are separate from invading Huns.",
+  "verification": {
+    "context": "In Mulan (1998), what is the name of the Hun leader?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Shan Yu is the Hun leader.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/shan-yu/",
+          "locator": "Complete character entry identifies Shan-Yu as leader of Huns in Mulan."
+        },
+        {
+          "url": "https://d23.com/a-to-z/mulan-film/",
+          "locator": "1998 feature synopsis distinguishes invading Huns from Chinese army and Emperor; voice cast names Shan-Yu and Shang."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Pinned 1998 animation to exclude live-action Bori Khan. Even though other options suggest military authority, none is the unique leader named by the character entry. Chinese command and Emperor are separate from invading Huns."
+    },
+    "options": [
+      {
+        "answer": "Shan Yu",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Shan Yu is the Hun leader.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/shan-yu/",
+            "locator": "Complete character entry identifies Shan-Yu as leader of Huns in Mulan."
+          },
+          {
+            "url": "https://d23.com/a-to-z/mulan-film/",
+            "locator": "1998 feature synopsis distinguishes invading Huns from Chinese army and Emperor; voice cast names Shan-Yu and Shang."
+          }
+        ]
+      },
+      {
+        "answer": "General Li",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "General Li is not the explicitly named Hun leader.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/shan-yu/",
+            "locator": "Complete character entry identifies Shan-Yu as leader of Huns in Mulan."
+          },
+          {
+            "url": "https://d23.com/a-to-z/mulan-film/",
+            "locator": "1998 feature synopsis distinguishes invading Huns from Chinese army and Emperor; voice cast names Shan-Yu and Shang."
+          }
+        ]
+      },
+      {
+        "answer": "Chi Fu",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Chi Fu is not Shan Yu, the identified leader.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/shan-yu/",
+            "locator": "Complete character entry identifies Shan-Yu as leader of Huns in Mulan."
+          },
+          {
+            "url": "https://d23.com/a-to-z/mulan-film/",
+            "locator": "1998 feature synopsis distinguishes invading Huns from Chinese army and Emperor; voice cast names Shan-Yu and Shang."
+          }
+        ]
+      },
+      {
+        "answer": "Emperor Shang",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Emperor Shang is not the identified Hun leader.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/shan-yu/",
+            "locator": "Complete character entry identifies Shan-Yu as leader of Huns in Mulan."
+          },
+          {
+            "url": "https://d23.com/a-to-z/mulan-film/",
+            "locator": "1998 feature synopsis distinguishes invading Huns from Chinese army and Emperor; voice cast names Shan-Yu and Shang."
+          }
+        ]
+      }
+    ]
+  }
+}

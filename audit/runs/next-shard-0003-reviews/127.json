@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 127,
+  "hash": "198f06e4aeb5059b003710aaa29d5b473b8aaf3a5f2ed76c8191b8cd1f621fcb",
+  "questionSnapshot": {
+    "id": 127,
+    "question": "What were the names of Walt Disney's two daughters?",
+    "answers": [
+      "Diane and Sharon",
+      "Mary and Susan",
+      "Anne and Patricia",
+      "Jane and Lillian"
+    ],
+    "difficulty": "medium",
+    "category": "walt"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Final challenge checks the exact named entity/event against each listed alternative, not merely a matching answer keyword.",
+  "verification": {
+    "context": "What were the names of Walt Disney's two daughters?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Biography names both daughters Diane and Sharon.",
+      "sources": [
+        {
+          "url": "https://d23.com/about-walt-disney/",
+          "locator": "Biography paragraphs: Chicago birth, McKinley school and evening art classes; Hollywood arrival/office; daughters Diane and Sharon."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tried each alternative against the literal final scope: Mary and Susan: Not the named pair of daughters. Anne and Patricia: Not the named pair of daughters. Jane and Lillian: Lillian was Walt's wife; this is not the named daughter pair."
+    },
+    "options": [
+      {
+        "answer": "Diane and Sharon",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Biography names both daughters Diane and Sharon.",
+        "sources": [
+          {
+            "url": "https://d23.com/about-walt-disney/",
+            "locator": "Biography paragraphs: Chicago birth, McKinley school and evening art classes; Hollywood arrival/office; daughters Diane and Sharon."
+          }
+        ]
+      },
+      {
+        "answer": "Mary and Susan",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the named pair of daughters.",
+        "sources": [
+          {
+            "url": "https://d23.com/about-walt-disney/",
+            "locator": "Biography paragraphs: Chicago birth, McKinley school and evening art classes; Hollywood arrival/office; daughters Diane and Sharon."
+          }
+        ]
+      },
+      {
+        "answer": "Anne and Patricia",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the named pair of daughters.",
+        "sources": [
+          {
+            "url": "https://d23.com/about-walt-disney/",
+            "locator": "Biography paragraphs: Chicago birth, McKinley school and evening art classes; Hollywood arrival/office; daughters Diane and Sharon."
+          }
+        ]
+      },
+      {
+        "answer": "Jane and Lillian",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Lillian was Walt's wife; this is not the named daughter pair.",
+        "sources": [
+          {
+            "url": "https://d23.com/about-walt-disney/",
+            "locator": "Biography paragraphs: Chicago birth, McKinley school and evening art classes; Hollywood arrival/office; daughters Diane and Sharon."
+          }
+        ]
+      }
+    ]
+  }
+}

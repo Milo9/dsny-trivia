@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 69,
+  "hash": "88d0e4b10590ede4c1cb2e5164d46afc97eb9265e5e8cf526737ebf109e85c27",
+  "questionSnapshot": {
+    "id": 69,
+    "question": "In Hercules (1997), which group acts as the musical Greek chorus telling Hercules's story?",
+    "answers": [
+      "The Muses",
+      "The Fates",
+      "The Olympians",
+      "The Nymphs"
+    ],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "q2150 asks the Muses’ musical genre; this asks which group fills a narrative role. Retain as separate identity and style facts. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "English-language Disney character naming; original theatrical feature where a film is named. In Hercules (1997), which group acts as the musical Greek chorus telling Hercules's story?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The Muses function as the musical Greek chorus; the film also has an opening spoken narrator.",
+      "sources": [
+        {
+          "url": "https://d23.com/theres-no-chance-no-way-you-can-miss-out-on-these-d23-exclusive-hercules-pins/",
+          "locator": "Opening film-history paragraph describes the Muses as the traditional Greek chorus using gospel music."
+        },
+        {
+          "url": "https://d23.com/a-to-z/hercules-film/",
+          "locator": "Second synopsis paragraph explicitly identifies Pain and Panic as Hades’ two sidekicks; cast separately credits Charlton Heston as opening narrator."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Original broad narrators wording failed to distinguish Charlton Heston’s opening narration. Final wording asks for the musical Greek chorus, the precise function attributed to the Muses; none of the other groups supplies that chorus."
+    },
+    "options": [
+      {
+        "answer": "The Muses",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The Muses are explicitly identified as the musical Greek chorus.",
+        "sources": [
+          {
+            "url": "https://d23.com/theres-no-chance-no-way-you-can-miss-out-on-these-d23-exclusive-hercules-pins/",
+            "locator": "Opening film-history paragraph describes the Muses as the traditional Greek chorus using gospel music."
+          },
+          {
+            "url": "https://d23.com/a-to-z/hercules-film/",
+            "locator": "Second synopsis paragraph explicitly identifies Pain and Panic as Hades’ two sidekicks; cast separately credits Charlton Heston as opening narrator."
+          }
+        ]
+      },
+      {
+        "answer": "The Fates",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "The Fates are not the group identified as that chorus.",
+        "sources": [
+          {
+            "url": "https://d23.com/theres-no-chance-no-way-you-can-miss-out-on-these-d23-exclusive-hercules-pins/",
+            "locator": "Opening film-history paragraph describes the Muses as the traditional Greek chorus using gospel music."
+          },
+          {
+            "url": "https://d23.com/a-to-z/hercules-film/",
+            "locator": "Second synopsis paragraph explicitly identifies Pain and Panic as Hades’ two sidekicks; cast separately credits Charlton Heston as opening narrator."
+          }
+        ]
+      },
+      {
+        "answer": "The Olympians",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "The Olympians are not the named musical chorus.",
+        "sources": [
+          {
+            "url": "https://d23.com/theres-no-chance-no-way-you-can-miss-out-on-these-d23-exclusive-hercules-pins/",
+            "locator": "Opening film-history paragraph describes the Muses as the traditional Greek chorus using gospel music."
+          },
+          {
+            "url": "https://d23.com/a-to-z/hercules-film/",
+            "locator": "Second synopsis paragraph explicitly identifies Pain and Panic as Hades’ two sidekicks; cast separately credits Charlton Heston as opening narrator."
+          }
+        ]
+      },
+      {
+        "answer": "The Nymphs",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "The Nymphs are not the named musical chorus.",
+        "sources": [
+          {
+            "url": "https://d23.com/theres-no-chance-no-way-you-can-miss-out-on-these-d23-exclusive-hercules-pins/",
+            "locator": "Opening film-history paragraph describes the Muses as the traditional Greek chorus using gospel music."
+          },
+          {
+            "url": "https://d23.com/a-to-z/hercules-film/",
+            "locator": "Second synopsis paragraph explicitly identifies Pain and Panic as Hades’ two sidekicks; cast separately credits Charlton Heston as opening narrator."
+          }
+        ]
+      }
+    ]
+  }
+}

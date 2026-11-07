@@ -1,0 +1,80 @@
+{
+  "questionId": 42,
+  "hash": "89235bb7b68d2b133d1fdf2ecc0b2039caf55d90b776ad7ec00b022c0a4ecb5f",
+  "questionSnapshot": {
+    "id": 42,
+    "question": "In The Jungle Book, what is the name of the villainous tiger?",
+    "answers": [
+      "Shere Khan",
+      "King Louie",
+      "Kaa",
+      "Bagheera"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Four in-film jungle animals, only one a tiger. Medium. #2094 concerns which antagonist returns seeking revenge in the 2003 sequel; Kaa is also an original antagonist, so original tiger identity alone does not establish the sequel event.",
+  "verification": {
+    "context": "The Jungle Book, Disney animated 1967 film.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Shere Khan",
+        "verdict": "correct",
+        "reason": "Shere Khan is identified as the cunning tiger.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-jungle-book-1967",
+            "locator": "Synopsis: Shere Khan the tiger, King Louie the orangutan, Kaa the snake, Bagheera the panther."
+          }
+        ]
+      },
+      {
+        "answer": "King Louie",
+        "verdict": "incorrect",
+        "reason": "King Louie is the orangutan.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-jungle-book-1967",
+            "locator": "Synopsis: Shere Khan the tiger, King Louie the orangutan, Kaa the snake, Bagheera the panther."
+          }
+        ]
+      },
+      {
+        "answer": "Kaa",
+        "verdict": "incorrect",
+        "reason": "Kaa is the snake.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-jungle-book-1967",
+            "locator": "Synopsis: Shere Khan the tiger, King Louie the orangutan, Kaa the snake, Bagheera the panther."
+          }
+        ]
+      },
+      {
+        "answer": "Bagheera",
+        "verdict": "incorrect",
+        "reason": "Bagheera is the protective panther.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-jungle-book-1967",
+            "locator": "Synopsis: Shere Khan the tiger, King Louie the orangutan, Kaa the snake, Bagheera the panther."
+          }
+        ]
+      }
+    ]
+  }
+}

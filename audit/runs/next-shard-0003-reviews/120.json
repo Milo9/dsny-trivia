@@ -1,0 +1,181 @@
+{
+  "schema": 2,
+  "questionId": 120,
+  "hash": "65e7d3ce6f8c495e8657d66cd9ccba6a297d60a6abbfecb27a819c2f635b325e",
+  "questionSnapshot": {
+    "id": 120,
+    "question": "What is the name of the famous mouse character Walt Disney created?",
+    "answers": [
+      "Mickey Mouse",
+      "Stuart Little",
+      "Danger Mouse",
+      "Jerry Mouse"
+    ],
+    "difficulty": "easy",
+    "category": "walt"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Challenged attribution rather than merely mouse identity: all four are mice, but the alternative creators are White, Cosgrove/Hall and Hanna/Barbera. No TV-show facts are being tested.",
+  "verification": {
+    "context": "What is the name of the famous mouse character Walt Disney created?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Disney's primary mouse character; Walt and Ub Iwerks collaborated on his creation.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/mickey-mouse/",
+          "locator": "Opening paragraphs: Walt's primary cartoon character; naming legend about Mortimer, Lillian and Mickey; collaboration with Ub Iwerks."
+        },
+        {
+          "url": "https://search.worldcat.org/title/305785",
+          "locator": "First-edition 1945 Stuart Little catalog record: E. B. White author, Garth Williams illustrator, Harper & Brothers publisher."
+        },
+        {
+          "url": "https://www.cosgrovehallfilmsarchive.co.uk/aboutcosgrovehall",
+          "locator": "Studio origins and Danger Mouse paragraphs: Cosgrove/Hall founders and their studio's creation."
+        },
+        {
+          "url": "https://www.televisionacademy.com/features/news/news/mark-hall-acclaimed-british-animator",
+          "locator": "Opening and career paragraphs attribute Danger Mouse to Mark Hall and Brian Cosgrove."
+        },
+        {
+          "url": "https://interviews.televisionacademy.com/shows/tom-and-jerry",
+          "locator": "Joseph Barbera interview catalog, 09:36 segment: partnership with William Hanna and creation of Tom and Jerry."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged attribution rather than merely mouse identity: all four are mice, but the alternative creators are White, Cosgrove/Hall and Hanna/Barbera. No TV-show facts are being tested."
+    },
+    "options": [
+      {
+        "answer": "Mickey Mouse",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Disney's primary mouse character; Walt and Ub Iwerks collaborated on his creation.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/mickey-mouse/",
+            "locator": "Opening paragraphs: Walt's primary cartoon character; naming legend about Mortimer, Lillian and Mickey; collaboration with Ub Iwerks."
+          },
+          {
+            "url": "https://search.worldcat.org/title/305785",
+            "locator": "First-edition 1945 Stuart Little catalog record: E. B. White author, Garth Williams illustrator, Harper & Brothers publisher."
+          },
+          {
+            "url": "https://www.cosgrovehallfilmsarchive.co.uk/aboutcosgrovehall",
+            "locator": "Studio origins and Danger Mouse paragraphs: Cosgrove/Hall founders and their studio's creation."
+          },
+          {
+            "url": "https://www.televisionacademy.com/features/news/news/mark-hall-acclaimed-british-animator",
+            "locator": "Opening and career paragraphs attribute Danger Mouse to Mark Hall and Brian Cosgrove."
+          },
+          {
+            "url": "https://interviews.televisionacademy.com/shows/tom-and-jerry",
+            "locator": "Joseph Barbera interview catalog, 09:36 segment: partnership with William Hanna and creation of Tom and Jerry."
+          }
+        ]
+      },
+      {
+        "answer": "Stuart Little",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "E. B. White's literary character, not Walt's creation.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/mickey-mouse/",
+            "locator": "Opening paragraphs: Walt's primary cartoon character; naming legend about Mortimer, Lillian and Mickey; collaboration with Ub Iwerks."
+          },
+          {
+            "url": "https://search.worldcat.org/title/305785",
+            "locator": "First-edition 1945 Stuart Little catalog record: E. B. White author, Garth Williams illustrator, Harper & Brothers publisher."
+          },
+          {
+            "url": "https://www.cosgrovehallfilmsarchive.co.uk/aboutcosgrovehall",
+            "locator": "Studio origins and Danger Mouse paragraphs: Cosgrove/Hall founders and their studio's creation."
+          },
+          {
+            "url": "https://www.televisionacademy.com/features/news/news/mark-hall-acclaimed-british-animator",
+            "locator": "Opening and career paragraphs attribute Danger Mouse to Mark Hall and Brian Cosgrove."
+          },
+          {
+            "url": "https://interviews.televisionacademy.com/shows/tom-and-jerry",
+            "locator": "Joseph Barbera interview catalog, 09:36 segment: partnership with William Hanna and creation of Tom and Jerry."
+          }
+        ]
+      },
+      {
+        "answer": "Danger Mouse",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Cosgrove and Hall creation from a different studio.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/mickey-mouse/",
+            "locator": "Opening paragraphs: Walt's primary cartoon character; naming legend about Mortimer, Lillian and Mickey; collaboration with Ub Iwerks."
+          },
+          {
+            "url": "https://search.worldcat.org/title/305785",
+            "locator": "First-edition 1945 Stuart Little catalog record: E. B. White author, Garth Williams illustrator, Harper & Brothers publisher."
+          },
+          {
+            "url": "https://www.cosgrovehallfilmsarchive.co.uk/aboutcosgrovehall",
+            "locator": "Studio origins and Danger Mouse paragraphs: Cosgrove/Hall founders and their studio's creation."
+          },
+          {
+            "url": "https://www.televisionacademy.com/features/news/news/mark-hall-acclaimed-british-animator",
+            "locator": "Opening and career paragraphs attribute Danger Mouse to Mark Hall and Brian Cosgrove."
+          },
+          {
+            "url": "https://interviews.televisionacademy.com/shows/tom-and-jerry",
+            "locator": "Joseph Barbera interview catalog, 09:36 segment: partnership with William Hanna and creation of Tom and Jerry."
+          }
+        ]
+      },
+      {
+        "answer": "Jerry Mouse",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Hanna and Barbera creation, not Walt Disney's mouse.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/mickey-mouse/",
+            "locator": "Opening paragraphs: Walt's primary cartoon character; naming legend about Mortimer, Lillian and Mickey; collaboration with Ub Iwerks."
+          },
+          {
+            "url": "https://search.worldcat.org/title/305785",
+            "locator": "First-edition 1945 Stuart Little catalog record: E. B. White author, Garth Williams illustrator, Harper & Brothers publisher."
+          },
+          {
+            "url": "https://www.cosgrovehallfilmsarchive.co.uk/aboutcosgrovehall",
+            "locator": "Studio origins and Danger Mouse paragraphs: Cosgrove/Hall founders and their studio's creation."
+          },
+          {
+            "url": "https://www.televisionacademy.com/features/news/news/mark-hall-acclaimed-british-animator",
+            "locator": "Opening and career paragraphs attribute Danger Mouse to Mark Hall and Brian Cosgrove."
+          },
+          {
+            "url": "https://interviews.televisionacademy.com/shows/tom-and-jerry",
+            "locator": "Joseph Barbera interview catalog, 09:36 segment: partnership with William Hanna and creation of Tom and Jerry."
+          }
+        ]
+      }
+    ]
+  }
+}

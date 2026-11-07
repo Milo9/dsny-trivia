@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 177,
+  "hash": "f817e831087db417a57facf99fce1531242a272704ed3fd3b2fdb2a6d2745247",
+  "questionSnapshot": {
+    "id": 177,
+    "question": "In Up, what is the name of the elderly man who floats his house with balloons?",
+    "answers": [
+      "Carl Fredricksen",
+      "Charles Muntz",
+      "Russell Fredricksen",
+      "Ed Asner"
+    ],
+    "difficulty": "easy",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged Muntz as another elderly man, Russell as a passenger, and Asner as the voice performer: question asks the character who owns and flies the house. Pixar names Carl Fredricksen and distinguishes the other characters.",
+  "verification": {
+    "context": "In Up, what is the name of the elderly man who floats his house with balloons?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Profile explicitly names Carl Fredricksen as the balloon-house adventurer.",
+      "sources": [
+        {
+          "url": "https://www.pixar.com/upfilm",
+          "locator": "A Dream of Adventure and Carl Fredricksen / Russell / Kevin / Dug / Charles F. Muntz profiles: balloon-house owner, explorer child, bird, dog and childhood hero are distinguished."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged Muntz as another elderly man, Russell as a passenger, and Asner as the voice performer: question asks the character who owns and flies the house. Pixar names Carl Fredricksen and distinguishes the other characters."
+    },
+    "options": [
+      {
+        "answer": "Carl Fredricksen",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Profile explicitly names Carl Fredricksen as the balloon-house adventurer.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/upfilm",
+            "locator": "A Dream of Adventure and Carl Fredricksen / Russell / Kevin / Dug / Charles F. Muntz profiles: balloon-house owner, explorer child, bird, dog and childhood hero are distinguished."
+          }
+        ]
+      },
+      {
+        "answer": "Charles Muntz",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different character: the famous explorer Muntz.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/upfilm",
+            "locator": "A Dream of Adventure and Carl Fredricksen / Russell / Kevin / Dug / Charles F. Muntz profiles: balloon-house owner, explorer child, bird, dog and childhood hero are distinguished."
+          }
+        ]
+      },
+      {
+        "answer": "Russell Fredricksen",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Russell is the child stowaway; not the named elderly house owner.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/upfilm",
+            "locator": "A Dream of Adventure and Carl Fredricksen / Russell / Kevin / Dug / Charles F. Muntz profiles: balloon-house owner, explorer child, bird, dog and childhood hero are distinguished."
+          }
+        ]
+      },
+      {
+        "answer": "Ed Asner",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the character named as the house owner in the profile.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/upfilm",
+            "locator": "A Dream of Adventure and Carl Fredricksen / Russell / Kevin / Dug / Charles F. Muntz profiles: balloon-house owner, explorer child, bird, dog and childhood hero are distinguished."
+          }
+        ]
+      }
+    ]
+  }
+}

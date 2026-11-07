@@ -1,0 +1,107 @@
+[
+  {
+    "retiredId": 697,
+    "replacedBy": 438,
+    "reason": "The vague signature/global-hit item has no unique criterion. Its intended Elsa/Let It Go identification repeats q438; a precise scene rewrite would repeat that same song-character link.",
+    "questions": [
+      {
+        "id": 697,
+        "question": "What is the signature song from Frozen that became a global hit?",
+        "answers": [
+          "Let It Go",
+          "Do You Want to Build a Snowman?",
+          "Love Is an Open Door",
+          "For the First Time in Forever"
+        ],
+        "difficulty": "easy",
+        "category": "music",
+        "replacedBy": 438
+      },
+      {
+        "id": 438,
+        "question": "Which character sings 'Let It Go' in Frozen?",
+        "answers": [
+          "Elsa",
+          "Anna",
+          "Kristoff",
+          "Olaf"
+        ],
+        "difficulty": "easy",
+        "category": "music"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "evidence": "Full music topic digest, complete matching film digest, cross-bank search; final four-option comparison."
+  },
+  {
+    "retiredId": 710,
+    "replacedBy": 1383,
+    "reason": "Inverse identification of Be Prepared with The Lion King and its villain; retained item provides the more specific hyena-takeover context.",
+    "questions": [
+      {
+        "id": 710,
+        "question": "What is the name of the villain's song in The Lion King?",
+        "answers": [
+          "Be Prepared",
+          "Hakuna Matata",
+          "Circle of Life",
+          "The Hyenas' Song"
+        ],
+        "difficulty": "medium",
+        "category": "music",
+        "replacedBy": 1383
+      },
+      {
+        "id": 1383,
+        "question": "Which Disney film features the villain song 'Be Prepared,' in which the villain rallies hyenas for a royal takeover?",
+        "answers": [
+          "The Lion King",
+          "Hercules",
+          "Aladdin",
+          "The Hunchback of Notre Dame"
+        ],
+        "difficulty": "easy",
+        "category": "music"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "evidence": "Full music topic digest, complete matching film digest, cross-bank search; final four-option comparison."
+  },
+  {
+    "retiredId": 717,
+    "replacedBy": 169,
+    "reason": "Both test the Pinocchio song's original-song Oscar. q169 already names the song and film and adds the precise ceremony year; no new fact in q717.",
+    "questions": [
+      {
+        "id": 717,
+        "question": "What Disney song won the Academy Award for Best Original Song for the first time, from the 1940 film Pinocchio?",
+        "answers": [
+          "When You Wish Upon a Star",
+          "Give a Little Whistle",
+          "Hi-Diddle-Dee-Dee",
+          "I've Got No Strings"
+        ],
+        "difficulty": "hard",
+        "category": "music",
+        "replacedBy": 169
+      },
+      {
+        "id": 169,
+        "question": "At which year's Academy Awards ceremony did 'When You Wish Upon a Star' from Pinocchio win Best Original Song?",
+        "answers": [
+          "1941",
+          "1940",
+          "1942",
+          "1945"
+        ],
+        "difficulty": "hard",
+        "category": "music"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "evidence": "Full music topic digest, complete matching film digest, cross-bank search; final four-option comparison."
+  }
+]

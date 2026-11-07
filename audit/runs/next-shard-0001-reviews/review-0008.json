@@ -1,0 +1,80 @@
+{
+  "questionId": 8,
+  "hash": "4b32ba5be5da2df92ddb0ac95c2ccf997d3b0f5e10d4c11ab6e3c5b3ca7cee5d",
+  "questionSnapshot": {
+    "id": 8,
+    "question": "What is the name of the toy cowboy in Toy Story?",
+    "answers": [
+      "Woody",
+      "Buzz",
+      "Rex",
+      "Hamm"
+    ],
+    "difficulty": "easy",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "All four are toys in Andy's room, with parallel short names. Correct Pixar category, easy. Other toy identity questions identify Buzz, Rex or Hamm, not Woody's cowboy role.",
+  "verification": {
+    "context": "Toy Story, original Pixar 1995 film.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Woody",
+        "verdict": "correct",
+        "reason": "Woody is the cowboy toy, with pull-string and cowboy detailing.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/toy-story",
+            "locator": "The Characters: Woody is the cowboy, Buzz the space ranger, Hamm the piggy bank, Rex the plastic dinosaur."
+          }
+        ]
+      },
+      {
+        "answer": "Buzz",
+        "verdict": "incorrect",
+        "reason": "Buzz is a space ranger action figure.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/toy-story",
+            "locator": "The Characters: Woody is the cowboy, Buzz the space ranger, Hamm the piggy bank, Rex the plastic dinosaur."
+          }
+        ]
+      },
+      {
+        "answer": "Rex",
+        "verdict": "incorrect",
+        "reason": "Rex is the plastic Tyrannosaurus.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/toy-story",
+            "locator": "The Characters: Woody is the cowboy, Buzz the space ranger, Hamm the piggy bank, Rex the plastic dinosaur."
+          }
+        ]
+      },
+      {
+        "answer": "Hamm",
+        "verdict": "incorrect",
+        "reason": "Hamm is a piggy bank.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/toy-story",
+            "locator": "The Characters: Woody is the cowboy, Buzz the space ranger, Hamm the piggy bank, Rex the plastic dinosaur."
+          }
+        ]
+      }
+    ]
+  }
+}

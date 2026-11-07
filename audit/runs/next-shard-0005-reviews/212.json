@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 212,
+  "hash": "8a097f420e4187750b3e7bc9293e040a8966157cd02651badef0f09214cee546",
+  "questionSnapshot": {
+    "id": 212,
+    "question": "What is the name of Moana's pet pig?",
+    "answers": [
+      "Pua",
+      "Hei Hei",
+      "Tala",
+      "Sina"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Tested all three other cast names against their explicit roles, rather than simply matching Pua. This asks identity, not whether he joins the original ocean journey.",
+  "verification": {
+    "context": "What is the name of Moana's pet pig?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Disney explicitly identifies Pua as Moana’s pig sidekick.",
+      "sources": [
+        {
+          "url": "https://thewaltdisneycompany.com/news/world-princess-week-2025/",
+          "locator": "Enjoy the Magic with New Content for Disney Princess Fans: animal-specialist video introduction expressly identifies Pua as the pig from Moana."
+        },
+        {
+          "url": "https://d23.com/news-briefs-july-27-2016/",
+          "locator": "Huge Moana News, character paragraph: Tui leads Motunui; Lalotai is the realm of monsters; Maui is a demigod, Tala grandmother, Sina mother, Heihei rooster."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tested all three other cast names against their explicit roles, rather than simply matching Pua. This asks identity, not whether he joins the original ocean journey."
+    },
+    "options": [
+      {
+        "answer": "Pua",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Disney explicitly identifies Pua as Moana’s pig sidekick.",
+        "sources": [
+          {
+            "url": "https://thewaltdisneycompany.com/news/world-princess-week-2025/",
+            "locator": "Enjoy the Magic with New Content for Disney Princess Fans: animal-specialist video introduction expressly identifies Pua as the pig from Moana."
+          },
+          {
+            "url": "https://d23.com/news-briefs-july-27-2016/",
+            "locator": "Huge Moana News, character paragraph: Tui leads Motunui; Lalotai is the realm of monsters; Maui is a demigod, Tala grandmother, Sina mother, Heihei rooster."
+          }
+        ]
+      },
+      {
+        "answer": "Hei Hei",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Heihei is the rooster, not the pig.",
+        "sources": [
+          {
+            "url": "https://thewaltdisneycompany.com/news/world-princess-week-2025/",
+            "locator": "Enjoy the Magic with New Content for Disney Princess Fans: animal-specialist video introduction expressly identifies Pua as the pig from Moana."
+          },
+          {
+            "url": "https://d23.com/news-briefs-july-27-2016/",
+            "locator": "Huge Moana News, character paragraph: Tui leads Motunui; Lalotai is the realm of monsters; Maui is a demigod, Tala grandmother, Sina mother, Heihei rooster."
+          }
+        ]
+      },
+      {
+        "answer": "Tala",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Tala is the grandmother, not the pig.",
+        "sources": [
+          {
+            "url": "https://thewaltdisneycompany.com/news/world-princess-week-2025/",
+            "locator": "Enjoy the Magic with New Content for Disney Princess Fans: animal-specialist video introduction expressly identifies Pua as the pig from Moana."
+          },
+          {
+            "url": "https://d23.com/news-briefs-july-27-2016/",
+            "locator": "Huge Moana News, character paragraph: Tui leads Motunui; Lalotai is the realm of monsters; Maui is a demigod, Tala grandmother, Sina mother, Heihei rooster."
+          }
+        ]
+      },
+      {
+        "answer": "Sina",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Sina is the mother, not the pig.",
+        "sources": [
+          {
+            "url": "https://thewaltdisneycompany.com/news/world-princess-week-2025/",
+            "locator": "Enjoy the Magic with New Content for Disney Princess Fans: animal-specialist video introduction expressly identifies Pua as the pig from Moana."
+          },
+          {
+            "url": "https://d23.com/news-briefs-july-27-2016/",
+            "locator": "Huge Moana News, character paragraph: Tui leads Motunui; Lalotai is the realm of monsters; Maui is a demigod, Tala grandmother, Sina mother, Heihei rooster."
+          }
+        ]
+      }
+    ]
+  }
+}

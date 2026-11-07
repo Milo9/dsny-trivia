@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 254,
+  "hash": "d5a9381814c9fee0406f362a365bdbd42e7e4d34c84da704d029da92f16ad5bc",
+  "questionSnapshot": {
+    "id": 254,
+    "question": "In The Rescuers Down Under (1990), what kind of animal is Marahute?",
+    "answers": [
+      "An eagle",
+      "A kangaroo",
+      "A parrot",
+      "A crocodile"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Removed asymmetrical named answer and rarity/golden-species assertion. Final question identifies one named animal, not every creature Cody might help. Pepita eagle parts in q2438 are a separate Coco design fact.",
+  "verification": {
+    "context": "In The Rescuers Down Under (1990), what kind of animal is Marahute?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Marahute is explicitly an eagle.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/rescuers-down-under-the-film/",
+          "locator": "Opening: Cody frees eagle Marahute; sequel dated November 16, 1990. Final question tests eagle identity without an uncorroborated zoological rarity claim."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Removed asymmetrical named answer and rarity/golden-species assertion. Final question identifies one named animal, not every creature Cody might help. Pepita eagle parts in q2438 are a separate Coco design fact."
+    },
+    "options": [
+      {
+        "answer": "An eagle",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Marahute is explicitly an eagle.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/rescuers-down-under-the-film/",
+            "locator": "Opening: Cody frees eagle Marahute; sequel dated November 16, 1990. Final question tests eagle identity without an uncorroborated zoological rarity claim."
+          }
+        ]
+      },
+      {
+        "answer": "A kangaroo",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Kangaroo is a different animal from the named eagle.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/rescuers-down-under-the-film/",
+            "locator": "Opening: Cody frees eagle Marahute; sequel dated November 16, 1990. Final question tests eagle identity without an uncorroborated zoological rarity claim."
+          }
+        ]
+      },
+      {
+        "answer": "A parrot",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "A parrot is a different kind of bird from an eagle.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/rescuers-down-under-the-film/",
+            "locator": "Opening: Cody frees eagle Marahute; sequel dated November 16, 1990. Final question tests eagle identity without an uncorroborated zoological rarity claim."
+          }
+        ]
+      },
+      {
+        "answer": "A crocodile",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Crocodile is a reptile, not the named eagle.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/rescuers-down-under-the-film/",
+            "locator": "Opening: Cody frees eagle Marahute; sequel dated November 16, 1990. Final question tests eagle identity without an uncorroborated zoological rarity claim."
+          }
+        ]
+      }
+    ]
+  }
+}

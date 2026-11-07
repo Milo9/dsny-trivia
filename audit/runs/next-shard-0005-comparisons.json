@@ -1,0 +1,299 @@
+[
+  {
+    "findingId": "duplicate-0c638f051c7dd21527c9",
+    "questions": [
+      {
+        "id": 232,
+        "question": "In Frozen, who is the ice harvester who helps Anna find Elsa?",
+        "answers": [
+          "Kristoff",
+          "Hans",
+          "The Duke of Weselton",
+          "Olaf"
+        ],
+        "difficulty": "easy",
+        "category": "movies"
+      },
+      {
+        "id": 2204,
+        "question": "In the short film Frozen Fever, who is left in charge of guarding Anna's party decorations while Elsa distracts her?",
+        "answers": [
+          "Kristoff",
+          "Olaf",
+          "Sven",
+          "the Duke of Weselton"
+        ],
+        "difficulty": "easy",
+        "category": "movies"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "Original-film ice-harvester/search companion identity versus the particular decoration-guard assignment in Frozen Fever. Knowing Kristoff’s trade does not establish the short’s party assignment."
+  },
+  {
+    "findingId": "duplicate-0ed794d81d165b213e88",
+    "questions": [
+      {
+        "id": 223,
+        "question": "In The Jungle Book, who is Mowgli's protective panther guardian?",
+        "answers": [
+          "Bagheera",
+          "Baloo",
+          "Shere Khan",
+          "King Louie"
+        ],
+        "difficulty": "easy",
+        "category": "movies"
+      },
+      {
+        "id": 2453,
+        "question": "In The Jungle Book 2, who does Baloo ask to protect young Ranjan while he rescues Mowgli and Shanti from Shere Khan?",
+        "answers": [
+          "Bagheera",
+          "Colonel Hathi",
+          "King Louie",
+          "Kaa"
+        ],
+        "difficulty": "medium",
+        "category": "characters"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "Bagheera as Mowgli’s original panther guardian versus Baloo’s assignment to protect Ranjan during a specific sequel rescue. Different child, film and event; knowing original guardian does not establish sequel assignment."
+  },
+  {
+    "findingId": "duplicate-2efcb399dd2cf7195c73",
+    "questions": [
+      {
+        "id": 225,
+        "question": "In Encanto, what special gift does Luisa possess?",
+        "answers": [
+          "Super strength",
+          "Growing flowers",
+          "Healing powers",
+          "Shape-shifting"
+        ],
+        "difficulty": "easy",
+        "category": "movies"
+      },
+      {
+        "id": 634,
+        "question": "In The Incredibles, what is Mr. Incredible's superpower?",
+        "answers": [
+          "Super strength",
+          "Invisibility",
+          "Super speed",
+          "Time travel"
+        ],
+        "difficulty": "easy",
+        "category": "pixar"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "Different characters in different films. Luisa and Mr. Incredible both having strength does not establish either character’s power from the other."
+  },
+  {
+    "findingId": "duplicate-5062375a15484f028eb1",
+    "questions": [
+      {
+        "id": 217,
+        "question": "What is the name of the main character in The Hunchback of Notre Dame?",
+        "answers": [
+          "Quasimodo",
+          "Frollo",
+          "Phoebus",
+          "Clopin"
+        ],
+        "difficulty": "easy",
+        "category": "movies"
+      },
+      {
+        "id": 725,
+        "question": "Who composed the score for The Hunchback of Notre Dame?",
+        "answers": [
+          "Alan Menken",
+          "Stephen Schwartz",
+          "Howard Ashman",
+          "Tim Rice"
+        ],
+        "difficulty": "hard",
+        "category": "music"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "Quasimodo is the fictional protagonist; Alan Menken is the score composer. Separate character and production facts."
+  },
+  {
+    "findingId": "duplicate-8944a3137e3e576d1aa9",
+    "questions": [
+      {
+        "id": 226,
+        "question": "In 101 Dalmatians, who is the main villain who wants the puppies for their fur?",
+        "answers": [
+          "Cruella de Vil",
+          "Lady Tremaine",
+          "Maleficent",
+          "Ursula"
+        ],
+        "difficulty": "easy",
+        "category": "movies"
+      },
+      {
+        "id": 999,
+        "question": "In which Disney film does the song Cruella de Vil appear?",
+        "answers": [
+          "101 Dalmatians",
+          "The Aristocats",
+          "The Rescuers",
+          "Oliver & Company"
+        ],
+        "difficulty": "easy",
+        "category": "music"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "Identifying Cruella as puppy-fur villain does not establish that a song named for her is actually in the film. Character role versus song-film association; retain both."
+  },
+  {
+    "findingId": "duplicate-8efeafdda56c18f2956c",
+    "questions": [
+      {
+        "id": 245,
+        "question": "In The Princess and the Frog, what is the name of the firefly who is in love with a star?",
+        "answers": [
+          "Ray",
+          "Louis",
+          "Charlotte",
+          "James"
+        ],
+        "difficulty": "medium",
+        "category": "movies"
+      },
+      {
+        "id": 1049,
+        "question": "In Finding Nemo, who teaches Nemo's school class?",
+        "answers": [
+          "Mr. Ray",
+          "Gill",
+          "Nigel",
+          "Crush"
+        ],
+        "difficulty": "easy",
+        "category": "pixar"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "Ray is a Cajun firefly in Princess and the Frog; Mr. Ray is Nemo’s teacher in another film. Shared partial name does not connect the facts."
+  },
+  {
+    "findingId": "duplicate-a566eb8797662d119148",
+    "questions": [
+      {
+        "id": 217,
+        "question": "What is the name of the main character in The Hunchback of Notre Dame?",
+        "answers": [
+          "Quasimodo",
+          "Frollo",
+          "Phoebus",
+          "Clopin"
+        ],
+        "difficulty": "easy",
+        "category": "movies"
+      },
+      {
+        "id": 1075,
+        "question": "In the 1996 film about Quasimodo, what Paris cathedral is his home?",
+        "answers": [
+          "Notre Dame",
+          "Chartres Cathedral",
+          "Saint Paul's",
+          "Sacre-Coeur"
+        ],
+        "difficulty": "easy",
+        "category": "movies"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "Character identity versus the specific cathedral where he lives. The title is context in the protagonist question; the home relationship is the tested fact in 1075. Quasimodo as a name alone does not identify a cathedral."
+  },
+  {
+    "findingId": "duplicate-d197ab45b97477a9a03d",
+    "questions": [
+      {
+        "id": 84,
+        "question": "In Atlantis: The Lost Empire, what is the name of the young linguist and cartographer?",
+        "answers": [
+          "Milo Thatch",
+          "Lewis Robinson",
+          "Wilbur Robinson",
+          "Pleakley"
+        ],
+        "difficulty": "medium",
+        "category": "characters"
+      },
+      {
+        "id": 249,
+        "question": "In the 2001 animated film starring Milo Thatch, which lost civilization does his expedition seek?",
+        "answers": [
+          "Atlantis",
+          "El Dorado",
+          "Avalon",
+          "Shangri-La"
+        ],
+        "difficulty": "easy",
+        "category": "movies"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "Milo’s linguist/cartographer identity versus his expedition’s destination. The destination question omits its giveaway film title; these are separate person and geography facts."
+  },
+  {
+    "findingId": "duplicate-e48c2564c5a6d3f92dbb",
+    "questions": [
+      {
+        "id": 239,
+        "question": "In The Nightmare Before Christmas, what is the name of Jack Skellington's ghost dog?",
+        "answers": [
+          "Zero",
+          "Ghost",
+          "Boo",
+          "Bones"
+        ],
+        "difficulty": "medium",
+        "category": "movies"
+      },
+      {
+        "id": 262,
+        "question": "In The Nightmare Before Christmas, what is the name of Jack Skellington's ragdoll love interest?",
+        "answers": [
+          "Sally",
+          "Shock",
+          "Oogie",
+          "Lock"
+        ],
+        "difficulty": "medium",
+        "category": "movies"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "Zero is the ghost dog; Sally is the ragdoll love interest. Same Jack framing but different characters and roles."
+  }
+]

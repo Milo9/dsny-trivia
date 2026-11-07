@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 239,
+  "hash": "abe646cd98e9cac9057b7a84890ff6d0c5408fb3f7847203659322b56cf1e6ff",
+  "questionSnapshot": {
+    "id": 239,
+    "question": "In The Nightmare Before Christmas, what is the name of Jack Skellington's ghost dog?",
+    "answers": [
+      "Zero",
+      "Ghost",
+      "Boo",
+      "Bones"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Ghost describes the dog but the question asks his name. Sally in q262 is a ragdoll romantic partner, a wholly different identity from Zero.",
+  "verification": {
+    "context": "In The Nightmare Before Christmas, what is the name of Jack Skellington's ghost dog?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "D23 explicitly calls Zero Jack’s ghost dog; film-still doghouse label corroborates name.",
+      "sources": [
+        {
+          "url": "https://d23.com/the-purrfect-disney-halloween-pet-costumes/",
+          "locator": "Dogs / Tim Burton’s The Nightmare Before Christmas: expressly calls Zero Jack Skellington’s beloved ghost dog; accompanying film still labels doghouse Zero."
+        },
+        {
+          "url": "https://d23.com/a-to-z/nightmare-before-christmas-the-film/",
+          "locator": "Opening identifies Jack as Pumpkin King of Halloweentown and separates his later Christmastown takeover; Sally is the ragdoll love interest."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Ghost describes the dog but the question asks his name. Sally in q262 is a ragdoll romantic partner, a wholly different identity from Zero."
+    },
+    "options": [
+      {
+        "answer": "Zero",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "D23 explicitly calls Zero Jack’s ghost dog; film-still doghouse label corroborates name.",
+        "sources": [
+          {
+            "url": "https://d23.com/the-purrfect-disney-halloween-pet-costumes/",
+            "locator": "Dogs / Tim Burton’s The Nightmare Before Christmas: expressly calls Zero Jack Skellington’s beloved ghost dog; accompanying film still labels doghouse Zero."
+          },
+          {
+            "url": "https://d23.com/a-to-z/nightmare-before-christmas-the-film/",
+            "locator": "Opening identifies Jack as Pumpkin King of Halloweentown and separates his later Christmastown takeover; Sally is the ragdoll love interest."
+          }
+        ]
+      },
+      {
+        "answer": "Ghost",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "A generic type description is not his proper name Zero.",
+        "sources": [
+          {
+            "url": "https://d23.com/the-purrfect-disney-halloween-pet-costumes/",
+            "locator": "Dogs / Tim Burton’s The Nightmare Before Christmas: expressly calls Zero Jack Skellington’s beloved ghost dog; accompanying film still labels doghouse Zero."
+          },
+          {
+            "url": "https://d23.com/a-to-z/nightmare-before-christmas-the-film/",
+            "locator": "Opening identifies Jack as Pumpkin King of Halloweentown and separates his later Christmastown takeover; Sally is the ragdoll love interest."
+          }
+        ]
+      },
+      {
+        "answer": "Boo",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "A different name from the explicitly named Zero.",
+        "sources": [
+          {
+            "url": "https://d23.com/the-purrfect-disney-halloween-pet-costumes/",
+            "locator": "Dogs / Tim Burton’s The Nightmare Before Christmas: expressly calls Zero Jack Skellington’s beloved ghost dog; accompanying film still labels doghouse Zero."
+          },
+          {
+            "url": "https://d23.com/a-to-z/nightmare-before-christmas-the-film/",
+            "locator": "Opening identifies Jack as Pumpkin King of Halloweentown and separates his later Christmastown takeover; Sally is the ragdoll love interest."
+          }
+        ]
+      },
+      {
+        "answer": "Bones",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "A different name from the explicitly named Zero.",
+        "sources": [
+          {
+            "url": "https://d23.com/the-purrfect-disney-halloween-pet-costumes/",
+            "locator": "Dogs / Tim Burton’s The Nightmare Before Christmas: expressly calls Zero Jack Skellington’s beloved ghost dog; accompanying film still labels doghouse Zero."
+          },
+          {
+            "url": "https://d23.com/a-to-z/nightmare-before-christmas-the-film/",
+            "locator": "Opening identifies Jack as Pumpkin King of Halloweentown and separates his later Christmastown takeover; Sally is the ragdoll love interest."
+          }
+        ]
+      }
+    ]
+  }
+}

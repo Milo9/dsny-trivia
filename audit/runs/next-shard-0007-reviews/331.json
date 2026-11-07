@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 331,
+  "hash": "5725564e639b7df58acc4f622571ecfabaff416f60dbe5cbb1925fde09ed98f3",
+  "questionSnapshot": {
+    "id": 331,
+    "question": "What are the names of the three hitchhiking ghosts in the Haunted Mansion attraction?",
+    "answers": [
+      "Gus, Ezra, and Phineas",
+      "Gus, Ezra, and the Hatbox Ghost",
+      "Ezra, Phineas, and Master Gracey",
+      "Gus, Phineas, and the Ghost Host"
+    ],
+    "difficulty": "hard",
+    "category": "characters"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Distinguished the attraction from the film cast and from other mansion ghosts. The complete primary trio list excludes each substituted character even if that character also haunts the Mansion. Short names legitimately match full names Ezra Beane and Professor Phineas Plump. Changed implausible invented groups into plausible overlapping sets; hard group-name recall fits. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+  "verification": {
+    "context": "What are the names of the three hitchhiking ghosts in the Haunted Mansion attraction? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Gus, Ezra and Phineas are the complete hitchhiking trio; order does not matter. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+      "sources": [
+        {
+          "url": "https://disneyparksblog.com/disney-experiences/new-disney-haunted-mansion-wallpapers-featuring-hitchhiking-ghosts/",
+          "locator": "Paragraph beneath Hitchhiking Ghosts Wallpaper 2023 names the complete trio Ezra Beane, Professor Phineas Plump and Gus"
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Distinguished the attraction from the film cast and from other mansion ghosts. The complete primary trio list excludes each substituted character even if that character also haunts the Mansion. Short names legitimately match full names Ezra Beane and Professor Phineas Plump. Changed implausible invented groups into plausible overlapping sets; hard group-name recall fits."
+    },
+    "options": [
+      {
+        "answer": "Gus, Ezra, and Phineas",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Gus, Ezra and Phineas are the complete hitchhiking trio; order does not matter.",
+        "sources": [
+          {
+            "url": "https://disneyparksblog.com/disney-experiences/new-disney-haunted-mansion-wallpapers-featuring-hitchhiking-ghosts/",
+            "locator": "Paragraph beneath Hitchhiking Ghosts Wallpaper 2023 names the complete trio Ezra Beane, Professor Phineas Plump and Gus"
+          }
+        ]
+      },
+      {
+        "answer": "Gus, Ezra, and the Hatbox Ghost",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "The Hatbox Ghost replaces Phineas and is not in the listed hitchhiking trio.",
+        "sources": [
+          {
+            "url": "https://disneyparksblog.com/disney-experiences/new-disney-haunted-mansion-wallpapers-featuring-hitchhiking-ghosts/",
+            "locator": "Paragraph beneath Hitchhiking Ghosts Wallpaper 2023 names the complete trio Ezra Beane, Professor Phineas Plump and Gus"
+          }
+        ]
+      },
+      {
+        "answer": "Ezra, Phineas, and Master Gracey",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Master Gracey replaces Gus and is not in the listed hitchhiking trio.",
+        "sources": [
+          {
+            "url": "https://disneyparksblog.com/disney-experiences/new-disney-haunted-mansion-wallpapers-featuring-hitchhiking-ghosts/",
+            "locator": "Paragraph beneath Hitchhiking Ghosts Wallpaper 2023 names the complete trio Ezra Beane, Professor Phineas Plump and Gus"
+          }
+        ]
+      },
+      {
+        "answer": "Gus, Phineas, and the Ghost Host",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "The Ghost Host replaces Ezra and is not in the listed hitchhiking trio.",
+        "sources": [
+          {
+            "url": "https://disneyparksblog.com/disney-experiences/new-disney-haunted-mansion-wallpapers-featuring-hitchhiking-ghosts/",
+            "locator": "Paragraph beneath Hitchhiking Ghosts Wallpaper 2023 names the complete trio Ezra Beane, Professor Phineas Plump and Gus"
+          }
+        ]
+      }
+    ]
+  }
+}

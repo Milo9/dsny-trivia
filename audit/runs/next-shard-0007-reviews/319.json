@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 319,
+  "hash": "1d2aa3e0cd1ff5a7a67e1ddd24f8ed53c73cba5f3f138dadc09ceba6c6e27ba6",
+  "questionSnapshot": {
+    "id": 319,
+    "question": "In Wreck-It Ralph, what is King Candy's true identity?",
+    "answers": [
+      "Turbo, a racer from another game",
+      "A glitch in the Sugar Rush code",
+      "An escaped villain from Hero's Duty",
+      "A deleted character from Sugar Rush"
+    ],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Distinguished original identity from the later Cy-Bug/virus form and his manipulation of game code. Those events do not turn his true origin into the glitch distractor. The official villain subsection explicitly describes the outsider racer. Other Ralph questions ask games, Vanellope, hubs, and tools, not this reveal. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+  "verification": {
+    "context": "In Wreck-It Ralph, what is King Candy's true identity? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "King Candy is Turbo, originally from a different racing game. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+      "sources": [
+        {
+          "url": "https://d23.com/13-disney-characters-that-make-our-spines-tingle/",
+          "locator": "King Candy from Wreck-It Ralph subsection: former identity Turbo, classic racing-game origin, takeover of Sugar Rush"
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Distinguished original identity from the later Cy-Bug/virus form and his manipulation of game code. Those events do not turn his true origin into the glitch distractor. The official villain subsection explicitly describes the outsider racer. Other Ralph questions ask games, Vanellope, hubs, and tools, not this reveal."
+    },
+    "options": [
+      {
+        "answer": "Turbo, a racer from another game",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "King Candy is Turbo, originally from a different racing game.",
+        "sources": [
+          {
+            "url": "https://d23.com/13-disney-characters-that-make-our-spines-tingle/",
+            "locator": "King Candy from Wreck-It Ralph subsection: former identity Turbo, classic racing-game origin, takeover of Sugar Rush"
+          }
+        ]
+      },
+      {
+        "answer": "A glitch in the Sugar Rush code",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "His origin is the established racer Turbo, not an anonymous Sugar Rush glitch.",
+        "sources": [
+          {
+            "url": "https://d23.com/13-disney-characters-that-make-our-spines-tingle/",
+            "locator": "King Candy from Wreck-It Ralph subsection: former identity Turbo, classic racing-game origin, takeover of Sugar Rush"
+          }
+        ]
+      },
+      {
+        "answer": "An escaped villain from Hero's Duty",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "He originates in a classic racing game, not Hero's Duty.",
+        "sources": [
+          {
+            "url": "https://d23.com/13-disney-characters-that-make-our-spines-tingle/",
+            "locator": "King Candy from Wreck-It Ralph subsection: former identity Turbo, classic racing-game origin, takeover of Sugar Rush"
+          }
+        ]
+      },
+      {
+        "answer": "A deleted character from Sugar Rush",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "He took over Sugar Rush from outside; he was not originally a deleted Sugar Rush character.",
+        "sources": [
+          {
+            "url": "https://d23.com/13-disney-characters-that-make-our-spines-tingle/",
+            "locator": "King Candy from Wreck-It Ralph subsection: former identity Turbo, classic racing-game origin, takeover of Sugar Rush"
+          }
+        ]
+      }
+    ]
+  }
+}

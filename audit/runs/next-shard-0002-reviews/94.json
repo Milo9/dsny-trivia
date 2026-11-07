@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 94,
+  "hash": "25da1ac98fe6ca7287204b078f69dbc957b956f281a2e3110e5857c59fa5308d",
+  "questionSnapshot": {
+    "id": 94,
+    "question": "In which themed land of Magic Kingdom would you find Cinderella Castle?",
+    "answers": [
+      "Fantasyland",
+      "Adventureland",
+      "Tomorrowland",
+      "Liberty Square"
+    ],
+    "difficulty": "easy",
+    "category": "parks"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "q779 asks the small-world boat ride’s land, a different attraction-location fact. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "Walt Disney World, specified park/attraction; current naming/layout at review date.",
+    "timeSensitive": true,
+    "nextReviewAt": "2027-01-30",
+    "premise": {
+      "reason": "Disney locates the castle at the entrance/gateway to Fantasyland.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/cinderella-castle/",
+          "locator": "Opening sentence: castle at entrance to Fantasyland in Magic Kingdom Park; distinguishes Disneyland’s Sleeping Beauty Castle later in the same paragraph."
+        },
+        {
+          "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/cinderella-castle/",
+          "locator": "Page title and introduction identify Cinderella Castle as Magic Kingdom’s symbol; A Fairytale Come to Life locates its gateway at Fantasyland."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Read the official entrance/gateway location rather than guessing from the central hub’s proximity to several lands. Both official references identify Fantasyland; geographic nearness to other lands does not make their names correct."
+    },
+    "options": [
+      {
+        "answer": "Fantasyland",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Fantasyland is the land whose entrance the castle marks.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/cinderella-castle/",
+            "locator": "Opening sentence: castle at entrance to Fantasyland in Magic Kingdom Park; distinguishes Disneyland’s Sleeping Beauty Castle later in the same paragraph."
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/cinderella-castle/",
+            "locator": "Page title and introduction identify Cinderella Castle as Magic Kingdom’s symbol; A Fairytale Come to Life locates its gateway at Fantasyland."
+          }
+        ]
+      },
+      {
+        "answer": "Adventureland",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Adventureland is not the identified land.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/cinderella-castle/",
+            "locator": "Opening sentence: castle at entrance to Fantasyland in Magic Kingdom Park; distinguishes Disneyland’s Sleeping Beauty Castle later in the same paragraph."
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/cinderella-castle/",
+            "locator": "Page title and introduction identify Cinderella Castle as Magic Kingdom’s symbol; A Fairytale Come to Life locates its gateway at Fantasyland."
+          }
+        ]
+      },
+      {
+        "answer": "Tomorrowland",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Tomorrowland is not the identified land.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/cinderella-castle/",
+            "locator": "Opening sentence: castle at entrance to Fantasyland in Magic Kingdom Park; distinguishes Disneyland’s Sleeping Beauty Castle later in the same paragraph."
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/cinderella-castle/",
+            "locator": "Page title and introduction identify Cinderella Castle as Magic Kingdom’s symbol; A Fairytale Come to Life locates its gateway at Fantasyland."
+          }
+        ]
+      },
+      {
+        "answer": "Liberty Square",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Liberty Square is not the identified land.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/cinderella-castle/",
+            "locator": "Opening sentence: castle at entrance to Fantasyland in Magic Kingdom Park; distinguishes Disneyland’s Sleeping Beauty Castle later in the same paragraph."
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/cinderella-castle/",
+            "locator": "Page title and introduction identify Cinderella Castle as Magic Kingdom’s symbol; A Fairytale Come to Life locates its gateway at Fantasyland."
+          }
+        ]
+      }
+    ]
+  }
+}

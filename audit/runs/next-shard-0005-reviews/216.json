@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 216,
+  "hash": "820dedc810ffdd570c4e5d685e93603ff59b717a3615c118415600d0abf9cab5",
+  "questionSnapshot": {
+    "id": 216,
+    "question": "In The Nightmare Before Christmas, Jack Skellington is the Pumpkin King of a town devoted to which holiday?",
+    "answers": [
+      "Halloween",
+      "Christmas",
+      "Easter",
+      "Thanksgiving"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Original rule-a-holiday wording invited Christmas takeover readings. Final wording pins his Pumpkin King title and home town, ruling out Christmas as well as Easter and Thanksgiving.",
+  "verification": {
+    "context": "In The Nightmare Before Christmas, Jack Skellington is the Pumpkin King of a town devoted to which holiday?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Jack’s Pumpkin King title belongs to Halloweentown.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/nightmare-before-christmas-the-film/",
+          "locator": "Opening identifies Jack as Pumpkin King of Halloweentown and separates his later Christmastown takeover; Sally is the ragdoll love interest."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Original rule-a-holiday wording invited Christmas takeover readings. Final wording pins his Pumpkin King title and home town, ruling out Christmas as well as Easter and Thanksgiving."
+    },
+    "options": [
+      {
+        "answer": "Halloween",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Jack’s Pumpkin King title belongs to Halloweentown.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/nightmare-before-christmas-the-film/",
+            "locator": "Opening identifies Jack as Pumpkin King of Halloweentown and separates his later Christmastown takeover; Sally is the ragdoll love interest."
+          }
+        ]
+      },
+      {
+        "answer": "Christmas",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "A later attempted takeover, not the holiday of his own town.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/nightmare-before-christmas-the-film/",
+            "locator": "Opening identifies Jack as Pumpkin King of Halloweentown and separates his later Christmastown takeover; Sally is the ragdoll love interest."
+          }
+        ]
+      },
+      {
+        "answer": "Easter",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different holiday from that town’s name and purpose.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/nightmare-before-christmas-the-film/",
+            "locator": "Opening identifies Jack as Pumpkin King of Halloweentown and separates his later Christmastown takeover; Sally is the ragdoll love interest."
+          }
+        ]
+      },
+      {
+        "answer": "Thanksgiving",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different holiday from that town’s name and purpose.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/nightmare-before-christmas-the-film/",
+            "locator": "Opening identifies Jack as Pumpkin King of Halloweentown and separates his later Christmastown takeover; Sally is the ragdoll love interest."
+          }
+        ]
+      }
+    ]
+  }
+}

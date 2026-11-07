@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 122,
+  "hash": "ebef2649ecc41d0f29eb56954bee6c2810382b578ee5ddac41b9077ab012b881",
+  "questionSnapshot": {
+    "id": 122,
+    "question": "Which rabbit starred in Walt Disney's theatrical cartoon shorts of 1927–1928?",
+    "answers": [
+      "Oswald the Lucky Rabbit",
+      "Br'er Rabbit",
+      "The White Rabbit",
+      "Thumper"
+    ],
+    "difficulty": "medium",
+    "category": "walt"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Challenged earlier Disney animals and the original cat distractor giveaway. Final options are four rabbits, and the premise now pins theatrical shorts to 1927–1928. The Oswald series record excludes the three other rabbit names.",
+  "verification": {
+    "context": "Which rabbit starred in Walt Disney's theatrical cartoon shorts of 1927–1928?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The named star of the 1927–1928 Oswald theatrical shorts.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/oswald-the-lucky-rabbit/",
+          "locator": "Opening paragraph: 26 Disney silent Oswald cartoons made between 1927 and 1928 for Mintz/Universal; complete series list follows."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged earlier Disney animals and the original cat distractor giveaway. Final options are four rabbits, and the premise now pins theatrical shorts to 1927–1928. The Oswald series record excludes the three other rabbit names."
+    },
+    "options": [
+      {
+        "answer": "Oswald the Lucky Rabbit",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The named star of the 1927–1928 Oswald theatrical shorts.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/oswald-the-lucky-rabbit/",
+            "locator": "Opening paragraph: 26 Disney silent Oswald cartoons made between 1927 and 1928 for Mintz/Universal; complete series list follows."
+          }
+        ]
+      },
+      {
+        "answer": "Br'er Rabbit",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the star named by the complete Oswald series record.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/oswald-the-lucky-rabbit/",
+            "locator": "Opening paragraph: 26 Disney silent Oswald cartoons made between 1927 and 1928 for Mintz/Universal; complete series list follows."
+          }
+        ]
+      },
+      {
+        "answer": "The White Rabbit",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the star named by the complete Oswald series record.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/oswald-the-lucky-rabbit/",
+            "locator": "Opening paragraph: 26 Disney silent Oswald cartoons made between 1927 and 1928 for Mintz/Universal; complete series list follows."
+          }
+        ]
+      },
+      {
+        "answer": "Thumper",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the star named by the complete Oswald series record.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/oswald-the-lucky-rabbit/",
+            "locator": "Opening paragraph: 26 Disney silent Oswald cartoons made between 1927 and 1928 for Mintz/Universal; complete series list follows."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 229,
+  "hash": "b61bbbdfa589c9be5a0a110c668b93b2cef1f24516b925fc7b6b3661280349e2",
+  "questionSnapshot": {
+    "id": 229,
+    "question": "In Cinderella (1950), what does the Fairy Godmother transform into a carriage?",
+    "answers": [
+      "A pumpkin",
+      "A watermelon",
+      "A cabbage",
+      "A turnip"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Pumpkin is a squash, so original squash distractor was defensible. Replaced it with cabbage and specified the 1950 film. No watermelon/cabbage/turnip identity fits the expressly captioned pumpkin.",
+  "verification": {
+    "context": "In Cinderella (1950), what does the Fairy Godmother transform into a carriage?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Film gallery explicitly labels pumpkin-to-carriage transformation.",
+      "sources": [
+        {
+          "url": "https://movies.disney.com/cinderella-1950",
+          "locator": "Film still gallery caption expressly identifies Fairy Godmother transforming a pumpkin into a carriage; midnight departure caption corroborates spell deadline."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Pumpkin is a squash, so original squash distractor was defensible. Replaced it with cabbage and specified the 1950 film. No watermelon/cabbage/turnip identity fits the expressly captioned pumpkin."
+    },
+    "options": [
+      {
+        "answer": "A pumpkin",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Film gallery explicitly labels pumpkin-to-carriage transformation.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/cinderella-1950",
+            "locator": "Film still gallery caption expressly identifies Fairy Godmother transforming a pumpkin into a carriage; midnight departure caption corroborates spell deadline."
+          }
+        ]
+      },
+      {
+        "answer": "A watermelon",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different produce item from the depicted pumpkin.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/cinderella-1950",
+            "locator": "Film still gallery caption expressly identifies Fairy Godmother transforming a pumpkin into a carriage; midnight departure caption corroborates spell deadline."
+          }
+        ]
+      },
+      {
+        "answer": "A cabbage",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different produce item from the depicted pumpkin.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/cinderella-1950",
+            "locator": "Film still gallery caption expressly identifies Fairy Godmother transforming a pumpkin into a carriage; midnight departure caption corroborates spell deadline."
+          }
+        ]
+      },
+      {
+        "answer": "A turnip",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different produce item from the depicted pumpkin.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/cinderella-1950",
+            "locator": "Film still gallery caption expressly identifies Fairy Godmother transforming a pumpkin into a carriage; midnight departure caption corroborates spell deadline."
+          }
+        ]
+      }
+    ]
+  }
+}

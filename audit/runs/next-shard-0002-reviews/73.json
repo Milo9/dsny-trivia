@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 73,
+  "hash": "66db3b6c0b5e32b1df9823e1a9c6d8e542ba88da577e2889471b4813146d2216",
+  "questionSnapshot": {
+    "id": 73,
+    "question": "In Coco, who originally established the Rivera family's ban on music?",
+    "answers": [
+      "Mamá Imelda",
+      "Mamá Coco",
+      "Abuelita Elena",
+      "Papá Julio"
+    ],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "q664 asks which ancestor is Imelda, q1288 asks Elena’s identity, and q2177 asks the family trade; these are different facts. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "English-language Disney character naming; original theatrical feature where a film is named. In Coco, who originally established the Rivera family's ban on music?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Pixar’s director explicitly names Imelda as the source of the Rivera music ban.",
+      "sources": [
+        {
+          "url": "https://www.pixar.com/coco",
+          "locator": "THE CHARACTERS / Mamá Imelda: director Lee Unkrich identifies her as the source of the family music ban; compare Abuelita and Mamá Coco profiles."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Actively challenged Elena, who also forbids music in the story. Originally established now separates originating a rule from enforcing it. Pixar’s explicit origin attribution excludes Coco, Elena and Julio under that temporal wording."
+    },
+    "options": [
+      {
+        "answer": "Mamá Imelda",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Imelda is the stated originator.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/coco",
+            "locator": "THE CHARACTERS / Mamá Imelda: director Lee Unkrich identifies her as the source of the family music ban; compare Abuelita and Mamá Coco profiles."
+          }
+        ]
+      },
+      {
+        "answer": "Mamá Coco",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Coco is not the ancestor identified as the source of the ban.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/coco",
+            "locator": "THE CHARACTERS / Mamá Imelda: director Lee Unkrich identifies her as the source of the family music ban; compare Abuelita and Mamá Coco profiles."
+          }
+        ]
+      },
+      {
+        "answer": "Abuelita Elena",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Elena’s enforcement is not the original establishment attributed to Imelda.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/coco",
+            "locator": "THE CHARACTERS / Mamá Imelda: director Lee Unkrich identifies her as the source of the family music ban; compare Abuelita and Mamá Coco profiles."
+          }
+        ]
+      },
+      {
+        "answer": "Papá Julio",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Julio is not the person identified as the source.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/coco",
+            "locator": "THE CHARACTERS / Mamá Imelda: director Lee Unkrich identifies her as the source of the family music ban; compare Abuelita and Mamá Coco profiles."
+          }
+        ]
+      }
+    ]
+  }
+}

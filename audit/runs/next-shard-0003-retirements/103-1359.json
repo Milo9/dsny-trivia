@@ -1,0 +1,30 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "retired": {
+    "id": 103,
+    "question": "In which Disney World park can guests visit Pandora — The World of Avatar?",
+    "answers": [
+      "Animal Kingdom",
+      "Hollywood Studios",
+      "EPCOT",
+      "Magic Kingdom"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "retained": {
+    "id": 1359,
+    "question": "What is the name of the Avatar-themed land that opened at Disney's Animal Kingdom in 2017, featuring the Flight of Passage ride?",
+    "answers": [
+      "Pandora — The World of Avatar",
+      "Pandora Highlands",
+      "Alpha Centauri World",
+      "Na'vi Kingdom"
+    ],
+    "difficulty": "easy",
+    "category": "parks"
+  },
+  "rationale": "Both test Pandora being the Avatar land at Animal Kingdom, in opposite directions; retain the fuller land question.",
+  "scope": "Only the planned question is retired; the replacement is context and is not newly approved."
+}

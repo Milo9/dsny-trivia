@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 189,
+  "hash": "322aced1d0a00fb351ad3bcb95664ff0868ec54ec7b1c63e978a707c5d65d093",
+  "questionSnapshot": {
+    "id": 189,
+    "question": "Where are the toys taken before they plan an escape from Lotso in Toy Story 3?",
+    "answers": [
+      "Sunnyside Daycare",
+      "Bonnie's house",
+      "A museum",
+      "A toy store"
+    ],
+    "difficulty": "medium",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Original wording could validly suggest Bonnie’s final home. Final wording instead asks the Lotso-controlled location from which they escape, explicitly Sunnyside in D23. House, museum and toy store cannot fit that episode. Avoided asking what daycare, which would make only one option grammatical.",
+  "verification": {
+    "context": "Where are the toys taken before they plan an escape from Lotso in Toy Story 3?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "D23 identifies Sunnyside as the center Lotso runs as a prison, from which the toys escape.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/toy-story-3-film/",
+          "locator": "Opening paragraphs: toys land at Sunnyside and try to escape; Lotso runs the center as a prison."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Original wording could validly suggest Bonnie’s final home. Final wording instead asks the Lotso-controlled location from which they escape, explicitly Sunnyside in D23. House, museum and toy store cannot fit that episode. Avoided asking what daycare, which would make only one option grammatical."
+    },
+    "options": [
+      {
+        "answer": "Sunnyside Daycare",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "D23 identifies Sunnyside as the center Lotso runs as a prison, from which the toys escape.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/toy-story-3-film/",
+            "locator": "Opening paragraphs: toys land at Sunnyside and try to escape; Lotso runs the center as a prison."
+          }
+        ]
+      },
+      {
+        "answer": "Bonnie's house",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Final new home is not the Lotso-controlled escape location specified here.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/toy-story-3-film/",
+            "locator": "Opening paragraphs: toys land at Sunnyside and try to escape; Lotso runs the center as a prison."
+          }
+        ]
+      },
+      {
+        "answer": "A museum",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the Lotso-controlled center identified in the synopsis.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/toy-story-3-film/",
+            "locator": "Opening paragraphs: toys land at Sunnyside and try to escape; Lotso runs the center as a prison."
+          }
+        ]
+      },
+      {
+        "answer": "A toy store",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the Lotso-controlled center identified in the synopsis.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/toy-story-3-film/",
+            "locator": "Opening paragraphs: toys land at Sunnyside and try to escape; Lotso runs the center as a prison."
+          }
+        ]
+      }
+    ]
+  }
+}

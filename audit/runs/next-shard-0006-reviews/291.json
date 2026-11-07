@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 291,
+  "hash": "8c45ddf3555765b0920daa904b73377f8db420cdeabbc36a85e900cde388d4e6",
+  "questionSnapshot": {
+    "id": 291,
+    "question": "In The Lion King (1994), who is Simba's childhood playmate before he flees the Pride Lands?",
+    "answers": [
+      "Nala",
+      "Timon",
+      "Zazu",
+      "Pumbaa"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Original childhood wording also admitted Timon/Pumbaa after exile while Simba was still a cub. Final before-flight context excludes both by explicit synopsis sequence; Zazu is an adult official, not playmate.",
+  "verification": {
+    "context": "In The Lion King (1994), who is Simba's childhood playmate before he flees the Pride Lands?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Nala is the childhood friend from the Pride Lands.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/lion-king-the-film/",
+          "locator": "Synopsis: Nala is childhood friend; Timon and Pumbaa befriend Simba only after he flees. Cast distinguishes Nala and Zazu."
+        },
+        {
+          "url": "https://d23.com/a-to-z/zazu/",
+          "locator": "Character entry: Zazu is Pride Lands chief of protocol, distinguishing royal official from young playmate."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Original childhood wording also admitted Timon/Pumbaa after exile while Simba was still a cub. Final before-flight context excludes both by explicit synopsis sequence; Zazu is an adult official, not playmate."
+    },
+    "options": [
+      {
+        "answer": "Nala",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Nala is the childhood friend from the Pride Lands.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/lion-king-the-film/",
+            "locator": "Synopsis: Nala is childhood friend; Timon and Pumbaa befriend Simba only after he flees. Cast distinguishes Nala and Zazu."
+          },
+          {
+            "url": "https://d23.com/a-to-z/zazu/",
+            "locator": "Character entry: Zazu is Pride Lands chief of protocol, distinguishing royal official from young playmate."
+          }
+        ]
+      },
+      {
+        "answer": "Timon",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Timon meets Simba after his flight.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/lion-king-the-film/",
+            "locator": "Synopsis: Nala is childhood friend; Timon and Pumbaa befriend Simba only after he flees. Cast distinguishes Nala and Zazu."
+          },
+          {
+            "url": "https://d23.com/a-to-z/zazu/",
+            "locator": "Character entry: Zazu is Pride Lands chief of protocol, distinguishing royal official from young playmate."
+          }
+        ]
+      },
+      {
+        "answer": "Zazu",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Zazu is the royal chief of protocol, not his childhood playmate.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/lion-king-the-film/",
+            "locator": "Synopsis: Nala is childhood friend; Timon and Pumbaa befriend Simba only after he flees. Cast distinguishes Nala and Zazu."
+          },
+          {
+            "url": "https://d23.com/a-to-z/zazu/",
+            "locator": "Character entry: Zazu is Pride Lands chief of protocol, distinguishing royal official from young playmate."
+          }
+        ]
+      },
+      {
+        "answer": "Pumbaa",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Pumbaa meets Simba after his flight.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/lion-king-the-film/",
+            "locator": "Synopsis: Nala is childhood friend; Timon and Pumbaa befriend Simba only after he flees. Cast distinguishes Nala and Zazu."
+          },
+          {
+            "url": "https://d23.com/a-to-z/zazu/",
+            "locator": "Character entry: Zazu is Pride Lands chief of protocol, distinguishing royal official from young playmate."
+          }
+        ]
+      }
+    ]
+  }
+}

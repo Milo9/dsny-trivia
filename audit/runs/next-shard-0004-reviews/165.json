@@ -1,0 +1,161 @@
+{
+  "schema": 2,
+  "questionId": 165,
+  "hash": "5833a16111127f226b07b2359a51c79798710db0bd6590bf6a127f9a95a7a325",
+  "questionSnapshot": {
+    "id": 165,
+    "question": "In what Disney film does the song 'I'll Make a Man Out of You' appear?",
+    "answers": [
+      "Mulan",
+      "Hercules",
+      "Tarzan",
+      "The Lion King"
+    ],
+    "difficulty": "medium",
+    "category": "music"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged song reuse across the four films. WDR names the Mulan training song; the complete released song lists for Hercules, Tarzan and Lion King exclude it. Hercules English WDR catalog is inspected through its vocal sequence, not the Japanese release returned by initial search.",
+  "verification": {
+    "context": "In what Disney film does the song 'I'll Make a Man Out of You' appear?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "WDR lists the song on Mulan’s original soundtrack.",
+      "sources": [
+        {
+          "url": "https://disney.go.com/disneyrecords/mulan/index.html",
+          "locator": "Film soundtrack song list includes I’ll Make a Man Out of You; credits Wilder/Zippel and Osmond/Salonga."
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/album/hercules-alan-menken-disney-hercules-cast/kyhyjkyhcxhkc",
+          "locator": "Walt Disney Records 1997 English soundtrack; vocal tracks 1–12 list Gospel Truth, Go the Distance, One Last Hope, Zero to Hero, I Won’t Say and A Star Is Born, with reprises; remaining tracks designated score."
+        },
+        {
+          "url": "https://music.apple.com/es/album/tarzan-original-motion-picture-soundtrack/1437333655?l=en",
+          "locator": "Walt Disney Records 1999 soundtrack, complete 14-track listing; five original songs and reprises, with score tracks; no Mulan training song."
+        },
+        {
+          "url": "https://disney.go.com/disneyrecords/Soundtracks/LionKing/index.html",
+          "locator": "Track 1 credits Carmen Twillie and separately Lebo M African vocals; track 11 is Elton John’s separate Circle of Life recording."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged song reuse across the four films. WDR names the Mulan training song; the complete released song lists for Hercules, Tarzan and Lion King exclude it. Hercules English WDR catalog is inspected through its vocal sequence, not the Japanese release returned by initial search."
+    },
+    "options": [
+      {
+        "answer": "Mulan",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "WDR lists the song on Mulan’s original soundtrack.",
+        "sources": [
+          {
+            "url": "https://disney.go.com/disneyrecords/mulan/index.html",
+            "locator": "Film soundtrack song list includes I’ll Make a Man Out of You; credits Wilder/Zippel and Osmond/Salonga."
+          },
+          {
+            "url": "https://www.qobuz.com/us-en/album/hercules-alan-menken-disney-hercules-cast/kyhyjkyhcxhkc",
+            "locator": "Walt Disney Records 1997 English soundtrack; vocal tracks 1–12 list Gospel Truth, Go the Distance, One Last Hope, Zero to Hero, I Won’t Say and A Star Is Born, with reprises; remaining tracks designated score."
+          },
+          {
+            "url": "https://music.apple.com/es/album/tarzan-original-motion-picture-soundtrack/1437333655?l=en",
+            "locator": "Walt Disney Records 1999 soundtrack, complete 14-track listing; five original songs and reprises, with score tracks; no Mulan training song."
+          },
+          {
+            "url": "https://disney.go.com/disneyrecords/Soundtracks/LionKing/index.html",
+            "locator": "Track 1 credits Carmen Twillie and separately Lebo M African vocals; track 11 is Elton John’s separate Circle of Life recording."
+          }
+        ]
+      },
+      {
+        "answer": "Hercules",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Its complete original vocal track list contains different songs, not this training number.",
+        "sources": [
+          {
+            "url": "https://disney.go.com/disneyrecords/mulan/index.html",
+            "locator": "Film soundtrack song list includes I’ll Make a Man Out of You; credits Wilder/Zippel and Osmond/Salonga."
+          },
+          {
+            "url": "https://www.qobuz.com/us-en/album/hercules-alan-menken-disney-hercules-cast/kyhyjkyhcxhkc",
+            "locator": "Walt Disney Records 1997 English soundtrack; vocal tracks 1–12 list Gospel Truth, Go the Distance, One Last Hope, Zero to Hero, I Won’t Say and A Star Is Born, with reprises; remaining tracks designated score."
+          },
+          {
+            "url": "https://music.apple.com/es/album/tarzan-original-motion-picture-soundtrack/1437333655?l=en",
+            "locator": "Walt Disney Records 1999 soundtrack, complete 14-track listing; five original songs and reprises, with score tracks; no Mulan training song."
+          },
+          {
+            "url": "https://disney.go.com/disneyrecords/Soundtracks/LionKing/index.html",
+            "locator": "Track 1 credits Carmen Twillie and separately Lebo M African vocals; track 11 is Elton John’s separate Circle of Life recording."
+          }
+        ]
+      },
+      {
+        "answer": "Tarzan",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Its complete 14-track soundtrack has different original songs and reprises.",
+        "sources": [
+          {
+            "url": "https://disney.go.com/disneyrecords/mulan/index.html",
+            "locator": "Film soundtrack song list includes I’ll Make a Man Out of You; credits Wilder/Zippel and Osmond/Salonga."
+          },
+          {
+            "url": "https://www.qobuz.com/us-en/album/hercules-alan-menken-disney-hercules-cast/kyhyjkyhcxhkc",
+            "locator": "Walt Disney Records 1997 English soundtrack; vocal tracks 1–12 list Gospel Truth, Go the Distance, One Last Hope, Zero to Hero, I Won’t Say and A Star Is Born, with reprises; remaining tracks designated score."
+          },
+          {
+            "url": "https://music.apple.com/es/album/tarzan-original-motion-picture-soundtrack/1437333655?l=en",
+            "locator": "Walt Disney Records 1999 soundtrack, complete 14-track listing; five original songs and reprises, with score tracks; no Mulan training song."
+          },
+          {
+            "url": "https://disney.go.com/disneyrecords/Soundtracks/LionKing/index.html",
+            "locator": "Track 1 credits Carmen Twillie and separately Lebo M African vocals; track 11 is Elton John’s separate Circle of Life recording."
+          }
+        ]
+      },
+      {
+        "answer": "The Lion King",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "WDR’s complete song list for this film does not contain the Mulan training number.",
+        "sources": [
+          {
+            "url": "https://disney.go.com/disneyrecords/mulan/index.html",
+            "locator": "Film soundtrack song list includes I’ll Make a Man Out of You; credits Wilder/Zippel and Osmond/Salonga."
+          },
+          {
+            "url": "https://www.qobuz.com/us-en/album/hercules-alan-menken-disney-hercules-cast/kyhyjkyhcxhkc",
+            "locator": "Walt Disney Records 1997 English soundtrack; vocal tracks 1–12 list Gospel Truth, Go the Distance, One Last Hope, Zero to Hero, I Won’t Say and A Star Is Born, with reprises; remaining tracks designated score."
+          },
+          {
+            "url": "https://music.apple.com/es/album/tarzan-original-motion-picture-soundtrack/1437333655?l=en",
+            "locator": "Walt Disney Records 1999 soundtrack, complete 14-track listing; five original songs and reprises, with score tracks; no Mulan training song."
+          },
+          {
+            "url": "https://disney.go.com/disneyrecords/Soundtracks/LionKing/index.html",
+            "locator": "Track 1 credits Carmen Twillie and separately Lebo M African vocals; track 11 is Elton John’s separate Circle of Life recording."
+          }
+        ]
+      }
+    ]
+  }
+}

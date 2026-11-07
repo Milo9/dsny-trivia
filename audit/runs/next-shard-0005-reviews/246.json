@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 246,
+  "hash": "c258a84bef4309628a26565cba56747b5daa8913d6b64ad1432e3033f568a2d7",
+  "questionSnapshot": {
+    "id": 246,
+    "question": "In 101 Dalmatians, how many puppies do Pongo and Perdita originally have?",
+    "answers": [
+      "15",
+      "99",
+      "101",
+      "50"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Separated biological first litter from rescued/adopted puppies and total dogs. Film entry expressly gives 15, 99 and 101 in different roles; Perdita’s separate entry corroborates 15. 50 fits none. Original litter is not a claim that the couple never adopts more.",
+  "verification": {
+    "context": "In 101 Dalmatians, how many puppies do Pongo and Perdita originally have?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The original litter is explicitly 15.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/one-hundred-and-one-dalmatians-film/",
+          "locator": "Opening: Perdita produces 15 puppies; Cruella kidnaps them for fur coat. Next paragraphs distinguish 99 rescued puppies and 101 dogs including parents."
+        },
+        {
+          "url": "https://d23.com/a-to-z/perdita/",
+          "locator": "Entire character entry independently repeats Perdita had a litter of 15 puppies; distinguished from film entry counts of 99 rescued and 101 total."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Separated biological first litter from rescued/adopted puppies and total dogs. Film entry expressly gives 15, 99 and 101 in different roles; Perdita’s separate entry corroborates 15. 50 fits none. Original litter is not a claim that the couple never adopts more."
+    },
+    "options": [
+      {
+        "answer": "15",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The original litter is explicitly 15.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/one-hundred-and-one-dalmatians-film/",
+            "locator": "Opening: Perdita produces 15 puppies; Cruella kidnaps them for fur coat. Next paragraphs distinguish 99 rescued puppies and 101 dogs including parents."
+          },
+          {
+            "url": "https://d23.com/a-to-z/perdita/",
+            "locator": "Entire character entry independently repeats Perdita had a litter of 15 puppies; distinguished from film entry counts of 99 rescued and 101 total."
+          }
+        ]
+      },
+      {
+        "answer": "99",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "99 is total rescued puppies including other litters.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/one-hundred-and-one-dalmatians-film/",
+            "locator": "Opening: Perdita produces 15 puppies; Cruella kidnaps them for fur coat. Next paragraphs distinguish 99 rescued puppies and 101 dogs including parents."
+          },
+          {
+            "url": "https://d23.com/a-to-z/perdita/",
+            "locator": "Entire character entry independently repeats Perdita had a litter of 15 puppies; distinguished from film entry counts of 99 rescued and 101 total."
+          }
+        ]
+      },
+      {
+        "answer": "101",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "101 is final dogs including the parents, not their first litter.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/one-hundred-and-one-dalmatians-film/",
+            "locator": "Opening: Perdita produces 15 puppies; Cruella kidnaps them for fur coat. Next paragraphs distinguish 99 rescued puppies and 101 dogs including parents."
+          },
+          {
+            "url": "https://d23.com/a-to-z/perdita/",
+            "locator": "Entire character entry independently repeats Perdita had a litter of 15 puppies; distinguished from film entry counts of 99 rescued and 101 total."
+          }
+        ]
+      },
+      {
+        "answer": "50",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Different number from the explicitly counted original 15.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/one-hundred-and-one-dalmatians-film/",
+            "locator": "Opening: Perdita produces 15 puppies; Cruella kidnaps them for fur coat. Next paragraphs distinguish 99 rescued puppies and 101 dogs including parents."
+          },
+          {
+            "url": "https://d23.com/a-to-z/perdita/",
+            "locator": "Entire character entry independently repeats Perdita had a litter of 15 puppies; distinguished from film entry counts of 99 rescued and 101 total."
+          }
+        ]
+      }
+    ]
+  }
+}

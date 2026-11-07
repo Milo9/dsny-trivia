@@ -1,0 +1,96 @@
+{
+  "questionId": 41,
+  "hash": "816ce94676517cda2e2157f7aa003e8da502c4303776c0e45170b8f492be93dc",
+  "questionSnapshot": {
+    "id": 41,
+    "question": "In The Little Mermaid, what is the name of Ariel's father?",
+    "answers": [
+      "King Triton",
+      "King Neptune",
+      "King Poseidon",
+      "King Oceanus"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Four parallel mythic king names; medium. #15 tail color and #290 seagull name are separate attributes, even though a distractor recurs.",
+  "verification": {
+    "context": "The Little Mermaid, original Disney animated 1989 film.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "King Triton",
+        "verdict": "correct",
+        "reason": "Triton is explicitly Ariel's father and ruler of the sea.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-little-mermaid",
+            "locator": "The Characters: Ursula is the evil sea witch; Triton is Ariel's father; Ariel and her companions are identified separately."
+          },
+          {
+            "url": "https://d23.com/a-to-z/little-mermaid-the-film/",
+            "locator": "Synopsis: Ursula grants humanity in return for Ariel's voice; King Triton is her father. Voice credits separately name Ursula and Louis in the 1989 film."
+          }
+        ]
+      },
+      {
+        "answer": "King Neptune",
+        "verdict": "incorrect",
+        "reason": "Neptune is not the father's name in this version; the character/credits identify Triton.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-little-mermaid",
+            "locator": "The Characters: Ursula is the evil sea witch; Triton is Ariel's father; Ariel and her companions are identified separately."
+          },
+          {
+            "url": "https://d23.com/a-to-z/little-mermaid-the-film/",
+            "locator": "Synopsis: Ursula grants humanity in return for Ariel's voice; King Triton is her father. Voice credits separately name Ursula and Louis in the 1989 film."
+          }
+        ]
+      },
+      {
+        "answer": "King Poseidon",
+        "verdict": "incorrect",
+        "reason": "Poseidon is not the named father in the 1989 film; Triton is.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-little-mermaid",
+            "locator": "The Characters: Ursula is the evil sea witch; Triton is Ariel's father; Ariel and her companions are identified separately."
+          },
+          {
+            "url": "https://d23.com/a-to-z/little-mermaid-the-film/",
+            "locator": "Synopsis: Ursula grants humanity in return for Ariel's voice; King Triton is her father. Voice credits separately name Ursula and Louis in the 1989 film."
+          }
+        ]
+      },
+      {
+        "answer": "King Oceanus",
+        "verdict": "incorrect",
+        "reason": "Oceanus does not match the father identified as Triton.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-little-mermaid",
+            "locator": "The Characters: Ursula is the evil sea witch; Triton is Ariel's father; Ariel and her companions are identified separately."
+          },
+          {
+            "url": "https://d23.com/a-to-z/little-mermaid-the-film/",
+            "locator": "Synopsis: Ursula grants humanity in return for Ariel's voice; King Triton is her father. Voice credits separately name Ursula and Louis in the 1989 film."
+          }
+        ]
+      }
+    ]
+  }
+}

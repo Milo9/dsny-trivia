@@ -1,0 +1,80 @@
+{
+  "questionId": 18,
+  "hash": "af94d452e35c8b48e4aa4af2509d9488c3d7155c169838cfb83f1c9d33fd8b2a",
+  "questionSnapshot": {
+    "id": 18,
+    "question": "What is the name of Rapunzel's pet chameleon in Tangled?",
+    "answers": [
+      "Pascal",
+      "Maximus",
+      "Archimedes",
+      "Figaro"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Four named animal companions. Easy. No other in-scope digest asks Pascal's name; #2134 is a separate snake-bite event, whose TV-origin scope is outside this batch.",
+  "verification": {
+    "context": "Tangled, Disney 2010 animated film.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Pascal",
+        "verdict": "correct",
+        "reason": "Rapunzel's chameleon friend is Pascal.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/tangled",
+            "locator": "The Characters: Rapunzel and chameleon Pascal; Mother Gothel imprisoned her from infancy; Maximus is the guard horse."
+          }
+        ]
+      },
+      {
+        "answer": "Maximus",
+        "verdict": "incorrect",
+        "reason": "Maximus is the guard horse.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/tangled",
+            "locator": "The Characters: Rapunzel and chameleon Pascal; Mother Gothel imprisoned her from infancy; Maximus is the guard horse."
+          }
+        ]
+      },
+      {
+        "answer": "Archimedes",
+        "verdict": "incorrect",
+        "reason": "Archimedes is Merlin's owl in The Sword in the Stone.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/archimedes/",
+            "locator": "Archimedes entry: Merlin's wise owl in The Sword in the Stone."
+          }
+        ]
+      },
+      {
+        "answer": "Figaro",
+        "verdict": "incorrect",
+        "reason": "Figaro is a kitten in Pinocchio.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/figaro/",
+            "locator": "Figaro entry: kitten in Pinocchio."
+          }
+        ]
+      }
+    ]
+  }
+}

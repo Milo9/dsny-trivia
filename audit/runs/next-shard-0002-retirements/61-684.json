@@ -1,0 +1,37 @@
+{
+  "reviewer": "Codex (OpenAI)",
+  "questions": [
+    {
+      "id": 61,
+      "question": "Who provided the original voice for Mickey Mouse?",
+      "answers": [
+        "Walt Disney",
+        "Clarence Nash",
+        "Jim Henson",
+        "Mel Blanc"
+      ],
+      "difficulty": "easy",
+      "category": "characters"
+    },
+    {
+      "id": 684,
+      "question": "Who originally voiced Mickey Mouse for nearly 20 years starting in 1928?",
+      "answers": [
+        "Walt Disney himself",
+        "Jimmy MacDonald",
+        "Clarence Nash",
+        "Pinto Colvig"
+      ],
+      "difficulty": "hard",
+      "category": "walt"
+    }
+  ],
+  "decision": "Both ask for the original Mickey Mouse voice performer, Walt Disney. The nearly-20-years context does not add a different requested answer. Preserve q61 and retain the existing same-fact question without approving its other options.",
+  "evidence": [
+    {
+      "url": "https://d23.com/a-to-z/mickey-mouse/",
+      "locator": "Voice-history paragraph beginning Walt Disney provided Mickey Mouse’s voice."
+    }
+  ],
+  "replacementApproved": false
+}

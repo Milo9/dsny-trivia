@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 263,
+  "hash": "04df0b3e55992f3aba57be0e90fc8dbb24d21ddc7b9fd3ba9014678fefa3c5b3",
+  "questionSnapshot": {
+    "id": 263,
+    "question": "In Ratatouille (2007), who is revealed to be Linguini's biological father?",
+    "answers": [
+      "Auguste Gusteau",
+      "Chef Skinner",
+      "Anton Ego",
+      "Chef Horst"
+    ],
+    "difficulty": "medium",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Original secret question admitted ownership as well as paternity; screenplay confirms both. Final question asks only biological father with parallel people. Gusteau motto q185, restaurant ownership deadline q2314, and Linguini cooking method q1583 require separate facts. Primary screenplay is externally hosted, provenance stated.",
+  "verification": {
+    "context": "In Ratatouille (2007), who is revealed to be Linguini's biological father?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The screenplay expressly identifies Gusteau as his father.",
+      "sources": [
+        {
+          "url": "https://assets.scriptslug.com/live/pdf/scripts/ratatouille-2007.pdf",
+          "locator": "Studio screenplay, externally hosted: printed pages 86-88, will/ownership and reporter interview; Linguini explicitly states Gusteau is his father. Ownership also revealed, proving original ambiguity."
+        },
+        {
+          "url": "https://www.pixar.com/ratatouille",
+          "locator": "Characters / Gusteau, Linguini, Skinner, Anton Ego and Chefs (Horst). Distinct chef, critic and kitchen roles; corroborates screenplay setting, not itself evidence of paternity."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Original secret question admitted ownership as well as paternity; screenplay confirms both. Final question asks only biological father with parallel people. Gusteau motto q185, restaurant ownership deadline q2314, and Linguini cooking method q1583 require separate facts. Primary screenplay is externally hosted, provenance stated."
+    },
+    "options": [
+      {
+        "answer": "Auguste Gusteau",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The screenplay expressly identifies Gusteau as his father.",
+        "sources": [
+          {
+            "url": "https://assets.scriptslug.com/live/pdf/scripts/ratatouille-2007.pdf",
+            "locator": "Studio screenplay, externally hosted: printed pages 86-88, will/ownership and reporter interview; Linguini explicitly states Gusteau is his father. Ownership also revealed, proving original ambiguity."
+          },
+          {
+            "url": "https://www.pixar.com/ratatouille",
+            "locator": "Characters / Gusteau, Linguini, Skinner, Anton Ego and Chefs (Horst). Distinct chef, critic and kitchen roles; corroborates screenplay setting, not itself evidence of paternity."
+          }
+        ]
+      },
+      {
+        "answer": "Chef Skinner",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Skinner is not the father identified in the screenplay.",
+        "sources": [
+          {
+            "url": "https://assets.scriptslug.com/live/pdf/scripts/ratatouille-2007.pdf",
+            "locator": "Studio screenplay, externally hosted: printed pages 86-88, will/ownership and reporter interview; Linguini explicitly states Gusteau is his father. Ownership also revealed, proving original ambiguity."
+          },
+          {
+            "url": "https://www.pixar.com/ratatouille",
+            "locator": "Characters / Gusteau, Linguini, Skinner, Anton Ego and Chefs (Horst). Distinct chef, critic and kitchen roles; corroborates screenplay setting, not itself evidence of paternity."
+          }
+        ]
+      },
+      {
+        "answer": "Anton Ego",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Ego is the critic, not the father identified.",
+        "sources": [
+          {
+            "url": "https://assets.scriptslug.com/live/pdf/scripts/ratatouille-2007.pdf",
+            "locator": "Studio screenplay, externally hosted: printed pages 86-88, will/ownership and reporter interview; Linguini explicitly states Gusteau is his father. Ownership also revealed, proving original ambiguity."
+          },
+          {
+            "url": "https://www.pixar.com/ratatouille",
+            "locator": "Characters / Gusteau, Linguini, Skinner, Anton Ego and Chefs (Horst). Distinct chef, critic and kitchen roles; corroborates screenplay setting, not itself evidence of paternity."
+          }
+        ]
+      },
+      {
+        "answer": "Chef Horst",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Horst is a kitchen chef, not the identified father.",
+        "sources": [
+          {
+            "url": "https://assets.scriptslug.com/live/pdf/scripts/ratatouille-2007.pdf",
+            "locator": "Studio screenplay, externally hosted: printed pages 86-88, will/ownership and reporter interview; Linguini explicitly states Gusteau is his father. Ownership also revealed, proving original ambiguity."
+          },
+          {
+            "url": "https://www.pixar.com/ratatouille",
+            "locator": "Characters / Gusteau, Linguini, Skinner, Anton Ego and Chefs (Horst). Distinct chef, critic and kitchen roles; corroborates screenplay setting, not itself evidence of paternity."
+          }
+        ]
+      }
+    ]
+  }
+}

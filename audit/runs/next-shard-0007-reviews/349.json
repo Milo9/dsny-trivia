@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 349,
+  "hash": "1d398d71ee9e49f60595d9e42b798450331d77276dae3ce0bdbfc3c12d2eee63",
+  "questionSnapshot": {
+    "id": 349,
+    "question": "Which Mickey-shaped Disney breakfast food is made from batter cooked in a patterned iron?",
+    "answers": [
+      "Mickey-shaped waffles",
+      "Mickey-shaped pretzels",
+      "Mickey-shaped popcorn",
+      "Mickey-shaped bread"
+    ],
+    "difficulty": "easy",
+    "category": "parks"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "The original generic Mickey-shaped treat wording admitted pretzels as well as waffles. Challenged the final preparation qualification: warm snacks or Mickey shapes alone do not suffice. The recipe cooking method and Mickey-waffle gallery support the answer, with breakfast context corroborated by planDisney. No identical food-preparation fact elsewhere in bank. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+  "verification": {
+    "context": "Which Mickey-shaped Disney breakfast food is made from batter cooked in a patterned iron? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Mickey waffles are the breakfast item; waffle batter is cooked in an iron. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+      "sources": [
+        {
+          "url": "https://disneyparksblog.com/wdw/cooking-up-the-magic-with-a-chocolate-waffle-recipe-to-kick-off-waffle-week/",
+          "locator": "Waffle Instructions steps 2-6: batter preparation and iron cooking; Classic Mickey Waffles gallery caption identifies the Mickey-shaped park food"
+        },
+        {
+          "url": "https://plandisney.disney.go.com/question/recipe-mickey-waffles-370726/",
+          "locator": "May 28, 2018 answer: Mickey waffles each morning for breakfast and waffle-iron preparation context"
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "The original generic Mickey-shaped treat wording admitted pretzels as well as waffles. Challenged the final preparation qualification: warm snacks or Mickey shapes alone do not suffice. The recipe cooking method and Mickey-waffle gallery support the answer, with breakfast context corroborated by planDisney. No identical food-preparation fact elsewhere in bank."
+    },
+    "options": [
+      {
+        "answer": "Mickey-shaped waffles",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Mickey waffles are the breakfast item; waffle batter is cooked in an iron.",
+        "sources": [
+          {
+            "url": "https://disneyparksblog.com/wdw/cooking-up-the-magic-with-a-chocolate-waffle-recipe-to-kick-off-waffle-week/",
+            "locator": "Waffle Instructions steps 2-6: batter preparation and iron cooking; Classic Mickey Waffles gallery caption identifies the Mickey-shaped park food"
+          },
+          {
+            "url": "https://plandisney.disney.go.com/question/recipe-mickey-waffles-370726/",
+            "locator": "May 28, 2018 answer: Mickey waffles each morning for breakfast and waffle-iron preparation context"
+          }
+        ]
+      },
+      {
+        "answer": "Mickey-shaped pretzels",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Pretzels may be Mickey-shaped but are dough products, not this batter-and-iron breakfast item.",
+        "sources": [
+          {
+            "url": "https://disneyparksblog.com/wdw/cooking-up-the-magic-with-a-chocolate-waffle-recipe-to-kick-off-waffle-week/",
+            "locator": "Waffle Instructions steps 2-6: batter preparation and iron cooking; Classic Mickey Waffles gallery caption identifies the Mickey-shaped park food"
+          },
+          {
+            "url": "https://plandisney.disney.go.com/question/recipe-mickey-waffles-370726/",
+            "locator": "May 28, 2018 answer: Mickey waffles each morning for breakfast and waffle-iron preparation context"
+          }
+        ]
+      },
+      {
+        "answer": "Mickey-shaped popcorn",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Popcorn is popped corn, not batter cooked in a patterned iron.",
+        "sources": [
+          {
+            "url": "https://disneyparksblog.com/wdw/cooking-up-the-magic-with-a-chocolate-waffle-recipe-to-kick-off-waffle-week/",
+            "locator": "Waffle Instructions steps 2-6: batter preparation and iron cooking; Classic Mickey Waffles gallery caption identifies the Mickey-shaped park food"
+          },
+          {
+            "url": "https://plandisney.disney.go.com/question/recipe-mickey-waffles-370726/",
+            "locator": "May 28, 2018 answer: Mickey waffles each morning for breakfast and waffle-iron preparation context"
+          }
+        ]
+      },
+      {
+        "answer": "Mickey-shaped bread",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Bread is a baked dough product, not the named iron-cooked batter breakfast item.",
+        "sources": [
+          {
+            "url": "https://disneyparksblog.com/wdw/cooking-up-the-magic-with-a-chocolate-waffle-recipe-to-kick-off-waffle-week/",
+            "locator": "Waffle Instructions steps 2-6: batter preparation and iron cooking; Classic Mickey Waffles gallery caption identifies the Mickey-shaped park food"
+          },
+          {
+            "url": "https://plandisney.disney.go.com/question/recipe-mickey-waffles-370726/",
+            "locator": "May 28, 2018 answer: Mickey waffles each morning for breakfast and waffle-iron preparation context"
+          }
+        ]
+      }
+    ]
+  }
+}

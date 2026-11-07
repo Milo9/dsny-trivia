@@ -1,0 +1,37 @@
+{
+  "reviewer": "Codex (OpenAI)",
+  "questions": [
+    {
+      "id": 80,
+      "question": "In Aladdin, what type of animal is Jafar's sidekick Iago?",
+      "answers": [
+        "Parrot",
+        "Crow",
+        "Raven",
+        "Macaw"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    {
+      "id": 1345,
+      "question": "In Aladdin, what is the name of the scheming scarlet parrot who serves as Jafar's spy and sidekick?",
+      "answers": [
+        "Iago",
+        "Zazu",
+        "Archimedes",
+        "Diablo"
+      ],
+      "difficulty": "easy",
+      "category": "characters"
+    }
+  ],
+  "decision": "Inverse Iago/parrot relationship. Retain the more specific character-name question. Original q80 also has a nested animal option: a macaw is a kind of parrot; it must not be approved as single-answer.",
+  "evidence": [
+    {
+      "url": "https://d23.com/a-to-z/aladdin-film/",
+      "locator": "Cast identifies Iago; compare full q1345 which identifies the parrot. Retirement is a content-overlap decision, not verification of all q1345 options."
+    }
+  ],
+  "replacementApproved": false
+}

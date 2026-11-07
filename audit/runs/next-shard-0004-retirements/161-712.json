@@ -1,0 +1,30 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "retired": {
+    "id": 161,
+    "question": "In what Disney film does the song 'Reflection' appear?",
+    "answers": [
+      "Mulan",
+      "Pocahontas",
+      "Brave",
+      "Moana"
+    ],
+    "difficulty": "medium",
+    "category": "music"
+  },
+  "retained": {
+    "id": 712,
+    "question": "What is the name of the song Mulan sings about her true identity and inner conflict?",
+    "answers": [
+      "Reflection",
+      "I'll Make a Man Out of You",
+      "Honor to Us All",
+      "True to Your Heart"
+    ],
+    "difficulty": "medium",
+    "category": "music"
+  },
+  "rationale": "Same Reflection / Mulan association in reverse; keep the identity-conflict context.",
+  "scope": "Retire only the planned ID. Retained questions are duplicate context and receive no new factual approval here."
+}

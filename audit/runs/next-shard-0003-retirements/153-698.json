@@ -1,0 +1,30 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "retired": {
+    "id": 153,
+    "question": "In what Disney film does 'Circle of Life' appear?",
+    "answers": [
+      "The Lion King",
+      "The Jungle Book",
+      "Tarzan",
+      "Brother Bear"
+    ],
+    "difficulty": "easy",
+    "category": "music"
+  },
+  "retained": {
+    "id": 698,
+    "question": "What is the opening song in The Lion King?",
+    "answers": [
+      "Circle of Life",
+      "Hakuna Matata",
+      "I Just Can't Wait to Be King",
+      "Be Prepared"
+    ],
+    "difficulty": "easy",
+    "category": "music"
+  },
+  "rationale": "The opening-song question already establishes Circle of Life belongs to The Lion King; retain that more specific musical-context question.",
+  "scope": "Only the planned question is retired; the replacement is context and is not newly approved."
+}

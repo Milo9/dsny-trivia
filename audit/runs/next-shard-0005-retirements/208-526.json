@@ -1,0 +1,30 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "retired": {
+    "id": 208,
+    "question": "In Big Hero 6, what is the name of the inflatable healthcare robot?",
+    "answers": [
+      "Baymax",
+      "Hiro",
+      "Wasabi",
+      "GoGo"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "retained": {
+    "id": 526,
+    "question": "In Big Hero 6, what is Baymax?",
+    "answers": [
+      "A personal healthcare companion robot",
+      "A battle robot",
+      "An AI tutor",
+      "A police robot"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "rationale": "Same Baymax / personal healthcare robot identity in reverse. Retain the direct role question; inflatable wording does not test a separate fact.",
+  "scope": "Only the planned ID is retired. Replacement is duplicate context; no factual approval is inferred for it."
+}

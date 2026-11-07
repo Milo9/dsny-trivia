@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 183,
+  "hash": "1394cf68cce416491f3755489c70dec44a9e1c3410cf67240fc9acc18f1aede2",
+  "questionSnapshot": {
+    "id": 183,
+    "question": "In Toy Story, who is the main villain — the cruel kid next door?",
+    "answers": [
+      "Sid Phillips",
+      "Al McWhiggin",
+      "Stinky Pete",
+      "Lotso"
+    ],
+    "difficulty": "easy",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged later-series villains: the cruel human neighbor is explicitly Sid Phillips in the original film. Al, Stinky Pete and Lotso do not have that identity. Moved to easy as prominent antagonist recall.",
+  "verification": {
+    "context": "In Toy Story, who is the main villain — the cruel kid next door?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The neighbor who tortures toys is named Sid Phillips.",
+      "sources": [
+        {
+          "url": "https://www.pixar.com/toy-story",
+          "locator": "Characters: Woody/Andy identify ownership; Sid and Sid’s House identify the toy-torturing neighbor; The World / Pizza Planet identifies space-themed restaurant."
+        },
+        {
+          "url": "https://d23.com/13-disney-characters-that-make-our-spines-tingle/",
+          "locator": "Sid Phillips from Toy Story subsection identifies full name, 1995 film and tormenting Andy’s toys."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged later-series villains: the cruel human neighbor is explicitly Sid Phillips in the original film. Al, Stinky Pete and Lotso do not have that identity. Moved to easy as prominent antagonist recall."
+    },
+    "options": [
+      {
+        "answer": "Sid Phillips",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The neighbor who tortures toys is named Sid Phillips.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/toy-story",
+            "locator": "Characters: Woody/Andy identify ownership; Sid and Sid’s House identify the toy-torturing neighbor; The World / Pizza Planet identifies space-themed restaurant."
+          },
+          {
+            "url": "https://d23.com/13-disney-characters-that-make-our-spines-tingle/",
+            "locator": "Sid Phillips from Toy Story subsection identifies full name, 1995 film and tormenting Andy’s toys."
+          }
+        ]
+      },
+      {
+        "answer": "Al McWhiggin",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the original-film neighbor identified by the primary profiles.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/toy-story",
+            "locator": "Characters: Woody/Andy identify ownership; Sid and Sid’s House identify the toy-torturing neighbor; The World / Pizza Planet identifies space-themed restaurant."
+          },
+          {
+            "url": "https://d23.com/13-disney-characters-that-make-our-spines-tingle/",
+            "locator": "Sid Phillips from Toy Story subsection identifies full name, 1995 film and tormenting Andy’s toys."
+          }
+        ]
+      },
+      {
+        "answer": "Stinky Pete",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the original-film neighbor identified by the primary profiles.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/toy-story",
+            "locator": "Characters: Woody/Andy identify ownership; Sid and Sid’s House identify the toy-torturing neighbor; The World / Pizza Planet identifies space-themed restaurant."
+          },
+          {
+            "url": "https://d23.com/13-disney-characters-that-make-our-spines-tingle/",
+            "locator": "Sid Phillips from Toy Story subsection identifies full name, 1995 film and tormenting Andy’s toys."
+          }
+        ]
+      },
+      {
+        "answer": "Lotso",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the original-film neighbor identified by the primary profiles.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/toy-story",
+            "locator": "Characters: Woody/Andy identify ownership; Sid and Sid’s House identify the toy-torturing neighbor; The World / Pizza Planet identifies space-themed restaurant."
+          },
+          {
+            "url": "https://d23.com/13-disney-characters-that-make-our-spines-tingle/",
+            "locator": "Sid Phillips from Toy Story subsection identifies full name, 1995 film and tormenting Andy’s toys."
+          }
+        ]
+      }
+    ]
+  }
+}

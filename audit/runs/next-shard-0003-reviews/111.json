@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 111,
+  "hash": "1e2145a1aced03c3d09ed23a90409938e1633b336a1d0eb513ee21a3f164d659",
+  "questionSnapshot": {
+    "id": 111,
+    "question": "In what year did Shanghai Disneyland open?",
+    "answers": [
+      "2016",
+      "2014",
+      "2018",
+      "2012"
+    ],
+    "difficulty": "hard",
+    "category": "parks"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Final challenge checks the exact named entity/event against each listed alternative, not merely a matching answer keyword.",
+  "verification": {
+    "context": "In what year did Shanghai Disneyland open?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The opening was in June 2016.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/shanghai-disneyland/",
+          "locator": "Opening paragraph: park name and June 16, 2016 opening."
+        },
+        {
+          "url": "https://thewaltdisneycompany.com/news/shanghai-disney-resort-opens-in-mainland-china/",
+          "locator": "June 16, 2016 publication; opening ceremony and park dedication naming Shanghai Disneyland."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tried each alternative against the literal final scope: 2014: Two years before the documented opening. 2018: Two years after the documented opening. 2012: Four years before the documented opening."
+    },
+    "options": [
+      {
+        "answer": "2016",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The opening was in June 2016.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/shanghai-disneyland/",
+            "locator": "Opening paragraph: park name and June 16, 2016 opening."
+          },
+          {
+            "url": "https://thewaltdisneycompany.com/news/shanghai-disney-resort-opens-in-mainland-china/",
+            "locator": "June 16, 2016 publication; opening ceremony and park dedication naming Shanghai Disneyland."
+          }
+        ]
+      },
+      {
+        "answer": "2014",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Two years before the documented opening.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/shanghai-disneyland/",
+            "locator": "Opening paragraph: park name and June 16, 2016 opening."
+          },
+          {
+            "url": "https://thewaltdisneycompany.com/news/shanghai-disney-resort-opens-in-mainland-china/",
+            "locator": "June 16, 2016 publication; opening ceremony and park dedication naming Shanghai Disneyland."
+          }
+        ]
+      },
+      {
+        "answer": "2018",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Two years after the documented opening.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/shanghai-disneyland/",
+            "locator": "Opening paragraph: park name and June 16, 2016 opening."
+          },
+          {
+            "url": "https://thewaltdisneycompany.com/news/shanghai-disney-resort-opens-in-mainland-china/",
+            "locator": "June 16, 2016 publication; opening ceremony and park dedication naming Shanghai Disneyland."
+          }
+        ]
+      },
+      {
+        "answer": "2012",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Four years before the documented opening.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/shanghai-disneyland/",
+            "locator": "Opening paragraph: park name and June 16, 2016 opening."
+          },
+          {
+            "url": "https://thewaltdisneycompany.com/news/shanghai-disney-resort-opens-in-mainland-china/",
+            "locator": "June 16, 2016 publication; opening ceremony and park dedication naming Shanghai Disneyland."
+          }
+        ]
+      }
+    ]
+  }
+}

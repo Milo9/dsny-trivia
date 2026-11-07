@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 226,
+  "hash": "0223db5825b59a5c9be8b7f2305c87bc6b6e1b59a22bda2dcc005ed47f00d511",
+  "questionSnapshot": {
+    "id": 226,
+    "question": "In 101 Dalmatians, who is the main villain who wants the puppies for their fur?",
+    "answers": [
+      "Cruella de Vil",
+      "Lady Tremaine",
+      "Maleficent",
+      "Ursula"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Tested the three other Disney villains against this exact motive and film. Cruella’s identifying role does not by itself establish the film’s musical song credit; q999 asks an additional song-film association.",
+  "verification": {
+    "context": "In 101 Dalmatians, who is the main villain who wants the puppies for their fur?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "D23 explicitly assigns puppy kidnapping and fur-coat motive to Cruella.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/one-hundred-and-one-dalmatians-film/",
+          "locator": "Opening: Perdita produces 15 puppies; Cruella kidnaps them for fur coat. Next paragraphs distinguish 99 rescued puppies and 101 dogs including parents."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tested the three other Disney villains against this exact motive and film. Cruella’s identifying role does not by itself establish the film’s musical song credit; q999 asks an additional song-film association."
+    },
+    "options": [
+      {
+        "answer": "Cruella de Vil",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "D23 explicitly assigns puppy kidnapping and fur-coat motive to Cruella.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/one-hundred-and-one-dalmatians-film/",
+            "locator": "Opening: Perdita produces 15 puppies; Cruella kidnaps them for fur coat. Next paragraphs distinguish 99 rescued puppies and 101 dogs including parents."
+          }
+        ]
+      },
+      {
+        "answer": "Lady Tremaine",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the villain identified for the kidnapping/fur plot.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/one-hundred-and-one-dalmatians-film/",
+            "locator": "Opening: Perdita produces 15 puppies; Cruella kidnaps them for fur coat. Next paragraphs distinguish 99 rescued puppies and 101 dogs including parents."
+          }
+        ]
+      },
+      {
+        "answer": "Maleficent",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the villain identified for the kidnapping/fur plot.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/one-hundred-and-one-dalmatians-film/",
+            "locator": "Opening: Perdita produces 15 puppies; Cruella kidnaps them for fur coat. Next paragraphs distinguish 99 rescued puppies and 101 dogs including parents."
+          }
+        ]
+      },
+      {
+        "answer": "Ursula",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the villain identified for the kidnapping/fur plot.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/one-hundred-and-one-dalmatians-film/",
+            "locator": "Opening: Perdita produces 15 puppies; Cruella kidnaps them for fur coat. Next paragraphs distinguish 99 rescued puppies and 101 dogs including parents."
+          }
+        ]
+      }
+    ]
+  }
+}

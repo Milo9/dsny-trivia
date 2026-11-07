@@ -1,0 +1,141 @@
+{
+  "schema": 2,
+  "questionId": 142,
+  "hash": "250a7af7e0d1ef887d131edca2db3fb5326b7910124030ed74e4516a66403cdd",
+  "questionSnapshot": {
+    "id": 142,
+    "question": "Which statue was featured in Disney Magic's atrium following its 2013 redesign?",
+    "answers": [
+      "Helmsman Mickey",
+      "Admiral Donald",
+      "Mademoiselle Minnie",
+      "Captain Minnie"
+    ],
+    "difficulty": "hard",
+    "category": "cruise"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Bound the claim to the 2013 redesign rather than asserting indefinite current status. Identified exact centerpiece in Disney news reproduction, independently corroborated announcement and dated post-redesign photograph. Live official DCL page inaccessible; external-host/provenance limitation retained. Only one of these named statues is the documented centerpiece.",
+  "verification": {
+    "context": "Which statue was featured in Disney Magic's atrium following its 2013 redesign?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Disney news reprint identifies atrium centerpiece Helmsman Mickey; contemporary report and post-redesign photo corroborate.",
+      "sources": [
+        {
+          "url": "https://www.celebrationspress.com/issues/Celebrations-Issue-30-DV16498.pdf",
+          "locator": "Disney News / Disney Magic enhancements, PDF page 14: atrium centerpiece is Helmsman Mickey, planned makeover. Disney news reproduced in external magazine; official live DCL page inaccessible."
+        },
+        {
+          "url": "https://www.wdwinfo.com/news/disney-cruise-line/Enhancements_coming_to_Disney_Cruise_Line_s_Magic_ship.htm",
+          "locator": "April 26, 2013, atrium paragraph: Helmsman Mickey relocation and makeover in redesign. Secondary corroboration, not described as official DCL source."
+        },
+        {
+          "url": "https://dailydisneyphoto.com/2014/11/03/atrium-lobby-aboard-the-disney-magic-leo-decandia/",
+          "locator": "Dated November 3, 2014, Leo deCandia atrium photograph and caption identify bronze Helmsman Mickey after 2013 redesign. Firsthand post-redesign corroboration."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Bound the claim to the 2013 redesign rather than asserting indefinite current status. Identified exact centerpiece in Disney news reproduction, independently corroborated announcement and dated post-redesign photograph. Live official DCL page inaccessible; external-host/provenance limitation retained. Only one of these named statues is the documented centerpiece."
+    },
+    "options": [
+      {
+        "answer": "Helmsman Mickey",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Disney news reprint identifies atrium centerpiece Helmsman Mickey; contemporary report and post-redesign photo corroborate.",
+        "sources": [
+          {
+            "url": "https://www.celebrationspress.com/issues/Celebrations-Issue-30-DV16498.pdf",
+            "locator": "Disney News / Disney Magic enhancements, PDF page 14: atrium centerpiece is Helmsman Mickey, planned makeover. Disney news reproduced in external magazine; official live DCL page inaccessible."
+          },
+          {
+            "url": "https://www.wdwinfo.com/news/disney-cruise-line/Enhancements_coming_to_Disney_Cruise_Line_s_Magic_ship.htm",
+            "locator": "April 26, 2013, atrium paragraph: Helmsman Mickey relocation and makeover in redesign. Secondary corroboration, not described as official DCL source."
+          },
+          {
+            "url": "https://dailydisneyphoto.com/2014/11/03/atrium-lobby-aboard-the-disney-magic-leo-decandia/",
+            "locator": "Dated November 3, 2014, Leo deCandia atrium photograph and caption identify bronze Helmsman Mickey after 2013 redesign. Firsthand post-redesign corroboration."
+          }
+        ]
+      },
+      {
+        "answer": "Admiral Donald",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different named statue from the specified Magic centerpiece.",
+        "sources": [
+          {
+            "url": "https://www.celebrationspress.com/issues/Celebrations-Issue-30-DV16498.pdf",
+            "locator": "Disney News / Disney Magic enhancements, PDF page 14: atrium centerpiece is Helmsman Mickey, planned makeover. Disney news reproduced in external magazine; official live DCL page inaccessible."
+          },
+          {
+            "url": "https://www.wdwinfo.com/news/disney-cruise-line/Enhancements_coming_to_Disney_Cruise_Line_s_Magic_ship.htm",
+            "locator": "April 26, 2013, atrium paragraph: Helmsman Mickey relocation and makeover in redesign. Secondary corroboration, not described as official DCL source."
+          },
+          {
+            "url": "https://dailydisneyphoto.com/2014/11/03/atrium-lobby-aboard-the-disney-magic-leo-decandia/",
+            "locator": "Dated November 3, 2014, Leo deCandia atrium photograph and caption identify bronze Helmsman Mickey after 2013 redesign. Firsthand post-redesign corroboration."
+          }
+        ]
+      },
+      {
+        "answer": "Mademoiselle Minnie",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different named statue from the specified Magic centerpiece.",
+        "sources": [
+          {
+            "url": "https://www.celebrationspress.com/issues/Celebrations-Issue-30-DV16498.pdf",
+            "locator": "Disney News / Disney Magic enhancements, PDF page 14: atrium centerpiece is Helmsman Mickey, planned makeover. Disney news reproduced in external magazine; official live DCL page inaccessible."
+          },
+          {
+            "url": "https://www.wdwinfo.com/news/disney-cruise-line/Enhancements_coming_to_Disney_Cruise_Line_s_Magic_ship.htm",
+            "locator": "April 26, 2013, atrium paragraph: Helmsman Mickey relocation and makeover in redesign. Secondary corroboration, not described as official DCL source."
+          },
+          {
+            "url": "https://dailydisneyphoto.com/2014/11/03/atrium-lobby-aboard-the-disney-magic-leo-decandia/",
+            "locator": "Dated November 3, 2014, Leo deCandia atrium photograph and caption identify bronze Helmsman Mickey after 2013 redesign. Firsthand post-redesign corroboration."
+          }
+        ]
+      },
+      {
+        "answer": "Captain Minnie",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different character/designation from the specified Helmsman Mickey.",
+        "sources": [
+          {
+            "url": "https://www.celebrationspress.com/issues/Celebrations-Issue-30-DV16498.pdf",
+            "locator": "Disney News / Disney Magic enhancements, PDF page 14: atrium centerpiece is Helmsman Mickey, planned makeover. Disney news reproduced in external magazine; official live DCL page inaccessible."
+          },
+          {
+            "url": "https://www.wdwinfo.com/news/disney-cruise-line/Enhancements_coming_to_Disney_Cruise_Line_s_Magic_ship.htm",
+            "locator": "April 26, 2013, atrium paragraph: Helmsman Mickey relocation and makeover in redesign. Secondary corroboration, not described as official DCL source."
+          },
+          {
+            "url": "https://dailydisneyphoto.com/2014/11/03/atrium-lobby-aboard-the-disney-magic-leo-decandia/",
+            "locator": "Dated November 3, 2014, Leo deCandia atrium photograph and caption identify bronze Helmsman Mickey after 2013 redesign. Firsthand post-redesign corroboration."
+          }
+        ]
+      }
+    ]
+  }
+}

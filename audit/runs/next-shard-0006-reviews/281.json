@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 281,
+  "hash": "f39235bfc356dc617efd3b185a4d131bd5c76408c4b034ee49416c2857c22e4a",
+  "questionSnapshot": {
+    "id": 281,
+    "question": "In Disney's Peter Pan (1953), what magical land is Peter's home?",
+    "answers": [
+      "Neverland",
+      "Fantasyland",
+      "Dreamland",
+      "Fairyland"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Specified 1953 film to distinguish parks and literary adaptations. Neverland/Never Land are spelling variants, no separate alternative. Other land names do not identify the named story world.",
+  "verification": {
+    "context": "In Disney's Peter Pan (1953), what magical land is Peter's home?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Studio synopsis identifies Never Land as Peter destination/home world.",
+      "sources": [
+        {
+          "url": "https://www.disneyanimation.com/films/peter-pan/",
+          "locator": "Studio synopsis: Peter leads Wendy and brothers to Never Land; 1953 feature."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Specified 1953 film to distinguish parks and literary adaptations. Neverland/Never Land are spelling variants, no separate alternative. Other land names do not identify the named story world."
+    },
+    "options": [
+      {
+        "answer": "Neverland",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Studio synopsis identifies Never Land as Peter destination/home world.",
+        "sources": [
+          {
+            "url": "https://www.disneyanimation.com/films/peter-pan/",
+            "locator": "Studio synopsis: Peter leads Wendy and brothers to Never Land; 1953 feature."
+          }
+        ]
+      },
+      {
+        "answer": "Fantasyland",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Fantasyland is not the film world identified.",
+        "sources": [
+          {
+            "url": "https://www.disneyanimation.com/films/peter-pan/",
+            "locator": "Studio synopsis: Peter leads Wendy and brothers to Never Land; 1953 feature."
+          }
+        ]
+      },
+      {
+        "answer": "Dreamland",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Dreamland is not the film world identified.",
+        "sources": [
+          {
+            "url": "https://www.disneyanimation.com/films/peter-pan/",
+            "locator": "Studio synopsis: Peter leads Wendy and brothers to Never Land; 1953 feature."
+          }
+        ]
+      },
+      {
+        "answer": "Fairyland",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Fairyland is not the film world identified.",
+        "sources": [
+          {
+            "url": "https://www.disneyanimation.com/films/peter-pan/",
+            "locator": "Studio synopsis: Peter leads Wendy and brothers to Never Land; 1953 feature."
+          }
+        ]
+      }
+    ]
+  }
+}

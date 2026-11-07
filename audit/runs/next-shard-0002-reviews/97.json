@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 97,
+  "hash": "add7deba5f75a129b609849153cf84bdf8998c840d59d411699e2db7b2d62852",
+  "questionSnapshot": {
+    "id": 97,
+    "question": "In what year did EPCOT open at Walt Disney World?",
+    "answers": [
+      "1982",
+      "1971",
+      "1989",
+      "1975"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "q687 concerns the resort’s 1971 opening and q102 Animal Kingdom’s 1998 opening: different establishments and events. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "Walt Disney World, specified park/attraction; current naming/layout at review date.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "EPCOT Center opened to guests on October 1, 1982.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/epcot/",
+          "locator": "Opening paragraph gives October 1, 1982 park opening; later original-layout paragraph identifies Future World and World Showcase as areas."
+        },
+        {
+          "url": "https://d23.com/weve-just-begun-to-dream/",
+          "locator": "Walt Disney Archives account, opening paragraph dates public opening October 1, 1982; later paragraph calls Spaceship Earth a geodesic sphere."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Distinguished public opening from later October dedication ceremonies and the 1966 EPCOT concept. Both official historical accounts agree on 1982; the other years cannot also identify that event."
+    },
+    "options": [
+      {
+        "answer": "1982",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "1982 is the documented public-opening year.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/epcot/",
+            "locator": "Opening paragraph gives October 1, 1982 park opening; later original-layout paragraph identifies Future World and World Showcase as areas."
+          },
+          {
+            "url": "https://d23.com/weve-just-begun-to-dream/",
+            "locator": "Walt Disney Archives account, opening paragraph dates public opening October 1, 1982; later paragraph calls Spaceship Earth a geodesic sphere."
+          }
+        ]
+      },
+      {
+        "answer": "1971",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "1971 is not EPCOT’s opening year.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/epcot/",
+            "locator": "Opening paragraph gives October 1, 1982 park opening; later original-layout paragraph identifies Future World and World Showcase as areas."
+          },
+          {
+            "url": "https://d23.com/weve-just-begun-to-dream/",
+            "locator": "Walt Disney Archives account, opening paragraph dates public opening October 1, 1982; later paragraph calls Spaceship Earth a geodesic sphere."
+          }
+        ]
+      },
+      {
+        "answer": "1989",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "1989 is not EPCOT’s opening year.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/epcot/",
+            "locator": "Opening paragraph gives October 1, 1982 park opening; later original-layout paragraph identifies Future World and World Showcase as areas."
+          },
+          {
+            "url": "https://d23.com/weve-just-begun-to-dream/",
+            "locator": "Walt Disney Archives account, opening paragraph dates public opening October 1, 1982; later paragraph calls Spaceship Earth a geodesic sphere."
+          }
+        ]
+      },
+      {
+        "answer": "1975",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "1975 is not EPCOT’s opening year.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/epcot/",
+            "locator": "Opening paragraph gives October 1, 1982 park opening; later original-layout paragraph identifies Future World and World Showcase as areas."
+          },
+          {
+            "url": "https://d23.com/weve-just-begun-to-dream/",
+            "locator": "Walt Disney Archives account, opening paragraph dates public opening October 1, 1982; later paragraph calls Spaceship Earth a geodesic sphere."
+          }
+        ]
+      }
+    ]
+  }
+}

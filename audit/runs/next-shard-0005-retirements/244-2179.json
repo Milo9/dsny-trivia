@@ -1,0 +1,30 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "retired": {
+    "id": 244,
+    "question": "In Coco, who is the true original songwriter of the songs Ernesto de la Cruz claims as his own?",
+    "answers": [
+      "Héctor",
+      "Chicharrón",
+      "Papá Julio",
+      "Miguel"
+    ],
+    "difficulty": "medium",
+    "category": "pixar"
+  },
+  "retained": {
+    "id": 2179,
+    "question": "In Coco, how did Ernesto de la Cruz really become famous off of Hector's songs?",
+    "answers": [
+      "Poisoning Hector and stealing his songs",
+      "Tricking Hector into signing away the rights",
+      "Bribing Hector's publisher",
+      "Claiming credit after Hector's natural death"
+    ],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  "rationale": "The retained question explicitly tests Ernesto poisoning Hector and stealing his songs. That answer already establishes the original songwriter; retire the simpler overlapping authorship question.",
+  "scope": "Only the planned ID is retired. Replacement is duplicate context; no factual approval is inferred for it."
+}

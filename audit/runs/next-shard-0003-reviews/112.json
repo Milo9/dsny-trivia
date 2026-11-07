@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 112,
+  "hash": "6cc392e137912d3af4df6176598469bb53b1d34502845ab03016b02f2e7eac09",
+  "questionSnapshot": {
+    "id": 112,
+    "question": "What is the name of the steam railroad that circles the perimeter of Magic Kingdom?",
+    "answers": [
+      "Walt Disney World Railroad",
+      "Magic Kingdom Express",
+      "Fantasyland Railroad",
+      "Disney Steam Railway"
+    ],
+    "difficulty": "hard",
+    "category": "parks"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Final challenge checks the exact named entity/event against each listed alternative, not merely a matching answer keyword.",
+  "verification": {
+    "context": "What is the name of the steam railroad that circles the perimeter of Magic Kingdom?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Documented name of the railroad circling Magic Kingdom.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/walt-disney-world-railroad/",
+          "locator": "Opening two paragraphs: named Magic Kingdom attraction; tracks circle the park."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tried each alternative against the literal final scope: Magic Kingdom Express: Not that attraction's documented name. Fantasyland Railroad: Not that attraction's documented name. Disney Steam Railway: Not that attraction's documented name."
+    },
+    "options": [
+      {
+        "answer": "Walt Disney World Railroad",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Documented name of the railroad circling Magic Kingdom.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/walt-disney-world-railroad/",
+            "locator": "Opening two paragraphs: named Magic Kingdom attraction; tracks circle the park."
+          }
+        ]
+      },
+      {
+        "answer": "Magic Kingdom Express",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not that attraction's documented name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/walt-disney-world-railroad/",
+            "locator": "Opening two paragraphs: named Magic Kingdom attraction; tracks circle the park."
+          }
+        ]
+      },
+      {
+        "answer": "Fantasyland Railroad",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not that attraction's documented name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/walt-disney-world-railroad/",
+            "locator": "Opening two paragraphs: named Magic Kingdom attraction; tracks circle the park."
+          }
+        ]
+      },
+      {
+        "answer": "Disney Steam Railway",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not that attraction's documented name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/walt-disney-world-railroad/",
+            "locator": "Opening two paragraphs: named Magic Kingdom attraction; tracks circle the park."
+          }
+        ]
+      }
+    ]
+  }
+}

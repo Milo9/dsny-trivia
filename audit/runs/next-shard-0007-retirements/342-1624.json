@@ -1,0 +1,31 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "retired": {
+    "id": 342,
+    "question": "What gondola system connects select resorts and parks at Walt Disney World?",
+    "answers": [
+      "Disney Skyliner",
+      "Disney Sky Gondola",
+      "Disney SkyTram",
+      "Disney AerialRide"
+    ],
+    "difficulty": "easy",
+    "category": "parks"
+  },
+  "retained": {
+    "id": 1624,
+    "question": "What is the name of the Walt Disney World Resort hotel that opened in 2019, themed to a grand European getaway and featuring a Skyliner gondola stop?",
+    "answers": [
+      "Disney's Riviera Resort",
+      "Disney's Boardwalk Inn",
+      "Disney's Beach Club Resort",
+      "Disney's Coronado Springs Resort"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "additionalComparisons": [],
+  "rationale": "The retained Riviera Resort question explicitly describes a Skyliner gondola stop at Walt Disney World. Its stem supplies the system's name and transport type, directly answering this simple system identity question.",
+  "scope": "Only the planned question is retired. Comparing a replacement does not approve its factual review."
+}

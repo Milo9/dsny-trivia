@@ -1,0 +1,161 @@
+{
+  "schema": 2,
+  "questionId": 159,
+  "hash": "19aa1f9f5e684423030e142b2f51d5fd3e3fb320eab752e428a1b34cc54b813f",
+  "questionSnapshot": {
+    "id": 159,
+    "question": "Who composed the music for The Little Mermaid, Beauty and the Beast, and Aladdin?",
+    "answers": [
+      "Alan Menken",
+      "Elton John",
+      "Howard Ashman",
+      "Phil Collins"
+    ],
+    "difficulty": "medium",
+    "category": "music"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged Ashman as a co-writer: composer and lyricist are different roles. Menken composed the music; the cited explicit credits distinguish Ashman and Rice as lyric collaborators. No claim that Ashman never wrote music elsewhere is needed.",
+  "verification": {
+    "context": "Who composed the music for The Little Mermaid, Beauty and the Beast, and Aladdin?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Menken is the composer; the three-film music attribution agrees with the song/score credits.",
+      "sources": [
+        {
+          "url": "https://disney.go.com/disneyrecords/Soundtracks/Beauty_on_Broadway/index.html",
+          "locator": "Opening credits explicitly distinguish composer Alan Menken from lyricist Howard Ashman for the film songs; additional stage lyrics are Tim Rice."
+        },
+        {
+          "url": "https://d23.com/a-to-z/aladdin-film/",
+          "locator": "Songwriting paragraphs: Ashman collaborated with Menken; Rice supplied later lyrics. Best Original Score award paragraph."
+        },
+        {
+          "url": "https://www.oscars.org/oscars/ceremonies/1990",
+          "locator": "Music (Original Score) winner is The Little Mermaid, Alan Menken; Original Song credits split Menken music and Ashman lyric."
+        },
+        {
+          "url": "https://www.oscars.org/oscars/ceremonies/1993",
+          "locator": "Music (Original Score) winner: Aladdin, Alan Menken; Music (Original Song) identifies Menken music and Rice lyrics; film listing separately credits Ashman lyrics on Friend Like Me."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged Ashman as a co-writer: composer and lyricist are different roles. Menken composed the music; the cited explicit credits distinguish Ashman and Rice as lyric collaborators. No claim that Ashman never wrote music elsewhere is needed."
+    },
+    "options": [
+      {
+        "answer": "Alan Menken",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Menken is the composer; the three-film music attribution agrees with the song/score credits.",
+        "sources": [
+          {
+            "url": "https://disney.go.com/disneyrecords/Soundtracks/Beauty_on_Broadway/index.html",
+            "locator": "Opening credits explicitly distinguish composer Alan Menken from lyricist Howard Ashman for the film songs; additional stage lyrics are Tim Rice."
+          },
+          {
+            "url": "https://d23.com/a-to-z/aladdin-film/",
+            "locator": "Songwriting paragraphs: Ashman collaborated with Menken; Rice supplied later lyrics. Best Original Score award paragraph."
+          },
+          {
+            "url": "https://www.oscars.org/oscars/ceremonies/1990",
+            "locator": "Music (Original Score) winner is The Little Mermaid, Alan Menken; Original Song credits split Menken music and Ashman lyric."
+          },
+          {
+            "url": "https://www.oscars.org/oscars/ceremonies/1993",
+            "locator": "Music (Original Score) winner: Aladdin, Alan Menken; Music (Original Song) identifies Menken music and Rice lyrics; film listing separately credits Ashman lyrics on Friend Like Me."
+          }
+        ]
+      },
+      {
+        "answer": "Elton John",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the composer credited for these films.",
+        "sources": [
+          {
+            "url": "https://disney.go.com/disneyrecords/Soundtracks/Beauty_on_Broadway/index.html",
+            "locator": "Opening credits explicitly distinguish composer Alan Menken from lyricist Howard Ashman for the film songs; additional stage lyrics are Tim Rice."
+          },
+          {
+            "url": "https://d23.com/a-to-z/aladdin-film/",
+            "locator": "Songwriting paragraphs: Ashman collaborated with Menken; Rice supplied later lyrics. Best Original Score award paragraph."
+          },
+          {
+            "url": "https://www.oscars.org/oscars/ceremonies/1990",
+            "locator": "Music (Original Score) winner is The Little Mermaid, Alan Menken; Original Song credits split Menken music and Ashman lyric."
+          },
+          {
+            "url": "https://www.oscars.org/oscars/ceremonies/1993",
+            "locator": "Music (Original Score) winner: Aladdin, Alan Menken; Music (Original Song) identifies Menken music and Rice lyrics; film listing separately credits Ashman lyrics on Friend Like Me."
+          }
+        ]
+      },
+      {
+        "answer": "Howard Ashman",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Ashman supplied lyrics, not Menken’s musical compositions.",
+        "sources": [
+          {
+            "url": "https://disney.go.com/disneyrecords/Soundtracks/Beauty_on_Broadway/index.html",
+            "locator": "Opening credits explicitly distinguish composer Alan Menken from lyricist Howard Ashman for the film songs; additional stage lyrics are Tim Rice."
+          },
+          {
+            "url": "https://d23.com/a-to-z/aladdin-film/",
+            "locator": "Songwriting paragraphs: Ashman collaborated with Menken; Rice supplied later lyrics. Best Original Score award paragraph."
+          },
+          {
+            "url": "https://www.oscars.org/oscars/ceremonies/1990",
+            "locator": "Music (Original Score) winner is The Little Mermaid, Alan Menken; Original Song credits split Menken music and Ashman lyric."
+          },
+          {
+            "url": "https://www.oscars.org/oscars/ceremonies/1993",
+            "locator": "Music (Original Score) winner: Aladdin, Alan Menken; Music (Original Song) identifies Menken music and Rice lyrics; film listing separately credits Ashman lyrics on Friend Like Me."
+          }
+        ]
+      },
+      {
+        "answer": "Phil Collins",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the composer credited for these films.",
+        "sources": [
+          {
+            "url": "https://disney.go.com/disneyrecords/Soundtracks/Beauty_on_Broadway/index.html",
+            "locator": "Opening credits explicitly distinguish composer Alan Menken from lyricist Howard Ashman for the film songs; additional stage lyrics are Tim Rice."
+          },
+          {
+            "url": "https://d23.com/a-to-z/aladdin-film/",
+            "locator": "Songwriting paragraphs: Ashman collaborated with Menken; Rice supplied later lyrics. Best Original Score award paragraph."
+          },
+          {
+            "url": "https://www.oscars.org/oscars/ceremonies/1990",
+            "locator": "Music (Original Score) winner is The Little Mermaid, Alan Menken; Original Song credits split Menken music and Ashman lyric."
+          },
+          {
+            "url": "https://www.oscars.org/oscars/ceremonies/1993",
+            "locator": "Music (Original Score) winner: Aladdin, Alan Menken; Music (Original Song) identifies Menken music and Rice lyrics; film listing separately credits Ashman lyrics on Friend Like Me."
+          }
+        ]
+      }
+    ]
+  }
+}

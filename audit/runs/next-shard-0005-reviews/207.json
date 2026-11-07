@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 207,
+  "hash": "ee076a468666c3e7320bc442c373d556d7d689886930dbd0cc5f33c55f0b003a",
+  "questionSnapshot": {
+    "id": 207,
+    "question": "What is the name of Moana's island home?",
+    "answers": [
+      "Motunui",
+      "Lalotai",
+      "Te Fiti",
+      "Maui"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Tried Te Fiti as another island and Lalotai as another location; the home-community qualifier and named Motunui leadership exclude both. Maui is a person, not the requested place.",
+  "verification": {
+    "context": "What is the name of Moana's island home?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Motunui is the home island led by her father Tui.",
+      "sources": [
+        {
+          "url": "https://d23.com/news-briefs-july-27-2016/",
+          "locator": "Huge Moana News, character paragraph: Tui leads Motunui; Lalotai is the realm of monsters; Maui is a demigod, Tala grandmother, Sina mother, Heihei rooster."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tried Te Fiti as another island and Lalotai as another location; the home-community qualifier and named Motunui leadership exclude both. Maui is a person, not the requested place."
+    },
+    "options": [
+      {
+        "answer": "Motunui",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Motunui is the home island led by her father Tui.",
+        "sources": [
+          {
+            "url": "https://d23.com/news-briefs-july-27-2016/",
+            "locator": "Huge Moana News, character paragraph: Tui leads Motunui; Lalotai is the realm of monsters; Maui is a demigod, Tala grandmother, Sina mother, Heihei rooster."
+          }
+        ]
+      },
+      {
+        "answer": "Lalotai",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Lalotai is the monsters’ realm, not her island community.",
+        "sources": [
+          {
+            "url": "https://d23.com/news-briefs-july-27-2016/",
+            "locator": "Huge Moana News, character paragraph: Tui leads Motunui; Lalotai is the realm of monsters; Maui is a demigod, Tala grandmother, Sina mother, Heihei rooster."
+          }
+        ]
+      },
+      {
+        "answer": "Te Fiti",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Te Fiti is the goddess/destination of the quest, not Tui’s Motunui community.",
+        "sources": [
+          {
+            "url": "https://d23.com/news-briefs-july-27-2016/",
+            "locator": "Huge Moana News, character paragraph: Tui leads Motunui; Lalotai is the realm of monsters; Maui is a demigod, Tala grandmother, Sina mother, Heihei rooster."
+          }
+        ]
+      },
+      {
+        "answer": "Maui",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Maui is the demigod companion, not the island home.",
+        "sources": [
+          {
+            "url": "https://d23.com/news-briefs-july-27-2016/",
+            "locator": "Huge Moana News, character paragraph: Tui leads Motunui; Lalotai is the realm of monsters; Maui is a demigod, Tala grandmother, Sina mother, Heihei rooster."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "questionId": 46,
+  "hash": "58f90def37ac7e58889545047763ffb02a82613e7c5a2664e419ecb71aef7f47",
+  "questionSnapshot": {
+    "id": 46,
+    "question": "Who is the criminal mastermind plotting against the queen in The Great Mouse Detective (1986)?",
+    "answers": [
+      "Professor Ratigan",
+      "Basil",
+      "Dr. Dawson",
+      "Hiram Flaversham"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Replaced weak unrelated distractors with in-film characters having documented contrasting roles, and reduced hard to medium. #325 species and #2497 voice actor require separate facts.",
+  "verification": {
+    "context": "The Great Mouse Detective, Disney animated 1986 film, criminal mastermind of the queen-replacement plot.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Professor Ratigan",
+        "verdict": "correct",
+        "reason": "Ratigan has Flaversham kidnapped to build the queen replica for his coup.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/great-mouse-detective-the-film/",
+            "locator": "Opening synopsis: Ratigan abducts toymaker Flaversham for queen-replacement plot; Basil and Dr. Dawson help Olivia and foil Ratigan."
+          }
+        ]
+      },
+      {
+        "answer": "Basil",
+        "verdict": "incorrect",
+        "reason": "Basil investigates and foils Ratigan's scheme.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/great-mouse-detective-the-film/",
+            "locator": "Opening synopsis: Ratigan abducts toymaker Flaversham for queen-replacement plot; Basil and Dr. Dawson help Olivia and foil Ratigan."
+          }
+        ]
+      },
+      {
+        "answer": "Dr. Dawson",
+        "verdict": "incorrect",
+        "reason": "Dr. Dawson aids Basil and Olivia rather than masterminding the crime.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/great-mouse-detective-the-film/",
+            "locator": "Opening synopsis: Ratigan abducts toymaker Flaversham for queen-replacement plot; Basil and Dr. Dawson help Olivia and foil Ratigan."
+          }
+        ]
+      },
+      {
+        "answer": "Hiram Flaversham",
+        "verdict": "incorrect",
+        "reason": "Flaversham is the abducted toymaker forced to make the robot, not the mastermind.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/great-mouse-detective-the-film/",
+            "locator": "Opening synopsis: Ratigan abducts toymaker Flaversham for queen-replacement plot; Basil and Dr. Dawson help Olivia and foil Ratigan."
+          }
+        ]
+      }
+    ]
+  }
+}

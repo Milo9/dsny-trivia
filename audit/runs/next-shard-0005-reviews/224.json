@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 224,
+  "hash": "a3906ff10da9107c3738d572c35e3e8d3502064faa9f73c454c185b19eb6d48f",
+  "questionSnapshot": {
+    "id": 224,
+    "question": "What is the name of the city in Aladdin?",
+    "answers": [
+      "Agrabah",
+      "Arabistan",
+      "Baghdad",
+      "Sharabah"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Separated inspirations and earlier story settings from Disney’s finished-film city. Baghdad or another Arabic-sounding name is not Agrabah.",
+  "verification": {
+    "context": "What is the name of the city in Aladdin?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Opening explicitly identifies Agrabah.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/aladdin-film/",
+          "locator": "Opening identifies mythical city Agrabah; distinguishes evil vizier Jafar from Genie and Sultan."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Separated inspirations and earlier story settings from Disney’s finished-film city. Baghdad or another Arabic-sounding name is not Agrabah."
+    },
+    "options": [
+      {
+        "answer": "Agrabah",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Opening explicitly identifies Agrabah.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/aladdin-film/",
+            "locator": "Opening identifies mythical city Agrabah; distinguishes evil vizier Jafar from Genie and Sultan."
+          }
+        ]
+      },
+      {
+        "answer": "Arabistan",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different place-name from the fictional city identified.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/aladdin-film/",
+            "locator": "Opening identifies mythical city Agrabah; distinguishes evil vizier Jafar from Genie and Sultan."
+          }
+        ]
+      },
+      {
+        "answer": "Baghdad",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Real-world city is not Disney’s explicitly named Agrabah.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/aladdin-film/",
+            "locator": "Opening identifies mythical city Agrabah; distinguishes evil vizier Jafar from Genie and Sultan."
+          }
+        ]
+      },
+      {
+        "answer": "Sharabah",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different place-name from the fictional city identified.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/aladdin-film/",
+            "locator": "Opening identifies mythical city Agrabah; distinguishes evil vizier Jafar from Genie and Sultan."
+          }
+        ]
+      }
+    ]
+  }
+}

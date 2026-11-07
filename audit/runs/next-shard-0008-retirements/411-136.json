@@ -1,0 +1,97 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "retired": {
+    "id": 411,
+    "question": "What are the names of the two original Disney Cruise Line ships that launched in the late 1990s?",
+    "answers": [
+      "Disney Magic and Disney Wonder",
+      "Disney Dream and Disney Fantasy",
+      "Disney Wish and Disney Treasure",
+      "Disney Magic and Disney Dream"
+    ],
+    "difficulty": "easy",
+    "category": "cruise"
+  },
+  "retained": {
+    "id": 136,
+    "question": "What is the name of Disney Cruise Line's first ship?",
+    "answers": [
+      "Disney Magic",
+      "Disney Wonder",
+      "Disney Dream",
+      "Disney Fantasy"
+    ],
+    "difficulty": "easy",
+    "category": "cruise"
+  },
+  "additionalComparisons": [
+    {
+      "id": 961,
+      "question": "Which Disney Cruise Line ship entered service in 1999 as the sister ship to Disney Magic?",
+      "answers": [
+        "Disney Wonder",
+        "Disney Dream",
+        "Disney Fantasy",
+        "Disney Wish"
+      ],
+      "difficulty": "medium",
+      "category": "cruise"
+    }
+  ],
+  "rationale": "This pair aggregates the same original-ship identities as 136 (first ship Magic) and 961 (Wonder, the 1999 sister). Retain those more specific historical questions; 136 is the primary replacement pointer.",
+  "sources": [
+    {
+      "sourceNoteId": "cruise-originals",
+      "url": "https://d23.com/a-to-z/disney-cruise-line/",
+      "locator": "Opening ship chronology",
+      "evidence": "The first DCL ships were Magic in July 1998 and Wonder in August 1999; Dream and Fantasy followed in 2011 and 2012.",
+      "checkedBy": "Codex",
+      "checkedAt": "2026-11-07",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "limitations": "Primary institutional text inspected; no film or video viewing claimed.",
+      "topics": [
+        "cruise"
+      ]
+    },
+    {
+      "sourceNoteId": "fleet-2025-table",
+      "url": "https://disneyexperiences.com/app/uploads/2025/03/FY25-Q3-DCL-Disney-Experiences-Fact-Sheet.pdf",
+      "locator": "Disney Cruise Line Fleet table",
+      "evidence": "The six listed ships are Magic (1998), Wonder (1999), Dream (2011), Fantasy (2012), Wish (2022) and Treasure (maiden voyage December 21, 2024).",
+      "checkedBy": "Codex",
+      "checkedAt": "2026-11-07",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "limitations": "Primary institutional text inspected; no film or video viewing claimed.",
+      "topics": [
+        "cruise"
+      ]
+    }
+  ],
+  "originalOptionAssessments": [
+    {
+      "answer": "Disney Magic and Disney Wonder",
+      "assessment": "Magic and Wonder were the first pair, in 1998 and 1999."
+    },
+    {
+      "answer": "Disney Dream and Disney Fantasy",
+      "assessment": "Dream and Fantasy followed in 2011 and 2012."
+    },
+    {
+      "answer": "Disney Wish and Disney Treasure",
+      "assessment": "Wish and Treasure entered service much later, in 2022 and 2024."
+    },
+    {
+      "answer": "Disney Magic and Disney Dream",
+      "assessment": "Magic fits but Dream does not belong to the 1990s pair."
+    }
+  ],
+  "finalChallenge": {
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "notes": "This pair aggregates the same original-ship identities as 136 (first ship Magic) and 961 (Wonder, the 1999 sister). Retain those more specific historical questions; 136 is the primary replacement pointer. All four original options inspected. Retirement avoids asserting approval of a flawed premise or an insufficiently excluded alternative."
+  },
+  "scope": "Only the planned ID is retired. Counterpart comparison is not approval of its other claims."
+}

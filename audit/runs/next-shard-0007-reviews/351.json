@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 351,
+  "hash": "bfa3f96dece60520ae22f40e27f69e8748f351671c601ca75924f4eb1dc0d543",
+  "questionSnapshot": {
+    "id": 351,
+    "question": "What name does Disney use for the boats serving EPCOT, Hollywood Studios, and the Swan and Dolphin hotels?",
+    "answers": [
+      "Friendship Boats",
+      "Disney Water Taxis",
+      "Resort Launches",
+      "EPCOT Ferries"
+    ],
+    "difficulty": "easy",
+    "category": "parks"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Explicitly asks Disney's name so that a loose generic water-taxi description cannot also qualify. Source lists the same parks and hotel route under Friendship Boats, not merely boats somewhere on property. The common word boats is shared by the question and multiple options and does not disclose Friendship. Parks transport scope fits; scheduled recheck for route/name changes. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+  "verification": {
+    "context": "What name does Disney use for the boats serving EPCOT, Hollywood Studios, and the Swan and Dolphin hotels? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+    "timeSensitive": true,
+    "nextReviewAt": "2027-02-04",
+    "premise": {
+      "reason": "The official Swan amenities page calls them Friendship Boats. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+      "sources": [
+        {
+          "url": "https://disneyworld.disney.go.com/en_CA/resorts/swan-hotel/amenities/",
+          "locator": "Disney Watercraft Transportation: Friendship Boat to EPCOT and Hollywood Studios, with Dolphin and other hotel stops"
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Explicitly asks Disney's name so that a loose generic water-taxi description cannot also qualify. Source lists the same parks and hotel route under Friendship Boats, not merely boats somewhere on property. The common word boats is shared by the question and multiple options and does not disclose Friendship. Parks transport scope fits; scheduled recheck for route/name changes."
+    },
+    "options": [
+      {
+        "answer": "Friendship Boats",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The official Swan amenities page calls them Friendship Boats.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/en_CA/resorts/swan-hotel/amenities/",
+            "locator": "Disney Watercraft Transportation: Friendship Boat to EPCOT and Hollywood Studios, with Dolphin and other hotel stops"
+          }
+        ]
+      },
+      {
+        "answer": "Disney Water Taxis",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Disney Water Taxis is not the specific name Disney uses for these boats on that page.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/en_CA/resorts/swan-hotel/amenities/",
+            "locator": "Disney Watercraft Transportation: Friendship Boat to EPCOT and Hollywood Studios, with Dolphin and other hotel stops"
+          }
+        ]
+      },
+      {
+        "answer": "Resort Launches",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Resort Launches is not the specific name assigned to this service.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/en_CA/resorts/swan-hotel/amenities/",
+            "locator": "Disney Watercraft Transportation: Friendship Boat to EPCOT and Hollywood Studios, with Dolphin and other hotel stops"
+          }
+        ]
+      },
+      {
+        "answer": "EPCOT Ferries",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "EPCOT Ferries is not the specific name assigned to this service.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/en_CA/resorts/swan-hotel/amenities/",
+            "locator": "Disney Watercraft Transportation: Friendship Boat to EPCOT and Hollywood Studios, with Dolphin and other hotel stops"
+          }
+        ]
+      }
+    ]
+  }
+}

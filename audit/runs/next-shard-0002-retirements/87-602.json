@@ -1,0 +1,37 @@
+{
+  "reviewer": "Codex (OpenAI)",
+  "questions": [
+    {
+      "id": 87,
+      "question": "In which U.S. state is the original Disneyland located?",
+      "answers": [
+        "California",
+        "Florida",
+        "Nevada",
+        "Arizona"
+      ],
+      "difficulty": "easy",
+      "category": "parks"
+    },
+    {
+      "id": 602,
+      "question": "In what city is Disneyland located?",
+      "answers": [
+        "Anaheim, California",
+        "Los Angeles, California",
+        "San Diego, California",
+        "San Francisco, California"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    }
+  ],
+  "decision": "The retained Anaheim, California location answer includes the entire California fact requested here and adds the city. Preserve the broader state-only question as retired.",
+  "evidence": [
+    {
+      "url": "https://d23.com/a-to-z/disneyland/",
+      "locator": "Opening sentence locates Disneyland in Anaheim, California."
+    }
+  ],
+  "replacementApproved": false
+}

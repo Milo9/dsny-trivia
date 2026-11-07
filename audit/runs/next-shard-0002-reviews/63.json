@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 63,
+  "hash": "09653e2dda0a46e81f6bfae6e50e9f3bb729cdb03b85eb3df71f968cb0451d0b",
+  "questionSnapshot": {
+    "id": 63,
+    "question": "What is Goofy's trademark exclamation of surprise?",
+    "answers": [
+      "Gawrsh!",
+      "Oh boy!",
+      "Wahoo!",
+      "Shucks!"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "No duplicate expression question found in the character digest or all-shard search. Easy character recognition. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "English-language Disney character naming; original theatrical feature where a film is named. What is Goofy's trademark exclamation of surprise?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Disney associates the stylized Gawrsh expression with Goofy in its dedicated character subsection.",
+      "sources": [
+        {
+          "url": "https://d23.com/celebrating-disney-characters-who-are-mad-as-hatters/",
+          "locator": "Goofy subsection, immediately after Roger Rabbit: introductory Gawrsh expression associated with Goofy."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "The question concerns a recognized signature expression, not a claim that Goofy never says any other exclamation. Comparing literal spellings and the character-specific attribution leaves Gawrsh as the defensible signature among these options."
+    },
+    "options": [
+      {
+        "answer": "Gawrsh!",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Gawrsh is the expression Disney uses to introduce Goofy’s subsection.",
+        "sources": [
+          {
+            "url": "https://d23.com/celebrating-disney-characters-who-are-mad-as-hatters/",
+            "locator": "Goofy subsection, immediately after Roger Rabbit: introductory Gawrsh expression associated with Goofy."
+          }
+        ]
+      },
+      {
+        "answer": "Oh boy!",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Oh boy is not the Goofy expression identified in that character introduction.",
+        "sources": [
+          {
+            "url": "https://d23.com/celebrating-disney-characters-who-are-mad-as-hatters/",
+            "locator": "Goofy subsection, immediately after Roger Rabbit: introductory Gawrsh expression associated with Goofy."
+          }
+        ]
+      },
+      {
+        "answer": "Wahoo!",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Wahoo is not the identified signature expression.",
+        "sources": [
+          {
+            "url": "https://d23.com/celebrating-disney-characters-who-are-mad-as-hatters/",
+            "locator": "Goofy subsection, immediately after Roger Rabbit: introductory Gawrsh expression associated with Goofy."
+          }
+        ]
+      },
+      {
+        "answer": "Shucks!",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Shucks is not the stylized Gawrsh expression.",
+        "sources": [
+          {
+            "url": "https://d23.com/celebrating-disney-characters-who-are-mad-as-hatters/",
+            "locator": "Goofy subsection, immediately after Roger Rabbit: introductory Gawrsh expression associated with Goofy."
+          }
+        ]
+      }
+    ]
+  }
+}

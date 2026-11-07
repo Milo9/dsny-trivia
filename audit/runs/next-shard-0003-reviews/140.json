@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 140,
+  "hash": "ddc868c00354dbc91f98c890633fa2933b03f14e002164fa56849a03f50ff977",
+  "questionSnapshot": {
+    "id": 140,
+    "question": "Which youth activity space aboard Disney Magic included Marvel Super Hero Academy as of November 2026?",
+    "answers": [
+      "The Oceaneer Club",
+      "Kids Kingdom",
+      "Disney Playhouse",
+      "The Magic Den"
+    ],
+    "difficulty": "medium",
+    "category": "cruise"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Challenged generic kids-space wording against nursery, Lab, Edge and Vibe. Final question tests the Marvel Academy association on Disney Magic, which the official club page states, rather than generic youth-club age/name recall. Historical month anchors the space configuration.",
+  "verification": {
+    "context": "Which youth activity space aboard Disney Magic included Marvel Super Hero Academy as of November 2026?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Official Oceaneer Club page locates Marvel Super Hero Academy in its Disney Magic section.",
+      "sources": [
+        {
+          "url": "https://disneycruise.disney.go.com/en-as/onboard-activities/oceaneer-youth-club/",
+          "locator": "Disney's Oceaneer Club heading, Ship Locations and On the Disney Magic section explicitly including Marvel Super Hero Academy."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged generic kids-space wording against nursery, Lab, Edge and Vibe. Final question tests the Marvel Academy association on Disney Magic, which the official club page states, rather than generic youth-club age/name recall. Historical month anchors the space configuration."
+    },
+    "options": [
+      {
+        "answer": "The Oceaneer Club",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Official Oceaneer Club page locates Marvel Super Hero Academy in its Disney Magic section.",
+        "sources": [
+          {
+            "url": "https://disneycruise.disney.go.com/en-as/onboard-activities/oceaneer-youth-club/",
+            "locator": "Disney's Oceaneer Club heading, Ship Locations and On the Disney Magic section explicitly including Marvel Super Hero Academy."
+          }
+        ]
+      },
+      {
+        "answer": "Kids Kingdom",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the named space in that ship-specific section.",
+        "sources": [
+          {
+            "url": "https://disneycruise.disney.go.com/en-as/onboard-activities/oceaneer-youth-club/",
+            "locator": "Disney's Oceaneer Club heading, Ship Locations and On the Disney Magic section explicitly including Marvel Super Hero Academy."
+          }
+        ]
+      },
+      {
+        "answer": "Disney Playhouse",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the named space in that ship-specific section.",
+        "sources": [
+          {
+            "url": "https://disneycruise.disney.go.com/en-as/onboard-activities/oceaneer-youth-club/",
+            "locator": "Disney's Oceaneer Club heading, Ship Locations and On the Disney Magic section explicitly including Marvel Super Hero Academy."
+          }
+        ]
+      },
+      {
+        "answer": "The Magic Den",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the named space in that ship-specific section.",
+        "sources": [
+          {
+            "url": "https://disneycruise.disney.go.com/en-as/onboard-activities/oceaneer-youth-club/",
+            "locator": "Disney's Oceaneer Club heading, Ship Locations and On the Disney Magic section explicitly including Marvel Super Hero Academy."
+          }
+        ]
+      }
+    ]
+  }
+}

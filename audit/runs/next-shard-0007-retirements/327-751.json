@@ -1,0 +1,56 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "retired": {
+    "id": 327,
+    "question": "In Bambi, what are the names of the three characters Bambi meets as a young fawn?",
+    "answers": [
+      "Thumper, Flower, and Faline",
+      "Thumper, Flower, and Friend Owl",
+      "Faline, Thumper, and the Great Prince",
+      "Flower, Friend Owl, and Faline"
+    ],
+    "difficulty": "hard",
+    "category": "characters"
+  },
+  "retained": {
+    "id": 751,
+    "question": "In Bambi, what is the name of the young rabbit who befriends Bambi?",
+    "answers": [
+      "Thumper",
+      "Flower",
+      "Friend Owl",
+      "Faline"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "additionalComparisons": [
+    {
+      "id": 218,
+      "question": "In Bambi, what is the name of Bambi's skunk friend?",
+      "answers": [
+        "Flower",
+        "Daisy",
+        "Blossom",
+        "Thistle"
+      ],
+      "difficulty": "easy",
+      "category": "movies"
+    },
+    {
+      "id": 1055,
+      "question": "In Bambi, who becomes Bambi's love interest?",
+      "answers": [
+        "Faline",
+        "Flower",
+        "Feline",
+        "Willow"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    }
+  ],
+  "rationale": "The original group question permits several options: Bambi meets Friend Owl and the Great Prince while young too. Its intended answer merely aggregates the character associations already covered by 751 (Thumper), 218 (Flower), and 1055 (Faline). Retain those more precise individual facts; 751 is the primary replacement pointer, not a claim that it alone covers all three names.",
+  "scope": "Only the planned question is retired. Comparing a replacement does not approve its factual review."
+}

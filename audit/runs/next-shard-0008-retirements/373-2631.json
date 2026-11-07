@@ -1,0 +1,70 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "retired": {
+    "id": 373,
+    "question": "What is the name of the elevated transit ride in Tomorrowland at Magic Kingdom?",
+    "answers": [
+      "Tomorrowland Transit Authority PeopleMover",
+      "WEDway Express",
+      "Future Commuter",
+      "Tomorrowland Monorail"
+    ],
+    "difficulty": "hard",
+    "category": "parks"
+  },
+  "retained": {
+    "id": 2631,
+    "question": "Magic Kingdom's Tomorrowland Transit Authority PeopleMover moves its cars without onboard engines, relying instead on what propulsion system embedded in the track?",
+    "answers": [
+      "Linear induction motors",
+      "Hydraulic pistons",
+      "Cable tow system",
+      "Compressed air jets"
+    ],
+    "difficulty": "hard",
+    "category": "parks"
+  },
+  "additionalComparisons": [],
+  "rationale": "The retained propulsion question explicitly names the Magic Kingdom PeopleMover and adds its motor fact. This repeats the simple elevated-transit identity.",
+  "sources": [
+    {
+      "sourceNoteId": "peoplemover-identity",
+      "url": "https://disneyworld.disney.go.com/en_CA/attractions/magic-kingdom/tomorrowland-transit-authority-peoplemover/",
+      "locator": "Title; Move Above and Beyond; Magnet-Powered Magic",
+      "evidence": "Tomorrowland Transit Authority PeopleMover is the elevated Tomorrowland tram powered by linear induction motors.",
+      "checkedBy": "Codex",
+      "checkedAt": "2026-11-07",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "limitations": "Primary institutional text inspected; no film or video viewing claimed.",
+      "topics": [
+        "parks"
+      ]
+    }
+  ],
+  "originalOptionAssessments": [
+    {
+      "answer": "Tomorrowland Transit Authority PeopleMover",
+      "assessment": "The official title is Tomorrowland Transit Authority PeopleMover."
+    },
+    {
+      "answer": "WEDway Express",
+      "assessment": "WEDway Express is not the title."
+    },
+    {
+      "answer": "Future Commuter",
+      "assessment": "Future Commuter is not the title."
+    },
+    {
+      "answer": "Tomorrowland Monorail",
+      "assessment": "Tomorrowland Monorail is not the elevated tram's title."
+    }
+  ],
+  "finalChallenge": {
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "notes": "The retained propulsion question explicitly names the Magic Kingdom PeopleMover and adds its motor fact. This repeats the simple elevated-transit identity. All four original options inspected. Retirement avoids asserting approval of a flawed premise or an insufficiently excluded alternative."
+  },
+  "scope": "Only the planned ID is retired. Counterpart comparison is not approval of its other claims."
+}

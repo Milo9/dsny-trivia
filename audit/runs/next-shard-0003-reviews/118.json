@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 118,
+  "hash": "5f9fcc336971d12cf62e49711931817a8da9b6f5f19ce7dbcf83167122fc6569",
+  "questionSnapshot": {
+    "id": 118,
+    "question": "What city was Walt Disney born in?",
+    "answers": [
+      "Chicago, Illinois",
+      "Los Angeles, California",
+      "New York City, New York",
+      "St. Louis, Missouri"
+    ],
+    "difficulty": "easy",
+    "category": "walt"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Final challenge checks the exact named entity/event against each listed alternative, not merely a matching answer keyword.",
+  "verification": {
+    "context": "What city was Walt Disney born in?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Both biographies identify Chicago as birthplace.",
+      "sources": [
+        {
+          "url": "https://d23.com/about-walt-disney/",
+          "locator": "Biography paragraphs: Chicago birth, McKinley school and evening art classes; Hollywood arrival/office; daughters Diane and Sharon."
+        },
+        {
+          "url": "https://www.televisionacademy.com/bios/walt-disney",
+          "locator": "Birthplace field: Chicago, Illinois; biography states 22 Oscar wins."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tried each alternative against the literal final scope: Los Angeles, California: Not the documented birthplace. New York City, New York: Not the documented birthplace. St. Louis, Missouri: Not the documented birthplace."
+    },
+    "options": [
+      {
+        "answer": "Chicago, Illinois",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Both biographies identify Chicago as birthplace.",
+        "sources": [
+          {
+            "url": "https://d23.com/about-walt-disney/",
+            "locator": "Biography paragraphs: Chicago birth, McKinley school and evening art classes; Hollywood arrival/office; daughters Diane and Sharon."
+          },
+          {
+            "url": "https://www.televisionacademy.com/bios/walt-disney",
+            "locator": "Birthplace field: Chicago, Illinois; biography states 22 Oscar wins."
+          }
+        ]
+      },
+      {
+        "answer": "Los Angeles, California",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the documented birthplace.",
+        "sources": [
+          {
+            "url": "https://d23.com/about-walt-disney/",
+            "locator": "Biography paragraphs: Chicago birth, McKinley school and evening art classes; Hollywood arrival/office; daughters Diane and Sharon."
+          },
+          {
+            "url": "https://www.televisionacademy.com/bios/walt-disney",
+            "locator": "Birthplace field: Chicago, Illinois; biography states 22 Oscar wins."
+          }
+        ]
+      },
+      {
+        "answer": "New York City, New York",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the documented birthplace.",
+        "sources": [
+          {
+            "url": "https://d23.com/about-walt-disney/",
+            "locator": "Biography paragraphs: Chicago birth, McKinley school and evening art classes; Hollywood arrival/office; daughters Diane and Sharon."
+          },
+          {
+            "url": "https://www.televisionacademy.com/bios/walt-disney",
+            "locator": "Birthplace field: Chicago, Illinois; biography states 22 Oscar wins."
+          }
+        ]
+      },
+      {
+        "answer": "St. Louis, Missouri",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the documented birthplace.",
+        "sources": [
+          {
+            "url": "https://d23.com/about-walt-disney/",
+            "locator": "Biography paragraphs: Chicago birth, McKinley school and evening art classes; Hollywood arrival/office; daughters Diane and Sharon."
+          },
+          {
+            "url": "https://www.televisionacademy.com/bios/walt-disney",
+            "locator": "Birthplace field: Chicago, Illinois; biography states 22 Oscar wins."
+          }
+        ]
+      }
+    ]
+  }
+}

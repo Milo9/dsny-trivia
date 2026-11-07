@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 182,
+  "hash": "7ec5b471da36ccd9f2a1cb4d58bd009c67b0b1822d904ecc9c4fd3661fe0c0b1",
+  "questionSnapshot": {
+    "id": 182,
+    "question": "What year was the original Toy Story released?",
+    "answers": [
+      "1995",
+      "1997",
+      "1993",
+      "1999"
+    ],
+    "difficulty": "easy",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged original release versus sequel or home-video date: D23 dates original theatrical release to November 1995. None of the three alternative years is that release year.",
+  "verification": {
+    "context": "What year was the original Toy Story released?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Official initial release date is November 22, 1995.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/toy-story-film/",
+          "locator": "Release paragraph: November 22, 1995. Opening identifies Andy’s favorite toy Woody."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged original release versus sequel or home-video date: D23 dates original theatrical release to November 1995. None of the three alternative years is that release year."
+    },
+    "options": [
+      {
+        "answer": "1995",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Official initial release date is November 22, 1995.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/toy-story-film/",
+            "locator": "Release paragraph: November 22, 1995. Opening identifies Andy’s favorite toy Woody."
+          }
+        ]
+      },
+      {
+        "answer": "1997",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Two years after the initial release.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/toy-story-film/",
+            "locator": "Release paragraph: November 22, 1995. Opening identifies Andy’s favorite toy Woody."
+          }
+        ]
+      },
+      {
+        "answer": "1993",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Two years before the initial release.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/toy-story-film/",
+            "locator": "Release paragraph: November 22, 1995. Opening identifies Andy’s favorite toy Woody."
+          }
+        ]
+      },
+      {
+        "answer": "1999",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Four years after the initial release.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/toy-story-film/",
+            "locator": "Release paragraph: November 22, 1995. Opening identifies Andy’s favorite toy Woody."
+          }
+        ]
+      }
+    ]
+  }
+}

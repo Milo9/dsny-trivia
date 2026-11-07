@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 88,
+  "hash": "11058a311e61d16a5fec5e92358aec836a15091c1b76ca2bbb87f46ae67fb479",
+  "questionSnapshot": {
+    "id": 88,
+    "question": "What is the name of the iconic castle at Magic Kingdom in Walt Disney World?",
+    "answers": [
+      "Cinderella Castle",
+      "Sleeping Beauty Castle",
+      "Aurora's Palace",
+      "Enchanted Castle"
+    ],
+    "difficulty": "easy",
+    "category": "parks"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Distinct from q110 at Disneyland, q94’s land and the suite/restaurant inside the castle. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "Walt Disney World, specified park/attraction; current naming/layout at review date.",
+    "timeSensitive": true,
+    "nextReviewAt": "2027-01-30",
+    "premise": {
+      "reason": "Magic Kingdom’s central castle is officially named Cinderella Castle.",
+      "sources": [
+        {
+          "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/cinderella-castle/",
+          "locator": "Page title and introduction identify Cinderella Castle as Magic Kingdom’s symbol; A Fairytale Come to Life locates its gateway at Fantasyland."
+        },
+        {
+          "url": "https://d23.com/a-to-z/cinderella-castle/",
+          "locator": "Opening sentence: castle at entrance to Fantasyland in Magic Kingdom Park; distinguishes Disneyland’s Sleeping Beauty Castle later in the same paragraph."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Fixed location in the original wording is decisive: Disneyland’s Sleeping Beauty Castle does not become correct merely because it is also a Disney icon. The remaining names do not match the official Magic Kingdom name."
+    },
+    "options": [
+      {
+        "answer": "Cinderella Castle",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Cinderella Castle is the official attraction name.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/cinderella-castle/",
+            "locator": "Page title and introduction identify Cinderella Castle as Magic Kingdom’s symbol; A Fairytale Come to Life locates its gateway at Fantasyland."
+          },
+          {
+            "url": "https://d23.com/a-to-z/cinderella-castle/",
+            "locator": "Opening sentence: castle at entrance to Fantasyland in Magic Kingdom Park; distinguishes Disneyland’s Sleeping Beauty Castle later in the same paragraph."
+          }
+        ]
+      },
+      {
+        "answer": "Sleeping Beauty Castle",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Sleeping Beauty Castle is the different Disneyland castle referenced in Disney’s comparison.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/cinderella-castle/",
+            "locator": "Page title and introduction identify Cinderella Castle as Magic Kingdom’s symbol; A Fairytale Come to Life locates its gateway at Fantasyland."
+          },
+          {
+            "url": "https://d23.com/a-to-z/cinderella-castle/",
+            "locator": "Opening sentence: castle at entrance to Fantasyland in Magic Kingdom Park; distinguishes Disneyland’s Sleeping Beauty Castle later in the same paragraph."
+          }
+        ]
+      },
+      {
+        "answer": "Aurora's Palace",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Aurora’s Palace is not this attraction’s official name.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/cinderella-castle/",
+            "locator": "Page title and introduction identify Cinderella Castle as Magic Kingdom’s symbol; A Fairytale Come to Life locates its gateway at Fantasyland."
+          },
+          {
+            "url": "https://d23.com/a-to-z/cinderella-castle/",
+            "locator": "Opening sentence: castle at entrance to Fantasyland in Magic Kingdom Park; distinguishes Disneyland’s Sleeping Beauty Castle later in the same paragraph."
+          }
+        ]
+      },
+      {
+        "answer": "Enchanted Castle",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Enchanted Castle is not this attraction’s official name.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/cinderella-castle/",
+            "locator": "Page title and introduction identify Cinderella Castle as Magic Kingdom’s symbol; A Fairytale Come to Life locates its gateway at Fantasyland."
+          },
+          {
+            "url": "https://d23.com/a-to-z/cinderella-castle/",
+            "locator": "Opening sentence: castle at entrance to Fantasyland in Magic Kingdom Park; distinguishes Disneyland’s Sleeping Beauty Castle later in the same paragraph."
+          }
+        ]
+      }
+    ]
+  }
+}

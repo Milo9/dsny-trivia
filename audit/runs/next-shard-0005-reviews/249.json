@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 249,
+  "hash": "3cb744300fd0a47a3618c9085f6c493c84f5401717658046bc26373701654da1",
+  "questionSnapshot": {
+    "id": 249,
+    "question": "In the 2001 animated film starring Milo Thatch, which lost civilization does his expedition seek?",
+    "answers": [
+      "Atlantis",
+      "El Dorado",
+      "Avalon",
+      "Shangri-La"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Removed film title from stem because it supplied the answer. Milo/year retain adequate context; other lost civilizations are mutually distinct destinations. Easy difficulty suits the title association.",
+  "verification": {
+    "context": "In the 2001 animated film starring Milo Thatch, which lost civilization does his expedition seek?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The expedition explicitly seeks Atlantis.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/atlantis-the-lost-empire-film/",
+          "locator": "Opening, explicitly 2001 feature: Milo’s expedition seeks legendary lost empire Atlantis; later paragraphs identify crystal-powered city."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Removed film title from stem because it supplied the answer. Milo/year retain adequate context; other lost civilizations are mutually distinct destinations. Easy difficulty suits the title association."
+    },
+    "options": [
+      {
+        "answer": "Atlantis",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The expedition explicitly seeks Atlantis.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/atlantis-the-lost-empire-film/",
+            "locator": "Opening, explicitly 2001 feature: Milo’s expedition seeks legendary lost empire Atlantis; later paragraphs identify crystal-powered city."
+          }
+        ]
+      },
+      {
+        "answer": "El Dorado",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different legendary destination from the one explicitly named.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/atlantis-the-lost-empire-film/",
+            "locator": "Opening, explicitly 2001 feature: Milo’s expedition seeks legendary lost empire Atlantis; later paragraphs identify crystal-powered city."
+          }
+        ]
+      },
+      {
+        "answer": "Avalon",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different legendary destination from the one explicitly named.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/atlantis-the-lost-empire-film/",
+            "locator": "Opening, explicitly 2001 feature: Milo’s expedition seeks legendary lost empire Atlantis; later paragraphs identify crystal-powered city."
+          }
+        ]
+      },
+      {
+        "answer": "Shangri-La",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different legendary destination from the one explicitly named.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/atlantis-the-lost-empire-film/",
+            "locator": "Opening, explicitly 2001 feature: Milo’s expedition seeks legendary lost empire Atlantis; later paragraphs identify crystal-powered city."
+          }
+        ]
+      }
+    ]
+  }
+}

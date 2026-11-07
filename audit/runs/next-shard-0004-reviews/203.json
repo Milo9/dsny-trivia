@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 203,
+  "hash": "ccb5c84520a1992e88e9124022bb320957729746aa96f31ebd19620254d56ffc",
+  "questionSnapshot": {
+    "id": 203,
+    "question": "What is Flynn Rider's real name in Tangled?",
+    "answers": [
+      "Eugene Fitzherbert",
+      "Frederick Rider",
+      "Eugene Hunter",
+      "Francis Flynn"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Tried every full name, including Eugene with a wrong surname. D23’s explicit real-name sentence establishes Eugene Fitzherbert uniquely; Maximus question 231 tests the horse identity instead.",
+  "verification": {
+    "context": "What is Flynn Rider's real name in Tangled?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "D23 explicitly gives Eugene Fitzherbert as Flynn’s real name.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/tangled-film/",
+          "locator": "Final sentence: Flynn’s real name is Eugene Fitzherbert."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tried every full name, including Eugene with a wrong surname. D23’s explicit real-name sentence establishes Eugene Fitzherbert uniquely; Maximus question 231 tests the horse identity instead."
+    },
+    "options": [
+      {
+        "answer": "Eugene Fitzherbert",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "D23 explicitly gives Eugene Fitzherbert as Flynn’s real name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/tangled-film/",
+            "locator": "Final sentence: Flynn’s real name is Eugene Fitzherbert."
+          }
+        ]
+      },
+      {
+        "answer": "Frederick Rider",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different full name from the identity explicitly given.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/tangled-film/",
+            "locator": "Final sentence: Flynn’s real name is Eugene Fitzherbert."
+          }
+        ]
+      },
+      {
+        "answer": "Eugene Hunter",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Correct first name but wrong surname.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/tangled-film/",
+            "locator": "Final sentence: Flynn’s real name is Eugene Fitzherbert."
+          }
+        ]
+      },
+      {
+        "answer": "Francis Flynn",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different full name from the identity explicitly given.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/tangled-film/",
+            "locator": "Final sentence: Flynn’s real name is Eugene Fitzherbert."
+          }
+        ]
+      }
+    ]
+  }
+}

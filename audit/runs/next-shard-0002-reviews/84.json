@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 84,
+  "hash": "3d16cfe937df91e418f521c2f154efb6e208a4e8cefffe6fbcd28f8c806387cc",
+  "questionSnapshot": {
+    "id": 84,
+    "question": "In Atlantis: The Lost Empire, what is the name of the young linguist and cartographer?",
+    "answers": [
+      "Milo Thatch",
+      "Lewis Robinson",
+      "Wilbur Robinson",
+      "Pleakley"
+    ],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Distinct from the expedition’s funder, mechanic, commander and Milo’s voice actor. Lead-character name merits medium. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "English-language Disney character naming; original theatrical feature where a film is named. In Atlantis: The Lost Empire, what is the name of the young linguist and cartographer?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The opening synopsis identifies the young linguist/cartographer by name.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/atlantis-the-lost-empire-film/",
+          "locator": "Opening sentence identifies young museum cartographer and linguistics expert Milo Thatch."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Checked both professional descriptors in the source’s opening sentence. They attach to Milo Thatch, and no alternative is an alias for him; no inference from a generic film title was used."
+    },
+    "options": [
+      {
+        "answer": "Milo Thatch",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Milo Thatch is the named linguist and cartographer.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/atlantis-the-lost-empire-film/",
+            "locator": "Opening sentence identifies young museum cartographer and linguistics expert Milo Thatch."
+          }
+        ]
+      },
+      {
+        "answer": "Lewis Robinson",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Lewis Robinson is not the expedition expert identified here.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/atlantis-the-lost-empire-film/",
+            "locator": "Opening sentence identifies young museum cartographer and linguistics expert Milo Thatch."
+          }
+        ]
+      },
+      {
+        "answer": "Wilbur Robinson",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Wilbur Robinson is not Milo Thatch’s identity.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/atlantis-the-lost-empire-film/",
+            "locator": "Opening sentence identifies young museum cartographer and linguistics expert Milo Thatch."
+          }
+        ]
+      },
+      {
+        "answer": "Pleakley",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Pleakley is not the named Atlantis cartographer.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/atlantis-the-lost-empire-film/",
+            "locator": "Opening sentence identifies young museum cartographer and linguistics expert Milo Thatch."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "questionId": 49,
+  "hash": "3f76b9206c7f804eafd0e27476c47692261575d5d0b07183e32360aea1c0fc87",
+  "questionSnapshot": {
+    "id": 49,
+    "question": "In Dumbo (1941), which mouse becomes Dumbo's loyal friend?",
+    "answers": [
+      "Timothy",
+      "Jaq",
+      "Gus",
+      "Roquefort"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Removed the overstatement about who convinces Dumbo to fly and replaced external/TV distractors with Disney film mice. Removed Mouse from the answer to avoid an asymmetric stem echo. Medium. #1336 asks about the crows' flight encouragement, a different group.",
+  "verification": {
+    "context": "Dumbo, original Disney animated 1941 film, loyal mouse companion rather than exclusive credit for teaching flight.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Timothy",
+        "verdict": "correct",
+        "reason": "Timothy is explicitly Dumbo's faithful mouse friend.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/dumbo-film/",
+            "locator": "Opening synopsis: Dumbo discovers flight using oversized ears with help from his mouse friend Timothy; voice credits name Timothy."
+          }
+        ]
+      },
+      {
+        "answer": "Jaq",
+        "verdict": "incorrect",
+        "reason": "Jaq is Cinderella's mouse friend.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/cinderella-1950",
+            "locator": "The Characters: Cinderella, Jaq, Gus and Lady Tremaine profiles; opening synopsis names the two mice and the Fairy Godmother spell."
+          }
+        ]
+      },
+      {
+        "answer": "Gus",
+        "verdict": "incorrect",
+        "reason": "Gus is Cinderella's other main mouse friend.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/cinderella-1950",
+            "locator": "The Characters: Cinderella, Jaq, Gus and Lady Tremaine profiles; opening synopsis names the two mice and the Fairy Godmother spell."
+          }
+        ]
+      },
+      {
+        "answer": "Roquefort",
+        "verdict": "incorrect",
+        "reason": "Roquefort is the mouse who helps the Aristocats family.",
+        "sources": [
+          {
+            "url": "https://d23.com/this-day/the-aristocats-is-released-2/",
+            "locator": "Opening paragraph: mother Duchess and kittens Toulouse, Berlioz, Marie; second paragraph: Roquefort the mouse helps rescue them."
+          }
+        ]
+      }
+    ]
+  }
+}

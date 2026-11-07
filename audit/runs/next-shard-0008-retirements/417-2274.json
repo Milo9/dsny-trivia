@@ -1,0 +1,70 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "retired": {
+    "id": 417,
+    "question": "What is the name of the main theater on Disney Cruise ships where Broadway-style shows are performed?",
+    "answers": [
+      "Walt Disney Theatre",
+      "Disney Broadway",
+      "Magic Kingdom Stage",
+      "Stateroom Stage"
+    ],
+    "difficulty": "easy",
+    "category": "cruise"
+  },
+  "retained": {
+    "id": 2274,
+    "question": "Toy Story: The Musical had its 2008 premiere in the Walt Disney Theatre aboard which Disney Cruise Line ship?",
+    "answers": [
+      "Disney Wonder",
+      "Disney Magic",
+      "Disney Dream",
+      "Disney Fantasy"
+    ],
+    "difficulty": "hard",
+    "category": "cruise"
+  },
+  "additionalComparisons": [],
+  "rationale": "2274 explicitly names Walt Disney Theatre as the Disney Wonder stage venue and asks the additional musical/ship fact. The simple theatre name is already supplied.",
+  "sources": [
+    {
+      "sourceNoteId": "cruise-theatre",
+      "url": "https://disneycruise.disney.go.com/en-as/onboard-activities/walt-disney-theater/",
+      "locator": "Title; Broadway-Style Entertainment",
+      "evidence": "Walt Disney Theatre is the onboard live-show venue, including on Disney Wonder.",
+      "checkedBy": "Codex",
+      "checkedAt": "2026-11-07",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "limitations": "Primary institutional text inspected; no film or video viewing claimed.",
+      "topics": [
+        "cruise"
+      ]
+    }
+  ],
+  "originalOptionAssessments": [
+    {
+      "answer": "Walt Disney Theatre",
+      "assessment": "Walt Disney Theatre is the official live-show venue name."
+    },
+    {
+      "answer": "Disney Broadway",
+      "assessment": "Disney Broadway is not the venue title."
+    },
+    {
+      "answer": "Magic Kingdom Stage",
+      "assessment": "Magic Kingdom Stage is not the venue title."
+    },
+    {
+      "answer": "Stateroom Stage",
+      "assessment": "Stateroom Stage is not the venue title."
+    }
+  ],
+  "finalChallenge": {
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "notes": "2274 explicitly names Walt Disney Theatre as the Disney Wonder stage venue and asks the additional musical/ship fact. The simple theatre name is already supplied. All four original options inspected. Retirement avoids asserting approval of a flawed premise or an insufficiently excluded alternative."
+  },
+  "scope": "Only the planned ID is retired. Counterpart comparison is not approval of its other claims."
+}

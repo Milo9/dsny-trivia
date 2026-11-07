@@ -1,0 +1,161 @@
+{
+  "schema": 2,
+  "questionId": 361,
+  "hash": "fc834d979aa0d99864ff406bbdb70de90b4a2691fcf11f866c0466a5f1f967f5",
+  "questionSnapshot": {
+    "id": 361,
+    "question": "Which Walt Disney World hotel was designed around savannas where guests can watch giraffes and zebras?",
+    "answers": [
+      "Disney's Animal Kingdom Lodge",
+      "Disney's Wilderness Lodge",
+      "Disney's Caribbean Beach Resort",
+      "Disney's Port Orleans Resort"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Challenged whether generic wildlife or a hotel in the Animal Kingdom resort area would suffice: the question requires design around giraffe/zebra savannas. All four resort design accounts distinguish the concepts. Removed invented Safari/Savanna hotel distractors and the repeated animal word. 900 asks Northwest lobby design; neither full question names the other hotel association. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+  "verification": {
+    "context": "Which Walt Disney World hotel was designed around savannas where guests can watch giraffes and zebras? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+    "timeSensitive": true,
+    "nextReviewAt": "2027-02-04",
+    "premise": {
+      "reason": "Animal Kingdom Lodge design centers on savannas and its wildlife list includes giraffes and zebras. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+      "sources": [
+        {
+          "url": "https://disneyworld.disney.go.com/resorts/animal-kingdom-lodge/",
+          "locator": "What Makes This Resort Hotel Unique: design around four savannas; Exotic Animals explicitly includes giraffes and zebras"
+        },
+        {
+          "url": "https://d23.com/hidden-gems-from-disneys-wilderness-lodge/",
+          "locator": "Introduction and item 7: Yellowstone/Pacific Northwest design, Old Faithful Lodge inspiration, not African savannas"
+        },
+        {
+          "url": "https://d23.com/a-to-z/caribbean-beach-resort/",
+          "locator": "Entry describes Florida hotel and themed Caribbean island villages around Old Port Royale"
+        },
+        {
+          "url": "https://disneyworld.disney.go.com/resorts/port-orleans-resort-riverside/",
+          "locator": "What Makes This Resort Hotel Unique: rural Louisiana, Magnolia Bend/Alligator Bayou and Sassagoula River"
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged whether generic wildlife or a hotel in the Animal Kingdom resort area would suffice: the question requires design around giraffe/zebra savannas. All four resort design accounts distinguish the concepts. Removed invented Safari/Savanna hotel distractors and the repeated animal word. 900 asks Northwest lobby design; neither full question names the other hotel association."
+    },
+    "options": [
+      {
+        "answer": "Disney's Animal Kingdom Lodge",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Animal Kingdom Lodge design centers on savannas and its wildlife list includes giraffes and zebras.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/resorts/animal-kingdom-lodge/",
+            "locator": "What Makes This Resort Hotel Unique: design around four savannas; Exotic Animals explicitly includes giraffes and zebras"
+          },
+          {
+            "url": "https://d23.com/hidden-gems-from-disneys-wilderness-lodge/",
+            "locator": "Introduction and item 7: Yellowstone/Pacific Northwest design, Old Faithful Lodge inspiration, not African savannas"
+          },
+          {
+            "url": "https://d23.com/a-to-z/caribbean-beach-resort/",
+            "locator": "Entry describes Florida hotel and themed Caribbean island villages around Old Port Royale"
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/resorts/port-orleans-resort-riverside/",
+            "locator": "What Makes This Resort Hotel Unique: rural Louisiana, Magnolia Bend/Alligator Bayou and Sassagoula River"
+          }
+        ]
+      },
+      {
+        "answer": "Disney's Wilderness Lodge",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Wilderness Lodge was designed around the American Northwest/Yellowstone, not African savannas.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/resorts/animal-kingdom-lodge/",
+            "locator": "What Makes This Resort Hotel Unique: design around four savannas; Exotic Animals explicitly includes giraffes and zebras"
+          },
+          {
+            "url": "https://d23.com/hidden-gems-from-disneys-wilderness-lodge/",
+            "locator": "Introduction and item 7: Yellowstone/Pacific Northwest design, Old Faithful Lodge inspiration, not African savannas"
+          },
+          {
+            "url": "https://d23.com/a-to-z/caribbean-beach-resort/",
+            "locator": "Entry describes Florida hotel and themed Caribbean island villages around Old Port Royale"
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/resorts/port-orleans-resort-riverside/",
+            "locator": "What Makes This Resort Hotel Unique: rural Louisiana, Magnolia Bend/Alligator Bayou and Sassagoula River"
+          }
+        ]
+      },
+      {
+        "answer": "Disney's Caribbean Beach Resort",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Caribbean Beach is designed as Caribbean island villages, not the giraffe/zebra savanna lodge.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/resorts/animal-kingdom-lodge/",
+            "locator": "What Makes This Resort Hotel Unique: design around four savannas; Exotic Animals explicitly includes giraffes and zebras"
+          },
+          {
+            "url": "https://d23.com/hidden-gems-from-disneys-wilderness-lodge/",
+            "locator": "Introduction and item 7: Yellowstone/Pacific Northwest design, Old Faithful Lodge inspiration, not African savannas"
+          },
+          {
+            "url": "https://d23.com/a-to-z/caribbean-beach-resort/",
+            "locator": "Entry describes Florida hotel and themed Caribbean island villages around Old Port Royale"
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/resorts/port-orleans-resort-riverside/",
+            "locator": "What Makes This Resort Hotel Unique: rural Louisiana, Magnolia Bend/Alligator Bayou and Sassagoula River"
+          }
+        ]
+      },
+      {
+        "answer": "Disney's Port Orleans Resort",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Port Orleans recreates Louisiana riverside settings, not the African savanna lodge.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/resorts/animal-kingdom-lodge/",
+            "locator": "What Makes This Resort Hotel Unique: design around four savannas; Exotic Animals explicitly includes giraffes and zebras"
+          },
+          {
+            "url": "https://d23.com/hidden-gems-from-disneys-wilderness-lodge/",
+            "locator": "Introduction and item 7: Yellowstone/Pacific Northwest design, Old Faithful Lodge inspiration, not African savannas"
+          },
+          {
+            "url": "https://d23.com/a-to-z/caribbean-beach-resort/",
+            "locator": "Entry describes Florida hotel and themed Caribbean island villages around Old Port Royale"
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/resorts/port-orleans-resort-riverside/",
+            "locator": "What Makes This Resort Hotel Unique: rural Louisiana, Magnolia Bend/Alligator Bayou and Sassagoula River"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 250,
+  "hash": "4029b2a33d2c1463478099a8796ae878435f7bec26b8ddae6fc5527d6fb6c4cc",
+  "questionSnapshot": {
+    "id": 250,
+    "question": "In Pocahontas (1995), what is the name of her hummingbird companion?",
+    "answers": [
+      "Flit",
+      "Percy",
+      "Zip",
+      "Dart"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Changed pet to companion to avoid unsupported ownership. Percy is another animal character, not Flit; Zip/Dart are plausible flying names but do not match the explicit identity.",
+  "verification": {
+    "context": "In Pocahontas (1995), what is the name of her hummingbird companion?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "D23 explicitly names Flit the hummingbird.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/pocahontas-film/",
+          "locator": "Opening explicitly names Flit hummingbird and Meeko raccoon; Willow tree spirit and Kocoum warrior distinguished."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Changed pet to companion to avoid unsupported ownership. Percy is another animal character, not Flit; Zip/Dart are plausible flying names but do not match the explicit identity."
+    },
+    "options": [
+      {
+        "answer": "Flit",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "D23 explicitly names Flit the hummingbird.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/pocahontas-film/",
+            "locator": "Opening explicitly names Flit hummingbird and Meeko raccoon; Willow tree spirit and Kocoum warrior distinguished."
+          }
+        ]
+      },
+      {
+        "answer": "Percy",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different name, not the hummingbird named Flit.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/pocahontas-film/",
+            "locator": "Opening explicitly names Flit hummingbird and Meeko raccoon; Willow tree spirit and Kocoum warrior distinguished."
+          }
+        ]
+      },
+      {
+        "answer": "Zip",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different name from the expressly named Flit.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/pocahontas-film/",
+            "locator": "Opening explicitly names Flit hummingbird and Meeko raccoon; Willow tree spirit and Kocoum warrior distinguished."
+          }
+        ]
+      },
+      {
+        "answer": "Dart",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different name from the expressly named Flit.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/pocahontas-film/",
+            "locator": "Opening explicitly names Flit hummingbird and Meeko raccoon; Willow tree spirit and Kocoum warrior distinguished."
+          }
+        ]
+      }
+    ]
+  }
+}

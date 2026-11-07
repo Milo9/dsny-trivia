@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 230,
+  "hash": "65f69376a0c4362e07af9ed48b7ece33674746ac618ff2cc175a2006932b28ac",
+  "questionSnapshot": {
+    "id": 230,
+    "question": "In The Princess and the Frog, what does Tiana dream of opening?",
+    "answers": [
+      "A restaurant",
+      "A bakery",
+      "A dance studio",
+      "A hotel"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Challenged bakery because Tiana cooks and makes beignets. Cooking particular foods does not change her explicitly named restaurant dream into a bakery, hotel or dance studio.",
+  "verification": {
+    "context": "In The Princess and the Frog, what does Tiana dream of opening?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Tiana profile expressly identifies opening her New Orleans restaurant.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/princess-and-the-frog-the-film/",
+          "locator": "Opening synopsis places Tiana in New Orleans and states her lifelong restaurant ambition; cast identifies Ray, Louis and Charlotte."
+        },
+        {
+          "url": "https://movies.disney.com/the-princess-and-the-frog",
+          "locator": "The Characters / Tiana, Louis and Ray: restaurant dream, jazz alligator and lovesick Cajun firefly pining for Evangeline; gallery identifies Charlotte and Ray separately."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged bakery because Tiana cooks and makes beignets. Cooking particular foods does not change her explicitly named restaurant dream into a bakery, hotel or dance studio."
+    },
+    "options": [
+      {
+        "answer": "A restaurant",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Tiana profile expressly identifies opening her New Orleans restaurant.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/princess-and-the-frog-the-film/",
+            "locator": "Opening synopsis places Tiana in New Orleans and states her lifelong restaurant ambition; cast identifies Ray, Louis and Charlotte."
+          },
+          {
+            "url": "https://movies.disney.com/the-princess-and-the-frog",
+            "locator": "The Characters / Tiana, Louis and Ray: restaurant dream, jazz alligator and lovesick Cajun firefly pining for Evangeline; gallery identifies Charlotte and Ray separately."
+          }
+        ]
+      },
+      {
+        "answer": "A bakery",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "A bakery is a different business from the specified restaurant ambition.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/princess-and-the-frog-the-film/",
+            "locator": "Opening synopsis places Tiana in New Orleans and states her lifelong restaurant ambition; cast identifies Ray, Louis and Charlotte."
+          },
+          {
+            "url": "https://movies.disney.com/the-princess-and-the-frog",
+            "locator": "The Characters / Tiana, Louis and Ray: restaurant dream, jazz alligator and lovesick Cajun firefly pining for Evangeline; gallery identifies Charlotte and Ray separately."
+          }
+        ]
+      },
+      {
+        "answer": "A dance studio",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different business from the specified restaurant ambition.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/princess-and-the-frog-the-film/",
+            "locator": "Opening synopsis places Tiana in New Orleans and states her lifelong restaurant ambition; cast identifies Ray, Louis and Charlotte."
+          },
+          {
+            "url": "https://movies.disney.com/the-princess-and-the-frog",
+            "locator": "The Characters / Tiana, Louis and Ray: restaurant dream, jazz alligator and lovesick Cajun firefly pining for Evangeline; gallery identifies Charlotte and Ray separately."
+          }
+        ]
+      },
+      {
+        "answer": "A hotel",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different business from the specified restaurant ambition.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/princess-and-the-frog-the-film/",
+            "locator": "Opening synopsis places Tiana in New Orleans and states her lifelong restaurant ambition; cast identifies Ray, Louis and Charlotte."
+          },
+          {
+            "url": "https://movies.disney.com/the-princess-and-the-frog",
+            "locator": "The Characters / Tiana, Louis and Ray: restaurant dream, jazz alligator and lovesick Cajun firefly pining for Evangeline; gallery identifies Charlotte and Ray separately."
+          }
+        ]
+      }
+    ]
+  }
+}

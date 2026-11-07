@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 51,
+  "hash": "d347b606e81b2854aca757a0ccc0f617df08f838a0ea39bab7f77af2f38bb3bb",
+  "questionSnapshot": {
+    "id": 51,
+    "question": "What is the name of Mickey Mouse's girlfriend?",
+    "answers": [
+      "Minnie Mouse",
+      "Daisy Duck",
+      "Clarabelle Cow",
+      "Tinker Bell"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "No other question asks this romantic relationship; same surname is acceptable easy recall. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "English-language Disney character naming; original theatrical feature where a film is named. What is the name of Mickey Mouse's girlfriend?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Disney’s character reference explicitly identifies Mickey’s romantic partner as Minnie.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/minnie-mouse/",
+          "locator": "Opening sentence explicitly identifies Minnie as Mickey Mouse’s girlfriend."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tested the husband/wife anecdote against the literal girlfriend wording: Disney itself uses girlfriend. The three alternative names are not aliases for Minnie. Mouse in the stem is an ordinary character surname, not a disclosed first name."
+    },
+    "options": [
+      {
+        "answer": "Minnie Mouse",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Minnie is the identified girlfriend.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/minnie-mouse/",
+            "locator": "Opening sentence explicitly identifies Minnie as Mickey Mouse’s girlfriend."
+          }
+        ]
+      },
+      {
+        "answer": "Daisy Duck",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Daisy is a different named character, not the partner identified by this entry.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/minnie-mouse/",
+            "locator": "Opening sentence explicitly identifies Minnie as Mickey Mouse’s girlfriend."
+          }
+        ]
+      },
+      {
+        "answer": "Clarabelle Cow",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Clarabelle is a different character, not another name for Minnie.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/minnie-mouse/",
+            "locator": "Opening sentence explicitly identifies Minnie as Mickey Mouse’s girlfriend."
+          }
+        ]
+      },
+      {
+        "answer": "Tinker Bell",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Tinker Bell is a separate character, not Minnie.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/minnie-mouse/",
+            "locator": "Opening sentence explicitly identifies Minnie as Mickey Mouse’s girlfriend."
+          }
+        ]
+      }
+    ]
+  }
+}

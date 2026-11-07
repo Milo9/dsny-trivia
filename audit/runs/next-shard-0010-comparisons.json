@@ -1,0 +1,37 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "comparisons": [
+    {
+      "retiredId": 494,
+      "replacementId": 1036,
+      "question": {
+        "id": 494,
+        "question": "In Finding Dory, what is the name of the grumpy seven-tentacled octopus (who lost one tentacle)?",
+        "answers": [
+          "Hank",
+          "Bailey",
+          "Destiny",
+          "Gerald"
+        ],
+        "difficulty": "medium",
+        "category": "pixar"
+      },
+      "replacement": {
+        "id": 1036,
+        "question": "In Finding Dory, what type of animal is Hank?",
+        "answers": [
+          "Octopus",
+          "Sea lion",
+          "Beluga whale",
+          "Whale shark"
+        ],
+        "difficulty": "easy",
+        "category": "pixar"
+      },
+      "reason": "Same Hank-octopus association in reverse. Question 1036 supplies Hank and asks his species; question 494 supplies the species and asks Hank. Seven arms adds a clue rather than a separately tested fact. Retain the shorter species question.",
+      "evidence": "audit/source-notes.json#b9-dory; Pixar Finding Dory, Hank character section: seven-armed octopus.",
+      "challenge": "Read both complete questions and all eight answers. Hank is the octopus in both; Bailey, Destiny and Gerald do not create a separate fact in the removed inverse question."
+    }
+  ]
+}

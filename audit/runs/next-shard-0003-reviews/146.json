@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 146,
+  "hash": "8e0ebfdd8353936eb567ec8153d0cddaa8a9cb2c17479b7d056882fa9a85889b",
+  "questionSnapshot": {
+    "id": 146,
+    "question": "Under which country's flag was Disney Destiny registered when it entered service in 2025?",
+    "answers": [
+      "The Bahamas",
+      "The United States",
+      "Panama",
+      "The Cayman Islands"
+    ],
+    "difficulty": "medium",
+    "category": "cruise"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Final challenge checks the exact named entity/event against each listed alternative, not merely a matching answer keyword.",
+  "verification": {
+    "context": "Under which country's flag was Disney Destiny registered when it entered service in 2025?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The national registry authority explicitly states Bahamian registration for Destiny in 2025.",
+      "sources": [
+        {
+          "url": "https://www.bahamasmaritime.com/bma-news/bma-welcomes-disney-destiny/",
+          "locator": "December 5, 2025 article, opening paragraph: newest Disney Destiny proudly registered under The Bahamas flag."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tried each alternative against the literal final scope: The United States: Not the flag recorded by its registry authority. Panama: Not the flag recorded by its registry authority. The Cayman Islands: Not the flag recorded by its registry authority."
+    },
+    "options": [
+      {
+        "answer": "The Bahamas",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The national registry authority explicitly states Bahamian registration for Destiny in 2025.",
+        "sources": [
+          {
+            "url": "https://www.bahamasmaritime.com/bma-news/bma-welcomes-disney-destiny/",
+            "locator": "December 5, 2025 article, opening paragraph: newest Disney Destiny proudly registered under The Bahamas flag."
+          }
+        ]
+      },
+      {
+        "answer": "The United States",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the flag recorded by its registry authority.",
+        "sources": [
+          {
+            "url": "https://www.bahamasmaritime.com/bma-news/bma-welcomes-disney-destiny/",
+            "locator": "December 5, 2025 article, opening paragraph: newest Disney Destiny proudly registered under The Bahamas flag."
+          }
+        ]
+      },
+      {
+        "answer": "Panama",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the flag recorded by its registry authority.",
+        "sources": [
+          {
+            "url": "https://www.bahamasmaritime.com/bma-news/bma-welcomes-disney-destiny/",
+            "locator": "December 5, 2025 article, opening paragraph: newest Disney Destiny proudly registered under The Bahamas flag."
+          }
+        ]
+      },
+      {
+        "answer": "The Cayman Islands",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the flag recorded by its registry authority.",
+        "sources": [
+          {
+            "url": "https://www.bahamasmaritime.com/bma-news/bma-welcomes-disney-destiny/",
+            "locator": "December 5, 2025 article, opening paragraph: newest Disney Destiny proudly registered under The Bahamas flag."
+          }
+        ]
+      }
+    ]
+  }
+}

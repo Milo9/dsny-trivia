@@ -1,0 +1,80 @@
+{
+  "questionId": 6,
+  "hash": "da75147074a264e7c3e2338624f3cf206b344f7c3691157019c2291dc91cdf0c",
+  "questionSnapshot": {
+    "id": 6,
+    "question": "What is the name of Aladdin's pet monkey?",
+    "answers": [
+      "Abu",
+      "Iago",
+      "Rajah",
+      "Carpet"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "All four are familiar characters/companions, making plausible options without a grammatical clue. Easy. #80/#1345 concern Iago and #289 concerns Rajah, different animal identities.",
+  "verification": {
+    "context": "Aladdin, Disney animated 1992 film.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Abu",
+        "verdict": "correct",
+        "reason": "Abu is explicitly Aladdin's pet monkey.",
+        "sources": [
+          {
+            "url": "https://d23.com/our-favorite-disney-monkeys-and-apes/",
+            "locator": "Abu / Aladdin (1992) subsection: Aladdin's pet monkey. Kala and Terk / Tarzan (1999) subsections distinguish adoptive mother and childhood friend."
+          }
+        ]
+      },
+      {
+        "answer": "Iago",
+        "verdict": "incorrect",
+        "reason": "Iago is Jafar's parrot.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/aladdin",
+            "locator": "The Characters: Iago is Jafar's parrot, Rajah is Jasmine's tiger, and the Magic Carpet transports Aladdin and Jasmine."
+          }
+        ]
+      },
+      {
+        "answer": "Rajah",
+        "verdict": "incorrect",
+        "reason": "Rajah is Jasmine's tiger.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/aladdin",
+            "locator": "The Characters: Iago is Jafar's parrot, Rajah is Jasmine's tiger, and the Magic Carpet transports Aladdin and Jasmine."
+          }
+        ]
+      },
+      {
+        "answer": "Carpet",
+        "verdict": "incorrect",
+        "reason": "Carpet is the enchanted flying carpet, not a monkey.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/aladdin",
+            "locator": "The Characters: Iago is Jafar's parrot, Rajah is Jasmine's tiger, and the Magic Carpet transports Aladdin and Jasmine."
+          }
+        ]
+      }
+    ]
+  }
+}

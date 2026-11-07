@@ -1,0 +1,80 @@
+{
+  "questionId": 2,
+  "hash": "8d63e234ec5ac34c0f83f7f167de9545c0ccf87eba8c1cca95e00d775c353312",
+  "questionSnapshot": {
+    "id": 2,
+    "question": "What is the name of Simba's father in The Lion King?",
+    "answers": [
+      "Mufasa",
+      "Scar",
+      "Rafiki",
+      "Zazu"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Short, parallel character names; easy parent identification. #282 asks for Sarabi, a different parent; #23 asks Scar's relationship. Neither is the same fact.",
+  "verification": {
+    "context": "The Lion King, original 1994 animated film.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Mufasa",
+        "verdict": "correct",
+        "reason": "Mufasa and Sarabi are explicitly identified as Simba's parents.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-lion-king",
+            "locator": "The Characters: Simba, Zazu, Rafiki, Scar and Mufasa/Sarabi profiles; gallery caption identifies Rafiki holding newborn Simba, with Mufasa and Sarabi alongside."
+          }
+        ]
+      },
+      {
+        "answer": "Scar",
+        "verdict": "incorrect",
+        "reason": "Scar is Mufasa's brother, hence Simba's uncle.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-lion-king",
+            "locator": "The Characters: Simba, Zazu, Rafiki, Scar and Mufasa/Sarabi profiles; gallery caption identifies Rafiki holding newborn Simba, with Mufasa and Sarabi alongside."
+          }
+        ]
+      },
+      {
+        "answer": "Rafiki",
+        "verdict": "incorrect",
+        "reason": "Rafiki anoints and guides Simba; he is not the parent identified in the family profile.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-lion-king",
+            "locator": "The Characters: Simba, Zazu, Rafiki, Scar and Mufasa/Sarabi profiles; gallery caption identifies Rafiki holding newborn Simba, with Mufasa and Sarabi alongside."
+          }
+        ]
+      },
+      {
+        "answer": "Zazu",
+        "verdict": "incorrect",
+        "reason": "Zazu is Mufasa's hornbill advisor, not Simba's father.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-lion-king",
+            "locator": "The Characters: Simba, Zazu, Rafiki, Scar and Mufasa/Sarabi profiles; gallery caption identifies Rafiki holding newborn Simba, with Mufasa and Sarabi alongside."
+          }
+        ]
+      }
+    ]
+  }
+}

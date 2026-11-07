@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 297,
+  "hash": "364c1fdac6006bb655964bb49741a1ab71840826de6486038018d3857e4a9872",
+  "questionSnapshot": {
+    "id": 297,
+    "question": "What are the names of Pongo and Perdita's human owners in 101 Dalmatians?",
+    "answers": [
+      "Roger and Anita",
+      "Carl and Ellie",
+      "Jim and Sarah",
+      "Bob and Betty"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Source states both relationships; no assumption that humans own every dog rescued initially. Other Disney couples do not fit these particular dogs. Radcliffe surname q1060 requires additional name detail.",
+  "verification": {
+    "context": "What are the names of Pongo and Perdita's human owners in 101 Dalmatians?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Roger is Pongo master and Anita Perdita mistress.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/one-hundred-and-one-dalmatians-film/",
+          "locator": "Synopsis: Roger is Pongo master, Anita Perdita mistress; later identifies henchmen Horace and Jasper Badun; 1961 animation."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Source states both relationships; no assumption that humans own every dog rescued initially. Other Disney couples do not fit these particular dogs. Radcliffe surname q1060 requires additional name detail."
+    },
+    "options": [
+      {
+        "answer": "Roger and Anita",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Roger is Pongo master and Anita Perdita mistress.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/one-hundred-and-one-dalmatians-film/",
+            "locator": "Synopsis: Roger is Pongo master, Anita Perdita mistress; later identifies henchmen Horace and Jasper Badun; 1961 animation."
+          }
+        ]
+      },
+      {
+        "answer": "Carl and Ellie",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Not the pair identified as their humans.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/one-hundred-and-one-dalmatians-film/",
+            "locator": "Synopsis: Roger is Pongo master, Anita Perdita mistress; later identifies henchmen Horace and Jasper Badun; 1961 animation."
+          }
+        ]
+      },
+      {
+        "answer": "Jim and Sarah",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Not the pair identified as their humans.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/one-hundred-and-one-dalmatians-film/",
+            "locator": "Synopsis: Roger is Pongo master, Anita Perdita mistress; later identifies henchmen Horace and Jasper Badun; 1961 animation."
+          }
+        ]
+      },
+      {
+        "answer": "Bob and Betty",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Not the pair identified as their humans.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/one-hundred-and-one-dalmatians-film/",
+            "locator": "Synopsis: Roger is Pongo master, Anita Perdita mistress; later identifies henchmen Horace and Jasper Badun; 1961 animation."
+          }
+        ]
+      }
+    ]
+  }
+}

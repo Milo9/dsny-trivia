@@ -1,0 +1,257 @@
+[
+  {
+    "finding": {
+      "id": "answer-style-992df325ab565e371670",
+      "kind": "answer-style",
+      "questionIds": [
+        724
+      ],
+      "detail": "Correct answer is unusually verbose relative to distractors.",
+      "signature": "992df325ab565e371670c801e4d613632b101c3138139498a3fb9fbaa768c652",
+      "decision": null
+    },
+    "reviewer": "Codex",
+    "reason": "All four answers are genuine titles of Cinderella songs, quoted in full. The correct title is naturally longer; it does not echo the final stem or receive a uniquely explanatory suffix. The bedroom sequence, rather than title length, selects the answer.",
+    "reference": "audit/runs/next-shard-0013-evidence-notes.json"
+  },
+  {
+    "finding": {
+      "id": "duplicate-0aa0ec3d49b9ccb6f3f3",
+      "kind": "duplicate",
+      "questionIds": [
+        438,
+        701
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "0aa0ec3d49b9ccb6f3f3bb0cd70002d89a18735be3d7baa8d513e1744b64eca3",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "reviewer": "Codex",
+    "reason": "q438 asks fictional character Elsa; q701 asks the real performer Idina Menzel. Knowing the character does not establish the real performer, especially with the separate Demi Lovato recording.",
+    "reference": "audit/runs/next-shard-0013-evidence-notes.json"
+  },
+  {
+    "finding": {
+      "id": "duplicate-52e19bd82a7a459a4482",
+      "kind": "duplicate",
+      "questionIds": [
+        458,
+        718
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "52e19bd82a7a459a448273ac8d0c2bd9edef215fbc218e2812f7b48870455b21",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "reviewer": "Codex",
+    "reason": "q458 asks The Lion King's winning song, Can You Feel the Love Tonight; q718 asks the 1993 winner, A Whole New World. Distinct films, songs and ceremonies.",
+    "reference": "audit/runs/next-shard-0013-evidence-notes.json"
+  },
+  {
+    "finding": {
+      "id": "duplicate-7b6eb1311a4ec029dfa6",
+      "kind": "duplicate",
+      "questionIds": [
+        729,
+        2352
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "7b6eb1311a4ec029dfa6013e72a3a570739bab509385859f5de1ed8331148271",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "reviewer": "Codex",
+    "reason": "Wish's 2022 maiden voyage and Treasure's ship-class/size relationship are different facts. Identifying Wish by voyage date does not establish Treasure's class.",
+    "reference": "audit/runs/next-shard-0013-evidence-notes.json"
+  },
+  {
+    "finding": {
+      "id": "duplicate-7e2f48b0f55ecb4841b4",
+      "kind": "duplicate",
+      "questionIds": [
+        468,
+        703
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "7e2f48b0f55ecb4841b4ffb3f48fc688fa2be9ff851754a070604c24b2f9be63",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "reviewer": "Codex",
+    "reason": "The original Little Mermaid lyric credit is a separate work from the Beauty and the Beast/Aladdin credits in q468. A known collaboration does not prove an individual film credit; the remake even has additional lyricists, so 1989 is explicit.",
+    "reference": "audit/runs/next-shard-0013-evidence-notes.json"
+  },
+  {
+    "finding": {
+      "id": "duplicate-81d56f050d596f088ef6",
+      "kind": "duplicate",
+      "questionIds": [
+        718,
+        719
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "81d56f050d596f088ef650d906952900976f4a4a74c192ecb0cfd9bdb1589e62",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "reviewer": "Codex",
+    "reason": "q718 asks Aladdin's 1993 winner; q719 asks the Mary Poppins winning song. Similar award wording, independent songs and film contexts.",
+    "reference": "audit/runs/next-shard-0013-evidence-notes.json"
+  },
+  {
+    "finding": {
+      "id": "duplicate-81e7b93c52553d78ad06",
+      "kind": "duplicate",
+      "questionIds": [
+        729,
+        1223
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "81e7b93c52553d78ad0693e76c81f9afb1d95c282f4805e902502f24dbd54b5c",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "reviewer": "Codex",
+    "reason": "A 2022 maiden voyage does not establish which Grand Hall statue a ship has. Date identity and decorative statue assignment require different knowledge.",
+    "reference": "audit/runs/next-shard-0013-evidence-notes.json"
+  },
+  {
+    "finding": {
+      "id": "duplicate-98ffb70ee2794c24f98e",
+      "kind": "duplicate",
+      "questionIds": [
+        743,
+        2276
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "98ffb70ee2794c24f98e9e2eb3c17c34a7e4b9a1ca782d66a12ef5502fde0f1d",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "reviewer": "Codex",
+    "reason": "Dream's January 2011 maiden voyage and a stage show debuting aboard it in 2017 are independent historical events.",
+    "reference": "audit/runs/next-shard-0013-evidence-notes.json"
+  },
+  {
+    "finding": {
+      "id": "duplicate-c2e8c8a2658fdfcee625",
+      "kind": "duplicate",
+      "questionIds": [
+        159,
+        725
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "c2e8c8a2658fdfcee62583283a69a596f3d8a8fe1174cd15b771cfd5ed0a7312",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "reviewer": "Codex",
+    "reason": "q159 asks the composer shared by three other films; q725 asks the Hunchback orchestral score. A composer's earlier credits do not establish a later film assignment.",
+    "reference": "audit/runs/next-shard-0013-evidence-notes.json"
+  },
+  {
+    "finding": {
+      "id": "duplicate-ce237cfb1408572074d3",
+      "kind": "duplicate",
+      "questionIds": [
+        729,
+        743
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "ce237cfb1408572074d3a418484450e6701f0e5587c87cf51af81aeb6c60d16a",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "reviewer": "Codex",
+    "reason": "Same chronological question format but different ships and dates: Wish July 2022 versus Dream January 2011.",
+    "reference": "audit/runs/next-shard-0013-evidence-notes.json"
+  },
+  {
+    "finding": {
+      "id": "duplicate-d9e03b2644e1d5686a5a",
+      "kind": "duplicate",
+      "questionIds": [
+        743,
+        1221
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "d9e03b2644e1d5686a5ab3815f4d3c9dffe7e0e316686ca240fbfdccd1a294c3",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "reviewer": "Codex",
+    "reason": "Dream's maiden voyage date and Admiral Donald atrium statue are different ship attributes; one answer alone does not establish the other relationship.",
+    "reference": "audit/runs/next-shard-0013-evidence-notes.json"
+  },
+  {
+    "finding": {
+      "id": "duplicate-da2d7d2f1823b271f18b",
+      "kind": "duplicate",
+      "questionIds": [
+        450,
+        701
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "da2d7d2f1823b271f18b263386beb8e5e5801981670f1394b46a963e4569a678",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "reviewer": "Codex",
+    "reason": "These ask credits for two distinct recordings, Let It Go in Frozen and Into the Unknown in Frozen 2. Same role and performer do not guarantee a separate song's recording credit: Frozen also uses a different pop singer for its end-credit rendition. Retain the original-film recording fact separately from the sequel recording fact.",
+    "reference": "audit/runs/next-shard-0013-evidence-notes.json"
+  },
+  {
+    "finding": {
+      "id": "duplicate-fc518a24be58f8d8754a",
+      "kind": "duplicate",
+      "questionIds": [
+        716,
+        1261
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "fc518a24be58f8d8754ae1e1db85c252c5e76ede9019b683357c3f4759697a0d",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "reviewer": "Codex",
+    "reason": "The opening Tarzan montage uses Two Worlds; the childhood-growth montage uses Son of Man. Different scenes and songs; full music digest confirms distinct targets.",
+    "reference": "audit/runs/next-shard-0013-evidence-notes.json"
+  }
+]

@@ -1,4 +1,4 @@
-# Development and release notes — v1.39
+# Development and release notes — v1.43
 
 This remains a static app. There is no build step. npm dependencies are for
 verification only; production uses the Firebase compat CDN scripts.
@@ -59,6 +59,9 @@ The current editorial audit procedure is [QUESTION_AUDIT.md](QUESTION_AUDIT.md).
 Its version-bound ledger distinguishes structural checks, manual review and
 four-option source verification. CI and deployment run its read-only release gate.
 The frozen adoption baseline is a disclosed backlog, not factual approval.
+For conversational sequential audits, "Audit the next shard" means perform the
+next 50-question batch via `question_audit.py next`, resuming unfinished work.
+AGENTS.md defines the shortcut; `question_audit.py status` is read-only.
 
 Missed-question and weakest-category practice are available from player settings
 after there is relevant history. Practice does not award competitive points or
@@ -67,8 +70,9 @@ offline after an initial online visit and cache installation. `sw.js` caches onl
 same-origin app assets and questions; database requests remain network-only.
 The service worker never caches the admin page or update probes.
 
-There are 2,037 active questions plus three retired duplicates (754 → 27,
-1454 → 47, 766 → 31). Retired IDs must not be reused. Optional question metadata:
+There are 1,920 active questions plus 120 preserved retired duplicates after the
+first thirteen sequential audit batches. See questions/retired.json for the retained
+snapshots and replacement IDs. Retired IDs must not be reused. Optional question metadata:
 
 ```json
 {
@@ -80,8 +84,8 @@ There are 2,037 active questions plus three retired duplicates (754 → 27,
 }
 ```
 
-Fact IDs must be unique across active questions. Sources must be HTTPS. Nine
-initial questions include verified explanations and links; adding metadata is
+Fact IDs must be unique across active questions. Sources must be HTTPS. Seven
+active questions include verified explanations and links; adding metadata is
 incremental, not a claim that all 2,037 facts were independently reverified.
 The admin page exports difficulty recommendations once a question has at least
 20 attempts: 80%+ correct suggests easy, 45%+ medium, otherwise hard. These are

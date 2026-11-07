@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 66,
+  "hash": "d2d33924b44c52f74aafe1037756ae0953fc45a8bbeedf74efbb1314ead37477",
+  "questionSnapshot": {
+    "id": 66,
+    "question": "What type of animal is Timon in The Lion King?",
+    "answers": [
+      "Meerkat",
+      "Prairie dog",
+      "Otter",
+      "Weasel"
+    ],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "q67 requests Pumbaa’s species, not Timon’s. Animal identifications require separate facts. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "English-language Disney character naming; original theatrical feature where a film is named. What type of animal is Timon in The Lion King?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Timon is a meerkat; a meerkat belongs to the mongoose family.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/lion-king-the-film/",
+          "locator": "Opening three synopsis paragraphs: Scar’s murder and usurpation; Mufasa as king/father; Pumbaa as warthog; Timon as meerkat; Rafiki as guiding shaman."
+        },
+        {
+          "url": "https://animals.sandiegozoo.org/animals/meerkat",
+          "locator": "Taxonomy header and ABOUT opening: Suricata suricatta, Herpestidae; member of mongoose family, with Timon identified as a meerkat."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Original Mongoose option was defensible as the broader family description, so it was replaced. Challenged the final alternatives for the same nesting problem: prairie dog, otter and weasel do not contain meerkat as a subgroup."
+    },
+    "options": [
+      {
+        "answer": "Meerkat",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Both the film synopsis and zoo reference identify Timon as a meerkat.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/lion-king-the-film/",
+            "locator": "Opening three synopsis paragraphs: Scar’s murder and usurpation; Mufasa as king/father; Pumbaa as warthog; Timon as meerkat; Rafiki as guiding shaman."
+          },
+          {
+            "url": "https://animals.sandiegozoo.org/animals/meerkat",
+            "locator": "Taxonomy header and ABOUT opening: Suricata suricatta, Herpestidae; member of mongoose family, with Timon identified as a meerkat."
+          }
+        ]
+      },
+      {
+        "answer": "Prairie dog",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "A prairie dog is not the identified meerkat.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/lion-king-the-film/",
+            "locator": "Opening three synopsis paragraphs: Scar’s murder and usurpation; Mufasa as king/father; Pumbaa as warthog; Timon as meerkat; Rafiki as guiding shaman."
+          },
+          {
+            "url": "https://animals.sandiegozoo.org/animals/meerkat",
+            "locator": "Taxonomy header and ABOUT opening: Suricata suricatta, Herpestidae; member of mongoose family, with Timon identified as a meerkat."
+          }
+        ]
+      },
+      {
+        "answer": "Otter",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "An otter is not a meerkat.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/lion-king-the-film/",
+            "locator": "Opening three synopsis paragraphs: Scar’s murder and usurpation; Mufasa as king/father; Pumbaa as warthog; Timon as meerkat; Rafiki as guiding shaman."
+          },
+          {
+            "url": "https://animals.sandiegozoo.org/animals/meerkat",
+            "locator": "Taxonomy header and ABOUT opening: Suricata suricatta, Herpestidae; member of mongoose family, with Timon identified as a meerkat."
+          }
+        ]
+      },
+      {
+        "answer": "Weasel",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "A weasel is not a meerkat; resemblance does not make them the same animal.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/lion-king-the-film/",
+            "locator": "Opening three synopsis paragraphs: Scar’s murder and usurpation; Mufasa as king/father; Pumbaa as warthog; Timon as meerkat; Rafiki as guiding shaman."
+          },
+          {
+            "url": "https://animals.sandiegozoo.org/animals/meerkat",
+            "locator": "Taxonomy header and ABOUT opening: Suricata suricatta, Herpestidae; member of mongoose family, with Timon identified as a meerkat."
+          }
+        ]
+      }
+    ]
+  }
+}

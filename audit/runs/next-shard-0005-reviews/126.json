@@ -1,0 +1,141 @@
+{
+  "schema": 2,
+  "questionId": 126,
+  "hash": "d094539d41fea3ca9d88ca0d213c4844c60bca669fcb436ca8ce5e8092484458",
+  "questionSnapshot": {
+    "id": 126,
+    "question": "Which Mickey Mouse short introduced Mickey's white gloves?",
+    "answers": [
+      "The Opry House",
+      "Steamboat Willie",
+      "Plane Crazy",
+      "The Karnival Kid"
+    ],
+    "difficulty": "hard",
+    "category": "walt"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Investigated conflicting Ask Dave answer instead of ignoring it. Museum explicitly distinguishes debut stage costume in Opry House from permanent design in following When the Cat’s Away; independent D23 release entry supports debut. Final question asks introduction, not permanent adoption. All listed alternatives are excluded by the chronology; evidence discrepancy remains documented.",
+  "verification": {
+    "context": "Which Mickey Mouse short introduced Mickey's white gloves?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "D23 release history and independent museum identify Opry House glove debut.",
+      "sources": [
+        {
+          "url": "https://d23.com/this-day/the-opry-house-is-released/",
+          "locator": "Final paragraph explicitly says first Mickey cartoon with trademark white gloves; opening dates 1929 and stage performance."
+        },
+        {
+          "url": "https://www.waltdisney.org/blog/evolution-mickey-mouse",
+          "locator": "Paragraph beginning But when did Mickey’s gloves come into play: debut as stage costume in The Opry House, permanent fixture in following When the Cat’s Away. Earlier paragraphs distinguish Plane Crazy, Steamboat Willie and Karnival Kid."
+        },
+        {
+          "url": "https://d23.com/ask-dave/marie-serris-france/",
+          "locator": "Ask Dave reply attributes added gloves to When the Cat’s Away. Conflicting wording retained as evidence limitation; museum explicitly distinguishes debut costume from following permanent design, and D23 release article independently supports Opry debut."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Investigated conflicting Ask Dave answer instead of ignoring it. Museum explicitly distinguishes debut stage costume in Opry House from permanent design in following When the Cat’s Away; independent D23 release entry supports debut. Final question asks introduction, not permanent adoption. All listed alternatives are excluded by the chronology; evidence discrepancy remains documented."
+    },
+    "options": [
+      {
+        "answer": "The Opry House",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "D23 release history and independent museum identify Opry House glove debut.",
+        "sources": [
+          {
+            "url": "https://d23.com/this-day/the-opry-house-is-released/",
+            "locator": "Final paragraph explicitly says first Mickey cartoon with trademark white gloves; opening dates 1929 and stage performance."
+          },
+          {
+            "url": "https://www.waltdisney.org/blog/evolution-mickey-mouse",
+            "locator": "Paragraph beginning But when did Mickey’s gloves come into play: debut as stage costume in The Opry House, permanent fixture in following When the Cat’s Away. Earlier paragraphs distinguish Plane Crazy, Steamboat Willie and Karnival Kid."
+          },
+          {
+            "url": "https://d23.com/ask-dave/marie-serris-france/",
+            "locator": "Ask Dave reply attributes added gloves to When the Cat’s Away. Conflicting wording retained as evidence limitation; museum explicitly distinguishes debut costume from following permanent design, and D23 release article independently supports Opry debut."
+          }
+        ]
+      },
+      {
+        "answer": "Steamboat Willie",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Earlier short does not introduce gloves per museum’s account.",
+        "sources": [
+          {
+            "url": "https://d23.com/this-day/the-opry-house-is-released/",
+            "locator": "Final paragraph explicitly says first Mickey cartoon with trademark white gloves; opening dates 1929 and stage performance."
+          },
+          {
+            "url": "https://www.waltdisney.org/blog/evolution-mickey-mouse",
+            "locator": "Paragraph beginning But when did Mickey’s gloves come into play: debut as stage costume in The Opry House, permanent fixture in following When the Cat’s Away. Earlier paragraphs distinguish Plane Crazy, Steamboat Willie and Karnival Kid."
+          },
+          {
+            "url": "https://d23.com/ask-dave/marie-serris-france/",
+            "locator": "Ask Dave reply attributes added gloves to When the Cat’s Away. Conflicting wording retained as evidence limitation; museum explicitly distinguishes debut costume from following permanent design, and D23 release article independently supports Opry debut."
+          }
+        ]
+      },
+      {
+        "answer": "Plane Crazy",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Museum expressly says Plane Crazy has no iconic white gloves.",
+        "sources": [
+          {
+            "url": "https://d23.com/this-day/the-opry-house-is-released/",
+            "locator": "Final paragraph explicitly says first Mickey cartoon with trademark white gloves; opening dates 1929 and stage performance."
+          },
+          {
+            "url": "https://www.waltdisney.org/blog/evolution-mickey-mouse",
+            "locator": "Paragraph beginning But when did Mickey’s gloves come into play: debut as stage costume in The Opry House, permanent fixture in following When the Cat’s Away. Earlier paragraphs distinguish Plane Crazy, Steamboat Willie and Karnival Kid."
+          },
+          {
+            "url": "https://d23.com/ask-dave/marie-serris-france/",
+            "locator": "Ask Dave reply attributes added gloves to When the Cat’s Away. Conflicting wording retained as evidence limitation; museum explicitly distinguishes debut costume from following permanent design, and D23 release article independently supports Opry debut."
+          }
+        ]
+      },
+      {
+        "answer": "The Karnival Kid",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Museum assigns this short first speech, not glove introduction.",
+        "sources": [
+          {
+            "url": "https://d23.com/this-day/the-opry-house-is-released/",
+            "locator": "Final paragraph explicitly says first Mickey cartoon with trademark white gloves; opening dates 1929 and stage performance."
+          },
+          {
+            "url": "https://www.waltdisney.org/blog/evolution-mickey-mouse",
+            "locator": "Paragraph beginning But when did Mickey’s gloves come into play: debut as stage costume in The Opry House, permanent fixture in following When the Cat’s Away. Earlier paragraphs distinguish Plane Crazy, Steamboat Willie and Karnival Kid."
+          },
+          {
+            "url": "https://d23.com/ask-dave/marie-serris-france/",
+            "locator": "Ask Dave reply attributes added gloves to When the Cat’s Away. Conflicting wording retained as evidence limitation; museum explicitly distinguishes debut costume from following permanent design, and D23 release article independently supports Opry debut."
+          }
+        ]
+      }
+    ]
+  }
+}

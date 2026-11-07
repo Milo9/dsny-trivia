@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 221,
+  "hash": "beb31a00f6c4879fc649a9ed2744abeff2bf50e407985a8ea82b8573258f2ff4",
+  "questionSnapshot": {
+    "id": 221,
+    "question": "In Aladdin (1992), what does Jafar become when his third wish is granted?",
+    "answers": [
+      "A genie",
+      "A dragon",
+      "A sorcerer",
+      "A king"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Specified original 1992 film and third granted wish. His earlier sorcery can persist, but the event asks what he becomes with this wish, not every role he has ever held. Genie is the unique transformation.",
+  "verification": {
+    "context": "In Aladdin (1992), what does Jafar become when his third wish is granted?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Official sequel synopsis recounts the wish that makes him a genie and binds him to a lamp.",
+      "sources": [
+        {
+          "url": "https://www.disneyplus.com/browse/entity-16c910f4-2bc0-43e7-98dc-0e4b10550478",
+          "locator": "Official Return of Jafar synopsis recounts Jafar’s wish to become the most powerful genie and imprisonment in a lamp, the original-film ending."
+        },
+        {
+          "url": "https://d23.com/a-to-z/aladdin-film/",
+          "locator": "Opening identifies mythical city Agrabah; distinguishes evil vizier Jafar from Genie and Sultan."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Specified original 1992 film and third granted wish. His earlier sorcery can persist, but the event asks what he becomes with this wish, not every role he has ever held. Genie is the unique transformation."
+    },
+    "options": [
+      {
+        "answer": "A genie",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Official sequel synopsis recounts the wish that makes him a genie and binds him to a lamp.",
+        "sources": [
+          {
+            "url": "https://www.disneyplus.com/browse/entity-16c910f4-2bc0-43e7-98dc-0e4b10550478",
+            "locator": "Official Return of Jafar synopsis recounts Jafar’s wish to become the most powerful genie and imprisonment in a lamp, the original-film ending."
+          },
+          {
+            "url": "https://d23.com/a-to-z/aladdin-film/",
+            "locator": "Opening identifies mythical city Agrabah; distinguishes evil vizier Jafar from Genie and Sultan."
+          }
+        ]
+      },
+      {
+        "answer": "A dragon",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different transformation; final wish produces a genie.",
+        "sources": [
+          {
+            "url": "https://www.disneyplus.com/browse/entity-16c910f4-2bc0-43e7-98dc-0e4b10550478",
+            "locator": "Official Return of Jafar synopsis recounts Jafar’s wish to become the most powerful genie and imprisonment in a lamp, the original-film ending."
+          },
+          {
+            "url": "https://d23.com/a-to-z/aladdin-film/",
+            "locator": "Opening identifies mythical city Agrabah; distinguishes evil vizier Jafar from Genie and Sultan."
+          }
+        ]
+      },
+      {
+        "answer": "A sorcerer",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Already acquired through earlier wish, not what third wish makes him.",
+        "sources": [
+          {
+            "url": "https://www.disneyplus.com/browse/entity-16c910f4-2bc0-43e7-98dc-0e4b10550478",
+            "locator": "Official Return of Jafar synopsis recounts Jafar’s wish to become the most powerful genie and imprisonment in a lamp, the original-film ending."
+          },
+          {
+            "url": "https://d23.com/a-to-z/aladdin-film/",
+            "locator": "Opening identifies mythical city Agrabah; distinguishes evil vizier Jafar from Genie and Sultan."
+          }
+        ]
+      },
+      {
+        "answer": "A king",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Royal ambition/earlier Sultan wish is not the third-wish transformation.",
+        "sources": [
+          {
+            "url": "https://www.disneyplus.com/browse/entity-16c910f4-2bc0-43e7-98dc-0e4b10550478",
+            "locator": "Official Return of Jafar synopsis recounts Jafar’s wish to become the most powerful genie and imprisonment in a lamp, the original-film ending."
+          },
+          {
+            "url": "https://d23.com/a-to-z/aladdin-film/",
+            "locator": "Opening identifies mythical city Agrabah; distinguishes evil vizier Jafar from Genie and Sultan."
+          }
+        ]
+      }
+    ]
+  }
+}

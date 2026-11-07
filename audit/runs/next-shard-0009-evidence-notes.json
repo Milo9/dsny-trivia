@@ -1,0 +1,2285 @@
+{
+  "schema": 1,
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "sourcesChecked": [
+    "b9-anniversary",
+    "b9-ashman",
+    "b9-ashmanloc",
+    "b9-beautysinger",
+    "b9-buccaneer",
+    "b9-buccaneerpanel",
+    "b9-dory",
+    "b9-dreamcolors",
+    "b9-eltonalbum",
+    "b9-eltondisney",
+    "b9-encantosongs",
+    "b9-fleet2024",
+    "b9-hyperspace",
+    "b9-inside2",
+    "b9-jiminy",
+    "b9-junglelist",
+    "b9-jungleprofiles",
+    "b9-letitgo",
+    "b9-luca",
+    "b9-magicitaly",
+    "b9-moanacreator",
+    "b9-moanacredits",
+    "b9-moanasolos",
+    "b9-moanaway",
+    "b9-monsters",
+    "b9-nemoaddress",
+    "b9-nemomask",
+    "b9-onward",
+    "b9-oscars1992",
+    "b9-oscars1995",
+    "b9-oscars2000",
+    "b9-oscars2014",
+    "b9-palo",
+    "b9-red",
+    "b9-satellite",
+    "b9-savages",
+    "b9-soul",
+    "b9-sulley",
+    "b9-surface",
+    "b9-tarzan",
+    "b9-toystory2",
+    "b9-unknown",
+    "b9-unknowncast",
+    "b9-welcomeclip",
+    "b9-wishcapacity",
+    "b9-wonderitaly"
+  ],
+  "reviews": [
+    {
+      "questionId": 426,
+      "hash": "fce1fdde929da62928f24c30170de9ab3043c897ca5098d06a40820a18b67dbc",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct anniversary fact; launch year q137 and Pearl-tier introduction q982 require different recall.",
+      "context": "DCL’s historical 25th anniversary season.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The dated announcement explicitly identifies 2023 as the 25th season.",
+        "sources": [
+          "b9-anniversary"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "2023 is the announcement and celebration year.",
+          "sources": [
+            "b9-anniversary"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2021 is two years before this anniversary.",
+          "sources": [
+            "b9-anniversary"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2022 is one year before this anniversary.",
+          "sources": [
+            "b9-anniversary"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2024 is one year after this anniversary.",
+          "sources": [
+            "b9-anniversary"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The anniversary is historical, not the present age of the company. None of the other years can be the dated 25th season."
+      }
+    },
+    {
+      "questionId": 428,
+      "hash": "a4d1aae4d0daf98f0dac4d686c97d1ab5b8f552a5ea3c48ad26d864bdbfb635e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from rotational restaurant count and youth age ranges; annual recheck not needed yet, 90-day source recheck scheduled.",
+      "context": "Approximate maximum passenger capacity of Disney Wish; excludes crew.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The fleet table and panel advice agree on about 4,000 guests.",
+        "sources": [
+          "b9-fleet2024",
+          "b9-wishcapacity"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "4,000 matches the stated guest capacity.",
+          "sources": [
+            "b9-fleet2024",
+            "b9-wishcapacity"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2,500 understates the identified Wish capacity.",
+          "sources": [
+            "b9-fleet2024",
+            "b9-wishcapacity"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "6,000 overstates that capacity.",
+          "sources": [
+            "b9-fleet2024",
+            "b9-wishcapacity"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1,800 understates that capacity.",
+          "sources": [
+            "b9-fleet2024",
+            "b9-wishcapacity"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Do not substitute double-occupancy totals, cabins or crew. Approximate advertised maximum excludes each alternative."
+      }
+    },
+    {
+      "questionId": 429,
+      "hash": "b0032b1473a768869fca3dcbb8bb54b7970c094a2dd7a313f1ab170f57345667",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q2349 tests the cocktail artifact, not the venue name.",
+      "context": "Disney Wish Star Wars lounge identity.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Disney names the Wish venue Star Wars: Hyperspace Lounge.",
+        "sources": [
+          "b9-hyperspace"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Hyperspace Lounge is the named venue.",
+          "sources": [
+            "b9-hyperspace"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cantina Bar is not the identified Wish venue name.",
+          "sources": [
+            "b9-hyperspace"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rebel Outpost is not the identified venue.",
+          "sources": [
+            "b9-hyperspace"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Millennium Falcon Bar is not its name.",
+          "sources": [
+            "b9-hyperspace"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other Star Wars experiences elsewhere cannot rename this Wish bar. Only the exact venue title fits."
+      }
+    },
+    {
+      "questionId": 430,
+      "hash": "90407e781bf8b147b74fa5861058516d3348bee1469f733e6107c206ca691f15",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from Remy’s French cuisine (148) and Palo’s name etymology (436).",
+      "context": "Palo on Magic, distinct from Palo Steakhouse aboard Wish.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The venue page identifies Italian, adult-exclusive cuisine, brunch and dinner, and lists Magic.",
+        "sources": [
+          "b9-palo"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Italian adult-exclusive brunch/dinner matches all stated attributes.",
+          "sources": [
+            "b9-palo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "French cuisine contradicts Northern Italian.",
+          "sources": [
+            "b9-palo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Family French dining conflicts with both age policy and cuisine.",
+          "sources": [
+            "b9-palo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A poolside buffet conflicts with the described adult-exclusive restaurant.",
+          "sources": [
+            "b9-palo"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Magic prevents conflation with Wish’s steakhouse. The correct option’s extra parenthesis supplies service context, but each choice gives a comparable cuisine/service claim."
+      }
+    },
+    {
+      "questionId": 432,
+      "hash": "4f26a72b7f934d8121b8a50ab4015648a6d21893942ee8b89cb64d516480f957",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "q2279 asks the shade nickname, which is a distinct naming fact. Historical scope avoids future fleet exceptions; medium suits paired-color recall.",
+      "context": "Disney Dream’s 2011 debut exterior, not current fleet variations.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The builder describes the original Dream design as dark/black hull with red funnels.",
+        "sources": [
+          "b9-dreamcolors"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Dark hull and red funnels matches the builder.",
+          "sources": [
+            "b9-dreamcolors"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "White hull and gold funnels disagrees on both colors.",
+          "sources": [
+            "b9-dreamcolors"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Red hull and white funnels reverses the actual placement.",
+          "sources": [
+            "b9-dreamcolors"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "White hull and blue funnels disagrees on both.",
+          "sources": [
+            "b9-dreamcolors"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Dark includes the custom near-black/navy shade without asserting pure black paint. Yellow belongs to lifeboats, not funnels; all options are parallel pairs."
+      }
+    },
+    {
+      "questionId": 433,
+      "hash": "53d09480dd71ab56da7e9a20dafc4d0907aa2dc22c4312b5fa19242eda0e71dd",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "1219 tests company identity, not country; 902’s Italian pavilion is unrelated.",
+      "context": "Original construction country for both Magic and Wonder, not flag or homeport.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Disney’s table gives Italian yards for both; official Magic page and trade Wonder history corroborate.",
+        "sources": [
+          "b9-fleet2024",
+          "b9-magicitaly",
+          "b9-wonderitaly"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Both were built in Italy.",
+          "sources": [
+            "b9-fleet2024",
+            "b9-magicitaly",
+            "b9-wonderitaly"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Germany applies to later Meyer-built ships, not these two.",
+          "sources": [
+            "b9-fleet2024",
+            "b9-magicitaly",
+            "b9-wonderitaly"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "United States is not either listed original construction country.",
+          "sources": [
+            "b9-fleet2024",
+            "b9-magicitaly",
+            "b9-wonderitaly"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Finland is not either listed original construction country.",
+          "sources": [
+            "b9-fleet2024",
+            "b9-magicitaly",
+            "b9-wonderitaly"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A Bahamian flag or Florida homeport does not change the build country. Both ships, not merely one, are covered."
+      }
+    },
+    {
+      "questionId": 434,
+      "hash": "7c79d3f4ffba6b8374baaa3454c9cd5dcb556d13a596d8ecb44cf845cd5f68ee",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinguishes the named show from q422’s generic Pirate Night event association.",
+      "context": "Disney Dream at its 2011 debut; not every ship’s present Pirate Night.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The eyewitness debut report identifies Buccaneer Blast as the pirate fireworks show; panel text corroborates its name.",
+        "sources": [
+          "b9-buccaneer",
+          "b9-buccaneerpanel"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Buccaneer Blast is the recorded show title.",
+          "sources": [
+            "b9-buccaneer",
+            "b9-buccaneerpanel"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pirate’s Salute is not the title in the debut report.",
+          "sources": [
+            "b9-buccaneer",
+            "b9-buccaneerpanel"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cannon Fire is not that show’s name.",
+          "sources": [
+            "b9-buccaneer",
+            "b9-buccaneerpanel"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sea Blaze is not that show’s name.",
+          "sources": [
+            "b9-buccaneer",
+            "b9-buccaneerpanel"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Wish’s later pirate show and itineraries with no fireworks cannot challenge the historical Dream-specific claim."
+      }
+    },
+    {
+      "questionId": 435,
+      "hash": "4bfe6d3fb615abd2189c57ff19b05daf4f0d19370ee4cbef5a9c630383b5b72e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "975 asks the general Quiet Cove area, not this named wading pool.",
+      "context": "Adult water-curtain wading pool on Dream and Fantasy.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The dedicated official page names Satellite Falls and both ships, plus adult-only access and cascading water.",
+        "sources": [
+          "b9-satellite"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Satellite Falls matches name, ship pair and water-curtain description.",
+          "sources": [
+            "b9-satellite"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rainforest Falls is not the named pool.",
+          "sources": [
+            "b9-satellite"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cascade Pool is not this venue’s title.",
+          "sources": [
+            "b9-satellite"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Neptune’s Retreat is not this venue’s title.",
+          "sources": [
+            "b9-satellite"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The wording refers to the cascading-water wading area, not the broader Quiet Cove pool; a waterfall need not be a natural cliff."
+      }
+    },
+    {
+      "questionId": 438,
+      "hash": "f494bf18b10490f617a51bcdddfbba72e90f5a9ed3ad474810cf6e9dfb210484",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "701 tests performer identity, requiring the actor name; 697 asks the song itself. This character-performance question remains distinct.",
+      "context": "Original English-language Frozen sequence.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney explicitly maps the song sequence and its singer to Elsa.",
+        "sources": [
+          "b9-letitgo"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Elsa performs the identified sequence.",
+          "sources": [
+            "b9-letitgo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Anna is not the character singing this solo.",
+          "sources": [
+            "b9-letitgo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kristoff is not its singer.",
+          "sources": [
+            "b9-letitgo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Olaf is not its singer.",
+          "sources": [
+            "b9-letitgo"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Actor Menzel is the voice of Elsa; other characters’ songs or later sing-alongs do not make them this original sequence’s singer."
+      }
+    },
+    {
+      "questionId": 441,
+      "hash": "7d8d2cad709351b0e4e6122ebcd6f94c2ab6319f8b100c99782a183b1a4ec397",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "993 concerns Give a Little Whistle, a different song; 1102 concerns his appointment as conscience.",
+      "context": "Original Pinocchio performance, not later covers.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney’s archive explicitly says Jiminy Cricket introduced the song in Pinocchio.",
+        "sources": [
+          "b9-jiminy"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Jiminy Cricket is the identified singer.",
+          "sources": [
+            "b9-jiminy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pinocchio is the title character but not this song’s introducing vocalist.",
+          "sources": [
+            "b9-jiminy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Geppetto is not the introducing singer.",
+          "sources": [
+            "b9-jiminy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Blue Fairy is not the identified vocalist.",
+          "sources": [
+            "b9-jiminy"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Jiminy’s conscience role does not prove a song credit; the separate archival performance sentence does. Cover versions do not alter it."
+      }
+    },
+    {
+      "questionId": 446,
+      "hash": "64e3dde6fdfbc24b3a0cffab521e87e821c6ee630da1765912fe8dd6b9e075d6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "No other full-topic question tests this particular song-to-film link.",
+      "context": "Film attribution for Surface Pressure, not a later signed adaptation.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The company release directly places Surface Pressure on Encanto’s soundtrack and identifies Luisa’s role.",
+        "sources": [
+          "b9-surface"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Encanto is the explicit film attribution.",
+          "sources": [
+            "b9-surface"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Frozen is not the originating film identified for this Luisa song.",
+          "sources": [
+            "b9-surface"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Brave is not the identified film.",
+          "sources": [
+            "b9-surface"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Moana is not the identified film.",
+          "sources": [
+            "b9-surface"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The signed adaptation is derived from Encanto; it does not introduce a second listed film. Luisa’s burden provides specific corroborating context."
+      }
+    },
+    {
+      "questionId": 447,
+      "hash": "fd3bad64b1f8863ec87ecf4c6485e3a79df509125cd5658188cb57bb5539c10d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Separate from 437/2283’s You’ve Got a Friend in Me and 2286’s We Belong Together.",
+      "context": "First introduction of the song, not later franchise references or reprises.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The archive calls When She Loved Me a new Toy Story 2 song.",
+        "sources": [
+          "b9-toystory2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Toy Story 2 introduced the song.",
+          "sources": [
+            "b9-toystory2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The 1995 Toy Story predates the new sequel song.",
+          "sources": [
+            "b9-toystory2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Toy Story 3 follows its documented introduction.",
+          "sources": [
+            "b9-toystory2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Toy Story 4 follows that introduction.",
+          "sources": [
+            "b9-toystory2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A later reprise cannot satisfy introduced; the new-song production credit, rather than absence from a synopsis, excludes the other numbered films."
+      }
+    },
+    {
+      "questionId": 448,
+      "hash": "7619c04f6b57fb7d3dc913e6ba0e9951382301950c872109a83c703bf9dffd59",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from 2547’s Jordan Fisher end-credits duet attribution and 699’s Moana solo.",
+      "context": "Maui’s original 2016 Moana number, not the end-credits duet.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The production vendor credits You’re Welcome to Dwayne Johnson; creator credits identify Johnson as Maui.",
+        "sources": [
+          "b9-welcomeclip",
+          "b9-moanacreator",
+          "b9-moanasolos",
+          "b9-moanaway"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "You’re Welcome is Johnson/Maui’s identified number.",
+          "sources": [
+            "b9-welcomeclip",
+            "b9-moanacreator",
+            "b9-moanasolos",
+            "b9-moanaway"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "How Far I’ll Go is the Moana longing number, not the identified Maui performance.",
+          "sources": [
+            "b9-welcomeclip",
+            "b9-moanacreator",
+            "b9-moanasolos",
+            "b9-moanaway"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Shiny is Tamatoa’s number, not the identified Maui solo.",
+          "sources": [
+            "b9-welcomeclip",
+            "b9-moanacreator",
+            "b9-moanasolos",
+            "b9-moanaway"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "We Know the Way is the voyaging song, not this self-introducing Maui number.",
+          "sources": [
+            "b9-welcomeclip",
+            "b9-moanacreator",
+            "b9-moanasolos",
+            "b9-moanaway"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "We Know the Way also concerns ancestors, but the requested Maui number is specifically identified by its performer and original-song title; end-credits vocals are a separate rendition."
+      }
+    },
+    {
+      "questionId": 450,
+      "hash": "3b65f309f6706a5845f8de9368afc9a56c98f2c3ff33f0d3895c791a32b357e2",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "701 tests a different song; 2544 tests the Panic! end-credits cover.",
+      "context": "Original English Frozen 2 Elsa vocals, not a pop cover or other language dub.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The soundtrack credits Menzel/AURORA; production notes identify Menzel as Elsa.",
+        "sources": [
+          "b9-unknown",
+          "b9-unknowncast"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Idina Menzel is Elsa’s credited vocalist.",
+          "sources": [
+            "b9-unknown",
+            "b9-unknowncast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Celine Dion is not in the track’s performer list.",
+          "sources": [
+            "b9-unknown",
+            "b9-unknowncast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Demi Lovato is not in this track’s performer list.",
+          "sources": [
+            "b9-unknown",
+            "b9-unknowncast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Adele is not in the performer list.",
+          "sources": [
+            "b9-unknown",
+            "b9-unknowncast"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "AURORA also sings on the track but is not Elsa and is not a listed alternative. Earlier Lovato Frozen cover does not establish an Elsa credit here."
+      }
+    },
+    {
+      "questionId": 451,
+      "hash": "97958f3077daf9494d770215806afa901837dcbb54ca4254184da50744aa40c1",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "709 asks songwriters, not the pop vocalist; 164 asks original film opening vocals.",
+      "context": "Pop recordings on the 1994 album; distinguish film-scene vocals.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The artist tracklist and Disney biography both assign the separate soundtrack pop recordings to Elton John.",
+        "sources": [
+          "b9-eltonalbum",
+          "b9-eltondisney"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Elton John is credited on both pop tracks.",
+          "sources": [
+            "b9-eltonalbum",
+            "b9-eltondisney"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Phil Collins is not their credited singer.",
+          "sources": [
+            "b9-eltonalbum",
+            "b9-eltondisney"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hans Zimmer’s score role is not these pop-vocal credits.",
+          "sources": [
+            "b9-eltonalbum",
+            "b9-eltondisney"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lebo M’s film vocal/arrangement contribution is not the separate Elton pop recordings.",
+          "sources": [
+            "b9-eltonalbum",
+            "b9-eltondisney"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Lebo M is a serious competing answer under vague film-performance wording. Explicit pop-version album scope excludes him without denying his real contribution."
+      }
+    },
+    {
+      "questionId": 453,
+      "hash": "5af86d0619d0425ae0380320ff9488678220dae9dcb9ff26896f075919a0e1e9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from retained 458’s Song winner and 451’s pop recordings.",
+      "context": "1994 animated Lion King orchestral score and 1995 ceremony.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Academy credits the Original Score win to Hans Zimmer.",
+        "sources": [
+          "b9-oscars1995"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Hans Zimmer is the listed score winner.",
+          "sources": [
+            "b9-oscars1995"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Alan Menken is not the film’s credited score winner.",
+          "sources": [
+            "b9-oscars1995"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Elton John wrote songs but is not this score winner.",
+          "sources": [
+            "b9-oscars1995"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "John Williams is not the credited score winner.",
+          "sources": [
+            "b9-oscars1995"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Song composition is distinct from score composition; John’s Song win cannot satisfy the score credit."
+      }
+    },
+    {
+      "questionId": 456,
+      "hash": "8521aba7f3583fa55dd82ebbb7c2ee383619fc365acc7bb6f8ee7d921e233476",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from 2549’s score-composer milestone and 446’s particular song association.",
+      "context": "Eight original songs in the 2021 film; excludes orchestral score.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney’s complete music credit gives eight original songs by Miranda and a separate Franco score.",
+        "sources": [
+          "b9-encantosongs"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Miranda is the credited original songwriter.",
+          "sources": [
+            "b9-encantosongs"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Menken is not the songwriter in this credit.",
+          "sources": [
+            "b9-encantosongs"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Sherman Brothers are not the credited writers.",
+          "sources": [
+            "b9-encantosongs"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Elton John is not the credited writer.",
+          "sources": [
+            "b9-encantosongs"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Franco’s score does not contradict the original-song credit. Eight original songs avoids overclaiming all incidental or background music."
+      }
+    },
+    {
+      "questionId": 457,
+      "hash": "2037cd539491b16c3faef945dfe4766aa47f3dc821081a5db986b1ee3b0c4ac9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "1382 tests a different song; 2284 tests an Oscar outcome, not Savages.",
+      "context": "Savages as a song title on the original Pocahontas film soundtrack.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The label-distributed track is explicitly linked to Pocahontas music from the motion picture.",
+        "sources": [
+          "b9-savages"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Pocahontas is the credited film.",
+          "sources": [
+            "b9-savages"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mulan is not this recording’s film attribution.",
+          "sources": [
+            "b9-savages"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hunchback is not its film attribution despite shared Disney performers.",
+          "sources": [
+            "b9-savages"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tarzan is not its film attribution.",
+          "sources": [
+            "b9-savages"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Artist recommendation links on a music page are not film credits. Specific track/album attribution, not thematic similarity, supports one answer."
+      }
+    },
+    {
+      "questionId": 458,
+      "hash": "17211cca54233d1cfbe8c30b6387d84c3f1f37f1e32a46c6576625be2b7c01dc",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Necessary authentic title length; shortening only the winner would distort it. Different from q718’s 1993 Aladdin winner and q2551’s nomination count.",
+      "context": "Original Song winner for 1994 Lion King at the 1995 Oscars.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Academy distinguishes the winning song from the other Lion King nominees.",
+        "sources": [
+          "b9-oscars1995"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Can You Feel the Love Tonight is marked winner.",
+          "sources": [
+            "b9-oscars1995"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hakuna Matata is a nominee, not the winner.",
+          "sources": [
+            "b9-oscars1995"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Circle of Life is a nominee, not the winner.",
+          "sources": [
+            "b9-oscars1995"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Be Prepared is not the winning song or a nominee in the complete category.",
+          "sources": [
+            "b9-oscars1995"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All are real film songs. Being Oscar-nominated is insufficient: the winner designation singles out the first answer."
+      }
+    },
+    {
+      "questionId": 459,
+      "hash": "b35ea26e0cecd55d0d1039a9d27d795cbb474386ca3d868fac0cfa8b5ba5a294",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "2538 asks the pop duet; the in-film singer is a separate performance fact. Parallel character-only answers remove the actor parenthesis clue.",
+      "context": "Original 1991 in-story ballroom rendition; not the end-credits duet or remake.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The archive distinguishes Lansbury’s in-story title song from the pop duet and maps her to Mrs. Potts.",
+        "sources": [
+          "b9-beautysinger"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Mrs. Potts is the singer voiced by Lansbury.",
+          "sources": [
+            "b9-beautysinger"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Belle dances but does not perform this ballroom rendition.",
+          "sources": [
+            "b9-beautysinger"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lumiere’s voice credit is Jerry Orbach, not the identified singer.",
+          "sources": [
+            "b9-beautysinger"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Beast dances but is not the identified title-song vocalist.",
+          "sources": [
+            "b9-beautysinger"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The two dancing characters can be mistaken for the singers. The original film and in-story scope excludes the duet and later Emma Thompson rendition."
+      }
+    },
+    {
+      "questionId": 460,
+      "hash": "584118354d080643df480010a884b801b65978fe54bc48dbfa5a2af2ff1342ad",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "814/1331 test the secret of fire, not the song title.",
+      "context": "Original 1967 King Louie featured number.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney’s character profile explicitly identifies King Louie’s Prima performance as I Wanna Be Like You.",
+        "sources": [
+          "b9-jungleprofiles",
+          "b9-junglelist"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "I Wanna Be Like You is Louie’s named featured number.",
+          "sources": [
+            "b9-jungleprofiles",
+            "b9-junglelist"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Bare Necessities introduces Baloo, not Louie.",
+          "sources": [
+            "b9-jungleprofiles",
+            "b9-junglelist"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Trust in Me is Kaa’s hypnotic song, not Louie’s featured number.",
+          "sources": [
+            "b9-jungleprofiles",
+            "b9-junglelist"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "That’s What Friends Are For is the vultures’ friendship number, not Louie’s.",
+          "sources": [
+            "b9-jungleprofiles",
+            "b9-junglelist"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other songs are from the same film and stylistic labels alone would be weak. The performer/character attribution isolates the answer; corrected Bare spelling makes the distractor genuine."
+      }
+    },
+    {
+      "questionId": 461,
+      "hash": "bc1582c1623bbdff4876e1967a44b53191f0f1b5340f022f4a2cddfb99b42773",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "The replacement resolves genuine multiple-answer ambiguity, rather than changing the designated answer.",
+      "context": "Original songs for animated Moana (2016), not the 2026 remake.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Publisher and creator list Miranda, Foaʻi and Mancina as original-song collaborators.",
+        "sources": [
+          "b9-moanacredits",
+          "b9-moanacreator"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Foaʻi is in the original-song team.",
+          "sources": [
+            "b9-moanacredits",
+            "b9-moanacreator"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Elton John is absent from the complete songwriting credit.",
+          "sources": [
+            "b9-moanacredits",
+            "b9-moanacreator"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Howard Ashman is absent from that team.",
+          "sources": [
+            "b9-moanacredits",
+            "b9-moanacreator"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Alan Menken is absent from that team.",
+          "sources": [
+            "b9-moanacredits",
+            "b9-moanacreator"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Mancina also co-wrote songs, so he cannot be a distractor. The final list removes him and explicitly asks which of these; all three wrong names are excluded by the complete team credit."
+      }
+    },
+    {
+      "questionId": 462,
+      "hash": "c0702ede7912666deb04ae076ada49d518eb07eed1672b1a7f06587cd145f77f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different song/event from 466; sharing an award category does not repeat a fact.",
+      "context": "2000 ceremony award to the 1999 Tarzan song.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Academy lists Tarzan’s only nomination/win as Original Song for Collins’s song.",
+        "sources": [
+          "b9-oscars2000",
+          "b9-tarzan"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Original Song is the recorded award.",
+          "sources": [
+            "b9-oscars2000",
+            "b9-tarzan"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Original Score went to The Red Violin, not this song.",
+          "sources": [
+            "b9-oscars2000",
+            "b9-tarzan"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sound is not the category of Tarzan’s sole win.",
+          "sources": [
+            "b9-oscars2000",
+            "b9-tarzan"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Animated Short is not the category of this song’s win.",
+          "sources": [
+            "b9-oscars2000",
+            "b9-tarzan"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The film’s award list is exhaustive; soundtrack albums and pop song awards are not Oscar categories. Replaced those invented choices with real categories and set medium."
+      }
+    },
+    {
+      "questionId": 463,
+      "hash": "4ed05ee781dea4e2a6ed151bfaddd3138f09d3ed21a6163a258a5d2e377fd91d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from 718’s Aladdin song winning in 1993.",
+      "context": "Ceremony year of the original title song’s Oscar, not film release year.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Academy’s 1992 ceremony page records Beauty and the Beast’s Original Song win.",
+        "sources": [
+          "b9-oscars1992"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "1992 is the ceremony year.",
+          "sources": [
+            "b9-oscars1992"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1990 precedes the film and recorded win.",
+          "sources": [
+            "b9-oscars1992"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1994 is two ceremonies later.",
+          "sources": [
+            "b9-oscars1992"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1988 precedes the film and recorded win.",
+          "sources": [
+            "b9-oscars1992"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "1991 is the film release year, not an offered alternative; the dated official ceremony fixes the requested award year uniquely."
+      }
+    },
+    {
+      "questionId": 466,
+      "hash": "c9c0788c6b3a35da112157ef4800635f5e68ce713f9634d0efe05dc34c9c62ed",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium suits common song-award recognition; separate from q462’s Tarzan award.",
+      "context": "The Let It Go song’s 2014 award, not Frozen’s separate film award.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Academy assigns Let It Go to Original Song and Frozen separately to Animated Feature.",
+        "sources": [
+          "b9-oscars2014"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Original Song is the track’s win.",
+          "sources": [
+            "b9-oscars2014"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Original Score is not the song’s category.",
+          "sources": [
+            "b9-oscars2014"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Animated Feature belongs to the film, not Let It Go.",
+          "sources": [
+            "b9-oscars2014"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Original Screenplay is not a recorded Frozen win.",
+          "sources": [
+            "b9-oscars2014"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Frozen did win Animated Feature, so the subject song is essential to uniqueness. Literal wording clearly asks the song’s category."
+      }
+    },
+    {
+      "questionId": 468,
+      "hash": "b228700a9def8ed518a7d4269350b5192e7626d6b86fdaef488e25f7e85366d4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Removed the death-date clue, which overlapped 1392’s completion biography. The retained fact is the lyricist collaboration on both named films, distinct from 703’s Little Mermaid credit. No claim that these were his only films.",
+      "context": "Lyricist partnership across the 1991/1992 animated films.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney biography names Ashman’s lyricist role and both films; the Academy credits his Beast lyrics and LOC distinguishes Rice’s later Aladdin work.",
+        "sources": [
+          "b9-ashman",
+          "b9-ashmanloc",
+          "b9-oscars1992"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Ashman matches both film collaborations.",
+          "sources": [
+            "b9-ashman",
+            "b9-ashmanloc",
+            "b9-oscars1992"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rice contributed to Aladdin after Ashman, but not to the identified original Beauty and the Beast songs.",
+          "sources": [
+            "b9-ashman",
+            "b9-ashmanloc",
+            "b9-oscars1992"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sondheim is not the lyricist identified for these films.",
+          "sources": [
+            "b9-ashman",
+            "b9-ashmanloc",
+            "b9-oscars1992"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hamlisch is not the lyricist identified for these films.",
+          "sources": [
+            "b9-ashman",
+            "b9-ashmanloc",
+            "b9-oscars1992"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Ashman was not the music composer and did not write all Aladdin lyrics. Final wording says lyricist, collaborated and songs, allowing Rice’s later contributions."
+      }
+    },
+    {
+      "questionId": 470,
+      "hash": "5e86f7212fc7cb4e8950a4dad82f04e0aff505b09b518812098d4b2d1098c721",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "481 asks Destiny’s species; 494 asks Hank’s name; no repeated Bailey identity fact.",
+      "context": "Finding Dory’s beluga character.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar explicitly assigns different species to all four named options.",
+        "sources": [
+          "b9-dory"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Bailey is the beluga.",
+          "sources": [
+            "b9-dory"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Destiny is a whale shark.",
+          "sources": [
+            "b9-dory"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hank is an octopus.",
+          "sources": [
+            "b9-dory"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fluke is a sea lion.",
+          "sources": [
+            "b9-dory"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Whale shark contains whale but is not a beluga; the four character profiles positively establish all distinct species."
+      }
+    },
+    {
+      "questionId": 471,
+      "hash": "b07f072406a7f065a7a3539e0ea12c5bfe8106464ffb9625eb5e64746a459b1f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "1416 tests the Sense of Self and 1417 tests what happens to old emotions; this asks the defining planning role.",
+      "context": "New emotion’s planning behavior in Inside Out 2.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar describes Anxiety as preparing negative outcomes and pushing Riley to fit in.",
+        "sources": [
+          "b9-inside2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Anxiety matches both planning and fitting-in behavior.",
+          "sources": [
+            "b9-inside2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Envy covets others’ possessions and attributes rather than this protective planning role.",
+          "sources": [
+            "b9-inside2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pride is not the named new emotion with this role.",
+          "sources": [
+            "b9-inside2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Nostalgia is not the emotion identified with anticipatory planning.",
+          "sources": [
+            "b9-inside2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Several emotions are new; subjective main focus wording was insufficient. The precise behavioral profile excludes the competing new emotions."
+      }
+    },
+    {
+      "questionId": 472,
+      "hash": "6dd0408e9b6966ccb8c11d265abe389341897e2470ec6be57e56f478ade5e336",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "497 asks wet-triggered transformation; 781 asks town name, not film premise.",
+      "context": "Sea monsters concealing themselves during an Italian summer, not discovering their species.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar’s synopsis and both boys’ profiles establish the exact paired identity and setting.",
+        "sources": [
+          "b9-luca",
+          "b9-soul",
+          "b9-red",
+          "b9-onward"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Luca has the two sea-monster friends in an Italian town.",
+          "sources": [
+            "b9-luca",
+            "b9-soul",
+            "b9-red",
+            "b9-onward"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Soul follows Joe’s jazz/spiritual story, not that identified pair.",
+          "sources": [
+            "b9-luca",
+            "b9-soul",
+            "b9-red",
+            "b9-onward"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Turning Red follows Mei’s panda transformation, not sea monsters.",
+          "sources": [
+            "b9-luca",
+            "b9-soul",
+            "b9-red",
+            "b9-onward"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Onward follows elf brothers, not sea monsters.",
+          "sources": [
+            "b9-luca",
+            "b9-soul",
+            "b9-red",
+            "b9-onward"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Luca knows his nature from birth; his discovery is the human world. Final wording removes the false reveal and asks the distinctive two-boy premise."
+      }
+    },
+    {
+      "questionId": 473,
+      "hash": "261af6971f83cb8c0893e0431d232574ead21b04aa4ae798d2aa4b9fbee9d863",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "1405 tests Mei’s final choice, not her transformed species.",
+      "context": "Mei’s emotional transformation in Turning Red.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar explicitly states excitement produces a giant red panda.",
+        "sources": [
+          "b9-red"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Giant red panda is the specified transformation.",
+          "sources": [
+            "b9-red"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A red fox is a different animal from the documented panda.",
+          "sources": [
+            "b9-red"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A red dragon is not that transformation.",
+          "sources": [
+            "b9-red"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A red wolf is not that transformation.",
+          "sources": [
+            "b9-red"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The red color alone is insufficient; all options preserve it and only one has the correct animal. Emotional trigger and character are explicit."
+      }
+    },
+    {
+      "questionId": 474,
+      "hash": "c21bd299d4f01b777a9a28594b3cde17c97cbfd96f78e13d42cfb350abc6571b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from van, mother, spell, town and voice-actor questions.",
+      "context": "Species of both Lightfoot brothers in Onward.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar calls them two teenage elf brothers.",
+        "sources": [
+          "b9-onward"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Elves directly matches their species.",
+          "sources": [
+            "b9-onward"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dwarves are not the documented brother species.",
+          "sources": [
+            "b9-onward"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Centaurs exist in the world but are not these brothers.",
+          "sources": [
+            "b9-onward"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fauns are not their documented species.",
+          "sources": [
+            "b9-onward"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A mixed-species fantasy setting does not make every creature type true for Ian and Barley; both are specifically identified as elves."
+      }
+    },
+    {
+      "questionId": 477,
+      "hash": "d68857c250293f888da613e29071fa1cbba5aa4549addd2e5354a2958298ed49",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "178 asks one-eyed green Mike; 292 asks Boo’s nickname, both different identity facts.",
+      "context": "Large blue furry protagonist in original Monsters, Inc.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney’s specific physical description identifies Sulley, while Pixar supplies his complete name and distinct colleagues.",
+        "sources": [
+          "b9-sulley",
+          "b9-monsters"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Sulley is the described blue furry protagonist.",
+          "sources": [
+            "b9-sulley",
+            "b9-monsters"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mike is his separate assistant, not the described character.",
+          "sources": [
+            "b9-sulley",
+            "b9-monsters"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Randall is the separate rival, not that furry protagonist.",
+          "sources": [
+            "b9-sulley",
+            "b9-monsters"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Roz is the separate administrator, not that protagonist.",
+          "sources": [
+            "b9-sulley",
+            "b9-monsters"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Randall’s camouflage does not make him the large furry blue character named by Disney; the description identifies an individual rather than all things capable of looking blue."
+      }
+    },
+    {
+      "questionId": 479,
+      "hash": "4ac4491aadb7386c68a572ad8eaaa07d5678aba3fb98263db4ba25b3e04f701e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "173 gives Sydney dentist-tank location but not the street or number; medium suits exact address recall.",
+      "context": "Street address and city remembered by Dory, from the mask scene.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney reproduces the exact address as 42 Wallaby Way, Sydney.",
+        "sources": [
+          "b9-nemoaddress",
+          "b9-nemomask"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "42 Wallaby Way, Sydney matches the quoted address.",
+          "sources": [
+            "b9-nemoaddress",
+            "b9-nemomask"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Brisbane changes the documented city.",
+          "sources": [
+            "b9-nemoaddress",
+            "b9-nemomask"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "123 Shark Lane changes both number and street.",
+          "sources": [
+            "b9-nemoaddress",
+            "b9-nemomask"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "42 Coral Road changes the street.",
+          "sources": [
+            "b9-nemoaddress",
+            "b9-nemomask"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "P. Sherman is an addressee/name rather than part of the street address. Removing that prefix equalizes option style; the city alone does not distinguish all choices."
+      }
+    },
+    {
+      "questionId": 480,
+      "hash": "b4b371a3eaa58a4a430b1ccab973fe153f22fb451781cf4555933d2f99477a90",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from 1047’s teal Envy, 1297’s pink Embarrassment and 471’s planning behavior.",
+      "context": "Ennui’s boredom and phone-console behavior.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar identifies Ennui as bored and operating the console remotely via mobile app.",
+        "sources": [
+          "b9-inside2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Ennui has both specified attributes.",
+          "sources": [
+            "b9-inside2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Anxiety is the future-planning emotion, not the documented boredom role.",
+          "sources": [
+            "b9-inside2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Nostalgia is not the identified app-using boredom emotion.",
+          "sources": [
+            "b9-inside2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Envy’s covetous role differs from the documented apathy.",
+          "sources": [
+            "b9-inside2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the false monocle condition. The conjunction of boredom and app control positively identifies Ennui instead of relying on absent accessories in a synopsis."
+      }
+    },
+    {
+      "questionId": 481,
+      "hash": "c28d055d494f9d937d2436cb2c9af8520f90f7403da428e83a450cfa3df5cae2",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "1036 tests Hank’s species; 470 tests Bailey’s name. Species of a different character is a new fact.",
+      "context": "Destiny’s species in Finding Dory.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar repeatedly calls Destiny a whale shark, contrasting her with Bailey’s beluga species.",
+        "sources": [
+          "b9-dory"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "A whale shark is Destiny’s stated species.",
+          "sources": [
+            "b9-dory"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Beluga whale describes Bailey, not Destiny.",
+          "sources": [
+            "b9-dory"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Blue whale is not her documented species.",
+          "sources": [
+            "b9-dory"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hammerhead shark is not her documented species.",
+          "sources": [
+            "b9-dory"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Speaking whale and the word whale in her name do not make her a cetacean; exact species attribution excludes all other species."
+      }
+    }
+  ]
+}

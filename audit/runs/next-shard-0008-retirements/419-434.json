@@ -1,0 +1,70 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "retired": {
+    "id": 419,
+    "question": "What special themed night on Disney cruises features costumes, deck parties, and fireworks at sea?",
+    "answers": [
+      "Pirate Night",
+      "Princess Night",
+      "Superhero Night",
+      "Adventure Night"
+    ],
+    "difficulty": "easy",
+    "category": "cruise"
+  },
+  "retained": {
+    "id": 434,
+    "question": "What is the name of the fireworks show that Disney launches from their ships at sea on Pirate Night?",
+    "answers": [
+      "Buccaneer Blast",
+      "Pirate's Salute",
+      "Cannon Fire",
+      "Sea Blaze"
+    ],
+    "difficulty": "hard",
+    "category": "cruise"
+  },
+  "additionalComparisons": [],
+  "rationale": "434 explicitly supplies Pirate Night as the fireworks occasion while asking the fireworks-show name. Retain that additional show fact rather than the broad event identity.",
+  "sources": [
+    {
+      "sourceNoteId": "pirate-night",
+      "url": "https://disneycruise.disney.go.com/en-gb/onboard-activities/pirate-night-deck-party/",
+      "locator": "Title; Party Like a Pirate; fireworks image captions",
+      "evidence": "Pirate Night is the costume-and-deck-party event on select itineraries with fireworks imagery; it is not guaranteed on every sailing.",
+      "checkedBy": "Codex",
+      "checkedAt": "2026-11-07",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "limitations": "Primary institutional text inspected; no film or video viewing claimed.",
+      "topics": [
+        "cruise"
+      ]
+    }
+  ],
+  "originalOptionAssessments": [
+    {
+      "answer": "Pirate Night",
+      "assessment": "Pirate Night is the named costume/deck-party occasion."
+    },
+    {
+      "answer": "Princess Night",
+      "assessment": "Princess Night is not that official event title."
+    },
+    {
+      "answer": "Superhero Night",
+      "assessment": "Superhero Night is not that official pirate-themed event title."
+    },
+    {
+      "answer": "Adventure Night",
+      "assessment": "Adventure Night is not that official event title."
+    }
+  ],
+  "finalChallenge": {
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "notes": "434 explicitly supplies Pirate Night as the fireworks occasion while asking the fireworks-show name. Retain that additional show fact rather than the broad event identity. All four original options inspected. Retirement avoids asserting approval of a flawed premise or an insufficiently excluded alternative."
+  },
+  "scope": "Only the planned ID is retired. Counterpart comparison is not approval of its other claims."
+}

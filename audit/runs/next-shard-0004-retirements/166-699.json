@@ -1,0 +1,30 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "retired": {
+    "id": 166,
+    "question": "Which Disney film features the song 'How Far I'll Go'?",
+    "answers": [
+      "Moana",
+      "Brave",
+      "Frozen",
+      "Encanto"
+    ],
+    "difficulty": "medium",
+    "category": "music"
+  },
+  "retained": {
+    "id": 699,
+    "question": "What is the name of Moana's signature song about her longing to explore beyond the reef?",
+    "answers": [
+      "How Far I'll Go",
+      "You're Welcome",
+      "Shiny",
+      "We Know the Way"
+    ],
+    "difficulty": "easy",
+    "category": "music"
+  },
+  "rationale": "Same How Far I Will Go / Moana association in reverse; keep the heroine longing to explore beyond the reef context.",
+  "scope": "Retire only the planned ID. Retained questions are duplicate context and receive no new factual approval here."
+}

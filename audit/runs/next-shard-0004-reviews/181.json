@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 181,
+  "hash": "008ef114dcf6b7a71e76d3d1e3999c713e51e39a591874b68c216d18acaee36c",
+  "questionSnapshot": {
+    "id": 181,
+    "question": "In Coco, what holiday is the film centered around?",
+    "answers": [
+      "Día de los Muertos (Day of the Dead)",
+      "Christmas",
+      "Halloween",
+      "El Día de los Reyes"
+    ],
+    "difficulty": "easy",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged Halloween because both involve skeleton imagery. The film’s ofrenda/bridge rules and cemetery celebration explicitly center Day of the Dead, not Halloween, Christmas or Three Kings Day. The question concerns the central holiday, not a claim that characters never celebrate another holiday.",
+  "verification": {
+    "context": "In Coco, what holiday is the film centered around?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Holiday and ofrenda sections identify Day of the Dead as the central celebration.",
+      "sources": [
+        {
+          "url": "https://www.pixar.com/coco",
+          "locator": "Héctor, Santa Cecilia, Cemetery, Marigold Bridge and Las Ofrendas sections establish Day of the Dead setting; Ernesto de la Cruz profile explicitly calls him Miguel’s idol."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged Halloween because both involve skeleton imagery. The film’s ofrenda/bridge rules and cemetery celebration explicitly center Day of the Dead, not Halloween, Christmas or Three Kings Day. The question concerns the central holiday, not a claim that characters never celebrate another holiday."
+    },
+    "options": [
+      {
+        "answer": "Día de los Muertos (Day of the Dead)",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Holiday and ofrenda sections identify Day of the Dead as the central celebration.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/coco",
+            "locator": "Héctor, Santa Cecilia, Cemetery, Marigold Bridge and Las Ofrendas sections establish Day of the Dead setting; Ernesto de la Cruz profile explicitly calls him Miguel’s idol."
+          }
+        ]
+      },
+      {
+        "answer": "Christmas",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different holiday from the celebration driving this story.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/coco",
+            "locator": "Héctor, Santa Cecilia, Cemetery, Marigold Bridge and Las Ofrendas sections establish Day of the Dead setting; Ernesto de la Cruz profile explicitly calls him Miguel’s idol."
+          }
+        ]
+      },
+      {
+        "answer": "Halloween",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different holiday despite superficial skeleton/dead imagery.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/coco",
+            "locator": "Héctor, Santa Cecilia, Cemetery, Marigold Bridge and Las Ofrendas sections establish Day of the Dead setting; Ernesto de la Cruz profile explicitly calls him Miguel’s idol."
+          }
+        ]
+      },
+      {
+        "answer": "El Día de los Reyes",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Three Kings Day is distinct from the explicitly named Day of the Dead.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/coco",
+            "locator": "Héctor, Santa Cecilia, Cemetery, Marigold Bridge and Las Ofrendas sections establish Day of the Dead setting; Ernesto de la Cruz profile explicitly calls him Miguel’s idol."
+          }
+        ]
+      }
+    ]
+  }
+}

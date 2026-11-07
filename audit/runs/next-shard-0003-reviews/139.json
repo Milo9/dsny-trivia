@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 139,
+  "hash": "eaeeb2f4e9ccd559f79a662ff404e9572ca7212aa3ac1763d7b53f39ea278f56",
+  "questionSnapshot": {
+    "id": 139,
+    "question": "From which Florida homeport did Disney Magic depart on its maiden voyage in July 1998?",
+    "answers": [
+      "Port Canaveral",
+      "Port Everglades",
+      "PortMiami",
+      "Tampa Bay Port"
+    ],
+    "difficulty": "medium",
+    "category": "cruise"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Final challenge checks the exact named entity/event against each listed alternative, not merely a matching answer keyword.",
+  "verification": {
+    "context": "From which Florida homeport did Disney Magic depart on its maiden voyage in July 1998?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Both historical entries identify Port Canaveral as departure homeport.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/disney-cruise-line/",
+          "locator": "Opening paragraph: first Disney Magic voyage July 30, 1998, Port Canaveral; Wonder 1999. Final paragraph: Dream 2011 and Fantasy March 31, 2012."
+        },
+        {
+          "url": "https://d23.com/a-to-z/disney-magic/",
+          "locator": "Opening paragraph: first fleet ship; maiden voyage July 30, 1998 from Port Canaveral."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tried each alternative against the literal final scope: Port Everglades: Not the recorded port for this 1998 voyage. PortMiami: Not the recorded port for this 1998 voyage. Tampa Bay Port: Not the recorded port for this 1998 voyage."
+    },
+    "options": [
+      {
+        "answer": "Port Canaveral",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Both historical entries identify Port Canaveral as departure homeport.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/disney-cruise-line/",
+            "locator": "Opening paragraph: first Disney Magic voyage July 30, 1998, Port Canaveral; Wonder 1999. Final paragraph: Dream 2011 and Fantasy March 31, 2012."
+          },
+          {
+            "url": "https://d23.com/a-to-z/disney-magic/",
+            "locator": "Opening paragraph: first fleet ship; maiden voyage July 30, 1998 from Port Canaveral."
+          }
+        ]
+      },
+      {
+        "answer": "Port Everglades",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the recorded port for this 1998 voyage.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/disney-cruise-line/",
+            "locator": "Opening paragraph: first Disney Magic voyage July 30, 1998, Port Canaveral; Wonder 1999. Final paragraph: Dream 2011 and Fantasy March 31, 2012."
+          },
+          {
+            "url": "https://d23.com/a-to-z/disney-magic/",
+            "locator": "Opening paragraph: first fleet ship; maiden voyage July 30, 1998 from Port Canaveral."
+          }
+        ]
+      },
+      {
+        "answer": "PortMiami",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the recorded port for this 1998 voyage.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/disney-cruise-line/",
+            "locator": "Opening paragraph: first Disney Magic voyage July 30, 1998, Port Canaveral; Wonder 1999. Final paragraph: Dream 2011 and Fantasy March 31, 2012."
+          },
+          {
+            "url": "https://d23.com/a-to-z/disney-magic/",
+            "locator": "Opening paragraph: first fleet ship; maiden voyage July 30, 1998 from Port Canaveral."
+          }
+        ]
+      },
+      {
+        "answer": "Tampa Bay Port",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the recorded port for this 1998 voyage.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/disney-cruise-line/",
+            "locator": "Opening paragraph: first Disney Magic voyage July 30, 1998, Port Canaveral; Wonder 1999. Final paragraph: Dream 2011 and Fantasy March 31, 2012."
+          },
+          {
+            "url": "https://d23.com/a-to-z/disney-magic/",
+            "locator": "Opening paragraph: first fleet ship; maiden voyage July 30, 1998 from Port Canaveral."
+          }
+        ]
+      }
+    ]
+  }
+}

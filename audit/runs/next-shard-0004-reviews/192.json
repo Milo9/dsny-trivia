@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 192,
+  "hash": "a1bb9596a9241991bdcecfa559c87da2276056b59866686caf2ed0d7d7ef17a6",
+  "questionSnapshot": {
+    "id": 192,
+    "question": "In Monsters University, what is the name of the fraternity Mike and Sulley join?",
+    "answers": [
+      "Oozma Kappa (OK)",
+      "Roar Omega Roar (ROR)",
+      "Python Nu Kappa (PNK)",
+      "Eta Hiss Hiss (HSS)"
+    ],
+    "difficulty": "medium",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged Sulley’s early association with elite ROR: the question asks the fraternity both Mike and Sulley join together. Pixar’s OK field trip explicitly includes them. Rival ROR and separate sororities cannot fit that shared membership.",
+  "verification": {
+    "context": "In Monsters University, what is the name of the fraternity Mike and Sulley join?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "OK and Field Trip sections explicitly connect the misfit group with Mike/Sulley.",
+      "sources": [
+        {
+          "url": "https://www.pixar.com/monsters-university",
+          "locator": "Mike Wazowski profile explicitly says green one-eyed monster. Oozma Kappa profile and Field Trip describe Mike/Sulley joining the OK group; ROR and PNK profiles distinguish rival houses."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged Sulley’s early association with elite ROR: the question asks the fraternity both Mike and Sulley join together. Pixar’s OK field trip explicitly includes them. Rival ROR and separate sororities cannot fit that shared membership."
+    },
+    "options": [
+      {
+        "answer": "Oozma Kappa (OK)",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "OK and Field Trip sections explicitly connect the misfit group with Mike/Sulley.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/monsters-university",
+            "locator": "Mike Wazowski profile explicitly says green one-eyed monster. Oozma Kappa profile and Field Trip describe Mike/Sulley joining the OK group; ROR and PNK profiles distinguish rival houses."
+          }
+        ]
+      },
+      {
+        "answer": "Roar Omega Roar (ROR)",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Elite rival house; not the OK group they join together.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/monsters-university",
+            "locator": "Mike Wazowski profile explicitly says green one-eyed monster. Oozma Kappa profile and Field Trip describe Mike/Sulley joining the OK group; ROR and PNK profiles distinguish rival houses."
+          }
+        ]
+      },
+      {
+        "answer": "Python Nu Kappa (PNK)",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "A different sorority, separately described by Pixar.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/monsters-university",
+            "locator": "Mike Wazowski profile explicitly says green one-eyed monster. Oozma Kappa profile and Field Trip describe Mike/Sulley joining the OK group; ROR and PNK profiles distinguish rival houses."
+          }
+        ]
+      },
+      {
+        "answer": "Eta Hiss Hiss (HSS)",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different name and initials from the explicitly identified Oozma Kappa.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/monsters-university",
+            "locator": "Mike Wazowski profile explicitly says green one-eyed monster. Oozma Kappa profile and Field Trip describe Mike/Sulley joining the OK group; ROR and PNK profiles distinguish rival houses."
+          }
+        ]
+      }
+    ]
+  }
+}

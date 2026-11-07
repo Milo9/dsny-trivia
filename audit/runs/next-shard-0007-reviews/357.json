@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 357,
+  "hash": "a6638ac5c234ff4929dbc1e5191a3f91bd8fc07a7cc80e16b99e17af144b2201",
+  "questionSnapshot": {
+    "id": 357,
+    "question": "In what year did Expedition Everest open at Animal Kingdom?",
+    "answers": [
+      "2006",
+      "2004",
+      "2008",
+      "2010"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Checked soft-opening ambiguity: secondary history gives previews and grand opening both in 2006, agreeing with the primary date, so year wording stays unambiguous. 922 asks Asia location, 394 asks Pixar acquisition; sharing 2006 does not repeat the event. Historical year recall is medium; no future status claim. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+  "verification": {
+    "context": "In what year did Expedition Everest open at Animal Kingdom? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Expedition Everest opened in 2006; the primary entry dates it April 7. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/expedition-everest/",
+          "locator": "Opening sentence: Asia at Animal Kingdom, opened April 7, 2006"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Expedition_Everest",
+          "locator": "Opening/history: previews January 26, 2006; grand opening April 7, 2006"
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Checked soft-opening ambiguity: secondary history gives previews and grand opening both in 2006, agreeing with the primary date, so year wording stays unambiguous. 922 asks Asia location, 394 asks Pixar acquisition; sharing 2006 does not repeat the event. Historical year recall is medium; no future status claim."
+    },
+    "options": [
+      {
+        "answer": "2006",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Expedition Everest opened in 2006; the primary entry dates it April 7.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/expedition-everest/",
+            "locator": "Opening sentence: Asia at Animal Kingdom, opened April 7, 2006"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Expedition_Everest",
+            "locator": "Opening/history: previews January 26, 2006; grand opening April 7, 2006"
+          }
+        ]
+      },
+      {
+        "answer": "2004",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "2004 is not the documented opening year.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/expedition-everest/",
+            "locator": "Opening sentence: Asia at Animal Kingdom, opened April 7, 2006"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Expedition_Everest",
+            "locator": "Opening/history: previews January 26, 2006; grand opening April 7, 2006"
+          }
+        ]
+      },
+      {
+        "answer": "2008",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "2008 is not the documented opening year.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/expedition-everest/",
+            "locator": "Opening sentence: Asia at Animal Kingdom, opened April 7, 2006"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Expedition_Everest",
+            "locator": "Opening/history: previews January 26, 2006; grand opening April 7, 2006"
+          }
+        ]
+      },
+      {
+        "answer": "2010",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "2010 is not the documented opening year.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/expedition-everest/",
+            "locator": "Opening sentence: Asia at Animal Kingdom, opened April 7, 2006"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Expedition_Everest",
+            "locator": "Opening/history: previews January 26, 2006; grand opening April 7, 2006"
+          }
+        ]
+      }
+    ]
+  }
+}

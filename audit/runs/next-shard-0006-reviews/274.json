@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 274,
+  "hash": "c36b41a36ea0d26e7d5189f7f11b92b27557fb63e10ce0629a2f96b16561f103",
+  "questionSnapshot": {
+    "id": 274,
+    "question": "In 101 Dalmatians (1961), what are the names of Cruella's two henchmen?",
+    "answers": [
+      "Jasper and Horace",
+      "Larry and Lenny",
+      "Biff and Griff",
+      "Sid and Ted"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Disney gives the pair exhaustively; surname Badun optional, both requested first names present. Specified 1961 and calibrated familiar duo to medium; villain Cruella identity is another fact.",
+  "verification": {
+    "context": "In 101 Dalmatians (1961), what are the names of Cruella's two henchmen?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The two henchmen are explicitly Jasper and Horace.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/one-hundred-and-one-dalmatians-film/",
+          "locator": "Synopsis: Roger is Pongo master, Anita Perdita mistress; later identifies henchmen Horace and Jasper Badun; 1961 animation."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Disney gives the pair exhaustively; surname Badun optional, both requested first names present. Specified 1961 and calibrated familiar duo to medium; villain Cruella identity is another fact."
+    },
+    "options": [
+      {
+        "answer": "Jasper and Horace",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The two henchmen are explicitly Jasper and Horace.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/one-hundred-and-one-dalmatians-film/",
+            "locator": "Synopsis: Roger is Pongo master, Anita Perdita mistress; later identifies henchmen Horace and Jasper Badun; 1961 animation."
+          }
+        ]
+      },
+      {
+        "answer": "Larry and Lenny",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Not the named henchman pair.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/one-hundred-and-one-dalmatians-film/",
+            "locator": "Synopsis: Roger is Pongo master, Anita Perdita mistress; later identifies henchmen Horace and Jasper Badun; 1961 animation."
+          }
+        ]
+      },
+      {
+        "answer": "Biff and Griff",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Not the named henchman pair.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/one-hundred-and-one-dalmatians-film/",
+            "locator": "Synopsis: Roger is Pongo master, Anita Perdita mistress; later identifies henchmen Horace and Jasper Badun; 1961 animation."
+          }
+        ]
+      },
+      {
+        "answer": "Sid and Ted",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Not the named henchman pair.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/one-hundred-and-one-dalmatians-film/",
+            "locator": "Synopsis: Roger is Pongo master, Anita Perdita mistress; later identifies henchmen Horace and Jasper Badun; 1961 animation."
+          }
+        ]
+      }
+    ]
+  }
+}

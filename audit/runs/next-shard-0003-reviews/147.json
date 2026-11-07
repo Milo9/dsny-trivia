@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 147,
+  "hash": "d56ad7be0eda306f1dc47c16658cea2c3844aed558fcf90a6aad278bb8367ccc",
+  "questionSnapshot": {
+    "id": 147,
+    "question": "On what date did Disney Lookout Cay at Lighthouse Point first welcome guests for previews?",
+    "answers": [
+      "June 7, 2024",
+      "May 7, 2024",
+      "July 7, 2024",
+      "August 7, 2024"
+    ],
+    "difficulty": "hard",
+    "category": "cruise"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Challenged whether Lookout Cay is itself a separate private island: it is on Eleuthera. Final question instead tests the specific first-preview date, which the June 7 announcement establishes, rather than duplicating the destination-name question 1512.",
+  "verification": {
+    "context": "On what date did Disney Lookout Cay at Lighthouse Point first welcome guests for previews?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Dated June 7 article states previews welcome guests today; fact sheet confirms opening month.",
+      "sources": [
+        {
+          "url": "https://disneyparksblog.com/dcl/first-look-at-disney-lookout-cay-at-lighthouse-point/",
+          "locator": "June 7, 2024 date and opening paragraph: welcoming guests for previews today on Eleuthera, ahead of debut."
+        },
+        {
+          "url": "https://disneyexperiences.com/app/uploads/2025/02/Final-DCL-Disney-Connect-Fact-SheetQ2.pdf",
+          "locator": "PDF page 1: launch in 1998 and fleet debut years Magic 1998, Wonder 1999, Dream 2011, Fantasy 2012; page 2 Lookout Cay opening month."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged whether Lookout Cay is itself a separate private island: it is on Eleuthera. Final question instead tests the specific first-preview date, which the June 7 announcement establishes, rather than duplicating the destination-name question 1512."
+    },
+    "options": [
+      {
+        "answer": "June 7, 2024",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Dated June 7 article states previews welcome guests today; fact sheet confirms opening month.",
+        "sources": [
+          {
+            "url": "https://disneyparksblog.com/dcl/first-look-at-disney-lookout-cay-at-lighthouse-point/",
+            "locator": "June 7, 2024 date and opening paragraph: welcoming guests for previews today on Eleuthera, ahead of debut."
+          },
+          {
+            "url": "https://disneyexperiences.com/app/uploads/2025/02/Final-DCL-Disney-Connect-Fact-SheetQ2.pdf",
+            "locator": "PDF page 1: launch in 1998 and fleet debut years Magic 1998, Wonder 1999, Dream 2011, Fantasy 2012; page 2 Lookout Cay opening month."
+          }
+        ]
+      },
+      {
+        "answer": "May 7, 2024",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "One month before the documented first previews.",
+        "sources": [
+          {
+            "url": "https://disneyparksblog.com/dcl/first-look-at-disney-lookout-cay-at-lighthouse-point/",
+            "locator": "June 7, 2024 date and opening paragraph: welcoming guests for previews today on Eleuthera, ahead of debut."
+          },
+          {
+            "url": "https://disneyexperiences.com/app/uploads/2025/02/Final-DCL-Disney-Connect-Fact-SheetQ2.pdf",
+            "locator": "PDF page 1: launch in 1998 and fleet debut years Magic 1998, Wonder 1999, Dream 2011, Fantasy 2012; page 2 Lookout Cay opening month."
+          }
+        ]
+      },
+      {
+        "answer": "July 7, 2024",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "One month after the documented first previews.",
+        "sources": [
+          {
+            "url": "https://disneyparksblog.com/dcl/first-look-at-disney-lookout-cay-at-lighthouse-point/",
+            "locator": "June 7, 2024 date and opening paragraph: welcoming guests for previews today on Eleuthera, ahead of debut."
+          },
+          {
+            "url": "https://disneyexperiences.com/app/uploads/2025/02/Final-DCL-Disney-Connect-Fact-SheetQ2.pdf",
+            "locator": "PDF page 1: launch in 1998 and fleet debut years Magic 1998, Wonder 1999, Dream 2011, Fantasy 2012; page 2 Lookout Cay opening month."
+          }
+        ]
+      },
+      {
+        "answer": "August 7, 2024",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Two months after the documented first previews.",
+        "sources": [
+          {
+            "url": "https://disneyparksblog.com/dcl/first-look-at-disney-lookout-cay-at-lighthouse-point/",
+            "locator": "June 7, 2024 date and opening paragraph: welcoming guests for previews today on Eleuthera, ahead of debut."
+          },
+          {
+            "url": "https://disneyexperiences.com/app/uploads/2025/02/Final-DCL-Disney-Connect-Fact-SheetQ2.pdf",
+            "locator": "PDF page 1: launch in 1998 and fleet debut years Magic 1998, Wonder 1999, Dream 2011, Fantasy 2012; page 2 Lookout Cay opening month."
+          }
+        ]
+      }
+    ]
+  }
+}

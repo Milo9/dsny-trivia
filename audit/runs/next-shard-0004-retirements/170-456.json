@@ -1,0 +1,30 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "retired": {
+    "id": 170,
+    "question": "For which Disney animated film did Lin-Manuel Miranda serve as the sole songwriter?",
+    "answers": [
+      "Encanto",
+      "Moana",
+      "Frozen II",
+      "Raya and the Last Dragon"
+    ],
+    "difficulty": "hard",
+    "category": "music"
+  },
+  "retained": {
+    "id": 456,
+    "question": "Who wrote all of the songs for Encanto?",
+    "answers": [
+      "Lin-Manuel Miranda",
+      "Alan Menken",
+      "The Sherman Brothers",
+      "Elton John"
+    ],
+    "difficulty": "medium",
+    "category": "music"
+  },
+  "rationale": "Exactly the same Encanto / Lin-Manuel Miranda sole-songwriting attribution in reverse; retain the direct songwriter question.",
+  "scope": "Retire only the planned ID. Retained questions are duplicate context and receive no new factual approval here."
+}

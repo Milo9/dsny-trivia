@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 238,
+  "hash": "afe0e16ac1648b1588d479dc932be98154244f726f28468fbb82ac31e91d9293",
+  "questionSnapshot": {
+    "id": 238,
+    "question": "In Big Hero 6, what fictional city does the story take place in?",
+    "answers": [
+      "San Fransokyo",
+      "Neo San Francisco",
+      "Techno Bay",
+      "Futurisco"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. San Francisco/Tokyo inspirations do not create an alternative official name. All four answers are fictional place names and only San Fransokyo matches.",
+  "verification": {
+    "context": "In Big Hero 6, what fictional city does the story take place in?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "D23 explicitly names San Fransokyo as the city threatened by the plot.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/big-hero-6-film/",
+          "locator": "Opening synopsis explicitly names the fictional city San Fransokyo; cast distinguishes Hiro, Tadashi, Wasabi, Fred and Honey Lemon."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "San Francisco/Tokyo inspirations do not create an alternative official name. All four answers are fictional place names and only San Fransokyo matches."
+    },
+    "options": [
+      {
+        "answer": "San Fransokyo",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "D23 explicitly names San Fransokyo as the city threatened by the plot.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/big-hero-6-film/",
+            "locator": "Opening synopsis explicitly names the fictional city San Fransokyo; cast distinguishes Hiro, Tadashi, Wasabi, Fred and Honey Lemon."
+          }
+        ]
+      },
+      {
+        "answer": "Neo San Francisco",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different fictional name from the expressly given city.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/big-hero-6-film/",
+            "locator": "Opening synopsis explicitly names the fictional city San Fransokyo; cast distinguishes Hiro, Tadashi, Wasabi, Fred and Honey Lemon."
+          }
+        ]
+      },
+      {
+        "answer": "Techno Bay",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different fictional name from the expressly given city.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/big-hero-6-film/",
+            "locator": "Opening synopsis explicitly names the fictional city San Fransokyo; cast distinguishes Hiro, Tadashi, Wasabi, Fred and Honey Lemon."
+          }
+        ]
+      },
+      {
+        "answer": "Futurisco",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different fictional name from the expressly given city.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/big-hero-6-film/",
+            "locator": "Opening synopsis explicitly names the fictional city San Fransokyo; cast distinguishes Hiro, Tadashi, Wasabi, Fred and Honey Lemon."
+          }
+        ]
+      }
+    ]
+  }
+}

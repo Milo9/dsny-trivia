@@ -1,10 +1,12 @@
 """Version-bound question audit ledger, triage, sampling, decisions and release gate.
 
 No command searches the web or claims facts have been verified automatically.
-Only sync, record and decide change the ledger; shards are always read-only.
+Record commands never infer factual correctness. Only the explicit retire command
+changes shards, with a recoverable transaction preserving historical snapshots.
 See QUESTION_AUDIT.md for the editorial procedure and command examples.
 """
 import argparse
+import copy
 from collections import Counter, defaultdict
 from datetime import date, datetime, timezone
 import hashlib
@@ -22,6 +24,9 @@ from find_near_dupes import find_similar_pairs
 ROOT = Path(BASE)
 CHECKS = ('singleAnswer', 'context', 'wording', 'noGiveaway', 'distinctFact',
           'category', 'difficulty', 'scope')
+EVIDENCE_BASES = ('direct', 'contradiction', 'exclusive-inference', 'exhaustive-list')
+CHANGE_TYPES = ('factual', 'clarification', 'distractors', 'explanation',
+                'difficulty', 'category', 'scope', 'metadata')
 RISK_PATTERNS = {
     'changing-fact': r'\b(current|currently|newest|latest|most recent|today|now|upcoming|scheduled)\b',
     'record-or-superlative': r'\b(first|only|largest|biggest|smallest|longest|record|most|least)\b',
@@ -74,10 +79,12 @@ def https(value):
 
 
 def validate_review(review, as_of):
-    """Reject incomplete review evidence, including an unsupported distractor."""
+    """Validate evidence records; this cannot judge whether a source supports a claim."""
     errors = []
     if not isinstance(review, dict):
         return ['review must be an object']
+    if review.get('schema', 1) not in (1, 2):
+        errors.append('unsupported review schema')
     if not nonblank(review.get('reviewer')):
         errors.append('reviewer is required')
     if not valid_date(review.get('at')) or review['at'] > as_of:
@@ -100,6 +107,19 @@ def validate_review(review, as_of):
             errors.append('nextReviewAt must be a real date after the review date')
         if verified.get('timeSensitive') and due is None:
             errors.append('changing facts require nextReviewAt')
+        if review.get('schema') == 2:
+            premise = verified.get('premise', {})
+            if not isinstance(premise, dict) or not nonblank(premise.get('reason')) \
+                    or not valid_sources(premise.get('sources')):
+                errors.append('premise needs a source-backed check of the question\'s assumptions')
+            challenge = verified.get('challenge', {})
+            if not isinstance(challenge, dict) or not nonblank(challenge.get('reviewer')) \
+                    or not valid_date(challenge.get('at')) or challenge['at'] > as_of \
+                    or not valid_date(review.get('at')) or challenge['at'] < review['at'] \
+                    or challenge.get('premiseChecked') is not True \
+                    or challenge.get('alternativesExcluded') is not True \
+                    or not nonblank(challenge.get('notes')):
+                errors.append('final evidence challenge needs reviewer/date, premise and competing-answer checks, and notes')
         options = verified.get('options')
         if not isinstance(options, list) or len(options) != 4:
             errors.append('verification requires evidence for all four options')
@@ -112,6 +132,8 @@ def validate_review(review, as_of):
                     errors.append(f'option {i} needs the appropriate explicit verdict')
                 if not nonblank(option.get('reason')):
                     errors.append(f'option {i} needs a factual rationale')
+                if review.get('schema') == 2 and option.get('basis') not in EVIDENCE_BASES:
+                    errors.append(f'option {i} needs an evidence basis: '+', '.join(EVIDENCE_BASES))
                 sources = option.get('sources')
                 if not isinstance(sources, list) or not sources:
                     errors.append(f'option {i} needs supporting sources')
@@ -119,6 +141,45 @@ def validate_review(review, as_of):
                          or not nonblank(s.get('locator')) for s in sources):
                     errors.append(f'option {i} sources need HTTPS URLs and specific evidence locators')
     return errors
+
+
+def valid_sources(sources):
+    return (isinstance(sources, list) and bool(sources)
+            and all(isinstance(s, dict) and https(s.get('url')) and nonblank(s.get('locator')) for s in sources))
+
+
+def record_reviews(corpus, ledger, reviews, as_of):
+    """Validate the entire batch before producing a changed ledger; no partial imports."""
+    if not isinstance(reviews, list) or not reviews:
+        raise ValueError('provide a nonempty array of reviews')
+    by_id = {q['id']: q for q in corpus}
+    seen = set()
+    for review in reviews:
+        if not isinstance(review, dict) or type(review.get('questionId')) is not int:
+            raise ValueError('every review needs an integer questionId')
+        qid = review['questionId']
+        if qid in seen:
+            raise ValueError(f'#{qid}: duplicate review in bulk import')
+        seen.add(qid)
+        if qid not in by_id:
+            raise ValueError(f'#{qid}: not an active question')
+        if review.get('schema') != 2:
+            raise ValueError(f'#{qid}: new records require schema 2; re-review the premise and competing answers')
+        q = by_id[qid]
+        if review.get('hash') != digest(q) or review.get('questionSnapshot') != q:
+            raise ValueError(f'#{qid}: question changed since template creation; re-review its current version')
+        errors = validate_review(review, as_of)
+        if not errors and review.get('verification') and [o.get('answer') for o in review['verification']['options']] != q['answers']:
+            errors.append('option evidence must match current answers in their stored order')
+        if errors:
+            raise ValueError(f'#{qid}: '+'; '.join(errors))
+    updated = sync_ledger(corpus, copy.deepcopy(ledger), as_of)
+    for review in reviews:
+        entry = updated['questions'][str(review['questionId'])]
+        if entry.get('review'):
+            entry['history'].append({'hash': entry['hash'], 'review': entry['review']})
+        entry['review'] = copy.deepcopy(review)
+    return updated
 
 
 def current_review(entry, q, as_of):
@@ -178,9 +239,15 @@ def findings_for(corpus):
         for i, a in enumerate(members):
             for b in members[i+1:]:
                 pairs.add((min(a['id'], b['id']), max(a['id'], b['id'])))
+    from question_audit_recon import duplicate_priority, inverse_pairs
+    pairs.update(inverse_pairs(corpus))
     for a, b in sorted(pairs):
         add('duplicate', [a, b], 'Could memorizing one answer solve the other without learning a new fact?')
-    return sorted(findings.values(), key=lambda f: f['id'])
+    for finding in findings.values():
+        if finding['kind'] == 'duplicate':
+            a, b = finding['questionIds']
+            finding.update(duplicate_priority(by_id[a], by_id[b]))
+    return sorted(findings.values(), key=lambda f: (f.get('priority', 0), f['id']))
 
 
 def decision_valid(decision, finding, as_of):
@@ -256,6 +323,8 @@ def audit_report(corpus, ledger, baseline, as_of, findings=None):
     findings = findings if findings is not None else audit_findings(corpus, ledger)
     findings = [dict(f, decision=ledger['decisions'].get(f['id'])) for f in findings]
     outstanding = open_findings(findings, ledger, as_of)
+    blocked = {i for f in outstanding for i in f['questionIds']}
+    evidence_concerns = {i for f in outstanding if f['kind'] == 'manual' for i in f['questionIds']}
     risks = risk_map(corpus)
     counts = Counter()
     questions = []
@@ -264,14 +333,22 @@ def audit_report(corpus, ledger, baseline, as_of, findings=None):
         entry = ledger['questions'].get(key, {})
         review = current_review(entry, q, as_of)
         mechanical = entry.get('hash') == digest(q) and valid_date(entry.get('mechanicalAt')) and entry['mechanicalAt'] <= as_of
-        verified = source_verified(entry, q, as_of)
+        recorded = source_verified(entry, q, as_of)
+        verified = recorded and q['id'] not in evidence_concerns
+        approved = bool(mechanical and review and recorded and q['id'] not in blocked)
         overdue = bool(review and review.get('verification') and review['verification'].get('nextReviewAt')
                        and review['verification']['nextReviewAt'] <= as_of)
         required = baseline['questions'].get(key) != digest(q)
-        counts.update(mechanical=int(mechanical), manual=int(bool(review)), sourceVerified=int(verified),
+        counts.update(mechanical=int(mechanical), manual=int(bool(review)), evidenceRecorded=int(recorded),
+                      sourceVerified=int(verified), approved=int(approved),
+                      challengedEvidence=int(recorded and review.get('schema') == 2),
+                      legacyEvidenceReviews=int(recorded and review.get('schema', 1) == 1),
                       overdue=int(overdue), releaseReviewRequired=int(required))
         questions.append({'id': q['id'], 'category': q['category'], 'mechanical': bool(mechanical),
-                          'manual': bool(review), 'sourceVerified': bool(verified), 'overdue': overdue,
+                          'manual': bool(review), 'evidenceRecorded': bool(recorded),
+                          'evidenceStandard': ('challenged-v2' if review.get('schema') == 2 else 'legacy-v1') if recorded else None,
+                          'sourceVerified': bool(verified), 'approved': approved,
+                          'openFindingIds': [f['id'] for f in outstanding if q['id'] in f['questionIds']], 'overdue': overdue,
                           'nextReviewAt': review['verification'].get('nextReviewAt') if review and review.get('verification') else None,
                           'releaseReviewRequired': required, 'riskReasons': risks[q['id']]})
     active_ids = {q['id'] for q in corpus}
@@ -279,7 +356,10 @@ def audit_report(corpus, ledger, baseline, as_of, findings=None):
              if value.get('status') == 'fixed' and (key in ledger.get('issues', {}) or key not in {f['id'] for f in findings})]
     return {'schema': 1, 'asOf': as_of, 'corpusHash': digest(corpus), 'active': len(corpus),
             'coverage': dict(counts), 'remainingSourceVerification': len(corpus)-counts['sourceVerified'],
-            'wholeCorpusVerified': counts['sourceVerified'] == len(corpus),
+            'remainingApproval': len(corpus)-counts['approved'],
+            'wholeCorpusVerified': counts['approved'] == len(corpus),
+            'retirementRecords': ledger.get('retirements', {}),
+            'changeClassifications': ledger.get('changeClassifications', {}),
             'retiredOrRemovedLedgerIds': sorted(int(k) for k in ledger['questions'] if int(k) not in active_ids),
             'openFindings': outstanding, 'fixedFindings': fixed, 'findings': findings, 'questions': questions}
 
@@ -331,7 +411,50 @@ def gate_errors(corpus, ledger, baseline, as_of, findings=None):
                     errors.append(f'{key}: fixed manual concern needs current four-option verification')
         if decision.get('status') == 'fixed' and key in current_ids and key not in ledger.get('issues', {}):
             errors.append(f'{key}: marked fixed but detector still reproduces it')
+    for key, record in ledger.get('retirements', {}).items():
+        snapshot = retired.get(int(key))
+        if snapshot is None or not valid_retirement(record, snapshot, as_of):
+            errors.append(f'#{key}: invalid retirement evidence record')
     return errors
+
+
+def valid_retirement(record, snapshot=None, as_of=None):
+    if not isinstance(record, dict) or not all(nonblank(record.get(k)) for k in ('reviewer', 'reason', 'reference', 'retiredHash')) \
+            or not valid_date(record.get('at')) or type(record.get('replacedBy')) is not int \
+            or not isinstance(record.get('replacementSnapshot'), dict) \
+            or type(record.get('retiredId')) is not int or record['retiredId'] == record['replacedBy'] \
+            or (as_of is not None and record['at'] > as_of):
+        return False
+    replacement = record['replacementSnapshot']
+    if record['replacedBy'] != replacement.get('id') or record.get('replacementHash') != digest(replacement) \
+            or not nonblank(replacement.get('question')) or not isinstance(replacement.get('answers'), list) \
+            or len(replacement['answers']) != 4 or not all(nonblank(a) for a in replacement['answers']):
+        return False
+    if snapshot is not None:
+        original = {k: v for k, v in snapshot.items() if k != 'replacedBy'}
+        if record['retiredId'] != snapshot.get('id') or record['retiredHash'] != digest(original) \
+                or snapshot.get('replacedBy') != record['replacedBy']:
+            return False
+    return True
+
+
+def change_summary(changed, corpus, classifications, as_of=None):
+    by_id = {q['id']: q for q in corpus}
+    counts = dict.fromkeys(CHANGE_TYPES, 0)
+    unclassified = []
+    for qid in changed:
+        record = classifications.get(str(qid), {})
+        types = record.get('types', [])
+        if record.get('hash') != digest(by_id[qid]) or not isinstance(types, list) or not types \
+                or any(t not in CHANGE_TYPES for t in types) \
+                or not all(nonblank(record.get(k)) for k in ('reviewer', 'reason', 'reference')) \
+                or not valid_date(record.get('at')) or (as_of is not None and record['at'] > as_of):
+            unclassified.append(qid)
+        else:
+            for kind in set(types):
+                counts[kind] += 1
+    return {'edited': len(changed), 'byType': counts, 'unclassifiedIds': unclassified,
+            'note': 'Types may overlap; edited is not a count of factual errors.'}
 
 
 def completion_report(plan, report, corpus, retired, as_of, reviewer, partial=False):
@@ -346,13 +469,31 @@ def completion_report(plan, report, corpus, retired, as_of, reviewer, partial=Fa
     outstanding = [f for f in report['openFindings'] if set(ids).intersection(f['questionIds'])]
     incomplete = [q['id'] for q in scope if not (q['mechanical'] and q['manual'] and q['sourceVerified'])]
     unpreserved = sorted(set(removed)-set(retired))
-    complete = not (incomplete or outstanding or unpreserved)
+    retirement_records = report.get('retirementRecords', {})
+    undocumented = [i for i in removed if not valid_retirement(retirement_records.get(str(i)),
+                    retired.get(i) if isinstance(retired, dict) else None, as_of)]
+    changed = sorted(q['id'] for q in corpus if q['id'] in ids and plan['startingHashes'][str(q['id'])] != digest(q))
+    changes = change_summary(changed, corpus, report.get('changeClassifications', {}), as_of)
+    unresolved_ids = sorted(set(incomplete) | {i for f in outstanding for i in f['questionIds'] if i in ids}
+                            | set(unpreserved) | set(undocumented))
+    approved = [q for q in scope if q['mechanical'] and q['manual'] and q['sourceVerified']
+                and not any(q['id'] in f['questionIds'] for f in outstanding)]
+    complete = not (unresolved_ids or changes['unclassifiedIds'])
     result = {'schema': 1, 'at': as_of, 'reviewer': reviewer.strip(), 'plan': plan,
               'status': 'complete-for-scope' if complete else 'partial',
-              'scopeCounts': {'planned': len(ids), 'mechanical': sum(q['mechanical'] for q in scope),
-                              'manual': sum(q['manual'] for q in scope), 'sourceVerified': sum(q['sourceVerified'] for q in scope)},
+              'scopeCounts': {'planned': len(ids), 'active': len(scope),
+                              'reviewed': sum(q['manual'] for q in scope)+len(removed)-len(undocumented),
+                              'mechanical': sum(q['mechanical'] for q in scope),
+                              'manual': sum(q['manual'] for q in scope),
+                              'evidenceRecorded': sum(q.get('evidenceRecorded', q['sourceVerified']) for q in scope),
+                              'sourceVerified': sum(q['sourceVerified'] for q in scope),
+                              'approved': len(approved), 'edited': len(changed), 'retired': len(removed),
+                              'unresolved': len(unresolved_ids)},
               'removedIds': removed, 'unpreservedRemovedIds': unpreserved, 'incompleteIds': incomplete,
-              'changedIds': sorted(q['id'] for q in corpus if q['id'] in ids and plan['startingHashes'][str(q['id'])] != digest(q)),
+              'undocumentedRetirementIds': undocumented, 'unresolvedQuestionIds': unresolved_ids,
+              'changeSummary': changes,
+              'scopeHashes': {str(i): digest(by_id[i]) for i in ids if i in by_id},
+              'changedIds': changed,
               'unresolvedFindings': outstanding, 'report': report}
     if not complete and not partial:
         raise ValueError('scope is incomplete; finish reviews/decisions or use --partial to report remaining work honestly')
@@ -360,11 +501,14 @@ def completion_report(plan, report, corpus, retired, as_of, reviewer, partial=Fa
 
 
 def review_template(q):
-    return {'questionId': q['id'], 'hash': digest(q), 'questionSnapshot': q,
+    return {'schema': 2, 'questionId': q['id'], 'hash': digest(q), 'questionSnapshot': copy.deepcopy(q),
             'reviewer': '', 'at': today(), 'manual': dict.fromkeys(CHECKS, False), 'notes': '',
             'verification': {'context': '', 'timeSensitive': None, 'nextReviewAt': None,
+                             'premise': {'reason': '', 'sources': [{'url': '', 'locator': ''}]},
+                             'challenge': {'reviewer': '', 'at': today(), 'premiseChecked': False,
+                                           'alternativesExcluded': False, 'notes': ''},
                              'options': [{'answer': a, 'verdict': 'correct' if i == 0 else 'incorrect',
-                                          'reason': '', 'sources': [{'url': '', 'locator': ''}]}
+                                          'basis': '', 'reason': '', 'sources': [{'url': '', 'locator': ''}]}
                                          for i, a in enumerate(q['answers'])]}}
 
 
@@ -375,12 +519,48 @@ def main(argv=None):
     sub = ap.add_subparsers(dest='command', required=True)
     sub.add_parser('sync', help='Refresh structural coverage and invalidate changed-question reviews')
     sub.add_parser('check', help='Release gate; does not write files')
+    sub.add_parser('status', help='Show sequential audit progress without writing files')
+    next_batch = sub.add_parser('next', help='Prepare or resume the next sequential question audit batch')
+    next_batch.add_argument('--size', type=int, help='Questions per new batch; the default is in audit/queue.json')
+    next_batch.add_argument('--preview', action='store_true', help='Show the next batch without creating any files')
     report = sub.add_parser('report'); report.add_argument('--out', type=Path, required=True)
+    report.add_argument('--brief', action='store_true', help='Print one summary line; full report stays on disk')
+    report.add_argument('--since', type=Path, help='Print added/changed/resolved open finding IDs since this report')
+    view = sub.add_parser('view', help='Read a compact packet or complete deduplicated topic context')
+    view.add_argument('--packet', type=Path, default=ROOT/'artifacts/question-audit/current.json')
+    view.add_argument('--topic', action='append', default=[], help='Exact topic name; repeat to combine full digests')
+    view.add_argument('--ids', nargs='+', type=int, default=[])
+    view.add_argument('--out', type=Path)
+    notes = sub.add_parser('notes-template', help='Prepare concise evidence notes without approval defaults')
+    notes.add_argument('plan', type=Path); notes.add_argument('--out', type=Path, required=True)
+    notes.add_argument('--reviewer', required=True)
+    notes.add_argument('--ids', nargs='+', type=int, help='Only these planned IDs, e.g. remaining questions in a topic group')
+    build = sub.add_parser('build-reviews', help='Expand explicit evidence notes to validated reviews; does not record them')
+    build.add_argument('notes', type=Path); build.add_argument('--sources', type=Path, required=True)
+    build.add_argument('--out', type=Path, required=True)
+    sources = sub.add_parser('sources', help='Validate and search reusable source notes; never grants approval')
+    sources.add_argument('file', type=Path); sources.add_argument('--query', default='')
+    sources.add_argument('--ids', nargs='+', default=[])
     plan = sub.add_parser('plan')
     plan.add_argument('--out', type=Path, required=True); plan.add_argument('--seed', required=True)
     plan.add_argument('--limit', type=int, default=30); plan.add_argument('--sample-per-category', type=int, default=3)
     template = sub.add_parser('template'); template.add_argument('id', type=int); template.add_argument('--out', type=Path, required=True)
     record = sub.add_parser('record'); record.add_argument('file', type=Path)
+    many = sub.add_parser('record-many', help='Validate all supplied reviews before one ledger write')
+    many.add_argument('files', nargs='+', type=Path)
+    for command in ('retire', 'record-retirement'):
+        retirement = sub.add_parser(command, help='Preserve a duplicate snapshot and evidence, or document an existing retirement')
+        retirement.add_argument('id', type=int)
+        retirement.add_argument('--replaced-by', type=int, required=True)
+        retirement.add_argument('--reviewer', required=True)
+        retirement.add_argument('--reason', required=True)
+        retirement.add_argument('--reference', required=True)
+    sub.add_parser('recover-retirement', help='Roll back a process-interrupted retirement transaction')
+    classify = sub.add_parser('classify', help='Classify an edit without implying source approval')
+    classify.add_argument('id', type=int)
+    classify.add_argument('--type', action='append', dest='types', choices=CHANGE_TYPES, required=True)
+    classify.add_argument('--reason', required=True); classify.add_argument('--reviewer', required=True)
+    classify.add_argument('--reference', required=True)
     issue = sub.add_parser('issue', help='Track a concern discovered outside detector patterns')
     issue.add_argument('id', type=int); issue.add_argument('--reason', required=True); issue.add_argument('--reviewer', required=True)
     decide = sub.add_parser('decide')
@@ -392,6 +572,15 @@ def main(argv=None):
     close.add_argument('--reviewer', required=True); close.add_argument('--partial', action='store_true')
     args = ap.parse_args(argv)
     try:
+        from question_audit_operations import transaction_path, recover_retirement
+        # A transaction can be interrupted between shard and snapshot writes.
+        # Recovery must therefore run before structural validation of that state.
+        if args.command == 'recover-retirement':
+            recover_retirement(ROOT)
+            print('Interrupted retirement rolled back; rerun sync/report/check.')
+            return 0
+        if transaction_path(ROOT).exists():
+            raise ValueError('interrupted retirement: run recover-retirement before continuing')
         # Every workflow entry point starts with the same structural check.
         from validate_corpus import main as validate_corpus
         if validate_corpus():
@@ -401,28 +590,65 @@ def main(argv=None):
         if ledger.get('schema') != 1 or baseline.get('schema') != 1:
             raise ValueError('unsupported ledger/baseline schema')
         by_id = {q['id']: q for q in corpus}
-        if args.command == 'sync':
+        if args.command in ('view', 'notes-template', 'build-reviews', 'sources'):
+            from question_audit_compact import reading_view, notes_template, build_reviews, source_library
+            if args.command == 'view':
+                value = reading_view(read_json(args.packet), ROOT, args.topic, args.ids)
+                if args.out:
+                    write_json(args.out, value)
+                else:
+                    print(json.dumps(value, ensure_ascii=False, separators=(',', ':')))
+            elif args.command == 'notes-template':
+                if args.out.exists():
+                    raise ValueError('refusing to overwrite saved evidence notes; choose a new output path')
+                write_json(args.out, notes_template(corpus, read_json(args.plan), args.reviewer, as_of, args.ids))
+                print(f'Notes template: {args.out}; no checks or evidence inferred.')
+            elif args.command == 'build-reviews':
+                value = build_reviews(read_json(args.notes), read_json(args.sources), corpus, ledger, as_of)
+                write_json(args.out, value)
+                print(f'Built {len(value)} validated reviews: {args.out}; use record-many to import.')
+            else:
+                library = source_library(read_json(args.file), as_of)
+                if set(args.ids) - library.keys():
+                    raise ValueError('unknown source IDs')
+                for key, source in library.items():
+                    if args.ids and key not in args.ids:
+                        continue
+                    if args.query.casefold() not in (key+' '+json.dumps(source, ensure_ascii=False)).casefold():
+                        continue
+                    due = bool(source.get('nextReviewAt') and source['nextReviewAt'] <= as_of)
+                    print(json.dumps({'id': key, 'due': due, **source}, ensure_ascii=False, separators=(',', ':')))
+        elif args.command == 'sync':
             write_json(args.ledger, sync_ledger(corpus, ledger, as_of))
             print(f'Structural coverage refreshed for {len(corpus)} questions; no manual/source verification inferred.')
         elif args.command == 'template':
             write_json(args.out, review_template(by_id[args.id]))
-        elif args.command == 'record':
-            review = read_json(args.file)
-            q = by_id[review['questionId']]
-            if review.get('hash') != digest(q) or review.get('questionSnapshot') != q:
-                raise ValueError('question changed since template creation; re-review its current version')
-            errors = validate_review(review, as_of)
-            if not errors and review.get('verification') and [o.get('answer') for o in review['verification']['options']] != q['answers']:
-                errors.append('option evidence must match current answers in their stored order')
-            if errors:
-                raise ValueError('; '.join(errors))
-            sync_ledger(corpus, ledger, as_of)
-            entry = ledger['questions'][str(q['id'])]
-            if entry.get('review'):
-                entry['history'].append({'hash': entry['hash'], 'review': entry['review']})
-            entry['review'] = review
-            write_json(args.ledger, ledger)
-            print(f"Recorded review for #{q['id']}.")
+        elif args.command in ('record', 'record-many'):
+            files = [args.file] if args.command == 'record' else args.files
+            reviews = []
+            for file in files:
+                value = read_json(file)
+                reviews.extend(value if isinstance(value, list) else [value])
+            updated = record_reviews(corpus, ledger, reviews, as_of)
+            write_json(args.ledger, updated)
+            print(f'Recorded {len(reviews)} review(s); source support remains an editorial judgment.')
+        elif args.command in ('retire', 'record-retirement'):
+            from question_audit_operations import retire_question
+            retire_question(ROOT, args.ledger, args.id, args.replaced_by, args.reviewer, args.reason,
+                            args.reference, as_of, preserved=args.command == 'record-retirement')
+            print(f'Retirement #{args.id} -> #{args.replaced_by} recorded; original snapshot and history preserved.')
+            # Structural checks and fresh warnings immediately follow the mutation.
+            if validate_corpus():
+                return 1
+            refreshed = audit_report(load_corpus(), read_json(args.ledger), baseline, as_of)
+            write_json(ROOT/'artifacts/question-audit.json', refreshed)
+            print(f"Refreshed report: {len(refreshed['openFindings'])} advisory findings; review applicable decisions before closing.")
+        elif args.command == 'classify':
+            from question_audit_operations import classify_change
+            updated = classify_change(corpus, ledger, args.id, args.types, args.reviewer,
+                                      args.reason, args.reference, as_of)
+            write_json(args.ledger, updated)
+            print(f'Classified #{args.id}: '+', '.join(sorted(set(args.types))))
         elif args.command == 'plan':
             if args.limit < 0 or args.sample_per_category < 0 or not args.seed.strip():
                 raise ValueError('budgets must be nonnegative and seed must be nonempty')
@@ -438,7 +664,8 @@ def main(argv=None):
             if key in issues:
                 raise ValueError(f'concern already tracked: {key}')
             issues[key] = {'questionIds': [q['id']], 'reason': args.reason.strip(), 'reviewer': args.reviewer.strip(),
-                           'at': as_of, 'questionSnapshot': q}
+                           'at': as_of, 'questionSnapshot': q,
+                           'reviewHashAtIssue': digest(ledger['questions'].get(str(q['id']), {}).get('review'))}
             finding = next(f for f in audit_findings(corpus, ledger) if f['id'] == key)
             ledger['decisions'][key] = {'signature': finding['signature'], 'questionIds': [q['id']], 'status': 'unresolved',
                                        'reason': args.reason.strip(), 'reviewer': args.reviewer.strip(), 'at': as_of, 'history': []}
@@ -448,6 +675,19 @@ def main(argv=None):
             findings = {f['id']: f for f in audit_findings(corpus, ledger)}
             if not args.reason.strip() or not args.reviewer.strip():
                 raise ValueError('reason and reviewer must be nonempty')
+            if args.finding in ledger.get('issues', {}) and args.status in ('fixed', 'accepted'):
+                issue = ledger['issues'][args.finding]
+                if not args.reference.strip():
+                    raise ValueError('closing a manual concern requires an evidence reference')
+                for qid in issue['questionIds']:
+                    if qid not in by_id:
+                        continue
+                    review = current_review(ledger['questions'].get(str(qid), {}), by_id[qid], as_of)
+                    if not source_verified(ledger['questions'].get(str(qid), {}), by_id[qid], as_of) \
+                            or review.get('schema') != 2:
+                        raise ValueError('closing a manual concern requires a current schema-2 evidence challenge')
+                    if issue.get('reviewHashAtIssue') == digest(review):
+                        raise ValueError('renew the evidence review after the manual concern was raised')
             if args.status == 'fixed':
                 manual = args.finding in ledger.get('issues', {})
                 if (args.finding in findings and not manual) or args.finding not in ledger['decisions']:
@@ -468,10 +708,24 @@ def main(argv=None):
             write_json(args.ledger, ledger)
         else:
             report = audit_report(corpus, ledger, baseline, as_of)
-            if args.command == 'report':
+            if args.command in ('next', 'status'):
+                from question_audit_queue import prepare_next, print_status
+                preview = args.command == 'status' or args.preview
+                state = prepare_next(ROOT, corpus, ledger, report, as_of,
+                                     getattr(args, 'size', None), preview=preview)
+                print_status(state, preview=preview)
+            elif args.command == 'report':
+                from question_audit_compact import finding_changes
+                changes = finding_changes(read_json(args.since), report) if args.since else None
                 write_json(args.out, report)
-                print(json.dumps({k: report[k] for k in ('active', 'coverage', 'remainingSourceVerification')}, indent=2))
-                print(f"Open advisory findings: {len(report['openFindings'])}")
+                if args.brief:
+                    print(f"Audit: {report['active']} active; {report['remainingApproval']} awaiting approval; "
+                          f"{report['remainingSourceVerification']} awaiting sources; {len(report['openFindings'])} open findings. Full report: {args.out}")
+                else:
+                    print(json.dumps({k: report[k] for k in ('active', 'coverage', 'remainingSourceVerification', 'remainingApproval')}, indent=2))
+                    print(f"Open advisory findings: {len(report['openFindings'])}")
+                if changes is not None:
+                    print('Finding changes: '+json.dumps(changes, separators=(',', ':')))
             elif args.command == 'check':
                 errors = gate_errors(corpus, ledger, baseline, as_of, report['findings'])
                 for error in errors:
@@ -479,11 +733,17 @@ def main(argv=None):
                 print(f"Audit gate: {len(errors)} errors; {report['remainingSourceVerification']} questions remain without current source verification.")
                 return int(bool(errors))
             elif args.command == 'close':
+                from question_audit_operations import save_completion
                 plan = read_json(args.plan)
-                retired = {q['id'] for q in read_json(ROOT/'questions/retired.json')}
+                retired = {q['id']: q for q in read_json(ROOT/'questions/retired.json')}
                 result = completion_report(plan, report, corpus, retired, as_of, args.reviewer, args.partial)
-                write_json(args.out, result)
-                print(f"Audit {result['status']}; {len(result['incompleteIds'])} incomplete questions, {len(result['unresolvedFindings'])} unresolved warnings in scope.")
+                save_completion(args.out, result)
+                counts = result['scopeCounts']
+                print(f"Audit {result['status']}; {counts['reviewed']} reviewed, {counts['approved']} approved, "
+                      f"{counts['edited']} edited, {counts['retired']} retired, {counts['unresolved']} unresolved questions.")
+                print('Edit types (may overlap): '+json.dumps(result['changeSummary']['byType']))
+                if result['changeSummary']['unclassifiedIds']:
+                    print('Unclassified edits: '+str(result['changeSummary']['unclassifiedIds']))
         return 0
     except (ValueError, KeyError, TypeError, OSError) as error:
         print(f'ERROR: {error}', file=sys.stderr)

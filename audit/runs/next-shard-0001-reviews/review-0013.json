@@ -1,0 +1,80 @@
+{
+  "questionId": 13,
+  "hash": "cc044638d30e524094e32052d0ab8bd016805ce6cc0112e04f93caefc50ef5c1",
+  "questionSnapshot": {
+    "id": 13,
+    "question": "What is the name of the princess in Sleeping Beauty?",
+    "answers": [
+      "Aurora",
+      "Ariel",
+      "Merida",
+      "Rapunzel"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Four princesses; one from the specified film. Easy. #65 asks for Phillip and #9 was retired for duplicating #58, not this separate princess identity.",
+  "verification": {
+    "context": "Sleeping Beauty, Disney animated 1959 film.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Aurora",
+        "verdict": "correct",
+        "reason": "The cursed princess is Aurora.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/sleeping-beauty",
+            "locator": "Plot paragraphs: Maleficent curses Princess Aurora; Merryweather, Flora and Fauna raise her; Prince Phillip rescues her."
+          }
+        ]
+      },
+      {
+        "answer": "Ariel",
+        "verdict": "incorrect",
+        "reason": "Ariel is the mermaid princess of The Little Mermaid.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-little-mermaid",
+            "locator": "The Characters: Ursula is the evil sea witch; Triton is Ariel's father; Ariel and her companions are identified separately."
+          }
+        ]
+      },
+      {
+        "answer": "Merida",
+        "verdict": "incorrect",
+        "reason": "Merida is the princess in Pixar's Brave.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/brave",
+            "locator": "Merida profile: Scottish princess and archer rides her horse Angus; the story and Queen Elinor profiles establish her film and family."
+          }
+        ]
+      },
+      {
+        "answer": "Rapunzel",
+        "verdict": "incorrect",
+        "reason": "Rapunzel is Tangled's tower-dwelling heroine.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/tangled",
+            "locator": "The Characters: Rapunzel and chameleon Pascal; Mother Gothel imprisoned her from infancy; Maximus is the guard horse."
+          }
+        ]
+      }
+    ]
+  }
+}

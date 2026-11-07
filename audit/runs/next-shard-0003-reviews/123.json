@@ -1,0 +1,141 @@
+{
+  "schema": 2,
+  "questionId": 123,
+  "hash": "db3e8ff0569d8cd8ecec89c552565c75fafcdae5d493bf4085910117a4e7768a",
+  "questionSnapshot": {
+    "id": 123,
+    "question": "How many competitive Academy Awards are credited to Walt Disney, including his posthumous win?",
+    "answers": [
+      "22",
+      "10",
+      "15",
+      "30"
+    ],
+    "difficulty": "medium",
+    "category": "walt"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Challenged lifetime versus posthumous and competitive versus honorary/technical totals. Academy confirms the 1969 posthumous credit; the explicitly competitive count is corroborated independently by the Television Academy.",
+  "verification": {
+    "context": "How many competitive Academy Awards are credited to Walt Disney, including his posthumous win?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "22 competitive wins; the 1969 Academy record confirms the posthumous winner.",
+      "sources": [
+        {
+          "url": "https://www.disneyplus.com/en-nz/explore/articles/oscars-academy-awards-guide-2026",
+          "locator": "Everything Else / Who has won the most Oscars: 22 competitive and four honorary."
+        },
+        {
+          "url": "https://www.televisionacademy.com/bios/walt-disney",
+          "locator": "Birthplace field: Chicago, Illinois; biography states 22 Oscar wins."
+        },
+        {
+          "url": "https://www.oscars.org/oscars/ceremonies/1969",
+          "locator": "Short Subject (Cartoon), Winner: Winnie the Pooh and the Blustery Day; Walt Disney, Producer."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged lifetime versus posthumous and competitive versus honorary/technical totals. Academy confirms the 1969 posthumous credit; the explicitly competitive count is corroborated independently by the Television Academy."
+    },
+    "options": [
+      {
+        "answer": "22",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "22 competitive wins; the 1969 Academy record confirms the posthumous winner.",
+        "sources": [
+          {
+            "url": "https://www.disneyplus.com/en-nz/explore/articles/oscars-academy-awards-guide-2026",
+            "locator": "Everything Else / Who has won the most Oscars: 22 competitive and four honorary."
+          },
+          {
+            "url": "https://www.televisionacademy.com/bios/walt-disney",
+            "locator": "Birthplace field: Chicago, Illinois; biography states 22 Oscar wins."
+          },
+          {
+            "url": "https://www.oscars.org/oscars/ceremonies/1969",
+            "locator": "Short Subject (Cartoon), Winner: Winnie the Pooh and the Blustery Day; Walt Disney, Producer."
+          }
+        ]
+      },
+      {
+        "answer": "10",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Below the expressly stated competitive total.",
+        "sources": [
+          {
+            "url": "https://www.disneyplus.com/en-nz/explore/articles/oscars-academy-awards-guide-2026",
+            "locator": "Everything Else / Who has won the most Oscars: 22 competitive and four honorary."
+          },
+          {
+            "url": "https://www.televisionacademy.com/bios/walt-disney",
+            "locator": "Birthplace field: Chicago, Illinois; biography states 22 Oscar wins."
+          },
+          {
+            "url": "https://www.oscars.org/oscars/ceremonies/1969",
+            "locator": "Short Subject (Cartoon), Winner: Winnie the Pooh and the Blustery Day; Walt Disney, Producer."
+          }
+        ]
+      },
+      {
+        "answer": "15",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Below the expressly stated competitive total.",
+        "sources": [
+          {
+            "url": "https://www.disneyplus.com/en-nz/explore/articles/oscars-academy-awards-guide-2026",
+            "locator": "Everything Else / Who has won the most Oscars: 22 competitive and four honorary."
+          },
+          {
+            "url": "https://www.televisionacademy.com/bios/walt-disney",
+            "locator": "Birthplace field: Chicago, Illinois; biography states 22 Oscar wins."
+          },
+          {
+            "url": "https://www.oscars.org/oscars/ceremonies/1969",
+            "locator": "Short Subject (Cartoon), Winner: Winnie the Pooh and the Blustery Day; Walt Disney, Producer."
+          }
+        ]
+      },
+      {
+        "answer": "30",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Above the competitive total; honorary/technical totals are outside the question.",
+        "sources": [
+          {
+            "url": "https://www.disneyplus.com/en-nz/explore/articles/oscars-academy-awards-guide-2026",
+            "locator": "Everything Else / Who has won the most Oscars: 22 competitive and four honorary."
+          },
+          {
+            "url": "https://www.televisionacademy.com/bios/walt-disney",
+            "locator": "Birthplace field: Chicago, Illinois; biography states 22 Oscar wins."
+          },
+          {
+            "url": "https://www.oscars.org/oscars/ceremonies/1969",
+            "locator": "Short Subject (Cartoon), Winner: Winnie the Pooh and the Blustery Day; Walt Disney, Producer."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "questionId": 25,
+  "hash": "2b3a98c19124a9a722511531a4479ef9d0c9ebf0697ed1c162d5e628c1464f3e",
+  "questionSnapshot": {
+    "id": 25,
+    "question": "In Beauty and the Beast, which character is a candlestick?",
+    "answers": [
+      "Lumiere",
+      "Cogsworth",
+      "Mrs. Potts",
+      "Chip"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": false,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Factual option review completed, but fails distinctFact: retained #765 asks the same fact. Not submitted as a passing manual review.",
+  "verification": {
+    "context": "Beauty and the Beast (1991), enchanted forms.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Lumiere",
+        "verdict": "correct",
+        "reason": "Lumiere is the candelabra, more precisely described by retained #765 than by candlestick.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/beauty-and-the-beast",
+            "locator": "The Characters: candelabra Lumiere, butler Cogsworth, kitchen head Mrs. Potts transformed into a teapot, and her teacup son Chip."
+          }
+        ]
+      },
+      {
+        "answer": "Cogsworth",
+        "verdict": "incorrect",
+        "reason": "Cogsworth is the enchanted clock.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/cogsworth/",
+            "locator": "Cogsworth entry: enchanted mantle clock in Beauty and the Beast."
+          }
+        ]
+      },
+      {
+        "answer": "Mrs. Potts",
+        "verdict": "incorrect",
+        "reason": "Mrs. Potts is the teapot.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/beauty-and-the-beast",
+            "locator": "The Characters: candelabra Lumiere, butler Cogsworth, kitchen head Mrs. Potts transformed into a teapot, and her teacup son Chip."
+          }
+        ]
+      },
+      {
+        "answer": "Chip",
+        "verdict": "incorrect",
+        "reason": "Chip is the teacup.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/beauty-and-the-beast",
+            "locator": "The Characters: candelabra Lumiere, butler Cogsworth, kitchen head Mrs. Potts transformed into a teapot, and her teacup son Chip."
+          }
+        ]
+      }
+    ]
+  },
+  "status": "retired-duplicate",
+  "replacedBy": 765
+}

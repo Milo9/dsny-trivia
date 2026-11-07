@@ -1,0 +1,80 @@
+{
+  "questionId": 35,
+  "hash": "1e409d367f859be2aa0f33b6e561d8bb7efb8f52c925d7671f2626894aa7e111",
+  "questionSnapshot": {
+    "id": 35,
+    "question": "In Ratatouille, what is the name of the famous restaurant Remy longs to cook in?",
+    "answers": [
+      "Gusteau's",
+      "La Maison",
+      "Le Gourmet",
+      "Chez Antoine"
+    ],
+    "difficulty": "medium",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Four parallel French-style restaurant names. Medium and Pixar category. #185 asks the chef/motto identity, whereas this asks the workplace's name; #2314 inheritance and #2315 licensing are separate facts.",
+  "verification": {
+    "context": "Ratatouille, Pixar 2007 film, Gusteau's established Paris restaurant before the later bistro.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Gusteau's",
+        "verdict": "correct",
+        "reason": "Pixar names the restaurant Gusteau's in the Linguini and Gusteau profiles.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/ratatouille",
+            "locator": "Opening synopsis: Remy beneath the Paris restaurant founded by Auguste Gusteau. Auguste Gusteau and Linguini profiles identify Gusteau's by name."
+          }
+        ]
+      },
+      {
+        "answer": "La Maison",
+        "verdict": "incorrect",
+        "reason": "La Maison does not match the identified workplace named Gusteau's.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/ratatouille",
+            "locator": "Opening synopsis: Remy beneath the Paris restaurant founded by Auguste Gusteau. Auguste Gusteau and Linguini profiles identify Gusteau's by name."
+          }
+        ]
+      },
+      {
+        "answer": "Le Gourmet",
+        "verdict": "incorrect",
+        "reason": "Le Gourmet is not the restaurant named in the studio's story and character descriptions.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/ratatouille",
+            "locator": "Opening synopsis: Remy beneath the Paris restaurant founded by Auguste Gusteau. Auguste Gusteau and Linguini profiles identify Gusteau's by name."
+          }
+        ]
+      },
+      {
+        "answer": "Chez Antoine",
+        "verdict": "incorrect",
+        "reason": "Chez Antoine differs from the restaurant Gusteau's where Linguini and Remy cook.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/ratatouille",
+            "locator": "Opening synopsis: Remy beneath the Paris restaurant founded by Auguste Gusteau. Auguste Gusteau and Linguini profiles identify Gusteau's by name."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "retired": {
+    "id": 422,
+    "question": "In what year did the Disney Wish launch?",
+    "answers": [
+      "2022",
+      "2020",
+      "2019",
+      "2023"
+    ],
+    "difficulty": "medium",
+    "category": "cruise"
+  },
+  "retained": {
+    "id": 729,
+    "question": "What is the name of the Disney cruise ship that launched in 2022?",
+    "answers": [
+      "Disney Wish",
+      "Disney Dream",
+      "Disney Fantasy",
+      "Disney Treasure"
+    ],
+    "difficulty": "easy",
+    "category": "cruise"
+  },
+  "additionalComparisons": [],
+  "rationale": "Inverse of Wish/2022 identity in 729. Both test the ship and debut year; keep one question, preserving the other snapshot.",
+  "sources": [
+    {
+      "sourceNoteId": "fleet-2025-table",
+      "url": "https://disneyexperiences.com/app/uploads/2025/03/FY25-Q3-DCL-Disney-Experiences-Fact-Sheet.pdf",
+      "locator": "Disney Cruise Line Fleet table",
+      "evidence": "The six listed ships are Magic (1998), Wonder (1999), Dream (2011), Fantasy (2012), Wish (2022) and Treasure (maiden voyage December 21, 2024).",
+      "checkedBy": "Codex",
+      "checkedAt": "2026-11-07",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "limitations": "Primary institutional text inspected; no film or video viewing claimed.",
+      "topics": [
+        "cruise"
+      ]
+    }
+  ],
+  "originalOptionAssessments": [
+    {
+      "answer": "2022",
+      "assessment": "2022 is Wish's maiden-voyage year."
+    },
+    {
+      "answer": "2020",
+      "assessment": "2020 is not the stated year."
+    },
+    {
+      "answer": "2019",
+      "assessment": "2019 is not the stated year."
+    },
+    {
+      "answer": "2023",
+      "assessment": "2023 is not the stated year."
+    }
+  ],
+  "finalChallenge": {
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "notes": "Inverse of Wish/2022 identity in 729. Both test the ship and debut year; keep one question, preserving the other snapshot. All four original options inspected. Retirement avoids asserting approval of a flawed premise or an insufficiently excluded alternative."
+  },
+  "scope": "Only the planned ID is retired. Counterpart comparison is not approval of its other claims."
+}

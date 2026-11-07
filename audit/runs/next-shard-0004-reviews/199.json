@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 199,
+  "hash": "56fde2ee4c31ba2b7dfda265e986e482fc95334c39323ebb973b099dff04eb7e",
+  "questionSnapshot": {
+    "id": 199,
+    "question": "In Ratatouille, what is the full name of the food critic who gives Gusteau's restaurant a scathing review?",
+    "answers": [
+      "Anton Ego",
+      "Auguste Gusteau",
+      "Horst",
+      "Lalo"
+    ],
+    "difficulty": "medium",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged whether any kitchen worker could review food: this asks the specific critic who gave the scathing restaurant review. Pixar attributes the downgrade to Anton Ego and identifies Gusteau/Horst/Lalo with different roles. Reduced hard to medium.",
+  "verification": {
+    "context": "In Ratatouille, what is the full name of the food critic who gives Gusteau's restaurant a scathing review?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Gusteau profile explicitly assigns the downgrade to critic Anton Ego.",
+      "sources": [
+        {
+          "url": "https://www.pixar.com/ratatouille",
+          "locator": "Synopsis and Remy/Emile/Gusteau/Linguini character profiles; Gusteau profile identifies book and Ego downgrade; Chefs identifies Horst and Lalo as kitchen staff."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged whether any kitchen worker could review food: this asks the specific critic who gave the scathing restaurant review. Pixar attributes the downgrade to Anton Ego and identifies Gusteau/Horst/Lalo with different roles. Reduced hard to medium."
+    },
+    "options": [
+      {
+        "answer": "Anton Ego",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Gusteau profile explicitly assigns the downgrade to critic Anton Ego.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/ratatouille",
+            "locator": "Synopsis and Remy/Emile/Gusteau/Linguini character profiles; Gusteau profile identifies book and Ego downgrade; Chefs identifies Horst and Lalo as kitchen staff."
+          }
+        ]
+      },
+      {
+        "answer": "Auguste Gusteau",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "The restaurant’s founder, not the critic who downgraded it.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/ratatouille",
+            "locator": "Synopsis and Remy/Emile/Gusteau/Linguini character profiles; Gusteau profile identifies book and Ego downgrade; Chefs identifies Horst and Lalo as kitchen staff."
+          }
+        ]
+      },
+      {
+        "answer": "Horst",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "A kitchen chef, not the explicitly identified critic.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/ratatouille",
+            "locator": "Synopsis and Remy/Emile/Gusteau/Linguini character profiles; Gusteau profile identifies book and Ego downgrade; Chefs identifies Horst and Lalo as kitchen staff."
+          }
+        ]
+      },
+      {
+        "answer": "Lalo",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "A kitchen chef, not the explicitly identified critic.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/ratatouille",
+            "locator": "Synopsis and Remy/Emile/Gusteau/Linguini character profiles; Gusteau profile identifies book and Ego downgrade; Chefs identifies Horst and Lalo as kitchen staff."
+          }
+        ]
+      }
+    ]
+  }
+}

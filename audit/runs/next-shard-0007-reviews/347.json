@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 347,
+  "hash": "cbd34bb6c7f209a8e9a9ea6f955c4286b46b046822f07168b2e9ad1c4015ec54",
+  "questionSnapshot": {
+    "id": 347,
+    "question": "What name replaced Downtown Disney for Walt Disney World's shopping and dining district in 2015?",
+    "answers": [
+      "Disney Springs",
+      "Disney Town",
+      "Disney Plaza",
+      "Disney Boulevard"
+    ],
+    "difficulty": "easy",
+    "category": "parks"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Bound the question to the 2015 renaming instead of an unbounded current name. Similar shopping districts at other resorts do not answer a Walt Disney World renaming. All options have a parallel Disney/place form. 1145 asks the largest character store within the district, not this name change. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+  "verification": {
+    "context": "What name replaced Downtown Disney for Walt Disney World's shopping and dining district in 2015? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Disney Springs became the replacement name in September 2015. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/disney-springs/",
+          "locator": "Entry: shopping/dining center replacing Downtown Disney; effective name change September 29, 2015"
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Bound the question to the 2015 renaming instead of an unbounded current name. Similar shopping districts at other resorts do not answer a Walt Disney World renaming. All options have a parallel Disney/place form. 1145 asks the largest character store within the district, not this name change."
+    },
+    "options": [
+      {
+        "answer": "Disney Springs",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Disney Springs became the replacement name in September 2015.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/disney-springs/",
+            "locator": "Entry: shopping/dining center replacing Downtown Disney; effective name change September 29, 2015"
+          }
+        ]
+      },
+      {
+        "answer": "Disney Town",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Disney Town is not the documented replacement name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/disney-springs/",
+            "locator": "Entry: shopping/dining center replacing Downtown Disney; effective name change September 29, 2015"
+          }
+        ]
+      },
+      {
+        "answer": "Disney Plaza",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Disney Plaza is not the documented replacement name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/disney-springs/",
+            "locator": "Entry: shopping/dining center replacing Downtown Disney; effective name change September 29, 2015"
+          }
+        ]
+      },
+      {
+        "answer": "Disney Boulevard",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Disney Boulevard is not the documented replacement name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/disney-springs/",
+            "locator": "Entry: shopping/dining center replacing Downtown Disney; effective name change September 29, 2015"
+          }
+        ]
+      }
+    ]
+  }
+}

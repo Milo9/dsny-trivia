@@ -1,0 +1,96 @@
+{
+  "questionId": 15,
+  "hash": "46968db77cec3ea6608d2f7e3a2f7555feb78c1db36fd009ae26f52a1519674f",
+  "questionSnapshot": {
+    "id": 15,
+    "question": "What color is Ariel's mermaid tail in the animated The Little Mermaid (1989)?",
+    "answers": [
+      "Green",
+      "Blue",
+      "Purple",
+      "Red"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Added film/version to avoid visual interpretation across remakes. Inspected Disney's film still and corroborating text. Four color options, easy. #54 Tinker Bell dress, #41 father, and #205 Belle dress are distinct attributes.",
+  "verification": {
+    "context": "Ariel's mermaid form in Disney's animated The Little Mermaid (1989), not the 2023 remake or promotional human dresses.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Green",
+        "verdict": "correct",
+        "reason": "Her tail is sea-green; the official still visibly shows its teal-green body.",
+        "sources": [
+          {
+            "url": "https://lumiere-a.akamaihd.net/v1/images/gallery_princess_ariel_1_bc7355f9_b75f8a55.jpeg?region=3%2C0%2C2175%2C1223",
+            "locator": "Disney Princess Ariel Photos, first still, Flounder and Ariel swimming to the top of her grotto. Downloaded and visually inspected: teal-green tail body below lavender shells, red hair. Corroborated by Development section of the character reference."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Ariel_(The_Little_Mermaid)",
+            "locator": "Development: explicitly describes the 1989 film tail as sea-green and contrasts it with red hair. Secondary text used with directly inspected Disney film still; no unseen documentary claimed."
+          }
+        ]
+      },
+      {
+        "answer": "Blue",
+        "verdict": "incorrect",
+        "reason": "Blue is not the described tail color; the character design distinguishes sea-green from other colors.",
+        "sources": [
+          {
+            "url": "https://lumiere-a.akamaihd.net/v1/images/gallery_princess_ariel_1_bc7355f9_b75f8a55.jpeg?region=3%2C0%2C2175%2C1223",
+            "locator": "Disney Princess Ariel Photos, first still, Flounder and Ariel swimming to the top of her grotto. Downloaded and visually inspected: teal-green tail body below lavender shells, red hair. Corroborated by Development section of the character reference."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Ariel_(The_Little_Mermaid)",
+            "locator": "Development: explicitly describes the 1989 film tail as sea-green and contrasts it with red hair. Secondary text used with directly inspected Disney film still; no unseen documentary claimed."
+          }
+        ]
+      },
+      {
+        "answer": "Purple",
+        "verdict": "incorrect",
+        "reason": "Purple/lavender is the shell top, a separate garment above the green tail.",
+        "sources": [
+          {
+            "url": "https://lumiere-a.akamaihd.net/v1/images/gallery_princess_ariel_1_bc7355f9_b75f8a55.jpeg?region=3%2C0%2C2175%2C1223",
+            "locator": "Disney Princess Ariel Photos, first still, Flounder and Ariel swimming to the top of her grotto. Downloaded and visually inspected: teal-green tail body below lavender shells, red hair. Corroborated by Development section of the character reference."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Ariel_(The_Little_Mermaid)",
+            "locator": "Development: explicitly describes the 1989 film tail as sea-green and contrasts it with red hair. Secondary text used with directly inspected Disney film still; no unseen documentary claimed."
+          }
+        ]
+      },
+      {
+        "answer": "Red",
+        "verdict": "incorrect",
+        "reason": "Red is Ariel's hair color, contrasted against the green tail.",
+        "sources": [
+          {
+            "url": "https://lumiere-a.akamaihd.net/v1/images/gallery_princess_ariel_1_bc7355f9_b75f8a55.jpeg?region=3%2C0%2C2175%2C1223",
+            "locator": "Disney Princess Ariel Photos, first still, Flounder and Ariel swimming to the top of her grotto. Downloaded and visually inspected: teal-green tail body below lavender shells, red hair. Corroborated by Development section of the character reference."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Ariel_(The_Little_Mermaid)",
+            "locator": "Development: explicitly describes the 1989 film tail as sea-green and contrasts it with red hair. Secondary text used with directly inspected Disney film still; no unseen documentary claimed."
+          }
+        ]
+      }
+    ]
+  }
+}

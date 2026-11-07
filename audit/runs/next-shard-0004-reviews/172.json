@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 172,
+  "hash": "73abb651c25f357047f81f413620dbc0cdd99c9bc6994ca87793b8b935144ad2",
+  "questionSnapshot": {
+    "id": 172,
+    "question": "What is the name of the rat who dreams of being a chef in Ratatouille?",
+    "answers": [
+      "Remy",
+      "Emile",
+      "Gusteau",
+      "Linguini"
+    ],
+    "difficulty": "easy",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged Emile because he is also a rat and supports Remy. Pixar explicitly contrasts his general appetite with Remy’s chef ambition. Gusteau and Linguini fail the rat identity, not merely the ambition clause.",
+  "verification": {
+    "context": "What is the name of the rat who dreams of being a chef in Ratatouille?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Synopsis singles out Remy as the aspiring rat chef.",
+      "sources": [
+        {
+          "url": "https://www.pixar.com/ratatouille",
+          "locator": "Synopsis and Remy/Emile/Gusteau/Linguini character profiles; Gusteau profile identifies book and Ego downgrade; Chefs identifies Horst and Lalo as kitchen staff."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged Emile because he is also a rat and supports Remy. Pixar explicitly contrasts his general appetite with Remy’s chef ambition. Gusteau and Linguini fail the rat identity, not merely the ambition clause."
+    },
+    "options": [
+      {
+        "answer": "Remy",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Synopsis singles out Remy as the aspiring rat chef.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/ratatouille",
+            "locator": "Synopsis and Remy/Emile/Gusteau/Linguini character profiles; Gusteau profile identifies book and Ego downgrade; Chefs identifies Horst and Lalo as kitchen staff."
+          }
+        ]
+      },
+      {
+        "answer": "Emile",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Profile distinguishes the food-loving brother from Remy’s culinary ambition.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/ratatouille",
+            "locator": "Synopsis and Remy/Emile/Gusteau/Linguini character profiles; Gusteau profile identifies book and Ego downgrade; Chefs identifies Horst and Lalo as kitchen staff."
+          }
+        ]
+      },
+      {
+        "answer": "Gusteau",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Human culinary hero, not the aspiring rat.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/ratatouille",
+            "locator": "Synopsis and Remy/Emile/Gusteau/Linguini character profiles; Gusteau profile identifies book and Ego downgrade; Chefs identifies Horst and Lalo as kitchen staff."
+          }
+        ]
+      },
+      {
+        "answer": "Linguini",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Human garbage boy and Remy’s partner, not the rat.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/ratatouille",
+            "locator": "Synopsis and Remy/Emile/Gusteau/Linguini character profiles; Gusteau profile identifies book and Ego downgrade; Chefs identifies Horst and Lalo as kitchen staff."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "reviewer": "Codex (OpenAI)",
+  "questions": [
+    {
+      "id": 93,
+      "question": "What is the name of the haunted attraction at Magic Kingdom featuring 999 happy haunts?",
+      "answers": [
+        "The Haunted Mansion",
+        "Ghost Train",
+        "Tower of Terror",
+        "Phantom Manor"
+      ],
+      "difficulty": "easy",
+      "category": "parks"
+    },
+    {
+      "id": 600,
+      "question": "How many happy haunts does The Haunted Mansion claim to have?",
+      "answers": [
+        "999",
+        "666",
+        "1000",
+        "13"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    }
+  ],
+  "decision": "Inverse Haunted Mansion/999 happy haunts recall. The explicit haunt-count question retains the same fact. q93 is preserved intact, including its attraction-name answer.",
+  "evidence": [
+    {
+      "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/haunted-mansion/",
+      "locator": "Haunted Mansion attraction identity and Ghost Host description; q600 asks the count embedded in q93. No claim that the current webpage itself states 999."
+    }
+  ],
+  "replacementApproved": false
+}

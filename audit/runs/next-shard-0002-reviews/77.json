@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 77,
+  "hash": "1defb4deb3c08f137db887ea154a5cebd614654af3f2e66d469e431c10fe534a",
+  "questionSnapshot": {
+    "id": 77,
+    "question": "In Tarzan (1999), what is the name of his talkative gorilla friend?",
+    "answers": [
+      "Terk",
+      "Kala",
+      "Tantor",
+      "Kerchak"
+    ],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "q29 asks the mother; q872 the elephant; q2296 the troop leader. Each is a separate character role. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "English-language Disney character naming; original theatrical feature where a film is named. In Tarzan (1999), what is the name of his talkative gorilla friend?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The synopsis distinguishes talkative gorilla Terk from parental figures Kala/Kerchak and elephant Tantor.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/tarzan-film/",
+          "locator": "Opening synopsis: Kerchak and Kala raise Tarzan; his companions are talkative gorilla Terk and elephant Tantor."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "The word friend alone could be stretched to include relatives. Final wording tracks the source’s talkative gorilla description; the source explicitly separates the parental pair and elephant. No unsupported childhood chronology is required."
+    },
+    "options": [
+      {
+        "answer": "Terk",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Terk is the described talkative gorilla companion.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/tarzan-film/",
+            "locator": "Opening synopsis: Kerchak and Kala raise Tarzan; his companions are talkative gorilla Terk and elephant Tantor."
+          }
+        ]
+      },
+      {
+        "answer": "Kala",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Kala is the adoptive mother figure, not the companion identified here.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/tarzan-film/",
+            "locator": "Opening synopsis: Kerchak and Kala raise Tarzan; his companions are talkative gorilla Terk and elephant Tantor."
+          }
+        ]
+      },
+      {
+        "answer": "Tantor",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Tantor is an elephant, not this gorilla.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/tarzan-film/",
+            "locator": "Opening synopsis: Kerchak and Kala raise Tarzan; his companions are talkative gorilla Terk and elephant Tantor."
+          }
+        ]
+      },
+      {
+        "answer": "Kerchak",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Kerchak leads the gorilla family as Kala’s mate, not the described talkative companion.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/tarzan-film/",
+            "locator": "Opening synopsis: Kerchak and Kala raise Tarzan; his companions are talkative gorilla Terk and elephant Tantor."
+          }
+        ]
+      }
+    ]
+  }
+}

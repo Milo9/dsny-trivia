@@ -1,0 +1,80 @@
+{
+  "questionId": 26,
+  "hash": "a12708e87c1eb9173838027640372875a787de2ce2fd35a20ece948746aec12d",
+  "questionSnapshot": {
+    "id": 26,
+    "question": "In Disney's animated Mulan (1998), what is the name of Mulan's tiny dragon guardian?",
+    "answers": [
+      "Mushu",
+      "Cri-Kee",
+      "Shang",
+      "Ping"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Replaced vague/external dragon-name distractors with three characters whose roles are explicitly established in the same primary synopsis. All short names; medium name recall is reasonable. #296 cricket identity is separate.",
+  "verification": {
+    "context": "Disney animated Mulan (1998), not the dragon-free 2020 live-action retelling.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Mushu",
+        "verdict": "correct",
+        "reason": "Mushu is the guardian dragon.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/mulan",
+            "locator": "1998 synopsis: Mulan's male disguise is Ping; guardian dragon Mushu; lucky cricket Cri-Kee; Captain Shang."
+          }
+        ]
+      },
+      {
+        "answer": "Cri-Kee",
+        "verdict": "incorrect",
+        "reason": "Cri-Kee is the lucky cricket.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/mulan",
+            "locator": "1998 synopsis: Mulan's male disguise is Ping; guardian dragon Mushu; lucky cricket Cri-Kee; Captain Shang."
+          }
+        ]
+      },
+      {
+        "answer": "Shang",
+        "verdict": "incorrect",
+        "reason": "Shang is the army captain, a human.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/mulan",
+            "locator": "1998 synopsis: Mulan's male disguise is Ping; guardian dragon Mushu; lucky cricket Cri-Kee; Captain Shang."
+          }
+        ]
+      },
+      {
+        "answer": "Ping",
+        "verdict": "incorrect",
+        "reason": "Ping is Mulan's male soldier alias, not the dragon.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/mulan",
+            "locator": "1998 synopsis: Mulan's male disguise is Ping; guardian dragon Mushu; lucky cricket Cri-Kee; Captain Shang."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 247,
+  "hash": "f02853017827006958fefadc7aa10c81b99f0a5a7b5c77ab3e0d1dc56e45ae58",
+  "questionSnapshot": {
+    "id": 247,
+    "question": "In The Fox and the Hound, what are the names of the two main animal characters?",
+    "answers": [
+      "Tod and Copper",
+      "Basil and Dawson",
+      "Bernard and Bianca",
+      "Oliver and Dodger"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Replaced generic Fox and Dog/Red and Blue with parallel proper-name pairs. Only Tod and Copper names the two friends in the cited synopsis. Reduced to easy central-character recall.",
+  "verification": {
+    "context": "In The Fox and the Hound, what are the names of the two main animal characters?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Opening identifies fox Tod and hound Copper as the two childhood friends.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/fox-and-the-hound-the-film/",
+          "locator": "Opening identifies orphan fox Tod and hunting dog Copper as the two childhood friends."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Replaced generic Fox and Dog/Red and Blue with parallel proper-name pairs. Only Tod and Copper names the two friends in the cited synopsis. Reduced to easy central-character recall."
+    },
+    "options": [
+      {
+        "answer": "Tod and Copper",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Opening identifies fox Tod and hound Copper as the two childhood friends.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/fox-and-the-hound-the-film/",
+            "locator": "Opening identifies orphan fox Tod and hunting dog Copper as the two childhood friends."
+          }
+        ]
+      },
+      {
+        "answer": "Basil and Dawson",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different pair from the expressly named Tod and Copper.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/fox-and-the-hound-the-film/",
+            "locator": "Opening identifies orphan fox Tod and hunting dog Copper as the two childhood friends."
+          }
+        ]
+      },
+      {
+        "answer": "Bernard and Bianca",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different pair from the expressly named Tod and Copper.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/fox-and-the-hound-the-film/",
+            "locator": "Opening identifies orphan fox Tod and hunting dog Copper as the two childhood friends."
+          }
+        ]
+      },
+      {
+        "answer": "Oliver and Dodger",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different pair from the expressly named Tod and Copper.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/fox-and-the-hound-the-film/",
+            "locator": "Opening identifies orphan fox Tod and hunting dog Copper as the two childhood friends."
+          }
+        ]
+      }
+    ]
+  }
+}

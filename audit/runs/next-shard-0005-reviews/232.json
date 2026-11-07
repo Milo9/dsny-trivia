@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 232,
+  "hash": "ece9d6a80410592fcb3ea8b57ac027150f134f34c421808c2c3e1687e5f4b3b5",
+  "questionSnapshot": {
+    "id": 232,
+    "question": "In Frozen, who is the ice harvester who helps Anna find Elsa?",
+    "answers": [
+      "Kristoff",
+      "Hans",
+      "The Duke of Weselton",
+      "Olaf"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Olaf genuinely helps Anna, so helper alone is insufficient. The ice-harvester profession pins Kristoff; publisher backstory corroborates trade while film synopsis establishes the actual search.",
+  "verification": {
+    "context": "In Frozen, who is the ice harvester who helps Anna find Elsa?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Kristoff is explicitly Anna’s mountain companion and ice professional.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/frozen-film/",
+          "locator": "Opening: Kristoff accompanies Anna to find Elsa; cast distinguishes Hans, Olaf and Duke of Weselton."
+        },
+        {
+          "url": "https://books.disney.com/book/lost-legends-the-fixer-upper-2/",
+          "locator": "Publisher description explicitly calls Kristoff the future Arendelle Ice Master and Deliverer and describes childhood ice-harvester competition. Corroborates trade, not used to invent film events."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Olaf genuinely helps Anna, so helper alone is insufficient. The ice-harvester profession pins Kristoff; publisher backstory corroborates trade while film synopsis establishes the actual search."
+    },
+    "options": [
+      {
+        "answer": "Kristoff",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Kristoff is explicitly Anna’s mountain companion and ice professional.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/frozen-film/",
+            "locator": "Opening: Kristoff accompanies Anna to find Elsa; cast distinguishes Hans, Olaf and Duke of Weselton."
+          },
+          {
+            "url": "https://books.disney.com/book/lost-legends-the-fixer-upper-2/",
+            "locator": "Publisher description explicitly calls Kristoff the future Arendelle Ice Master and Deliverer and describes childhood ice-harvester competition. Corroborates trade, not used to invent film events."
+          }
+        ]
+      },
+      {
+        "answer": "Hans",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Prince Hans is a different cast identity from companion Kristoff.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/frozen-film/",
+            "locator": "Opening: Kristoff accompanies Anna to find Elsa; cast distinguishes Hans, Olaf and Duke of Weselton."
+          },
+          {
+            "url": "https://books.disney.com/book/lost-legends-the-fixer-upper-2/",
+            "locator": "Publisher description explicitly calls Kristoff the future Arendelle Ice Master and Deliverer and describes childhood ice-harvester competition. Corroborates trade, not used to invent film events."
+          }
+        ]
+      },
+      {
+        "answer": "The Duke of Weselton",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Duke is a different cast identity from companion Kristoff.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/frozen-film/",
+            "locator": "Opening: Kristoff accompanies Anna to find Elsa; cast distinguishes Hans, Olaf and Duke of Weselton."
+          },
+          {
+            "url": "https://books.disney.com/book/lost-legends-the-fixer-upper-2/",
+            "locator": "Publisher description explicitly calls Kristoff the future Arendelle Ice Master and Deliverer and describes childhood ice-harvester competition. Corroborates trade, not used to invent film events."
+          }
+        ]
+      },
+      {
+        "answer": "Olaf",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Olaf is the snowman, not the human ice professional.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/frozen-film/",
+            "locator": "Opening: Kristoff accompanies Anna to find Elsa; cast distinguishes Hans, Olaf and Duke of Weselton."
+          },
+          {
+            "url": "https://books.disney.com/book/lost-legends-the-fixer-upper-2/",
+            "locator": "Publisher description explicitly calls Kristoff the future Arendelle Ice Master and Deliverer and describes childhood ice-harvester competition. Corroborates trade, not used to invent film events."
+          }
+        ]
+      }
+    ]
+  }
+}

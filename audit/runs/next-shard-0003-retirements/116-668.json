@@ -1,0 +1,30 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "retired": {
+    "id": 116,
+    "question": "What was Walt Disney's full name?",
+    "answers": [
+      "Walter Elias Disney",
+      "Walter Edward Disney",
+      "William Elias Disney",
+      "Walter Eugene Disney"
+    ],
+    "difficulty": "easy",
+    "category": "walt"
+  },
+  "retained": {
+    "id": 668,
+    "question": "What was Walt Disney's middle name?",
+    "answers": [
+      "Elias",
+      "Edward",
+      "Eugene",
+      "Ernest"
+    ],
+    "difficulty": "medium",
+    "category": "walt"
+  },
+  "rationale": "The full-name question repeats the middle-name recall tested by 668 with three Walter alternatives; retain the focused Elias question rather than testing the same name component twice.",
+  "scope": "Only the planned question is retired; the replacement is context and is not newly approved."
+}

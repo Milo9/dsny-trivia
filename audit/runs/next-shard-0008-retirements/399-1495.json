@@ -1,0 +1,70 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "retired": {
+    "id": 399,
+    "question": "What innovative camera technique did Disney develop to create a sense of depth in 2D animation?",
+    "answers": [
+      "The multiplane camera",
+      "The zoom lens method",
+      "The parallax camera",
+      "The stereoscopic technique"
+    ],
+    "difficulty": "medium",
+    "category": "walt"
+  },
+  "retained": {
+    "id": 1495,
+    "question": "Walt Disney's multiplane camera, first used on The Old Mill in 1937, achieved what unique visual effect in animated films?",
+    "answers": [
+      "It created an illusion of depth by moving multiple layers of artwork at different speeds",
+      "It allowed full-color animation for the first time",
+      "It enabled realistic human characters to be animated",
+      "It recorded real actor movements to trace over"
+    ],
+    "difficulty": "hard",
+    "category": "walt"
+  },
+  "additionalComparisons": [],
+  "rationale": "1495 names the multiplane camera and asks the depth effect, the same fact in reverse. Retire 399 also because parallax can describe the effect, making that alternative weakly distinguished.",
+  "sources": [
+    {
+      "sourceNoteId": "multiplane",
+      "url": "https://www.waltdisney.org/multiplane-classroom-kit",
+      "locator": "Opening technology description",
+      "evidence": "The multiplane camera photographs layers of artwork to give depth to two-dimensional animation.",
+      "checkedBy": "Codex",
+      "checkedAt": "2026-11-07",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "limitations": "Primary institutional text inspected; no film or video viewing claimed.",
+      "topics": [
+        "walt"
+      ]
+    }
+  ],
+  "originalOptionAssessments": [
+    {
+      "answer": "The multiplane camera",
+      "assessment": "Multiplane camera is the documented layered-artwork apparatus."
+    },
+    {
+      "answer": "The zoom lens method",
+      "assessment": "A zoom changes scale but does not identify the documented apparatus."
+    },
+    {
+      "answer": "The parallax camera",
+      "assessment": "Parallax describes the depth phenomenon and is not safely excluded by this broad original wording; no single-answer approval is claimed."
+    },
+    {
+      "answer": "The stereoscopic technique",
+      "assessment": "Stereoscopy is distinct from layered photography, but the broad depth wording is less precise than 1495."
+    }
+  ],
+  "finalChallenge": {
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "notes": "1495 names the multiplane camera and asks the depth effect, the same fact in reverse. Retire 399 also because parallax can describe the effect, making that alternative weakly distinguished. All four original options inspected. Retirement avoids asserting approval of a flawed premise or an insufficiently excluded alternative."
+  },
+  "scope": "Only the planned ID is retired. Counterpart comparison is not approval of its other claims."
+}

@@ -1,0 +1,141 @@
+{
+  "schema": 2,
+  "questionId": 136,
+  "hash": "b03cc8e27eb88e4d91759ac4266f06c1bbe60de25a59d3708b659aab5f1ec121",
+  "questionSnapshot": {
+    "id": 136,
+    "question": "What is the name of Disney Cruise Line's first ship?",
+    "answers": [
+      "Disney Magic",
+      "Disney Wonder",
+      "Disney Dream",
+      "Disney Fantasy"
+    ],
+    "difficulty": "easy",
+    "category": "cruise"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Final challenge checks the exact named entity/event against each listed alternative, not merely a matching answer keyword.",
+  "verification": {
+    "context": "What is the name of Disney Cruise Line's first ship?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Magic was the first; fleet chronology starts with it in 1998.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/disney-cruise-line/",
+          "locator": "Opening paragraph: first Disney Magic voyage July 30, 1998, Port Canaveral; Wonder 1999. Final paragraph: Dream 2011 and Fantasy March 31, 2012."
+        },
+        {
+          "url": "https://d23.com/a-to-z/disney-magic/",
+          "locator": "Opening paragraph: first fleet ship; maiden voyage July 30, 1998 from Port Canaveral."
+        },
+        {
+          "url": "https://disneyexperiences.com/app/uploads/2025/02/Final-DCL-Disney-Connect-Fact-SheetQ2.pdf",
+          "locator": "PDF page 1: launch in 1998 and fleet debut years Magic 1998, Wonder 1999, Dream 2011, Fantasy 2012; page 2 Lookout Cay opening month."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tried each alternative against the literal final scope: Disney Wonder: Wonder followed in 1999. Disney Dream: Dream followed in 2011. Disney Fantasy: Fantasy followed in 2012."
+    },
+    "options": [
+      {
+        "answer": "Disney Magic",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Magic was the first; fleet chronology starts with it in 1998.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/disney-cruise-line/",
+            "locator": "Opening paragraph: first Disney Magic voyage July 30, 1998, Port Canaveral; Wonder 1999. Final paragraph: Dream 2011 and Fantasy March 31, 2012."
+          },
+          {
+            "url": "https://d23.com/a-to-z/disney-magic/",
+            "locator": "Opening paragraph: first fleet ship; maiden voyage July 30, 1998 from Port Canaveral."
+          },
+          {
+            "url": "https://disneyexperiences.com/app/uploads/2025/02/Final-DCL-Disney-Connect-Fact-SheetQ2.pdf",
+            "locator": "PDF page 1: launch in 1998 and fleet debut years Magic 1998, Wonder 1999, Dream 2011, Fantasy 2012; page 2 Lookout Cay opening month."
+          }
+        ]
+      },
+      {
+        "answer": "Disney Wonder",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Wonder followed in 1999.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/disney-cruise-line/",
+            "locator": "Opening paragraph: first Disney Magic voyage July 30, 1998, Port Canaveral; Wonder 1999. Final paragraph: Dream 2011 and Fantasy March 31, 2012."
+          },
+          {
+            "url": "https://d23.com/a-to-z/disney-magic/",
+            "locator": "Opening paragraph: first fleet ship; maiden voyage July 30, 1998 from Port Canaveral."
+          },
+          {
+            "url": "https://disneyexperiences.com/app/uploads/2025/02/Final-DCL-Disney-Connect-Fact-SheetQ2.pdf",
+            "locator": "PDF page 1: launch in 1998 and fleet debut years Magic 1998, Wonder 1999, Dream 2011, Fantasy 2012; page 2 Lookout Cay opening month."
+          }
+        ]
+      },
+      {
+        "answer": "Disney Dream",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Dream followed in 2011.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/disney-cruise-line/",
+            "locator": "Opening paragraph: first Disney Magic voyage July 30, 1998, Port Canaveral; Wonder 1999. Final paragraph: Dream 2011 and Fantasy March 31, 2012."
+          },
+          {
+            "url": "https://d23.com/a-to-z/disney-magic/",
+            "locator": "Opening paragraph: first fleet ship; maiden voyage July 30, 1998 from Port Canaveral."
+          },
+          {
+            "url": "https://disneyexperiences.com/app/uploads/2025/02/Final-DCL-Disney-Connect-Fact-SheetQ2.pdf",
+            "locator": "PDF page 1: launch in 1998 and fleet debut years Magic 1998, Wonder 1999, Dream 2011, Fantasy 2012; page 2 Lookout Cay opening month."
+          }
+        ]
+      },
+      {
+        "answer": "Disney Fantasy",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Fantasy followed in 2012.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/disney-cruise-line/",
+            "locator": "Opening paragraph: first Disney Magic voyage July 30, 1998, Port Canaveral; Wonder 1999. Final paragraph: Dream 2011 and Fantasy March 31, 2012."
+          },
+          {
+            "url": "https://d23.com/a-to-z/disney-magic/",
+            "locator": "Opening paragraph: first fleet ship; maiden voyage July 30, 1998 from Port Canaveral."
+          },
+          {
+            "url": "https://disneyexperiences.com/app/uploads/2025/02/Final-DCL-Disney-Connect-Fact-SheetQ2.pdf",
+            "locator": "PDF page 1: launch in 1998 and fleet debut years Magic 1998, Wonder 1999, Dream 2011, Fantasy 2012; page 2 Lookout Cay opening month."
+          }
+        ]
+      }
+    ]
+  }
+}

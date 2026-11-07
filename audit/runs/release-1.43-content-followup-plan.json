@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "workflow": "release-followup",
+  "createdAt": "2026-11-07",
+  "questionIds": [
+    1374,
+    1492
+  ],
+  "startingHashes": {
+    "1374": "60c1f15d5ecb68360409283d6452e7fed7cd939ed4377d11859a142e0f85f867",
+    "1492": "b5e92970ffa9f777c25d915cc4795bc2d4b8bf9ee583941325665c79d8a52dff"
+  },
+  "reason": "Owner requests deployment after completed audit; resolve two existing release blockers without expanding sequential batch 13."
+}

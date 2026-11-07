@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 71,
+  "hash": "929da5d0489478c6bea869dc498c9e03590b552023daed08f9a96f0b52536162",
+  "questionSnapshot": {
+    "id": 71,
+    "question": "In The Incredibles, what is the real name of the villain Syndrome?",
+    "answers": [
+      "Buddy Pine",
+      "Oliver Sansweet",
+      "Gazerbeam",
+      "Chad Brentley"
+    ],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Character category is permitted for Pixar characters. Distinct from the island lair and other superheroes’ real names. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "English-language Disney character naming; original theatrical feature where a film is named. In The Incredibles, what is the real name of the villain Syndrome?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Disney’s Syndrome character profile explicitly gives Buddy Pine as his other name.",
+      "sources": [
+        {
+          "url": "https://movies.disney.com/the-incredibles",
+          "locator": "The Characters / Syndrome profile explicitly gives Buddy Pine as his other name."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Distinguished personal identity from superhero aliases and other named people. The explicit Syndrome/Buddy Pine identification excludes the three different proposed identities, without assuming that a short plot synopsis establishes every detail."
+    },
+    "options": [
+      {
+        "answer": "Buddy Pine",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Buddy Pine is explicitly given in the Syndrome profile.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-incredibles",
+            "locator": "The Characters / Syndrome profile explicitly gives Buddy Pine as his other name."
+          }
+        ]
+      },
+      {
+        "answer": "Oliver Sansweet",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Oliver Sansweet is not the personal name given for Syndrome.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-incredibles",
+            "locator": "The Characters / Syndrome profile explicitly gives Buddy Pine as his other name."
+          }
+        ]
+      },
+      {
+        "answer": "Gazerbeam",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Gazerbeam is not Buddy Pine’s personal name.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-incredibles",
+            "locator": "The Characters / Syndrome profile explicitly gives Buddy Pine as his other name."
+          }
+        ]
+      },
+      {
+        "answer": "Chad Brentley",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Chad Brentley is not the name given for Syndrome.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-incredibles",
+            "locator": "The Characters / Syndrome profile explicitly gives Buddy Pine as his other name."
+          }
+        ]
+      }
+    ]
+  }
+}

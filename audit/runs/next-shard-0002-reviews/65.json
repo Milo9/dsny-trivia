@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 65,
+  "hash": "13de105bda4aeb21cbec56c430968184c2e6f8040cd4ed1511ffc0f938d8fdef",
+  "questionSnapshot": {
+    "id": 65,
+    "question": "What is the name of the prince in Sleeping Beauty?",
+    "answers": [
+      "Prince Phillip",
+      "Prince Charming",
+      "Prince Eric",
+      "Prince Adam"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Distinct from Aurora, the fairies, the villain’s raven and the curse mechanics. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "English-language Disney character naming; original theatrical feature where a film is named. What is the name of the prince in Sleeping Beauty?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Sleeping Beauty identifies its prince by the proper name Phillip.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/prince-phillip/",
+          "locator": "Single character entry gives Prince Phillip’s proper name and film."
+        },
+        {
+          "url": "https://d23.com/a-to-z/sleeping-beauty-film/",
+          "locator": "Opening synopsis and cast: evil fairy Maleficent, Prince Phillip, Aurora; release January 29, 1959."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Read name as the character’s proper identity, not a generic compliment such as charming. The character entry and film cast independently identify Phillip; the other three proposed proper names are different identities."
+    },
+    "options": [
+      {
+        "answer": "Prince Phillip",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Prince Phillip is the explicitly named prince.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/prince-phillip/",
+            "locator": "Single character entry gives Prince Phillip’s proper name and film."
+          },
+          {
+            "url": "https://d23.com/a-to-z/sleeping-beauty-film/",
+            "locator": "Opening synopsis and cast: evil fairy Maleficent, Prince Phillip, Aurora; release January 29, 1959."
+          }
+        ]
+      },
+      {
+        "answer": "Prince Charming",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Prince Charming is not the proper name supplied for this prince.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/prince-phillip/",
+            "locator": "Single character entry gives Prince Phillip’s proper name and film."
+          },
+          {
+            "url": "https://d23.com/a-to-z/sleeping-beauty-film/",
+            "locator": "Opening synopsis and cast: evil fairy Maleficent, Prince Phillip, Aurora; release January 29, 1959."
+          }
+        ]
+      },
+      {
+        "answer": "Prince Eric",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Prince Eric is not the prince named by the Sleeping Beauty reference.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/prince-phillip/",
+            "locator": "Single character entry gives Prince Phillip’s proper name and film."
+          },
+          {
+            "url": "https://d23.com/a-to-z/sleeping-beauty-film/",
+            "locator": "Opening synopsis and cast: evil fairy Maleficent, Prince Phillip, Aurora; release January 29, 1959."
+          }
+        ]
+      },
+      {
+        "answer": "Prince Adam",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Prince Adam is not the prince named by the Sleeping Beauty reference.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/prince-phillip/",
+            "locator": "Single character entry gives Prince Phillip’s proper name and film."
+          },
+          {
+            "url": "https://d23.com/a-to-z/sleeping-beauty-film/",
+            "locator": "Opening synopsis and cast: evil fairy Maleficent, Prince Phillip, Aurora; release January 29, 1959."
+          }
+        ]
+      }
+    ]
+  }
+}

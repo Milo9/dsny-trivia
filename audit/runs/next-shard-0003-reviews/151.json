@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 151,
+  "hash": "fa38ff035a8ccaca23f6d7be1b6fb9407242ab627a6e4cf91a8f9ebb228efb8e",
+  "questionSnapshot": {
+    "id": 151,
+    "question": "Which Disney animated film introduced the song 'A Whole New World' in 1992?",
+    "answers": [
+      "Aladdin",
+      "Beauty and the Beast",
+      "The Little Mermaid",
+      "Pocahontas"
+    ],
+    "difficulty": "easy",
+    "category": "music"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Final challenge checks the exact named entity/event against each listed alternative, not merely a matching answer keyword.",
+  "verification": {
+    "context": "Which Disney animated film introduced the song 'A Whole New World' in 1992?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Aladdin introduced the song in its 1992 production.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/aladdin-film/",
+          "locator": "1992 release paragraph; songwriting paragraph states Tim Rice wrote A Whole New World for the production."
+        },
+        {
+          "url": "https://www.disneyanimation.com/films/",
+          "locator": "Intro identifies first fully animated feature in 1937; filmography lists Snow White 1937, Pinocchio/Fantasia 1940, Bambi 1942; Aladdin 1992 and other film release years."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tried each alternative against the literal final scope: Beauty and the Beast: 1991 film; not the production that introduced the 1992 song. The Little Mermaid: 1989 film; not the production that introduced the 1992 song. Pocahontas: 1995 film; not the production that introduced the 1992 song."
+    },
+    "options": [
+      {
+        "answer": "Aladdin",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Aladdin introduced the song in its 1992 production.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/aladdin-film/",
+            "locator": "1992 release paragraph; songwriting paragraph states Tim Rice wrote A Whole New World for the production."
+          },
+          {
+            "url": "https://www.disneyanimation.com/films/",
+            "locator": "Intro identifies first fully animated feature in 1937; filmography lists Snow White 1937, Pinocchio/Fantasia 1940, Bambi 1942; Aladdin 1992 and other film release years."
+          }
+        ]
+      },
+      {
+        "answer": "Beauty and the Beast",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "1991 film; not the production that introduced the 1992 song.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/aladdin-film/",
+            "locator": "1992 release paragraph; songwriting paragraph states Tim Rice wrote A Whole New World for the production."
+          },
+          {
+            "url": "https://www.disneyanimation.com/films/",
+            "locator": "Intro identifies first fully animated feature in 1937; filmography lists Snow White 1937, Pinocchio/Fantasia 1940, Bambi 1942; Aladdin 1992 and other film release years."
+          }
+        ]
+      },
+      {
+        "answer": "The Little Mermaid",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "1989 film; not the production that introduced the 1992 song.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/aladdin-film/",
+            "locator": "1992 release paragraph; songwriting paragraph states Tim Rice wrote A Whole New World for the production."
+          },
+          {
+            "url": "https://www.disneyanimation.com/films/",
+            "locator": "Intro identifies first fully animated feature in 1937; filmography lists Snow White 1937, Pinocchio/Fantasia 1940, Bambi 1942; Aladdin 1992 and other film release years."
+          }
+        ]
+      },
+      {
+        "answer": "Pocahontas",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "1995 film; not the production that introduced the 1992 song.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/aladdin-film/",
+            "locator": "1992 release paragraph; songwriting paragraph states Tim Rice wrote A Whole New World for the production."
+          },
+          {
+            "url": "https://www.disneyanimation.com/films/",
+            "locator": "Intro identifies first fully animated feature in 1937; filmography lists Snow White 1937, Pinocchio/Fantasia 1940, Bambi 1942; Aladdin 1992 and other film release years."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "schema": 2,
+  "questionId": 148,
+  "hash": "4ed2dcba696c8e9b9a10984ff41239f0e46ad66e62c329a4ef3e6fef0e06e9a7",
+  "questionSnapshot": {
+    "id": 148,
+    "question": "What is the name of the adults-only French specialty restaurant aboard the Disney Dream and Disney Fantasy?",
+    "answers": [
+      "Remy",
+      "Palo",
+      "Lumiere's",
+      "Triton's"
+    ],
+    "difficulty": "hard",
+    "category": "cruise"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Challenged Lumiere's and Triton's because both serve French-influenced meals. Their ship locations and main-dining status fail the full premise; Palo is Italian.",
+  "verification": {
+    "context": "What is the name of the adults-only French specialty restaurant aboard the Disney Dream and Disney Fantasy?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Remy is adult-exclusive French dining on both named ships.",
+      "sources": [
+        {
+          "url": "https://disneycruise.disney.go.com/en-as/onboard-activities/remy-restaurant/",
+          "locator": "Ship Locations lists Fantasy and Dream; opening and Bon Appetit sections identify adult-exclusive French cuisine."
+        },
+        {
+          "url": "https://disneycruise.disney.go.com/en-as/onboard-activities/palo-restaurant/",
+          "locator": "Opening and Exquisite Italian Cuisine sections: adult-exclusive Northern Italian dining."
+        },
+        {
+          "url": "https://disneycruise.disney.go.com/en-as/onboard-activities/lumieres-restaurant/",
+          "locator": "Ship Locations: Magic; Rotational Dining identifies main dining room rather than adult-exclusive Remy specialty venue."
+        },
+        {
+          "url": "https://disneycruise.disney.go.com/en-as/onboard-activities/tritons-restaurant/",
+          "locator": "Ship Locations: Wonder; Rotational Dining identifies main dining room rather than adult-exclusive Remy specialty venue."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged Lumiere's and Triton's because both serve French-influenced meals. Their ship locations and main-dining status fail the full premise; Palo is Italian."
+    },
+    "options": [
+      {
+        "answer": "Remy",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Remy is adult-exclusive French dining on both named ships.",
+        "sources": [
+          {
+            "url": "https://disneycruise.disney.go.com/en-as/onboard-activities/remy-restaurant/",
+            "locator": "Ship Locations lists Fantasy and Dream; opening and Bon Appetit sections identify adult-exclusive French cuisine."
+          },
+          {
+            "url": "https://disneycruise.disney.go.com/en-as/onboard-activities/palo-restaurant/",
+            "locator": "Opening and Exquisite Italian Cuisine sections: adult-exclusive Northern Italian dining."
+          },
+          {
+            "url": "https://disneycruise.disney.go.com/en-as/onboard-activities/lumieres-restaurant/",
+            "locator": "Ship Locations: Magic; Rotational Dining identifies main dining room rather than adult-exclusive Remy specialty venue."
+          },
+          {
+            "url": "https://disneycruise.disney.go.com/en-as/onboard-activities/tritons-restaurant/",
+            "locator": "Ship Locations: Wonder; Rotational Dining identifies main dining room rather than adult-exclusive Remy specialty venue."
+          }
+        ]
+      },
+      {
+        "answer": "Palo",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Palo is Italian, so fails the French qualifier.",
+        "sources": [
+          {
+            "url": "https://disneycruise.disney.go.com/en-as/onboard-activities/remy-restaurant/",
+            "locator": "Ship Locations lists Fantasy and Dream; opening and Bon Appetit sections identify adult-exclusive French cuisine."
+          },
+          {
+            "url": "https://disneycruise.disney.go.com/en-as/onboard-activities/palo-restaurant/",
+            "locator": "Opening and Exquisite Italian Cuisine sections: adult-exclusive Northern Italian dining."
+          },
+          {
+            "url": "https://disneycruise.disney.go.com/en-as/onboard-activities/lumieres-restaurant/",
+            "locator": "Ship Locations: Magic; Rotational Dining identifies main dining room rather than adult-exclusive Remy specialty venue."
+          },
+          {
+            "url": "https://disneycruise.disney.go.com/en-as/onboard-activities/tritons-restaurant/",
+            "locator": "Ship Locations: Wonder; Rotational Dining identifies main dining room rather than adult-exclusive Remy specialty venue."
+          }
+        ]
+      },
+      {
+        "answer": "Lumiere's",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Lumiere's is a Magic main dining venue, not the adult-exclusive restaurant on these two ships.",
+        "sources": [
+          {
+            "url": "https://disneycruise.disney.go.com/en-as/onboard-activities/remy-restaurant/",
+            "locator": "Ship Locations lists Fantasy and Dream; opening and Bon Appetit sections identify adult-exclusive French cuisine."
+          },
+          {
+            "url": "https://disneycruise.disney.go.com/en-as/onboard-activities/palo-restaurant/",
+            "locator": "Opening and Exquisite Italian Cuisine sections: adult-exclusive Northern Italian dining."
+          },
+          {
+            "url": "https://disneycruise.disney.go.com/en-as/onboard-activities/lumieres-restaurant/",
+            "locator": "Ship Locations: Magic; Rotational Dining identifies main dining room rather than adult-exclusive Remy specialty venue."
+          },
+          {
+            "url": "https://disneycruise.disney.go.com/en-as/onboard-activities/tritons-restaurant/",
+            "locator": "Ship Locations: Wonder; Rotational Dining identifies main dining room rather than adult-exclusive Remy specialty venue."
+          }
+        ]
+      },
+      {
+        "answer": "Triton's",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Triton's is a Wonder main dining venue, not the adult-exclusive restaurant on these two ships.",
+        "sources": [
+          {
+            "url": "https://disneycruise.disney.go.com/en-as/onboard-activities/remy-restaurant/",
+            "locator": "Ship Locations lists Fantasy and Dream; opening and Bon Appetit sections identify adult-exclusive French cuisine."
+          },
+          {
+            "url": "https://disneycruise.disney.go.com/en-as/onboard-activities/palo-restaurant/",
+            "locator": "Opening and Exquisite Italian Cuisine sections: adult-exclusive Northern Italian dining."
+          },
+          {
+            "url": "https://disneycruise.disney.go.com/en-as/onboard-activities/lumieres-restaurant/",
+            "locator": "Ship Locations: Magic; Rotational Dining identifies main dining room rather than adult-exclusive Remy specialty venue."
+          },
+          {
+            "url": "https://disneycruise.disney.go.com/en-as/onboard-activities/tritons-restaurant/",
+            "locator": "Ship Locations: Wonder; Rotational Dining identifies main dining room rather than adult-exclusive Remy specialty venue."
+          }
+        ]
+      }
+    ]
+  }
+}

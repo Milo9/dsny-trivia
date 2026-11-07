@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 193,
+  "hash": "0584f01926f56e52b8afd9414911e7053a97080b5ed3076361ef97c947f0f8e4",
+  "questionSnapshot": {
+    "id": 193,
+    "question": "In Finding Nemo, what is the name of the pelican who helps Marlin find Nemo?",
+    "answers": [
+      "Nigel",
+      "Gerald",
+      "Gill",
+      "Bloat"
+    ],
+    "difficulty": "medium",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged Gerald as a possible different pelican rather than asserting every Gerald in the franchise is a sea lion. The helper/dentist-window bird is uniquely named Nigel by Pixar. Gill and Bloat are explicitly tank fish.",
+  "verification": {
+    "context": "In Finding Nemo, what is the name of the pelican who helps Marlin find Nemo?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Pixar identifies Nigel as the dentist-window pelican; D23 confirms his name.",
+      "sources": [
+        {
+          "url": "https://www.pixar.com/finding-nemo",
+          "locator": "Synopsis and The Tank describe dentist aquarium; Nigel profile identifies friendly pelican; Gill and Tank Gang profiles distinguish fish."
+        },
+        {
+          "url": "https://d23.com/a-to-z/finding-nemo-film/",
+          "locator": "Opening explicitly identifies Sydney harbor dentist tank and Dory as a Regal Blue Tang; cast list separates Nigel/Gill/Bloat."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged Gerald as a possible different pelican rather than asserting every Gerald in the franchise is a sea lion. The helper/dentist-window bird is uniquely named Nigel by Pixar. Gill and Bloat are explicitly tank fish."
+    },
+    "options": [
+      {
+        "answer": "Nigel",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Pixar identifies Nigel as the dentist-window pelican; D23 confirms his name.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/finding-nemo",
+            "locator": "Synopsis and The Tank describe dentist aquarium; Nigel profile identifies friendly pelican; Gill and Tank Gang profiles distinguish fish."
+          },
+          {
+            "url": "https://d23.com/a-to-z/finding-nemo-film/",
+            "locator": "Opening explicitly identifies Sydney harbor dentist tank and Dory as a Regal Blue Tang; cast list separates Nigel/Gill/Bloat."
+          }
+        ]
+      },
+      {
+        "answer": "Gerald",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Not the named helper pelican in Pixar’s profile.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/finding-nemo",
+            "locator": "Synopsis and The Tank describe dentist aquarium; Nigel profile identifies friendly pelican; Gill and Tank Gang profiles distinguish fish."
+          },
+          {
+            "url": "https://d23.com/a-to-z/finding-nemo-film/",
+            "locator": "Opening explicitly identifies Sydney harbor dentist tank and Dory as a Regal Blue Tang; cast list separates Nigel/Gill/Bloat."
+          }
+        ]
+      },
+      {
+        "answer": "Gill",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "A tank fish and its leader, not the pelican.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/finding-nemo",
+            "locator": "Synopsis and The Tank describe dentist aquarium; Nigel profile identifies friendly pelican; Gill and Tank Gang profiles distinguish fish."
+          },
+          {
+            "url": "https://d23.com/a-to-z/finding-nemo-film/",
+            "locator": "Opening explicitly identifies Sydney harbor dentist tank and Dory as a Regal Blue Tang; cast list separates Nigel/Gill/Bloat."
+          }
+        ]
+      },
+      {
+        "answer": "Bloat",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "A Tank Gang fish, not the pelican.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/finding-nemo",
+            "locator": "Synopsis and The Tank describe dentist aquarium; Nigel profile identifies friendly pelican; Gill and Tank Gang profiles distinguish fish."
+          },
+          {
+            "url": "https://d23.com/a-to-z/finding-nemo-film/",
+            "locator": "Opening explicitly identifies Sydney harbor dentist tank and Dory as a Regal Blue Tang; cast list separates Nigel/Gill/Bloat."
+          }
+        ]
+      }
+    ]
+  }
+}

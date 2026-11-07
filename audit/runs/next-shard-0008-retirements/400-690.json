@@ -1,0 +1,83 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "retired": {
+    "id": 400,
+    "question": "In what year did the Walt Disney Studios move from Hollywood to their current Burbank, California location?",
+    "answers": [
+      "1940",
+      "1935",
+      "1945",
+      "1950"
+    ],
+    "difficulty": "medium",
+    "category": "walt"
+  },
+  "retained": {
+    "id": 690,
+    "question": "What was the name of the Disney Studio's location where it has operated since 1940?",
+    "answers": [
+      "Burbank, California",
+      "Hollywood, California",
+      "Anaheim, California",
+      "Glendale, California"
+    ],
+    "difficulty": "medium",
+    "category": "walt"
+  },
+  "additionalComparisons": [
+    {
+      "id": 959,
+      "question": "Which Disney studio facility opened in Burbank in 1940?",
+      "answers": [
+        "Walt Disney Studios",
+        "Hyperion Studio",
+        "Laugh-O-Gram Studio",
+        "Disneyland Studio"
+      ],
+      "difficulty": "medium",
+      "category": "walt"
+    }
+  ],
+  "rationale": "Inverse of 690's Burbank/since-1940 association; 959 also explicitly supplies Burbank and 1940. Retain those counterparts without adding a third question on the same move.",
+  "sources": [
+    {
+      "sourceNoteId": "disney-family",
+      "url": "https://d23.com/about-walt-disney/",
+      "locator": "1923 Hollywood move; 1925 marriage and daughters; 1940 Burbank paragraphs",
+      "evidence": "Walt moved to Hollywood, California, partnered with Roy O., married Lillian Bounds, and had daughters Diane and Sharon. The Burbank studio was completed in 1940.",
+      "checkedBy": "Codex",
+      "checkedAt": "2026-11-07",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "limitations": "Primary institutional text inspected; no film or video viewing claimed.",
+      "topics": [
+        "walt"
+      ]
+    }
+  ],
+  "originalOptionAssessments": [
+    {
+      "answer": "1940",
+      "assessment": "1940 is the documented completed Burbank studio year."
+    },
+    {
+      "answer": "1935",
+      "assessment": "1935 is not that documented completion year."
+    },
+    {
+      "answer": "1945",
+      "assessment": "1945 is not that documented completion year."
+    },
+    {
+      "answer": "1950",
+      "assessment": "1950 is not that documented completion year."
+    }
+  ],
+  "finalChallenge": {
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "notes": "Inverse of 690's Burbank/since-1940 association; 959 also explicitly supplies Burbank and 1940. Retain those counterparts without adding a third question on the same move. All four original options inspected. Retirement avoids asserting approval of a flawed premise or an insufficiently excluded alternative."
+  },
+  "scope": "Only the planned ID is retired. Counterpart comparison is not approval of its other claims."
+}

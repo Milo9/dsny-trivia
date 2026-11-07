@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 366,
+  "hash": "dac38412008d9e1a5350420907c0e6882fd02c0d54e2139d6615c4fd8729e083",
+  "questionSnapshot": {
+    "id": 366,
+    "question": "What Star Wars land opened at Disney's Hollywood Studios in 2019?",
+    "answers": [
+      "Star Wars: Galaxy's Edge",
+      "Star Wars Zone",
+      "The Outer Rim",
+      "Force Land"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Fixed the historical opening context and distinguished the Disneyland May opening from Hollywood Studios August opening. The proper-name land is Galaxy's Edge, while Outer Rim is a broader in-universe region, not an alternative official title here. 1467 and 778 ask particular rides within the land, not this opening/name event. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+  "verification": {
+    "context": "What Star Wars land opened at Disney's Hollywood Studios in 2019? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Galaxy's Edge opened at Hollywood Studios on August 29, 2019. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/star-wars-galaxys-edge/",
+          "locator": "Opening-date paragraph: Disneyland May 31, 2019; Disney Hollywood Studios August 29, 2019; land named in title"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Star_Wars:_Galaxy%27s_Edge",
+          "locator": "Development and History: Hollywood Studios land opened August 29, 2019, separate from May Disneyland opening"
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Fixed the historical opening context and distinguished the Disneyland May opening from Hollywood Studios August opening. The proper-name land is Galaxy's Edge, while Outer Rim is a broader in-universe region, not an alternative official title here. 1467 and 778 ask particular rides within the land, not this opening/name event."
+    },
+    "options": [
+      {
+        "answer": "Star Wars: Galaxy's Edge",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Galaxy's Edge opened at Hollywood Studios on August 29, 2019.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/star-wars-galaxys-edge/",
+            "locator": "Opening-date paragraph: Disneyland May 31, 2019; Disney Hollywood Studios August 29, 2019; land named in title"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Star_Wars:_Galaxy%27s_Edge",
+            "locator": "Development and History: Hollywood Studios land opened August 29, 2019, separate from May Disneyland opening"
+          }
+        ]
+      },
+      {
+        "answer": "Star Wars Zone",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Star Wars Zone is not the documented land name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/star-wars-galaxys-edge/",
+            "locator": "Opening-date paragraph: Disneyland May 31, 2019; Disney Hollywood Studios August 29, 2019; land named in title"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Star_Wars:_Galaxy%27s_Edge",
+            "locator": "Development and History: Hollywood Studios land opened August 29, 2019, separate from May Disneyland opening"
+          }
+        ]
+      },
+      {
+        "answer": "The Outer Rim",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "The Outer Rim is not the documented name of this 2019 land opening.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/star-wars-galaxys-edge/",
+            "locator": "Opening-date paragraph: Disneyland May 31, 2019; Disney Hollywood Studios August 29, 2019; land named in title"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Star_Wars:_Galaxy%27s_Edge",
+            "locator": "Development and History: Hollywood Studios land opened August 29, 2019, separate from May Disneyland opening"
+          }
+        ]
+      },
+      {
+        "answer": "Force Land",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Force Land is not the documented land name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/star-wars-galaxys-edge/",
+            "locator": "Opening-date paragraph: Disneyland May 31, 2019; Disney Hollywood Studios August 29, 2019; land named in title"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Star_Wars:_Galaxy%27s_Edge",
+            "locator": "Development and History: Hollywood Studios land opened August 29, 2019, separate from May Disneyland opening"
+          }
+        ]
+      }
+    ]
+  }
+}

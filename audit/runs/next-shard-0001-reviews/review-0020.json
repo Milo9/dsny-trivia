@@ -1,0 +1,80 @@
+{
+  "questionId": 20,
+  "hash": "e4b2ac717c995eb754a7649c204c941105a31daa0d6698cab83b189c2d353b26",
+  "questionSnapshot": {
+    "id": 20,
+    "question": "In Snow White and the Seven Dwarfs (1937), which object tells the Queen who is fairest of all?",
+    "answers": [
+      "A magic mirror",
+      "A crystal ball",
+      "An enchanted book",
+      "A wishing well"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Replaced broad consult with the specific inquiry and removed magical/magic echo. Four parallel objects; easy. No other Snow White digest question asks the answering mirror identity.",
+  "verification": {
+    "context": "Snow White and the Seven Dwarfs, Disney animated 1937 film, the Queen's fairest-of-all inquiry.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "A magic mirror",
+        "verdict": "correct",
+        "reason": "The Magic Mirror proclaims who is fairest.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/snow-white-and-the-seven-dwarfs",
+            "locator": "Synopsis: the Magic Mirror identifies Snow White as fairest; The Characters: the jealous Queen and Snow White."
+          }
+        ]
+      },
+      {
+        "answer": "A crystal ball",
+        "verdict": "incorrect",
+        "reason": "The responding object in this inquiry is a mirror, not a crystal ball.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/snow-white-and-the-seven-dwarfs",
+            "locator": "Synopsis: the Magic Mirror identifies Snow White as fairest; The Characters: the jealous Queen and Snow White."
+          }
+        ]
+      },
+      {
+        "answer": "An enchanted book",
+        "verdict": "incorrect",
+        "reason": "A book can supply spells, but it is the Mirror that names Snow White as fairest.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/snow-white-and-the-seven-dwarfs",
+            "locator": "Synopsis: the Magic Mirror identifies Snow White as fairest; The Characters: the jealous Queen and Snow White."
+          }
+        ]
+      },
+      {
+        "answer": "A wishing well",
+        "verdict": "incorrect",
+        "reason": "A wishing well is not the object that gives the Queen this answer.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/snow-white-and-the-seven-dwarfs",
+            "locator": "Synopsis: the Magic Mirror identifies Snow White as fairest; The Characters: the jealous Queen and Snow White."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 252,
+  "hash": "3dadf8732212321b434757b99a5c57f5f757ed1237921b9cd4c73acb66cf676d",
+  "questionSnapshot": {
+    "id": 252,
+    "question": "In The Princess and the Frog (2009), who is Charlotte La Bouff's wealthy father?",
+    "answers": [
+      "Big Daddy",
+      "Lawrence",
+      "James",
+      "Louis"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Original Eli option was the same person as Big Daddy, so it was defensible. Removed alias and shared-surname cue. Confirmed all final alternatives are distinct characters, including James as another girl father. Official indexed profiles are corroborated by the secondary cast account; live extraction omits some profile text.",
+  "verification": {
+    "context": "In The Princess and the Frog (2009), who is Charlotte La Bouff's wealthy father?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Big Daddy is Charlotte father.",
+      "sources": [
+        {
+          "url": "https://movies.disney.com/the-princess-and-the-frog",
+          "locator": "The Characters: Big Daddy and Charlotte relationship, James/Tiana relationship, Louis/alligator; official indexed character text is fuller than the live extracted page."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/The_Princess_and_the_Frog",
+          "locator": "Voice cast: John Goodman as Eli Big Daddy La Bouff, Charlotte father; Lawrence is Naveen valet; James is Tiana father; Louis alligator. Secondary corroboration, not an inspected studio screenplay."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Original Eli option was the same person as Big Daddy, so it was defensible. Removed alias and shared-surname cue. Confirmed all final alternatives are distinct characters, including James as another girl father. Official indexed profiles are corroborated by the secondary cast account; live extraction omits some profile text."
+    },
+    "options": [
+      {
+        "answer": "Big Daddy",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Big Daddy is Charlotte father.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-princess-and-the-frog",
+            "locator": "The Characters: Big Daddy and Charlotte relationship, James/Tiana relationship, Louis/alligator; official indexed character text is fuller than the live extracted page."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/The_Princess_and_the_Frog",
+            "locator": "Voice cast: John Goodman as Eli Big Daddy La Bouff, Charlotte father; Lawrence is Naveen valet; James is Tiana father; Louis alligator. Secondary corroboration, not an inspected studio screenplay."
+          }
+        ]
+      },
+      {
+        "answer": "Lawrence",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Lawrence is the prince valet, not Charlotte father.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-princess-and-the-frog",
+            "locator": "The Characters: Big Daddy and Charlotte relationship, James/Tiana relationship, Louis/alligator; official indexed character text is fuller than the live extracted page."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/The_Princess_and_the_Frog",
+            "locator": "Voice cast: John Goodman as Eli Big Daddy La Bouff, Charlotte father; Lawrence is Naveen valet; James is Tiana father; Louis alligator. Secondary corroboration, not an inspected studio screenplay."
+          }
+        ]
+      },
+      {
+        "answer": "James",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "James is Tiana father, not Charlotte father.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-princess-and-the-frog",
+            "locator": "The Characters: Big Daddy and Charlotte relationship, James/Tiana relationship, Louis/alligator; official indexed character text is fuller than the live extracted page."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/The_Princess_and_the_Frog",
+            "locator": "Voice cast: John Goodman as Eli Big Daddy La Bouff, Charlotte father; Lawrence is Naveen valet; James is Tiana father; Louis alligator. Secondary corroboration, not an inspected studio screenplay."
+          }
+        ]
+      },
+      {
+        "answer": "Louis",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Louis is the alligator, not Charlotte father.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-princess-and-the-frog",
+            "locator": "The Characters: Big Daddy and Charlotte relationship, James/Tiana relationship, Louis/alligator; official indexed character text is fuller than the live extracted page."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/The_Princess_and_the_Frog",
+            "locator": "Voice cast: John Goodman as Eli Big Daddy La Bouff, Charlotte father; Lawrence is Naveen valet; James is Tiana father; Louis alligator. Secondary corroboration, not an inspected studio screenplay."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "retired": {
+    "id": 382,
+    "question": "What state did Walt Disney move to from the Midwest in order to pursue his animation career?",
+    "answers": [
+      "California",
+      "New York",
+      "Florida",
+      "Texas"
+    ],
+    "difficulty": "easy",
+    "category": "walt"
+  },
+  "retained": {
+    "id": 131,
+    "question": "In what city did Walt Disney open his first studio in California?",
+    "answers": [
+      "Los Angeles (Hollywood)",
+      "Burbank",
+      "Anaheim",
+      "San Francisco"
+    ],
+    "difficulty": "hard",
+    "category": "walt"
+  },
+  "additionalComparisons": [],
+  "rationale": "131 gives the more precise Los Angeles/Hollywood location of Walt's first California studio. The same move supplies California; no separate state fact is gained.",
+  "sources": [
+    {
+      "sourceNoteId": "disney-family",
+      "url": "https://d23.com/about-walt-disney/",
+      "locator": "1923 Hollywood move; 1925 marriage and daughters; 1940 Burbank paragraphs",
+      "evidence": "Walt moved to Hollywood, California, partnered with Roy O., married Lillian Bounds, and had daughters Diane and Sharon. The Burbank studio was completed in 1940.",
+      "checkedBy": "Codex",
+      "checkedAt": "2026-11-07",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "limitations": "Primary institutional text inspected; no film or video viewing claimed.",
+      "topics": [
+        "walt"
+      ]
+    }
+  ],
+  "originalOptionAssessments": [
+    {
+      "answer": "California",
+      "assessment": "California is the destination of the Hollywood move."
+    },
+    {
+      "answer": "New York",
+      "assessment": "New York is not that destination state."
+    },
+    {
+      "answer": "Florida",
+      "assessment": "Florida is not that destination state."
+    },
+    {
+      "answer": "Texas",
+      "assessment": "Texas is not that destination state."
+    }
+  ],
+  "finalChallenge": {
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "notes": "131 gives the more precise Los Angeles/Hollywood location of Walt's first California studio. The same move supplies California; no separate state fact is gained. All four original options inspected. Retirement avoids asserting approval of a flawed premise or an insufficiently excluded alternative."
+  },
+  "scope": "Only the planned ID is retired. Counterpart comparison is not approval of its other claims."
+}

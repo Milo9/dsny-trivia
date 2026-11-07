@@ -1,0 +1,645 @@
+[
+  {
+    "finding": {
+      "id": "answer-style-a46e9b6347ae44bc0310",
+      "kind": "answer-style",
+      "questionIds": [
+        458
+      ],
+      "detail": "Correct answer is unusually verbose relative to distractors.",
+      "signature": "a46e9b6347ae44bc031074e289cb9e5a944b7f7237535ce625aef500fffc387a",
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 458,
+        "question": "Which song from The Lion King actually won the Academy Award for Best Original Song?",
+        "answers": [
+          "Can You Feel the Love Tonight",
+          "Hakuna Matata",
+          "Circle of Life",
+          "Be Prepared"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      }
+    ],
+    "reason": "All four answers are authentic Lion King song titles. Preserving the full winning title is necessary and does not supply a grammatical or semantic answer clue. The Academy separately establishes winner versus nominees."
+  },
+  {
+    "finding": {
+      "id": "duplicate-0a91d8acabb82a366728",
+      "kind": "duplicate",
+      "questionIds": [
+        468,
+        1392
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "0a91d8acabb82a366728ec9f0a3758cde4f57488904a0b6ae6d4967b24ba64db",
+      "priority": 1,
+      "signals": [
+        "inverse-answer-and-stem"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 468,
+        "question": "Which lyricist collaborated with Alan Menken on songs for both Beauty and the Beast (1991) and Aladdin (1992)?",
+        "answers": [
+          "Howard Ashman",
+          "Tim Rice",
+          "Stephen Sondheim",
+          "Marvin Hamlisch"
+        ],
+        "difficulty": "hard",
+        "category": "music"
+      },
+      {
+        "id": 1392,
+        "question": "Lyricist Howard Ashman died in March 1991 before seeing which Disney film completed and released — a film that included several songs he had written?",
+        "answers": [
+          "Aladdin",
+          "Beauty and the Beast",
+          "The Lion King",
+          "Pocahontas"
+        ],
+        "difficulty": "hard",
+        "category": "music"
+      }
+    ],
+    "reason": "Different facts after removing the death-date clue: q468 tests the lyricist partnership on both Beauty and the Beast and Aladdin; q1392 asks which film was completed/released after the named writer died. Film completion does not establish the two-film writing collaboration."
+  },
+  {
+    "finding": {
+      "id": "duplicate-15d8dd4f670d01cccaf5",
+      "kind": "duplicate",
+      "questionIds": [
+        441,
+        993
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "15d8dd4f670d01cccaf52fc687afa016f14a4283c04abae98a60cd4bffa31686",
+      "priority": 1,
+      "signals": [
+        "inverse-answer-and-stem"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 441,
+        "question": "Which character sings 'When You Wish Upon a Star' in Pinocchio?",
+        "answers": [
+          "Jiminy Cricket",
+          "Pinocchio",
+          "Geppetto",
+          "The Blue Fairy"
+        ],
+        "difficulty": "easy",
+        "category": "music"
+      },
+      {
+        "id": 993,
+        "question": "In which Disney film does Jiminy Cricket sing Give a Little Whistle?",
+        "answers": [
+          "Pinocchio",
+          "Dumbo",
+          "Bambi",
+          "Peter Pan"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      }
+    ],
+    "reason": "Different song-performance associations: When You Wish Upon a Star versus Give a Little Whistle. Knowing who performs one song does not establish who performs the other."
+  },
+  {
+    "finding": {
+      "id": "duplicate-1e6efdb57d7a86718cdd",
+      "kind": "duplicate",
+      "questionIds": [
+        462,
+        466
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "1e6efdb57d7a86718cdd9a78068ff5e89b16904a7e02349ad0178a7d30dcc668",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 462,
+        "question": "What Academy Award did Phil Collins' 'You'll Be in My Heart' from Tarzan win at the 2000 ceremony?",
+        "answers": [
+          "Best Original Song",
+          "Best Original Score",
+          "Best Sound",
+          "Best Animated Short Film"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      },
+      {
+        "id": 466,
+        "question": "What Academy Award category did 'Let It Go' from Frozen win at the 2014 ceremony?",
+        "answers": [
+          "Best Original Song",
+          "Best Original Score",
+          "Best Animated Feature",
+          "Best Original Screenplay"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      }
+    ],
+    "reason": "Separate Academy events: the 2000 Tarzan song win versus the 2014 Frozen song win. The same category label is not a duplicate fact."
+  },
+  {
+    "finding": {
+      "id": "duplicate-262ed637ecd31daaed55",
+      "kind": "duplicate",
+      "questionIds": [
+        17,
+        459
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "262ed637ecd31daaed55ed9b593a89bddcb54c24b20b661f174c665b5159cd0e",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 17,
+        "question": "In Beauty and the Beast, which character is a teapot?",
+        "answers": [
+          "Mrs. Potts",
+          "Lumiere",
+          "Cogsworth",
+          "Chip"
+        ],
+        "difficulty": "easy",
+        "category": "movies"
+      },
+      {
+        "id": 459,
+        "question": "Who sings 'Beauty and the Beast' during the ballroom scene in the original 1991 animated film?",
+        "answers": [
+          "Mrs. Potts",
+          "Belle",
+          "Lumiere",
+          "The Beast"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      }
+    ],
+    "reason": "Object transformation versus ballroom vocal performance. Mrs. Potts being a teapot does not establish that she sings the title song."
+  },
+  {
+    "finding": {
+      "id": "duplicate-26a1f1d7889c03201aa1",
+      "kind": "duplicate",
+      "questionIds": [
+        458,
+        718
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "26a1f1d7889c03201aa16f727338b9ef15515c9669483d4a826866a211e45415",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 458,
+        "question": "Which song from The Lion King actually won the Academy Award for Best Original Song?",
+        "answers": [
+          "Can You Feel the Love Tonight",
+          "Hakuna Matata",
+          "Circle of Life",
+          "Be Prepared"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      },
+      {
+        "id": 718,
+        "question": "What Disney song won the Academy Award for Best Original Song in 1993?",
+        "answers": [
+          "A Whole New World (Aladdin)",
+          "Beauty and the Beast",
+          "Circle of Life (The Lion King)",
+          "Colors of the Wind (Pocahontas)"
+        ],
+        "difficulty": "hard",
+        "category": "music"
+      }
+    ],
+    "reason": "Separate award winners and years: 1995 Lion King versus 1993 Aladdin. Similar award phrasing does not repeat an outcome."
+  },
+  {
+    "finding": {
+      "id": "duplicate-2f4e860677f3aaf1e667",
+      "kind": "duplicate",
+      "questionIds": [
+        481,
+        1036
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "2f4e860677f3aaf1e667d59dc31c94358be84a86b8583a2173b4f11269c46d7a",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 481,
+        "question": "In Finding Dory, what type of animal is Destiny?",
+        "answers": [
+          "A whale shark",
+          "A beluga whale",
+          "A blue whale",
+          "A hammerhead shark"
+        ],
+        "difficulty": "easy",
+        "category": "pixar"
+      },
+      {
+        "id": 1036,
+        "question": "In Finding Dory, what type of animal is Hank?",
+        "answers": [
+          "Octopus",
+          "Sea lion",
+          "Beluga whale",
+          "Whale shark"
+        ],
+        "difficulty": "easy",
+        "category": "pixar"
+      }
+    ],
+    "reason": "Different named characters and species: Destiny is a whale shark, Hank an octopus. One classification does not establish the other."
+  },
+  {
+    "finding": {
+      "id": "duplicate-44ad738f4eca32da979b",
+      "kind": "duplicate",
+      "questionIds": [
+        457,
+        1382
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "44ad738f4eca32da979ba997af53d22bc791a2baaddc4eb376f88c173b82a1a0",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 457,
+        "question": "In which Disney film does the song 'Savages' appear?",
+        "answers": [
+          "Pocahontas",
+          "Mulan",
+          "The Hunchback of Notre Dame",
+          "Tarzan"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      },
+      {
+        "id": 1382,
+        "question": "Which Disney film features the song 'Just Around the Riverbend,' in which the heroine debates choosing adventure over a comfortable future?",
+        "answers": [
+          "Pocahontas",
+          "Moana",
+          "Brave",
+          "Tangled"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      }
+    ],
+    "reason": "Different Pocahontas songs: Savages versus Just Around the Riverbend. Shared film answer does not establish the other song association."
+  },
+  {
+    "finding": {
+      "id": "duplicate-781e4ae0e94384df7a3f",
+      "kind": "duplicate",
+      "questionIds": [
+        438,
+        701
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "781e4ae0e94384df7a3f59b99bada8b7d4fc55d9178d2c7143cbf94cbba726ec",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 438,
+        "question": "Which character sings 'Let It Go' in Frozen?",
+        "answers": [
+          "Elsa",
+          "Anna",
+          "Kristoff",
+          "Olaf"
+        ],
+        "difficulty": "easy",
+        "category": "music"
+      },
+      {
+        "id": 701,
+        "question": "Who sang 'Let It Go' in the original Frozen film?",
+        "answers": [
+          "Idina Menzel",
+          "Demi Lovato",
+          "Kristen Bell",
+          "Celine Dion"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      }
+    ],
+    "reason": "Character identity Elsa versus the performer name Idina Menzel. An additional actor-to-character fact is required; retain both."
+  },
+  {
+    "finding": {
+      "id": "duplicate-8e568d1675149ac06aa9",
+      "kind": "duplicate",
+      "questionIds": [
+        450,
+        701
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "8e568d1675149ac06aa987167422618a3393ccd0eee90464387dd3ce92bc13bb",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 450,
+        "question": "Who sang 'Into the Unknown' as Elsa in Frozen 2?",
+        "answers": [
+          "Idina Menzel",
+          "Celine Dion",
+          "Demi Lovato",
+          "Adele"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      },
+      {
+        "id": 701,
+        "question": "Who sang 'Let It Go' in the original Frozen film?",
+        "answers": [
+          "Idina Menzel",
+          "Demi Lovato",
+          "Kristen Bell",
+          "Celine Dion"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      }
+    ],
+    "reason": "Different original-film song recordings: Into the Unknown in Frozen 2 versus Let It Go in Frozen. Sharing Menzel does not establish both performance credits."
+  },
+  {
+    "finding": {
+      "id": "duplicate-9777b2ae8ba1fa5e7f5d",
+      "kind": "duplicate",
+      "questionIds": [
+        468,
+        703
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "9777b2ae8ba1fa5e7f5d0427c252d75ca24ec6a4c22f8b4555fb51b6bd612289",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 468,
+        "question": "Which lyricist collaborated with Alan Menken on songs for both Beauty and the Beast (1991) and Aladdin (1992)?",
+        "answers": [
+          "Howard Ashman",
+          "Tim Rice",
+          "Stephen Sondheim",
+          "Marvin Hamlisch"
+        ],
+        "difficulty": "hard",
+        "category": "music"
+      },
+      {
+        "id": 703,
+        "question": "Who wrote the lyrics for the songs in The Little Mermaid alongside composer Alan Menken?",
+        "answers": [
+          "Howard Ashman",
+          "Tim Rice",
+          "Lin-Manuel Miranda",
+          "Stephen Schwartz"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      }
+    ],
+    "reason": "Different film credits: q703 tests Little Mermaid lyrics, while q468 requires the collaboration on both Beauty and the Beast and Aladdin. A lyricist can differ across films; the additional credits are new facts."
+  },
+  {
+    "finding": {
+      "id": "duplicate-b241aa6da12af12362cc",
+      "kind": "duplicate",
+      "questionIds": [
+        441,
+        1102
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "b241aa6da12af12362cce7b8df224f2d3a0d455ab4f0f7a4df360296702ecd5e",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 441,
+        "question": "Which character sings 'When You Wish Upon a Star' in Pinocchio?",
+        "answers": [
+          "Jiminy Cricket",
+          "Pinocchio",
+          "Geppetto",
+          "The Blue Fairy"
+        ],
+        "difficulty": "easy",
+        "category": "music"
+      },
+      {
+        "id": 1102,
+        "question": "In Pinocchio, who is appointed as Pinocchio's conscience?",
+        "answers": [
+          "Jiminy Cricket",
+          "The Blue Fairy",
+          "Geppetto",
+          "Figaro"
+        ],
+        "difficulty": "easy",
+        "category": "characters"
+      }
+    ],
+    "reason": "Jiminy’s song performance versus his appointment as conscience. Knowing the appointment does not establish that he sings this song."
+  },
+  {
+    "finding": {
+      "id": "duplicate-bec199f80fae9259d871",
+      "kind": "duplicate",
+      "questionIds": [
+        457,
+        1241
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "bec199f80fae9259d871e66d06047958d8067cc113b078205ce6b6abedbf57aa",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 457,
+        "question": "In which Disney film does the song 'Savages' appear?",
+        "answers": [
+          "Pocahontas",
+          "Mulan",
+          "The Hunchback of Notre Dame",
+          "Tarzan"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      },
+      {
+        "id": 1241,
+        "question": "In which Disney film does the song With a Smile and a Song appear?",
+        "answers": [
+          "Snow White and the Seven Dwarfs",
+          "Cinderella",
+          "Sleeping Beauty",
+          "Bambi"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      }
+    ],
+    "reason": "Different songs and films: Savages belongs to Pocahontas, With a Smile and a Song to Snow White. Generic song-to-film wording is not duplication."
+  },
+  {
+    "finding": {
+      "id": "duplicate-f37f005c23d5ff9701b0",
+      "kind": "duplicate",
+      "questionIds": [
+        433,
+        902
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "f37f005c23d5ff9701b0cc745186a590bd67d76677e4c9dfbd6b9d7e3bc293d4",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 433,
+        "question": "In what country were the original Disney Cruise Line ships (Disney Magic and Disney Wonder) built?",
+        "answers": [
+          "Italy",
+          "Germany",
+          "United States",
+          "Finland"
+        ],
+        "difficulty": "hard",
+        "category": "cruise"
+      },
+      {
+        "id": 902,
+        "question": "At EPCOT, which World Showcase pavilion includes a replica of St. Mark's Campanile?",
+        "answers": [
+          "Italy",
+          "France",
+          "Germany",
+          "Morocco"
+        ],
+        "difficulty": "hard",
+        "category": "parks"
+      }
+    ],
+    "reason": "Original ship construction country versus the location of a park replica. Shared Italy answer is incidental."
+  },
+  {
+    "finding": {
+      "id": "duplicate-ffa879389d18ecf97763",
+      "kind": "duplicate",
+      "questionIds": [
+        457,
+        2284
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "ffa879389d18ecf9776329df8cb6a5cf8f33a66cd0d12e8250fc8ddfd2bb9dec",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 457,
+        "question": "In which Disney film does the song 'Savages' appear?",
+        "answers": [
+          "Pocahontas",
+          "Mulan",
+          "The Hunchback of Notre Dame",
+          "Tarzan"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      },
+      {
+        "id": 2284,
+        "question": "Randy Newman's 'You've Got a Friend in Me' lost the Academy Award for Best Original Song in 1996 to a song from which Disney film?",
+        "answers": [
+          "Pocahontas",
+          "The Lion King",
+          "Beauty and the Beast",
+          "Aladdin"
+        ],
+        "difficulty": "hard",
+        "category": "music"
+      }
+    ],
+    "reason": "Savages song attribution versus Pocahontas winning the Oscar against Randy Newman’s Toy Story nomination. The Oscar outcome does not establish Savages’s film credit."
+  }
+]

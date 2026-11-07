@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 302,
+  "hash": "c4b80edd39a4109ae2809115ffcec686f1330f5bf21bfee1018d6933a62c363f",
+  "questionSnapshot": {
+    "id": 302,
+    "question": "In Big Hero 6 (2014), who is revealed to be the masked villain?",
+    "answers": [
+      "Robert Callaghan",
+      "Alistair Krei",
+      "Tadashi Hamada",
+      "Fred's father"
+    ],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Removed TV-only Granville and unnecessary Yokai label. Distinguish Krei red herring from final reveal and Fred father heroic secret from this villain identity. Dialogue transcription plus independent plot corroboration establish it; no primary film scene inspected.",
+  "verification": {
+    "context": "In Big Hero 6 (2014), who is revealed to be the masked villain?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Island unmasking reveals Callaghan.",
+      "sources": [
+        {
+          "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=big-hero-6",
+          "locator": "Island confrontation immediately after mask removed: Hiro addresses Professor Callaghan; he explains microbot survival and dismisses Tadashi death. Third-party dialogue transcription, not inspected studio screenplay."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Big_Hero_6_(film)",
+          "locator": "Plot / island laboratory unmasking: Callaghan identified, Krei suspicion disproved. Independent secondary account; studio scene not inspected."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Removed TV-only Granville and unnecessary Yokai label. Distinguish Krei red herring from final reveal and Fred father heroic secret from this villain identity. Dialogue transcription plus independent plot corroboration establish it; no primary film scene inspected."
+    },
+    "options": [
+      {
+        "answer": "Robert Callaghan",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Island unmasking reveals Callaghan.",
+        "sources": [
+          {
+            "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=big-hero-6",
+            "locator": "Island confrontation immediately after mask removed: Hiro addresses Professor Callaghan; he explains microbot survival and dismisses Tadashi death. Third-party dialogue transcription, not inspected studio screenplay."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Big_Hero_6_(film)",
+            "locator": "Plot / island laboratory unmasking: Callaghan identified, Krei suspicion disproved. Independent secondary account; studio scene not inspected."
+          }
+        ]
+      },
+      {
+        "answer": "Alistair Krei",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Krei was suspected but the mask reveals another man.",
+        "sources": [
+          {
+            "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=big-hero-6",
+            "locator": "Island confrontation immediately after mask removed: Hiro addresses Professor Callaghan; he explains microbot survival and dismisses Tadashi death. Third-party dialogue transcription, not inspected studio screenplay."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Big_Hero_6_(film)",
+            "locator": "Plot / island laboratory unmasking: Callaghan identified, Krei suspicion disproved. Independent secondary account; studio scene not inspected."
+          }
+        ]
+      },
+      {
+        "answer": "Tadashi Hamada",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Tadashi died; Callaghan survived through microbots.",
+        "sources": [
+          {
+            "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=big-hero-6",
+            "locator": "Island confrontation immediately after mask removed: Hiro addresses Professor Callaghan; he explains microbot survival and dismisses Tadashi death. Third-party dialogue transcription, not inspected studio screenplay."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Big_Hero_6_(film)",
+            "locator": "Plot / island laboratory unmasking: Callaghan identified, Krei suspicion disproved. Independent secondary account; studio scene not inspected."
+          }
+        ]
+      },
+      {
+        "answer": "Fred's father",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Fred father is not the man revealed at island confrontation.",
+        "sources": [
+          {
+            "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=big-hero-6",
+            "locator": "Island confrontation immediately after mask removed: Hiro addresses Professor Callaghan; he explains microbot survival and dismisses Tadashi death. Third-party dialogue transcription, not inspected studio screenplay."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Big_Hero_6_(film)",
+            "locator": "Plot / island laboratory unmasking: Callaghan identified, Krei suspicion disproved. Independent secondary account; studio scene not inspected."
+          }
+        ]
+      }
+    ]
+  }
+}

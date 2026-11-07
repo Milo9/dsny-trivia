@@ -1,0 +1,4514 @@
+[
+  {
+    "schema": 2,
+    "questionId": 51,
+    "hash": "d347b606e81b2854aca757a0ccc0f617df08f838a0ea39bab7f77af2f38bb3bb",
+    "questionSnapshot": {
+      "id": 51,
+      "question": "What is the name of Mickey Mouse's girlfriend?",
+      "answers": [
+        "Minnie Mouse",
+        "Daisy Duck",
+        "Clarabelle Cow",
+        "Tinker Bell"
+      ],
+      "difficulty": "easy",
+      "category": "characters"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "No other question asks this romantic relationship; same surname is acceptable easy recall. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "English-language Disney character naming; original theatrical feature where a film is named. What is the name of Mickey Mouse's girlfriend?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney’s character reference explicitly identifies Mickey’s romantic partner as Minnie.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/minnie-mouse/",
+            "locator": "Opening sentence explicitly identifies Minnie as Mickey Mouse’s girlfriend."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tested the husband/wife anecdote against the literal girlfriend wording: Disney itself uses girlfriend. The three alternative names are not aliases for Minnie. Mouse in the stem is an ordinary character surname, not a disclosed first name."
+      },
+      "options": [
+        {
+          "answer": "Minnie Mouse",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Minnie is the identified girlfriend.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/minnie-mouse/",
+              "locator": "Opening sentence explicitly identifies Minnie as Mickey Mouse’s girlfriend."
+            }
+          ]
+        },
+        {
+          "answer": "Daisy Duck",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Daisy is a different named character, not the partner identified by this entry.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/minnie-mouse/",
+              "locator": "Opening sentence explicitly identifies Minnie as Mickey Mouse’s girlfriend."
+            }
+          ]
+        },
+        {
+          "answer": "Clarabelle Cow",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Clarabelle is a different character, not another name for Minnie.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/minnie-mouse/",
+              "locator": "Opening sentence explicitly identifies Minnie as Mickey Mouse’s girlfriend."
+            }
+          ]
+        },
+        {
+          "answer": "Tinker Bell",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Tinker Bell is a separate character, not Minnie.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/minnie-mouse/",
+              "locator": "Opening sentence explicitly identifies Minnie as Mickey Mouse’s girlfriend."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 52,
+    "hash": "bd372622003fce4838444cefd8a7706371c2f86865198ba171e46c63de0c4e53",
+    "questionSnapshot": {
+      "id": 52,
+      "question": "What are the names of Donald Duck's three nephews?",
+      "answers": [
+        "Huey, Dewey, and Louie",
+        "Chip, Dale, and Monty",
+        "Larry, Moe, and Curly",
+        "Tick, Tack, and Tock"
+      ],
+      "difficulty": "easy",
+      "category": "characters"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Distinct from other named trios and Donald’s uncle; familiar basic characters justify easy. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "English-language Disney character naming; original theatrical feature where a film is named. What are the names of Donald Duck's three nephews?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "In English-language Disney naming, the three nephews form the Huey/Dewey/Louie trio.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/donalds-nephews-film/",
+            "locator": "First-film-appearance paragraph: Huey, Dewey and Louie visit their uncle Donald."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Compared all three positions in each answer, including the similar-sounding Tick/Tack/Tock set. No alternative is an English alias list for this trio. The question concerns characters, not facts about a TV adaptation."
+      },
+      "options": [
+        {
+          "answer": "Huey, Dewey, and Louie",
+          "verdict": "correct",
+          "basis": "exhaustive-list",
+          "reason": "This exactly matches the complete named trio.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/donalds-nephews-film/",
+              "locator": "First-film-appearance paragraph: Huey, Dewey and Louie visit their uncle Donald."
+            }
+          ]
+        },
+        {
+          "answer": "Chip, Dale, and Monty",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "None of these three names is in the established trio.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/donalds-nephews-film/",
+              "locator": "First-film-appearance paragraph: Huey, Dewey and Louie visit their uncle Donald."
+            }
+          ]
+        },
+        {
+          "answer": "Larry, Moe, and Curly",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "The listed names do not match any of the three nephews.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/donalds-nephews-film/",
+              "locator": "First-film-appearance paragraph: Huey, Dewey and Louie visit their uncle Donald."
+            }
+          ]
+        },
+        {
+          "answer": "Tick, Tack, and Tock",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "This complete trio is not the English-language Huey/Dewey/Louie list.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/donalds-nephews-film/",
+              "locator": "First-film-appearance paragraph: Huey, Dewey and Louie visit their uncle Donald."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 53,
+    "hash": "ef7cbed1685eca2a1589447bbfb791e29c94d281764e387f7f63b8d1343744fa",
+    "questionSnapshot": {
+      "id": 53,
+      "question": "What is the name of Mickey Mouse's pet dog?",
+      "answers": [
+        "Pluto",
+        "Rex",
+        "Goofy",
+        "Spot"
+      ],
+      "difficulty": "easy",
+      "category": "characters"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Distinct from Pluto’s debut-short history and the Peter Pan fairy identity. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "English-language Disney character naming; original theatrical feature where a film is named. What is the name of Mickey Mouse's pet dog?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pluto is identified as Mickey’s actual pet dog, expressly distinguished from Goofy.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/pluto/",
+            "locator": "Opening two paragraphs: Mickey’s pet dog; explicit distinction from Goofy; earlier Rover identity belongs to Minnie."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged Goofy as another dog and Spot as a possible pet alias. Disney explicitly separates Goofy’s human-like role and documents Rover, excluding both proposed alternatives under this relationship."
+      },
+      "options": [
+        {
+          "answer": "Pluto",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "The entry directly names Pluto as Mickey’s pet.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/pluto/",
+              "locator": "Opening two paragraphs: Mickey’s pet dog; explicit distinction from Goofy; earlier Rover identity belongs to Minnie."
+            }
+          ]
+        },
+        {
+          "answer": "Rex",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Rex is not the name of the pet identified here.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/pluto/",
+              "locator": "Opening two paragraphs: Mickey’s pet dog; explicit distinction from Goofy; earlier Rover identity belongs to Minnie."
+            }
+          ]
+        },
+        {
+          "answer": "Goofy",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "The source explicitly distinguishes Goofy from the actual dog character Pluto.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/pluto/",
+              "locator": "Opening two paragraphs: Mickey’s pet dog; explicit distinction from Goofy; earlier Rover identity belongs to Minnie."
+            }
+          ]
+        },
+        {
+          "answer": "Spot",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Spot is not Pluto’s name; the earlier documented alternate dog name was Rover, not Spot.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/pluto/",
+              "locator": "Opening two paragraphs: Mickey’s pet dog; explicit distinction from Goofy; earlier Rover identity belongs to Minnie."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 54,
+    "hash": "fb91a56c589b0bb535c37fec86104e83b831bf9fdb214e6a3f87e62ac26d116b",
+    "questionSnapshot": {
+      "id": 54,
+      "question": "In Disney's animated Peter Pan (1953), what color is Tinker Bell's dress?",
+      "answers": [
+        "Green",
+        "Blue",
+        "Pink",
+        "Yellow"
+      ],
+      "difficulty": "easy",
+      "category": "characters"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Ariel’s green tail q15 is a separate character-and-garment fact; fairy identity q285 does not give dress color. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "English-language Disney character naming; original theatrical feature where a film is named. In Disney's animated Peter Pan (1953), what color is Tinker Bell's dress?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The animated Peter Pan character’s signature dress design is green; the final stem fixes the 1953 film context.",
+        "sources": [
+          {
+            "url": "https://www.disneystore.com/movies-shows/disney/peter-pan/",
+            "locator": "Tinker Bell Classic Doll – Peter Pan – 10-inch product description, signature leafy green dress. Licensed design evidence corroborates the animated character; no claim about every later costume."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked actual garment color rather than fairy glow, wings or hair. The claim is scoped to the animated character design, not every park costume or later adaptation. The official licensed depiction supplies an explicit color, not an inference from a generic homepage."
+      },
+      "options": [
+        {
+          "answer": "Green",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "The official Peter Pan product description expressly identifies the signature dress as green.",
+          "sources": [
+            {
+              "url": "https://www.disneystore.com/movies-shows/disney/peter-pan/",
+              "locator": "Tinker Bell Classic Doll – Peter Pan – 10-inch product description, signature leafy green dress. Licensed design evidence corroborates the animated character; no claim about every later costume."
+            }
+          ]
+        },
+        {
+          "answer": "Blue",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Blue is a different hue from the identified garment color.",
+          "sources": [
+            {
+              "url": "https://www.disneystore.com/movies-shows/disney/peter-pan/",
+              "locator": "Tinker Bell Classic Doll – Peter Pan – 10-inch product description, signature leafy green dress. Licensed design evidence corroborates the animated character; no claim about every later costume."
+            }
+          ]
+        },
+        {
+          "answer": "Pink",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Pink is not the signature green garment color.",
+          "sources": [
+            {
+              "url": "https://www.disneystore.com/movies-shows/disney/peter-pan/",
+              "locator": "Tinker Bell Classic Doll – Peter Pan – 10-inch product description, signature leafy green dress. Licensed design evidence corroborates the animated character; no claim about every later costume."
+            }
+          ]
+        },
+        {
+          "answer": "Yellow",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Yellow is not the signature green garment color.",
+          "sources": [
+            {
+              "url": "https://www.disneystore.com/movies-shows/disney/peter-pan/",
+              "locator": "Tinker Bell Classic Doll – Peter Pan – 10-inch product description, signature leafy green dress. Licensed design evidence corroborates the animated character; no claim about every later costume."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 55,
+    "hash": "c551d2334f9bece5ecb3db6c2f35fb03864fa0e67e017382836bf86de0e4eae0",
+    "questionSnapshot": {
+      "id": 55,
+      "question": "Who is the main villain in The Lion King?",
+      "answers": [
+        "Scar",
+        "Mufasa",
+        "Zazu",
+        "Rafiki"
+      ],
+      "difficulty": "easy",
+      "category": "characters"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Distinct from Scar’s kinship q23 and Be Prepared’s song identity. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "English-language Disney character naming; original theatrical feature where a film is named. Who is the main villain in The Lion King?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Scar drives the murder, usurpation and final opposition to Simba.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/lion-king-the-film/",
+            "locator": "Opening three synopsis paragraphs: Scar’s murder and usurpation; Mufasa as king/father; Pumbaa as warthog; Timon as meerkat; Rafiki as guiding shaman."
+          },
+          {
+            "url": "https://d23.com/a-to-z/zazu/",
+            "locator": "Single character entry: Pride Lands chief of protocol."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tried treating a stern father, adviser or shaman as a villain. Their documented functions differ from Scar’s deliberate murder and usurpation; none rivals him as the film’s main antagonist."
+      },
+      "options": [
+        {
+          "answer": "Scar",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Scar kills Mufasa and takes the throne, establishing him as the main antagonist.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/lion-king-the-film/",
+              "locator": "Opening three synopsis paragraphs: Scar’s murder and usurpation; Mufasa as king/father; Pumbaa as warthog; Timon as meerkat; Rafiki as guiding shaman."
+            },
+            {
+              "url": "https://d23.com/a-to-z/zazu/",
+              "locator": "Single character entry: Pride Lands chief of protocol."
+            }
+          ]
+        },
+        {
+          "answer": "Mufasa",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Mufasa is Simba’s father and the murdered king, not the antagonist.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/lion-king-the-film/",
+              "locator": "Opening three synopsis paragraphs: Scar’s murder and usurpation; Mufasa as king/father; Pumbaa as warthog; Timon as meerkat; Rafiki as guiding shaman."
+            },
+            {
+              "url": "https://d23.com/a-to-z/zazu/",
+              "locator": "Single character entry: Pride Lands chief of protocol."
+            }
+          ]
+        },
+        {
+          "answer": "Zazu",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Zazu is the chief of protocol rather than the usurping villain.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/lion-king-the-film/",
+              "locator": "Opening three synopsis paragraphs: Scar’s murder and usurpation; Mufasa as king/father; Pumbaa as warthog; Timon as meerkat; Rafiki as guiding shaman."
+            },
+            {
+              "url": "https://d23.com/a-to-z/zazu/",
+              "locator": "Single character entry: Pride Lands chief of protocol."
+            }
+          ]
+        },
+        {
+          "answer": "Rafiki",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Rafiki guides Simba toward his rightful role rather than opposing him.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/lion-king-the-film/",
+              "locator": "Opening three synopsis paragraphs: Scar’s murder and usurpation; Mufasa as king/father; Pumbaa as warthog; Timon as meerkat; Rafiki as guiding shaman."
+            },
+            {
+              "url": "https://d23.com/a-to-z/zazu/",
+              "locator": "Single character entry: Pride Lands chief of protocol."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 56,
+    "hash": "e97e22773eab690761d85d4de5a14785799a00d7841b799a9a230175fd77f27c",
+    "questionSnapshot": {
+      "id": 56,
+      "question": "In Beauty and the Beast, what is the name of Belle's arrogant suitor?",
+      "answers": [
+        "Gaston",
+        "Jafar",
+        "Frollo",
+        "Hades"
+      ],
+      "difficulty": "easy",
+      "category": "characters"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "q567 asks Belle’s horse; q1384 asks which film contains the song Gaston. A character-romance fact and a soundtrack attribution require different knowledge. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "English-language Disney character naming; original theatrical feature where a film is named. In Beauty and the Beast, what is the name of Belle's arrogant suitor?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney explicitly identifies Gaston as the vain man courting Belle.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/gaston/",
+            "locator": "Single character entry identifies the character courting Belle."
+          },
+          {
+            "url": "https://d23.com/a-to-z/beauty-and-the-beast-film/",
+            "locator": "First two synopsis paragraphs: vain suitor Gaston and his attack on the Beast."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The question requests the suitor’s identity, not any villain from a Disney film. The source names that character unambiguously, and none of the alternative proper names is an alias for him."
+      },
+      "options": [
+        {
+          "answer": "Gaston",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Gaston is the named suitor.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/gaston/",
+              "locator": "Single character entry identifies the character courting Belle."
+            },
+            {
+              "url": "https://d23.com/a-to-z/beauty-and-the-beast-film/",
+              "locator": "First two synopsis paragraphs: vain suitor Gaston and his attack on the Beast."
+            }
+          ]
+        },
+        {
+          "answer": "Jafar",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Jafar is not Gaston, the suitor identified in this film.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/gaston/",
+              "locator": "Single character entry identifies the character courting Belle."
+            },
+            {
+              "url": "https://d23.com/a-to-z/beauty-and-the-beast-film/",
+              "locator": "First two synopsis paragraphs: vain suitor Gaston and his attack on the Beast."
+            }
+          ]
+        },
+        {
+          "answer": "Frollo",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Frollo is not the named suitor.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/gaston/",
+              "locator": "Single character entry identifies the character courting Belle."
+            },
+            {
+              "url": "https://d23.com/a-to-z/beauty-and-the-beast-film/",
+              "locator": "First two synopsis paragraphs: vain suitor Gaston and his attack on the Beast."
+            }
+          ]
+        },
+        {
+          "answer": "Hades",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Hades is not the named suitor.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/gaston/",
+              "locator": "Single character entry identifies the character courting Belle."
+            },
+            {
+              "url": "https://d23.com/a-to-z/beauty-and-the-beast-film/",
+              "locator": "First two synopsis paragraphs: vain suitor Gaston and his attack on the Beast."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 57,
+    "hash": "a5f397af5cfb170e13466eadd2f3e0234f987d1809b1160d8627d74afbc21832",
+    "questionSnapshot": {
+      "id": 57,
+      "question": "In Snow White, how many dwarfs does Snow White live with?",
+      "answers": [
+        "Seven",
+        "Five",
+        "Eight",
+        "Six"
+      ],
+      "difficulty": "easy",
+      "category": "characters"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "q81 tests membership rather than count; q2364’s seven credited musicians are unrelated. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "English-language Disney character naming; original theatrical feature where a film is named. In Snow White, how many dwarfs does Snow White live with?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Snow White takes refuge with a roster containing exactly seven dwarfs.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+            "locator": "Opening synopsis: Snow White lives in the house of seven dwarfs; the jealous Queen pursues her."
+          },
+          {
+            "url": "https://d23.com/a-to-z/seven-dwarfs/",
+            "locator": "Entire entry is the complete seven-name roster: Doc, Sleepy, Happy, Grumpy, Sneezy, Bashful, Dopey."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Counted the complete named roster against the refuge premise, rather than inferring from a title alone. Five, six and eight cannot describe this seven-person household."
+      },
+      "options": [
+        {
+          "answer": "Seven",
+          "verdict": "correct",
+          "basis": "exhaustive-list",
+          "reason": "The complete roster has seven entries.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+              "locator": "Opening synopsis: Snow White lives in the house of seven dwarfs; the jealous Queen pursues her."
+            },
+            {
+              "url": "https://d23.com/a-to-z/seven-dwarfs/",
+              "locator": "Entire entry is the complete seven-name roster: Doc, Sleepy, Happy, Grumpy, Sneezy, Bashful, Dopey."
+            }
+          ]
+        },
+        {
+          "answer": "Five",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Five undercounts the complete roster by two.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+              "locator": "Opening synopsis: Snow White lives in the house of seven dwarfs; the jealous Queen pursues her."
+            },
+            {
+              "url": "https://d23.com/a-to-z/seven-dwarfs/",
+              "locator": "Entire entry is the complete seven-name roster: Doc, Sleepy, Happy, Grumpy, Sneezy, Bashful, Dopey."
+            }
+          ]
+        },
+        {
+          "answer": "Eight",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Eight exceeds the complete roster by one.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+              "locator": "Opening synopsis: Snow White lives in the house of seven dwarfs; the jealous Queen pursues her."
+            },
+            {
+              "url": "https://d23.com/a-to-z/seven-dwarfs/",
+              "locator": "Entire entry is the complete seven-name roster: Doc, Sleepy, Happy, Grumpy, Sneezy, Bashful, Dopey."
+            }
+          ]
+        },
+        {
+          "answer": "Six",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Six undercounts the complete roster by one.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+              "locator": "Opening synopsis: Snow White lives in the house of seven dwarfs; the jealous Queen pursues her."
+            },
+            {
+              "url": "https://d23.com/a-to-z/seven-dwarfs/",
+              "locator": "Entire entry is the complete seven-name roster: Doc, Sleepy, Happy, Grumpy, Sneezy, Bashful, Dopey."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 58,
+    "hash": "d2675d90d7c52ddb63b136d9e1bc10d9d46aba20a3d992bb86de17a248ef57d5",
+    "questionSnapshot": {
+      "id": 58,
+      "question": "In which Disney animated film does Maleficent appear as the villain?",
+      "answers": [
+        "Sleeping Beauty",
+        "Snow White",
+        "Cinderella",
+        "Bambi"
+      ],
+      "difficulty": "easy",
+      "category": "characters"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "q950 asks a widescreen production process. Knowing Maleficent’s film does not establish its cinematographic process. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "English-language Disney character naming; original theatrical feature where a film is named. In which Disney animated film does Maleficent appear as the villain?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Maleficent is the evil fairy in the 1959 Sleeping Beauty feature; final wording does not claim chronological first appearance.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/maleficent/",
+            "locator": "Single character entry identifies Maleficent as the evil fairy in Sleeping Beauty."
+          },
+          {
+            "url": "https://d23.com/a-to-z/sleeping-beauty-film/",
+            "locator": "Opening synopsis and cast: evil fairy Maleficent, Prince Phillip, Aurora; release January 29, 1959."
+          },
+          {
+            "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+            "locator": "Opening synopsis: Snow White lives in the house of seven dwarfs; the jealous Queen pursues her."
+          },
+          {
+            "url": "https://d23.com/a-to-z/lady-tremaine/",
+            "locator": "Single character entry identifies Lady Tremaine as Cinderella’s evil stepmother."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed first to avoid asserting an unnecessary chronology from a role identification. The question is now an animated-film attribution among four titles. The official character entry names Sleeping Beauty, and none of the other proposed titles identifies that feature."
+      },
+      "options": [
+        {
+          "answer": "Sleeping Beauty",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "The character entry and 1959 film synopsis agree on Sleeping Beauty.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/maleficent/",
+              "locator": "Single character entry identifies Maleficent as the evil fairy in Sleeping Beauty."
+            },
+            {
+              "url": "https://d23.com/a-to-z/sleeping-beauty-film/",
+              "locator": "Opening synopsis and cast: evil fairy Maleficent, Prince Phillip, Aurora; release January 29, 1959."
+            },
+            {
+              "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+              "locator": "Opening synopsis: Snow White lives in the house of seven dwarfs; the jealous Queen pursues her."
+            },
+            {
+              "url": "https://d23.com/a-to-z/lady-tremaine/",
+              "locator": "Single character entry identifies Lady Tremaine as Cinderella’s evil stepmother."
+            }
+          ]
+        },
+        {
+          "answer": "Snow White",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Snow White’s persecutor is the Queen, not Maleficent.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/maleficent/",
+              "locator": "Single character entry identifies Maleficent as the evil fairy in Sleeping Beauty."
+            },
+            {
+              "url": "https://d23.com/a-to-z/sleeping-beauty-film/",
+              "locator": "Opening synopsis and cast: evil fairy Maleficent, Prince Phillip, Aurora; release January 29, 1959."
+            },
+            {
+              "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+              "locator": "Opening synopsis: Snow White lives in the house of seven dwarfs; the jealous Queen pursues her."
+            },
+            {
+              "url": "https://d23.com/a-to-z/lady-tremaine/",
+              "locator": "Single character entry identifies Lady Tremaine as Cinderella’s evil stepmother."
+            }
+          ]
+        },
+        {
+          "answer": "Cinderella",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Cinderella’s stepmother is Lady Tremaine, not Maleficent.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/maleficent/",
+              "locator": "Single character entry identifies Maleficent as the evil fairy in Sleeping Beauty."
+            },
+            {
+              "url": "https://d23.com/a-to-z/sleeping-beauty-film/",
+              "locator": "Opening synopsis and cast: evil fairy Maleficent, Prince Phillip, Aurora; release January 29, 1959."
+            },
+            {
+              "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+              "locator": "Opening synopsis: Snow White lives in the house of seven dwarfs; the jealous Queen pursues her."
+            },
+            {
+              "url": "https://d23.com/a-to-z/lady-tremaine/",
+              "locator": "Single character entry identifies Lady Tremaine as Cinderella’s evil stepmother."
+            }
+          ]
+        },
+        {
+          "answer": "Bambi",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Bambi is not the Sleeping Beauty feature that introduces this named fairy.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/maleficent/",
+              "locator": "Single character entry identifies Maleficent as the evil fairy in Sleeping Beauty."
+            },
+            {
+              "url": "https://d23.com/a-to-z/sleeping-beauty-film/",
+              "locator": "Opening synopsis and cast: evil fairy Maleficent, Prince Phillip, Aurora; release January 29, 1959."
+            },
+            {
+              "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+              "locator": "Opening synopsis: Snow White lives in the house of seven dwarfs; the jealous Queen pursues her."
+            },
+            {
+              "url": "https://d23.com/a-to-z/lady-tremaine/",
+              "locator": "Single character entry identifies Lady Tremaine as Cinderella’s evil stepmother."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 59,
+    "hash": "56f4e3789b7e4f4b631e346012e56842140933ad42f3cc5e4eb48f92c6a59c57",
+    "questionSnapshot": {
+      "id": 59,
+      "question": "What is the name of Winnie the Pooh's gloomy donkey friend?",
+      "answers": [
+        "Eeyore",
+        "Tigger",
+        "Kanga",
+        "Roo"
+      ],
+      "difficulty": "easy",
+      "category": "characters"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "q300 asks the human friend Christopher Robin, a different relationship and animal identity. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "English-language Disney character naming; original theatrical feature where a film is named. What is the name of Winnie the Pooh's gloomy donkey friend?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Among the Pooh characters listed, Eeyore is the donkey.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/eeyore/",
+            "locator": "Single character entry identifies Eeyore as the Pooh films’ donkey."
+          },
+          {
+            "url": "https://d23.com/a-to-z/tigger/",
+            "locator": "Single character entry identifies Tigger as a tiger."
+          },
+          {
+            "url": "https://d23.com/a-to-z/kanga/",
+            "locator": "Single character entry identifies Kanga as a kangaroo."
+          },
+          {
+            "url": "https://d23.com/a-to-z/roo/",
+            "locator": "Single character entry identifies Roo as a baby kangaroo."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked animal identity for every alternative rather than relying on a gloomy personality description. None of the three other animal types is a donkey."
+      },
+      "options": [
+        {
+          "answer": "Eeyore",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Eeyore is explicitly identified as the donkey.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/eeyore/",
+              "locator": "Single character entry identifies Eeyore as the Pooh films’ donkey."
+            }
+          ]
+        },
+        {
+          "answer": "Tigger",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Tigger is a tiger.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/tigger/",
+              "locator": "Single character entry identifies Tigger as a tiger."
+            }
+          ]
+        },
+        {
+          "answer": "Kanga",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Kanga is a kangaroo.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/kanga/",
+              "locator": "Single character entry identifies Kanga as a kangaroo."
+            }
+          ]
+        },
+        {
+          "answer": "Roo",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Roo is a baby kangaroo.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/roo/",
+              "locator": "Single character entry identifies Roo as a baby kangaroo."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 62,
+    "hash": "468758ff66dece2c3678541ff9e2abedfb925dc3117d4d7295f0a5e28f68f82c",
+    "questionSnapshot": {
+      "id": 62,
+      "question": "What is the name of the evil stepmother in Cinderella?",
+      "answers": [
+        "Lady Tremaine",
+        "Maleficent",
+        "Ursula",
+        "The Evil Queen"
+      ],
+      "difficulty": "easy",
+      "category": "characters"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Distinct from the stepsisters’ names and Lady Tremaine’s cat. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "English-language Disney character naming; original theatrical feature where a film is named. What is the name of the evil stepmother in Cinderella?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Cinderella stepmother’s established character name is Lady Tremaine.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/lady-tremaine/",
+            "locator": "Single character entry identifies Lady Tremaine as Cinderella’s evil stepmother."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tested whether generic evil-queen wording could fit the household role. The stem requests a name, and Disney’s explicit character identification fixes that name; the other villain names do not identify her."
+      },
+      "options": [
+        {
+          "answer": "Lady Tremaine",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Lady Tremaine is the explicitly named evil stepmother.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/lady-tremaine/",
+              "locator": "Single character entry identifies Lady Tremaine as Cinderella’s evil stepmother."
+            }
+          ]
+        },
+        {
+          "answer": "Maleficent",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Maleficent is not another name for Lady Tremaine.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/lady-tremaine/",
+              "locator": "Single character entry identifies Lady Tremaine as Cinderella’s evil stepmother."
+            }
+          ]
+        },
+        {
+          "answer": "Ursula",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Ursula is not another name for the stepmother.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/lady-tremaine/",
+              "locator": "Single character entry identifies Lady Tremaine as Cinderella’s evil stepmother."
+            }
+          ]
+        },
+        {
+          "answer": "The Evil Queen",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "The Evil Queen is not the given name Lady Tremaine.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/lady-tremaine/",
+              "locator": "Single character entry identifies Lady Tremaine as Cinderella’s evil stepmother."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 63,
+    "hash": "09653e2dda0a46e81f6bfae6e50e9f3bb729cdb03b85eb3df71f968cb0451d0b",
+    "questionSnapshot": {
+      "id": 63,
+      "question": "What is Goofy's trademark exclamation of surprise?",
+      "answers": [
+        "Gawrsh!",
+        "Oh boy!",
+        "Wahoo!",
+        "Shucks!"
+      ],
+      "difficulty": "easy",
+      "category": "characters"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "No duplicate expression question found in the character digest or all-shard search. Easy character recognition. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "English-language Disney character naming; original theatrical feature where a film is named. What is Goofy's trademark exclamation of surprise?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney associates the stylized Gawrsh expression with Goofy in its dedicated character subsection.",
+        "sources": [
+          {
+            "url": "https://d23.com/celebrating-disney-characters-who-are-mad-as-hatters/",
+            "locator": "Goofy subsection, immediately after Roger Rabbit: introductory Gawrsh expression associated with Goofy."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The question concerns a recognized signature expression, not a claim that Goofy never says any other exclamation. Comparing literal spellings and the character-specific attribution leaves Gawrsh as the defensible signature among these options."
+      },
+      "options": [
+        {
+          "answer": "Gawrsh!",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Gawrsh is the expression Disney uses to introduce Goofy’s subsection.",
+          "sources": [
+            {
+              "url": "https://d23.com/celebrating-disney-characters-who-are-mad-as-hatters/",
+              "locator": "Goofy subsection, immediately after Roger Rabbit: introductory Gawrsh expression associated with Goofy."
+            }
+          ]
+        },
+        {
+          "answer": "Oh boy!",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Oh boy is not the Goofy expression identified in that character introduction.",
+          "sources": [
+            {
+              "url": "https://d23.com/celebrating-disney-characters-who-are-mad-as-hatters/",
+              "locator": "Goofy subsection, immediately after Roger Rabbit: introductory Gawrsh expression associated with Goofy."
+            }
+          ]
+        },
+        {
+          "answer": "Wahoo!",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Wahoo is not the identified signature expression.",
+          "sources": [
+            {
+              "url": "https://d23.com/celebrating-disney-characters-who-are-mad-as-hatters/",
+              "locator": "Goofy subsection, immediately after Roger Rabbit: introductory Gawrsh expression associated with Goofy."
+            }
+          ]
+        },
+        {
+          "answer": "Shucks!",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Shucks is not the stylized Gawrsh expression.",
+          "sources": [
+            {
+              "url": "https://d23.com/celebrating-disney-characters-who-are-mad-as-hatters/",
+              "locator": "Goofy subsection, immediately after Roger Rabbit: introductory Gawrsh expression associated with Goofy."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 64,
+    "hash": "9e694402ec988b3da8e341b72bc65e3206c4308eee20a147ef51e93b0490af44",
+    "questionSnapshot": {
+      "id": 64,
+      "question": "What is the name of the evil cat belonging to Cinderella's stepmother?",
+      "answers": [
+        "Lucifer",
+        "Felix",
+        "Tom",
+        "Shadow"
+      ],
+      "difficulty": "easy",
+      "category": "characters"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Distinct from Cinderella’s dog Bruno, horse Major and Geppetto’s kitten Figaro. Ownership support has a documented secondary-source limitation. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "English-language Disney character naming; original theatrical feature where a film is named. What is the name of the evil cat belonging to Cinderella's stepmother?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Lucifer is the cat in Cinderella; scene-based secondary corroboration explicitly connects him to Lady Tremaine.",
+        "sources": [
+          {
+            "url": "https://d23.com/cinderella-added-to-national-film-registry/",
+            "locator": "Animation discussion contrasts Frank Thomas’s villainess with Ward Kimball’s cat Lucifer, the mice’s comical foil."
+          },
+          {
+            "url": "https://cinemacats.com/cinderella-1950/",
+            "locator": "Bad Kitty subsection explicitly identifies Lucifer as Lady Tremaine’s pet cat; secondary scene-based corroboration for ownership, which the D23 paragraph does not explicitly state."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "D23’s separate Lucifer dictionary entry describes an unrelated Pluto short, so that entry was deliberately not used. The Cinderella-specific animation article plus ownership corroboration establish the relevant cat and exclude the three different names."
+      },
+      "options": [
+        {
+          "answer": "Lucifer",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Lucifer is identified as the stepmother’s pet.",
+          "sources": [
+            {
+              "url": "https://d23.com/cinderella-added-to-national-film-registry/",
+              "locator": "Animation discussion contrasts Frank Thomas’s villainess with Ward Kimball’s cat Lucifer, the mice’s comical foil."
+            },
+            {
+              "url": "https://cinemacats.com/cinderella-1950/",
+              "locator": "Bad Kitty subsection explicitly identifies Lucifer as Lady Tremaine’s pet cat; secondary scene-based corroboration for ownership, which the D23 paragraph does not explicitly state."
+            }
+          ]
+        },
+        {
+          "answer": "Felix",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Felix is not Lucifer’s name.",
+          "sources": [
+            {
+              "url": "https://d23.com/cinderella-added-to-national-film-registry/",
+              "locator": "Animation discussion contrasts Frank Thomas’s villainess with Ward Kimball’s cat Lucifer, the mice’s comical foil."
+            },
+            {
+              "url": "https://cinemacats.com/cinderella-1950/",
+              "locator": "Bad Kitty subsection explicitly identifies Lucifer as Lady Tremaine’s pet cat; secondary scene-based corroboration for ownership, which the D23 paragraph does not explicitly state."
+            }
+          ]
+        },
+        {
+          "answer": "Tom",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Tom is not the identified pet’s name.",
+          "sources": [
+            {
+              "url": "https://d23.com/cinderella-added-to-national-film-registry/",
+              "locator": "Animation discussion contrasts Frank Thomas’s villainess with Ward Kimball’s cat Lucifer, the mice’s comical foil."
+            },
+            {
+              "url": "https://cinemacats.com/cinderella-1950/",
+              "locator": "Bad Kitty subsection explicitly identifies Lucifer as Lady Tremaine’s pet cat; secondary scene-based corroboration for ownership, which the D23 paragraph does not explicitly state."
+            }
+          ]
+        },
+        {
+          "answer": "Shadow",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Shadow is not the identified pet’s name.",
+          "sources": [
+            {
+              "url": "https://d23.com/cinderella-added-to-national-film-registry/",
+              "locator": "Animation discussion contrasts Frank Thomas’s villainess with Ward Kimball’s cat Lucifer, the mice’s comical foil."
+            },
+            {
+              "url": "https://cinemacats.com/cinderella-1950/",
+              "locator": "Bad Kitty subsection explicitly identifies Lucifer as Lady Tremaine’s pet cat; secondary scene-based corroboration for ownership, which the D23 paragraph does not explicitly state."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 65,
+    "hash": "13de105bda4aeb21cbec56c430968184c2e6f8040cd4ed1511ffc0f938d8fdef",
+    "questionSnapshot": {
+      "id": 65,
+      "question": "What is the name of the prince in Sleeping Beauty?",
+      "answers": [
+        "Prince Phillip",
+        "Prince Charming",
+        "Prince Eric",
+        "Prince Adam"
+      ],
+      "difficulty": "easy",
+      "category": "characters"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Distinct from Aurora, the fairies, the villain’s raven and the curse mechanics. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "English-language Disney character naming; original theatrical feature where a film is named. What is the name of the prince in Sleeping Beauty?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Sleeping Beauty identifies its prince by the proper name Phillip.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/prince-phillip/",
+            "locator": "Single character entry gives Prince Phillip’s proper name and film."
+          },
+          {
+            "url": "https://d23.com/a-to-z/sleeping-beauty-film/",
+            "locator": "Opening synopsis and cast: evil fairy Maleficent, Prince Phillip, Aurora; release January 29, 1959."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Read name as the character’s proper identity, not a generic compliment such as charming. The character entry and film cast independently identify Phillip; the other three proposed proper names are different identities."
+      },
+      "options": [
+        {
+          "answer": "Prince Phillip",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Prince Phillip is the explicitly named prince.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/prince-phillip/",
+              "locator": "Single character entry gives Prince Phillip’s proper name and film."
+            },
+            {
+              "url": "https://d23.com/a-to-z/sleeping-beauty-film/",
+              "locator": "Opening synopsis and cast: evil fairy Maleficent, Prince Phillip, Aurora; release January 29, 1959."
+            }
+          ]
+        },
+        {
+          "answer": "Prince Charming",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Prince Charming is not the proper name supplied for this prince.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/prince-phillip/",
+              "locator": "Single character entry gives Prince Phillip’s proper name and film."
+            },
+            {
+              "url": "https://d23.com/a-to-z/sleeping-beauty-film/",
+              "locator": "Opening synopsis and cast: evil fairy Maleficent, Prince Phillip, Aurora; release January 29, 1959."
+            }
+          ]
+        },
+        {
+          "answer": "Prince Eric",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Prince Eric is not the prince named by the Sleeping Beauty reference.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/prince-phillip/",
+              "locator": "Single character entry gives Prince Phillip’s proper name and film."
+            },
+            {
+              "url": "https://d23.com/a-to-z/sleeping-beauty-film/",
+              "locator": "Opening synopsis and cast: evil fairy Maleficent, Prince Phillip, Aurora; release January 29, 1959."
+            }
+          ]
+        },
+        {
+          "answer": "Prince Adam",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Prince Adam is not the prince named by the Sleeping Beauty reference.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/prince-phillip/",
+              "locator": "Single character entry gives Prince Phillip’s proper name and film."
+            },
+            {
+              "url": "https://d23.com/a-to-z/sleeping-beauty-film/",
+              "locator": "Opening synopsis and cast: evil fairy Maleficent, Prince Phillip, Aurora; release January 29, 1959."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 66,
+    "hash": "d2d33924b44c52f74aafe1037756ae0953fc45a8bbeedf74efbb1314ead37477",
+    "questionSnapshot": {
+      "id": 66,
+      "question": "What type of animal is Timon in The Lion King?",
+      "answers": [
+        "Meerkat",
+        "Prairie dog",
+        "Otter",
+        "Weasel"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "q67 requests Pumbaa’s species, not Timon’s. Animal identifications require separate facts. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "English-language Disney character naming; original theatrical feature where a film is named. What type of animal is Timon in The Lion King?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Timon is a meerkat; a meerkat belongs to the mongoose family.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/lion-king-the-film/",
+            "locator": "Opening three synopsis paragraphs: Scar’s murder and usurpation; Mufasa as king/father; Pumbaa as warthog; Timon as meerkat; Rafiki as guiding shaman."
+          },
+          {
+            "url": "https://animals.sandiegozoo.org/animals/meerkat",
+            "locator": "Taxonomy header and ABOUT opening: Suricata suricatta, Herpestidae; member of mongoose family, with Timon identified as a meerkat."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Original Mongoose option was defensible as the broader family description, so it was replaced. Challenged the final alternatives for the same nesting problem: prairie dog, otter and weasel do not contain meerkat as a subgroup."
+      },
+      "options": [
+        {
+          "answer": "Meerkat",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Both the film synopsis and zoo reference identify Timon as a meerkat.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/lion-king-the-film/",
+              "locator": "Opening three synopsis paragraphs: Scar’s murder and usurpation; Mufasa as king/father; Pumbaa as warthog; Timon as meerkat; Rafiki as guiding shaman."
+            },
+            {
+              "url": "https://animals.sandiegozoo.org/animals/meerkat",
+              "locator": "Taxonomy header and ABOUT opening: Suricata suricatta, Herpestidae; member of mongoose family, with Timon identified as a meerkat."
+            }
+          ]
+        },
+        {
+          "answer": "Prairie dog",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "A prairie dog is not the identified meerkat.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/lion-king-the-film/",
+              "locator": "Opening three synopsis paragraphs: Scar’s murder and usurpation; Mufasa as king/father; Pumbaa as warthog; Timon as meerkat; Rafiki as guiding shaman."
+            },
+            {
+              "url": "https://animals.sandiegozoo.org/animals/meerkat",
+              "locator": "Taxonomy header and ABOUT opening: Suricata suricatta, Herpestidae; member of mongoose family, with Timon identified as a meerkat."
+            }
+          ]
+        },
+        {
+          "answer": "Otter",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "An otter is not a meerkat.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/lion-king-the-film/",
+              "locator": "Opening three synopsis paragraphs: Scar’s murder and usurpation; Mufasa as king/father; Pumbaa as warthog; Timon as meerkat; Rafiki as guiding shaman."
+            },
+            {
+              "url": "https://animals.sandiegozoo.org/animals/meerkat",
+              "locator": "Taxonomy header and ABOUT opening: Suricata suricatta, Herpestidae; member of mongoose family, with Timon identified as a meerkat."
+            }
+          ]
+        },
+        {
+          "answer": "Weasel",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "A weasel is not a meerkat; resemblance does not make them the same animal.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/lion-king-the-film/",
+              "locator": "Opening three synopsis paragraphs: Scar’s murder and usurpation; Mufasa as king/father; Pumbaa as warthog; Timon as meerkat; Rafiki as guiding shaman."
+            },
+            {
+              "url": "https://animals.sandiegozoo.org/animals/meerkat",
+              "locator": "Taxonomy header and ABOUT opening: Suricata suricatta, Herpestidae; member of mongoose family, with Timon identified as a meerkat."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 67,
+    "hash": "399c9b650d0a20c8ec83c28032793b437e824e1543c3813bf2a3b4868df691e8",
+    "questionSnapshot": {
+      "id": 67,
+      "question": "What type of animal is Pumbaa in The Lion King?",
+      "answers": [
+        "Warthog",
+        "Hyena",
+        "Rhinoceros",
+        "Hippo"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Distinct from Timon’s meerkat identity. This is distractor repair, not a correction to Warthog. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "English-language Disney character naming; original theatrical feature where a film is named. What type of animal is Pumbaa in The Lion King?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pumbaa is a warthog, which is a member of the pig family.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/lion-king-the-film/",
+            "locator": "Opening three synopsis paragraphs: Scar’s murder and usurpation; Mufasa as king/father; Pumbaa as warthog; Timon as meerkat; Rafiki as guiding shaman."
+          },
+          {
+            "url": "https://animals.sandiegozoo.org/animals/warthog",
+            "locator": "Taxonomy header FAMILY Suidae and FAMILY LIFE section on boars, sows and piglets; explains why original Pig distractor overlaps."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Original Pig overlapped the correct animal family and Wild boar was liable to be read broadly. Both were replaced. None of the final distractors is a broader label that includes warthogs."
+      },
+      "options": [
+        {
+          "answer": "Warthog",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "The film synopsis explicitly identifies Pumbaa as a warthog.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/lion-king-the-film/",
+              "locator": "Opening three synopsis paragraphs: Scar’s murder and usurpation; Mufasa as king/father; Pumbaa as warthog; Timon as meerkat; Rafiki as guiding shaman."
+            },
+            {
+              "url": "https://animals.sandiegozoo.org/animals/warthog",
+              "locator": "Taxonomy header FAMILY Suidae and FAMILY LIFE section on boars, sows and piglets; explains why original Pig distractor overlaps."
+            }
+          ]
+        },
+        {
+          "answer": "Hyena",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "A hyena is a different animal from a warthog.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/lion-king-the-film/",
+              "locator": "Opening three synopsis paragraphs: Scar’s murder and usurpation; Mufasa as king/father; Pumbaa as warthog; Timon as meerkat; Rafiki as guiding shaman."
+            },
+            {
+              "url": "https://animals.sandiegozoo.org/animals/warthog",
+              "locator": "Taxonomy header FAMILY Suidae and FAMILY LIFE section on boars, sows and piglets; explains why original Pig distractor overlaps."
+            }
+          ]
+        },
+        {
+          "answer": "Rhinoceros",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "A rhinoceros is a different animal from a warthog.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/lion-king-the-film/",
+              "locator": "Opening three synopsis paragraphs: Scar’s murder and usurpation; Mufasa as king/father; Pumbaa as warthog; Timon as meerkat; Rafiki as guiding shaman."
+            },
+            {
+              "url": "https://animals.sandiegozoo.org/animals/warthog",
+              "locator": "Taxonomy header FAMILY Suidae and FAMILY LIFE section on boars, sows and piglets; explains why original Pig distractor overlaps."
+            }
+          ]
+        },
+        {
+          "answer": "Hippo",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "A hippo is a different animal from a warthog.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/lion-king-the-film/",
+              "locator": "Opening three synopsis paragraphs: Scar’s murder and usurpation; Mufasa as king/father; Pumbaa as warthog; Timon as meerkat; Rafiki as guiding shaman."
+            },
+            {
+              "url": "https://animals.sandiegozoo.org/animals/warthog",
+              "locator": "Taxonomy header FAMILY Suidae and FAMILY LIFE section on boars, sows and piglets; explains why original Pig distractor overlaps."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 68,
+    "hash": "1e3c46980f80af148efbc698259502dd1f33bc541ecdfbcec0850cb28c18e6a2",
+    "questionSnapshot": {
+      "id": 68,
+      "question": "What are the names of Ursula's two eel servants in The Little Mermaid?",
+      "answers": [
+        "Flotsam and Jetsam",
+        "Scuttle and Slog",
+        "Barnacle and Murk",
+        "Slick and Sludge"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Distinct from Ursula’s identity, Scuttle’s name and the sequel’s henchman Undertow. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "English-language Disney character naming; original theatrical feature where a film is named. What are the names of Ursula's two eel servants in The Little Mermaid?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney’s entry identifies exactly two eel henchmen of Ursula by name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/flotsam-and-jetsam/",
+            "locator": "Entire character entry identifies the two named eels as Ursula’s henchmen."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Compared both names in each pair, not merely a plausible nautical sound. The complete pair in the official entry excludes every other proposed pair."
+      },
+      "options": [
+        {
+          "answer": "Flotsam and Jetsam",
+          "verdict": "correct",
+          "basis": "exhaustive-list",
+          "reason": "Flotsam and Jetsam are the explicitly identified pair.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/flotsam-and-jetsam/",
+              "locator": "Entire character entry identifies the two named eels as Ursula’s henchmen."
+            }
+          ]
+        },
+        {
+          "answer": "Scuttle and Slog",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "Scuttle and Slog is not this named pair.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/flotsam-and-jetsam/",
+              "locator": "Entire character entry identifies the two named eels as Ursula’s henchmen."
+            }
+          ]
+        },
+        {
+          "answer": "Barnacle and Murk",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "Barnacle and Murk is not this named pair.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/flotsam-and-jetsam/",
+              "locator": "Entire character entry identifies the two named eels as Ursula’s henchmen."
+            }
+          ]
+        },
+        {
+          "answer": "Slick and Sludge",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "Slick and Sludge is not this named pair.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/flotsam-and-jetsam/",
+              "locator": "Entire character entry identifies the two named eels as Ursula’s henchmen."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 69,
+    "hash": "88d0e4b10590ede4c1cb2e5164d46afc97eb9265e5e8cf526737ebf109e85c27",
+    "questionSnapshot": {
+      "id": 69,
+      "question": "In Hercules (1997), which group acts as the musical Greek chorus telling Hercules's story?",
+      "answers": [
+        "The Muses",
+        "The Fates",
+        "The Olympians",
+        "The Nymphs"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "q2150 asks the Muses’ musical genre; this asks which group fills a narrative role. Retain as separate identity and style facts. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "English-language Disney character naming; original theatrical feature where a film is named. In Hercules (1997), which group acts as the musical Greek chorus telling Hercules's story?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Muses function as the musical Greek chorus; the film also has an opening spoken narrator.",
+        "sources": [
+          {
+            "url": "https://d23.com/theres-no-chance-no-way-you-can-miss-out-on-these-d23-exclusive-hercules-pins/",
+            "locator": "Opening film-history paragraph describes the Muses as the traditional Greek chorus using gospel music."
+          },
+          {
+            "url": "https://d23.com/a-to-z/hercules-film/",
+            "locator": "Second synopsis paragraph explicitly identifies Pain and Panic as Hades’ two sidekicks; cast separately credits Charlton Heston as opening narrator."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Original broad narrators wording failed to distinguish Charlton Heston’s opening narration. Final wording asks for the musical Greek chorus, the precise function attributed to the Muses; none of the other groups supplies that chorus."
+      },
+      "options": [
+        {
+          "answer": "The Muses",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "The Muses are explicitly identified as the musical Greek chorus.",
+          "sources": [
+            {
+              "url": "https://d23.com/theres-no-chance-no-way-you-can-miss-out-on-these-d23-exclusive-hercules-pins/",
+              "locator": "Opening film-history paragraph describes the Muses as the traditional Greek chorus using gospel music."
+            },
+            {
+              "url": "https://d23.com/a-to-z/hercules-film/",
+              "locator": "Second synopsis paragraph explicitly identifies Pain and Panic as Hades’ two sidekicks; cast separately credits Charlton Heston as opening narrator."
+            }
+          ]
+        },
+        {
+          "answer": "The Fates",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "The Fates are not the group identified as that chorus.",
+          "sources": [
+            {
+              "url": "https://d23.com/theres-no-chance-no-way-you-can-miss-out-on-these-d23-exclusive-hercules-pins/",
+              "locator": "Opening film-history paragraph describes the Muses as the traditional Greek chorus using gospel music."
+            },
+            {
+              "url": "https://d23.com/a-to-z/hercules-film/",
+              "locator": "Second synopsis paragraph explicitly identifies Pain and Panic as Hades’ two sidekicks; cast separately credits Charlton Heston as opening narrator."
+            }
+          ]
+        },
+        {
+          "answer": "The Olympians",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "The Olympians are not the named musical chorus.",
+          "sources": [
+            {
+              "url": "https://d23.com/theres-no-chance-no-way-you-can-miss-out-on-these-d23-exclusive-hercules-pins/",
+              "locator": "Opening film-history paragraph describes the Muses as the traditional Greek chorus using gospel music."
+            },
+            {
+              "url": "https://d23.com/a-to-z/hercules-film/",
+              "locator": "Second synopsis paragraph explicitly identifies Pain and Panic as Hades’ two sidekicks; cast separately credits Charlton Heston as opening narrator."
+            }
+          ]
+        },
+        {
+          "answer": "The Nymphs",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "The Nymphs are not the named musical chorus.",
+          "sources": [
+            {
+              "url": "https://d23.com/theres-no-chance-no-way-you-can-miss-out-on-these-d23-exclusive-hercules-pins/",
+              "locator": "Opening film-history paragraph describes the Muses as the traditional Greek chorus using gospel music."
+            },
+            {
+              "url": "https://d23.com/a-to-z/hercules-film/",
+              "locator": "Second synopsis paragraph explicitly identifies Pain and Panic as Hades’ two sidekicks; cast separately credits Charlton Heston as opening narrator."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 70,
+    "hash": "a7d1dd1da34dea7fa4e4d48f8728183abb16e46bd93b85bf4883777e559ec78d",
+    "questionSnapshot": {
+      "id": 70,
+      "question": "In Moana (2016), which crab lives in the realm of monsters, Lalotai?",
+      "answers": [
+        "Tamatoa",
+        "Te Kā",
+        "Tui",
+        "Heihei"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "q1386 asks the song title Shiny, not the Lalotai resident’s name. q847 asks which realm Moana enters, not the crab’s identity. Parallel final character-name options. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "English-language Disney character naming; original theatrical feature where a film is named. In Moana (2016), which crab lives in the realm of monsters, Lalotai?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney identifies the shiny crustacean living in Lalotai as Tamatoa.",
+        "sources": [
+          {
+            "url": "https://d23.com/5-things-you-might-not-know-about-moana/",
+            "locator": "Word play subsection identifies shiny crustacean Tamatoa living in Lalotai beneath the ocean floor."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the generic Maui’s rival answer, which could describe Tamatoa, and replaced the place-name answer with a character name. Final premise uses exactly the shiny resident and Lalotai relationship supported by the cited section; it no longer requires unlocated fishhook-possession evidence."
+      },
+      "options": [
+        {
+          "answer": "Tamatoa",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Tamatoa is the named resident crab.",
+          "sources": [
+            {
+              "url": "https://d23.com/5-things-you-might-not-know-about-moana/",
+              "locator": "Word play subsection identifies shiny crustacean Tamatoa living in Lalotai beneath the ocean floor."
+            }
+          ]
+        },
+        {
+          "answer": "Te Kā",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Te Kā is not another name for the crab identified here.",
+          "sources": [
+            {
+              "url": "https://d23.com/5-things-you-might-not-know-about-moana/",
+              "locator": "Word play subsection identifies shiny crustacean Tamatoa living in Lalotai beneath the ocean floor."
+            }
+          ]
+        },
+        {
+          "answer": "Tui",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Tui is not another name for Tamatoa.",
+          "sources": [
+            {
+              "url": "https://d23.com/5-things-you-might-not-know-about-moana/",
+              "locator": "Word play subsection identifies shiny crustacean Tamatoa living in Lalotai beneath the ocean floor."
+            }
+          ]
+        },
+        {
+          "answer": "Heihei",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Heihei is not another name for Tamatoa.",
+          "sources": [
+            {
+              "url": "https://d23.com/5-things-you-might-not-know-about-moana/",
+              "locator": "Word play subsection identifies shiny crustacean Tamatoa living in Lalotai beneath the ocean floor."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 71,
+    "hash": "929da5d0489478c6bea869dc498c9e03590b552023daed08f9a96f0b52536162",
+    "questionSnapshot": {
+      "id": 71,
+      "question": "In The Incredibles, what is the real name of the villain Syndrome?",
+      "answers": [
+        "Buddy Pine",
+        "Oliver Sansweet",
+        "Gazerbeam",
+        "Chad Brentley"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Character category is permitted for Pixar characters. Distinct from the island lair and other superheroes’ real names. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "English-language Disney character naming; original theatrical feature where a film is named. In The Incredibles, what is the real name of the villain Syndrome?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney’s Syndrome character profile explicitly gives Buddy Pine as his other name.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-incredibles",
+            "locator": "The Characters / Syndrome profile explicitly gives Buddy Pine as his other name."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished personal identity from superhero aliases and other named people. The explicit Syndrome/Buddy Pine identification excludes the three different proposed identities, without assuming that a short plot synopsis establishes every detail."
+      },
+      "options": [
+        {
+          "answer": "Buddy Pine",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Buddy Pine is explicitly given in the Syndrome profile.",
+          "sources": [
+            {
+              "url": "https://movies.disney.com/the-incredibles",
+              "locator": "The Characters / Syndrome profile explicitly gives Buddy Pine as his other name."
+            }
+          ]
+        },
+        {
+          "answer": "Oliver Sansweet",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Oliver Sansweet is not the personal name given for Syndrome.",
+          "sources": [
+            {
+              "url": "https://movies.disney.com/the-incredibles",
+              "locator": "The Characters / Syndrome profile explicitly gives Buddy Pine as his other name."
+            }
+          ]
+        },
+        {
+          "answer": "Gazerbeam",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Gazerbeam is not Buddy Pine’s personal name.",
+          "sources": [
+            {
+              "url": "https://movies.disney.com/the-incredibles",
+              "locator": "The Characters / Syndrome profile explicitly gives Buddy Pine as his other name."
+            }
+          ]
+        },
+        {
+          "answer": "Chad Brentley",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Chad Brentley is not the name given for Syndrome.",
+          "sources": [
+            {
+              "url": "https://movies.disney.com/the-incredibles",
+              "locator": "The Characters / Syndrome profile explicitly gives Buddy Pine as his other name."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 72,
+    "hash": "929dcbb52497230c671d31e11274b930166fe62f5519ed410cb6d2a265bf5deb",
+    "questionSnapshot": {
+      "id": 72,
+      "question": "In Toy Story (1995), what does Buzz shout before jumping off Andy's bed to demonstrate that he can fly?",
+      "answers": [
+        "To infinity and beyond!",
+        "I'm a Space Ranger!",
+        "Reach for the sky!",
+        "One universe, one destiny!"
+      ],
+      "difficulty": "easy",
+      "category": "characters"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Distinct from Buzz’s space-ranger identity and Star Command. Familiar line merits easy; screenplay is primary authored evidence on a third-party mirror. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "English-language Disney character naming; original theatrical feature where a film is named. In Toy Story (1995), what does Buzz shout before jumping off Andy's bed to demonstrate that he can fly?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The final draft gives Buzz’s shouted line directly before his bedpost jump in Andy’s room.",
+        "sources": [
+          {
+            "url": "https://ismbucket.s3.amazonaws.com/scriptLibrary/cleanscripts/TOY%20STORY.pdf",
+            "locator": "November 1995 final draft, PDF page index 25, bedpost jump immediately before rubber-ball bounce and Hot Wheels track; Buzz has one shouted line. Original screenplay on a third-party host, corroborated by Disney’s own quote attribution."
+          },
+          {
+            "url": "https://news.disney.com/ultimate-list-toy-story-quotes",
+            "locator": "Buzz Lightyear subsection attributes To infinity and beyond to Buzz; Woody subsection attributes Reach for the sky to Woody."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Original famous catchphrase wording could invite other actual Buzz quotations. The final scene cue fixes a single utterance; read the line and subsequent bounce/track action together. Each distractor is excluded as a different utterance, not because Buzz could never say it elsewhere."
+      },
+      "options": [
+        {
+          "answer": "To infinity and beyond!",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "This is the line immediately preceding the specified jump.",
+          "sources": [
+            {
+              "url": "https://ismbucket.s3.amazonaws.com/scriptLibrary/cleanscripts/TOY%20STORY.pdf",
+              "locator": "November 1995 final draft, PDF page index 25, bedpost jump immediately before rubber-ball bounce and Hot Wheels track; Buzz has one shouted line. Original screenplay on a third-party host, corroborated by Disney’s own quote attribution."
+            },
+            {
+              "url": "https://news.disney.com/ultimate-list-toy-story-quotes",
+              "locator": "Buzz Lightyear subsection attributes To infinity and beyond to Buzz; Woody subsection attributes Reach for the sky to Woody."
+            }
+          ]
+        },
+        {
+          "answer": "I'm a Space Ranger!",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "This is not the shouted line at that exact cue.",
+          "sources": [
+            {
+              "url": "https://ismbucket.s3.amazonaws.com/scriptLibrary/cleanscripts/TOY%20STORY.pdf",
+              "locator": "November 1995 final draft, PDF page index 25, bedpost jump immediately before rubber-ball bounce and Hot Wheels track; Buzz has one shouted line. Original screenplay on a third-party host, corroborated by Disney’s own quote attribution."
+            },
+            {
+              "url": "https://news.disney.com/ultimate-list-toy-story-quotes",
+              "locator": "Buzz Lightyear subsection attributes To infinity and beyond to Buzz; Woody subsection attributes Reach for the sky to Woody."
+            }
+          ]
+        },
+        {
+          "answer": "Reach for the sky!",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "This is not the bedpost-jump line; Disney’s quote list assigns this phrase to Woody.",
+          "sources": [
+            {
+              "url": "https://ismbucket.s3.amazonaws.com/scriptLibrary/cleanscripts/TOY%20STORY.pdf",
+              "locator": "November 1995 final draft, PDF page index 25, bedpost jump immediately before rubber-ball bounce and Hot Wheels track; Buzz has one shouted line. Original screenplay on a third-party host, corroborated by Disney’s own quote attribution."
+            },
+            {
+              "url": "https://news.disney.com/ultimate-list-toy-story-quotes",
+              "locator": "Buzz Lightyear subsection attributes To infinity and beyond to Buzz; Woody subsection attributes Reach for the sky to Woody."
+            }
+          ]
+        },
+        {
+          "answer": "One universe, one destiny!",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "This does not match the line at the specified screenplay cue.",
+          "sources": [
+            {
+              "url": "https://ismbucket.s3.amazonaws.com/scriptLibrary/cleanscripts/TOY%20STORY.pdf",
+              "locator": "November 1995 final draft, PDF page index 25, bedpost jump immediately before rubber-ball bounce and Hot Wheels track; Buzz has one shouted line. Original screenplay on a third-party host, corroborated by Disney’s own quote attribution."
+            },
+            {
+              "url": "https://news.disney.com/ultimate-list-toy-story-quotes",
+              "locator": "Buzz Lightyear subsection attributes To infinity and beyond to Buzz; Woody subsection attributes Reach for the sky to Woody."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 73,
+    "hash": "66db3b6c0b5e32b1df9823e1a9c6d8e542ba88da577e2889471b4813146d2216",
+    "questionSnapshot": {
+      "id": 73,
+      "question": "In Coco, who originally established the Rivera family's ban on music?",
+      "answers": [
+        "Mamá Imelda",
+        "Mamá Coco",
+        "Abuelita Elena",
+        "Papá Julio"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "q664 asks which ancestor is Imelda, q1288 asks Elena’s identity, and q2177 asks the family trade; these are different facts. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "English-language Disney character naming; original theatrical feature where a film is named. In Coco, who originally established the Rivera family's ban on music?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar’s director explicitly names Imelda as the source of the Rivera music ban.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/coco",
+            "locator": "THE CHARACTERS / Mamá Imelda: director Lee Unkrich identifies her as the source of the family music ban; compare Abuelita and Mamá Coco profiles."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Actively challenged Elena, who also forbids music in the story. Originally established now separates originating a rule from enforcing it. Pixar’s explicit origin attribution excludes Coco, Elena and Julio under that temporal wording."
+      },
+      "options": [
+        {
+          "answer": "Mamá Imelda",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Imelda is the stated originator.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/coco",
+              "locator": "THE CHARACTERS / Mamá Imelda: director Lee Unkrich identifies her as the source of the family music ban; compare Abuelita and Mamá Coco profiles."
+            }
+          ]
+        },
+        {
+          "answer": "Mamá Coco",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Coco is not the ancestor identified as the source of the ban.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/coco",
+              "locator": "THE CHARACTERS / Mamá Imelda: director Lee Unkrich identifies her as the source of the family music ban; compare Abuelita and Mamá Coco profiles."
+            }
+          ]
+        },
+        {
+          "answer": "Abuelita Elena",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Elena’s enforcement is not the original establishment attributed to Imelda.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/coco",
+              "locator": "THE CHARACTERS / Mamá Imelda: director Lee Unkrich identifies her as the source of the family music ban; compare Abuelita and Mamá Coco profiles."
+            }
+          ]
+        },
+        {
+          "answer": "Papá Julio",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Julio is not the person identified as the source.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/coco",
+              "locator": "THE CHARACTERS / Mamá Imelda: director Lee Unkrich identifies her as the source of the family music ban; compare Abuelita and Mamá Coco profiles."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 74,
+    "hash": "5e27ed695715fa6e0601ceca9a004b89c48a8cc94d4347b7e8ef5009baa2786e",
+    "questionSnapshot": {
+      "id": 74,
+      "question": "In the animated Lilo & Stitch (2002), what is the name of the social worker assessing Nani's care of Lilo?",
+      "answers": [
+        "Cobra Bubbles",
+        "Agent Hood",
+        "Mr. Big",
+        "Officer Reynolds"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Distinct from Nani’s name, David Kawena’s role and the alien officials; assess-care wording avoids implying that removing Lilo is his sole motive. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "English-language Disney character naming; original theatrical feature where a film is named. In the animated Lilo & Stitch (2002), what is the name of the social worker assessing Nani's care of Lilo?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The animated 2002 film’s social worker is Cobra Bubbles.",
+        "sources": [
+          {
+            "url": "https://d23.com/giving-thanks-for-our-favorite-disney-families/",
+            "locator": "Lilo and Stitch subsection, following the ohana explanation: identifies Cobra Bubbles as the social worker in the sisters’ family circle."
+          },
+          {
+            "url": "https://d23.com/a-to-z/lilo-stitch-film/",
+            "locator": "2002 animated-film entry and cast identifies Cobra Bubbles, voiced by Ving Rhames."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Fixed the animated 2002 context to exclude the changed social-services roles in the 2025 remake. Rechecked the family article’s direct role attribution, rather than using a cast name alone to prove occupation. None of the other proper names identifies this worker."
+      },
+      "options": [
+        {
+          "answer": "Cobra Bubbles",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Cobra Bubbles is the identified social worker and animated-film cast character.",
+          "sources": [
+            {
+              "url": "https://d23.com/giving-thanks-for-our-favorite-disney-families/",
+              "locator": "Lilo and Stitch subsection, following the ohana explanation: identifies Cobra Bubbles as the social worker in the sisters’ family circle."
+            },
+            {
+              "url": "https://d23.com/a-to-z/lilo-stitch-film/",
+              "locator": "2002 animated-film entry and cast identifies Cobra Bubbles, voiced by Ving Rhames."
+            }
+          ]
+        },
+        {
+          "answer": "Agent Hood",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Agent Hood is not the social worker identified in these references.",
+          "sources": [
+            {
+              "url": "https://d23.com/giving-thanks-for-our-favorite-disney-families/",
+              "locator": "Lilo and Stitch subsection, following the ohana explanation: identifies Cobra Bubbles as the social worker in the sisters’ family circle."
+            },
+            {
+              "url": "https://d23.com/a-to-z/lilo-stitch-film/",
+              "locator": "2002 animated-film entry and cast identifies Cobra Bubbles, voiced by Ving Rhames."
+            }
+          ]
+        },
+        {
+          "answer": "Mr. Big",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Mr. Big is not the identified social worker.",
+          "sources": [
+            {
+              "url": "https://d23.com/giving-thanks-for-our-favorite-disney-families/",
+              "locator": "Lilo and Stitch subsection, following the ohana explanation: identifies Cobra Bubbles as the social worker in the sisters’ family circle."
+            },
+            {
+              "url": "https://d23.com/a-to-z/lilo-stitch-film/",
+              "locator": "2002 animated-film entry and cast identifies Cobra Bubbles, voiced by Ving Rhames."
+            }
+          ]
+        },
+        {
+          "answer": "Officer Reynolds",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Officer Reynolds is not the identified social worker.",
+          "sources": [
+            {
+              "url": "https://d23.com/giving-thanks-for-our-favorite-disney-families/",
+              "locator": "Lilo and Stitch subsection, following the ohana explanation: identifies Cobra Bubbles as the social worker in the sisters’ family circle."
+            },
+            {
+              "url": "https://d23.com/a-to-z/lilo-stitch-film/",
+              "locator": "2002 animated-film entry and cast identifies Cobra Bubbles, voiced by Ving Rhames."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 75,
+    "hash": "9453e28f722a1868b075313a7122c6de38b71a7f63c4c19a676409f5e9dc44a4",
+    "questionSnapshot": {
+      "id": 75,
+      "question": "What are the names of Hades' two bumbling henchmen in Hercules?",
+      "answers": [
+        "Pain and Panic",
+        "Fear and Dread",
+        "Chaos and Discord",
+        "Slime and Sludge"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Distinct from Hades’ villain identity, the Fates’ shared eye and unrelated character duos. Main theatrical feature is in scope. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "English-language Disney character naming; original theatrical feature where a film is named. What are the names of Hades' two bumbling henchmen in Hercules?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The film synopsis gives Hades’ two sidekicks as Pain and Panic.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/hercules-film/",
+            "locator": "Second synopsis paragraph explicitly identifies Pain and Panic as Hades’ two sidekicks; cast separately credits Charlton Heston as opening narrator."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Read the complete two-character identification and checked both entries in each answer. The other paired abstract nouns are plausible invented names but are not alternate identities for the film’s sidekicks."
+      },
+      "options": [
+        {
+          "answer": "Pain and Panic",
+          "verdict": "correct",
+          "basis": "exhaustive-list",
+          "reason": "This exactly matches the named pair.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/hercules-film/",
+              "locator": "Second synopsis paragraph explicitly identifies Pain and Panic as Hades’ two sidekicks; cast separately credits Charlton Heston as opening narrator."
+            }
+          ]
+        },
+        {
+          "answer": "Fear and Dread",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "Fear and Dread does not match the named pair.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/hercules-film/",
+              "locator": "Second synopsis paragraph explicitly identifies Pain and Panic as Hades’ two sidekicks; cast separately credits Charlton Heston as opening narrator."
+            }
+          ]
+        },
+        {
+          "answer": "Chaos and Discord",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "Chaos and Discord does not match the named pair.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/hercules-film/",
+              "locator": "Second synopsis paragraph explicitly identifies Pain and Panic as Hades’ two sidekicks; cast separately credits Charlton Heston as opening narrator."
+            }
+          ]
+        },
+        {
+          "answer": "Slime and Sludge",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "Slime and Sludge does not match the named pair.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/hercules-film/",
+              "locator": "Second synopsis paragraph explicitly identifies Pain and Panic as Hades’ two sidekicks; cast separately credits Charlton Heston as opening narrator."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 76,
+    "hash": "41552c637daf60f0f6962791c70111f9274ca28ba71e494a3392e86565ad5b8a",
+    "questionSnapshot": {
+      "id": 76,
+      "question": "In Cinderella, what are the names of Cinderella's two main mouse friends?",
+      "answers": [
+        "Jaq and Gus",
+        "Tic and Tac",
+        "Nibbles and Chuck",
+        "Tom and Jerry"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Distinct from Gus’s yellow shirt and the mice’s dressmaking action. Options are uniformly pairs. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "English-language Disney character naming; original theatrical feature where a film is named. In Cinderella, what are the names of Cinderella's two main mouse friends?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Cinderella mouse helpers are explicitly described as led by Jaq and Gus.",
+        "sources": [
+          {
+            "url": "https://d23.com/enchanting-cinderella-facts-fit-royalty/",
+            "locator": "Section 1: mouse helpers led by Jaq and Gus; other mouse names also discussed, so the question is about the main pair, not all mice."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The source names additional mice, so it would not prove a claim that Cinderella has only two mouse friends. The actual wording says two main friends; the explicit leading-pair identification supports that narrower premise and excludes all alternative pairs."
+      },
+      "options": [
+        {
+          "answer": "Jaq and Gus",
+          "verdict": "correct",
+          "basis": "exhaustive-list",
+          "reason": "Jaq and Gus are the identified leading pair.",
+          "sources": [
+            {
+              "url": "https://d23.com/enchanting-cinderella-facts-fit-royalty/",
+              "locator": "Section 1: mouse helpers led by Jaq and Gus; other mouse names also discussed, so the question is about the main pair, not all mice."
+            }
+          ]
+        },
+        {
+          "answer": "Tic and Tac",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "Tic and Tac is not the identified leading pair.",
+          "sources": [
+            {
+              "url": "https://d23.com/enchanting-cinderella-facts-fit-royalty/",
+              "locator": "Section 1: mouse helpers led by Jaq and Gus; other mouse names also discussed, so the question is about the main pair, not all mice."
+            }
+          ]
+        },
+        {
+          "answer": "Nibbles and Chuck",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "Nibbles and Chuck is not the identified leading pair.",
+          "sources": [
+            {
+              "url": "https://d23.com/enchanting-cinderella-facts-fit-royalty/",
+              "locator": "Section 1: mouse helpers led by Jaq and Gus; other mouse names also discussed, so the question is about the main pair, not all mice."
+            }
+          ]
+        },
+        {
+          "answer": "Tom and Jerry",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "Tom and Jerry is not the identified leading pair.",
+          "sources": [
+            {
+              "url": "https://d23.com/enchanting-cinderella-facts-fit-royalty/",
+              "locator": "Section 1: mouse helpers led by Jaq and Gus; other mouse names also discussed, so the question is about the main pair, not all mice."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 77,
+    "hash": "1defb4deb3c08f137db887ea154a5cebd614654af3f2e66d469e431c10fe534a",
+    "questionSnapshot": {
+      "id": 77,
+      "question": "In Tarzan (1999), what is the name of his talkative gorilla friend?",
+      "answers": [
+        "Terk",
+        "Kala",
+        "Tantor",
+        "Kerchak"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "q29 asks the mother; q872 the elephant; q2296 the troop leader. Each is a separate character role. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "English-language Disney character naming; original theatrical feature where a film is named. In Tarzan (1999), what is the name of his talkative gorilla friend?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The synopsis distinguishes talkative gorilla Terk from parental figures Kala/Kerchak and elephant Tantor.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/tarzan-film/",
+            "locator": "Opening synopsis: Kerchak and Kala raise Tarzan; his companions are talkative gorilla Terk and elephant Tantor."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The word friend alone could be stretched to include relatives. Final wording tracks the source’s talkative gorilla description; the source explicitly separates the parental pair and elephant. No unsupported childhood chronology is required."
+      },
+      "options": [
+        {
+          "answer": "Terk",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Terk is the described talkative gorilla companion.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/tarzan-film/",
+              "locator": "Opening synopsis: Kerchak and Kala raise Tarzan; his companions are talkative gorilla Terk and elephant Tantor."
+            }
+          ]
+        },
+        {
+          "answer": "Kala",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Kala is the adoptive mother figure, not the companion identified here.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/tarzan-film/",
+              "locator": "Opening synopsis: Kerchak and Kala raise Tarzan; his companions are talkative gorilla Terk and elephant Tantor."
+            }
+          ]
+        },
+        {
+          "answer": "Tantor",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Tantor is an elephant, not this gorilla.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/tarzan-film/",
+              "locator": "Opening synopsis: Kerchak and Kala raise Tarzan; his companions are talkative gorilla Terk and elephant Tantor."
+            }
+          ]
+        },
+        {
+          "answer": "Kerchak",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Kerchak leads the gorilla family as Kala’s mate, not the described talkative companion.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/tarzan-film/",
+              "locator": "Opening synopsis: Kerchak and Kala raise Tarzan; his companions are talkative gorilla Terk and elephant Tantor."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 78,
+    "hash": "71496a49119ce94d1dbe9657b9bb65e9c1b181b80a247dfe32cde57a80b2fd25",
+    "questionSnapshot": {
+      "id": 78,
+      "question": "In The Jungle Book, what is the name of the friendly bear?",
+      "answers": [
+        "Baloo",
+        "Bagheera",
+        "Shere Khan",
+        "King Louie"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "q2451 asks a specific sequel action. That action is independent of identifying the original film’s bear. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "English-language Disney character naming; original theatrical feature where a film is named. In The Jungle Book, what is the name of the friendly bear?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Jungle Book synopsis distinguishes the friendly bear from the panther, tiger and ape king.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/jungle-book-the-film/",
+            "locator": "Opening synopsis: Baloo is a lovable bear; Bagheera a panther; Shere Khan a tiger; King Louie belongs to the apes."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Did not assume that being friendly excludes Bagheera: animal identity is decisive. All three distractors have animal types that exclude bear under the literal wording."
+      },
+      "options": [
+        {
+          "answer": "Baloo",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Baloo is the friendly bear.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/jungle-book-the-film/",
+              "locator": "Opening synopsis: Baloo is a lovable bear; Bagheera a panther; Shere Khan a tiger; King Louie belongs to the apes."
+            }
+          ]
+        },
+        {
+          "answer": "Bagheera",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Bagheera is a panther.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/jungle-book-the-film/",
+              "locator": "Opening synopsis: Baloo is a lovable bear; Bagheera a panther; Shere Khan a tiger; King Louie belongs to the apes."
+            }
+          ]
+        },
+        {
+          "answer": "Shere Khan",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Shere Khan is a tiger.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/jungle-book-the-film/",
+              "locator": "Opening synopsis: Baloo is a lovable bear; Bagheera a panther; Shere Khan a tiger; King Louie belongs to the apes."
+            }
+          ]
+        },
+        {
+          "answer": "King Louie",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "King Louie is an ape, not a bear.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/jungle-book-the-film/",
+              "locator": "Opening synopsis: Baloo is a lovable bear; Bagheera a panther; Shere Khan a tiger; King Louie belongs to the apes."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 81,
+    "hash": "cec21dcd45491e5c4351bb7e732b28b1cfe53f6fdfa75151276ca07469338829",
+    "questionSnapshot": {
+      "id": 81,
+      "question": "Which of these is NOT one of Snow White's Seven Dwarfs?",
+      "answers": [
+        "Jumpy",
+        "Bashful",
+        "Grumpy",
+        "Dopey"
+      ],
+      "difficulty": "easy",
+      "category": "characters"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Count q57 and mute-character q286 test different facts. Basic roster recognition is easy rather than hard. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "English-language Disney character naming; original theatrical feature where a film is named. Which of these is NOT one of Snow White's Seven Dwarfs?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The official seven-name roster includes Bashful, Grumpy and Dopey and excludes Jumpy.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/seven-dwarfs/",
+            "locator": "Entire entry is the complete seven-name roster: Doc, Sleepy, Happy, Grumpy, Sneezy, Bashful, Dopey."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Reversed the verdict test to account for NOT, then compared every option against the exhaustive official list. This is not an inference from a short synopsis omitting a name."
+      },
+      "options": [
+        {
+          "answer": "Jumpy",
+          "verdict": "correct",
+          "basis": "exhaustive-list",
+          "reason": "Jumpy is absent from the complete seven-name roster, so it is correct for NOT.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/seven-dwarfs/",
+              "locator": "Entire entry is the complete seven-name roster: Doc, Sleepy, Happy, Grumpy, Sneezy, Bashful, Dopey."
+            }
+          ]
+        },
+        {
+          "answer": "Bashful",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "Bashful is present, making this wrong for NOT.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/seven-dwarfs/",
+              "locator": "Entire entry is the complete seven-name roster: Doc, Sleepy, Happy, Grumpy, Sneezy, Bashful, Dopey."
+            }
+          ]
+        },
+        {
+          "answer": "Grumpy",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "Grumpy is present, making this wrong for NOT.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/seven-dwarfs/",
+              "locator": "Entire entry is the complete seven-name roster: Doc, Sleepy, Happy, Grumpy, Sneezy, Bashful, Dopey."
+            }
+          ]
+        },
+        {
+          "answer": "Dopey",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "Dopey is present, making this wrong for NOT.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/seven-dwarfs/",
+              "locator": "Entire entry is the complete seven-name roster: Doc, Sleepy, Happy, Grumpy, Sneezy, Bashful, Dopey."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 83,
+    "hash": "611437f2cb0015b2359581486f6fb08a356acfa2c5251a8f9fe1dbd4a2f892d7",
+    "questionSnapshot": {
+      "id": 83,
+      "question": "What is the name of Yzma's muscular henchman in The Emperor's New Groove?",
+      "answers": [
+        "Kronk",
+        "Pacha",
+        "Bucky",
+        "Tipo"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Distinct from Kronk’s cooking, squirrel language and conscience figures. A main sidekick’s identity is medium, not obscure hard recall. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "English-language Disney character naming; original theatrical feature where a film is named. What is the name of Yzma's muscular henchman in The Emperor's New Groove?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney identifies Kronk as Yzma’s muscular manservant pursuing Kuzco.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/emperors-new-groove-the-film/",
+            "locator": "Opening synopsis contrasts peasant Pacha with Yzma’s muscular manservant Kronk; cast confirms name."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed unqualified loyal and dim-witted character judgments. The final muscular henchman identification is directly supported; Pacha’s different allegiance is explicit and the two other proper names do not identify Kronk."
+      },
+      "options": [
+        {
+          "answer": "Kronk",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Kronk is the identified muscular helper.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/emperors-new-groove-the-film/",
+              "locator": "Opening synopsis contrasts peasant Pacha with Yzma’s muscular manservant Kronk; cast confirms name."
+            }
+          ]
+        },
+        {
+          "answer": "Pacha",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Pacha is the peasant helping Kuzco, explicitly contrasted with Yzma’s helper.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/emperors-new-groove-the-film/",
+              "locator": "Opening synopsis contrasts peasant Pacha with Yzma’s muscular manservant Kronk; cast confirms name."
+            }
+          ]
+        },
+        {
+          "answer": "Bucky",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Bucky is not the named muscular manservant.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/emperors-new-groove-the-film/",
+              "locator": "Opening synopsis contrasts peasant Pacha with Yzma’s muscular manservant Kronk; cast confirms name."
+            }
+          ]
+        },
+        {
+          "answer": "Tipo",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Tipo is not the manservant named in the synopsis.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/emperors-new-groove-the-film/",
+              "locator": "Opening synopsis contrasts peasant Pacha with Yzma’s muscular manservant Kronk; cast confirms name."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 84,
+    "hash": "3d16cfe937df91e418f521c2f154efb6e208a4e8cefffe6fbcd28f8c806387cc",
+    "questionSnapshot": {
+      "id": 84,
+      "question": "In Atlantis: The Lost Empire, what is the name of the young linguist and cartographer?",
+      "answers": [
+        "Milo Thatch",
+        "Lewis Robinson",
+        "Wilbur Robinson",
+        "Pleakley"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Distinct from the expedition’s funder, mechanic, commander and Milo’s voice actor. Lead-character name merits medium. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "English-language Disney character naming; original theatrical feature where a film is named. In Atlantis: The Lost Empire, what is the name of the young linguist and cartographer?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The opening synopsis identifies the young linguist/cartographer by name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/atlantis-the-lost-empire-film/",
+            "locator": "Opening sentence identifies young museum cartographer and linguistics expert Milo Thatch."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked both professional descriptors in the source’s opening sentence. They attach to Milo Thatch, and no alternative is an alias for him; no inference from a generic film title was used."
+      },
+      "options": [
+        {
+          "answer": "Milo Thatch",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Milo Thatch is the named linguist and cartographer.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/atlantis-the-lost-empire-film/",
+              "locator": "Opening sentence identifies young museum cartographer and linguistics expert Milo Thatch."
+            }
+          ]
+        },
+        {
+          "answer": "Lewis Robinson",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Lewis Robinson is not the expedition expert identified here.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/atlantis-the-lost-empire-film/",
+              "locator": "Opening sentence identifies young museum cartographer and linguistics expert Milo Thatch."
+            }
+          ]
+        },
+        {
+          "answer": "Wilbur Robinson",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Wilbur Robinson is not Milo Thatch’s identity.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/atlantis-the-lost-empire-film/",
+              "locator": "Opening sentence identifies young museum cartographer and linguistics expert Milo Thatch."
+            }
+          ]
+        },
+        {
+          "answer": "Pleakley",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Pleakley is not the named Atlantis cartographer.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/atlantis-the-lost-empire-film/",
+              "locator": "Opening sentence identifies young museum cartographer and linguistics expert Milo Thatch."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 85,
+    "hash": "c81c7641714fc50cdb99227f13c1b6dea59695f35194e365ba51f22d42c2363e",
+    "questionSnapshot": {
+      "id": 85,
+      "question": "What are the names of Madame Medusa's two pet reptiles in The Rescuers?",
+      "answers": [
+        "Brutus and Nero",
+        "Snap and Crunch",
+        "Jaws and Rex",
+        "Fluffy and Spike"
+      ],
+      "difficulty": "hard",
+      "category": "characters"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "No other Medusa-pet name question found across shards. Retains hard for relatively obscure paired-name recall; neutral species wording is clarification, not an established factual correction. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "English-language Disney character naming; original theatrical feature where a film is named. What are the names of Madame Medusa's two pet reptiles in The Rescuers?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney names Medusa’s pet pair Nero and Brutus; its two entries disagree on the precise crocodilian label.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/nero-and-brutus/",
+            "locator": "Entire entry names Madame Medusa’s pet pair Nero and Brutus and calls them crocodiles."
+          },
+          {
+            "url": "https://d23.com/a-to-z/rescuers-the-film/",
+            "locator": "Second synopsis paragraph calls the two reptiles alligators, contrary to Nero and Brutus entry. Final question avoids choosing between these labels."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged the animal premise against both D23 entries and found alligator/crocodile inconsistency. Pet reptiles remains true under either description. Pair order is immaterial; none of the three alternative pairs matches either canonical name."
+      },
+      "options": [
+        {
+          "answer": "Brutus and Nero",
+          "verdict": "correct",
+          "basis": "exhaustive-list",
+          "reason": "Brutus and Nero is the same pair as Nero and Brutus, in reverse order.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/nero-and-brutus/",
+              "locator": "Entire entry names Madame Medusa’s pet pair Nero and Brutus and calls them crocodiles."
+            },
+            {
+              "url": "https://d23.com/a-to-z/rescuers-the-film/",
+              "locator": "Second synopsis paragraph calls the two reptiles alligators, contrary to Nero and Brutus entry. Final question avoids choosing between these labels."
+            }
+          ]
+        },
+        {
+          "answer": "Snap and Crunch",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "Snap and Crunch is not the complete named pair.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/nero-and-brutus/",
+              "locator": "Entire entry names Madame Medusa’s pet pair Nero and Brutus and calls them crocodiles."
+            },
+            {
+              "url": "https://d23.com/a-to-z/rescuers-the-film/",
+              "locator": "Second synopsis paragraph calls the two reptiles alligators, contrary to Nero and Brutus entry. Final question avoids choosing between these labels."
+            }
+          ]
+        },
+        {
+          "answer": "Jaws and Rex",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "Jaws and Rex is not the identified pair.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/nero-and-brutus/",
+              "locator": "Entire entry names Madame Medusa’s pet pair Nero and Brutus and calls them crocodiles."
+            },
+            {
+              "url": "https://d23.com/a-to-z/rescuers-the-film/",
+              "locator": "Second synopsis paragraph calls the two reptiles alligators, contrary to Nero and Brutus entry. Final question avoids choosing between these labels."
+            }
+          ]
+        },
+        {
+          "answer": "Fluffy and Spike",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "Fluffy and Spike is not the identified pair.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/nero-and-brutus/",
+              "locator": "Entire entry names Madame Medusa’s pet pair Nero and Brutus and calls them crocodiles."
+            },
+            {
+              "url": "https://d23.com/a-to-z/rescuers-the-film/",
+              "locator": "Second synopsis paragraph calls the two reptiles alligators, contrary to Nero and Brutus entry. Final question avoids choosing between these labels."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 86,
+    "hash": "485e06b8cd1cf1cfb694a201755a5412278591c8cf9c3e36a96830966e5b3e7f",
+    "questionSnapshot": {
+      "id": 86,
+      "question": "In which U.S. state is Walt Disney World located?",
+      "answers": [
+        "Florida",
+        "California",
+        "Texas",
+        "New York"
+      ],
+      "difficulty": "easy",
+      "category": "parks"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Distinct from Disneyland’s Anaheim location. Geography is enduring; no unbounded operational claim. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "Walt Disney World, specified park/attraction; current naming/layout at review date.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The resort is explicitly located near Orlando in Florida.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/walt-disney-world-resort/",
+            "locator": "Opening sentence locates resort near Orlando, Florida and gives October 1, 1971 opening."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished Walt Disney World from the original Disneyland resort. The full resort’s location is Florida, so the other mutually exclusive state options cannot also answer the question."
+      },
+      "options": [
+        {
+          "answer": "Florida",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Florida is the stated US state.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/walt-disney-world-resort/",
+              "locator": "Opening sentence locates resort near Orlando, Florida and gives October 1, 1971 opening."
+            }
+          ]
+        },
+        {
+          "answer": "California",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "California is not the state identified for this resort.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/walt-disney-world-resort/",
+              "locator": "Opening sentence locates resort near Orlando, Florida and gives October 1, 1971 opening."
+            }
+          ]
+        },
+        {
+          "answer": "Texas",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Texas is not the stated location.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/walt-disney-world-resort/",
+              "locator": "Opening sentence locates resort near Orlando, Florida and gives October 1, 1971 opening."
+            }
+          ]
+        },
+        {
+          "answer": "New York",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "New York is not the stated location.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/walt-disney-world-resort/",
+              "locator": "Opening sentence locates resort near Orlando, Florida and gives October 1, 1971 opening."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 88,
+    "hash": "11058a311e61d16a5fec5e92358aec836a15091c1b76ca2bbb87f46ae67fb479",
+    "questionSnapshot": {
+      "id": 88,
+      "question": "What is the name of the iconic castle at Magic Kingdom in Walt Disney World?",
+      "answers": [
+        "Cinderella Castle",
+        "Sleeping Beauty Castle",
+        "Aurora's Palace",
+        "Enchanted Castle"
+      ],
+      "difficulty": "easy",
+      "category": "parks"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Distinct from q110 at Disneyland, q94’s land and the suite/restaurant inside the castle. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "Walt Disney World, specified park/attraction; current naming/layout at review date.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-01-30",
+      "premise": {
+        "reason": "Magic Kingdom’s central castle is officially named Cinderella Castle.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/cinderella-castle/",
+            "locator": "Page title and introduction identify Cinderella Castle as Magic Kingdom’s symbol; A Fairytale Come to Life locates its gateway at Fantasyland."
+          },
+          {
+            "url": "https://d23.com/a-to-z/cinderella-castle/",
+            "locator": "Opening sentence: castle at entrance to Fantasyland in Magic Kingdom Park; distinguishes Disneyland’s Sleeping Beauty Castle later in the same paragraph."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Fixed location in the original wording is decisive: Disneyland’s Sleeping Beauty Castle does not become correct merely because it is also a Disney icon. The remaining names do not match the official Magic Kingdom name."
+      },
+      "options": [
+        {
+          "answer": "Cinderella Castle",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Cinderella Castle is the official attraction name.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/cinderella-castle/",
+              "locator": "Page title and introduction identify Cinderella Castle as Magic Kingdom’s symbol; A Fairytale Come to Life locates its gateway at Fantasyland."
+            },
+            {
+              "url": "https://d23.com/a-to-z/cinderella-castle/",
+              "locator": "Opening sentence: castle at entrance to Fantasyland in Magic Kingdom Park; distinguishes Disneyland’s Sleeping Beauty Castle later in the same paragraph."
+            }
+          ]
+        },
+        {
+          "answer": "Sleeping Beauty Castle",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Sleeping Beauty Castle is the different Disneyland castle referenced in Disney’s comparison.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/cinderella-castle/",
+              "locator": "Page title and introduction identify Cinderella Castle as Magic Kingdom’s symbol; A Fairytale Come to Life locates its gateway at Fantasyland."
+            },
+            {
+              "url": "https://d23.com/a-to-z/cinderella-castle/",
+              "locator": "Opening sentence: castle at entrance to Fantasyland in Magic Kingdom Park; distinguishes Disneyland’s Sleeping Beauty Castle later in the same paragraph."
+            }
+          ]
+        },
+        {
+          "answer": "Aurora's Palace",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Aurora’s Palace is not this attraction’s official name.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/cinderella-castle/",
+              "locator": "Page title and introduction identify Cinderella Castle as Magic Kingdom’s symbol; A Fairytale Come to Life locates its gateway at Fantasyland."
+            },
+            {
+              "url": "https://d23.com/a-to-z/cinderella-castle/",
+              "locator": "Opening sentence: castle at entrance to Fantasyland in Magic Kingdom Park; distinguishes Disneyland’s Sleeping Beauty Castle later in the same paragraph."
+            }
+          ]
+        },
+        {
+          "answer": "Enchanted Castle",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Enchanted Castle is not this attraction’s official name.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/cinderella-castle/",
+              "locator": "Page title and introduction identify Cinderella Castle as Magic Kingdom’s symbol; A Fairytale Come to Life locates its gateway at Fantasyland."
+            },
+            {
+              "url": "https://d23.com/a-to-z/cinderella-castle/",
+              "locator": "Opening sentence: castle at entrance to Fantasyland in Magic Kingdom Park; distinguishes Disneyland’s Sleeping Beauty Castle later in the same paragraph."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 90,
+    "hash": "ca2cc061881cc7993e9766fde5dc79673da94012b9948dbb4811b8a8b8f47fdf",
+    "questionSnapshot": {
+      "id": 90,
+      "question": "Which Magic Kingdom boat ride features singing children representing many countries?",
+      "answers": [
+        "It's a Small World",
+        "Pirates of the Caribbean",
+        "The Haunted Mansion",
+        "Jungle Cruise"
+      ],
+      "difficulty": "easy",
+      "category": "parks"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "q692 tests World’s Fair origin. Historical origin and present ride experience are separate facts; park location now explicit. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "Walt Disney World, specified park/attraction; current naming/layout at review date.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-01-30",
+      "premise": {
+        "reason": "The Magic Kingdom boat ride with an international children’s chorus is it’s a small world.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/its-a-small-world/",
+            "locator": "Page title and opening description: boat ride with singing children representing the globe; historical section distinguishes 1964 World’s Fair and 1971 Magic Kingdom versions."
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/pirates-of-the-caribbean/",
+            "locator": "A Pirate’s Life for You / main experience description: pirate raid on Caribbean seaport towns, not international children’s chorus."
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/haunted-mansion/",
+            "locator": "A Spirited Tour: Doom Buggy, Ghost Host, haunted estate and graveyard; does not describe a children’s boat ride."
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/jungle-cruise/",
+            "locator": "Opening description and main experience paragraphs: exotic-river boat trip with animals and skipper commentary."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged Pirates and Jungle Cruise as other boats with human figures. Their documented defining scenes do not match the specified international singing children; Haunted Mansion additionally fails the boat requirement. Removed the World/world lexical clue."
+      },
+      "options": [
+        {
+          "answer": "It's a Small World",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "The official introduction exactly describes this children’s boat ride.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/its-a-small-world/",
+              "locator": "Page title and opening description: boat ride with singing children representing the globe; historical section distinguishes 1964 World’s Fair and 1971 Magic Kingdom versions."
+            },
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/pirates-of-the-caribbean/",
+              "locator": "A Pirate’s Life for You / main experience description: pirate raid on Caribbean seaport towns, not international children’s chorus."
+            },
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/haunted-mansion/",
+              "locator": "A Spirited Tour: Doom Buggy, Ghost Host, haunted estate and graveyard; does not describe a children’s boat ride."
+            },
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/jungle-cruise/",
+              "locator": "Opening description and main experience paragraphs: exotic-river boat trip with animals and skipper commentary."
+            }
+          ]
+        },
+        {
+          "answer": "Pirates of the Caribbean",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Pirates depicts pirate raids on seaport towns, not this international chorus.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/its-a-small-world/",
+              "locator": "Page title and opening description: boat ride with singing children representing the globe; historical section distinguishes 1964 World’s Fair and 1971 Magic Kingdom versions."
+            },
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/pirates-of-the-caribbean/",
+              "locator": "A Pirate’s Life for You / main experience description: pirate raid on Caribbean seaport towns, not international children’s chorus."
+            },
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/haunted-mansion/",
+              "locator": "A Spirited Tour: Doom Buggy, Ghost Host, haunted estate and graveyard; does not describe a children’s boat ride."
+            },
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/jungle-cruise/",
+              "locator": "Opening description and main experience paragraphs: exotic-river boat trip with animals and skipper commentary."
+            }
+          ]
+        },
+        {
+          "answer": "The Haunted Mansion",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Haunted Mansion uses Doom Buggies for a haunted-estate tour, not this boat ride.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/its-a-small-world/",
+              "locator": "Page title and opening description: boat ride with singing children representing the globe; historical section distinguishes 1964 World’s Fair and 1971 Magic Kingdom versions."
+            },
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/pirates-of-the-caribbean/",
+              "locator": "A Pirate’s Life for You / main experience description: pirate raid on Caribbean seaport towns, not international children’s chorus."
+            },
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/haunted-mansion/",
+              "locator": "A Spirited Tour: Doom Buggy, Ghost Host, haunted estate and graveyard; does not describe a children’s boat ride."
+            },
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/jungle-cruise/",
+              "locator": "Opening description and main experience paragraphs: exotic-river boat trip with animals and skipper commentary."
+            }
+          ]
+        },
+        {
+          "answer": "Jungle Cruise",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Jungle Cruise tours exotic rivers and animal scenes, not a singing children’s chorus.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/its-a-small-world/",
+              "locator": "Page title and opening description: boat ride with singing children representing the globe; historical section distinguishes 1964 World’s Fair and 1971 Magic Kingdom versions."
+            },
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/pirates-of-the-caribbean/",
+              "locator": "A Pirate’s Life for You / main experience description: pirate raid on Caribbean seaport towns, not international children’s chorus."
+            },
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/haunted-mansion/",
+              "locator": "A Spirited Tour: Doom Buggy, Ghost Host, haunted estate and graveyard; does not describe a children’s boat ride."
+            },
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/jungle-cruise/",
+              "locator": "Opening description and main experience paragraphs: exotic-river boat trip with animals and skipper commentary."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 91,
+    "hash": "be5e774ca52c16c12972a0a727de6e02283d322273f770d45862ebe6177541e4",
+    "questionSnapshot": {
+      "id": 91,
+      "question": "Which Walt Disney World theme park is centered on wildlife habitats and conservation?",
+      "answers": [
+        "Animal Kingdom",
+        "EPCOT",
+        "Hollywood Studios",
+        "Typhoon Lagoon"
+      ],
+      "difficulty": "easy",
+      "category": "parks"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "q103 and q348 test specific attraction locations, not the park’s defining wildlife purpose. Easy recognition. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "Walt Disney World, specified park/attraction; current naming/layout at review date.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-01-30",
+      "premise": {
+        "reason": "Animal Kingdom’s core experience combines live habitats, animal encounters and conservation education.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/animal-kingdom-disneys/",
+            "locator": "Opening synopsis: live animal encounters and habitats; Rafiki’s Planet Watch paragraph explicitly discusses conservation."
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/destinations/",
+            "locator": "Complete theme-park listing: Animal Kingdom, Hollywood Studios, EPCOT and Magic Kingdom."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Did not infer that EPCOT can never discuss conservation: the stem asks which park is centered on live wildlife habitats and conservation. Animal Kingdom’s documented overall identity supplies that distinction, rather than the existence of any one environmental exhibit."
+      },
+      "options": [
+        {
+          "answer": "Animal Kingdom",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Animal Kingdom is the wildlife/conservation park described by Disney.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/animal-kingdom-disneys/",
+              "locator": "Opening synopsis: live animal encounters and habitats; Rafiki’s Planet Watch paragraph explicitly discusses conservation."
+            },
+            {
+              "url": "https://disneyworld.disney.go.com/destinations/",
+              "locator": "Complete theme-park listing: Animal Kingdom, Hollywood Studios, EPCOT and Magic Kingdom."
+            }
+          ]
+        },
+        {
+          "answer": "EPCOT",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "EPCOT is a different park in the complete theme-park roster, not the animal-habitat park identified here.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/animal-kingdom-disneys/",
+              "locator": "Opening synopsis: live animal encounters and habitats; Rafiki’s Planet Watch paragraph explicitly discusses conservation."
+            },
+            {
+              "url": "https://disneyworld.disney.go.com/destinations/",
+              "locator": "Complete theme-park listing: Animal Kingdom, Hollywood Studios, EPCOT and Magic Kingdom."
+            }
+          ]
+        },
+        {
+          "answer": "Hollywood Studios",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Hollywood Studios is a different park, not the identified wildlife park.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/animal-kingdom-disneys/",
+              "locator": "Opening synopsis: live animal encounters and habitats; Rafiki’s Planet Watch paragraph explicitly discusses conservation."
+            },
+            {
+              "url": "https://disneyworld.disney.go.com/destinations/",
+              "locator": "Complete theme-park listing: Animal Kingdom, Hollywood Studios, EPCOT and Magic Kingdom."
+            }
+          ]
+        },
+        {
+          "answer": "Typhoon Lagoon",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Typhoon Lagoon is not the wildlife theme park in Disney’s complete four-park roster.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/animal-kingdom-disneys/",
+              "locator": "Opening synopsis: live animal encounters and habitats; Rafiki’s Planet Watch paragraph explicitly discusses conservation."
+            },
+            {
+              "url": "https://disneyworld.disney.go.com/destinations/",
+              "locator": "Complete theme-park listing: Animal Kingdom, Hollywood Studios, EPCOT and Magic Kingdom."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 92,
+    "hash": "5abe0a9ed87cdca3dff39e7967541dad8ef44371c1e5a948875e7d94f4dad592",
+    "questionSnapshot": {
+      "id": 92,
+      "question": "What is the official name of EPCOT's iconic geodesic sphere attraction?",
+      "answers": [
+        "Spaceship Earth",
+        "The Magic Orb",
+        "Epcot Globe",
+        "Future World"
+      ],
+      "difficulty": "easy",
+      "category": "parks"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Distinct from the ride system q912 and narrator q2221; does not assert that no one calls it a globe. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "Walt Disney World, specified park/attraction; current naming/layout at review date.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-01-30",
+      "premise": {
+        "reason": "The officially named sphere attraction at EPCOT is Spaceship Earth.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/epcot/spaceship-earth/",
+            "locator": "Page title and A Landmark Attraction section: EPCOT flagship inside iconic geosphere, signature park symbol."
+          },
+          {
+            "url": "https://d23.com/a-to-z/epcot/",
+            "locator": "Opening paragraph gives October 1, 1982 park opening; later original-layout paragraph identifies Future World and World Showcase as areas."
+          },
+          {
+            "url": "https://d23.com/weve-just-begun-to-dream/",
+            "locator": "Walt Disney Archives account, opening paragraph dates public opening October 1, 1982; later paragraph calls Spaceship Earth a geodesic sphere."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Original Epcot Globe option was potentially defensible as an informal label. Official name now makes the requested naming standard explicit. The historical Future World area cannot be substituted for its sphere attraction."
+      },
+      "options": [
+        {
+          "answer": "Spaceship Earth",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Spaceship Earth is the attraction’s official name.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/epcot/spaceship-earth/",
+              "locator": "Page title and A Landmark Attraction section: EPCOT flagship inside iconic geosphere, signature park symbol."
+            },
+            {
+              "url": "https://d23.com/a-to-z/epcot/",
+              "locator": "Opening paragraph gives October 1, 1982 park opening; later original-layout paragraph identifies Future World and World Showcase as areas."
+            },
+            {
+              "url": "https://d23.com/weve-just-begun-to-dream/",
+              "locator": "Walt Disney Archives account, opening paragraph dates public opening October 1, 1982; later paragraph calls Spaceship Earth a geodesic sphere."
+            }
+          ]
+        },
+        {
+          "answer": "The Magic Orb",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "The Magic Orb is not the official name.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/epcot/spaceship-earth/",
+              "locator": "Page title and A Landmark Attraction section: EPCOT flagship inside iconic geosphere, signature park symbol."
+            },
+            {
+              "url": "https://d23.com/a-to-z/epcot/",
+              "locator": "Opening paragraph gives October 1, 1982 park opening; later original-layout paragraph identifies Future World and World Showcase as areas."
+            },
+            {
+              "url": "https://d23.com/weve-just-begun-to-dream/",
+              "locator": "Walt Disney Archives account, opening paragraph dates public opening October 1, 1982; later paragraph calls Spaceship Earth a geodesic sphere."
+            }
+          ]
+        },
+        {
+          "answer": "Epcot Globe",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Epcot Globe is a descriptive nickname rather than the official attraction name.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/epcot/spaceship-earth/",
+              "locator": "Page title and A Landmark Attraction section: EPCOT flagship inside iconic geosphere, signature park symbol."
+            },
+            {
+              "url": "https://d23.com/a-to-z/epcot/",
+              "locator": "Opening paragraph gives October 1, 1982 park opening; later original-layout paragraph identifies Future World and World Showcase as areas."
+            },
+            {
+              "url": "https://d23.com/weve-just-begun-to-dream/",
+              "locator": "Walt Disney Archives account, opening paragraph dates public opening October 1, 1982; later paragraph calls Spaceship Earth a geodesic sphere."
+            }
+          ]
+        },
+        {
+          "answer": "Future World",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Future World was an original park area, not the sphere attraction’s official name.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/epcot/spaceship-earth/",
+              "locator": "Page title and A Landmark Attraction section: EPCOT flagship inside iconic geosphere, signature park symbol."
+            },
+            {
+              "url": "https://d23.com/a-to-z/epcot/",
+              "locator": "Opening paragraph gives October 1, 1982 park opening; later original-layout paragraph identifies Future World and World Showcase as areas."
+            },
+            {
+              "url": "https://d23.com/weve-just-begun-to-dream/",
+              "locator": "Walt Disney Archives account, opening paragraph dates public opening October 1, 1982; later paragraph calls Spaceship Earth a geodesic sphere."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 94,
+    "hash": "25da1ac98fe6ca7287204b078f69dbc957b956f281a2e3110e5857c59fa5308d",
+    "questionSnapshot": {
+      "id": 94,
+      "question": "In which themed land of Magic Kingdom would you find Cinderella Castle?",
+      "answers": [
+        "Fantasyland",
+        "Adventureland",
+        "Tomorrowland",
+        "Liberty Square"
+      ],
+      "difficulty": "easy",
+      "category": "parks"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "q779 asks the small-world boat ride’s land, a different attraction-location fact. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "Walt Disney World, specified park/attraction; current naming/layout at review date.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-01-30",
+      "premise": {
+        "reason": "Disney locates the castle at the entrance/gateway to Fantasyland.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/cinderella-castle/",
+            "locator": "Opening sentence: castle at entrance to Fantasyland in Magic Kingdom Park; distinguishes Disneyland’s Sleeping Beauty Castle later in the same paragraph."
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/cinderella-castle/",
+            "locator": "Page title and introduction identify Cinderella Castle as Magic Kingdom’s symbol; A Fairytale Come to Life locates its gateway at Fantasyland."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Read the official entrance/gateway location rather than guessing from the central hub’s proximity to several lands. Both official references identify Fantasyland; geographic nearness to other lands does not make their names correct."
+      },
+      "options": [
+        {
+          "answer": "Fantasyland",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Fantasyland is the land whose entrance the castle marks.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/cinderella-castle/",
+              "locator": "Opening sentence: castle at entrance to Fantasyland in Magic Kingdom Park; distinguishes Disneyland’s Sleeping Beauty Castle later in the same paragraph."
+            },
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/cinderella-castle/",
+              "locator": "Page title and introduction identify Cinderella Castle as Magic Kingdom’s symbol; A Fairytale Come to Life locates its gateway at Fantasyland."
+            }
+          ]
+        },
+        {
+          "answer": "Adventureland",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Adventureland is not the identified land.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/cinderella-castle/",
+              "locator": "Opening sentence: castle at entrance to Fantasyland in Magic Kingdom Park; distinguishes Disneyland’s Sleeping Beauty Castle later in the same paragraph."
+            },
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/cinderella-castle/",
+              "locator": "Page title and introduction identify Cinderella Castle as Magic Kingdom’s symbol; A Fairytale Come to Life locates its gateway at Fantasyland."
+            }
+          ]
+        },
+        {
+          "answer": "Tomorrowland",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Tomorrowland is not the identified land.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/cinderella-castle/",
+              "locator": "Opening sentence: castle at entrance to Fantasyland in Magic Kingdom Park; distinguishes Disneyland’s Sleeping Beauty Castle later in the same paragraph."
+            },
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/cinderella-castle/",
+              "locator": "Page title and introduction identify Cinderella Castle as Magic Kingdom’s symbol; A Fairytale Come to Life locates its gateway at Fantasyland."
+            }
+          ]
+        },
+        {
+          "answer": "Liberty Square",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Liberty Square is not the identified land.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/cinderella-castle/",
+              "locator": "Opening sentence: castle at entrance to Fantasyland in Magic Kingdom Park; distinguishes Disneyland’s Sleeping Beauty Castle later in the same paragraph."
+            },
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/cinderella-castle/",
+              "locator": "Page title and introduction identify Cinderella Castle as Magic Kingdom’s symbol; A Fairytale Come to Life locates its gateway at Fantasyland."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 95,
+    "hash": "7c582af86e8476aa05050d1d133dfc1f1e6ac55dd816bbfb2bb5094822e86ce7",
+    "questionSnapshot": {
+      "id": 95,
+      "question": "What are the four main theme parks at Walt Disney World?",
+      "answers": [
+        "Magic Kingdom, EPCOT, Hollywood Studios, Animal Kingdom",
+        "Magic Kingdom, EPCOT, Hollywood Studios, Universal",
+        "Magic Kingdom, EPCOT, Adventureland, Animal Kingdom",
+        "Magic Kingdom, Hollywood Studios, Animal Kingdom, SeaWorld"
+      ],
+      "difficulty": "easy",
+      "category": "parks"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Distinct from locating one attraction or identifying a park theme. Answer lengths are sufficiently parallel. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "Walt Disney World, specified park/attraction; current naming/layout at review date.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-01-30",
+      "premise": {
+        "reason": "Disney’s complete destination listing identifies four Walt Disney World theme parks.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/destinations/",
+            "locator": "Complete theme-park listing: Animal Kingdom, Hollywood Studios, EPCOT and Magic Kingdom."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Compared each four-item set against the complete official list, not just its first matching names. Every wrong option has one substitution, so shared correct items do not make an entire list correct. Water parks are outside the stated theme-park set."
+      },
+      "options": [
+        {
+          "answer": "Magic Kingdom, EPCOT, Hollywood Studios, Animal Kingdom",
+          "verdict": "correct",
+          "basis": "exhaustive-list",
+          "reason": "This exactly reproduces the four listed theme parks.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/destinations/",
+              "locator": "Complete theme-park listing: Animal Kingdom, Hollywood Studios, EPCOT and Magic Kingdom."
+            }
+          ]
+        },
+        {
+          "answer": "Magic Kingdom, EPCOT, Hollywood Studios, Universal",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "Universal replaces Animal Kingdom and is absent from Disney’s complete list.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/destinations/",
+              "locator": "Complete theme-park listing: Animal Kingdom, Hollywood Studios, EPCOT and Magic Kingdom."
+            }
+          ]
+        },
+        {
+          "answer": "Magic Kingdom, EPCOT, Adventureland, Animal Kingdom",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "Adventureland replaces Hollywood Studios; it is not a separately listed theme park.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/destinations/",
+              "locator": "Complete theme-park listing: Animal Kingdom, Hollywood Studios, EPCOT and Magic Kingdom."
+            }
+          ]
+        },
+        {
+          "answer": "Magic Kingdom, Hollywood Studios, Animal Kingdom, SeaWorld",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "SeaWorld replaces EPCOT and is absent from the four-park list.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/destinations/",
+              "locator": "Complete theme-park listing: Animal Kingdom, Hollywood Studios, EPCOT and Magic Kingdom."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 97,
+    "hash": "add7deba5f75a129b609849153cf84bdf8998c840d59d411699e2db7b2d62852",
+    "questionSnapshot": {
+      "id": 97,
+      "question": "In what year did EPCOT open at Walt Disney World?",
+      "answers": [
+        "1982",
+        "1971",
+        "1989",
+        "1975"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "q687 concerns the resort’s 1971 opening and q102 Animal Kingdom’s 1998 opening: different establishments and events. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "Walt Disney World, specified park/attraction; current naming/layout at review date.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "EPCOT Center opened to guests on October 1, 1982.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/epcot/",
+            "locator": "Opening paragraph gives October 1, 1982 park opening; later original-layout paragraph identifies Future World and World Showcase as areas."
+          },
+          {
+            "url": "https://d23.com/weve-just-begun-to-dream/",
+            "locator": "Walt Disney Archives account, opening paragraph dates public opening October 1, 1982; later paragraph calls Spaceship Earth a geodesic sphere."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished public opening from later October dedication ceremonies and the 1966 EPCOT concept. Both official historical accounts agree on 1982; the other years cannot also identify that event."
+      },
+      "options": [
+        {
+          "answer": "1982",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "1982 is the documented public-opening year.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/epcot/",
+              "locator": "Opening paragraph gives October 1, 1982 park opening; later original-layout paragraph identifies Future World and World Showcase as areas."
+            },
+            {
+              "url": "https://d23.com/weve-just-begun-to-dream/",
+              "locator": "Walt Disney Archives account, opening paragraph dates public opening October 1, 1982; later paragraph calls Spaceship Earth a geodesic sphere."
+            }
+          ]
+        },
+        {
+          "answer": "1971",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "1971 is not EPCOT’s opening year.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/epcot/",
+              "locator": "Opening paragraph gives October 1, 1982 park opening; later original-layout paragraph identifies Future World and World Showcase as areas."
+            },
+            {
+              "url": "https://d23.com/weve-just-begun-to-dream/",
+              "locator": "Walt Disney Archives account, opening paragraph dates public opening October 1, 1982; later paragraph calls Spaceship Earth a geodesic sphere."
+            }
+          ]
+        },
+        {
+          "answer": "1989",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "1989 is not EPCOT’s opening year.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/epcot/",
+              "locator": "Opening paragraph gives October 1, 1982 park opening; later original-layout paragraph identifies Future World and World Showcase as areas."
+            },
+            {
+              "url": "https://d23.com/weve-just-begun-to-dream/",
+              "locator": "Walt Disney Archives account, opening paragraph dates public opening October 1, 1982; later paragraph calls Spaceship Earth a geodesic sphere."
+            }
+          ]
+        },
+        {
+          "answer": "1975",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "1975 is not EPCOT’s opening year.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/epcot/",
+              "locator": "Opening paragraph gives October 1, 1982 park opening; later original-layout paragraph identifies Future World and World Showcase as areas."
+            },
+            {
+              "url": "https://d23.com/weve-just-begun-to-dream/",
+              "locator": "Walt Disney Archives account, opening paragraph dates public opening October 1, 1982; later paragraph calls Spaceship Earth a geodesic sphere."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 98,
+    "hash": "7839386052465302ce8e5ef463b26a6599bd9b4d51da5e2c2dbcd67002a241f3",
+    "questionSnapshot": {
+      "id": 98,
+      "question": "Which Animal Kingdom roller coaster sends guests through the Himalayas on a runaway train threatened by the Yeti?",
+      "answers": [
+        "Expedition Everest",
+        "Mount Yeti",
+        "Summit Plummet",
+        "Everest Explorer"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Distinct from the attraction’s opening year q357 and its Asia location q922. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "Walt Disney World, specified park/attraction; current naming/layout at review date.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-01-30",
+      "premise": {
+        "reason": "The official Animal Kingdom attraction is Expedition Everest, a Himalayan train coaster with a Yeti encounter.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/animal-kingdom/expedition-everest/",
+            "locator": "Page title, introduction and Yeti or Not, Here He Comes section describe Himalayan train coaster and Yeti encounter."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the full coaster experience rather than treating every mountain-themed name as correct. Only Expedition Everest matches the official title and train/Yeti description. The final stem removes the expedition word echoed by the answer."
+      },
+      "options": [
+        {
+          "answer": "Expedition Everest",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Expedition Everest is the attraction named by the exact official experience description.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/animal-kingdom/expedition-everest/",
+              "locator": "Page title, introduction and Yeti or Not, Here He Comes section describe Himalayan train coaster and Yeti encounter."
+            }
+          ]
+        },
+        {
+          "answer": "Mount Yeti",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Mount Yeti is not the official attraction name.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/animal-kingdom/expedition-everest/",
+              "locator": "Page title, introduction and Yeti or Not, Here He Comes section describe Himalayan train coaster and Yeti encounter."
+            }
+          ]
+        },
+        {
+          "answer": "Summit Plummet",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Summit Plummet is not the named Himalayan train coaster.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/animal-kingdom/expedition-everest/",
+              "locator": "Page title, introduction and Yeti or Not, Here He Comes section describe Himalayan train coaster and Yeti encounter."
+            }
+          ]
+        },
+        {
+          "answer": "Everest Explorer",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Everest Explorer is not the attraction name.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/animal-kingdom/expedition-everest/",
+              "locator": "Page title, introduction and Yeti or Not, Here He Comes section describe Himalayan train coaster and Yeti encounter."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 100,
+    "hash": "64e226cf2a87901c21c0b1812118e987adc1643c222efb3979ba462d70ef598f",
+    "questionSnapshot": {
+      "id": 100,
+      "question": "What is the land in Magic Kingdom that is home to Pirates of the Caribbean?",
+      "answers": [
+        "Adventureland",
+        "Frontierland",
+        "Tomorrowland",
+        "Liberty Square"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "reviewer": "Codex (OpenAI)",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "q886 and q2525 share Adventureland but concern different attractions at different international parks. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+    "verification": {
+      "context": "Walt Disney World, specified park/attraction; current naming/layout at review date.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-01-30",
+      "premise": {
+        "reason": "The Magic Kingdom Pirates of the Caribbean attraction is in Adventureland.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/pirates-of-the-caribbean/",
+            "locator": "Second paragraph separately places Magic Kingdom version in Adventureland, opened December 15, 1973; Disneyland version is in New Orleans Square."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex (OpenAI)",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The source separately locates Disneyland’s version in New Orleans Square; the question explicitly says Magic Kingdom. Under that fixed park context the three other land names are excluded by the unique listed location."
+      },
+      "options": [
+        {
+          "answer": "Adventureland",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Adventureland is explicitly specified for the Magic Kingdom version.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/pirates-of-the-caribbean/",
+              "locator": "Second paragraph separately places Magic Kingdom version in Adventureland, opened December 15, 1973; Disneyland version is in New Orleans Square."
+            }
+          ]
+        },
+        {
+          "answer": "Frontierland",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Frontierland is not the land identified for that version.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/pirates-of-the-caribbean/",
+              "locator": "Second paragraph separately places Magic Kingdom version in Adventureland, opened December 15, 1973; Disneyland version is in New Orleans Square."
+            }
+          ]
+        },
+        {
+          "answer": "Tomorrowland",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Tomorrowland is not the stated location.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/pirates-of-the-caribbean/",
+              "locator": "Second paragraph separately places Magic Kingdom version in Adventureland, opened December 15, 1973; Disneyland version is in New Orleans Square."
+            }
+          ]
+        },
+        {
+          "answer": "Liberty Square",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Liberty Square is not the stated location.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/pirates-of-the-caribbean/",
+              "locator": "Second paragraph separately places Magic Kingdom version in Adventureland, opened December 15, 1973; Disneyland version is in New Orleans Square."
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

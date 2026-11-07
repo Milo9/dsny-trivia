@@ -1,0 +1,3110 @@
+{
+  "schema": 1,
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "sourcesChecked": [
+    "b11-ariel",
+    "b11-atlantis",
+    "b11-atlantisreview",
+    "b11-badge",
+    "b11-badgeanalysis",
+    "b11-basil",
+    "b11-baymax",
+    "b11-brother",
+    "b11-cave",
+    "b11-chernabog",
+    "b11-clarabelle",
+    "b11-clayton",
+    "b11-dukas",
+    "b11-elsa",
+    "b11-elsamaterials",
+    "b11-esmeralda",
+    "b11-fantasiatracks",
+    "b11-figaro",
+    "b11-hand",
+    "b11-handclip",
+    "b11-hans",
+    "b11-hawkmaui",
+    "b11-heihei",
+    "b11-henwen",
+    "b11-hook",
+    "b11-hyenas",
+    "b11-judy",
+    "b11-jumba",
+    "b11-kuzco",
+    "b11-lioncast",
+    "b11-magnifico",
+    "b11-major",
+    "b11-mauiofficial",
+    "b11-max",
+    "b11-medusa",
+    "b11-meeko",
+    "b11-merlin",
+    "b11-naveen",
+    "b11-nessus",
+    "b11-nessuscast",
+    "b11-oliver",
+    "b11-philippe",
+    "b11-pooh",
+    "b11-queen",
+    "b11-rhapsody",
+    "b11-robin",
+    "b11-roses",
+    "b11-rosesofficial",
+    "b11-scrooge",
+    "b11-sebastian",
+    "b11-sisu",
+    "b11-smee",
+    "b11-soarin",
+    "b11-soarinscenes",
+    "b11-tony",
+    "b11-treasure",
+    "b11-tree"
+  ],
+  "reviews": [
+    {
+      "questionId": 504,
+      "hash": "7817f03260718c58cab0e859a9c7ebeb530923a7ac79a17a0317431f8f654dfe",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from Peter's fairy, Tiger Lily rescue and Darling-family questions.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Hook's named first-mate role has a specific holder.",
+        "sources": [
+          "b11-smee"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Smee is explicitly identified as Hook's first mate.",
+          "sources": [
+            "b11-smee"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tinker Bell is a different named individual, not the identified mate.",
+          "sources": [
+            "b11-smee"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tiger Lily cannot replace the explicitly named Smee in this role.",
+          "sources": [
+            "b11-smee"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wendy is not the identified first mate.",
+          "sources": [
+            "b11-smee"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tried interpreting first mate as a general companion; the naval role identifies Smee, rather than any of Peter's companions."
+      }
+    },
+    {
+      "questionId": 505,
+      "hash": "9a4a74e0b6f13fa9926e6f0ef4fce8261c382e35b2a68e7dfb2a83f4779428fc",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Villain/catchphrase identification differs from croquet, roses and tea-party facts.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The quoted execution command identifies the film's ruler-villain.",
+        "sources": [
+          "b11-queen"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney links the Queen of Hearts to this command.",
+          "sources": [
+            "b11-queen"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Mad Hatter is not the named royal speaker.",
+          "sources": [
+            "b11-queen"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Cheshire Cat is not the named royal speaker.",
+          "sources": [
+            "b11-queen"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The White Rabbit is not the named royal speaker.",
+          "sources": [
+            "b11-queen"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A character repeating another's words would not become the villain described; the attribution is to the Queen herself."
+      }
+    },
+    {
+      "questionId": 507,
+      "hash": "9bbf3610aa21f18b202f6c7a2de9c335294bdd8eac35fc42d7d690241318167c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Retains the collection-interest fact while eliminating subset overlap; q704 identifies a song, not the world of interest.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Ariel's collecting passion is specifically directed toward the human world.",
+        "sources": [
+          "b11-ariel"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney explicitly identifies humans as her fascination.",
+          "sources": [
+            "b11-ariel"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Deep-sea fish do not describe the above-water human interest.",
+          "sources": [
+            "b11-ariel"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Polar wildlife is not the human civilization that inspires her collection.",
+          "sources": [
+            "b11-ariel"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Coral reefs are her underwater environment, not the world of human artifacts.",
+          "sources": [
+            "b11-ariel"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed gold coins, which can themselves be human artifacts. The revised alternatives identify separate subjects of fascination."
+      }
+    },
+    {
+      "questionId": 510,
+      "hash": "689fb4f56449f6fb12b27dcbe7e79457635a709074ab52a90e7474a04d8cc1f8",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Easy species recall; distinct from Little John bear and Friar Tuck badger.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 1973 animated character is portrayed as a particular species.",
+        "sources": [
+          "b11-robin"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney explicitly lists Robin as a fox.",
+          "sources": [
+            "b11-robin"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A wolf is a different species from the identified fox.",
+          "sources": [
+            "b11-robin"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The bear is Little John rather than Robin.",
+          "sources": [
+            "b11-robin"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A rabbit is not Robin's identified species.",
+          "sources": [
+            "b11-robin"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "No actor/voice interpretation survives the explicit animated-animal wording. Robin and Little John are different characters."
+      }
+    },
+    {
+      "questionId": 514,
+      "hash": "d6d1bfe110ddece4941feeded15bd500afcfc230c1e80a43c8439f2b3b267d5f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Composer/composition attribution is distinct from film release year, Fantasound and Chernabog identity.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The broom sequence has the Dukas composition as its soundtrack.",
+        "sources": [
+          "b11-dukas",
+          "b11-fantasiatracks"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Dukas's Sorcerer's Apprentice accompanies Mickey and the enchanted brooms.",
+          "sources": [
+            "b11-dukas",
+            "b11-fantasiatracks"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mussorgsky accompanies Bald Mountain, a separate sequence.",
+          "sources": [
+            "b11-dukas",
+            "b11-fantasiatracks"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tchaikovsky accompanies Nutcracker imagery, a separate sequence.",
+          "sources": [
+            "b11-dukas",
+            "b11-fantasiatracks"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Beethoven's Fifth is not the original film's Mickey selection; its Beethoven piece is Pastoral.",
+          "sources": [
+            "b11-dukas",
+            "b11-fantasiatracks"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed Sorcerer's Apprentice from the stem. Other Fantasia selections cannot become this sequence simply by being in the anthology."
+      }
+    },
+    {
+      "questionId": 515,
+      "hash": "5cdb65dee095ef8dec4826637c11870af39e885e3c46fc27c0527c0b6dc2edf6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Clarifies the mistaken actor/purpose, not the keyed color. Cars q636 shares Red but describes a different object and film.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The gardeners conceal white roses by applying one paint color.",
+        "sources": [
+          "b11-roses",
+          "b11-rosesofficial"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The scene account explicitly identifies red paint.",
+          "sources": [
+            "b11-roses",
+            "b11-rosesofficial"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Blue is not the paint color used to conceal the mistake.",
+          "sources": [
+            "b11-roses",
+            "b11-rosesofficial"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pink is explicitly distinguished from the desired red in the scene.",
+          "sources": [
+            "b11-roses",
+            "b11-rosesofficial"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Purple does not match the identified red paint.",
+          "sources": [
+            "b11-roses",
+            "b11-rosesofficial"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The Queen wants red roses, not a paint deception; final wording assigns the painting to the card gardeners."
+      }
+    },
+    {
+      "questionId": 516,
+      "hash": "13f8463e65e5f37b691def239dabc7294cd17bb5739e0bbce7464279372c0e50",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Retains medium recall; pupil nickname q268 is distinct from mentor identity.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The wizard who teaches Wart is Merlin.",
+        "sources": [
+          "b11-merlin"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Merlin explicitly begins teaching Arthur.",
+          "sources": [
+            "b11-merlin"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Archimedes may help with lessons, but is not the wizard Merlin named in the source.",
+          "sources": [
+            "b11-merlin"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mim is the hostile magician, not Arthur's mentor.",
+          "sources": [
+            "b11-merlin"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ector is the guardian whose castle houses Arthur, not the teaching wizard.",
+          "sources": [
+            "b11-merlin"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Archimedes is a competing teacher only if wizard is ignored; Mim is magical but hostile. Both stem conditions matter."
+      }
+    },
+    {
+      "questionId": 517,
+      "hash": "148546b0726903956b5ece3ecedb45ba086dd24af3eb7f05fbd5593c20831f85",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Restaurant is a shared noun, not a clue selecting among four Italian venue labels.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The spaghetti meal takes place at Tony's establishment.",
+        "sources": [
+          "b11-tony"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Tony is explicitly the proprietor of the restaurant serving the meal.",
+          "sources": [
+            "b11-tony"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mario's is a different owner/name from Tony's.",
+          "sources": [
+            "b11-tony"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Luigi's is not the named Tony establishment.",
+          "sources": [
+            "b11-tony"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Antonio's is not the film establishment's stated name, even if Tony can be a nickname for Antonio in real life.",
+          "sources": [
+            "b11-tony"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Did not substitute the real park restaurant title. The question identifies the fictional film restaurant and source names Tony."
+      }
+    },
+    {
+      "questionId": 518,
+      "hash": "26ca67a25e24d04cbd4674f23f559765eddee4f0b85c438b7af95c2795681a74",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from New York setting, Dodger identity and Jenny adoption.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The film is explicitly an Oliver Twist adaptation.",
+        "sources": [
+          "b11-oliver"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney calls the film an Oliver Twist retelling.",
+          "sources": [
+            "b11-oliver"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A Tale of Two Cities is not the source novel identified for this film.",
+          "sources": [
+            "b11-oliver"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Great Expectations is not the identified source, despite being Dickens.",
+          "sources": [
+            "b11-oliver"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "David Copperfield is not the identified source, despite being Dickens.",
+          "sources": [
+            "b11-oliver"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All four are Dickens novels, so author alone does not select the answer. Title resemblance is legitimate literary-adaptation context."
+      }
+    },
+    {
+      "questionId": 520,
+      "hash": "1c379345c02f18c5f73bdb2148739048e74e3ffcff65aff84e11c8bafa53ba36",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from his choice to remain a bear at the ending and Elinor's different transformation in Brave.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Kenai's 2003 transformation is into a bear.",
+        "sources": [
+          "b11-brother"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The synopsis explicitly describes transformation into a bear.",
+          "sources": [
+            "b11-brother"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wolf is not the resulting form, even though it occurs in the film's symbolism.",
+          "sources": [
+            "b11-brother"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Deer is not the resulting form.",
+          "sources": [
+            "b11-brother"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Eagle is not Kenai's transformed body.",
+          "sources": [
+            "b11-brother"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The question asks his body, not a totem or spirit representation; those alternatives do not fit."
+      }
+    },
+    {
+      "questionId": 521,
+      "hash": "15693e42d42b9d9357a1eef8ad51838e28101d80f398da422c1d44e82385fb10",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from the 1950 live-action milestone and the 1974 preserve name, despite shared Treasure Island.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney identifies Stevenson's Treasure Island as the literary source.",
+        "sources": [
+          "b11-treasure"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Treasure Island is explicitly identified as the adapted novel.",
+          "sources": [
+            "b11-treasure"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gulliver's Travels is not the credited source.",
+          "sources": [
+            "b11-treasure"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Robinson Crusoe is not the credited source.",
+          "sources": [
+            "b11-treasure"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "20,000 Leagues Under the Sea is not the credited source.",
+          "sources": [
+            "b11-treasure"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Science-fiction imagery does not make Verne's novel the adaptation source; retained title context is needed to identify the film."
+      }
+    },
+    {
+      "questionId": 526,
+      "hash": "fe51e241d11f23b9b51c2fd442aea0d2947639ce49f547865c1cfcf0aaa0e650",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Parallel role options replace a notably longer correct answer; medium retained.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The question now asks Tadashi's original design purpose.",
+        "sources": [
+          "b11-baymax"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Tadashi built Baymax to care for patients.",
+          "sources": [
+            "b11-baymax"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Combat is a later modification, not Tadashi's original design role.",
+          "sources": [
+            "b11-baymax"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Teaching is not the specified healthcare purpose.",
+          "sources": [
+            "b11-baymax"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Patrolling for police is not the specified healthcare purpose.",
+          "sources": [
+            "b11-baymax"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Battle robot could fit the old unrestricted question after Hiro's upgrades; original design excludes that interpretation."
+      }
+    },
+    {
+      "questionId": 527,
+      "hash": "07133436cfb18f304c734d1a73f6a204c38728a48b59e020f1ee9cabf90c68cc",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from land name Kumandra and Raya's homeland Heart.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Raya's quest seeks the named surviving dragon Sisu.",
+        "sources": [
+          "b11-sisu"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney explicitly identifies Sisu as the dragon Raya seeks.",
+          "sources": [
+            "b11-sisu"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Namaari is not the dragon named Sisu.",
+          "sources": [
+            "b11-sisu"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Druun are the threatening force rather than the named dragon.",
+          "sources": [
+            "b11-sisu"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Boun is not the dragon named Sisu.",
+          "sources": [
+            "b11-sisu"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Quest timing avoids implying no other dragons ever return; different names cannot fit the specifically identified sought dragon."
+      }
+    },
+    {
+      "questionId": 528,
+      "hash": "9065847d106f32ecea96ba87e5a09a589f6da871a26296c8a8cf56f210533c8c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Villain identity differs from Rosas, Star and Valentino facts.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The king withholding citizens' wishes is identified by name in production notes.",
+        "sources": [
+          "b11-magnifico"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Magnifico's character section explicitly describes the hoarding.",
+          "sources": [
+            "b11-magnifico"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Aldric is not the king named in that character account.",
+          "sources": [
+            "b11-magnifico"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Florian is not the king named in that account.",
+          "sources": [
+            "b11-magnifico"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Desmond is not the king named in that account.",
+          "sources": [
+            "b11-magnifico"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Sought an alternative royal title/name; the production notes give Magnifico and explain the control motive directly."
+      }
+    },
+    {
+      "questionId": 529,
+      "hash": "1b25c91e41e4704f728e1656273f05c96cb5209bda1f9b5c0a927da27c460bb7",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Atlantis is necessary setting context; the other headword Heart must still be recalled.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The life-sustaining power crystal is named in Milo's dialogue.",
+        "sources": [
+          "b11-atlantis",
+          "b11-atlantisreview"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Milo names the power source the Heart of Atlantis.",
+          "sources": [
+            "b11-atlantis",
+            "b11-atlantisreview"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Soul Stone is not the term in the identification passage.",
+          "sources": [
+            "b11-atlantis",
+            "b11-atlantisreview"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Crystal of Power is a possible description, but not the name given in the film.",
+          "sources": [
+            "b11-atlantis",
+            "b11-atlantisreview"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Blue Gem is a possible visual description, but not the name given in the film.",
+          "sources": [
+            "b11-atlantis",
+            "b11-atlantisreview"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tested descriptive labels against called: the question asks the explicit designation, not whether a crystal is blue or powerful."
+      }
+    },
+    {
+      "questionId": 530,
+      "hash": "4bd9f325c2589f4d994c078c4a9599c21ee2198264b265f31b0661473b723b97",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from Kronk's wrong-vial cause and Yzma's kitten outcome; q2380 is an unrelated Donald llama encounter.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The dinner transformation gives Kuzco a llama body.",
+        "sources": [
+          "b11-kuzco"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney explicitly identifies the llama transformation.",
+          "sources": [
+            "b11-kuzco"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A frog is not Kuzco's resulting form after dinner.",
+          "sources": [
+            "b11-kuzco"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A bear is not the resulting form after dinner.",
+          "sources": [
+            "b11-kuzco"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A parrot is not the resulting form after dinner.",
+          "sources": [
+            "b11-kuzco"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed imprecise direct agency: Kronk handles the vial/drink in Yzma's scheme. Later potion effects do not change the dinner result."
+      }
+    },
+    {
+      "questionId": 532,
+      "hash": "cb11cd13742cab6af302b8b32a768672f538e003edb2afa3d2be684c80be847e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from the diamond name and rescue organization; difficulty remains hard for less familiar film.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Penny's kidnapper intends to exploit her to retrieve the diamond.",
+        "sources": [
+          "b11-medusa"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Medusa is explicitly the kidnapper seeking the Devil's Eye.",
+          "sources": [
+            "b11-medusa"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cruella is not the woman named in this kidnapping.",
+          "sources": [
+            "b11-medusa"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Yzma is not the woman named in this kidnapping.",
+          "sources": [
+            "b11-medusa"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Evil Queen is not the woman named in this kidnapping.",
+          "sources": [
+            "b11-medusa"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other Disney villains cannot fit the specific Penny/diamond conjunction; no answer is based merely on being evil."
+      }
+    },
+    {
+      "questionId": 534,
+      "hash": "0f40e99fb64b2116c3dc255304f784ca2bfb6a1f7e67e55e91397b6cc88c21ad",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Replaces vague parody with inspired; medium recognition rather than hard.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Basil is the rodent counterpart of Sherlock Holmes.",
+        "sources": [
+          "b11-basil"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney explicitly compares Basil with Sherlock Holmes.",
+          "sources": [
+            "b11-basil"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Poirot is not the stated model.",
+          "sources": [
+            "b11-basil"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Marlowe is not the stated model.",
+          "sources": [
+            "b11-basil"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Spade is not the stated model.",
+          "sources": [
+            "b11-basil"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The inspiration is a detective character, not the author Eve Titus; q2499 asks a separate real-world author fact."
+      }
+    },
+    {
+      "questionId": 536,
+      "hash": "60b9ca49b8b2a7e1f992f35a3c1b09068554340787d4e42bb305bf32542c250b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from Denahi's revenge and Kenai's transformation.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Sitka is identified as the eldest of the three human brothers.",
+        "sources": [
+          "b11-brother"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Sitka is explicitly eldest.",
+          "sources": [
+            "b11-brother"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Denahi is the other older brother, not the eldest.",
+          "sources": [
+            "b11-brother"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Koda is the young bear companion, not a human elder brother.",
+          "sources": [
+            "b11-brother"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rutt is a moose, not Kenai's eldest brother.",
+          "sources": [
+            "b11-brother"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The source orders all three brothers. Removing death-cause shorthand avoids confusing Sitka's sacrifice with a direct mauling."
+      }
+    },
+    {
+      "questionId": 537,
+      "hash": "7aa56f1a7a3947e42a3fd36a570b3cb370285c5aa91c27f12c72471cf1256f94",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from Morph identity, map form and source novel.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The cyborg cook/mentor who reveals a pirate agenda is John Silver.",
+        "sources": [
+          "b11-treasure"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The synopsis explicitly combines all three roles in Silver.",
+          "sources": [
+            "b11-treasure"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Amelia is captain, not the cyborg cook.",
+          "sources": [
+            "b11-treasure"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Doppler is doctor, not the cyborg cook.",
+          "sources": [
+            "b11-treasure"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "B.E.N. is the robot character, not the named cook/mentor.",
+          "sources": [
+            "b11-treasure"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The word villain allows Silver's moral complexity, but the cyborg cook condition still uniquely selects him."
+      }
+    },
+    {
+      "questionId": 538,
+      "hash": "cb13f0062bf67b48d1c8d36ca719f0bc566132fea4fb48fa664104546afc1b5c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Replaced joke names with recognizable parallel distractors; main-canon film.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The film's oracular pig is named Hen Wen.",
+        "sources": [
+          "b11-henwen"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Hen Wen is explicitly the oracular pig.",
+          "sources": [
+            "b11-henwen"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Piglet is not that character's name.",
+          "sources": [
+            "b11-henwen"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pumbaa is not that character's name.",
+          "sources": [
+            "b11-henwen"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hamm is not that character's name.",
+          "sources": [
+            "b11-henwen"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All choices are plausible Disney/Pixar pig-associated names; none is a second name for Hen Wen in this film."
+      }
+    },
+    {
+      "questionId": 539,
+      "hash": "20b4d5d2bbdc41b178e8f58140a2edbbcb0bf71c88d6e972d824212e54b6f462",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from other anthology pieces and original Fantasia's chronology.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The film's Gershwin segment depicts Jazz Age Manhattan.",
+        "sources": [
+          "b11-rhapsody"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney assigns Manhattan to Rhapsody in Blue.",
+          "sources": [
+            "b11-rhapsody"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "An American in Paris is a different Gershwin work, not the identified selection.",
+          "sources": [
+            "b11-rhapsody"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Porgy and Bess is not the identified Fantasia 2000 selection.",
+          "sources": [
+            "b11-rhapsody"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Summertime is not the identified selection.",
+          "sources": [
+            "b11-rhapsody"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A general New York association with Gershwin does not suffice; the film's actual selected score is explicit."
+      }
+    },
+    {
+      "questionId": 541,
+      "hash": "2becf11d3e9f3225f30422efbfe1e436e5d777ec90b61f81b10a874933e2cd6c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Focuses the existing healing question on a distinct observable detail; avoids claiming an exhaustive list of Rapunzel's powers.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The campfire scene identifies the body part wrapped in her hair.",
+        "sources": [
+          "b11-hand",
+          "b11-handclip"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Flynn explicitly refers to his injured hand as she wraps it.",
+          "sources": [
+            "b11-hand",
+            "b11-handclip"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The healing passage identifies hand rather than shoulder.",
+          "sources": [
+            "b11-hand",
+            "b11-handclip"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The identified wound is not on his knee.",
+          "sources": [
+            "b11-hand",
+            "b11-handclip"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The identified wound is not on his ankle.",
+          "sources": [
+            "b11-hand",
+            "b11-handclip"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Generic healing knowledge from q2134 cannot identify the body part; the final options require the specific scene. Excluded the later fatal torso wound by naming the campfire."
+      }
+    },
+    {
+      "questionId": 543,
+      "hash": "d778b8b2b4cf882dddab295c7bbf7d7f7a2569ed52f7be04ff847bdff783696e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from ice-palace construction, Olaf identity and Let It Go performance.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Elsa's established magic creates the icy conditions of Arendelle.",
+        "sources": [
+          "b11-elsa",
+          "b11-elsamaterials"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Ice and snow match the explicitly icy winter magic.",
+          "sources": [
+            "b11-elsa",
+            "b11-elsamaterials"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sand and dust are not the wintry materials identified.",
+          "sources": [
+            "b11-elsa",
+            "b11-elsamaterials"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Smoke and ash are not ice or snow.",
+          "sources": [
+            "b11-elsa",
+            "b11-elsamaterials"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Leaves and vines are not ice or snow.",
+          "sources": [
+            "b11-elsa",
+            "b11-elsamaterials"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The revised options compare material pairs instead of requiring proof that Elsa could never possess another ability."
+      }
+    },
+    {
+      "questionId": 544,
+      "hash": "35644c482b11721f0806c505e62536c4f8fb1f4d1bfabc3a58c999c4c9860e8a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from hook retrieval in Lalotai and ocean wayfinding; hawk-form contextual example is corroborated in filmmaker reporting.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Changing one's bodily form into an animal is shapeshifting.",
+        "sources": [
+          "b11-hook",
+          "b11-mauiofficial",
+          "b11-hawkmaui"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The opening legend explicitly links changing form to the hook.",
+          "sources": [
+            "b11-hook",
+            "b11-mauiofficial",
+            "b11-hawkmaui"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mind reading accesses thoughts rather than changing the body.",
+          "sources": [
+            "b11-hook",
+            "b11-mauiofficial",
+            "b11-hawkmaui"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Time travel changes temporal location rather than bodily form.",
+          "sources": [
+            "b11-hook",
+            "b11-mauiofficial",
+            "b11-hawkmaui"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Invisibility conceals a body rather than changing it into a hawk.",
+          "sources": [
+            "b11-hook",
+            "b11-mauiofficial",
+            "b11-hawkmaui"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Question asks the mechanism of a physical form-change, not an exhaustive claim about every power the hook has. Other abilities cannot explain becoming a different creature."
+      }
+    },
+    {
+      "questionId": 546,
+      "hash": "a8d975244e2116af61766fe78f8e162429ea2edffc21b8d9cea8b77253186f1c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from Flit hummingbird and Percy pug.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pocahontas's raccoon companion is named Meeko.",
+        "sources": [
+          "b11-meeko"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The synopsis explicitly calls Meeko a raccoon.",
+          "sources": [
+            "b11-meeko"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Flit is the hummingbird, not the raccoon.",
+          "sources": [
+            "b11-meeko"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Percy is a separate named companion, not the raccoon identified as Meeko.",
+          "sources": [
+            "b11-meeko"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kocoum is a human warrior, not the raccoon.",
+          "sources": [
+            "b11-meeko"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Companionship alone might include multiple animals; the raccoon condition selects Meeko."
+      }
+    },
+    {
+      "questionId": 547,
+      "hash": "2a096dc275cc52e3a368012e3dabd575d1b8f0c6931d6d6d0fa10153ad236794",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from Phoebus identity and Frollo's position.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Quasimodo's romantic interest in the original film is Esmeralda.",
+        "sources": [
+          "b11-esmeralda"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The synopsis explicitly says he falls in love with Esmeralda.",
+          "sources": [
+            "b11-esmeralda"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Madeline is not the named romantic interest in this original film.",
+          "sources": [
+            "b11-esmeralda"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Colette is not the named romantic interest.",
+          "sources": [
+            "b11-esmeralda"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Isabelle is not the named romantic interest.",
+          "sources": [
+            "b11-esmeralda"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Later sequel romance must not be imported into the original film; Esmeralda's love for Phoebus does not negate Quasimodo's feelings."
+      }
+    },
+    {
+      "questionId": 553,
+      "hash": "7037d8a907c732306f0eef601831036a3016aa136ea3a7cec2b312c08a3bcb87",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "General character trait; no television plot knowledge required.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pooh's characteristic favorite food is honey.",
+        "sources": [
+          "b11-pooh"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney identifies honey as what he wants most.",
+          "sources": [
+            "b11-pooh"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Apples do not replace the specified preferred food.",
+          "sources": [
+            "b11-pooh"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Berries do not replace the specified preferred food.",
+          "sources": [
+            "b11-pooh"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Acorns do not replace the specified preferred food.",
+          "sources": [
+            "b11-pooh"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A bear might eat other foods, but the question asks his established favorite, not everything he can eat."
+      }
+    },
+    {
+      "questionId": 556,
+      "hash": "5322199006e6e5c8b17628df82d1935421d96684933c7600858d690769f1822a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Difficulty raised to medium and reward timing clarified.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The reward at the ending certifies Jiminy's official conscience status.",
+        "sources": [
+          "b11-badge",
+          "b11-badgeanalysis"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The artifact account and scene analysis identify a gold badge.",
+          "sources": [
+            "b11-badge",
+            "b11-badgeanalysis"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The reward is not an umbrella, even though Jiminy already carries one.",
+          "sources": [
+            "b11-badge",
+            "b11-badgeanalysis"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The reward is not the top hat he already wears.",
+          "sources": [
+            "b11-badge",
+            "b11-badgeanalysis"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The reward is not a whistle; Give a Little Whistle is a different association.",
+          "sources": [
+            "b11-badge",
+            "b11-badgeanalysis"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "End-of-film timing excludes confusing the initial appointment/outfit with the later earned badge; no claim about pure-gold assay is made."
+      }
+    },
+    {
+      "questionId": 562,
+      "hash": "7aa247e7937a391cb61dce5c998002d066750cfaef5ac26414a28a2df5e2387d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from the activity of swimming in the Money Bin.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The rich-uncle identification is explicit.",
+        "sources": [
+          "b11-scrooge"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Scrooge is identified as Donald's rich uncle.",
+          "sources": [
+            "b11-scrooge"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gladstone is a different character, not the named rich uncle.",
+          "sources": [
+            "b11-scrooge"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gyro is not the named rich uncle.",
+          "sources": [
+            "b11-scrooge"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ludwig can also be an uncle, but is not the fabulously rich Scrooge described here.",
+          "sources": [
+            "b11-scrooge"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Did not interpret this as only uncle; the wealth qualifier is necessary because Ludwig is also related."
+      }
+    },
+    {
+      "questionId": 563,
+      "hash": "19fa1d29d82107f96b64de52d6a6b5600a44493b989cea6d1bc86d35da089144",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Explicit theatrical anchor preserves no-real-TV-trivia scope.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 1995 theatrical film pairs Goofy with his teenage son Max.",
+        "sources": [
+          "b11-max"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The film synopsis names Max as his son.",
+          "sources": [
+            "b11-max"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pete is a separately credited adult character.",
+          "sources": [
+            "b11-max"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Chumley is not the named son.",
+          "sources": [
+            "b11-max"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Junior cannot replace the Max identity specified for this film.",
+          "sources": [
+            "b11-max"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Film anchor excludes earlier Mr. Geef/Junior portrayals. Max the dog in q1117 is an unrelated character sharing a name."
+      }
+    },
+    {
+      "questionId": 564,
+      "hash": "70568f3155939f4aa1120b2f92328f65cf1099de10bc28a2e3d3214fce1837db",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from how the revelry ends and score composer.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The named Bald Mountain devil is Chernabog.",
+        "sources": [
+          "b11-chernabog"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney names Chernabog in this exact role.",
+          "sources": [
+            "b11-chernabog"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mephisto is not the name given for this film character.",
+          "sources": [
+            "b11-chernabog"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Diablo is not this named Bald Mountain character.",
+          "sources": [
+            "b11-chernabog"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Beelzebub is not this film character's proper name.",
+          "sources": [
+            "b11-chernabog"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Generic demon synonyms are not alternative proper names in this specific film; source supplies the character identity."
+      }
+    },
+    {
+      "questionId": 565,
+      "hash": "bfe1c1439d12a587027fa3ac8cc99d8861ed10fe11283ef135c1f393b504cc88",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "General classic-character identity, not episode trivia.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney identifies Clarabelle as bovine.",
+        "sources": [
+          "b11-clarabelle"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Bovine establishes cow.",
+          "sources": [
+            "b11-clarabelle"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Horse is a different species, associated with Horace rather than Clarabelle.",
+          "sources": [
+            "b11-clarabelle"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Donkey is not bovine.",
+          "sources": [
+            "b11-clarabelle"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sheep is not bovine.",
+          "sources": [
+            "b11-clarabelle"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Anthropomorphic behavior does not change the explicitly bovine design. The stem omits Cow so it does not supply its own answer."
+      }
+    },
+    {
+      "questionId": 566,
+      "hash": "b2f2cba4cbb52007ca987ccb0da781da4878807e51622aabff9146d8d3181b7d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from dog Bruno and Fairy Godmother carriage transformations.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Archives answer names Cinderella's horse.",
+        "sources": [
+          "b11-major"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Major is the explicitly named horse.",
+          "sources": [
+            "b11-major"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Philippe is not this horse's name.",
+          "sources": [
+            "b11-major"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Maximus is not this horse's name.",
+          "sources": [
+            "b11-major"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Angus is not this horse's name.",
+          "sources": [
+            "b11-major"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other Disney horses are plausible names, but the source uniquely assigns Major to Cinderella."
+      }
+    },
+    {
+      "questionId": 567,
+      "hash": "364e6315f3847160f1271f62957ea772c6b858d9bc530b9747897474fe9a17d4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from Cinderella's Major and Tangled's Maximus.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The original film's family horse is Maurice's Philippe.",
+        "sources": [
+          "b11-philippe"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Philippe is explicitly Maurice's horse.",
+          "sources": [
+            "b11-philippe"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Major is not that named horse.",
+          "sources": [
+            "b11-philippe"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Maximus is not that named horse.",
+          "sources": [
+            "b11-philippe"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Angus is not that named horse.",
+          "sources": [
+            "b11-philippe"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Ownership is now Maurice's, while Belle riding him is context rather than a competing ownership assertion."
+      }
+    },
+    {
+      "questionId": 569,
+      "hash": "28ac6be86765b573fba0cbf085b815a7fba5768e738098ffed98eeb2e4d408fe",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Easy character-species recall; full-name q579 is a separate fact.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Sebastian's species is explicitly crab.",
+        "sources": [
+          "b11-sebastian"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney calls him a crab.",
+          "sources": [
+            "b11-sebastian"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lobster is a different crustacean from crab.",
+          "sources": [
+            "b11-sebastian"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Shrimp is a different crustacean from crab.",
+          "sources": [
+            "b11-sebastian"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Crayfish is a different crustacean from crab.",
+          "sources": [
+            "b11-sebastian"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Replaced starfish, which was not even a crustacean. This now requires species recognition among crustaceans."
+      }
+    },
+    {
+      "questionId": 573,
+      "hash": "547c648b8511fc1e88614fc684607b7af7762b1bc1be8996b864ca579044a287",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Moved place trivia to movies; distinct from entry qualification and forbidden-treasure consequence.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The lamp-only instruction belongs to the named Cave of Wonders.",
+        "sources": [
+          "b11-cave"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney labels the speaker Cave of Wonders.",
+          "sources": [
+            "b11-cave"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cave of Secrets is not the supplied name.",
+          "sources": [
+            "b11-cave"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Golden Cavern is not the supplied name.",
+          "sources": [
+            "b11-cave"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cave of Destiny is not the supplied name.",
+          "sources": [
+            "b11-cave"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All choices could describe a magical cave generically; the official speaker heading establishes its proper name."
+      }
+    },
+    {
+      "questionId": 575,
+      "hash": "349434d6d2a03eea52db2fad0b670b3c2c102bd43a544a14002155549761f5a2",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from Hans's Southern Isles origin.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The original Frozen story ends with the heroes saving Arendelle from Hans.",
+        "sources": [
+          "b11-hans"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The company synopsis identifies Hans as the threat.",
+          "sources": [
+            "b11-hans"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kristoff assists the heroes rather than being that prince.",
+          "sources": [
+            "b11-hans"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Erik is not the named prince threatening Arendelle.",
+          "sources": [
+            "b11-hans"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Leon is not the named prince threatening Arendelle.",
+          "sources": [
+            "b11-hans"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The Duke is another antagonist but is not among the named prince options; Hans is uniquely the royal betrayal."
+      }
+    },
+    {
+      "questionId": 576,
+      "hash": "b7c00921176e8063a44355b4f81cf753c76ff3c65ba9fa5f13a60f9e85aa1392",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Neutral wording and 2016 anchor avoid remake/sequel drift.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 2016 cast announcement explicitly identifies the stowaway rooster.",
+        "sources": [
+          "b11-heihei"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Heihei is the rooster aboard the canoe.",
+          "sources": [
+            "b11-heihei"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pua is not the named rooster.",
+          "sources": [
+            "b11-heihei"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tamatoa is the crab, not the rooster.",
+          "sources": [
+            "b11-heihei"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tui is Moana's father, not the rooster.",
+          "sources": [
+            "b11-heihei"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed useless because he contributes to the journey; factual stowaway description uniquely identifies him."
+      }
+    },
+    {
+      "questionId": 577,
+      "hash": "8db19681e51f65e3d6d551e1becabeffc0d7ec719f8b6e1189e605d54c8f224b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Easy identity recall rather than medium.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The synopsis explicitly identifies Judy as a bunny.",
+        "sources": [
+          "b11-judy"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Bunny means rabbit.",
+          "sources": [
+            "b11-judy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The fox is Nick, not Judy.",
+          "sources": [
+            "b11-judy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mouse is a different species.",
+          "sources": [
+            "b11-judy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Squirrel is a different species.",
+          "sources": [
+            "b11-judy"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Her surname may hint at the answer but the actual species is explicitly established; police officer q204 is a different role fact."
+      }
+    },
+    {
+      "questionId": 578,
+      "hash": "dc16fc0c777ed51f1bb697015fd8427f939a149369b0aa03f18e248494ba0490",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from Naveen's kingdom and Tiana's mother Eudora.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The frog-prince Tiana encounters is Naveen.",
+        "sources": [
+          "b11-naveen"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The official supplement names frog-transformed Naveen.",
+          "sources": [
+            "b11-naveen"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Phillip is not that named frog prince.",
+          "sources": [
+            "b11-naveen"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Eric is not that named frog prince.",
+          "sources": [
+            "b11-naveen"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Charming is not that named frog prince.",
+          "sources": [
+            "b11-naveen"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A familiar prince name is insufficient: the source gives Naveen in Tiana's frog-transformation story."
+      }
+    },
+    {
+      "questionId": 579,
+      "hash": "ddeafd507f16cbeba2168187020ea3e0f5677ffa7f987fcceb5592126a679135",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Retains rare name-detail difficulty; no spelling variants affect the queried word.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The ordered full-name entry fixes the word immediately preceding Sebastian.",
+        "sources": [
+          "b11-sebastian"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Crustaceous immediately precedes Sebastian in the official full name.",
+          "sources": [
+            "b11-sebastian"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bartholomew is not in that position.",
+          "sources": [
+            "b11-sebastian"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Reginald is not in that position.",
+          "sources": [
+            "b11-sebastian"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Archibald is not in that position.",
+          "sources": [
+            "b11-sebastian"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Equal-form single-word options remove the exceptionally long correct-answer clue. The full name was checked in order, not guessed from crab association."
+      }
+    },
+    {
+      "questionId": 580,
+      "hash": "f03b8b65e33a8c1b4e97c23b50a7920450c3d6fc3eaa2782049fddfa9b6953f6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Parallel mixed trios improve distractors; medium multi-name recall.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The named original-film trio is Shenzi, Banzai and Ed.",
+        "sources": [
+          "b11-hyenas",
+          "b11-lioncast"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "All three match the Disney trio and 1994 credits.",
+          "sources": [
+            "b11-hyenas",
+            "b11-lioncast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Nuka replaces Ed, so the trio is wrong.",
+          "sources": [
+            "b11-hyenas",
+            "b11-lioncast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Vitani replaces Banzai, so the trio is wrong.",
+          "sources": [
+            "b11-hyenas",
+            "b11-lioncast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kovu replaces Shenzi, so the trio is wrong.",
+          "sources": [
+            "b11-hyenas",
+            "b11-lioncast"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked every member, not just two familiar names; 1994 anchor excludes the remake's renamed hyenas."
+      }
+    },
+    {
+      "questionId": 583,
+      "hash": "806b16b7140d564e5a5f9e263f3a5ee8c47ee3ae1c85e14f348399baa9117d5a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium character recall; distinct from Sabor predator and gorilla leader.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The original Tarzan hunter-villain is Clayton.",
+        "sources": [
+          "b11-clayton"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney calls Clayton the villainous hunter.",
+          "sources": [
+            "b11-clayton"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kerchak is not the identified human hunter.",
+          "sources": [
+            "b11-clayton"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Terk is not the identified human hunter.",
+          "sources": [
+            "b11-clayton"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Professor Porter is an explorer but not the villainous Clayton.",
+          "sources": [
+            "b11-clayton"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Hunting could be used broadly for animals, but the named film villain condition selects Clayton, not Kerchak or a scientist."
+      }
+    },
+    {
+      "questionId": 587,
+      "hash": "1cafcc8b3dcf1a53c337805ce696b5abce91025765d5c06ad5811792835536f1",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Film character creation fact differs from experiment number and Lilo's family.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Stitch's creator is explicitly Dr. Jumba Jookiba.",
+        "sources": [
+          "b11-jumba"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney identifies Jumba as the creator.",
+          "sources": [
+            "b11-jumba"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pleakley is not the named scientist creator.",
+          "sources": [
+            "b11-jumba"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gantu is not the named scientist creator.",
+          "sources": [
+            "b11-jumba"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Grand Councilwoman is not the named scientist creator.",
+          "sources": [
+            "b11-jumba"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Alien status alone is shared; creation of Stitch identifies Jumba exclusively."
+      }
+    },
+    {
+      "questionId": 588,
+      "hash": "49ab7f3e4fe26981452f394c25062ff03bb10e6cc91cd6d7757f47752779108c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Retains hard minor-character recall; distinct from Hydra battle.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The question names Hercules's first meeting with Meg, not a global first battle.",
+        "sources": [
+          "b11-nessus",
+          "b11-nessuscast"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "BYU identifies the centaur in this encounter as Nessus.",
+          "sources": [
+            "b11-nessus",
+            "b11-nessuscast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Chiron is not the film opponent identified in that encounter.",
+          "sources": [
+            "b11-nessus",
+            "b11-nessuscast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pholus is not the identified opponent.",
+          "sources": [
+            "b11-nessus",
+            "b11-nessuscast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Eurytion is not the identified opponent.",
+          "sources": [
+            "b11-nessus",
+            "b11-nessuscast"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All four are centaur names, removing the old species giveaway. Specific Meg encounter avoids unsupported first-monster chronology."
+      }
+    },
+    {
+      "questionId": 589,
+      "hash": "54aaa178bdc973fe9bb4df961f0c88d8f6d66865363e44b4a64c4da0a6da9983",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium rather than hard for a prominent named pet.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pinocchio's named kitten character is Figaro.",
+        "sources": [
+          "b11-figaro"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney identifies the kitten as Figaro.",
+          "sources": [
+            "b11-figaro"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Felix is not the identified kitten.",
+          "sources": [
+            "b11-figaro"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Whiskers is not the identified kitten.",
+          "sources": [
+            "b11-figaro"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mittens is not the identified kitten.",
+          "sources": [
+            "b11-figaro"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The 1940 film anchor excludes later Figaro ownership in Minnie shorts; none of the other labels names Geppetto's kitten here."
+      }
+    },
+    {
+      "questionId": 596,
+      "hash": "e9db95db1f987f0467b26a986ce0d433c2c0082b30d3dcb130fcc9d4df1090d8",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Current landmark identity scheduled for recheck; separate from the theater show inside it.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-04",
+      "premise": {
+        "reason": "The official attraction title identifies Animal Kingdom's tree icon.",
+        "sources": [
+          "b11-tree"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The official name is Tree of Life.",
+          "sources": [
+            "b11-tree"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Baobab describes a tree type, not the icon's official name.",
+          "sources": [
+            "b11-tree"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "World Tree is not the published name.",
+          "sources": [
+            "b11-tree"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Life Tree reverses the actual title and is not the published name.",
+          "sources": [
+            "b11-tree"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Asked the proper name, not the botanical inspiration; a baobab-like shape cannot make Baobab Tree a second official title."
+      }
+    },
+    {
+      "questionId": 597,
+      "hash": "a6dd90b10e4aa611fc5d1224ef48b5ba9d2aa6d0c4e1c0b892082b490de76f84",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from pavilion location, California origin and Tokyo museum backstory.",
+      "context": "Original released film/character continuity as named in the question; official park context where applicable.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The global flight experience debuted in June 2016.",
+        "sources": [
+          "b11-soarin",
+          "b11-soarinscenes"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney's dated debut article identifies Soarin' Around the World.",
+          "sources": [
+            "b11-soarin",
+            "b11-soarinscenes"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Test Track is not the named global-flight debut.",
+          "sources": [
+            "b11-soarin",
+            "b11-soarinscenes"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mission: SPACE is not the named global-landmark flight experience.",
+          "sources": [
+            "b11-soarin",
+            "b11-soarinscenes"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Living with the Land is not the named global-flight experience.",
+          "sources": [
+            "b11-soarin",
+            "b11-soarinscenes"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Present tense was stale because Across America is now offered. Historical June 2016 wording avoids assuming current film availability."
+      }
+    }
+  ]
+}

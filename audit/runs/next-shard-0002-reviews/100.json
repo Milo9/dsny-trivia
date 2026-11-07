@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 100,
+  "hash": "64e226cf2a87901c21c0b1812118e987adc1643c222efb3979ba462d70ef598f",
+  "questionSnapshot": {
+    "id": 100,
+    "question": "What is the land in Magic Kingdom that is home to Pirates of the Caribbean?",
+    "answers": [
+      "Adventureland",
+      "Frontierland",
+      "Tomorrowland",
+      "Liberty Square"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "q886 and q2525 share Adventureland but concern different attractions at different international parks. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "Walt Disney World, specified park/attraction; current naming/layout at review date.",
+    "timeSensitive": true,
+    "nextReviewAt": "2027-01-30",
+    "premise": {
+      "reason": "The Magic Kingdom Pirates of the Caribbean attraction is in Adventureland.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/pirates-of-the-caribbean/",
+          "locator": "Second paragraph separately places Magic Kingdom version in Adventureland, opened December 15, 1973; Disneyland version is in New Orleans Square."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "The source separately locates Disneyland’s version in New Orleans Square; the question explicitly says Magic Kingdom. Under that fixed park context the three other land names are excluded by the unique listed location."
+    },
+    "options": [
+      {
+        "answer": "Adventureland",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Adventureland is explicitly specified for the Magic Kingdom version.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/pirates-of-the-caribbean/",
+            "locator": "Second paragraph separately places Magic Kingdom version in Adventureland, opened December 15, 1973; Disneyland version is in New Orleans Square."
+          }
+        ]
+      },
+      {
+        "answer": "Frontierland",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Frontierland is not the land identified for that version.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/pirates-of-the-caribbean/",
+            "locator": "Second paragraph separately places Magic Kingdom version in Adventureland, opened December 15, 1973; Disneyland version is in New Orleans Square."
+          }
+        ]
+      },
+      {
+        "answer": "Tomorrowland",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Tomorrowland is not the stated location.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/pirates-of-the-caribbean/",
+            "locator": "Second paragraph separately places Magic Kingdom version in Adventureland, opened December 15, 1973; Disneyland version is in New Orleans Square."
+          }
+        ]
+      },
+      {
+        "answer": "Liberty Square",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Liberty Square is not the stated location.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/pirates-of-the-caribbean/",
+            "locator": "Second paragraph separately places Magic Kingdom version in Adventureland, opened December 15, 1973; Disneyland version is in New Orleans Square."
+          }
+        ]
+      }
+    ]
+  }
+}

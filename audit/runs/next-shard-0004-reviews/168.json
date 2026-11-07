@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 168,
+  "hash": "9330564fc50a4af052142695e0966cc8bc1a8b9fb7b191e637d639f1a867d058",
+  "questionSnapshot": {
+    "id": 168,
+    "question": "Which songwriting duo wrote 'It's a Small World' and numerous other Disney classics?",
+    "answers": [
+      "The Sherman Brothers",
+      "Menken and Ashman",
+      "Lopez and Anderson-Lopez",
+      "John and Rice"
+    ],
+    "difficulty": "hard",
+    "category": "music"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged all three real Disney songwriting pairs: authorship is an explicit Richard/Robert Sherman attribution. Shortened the correct option to remove the explanatory-length clue; the other pairs are not alternate names for the brothers.",
+  "verification": {
+    "context": "Which songwriting duo wrote 'It's a Small World' and numerous other Disney classics?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Both official sources explicitly name Richard and Robert Sherman.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/its-a-small-world/",
+          "locator": "Opening: attraction moved from 1964–65 New York World’s Fair; paragraph credits Richard M. and Robert B. Sherman with its repeated multilingual song."
+        },
+        {
+          "url": "https://disneyland.disney.go.com/en_CA/attractions/disneyland/its-a-small-world/",
+          "locator": "One Song, Many Languages and Disney History, After All sections: Sherman brothers song commission and 1964–1965 New York fair origin before Disneyland in 1966."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged all three real Disney songwriting pairs: authorship is an explicit Richard/Robert Sherman attribution. Shortened the correct option to remove the explanatory-length clue; the other pairs are not alternate names for the brothers."
+    },
+    "options": [
+      {
+        "answer": "The Sherman Brothers",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Both official sources explicitly name Richard and Robert Sherman.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/its-a-small-world/",
+            "locator": "Opening: attraction moved from 1964–65 New York World’s Fair; paragraph credits Richard M. and Robert B. Sherman with its repeated multilingual song."
+          },
+          {
+            "url": "https://disneyland.disney.go.com/en_CA/attractions/disneyland/its-a-small-world/",
+            "locator": "One Song, Many Languages and Disney History, After All sections: Sherman brothers song commission and 1964–1965 New York fair origin before Disneyland in 1966."
+          }
+        ]
+      },
+      {
+        "answer": "Menken and Ashman",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the named author pair of this song.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/its-a-small-world/",
+            "locator": "Opening: attraction moved from 1964–65 New York World’s Fair; paragraph credits Richard M. and Robert B. Sherman with its repeated multilingual song."
+          },
+          {
+            "url": "https://disneyland.disney.go.com/en_CA/attractions/disneyland/its-a-small-world/",
+            "locator": "One Song, Many Languages and Disney History, After All sections: Sherman brothers song commission and 1964–1965 New York fair origin before Disneyland in 1966."
+          }
+        ]
+      },
+      {
+        "answer": "Lopez and Anderson-Lopez",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the named author pair of this song.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/its-a-small-world/",
+            "locator": "Opening: attraction moved from 1964–65 New York World’s Fair; paragraph credits Richard M. and Robert B. Sherman with its repeated multilingual song."
+          },
+          {
+            "url": "https://disneyland.disney.go.com/en_CA/attractions/disneyland/its-a-small-world/",
+            "locator": "One Song, Many Languages and Disney History, After All sections: Sherman brothers song commission and 1964–1965 New York fair origin before Disneyland in 1966."
+          }
+        ]
+      },
+      {
+        "answer": "John and Rice",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the named author pair of this song.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/its-a-small-world/",
+            "locator": "Opening: attraction moved from 1964–65 New York World’s Fair; paragraph credits Richard M. and Robert B. Sherman with its repeated multilingual song."
+          },
+          {
+            "url": "https://disneyland.disney.go.com/en_CA/attractions/disneyland/its-a-small-world/",
+            "locator": "One Song, Many Languages and Disney History, After All sections: Sherman brothers song commission and 1964–1965 New York fair origin before Disneyland in 1966."
+          }
+        ]
+      }
+    ]
+  }
+}

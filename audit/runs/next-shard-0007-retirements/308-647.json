@@ -1,0 +1,31 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "retired": {
+    "id": 308,
+    "question": "In Inside Out, what is the name of Riley's imaginary friend?",
+    "answers": [
+      "Bing Bong",
+      "Ping Pong",
+      "Bong Bing",
+      "Happy"
+    ],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  "retained": {
+    "id": 647,
+    "question": "In Inside Out, what type of creature is Riley's imaginary friend Bing Bong?",
+    "answers": [
+      "Part elephant, part cat, part dolphin",
+      "A purple cloud monster",
+      "A rainbow-colored pony",
+      "A giant teddy bear"
+    ],
+    "difficulty": "medium",
+    "category": "pixar"
+  },
+  "additionalComparisons": [],
+  "rationale": "The retained question explicitly names Bing Bong as Riley's imaginary friend and asks his composition. That stem directly answers 308; retain the question that asks an additional design fact.",
+  "scope": "Only the planned question is retired. Comparing a replacement does not approve its factual review."
+}

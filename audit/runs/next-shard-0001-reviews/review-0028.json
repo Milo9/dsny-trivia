@@ -1,0 +1,80 @@
+{
+  "questionId": 28,
+  "hash": "42c9784d7529aae6b33d7281ad8d1054a9b574f99547f61f47b4ab0676b47476",
+  "questionSnapshot": {
+    "id": 28,
+    "question": "In WALL-E, what does WALL-E stand for?",
+    "answers": [
+      "Waste Allocation Load Lifter Earth-Class",
+      "World Automated Life Lab Earth",
+      "Waste Activated Lift Loader Earth",
+      "Wide Area Load Lifter Earth"
+    ],
+    "difficulty": "medium",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "All four options are similarly long multiword expansions, no structural giveaway. Medium terminology recall, Pixar category. #194 asks EVE's distinct model expansion.",
+  "verification": {
+    "context": "WALL-E, Pixar 2008 film, model-name expansion.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Waste Allocation Load Lifter Earth-Class",
+        "verdict": "correct",
+        "reason": "This exactly matches Pixar's expansion Waste Allocation Load Lifter Earth-Class.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/wall-e",
+            "locator": "The Characters / WALL-E: exact expansion Waste Allocation Load Lifter Earth-Class. EVE profile separately expands a different robot's name."
+          }
+        ]
+      },
+      {
+        "answer": "World Automated Life Lab Earth",
+        "verdict": "incorrect",
+        "reason": "World Automated Life Lab Earth substitutes World/Automated/Life/Lab for the official words.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/wall-e",
+            "locator": "The Characters / WALL-E: exact expansion Waste Allocation Load Lifter Earth-Class. EVE profile separately expands a different robot's name."
+          }
+        ]
+      },
+      {
+        "answer": "Waste Activated Lift Loader Earth",
+        "verdict": "incorrect",
+        "reason": "Waste Activated Lift Loader Earth changes Allocation/Load/Lifter and omits Class.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/wall-e",
+            "locator": "The Characters / WALL-E: exact expansion Waste Allocation Load Lifter Earth-Class. EVE profile separately expands a different robot's name."
+          }
+        ]
+      },
+      {
+        "answer": "Wide Area Load Lifter Earth",
+        "verdict": "incorrect",
+        "reason": "Wide Area Load Lifter Earth changes Waste Allocation and omits Class.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/wall-e",
+            "locator": "The Characters / WALL-E: exact expansion Waste Allocation Load Lifter Earth-Class. EVE profile separately expands a different robot's name."
+          }
+        ]
+      }
+    ]
+  }
+}

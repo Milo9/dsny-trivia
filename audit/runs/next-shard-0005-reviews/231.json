@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 231,
+  "hash": "378d7f0adfe30bab1bc6e46834defae092dd14b35a93fe7d2ca6394030ccef21",
+  "questionSnapshot": {
+    "id": 231,
+    "question": "In Tangled (2010), what is the name of the palace horse who pursues Flynn Rider?",
+    "answers": [
+      "Maximus",
+      "Angus",
+      "Khan",
+      "Samson"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Corrected false ownership premise: pursuing and later helping Flynn does not make Maximus Flynn’s horse. The primary horse profiles separately assign all three other steeds, and Samson replaces the human Phillip distractor.",
+  "verification": {
+    "context": "In Tangled (2010), what is the name of the palace horse who pursues Flynn Rider?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Maximus is the guard captain’s horse pursuing Flynn.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/tangled-film/",
+          "locator": "Synopsis names the super-cop horse Maximus and Flynn as a bandit; not horse owner."
+        },
+        {
+          "url": "https://news.disneylandparis.com/en/celebrate-the-lunar-new-year-of-the-horse-through-the-equine-portraits-at-royal-banquet/",
+          "locator": "Individual Maximus, Khan, Angus and Samson profiles: guard captain’s pursuing horse; Fa family/Mulan steed; Merida horse; Phillip’s horse. Animation studios collaborated on portraits."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Corrected false ownership premise: pursuing and later helping Flynn does not make Maximus Flynn’s horse. The primary horse profiles separately assign all three other steeds, and Samson replaces the human Phillip distractor."
+    },
+    "options": [
+      {
+        "answer": "Maximus",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Maximus is the guard captain’s horse pursuing Flynn.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/tangled-film/",
+            "locator": "Synopsis names the super-cop horse Maximus and Flynn as a bandit; not horse owner."
+          },
+          {
+            "url": "https://news.disneylandparis.com/en/celebrate-the-lunar-new-year-of-the-horse-through-the-equine-portraits-at-royal-banquet/",
+            "locator": "Individual Maximus, Khan, Angus and Samson profiles: guard captain’s pursuing horse; Fa family/Mulan steed; Merida horse; Phillip’s horse. Animation studios collaborated on portraits."
+          }
+        ]
+      },
+      {
+        "answer": "Angus",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Merida’s horse in Brave.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/tangled-film/",
+            "locator": "Synopsis names the super-cop horse Maximus and Flynn as a bandit; not horse owner."
+          },
+          {
+            "url": "https://news.disneylandparis.com/en/celebrate-the-lunar-new-year-of-the-horse-through-the-equine-portraits-at-royal-banquet/",
+            "locator": "Individual Maximus, Khan, Angus and Samson profiles: guard captain’s pursuing horse; Fa family/Mulan steed; Merida horse; Phillip’s horse. Animation studios collaborated on portraits."
+          }
+        ]
+      },
+      {
+        "answer": "Khan",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Mulan/Fa family horse.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/tangled-film/",
+            "locator": "Synopsis names the super-cop horse Maximus and Flynn as a bandit; not horse owner."
+          },
+          {
+            "url": "https://news.disneylandparis.com/en/celebrate-the-lunar-new-year-of-the-horse-through-the-equine-portraits-at-royal-banquet/",
+            "locator": "Individual Maximus, Khan, Angus and Samson profiles: guard captain’s pursuing horse; Fa family/Mulan steed; Merida horse; Phillip’s horse. Animation studios collaborated on portraits."
+          }
+        ]
+      },
+      {
+        "answer": "Samson",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Phillip’s horse in Sleeping Beauty.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/tangled-film/",
+            "locator": "Synopsis names the super-cop horse Maximus and Flynn as a bandit; not horse owner."
+          },
+          {
+            "url": "https://news.disneylandparis.com/en/celebrate-the-lunar-new-year-of-the-horse-through-the-equine-portraits-at-royal-banquet/",
+            "locator": "Individual Maximus, Khan, Angus and Samson profiles: guard captain’s pursuing horse; Fa family/Mulan steed; Merida horse; Phillip’s horse. Animation studios collaborated on portraits."
+          }
+        ]
+      }
+    ]
+  }
+}

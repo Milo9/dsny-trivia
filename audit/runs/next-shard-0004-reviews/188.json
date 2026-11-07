@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 188,
+  "hash": "c2f6a14a25740db7398dd0ef53b9953948250a21fb7caef901b2e3eab2f6c90a",
+  "questionSnapshot": {
+    "id": 188,
+    "question": "In Inside Out, what color represents the emotion Sadness?",
+    "answers": [
+      "Blue",
+      "Purple",
+      "Green",
+      "Gray"
+    ],
+    "difficulty": "easy",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged purple glasses or gray mood language versus the character’s design color. The filmmaker report explicitly calls the character blue-hued. Purple, green and gray are not alternate readings of that stated color. Calibrated to easy.",
+  "verification": {
+    "context": "In Inside Out, what color represents the emotion Sadness?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "D23’s filmmaker report explicitly identifies Sadness as blue.",
+      "sources": [
+        {
+          "url": "https://d23.com/the-ins-and-outs-of-inside-out/",
+          "locator": "Filmmaker-panel report paragraph beginning The casting of Phyllis Smith identifies Sadness as the blue-hued emotion."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged purple glasses or gray mood language versus the character’s design color. The filmmaker report explicitly calls the character blue-hued. Purple, green and gray are not alternate readings of that stated color. Calibrated to easy."
+    },
+    "options": [
+      {
+        "answer": "Blue",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "D23’s filmmaker report explicitly identifies Sadness as blue.",
+        "sources": [
+          {
+            "url": "https://d23.com/the-ins-and-outs-of-inside-out/",
+            "locator": "Filmmaker-panel report paragraph beginning The casting of Phyllis Smith identifies Sadness as the blue-hued emotion."
+          }
+        ]
+      },
+      {
+        "answer": "Purple",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the color attributed to Sadness.",
+        "sources": [
+          {
+            "url": "https://d23.com/the-ins-and-outs-of-inside-out/",
+            "locator": "Filmmaker-panel report paragraph beginning The casting of Phyllis Smith identifies Sadness as the blue-hued emotion."
+          }
+        ]
+      },
+      {
+        "answer": "Green",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the color attributed to Sadness.",
+        "sources": [
+          {
+            "url": "https://d23.com/the-ins-and-outs-of-inside-out/",
+            "locator": "Filmmaker-panel report paragraph beginning The casting of Phyllis Smith identifies Sadness as the blue-hued emotion."
+          }
+        ]
+      },
+      {
+        "answer": "Gray",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the color attributed to Sadness.",
+        "sources": [
+          {
+            "url": "https://d23.com/the-ins-and-outs-of-inside-out/",
+            "locator": "Filmmaker-panel report paragraph beginning The casting of Phyllis Smith identifies Sadness as the blue-hued emotion."
+          }
+        ]
+      }
+    ]
+  }
+}

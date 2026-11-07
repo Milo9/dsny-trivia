@@ -1,0 +1,161 @@
+{
+  "schema": 2,
+  "questionId": 290,
+  "hash": "1a636d378775dcbf902b41bb894194826232128cc29cdab680a990a9a42db5f0",
+  "questionSnapshot": {
+    "id": 290,
+    "question": "In The Little Mermaid (1989), what is the name of Ariel's seagull friend?",
+    "answers": [
+      "Scuttle",
+      "Flounder",
+      "Sebastian",
+      "Grimsby"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Specified 1989 animation; live-action Scuttle is a gannet. The fish/crab/retainer entries individually exclude the alternatives. q220 adds fork nickname and q978 adds cruise-area name, not merely this identity.",
+  "verification": {
+    "context": "In The Little Mermaid (1989), what is the name of Ariel's seagull friend?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Scuttle is the seagull identified by Disney.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/scuttle/",
+          "locator": "Character entry explicitly identifies seagull Scuttle and his advice to Ariel; original voice Buddy Hackett."
+        },
+        {
+          "url": "https://d23.com/a-to-z/flounder/",
+          "locator": "Character entry explicitly identifies Flounder as Ariel fish friend in The Little Mermaid."
+        },
+        {
+          "url": "https://d23.com/a-to-z/sebastian/",
+          "locator": "Character entry: Sebastian is Triton crab/court composer, distinguishing him from fish and seagull."
+        },
+        {
+          "url": "https://d23.com/a-to-z/grimsby/",
+          "locator": "Character entry: Grimsby is Prince Eric retainer, not an animal companion."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Specified 1989 animation; live-action Scuttle is a gannet. The fish/crab/retainer entries individually exclude the alternatives. q220 adds fork nickname and q978 adds cruise-area name, not merely this identity."
+    },
+    "options": [
+      {
+        "answer": "Scuttle",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Scuttle is the seagull identified by Disney.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/scuttle/",
+            "locator": "Character entry explicitly identifies seagull Scuttle and his advice to Ariel; original voice Buddy Hackett."
+          },
+          {
+            "url": "https://d23.com/a-to-z/flounder/",
+            "locator": "Character entry explicitly identifies Flounder as Ariel fish friend in The Little Mermaid."
+          },
+          {
+            "url": "https://d23.com/a-to-z/sebastian/",
+            "locator": "Character entry: Sebastian is Triton crab/court composer, distinguishing him from fish and seagull."
+          },
+          {
+            "url": "https://d23.com/a-to-z/grimsby/",
+            "locator": "Character entry: Grimsby is Prince Eric retainer, not an animal companion."
+          }
+        ]
+      },
+      {
+        "answer": "Flounder",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Flounder is a fish, not the seagull.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/scuttle/",
+            "locator": "Character entry explicitly identifies seagull Scuttle and his advice to Ariel; original voice Buddy Hackett."
+          },
+          {
+            "url": "https://d23.com/a-to-z/flounder/",
+            "locator": "Character entry explicitly identifies Flounder as Ariel fish friend in The Little Mermaid."
+          },
+          {
+            "url": "https://d23.com/a-to-z/sebastian/",
+            "locator": "Character entry: Sebastian is Triton crab/court composer, distinguishing him from fish and seagull."
+          },
+          {
+            "url": "https://d23.com/a-to-z/grimsby/",
+            "locator": "Character entry: Grimsby is Prince Eric retainer, not an animal companion."
+          }
+        ]
+      },
+      {
+        "answer": "Sebastian",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Sebastian is a crab, not the seagull.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/scuttle/",
+            "locator": "Character entry explicitly identifies seagull Scuttle and his advice to Ariel; original voice Buddy Hackett."
+          },
+          {
+            "url": "https://d23.com/a-to-z/flounder/",
+            "locator": "Character entry explicitly identifies Flounder as Ariel fish friend in The Little Mermaid."
+          },
+          {
+            "url": "https://d23.com/a-to-z/sebastian/",
+            "locator": "Character entry: Sebastian is Triton crab/court composer, distinguishing him from fish and seagull."
+          },
+          {
+            "url": "https://d23.com/a-to-z/grimsby/",
+            "locator": "Character entry: Grimsby is Prince Eric retainer, not an animal companion."
+          }
+        ]
+      },
+      {
+        "answer": "Grimsby",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Grimsby is Eric retainer, not the seagull.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/scuttle/",
+            "locator": "Character entry explicitly identifies seagull Scuttle and his advice to Ariel; original voice Buddy Hackett."
+          },
+          {
+            "url": "https://d23.com/a-to-z/flounder/",
+            "locator": "Character entry explicitly identifies Flounder as Ariel fish friend in The Little Mermaid."
+          },
+          {
+            "url": "https://d23.com/a-to-z/sebastian/",
+            "locator": "Character entry: Sebastian is Triton crab/court composer, distinguishing him from fish and seagull."
+          },
+          {
+            "url": "https://d23.com/a-to-z/grimsby/",
+            "locator": "Character entry: Grimsby is Prince Eric retainer, not an animal companion."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 210,
+  "hash": "250901781c86556a6799b99e9a7da8fb4b52f2c773447bc8ce6e926f7e2617b2",
+  "questionSnapshot": {
+    "id": 210,
+    "question": "In Encanto, what is the Madrigals' magical house usually called?",
+    "answers": [
+      "Casita",
+      "Encanto",
+      "Estrellita",
+      "Mariposa"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Casa Madrigal could literally describe the family house, so removed it. Final alternatives ask for the established affectionate name; Encanto is the wider place, Estrellita and Mariposa are not Casita.",
+  "verification": {
+    "context": "In Encanto, what is the Madrigals' magical house usually called?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Official activity packet names the magical house Casita.",
+      "sources": [
+        {
+          "url": "https://impact.disney.com/app/uploads/2022/01/ENCANTO_ACTIVITY-PACKET_FNL-web.pdf",
+          "locator": "Welcome to Encanto spread: magical house named Casita; distinguishes the charmed place Encanto from the house; character spread identifies Luisa and Isabela gifts."
+        },
+        {
+          "url": "https://d23.com/meet-the-characters-of-encanto/",
+          "locator": "Isabela, Luisa, Julieta/Agustin and Camilo sections explicitly distinguish plants, strength, healing through food, and shapeshifting."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Casa Madrigal could literally describe the family house, so removed it. Final alternatives ask for the established affectionate name; Encanto is the wider place, Estrellita and Mariposa are not Casita."
+    },
+    "options": [
+      {
+        "answer": "Casita",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Official activity packet names the magical house Casita.",
+        "sources": [
+          {
+            "url": "https://impact.disney.com/app/uploads/2022/01/ENCANTO_ACTIVITY-PACKET_FNL-web.pdf",
+            "locator": "Welcome to Encanto spread: magical house named Casita; distinguishes the charmed place Encanto from the house; character spread identifies Luisa and Isabela gifts."
+          },
+          {
+            "url": "https://d23.com/meet-the-characters-of-encanto/",
+            "locator": "Isabela, Luisa, Julieta/Agustin and Camilo sections explicitly distinguish plants, strength, healing through food, and shapeshifting."
+          }
+        ]
+      },
+      {
+        "answer": "Encanto",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Encanto names the charmed place, not the house nickname.",
+        "sources": [
+          {
+            "url": "https://impact.disney.com/app/uploads/2022/01/ENCANTO_ACTIVITY-PACKET_FNL-web.pdf",
+            "locator": "Welcome to Encanto spread: magical house named Casita; distinguishes the charmed place Encanto from the house; character spread identifies Luisa and Isabela gifts."
+          },
+          {
+            "url": "https://d23.com/meet-the-characters-of-encanto/",
+            "locator": "Isabela, Luisa, Julieta/Agustin and Camilo sections explicitly distinguish plants, strength, healing through food, and shapeshifting."
+          }
+        ]
+      },
+      {
+        "answer": "Estrellita",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "A different word from the explicitly given nickname.",
+        "sources": [
+          {
+            "url": "https://impact.disney.com/app/uploads/2022/01/ENCANTO_ACTIVITY-PACKET_FNL-web.pdf",
+            "locator": "Welcome to Encanto spread: magical house named Casita; distinguishes the charmed place Encanto from the house; character spread identifies Luisa and Isabela gifts."
+          },
+          {
+            "url": "https://d23.com/meet-the-characters-of-encanto/",
+            "locator": "Isabela, Luisa, Julieta/Agustin and Camilo sections explicitly distinguish plants, strength, healing through food, and shapeshifting."
+          }
+        ]
+      },
+      {
+        "answer": "Mariposa",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "A different word from the explicitly given nickname.",
+        "sources": [
+          {
+            "url": "https://impact.disney.com/app/uploads/2022/01/ENCANTO_ACTIVITY-PACKET_FNL-web.pdf",
+            "locator": "Welcome to Encanto spread: magical house named Casita; distinguishes the charmed place Encanto from the house; character spread identifies Luisa and Isabela gifts."
+          },
+          {
+            "url": "https://d23.com/meet-the-characters-of-encanto/",
+            "locator": "Isabela, Luisa, Julieta/Agustin and Camilo sections explicitly distinguish plants, strength, healing through food, and shapeshifting."
+          }
+        ]
+      }
+    ]
+  }
+}

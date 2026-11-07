@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 293,
+  "hash": "81836a11527967ab0d46d78fb146658a9671c6cb0612c95f83796f7a3db5d212",
+  "questionSnapshot": {
+    "id": 293,
+    "question": "In Cars, what is the name of Lightning McQueen's best friend tow truck?",
+    "answers": [
+      "Mater",
+      "Finn",
+      "Ramone",
+      "Chick"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Tow truck plus friendship specifies one character; not every friend or racer Lightning encounters. Pixar Mater profile establishes both properties, Ramone profile distinguishes other role. Sponsor, race rival, and Doc mentor questions add facts.",
+  "verification": {
+    "context": "In Cars, what is the name of Lightning McQueen's best friend tow truck?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Mater is explicitly tow truck and first friend.",
+      "sources": [
+        {
+          "url": "https://www.pixar.com/cars",
+          "locator": "Mater profile: tow truck, first to befriend Lightning; Ramone profile identifies Impala body-shop owner."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tow truck plus friendship specifies one character; not every friend or racer Lightning encounters. Pixar Mater profile establishes both properties, Ramone profile distinguishes other role. Sponsor, race rival, and Doc mentor questions add facts."
+    },
+    "options": [
+      {
+        "answer": "Mater",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Mater is explicitly tow truck and first friend.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/cars",
+            "locator": "Mater profile: tow truck, first to befriend Lightning; Ramone profile identifies Impala body-shop owner."
+          }
+        ]
+      },
+      {
+        "answer": "Finn",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Finn is not the tow truck identified as Mater.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/cars",
+            "locator": "Mater profile: tow truck, first to befriend Lightning; Ramone profile identifies Impala body-shop owner."
+          }
+        ]
+      },
+      {
+        "answer": "Ramone",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Ramone is an Impala body-shop owner, not tow truck.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/cars",
+            "locator": "Mater profile: tow truck, first to befriend Lightning; Ramone profile identifies Impala body-shop owner."
+          }
+        ]
+      },
+      {
+        "answer": "Chick",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Chick is not the identified tow-truck friend.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/cars",
+            "locator": "Mater profile: tow truck, first to befriend Lightning; Ramone profile identifies Impala body-shop owner."
+          }
+        ]
+      }
+    ]
+  }
+}

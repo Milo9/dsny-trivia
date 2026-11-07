@@ -1,0 +1,70 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "retired": {
+    "id": 378,
+    "question": "What is the name of the Disneyland attraction inside the Matterhorn mountain?",
+    "answers": [
+      "Matterhorn Bobsleds",
+      "Alpine Coaster",
+      "Yeti Run",
+      "Snowpeak Express"
+    ],
+    "difficulty": "hard",
+    "category": "parks"
+  },
+  "retained": {
+    "id": 1172,
+    "question": "Which Disneyland attraction is often described as the park's first mountain coaster?",
+    "answers": [
+      "Matterhorn Bobsleds",
+      "Space Mountain",
+      "Big Thunder Mountain Railroad",
+      "Splash Mountain"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "additionalComparisons": [],
+  "rationale": "Both identify the same Disneyland Matterhorn coaster. 378 repeats the answer's mountain name and uses invented alternatives; retain the less obvious mountain-coaster question.",
+  "sources": [
+    {
+      "sourceNoteId": "matterhorn",
+      "url": "https://d23.com/a-to-z/matterhorn-bobsleds/",
+      "locator": "Opening description; mountain and bobsled-run paragraphs",
+      "evidence": "Matterhorn Bobsleds is the Disneyland mountain attraction, opened in 1959 with dual bobsled runs.",
+      "checkedBy": "Codex",
+      "checkedAt": "2026-11-07",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "limitations": "Primary institutional text inspected; no film or video viewing claimed.",
+      "topics": [
+        "parks"
+      ]
+    }
+  ],
+  "originalOptionAssessments": [
+    {
+      "answer": "Matterhorn Bobsleds",
+      "assessment": "Matterhorn Bobsleds is the documented mountain ride."
+    },
+    {
+      "answer": "Alpine Coaster",
+      "assessment": "Alpine Coaster is not its name."
+    },
+    {
+      "answer": "Yeti Run",
+      "assessment": "Yeti Run is not its name."
+    },
+    {
+      "answer": "Snowpeak Express",
+      "assessment": "Snowpeak Express is not its name."
+    }
+  ],
+  "finalChallenge": {
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "notes": "Both identify the same Disneyland Matterhorn coaster. 378 repeats the answer's mountain name and uses invented alternatives; retain the less obvious mountain-coaster question. All four original options inspected. Retirement avoids asserting approval of a flawed premise or an insufficiently excluded alternative."
+  },
+  "scope": "Only the planned ID is retired. Counterpart comparison is not approval of its other claims."
+}

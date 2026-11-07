@@ -1,0 +1,464 @@
+[
+  {
+    "findingId": "duplicate-0bebfa53725ddf000b7b",
+    "questions": [
+      {
+        "id": 188,
+        "question": "In Inside Out, what color represents the emotion Sadness?",
+        "answers": [
+          "Blue",
+          "Purple",
+          "Green",
+          "Gray"
+        ],
+        "difficulty": "easy",
+        "category": "pixar"
+      },
+      {
+        "id": 1313,
+        "question": "In Inside Out, what color is the emotion Joy?",
+        "answers": [
+          "Yellow",
+          "Blue",
+          "Purple",
+          "Orange"
+        ],
+        "difficulty": "easy",
+        "category": "pixar"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "Sadness’s blue design and Joy’s yellow design are attributes of different characters; neither answer establishes the other color."
+  },
+  {
+    "findingId": "duplicate-2dba83cca680a1400c2b",
+    "questions": [
+      {
+        "id": 175,
+        "question": "In The Incredibles, what is Mr. Incredible's real name?",
+        "answers": [
+          "Bob Parr",
+          "Bill Parr",
+          "Ben Parr",
+          "Brad Parr"
+        ],
+        "difficulty": "easy",
+        "category": "pixar"
+      },
+      {
+        "id": 634,
+        "question": "In The Incredibles, what is Mr. Incredible's superpower?",
+        "answers": [
+          "Super strength",
+          "Invisibility",
+          "Super speed",
+          "Time travel"
+        ],
+        "difficulty": "easy",
+        "category": "pixar"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "Mr. Incredible’s civilian name and his superpower require separate recall; Bob Parr does not establish super strength."
+  },
+  {
+    "findingId": "duplicate-3e2adfab6bec528f48d1",
+    "questions": [
+      {
+        "id": 204,
+        "question": "In Zootopia, what is Judy Hopps' job?",
+        "answers": [
+          "Police officer",
+          "Firefighter",
+          "Teacher",
+          "Journalist"
+        ],
+        "difficulty": "easy",
+        "category": "movies"
+      },
+      {
+        "id": 1094,
+        "question": "In Zootopia, what is Judy Hopps' hometown?",
+        "answers": [
+          "Bunnyburrow",
+          "Sahara Square",
+          "Tundratown",
+          "Savanna Central"
+        ],
+        "difficulty": "medium",
+        "category": "movies"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "Judy’s job and hometown are distinct attributes; knowing police officer does not establish Bunnyburrow."
+  },
+  {
+    "findingId": "duplicate-51b7e5d8b6af656b57d2",
+    "questions": [
+      {
+        "id": 179,
+        "question": "In Cars, what is Lightning McQueen's racing number?",
+        "answers": [
+          "95",
+          "51",
+          "43",
+          "7"
+        ],
+        "difficulty": "easy",
+        "category": "pixar"
+      },
+      {
+        "id": 305,
+        "question": "In Cars, what is the name of Lightning McQueen's primary racing sponsor?",
+        "answers": [
+          "Rust-eze",
+          "Dinoco",
+          "Octane Gain",
+          "Vitoline"
+        ],
+        "difficulty": "medium",
+        "category": "characters"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "Racing number and sponsor are distinct facts; 95 does not establish Rust-eze."
+  },
+  {
+    "findingId": "duplicate-6612e4a87438fed97923",
+    "questions": [
+      {
+        "id": 196,
+        "question": "In Toy Story, what is the name of the space-themed pizza restaurant that Woody and Buzz both visit?",
+        "answers": [
+          "Pizza Planet",
+          "Cosmic Pizza",
+          "Galaxy Slice",
+          "Star Pizza"
+        ],
+        "difficulty": "medium",
+        "category": "pixar"
+      },
+      {
+        "id": 2633,
+        "question": "Hollywood Studios' Alien Swirling Saucers ride vehicles are designed to look like prizes from a claw machine referenced in which restaurant from the Toy Story films?",
+        "answers": [
+          "Pizza Planet",
+          "Al's Toy Barn",
+          "Sunnyside Daycare",
+          "Andy's House"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "Film restaurant identity versus a specific real park ride’s claw-machine design reference. Knowing the film location alone cannot establish which reference Alien Swirling Saucers uses; retaining both distinct associations."
+  },
+  {
+    "findingId": "duplicate-743325d9d278b8752554",
+    "questions": [
+      {
+        "id": 206,
+        "question": "In Snow White, what fruit does the Evil Queen use to poison Snow White?",
+        "answers": [
+          "An apple",
+          "A pear",
+          "A peach",
+          "A plum"
+        ],
+        "difficulty": "easy",
+        "category": "movies"
+      },
+      {
+        "id": 1353,
+        "question": "In Snow White, what disguise does the Evil Queen use when she brings Snow White a poisoned apple?",
+        "answers": [
+          "An old peddler woman/hag",
+          "A friendly fairy godmother",
+          "A wandering sorceress in purple robes",
+          "A veiled noblewoman"
+        ],
+        "difficulty": "medium",
+        "category": "characters"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "Poisoned fruit and the Queen’s disguise are separate plot attributes. Knowing apple does not identify her peddler disguise; knowing peddler does not identify fruit. The contextual stem in the latter is not its tested answer."
+  },
+  {
+    "findingId": "duplicate-7d7fec06ef7792539edb",
+    "questions": [
+      {
+        "id": 159,
+        "question": "Who composed the music for The Little Mermaid, Beauty and the Beast, and Aladdin?",
+        "answers": [
+          "Alan Menken",
+          "Elton John",
+          "Howard Ashman",
+          "Phil Collins"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      },
+      {
+        "id": 725,
+        "question": "Who composed the score for The Hunchback of Notre Dame?",
+        "answers": [
+          "Alan Menken",
+          "Stephen Schwartz",
+          "Howard Ashman",
+          "Tim Rice"
+        ],
+        "difficulty": "hard",
+        "category": "music"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "Menken’s three-film composition credits and his Hunchback score credit concern different productions. His name alone does not establish every film in his career."
+  },
+  {
+    "findingId": "duplicate-8498ce18cbcf182d1af9",
+    "questions": [
+      {
+        "id": 191,
+        "question": "In Brave, what does the spell Merida uses on her mother accidentally turn her into?",
+        "answers": [
+          "A bear",
+          "A deer",
+          "A wolf",
+          "A fox"
+        ],
+        "difficulty": "medium",
+        "category": "pixar"
+      },
+      {
+        "id": 520,
+        "question": "In the 2003 film about Kenai, what does he get transformed into?",
+        "answers": [
+          "A bear",
+          "A wolf",
+          "A deer",
+          "An eagle"
+        ],
+        "difficulty": "medium",
+        "category": "movies"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "Elinor’s transformation in Brave and Kenai’s transformation in Brother Bear are different stories and characters. Shared animal alone proves no duplicate."
+  },
+  {
+    "findingId": "duplicate-8e524a34b1aa37b4c113",
+    "questions": [
+      {
+        "id": 158,
+        "question": "Which film won the Best Original Song Oscar for 'Under the Sea' at the 1990 ceremony?",
+        "answers": [
+          "The Little Mermaid",
+          "Finding Nemo",
+          "Moana",
+          "The Little Mermaid II"
+        ],
+        "difficulty": "easy",
+        "category": "music"
+      },
+      {
+        "id": 1537,
+        "question": "What 1989 Disney animated film launched the studio's creative revival known as the Disney Renaissance?",
+        "answers": [
+          "The Little Mermaid",
+          "Beauty and the Beast",
+          "Aladdin",
+          "Oliver & Company"
+        ],
+        "difficulty": "medium",
+        "category": "movies"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "The Little Mermaid’s Under the Sea Oscar and its Disney Renaissance historical role are different facts, even though the film title matches."
+  },
+  {
+    "findingId": "duplicate-9844a5726b2ce357f8e7",
+    "questions": [
+      {
+        "id": 172,
+        "question": "What is the name of the rat who dreams of being a chef in Ratatouille?",
+        "answers": [
+          "Remy",
+          "Emile",
+          "Gusteau",
+          "Linguini"
+        ],
+        "difficulty": "easy",
+        "category": "pixar"
+      },
+      {
+        "id": 2433,
+        "question": "In Onward, which Pixar character from a different film works as the chef at the Manticore's Tavern?",
+        "answers": [
+          "Remy",
+          "Alfredo Linguini",
+          "Colette Tatou",
+          "Auguste Gusteau"
+        ],
+        "difficulty": "medium",
+        "category": "pixar"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "The Ratatouille protagonist identity and the other question’s claimed Onward cameo concern different scenes/films. This duplicate decision does not validate the out-of-scope cameo premise; it needs its own factual review."
+  },
+  {
+    "findingId": "duplicate-a710693b7789ea93f9e4",
+    "questions": [
+      {
+        "id": 169,
+        "question": "At which year's Academy Awards ceremony did 'When You Wish Upon a Star' from Pinocchio win Best Original Song?",
+        "answers": [
+          "1941",
+          "1940",
+          "1942",
+          "1945"
+        ],
+        "difficulty": "hard",
+        "category": "music"
+      },
+      {
+        "id": 2087,
+        "question": "In what year did the unionized animators at Walt Disney Studios go on strike over pay and working conditions, permanently changing the animation industry?",
+        "answers": [
+          "1941",
+          "1937",
+          "1955",
+          "1966"
+        ],
+        "difficulty": "medium",
+        "category": "walt"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "The 1941 Oscar ceremony and the studio animators’ strike are different historical events; sharing a year does not establish either event’s date."
+  },
+  {
+    "findingId": "duplicate-bb2c57ce948ed80188ec",
+    "questions": [
+      {
+        "id": 191,
+        "question": "In Brave, what does the spell Merida uses on her mother accidentally turn her into?",
+        "answers": [
+          "A bear",
+          "A deer",
+          "A wolf",
+          "A fox"
+        ],
+        "difficulty": "medium",
+        "category": "pixar"
+      },
+      {
+        "id": 859,
+        "question": "In Disney's Robin Hood, what kind of animal is Little John?",
+        "answers": [
+          "A bear",
+          "A fox",
+          "A badger",
+          "A lion"
+        ],
+        "difficulty": "easy",
+        "category": "characters"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "Elinor’s magically changed form and Little John’s species in another film are unrelated character facts."
+  },
+  {
+    "findingId": "duplicate-c0a7ad5bae296bc273a7",
+    "questions": [
+      {
+        "id": 203,
+        "question": "What is Flynn Rider's real name in Tangled?",
+        "answers": [
+          "Eugene Fitzherbert",
+          "Frederick Rider",
+          "Eugene Hunter",
+          "Francis Flynn"
+        ],
+        "difficulty": "easy",
+        "category": "movies"
+      },
+      {
+        "id": 231,
+        "question": "What is Flynn Rider's horse's name in Tangled?",
+        "answers": [
+          "Maximus",
+          "Angus",
+          "Khan",
+          "Phillip"
+        ],
+        "difficulty": "easy",
+        "category": "movies"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "Flynn’s civilian name and the horse’s name concern different characters; Eugene Fitzherbert and Maximus are not interchangeable facts."
+  },
+  {
+    "findingId": "duplicate-c5806737446010aa028b",
+    "questions": [
+      {
+        "id": 205,
+        "question": "In Beauty and the Beast (1991), what color is Belle's gown during the ballroom dance?",
+        "answers": [
+          "Yellow",
+          "Blue",
+          "Pink",
+          "Red"
+        ],
+        "difficulty": "easy",
+        "category": "movies"
+      },
+      {
+        "id": 1313,
+        "question": "In Inside Out, what color is the emotion Joy?",
+        "answers": [
+          "Yellow",
+          "Blue",
+          "Purple",
+          "Orange"
+        ],
+        "difficulty": "easy",
+        "category": "pixar"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "Belle’s ballroom gown color and Joy’s design color are separate visual facts in different films; shared yellow is not duplication."
+  }
+]

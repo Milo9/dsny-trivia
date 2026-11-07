@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 243,
+  "hash": "3ca4617d4724b5b7ab5613ae6c22fc9737e17016173dbf09ffa19498b9e14531",
+  "questionSnapshot": {
+    "id": 243,
+    "question": "In Frozen, what is the name of Prince Hans' kingdom?",
+    "answers": [
+      "The Southern Isles",
+      "Arendelle",
+      "Weselton",
+      "Northuldra"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Hans wanting to rule Arendelle does not make it his original kingdom. Southern Isles is explicit in publisher synopsis; Weselton and Northuldra cannot substitute for that identity.",
+  "verification": {
+    "context": "In Frozen, what is the name of Prince Hans' kingdom?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Publisher synopsis explicitly calls Hans prince of Southern Isles.",
+      "sources": [
+        {
+          "url": "https://books.disney.com/book/a-frozen-heart/",
+          "locator": "Publisher synopsis explicitly calls Hans a prince of the Southern Isles; separately identifies Anna as Arendelle princess."
+        },
+        {
+          "url": "https://d23.com/a-to-z/frozen-film/",
+          "locator": "Opening: Kristoff accompanies Anna to find Elsa; cast distinguishes Hans, Olaf and Duke of Weselton."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Hans wanting to rule Arendelle does not make it his original kingdom. Southern Isles is explicit in publisher synopsis; Weselton and Northuldra cannot substitute for that identity."
+    },
+    "options": [
+      {
+        "answer": "The Southern Isles",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Publisher synopsis explicitly calls Hans prince of Southern Isles.",
+        "sources": [
+          {
+            "url": "https://books.disney.com/book/a-frozen-heart/",
+            "locator": "Publisher synopsis explicitly calls Hans a prince of the Southern Isles; separately identifies Anna as Arendelle princess."
+          },
+          {
+            "url": "https://d23.com/a-to-z/frozen-film/",
+            "locator": "Opening: Kristoff accompanies Anna to find Elsa; cast distinguishes Hans, Olaf and Duke of Weselton."
+          }
+        ]
+      },
+      {
+        "answer": "Arendelle",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Anna/Elsa’s kingdom, explicitly distinguished in the same synopsis.",
+        "sources": [
+          {
+            "url": "https://books.disney.com/book/a-frozen-heart/",
+            "locator": "Publisher synopsis explicitly calls Hans a prince of the Southern Isles; separately identifies Anna as Arendelle princess."
+          },
+          {
+            "url": "https://d23.com/a-to-z/frozen-film/",
+            "locator": "Opening: Kristoff accompanies Anna to find Elsa; cast distinguishes Hans, Olaf and Duke of Weselton."
+          }
+        ]
+      },
+      {
+        "answer": "Weselton",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Another polity/name, not the prince’s explicitly named home.",
+        "sources": [
+          {
+            "url": "https://books.disney.com/book/a-frozen-heart/",
+            "locator": "Publisher synopsis explicitly calls Hans a prince of the Southern Isles; separately identifies Anna as Arendelle princess."
+          },
+          {
+            "url": "https://d23.com/a-to-z/frozen-film/",
+            "locator": "Opening: Kristoff accompanies Anna to find Elsa; cast distinguishes Hans, Olaf and Duke of Weselton."
+          }
+        ]
+      },
+      {
+        "answer": "Northuldra",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different group/region from Hans’s explicitly named kingdom.",
+        "sources": [
+          {
+            "url": "https://books.disney.com/book/a-frozen-heart/",
+            "locator": "Publisher synopsis explicitly calls Hans a prince of the Southern Isles; separately identifies Anna as Arendelle princess."
+          },
+          {
+            "url": "https://d23.com/a-to-z/frozen-film/",
+            "locator": "Opening: Kristoff accompanies Anna to find Elsa; cast distinguishes Hans, Olaf and Duke of Weselton."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 206,
+  "hash": "e74d7956f88964ac316944fbdacad73acb09894ecc119998b8fcbea32133d947",
+  "questionSnapshot": {
+    "id": 206,
+    "question": "In Snow White, what fruit does the Evil Queen use to poison Snow White?",
+    "answers": [
+      "An apple",
+      "A pear",
+      "A peach",
+      "A plum"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged fairy-tale variants versus Disney’s film and other fruit: D23’s explicit cottage poisoning episode uses an apple. Pear, peach and plum are mutually distinct fruits. Disguise question 1353 asks a separate fact, not a fruit/name inverse.",
+  "verification": {
+    "context": "In Snow White, what fruit does the Evil Queen use to poison Snow White?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The cottage plot paragraph explicitly identifies a poisoned apple.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+          "locator": "Second plot paragraph: disguised Queen at cottage persuades Snow White to bite poisoned apple."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged fairy-tale variants versus Disney’s film and other fruit: D23’s explicit cottage poisoning episode uses an apple. Pear, peach and plum are mutually distinct fruits. Disguise question 1353 asks a separate fact, not a fruit/name inverse."
+    },
+    "options": [
+      {
+        "answer": "An apple",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The cottage plot paragraph explicitly identifies a poisoned apple.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+            "locator": "Second plot paragraph: disguised Queen at cottage persuades Snow White to bite poisoned apple."
+          }
+        ]
+      },
+      {
+        "answer": "A pear",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "A different fruit from the documented apple.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+            "locator": "Second plot paragraph: disguised Queen at cottage persuades Snow White to bite poisoned apple."
+          }
+        ]
+      },
+      {
+        "answer": "A peach",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "A different fruit from the documented apple.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+            "locator": "Second plot paragraph: disguised Queen at cottage persuades Snow White to bite poisoned apple."
+          }
+        ]
+      },
+      {
+        "answer": "A plum",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "A different fruit from the documented apple.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+            "locator": "Second plot paragraph: disguised Queen at cottage persuades Snow White to bite poisoned apple."
+          }
+        ]
+      }
+    ]
+  }
+}

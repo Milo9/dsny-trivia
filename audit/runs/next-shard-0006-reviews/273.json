@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 273,
+  "hash": "a8594de90cedbf34bb901c2c2e3c1b4d141a5fe2b0a7ea9bd7e518d6d29108e2",
+  "questionSnapshot": {
+    "id": 273,
+    "question": "In Tarzan (1999), what is the full name of Jane's scientist father?",
+    "answers": [
+      "Professor Archimedes Q. Porter",
+      "Professor Augustus J. Porter",
+      "Professor Alexander B. Porter",
+      "Professor Archibald M. Porter"
+    ],
+    "difficulty": "hard",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Kept after challenging q1123: knowing Professor Porter cannot choose between four Porters here; full first name and initial add information. Balanced all four names/titles. Licensed primary handbook discusses film development, corroborated by D23 relationship, not TV trivia.",
+  "verification": {
+    "context": "In Tarzan (1999), what is the full name of Jane's scientist father?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The licensing handbook film-background section gives Archimedes Q. Porter.",
+      "sources": [
+        {
+          "url": "https://www.mtishows.com/sites/default/files/ftp_batch_folder_6/ftp%20batch%20folder%206/TarzanProductionHandbook.pdf",
+          "locator": "Disney Theatrical licensing handbook, Background / Tarzan Swings onto Broadway, printed page 36: discussion specifically of film development names Professor Archimedes Q. Porter and daughter Jane. Used for film background, not stage plot."
+        },
+        {
+          "url": "https://d23.com/a-to-z/tarzan-film/",
+          "locator": "Synopsis and cast identify Professor Porter as Jane father in 1999 film. Corroborates relationship independently of full-name handbook."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Kept after challenging q1123: knowing Professor Porter cannot choose between four Porters here; full first name and initial add information. Balanced all four names/titles. Licensed primary handbook discusses film development, corroborated by D23 relationship, not TV trivia."
+    },
+    "options": [
+      {
+        "answer": "Professor Archimedes Q. Porter",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The licensing handbook film-background section gives Archimedes Q. Porter.",
+        "sources": [
+          {
+            "url": "https://www.mtishows.com/sites/default/files/ftp_batch_folder_6/ftp%20batch%20folder%206/TarzanProductionHandbook.pdf",
+            "locator": "Disney Theatrical licensing handbook, Background / Tarzan Swings onto Broadway, printed page 36: discussion specifically of film development names Professor Archimedes Q. Porter and daughter Jane. Used for film background, not stage plot."
+          },
+          {
+            "url": "https://d23.com/a-to-z/tarzan-film/",
+            "locator": "Synopsis and cast identify Professor Porter as Jane father in 1999 film. Corroborates relationship independently of full-name handbook."
+          }
+        ]
+      },
+      {
+        "answer": "Professor Augustus J. Porter",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Augustus J. differs from documented first name and initial.",
+        "sources": [
+          {
+            "url": "https://www.mtishows.com/sites/default/files/ftp_batch_folder_6/ftp%20batch%20folder%206/TarzanProductionHandbook.pdf",
+            "locator": "Disney Theatrical licensing handbook, Background / Tarzan Swings onto Broadway, printed page 36: discussion specifically of film development names Professor Archimedes Q. Porter and daughter Jane. Used for film background, not stage plot."
+          },
+          {
+            "url": "https://d23.com/a-to-z/tarzan-film/",
+            "locator": "Synopsis and cast identify Professor Porter as Jane father in 1999 film. Corroborates relationship independently of full-name handbook."
+          }
+        ]
+      },
+      {
+        "answer": "Professor Alexander B. Porter",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Alexander B. differs from documented first name and initial.",
+        "sources": [
+          {
+            "url": "https://www.mtishows.com/sites/default/files/ftp_batch_folder_6/ftp%20batch%20folder%206/TarzanProductionHandbook.pdf",
+            "locator": "Disney Theatrical licensing handbook, Background / Tarzan Swings onto Broadway, printed page 36: discussion specifically of film development names Professor Archimedes Q. Porter and daughter Jane. Used for film background, not stage plot."
+          },
+          {
+            "url": "https://d23.com/a-to-z/tarzan-film/",
+            "locator": "Synopsis and cast identify Professor Porter as Jane father in 1999 film. Corroborates relationship independently of full-name handbook."
+          }
+        ]
+      },
+      {
+        "answer": "Professor Archibald M. Porter",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Archibald M. differs from documented first name and initial.",
+        "sources": [
+          {
+            "url": "https://www.mtishows.com/sites/default/files/ftp_batch_folder_6/ftp%20batch%20folder%206/TarzanProductionHandbook.pdf",
+            "locator": "Disney Theatrical licensing handbook, Background / Tarzan Swings onto Broadway, printed page 36: discussion specifically of film development names Professor Archimedes Q. Porter and daughter Jane. Used for film background, not stage plot."
+          },
+          {
+            "url": "https://d23.com/a-to-z/tarzan-film/",
+            "locator": "Synopsis and cast identify Professor Porter as Jane father in 1999 film. Corroborates relationship independently of full-name handbook."
+          }
+        ]
+      }
+    ]
+  }
+}

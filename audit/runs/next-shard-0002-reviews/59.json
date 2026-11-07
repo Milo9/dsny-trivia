@@ -1,0 +1,113 @@
+{
+  "schema": 2,
+  "questionId": 59,
+  "hash": "56f4e3789b7e4f4b631e346012e56842140933ad42f3cc5e4eb48f92c6a59c57",
+  "questionSnapshot": {
+    "id": 59,
+    "question": "What is the name of Winnie the Pooh's gloomy donkey friend?",
+    "answers": [
+      "Eeyore",
+      "Tigger",
+      "Kanga",
+      "Roo"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "q300 asks the human friend Christopher Robin, a different relationship and animal identity. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "English-language Disney character naming; original theatrical feature where a film is named. What is the name of Winnie the Pooh's gloomy donkey friend?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Among the Pooh characters listed, Eeyore is the donkey.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/eeyore/",
+          "locator": "Single character entry identifies Eeyore as the Pooh films’ donkey."
+        },
+        {
+          "url": "https://d23.com/a-to-z/tigger/",
+          "locator": "Single character entry identifies Tigger as a tiger."
+        },
+        {
+          "url": "https://d23.com/a-to-z/kanga/",
+          "locator": "Single character entry identifies Kanga as a kangaroo."
+        },
+        {
+          "url": "https://d23.com/a-to-z/roo/",
+          "locator": "Single character entry identifies Roo as a baby kangaroo."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Checked animal identity for every alternative rather than relying on a gloomy personality description. None of the three other animal types is a donkey."
+    },
+    "options": [
+      {
+        "answer": "Eeyore",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Eeyore is explicitly identified as the donkey.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/eeyore/",
+            "locator": "Single character entry identifies Eeyore as the Pooh films’ donkey."
+          }
+        ]
+      },
+      {
+        "answer": "Tigger",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Tigger is a tiger.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/tigger/",
+            "locator": "Single character entry identifies Tigger as a tiger."
+          }
+        ]
+      },
+      {
+        "answer": "Kanga",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Kanga is a kangaroo.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/kanga/",
+            "locator": "Single character entry identifies Kanga as a kangaroo."
+          }
+        ]
+      },
+      {
+        "answer": "Roo",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Roo is a baby kangaroo.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/roo/",
+            "locator": "Single character entry identifies Roo as a baby kangaroo."
+          }
+        ]
+      }
+    ]
+  }
+}

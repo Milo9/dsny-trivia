@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 336,
+  "hash": "482e1e2529c098789a0918f25d7113fc53486c7b2486493839eb4b223910b30b",
+  "questionSnapshot": {
+    "id": 336,
+    "question": "In which Magic Kingdom land can you find Big Thunder Mountain Railroad?",
+    "answers": [
+      "Frontierland",
+      "Tomorrowland",
+      "Adventureland",
+      "Fantasyland"
+    ],
+    "difficulty": "easy",
+    "category": "parks"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Checked park-specific variation: Tokyo Westernland cannot answer a Magic Kingdom question. The entry explicitly distinguishes the versions, not merely an assumed Western theme. Other Frontierland questions test Country Bear, Disneyland Old West design, or Paris Phantom Manor; they do not supply this ride-to-land link. Easy local-map recall. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+  "verification": {
+    "context": "In which Magic Kingdom land can you find Big Thunder Mountain Railroad? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+    "timeSensitive": true,
+    "nextReviewAt": "2027-02-04",
+    "premise": {
+      "reason": "The Magic Kingdom version is expressly in Frontierland. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/big-thunder-mountain-railroad/",
+          "locator": "Opening paragraph separately assigns Magic Kingdom version to Frontierland and Tokyo version to Westernland"
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Checked park-specific variation: Tokyo Westernland cannot answer a Magic Kingdom question. The entry explicitly distinguishes the versions, not merely an assumed Western theme. Other Frontierland questions test Country Bear, Disneyland Old West design, or Paris Phantom Manor; they do not supply this ride-to-land link. Easy local-map recall."
+    },
+    "options": [
+      {
+        "answer": "Frontierland",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The Magic Kingdom version is expressly in Frontierland.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/big-thunder-mountain-railroad/",
+            "locator": "Opening paragraph separately assigns Magic Kingdom version to Frontierland and Tokyo version to Westernland"
+          }
+        ]
+      },
+      {
+        "answer": "Tomorrowland",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Tomorrowland is not the assigned land for this Magic Kingdom attraction.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/big-thunder-mountain-railroad/",
+            "locator": "Opening paragraph separately assigns Magic Kingdom version to Frontierland and Tokyo version to Westernland"
+          }
+        ]
+      },
+      {
+        "answer": "Adventureland",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Adventureland is not the assigned land for this Magic Kingdom attraction.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/big-thunder-mountain-railroad/",
+            "locator": "Opening paragraph separately assigns Magic Kingdom version to Frontierland and Tokyo version to Westernland"
+          }
+        ]
+      },
+      {
+        "answer": "Fantasyland",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Fantasyland is not the assigned land for this Magic Kingdom attraction.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/big-thunder-mountain-railroad/",
+            "locator": "Opening paragraph separately assigns Magic Kingdom version to Frontierland and Tokyo version to Westernland"
+          }
+        ]
+      }
+    ]
+  }
+}

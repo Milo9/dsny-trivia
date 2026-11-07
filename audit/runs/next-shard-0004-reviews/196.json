@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 196,
+  "hash": "577fc69e474e0a1b93c0b844c33bd507940a726db6e778018fa2dfe17f74c532",
+  "questionSnapshot": {
+    "id": 196,
+    "question": "In Toy Story, what is the name of the space-themed pizza restaurant that Woody and Buzz both visit?",
+    "answers": [
+      "Pizza Planet",
+      "Cosmic Pizza",
+      "Galaxy Slice",
+      "Star Pizza"
+    ],
+    "difficulty": "medium",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged a merely generic pizza-place description: Pixar explicitly names Pizza Planet and its space theme; each alternative is a different proper name. Park ride question 2633 adds a real attraction association and is not restaurant-name recall in the film alone. Reduced hard to medium.",
+  "verification": {
+    "context": "In Toy Story, what is the name of the space-themed pizza restaurant that Woody and Buzz both visit?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Pizza Planet section names the space-themed pizza parlor.",
+      "sources": [
+        {
+          "url": "https://www.pixar.com/toy-story",
+          "locator": "Characters: Woody/Andy identify ownership; Sid and Sid’s House identify the toy-torturing neighbor; The World / Pizza Planet identifies space-themed restaurant."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged a merely generic pizza-place description: Pixar explicitly names Pizza Planet and its space theme; each alternative is a different proper name. Park ride question 2633 adds a real attraction association and is not restaurant-name recall in the film alone. Reduced hard to medium."
+    },
+    "options": [
+      {
+        "answer": "Pizza Planet",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Pizza Planet section names the space-themed pizza parlor.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/toy-story",
+            "locator": "Characters: Woody/Andy identify ownership; Sid and Sid’s House identify the toy-torturing neighbor; The World / Pizza Planet identifies space-themed restaurant."
+          }
+        ]
+      },
+      {
+        "answer": "Cosmic Pizza",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not its explicitly identified proper name.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/toy-story",
+            "locator": "Characters: Woody/Andy identify ownership; Sid and Sid’s House identify the toy-torturing neighbor; The World / Pizza Planet identifies space-themed restaurant."
+          }
+        ]
+      },
+      {
+        "answer": "Galaxy Slice",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not its explicitly identified proper name.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/toy-story",
+            "locator": "Characters: Woody/Andy identify ownership; Sid and Sid’s House identify the toy-torturing neighbor; The World / Pizza Planet identifies space-themed restaurant."
+          }
+        ]
+      },
+      {
+        "answer": "Star Pizza",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not its explicitly identified proper name.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/toy-story",
+            "locator": "Characters: Woody/Andy identify ownership; Sid and Sid’s House identify the toy-torturing neighbor; The World / Pizza Planet identifies space-themed restaurant."
+          }
+        ]
+      }
+    ]
+  }
+}

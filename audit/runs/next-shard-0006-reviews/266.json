@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 266,
+  "hash": "d61e7b0d062b9f0127aeffc684d30ce5407f59380712975d7bd11434737bf7ac",
+  "questionSnapshot": {
+    "id": 266,
+    "question": "In Pinocchio (1940), what is the name of the island where boys are turned into donkeys?",
+    "answers": [
+      "Pleasure Island",
+      "Treasure Island",
+      "Pony Land",
+      "Donkey Island"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Pinned 1940 animation. Recognizing donkey outcome does not make Donkey Island an alternative official name. Islands/lands are parallel place choices; central location is medium recall.",
+  "verification": {
+    "context": "In Pinocchio (1940), what is the name of the island where boys are turned into donkeys?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Pleasure Island is explicitly the donkey-transformation destination.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/pinocchio-film/",
+          "locator": "Opening synopsis: Pleasure Island is where boys become donkeys; 1940 film."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Pinned 1940 animation. Recognizing donkey outcome does not make Donkey Island an alternative official name. Islands/lands are parallel place choices; central location is medium recall."
+    },
+    "options": [
+      {
+        "answer": "Pleasure Island",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Pleasure Island is explicitly the donkey-transformation destination.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/pinocchio-film/",
+            "locator": "Opening synopsis: Pleasure Island is where boys become donkeys; 1940 film."
+          }
+        ]
+      },
+      {
+        "answer": "Treasure Island",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Treasure Island is not that destination.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/pinocchio-film/",
+            "locator": "Opening synopsis: Pleasure Island is where boys become donkeys; 1940 film."
+          }
+        ]
+      },
+      {
+        "answer": "Pony Land",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Pony Land is not the stated name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/pinocchio-film/",
+            "locator": "Opening synopsis: Pleasure Island is where boys become donkeys; 1940 film."
+          }
+        ]
+      },
+      {
+        "answer": "Donkey Island",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Donkey Island describes outcome but is not the stated name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/pinocchio-film/",
+            "locator": "Opening synopsis: Pleasure Island is where boys become donkeys; 1940 film."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "retired": {
+    "id": 403,
+    "question": "In what city was Walt Disney's Laugh-O-Gram Films animation studio located?",
+    "answers": [
+      "Kansas City, Missouri",
+      "Chicago, Illinois",
+      "Los Angeles, California",
+      "New York City, New York"
+    ],
+    "difficulty": "hard",
+    "category": "walt"
+  },
+  "retained": {
+    "id": 677,
+    "question": "What was the name of Walt Disney's early film company in Kansas City before he moved to Hollywood?",
+    "answers": [
+      "Laugh-O-Gram Studio",
+      "Disney Animation Studio",
+      "Midwest Movie Studio",
+      "Kansas City Film Company"
+    ],
+    "difficulty": "hard",
+    "category": "walt"
+  },
+  "additionalComparisons": [
+    {
+      "id": 1492,
+      "question": "What was the name of Walt Disney's early animation studio in Kansas City, founded in 1921, that went bankrupt before he moved to Hollywood?",
+      "answers": [
+        "Laugh-O-Gram Films",
+        "Disney Brothers Studio",
+        "Kansas City Film Co.",
+        "Missouri Motion Pictures"
+      ],
+      "difficulty": "hard",
+      "category": "walt"
+    }
+  ],
+  "rationale": "677 explicitly identifies Laugh-O-Gram as Walt's Kansas City company before Hollywood. It directly supplies this city answer; 1492 repeats that association too.",
+  "sources": [
+    {
+      "sourceNoteId": "laughogram",
+      "url": "https://d23.com/a-to-z/laugh-o-gram-films/",
+      "locator": "Complete entry",
+      "evidence": "Laugh-O-gram Films was Walt's Kansas City company making fairy-tale shorts in 1922, before the California studio.",
+      "checkedBy": "Codex",
+      "checkedAt": "2026-11-07",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "limitations": "Primary institutional text inspected; no film or video viewing claimed.",
+      "topics": [
+        "walt"
+      ]
+    }
+  ],
+  "originalOptionAssessments": [
+    {
+      "answer": "Kansas City, Missouri",
+      "assessment": "Kansas City, Missouri is the company's stated location."
+    },
+    {
+      "answer": "Chicago, Illinois",
+      "assessment": "Chicago is not its stated location."
+    },
+    {
+      "answer": "Los Angeles, California",
+      "assessment": "Los Angeles is not the Kansas City company's location."
+    },
+    {
+      "answer": "New York City, New York",
+      "assessment": "New York is not its stated location."
+    }
+  ],
+  "finalChallenge": {
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "notes": "677 explicitly identifies Laugh-O-Gram as Walt's Kansas City company before Hollywood. It directly supplies this city answer; 1492 repeats that association too. All four original options inspected. Retirement avoids asserting approval of a flawed premise or an insufficiently excluded alternative."
+  },
+  "scope": "Only the planned ID is retired. Counterpart comparison is not approval of its other claims."
+}

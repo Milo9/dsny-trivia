@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 56,
+  "hash": "e97e22773eab690761d85d4de5a14785799a00d7841b799a9a230175fd77f27c",
+  "questionSnapshot": {
+    "id": 56,
+    "question": "In Beauty and the Beast, what is the name of Belle's arrogant suitor?",
+    "answers": [
+      "Gaston",
+      "Jafar",
+      "Frollo",
+      "Hades"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "q567 asks Belle’s horse; q1384 asks which film contains the song Gaston. A character-romance fact and a soundtrack attribution require different knowledge. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "English-language Disney character naming; original theatrical feature where a film is named. In Beauty and the Beast, what is the name of Belle's arrogant suitor?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Disney explicitly identifies Gaston as the vain man courting Belle.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/gaston/",
+          "locator": "Single character entry identifies the character courting Belle."
+        },
+        {
+          "url": "https://d23.com/a-to-z/beauty-and-the-beast-film/",
+          "locator": "First two synopsis paragraphs: vain suitor Gaston and his attack on the Beast."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "The question requests the suitor’s identity, not any villain from a Disney film. The source names that character unambiguously, and none of the alternative proper names is an alias for him."
+    },
+    "options": [
+      {
+        "answer": "Gaston",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Gaston is the named suitor.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/gaston/",
+            "locator": "Single character entry identifies the character courting Belle."
+          },
+          {
+            "url": "https://d23.com/a-to-z/beauty-and-the-beast-film/",
+            "locator": "First two synopsis paragraphs: vain suitor Gaston and his attack on the Beast."
+          }
+        ]
+      },
+      {
+        "answer": "Jafar",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Jafar is not Gaston, the suitor identified in this film.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/gaston/",
+            "locator": "Single character entry identifies the character courting Belle."
+          },
+          {
+            "url": "https://d23.com/a-to-z/beauty-and-the-beast-film/",
+            "locator": "First two synopsis paragraphs: vain suitor Gaston and his attack on the Beast."
+          }
+        ]
+      },
+      {
+        "answer": "Frollo",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Frollo is not the named suitor.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/gaston/",
+            "locator": "Single character entry identifies the character courting Belle."
+          },
+          {
+            "url": "https://d23.com/a-to-z/beauty-and-the-beast-film/",
+            "locator": "First two synopsis paragraphs: vain suitor Gaston and his attack on the Beast."
+          }
+        ]
+      },
+      {
+        "answer": "Hades",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Hades is not the named suitor.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/gaston/",
+            "locator": "Single character entry identifies the character courting Belle."
+          },
+          {
+            "url": "https://d23.com/a-to-z/beauty-and-the-beast-film/",
+            "locator": "First two synopsis paragraphs: vain suitor Gaston and his attack on the Beast."
+          }
+        ]
+      }
+    ]
+  }
+}

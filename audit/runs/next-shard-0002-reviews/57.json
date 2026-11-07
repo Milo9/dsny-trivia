@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 57,
+  "hash": "a5f397af5cfb170e13466eadd2f3e0234f987d1809b1160d8627d74afbc21832",
+  "questionSnapshot": {
+    "id": 57,
+    "question": "In Snow White, how many dwarfs does Snow White live with?",
+    "answers": [
+      "Seven",
+      "Five",
+      "Eight",
+      "Six"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "q81 tests membership rather than count; q2364’s seven credited musicians are unrelated. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "English-language Disney character naming; original theatrical feature where a film is named. In Snow White, how many dwarfs does Snow White live with?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Snow White takes refuge with a roster containing exactly seven dwarfs.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+          "locator": "Opening synopsis: Snow White lives in the house of seven dwarfs; the jealous Queen pursues her."
+        },
+        {
+          "url": "https://d23.com/a-to-z/seven-dwarfs/",
+          "locator": "Entire entry is the complete seven-name roster: Doc, Sleepy, Happy, Grumpy, Sneezy, Bashful, Dopey."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Counted the complete named roster against the refuge premise, rather than inferring from a title alone. Five, six and eight cannot describe this seven-person household."
+    },
+    "options": [
+      {
+        "answer": "Seven",
+        "verdict": "correct",
+        "basis": "exhaustive-list",
+        "reason": "The complete roster has seven entries.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+            "locator": "Opening synopsis: Snow White lives in the house of seven dwarfs; the jealous Queen pursues her."
+          },
+          {
+            "url": "https://d23.com/a-to-z/seven-dwarfs/",
+            "locator": "Entire entry is the complete seven-name roster: Doc, Sleepy, Happy, Grumpy, Sneezy, Bashful, Dopey."
+          }
+        ]
+      },
+      {
+        "answer": "Five",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Five undercounts the complete roster by two.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+            "locator": "Opening synopsis: Snow White lives in the house of seven dwarfs; the jealous Queen pursues her."
+          },
+          {
+            "url": "https://d23.com/a-to-z/seven-dwarfs/",
+            "locator": "Entire entry is the complete seven-name roster: Doc, Sleepy, Happy, Grumpy, Sneezy, Bashful, Dopey."
+          }
+        ]
+      },
+      {
+        "answer": "Eight",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Eight exceeds the complete roster by one.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+            "locator": "Opening synopsis: Snow White lives in the house of seven dwarfs; the jealous Queen pursues her."
+          },
+          {
+            "url": "https://d23.com/a-to-z/seven-dwarfs/",
+            "locator": "Entire entry is the complete seven-name roster: Doc, Sleepy, Happy, Grumpy, Sneezy, Bashful, Dopey."
+          }
+        ]
+      },
+      {
+        "answer": "Six",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Six undercounts the complete roster by one.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+            "locator": "Opening synopsis: Snow White lives in the house of seven dwarfs; the jealous Queen pursues her."
+          },
+          {
+            "url": "https://d23.com/a-to-z/seven-dwarfs/",
+            "locator": "Entire entry is the complete seven-name roster: Doc, Sleepy, Happy, Grumpy, Sneezy, Bashful, Dopey."
+          }
+        ]
+      }
+    ]
+  }
+}

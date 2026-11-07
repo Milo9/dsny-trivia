@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 294,
+  "hash": "dc867619ea22596eb745bbfcbc8653c53a54b4e7639b3ff21db4f551a8cf6b62",
+  "questionSnapshot": {
+    "id": 294,
+    "question": "What is Donald Duck's middle name?",
+    "answers": [
+      "Fauntleroy",
+      "Eugene",
+      "Barnabas",
+      "Frederick"
+    ],
+    "difficulty": "hard",
+    "category": "characters"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Character history corroborated by official middle-name article identifying the 1942 short. Not confused with first name Donald or a voice actor name. Hard suits obscure middle-name recall; no unbounded current-status assertion.",
+  "verification": {
+    "context": "What is Donald Duck's middle name?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The documented middle name is Fauntleroy.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/donald-duck/",
+          "locator": "Opening character history explicitly gives middle name Fauntleroy."
+        },
+        {
+          "url": "https://d23.com/can-you-guess-these-disney-middle-names/",
+          "locator": "Answers / 3 Donald Fauntleroy Duck: links name to Donald Gets Drafted (1942)."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Character history corroborated by official middle-name article identifying the 1942 short. Not confused with first name Donald or a voice actor name. Hard suits obscure middle-name recall; no unbounded current-status assertion."
+    },
+    "options": [
+      {
+        "answer": "Fauntleroy",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The documented middle name is Fauntleroy.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/donald-duck/",
+            "locator": "Opening character history explicitly gives middle name Fauntleroy."
+          },
+          {
+            "url": "https://d23.com/can-you-guess-these-disney-middle-names/",
+            "locator": "Answers / 3 Donald Fauntleroy Duck: links name to Donald Gets Drafted (1942)."
+          }
+        ]
+      },
+      {
+        "answer": "Eugene",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Eugene is a different name from Fauntleroy.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/donald-duck/",
+            "locator": "Opening character history explicitly gives middle name Fauntleroy."
+          },
+          {
+            "url": "https://d23.com/can-you-guess-these-disney-middle-names/",
+            "locator": "Answers / 3 Donald Fauntleroy Duck: links name to Donald Gets Drafted (1942)."
+          }
+        ]
+      },
+      {
+        "answer": "Barnabas",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Barnabas is a different name from Fauntleroy.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/donald-duck/",
+            "locator": "Opening character history explicitly gives middle name Fauntleroy."
+          },
+          {
+            "url": "https://d23.com/can-you-guess-these-disney-middle-names/",
+            "locator": "Answers / 3 Donald Fauntleroy Duck: links name to Donald Gets Drafted (1942)."
+          }
+        ]
+      },
+      {
+        "answer": "Frederick",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Frederick is a different name from Fauntleroy.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/donald-duck/",
+            "locator": "Opening character history explicitly gives middle name Fauntleroy."
+          },
+          {
+            "url": "https://d23.com/can-you-guess-these-disney-middle-names/",
+            "locator": "Answers / 3 Donald Fauntleroy Duck: links name to Donald Gets Drafted (1942)."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "questionId": 36,
+  "hash": "f1aa2e675c9fea85a81d0f79de0c6afab98a21e120feaa982e416a0bfe385723",
+  "questionSnapshot": {
+    "id": 36,
+    "question": "Who is the main villain in Hercules?",
+    "answers": [
+      "Hades",
+      "Zeus",
+      "Ares",
+      "Poseidon"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Four Greek deity names, medium family-fan recall; Hades is explicitly the villain in this Disney adaptation. #215 asks Hercules' father Zeus, a separate relationship.",
+  "verification": {
+    "context": "Hercules, Disney animated 1997 film, not Greek mythology generally.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Hades",
+        "verdict": "correct",
+        "reason": "Hades devises the takeover with Pain and Panic and opposes Hercules.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/hercules",
+            "locator": "1997 synopsis: Hades and Pain and Panic plot to take over, with Hercules opposing him."
+          },
+          {
+            "url": "https://d23.com/a-to-z/hercules-film/",
+            "locator": "Synopsis: Zeus and Hera are Hercules' parents; Hades abducts their son and arranges the monster attacks to seize Olympus. The scheme is attributed to Hades, not Ares or Poseidon."
+          }
+        ]
+      },
+      {
+        "answer": "Zeus",
+        "verdict": "incorrect",
+        "reason": "Zeus is Hercules' divine father and the ruler Hades plots to overthrow, not the central villain.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/hercules",
+            "locator": "1997 synopsis: Hades and Pain and Panic plot to take over, with Hercules opposing him."
+          },
+          {
+            "url": "https://d23.com/a-to-z/hercules-film/",
+            "locator": "Synopsis: Zeus and Hera are Hercules' parents; Hades abducts their son and arranges the monster attacks to seize Olympus. The scheme is attributed to Hades, not Ares or Poseidon."
+          }
+        ]
+      },
+      {
+        "answer": "Ares",
+        "verdict": "incorrect",
+        "reason": "Ares is not the named architect of the film's central takeover plot.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/hercules",
+            "locator": "1997 synopsis: Hades and Pain and Panic plot to take over, with Hercules opposing him."
+          },
+          {
+            "url": "https://d23.com/a-to-z/hercules-film/",
+            "locator": "Synopsis: Zeus and Hera are Hercules' parents; Hades abducts their son and arranges the monster attacks to seize Olympus. The scheme is attributed to Hades, not Ares or Poseidon."
+          }
+        ]
+      },
+      {
+        "answer": "Poseidon",
+        "verdict": "incorrect",
+        "reason": "Poseidon is not the named main villain orchestrating events with Pain and Panic.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/hercules",
+            "locator": "1997 synopsis: Hades and Pain and Panic plot to take over, with Hercules opposing him."
+          },
+          {
+            "url": "https://d23.com/a-to-z/hercules-film/",
+            "locator": "Synopsis: Zeus and Hera are Hercules' parents; Hades abducts their son and arranges the monster attacks to seize Olympus. The scheme is attributed to Hades, not Ares or Poseidon."
+          }
+        ]
+      }
+    ]
+  }
+}

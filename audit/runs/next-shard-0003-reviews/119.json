@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 119,
+  "hash": "f5a460f065ca7c646ac9df7777674af047694a0108da22f718d2b53211f03481",
+  "questionSnapshot": {
+    "id": 119,
+    "question": "What was the first animated feature film produced by Walt Disney Studios?",
+    "answers": [
+      "Snow White and the Seven Dwarfs",
+      "Pinocchio",
+      "Fantasia",
+      "Bambi"
+    ],
+    "difficulty": "easy",
+    "category": "walt"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Challenged whether any listed film predates Snow White; the complete official filmography gives later years for all three. Official-title length is unavoidable rather than an explanatory clue.",
+  "verification": {
+    "context": "What was the first animated feature film produced by Walt Disney Studios?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Studio explicitly identifies Snow White as its first fully animated feature, in 1937.",
+      "sources": [
+        {
+          "url": "https://www.disneyanimation.com/films/",
+          "locator": "Intro identifies first fully animated feature in 1937; filmography lists Snow White 1937, Pinocchio/Fantasia 1940, Bambi 1942; Aladdin 1992 and other film release years."
+        },
+        {
+          "url": "https://d23.com/about-walt-disney/",
+          "locator": "Biography paragraphs: Chicago birth, McKinley school and evening art classes; Hollywood arrival/office; daughters Diane and Sharon."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged whether any listed film predates Snow White; the complete official filmography gives later years for all three. Official-title length is unavoidable rather than an explanatory clue."
+    },
+    "options": [
+      {
+        "answer": "Snow White and the Seven Dwarfs",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Studio explicitly identifies Snow White as its first fully animated feature, in 1937.",
+        "sources": [
+          {
+            "url": "https://www.disneyanimation.com/films/",
+            "locator": "Intro identifies first fully animated feature in 1937; filmography lists Snow White 1937, Pinocchio/Fantasia 1940, Bambi 1942; Aladdin 1992 and other film release years."
+          },
+          {
+            "url": "https://d23.com/about-walt-disney/",
+            "locator": "Biography paragraphs: Chicago birth, McKinley school and evening art classes; Hollywood arrival/office; daughters Diane and Sharon."
+          }
+        ]
+      },
+      {
+        "answer": "Pinocchio",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Filmography dates it to 1940, after Snow White.",
+        "sources": [
+          {
+            "url": "https://www.disneyanimation.com/films/",
+            "locator": "Intro identifies first fully animated feature in 1937; filmography lists Snow White 1937, Pinocchio/Fantasia 1940, Bambi 1942; Aladdin 1992 and other film release years."
+          },
+          {
+            "url": "https://d23.com/about-walt-disney/",
+            "locator": "Biography paragraphs: Chicago birth, McKinley school and evening art classes; Hollywood arrival/office; daughters Diane and Sharon."
+          }
+        ]
+      },
+      {
+        "answer": "Fantasia",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Filmography dates it to 1940, after Snow White.",
+        "sources": [
+          {
+            "url": "https://www.disneyanimation.com/films/",
+            "locator": "Intro identifies first fully animated feature in 1937; filmography lists Snow White 1937, Pinocchio/Fantasia 1940, Bambi 1942; Aladdin 1992 and other film release years."
+          },
+          {
+            "url": "https://d23.com/about-walt-disney/",
+            "locator": "Biography paragraphs: Chicago birth, McKinley school and evening art classes; Hollywood arrival/office; daughters Diane and Sharon."
+          }
+        ]
+      },
+      {
+        "answer": "Bambi",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Filmography dates it to 1942, after Snow White.",
+        "sources": [
+          {
+            "url": "https://www.disneyanimation.com/films/",
+            "locator": "Intro identifies first fully animated feature in 1937; filmography lists Snow White 1937, Pinocchio/Fantasia 1940, Bambi 1942; Aladdin 1992 and other film release years."
+          },
+          {
+            "url": "https://d23.com/about-walt-disney/",
+            "locator": "Biography paragraphs: Chicago birth, McKinley school and evening art classes; Hollywood arrival/office; daughters Diane and Sharon."
+          }
+        ]
+      }
+    ]
+  }
+}

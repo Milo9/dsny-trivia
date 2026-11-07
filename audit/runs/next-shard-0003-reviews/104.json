@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 104,
+  "hash": "4567ba2dea642f82ec7de6ddae76938854745729554157e6eab814115738f302",
+  "questionSnapshot": {
+    "id": 104,
+    "question": "What is the name of Toy Story Land's main roller coaster at Hollywood Studios?",
+    "answers": [
+      "Slinky Dog Dash",
+      "Woody's Wild Ride",
+      "Buzz Blaster",
+      "Rex's Runway"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Final challenge checks the exact named entity/event against each listed alternative, not merely a matching answer keyword.",
+  "verification": {
+    "context": "What is the name of Toy Story Land's main roller coaster at Hollywood Studios?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Named Toy Story Land family coaster.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/slinky-dog-dash/",
+          "locator": "Opening paragraph: named family coaster, Toy Story Land, Hollywood Studios."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tried each alternative against the literal final scope: Woody's Wild Ride: Not the documented name of that coaster. Buzz Blaster: Not the documented name of that coaster. Rex's Runway: Not the documented name of that coaster."
+    },
+    "options": [
+      {
+        "answer": "Slinky Dog Dash",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Named Toy Story Land family coaster.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/slinky-dog-dash/",
+            "locator": "Opening paragraph: named family coaster, Toy Story Land, Hollywood Studios."
+          }
+        ]
+      },
+      {
+        "answer": "Woody's Wild Ride",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the documented name of that coaster.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/slinky-dog-dash/",
+            "locator": "Opening paragraph: named family coaster, Toy Story Land, Hollywood Studios."
+          }
+        ]
+      },
+      {
+        "answer": "Buzz Blaster",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the documented name of that coaster.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/slinky-dog-dash/",
+            "locator": "Opening paragraph: named family coaster, Toy Story Land, Hollywood Studios."
+          }
+        ]
+      },
+      {
+        "answer": "Rex's Runway",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the documented name of that coaster.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/slinky-dog-dash/",
+            "locator": "Opening paragraph: named family coaster, Toy Story Land, Hollywood Studios."
+          }
+        ]
+      }
+    ]
+  }
+}

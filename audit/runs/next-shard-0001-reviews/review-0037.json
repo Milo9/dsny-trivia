@@ -1,0 +1,84 @@
+{
+  "questionId": 37,
+  "hash": "2662ad7ee31e79d635fdb14c6f58024acec50e767db68c2cb18c8daf07eff45b",
+  "questionSnapshot": {
+    "id": 37,
+    "question": "In Coco (2017), from whose mausoleum does Miguel take a guitar?",
+    "answers": [
+      "Ernesto de la Cruz",
+      "Héctor Rivera",
+      "Mamá Imelda",
+      "Miguel's grandfather"
+    ],
+    "difficulty": "medium",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Replaced false family-mausoleum premise with precise location question; corrected accented names. This asks the tomb, not legal/original guitar ownership. Medium, Pixar. #195 idol identity does not itself establish which tomb he enters.",
+  "verification": {
+    "context": "Coco, Pixar 2017 film, the cemetery guitar theft before Miguel enters the Land of the Dead.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Ernesto de la Cruz",
+        "verdict": "correct",
+        "reason": "The scene is explicitly headed de la Cruz's mausoleum; Miguel climbs his crypt beneath his portrait and removes the guitar.",
+        "sources": [
+          {
+            "url": "https://www.dicacademy.com/_files/ugd/7a859e_f9530329bda9418f8dc451fcf5cede61.pdf",
+            "locator": "Coco original screenplay by Adrian Molina and Matthew Aldrich, printed pages 28-30 (PDF pages 29-31): exterior/interior de la Cruz's mausoleum, his portrait above crypt, Miguel removes guitar. The scene heading directly establishes whose tomb it is, excluding all three alternatives."
+          }
+        ]
+      },
+      {
+        "answer": "Héctor Rivera",
+        "verdict": "incorrect",
+        "reason": "Hector's connection to the instrument does not make the tomb his; the screenplay names de la Cruz's tomb.",
+        "sources": [
+          {
+            "url": "https://www.dicacademy.com/_files/ugd/7a859e_f9530329bda9418f8dc451fcf5cede61.pdf",
+            "locator": "Coco original screenplay by Adrian Molina and Matthew Aldrich, printed pages 28-30 (PDF pages 29-31): exterior/interior de la Cruz's mausoleum, his portrait above crypt, Miguel removes guitar. The scene heading directly establishes whose tomb it is, excluding all three alternatives."
+          },
+          {
+            "url": "https://www.pixar.com/coco",
+            "locator": "Hector profile places him in the Land of the Dead; Ernesto de la Cruz is Miguel's idol. This character overview supplements, rather than substitutes for, the screenplay scene."
+          }
+        ]
+      },
+      {
+        "answer": "Mamá Imelda",
+        "verdict": "incorrect",
+        "reason": "Mamá Imelda is not the person whose portrait/crypt identifies this mausoleum.",
+        "sources": [
+          {
+            "url": "https://www.dicacademy.com/_files/ugd/7a859e_f9530329bda9418f8dc451fcf5cede61.pdf",
+            "locator": "Coco original screenplay by Adrian Molina and Matthew Aldrich, printed pages 28-30 (PDF pages 29-31): exterior/interior de la Cruz's mausoleum, his portrait above crypt, Miguel removes guitar. The scene heading directly establishes whose tomb it is, excluding all three alternatives."
+          }
+        ]
+      },
+      {
+        "answer": "Miguel's grandfather",
+        "verdict": "incorrect",
+        "reason": "The screenplay names Ernesto's mausoleum, not Miguel's grandfather's; Miguel's mistaken kinship belief does not change the tomb's identity.",
+        "sources": [
+          {
+            "url": "https://www.dicacademy.com/_files/ugd/7a859e_f9530329bda9418f8dc451fcf5cede61.pdf",
+            "locator": "Coco original screenplay by Adrian Molina and Matthew Aldrich, printed pages 28-30 (PDF pages 29-31): exterior/interior de la Cruz's mausoleum, his portrait above crypt, Miguel removes guitar. The scene heading directly establishes whose tomb it is, excluding all three alternatives."
+          }
+        ]
+      }
+    ]
+  }
+}

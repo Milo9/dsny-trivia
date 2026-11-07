@@ -1,0 +1,31 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "retired": {
+    "id": 341,
+    "question": "In which Disney World park is the Tower of Terror located?",
+    "answers": [
+      "Hollywood Studios",
+      "EPCOT",
+      "Magic Kingdom",
+      "Animal Kingdom"
+    ],
+    "difficulty": "easy",
+    "category": "parks"
+  },
+  "retained": {
+    "id": 609,
+    "question": "What is the name of the famous drop tower attraction at Hollywood Studios?",
+    "answers": [
+      "Twilight Zone Tower of Terror",
+      "Rock 'n' Roller Coaster",
+      "Star Tours",
+      "Slinky Dog Dash"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "additionalComparisons": [],
+  "rationale": "Inverse Tower of Terror/Hollywood Studios association. The retained question identifies the drop tower from its park, directly supplying the same park-attraction link.",
+  "scope": "Only the planned question is retired. Comparing a replacement does not approve its factual review."
+}

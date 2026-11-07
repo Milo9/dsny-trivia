@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 310,
+  "hash": "d0a58477309eb7e25bf0e8b13cf30611cdb66e596ab3d2f5e0ff2badad5248e6",
+  "questionSnapshot": {
+    "id": 310,
+    "question": "What are the names of Wendy's two brothers in Peter Pan?",
+    "answers": [
+      "John and Michael",
+      "James and Timothy",
+      "George and Edward",
+      "Tom and Harry"
+    ],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Checked parents versus siblings and the full two-name sets. The official complete family list excludes all three alternative pairs. 854 and 1104 ask parents; 1324 asks youngest sibling and does not explicitly supply both brothers. Medium pair-name recall; character and theatrical scope fit. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+  "verification": {
+    "context": "What are the names of Wendy's two brothers in Peter Pan? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The two male Darling children alongside Wendy are John and Michael. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/darling/",
+          "locator": "Complete Darling family entry: George and Mary parents; Wendy, John and Michael children"
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Checked parents versus siblings and the full two-name sets. The official complete family list excludes all three alternative pairs. 854 and 1104 ask parents; 1324 asks youngest sibling and does not explicitly supply both brothers. Medium pair-name recall; character and theatrical scope fit."
+    },
+    "options": [
+      {
+        "answer": "John and Michael",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The two male Darling children alongside Wendy are John and Michael.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/darling/",
+            "locator": "Complete Darling family entry: George and Mary parents; Wendy, John and Michael children"
+          }
+        ]
+      },
+      {
+        "answer": "James and Timothy",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "James and Timothy are not the two boys in the complete Darling child list.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/darling/",
+            "locator": "Complete Darling family entry: George and Mary parents; Wendy, John and Michael children"
+          }
+        ]
+      },
+      {
+        "answer": "George and Edward",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "George is the father, not a brother; Edward is absent from the child list.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/darling/",
+            "locator": "Complete Darling family entry: George and Mary parents; Wendy, John and Michael children"
+          }
+        ]
+      },
+      {
+        "answer": "Tom and Harry",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Tom and Harry are not the two boys in the complete child list.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/darling/",
+            "locator": "Complete Darling family entry: George and Mary parents; Wendy, John and Michael children"
+          }
+        ]
+      }
+    ]
+  }
+}

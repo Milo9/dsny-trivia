@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 214,
+  "hash": "387bf50f319d7e0fab2d50138f465898f6733de9cc980f053cc23f491833ca2c",
+  "questionSnapshot": {
+    "id": 214,
+    "question": "In Brave, what country does Merida's story take place in?",
+    "answers": [
+      "Scotland",
+      "Ireland",
+      "England",
+      "Wales"
+    ],
+    "difficulty": "easy",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. The fictional kingdom DunBroch is situated in the expressly identified Highlands of Scotland; Celtic imagery does not make Ireland or Wales equally valid. England is also distinct.",
+  "verification": {
+    "context": "In Brave, what country does Merida's story take place in?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Pixar explicitly places the story in the Scottish Highlands.",
+      "sources": [
+        {
+          "url": "https://www.pixar.com/brave",
+          "locator": "Change Your Fate opening explicitly places Merida’s story in the Highlands of Scotland."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "The fictional kingdom DunBroch is situated in the expressly identified Highlands of Scotland; Celtic imagery does not make Ireland or Wales equally valid. England is also distinct."
+    },
+    "options": [
+      {
+        "answer": "Scotland",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Pixar explicitly places the story in the Scottish Highlands.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/brave",
+            "locator": "Change Your Fate opening explicitly places Merida’s story in the Highlands of Scotland."
+          }
+        ]
+      },
+      {
+        "answer": "Ireland",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "A different country from the specified Scotland.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/brave",
+            "locator": "Change Your Fate opening explicitly places Merida’s story in the Highlands of Scotland."
+          }
+        ]
+      },
+      {
+        "answer": "England",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "A different country from the specified Scotland.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/brave",
+            "locator": "Change Your Fate opening explicitly places Merida’s story in the Highlands of Scotland."
+          }
+        ]
+      },
+      {
+        "answer": "Wales",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "A different country from the specified Scotland.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/brave",
+            "locator": "Change Your Fate opening explicitly places Merida’s story in the Highlands of Scotland."
+          }
+        ]
+      }
+    ]
+  }
+}

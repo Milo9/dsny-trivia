@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 179,
+  "hash": "278e9605d2afead100a28366b6cf30671b1f0cef5c508d82308a411ff6c9ecc2",
+  "questionSnapshot": {
+    "id": 179,
+    "question": "In Cars, what is Lightning McQueen's racing number?",
+    "answers": [
+      "95",
+      "51",
+      "43",
+      "7"
+    ],
+    "difficulty": "easy",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Tried every numeric alternative; exact unique racing identifier 95 excludes 51, 43 and 7. Independent D23 number-origin discussion corroborates the official character profile.",
+  "verification": {
+    "context": "In Cars, what is Lightning McQueen's racing number?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Both primary accounts assign the exact number 95.",
+      "sources": [
+        {
+          "url": "https://cars.disney.com/",
+          "locator": "Lightning McQueen character profile explicitly identifies number 95."
+        },
+        {
+          "url": "https://d23.com/have-you-spotted-these-9-easter-eggs-in-the-cars-universe/",
+          "locator": "Lightning’s Number section states 95 refers to the year 1995; corroborates exact number independently of character homepage."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tried every numeric alternative; exact unique racing identifier 95 excludes 51, 43 and 7. Independent D23 number-origin discussion corroborates the official character profile."
+    },
+    "options": [
+      {
+        "answer": "95",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Both primary accounts assign the exact number 95.",
+        "sources": [
+          {
+            "url": "https://cars.disney.com/",
+            "locator": "Lightning McQueen character profile explicitly identifies number 95."
+          },
+          {
+            "url": "https://d23.com/have-you-spotted-these-9-easter-eggs-in-the-cars-universe/",
+            "locator": "Lightning’s Number section states 95 refers to the year 1995; corroborates exact number independently of character homepage."
+          }
+        ]
+      },
+      {
+        "answer": "51",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different numeric identifier from the stated 95.",
+        "sources": [
+          {
+            "url": "https://cars.disney.com/",
+            "locator": "Lightning McQueen character profile explicitly identifies number 95."
+          },
+          {
+            "url": "https://d23.com/have-you-spotted-these-9-easter-eggs-in-the-cars-universe/",
+            "locator": "Lightning’s Number section states 95 refers to the year 1995; corroborates exact number independently of character homepage."
+          }
+        ]
+      },
+      {
+        "answer": "43",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different numeric identifier from the stated 95.",
+        "sources": [
+          {
+            "url": "https://cars.disney.com/",
+            "locator": "Lightning McQueen character profile explicitly identifies number 95."
+          },
+          {
+            "url": "https://d23.com/have-you-spotted-these-9-easter-eggs-in-the-cars-universe/",
+            "locator": "Lightning’s Number section states 95 refers to the year 1995; corroborates exact number independently of character homepage."
+          }
+        ]
+      },
+      {
+        "answer": "7",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different numeric identifier from the stated 95.",
+        "sources": [
+          {
+            "url": "https://cars.disney.com/",
+            "locator": "Lightning McQueen character profile explicitly identifies number 95."
+          },
+          {
+            "url": "https://d23.com/have-you-spotted-these-9-easter-eggs-in-the-cars-universe/",
+            "locator": "Lightning’s Number section states 95 refers to the year 1995; corroborates exact number independently of character homepage."
+          }
+        ]
+      }
+    ]
+  }
+}

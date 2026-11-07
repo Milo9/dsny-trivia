@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 298,
+  "hash": "c93c52da1f898c2efdc4d9d65a0ce29ec51a31bddfd45a644ecc773ccb19d480",
+  "questionSnapshot": {
+    "id": 298,
+    "question": "In Toy Story, what is the name of the space ranger toy who becomes Woody's friend?",
+    "answers": [
+      "Buzz Lightyear",
+      "Emperor Zurg",
+      "Lotso",
+      "Rex"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Ask the named toy friend, not any space-themed antagonist. Buzz profile establishes identity and relationship; Star Command program q498 and shouted catchphrase q72 require additional information.",
+  "verification": {
+    "context": "In Toy Story, what is the name of the space ranger toy who becomes Woody's friend?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Studio synopsis/profile identifies space ranger Buzz Lightyear.",
+      "sources": [
+        {
+          "url": "https://www.pixar.com/toy-story",
+          "locator": "Synopsis and Buzz Lightyear profile explicitly identify Buzz as space-ranger toy and relationship with Woody; Rex separately dinosaur."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Ask the named toy friend, not any space-themed antagonist. Buzz profile establishes identity and relationship; Star Command program q498 and shouted catchphrase q72 require additional information."
+    },
+    "options": [
+      {
+        "answer": "Buzz Lightyear",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Studio synopsis/profile identifies space ranger Buzz Lightyear.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/toy-story",
+            "locator": "Synopsis and Buzz Lightyear profile explicitly identify Buzz as space-ranger toy and relationship with Woody; Rex separately dinosaur."
+          }
+        ]
+      },
+      {
+        "answer": "Emperor Zurg",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Zurg is not the identified ranger friend Buzz.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/toy-story",
+            "locator": "Synopsis and Buzz Lightyear profile explicitly identify Buzz as space-ranger toy and relationship with Woody; Rex separately dinosaur."
+          }
+        ]
+      },
+      {
+        "answer": "Lotso",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Lotso is not the identified ranger friend Buzz.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/toy-story",
+            "locator": "Synopsis and Buzz Lightyear profile explicitly identify Buzz as space-ranger toy and relationship with Woody; Rex separately dinosaur."
+          }
+        ]
+      },
+      {
+        "answer": "Rex",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Rex is a dinosaur toy, not space ranger.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/toy-story",
+            "locator": "Synopsis and Buzz Lightyear profile explicitly identify Buzz as space-ranger toy and relationship with Woody; Rex separately dinosaur."
+          }
+        ]
+      }
+    ]
+  }
+}

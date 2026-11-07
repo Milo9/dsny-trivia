@@ -1,0 +1,30 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "retired": {
+    "id": 144,
+    "question": "What year did the Disney Dream launch?",
+    "answers": [
+      "2011",
+      "2009",
+      "2013",
+      "2015"
+    ],
+    "difficulty": "medium",
+    "category": "cruise"
+  },
+  "retained": {
+    "id": 743,
+    "question": "Which Disney cruise ship launched in 2011, the first new ship in over a decade?",
+    "answers": [
+      "Disney Dream",
+      "Disney Fantasy",
+      "Disney Wish",
+      "Disney Treasure"
+    ],
+    "difficulty": "hard",
+    "category": "cruise"
+  },
+  "rationale": "Both test the Disney Dream and 2011 service-debut association, in reverse; retain the version with fleet-history context.",
+  "scope": "Only the planned question is retired; the replacement is context and is not newly approved."
+}

@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 218,
+  "hash": "259e83eae958fb12631409a7f71e9dc16d4d41c72ae99a86977d27503368e210",
+  "questionSnapshot": {
+    "id": 218,
+    "question": "In Bambi, what is the name of Bambi's skunk friend?",
+    "answers": [
+      "Flower",
+      "Daisy",
+      "Blossom",
+      "Thistle"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. All four names are botanical, so none is excluded by grammar. Only Flower matches the named skunk, not the actual blossom Bambi initially mistakes him for.",
+  "verification": {
+    "context": "In Bambi, what is the name of Bambi's skunk friend?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "D23 explicitly names Flower the skunk.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/bambi-film/",
+          "locator": "Opening explicitly names Flower as Bambi’s skunk friend; cast repeats Flower."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "All four names are botanical, so none is excluded by grammar. Only Flower matches the named skunk, not the actual blossom Bambi initially mistakes him for."
+    },
+    "options": [
+      {
+        "answer": "Flower",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "D23 explicitly names Flower the skunk.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/bambi-film/",
+            "locator": "Opening explicitly names Flower as Bambi’s skunk friend; cast repeats Flower."
+          }
+        ]
+      },
+      {
+        "answer": "Daisy",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different name from the skunk’s explicit name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/bambi-film/",
+            "locator": "Opening explicitly names Flower as Bambi’s skunk friend; cast repeats Flower."
+          }
+        ]
+      },
+      {
+        "answer": "Blossom",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different name from the skunk’s explicit name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/bambi-film/",
+            "locator": "Opening explicitly names Flower as Bambi’s skunk friend; cast repeats Flower."
+          }
+        ]
+      },
+      {
+        "answer": "Thistle",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different name from the skunk’s explicit name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/bambi-film/",
+            "locator": "Opening explicitly names Flower as Bambi’s skunk friend; cast repeats Flower."
+          }
+        ]
+      }
+    ]
+  }
+}

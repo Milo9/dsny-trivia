@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 353,
+  "hash": "fd035b5c9024ea25447d6368c86b9919507f46a83b621ed91b3604fc127ca30b",
+  "questionSnapshot": {
+    "id": 353,
+    "question": "What is the name of the white-water rafting ride at Animal Kingdom?",
+    "answers": [
+      "Kali River Rapids",
+      "Expedition Splash",
+      "Congo Cascade",
+      "White Water Run"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Checked the type and park, rather than assuming every Animal Kingdom water attraction is rafting. The primary description explicitly pairs the title with whitewater and raft travel. 2634 asks the fictional river/storyline and does not state that this is the park whitewater ride. Easy recognition; parks category and scope fit. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+  "verification": {
+    "context": "What is the name of the white-water rafting ride at Animal Kingdom? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+    "timeSensitive": true,
+    "nextReviewAt": "2027-02-04",
+    "premise": {
+      "reason": "The official whitewater rafting attraction is Kali River Rapids. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+      "sources": [
+        {
+          "url": "https://disneyworld.disney.go.com/attractions/animal-kingdom/kali-river-rapids/",
+          "locator": "Title, whitewater introduction and Raft Down a Rip-Roaring River section"
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Checked the type and park, rather than assuming every Animal Kingdom water attraction is rafting. The primary description explicitly pairs the title with whitewater and raft travel. 2634 asks the fictional river/storyline and does not state that this is the park whitewater ride. Easy recognition; parks category and scope fit."
+    },
+    "options": [
+      {
+        "answer": "Kali River Rapids",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The official whitewater rafting attraction is Kali River Rapids.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/animal-kingdom/kali-river-rapids/",
+            "locator": "Title, whitewater introduction and Raft Down a Rip-Roaring River section"
+          }
+        ]
+      },
+      {
+        "answer": "Expedition Splash",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Expedition Splash is not the documented title of that attraction.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/animal-kingdom/kali-river-rapids/",
+            "locator": "Title, whitewater introduction and Raft Down a Rip-Roaring River section"
+          }
+        ]
+      },
+      {
+        "answer": "Congo Cascade",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Congo Cascade is not the documented title of that attraction.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/animal-kingdom/kali-river-rapids/",
+            "locator": "Title, whitewater introduction and Raft Down a Rip-Roaring River section"
+          }
+        ]
+      },
+      {
+        "answer": "White Water Run",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "White Water Run is not the documented title of that attraction.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/animal-kingdom/kali-river-rapids/",
+            "locator": "Title, whitewater introduction and Raft Down a Rip-Roaring River section"
+          }
+        ]
+      }
+    ]
+  }
+}

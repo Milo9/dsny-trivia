@@ -1,0 +1,37 @@
+{
+  "reviewer": "Codex (OpenAI)",
+  "questions": [
+    {
+      "id": 96,
+      "question": "What year did the original Disneyland first open?",
+      "answers": [
+        "1955",
+        "1960",
+        "1950",
+        "1963"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    {
+      "id": 683,
+      "question": "What date did Disneyland officially open to the public?",
+      "answers": [
+        "July 17, 1955",
+        "July 4, 1955",
+        "October 1, 1955",
+        "December 25, 1955"
+      ],
+      "difficulty": "hard",
+      "category": "walt"
+    }
+  ],
+  "decision": "The exact opening-date answer in q683 contains the entire 1955 year fact requested here. Preserve the broader year-only question. q683’s wording incorrectly says public opening for the invitation day; record that separate context concern, do not silently approve the replacement.",
+  "evidence": [
+    {
+      "url": "https://d23.com/a-to-z/disneyland/",
+      "locator": "Opening sentence explicitly distinguishes invitation opening July 17, 1955 and public opening the next day."
+    }
+  ],
+  "replacementApproved": false
+}

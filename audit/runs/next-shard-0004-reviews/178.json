@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 178,
+  "hash": "6abbb22d2fe078a7b88b8888ae4a1cdc81d7b42ee6e006eb05703e330b234556",
+  "questionSnapshot": {
+    "id": 178,
+    "question": "In Monsters, Inc., what is the name of the one-eyed green monster?",
+    "answers": [
+      "Mike Wazowski",
+      "Sulley",
+      "Randall",
+      "Roz"
+    ],
+    "difficulty": "easy",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged the one-eye clue carefully: Celia is also one-eyed, but is not listed. The combined green/one-eyed description explicitly matches Mike; the three listed character portraits and profiles do not. This is an option-bounded answer, not a claim that no other one-eyed monster exists.",
+  "verification": {
+    "context": "In Monsters, Inc., what is the name of the one-eyed green monster?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Pixar explicitly describes Mike as green and one-eyed.",
+      "sources": [
+        {
+          "url": "https://www.pixar.com/monsters-university",
+          "locator": "Mike Wazowski profile explicitly says green one-eyed monster. Oozma Kappa profile and Field Trip describe Mike/Sulley joining the OK group; ROR and PNK profiles distinguish rival houses."
+        },
+        {
+          "url": "https://www.pixar.com/monsters-inc",
+          "locator": "Mike Wazowski profile and named character portraits; Sulley, Randall Boggs and Roz profiles identify different characters; Celia is also one-eyed but is not among the four options."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged the one-eye clue carefully: Celia is also one-eyed, but is not listed. The combined green/one-eyed description explicitly matches Mike; the three listed character portraits and profiles do not. This is an option-bounded answer, not a claim that no other one-eyed monster exists."
+    },
+    "options": [
+      {
+        "answer": "Mike Wazowski",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Pixar explicitly describes Mike as green and one-eyed.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/monsters-university",
+            "locator": "Mike Wazowski profile explicitly says green one-eyed monster. Oozma Kappa profile and Field Trip describe Mike/Sulley joining the OK group; ROR and PNK profiles distinguish rival houses."
+          },
+          {
+            "url": "https://www.pixar.com/monsters-inc",
+            "locator": "Mike Wazowski profile and named character portraits; Sulley, Randall Boggs and Roz profiles identify different characters; Celia is also one-eyed but is not among the four options."
+          }
+        ]
+      },
+      {
+        "answer": "Sulley",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "A distinct character in the named portraits, not Mike.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/monsters-university",
+            "locator": "Mike Wazowski profile explicitly says green one-eyed monster. Oozma Kappa profile and Field Trip describe Mike/Sulley joining the OK group; ROR and PNK profiles distinguish rival houses."
+          },
+          {
+            "url": "https://www.pixar.com/monsters-inc",
+            "locator": "Mike Wazowski profile and named character portraits; Sulley, Randall Boggs and Roz profiles identify different characters; Celia is also one-eyed but is not among the four options."
+          }
+        ]
+      },
+      {
+        "answer": "Randall",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "A distinct character in the named portraits, not Mike.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/monsters-university",
+            "locator": "Mike Wazowski profile explicitly says green one-eyed monster. Oozma Kappa profile and Field Trip describe Mike/Sulley joining the OK group; ROR and PNK profiles distinguish rival houses."
+          },
+          {
+            "url": "https://www.pixar.com/monsters-inc",
+            "locator": "Mike Wazowski profile and named character portraits; Sulley, Randall Boggs and Roz profiles identify different characters; Celia is also one-eyed but is not among the four options."
+          }
+        ]
+      },
+      {
+        "answer": "Roz",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "A distinct character in the named portraits, not Mike.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/monsters-university",
+            "locator": "Mike Wazowski profile explicitly says green one-eyed monster. Oozma Kappa profile and Field Trip describe Mike/Sulley joining the OK group; ROR and PNK profiles distinguish rival houses."
+          },
+          {
+            "url": "https://www.pixar.com/monsters-inc",
+            "locator": "Mike Wazowski profile and named character portraits; Sulley, Randall Boggs and Roz profiles identify different characters; Celia is also one-eyed but is not among the four options."
+          }
+        ]
+      }
+    ]
+  }
+}

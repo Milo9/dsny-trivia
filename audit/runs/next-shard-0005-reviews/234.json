@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 234,
+  "hash": "62b5e25e991997b81aa22f57da634b15c5b3f4b841c63742e1e36055bce8d256",
+  "questionSnapshot": {
+    "id": 234,
+    "question": "In Wreck-It Ralph, what is the name of the candy-themed racing game?",
+    "answers": [
+      "Sugar Rush",
+      "Candy Kart",
+      "Sweet Speedway",
+      "Candy Kingdom Racers"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. A generic candy-themed description cannot establish a proper title by itself. Read D23’s attraction-story introduction naming the game and corroborated its game type with original-film synopsis. The question concerns the existing fictional game, not the attraction name or future schedule.",
+  "verification": {
+    "context": "In Wreck-It Ralph, what is the name of the candy-themed racing game?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "D23 explicitly names Sugar Rush as the candy-themed racing game.",
+      "sources": [
+        {
+          "url": "https://d23.com/exciting-new-details-about-the-wreck-it-ralph-attraction-at-tokyo-disney-resort/",
+          "locator": "Opening attraction-story paragraphs explicitly identify Sugar Rush as candy-themed racing game from Wreck-It Ralph; used for the established fictional game identity, not mutable ride opening claims."
+        },
+        {
+          "url": "https://d23.com/a-to-z/wreck-it-ralph-film/",
+          "locator": "Opening synopsis identifies Vanellope’s candy-coated kart racing game; does not itself name Sugar Rush. Combined with publisher title description."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "A generic candy-themed description cannot establish a proper title by itself. Read D23’s attraction-story introduction naming the game and corroborated its game type with original-film synopsis. The question concerns the existing fictional game, not the attraction name or future schedule."
+    },
+    "options": [
+      {
+        "answer": "Sugar Rush",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "D23 explicitly names Sugar Rush as the candy-themed racing game.",
+        "sources": [
+          {
+            "url": "https://d23.com/exciting-new-details-about-the-wreck-it-ralph-attraction-at-tokyo-disney-resort/",
+            "locator": "Opening attraction-story paragraphs explicitly identify Sugar Rush as candy-themed racing game from Wreck-It Ralph; used for the established fictional game identity, not mutable ride opening claims."
+          },
+          {
+            "url": "https://d23.com/a-to-z/wreck-it-ralph-film/",
+            "locator": "Opening synopsis identifies Vanellope’s candy-coated kart racing game; does not itself name Sugar Rush. Combined with publisher title description."
+          }
+        ]
+      },
+      {
+        "answer": "Candy Kart",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different title from the explicitly named Sugar Rush.",
+        "sources": [
+          {
+            "url": "https://d23.com/exciting-new-details-about-the-wreck-it-ralph-attraction-at-tokyo-disney-resort/",
+            "locator": "Opening attraction-story paragraphs explicitly identify Sugar Rush as candy-themed racing game from Wreck-It Ralph; used for the established fictional game identity, not mutable ride opening claims."
+          },
+          {
+            "url": "https://d23.com/a-to-z/wreck-it-ralph-film/",
+            "locator": "Opening synopsis identifies Vanellope’s candy-coated kart racing game; does not itself name Sugar Rush. Combined with publisher title description."
+          }
+        ]
+      },
+      {
+        "answer": "Sweet Speedway",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different title from the explicitly named Sugar Rush.",
+        "sources": [
+          {
+            "url": "https://d23.com/exciting-new-details-about-the-wreck-it-ralph-attraction-at-tokyo-disney-resort/",
+            "locator": "Opening attraction-story paragraphs explicitly identify Sugar Rush as candy-themed racing game from Wreck-It Ralph; used for the established fictional game identity, not mutable ride opening claims."
+          },
+          {
+            "url": "https://d23.com/a-to-z/wreck-it-ralph-film/",
+            "locator": "Opening synopsis identifies Vanellope’s candy-coated kart racing game; does not itself name Sugar Rush. Combined with publisher title description."
+          }
+        ]
+      },
+      {
+        "answer": "Candy Kingdom Racers",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different title from the explicitly named Sugar Rush.",
+        "sources": [
+          {
+            "url": "https://d23.com/exciting-new-details-about-the-wreck-it-ralph-attraction-at-tokyo-disney-resort/",
+            "locator": "Opening attraction-story paragraphs explicitly identify Sugar Rush as candy-themed racing game from Wreck-It Ralph; used for the established fictional game identity, not mutable ride opening claims."
+          },
+          {
+            "url": "https://d23.com/a-to-z/wreck-it-ralph-film/",
+            "locator": "Opening synopsis identifies Vanellope’s candy-coated kart racing game; does not itself name Sugar Rush. Combined with publisher title description."
+          }
+        ]
+      }
+    ]
+  }
+}

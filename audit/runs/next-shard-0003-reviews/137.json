@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 137,
+  "hash": "260be14caa4cc4d6697103ab808a32dbceb8ba1d029585fae4fa29e0e9275045",
+  "questionSnapshot": {
+    "id": 137,
+    "question": "In what year did Disney Cruise Line begin operating?",
+    "answers": [
+      "1998",
+      "1994",
+      "2002",
+      "2006"
+    ],
+    "difficulty": "easy",
+    "category": "cruise"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Final challenge checks the exact named entity/event against each listed alternative, not merely a matching answer keyword.",
+  "verification": {
+    "context": "In what year did Disney Cruise Line begin operating?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Both chronology and fact sheet place operating debut in 1998.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/disney-cruise-line/",
+          "locator": "Opening paragraph: first Disney Magic voyage July 30, 1998, Port Canaveral; Wonder 1999. Final paragraph: Dream 2011 and Fantasy March 31, 2012."
+        },
+        {
+          "url": "https://disneyexperiences.com/app/uploads/2025/02/Final-DCL-Disney-Connect-Fact-SheetQ2.pdf",
+          "locator": "PDF page 1: launch in 1998 and fleet debut years Magic 1998, Wonder 1999, Dream 2011, Fantasy 2012; page 2 Lookout Cay opening month."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tried each alternative against the literal final scope: 1994: Before the operating debut; no confusion with planning/founding. 2002: After the operating debut. 2006: After the operating debut."
+    },
+    "options": [
+      {
+        "answer": "1998",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Both chronology and fact sheet place operating debut in 1998.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/disney-cruise-line/",
+            "locator": "Opening paragraph: first Disney Magic voyage July 30, 1998, Port Canaveral; Wonder 1999. Final paragraph: Dream 2011 and Fantasy March 31, 2012."
+          },
+          {
+            "url": "https://disneyexperiences.com/app/uploads/2025/02/Final-DCL-Disney-Connect-Fact-SheetQ2.pdf",
+            "locator": "PDF page 1: launch in 1998 and fleet debut years Magic 1998, Wonder 1999, Dream 2011, Fantasy 2012; page 2 Lookout Cay opening month."
+          }
+        ]
+      },
+      {
+        "answer": "1994",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Before the operating debut; no confusion with planning/founding.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/disney-cruise-line/",
+            "locator": "Opening paragraph: first Disney Magic voyage July 30, 1998, Port Canaveral; Wonder 1999. Final paragraph: Dream 2011 and Fantasy March 31, 2012."
+          },
+          {
+            "url": "https://disneyexperiences.com/app/uploads/2025/02/Final-DCL-Disney-Connect-Fact-SheetQ2.pdf",
+            "locator": "PDF page 1: launch in 1998 and fleet debut years Magic 1998, Wonder 1999, Dream 2011, Fantasy 2012; page 2 Lookout Cay opening month."
+          }
+        ]
+      },
+      {
+        "answer": "2002",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "After the operating debut.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/disney-cruise-line/",
+            "locator": "Opening paragraph: first Disney Magic voyage July 30, 1998, Port Canaveral; Wonder 1999. Final paragraph: Dream 2011 and Fantasy March 31, 2012."
+          },
+          {
+            "url": "https://disneyexperiences.com/app/uploads/2025/02/Final-DCL-Disney-Connect-Fact-SheetQ2.pdf",
+            "locator": "PDF page 1: launch in 1998 and fleet debut years Magic 1998, Wonder 1999, Dream 2011, Fantasy 2012; page 2 Lookout Cay opening month."
+          }
+        ]
+      },
+      {
+        "answer": "2006",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "After the operating debut.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/disney-cruise-line/",
+            "locator": "Opening paragraph: first Disney Magic voyage July 30, 1998, Port Canaveral; Wonder 1999. Final paragraph: Dream 2011 and Fantasy March 31, 2012."
+          },
+          {
+            "url": "https://disneyexperiences.com/app/uploads/2025/02/Final-DCL-Disney-Connect-Fact-SheetQ2.pdf",
+            "locator": "PDF page 1: launch in 1998 and fleet debut years Magic 1998, Wonder 1999, Dream 2011, Fantasy 2012; page 2 Lookout Cay opening month."
+          }
+        ]
+      }
+    ]
+  }
+}

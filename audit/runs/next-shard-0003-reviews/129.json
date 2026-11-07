@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 129,
+  "hash": "c4db1f43d087b56b79c565f31095d29c24e99cc40f6f7d63751483b5cc99a038",
+  "questionSnapshot": {
+    "id": 129,
+    "question": "What was the name of Walt Disney's miniature backyard railroad in Holmby Hills?",
+    "answers": [
+      "Carolwood Pacific Railroad",
+      "Disney Home Railway",
+      "Lilly Belle Express",
+      "Riverside Train"
+    ],
+    "difficulty": "medium",
+    "category": "walt"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Challenged Lilly Belle as an alternative name: it is the locomotive, not the Carolwood Pacific railroad. Source explicitly distinguishes them.",
+  "verification": {
+    "context": "What was the name of Walt Disney's miniature backyard railroad in Holmby Hills?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Name of the whole backyard railway in Holmby Hills.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/carolwood-pacific-railroad/",
+          "locator": "Opening paragraph: named backyard miniature railroad, Holmby Hills, early 1950s."
+        },
+        {
+          "url": "https://d23.com/a-to-z/lilly-belle/",
+          "locator": "Opening paragraph distinguishes the Lilly Belle locomotive from its railroad, the Carolwood Pacific."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged Lilly Belle as an alternative name: it is the locomotive, not the Carolwood Pacific railroad. Source explicitly distinguishes them."
+    },
+    "options": [
+      {
+        "answer": "Carolwood Pacific Railroad",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Name of the whole backyard railway in Holmby Hills.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/carolwood-pacific-railroad/",
+            "locator": "Opening paragraph: named backyard miniature railroad, Holmby Hills, early 1950s."
+          },
+          {
+            "url": "https://d23.com/a-to-z/lilly-belle/",
+            "locator": "Opening paragraph distinguishes the Lilly Belle locomotive from its railroad, the Carolwood Pacific."
+          }
+        ]
+      },
+      {
+        "answer": "Disney Home Railway",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not its documented proper name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/carolwood-pacific-railroad/",
+            "locator": "Opening paragraph: named backyard miniature railroad, Holmby Hills, early 1950s."
+          },
+          {
+            "url": "https://d23.com/a-to-z/lilly-belle/",
+            "locator": "Opening paragraph distinguishes the Lilly Belle locomotive from its railroad, the Carolwood Pacific."
+          }
+        ]
+      },
+      {
+        "answer": "Lilly Belle Express",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Confuses the Lilly Belle locomotive with the railroad; Express is not the documented railroad name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/carolwood-pacific-railroad/",
+            "locator": "Opening paragraph: named backyard miniature railroad, Holmby Hills, early 1950s."
+          },
+          {
+            "url": "https://d23.com/a-to-z/lilly-belle/",
+            "locator": "Opening paragraph distinguishes the Lilly Belle locomotive from its railroad, the Carolwood Pacific."
+          }
+        ]
+      },
+      {
+        "answer": "Riverside Train",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not its documented proper name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/carolwood-pacific-railroad/",
+            "locator": "Opening paragraph: named backyard miniature railroad, Holmby Hills, early 1950s."
+          },
+          {
+            "url": "https://d23.com/a-to-z/lilly-belle/",
+            "locator": "Opening paragraph distinguishes the Lilly Belle locomotive from its railroad, the Carolwood Pacific."
+          }
+        ]
+      }
+    ]
+  }
+}

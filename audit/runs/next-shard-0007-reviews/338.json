@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 338,
+  "hash": "7f4bc5319c6521ef5cf4b868215280abcc740695d253cf33cce41275c24ec262",
+  "questionSnapshot": {
+    "id": 338,
+    "question": "Which Disney World park features a 'World Showcase' with pavilions representing different countries?",
+    "answers": [
+      "EPCOT",
+      "Magic Kingdom",
+      "Animal Kingdom",
+      "Hollywood Studios"
+    ],
+    "difficulty": "easy",
+    "category": "parks"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Not a claim that other parks lack international influences: the proper-named World Showcase area is the exclusive EPCOT association. 776 asks country count and pavilion questions ask individual placements; 1193 asks Walt last filmed concept presentation, a historical planning fact. Easy park recognition and parks scope fit. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+  "verification": {
+    "context": "Which Disney World park features a 'World Showcase' with pavilions representing different countries? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+    "timeSensitive": true,
+    "nextReviewAt": "2027-02-04",
+    "premise": {
+      "reason": "World Showcase is explicitly the EPCOT international-pavilion area. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/world-showcase/",
+          "locator": "Complete entry explicitly locates the international-pavilion area at EPCOT and enumerates its countries"
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Not a claim that other parks lack international influences: the proper-named World Showcase area is the exclusive EPCOT association. 776 asks country count and pavilion questions ask individual placements; 1193 asks Walt last filmed concept presentation, a historical planning fact. Easy park recognition and parks scope fit."
+    },
+    "options": [
+      {
+        "answer": "EPCOT",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "World Showcase is explicitly the EPCOT international-pavilion area.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/world-showcase/",
+            "locator": "Complete entry explicitly locates the international-pavilion area at EPCOT and enumerates its countries"
+          }
+        ]
+      },
+      {
+        "answer": "Magic Kingdom",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Magic Kingdom is not the park assigned to that named area.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/world-showcase/",
+            "locator": "Complete entry explicitly locates the international-pavilion area at EPCOT and enumerates its countries"
+          }
+        ]
+      },
+      {
+        "answer": "Animal Kingdom",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Animal Kingdom is not the park assigned to that named area.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/world-showcase/",
+            "locator": "Complete entry explicitly locates the international-pavilion area at EPCOT and enumerates its countries"
+          }
+        ]
+      },
+      {
+        "answer": "Hollywood Studios",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Hollywood Studios is not the park assigned to that named area.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/world-showcase/",
+            "locator": "Complete entry explicitly locates the international-pavilion area at EPCOT and enumerates its countries"
+          }
+        ]
+      }
+    ]
+  }
+}

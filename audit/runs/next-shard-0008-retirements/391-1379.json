@@ -1,0 +1,70 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "retired": {
+    "id": 391,
+    "question": "Which U.S. president awarded Walt Disney the Presidential Medal of Freedom in 1964?",
+    "answers": [
+      "Lyndon B. Johnson",
+      "John F. Kennedy",
+      "Dwight D. Eisenhower",
+      "Richard Nixon"
+    ],
+    "difficulty": "medium",
+    "category": "walt"
+  },
+  "retained": {
+    "id": 1379,
+    "question": "In 1964, U.S. President Lyndon B. Johnson awarded Walt Disney one of the nation's highest civilian honors. What was it?",
+    "answers": [
+      "The Presidential Medal of Freedom",
+      "The National Medal of Arts",
+      "The Congressional Gold Medal",
+      "The Liberty Medal"
+    ],
+    "difficulty": "hard",
+    "category": "walt"
+  },
+  "additionalComparisons": [],
+  "rationale": "Inverse of the same 1964 Johnson/Disney Medal of Freedom event. The retained stem gives Johnson and the year while asking the honor, directly disclosing 391's answer.",
+  "sources": [
+    {
+      "sourceNoteId": "medal-president",
+      "url": "https://www.presidency.ucsb.edu/documents/remarks-the-presentation-the-1964-presidential-medal-freedom-awards",
+      "locator": "September 14, 1964 transcript; Walter Disney recipient announcement",
+      "evidence": "President Lyndon B. Johnson presented Walt Disney's Medal of Freedom in 1964.",
+      "checkedBy": "Codex",
+      "checkedAt": "2026-11-07",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "limitations": "Primary institutional text inspected; no film or video viewing claimed.",
+      "topics": [
+        "walt"
+      ]
+    }
+  ],
+  "originalOptionAssessments": [
+    {
+      "answer": "Lyndon B. Johnson",
+      "assessment": "Lyndon B. Johnson is the president in the ceremony transcript."
+    },
+    {
+      "answer": "John F. Kennedy",
+      "assessment": "Kennedy did not present this 1964 ceremony."
+    },
+    {
+      "answer": "Dwight D. Eisenhower",
+      "assessment": "Eisenhower did not present it."
+    },
+    {
+      "answer": "Richard Nixon",
+      "assessment": "Nixon did not present it."
+    }
+  ],
+  "finalChallenge": {
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "notes": "Inverse of the same 1964 Johnson/Disney Medal of Freedom event. The retained stem gives Johnson and the year while asking the honor, directly disclosing 391's answer. All four original options inspected. Retirement avoids asserting approval of a flawed premise or an insufficiently excluded alternative."
+  },
+  "scope": "Only the planned ID is retired. Counterpart comparison is not approval of its other claims."
+}

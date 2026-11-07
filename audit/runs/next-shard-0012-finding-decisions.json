@@ -1,0 +1,155 @@
+[
+  {
+    "finding": {
+      "id": "duplicate-43bf229196226bc8bf5c",
+      "kind": "duplicate",
+      "questionIds": [
+        225,
+        634
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "43bf229196226bc8bf5c59d79265e12704c5a9b4e12227b56d22bc225f847c7d",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "reason": "Luisa and Bob are different characters in different films. Knowing Luisa has strength does not establish Bob has it.",
+    "reviewer": "Codex",
+    "reference": "audit/runs/next-shard-0012-evidence-notes.json"
+  },
+  {
+    "finding": {
+      "id": "duplicate-63bc70033647aaac85f9",
+      "kind": "duplicate",
+      "questionIds": [
+        123,
+        661
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "63bc70033647aaac85f9ba85d7072bea256f647cee6641086052e1aa0195eb95",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "reason": "22 is a career Oscar count in q123 and an individual soul identifier in q661. No shared fact or inference connects them.",
+    "reviewer": "Codex",
+    "reference": "audit/runs/next-shard-0012-evidence-notes.json"
+  },
+  {
+    "finding": {
+      "id": "duplicate-7b969034443a1ee891ef",
+      "kind": "duplicate",
+      "questionIds": [
+        90,
+        692
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "7b969034443a1ee891efbd1fcad9852a4f361707b4e3792771da46141d90240a",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "reason": "q90 identifies a current Magic Kingdom ride from its singing children. q692 independently tests the 1964 Pepsi-Cola/UNICEF sponsorship and fair presentation. Shared attraction identity alone does not establish that historical connection.",
+    "reviewer": "Codex",
+    "reference": "audit/runs/next-shard-0012-evidence-notes.json"
+  },
+  {
+    "finding": {
+      "id": "duplicate-ac7d6106688044a5ef1c",
+      "kind": "duplicate",
+      "questionIds": [
+        688,
+        1207
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "ac7d6106688044a5ef1c391bacaa5c766143e24dd769575fc786021cfee51e97",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "reason": "First posthumous release is a chronological event; last personally supervised production is a separate relationship. The feature catalog establishes the former, and the D23 production account the latter; neither necessarily implies the other.",
+    "reviewer": "Codex",
+    "reference": "audit/runs/next-shard-0012-evidence-notes.json"
+  },
+  {
+    "finding": {
+      "id": "duplicate-d71679f0b4aae952634a",
+      "kind": "duplicate",
+      "questionIds": [
+        609,
+        1160
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "d71679f0b4aae952634af39799685a731755dd9dfb36e9d9f7d8233577cafc1f",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "reason": "q609 identifies the haunted elevator at Hollywood Studios. q1160 asks the predecessor of Mission BREAKOUT in California. Distinct park version and replacement history require a new fact.",
+    "reviewer": "Codex",
+    "reference": "audit/runs/next-shard-0012-evidence-notes.json"
+  },
+  {
+    "finding": {
+      "id": "duplicate-f431c3816868a941386e",
+      "kind": "duplicate",
+      "questionIds": [
+        515,
+        636
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "f431c3816868a941386e186066253080149afae0a66eec1bbad84e8fe13b2f40",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "reason": "Rose paint in Alice and McQueen's classic car livery have unrelated causes and subjects. Sharing red does not make them duplicates.",
+    "reviewer": "Codex",
+    "reference": "audit/runs/next-shard-0012-evidence-notes.json"
+  },
+  {
+    "finding": {
+      "id": "leak-0c1ee0a248c637d613e9",
+      "kind": "leak",
+      "questionIds": [
+        619
+      ],
+      "detail": {
+        "tier": 2,
+        "token": "coaster"
+      },
+      "signature": "0c1ee0a248c637d613e96eba5a4c79d221b0bf5f312c6273edeee24f1e586658",
+      "decision": null
+    },
+    "reason": "All four options are real coaster names. The generic word coaster identifies their common ride type; the discriminating information is the 1999 Aerosmith debut, not a copied answer title.",
+    "reviewer": "Codex",
+    "reference": "audit/runs/next-shard-0012-evidence-notes.json"
+  },
+  {
+    "finding": {
+      "id": "scope-668deebbfe9b915e315b",
+      "kind": "scope",
+      "questionIds": [
+        680
+      ],
+      "detail": "Check the no-TV-shows boundary; incidental mentions may be valid.",
+      "signature": "668deebbfe9b915e315be696c4e5b3f88ea3a12ed09a4c8fdf6386cabce94a45",
+      "decision": null
+    },
+    "reason": "Alice Comedies are silent theatrical film shorts made in the 1920s, not a television series. Final question explicitly says theatrical shorts; secondary-film coverage remains modest.",
+    "reviewer": "Codex",
+    "reference": "audit/runs/next-shard-0012-evidence-notes.json"
+  }
+]

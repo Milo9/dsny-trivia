@@ -1,0 +1,4482 @@
+[
+  {
+    "schema": 2,
+    "questionId": 158,
+    "hash": "9d17262d03a3ac46ebc58147f26686e09ccd1adae13184f4ff7c478c1d6acb5d",
+    "questionSnapshot": {
+      "id": 158,
+      "question": "Which film won the Best Original Song Oscar for 'Under the Sea' at the 1990 ceremony?",
+      "answers": [
+        "The Little Mermaid",
+        "Finding Nemo",
+        "Moana",
+        "The Little Mermaid II"
+      ],
+      "difficulty": "easy",
+      "category": "music"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged sequel reuse and soundtrack compilations: the final wording asks the unique 1990 Oscar-winning film, not whether a tune might be reused elsewhere. Complete Academy results identify only The Little Mermaid for this song.",
+    "verification": {
+      "context": "Which film won the Best Original Song Oscar for 'Under the Sea' at the 1990 ceremony?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Academy identifies this film as the winner for this song.",
+        "sources": [
+          {
+            "url": "https://www.oscars.org/oscars/ceremonies/1990",
+            "locator": "1990 ceremony header (March 26); Music (Original Song), complete winner/nominee list: Under the Sea, The Little Mermaid, Menken music/Ashman lyric."
+          },
+          {
+            "url": "https://d23.com/a-to-z/little-mermaid-the-film/",
+            "locator": "Release paragraph dates animated film 1989; final paragraphs identify Under the Sea and original-score Oscars."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged sequel reuse and soundtrack compilations: the final wording asks the unique 1990 Oscar-winning film, not whether a tune might be reused elsewhere. Complete Academy results identify only The Little Mermaid for this song."
+      },
+      "options": [
+        {
+          "answer": "The Little Mermaid",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "The Academy identifies this film as the winner for this song.",
+          "sources": [
+            {
+              "url": "https://www.oscars.org/oscars/ceremonies/1990",
+              "locator": "1990 ceremony header (March 26); Music (Original Song), complete winner/nominee list: Under the Sea, The Little Mermaid, Menken music/Ashman lyric."
+            },
+            {
+              "url": "https://d23.com/a-to-z/little-mermaid-the-film/",
+              "locator": "Release paragraph dates animated film 1989; final paragraphs identify Under the Sea and original-score Oscars."
+            }
+          ]
+        },
+        {
+          "answer": "Finding Nemo",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the film in the Academy’s complete 1990 song results.",
+          "sources": [
+            {
+              "url": "https://www.oscars.org/oscars/ceremonies/1990",
+              "locator": "1990 ceremony header (March 26); Music (Original Song), complete winner/nominee list: Under the Sea, The Little Mermaid, Menken music/Ashman lyric."
+            },
+            {
+              "url": "https://d23.com/a-to-z/little-mermaid-the-film/",
+              "locator": "Release paragraph dates animated film 1989; final paragraphs identify Under the Sea and original-score Oscars."
+            }
+          ]
+        },
+        {
+          "answer": "Moana",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the film in the Academy’s complete 1990 song results.",
+          "sources": [
+            {
+              "url": "https://www.oscars.org/oscars/ceremonies/1990",
+              "locator": "1990 ceremony header (March 26); Music (Original Song), complete winner/nominee list: Under the Sea, The Little Mermaid, Menken music/Ashman lyric."
+            },
+            {
+              "url": "https://d23.com/a-to-z/little-mermaid-the-film/",
+              "locator": "Release paragraph dates animated film 1989; final paragraphs identify Under the Sea and original-score Oscars."
+            }
+          ]
+        },
+        {
+          "answer": "The Little Mermaid II",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "The sequel is not the 1989 film identified in the Academy’s 1990 results.",
+          "sources": [
+            {
+              "url": "https://www.oscars.org/oscars/ceremonies/1990",
+              "locator": "1990 ceremony header (March 26); Music (Original Song), complete winner/nominee list: Under the Sea, The Little Mermaid, Menken music/Ashman lyric."
+            },
+            {
+              "url": "https://d23.com/a-to-z/little-mermaid-the-film/",
+              "locator": "Release paragraph dates animated film 1989; final paragraphs identify Under the Sea and original-score Oscars."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 159,
+    "hash": "19aa1f9f5e684423030e142b2f51d5fd3e3fb320eab752e428a1b34cc54b813f",
+    "questionSnapshot": {
+      "id": 159,
+      "question": "Who composed the music for The Little Mermaid, Beauty and the Beast, and Aladdin?",
+      "answers": [
+        "Alan Menken",
+        "Elton John",
+        "Howard Ashman",
+        "Phil Collins"
+      ],
+      "difficulty": "medium",
+      "category": "music"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged Ashman as a co-writer: composer and lyricist are different roles. Menken composed the music; the cited explicit credits distinguish Ashman and Rice as lyric collaborators. No claim that Ashman never wrote music elsewhere is needed.",
+    "verification": {
+      "context": "Who composed the music for The Little Mermaid, Beauty and the Beast, and Aladdin?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Menken is the composer; the three-film music attribution agrees with the song/score credits.",
+        "sources": [
+          {
+            "url": "https://disney.go.com/disneyrecords/Soundtracks/Beauty_on_Broadway/index.html",
+            "locator": "Opening credits explicitly distinguish composer Alan Menken from lyricist Howard Ashman for the film songs; additional stage lyrics are Tim Rice."
+          },
+          {
+            "url": "https://d23.com/a-to-z/aladdin-film/",
+            "locator": "Songwriting paragraphs: Ashman collaborated with Menken; Rice supplied later lyrics. Best Original Score award paragraph."
+          },
+          {
+            "url": "https://www.oscars.org/oscars/ceremonies/1990",
+            "locator": "Music (Original Score) winner is The Little Mermaid, Alan Menken; Original Song credits split Menken music and Ashman lyric."
+          },
+          {
+            "url": "https://www.oscars.org/oscars/ceremonies/1993",
+            "locator": "Music (Original Score) winner: Aladdin, Alan Menken; Music (Original Song) identifies Menken music and Rice lyrics; film listing separately credits Ashman lyrics on Friend Like Me."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged Ashman as a co-writer: composer and lyricist are different roles. Menken composed the music; the cited explicit credits distinguish Ashman and Rice as lyric collaborators. No claim that Ashman never wrote music elsewhere is needed."
+      },
+      "options": [
+        {
+          "answer": "Alan Menken",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Menken is the composer; the three-film music attribution agrees with the song/score credits.",
+          "sources": [
+            {
+              "url": "https://disney.go.com/disneyrecords/Soundtracks/Beauty_on_Broadway/index.html",
+              "locator": "Opening credits explicitly distinguish composer Alan Menken from lyricist Howard Ashman for the film songs; additional stage lyrics are Tim Rice."
+            },
+            {
+              "url": "https://d23.com/a-to-z/aladdin-film/",
+              "locator": "Songwriting paragraphs: Ashman collaborated with Menken; Rice supplied later lyrics. Best Original Score award paragraph."
+            },
+            {
+              "url": "https://www.oscars.org/oscars/ceremonies/1990",
+              "locator": "Music (Original Score) winner is The Little Mermaid, Alan Menken; Original Song credits split Menken music and Ashman lyric."
+            },
+            {
+              "url": "https://www.oscars.org/oscars/ceremonies/1993",
+              "locator": "Music (Original Score) winner: Aladdin, Alan Menken; Music (Original Song) identifies Menken music and Rice lyrics; film listing separately credits Ashman lyrics on Friend Like Me."
+            }
+          ]
+        },
+        {
+          "answer": "Elton John",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the composer credited for these films.",
+          "sources": [
+            {
+              "url": "https://disney.go.com/disneyrecords/Soundtracks/Beauty_on_Broadway/index.html",
+              "locator": "Opening credits explicitly distinguish composer Alan Menken from lyricist Howard Ashman for the film songs; additional stage lyrics are Tim Rice."
+            },
+            {
+              "url": "https://d23.com/a-to-z/aladdin-film/",
+              "locator": "Songwriting paragraphs: Ashman collaborated with Menken; Rice supplied later lyrics. Best Original Score award paragraph."
+            },
+            {
+              "url": "https://www.oscars.org/oscars/ceremonies/1990",
+              "locator": "Music (Original Score) winner is The Little Mermaid, Alan Menken; Original Song credits split Menken music and Ashman lyric."
+            },
+            {
+              "url": "https://www.oscars.org/oscars/ceremonies/1993",
+              "locator": "Music (Original Score) winner: Aladdin, Alan Menken; Music (Original Song) identifies Menken music and Rice lyrics; film listing separately credits Ashman lyrics on Friend Like Me."
+            }
+          ]
+        },
+        {
+          "answer": "Howard Ashman",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Ashman supplied lyrics, not Menken’s musical compositions.",
+          "sources": [
+            {
+              "url": "https://disney.go.com/disneyrecords/Soundtracks/Beauty_on_Broadway/index.html",
+              "locator": "Opening credits explicitly distinguish composer Alan Menken from lyricist Howard Ashman for the film songs; additional stage lyrics are Tim Rice."
+            },
+            {
+              "url": "https://d23.com/a-to-z/aladdin-film/",
+              "locator": "Songwriting paragraphs: Ashman collaborated with Menken; Rice supplied later lyrics. Best Original Score award paragraph."
+            },
+            {
+              "url": "https://www.oscars.org/oscars/ceremonies/1990",
+              "locator": "Music (Original Score) winner is The Little Mermaid, Alan Menken; Original Song credits split Menken music and Ashman lyric."
+            },
+            {
+              "url": "https://www.oscars.org/oscars/ceremonies/1993",
+              "locator": "Music (Original Score) winner: Aladdin, Alan Menken; Music (Original Song) identifies Menken music and Rice lyrics; film listing separately credits Ashman lyrics on Friend Like Me."
+            }
+          ]
+        },
+        {
+          "answer": "Phil Collins",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the composer credited for these films.",
+          "sources": [
+            {
+              "url": "https://disney.go.com/disneyrecords/Soundtracks/Beauty_on_Broadway/index.html",
+              "locator": "Opening credits explicitly distinguish composer Alan Menken from lyricist Howard Ashman for the film songs; additional stage lyrics are Tim Rice."
+            },
+            {
+              "url": "https://d23.com/a-to-z/aladdin-film/",
+              "locator": "Songwriting paragraphs: Ashman collaborated with Menken; Rice supplied later lyrics. Best Original Score award paragraph."
+            },
+            {
+              "url": "https://www.oscars.org/oscars/ceremonies/1990",
+              "locator": "Music (Original Score) winner is The Little Mermaid, Alan Menken; Original Song credits split Menken music and Ashman lyric."
+            },
+            {
+              "url": "https://www.oscars.org/oscars/ceremonies/1993",
+              "locator": "Music (Original Score) winner: Aladdin, Alan Menken; Music (Original Song) identifies Menken music and Rice lyrics; film listing separately credits Ashman lyrics on Friend Like Me."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 160,
+    "hash": "9f6381767b0186eb62879c95deffce04feb725e3a8be016a565059641db73ad4",
+    "questionSnapshot": {
+      "id": 160,
+      "question": "The songwriting duo Kristen Anderson-Lopez and Robert Lopez wrote the songs for which Disney film?",
+      "answers": [
+        "Frozen",
+        "Moana",
+        "Encanto",
+        "Brave"
+      ],
+      "difficulty": "medium",
+      "category": "music"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged Moana and Brave rather than relying on absence in a Frozen synopsis. Their music teams are explicitly different in the primary introductions/press release; Encanto has Miranda original songs. Frozen stage source expressly identifies original film songs separately from stage additions.",
+    "verification": {
+      "context": "The songwriting duo Kristen Anderson-Lopez and Robert Lopez wrote the songs for which Disney film?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Licensed rights-holder description explicitly attributes the original Frozen film songs to the pair.",
+        "sources": [
+          {
+            "url": "https://www.mtishows.com/disneys-frozen",
+            "locator": "Opening description explicitly identifies the original animated film songs as by Kristen Anderson-Lopez and Robert Lopez, separately from new stage songs."
+          },
+          {
+            "url": "https://d23.com/d23-video/the-magic-makers-behind-the-music-of-moana/",
+            "locator": "Intro text explicitly names Mark Mancina, Lin-Manuel Miranda and Opetaia Foa’i as the Moana music team; text inspected, not unplayed video."
+          },
+          {
+            "url": "https://www.disney.com.au/news/disney-encanto-home-is-where-the-magic-lives",
+            "locator": "Paragraph beginning It was the obvious: Miranda created the eight original songs."
+          },
+          {
+            "url": "https://www.awn.com/news/brave-soundtrack-available-june-19",
+            "locator": "Identified as a Walt Disney Records press release; THE SCORE and ORIGINAL SONGS sections credit Doyle, Mandel/Andrews and Mumford & Sons; full track list follows."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged Moana and Brave rather than relying on absence in a Frozen synopsis. Their music teams are explicitly different in the primary introductions/press release; Encanto has Miranda original songs. Frozen stage source expressly identifies original film songs separately from stage additions."
+      },
+      "options": [
+        {
+          "answer": "Frozen",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Licensed rights-holder description explicitly attributes the original Frozen film songs to the pair.",
+          "sources": [
+            {
+              "url": "https://www.mtishows.com/disneys-frozen",
+              "locator": "Opening description explicitly identifies the original animated film songs as by Kristen Anderson-Lopez and Robert Lopez, separately from new stage songs."
+            },
+            {
+              "url": "https://d23.com/d23-video/the-magic-makers-behind-the-music-of-moana/",
+              "locator": "Intro text explicitly names Mark Mancina, Lin-Manuel Miranda and Opetaia Foa’i as the Moana music team; text inspected, not unplayed video."
+            },
+            {
+              "url": "https://www.disney.com.au/news/disney-encanto-home-is-where-the-magic-lives",
+              "locator": "Paragraph beginning It was the obvious: Miranda created the eight original songs."
+            },
+            {
+              "url": "https://www.awn.com/news/brave-soundtrack-available-june-19",
+              "locator": "Identified as a Walt Disney Records press release; THE SCORE and ORIGINAL SONGS sections credit Doyle, Mandel/Andrews and Mumford & Sons; full track list follows."
+            }
+          ]
+        },
+        {
+          "answer": "Moana",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Moana’s credited team is Miranda, Foa’i and Mancina.",
+          "sources": [
+            {
+              "url": "https://www.mtishows.com/disneys-frozen",
+              "locator": "Opening description explicitly identifies the original animated film songs as by Kristen Anderson-Lopez and Robert Lopez, separately from new stage songs."
+            },
+            {
+              "url": "https://d23.com/d23-video/the-magic-makers-behind-the-music-of-moana/",
+              "locator": "Intro text explicitly names Mark Mancina, Lin-Manuel Miranda and Opetaia Foa’i as the Moana music team; text inspected, not unplayed video."
+            },
+            {
+              "url": "https://www.disney.com.au/news/disney-encanto-home-is-where-the-magic-lives",
+              "locator": "Paragraph beginning It was the obvious: Miranda created the eight original songs."
+            },
+            {
+              "url": "https://www.awn.com/news/brave-soundtrack-available-june-19",
+              "locator": "Identified as a Walt Disney Records press release; THE SCORE and ORIGINAL SONGS sections credit Doyle, Mandel/Andrews and Mumford & Sons; full track list follows."
+            }
+          ]
+        },
+        {
+          "answer": "Encanto",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Disney attributes its eight original songs to Miranda.",
+          "sources": [
+            {
+              "url": "https://www.mtishows.com/disneys-frozen",
+              "locator": "Opening description explicitly identifies the original animated film songs as by Kristen Anderson-Lopez and Robert Lopez, separately from new stage songs."
+            },
+            {
+              "url": "https://d23.com/d23-video/the-magic-makers-behind-the-music-of-moana/",
+              "locator": "Intro text explicitly names Mark Mancina, Lin-Manuel Miranda and Opetaia Foa’i as the Moana music team; text inspected, not unplayed video."
+            },
+            {
+              "url": "https://www.disney.com.au/news/disney-encanto-home-is-where-the-magic-lives",
+              "locator": "Paragraph beginning It was the obvious: Miranda created the eight original songs."
+            },
+            {
+              "url": "https://www.awn.com/news/brave-soundtrack-available-june-19",
+              "locator": "Identified as a Walt Disney Records press release; THE SCORE and ORIGINAL SONGS sections credit Doyle, Mandel/Andrews and Mumford & Sons; full track list follows."
+            }
+          ]
+        },
+        {
+          "answer": "Brave",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "WDR’s press release credits other songwriters and Doyle, not the Lopez pair.",
+          "sources": [
+            {
+              "url": "https://www.mtishows.com/disneys-frozen",
+              "locator": "Opening description explicitly identifies the original animated film songs as by Kristen Anderson-Lopez and Robert Lopez, separately from new stage songs."
+            },
+            {
+              "url": "https://d23.com/d23-video/the-magic-makers-behind-the-music-of-moana/",
+              "locator": "Intro text explicitly names Mark Mancina, Lin-Manuel Miranda and Opetaia Foa’i as the Moana music team; text inspected, not unplayed video."
+            },
+            {
+              "url": "https://www.disney.com.au/news/disney-encanto-home-is-where-the-magic-lives",
+              "locator": "Paragraph beginning It was the obvious: Miranda created the eight original songs."
+            },
+            {
+              "url": "https://www.awn.com/news/brave-soundtrack-available-june-19",
+              "locator": "Identified as a Walt Disney Records press release; THE SCORE and ORIGINAL SONGS sections credit Doyle, Mandel/Andrews and Mumford & Sons; full track list follows."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 164,
+    "hash": "de9c649773a20d89e88c32009443c91f979829074dca25953c80b8ab3700c6da",
+    "questionSnapshot": {
+      "id": 164,
+      "question": "Who sang the main English lead vocals of 'Circle of Life' in The Lion King (1994)?",
+      "answers": [
+        "Carmen Twillie",
+        "Elton John",
+        "Hans Zimmer",
+        "Lebo M"
+      ],
+      "difficulty": "medium",
+      "category": "music"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged both actual alternative performers: Elton John has a separate pop recording and Lebo M sings the African opening. WDR track 1 splits Twillie from African vocals; main English lead and 1994 film scope exclude those interpretations. Zimmer is not in the track vocal list.",
+    "verification": {
+      "context": "Who sang the main English lead vocals of 'Circle of Life' in The Lion King (1994)?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Track 1 credits Twillie as performer of the film version.",
+        "sources": [
+          {
+            "url": "https://disney.go.com/disneyrecords/Soundtracks/LionKing/index.html",
+            "locator": "Track 1 credits Carmen Twillie and separately Lebo M African vocals; track 11 is Elton John’s separate Circle of Life recording."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged both actual alternative performers: Elton John has a separate pop recording and Lebo M sings the African opening. WDR track 1 splits Twillie from African vocals; main English lead and 1994 film scope exclude those interpretations. Zimmer is not in the track vocal list."
+      },
+      "options": [
+        {
+          "answer": "Carmen Twillie",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Track 1 credits Twillie as performer of the film version.",
+          "sources": [
+            {
+              "url": "https://disney.go.com/disneyrecords/Soundtracks/LionKing/index.html",
+              "locator": "Track 1 credits Carmen Twillie and separately Lebo M African vocals; track 11 is Elton John’s separate Circle of Life recording."
+            }
+          ]
+        },
+        {
+          "answer": "Elton John",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "John performs the separate pop track 11, not the film’s main English lead.",
+          "sources": [
+            {
+              "url": "https://disney.go.com/disneyrecords/Soundtracks/LionKing/index.html",
+              "locator": "Track 1 credits Carmen Twillie and separately Lebo M African vocals; track 11 is Elton John’s separate Circle of Life recording."
+            }
+          ]
+        },
+        {
+          "answer": "Hans Zimmer",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not among the track 1 vocal credits.",
+          "sources": [
+            {
+              "url": "https://disney.go.com/disneyrecords/Soundtracks/LionKing/index.html",
+              "locator": "Track 1 credits Carmen Twillie and separately Lebo M African vocals; track 11 is Elton John’s separate Circle of Life recording."
+            }
+          ]
+        },
+        {
+          "answer": "Lebo M",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Credited separately for African vocals, not the main English lead.",
+          "sources": [
+            {
+              "url": "https://disney.go.com/disneyrecords/Soundtracks/LionKing/index.html",
+              "locator": "Track 1 credits Carmen Twillie and separately Lebo M African vocals; track 11 is Elton John’s separate Circle of Life recording."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 165,
+    "hash": "5833a16111127f226b07b2359a51c79798710db0bd6590bf6a127f9a95a7a325",
+    "questionSnapshot": {
+      "id": 165,
+      "question": "In what Disney film does the song 'I'll Make a Man Out of You' appear?",
+      "answers": [
+        "Mulan",
+        "Hercules",
+        "Tarzan",
+        "The Lion King"
+      ],
+      "difficulty": "medium",
+      "category": "music"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged song reuse across the four films. WDR names the Mulan training song; the complete released song lists for Hercules, Tarzan and Lion King exclude it. Hercules English WDR catalog is inspected through its vocal sequence, not the Japanese release returned by initial search.",
+    "verification": {
+      "context": "In what Disney film does the song 'I'll Make a Man Out of You' appear?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "WDR lists the song on Mulan’s original soundtrack.",
+        "sources": [
+          {
+            "url": "https://disney.go.com/disneyrecords/mulan/index.html",
+            "locator": "Film soundtrack song list includes I’ll Make a Man Out of You; credits Wilder/Zippel and Osmond/Salonga."
+          },
+          {
+            "url": "https://www.qobuz.com/us-en/album/hercules-alan-menken-disney-hercules-cast/kyhyjkyhcxhkc",
+            "locator": "Walt Disney Records 1997 English soundtrack; vocal tracks 1–12 list Gospel Truth, Go the Distance, One Last Hope, Zero to Hero, I Won’t Say and A Star Is Born, with reprises; remaining tracks designated score."
+          },
+          {
+            "url": "https://music.apple.com/es/album/tarzan-original-motion-picture-soundtrack/1437333655?l=en",
+            "locator": "Walt Disney Records 1999 soundtrack, complete 14-track listing; five original songs and reprises, with score tracks; no Mulan training song."
+          },
+          {
+            "url": "https://disney.go.com/disneyrecords/Soundtracks/LionKing/index.html",
+            "locator": "Track 1 credits Carmen Twillie and separately Lebo M African vocals; track 11 is Elton John’s separate Circle of Life recording."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged song reuse across the four films. WDR names the Mulan training song; the complete released song lists for Hercules, Tarzan and Lion King exclude it. Hercules English WDR catalog is inspected through its vocal sequence, not the Japanese release returned by initial search."
+      },
+      "options": [
+        {
+          "answer": "Mulan",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "WDR lists the song on Mulan’s original soundtrack.",
+          "sources": [
+            {
+              "url": "https://disney.go.com/disneyrecords/mulan/index.html",
+              "locator": "Film soundtrack song list includes I’ll Make a Man Out of You; credits Wilder/Zippel and Osmond/Salonga."
+            },
+            {
+              "url": "https://www.qobuz.com/us-en/album/hercules-alan-menken-disney-hercules-cast/kyhyjkyhcxhkc",
+              "locator": "Walt Disney Records 1997 English soundtrack; vocal tracks 1–12 list Gospel Truth, Go the Distance, One Last Hope, Zero to Hero, I Won’t Say and A Star Is Born, with reprises; remaining tracks designated score."
+            },
+            {
+              "url": "https://music.apple.com/es/album/tarzan-original-motion-picture-soundtrack/1437333655?l=en",
+              "locator": "Walt Disney Records 1999 soundtrack, complete 14-track listing; five original songs and reprises, with score tracks; no Mulan training song."
+            },
+            {
+              "url": "https://disney.go.com/disneyrecords/Soundtracks/LionKing/index.html",
+              "locator": "Track 1 credits Carmen Twillie and separately Lebo M African vocals; track 11 is Elton John’s separate Circle of Life recording."
+            }
+          ]
+        },
+        {
+          "answer": "Hercules",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "Its complete original vocal track list contains different songs, not this training number.",
+          "sources": [
+            {
+              "url": "https://disney.go.com/disneyrecords/mulan/index.html",
+              "locator": "Film soundtrack song list includes I’ll Make a Man Out of You; credits Wilder/Zippel and Osmond/Salonga."
+            },
+            {
+              "url": "https://www.qobuz.com/us-en/album/hercules-alan-menken-disney-hercules-cast/kyhyjkyhcxhkc",
+              "locator": "Walt Disney Records 1997 English soundtrack; vocal tracks 1–12 list Gospel Truth, Go the Distance, One Last Hope, Zero to Hero, I Won’t Say and A Star Is Born, with reprises; remaining tracks designated score."
+            },
+            {
+              "url": "https://music.apple.com/es/album/tarzan-original-motion-picture-soundtrack/1437333655?l=en",
+              "locator": "Walt Disney Records 1999 soundtrack, complete 14-track listing; five original songs and reprises, with score tracks; no Mulan training song."
+            },
+            {
+              "url": "https://disney.go.com/disneyrecords/Soundtracks/LionKing/index.html",
+              "locator": "Track 1 credits Carmen Twillie and separately Lebo M African vocals; track 11 is Elton John’s separate Circle of Life recording."
+            }
+          ]
+        },
+        {
+          "answer": "Tarzan",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "Its complete 14-track soundtrack has different original songs and reprises.",
+          "sources": [
+            {
+              "url": "https://disney.go.com/disneyrecords/mulan/index.html",
+              "locator": "Film soundtrack song list includes I’ll Make a Man Out of You; credits Wilder/Zippel and Osmond/Salonga."
+            },
+            {
+              "url": "https://www.qobuz.com/us-en/album/hercules-alan-menken-disney-hercules-cast/kyhyjkyhcxhkc",
+              "locator": "Walt Disney Records 1997 English soundtrack; vocal tracks 1–12 list Gospel Truth, Go the Distance, One Last Hope, Zero to Hero, I Won’t Say and A Star Is Born, with reprises; remaining tracks designated score."
+            },
+            {
+              "url": "https://music.apple.com/es/album/tarzan-original-motion-picture-soundtrack/1437333655?l=en",
+              "locator": "Walt Disney Records 1999 soundtrack, complete 14-track listing; five original songs and reprises, with score tracks; no Mulan training song."
+            },
+            {
+              "url": "https://disney.go.com/disneyrecords/Soundtracks/LionKing/index.html",
+              "locator": "Track 1 credits Carmen Twillie and separately Lebo M African vocals; track 11 is Elton John’s separate Circle of Life recording."
+            }
+          ]
+        },
+        {
+          "answer": "The Lion King",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "WDR’s complete song list for this film does not contain the Mulan training number.",
+          "sources": [
+            {
+              "url": "https://disney.go.com/disneyrecords/mulan/index.html",
+              "locator": "Film soundtrack song list includes I’ll Make a Man Out of You; credits Wilder/Zippel and Osmond/Salonga."
+            },
+            {
+              "url": "https://www.qobuz.com/us-en/album/hercules-alan-menken-disney-hercules-cast/kyhyjkyhcxhkc",
+              "locator": "Walt Disney Records 1997 English soundtrack; vocal tracks 1–12 list Gospel Truth, Go the Distance, One Last Hope, Zero to Hero, I Won’t Say and A Star Is Born, with reprises; remaining tracks designated score."
+            },
+            {
+              "url": "https://music.apple.com/es/album/tarzan-original-motion-picture-soundtrack/1437333655?l=en",
+              "locator": "Walt Disney Records 1999 soundtrack, complete 14-track listing; five original songs and reprises, with score tracks; no Mulan training song."
+            },
+            {
+              "url": "https://disney.go.com/disneyrecords/Soundtracks/LionKing/index.html",
+              "locator": "Track 1 credits Carmen Twillie and separately Lebo M African vocals; track 11 is Elton John’s separate Circle of Life recording."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 167,
+    "hash": "05bea1de7692271b400001fc037c54fbd68a1e6ba6b1978e7a8ee2a683218895",
+    "questionSnapshot": {
+      "id": 167,
+      "question": "The song 'It's a Small World' was originally written for which event before becoming a Disney park attraction?",
+      "answers": [
+        "The 1964 New York World's Fair",
+        "The 1962 Seattle World's Fair",
+        "The 1958 Brussels World's Fair",
+        "The 1967 Montreal World's Fair"
+      ],
+      "difficulty": "hard",
+      "category": "music"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged whether the attraction existed before the song or a different fair fits. The song was commissioned for the fair attraction, which was moved to Disneyland in 1966. Both official accounts specify New York 1964–65, ruling out all other named fairs.",
+    "verification": {
+      "context": "The song 'It's a Small World' was originally written for which event before becoming a Disney park attraction?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Both official histories place the original commission at the 1964–65 New York fair.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/its-a-small-world/",
+            "locator": "Opening: attraction moved from 1964–65 New York World’s Fair; paragraph credits Richard M. and Robert B. Sherman with its repeated multilingual song."
+          },
+          {
+            "url": "https://disneyland.disney.go.com/en_CA/attractions/disneyland/its-a-small-world/",
+            "locator": "One Song, Many Languages and Disney History, After All sections: Sherman brothers song commission and 1964–1965 New York fair origin before Disneyland in 1966."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged whether the attraction existed before the song or a different fair fits. The song was commissioned for the fair attraction, which was moved to Disneyland in 1966. Both official accounts specify New York 1964–65, ruling out all other named fairs."
+      },
+      "options": [
+        {
+          "answer": "The 1964 New York World's Fair",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Both official histories place the original commission at the 1964–65 New York fair.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/its-a-small-world/",
+              "locator": "Opening: attraction moved from 1964–65 New York World’s Fair; paragraph credits Richard M. and Robert B. Sherman with its repeated multilingual song."
+            },
+            {
+              "url": "https://disneyland.disney.go.com/en_CA/attractions/disneyland/its-a-small-world/",
+              "locator": "One Song, Many Languages and Disney History, After All sections: Sherman brothers song commission and 1964–1965 New York fair origin before Disneyland in 1966."
+            }
+          ]
+        },
+        {
+          "answer": "The 1962 Seattle World's Fair",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Seattle 1962 is a different event, not the documented origin.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/its-a-small-world/",
+              "locator": "Opening: attraction moved from 1964–65 New York World’s Fair; paragraph credits Richard M. and Robert B. Sherman with its repeated multilingual song."
+            },
+            {
+              "url": "https://disneyland.disney.go.com/en_CA/attractions/disneyland/its-a-small-world/",
+              "locator": "One Song, Many Languages and Disney History, After All sections: Sherman brothers song commission and 1964–1965 New York fair origin before Disneyland in 1966."
+            }
+          ]
+        },
+        {
+          "answer": "The 1958 Brussels World's Fair",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Brussels 1958 is a different event, not the documented origin.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/its-a-small-world/",
+              "locator": "Opening: attraction moved from 1964–65 New York World’s Fair; paragraph credits Richard M. and Robert B. Sherman with its repeated multilingual song."
+            },
+            {
+              "url": "https://disneyland.disney.go.com/en_CA/attractions/disneyland/its-a-small-world/",
+              "locator": "One Song, Many Languages and Disney History, After All sections: Sherman brothers song commission and 1964–1965 New York fair origin before Disneyland in 1966."
+            }
+          ]
+        },
+        {
+          "answer": "The 1967 Montreal World's Fair",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Montreal 1967 is a different event, later than the documented debut.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/its-a-small-world/",
+              "locator": "Opening: attraction moved from 1964–65 New York World’s Fair; paragraph credits Richard M. and Robert B. Sherman with its repeated multilingual song."
+            },
+            {
+              "url": "https://disneyland.disney.go.com/en_CA/attractions/disneyland/its-a-small-world/",
+              "locator": "One Song, Many Languages and Disney History, After All sections: Sherman brothers song commission and 1964–1965 New York fair origin before Disneyland in 1966."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 168,
+    "hash": "9330564fc50a4af052142695e0966cc8bc1a8b9fb7b191e637d639f1a867d058",
+    "questionSnapshot": {
+      "id": 168,
+      "question": "Which songwriting duo wrote 'It's a Small World' and numerous other Disney classics?",
+      "answers": [
+        "The Sherman Brothers",
+        "Menken and Ashman",
+        "Lopez and Anderson-Lopez",
+        "John and Rice"
+      ],
+      "difficulty": "hard",
+      "category": "music"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged all three real Disney songwriting pairs: authorship is an explicit Richard/Robert Sherman attribution. Shortened the correct option to remove the explanatory-length clue; the other pairs are not alternate names for the brothers.",
+    "verification": {
+      "context": "Which songwriting duo wrote 'It's a Small World' and numerous other Disney classics?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Both official sources explicitly name Richard and Robert Sherman.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/its-a-small-world/",
+            "locator": "Opening: attraction moved from 1964–65 New York World’s Fair; paragraph credits Richard M. and Robert B. Sherman with its repeated multilingual song."
+          },
+          {
+            "url": "https://disneyland.disney.go.com/en_CA/attractions/disneyland/its-a-small-world/",
+            "locator": "One Song, Many Languages and Disney History, After All sections: Sherman brothers song commission and 1964–1965 New York fair origin before Disneyland in 1966."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged all three real Disney songwriting pairs: authorship is an explicit Richard/Robert Sherman attribution. Shortened the correct option to remove the explanatory-length clue; the other pairs are not alternate names for the brothers."
+      },
+      "options": [
+        {
+          "answer": "The Sherman Brothers",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Both official sources explicitly name Richard and Robert Sherman.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/its-a-small-world/",
+              "locator": "Opening: attraction moved from 1964–65 New York World’s Fair; paragraph credits Richard M. and Robert B. Sherman with its repeated multilingual song."
+            },
+            {
+              "url": "https://disneyland.disney.go.com/en_CA/attractions/disneyland/its-a-small-world/",
+              "locator": "One Song, Many Languages and Disney History, After All sections: Sherman brothers song commission and 1964–1965 New York fair origin before Disneyland in 1966."
+            }
+          ]
+        },
+        {
+          "answer": "Menken and Ashman",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the named author pair of this song.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/its-a-small-world/",
+              "locator": "Opening: attraction moved from 1964–65 New York World’s Fair; paragraph credits Richard M. and Robert B. Sherman with its repeated multilingual song."
+            },
+            {
+              "url": "https://disneyland.disney.go.com/en_CA/attractions/disneyland/its-a-small-world/",
+              "locator": "One Song, Many Languages and Disney History, After All sections: Sherman brothers song commission and 1964–1965 New York fair origin before Disneyland in 1966."
+            }
+          ]
+        },
+        {
+          "answer": "Lopez and Anderson-Lopez",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the named author pair of this song.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/its-a-small-world/",
+              "locator": "Opening: attraction moved from 1964–65 New York World’s Fair; paragraph credits Richard M. and Robert B. Sherman with its repeated multilingual song."
+            },
+            {
+              "url": "https://disneyland.disney.go.com/en_CA/attractions/disneyland/its-a-small-world/",
+              "locator": "One Song, Many Languages and Disney History, After All sections: Sherman brothers song commission and 1964–1965 New York fair origin before Disneyland in 1966."
+            }
+          ]
+        },
+        {
+          "answer": "John and Rice",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the named author pair of this song.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/its-a-small-world/",
+              "locator": "Opening: attraction moved from 1964–65 New York World’s Fair; paragraph credits Richard M. and Robert B. Sherman with its repeated multilingual song."
+            },
+            {
+              "url": "https://disneyland.disney.go.com/en_CA/attractions/disneyland/its-a-small-world/",
+              "locator": "One Song, Many Languages and Disney History, After All sections: Sherman brothers song commission and 1964–1965 New York fair origin before Disneyland in 1966."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 169,
+    "hash": "777e10555f460f2b6dfd854c06b20c23c8271b7c7f2b5abfae74cb464fdf2ce6",
+    "questionSnapshot": {
+      "id": 169,
+      "question": "At which year's Academy Awards ceremony did 'When You Wish Upon a Star' from Pinocchio win Best Original Song?",
+      "answers": [
+        "1941",
+        "1940",
+        "1942",
+        "1945"
+      ],
+      "difficulty": "hard",
+      "category": "music"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Rechecked the underlying premise against the ceremony header and actual song winner entry. Film year 1940 is deliberately a distractor; the award ceremony was in 1941. 1942/1945 do not fit. This is a distinct ceremony-date fact from questions identifying the winning song or film.",
+    "verification": {
+      "context": "At which year's Academy Awards ceremony did 'When You Wish Upon a Star' from Pinocchio win Best Original Song?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The ceremony was held February 27, 1941.",
+        "sources": [
+          {
+            "url": "https://www.oscars.org/oscars/ceremonies/1941",
+            "locator": "Header dates ceremony February 27, 1941, honoring 1940 films; Music (Song) winner and Pinocchio two-win film listing."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the underlying premise against the ceremony header and actual song winner entry. Film year 1940 is deliberately a distractor; the award ceremony was in 1941. 1942/1945 do not fit. This is a distinct ceremony-date fact from questions identifying the winning song or film."
+      },
+      "options": [
+        {
+          "answer": "1941",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "The ceremony was held February 27, 1941.",
+          "sources": [
+            {
+              "url": "https://www.oscars.org/oscars/ceremonies/1941",
+              "locator": "Header dates ceremony February 27, 1941, honoring 1940 films; Music (Song) winner and Pinocchio two-win film listing."
+            }
+          ]
+        },
+        {
+          "answer": "1940",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "1940 is the film/eligibility year, not the ceremony year.",
+          "sources": [
+            {
+              "url": "https://www.oscars.org/oscars/ceremonies/1941",
+              "locator": "Header dates ceremony February 27, 1941, honoring 1940 films; Music (Song) winner and Pinocchio two-win film listing."
+            }
+          ]
+        },
+        {
+          "answer": "1942",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "The Academy dates this win to the preceding ceremony in 1941.",
+          "sources": [
+            {
+              "url": "https://www.oscars.org/oscars/ceremonies/1941",
+              "locator": "Header dates ceremony February 27, 1941, honoring 1940 films; Music (Song) winner and Pinocchio two-win film listing."
+            }
+          ]
+        },
+        {
+          "answer": "1945",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "The Academy dates this win four years earlier.",
+          "sources": [
+            {
+              "url": "https://www.oscars.org/oscars/ceremonies/1941",
+              "locator": "Header dates ceremony February 27, 1941, honoring 1940 films; Music (Song) winner and Pinocchio two-win film listing."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 171,
+    "hash": "37967adcb8692a20856883edfc534eda994f2d7b7b8ee31462920b99b2ffcc34",
+    "questionSnapshot": {
+      "id": 171,
+      "question": "In the original Toy Story (1995), who is Woody's owner?",
+      "answers": [
+        "Andy",
+        "Sid",
+        "Bonnie",
+        "Al"
+      ],
+      "difficulty": "easy",
+      "category": "pixar"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged Bonnie because she really becomes Woody’s owner in a sequel. The final wording pins the original 1995 film and Andy’s ownership, excluding later ownership, Sid’s temporary captivity and Al’s theft.",
+    "verification": {
+      "context": "In the original Toy Story (1995), who is Woody's owner?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Woody is Andy’s favorite toy in the explicitly scoped 1995 film.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/toy-story",
+            "locator": "Characters: Woody/Andy identify ownership; Sid and Sid’s House identify the toy-torturing neighbor; The World / Pizza Planet identifies space-themed restaurant."
+          },
+          {
+            "url": "https://d23.com/a-to-z/toy-story-film/",
+            "locator": "Release paragraph: November 22, 1995. Opening identifies Andy’s favorite toy Woody."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged Bonnie because she really becomes Woody’s owner in a sequel. The final wording pins the original 1995 film and Andy’s ownership, excluding later ownership, Sid’s temporary captivity and Al’s theft."
+      },
+      "options": [
+        {
+          "answer": "Andy",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Woody is Andy’s favorite toy in the explicitly scoped 1995 film.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/toy-story",
+              "locator": "Characters: Woody/Andy identify ownership; Sid and Sid’s House identify the toy-torturing neighbor; The World / Pizza Planet identifies space-themed restaurant."
+            },
+            {
+              "url": "https://d23.com/a-to-z/toy-story-film/",
+              "locator": "Release paragraph: November 22, 1995. Opening identifies Andy’s favorite toy Woody."
+            }
+          ]
+        },
+        {
+          "answer": "Sid",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "The toy-abusing neighbor, not Woody’s owner.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/toy-story",
+              "locator": "Characters: Woody/Andy identify ownership; Sid and Sid’s House identify the toy-torturing neighbor; The World / Pizza Planet identifies space-themed restaurant."
+            },
+            {
+              "url": "https://d23.com/a-to-z/toy-story-film/",
+              "locator": "Release paragraph: November 22, 1995. Opening identifies Andy’s favorite toy Woody."
+            }
+          ]
+        },
+        {
+          "answer": "Bonnie",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Later owner is outside the original-film scope; Andy is the explicitly identified original owner.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/toy-story",
+              "locator": "Characters: Woody/Andy identify ownership; Sid and Sid’s House identify the toy-torturing neighbor; The World / Pizza Planet identifies space-themed restaurant."
+            },
+            {
+              "url": "https://d23.com/a-to-z/toy-story-film/",
+              "locator": "Release paragraph: November 22, 1995. Opening identifies Andy’s favorite toy Woody."
+            }
+          ]
+        },
+        {
+          "answer": "Al",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the owner identified by the original-film account.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/toy-story",
+              "locator": "Characters: Woody/Andy identify ownership; Sid and Sid’s House identify the toy-torturing neighbor; The World / Pizza Planet identifies space-themed restaurant."
+            },
+            {
+              "url": "https://d23.com/a-to-z/toy-story-film/",
+              "locator": "Release paragraph: November 22, 1995. Opening identifies Andy’s favorite toy Woody."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 172,
+    "hash": "73abb651c25f357047f81f413620dbc0cdd99c9bc6994ca87793b8b935144ad2",
+    "questionSnapshot": {
+      "id": 172,
+      "question": "What is the name of the rat who dreams of being a chef in Ratatouille?",
+      "answers": [
+        "Remy",
+        "Emile",
+        "Gusteau",
+        "Linguini"
+      ],
+      "difficulty": "easy",
+      "category": "pixar"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged Emile because he is also a rat and supports Remy. Pixar explicitly contrasts his general appetite with Remy’s chef ambition. Gusteau and Linguini fail the rat identity, not merely the ambition clause.",
+    "verification": {
+      "context": "What is the name of the rat who dreams of being a chef in Ratatouille?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Synopsis singles out Remy as the aspiring rat chef.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/ratatouille",
+            "locator": "Synopsis and Remy/Emile/Gusteau/Linguini character profiles; Gusteau profile identifies book and Ego downgrade; Chefs identifies Horst and Lalo as kitchen staff."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged Emile because he is also a rat and supports Remy. Pixar explicitly contrasts his general appetite with Remy’s chef ambition. Gusteau and Linguini fail the rat identity, not merely the ambition clause."
+      },
+      "options": [
+        {
+          "answer": "Remy",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Synopsis singles out Remy as the aspiring rat chef.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/ratatouille",
+              "locator": "Synopsis and Remy/Emile/Gusteau/Linguini character profiles; Gusteau profile identifies book and Ego downgrade; Chefs identifies Horst and Lalo as kitchen staff."
+            }
+          ]
+        },
+        {
+          "answer": "Emile",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Profile distinguishes the food-loving brother from Remy’s culinary ambition.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/ratatouille",
+              "locator": "Synopsis and Remy/Emile/Gusteau/Linguini character profiles; Gusteau profile identifies book and Ego downgrade; Chefs identifies Horst and Lalo as kitchen staff."
+            }
+          ]
+        },
+        {
+          "answer": "Gusteau",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Human culinary hero, not the aspiring rat.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/ratatouille",
+              "locator": "Synopsis and Remy/Emile/Gusteau/Linguini character profiles; Gusteau profile identifies book and Ego downgrade; Chefs identifies Horst and Lalo as kitchen staff."
+            }
+          ]
+        },
+        {
+          "answer": "Linguini",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Human garbage boy and Remy’s partner, not the rat.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/ratatouille",
+              "locator": "Synopsis and Remy/Emile/Gusteau/Linguini character profiles; Gusteau profile identifies book and Ego downgrade; Chefs identifies Horst and Lalo as kitchen staff."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 173,
+    "hash": "e5a7130f6e976da7ed6fbae1de17cb5c57c1b0562edd42b86a46dd245e6f1b60",
+    "questionSnapshot": {
+      "id": 173,
+      "question": "In Finding Nemo, where does Nemo end up after being captured?",
+      "answers": [
+        "A dentist's fish tank in Sydney, Australia",
+        "An aquarium in Tokyo, Japan",
+        "A pet store in London, England",
+        "A research lab in California"
+      ],
+      "difficulty": "easy",
+      "category": "pixar"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged research-lab confusion with the later Finding Dory institute. D23 explicitly states captured Nemo’s dentist tank overlooks Sydney harbor, so all three institution/country alternatives fail. Address question 479 adds street-number recall and is not a reverse destination question.",
+    "verification": {
+      "context": "In Finding Nemo, where does Nemo end up after being captured?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Official synopsis explicitly locates the captured Nemo in a Sydney dentist aquarium.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/finding-nemo-film/",
+            "locator": "Opening explicitly identifies Sydney harbor dentist tank and Dory as a Regal Blue Tang; cast list separates Nigel/Gill/Bloat."
+          },
+          {
+            "url": "https://www.pixar.com/finding-nemo",
+            "locator": "Synopsis and The Tank describe dentist aquarium; Nigel profile identifies friendly pelican; Gill and Tank Gang profiles distinguish fish."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged research-lab confusion with the later Finding Dory institute. D23 explicitly states captured Nemo’s dentist tank overlooks Sydney harbor, so all three institution/country alternatives fail. Address question 479 adds street-number recall and is not a reverse destination question."
+      },
+      "options": [
+        {
+          "answer": "A dentist's fish tank in Sydney, Australia",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Official synopsis explicitly locates the captured Nemo in a Sydney dentist aquarium.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/finding-nemo-film/",
+              "locator": "Opening explicitly identifies Sydney harbor dentist tank and Dory as a Regal Blue Tang; cast list separates Nigel/Gill/Bloat."
+            },
+            {
+              "url": "https://www.pixar.com/finding-nemo",
+              "locator": "Synopsis and The Tank describe dentist aquarium; Nigel profile identifies friendly pelican; Gill and Tank Gang profiles distinguish fish."
+            }
+          ]
+        },
+        {
+          "answer": "An aquarium in Tokyo, Japan",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Different institution and country from the stated capture destination.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/finding-nemo-film/",
+              "locator": "Opening explicitly identifies Sydney harbor dentist tank and Dory as a Regal Blue Tang; cast list separates Nigel/Gill/Bloat."
+            },
+            {
+              "url": "https://www.pixar.com/finding-nemo",
+              "locator": "Synopsis and The Tank describe dentist aquarium; Nigel profile identifies friendly pelican; Gill and Tank Gang profiles distinguish fish."
+            }
+          ]
+        },
+        {
+          "answer": "A pet store in London, England",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Different institution and country from the stated capture destination.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/finding-nemo-film/",
+              "locator": "Opening explicitly identifies Sydney harbor dentist tank and Dory as a Regal Blue Tang; cast list separates Nigel/Gill/Bloat."
+            },
+            {
+              "url": "https://www.pixar.com/finding-nemo",
+              "locator": "Synopsis and The Tank describe dentist aquarium; Nigel profile identifies friendly pelican; Gill and Tank Gang profiles distinguish fish."
+            }
+          ]
+        },
+        {
+          "answer": "A research lab in California",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Different institution and country from the stated capture destination.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/finding-nemo-film/",
+              "locator": "Opening explicitly identifies Sydney harbor dentist tank and Dory as a Regal Blue Tang; cast list separates Nigel/Gill/Bloat."
+            },
+            {
+              "url": "https://www.pixar.com/finding-nemo",
+              "locator": "Synopsis and The Tank describe dentist aquarium; Nigel profile identifies friendly pelican; Gill and Tank Gang profiles distinguish fish."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 174,
+    "hash": "bf5f26ed0f1fa1a93249ead582f797dc749f74ac1c8fc2d7d4441497a986ecd4",
+    "questionSnapshot": {
+      "id": 174,
+      "question": "What type of fish is Dory in Finding Nemo?",
+      "answers": [
+        "Blue tang",
+        "Clownfish",
+        "Goldfish",
+        "Angelfish"
+      ],
+      "difficulty": "easy",
+      "category": "pixar"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged confusing Nemo’s species or treating Blue as merely a color: primary sources explicitly say Regal Blue Tang. Clownfish, goldfish and angelfish are distinct types, not synonyms.",
+    "verification": {
+      "context": "What type of fish is Dory in Finding Nemo?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Both primary profiles identify Dory as a blue tang.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/finding-nemo-film/",
+            "locator": "Opening explicitly identifies Sydney harbor dentist tank and Dory as a Regal Blue Tang; cast list separates Nigel/Gill/Bloat."
+          },
+          {
+            "url": "https://www.pixar.com/finding-dory",
+            "locator": "Synopsis and Dory profile identify blue tang and California institute; The World / Marine Life Institute calls MLI the Jewel of Morro Bay."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged confusing Nemo’s species or treating Blue as merely a color: primary sources explicitly say Regal Blue Tang. Clownfish, goldfish and angelfish are distinct types, not synonyms."
+      },
+      "options": [
+        {
+          "answer": "Blue tang",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Both primary profiles identify Dory as a blue tang.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/finding-nemo-film/",
+              "locator": "Opening explicitly identifies Sydney harbor dentist tank and Dory as a Regal Blue Tang; cast list separates Nigel/Gill/Bloat."
+            },
+            {
+              "url": "https://www.pixar.com/finding-dory",
+              "locator": "Synopsis and Dory profile identify blue tang and California institute; The World / Marine Life Institute calls MLI the Jewel of Morro Bay."
+            }
+          ]
+        },
+        {
+          "answer": "Clownfish",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Nemo/Marlin’s type, not the species explicitly assigned to Dory.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/finding-nemo-film/",
+              "locator": "Opening explicitly identifies Sydney harbor dentist tank and Dory as a Regal Blue Tang; cast list separates Nigel/Gill/Bloat."
+            },
+            {
+              "url": "https://www.pixar.com/finding-dory",
+              "locator": "Synopsis and Dory profile identify blue tang and California institute; The World / Marine Life Institute calls MLI the Jewel of Morro Bay."
+            }
+          ]
+        },
+        {
+          "answer": "Goldfish",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "A distinct fish type, excluded by Dory’s explicit blue-tang identity.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/finding-nemo-film/",
+              "locator": "Opening explicitly identifies Sydney harbor dentist tank and Dory as a Regal Blue Tang; cast list separates Nigel/Gill/Bloat."
+            },
+            {
+              "url": "https://www.pixar.com/finding-dory",
+              "locator": "Synopsis and Dory profile identify blue tang and California institute; The World / Marine Life Institute calls MLI the Jewel of Morro Bay."
+            }
+          ]
+        },
+        {
+          "answer": "Angelfish",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "A distinct fish type, excluded by Dory’s explicit blue-tang identity.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/finding-nemo-film/",
+              "locator": "Opening explicitly identifies Sydney harbor dentist tank and Dory as a Regal Blue Tang; cast list separates Nigel/Gill/Bloat."
+            },
+            {
+              "url": "https://www.pixar.com/finding-dory",
+              "locator": "Synopsis and Dory profile identify blue tang and California institute; The World / Marine Life Institute calls MLI the Jewel of Morro Bay."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 175,
+    "hash": "42446016df94d0064234cd2d70b3c65363b77293f05daacc44593bc1d7fb959e",
+    "questionSnapshot": {
+      "id": 175,
+      "question": "In The Incredibles, what is Mr. Incredible's real name?",
+      "answers": [
+        "Bob Parr",
+        "Bill Parr",
+        "Ben Parr",
+        "Brad Parr"
+      ],
+      "difficulty": "easy",
+      "category": "pixar"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Tried all three plausible Parr first names against the explicit Mr. Incredible identity; only Bob matches. Superpower question 634 tests a different attribute.",
+    "verification": {
+      "context": "In The Incredibles, what is Mr. Incredible's real name?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Mr. Incredible’s profile names Bob Parr.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/the-incredibles",
+            "locator": "Mr. Incredible and Elastigirl profiles give Bob Parr and Helen Parr; The World / Nomanisan names villain’s island, with Syndrome profile confirming island lair."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tried all three plausible Parr first names against the explicit Mr. Incredible identity; only Bob matches. Superpower question 634 tests a different attribute."
+      },
+      "options": [
+        {
+          "answer": "Bob Parr",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Mr. Incredible’s profile names Bob Parr.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/the-incredibles",
+              "locator": "Mr. Incredible and Elastigirl profiles give Bob Parr and Helen Parr; The World / Nomanisan names villain’s island, with Syndrome profile confirming island lair."
+            }
+          ]
+        },
+        {
+          "answer": "Bill Parr",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Different first name from the explicitly identified Bob.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/the-incredibles",
+              "locator": "Mr. Incredible and Elastigirl profiles give Bob Parr and Helen Parr; The World / Nomanisan names villain’s island, with Syndrome profile confirming island lair."
+            }
+          ]
+        },
+        {
+          "answer": "Ben Parr",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Different first name from the explicitly identified Bob.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/the-incredibles",
+              "locator": "Mr. Incredible and Elastigirl profiles give Bob Parr and Helen Parr; The World / Nomanisan names villain’s island, with Syndrome profile confirming island lair."
+            }
+          ]
+        },
+        {
+          "answer": "Brad Parr",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Different first name from the explicitly identified Bob.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/the-incredibles",
+              "locator": "Mr. Incredible and Elastigirl profiles give Bob Parr and Helen Parr; The World / Nomanisan names villain’s island, with Syndrome profile confirming island lair."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 176,
+    "hash": "edcc354a4c1068279a352969292e239f2ca074f0ca51a48c5eed46c7732f8c9b",
+    "questionSnapshot": {
+      "id": 176,
+      "question": "What is the name of the main character in Brave?",
+      "answers": [
+        "Merida",
+        "Moana",
+        "Tiana",
+        "Mirabel"
+      ],
+      "difficulty": "easy",
+      "category": "pixar"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Tried the three other heroines as alternate protagonists; Pixar centers this film on Merida by name. Scottish-setting and horse-name questions require different facts.",
+    "verification": {
+      "context": "What is the name of the main character in Brave?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Synopsis and character profile center the story on Merida.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/brave",
+            "locator": "Synopsis and The Story of Brave / Merida profiles: heroine is Merida; mother Queen Elinor is transformed into a bear."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tried the three other heroines as alternate protagonists; Pixar centers this film on Merida by name. Scottish-setting and horse-name questions require different facts."
+      },
+      "options": [
+        {
+          "answer": "Merida",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Synopsis and character profile center the story on Merida.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/brave",
+              "locator": "Synopsis and The Story of Brave / Merida profiles: heroine is Merida; mother Queen Elinor is transformed into a bear."
+            }
+          ]
+        },
+        {
+          "answer": "Moana",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the protagonist named in Brave’s synopsis.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/brave",
+              "locator": "Synopsis and The Story of Brave / Merida profiles: heroine is Merida; mother Queen Elinor is transformed into a bear."
+            }
+          ]
+        },
+        {
+          "answer": "Tiana",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the protagonist named in Brave’s synopsis.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/brave",
+              "locator": "Synopsis and The Story of Brave / Merida profiles: heroine is Merida; mother Queen Elinor is transformed into a bear."
+            }
+          ]
+        },
+        {
+          "answer": "Mirabel",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the protagonist named in Brave’s synopsis.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/brave",
+              "locator": "Synopsis and The Story of Brave / Merida profiles: heroine is Merida; mother Queen Elinor is transformed into a bear."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 177,
+    "hash": "f817e831087db417a57facf99fce1531242a272704ed3fd3b2fdb2a6d2745247",
+    "questionSnapshot": {
+      "id": 177,
+      "question": "In Up, what is the name of the elderly man who floats his house with balloons?",
+      "answers": [
+        "Carl Fredricksen",
+        "Charles Muntz",
+        "Russell Fredricksen",
+        "Ed Asner"
+      ],
+      "difficulty": "easy",
+      "category": "pixar"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged Muntz as another elderly man, Russell as a passenger, and Asner as the voice performer: question asks the character who owns and flies the house. Pixar names Carl Fredricksen and distinguishes the other characters.",
+    "verification": {
+      "context": "In Up, what is the name of the elderly man who floats his house with balloons?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Profile explicitly names Carl Fredricksen as the balloon-house adventurer.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/upfilm",
+            "locator": "A Dream of Adventure and Carl Fredricksen / Russell / Kevin / Dug / Charles F. Muntz profiles: balloon-house owner, explorer child, bird, dog and childhood hero are distinguished."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged Muntz as another elderly man, Russell as a passenger, and Asner as the voice performer: question asks the character who owns and flies the house. Pixar names Carl Fredricksen and distinguishes the other characters."
+      },
+      "options": [
+        {
+          "answer": "Carl Fredricksen",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Profile explicitly names Carl Fredricksen as the balloon-house adventurer.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/upfilm",
+              "locator": "A Dream of Adventure and Carl Fredricksen / Russell / Kevin / Dug / Charles F. Muntz profiles: balloon-house owner, explorer child, bird, dog and childhood hero are distinguished."
+            }
+          ]
+        },
+        {
+          "answer": "Charles Muntz",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Different character: the famous explorer Muntz.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/upfilm",
+              "locator": "A Dream of Adventure and Carl Fredricksen / Russell / Kevin / Dug / Charles F. Muntz profiles: balloon-house owner, explorer child, bird, dog and childhood hero are distinguished."
+            }
+          ]
+        },
+        {
+          "answer": "Russell Fredricksen",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Russell is the child stowaway; not the named elderly house owner.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/upfilm",
+              "locator": "A Dream of Adventure and Carl Fredricksen / Russell / Kevin / Dug / Charles F. Muntz profiles: balloon-house owner, explorer child, bird, dog and childhood hero are distinguished."
+            }
+          ]
+        },
+        {
+          "answer": "Ed Asner",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the character named as the house owner in the profile.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/upfilm",
+              "locator": "A Dream of Adventure and Carl Fredricksen / Russell / Kevin / Dug / Charles F. Muntz profiles: balloon-house owner, explorer child, bird, dog and childhood hero are distinguished."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 178,
+    "hash": "6abbb22d2fe078a7b88b8888ae4a1cdc81d7b42ee6e006eb05703e330b234556",
+    "questionSnapshot": {
+      "id": 178,
+      "question": "In Monsters, Inc., what is the name of the one-eyed green monster?",
+      "answers": [
+        "Mike Wazowski",
+        "Sulley",
+        "Randall",
+        "Roz"
+      ],
+      "difficulty": "easy",
+      "category": "pixar"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged the one-eye clue carefully: Celia is also one-eyed, but is not listed. The combined green/one-eyed description explicitly matches Mike; the three listed character portraits and profiles do not. This is an option-bounded answer, not a claim that no other one-eyed monster exists.",
+    "verification": {
+      "context": "In Monsters, Inc., what is the name of the one-eyed green monster?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar explicitly describes Mike as green and one-eyed.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/monsters-university",
+            "locator": "Mike Wazowski profile explicitly says green one-eyed monster. Oozma Kappa profile and Field Trip describe Mike/Sulley joining the OK group; ROR and PNK profiles distinguish rival houses."
+          },
+          {
+            "url": "https://www.pixar.com/monsters-inc",
+            "locator": "Mike Wazowski profile and named character portraits; Sulley, Randall Boggs and Roz profiles identify different characters; Celia is also one-eyed but is not among the four options."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged the one-eye clue carefully: Celia is also one-eyed, but is not listed. The combined green/one-eyed description explicitly matches Mike; the three listed character portraits and profiles do not. This is an option-bounded answer, not a claim that no other one-eyed monster exists."
+      },
+      "options": [
+        {
+          "answer": "Mike Wazowski",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Pixar explicitly describes Mike as green and one-eyed.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/monsters-university",
+              "locator": "Mike Wazowski profile explicitly says green one-eyed monster. Oozma Kappa profile and Field Trip describe Mike/Sulley joining the OK group; ROR and PNK profiles distinguish rival houses."
+            },
+            {
+              "url": "https://www.pixar.com/monsters-inc",
+              "locator": "Mike Wazowski profile and named character portraits; Sulley, Randall Boggs and Roz profiles identify different characters; Celia is also one-eyed but is not among the four options."
+            }
+          ]
+        },
+        {
+          "answer": "Sulley",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "A distinct character in the named portraits, not Mike.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/monsters-university",
+              "locator": "Mike Wazowski profile explicitly says green one-eyed monster. Oozma Kappa profile and Field Trip describe Mike/Sulley joining the OK group; ROR and PNK profiles distinguish rival houses."
+            },
+            {
+              "url": "https://www.pixar.com/monsters-inc",
+              "locator": "Mike Wazowski profile and named character portraits; Sulley, Randall Boggs and Roz profiles identify different characters; Celia is also one-eyed but is not among the four options."
+            }
+          ]
+        },
+        {
+          "answer": "Randall",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "A distinct character in the named portraits, not Mike.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/monsters-university",
+              "locator": "Mike Wazowski profile explicitly says green one-eyed monster. Oozma Kappa profile and Field Trip describe Mike/Sulley joining the OK group; ROR and PNK profiles distinguish rival houses."
+            },
+            {
+              "url": "https://www.pixar.com/monsters-inc",
+              "locator": "Mike Wazowski profile and named character portraits; Sulley, Randall Boggs and Roz profiles identify different characters; Celia is also one-eyed but is not among the four options."
+            }
+          ]
+        },
+        {
+          "answer": "Roz",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "A distinct character in the named portraits, not Mike.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/monsters-university",
+              "locator": "Mike Wazowski profile explicitly says green one-eyed monster. Oozma Kappa profile and Field Trip describe Mike/Sulley joining the OK group; ROR and PNK profiles distinguish rival houses."
+            },
+            {
+              "url": "https://www.pixar.com/monsters-inc",
+              "locator": "Mike Wazowski profile and named character portraits; Sulley, Randall Boggs and Roz profiles identify different characters; Celia is also one-eyed but is not among the four options."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 179,
+    "hash": "278e9605d2afead100a28366b6cf30671b1f0cef5c508d82308a411ff6c9ecc2",
+    "questionSnapshot": {
+      "id": 179,
+      "question": "In Cars, what is Lightning McQueen's racing number?",
+      "answers": [
+        "95",
+        "51",
+        "43",
+        "7"
+      ],
+      "difficulty": "easy",
+      "category": "pixar"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Tried every numeric alternative; exact unique racing identifier 95 excludes 51, 43 and 7. Independent D23 number-origin discussion corroborates the official character profile.",
+    "verification": {
+      "context": "In Cars, what is Lightning McQueen's racing number?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Both primary accounts assign the exact number 95.",
+        "sources": [
+          {
+            "url": "https://cars.disney.com/",
+            "locator": "Lightning McQueen character profile explicitly identifies number 95."
+          },
+          {
+            "url": "https://d23.com/have-you-spotted-these-9-easter-eggs-in-the-cars-universe/",
+            "locator": "Lightning’s Number section states 95 refers to the year 1995; corroborates exact number independently of character homepage."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tried every numeric alternative; exact unique racing identifier 95 excludes 51, 43 and 7. Independent D23 number-origin discussion corroborates the official character profile."
+      },
+      "options": [
+        {
+          "answer": "95",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Both primary accounts assign the exact number 95.",
+          "sources": [
+            {
+              "url": "https://cars.disney.com/",
+              "locator": "Lightning McQueen character profile explicitly identifies number 95."
+            },
+            {
+              "url": "https://d23.com/have-you-spotted-these-9-easter-eggs-in-the-cars-universe/",
+              "locator": "Lightning’s Number section states 95 refers to the year 1995; corroborates exact number independently of character homepage."
+            }
+          ]
+        },
+        {
+          "answer": "51",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Different numeric identifier from the stated 95.",
+          "sources": [
+            {
+              "url": "https://cars.disney.com/",
+              "locator": "Lightning McQueen character profile explicitly identifies number 95."
+            },
+            {
+              "url": "https://d23.com/have-you-spotted-these-9-easter-eggs-in-the-cars-universe/",
+              "locator": "Lightning’s Number section states 95 refers to the year 1995; corroborates exact number independently of character homepage."
+            }
+          ]
+        },
+        {
+          "answer": "43",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Different numeric identifier from the stated 95.",
+          "sources": [
+            {
+              "url": "https://cars.disney.com/",
+              "locator": "Lightning McQueen character profile explicitly identifies number 95."
+            },
+            {
+              "url": "https://d23.com/have-you-spotted-these-9-easter-eggs-in-the-cars-universe/",
+              "locator": "Lightning’s Number section states 95 refers to the year 1995; corroborates exact number independently of character homepage."
+            }
+          ]
+        },
+        {
+          "answer": "7",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Different numeric identifier from the stated 95.",
+          "sources": [
+            {
+              "url": "https://cars.disney.com/",
+              "locator": "Lightning McQueen character profile explicitly identifies number 95."
+            },
+            {
+              "url": "https://d23.com/have-you-spotted-these-9-easter-eggs-in-the-cars-universe/",
+              "locator": "Lightning’s Number section states 95 refers to the year 1995; corroborates exact number independently of character homepage."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 181,
+    "hash": "008ef114dcf6b7a71e76d3d1e3999c713e51e39a591874b68c216d18acaee36c",
+    "questionSnapshot": {
+      "id": 181,
+      "question": "In Coco, what holiday is the film centered around?",
+      "answers": [
+        "Día de los Muertos (Day of the Dead)",
+        "Christmas",
+        "Halloween",
+        "El Día de los Reyes"
+      ],
+      "difficulty": "easy",
+      "category": "pixar"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged Halloween because both involve skeleton imagery. The film’s ofrenda/bridge rules and cemetery celebration explicitly center Day of the Dead, not Halloween, Christmas or Three Kings Day. The question concerns the central holiday, not a claim that characters never celebrate another holiday.",
+    "verification": {
+      "context": "In Coco, what holiday is the film centered around?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Holiday and ofrenda sections identify Day of the Dead as the central celebration.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/coco",
+            "locator": "Héctor, Santa Cecilia, Cemetery, Marigold Bridge and Las Ofrendas sections establish Day of the Dead setting; Ernesto de la Cruz profile explicitly calls him Miguel’s idol."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged Halloween because both involve skeleton imagery. The film’s ofrenda/bridge rules and cemetery celebration explicitly center Day of the Dead, not Halloween, Christmas or Three Kings Day. The question concerns the central holiday, not a claim that characters never celebrate another holiday."
+      },
+      "options": [
+        {
+          "answer": "Día de los Muertos (Day of the Dead)",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Holiday and ofrenda sections identify Day of the Dead as the central celebration.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/coco",
+              "locator": "Héctor, Santa Cecilia, Cemetery, Marigold Bridge and Las Ofrendas sections establish Day of the Dead setting; Ernesto de la Cruz profile explicitly calls him Miguel’s idol."
+            }
+          ]
+        },
+        {
+          "answer": "Christmas",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Different holiday from the celebration driving this story.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/coco",
+              "locator": "Héctor, Santa Cecilia, Cemetery, Marigold Bridge and Las Ofrendas sections establish Day of the Dead setting; Ernesto de la Cruz profile explicitly calls him Miguel’s idol."
+            }
+          ]
+        },
+        {
+          "answer": "Halloween",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Different holiday despite superficial skeleton/dead imagery.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/coco",
+              "locator": "Héctor, Santa Cecilia, Cemetery, Marigold Bridge and Las Ofrendas sections establish Day of the Dead setting; Ernesto de la Cruz profile explicitly calls him Miguel’s idol."
+            }
+          ]
+        },
+        {
+          "answer": "El Día de los Reyes",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Three Kings Day is distinct from the explicitly named Day of the Dead.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/coco",
+              "locator": "Héctor, Santa Cecilia, Cemetery, Marigold Bridge and Las Ofrendas sections establish Day of the Dead setting; Ernesto de la Cruz profile explicitly calls him Miguel’s idol."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 182,
+    "hash": "7ec5b471da36ccd9f2a1cb4d58bd009c67b0b1822d904ecc9c4fd3661fe0c0b1",
+    "questionSnapshot": {
+      "id": 182,
+      "question": "What year was the original Toy Story released?",
+      "answers": [
+        "1995",
+        "1997",
+        "1993",
+        "1999"
+      ],
+      "difficulty": "easy",
+      "category": "pixar"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged original release versus sequel or home-video date: D23 dates original theatrical release to November 1995. None of the three alternative years is that release year.",
+    "verification": {
+      "context": "What year was the original Toy Story released?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Official initial release date is November 22, 1995.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/toy-story-film/",
+            "locator": "Release paragraph: November 22, 1995. Opening identifies Andy’s favorite toy Woody."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged original release versus sequel or home-video date: D23 dates original theatrical release to November 1995. None of the three alternative years is that release year."
+      },
+      "options": [
+        {
+          "answer": "1995",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Official initial release date is November 22, 1995.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/toy-story-film/",
+              "locator": "Release paragraph: November 22, 1995. Opening identifies Andy’s favorite toy Woody."
+            }
+          ]
+        },
+        {
+          "answer": "1997",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Two years after the initial release.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/toy-story-film/",
+              "locator": "Release paragraph: November 22, 1995. Opening identifies Andy’s favorite toy Woody."
+            }
+          ]
+        },
+        {
+          "answer": "1993",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Two years before the initial release.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/toy-story-film/",
+              "locator": "Release paragraph: November 22, 1995. Opening identifies Andy’s favorite toy Woody."
+            }
+          ]
+        },
+        {
+          "answer": "1999",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Four years after the initial release.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/toy-story-film/",
+              "locator": "Release paragraph: November 22, 1995. Opening identifies Andy’s favorite toy Woody."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 183,
+    "hash": "1394cf68cce416491f3755489c70dec44a9e1c3410cf67240fc9acc18f1aede2",
+    "questionSnapshot": {
+      "id": 183,
+      "question": "In Toy Story, who is the main villain — the cruel kid next door?",
+      "answers": [
+        "Sid Phillips",
+        "Al McWhiggin",
+        "Stinky Pete",
+        "Lotso"
+      ],
+      "difficulty": "easy",
+      "category": "pixar"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged later-series villains: the cruel human neighbor is explicitly Sid Phillips in the original film. Al, Stinky Pete and Lotso do not have that identity. Moved to easy as prominent antagonist recall.",
+    "verification": {
+      "context": "In Toy Story, who is the main villain — the cruel kid next door?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The neighbor who tortures toys is named Sid Phillips.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/toy-story",
+            "locator": "Characters: Woody/Andy identify ownership; Sid and Sid’s House identify the toy-torturing neighbor; The World / Pizza Planet identifies space-themed restaurant."
+          },
+          {
+            "url": "https://d23.com/13-disney-characters-that-make-our-spines-tingle/",
+            "locator": "Sid Phillips from Toy Story subsection identifies full name, 1995 film and tormenting Andy’s toys."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged later-series villains: the cruel human neighbor is explicitly Sid Phillips in the original film. Al, Stinky Pete and Lotso do not have that identity. Moved to easy as prominent antagonist recall."
+      },
+      "options": [
+        {
+          "answer": "Sid Phillips",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "The neighbor who tortures toys is named Sid Phillips.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/toy-story",
+              "locator": "Characters: Woody/Andy identify ownership; Sid and Sid’s House identify the toy-torturing neighbor; The World / Pizza Planet identifies space-themed restaurant."
+            },
+            {
+              "url": "https://d23.com/13-disney-characters-that-make-our-spines-tingle/",
+              "locator": "Sid Phillips from Toy Story subsection identifies full name, 1995 film and tormenting Andy’s toys."
+            }
+          ]
+        },
+        {
+          "answer": "Al McWhiggin",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the original-film neighbor identified by the primary profiles.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/toy-story",
+              "locator": "Characters: Woody/Andy identify ownership; Sid and Sid’s House identify the toy-torturing neighbor; The World / Pizza Planet identifies space-themed restaurant."
+            },
+            {
+              "url": "https://d23.com/13-disney-characters-that-make-our-spines-tingle/",
+              "locator": "Sid Phillips from Toy Story subsection identifies full name, 1995 film and tormenting Andy’s toys."
+            }
+          ]
+        },
+        {
+          "answer": "Stinky Pete",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the original-film neighbor identified by the primary profiles.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/toy-story",
+              "locator": "Characters: Woody/Andy identify ownership; Sid and Sid’s House identify the toy-torturing neighbor; The World / Pizza Planet identifies space-themed restaurant."
+            },
+            {
+              "url": "https://d23.com/13-disney-characters-that-make-our-spines-tingle/",
+              "locator": "Sid Phillips from Toy Story subsection identifies full name, 1995 film and tormenting Andy’s toys."
+            }
+          ]
+        },
+        {
+          "answer": "Lotso",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the original-film neighbor identified by the primary profiles.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/toy-story",
+              "locator": "Characters: Woody/Andy identify ownership; Sid and Sid’s House identify the toy-torturing neighbor; The World / Pizza Planet identifies space-themed restaurant."
+            },
+            {
+              "url": "https://d23.com/13-disney-characters-that-make-our-spines-tingle/",
+              "locator": "Sid Phillips from Toy Story subsection identifies full name, 1995 film and tormenting Andy’s toys."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 184,
+    "hash": "49b0656344addde46c5dbafb86ec0ce2875a918a7bc49b848d5603357f5213a3",
+    "questionSnapshot": {
+      "id": 184,
+      "question": "In The Incredibles, what is Elastigirl's real name?",
+      "answers": [
+        "Helen Parr",
+        "Sarah Parr",
+        "Karen Parr",
+        "Lisa Parr"
+      ],
+      "difficulty": "medium",
+      "category": "pixar"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Tested the three alternative first names against Pixar’s explicit Elastigirl civilian identity; Helen is unique. Bob’s civilian identity is separate recall.",
+    "verification": {
+      "context": "In The Incredibles, what is Elastigirl's real name?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Elastigirl’s profile names Helen Parr.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/the-incredibles",
+            "locator": "Mr. Incredible and Elastigirl profiles give Bob Parr and Helen Parr; The World / Nomanisan names villain’s island, with Syndrome profile confirming island lair."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tested the three alternative first names against Pixar’s explicit Elastigirl civilian identity; Helen is unique. Bob’s civilian identity is separate recall."
+      },
+      "options": [
+        {
+          "answer": "Helen Parr",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Elastigirl’s profile names Helen Parr.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/the-incredibles",
+              "locator": "Mr. Incredible and Elastigirl profiles give Bob Parr and Helen Parr; The World / Nomanisan names villain’s island, with Syndrome profile confirming island lair."
+            }
+          ]
+        },
+        {
+          "answer": "Sarah Parr",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Different first name from the explicitly identified Helen.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/the-incredibles",
+              "locator": "Mr. Incredible and Elastigirl profiles give Bob Parr and Helen Parr; The World / Nomanisan names villain’s island, with Syndrome profile confirming island lair."
+            }
+          ]
+        },
+        {
+          "answer": "Karen Parr",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Different first name from the explicitly identified Helen.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/the-incredibles",
+              "locator": "Mr. Incredible and Elastigirl profiles give Bob Parr and Helen Parr; The World / Nomanisan names villain’s island, with Syndrome profile confirming island lair."
+            }
+          ]
+        },
+        {
+          "answer": "Lisa Parr",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Different first name from the explicitly identified Helen.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/the-incredibles",
+              "locator": "Mr. Incredible and Elastigirl profiles give Bob Parr and Helen Parr; The World / Nomanisan names villain’s island, with Syndrome profile confirming island lair."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 185,
+    "hash": "0ee757310e374ac04ddca5051d3c80354e062fb02cb97bf8fa46582df22601d5",
+    "questionSnapshot": {
+      "id": 185,
+      "question": "In Ratatouille, what is the name of the famous chef whose motto is 'Anyone can cook'?",
+      "answers": [
+        "Auguste Gusteau",
+        "Anton Ego",
+        "Skinner",
+        "Lalo"
+      ],
+      "difficulty": "medium",
+      "category": "pixar"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged Ego as another famous food authority and Skinner as head chef: Pixar names Gusteau as the Anyone Can Cook author, while assigning distinct critic/successor/staff roles to the alternatives.",
+    "verification": {
+      "context": "In Ratatouille, what is the name of the famous chef whose motto is 'Anyone can cook'?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Gusteau is explicitly the author of Anyone Can Cook and Remy’s inspiration.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/ratatouille",
+            "locator": "Synopsis and Remy/Emile/Gusteau/Linguini character profiles; Gusteau profile identifies book and Ego downgrade; Chefs identifies Horst and Lalo as kitchen staff."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged Ego as another famous food authority and Skinner as head chef: Pixar names Gusteau as the Anyone Can Cook author, while assigning distinct critic/successor/staff roles to the alternatives."
+      },
+      "options": [
+        {
+          "answer": "Auguste Gusteau",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Gusteau is explicitly the author of Anyone Can Cook and Remy’s inspiration.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/ratatouille",
+              "locator": "Synopsis and Remy/Emile/Gusteau/Linguini character profiles; Gusteau profile identifies book and Ego downgrade; Chefs identifies Horst and Lalo as kitchen staff."
+            }
+          ]
+        },
+        {
+          "answer": "Anton Ego",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "The food critic who downgraded the restaurant, not the author.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/ratatouille",
+              "locator": "Synopsis and Remy/Emile/Gusteau/Linguini character profiles; Gusteau profile identifies book and Ego downgrade; Chefs identifies Horst and Lalo as kitchen staff."
+            }
+          ]
+        },
+        {
+          "answer": "Skinner",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Successor head chef, not Gusteau or the author of the book.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/ratatouille",
+              "locator": "Synopsis and Remy/Emile/Gusteau/Linguini character profiles; Gusteau profile identifies book and Ego downgrade; Chefs identifies Horst and Lalo as kitchen staff."
+            }
+          ]
+        },
+        {
+          "answer": "Lalo",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "A member of the kitchen staff, not the identified author.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/ratatouille",
+              "locator": "Synopsis and Remy/Emile/Gusteau/Linguini character profiles; Gusteau profile identifies book and Ego downgrade; Chefs identifies Horst and Lalo as kitchen staff."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 186,
+    "hash": "644e9aff5679c95110ffe2828fb23899c982925814d29523c70b9aade7b363f8",
+    "questionSnapshot": {
+      "id": 186,
+      "question": "In Up, what is the name of the young Wilderness Explorer who accompanies Carl?",
+      "answers": [
+        "Russell",
+        "Kevin",
+        "Dug",
+        "Charles"
+      ],
+      "difficulty": "easy",
+      "category": "pixar"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged Kevin as a boy’s name and Charles as another explorer: the official profiles distinguish bird, adult and dog from the young Wilderness Explorer Russell. Calibrated to easy character recall.",
+    "verification": {
+      "context": "In Up, what is the name of the young Wilderness Explorer who accompanies Carl?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Russell’s profile identifies the child Wilderness Explorer.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/upfilm",
+            "locator": "A Dream of Adventure and Carl Fredricksen / Russell / Kevin / Dug / Charles F. Muntz profiles: balloon-house owner, explorer child, bird, dog and childhood hero are distinguished."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged Kevin as a boy’s name and Charles as another explorer: the official profiles distinguish bird, adult and dog from the young Wilderness Explorer Russell. Calibrated to easy character recall."
+      },
+      "options": [
+        {
+          "answer": "Russell",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Russell’s profile identifies the child Wilderness Explorer.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/upfilm",
+              "locator": "A Dream of Adventure and Carl Fredricksen / Russell / Kevin / Dug / Charles F. Muntz profiles: balloon-house owner, explorer child, bird, dog and childhood hero are distinguished."
+            }
+          ]
+        },
+        {
+          "answer": "Kevin",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "The bird, not the human explorer child.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/upfilm",
+              "locator": "A Dream of Adventure and Carl Fredricksen / Russell / Kevin / Dug / Charles F. Muntz profiles: balloon-house owner, explorer child, bird, dog and childhood hero are distinguished."
+            }
+          ]
+        },
+        {
+          "answer": "Dug",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "The dog, not the human explorer child.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/upfilm",
+              "locator": "A Dream of Adventure and Carl Fredricksen / Russell / Kevin / Dug / Charles F. Muntz profiles: balloon-house owner, explorer child, bird, dog and childhood hero are distinguished."
+            }
+          ]
+        },
+        {
+          "answer": "Charles",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "The adult explorer Muntz, not Russell.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/upfilm",
+              "locator": "A Dream of Adventure and Carl Fredricksen / Russell / Kevin / Dug / Charles F. Muntz profiles: balloon-house owner, explorer child, bird, dog and childhood hero are distinguished."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 188,
+    "hash": "c2f6a14a25740db7398dd0ef53b9953948250a21fb7caef901b2e3eab2f6c90a",
+    "questionSnapshot": {
+      "id": 188,
+      "question": "In Inside Out, what color represents the emotion Sadness?",
+      "answers": [
+        "Blue",
+        "Purple",
+        "Green",
+        "Gray"
+      ],
+      "difficulty": "easy",
+      "category": "pixar"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged purple glasses or gray mood language versus the character’s design color. The filmmaker report explicitly calls the character blue-hued. Purple, green and gray are not alternate readings of that stated color. Calibrated to easy.",
+    "verification": {
+      "context": "In Inside Out, what color represents the emotion Sadness?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "D23’s filmmaker report explicitly identifies Sadness as blue.",
+        "sources": [
+          {
+            "url": "https://d23.com/the-ins-and-outs-of-inside-out/",
+            "locator": "Filmmaker-panel report paragraph beginning The casting of Phyllis Smith identifies Sadness as the blue-hued emotion."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged purple glasses or gray mood language versus the character’s design color. The filmmaker report explicitly calls the character blue-hued. Purple, green and gray are not alternate readings of that stated color. Calibrated to easy."
+      },
+      "options": [
+        {
+          "answer": "Blue",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "D23’s filmmaker report explicitly identifies Sadness as blue.",
+          "sources": [
+            {
+              "url": "https://d23.com/the-ins-and-outs-of-inside-out/",
+              "locator": "Filmmaker-panel report paragraph beginning The casting of Phyllis Smith identifies Sadness as the blue-hued emotion."
+            }
+          ]
+        },
+        {
+          "answer": "Purple",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the color attributed to Sadness.",
+          "sources": [
+            {
+              "url": "https://d23.com/the-ins-and-outs-of-inside-out/",
+              "locator": "Filmmaker-panel report paragraph beginning The casting of Phyllis Smith identifies Sadness as the blue-hued emotion."
+            }
+          ]
+        },
+        {
+          "answer": "Green",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the color attributed to Sadness.",
+          "sources": [
+            {
+              "url": "https://d23.com/the-ins-and-outs-of-inside-out/",
+              "locator": "Filmmaker-panel report paragraph beginning The casting of Phyllis Smith identifies Sadness as the blue-hued emotion."
+            }
+          ]
+        },
+        {
+          "answer": "Gray",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the color attributed to Sadness.",
+          "sources": [
+            {
+              "url": "https://d23.com/the-ins-and-outs-of-inside-out/",
+              "locator": "Filmmaker-panel report paragraph beginning The casting of Phyllis Smith identifies Sadness as the blue-hued emotion."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 189,
+    "hash": "322aced1d0a00fb351ad3bcb95664ff0868ec54ec7b1c63e978a707c5d65d093",
+    "questionSnapshot": {
+      "id": 189,
+      "question": "Where are the toys taken before they plan an escape from Lotso in Toy Story 3?",
+      "answers": [
+        "Sunnyside Daycare",
+        "Bonnie's house",
+        "A museum",
+        "A toy store"
+      ],
+      "difficulty": "medium",
+      "category": "pixar"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Original wording could validly suggest Bonnie’s final home. Final wording instead asks the Lotso-controlled location from which they escape, explicitly Sunnyside in D23. House, museum and toy store cannot fit that episode. Avoided asking what daycare, which would make only one option grammatical.",
+    "verification": {
+      "context": "Where are the toys taken before they plan an escape from Lotso in Toy Story 3?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "D23 identifies Sunnyside as the center Lotso runs as a prison, from which the toys escape.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/toy-story-3-film/",
+            "locator": "Opening paragraphs: toys land at Sunnyside and try to escape; Lotso runs the center as a prison."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Original wording could validly suggest Bonnie’s final home. Final wording instead asks the Lotso-controlled location from which they escape, explicitly Sunnyside in D23. House, museum and toy store cannot fit that episode. Avoided asking what daycare, which would make only one option grammatical."
+      },
+      "options": [
+        {
+          "answer": "Sunnyside Daycare",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "D23 identifies Sunnyside as the center Lotso runs as a prison, from which the toys escape.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/toy-story-3-film/",
+              "locator": "Opening paragraphs: toys land at Sunnyside and try to escape; Lotso runs the center as a prison."
+            }
+          ]
+        },
+        {
+          "answer": "Bonnie's house",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Final new home is not the Lotso-controlled escape location specified here.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/toy-story-3-film/",
+              "locator": "Opening paragraphs: toys land at Sunnyside and try to escape; Lotso runs the center as a prison."
+            }
+          ]
+        },
+        {
+          "answer": "A museum",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the Lotso-controlled center identified in the synopsis.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/toy-story-3-film/",
+              "locator": "Opening paragraphs: toys land at Sunnyside and try to escape; Lotso runs the center as a prison."
+            }
+          ]
+        },
+        {
+          "answer": "A toy store",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the Lotso-controlled center identified in the synopsis.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/toy-story-3-film/",
+              "locator": "Opening paragraphs: toys land at Sunnyside and try to escape; Lotso runs the center as a prison."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 190,
+    "hash": "2392c8b61edf6617b85f05dce8efb6487ba99b24cfdca6468aaaebdb553e48d2",
+    "questionSnapshot": {
+      "id": 190,
+      "question": "In Finding Dory, where does Dory discover she grew up?",
+      "answers": [
+        "The Marine Life Institute in Morro Bay, California",
+        "The Great Barrier Reef in Australia",
+        "A coral reef in Hawaii",
+        "The Pacific Ocean near Japan"
+      ],
+      "difficulty": "medium",
+      "category": "pixar"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged later reef home versus childhood home and geographic alternatives. Pixar confirms MLI/Morro Bay/California, but not childhood by itself. Third-party film-dialogue transcription explicitly says born there; the independent plot account corroborates childhood pipe-pal and undertow separation. Direct studio screenplay unavailable: limitation retained rather than claiming the homepage alone proves childhood.",
+    "verification": {
+      "context": "In Finding Dory, where does Dory discover she grew up?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Institute childhood is explicit in reunion dialogue and corroborated by childhood pipe-pal/undertow account; Pixar supplies Morro Bay, California.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/finding-dory",
+            "locator": "Synopsis and Dory profile identify blue tang and California institute; The World / Marine Life Institute calls MLI the Jewel of Morro Bay."
+          },
+          {
+            "url": "https://www.scripts.com/script-pdf-body.php?id=8194",
+            "locator": "PDF page index 53 (printed page 54/67), reunion dialogue immediately after institute speaker announcement: parents identify MLI as where Dory was born. Third-party dialogue transcription, not an inspected studio screenplay."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Finding_Dory",
+            "locator": "Plot, institute/quarantine and Destiny paragraphs: Dory’s childhood pipe-pal and undertow separation establish that the institute was her childhood home. Secondary corroboration of transcript."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged later reef home versus childhood home and geographic alternatives. Pixar confirms MLI/Morro Bay/California, but not childhood by itself. Third-party film-dialogue transcription explicitly says born there; the independent plot account corroborates childhood pipe-pal and undertow separation. Direct studio screenplay unavailable: limitation retained rather than claiming the homepage alone proves childhood."
+      },
+      "options": [
+        {
+          "answer": "The Marine Life Institute in Morro Bay, California",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Institute childhood is explicit in reunion dialogue and corroborated by childhood pipe-pal/undertow account; Pixar supplies Morro Bay, California.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/finding-dory",
+              "locator": "Synopsis and Dory profile identify blue tang and California institute; The World / Marine Life Institute calls MLI the Jewel of Morro Bay."
+            },
+            {
+              "url": "https://www.scripts.com/script-pdf-body.php?id=8194",
+              "locator": "PDF page index 53 (printed page 54/67), reunion dialogue immediately after institute speaker announcement: parents identify MLI as where Dory was born. Third-party dialogue transcription, not an inspected studio screenplay."
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Finding_Dory",
+              "locator": "Plot, institute/quarantine and Destiny paragraphs: Dory’s childhood pipe-pal and undertow separation establish that the institute was her childhood home. Secondary corroboration of transcript."
+            }
+          ]
+        },
+        {
+          "answer": "The Great Barrier Reef in Australia",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Her later home with Marlin/Nemo, distinguished from institute childhood.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/finding-dory",
+              "locator": "Synopsis and Dory profile identify blue tang and California institute; The World / Marine Life Institute calls MLI the Jewel of Morro Bay."
+            },
+            {
+              "url": "https://www.scripts.com/script-pdf-body.php?id=8194",
+              "locator": "PDF page index 53 (printed page 54/67), reunion dialogue immediately after institute speaker announcement: parents identify MLI as where Dory was born. Third-party dialogue transcription, not an inspected studio screenplay."
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Finding_Dory",
+              "locator": "Plot, institute/quarantine and Destiny paragraphs: Dory’s childhood pipe-pal and undertow separation establish that the institute was her childhood home. Secondary corroboration of transcript."
+            }
+          ]
+        },
+        {
+          "answer": "A coral reef in Hawaii",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the childhood institute identified by dialogue and corroboration.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/finding-dory",
+              "locator": "Synopsis and Dory profile identify blue tang and California institute; The World / Marine Life Institute calls MLI the Jewel of Morro Bay."
+            },
+            {
+              "url": "https://www.scripts.com/script-pdf-body.php?id=8194",
+              "locator": "PDF page index 53 (printed page 54/67), reunion dialogue immediately after institute speaker announcement: parents identify MLI as where Dory was born. Third-party dialogue transcription, not an inspected studio screenplay."
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Finding_Dory",
+              "locator": "Plot, institute/quarantine and Destiny paragraphs: Dory’s childhood pipe-pal and undertow separation establish that the institute was her childhood home. Secondary corroboration of transcript."
+            }
+          ]
+        },
+        {
+          "answer": "The Pacific Ocean near Japan",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the childhood institute identified by dialogue and corroboration.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/finding-dory",
+              "locator": "Synopsis and Dory profile identify blue tang and California institute; The World / Marine Life Institute calls MLI the Jewel of Morro Bay."
+            },
+            {
+              "url": "https://www.scripts.com/script-pdf-body.php?id=8194",
+              "locator": "PDF page index 53 (printed page 54/67), reunion dialogue immediately after institute speaker announcement: parents identify MLI as where Dory was born. Third-party dialogue transcription, not an inspected studio screenplay."
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Finding_Dory",
+              "locator": "Plot, institute/quarantine and Destiny paragraphs: Dory’s childhood pipe-pal and undertow separation establish that the institute was her childhood home. Secondary corroboration of transcript."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 191,
+    "hash": "d65b0265e9c8c0da7ae8f8c92f2027dca35e4447889fdf07020dbd43b31040af",
+    "questionSnapshot": {
+      "id": 191,
+      "question": "In Brave, what does the spell Merida uses on her mother accidentally turn her into?",
+      "answers": [
+        "A bear",
+        "A deer",
+        "A wolf",
+        "A fox"
+      ],
+      "difficulty": "medium",
+      "category": "pixar"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged intention versus outcome: Merida intends to change her mother, but the bear transformation is unintended. The primary story summary explicitly identifies Elinor as a bear; deer, wolf and fox do not fit. Cake question 1309 tests the mechanism/food, a different fact.",
+    "verification": {
+      "context": "In Brave, what does the spell Merida uses on her mother accidentally turn her into?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Story of Brave explicitly says Elinor becomes a bear.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/brave",
+            "locator": "Synopsis and The Story of Brave / Merida profiles: heroine is Merida; mother Queen Elinor is transformed into a bear."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged intention versus outcome: Merida intends to change her mother, but the bear transformation is unintended. The primary story summary explicitly identifies Elinor as a bear; deer, wolf and fox do not fit. Cake question 1309 tests the mechanism/food, a different fact."
+      },
+      "options": [
+        {
+          "answer": "A bear",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "The Story of Brave explicitly says Elinor becomes a bear.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/brave",
+              "locator": "Synopsis and The Story of Brave / Merida profiles: heroine is Merida; mother Queen Elinor is transformed into a bear."
+            }
+          ]
+        },
+        {
+          "answer": "A deer",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Different animal from the explicitly described transformation.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/brave",
+              "locator": "Synopsis and The Story of Brave / Merida profiles: heroine is Merida; mother Queen Elinor is transformed into a bear."
+            }
+          ]
+        },
+        {
+          "answer": "A wolf",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Different animal from the explicitly described transformation.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/brave",
+              "locator": "Synopsis and The Story of Brave / Merida profiles: heroine is Merida; mother Queen Elinor is transformed into a bear."
+            }
+          ]
+        },
+        {
+          "answer": "A fox",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Different animal from the explicitly described transformation.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/brave",
+              "locator": "Synopsis and The Story of Brave / Merida profiles: heroine is Merida; mother Queen Elinor is transformed into a bear."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 192,
+    "hash": "a1bb9596a9241991bdcecfa559c87da2276056b59866686caf2ed0d7d7ef17a6",
+    "questionSnapshot": {
+      "id": 192,
+      "question": "In Monsters University, what is the name of the fraternity Mike and Sulley join?",
+      "answers": [
+        "Oozma Kappa (OK)",
+        "Roar Omega Roar (ROR)",
+        "Python Nu Kappa (PNK)",
+        "Eta Hiss Hiss (HSS)"
+      ],
+      "difficulty": "medium",
+      "category": "pixar"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged Sulley’s early association with elite ROR: the question asks the fraternity both Mike and Sulley join together. Pixar’s OK field trip explicitly includes them. Rival ROR and separate sororities cannot fit that shared membership.",
+    "verification": {
+      "context": "In Monsters University, what is the name of the fraternity Mike and Sulley join?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "OK and Field Trip sections explicitly connect the misfit group with Mike/Sulley.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/monsters-university",
+            "locator": "Mike Wazowski profile explicitly says green one-eyed monster. Oozma Kappa profile and Field Trip describe Mike/Sulley joining the OK group; ROR and PNK profiles distinguish rival houses."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged Sulley’s early association with elite ROR: the question asks the fraternity both Mike and Sulley join together. Pixar’s OK field trip explicitly includes them. Rival ROR and separate sororities cannot fit that shared membership."
+      },
+      "options": [
+        {
+          "answer": "Oozma Kappa (OK)",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "OK and Field Trip sections explicitly connect the misfit group with Mike/Sulley.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/monsters-university",
+              "locator": "Mike Wazowski profile explicitly says green one-eyed monster. Oozma Kappa profile and Field Trip describe Mike/Sulley joining the OK group; ROR and PNK profiles distinguish rival houses."
+            }
+          ]
+        },
+        {
+          "answer": "Roar Omega Roar (ROR)",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Elite rival house; not the OK group they join together.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/monsters-university",
+              "locator": "Mike Wazowski profile explicitly says green one-eyed monster. Oozma Kappa profile and Field Trip describe Mike/Sulley joining the OK group; ROR and PNK profiles distinguish rival houses."
+            }
+          ]
+        },
+        {
+          "answer": "Python Nu Kappa (PNK)",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "A different sorority, separately described by Pixar.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/monsters-university",
+              "locator": "Mike Wazowski profile explicitly says green one-eyed monster. Oozma Kappa profile and Field Trip describe Mike/Sulley joining the OK group; ROR and PNK profiles distinguish rival houses."
+            }
+          ]
+        },
+        {
+          "answer": "Eta Hiss Hiss (HSS)",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Different name and initials from the explicitly identified Oozma Kappa.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/monsters-university",
+              "locator": "Mike Wazowski profile explicitly says green one-eyed monster. Oozma Kappa profile and Field Trip describe Mike/Sulley joining the OK group; ROR and PNK profiles distinguish rival houses."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 193,
+    "hash": "0584f01926f56e52b8afd9414911e7053a97080b5ed3076361ef97c947f0f8e4",
+    "questionSnapshot": {
+      "id": 193,
+      "question": "In Finding Nemo, what is the name of the pelican who helps Marlin find Nemo?",
+      "answers": [
+        "Nigel",
+        "Gerald",
+        "Gill",
+        "Bloat"
+      ],
+      "difficulty": "medium",
+      "category": "pixar"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged Gerald as a possible different pelican rather than asserting every Gerald in the franchise is a sea lion. The helper/dentist-window bird is uniquely named Nigel by Pixar. Gill and Bloat are explicitly tank fish.",
+    "verification": {
+      "context": "In Finding Nemo, what is the name of the pelican who helps Marlin find Nemo?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar identifies Nigel as the dentist-window pelican; D23 confirms his name.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/finding-nemo",
+            "locator": "Synopsis and The Tank describe dentist aquarium; Nigel profile identifies friendly pelican; Gill and Tank Gang profiles distinguish fish."
+          },
+          {
+            "url": "https://d23.com/a-to-z/finding-nemo-film/",
+            "locator": "Opening explicitly identifies Sydney harbor dentist tank and Dory as a Regal Blue Tang; cast list separates Nigel/Gill/Bloat."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged Gerald as a possible different pelican rather than asserting every Gerald in the franchise is a sea lion. The helper/dentist-window bird is uniquely named Nigel by Pixar. Gill and Bloat are explicitly tank fish."
+      },
+      "options": [
+        {
+          "answer": "Nigel",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Pixar identifies Nigel as the dentist-window pelican; D23 confirms his name.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/finding-nemo",
+              "locator": "Synopsis and The Tank describe dentist aquarium; Nigel profile identifies friendly pelican; Gill and Tank Gang profiles distinguish fish."
+            },
+            {
+              "url": "https://d23.com/a-to-z/finding-nemo-film/",
+              "locator": "Opening explicitly identifies Sydney harbor dentist tank and Dory as a Regal Blue Tang; cast list separates Nigel/Gill/Bloat."
+            }
+          ]
+        },
+        {
+          "answer": "Gerald",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Not the named helper pelican in Pixar’s profile.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/finding-nemo",
+              "locator": "Synopsis and The Tank describe dentist aquarium; Nigel profile identifies friendly pelican; Gill and Tank Gang profiles distinguish fish."
+            },
+            {
+              "url": "https://d23.com/a-to-z/finding-nemo-film/",
+              "locator": "Opening explicitly identifies Sydney harbor dentist tank and Dory as a Regal Blue Tang; cast list separates Nigel/Gill/Bloat."
+            }
+          ]
+        },
+        {
+          "answer": "Gill",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "A tank fish and its leader, not the pelican.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/finding-nemo",
+              "locator": "Synopsis and The Tank describe dentist aquarium; Nigel profile identifies friendly pelican; Gill and Tank Gang profiles distinguish fish."
+            },
+            {
+              "url": "https://d23.com/a-to-z/finding-nemo-film/",
+              "locator": "Opening explicitly identifies Sydney harbor dentist tank and Dory as a Regal Blue Tang; cast list separates Nigel/Gill/Bloat."
+            }
+          ]
+        },
+        {
+          "answer": "Bloat",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "A Tank Gang fish, not the pelican.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/finding-nemo",
+              "locator": "Synopsis and The Tank describe dentist aquarium; Nigel profile identifies friendly pelican; Gill and Tank Gang profiles distinguish fish."
+            },
+            {
+              "url": "https://d23.com/a-to-z/finding-nemo-film/",
+              "locator": "Opening explicitly identifies Sydney harbor dentist tank and Dory as a Regal Blue Tang; cast list separates Nigel/Gill/Bloat."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 194,
+    "hash": "766648884df13f647fe0edb1c9b4464c6acb792dcfd8704b366bc5517cb54000",
+    "questionSnapshot": {
+      "id": 194,
+      "question": "In WALL-E, what does EVE stand for?",
+      "answers": [
+        "Extraterrestrial Vegetation Evaluator",
+        "Environmental Vegetation Explorer",
+        "Extra-Vehicular Explorer",
+        "Earth Vegetation Examiner"
+      ],
+      "difficulty": "medium",
+      "category": "pixar"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Tested every expanded acronym verbatim. Extra-Terrestrial and Extraterrestrial differ only in spelling style; the three alternative word sequences do not match the explicit designation.",
+    "verification": {
+      "context": "In WALL-E, what does EVE stand for?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Exact expanded designation in EVE’s profile; hyphenation does not change the words.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/wall-e",
+            "locator": "Characters / EVE profile spells out Extra-Terrestrial Vegetation Evaluator."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tested every expanded acronym verbatim. Extra-Terrestrial and Extraterrestrial differ only in spelling style; the three alternative word sequences do not match the explicit designation."
+      },
+      "options": [
+        {
+          "answer": "Extraterrestrial Vegetation Evaluator",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Exact expanded designation in EVE’s profile; hyphenation does not change the words.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/wall-e",
+              "locator": "Characters / EVE profile spells out Extra-Terrestrial Vegetation Evaluator."
+            }
+          ]
+        },
+        {
+          "answer": "Environmental Vegetation Explorer",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Different words from the explicit designation.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/wall-e",
+              "locator": "Characters / EVE profile spells out Extra-Terrestrial Vegetation Evaluator."
+            }
+          ]
+        },
+        {
+          "answer": "Extra-Vehicular Explorer",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Different words and omits Vegetation Evaluator.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/wall-e",
+              "locator": "Characters / EVE profile spells out Extra-Terrestrial Vegetation Evaluator."
+            }
+          ]
+        },
+        {
+          "answer": "Earth Vegetation Examiner",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Different words from the explicit designation.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/wall-e",
+              "locator": "Characters / EVE profile spells out Extra-Terrestrial Vegetation Evaluator."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 195,
+    "hash": "2e2de7ecce7e7c3fdadae22d858969a3ccfbcf8911500ed5f42422965bce1402",
+    "questionSnapshot": {
+      "id": 195,
+      "question": "In Coco, what is the full name of the famous musician Miguel idolizes?",
+      "answers": [
+        "Ernesto de la Cruz",
+        "Héctor Rivera",
+        "Chicharrón",
+        "Papá Julio"
+      ],
+      "difficulty": "medium",
+      "category": "pixar"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged Héctor as true songwriter and ancestor: those later revelations do not make him the celebrity Miguel idolizes at the outset. The Ernesto profile expressly names Miguel’s idol; Chicharrón and Julio are not that named identity.",
+    "verification": {
+      "context": "In Coco, what is the full name of the famous musician Miguel idolizes?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Ernesto profile explicitly identifies him as Miguel’s idol.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/coco",
+            "locator": "Héctor, Santa Cecilia, Cemetery, Marigold Bridge and Las Ofrendas sections establish Day of the Dead setting; Ernesto de la Cruz profile explicitly calls him Miguel’s idol."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged Héctor as true songwriter and ancestor: those later revelations do not make him the celebrity Miguel idolizes at the outset. The Ernesto profile expressly names Miguel’s idol; Chicharrón and Julio are not that named identity."
+      },
+      "options": [
+        {
+          "answer": "Ernesto de la Cruz",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Ernesto profile explicitly identifies him as Miguel’s idol.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/coco",
+              "locator": "Héctor, Santa Cecilia, Cemetery, Marigold Bridge and Las Ofrendas sections establish Day of the Dead setting; Ernesto de la Cruz profile explicitly calls him Miguel’s idol."
+            }
+          ]
+        },
+        {
+          "answer": "Héctor Rivera",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "The skeleton partner and later revealed ancestor, not the idol named in the profile.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/coco",
+              "locator": "Héctor, Santa Cecilia, Cemetery, Marigold Bridge and Las Ofrendas sections establish Day of the Dead setting; Ernesto de la Cruz profile explicitly calls him Miguel’s idol."
+            }
+          ]
+        },
+        {
+          "answer": "Chicharrón",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the explicitly named celebrity idol.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/coco",
+              "locator": "Héctor, Santa Cecilia, Cemetery, Marigold Bridge and Las Ofrendas sections establish Day of the Dead setting; Ernesto de la Cruz profile explicitly calls him Miguel’s idol."
+            }
+          ]
+        },
+        {
+          "answer": "Papá Julio",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the explicitly named celebrity idol.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/coco",
+              "locator": "Héctor, Santa Cecilia, Cemetery, Marigold Bridge and Las Ofrendas sections establish Day of the Dead setting; Ernesto de la Cruz profile explicitly calls him Miguel’s idol."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 196,
+    "hash": "577fc69e474e0a1b93c0b844c33bd507940a726db6e778018fa2dfe17f74c532",
+    "questionSnapshot": {
+      "id": 196,
+      "question": "In Toy Story, what is the name of the space-themed pizza restaurant that Woody and Buzz both visit?",
+      "answers": [
+        "Pizza Planet",
+        "Cosmic Pizza",
+        "Galaxy Slice",
+        "Star Pizza"
+      ],
+      "difficulty": "medium",
+      "category": "pixar"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged a merely generic pizza-place description: Pixar explicitly names Pizza Planet and its space theme; each alternative is a different proper name. Park ride question 2633 adds a real attraction association and is not restaurant-name recall in the film alone. Reduced hard to medium.",
+    "verification": {
+      "context": "In Toy Story, what is the name of the space-themed pizza restaurant that Woody and Buzz both visit?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pizza Planet section names the space-themed pizza parlor.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/toy-story",
+            "locator": "Characters: Woody/Andy identify ownership; Sid and Sid’s House identify the toy-torturing neighbor; The World / Pizza Planet identifies space-themed restaurant."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged a merely generic pizza-place description: Pixar explicitly names Pizza Planet and its space theme; each alternative is a different proper name. Park ride question 2633 adds a real attraction association and is not restaurant-name recall in the film alone. Reduced hard to medium."
+      },
+      "options": [
+        {
+          "answer": "Pizza Planet",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Pizza Planet section names the space-themed pizza parlor.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/toy-story",
+              "locator": "Characters: Woody/Andy identify ownership; Sid and Sid’s House identify the toy-torturing neighbor; The World / Pizza Planet identifies space-themed restaurant."
+            }
+          ]
+        },
+        {
+          "answer": "Cosmic Pizza",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not its explicitly identified proper name.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/toy-story",
+              "locator": "Characters: Woody/Andy identify ownership; Sid and Sid’s House identify the toy-torturing neighbor; The World / Pizza Planet identifies space-themed restaurant."
+            }
+          ]
+        },
+        {
+          "answer": "Galaxy Slice",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not its explicitly identified proper name.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/toy-story",
+              "locator": "Characters: Woody/Andy identify ownership; Sid and Sid’s House identify the toy-torturing neighbor; The World / Pizza Planet identifies space-themed restaurant."
+            }
+          ]
+        },
+        {
+          "answer": "Star Pizza",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not its explicitly identified proper name.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/toy-story",
+              "locator": "Characters: Woody/Andy identify ownership; Sid and Sid’s House identify the toy-torturing neighbor; The World / Pizza Planet identifies space-themed restaurant."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 197,
+    "hash": "544972a7ea3425f7aa8d6136334ae3a544d160f4c82ed7b469fb1ba86b07fbdc",
+    "questionSnapshot": {
+      "id": 197,
+      "question": "In A Bug's Life, what is the name of the grasshopper who leads the villain gang?",
+      "answers": [
+        "Hopper",
+        "Thumper",
+        "Molt",
+        "Grasshopper"
+      ],
+      "difficulty": "medium",
+      "category": "pixar"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged Molt as another named grasshopper and Thumper as a dangerous gang member. The source explicitly assigns leadership to Hopper and separates Molt. Grasshopper is the species, not the requested character name. Reduced hard to medium.",
+    "verification": {
+      "context": "In A Bug's Life, what is the name of the grasshopper who leads the villain gang?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "D23 explicitly names Hopper as gang leader.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/bugs-life-a-film/",
+            "locator": "Opening synopsis explicitly identifies Hopper as leader of extorting grasshoppers; cast separately names Molt."
+          },
+          {
+            "url": "https://www.pixar.com/a-bugs-life",
+            "locator": "Hopper, Molt and Hopper’s Hideout profiles distinguish leader from tagalong sibling."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged Molt as another named grasshopper and Thumper as a dangerous gang member. The source explicitly assigns leadership to Hopper and separates Molt. Grasshopper is the species, not the requested character name. Reduced hard to medium."
+      },
+      "options": [
+        {
+          "answer": "Hopper",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "D23 explicitly names Hopper as gang leader.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/bugs-life-a-film/",
+              "locator": "Opening synopsis explicitly identifies Hopper as leader of extorting grasshoppers; cast separately names Molt."
+            },
+            {
+              "url": "https://www.pixar.com/a-bugs-life",
+              "locator": "Hopper, Molt and Hopper’s Hideout profiles distinguish leader from tagalong sibling."
+            }
+          ]
+        },
+        {
+          "answer": "Thumper",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the explicitly identified leader Hopper.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/bugs-life-a-film/",
+              "locator": "Opening synopsis explicitly identifies Hopper as leader of extorting grasshoppers; cast separately names Molt."
+            },
+            {
+              "url": "https://www.pixar.com/a-bugs-life",
+              "locator": "Hopper, Molt and Hopper’s Hideout profiles distinguish leader from tagalong sibling."
+            }
+          ]
+        },
+        {
+          "answer": "Molt",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Pixar distinguishes tagalong brother Molt from Hopper.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/bugs-life-a-film/",
+              "locator": "Opening synopsis explicitly identifies Hopper as leader of extorting grasshoppers; cast separately names Molt."
+            },
+            {
+              "url": "https://www.pixar.com/a-bugs-life",
+              "locator": "Hopper, Molt and Hopper’s Hideout profiles distinguish leader from tagalong sibling."
+            }
+          ]
+        },
+        {
+          "answer": "Grasshopper",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "The insect type is not the character’s proper name Hopper.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/bugs-life-a-film/",
+              "locator": "Opening synopsis explicitly identifies Hopper as leader of extorting grasshoppers; cast separately names Molt."
+            },
+            {
+              "url": "https://www.pixar.com/a-bugs-life",
+              "locator": "Hopper, Molt and Hopper’s Hideout profiles distinguish leader from tagalong sibling."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 198,
+    "hash": "f4af63d55290cd5a380b15e0a3bbda9110beb5d6ecda3a387f6ec626fa4bc341",
+    "questionSnapshot": {
+      "id": 198,
+      "question": "In The Incredibles, what is the proper name of the island where Syndrome has his secret lair?",
+      "answers": [
+        "Nomanisan Island",
+        "Syndrome's Island",
+        "Omnidroid Base",
+        "Villain's Cove"
+      ],
+      "difficulty": "hard",
+      "category": "pixar"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged Syndrome’s Island as literally a true description. Final wording expressly asks the proper name, which Pixar labels Nomanisan. Omnidroid Base and Villain’s Cove are not that proper name.",
+    "verification": {
+      "context": "In The Incredibles, what is the proper name of the island where Syndrome has his secret lair?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The World section calls the island Nomanisan.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/the-incredibles",
+            "locator": "Mr. Incredible and Elastigirl profiles give Bob Parr and Helen Parr; The World / Nomanisan names villain’s island, with Syndrome profile confirming island lair."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged Syndrome’s Island as literally a true description. Final wording expressly asks the proper name, which Pixar labels Nomanisan. Omnidroid Base and Villain’s Cove are not that proper name."
+      },
+      "options": [
+        {
+          "answer": "Nomanisan Island",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "The World section calls the island Nomanisan.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/the-incredibles",
+              "locator": "Mr. Incredible and Elastigirl profiles give Bob Parr and Helen Parr; The World / Nomanisan names villain’s island, with Syndrome profile confirming island lair."
+            }
+          ]
+        },
+        {
+          "answer": "Syndrome's Island",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "A description of whose island it is, not the proper name now requested.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/the-incredibles",
+              "locator": "Mr. Incredible and Elastigirl profiles give Bob Parr and Helen Parr; The World / Nomanisan names villain’s island, with Syndrome profile confirming island lair."
+            }
+          ]
+        },
+        {
+          "answer": "Omnidroid Base",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "A base description, not the island’s proper name.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/the-incredibles",
+              "locator": "Mr. Incredible and Elastigirl profiles give Bob Parr and Helen Parr; The World / Nomanisan names villain’s island, with Syndrome profile confirming island lair."
+            }
+          ]
+        },
+        {
+          "answer": "Villain's Cove",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the proper name given in Pixar’s island section.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/the-incredibles",
+              "locator": "Mr. Incredible and Elastigirl profiles give Bob Parr and Helen Parr; The World / Nomanisan names villain’s island, with Syndrome profile confirming island lair."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 199,
+    "hash": "56fde2ee4c31ba2b7dfda265e986e482fc95334c39323ebb973b099dff04eb7e",
+    "questionSnapshot": {
+      "id": 199,
+      "question": "In Ratatouille, what is the full name of the food critic who gives Gusteau's restaurant a scathing review?",
+      "answers": [
+        "Anton Ego",
+        "Auguste Gusteau",
+        "Horst",
+        "Lalo"
+      ],
+      "difficulty": "medium",
+      "category": "pixar"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged whether any kitchen worker could review food: this asks the specific critic who gave the scathing restaurant review. Pixar attributes the downgrade to Anton Ego and identifies Gusteau/Horst/Lalo with different roles. Reduced hard to medium.",
+    "verification": {
+      "context": "In Ratatouille, what is the full name of the food critic who gives Gusteau's restaurant a scathing review?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Gusteau profile explicitly assigns the downgrade to critic Anton Ego.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/ratatouille",
+            "locator": "Synopsis and Remy/Emile/Gusteau/Linguini character profiles; Gusteau profile identifies book and Ego downgrade; Chefs identifies Horst and Lalo as kitchen staff."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged whether any kitchen worker could review food: this asks the specific critic who gave the scathing restaurant review. Pixar attributes the downgrade to Anton Ego and identifies Gusteau/Horst/Lalo with different roles. Reduced hard to medium."
+      },
+      "options": [
+        {
+          "answer": "Anton Ego",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Gusteau profile explicitly assigns the downgrade to critic Anton Ego.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/ratatouille",
+              "locator": "Synopsis and Remy/Emile/Gusteau/Linguini character profiles; Gusteau profile identifies book and Ego downgrade; Chefs identifies Horst and Lalo as kitchen staff."
+            }
+          ]
+        },
+        {
+          "answer": "Auguste Gusteau",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "The restaurant’s founder, not the critic who downgraded it.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/ratatouille",
+              "locator": "Synopsis and Remy/Emile/Gusteau/Linguini character profiles; Gusteau profile identifies book and Ego downgrade; Chefs identifies Horst and Lalo as kitchen staff."
+            }
+          ]
+        },
+        {
+          "answer": "Horst",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "A kitchen chef, not the explicitly identified critic.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/ratatouille",
+              "locator": "Synopsis and Remy/Emile/Gusteau/Linguini character profiles; Gusteau profile identifies book and Ego downgrade; Chefs identifies Horst and Lalo as kitchen staff."
+            }
+          ]
+        },
+        {
+          "answer": "Lalo",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "A kitchen chef, not the explicitly identified critic.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/ratatouille",
+              "locator": "Synopsis and Remy/Emile/Gusteau/Linguini character profiles; Gusteau profile identifies book and Ego downgrade; Chefs identifies Horst and Lalo as kitchen staff."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 202,
+    "hash": "ac2faa5a4f1e81a76b89d346636d5b7d2d65bfb17b71fd39106ca8c3480bf3d1",
+    "questionSnapshot": {
+      "id": 202,
+      "question": "What is the name of the snowman that Elsa and Anna built as children in Frozen?",
+      "answers": [
+        "Olaf",
+        "Marshmallow",
+        "Frosty",
+        "Snowflake"
+      ],
+      "difficulty": "easy",
+      "category": "movies"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged animated adult Olaf versus the inanimate childhood model. D23 explicitly links the sisters’ first snowman to the name Olaf. Marshmallow is a different creation; Frosty and Snowflake are not this childhood snowman’s name.",
+    "verification": {
+      "context": "What is the name of the snowman that Elsa and Anna built as children in Frozen?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Items 1 and 6 identify the sisters’ childhood snowman as Olaf.",
+        "sources": [
+          {
+            "url": "https://d23.com/times-anna-and-elsa-melted-our-hearts/",
+            "locator": "Numbered items 1 and 6 explicitly identify the snowman built by young Anna/Elsa as Olaf."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged animated adult Olaf versus the inanimate childhood model. D23 explicitly links the sisters’ first snowman to the name Olaf. Marshmallow is a different creation; Frosty and Snowflake are not this childhood snowman’s name."
+      },
+      "options": [
+        {
+          "answer": "Olaf",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Items 1 and 6 identify the sisters’ childhood snowman as Olaf.",
+          "sources": [
+            {
+              "url": "https://d23.com/times-anna-and-elsa-melted-our-hearts/",
+              "locator": "Numbered items 1 and 6 explicitly identify the snowman built by young Anna/Elsa as Olaf."
+            }
+          ]
+        },
+        {
+          "answer": "Marshmallow",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the snowman identified in that childhood scene.",
+          "sources": [
+            {
+              "url": "https://d23.com/times-anna-and-elsa-melted-our-hearts/",
+              "locator": "Numbered items 1 and 6 explicitly identify the snowman built by young Anna/Elsa as Olaf."
+            }
+          ]
+        },
+        {
+          "answer": "Frosty",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the snowman identified in that childhood scene.",
+          "sources": [
+            {
+              "url": "https://d23.com/times-anna-and-elsa-melted-our-hearts/",
+              "locator": "Numbered items 1 and 6 explicitly identify the snowman built by young Anna/Elsa as Olaf."
+            }
+          ]
+        },
+        {
+          "answer": "Snowflake",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the snowman identified in that childhood scene.",
+          "sources": [
+            {
+              "url": "https://d23.com/times-anna-and-elsa-melted-our-hearts/",
+              "locator": "Numbered items 1 and 6 explicitly identify the snowman built by young Anna/Elsa as Olaf."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 203,
+    "hash": "ccb5c84520a1992e88e9124022bb320957729746aa96f31ebd19620254d56ffc",
+    "questionSnapshot": {
+      "id": 203,
+      "question": "What is Flynn Rider's real name in Tangled?",
+      "answers": [
+        "Eugene Fitzherbert",
+        "Frederick Rider",
+        "Eugene Hunter",
+        "Francis Flynn"
+      ],
+      "difficulty": "easy",
+      "category": "movies"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Tried every full name, including Eugene with a wrong surname. D23’s explicit real-name sentence establishes Eugene Fitzherbert uniquely; Maximus question 231 tests the horse identity instead.",
+    "verification": {
+      "context": "What is Flynn Rider's real name in Tangled?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "D23 explicitly gives Eugene Fitzherbert as Flynn’s real name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/tangled-film/",
+            "locator": "Final sentence: Flynn’s real name is Eugene Fitzherbert."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tried every full name, including Eugene with a wrong surname. D23’s explicit real-name sentence establishes Eugene Fitzherbert uniquely; Maximus question 231 tests the horse identity instead."
+      },
+      "options": [
+        {
+          "answer": "Eugene Fitzherbert",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "D23 explicitly gives Eugene Fitzherbert as Flynn’s real name.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/tangled-film/",
+              "locator": "Final sentence: Flynn’s real name is Eugene Fitzherbert."
+            }
+          ]
+        },
+        {
+          "answer": "Frederick Rider",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Different full name from the identity explicitly given.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/tangled-film/",
+              "locator": "Final sentence: Flynn’s real name is Eugene Fitzherbert."
+            }
+          ]
+        },
+        {
+          "answer": "Eugene Hunter",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Correct first name but wrong surname.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/tangled-film/",
+              "locator": "Final sentence: Flynn’s real name is Eugene Fitzherbert."
+            }
+          ]
+        },
+        {
+          "answer": "Francis Flynn",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Different full name from the identity explicitly given.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/tangled-film/",
+              "locator": "Final sentence: Flynn’s real name is Eugene Fitzherbert."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 204,
+    "hash": "43a32f583e63ab57706867da68c1820b3254618a401dbf74d35e8147ac1b4beb",
+    "questionSnapshot": {
+      "id": 204,
+      "question": "In Zootopia, what is Judy Hopps' job?",
+      "answers": [
+        "Police officer",
+        "Firefighter",
+        "Teacher",
+        "Journalist"
+      ],
+      "difficulty": "easy",
+      "category": "movies"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged temporary parking duty as a different job: it is still police work. D23 explicitly identifies Officer Judy on the police force; firefighter, teacher and journalist fail that stated profession.",
+    "verification": {
+      "context": "In Zootopia, what is Judy Hopps' job?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Opening synopsis explicitly identifies Judy as an officer on the police force.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/zootopia-film/",
+            "locator": "Opening synopsis identifies Officer Judy Hopps, first bunny on police force."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged temporary parking duty as a different job: it is still police work. D23 explicitly identifies Officer Judy on the police force; firefighter, teacher and journalist fail that stated profession."
+      },
+      "options": [
+        {
+          "answer": "Police officer",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Opening synopsis explicitly identifies Judy as an officer on the police force.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/zootopia-film/",
+              "locator": "Opening synopsis identifies Officer Judy Hopps, first bunny on police force."
+            }
+          ]
+        },
+        {
+          "answer": "Firefighter",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Different profession from her stated job.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/zootopia-film/",
+              "locator": "Opening synopsis identifies Officer Judy Hopps, first bunny on police force."
+            }
+          ]
+        },
+        {
+          "answer": "Teacher",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Different profession from her stated job.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/zootopia-film/",
+              "locator": "Opening synopsis identifies Officer Judy Hopps, first bunny on police force."
+            }
+          ]
+        },
+        {
+          "answer": "Journalist",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Different profession from her stated job.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/zootopia-film/",
+              "locator": "Opening synopsis identifies Officer Judy Hopps, first bunny on police force."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 205,
+    "hash": "9ee3868cd6bd3815d97781084585d7afa9c544e2d9125745e52a65e07d47f26e",
+    "questionSnapshot": {
+      "id": 205,
+      "question": "In Beauty and the Beast (1991), what color is Belle's gown during the ballroom dance?",
+      "answers": [
+        "Yellow",
+        "Blue",
+        "Pink",
+        "Red"
+      ],
+      "difficulty": "easy",
+      "category": "movies"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged Belle’s other clothing and live-action differences. Final scope specifies 1991 and the ballroom scene; D23 distinguishes the iconic yellow dress from the blue village dress. Pink/red are not the identified ballroom color.",
+    "verification": {
+      "context": "In Beauty and the Beast (1991), what color is Belle's gown during the ballroom dance?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "D23 identifies the iconic yellow dress from the 1991 animation.",
+        "sources": [
+          {
+            "url": "https://d23.com/tale-as-old-as-time-modern-fashion-sensibilities/",
+            "locator": "Opening paragraphs identify iconic yellow dress retained from 1991 animation; later paragraph distinguishes the blue village dress."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged Belle’s other clothing and live-action differences. Final scope specifies 1991 and the ballroom scene; D23 distinguishes the iconic yellow dress from the blue village dress. Pink/red are not the identified ballroom color."
+      },
+      "options": [
+        {
+          "answer": "Yellow",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "D23 identifies the iconic yellow dress from the 1991 animation.",
+          "sources": [
+            {
+              "url": "https://d23.com/tale-as-old-as-time-modern-fashion-sensibilities/",
+              "locator": "Opening paragraphs identify iconic yellow dress retained from 1991 animation; later paragraph distinguishes the blue village dress."
+            }
+          ]
+        },
+        {
+          "answer": "Blue",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "D23 distinguishes the blue village outfit from the iconic dance dress.",
+          "sources": [
+            {
+              "url": "https://d23.com/tale-as-old-as-time-modern-fashion-sensibilities/",
+              "locator": "Opening paragraphs identify iconic yellow dress retained from 1991 animation; later paragraph distinguishes the blue village dress."
+            }
+          ]
+        },
+        {
+          "answer": "Pink",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the documented color of the dance dress.",
+          "sources": [
+            {
+              "url": "https://d23.com/tale-as-old-as-time-modern-fashion-sensibilities/",
+              "locator": "Opening paragraphs identify iconic yellow dress retained from 1991 animation; later paragraph distinguishes the blue village dress."
+            }
+          ]
+        },
+        {
+          "answer": "Red",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Not the documented color of the dance dress.",
+          "sources": [
+            {
+              "url": "https://d23.com/tale-as-old-as-time-modern-fashion-sensibilities/",
+              "locator": "Opening paragraphs identify iconic yellow dress retained from 1991 animation; later paragraph distinguishes the blue village dress."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 206,
+    "hash": "e74d7956f88964ac316944fbdacad73acb09894ecc119998b8fcbea32133d947",
+    "questionSnapshot": {
+      "id": 206,
+      "question": "In Snow White, what fruit does the Evil Queen use to poison Snow White?",
+      "answers": [
+        "An apple",
+        "A pear",
+        "A peach",
+        "A plum"
+      ],
+      "difficulty": "easy",
+      "category": "movies"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged fairy-tale variants versus Disney’s film and other fruit: D23’s explicit cottage poisoning episode uses an apple. Pear, peach and plum are mutually distinct fruits. Disguise question 1353 asks a separate fact, not a fruit/name inverse.",
+    "verification": {
+      "context": "In Snow White, what fruit does the Evil Queen use to poison Snow White?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The cottage plot paragraph explicitly identifies a poisoned apple.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+            "locator": "Second plot paragraph: disguised Queen at cottage persuades Snow White to bite poisoned apple."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged fairy-tale variants versus Disney’s film and other fruit: D23’s explicit cottage poisoning episode uses an apple. Pear, peach and plum are mutually distinct fruits. Disguise question 1353 asks a separate fact, not a fruit/name inverse."
+      },
+      "options": [
+        {
+          "answer": "An apple",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "The cottage plot paragraph explicitly identifies a poisoned apple.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+              "locator": "Second plot paragraph: disguised Queen at cottage persuades Snow White to bite poisoned apple."
+            }
+          ]
+        },
+        {
+          "answer": "A pear",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "A different fruit from the documented apple.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+              "locator": "Second plot paragraph: disguised Queen at cottage persuades Snow White to bite poisoned apple."
+            }
+          ]
+        },
+        {
+          "answer": "A peach",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "A different fruit from the documented apple.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+              "locator": "Second plot paragraph: disguised Queen at cottage persuades Snow White to bite poisoned apple."
+            }
+          ]
+        },
+        {
+          "answer": "A plum",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "A different fruit from the documented apple.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/snow-white-and-the-seven-dwarfs-film/",
+              "locator": "Second plot paragraph: disguised Queen at cottage persuades Snow White to bite poisoned apple."
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

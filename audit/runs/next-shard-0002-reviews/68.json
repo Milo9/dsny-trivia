@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 68,
+  "hash": "1e3c46980f80af148efbc698259502dd1f33bc541ecdfbcec0850cb28c18e6a2",
+  "questionSnapshot": {
+    "id": 68,
+    "question": "What are the names of Ursula's two eel servants in The Little Mermaid?",
+    "answers": [
+      "Flotsam and Jetsam",
+      "Scuttle and Slog",
+      "Barnacle and Murk",
+      "Slick and Sludge"
+    ],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Distinct from Ursula’s identity, Scuttle’s name and the sequel’s henchman Undertow. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "English-language Disney character naming; original theatrical feature where a film is named. What are the names of Ursula's two eel servants in The Little Mermaid?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Disney’s entry identifies exactly two eel henchmen of Ursula by name.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/flotsam-and-jetsam/",
+          "locator": "Entire character entry identifies the two named eels as Ursula’s henchmen."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Compared both names in each pair, not merely a plausible nautical sound. The complete pair in the official entry excludes every other proposed pair."
+    },
+    "options": [
+      {
+        "answer": "Flotsam and Jetsam",
+        "verdict": "correct",
+        "basis": "exhaustive-list",
+        "reason": "Flotsam and Jetsam are the explicitly identified pair.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/flotsam-and-jetsam/",
+            "locator": "Entire character entry identifies the two named eels as Ursula’s henchmen."
+          }
+        ]
+      },
+      {
+        "answer": "Scuttle and Slog",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Scuttle and Slog is not this named pair.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/flotsam-and-jetsam/",
+            "locator": "Entire character entry identifies the two named eels as Ursula’s henchmen."
+          }
+        ]
+      },
+      {
+        "answer": "Barnacle and Murk",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Barnacle and Murk is not this named pair.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/flotsam-and-jetsam/",
+            "locator": "Entire character entry identifies the two named eels as Ursula’s henchmen."
+          }
+        ]
+      },
+      {
+        "answer": "Slick and Sludge",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Slick and Sludge is not this named pair.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/flotsam-and-jetsam/",
+            "locator": "Entire character entry identifies the two named eels as Ursula’s henchmen."
+          }
+        ]
+      }
+    ]
+  }
+}

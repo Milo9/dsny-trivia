@@ -1,0 +1,80 @@
+{
+  "questionId": 44,
+  "hash": "b6daf7715108ef3526c9e09d9434981ba27b633dbdc702b5e8be14663f47ecd8",
+  "questionSnapshot": {
+    "id": 44,
+    "question": "What are the names of the three good fairies in Sleeping Beauty?",
+    "answers": [
+      "Flora, Fauna, and Merryweather",
+      "Rose, Lily, and Violet",
+      "Faith, Hope, and Charity",
+      "Sparkle, Glimmer, and Shine"
+    ],
+    "difficulty": "hard",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Four complete, parallel name trios. Hard is reasonable for recalling all three names, distinct from the individual fairy's curse mitigation in #265/#1339.",
+  "verification": {
+    "context": "Sleeping Beauty, Disney animated 1959 film, the three good fairies who raise Aurora.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Flora, Fauna, and Merryweather",
+        "verdict": "correct",
+        "reason": "The named good fairies are Flora, Fauna and Merryweather.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/sleeping-beauty",
+            "locator": "Plot paragraphs: Maleficent curses Princess Aurora; Merryweather, Flora and Fauna raise her; Prince Phillip rescues her."
+          }
+        ]
+      },
+      {
+        "answer": "Rose, Lily, and Violet",
+        "verdict": "incorrect",
+        "reason": "Rose/Lily/Violet replaces all three canonical fairy names with a flower-name trio.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/sleeping-beauty",
+            "locator": "Plot paragraphs: Maleficent curses Princess Aurora; Merryweather, Flora and Fauna raise her; Prince Phillip rescues her."
+          }
+        ]
+      },
+      {
+        "answer": "Faith, Hope, and Charity",
+        "verdict": "incorrect",
+        "reason": "Faith/Hope/Charity are not the three names listed in the film's plot.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/sleeping-beauty",
+            "locator": "Plot paragraphs: Maleficent curses Princess Aurora; Merryweather, Flora and Fauna raise her; Prince Phillip rescues her."
+          }
+        ]
+      },
+      {
+        "answer": "Sparkle, Glimmer, and Shine",
+        "verdict": "incorrect",
+        "reason": "Sparkle/Glimmer/Shine are invented substitutes for the named trio.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/sleeping-beauty",
+            "locator": "Plot paragraphs: Maleficent curses Princess Aurora; Merryweather, Flora and Fauna raise her; Prince Phillip rescues her."
+          }
+        ]
+      }
+    ]
+  }
+}

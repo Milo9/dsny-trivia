@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 141,
+  "hash": "61e0fa494b996b5de9921a827c2bbb114ec325e3f4c0488726743f303ffa49ed",
+  "questionSnapshot": {
+    "id": 141,
+    "question": "What is the name of Disney's private island in the Bahamas frequented by cruise guests?",
+    "answers": [
+      "Castaway Cay",
+      "Treasure Cay",
+      "Magic Isle",
+      "Adventure Bay"
+    ],
+    "difficulty": "medium",
+    "category": "cruise"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Final challenge checks the exact named entity/event against each listed alternative, not merely a matching answer keyword.",
+  "verification": {
+    "context": "What is the name of Disney's private island in the Bahamas frequented by cruise guests?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The documented private Bahamian island is Castaway Cay.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/disney-cruise-line/",
+          "locator": "Second paragraph: Gorda Cay renamed Disney's Castaway Cay, Bahamas private island cruise stop."
+        },
+        {
+          "url": "https://disneyexperiences.com/app/uploads/2025/02/Final-DCL-Disney-Connect-Fact-SheetQ2.pdf",
+          "locator": "PDF page 1: launch in 1998 and fleet debut years Magic 1998, Wonder 1999, Dream 2011, Fantasy 2012; page 2 Lookout Cay opening month."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tried each alternative against the literal final scope: Treasure Cay: Not the Disney private island named in the record. Magic Isle: Not the Disney private island named in the record. Adventure Bay: Not the Disney private island named in the record."
+    },
+    "options": [
+      {
+        "answer": "Castaway Cay",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The documented private Bahamian island is Castaway Cay.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/disney-cruise-line/",
+            "locator": "Second paragraph: Gorda Cay renamed Disney's Castaway Cay, Bahamas private island cruise stop."
+          },
+          {
+            "url": "https://disneyexperiences.com/app/uploads/2025/02/Final-DCL-Disney-Connect-Fact-SheetQ2.pdf",
+            "locator": "PDF page 1: launch in 1998 and fleet debut years Magic 1998, Wonder 1999, Dream 2011, Fantasy 2012; page 2 Lookout Cay opening month."
+          }
+        ]
+      },
+      {
+        "answer": "Treasure Cay",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the Disney private island named in the record.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/disney-cruise-line/",
+            "locator": "Second paragraph: Gorda Cay renamed Disney's Castaway Cay, Bahamas private island cruise stop."
+          },
+          {
+            "url": "https://disneyexperiences.com/app/uploads/2025/02/Final-DCL-Disney-Connect-Fact-SheetQ2.pdf",
+            "locator": "PDF page 1: launch in 1998 and fleet debut years Magic 1998, Wonder 1999, Dream 2011, Fantasy 2012; page 2 Lookout Cay opening month."
+          }
+        ]
+      },
+      {
+        "answer": "Magic Isle",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the Disney private island named in the record.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/disney-cruise-line/",
+            "locator": "Second paragraph: Gorda Cay renamed Disney's Castaway Cay, Bahamas private island cruise stop."
+          },
+          {
+            "url": "https://disneyexperiences.com/app/uploads/2025/02/Final-DCL-Disney-Connect-Fact-SheetQ2.pdf",
+            "locator": "PDF page 1: launch in 1998 and fleet debut years Magic 1998, Wonder 1999, Dream 2011, Fantasy 2012; page 2 Lookout Cay opening month."
+          }
+        ]
+      },
+      {
+        "answer": "Adventure Bay",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the Disney private island named in the record.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/disney-cruise-line/",
+            "locator": "Second paragraph: Gorda Cay renamed Disney's Castaway Cay, Bahamas private island cruise stop."
+          },
+          {
+            "url": "https://disneyexperiences.com/app/uploads/2025/02/Final-DCL-Disney-Connect-Fact-SheetQ2.pdf",
+            "locator": "PDF page 1: launch in 1998 and fleet debut years Magic 1998, Wonder 1999, Dream 2011, Fantasy 2012; page 2 Lookout Cay opening month."
+          }
+        ]
+      }
+    ]
+  }
+}

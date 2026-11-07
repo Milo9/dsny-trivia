@@ -1,0 +1,516 @@
+[
+  {
+    "schema": 2,
+    "questionId": 4,
+    "hash": "b3d86ff403871c5fdcf7d38a9250ee23cb5b2126296f59a034d36cb71d0988d7",
+    "questionSnapshot": {
+      "id": 4,
+      "question": "What animal is the main character Bambi?",
+      "answers": [
+        "Deer",
+        "Rabbit",
+        "Fox",
+        "Bear"
+      ],
+      "difficulty": "easy",
+      "category": "movies"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Reviewed complete topic digest and cross-bank comparisons. Parallel answer forms, appropriate existing category/difficulty and theatrical scope. Tried each alternative as the species of Bambi rather than another forest animal. The explicit deer identity excludes rabbit, fox and bear. #941 adds author/adaptation and release-year information; #201 concerns Thumper.",
+    "verification": {
+      "context": "Bambi, Disney animated 1942 film, species rather than a specific deer subspecies.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "options": [
+        {
+          "answer": "Deer",
+          "verdict": "correct",
+          "reason": "The protagonist is explicitly identified as a deer.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/bambi-film/",
+              "locator": "Opening synopsis calls Bambi a fawn and Thumper a rabbit; concluding production discussion calls the protagonist a little deer."
+            }
+          ],
+          "basis": "direct"
+        },
+        {
+          "answer": "Rabbit",
+          "verdict": "incorrect",
+          "reason": "Rabbit identifies Thumper, not the title deer.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/bambi-film/",
+              "locator": "Opening synopsis calls Bambi a fawn and Thumper a rabbit; concluding production discussion calls the protagonist a little deer."
+            }
+          ],
+          "basis": "exclusive-inference"
+        },
+        {
+          "answer": "Fox",
+          "verdict": "incorrect",
+          "reason": "Fox contradicts the explicit deer species identification.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/bambi-film/",
+              "locator": "Opening synopsis calls Bambi a fawn and Thumper a rabbit; concluding production discussion calls the protagonist a little deer."
+            }
+          ],
+          "basis": "exclusive-inference"
+        },
+        {
+          "answer": "Bear",
+          "verdict": "incorrect",
+          "reason": "Bear contradicts the explicit deer species identification.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/bambi-film/",
+              "locator": "Opening synopsis calls Bambi a fawn and Thumper a rabbit; concluding production discussion calls the protagonist a little deer."
+            }
+          ],
+          "basis": "exclusive-inference"
+        }
+      ],
+      "premise": {
+        "reason": "Bambi is the title protagonist of the 1942 animated film and is identified as a fawn/deer.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/bambi-film/",
+            "locator": "Opening synopsis calls Bambi a fawn and Thumper a rabbit; concluding production discussion calls the protagonist a little deer."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tried each alternative as the species of Bambi rather than another forest animal. The explicit deer identity excludes rabbit, fox and bear. #941 adds author/adaptation and release-year information; #201 concerns Thumper."
+      }
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 7,
+    "hash": "87135ac6eafd874e79a7d7a766c11fb89852507f5e06991157e6efdc73cd0112",
+    "questionSnapshot": {
+      "id": 7,
+      "question": "In Pinocchio (1940), how does his nose's length change when he tells a lie?",
+      "answers": [
+        "It grows longer",
+        "It grows shorter",
+        "It stays the same length",
+        "It disappears completely"
+      ],
+      "difficulty": "easy",
+      "category": "movies"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Reviewed complete topic digest and cross-bank comparisons. Parallel answer forms, appropriate existing category/difficulty and theatrical scope. Tested each final option against the literal length predicate. Shorter, unchanged and absent cannot describe the stated growth. Later restoration is outside the lie-triggered reaction. No inference about color or illumination remains.",
+    "verification": {
+      "context": "Disney animated Pinocchio (1940), nose length during the lie reaction.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 1940 film has a lie-triggered nose-length reaction; the question asks that length reaction, not simultaneous color or light effects.",
+        "sources": [
+          {
+            "url": "https://d23.com/composer-michael-giacchino-looks-back-on-tomorrowland-10-years-later/",
+            "locator": "Visions and Flickers, paragraph beginning With her eyes ever open: comparison explicitly identifies nose lengthening when Pinocchio (1940) lies."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tested each final option against the literal length predicate. Shorter, unchanged and absent cannot describe the stated growth. Later restoration is outside the lie-triggered reaction. No inference about color or illumination remains."
+      },
+      "options": [
+        {
+          "answer": "It grows longer",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "The passage explicitly describes increasing length.",
+          "sources": [
+            {
+              "url": "https://d23.com/composer-michael-giacchino-looks-back-on-tomorrowland-10-years-later/",
+              "locator": "Visions and Flickers, paragraph beginning With her eyes ever open: comparison explicitly identifies nose lengthening when Pinocchio (1940) lies."
+            }
+          ]
+        },
+        {
+          "answer": "It grows shorter",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Shortening contradicts the stated increase in length.",
+          "sources": [
+            {
+              "url": "https://d23.com/composer-michael-giacchino-looks-back-on-tomorrowland-10-years-later/",
+              "locator": "Visions and Flickers, paragraph beginning With her eyes ever open: comparison explicitly identifies nose lengthening when Pinocchio (1940) lies."
+            }
+          ]
+        },
+        {
+          "answer": "It stays the same length",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Unchanged length contradicts the stated increase in length.",
+          "sources": [
+            {
+              "url": "https://d23.com/composer-michael-giacchino-looks-back-on-tomorrowland-10-years-later/",
+              "locator": "Visions and Flickers, paragraph beginning With her eyes ever open: comparison explicitly identifies nose lengthening when Pinocchio (1940) lies."
+            }
+          ]
+        },
+        {
+          "answer": "It disappears completely",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Disappearance contradicts a nose persisting and increasing in length during the lie reaction.",
+          "sources": [
+            {
+              "url": "https://d23.com/composer-michael-giacchino-looks-back-on-tomorrowland-10-years-later/",
+              "locator": "Visions and Flickers, paragraph beginning With her eyes ever open: comparison explicitly identifies nose lengthening when Pinocchio (1940) lies."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 10,
+    "hash": "057a17d531407aaee2e2d4aed309423d9112b854a144b0451dd6ce75d6a851b7",
+    "questionSnapshot": {
+      "id": 10,
+      "question": "In Dumbo (1941), which discovery turns Dumbo's humiliation over his ears into triumph?",
+      "answers": [
+        "He can fly",
+        "He is super strong",
+        "He can speak",
+        "He is invisible"
+      ],
+      "difficulty": "easy",
+      "category": "movies"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Reviewed complete topic digest and cross-bank comparisons. Parallel answer forms, appropriate existing category/difficulty and theatrical scope. Retested strength, speech and invisibility as possible causes of this specific story reversal. The source explicitly identifies the discovery causing the reversal as ear-powered flight. This makes no unsupported claim that Dumbo could never possess any other ability.",
+    "verification": {
+      "context": "Dumbo (1941), the discovery that reverses humiliation over his oversized ears.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The synopsis explicitly connects humiliation over his ears to triumph through discovered flight; this causal discovery is the final question predicate.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/dumbo-film/",
+            "locator": "Opening synopsis: humiliation from elephants and circus visitors turns to triumph when Timothy helps Dumbo discover he can use his oversized ears to fly."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Retested strength, speech and invisibility as possible causes of this specific story reversal. The source explicitly identifies the discovery causing the reversal as ear-powered flight. This makes no unsupported claim that Dumbo could never possess any other ability."
+      },
+      "options": [
+        {
+          "answer": "He can fly",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Flight is explicitly the discovery that reverses his humiliation.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/dumbo-film/",
+              "locator": "Opening synopsis: humiliation from elephants and circus visitors turns to triumph when Timothy helps Dumbo discover he can use his oversized ears to fly."
+            }
+          ]
+        },
+        {
+          "answer": "He is super strong",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "The described reversal is caused by discovered flight with his ears, not a strength discovery.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/dumbo-film/",
+              "locator": "Opening synopsis: humiliation from elephants and circus visitors turns to triumph when Timothy helps Dumbo discover he can use his oversized ears to fly."
+            }
+          ]
+        },
+        {
+          "answer": "He can speak",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "The described reversal is caused by discovered flight with his ears, not a speech discovery.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/dumbo-film/",
+              "locator": "Opening synopsis: humiliation from elephants and circus visitors turns to triumph when Timothy helps Dumbo discover he can use his oversized ears to fly."
+            }
+          ]
+        },
+        {
+          "answer": "He is invisible",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "The described reversal is caused by discovered flight with his ears, not an invisibility discovery.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/dumbo-film/",
+              "locator": "Opening synopsis: humiliation from elephants and circus visitors turns to triumph when Timothy helps Dumbo discover he can use his oversized ears to fly."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 27,
+    "hash": "aca767f467810e8196762e4a005bc7ff45054dab56bc267f4311bc75ed64b1a8",
+    "questionSnapshot": {
+      "id": 27,
+      "question": "Who is the main villain in Disney's The Princess and the Frog (2009)?",
+      "answers": [
+        "Dr. Facilier",
+        "Chef Louis",
+        "Hades",
+        "Mother Gothel"
+      ],
+      "difficulty": "medium",
+      "category": "movies",
+      "factId": "princess-and-frog.main-villain",
+      "film": "The Princess and the Frog",
+      "explanation": "Dr. Facilier makes deceptive magical deals and is accompanied by a living shadow.",
+      "source": "https://movies.disney.com/the-princess-and-the-frog",
+      "verifiedAt": "2026-11-02"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Reviewed complete topic digest and cross-bank comparisons. Parallel answer forms, appropriate existing category/difficulty and theatrical scope. Re-read all four identities. Chef Louis is distinct from the friendly alligator Louis here; Hades belongs to Hercules, Gothel to Tangled. None can be the principal villain of the specified 2009 film. #1511 requires the separate song-to-film association; this question alone does not establish that association.",
+    "verification": {
+      "context": "The Princess and the Frog, Disney animated 2009 film; principal antagonist.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "options": [
+        {
+          "answer": "Dr. Facilier",
+          "verdict": "correct",
+          "reason": "Dr. Facilier is the sinister magical deal-maker pursuing the central scheme.",
+          "sources": [
+            {
+              "url": "https://movies.disney.com/the-princess-and-the-frog",
+              "locator": "The Characters: Tiana seeks a New Orleans restaurant; Doctor Facilier makes harmful magical deals with a living shadow; Ray is the friendly firefly. Gallery A Voodoo Man: Facilier entices Naveen and Lawrence."
+            }
+          ],
+          "basis": "direct"
+        },
+        {
+          "answer": "Chef Louis",
+          "verdict": "incorrect",
+          "reason": "Louis is credited in The Little Mermaid (1989), a different film, rather than as the 2009 film's main villain.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/little-mermaid-the-film/",
+              "locator": "Synopsis: Ursula grants humanity in return for Ariel's voice; King Triton is her father. Voice credits separately name Ursula and Louis in the 1989 film."
+            },
+            {
+              "url": "https://movies.disney.com/the-princess-and-the-frog",
+              "locator": "The Characters: Tiana seeks a New Orleans restaurant; Doctor Facilier makes harmful magical deals with a living shadow; Ray is the friendly firefly. Gallery A Voodoo Man: Facilier entices Naveen and Lawrence."
+            }
+          ],
+          "basis": "exclusive-inference"
+        },
+        {
+          "answer": "Hades",
+          "verdict": "incorrect",
+          "reason": "Hades drives the villainous plot in Hercules.",
+          "sources": [
+            {
+              "url": "https://movies.disney.com/hercules",
+              "locator": "1997 synopsis: Hades and Pain and Panic plot to take over, with Hercules opposing him."
+            }
+          ],
+          "basis": "exclusive-inference"
+        },
+        {
+          "answer": "Mother Gothel",
+          "verdict": "incorrect",
+          "reason": "Mother Gothel is Rapunzel's captor in Tangled.",
+          "sources": [
+            {
+              "url": "https://movies.disney.com/tangled",
+              "locator": "The Characters: Rapunzel and chameleon Pascal; Mother Gothel imprisoned her from infancy; Maximus is the guard horse."
+            }
+          ],
+          "basis": "exclusive-inference"
+        }
+      ],
+      "premise": {
+        "reason": "The Characters profile on Disney Movies identifies Facilier as the harmful magical deal-maker with a living shadow; the other named villains belong to different films, as established by their Disney profiles and credits.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-princess-and-the-frog",
+            "locator": "The Characters: Tiana seeks a New Orleans restaurant; Doctor Facilier makes harmful magical deals with a living shadow; Ray is the friendly firefly. Gallery A Voodoo Man: Facilier entices Naveen and Lawrence."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Re-read all four identities. Chef Louis is distinct from the friendly alligator Louis here; Hades belongs to Hercules, Gothel to Tangled. None can be the principal villain of the specified 2009 film. #1511 requires the separate song-to-film association; this question alone does not establish that association."
+      }
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 45,
+    "hash": "d148fcd9a0988b4e403b720f1b9cc1e9ca2211dace58d9a96994ffa3fb6eb25c",
+    "questionSnapshot": {
+      "id": 45,
+      "question": "What year was the Disney film Fantasia originally released?",
+      "answers": [
+        "1940",
+        "1937",
+        "1942",
+        "1950"
+      ],
+      "difficulty": "hard",
+      "category": "movies"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-02",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Reviewed complete topic digest and cross-bank comparisons. Parallel answer forms, appropriate existing category/difficulty and theatrical scope. Checked original versus subsequent distribution dates. Studio release date and D23 world premiere agree on 1940; none of the other listed years fits original release. #939 additionally tests Fantasound attribution, so the date question does not establish that sound-system fact.",
+    "verification": {
+      "context": "Fantasia, original US world-premiere release in 1940, not Fantasia 2000 or later reissues.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "options": [
+        {
+          "answer": "1940",
+          "verdict": "correct",
+          "reason": "The studio dates the original release to November 13, 1940.",
+          "sources": [
+            {
+              "url": "https://www.disneyanimation.com/films/fantasia/",
+              "locator": "Release Date: November 13, 1940; corroborated by https://d23.com/this-day/fantasia-is-released/ opening world-premiere paragraph."
+            }
+          ],
+          "basis": "direct"
+        },
+        {
+          "answer": "1937",
+          "verdict": "incorrect",
+          "reason": "1937 differs from the documented original release year 1940.",
+          "sources": [
+            {
+              "url": "https://www.disneyanimation.com/films/fantasia/",
+              "locator": "Release Date: November 13, 1940; corroborated by https://d23.com/this-day/fantasia-is-released/ opening world-premiere paragraph."
+            }
+          ],
+          "basis": "exclusive-inference"
+        },
+        {
+          "answer": "1942",
+          "verdict": "incorrect",
+          "reason": "1942 differs from the original release year; a later distribution date cannot replace the premiere.",
+          "sources": [
+            {
+              "url": "https://www.disneyanimation.com/films/fantasia/",
+              "locator": "Release Date: November 13, 1940; corroborated by https://d23.com/this-day/fantasia-is-released/ opening world-premiere paragraph."
+            }
+          ],
+          "basis": "exclusive-inference"
+        },
+        {
+          "answer": "1950",
+          "verdict": "incorrect",
+          "reason": "1950 differs from the documented original release year 1940.",
+          "sources": [
+            {
+              "url": "https://www.disneyanimation.com/films/fantasia/",
+              "locator": "Release Date: November 13, 1940; corroborated by https://d23.com/this-day/fantasia-is-released/ opening world-premiere paragraph."
+            }
+          ],
+          "basis": "exclusive-inference"
+        }
+      ],
+      "premise": {
+        "reason": "Original release means the first theatrical presentation, dated November 13, 1940 by Disney Animation and the D23 world-premiere account. Disney Movies lists July 1941, a different distribution date, so it is not used to establish the original release.",
+        "sources": [
+          {
+            "url": "https://www.disneyanimation.com/films/fantasia/",
+            "locator": "Release Date: November 13, 1940; corroborated by https://d23.com/this-day/fantasia-is-released/ opening world-premiere paragraph."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-02",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked original versus subsequent distribution dates. Studio release date and D23 world premiere agree on 1940; none of the other listed years fits original release. #939 additionally tests Fantasound attribution, so the date question does not establish that sound-system fact."
+      }
+    }
+  }
+]

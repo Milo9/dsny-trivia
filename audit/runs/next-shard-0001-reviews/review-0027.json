@@ -1,0 +1,89 @@
+{
+  "questionId": 27,
+  "hash": "aca767f467810e8196762e4a005bc7ff45054dab56bc267f4311bc75ed64b1a8",
+  "questionSnapshot": {
+    "id": 27,
+    "question": "Who is the main villain in Disney's The Princess and the Frog (2009)?",
+    "answers": [
+      "Dr. Facilier",
+      "Chef Louis",
+      "Hades",
+      "Mother Gothel"
+    ],
+    "difficulty": "medium",
+    "category": "movies",
+    "factId": "princess-and-frog.main-villain",
+    "film": "The Princess and the Frog",
+    "explanation": "Dr. Facilier makes deceptive magical deals and is accompanied by a living shadow.",
+    "source": "https://movies.disney.com/the-princess-and-the-frog",
+    "verifiedAt": "2026-11-02"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Replaced overlapping antagonist Lawrence with villains from other films and narrowed to main villain. Corrected unrelated explanation. Medium character recall. Retired #754 already preserves the same main-villain fact; no new active duplicate found.",
+  "verification": {
+    "context": "The Princess and the Frog, Disney animated 2009 film; principal antagonist.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Dr. Facilier",
+        "verdict": "correct",
+        "reason": "Dr. Facilier is the sinister magical deal-maker pursuing the central scheme.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-princess-and-the-frog",
+            "locator": "The Characters: Tiana seeks a New Orleans restaurant; Doctor Facilier makes harmful magical deals with a living shadow; Ray is the friendly firefly. Gallery A Voodoo Man: Facilier entices Naveen and Lawrence."
+          }
+        ]
+      },
+      {
+        "answer": "Chef Louis",
+        "verdict": "incorrect",
+        "reason": "Louis is credited in The Little Mermaid (1989), a different film, rather than as the 2009 film's main villain.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/little-mermaid-the-film/",
+            "locator": "Synopsis: Ursula grants humanity in return for Ariel's voice; King Triton is her father. Voice credits separately name Ursula and Louis in the 1989 film."
+          },
+          {
+            "url": "https://movies.disney.com/the-princess-and-the-frog",
+            "locator": "The Characters: Tiana seeks a New Orleans restaurant; Doctor Facilier makes harmful magical deals with a living shadow; Ray is the friendly firefly. Gallery A Voodoo Man: Facilier entices Naveen and Lawrence."
+          }
+        ]
+      },
+      {
+        "answer": "Hades",
+        "verdict": "incorrect",
+        "reason": "Hades drives the villainous plot in Hercules.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/hercules",
+            "locator": "1997 synopsis: Hades and Pain and Panic plot to take over, with Hercules opposing him."
+          }
+        ]
+      },
+      {
+        "answer": "Mother Gothel",
+        "verdict": "incorrect",
+        "reason": "Mother Gothel is Rapunzel's captor in Tangled.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/tangled",
+            "locator": "The Characters: Rapunzel and chameleon Pascal; Mother Gothel imprisoned her from infancy; Maximus is the guard horse."
+          }
+        ]
+      }
+    ]
+  }
+}

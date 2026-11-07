@@ -1,0 +1,770 @@
+[
+  {
+    "finding": {
+      "id": "duplicate-0c47d4ce46f0a523cc64",
+      "kind": "duplicate",
+      "questionIds": [
+        59,
+        300
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "0c47d4ce46f0a523cc64f240a7c22e3d4a1c70f4c40b2d3eda9681971a09b05f",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 59,
+        "question": "What is the name of Winnie the Pooh's gloomy donkey friend?",
+        "answers": [
+          "Eeyore",
+          "Tigger",
+          "Kanga",
+          "Roo"
+        ],
+        "difficulty": "easy",
+        "category": "characters"
+      },
+      {
+        "id": 300,
+        "question": "What is the name of Winnie the Pooh's human friend?",
+        "answers": [
+          "Christopher Robin",
+          "Billy Moon",
+          "Piglet",
+          "Roo"
+        ],
+        "difficulty": "easy",
+        "category": "characters"
+      }
+    ],
+    "decision": "accepted",
+    "reason": "Eeyore’s donkey identity and Christopher Robin’s human-friend identity are different characters and relationships. The shared Pooh wording does not supply the other answer.",
+    "reviewer": "Codex (OpenAI)"
+  },
+  {
+    "finding": {
+      "id": "duplicate-253de5faa5a99dabc230",
+      "kind": "duplicate",
+      "questionIds": [
+        66,
+        67
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "253de5faa5a99dabc230ca06a36142b63e491ba73fc6db678592bfb1c462b0b2",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 66,
+        "question": "What type of animal is Timon in The Lion King?",
+        "answers": [
+          "Meerkat",
+          "Prairie dog",
+          "Otter",
+          "Weasel"
+        ],
+        "difficulty": "medium",
+        "category": "characters"
+      },
+      {
+        "id": 67,
+        "question": "What type of animal is Pumbaa in The Lion King?",
+        "answers": [
+          "Warthog",
+          "Hyena",
+          "Rhinoceros",
+          "Hippo"
+        ],
+        "difficulty": "medium",
+        "category": "characters"
+      }
+    ],
+    "decision": "accepted",
+    "reason": "Timon is a meerkat and Pumbaa is a warthog. Knowing either character’s animal type does not establish the other’s; both final option sets avoid nested animal labels.",
+    "reviewer": "Codex (OpenAI)"
+  },
+  {
+    "finding": {
+      "id": "duplicate-36b4f36f810c1dc395c3",
+      "kind": "duplicate",
+      "questionIds": [
+        97,
+        687
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "36b4f36f810c1dc395c3123429c8fcd22e6e8d85397ad0b1d1f7797a7347bfda",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 97,
+        "question": "In what year did EPCOT open at Walt Disney World?",
+        "answers": [
+          "1982",
+          "1971",
+          "1989",
+          "1975"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      },
+      {
+        "id": 687,
+        "question": "On what date did Walt Disney World open?",
+        "answers": [
+          "October 1, 1971",
+          "July 17, 1971",
+          "December 25, 1971",
+          "January 1, 1972"
+        ],
+        "difficulty": "hard",
+        "category": "walt"
+      }
+    ],
+    "decision": "accepted",
+    "reason": "EPCOT’s 1982 opening and the resort’s October 1, 1971 opening concern different establishments and events. They share date-question syntax, not a requested fact.",
+    "reviewer": "Codex (OpenAI)"
+  },
+  {
+    "finding": {
+      "id": "duplicate-50132847f6ec64f47ec7",
+      "kind": "duplicate",
+      "questionIds": [
+        78,
+        2451
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "50132847f6ec64f47ec7cf7a16c13f139b929a2ed7bb16c64ce5ddc9cd6b2913",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 78,
+        "question": "In The Jungle Book, what is the name of the friendly bear?",
+        "answers": [
+          "Baloo",
+          "Bagheera",
+          "Shere Khan",
+          "King Louie"
+        ],
+        "difficulty": "medium",
+        "category": "characters"
+      },
+      {
+        "id": 2451,
+        "question": "In The Jungle Book 2, who sneaks into the Man-Village to lure Mowgli back into the jungle?",
+        "answers": [
+          "Baloo",
+          "Bagheera",
+          "King Louie",
+          "Kaa"
+        ],
+        "difficulty": "easy",
+        "category": "characters"
+      }
+    ],
+    "decision": "accepted",
+    "reason": "The original film’s bear identity and Baloo’s particular action in the sequel are different facts. Merely knowing Baloo is a bear does not establish who enters the village in the sequel.",
+    "reviewer": "Codex (OpenAI)"
+  },
+  {
+    "finding": {
+      "id": "duplicate-51109958076a61eaf5c0",
+      "kind": "duplicate",
+      "questionIds": [
+        15,
+        54
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "51109958076a61eaf5c06c45a1de72198d3df345d23781cbf98880f7ae9f612f",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 15,
+        "question": "What color is Ariel's mermaid tail in the animated The Little Mermaid (1989)?",
+        "answers": [
+          "Green",
+          "Blue",
+          "Purple",
+          "Red"
+        ],
+        "difficulty": "easy",
+        "category": "movies"
+      },
+      {
+        "id": 54,
+        "question": "In Disney's animated Peter Pan (1953), what color is Tinker Bell's dress?",
+        "answers": [
+          "Green",
+          "Blue",
+          "Pink",
+          "Yellow"
+        ],
+        "difficulty": "easy",
+        "category": "characters"
+      }
+    ],
+    "decision": "accepted",
+    "reason": "Ariel’s tail and Tinker Bell’s dress are different character attributes in different films. Green is a common color, not a shared underlying fact. Renewing this hash-bound decision restores q15’s existing coverage without changing its review.",
+    "reviewer": "Codex (OpenAI)"
+  },
+  {
+    "finding": {
+      "id": "duplicate-57fddb1ee0163917748c",
+      "kind": "duplicate",
+      "questionIds": [
+        97,
+        102
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "57fddb1ee0163917748c76eb04d6a0b5901e7d783e2aa10af9ce701e545eeed6",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 97,
+        "question": "In what year did EPCOT open at Walt Disney World?",
+        "answers": [
+          "1982",
+          "1971",
+          "1989",
+          "1975"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      },
+      {
+        "id": 102,
+        "question": "In what year did Disney's Animal Kingdom open at Walt Disney World?",
+        "answers": [
+          "1998",
+          "2001",
+          "1995",
+          "2000"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      }
+    ],
+    "decision": "accepted",
+    "reason": "EPCOT opened in 1982; Animal Kingdom opened in 1998. Different parks and opening events require independent knowledge.",
+    "reviewer": "Codex (OpenAI)"
+  },
+  {
+    "finding": {
+      "id": "duplicate-597783280fbf7caaf76d",
+      "kind": "duplicate",
+      "questionIds": [
+        91,
+        103
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "597783280fbf7caaf76dc3b38a257275c12cda660c0cc5d5d4b2df364d47eaf1",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 91,
+        "question": "Which Walt Disney World theme park is centered on wildlife habitats and conservation?",
+        "answers": [
+          "Animal Kingdom",
+          "EPCOT",
+          "Hollywood Studios",
+          "Typhoon Lagoon"
+        ],
+        "difficulty": "easy",
+        "category": "parks"
+      },
+      {
+        "id": 103,
+        "question": "In which Disney World park can guests visit Pandora — The World of Avatar?",
+        "answers": [
+          "Animal Kingdom",
+          "Hollywood Studios",
+          "EPCOT",
+          "Magic Kingdom"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      }
+    ],
+    "decision": "accepted",
+    "reason": "Animal Kingdom’s defining wildlife/conservation theme and the location of Pandora are separate facts. Wildlife theming alone does not establish the Avatar land’s park.",
+    "reviewer": "Codex (OpenAI)"
+  },
+  {
+    "finding": {
+      "id": "duplicate-59d932243b9e501dd5a7",
+      "kind": "duplicate",
+      "questionIds": [
+        56,
+        1384
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "59d932243b9e501dd5a7894fdf5f9f86808164418463659ba81c30e839c14e24",
+      "priority": 1,
+      "signals": [
+        "inverse-answer-and-stem"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 56,
+        "question": "In Beauty and the Beast, what is the name of Belle's arrogant suitor?",
+        "answers": [
+          "Gaston",
+          "Jafar",
+          "Frollo",
+          "Hades"
+        ],
+        "difficulty": "easy",
+        "category": "characters"
+      },
+      {
+        "id": 1384,
+        "question": "Which Disney film features the rousing song 'Gaston,' in which the villain's admirers celebrate his vanity and brawn?",
+        "answers": [
+          "Beauty and the Beast",
+          "The Hunchback of Notre Dame",
+          "Hercules",
+          "The Great Mouse Detective"
+        ],
+        "difficulty": "easy",
+        "category": "music"
+      }
+    ],
+    "decision": "accepted",
+    "reason": "Gaston courting Belle is a character relationship; attribution of the song Gaston to its film is a soundtrack fact. Knowing the suitor’s name alone does not identify the song’s film.",
+    "reviewer": "Codex (OpenAI)"
+  },
+  {
+    "finding": {
+      "id": "duplicate-66d18b8bc3946f87be59",
+      "kind": "duplicate",
+      "questionIds": [
+        56,
+        567
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "66d18b8bc3946f87be59025ee7143fe3fd1b192cf4783b0bc2f595d99b980fd6",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 56,
+        "question": "In Beauty and the Beast, what is the name of Belle's arrogant suitor?",
+        "answers": [
+          "Gaston",
+          "Jafar",
+          "Frollo",
+          "Hades"
+        ],
+        "difficulty": "easy",
+        "category": "characters"
+      },
+      {
+        "id": 567,
+        "question": "What is the name of Belle's horse in Beauty and the Beast?",
+        "answers": [
+          "Philippe",
+          "Major",
+          "Maximus",
+          "Angus"
+        ],
+        "difficulty": "medium",
+        "category": "characters"
+      }
+    ],
+    "decision": "accepted",
+    "reason": "Belle’s suitor Gaston and her horse Philippe are different characters and relationships; neither answer solves the other identity.",
+    "reviewer": "Codex (OpenAI)"
+  },
+  {
+    "finding": {
+      "id": "duplicate-6ae8f7bc97c36b0bda73",
+      "kind": "duplicate",
+      "questionIds": [
+        90,
+        692
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "6ae8f7bc97c36b0bda735fc15f17e4f5828555cce61857a1918d11d5d3f19040",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 90,
+        "question": "Which Magic Kingdom boat ride features singing children representing many countries?",
+        "answers": [
+          "It's a Small World",
+          "Pirates of the Caribbean",
+          "The Haunted Mansion",
+          "Jungle Cruise"
+        ],
+        "difficulty": "easy",
+        "category": "parks"
+      },
+      {
+        "id": 692,
+        "question": "What famous 1964 World's Fair attraction did Walt Disney create that used audio-animatronic figures?",
+        "answers": [
+          "It's a Small World",
+          "The Hall of Presidents",
+          "Space Mountain",
+          "Spaceship Earth"
+        ],
+        "difficulty": "hard",
+        "category": "walt"
+      }
+    ],
+    "decision": "accepted",
+    "reason": "The singing-children ride experience and its 1964 World’s Fair origin are separate facts. Present ride content does not establish the production/exhibition history.",
+    "reviewer": "Codex (OpenAI)"
+  },
+  {
+    "finding": {
+      "id": "duplicate-9907db91b5347a59452e",
+      "kind": "duplicate",
+      "questionIds": [
+        100,
+        886
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "9907db91b5347a59452eef61e17b09c0bd5e8a534d7320b3f2a2a3d9d71be854",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 100,
+        "question": "What is the land in Magic Kingdom that is home to Pirates of the Caribbean?",
+        "answers": [
+          "Adventureland",
+          "Frontierland",
+          "Tomorrowland",
+          "Liberty Square"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      },
+      {
+        "id": 886,
+        "question": "At Disneyland, which land is home to Indiana Jones Adventure?",
+        "answers": [
+          "Adventureland",
+          "Frontierland",
+          "Fantasyland",
+          "Tomorrowland"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      }
+    ],
+    "decision": "accepted",
+    "reason": "Pirates at Magic Kingdom and Indiana Jones Adventure at Disneyland are separate attraction-location facts. The two parks each having an Adventureland does not establish either ride’s location in the other park.",
+    "reviewer": "Codex (OpenAI)"
+  },
+  {
+    "finding": {
+      "id": "duplicate-99aea833a5237f83ab56",
+      "kind": "duplicate",
+      "questionIds": [
+        91,
+        348
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "99aea833a5237f83ab564a74c494063ec1232476e69617e897a0555a11808bdf",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 91,
+        "question": "Which Walt Disney World theme park is centered on wildlife habitats and conservation?",
+        "answers": [
+          "Animal Kingdom",
+          "EPCOT",
+          "Hollywood Studios",
+          "Typhoon Lagoon"
+        ],
+        "difficulty": "easy",
+        "category": "parks"
+      },
+      {
+        "id": 348,
+        "question": "In which Walt Disney World park is the Na'vi River Journey ride located?",
+        "answers": [
+          "Animal Kingdom",
+          "EPCOT",
+          "Hollywood Studios",
+          "Magic Kingdom"
+        ],
+        "difficulty": "easy",
+        "category": "parks"
+      }
+    ],
+    "decision": "accepted",
+    "reason": "Animal Kingdom’s overall wildlife purpose and Na’vi River Journey’s location are different facts. The overall theme does not tell a player where this specific Avatar attraction is.",
+    "reviewer": "Codex (OpenAI)"
+  },
+  {
+    "finding": {
+      "id": "duplicate-b65aede7f455e143c868",
+      "kind": "duplicate",
+      "questionIds": [
+        58,
+        950
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "b65aede7f455e143c868611c0157fd34fe58b0c1f74101117f9e358e448cd212",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 58,
+        "question": "In which Disney animated film does Maleficent appear as the villain?",
+        "answers": [
+          "Sleeping Beauty",
+          "Snow White",
+          "Cinderella",
+          "Bambi"
+        ],
+        "difficulty": "easy",
+        "category": "characters"
+      },
+      {
+        "id": 950,
+        "question": "Which 1959 Disney animated feature used a widescreen Super Technirama 70 process?",
+        "answers": [
+          "Sleeping Beauty",
+          "Lady and the Tramp",
+          "101 Dalmatians",
+          "The Sword in the Stone"
+        ],
+        "difficulty": "hard",
+        "category": "walt"
+      }
+    ],
+    "decision": "accepted",
+    "reason": "Maleficent’s film identity and the Super Technirama 70 production process require different knowledge. A shared Sleeping Beauty answer does not establish both requested facts.",
+    "reviewer": "Codex (OpenAI)"
+  },
+  {
+    "finding": {
+      "id": "duplicate-e0a54f13566d4fc961b2",
+      "kind": "duplicate",
+      "questionIds": [
+        100,
+        2525
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "e0a54f13566d4fc961b28cf281a89e516935e3a79cd0f9e60293c37bf1b015f8",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 100,
+        "question": "What is the land in Magic Kingdom that is home to Pirates of the Caribbean?",
+        "answers": [
+          "Adventureland",
+          "Frontierland",
+          "Tomorrowland",
+          "Liberty Square"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      },
+      {
+        "id": 2525,
+        "question": "In which Disneyland Paris land will guests find the cave attraction Skull Rock, with its rope bridges and hidden treasure?",
+        "answers": [
+          "Adventureland",
+          "Frontierland",
+          "Fantasyland",
+          "Discoveryland"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      }
+    ],
+    "decision": "accepted",
+    "reason": "Magic Kingdom Pirates and Disneyland Paris Skull Rock concern separate attractions at separate parks. Shared land names are not duplicate attraction-location facts.",
+    "reviewer": "Codex (OpenAI)"
+  },
+  {
+    "finding": {
+      "id": "duplicate-f27739626bf4163730e2",
+      "kind": "duplicate",
+      "questionIds": [
+        94,
+        779
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "f27739626bf4163730e2a09b41539418e8544e87ee0477855f1afcde0dd1ea62",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 94,
+        "question": "In which themed land of Magic Kingdom would you find Cinderella Castle?",
+        "answers": [
+          "Fantasyland",
+          "Adventureland",
+          "Tomorrowland",
+          "Liberty Square"
+        ],
+        "difficulty": "easy",
+        "category": "parks"
+      },
+      {
+        "id": 779,
+        "question": "In which Magic Kingdom land is the classic boat ride 'it's a small world' located?",
+        "answers": [
+          "Fantasyland",
+          "Adventureland",
+          "Liberty Square",
+          "Tomorrowland"
+        ],
+        "difficulty": "easy",
+        "category": "parks"
+      }
+    ],
+    "decision": "accepted",
+    "reason": "Cinderella Castle’s location and the small-world boat ride’s location are different attraction-location facts. A shared Fantasyland answer does not establish both.",
+    "reviewer": "Codex (OpenAI)"
+  },
+  {
+    "finding": {
+      "id": "duplicate-f4aee51b93553f5e4f2e",
+      "kind": "duplicate",
+      "questionIds": [
+        57,
+        2364
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "f4aee51b93553f5e4f2efb1e6d4b06acbae2ce607be7c9c60ecf8ca4203d54ae",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 57,
+        "question": "In Snow White, how many dwarfs does Snow White live with?",
+        "answers": [
+          "Seven",
+          "Five",
+          "Eight",
+          "Six"
+        ],
+        "difficulty": "easy",
+        "category": "characters"
+      },
+      {
+        "id": 2364,
+        "question": "'We Don't Talk About Bruno' from Encanto set a Billboard record for the most credited artists on a number-one hit — how many artists share the credit?",
+        "answers": [
+          "Seven",
+          "Four",
+          "Eight",
+          "Three"
+        ],
+        "difficulty": "hard",
+        "category": "music"
+      }
+    ],
+    "decision": "accepted",
+    "reason": "Seven dwarfs and seven Billboard credited artists concern entirely unrelated sets. The common number is not a repeated fact.",
+    "reviewer": "Codex (OpenAI)"
+  },
+  {
+    "finding": {
+      "id": "leak-5d87ac6bdd4b988a721d",
+      "kind": "leak",
+      "questionIds": [
+        51
+      ],
+      "detail": {
+        "tier": 2,
+        "token": "mouse"
+      },
+      "signature": "5d87ac6bdd4b988a721de27fe09e64ce257044236846a9520fd0fff0ccb70300",
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 51,
+        "question": "What is the name of Mickey Mouse's girlfriend?",
+        "answers": [
+          "Minnie Mouse",
+          "Daisy Duck",
+          "Clarabelle Cow",
+          "Tinker Bell"
+        ],
+        "difficulty": "easy",
+        "category": "characters"
+      }
+    ],
+    "decision": "accepted",
+    "reason": "Mouse is Mickey’s ordinary surname and a shared surname with Minnie, not a revealed partner’s first name. Fictional characters’ relationships are not determined by matching species; the question still requires identifying Minnie, appropriate for easy recognition.",
+    "reviewer": "Codex (OpenAI)"
+  }
+]

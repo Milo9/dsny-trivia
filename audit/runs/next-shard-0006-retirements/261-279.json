@@ -1,0 +1,30 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "retired": {
+    "id": 261,
+    "question": "In Frozen, what is the name of Kristoff's reindeer?",
+    "answers": [
+      "Sven",
+      "Bjorn",
+      "Lars",
+      "Erik"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "retained": {
+    "id": 279,
+    "question": "In Frozen, what type of animal is Sven?",
+    "answers": [
+      "A reindeer",
+      "A horse",
+      "A moose",
+      "A dog"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "rationale": "Inverse Sven/reindeer identity. Knowing either question and answer supplies the other. Retain the easy character-species question.",
+  "scope": "Only the planned question is retired; comparison does not confer factual approval on an unreviewed replacement."
+}

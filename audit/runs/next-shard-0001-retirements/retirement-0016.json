@@ -1,0 +1,98 @@
+{
+  "questionId": 16,
+  "hash": "ce4142c87206d5a96b4a4559440a171c389d0e152416589290e2458d592fd330",
+  "questionSnapshot": {
+    "id": 16,
+    "question": "In Frozen, what power does Elsa possess?",
+    "answers": [
+      "She can create ice and snow",
+      "She can fly",
+      "She can speak to animals",
+      "She can turn invisible"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": false,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Factual option review completed, but fails distinctFact: retained #543 asks the same fact. Not submitted as a passing manual review.",
+  "verification": {
+    "context": "Frozen (2013), original film.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "She can create ice and snow",
+        "verdict": "correct",
+        "reason": "Elsa creates ice and snow.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/frozen",
+            "locator": "Opening synopsis: Anna seeks her sister Elsa, whose ice powers have frozen Arendelle; confirms named kingdom."
+          },
+          {
+            "url": "https://d23.com/big-hero-6-if-disney-characters-were-super-heroes/",
+            "locator": "Elsa (Cold and Ice Manipulation) section; distinct from the Peter Pan flying-ability section."
+          }
+        ]
+      },
+      {
+        "answer": "She can fly",
+        "verdict": "incorrect",
+        "reason": "Flying is not the power attributed to Elsa in the original film; the description is cold and ice manipulation.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/frozen",
+            "locator": "Opening synopsis: Anna seeks her sister Elsa, whose ice powers have frozen Arendelle; confirms named kingdom."
+          },
+          {
+            "url": "https://d23.com/big-hero-6-if-disney-characters-were-super-heroes/",
+            "locator": "Elsa (Cold and Ice Manipulation) section; distinct from the Peter Pan flying-ability section."
+          }
+        ]
+      },
+      {
+        "answer": "She can speak to animals",
+        "verdict": "incorrect",
+        "reason": "Speaking to animals is not Elsa's described gift; the original Frozen synopsis attributes its winter crisis to her ice magic.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/frozen",
+            "locator": "Opening synopsis: Anna seeks her sister Elsa, whose ice powers have frozen Arendelle; confirms named kingdom."
+          },
+          {
+            "url": "https://d23.com/big-hero-6-if-disney-characters-were-super-heroes/",
+            "locator": "Elsa (Cold and Ice Manipulation) section; distinct from the Peter Pan flying-ability section."
+          }
+        ]
+      },
+      {
+        "answer": "She can turn invisible",
+        "verdict": "incorrect",
+        "reason": "Invisibility is not the original film's ice-and-snow power.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/frozen",
+            "locator": "Opening synopsis: Anna seeks her sister Elsa, whose ice powers have frozen Arendelle; confirms named kingdom."
+          },
+          {
+            "url": "https://d23.com/big-hero-6-if-disney-characters-were-super-heroes/",
+            "locator": "Elsa (Cold and Ice Manipulation) section; distinct from the Peter Pan flying-ability section."
+          }
+        ]
+      }
+    ]
+  },
+  "status": "retired-duplicate",
+  "replacedBy": 543
+}

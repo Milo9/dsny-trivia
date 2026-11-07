@@ -1,0 +1,84 @@
+{
+  "questionId": 3,
+  "hash": "e2a0a4dff0b458c1dd43817fbc3faa2dd5171520739e7619e0394e973afa9437",
+  "questionSnapshot": {
+    "id": 3,
+    "question": "Who is the villain in The Little Mermaid?",
+    "answers": [
+      "Ursula",
+      "Maleficent",
+      "Cruella de Vil",
+      "The Evil Queen"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Four villains from distinct films, no overlapping antagonist. Easy identification. #713 asks Ursula's song; identifying her alone does not supply its title.",
+  "verification": {
+    "context": "The Little Mermaid, original 1989 animated film.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Ursula",
+        "verdict": "correct",
+        "reason": "Ursula is the evil sea witch who bargains with Ariel and threatens Triton's realm.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/the-little-mermaid",
+            "locator": "The Characters: Ursula is the evil sea witch; Triton is Ariel's father; Ariel and her companions are identified separately."
+          },
+          {
+            "url": "https://d23.com/a-to-z/little-mermaid-the-film/",
+            "locator": "Synopsis: Ursula grants humanity in return for Ariel's voice; King Triton is her father. Voice credits separately name Ursula and Louis in the 1989 film."
+          }
+        ]
+      },
+      {
+        "answer": "Maleficent",
+        "verdict": "incorrect",
+        "reason": "Maleficent curses Aurora in Sleeping Beauty, a different film.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/sleeping-beauty",
+            "locator": "Plot paragraphs: Maleficent curses Princess Aurora; Merryweather, Flora and Fauna raise her; Prince Phillip rescues her."
+          }
+        ]
+      },
+      {
+        "answer": "Cruella de Vil",
+        "verdict": "incorrect",
+        "reason": "Cruella is the puppy-fur villainess of One Hundred and One Dalmatians.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/cruella-de-vil/",
+            "locator": "Cruella De Vil entry: puppy-fur-seeking villainess of One Hundred and One Dalmatians."
+          }
+        ]
+      },
+      {
+        "answer": "The Evil Queen",
+        "verdict": "incorrect",
+        "reason": "The Evil Queen persecutes Snow White, not Ariel.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/snow-white-and-the-seven-dwarfs",
+            "locator": "Synopsis: the Magic Mirror identifies Snow White as fairest; The Characters: the jealous Queen and Snow White."
+          }
+        ]
+      }
+    ]
+  }
+}

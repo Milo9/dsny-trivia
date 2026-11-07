@@ -1,0 +1,1955 @@
+{
+  "schema": 1,
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "sourcesChecked": [
+    "aquamouse",
+    "carousel-theater",
+    "contemporary-tower",
+    "dining-team",
+    "disney-company-origin",
+    "disney-parks-lifetime",
+    "dream-spa",
+    "epcot-city",
+    "fleet-2025-table",
+    "flowers-firsts",
+    "flowers-three-strip",
+    "illuminations-debut",
+    "illuminations-history",
+    "imagineering-1959",
+    "iwerks-first-sketch",
+    "monorail-record",
+    "museum-address",
+    "oswald-restoration",
+    "oswald-rights",
+    "pirates-opening",
+    "pirates-opening-archive",
+    "pixar-acquisition",
+    "pixar-sec",
+    "rotoscope-definition",
+    "roy-death",
+    "snow-reference",
+    "tower-hotel",
+    "travers",
+    "treasure-corroboration",
+    "treasure-first",
+    "treasure-fleet-six",
+    "uncle-walt",
+    "utilidors",
+    "water-coasters",
+    "wed-initials",
+    "wish-dining-guide",
+    "wish-edge",
+    "wish-nursery",
+    "wish-vibe",
+    "worlds-marvel",
+    "youth-both"
+  ],
+  "reviews": [
+    {
+      "questionId": 367,
+      "hash": "036611bee9dbfd661caf1f4fc921cc8e8a2acd7060ff6b43d8bf9eebf540945c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct hotel-setting fact, unlike 609's attraction identity and 1160's California replacement history. Full matching digests and cross-bank comparisons inspected; final literal-wording challenge performed by Codex.",
+      "context": "Hollywood Studios version of The Twilight Zone Tower of Terror.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The attraction page explicitly locates its story inside a named hotel.",
+        "sources": [
+          "tower-hotel"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The setting is named Hollywood Tower Hotel.",
+          "sources": [
+            "tower-hotel"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Sunset Hotel is not the hotel named for this setting.",
+          "sources": [
+            "tower-hotel"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Hollywood Haunt is not the named fictional property.",
+          "sources": [
+            "tower-hotel"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tower Inn is not this property's name.",
+          "sources": [
+            "tower-hotel"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tokyo uses a different Tower story; the explicit Florida park prevents that objection. The three other labels cannot name the hotel identified by the page."
+      }
+    },
+    {
+      "questionId": 368,
+      "hash": "ae3cb80283ca87eb3494743db7a2b7f72bbe56319f3b6c6955cfeb455f125426",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "626 tests the three served hotels, not which building contains the track. Full matching digests and cross-bank comparisons inspected; final literal-wording challenge performed by Codex.",
+      "context": "Main tower atrium at Walt Disney World; not the ground-floor check-in lobby.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The hotel's own page describes the monorail passing through its tower.",
+        "sources": [
+          "contemporary-tower"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Contemporary tower contains the monorail concourse.",
+          "sources": [
+            "contemporary-tower"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Grand Floridian is not the named tower through which the train passes.",
+          "sources": [
+            "contemporary-tower"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Polynesian has monorail service, but is not the identified indoor tower route.",
+          "sources": [
+            "contemporary-tower"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "BoardWalk Inn is not the hotel housing that route.",
+          "sources": [
+            "contemporary-tower"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Having a monorail stop does not satisfy passing through the tower. Atrium/concourse wording removes the lobby-floor error; all options are hotel names."
+      }
+    },
+    {
+      "questionId": 369,
+      "hash": "d0cd9473ed28b6bcee4aca4aeb1426abbab41d6f6fe804cf9a6e4e60e3dc9fd4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from 955's World's Fair sponsor and 2218's song. Medium suits recognition of this signature show. Full matching digests and cross-bank comparisons inspected; final literal-wording challenge performed by Codex.",
+      "context": "Magic Kingdom household-technology show, regardless of temporary refurbishment.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The official description combines American family technology with a revolving auditorium.",
+        "sources": [
+          "carousel-theater"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Carousel of Progress has precisely that technology narrative and revolving seating.",
+          "sources": [
+            "carousel-theater"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hall of Presidents is not the named family-technology show.",
+          "sources": [
+            "carousel-theater"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "American Adventure is not the Magic Kingdom attraction identified here.",
+          "sources": [
+            "carousel-theater"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hall of Technology is not the attraction named by the official description.",
+          "sources": [
+            "carousel-theater"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Presidential or general national history is broader than household inventions; neither creates a second match for the conjunction of location, format and subject."
+      }
+    },
+    {
+      "questionId": 370,
+      "hash": "21f78a58f972d90c4024f448cb3f73a2815dbf063a50e8e47e1ee6320c14663b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Date is independent of 621's boat-ride identity. Full matching digests and cross-bank comparisons inspected; final literal-wording challenge performed by Codex.",
+      "context": "Original Disneyland attraction opening, not Florida or pre-opening footage.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Two archive accounts explicitly date the public opening to March 18, 1967.",
+        "sources": [
+          "pirates-opening",
+          "pirates-opening-archive"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "1967 is the stated Disneyland opening year.",
+          "sources": [
+            "pirates-opening",
+            "pirates-opening-archive"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1965 is not the stated opening year.",
+          "sources": [
+            "pirates-opening",
+            "pirates-opening-archive"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1970 is not the stated opening year.",
+          "sources": [
+            "pirates-opening",
+            "pirates-opening-archive"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1973 belongs to the Florida version, not Disneyland.",
+          "sources": [
+            "pirates-opening",
+            "pirates-opening-archive"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A December 1966 filmed preview is not a public opening; 1973 is a real but different park date. The specified park leaves exactly 1967."
+      }
+    },
+    {
+      "questionId": 371,
+      "hash": "661694de8a9cd7b816a69c25f78038eaaa3d6cd85e198be4f3bcfbbd96158b38",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Corrects a false first-show implication; 551 asks the later anniversary show. Full matching digests and cross-bank comparisons inspected; final literal-wording challenge performed by Codex.",
+      "context": "1999 millennium version through its 2019 final performance.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The timeline identifies the Reflections of Earth version and both endpoints.",
+        "sources": [
+          "illuminations-history",
+          "illuminations-debut"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Reflections of Earth is the millennium version ending in September 2019.",
+          "sources": [
+            "illuminations-history",
+            "illuminations-debut"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "SpectroMagic is not the title of the documented EPCOT show.",
+          "sources": [
+            "illuminations-history",
+            "illuminations-debut"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Harmonious is not the show the archive identifies for this 1999-2019 run.",
+          "sources": [
+            "illuminations-history",
+            "illuminations-debut"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Epcot Forever followed the final performance, rather than occupying this run.",
+          "sources": [
+            "illuminations-history",
+            "illuminations-debut"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Earlier EPCOT lagoon shows invalidate original, so that word is removed. The initial 2000 branding is the same Reflections of Earth version, not another answer."
+      }
+    },
+    {
+      "questionId": 374,
+      "hash": "072f82fbf65c3278d5c383eb40ad6843646e0b0b78c6c6e004dc50e827782e7e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct service-network terminology; hard recall is reasonable. Full matching digests and cross-bank comparisons inspected; final literal-wording challenge performed by Codex.",
+      "context": "Coined Disney name for the service network below the guest level.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The A-to-Z entry explicitly names the tunnels Utilidors and explains the ground-level construction.",
+        "sources": [
+          "utilidors"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Utilidors is the documented coined name.",
+          "sources": [
+            "utilidors"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Castways is not the coined name given in the entry.",
+          "sources": [
+            "utilidors"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Magicways is not that network's documented name.",
+          "sources": [
+            "utilidors"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Underways is not that network's documented name.",
+          "sources": [
+            "utilidors"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Ordinary descriptions such as tunnels and service corridors could also fit the original question; final options are competing coined names. Below guest areas avoids implying excavation below Florida ground level."
+      }
+    },
+    {
+      "questionId": 376,
+      "hash": "1ac8a639e4c12b68cb97ae88e22e9ef20182efeecbb2b836b7c39656bc75c041",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Historical record corroborated. Different from 2647's vehicle designer. Full matching digests and cross-bank comparisons inspected; final literal-wording challenge performed by Codex.",
+      "context": "Historical 1959 monorail record in the Western Hemisphere.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney archive narration and Imagineering's timeline agree on the Disneyland system and record.",
+        "sources": [
+          "monorail-record",
+          "imagineering-1959"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disneyland Monorail is the system credited with the record.",
+          "sources": [
+            "monorail-record",
+            "imagineering-1959"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Walt Disney World system is a distinct later system, not the Disneyland record holder.",
+          "sources": [
+            "monorail-record",
+            "imagineering-1959"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tokyo's Resort Line is a distinct system and outside the Western Hemisphere.",
+          "sources": [
+            "monorail-record",
+            "imagineering-1959"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Seattle Center Monorail is a distinct system, not the credited Disneyland installation.",
+          "sources": [
+            "monorail-record",
+            "imagineering-1959"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All four options now name monorails, so the transport-type word reveals no answer. The precise first daily-operating qualifier does not claim the first monorail invention worldwide."
+      }
+    },
+    {
+      "questionId": 380,
+      "hash": "0cfad83d0705bdee216d9ba7febe13669b2ceb8cae921778ba702c41165865e9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "678 tests the short's identity, not its year; 930 and 931 test production order. Full matching digests and cross-bank comparisons inspected; final literal-wording challenge performed by Codex.",
+      "context": "Steamboat Willie's original synchronized-sound release.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The archive gives the November 18, 1928 opening after two silent Mickey films.",
+        "sources": [
+          "disney-company-origin"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "1928 is the release year.",
+          "sources": [
+            "disney-company-origin"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1925 predates the stated release.",
+          "sources": [
+            "disney-company-origin"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1930 follows the stated release.",
+          "sources": [
+            "disney-company-origin"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1932 follows the stated release.",
+          "sources": [
+            "disney-company-origin"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "First produced and first released Mickey cartoons are different; the named sound cartoon is specifically dated. No other listed year is its original release."
+      }
+    },
+    {
+      "questionId": 381,
+      "hash": "10fafb582b331537f55e83670457416b02c9281ae21022a9b9069536ddea3c6c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Theme park options are now parallel. 1374 concerns the same-named television program, not this lifetime milestone. Full matching digests and cross-bank comparisons inspected; final literal-wording challenge performed by Codex.",
+      "context": "A park whose opening Walt witnessed, rather than a project he only planned.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The chronology puts Disneyland before Walt's death and all three alternatives after it.",
+        "sources": [
+          "disney-parks-lifetime"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disneyland opened in 1955 during Walt's life.",
+          "sources": [
+            "disney-parks-lifetime"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Magic Kingdom opened in the Florida resort in 1971, after 1966.",
+          "sources": [
+            "disney-parks-lifetime"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "EPCOT opened in 1982, after Walt's death.",
+          "sources": [
+            "disney-parks-lifetime"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tokyo Disneyland opened in 1983, after Walt's death.",
+          "sources": [
+            "disney-parks-lifetime"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Walt helped plan Florida but could not see its park open. His city concept called EPCOT is not the theme park in these options."
+      }
+    },
+    {
+      "questionId": 383,
+      "hash": "0e8990bbe24669aefae83d8bfc823e29b7fa956a57b4d5960ccb1d8904e56a34",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "No duplicate first-sketch attribution found in topic or cross-bank search. Full matching digests and cross-bank comparisons inspected; final literal-wording challenge performed by Codex.",
+      "context": "Attribution of the first Mickey sketch, not every later animator of Mickey.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Ub Iwerks biography explicitly assigns the first sketch to him.",
+        "sources": [
+          "iwerks-first-sketch"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Ub Iwerks receives the first-sketch attribution.",
+          "sources": [
+            "iwerks-first-sketch"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ward Kimball is not the person credited with that first sketch.",
+          "sources": [
+            "iwerks-first-sketch"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ted Sears is not the person credited with that first sketch.",
+          "sources": [
+            "iwerks-first-sketch"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Les Clark is not the credited first sketcher, despite his early Mickey animation work.",
+          "sources": [
+            "iwerks-first-sketch"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Later creative contributions would make helped design broad. Final wording asks the singular first-sketch credit, so Les Clark's animation does not compete."
+      }
+    },
+    {
+      "questionId": 387,
+      "hash": "bf76fa5bb9eabdb7c41619ba3d5260cf7e98b3aa3178eb29977eb7c63802d364",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Personality/history within walt scope, not a TV episode or show-title question. Full matching digests and cross-bank comparisons inspected; final literal-wording challenge performed by Codex.",
+      "context": "Public affectionate nickname, not every form of address used by staff or relatives.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The grandchildren-event account explicitly contrasts the audience's Uncle Walt with the family's Grandpa.",
+        "sources": [
+          "uncle-walt"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Uncle Walt is the documented public nickname.",
+          "sources": [
+            "uncle-walt"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Papa Walt is not the public nickname identified in the account.",
+          "sources": [
+            "uncle-walt"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cousin Walt is not the nickname identified there.",
+          "sources": [
+            "uncle-walt"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Brother Walt is not the nickname identified there.",
+          "sources": [
+            "uncle-walt"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Mr. Disney was genuinely used by staff, so it is removed rather than claimed false. All final choices are comparable family-style nicknames; the account singles out Uncle."
+      }
+    },
+    {
+      "questionId": 392,
+      "hash": "024c85d81de659463e14264d8d3e2443824a41081f9c1ec37d51199e80b2dd61",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from 101's acronym and 1193's final filmed topic; options made comparable in length. Full matching digests and cross-bank comparisons inspected; final literal-wording challenge performed by Codex.",
+      "context": "Walt's planned EPCOT community in the 1966 Florida Project film.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Sklar's account explicitly describes the proposed city and its residents.",
+        "sources": [
+          "epcot-city"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "A living, working experimental city is the original concept.",
+          "sources": [
+            "epcot-city"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A world-cultures theme park describes a different later implementation.",
+          "sources": [
+            "epcot-city"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A wildlife preserve does not describe the proposed city.",
+          "sources": [
+            "epcot-city"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A production campus is not the proposed residential community.",
+          "sources": [
+            "epcot-city"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The city included shopping and industry, but those components do not convert the whole EPCOT proposal into a film campus, preserve or later theme park."
+      }
+    },
+    {
+      "questionId": 393,
+      "hash": "3705ddeceb95ab7206b2987ff0004b1722b8227981c43f097d1271e8264a286a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "135 asks cast and mixed media; 1206 asks songwriters. Neither repeats book authorship. Full matching digests and cross-bank comparisons inspected; final literal-wording challenge performed by Codex.",
+      "context": "Authorship of the original Mary Poppins books, rather than screenplay or songs.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The author entry explicitly attributes the books to P. L. Travers.",
+        "sources": [
+          "travers"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "P. L. Travers is the named author.",
+          "sources": [
+            "travers"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "J. M. Barrie is not the author to whom these books are attributed.",
+          "sources": [
+            "travers"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A. A. Milne is not their attributed author.",
+          "sources": [
+            "travers"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lewis Carroll is not their attributed author.",
+          "sources": [
+            "travers"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Film adaptation collaborators do not share the authorship asked here. All four are author names and the original books have the explicit single attribution."
+      }
+    },
+    {
+      "questionId": 394,
+      "hash": "9660d409985852096153a2d3057cd16c56068ff1ef04ac4062304ead7050ef34",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different 2006 event from 357; no other Pixar acquisition question found. Full matching digests and cross-bank comparisons inspected; final literal-wording challenge performed by Codex.",
+      "context": "Completed acquisition of Pixar, not an earlier production agreement.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The corporate completion announcement and SEC Item 2.01 both give May 5, 2006.",
+        "sources": [
+          "pixar-acquisition",
+          "pixar-sec"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "2006 is the completed merger year.",
+          "sources": [
+            "pixar-acquisition",
+            "pixar-sec"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2003 is not the merger year stated in the transaction record.",
+          "sources": [
+            "pixar-acquisition",
+            "pixar-sec"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2009 is not the Pixar completion year.",
+          "sources": [
+            "pixar-acquisition",
+            "pixar-sec"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2012 is not the Pixar completion year.",
+          "sources": [
+            "pixar-acquisition",
+            "pixar-sec"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Pixar's preexisting Disney distribution relationship is not the acquisition; both transaction records specify completion. Other corporate acquisition dates cannot change Pixar's date."
+      }
+    },
+    {
+      "questionId": 396,
+      "hash": "c7e16b428c5bdb9216e202d50c2aab674e214a2fb72ea4cd45b734064f7e5347",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Removed the Oscar clue and answer dates. 1197 asks first competitive Oscar and 1196 category; the retained fact is the separate color-process innovation. Full matching digests and cross-bank comparisons inspected; final literal-wording challenge performed by Codex.",
+      "context": "Disney's first use of three-strip Technicolor in an animated short.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The museum production account and Disney's firsts list independently name Flowers and Trees.",
+        "sources": [
+          "flowers-three-strip",
+          "flowers-firsts"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Flowers and Trees is explicitly credited as the first.",
+          "sources": [
+            "flowers-three-strip",
+            "flowers-firsts"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Steamboat Willie is not the short assigned this color-process first.",
+          "sources": [
+            "flowers-three-strip",
+            "flowers-firsts"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Skeleton Dance is not the short assigned that first.",
+          "sources": [
+            "flowers-three-strip",
+            "flowers-firsts"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Three Little Pigs followed Flowers and Trees and cannot hold its first-use credit.",
+          "sources": [
+            "flowers-three-strip",
+            "flowers-firsts"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Earlier partial color processes are excluded by three-strip. Later color shorts and sound milestones do not satisfy first use of this process."
+      }
+    },
+    {
+      "questionId": 397,
+      "hash": "fcc98a673db44e252cc2ebdcc84de111fe651a275e43be58244832d5eb005010",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct museum-location fact; the named institution may change location so schedule recheck. Full matching digests and cross-bank comparisons inspected; final literal-wording challenge performed by Codex.",
+      "context": "The Walt Disney Family Museum, rather than every museum devoted to Walt.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Its own visit page places the named institution in San Francisco.",
+        "sources": [
+          "museum-address"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "San Francisco is the city in the address.",
+          "sources": [
+            "museum-address"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Los Angeles is a different city from the museum's address.",
+          "sources": [
+            "museum-address"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Anaheim is a different city from the museum's address.",
+          "sources": [
+            "museum-address"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Marceline is a different city; another Walt museum would not be this named institution.",
+          "sources": [
+            "museum-address"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The singular proper museum name prevents confusion with the hometown museum. All final options have only city and state; the Presidio parenthetical no longer clues the key."
+      }
+    },
+    {
+      "questionId": 398,
+      "hash": "4411878aacecf80bf4e96b91673ed71a637b511910889a3b2097160d71b2260d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different event from 354's Haunted Mansion opening and 1490's family leadership. Full matching digests and cross-bank comparisons inspected; final literal-wording challenge performed by Codex.",
+      "context": "Roy O. Disney's death after the Florida resort opening.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The archive explicitly gives December 20, 1971.",
+        "sources": [
+          "roy-death"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "1971 is the stated year of Roy's death.",
+          "sources": [
+            "roy-death"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1973 is not the year of the stated death date.",
+          "sources": [
+            "roy-death"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1969 is not the year of the stated death date.",
+          "sources": [
+            "roy-death"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1975 is not the year of the stated death date.",
+          "sources": [
+            "roy-death"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Roy O. is not Roy E.; the dated biography also confirms the October opening followed by death two months later. Only one listed year matches."
+      }
+    },
+    {
+      "questionId": 402,
+      "hash": "d58eda7159bff4ba25bbd7fba75e5e129beefd6e5db87de685df4ef0923b1f3e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "668 asks Walt's middle name, 1191 the company's later name, and 2357 the founding year; this tests WED etymology. Full matching digests and cross-bank comparisons inspected; final literal-wording challenge performed by Codex.",
+      "context": "The personal initials used in WED Enterprises.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The founding entry explicitly expands WED to Walter Elias Disney.",
+        "sources": [
+          "wed-initials"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Walter Elias Disney is the documented expansion.",
+          "sources": [
+            "wed-initials"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Walt's Entertainment Division is not the documented expansion.",
+          "sources": [
+            "wed-initials"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "World Entertainment Design is not the documented expansion.",
+          "sources": [
+            "wed-initials"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Walt's Engineering Department is not the documented expansion.",
+          "sources": [
+            "wed-initials"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "An engineering organization might plausibly sound like the fourth phrase, but the recorded name origin is personal initials, not a department acronym."
+      }
+    },
+    {
+      "questionId": 404,
+      "hash": "f67da688b848280c0829c3aed2c0612ab450f19216583cde9dea0686ddacaf88",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "521 asks the literary source of Treasure Planet; 2407 asks an island's historical name. Neither asks the production milestone. Full matching digests and cross-bank comparisons inspected; final literal-wording challenge performed by Codex.",
+      "context": "Disney's first feature entirely in live action, excluding hybrids.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Both archive entries distinguish Treasure Island (1950) from earlier films containing animation.",
+        "sources": [
+          "treasure-first",
+          "treasure-corroboration"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Treasure Island is explicitly identified as the first wholly live-action Disney film.",
+          "sources": [
+            "treasure-first",
+            "treasure-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "20,000 Leagues Under the Sea is not the film credited with that first.",
+          "sources": [
+            "treasure-first",
+            "treasure-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Davy Crockett is not the film credited with that first.",
+          "sources": [
+            "treasure-first",
+            "treasure-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Swiss Family Robinson is not the film credited with that first.",
+          "sources": [
+            "treasure-first",
+            "treasure-corroboration"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The Reluctant Dragon and Song of the South cannot defeat the premise because they contain animation and are outside the listed alternatives. All-live-action is the required distinction."
+      }
+    },
+    {
+      "questionId": 405,
+      "hash": "5af08c3b9dc5772abe75b5c3891ac26b5d2ae7ecd94d2353695d65066f2a3c14",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Snow White production context keeps the Disney scope. Distinct from 685's multiplane debut and 2578's CAPS workflow. Full matching digests and cross-bank comparisons inspected; final literal-wording challenge performed by Codex.",
+      "context": "Tracing as a movement aid in the 1937 Snow White production; not all use of reference.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The museum confirms filmed, traced reference; the animator's definition names tracing rotoscoping.",
+        "sources": [
+          "snow-reference",
+          "rotoscope-definition"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Rotoscoping names frame tracing of filmed live action.",
+          "sources": [
+            "snow-reference",
+            "rotoscope-definition"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Multiplane photography concerns layers and depth, not this tracing operation.",
+          "sources": [
+            "snow-reference",
+            "rotoscope-definition"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Motion capture records movement data rather than hand tracing filmed frames.",
+          "sources": [
+            "snow-reference",
+            "rotoscope-definition"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Stop-motion animation photographs incrementally posed physical objects, not traced live-action frames.",
+          "sources": [
+            "snow-reference",
+            "rotoscope-definition"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Live reference animation could encompass this and was removed. Tracing as an aid does not claim every finished Snow White frame was a literal copy; the two sources distinguish the techniques."
+      }
+    },
+    {
+      "questionId": 408,
+      "hash": "35c9c66bc76f86819f834b6bb8d5382fafbb370bd1590a8cf7727b54edeba9c6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "375 asks the producer involved; 2422 asks the new character, not the rights-owning studio. Full matching digests and cross-bank comparisons inspected; final literal-wording challenge performed by Codex.",
+      "context": "Rights ownership at the 1928 loss of control, distinct from distribution contracts.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The archive identifies Universal as copyright holder; a studio restoration interview corroborates ownership.",
+        "sources": [
+          "oswald-rights",
+          "oswald-restoration"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Universal Pictures held the rights.",
+          "sources": [
+            "oswald-rights",
+            "oswald-restoration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "MGM is not the rights holder identified for this event.",
+          "sources": [
+            "oswald-rights",
+            "oswald-restoration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Paramount is not the rights holder identified for this event.",
+          "sources": [
+            "oswald-rights",
+            "oswald-restoration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "RKO is not the rights holder identified for this event.",
+          "sources": [
+            "oswald-rights",
+            "oswald-restoration"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Charles Mintz negotiated distribution but is not the studio owner asked here. The dated stem excludes Disney's later recovery of the character."
+      }
+    },
+    {
+      "questionId": 412,
+      "hash": "81ed071adbc66ceb379e6915fa3831ab2c84c81a6d53f200cacda0b48f8be7b0",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed the actual 412 player report. It was already marked resolved in production; no flag writes made. Other Six answers concern coaster music and vehicle seats. Full matching digests and cross-bank comparisons inspected; final literal-wording challenge performed by Codex.",
+      "context": "Historical fleet count including Treasure at its December 2024 maiden voyage.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Post-launch investor commentary calls Treasure sixth; the fleet table lists the six ships and maiden-voyage date.",
+        "sources": [
+          "treasure-fleet-six",
+          "fleet-2025-table"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Six includes Magic, Wonder, Dream, Fantasy, Wish and Treasure.",
+          "sources": [
+            "treasure-fleet-six",
+            "fleet-2025-table"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Four would omit two ships in the listed fleet.",
+          "sources": [
+            "treasure-fleet-six",
+            "fleet-2025-table"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Five was the prior fleet count and omits Treasure itself.",
+          "sources": [
+            "treasure-fleet-six",
+            "fleet-2025-table"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Seven exceeds the six ships at this historical cutoff.",
+          "sources": [
+            "treasure-fleet-six",
+            "fleet-2025-table"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The player report correctly distinguishes before from including Treasure. Final wording explicitly includes it and uses the maiden voyage cutoff; later ships cannot change this historical total."
+      }
+    },
+    {
+      "questionId": 413,
+      "hash": "4cb53b5bdb5abd50b639a27847d003d16c1d7b765f36d970427fd1ebca8ebfd4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "No other nursery-name fact found in the cruise digest. Full matching digests and cross-bank comparisons inspected; final literal-wording challenge performed by Codex.",
+      "context": "Disney Wish childcare venue for babies and toddlers.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The venue title and ship-location list establish the Wish nursery's proper name.",
+        "sources": [
+          "wish-nursery"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "It's a Small World Nursery is the documented name, with punctuation normalized.",
+          "sources": [
+            "wish-nursery"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mickey's Nursery is not the named Wish nursery.",
+          "sources": [
+            "wish-nursery"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Disney Baby Care is not that venue's proper name.",
+          "sources": [
+            "wish-nursery"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pixie Dust Nursery is not that venue's proper name.",
+          "sources": [
+            "wish-nursery"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other play areas for toddlers are not the nursery. The specified ship prevents reliance on a changing fleet-wide generalization."
+      }
+    },
+    {
+      "questionId": 414,
+      "hash": "558e5efdf38eff9ab80ab5559e1b2e9313a47e2967e45487cfe93aae1c5aba04",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "No duplicate Dream spa-name question in the digest. Full matching digests and cross-bank comparisons inspected; final literal-wording challenge performed by Codex.",
+      "context": "Named spa aboard Disney Dream.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The official spa title explicitly lists Disney Dream among its ships.",
+        "sources": [
+          "dream-spa"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Senses Spa & Salon is the named Dream spa.",
+          "sources": [
+            "dream-spa"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Disney Retreat Spa is not that venue's name.",
+          "sources": [
+            "dream-spa"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Magic Wellness is not that venue's name.",
+          "sources": [
+            "dream-spa"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Relaxation Station is not that venue's name.",
+          "sources": [
+            "dream-spa"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The final stem removes salon, which appeared only in the key. The ship list establishes Dream; no claim about a single uniform spa on every ship is required."
+      }
+    },
+    {
+      "questionId": 415,
+      "hash": "5f7fa93c91732ec7106540a7eb628340f0f485ab4068e104a1aa0228ac34a092",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "420 asks the team policy. 2551 counts songs and 5 counts films; same number is not a duplicate. Full matching digests and cross-bank comparisons inspected; final literal-wording challenge performed by Codex.",
+      "context": "Disney Wish main rotational dinner schedule, not every place serving food.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The official pocket guide explicitly lists three rotational restaurants.",
+        "sources": [
+          "wish-dining-guide"
+        ]
+      },
+      "options": [
+        {
+          "basis": "exhaustive-list",
+          "reason": "Three is the exhaustive count: 1923, Arendelle and Worlds of Marvel.",
+          "sources": [
+            "wish-dining-guide"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Two omits one of the three main venues.",
+          "sources": [
+            "wish-dining-guide"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Four adds a venue beyond the three listed.",
+          "sources": [
+            "wish-dining-guide"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Five adds two venues beyond the three listed.",
+          "sources": [
+            "wish-dining-guide"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Quick service and adult specialty restaurants are outside main rotational dining. A longer sailing can repeat rooms without increasing the number of distinct restaurants."
+      }
+    },
+    {
+      "questionId": 418,
+      "hash": "bc65dd23f31c2bb8883c458cbb8b431dc2388569d6f4b7179246af6257f4885b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "733 tests Dream/Fantasy AquaDuck; 2348 asks an AquaMouse storyline company, not its ship/ride association. Full matching digests and cross-bank comparisons inspected; final literal-wording challenge performed by Codex.",
+      "context": "Disney Wish water coaster identity.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The ship list and water-coaster overview identify AquaMouse aboard Wish.",
+        "sources": [
+          "aquamouse",
+          "water-coasters"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "AquaMouse is the named Wish water coaster.",
+          "sources": [
+            "aquamouse",
+            "water-coasters"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "AquaDuck is not the name assigned to Wish's coaster.",
+          "sources": [
+            "aquamouse",
+            "water-coasters"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "WaterShip is not the documented attraction name.",
+          "sources": [
+            "aquamouse",
+            "water-coasters"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hydro Dash is not the documented attraction name.",
+          "sources": [
+            "aquamouse",
+            "water-coasters"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The similar AquaDuck name is a plausible competitor but does not identify the Wish installation. Exact ship context makes the identity unique."
+      }
+    },
+    {
+      "questionId": 420,
+      "hash": "84aed2b4d7fcd451785326f6213375d8791ba673a294b6c126caa6599fc1bae2",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "415's restaurant count is a separate feature; the earlier general rotational-dining question is already retired. Full matching digests and cross-bank comparisons inspected; final literal-wording challenge performed by Codex.",
+      "context": "Main rotational dining serving-team arrangement.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The official FAQ and guide state that guests keep the same serving team between restaurants.",
+        "sources": [
+          "dining-team",
+          "wish-dining-guide"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The same serving team moves with guests.",
+          "sources": [
+            "dining-team",
+            "wish-dining-guide"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Nightly replacement contradicts the same-team policy.",
+          "sources": [
+            "dining-team",
+            "wish-dining-guide"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Changing teams with rooms contradicts the team moving with guests.",
+          "sources": [
+            "dining-team",
+            "wish-dining-guide"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "A nightly lottery contradicts keeping the assigned team.",
+          "sources": [
+            "dining-team",
+            "wish-dining-guide"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The question asks the designed assignment policy, not whether sickness could cause an exceptional staff substitution. All options now answer the same team-assignment question."
+      }
+    },
+    {
+      "questionId": 423,
+      "hash": "5682902b3d966a4981a4b27c7dfb476aa72b570b0bc616fc453793eff9bdd734",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "737 asks the separate Frozen-themed restaurant; knowing its title does not supply this one. Full matching digests and cross-bank comparisons inspected; final literal-wording challenge performed by Codex.",
+      "context": "Disney Wish Marvel-themed main dining experience.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The official Worlds of Marvel page explicitly lists Wish and describes its Marvel dining.",
+        "sources": [
+          "worlds-marvel"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Worlds of Marvel is the venue's proper name.",
+          "sources": [
+            "worlds-marvel"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Avengers Dining is not the venue title.",
+          "sources": [
+            "worlds-marvel"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Marvel Bistro is not the venue title.",
+          "sources": [
+            "worlds-marvel"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Stark Industries Kitchen is not the venue title.",
+          "sources": [
+            "worlds-marvel"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Avengers: Quantum Encounter is a show within the venue, not an option called Avengers Dining. A shared franchise word does not validate a different invented restaurant title."
+      }
+    },
+    {
+      "questionId": 424,
+      "hash": "9a802d2deaca1199ccb8c56528bacbd667c8554c1d132688f24e37c4c7775e95",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "425 tests the other club and age band; either fact alone leaves the other club name unknown. Full matching digests and cross-bank comparisons inspected; final literal-wording challenge performed by Codex.",
+      "context": "Official advertised full age range for the Wish club.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Both club pages and the FAQ distinguish Edge 11-14 from Vibe 14-17.",
+        "sources": [
+          "wish-edge",
+          "wish-vibe",
+          "youth-both"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Edge covers the full 11-through-14 range.",
+          "sources": [
+            "wish-edge",
+            "wish-vibe",
+            "youth-both"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Vibe covers 14-17 and does not cover 11-13.",
+          "sources": [
+            "wish-edge",
+            "wish-vibe",
+            "youth-both"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Loft is not the named Wish club for this range.",
+          "sources": [
+            "wish-edge",
+            "wish-vibe",
+            "youth-both"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Club Tween is not the named Wish club for this range.",
+          "sources": [
+            "wish-edge",
+            "wish-vibe",
+            "youth-both"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A 14-year-old can fit either age policy, but the literal full 11-14 range excludes Vibe. Open-house exceptions do not redefine the advertised age band."
+      }
+    },
+    {
+      "questionId": 425,
+      "hash": "99bbed670574087876e05ea8bf5b0f9d49b8abfa3ede10b75d75924759963c57",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different named club from 424; age policies are mutable and scheduled for recheck. Full matching digests and cross-bank comparisons inspected; final literal-wording challenge performed by Codex.",
+      "context": "Official advertised full age range for the Wish teen club.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Both club pages and the FAQ distinguish Vibe 14-17 from Edge 11-14.",
+        "sources": [
+          "wish-vibe",
+          "wish-edge",
+          "youth-both"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Vibe covers the full 14-through-17 range.",
+          "sources": [
+            "wish-vibe",
+            "wish-edge",
+            "youth-both"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Edge stops at 14 and does not cover 15-17.",
+          "sources": [
+            "wish-vibe",
+            "wish-edge",
+            "youth-both"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Loft is not the named Wish club for this range.",
+          "sources": [
+            "wish-vibe",
+            "wish-edge",
+            "youth-both"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Club Teen is not the named Wish club for this range.",
+          "sources": [
+            "wish-vibe",
+            "wish-edge",
+            "youth-both"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The shared endpoint 14 is not enough: full 14-17 excludes Edge. The Hideaway's older group is a different space and is not a listed answer."
+      }
+    }
+  ]
+}

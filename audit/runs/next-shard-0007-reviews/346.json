@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 346,
+  "hash": "de3a734f9cf47b64b5befa0b542dcebae5357aa3c896affcb1e4244a1e60c9c1",
+  "questionSnapshot": {
+    "id": 346,
+    "question": "At Disneyland, above which Main Street building did Walt Disney have his private apartment?",
+    "answers": [
+      "The fire station",
+      "The Opera House",
+      "City Hall",
+      "The Emporium"
+    ],
+    "difficulty": "easy",
+    "category": "parks"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Changed to historical occupancy and parallel building names; removed the much longer correct option and the Town Hall/City Hall near-duplicate distractors. The entry identifies the apartment as upstairs in one specific building; it is not an assertion about every planned Disney apartment. Other Main Street questions concern street geography or inspiration. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+  "verification": {
+    "context": "At Disneyland, above which Main Street building did Walt Disney have his private apartment? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Walt apartment was upstairs from the Disneyland fire station. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/fire-station/",
+          "locator": "Fire Station entry: Town Square at Disneyland and Walt small apartment upstairs"
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Changed to historical occupancy and parallel building names; removed the much longer correct option and the Town Hall/City Hall near-duplicate distractors. The entry identifies the apartment as upstairs in one specific building; it is not an assertion about every planned Disney apartment. Other Main Street questions concern street geography or inspiration."
+    },
+    "options": [
+      {
+        "answer": "The fire station",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Walt apartment was upstairs from the Disneyland fire station.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/fire-station/",
+            "locator": "Fire Station entry: Town Square at Disneyland and Walt small apartment upstairs"
+          }
+        ]
+      },
+      {
+        "answer": "The Opera House",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "The Opera House is not the building identified for that apartment.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/fire-station/",
+            "locator": "Fire Station entry: Town Square at Disneyland and Walt small apartment upstairs"
+          }
+        ]
+      },
+      {
+        "answer": "City Hall",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "City Hall is not the building identified for that apartment.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/fire-station/",
+            "locator": "Fire Station entry: Town Square at Disneyland and Walt small apartment upstairs"
+          }
+        ]
+      },
+      {
+        "answer": "The Emporium",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "The Emporium is not the building identified for that apartment.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/fire-station/",
+            "locator": "Fire Station entry: Town Square at Disneyland and Walt small apartment upstairs"
+          }
+        ]
+      }
+    ]
+  }
+}

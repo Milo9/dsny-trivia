@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 278,
+  "hash": "2958ed1f051061ec9a3e2f20a56ffafc65c90f74c00f376b7c5344eefdf82b2a",
+  "questionSnapshot": {
+    "id": 278,
+    "question": "In Sleeping Beauty (1959), what mountain region does the narrator call Maleficent's domain?",
+    "answers": [
+      "The Forbidden Mountains",
+      "The Misty Mountains",
+      "The Shadow Mountains",
+      "The Black Mountains"
+    ],
+    "difficulty": "hard",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Specified narrator mountain region to distinguish singular castle/mountain shorthand from exact plural narration. Two externally hosted transcriptions agree; no primary film copy inspected. Each alternative is a different region name, not another description of the same fortress. Raven name q323 is separate.",
+  "verification": {
+    "context": "In Sleeping Beauty (1959), what mountain region does the narrator call Maleficent's domain?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Narrator names the Forbidden Mountains.",
+      "sources": [
+        {
+          "url": "https://www.cornel1801.com/disney/Sleeping-Beauty-1959/film2.html",
+          "locator": "Narrator after sixteen-year transition, before search-party scene: specifically names Forbidden Mountains as Maleficent domain. Third-party transcription, not studio script."
+        },
+        {
+          "url": "https://copioni.corrierespettacolo.it/wp-content/uploads/2016/12/WALT%20DISNEY__Sleeping%20beauty__inglese__null__Per%20ragazzi__0.pdf",
+          "locator": "PDF page 10 (zero-based 9), narrator immediately before search patrol: corroborates plural Forbidden Mountains. External transcript; not claimed as an authenticated production screenplay."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Specified narrator mountain region to distinguish singular castle/mountain shorthand from exact plural narration. Two externally hosted transcriptions agree; no primary film copy inspected. Each alternative is a different region name, not another description of the same fortress. Raven name q323 is separate."
+    },
+    "options": [
+      {
+        "answer": "The Forbidden Mountains",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Narrator names the Forbidden Mountains.",
+        "sources": [
+          {
+            "url": "https://www.cornel1801.com/disney/Sleeping-Beauty-1959/film2.html",
+            "locator": "Narrator after sixteen-year transition, before search-party scene: specifically names Forbidden Mountains as Maleficent domain. Third-party transcription, not studio script."
+          },
+          {
+            "url": "https://copioni.corrierespettacolo.it/wp-content/uploads/2016/12/WALT%20DISNEY__Sleeping%20beauty__inglese__null__Per%20ragazzi__0.pdf",
+            "locator": "PDF page 10 (zero-based 9), narrator immediately before search patrol: corroborates plural Forbidden Mountains. External transcript; not claimed as an authenticated production screenplay."
+          }
+        ]
+      },
+      {
+        "answer": "The Misty Mountains",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Misty Mountains is not the narrated name.",
+        "sources": [
+          {
+            "url": "https://www.cornel1801.com/disney/Sleeping-Beauty-1959/film2.html",
+            "locator": "Narrator after sixteen-year transition, before search-party scene: specifically names Forbidden Mountains as Maleficent domain. Third-party transcription, not studio script."
+          },
+          {
+            "url": "https://copioni.corrierespettacolo.it/wp-content/uploads/2016/12/WALT%20DISNEY__Sleeping%20beauty__inglese__null__Per%20ragazzi__0.pdf",
+            "locator": "PDF page 10 (zero-based 9), narrator immediately before search patrol: corroborates plural Forbidden Mountains. External transcript; not claimed as an authenticated production screenplay."
+          }
+        ]
+      },
+      {
+        "answer": "The Shadow Mountains",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Shadow Mountains is not the narrated name.",
+        "sources": [
+          {
+            "url": "https://www.cornel1801.com/disney/Sleeping-Beauty-1959/film2.html",
+            "locator": "Narrator after sixteen-year transition, before search-party scene: specifically names Forbidden Mountains as Maleficent domain. Third-party transcription, not studio script."
+          },
+          {
+            "url": "https://copioni.corrierespettacolo.it/wp-content/uploads/2016/12/WALT%20DISNEY__Sleeping%20beauty__inglese__null__Per%20ragazzi__0.pdf",
+            "locator": "PDF page 10 (zero-based 9), narrator immediately before search patrol: corroborates plural Forbidden Mountains. External transcript; not claimed as an authenticated production screenplay."
+          }
+        ]
+      },
+      {
+        "answer": "The Black Mountains",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Black Mountains is not the narrated name.",
+        "sources": [
+          {
+            "url": "https://www.cornel1801.com/disney/Sleeping-Beauty-1959/film2.html",
+            "locator": "Narrator after sixteen-year transition, before search-party scene: specifically names Forbidden Mountains as Maleficent domain. Third-party transcription, not studio script."
+          },
+          {
+            "url": "https://copioni.corrierespettacolo.it/wp-content/uploads/2016/12/WALT%20DISNEY__Sleeping%20beauty__inglese__null__Per%20ragazzi__0.pdf",
+            "locator": "PDF page 10 (zero-based 9), narrator immediately before search patrol: corroborates plural Forbidden Mountains. External transcript; not claimed as an authenticated production screenplay."
+          }
+        ]
+      }
+    ]
+  }
+}

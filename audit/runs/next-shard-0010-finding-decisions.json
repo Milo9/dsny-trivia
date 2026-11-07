@@ -1,0 +1,326 @@
+[
+  {
+    "finding": {
+      "id": "duplicate-1028ecb6ea8b79be7f09",
+      "kind": "duplicate",
+      "questionIds": [
+        309,
+        1284
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "1028ecb6ea8b79be7f09fddd115e93a79b8f0acba02c93848120b2eacdb9bbeb",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 309,
+        "question": "In Inside Out, which emotion is purple?",
+        "answers": [
+          "Fear",
+          "Disgust",
+          "Anger",
+          "Sadness"
+        ],
+        "difficulty": "easy",
+        "category": "pixar"
+      },
+      {
+        "id": 1284,
+        "question": "In Inside Out, which emotion is green?",
+        "answers": [
+          "Disgust",
+          "Fear",
+          "Anger",
+          "Joy"
+        ],
+        "difficulty": "easy",
+        "category": "pixar"
+      }
+    ],
+    "reason": "Different color-character associations: Fear is purple and Disgust green. Learning one does not supply the other's color."
+  },
+  {
+    "finding": {
+      "id": "duplicate-134a6a63896bb48d6735",
+      "kind": "duplicate",
+      "questionIds": [
+        272,
+        1063
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "134a6a63896bb48d6735273048cd0716bfed6cf254bc819eefec91b9d0a30c2b",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 272,
+        "question": "In The Aristocats, which mouse helps Duchess and her kittens?",
+        "answers": [
+          "Roquefort",
+          "Toulouse",
+          "Berlioz",
+          "Lafayette"
+        ],
+        "difficulty": "medium",
+        "category": "characters"
+      },
+      {
+        "id": 1063,
+        "question": "In The Aristocats, who owns Duchess and her kittens?",
+        "answers": [
+          "Madame Adelaide Bonfamille",
+          "Madame Medusa",
+          "Lady Tremaine",
+          "Anita Radcliffe"
+        ],
+        "difficulty": "hard",
+        "category": "movies"
+      }
+    ],
+    "reason": "Roquefort's mouse/rescuer identity differs from Madame Bonfamille's ownership of the cats. Neither answer supplies the other relationship."
+  },
+  {
+    "finding": {
+      "id": "duplicate-d7faacd2713c670b76ce",
+      "kind": "duplicate",
+      "questionIds": [
+        329,
+        531
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "d7faacd2713c670b76cedbf8e4ea6da8058af2d22ef8a3e3082f15e15220809c",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 329,
+        "question": "Which Disney animated film includes the song Good Company?",
+        "answers": [
+          "Oliver & Company",
+          "The Aristocats",
+          "The Rescuers",
+          "The Fox and the Hound"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      },
+      {
+        "id": 531,
+        "question": "Which Disney animated film includes the song Once Upon a Time in New York City?",
+        "answers": [
+          "Oliver & Company",
+          "The Rescuers",
+          "The Great Mouse Detective",
+          "The Aristocats"
+        ],
+        "difficulty": "hard",
+        "category": "music"
+      }
+    ],
+    "reason": "Separate song-film credits: Good Company versus Once Upon a Time in New York City. One film can contain many songs; knowing one attribution does not establish the other."
+  },
+  {
+    "finding": {
+      "id": "duplicate-da8cc0c88c9ceb811843",
+      "kind": "duplicate",
+      "questionIds": [
+        499,
+        1272
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "da8cc0c88c9ceb8118435e3dd8a1f2419f5f46dc3abc4497e39d2584ca3c95f9",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 499,
+        "question": "In A Bug's Life, what is the name of Flik's ant colony home?",
+        "answers": [
+          "Ant Island",
+          "Colony Alpha",
+          "Bug Haven",
+          "Grassland Colony"
+        ],
+        "difficulty": "medium",
+        "category": "pixar"
+      },
+      {
+        "id": 1272,
+        "question": "In A Bug's Life, who is the princess of the ant colony?",
+        "answers": [
+          "Princess Atta",
+          "Princess Dot",
+          "Queen Elinor",
+          "Princess Eilonwy"
+        ],
+        "difficulty": "medium",
+        "category": "pixar"
+      }
+    ],
+    "reason": "Ant Island is a location name; the other question asks the princess's identity. Place name and royal character are separate facts. The outside-scope Atta/Dot ambiguity is not approved by this comparison."
+  },
+  {
+    "finding": {
+      "id": "duplicate-e76ad82303734542c60b",
+      "kind": "duplicate",
+      "questionIds": [
+        309,
+        1313
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "e76ad82303734542c60b7217dea88e967ff969c4b224a655810824bbf2c6083e",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 309,
+        "question": "In Inside Out, which emotion is purple?",
+        "answers": [
+          "Fear",
+          "Disgust",
+          "Anger",
+          "Sadness"
+        ],
+        "difficulty": "easy",
+        "category": "pixar"
+      },
+      {
+        "id": 1313,
+        "question": "In Inside Out, what color is the emotion Joy?",
+        "answers": [
+          "Yellow",
+          "Blue",
+          "Purple",
+          "Orange"
+        ],
+        "difficulty": "easy",
+        "category": "pixar"
+      }
+    ],
+    "reason": "Different color-character associations: Fear-purple and Joy-yellow; shared emotion-color phrasing does not repeat a fact."
+  },
+  {
+    "finding": {
+      "id": "duplicate-ee6bfff2ea10de785df3",
+      "kind": "duplicate",
+      "questionIds": [
+        317,
+        947
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "ee6bfff2ea10de785df31ac45367affbe2ed7106e3b484979dd52b5003675129",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 317,
+        "question": "At Disneyland, which Fantasyland dark ride uses caterpillar-shaped ride vehicles?",
+        "answers": [
+          "Alice in Wonderland",
+          "Mr. Toad's Wild Ride",
+          "Peter Pan's Flight",
+          "Pinocchio's Daring Journey"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      },
+      {
+        "id": 947,
+        "question": "What was Disney's first full-length animated feature based on a Lewis Carroll story?",
+        "answers": [
+          "Alice in Wonderland",
+          "Peter Pan",
+          "Cinderella",
+          "The Adventures of Ichabod and Mr. Toad"
+        ],
+        "difficulty": "medium",
+        "category": "walt"
+      }
+    ],
+    "reason": "Disneyland caterpillar vehicles versus the Lewis Carroll source of the animated feature. Ride design is a separate fact from literary adaptation."
+  },
+  {
+    "finding": {
+      "id": "leak-719701852b0ba93e7b74",
+      "kind": "leak",
+      "questionIds": [
+        329
+      ],
+      "detail": {
+        "tier": 2,
+        "token": "company"
+      },
+      "signature": "719701852b0ba93e7b743fd7676e1d2aac1f0f3cf719a03ecb43100e6d6b8441",
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 329,
+        "question": "Which Disney animated film includes the song Good Company?",
+        "answers": [
+          "Oliver & Company",
+          "The Aristocats",
+          "The Rescuers",
+          "The Fox and the Hound"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      }
+    ],
+    "reason": "Company is a necessary word in the actual song and film titles. The shared word alone does not establish a recording credit; three other animal films remain plausible. Preserve exact titles."
+  },
+  {
+    "finding": {
+      "id": "leak-a07611ace1e3d4a60f1c",
+      "kind": "leak",
+      "questionIds": [
+        427
+      ],
+      "detail": {
+        "tier": 2,
+        "token": "castaway"
+      },
+      "signature": "a07611ace1e3d4a60f1c2681bd558b3adb52b4b8580f9815bf8d75ac0f0404c0",
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 427,
+        "question": "As of November 2026, what self-paced run or walk can Disney cruise guests complete on Castaway Cay?",
+        "answers": [
+          "Castaway Cay 5K",
+          "Pelican Plunge Sprint",
+          "Serenity Bay Dash",
+          "Mickey Mile"
+        ],
+        "difficulty": "medium",
+        "category": "cruise"
+      }
+    ],
+    "reason": "Castaway Cay supplies necessary island context; other choices use island places Pelican Plunge and Serenity Bay, and a plausible Disney running-event name. Exact 5K identity remains required."
+  }
+]

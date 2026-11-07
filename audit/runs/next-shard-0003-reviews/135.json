@@ -1,0 +1,161 @@
+{
+  "schema": 2,
+  "questionId": 135,
+  "hash": "c0db20a6c3630d0de7448c94eabcc49db398efafabfcc4e2ccff154351e9acd6",
+  "questionSnapshot": {
+    "id": 135,
+    "question": "Which 1964 Disney film combined live action with animation and starred Julie Andrews?",
+    "answers": [
+      "Mary Poppins",
+      "The Jungle Book",
+      "The Sword in the Stone",
+      "Bedknobs and Broomsticks"
+    ],
+    "difficulty": "easy",
+    "category": "walt"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Challenged Bedknobs because it also mixes live action and animation; its year and lead actress fail. Removed the unsupported last-major-production assertion, since Walt later supervised The Jungle Book.",
+  "verification": {
+    "context": "Which 1964 Disney film combined live action with animation and starred Julie Andrews?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "1964 release, Andrews lead and live-action/animation all match.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/mary-poppins-film/",
+          "locator": "Release/cast paragraphs: 1964, Julie Andrews as Mary Poppins; effects paragraph explains live-action/animation combination."
+        },
+        {
+          "url": "https://d23.com/a-to-z/jungle-book-the-film/",
+          "locator": "Release and voice-cast paragraphs: 1967 animated film; last animated feature supervised by Walt."
+        },
+        {
+          "url": "https://d23.com/a-to-z/sword-in-the-stone-the-film/",
+          "locator": "Animated feature description; December 25, 1963 release and voice cast."
+        },
+        {
+          "url": "https://d23.com/a-to-z/bedknobs-and-broomsticks-film/",
+          "locator": "Release/cast paragraph: 1971, Angela Lansbury; animation sequences described later."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged Bedknobs because it also mixes live action and animation; its year and lead actress fail. Removed the unsupported last-major-production assertion, since Walt later supervised The Jungle Book."
+    },
+    "options": [
+      {
+        "answer": "Mary Poppins",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "1964 release, Andrews lead and live-action/animation all match.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/mary-poppins-film/",
+            "locator": "Release/cast paragraphs: 1964, Julie Andrews as Mary Poppins; effects paragraph explains live-action/animation combination."
+          },
+          {
+            "url": "https://d23.com/a-to-z/jungle-book-the-film/",
+            "locator": "Release and voice-cast paragraphs: 1967 animated film; last animated feature supervised by Walt."
+          },
+          {
+            "url": "https://d23.com/a-to-z/sword-in-the-stone-the-film/",
+            "locator": "Animated feature description; December 25, 1963 release and voice cast."
+          },
+          {
+            "url": "https://d23.com/a-to-z/bedknobs-and-broomsticks-film/",
+            "locator": "Release/cast paragraph: 1971, Angela Lansbury; animation sequences described later."
+          }
+        ]
+      },
+      {
+        "answer": "The Jungle Book",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "1967 animated feature with a different voice cast.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/mary-poppins-film/",
+            "locator": "Release/cast paragraphs: 1964, Julie Andrews as Mary Poppins; effects paragraph explains live-action/animation combination."
+          },
+          {
+            "url": "https://d23.com/a-to-z/jungle-book-the-film/",
+            "locator": "Release and voice-cast paragraphs: 1967 animated film; last animated feature supervised by Walt."
+          },
+          {
+            "url": "https://d23.com/a-to-z/sword-in-the-stone-the-film/",
+            "locator": "Animated feature description; December 25, 1963 release and voice cast."
+          },
+          {
+            "url": "https://d23.com/a-to-z/bedknobs-and-broomsticks-film/",
+            "locator": "Release/cast paragraph: 1971, Angela Lansbury; animation sequences described later."
+          }
+        ]
+      },
+      {
+        "answer": "The Sword in the Stone",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "1963 animated feature with a different voice cast.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/mary-poppins-film/",
+            "locator": "Release/cast paragraphs: 1964, Julie Andrews as Mary Poppins; effects paragraph explains live-action/animation combination."
+          },
+          {
+            "url": "https://d23.com/a-to-z/jungle-book-the-film/",
+            "locator": "Release and voice-cast paragraphs: 1967 animated film; last animated feature supervised by Walt."
+          },
+          {
+            "url": "https://d23.com/a-to-z/sword-in-the-stone-the-film/",
+            "locator": "Animated feature description; December 25, 1963 release and voice cast."
+          },
+          {
+            "url": "https://d23.com/a-to-z/bedknobs-and-broomsticks-film/",
+            "locator": "Release/cast paragraph: 1971, Angela Lansbury; animation sequences described later."
+          }
+        ]
+      },
+      {
+        "answer": "Bedknobs and Broomsticks",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Does combine media, but was released in 1971 and starred Angela Lansbury.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/mary-poppins-film/",
+            "locator": "Release/cast paragraphs: 1964, Julie Andrews as Mary Poppins; effects paragraph explains live-action/animation combination."
+          },
+          {
+            "url": "https://d23.com/a-to-z/jungle-book-the-film/",
+            "locator": "Release and voice-cast paragraphs: 1967 animated film; last animated feature supervised by Walt."
+          },
+          {
+            "url": "https://d23.com/a-to-z/sword-in-the-stone-the-film/",
+            "locator": "Animated feature description; December 25, 1963 release and voice cast."
+          },
+          {
+            "url": "https://d23.com/a-to-z/bedknobs-and-broomsticks-film/",
+            "locator": "Release/cast paragraph: 1971, Angela Lansbury; animation sequences described later."
+          }
+        ]
+      }
+    ]
+  }
+}

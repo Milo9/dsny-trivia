@@ -3,6 +3,9 @@
 > **Question audits and additions:** [QUESTION_AUDIT.md](QUESTION_AUDIT.md) is the
 > current authoritative checklist. Run `python scripts/question_audit.py check`
 > before release. Historical audit notes below are context, not current policy.
+> "Audit the next shard" / "Audit the next chunk" means perform the next resumable
+> 50-question batch using `python scripts/question_audit.py next`; see AGENTS.md.
+> "Audit status" uses `python scripts/question_audit.py status` without starting work.
 
 > **v1.39 audit fixes:** Read [DEVELOPMENT.md](DEVELOPMENT.md) and
 > [SECURITY.md](SECURITY.md) before changing runtime, storage, scoring, daily pins,

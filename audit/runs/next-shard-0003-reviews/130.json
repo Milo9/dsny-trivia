@@ -1,0 +1,141 @@
+{
+  "schema": 2,
+  "questionId": 130,
+  "hash": "3dee3b1678e753a138e8f29f4bcbbe31b3f83bb15a8f534162fbe1e1b49222f1",
+  "questionSnapshot": {
+    "id": 130,
+    "question": "What were the modernized fairy-tale shorts made by Walt Disney's Kansas City company in 1922 called?",
+    "answers": [
+      "Laugh-O-Grams",
+      "Mickey Shorts",
+      "Silly Symphonies",
+      "Alice Comedies"
+    ],
+    "difficulty": "medium",
+    "category": "walt"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Challenged Alice: its pilot was made in Kansas City, but the prompt now asks specifically for the 1922 modernized fairy-tale series, not everything made by the company.",
+  "verification": {
+    "context": "What were the modernized fairy-tale shorts made by Walt Disney's Kansas City company in 1922 called?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Named series of 1922 Kansas City fairy-tale shorts.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/laugh-o-gram-films/",
+          "locator": "Opening paragraph: Kansas City company and its seven modernized fairy-tale shorts in 1922."
+        },
+        {
+          "url": "https://d23.com/a-to-z/alice-comedies/",
+          "locator": "Opening paragraphs: Kansas City pilot versus 56 Hollywood series shorts made 1924–1927."
+        },
+        {
+          "url": "https://d23.com/a-to-z/mickey-mouse/",
+          "locator": "Opening paragraphs: Walt's primary cartoon character; naming legend about Mortimer, Lillian and Mickey; collaboration with Ub Iwerks."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged Alice: its pilot was made in Kansas City, but the prompt now asks specifically for the 1922 modernized fairy-tale series, not everything made by the company."
+    },
+    "options": [
+      {
+        "answer": "Laugh-O-Grams",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Named series of 1922 Kansas City fairy-tale shorts.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/laugh-o-gram-films/",
+            "locator": "Opening paragraph: Kansas City company and its seven modernized fairy-tale shorts in 1922."
+          },
+          {
+            "url": "https://d23.com/a-to-z/alice-comedies/",
+            "locator": "Opening paragraphs: Kansas City pilot versus 56 Hollywood series shorts made 1924–1927."
+          },
+          {
+            "url": "https://d23.com/a-to-z/mickey-mouse/",
+            "locator": "Opening paragraphs: Walt's primary cartoon character; naming legend about Mortimer, Lillian and Mickey; collaboration with Ub Iwerks."
+          }
+        ]
+      },
+      {
+        "answer": "Mickey Shorts",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Mickey's shorts began later, not the 1922 series.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/laugh-o-gram-films/",
+            "locator": "Opening paragraph: Kansas City company and its seven modernized fairy-tale shorts in 1922."
+          },
+          {
+            "url": "https://d23.com/a-to-z/alice-comedies/",
+            "locator": "Opening paragraphs: Kansas City pilot versus 56 Hollywood series shorts made 1924–1927."
+          },
+          {
+            "url": "https://d23.com/a-to-z/mickey-mouse/",
+            "locator": "Opening paragraphs: Walt's primary cartoon character; naming legend about Mortimer, Lillian and Mickey; collaboration with Ub Iwerks."
+          }
+        ]
+      },
+      {
+        "answer": "Silly Symphonies",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the named 1922 fairy-tale series.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/laugh-o-gram-films/",
+            "locator": "Opening paragraph: Kansas City company and its seven modernized fairy-tale shorts in 1922."
+          },
+          {
+            "url": "https://d23.com/a-to-z/alice-comedies/",
+            "locator": "Opening paragraphs: Kansas City pilot versus 56 Hollywood series shorts made 1924–1927."
+          },
+          {
+            "url": "https://d23.com/a-to-z/mickey-mouse/",
+            "locator": "Opening paragraphs: Walt's primary cartoon character; naming legend about Mortimer, Lillian and Mickey; collaboration with Ub Iwerks."
+          }
+        ]
+      },
+      {
+        "answer": "Alice Comedies",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "The Kansas City pilot does not make Alice Comedies the named 1922 fairy-tale series; later series shorts were made in Hollywood.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/laugh-o-gram-films/",
+            "locator": "Opening paragraph: Kansas City company and its seven modernized fairy-tale shorts in 1922."
+          },
+          {
+            "url": "https://d23.com/a-to-z/alice-comedies/",
+            "locator": "Opening paragraphs: Kansas City pilot versus 56 Hollywood series shorts made 1924–1927."
+          },
+          {
+            "url": "https://d23.com/a-to-z/mickey-mouse/",
+            "locator": "Opening paragraphs: Walt's primary cartoon character; naming legend about Mortimer, Lillian and Mickey; collaboration with Ub Iwerks."
+          }
+        ]
+      }
+    ]
+  }
+}

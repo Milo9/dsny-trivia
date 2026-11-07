@@ -1,0 +1,30 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "retired": {
+    "id": 180,
+    "question": "In Inside Out, which emotion is colored yellow and is the lead character?",
+    "answers": [
+      "Joy",
+      "Sadness",
+      "Anger",
+      "Fear"
+    ],
+    "difficulty": "easy",
+    "category": "pixar"
+  },
+  "retained": {
+    "id": 1313,
+    "question": "In Inside Out, what color is the emotion Joy?",
+    "answers": [
+      "Yellow",
+      "Blue",
+      "Purple",
+      "Orange"
+    ],
+    "difficulty": "easy",
+    "category": "pixar"
+  },
+  "rationale": "Exactly the same Joy / yellow color association in reverse. The lead-character clause does not add a separate tested fact.",
+  "scope": "Retire only the planned ID. Retained questions are duplicate context and receive no new factual approval here."
+}

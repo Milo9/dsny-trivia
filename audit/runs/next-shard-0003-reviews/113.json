@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 113,
+  "hash": "dd6a88e5c06d3f7225b8ebe4d41390dea9c87c22f12a45349d81937d7abb648e",
+  "questionSnapshot": {
+    "id": 113,
+    "question": "Which Disneyland land did Walt Disney dedicate alongside a visiting Louisiana mayor in 1966?",
+    "answers": [
+      "New Orleans Square",
+      "Frontierland",
+      "Adventureland",
+      "Liberty Square"
+    ],
+    "difficulty": "hard",
+    "category": "parks"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Final challenge checks the exact named entity/event against each listed alternative, not merely a matching answer keyword.",
+  "verification": {
+    "context": "Which Disneyland land did Walt Disney dedicate alongside a visiting Louisiana mayor in 1966?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "D23 records this land's 1966 dedication with Walt and the New Orleans mayor.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/new-orleans-square/",
+          "locator": "Opening paragraph: land dedicated July 24, 1966 by Walt Disney and the mayor of New Orleans."
+        },
+        {
+          "url": "https://disneyvacationclub.disney.go.com/media/dvc/languagespecific/eng/member/justformembers/disneyfilesmagazine/2009/DisneyFilesMagazine_Winter2009.pdf",
+          "locator": "PDF page 29, opening New Orleans history: July 24, 1966 opening ceremony with Mayor Victor Schiro and Walt's speech."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tried each alternative against the literal final scope: Frontierland: Not the land identified in that dedication record. Adventureland: Not the land identified in that dedication record. Liberty Square: Not the Disneyland land in the recorded event."
+    },
+    "options": [
+      {
+        "answer": "New Orleans Square",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "D23 records this land's 1966 dedication with Walt and the New Orleans mayor.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/new-orleans-square/",
+            "locator": "Opening paragraph: land dedicated July 24, 1966 by Walt Disney and the mayor of New Orleans."
+          },
+          {
+            "url": "https://disneyvacationclub.disney.go.com/media/dvc/languagespecific/eng/member/justformembers/disneyfilesmagazine/2009/DisneyFilesMagazine_Winter2009.pdf",
+            "locator": "PDF page 29, opening New Orleans history: July 24, 1966 opening ceremony with Mayor Victor Schiro and Walt's speech."
+          }
+        ]
+      },
+      {
+        "answer": "Frontierland",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the land identified in that dedication record.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/new-orleans-square/",
+            "locator": "Opening paragraph: land dedicated July 24, 1966 by Walt Disney and the mayor of New Orleans."
+          },
+          {
+            "url": "https://disneyvacationclub.disney.go.com/media/dvc/languagespecific/eng/member/justformembers/disneyfilesmagazine/2009/DisneyFilesMagazine_Winter2009.pdf",
+            "locator": "PDF page 29, opening New Orleans history: July 24, 1966 opening ceremony with Mayor Victor Schiro and Walt's speech."
+          }
+        ]
+      },
+      {
+        "answer": "Adventureland",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the land identified in that dedication record.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/new-orleans-square/",
+            "locator": "Opening paragraph: land dedicated July 24, 1966 by Walt Disney and the mayor of New Orleans."
+          },
+          {
+            "url": "https://disneyvacationclub.disney.go.com/media/dvc/languagespecific/eng/member/justformembers/disneyfilesmagazine/2009/DisneyFilesMagazine_Winter2009.pdf",
+            "locator": "PDF page 29, opening New Orleans history: July 24, 1966 opening ceremony with Mayor Victor Schiro and Walt's speech."
+          }
+        ]
+      },
+      {
+        "answer": "Liberty Square",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the Disneyland land in the recorded event.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/new-orleans-square/",
+            "locator": "Opening paragraph: land dedicated July 24, 1966 by Walt Disney and the mayor of New Orleans."
+          },
+          {
+            "url": "https://disneyvacationclub.disney.go.com/media/dvc/languagespecific/eng/member/justformembers/disneyfilesmagazine/2009/DisneyFilesMagazine_Winter2009.pdf",
+            "locator": "PDF page 29, opening New Orleans history: July 24, 1966 opening ceremony with Mayor Victor Schiro and Walt's speech."
+          }
+        ]
+      }
+    ]
+  }
+}

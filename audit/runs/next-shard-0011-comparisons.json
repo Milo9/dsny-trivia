@@ -1,0 +1,526 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "retirement": {
+    "questionIds": [
+      506,
+      10
+    ],
+    "questions": [
+      {
+        "id": 506,
+        "question": "What physical feature allows Dumbo to fly?",
+        "answers": [
+          "His oversized ears",
+          "A magic feather alone",
+          "A spell from the crows",
+          "His large trunk"
+        ],
+        "difficulty": "easy",
+        "category": "movies"
+      },
+      {
+        "id": 10,
+        "question": "In Dumbo (1941), which discovery turns Dumbo's humiliation over his ears into triumph?",
+        "answers": [
+          "He can fly",
+          "He is super strong",
+          "He can speak",
+          "He is invisible"
+        ],
+        "difficulty": "easy",
+        "category": "movies"
+      }
+    ],
+    "decision": "Retire 506 in favor of the earlier approved q10.",
+    "reason": "Both test Dumbo's flying discovery that redeems his oversized ears. Q10 explicitly frames humiliation over ears and its flight payoff; q506 restates the same ear/flight connection. Retain the already verified earlier, scene-contextualized question.",
+    "evidence": "https://d23.com/a-to-z/dumbo-film/",
+    "challenge": "The feature-versus-result phrasing is reciprocal testing of the same ear/flight fact. Neither adds another event, character or production fact. Q10 is active and already approved."
+  },
+  "findingDecisions": [
+    {
+      "findingId": "duplicate-0b7ba42936f5266d65d1",
+      "questionIds": [
+        563,
+        1117
+      ],
+      "questions": [
+        {
+          "id": 563,
+          "question": "In A Goofy Movie (1995), what is the name of Goofy's teenage son?",
+          "answers": [
+            "Max",
+            "Pete",
+            "Chumley",
+            "Junior"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        },
+        {
+          "id": 1117,
+          "question": "In The Little Mermaid, what is Prince Eric's dog named?",
+          "answers": [
+            "Max",
+            "Bruno",
+            "Major",
+            "Sultan"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        }
+      ],
+      "reason": "Max the teenage son in A Goofy Movie and Max the dog in Little Mermaid are different characters and relationships; shared first name gives no identity fact."
+    },
+    {
+      "findingId": "duplicate-28db031b63613e56d0e2",
+      "questionIds": [
+        521,
+        2407
+      ],
+      "questions": [
+        {
+          "id": 521,
+          "question": "What classic novel is Disney's Treasure Planet based on?",
+          "answers": [
+            "Treasure Island",
+            "Gulliver's Travels",
+            "Robinson Crusoe",
+            "20,000 Leagues Under the Sea"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 2407,
+          "question": "What was the original name of Walt Disney World's Bay Lake wildlife preserve island when it opened to guests in 1974, before it was later renamed?",
+          "answers": [
+            "Treasure Island",
+            "Adventure Island",
+            "Wilderness Island",
+            "Explorer's Island"
+          ],
+          "difficulty": "hard",
+          "category": "parks"
+        }
+      ],
+      "reason": "Treasure Planet literary source versus the opening name of a Bay Lake preserve: separate adaptation and park-history facts."
+    },
+    {
+      "findingId": "duplicate-447099a033a01be6f32b",
+      "questionIds": [
+        578,
+        1132
+      ],
+      "questions": [
+        {
+          "id": 578,
+          "question": "What is the name of Tiana's frog love interest in The Princess and the Frog?",
+          "answers": [
+            "Prince Naveen",
+            "Prince Phillip",
+            "Prince Eric",
+            "Prince Charming"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        },
+        {
+          "id": 1132,
+          "question": "In The Princess and the Frog, what is Tiana's mother's name?",
+          "answers": [
+            "Eudora",
+            "Charlotte",
+            "Mama Odie",
+            "Georgia"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        }
+      ],
+      "reason": "Naveen is Tiana's frog love interest; Eudora is her mother. Knowing one relationship does not identify the other."
+    },
+    {
+      "findingId": "duplicate-52ae1980ecbbf4e4d2b3",
+      "questionIds": [
+        515,
+        636
+      ],
+      "questions": [
+        {
+          "id": 515,
+          "question": "In Alice in Wonderland (1951), what color do the card gardeners paint the roses to hide their mistake?",
+          "answers": [
+            "Red",
+            "Blue",
+            "Pink",
+            "Purple"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 636,
+          "question": "In Cars, what color is Lightning McQueen?",
+          "answers": [
+            "Red",
+            "Blue",
+            "Yellow",
+            "Orange"
+          ],
+          "difficulty": "easy",
+          "category": "pixar"
+        }
+      ],
+      "reason": "Red paint on Alice's roses versus red paintwork on Lightning McQueen: distinct films, objects and contexts."
+    },
+    {
+      "findingId": "duplicate-a1d2a0492cfc21c8956f",
+      "questionIds": [
+        510,
+        1594
+      ],
+      "questions": [
+        {
+          "id": 510,
+          "question": "What kind of animal is Robin Hood in Disney's animated Robin Hood (1973)?",
+          "answers": [
+            "A fox",
+            "A wolf",
+            "A bear",
+            "A rabbit"
+          ],
+          "difficulty": "easy",
+          "category": "movies"
+        },
+        {
+          "id": 1594,
+          "question": "In Disney's Robin Hood, what kind of animal is the friendly Friar Tuck?",
+          "answers": [
+            "A badger",
+            "A bear",
+            "A mouse",
+            "A donkey"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        }
+      ],
+      "reason": "Robin Hood is a fox; Friar Tuck is a badger. Species of one character cannot establish the species of the other."
+    },
+    {
+      "findingId": "duplicate-ac1aa5cf864019f7a29a",
+      "questionIds": [
+        520,
+        859
+      ],
+      "questions": [
+        {
+          "id": 520,
+          "question": "In the 2003 film about Kenai, what does he get transformed into?",
+          "answers": [
+            "A bear",
+            "A wolf",
+            "A deer",
+            "An eagle"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 859,
+          "question": "In Disney's Robin Hood, what kind of animal is Little John?",
+          "answers": [
+            "A bear",
+            "A fox",
+            "A badger",
+            "A lion"
+          ],
+          "difficulty": "easy",
+          "category": "characters"
+        }
+      ],
+      "reason": "Kenai becomes a bear through magic; Little John is depicted as a bear in Robin Hood. Distinct character/story facts."
+    },
+    {
+      "findingId": "duplicate-b10a95b4b160a3da6694",
+      "questionIds": [
+        534,
+        2499
+      ],
+      "questions": [
+        {
+          "id": 534,
+          "question": "Which fictional detective inspired Basil of Baker Street in The Great Mouse Detective (1986)?",
+          "answers": [
+            "Sherlock Holmes",
+            "Hercule Poirot",
+            "Philip Marlowe",
+            "Sam Spade"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 2499,
+          "question": "Who wrote the Basil of Baker Street book series that inspired The Great Mouse Detective?",
+          "answers": [
+            "Eve Titus",
+            "Margery Sharp",
+            "Lloyd Alexander",
+            "Dodie Smith"
+          ],
+          "difficulty": "hard",
+          "category": "movies"
+        }
+      ],
+      "reason": "Sherlock Holmes is the fictional inspiration for Basil; Eve Titus is the real author of the source books. Character model and book authorship are distinct facts."
+    },
+    {
+      "findingId": "duplicate-f82657c9d21c93e8c317",
+      "questionIds": [
+        530,
+        2380
+      ],
+      "questions": [
+        {
+          "id": 530,
+          "question": "In The Emperor's New Groove (2000), what animal does Kuzco become after the palace dinner?",
+          "answers": [
+            "A llama",
+            "A frog",
+            "A bear",
+            "A parrot"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 2380,
+          "question": "In Saludos Amigos' 'Lake Titicaca' segment, what animal repeatedly outwits Donald Duck as he bumbles his way through the local village as a tourist?",
+          "answers": [
+            "A llama",
+            "An alpaca",
+            "A donkey",
+            "A goat"
+          ],
+          "difficulty": "hard",
+          "category": "movies"
+        }
+      ],
+      "reason": "Kuzco's llama transformation is separate from a llama outwitting Donald in Saludos Amigos; same species does not identify either event."
+    },
+    {
+      "findingId": "duplicate-fd6c5b197fca089d538a",
+      "questionIds": [
+        510,
+        859
+      ],
+      "questions": [
+        {
+          "id": 510,
+          "question": "What kind of animal is Robin Hood in Disney's animated Robin Hood (1973)?",
+          "answers": [
+            "A fox",
+            "A wolf",
+            "A bear",
+            "A rabbit"
+          ],
+          "difficulty": "easy",
+          "category": "movies"
+        },
+        {
+          "id": 859,
+          "question": "In Disney's Robin Hood, what kind of animal is Little John?",
+          "answers": [
+            "A bear",
+            "A fox",
+            "A badger",
+            "A lion"
+          ],
+          "difficulty": "easy",
+          "category": "characters"
+        }
+      ],
+      "reason": "Robin Hood is a fox and Little John is a bear. Each asks a different character's species; no inference connects those species."
+    },
+    {
+      "findingId": "leak-0983a4ec5e89e7b5d990",
+      "questionIds": [
+        529
+      ],
+      "questions": [
+        {
+          "id": 529,
+          "question": "In Atlantis: The Lost Empire, what is the crystal that powers Atlantis called?",
+          "answers": [
+            "The Heart of Atlantis",
+            "The Soul Stone",
+            "The Crystal of Power",
+            "The Blue Gem"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        }
+      ],
+      "reason": "Atlantis identifies the film and setting, but does not supply Heart; alternatives also sound like power-crystal names. The exact designation still must be recalled."
+    },
+    {
+      "findingId": "leak-20dea1a68ea1bc772a92",
+      "questionIds": [
+        521
+      ],
+      "questions": [
+        {
+          "id": 521,
+          "question": "What classic novel is Disney's Treasure Planet based on?",
+          "answers": [
+            "Treasure Island",
+            "Gulliver's Travels",
+            "Robinson Crusoe",
+            "20,000 Leagues Under the Sea"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        }
+      ],
+      "reason": "Treasure in the adaptation title is a legitimate title resemblance. All choices are adventure novels and the question requires identifying the actual source, not just its genre."
+    },
+    {
+      "findingId": "leak-4f6144011a65d2332d49",
+      "questionIds": [
+        517
+      ],
+      "questions": [
+        {
+          "id": 517,
+          "question": "In Lady and the Tramp, what is the name of the Italian restaurant where the famous spaghetti scene takes place?",
+          "answers": [
+            "Tony's Restaurant",
+            "Mario's Bistro",
+            "Luigi's Kitchen",
+            "Antonio's"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        }
+      ],
+      "reason": "Restaurant is a common venue noun in the question and answer. All four options are Italian restaurant-style names; it does not identify Tony."
+    },
+    {
+      "findingId": "leak-9e67d74c32970b3aae13",
+      "questionIds": [
+        518
+      ],
+      "questions": [
+        {
+          "id": 518,
+          "question": "What classic Charles Dickens novel is Oliver & Company based on?",
+          "answers": [
+            "Oliver Twist",
+            "A Tale of Two Cities",
+            "Great Expectations",
+            "David Copperfield"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        }
+      ],
+      "reason": "Oliver is shared by the film and source-book titles because the protagonist is retained. All options are Dickens novels; the source relationship is legitimate content."
+    }
+  ],
+  "additionalComparisons": [
+    {
+      "questionIds": [
+        541,
+        2134,
+        2135
+      ],
+      "questions": [
+        {
+          "id": 541,
+          "question": "In Tangled (2010), which injured body part does Rapunzel heal with her hair at the campfire?",
+          "answers": [
+            "Flynn's hand",
+            "Flynn's shoulder",
+            "Flynn's knee",
+            "Flynn's ankle"
+          ],
+          "difficulty": "easy",
+          "category": "movies"
+        },
+        {
+          "id": 2134,
+          "question": "In Tangled, what happens to Pascal the chameleon after he is bitten by a venomous snake, appearing to die almost instantly?",
+          "answers": [
+            "Rapunzel revives him using her hair's healing magic",
+            "He is saved by Flynn Rider's quick thinking",
+            "He survives on his own thanks to chameleon camouflage",
+            "Mother Gothel heals him to keep Rapunzel calm"
+          ],
+          "difficulty": "hard",
+          "category": "characters"
+        },
+        {
+          "id": 2135,
+          "question": "In Tangled, what happens to Rapunzel's magical golden hair the moment Flynn Rider cuts it off near the film's climax?",
+          "answers": [
+            "It instantly turns brown and loses all its magic",
+            "It grows back longer than before",
+            "It turns to solid gold",
+            "It disappears entirely"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        }
+      ],
+      "reason": "Final q541 asks which body part of Flynn is healed at the campfire. Generic healing ability or Pascal's separate injury cannot reveal hand; q2135 instead asks the result of cutting hair. The final wording adds the specific injury detail rather than repeating the general power."
+    },
+    {
+      "questionIds": [
+        527,
+        849,
+        1098
+      ],
+      "questions": [
+        {
+          "id": 527,
+          "question": "In Raya and the Last Dragon (2021), which dragon does Raya seek to restore Kumandra?",
+          "answers": [
+            "Sisu",
+            "Namaari",
+            "Druun",
+            "Boun"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 849,
+          "question": "In Raya and the Last Dragon, what is the name of the divided land?",
+          "answers": [
+            "Kumandra",
+            "Fangora",
+            "Heartland",
+            "Talonia"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 1098,
+          "question": "In Raya and the Last Dragon, which land does Raya come from?",
+          "answers": [
+            "Heart",
+            "Fang",
+            "Spine",
+            "Talon"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        }
+      ],
+      "reason": "Sisu is the sought dragon; Kumandra is the land and Heart is Raya's home region. Shared film vocabulary does not collapse these separate identity/geography facts."
+    }
+  ]
+}

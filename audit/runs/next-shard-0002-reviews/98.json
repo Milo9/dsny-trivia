@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 98,
+  "hash": "7839386052465302ce8e5ef463b26a6599bd9b4d51da5e2c2dbcd67002a241f3",
+  "questionSnapshot": {
+    "id": 98,
+    "question": "Which Animal Kingdom roller coaster sends guests through the Himalayas on a runaway train threatened by the Yeti?",
+    "answers": [
+      "Expedition Everest",
+      "Mount Yeti",
+      "Summit Plummet",
+      "Everest Explorer"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Distinct from the attraction’s opening year q357 and its Asia location q922. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "Walt Disney World, specified park/attraction; current naming/layout at review date.",
+    "timeSensitive": true,
+    "nextReviewAt": "2027-01-30",
+    "premise": {
+      "reason": "The official Animal Kingdom attraction is Expedition Everest, a Himalayan train coaster with a Yeti encounter.",
+      "sources": [
+        {
+          "url": "https://disneyworld.disney.go.com/attractions/animal-kingdom/expedition-everest/",
+          "locator": "Page title, introduction and Yeti or Not, Here He Comes section describe Himalayan train coaster and Yeti encounter."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Rechecked the full coaster experience rather than treating every mountain-themed name as correct. Only Expedition Everest matches the official title and train/Yeti description. The final stem removes the expedition word echoed by the answer."
+    },
+    "options": [
+      {
+        "answer": "Expedition Everest",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Expedition Everest is the attraction named by the exact official experience description.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/animal-kingdom/expedition-everest/",
+            "locator": "Page title, introduction and Yeti or Not, Here He Comes section describe Himalayan train coaster and Yeti encounter."
+          }
+        ]
+      },
+      {
+        "answer": "Mount Yeti",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Mount Yeti is not the official attraction name.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/animal-kingdom/expedition-everest/",
+            "locator": "Page title, introduction and Yeti or Not, Here He Comes section describe Himalayan train coaster and Yeti encounter."
+          }
+        ]
+      },
+      {
+        "answer": "Summit Plummet",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Summit Plummet is not the named Himalayan train coaster.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/animal-kingdom/expedition-everest/",
+            "locator": "Page title, introduction and Yeti or Not, Here He Comes section describe Himalayan train coaster and Yeti encounter."
+          }
+        ]
+      },
+      {
+        "answer": "Everest Explorer",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Everest Explorer is not the attraction name.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/animal-kingdom/expedition-everest/",
+            "locator": "Page title, introduction and Yeti or Not, Here He Comes section describe Himalayan train coaster and Yeti encounter."
+          }
+        ]
+      }
+    ]
+  }
+}

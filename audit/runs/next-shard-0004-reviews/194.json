@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 194,
+  "hash": "766648884df13f647fe0edb1c9b4464c6acb792dcfd8704b366bc5517cb54000",
+  "questionSnapshot": {
+    "id": 194,
+    "question": "In WALL-E, what does EVE stand for?",
+    "answers": [
+      "Extraterrestrial Vegetation Evaluator",
+      "Environmental Vegetation Explorer",
+      "Extra-Vehicular Explorer",
+      "Earth Vegetation Examiner"
+    ],
+    "difficulty": "medium",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Tested every expanded acronym verbatim. Extra-Terrestrial and Extraterrestrial differ only in spelling style; the three alternative word sequences do not match the explicit designation.",
+  "verification": {
+    "context": "In WALL-E, what does EVE stand for?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Exact expanded designation in EVE’s profile; hyphenation does not change the words.",
+      "sources": [
+        {
+          "url": "https://www.pixar.com/wall-e",
+          "locator": "Characters / EVE profile spells out Extra-Terrestrial Vegetation Evaluator."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tested every expanded acronym verbatim. Extra-Terrestrial and Extraterrestrial differ only in spelling style; the three alternative word sequences do not match the explicit designation."
+    },
+    "options": [
+      {
+        "answer": "Extraterrestrial Vegetation Evaluator",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Exact expanded designation in EVE’s profile; hyphenation does not change the words.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/wall-e",
+            "locator": "Characters / EVE profile spells out Extra-Terrestrial Vegetation Evaluator."
+          }
+        ]
+      },
+      {
+        "answer": "Environmental Vegetation Explorer",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different words from the explicit designation.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/wall-e",
+            "locator": "Characters / EVE profile spells out Extra-Terrestrial Vegetation Evaluator."
+          }
+        ]
+      },
+      {
+        "answer": "Extra-Vehicular Explorer",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different words and omits Vegetation Evaluator.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/wall-e",
+            "locator": "Characters / EVE profile spells out Extra-Terrestrial Vegetation Evaluator."
+          }
+        ]
+      },
+      {
+        "answer": "Earth Vegetation Examiner",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different words from the explicit designation.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/wall-e",
+            "locator": "Characters / EVE profile spells out Extra-Terrestrial Vegetation Evaluator."
+          }
+        ]
+      }
+    ]
+  }
+}

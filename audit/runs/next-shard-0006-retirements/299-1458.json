@@ -1,0 +1,30 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "retired": {
+    "id": 299,
+    "question": "In The Jungle Book, what type of snake hypnotizes Mowgli?",
+    "answers": [
+      "A python (Kaa)",
+      "A cobra",
+      "A mamba",
+      "A boa constrictor"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "retained": {
+    "id": 1458,
+    "question": "In The Jungle Book, what type of creature is Kaa, the cunning villain who tries to hypnotize Mowgli with his swirling eyes?",
+    "answers": [
+      "A python",
+      "A cobra",
+      "A boa constrictor",
+      "A king snake"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "rationale": "Both identify Kaa as a python in The Jungle Book, with the same hypnotizing-Mowgli context. Retain 1458, whose answer has no extra Kaa parenthesis cue.",
+  "scope": "Only the planned question is retired; comparison does not confer factual approval on an unreviewed replacement."
+}

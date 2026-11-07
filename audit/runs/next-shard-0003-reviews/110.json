@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 110,
+  "hash": "0f3f712eca9256f95e82e312896a90cb6d61fd0878247eea50eac3f7ce89f9ac",
+  "questionSnapshot": {
+    "id": 110,
+    "question": "What is the official name of the castle at Disneyland in California?",
+    "answers": [
+      "Sleeping Beauty Castle",
+      "Cinderella Castle",
+      "Aurora's Palace",
+      "Fantasyland Castle"
+    ],
+    "difficulty": "easy",
+    "category": "parks"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Final challenge checks the exact named entity/event against each listed alternative, not merely a matching answer keyword.",
+  "verification": {
+    "context": "What is the official name of the castle at Disneyland in California?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Exact official Disneyland landmark name.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/sleeping-beauty-castle/",
+          "locator": "Opening paragraph identifies Sleeping Beauty Castle as the Fantasyland landmark at Disneyland."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tried each alternative against the literal final scope: Cinderella Castle: A different castle name, not this Disneyland landmark. Aurora's Palace: Character-based paraphrase is not the official landmark name. Fantasyland Castle: Descriptive location label is not the official name."
+    },
+    "options": [
+      {
+        "answer": "Sleeping Beauty Castle",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Exact official Disneyland landmark name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/sleeping-beauty-castle/",
+            "locator": "Opening paragraph identifies Sleeping Beauty Castle as the Fantasyland landmark at Disneyland."
+          }
+        ]
+      },
+      {
+        "answer": "Cinderella Castle",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "A different castle name, not this Disneyland landmark.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/sleeping-beauty-castle/",
+            "locator": "Opening paragraph identifies Sleeping Beauty Castle as the Fantasyland landmark at Disneyland."
+          }
+        ]
+      },
+      {
+        "answer": "Aurora's Palace",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Character-based paraphrase is not the official landmark name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/sleeping-beauty-castle/",
+            "locator": "Opening paragraph identifies Sleeping Beauty Castle as the Fantasyland landmark at Disneyland."
+          }
+        ]
+      },
+      {
+        "answer": "Fantasyland Castle",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Descriptive location label is not the official name.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/sleeping-beauty-castle/",
+            "locator": "Opening paragraph identifies Sleeping Beauty Castle as the Fantasyland landmark at Disneyland."
+          }
+        ]
+      }
+    ]
+  }
+}

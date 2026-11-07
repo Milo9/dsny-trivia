@@ -1,0 +1,30 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "retired": {
+    "id": 200,
+    "question": "In Up, what is the name of the famous explorer and villain that Carl idolized as a child?",
+    "answers": [
+      "Charles Muntz",
+      "Carl Fredricksen",
+      "Spencer Muntz",
+      "Howard Muntz"
+    ],
+    "difficulty": "hard",
+    "category": "pixar"
+  },
+  "retained": {
+    "id": 645,
+    "question": "In Up, what is the name of the villain explorer that Carl and Russell encounter?",
+    "answers": [
+      "Charles F. Muntz",
+      "Alpha",
+      "Beta",
+      "Gamma"
+    ],
+    "difficulty": "medium",
+    "category": "pixar"
+  },
+  "rationale": "Same Up villain explorer name. Both supply the explorer-villain role and ask for Muntz; retain the version with his middle initial.",
+  "scope": "Retire only the planned ID. Retained questions are duplicate context and receive no new factual approval here."
+}

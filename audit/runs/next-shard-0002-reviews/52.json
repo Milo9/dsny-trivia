@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 52,
+  "hash": "bd372622003fce4838444cefd8a7706371c2f86865198ba171e46c63de0c4e53",
+  "questionSnapshot": {
+    "id": 52,
+    "question": "What are the names of Donald Duck's three nephews?",
+    "answers": [
+      "Huey, Dewey, and Louie",
+      "Chip, Dale, and Monty",
+      "Larry, Moe, and Curly",
+      "Tick, Tack, and Tock"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Distinct from other named trios and Donald’s uncle; familiar basic characters justify easy. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "English-language Disney character naming; original theatrical feature where a film is named. What are the names of Donald Duck's three nephews?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "In English-language Disney naming, the three nephews form the Huey/Dewey/Louie trio.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/donalds-nephews-film/",
+          "locator": "First-film-appearance paragraph: Huey, Dewey and Louie visit their uncle Donald."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Compared all three positions in each answer, including the similar-sounding Tick/Tack/Tock set. No alternative is an English alias list for this trio. The question concerns characters, not facts about a TV adaptation."
+    },
+    "options": [
+      {
+        "answer": "Huey, Dewey, and Louie",
+        "verdict": "correct",
+        "basis": "exhaustive-list",
+        "reason": "This exactly matches the complete named trio.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/donalds-nephews-film/",
+            "locator": "First-film-appearance paragraph: Huey, Dewey and Louie visit their uncle Donald."
+          }
+        ]
+      },
+      {
+        "answer": "Chip, Dale, and Monty",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "None of these three names is in the established trio.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/donalds-nephews-film/",
+            "locator": "First-film-appearance paragraph: Huey, Dewey and Louie visit their uncle Donald."
+          }
+        ]
+      },
+      {
+        "answer": "Larry, Moe, and Curly",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "The listed names do not match any of the three nephews.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/donalds-nephews-film/",
+            "locator": "First-film-appearance paragraph: Huey, Dewey and Louie visit their uncle Donald."
+          }
+        ]
+      },
+      {
+        "answer": "Tick, Tack, and Tock",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "This complete trio is not the English-language Huey/Dewey/Louie list.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/donalds-nephews-film/",
+            "locator": "First-film-appearance paragraph: Huey, Dewey and Louie visit their uncle Donald."
+          }
+        ]
+      }
+    ]
+  }
+}

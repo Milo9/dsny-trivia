@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 313,
+  "hash": "8c4e909d2302d7ce7ac64c1a98f26332a6d9d8303df292089efbfbec94aacc2a",
+  "questionSnapshot": {
+    "id": 313,
+    "question": "In The Hunchback of Notre Dame (1996), which captain falls in love with Esmeralda?",
+    "answers": [
+      "Phoebus",
+      "Frollo",
+      "Clopin",
+      "Quasimodo"
+    ],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Tried Frollo and Quasimodo under the love wording: both have feelings, so retained the captain qualification and named the 1996 version. The primary synopsis establishes the captain identity and separates the competing men. 2312 is Frollo office; 547 is Esmeralda identity, so neither tests this captain identification. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+  "verification": {
+    "context": "In The Hunchback of Notre Dame (1996), which captain falls in love with Esmeralda? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Phoebus is the captain and Esmeralda reciprocates his love. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/hunchback-of-notre-dame-the-film/",
+          "locator": "Synopsis: Phoebus Captain of the King guards; mutual Phoebus/Esmeralda love; Frollo Minister of Justice and Quasimodo bell-tower outsider"
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tried Frollo and Quasimodo under the love wording: both have feelings, so retained the captain qualification and named the 1996 version. The primary synopsis establishes the captain identity and separates the competing men. 2312 is Frollo office; 547 is Esmeralda identity, so neither tests this captain identification."
+    },
+    "options": [
+      {
+        "answer": "Phoebus",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Phoebus is the captain and Esmeralda reciprocates his love.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/hunchback-of-notre-dame-the-film/",
+            "locator": "Synopsis: Phoebus Captain of the King guards; mutual Phoebus/Esmeralda love; Frollo Minister of Justice and Quasimodo bell-tower outsider"
+          }
+        ]
+      },
+      {
+        "answer": "Frollo",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Frollo is the Minister of Justice; desire for Esmeralda does not make him the captain.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/hunchback-of-notre-dame-the-film/",
+            "locator": "Synopsis: Phoebus Captain of the King guards; mutual Phoebus/Esmeralda love; Frollo Minister of Justice and Quasimodo bell-tower outsider"
+          }
+        ]
+      },
+      {
+        "answer": "Clopin",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Clopin is not the captain whom the synopsis identifies as Phoebus.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/hunchback-of-notre-dame-the-film/",
+            "locator": "Synopsis: Phoebus Captain of the King guards; mutual Phoebus/Esmeralda love; Frollo Minister of Justice and Quasimodo bell-tower outsider"
+          }
+        ]
+      },
+      {
+        "answer": "Quasimodo",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "Quasimodo loves Esmeralda but is the bell-tower outsider, not the captain.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/hunchback-of-notre-dame-the-film/",
+            "locator": "Synopsis: Phoebus Captain of the King guards; mutual Phoebus/Esmeralda love; Frollo Minister of Justice and Quasimodo bell-tower outsider"
+          }
+        ]
+      }
+    ]
+  }
+}

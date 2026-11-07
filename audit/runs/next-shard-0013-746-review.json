@@ -1,0 +1,293 @@
+[
+  {
+    "schema": 2,
+    "questionId": 746,
+    "hash": "bada88a0dd37116b265839a355531ef2869c1d5c0458231fc65b49134f464e4f",
+    "questionSnapshot": {
+      "id": 746,
+      "question": "Which Castaway Cay area contains submerged Disney character statues?",
+      "answers": [
+        "The Snorkeling Lagoon",
+        "The Pelican Plunge platform",
+        "The Scuttle's Cove play area",
+        "The In Da Shade game pavilion"
+      ],
+      "difficulty": "easy",
+      "category": "cruise"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "q427 asks run, q1211 slide structure and q747 trail rental; this tests the underwater-statue area.",
+    "verification": {
+      "context": "The submerged statues belong to a named underwater exploration area.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The submerged statues belong to a named underwater exploration area.",
+        "sources": [
+          {
+            "sourceNoteId": "b13-snorkel",
+            "url": "https://disneycruise.disney.go.com/en-ph/port-adventures/castaway-cay-snorkel-lagoon-equipment-rental/",
+            "locator": "Snorkel Lagoon Equipment Rentals; Mickey statue gallery image",
+            "evidence": "The lagoon offering includes underwater character statues, pictured with a Mickey statue on the seabed.",
+            "topics": [
+              "cruise"
+            ],
+            "checkedBy": "Codex",
+            "checkedAt": "2026-11-07",
+            "timeSensitive": true,
+            "nextReviewAt": "2027-02-05",
+            "limitations": "Institutional text inspected; no film or video playback claimed."
+          },
+          {
+            "sourceNoteId": "b13-snorkellist",
+            "url": "https://disneycruise.disney.go.com/en-ca/port-adventures/bahamas/",
+            "locator": "Snorkel Lagoon Equipment Rental listing, Mickey-statue image caption",
+            "evidence": "Disney's excursion list identifies a Mickey Mouse statue on the ocean floor with snorkelers overhead.",
+            "topics": [
+              "cruise"
+            ],
+            "checkedBy": "Codex",
+            "checkedAt": "2026-11-07",
+            "timeSensitive": true,
+            "nextReviewAt": "2027-02-05",
+            "limitations": "Institutional text inspected; no film or video playback claimed."
+          },
+          {
+            "sourceNoteId": "b13-castaway",
+            "url": "https://disneycruise.disney.go.com/en-ca/disney-island-destinations/castaway-cay/",
+            "locator": "Serenity Bay; family beach and rental sections",
+            "evidence": "Serenity Bay is the beach for adults 18 and older at Castaway Cay. Water activities include kayaks, snorkeling and paddle equipment.",
+            "topics": [
+              "cruise"
+            ],
+            "checkedBy": "Codex",
+            "checkedAt": "2026-11-07",
+            "timeSensitive": true,
+            "nextReviewAt": "2027-02-05",
+            "limitations": "Institutional text inspected; no film or video playback claimed."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Reframed around the documented location rather than inferring that a pictured statue proves other objects never coexist underwater. Compared all four named island areas; the dedicated lagoon is distinct from the slide platform and dry play/game areas."
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Snorkeling Lagoon contains the documented sunken Mickey statue.",
+          "sources": [
+            {
+              "sourceNoteId": "b13-snorkel",
+              "url": "https://disneycruise.disney.go.com/en-ph/port-adventures/castaway-cay-snorkel-lagoon-equipment-rental/",
+              "locator": "Snorkel Lagoon Equipment Rentals; Mickey statue gallery image",
+              "evidence": "The lagoon offering includes underwater character statues, pictured with a Mickey statue on the seabed.",
+              "topics": [
+                "cruise"
+              ],
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-07",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-05",
+              "limitations": "Institutional text inspected; no film or video playback claimed."
+            },
+            {
+              "sourceNoteId": "b13-snorkellist",
+              "url": "https://disneycruise.disney.go.com/en-ca/port-adventures/bahamas/",
+              "locator": "Snorkel Lagoon Equipment Rental listing, Mickey-statue image caption",
+              "evidence": "Disney's excursion list identifies a Mickey Mouse statue on the ocean floor with snorkelers overhead.",
+              "topics": [
+                "cruise"
+              ],
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-07",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-05",
+              "limitations": "Institutional text inspected; no film or video playback claimed."
+            },
+            {
+              "sourceNoteId": "b13-castaway",
+              "url": "https://disneycruise.disney.go.com/en-ca/disney-island-destinations/castaway-cay/",
+              "locator": "Serenity Bay; family beach and rental sections",
+              "evidence": "Serenity Bay is the beach for adults 18 and older at Castaway Cay. Water activities include kayaks, snorkeling and paddle equipment.",
+              "topics": [
+                "cruise"
+              ],
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-07",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-05",
+              "limitations": "Institutional text inspected; no film or video playback claimed."
+            }
+          ],
+          "answer": "The Snorkeling Lagoon",
+          "verdict": "correct"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pelican Plunge is a separate waterslide platform, not the named statue-trail lagoon.",
+          "sources": [
+            {
+              "sourceNoteId": "b13-snorkel",
+              "url": "https://disneycruise.disney.go.com/en-ph/port-adventures/castaway-cay-snorkel-lagoon-equipment-rental/",
+              "locator": "Snorkel Lagoon Equipment Rentals; Mickey statue gallery image",
+              "evidence": "The lagoon offering includes underwater character statues, pictured with a Mickey statue on the seabed.",
+              "topics": [
+                "cruise"
+              ],
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-07",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-05",
+              "limitations": "Institutional text inspected; no film or video playback claimed."
+            },
+            {
+              "sourceNoteId": "b13-snorkellist",
+              "url": "https://disneycruise.disney.go.com/en-ca/port-adventures/bahamas/",
+              "locator": "Snorkel Lagoon Equipment Rental listing, Mickey-statue image caption",
+              "evidence": "Disney's excursion list identifies a Mickey Mouse statue on the ocean floor with snorkelers overhead.",
+              "topics": [
+                "cruise"
+              ],
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-07",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-05",
+              "limitations": "Institutional text inspected; no film or video playback claimed."
+            },
+            {
+              "sourceNoteId": "b13-castaway",
+              "url": "https://disneycruise.disney.go.com/en-ca/disney-island-destinations/castaway-cay/",
+              "locator": "Serenity Bay; family beach and rental sections",
+              "evidence": "Serenity Bay is the beach for adults 18 and older at Castaway Cay. Water activities include kayaks, snorkeling and paddle equipment.",
+              "topics": [
+                "cruise"
+              ],
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-07",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-05",
+              "limitations": "Institutional text inspected; no film or video playback claimed."
+            }
+          ],
+          "answer": "The Pelican Plunge platform",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Scuttle's Cove is a supervised children's play area, not the underwater-statue location.",
+          "sources": [
+            {
+              "sourceNoteId": "b13-snorkel",
+              "url": "https://disneycruise.disney.go.com/en-ph/port-adventures/castaway-cay-snorkel-lagoon-equipment-rental/",
+              "locator": "Snorkel Lagoon Equipment Rentals; Mickey statue gallery image",
+              "evidence": "The lagoon offering includes underwater character statues, pictured with a Mickey statue on the seabed.",
+              "topics": [
+                "cruise"
+              ],
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-07",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-05",
+              "limitations": "Institutional text inspected; no film or video playback claimed."
+            },
+            {
+              "sourceNoteId": "b13-snorkellist",
+              "url": "https://disneycruise.disney.go.com/en-ca/port-adventures/bahamas/",
+              "locator": "Snorkel Lagoon Equipment Rental listing, Mickey-statue image caption",
+              "evidence": "Disney's excursion list identifies a Mickey Mouse statue on the ocean floor with snorkelers overhead.",
+              "topics": [
+                "cruise"
+              ],
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-07",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-05",
+              "limitations": "Institutional text inspected; no film or video playback claimed."
+            },
+            {
+              "sourceNoteId": "b13-castaway",
+              "url": "https://disneycruise.disney.go.com/en-ca/disney-island-destinations/castaway-cay/",
+              "locator": "Serenity Bay; family beach and rental sections",
+              "evidence": "Serenity Bay is the beach for adults 18 and older at Castaway Cay. Water activities include kayaks, snorkeling and paddle equipment.",
+              "topics": [
+                "cruise"
+              ],
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-07",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-05",
+              "limitations": "Institutional text inspected; no film or video playback claimed."
+            }
+          ],
+          "answer": "The Scuttle's Cove play area",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "In Da Shade is a game pavilion, not the submerged-statue lagoon.",
+          "sources": [
+            {
+              "sourceNoteId": "b13-snorkel",
+              "url": "https://disneycruise.disney.go.com/en-ph/port-adventures/castaway-cay-snorkel-lagoon-equipment-rental/",
+              "locator": "Snorkel Lagoon Equipment Rentals; Mickey statue gallery image",
+              "evidence": "The lagoon offering includes underwater character statues, pictured with a Mickey statue on the seabed.",
+              "topics": [
+                "cruise"
+              ],
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-07",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-05",
+              "limitations": "Institutional text inspected; no film or video playback claimed."
+            },
+            {
+              "sourceNoteId": "b13-snorkellist",
+              "url": "https://disneycruise.disney.go.com/en-ca/port-adventures/bahamas/",
+              "locator": "Snorkel Lagoon Equipment Rental listing, Mickey-statue image caption",
+              "evidence": "Disney's excursion list identifies a Mickey Mouse statue on the ocean floor with snorkelers overhead.",
+              "topics": [
+                "cruise"
+              ],
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-07",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-05",
+              "limitations": "Institutional text inspected; no film or video playback claimed."
+            },
+            {
+              "sourceNoteId": "b13-castaway",
+              "url": "https://disneycruise.disney.go.com/en-ca/disney-island-destinations/castaway-cay/",
+              "locator": "Serenity Bay; family beach and rental sections",
+              "evidence": "Serenity Bay is the beach for adults 18 and older at Castaway Cay. Water activities include kayaks, snorkeling and paddle equipment.",
+              "topics": [
+                "cruise"
+              ],
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-07",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-05",
+              "limitations": "Institutional text inspected; no film or video playback claimed."
+            }
+          ],
+          "answer": "The In Da Shade game pavilion",
+          "verdict": "incorrect"
+        }
+      ]
+    }
+  }
+]

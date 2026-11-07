@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 328,
+  "hash": "6cd5be57d48a29b004a35b0b239962232fe87e0d41a0a5162fe3bc36aad4ec37",
+  "questionSnapshot": {
+    "id": 328,
+    "question": "In The Aristocats (1970), what is Madame Bonfamille's butler called?",
+    "answers": [
+      "Edgar",
+      "Georges",
+      "Napoleon",
+      "Lafayette"
+    ],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Removed the unneeded surname test: the readily accessible primary synopsis supports Edgar, while the indexed merchandise PDF for Balthazar could not be fully fetched. This is a narrower supported identification, not a claim that Balthazar is wrong. Four first names are parallel. Other cat/horse/dog questions mention Edgar but do not identify the butler by role. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+  "verification": {
+    "context": "In The Aristocats (1970), what is Madame Bonfamille's butler called? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The synopsis expressly names Madame Bonfamille greedy butler Edgar. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/aristocats-the-film/aristocats/",
+          "locator": "Opening synopsis: Duchess and exactly three kittens Toulouse, Berlioz, Marie; greedy butler Edgar; alley cat Thomas O'Malley and mouse Roquefort"
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Removed the unneeded surname test: the readily accessible primary synopsis supports Edgar, while the indexed merchandise PDF for Balthazar could not be fully fetched. This is a narrower supported identification, not a claim that Balthazar is wrong. Four first names are parallel. Other cat/horse/dog questions mention Edgar but do not identify the butler by role."
+    },
+    "options": [
+      {
+        "answer": "Edgar",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The synopsis expressly names Madame Bonfamille greedy butler Edgar.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/aristocats-the-film/aristocats/",
+            "locator": "Opening synopsis: Duchess and exactly three kittens Toulouse, Berlioz, Marie; greedy butler Edgar; alley cat Thomas O'Malley and mouse Roquefort"
+          }
+        ]
+      },
+      {
+        "answer": "Georges",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Georges is not the named butler Edgar.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/aristocats-the-film/aristocats/",
+            "locator": "Opening synopsis: Duchess and exactly three kittens Toulouse, Berlioz, Marie; greedy butler Edgar; alley cat Thomas O'Malley and mouse Roquefort"
+          }
+        ]
+      },
+      {
+        "answer": "Napoleon",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Napoleon is not the named butler Edgar.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/aristocats-the-film/aristocats/",
+            "locator": "Opening synopsis: Duchess and exactly three kittens Toulouse, Berlioz, Marie; greedy butler Edgar; alley cat Thomas O'Malley and mouse Roquefort"
+          }
+        ]
+      },
+      {
+        "answer": "Lafayette",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Lafayette is not the named butler Edgar.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/aristocats-the-film/aristocats/",
+            "locator": "Opening synopsis: Duchess and exactly three kittens Toulouse, Berlioz, Marie; greedy butler Edgar; alley cat Thomas O'Malley and mouse Roquefort"
+          }
+        ]
+      }
+    ]
+  }
+}

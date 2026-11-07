@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 323,
+  "hash": "e3a4504d090698165f3332564470de97b361dc046734acea99c76032835cc3b8",
+  "questionSnapshot": {
+    "id": 323,
+    "question": "In Sleeping Beauty, what is the name of Maleficent's loyal raven?",
+    "answers": [
+      "Diablo",
+      "Corvus",
+      "Raven",
+      "Shade"
+    ],
+    "difficulty": "hard",
+    "category": "characters"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Checked the possibility that the bird is unnamed in dialogue: the question asks his character name, not a spoken introduction. The Archives specifically answers this exact Sleeping Beauty naming question, so no reliance on the live-action Diaval or on a Villains novel is needed. Hard ancillary-character name recall is appropriate. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+  "verification": {
+    "context": "In Sleeping Beauty, what is the name of Maleficent's loyal raven? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The Walt Disney Archives explicitly says the raven is known as Diablo. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+      "sources": [
+        {
+          "url": "https://d23.com/ask-the-archives/films/page/13/",
+          "locator": "J of Los Angeles asks for unnamed characters including Maleficent raven from Sleeping Beauty; Archives answer: raven known as Diablo"
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Checked the possibility that the bird is unnamed in dialogue: the question asks his character name, not a spoken introduction. The Archives specifically answers this exact Sleeping Beauty naming question, so no reliance on the live-action Diaval or on a Villains novel is needed. Hard ancillary-character name recall is appropriate."
+    },
+    "options": [
+      {
+        "answer": "Diablo",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The Walt Disney Archives explicitly says the raven is known as Diablo.",
+        "sources": [
+          {
+            "url": "https://d23.com/ask-the-archives/films/page/13/",
+            "locator": "J of Los Angeles asks for unnamed characters including Maleficent raven from Sleeping Beauty; Archives answer: raven known as Diablo"
+          }
+        ]
+      },
+      {
+        "answer": "Corvus",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Corvus is not the name given in the Archives answer.",
+        "sources": [
+          {
+            "url": "https://d23.com/ask-the-archives/films/page/13/",
+            "locator": "J of Los Angeles asks for unnamed characters including Maleficent raven from Sleeping Beauty; Archives answer: raven known as Diablo"
+          }
+        ]
+      },
+      {
+        "answer": "Raven",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Raven is a species/descriptor here, not the specific name given by the Archives.",
+        "sources": [
+          {
+            "url": "https://d23.com/ask-the-archives/films/page/13/",
+            "locator": "J of Los Angeles asks for unnamed characters including Maleficent raven from Sleeping Beauty; Archives answer: raven known as Diablo"
+          }
+        ]
+      },
+      {
+        "answer": "Shade",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Shade is not the name given in the Archives answer.",
+        "sources": [
+          {
+            "url": "https://d23.com/ask-the-archives/films/page/13/",
+            "locator": "J of Los Angeles asks for unnamed characters including Maleficent raven from Sleeping Beauty; Archives answer: raven known as Diablo"
+          }
+        ]
+      }
+    ]
+  }
+}

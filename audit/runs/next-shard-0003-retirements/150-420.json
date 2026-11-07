@@ -1,0 +1,30 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "retired": {
+    "id": 150,
+    "question": "Disney Cruise Line's rotational dining system means guests do what?",
+    "answers": [
+      "Move to a different restaurant each night while their servers follow them",
+      "Stay in one restaurant for the entire cruise",
+      "Choose any restaurant each night independently",
+      "Eat all meals at a single buffet"
+    ],
+    "difficulty": "hard",
+    "category": "cruise"
+  },
+  "retained": {
+    "id": 420,
+    "question": "In the rotational dining system, what is unique about your servers on a Disney cruise?",
+    "answers": [
+      "Your servers follow you to each restaurant each night",
+      "You get new servers every night",
+      "You stay in one restaurant the whole cruise",
+      "Servers are chosen by random lottery"
+    ],
+    "difficulty": "easy",
+    "category": "cruise"
+  },
+  "rationale": "The central defining fact is servers accompanying guests through the dining rotation; retain the focused servers question rather than the overbroad different-restaurant-every-night formulation.",
+  "scope": "Only the planned question is retired; the replacement is context and is not newly approved."
+}

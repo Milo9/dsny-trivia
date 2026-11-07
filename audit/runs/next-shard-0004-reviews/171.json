@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 171,
+  "hash": "37967adcb8692a20856883edfc534eda994f2d7b7b8ee31462920b99b2ffcc34",
+  "questionSnapshot": {
+    "id": 171,
+    "question": "In the original Toy Story (1995), who is Woody's owner?",
+    "answers": [
+      "Andy",
+      "Sid",
+      "Bonnie",
+      "Al"
+    ],
+    "difficulty": "easy",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged Bonnie because she really becomes Woody’s owner in a sequel. The final wording pins the original 1995 film and Andy’s ownership, excluding later ownership, Sid’s temporary captivity and Al’s theft.",
+  "verification": {
+    "context": "In the original Toy Story (1995), who is Woody's owner?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Woody is Andy’s favorite toy in the explicitly scoped 1995 film.",
+      "sources": [
+        {
+          "url": "https://www.pixar.com/toy-story",
+          "locator": "Characters: Woody/Andy identify ownership; Sid and Sid’s House identify the toy-torturing neighbor; The World / Pizza Planet identifies space-themed restaurant."
+        },
+        {
+          "url": "https://d23.com/a-to-z/toy-story-film/",
+          "locator": "Release paragraph: November 22, 1995. Opening identifies Andy’s favorite toy Woody."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged Bonnie because she really becomes Woody’s owner in a sequel. The final wording pins the original 1995 film and Andy’s ownership, excluding later ownership, Sid’s temporary captivity and Al’s theft."
+    },
+    "options": [
+      {
+        "answer": "Andy",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Woody is Andy’s favorite toy in the explicitly scoped 1995 film.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/toy-story",
+            "locator": "Characters: Woody/Andy identify ownership; Sid and Sid’s House identify the toy-torturing neighbor; The World / Pizza Planet identifies space-themed restaurant."
+          },
+          {
+            "url": "https://d23.com/a-to-z/toy-story-film/",
+            "locator": "Release paragraph: November 22, 1995. Opening identifies Andy’s favorite toy Woody."
+          }
+        ]
+      },
+      {
+        "answer": "Sid",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "The toy-abusing neighbor, not Woody’s owner.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/toy-story",
+            "locator": "Characters: Woody/Andy identify ownership; Sid and Sid’s House identify the toy-torturing neighbor; The World / Pizza Planet identifies space-themed restaurant."
+          },
+          {
+            "url": "https://d23.com/a-to-z/toy-story-film/",
+            "locator": "Release paragraph: November 22, 1995. Opening identifies Andy’s favorite toy Woody."
+          }
+        ]
+      },
+      {
+        "answer": "Bonnie",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Later owner is outside the original-film scope; Andy is the explicitly identified original owner.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/toy-story",
+            "locator": "Characters: Woody/Andy identify ownership; Sid and Sid’s House identify the toy-torturing neighbor; The World / Pizza Planet identifies space-themed restaurant."
+          },
+          {
+            "url": "https://d23.com/a-to-z/toy-story-film/",
+            "locator": "Release paragraph: November 22, 1995. Opening identifies Andy’s favorite toy Woody."
+          }
+        ]
+      },
+      {
+        "answer": "Al",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the owner identified by the original-film account.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/toy-story",
+            "locator": "Characters: Woody/Andy identify ownership; Sid and Sid’s House identify the toy-torturing neighbor; The World / Pizza Planet identifies space-themed restaurant."
+          },
+          {
+            "url": "https://d23.com/a-to-z/toy-story-film/",
+            "locator": "Release paragraph: November 22, 1995. Opening identifies Andy’s favorite toy Woody."
+          }
+        ]
+      }
+    ]
+  }
+}

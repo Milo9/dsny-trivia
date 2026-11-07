@@ -1,0 +1,161 @@
+{
+  "schema": 2,
+  "questionId": 90,
+  "hash": "ca2cc061881cc7993e9766fde5dc79673da94012b9948dbb4811b8a8b8f47fdf",
+  "questionSnapshot": {
+    "id": 90,
+    "question": "Which Magic Kingdom boat ride features singing children representing many countries?",
+    "answers": [
+      "It's a Small World",
+      "Pirates of the Caribbean",
+      "The Haunted Mansion",
+      "Jungle Cruise"
+    ],
+    "difficulty": "easy",
+    "category": "parks"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "q692 tests World’s Fair origin. Historical origin and present ride experience are separate facts; park location now explicit. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "Walt Disney World, specified park/attraction; current naming/layout at review date.",
+    "timeSensitive": true,
+    "nextReviewAt": "2027-01-30",
+    "premise": {
+      "reason": "The Magic Kingdom boat ride with an international children’s chorus is it’s a small world.",
+      "sources": [
+        {
+          "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/its-a-small-world/",
+          "locator": "Page title and opening description: boat ride with singing children representing the globe; historical section distinguishes 1964 World’s Fair and 1971 Magic Kingdom versions."
+        },
+        {
+          "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/pirates-of-the-caribbean/",
+          "locator": "A Pirate’s Life for You / main experience description: pirate raid on Caribbean seaport towns, not international children’s chorus."
+        },
+        {
+          "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/haunted-mansion/",
+          "locator": "A Spirited Tour: Doom Buggy, Ghost Host, haunted estate and graveyard; does not describe a children’s boat ride."
+        },
+        {
+          "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/jungle-cruise/",
+          "locator": "Opening description and main experience paragraphs: exotic-river boat trip with animals and skipper commentary."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged Pirates and Jungle Cruise as other boats with human figures. Their documented defining scenes do not match the specified international singing children; Haunted Mansion additionally fails the boat requirement. Removed the World/world lexical clue."
+    },
+    "options": [
+      {
+        "answer": "It's a Small World",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The official introduction exactly describes this children’s boat ride.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/its-a-small-world/",
+            "locator": "Page title and opening description: boat ride with singing children representing the globe; historical section distinguishes 1964 World’s Fair and 1971 Magic Kingdom versions."
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/pirates-of-the-caribbean/",
+            "locator": "A Pirate’s Life for You / main experience description: pirate raid on Caribbean seaport towns, not international children’s chorus."
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/haunted-mansion/",
+            "locator": "A Spirited Tour: Doom Buggy, Ghost Host, haunted estate and graveyard; does not describe a children’s boat ride."
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/jungle-cruise/",
+            "locator": "Opening description and main experience paragraphs: exotic-river boat trip with animals and skipper commentary."
+          }
+        ]
+      },
+      {
+        "answer": "Pirates of the Caribbean",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Pirates depicts pirate raids on seaport towns, not this international chorus.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/its-a-small-world/",
+            "locator": "Page title and opening description: boat ride with singing children representing the globe; historical section distinguishes 1964 World’s Fair and 1971 Magic Kingdom versions."
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/pirates-of-the-caribbean/",
+            "locator": "A Pirate’s Life for You / main experience description: pirate raid on Caribbean seaport towns, not international children’s chorus."
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/haunted-mansion/",
+            "locator": "A Spirited Tour: Doom Buggy, Ghost Host, haunted estate and graveyard; does not describe a children’s boat ride."
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/jungle-cruise/",
+            "locator": "Opening description and main experience paragraphs: exotic-river boat trip with animals and skipper commentary."
+          }
+        ]
+      },
+      {
+        "answer": "The Haunted Mansion",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Haunted Mansion uses Doom Buggies for a haunted-estate tour, not this boat ride.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/its-a-small-world/",
+            "locator": "Page title and opening description: boat ride with singing children representing the globe; historical section distinguishes 1964 World’s Fair and 1971 Magic Kingdom versions."
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/pirates-of-the-caribbean/",
+            "locator": "A Pirate’s Life for You / main experience description: pirate raid on Caribbean seaport towns, not international children’s chorus."
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/haunted-mansion/",
+            "locator": "A Spirited Tour: Doom Buggy, Ghost Host, haunted estate and graveyard; does not describe a children’s boat ride."
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/jungle-cruise/",
+            "locator": "Opening description and main experience paragraphs: exotic-river boat trip with animals and skipper commentary."
+          }
+        ]
+      },
+      {
+        "answer": "Jungle Cruise",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Jungle Cruise tours exotic rivers and animal scenes, not a singing children’s chorus.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/its-a-small-world/",
+            "locator": "Page title and opening description: boat ride with singing children representing the globe; historical section distinguishes 1964 World’s Fair and 1971 Magic Kingdom versions."
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/pirates-of-the-caribbean/",
+            "locator": "A Pirate’s Life for You / main experience description: pirate raid on Caribbean seaport towns, not international children’s chorus."
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/haunted-mansion/",
+            "locator": "A Spirited Tour: Doom Buggy, Ghost Host, haunted estate and graveyard; does not describe a children’s boat ride."
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/jungle-cruise/",
+            "locator": "Opening description and main experience paragraphs: exotic-river boat trip with animals and skipper commentary."
+          }
+        ]
+      }
+    ]
+  }
+}

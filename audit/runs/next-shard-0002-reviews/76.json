@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 76,
+  "hash": "41552c637daf60f0f6962791c70111f9274ca28ba71e494a3392e86565ad5b8a",
+  "questionSnapshot": {
+    "id": 76,
+    "question": "In Cinderella, what are the names of Cinderella's two main mouse friends?",
+    "answers": [
+      "Jaq and Gus",
+      "Tic and Tac",
+      "Nibbles and Chuck",
+      "Tom and Jerry"
+    ],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Distinct from Gus’s yellow shirt and the mice’s dressmaking action. Options are uniformly pairs. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "English-language Disney character naming; original theatrical feature where a film is named. In Cinderella, what are the names of Cinderella's two main mouse friends?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The Cinderella mouse helpers are explicitly described as led by Jaq and Gus.",
+      "sources": [
+        {
+          "url": "https://d23.com/enchanting-cinderella-facts-fit-royalty/",
+          "locator": "Section 1: mouse helpers led by Jaq and Gus; other mouse names also discussed, so the question is about the main pair, not all mice."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "The source names additional mice, so it would not prove a claim that Cinderella has only two mouse friends. The actual wording says two main friends; the explicit leading-pair identification supports that narrower premise and excludes all alternative pairs."
+    },
+    "options": [
+      {
+        "answer": "Jaq and Gus",
+        "verdict": "correct",
+        "basis": "exhaustive-list",
+        "reason": "Jaq and Gus are the identified leading pair.",
+        "sources": [
+          {
+            "url": "https://d23.com/enchanting-cinderella-facts-fit-royalty/",
+            "locator": "Section 1: mouse helpers led by Jaq and Gus; other mouse names also discussed, so the question is about the main pair, not all mice."
+          }
+        ]
+      },
+      {
+        "answer": "Tic and Tac",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Tic and Tac is not the identified leading pair.",
+        "sources": [
+          {
+            "url": "https://d23.com/enchanting-cinderella-facts-fit-royalty/",
+            "locator": "Section 1: mouse helpers led by Jaq and Gus; other mouse names also discussed, so the question is about the main pair, not all mice."
+          }
+        ]
+      },
+      {
+        "answer": "Nibbles and Chuck",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Nibbles and Chuck is not the identified leading pair.",
+        "sources": [
+          {
+            "url": "https://d23.com/enchanting-cinderella-facts-fit-royalty/",
+            "locator": "Section 1: mouse helpers led by Jaq and Gus; other mouse names also discussed, so the question is about the main pair, not all mice."
+          }
+        ]
+      },
+      {
+        "answer": "Tom and Jerry",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Tom and Jerry is not the identified leading pair.",
+        "sources": [
+          {
+            "url": "https://d23.com/enchanting-cinderella-facts-fit-royalty/",
+            "locator": "Section 1: mouse helpers led by Jaq and Gus; other mouse names also discussed, so the question is about the main pair, not all mice."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 296,
+  "hash": "c7c434c4fd28921bf1c3a3ed159206659f89404cb69ed7e1511a200d5a070f09",
+  "questionSnapshot": {
+    "id": 296,
+    "question": "In Mulan, what is the name of Mulan's lucky cricket?",
+    "answers": [
+      "Cri-Kee",
+      "Jiminy",
+      "Lucky",
+      "Pal"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Cricket given as lucky need not possess proven supernatural luck for name question to be valid. Do not substitute Pinocchio Jiminy or generic quality Lucky for Cri-Kee. Film synopsis explicitly supplies role/name.",
+  "verification": {
+    "context": "In Mulan, what is the name of Mulan's lucky cricket?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Synopsis explicitly names Cri-Kee as lucky cricket.",
+      "sources": [
+        {
+          "url": "https://movies.disney.com/mulan",
+          "locator": "1998 synopsis explicitly names Cri-Kee as the lucky cricket alongside Mushu and Captain Shang."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Cricket given as lucky need not possess proven supernatural luck for name question to be valid. Do not substitute Pinocchio Jiminy or generic quality Lucky for Cri-Kee. Film synopsis explicitly supplies role/name."
+    },
+    "options": [
+      {
+        "answer": "Cri-Kee",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Synopsis explicitly names Cri-Kee as lucky cricket.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/mulan",
+            "locator": "1998 synopsis explicitly names Cri-Kee as the lucky cricket alongside Mushu and Captain Shang."
+          }
+        ]
+      },
+      {
+        "answer": "Jiminy",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Jiminy is not the named cricket in Mulan.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/mulan",
+            "locator": "1998 synopsis explicitly names Cri-Kee as the lucky cricket alongside Mushu and Captain Shang."
+          }
+        ]
+      },
+      {
+        "answer": "Lucky",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Lucky describes an attributed quality, not this character name.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/mulan",
+            "locator": "1998 synopsis explicitly names Cri-Kee as the lucky cricket alongside Mushu and Captain Shang."
+          }
+        ]
+      },
+      {
+        "answer": "Pal",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Pal is not the named character.",
+        "sources": [
+          {
+            "url": "https://movies.disney.com/mulan",
+            "locator": "1998 synopsis explicitly names Cri-Kee as the lucky cricket alongside Mushu and Captain Shang."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 359,
+  "hash": "e811549bd1145f92c1a3fd3c0a8f6218abeef74cb1d14f5f8cc251e83df00036",
+  "questionSnapshot": {
+    "id": 359,
+    "question": "Which Disneyland ticket-book coupon, introduced in 1959, became shorthand for a thrilling attraction?",
+    "answers": [
+      "E ticket",
+      "A ticket",
+      "B ticket",
+      "C ticket"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Corrected the original-system implication: the first 1955 books had no E coupon. The primary chronology independently lists all three distractor letters before E was added, and defines the slang usage. All answers now parallel coupon names. Historical parks vocabulary; no same-fact question in the full parks digest. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+  "verification": {
+    "context": "Which Disneyland ticket-book coupon, introduced in 1959, became shorthand for a thrilling attraction? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The E coupon was added in 1959 and became the thrill-ride expression. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/e-ticket/",
+          "locator": "Complete entry: E introduced 1959, A/B/C books October 1955, D added 1956; E became slang for thrills"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/E_ticket",
+          "locator": "History: June 1959 introduction of E designation; original A/B/C books"
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Corrected the original-system implication: the first 1955 books had no E coupon. The primary chronology independently lists all three distractor letters before E was added, and defines the slang usage. All answers now parallel coupon names. Historical parks vocabulary; no same-fact question in the full parks digest."
+    },
+    "options": [
+      {
+        "answer": "E ticket",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The E coupon was added in 1959 and became the thrill-ride expression.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/e-ticket/",
+            "locator": "Complete entry: E introduced 1959, A/B/C books October 1955, D added 1956; E became slang for thrills"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/E_ticket",
+            "locator": "History: June 1959 introduction of E designation; original A/B/C books"
+          }
+        ]
+      },
+      {
+        "answer": "A ticket",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "A tickets were present in the original 1955 book, not introduced in 1959.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/e-ticket/",
+            "locator": "Complete entry: E introduced 1959, A/B/C books October 1955, D added 1956; E became slang for thrills"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/E_ticket",
+            "locator": "History: June 1959 introduction of E designation; original A/B/C books"
+          }
+        ]
+      },
+      {
+        "answer": "B ticket",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "B tickets were present in the original 1955 book, not introduced in 1959.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/e-ticket/",
+            "locator": "Complete entry: E introduced 1959, A/B/C books October 1955, D added 1956; E became slang for thrills"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/E_ticket",
+            "locator": "History: June 1959 introduction of E designation; original A/B/C books"
+          }
+        ]
+      },
+      {
+        "answer": "C ticket",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "C tickets were present in the original 1955 book, not introduced in 1959.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/e-ticket/",
+            "locator": "Complete entry: E introduced 1959, A/B/C books October 1955, D added 1956; E became slang for thrills"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/E_ticket",
+            "locator": "History: June 1959 introduction of E designation; original A/B/C books"
+          }
+        ]
+      }
+    ]
+  }
+}

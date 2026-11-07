@@ -1,0 +1,30 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "retired": {
+    "id": 276,
+    "question": "What Disney classic features a villain named Madam Mim who battles Merlin in a magic duel?",
+    "answers": [
+      "The Sword in the Stone",
+      "The Black Cauldron",
+      "The Great Mouse Detective",
+      "Sleeping Beauty"
+    ],
+    "difficulty": "hard",
+    "category": "movies"
+  },
+  "retained": {
+    "id": 330,
+    "question": "In The Sword in the Stone, what is the name of the female wizard who battles Merlin?",
+    "answers": [
+      "Madam Mim",
+      "Morgana",
+      "Maleficent",
+      "Ursula"
+    ],
+    "difficulty": "hard",
+    "category": "characters"
+  },
+  "rationale": "Inverse Madam Mim / Sword in the Stone wizard-duel association. Memorizing either complete question solves the other without a new fact. Retain the direct character identification.",
+  "scope": "Only the planned question is retired; comparison does not confer factual approval on an unreviewed replacement."
+}

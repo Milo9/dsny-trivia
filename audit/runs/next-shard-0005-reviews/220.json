@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 220,
+  "hash": "29acae2fa9af43945c5784209b55a9a08df6b3b989f6a01011adb5f5af4ae86d",
+  "questionSnapshot": {
+    "id": 220,
+    "question": "In The Little Mermaid (1989), what does Scuttle the seagull call a fork?",
+    "answers": [
+      "A dinglehopper",
+      "A thingamabob",
+      "A gizmo",
+      "A whatsit"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four answers and relevant full topic digests/category context; checked cross-bank matches, wording, scope, category and editorial difficulty. Specified 1989, where Scuttle is a seagull. The direct dialogue transcription and independent character account agree on fork/dinglehopper and pipe/snarfblatt; generic thingamabob does not replace the specific utterance. No primary film clip was inspected; secondary-source limitation preserved.",
+  "verification": {
+    "context": "In The Little Mermaid (1989), what does Scuttle the seagull call a fork?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Dialogue explicitly gives dinglehopper for the fork.",
+      "sources": [
+        {
+          "url": "https://en.wikiquote.org/wiki/The_Little_Mermaid_(1989_film)",
+          "locator": "Dialogue: first Scuttle treasure inspection, fork handed over, explicitly named dinglehopper, pipe named snarfblatt. Third-party dialogue transcription, not an inspected studio script."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/List_of_The_Little_Mermaid_characters",
+          "locator": "Scuttle section explicitly says fork is dinglehopper and pipe snarfblatt; independent secondary corroboration of the dialogue transcription."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Specified 1989, where Scuttle is a seagull. The direct dialogue transcription and independent character account agree on fork/dinglehopper and pipe/snarfblatt; generic thingamabob does not replace the specific utterance. No primary film clip was inspected; secondary-source limitation preserved."
+    },
+    "options": [
+      {
+        "answer": "A dinglehopper",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Dialogue explicitly gives dinglehopper for the fork.",
+        "sources": [
+          {
+            "url": "https://en.wikiquote.org/wiki/The_Little_Mermaid_(1989_film)",
+            "locator": "Dialogue: first Scuttle treasure inspection, fork handed over, explicitly named dinglehopper, pipe named snarfblatt. Third-party dialogue transcription, not an inspected studio script."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/List_of_The_Little_Mermaid_characters",
+            "locator": "Scuttle section explicitly says fork is dinglehopper and pipe snarfblatt; independent secondary corroboration of the dialogue transcription."
+          }
+        ]
+      },
+      {
+        "answer": "A thingamabob",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Generic collection term is not Scuttle’s specific fork name.",
+        "sources": [
+          {
+            "url": "https://en.wikiquote.org/wiki/The_Little_Mermaid_(1989_film)",
+            "locator": "Dialogue: first Scuttle treasure inspection, fork handed over, explicitly named dinglehopper, pipe named snarfblatt. Third-party dialogue transcription, not an inspected studio script."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/List_of_The_Little_Mermaid_characters",
+            "locator": "Scuttle section explicitly says fork is dinglehopper and pipe snarfblatt; independent secondary corroboration of the dialogue transcription."
+          }
+        ]
+      },
+      {
+        "answer": "A gizmo",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different term from the fork name in the dialogue.",
+        "sources": [
+          {
+            "url": "https://en.wikiquote.org/wiki/The_Little_Mermaid_(1989_film)",
+            "locator": "Dialogue: first Scuttle treasure inspection, fork handed over, explicitly named dinglehopper, pipe named snarfblatt. Third-party dialogue transcription, not an inspected studio script."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/List_of_The_Little_Mermaid_characters",
+            "locator": "Scuttle section explicitly says fork is dinglehopper and pipe snarfblatt; independent secondary corroboration of the dialogue transcription."
+          }
+        ]
+      },
+      {
+        "answer": "A whatsit",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Different term from the fork name in the dialogue.",
+        "sources": [
+          {
+            "url": "https://en.wikiquote.org/wiki/The_Little_Mermaid_(1989_film)",
+            "locator": "Dialogue: first Scuttle treasure inspection, fork handed over, explicitly named dinglehopper, pipe named snarfblatt. Third-party dialogue transcription, not an inspected studio script."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/List_of_The_Little_Mermaid_characters",
+            "locator": "Scuttle section explicitly says fork is dinglehopper and pipe snarfblatt; independent secondary corroboration of the dialogue transcription."
+          }
+        ]
+      }
+    ]
+  }
+}

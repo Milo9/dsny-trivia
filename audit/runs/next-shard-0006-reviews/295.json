@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 295,
+  "hash": "a3f655bab3b4f62bd6a78c2769db13dc963baeab8fbb2222021fa3b416c95e16",
+  "questionSnapshot": {
+    "id": 295,
+    "question": "What type of animal is Pegasus in Hercules?",
+    "answers": [
+      "A winged horse",
+      "A griffin",
+      "A dragon",
+      "A unicorn"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Distinguish flying horse from horned unicorn, dragon or hybrid griffin. Disney feature synopsis and its artwork identify Pegasus, not a general claim about Greek myth birth/lineage. Cloud creation q2152 is a separate fact.",
+  "verification": {
+    "context": "What type of animal is Pegasus in Hercules?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Pegasus is a flying stallion, a winged horse.",
+      "sources": [
+        {
+          "url": "https://www.disneyanimation.com/films/hercules/",
+          "locator": "Studio synopsis identifies Pegasus as Hercules flying stallion; official artwork belongs to 1997 feature."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Distinguish flying horse from horned unicorn, dragon or hybrid griffin. Disney feature synopsis and its artwork identify Pegasus, not a general claim about Greek myth birth/lineage. Cloud creation q2152 is a separate fact."
+    },
+    "options": [
+      {
+        "answer": "A winged horse",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Pegasus is a flying stallion, a winged horse.",
+        "sources": [
+          {
+            "url": "https://www.disneyanimation.com/films/hercules/",
+            "locator": "Studio synopsis identifies Pegasus as Hercules flying stallion; official artwork belongs to 1997 feature."
+          }
+        ]
+      },
+      {
+        "answer": "A griffin",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Griffin is not the equine creature identified.",
+        "sources": [
+          {
+            "url": "https://www.disneyanimation.com/films/hercules/",
+            "locator": "Studio synopsis identifies Pegasus as Hercules flying stallion; official artwork belongs to 1997 feature."
+          }
+        ]
+      },
+      {
+        "answer": "A dragon",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Dragon is not the equine creature identified.",
+        "sources": [
+          {
+            "url": "https://www.disneyanimation.com/films/hercules/",
+            "locator": "Studio synopsis identifies Pegasus as Hercules flying stallion; official artwork belongs to 1997 feature."
+          }
+        ]
+      },
+      {
+        "answer": "A unicorn",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Unicorn is not the flying stallion identity depicted.",
+        "sources": [
+          {
+            "url": "https://www.disneyanimation.com/films/hercules/",
+            "locator": "Studio synopsis identifies Pegasus as Hercules flying stallion; official artwork belongs to 1997 feature."
+          }
+        ]
+      }
+    ]
+  }
+}

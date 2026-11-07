@@ -1,0 +1,31 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "retired": {
+    "id": 365,
+    "question": "What is the name of Disney's resort and spa in Hawaii?",
+    "answers": [
+      "Aulani, a Disney Resort & Spa",
+      "Disney Polynesian Hawaii",
+      "Disney Honolulu",
+      "Aloha Disney Resort"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "retained": {
+    "id": 1156,
+    "question": "Disney's Aulani resort is located in what area of Oahu?",
+    "answers": [
+      "Ko Olina",
+      "Waikiki",
+      "Hilo",
+      "Lahaina"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "additionalComparisons": [],
+  "rationale": "Inverse Aulani/Hawaiian location identity. The retained question names Disney's Aulani and locates it on Oahu, then asks the Ko Olina location. Memorizing that complete question answers 365 and includes more precise geography.",
+  "scope": "Only the planned question is retired. Comparing a replacement does not approve its factual review."
+}

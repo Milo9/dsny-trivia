@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 176,
+  "hash": "edcc354a4c1068279a352969292e239f2ca074f0ca51a48c5eed46c7732f8c9b",
+  "questionSnapshot": {
+    "id": 176,
+    "question": "What is the name of the main character in Brave?",
+    "answers": [
+      "Merida",
+      "Moana",
+      "Tiana",
+      "Mirabel"
+    ],
+    "difficulty": "easy",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Tried the three other heroines as alternate protagonists; Pixar centers this film on Merida by name. Scottish-setting and horse-name questions require different facts.",
+  "verification": {
+    "context": "What is the name of the main character in Brave?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Synopsis and character profile center the story on Merida.",
+      "sources": [
+        {
+          "url": "https://www.pixar.com/brave",
+          "locator": "Synopsis and The Story of Brave / Merida profiles: heroine is Merida; mother Queen Elinor is transformed into a bear."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Tried the three other heroines as alternate protagonists; Pixar centers this film on Merida by name. Scottish-setting and horse-name questions require different facts."
+    },
+    "options": [
+      {
+        "answer": "Merida",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Synopsis and character profile center the story on Merida.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/brave",
+            "locator": "Synopsis and The Story of Brave / Merida profiles: heroine is Merida; mother Queen Elinor is transformed into a bear."
+          }
+        ]
+      },
+      {
+        "answer": "Moana",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the protagonist named in Brave’s synopsis.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/brave",
+            "locator": "Synopsis and The Story of Brave / Merida profiles: heroine is Merida; mother Queen Elinor is transformed into a bear."
+          }
+        ]
+      },
+      {
+        "answer": "Tiana",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the protagonist named in Brave’s synopsis.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/brave",
+            "locator": "Synopsis and The Story of Brave / Merida profiles: heroine is Merida; mother Queen Elinor is transformed into a bear."
+          }
+        ]
+      },
+      {
+        "answer": "Mirabel",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the protagonist named in Brave’s synopsis.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/brave",
+            "locator": "Synopsis and The Story of Brave / Merida profiles: heroine is Merida; mother Queen Elinor is transformed into a bear."
+          }
+        ]
+      }
+    ]
+  }
+}

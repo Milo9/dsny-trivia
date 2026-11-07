@@ -1,0 +1,547 @@
+[
+  {
+    "findingId": "duplicate-289a3cd95b5305724a48",
+    "questions": [
+      {
+        "id": 256,
+        "question": "In Oliver & Company, what famous city does the story take place in?",
+        "answers": [
+          "New York City",
+          "Los Angeles",
+          "Chicago",
+          "Miami"
+        ],
+        "difficulty": "medium",
+        "category": "movies"
+      },
+      {
+        "id": 531,
+        "question": "Which Disney animated film includes the song Once Upon a Time in New York City?",
+        "answers": [
+          "Oliver & Company",
+          "The Rescuers",
+          "The Great Mouse Detective",
+          "The Aristocats"
+        ],
+        "difficulty": "hard",
+        "category": "music"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "Story location versus association of the particular song Once Upon a Time in New York City with its film. Knowing story geography alone does not establish that song appears; knowing its film does not establish where the story primarily occurs. Separate geography and musical fact."
+  },
+  {
+    "findingId": "duplicate-2a9c3661aa7b2aad961d",
+    "questions": [
+      {
+        "id": 258,
+        "question": "In Peter Pan (1953), what does Wendy offer Peter just before Tinker Bell interrupts them in the nursery?",
+        "answers": [
+          "A kiss",
+          "A hug",
+          "A story",
+          "A dance"
+        ],
+        "difficulty": "medium",
+        "category": "movies"
+      },
+      {
+        "id": 2338,
+        "question": "In The Hunchback of Notre Dame II, what do Quasimodo and Madellaine share for the first time as Zephyr rings the bell La Fidèle at the film's end?",
+        "answers": [
+          "A kiss",
+          "A dance",
+          "A handshake",
+          "A toast"
+        ],
+        "difficulty": "medium",
+        "category": "movies"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "A nursery offer in Peter Pan versus an actual climactic kiss in Hunchback II. Different characters, film and event; common action does not connect these facts."
+  },
+  {
+    "findingId": "duplicate-34f3245050e86e80be0c",
+    "questions": [
+      {
+        "id": 284,
+        "question": "In Beauty and the Beast, which household object is Cogsworth?",
+        "answers": [
+          "A clock",
+          "A candlestick",
+          "A teapot",
+          "A wardrobe"
+        ],
+        "difficulty": "easy",
+        "category": "characters"
+      },
+      {
+        "id": 705,
+        "question": "What song from Beauty and the Beast is performed by the enchanted household objects?",
+        "answers": [
+          "Be Our Guest",
+          "Gaston",
+          "Something There",
+          "Beauty and the Beast"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "Cogsworth enchanted-object identity versus the title of an ensemble song. Knowing clock does not establish Be Our Guest; song title alone does not establish Cogsworth transformation."
+  },
+  {
+    "findingId": "duplicate-51ef2c535eed18bb2e98",
+    "questions": [
+      {
+        "id": 185,
+        "question": "In Ratatouille, what is the name of the famous chef whose motto is 'Anyone can cook'?",
+        "answers": [
+          "Auguste Gusteau",
+          "Anton Ego",
+          "Skinner",
+          "Lalo"
+        ],
+        "difficulty": "medium",
+        "category": "pixar"
+      },
+      {
+        "id": 263,
+        "question": "In Ratatouille (2007), who is revealed to be Linguini's biological father?",
+        "answers": [
+          "Auguste Gusteau",
+          "Chef Skinner",
+          "Anton Ego",
+          "Chef Horst"
+        ],
+        "difficulty": "medium",
+        "category": "pixar"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "Gusteau motto authorship versus his biological relationship to Linguini. The common person has two independently learned facts; neither stem supplies the other answer."
+  },
+  {
+    "findingId": "duplicate-696c918eec7957a961f7",
+    "questions": [
+      {
+        "id": 282,
+        "question": "What is Simba's mother's name in The Lion King?",
+        "answers": [
+          "Sarabi",
+          "Nala",
+          "Kiara",
+          "Sarafina"
+        ],
+        "difficulty": "easy",
+        "category": "characters"
+      },
+      {
+        "id": 1119,
+        "question": "In The Lion King, what is Nala's mother's name?",
+        "answers": [
+          "Sarafina",
+          "Sarabi",
+          "Zira",
+          "Kiara"
+        ],
+        "difficulty": "hard",
+        "category": "characters"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "Two different mother-child relationships: Sarabi/Simba versus Sarafina/Nala. Similar wording does not make the mothers interchangeable."
+  },
+  {
+    "findingId": "duplicate-69e93d2190a4c5df0e2e",
+    "questions": [
+      {
+        "id": 288,
+        "question": "What is the name of Ariel's fish best friend in The Little Mermaid?",
+        "answers": [
+          "Flounder",
+          "Sebastian",
+          "Scuttle",
+          "Grimsby"
+        ],
+        "difficulty": "easy",
+        "category": "characters"
+      },
+      {
+        "id": 290,
+        "question": "In The Little Mermaid (1989), what is the name of Ariel's seagull friend?",
+        "answers": [
+          "Scuttle",
+          "Flounder",
+          "Sebastian",
+          "Grimsby"
+        ],
+        "difficulty": "easy",
+        "category": "characters"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "Different named friends and species: Flounder/fish versus Scuttle/seagull. Learning one identity alone does not establish the other among the four choices."
+  },
+  {
+    "findingId": "duplicate-7dbbd38e8e38060a33d8",
+    "questions": [
+      {
+        "id": 256,
+        "question": "In Oliver & Company, what famous city does the story take place in?",
+        "answers": [
+          "New York City",
+          "Los Angeles",
+          "Chicago",
+          "Miami"
+        ],
+        "difficulty": "medium",
+        "category": "movies"
+      },
+      {
+        "id": 2162,
+        "question": "In what real U.S. city is the human world of Soul primarily set?",
+        "answers": [
+          "New York City",
+          "Chicago",
+          "Los Angeles",
+          "New Orleans"
+        ],
+        "difficulty": "easy",
+        "category": "pixar"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "Oliver and Company versus Soul geography. A shared New York setting does not establish one film location from the other."
+  },
+  {
+    "findingId": "duplicate-82f9117fce1a6cb0beed",
+    "questions": [
+      {
+        "id": 275,
+        "question": "In The Rescuers (1977), what is the name of the orphan girl Bernard and Miss Bianca rescue?",
+        "answers": [
+          "Penny",
+          "Jenny",
+          "Molly",
+          "Annie"
+        ],
+        "difficulty": "medium",
+        "category": "movies"
+      },
+      {
+        "id": 1131,
+        "question": "In Bolt, what is the name of Bolt's human owner?",
+        "answers": [
+          "Penny",
+          "Mittens",
+          "Rhino",
+          "Molly"
+        ],
+        "difficulty": "easy",
+        "category": "characters"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "Penny rescued by Bernard/Bianca versus a different Penny who owns Bolt. Shared first name, different fictional people and relationships."
+  },
+  {
+    "findingId": "duplicate-ba1b1bb36adc1ac1b40a",
+    "questions": [
+      {
+        "id": 256,
+        "question": "In Oliver & Company, what famous city does the story take place in?",
+        "answers": [
+          "New York City",
+          "Los Angeles",
+          "Chicago",
+          "Miami"
+        ],
+        "difficulty": "medium",
+        "category": "movies"
+      },
+      {
+        "id": 953,
+        "question": "What city hosted the 1964 World's Fair where Disney created several attractions?",
+        "answers": [
+          "New York City",
+          "Chicago",
+          "Seattle",
+          "San Francisco"
+        ],
+        "difficulty": "medium",
+        "category": "walt"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "A fictional story setting versus the actual city hosting the 1964 Worlds Fair. Common answer is coincidental; neither relationship proves the other."
+  },
+  {
+    "findingId": "duplicate-c23bdb7c87d1ebd74994",
+    "questions": [
+      {
+        "id": 268,
+        "question": "In The Sword in the Stone, what nickname is young Arthur called?",
+        "answers": [
+          "Wart",
+          "Artie",
+          "Lance",
+          "Gally"
+        ],
+        "difficulty": "medium",
+        "category": "movies"
+      },
+      {
+        "id": 516,
+        "question": "In The Sword in the Stone, who is the wise wizard who mentors young Arthur?",
+        "answers": [
+          "Merlin",
+          "Archimedes",
+          "Mim",
+          "Sir Ector"
+        ],
+        "difficulty": "medium",
+        "category": "movies"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "Arthur nickname Wart versus mentor wizard Merlin. Learning a pupil nickname does not give the teacher identity, or vice versa."
+  },
+  {
+    "findingId": "duplicate-d363f20739ee828228db",
+    "questions": [
+      {
+        "id": 254,
+        "question": "In The Rescuers Down Under (1990), what kind of animal is Marahute?",
+        "answers": [
+          "An eagle",
+          "A kangaroo",
+          "A parrot",
+          "A crocodile"
+        ],
+        "difficulty": "medium",
+        "category": "movies"
+      },
+      {
+        "id": 2438,
+        "question": "In Coco, Imelda's alebrije spirit guide Pepita is a hybrid creature made of several animals. Her wings and feet come from which animal?",
+        "answers": [
+          "Eagle",
+          "Ram",
+          "Tiger",
+          "Lizard"
+        ],
+        "difficulty": "hard",
+        "category": "characters"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "Marahute species in Rescuers Down Under versus eagle-derived body parts of Coco hybrid Pepita. The creature identity does not establish the hybrid design relationship."
+  },
+  {
+    "findingId": "duplicate-f013ce2d7eba6d6bc0b4",
+    "questions": [
+      {
+        "id": 251,
+        "question": "In Encanto, which Madrigal family member can see the future?",
+        "answers": [
+          "Bruno",
+          "Camilo",
+          "Dolores",
+          "Luisa"
+        ],
+        "difficulty": "medium",
+        "category": "movies"
+      },
+      {
+        "id": 807,
+        "question": "In Cinderella, what is the name of Cinderella's dog?",
+        "answers": [
+          "Bruno",
+          "Major",
+          "Gus",
+          "Lucifer"
+        ],
+        "difficulty": "medium",
+        "category": "movies"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "Bruno the human Madrigal prophet versus Cinderella dog Bruno. Same name belongs to unrelated characters with different roles in different films."
+  },
+  {
+    "findingId": "leak-cc1cb9044a3c5cb5c803",
+    "questions": [
+      {
+        "id": 256,
+        "question": "In Oliver & Company, what famous city does the story take place in?",
+        "answers": [
+          "New York City",
+          "Los Angeles",
+          "Chicago",
+          "Miami"
+        ],
+        "difficulty": "medium",
+        "category": "movies"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "accepted",
+    "reason": "City is the requested answer type and is a generic noun; it does not give New York. All four answers are city names with comparable granularity, so the mechanical overlap is necessary context rather than an answer leak."
+  },
+  {
+    "questions": [
+      {
+        "id": 273,
+        "question": "In Tarzan (1999), what is the full name of Jane's scientist father?",
+        "answers": [
+          "Professor Archimedes Q. Porter",
+          "Professor Augustus J. Porter",
+          "Professor Alexander B. Porter",
+          "Professor Archibald M. Porter"
+        ],
+        "difficulty": "hard",
+        "category": "movies"
+      },
+      {
+        "id": 1123,
+        "question": "In Tarzan, what is Jane's father usually called?",
+        "answers": [
+          "Professor Porter",
+          "Professor Clayton",
+          "Doctor Archimedes",
+          "Sir Porter"
+        ],
+        "difficulty": "medium",
+        "category": "characters"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "distinct-context",
+    "reason": "Exact first name and initial versus usual title/surname. Four final options all say Professor ... Porter, so memorizing Professor Porter cannot choose Archimedes Q. Genuine additional name detail."
+  },
+  {
+    "questions": [
+      {
+        "id": 280,
+        "question": "What is the name of Winnie the Pooh's bouncing tiger friend?",
+        "answers": [
+          "Tigger",
+          "Eeyore",
+          "Piglet",
+          "Roo"
+        ],
+        "difficulty": "easy",
+        "category": "characters"
+      },
+      {
+        "id": 300,
+        "question": "In Disney's Winnie the Pooh films, what is the name of Pooh's young human friend?",
+        "answers": [
+          "Christopher Robin",
+          "Michael Darling",
+          "Andy Davis",
+          "Roger Radcliffe"
+        ],
+        "difficulty": "easy",
+        "category": "characters"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "distinct-context",
+    "reason": "Tiger Tigger versus human Christopher Robin: different Pooh companions; common framing does not supply either identity from the other."
+  },
+  {
+    "questions": [
+      {
+        "id": 278,
+        "question": "In Sleeping Beauty (1959), what mountain region does the narrator call Maleficent's domain?",
+        "answers": [
+          "The Forbidden Mountains",
+          "The Misty Mountains",
+          "The Shadow Mountains",
+          "The Black Mountains"
+        ],
+        "difficulty": "hard",
+        "category": "movies"
+      },
+      {
+        "id": 323,
+        "question": "In Sleeping Beauty, what is the name of Maleficent's loyal raven?",
+        "answers": [
+          "Diablo",
+          "Corvus",
+          "Raven",
+          "Shade"
+        ],
+        "difficulty": "hard",
+        "category": "characters"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "distinct-context",
+    "reason": "Maleficent domain versus raven identity: different place and character facts."
+  },
+  {
+    "questions": [
+      {
+        "id": 287,
+        "question": "In Cinderella (1950), what do the mice and birds sew for Cinderella before her Fairy Godmother arrives?",
+        "answers": [
+          "A dress",
+          "A pair of slippers",
+          "A cloak",
+          "A pair of gloves"
+        ],
+        "difficulty": "easy",
+        "category": "characters"
+      },
+      {
+        "id": 1244,
+        "question": "In Cinderella, what song do the mice sing while making Cinderella's dress?",
+        "answers": [
+          "The Work Song",
+          "A Dream Is a Wish Your Heart Makes",
+          "So This Is Love",
+          "Sing Sweet Nightingale"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "decision": "distinct-context",
+    "reason": "Garment made by animals versus the song they sing during making. Identifying dress alone does not name The Work Song."
+  }
+]

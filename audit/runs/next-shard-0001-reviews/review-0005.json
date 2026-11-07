@@ -1,0 +1,96 @@
+{
+  "questionId": 5,
+  "hash": "b4a2a5d5caa492494ccf4a595c459bb6bbc1e61ed650454182230b61d5f840ba",
+  "questionSnapshot": {
+    "id": 5,
+    "question": "In Aladdin, how many wishes does Aladdin receive from the Genie?",
+    "answers": [
+      "Three",
+      "One",
+      "Seven",
+      "Unlimited"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Short number choices with a sensible unlimited distractor. Three does not duplicate #415 rotational dining or #2551 Oscar nominations: unrelated counted things. Exact number corroborated by Disney synopsis and the transcript.",
+  "verification": {
+    "context": "Aladdin, Disney animated 1992 film, the Genie's stated wish allowance for Aladdin.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Three",
+        "verdict": "correct",
+        "reason": "Genie states three wishes; Disney's synopsis independently states the same allowance.",
+        "sources": [
+          {
+            "url": "https://princess.disney.com/jasmine",
+            "locator": "Aladdin on Disney+ synopsis: Genie and three wishes; Jasmine profile names her tiger Rajah."
+          },
+          {
+            "url": "https://imsdb.com/scripts/Aladdin.html",
+            "locator": "Genie introduction in Cave of Wonders: immediately after wish fulfillment, specifies three wishes and forbids wishing for more; Aladdin confirms the three-wish allowance before his first wish. Unofficial transcript host, corroborated by Disney Princess synopsis."
+          }
+        ]
+      },
+      {
+        "answer": "One",
+        "verdict": "incorrect",
+        "reason": "One is fewer than the stated allowance of three.",
+        "sources": [
+          {
+            "url": "https://princess.disney.com/jasmine",
+            "locator": "Aladdin on Disney+ synopsis: Genie and three wishes; Jasmine profile names her tiger Rajah."
+          },
+          {
+            "url": "https://imsdb.com/scripts/Aladdin.html",
+            "locator": "Genie introduction in Cave of Wonders: immediately after wish fulfillment, specifies three wishes and forbids wishing for more; Aladdin confirms the three-wish allowance before his first wish. Unofficial transcript host, corroborated by Disney Princess synopsis."
+          }
+        ]
+      },
+      {
+        "answer": "Seven",
+        "verdict": "incorrect",
+        "reason": "Seven exceeds the stated three-wish allowance.",
+        "sources": [
+          {
+            "url": "https://princess.disney.com/jasmine",
+            "locator": "Aladdin on Disney+ synopsis: Genie and three wishes; Jasmine profile names her tiger Rajah."
+          },
+          {
+            "url": "https://imsdb.com/scripts/Aladdin.html",
+            "locator": "Genie introduction in Cave of Wonders: immediately after wish fulfillment, specifies three wishes and forbids wishing for more; Aladdin confirms the three-wish allowance before his first wish. Unofficial transcript host, corroborated by Disney Princess synopsis."
+          }
+        ]
+      },
+      {
+        "answer": "Unlimited",
+        "verdict": "incorrect",
+        "reason": "The allowance is finite, and the introductory rules specifically exclude wishing for more wishes.",
+        "sources": [
+          {
+            "url": "https://imsdb.com/scripts/Aladdin.html",
+            "locator": "Genie introduction in Cave of Wonders: immediately after wish fulfillment, specifies three wishes and forbids wishing for more; Aladdin confirms the three-wish allowance before his first wish. Unofficial transcript host, corroborated by Disney Princess synopsis."
+          },
+          {
+            "url": "https://princess.disney.com/jasmine",
+            "locator": "Aladdin on Disney+ synopsis: Genie and three wishes; Jasmine profile names her tiger Rajah."
+          }
+        ]
+      }
+    ]
+  }
+}

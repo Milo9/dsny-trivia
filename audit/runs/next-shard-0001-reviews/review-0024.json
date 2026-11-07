@@ -1,0 +1,80 @@
+{
+  "questionId": 24,
+  "hash": "f285d4038ffed651eda5c545abbf9751f55a248e583f7cb0a4e89d28ea3bb47d",
+  "questionSnapshot": {
+    "id": 24,
+    "question": "What does Ariel trade to Ursula in exchange for legs in The Little Mermaid?",
+    "answers": [
+      "Her voice",
+      "Her fins",
+      "Her memories",
+      "Her red hair"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Four parallel possessions. Easy. #3 villain identity and #822 Vanessa disguise are different facts from the bargain's price.",
+  "verification": {
+    "context": "The Little Mermaid, Disney animated 1989 film, Ursula's bargain for a human body.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Her voice",
+        "verdict": "correct",
+        "reason": "The explicit price for becoming human is Ariel's voice.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/little-mermaid-the-film/",
+            "locator": "Synopsis: Ursula grants humanity in return for Ariel's voice; King Triton is her father. Voice credits separately name Ursula and Louis in the 1989 film."
+          }
+        ]
+      },
+      {
+        "answer": "Her fins",
+        "verdict": "incorrect",
+        "reason": "The fins are changed into legs as an effect, not the negotiated payment, which is her voice.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/little-mermaid-the-film/",
+            "locator": "Synopsis: Ursula grants humanity in return for Ariel's voice; King Triton is her father. Voice credits separately name Ursula and Louis in the 1989 film."
+          }
+        ]
+      },
+      {
+        "answer": "Her memories",
+        "verdict": "incorrect",
+        "reason": "The stated bargain removes her voice, not her memories; the synopsis has her recognizing Ursula's deception while mute.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/little-mermaid-the-film/",
+            "locator": "Synopsis: Ursula grants humanity in return for Ariel's voice; King Triton is her father. Voice credits separately name Ursula and Louis in the 1989 film."
+          }
+        ]
+      },
+      {
+        "answer": "Her red hair",
+        "verdict": "incorrect",
+        "reason": "The price is her voice; her red hair is not the payment.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/little-mermaid-the-film/",
+            "locator": "Synopsis: Ursula grants humanity in return for Ariel's voice; King Triton is her father. Voice credits separately name Ursula and Louis in the 1989 film."
+          }
+        ]
+      }
+    ]
+  }
+}

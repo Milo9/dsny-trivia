@@ -1,0 +1,96 @@
+{
+  "questionId": 22,
+  "hash": "19b3bdb1c76dcb3ee880b040be962e1fef2697e0dd6efb78d96ad1ed93b54d6c",
+  "questionSnapshot": {
+    "id": 22,
+    "question": "At the start of Moana (2016), what does Maui steal from Te Fiti?",
+    "answers": [
+      "Te Fiti's heart",
+      "Moana's boat",
+      "The ocean's power",
+      "A glowing pearl"
+    ],
+    "difficulty": "easy",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Specified the beginning so later attempts to take Moana's boat cannot muddy the event. Four comparable objects/concepts. Easy. #2371 asks Te Ka's identity after theft, not the stolen relic.",
+  "verification": {
+    "context": "Moana, Disney animated 2016 film, Maui's theft from Te Fiti in the opening legend.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "options": [
+      {
+        "answer": "Te Fiti's heart",
+        "verdict": "correct",
+        "reason": "The stolen relic is Te Fiti's heart, described as a jade-like stone.",
+        "sources": [
+          {
+            "url": "https://web.engr.oregonstate.edu/~mjb/cs557/moana.pdf",
+            "locator": "Navigating Polynesia, Computer Graphics World Nov/Dec 2016, printed page 9 (PDF page 2), story discussion with directors Clements and Musker: heart is a jade-like stone stolen and lost by Maui. Creator interview, independently corroborated by Disney Princess gallery."
+          },
+          {
+            "url": "https://princess.disney.com/moana",
+            "locator": "Moana Photos: captions show Moana returning/restoring Te Fiti's heart with Maui; supports the relic identity alongside the creator interview."
+          }
+        ]
+      },
+      {
+        "answer": "Moana's boat",
+        "verdict": "incorrect",
+        "reason": "Moana's boat is not the opening theft from Te Fiti; it belongs to another character and period.",
+        "sources": [
+          {
+            "url": "https://web.engr.oregonstate.edu/~mjb/cs557/moana.pdf",
+            "locator": "Navigating Polynesia, Computer Graphics World Nov/Dec 2016, printed page 9 (PDF page 2), story discussion with directors Clements and Musker: heart is a jade-like stone stolen and lost by Maui. Creator interview, independently corroborated by Disney Princess gallery."
+          },
+          {
+            "url": "https://princess.disney.com/moana",
+            "locator": "Moana Photos: captions show Moana returning/restoring Te Fiti's heart with Maui; supports the relic identity alongside the creator interview."
+          }
+        ]
+      },
+      {
+        "answer": "The ocean's power",
+        "verdict": "incorrect",
+        "reason": "The stolen item is the stone heart, not the ocean's power.",
+        "sources": [
+          {
+            "url": "https://web.engr.oregonstate.edu/~mjb/cs557/moana.pdf",
+            "locator": "Navigating Polynesia, Computer Graphics World Nov/Dec 2016, printed page 9 (PDF page 2), story discussion with directors Clements and Musker: heart is a jade-like stone stolen and lost by Maui. Creator interview, independently corroborated by Disney Princess gallery."
+          },
+          {
+            "url": "https://princess.disney.com/moana",
+            "locator": "Moana Photos: captions show Moana returning/restoring Te Fiti's heart with Maui; supports the relic identity alongside the creator interview."
+          }
+        ]
+      },
+      {
+        "answer": "A glowing pearl",
+        "verdict": "incorrect",
+        "reason": "The relic is a heart stone, not a glowing pearl.",
+        "sources": [
+          {
+            "url": "https://web.engr.oregonstate.edu/~mjb/cs557/moana.pdf",
+            "locator": "Navigating Polynesia, Computer Graphics World Nov/Dec 2016, printed page 9 (PDF page 2), story discussion with directors Clements and Musker: heart is a jade-like stone stolen and lost by Maui. Creator interview, independently corroborated by Disney Princess gallery."
+          },
+          {
+            "url": "https://princess.disney.com/moana",
+            "locator": "Moana Photos: captions show Moana returning/restoring Te Fiti's heart with Maui; supports the relic identity alongside the creator interview."
+          }
+        ]
+      }
+    ]
+  }
+}

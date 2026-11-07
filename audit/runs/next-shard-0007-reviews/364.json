@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 364,
+  "hash": "880ad218e36d1c6f9fd8e58d0f6b3c7825862faea965a814a892a608fffa4582",
+  "questionSnapshot": {
+    "id": 364,
+    "question": "In what year did Walt Disney World's 18-month 50th anniversary celebration begin?",
+    "answers": [
+      "2021",
+      "2020",
+      "2022",
+      "2019"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Original celebrate wording allowed 2022 during an 18-month event. Final begin wording excludes that tempting alternative; the primary announcement explicitly supplies both date and duration. This is not asking when every celebration day occurred or when Guardians opened. Medium historical-year recall; the start cannot change. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+  "verification": {
+    "context": "In what year did Walt Disney World's 18-month 50th anniversary celebration begin? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The celebration began October 1, 2021. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+      "sources": [
+        {
+          "url": "https://d23.com/details-on-walt-disney-worlds-50th-anniversary-celebration/",
+          "locator": "February 19, 2021 announcement, first paragraph: celebration begins October 1, 2021 and lasts 18 months"
+        },
+        {
+          "url": "https://disneyexperiences.com/app/uploads/sites/4/2022/08/fact_sheet_walt_disney_world_2022_Q3.pdf",
+          "locator": "PDF page 2, New Developments: October 1, 2021 actual kickoff and 18-month duration, corroborating the prior announcement"
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Original celebrate wording allowed 2022 during an 18-month event. Final begin wording excludes that tempting alternative; the primary announcement explicitly supplies both date and duration. This is not asking when every celebration day occurred or when Guardians opened. Medium historical-year recall; the start cannot change."
+    },
+    "options": [
+      {
+        "answer": "2021",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The celebration began October 1, 2021.",
+        "sources": [
+          {
+            "url": "https://d23.com/details-on-walt-disney-worlds-50th-anniversary-celebration/",
+            "locator": "February 19, 2021 announcement, first paragraph: celebration begins October 1, 2021 and lasts 18 months"
+          },
+          {
+            "url": "https://disneyexperiences.com/app/uploads/sites/4/2022/08/fact_sheet_walt_disney_world_2022_Q3.pdf",
+            "locator": "PDF page 2, New Developments: October 1, 2021 actual kickoff and 18-month duration, corroborating the prior announcement"
+          }
+        ]
+      },
+      {
+        "answer": "2020",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "2020 precedes the stated beginning.",
+        "sources": [
+          {
+            "url": "https://d23.com/details-on-walt-disney-worlds-50th-anniversary-celebration/",
+            "locator": "February 19, 2021 announcement, first paragraph: celebration begins October 1, 2021 and lasts 18 months"
+          },
+          {
+            "url": "https://disneyexperiences.com/app/uploads/sites/4/2022/08/fact_sheet_walt_disney_world_2022_Q3.pdf",
+            "locator": "PDF page 2, New Developments: October 1, 2021 actual kickoff and 18-month duration, corroborating the prior announcement"
+          }
+        ]
+      },
+      {
+        "answer": "2022",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "2022 falls during the event, but is not its beginning year.",
+        "sources": [
+          {
+            "url": "https://d23.com/details-on-walt-disney-worlds-50th-anniversary-celebration/",
+            "locator": "February 19, 2021 announcement, first paragraph: celebration begins October 1, 2021 and lasts 18 months"
+          },
+          {
+            "url": "https://disneyexperiences.com/app/uploads/sites/4/2022/08/fact_sheet_walt_disney_world_2022_Q3.pdf",
+            "locator": "PDF page 2, New Developments: October 1, 2021 actual kickoff and 18-month duration, corroborating the prior announcement"
+          }
+        ]
+      },
+      {
+        "answer": "2019",
+        "verdict": "incorrect",
+        "basis": "contradiction",
+        "reason": "2019 precedes the stated beginning.",
+        "sources": [
+          {
+            "url": "https://d23.com/details-on-walt-disney-worlds-50th-anniversary-celebration/",
+            "locator": "February 19, 2021 announcement, first paragraph: celebration begins October 1, 2021 and lasts 18 months"
+          },
+          {
+            "url": "https://disneyexperiences.com/app/uploads/sites/4/2022/08/fact_sheet_walt_disney_world_2022_Q3.pdf",
+            "locator": "PDF page 2, New Developments: October 1, 2021 actual kickoff and 18-month duration, corroborating the prior announcement"
+          }
+        ]
+      }
+    ]
+  }
+}

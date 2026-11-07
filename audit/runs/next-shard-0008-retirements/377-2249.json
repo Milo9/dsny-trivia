@@ -1,0 +1,70 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "retired": {
+    "id": 377,
+    "question": "What year did the TRON Lightcycle / Run coaster open at Magic Kingdom?",
+    "answers": [
+      "2023",
+      "2021",
+      "2022",
+      "2024"
+    ],
+    "difficulty": "hard",
+    "category": "parks"
+  },
+  "retained": {
+    "id": 2249,
+    "question": "Before it opened at Magic Kingdom in 2023, which Disney park was the original home of the TRON Lightcycle / Run coaster?",
+    "answers": [
+      "Shanghai Disneyland",
+      "Disneyland Paris",
+      "Hong Kong Disneyland",
+      "Tokyo DisneySea"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "additionalComparisons": [],
+  "rationale": "2249 explicitly supplies the Magic Kingdom 2023 opening in its stem while asking the additional Shanghai origin. Retain that additional historical context.",
+  "sources": [
+    {
+      "sourceNoteId": "tron-2023",
+      "url": "https://disneyexperiences.com/disneyworld-press/release/enter-the-grid-as-tron-lightcycle-run-presented-by-enterprise-opens-april-4-2023-at-walt-disney-world/",
+      "locator": "Release title and opening announcement",
+      "evidence": "Magic Kingdom TRON Lightcycle / Run opened April 4, 2023.",
+      "checkedBy": "Codex",
+      "checkedAt": "2026-11-07",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "limitations": "Primary institutional text inspected; no film or video viewing claimed.",
+      "topics": [
+        "parks"
+      ]
+    }
+  ],
+  "originalOptionAssessments": [
+    {
+      "answer": "2023",
+      "assessment": "2023 matches the April opening announcement."
+    },
+    {
+      "answer": "2021",
+      "assessment": "2021 does not match."
+    },
+    {
+      "answer": "2022",
+      "assessment": "2022 does not match."
+    },
+    {
+      "answer": "2024",
+      "assessment": "2024 does not match."
+    }
+  ],
+  "finalChallenge": {
+    "reviewer": "Codex",
+    "at": "2026-11-07",
+    "notes": "2249 explicitly supplies the Magic Kingdom 2023 opening in its stem while asking the additional Shanghai origin. Retain that additional historical context. All four original options inspected. Retirement avoids asserting approval of a flawed premise or an insufficiently excluded alternative."
+  },
+  "scope": "Only the planned ID is retired. Counterpart comparison is not approval of its other claims."
+}

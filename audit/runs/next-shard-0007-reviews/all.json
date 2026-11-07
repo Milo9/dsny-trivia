@@ -1,0 +1,4018 @@
+[
+  {
+    "schema": 2,
+    "questionId": 304,
+    "hash": "055c983c4d71f7ffe5ffa4af6bed4b382f8c232aa6bedfdc8e12e33bee3aa0f6",
+    "questionSnapshot": {
+      "id": 304,
+      "question": "In Brave (2012), what are the names of Merida's triplet younger brothers?",
+      "answers": [
+        "Harris, Hubert, and Hamish",
+        "Harris, Fergus, and Hamish",
+        "Hubert, Angus, and Hamish",
+        "Harris, Hubert, and Dingwall"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Challenged the overlapping name sets individually: retaining two correct names does not make a three-name answer correct. The complete official sibling list excludes every substituted name. Main theatrical film and character category fit; this is name recall, not clan competition in 555. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "In Brave (2012), what are the names of Merida's triplet younger brothers? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The complete triplet list is Harris, Hubert and Hamish. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/brave",
+            "locator": "The Characters: Triplets; Merida; King Fergus; Angus and the clan lords"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged the overlapping name sets individually: retaining two correct names does not make a three-name answer correct. The complete official sibling list excludes every substituted name. Main theatrical film and character category fit; this is name recall, not clan competition in 555."
+      },
+      "options": [
+        {
+          "answer": "Harris, Hubert, and Hamish",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "The complete triplet list is Harris, Hubert and Hamish.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/brave",
+              "locator": "The Characters: Triplets; Merida; King Fergus; Angus and the clan lords"
+            }
+          ]
+        },
+        {
+          "answer": "Harris, Fergus, and Hamish",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "Fergus replaces Hubert; Fergus is their father, not one of the triplets.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/brave",
+              "locator": "The Characters: Triplets; Merida; King Fergus; Angus and the clan lords"
+            }
+          ]
+        },
+        {
+          "answer": "Hubert, Angus, and Hamish",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "Angus replaces Harris; Angus is Merida horse, not a brother.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/brave",
+              "locator": "The Characters: Triplets; Merida; King Fergus; Angus and the clan lords"
+            }
+          ]
+        },
+        {
+          "answer": "Harris, Hubert, and Dingwall",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "Dingwall replaces Hamish and is not in the exhaustive triplet list.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/brave",
+              "locator": "The Characters: Triplets; Merida; King Fergus; Angus and the clan lords"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 305,
+    "hash": "3c793f7af2b5713c9ecca5099a321222710fcb3a231a17e2a620b74edb5464bc",
+    "questionSnapshot": {
+      "id": 305,
+      "question": "In Cars (2006), which brand is Lightning McQueen's main racing sponsor?",
+      "answers": [
+        "Rust-eze",
+        "Dinoco",
+        "Octane Gain",
+        "Vitoline"
+      ],
+      "difficulty": "medium",
+      "category": "pixar"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Bound the question to the first film: later Dinoco/Rust-eze ownership developments cannot change this answer. Main sponsor is a single role; possible minor decals do not count as main sponsorship. Plot evidence is secondary, corroborated only by the official clip title; no claim to have watched that clip. This is Pixar brand trivia, so moved it from characters to pixar. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "In Cars (2006), which brand is Lightning McQueen's main racing sponsor? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Rust-eze is the sponsorship McQueen already has in the 2006 story. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Cars_(film)",
+            "locator": "Plot: opening Rust-eze/Dinoco sponsorship contrast; final tiebreaker paragraph identifying Chick causing the King crash and Lightning returning to help"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Q4sBvyM-Ruk",
+            "locator": "Disney Jr. official clip title: Lightning McQueen Loves Rust-eze!; corroborating title only, not a claim to have watched its video"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Bound the question to the first film: later Dinoco/Rust-eze ownership developments cannot change this answer. Main sponsor is a single role; possible minor decals do not count as main sponsorship. Plot evidence is secondary, corroborated only by the official clip title; no claim to have watched that clip. This is Pixar brand trivia, so moved it from characters to pixar."
+      },
+      "options": [
+        {
+          "answer": "Rust-eze",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Rust-eze is the sponsorship McQueen already has in the 2006 story.",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Cars_(film)",
+              "locator": "Plot: opening Rust-eze/Dinoco sponsorship contrast; final tiebreaker paragraph identifying Chick causing the King crash and Lightning returning to help"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=Q4sBvyM-Ruk",
+              "locator": "Disney Jr. official clip title: Lightning McQueen Loves Rust-eze!; corroborating title only, not a claim to have watched its video"
+            }
+          ]
+        },
+        {
+          "answer": "Dinoco",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Dinoco is the prestigious sponsor he wants instead, not his main sponsor in this film.",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Cars_(film)",
+              "locator": "Plot: opening Rust-eze/Dinoco sponsorship contrast; final tiebreaker paragraph identifying Chick causing the King crash and Lightning returning to help"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=Q4sBvyM-Ruk",
+              "locator": "Disney Jr. official clip title: Lightning McQueen Loves Rust-eze!; corroborating title only, not a claim to have watched its video"
+            }
+          ]
+        },
+        {
+          "answer": "Octane Gain",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "The stated main sponsorship is Rust-eze, not Octane Gain.",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Cars_(film)",
+              "locator": "Plot: opening Rust-eze/Dinoco sponsorship contrast; final tiebreaker paragraph identifying Chick causing the King crash and Lightning returning to help"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=Q4sBvyM-Ruk",
+              "locator": "Disney Jr. official clip title: Lightning McQueen Loves Rust-eze!; corroborating title only, not a claim to have watched its video"
+            }
+          ]
+        },
+        {
+          "answer": "Vitoline",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "The stated main sponsorship is Rust-eze, not Vitoline.",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Cars_(film)",
+              "locator": "Plot: opening Rust-eze/Dinoco sponsorship contrast; final tiebreaker paragraph identifying Chick causing the King crash and Lightning returning to help"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=Q4sBvyM-Ruk",
+              "locator": "Disney Jr. official clip title: Lightning McQueen Loves Rust-eze!; corroborating title only, not a claim to have watched its video"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 306,
+    "hash": "e49294ea738f8dc8c493b0447f2471ca338aff71055ec78ef0dee8193e1d50ed",
+    "questionSnapshot": {
+      "id": 306,
+      "question": "In Finding Nemo, what is the name of the great white shark who is trying to give up eating fish?",
+      "answers": [
+        "Bruce",
+        "Anchor",
+        "Chum",
+        "Jaws"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Specifically challenged Anchor and Chum: all three give up fish, so the great-white qualification is essential. Pixar identifies Bruce species; secondary cast detail corroborates the other two. Jaws is plausible shark association, not this character. Distinct from Anchor species question 2317. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "In Finding Nemo, what is the name of the great white shark who is trying to give up eating fish? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar identifies Bruce as the great white and describes the fish-abstaining shark group. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/finding-nemo",
+            "locator": "The Characters: Sharks (Bruce, Anchor and Chum; fish-eaters group); The Sunken Ship production section explicitly identifies Bruce as the great white"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Finding_Nemo",
+            "locator": "Voice cast: Barry Humphries/Bruce great white; Eric Bana/Anchor hammerhead; Bruce Spence/Chum mako"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Specifically challenged Anchor and Chum: all three give up fish, so the great-white qualification is essential. Pixar identifies Bruce species; secondary cast detail corroborates the other two. Jaws is plausible shark association, not this character. Distinct from Anchor species question 2317."
+      },
+      "options": [
+        {
+          "answer": "Bruce",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Pixar identifies Bruce as the great white and describes the fish-abstaining shark group.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/finding-nemo",
+              "locator": "The Characters: Sharks (Bruce, Anchor and Chum; fish-eaters group); The Sunken Ship production section explicitly identifies Bruce as the great white"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Finding_Nemo",
+              "locator": "Voice cast: Barry Humphries/Bruce great white; Eric Bana/Anchor hammerhead; Bruce Spence/Chum mako"
+            }
+          ]
+        },
+        {
+          "answer": "Anchor",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Anchor is a hammerhead, so the shared fish-abstaining goal does not make him the great white.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/finding-nemo",
+              "locator": "The Characters: Sharks (Bruce, Anchor and Chum; fish-eaters group); The Sunken Ship production section explicitly identifies Bruce as the great white"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Finding_Nemo",
+              "locator": "Voice cast: Barry Humphries/Bruce great white; Eric Bana/Anchor hammerhead; Bruce Spence/Chum mako"
+            }
+          ]
+        },
+        {
+          "answer": "Chum",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Chum is a mako, not the great white specified in the stem.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/finding-nemo",
+              "locator": "The Characters: Sharks (Bruce, Anchor and Chum; fish-eaters group); The Sunken Ship production section explicitly identifies Bruce as the great white"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Finding_Nemo",
+              "locator": "Voice cast: Barry Humphries/Bruce great white; Eric Bana/Anchor hammerhead; Bruce Spence/Chum mako"
+            }
+          ]
+        },
+        {
+          "answer": "Jaws",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "The film group is Bruce, Anchor and Chum; Jaws is not a member or the named Nemo great white.",
+          "sources": [
+            {
+              "url": "https://www.pixar.com/finding-nemo",
+              "locator": "The Characters: Sharks (Bruce, Anchor and Chum; fish-eaters group); The Sunken Ship production section explicitly identifies Bruce as the great white"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Finding_Nemo",
+              "locator": "Voice cast: Barry Humphries/Bruce great white; Eric Bana/Anchor hammerhead; Bruce Spence/Chum mako"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 310,
+    "hash": "d0a58477309eb7e25bf0e8b13cf30611cdb66e596ab3d2f5e0ff2badad5248e6",
+    "questionSnapshot": {
+      "id": 310,
+      "question": "What are the names of Wendy's two brothers in Peter Pan?",
+      "answers": [
+        "John and Michael",
+        "James and Timothy",
+        "George and Edward",
+        "Tom and Harry"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Checked parents versus siblings and the full two-name sets. The official complete family list excludes all three alternative pairs. 854 and 1104 ask parents; 1324 asks youngest sibling and does not explicitly supply both brothers. Medium pair-name recall; character and theatrical scope fit. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "What are the names of Wendy's two brothers in Peter Pan? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The two male Darling children alongside Wendy are John and Michael. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/darling/",
+            "locator": "Complete Darling family entry: George and Mary parents; Wendy, John and Michael children"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked parents versus siblings and the full two-name sets. The official complete family list excludes all three alternative pairs. 854 and 1104 ask parents; 1324 asks youngest sibling and does not explicitly supply both brothers. Medium pair-name recall; character and theatrical scope fit."
+      },
+      "options": [
+        {
+          "answer": "John and Michael",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "The two male Darling children alongside Wendy are John and Michael.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/darling/",
+              "locator": "Complete Darling family entry: George and Mary parents; Wendy, John and Michael children"
+            }
+          ]
+        },
+        {
+          "answer": "James and Timothy",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "James and Timothy are not the two boys in the complete Darling child list.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/darling/",
+              "locator": "Complete Darling family entry: George and Mary parents; Wendy, John and Michael children"
+            }
+          ]
+        },
+        {
+          "answer": "George and Edward",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "George is the father, not a brother; Edward is absent from the child list.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/darling/",
+              "locator": "Complete Darling family entry: George and Mary parents; Wendy, John and Michael children"
+            }
+          ]
+        },
+        {
+          "answer": "Tom and Harry",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "Tom and Harry are not the two boys in the complete child list.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/darling/",
+              "locator": "Complete Darling family entry: George and Mary parents; Wendy, John and Michael children"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 311,
+    "hash": "d6e28f559f448333c663a4d659ed1d704f54396740e84683e7e49f0acedea097",
+    "questionSnapshot": {
+      "id": 311,
+      "question": "In The Aristocats (1970), what are the names of Duchess's three kittens?",
+      "answers": [
+        "Marie, Berlioz, and Toulouse",
+        "Marie, Berlioz, and Roquefort",
+        "Marie, Toulouse, and Scat Cat",
+        "Berlioz, Toulouse, and O'Malley"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Challenged the two-correct/one-wrong sets, including O'Malley later joining the family. Becoming a parental companion does not make him Duchess kitten. Original silly pet-name lists replaced with overlapping film-character sets. Other Aristocats questions concern mother identity, city, owners, music and helpers, not this list. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "In The Aristocats (1970), what are the names of Duchess's three kittens? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Duchess three kittens are Marie, Berlioz and Toulouse. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/aristocats-the-film/aristocats/",
+            "locator": "Opening synopsis: Duchess and exactly three kittens Toulouse, Berlioz, Marie; greedy butler Edgar; alley cat Thomas O'Malley and mouse Roquefort"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged the two-correct/one-wrong sets, including O'Malley later joining the family. Becoming a parental companion does not make him Duchess kitten. Original silly pet-name lists replaced with overlapping film-character sets. Other Aristocats questions concern mother identity, city, owners, music and helpers, not this list."
+      },
+      "options": [
+        {
+          "answer": "Marie, Berlioz, and Toulouse",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Duchess three kittens are Marie, Berlioz and Toulouse.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/aristocats-the-film/aristocats/",
+              "locator": "Opening synopsis: Duchess and exactly three kittens Toulouse, Berlioz, Marie; greedy butler Edgar; alley cat Thomas O'Malley and mouse Roquefort"
+            }
+          ]
+        },
+        {
+          "answer": "Marie, Berlioz, and Roquefort",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Roquefort replaces Toulouse; he is the mouse helper, not a kitten.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/aristocats-the-film/aristocats/",
+              "locator": "Opening synopsis: Duchess and exactly three kittens Toulouse, Berlioz, Marie; greedy butler Edgar; alley cat Thomas O'Malley and mouse Roquefort"
+            }
+          ]
+        },
+        {
+          "answer": "Marie, Toulouse, and Scat Cat",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "Scat Cat replaces Berlioz and is absent from the complete three-kitten list.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/aristocats-the-film/aristocats/",
+              "locator": "Opening synopsis: Duchess and exactly three kittens Toulouse, Berlioz, Marie; greedy butler Edgar; alley cat Thomas O'Malley and mouse Roquefort"
+            }
+          ]
+        },
+        {
+          "answer": "Berlioz, Toulouse, and O'Malley",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "O'Malley replaces Marie; he is the alley cat who helps the family, not a kitten.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/aristocats-the-film/aristocats/",
+              "locator": "Opening synopsis: Duchess and exactly three kittens Toulouse, Berlioz, Marie; greedy butler Edgar; alley cat Thomas O'Malley and mouse Roquefort"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 312,
+    "hash": "444a021cffccb840a96132e878ccf0f15d3cd73994ce28f6fbb202c5e04ef1f1",
+    "questionSnapshot": {
+      "id": 312,
+      "question": "In The Nightmare Before Christmas, what are the names of Oogie Boogie's three trick-or-treat helpers?",
+      "answers": [
+        "Lock, Shock, and Barrel",
+        "Grim, Ghost, and Ghoul",
+        "Trick, Treat, and Terror",
+        "Bone, Blood, and Bite"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Confirmed the group belongs to Oogie as well as doing Jack errands; those roles coexist. Official introduction explicitly supplies the full trio, excluding all invented alternative sets. Main theatrical film, character category and medium three-name recall; no same-fact question in the full Nightmare search. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "In The Nightmare Before Christmas, what are the names of Oogie Boogie's three trick-or-treat helpers? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney names the minion trio Lock, Shock and Barrel. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://news.disney.com/quiz-are-you-lock-shock-or-barrel-from-the-nightmare-before-christmas",
+            "locator": "Introduction explicitly names Lock, Shock and Barrel as Oogie Boogie minions and discusses capturing Sandy Claws"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Confirmed the group belongs to Oogie as well as doing Jack errands; those roles coexist. Official introduction explicitly supplies the full trio, excluding all invented alternative sets. Main theatrical film, character category and medium three-name recall; no same-fact question in the full Nightmare search."
+      },
+      "options": [
+        {
+          "answer": "Lock, Shock, and Barrel",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Disney names the minion trio Lock, Shock and Barrel.",
+          "sources": [
+            {
+              "url": "https://news.disney.com/quiz-are-you-lock-shock-or-barrel-from-the-nightmare-before-christmas",
+              "locator": "Introduction explicitly names Lock, Shock and Barrel as Oogie Boogie minions and discusses capturing Sandy Claws"
+            }
+          ]
+        },
+        {
+          "answer": "Grim, Ghost, and Ghoul",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "Grim, Ghost and Ghoul is not the identified trio.",
+          "sources": [
+            {
+              "url": "https://news.disney.com/quiz-are-you-lock-shock-or-barrel-from-the-nightmare-before-christmas",
+              "locator": "Introduction explicitly names Lock, Shock and Barrel as Oogie Boogie minions and discusses capturing Sandy Claws"
+            }
+          ]
+        },
+        {
+          "answer": "Trick, Treat, and Terror",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "Trick, Treat and Terror is not the identified trio.",
+          "sources": [
+            {
+              "url": "https://news.disney.com/quiz-are-you-lock-shock-or-barrel-from-the-nightmare-before-christmas",
+              "locator": "Introduction explicitly names Lock, Shock and Barrel as Oogie Boogie minions and discusses capturing Sandy Claws"
+            }
+          ]
+        },
+        {
+          "answer": "Bone, Blood, and Bite",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "Bone, Blood and Bite is not the identified trio.",
+          "sources": [
+            {
+              "url": "https://news.disney.com/quiz-are-you-lock-shock-or-barrel-from-the-nightmare-before-christmas",
+              "locator": "Introduction explicitly names Lock, Shock and Barrel as Oogie Boogie minions and discusses capturing Sandy Claws"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 313,
+    "hash": "8c4e909d2302d7ce7ac64c1a98f26332a6d9d8303df292089efbfbec94aacc2a",
+    "questionSnapshot": {
+      "id": 313,
+      "question": "In The Hunchback of Notre Dame (1996), which captain falls in love with Esmeralda?",
+      "answers": [
+        "Phoebus",
+        "Frollo",
+        "Clopin",
+        "Quasimodo"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Tried Frollo and Quasimodo under the love wording: both have feelings, so retained the captain qualification and named the 1996 version. The primary synopsis establishes the captain identity and separates the competing men. 2312 is Frollo office; 547 is Esmeralda identity, so neither tests this captain identification. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "In The Hunchback of Notre Dame (1996), which captain falls in love with Esmeralda? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Phoebus is the captain and Esmeralda reciprocates his love. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/hunchback-of-notre-dame-the-film/",
+            "locator": "Synopsis: Phoebus Captain of the King guards; mutual Phoebus/Esmeralda love; Frollo Minister of Justice and Quasimodo bell-tower outsider"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tried Frollo and Quasimodo under the love wording: both have feelings, so retained the captain qualification and named the 1996 version. The primary synopsis establishes the captain identity and separates the competing men. 2312 is Frollo office; 547 is Esmeralda identity, so neither tests this captain identification."
+      },
+      "options": [
+        {
+          "answer": "Phoebus",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Phoebus is the captain and Esmeralda reciprocates his love.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/hunchback-of-notre-dame-the-film/",
+              "locator": "Synopsis: Phoebus Captain of the King guards; mutual Phoebus/Esmeralda love; Frollo Minister of Justice and Quasimodo bell-tower outsider"
+            }
+          ]
+        },
+        {
+          "answer": "Frollo",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Frollo is the Minister of Justice; desire for Esmeralda does not make him the captain.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/hunchback-of-notre-dame-the-film/",
+              "locator": "Synopsis: Phoebus Captain of the King guards; mutual Phoebus/Esmeralda love; Frollo Minister of Justice and Quasimodo bell-tower outsider"
+            }
+          ]
+        },
+        {
+          "answer": "Clopin",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Clopin is not the captain whom the synopsis identifies as Phoebus.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/hunchback-of-notre-dame-the-film/",
+              "locator": "Synopsis: Phoebus Captain of the King guards; mutual Phoebus/Esmeralda love; Frollo Minister of Justice and Quasimodo bell-tower outsider"
+            }
+          ]
+        },
+        {
+          "answer": "Quasimodo",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Quasimodo loves Esmeralda but is the bell-tower outsider, not the captain.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/hunchback-of-notre-dame-the-film/",
+              "locator": "Synopsis: Phoebus Captain of the King guards; mutual Phoebus/Esmeralda love; Frollo Minister of Justice and Quasimodo bell-tower outsider"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 319,
+    "hash": "1d2aa3e0cd1ff5a7a67e1ddd24f8ed53c73cba5f3f138dadc09ceba6c6e27ba6",
+    "questionSnapshot": {
+      "id": 319,
+      "question": "In Wreck-It Ralph, what is King Candy's true identity?",
+      "answers": [
+        "Turbo, a racer from another game",
+        "A glitch in the Sugar Rush code",
+        "An escaped villain from Hero's Duty",
+        "A deleted character from Sugar Rush"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Distinguished original identity from the later Cy-Bug/virus form and his manipulation of game code. Those events do not turn his true origin into the glitch distractor. The official villain subsection explicitly describes the outsider racer. Other Ralph questions ask games, Vanellope, hubs, and tools, not this reveal. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "In Wreck-It Ralph, what is King Candy's true identity? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "King Candy is Turbo, originally from a different racing game. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://d23.com/13-disney-characters-that-make-our-spines-tingle/",
+            "locator": "King Candy from Wreck-It Ralph subsection: former identity Turbo, classic racing-game origin, takeover of Sugar Rush"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished original identity from the later Cy-Bug/virus form and his manipulation of game code. Those events do not turn his true origin into the glitch distractor. The official villain subsection explicitly describes the outsider racer. Other Ralph questions ask games, Vanellope, hubs, and tools, not this reveal."
+      },
+      "options": [
+        {
+          "answer": "Turbo, a racer from another game",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "King Candy is Turbo, originally from a different racing game.",
+          "sources": [
+            {
+              "url": "https://d23.com/13-disney-characters-that-make-our-spines-tingle/",
+              "locator": "King Candy from Wreck-It Ralph subsection: former identity Turbo, classic racing-game origin, takeover of Sugar Rush"
+            }
+          ]
+        },
+        {
+          "answer": "A glitch in the Sugar Rush code",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "His origin is the established racer Turbo, not an anonymous Sugar Rush glitch.",
+          "sources": [
+            {
+              "url": "https://d23.com/13-disney-characters-that-make-our-spines-tingle/",
+              "locator": "King Candy from Wreck-It Ralph subsection: former identity Turbo, classic racing-game origin, takeover of Sugar Rush"
+            }
+          ]
+        },
+        {
+          "answer": "An escaped villain from Hero's Duty",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "He originates in a classic racing game, not Hero's Duty.",
+          "sources": [
+            {
+              "url": "https://d23.com/13-disney-characters-that-make-our-spines-tingle/",
+              "locator": "King Candy from Wreck-It Ralph subsection: former identity Turbo, classic racing-game origin, takeover of Sugar Rush"
+            }
+          ]
+        },
+        {
+          "answer": "A deleted character from Sugar Rush",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "He took over Sugar Rush from outside; he was not originally a deleted Sugar Rush character.",
+          "sources": [
+            {
+              "url": "https://d23.com/13-disney-characters-that-make-our-spines-tingle/",
+              "locator": "King Candy from Wreck-It Ralph subsection: former identity Turbo, classic racing-game origin, takeover of Sugar Rush"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 320,
+    "hash": "f764c5f1062c2b409796ab762347cf3f82873e53295182ff6a50b17fc4d3fa4b",
+    "questionSnapshot": {
+      "id": 320,
+      "question": "In Cars (2006), which racer deliberately causes The King's crash near the end of the final race?",
+      "answers": [
+        "Chick Hicks",
+        "Lightning McQueen",
+        "Finn McMissile",
+        "Francesco Bernoulli"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "The original main-rival wording also fits the King as a title rival. Replaced it with a specific attributable action, removed the named victim from the options, and fixed the film year. Two secondary plot accounts agree; primary screenplay fetch failed and no primary viewing is claimed. Unique action attribution excludes the alternatives. Cars 2 nationality and Cars 3 rival are different facts. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "In Cars (2006), which racer deliberately causes The King's crash near the end of the final race? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Chick intentionally damages the King during the tiebreaker. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Cars_(film)",
+            "locator": "Plot: opening Rust-eze/Dinoco sponsorship contrast; final tiebreaker paragraph identifying Chick causing the King crash and Lightning returning to help"
+          },
+          {
+            "url": "https://www.imdb.com/title/tt0317219/plotsummary/",
+            "locator": "Synopsis: final Los Angeles race, Chick employing the PIT maneuver against the King; Lightning stopping and pushing the King"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The original main-rival wording also fits the King as a title rival. Replaced it with a specific attributable action, removed the named victim from the options, and fixed the film year. Two secondary plot accounts agree; primary screenplay fetch failed and no primary viewing is claimed. Unique action attribution excludes the alternatives. Cars 2 nationality and Cars 3 rival are different facts."
+      },
+      "options": [
+        {
+          "answer": "Chick Hicks",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Chick intentionally damages the King during the tiebreaker.",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Cars_(film)",
+              "locator": "Plot: opening Rust-eze/Dinoco sponsorship contrast; final tiebreaker paragraph identifying Chick causing the King crash and Lightning returning to help"
+            },
+            {
+              "url": "https://www.imdb.com/title/tt0317219/plotsummary/",
+              "locator": "Synopsis: final Los Angeles race, Chick employing the PIT maneuver against the King; Lightning stopping and pushing the King"
+            }
+          ]
+        },
+        {
+          "answer": "Lightning McQueen",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Lightning stops to help the King finish after the crash; he does not cause it.",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Cars_(film)",
+              "locator": "Plot: opening Rust-eze/Dinoco sponsorship contrast; final tiebreaker paragraph identifying Chick causing the King crash and Lightning returning to help"
+            },
+            {
+              "url": "https://www.imdb.com/title/tt0317219/plotsummary/",
+              "locator": "Synopsis: final Los Angeles race, Chick employing the PIT maneuver against the King; Lightning stopping and pushing the King"
+            }
+          ]
+        },
+        {
+          "answer": "Finn McMissile",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "The incident is attributed to Chick, not Finn McMissile.",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Cars_(film)",
+              "locator": "Plot: opening Rust-eze/Dinoco sponsorship contrast; final tiebreaker paragraph identifying Chick causing the King crash and Lightning returning to help"
+            },
+            {
+              "url": "https://www.imdb.com/title/tt0317219/plotsummary/",
+              "locator": "Synopsis: final Los Angeles race, Chick employing the PIT maneuver against the King; Lightning stopping and pushing the King"
+            }
+          ]
+        },
+        {
+          "answer": "Francesco Bernoulli",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "The incident is attributed to Chick, not Francesco Bernoulli.",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Cars_(film)",
+              "locator": "Plot: opening Rust-eze/Dinoco sponsorship contrast; final tiebreaker paragraph identifying Chick causing the King crash and Lightning returning to help"
+            },
+            {
+              "url": "https://www.imdb.com/title/tt0317219/plotsummary/",
+              "locator": "Synopsis: final Los Angeles race, Chick employing the PIT maneuver against the King; Lightning stopping and pushing the King"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 321,
+    "hash": "c530d10fe862ae3f6b5a3fe6f4767b49eac7ad3c30d82fd642037c7aee570644",
+    "questionSnapshot": {
+      "id": 321,
+      "question": "In Oliver & Company, who is the cool, smooth-talking lead dog of Fagin's gang?",
+      "answers": [
+        "Dodger",
+        "Einstein",
+        "Tito",
+        "Francis"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "The head-of-pack role decides the answer, not subjective smoothness or bravery. The primary character passage names the leader; other gang members cannot fill that singular identity in this film. Tito breed in 865 and Sykes guard-dog breeds in 2494 are different facts. Character category and medium recall fit. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "In Oliver & Company, who is the cool, smooth-talking lead dog of Fagin's gang? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney explicitly identifies Dodger as the head of Fagin pack. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://d23.com/celebrate-lunar-new-year-with-our-favorite-disney-dogs/",
+            "locator": "Item 6, Dodger (Oliver & Company): head of Fagin pack, charismatic and brave leader"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The head-of-pack role decides the answer, not subjective smoothness or bravery. The primary character passage names the leader; other gang members cannot fill that singular identity in this film. Tito breed in 865 and Sykes guard-dog breeds in 2494 are different facts. Character category and medium recall fit."
+      },
+      "options": [
+        {
+          "answer": "Dodger",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Disney explicitly identifies Dodger as the head of Fagin pack.",
+          "sources": [
+            {
+              "url": "https://d23.com/celebrate-lunar-new-year-with-our-favorite-disney-dogs/",
+              "locator": "Item 6, Dodger (Oliver & Company): head of Fagin pack, charismatic and brave leader"
+            }
+          ]
+        },
+        {
+          "answer": "Einstein",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Einstein is not the dog identified as that pack head.",
+          "sources": [
+            {
+              "url": "https://d23.com/celebrate-lunar-new-year-with-our-favorite-disney-dogs/",
+              "locator": "Item 6, Dodger (Oliver & Company): head of Fagin pack, charismatic and brave leader"
+            }
+          ]
+        },
+        {
+          "answer": "Tito",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Tito is not the dog identified as that pack head.",
+          "sources": [
+            {
+              "url": "https://d23.com/celebrate-lunar-new-year-with-our-favorite-disney-dogs/",
+              "locator": "Item 6, Dodger (Oliver & Company): head of Fagin pack, charismatic and brave leader"
+            }
+          ]
+        },
+        {
+          "answer": "Francis",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Francis is not the dog identified as that pack head.",
+          "sources": [
+            {
+              "url": "https://d23.com/celebrate-lunar-new-year-with-our-favorite-disney-dogs/",
+              "locator": "Item 6, Dodger (Oliver & Company): head of Fagin pack, charismatic and brave leader"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 323,
+    "hash": "e3a4504d090698165f3332564470de97b361dc046734acea99c76032835cc3b8",
+    "questionSnapshot": {
+      "id": 323,
+      "question": "In Sleeping Beauty, what is the name of Maleficent's loyal raven?",
+      "answers": [
+        "Diablo",
+        "Corvus",
+        "Raven",
+        "Shade"
+      ],
+      "difficulty": "hard",
+      "category": "characters"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Checked the possibility that the bird is unnamed in dialogue: the question asks his character name, not a spoken introduction. The Archives specifically answers this exact Sleeping Beauty naming question, so no reliance on the live-action Diaval or on a Villains novel is needed. Hard ancillary-character name recall is appropriate. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "In Sleeping Beauty, what is the name of Maleficent's loyal raven? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Walt Disney Archives explicitly says the raven is known as Diablo. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://d23.com/ask-the-archives/films/page/13/",
+            "locator": "J of Los Angeles asks for unnamed characters including Maleficent raven from Sleeping Beauty; Archives answer: raven known as Diablo"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the possibility that the bird is unnamed in dialogue: the question asks his character name, not a spoken introduction. The Archives specifically answers this exact Sleeping Beauty naming question, so no reliance on the live-action Diaval or on a Villains novel is needed. Hard ancillary-character name recall is appropriate."
+      },
+      "options": [
+        {
+          "answer": "Diablo",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "The Walt Disney Archives explicitly says the raven is known as Diablo.",
+          "sources": [
+            {
+              "url": "https://d23.com/ask-the-archives/films/page/13/",
+              "locator": "J of Los Angeles asks for unnamed characters including Maleficent raven from Sleeping Beauty; Archives answer: raven known as Diablo"
+            }
+          ]
+        },
+        {
+          "answer": "Corvus",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Corvus is not the name given in the Archives answer.",
+          "sources": [
+            {
+              "url": "https://d23.com/ask-the-archives/films/page/13/",
+              "locator": "J of Los Angeles asks for unnamed characters including Maleficent raven from Sleeping Beauty; Archives answer: raven known as Diablo"
+            }
+          ]
+        },
+        {
+          "answer": "Raven",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Raven is a species/descriptor here, not the specific name given by the Archives.",
+          "sources": [
+            {
+              "url": "https://d23.com/ask-the-archives/films/page/13/",
+              "locator": "J of Los Angeles asks for unnamed characters including Maleficent raven from Sleeping Beauty; Archives answer: raven known as Diablo"
+            }
+          ]
+        },
+        {
+          "answer": "Shade",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Shade is not the name given in the Archives answer.",
+          "sources": [
+            {
+              "url": "https://d23.com/ask-the-archives/films/page/13/",
+              "locator": "J of Los Angeles asks for unnamed characters including Maleficent raven from Sleeping Beauty; Archives answer: raven known as Diablo"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 325,
+    "hash": "b42cc3d349172d4e9eee1f2be74be814f08547123ba5591a5a1abbd83e49391b",
+    "questionSnapshot": {
+      "id": 325,
+      "question": "In The Great Mouse Detective, what is Professor Ratigan's true species (despite his protests)?",
+      "answers": [
+        "A rat",
+        "A mouse",
+        "A shrew",
+        "A vole"
+      ],
+      "difficulty": "hard",
+      "category": "characters"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Did not treat Bartholomew intoxicated line alone as biological proof. The secondary cast/design account independently identifies a rat; the fan-reproduced film scene establishes why the denial/mouse answer is tempting. No primary scene viewing claimed. Ratigan name is a natural character clue, not an artificial answer repetition. 2481 asks an unrelated Lady and the Tramp intruder. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "In The Great Mouse Detective, what is Professor Ratigan's true species (despite his protests)? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The cast/design account identifies Ratigan as a rat, despite his denial. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/The_Great_Mouse_Detective",
+            "locator": "Voice cast: Vincent Price as Ratigan, explicitly a rat who dislikes being reminded; Animation: Glen Keane describes the sewer-rat design"
+          },
+          {
+            "url": "https://www.greatmousedetective.net/criminal",
+            "locator": "Fan transcription of original film musical scene: Bartholomew calls Ratigan a rat, Ratigan denies it, intimidated henchmen call him a mouse; corroboration of the denial, not independent biological proof"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Did not treat Bartholomew intoxicated line alone as biological proof. The secondary cast/design account independently identifies a rat; the fan-reproduced film scene establishes why the denial/mouse answer is tempting. No primary scene viewing claimed. Ratigan name is a natural character clue, not an artificial answer repetition. 2481 asks an unrelated Lady and the Tramp intruder."
+      },
+      "options": [
+        {
+          "answer": "A rat",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "The cast/design account identifies Ratigan as a rat, despite his denial.",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/The_Great_Mouse_Detective",
+              "locator": "Voice cast: Vincent Price as Ratigan, explicitly a rat who dislikes being reminded; Animation: Glen Keane describes the sewer-rat design"
+            },
+            {
+              "url": "https://www.greatmousedetective.net/criminal",
+              "locator": "Fan transcription of original film musical scene: Bartholomew calls Ratigan a rat, Ratigan denies it, intimidated henchmen call him a mouse; corroboration of the denial, not independent biological proof"
+            }
+          ]
+        },
+        {
+          "answer": "A mouse",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "The henchmen mouse claim is appeasement after his anger, not the true species.",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/The_Great_Mouse_Detective",
+              "locator": "Voice cast: Vincent Price as Ratigan, explicitly a rat who dislikes being reminded; Animation: Glen Keane describes the sewer-rat design"
+            },
+            {
+              "url": "https://www.greatmousedetective.net/criminal",
+              "locator": "Fan transcription of original film musical scene: Bartholomew calls Ratigan a rat, Ratigan denies it, intimidated henchmen call him a mouse; corroboration of the denial, not independent biological proof"
+            }
+          ]
+        },
+        {
+          "answer": "A shrew",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "He is identified as a rat, not a shrew.",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/The_Great_Mouse_Detective",
+              "locator": "Voice cast: Vincent Price as Ratigan, explicitly a rat who dislikes being reminded; Animation: Glen Keane describes the sewer-rat design"
+            },
+            {
+              "url": "https://www.greatmousedetective.net/criminal",
+              "locator": "Fan transcription of original film musical scene: Bartholomew calls Ratigan a rat, Ratigan denies it, intimidated henchmen call him a mouse; corroboration of the denial, not independent biological proof"
+            }
+          ]
+        },
+        {
+          "answer": "A vole",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "He is identified as a rat, not a vole.",
+          "sources": [
+            {
+              "url": "https://en.wikipedia.org/wiki/The_Great_Mouse_Detective",
+              "locator": "Voice cast: Vincent Price as Ratigan, explicitly a rat who dislikes being reminded; Animation: Glen Keane describes the sewer-rat design"
+            },
+            {
+              "url": "https://www.greatmousedetective.net/criminal",
+              "locator": "Fan transcription of original film musical scene: Bartholomew calls Ratigan a rat, Ratigan denies it, intimidated henchmen call him a mouse; corroboration of the denial, not independent biological proof"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 328,
+    "hash": "6cd5be57d48a29b004a35b0b239962232fe87e0d41a0a5162fe3bc36aad4ec37",
+    "questionSnapshot": {
+      "id": 328,
+      "question": "In The Aristocats (1970), what is Madame Bonfamille's butler called?",
+      "answers": [
+        "Edgar",
+        "Georges",
+        "Napoleon",
+        "Lafayette"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Removed the unneeded surname test: the readily accessible primary synopsis supports Edgar, while the indexed merchandise PDF for Balthazar could not be fully fetched. This is a narrower supported identification, not a claim that Balthazar is wrong. Four first names are parallel. Other cat/horse/dog questions mention Edgar but do not identify the butler by role. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "In The Aristocats (1970), what is Madame Bonfamille's butler called? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The synopsis expressly names Madame Bonfamille greedy butler Edgar. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/aristocats-the-film/aristocats/",
+            "locator": "Opening synopsis: Duchess and exactly three kittens Toulouse, Berlioz, Marie; greedy butler Edgar; alley cat Thomas O'Malley and mouse Roquefort"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the unneeded surname test: the readily accessible primary synopsis supports Edgar, while the indexed merchandise PDF for Balthazar could not be fully fetched. This is a narrower supported identification, not a claim that Balthazar is wrong. Four first names are parallel. Other cat/horse/dog questions mention Edgar but do not identify the butler by role."
+      },
+      "options": [
+        {
+          "answer": "Edgar",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "The synopsis expressly names Madame Bonfamille greedy butler Edgar.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/aristocats-the-film/aristocats/",
+              "locator": "Opening synopsis: Duchess and exactly three kittens Toulouse, Berlioz, Marie; greedy butler Edgar; alley cat Thomas O'Malley and mouse Roquefort"
+            }
+          ]
+        },
+        {
+          "answer": "Georges",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Georges is not the named butler Edgar.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/aristocats-the-film/aristocats/",
+              "locator": "Opening synopsis: Duchess and exactly three kittens Toulouse, Berlioz, Marie; greedy butler Edgar; alley cat Thomas O'Malley and mouse Roquefort"
+            }
+          ]
+        },
+        {
+          "answer": "Napoleon",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Napoleon is not the named butler Edgar.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/aristocats-the-film/aristocats/",
+              "locator": "Opening synopsis: Duchess and exactly three kittens Toulouse, Berlioz, Marie; greedy butler Edgar; alley cat Thomas O'Malley and mouse Roquefort"
+            }
+          ]
+        },
+        {
+          "answer": "Lafayette",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Lafayette is not the named butler Edgar.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/aristocats-the-film/aristocats/",
+              "locator": "Opening synopsis: Duchess and exactly three kittens Toulouse, Berlioz, Marie; greedy butler Edgar; alley cat Thomas O'Malley and mouse Roquefort"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 331,
+    "hash": "5725564e639b7df58acc4f622571ecfabaff416f60dbe5cbb1925fde09ed98f3",
+    "questionSnapshot": {
+      "id": 331,
+      "question": "What are the names of the three hitchhiking ghosts in the Haunted Mansion attraction?",
+      "answers": [
+        "Gus, Ezra, and Phineas",
+        "Gus, Ezra, and the Hatbox Ghost",
+        "Ezra, Phineas, and Master Gracey",
+        "Gus, Phineas, and the Ghost Host"
+      ],
+      "difficulty": "hard",
+      "category": "characters"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Distinguished the attraction from the film cast and from other mansion ghosts. The complete primary trio list excludes each substituted character even if that character also haunts the Mansion. Short names legitimately match full names Ezra Beane and Professor Phineas Plump. Changed implausible invented groups into plausible overlapping sets; hard group-name recall fits. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "What are the names of the three hitchhiking ghosts in the Haunted Mansion attraction? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Gus, Ezra and Phineas are the complete hitchhiking trio; order does not matter. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://disneyparksblog.com/disney-experiences/new-disney-haunted-mansion-wallpapers-featuring-hitchhiking-ghosts/",
+            "locator": "Paragraph beneath Hitchhiking Ghosts Wallpaper 2023 names the complete trio Ezra Beane, Professor Phineas Plump and Gus"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished the attraction from the film cast and from other mansion ghosts. The complete primary trio list excludes each substituted character even if that character also haunts the Mansion. Short names legitimately match full names Ezra Beane and Professor Phineas Plump. Changed implausible invented groups into plausible overlapping sets; hard group-name recall fits."
+      },
+      "options": [
+        {
+          "answer": "Gus, Ezra, and Phineas",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Gus, Ezra and Phineas are the complete hitchhiking trio; order does not matter.",
+          "sources": [
+            {
+              "url": "https://disneyparksblog.com/disney-experiences/new-disney-haunted-mansion-wallpapers-featuring-hitchhiking-ghosts/",
+              "locator": "Paragraph beneath Hitchhiking Ghosts Wallpaper 2023 names the complete trio Ezra Beane, Professor Phineas Plump and Gus"
+            }
+          ]
+        },
+        {
+          "answer": "Gus, Ezra, and the Hatbox Ghost",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "The Hatbox Ghost replaces Phineas and is not in the listed hitchhiking trio.",
+          "sources": [
+            {
+              "url": "https://disneyparksblog.com/disney-experiences/new-disney-haunted-mansion-wallpapers-featuring-hitchhiking-ghosts/",
+              "locator": "Paragraph beneath Hitchhiking Ghosts Wallpaper 2023 names the complete trio Ezra Beane, Professor Phineas Plump and Gus"
+            }
+          ]
+        },
+        {
+          "answer": "Ezra, Phineas, and Master Gracey",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "Master Gracey replaces Gus and is not in the listed hitchhiking trio.",
+          "sources": [
+            {
+              "url": "https://disneyparksblog.com/disney-experiences/new-disney-haunted-mansion-wallpapers-featuring-hitchhiking-ghosts/",
+              "locator": "Paragraph beneath Hitchhiking Ghosts Wallpaper 2023 names the complete trio Ezra Beane, Professor Phineas Plump and Gus"
+            }
+          ]
+        },
+        {
+          "answer": "Gus, Phineas, and the Ghost Host",
+          "verdict": "incorrect",
+          "basis": "exhaustive-list",
+          "reason": "The Ghost Host replaces Ezra and is not in the listed hitchhiking trio.",
+          "sources": [
+            {
+              "url": "https://disneyparksblog.com/disney-experiences/new-disney-haunted-mansion-wallpapers-featuring-hitchhiking-ghosts/",
+              "locator": "Paragraph beneath Hitchhiking Ghosts Wallpaper 2023 names the complete trio Ezra Beane, Professor Phineas Plump and Gus"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 336,
+    "hash": "482e1e2529c098789a0918f25d7113fc53486c7b2486493839eb4b223910b30b",
+    "questionSnapshot": {
+      "id": 336,
+      "question": "In which Magic Kingdom land can you find Big Thunder Mountain Railroad?",
+      "answers": [
+        "Frontierland",
+        "Tomorrowland",
+        "Adventureland",
+        "Fantasyland"
+      ],
+      "difficulty": "easy",
+      "category": "parks"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Checked park-specific variation: Tokyo Westernland cannot answer a Magic Kingdom question. The entry explicitly distinguishes the versions, not merely an assumed Western theme. Other Frontierland questions test Country Bear, Disneyland Old West design, or Paris Phantom Manor; they do not supply this ride-to-land link. Easy local-map recall. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "In which Magic Kingdom land can you find Big Thunder Mountain Railroad? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-04",
+      "premise": {
+        "reason": "The Magic Kingdom version is expressly in Frontierland. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/big-thunder-mountain-railroad/",
+            "locator": "Opening paragraph separately assigns Magic Kingdom version to Frontierland and Tokyo version to Westernland"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked park-specific variation: Tokyo Westernland cannot answer a Magic Kingdom question. The entry explicitly distinguishes the versions, not merely an assumed Western theme. Other Frontierland questions test Country Bear, Disneyland Old West design, or Paris Phantom Manor; they do not supply this ride-to-land link. Easy local-map recall."
+      },
+      "options": [
+        {
+          "answer": "Frontierland",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "The Magic Kingdom version is expressly in Frontierland.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/big-thunder-mountain-railroad/",
+              "locator": "Opening paragraph separately assigns Magic Kingdom version to Frontierland and Tokyo version to Westernland"
+            }
+          ]
+        },
+        {
+          "answer": "Tomorrowland",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Tomorrowland is not the assigned land for this Magic Kingdom attraction.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/big-thunder-mountain-railroad/",
+              "locator": "Opening paragraph separately assigns Magic Kingdom version to Frontierland and Tokyo version to Westernland"
+            }
+          ]
+        },
+        {
+          "answer": "Adventureland",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Adventureland is not the assigned land for this Magic Kingdom attraction.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/big-thunder-mountain-railroad/",
+              "locator": "Opening paragraph separately assigns Magic Kingdom version to Frontierland and Tokyo version to Westernland"
+            }
+          ]
+        },
+        {
+          "answer": "Fantasyland",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Fantasyland is not the assigned land for this Magic Kingdom attraction.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/big-thunder-mountain-railroad/",
+              "locator": "Opening paragraph separately assigns Magic Kingdom version to Frontierland and Tokyo version to Westernland"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 337,
+    "hash": "952dd465df3501723d61090926ac9cf104f491caed9387291126cbfcc8f6e76b",
+    "questionSnapshot": {
+      "id": 337,
+      "question": "What is the name of the entrance avenue at Magic Kingdom?",
+      "answers": [
+        "Main Street, U.S.A.",
+        "Main Boulevard",
+        "Disney Way",
+        "Fantasyland Road"
+      ],
+      "difficulty": "easy",
+      "category": "parks"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Kept Magic Kingdom distinct from Tokyo World Bazaar and Shanghai Mickey Avenue. Main Street source describes the entry-to-hub layout and explicitly includes the Florida park. 1143 asks Disneyland railroad station, 1354 asks Marceline inspiration; neither supplies a new Magic Kingdom street identity. Easy naming with plausible street-style alternatives. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "What is the name of the entrance avenue at Magic Kingdom? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-04",
+      "premise": {
+        "reason": "Main Street, U.S.A. is the named entry street running toward the castle. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/main-street-u-s-a/",
+            "locator": "Entry: railroad station/Town Square to Hub and castle street layout; final paragraph confirms Magic Kingdom also has Main Street"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Kept Magic Kingdom distinct from Tokyo World Bazaar and Shanghai Mickey Avenue. Main Street source describes the entry-to-hub layout and explicitly includes the Florida park. 1143 asks Disneyland railroad station, 1354 asks Marceline inspiration; neither supplies a new Magic Kingdom street identity. Easy naming with plausible street-style alternatives."
+      },
+      "options": [
+        {
+          "answer": "Main Street, U.S.A.",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Main Street, U.S.A. is the named entry street running toward the castle.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/main-street-u-s-a/",
+              "locator": "Entry: railroad station/Town Square to Hub and castle street layout; final paragraph confirms Magic Kingdom also has Main Street"
+            }
+          ]
+        },
+        {
+          "answer": "Main Boulevard",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Main Boulevard is not the documented name of that street.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/main-street-u-s-a/",
+              "locator": "Entry: railroad station/Town Square to Hub and castle street layout; final paragraph confirms Magic Kingdom also has Main Street"
+            }
+          ]
+        },
+        {
+          "answer": "Disney Way",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Disney Way is not the documented name of that street.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/main-street-u-s-a/",
+              "locator": "Entry: railroad station/Town Square to Hub and castle street layout; final paragraph confirms Magic Kingdom also has Main Street"
+            }
+          ]
+        },
+        {
+          "answer": "Fantasyland Road",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Fantasyland Road is not the documented name of that street.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/main-street-u-s-a/",
+              "locator": "Entry: railroad station/Town Square to Hub and castle street layout; final paragraph confirms Magic Kingdom also has Main Street"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 338,
+    "hash": "7f4bc5319c6521ef5cf4b868215280abcc740695d253cf33cce41275c24ec262",
+    "questionSnapshot": {
+      "id": 338,
+      "question": "Which Disney World park features a 'World Showcase' with pavilions representing different countries?",
+      "answers": [
+        "EPCOT",
+        "Magic Kingdom",
+        "Animal Kingdom",
+        "Hollywood Studios"
+      ],
+      "difficulty": "easy",
+      "category": "parks"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Not a claim that other parks lack international influences: the proper-named World Showcase area is the exclusive EPCOT association. 776 asks country count and pavilion questions ask individual placements; 1193 asks Walt last filmed concept presentation, a historical planning fact. Easy park recognition and parks scope fit. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "Which Disney World park features a 'World Showcase' with pavilions representing different countries? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-04",
+      "premise": {
+        "reason": "World Showcase is explicitly the EPCOT international-pavilion area. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/world-showcase/",
+            "locator": "Complete entry explicitly locates the international-pavilion area at EPCOT and enumerates its countries"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Not a claim that other parks lack international influences: the proper-named World Showcase area is the exclusive EPCOT association. 776 asks country count and pavilion questions ask individual placements; 1193 asks Walt last filmed concept presentation, a historical planning fact. Easy park recognition and parks scope fit."
+      },
+      "options": [
+        {
+          "answer": "EPCOT",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "World Showcase is explicitly the EPCOT international-pavilion area.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/world-showcase/",
+              "locator": "Complete entry explicitly locates the international-pavilion area at EPCOT and enumerates its countries"
+            }
+          ]
+        },
+        {
+          "answer": "Magic Kingdom",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Magic Kingdom is not the park assigned to that named area.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/world-showcase/",
+              "locator": "Complete entry explicitly locates the international-pavilion area at EPCOT and enumerates its countries"
+            }
+          ]
+        },
+        {
+          "answer": "Animal Kingdom",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Animal Kingdom is not the park assigned to that named area.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/world-showcase/",
+              "locator": "Complete entry explicitly locates the international-pavilion area at EPCOT and enumerates its countries"
+            }
+          ]
+        },
+        {
+          "answer": "Hollywood Studios",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Hollywood Studios is not the park assigned to that named area.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/world-showcase/",
+              "locator": "Complete entry explicitly locates the international-pavilion area at EPCOT and enumerates its countries"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 340,
+    "hash": "572f26a732355371e2026b3a603c0a1cc38b2f32535050a8d22e8cc0e460afe9",
+    "questionSnapshot": {
+      "id": 340,
+      "question": "What is the name of the pineapple soft-serve treat introduced at Magic Kingdom's Aloha Isle in 1984?",
+      "answers": [
+        "Dole Whip",
+        "Citrus Swirl",
+        "Mickey Bar",
+        "Tropical Float"
+      ],
+      "difficulty": "easy",
+      "category": "parks"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Removed the dairy-implying ice cream label and vague beloved wording. Final stem binds the product to a historical venue/year; the source names that product directly. A float may contain the product but is not its name. Castaway Cay availability in 739 is separate from this Aloha Isle introduction and pineapple identity. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "What is the name of the pineapple soft-serve treat introduced at Magic Kingdom's Aloha Isle in 1984? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The primary history identifies DOLE Whip, originally DOLE Pineapple Whip, with the 1984 Aloha Isle introduction. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://disneyparksblog.com/disney-experiences/disney-eats-new-dole-whip-day-wallpapers-2024/",
+            "locator": "History bullet list: original DOLE Pineapple Whip name and introduction at Aloha Isle in 1984"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Dole_Whip",
+            "locator": "History: Dole spokesperson explanation and Magic Kingdom debut in 1984, Disneyland in 1986"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the dairy-implying ice cream label and vague beloved wording. Final stem binds the product to a historical venue/year; the source names that product directly. A float may contain the product but is not its name. Castaway Cay availability in 739 is separate from this Aloha Isle introduction and pineapple identity."
+      },
+      "options": [
+        {
+          "answer": "Dole Whip",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "The primary history identifies DOLE Whip, originally DOLE Pineapple Whip, with the 1984 Aloha Isle introduction.",
+          "sources": [
+            {
+              "url": "https://disneyparksblog.com/disney-experiences/disney-eats-new-dole-whip-day-wallpapers-2024/",
+              "locator": "History bullet list: original DOLE Pineapple Whip name and introduction at Aloha Isle in 1984"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Dole_Whip",
+              "locator": "History: Dole spokesperson explanation and Magic Kingdom debut in 1984, Disneyland in 1986"
+            }
+          ]
+        },
+        {
+          "answer": "Citrus Swirl",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Citrus Swirl is not the named product in that documented introduction.",
+          "sources": [
+            {
+              "url": "https://disneyparksblog.com/disney-experiences/disney-eats-new-dole-whip-day-wallpapers-2024/",
+              "locator": "History bullet list: original DOLE Pineapple Whip name and introduction at Aloha Isle in 1984"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Dole_Whip",
+              "locator": "History: Dole spokesperson explanation and Magic Kingdom debut in 1984, Disneyland in 1986"
+            }
+          ]
+        },
+        {
+          "answer": "Mickey Bar",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Mickey Bar is not the pineapple soft-serve identified in the 1984 entry.",
+          "sources": [
+            {
+              "url": "https://disneyparksblog.com/disney-experiences/disney-eats-new-dole-whip-day-wallpapers-2024/",
+              "locator": "History bullet list: original DOLE Pineapple Whip name and introduction at Aloha Isle in 1984"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Dole_Whip",
+              "locator": "History: Dole spokesperson explanation and Magic Kingdom debut in 1984, Disneyland in 1986"
+            }
+          ]
+        },
+        {
+          "answer": "Tropical Float",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Tropical Float is not the documented product name; a serving format is not the brand introduced.",
+          "sources": [
+            {
+              "url": "https://disneyparksblog.com/disney-experiences/disney-eats-new-dole-whip-day-wallpapers-2024/",
+              "locator": "History bullet list: original DOLE Pineapple Whip name and introduction at Aloha Isle in 1984"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Dole_Whip",
+              "locator": "History: Dole spokesperson explanation and Magic Kingdom debut in 1984, Disneyland in 1986"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 345,
+    "hash": "2460d05855556f13923c2e6395500fec312f4b239976f7f444dcc36405981cac",
+    "questionSnapshot": {
+      "id": 345,
+      "question": "What is the name of the famous nighttime spectacular at Disneyland featuring Mickey Mouse battling villains?",
+      "answers": [
+        "Fantasmic!",
+        "SpectroMagic",
+        "World of Color",
+        "Illuminations"
+      ],
+      "difficulty": "easy",
+      "category": "parks"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Checked the specific Disneyland version against the official current description and the historical entry. World of Color has water effects but does not become this named Disneyland production. 1477 asks the Hollywood Studios version; shared title does not establish the second park location. Retained park-specific coverage, with a scheduled recheck for changeable entertainment. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "What is the name of the famous nighttime spectacular at Disneyland featuring Mickey Mouse battling villains? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-04",
+      "premise": {
+        "reason": "The Disneyland show page names Fantasmic! and describes Mickey confronting villains. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://disneyland.disney.go.com/entertainment/disneyland/fantasmic/",
+            "locator": "Title and When Dreams Come to Life: Disneyland Rivers of America, Mickey dreaming and defeating villains"
+          },
+          {
+            "url": "https://d23.com/a-to-z/fantasmic/",
+            "locator": "Opening Disneyland production description and later paragraph describing separate Hollywood Studios version"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the specific Disneyland version against the official current description and the historical entry. World of Color has water effects but does not become this named Disneyland production. 1477 asks the Hollywood Studios version; shared title does not establish the second park location. Retained park-specific coverage, with a scheduled recheck for changeable entertainment."
+      },
+      "options": [
+        {
+          "answer": "Fantasmic!",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "The Disneyland show page names Fantasmic! and describes Mickey confronting villains.",
+          "sources": [
+            {
+              "url": "https://disneyland.disney.go.com/entertainment/disneyland/fantasmic/",
+              "locator": "Title and When Dreams Come to Life: Disneyland Rivers of America, Mickey dreaming and defeating villains"
+            },
+            {
+              "url": "https://d23.com/a-to-z/fantasmic/",
+              "locator": "Opening Disneyland production description and later paragraph describing separate Hollywood Studios version"
+            }
+          ]
+        },
+        {
+          "answer": "SpectroMagic",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "SpectroMagic is not the production named by the Disneyland show page.",
+          "sources": [
+            {
+              "url": "https://disneyland.disney.go.com/entertainment/disneyland/fantasmic/",
+              "locator": "Title and When Dreams Come to Life: Disneyland Rivers of America, Mickey dreaming and defeating villains"
+            },
+            {
+              "url": "https://d23.com/a-to-z/fantasmic/",
+              "locator": "Opening Disneyland production description and later paragraph describing separate Hollywood Studios version"
+            }
+          ]
+        },
+        {
+          "answer": "World of Color",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "World of Color is a separate production, not this Disneyland Mickey dream show.",
+          "sources": [
+            {
+              "url": "https://disneyland.disney.go.com/entertainment/disneyland/fantasmic/",
+              "locator": "Title and When Dreams Come to Life: Disneyland Rivers of America, Mickey dreaming and defeating villains"
+            },
+            {
+              "url": "https://d23.com/a-to-z/fantasmic/",
+              "locator": "Opening Disneyland production description and later paragraph describing separate Hollywood Studios version"
+            }
+          ]
+        },
+        {
+          "answer": "Illuminations",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Illuminations is not the production named by the Disneyland show page.",
+          "sources": [
+            {
+              "url": "https://disneyland.disney.go.com/entertainment/disneyland/fantasmic/",
+              "locator": "Title and When Dreams Come to Life: Disneyland Rivers of America, Mickey dreaming and defeating villains"
+            },
+            {
+              "url": "https://d23.com/a-to-z/fantasmic/",
+              "locator": "Opening Disneyland production description and later paragraph describing separate Hollywood Studios version"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 346,
+    "hash": "de3a734f9cf47b64b5befa0b542dcebae5357aa3c896affcb1e4244a1e60c9c1",
+    "questionSnapshot": {
+      "id": 346,
+      "question": "At Disneyland, above which Main Street building did Walt Disney have his private apartment?",
+      "answers": [
+        "The fire station",
+        "The Opera House",
+        "City Hall",
+        "The Emporium"
+      ],
+      "difficulty": "easy",
+      "category": "parks"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Changed to historical occupancy and parallel building names; removed the much longer correct option and the Town Hall/City Hall near-duplicate distractors. The entry identifies the apartment as upstairs in one specific building; it is not an assertion about every planned Disney apartment. Other Main Street questions concern street geography or inspiration. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "At Disneyland, above which Main Street building did Walt Disney have his private apartment? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Walt apartment was upstairs from the Disneyland fire station. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/fire-station/",
+            "locator": "Fire Station entry: Town Square at Disneyland and Walt small apartment upstairs"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Changed to historical occupancy and parallel building names; removed the much longer correct option and the Town Hall/City Hall near-duplicate distractors. The entry identifies the apartment as upstairs in one specific building; it is not an assertion about every planned Disney apartment. Other Main Street questions concern street geography or inspiration."
+      },
+      "options": [
+        {
+          "answer": "The fire station",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Walt apartment was upstairs from the Disneyland fire station.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/fire-station/",
+              "locator": "Fire Station entry: Town Square at Disneyland and Walt small apartment upstairs"
+            }
+          ]
+        },
+        {
+          "answer": "The Opera House",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "The Opera House is not the building identified for that apartment.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/fire-station/",
+              "locator": "Fire Station entry: Town Square at Disneyland and Walt small apartment upstairs"
+            }
+          ]
+        },
+        {
+          "answer": "City Hall",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "City Hall is not the building identified for that apartment.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/fire-station/",
+              "locator": "Fire Station entry: Town Square at Disneyland and Walt small apartment upstairs"
+            }
+          ]
+        },
+        {
+          "answer": "The Emporium",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "The Emporium is not the building identified for that apartment.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/fire-station/",
+              "locator": "Fire Station entry: Town Square at Disneyland and Walt small apartment upstairs"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 347,
+    "hash": "cbd34bb6c7f209a8e9a9ea6f955c4286b46b046822f07168b2e9ad1c4015ec54",
+    "questionSnapshot": {
+      "id": 347,
+      "question": "What name replaced Downtown Disney for Walt Disney World's shopping and dining district in 2015?",
+      "answers": [
+        "Disney Springs",
+        "Disney Town",
+        "Disney Plaza",
+        "Disney Boulevard"
+      ],
+      "difficulty": "easy",
+      "category": "parks"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Bound the question to the 2015 renaming instead of an unbounded current name. Similar shopping districts at other resorts do not answer a Walt Disney World renaming. All options have a parallel Disney/place form. 1145 asks the largest character store within the district, not this name change. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "What name replaced Downtown Disney for Walt Disney World's shopping and dining district in 2015? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney Springs became the replacement name in September 2015. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/disney-springs/",
+            "locator": "Entry: shopping/dining center replacing Downtown Disney; effective name change September 29, 2015"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Bound the question to the 2015 renaming instead of an unbounded current name. Similar shopping districts at other resorts do not answer a Walt Disney World renaming. All options have a parallel Disney/place form. 1145 asks the largest character store within the district, not this name change."
+      },
+      "options": [
+        {
+          "answer": "Disney Springs",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Disney Springs became the replacement name in September 2015.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/disney-springs/",
+              "locator": "Entry: shopping/dining center replacing Downtown Disney; effective name change September 29, 2015"
+            }
+          ]
+        },
+        {
+          "answer": "Disney Town",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Disney Town is not the documented replacement name.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/disney-springs/",
+              "locator": "Entry: shopping/dining center replacing Downtown Disney; effective name change September 29, 2015"
+            }
+          ]
+        },
+        {
+          "answer": "Disney Plaza",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Disney Plaza is not the documented replacement name.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/disney-springs/",
+              "locator": "Entry: shopping/dining center replacing Downtown Disney; effective name change September 29, 2015"
+            }
+          ]
+        },
+        {
+          "answer": "Disney Boulevard",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Disney Boulevard is not the documented replacement name.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/disney-springs/",
+              "locator": "Entry: shopping/dining center replacing Downtown Disney; effective name change September 29, 2015"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 348,
+    "hash": "6405ed650cf913056d85098342c6a2f8710120c817bff846591bb942aa642d5b",
+    "questionSnapshot": {
+      "id": 348,
+      "question": "In which Walt Disney World park is the Na'vi River Journey ride located?",
+      "answers": [
+        "Animal Kingdom",
+        "EPCOT",
+        "Hollywood Studios",
+        "Magic Kingdom"
+      ],
+      "difficulty": "easy",
+      "category": "parks"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Checked specifically the gentle Na'vi River Journey, not Avatar Flight of Passage or a planned Avatar experience elsewhere. Primary entry explicitly gives the park. 2635 asks the Shaman figure, 1359 asks Pandora land and 91 asks park conservation purpose, so these require different facts. Easy location recall. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "In which Walt Disney World park is the Na'vi River Journey ride located? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-04",
+      "premise": {
+        "reason": "The named attraction is at Disney Animal Kingdom, in Pandora. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/navi-river-journey/",
+            "locator": "Opening sentence locates May 27, 2017 attraction in Pandora at Disney Animal Kingdom"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked specifically the gentle Na'vi River Journey, not Avatar Flight of Passage or a planned Avatar experience elsewhere. Primary entry explicitly gives the park. 2635 asks the Shaman figure, 1359 asks Pandora land and 91 asks park conservation purpose, so these require different facts. Easy location recall."
+      },
+      "options": [
+        {
+          "answer": "Animal Kingdom",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "The named attraction is at Disney Animal Kingdom, in Pandora.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/navi-river-journey/",
+              "locator": "Opening sentence locates May 27, 2017 attraction in Pandora at Disney Animal Kingdom"
+            }
+          ]
+        },
+        {
+          "answer": "EPCOT",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "EPCOT is not the park assigned to that attraction.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/navi-river-journey/",
+              "locator": "Opening sentence locates May 27, 2017 attraction in Pandora at Disney Animal Kingdom"
+            }
+          ]
+        },
+        {
+          "answer": "Hollywood Studios",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Hollywood Studios is not the park assigned to that attraction.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/navi-river-journey/",
+              "locator": "Opening sentence locates May 27, 2017 attraction in Pandora at Disney Animal Kingdom"
+            }
+          ]
+        },
+        {
+          "answer": "Magic Kingdom",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Magic Kingdom is not the park assigned to that attraction.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/navi-river-journey/",
+              "locator": "Opening sentence locates May 27, 2017 attraction in Pandora at Disney Animal Kingdom"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 349,
+    "hash": "1d398d71ee9e49f60595d9e42b798450331d77276dae3ce0bdbfc3c12d2eee63",
+    "questionSnapshot": {
+      "id": 349,
+      "question": "Which Mickey-shaped Disney breakfast food is made from batter cooked in a patterned iron?",
+      "answers": [
+        "Mickey-shaped waffles",
+        "Mickey-shaped pretzels",
+        "Mickey-shaped popcorn",
+        "Mickey-shaped bread"
+      ],
+      "difficulty": "easy",
+      "category": "parks"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "The original generic Mickey-shaped treat wording admitted pretzels as well as waffles. Challenged the final preparation qualification: warm snacks or Mickey shapes alone do not suffice. The recipe cooking method and Mickey-waffle gallery support the answer, with breakfast context corroborated by planDisney. No identical food-preparation fact elsewhere in bank. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "Which Mickey-shaped Disney breakfast food is made from batter cooked in a patterned iron? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Mickey waffles are the breakfast item; waffle batter is cooked in an iron. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://disneyparksblog.com/wdw/cooking-up-the-magic-with-a-chocolate-waffle-recipe-to-kick-off-waffle-week/",
+            "locator": "Waffle Instructions steps 2-6: batter preparation and iron cooking; Classic Mickey Waffles gallery caption identifies the Mickey-shaped park food"
+          },
+          {
+            "url": "https://plandisney.disney.go.com/question/recipe-mickey-waffles-370726/",
+            "locator": "May 28, 2018 answer: Mickey waffles each morning for breakfast and waffle-iron preparation context"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The original generic Mickey-shaped treat wording admitted pretzels as well as waffles. Challenged the final preparation qualification: warm snacks or Mickey shapes alone do not suffice. The recipe cooking method and Mickey-waffle gallery support the answer, with breakfast context corroborated by planDisney. No identical food-preparation fact elsewhere in bank."
+      },
+      "options": [
+        {
+          "answer": "Mickey-shaped waffles",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Mickey waffles are the breakfast item; waffle batter is cooked in an iron.",
+          "sources": [
+            {
+              "url": "https://disneyparksblog.com/wdw/cooking-up-the-magic-with-a-chocolate-waffle-recipe-to-kick-off-waffle-week/",
+              "locator": "Waffle Instructions steps 2-6: batter preparation and iron cooking; Classic Mickey Waffles gallery caption identifies the Mickey-shaped park food"
+            },
+            {
+              "url": "https://plandisney.disney.go.com/question/recipe-mickey-waffles-370726/",
+              "locator": "May 28, 2018 answer: Mickey waffles each morning for breakfast and waffle-iron preparation context"
+            }
+          ]
+        },
+        {
+          "answer": "Mickey-shaped pretzels",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Pretzels may be Mickey-shaped but are dough products, not this batter-and-iron breakfast item.",
+          "sources": [
+            {
+              "url": "https://disneyparksblog.com/wdw/cooking-up-the-magic-with-a-chocolate-waffle-recipe-to-kick-off-waffle-week/",
+              "locator": "Waffle Instructions steps 2-6: batter preparation and iron cooking; Classic Mickey Waffles gallery caption identifies the Mickey-shaped park food"
+            },
+            {
+              "url": "https://plandisney.disney.go.com/question/recipe-mickey-waffles-370726/",
+              "locator": "May 28, 2018 answer: Mickey waffles each morning for breakfast and waffle-iron preparation context"
+            }
+          ]
+        },
+        {
+          "answer": "Mickey-shaped popcorn",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Popcorn is popped corn, not batter cooked in a patterned iron.",
+          "sources": [
+            {
+              "url": "https://disneyparksblog.com/wdw/cooking-up-the-magic-with-a-chocolate-waffle-recipe-to-kick-off-waffle-week/",
+              "locator": "Waffle Instructions steps 2-6: batter preparation and iron cooking; Classic Mickey Waffles gallery caption identifies the Mickey-shaped park food"
+            },
+            {
+              "url": "https://plandisney.disney.go.com/question/recipe-mickey-waffles-370726/",
+              "locator": "May 28, 2018 answer: Mickey waffles each morning for breakfast and waffle-iron preparation context"
+            }
+          ]
+        },
+        {
+          "answer": "Mickey-shaped bread",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Bread is a baked dough product, not the named iron-cooked batter breakfast item.",
+          "sources": [
+            {
+              "url": "https://disneyparksblog.com/wdw/cooking-up-the-magic-with-a-chocolate-waffle-recipe-to-kick-off-waffle-week/",
+              "locator": "Waffle Instructions steps 2-6: batter preparation and iron cooking; Classic Mickey Waffles gallery caption identifies the Mickey-shaped park food"
+            },
+            {
+              "url": "https://plandisney.disney.go.com/question/recipe-mickey-waffles-370726/",
+              "locator": "May 28, 2018 answer: Mickey waffles each morning for breakfast and waffle-iron preparation context"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 351,
+    "hash": "bfa3f96dece60520ae22f40e27f69e8748f351671c601ca75924f4eb1dc0d543",
+    "questionSnapshot": {
+      "id": 351,
+      "question": "What name does Disney use for the boats serving EPCOT, Hollywood Studios, and the Swan and Dolphin hotels?",
+      "answers": [
+        "Friendship Boats",
+        "Disney Water Taxis",
+        "Resort Launches",
+        "EPCOT Ferries"
+      ],
+      "difficulty": "easy",
+      "category": "parks"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Explicitly asks Disney's name so that a loose generic water-taxi description cannot also qualify. Source lists the same parks and hotel route under Friendship Boats, not merely boats somewhere on property. The common word boats is shared by the question and multiple options and does not disclose Friendship. Parks transport scope fits; scheduled recheck for route/name changes. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "What name does Disney use for the boats serving EPCOT, Hollywood Studios, and the Swan and Dolphin hotels? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-04",
+      "premise": {
+        "reason": "The official Swan amenities page calls them Friendship Boats. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/en_CA/resorts/swan-hotel/amenities/",
+            "locator": "Disney Watercraft Transportation: Friendship Boat to EPCOT and Hollywood Studios, with Dolphin and other hotel stops"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Explicitly asks Disney's name so that a loose generic water-taxi description cannot also qualify. Source lists the same parks and hotel route under Friendship Boats, not merely boats somewhere on property. The common word boats is shared by the question and multiple options and does not disclose Friendship. Parks transport scope fits; scheduled recheck for route/name changes."
+      },
+      "options": [
+        {
+          "answer": "Friendship Boats",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "The official Swan amenities page calls them Friendship Boats.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/en_CA/resorts/swan-hotel/amenities/",
+              "locator": "Disney Watercraft Transportation: Friendship Boat to EPCOT and Hollywood Studios, with Dolphin and other hotel stops"
+            }
+          ]
+        },
+        {
+          "answer": "Disney Water Taxis",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Disney Water Taxis is not the specific name Disney uses for these boats on that page.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/en_CA/resorts/swan-hotel/amenities/",
+              "locator": "Disney Watercraft Transportation: Friendship Boat to EPCOT and Hollywood Studios, with Dolphin and other hotel stops"
+            }
+          ]
+        },
+        {
+          "answer": "Resort Launches",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Resort Launches is not the specific name assigned to this service.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/en_CA/resorts/swan-hotel/amenities/",
+              "locator": "Disney Watercraft Transportation: Friendship Boat to EPCOT and Hollywood Studios, with Dolphin and other hotel stops"
+            }
+          ]
+        },
+        {
+          "answer": "EPCOT Ferries",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "EPCOT Ferries is not the specific name assigned to this service.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/en_CA/resorts/swan-hotel/amenities/",
+              "locator": "Disney Watercraft Transportation: Friendship Boat to EPCOT and Hollywood Studios, with Dolphin and other hotel stops"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 352,
+    "hash": "49173de129d7907255acb089135fab85d91ceead3e96c0ed727231c7fe4e347c",
+    "questionSnapshot": {
+      "id": 352,
+      "question": "Which Walt Disney World experience offered a two-night voyage aboard the fictional Halcyon starship?",
+      "answers": [
+        "Star Wars: Galactic Starcruiser",
+        "Star Wars: Rise of the Resistance",
+        "Millennium Falcon: Smugglers Run",
+        "Star Tours: The Adventures Continue"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Removed The Halcyon Hotel, a potentially defensible informal name for the same experience, and replaced invented hotel names with comparable real Star Wars titles. Final wording is historical, does not suggest bookings remain open and does not depend on opening/closing date precision. The primary account explicitly identifies this two-night product and its ship. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "Which Walt Disney World experience offered a two-night voyage aboard the fictional Halcyon starship? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The two-night Halcyon vacation experience was Star Wars: Galactic Starcruiser. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://d23.com/7-burning-questions-answered-about-star-wars-galactic-starcruiser/",
+            "locator": "Questions 1 and 4: two-night immersive vacation and named Halcyon starcruiser crew; question 6 describes both nights of dining"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed The Halcyon Hotel, a potentially defensible informal name for the same experience, and replaced invented hotel names with comparable real Star Wars titles. Final wording is historical, does not suggest bookings remain open and does not depend on opening/closing date precision. The primary account explicitly identifies this two-night product and its ship."
+      },
+      "options": [
+        {
+          "answer": "Star Wars: Galactic Starcruiser",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "The two-night Halcyon vacation experience was Star Wars: Galactic Starcruiser.",
+          "sources": [
+            {
+              "url": "https://d23.com/7-burning-questions-answered-about-star-wars-galactic-starcruiser/",
+              "locator": "Questions 1 and 4: two-night immersive vacation and named Halcyon starcruiser crew; question 6 describes both nights of dining"
+            }
+          ]
+        },
+        {
+          "answer": "Star Wars: Rise of the Resistance",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Rise of the Resistance is not the named two-night Halcyon vacation.",
+          "sources": [
+            {
+              "url": "https://d23.com/7-burning-questions-answered-about-star-wars-galactic-starcruiser/",
+              "locator": "Questions 1 and 4: two-night immersive vacation and named Halcyon starcruiser crew; question 6 describes both nights of dining"
+            }
+          ]
+        },
+        {
+          "answer": "Millennium Falcon: Smugglers Run",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Smugglers Run is not the named two-night Halcyon vacation.",
+          "sources": [
+            {
+              "url": "https://d23.com/7-burning-questions-answered-about-star-wars-galactic-starcruiser/",
+              "locator": "Questions 1 and 4: two-night immersive vacation and named Halcyon starcruiser crew; question 6 describes both nights of dining"
+            }
+          ]
+        },
+        {
+          "answer": "Star Tours: The Adventures Continue",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Star Tours is not the named two-night Halcyon vacation.",
+          "sources": [
+            {
+              "url": "https://d23.com/7-burning-questions-answered-about-star-wars-galactic-starcruiser/",
+              "locator": "Questions 1 and 4: two-night immersive vacation and named Halcyon starcruiser crew; question 6 describes both nights of dining"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 353,
+    "hash": "fd035b5c9024ea25447d6368c86b9919507f46a83b621ed91b3604fc127ca30b",
+    "questionSnapshot": {
+      "id": 353,
+      "question": "What is the name of the white-water rafting ride at Animal Kingdom?",
+      "answers": [
+        "Kali River Rapids",
+        "Expedition Splash",
+        "Congo Cascade",
+        "White Water Run"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Checked the type and park, rather than assuming every Animal Kingdom water attraction is rafting. The primary description explicitly pairs the title with whitewater and raft travel. 2634 asks the fictional river/storyline and does not state that this is the park whitewater ride. Easy recognition; parks category and scope fit. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "What is the name of the white-water rafting ride at Animal Kingdom? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-04",
+      "premise": {
+        "reason": "The official whitewater rafting attraction is Kali River Rapids. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/animal-kingdom/kali-river-rapids/",
+            "locator": "Title, whitewater introduction and Raft Down a Rip-Roaring River section"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the type and park, rather than assuming every Animal Kingdom water attraction is rafting. The primary description explicitly pairs the title with whitewater and raft travel. 2634 asks the fictional river/storyline and does not state that this is the park whitewater ride. Easy recognition; parks category and scope fit."
+      },
+      "options": [
+        {
+          "answer": "Kali River Rapids",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "The official whitewater rafting attraction is Kali River Rapids.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/animal-kingdom/kali-river-rapids/",
+              "locator": "Title, whitewater introduction and Raft Down a Rip-Roaring River section"
+            }
+          ]
+        },
+        {
+          "answer": "Expedition Splash",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Expedition Splash is not the documented title of that attraction.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/animal-kingdom/kali-river-rapids/",
+              "locator": "Title, whitewater introduction and Raft Down a Rip-Roaring River section"
+            }
+          ]
+        },
+        {
+          "answer": "Congo Cascade",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Congo Cascade is not the documented title of that attraction.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/animal-kingdom/kali-river-rapids/",
+              "locator": "Title, whitewater introduction and Raft Down a Rip-Roaring River section"
+            }
+          ]
+        },
+        {
+          "answer": "White Water Run",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "White Water Run is not the documented title of that attraction.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/animal-kingdom/kali-river-rapids/",
+              "locator": "Title, whitewater introduction and Raft Down a Rip-Roaring River section"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 354,
+    "hash": "f530a9a9070cb375bdf4990413e8ebe2537df72c7ea7eac88d39a71a1edf5985",
+    "questionSnapshot": {
+      "id": 354,
+      "question": "In what year did the Haunted Mansion open at Magic Kingdom?",
+      "answers": [
+        "1971",
+        "1969",
+        "1975",
+        "1980"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Challenged the common Disneyland/Florida confusion: two primary histories explicitly separate the 1969 and 1971 openings. Opening is a unique dated event and excludes other years without assuming every Haunted Mansion opened together. 599 asks land and 398 asks Roy death; neither tests this opening date. Historical fact, no routine recheck needed. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "In what year did the Haunted Mansion open at Magic Kingdom? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Magic Kingdom Haunted Mansion opened October 1, 1971. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/haunted-mansion/",
+            "locator": "Separate opening dates: Disneyland August 9, 1969 and Magic Kingdom Liberty Square October 1, 1971"
+          },
+          {
+            "url": "https://disneyparksblog.com/disney-experiences/hauntingly-historic-mansion-celebrates-55-years-next-week/",
+            "locator": "Paragraph following 1969 Disneyland opening; Florida opening in 1971; Spine-Tingling Start on the East Coast identifies Magic Kingdom"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged the common Disneyland/Florida confusion: two primary histories explicitly separate the 1969 and 1971 openings. Opening is a unique dated event and excludes other years without assuming every Haunted Mansion opened together. 599 asks land and 398 asks Roy death; neither tests this opening date. Historical fact, no routine recheck needed."
+      },
+      "options": [
+        {
+          "answer": "1971",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Magic Kingdom Haunted Mansion opened October 1, 1971.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/haunted-mansion/",
+              "locator": "Separate opening dates: Disneyland August 9, 1969 and Magic Kingdom Liberty Square October 1, 1971"
+            },
+            {
+              "url": "https://disneyparksblog.com/disney-experiences/hauntingly-historic-mansion-celebrates-55-years-next-week/",
+              "locator": "Paragraph following 1969 Disneyland opening; Florida opening in 1971; Spine-Tingling Start on the East Coast identifies Magic Kingdom"
+            }
+          ]
+        },
+        {
+          "answer": "1969",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "1969 is Disneyland opening, not Magic Kingdom opening.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/haunted-mansion/",
+              "locator": "Separate opening dates: Disneyland August 9, 1969 and Magic Kingdom Liberty Square October 1, 1971"
+            },
+            {
+              "url": "https://disneyparksblog.com/disney-experiences/hauntingly-historic-mansion-celebrates-55-years-next-week/",
+              "locator": "Paragraph following 1969 Disneyland opening; Florida opening in 1971; Spine-Tingling Start on the East Coast identifies Magic Kingdom"
+            }
+          ]
+        },
+        {
+          "answer": "1975",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "1975 is not the documented Magic Kingdom opening year.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/haunted-mansion/",
+              "locator": "Separate opening dates: Disneyland August 9, 1969 and Magic Kingdom Liberty Square October 1, 1971"
+            },
+            {
+              "url": "https://disneyparksblog.com/disney-experiences/hauntingly-historic-mansion-celebrates-55-years-next-week/",
+              "locator": "Paragraph following 1969 Disneyland opening; Florida opening in 1971; Spine-Tingling Start on the East Coast identifies Magic Kingdom"
+            }
+          ]
+        },
+        {
+          "answer": "1980",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "1980 is not the documented Magic Kingdom opening year.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/haunted-mansion/",
+              "locator": "Separate opening dates: Disneyland August 9, 1969 and Magic Kingdom Liberty Square October 1, 1971"
+            },
+            {
+              "url": "https://disneyparksblog.com/disney-experiences/hauntingly-historic-mansion-celebrates-55-years-next-week/",
+              "locator": "Paragraph following 1969 Disneyland opening; Florida opening in 1971; Spine-Tingling Start on the East Coast identifies Magic Kingdom"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 355,
+    "hash": "14864f2503e98ebdce6aa643fde35105a7824445a5626aa01f68d4f79f0da31c",
+    "questionSnapshot": {
+      "id": 355,
+      "question": "Which EPCOT attraction's orange version sends its crew on a simulated flight to Mars?",
+      "answers": [
+        "Mission: SPACE",
+        "Guardians of the Galaxy: Cosmic Rewind",
+        "Test Track",
+        "Spaceship Earth"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Specified orange: green orbits Earth, so the blanket ride description needed context. Replaced the repeated Mission word with version after the warning was recorded unresolved. The primary page names both programs and destinations; the unique Orange/Mars program assignment excludes other attractions, not just their space themes. Medium program recognition and parks scope fit. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "Which EPCOT attraction's orange version sends its crew on a simulated flight to Mars? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-04",
+      "premise": {
+        "reason": "Mission: SPACE offers the Orange Mars simulation. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/epcot/mission-space/",
+            "locator": "Which Mission Should I Choose: Orange Mission to Mars, Green Mission orbits Earth; Orange centrifuge simulation"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Specified orange: green orbits Earth, so the blanket ride description needed context. Replaced the repeated Mission word with version after the warning was recorded unresolved. The primary page names both programs and destinations; the unique Orange/Mars program assignment excludes other attractions, not just their space themes. Medium program recognition and parks scope fit."
+      },
+      "options": [
+        {
+          "answer": "Mission: SPACE",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Mission: SPACE offers the Orange Mars simulation.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/epcot/mission-space/",
+              "locator": "Which Mission Should I Choose: Orange Mission to Mars, Green Mission orbits Earth; Orange centrifuge simulation"
+            }
+          ]
+        },
+        {
+          "answer": "Guardians of the Galaxy: Cosmic Rewind",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Cosmic Rewind is not the attraction explicitly offering the named Orange Mission.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/epcot/mission-space/",
+              "locator": "Which Mission Should I Choose: Orange Mission to Mars, Green Mission orbits Earth; Orange centrifuge simulation"
+            }
+          ]
+        },
+        {
+          "answer": "Test Track",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Test Track is not the attraction explicitly offering the named Orange Mission.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/epcot/mission-space/",
+              "locator": "Which Mission Should I Choose: Orange Mission to Mars, Green Mission orbits Earth; Orange centrifuge simulation"
+            }
+          ]
+        },
+        {
+          "answer": "Spaceship Earth",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Spaceship Earth is not the attraction explicitly offering the named Orange Mission.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/epcot/mission-space/",
+              "locator": "Which Mission Should I Choose: Orange Mission to Mars, Green Mission orbits Earth; Orange centrifuge simulation"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 356,
+    "hash": "f6dd4760989909bd7eb79a0520db6af5d82127681ea7070fddef4517388965ce",
+    "questionSnapshot": {
+      "id": 356,
+      "question": "Which EPCOT attraction opened in 1999 and sends guests in cars around an outdoor high-speed loop?",
+      "answers": [
+        "Test Track",
+        "Mission: SPACE",
+        "Spaceship Earth",
+        "Journey Into Imagination"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Removed simulated speeds: the vehicles really move around the outdoor track. Distinguished the December 1998 soft opening from the documented 1999 grand opening and checked the current page does still describe a high-speed road run after retheming. The 65 mph question 2217 and sponsor question 2216 ask different numeric/production facts. No direct Test-word giveaway remains. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "Which EPCOT attraction opened in 1999 and sends guests in cars around an outdoor high-speed loop? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-04",
+      "premise": {
+        "reason": "Test Track had its grand opening in 1999 and takes cars onto a real high-speed loop outside. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/test-track/",
+            "locator": "Opening paragraphs: grand opening March 17, 1999; vehicles travel on outside loop at real speeds up to 65 mph"
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/attractions/epcot/test-track/",
+            "locator": "Current Portuguese-language page: Viajando para um amanhã mais brilhante describes road journey and electrifying high-speed run, not a stationary speed simulation"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Test_Track",
+            "locator": "History: December 19, 1998 soft opening distinguished from March 17, 1999 official opening"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed simulated speeds: the vehicles really move around the outdoor track. Distinguished the December 1998 soft opening from the documented 1999 grand opening and checked the current page does still describe a high-speed road run after retheming. The 65 mph question 2217 and sponsor question 2216 ask different numeric/production facts. No direct Test-word giveaway remains."
+      },
+      "options": [
+        {
+          "answer": "Test Track",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Test Track had its grand opening in 1999 and takes cars onto a real high-speed loop outside.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/test-track/",
+              "locator": "Opening paragraphs: grand opening March 17, 1999; vehicles travel on outside loop at real speeds up to 65 mph"
+            },
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/epcot/test-track/",
+              "locator": "Current Portuguese-language page: Viajando para um amanhã mais brilhante describes road journey and electrifying high-speed run, not a stationary speed simulation"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Test_Track",
+              "locator": "History: December 19, 1998 soft opening distinguished from March 17, 1999 official opening"
+            }
+          ]
+        },
+        {
+          "answer": "Mission: SPACE",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Mission: SPACE is not the 1999 car-loop attraction named in this history.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/test-track/",
+              "locator": "Opening paragraphs: grand opening March 17, 1999; vehicles travel on outside loop at real speeds up to 65 mph"
+            },
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/epcot/test-track/",
+              "locator": "Current Portuguese-language page: Viajando para um amanhã mais brilhante describes road journey and electrifying high-speed run, not a stationary speed simulation"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Test_Track",
+              "locator": "History: December 19, 1998 soft opening distinguished from March 17, 1999 official opening"
+            }
+          ]
+        },
+        {
+          "answer": "Spaceship Earth",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Spaceship Earth is not the 1999 car-loop attraction named in this history.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/test-track/",
+              "locator": "Opening paragraphs: grand opening March 17, 1999; vehicles travel on outside loop at real speeds up to 65 mph"
+            },
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/epcot/test-track/",
+              "locator": "Current Portuguese-language page: Viajando para um amanhã mais brilhante describes road journey and electrifying high-speed run, not a stationary speed simulation"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Test_Track",
+              "locator": "History: December 19, 1998 soft opening distinguished from March 17, 1999 official opening"
+            }
+          ]
+        },
+        {
+          "answer": "Journey Into Imagination",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Journey Into Imagination is not the 1999 car-loop attraction named in this history.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/test-track/",
+              "locator": "Opening paragraphs: grand opening March 17, 1999; vehicles travel on outside loop at real speeds up to 65 mph"
+            },
+            {
+              "url": "https://disneyworld.disney.go.com/attractions/epcot/test-track/",
+              "locator": "Current Portuguese-language page: Viajando para um amanhã mais brilhante describes road journey and electrifying high-speed run, not a stationary speed simulation"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Test_Track",
+              "locator": "History: December 19, 1998 soft opening distinguished from March 17, 1999 official opening"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 357,
+    "hash": "a6638ac5c234ff4929dbc1e5191a3f91bd8fc07a7cc80e16b99e17af144b2201",
+    "questionSnapshot": {
+      "id": 357,
+      "question": "In what year did Expedition Everest open at Animal Kingdom?",
+      "answers": [
+        "2006",
+        "2004",
+        "2008",
+        "2010"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Checked soft-opening ambiguity: secondary history gives previews and grand opening both in 2006, agreeing with the primary date, so year wording stays unambiguous. 922 asks Asia location, 394 asks Pixar acquisition; sharing 2006 does not repeat the event. Historical year recall is medium; no future status claim. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "In what year did Expedition Everest open at Animal Kingdom? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Expedition Everest opened in 2006; the primary entry dates it April 7. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/expedition-everest/",
+            "locator": "Opening sentence: Asia at Animal Kingdom, opened April 7, 2006"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Expedition_Everest",
+            "locator": "Opening/history: previews January 26, 2006; grand opening April 7, 2006"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked soft-opening ambiguity: secondary history gives previews and grand opening both in 2006, agreeing with the primary date, so year wording stays unambiguous. 922 asks Asia location, 394 asks Pixar acquisition; sharing 2006 does not repeat the event. Historical year recall is medium; no future status claim."
+      },
+      "options": [
+        {
+          "answer": "2006",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Expedition Everest opened in 2006; the primary entry dates it April 7.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/expedition-everest/",
+              "locator": "Opening sentence: Asia at Animal Kingdom, opened April 7, 2006"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Expedition_Everest",
+              "locator": "Opening/history: previews January 26, 2006; grand opening April 7, 2006"
+            }
+          ]
+        },
+        {
+          "answer": "2004",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "2004 is not the documented opening year.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/expedition-everest/",
+              "locator": "Opening sentence: Asia at Animal Kingdom, opened April 7, 2006"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Expedition_Everest",
+              "locator": "Opening/history: previews January 26, 2006; grand opening April 7, 2006"
+            }
+          ]
+        },
+        {
+          "answer": "2008",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "2008 is not the documented opening year.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/expedition-everest/",
+              "locator": "Opening sentence: Asia at Animal Kingdom, opened April 7, 2006"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Expedition_Everest",
+              "locator": "Opening/history: previews January 26, 2006; grand opening April 7, 2006"
+            }
+          ]
+        },
+        {
+          "answer": "2010",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "2010 is not the documented opening year.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/expedition-everest/",
+              "locator": "Opening sentence: Asia at Animal Kingdom, opened April 7, 2006"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Expedition_Everest",
+              "locator": "Opening/history: previews January 26, 2006; grand opening April 7, 2006"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 358,
+    "hash": "8216b5e4a72d9f5106abf48cb1ebd171f70002489c65b1e01b6420b3312a91a3",
+    "questionSnapshot": {
+      "id": 358,
+      "question": "In what year did Disneyland Paris open?",
+      "answers": [
+        "1992",
+        "1989",
+        "1995",
+        "1999"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Confirmed original Euro Disney opening, not 1994 name change, 2002 second park, or 2026 rebranding. Operator timeline and Archives agree on 1992. 114 asks the name-change date, 111 Shanghai opening, and 463 an Academy Award year; they require different facts. Historical opening year is medium. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "In what year did Disneyland Paris open? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The original Paris resort/park opened April 12, 1992. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://news.disneylandparis.com/en/history/",
+            "locator": "1992 timeline section THE GRAND OPENING OF DISNEYLAND PARIS: public opening April 12, 1992; distinguishes 2002 second park"
+          },
+          {
+            "url": "https://d23.com/a-to-z/disneyland-paris/",
+            "locator": "Opening paragraph: resort and original Euro Disneyland park opening April 12, 1992"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Confirmed original Euro Disney opening, not 1994 name change, 2002 second park, or 2026 rebranding. Operator timeline and Archives agree on 1992. 114 asks the name-change date, 111 Shanghai opening, and 463 an Academy Award year; they require different facts. Historical opening year is medium."
+      },
+      "options": [
+        {
+          "answer": "1992",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "The original Paris resort/park opened April 12, 1992.",
+          "sources": [
+            {
+              "url": "https://news.disneylandparis.com/en/history/",
+              "locator": "1992 timeline section THE GRAND OPENING OF DISNEYLAND PARIS: public opening April 12, 1992; distinguishes 2002 second park"
+            },
+            {
+              "url": "https://d23.com/a-to-z/disneyland-paris/",
+              "locator": "Opening paragraph: resort and original Euro Disneyland park opening April 12, 1992"
+            }
+          ]
+        },
+        {
+          "answer": "1989",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "1989 is not the original Paris opening year.",
+          "sources": [
+            {
+              "url": "https://news.disneylandparis.com/en/history/",
+              "locator": "1992 timeline section THE GRAND OPENING OF DISNEYLAND PARIS: public opening April 12, 1992; distinguishes 2002 second park"
+            },
+            {
+              "url": "https://d23.com/a-to-z/disneyland-paris/",
+              "locator": "Opening paragraph: resort and original Euro Disneyland park opening April 12, 1992"
+            }
+          ]
+        },
+        {
+          "answer": "1995",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "1995 is not the original Paris opening year.",
+          "sources": [
+            {
+              "url": "https://news.disneylandparis.com/en/history/",
+              "locator": "1992 timeline section THE GRAND OPENING OF DISNEYLAND PARIS: public opening April 12, 1992; distinguishes 2002 second park"
+            },
+            {
+              "url": "https://d23.com/a-to-z/disneyland-paris/",
+              "locator": "Opening paragraph: resort and original Euro Disneyland park opening April 12, 1992"
+            }
+          ]
+        },
+        {
+          "answer": "1999",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "1999 is not the original Paris opening year.",
+          "sources": [
+            {
+              "url": "https://news.disneylandparis.com/en/history/",
+              "locator": "1992 timeline section THE GRAND OPENING OF DISNEYLAND PARIS: public opening April 12, 1992; distinguishes 2002 second park"
+            },
+            {
+              "url": "https://d23.com/a-to-z/disneyland-paris/",
+              "locator": "Opening paragraph: resort and original Euro Disneyland park opening April 12, 1992"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 359,
+    "hash": "e811549bd1145f92c1a3fd3c0a8f6218abeef74cb1d14f5f8cc251e83df00036",
+    "questionSnapshot": {
+      "id": 359,
+      "question": "Which Disneyland ticket-book coupon, introduced in 1959, became shorthand for a thrilling attraction?",
+      "answers": [
+        "E ticket",
+        "A ticket",
+        "B ticket",
+        "C ticket"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Corrected the original-system implication: the first 1955 books had no E coupon. The primary chronology independently lists all three distractor letters before E was added, and defines the slang usage. All answers now parallel coupon names. Historical parks vocabulary; no same-fact question in the full parks digest. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "Which Disneyland ticket-book coupon, introduced in 1959, became shorthand for a thrilling attraction? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The E coupon was added in 1959 and became the thrill-ride expression. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/e-ticket/",
+            "locator": "Complete entry: E introduced 1959, A/B/C books October 1955, D added 1956; E became slang for thrills"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/E_ticket",
+            "locator": "History: June 1959 introduction of E designation; original A/B/C books"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Corrected the original-system implication: the first 1955 books had no E coupon. The primary chronology independently lists all three distractor letters before E was added, and defines the slang usage. All answers now parallel coupon names. Historical parks vocabulary; no same-fact question in the full parks digest."
+      },
+      "options": [
+        {
+          "answer": "E ticket",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "The E coupon was added in 1959 and became the thrill-ride expression.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/e-ticket/",
+              "locator": "Complete entry: E introduced 1959, A/B/C books October 1955, D added 1956; E became slang for thrills"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/E_ticket",
+              "locator": "History: June 1959 introduction of E designation; original A/B/C books"
+            }
+          ]
+        },
+        {
+          "answer": "A ticket",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "A tickets were present in the original 1955 book, not introduced in 1959.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/e-ticket/",
+              "locator": "Complete entry: E introduced 1959, A/B/C books October 1955, D added 1956; E became slang for thrills"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/E_ticket",
+              "locator": "History: June 1959 introduction of E designation; original A/B/C books"
+            }
+          ]
+        },
+        {
+          "answer": "B ticket",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "B tickets were present in the original 1955 book, not introduced in 1959.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/e-ticket/",
+              "locator": "Complete entry: E introduced 1959, A/B/C books October 1955, D added 1956; E became slang for thrills"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/E_ticket",
+              "locator": "History: June 1959 introduction of E designation; original A/B/C books"
+            }
+          ]
+        },
+        {
+          "answer": "C ticket",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "C tickets were present in the original 1955 book, not introduced in 1959.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/e-ticket/",
+              "locator": "Complete entry: E introduced 1959, A/B/C books October 1955, D added 1956; E became slang for thrills"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/E_ticket",
+              "locator": "History: June 1959 introduction of E designation; original A/B/C books"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 360,
+    "hash": "26ba674bdfa724f95c21ff08885ef6e56184dc58a224a5cb601809781eb77151",
+    "questionSnapshot": {
+      "id": 360,
+      "question": "Which EPCOT attraction opened in 2022 at the Wonders of Xandar pavilion?",
+      "answers": [
+        "Guardians of the Galaxy: Cosmic Rewind",
+        "Remy's Ratatouille Adventure",
+        "Frozen Ever After",
+        "Journey Into Imagination With Figment"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Removed Guardians from the stem and replaced short invented coaster names with comparable real attraction titles. The source binds the one new attraction to both pavilion and year. 913 tests vehicle terminology and 2636 song count; neither provides the Xandar/2022 opening context. Medium venue/year recognition; fixed historical event. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "Which EPCOT attraction opened in 2022 at the Wonders of Xandar pavilion? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 2022 opening report names Cosmic Rewind at Wonders of Xandar. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://disneyparksblog.com/wdw/guardians-of-the-galaxy-cosmic-rewind-opens-at-epcot/",
+            "locator": "May 28, 2022 opening report: new family coaster at EPCOT Wonders of Xandar pavilion"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy:_Cosmic_Rewind",
+            "locator": "History: previews and public grand opening May 27, 2022"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed Guardians from the stem and replaced short invented coaster names with comparable real attraction titles. The source binds the one new attraction to both pavilion and year. 913 tests vehicle terminology and 2636 song count; neither provides the Xandar/2022 opening context. Medium venue/year recognition; fixed historical event."
+      },
+      "options": [
+        {
+          "answer": "Guardians of the Galaxy: Cosmic Rewind",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "The 2022 opening report names Cosmic Rewind at Wonders of Xandar.",
+          "sources": [
+            {
+              "url": "https://disneyparksblog.com/wdw/guardians-of-the-galaxy-cosmic-rewind-opens-at-epcot/",
+              "locator": "May 28, 2022 opening report: new family coaster at EPCOT Wonders of Xandar pavilion"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy:_Cosmic_Rewind",
+              "locator": "History: previews and public grand opening May 27, 2022"
+            }
+          ]
+        },
+        {
+          "answer": "Remy's Ratatouille Adventure",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Remy's Ratatouille Adventure is not the new Xandar attraction named in that report.",
+          "sources": [
+            {
+              "url": "https://disneyparksblog.com/wdw/guardians-of-the-galaxy-cosmic-rewind-opens-at-epcot/",
+              "locator": "May 28, 2022 opening report: new family coaster at EPCOT Wonders of Xandar pavilion"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy:_Cosmic_Rewind",
+              "locator": "History: previews and public grand opening May 27, 2022"
+            }
+          ]
+        },
+        {
+          "answer": "Frozen Ever After",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Frozen Ever After is not the new Xandar attraction named in that report.",
+          "sources": [
+            {
+              "url": "https://disneyparksblog.com/wdw/guardians-of-the-galaxy-cosmic-rewind-opens-at-epcot/",
+              "locator": "May 28, 2022 opening report: new family coaster at EPCOT Wonders of Xandar pavilion"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy:_Cosmic_Rewind",
+              "locator": "History: previews and public grand opening May 27, 2022"
+            }
+          ]
+        },
+        {
+          "answer": "Journey Into Imagination With Figment",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Journey Into Imagination With Figment is not the new Xandar attraction named in that report.",
+          "sources": [
+            {
+              "url": "https://disneyparksblog.com/wdw/guardians-of-the-galaxy-cosmic-rewind-opens-at-epcot/",
+              "locator": "May 28, 2022 opening report: new family coaster at EPCOT Wonders of Xandar pavilion"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy:_Cosmic_Rewind",
+              "locator": "History: previews and public grand opening May 27, 2022"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 361,
+    "hash": "fc834d979aa0d99864ff406bbdb70de90b4a2691fcf11f866c0466a5f1f967f5",
+    "questionSnapshot": {
+      "id": 361,
+      "question": "Which Walt Disney World hotel was designed around savannas where guests can watch giraffes and zebras?",
+      "answers": [
+        "Disney's Animal Kingdom Lodge",
+        "Disney's Wilderness Lodge",
+        "Disney's Caribbean Beach Resort",
+        "Disney's Port Orleans Resort"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Challenged whether generic wildlife or a hotel in the Animal Kingdom resort area would suffice: the question requires design around giraffe/zebra savannas. All four resort design accounts distinguish the concepts. Removed invented Safari/Savanna hotel distractors and the repeated animal word. 900 asks Northwest lobby design; neither full question names the other hotel association. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "Which Walt Disney World hotel was designed around savannas where guests can watch giraffes and zebras? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-04",
+      "premise": {
+        "reason": "Animal Kingdom Lodge design centers on savannas and its wildlife list includes giraffes and zebras. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/resorts/animal-kingdom-lodge/",
+            "locator": "What Makes This Resort Hotel Unique: design around four savannas; Exotic Animals explicitly includes giraffes and zebras"
+          },
+          {
+            "url": "https://d23.com/hidden-gems-from-disneys-wilderness-lodge/",
+            "locator": "Introduction and item 7: Yellowstone/Pacific Northwest design, Old Faithful Lodge inspiration, not African savannas"
+          },
+          {
+            "url": "https://d23.com/a-to-z/caribbean-beach-resort/",
+            "locator": "Entry describes Florida hotel and themed Caribbean island villages around Old Port Royale"
+          },
+          {
+            "url": "https://disneyworld.disney.go.com/resorts/port-orleans-resort-riverside/",
+            "locator": "What Makes This Resort Hotel Unique: rural Louisiana, Magnolia Bend/Alligator Bayou and Sassagoula River"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged whether generic wildlife or a hotel in the Animal Kingdom resort area would suffice: the question requires design around giraffe/zebra savannas. All four resort design accounts distinguish the concepts. Removed invented Safari/Savanna hotel distractors and the repeated animal word. 900 asks Northwest lobby design; neither full question names the other hotel association."
+      },
+      "options": [
+        {
+          "answer": "Disney's Animal Kingdom Lodge",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Animal Kingdom Lodge design centers on savannas and its wildlife list includes giraffes and zebras.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/resorts/animal-kingdom-lodge/",
+              "locator": "What Makes This Resort Hotel Unique: design around four savannas; Exotic Animals explicitly includes giraffes and zebras"
+            },
+            {
+              "url": "https://d23.com/hidden-gems-from-disneys-wilderness-lodge/",
+              "locator": "Introduction and item 7: Yellowstone/Pacific Northwest design, Old Faithful Lodge inspiration, not African savannas"
+            },
+            {
+              "url": "https://d23.com/a-to-z/caribbean-beach-resort/",
+              "locator": "Entry describes Florida hotel and themed Caribbean island villages around Old Port Royale"
+            },
+            {
+              "url": "https://disneyworld.disney.go.com/resorts/port-orleans-resort-riverside/",
+              "locator": "What Makes This Resort Hotel Unique: rural Louisiana, Magnolia Bend/Alligator Bayou and Sassagoula River"
+            }
+          ]
+        },
+        {
+          "answer": "Disney's Wilderness Lodge",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Wilderness Lodge was designed around the American Northwest/Yellowstone, not African savannas.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/resorts/animal-kingdom-lodge/",
+              "locator": "What Makes This Resort Hotel Unique: design around four savannas; Exotic Animals explicitly includes giraffes and zebras"
+            },
+            {
+              "url": "https://d23.com/hidden-gems-from-disneys-wilderness-lodge/",
+              "locator": "Introduction and item 7: Yellowstone/Pacific Northwest design, Old Faithful Lodge inspiration, not African savannas"
+            },
+            {
+              "url": "https://d23.com/a-to-z/caribbean-beach-resort/",
+              "locator": "Entry describes Florida hotel and themed Caribbean island villages around Old Port Royale"
+            },
+            {
+              "url": "https://disneyworld.disney.go.com/resorts/port-orleans-resort-riverside/",
+              "locator": "What Makes This Resort Hotel Unique: rural Louisiana, Magnolia Bend/Alligator Bayou and Sassagoula River"
+            }
+          ]
+        },
+        {
+          "answer": "Disney's Caribbean Beach Resort",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Caribbean Beach is designed as Caribbean island villages, not the giraffe/zebra savanna lodge.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/resorts/animal-kingdom-lodge/",
+              "locator": "What Makes This Resort Hotel Unique: design around four savannas; Exotic Animals explicitly includes giraffes and zebras"
+            },
+            {
+              "url": "https://d23.com/hidden-gems-from-disneys-wilderness-lodge/",
+              "locator": "Introduction and item 7: Yellowstone/Pacific Northwest design, Old Faithful Lodge inspiration, not African savannas"
+            },
+            {
+              "url": "https://d23.com/a-to-z/caribbean-beach-resort/",
+              "locator": "Entry describes Florida hotel and themed Caribbean island villages around Old Port Royale"
+            },
+            {
+              "url": "https://disneyworld.disney.go.com/resorts/port-orleans-resort-riverside/",
+              "locator": "What Makes This Resort Hotel Unique: rural Louisiana, Magnolia Bend/Alligator Bayou and Sassagoula River"
+            }
+          ]
+        },
+        {
+          "answer": "Disney's Port Orleans Resort",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "Port Orleans recreates Louisiana riverside settings, not the African savanna lodge.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/resorts/animal-kingdom-lodge/",
+              "locator": "What Makes This Resort Hotel Unique: design around four savannas; Exotic Animals explicitly includes giraffes and zebras"
+            },
+            {
+              "url": "https://d23.com/hidden-gems-from-disneys-wilderness-lodge/",
+              "locator": "Introduction and item 7: Yellowstone/Pacific Northwest design, Old Faithful Lodge inspiration, not African savannas"
+            },
+            {
+              "url": "https://d23.com/a-to-z/caribbean-beach-resort/",
+              "locator": "Entry describes Florida hotel and themed Caribbean island villages around Old Port Royale"
+            },
+            {
+              "url": "https://disneyworld.disney.go.com/resorts/port-orleans-resort-riverside/",
+              "locator": "What Makes This Resort Hotel Unique: rural Louisiana, Magnolia Bend/Alligator Bayou and Sassagoula River"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 364,
+    "hash": "880ad218e36d1c6f9fd8e58d0f6b3c7825862faea965a814a892a608fffa4582",
+    "questionSnapshot": {
+      "id": 364,
+      "question": "In what year did Walt Disney World's 18-month 50th anniversary celebration begin?",
+      "answers": [
+        "2021",
+        "2020",
+        "2022",
+        "2019"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Original celebrate wording allowed 2022 during an 18-month event. Final begin wording excludes that tempting alternative; the primary announcement explicitly supplies both date and duration. This is not asking when every celebration day occurred or when Guardians opened. Medium historical-year recall; the start cannot change. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "In what year did Walt Disney World's 18-month 50th anniversary celebration begin? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The celebration began October 1, 2021. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://d23.com/details-on-walt-disney-worlds-50th-anniversary-celebration/",
+            "locator": "February 19, 2021 announcement, first paragraph: celebration begins October 1, 2021 and lasts 18 months"
+          },
+          {
+            "url": "https://disneyexperiences.com/app/uploads/sites/4/2022/08/fact_sheet_walt_disney_world_2022_Q3.pdf",
+            "locator": "PDF page 2, New Developments: October 1, 2021 actual kickoff and 18-month duration, corroborating the prior announcement"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Original celebrate wording allowed 2022 during an 18-month event. Final begin wording excludes that tempting alternative; the primary announcement explicitly supplies both date and duration. This is not asking when every celebration day occurred or when Guardians opened. Medium historical-year recall; the start cannot change."
+      },
+      "options": [
+        {
+          "answer": "2021",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "The celebration began October 1, 2021.",
+          "sources": [
+            {
+              "url": "https://d23.com/details-on-walt-disney-worlds-50th-anniversary-celebration/",
+              "locator": "February 19, 2021 announcement, first paragraph: celebration begins October 1, 2021 and lasts 18 months"
+            },
+            {
+              "url": "https://disneyexperiences.com/app/uploads/sites/4/2022/08/fact_sheet_walt_disney_world_2022_Q3.pdf",
+              "locator": "PDF page 2, New Developments: October 1, 2021 actual kickoff and 18-month duration, corroborating the prior announcement"
+            }
+          ]
+        },
+        {
+          "answer": "2020",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "2020 precedes the stated beginning.",
+          "sources": [
+            {
+              "url": "https://d23.com/details-on-walt-disney-worlds-50th-anniversary-celebration/",
+              "locator": "February 19, 2021 announcement, first paragraph: celebration begins October 1, 2021 and lasts 18 months"
+            },
+            {
+              "url": "https://disneyexperiences.com/app/uploads/sites/4/2022/08/fact_sheet_walt_disney_world_2022_Q3.pdf",
+              "locator": "PDF page 2, New Developments: October 1, 2021 actual kickoff and 18-month duration, corroborating the prior announcement"
+            }
+          ]
+        },
+        {
+          "answer": "2022",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "2022 falls during the event, but is not its beginning year.",
+          "sources": [
+            {
+              "url": "https://d23.com/details-on-walt-disney-worlds-50th-anniversary-celebration/",
+              "locator": "February 19, 2021 announcement, first paragraph: celebration begins October 1, 2021 and lasts 18 months"
+            },
+            {
+              "url": "https://disneyexperiences.com/app/uploads/sites/4/2022/08/fact_sheet_walt_disney_world_2022_Q3.pdf",
+              "locator": "PDF page 2, New Developments: October 1, 2021 actual kickoff and 18-month duration, corroborating the prior announcement"
+            }
+          ]
+        },
+        {
+          "answer": "2019",
+          "verdict": "incorrect",
+          "basis": "contradiction",
+          "reason": "2019 precedes the stated beginning.",
+          "sources": [
+            {
+              "url": "https://d23.com/details-on-walt-disney-worlds-50th-anniversary-celebration/",
+              "locator": "February 19, 2021 announcement, first paragraph: celebration begins October 1, 2021 and lasts 18 months"
+            },
+            {
+              "url": "https://disneyexperiences.com/app/uploads/sites/4/2022/08/fact_sheet_walt_disney_world_2022_Q3.pdf",
+              "locator": "PDF page 2, New Developments: October 1, 2021 actual kickoff and 18-month duration, corroborating the prior announcement"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 366,
+    "hash": "dac38412008d9e1a5350420907c0e6882fd02c0d54e2139d6615c4fd8729e083",
+    "questionSnapshot": {
+      "id": 366,
+      "question": "What Star Wars land opened at Disney's Hollywood Studios in 2019?",
+      "answers": [
+        "Star Wars: Galaxy's Edge",
+        "Star Wars Zone",
+        "The Outer Rim",
+        "Force Land"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-06",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Fixed the historical opening context and distinguished the Disneyland May opening from Hollywood Studios August opening. The proper-name land is Galaxy's Edge, while Outer Rim is a broader in-universe region, not an alternative official title here. 1467 and 778 ask particular rides within the land, not this opening/name event. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+    "verification": {
+      "context": "What Star Wars land opened at Disney's Hollywood Studios in 2019? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Galaxy's Edge opened at Hollywood Studios on August 29, 2019. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/star-wars-galaxys-edge/",
+            "locator": "Opening-date paragraph: Disneyland May 31, 2019; Disney Hollywood Studios August 29, 2019; land named in title"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Star_Wars:_Galaxy%27s_Edge",
+            "locator": "Development and History: Hollywood Studios land opened August 29, 2019, separate from May Disneyland opening"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-06",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Fixed the historical opening context and distinguished the Disneyland May opening from Hollywood Studios August opening. The proper-name land is Galaxy's Edge, while Outer Rim is a broader in-universe region, not an alternative official title here. 1467 and 778 ask particular rides within the land, not this opening/name event."
+      },
+      "options": [
+        {
+          "answer": "Star Wars: Galaxy's Edge",
+          "verdict": "correct",
+          "basis": "direct",
+          "reason": "Galaxy's Edge opened at Hollywood Studios on August 29, 2019.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/star-wars-galaxys-edge/",
+              "locator": "Opening-date paragraph: Disneyland May 31, 2019; Disney Hollywood Studios August 29, 2019; land named in title"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Star_Wars:_Galaxy%27s_Edge",
+              "locator": "Development and History: Hollywood Studios land opened August 29, 2019, separate from May Disneyland opening"
+            }
+          ]
+        },
+        {
+          "answer": "Star Wars Zone",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Star Wars Zone is not the documented land name.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/star-wars-galaxys-edge/",
+              "locator": "Opening-date paragraph: Disneyland May 31, 2019; Disney Hollywood Studios August 29, 2019; land named in title"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Star_Wars:_Galaxy%27s_Edge",
+              "locator": "Development and History: Hollywood Studios land opened August 29, 2019, separate from May Disneyland opening"
+            }
+          ]
+        },
+        {
+          "answer": "The Outer Rim",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "The Outer Rim is not the documented name of this 2019 land opening.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/star-wars-galaxys-edge/",
+              "locator": "Opening-date paragraph: Disneyland May 31, 2019; Disney Hollywood Studios August 29, 2019; land named in title"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Star_Wars:_Galaxy%27s_Edge",
+              "locator": "Development and History: Hollywood Studios land opened August 29, 2019, separate from May Disneyland opening"
+            }
+          ]
+        },
+        {
+          "answer": "Force Land",
+          "verdict": "incorrect",
+          "basis": "exclusive-inference",
+          "reason": "Force Land is not the documented land name.",
+          "sources": [
+            {
+              "url": "https://d23.com/a-to-z/star-wars-galaxys-edge/",
+              "locator": "Opening-date paragraph: Disneyland May 31, 2019; Disney Hollywood Studios August 29, 2019; land named in title"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Star_Wars:_Galaxy%27s_Edge",
+              "locator": "Development and History: Hollywood Studios land opened August 29, 2019, separate from May Disneyland opening"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

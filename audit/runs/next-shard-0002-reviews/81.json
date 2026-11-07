@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 81,
+  "hash": "cec21dcd45491e5c4351bb7e732b28b1cfe53f6fdfa75151276ca07469338829",
+  "questionSnapshot": {
+    "id": 81,
+    "question": "Which of these is NOT one of Snow White's Seven Dwarfs?",
+    "answers": [
+      "Jumpy",
+      "Bashful",
+      "Grumpy",
+      "Dopey"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "reviewer": "Codex (OpenAI)",
+  "at": "2026-11-02",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Count q57 and mute-character q286 test different facts. Basic roster recognition is easy rather than hard. Checked all four final options, mobile wording, clue fairness, category, editorial difficulty and theatrical/character/park scope. Full topic digests and additional all-shard searches were used for distinctness; context questions are not approved by this review.",
+  "verification": {
+    "context": "English-language Disney character naming; original theatrical feature where a film is named. Which of these is NOT one of Snow White's Seven Dwarfs?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The official seven-name roster includes Bashful, Grumpy and Dopey and excludes Jumpy.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/seven-dwarfs/",
+          "locator": "Entire entry is the complete seven-name roster: Doc, Sleepy, Happy, Grumpy, Sneezy, Bashful, Dopey."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex (OpenAI)",
+      "at": "2026-11-02",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Reversed the verdict test to account for NOT, then compared every option against the exhaustive official list. This is not an inference from a short synopsis omitting a name."
+    },
+    "options": [
+      {
+        "answer": "Jumpy",
+        "verdict": "correct",
+        "basis": "exhaustive-list",
+        "reason": "Jumpy is absent from the complete seven-name roster, so it is correct for NOT.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/seven-dwarfs/",
+            "locator": "Entire entry is the complete seven-name roster: Doc, Sleepy, Happy, Grumpy, Sneezy, Bashful, Dopey."
+          }
+        ]
+      },
+      {
+        "answer": "Bashful",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Bashful is present, making this wrong for NOT.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/seven-dwarfs/",
+            "locator": "Entire entry is the complete seven-name roster: Doc, Sleepy, Happy, Grumpy, Sneezy, Bashful, Dopey."
+          }
+        ]
+      },
+      {
+        "answer": "Grumpy",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Grumpy is present, making this wrong for NOT.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/seven-dwarfs/",
+            "locator": "Entire entry is the complete seven-name roster: Doc, Sleepy, Happy, Grumpy, Sneezy, Bashful, Dopey."
+          }
+        ]
+      },
+      {
+        "answer": "Dopey",
+        "verdict": "incorrect",
+        "basis": "exhaustive-list",
+        "reason": "Dopey is present, making this wrong for NOT.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/seven-dwarfs/",
+            "locator": "Entire entry is the complete seven-name roster: Doc, Sleepy, Happy, Grumpy, Sneezy, Bashful, Dopey."
+          }
+        ]
+      }
+    ]
+  }
+}

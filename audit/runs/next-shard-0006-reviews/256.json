@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 256,
+  "hash": "d2f3ffadcff23d744f5ffecce74a7f7417fe18fac3ade34039407089812598aa",
+  "questionSnapshot": {
+    "id": 256,
+    "question": "In Oliver & Company, what famous city does the story take place in?",
+    "answers": [
+      "New York City",
+      "Los Angeles",
+      "Chicago",
+      "Miami"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Do not confuse production studios or Dickens original London setting with film geography. City in the answer is a generic noun, not the information New York. q531 separately tests a named song film association; q953 and q2162 ask different historical/film locations.",
+  "verification": {
+    "context": "In Oliver & Company, what famous city does the story take place in?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The synopsis specifies New York.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/oliver-company-film/",
+          "locator": "Opening sets story in New York and distinguishes Fagin from his boss Sykes; cast lists Dodger separately."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Do not confuse production studios or Dickens original London setting with film geography. City in the answer is a generic noun, not the information New York. q531 separately tests a named song film association; q953 and q2162 ask different historical/film locations."
+    },
+    "options": [
+      {
+        "answer": "New York City",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The synopsis specifies New York.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/oliver-company-film/",
+            "locator": "Opening sets story in New York and distinguishes Fagin from his boss Sykes; cast lists Dodger separately."
+          }
+        ]
+      },
+      {
+        "answer": "Los Angeles",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Los Angeles is a different story setting from New York.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/oliver-company-film/",
+            "locator": "Opening sets story in New York and distinguishes Fagin from his boss Sykes; cast lists Dodger separately."
+          }
+        ]
+      },
+      {
+        "answer": "Chicago",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Chicago is a different story setting from New York.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/oliver-company-film/",
+            "locator": "Opening sets story in New York and distinguishes Fagin from his boss Sykes; cast lists Dodger separately."
+          }
+        ]
+      },
+      {
+        "answer": "Miami",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Miami is a different story setting from New York.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/oliver-company-film/",
+            "locator": "Opening sets story in New York and distinguishes Fagin from his boss Sykes; cast lists Dodger separately."
+          }
+        ]
+      }
+    ]
+  }
+}

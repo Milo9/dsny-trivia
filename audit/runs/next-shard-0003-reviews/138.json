@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "questionId": 138,
+  "hash": "d2a1145ca22775199edfd4d2841cf76b948dcfb17cd33607f6f67ba2c64e11a2",
+  "questionSnapshot": {
+    "id": 138,
+    "question": "On Disney Cruise Line's original Magic-class ships, which song provides the classic horn melody?",
+    "answers": [
+      "When You Wish Upon a Star",
+      "A Dream Is a Wish Your Heart Makes",
+      "Be Our Guest",
+      "Zip-a-Dee-Doo-Dah"
+    ],
+    "difficulty": "easy",
+    "category": "cruise"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, relevant full topic digests and cross-bank comparisons. Category and editorial difficulty checked on final wording. Challenged the player-reported multi-answer problem: Dream can play the first three listed songs. Final scope is the original Magic-class classic melody; TouringPlans explicitly limits Magic/Wonder to one tune and Korkis corroborates the classic/expanded distinction. Original Disney blog failed to load; these independent specialist accounts are the evidence limitation, not an inspected video. Recheck scheduled.",
+  "verification": {
+    "context": "On Disney Cruise Line's original Magic-class ships, which song provides the classic horn melody?",
+    "timeSensitive": true,
+    "nextReviewAt": "2027-02-04",
+    "premise": {
+      "reason": "Classic Magic/Wonder melody, distinguished from the later ships' larger repertoires.",
+      "sources": [
+        {
+          "url": "https://touringplans.com/blog/disney-cruise-line-what-is-a-ship-horn-battle-dcl-in-a-jiffy/",
+          "locator": "Paragraph beginning Any historian: Magic and Wonder have one tune, When You Wish Upon a Star; Dream/Fantasy have multiple."
+        },
+        {
+          "url": "https://mouseplanet.com/seacret-stuff-on-the-disney-cruise-line/8326/",
+          "locator": "The Ship's Horn section: classic tune, Dream-expanded repertoire, and distinction between Magic/Wonder air horns and later ships."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged the player-reported multi-answer problem: Dream can play the first three listed songs. Final scope is the original Magic-class classic melody; TouringPlans explicitly limits Magic/Wonder to one tune and Korkis corroborates the classic/expanded distinction. Original Disney blog failed to load; these independent specialist accounts are the evidence limitation, not an inspected video. Recheck scheduled."
+    },
+    "options": [
+      {
+        "answer": "When You Wish Upon a Star",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Classic Magic/Wonder melody, distinguished from the later ships' larger repertoires.",
+        "sources": [
+          {
+            "url": "https://touringplans.com/blog/disney-cruise-line-what-is-a-ship-horn-battle-dcl-in-a-jiffy/",
+            "locator": "Paragraph beginning Any historian: Magic and Wonder have one tune, When You Wish Upon a Star; Dream/Fantasy have multiple."
+          },
+          {
+            "url": "https://mouseplanet.com/seacret-stuff-on-the-disney-cruise-line/8326/",
+            "locator": "The Ship's Horn section: classic tune, Dream-expanded repertoire, and distinction between Magic/Wonder air horns and later ships."
+          }
+        ]
+      },
+      {
+        "answer": "A Dream Is a Wish Your Heart Makes",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Documented in the expanded Dream repertoire, not the original Magic-class classic tune.",
+        "sources": [
+          {
+            "url": "https://touringplans.com/blog/disney-cruise-line-what-is-a-ship-horn-battle-dcl-in-a-jiffy/",
+            "locator": "Paragraph beginning Any historian: Magic and Wonder have one tune, When You Wish Upon a Star; Dream/Fantasy have multiple."
+          },
+          {
+            "url": "https://mouseplanet.com/seacret-stuff-on-the-disney-cruise-line/8326/",
+            "locator": "The Ship's Horn section: classic tune, Dream-expanded repertoire, and distinction between Magic/Wonder air horns and later ships."
+          }
+        ]
+      },
+      {
+        "answer": "Be Our Guest",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Documented in the expanded Dream repertoire, not the original Magic-class classic tune.",
+        "sources": [
+          {
+            "url": "https://touringplans.com/blog/disney-cruise-line-what-is-a-ship-horn-battle-dcl-in-a-jiffy/",
+            "locator": "Paragraph beginning Any historian: Magic and Wonder have one tune, When You Wish Upon a Star; Dream/Fantasy have multiple."
+          },
+          {
+            "url": "https://mouseplanet.com/seacret-stuff-on-the-disney-cruise-line/8326/",
+            "locator": "The Ship's Horn section: classic tune, Dream-expanded repertoire, and distinction between Magic/Wonder air horns and later ships."
+          }
+        ]
+      },
+      {
+        "answer": "Zip-a-Dee-Doo-Dah",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the sole classic Magic/Wonder melody in the explicit repertoire account.",
+        "sources": [
+          {
+            "url": "https://touringplans.com/blog/disney-cruise-line-what-is-a-ship-horn-battle-dcl-in-a-jiffy/",
+            "locator": "Paragraph beginning Any historian: Magic and Wonder have one tune, When You Wish Upon a Star; Dream/Fantasy have multiple."
+          },
+          {
+            "url": "https://mouseplanet.com/seacret-stuff-on-the-disney-cruise-line/8326/",
+            "locator": "The Ship's Horn section: classic tune, Dream-expanded repertoire, and distinction between Magic/Wonder air horns and later ships."
+          }
+        ]
+      }
+    ]
+  }
+}

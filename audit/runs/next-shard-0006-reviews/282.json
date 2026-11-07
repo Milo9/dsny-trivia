@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 282,
+  "hash": "1b0f5ef4deaafa49d4529c62a4256573a5514bd012c0f0f097616bee99b2d8f3",
+  "questionSnapshot": {
+    "id": 282,
+    "question": "What is Simba's mother's name in The Lion King?",
+    "answers": [
+      "Sarabi",
+      "Nala",
+      "Kiara",
+      "Sarafina"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read final stem/all options; checked full topic/category digests, cross-bank candidate stems and options, category, scope, giveaways and editorial difficulty. Unique maternal identity excludes similarly named lionesses; q1119 asks Nala mother and cannot be solved merely by knowing Sarabi is Simba mother. Retain easy relationship recall.",
+  "verification": {
+    "context": "What is Simba's mother's name in The Lion King?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "Disney identifies Sarabi as Simba mother.",
+      "sources": [
+        {
+          "url": "https://d23.com/a-to-z/sarabi/",
+          "locator": "Entire entry identifies Sarabi as Simba mother, with original voice Madge Sinclair."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Unique maternal identity excludes similarly named lionesses; q1119 asks Nala mother and cannot be solved merely by knowing Sarabi is Simba mother. Retain easy relationship recall."
+    },
+    "options": [
+      {
+        "answer": "Sarabi",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "Disney identifies Sarabi as Simba mother.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/sarabi/",
+            "locator": "Entire entry identifies Sarabi as Simba mother, with original voice Madge Sinclair."
+          }
+        ]
+      },
+      {
+        "answer": "Nala",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Nala is not the explicitly identified mother.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/sarabi/",
+            "locator": "Entire entry identifies Sarabi as Simba mother, with original voice Madge Sinclair."
+          }
+        ]
+      },
+      {
+        "answer": "Kiara",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Kiara is not the explicitly identified mother.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/sarabi/",
+            "locator": "Entire entry identifies Sarabi as Simba mother, with original voice Madge Sinclair."
+          }
+        ]
+      },
+      {
+        "answer": "Sarafina",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Sarafina is not the explicitly identified mother.",
+        "sources": [
+          {
+            "url": "https://d23.com/a-to-z/sarabi/",
+            "locator": "Entire entry identifies Sarabi as Simba mother, with original voice Madge Sinclair."
+          }
+        ]
+      }
+    ]
+  }
+}

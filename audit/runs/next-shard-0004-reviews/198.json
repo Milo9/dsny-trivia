@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "questionId": 198,
+  "hash": "f4af63d55290cd5a380b15e0a3bbda9110beb5d6ecda3a387f6ec626fa4bc341",
+  "questionSnapshot": {
+    "id": 198,
+    "question": "In The Incredibles, what is the proper name of the island where Syndrome has his secret lair?",
+    "answers": [
+      "Nomanisan Island",
+      "Syndrome's Island",
+      "Omnidroid Base",
+      "Villain's Cove"
+    ],
+    "difficulty": "hard",
+    "category": "pixar"
+  },
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "manual": {
+    "singleAnswer": true,
+    "context": true,
+    "wording": true,
+    "noGiveaway": true,
+    "distinctFact": true,
+    "category": true,
+    "difficulty": true,
+    "scope": true
+  },
+  "notes": "Read all four options, full matching topic digests and cross-bank comparisons; checked wording, category, editorial difficulty and main-film scope. Challenged Syndrome’s Island as literally a true description. Final wording expressly asks the proper name, which Pixar labels Nomanisan. Omnidroid Base and Villain’s Cove are not that proper name.",
+  "verification": {
+    "context": "In The Incredibles, what is the proper name of the island where Syndrome has his secret lair?",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "premise": {
+      "reason": "The World section calls the island Nomanisan.",
+      "sources": [
+        {
+          "url": "https://www.pixar.com/the-incredibles",
+          "locator": "Mr. Incredible and Elastigirl profiles give Bob Parr and Helen Parr; The World / Nomanisan names villain’s island, with Syndrome profile confirming island lair."
+        }
+      ]
+    },
+    "challenge": {
+      "reviewer": "Codex",
+      "at": "2026-11-06",
+      "premiseChecked": true,
+      "alternativesExcluded": true,
+      "notes": "Challenged Syndrome’s Island as literally a true description. Final wording expressly asks the proper name, which Pixar labels Nomanisan. Omnidroid Base and Villain’s Cove are not that proper name."
+    },
+    "options": [
+      {
+        "answer": "Nomanisan Island",
+        "verdict": "correct",
+        "basis": "direct",
+        "reason": "The World section calls the island Nomanisan.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/the-incredibles",
+            "locator": "Mr. Incredible and Elastigirl profiles give Bob Parr and Helen Parr; The World / Nomanisan names villain’s island, with Syndrome profile confirming island lair."
+          }
+        ]
+      },
+      {
+        "answer": "Syndrome's Island",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "A description of whose island it is, not the proper name now requested.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/the-incredibles",
+            "locator": "Mr. Incredible and Elastigirl profiles give Bob Parr and Helen Parr; The World / Nomanisan names villain’s island, with Syndrome profile confirming island lair."
+          }
+        ]
+      },
+      {
+        "answer": "Omnidroid Base",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "A base description, not the island’s proper name.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/the-incredibles",
+            "locator": "Mr. Incredible and Elastigirl profiles give Bob Parr and Helen Parr; The World / Nomanisan names villain’s island, with Syndrome profile confirming island lair."
+          }
+        ]
+      },
+      {
+        "answer": "Villain's Cove",
+        "verdict": "incorrect",
+        "basis": "exclusive-inference",
+        "reason": "Not the proper name given in Pixar’s island section.",
+        "sources": [
+          {
+            "url": "https://www.pixar.com/the-incredibles",
+            "locator": "Mr. Incredible and Elastigirl profiles give Bob Parr and Helen Parr; The World / Nomanisan names villain’s island, with Syndrome profile confirming island lair."
+          }
+        ]
+      }
+    ]
+  }
+}

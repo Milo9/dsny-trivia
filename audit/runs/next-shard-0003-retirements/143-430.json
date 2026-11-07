@@ -1,0 +1,38 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-06",
+  "retired": {
+    "id": 143,
+    "question": "What is the name of the adults-only Italian specialty restaurant aboard the Disney Magic?",
+    "answers": [
+      "Palo",
+      "Remy",
+      "Lumiere's",
+      "Triton's"
+    ],
+    "difficulty": "medium",
+    "category": "cruise",
+    "factId": "palo.disney-magic-name",
+    "explanation": "Palo serves Northern Italian cuisine and is also aboard the Disney Dream, Disney Wonder and Disney Fantasy.",
+    "source": "https://disneycruise.disney.go.com/en-as/onboard-activities/palo-restaurant/",
+    "verifiedAt": "2026-10-29"
+  },
+  "retained": {
+    "id": 430,
+    "question": "What type of dining does Palo offer aboard the Disney Magic?",
+    "answers": [
+      "Adults-only Italian dining (brunch and dinner)",
+      "Adults-only French fine dining",
+      "Family-style French dining",
+      "Poolside Italian buffet"
+    ],
+    "difficulty": "medium",
+    "category": "cruise",
+    "factId": "palo.disney-magic-cuisine",
+    "explanation": "Palo is an adult-exclusive venue offering brunch and dinner.",
+    "source": "https://disneycruise.disney.go.com/en-as/onboard-activities/palo-restaurant/",
+    "verifiedAt": "2026-10-29"
+  },
+  "rationale": "Both test the Disney Magic Palo adults-only Italian dining association, in reverse; retain the version additionally specifying brunch and dinner.",
+  "scope": "Only the planned question is retired; the replacement is context and is not newly approved."
+}
