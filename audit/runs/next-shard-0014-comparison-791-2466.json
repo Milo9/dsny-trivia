@@ -1,0 +1,40 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "questionIds": [
+    791,
+    2466
+  ],
+  "removedQuestion": {
+    "id": 791,
+    "question": "Who wrote and performed all five original songs for Disney's Tarzan (1999), while composer Mark Mancina handled the orchestral score?",
+    "answers": [
+      "Phil Collins",
+      "Alan Menken",
+      "Hans Zimmer",
+      "Elton John"
+    ],
+    "difficulty": "hard",
+    "category": "music"
+  },
+  "replacementQuestion": {
+    "id": 2466,
+    "question": "Tarzan II features two new original songs written and performed by which musician, who also wrote the songs for the original 1999 Tarzan?",
+    "answers": [
+      "Phil Collins",
+      "Alan Menken",
+      "Mark Mancina",
+      "Elton John"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reason": "The retained question explicitly reuses Collins's authorship of the original Tarzan songs while adding sequel context. That identification already solves #791. The retired wording also falsely generalizes five in-film performances; Disney states he sang four.",
+  "evidence": [
+    {
+      "url": "https://d23.com/a-to-z/tarzan-film/",
+      "locator": "Voice and music paragraph: five songs by Collins, four sung by him"
+    }
+  ],
+  "challenge": "Read both complete four-option questions and the full category/topic context. The retained question's tested fact or explicit premise supplies the removed answer without another fact. Retire only the in-scope member; do not alter the replacement."
+}

@@ -1,0 +1,40 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "questionIds": [
+    831,
+    1338
+  ],
+  "removedQuestion": {
+    "id": 831,
+    "question": "In Tarzan, what leopard kills Tarzan's parents?",
+    "answers": [
+      "Sabor",
+      "Numa",
+      "Sheeta",
+      "Bagheera"
+    ],
+    "difficulty": "hard",
+    "category": "movies"
+  },
+  "replacementQuestion": {
+    "id": 1338,
+    "question": "In Tarzan, what type of predator killed Tarzan's human parents when he was an infant, setting up the story?",
+    "answers": [
+      "A leopard named Sabor",
+      "A tiger named Khan",
+      "A lion named Kerchak",
+      "A jaguar named Terk"
+    ],
+    "difficulty": "hard",
+    "category": "movies"
+  },
+  "reason": "Both identify the leopard Sabor as the killer of Tarzan's parents. The retained question tests species as well as naming Sabor.",
+  "evidence": [
+    {
+      "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=tarzan",
+      "locator": "Kala tells Kerchak that Sabor killed the infant's family."
+    }
+  ],
+  "challenge": "Read both full four-option questions, topic context and source passage. The retained question explicitly supplies the removed answer; no separate fact is required. Retire only the in-scope member."
+}

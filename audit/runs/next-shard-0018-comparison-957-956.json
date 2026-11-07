@@ -1,0 +1,30 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "removed": {
+    "id": 957,
+    "question": "Which 1964 World's Fair pavilion presented Great Moments with Mr. Lincoln?",
+    "answers": [
+      "Illinois pavilion",
+      "Ford pavilion",
+      "General Electric pavilion",
+      "Pepsi pavilion"
+    ],
+    "difficulty": "medium",
+    "category": "walt"
+  },
+  "replacement": {
+    "id": 956,
+    "question": "Which Disney-created 1964 World's Fair show was commissioned for the Illinois pavilion?",
+    "answers": [
+      "Great Moments with Mr. Lincoln",
+      "Carousel of Progress",
+      "The American Adventure",
+      "Ford Magic Skyway"
+    ],
+    "difficulty": "hard",
+    "category": "walt"
+  },
+  "reason": "Both test the same Great Moments with Mr. Lincoln and Illinois pavilion association in inverse form; retain the revised show-identification question.",
+  "source": "https://d23.com/a-to-z/new-york-worlds-fair/"
+}

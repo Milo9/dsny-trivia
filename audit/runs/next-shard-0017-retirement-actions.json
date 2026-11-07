@@ -1,0 +1,38 @@
+[
+  {
+    "id": 908,
+    "replacement": 956,
+    "reason": "Both ask the Great Moments/Lincoln Audio-Animatronic association. Retain the more specific 1964 World's Fair question; the attraction's later Disneyland location does not make another association-identification question necessary.",
+    "reference": "audit/runs/next-shard-0017-comparison-908-956.json"
+  },
+  {
+    "id": 911,
+    "replacement": 956,
+    "reason": "The attraction title explicitly supplies Lincoln; it also reverses the same Lincoln/Great Moments fact retained in #956. Two current player reports identify the giveaway.",
+    "reference": "audit/runs/next-shard-0017-comparison-911-956.json"
+  },
+  {
+    "id": 920,
+    "replacement": 888,
+    "reason": "Both test the Living with the Land agriculture/greenhouse experience. The retained question already names the ride and asks about working greenhouses; reversing this to identify the agricultural boat ride adds no materially distinct fact.",
+    "reference": "audit/runs/next-shard-0017-comparison-920-888.json"
+  },
+  {
+    "id": 921,
+    "replacement": 1484,
+    "reason": "Both connect Kilimanjaro Safaris, Harambe and the African village setting. The retained question supplies African-village context and asks Harambe; the reverse land question is already answered by that context.",
+    "reference": "audit/runs/next-shard-0017-comparison-921-1484.json"
+  },
+  {
+    "id": 939,
+    "replacement": 937,
+    "reason": "Exact inverse of the film/Fantasound association. Retain the technical-name question, whose final wording avoids the Fantasia/Fantasound word echo.",
+    "reference": "audit/runs/next-shard-0017-comparison-939-937.json"
+  },
+  {
+    "id": 944,
+    "replacement": 2571,
+    "reason": "Both test CalArts' formation by merging Chouinard and the Los Angeles Conservatory. Retain the more specific constituent-school question; its stem already supplies the institution asked here.",
+    "reference": "audit/runs/next-shard-0017-comparison-944-2571.json"
+  }
+]

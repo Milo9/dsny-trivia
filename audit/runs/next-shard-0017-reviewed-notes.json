@@ -1,0 +1,3030 @@
+{
+  "schema": 1,
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "sourcesChecked": [
+    "b17-902",
+    "b17-landmarks",
+    "b17-903",
+    "b17-904",
+    "b17-905",
+    "b17-906",
+    "b17-luigi",
+    "b17-mater",
+    "b17-incredicoaster",
+    "b17-907",
+    "b17-909",
+    "b17-910",
+    "b17-912",
+    "b17-omnis",
+    "b17-913",
+    "b17-914",
+    "b17-tigers",
+    "b17-africa",
+    "b17-park-directory",
+    "b17-915",
+    "b17-gorillas",
+    "b17-916",
+    "b17-917",
+    "b17-918",
+    "b17-fowler",
+    "b17-irvine",
+    "b17-mark",
+    "b17-919",
+    "b17-922",
+    "b17-923",
+    "b17-924",
+    "b17-925",
+    "b17-926",
+    "b17-927",
+    "b17-928",
+    "b17-929",
+    "b17-930",
+    "b17-mouse",
+    "b17-931",
+    "b17-932",
+    "b17-flowers",
+    "b17-mill",
+    "b17-pigs",
+    "b17-docs",
+    "b17-933",
+    "b17-donald",
+    "b17-934",
+    "b17-karnival",
+    "b17-935",
+    "b17-animation",
+    "b17-937",
+    "b17-fantasound",
+    "b17-lady",
+    "b17-938",
+    "b17-940",
+    "b17-941",
+    "b17-942",
+    "b17-music",
+    "b17-943",
+    "b17-melody",
+    "b17-ichabod",
+    "b17-945",
+    "b17-beaver",
+    "b17-desert",
+    "b17-946",
+    "b17-947",
+    "b17-peter",
+    "b17-948",
+    "b17-949",
+    "b17-sleep",
+    "b17-lady-museum",
+    "b17-950",
+    "b17-951",
+    "b17-dalmatians",
+    "b17-952",
+    "b17-death"
+  ],
+  "reviews": [
+    {
+      "questionId": 902,
+      "hash": "cb9b739e43a42525dc6406da98dd83dd80e1e617d4c619d8223ebadcbf81d409",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Other pavilions have towers, but the named Venetian original fixes Italy. #433 asks a shipbuilding country, a separate fact.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Italy contains the St. Mark's campanile replica.",
+        "sources": [
+          "b17-902",
+          "b17-landmarks"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Italy contains the St. Mark's campanile replica.",
+          "sources": [
+            "b17-902",
+            "b17-landmarks"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "France's landmark here is the Eiffel Tower, not this Venetian campanile.",
+          "sources": [
+            "b17-902",
+            "b17-landmarks"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Germany's landmark is St. George and the Dragon, not this campanile.",
+          "sources": [
+            "b17-902",
+            "b17-landmarks"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Morocco's tower is the Koutoubia minaret, not this campanile.",
+          "sources": [
+            "b17-902",
+            "b17-landmarks"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other pavilions have towers, but the named Venetian original fixes Italy. #433 asks a shipbuilding country, a separate fact."
+      }
+    },
+    {
+      "questionId": 903,
+      "hash": "6b20cdda2e9b51a7995e9d14e610e005ec9acff29b0abbc0c9a85a43ecf17caf",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Challenged China's gate as a competing answer: the source distinguishes its named gate from the Japanese torii and waterside position.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Japan's torii gate welcomes guests from World Showcase Lagoon.",
+        "sources": [
+          "b17-903",
+          "b17-landmarks"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Japan's torii gate welcomes guests from World Showcase Lagoon.",
+          "sources": [
+            "b17-903",
+            "b17-landmarks"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "China's Gate of the Golden Sun and Temple of Heaven are different structures, not this torii.",
+          "sources": [
+            "b17-903",
+            "b17-landmarks"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Norway's distinctive wooden structure is the Stave Church, not the lagoon torii.",
+          "sources": [
+            "b17-903",
+            "b17-landmarks"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Canada's landmark is Hotel du Canada, not this torii.",
+          "sources": [
+            "b17-903",
+            "b17-landmarks"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged China's gate as a competing answer: the source distinguishes its named gate from the Japanese torii and waterside position."
+      }
+    },
+    {
+      "questionId": 904,
+      "hash": "332ec5047a1030d136297ab0584cd09efac4194ce33eba5105e5fdd362e31496",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "The gallery's exhibit has changed from Frozen to Viking artifacts; the question tests its Norwegian location, not its changing exhibit.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The Stave Church Gallery is in Norway.",
+        "sources": [
+          "b17-904",
+          "b17-landmarks"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Stave Church Gallery is in Norway.",
+          "sources": [
+            "b17-904",
+            "b17-landmarks"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Germany's town-square pavilion is not the location of this named gallery.",
+          "sources": [
+            "b17-904",
+            "b17-landmarks"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The United Kingdom's architectural sequence includes a Tudor pub, not this gallery.",
+          "sources": [
+            "b17-904",
+            "b17-landmarks"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Canada's chateau-inspired pavilion is not this gallery's location.",
+          "sources": [
+            "b17-904",
+            "b17-landmarks"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The gallery's exhibit has changed from Frozen to Viking artifacts; the question tests its Norwegian location, not its changing exhibit."
+      }
+    },
+    {
+      "questionId": 905,
+      "hash": "77438d5ed870b9557d3319c2628b3768f477adf60386103f3b549c9f884ebb84",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "The amphibian and reckless motorcar premise uniquely identifies Toad. Ride is generic vocabulary and does not reveal Mr. Toad; #317 asks the Alice vehicle, a different fact.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Mr. Toad's Wild Ride follows J. Thaddeus Toad on a destructive motorcar journey based on Wind in the Willows.",
+        "sources": [
+          "b17-905"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Mr. Toad's Wild Ride follows J. Thaddeus Toad on a destructive motorcar journey based on Wind in the Willows.",
+          "sources": [
+            "b17-905"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Alice in Wonderland follows Alice rather than this named amphibian's motorcar journey.",
+          "sources": [
+            "b17-905"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pinocchio's Daring Journey follows the puppet rather than Toad.",
+          "sources": [
+            "b17-905"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Snow White's Enchanted Wish follows Snow White rather than Toad.",
+          "sources": [
+            "b17-905"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The amphibian and reckless motorcar premise uniquely identifies Toad. Ride is generic vocabulary and does not reveal Mr. Toad; #317 asks the Alice vehicle, a different fact."
+      }
+    },
+    {
+      "questionId": 906,
+      "hash": "7932908af4a517bcd3b8ada8d5b81acf966427e4fd1c4c7873fca29457cd6ef4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Seeing the same mountains from Cars Land is not racing through the valley. The source expressly links the tour and competitive road course to Racers; #2237 and #2240 ask capacity and opening year.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Radiator Springs Racers tours Ornament Valley and then stages a race through the rock formations.",
+        "sources": [
+          "b17-906"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Radiator Springs Racers tours Ornament Valley and then stages a race through the rock formations.",
+          "sources": [
+            "b17-906"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Luigi's cars dance within the storage yard, not along the Ornament Valley race course.",
+          "sources": [
+            "b17-luigi"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Mater's tractors circle a junkyard dancefloor in figure eights, not an Ornament Valley race.",
+          "sources": [
+            "b17-mater"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Incredicoaster pursues Jack-Jack around Pixar Pier, not Cars Land's Ornament Valley.",
+          "sources": [
+            "b17-incredicoaster"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Seeing the same mountains from Cars Land is not racing through the valley. The source expressly links the tour and competitive road course to Racers; #2237 and #2240 ask capacity and opening year."
+      }
+    },
+    {
+      "questionId": 907,
+      "hash": "56b4758b6350f9ed9d06907dc1479b93fe56a92b8cc730c8afdf44c39116fa68",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Historical debut wording avoids treating the latest World of Color version as permanent. #2238 asks the 2023 ONE update, which is a separate version-name fact.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "World of Color opened on Paradise Bay at Disney California Adventure in 2010.",
+        "sources": [
+          "b17-907"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "World of Color opened on Paradise Bay at Disney California Adventure in 2010.",
+          "sources": [
+            "b17-907"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fantasmic! is not the named 2010 Paradise Bay debut.",
+          "sources": [
+            "b17-907"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Harmonious is not the named 2010 Paradise Bay debut.",
+          "sources": [
+            "b17-907"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wondrous Journeys is not the named 2010 Paradise Bay debut.",
+          "sources": [
+            "b17-907"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Historical debut wording avoids treating the latest World of Color version as permanent. #2238 asks the 2023 ONE update, which is a separate version-name fact."
+      }
+    },
+    {
+      "questionId": 909,
+      "hash": "ba517089c81dd28908ec299e372973d76c10aab921f90081c85dd5a0b44e47b7",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Small World also has small figures, so the specific animated-film settings and miniature model architecture are decisive. Boat is not a unique answer clue because the alternatives are boat attractions too.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Storybook Land Canal Boats tours miniature movie locales including Arendelle, Agrabah and the dwarfs' cottage.",
+        "sources": [
+          "b17-909"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Storybook Land Canal Boats tours miniature movie locales including Arendelle, Agrabah and the dwarfs' cottage.",
+          "sources": [
+            "b17-909"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jungle Cruise is not this named tour of scale-model Disney movie villages.",
+          "sources": [
+            "b17-909"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "It's a Small World depicts singing children and nations, not this catalogue of miniature movie villages.",
+          "sources": [
+            "b17-909"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mark Twain Riverboat tours the frontier river, not this catalogue of miniature movie locales.",
+          "sources": [
+            "b17-909"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Small World also has small figures, so the specific animated-film settings and miniature model architecture are decisive. Boat is not a unique answer clue because the alternatives are boat attractions too."
+      }
+    },
+    {
+      "questionId": 910,
+      "hash": "bf033f49c34b2b3ce83f53218a4068e9fddfaae457f37d23e69a2e374fb2d6ee",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Removed tiki from the stem. A singing bear or human musical scene does not satisfy the combined bird-and-flower cast; #1475 asks the Disneyland first-Animatronics milestone.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The Enchanted Tiki Room features a musical cast of tropical birds and flowers.",
+        "sources": [
+          "b17-910"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Enchanted Tiki Room features a musical cast of tropical birds and flowers.",
+          "sources": [
+            "b17-910"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Hall of Presidents presents presidents, not this tropical chorus.",
+          "sources": [
+            "b17-910"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Country Bear Musical Jamboree presents bears, not this tropical chorus.",
+          "sources": [
+            "b17-910"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Carousel of Progress presents an American family, not this tropical chorus.",
+          "sources": [
+            "b17-910"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed tiki from the stem. A singing bear or human musical scene does not satisfy the combined bird-and-flower cast; #1475 asks the Disneyland first-Animatronics milestone."
+      }
+    },
+    {
+      "questionId": 912,
+      "hash": "ce2ba80f3d65c8caff1d195236948d0e84cf3b4df92ac1b49a816e9a098f0e93",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "The attraction's elevated track does not turn it into the resort Monorail. Disney expressly names Spaceship Earth as an Omnimover example; #913 tests the newer coaster system.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Disney identifies Spaceship Earth as an attraction using the Omnimover ride system.",
+        "sources": [
+          "b17-912",
+          "b17-omnis"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney identifies Spaceship Earth as an attraction using the Omnimover ride system.",
+          "sources": [
+            "b17-912",
+            "b17-omnis"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Monorail is not the attraction's named Omnimover system.",
+          "sources": [
+            "b17-912",
+            "b17-omnis"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A trackless rover is not the attraction's named system.",
+          "sources": [
+            "b17-912",
+            "b17-omnis"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A boat flume is not the attraction's named system.",
+          "sources": [
+            "b17-912",
+            "b17-omnis"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The attraction's elevated track does not turn it into the resort Monorail. Disney expressly names Spaceship Earth as an Omnimover example; #913 tests the newer coaster system."
+      }
+    },
+    {
+      "questionId": 913,
+      "hash": "e4c2fc2edcc2c5a1a78ce52e4fd3c39e25a5e4bc43245ab9c6a35731fb6fbfd2",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "The old wording confused a system name with vehicle names. The final wording tests Disney's term for the coaster; derivation from Omnimover does not make that older term the answer.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Disney calls Cosmic Rewind's coaster system an Omnicoaster, with controlled vehicle rotations.",
+        "sources": [
+          "b17-913",
+          "b17-omnis"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney calls Cosmic Rewind's coaster system an Omnicoaster, with controlled vehicle rotations.",
+          "sources": [
+            "b17-913",
+            "b17-omnis"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Omnimover is the older system whose technology was advanced for this coaster; it is not the new system name.",
+          "sources": [
+            "b17-913",
+            "b17-omnis"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Trackless dark ride does not name this rail-based coaster system.",
+          "sources": [
+            "b17-913",
+            "b17-omnis"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Water coaster does not name this indoor space-themed system.",
+          "sources": [
+            "b17-913",
+            "b17-omnis"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The old wording confused a system name with vehicle names. The final wording tests Disney's term for the coaster; derivation from Omnimover does not make that older term the answer."
+      }
+    },
+    {
+      "questionId": 914,
+      "hash": "d195e00680d6efb5ad1579ce6f2b7d664f937a6fbd1b6cb21af4a22cfbcde902",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Removed gorilla from the stem. Africa/Pangani distinguish this trail from the Asian tiger trail #915, so both animal-area facts remain separate.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Gorilla Falls Exploration Trail follows paths through Pangani Forest with African animals.",
+        "sources": [
+          "b17-914",
+          "b17-tigers",
+          "b17-africa",
+          "b17-park-directory"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Gorilla Falls Exploration Trail follows paths through Pangani Forest with African animals.",
+          "sources": [
+            "b17-914",
+            "b17-tigers",
+            "b17-africa",
+            "b17-park-directory"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Maharajah Jungle Trek is the Anandapur Asian forest trail, not Pangani Forest.",
+          "sources": [
+            "b17-914",
+            "b17-tigers",
+            "b17-africa",
+            "b17-park-directory"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Discovery Island Trails is not the named Pangani Forest trail.",
+          "sources": [
+            "b17-914",
+            "b17-tigers",
+            "b17-africa",
+            "b17-park-directory"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Oasis Exhibits is not the named Pangani Forest trail.",
+          "sources": [
+            "b17-914",
+            "b17-tigers",
+            "b17-africa",
+            "b17-park-directory"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed gorilla from the stem. Africa/Pangani distinguish this trail from the Asian tiger trail #915, so both animal-area facts remain separate."
+      }
+    },
+    {
+      "questionId": 915,
+      "hash": "1015d972c97910a17e2f864a8794d2b8860872d4185efb1a5f52e3af2355d08e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "General wildlife walking does not suffice: the conjunction of Asia and tiger habitats fixes Maharajah. This does not duplicate #914's Pangani Forest identification.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Maharajah Jungle Trek is a self-guided Anandapur forest trail featuring Asian tigers.",
+        "sources": [
+          "b17-915",
+          "b17-gorillas",
+          "b17-africa",
+          "b17-park-directory"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Maharajah Jungle Trek is a self-guided Anandapur forest trail featuring Asian tigers.",
+          "sources": [
+            "b17-915",
+            "b17-gorillas",
+            "b17-africa",
+            "b17-park-directory"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gorilla Falls is the African Pangani Forest trail, not the tiger trail.",
+          "sources": [
+            "b17-915",
+            "b17-gorillas",
+            "b17-africa",
+            "b17-park-directory"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Discovery Island Trails is not the named Asian tiger trail.",
+          "sources": [
+            "b17-915",
+            "b17-gorillas",
+            "b17-africa",
+            "b17-park-directory"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wild Africa Trek is an African experience, not the Anandapur tiger trail.",
+          "sources": [
+            "b17-915",
+            "b17-gorillas",
+            "b17-africa",
+            "b17-park-directory"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "General wildlife walking does not suffice: the conjunction of Asia and tiger habitats fixes Maharajah. This does not duplicate #914's Pangani Forest identification."
+      }
+    },
+    {
+      "questionId": 916,
+      "hash": "b66bc72f563b1fbdf8e0c670fa9eda67fbe311a45acd5b7630479ef17c01e24c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Autopia also permits driving, but at Disneyland; Test Track is at EPCOT and Racers at California Adventure. Removed Tomorrowland from the stem to avoid giving away the name.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Tomorrowland Speedway lets Magic Kingdom guests steer miniature gas-powered race cars.",
+        "sources": [
+          "b17-916"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Tomorrowland Speedway lets Magic Kingdom guests steer miniature gas-powered race cars.",
+          "sources": [
+            "b17-916"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Autopia is not the named Magic Kingdom attraction.",
+          "sources": [
+            "b17-916"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Test Track is not the named Magic Kingdom attraction.",
+          "sources": [
+            "b17-916"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Radiator Springs Racers is not the named Magic Kingdom attraction.",
+          "sources": [
+            "b17-916"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Autopia also permits driving, but at Disneyland; Test Track is at EPCOT and Racers at California Adventure. Removed Tomorrowland from the stem to avoid giving away the name."
+      }
+    },
+    {
+      "questionId": 917,
+      "hash": "721ab1956cf2f27afea0bda12575ccbd63ea96f4b2410eb4d5a1d43e70530318",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "The former question said carousel with only one carousel option. The final asks the documented manufacturer/year provenance, without inventing an origin story for the other rides.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Prince Charming Regal Carrousel was built in 1917 by the Philadelphia Toboggan Company, before coming to Magic Kingdom.",
+        "sources": [
+          "b17-917"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Prince Charming Regal Carrousel was built in 1917 by the Philadelphia Toboggan Company, before coming to Magic Kingdom.",
+          "sources": [
+            "b17-917"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mad Tea Party is not the historic Philadelphia Toboggan Company attraction identified here.",
+          "sources": [
+            "b17-917"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dumbo the Flying Elephant is not that historic attraction.",
+          "sources": [
+            "b17-917"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Astro Orbiter is not that historic attraction.",
+          "sources": [
+            "b17-917"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The former question said carousel with only one carousel option. The final asks the documented manufacturer/year provenance, without inventing an origin story for the other rides."
+      }
+    },
+    {
+      "questionId": 918,
+      "hash": "5db1621247c0badd1fc942e9ae0e403d457f6cd7121039b4c1e9d23abd24ecf0",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Original Richard F. Irvine distractor was an earlier name for the same vessel, and present tense ignored closure. The final asks specifically for the 1996 new name; all four options are vessel names.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Richard F. Irvine riverboat was renamed Liberty Belle after its 1996 refurbishment.",
+        "sources": [
+          "b17-918",
+          "b17-fowler",
+          "b17-irvine",
+          "b17-mark"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Richard F. Irvine riverboat was renamed Liberty Belle after its 1996 refurbishment.",
+          "sources": [
+            "b17-918",
+            "b17-fowler",
+            "b17-irvine",
+            "b17-mark"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mark Twain is the Disneyland vessel, not the 1996 replacement name.",
+          "sources": [
+            "b17-918",
+            "b17-fowler",
+            "b17-irvine",
+            "b17-mark"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Admiral Joe Fowler was a different Magic Kingdom riverboat, retired in 1980.",
+          "sources": [
+            "b17-918",
+            "b17-fowler",
+            "b17-irvine",
+            "b17-mark"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Molly Brown is not the recorded replacement name for Richard F. Irvine.",
+          "sources": [
+            "b17-918",
+            "b17-fowler",
+            "b17-irvine",
+            "b17-mark"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Original Richard F. Irvine distractor was an earlier name for the same vessel, and present tense ignored closure. The final asks specifically for the 1996 new name; all four options are vessel names."
+      }
+    },
+    {
+      "questionId": 919,
+      "hash": "9d8fcff2aa415243e7dbf11dd083c2a60bb08807703a283676aea22d6e8aee05",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Scoped to Magic Kingdom rather than every international Mansion variant. The Portuguese official page retains the English proper name Doom Buggy; plural Doom Buggies names the vehicles.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Magic Kingdom's Haunted Mansion ride vehicle is called a Doom Buggy.",
+        "sources": [
+          "b17-919"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Magic Kingdom's Haunted Mansion ride vehicle is called a Doom Buggy.",
+          "sources": [
+            "b17-919"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ghost Coaches is not the identified vehicle name.",
+          "sources": [
+            "b17-919"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hauntmobiles is not the identified vehicle name.",
+          "sources": [
+            "b17-919"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Spirit Seats is not the identified vehicle name.",
+          "sources": [
+            "b17-919"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Scoped to Magic Kingdom rather than every international Mansion variant. The Portuguese official page retains the English proper name Doom Buggy; plural Doom Buggies names the vehicles."
+      }
+    },
+    {
+      "questionId": 922,
+      "hash": "91d79506a44c984e8c83315e410fb81cc7895d9ac3059502d64b535ff1d38151",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "The coaster's Himalayan story is consistent with Asia, but location is verified from the current park directory and historic map text rather than inferred from geography. #357 asks opening year and #1621 asks a cruise deployment continent.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The official Animal Kingdom park directory places Expedition Everest in Asia.",
+        "sources": [
+          "b17-922",
+          "b17-park-directory"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The official Animal Kingdom park directory places Expedition Everest in Asia.",
+          "sources": [
+            "b17-922",
+            "b17-park-directory"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Africa is a different mapped land, not Everest's location.",
+          "sources": [
+            "b17-922",
+            "b17-park-directory"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "DinoLand U.S.A. is a different mapped land, not Everest's location.",
+          "sources": [
+            "b17-922",
+            "b17-park-directory"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Discovery Island is a different mapped land, not Everest's location.",
+          "sources": [
+            "b17-922",
+            "b17-park-directory"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The coaster's Himalayan story is consistent with Asia, but location is verified from the current park directory and historic map text rather than inferred from geography. #357 asks opening year and #1621 asks a cruise deployment continent."
+      }
+    },
+    {
+      "questionId": 923,
+      "hash": "3f4f6ab335fbee0a0db5d2ffce86df89350a7de7d33a442ae46cf5e14462b075",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Tom Sawyer Island once had structures to explore, but the wreck-salvaged elevated dwelling specifically identifies the Robinson attraction. Removed Swiss/chalet/treehouse words from the stem.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Swiss Family Treehouse lets guests climb into open-air living quarters furnished from salvaged shipwreck articles.",
+        "sources": [
+          "b17-923"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Swiss Family Treehouse lets guests climb into open-air living quarters furnished from salvaged shipwreck articles.",
+          "sources": [
+            "b17-923"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tom Sawyer Island is not the identified elevated Robinson home.",
+          "sources": [
+            "b17-923"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Many Adventures of Winnie the Pooh is not this walk-through home.",
+          "sources": [
+            "b17-923"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Country Bear Musical Jamboree is not this walk-through home.",
+          "sources": [
+            "b17-923"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tom Sawyer Island once had structures to explore, but the wreck-salvaged elevated dwelling specifically identifies the Robinson attraction. Removed Swiss/chalet/treehouse words from the stem."
+      }
+    },
+    {
+      "questionId": 924,
+      "hash": "28f2d7acb567102e7ec2c7c85bbfdbcf96b917439f39d0fbe5ec4b71d07b8013",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Car Toon is part of the ride's title, not an explicit statement of the land. #1168 asks Toontown's debut year/design history, which does not establish Roger Rabbit's location.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Roger Rabbit's Car Toon Spin is in Mickey's Toontown.",
+        "sources": [
+          "b17-924"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Roger Rabbit's Car Toon Spin is in Mickey's Toontown.",
+          "sources": [
+            "b17-924"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fantasyland is not the location named for this attraction.",
+          "sources": [
+            "b17-924"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tomorrowland is not the location named for this attraction.",
+          "sources": [
+            "b17-924"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "New Orleans Square is not the location named for this attraction.",
+          "sources": [
+            "b17-924"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Car Toon is part of the ride's title, not an explicit statement of the land. #1168 asks Toontown's debut year/design history, which does not establish Roger Rabbit's location."
+      }
+    },
+    {
+      "questionId": 925,
+      "hash": "2cdd8454b1f658b99a3c527dbda5ea01cd6df77b9c82586cedbea2d64611a9fb",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Columbia also circles the river, so paddle-wheel is essential. Standardized its official name. The other riverboats make the generic vessel wording insufficient to reveal the answer.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Mark Twain Riverboat is the paddle-wheel vessel touring Disneyland's Rivers of America.",
+        "sources": [
+          "b17-925",
+          "b17-fowler",
+          "b17-irvine",
+          "b17-mark"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Mark Twain Riverboat is the paddle-wheel vessel touring Disneyland's Rivers of America.",
+          "sources": [
+            "b17-925",
+            "b17-fowler",
+            "b17-irvine",
+            "b17-mark"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Liberty Belle is the renamed Magic Kingdom boat, not the Disneyland paddle-wheeler.",
+          "sources": [
+            "b17-925",
+            "b17-fowler",
+            "b17-irvine",
+            "b17-mark"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sailing Ship Columbia shares the river route but is a sailing ship, not the paddle-wheeler.",
+          "sources": [
+            "b17-925",
+            "b17-fowler",
+            "b17-irvine",
+            "b17-mark"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Admiral Joe Fowler was a Magic Kingdom vessel, not this Disneyland boat.",
+          "sources": [
+            "b17-925",
+            "b17-fowler",
+            "b17-irvine",
+            "b17-mark"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Columbia also circles the river, so paddle-wheel is essential. Standardized its official name. The other riverboats make the generic vessel wording insufficient to reveal the answer."
+      }
+    },
+    {
+      "questionId": 926,
+      "hash": "21c685bc2ecc3f993270efcd4bb3ec1b7e9be79202707eb6b3d11ee5a7cdaa81",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinguished Walt's birthday from Disneyland, Florida and Mickey anniversary dates. Exact full date excludes the three other days; #118 tests the city.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Walt Disney was born December 5, 1901.",
+        "sources": [
+          "b17-926"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Walt Disney was born December 5, 1901.",
+          "sources": [
+            "b17-926"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "July 17 is not his documented birth date.",
+          "sources": [
+            "b17-926"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "October 1 is not his documented birth date.",
+          "sources": [
+            "b17-926"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "November 18 is not his documented birth date.",
+          "sources": [
+            "b17-926"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished Walt's birthday from Disneyland, Florida and Mickey anniversary dates. Exact full date excludes the three other days; #118 tests the city."
+      }
+    },
+    {
+      "questionId": 927,
+      "hash": "4e2db7320e56f23aac2444c495ae1709744a5cba0db162074c398e621bdd9ea9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Walt's middle name Elias does not itself prove fatherhood; the entry explicitly names the relationship. #928 asks the other parent, a separate fact.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Elias Disney was Walt Disney's father.",
+        "sources": [
+          "b17-927"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Elias Disney was Walt Disney's father.",
+          "sources": [
+            "b17-927"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Roy is not the father identified in this family record.",
+          "sources": [
+            "b17-927"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Herbert is not the father identified in this family record.",
+          "sources": [
+            "b17-927"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Raymond is not the father identified in this family record.",
+          "sources": [
+            "b17-927"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Walt's middle name Elias does not itself prove fatherhood; the entry explicitly names the relationship. #928 asks the other parent, a separate fact."
+      }
+    },
+    {
+      "questionId": 928,
+      "hash": "8152a8169dc35863c039195feaae46811a9abd802be9461b57aca998b382784e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinguished maternal parentage from other Disney women; the source identifies both mother and wife. The father question does not establish the mother's name.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Flora Call Disney was Walt's mother.",
+        "sources": [
+          "b17-928"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Flora Call Disney was Walt's mother.",
+          "sources": [
+            "b17-928"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lillian was Walt's wife, not his mother.",
+          "sources": [
+            "b17-928"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ruth is not the mother identified in the parentage record.",
+          "sources": [
+            "b17-928"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Edna is not the mother identified in the parentage record.",
+          "sources": [
+            "b17-928"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished maternal parentage from other Disney women; the source identifies both mother and wife. The father question does not establish the mother's name."
+      }
+    },
+    {
+      "questionId": 929,
+      "hash": "8c6ab7c61a510c517c40e8db141c138eab417efd3e890f5366b11c437d599f67",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Original options repeated Lillian and answered a surname question with full names. Final options are parallel surnames; #1372 tests first name and #1180 marriage year.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Walt married Lillian Bounds; Bounds was her maiden surname.",
+        "sources": [
+          "b17-929"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Walt married Lillian Bounds; Bounds was her maiden surname.",
+          "sources": [
+            "b17-929"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Miller is not Lillian's maiden surname in the marriage record.",
+          "sources": [
+            "b17-929"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Smith is not Lillian's maiden surname in the marriage record.",
+          "sources": [
+            "b17-929"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Taylor is not Lillian's maiden surname in the marriage record.",
+          "sources": [
+            "b17-929"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Original options repeated Lillian and answered a surname question with full names. Final options are parallel surnames; #1372 tests first name and #1180 marriage year."
+      }
+    },
+    {
+      "questionId": 930,
+      "hash": "d1ad34fccd49f560b507975f94c7002c45ef8f81f597bd85068660b692b40311",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Production, public preview and sound release order differ. The museum corroborates Plane Crazy then Gaucho then Willie; the final wording asks production, not the first sound release.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Plane Crazy was the first Mickey Mouse cartoon made, before Steamboat Willie's release.",
+        "sources": [
+          "b17-930",
+          "b17-mouse"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Plane Crazy was the first Mickey Mouse cartoon made, before Steamboat Willie's release.",
+          "sources": [
+            "b17-930",
+            "b17-mouse"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Band Concert cannot be the first-produced Mickey cartoon because the source assigns that unique place to Plane Crazy.",
+          "sources": [
+            "b17-930",
+            "b17-mouse"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mickey's Follies cannot occupy that unique first-production place.",
+          "sources": [
+            "b17-930",
+            "b17-mouse"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Karnival Kid cannot occupy that unique first-production place.",
+          "sources": [
+            "b17-930",
+            "b17-mouse"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Production, public preview and sound release order differ. The museum corroborates Plane Crazy then Gaucho then Willie; the final wording asks production, not the first sound release."
+      }
+    },
+    {
+      "questionId": 931,
+      "hash": "1a403398349447f4ac922bdda81c34bcfe1dab3a1b15c303d5cd98de12b14073",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "The museum independently gives the first-three production sequence. The later sound release of Gaucho does not move its original production after Willie.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Gallopin' Gaucho was the second Mickey cartoon produced, between Plane Crazy and Steamboat Willie.",
+        "sources": [
+          "b17-931",
+          "b17-mouse"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Gallopin' Gaucho was the second Mickey cartoon produced, between Plane Crazy and Steamboat Willie.",
+          "sources": [
+            "b17-931",
+            "b17-mouse"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Opry House is not the uniquely identified second-produced cartoon.",
+          "sources": [
+            "b17-931",
+            "b17-mouse"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Barn Dance is not the uniquely identified second-produced cartoon.",
+          "sources": [
+            "b17-931",
+            "b17-mouse"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Chain Gang is not the uniquely identified second-produced cartoon.",
+          "sources": [
+            "b17-931",
+            "b17-mouse"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The museum independently gives the first-three production sequence. The later sound release of Gaucho does not move its original production after Willie."
+      }
+    },
+    {
+      "questionId": 932,
+      "hash": "c76f691f55295a4f319dcd83306672bb25481e067ea844cfb76f6d1e8dc064c8",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "First Silly Symphony is distinct from first Technicolor cartoon, first Oscar and first multiplane film. The museum history corroborates the first-title attribution.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Skeleton Dance was the first Silly Symphony.",
+        "sources": [
+          "b17-932",
+          "b17-flowers",
+          "b17-mill",
+          "b17-pigs",
+          "b17-docs"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Skeleton Dance was the first Silly Symphony.",
+          "sources": [
+            "b17-932",
+            "b17-flowers",
+            "b17-mill",
+            "b17-pigs",
+            "b17-docs"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Flowers and Trees was released in 1932, after the 1929 first.",
+          "sources": [
+            "b17-932",
+            "b17-flowers",
+            "b17-mill",
+            "b17-pigs",
+            "b17-docs"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Old Mill was released in 1937, after the 1929 first.",
+          "sources": [
+            "b17-932",
+            "b17-flowers",
+            "b17-mill",
+            "b17-pigs",
+            "b17-docs"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Three Little Pigs was released in 1933, after the 1929 first.",
+          "sources": [
+            "b17-932",
+            "b17-flowers",
+            "b17-mill",
+            "b17-pigs",
+            "b17-docs"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "First Silly Symphony is distinct from first Technicolor cartoon, first Oscar and first multiplane film. The museum history corroborates the first-title attribution."
+      }
+    },
+    {
+      "questionId": 933,
+      "hash": "da2aba20643b34df5427ae1c1a377f843cc1c6b71bd04928be9418992291669a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Later ensemble appearances also feature Donald; appearance is not debut. Removed the series-label clue since the three distractors are Mickey shorts. Disney's Donald character entry corroborates the debut.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Donald Duck debuted in The Wise Little Hen in June 1934.",
+        "sources": [
+          "b17-933",
+          "b17-donald"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Donald Duck debuted in The Wise Little Hen in June 1934.",
+          "sources": [
+            "b17-933",
+            "b17-donald"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Orphan's Benefit is not his initial debut; Disney assigns that distinction to Wise Little Hen.",
+          "sources": [
+            "b17-933",
+            "b17-donald"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Band Concert is not his initial debut.",
+          "sources": [
+            "b17-933",
+            "b17-donald"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mickey's Service Station is not his initial debut.",
+          "sources": [
+            "b17-933",
+            "b17-donald"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Later ensemble appearances also feature Donald; appearance is not debut. Removed the series-label clue since the three distractors are Mickey shorts. Disney's Donald character entry corroborates the debut."
+      }
+    },
+    {
+      "questionId": 934,
+      "hash": "952fb0aff1ba708d54fe91cb650b7db43c59dd87fd2ceef0b2ef683e1d7d225b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "The museum distinguishes grunts/squeaks from actual dialogue. D23's Karnival Kid entry independently identifies the first-speaking short.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Mickey speaks his first dialogue, Hot dogs, as a vendor in The Karnival Kid.",
+        "sources": [
+          "b17-934",
+          "b17-karnival"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Mickey speaks his first dialogue, Hot dogs, as a vendor in The Karnival Kid.",
+          "sources": [
+            "b17-934",
+            "b17-karnival"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Steamboat Willie has earlier sounds but not his first spoken dialogue.",
+          "sources": [
+            "b17-934",
+            "b17-karnival"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Plane Crazy is earlier and does not contain his first spoken dialogue.",
+          "sources": [
+            "b17-934",
+            "b17-karnival"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Gallopin' Gaucho is earlier and does not contain his first spoken dialogue.",
+          "sources": [
+            "b17-934",
+            "b17-karnival"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The museum distinguishes grunts/squeaks from actual dialogue. D23's Karnival Kid entry independently identifies the first-speaking short."
+      }
+    },
+    {
+      "questionId": 935,
+      "hash": "6ede043800ab2dc8a825379bf763b6581599852b2ccca5ae2832bf2de0c8ce48",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "The long answer is the real film title, not an explanatory sentence. The film list corroborates years; song placements #991/#1241 and first-feature #119 require different facts.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Snow White and the Seven Dwarfs premiered at Carthay Circle Theatre in 1937.",
+        "sources": [
+          "b17-935",
+          "b17-animation"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Snow White and the Seven Dwarfs premiered at Carthay Circle Theatre in 1937.",
+          "sources": [
+            "b17-935",
+            "b17-animation"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pinocchio premiered in 1940, not at the named 1937 event.",
+          "sources": [
+            "b17-935",
+            "b17-animation"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fantasia was released in 1940, not at the named 1937 event.",
+          "sources": [
+            "b17-935",
+            "b17-animation"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bambi premiered in 1942, not at the named 1937 event.",
+          "sources": [
+            "b17-935",
+            "b17-animation"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The long answer is the real film title, not an explanatory sentence. The film list corroborates years; song placements #991/#1241 and first-feature #119 require different facts."
+      }
+    },
+    {
+      "questionId": 937,
+      "hash": "edd57a3d3c6f2e49e35f4d8ed8535ee520a7115ab6c779981810a6c47df26b9f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "The Library of Congress corroborates Fantasound. Removed Fantasia from the stem to avoid echoing the coined answer; #939 reverses the same film/system fact and is retired.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Fantasound was the stereophonic system created for Fantasia, Disney's 1940 concert feature.",
+        "sources": [
+          "b17-937",
+          "b17-fantasound",
+          "b17-lady"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Fantasound was the stereophonic system created for Fantasia, Disney's 1940 concert feature.",
+          "sources": [
+            "b17-937",
+            "b17-fantasound",
+            "b17-lady"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "CinemaScope is not the system Disney identifies for this film; it is the later widescreen process associated with Lady and the Tramp.",
+          "sources": [
+            "b17-937",
+            "b17-fantasound",
+            "b17-lady"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sensurround is not the named Fantasia sound system.",
+          "sources": [
+            "b17-937",
+            "b17-fantasound",
+            "b17-lady"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cinerama is not the named Fantasia sound system.",
+          "sources": [
+            "b17-937",
+            "b17-fantasound",
+            "b17-lady"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The Library of Congress corroborates Fantasound. Removed Fantasia from the stem to avoid echoing the coined answer; #939 reverses the same film/system fact and is retired."
+      }
+    },
+    {
+      "questionId": 938,
+      "hash": "624935a83078779bb5d406a330d9d5c148670ca2964d754fa5baf27609b54201",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Two films share 1940; ordering, not year alone, selects Pinocchio. #1199 tests its Oscars and #993 a song, not its production position.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pinocchio follows Snow White in Disney's animated-feature chronology.",
+        "sources": [
+          "b17-938",
+          "b17-animation"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Pinocchio follows Snow White in Disney's animated-feature chronology.",
+          "sources": [
+            "b17-938",
+            "b17-animation"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Fantasia follows Pinocchio within 1940, so is not second.",
+          "sources": [
+            "b17-938",
+            "b17-animation"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Dumbo follows in 1941, so is not second.",
+          "sources": [
+            "b17-938",
+            "b17-animation"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Bambi follows in 1942, so is not second.",
+          "sources": [
+            "b17-938",
+            "b17-animation"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Two films share 1940; ordering, not year alone, selects Pinocchio. #1199 tests its Oscars and #993 a song, not its production position."
+      }
+    },
+    {
+      "questionId": 940,
+      "hash": "5bdfa7c1f06ef4129b28d08b537375e30953bdfc8126594bdfc716101e090710",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "The source supports fast economical production and financial benefit; it is not a claim that Dumbo alone permanently solved every studio financial problem. #2262 asks strike production context.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Dumbo moved quickly through animation at relatively low cost after Pinocchio and Fantasia, and made a welcome profit.",
+        "sources": [
+          "b17-940",
+          "b17-animation"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Dumbo moved quickly through animation at relatively low cost after Pinocchio and Fantasia, and made a welcome profit.",
+          "sources": [
+            "b17-940",
+            "b17-animation"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bambi is listed in 1942, not the 1941 release in the question.",
+          "sources": [
+            "b17-940",
+            "b17-animation"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fantasia is one of the preceding expensive 1940 films, not this economical 1941 release.",
+          "sources": [
+            "b17-940",
+            "b17-animation"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Three Caballeros is a 1944/45 release, not the 1941 film.",
+          "sources": [
+            "b17-940",
+            "b17-animation"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The source supports fast economical production and financial benefit; it is not a claim that Dumbo alone permanently solved every studio financial problem. #2262 asks strike production context."
+      }
+    },
+    {
+      "questionId": 941,
+      "hash": "dcea101e5f4ac7a3312b6d6e68210a73c5a1f5389d664062dbdfc0fa490063e0",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Knowing Bambi is a deer in #4 does not establish the novel's author or adaptation history. Original theatrical feature is intended, not Bambi II.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Bambi was released in 1942 and based on Felix Salten's book about the fawn.",
+        "sources": [
+          "b17-941",
+          "b17-animation"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Bambi was released in 1942 and based on Felix Salten's book about the fawn.",
+          "sources": [
+            "b17-941",
+            "b17-animation"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dumbo is the elephant story released in 1941, not this Salten adaptation.",
+          "sources": [
+            "b17-941",
+            "b17-animation"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Reluctant Dragon is not the identified 1942 Salten adaptation.",
+          "sources": [
+            "b17-941",
+            "b17-animation"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Make Mine Music is the 1946 musical anthology, not this adaptation.",
+          "sources": [
+            "b17-941",
+            "b17-animation"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Knowing Bambi is a deer in #4 does not establish the novel's author or adaptation history. Original theatrical feature is intended, not Bambi II."
+      }
+    },
+    {
+      "questionId": 942,
+      "hash": "08810cccce630995210751e60ed808ac9a7666e767470d89674cd2756d74f91f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Jose and Donald also appear in Saludos Amigos, so Panchito is essential. The December 1944 Mexico premiere and February 1945 US release both fit wartime; #2632 tests a park ride cast.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Three Caballeros brings Donald, Jose Carioca and Panchito together in Latin American sequences.",
+        "sources": [
+          "b17-942",
+          "b17-music"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Three Caballeros brings Donald, Jose Carioca and Panchito together in Latin American sequences.",
+          "sources": [
+            "b17-942",
+            "b17-music"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Saludos Amigos precedes this film and does not introduce the complete named trio together.",
+          "sources": [
+            "b17-942",
+            "b17-music"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Make Mine Music is the musical-segment anthology, not this trio's Latin American feature.",
+          "sources": [
+            "b17-942",
+            "b17-music"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fun and Fancy Free frames Bongo and Mickey and the Beanstalk, not this trio's feature.",
+          "sources": [
+            "b17-942",
+            "b17-music"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Jose and Donald also appear in Saludos Amigos, so Panchito is essential. The December 1944 Mexico premiere and February 1945 US release both fit wartime; #2632 tests a park ride cast."
+      }
+    },
+    {
+      "questionId": 943,
+      "hash": "f00c1ead13e25f4c78ce9f90020c5f7588b3cdb690ee219a7b46bde8839fa34d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Package-film membership alone is not enough; the specific pair fixes the answer. Removed the release-year shortcut. #2384 tests the Beanstalk narrator, a separate production credit.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Fun and Fancy Free combines Bongo with Mickey and the Beanstalk.",
+        "sources": [
+          "b17-943",
+          "b17-melody",
+          "b17-music",
+          "b17-ichabod"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Fun and Fancy Free combines Bongo with Mickey and the Beanstalk.",
+          "sources": [
+            "b17-943",
+            "b17-melody",
+            "b17-music",
+            "b17-ichabod"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Melody Time's complete seven-segment list contains neither of this pair.",
+          "sources": [
+            "b17-melody"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Make Mine Music's complete ten-segment list contains neither of this pair.",
+          "sources": [
+            "b17-music"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "The Adventures of Ichabod and Mr. Toad combines Wind in the Willows with Legend of Sleepy Hollow.",
+          "sources": [
+            "b17-ichabod"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Package-film membership alone is not enough; the specific pair fixes the answer. Removed the release-year shortcut. #2384 tests the Beanstalk narrator, a separate production credit."
+      }
+    },
+    {
+      "questionId": 945,
+      "hash": "9d2eb5d9fbcf90005187c4bd78a0e5dd198cc0305a82a6e79129825fc3d9485d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "1949 means ceremony year, not original qualifying release year. D23 gives Seal Island's December 1948 qualifying run; the Academy category is authoritative over D23's loose documentary label.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Seal Island won the 1949 two-reel short Oscar credited to Walt Disney, Producer.",
+        "sources": [
+          "b17-945",
+          "b17-beaver",
+          "b17-desert",
+          "b17-docs"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Seal Island won the 1949 two-reel short Oscar credited to Walt Disney, Producer.",
+          "sources": [
+            "b17-945",
+            "b17-beaver",
+            "b17-desert",
+            "b17-docs"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Beaver Valley was released in 1950 and cannot be this 1949 winner.",
+          "sources": [
+            "b17-945",
+            "b17-beaver",
+            "b17-desert",
+            "b17-docs"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Living Desert was released in 1953 and cannot be this 1949 winner.",
+          "sources": [
+            "b17-945",
+            "b17-beaver",
+            "b17-desert",
+            "b17-docs"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "White Wilderness was released in 1958 and cannot be this 1949 winner.",
+          "sources": [
+            "b17-945",
+            "b17-beaver",
+            "b17-desert",
+            "b17-docs"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "1949 means ceremony year, not original qualifying release year. D23 gives Seal Island's December 1948 qualifying run; the Academy category is authoritative over D23's loose documentary label."
+      }
+    },
+    {
+      "questionId": 946,
+      "hash": "4084fbc774fbe30e646d0fa4116bc9d919b6f6b1589b515de0373b009566c3d7",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Series first and feature-length first differ: Seal Island began the series but is short. The museum's documentary history corroborates the first-feature distinction.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Living Desert was the first feature-length True-Life Adventure in 1953.",
+        "sources": [
+          "b17-946",
+          "b17-docs"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Living Desert was the first feature-length True-Life Adventure in 1953.",
+          "sources": [
+            "b17-946",
+            "b17-docs"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Seal Island was a 27-minute featurette, not the first full-length feature.",
+          "sources": [
+            "b17-946",
+            "b17-docs"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Vanishing Prairie was the next feature in 1954, after Living Desert.",
+          "sources": [
+            "b17-946",
+            "b17-docs"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "White Wilderness was a later feature in 1958, after Living Desert.",
+          "sources": [
+            "b17-946",
+            "b17-docs"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Series first and feature-length first differ: Seal Island began the series but is short. The museum's documentary history corroborates the first-feature distinction."
+      }
+    },
+    {
+      "questionId": 947,
+      "hash": "5eb7b7c67b1f5ab5cbc64bdda5b0450e6c865f6d57b8f68d096753a6a05271cb",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Earlier Alice Comedies mixed live action and animation; removed an unnecessary first claim. #317 tests an attraction's vehicle design rather than literary source.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Alice in Wonderland is Disney's 1951 animated adaptation of Lewis Carroll.",
+        "sources": [
+          "b17-947",
+          "b17-animation",
+          "b17-peter",
+          "b17-ichabod"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Alice in Wonderland is Disney's 1951 animated adaptation of Lewis Carroll.",
+          "sources": [
+            "b17-947",
+            "b17-animation",
+            "b17-peter",
+            "b17-ichabod"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Peter Pan is the 1953 Barrie adaptation, not the 1951 Carroll film.",
+          "sources": [
+            "b17-947",
+            "b17-animation",
+            "b17-peter",
+            "b17-ichabod"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cinderella was released in 1950, not the 1951 Carroll film.",
+          "sources": [
+            "b17-947",
+            "b17-animation",
+            "b17-peter",
+            "b17-ichabod"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Adventures of Ichabod and Mr. Toad was released in 1949 and adapts Grahame/Irving, not Carroll.",
+          "sources": [
+            "b17-947",
+            "b17-animation",
+            "b17-peter",
+            "b17-ichabod"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Earlier Alice Comedies mixed live action and animation; removed an unnecessary first claim. #317 tests an attraction's vehicle design rather than literary source."
+      }
+    },
+    {
+      "questionId": 948,
+      "hash": "0b8cb531fb8e3bae395a4b5eda47b6c5a3ff60901ba54aa3b0427206ecec6964",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Barrie also wrote a novel, but the question's play attribution is supported by the rights account. #996 tests a song and #2242 a themed-area inspiration.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Peter Pan was released in 1953 and based on the J. M. Barrie play.",
+        "sources": [
+          "b17-948",
+          "b17-animation",
+          "b17-peter"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Peter Pan was released in 1953 and based on the J. M. Barrie play.",
+          "sources": [
+            "b17-948",
+            "b17-animation",
+            "b17-peter"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Alice in Wonderland is the 1951 Carroll adaptation, not this Barrie film.",
+          "sources": [
+            "b17-948",
+            "b17-animation",
+            "b17-peter"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cinderella is a 1950 film, not this 1953 Barrie adaptation.",
+          "sources": [
+            "b17-948",
+            "b17-animation",
+            "b17-peter"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lady and the Tramp is a 1955 film, not this 1953 Barrie adaptation.",
+          "sources": [
+            "b17-948",
+            "b17-animation",
+            "b17-peter"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Barrie also wrote a novel, but the question's play attribution is supported by the rights account. #996 tests a song and #2242 a themed-area inspiration."
+      }
+    },
+    {
+      "questionId": 949,
+      "hash": "4d180f09ea3ba5e12c652a4ff4bd73c5e9025896d72238aba2abb8973e64f39f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Widescreen alone does not identify CinemaScope. Museum production history independently corroborates Lady's first use; final wording specifies animated, avoiding live-action 20,000 Leagues.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Lady and the Tramp was Disney's first animated feature filmed in CinemaScope.",
+        "sources": [
+          "b17-949",
+          "b17-animation",
+          "b17-sleep",
+          "b17-lady-museum"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Lady and the Tramp was Disney's first animated feature filmed in CinemaScope.",
+          "sources": [
+            "b17-949",
+            "b17-animation",
+            "b17-sleep",
+            "b17-lady-museum"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sleeping Beauty came later and used Technirama 70, a different process.",
+          "sources": [
+            "b17-949",
+            "b17-animation",
+            "b17-sleep",
+            "b17-lady-museum"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Peter Pan preceded Lady but was not the first CinemaScope animated feature.",
+          "sources": [
+            "b17-949",
+            "b17-animation",
+            "b17-sleep",
+            "b17-lady-museum"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "101 Dalmatians came later, not first.",
+          "sources": [
+            "b17-949",
+            "b17-animation",
+            "b17-sleep",
+            "b17-lady-museum"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Widescreen alone does not identify CinemaScope. Museum production history independently corroborates Lady's first use; final wording specifies animated, avoiding live-action 20,000 Leagues."
+      }
+    },
+    {
+      "questionId": 950,
+      "hash": "6f17af480e429f449500b5e7346a0ea2e435acc679f4ce631d7ae02df496762a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinguished the two widescreen processes. The wording does not claim the animation was photographed on 70mm negative; it identifies the Super Technirama 70 presentation process.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Sleeping Beauty is the 1959 Disney animated feature presented in Technirama 70.",
+        "sources": [
+          "b17-950",
+          "b17-animation",
+          "b17-lady"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Sleeping Beauty is the 1959 Disney animated feature presented in Technirama 70.",
+          "sources": [
+            "b17-950",
+            "b17-animation",
+            "b17-lady"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lady and the Tramp is the 1955 CinemaScope feature, not the named 1959 process.",
+          "sources": [
+            "b17-950",
+            "b17-animation",
+            "b17-lady"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "101 Dalmatians is the 1961 feature, not this 1959 film.",
+          "sources": [
+            "b17-950",
+            "b17-animation",
+            "b17-lady"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Sword in the Stone is the 1963 feature, not this 1959 film.",
+          "sources": [
+            "b17-950",
+            "b17-animation",
+            "b17-lady"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished the two widescreen processes. The wording does not claim the animation was photographed on 70mm negative; it identifies the Super Technirama 70 presentation process."
+      }
+    },
+    {
+      "questionId": 951,
+      "hash": "2e533c83112b1a9e8ace8789708f8495ca9fe642b8dd9e17e9b2c4934d7b3dbc",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Sleeping Beauty was a defensible distractor under introduced. Goliath II used it throughout but is a short, not a feature. Final wording narrows the precise first claim and D23 corroborates it.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "101 Dalmatians was the first feature to use xerography throughout for transferring animation drawings to cels.",
+        "sources": [
+          "b17-951",
+          "b17-dalmatians",
+          "b17-animation"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "101 Dalmatians was the first feature to use xerography throughout for transferring animation drawings to cels.",
+          "sources": [
+            "b17-951",
+            "b17-dalmatians",
+            "b17-animation"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Sleeping Beauty used the process only in a few test scenes, not throughout.",
+          "sources": [
+            "b17-951",
+            "b17-dalmatians",
+            "b17-animation"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Jungle Book is later than the 1961 first feature-wide use.",
+          "sources": [
+            "b17-951",
+            "b17-dalmatians",
+            "b17-animation"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Aristocats is later than the 1961 first feature-wide use.",
+          "sources": [
+            "b17-951",
+            "b17-dalmatians",
+            "b17-animation"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Sleeping Beauty was a defensible distractor under introduced. Goliath II used it throughout but is a short, not a feature. Final wording narrows the precise first claim and D23 corroborates it."
+      }
+    },
+    {
+      "questionId": 952,
+      "hash": "c761333097f089972425e3f39ae5f2e9a5619a5860e8bdfcb544514c40541791",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Release is different from personally supervised: Walt worked on Jungle Book but did not live to its release. Removed the 1963 shortcut; theatrical reissues do not count as new features.",
+      "context": "Reviewed original theatrical-film history or the specifically named park, not television episodes, remakes or an assumed worldwide attraction configuration. Full parks/walt and matching film digests read; ranked comparisons and additional cross-bank relationships inspected.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Sword in the Stone (1963) was the last new Disney animated feature released before Walt's December 1966 death.",
+        "sources": [
+          "b17-952",
+          "b17-death",
+          "b17-animation"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Sword in the Stone (1963) was the last new Disney animated feature released before Walt's December 1966 death.",
+          "sources": [
+            "b17-952",
+            "b17-death",
+            "b17-animation"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Jungle Book was released in 1967, after his death.",
+          "sources": [
+            "b17-952",
+            "b17-death",
+            "b17-animation"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Aristocats was released in 1970, after his death.",
+          "sources": [
+            "b17-952",
+            "b17-death",
+            "b17-animation"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Robin Hood was released in 1973, after his death.",
+          "sources": [
+            "b17-952",
+            "b17-death",
+            "b17-animation"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Release is different from personally supervised: Walt worked on Jungle Book but did not live to its release. Removed the 1963 shortcut; theatrical reissues do not count as new features."
+      }
+    }
+  ]
+}

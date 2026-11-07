@@ -1,0 +1,2183 @@
+{
+  "schema": 1,
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "sourcesChecked": [
+    "b14-animator",
+    "b14-aristocats-date",
+    "b14-atlantis-cast",
+    "b14-australia",
+    "b14-bells",
+    "b14-bells-corroboration",
+    "b14-bird-show",
+    "b14-brave-cast",
+    "b14-brave-clans",
+    "b14-bug",
+    "b14-chicha-cast",
+    "b14-chicha-corroboration",
+    "b14-chicha-family",
+    "b14-court",
+    "b14-detective-date",
+    "b14-dory",
+    "b14-earle",
+    "b14-earth",
+    "b14-ember",
+    "b14-enchante",
+    "b14-falcon",
+    "b14-farm",
+    "b14-forever",
+    "b14-garden",
+    "b14-harmonious",
+    "b14-harp",
+    "b14-ichabod",
+    "b14-king-context",
+    "b14-king-song",
+    "b14-lavender",
+    "b14-lion-show",
+    "b14-luca",
+    "b14-lumiere",
+    "b14-luminous",
+    "b14-mineral",
+    "b14-mineral-history",
+    "b14-moana",
+    "b14-moana-voice",
+    "b14-mole",
+    "b14-mole-dvd",
+    "b14-nemo-show",
+    "b14-newyork-song",
+    "b14-oliver-date",
+    "b14-palace",
+    "b14-palo",
+    "b14-pepa",
+    "b14-phantom",
+    "b14-pirates",
+    "b14-remy",
+    "b14-rescuers-date",
+    "b14-small",
+    "b14-spork",
+    "b14-star-rides",
+    "b14-van",
+    "b14-willie",
+    "b14-world",
+    "b14-world-count"
+  ],
+  "reviews": [
+    {
+      "questionId": 776,
+      "hash": "4508c284c57a51769c7ebfe1dd8b5f1e71c291bb3ed45d02ffb8bdb766e58f7d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #338, which identifies the park, and #333, which identifies Canada's film; count is a new fact.",
+      "context": "EPCOT World Showcase, November 2026 snapshot; revisit the operational count within 90 days.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "National pavilions, rather than every festival booth or represented culture, are counted.",
+        "sources": [
+          "b14-world",
+          "b14-world-count"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The complete D23 list counts eleven national pavilions, independently confirmed by Parks Blog.",
+          "sources": [
+            "b14-world",
+            "b14-world-count"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Eight omits three of the eleven listed national pavilions.",
+          "sources": [
+            "b14-world",
+            "b14-world-count"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Twelve adds a national pavilion absent from the complete eleven-country list.",
+          "sources": [
+            "b14-world",
+            "b14-world-count"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Fifteen exceeds the complete country list by four.",
+          "sources": [
+            "b14-world",
+            "b14-world-count"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Counted the national list, including the United States once as The American Adventure; festival marketplaces do not create additional national pavilions. All three alternative counts contradict both sources."
+      }
+    },
+    {
+      "questionId": 778,
+      "hash": "fd784532cb79db3739733c6844e1ffb30206bcfb088b00a80350c54a7e2eb55e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read #1467, #2227, #2228 and #2230: battle setting, Hondo's business, third crew station and Star Tours update each add a different fact.",
+      "context": "Galaxy's Edge attraction identity as checked November 2026; no TV plot knowledge is required.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The freighter attraction gives guests actual pilot controls, unlike the other listed experiences.",
+        "sources": [
+          "b14-falcon",
+          "b14-star-rides"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney identifies Smugglers Run as the interactive Millennium Falcon cockpit flight.",
+          "sources": [
+            "b14-falcon",
+            "b14-star-rides"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Rise of the Resistance takes guests through a Resistance transport and captured Star Destroyer; it is not the Falcon pilot attraction.",
+          "sources": [
+            "b14-falcon",
+            "b14-star-rides"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Star Tours seats guests in a Starspeeder piloted by C-3PO; the park guide distinguishes that tour from the freighter cockpit ride.",
+          "sources": [
+            "b14-falcon",
+            "b14-star-rides"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Star Wars Hyperspace Mountain is a high-speed Paris coaster outside Galaxy's Edge, not this freighter simulator.",
+          "sources": [
+            "b14-falcon",
+            "b14-star-rides"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged the fact that all four involve space flight: the qualifying conditions are Galaxy's Edge and guests piloting the freighter, not merely participating in a Star Wars adventure. Removed repeated answer-title words and the invented fourth ride."
+      }
+    },
+    {
+      "questionId": 779,
+      "hash": "8a17d823bacd9ae48c3eff2f741d0abba828b61bc01f2b80d534a06aae35c841",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from #90 ride identity, #692 fair sponsor and #167 song origin: this asks the Florida land.",
+      "context": "Magic Kingdom attraction location; recheck within 90 days.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The question fixes Magic Kingdom rather than another international installation.",
+        "sources": [
+          "b14-small"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney's attraction location explicitly says Fantasyland at Magic Kingdom.",
+          "sources": [
+            "b14-small"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Adventureland is a different land; the location is Fantasyland.",
+          "sources": [
+            "b14-small"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Liberty Square is a different land; the location is Fantasyland.",
+          "sources": [
+            "b14-small"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tomorrowland is a different land; the location is Fantasyland.",
+          "sources": [
+            "b14-small"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the park carefully: the evidence is the Magic Kingdom page, not Tokyo or California. Exactly one of the four disjoint lands matches its location."
+      }
+    },
+    {
+      "questionId": 781,
+      "hash": "d4aa8b5bc3377ceb6365ae9d3ad4538b312bd0f03d8919b8801377f2ad10ee8e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all Luca context: #1043 asks the race name and #2440 asks real-world inspiration. Those require additional race or production facts.",
+      "context": "Luca (2021), fictional town, not a travel question.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar names the fictional Italian seaside setting rather than merely a source of visual inspiration.",
+        "sources": [
+          "b14-luca"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The World section explicitly identifies fictional Portorosso.",
+          "sources": [
+            "b14-luca"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cinque Terre is the real region inspiring the setting, not the fictional town's name.",
+          "sources": [
+            "b14-luca"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Positano is not the town name Pixar assigns to the setting; the unique fictional name is Portorosso.",
+          "sources": [
+            "b14-luca"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Portofino is not Pixar's fictional town name; similar Italian naming does not make it the answer.",
+          "sources": [
+            "b14-luca"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tested inspiration versus setting: Cinque Terre cannot fit the word fictional. None of the alternate spellings/place names is an alias for the uniquely named Portorosso."
+      }
+    },
+    {
+      "questionId": 783,
+      "hash": "7b918bf0f7edba302d733f873f2e410853fe62c2264e5b9e9459395786399b97",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Other Elemental questions ask parents, shop, element city and work; this is the lead's identity. Calibrated this basic protagonist recall to easy.",
+      "context": "Elemental (2023), character identity.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The young Fire protagonist is distinguished from the older family members.",
+        "sources": [
+          "b14-ember"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Pixar identifies Ember Lumen as the young Fire element central to the story.",
+          "sources": [
+            "b14-ember"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ash is not the protagonist's name; her uniquely stated name is Ember.",
+          "sources": [
+            "b14-ember"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cinder is Ember's mother, not the young protagonist.",
+          "sources": [
+            "b14-ember"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Flare is not the character name assigned to the protagonist.",
+          "sources": [
+            "b14-ember"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Cinder is a real Fire character and therefore a plausible distractor; the young protagonist wording excludes her. Fire-related meanings of Ash or Flare cannot substitute for Ember's stated identity."
+      }
+    },
+    {
+      "questionId": 784,
+      "hash": "78bd35842d87e25d70c3f091df49b8b08f3db62c98562a962d001be1b511b9d8",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from #174 species, #190 childhood location, #470 Bailey and #481 Destiny. Replaced overlapping and weak diagnostic distractors.",
+      "context": "Finding Dory (2016); fictional characterization, not a medical diagnosis.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The wording asks which challenge Pixar explicitly assigns to Dory, avoiding overlapping diagnoses.",
+        "sources": [
+          "b14-dory"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Pixar's Dory profile explicitly identifies short-term memory loss.",
+          "sources": [
+            "b14-dory"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "The synopsis assigns nearsightedness to Destiny; this is not the difficulty identified in Dory's profile.",
+          "sources": [
+            "b14-dory"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "The synopsis assigns the believed sonar problem to Bailey, not Dory.",
+          "sources": [
+            "b14-dory"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Camouflage is associated with Hank, who is adept at it; it is not the difficulty identified for Dory.",
+          "sources": [
+            "b14-dory"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The original amnesia option overlapped memory loss. Final alternatives are separately attributed traits and abilities; the question asks the stated Dory description, not whether she could ever encounter other problems."
+      }
+    },
+    {
+      "questionId": 786,
+      "hash": "91806221846ffe565d385193d36d292de277705c3668dacb433d54df16aad72d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Other Toy Story 4 entries ask Bo Peep, Gabby Gabby, Duke Caboom and carnival toys; none tests Forky's base material.",
+      "context": "Toy Story 4 (2019), the physical material used for Forky.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Bonnie's craft project is Forky, identified by Pixar as a spork.",
+        "sources": [
+          "b14-spork"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Forky profile directly calls him a spork turned into a craft project.",
+          "sources": [
+            "b14-spork"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A fork alone is not the specified hybrid utensil.",
+          "sources": [
+            "b14-spork"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A spoon alone is not the specified hybrid utensil.",
+          "sources": [
+            "b14-spork"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A chopstick is not a spork or Forky's specified base.",
+          "sources": [
+            "b14-spork"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Forky's name might suggest fork, but the official material explicitly specifies spork. The compound utensil is a distinct option from a plain fork or spoon. Removed unnecessary first-day timing that could confuse orientation with the school term."
+      }
+    },
+    {
+      "questionId": 790,
+      "hash": "d2b64d47844e47033e1b2e082b670570509312fc80bdf25d23556363faf6ac42",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Compared #2123, which asks which attraction originated in the resort plans. Country Bear development is an additional fact, not the resort identity.",
+      "context": "Historical California ski-resort proposal, abandoned after Walt's death.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The abandoned ski-resort proposal is distinct from an existing mountain named for Walt.",
+        "sources": [
+          "b14-mineral",
+          "b14-mineral-history"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The museum identifies the abandoned Mineral King ski resort.",
+          "sources": [
+            "b14-mineral",
+            "b14-mineral-history"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Big Bear Mountain Resort is not the named Mineral King project in this account.",
+          "sources": [
+            "b14-mineral",
+            "b14-mineral-history"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mount Disney is the renamed Hemlock Peak at Sugar Bowl, not the unbuilt resort project.",
+          "sources": [
+            "b14-mineral",
+            "b14-mineral-history"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sierra Snowland is not the proposal's documented name.",
+          "sources": [
+            "b14-mineral",
+            "b14-mineral-history"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Mount Disney is a genuine Walt-linked ski landmark, so I checked its role directly. It belongs to Sugar Bowl; only Mineral King meets the unbuilt Sierra resort description."
+      }
+    },
+    {
+      "questionId": 792,
+      "hash": "bdd72fec0c48b25a060a362198439007ffce5cc7d45920d130363322403f245c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Other Lion King entries test opening song, songwriters, performers, Oscar song and Scar's song. This asks a different musical scene.",
+      "context": "The original animated The Lion King (1994), young Simba scene, rather than the 2019 remake.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The scene concerns young Simba's eagerness for kingship and Zazu's objections.",
+        "sources": [
+          "b14-king-song",
+          "b14-king-context"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The song analysis identifies this exact young Simba/Zazu sequence as I Just Can't Wait to Be King; the original songwriter's album identifies its film rendition.",
+          "sources": [
+            "b14-king-song",
+            "b14-king-context"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Hakuna Matata is the separately credited Timon/Pumbaa-led number; it is not the young-cub/Zazu argument documented for this scene.",
+          "sources": [
+            "b14-king-song",
+            "b14-king-context"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Circle of Life has a distinct Carmen Twillie vocal attribution and is not Simba's boastful solo/ensemble scene.",
+          "sources": [
+            "b14-king-song",
+            "b14-king-context"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Be Prepared is the Jeremy Irons/Scar number, not young Simba's boast.",
+          "sources": [
+            "b14-king-song",
+            "b14-king-context"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Simba also participates in Hakuna Matata, so Simba alone is insufficient. The young-cub/Zazu exchange identifies the one matching scene. The long correct title is its official title, not an explanatory answer; all choices are unchanged song titles."
+      }
+    },
+    {
+      "questionId": 795,
+      "hash": "360a2a39ed5eb7428047db7631705c3cf6b6754b4e39f96800e1826bbfbed3ee",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from #461 song collaborators and #2543 end-credit artist; source fixes the exact version rather than implying all language editions.",
+      "context": "Moana (2016), original English teenage character.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Original English teenage voice excludes translated dubs and the separate toddler performer.",
+        "sources": [
+          "b14-moana",
+          "b14-moana-voice"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The primary soundtrack and independent SBS article identify Cravalho's Moana role and both singing and speaking.",
+          "sources": [
+            "b14-moana",
+            "b14-moana-voice"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rachel McAdams is not the uniquely credited original English teenage Moana performer.",
+          "sources": [
+            "b14-moana",
+            "b14-moana-voice"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hailee Steinfeld is not the uniquely credited original English teenage Moana performer.",
+          "sources": [
+            "b14-moana",
+            "b14-moana-voice"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Zendaya is not the uniquely credited original English teenage Moana performer.",
+          "sources": [
+            "b14-moana",
+            "b14-moana-voice"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the two common traps: Alessia Cara records an end-credit version, and Louise Bush voices toddler Moana. The final teenage/original-English context excludes both issues; none of the three listed alternatives is the credited performer."
+      }
+    },
+    {
+      "questionId": 799,
+      "hash": "f127291aab66383e58e326894e31632990665825fcbaac3b79ee408fec606788",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Compared #148 French dining on Dream/Fantasy and #2090 nearby Rose lounge: both add different venue facts.",
+      "context": "Disney Wish debut dining identity; ship/menu primary descriptions checked November 2026.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The venue debuted on Wish; the question no longer implies that Remy previously occupied that ship.",
+        "sources": [
+          "b14-enchante",
+          "b14-remy",
+          "b14-lumiere",
+          "b14-palo"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney identifies Enchante as Wish's adult-exclusive French restaurant with Arnaud Lallement's menu.",
+          "sources": [
+            "b14-enchante",
+            "b14-remy",
+            "b14-lumiere",
+            "b14-palo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lumiere's is the Magic rotational restaurant, not the Wish adult-exclusive venue named here.",
+          "sources": [
+            "b14-enchante",
+            "b14-remy",
+            "b14-lumiere",
+            "b14-palo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Palo is the Italian specialty-dining name; it is not Enchante's French-menu identity.",
+          "sources": [
+            "b14-enchante",
+            "b14-remy",
+            "b14-lumiere",
+            "b14-palo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Remy also has Lallement cuisine, but its ship list is Dream and Fantasy, not Wish.",
+          "sources": [
+            "b14-enchante",
+            "b14-remy",
+            "b14-lumiere",
+            "b14-palo"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Remy is a strong competing answer because it shares the chef and cuisine. The ship condition excludes it. The old replaced-Remy premise was misleading: these are restaurants on different ships."
+      }
+    },
+    {
+      "questionId": 502,
+      "hash": "61fdd5293cc46f74fc0b285b4229901b18200a8c447fedb40855d1e2db6b112a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Other context asks narrators (#2389/#2390) and Fun and Fancy Free's segments (#943); this literary pair is distinct.",
+      "context": "The Adventures of Ichabod and Mr. Toad (1949), literary source pair.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The package film comprises exactly two named literary adaptations.",
+        "sources": [
+          "b14-ichabod",
+          "b14-harp"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "D23 names The Wind in the Willows and The Legend of Sleepy Hollow as its two stories.",
+          "sources": [
+            "b14-ichabod",
+            "b14-harp"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Peter Pan and Alice in Wonderland are not the two adaptations listed for this film.",
+          "sources": [
+            "b14-ichabod",
+            "b14-harp"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Bongo and Mickey and the Beanstalk are the two Fun and Fancy Free segments, not this film's two stories.",
+          "sources": [
+            "b14-ichabod",
+            "b14-harp"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "The Reluctant Dragon and The Old Mill are not either of the two named literary adaptations.",
+          "sources": [
+            "b14-ichabod",
+            "b14-harp"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Used the full two-story synopsis as an exhaustive list; no third segment could rescue any alternative pair. Compared the Bongo/Beanstalk package film rather than treating all 1940s packages as interchangeable."
+      }
+    },
+    {
+      "questionId": 503,
+      "hash": "6a679430ffc1addd5c030943bd744e243b7cd7dcb696d6ff4f1ea638e7eceea0",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from #502 literary sources and #2390 narrator. Retained medium recall.",
+      "context": "Disney's 1949 animated Sleepy Hollow adaptation.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 1949 Sleepy Hollow segment identifies its schoolteacher directly.",
+        "sources": [
+          "b14-ichabod"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Ichabod Crane arrives as the new schoolteacher.",
+          "sources": [
+            "b14-ichabod"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Brom Bones is Katrina's rival suitor and Ichabod's antagonist, not the schoolteacher.",
+          "sources": [
+            "b14-ichabod"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "MacBadger is one of Toad's friends in the other segment, not Sleepy Hollow's schoolteacher.",
+          "sources": [
+            "b14-ichabod"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Toad is the first segment's main character, not the schoolteacher.",
+          "sources": [
+            "b14-ichabod"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removing Ichabod from the film-title wording prevents a title giveaway. Brom belongs to the correct segment but his suitor role is explicitly different; the other two belong to the Toad story."
+      }
+    },
+    {
+      "questionId": 508,
+      "hash": "05bcd112b5a7206b18a00b88a2ebda8105d0c5a2b5815d282b5ec7330e18fef8",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Compared #943 segment pair, #2034 Lulubelle, #2035 Bongo's job and #2384 narrator; none asks the harp thief.",
+      "context": "Fun and Fancy Free (1947), Mickey and the Beanstalk segment.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The giant who takes the harp is the antagonist of Mickey and the Beanstalk.",
+        "sources": [
+          "b14-willie",
+          "b14-harp"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "D23 identifies Willie as this segment's giant; the segment synopsis identifies the giant as holding the stolen harp.",
+          "sources": [
+            "b14-willie",
+            "b14-harp"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Big Bad Wolf is not the uniquely identified giant holding the harp.",
+          "sources": [
+            "b14-willie",
+            "b14-harp"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Monstro is not the giant named in the segment; he is not this harp thief.",
+          "sources": [
+            "b14-willie",
+            "b14-harp"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Goliath is not the giant Disney identifies for this segment.",
+          "sources": [
+            "b14-willie",
+            "b14-harp"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The old word giant made Willie the Giant stand out. Final wording instead asks the harp-thief identity; the source's giant-plus-character identification establishes the unique named answer."
+      }
+    },
+    {
+      "questionId": 511,
+      "hash": "61588560f512375abea8ba99aacf061253dd73075f68f6f7284585193c771024",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "No other digest question tests this song-performance attribution; distinct from Melody Time segment songs.",
+      "context": "So Dear to My Heart (1949), Burl Ives as Uncle Hiram.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Uncle Hiram and Burl Ives anchor the exact film performance, rather than all possible uses of a folk song.",
+        "sources": [
+          "b14-lavender",
+          "b14-harp"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "D23 credits Ives as Uncle Hiram and his Lavender Blue performance to So Dear to My Heart.",
+          "sources": [
+            "b14-lavender",
+            "b14-harp"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Make Mine Music is not the film identified for the Ives/Uncle Hiram performance.",
+          "sources": [
+            "b14-lavender",
+            "b14-harp"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Melody Time is not the film identified for that actor/character/song combination.",
+          "sources": [
+            "b14-lavender",
+            "b14-harp"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fun and Fancy Free has the Bongo and Beanstalk framing, not this Uncle Hiram performance.",
+          "sources": [
+            "b14-lavender",
+            "b14-harp"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Lavender Blue is an older folk song and appears in later Disney contexts, so song existence alone could be too broad. Requiring Ives playing Uncle Hiram pins the exact performance and excludes all three other packages."
+      }
+    },
+    {
+      "questionId": 512,
+      "hash": "80146b9e9a25ac82a44ccfdf5a6335828fd915d295ea7626b2360162cdf85971",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from #2526, which asks its land. Identifying the attraction does not establish Frontierland.",
+      "context": "Disneyland Park at Disneyland Paris; attraction identity.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The park is Paris, which has a separately named Haunted Mansion adaptation.",
+        "sources": [
+          "b14-phantom"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney Parks Blog identifies Phantom Manor as the Paris Haunted Mansion-inspired attraction.",
+          "sources": [
+            "b14-phantom"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The same comparison places Mystic Manor in Hong Kong, not Paris.",
+          "sources": [
+            "b14-phantom"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ravenswood Hall is not the attraction's official name; the documented Paris name is Phantom Manor.",
+          "sources": [
+            "b14-phantom"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Manor of Shadows is not the attraction's official name; the documented Paris name is Phantom Manor.",
+          "sources": [
+            "b14-phantom"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Mystic Manor is a real Disney attraction but in a different resort. Ravenswood resembles the Phantom Manor family name, not an alternative official attraction title."
+      }
+    },
+    {
+      "questionId": 513,
+      "hash": "dce77bfcdae0ae804f87daad678d136feffe34fa57ca8ba27be9bf7705042713",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Compared #2515/#2518 Adventure Isle rides and #2519 garden land; none asks this ride's land.",
+      "context": "Shanghai Disneyland Pirates of the Caribbean boat ride.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The Shanghai attraction is explicitly located in Treasure Cove.",
+        "sources": [
+          "b14-pirates"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The resort page lists Treasure Cove under the attraction's location.",
+          "sources": [
+            "b14-pirates"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Adventure Isle is a separate land; it is not the location given for this ride.",
+          "sources": [
+            "b14-pirates"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gardens of Imagination is a separate land, not the attraction's listed location.",
+          "sources": [
+            "b14-pirates"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fantasyland is a separate land, not the attraction's listed location.",
+          "sources": [
+            "b14-pirates"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed Sunken Treasure from the stem to avoid echoing Treasure Cove. Nearby waterways or pirate references do not move the ride into another land; its official location is explicit."
+      }
+    },
+    {
+      "questionId": 519,
+      "hash": "ee9d65a143756d31546f7baa184648136408ba82f0235d20e41442a42ccc914a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Other Emperor questions ask Kuzco, Yzma, Kronk, resort plans, Pacha's help and family-adjacent plot; none asks the spouse name.",
+      "context": "The Emperor's New Groove (2000), original film; no television knowledge required.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Primary casting and two independent character/family accounts establish Pacha's spouse.",
+        "sources": [
+          "b14-chicha-cast",
+          "b14-chicha-family",
+          "b14-chicha-corroboration"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Chicha is Pacha's wife; the Disney cast identity is corroborated by the family analysis and cast summary.",
+          "sources": [
+            "b14-chicha-cast",
+            "b14-chicha-family",
+            "b14-chicha-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Malina is a different character name, not the named wife Chicha.",
+          "sources": [
+            "b14-chicha-cast",
+            "b14-chicha-family",
+            "b14-chicha-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Yzma is the royal adviser and antagonist, a role distinct from Pacha's wife.",
+          "sources": [
+            "b14-chicha-cast",
+            "b14-chicha-family",
+            "b14-chicha-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mata is the diner waitress in the cast summary, not Pacha's wife.",
+          "sources": [
+            "b14-chicha-cast",
+            "b14-chicha-family",
+            "b14-chicha-corroboration"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked literal spouse identity rather than guessing from female names. The evidence names Chicha as the wife; Yzma and Mata have separate roles. Malina does not become a second spouse in the original film."
+      }
+    },
+    {
+      "questionId": 522,
+      "hash": "225d72d084a6195a690e6980efa466db686652363690ac0d23a7229a85602591",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Compared #1125 explosives expert, #873 mechanic and #2596 second-in-command: these are different personnel/role mappings.",
+      "context": "Atlantis: The Lost Empire (2001), expedition roles.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The final question supplies the film context and asks for the tunneling specialist.",
+        "sources": [
+          "b14-mole",
+          "b14-mole-dvd",
+          "b14-atlantis-cast"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The ensemble review explicitly identifies dirt-loving tunneling expert Moliere, corroborated by DVD production notes.",
+          "sources": [
+            "b14-mole",
+            "b14-mole-dvd",
+            "b14-atlantis-cast"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Vinny is the Italian munitions expert, not the tunneling specialist.",
+          "sources": [
+            "b14-mole",
+            "b14-mole-dvd",
+            "b14-atlantis-cast"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Dr. Sweet is the expedition doctor, not the dirt-loving tunneling specialist.",
+          "sources": [
+            "b14-mole",
+            "b14-mole-dvd",
+            "b14-atlantis-cast"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Cookie is the camp cook, not the tunneling specialist.",
+          "sources": [
+            "b14-mole",
+            "b14-mole-dvd",
+            "b14-atlantis-cast"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All four are expedition members, so membership alone does not exclude them. The role descriptions distinguish the digger, explosives expert, physician and cook. Added Atlantis so Milo is not an unexplained reference."
+      }
+    },
+    {
+      "questionId": 523,
+      "hash": "393dc3038187dd5ea43141ef0bfc9bad17cb33c3016bd9698477a54339472222",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Compared #2052 Wilbur's identity and #2053 guide duo: they mention Australia but test new character facts.",
+      "context": "The Rescuers Down Under (1990), main rescue setting.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The principal Cody/Marahute rescue adventure is in Australia.",
+        "sources": [
+          "b14-australia"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The synopsis explicitly locates Cody and the rescue in Australia.",
+          "sources": [
+            "b14-australia"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "New Zealand is not the country identified for the rescue.",
+          "sources": [
+            "b14-australia"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "South Africa is not the country identified for the rescue.",
+          "sources": [
+            "b14-australia"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Brazil is not the country identified for the rescue.",
+          "sources": [
+            "b14-australia"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The Rescue Aid Society begins its involvement outside Australia, so interpreted setting as the principal rescue adventure rather than claiming every shot is Australian. None of the other countries matches the story location."
+      }
+    },
+    {
+      "questionId": 531,
+      "hash": "b15ba138ad77192b9a21de8bcda92cfadf9f2599b006febdbd0cadb0f77178a0",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Compared #329 Good Company and #256 setting: song identity is additional knowledge, not the same location or a rewording of Good Company.",
+      "context": "Oliver & Company (1988), soundtrack attribution.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The song attribution and 1988 release both identify the film.",
+        "sources": [
+          "b14-newyork-song",
+          "b14-oliver-date",
+          "b14-rescuers-date",
+          "b14-detective-date",
+          "b14-aristocats-date"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "D23 assigns the song to Oliver & Company, whose entry gives the 1988 release.",
+          "sources": [
+            "b14-newyork-song",
+            "b14-oliver-date",
+            "b14-rescuers-date",
+            "b14-detective-date",
+            "b14-aristocats-date"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "The Rescuers was released in 1977 and its listed songs do not include this number.",
+          "sources": [
+            "b14-newyork-song",
+            "b14-oliver-date",
+            "b14-rescuers-date",
+            "b14-detective-date",
+            "b14-aristocats-date"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "The Great Mouse Detective was released in 1986, not 1988.",
+          "sources": [
+            "b14-newyork-song",
+            "b14-oliver-date",
+            "b14-rescuers-date",
+            "b14-detective-date",
+            "b14-aristocats-date"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "The Aristocats was released in 1970, not 1988.",
+          "sources": [
+            "b14-newyork-song",
+            "b14-oliver-date",
+            "b14-rescuers-date",
+            "b14-detective-date",
+            "b14-aristocats-date"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The New York setting might recall #256, but this question tests a particular song attribution. All three distractor films fail the explicit release-year condition, independently of any inferred absence from a short synopsis."
+      }
+    },
+    {
+      "questionId": 533,
+      "hash": "3ee86347a667dc0bdfa5b6987b1bcf77069d0788696089360766ea82615b4439",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Compared #1376 Mary Blair's small-world design and other artist biographies; film background styling is distinct.",
+      "context": "Sleeping Beauty (1959), production design rather than all animation or later park design.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney assigns the film's overall production design and background style to Earle.",
+        "sources": [
+          "b14-earle"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Disney Legends biography explicitly credits Earle with overall design, styling, background and color.",
+          "sources": [
+            "b14-earle"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mary Blair is not the artist assigned this film's overall background styling in the production-design credit.",
+          "sources": [
+            "b14-earle"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Marc Davis is not the artist assigned overall styling, backgrounds and color in the Earle production-design credit.",
+          "sources": [
+            "b14-earle"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ken Anderson is not the artist named for this production-design responsibility.",
+          "sources": [
+            "b14-earle"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The wording asks who led the stylized background look, not who ever contributed art to the film. Earle's specific overall-design responsibility excludes co-contributor interpretations for the other artists."
+      }
+    },
+    {
+      "questionId": 540,
+      "hash": "f0033268b20b3c76aeff651d20131fdf7ca08c5d3947eb7fb52ab10d7c344875",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Compared #1584 Bruni, #1588 Gale, #758 Northuldra and #1586 fifth spirit: separate identities or revelations.",
+      "context": "Frozen 2 (2019), earth-spirit visual appearance.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney's character profile describes the sleeping rocky-riverbank appearance.",
+        "sources": [
+          "b14-earth"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Earth Giants profile explicitly states that they look like rocky riverbanks when asleep.",
+          "sources": [
+            "b14-earth"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Stone Keepers is not the name Disney gives to these sleeping creatures.",
+          "sources": [
+            "b14-earth"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rock Trolls are not the named earth spirits in the profile; the sleeping riverbank creatures are Earth Giants.",
+          "sources": [
+            "b14-earth"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mountain Titans is not Disney's name for these creatures.",
+          "sources": [
+            "b14-earth"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rock Trolls are a plausible stone-bodied Frozen distraction; the specific sleeping appearance is directly assigned to Earth Giants. Removed giant from the stem so the correct answer is not the only option echoing it."
+      }
+    },
+    {
+      "questionId": 542,
+      "hash": "04df1af7d7deeeecc25380745f6b0817cd1dd37b1fdadb7d47bd5dc96e080395",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Compared #2394 Pepa's husband and #1135/#2393/#233 other gifts; no second weather-power question.",
+      "context": "Encanto (2021), designated magical gifts.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The character guide explicitly assigns different gifts to all four listed relatives.",
+        "sources": [
+          "b14-pepa"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Pepa's gift is controlling weather through emotions.",
+          "sources": [
+            "b14-pepa"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Dolores has extraordinary hearing, not the weather gift.",
+          "sources": [
+            "b14-pepa"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Julieta heals through food, not the weather gift.",
+          "sources": [
+            "b14-pepa"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Isabela grows flowers and plants, not the weather gift.",
+          "sources": [
+            "b14-pepa"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Emotions can affect all the characters, but only Pepa's designated gift controls weather. The guide provides separate affirmative gifts for all three distractors, not merely an omission from their synopses."
+      }
+    },
+    {
+      "questionId": 545,
+      "hash": "eb05ce1aca60bb195099d869cde7fa7af0090c88747f78eb8721aa41c2bb7dd5",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from #2231 replacement identity and #2232 closure year; this asks the original opening-day insect show.",
+      "context": "Disney's Animal Kingdom opening-day history, April 22, 1998.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Animal Kingdom opened April 22, 1998; the question also requires an insect-themed theater attraction.",
+        "sources": [
+          "b14-bug",
+          "b14-lion-show",
+          "b14-bird-show",
+          "b14-nemo-show",
+          "b14-world-count"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "It's Tough to Be a Bug opened that day and is explicitly an insect-themed theater production.",
+          "sources": [
+            "b14-bug",
+            "b14-lion-show",
+            "b14-bird-show",
+            "b14-nemo-show",
+            "b14-world-count"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Festival of the Lion King also opened that day, but is the Lion King stage celebration rather than the insect theater production.",
+          "sources": [
+            "b14-bug",
+            "b14-lion-show",
+            "b14-bird-show",
+            "b14-nemo-show",
+            "b14-world-count"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Flights of Wonder also opened that day, but featured exotic birds rather than the insect production.",
+          "sources": [
+            "b14-bug",
+            "b14-lion-show",
+            "b14-bird-show",
+            "b14-nemo-show",
+            "b14-world-count"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Finding Nemo: The Musical opened in 2006/2007, with a clownfish rescue story, not at the park's 1998 opening.",
+          "sources": [
+            "b14-bug",
+            "b14-lion-show",
+            "b14-bird-show",
+            "b14-nemo-show",
+            "b14-world-count"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Opening-day status alone allows Festival of the Lion King and Flights of Wonder, so checked the insect condition separately. Nemo fails both the historical date and subject. Historical wording does not imply that the closed Bug attraction still operates."
+      }
+    },
+    {
+      "questionId": 548,
+      "hash": "5201f44f8b5c089d867c850366b31e1c4f117d06b0699bfdfefb8c6d21e150a3",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Compared #869 narrator Clopin and #1008 Quasimodo's Out There: singer identity and later solo require different facts.",
+      "context": "The Hunchback of Notre Dame (1996), opening musical prologue, not the stage adaptation.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The opening prologue recounts Quasimodo's childhood and how he came to the bell tower.",
+        "sources": [
+          "b14-bells",
+          "b14-bells-corroboration"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The lyricist's opening-number discussion and the animation-history article identify The Bells of Notre Dame.",
+          "sources": [
+            "b14-bells",
+            "b14-bells-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Topsy Turvy is the later festival number, not the childhood prologue.",
+          "sources": [
+            "b14-bells",
+            "b14-bells-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Schwartz distinguishes Out There as Quasimodo's own first song about the world outside, not the opening narrated prologue.",
+          "sources": [
+            "b14-bells",
+            "b14-bells-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "God Help the Outcasts is not the named opening prologue; that single sequence is identified as The Bells of Notre Dame.",
+          "sources": [
+            "b14-bells",
+            "b14-bells-corroboration"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Clopin also performs Topsy Turvy, so singer alone would not suffice. The final wording selects the opening childhood account. Removed the film title from the stem and made all four choices songs from the same film."
+      }
+    },
+    {
+      "questionId": 551,
+      "hash": "2ee4eb54ae23265ac1b8864297d2ef67519c1730bf233d4626773d407756feec",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from #364 celebration start year and #371 millennium show; neither asks this show's identity.",
+      "context": "Walt Disney World's 2021 50th-anniversary launch at EPCOT.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 50th celebration began in 2021; the EPCOT launch was Harmonious.",
+        "sources": [
+          "b14-harmonious",
+          "b14-forever",
+          "b14-luminous"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The 2021 announcement explicitly introduces Harmonious for the anniversary celebration.",
+          "sources": [
+            "b14-harmonious",
+            "b14-forever",
+            "b14-luminous"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "IllumiNations predates Epcot Forever, which replaced it in 2019; it did not debut for the 2021 celebration.",
+          "sources": [
+            "b14-harmonious",
+            "b14-forever",
+            "b14-luminous"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Epcot Forever premiered in 2019, not for the 2021 50th launch.",
+          "sources": [
+            "b14-harmonious",
+            "b14-forever",
+            "b14-luminous"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Luminous was announced for December 2023, not the anniversary launch.",
+          "sources": [
+            "b14-harmonious",
+            "b14-forever",
+            "b14-luminous"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "EPCOT Forever later returned, which could confuse current operation with debut. The question asks the debut occasion; the three timelines exclude the distractors without requiring present-day show status."
+      }
+    },
+    {
+      "questionId": 552,
+      "hash": "0952426b587dbb9d2c5a433834a55f590ab8133baedeb5af5641538edb2517ab",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Compared #554 in full: Dream/Royal Palace and Fantasy/Royal Court are separate ship-to-restaurant mappings; learning one alone does not establish the other.",
+      "context": "Disney Fantasy main rotational dining, checked November 2026.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Fantasy's princess-film restaurant is Royal Court; ship and theme must both match.",
+        "sources": [
+          "b14-court",
+          "b14-palace",
+          "b14-garden",
+          "b14-animator"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Royal Court is explicitly Fantasy's princess-film-inspired rotational restaurant.",
+          "sources": [
+            "b14-court",
+            "b14-palace",
+            "b14-garden",
+            "b14-animator"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Royal Palace has the same general theme but is explicitly on Dream, not Fantasy.",
+          "sources": [
+            "b14-court",
+            "b14-palace",
+            "b14-garden",
+            "b14-animator"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Animator's Palate celebrates animation as a dinner show, not the classic-princess palace design.",
+          "sources": [
+            "b14-court",
+            "b14-palace",
+            "b14-garden",
+            "b14-animator"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Enchanted Garden is inspired by Versailles gardens, not Disney Princess films.",
+          "sources": [
+            "b14-court",
+            "b14-palace",
+            "b14-garden",
+            "b14-animator"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Enchanted Garden has royal real-world inspiration, so replaced vague royal stories with classic Disney Princess films. Royal Palace remains a serious distractor, excluded specifically by the ship."
+      }
+    },
+    {
+      "questionId": 554,
+      "hash": "869956e0190b19f44f2e74fe939070b48b36059c1721110d35218d5c2ea882dd",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Compared #552: a different ship/venue pairing, retained after full four-option comparison.",
+      "context": "Disney Dream main rotational dining, checked November 2026.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Dream's princess-film restaurant is Royal Palace; ship and theme must both match.",
+        "sources": [
+          "b14-palace",
+          "b14-court",
+          "b14-garden",
+          "b14-animator"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Royal Palace is explicitly Dream's princess-film-inspired rotational restaurant.",
+          "sources": [
+            "b14-palace",
+            "b14-court",
+            "b14-garden",
+            "b14-animator"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Royal Court has the same general theme but is explicitly on Fantasy, not Dream.",
+          "sources": [
+            "b14-palace",
+            "b14-court",
+            "b14-garden",
+            "b14-animator"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Animator's Palate is the animation-themed dinner-show venue, not the classic-princess palace restaurant.",
+          "sources": [
+            "b14-palace",
+            "b14-court",
+            "b14-garden",
+            "b14-animator"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Enchanted Garden is Versailles-garden-inspired rather than Disney-Princess-film-inspired.",
+          "sources": [
+            "b14-palace",
+            "b14-court",
+            "b14-garden",
+            "b14-animator"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the sister ships separately, not by eliminating the other question's answer. The location lists positively assign Royal Palace to Dream and Royal Court to Fantasy; Versailles gardens do not satisfy the film theme."
+      }
+    },
+    {
+      "questionId": 555,
+      "hash": "90606dd5406943e6d8db098fb82c93fcba3ebe6e3224743fed7238a92ff64921",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Compared #1032 Highland Games, #1308 Fergus, #304 triplets and #2584 voice actor: the clan set is distinct.",
+      "context": "Brave (2012), arrival of visiting lords and sons before Merida's self-entry.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The question asks the three visiting suitor clans, excluding Merida's own clan even when she competes for herself.",
+        "sources": [
+          "b14-brave-cast",
+          "b14-brave-clans"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The three visiting lords and their sons are Dingwall, Macintosh and MacGuffin.",
+          "sources": [
+            "b14-brave-cast",
+            "b14-brave-clans"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "This substitutes DunBroch for Macintosh; DunBroch is Merida's host clan, not a visiting suitor clan.",
+          "sources": [
+            "b14-brave-cast",
+            "b14-brave-clans"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "This substitutes DunBroch for Dingwall and therefore omits a visiting clan.",
+          "sources": [
+            "b14-brave-cast",
+            "b14-brave-clans"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "This substitutes DunBroch for MacGuffin and therefore omits a visiting clan.",
+          "sources": [
+            "b14-brave-cast",
+            "b14-brave-clans"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Merida explicitly competes as DunBroch's firstborn, so unqualified competing clans could make DunBroch seem defensible. The final visiting/send suitors condition excludes that interpretation; all distractor triples now differ by one plausible clan."
+      }
+    },
+    {
+      "questionId": 557,
+      "hash": "8ea4a54bea8a137d50db4b60433e11b6af6a183f724b1c1f870e1f1b7b0efc1f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Compared #1035 dinosaur species and #1285 Spot: occupation is separate.",
+      "context": "The Good Dinosaur (2015), Arlo's family livelihood.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar explicitly presents Arlo's family as farmers.",
+        "sources": [
+          "b14-farm"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Both Arlo's and Poppa's profiles describe work on the family farm.",
+          "sources": [
+            "b14-farm"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mining is not the family's stated livelihood; the identified work is farming.",
+          "sources": [
+            "b14-farm"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fishing is not the family's stated livelihood; the identified work is farming.",
+          "sources": [
+            "b14-farm"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Trading is not the family's stated livelihood; the identified work is farming.",
+          "sources": [
+            "b14-farm"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A family could exchange goods or encounter a river without changing its livelihood. The question asks the family's kind of work, which Pixar explicitly identifies as the farm; it does not claim they never perform incidental other tasks."
+      }
+    },
+    {
+      "questionId": 558,
+      "hash": "7268ae6d7555776ba77f56b554c265ab8d8695864fcd0d883514b326c02b6af8",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Compared full Onward catalog: gem, fantasy game, shortcut, biker gang, world and family are different facts.",
+      "context": "Onward (2020), Barley's original van, not its replacement.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar explicitly names Barley's customized van.",
+        "sources": [
+          "b14-van"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Guinevere profile calls her Barley's purple van and mighty steed.",
+          "sources": [
+            "b14-van"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Valkyrie is not the van's assigned name; the named vehicle is Guinevere.",
+          "sources": [
+            "b14-van"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Manticore is a character/tavern association, not the van's name.",
+          "sources": [
+            "b14-van"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Phoenix refers to the quest's gem, not the van's unique name.",
+          "sources": [
+            "b14-van"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A fantasy creature name could sound plausible for Barley's van, but Pixar uniquely names it Guinevere. Neither the Manticore nor the Phoenix Gem is an alternate vehicle name."
+      }
+    }
+  ]
+}

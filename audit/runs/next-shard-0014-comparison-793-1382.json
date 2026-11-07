@@ -1,0 +1,40 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "questionIds": [
+    793,
+    1382
+  ],
+  "removedQuestion": {
+    "id": 793,
+    "question": "What is the name of Pocahontas's song sung while racing her canoe against Nakoma's, torn between duty and a longing for adventure?",
+    "answers": [
+      "Just Around the Riverbend",
+      "Colors of the Wind",
+      "Savages",
+      "Listen with Your Heart"
+    ],
+    "difficulty": "medium",
+    "category": "music"
+  },
+  "replacementQuestion": {
+    "id": 1382,
+    "question": "Which Disney film features the song 'Just Around the Riverbend,' in which the heroine debates choosing adventure over a comfortable future?",
+    "answers": [
+      "Pocahontas",
+      "Moana",
+      "Brave",
+      "Tangled"
+    ],
+    "difficulty": "medium",
+    "category": "music"
+  },
+  "reason": "Inverse song/film association for Just Around the Riverbend. Retain the cleaner adventure-versus-comfort wording, without the additional canoe-race assertion that consulted textual sources do not establish.",
+  "evidence": [
+    {
+      "url": "https://video.disney.com/watch/just-around-the-riverbend-pocahontas-lyric-video-50ccaeefde3fc4f491cee7c6",
+      "locator": "Official song/film association in page title; no video playback claimed"
+    }
+  ],
+  "challenge": "Read both complete four-option questions and the full category/topic context. The retained question's tested fact or explicit premise supplies the removed answer without another fact. Retire only the in-scope member; do not alter the replacement."
+}

@@ -1,0 +1,31 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "retiredQuestion": {
+    "id": 883,
+    "question": "In Zootopia, what arctic shrew crime boss helps Judy and Nick?",
+    "answers": [
+      "Mr. Big",
+      "Finnick",
+      "Duke Weaselton",
+      "Mayor Lionheart"
+    ],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  "retainedQuestion": {
+    "id": 2398,
+    "question": "In Zootopia, what type of small animal is Mr. Big, the powerful and feared crime boss of Tundratown?",
+    "answers": [
+      "An arctic shrew",
+      "A field mouse",
+      "A vole",
+      "A chipmunk"
+    ],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  "reason": "Both questions encode Mr. Big as the arctic-shrew crime boss in Zootopia. The identity/species relationship is simply reversed. Retain the direct species question.",
+  "evidenceReference": "artifacts/question-audit/current-compact.json",
+  "challenge": "Compared every option in both questions. Memorizing the character/species or attraction/pavilion association answers the reversed question without a new fact. Only the planned question is removed; the replacement is context, not newly approved."
+}

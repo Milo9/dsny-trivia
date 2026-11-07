@@ -1,0 +1,31 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "removed": {
+    "id": 979,
+    "question": "Which Bahamian island is home to Disney Lookout Cay at Lighthouse Point?",
+    "answers": [
+      "Eleuthera",
+      "Nassau",
+      "Grand Bahama",
+      "Bimini"
+    ],
+    "difficulty": "hard",
+    "category": "cruise"
+  },
+  "replacement": {
+    "id": 1512,
+    "question": "What is the name of Disney Cruise Line's newer private island destination that opened in 2024 on the island of Eleuthera in the Bahamas?",
+    "answers": [
+      "Lighthouse Point",
+      "Castaway Cay",
+      "Nassau Bay",
+      "Disney Isle"
+    ],
+    "difficulty": "hard",
+    "category": "cruise"
+  },
+  "reason": "The retained question explicitly supplies Eleuthera and asks the destination name; reversing that association adds no fact.",
+  "source": "https://disneycruise.disney.go.com/en-as/port-adventures/overview/",
+  "optionChallenge": "Read all four options on both snapshots; overlap concerns the tested association rather than merely shared answer text."
+}

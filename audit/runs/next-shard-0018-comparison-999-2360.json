@@ -1,0 +1,30 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "removed": {
+    "id": 999,
+    "question": "Which original animated Disney film introduced the song Cruella de Vil?",
+    "answers": [
+      "101 Dalmatians",
+      "The Aristocats",
+      "The Rescuers",
+      "Oliver & Company"
+    ],
+    "difficulty": "easy",
+    "category": "music"
+  },
+  "replacement": {
+    "id": 2360,
+    "question": "Which songwriter, with a long association with Disney, wrote the villain song 'Cruella de Vil' for 101 Dalmatians?",
+    "answers": [
+      "Mel Leven",
+      "Sherman Brothers",
+      "George Bruns",
+      "Terry Gilkyson"
+    ],
+    "difficulty": "hard",
+    "category": "music"
+  },
+  "reason": "The songwriter question already states that Cruella de Vil was written for 101 Dalmatians; the song-to-film lookup repeats that supplied association.",
+  "source": "https://disney.go.com/disneyrecords/Song-Albums/karaoke3/"
+}

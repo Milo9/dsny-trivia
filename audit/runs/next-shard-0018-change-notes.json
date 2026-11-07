@@ -1,0 +1,816 @@
+[
+  {
+    "id": 954,
+    "types": [
+      "clarification"
+    ],
+    "before": {
+      "id": 954,
+      "question": "Which Disney-created 1964 World's Fair attraction featured guests riding through dinosaur scenes in Ford cars?",
+      "answers": [
+        "Ford Magic Skyway",
+        "Carousel of Progress",
+        "It's a Small World",
+        "Great Moments with Mr. Lincoln"
+      ],
+      "difficulty": "medium",
+      "category": "walt"
+    },
+    "after": {
+      "id": 954,
+      "question": "Which Disney-created 1964 World's Fair attraction took guests through dinosaur scenes in convertible cars?",
+      "answers": [
+        "Ford Magic Skyway",
+        "Carousel of Progress",
+        "It's a Small World",
+        "Great Moments with Mr. Lincoln"
+      ],
+      "difficulty": "medium",
+      "category": "walt"
+    }
+  },
+  {
+    "id": 956,
+    "types": [
+      "clarification"
+    ],
+    "before": {
+      "id": 956,
+      "question": "Which Disney-created 1964 World's Fair attraction featured an Audio-Animatronic Abraham Lincoln?",
+      "answers": [
+        "Great Moments with Mr. Lincoln",
+        "Carousel of Progress",
+        "The American Adventure",
+        "Ford Magic Skyway"
+      ],
+      "difficulty": "hard",
+      "category": "walt"
+    },
+    "after": {
+      "id": 956,
+      "question": "Which Disney-created 1964 World's Fair show was commissioned for the Illinois pavilion?",
+      "answers": [
+        "Great Moments with Mr. Lincoln",
+        "Carousel of Progress",
+        "The American Adventure",
+        "Ford Magic Skyway"
+      ],
+      "difficulty": "hard",
+      "category": "walt"
+    }
+  },
+  {
+    "id": 963,
+    "types": [
+      "clarification"
+    ],
+    "before": {
+      "id": 963,
+      "question": "On Disney Cruise Line, which rotational dining room is themed around Disney animation artwork?",
+      "answers": [
+        "Animator's Palate",
+        "Palo",
+        "Cabanas",
+        "Triton's"
+      ],
+      "difficulty": "easy",
+      "category": "cruise"
+    },
+    "after": {
+      "id": 963,
+      "question": "Which Disney Cruise Line rotational dining room resembles an artist's studio filled with character sketches?",
+      "answers": [
+        "Animator's Palate",
+        "Palo",
+        "Cabanas",
+        "Triton's"
+      ],
+      "difficulty": "easy",
+      "category": "cruise"
+    }
+  },
+  {
+    "id": 965,
+    "types": [
+      "clarification"
+    ],
+    "before": {
+      "id": 965,
+      "question": "On the Disney Magic, which rotational restaurant is themed around Rapunzel?",
+      "answers": [
+        "Rapunzel's Royal Table",
+        "Tiana's Place",
+        "Arendelle",
+        "Animator's Palate"
+      ],
+      "difficulty": "medium",
+      "category": "cruise"
+    },
+    "after": {
+      "id": 965,
+      "question": "On Disney Magic, which rotational restaurant is inspired by Tangled?",
+      "answers": [
+        "Rapunzel's Royal Table",
+        "Tiana's Place",
+        "Arendelle",
+        "Animator's Palate"
+      ],
+      "difficulty": "medium",
+      "category": "cruise"
+    }
+  },
+  {
+    "id": 968,
+    "types": [
+      "clarification"
+    ],
+    "before": {
+      "id": 968,
+      "question": "On the Disney Magic and Disney Wonder, what adult entertainment area name replaced Beat Street and Route 66?",
+      "answers": [
+        "After Hours",
+        "The District",
+        "Europa",
+        "Quiet Cove"
+      ],
+      "difficulty": "hard",
+      "category": "cruise"
+    },
+    "after": {
+      "id": 968,
+      "question": "What adult entertainment district replaced Beat Street on Disney Magic in 2013?",
+      "answers": [
+        "After Hours",
+        "The District",
+        "Europa",
+        "Quiet Cove"
+      ],
+      "difficulty": "hard",
+      "category": "cruise"
+    }
+  },
+  {
+    "id": 971,
+    "types": [
+      "clarification"
+    ],
+    "before": {
+      "id": 971,
+      "question": "On the Disney Treasure, what restaurant is themed to Coco?",
+      "answers": [
+        "Plaza de Coco",
+        "Arendelle",
+        "Worlds of Marvel",
+        "Jumbeaux's Sweets"
+      ],
+      "difficulty": "medium",
+      "category": "cruise"
+    },
+    "after": {
+      "id": 971,
+      "question": "On Disney Treasure, which restaurant features Miguel and the Rivera family?",
+      "answers": [
+        "Plaza de Coco",
+        "Arendelle",
+        "Worlds of Marvel",
+        "Jumbeaux's Sweets"
+      ],
+      "difficulty": "medium",
+      "category": "cruise"
+    }
+  },
+  {
+    "id": 972,
+    "types": [
+      "clarification"
+    ],
+    "before": {
+      "id": 972,
+      "question": "On the Disney Treasure, what lounge is themed to the Haunted Mansion?",
+      "answers": [
+        "Haunted Mansion Parlor",
+        "Skipper Society",
+        "Periscope Pub",
+        "The Rose"
+      ],
+      "difficulty": "medium",
+      "category": "cruise"
+    },
+    "after": {
+      "id": 972,
+      "question": "On Disney Treasure, which lounge has an aquarium of ghost fish and a ghostly sea captain's portrait?",
+      "answers": [
+        "Haunted Mansion Parlor",
+        "Skipper Society",
+        "Periscope Pub",
+        "The Rose"
+      ],
+      "difficulty": "medium",
+      "category": "cruise"
+    }
+  },
+  {
+    "id": 974,
+    "types": [
+      "factual",
+      "clarification"
+    ],
+    "before": {
+      "id": 974,
+      "question": "On the Disney Dream and Disney Fantasy, what casual buffet restaurant switches to table service for dinner each evening?",
+      "answers": [
+        "Cabanas",
+        "Marceline Market",
+        "Flo's Cafe",
+        "Festival of Foods"
+      ],
+      "difficulty": "medium",
+      "category": "cruise"
+    },
+    "after": {
+      "id": 974,
+      "question": "On Disney Dream and Disney Fantasy, which casual restaurant has an Australian beach-boardwalk theme?",
+      "answers": [
+        "Cabanas",
+        "Marceline Market",
+        "Flo's Cafe",
+        "Festival of Foods"
+      ],
+      "difficulty": "medium",
+      "category": "cruise"
+    }
+  },
+  {
+    "id": 975,
+    "types": [
+      "clarification"
+    ],
+    "before": {
+      "id": 975,
+      "question": "What is the adult-only pool area on Disney Cruise Line ships commonly called?",
+      "answers": [
+        "Quiet Cove",
+        "Serenity Bay",
+        "Satellite Falls",
+        "Hidden Springs"
+      ],
+      "difficulty": "medium",
+      "category": "cruise"
+    },
+    "after": {
+      "id": 975,
+      "question": "What is the adults-only pool area on Disney Magic and Disney Wonder called?",
+      "answers": [
+        "Quiet Cove",
+        "Serenity Bay",
+        "Satellite Falls",
+        "Hidden Springs"
+      ],
+      "difficulty": "medium",
+      "category": "cruise"
+    }
+  },
+  {
+    "id": 976,
+    "types": [
+      "clarification"
+    ],
+    "before": {
+      "id": 976,
+      "question": "What Disney Cruise Line app helps guests view schedules and onboard messages?",
+      "answers": [
+        "Disney Cruise Line Navigator",
+        "My Disney Experience",
+        "Disney Genie",
+        "Castaway Companion"
+      ],
+      "difficulty": "easy",
+      "category": "cruise"
+    },
+    "after": {
+      "id": 976,
+      "question": "Which Disney app provides onboard activity schedules and guest-to-guest chat on its cruise ships?",
+      "answers": [
+        "Disney Cruise Line Navigator",
+        "My Disney Experience",
+        "Disney Genie",
+        "Castaway Companion"
+      ],
+      "difficulty": "easy",
+      "category": "cruise"
+    }
+  },
+  {
+    "id": 977,
+    "types": [
+      "clarification"
+    ],
+    "before": {
+      "id": 977,
+      "question": "On Castaway Cay, what is the primary beach area for guests with children called?",
+      "answers": [
+        "Family Beach",
+        "Serenity Bay",
+        "Pelican Point",
+        "Scuttle's Cove"
+      ],
+      "difficulty": "easy",
+      "category": "cruise"
+    },
+    "after": {
+      "id": 977,
+      "question": "At Castaway Cay, which beach is served by Cookie's BBQ?",
+      "answers": [
+        "Family Beach",
+        "Serenity Bay",
+        "Pelican Point",
+        "Scuttle's Cove"
+      ],
+      "difficulty": "easy",
+      "category": "cruise"
+    }
+  },
+  {
+    "id": 988,
+    "types": [
+      "clarification"
+    ],
+    "before": {
+      "id": 988,
+      "question": "What Disney Cruise Line term describes a scheduled stop where the ship docks so guests can go ashore?",
+      "answers": [
+        "Port of call",
+        "Sea day",
+        "Embarkation",
+        "Muster"
+      ],
+      "difficulty": "easy",
+      "category": "cruise"
+    },
+    "after": {
+      "id": 988,
+      "question": "What cruise term names a destination the ship visits during its itinerary?",
+      "answers": [
+        "Port of call",
+        "Sea day",
+        "Embarkation",
+        "Muster"
+      ],
+      "difficulty": "easy",
+      "category": "cruise"
+    }
+  },
+  {
+    "id": 990,
+    "types": [
+      "clarification"
+    ],
+    "before": {
+      "id": 990,
+      "question": "What Disney Cruise Line term refers to the day guests board the ship?",
+      "answers": [
+        "Embarkation day",
+        "Sea day",
+        "Debarkation day",
+        "Port day"
+      ],
+      "difficulty": "easy",
+      "category": "cruise"
+    },
+    "after": {
+      "id": 990,
+      "question": "What cruise term names the day guests first board at the start of their voyage?",
+      "answers": [
+        "Embarkation day",
+        "Sea day",
+        "Debarkation day",
+        "Port day"
+      ],
+      "difficulty": "easy",
+      "category": "cruise"
+    }
+  },
+  {
+    "id": 991,
+    "types": [
+      "clarification",
+      "distractors"
+    ],
+    "before": {
+      "id": 991,
+      "question": "In which Disney film does the song Whistle While You Work appear?",
+      "answers": [
+        "Snow White and the Seven Dwarfs",
+        "Cinderella",
+        "Pinocchio",
+        "Dumbo"
+      ],
+      "difficulty": "easy",
+      "category": "music"
+    },
+    "after": {
+      "id": 991,
+      "question": "Which original animated Disney film introduced Whistle While You Work?",
+      "answers": [
+        "Snow White and the Seven Dwarfs",
+        "The Adventures of Ichabod and Mr. Toad",
+        "Pinocchio",
+        "The Sword in the Stone"
+      ],
+      "difficulty": "easy",
+      "category": "music"
+    }
+  },
+  {
+    "id": 992,
+    "types": [
+      "clarification",
+      "distractors"
+    ],
+    "before": {
+      "id": 992,
+      "question": "Which group of miners sings Heigh-Ho?",
+      "answers": [
+        "The dwarfs",
+        "The woodland animals",
+        "The prince",
+        "The castle guards"
+      ],
+      "difficulty": "easy",
+      "category": "music"
+    },
+    "after": {
+      "id": 992,
+      "question": "In Snow White and the Seven Dwarfs (1937), which song do the dwarfs sing as they march home from the mine?",
+      "answers": [
+        "Heigh-Ho",
+        "The Silly Song",
+        "Bluddle-Uddle-Um-Dum",
+        "One Song"
+      ],
+      "difficulty": "easy",
+      "category": "music"
+    }
+  },
+  {
+    "id": 993,
+    "types": [
+      "clarification"
+    ],
+    "before": {
+      "id": 993,
+      "question": "In which Disney film does Jiminy Cricket sing Give a Little Whistle?",
+      "answers": [
+        "Pinocchio",
+        "Dumbo",
+        "Bambi",
+        "Peter Pan"
+      ],
+      "difficulty": "medium",
+      "category": "music"
+    },
+    "after": {
+      "id": 993,
+      "question": "Which original animated Disney film introduced Give a Little Whistle?",
+      "answers": [
+        "Pinocchio",
+        "Dumbo",
+        "Bambi",
+        "Peter Pan"
+      ],
+      "difficulty": "medium",
+      "category": "music"
+    }
+  },
+  {
+    "id": 994,
+    "types": [
+      "clarification"
+    ],
+    "before": {
+      "id": 994,
+      "question": "What song does Pinocchio perform during Stromboli's puppet show?",
+      "answers": [
+        "I've Got No Strings",
+        "Give a Little Whistle",
+        "Little Wooden Head",
+        "Hi-Diddle-Dee-Dee"
+      ],
+      "difficulty": "medium",
+      "category": "music"
+    },
+    "after": {
+      "id": 994,
+      "question": "In Pinocchio (1940), which song does the puppet perform on Stromboli's stage?",
+      "answers": [
+        "I've Got No Strings",
+        "Give a Little Whistle",
+        "Little Wooden Head",
+        "Hi-Diddle-Dee-Dee"
+      ],
+      "difficulty": "medium",
+      "category": "music"
+    }
+  },
+  {
+    "id": 995,
+    "types": [
+      "factual",
+      "clarification"
+    ],
+    "before": {
+      "id": 995,
+      "question": "In Dumbo, what lullaby does Mrs. Jumbo sing to Dumbo?",
+      "answers": [
+        "Baby Mine",
+        "Casey Junior",
+        "Pink Elephants on Parade",
+        "Song of the Roustabouts"
+      ],
+      "difficulty": "medium",
+      "category": "music"
+    },
+    "after": {
+      "id": 995,
+      "question": "In Dumbo (1941), which lullaby accompanies his visit to his imprisoned mother?",
+      "answers": [
+        "Baby Mine",
+        "Casey Junior",
+        "Pink Elephants on Parade",
+        "Song of the Roustabouts"
+      ],
+      "difficulty": "medium",
+      "category": "music"
+    }
+  },
+  {
+    "id": 997,
+    "types": [
+      "clarification"
+    ],
+    "before": {
+      "id": 997,
+      "question": "In Lady and the Tramp, what song plays during the famous spaghetti dinner?",
+      "answers": [
+        "Bella Notte",
+        "He's a Tramp",
+        "La La Lu",
+        "Peace on Earth"
+      ],
+      "difficulty": "medium",
+      "category": "music"
+    },
+    "after": {
+      "id": 997,
+      "question": "In Lady and the Tramp (1955), which song accompanies the spaghetti dinner?",
+      "answers": [
+        "Bella Notte",
+        "He's a Tramp",
+        "La La Lu",
+        "Peace on Earth"
+      ],
+      "difficulty": "medium",
+      "category": "music"
+    }
+  },
+  {
+    "id": 998,
+    "types": [
+      "clarification"
+    ],
+    "before": {
+      "id": 998,
+      "question": "What is the signature waltz song from Sleeping Beauty?",
+      "answers": [
+        "Once Upon a Dream",
+        "I Wonder",
+        "Hail to the Princess Aurora",
+        "Blue Bird"
+      ],
+      "difficulty": "easy",
+      "category": "music"
+    },
+    "after": {
+      "id": 998,
+      "question": "In Sleeping Beauty (1959), which song do Aurora and Phillip sing together in the forest?",
+      "answers": [
+        "Once Upon a Dream",
+        "I Wonder",
+        "Hail to the Princess Aurora",
+        "Blue Bird"
+      ],
+      "difficulty": "easy",
+      "category": "music"
+    }
+  },
+  {
+    "id": 999,
+    "types": [
+      "clarification"
+    ],
+    "before": {
+      "id": 999,
+      "question": "In which Disney film does the song Cruella de Vil appear?",
+      "answers": [
+        "101 Dalmatians",
+        "The Aristocats",
+        "The Rescuers",
+        "Oliver & Company"
+      ],
+      "difficulty": "easy",
+      "category": "music"
+    },
+    "after": {
+      "id": 999,
+      "question": "Which original animated Disney film introduced the song Cruella de Vil?",
+      "answers": [
+        "101 Dalmatians",
+        "The Aristocats",
+        "The Rescuers",
+        "Oliver & Company"
+      ],
+      "difficulty": "easy",
+      "category": "music"
+    }
+  },
+  {
+    "id": 1000,
+    "types": [
+      "clarification"
+    ],
+    "before": {
+      "id": 1000,
+      "question": "In Disney's Robin Hood, what cheerful opening song is sung by Alan-a-Dale?",
+      "answers": [
+        "Oo-De-Lally",
+        "Love",
+        "The Phony King of England",
+        "Not in Nottingham"
+      ],
+      "difficulty": "medium",
+      "category": "music"
+    },
+    "after": {
+      "id": 1000,
+      "question": "In Disney's Robin Hood (1973), which song does Allan-a-Dale sing after introducing himself as the narrator?",
+      "answers": [
+        "Oo-De-Lally",
+        "Love",
+        "The Phony King of England",
+        "Not in Nottingham"
+      ],
+      "difficulty": "medium",
+      "category": "music"
+    }
+  },
+  {
+    "id": 1001,
+    "types": [
+      "clarification"
+    ],
+    "before": {
+      "id": 1001,
+      "question": "In The Rescuers, what song encourages Penny that help is coming?",
+      "answers": [
+        "Someone's Waiting for You",
+        "Rescue Aid Society",
+        "Tomorrow Is Another Day",
+        "The Journey"
+      ],
+      "difficulty": "hard",
+      "category": "music"
+    },
+    "after": {
+      "id": 1001,
+      "question": "In The Rescuers (1977), which song accompanies Penny's sadness after Medusa calls her homely?",
+      "answers": [
+        "Someone's Waiting for You",
+        "Rescue Aid Society",
+        "Tomorrow Is Another Day",
+        "The Journey"
+      ],
+      "difficulty": "hard",
+      "category": "music"
+    }
+  },
+  {
+    "id": 1002,
+    "types": [
+      "clarification"
+    ],
+    "before": {
+      "id": 1002,
+      "question": "In The Fox and the Hound, what song plays over Tod and Copper's childhood friendship montage?",
+      "answers": [
+        "Best of Friends",
+        "Appreciate the Lady",
+        "Goodbye May Seem Forever",
+        "Lack of Education"
+      ],
+      "difficulty": "hard",
+      "category": "music"
+    },
+    "after": {
+      "id": 1002,
+      "question": "In The Fox and the Hound (1981), which song accompanies Tod and Copper playing together as youngsters?",
+      "answers": [
+        "Best of Friends",
+        "Appreciate the Lady",
+        "Goodbye May Seem Forever",
+        "Lack of Education"
+      ],
+      "difficulty": "hard",
+      "category": "music"
+    }
+  },
+  {
+    "id": 1003,
+    "types": [
+      "clarification"
+    ],
+    "before": {
+      "id": 1003,
+      "question": "In Oliver & Company, what Billy Joel song introduces Dodger?",
+      "answers": [
+        "Why Should I Worry?",
+        "Good Company",
+        "Streets of Gold",
+        "Perfect Isn't Easy"
+      ],
+      "difficulty": "medium",
+      "category": "music"
+    },
+    "after": {
+      "id": 1003,
+      "question": "In Oliver & Company (1988), which song does Billy Joel perform as Dodger near the start of the film?",
+      "answers": [
+        "Why Should I Worry?",
+        "Good Company",
+        "Streets of Gold",
+        "Perfect Isn't Easy"
+      ],
+      "difficulty": "medium",
+      "category": "music"
+    }
+  },
+  {
+    "id": 1004,
+    "types": [
+      "clarification"
+    ],
+    "before": {
+      "id": 1004,
+      "question": "What song does Sebastian use to encourage Ariel and Eric's romance in The Little Mermaid?",
+      "answers": [
+        "Kiss the Girl",
+        "Under the Sea",
+        "Les Poissons",
+        "Poor Unfortunate Souls"
+      ],
+      "difficulty": "easy",
+      "category": "music"
+    },
+    "after": {
+      "id": 1004,
+      "question": "In The Little Mermaid (1989), which song does Sebastian sing during Ariel and Eric's lagoon boat ride?",
+      "answers": [
+        "Kiss the Girl",
+        "Under the Sea",
+        "Les Poissons",
+        "Poor Unfortunate Souls"
+      ],
+      "difficulty": "easy",
+      "category": "music"
+    }
+  },
+  {
+    "id": 978,
+    "types": [
+      "clarification"
+    ],
+    "before": {
+      "id": 978,
+      "question": "On Castaway Cay, what kids' area is named after Ariel's seagull friend?",
+      "answers": [
+        "Scuttle's Cove",
+        "Flounder's Reef",
+        "Sebastian's Bay",
+        "Triton's Landing"
+      ],
+      "difficulty": "medium",
+      "category": "cruise"
+    },
+    "after": {
+      "id": 978,
+      "question": "On Castaway Cay, which supervised children's play area includes a whale-bone dig site?",
+      "answers": [
+        "Scuttle's Cove",
+        "Flounder's Reef",
+        "Sebastian's Bay",
+        "Triton's Landing"
+      ],
+      "difficulty": "medium",
+      "category": "cruise"
+    }
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "questionIds": [
+    814,
+    1331
+  ],
+  "removedQuestion": {
+    "id": 814,
+    "question": "In The Jungle Book, what does King Louie want Mowgli to teach him?",
+    "answers": [
+      "The secret of fire",
+      "How to speak to snakes",
+      "How to find treasure",
+      "The way to the man-village"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "replacementQuestion": {
+    "id": 1331,
+    "question": "In The Jungle Book, what closely guarded human secret does King Louie desperately want Mowgli to reveal?",
+    "answers": [
+      "The secret of making fire (the red flower)",
+      "The location of man's village",
+      "How to build shelters",
+      "The language of humans"
+    ],
+    "difficulty": "hard",
+    "category": "movies"
+  },
+  "reason": "Both ask for King Louie's requested human secret: making fire. Retain the version that explicitly says making fire.",
+  "evidence": [
+    {
+      "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=jungle-book-the",
+      "locator": "King Louie asks for man's red fire during I Wanna Be Like You."
+    }
+  ],
+  "challenge": "Read both full four-option questions, topic context and source passage. The retained question explicitly supplies the removed answer; no separate fact is required. Retire only the in-scope member."
+}

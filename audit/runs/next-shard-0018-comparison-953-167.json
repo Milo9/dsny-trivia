@@ -1,0 +1,31 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "removed": {
+    "id": 953,
+    "question": "What city hosted the 1964 World's Fair where Disney created several attractions?",
+    "answers": [
+      "New York City",
+      "Chicago",
+      "Seattle",
+      "San Francisco"
+    ],
+    "difficulty": "medium",
+    "category": "walt"
+  },
+  "replacement": {
+    "id": 167,
+    "question": "The song 'It's a Small World' was originally written for which event before becoming a Disney park attraction?",
+    "answers": [
+      "The 1964 New York World's Fair",
+      "The 1962 Seattle World's Fair",
+      "The 1958 Brussels World's Fair",
+      "The 1967 Montreal World's Fair"
+    ],
+    "difficulty": "hard",
+    "category": "music"
+  },
+  "reason": "The New York fair location is already supplied by the answer to the Small World song-origin question; retaining that more informative fact.",
+  "source": "https://d23.com/a-to-z/new-york-worlds-fair/",
+  "optionChallenge": "Read all four options on both snapshots; overlap concerns the tested association rather than merely shared answer text."
+}

@@ -1,0 +1,3069 @@
+{
+  "schema": 1,
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "sourcesChecked": [
+    "b16-852",
+    "b16-852-extra-1",
+    "b16-853",
+    "b16-854",
+    "b16-854-extra-1",
+    "b16-855",
+    "b16-856",
+    "b16-857",
+    "b16-857-extra-1",
+    "b16-858",
+    "b16-859",
+    "b11-robin",
+    "b16-860",
+    "b16-860-extra-1",
+    "b16-861",
+    "b16-861-extra-1",
+    "b16-862",
+    "b16-862-extra-1",
+    "b16-863",
+    "b16-863-extra-1",
+    "b16-864",
+    "b16-864-extra-1",
+    "b10-bigben",
+    "b16-865",
+    "b16-866",
+    "b16-867",
+    "b16-868",
+    "b16-869",
+    "b14-bells",
+    "b16-870",
+    "b16-871",
+    "b16-872",
+    "b16-873",
+    "b16-873-extra-1",
+    "b16-874",
+    "b16-875",
+    "b16-875-extra-1",
+    "b16-875-extra-2",
+    "b16-876",
+    "b16-877",
+    "b16-877-extra-1",
+    "b16-878",
+    "b16-879",
+    "b16-880",
+    "b16-881",
+    "b16-882",
+    "b16-882-extra-1",
+    "b16-882-extra-2",
+    "b16-882-gogo",
+    "b16-882-honey",
+    "b16-882-fred",
+    "b16-884",
+    "b10-sina",
+    "b16-885",
+    "b16-885-extra-1",
+    "b16-885-extra-2",
+    "b16-886",
+    "b16-886-extra-1",
+    "b16-887",
+    "b16-888",
+    "b16-889",
+    "b16-890",
+    "b16-890-extra-1",
+    "b16-890-extra-2",
+    "b16-890-extra-3",
+    "b16-890-kali",
+    "b16-891",
+    "b16-891-extra-1",
+    "b16-892",
+    "b16-893",
+    "b16-894",
+    "b16-895",
+    "b16-897",
+    "b16-898",
+    "b16-899",
+    "b16-899-extra-1",
+    "b16-899-extra-2",
+    "b16-899-extra-3",
+    "b16-899-caribbean",
+    "b16-900",
+    "b16-900-extra-1",
+    "b16-900-extra-2",
+    "b16-900-extra-3",
+    "b16-901",
+    "b16-901-extra-1",
+    "b16-901-extra-2",
+    "b16-901-extra-3"
+  ],
+  "reviews": [
+    {
+      "questionId": 852,
+      "hash": "7b7b991179d3a66201fd0181533d694f1e40e98452f0c68dede16d15bd9f9cf4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. The Coachman also confines transformed boys, so the final wording specifies the puppet master and original film; the cage incident identifies Stromboli.",
+      "context": "Plot: departure from Stromboli show and bird-cage imprisonment",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Stromboli imprisons Pinocchio in his wagon when the puppet wants to go home.",
+        "sources": [
+          "b16-852",
+          "b16-852-extra-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Stromboli imprisons Pinocchio in his wagon when the puppet wants to go home.",
+          "sources": [
+            "b16-852"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Coachman organizes Pleasure Island, not this puppet show.",
+          "sources": [
+            "b16-852"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Honest John recruits Pinocchio for Stromboli; he is not the imprisoning showman.",
+          "sources": [
+            "b16-852"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lampwick is a boy met on the later island journey.",
+          "sources": [
+            "b16-852"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The Coachman also confines transformed boys, so the final wording specifies the puppet master and original film; the cage incident identifies Stromboli. Corroborating passages evaluated as listed; each source note states its own limited claim."
+      }
+    },
+    {
+      "questionId": 853,
+      "hash": "d7e4c40930d6670718e3fa6eec8de230694f487570a98e59cdcea5e5f0a03cb5",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. The original broad disappearing ability risks confusing magical effects and the Caterpillar's transformation. Final wording asks a concrete combined visual identity; none of the three other characters is that cat.",
+      "context": "Voice cast: Sterling Holloway as the Cheshire Cat; other Wonderland roles",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Cheshire Cat is described as a pink-and-purple-striped cat with a permanent grin.",
+        "sources": [
+          "b16-853"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Cheshire Cat is described as a pink-and-purple-striped cat with a permanent grin.",
+          "sources": [
+            "b16-853"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The White Rabbit is a waistcoated rabbit and royal herald.",
+          "sources": [
+            "b16-853"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Mad Hatter is the human tea-party host.",
+          "sources": [
+            "b16-853"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Caterpillar is a hookah-smoking caterpillar, not the striped cat.",
+          "sources": [
+            "b16-853"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The original broad disappearing ability risks confusing magical effects and the Caterpillar's transformation. Final wording asks a concrete combined visual identity; none of the three other characters is that cat."
+      }
+    },
+    {
+      "questionId": 854,
+      "hash": "9052a8db96dec061fa22cade8a62e64590fc4648712e540ef0692b14e12a41f6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. The mother question #1104 tests Mary, a separate parent. Do not confuse the Edwardian setting with an Edward Darling; the opening dialogue names George.",
+      "context": "Opening Darling nursery scene and Voice cast: George, John and Michael",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "George Darling is Wendy's father; Mary is her mother, and John and Michael are her brothers.",
+        "sources": [
+          "b16-854",
+          "b16-854-extra-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "George Darling is Wendy's father; Mary is her mother, and John and Michael are her brothers.",
+          "sources": [
+            "b16-854"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "John is Wendy's brother.",
+          "sources": [
+            "b16-854"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Michael is Wendy's youngest brother.",
+          "sources": [
+            "b16-854"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Edward is not the father's name in this family identification.",
+          "sources": [
+            "b16-854"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The mother question #1104 tests Mary, a separate parent. Do not confuse the Edwardian setting with an Edward Darling; the opening dialogue names George. Corroborating passages evaluated as listed; each source note states its own limited claim."
+      }
+    },
+    {
+      "questionId": 855,
+      "hash": "12ecb3ad50adffdea5c104904edf4ef482929c153eaf0e8d0b5576884c17998e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Read #856 and #2480 too: Lady's breed, Tramp's mixed ancestry and Jock's breed are different character facts. Specified 1955 rather than reasoning from live-action casting.",
+      "context": "Plot opening and Voice cast: Lady, Jock, Trusty and Tramp",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Lady is a cocker spaniel in the original 1955 animated film.",
+        "sources": [
+          "b16-855"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Lady is a cocker spaniel in the original 1955 animated film.",
+          "sources": [
+            "b16-855"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Scottish terrier identifies Jock, not Lady.",
+          "sources": [
+            "b16-855"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bloodhound identifies Trusty, not Lady.",
+          "sources": [
+            "b16-855"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A schnauzer is not Lady's established breed.",
+          "sources": [
+            "b16-855"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Read #856 and #2480 too: Lady's breed, Tramp's mixed ancestry and Jock's breed are different character facts. Specified 1955 rather than reasoning from live-action casting."
+      }
+    },
+    {
+      "questionId": 856,
+      "hash": "a80595204692883a06fd4cfaac8affc817a41bba3d79f26d11d549a6e129a09d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. The question asks the animated dog's classification, not the breed of a live-action animal performer. Possible terrier or schnauzer ancestry does not make any listed pure breed correct.",
+      "context": "Lead, Plot opening and Voice cast: Tramp as mongrel",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Tramp is a mixed-breed street dog, described as a mutt or mongrel.",
+        "sources": [
+          "b16-856"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Tramp is a mixed-breed street dog, described as a mutt or mongrel.",
+          "sources": [
+            "b16-856"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A dalmatian is a specific breed, not his mixed-breed classification.",
+          "sources": [
+            "b16-856"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A bulldog is not the classification given for Tramp.",
+          "sources": [
+            "b16-856"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A poodle is not the classification given for Tramp.",
+          "sources": [
+            "b16-856"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The question asks the animated dog's classification, not the breed of a live-action animal performer. Possible terrier or schnauzer ancestry does not make any listed pure breed correct."
+      }
+    },
+    {
+      "questionId": 857,
+      "hash": "006424ccea847021d580aabb35def958bdd3cea1852a65f3a1f31d695c0a86c9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Removed good fairy from the stem so Maleficent is not grammatically disqualified. The question asks who advocates blue, not whether Aurora's dress is ever blue or pink; both colors appear.",
+      "context": "Good-fairy cast descriptions; cottage dress color argument",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Merryweather argues for blue; Flora insists on pink, Fauna handles the cake, and Maleficent is the hostile fairy.",
+        "sources": [
+          "b16-857",
+          "b16-857-extra-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Merryweather argues for blue; Flora insists on pink, Fauna handles the cake, and Maleficent is the hostile fairy.",
+          "sources": [
+            "b16-857"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Flora argues for pink in this dispute.",
+          "sources": [
+            "b16-857"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fauna is the peacemaker and cake maker, not the blue advocate.",
+          "sources": [
+            "b16-857"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Maleficent is absent from the cottage dress dispute.",
+          "sources": [
+            "b16-857"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed good fairy from the stem so Maleficent is not grammatically disqualified. The question asks who advocates blue, not whether Aurora's dress is ever blue or pink; both colors appear. Corroborating passages evaluated as listed; each source note states its own limited claim."
+      }
+    },
+    {
+      "questionId": 858,
+      "hash": "98e54e8ef8ed116134d97d2cb40ccd7c6e1bdba97bd2f61dc8bce28ca1966d40",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. All options are cats, so species alone does not solve it. The identified rescuer is Tibbs; #1535 asks the estate name rather than the cat.",
+      "context": "Plot: Colonel and Sergeant Tibbs discover and evacuate Hell Hall; Voice cast",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Sergeant Tibbs is the barn cat who discovers the captive puppies and helps them escape Hell Hall.",
+        "sources": [
+          "b16-858"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Sergeant Tibbs is the barn cat who discovers the captive puppies and helps them escape Hell Hall.",
+          "sources": [
+            "b16-858"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Figaro is not the named cat assisting this rescue.",
+          "sources": [
+            "b16-858"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lucifer is not the named cat assisting this rescue.",
+          "sources": [
+            "b16-858"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Thomas O'Malley is not the named cat assisting this rescue.",
+          "sources": [
+            "b16-858"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All options are cats, so species alone does not solve it. The identified rescuer is Tibbs; #1535 asks the estate name rather than the cat."
+      }
+    },
+    {
+      "questionId": 859,
+      "hash": "218d97e7a4683d54077426dfa94863cf5157f0e960066dd5ccd89e29b333f45a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Read #1594 and #510: animal casting for different characters is not one reversible fact. The character-design account explicitly separates all four species.",
+      "context": "Voice cast and Ken Anderson character-design account",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Little John is a brown bear; Robin Hood is a fox, Friar Tuck a badger, and Prince John a lion.",
+        "sources": [
+          "b16-859",
+          "b11-robin"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Little John is a brown bear; Robin Hood is a fox, Friar Tuck a badger, and Prince John a lion.",
+          "sources": [
+            "b16-859"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A fox describes Robin Hood, not Little John.",
+          "sources": [
+            "b16-859"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A badger describes Friar Tuck, not Little John.",
+          "sources": [
+            "b16-859"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A lion describes Prince John, not Little John.",
+          "sources": [
+            "b16-859"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Read #1594 and #510: animal casting for different characters is not one reversible fact. The character-design account explicitly separates all four species."
+      }
+    },
+    {
+      "questionId": 860,
+      "hash": "af6cd6418ce6da87b2ffadd13d22b72adffe428b6e368467296804e2d7d56f38",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Close friendship could include all four, but the conjunction with pig selects Piglet. This is established theatrical Pooh character coverage, not TV-episode trivia.",
+      "context": "Lead and species infobox; Disney interpretation section",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Piglet is Pooh's small, timid pig friend.",
+        "sources": [
+          "b16-860",
+          "b16-860-extra-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Piglet is Pooh's small, timid pig friend.",
+          "sources": [
+            "b16-860"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Roo is the young kangaroo, not the pig.",
+          "sources": [
+            "b16-860"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rabbit is the rabbit, not the pig.",
+          "sources": [
+            "b16-860"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gopher is the burrowing gopher, not the pig.",
+          "sources": [
+            "b16-860"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Close friendship could include all four, but the conjunction with pig selects Piglet. This is established theatrical Pooh character coverage, not TV-episode trivia. Corroborating passages evaluated as listed; each source note states its own limited claim."
+      }
+    },
+    {
+      "questionId": 861,
+      "hash": "92206104179e470dc2054117181b16773c342988eb5101f29474a9c88cfcedeb",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Separated the original flight from the sequel and the later swamp boat journey. The original dialogue names Orville and Devil's Bayou, excluding the other transport helper.",
+      "context": "Plot, Orville cast entry and sequel discussion",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Orville is the albatross who flies Bernard and Bianca to Devil's Bayou in the original film.",
+        "sources": [
+          "b16-861",
+          "b16-861-extra-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Orville is the albatross who flies Bernard and Bianca to Devil's Bayou in the original film.",
+          "sources": [
+            "b16-861"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wilbur is the albatross in the Australian sequel.",
+          "sources": [
+            "b16-861"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Evinrude propels their leaf boat as a dragonfly.",
+          "sources": [
+            "b16-861"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dinky is not the albatross identified for this flight.",
+          "sources": [
+            "b16-861"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separated the original flight from the sequel and the later swamp boat journey. The original dialogue names Orville and Devil's Bayou, excluding the other transport helper. Corroborating passages evaluated as listed; each source note states its own limited claim."
+      }
+    },
+    {
+      "questionId": 862,
+      "hash": "30e399a8c15dd52bb7c9454ae5ef44502daed4c5cd103e574db63a18bfb127b1",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Widow Tweed actually adopts and raises Tod; Big Mama helps arrange it. The phrase helps raise does not claim the owl is the adoptive human owner asked about in #1113.",
+      "context": "Opening Plot and Big Mama cast entry",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Big Mama is the owl who arranges Tod's adoption and later advises him.",
+        "sources": [
+          "b16-862",
+          "b16-862-extra-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Big Mama is the owl who arranges Tod's adoption and later advises him.",
+          "sources": [
+            "b16-862"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Friend Owl is not the owl identified in this story.",
+          "sources": [
+            "b16-862"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mama Odie is not the owl identified in this story.",
+          "sources": [
+            "b16-862"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Archimedes is not the owl identified in this story.",
+          "sources": [
+            "b16-862"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Widow Tweed actually adopts and raises Tod; Big Mama helps arrange it. The phrase helps raise does not claim the owl is the adoptive human owner asked about in #1113. Corroborating passages evaluated as listed; each source note states its own limited claim."
+      }
+    },
+    {
+      "questionId": 863,
+      "hash": "91b2a12f2a7d9b350d3b2d8a1e8ad48160ee7bfa714d69edbb2cef19780a7a1c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Taran repeatedly identifies his occupation; Dallben owns Hen Wen but is not the young assistant. #2479 tests voice actor Grant Bardsley, an additional production fact rather than the same answer.",
+      "context": "Plot opening and cast; Taran's farm and dungeon self-identification",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Taran is the young assistant pig-keeper under Dallben.",
+        "sources": [
+          "b16-863",
+          "b16-863-extra-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Taran is the young assistant pig-keeper under Dallben.",
+          "sources": [
+            "b16-863"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fflewddur Fflam is the bard.",
+          "sources": [
+            "b16-863"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gurgi is the small creature accompanying Taran.",
+          "sources": [
+            "b16-863"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dallben is Taran's elderly guardian and enchanter.",
+          "sources": [
+            "b16-863"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Taran repeatedly identifies his occupation; Dallben owns Hen Wen but is not the young assistant. #2479 tests voice actor Grant Bardsley, an additional production fact rather than the same answer. Corroborating passages evaluated as listed; each source note states its own limited claim."
+      }
+    },
+    {
+      "questionId": 864,
+      "hash": "2e8082854fe2e64a4ab2d1d44c55d6aca5240f0a59a0e59eb3c3e489bcf701b8",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Removed invented Dr. titles from Flaversham and Ratigan. Flaversham accompanies the final pursuit, but is a toymaker rather than the doctor, so the conjunction still selects Dawson.",
+      "context": "Plot opening: Dawson meets Olivia; ending: investigative partnership",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "David Q. Dawson is the retired army surgeon who becomes Basil's investigative partner.",
+        "sources": [
+          "b16-864",
+          "b16-864-extra-1",
+          "b10-bigben"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "David Q. Dawson is the retired army surgeon who becomes Basil's investigative partner.",
+          "sources": [
+            "b16-864"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hiram Flaversham is Olivia's toymaker father.",
+          "sources": [
+            "b16-864"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Professor Ratigan is Basil's criminal adversary.",
+          "sources": [
+            "b16-864"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Delbert Doppler is not the surgeon partnered with Basil.",
+          "sources": [
+            "b16-864"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed invented Dr. titles from Flaversham and Ratigan. Flaversham accompanies the final pursuit, but is a toymaker rather than the doctor, so the conjunction still selects Dawson. Corroborating passages evaluated as listed; each source note states its own limited claim."
+      }
+    },
+    {
+      "questionId": 865,
+      "hash": "60a3dfb594257f7ecc9e9cffd04350154c59f8a7c968c5836a7c8e6dee68cbe6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. All four are gang members, so membership is not the discriminator. The source names the four different breeds; no competing gang member also fits chihuahua.",
+      "context": "Plot barge introduction and Voice cast: all four gang dogs",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Tito is the chihuahua; Dodger is a terrier, Francis a bulldog and Einstein a Great Dane.",
+        "sources": [
+          "b16-865"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Tito is the chihuahua; Dodger is a terrier, Francis a bulldog and Einstein a Great Dane.",
+          "sources": [
+            "b16-865"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dodger is the terrier, not the chihuahua.",
+          "sources": [
+            "b16-865"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Francis is the bulldog, not the chihuahua.",
+          "sources": [
+            "b16-865"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Einstein is the Great Dane, not the chihuahua.",
+          "sources": [
+            "b16-865"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All four are gang members, so membership is not the discriminator. The source names the four different breeds; no competing gang member also fits chihuahua."
+      }
+    },
+    {
+      "questionId": 866,
+      "hash": "f8582877f8bb9b739eeb1c3501acd4566a33488c13bc7d2819f38c432209562a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Removed the Chef title from the correct option, which alone previously repeated the stem's profession. The 1989 kitchen pursuit, not a remake or household job in general, fixes Louis.",
+      "context": "Voice cast: Chef Louis; palace kitchen pursuit",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Louis is Eric's cook who tries to prepare Sebastian as food.",
+        "sources": [
+          "b16-866"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Louis is Eric's cook who tries to prepare Sebastian as food.",
+          "sources": [
+            "b16-866"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Grimsby is Eric's adviser, not the pursuing cook.",
+          "sources": [
+            "b16-866"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Carlotta is the household maid, not the pursuing cook.",
+          "sources": [
+            "b16-866"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Max is Eric's dog, not the pursuing cook.",
+          "sources": [
+            "b16-866"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the Chef title from the correct option, which alone previously repeated the stem's profession. The 1989 kitchen pursuit, not a remake or household job in general, fixes Louis."
+      }
+    },
+    {
+      "questionId": 867,
+      "hash": "576fb775412c8e7fa6f2d7bfe69c347ee7e7dcc180ccd05526491949982044b6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Rafiki also advises the royal family, but the hornbill and majordomo conjunction excludes him. The other two named animals are not birds or palace officials.",
+      "context": "Plot elephant-graveyard rescue and Voice cast: Zazu, Rafiki, Timon and Banzai",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Zazu is Mufasa's hornbill majordomo.",
+        "sources": [
+          "b16-867"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Zazu is Mufasa's hornbill majordomo.",
+          "sources": [
+            "b16-867"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rafiki is the mandrill shaman.",
+          "sources": [
+            "b16-867"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Timon is a meerkat.",
+          "sources": [
+            "b16-867"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Banzai is a spotted hyena.",
+          "sources": [
+            "b16-867"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rafiki also advises the royal family, but the hornbill and majordomo conjunction excludes him. The other two named animals are not birds or palace officials."
+      }
+    },
+    {
+      "questionId": 868,
+      "hash": "63277ba36484bb333bc207d2684bf71c0edc4793b84cac5f7502cc47435103b5",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. This asks the Disney film's intended match, not historical marriage or the sequel romance. Kocoum's death does not change the initial expectation.",
+      "context": "Plot opening, Nakoma warning Kocoum, and cast descriptions",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Chief Powhatan wants Pocahontas to marry the warrior Kocoum.",
+        "sources": [
+          "b16-868"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Chief Powhatan wants Pocahontas to marry the warrior Kocoum.",
+          "sources": [
+            "b16-868"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Nakoma is Pocahontas's friend, not this prospective husband.",
+          "sources": [
+            "b16-868"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Thomas is the English settler who later shoots Kocoum.",
+          "sources": [
+            "b16-868"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Powhatan is Pocahontas's father, not her prospective husband.",
+          "sources": [
+            "b16-868"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "This asks the Disney film's intended match, not historical marriage or the sequel romance. Kocoum's death does not change the initial expectation."
+      }
+    },
+    {
+      "questionId": 869,
+      "hash": "f9b667cfaffa80083c8d0dd7599a69c8b53b9a56feeeba2c3a08cacddfda9013",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Frollo sings within the opening number, but that does not make him the framing puppeteer. #548 asks the song title; this asks the storyteller's identity.",
+      "context": "Plot opening and Clopin cast entry",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Clopin is the puppeteer who tells Quasimodo's origin to children in the opening.",
+        "sources": [
+          "b16-869",
+          "b14-bells"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Clopin is the puppeteer who tells Quasimodo's origin to children in the opening.",
+          "sources": [
+            "b16-869"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Phoebus is the captain, not the opening storyteller.",
+          "sources": [
+            "b16-869"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Quasimodo is the bell-ringer whose story is told.",
+          "sources": [
+            "b16-869"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Frollo appears in the story but is not its framing puppeteer.",
+          "sources": [
+            "b16-869"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Frollo sings within the opening number, but that does not make him the framing puppeteer. #548 asks the song title; this asks the storyteller's identity."
+      }
+    },
+    {
+      "questionId": 870,
+      "hash": "1de6836f9276168aca6c165ec0ddf71f57d70621cbe6b784962e145c96eef9c6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. The Disney romance is Megara's rather than any woman associated with mythological Heracles. The final choice to remain with Meg establishes the precise romantic relationship.",
+      "context": "Plot ending and Voice cast: Megara and the Muses",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Megara is Hercules's romantic partner; he chooses a mortal life with her.",
+        "sources": [
+          "b16-870"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Megara is Hercules's romantic partner; he chooses a mortal life with her.",
+          "sources": [
+            "b16-870"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Thalia is a Muse, not the romantic partner in this story.",
+          "sources": [
+            "b16-870"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Calliope is a Muse, not the romantic partner in this story.",
+          "sources": [
+            "b16-870"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Atropos is not the woman for whom Hercules retrieves a soul and gives up Olympus.",
+          "sources": [
+            "b16-870"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The Disney romance is Megara's rather than any woman associated with mythological Heracles. The final choice to remain with Meg establishes the precise romantic relationship."
+      }
+    },
+    {
+      "questionId": 871,
+      "hash": "e0b52644752b18e50da01dc31f55c091f2423c5e1e4a664d923e124048c8b0ba",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Other soldiers may help one another learn, but the stem asks the army captain responsible for the unit; this fixes Shang rather than an assistant or recruit.",
+      "context": "Plot training camp and cast: Captain Li Shang, Chi-Fu, Yao and Ling",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Captain Li Shang commands and trains the recruits; Chi-Fu is the imperial official, Yao and Ling recruits.",
+        "sources": [
+          "b16-871"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Captain Li Shang commands and trains the recruits; Chi-Fu is the imperial official, Yao and Ling recruits.",
+          "sources": [
+            "b16-871"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Chi-Fu is the imperial representative who criticizes the training.",
+          "sources": [
+            "b16-871"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Yao is a fellow recruit under Shang.",
+          "sources": [
+            "b16-871"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ling is a fellow recruit under Shang.",
+          "sources": [
+            "b16-871"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other soldiers may help one another learn, but the stem asks the army captain responsible for the unit; this fixes Shang rather than an assistant or recruit."
+      }
+    },
+    {
+      "questionId": 872,
+      "hash": "cc571d04669c2504a7f20cd436fcb7c445336a420ec164bdd40648f265b0488e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Terk also satisfies childhood friend but fails elephant. Kerchak and Sabor fail both the species and the stated friendship.",
+      "context": "Childhood Plot and Voice cast: Tantor, Kerchak, Terk and Sabor",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Tantor is the elephant who befriends Tarzan as a child.",
+        "sources": [
+          "b16-872"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Tantor is the elephant who befriends Tarzan as a child.",
+          "sources": [
+            "b16-872"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kerchak is the gorilla troop leader.",
+          "sources": [
+            "b16-872"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Terk is the gorilla childhood friend.",
+          "sources": [
+            "b16-872"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sabor is the leopard.",
+          "sources": [
+            "b16-872"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Terk also satisfies childhood friend but fails elephant. Kerchak and Sabor fail both the species and the stated friendship."
+      }
+    },
+    {
+      "questionId": 873,
+      "hash": "35601c90a855b2a004b97e410aabcbb57cb8b6b52b70aad66523b20a97668b95",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. The role and age are explicitly stated in Milo's question to Audrey. Repair-adjacent technical jobs do not make the geologist or radio operator the chief mechanic.",
+      "context": "Expedition roster and cast; campfire dialogue about teenager chief mechanic",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Audrey Ramirez is the expedition's teenage chief mechanic.",
+        "sources": [
+          "b16-873",
+          "b16-873-extra-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Audrey Ramirez is the expedition's teenage chief mechanic.",
+          "sources": [
+            "b16-873"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Helga Sinclair is Rourke's second-in-command.",
+          "sources": [
+            "b16-873"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Moliere is the geologist and tunneling expert.",
+          "sources": [
+            "b16-873"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Packard is the radio operator.",
+          "sources": [
+            "b16-873"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The role and age are explicitly stated in Milo's question to Audrey. Repair-adjacent technical jobs do not make the geologist or radio operator the chief mechanic. Corroborating passages evaluated as listed; each source note states its own limited claim."
+      }
+    },
+    {
+      "questionId": 874,
+      "hash": "3a5fa960a2a9c668d8afc3d0c12be91730a36b0413472cd9ff237ded6c7e0d03",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Replaced poses as with the actual official assignment and specified 2002. This tests the theatrical mission, not sequel or TV stories involving Reuben.",
+      "context": "Plot: Councilwoman assigns Jumba and Earth expert Pleakley; Voice cast",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pleakley is the council's Earth expert assigned to assist Jumba in retrieving Stitch.",
+        "sources": [
+          "b16-874"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Pleakley is the council's Earth expert assigned to assist Jumba in retrieving Stitch.",
+          "sources": [
+            "b16-874"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jumba is the scientist being assisted and Stitch's creator.",
+          "sources": [
+            "b16-874"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gantu is the captain, not this assigned Earth expert.",
+          "sources": [
+            "b16-874"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Reuben is not the agent assigned as Jumba's Earth expert in the 2002 film.",
+          "sources": [
+            "b16-874"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Replaced poses as with the actual official assignment and specified 2002. This tests the theatrical mission, not sequel or TV stories involving Reuben."
+      }
+    },
+    {
+      "questionId": 875,
+      "hash": "43b1272a66e1799605842571223199de36a9a1deecb7d921a7a55a2d25412f95",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Challenged the premise separately: the map is a distinct object, not a piece stored in B.E.N. Final wording asks the recovered memory circuit and its owner. #2613 asks Martin Short's voice performance, an additional fact.",
+      "context": "Plot: treasure chamber, Flint's skeleton and memory-circuit restoration",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Jim finds B.E.N.'s missing primary memory circuit with Flint's skeleton and reinstalls it, restoring knowledge of the trap.",
+        "sources": [
+          "b16-875",
+          "b16-875-extra-1",
+          "b16-875-extra-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Jim finds B.E.N.'s missing primary memory circuit with Flint's skeleton and reinstalls it, restoring knowledge of the trap.",
+          "sources": [
+            "b16-875"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "M.O. is not the robot whose circuit Jim restores here.",
+          "sources": [
+            "b16-875"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Auto is not the robot whose circuit Jim restores here.",
+          "sources": [
+            "b16-875"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "DOR-15 is not the robot whose circuit Jim restores here.",
+          "sources": [
+            "b16-875"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged the premise separately: the map is a distinct object, not a piece stored in B.E.N. Final wording asks the recovered memory circuit and its owner. #2613 asks Martin Short's voice performance, an additional fact. Corroborating passages evaluated as listed; each source note states its own limited claim."
+      }
+    },
+    {
+      "questionId": 876,
+      "hash": "e2460dea1a111e18f55950e5e3506941045217ef75a64575247aced30b7a5691",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. All options are paired character names of comparable form. The source explicitly names the two moose; the other pairs do not denote that duo.",
+      "context": "Plot journey and Voice cast: Rutt and Tuke",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Rutt and Tuke are the moose brothers encountered by Kenai and Koda.",
+        "sources": [
+          "b16-876"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Rutt and Tuke are the moose brothers encountered by Kenai and Koda.",
+          "sources": [
+            "b16-876"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Timon and Pumbaa are not the named moose brothers.",
+          "sources": [
+            "b16-876"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jock and Trusty are not the named moose brothers.",
+          "sources": [
+            "b16-876"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pain and Panic are not the named moose brothers.",
+          "sources": [
+            "b16-876"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All options are paired character names of comparable form. The source explicitly names the two moose; the other pairs do not denote that duo."
+      }
+    },
+    {
+      "questionId": 877,
+      "hash": "746d27af787f07850657578a85bed193e6ca66a8b7a31673640b20ba679ad1e5",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. The father is also nicknamed Ace in some accounts, so final wording fixes the action-hero counterpart rather than a real first name. This is an in-universe movie sequence in a theatrical film, not real TV trivia.",
+      "context": "Plot final paragraph, Voice cast: Adam West as Ace, and video-game section",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Ace is the action-hero movie version of Chicken Little shown in the film-within-the-film ending.",
+        "sources": [
+          "b16-877",
+          "b16-877-extra-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Ace is the action-hero movie version of Chicken Little shown in the film-within-the-film ending.",
+          "sources": [
+            "b16-877"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Buck is Chicken Little's father, not his Hollywood counterpart's name.",
+          "sources": [
+            "b16-877"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kirby is the alien child, not the action-hero counterpart.",
+          "sources": [
+            "b16-877"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Runt is the pig friend, with his own movie counterpart.",
+          "sources": [
+            "b16-877"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The father is also nicknamed Ace in some accounts, so final wording fixes the action-hero counterpart rather than a real first name. This is an in-universe movie sequence in a theatrical film, not real TV trivia. Corroborating passages evaluated as listed; each source note states its own limited claim."
+      }
+    },
+    {
+      "questionId": 878,
+      "hash": "5f3127c96076e2c672292801a44a73c9731214d59e04f06425b0f602a5d6415b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Bowler Hat Guy and his hat are separate entities. Goob identifies the human in #1087; Doris names the sentient invention here.",
+      "context": "Plot science-fair sabotage and Helping Hat reveal; Voice cast",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Doris is the rogue robotic bowler hat helping Goob sabotage Lewis.",
+        "sources": [
+          "b16-878"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Doris is the rogue robotic bowler hat helping Goob sabotage Lewis.",
+          "sources": [
+            "b16-878"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Carl is the Robinsons' friendly robot.",
+          "sources": [
+            "b16-878"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lefty is not the bowler hat's given identity.",
+          "sources": [
+            "b16-878"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Goob is the man wearing the hat, not the hat itself.",
+          "sources": [
+            "b16-878"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Bowler Hat Guy and his hat are separate entities. Goob identifies the human in #1087; Doris names the sentient invention here."
+      }
+    },
+    {
+      "questionId": 879,
+      "hash": "a3344f1682b1502138326258bfc18b3181c523da8b993e16ca173ac74a0ae8cf",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Changed black cat to stray cat to avoid inaccurately implying an all-black coat: Mittens has white tuxedo markings. This is the film's real journey, not a fictional TV-episode claim.",
+      "context": "Plot New York meeting, cross-country journey and Voice cast",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Mittens is the stray tuxedo cat who guides Bolt and later helps him reunite with Penny.",
+        "sources": [
+          "b16-879"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Mittens is the stray tuxedo cat who guides Bolt and later helps him reunite with Penny.",
+          "sources": [
+            "b16-879"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rhino is the hamster traveling with them.",
+          "sources": [
+            "b16-879"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Whiskers is not the cat named in this journey.",
+          "sources": [
+            "b16-879"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Penny is the human Bolt is trying to find.",
+          "sources": [
+            "b16-879"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Changed black cat to stray cat to avoid inaccurately implying an all-black coat: Mittens has white tuxedo markings. This is the film's real journey, not a fictional TV-episode claim."
+      }
+    },
+    {
+      "questionId": 880,
+      "hash": "1b1515f0e89e9b81255484e95bd70509bad07b3f2159d2a2d3c388137f2bcb5f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Eudora and Charlotte also guide or help Tiana, but neither is the blind bayou priestess. Juju lives there but is a snake; role and blindness jointly fix Mama Odie.",
+      "context": "Bayou Plot and cast: Mama Odie, Eudora, Charlotte and Juju",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Mama Odie is the blind bayou priestess who advises Tiana and Naveen; Juju is her snake.",
+        "sources": [
+          "b16-880"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Mama Odie is the blind bayou priestess who advises Tiana and Naveen; Juju is her snake.",
+          "sources": [
+            "b16-880"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Eudora is Tiana's mother.",
+          "sources": [
+            "b16-880"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Charlotte is Tiana's childhood friend.",
+          "sources": [
+            "b16-880"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Juju is Mama Odie's snake, not the priestess.",
+          "sources": [
+            "b16-880"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Eudora and Charlotte also guide or help Tiana, but neither is the blind bayou priestess. Juju lives there but is a snake; role and blindness jointly fix Mama Odie."
+      }
+    },
+    {
+      "questionId": 881,
+      "hash": "6ed8314505c457b8061df2cf5ba7914d56c84f728a3f53799c6a11816eddeafc",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Specified 2013 to exclude the small snow creatures in Frozen Fever. Olaf is also made of snow but does not satisfy giant palace guard.",
+      "context": "Voice cast: Paul Briggs as Marshmallow; palace confrontation",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Marshmallow is the giant snow monster guarding Elsa's palace.",
+        "sources": [
+          "b16-881"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Marshmallow is the giant snow monster guarding Elsa's palace.",
+          "sources": [
+            "b16-881"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Olaf is the smaller snowman accompanying Anna and Kristoff.",
+          "sources": [
+            "b16-881"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sven is the reindeer, not a snow guardian.",
+          "sources": [
+            "b16-881"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Snowgies belong to Frozen Fever, not the giant guard in the 2013 film.",
+          "sources": [
+            "b16-881"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Specified 2013 to exclude the small snow creatures in Frozen Fever. Olaf is also made of snow but does not satisfy giant palace guard."
+      }
+    },
+    {
+      "questionId": 882,
+      "hash": "ec4c441664d995a61c52d299e4f5e93134e5601bb560bb7e61b46d47459f132f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Did not infer exclusive abilities merely from Wasabi's laser expertise. Cross-checked the described equipment: discs, chemistry spheres and monster suit differ from his retractable forearm blades. #1134 tests another member's equipment.",
+      "context": "Voice cast and laboratory introduction; Wasabi armor description",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Wasabi specializes in laser-induced plasma and his battle armor deploys plasma blades.",
+        "sources": [
+          "b16-882",
+          "b16-882-extra-1",
+          "b16-882-extra-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Wasabi specializes in laser-induced plasma and his battle armor deploys plasma blades.",
+          "sources": [
+            "b16-882",
+            "b16-882-extra-1",
+            "b16-882-extra-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Go Go uses electromagnetic wheels/discs, not Wasabi's forearm plasma-blade system.",
+          "sources": [
+            "b16-882-gogo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Honey Lemon uses chemistry spheres, not the forearm plasma-blade system.",
+          "sources": [
+            "b16-882-honey"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fred wears the monster suit with jumping and fire effects, not the plasma-blade system.",
+          "sources": [
+            "b16-882-fred"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Did not infer exclusive abilities merely from Wasabi's laser expertise. Cross-checked the described equipment: discs, chemistry spheres and monster suit differ from his retractable forearm blades. #1134 tests another member's equipment. Corroborating passages evaluated as listed; each source note states its own limited claim."
+      }
+    },
+    {
+      "questionId": 884,
+      "hash": "54a6da1e3bcfa46b7dbd78d0a008ccd9eabd9aac0e348b095eb865b974b35f47",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Several characters guide Moana, but only Tala has the stated grandmother relationship. This does not duplicate the Sina or Chief Tui parent questions.",
+      "context": "Plot cavern revelation and Tala's spirit; Voice cast family relationships",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Gramma Tala is Moana's ocean-loving grandmother and guide.",
+        "sources": [
+          "b16-884",
+          "b10-sina"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Gramma Tala is Moana's ocean-loving grandmother and guide.",
+          "sources": [
+            "b16-884"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sina is Moana's mother.",
+          "sources": [
+            "b16-884"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Te Fiti is the island goddess, not her grandmother.",
+          "sources": [
+            "b16-884"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Chief Tui is Moana's father.",
+          "sources": [
+            "b16-884"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Several characters guide Moana, but only Tala has the stated grandmother relationship. This does not duplicate the Sina or Chief Tui parent questions."
+      }
+    },
+    {
+      "questionId": 885,
+      "hash": "2d6f7ef5666f239550fcded0e81d906d48f09950f64b90a35b1bee8b3183c18e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Camilo can imitate Bruno or Dolores without transferring his gift to them. Rechecked the explicit gift roster and clarified whose cousins are meant; #1135 and #1099 test different gifts.",
+      "context": "Voice cast family relationships and gifts; The Family Madrigal cousin roll call",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Camilo is Mirabel's cousin with the shapeshifting gift; Dolores hears extraordinarily, Antonio speaks with animals, Bruno sees the future.",
+        "sources": [
+          "b16-885",
+          "b16-885-extra-1",
+          "b16-885-extra-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Camilo is Mirabel's cousin with the shapeshifting gift; Dolores hears extraordinarily, Antonio speaks with animals, Bruno sees the future.",
+          "sources": [
+            "b16-885",
+            "b16-885-extra-1",
+            "b16-885-extra-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dolores has exceptional hearing.",
+          "sources": [
+            "b16-885",
+            "b16-885-extra-1",
+            "b16-885-extra-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Antonio communicates with animals.",
+          "sources": [
+            "b16-885",
+            "b16-885-extra-1",
+            "b16-885-extra-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bruno has prophetic visions and is Mirabel's uncle rather than cousin.",
+          "sources": [
+            "b16-885",
+            "b16-885-extra-1",
+            "b16-885-extra-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Camilo can imitate Bruno or Dolores without transferring his gift to them. Rechecked the explicit gift roster and clarified whose cousins are meant; #1135 and #1099 test different gifts. Corroborating passages evaluated as listed; each source note states its own limited claim."
+      }
+    },
+    {
+      "questionId": 886,
+      "hash": "8ad5b229291ee1079190e9e621d50185d6489ae3320f8470de89ca52590049f4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. The word Adventure in the ride title is a thematic clue but does not state Adventureland. #100 concerns Pirates at Magic Kingdom, #2525 Skull Rock in Paris, and #887 the temple subtitle, all separate location or naming facts.",
+      "context": "Disneyland attraction location; Forbidden Eye listing",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disneyland's Indiana Jones Adventure is in Adventureland.",
+        "sources": [
+          "b16-886",
+          "b16-886-extra-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disneyland's Indiana Jones Adventure is in Adventureland.",
+          "sources": [
+            "b16-886-extra-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Frontierland is not the assigned land for this Disneyland attraction.",
+          "sources": [
+            "b16-886-extra-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fantasyland is not the assigned land.",
+          "sources": [
+            "b16-886-extra-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tomorrowland is not the assigned land.",
+          "sources": [
+            "b16-886-extra-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The word Adventure in the ride title is a thematic clue but does not state Adventureland. #100 concerns Pirates at Magic Kingdom, #2525 Skull Rock in Paris, and #887 the temple subtitle, all separate location or naming facts. Corroborating passages evaluated as listed; each source note states its own limited claim."
+      }
+    },
+    {
+      "questionId": 887,
+      "hash": "3e5da3c5d1dc78c8d09baeffd64a5bfd3a8d0c8747f9a87dbc38e90cd34f46f4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Used parallel real Indiana Jones temple names as distractors. Resort context is essential: do not import Tokyo's subtitle or confuse a movie title with this ride.",
+      "context": "Opening list of Indiana Jones experiences by resort",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disneyland's ride is Indiana Jones Adventure: Temple of the Forbidden Eye; Tokyo uses Crystal Skull and Paris has Temple of Peril.",
+        "sources": [
+          "b16-887"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disneyland's ride is Indiana Jones Adventure: Temple of the Forbidden Eye; Tokyo uses Crystal Skull and Paris has Temple of Peril.",
+          "sources": [
+            "b16-887"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Temple of the Crystal Skull is the Tokyo version.",
+          "sources": [
+            "b16-887"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Temple of Peril is the Paris attraction.",
+          "sources": [
+            "b16-887"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Temple of Doom is not the Disneyland subtitle in the official list.",
+          "sources": [
+            "b16-887"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Used parallel real Indiana Jones temple names as distractors. Resort context is essential: do not import Tokyo's subtitle or confuse a movie title with this ride."
+      }
+    },
+    {
+      "questionId": 888,
+      "hash": "37e0a366bf8200ba0461531e8bd4b933e152b65727ed900250526aace876444c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. The ride also has staged environments, but its actual working greenhouses make only the first offered kind of space correct. #920 asks the farming ride's name and #1139 its pavilion; this greenhouse feature is related but a distinct requested attribute.",
+      "context": "Opening description: gentle boat tour past greenhouses",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Living with the Land takes its boats through agricultural greenhouses.",
+        "sources": [
+          "b16-888"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Living with the Land takes its boats through agricultural greenhouses.",
+          "sources": [
+            "b16-888"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Space capsules are not the agricultural growing spaces described.",
+          "sources": [
+            "b16-888"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Underwater tunnels are not the plant-growing spaces described.",
+          "sources": [
+            "b16-888"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Movie sets are not the working growing spaces described.",
+          "sources": [
+            "b16-888"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The ride also has staged environments, but its actual working greenhouses make only the first offered kind of space correct. #920 asks the farming ride's name and #1139 its pavilion; this greenhouse feature is related but a distinct requested attribute."
+      }
+    },
+    {
+      "questionId": 889,
+      "hash": "46c7dd67c3b2521b43865330798337880b60347228dc170dda36cc41f2b86545",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Separated ride identity from film category: this is park-location trivia, so parks remains correct even though Nemo is Pixar. The pavilion is identified through the ride and SeaBase connection.",
+      "context": "A Fin-tastic Adventure and Explore the Aquarium; Seas exit",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Nemo clamobile ride occupies The Seas pavilion and exits into its SeaBase aquarium.",
+        "sources": [
+          "b16-889"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Nemo clamobile ride occupies The Seas pavilion and exits into its SeaBase aquarium.",
+          "sources": [
+            "b16-889"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Land is the agricultural pavilion, not the Nemo aquarium site.",
+          "sources": [
+            "b16-889"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Imagination is not the pavilion identified by the Seas ride and aquarium.",
+          "sources": [
+            "b16-889"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Odyssey is not the pavilion identified by the Seas ride and aquarium.",
+          "sources": [
+            "b16-889"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separated ride identity from film category: this is park-location trivia, so parks remains correct even though Nemo is Pixar. The pavilion is identified through the ride and SeaBase connection."
+      }
+    },
+    {
+      "questionId": 890,
+      "hash": "754df3905f7cc02cbe38f065d23486f07674b6b896c75070c538295ea79373b7",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Wild Africa Trek genuinely includes a safari-vehicle portion in Harambe Reserve, so it was removed rather than dismissed. Final options distinguish truck, raft, train and walking trail. #1484 asks the village/area name Harambe, not the safari ride.",
+      "context": "Opening and A Truly Wild Adventure",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Kilimanjaro Safaris is the guided open-air safari-vehicle ride through Harambe Wildlife Reserve.",
+        "sources": [
+          "b16-890",
+          "b16-890-extra-1",
+          "b16-890-extra-2",
+          "b16-890-extra-3"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Kilimanjaro Safaris is the guided open-air safari-vehicle ride through Harambe Wildlife Reserve.",
+          "sources": [
+            "b16-890"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kali River Rapids is a river raft attraction, not this truck ride.",
+          "sources": [
+            "b16-890-kali"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wildlife Express Train travels by locomotive to Conservation Station.",
+          "sources": [
+            "b16-890-extra-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Maharajah Jungle Trek is a walking trail through Asian animal habitats.",
+          "sources": [
+            "b16-890-extra-3"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Wild Africa Trek genuinely includes a safari-vehicle portion in Harambe Reserve, so it was removed rather than dismissed. Final options distinguish truck, raft, train and walking trail. #1484 asks the village/area name Harambe, not the safari ride. Corroborating passages evaluated as listed; each source note states its own limited claim."
+      }
+    },
+    {
+      "questionId": 891,
+      "hash": "690ae927df2b966ae977f8b994797f23c030841feda6c70f10a5a6f4e68c774e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Changed to before-closure wording. Time-traveling is necessary context and also appears in other invented choices; it does not uniquely give Time Rovers. Rechecked the name separately from the closure date.",
+      "context": "When is DinoLand closing; Time Rover references",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "DINOSAUR used vehicles called Time Rovers; the attraction's final operating day was February 1, 2026.",
+        "sources": [
+          "b16-891",
+          "b16-891-extra-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "DINOSAUR used vehicles called Time Rovers; the attraction's final operating day was February 1, 2026.",
+          "sources": [
+            "b16-891"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dino Runners is not the established vehicle name.",
+          "sources": [
+            "b16-891"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Chrono Cruisers is not the established vehicle name.",
+          "sources": [
+            "b16-891"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Primeval Rovers is not the established vehicle name.",
+          "sources": [
+            "b16-891"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Changed to before-closure wording. Time-traveling is necessary context and also appears in other invented choices; it does not uniquely give Time Rovers. Rechecked the name separately from the closure date. Corroborating passages evaluated as listed; each source note states its own limited claim."
+      }
+    },
+    {
+      "questionId": 892,
+      "hash": "4a65cf241c8a285d4b929b550b427b7ea457d3b7a301da37e243054f0c696c15",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Movement alone could fit multiple rides; the giant teacup vehicles select Mad Tea Party. No title words are copied into the question.",
+      "context": "Opening, A Very Merry UnBirthday and Control Your Spin",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Mad Tea Party spins guests in giant teacups.",
+        "sources": [
+          "b16-892"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Mad Tea Party spins guests in giant teacups.",
+          "sources": [
+            "b16-892"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Prince Charming Regal Carrousel uses carousel horses, not teacups.",
+          "sources": [
+            "b16-892"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dumbo uses flying elephant vehicles, not teacups.",
+          "sources": [
+            "b16-892"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Pooh dark ride is not the spinning-teacup attraction.",
+          "sources": [
+            "b16-892"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Movement alone could fit multiple rides; the giant teacup vehicles select Mad Tea Party. No title words are copied into the question."
+      }
+    },
+    {
+      "questionId": 893,
+      "hash": "0a900d53e31ee45fa3dd10a56f8d1792f65f32f95ba04fb7a8867ae813cf68ae",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. The selected conjunction is flying pirate ships over London, not any attraction containing a boat. The presence of British scenes elsewhere would not satisfy the ride vehicle and scene together.",
+      "context": "Set Sail Across the Sky: pirate galleon and London",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Peter Pan's Flight boards a pirate galleon and flies over London, including Big Ben and Tower Bridge.",
+        "sources": [
+          "b16-893"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Peter Pan's Flight boards a pirate galleon and flies over London, including Big Ben and Tower Bridge.",
+          "sources": [
+            "b16-893"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "It's a Small World uses boats past international doll scenes, not flying pirate ships over London.",
+          "sources": [
+            "b16-893"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Barnstormer is a coaster, not this London dark ride.",
+          "sources": [
+            "b16-893"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Under the Sea is the Mermaid dark ride, not this pirate-galleon flight.",
+          "sources": [
+            "b16-893"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The selected conjunction is flying pirate ships over London, not any attraction containing a boat. The presence of British scenes elsewhere would not satisfy the ride vehicle and scene together."
+      }
+    },
+    {
+      "questionId": 894,
+      "hash": "7e734b6497bffb6a02999cd460af5d0be03fa7079cc0a5b964bdbf5f6b7e75ab",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Other attractions contain humor, but the live skipper's intentionally corny narration selects Jungle Cruise. Historical snapshot describes the base attraction rather than promising holiday operation.",
+      "context": "Adventure Around Every Corner: dry wit and trusty skipper",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Jungle Cruise is the comedic river tour with a live skipper and dry jokes.",
+        "sources": [
+          "b16-894"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Jungle Cruise is the comedic river tour with a live skipper and dry jokes.",
+          "sources": [
+            "b16-894"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Swiss Family Treehouse is a walk-through treehouse, not a skippered tour.",
+          "sources": [
+            "b16-894"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pirates of the Caribbean is a pirate dark boat ride, not the live-skipper comedy tour.",
+          "sources": [
+            "b16-894"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Magic Carpets of Aladdin is a flying-carpet spinner, not a skippered river tour.",
+          "sources": [
+            "b16-894"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other attractions contain humor, but the live skipper's intentionally corny narration selects Jungle Cruise. Historical snapshot describes the base attraction rather than promising holiday operation."
+      }
+    },
+    {
+      "questionId": 895,
+      "hash": "3058e825faf1f32318fa5c74ea4ec888350aecafacd31bc935e4a4fcffbd6e0e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. The official description explicitly names Mexico. #1171 asks pyramid architecture, requiring another fact rather than knowing which ride Mexico houses.",
+      "context": "Opening description: gentle boat ride through Mexico Pavilion",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Gran Fiesta Tour Starring The Three Caballeros is inside the Mexico Pavilion.",
+        "sources": [
+          "b16-895"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Gran Fiesta Tour Starring The Three Caballeros is inside the Mexico Pavilion.",
+          "sources": [
+            "b16-895"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Norway is not the pavilion assigned to Gran Fiesta Tour.",
+          "sources": [
+            "b16-895"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Germany is not the pavilion assigned to Gran Fiesta Tour.",
+          "sources": [
+            "b16-895"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Italy is not the pavilion assigned to Gran Fiesta Tour.",
+          "sources": [
+            "b16-895"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The official description explicitly names Mexico. #1171 asks pyramid architecture, requiring another fact rather than knowing which ride Mexico houses."
+      }
+    },
+    {
+      "questionId": 897,
+      "hash": "5dffa2f804c929d89f148b8ec4276d53d35972fa7de4cbdca0b5a48a50eac657",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Other rides can display dimensional projections, but the combination of carnival targets and guest-operated shooters uniquely identifies Mania among the four.",
+      "context": "It's Playtime, Fun & Games and related attractions",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Toy Story Mania uses 3D glasses, carnival trams and spring-action shooters aimed at moving targets.",
+        "sources": [
+          "b16-897"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Toy Story Mania uses 3D glasses, carnival trams and spring-action shooters aimed at moving targets.",
+          "sources": [
+            "b16-897"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Alien Swirling Saucers is a spinning rocket ride, not the target-shooting game.",
+          "sources": [
+            "b16-897"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Slinky Dog Dash is a coaster, not the target-shooting game.",
+          "sources": [
+            "b16-897"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Runaway Railway is a cartoon adventure, not this interactive target game.",
+          "sources": [
+            "b16-897"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other rides can display dimensional projections, but the combination of carnival targets and guest-operated shooters uniquely identifies Mania among the four."
+      }
+    },
+    {
+      "questionId": 898,
+      "hash": "0bc0ab84f35ca6f0d8ad5915bf40cc947c0db141f5b99bbf2a1e0eddaae35f4a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Removed Mickey, Minnie and railway from the stem and replaced invented near-titles with real rides. Engineer Goofy supplies a scene fact rather than copying the answer title; #1173 instead asks the theater building.",
+      "context": "Engineer Goofy opening and Hollywood Studios section",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Mickey & Minnie's Runaway Railway carries guests on Engineer Goofy's train into the cartoon world at Hollywood Studios.",
+        "sources": [
+          "b16-898"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Mickey & Minnie's Runaway Railway carries guests on Engineer Goofy's train into the cartoon world at Hollywood Studios.",
+          "sources": [
+            "b16-898"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Toy Story Mania is a carnival shooting game, not Engineer Goofy's train.",
+          "sources": [
+            "b16-898"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Slinky Dog Dash is a Toy Story coaster, not Goofy's cartoon train adventure.",
+          "sources": [
+            "b16-898"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Star Tours is a Star Wars simulator, not Goofy's train adventure.",
+          "sources": [
+            "b16-898"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed Mickey, Minnie and railway from the stem and replaced invented near-titles with real rides. Engineer Goofy supplies a scene fact rather than copying the answer title; #1173 instead asks the theater building."
+      }
+    },
+    {
+      "questionId": 899,
+      "hash": "26877217fe4f5b159d18518781337e151a7159769eb6bb5cefd0f56107d945fd",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Do not confuse nearby Art of Animation across the bridge with Pop Century. Confirmed the pool shape separately from the bowling-pin staircases and the decade setting.",
+      "context": "Theming: 1950s list; Gallery: bowling-pin-shaped pool",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pop Century's 1950s area contains the bowling-pin-shaped Bowling Pool.",
+        "sources": [
+          "b16-899",
+          "b16-899-extra-1",
+          "b16-899-extra-2",
+          "b16-899-extra-3"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Pop Century's 1950s area contains the bowling-pin-shaped Bowling Pool.",
+          "sources": [
+            "b16-899",
+            "b16-899-extra-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Art of Animation lists Big Blue, Cozy Cone and Flippin' Fins pools, not this 1950s section.",
+          "sources": [
+            "b16-899-extra-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "All-Star Music has guitar and piano pools, not the bowling-pin pool.",
+          "sources": [
+            "b16-899-extra-3"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Caribbean Beach has Caribbean island villages and a colonial-fort-themed main pool, not the 1950s bowling area.",
+          "sources": [
+            "b16-899-caribbean"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Do not confuse nearby Art of Animation across the bridge with Pop Century. Confirmed the pool shape separately from the bowling-pin staircases and the decade setting. Corroborating passages evaluated as listed; each source note states its own limited claim."
+      }
+    },
+    {
+      "questionId": 900,
+      "hash": "ac056f96719b3332b04e380dd2f25ffe96f3d604e192e3ffcd20d2ccd746458b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. A grand lobby alone is insufficient. The specific Northwest national-park-lodge design selects Wilderness Lodge; related hotel location and pool questions ask other attributes.",
+      "context": "What Makes This Resort Hotel Unique: Great Northwest and National Park lodges",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Wilderness Lodge draws on turn-of-the-century national park lodges of America's Great Northwest, with a rustic interior.",
+        "sources": [
+          "b16-900",
+          "b16-900-extra-1",
+          "b16-900-extra-2",
+          "b16-900-extra-3"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Wilderness Lodge draws on turn-of-the-century national park lodges of America's Great Northwest, with a rustic interior.",
+          "sources": [
+            "b16-900"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Grand Floridian evokes Victorian Palm Beach, not Northwest park lodges.",
+          "sources": [
+            "b16-900-extra-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Contemporary is an ultra-modern A-frame resort, not a rustic park lodge.",
+          "sources": [
+            "b16-900-extra-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Port Orleans evokes Louisiana and New Orleans, not Northwest park lodges.",
+          "sources": [
+            "b16-900-extra-3"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A grand lobby alone is insufficient. The specific Northwest national-park-lodge design selects Wilderness Lodge; related hotel location and pool questions ask other attributes. Corroborating passages evaluated as listed; each source note states its own limited claim."
+      }
+    },
+    {
+      "questionId": 901,
+      "hash": "c55e7562461741b3f1b18c890c781ce4c256319802f555503c8c1d0779686ca9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete question, four options, full deduplicated topic digests and cross-bank context reviewed. Category/difficulty retained; no new sequel/TV scope introduced. Monorail service alone leaves two competing choices, so checked South Pacific theming explicitly. Knowing the list of monorail hotels in #626 does not identify which has this theme.",
+      "context": "What Makes This Resort Hotel Unique and Resort Monorail",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Polynesian Village celebrates South Pacific islands and has Resort Monorail service.",
+        "sources": [
+          "b16-901",
+          "b16-901-extra-1",
+          "b16-901-extra-2",
+          "b16-901-extra-3"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Polynesian Village celebrates South Pacific islands and has Resort Monorail service.",
+          "sources": [
+            "b16-901"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Contemporary has monorail service but an ultra-modern theme.",
+          "sources": [
+            "b16-901-extra-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Grand Floridian has monorail service but a Victorian Palm Beach theme.",
+          "sources": [
+            "b16-901-extra-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wilderness Lodge has a Northwest park-lodge theme, not the South Pacific.",
+          "sources": [
+            "b16-901-extra-3"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Monorail service alone leaves two competing choices, so checked South Pacific theming explicitly. Knowing the list of monorail hotels in #626 does not identify which has this theme. Corroborating passages evaluated as listed; each source note states its own limited claim."
+      }
+    }
+  ]
+}

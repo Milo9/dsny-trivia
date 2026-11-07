@@ -1,0 +1,43 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "retiredQuestion": {
+    "id": 944,
+    "question": "Which California arts school did Walt Disney help establish through the merger of two institutions?",
+    "answers": [
+      "California Institute of the Arts",
+      "ArtCenter College of Design",
+      "Otis College of Art and Design",
+      "UCLA School of Theater"
+    ],
+    "difficulty": "hard",
+    "category": "walt"
+  },
+  "replacementQuestion": {
+    "id": 2571,
+    "question": "The California Institute of the Arts (CalArts), formed with Walt Disney's support in 1961, merged the Los Angeles Conservatory of Music with which art school?",
+    "answers": [
+      "Chouinard Art Institute",
+      "Otis Art Institute",
+      "Art Center College of Design",
+      "Pasadena Art School"
+    ],
+    "difficulty": "hard",
+    "category": "walt"
+  },
+  "reason": "Both test CalArts' formation by merging Chouinard and the Los Angeles Conservatory. Retain the more specific constituent-school question; its stem already supplies the institution asked here.",
+  "source": {
+    "url": "https://d23.com/about-walt-disney/",
+    "locator": "Final CalArts paragraphs",
+    "evidence": "CalArts was formed in 1961 by merging Chouinard Art Institute and Los Angeles Conservatory of Music.",
+    "checkedBy": "Codex",
+    "checkedAt": "2026-11-07",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "topics": [
+      "Batch 17"
+    ],
+    "limitations": "Inspected institutional text or evaluated narrowly matching reusable passage; no film playback claimed. Historic source claims retain their stated date."
+  },
+  "additionalContext": "Complete topic digest read; preserved scope; related replacement is context only, not approved by this decision."
+}

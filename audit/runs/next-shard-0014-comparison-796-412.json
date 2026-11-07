@@ -1,0 +1,40 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "questionIds": [
+    796,
+    412
+  ],
+  "removedQuestion": {
+    "id": 796,
+    "question": "What is the name of the Disney cruise ship that launched in December 2024?",
+    "answers": [
+      "Disney Treasure",
+      "Disney Wish",
+      "Disney Adventure",
+      "Disney Destiny"
+    ],
+    "difficulty": "medium",
+    "category": "cruise"
+  },
+  "replacementQuestion": {
+    "id": 412,
+    "question": "Including Disney Treasure, how many ships were in Disney Cruise Line's fleet when Treasure began its maiden voyage in December 2024?",
+    "answers": [
+      "Six",
+      "Four",
+      "Five",
+      "Seven"
+    ],
+    "difficulty": "easy",
+    "category": "cruise"
+  },
+  "reason": "The retained question already names Treasure and its December 2024 maiden voyage in its stem. Memorizing it supplies the entire month-to-ship identification asked by #796, while #412 additionally tests fleet count.",
+  "evidence": [
+    {
+      "url": "https://disneyexperiences.com/app/uploads/2025/03/FY25-Q3-DCL-Disney-Experiences-Fact-Sheet.pdf",
+      "locator": "Fleet table, Disney Treasure maiden voyage December 21 2024; reusable source note fleet-2025-table"
+    }
+  ],
+  "challenge": "Read both complete four-option questions and the full category/topic context. The retained question's tested fact or explicit premise supplies the removed answer without another fact. Retire only the in-scope member; do not alter the replacement."
+}

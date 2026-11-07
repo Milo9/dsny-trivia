@@ -1,0 +1,43 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "retiredQuestion": {
+    "id": 939,
+    "question": "Which 1940 Disney film was originally presented with Fantasound?",
+    "answers": [
+      "Fantasia",
+      "Pinocchio",
+      "Dumbo",
+      "The Reluctant Dragon"
+    ],
+    "difficulty": "medium",
+    "category": "walt"
+  },
+  "replacementQuestion": {
+    "id": 937,
+    "question": "What stereophonic sound system was developed for Fantasia?",
+    "answers": [
+      "Fantasound",
+      "Cinemascope",
+      "Sensurround",
+      "Disneyphonic"
+    ],
+    "difficulty": "hard",
+    "category": "walt"
+  },
+  "reason": "Exact inverse of the film/Fantasound association. Retain the technical-name question, whose final wording avoids the Fantasia/Fantasound word echo.",
+  "source": {
+    "url": "https://wwws.loc.gov/exhibits/music-and-animation/fantasia-1940.html",
+    "locator": "Opening exhibition text",
+    "evidence": "Fantasia, a 1940 concert feature, used stereophonic Fantasound.",
+    "checkedBy": "Codex",
+    "checkedAt": "2026-11-07",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "topics": [
+      "Batch 17"
+    ],
+    "limitations": "Inspected institutional text or evaluated narrowly matching reusable passage; no film playback claimed. Historic source claims retain their stated date."
+  },
+  "additionalContext": "Complete topic digest read; preserved scope; related replacement is context only, not approved by this decision."
+}

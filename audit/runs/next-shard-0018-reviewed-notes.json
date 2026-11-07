@@ -1,0 +1,2778 @@
+{
+  "schema": 1,
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "sourcesChecked": [
+    "b13-castaway",
+    "b13-europa",
+    "b14-palo",
+    "b18-after",
+    "b18-animator",
+    "b18-app",
+    "b18-aquadunk",
+    "b18-beauty",
+    "b18-cabanas",
+    "b18-dream",
+    "b18-dreamclass",
+    "b18-dumbo",
+    "b18-excursion",
+    "b18-fair",
+    "b18-fox",
+    "b18-foxmusic",
+    "b18-ghostfish",
+    "b18-island",
+    "b18-lady",
+    "b18-lumiere",
+    "b18-mermaid",
+    "b18-muster",
+    "b18-oliver",
+    "b18-olivermusic",
+    "b18-pearl",
+    "b18-peter",
+    "b18-pinocchio",
+    "b18-port",
+    "b18-quiet",
+    "b18-rapunzel",
+    "b18-records",
+    "b18-rescuers",
+    "b18-robin",
+    "b18-room",
+    "b18-skyway",
+    "b18-smoke",
+    "b18-snow",
+    "b18-studio",
+    "b18-tiana",
+    "b18-treasure",
+    "b18-triton",
+    "b18-verandah",
+    "b18-wish",
+    "b9-satellite",
+    "cruise-originals",
+    "disney-family",
+    "fleet-2025-table"
+  ],
+  "reviews": [
+    {
+      "questionId": 954,
+      "hash": "79139ffcef33d3cbd09632290b496e31b15062eac7c5648f4bce5a8a09dbf454",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Magic Skyway carried guests in convertibles through prehistory.",
+        "sources": [
+          "b18-skyway",
+          "b18-fair"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Magic Skyway carried guests in convertibles through prehistory.",
+          "sources": [
+            "b18-skyway",
+            "b18-fair"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Carousel of Progress was the GE rotating family show, not the car journey.",
+          "sources": [
+            "b18-skyway",
+            "b18-fair"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Small World was the Pepsi/UNICEF attraction, not the convertible prehistoric ride.",
+          "sources": [
+            "b18-skyway",
+            "b18-fair"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lincoln was the Illinois presidential show, not the convertible ride.",
+          "sources": [
+            "b18-skyway",
+            "b18-fair"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed Ford from the stem. Actual convertibles plus prehistoric scenes exclude the three different show formats."
+      }
+    },
+    {
+      "questionId": 955,
+      "hash": "8679d539830a7bc500e46a28c19239e257e9efc55c62c97bbbce8e4e632a5b25",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "General Electric sponsored Progressland and its Carousel of Progress.",
+        "sources": [
+          "b18-fair"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "General Electric sponsored Progressland and its Carousel of Progress.",
+          "sources": [
+            "b18-fair"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ford sponsored Magic Skyway.",
+          "sources": [
+            "b18-fair"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pepsi-Cola presented Small World.",
+          "sources": [
+            "b18-fair"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "UNICEF was associated with Small World, not the GE show.",
+          "sources": [
+            "b18-fair"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged sponsor versus beneficiary: neither Pepsi nor UNICEF presented GE Progressland."
+      }
+    },
+    {
+      "questionId": 956,
+      "hash": "cfe8cdd58d3370dfb0616f7f665e8ba1342b659f51a8fcda30da7dcf8b4040e4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Illinois commissioned Great Moments with Mr. Lincoln.",
+        "sources": [
+          "b18-fair"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Illinois commissioned Great Moments with Mr. Lincoln.",
+          "sources": [
+            "b18-fair"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Carousel of Progress belonged to GE.",
+          "sources": [
+            "b18-fair"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The American Adventure is absent from the exhaustive four Disney fair shows.",
+          "sources": [
+            "b18-fair"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Magic Skyway belonged to Ford.",
+          "sources": [
+            "b18-fair"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the answer's presidential name from the stem. The complete fair list excludes American Adventure, and #957 has been retired as its inverse."
+      }
+    },
+    {
+      "questionId": 958,
+      "hash": "dce52809cba05bba8b7f53e11205991b6a5536c5bd55b0d9ccc8f242c5fc1cec",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Smoke Tree Ranch was Walt's Palm Springs retreat.",
+        "sources": [
+          "b18-smoke"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Smoke Tree Ranch was Walt's Palm Springs retreat.",
+          "sources": [
+            "b18-smoke"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Golden Oak is not the identified Palm Springs retreat.",
+          "sources": [
+            "b18-smoke"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Carolwood is not the named Palm Springs ranch.",
+          "sources": [
+            "b18-smoke"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Marceline is not the named Palm Springs ranch.",
+          "sources": [
+            "b18-smoke"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Walt owned other properties; the Palm Springs location and vacation-retreat identity fix Smoke Tree, not all properties associated with him."
+      }
+    },
+    {
+      "questionId": 959,
+      "hash": "e62abd91b3408eb3d89e224998922710e0bb9baa9e6b07d65e2204a1d0417ed8",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Walt Disney Studios' Burbank facility was completed in 1940.",
+        "sources": [
+          "b18-studio",
+          "disney-family"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Walt Disney Studios' Burbank facility was completed in 1940.",
+          "sources": [
+            "b18-studio",
+            "disney-family"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hyperion was the earlier Los Angeles studio, not this Burbank campus.",
+          "sources": [
+            "b18-studio",
+            "disney-family"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Laugh-O-Gram was the earlier Kansas City enterprise, not Burbank.",
+          "sources": [
+            "b18-studio",
+            "disney-family"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Disneyland Studio does not name the documented 1940 Burbank facility.",
+          "sources": [
+            "b18-studio",
+            "disney-family"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The question identifies a facility rather than the corporate founding date; earlier California operations do not also satisfy Burbank in 1940."
+      }
+    },
+    {
+      "questionId": 961,
+      "hash": "2e29c0e24bf3e30457b85fd1e1e119481a5220e188778bc7f60a69a672009df5",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney Wonder entered service in 1999, following Magic.",
+        "sources": [
+          "fleet-2025-table",
+          "cruise-originals"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney Wonder entered service in 1999, following Magic.",
+          "sources": [
+            "fleet-2025-table",
+            "cruise-originals"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dream entered in 2011.",
+          "sources": [
+            "fleet-2025-table",
+            "cruise-originals"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fantasy entered in 2012.",
+          "sources": [
+            "fleet-2025-table",
+            "cruise-originals"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wish entered in 2022.",
+          "sources": [
+            "fleet-2025-table",
+            "cruise-originals"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The unique ship/year pairing excludes later ships. #2274 and #2346 ask particular stage-show premieres, additional facts not supplied by this service year."
+      }
+    },
+    {
+      "questionId": 963,
+      "hash": "642e495ae7f514befef3a7f02863bf66e5ae90203ef67783ab4dadc71e28a37a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Animator's Palate is the sketch-filled rotational dining room.",
+        "sources": [
+          "b18-animator",
+          "b14-palo",
+          "b18-cabanas",
+          "b18-triton"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Animator's Palate is the sketch-filled rotational dining room.",
+          "sources": [
+            "b18-animator",
+            "b14-palo",
+            "b18-cabanas",
+            "b18-triton"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Palo is adult Italian specialty dining, not the sketch-themed rotational room.",
+          "sources": [
+            "b18-animator",
+            "b14-palo",
+            "b18-cabanas",
+            "b18-triton"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cabanas has a beach-boardwalk theme and casual breakfast/lunch service.",
+          "sources": [
+            "b18-animator",
+            "b14-palo",
+            "b18-cabanas",
+            "b18-triton"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Triton's is the Little Mermaid-themed room.",
+          "sources": [
+            "b18-animator",
+            "b14-palo",
+            "b18-cabanas",
+            "b18-triton"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed animation from the stem. A room displaying any Disney art is not enough: the artist-studio/character-sketch setting uniquely matches Palate."
+      }
+    },
+    {
+      "questionId": 964,
+      "hash": "ec65b2b01437b432b6f65f75d55db67e6916801504d7eb042a271fc51cae6f4b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Disney Magic is AquaDunk's listed ship.",
+        "sources": [
+          "b18-aquadunk",
+          "b9-satellite"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney Magic is AquaDunk's listed ship.",
+          "sources": [
+            "b18-aquadunk",
+            "b9-satellite"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wonder is not on the AquaDunk ship-location list.",
+          "sources": [
+            "b18-aquadunk",
+            "b9-satellite"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dream has AquaDuck, not the named AquaDunk body slide.",
+          "sources": [
+            "b18-aquadunk",
+            "b9-satellite"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fantasy has AquaDuck, not the named AquaDunk body slide.",
+          "sources": [
+            "b18-aquadunk",
+            "b9-satellite"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "AquaDuck and AquaDunk are different attractions; used the exact body-slide name and the exhaustive single-ship list."
+      }
+    },
+    {
+      "questionId": 965,
+      "hash": "dee3025c87ba982b435ceb7f0c8272fcf7edcf06cf96d73f61712e1bfc4113dd",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Rapunzel's Royal Table is Magic's Tangled-inspired restaurant.",
+        "sources": [
+          "b18-rapunzel",
+          "b18-tiana",
+          "b18-wish",
+          "b18-animator"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Rapunzel's Royal Table is Magic's Tangled-inspired restaurant.",
+          "sources": [
+            "b18-rapunzel",
+            "b18-tiana",
+            "b18-wish",
+            "b18-animator"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tiana's Place is Wonder's Princess and the Frog venue.",
+          "sources": [
+            "b18-rapunzel",
+            "b18-tiana",
+            "b18-wish",
+            "b18-animator"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Arendelle is a Frozen-themed venue on Wish.",
+          "sources": [
+            "b18-rapunzel",
+            "b18-tiana",
+            "b18-wish",
+            "b18-animator"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Animator's Palate celebrates animation generally, rather than this specific Tangled setting.",
+          "sources": [
+            "b18-rapunzel",
+            "b18-tiana",
+            "b18-wish",
+            "b18-animator"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed Rapunzel from the stem; both ship and specific film theme are required, not merely the presence of character artwork."
+      }
+    },
+    {
+      "questionId": 966,
+      "hash": "82b726443f6435fd640bd344c730b391ea33134d14cf571e3f8154fa8512d19d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Tiana's Place on Wonder is inspired by Princess and the Frog.",
+        "sources": [
+          "b18-tiana",
+          "b18-rapunzel",
+          "b18-lumiere",
+          "b18-triton"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Tiana's Place on Wonder is inspired by Princess and the Frog.",
+          "sources": [
+            "b18-tiana",
+            "b18-rapunzel",
+            "b18-lumiere",
+            "b18-triton"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rapunzel's Royal Table is Tangled on Magic.",
+          "sources": [
+            "b18-tiana",
+            "b18-rapunzel",
+            "b18-lumiere",
+            "b18-triton"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lumiere's is Beauty and the Beast on Magic.",
+          "sources": [
+            "b18-tiana",
+            "b18-rapunzel",
+            "b18-lumiere",
+            "b18-triton"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Triton's on Wonder evokes Little Mermaid, not Princess and Frog.",
+          "sources": [
+            "b18-tiana",
+            "b18-rapunzel",
+            "b18-lumiere",
+            "b18-triton"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Triton's shares the ship but not the film inspiration. #2564 asks Tiana's parade song, an additional musical fact."
+      }
+    },
+    {
+      "questionId": 967,
+      "hash": "e5493c29380162762b32bfa49f8b4c081c4f4af76f2aa1f839e7e3a0eec347ad",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The District is Dream's lounge and nightclub neighborhood.",
+        "sources": [
+          "b18-dream",
+          "b13-europa",
+          "b18-after",
+          "b18-wish"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The District is Dream's lounge and nightclub neighborhood.",
+          "sources": [
+            "b18-dream",
+            "b13-europa",
+            "b18-after",
+            "b18-wish"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Europa is Fantasy's district.",
+          "sources": [
+            "b18-dream",
+            "b13-europa",
+            "b18-after",
+            "b18-wish"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "After Hours is Magic's replacement for Beat Street.",
+          "sources": [
+            "b18-dream",
+            "b13-europa",
+            "b18-after",
+            "b18-wish"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Bayou is a Wish lounge rather than Dream's district.",
+          "sources": [
+            "b18-dream",
+            "b13-europa",
+            "b18-after",
+            "b18-wish"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Dream is essential: adult nightlife exists on other ships, but their area names do not transfer to Dream."
+      }
+    },
+    {
+      "questionId": 968,
+      "hash": "c2340fa46c804ac7d7f9da0cfc3e39957ad59f0bd17e86635460cab0c88bf489",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "After Hours replaced Beat Street on Magic in 2013.",
+        "sources": [
+          "b18-after",
+          "b18-dream",
+          "b13-europa",
+          "b18-quiet"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "After Hours replaced Beat Street on Magic in 2013.",
+          "sources": [
+            "b18-after",
+            "b18-dream",
+            "b13-europa",
+            "b18-quiet"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The District identifies Dream's neighborhood, not this replacement.",
+          "sources": [
+            "b18-after",
+            "b18-dream",
+            "b13-europa",
+            "b18-quiet"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Europa identifies Fantasy's neighborhood.",
+          "sources": [
+            "b18-after",
+            "b18-dream",
+            "b13-europa",
+            "b18-quiet"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Quiet Cove identifies an adult pool rather than the replacement nightlife district.",
+          "sources": [
+            "b18-after",
+            "b18-dream",
+            "b13-europa",
+            "b18-quiet"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Scoped the historical replacement to Magic; not claiming the same refurbishment date or former name on Wonder. Secondary contemporaneous text corroborates Disney Files' indexed passage."
+      }
+    },
+    {
+      "questionId": 970,
+      "hash": "72eac0827b39126532ae2bc57f636b740764712c6159555d3951bd65e08a724e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The Bayou pays tribute to Princess and the Frog's marsh.",
+        "sources": [
+          "b18-wish"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Bayou pays tribute to Princess and the Frog's marsh.",
+          "sources": [
+            "b18-wish"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hyperspace Lounge has a Star Wars theme.",
+          "sources": [
+            "b18-wish"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Nightingale's is the ship's piano lounge, not the marsh-themed Bayou.",
+          "sources": [
+            "b18-wish"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Keg & Compass evokes Norwegian seafaring, not the bayou.",
+          "sources": [
+            "b18-wish"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Four real lounges are distinguished by their specific settings; generic live music does not make the other lounges Princess and Frog-themed."
+      }
+    },
+    {
+      "questionId": 971,
+      "hash": "c26c304d23572daface5340938020e29e5bbc7848380a86599b999e858bcc45d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Plaza de Coco presents Miguel and the Rivera family.",
+        "sources": [
+          "b18-treasure",
+          "b18-wish"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Plaza de Coco presents Miguel and the Rivera family.",
+          "sources": [
+            "b18-treasure",
+            "b18-wish"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Arendelle features Frozen characters and is a Wish venue.",
+          "sources": [
+            "b18-treasure",
+            "b18-wish"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Worlds of Marvel features superheroes rather than Rivera family shows.",
+          "sources": [
+            "b18-treasure",
+            "b18-wish"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jumbeaux's Sweets is a Zootopia ice cream venue.",
+          "sources": [
+            "b18-treasure",
+            "b18-wish"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed Coco from the stem; identifies characters and a theatrical meal, not any restaurant serving sweets or music."
+      }
+    },
+    {
+      "questionId": 972,
+      "hash": "987dec8f3718f965f1dced3584a372a3b817ba1ea814538ee26be6579b3504a3",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Haunted Mansion Parlor contains ghost fish and its former captain's portrait.",
+        "sources": [
+          "b18-ghostfish",
+          "b18-treasure"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Haunted Mansion Parlor contains ghost fish and its former captain's portrait.",
+          "sources": [
+            "b18-ghostfish",
+            "b18-treasure"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Skipper Society has a Jungle Cruise setting, not the documented ghost aquarium/captain story.",
+          "sources": [
+            "b18-ghostfish",
+            "b18-treasure"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Periscope Pub has a submarine setting, not the documented parlor story.",
+          "sources": [
+            "b18-ghostfish",
+            "b18-treasure"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Rose has Beauty and the Beast decor, not the ghost aquarium/captain.",
+          "sources": [
+            "b18-ghostfish",
+            "b18-treasure"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Replaced an unsupported new Madame Leota stem with the actual inspected aquarium and portrait details; merely nautical decor at Periscope is insufficient."
+      }
+    },
+    {
+      "questionId": 973,
+      "hash": "b90e02bf7f3ed5182d6f6839b32a2eb8eb3783d162f08c759f8d80b273532dbb",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Marceline Market is named for Walt's childhood hometown.",
+        "sources": [
+          "b18-wish",
+          "b18-cabanas",
+          "b18-dream"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Marceline Market is named for Walt's childhood hometown.",
+          "sources": [
+            "b18-wish",
+            "b18-cabanas",
+            "b18-dream"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cabanas evokes a beach-boardwalk setting, not the Missouri hometown name.",
+          "sources": [
+            "b18-wish",
+            "b18-cabanas",
+            "b18-dream"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Festival of Foods is the Mickey-and-friends food court, not the hometown name.",
+          "sources": [
+            "b18-wish",
+            "b18-cabanas",
+            "b18-dream"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Flo's Cafe has a Cars theme rather than the Missouri name.",
+          "sources": [
+            "b18-wish",
+            "b18-cabanas",
+            "b18-dream"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Market is a generic venue descriptor; the specific Missouri hometown association is the tested fact. Other food outlets do not share that name."
+      }
+    },
+    {
+      "questionId": 974,
+      "hash": "265cd44828acfe9146fa3ed0236f5f97423bdd67946d4a9345c60c28901844ef",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Cabanas has the Australian beach-boardwalk theme on Dream and Fantasy.",
+        "sources": [
+          "b18-cabanas",
+          "b18-wish",
+          "b18-dream"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Cabanas has the Australian beach-boardwalk theme on Dream and Fantasy.",
+          "sources": [
+            "b18-cabanas",
+            "b18-wish",
+            "b18-dream"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Marceline Market is the hometown-inspired marketplace on Wish and later ships.",
+          "sources": [
+            "b18-cabanas",
+            "b18-wish",
+            "b18-dream"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Flo's Cafe is the Cars-themed outdoor food court.",
+          "sources": [
+            "b18-cabanas",
+            "b18-wish",
+            "b18-dream"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Festival of Foods is the Mickey-and-friends eatery, not the Australian-themed restaurant.",
+          "sources": [
+            "b18-cabanas",
+            "b18-wish",
+            "b18-dream"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the obsolete every-evening dinner-service claim. Boardwalk alone could fit Festival of Foods; Australian setting and the two ships distinguish Cabanas. #1237 asks private beach cabanas, not this restaurant."
+      }
+    },
+    {
+      "questionId": 975,
+      "hash": "3befe771bbd22d3da9060083ec4f21d5be41a9145104764ae57110c48c871374",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Quiet Cove is the adult pool area on Magic and Wonder.",
+        "sources": [
+          "b18-quiet",
+          "b9-satellite",
+          "b13-castaway"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Quiet Cove is the adult pool area on Magic and Wonder.",
+          "sources": [
+            "b18-quiet",
+            "b9-satellite",
+            "b13-castaway"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Serenity Bay is a Castaway Cay beach.",
+          "sources": [
+            "b18-quiet",
+            "b9-satellite",
+            "b13-castaway"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Satellite Falls is on Dream/Fantasy, not the named ships.",
+          "sources": [
+            "b18-quiet",
+            "b9-satellite",
+            "b13-castaway"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hidden Springs does not name the documented Magic/Wonder adult pool.",
+          "sources": [
+            "b18-quiet",
+            "b9-satellite",
+            "b13-castaway"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Original fleetwide wording admitted Satellite Falls as a second adult pool. Naming Magic and Wonder excludes that actual competing option."
+      }
+    },
+    {
+      "questionId": 976,
+      "hash": "e9e163a1dfc5bf170a8c6d4208f12766b27334c9895b277aa5cf0766a4b615e1",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Disney Cruise Line Navigator supplies onboard schedules and guest chat.",
+        "sources": [
+          "b18-app"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney Cruise Line Navigator supplies onboard schedules and guest chat.",
+          "sources": [
+            "b18-app"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "My Disney Experience is not the app named for these cruise functions.",
+          "sources": [
+            "b18-app"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Disney Genie is not the cruise schedule/chat app identified by the FAQ.",
+          "sources": [
+            "b18-app"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Castaway Companion is not the named Disney cruise app.",
+          "sources": [
+            "b18-app"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The FAQ directly couples daily calendar and messaging in Navigator. Cruise supplies the product context, not the distinctive Navigator name; other Disney app names are not interchangeable."
+      }
+    },
+    {
+      "questionId": 977,
+      "hash": "9f99b11418670a95ad1a2641244fbcaa23454aa21eda4c71ca7a243972270b9f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Cookie's BBQ serves Castaway Family Beach.",
+        "sources": [
+          "b18-island"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Cookie's BBQ serves Castaway Family Beach.",
+          "sources": [
+            "b18-island"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Serenity Bay is the adult beach with its separate BBQ venue.",
+          "sources": [
+            "b18-island"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pelican Point does not name the beach identified in the Cookie's BBQ passage.",
+          "sources": [
+            "b18-island"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Scuttle's Cove is supervised play, not the beach served by that BBQ.",
+          "sources": [
+            "b18-island"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed children/family wording that gave away Family Beach. Cookie's BBQ is distinguished from the separately named adult-area BBQ and other island facilities."
+      }
+    },
+    {
+      "questionId": 978,
+      "hash": "818fb7297a1c78b0d84b0a3ca1a8c9cc814556498a525a3e95b7b4427c61b4c1",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Scuttle's Cove has supervised play and a whale-bone dig.",
+        "sources": [
+          "b18-island"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Scuttle's Cove has supervised play and a whale-bone dig.",
+          "sources": [
+            "b18-island"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Flounder's Reef is not the island area identified for the whale dig.",
+          "sources": [
+            "b18-island"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sebastian's Bay is not the documented supervised play area.",
+          "sources": [
+            "b18-island"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Triton's Landing is not the documented supervised play area.",
+          "sources": [
+            "b18-island"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the seagull-name clue already supplied by #290. The final asks the documented island play facility, rather than character identification."
+      }
+    },
+    {
+      "questionId": 982,
+      "hash": "fd338a9b384e8fa212b92a2225c4ef39f28c06ebd7bd6d310c19c5ab2e387358",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pearl launched as the new Castaway Club tier in 2023.",
+        "sources": [
+          "b18-pearl"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Pearl launched as the new Castaway Club tier in 2023.",
+          "sources": [
+            "b18-pearl"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Diamond is not the launched tier named in the announcement.",
+          "sources": [
+            "b18-pearl"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Emerald is not the announced tier.",
+          "sources": [
+            "b18-pearl"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Captain is not the announced membership tier.",
+          "sources": [
+            "b18-pearl"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Historical launch fixes the fact permanently even if tiers change later. Prior Silver/Gold/Platinum program identification does not give Pearl's introduction year."
+      }
+    },
+    {
+      "questionId": 983,
+      "hash": "ea908253eb420a16e175d5ec318ad5d2c45576914f2955326a95e8455e633644",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Dream and Fantasy, introduced in 2011 and 2012, are Dream-class sisters.",
+        "sources": [
+          "b18-dreamclass",
+          "fleet-2025-table"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Dream and Fantasy, introduced in 2011 and 2012, are Dream-class sisters.",
+          "sources": [
+            "b18-dreamclass",
+            "fleet-2025-table"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Magic class identifies the earlier generation, not the builder's series here.",
+          "sources": [
+            "b18-dreamclass",
+            "fleet-2025-table"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wish class is not Dream's builder-listed class.",
+          "sources": [
+            "b18-dreamclass",
+            "fleet-2025-table"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Triton class is not Dream's builder-listed class.",
+          "sources": [
+            "b18-dreamclass",
+            "fleet-2025-table"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked builder production-series field, not a fan nickname or the year of construction completion; 2011/2012 are the passenger-service years."
+      }
+    },
+    {
+      "questionId": 985,
+      "hash": "8af7c25daa28a65ab8c983e3553d48a7d51575ac3f0916d1f33bdab0542b3299",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Verandah staterooms have private balconies.",
+        "sources": [
+          "b18-verandah"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Verandah staterooms have private balconies.",
+          "sources": [
+            "b18-verandah"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Atrium staterooms is not the listed balcony category.",
+          "sources": [
+            "b18-verandah"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Porthole suites does not name the balcony category; portholes are contrasted with balconies.",
+          "sources": [
+            "b18-verandah"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lanai rooms is not Disney's named category here.",
+          "sources": [
+            "b18-verandah"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A real porthole view is not a private balcony; the official accommodation headings explicitly distinguish the room types."
+      }
+    },
+    {
+      "questionId": 986,
+      "hash": "276069deea41079e2b4390b5f94cceaac27d7a8af20ec1518390cb0da537b2ab",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Disney calls its selected shore excursions Port Adventures.",
+        "sources": [
+          "b18-excursion"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney calls its selected shore excursions Port Adventures.",
+          "sources": [
+            "b18-excursion"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sea days are itinerary days, not the excursion program name.",
+          "sources": [
+            "b18-excursion"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Castaway Calls is not the program identified in the official overview.",
+          "sources": [
+            "b18-excursion"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Harbor Hops is not the identified excursion program.",
+          "sources": [
+            "b18-excursion"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Port is general cruise vocabulary but the full brand is explicit. The shore location does not turn sea days into excursions."
+      }
+    },
+    {
+      "questionId": 987,
+      "hash": "c874e0dd9c5febfea508588b407fd85296bf96d4670f193f8bd62949df884b4d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Room service delivers breakfast to the stateroom.",
+        "sources": [
+          "b18-room"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Room service delivers breakfast to the stateroom.",
+          "sources": [
+            "b18-room"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mickey Meals is not the advertised room-delivery service name.",
+          "sources": [
+            "b18-room"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cabin Cafe is not the named service.",
+          "sources": [
+            "b18-room"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Doorstep Dining is not the named service.",
+          "sources": [
+            "b18-room"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "No claim that every menu item is free or that breakfast is available on debarkation day; the question tests the service name only."
+      }
+    },
+    {
+      "questionId": 988,
+      "hash": "7120c7c71c7a66dcbf934af1975b368fc8c6da09fa148d011297b3cc6b23c112",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "A port of call is a destination visited on the itinerary.",
+        "sources": [
+          "b18-port",
+          "b18-muster"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "A port of call is a destination visited on the itinerary.",
+          "sources": [
+            "b18-port",
+            "b18-muster"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sea day is a day rather than a visited destination.",
+          "sources": [
+            "b18-port",
+            "b18-muster"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Embarkation names boarding rather than a visited destination.",
+          "sources": [
+            "b18-port",
+            "b18-muster"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Muster names the safety assembly rather than a destination.",
+          "sources": [
+            "b18-port",
+            "b18-muster"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the assertion that every call involves docking; tender ports still count. A boarding process and a day at sea cannot satisfy destination."
+      }
+    },
+    {
+      "questionId": 989,
+      "hash": "13ea23f7a09750a493a5deca0a5e4b3de938bdfe91a00ea90f7a499821d2f69d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Muster drill is Disney's name for the guest safety assembly.",
+        "sources": [
+          "b18-muster"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Muster drill is Disney's name for the guest safety assembly.",
+          "sources": [
+            "b18-muster"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Castaway drill is not the safety assembly term.",
+          "sources": [
+            "b18-muster"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Navigator drill is not the safety assembly term.",
+          "sources": [
+            "b18-muster"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Deck drill is not the documented term.",
+          "sources": [
+            "b18-muster"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The source is historical and used only for the drill's name; no present-day duration or operating procedure is asserted."
+      }
+    },
+    {
+      "questionId": 990,
+      "hash": "15aa948a64f8d14b1734565ca0e1ab8ab6a355a6abd03dd0470cb867fe20506f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Embarkation names boarding at the start of a voyage.",
+        "sources": [
+          "b18-muster"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Embarkation names boarding at the start of a voyage.",
+          "sources": [
+            "b18-muster"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sea day describes being at sea, not initial boarding.",
+          "sources": [
+            "b18-muster"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Debarkation describes leaving at the end, the reverse operation.",
+          "sources": [
+            "b18-muster"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Port day does not specifically name the initial boarding process.",
+          "sources": [
+            "b18-muster"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A boarding day may also be spent in port, but the literal question asks the cruise term for initial boarding; debarkation has the opposite direction."
+      }
+    },
+    {
+      "questionId": 991,
+      "hash": "d4f3ea377c6cbf458d23c3c4456a9740099b57ea2d8bfedba39a3869a89b9032",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 1937 animated Snow White introduced Whistle While You Work.",
+        "sources": [
+          "b18-snow"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The 1937 animated Snow White introduced Whistle While You Work.",
+          "sources": [
+            "b18-snow"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ichabod and Mr. Toad is not the film whose cleaning sequence introduces this song.",
+          "sources": [
+            "b18-snow"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pinocchio is not the original film for this Snow White song.",
+          "sources": [
+            "b18-snow"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sword in the Stone is not the original film for this Snow White song.",
+          "sources": [
+            "b18-snow"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Original animated-film wording excludes later remakes and covers. New fact is this specific song's film, not Snow White's premiere venue or another song's attribution."
+      }
+    },
+    {
+      "questionId": 992,
+      "hash": "e07a2a8312086129e700152849857b879c55eca731d7b7651dc7d60e6cadbe29",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Heigh-Ho accompanies the dwarfs' homeward march.",
+        "sources": [
+          "b18-snow"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Heigh-Ho accompanies the dwarfs' homeward march.",
+          "sources": [
+            "b18-snow"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Silly Song is the later cottage party number.",
+          "sources": [
+            "b18-snow"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bluddle-Uddle-Um-Dum accompanies washing, not the mine departure.",
+          "sources": [
+            "b18-snow"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "One Song is the prince's serenade.",
+          "sources": [
+            "b18-snow"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All four are same-film songs, eliminating the miners/dwarfs giveaway. The homeward scene is explicit, distinct from the later outward reprise."
+      }
+    },
+    {
+      "questionId": 993,
+      "hash": "677562f636473a343f0bbdfb5f62457d52a76eca4f51744ac89df5f38d8cb541",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pinocchio (1940) introduced Give a Little Whistle.",
+        "sources": [
+          "b18-pinocchio"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Pinocchio (1940) introduced Give a Little Whistle.",
+          "sources": [
+            "b18-pinocchio"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dumbo did not introduce this Jiminy/puppet lesson song.",
+          "sources": [
+            "b18-pinocchio"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bambi did not introduce this lesson song.",
+          "sources": [
+            "b18-pinocchio"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Peter Pan did not introduce this lesson song.",
+          "sources": [
+            "b18-pinocchio"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed Jiminy's name so conscience-character recognition cannot solve it alone. The specific song association is independent of Pinocchio's Oscars or second-feature status."
+      }
+    },
+    {
+      "questionId": 994,
+      "hash": "8a696ce0960d330e9cb9ae1f747e7b6d0105be5fbd667ced1116f4216e46731a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pinocchio performs I've Got No Strings on Stromboli's stage.",
+        "sources": [
+          "b18-pinocchio"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Pinocchio performs I've Got No Strings on Stromboli's stage.",
+          "sources": [
+            "b18-pinocchio"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Give a Little Whistle is Jiminy's earlier guidance lesson.",
+          "sources": [
+            "b18-pinocchio"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Little Wooden Head accompanies Geppetto's puppet play, not this stage appearance.",
+          "sources": [
+            "b18-pinocchio"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hi-Diddle-Dee-Dee is Honest John's acting-life song, not the stage number.",
+          "sources": [
+            "b18-pinocchio"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Stromboli introduces the puppet immediately before the strings song; the entire identified performance is distinct from the earlier song enticing him into acting."
+      }
+    },
+    {
+      "questionId": 995,
+      "hash": "6f683b9d8eb73c8a0103452a5e23a76aa13e24b41a75da03bdd12235fa50bbb2",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Baby Mine accompanies Dumbo's visit to the imprisoned Mrs. Jumbo.",
+        "sources": [
+          "b18-dumbo"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Baby Mine accompanies Dumbo's visit to the imprisoned Mrs. Jumbo.",
+          "sources": [
+            "b18-dumbo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Casey Junior accompanies the circus train.",
+          "sources": [
+            "b18-dumbo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pink Elephants on Parade accompanies the later hallucination.",
+          "sources": [
+            "b18-dumbo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Song of the Roustabouts accompanies circus labor.",
+          "sources": [
+            "b18-dumbo"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the assertion that Mrs. Jumbo sings onscreen; final wording only identifies the accompanying lullaby. Other named numbers occur in different sequences."
+      }
+    },
+    {
+      "questionId": 996,
+      "hash": "9ef29fd2055cadbab999e11df32b42bfd32562fa895ad898a47f74734a04c791",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Second Star to the Right appears in Peter Pan (1953).",
+        "sources": [
+          "b18-peter"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Second Star to the Right appears in Peter Pan (1953).",
+          "sources": [
+            "b18-peter"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Alice in Wonderland is not the film credited with this song.",
+          "sources": [
+            "b18-peter"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sleeping Beauty is not the film credited with this song.",
+          "sources": [
+            "b18-peter"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pinocchio is not the film credited with this song.",
+          "sources": [
+            "b18-peter"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The D23 song list directly credits Peter Pan; #2242 asks a themed port's third franchise, requiring an additional park-design fact."
+      }
+    },
+    {
+      "questionId": 997,
+      "hash": "ad3e683d90471b59764fe75e735c4fd1d8211cf76d37274ddb0b27abdb81696b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Bella Notte accompanies the 1955 spaghetti dinner.",
+        "sources": [
+          "b18-lady"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Bella Notte accompanies the 1955 spaghetti dinner.",
+          "sources": [
+            "b18-lady"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He's a Tramp is Peg's pound number.",
+          "sources": [
+            "b18-lady"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "La La Lu is the baby's lullaby.",
+          "sources": [
+            "b18-lady"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Peace on Earth accompanies Christmas, not the dinner.",
+          "sources": [
+            "b18-lady"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Specified animated original. The song also appears in the opening, but that does not make any other option the song at the dinner."
+      }
+    },
+    {
+      "questionId": 998,
+      "hash": "097073077a2dedfb34cd93c6761c6b015d6a559161f70bbe06e4892f573ed1e6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Aurora and Phillip sing Once Upon a Dream in the forest.",
+        "sources": [
+          "b18-beauty"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Aurora and Phillip sing Once Upon a Dream in the forest.",
+          "sources": [
+            "b18-beauty"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "I Wonder is Aurora's earlier solo before Phillip joins her.",
+          "sources": [
+            "b18-beauty"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hail to the Princess Aurora belongs to the birth celebration.",
+          "sources": [
+            "b18-beauty"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Blue Bird is not the song whose lyrics appear in the forest duet.",
+          "sources": [
+            "b18-beauty"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Replaced subjective signature-waltz language with a specific scene and both singers; I Wonder is an actual nearby song but not their duet."
+      }
+    },
+    {
+      "questionId": 1000,
+      "hash": "b2427eb1785e35ff9c62f2e352cea0988e9928f410390b718e5a83ba2517d81e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Allan-a-Dale introduces himself and sings Oo-De-Lally.",
+        "sources": [
+          "b18-robin"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Allan-a-Dale introduces himself and sings Oo-De-Lally.",
+          "sources": [
+            "b18-robin"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Love accompanies Robin and Marian's romance.",
+          "sources": [
+            "b18-robin"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Phony King of England is the later outlaw party number.",
+          "sources": [
+            "b18-robin"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Not in Nottingham is the later lament.",
+          "sources": [
+            "b18-robin"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Allan-a-Dale sings more than one song, so the immediate opening narration context is necessary and excludes his later lament."
+      }
+    },
+    {
+      "questionId": 1001,
+      "hash": "3798a1706514f10f4b061b423775bddecce8181f592bf0dba9e4dc7481e0bb3a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Someone's Waiting for You follows Medusa's cruel insult to Penny.",
+        "sources": [
+          "b18-rescuers"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Someone's Waiting for You follows Medusa's cruel insult to Penny.",
+          "sources": [
+            "b18-rescuers"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rescue Aid Society is the mice's anthem at their meeting.",
+          "sources": [
+            "b18-rescuers"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tomorrow Is Another Day accompanies travel, not this insult aftermath.",
+          "sources": [
+            "b18-rescuers"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Journey is the opening bottle sequence.",
+          "sources": [
+            "b18-rescuers"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Original encouragement wording could also describe the anthem. Final wording fixes the exact scene between Medusa's insult and Penny's bedtime prayer."
+      }
+    },
+    {
+      "questionId": 1002,
+      "hash": "69df8a355928ab67ae8c3b70b90ee92eddcb3b87ee053484c66bbd8288e4eb95",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Best of Friends accompanies young Tod and Copper's play.",
+        "sources": [
+          "b18-fox",
+          "b18-foxmusic"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Best of Friends accompanies young Tod and Copper's play.",
+          "sources": [
+            "b18-fox",
+            "b18-foxmusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Appreciate the Lady concerns the older Tod and Vixey.",
+          "sources": [
+            "b18-fox",
+            "b18-foxmusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Goodbye May Seem Forever accompanies Widow Tweed's farewell.",
+          "sources": [
+            "b18-fox",
+            "b18-foxmusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lack of Education is Big Mama's hunting warning.",
+          "sources": [
+            "b18-fox",
+            "b18-foxmusic"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed friendship from the stem; same-film songs all have separate contexts. This is not merely asking the protagonists' names or Big Mama's identity."
+      }
+    },
+    {
+      "questionId": 1003,
+      "hash": "3f28d706875462ba43c952e460faee0debcc76892dbd9b79e3237fa7ec9aabcb",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Billy Joel as Dodger performs Why Should I Worry near the start.",
+        "sources": [
+          "b18-oliver",
+          "b18-olivermusic"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Billy Joel as Dodger performs Why Should I Worry near the start.",
+          "sources": [
+            "b18-oliver",
+            "b18-olivermusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Good Company is Jenny's number.",
+          "sources": [
+            "b18-oliver",
+            "b18-olivermusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Streets of Gold is Rita's number, sung by Ruth Pointer.",
+          "sources": [
+            "b18-oliver",
+            "b18-olivermusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Perfect Isn't Easy is Georgette's number, sung by Bette Midler.",
+          "sources": [
+            "b18-oliver",
+            "b18-olivermusic"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Changed Billy Joel song to performs as Dodger; no implication that Joel wrote it. Transcript fixes the early street sequence and cast/song credits exclude the other performers."
+      }
+    },
+    {
+      "questionId": 1004,
+      "hash": "3d1a67aa3dbf2f001ec58f883cf99bfb883915e0b853d567d8e6f43b1acbe6b7",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic catalog and all ranked comparisons read; retained as a distinct fact after the documented retirements. Category and editorial difficulty appropriate to the final recall task.",
+      "context": "Final wording, all four stored answers; named ship/location or original English animated film as stated. No television trivia.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Sebastian sings Kiss the Girl during the lagoon boat ride.",
+        "sources": [
+          "b18-mermaid",
+          "b18-records"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Sebastian sings Kiss the Girl during the lagoon boat ride.",
+          "sources": [
+            "b18-mermaid",
+            "b18-records"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Under the Sea promotes undersea life in an earlier scene.",
+          "sources": [
+            "b18-mermaid",
+            "b18-records"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Les Poissons is Louis's kitchen number.",
+          "sources": [
+            "b18-mermaid",
+            "b18-records"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Poor Unfortunate Souls is Ursula's bargain song.",
+          "sources": [
+            "b18-mermaid",
+            "b18-records"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A specific lagoon sequence excludes the other Sebastian song; no subjective claim about every song that might encourage romance."
+      }
+    }
+  ]
+}

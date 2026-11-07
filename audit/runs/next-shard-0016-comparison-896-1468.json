@@ -1,0 +1,31 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "retiredQuestion": {
+    "id": 896,
+    "question": "At EPCOT, which World Showcase pavilion is home to Remy's Ratatouille Adventure?",
+    "answers": [
+      "France",
+      "Italy",
+      "Canada",
+      "United Kingdom"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "retainedQuestion": {
+    "id": 1468,
+    "question": "At EPCOT's France pavilion in World Showcase, what Ratatouille-themed dark ride sends guests scurrying through Gusteau's restaurant at the size of Remy?",
+    "answers": [
+      "Remy's Ratatouille Adventure",
+      "Remy's Kitchen Chase",
+      "Gusteau's Little Adventure",
+      "Rat Race Paris"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "reason": "Both test the France pavilion / Remy's Ratatouille Adventure relationship at EPCOT. Reversing the location and attraction name does not add a fact. Retain the fuller ride-identification question.",
+  "evidenceReference": "artifacts/question-audit/current-compact.json",
+  "challenge": "Compared every option in both questions. Memorizing the character/species or attraction/pavilion association answers the reversed question without a new fact. Only the planned question is removed; the replacement is context, not newly approved."
+}

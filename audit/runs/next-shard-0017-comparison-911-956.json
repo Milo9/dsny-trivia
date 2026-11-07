@@ -1,0 +1,43 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "retiredQuestion": {
+    "id": 911,
+    "question": "Which president is featured in Disneyland's Great Moments with Mr. Lincoln?",
+    "answers": [
+      "Abraham Lincoln",
+      "George Washington",
+      "Theodore Roosevelt",
+      "Thomas Jefferson"
+    ],
+    "difficulty": "easy",
+    "category": "parks"
+  },
+  "replacementQuestion": {
+    "id": 956,
+    "question": "Which Disney-created 1964 World's Fair attraction featured an Audio-Animatronic Abraham Lincoln?",
+    "answers": [
+      "Great Moments with Mr. Lincoln",
+      "Carousel of Progress",
+      "The American Adventure",
+      "Ford Magic Skyway"
+    ],
+    "difficulty": "hard",
+    "category": "walt"
+  },
+  "reason": "The attraction title explicitly supplies Lincoln; it also reverses the same Lincoln/Great Moments fact retained in #956. Two current player reports identify the giveaway.",
+  "source": {
+    "url": "https://disneyland.disney.go.com/en-ca/attractions/disneyland/disneyland-story/",
+    "locator": "A Historic Presentation; An Updated President Lincoln",
+    "evidence": "Great Moments with Mr. Lincoln has an Audio-Animatronic Lincoln; it debuted at the 1964 fair and moved to Disneyland in 1965.",
+    "checkedBy": "Codex",
+    "checkedAt": "2026-11-07",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "topics": [
+      "Batch 17"
+    ],
+    "limitations": "Inspected institutional text or evaluated narrowly matching reusable passage; no film playback claimed. Historic source claims retain their stated date."
+  },
+  "additionalContext": "Complete topic digest read; preserved scope; related replacement is context only, not approved by this decision."
+}

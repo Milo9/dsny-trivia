@@ -1,0 +1,40 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "questionIds": [
+    794,
+    1504
+  ],
+  "removedQuestion": {
+    "id": 794,
+    "question": "The song 'Remember Me' won the Academy Award for Best Original Song at the 2018 Oscars — which Pixar film did it come from?",
+    "answers": [
+      "Coco",
+      "Inside Out",
+      "Finding Dory",
+      "The Good Dinosaur"
+    ],
+    "difficulty": "hard",
+    "category": "music"
+  },
+  "replacementQuestion": {
+    "id": 1504,
+    "question": "The husband-and-wife team Robert Lopez and Kristen Anderson-Lopez wrote 'Let It Go' for Frozen. Which later Pixar film also featured their Oscar-winning original song?",
+    "answers": [
+      "Coco",
+      "Inside Out",
+      "Soul",
+      "Onward"
+    ],
+    "difficulty": "hard",
+    "category": "music"
+  },
+  "reason": "Both identify Coco as the Pixar film of the Lopez duo's Oscar-winning song; the Academy record connects Remember Me, Coco and both songwriters. Retain the richer songwriter question.",
+  "evidence": [
+    {
+      "url": "https://www.oscars.org/oscars/ceremonies/2018",
+      "locator": "Music (Original Song), winning Remember Me entry"
+    }
+  ],
+  "challenge": "Read both complete four-option questions and the full category/topic context. The retained question's tested fact or explicit premise supplies the removed answer without another fact. Retire only the in-scope member; do not alter the replacement."
+}

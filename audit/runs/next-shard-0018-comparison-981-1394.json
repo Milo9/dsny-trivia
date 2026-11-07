@@ -1,0 +1,31 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "removed": {
+    "id": 981,
+    "question": "What Disney Cruise Line Castaway Club tier comes after Gold?",
+    "answers": [
+      "Platinum",
+      "Silver",
+      "Pearl",
+      "Diamond"
+    ],
+    "difficulty": "medium",
+    "category": "cruise"
+  },
+  "replacement": {
+    "id": 1394,
+    "question": "What is the name of Disney Cruise Line's loyalty program that rewards repeat sailors with Silver, Gold, and Platinum tiers?",
+    "answers": [
+      "Castaway Club",
+      "Anchor Club",
+      "Navigator's Guild",
+      "Wave Riders Club"
+    ],
+    "difficulty": "medium",
+    "category": "cruise"
+  },
+  "reason": "The retained loyalty-program question supplies the Silver, Gold, Platinum order; the next-after-Gold recall is already recoverable from it.",
+  "source": "https://disneycruise.disney.go.com/en/faq/castaway-club/eligibility/",
+  "optionChallenge": "Read all four options on both snapshots; overlap concerns the tested association rather than merely shared answer text."
+}

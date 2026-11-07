@@ -1,0 +1,40 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "questionIds": [
+    787,
+    1487
+  ],
+  "removedQuestion": {
+    "id": 787,
+    "question": "During World War I, what organization did a teenage Walt Disney join to serve overseas after being too young to enlist in the Army?",
+    "answers": [
+      "The American Red Cross Ambulance Corps",
+      "The French Foreign Legion",
+      "The Salvation Army",
+      "The U.S. Army Reserves"
+    ],
+    "difficulty": "hard",
+    "category": "walt"
+  },
+  "replacementQuestion": {
+    "id": 1487,
+    "question": "As a teenager during World War I, what did Walt Disney do to serve — given he was too young to enlist as a soldier?",
+    "answers": [
+      "He drove an ambulance for the Red Cross in France",
+      "He worked in a munitions factory",
+      "He delivered messages for the Army Signal Corps",
+      "He drew propaganda posters for the war effort"
+    ],
+    "difficulty": "medium",
+    "category": "walt"
+  },
+  "reason": "Both test Walt's Red Cross ambulance service after being too young to enlist. The retained question explicitly includes France and the ambulance-driving role.",
+  "evidence": [
+    {
+      "url": "https://d23.com/a-to-z/red-cross/",
+      "locator": "Entry, September 1918 admission and subsequent France service"
+    }
+  ],
+  "challenge": "Read both complete four-option questions and the full category/topic context. The retained question's tested fact or explicit premise supplies the removed answer without another fact. Retire only the in-scope member; do not alter the replacement."
+}

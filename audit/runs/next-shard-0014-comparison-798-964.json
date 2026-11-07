@@ -1,0 +1,40 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "questionIds": [
+    798,
+    964
+  ],
+  "removedQuestion": {
+    "id": 798,
+    "question": "What is the name of the water slide on the Disney Magic that launches riders in a clear tube extending out over the side of the ship?",
+    "answers": [
+      "AquaDunk",
+      "AquaDuck",
+      "AquaMouse",
+      "AquaRocket"
+    ],
+    "difficulty": "medium",
+    "category": "cruise"
+  },
+  "replacementQuestion": {
+    "id": 964,
+    "question": "Which Disney Cruise Line ship features the AquaDunk body slide?",
+    "answers": [
+      "Disney Magic",
+      "Disney Wonder",
+      "Disney Dream",
+      "Disney Fantasy"
+    ],
+    "difficulty": "medium",
+    "category": "cruise"
+  },
+  "reason": "Exact inverse of the AquaDunk-to-Disney-Magic association. Keep the concise ship-identification question; slide mechanics do not add a separate tested fact in #798.",
+  "evidence": [
+    {
+      "url": "https://disneycruise.disney.go.com/en-ca/onboard-activities/aquadunk-water-slide/",
+      "locator": "Ship Locations and overview"
+    }
+  ],
+  "challenge": "Read both complete four-option questions and the full category/topic context. The retained question's tested fact or explicit premise supplies the removed answer without another fact. Retire only the in-scope member; do not alter the replacement."
+}

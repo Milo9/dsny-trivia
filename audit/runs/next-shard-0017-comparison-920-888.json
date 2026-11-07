@@ -1,0 +1,43 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "retiredQuestion": {
+    "id": 920,
+    "question": "At EPCOT, what boat ride teaches guests about agriculture and farming?",
+    "answers": [
+      "Living with the Land",
+      "Gran Fiesta Tour",
+      "Journey into Imagination",
+      "The Seas with Nemo & Friends"
+    ],
+    "difficulty": "easy",
+    "category": "parks"
+  },
+  "replacementQuestion": {
+    "id": 888,
+    "question": "In November 2026, at EPCOT, what kind of spaces do boats pass through on Living with the Land?",
+    "answers": [
+      "Working greenhouses",
+      "Space capsules",
+      "Underwater tunnels",
+      "Movie sets"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "reason": "Both test the Living with the Land agriculture/greenhouse experience. The retained question already names the ride and asks about working greenhouses; reversing this to identify the agricultural boat ride adds no materially distinct fact.",
+  "source": {
+    "url": "https://disneyworld.disney.go.com/attractions/epcot/living-with-the-land/",
+    "locator": "Opening and A Taste of the Future",
+    "evidence": "Living with the Land tours greenhouses and teaches farming, linking its greenhouse setting and agriculture theme.",
+    "checkedBy": "Codex",
+    "checkedAt": "2026-11-07",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "topics": [
+      "Batch 17"
+    ],
+    "limitations": "Inspected institutional text or evaluated narrowly matching reusable passage; no film playback claimed. Historic source claims retain their stated date."
+  },
+  "additionalContext": "Complete topic digest read; preserved scope; related replacement is context only, not approved by this decision."
+}

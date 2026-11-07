@@ -1,0 +1,43 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "retiredQuestion": {
+    "id": 921,
+    "question": "At Animal Kingdom, what land is home to the village of Harambe and Kilimanjaro Safaris?",
+    "answers": [
+      "Africa",
+      "Asia",
+      "Discovery Island",
+      "Rafiki's Planet Watch"
+    ],
+    "difficulty": "easy",
+    "category": "parks"
+  },
+  "replacementQuestion": {
+    "id": 1484,
+    "question": "At Disney's Animal Kingdom, what African-village-themed area is home to Kilimanjaro Safaris and features authentic African architecture and cultural details?",
+    "answers": [
+      "Harambe",
+      "Oasis",
+      "Discovery Island",
+      "Gorilla Falls"
+    ],
+    "difficulty": "hard",
+    "category": "parks"
+  },
+  "reason": "Both connect Kilimanjaro Safaris, Harambe and the African village setting. The retained question supplies African-village context and asks Harambe; the reverse land question is already answered by that context.",
+  "source": {
+    "url": "https://www.disneyworld.eu/attractions/animal-kingdom/disney-animals/",
+    "locator": "Wildlife at Disney's Animal Kingdom: Africa and Asia",
+    "evidence": "Africa wildlife experiences include Gorilla Falls and Kilimanjaro Safaris; Asia includes the Asian animal collection.",
+    "checkedBy": "Codex",
+    "checkedAt": "2026-11-07",
+    "timeSensitive": false,
+    "nextReviewAt": null,
+    "topics": [
+      "Batch 17"
+    ],
+    "limitations": "Inspected institutional text or evaluated narrowly matching reusable passage; no film playback claimed. Historic source claims retain their stated date."
+  },
+  "additionalContext": "Complete topic digest read; preserved scope; related replacement is context only, not approved by this decision."
+}

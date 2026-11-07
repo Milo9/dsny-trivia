@@ -1,0 +1,3279 @@
+{
+  "schema": 1,
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "sourcesChecked": [
+    "b15-801-1",
+    "b15-801-2",
+    "b15-802-1",
+    "b15-802-2",
+    "b15-803-1",
+    "b15-803-2",
+    "b15-805-1",
+    "b15-805-2",
+    "b15-806-1",
+    "b15-806-2",
+    "b15-807-1",
+    "b15-807-2",
+    "b15-808-1",
+    "b15-808-2",
+    "b15-809-1",
+    "b15-809-2",
+    "b15-810-1",
+    "b15-810-2",
+    "b15-811-1",
+    "b15-811-2",
+    "b15-812-1",
+    "b15-812-2",
+    "b15-813-1",
+    "b15-813-2",
+    "b15-815-1",
+    "b15-815-2",
+    "b15-816-1",
+    "b15-816-2",
+    "b15-817-1",
+    "b15-817-2",
+    "b15-818-1",
+    "b15-818-2",
+    "b15-819-1",
+    "b15-819-2",
+    "b15-820-1",
+    "b15-820-2",
+    "b15-821-1",
+    "b15-821-2",
+    "b15-822-1",
+    "b15-822-2",
+    "b15-823-1",
+    "b15-823-2",
+    "b15-824-1",
+    "b15-824-2",
+    "b15-825-1",
+    "b15-825-2",
+    "b15-826-1",
+    "b15-826-2",
+    "b15-827-1",
+    "b15-827-2",
+    "b15-828-1",
+    "b15-828-2",
+    "b15-829-1",
+    "b15-829-2",
+    "b15-830-1",
+    "b15-830-2",
+    "b15-832-1",
+    "b15-832-2",
+    "b15-833-1",
+    "b15-833-2",
+    "b15-834-1",
+    "b15-834-2",
+    "b15-835-1",
+    "b15-835-2",
+    "b15-836-1",
+    "b15-836-2",
+    "b15-837-1",
+    "b15-837-2",
+    "b15-838-1",
+    "b15-838-2",
+    "b15-839-1",
+    "b15-839-2",
+    "b15-840-1",
+    "b15-840-2",
+    "b15-841-1",
+    "b15-841-2",
+    "b15-842-1",
+    "b15-842-2",
+    "b15-843-1",
+    "b15-843-2",
+    "b15-844-1",
+    "b15-844-2",
+    "b15-845-1",
+    "b15-845-2",
+    "b15-846-1",
+    "b15-846-2",
+    "b15-847-1",
+    "b15-847-2",
+    "b15-848-1",
+    "b15-848-2",
+    "b15-849-1",
+    "b15-849-2",
+    "b15-850-1",
+    "b15-850-2",
+    "b15-851-1",
+    "b15-851-2",
+    "b15-851-3"
+  ],
+  "reviews": [
+    {
+      "questionId": 801,
+      "hash": "3c4fb1a0b7a8dd3c0d72e06fc8a4c5f2c9df1b9ceab29cc367ae9b7cc7009227",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Checked the demand rather than what the Huntsman actually delivers: the later pig-heart deception does not change the requested proof.",
+      "context": "Queen instructs Huntsman before the forest sequence",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Queen orders the Huntsman to kill Snow White and bring back her heart in the box.",
+        "sources": [
+          "b15-801-1",
+          "b15-801-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Queen orders the Huntsman to kill Snow White and bring back her heart in the box.",
+          "sources": [
+            "b15-801-1",
+            "b15-801-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A crown is not the bodily proof demanded.",
+          "sources": [
+            "b15-801-1",
+            "b15-801-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The mirror advises the Queen; it is not the demanded proof.",
+          "sources": [
+            "b15-801-1",
+            "b15-801-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A necklace is not the heart demanded in the instruction.",
+          "sources": [
+            "b15-801-1",
+            "b15-801-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the demand rather than what the Huntsman actually delivers: the later pig-heart deception does not change the requested proof."
+      }
+    },
+    {
+      "questionId": 802,
+      "hash": "5be80d71cb0b327cf8244a5b383d7204399ed0ffb700fb42f5d2139f3cddce00",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Gideon could fit the original broad question as an accomplice. Replaced that option with Geppetto and challenged the final initial-school-lure wording against the later recruitment.",
+      "context": "Road to school, Honest John and Gideon encounter; Pleasure Island recruitment later",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Honest John interrupts the journey to school and sells an acting career; Gideon accompanies him. Lampwick and the Coachman belong to the later Pleasure Island episode.",
+        "sources": [
+          "b15-802-1",
+          "b15-802-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Honest John interrupts the journey to school and sells an acting career; Gideon accompanies him. Lampwick and the Coachman belong to the later Pleasure Island episode.",
+          "sources": [
+            "b15-802-1",
+            "b15-802-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lampwick befriends Pinocchio on the Pleasure Island journey, after Stromboli.",
+          "sources": [
+            "b15-802-1",
+            "b15-802-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Geppetto sends him to school and does not lure him away.",
+          "sources": [
+            "b15-802-1",
+            "b15-802-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Coachman organizes Pleasure Island rather than the first acting-career lure.",
+          "sources": [
+            "b15-802-1",
+            "b15-802-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Gideon could fit the original broad question as an accomplice. Replaced that option with Geppetto and challenged the final initial-school-lure wording against the later recruitment."
+      }
+    },
+    {
+      "questionId": 803,
+      "hash": "6725cda263f0c6891901b8025ae20dc24f1e59957e40aa2f15a7d01f619541ca",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. This is an exclusive named identity, not a claim about every whale in mythology; all three competing names fail the explicit naming.",
+      "context": "Blue Fairy letter, before the underwater search",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The letter tells Pinocchio that Geppetto has been swallowed by the whale Monstro.",
+        "sources": [
+          "b15-803-1",
+          "b15-803-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The letter tells Pinocchio that Geppetto has been swallowed by the whale Monstro.",
+          "sources": [
+            "b15-803-1",
+            "b15-803-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cetus is not the name given in the letter.",
+          "sources": [
+            "b15-803-1",
+            "b15-803-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bruno is not the whale named in the letter.",
+          "sources": [
+            "b15-803-1",
+            "b15-803-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Neptune is not the whale named in the letter.",
+          "sources": [
+            "b15-803-1",
+            "b15-803-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "This is an exclusive named identity, not a claim about every whale in mythology; all three competing names fail the explicit naming."
+      }
+    },
+    {
+      "questionId": 805,
+      "hash": "eddd9400e25704419372621b5e33020dba62c83df5ee93398946776858bc101a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Distinguished the train name from Mrs. Jumbo and from generic railway names. The explicit naming excludes all three alternative identifiers.",
+      "context": "Circus departure and Casey Junior song",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The circus travels on Casey Jr.; the departure song names Casey Junior.",
+        "sources": [
+          "b15-805-1",
+          "b15-805-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The circus travels on Casey Jr.; the departure song names Casey Junior.",
+          "sources": [
+            "b15-805-1",
+            "b15-805-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cannonball Express is not the named circus train.",
+          "sources": [
+            "b15-805-1",
+            "b15-805-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Circus Limited is not the named circus train.",
+          "sources": [
+            "b15-805-1",
+            "b15-805-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jumbo Line is not the named circus train.",
+          "sources": [
+            "b15-805-1",
+            "b15-805-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished the train name from Mrs. Jumbo and from generic railway names. The explicit naming excludes all three alternative identifiers."
+      }
+    },
+    {
+      "questionId": 806,
+      "hash": "3a6994e33006489cc9ad5d5ee393f53b1b956e09acdb5ffeb630f6d95151d1c5",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Synonyms for infatuation would fit a general definition, but the question asks Owl's specific word. His explicit utterance excludes them.",
+      "context": "Friend Owl explains springtime courtship after Bambi matures",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Friend Owl calls the springtime romantic state twitterpated and describes encountering a pretty face and losing one's head.",
+        "sources": [
+          "b15-806-1",
+          "b15-806-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Friend Owl calls the springtime romantic state twitterpated and describes encountering a pretty face and losing one's head.",
+          "sources": [
+            "b15-806-1",
+            "b15-806-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Moonstruck is a possible English synonym but not Owl's chosen word.",
+          "sources": [
+            "b15-806-1",
+            "b15-806-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Love-bitten is not the word in Owl's explanation.",
+          "sources": [
+            "b15-806-1",
+            "b15-806-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Springstruck is not the word in Owl's explanation.",
+          "sources": [
+            "b15-806-1",
+            "b15-806-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Synonyms for infatuation would fit a general definition, but the question asks Owl's specific word. His explicit utterance excludes them."
+      }
+    },
+    {
+      "questionId": 807,
+      "hash": "daff44ffa724d12904f8f093d94857acddc9e942e76bd12e188f50b9b257d62f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Rechecked species and ownership rather than merely a familiar animal name: only Bruno is Cinderella's dog.",
+      "context": "Morning animal feeding; Fairy Godmother transformation; cast",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Bruno is Cinderella's bloodhound; Major is the horse, Gus a mouse, and Lucifer the cat.",
+        "sources": [
+          "b15-807-1",
+          "b15-807-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Bruno is Cinderella's bloodhound; Major is the horse, Gus a mouse, and Lucifer the cat.",
+          "sources": [
+            "b15-807-1",
+            "b15-807-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Major is her horse, not her dog.",
+          "sources": [
+            "b15-807-1",
+            "b15-807-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gus is one of the mice.",
+          "sources": [
+            "b15-807-1",
+            "b15-807-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lucifer is Lady Tremaine's cat.",
+          "sources": [
+            "b15-807-1",
+            "b15-807-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked species and ownership rather than merely a familiar animal name: only Bruno is Cinderella's dog."
+      }
+    },
+    {
+      "questionId": 808,
+      "hash": "5bfddd2c6268f478293a99e5eab8223bf7e60c804ff6b3ffdf9664561eb858d2",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Alice later follows or listens to several characters. The before-entering context selects the White Rabbit alone.",
+      "context": "Opening park lesson and rabbit-hole chase",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Alice follows the waistcoat-wearing White Rabbit into the hole before her Wonderland encounters.",
+        "sources": [
+          "b15-808-1",
+          "b15-808-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Alice follows the waistcoat-wearing White Rabbit into the hole before her Wonderland encounters.",
+          "sources": [
+            "b15-808-1",
+            "b15-808-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The March Hare is encountered later at the tea party.",
+          "sources": [
+            "b15-808-1",
+            "b15-808-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Cheshire Cat is encountered inside Wonderland, not the initial chase.",
+          "sources": [
+            "b15-808-1",
+            "b15-808-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Dormouse is at the later tea party.",
+          "sources": [
+            "b15-808-1",
+            "b15-808-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Alice later follows or listens to several characters. The before-entering context selects the White Rabbit alone."
+      }
+    },
+    {
+      "questionId": 809,
+      "hash": "c8db17cfa75a56bf99dd4fde8a16062d4b99c18cc122fcf6e9a2669b2bd506bd",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Checked the original Peter Pan story against the squid in Return to Never Land. Hook explicitly identifies the crocodile in the hand-and-clock scene.",
+      "context": "Hook and Smee discuss the missing hand and ticking crocodile",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Hook says the crocodile liked his hand and has followed him ever since, wanting the rest of him.",
+        "sources": [
+          "b15-809-1",
+          "b15-809-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Hook says the crocodile liked his hand and has followed him ever since, wanting the rest of him.",
+          "sources": [
+            "b15-809-1",
+            "b15-809-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A giant squid is not the pursuing creature in the original Peter Pan; do not import the sequel.",
+          "sources": [
+            "b15-809-1",
+            "b15-809-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A sea serpent is not the pursuer identified by Hook.",
+          "sources": [
+            "b15-809-1",
+            "b15-809-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A shark is not the pursuer identified by Hook.",
+          "sources": [
+            "b15-809-1",
+            "b15-809-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the original Peter Pan story against the squid in Return to Never Land. Hook explicitly identifies the crocodile in the hand-and-clock scene."
+      }
+    },
+    {
+      "questionId": 810,
+      "hash": "028cf8e74b8eb352cc0c03ce5bc2be35bd30f56df3ef7c8dfc305673ce57f851",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Jock's breed question #2480 asks an additional breed fact, whereas this asks the named pair; knowing either answer does not supply the other required answer.",
+      "context": "Lady shows her new collar; opening neighborhood introductions",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Lady's neighborhood friends are Jock and Trusty, a terrier and an elderly bloodhound.",
+        "sources": [
+          "b15-810-1",
+          "b15-810-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Lady's neighborhood friends are Jock and Trusty, a terrier and an elderly bloodhound.",
+          "sources": [
+            "b15-810-1",
+            "b15-810-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tito and Francis is a different pair of names, not the two identified neighbors.",
+          "sources": [
+            "b15-810-1",
+            "b15-810-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rutt and Tuke is a different pair, not Lady's named neighbors.",
+          "sources": [
+            "b15-810-1",
+            "b15-810-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Max and Toby is not the pair introduced as these neighbors.",
+          "sources": [
+            "b15-810-1",
+            "b15-810-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Jock's breed question #2480 asks an additional breed fact, whereas this asks the named pair; knowing either answer does not supply the other required answer."
+      }
+    },
+    {
+      "questionId": 811,
+      "hash": "1fce49617fb5cd3e877ee9b2853bbb54b57eff966fb1c13c636fc4624863c5ad",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Aurora is the princess's birth name, while Briar Rose is specifically the forest alias; similar rose names are not additional aliases in this sequence.",
+      "context": "Narrator introduces the fairies' forest cottage and Aurora's sixteenth birthday",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The fairies rear Aurora in a woodcutter's cottage and call her Briar Rose.",
+        "sources": [
+          "b15-811-1",
+          "b15-811-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The fairies rear Aurora in a woodcutter's cottage and call her Briar Rose.",
+          "sources": [
+            "b15-811-1",
+            "b15-811-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rose Red is not the alias stated by the narrator.",
+          "sources": [
+            "b15-811-1",
+            "b15-811-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dawn Rose is not the alias stated by the narrator.",
+          "sources": [
+            "b15-811-1",
+            "b15-811-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Woodland Rose is not the alias stated by the narrator.",
+          "sources": [
+            "b15-811-1",
+            "b15-811-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Aurora is the princess's birth name, while Briar Rose is specifically the forest alias; similar rose names are not additional aliases in this sequence."
+      }
+    },
+    {
+      "questionId": 812,
+      "hash": "108395d9432933732f6a85f69f73e222aea0461a53fdc22a00d56e0d98d73254",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. A howl can be part of the relay, but that does not make Midnight Howl its proper name. The passage explicitly names Twilight Bark.",
+      "context": "Pongo and Perdita after Scotland Yard fails; all-dog alert",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pongo proposes the Twilight Bark, called a gossip chain and the fastest way to send news; dogs relay the missing-puppy alert.",
+        "sources": [
+          "b15-812-1",
+          "b15-812-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Pongo proposes the Twilight Bark, called a gossip chain and the fastest way to send news; dogs relay the missing-puppy alert.",
+          "sources": [
+            "b15-812-1",
+            "b15-812-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Midnight Howl is not the network named in this exchange.",
+          "sources": [
+            "b15-812-1",
+            "b15-812-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Bark Brigade is not the network named in this exchange.",
+          "sources": [
+            "b15-812-1",
+            "b15-812-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Dog Signal is not the network named in this exchange.",
+          "sources": [
+            "b15-812-1",
+            "b15-812-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A howl can be part of the relay, but that does not make Midnight Howl its proper name. The passage explicitly names Twilight Bark."
+      }
+    },
+    {
+      "questionId": 813,
+      "hash": "106cb26bc7ea988d9af177d95433ecae66a810ed2e6e72103e90c21b9a305aba",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Challenged first rather than merely any transformation. Read the complete Plot and the ordered fish, squirrel and bird dialogue passages; no numeric or sequence inference from a short synopsis alone.",
+      "context": "Merlin's lessons, moat fish episode before squirrels and bird flight",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The lesson sequence transforms Wart into a fish first, then a squirrel and later a bird.",
+        "sources": [
+          "b15-813-1",
+          "b15-813-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The lesson sequence transforms Wart into a fish first, then a squirrel and later a bird.",
+          "sources": [
+            "b15-813-1",
+            "b15-813-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The bird transformation is later, after the fish and squirrel lessons.",
+          "sources": [
+            "b15-813-1",
+            "b15-813-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The squirrel lesson follows the fish episode.",
+          "sources": [
+            "b15-813-1",
+            "b15-813-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A rabbit is not the first lesson transformation; the fish scene establishes the first event.",
+          "sources": [
+            "b15-813-1",
+            "b15-813-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged first rather than merely any transformation. Read the complete Plot and the ordered fish, squirrel and bird dialogue passages; no numeric or sequence inference from a short synopsis alone."
+      }
+    },
+    {
+      "questionId": 815,
+      "hash": "56320d5fd4b507b671f76fae838fe4f24bf8195958296c69b910f4cf2e551468",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. All three band cats could help them return home under the original wording. The final question fixes the initial encounter and guide offer, excluding the later rescue helpers.",
+      "context": "First countryside encounter; journey to Paris; later alley-cat rescue",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "O'Malley meets Duchess in the countryside and offers to guide her and the kittens to Paris. Scat Cat and his band join the later mansion rescue.",
+        "sources": [
+          "b15-815-1",
+          "b15-815-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "O'Malley meets Duchess in the countryside and offers to guide her and the kittens to Paris. Scat Cat and his band join the later mansion rescue.",
+          "sources": [
+            "b15-815-1",
+            "b15-815-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Scat Cat joins later in Paris and the rescue, not the first countryside offer.",
+          "sources": [
+            "b15-815-1",
+            "b15-815-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Peppo is a band member, not the cat making the countryside offer.",
+          "sources": [
+            "b15-815-1",
+            "b15-815-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hit Cat is a band member, not the cat making the countryside offer.",
+          "sources": [
+            "b15-815-1",
+            "b15-815-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All three band cats could help them return home under the original wording. The final question fixes the initial encounter and guide offer, excluding the later rescue helpers."
+      }
+    },
+    {
+      "questionId": 816,
+      "hash": "6b40901157db29a39963885b53327942a369fa53124681ae33ba89e32bf14d15",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Local authority does not equal rule of England: the question asks who rules in Richard's absence, identifying Prince John alone.",
+      "context": "Prince John and Sir Hiss carriage scene; Plot and cast",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Prince John occupies Richard's place while Richard is away on crusade; Hiss advises John, the Sheriff enforces taxation, and Little John aids Robin.",
+        "sources": [
+          "b15-816-1",
+          "b15-816-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Prince John occupies Richard's place while Richard is away on crusade; Hiss advises John, the Sheriff enforces taxation, and Little John aids Robin.",
+          "sources": [
+            "b15-816-1",
+            "b15-816-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sir Hiss is the adviser, not the ruler.",
+          "sources": [
+            "b15-816-1",
+            "b15-816-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Sheriff is a local official and tax collector under Prince John.",
+          "sources": [
+            "b15-816-1",
+            "b15-816-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Little John is Robin Hood's ally opposing Prince John.",
+          "sources": [
+            "b15-816-1",
+            "b15-816-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Local authority does not equal rule of England: the question asks who rules in Richard's absence, identifying Prince John alone."
+      }
+    },
+    {
+      "questionId": 817,
+      "hash": "acc7984f683f9d2ed9805b86c0f6ecc5fd2a0fd9b0a60c064ab83904fd6b3b36",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Checked the specific jewel, not the swamp setting or other valuable stones. The explicit diamond name excludes the three alternatives.",
+      "context": "Medusa and Snoops discuss Penny's cave search",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Medusa explicitly demands the Devil's Eye diamond and forces Penny to retrieve it from the cave.",
+        "sources": [
+          "b15-817-1",
+          "b15-817-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Medusa explicitly demands the Devil's Eye diamond and forces Penny to retrieve it from the cave.",
+          "sources": [
+            "b15-817-1",
+            "b15-817-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Blue Diamond is not the jewel she names.",
+          "sources": [
+            "b15-817-1",
+            "b15-817-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Bayou Star is not the jewel she names.",
+          "sources": [
+            "b15-817-1",
+            "b15-817-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Queen's Tear is not the jewel she names.",
+          "sources": [
+            "b15-817-1",
+            "b15-817-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the specific jewel, not the swamp setting or other valuable stones. The explicit diamond name excludes the three alternatives."
+      }
+    },
+    {
+      "questionId": 818,
+      "hash": "a9c349d0c6ff5ffa068bd1dfc2365f097453b088f2b37bcb06cf3976eb05a05f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Kept Copper's owner separate from Tod's adopter Widow Tweed and from the dog Chief; the invented surname combinations do not identify the hunter.",
+      "context": "Copper's arrival at Slade's home; Tweed confronts Amos Slade",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Hunter Amos Slade owns Copper and Chief; Widow Tweed confronts him by name after he pursues Tod.",
+        "sources": [
+          "b15-818-1",
+          "b15-818-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Hunter Amos Slade owns Copper and Chief; Widow Tweed confronts him by name after he pursues Tod.",
+          "sources": [
+            "b15-818-1",
+            "b15-818-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Chief Daniels is not the owner; Chief is Slade's older dog.",
+          "sources": [
+            "b15-818-1",
+            "b15-818-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tod Slade is not the owner; Tod is the fox.",
+          "sources": [
+            "b15-818-1",
+            "b15-818-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dinky Jones is not the owner; Dinky is the sparrow.",
+          "sources": [
+            "b15-818-1",
+            "b15-818-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Kept Copper's owner separate from Tod's adopter Widow Tweed and from the dog Chief; the invented surname combinations do not identify the hunter."
+      }
+    },
+    {
+      "questionId": 819,
+      "hash": "585ca685103a7ce6630b2b19832852e59771e98d1d12c6c773e61484eb10f02a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. The broad word creature could technically include humans, so checked the ordinary character-description sense: the small hairy companion is Gurgi, while all three alternatives have distinct human roles.",
+      "context": "Gurgi steals Taran's apple; companions and Morva witches in Plot",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Gurgi is the small hairy creature who joins Taran. Fflewddur is a bard, Dallben the enchanter, and Orddu a witch.",
+        "sources": [
+          "b15-819-1",
+          "b15-819-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Gurgi is the small hairy creature who joins Taran. Fflewddur is a bard, Dallben the enchanter, and Orddu a witch.",
+          "sources": [
+            "b15-819-1",
+            "b15-819-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fflewddur is the human bard, not the small hairy creature.",
+          "sources": [
+            "b15-819-1",
+            "b15-819-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dallben is Taran's elderly enchanter guardian.",
+          "sources": [
+            "b15-819-1",
+            "b15-819-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Orddu is one of the three witches at Morva.",
+          "sources": [
+            "b15-819-1",
+            "b15-819-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The broad word creature could technically include humans, so checked the ordinary character-description sense: the small hairy companion is Gurgi, while all three alternatives have distinct human roles."
+      }
+    },
+    {
+      "questionId": 820,
+      "hash": "77bd328f5fba8a4d412849638a2d2d137532b001e9ca71bb39c9b6ae85e8ba52",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Dawson helps Olivia reach Basil but is not the girl asking about her father. The explicit daughter identity excludes all three alternative names.",
+      "context": "Opening kidnapping, Dawson meets Olivia, and arrival at Basil's home",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Olivia Flaversham seeks Basil after Fidget kidnaps her father, the toymaker Hiram Flaversham.",
+        "sources": [
+          "b15-820-1",
+          "b15-820-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Olivia Flaversham seeks Basil after Fidget kidnaps her father, the toymaker Hiram Flaversham.",
+          "sources": [
+            "b15-820-1",
+            "b15-820-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Miss Bianca is not the child whose father Basil is asked to find.",
+          "sources": [
+            "b15-820-1",
+            "b15-820-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Felicity Ratigan is not the named daughter in the kidnapping case.",
+          "sources": [
+            "b15-820-1",
+            "b15-820-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jenny Foxworth is not the child who brings Basil this case.",
+          "sources": [
+            "b15-820-1",
+            "b15-820-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Dawson helps Olivia reach Basil but is not the girl asking about her father. The explicit daughter identity excludes all three alternative names."
+      }
+    },
+    {
+      "questionId": 821,
+      "hash": "53604e7d95a688de9f3303bd3d3a67b0716bbe0198191eb06883d46bc329f854",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Jenny is the child adopter even though her parents authorize it; being adopted by the household does not make any other listed girl correct. #447's singer/scene and #1070's coat type test additional facts.",
+      "context": "Foxworth limousine discovery; Jenny tells Georgette her parents agreed",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Jenny Foxworth takes in the kitten, names him Oliver, and announces that her parents will let her keep him.",
+        "sources": [
+          "b15-821-1",
+          "b15-821-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Jenny Foxworth takes in the kitten, names him Oliver, and announces that her parents will let her keep him.",
+          "sources": [
+            "b15-821-1",
+            "b15-821-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Penny is not the girl who adopts Oliver.",
+          "sources": [
+            "b15-821-1",
+            "b15-821-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Anita Radcliffe is not the Foxworth child.",
+          "sources": [
+            "b15-821-1",
+            "b15-821-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Olivia Flaversham is not Oliver's adopter.",
+          "sources": [
+            "b15-821-1",
+            "b15-821-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Jenny is the child adopter even though her parents authorize it; being adopted by the household does not make any other listed girl correct. #447's singer/scene and #1070's coat type test additional facts."
+      }
+    },
+    {
+      "questionId": 822,
+      "hash": "35c15546939031bb745fea189d409e8e4143fbbf9ac7230ef21c45e33cb08100",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Separated Ariel's stolen voice from the identity using it. The named human disguise is Vanessa, regardless of who supplies the voice.",
+      "context": "Ursula's human disguise and wedding barge vows",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Ursula takes the human identity Vanessa; the wedding officiant addresses the bride by that name before the disguise breaks.",
+        "sources": [
+          "b15-822-1",
+          "b15-822-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Ursula takes the human identity Vanessa; the wedding officiant addresses the bride by that name before the disguise breaks.",
+          "sources": [
+            "b15-822-1",
+            "b15-822-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Marina is not the disguise's name.",
+          "sources": [
+            "b15-822-1",
+            "b15-822-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Serena is not the disguise's name.",
+          "sources": [
+            "b15-822-1",
+            "b15-822-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cordelia is not the disguise's name.",
+          "sources": [
+            "b15-822-1",
+            "b15-822-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separated Ariel's stolen voice from the identity using it. The named human disguise is Vanessa, regardless of who supplies the voice."
+      }
+    },
+    {
+      "questionId": 823,
+      "hash": "88b7f7c617d300d09a72379e99b2b22251c31c4ca834379e531791fea8ee0af2",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. The alternatives can be villains or hunters in other films; the fixed film context and Cody/Marahute case exclude them.",
+      "context": "Cody caught in the poacher's trap; Plot and cast",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Percival C. McLeach kidnaps Cody and seeks Marahute; Cody identifies the trap owner as a poacher.",
+        "sources": [
+          "b15-823-1",
+          "b15-823-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Percival C. McLeach kidnaps Cody and seeks Marahute; Cody identifies the trap owner as a poacher.",
+          "sources": [
+            "b15-823-1",
+            "b15-823-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Commander Rourke is not the villain in this Australian rescue.",
+          "sources": [
+            "b15-823-1",
+            "b15-823-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Amos Slade is not Cody's captor or this film's poacher.",
+          "sources": [
+            "b15-823-1",
+            "b15-823-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Clayton is not the villain pursuing Marahute.",
+          "sources": [
+            "b15-823-1",
+            "b15-823-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The alternatives can be villains or hunters in other films; the fixed film context and Cody/Marahute case exclude them."
+      }
+    },
+    {
+      "questionId": 824,
+      "hash": "4203e8274ee52090303a4ee4be0ba08f086dfc35e7bc54c2c0a82d894e6d2d36",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. The glass covering must not be confused with a glass flower. The rose itself measures the time; #1072 tests the love condition rather than the flower identity.",
+      "context": "Opening narration: enchantress, rose bloom and last petal",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The enchanted rose blooms until the prince's twenty-first year; earning love before its last petal falls can break the curse.",
+        "sources": [
+          "b15-824-1",
+          "b15-824-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The enchanted rose blooms until the prince's twenty-first year; earning love before its last petal falls can break the curse.",
+          "sources": [
+            "b15-824-1",
+            "b15-824-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A golden lily is not the flower described by the narrator.",
+          "sources": [
+            "b15-824-1",
+            "b15-824-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A glass tulip is not the curse's flower.",
+          "sources": [
+            "b15-824-1",
+            "b15-824-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A silver daisy is not the curse's flower.",
+          "sources": [
+            "b15-824-1",
+            "b15-824-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The glass covering must not be confused with a glass flower. The rose itself measures the time; #1072 tests the love condition rather than the flower identity."
+      }
+    },
+    {
+      "questionId": 825,
+      "hash": "e8fb3fea54a22656fd8c2e1e179f9f1eada2d71dcadaf08ca512c27eda432e8d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Asked the full assumed name, not merely Prince Ali. Difficulty is medium for surname recall; the other royal-sounding names do not match the introduction.",
+      "context": "Prince Ali parade, chorus names the royal persona",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The parade introduces Aladdin's disguise as Prince Ali Ababwa.",
+        "sources": [
+          "b15-825-1",
+          "b15-825-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The parade introduces Aladdin's disguise as Prince Ali Ababwa.",
+          "sources": [
+            "b15-825-1",
+            "b15-825-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Prince Amir Agrabah changes the stated given name and realm into an incorrect persona.",
+          "sources": [
+            "b15-825-1",
+            "b15-825-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Prince Aziz Ababwa changes Ali to the wrong name.",
+          "sources": [
+            "b15-825-1",
+            "b15-825-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Prince Hakim of Shirabad is not the persona announced in the parade.",
+          "sources": [
+            "b15-825-1",
+            "b15-825-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Asked the full assumed name, not merely Prince Ali. Difficulty is medium for surname recall; the other royal-sounding names do not match the introduction."
+      }
+    },
+    {
+      "questionId": 826,
+      "hash": "f7da20177b79e40c0b3b274308075be5883e4de6cc126442faa61859efb8c573",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Removed pride from the stem to avoid echoing the answer. Checked the actual home landmark, not a general name for the whole Pride Lands.",
+      "context": "Opening presentation at Pride Rock; Simba tells Scar he will be king there",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The royal lion family lives and presents its heirs at Pride Rock; Simba calls himself its future king.",
+        "sources": [
+          "b15-826-1",
+          "b15-826-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The royal lion family lives and presents its heirs at Pride Rock; Simba calls himself its future king.",
+          "sources": [
+            "b15-826-1",
+            "b15-826-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Elephant Graveyard is a forbidden destination beyond the family's home.",
+          "sources": [
+            "b15-826-1",
+            "b15-826-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kings Peak is not the named landmark.",
+          "sources": [
+            "b15-826-1",
+            "b15-826-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lion Mountain is not the named landmark.",
+          "sources": [
+            "b15-826-1",
+            "b15-826-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed pride from the stem to avoid echoing the answer. Checked the actual home landmark, not a general name for the whole Pride Lands."
+      }
+    },
+    {
+      "questionId": 827,
+      "hash": "4348e4bb20677503d9eaa112156a2b9a751acb6327fc2dcfaf60799c2f530efc",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Tree species and kinship title form a specific character name. #1257 asks the guidance song, a separate fact from the tree's identity.",
+      "context": "Pocahontas brings her necklace, marriage question and dream to Grandmother Willow",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Grandmother Willow is the talking willow tree Pocahontas consults for guidance.",
+        "sources": [
+          "b15-827-1",
+          "b15-827-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Grandmother Willow is the talking willow tree Pocahontas consults for guidance.",
+          "sources": [
+            "b15-827-1",
+            "b15-827-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mother Maple is not the name of the tree she consults.",
+          "sources": [
+            "b15-827-1",
+            "b15-827-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Old Oak is not the name of the tree she consults.",
+          "sources": [
+            "b15-827-1",
+            "b15-827-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Spirit Cedar is not the name of the tree she consults.",
+          "sources": [
+            "b15-827-1",
+            "b15-827-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tree species and kinship title form a specific character name. #1257 asks the guidance song, a separate fact from the tree's identity."
+      }
+    },
+    {
+      "questionId": 828,
+      "hash": "4007cda3e4fa71b3842897e2328e4d143fecc97239446a5b96838acefa11a23e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Removed at the start because the film opens with an earlier childhood prologue. Feast of Fools is a variant spoken by a gargoyle, but Feast of Bells is not that variant.",
+      "context": "After childhood prologue, Quasimodo and the gargoyles discuss the celebration outside",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Quasimodo leaves Notre Dame to attend the Festival of Fools, where the crowd initially crowns and then abuses him.",
+        "sources": [
+          "b15-828-1",
+          "b15-828-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Quasimodo leaves Notre Dame to attend the Festival of Fools, where the crowd initially crowns and then abuses him.",
+          "sources": [
+            "b15-828-1",
+            "b15-828-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Feast of Bells is not the named celebration.",
+          "sources": [
+            "b15-828-1",
+            "b15-828-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Notre Dame Day is not the named celebration.",
+          "sources": [
+            "b15-828-1",
+            "b15-828-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Carnival of Saints is not the named celebration.",
+          "sources": [
+            "b15-828-1",
+            "b15-828-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed at the start because the film opens with an earlier childhood prologue. Feast of Fools is a variant spoken by a gargoyle, but Feast of Bells is not that variant."
+      }
+    },
+    {
+      "questionId": 829,
+      "hash": "1951407619effbff939af1703837e3135212ec0173c030690dca1937b64e1cf5",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Cerberus is also many-headed and thus challenged the old options. The final options and grows-during-battle wording isolate the Hydra. #2153 asks how many replacement heads, a separate numeric fact.",
+      "context": "Plot, Hades' staged Hydra encounter; Animation section on multiplying heads",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Hercules fights the Hydra, which develops multiple heads during the fight; the production describes its computer-generated heads.",
+        "sources": [
+          "b15-829-1",
+          "b15-829-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Hercules fights the Hydra, which develops multiple heads during the fight; the production describes its computer-generated heads.",
+          "sources": [
+            "b15-829-1",
+            "b15-829-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Minotaur is not the monster growing multiple heads in that fight.",
+          "sources": [
+            "b15-829-1",
+            "b15-829-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Cyclops has one eye and is not the head-growing Hydra.",
+          "sources": [
+            "b15-829-1",
+            "b15-829-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Kraken is not the head-growing monster in the film.",
+          "sources": [
+            "b15-829-1",
+            "b15-829-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Cerberus is also many-headed and thus challenged the old options. The final options and grows-during-battle wording isolate the Hydra. #2153 asks how many replacement heads, a separate numeric fact."
+      }
+    },
+    {
+      "questionId": 830,
+      "hash": "3cd5c2d9a70f74d02d09f31e3a3eeac6fb6f8d40c2ad0c0f904b605fbcb5aacb",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. The film dialogue explicitly settles on Ping after Mushu's suggestions; the other three are real soldiers, not additional aliases.",
+      "context": "Training camp name exchange; Plot identifies fellow recruits",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Mulan gives her assumed name as Ping; Ling, Yao and Chien-Po are other soldiers in the unit.",
+        "sources": [
+          "b15-830-1",
+          "b15-830-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Mulan gives her assumed name as Ping; Ling, Yao and Chien-Po are other soldiers in the unit.",
+          "sources": [
+            "b15-830-1",
+            "b15-830-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ling is another recruit, not Mulan's alias.",
+          "sources": [
+            "b15-830-1",
+            "b15-830-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Yao is another recruit, not Mulan's alias.",
+          "sources": [
+            "b15-830-1",
+            "b15-830-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Chien-Po is another recruit, not Mulan's alias.",
+          "sources": [
+            "b15-830-1",
+            "b15-830-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The film dialogue explicitly settles on Ping after Mushu's suggestions; the other three are real soldiers, not additional aliases."
+      }
+    },
+    {
+      "questionId": 832,
+      "hash": "53f9048312ada9eb3f9b6389364555c05c91f4934917224def7cd68201294717",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. The role village leader is essential because Kronk also assists in the wider story. Final wording excludes him without claiming that he never helps Kuzco.",
+      "context": "Kuzco's introductory account of Pacha; Plot and cast",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pacha is the village leader who helps the llama Kuzco return to the palace; Kronk is Yzma's assistant.",
+        "sources": [
+          "b15-832-1",
+          "b15-832-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Pacha is the village leader who helps the llama Kuzco return to the palace; Kronk is Yzma's assistant.",
+          "sources": [
+            "b15-832-1",
+            "b15-832-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kronk can help at other moments but is not the village leader.",
+          "sources": [
+            "b15-832-1",
+            "b15-832-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rudy is the old man expelled for throwing off Kuzco's groove, not this leader.",
+          "sources": [
+            "b15-832-1",
+            "b15-832-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tipo is Pacha's son, not the leader helping Kuzco.",
+          "sources": [
+            "b15-832-1",
+            "b15-832-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The role village leader is essential because Kronk also assists in the wider story. Final wording excludes him without claiming that he never helps Kuzco."
+      }
+    },
+    {
+      "questionId": 833,
+      "hash": "85e6f82464c0646ae0e8d98eecd3fa1a9d3ec40a944dc46ec029cba75fdc6aa3",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Checked full first name, not her surname Nedakh or her father Kashekim. #2594 therefore tests a distinct person's name.",
+      "context": "Milo and Kida formally introduce themselves before the city exploration",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Kida introduces herself as Kidagakash, then offers Kida as the shorter name.",
+        "sources": [
+          "b15-833-1",
+          "b15-833-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Kida introduces herself as Kidagakash, then offers Kida as the shorter name.",
+          "sources": [
+            "b15-833-1",
+            "b15-833-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kidanara is not the first name she gives.",
+          "sources": [
+            "b15-833-1",
+            "b15-833-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kidalani is not the first name she gives.",
+          "sources": [
+            "b15-833-1",
+            "b15-833-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kidastra is not the first name she gives.",
+          "sources": [
+            "b15-833-1",
+            "b15-833-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked full first name, not her surname Nedakh or her father Kashekim. #2594 therefore tests a distinct person's name."
+      }
+    },
+    {
+      "questionId": 834,
+      "hash": "8f6d1e4ed5b6454d5e72e7f6718066bd5521388842e953faa74b51fe70157308",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. The question asks Lilo's explicit explanation rather than all possible Hawaiian kinship vocabulary; the other words do not match her utterance.",
+      "context": "Lilo explains family to Nani; Stitch later repeats the principle",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Lilo explains that ohana means family and links it to not leaving anyone behind.",
+        "sources": [
+          "b15-834-1",
+          "b15-834-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Lilo explains that ohana means family and links it to not leaving anyone behind.",
+          "sources": [
+            "b15-834-1",
+            "b15-834-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Aloha is not the word she defines as family in this exchange.",
+          "sources": [
+            "b15-834-1",
+            "b15-834-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mahalo is not the word she defines as family.",
+          "sources": [
+            "b15-834-1",
+            "b15-834-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lanai is not the word she defines as family.",
+          "sources": [
+            "b15-834-1",
+            "b15-834-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The question asks Lilo's explicit explanation rather than all possible Hawaiian kinship vocabulary; the other words do not match her utterance."
+      }
+    },
+    {
+      "questionId": 835,
+      "hash": "87c181d0cab41d58427347040e9acfa45a66fc5be8e906cc78829d5401ea9287",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Distinguished the physical sphere from the projected holographic map and B.E.N.'s later missing memory. Removed the unnecessary golden color claim.",
+      "context": "Doppler's observatory, Jim unlocks Billy Bones' sphere",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Billy Bones gives Jim a sphere; Jim unlocks it to project the star map to Treasure Planet.",
+        "sources": [
+          "b15-835-1",
+          "b15-835-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Billy Bones gives Jim a sphere; Jim unlocks it to project the star map to Treasure Planet.",
+          "sources": [
+            "b15-835-1",
+            "b15-835-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The map mechanism is not a paper scroll.",
+          "sources": [
+            "b15-835-1",
+            "b15-835-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The map mechanism is not a crystal sword.",
+          "sources": [
+            "b15-835-1",
+            "b15-835-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The map mechanism is not a silver compass.",
+          "sources": [
+            "b15-835-1",
+            "b15-835-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished the physical sphere from the projected holographic map and B.E.N.'s later missing memory. Removed the unnecessary golden color claim."
+      }
+    },
+    {
+      "questionId": 836,
+      "hash": "edd04ffd9983b277d9340eea088864f89b830b013c9f349cd1466a4835b3fb72",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Kenai himself is a transformed bear, but the question asks his young companion. The other names have distinct family/species roles.",
+      "context": "Kenai agrees to travel with the cub; Koda introduces his name",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The young bear introduces himself as Koda and becomes Kenai's traveling companion.",
+        "sources": [
+          "b15-836-1",
+          "b15-836-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The young bear introduces himself as Koda and becomes Kenai's traveling companion.",
+          "sources": [
+            "b15-836-1",
+            "b15-836-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sitka is Kenai's elder brother, not the young bear companion.",
+          "sources": [
+            "b15-836-1",
+            "b15-836-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Denahi is Kenai's other human brother, not the cub.",
+          "sources": [
+            "b15-836-1",
+            "b15-836-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tuke is a moose, not the young bear companion.",
+          "sources": [
+            "b15-836-1",
+            "b15-836-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Kenai himself is a transformed bear, but the question asks his young companion. The other names have distinct family/species roles."
+      }
+    },
+    {
+      "questionId": 837,
+      "hash": "151d635bbc0df4492adbfffe106a9870551966726c83a2ae0a101d47d4aa7e1f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Checked the three leading heroines rather than every animal on the farm. Recalibrated the basic species question from hard to easy.",
+      "context": "Opening premise and cast: Maggie, Mrs. Calloway and Grace",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The three heroines are dairy cows; their quest also includes a horse and other farm animals.",
+        "sources": [
+          "b15-837-1",
+          "b15-837-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The three heroines are dairy cows; their quest also includes a horse and other farm animals.",
+          "sources": [
+            "b15-837-1",
+            "b15-837-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The horse Buck is a supporting ally, not one of the three heroines.",
+          "sources": [
+            "b15-837-1",
+            "b15-837-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Goats are not the trio identified in the premise.",
+          "sources": [
+            "b15-837-1",
+            "b15-837-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pigs are not the trio identified in the premise.",
+          "sources": [
+            "b15-837-1",
+            "b15-837-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the three leading heroines rather than every animal on the farm. Recalibrated the basic species question from hard to easy."
+      }
+    },
+    {
+      "questionId": 838,
+      "hash": "69ba64ec51ce89cbbbaf303d98dbcc1acf665a898920b3a24a9d34193673d329",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Other school activities do not answer the question: the baseball victory specifically changes how the town treats him.",
+      "context": "School baseball game and winning pennant; Plot",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Chicken Little joins the baseball team and wins the decisive game, briefly restoring his reputation and his father's pride.",
+        "sources": [
+          "b15-838-1",
+          "b15-838-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Chicken Little joins the baseball team and wins the decisive game, briefly restoring his reputation and his father's pride.",
+          "sources": [
+            "b15-838-1",
+            "b15-838-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Basketball is not the sport of the reputation-restoring match.",
+          "sources": [
+            "b15-838-1",
+            "b15-838-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Soccer is not the sport of that match.",
+          "sources": [
+            "b15-838-1",
+            "b15-838-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Football is not the sport of that match.",
+          "sources": [
+            "b15-838-1",
+            "b15-838-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other school activities do not answer the question: the baseball victory specifically changes how the town treats him."
+      }
+    },
+    {
+      "questionId": 839,
+      "hash": "274c7307fbcb3a789200d15e6ed8fca81e930dda8ea3b1e839ca337623509235",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. All four are plausible encouragements, but this is an explicit motto quotation, not a general interpretation of the film's message.",
+      "context": "Wilbur explains his father's motto while Lewis repairs the time machine",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Keep moving forward is the Robinson motto Lewis learns, including learning from mistakes.",
+        "sources": [
+          "b15-839-1",
+          "b15-839-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Keep moving forward is the Robinson motto Lewis learns, including learning from mistakes.",
+          "sources": [
+            "b15-839-1",
+            "b15-839-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Never grow up is not the Robinson motto.",
+          "sources": [
+            "b15-839-1",
+            "b15-839-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dream it, do it is not the motto Wilbur gives him.",
+          "sources": [
+            "b15-839-1",
+            "b15-839-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Believe in tomorrow is not the motto Wilbur gives him.",
+          "sources": [
+            "b15-839-1",
+            "b15-839-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All four are plausible encouragements, but this is an explicit motto quotation, not a general interpretation of the film's message."
+      }
+    },
+    {
+      "questionId": 840,
+      "hash": "d3e5951a03bd8c537e1793a5bfe3aa34b9ae155eff8ced79753d8b7f8e9a5b7c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. His comic claim of partly wolf ancestry does not change the character's depicted hamster species. This is theatrical-film character trivia; it asks no real television-show fact.",
+      "context": "RV-park introduction of Rhino to Bolt and Mittens",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Rhino introduces himself as a hamster and is a fan of Bolt's show.",
+        "sources": [
+          "b15-840-1",
+          "b15-840-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Rhino introduces himself as a hamster and is a fan of Bolt's show.",
+          "sources": [
+            "b15-840-1",
+            "b15-840-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mittens is the cat; Rhino is not a cat.",
+          "sources": [
+            "b15-840-1",
+            "b15-840-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rhino is identified as a hamster, not a guinea pig.",
+          "sources": [
+            "b15-840-1",
+            "b15-840-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rhino is identified as a hamster, not a rabbit.",
+          "sources": [
+            "b15-840-1",
+            "b15-840-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "His comic claim of partly wolf ancestry does not change the character's depicted hamster species. This is theatrical-film character trivia; it asks no real television-show fact."
+      }
+    },
+    {
+      "questionId": 841,
+      "hash": "fd6dc6b7695367d54c4195d7019a79fbc3c0f607eaac77882cb87e5a33d3f33d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. A boat home could suggest a houseboat, but the stated tree location excludes the floating-river alternative. #1014 asks her song, not her dwelling.",
+      "context": "Louis questions the identity of the boat-in-tree voodoo lady; animator Deja masterclass section 3",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Mama Odie lives in a boat stuck in a tree; animator Andreas Deja explicitly confirms this setting.",
+        "sources": [
+          "b15-841-1",
+          "b15-841-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Mama Odie lives in a boat stuck in a tree; animator Andreas Deja explicitly confirms this setting.",
+          "sources": [
+            "b15-841-1",
+            "b15-841-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Her home is in the tree, not a cave beneath the bayou.",
+          "sources": [
+            "b15-841-1",
+            "b15-841-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The boat is lodged in a tree, not floating on the river.",
+          "sources": [
+            "b15-841-1",
+            "b15-841-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The bayou boat is not a New Orleans mansion.",
+          "sources": [
+            "b15-841-1",
+            "b15-841-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A boat home could suggest a houseboat, but the stated tree location excludes the floating-river alternative. #1014 asks her song, not her dwelling."
+      }
+    },
+    {
+      "questionId": 842,
+      "hash": "a44f529cebd35dd5f3df5682827300073ef837829b6f183fba111dd2d60b22bf",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Made the answers parallel possessives and fixed the birthday being marked. The first lantern at her birth is distinct from the annual releases after she goes missing.",
+      "context": "Opening narration, annual lanterns after Rapunzel's abduction",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The king and queen release lanterns on their missing daughter's birthday, hoping she will return.",
+        "sources": [
+          "b15-842-1",
+          "b15-842-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The king and queen release lanterns on their missing daughter's birthday, hoping she will return.",
+          "sources": [
+            "b15-842-1",
+            "b15-842-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The annual date is the princess's birthday, not the queen's.",
+          "sources": [
+            "b15-842-1",
+            "b15-842-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "It is not the king's birthday.",
+          "sources": [
+            "b15-842-1",
+            "b15-842-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "It is not the captain of the guard's birthday.",
+          "sources": [
+            "b15-842-1",
+            "b15-842-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Made the answers parallel possessives and fixed the birthday being marked. The first lantern at her birth is distinct from the annual releases after she goes missing."
+      }
+    },
+    {
+      "questionId": 843,
+      "hash": "8569fea261a47792c689aab7a7e5f2afb030942d33eab77bbac760d1168cb230",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Removed game from the stem to avoid lexical answer echo. Other game locations are destinations, whereas the named hub connects the arcade worlds.",
+      "context": "Ralph returns from Bad-Anon; surge protector checkpoint",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Game Central Station is the power-strip hub through which characters move between arcade games.",
+        "sources": [
+          "b15-843-1",
+          "b15-843-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Game Central Station is the power-strip hub through which characters move between arcade games.",
+          "sources": [
+            "b15-843-1",
+            "b15-843-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sugar Rush Station is not the hub name at the checkpoint.",
+          "sources": [
+            "b15-843-1",
+            "b15-843-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hero's Duty Gate is not that shared hub.",
+          "sources": [
+            "b15-843-1",
+            "b15-843-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Arcade Junction is not the hub's name.",
+          "sources": [
+            "b15-843-1",
+            "b15-843-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed game from the stem to avoid lexical answer echo. Other game locations are destinations, whereas the named hub connects the arcade worlds."
+      }
+    },
+    {
+      "questionId": 844,
+      "hash": "95fc4c840f2f480434545e0594b861cd11f88c062614fc133b7abec6a6f8c893",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Elsa really does create a bridge, so the old unqualified builds wording was vulnerable. Asking for her home selects the palace and excludes the approach bridge.",
+      "context": "Elsa's Let It Go construction; Anna and Kristoff arrive at the palace",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Elsa creates an ice palace on the North Mountain and stays there; Kristoff calls it a palace made of ice.",
+        "sources": [
+          "b15-844-1",
+          "b15-844-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Elsa creates an ice palace on the North Mountain and stays there; Kristoff calls it a palace made of ice.",
+          "sources": [
+            "b15-844-1",
+            "b15-844-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A bridge is an approach to the palace, not the home she makes there.",
+          "sources": [
+            "b15-844-1",
+            "b15-844-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "She does not establish a snow village as her home.",
+          "sources": [
+            "b15-844-1",
+            "b15-844-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A frozen ship is not the mountaintop home.",
+          "sources": [
+            "b15-844-1",
+            "b15-844-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Elsa really does create a bridge, so the old unqualified builds wording was vulnerable. Asking for her home selects the palace and excludes the approach bridge."
+      }
+    },
+    {
+      "questionId": 845,
+      "hash": "d9933ea3f0728b8db8802e7495fdb4e6d6f341bf0aca3e35662334f63ed2f43c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Checked the specific expo demonstration, not every later superhero tool Hiro builds. The pitch explicitly names microbots.",
+      "context": "Hiro's science showcase pitch and Krei's offer afterward",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Hiro introduces his microbots, demonstrates linked configurations controlled by a neural transmitter, and receives an offer from Krei.",
+        "sources": [
+          "b15-845-1",
+          "b15-845-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Hiro introduces his microbots, demonstrates linked configurations controlled by a neural transmitter, and receives an offer from Krei.",
+          "sources": [
+            "b15-845-1",
+            "b15-845-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Nanowings are not the invention Hiro introduces at this showcase.",
+          "sources": [
+            "b15-845-1",
+            "b15-845-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Health pods are not his showcased invention; Baymax is Tadashi's healthcare robot.",
+          "sources": [
+            "b15-845-1",
+            "b15-845-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Magnet boots are not the invention demonstrated in this pitch.",
+          "sources": [
+            "b15-845-1",
+            "b15-845-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the specific expo demonstration, not every later superhero tool Hiro builds. The pitch explicitly names microbots."
+      }
+    },
+    {
+      "questionId": 846,
+      "hash": "e66d8f758940f9fe1d0fbc7baffe07cdcf697931caf2ec25a5d6dda0db7eeffe",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Preserved mammals rather than predators-only because Uncle Terry is a rabbit. Distinguished flowers from the manufactured serum and made every option a flower name.",
+      "context": "Gideon and Judy's parents identify toxic flowers; Doug's lab and Bellwether confrontation",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Night howlers are toxic flowers; Doug makes the serum from them and darts predators. A rabbit can also be affected.",
+        "sources": [
+          "b15-846-1",
+          "b15-846-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Night howlers are toxic flowers; Doug makes the serum from them and darts predators. A rabbit can also be affected.",
+          "sources": [
+            "b15-846-1",
+            "b15-846-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Moon lilies are not the flowers identified as the serum source.",
+          "sources": [
+            "b15-846-1",
+            "b15-846-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dusk daisies are not the flowers identified as the serum source.",
+          "sources": [
+            "b15-846-1",
+            "b15-846-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Shadow orchids are not the flowers identified as the serum source.",
+          "sources": [
+            "b15-846-1",
+            "b15-846-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Preserved mammals rather than predators-only because Uncle Terry is a rabbit. Distinguished flowers from the manufactured serum and made every option a flower name."
+      }
+    },
+    {
+      "questionId": 847,
+      "hash": "c0fba0bc2a570f42d6f66ee16c065a065248f51e02ab15c16c0c6c331505c69a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. #70 asks which crab lives there, adding Tamatoa's identity; this asks the destination of the hook-retrieval episode. The other location names cannot denote this realm.",
+      "context": "Maui explains the entrance to Lalotai before the Tamatoa encounter",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Maui identifies Lalotai as the Realm of Monsters where Tamatoa has his hook; Moana enters and helps recover it.",
+        "sources": [
+          "b15-847-1",
+          "b15-847-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Maui identifies Lalotai as the Realm of Monsters where Tamatoa has his hook; Moana enters and helps recover it.",
+          "sources": [
+            "b15-847-1",
+            "b15-847-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Motunui is Moana's island home, not the realm of monsters.",
+          "sources": [
+            "b15-847-1",
+            "b15-847-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Te Fiti is not the named realm where the hook is held.",
+          "sources": [
+            "b15-847-1",
+            "b15-847-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ahtohallan belongs to Frozen 2, not this destination.",
+          "sources": [
+            "b15-847-1",
+            "b15-847-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "#70 asks which crab lives there, adding Tamatoa's identity; this asks the destination of the hook-retrieval episode. The other location names cannot denote this realm."
+      }
+    },
+    {
+      "questionId": 848,
+      "hash": "92a0d0c2263647caa4b04b34d4be5070b7c1c417bf4bbc5998a9f5113c02e1cf",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Several characters help Ralph, so retained the specific head-algorithm role and named BuzzzTube to exclude Shank's real contribution.",
+      "context": "Shank directs Ralph to BuzzzTube; Yesss promotes the viral videos",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Yesss is BuzzzTube's head algorithm. Shank is the racer who sends them there, Spamley offers schemes, and KnowsMore handles searches.",
+        "sources": [
+          "b15-848-1",
+          "b15-848-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Yesss is BuzzzTube's head algorithm. Shank is the racer who sends them there, Spamley offers schemes, and KnowsMore handles searches.",
+          "sources": [
+            "b15-848-1",
+            "b15-848-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Shank helps and gives the referral, but is a racer rather than BuzzzTube's algorithm.",
+          "sources": [
+            "b15-848-1",
+            "b15-848-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Spamley is the pop-up salesman, not BuzzzTube's head algorithm.",
+          "sources": [
+            "b15-848-1",
+            "b15-848-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "KnowsMore is the search engine character, not the BuzzzTube algorithm.",
+          "sources": [
+            "b15-848-1",
+            "b15-848-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Several characters help Ralph, so retained the specific head-algorithm role and named BuzzzTube to exclude Shank's real contribution."
+      }
+    },
+    {
+      "questionId": 849,
+      "hash": "197b7231640abd8ebc9959a62937ecb2be5fea3954a78ea326973d96f996db93",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. #1098 asks Raya's particular homeland Heart, whereas this asks the larger land Kumandra. Different geographic levels require different facts.",
+      "context": "Opening narration of unified Kumandra and the fractured present",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Kumandra is the once-united land divided into regions including Heart, Fang, Spine, Talon and Tail.",
+        "sources": [
+          "b15-849-1",
+          "b15-849-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Kumandra is the once-united land divided into regions including Heart, Fang, Spine, Talon and Tail.",
+          "sources": [
+            "b15-849-1",
+            "b15-849-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fangora is not the name of the whole land; Fang is a region.",
+          "sources": [
+            "b15-849-1",
+            "b15-849-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Heartland is not the name of the whole land; Heart is one region.",
+          "sources": [
+            "b15-849-1",
+            "b15-849-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Talonia is not the name of the whole land; Talon is a region.",
+          "sources": [
+            "b15-849-1",
+            "b15-849-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "#1098 asks Raya's particular homeland Heart, whereas this asks the larger land Kumandra. Different geographic levels require different facts."
+      }
+    },
+    {
+      "questionId": 850,
+      "hash": "06a6739271df0dd2a1cb4e33be4c0cadaf2355e30c9bbfcb6a1463f6ace9d9f3",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Checked the animal identity rather than just a companion's name: Star and Dahlia help Asha, but only Valentino is the goat.",
+      "context": "Asha's home scene; Star gives the goat speech; official synopsis and cast",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Valentino is Asha's pet goat, voiced by Alan Tudyk; Star is the cosmic wishing companion.",
+        "sources": [
+          "b15-850-1",
+          "b15-850-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Valentino is Asha's pet goat, voiced by Alan Tudyk; Star is the cosmic wishing companion.",
+          "sources": [
+            "b15-850-1",
+            "b15-850-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Star is the celestial companion, not her goat.",
+          "sources": [
+            "b15-850-1",
+            "b15-850-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sakina is Asha's mother, not her goat.",
+          "sources": [
+            "b15-850-1",
+            "b15-850-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dahlia is Asha's friend, not her goat.",
+          "sources": [
+            "b15-850-1",
+            "b15-850-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the animal identity rather than just a companion's name: Star and Dahlia help Asha, but only Valentino is the goat."
+      }
+    },
+    {
+      "questionId": 851,
+      "hash": "8ffc3588393459aef7214c3477b9b7b323d3733753e882ec6abee0c6ce124c4d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full four-option question and complete topic/comparison context reviewed. Distinct tested fact retained; category and difficulty checked. Grumpy can lead opposition or influence the others, but does not satisfy the glasses attribute. The conjunction selects Doc alone.",
+      "context": "Doc Presentation and character model sheet; Kaufman excerpt on leadership",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Doc wears round spectacles and acts as the dwarfs' self-appointed leader; Grumpy, Sleepy and Bashful have different character traits.",
+        "sources": [
+          "b15-851-1",
+          "b15-851-2",
+          "b15-851-3"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Doc wears round spectacles and acts as the dwarfs' self-appointed leader; Grumpy, Sleepy and Bashful have different character traits.",
+          "sources": [
+            "b15-851-1",
+            "b15-851-2",
+            "b15-851-3"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Grumpy is the surly dwarf, not the bespectacled leader.",
+          "sources": [
+            "b15-851-1",
+            "b15-851-2",
+            "b15-851-3"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sleepy is the perpetually tired dwarf, not the bespectacled leader.",
+          "sources": [
+            "b15-851-1",
+            "b15-851-2",
+            "b15-851-3"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bashful is the shy dwarf, not the bespectacled leader.",
+          "sources": [
+            "b15-851-1",
+            "b15-851-2",
+            "b15-851-3"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Grumpy can lead opposition or influence the others, but does not satisfy the glasses attribute. The conjunction selects Doc alone."
+      }
+    }
+  ]
+}
