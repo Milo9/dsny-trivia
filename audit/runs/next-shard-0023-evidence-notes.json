@@ -1,0 +1,3052 @@
+{
+  "schema": 1,
+  "reviewer": "Codex",
+  "at": "2026-11-08",
+  "sourcesChecked": [
+    "b18-cabanas",
+    "b18-dream",
+    "b18-island",
+    "b18-muster",
+    "b18-port",
+    "b18-wish",
+    "b23-aristocats",
+    "b23-aristomusic",
+    "b23-beast",
+    "b23-card",
+    "b23-cinderella",
+    "b23-cindmusic",
+    "b23-cove",
+    "b23-debark",
+    "b23-dumbo",
+    "b23-dumbomusic",
+    "b23-eye",
+    "b23-festival",
+    "b23-groundterms",
+    "b23-hidden",
+    "b23-hiddencruise",
+    "b23-island",
+    "b23-islandmap",
+    "b23-junglelast",
+    "b23-junglelast2",
+    "b23-lab",
+    "b23-lady",
+    "b23-ladymusic",
+    "b23-meyer",
+    "b23-meyer2",
+    "b23-oliver",
+    "b23-olivermusic",
+    "b23-peter",
+    "b23-petermusic",
+    "b23-pinmusic",
+    "b23-pinocchio",
+    "b23-ranch",
+    "b23-ratalbum",
+    "b23-ratigan",
+    "b23-ratmusic",
+    "b23-rescuemusic",
+    "b23-rescuers",
+    "b23-ritacredits",
+    "b23-robinmusic",
+    "b23-rooms",
+    "b23-seaday",
+    "b23-sleepmusic",
+    "b23-snow",
+    "b23-snowrecord",
+    "b23-spring",
+    "b23-springdesign",
+    "b23-star",
+    "b23-statues",
+    "b23-tender",
+    "b23-tram",
+    "b23-tramfree",
+    "b23-transfers",
+    "b23-treasurebars",
+    "b23-verne",
+    "b23-wishbars",
+    "b23-wishstatue",
+    "b23-wonder",
+    "b23-youth",
+    "b9-fleet2024",
+    "b9-junglelist",
+    "b9-jungleprofiles",
+    "b9-magicitaly",
+    "b9-wonderitaly"
+  ],
+  "reviews": [
+    {
+      "questionId": 1205,
+      "hash": "2ecb55d0ba579355922d8e8f5d72ecc25dc5b4c1e45fbdfb27f79e809493d56f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "Disney 1954 live-action feature; original novel authorship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Disney adaptation explicitly credits Verne as the original story author.",
+        "sources": [
+          "b23-verne"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Verne is the credited source novelist.",
+          "sources": [
+            "b23-verne"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wells is not the novelist credited for this adaptation.",
+          "sources": [
+            "b23-verne"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Stevenson is not the source author identified by Disney.",
+          "sources": [
+            "b23-verne"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Twain is not the author credited for this novel.",
+          "sources": [
+            "b23-verne"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Screenwriter Earl Felton is distinct from the source novelist. Only Verne is assigned original authorship, excluding all three competing authors."
+      }
+    },
+    {
+      "questionId": 1207,
+      "hash": "d38b939af315ad1ec4d16ce996fb7ba958f08306c0bd3b71e32f70dcd54e4cee",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "Feature supervision, not release during his lifetime or any preliminary involvement.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney identifies Jungle Book as the last animated feature Walt personally supervised.",
+        "sources": [
+          "b23-junglelast",
+          "b23-junglelast2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Jungle Book is explicitly the last supervised animated feature.",
+          "sources": [
+            "b23-junglelast",
+            "b23-junglelast2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Aristocats had early Walt involvement, but was not the last feature he supervised.",
+          "sources": [
+            "b23-junglelast",
+            "b23-junglelast2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Robin Hood was produced after Walt death and is not the identified supervised feature.",
+          "sources": [
+            "b23-junglelast",
+            "b23-junglelast2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sword in Stone predates Jungle Book, so is not the last supervised feature.",
+          "sources": [
+            "b23-junglelast",
+            "b23-junglelast2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The original personally-worked-on phrasing could include early Aristocats development and later Pooh compilations. Supervised is the source claim. Removed 1967 clue so #688 release chronology alone does not answer this."
+      }
+    },
+    {
+      "questionId": 1208,
+      "hash": "5229cefd69f380abced2a0460518b6f40e2c64741a27b8ea9e86a6aeb713265c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "California film property purchase by Walt Disney Productions, 1959.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Museum account identifies Walt Disney Productions purchase of Golden Oak Ranch in 1959.",
+        "sources": [
+          "b23-ranch"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Golden Oak is the purchased filming ranch.",
+          "sources": [
+            "b23-ranch"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Smoke Tree was Walt retreat, not this studio film-ranch purchase.",
+          "sources": [
+            "b23-ranch"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Carolwood is not the name given in the purchase record.",
+          "sources": [
+            "b23-ranch"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hyperion is not the ranch identified in the purchase account.",
+          "sources": [
+            "b23-ranch"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Studio ownership of the filming property is explicit; Walt private Smoke Tree retreat from #958 is a different fact and cannot substitute for this purchase."
+      }
+    },
+    {
+      "questionId": 1209,
+      "hash": "76a169089ca23db9e8f25e2bee993f5442b337e7b6daa681a0494e2cc0d9eb6c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "1919 return to Kansas City after France; art-department application, not firing.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Barrier account identifies the Star as having no art vacancy when Walt returned in 1919.",
+        "sources": [
+          "b23-star"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Star is explicitly the paper whose art department had no vacancy.",
+          "sources": [
+            "b23-star"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Times is not the paper named for this application.",
+          "sources": [
+            "b23-star"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Chicago Tribune is not the named Kansas City application.",
+          "sources": [
+            "b23-star"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Los Angeles Times is not the named newspaper.",
+          "sources": [
+            "b23-star"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "This was not a dismissal for lacking imagination. The final premise states no vacancy and separates the later office-boy rejection. Two newspapers share Kansas City but only Star is identified in the application account."
+      }
+    },
+    {
+      "questionId": 1211,
+      "hash": "a5c611b37146f208f4f36828a54e41213f0d30da7bb40eab424714767acd5fc9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "Castaway Cay attraction identity, checked November 2026.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Disney names Pelican Plunge as the offshore platform with two twisting waterslides.",
+        "sources": [
+          "b23-island",
+          "b23-spring",
+          "b18-island",
+          "b23-islandmap"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Pelican Plunge is the platform with slides into the lagoon.",
+          "sources": [
+            "b23-island",
+            "b23-spring",
+            "b18-island",
+            "b23-islandmap"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Scuttle Cove is supervised sand-and-games play.",
+          "sources": [
+            "b23-island",
+            "b23-spring",
+            "b18-island",
+            "b23-islandmap"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Spring a Leak is the shore splash pad, not the offshore slide platform.",
+          "sources": [
+            "b23-island",
+            "b23-spring",
+            "b18-island",
+            "b23-islandmap"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Monstro Point is the whale-bone dig area, not the slide platform.",
+          "sources": [
+            "b23-island",
+            "b23-spring",
+            "b18-island",
+            "b23-islandmap"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Spring a Leak has water play, but not this offshore pair of slides; Scuttle and Monstro are land play. Refurbishment can affect opening, so no promise of availability is inferred."
+      }
+    },
+    {
+      "questionId": 1213,
+      "hash": "7354b593b99fa0da2ee9e776fc41629d9e02fd4a0fd5b62a1b4ec237e309f076",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "Castaway Cay in The Bahamas; special postal facility, not delivery speed.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Disney dock post office sends letters with the Castaway Cay island postmark.",
+        "sources": [
+          "b23-island"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The post office is explicitly the mailing amenity.",
+          "sources": [
+            "b23-island"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "No message-bottle service is the named postal facility.",
+          "sources": [
+            "b23-island"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Navigator is not the island postal office.",
+          "sources": [
+            "b23-island"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Harbor mailbox is not the official amenity identified here.",
+          "sources": [
+            "b23-island"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A ship guest-services desk may accept mail, but this asks the island amenity with its special postmark. The source specifically places that post office on the dock."
+      }
+    },
+    {
+      "questionId": 1214,
+      "hash": "909cf1c084b087e41dbf304fc7eca8dae5086afb879e29d0e19e3a9f0803fa78",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "Castaway Cay themed splash-and-play attraction.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The storm-damaged splash-and-play setting is Spring-A-Leak.",
+        "sources": [
+          "b23-spring",
+          "b23-springdesign",
+          "b23-island",
+          "b18-island",
+          "b23-islandmap"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Spring a Leak has the splash pads and misters.",
+          "sources": [
+            "b23-spring",
+            "b23-springdesign",
+            "b23-island",
+            "b18-island",
+            "b23-islandmap"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pelican Plunge is the offshore slide platform.",
+          "sources": [
+            "b23-spring",
+            "b23-springdesign",
+            "b23-island",
+            "b18-island",
+            "b23-islandmap"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Scuttle Cove is supervised play and sand activities, not the named splash-pad attraction.",
+          "sources": [
+            "b23-spring",
+            "b23-springdesign",
+            "b23-island",
+            "b18-island",
+            "b23-islandmap"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Monstro Point names a whale-bone dig, not the splash pad.",
+          "sources": [
+            "b23-spring",
+            "b23-springdesign",
+            "b23-island",
+            "b18-island",
+            "b23-islandmap"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Scuttle can include water play too, so final wording requires the storm-damaged dwelling theme with pipes and misters. The Disney magazine assigns these features specifically to Spring a Leak and separately describes Pelican Plunge offshore."
+      }
+    },
+    {
+      "questionId": 1215,
+      "hash": "ea996e1ad26fe1f5fe82d7414f7961a8c4db4ad0e19ca2ebe79fbffab456c792",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "Naming inspiration for soft-serve outlet, not availability on every ship.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Disney explicitly derives Eye Scream Treats from Mike Wazowski.",
+        "sources": [
+          "b23-eye"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Eye Scream is explicitly named after Mike and serves soft serve.",
+          "sources": [
+            "b23-eye"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Frozone is a different character name, not the Mike-derived pun.",
+          "sources": [
+            "b23-eye"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cove Cafe is a coffee lounge, not the Mike-named ice cream counter.",
+          "sources": [
+            "b23-eye"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sweet on You is not the name Disney says was derived from Mike.",
+          "sources": [
+            "b23-eye"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other outlets can serve frozen treats, but the question requires the documented Mike naming origin. The official page states that origin explicitly."
+      }
+    },
+    {
+      "questionId": 1216,
+      "hash": "4b3bc29ebb754f7480ecd0f45e49b63a1695bfe85ca03ca94d8d11b1b321ed26",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "Disney Wish upper-deck quick-service grouping.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Wish open-air poolside counter grouping is Mickey & Friends Festival of Foods.",
+        "sources": [
+          "b23-festival",
+          "b18-wish",
+          "b18-dream",
+          "b18-cabanas"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Festival is explicitly the quick-bite area with these counters.",
+          "sources": [
+            "b23-festival",
+            "b18-wish",
+            "b18-dream",
+            "b18-cabanas"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Marceline is the indoor marketplace, not this open-air grouping.",
+          "sources": [
+            "b23-festival",
+            "b18-wish",
+            "b18-dream",
+            "b18-cabanas"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Flo Cafe is on Dream and Fantasy, not this Wish venue.",
+          "sources": [
+            "b23-festival",
+            "b18-wish",
+            "b18-dream",
+            "b18-cabanas"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cabanas is not the named Wish poolside grouping.",
+          "sources": [
+            "b23-festival",
+            "b18-wish",
+            "b18-dream",
+            "b18-cabanas"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Marceline also provides casual food but does not satisfy poolside open-air counter grouping. Removed Mickey/friends words from stem; full normal venue name is necessarily longer than the other venue names."
+      }
+    },
+    {
+      "questionId": 1217,
+      "hash": "090d64ed5bae3045cc340a8f0682697fd675175a7dac0df81548bb5f7b8e6ce2",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "Named adult lounge compared with youth venues.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Cove Cafe is explicitly an adults-only coffee lounge.",
+        "sources": [
+          "b23-cove",
+          "b23-youth",
+          "b23-wonder"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Cove Cafe is the adult coffee lounge.",
+          "sources": [
+            "b23-cove",
+            "b23-youth",
+            "b23-wonder"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Oceaneer Club is for children.",
+          "sources": [
+            "b23-cove",
+            "b23-youth",
+            "b23-wonder"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Vibe is a teen club, not an adult cafe.",
+          "sources": [
+            "b23-cove",
+            "b23-youth",
+            "b23-wonder"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Edge is a tween club, not an adult cafe.",
+          "sources": [
+            "b23-cove",
+            "b23-youth",
+            "b23-wonder"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Youth open-house access does not turn a youth club into the designated adult coffee lounge. Both adult audience and coffee-lounge function are required."
+      }
+    },
+    {
+      "questionId": 1218,
+      "hash": "729abeb3ed4e974edaf9d8cdf5b793c2c98c224bfe30930868d233a091986c6c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "Disney Fantasy children club; ship selected from the official location list.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Fantasy Lab offers science labs, workshops and experiments for children.",
+        "sources": [
+          "b23-lab",
+          "b23-wonder"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Oceaneer Lab explicitly has the described science and workshops.",
+          "sources": [
+            "b23-lab",
+            "b23-wonder"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Vibe serves teens, not the described children club.",
+          "sources": [
+            "b23-lab",
+            "b23-wonder"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Edge serves tweens, not this named children science space.",
+          "sources": [
+            "b23-lab",
+            "b23-wonder"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Quiet Cove is an adult pool area.",
+          "sources": [
+            "b23-lab",
+            "b23-wonder"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The old interactive-activities stem could fit multiple youth spaces. Final wording asks the Fantasy children science venue; it is not a claim that teens never do an experiment."
+      }
+    },
+    {
+      "questionId": 1219,
+      "hash": "dd56e0511db2d1c81141c01dcbe29f00e27746ae3d46d08903f01665fa0b75e7",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "Original Magic and Wonder shipbuilding attribution, historical.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Fincantieri built both original Disney ships in Italy.",
+        "sources": [
+          "b9-magicitaly",
+          "b9-wonderitaly",
+          "b9-fleet2024"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Fincantieri is identified for both Magic and Wonder.",
+          "sources": [
+            "b9-magicitaly",
+            "b9-wonderitaly",
+            "b9-fleet2024"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Meyer is not the builder assigned to these two ships.",
+          "sources": [
+            "b9-magicitaly",
+            "b9-wonderitaly",
+            "b9-fleet2024"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Chantiers is not their recorded builder.",
+          "sources": [
+            "b9-magicitaly",
+            "b9-wonderitaly",
+            "b9-fleet2024"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Harland and Wolff is not their recorded builder.",
+          "sources": [
+            "b9-magicitaly",
+            "b9-wonderitaly",
+            "b9-fleet2024"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A builder of later Disney ships does not become builder of Magic/Wonder. Company attribution is a new fact beyond #433 Italy; the fleet table and separate ship accounts agree."
+      }
+    },
+    {
+      "questionId": 1220,
+      "hash": "a242f348495716516953c7ee2009e3e9c01403093efb1a9410e70a86dd5f4ec9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "Dream and Fantasy builder, Germany; historical.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The builder identifies itself as constructor of both Dream and Fantasy in Papenburg.",
+        "sources": [
+          "b23-meyer",
+          "b23-meyer2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Meyer Werft built both named ships.",
+          "sources": [
+            "b23-meyer",
+            "b23-meyer2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fincantieri built the earlier pair, not these.",
+          "sources": [
+            "b23-meyer",
+            "b23-meyer2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Blohm+Voss is not the builder credited for Dream or Fantasy.",
+          "sources": [
+            "b23-meyer",
+            "b23-meyer2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Chantiers is not the builder named in either ship record.",
+          "sources": [
+            "b23-meyer",
+            "b23-meyer2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Dream delivery in 2010 and maiden voyage in 2011 are different milestones; neither changes the builder. Both ship-specific builder pages identify Meyer."
+      }
+    },
+    {
+      "questionId": 1221,
+      "hash": "0351908828396b9a582be6fbc3630caa0509bda345b3fe0a0ff272fc257c889d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "Main atrium bronze statue assignment; November 2026.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Official ship account assigns Admiral Donald to the Dream lobby.",
+        "sources": [
+          "b23-statues"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Dream has Admiral Donald.",
+          "sources": [
+            "b23-statues"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Magic is not the ship assigned Admiral Donald in this pairing.",
+          "sources": [
+            "b23-statues"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wonder is not the identified Admiral Donald ship.",
+          "sources": [
+            "b23-statues"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fantasy has Mademoiselle Minnie instead.",
+          "sources": [
+            "b23-statues"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The question is the named main-atrium statue, not any Donald depiction onboard. Minnie and Donald are assigned to distinct sister ships; Magic/Wonder cannot substitute for Dream. Statue identity differs from stage-show or maiden-voyage facts."
+      }
+    },
+    {
+      "questionId": 1222,
+      "hash": "f04798ed6bcd586a3a18412a03c9055782db3359cb9ddfb9fac0d718de6a7f90",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "Main atrium bronze statue assignment; November 2026.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Official ship account assigns Mademoiselle Minnie to Fantasy lobby.",
+        "sources": [
+          "b23-statues"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Fantasy has Mademoiselle Minnie.",
+          "sources": [
+            "b23-statues"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dream instead has Admiral Donald.",
+          "sources": [
+            "b23-statues"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wonder is not the Minnie ship identified in the pairing.",
+          "sources": [
+            "b23-statues"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Magic is not the ship assigned Mademoiselle Minnie.",
+          "sources": [
+            "b23-statues"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Any Minnie art elsewhere does not satisfy the main atrium bronze statue identity. Each character-ship mapping is independent; knowing Dream Donald does not logically locate Minnie."
+      }
+    },
+    {
+      "questionId": 1223,
+      "hash": "3fa47d1fbcf483058408fbdedf427a7ac819393e1e3257c0d10e8786faf1d3c8",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "Disney Wish Grand Hall centerpiece; November 2026.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Disney Wish welcome account explicitly identifies bronze Cinderella in Grand Hall.",
+        "sources": [
+          "b23-wishstatue",
+          "b23-statues"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Wish has the described Grand Hall Cinderella.",
+          "sources": [
+            "b23-wishstatue",
+            "b23-statues"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fantasy has Minnie, not this Grand Hall statue.",
+          "sources": [
+            "b23-wishstatue",
+            "b23-statues"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dream has Donald, not Cinderella as its lobby statue.",
+          "sources": [
+            "b23-wishstatue",
+            "b23-statues"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Magic is not the ship identified by the Grand Hall account.",
+          "sources": [
+            "b23-wishstatue",
+            "b23-statues"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Cinderella imagery in other ships does not make it their Grand Hall bronze centerpiece. Statue assignment is distinct from ship size, class, opening date or stage shows."
+      }
+    },
+    {
+      "questionId": 1224,
+      "hash": "a82eb8562b596d943ae10b36ba1d1c7b67ab6896cb9317fdc1a027b71bcaeb36",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "Disney Dream exact accommodation categories.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Dream Deluxe Oceanview uses a real porthole and lacks the Verandah category balcony.",
+        "sources": [
+          "b23-rooms"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Deluxe Oceanview has the real porthole without private verandah.",
+          "sources": [
+            "b23-rooms"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Standard Inside has a virtual porthole, not a real window.",
+          "sources": [
+            "b23-rooms"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Royal Suite with Verandah explicitly includes a balcony.",
+          "sources": [
+            "b23-rooms"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Oceanview with Verandah explicitly includes a balcony.",
+          "sources": [
+            "b23-rooms"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Some concierge rooms on other ships have windows without balconies, so final options use exact Dream categories. A virtual porthole is excluded by real; a window in a balcony room does not satisfy without balcony."
+      }
+    },
+    {
+      "questionId": 1225,
+      "hash": "76897a91fee50ee47a7cce950dee337651401360e23642a60d7b9a867bbbcc28",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "Service name; routes and availability vary.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Disney names airport-to-port transport ground transfers.",
+        "sources": [
+          "b23-transfers",
+          "b23-groundterms",
+          "b23-tender",
+          "b18-muster"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Ground transfers is the land transport service.",
+          "sources": [
+            "b23-transfers",
+            "b23-groundterms",
+            "b23-tender",
+            "b18-muster"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Port Adventures are shore excursions, not the airport transfer service.",
+          "sources": [
+            "b23-transfers",
+            "b23-groundterms",
+            "b23-tender",
+            "b18-muster"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tendering uses small boats between anchored ship and shore.",
+          "sources": [
+            "b23-transfers",
+            "b23-groundterms",
+            "b23-tender",
+            "b18-muster"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Muster names a safety assembly, not land transport.",
+          "sources": [
+            "b23-transfers",
+            "b23-groundterms",
+            "b23-tender",
+            "b18-muster"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A shore excursion might include a bus, but does not become the airport/hotel transfer product. Ground transport identity is distinct from vehicle type and does not promise every hotel is served."
+      }
+    },
+    {
+      "questionId": 1226,
+      "hash": "90a5d54e8cd89fd5c429102dd4ac2a7da71a56d4f3f20165ac7920c116a85dfd",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "Cruise itinerary terminology, not a specific scheduled sailing.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney itinerary distinguishes a day at sea from port and boarding days.",
+        "sources": [
+          "b23-seaday",
+          "b18-muster",
+          "b18-port"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Sea day is the full day without a port stop.",
+          "sources": [
+            "b23-seaday",
+            "b18-muster",
+            "b18-port"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Port day has a port call.",
+          "sources": [
+            "b23-seaday",
+            "b18-muster",
+            "b18-port"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Embarkation day is the starting boarding day.",
+          "sources": [
+            "b23-seaday",
+            "b18-muster",
+            "b18-port"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Muster is a drill, not the label for a full no-port cruise day.",
+          "sources": [
+            "b23-seaday",
+            "b18-muster",
+            "b18-port"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Guests may stay aboard during a port call, but that does not turn the itinerary into a sea day. A muster exercise can happen on a sailing day without naming that day."
+      }
+    },
+    {
+      "questionId": 1227,
+      "hash": "922813b7214dea57986c2585a6bf3223734c8463dd18e328999127b589ef6c92",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "End-of-voyage terminology; no timing or customs policy asserted.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney uses debarkation for guests leaving at cruise end.",
+        "sources": [
+          "b23-debark",
+          "b18-muster",
+          "b23-tender"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Debarkation is leaving at the end.",
+          "sources": [
+            "b23-debark",
+            "b18-muster",
+            "b23-tender"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Embarkation is boarding at the beginning.",
+          "sources": [
+            "b23-debark",
+            "b18-muster",
+            "b23-tender"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Muster is the safety drill.",
+          "sources": [
+            "b23-debark",
+            "b18-muster",
+            "b23-tender"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tendering is transport by small boat, not the end-of-voyage process.",
+          "sources": [
+            "b23-debark",
+            "b18-muster",
+            "b23-tender"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Debark can also mean leaving at a port, but end-of-cruise leaving is still correctly debarkation. Tendering could be a transport method on a visit; it does not replace this process label."
+      }
+    },
+    {
+      "questionId": 1228,
+      "hash": "da560375c8c7a66c9646246b332686bc95ec21ea509879b77246ec6689cdb82d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "Anchored-offshore ship-to-shore transport terminology.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Anchored ships use smaller tender boats to reach the dock.",
+        "sources": [
+          "b23-tender",
+          "b18-muster"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Tendering is that small-boat transfer.",
+          "sources": [
+            "b23-tender",
+            "b18-muster"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mustering is safety assembly.",
+          "sources": [
+            "b23-tender",
+            "b18-muster"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rotating describes dining changes, not a boat transfer.",
+          "sources": [
+            "b23-tender",
+            "b18-muster"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Docking is bringing the ship to a pier, the alternative to remaining offshore.",
+          "sources": [
+            "b23-tender",
+            "b18-muster"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tender boarding is physically embarking a boat, but among these options only tendering names this ship-shore transfer process; docking is explicitly contrasted in Disney FAQ."
+      }
+    },
+    {
+      "questionId": 1229,
+      "hash": "83bc6e042814338579c24f35462024dad00a8d8d2355705b0246281840bb7f11",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "Physical Disney cruise card, current FAQ.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Disney continues issuing Key to the World cards for room entry and onboard charges.",
+        "sources": [
+          "b23-card"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Key to the World is explicitly the issued card.",
+          "sources": [
+            "b23-card"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "SeaPass is not the card named by Disney FAQ.",
+          "sources": [
+            "b23-card"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sail and Sign is not Disney issued card name.",
+          "sources": [
+            "b23-card"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "SeaPass Plus is not the card identified by Disney.",
+          "sources": [
+            "b23-card"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "DisneyBand+ can perform overlapping functions, so removed the band distractor and specified physical card. Only the issued card name is asked; no claim it is the sole access method."
+      }
+    },
+    {
+      "questionId": 1230,
+      "hash": "286a81c692282e6d75183a5b2bc240607d05a13c11f711169f7a847605b3450f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "Program grouping across Disney ships; excludes a claim of identical fleetwide facilities.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The four spaces are youth clubs overseen by Disney Youth Counselors.",
+        "sources": [
+          "b23-youth",
+          "b23-lab",
+          "b23-wonder"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Youth activities is the umbrella program for these clubs.",
+          "sources": [
+            "b23-youth",
+            "b23-lab",
+            "b23-wonder"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Port Adventures concern shore excursions, not the onboard clubs program.",
+          "sources": [
+            "b23-youth",
+            "b23-lab",
+            "b23-wonder"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Room service delivers food to rooms, not youth clubs.",
+          "sources": [
+            "b23-youth",
+            "b23-lab",
+            "b23-wonder"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rotational dining governs restaurant schedules, not these clubs.",
+          "sources": [
+            "b23-youth",
+            "b23-lab",
+            "b23-wonder"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The ship fleet wording groups offerings across ships; it does not say all four are on every ship. Two old resolved player complaints concerned vague original wording; the current named-club stem supplies concrete context."
+      }
+    },
+    {
+      "questionId": 1231,
+      "hash": "99a71c08b559732b13ee6772459651a6f88395e42ca476a9d0f4843ba66e501f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "Disney Wish pub design theme.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Keg and Compass evokes a nineteenth-century Norwegian sailor map room.",
+        "sources": [
+          "b23-wishbars"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Keg and Compass is the nautical-exploration pub.",
+          "sources": [
+            "b23-wishbars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bayou follows Princess and Frog/New Orleans.",
+          "sources": [
+            "b23-wishbars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Nightingale follows Cinderella music.",
+          "sources": [
+            "b23-wishbars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rose follows Beauty and Beast.",
+          "sources": [
+            "b23-wishbars"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A shipboard bar is nautical by location, but this asks design theme. The source explicitly contrasts the venues and identifies Norwegian seafaring for Keg and Compass."
+      }
+    },
+    {
+      "questionId": 1232,
+      "hash": "da8628862ca5387486ece22fb3b25179c8d9c1e22dfbe30212268ae0190926c6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "Disney Wish lounge inspiration.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Nightingale piano bar is inspired by Cinderella Sing Sweet Nightingale.",
+        "sources": [
+          "b23-wishbars"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Nightingale is explicitly Cinderella inspired.",
+          "sources": [
+            "b23-wishbars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bayou is Princess and Frog inspired.",
+          "sources": [
+            "b23-wishbars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Keg is Norwegian seafaring inspired.",
+          "sources": [
+            "b23-wishbars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hyperspace is Star Wars inspired.",
+          "sources": [
+            "b23-wishbars"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All lounges on a ship can share a general enchantment aesthetic; the asked film inspiration is explicitly assigned only to Nightingale among the choices."
+      }
+    },
+    {
+      "questionId": 1233,
+      "hash": "b9cce96b26b06a072add0cf0111fb30eb11ffa20c7de8fbcbfb8bd114f721d94",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "Disney Treasure pub theme.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Periscope Pub uses the 1954 20000 Leagues film theme.",
+        "sources": [
+          "b23-treasurebars",
+          "b23-wishbars"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Periscope is the film-inspired submarine pub.",
+          "sources": [
+            "b23-treasurebars",
+            "b23-wishbars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Haunted Mansion Parlor uses Haunted Mansion theme.",
+          "sources": [
+            "b23-treasurebars",
+            "b23-wishbars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Skipper Society uses Jungle Cruise theme.",
+          "sources": [
+            "b23-treasurebars",
+            "b23-wishbars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rose uses Beauty and Beast theme.",
+          "sources": [
+            "b23-treasurebars",
+            "b23-wishbars"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Periscope also references the former park ride, but this does not invalidate its explicit film inspiration. The other venues have separate documented themes."
+      }
+    },
+    {
+      "questionId": 1234,
+      "hash": "3b2a93967280ee051523149e9d9b6e77503c611b8bbcf16900a9068b9c968648",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "Disney Treasure lounge inspiration.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Skipper Society is explicitly Jungle Cruise inspired.",
+        "sources": [
+          "b23-treasurebars",
+          "b23-wishbars"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Skipper Society is the Jungle Cruise-inspired lounge.",
+          "sources": [
+            "b23-treasurebars",
+            "b23-wishbars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Periscope is 20000 Leagues inspired.",
+          "sources": [
+            "b23-treasurebars",
+            "b23-wishbars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bayou uses Princess and Frog.",
+          "sources": [
+            "b23-treasurebars",
+            "b23-wishbars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Nightingale uses Cinderella.",
+          "sources": [
+            "b23-treasurebars",
+            "b23-wishbars"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Generic adventure overlaps with Periscope, so the question specifically requires Jungle Cruise rather than any exploration theme. Source assigns the exact attraction."
+      }
+    },
+    {
+      "questionId": 1236,
+      "hash": "70cab2c7003da0b370118ca4653ec35c64038b92761b8b989b589a26fecaec35",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "Terminology for decor silhouettes, not a current inventory of particular pieces.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The term Hidden Mickeys denotes subtle Mickey forms, including on cruise ships.",
+        "sources": [
+          "b23-hidden",
+          "b23-hiddencruise"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Hidden Mickeys is Disney documented term.",
+          "sources": [
+            "b23-hidden",
+            "b23-hiddencruise"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Magic Marks is not the documented name.",
+          "sources": [
+            "b23-hidden",
+            "b23-hiddencruise"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Castaway Icons is not the identified term.",
+          "sources": [
+            "b23-hidden",
+            "b23-hiddencruise"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pixie Prints is not the name of these Mickey silhouettes.",
+          "sources": [
+            "b23-hidden",
+            "b23-hiddencruise"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Original wording included any hidden character, which could include non-Mickey Easter eggs. Final wording specifies Mickey silhouettes and removes hidden from the stem; necessary character context is not the complete answer."
+      }
+    },
+    {
+      "questionId": 1237,
+      "hash": "a7a84dbd587115a283f3ffb62a9fbcc882e251ee8b333dc4200a05ef003a75e0",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "Castaway Cay rental amenity, subject to availability.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Disney lists private cabana reservations among Castaway Cay extras.",
+        "sources": [
+          "b23-island"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Cabanas is the documented rental.",
+          "sources": [
+            "b23-island"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bungalows is not the listed island rental name.",
+          "sources": [
+            "b23-island"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Verandahs are ship balconies, not this island rental.",
+          "sources": [
+            "b23-island"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Villas is not the beachfront rental identified here.",
+          "sources": [
+            "b23-island"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Cabana can be described generically as a small shelter, but the question asks the rental name. Cabanas restaurant #974 is an unrelated use of the same word."
+      }
+    },
+    {
+      "questionId": 1238,
+      "hash": "f736118bce69c89fb9acf33623c1a203cb93ef55e5eac286a9ea46592a2a3458",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "Castaway Cay transport, not a promise of a specific current timetable.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Castaway Cay has complimentary trams serving beach stops.",
+        "sources": [
+          "b23-tram",
+          "b23-tramfree",
+          "b23-island"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Tram is the documented island transport.",
+          "sources": [
+            "b23-tram",
+            "b23-tramfree",
+            "b23-island"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Monorail is not this island vehicle service.",
+          "sources": [
+            "b23-tram",
+            "b23-tramfree",
+            "b23-island"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Skyliner is not the described ground route.",
+          "sources": [
+            "b23-tram",
+            "b23-tramfree",
+            "b23-island"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "PeopleMover is not the island service name.",
+          "sources": [
+            "b23-tram",
+            "b23-tramfree",
+            "b23-island"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Walking and rented bikes also move guests around, so narrowed the question to the complimentary vehicle service between beach stops. None of those omitted activities makes the other listed branded systems defensible."
+      }
+    },
+    {
+      "questionId": 1240,
+      "hash": "9af5be0c4fe4ce7cea4add05108f9f9e323c40a1d6a2d4b3a8d4ee2bfd2379e6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "Official accommodation nomenclature, not a claim cabins is incorrect English.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney labels standard room categories as Staterooms.",
+        "sources": [
+          "b23-rooms"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Staterooms is the general label in those category headings.",
+          "sources": [
+            "b23-rooms"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Villas is not the label on these room categories.",
+          "sources": [
+            "b23-rooms"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bungalows is not the category label.",
+          "sources": [
+            "b23-rooms"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Chalets is not the heading used by Disney.",
+          "sources": [
+            "b23-rooms"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Cabins was a synonym and Suites a legitimate subset under original broad question. Final asks the actual general category label, with competing labels rather than true synonyms."
+      }
+    },
+    {
+      "questionId": 1241,
+      "hash": "b995f6f60d3dbdcc640f7a5e11eaa36e5dbf4f39fb8cbcaa9a1bcb00b16b5eed",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "Original Disney film association, not every later cover.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 1937 Snow White film includes With a Smile and a Song.",
+        "sources": [
+          "b23-snow",
+          "b23-snowrecord"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Snow White contains the forest song in the transcript and museum record.",
+          "sources": [
+            "b23-snow",
+            "b23-snowrecord"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cinderella is not the original film identified for this song.",
+          "sources": [
+            "b23-snow",
+            "b23-snowrecord"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sleeping Beauty is not the film associated with this recording.",
+          "sources": [
+            "b23-snow",
+            "b23-snowrecord"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bambi is not the film in which this Snow White song appears.",
+          "sources": [
+            "b23-snow",
+            "b23-snowrecord"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Song title alone could be reused outside Disney, but the question asks its Disney film placement. Both the film transcript and cataloged Snow White record identify the same film; other Snow White music questions test different numbers."
+      }
+    },
+    {
+      "questionId": 1242,
+      "hash": "8313dbf2b876f7959c3f95bcd199353271ca1f95ef682f39bbabe1e02f7f91bd",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "1940 animated film, Geppetto opening demonstration.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Geppetto sings Little Wooden Head in his initial puppet demonstration.",
+        "sources": [
+          "b23-pinocchio",
+          "b23-pinmusic"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Little Wooden Head accompanies Geppetto manipulating the new puppet.",
+          "sources": [
+            "b23-pinocchio",
+            "b23-pinmusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ive Got No Strings belongs to Pinocchio Stromboli performance.",
+          "sources": [
+            "b23-pinocchio",
+            "b23-pinmusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Give a Little Whistle is Jiminy conscience lesson.",
+          "sources": [
+            "b23-pinocchio",
+            "b23-pinmusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hi Diddle Dee Dee is Honest John actor recruitment song.",
+          "sources": [
+            "b23-pinocchio",
+            "b23-pinmusic"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "2022 Pinocchio changes Geppetto music, so final specifies 1940. Original opening puppet demonstration is separate from Pinocchio later stage performance in #994."
+      }
+    },
+    {
+      "questionId": 1243,
+      "hash": "6ab919e8bd01baf4381fc95db395232c3bc95daea45991fc5d5ed119e5272689",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "1941 animated Dumbo, bubble hallucination sequence.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pink Elephants accompanies the surreal bubble visions.",
+        "sources": [
+          "b23-dumbo",
+          "b23-dumbomusic"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Pink Elephants is the sequence song.",
+          "sources": [
+            "b23-dumbo",
+            "b23-dumbomusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Baby Mine accompanies mother-child reunion.",
+          "sources": [
+            "b23-dumbo",
+            "b23-dumbomusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Casey Junior is the circus train song.",
+          "sources": [
+            "b23-dumbo",
+            "b23-dumbomusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Roustabouts accompanies tent-raising work.",
+          "sources": [
+            "b23-dumbo",
+            "b23-dumbomusic"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The sequence is intoxicated hallucination rather than ordinary sleep dream; final says visions. The mother lullaby can feel dreamlike but does not accompany the bubbles."
+      }
+    },
+    {
+      "questionId": 1244,
+      "hash": "3955513015d9b940a4505da4e1e4c1586a58d7b455889a885782b3734a53a570",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "1950 animated Cinderella, initial mice dressmaking plan.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The mice begin their dressmaking plan with The Work Song.",
+        "sources": [
+          "b23-cinderella",
+          "b23-cindmusic"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Work Song is the mice dressmaking-plan number.",
+          "sources": [
+            "b23-cinderella",
+            "b23-cindmusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bibbidi is Fairy Godmother magic, not the mice plan.",
+          "sources": [
+            "b23-cinderella",
+            "b23-cindmusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "So This Is Love is the ballroom romance.",
+          "sources": [
+            "b23-cinderella",
+            "b23-cindmusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sing Sweet Nightingale is the washing/music-lesson sequence.",
+          "sources": [
+            "b23-cinderella",
+            "b23-cindmusic"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A Dream reprise does accompany later dress completion, so removed it as distractor and specified launch of the mice plan. This is song identity, distinct from #287 dress-object fact."
+      }
+    },
+    {
+      "questionId": 1246,
+      "hash": "fd0e41f0daf35cd1405b5abdaefe291806805d246e1557538708b750a3a21372",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "1953 animated Peter Pan, Darlings first flight.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "You Can Fly accompanies first flight after pixie dust.",
+        "sources": [
+          "b23-peter",
+          "b23-petermusic"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "You Can Fly accompanies the Darlings rising and flying from London.",
+          "sources": [
+            "b23-peter",
+            "b23-petermusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Second Star is the opening song, not the first-flight number.",
+          "sources": [
+            "b23-peter",
+            "b23-petermusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Following Leader accompanies the Lost Boys march.",
+          "sources": [
+            "b23-peter",
+            "b23-petermusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pirates Life belongs to the pirate crew.",
+          "sources": [
+            "b23-peter",
+            "b23-petermusic"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Second Star mentions the route and plays in the film opening, but the transcript places You Can Fly at the flight lesson itself. Prior #996 asks a different song-to-film association."
+      }
+    },
+    {
+      "questionId": 1247,
+      "hash": "566e4e81fac3e82a25330a885e6df18f77ef7b7b752c354df8e67391332499d2",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "1955 animated Lady and the Tramp, pound scene.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Peg is introduced at the pound and sings Hes a Tramp.",
+        "sources": [
+          "b23-lady",
+          "b23-ladymusic"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Hes a Tramp immediately follows Peg introduction.",
+          "sources": [
+            "b23-lady",
+            "b23-ladymusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bella Notte accompanies the restaurant date.",
+          "sources": [
+            "b23-lady",
+            "b23-ladymusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "La La Lu is Darling baby lullaby.",
+          "sources": [
+            "b23-lady",
+            "b23-ladymusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Peace on Earth is Christmas music.",
+          "sources": [
+            "b23-lady",
+            "b23-ladymusic"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Added film/year to isolate animated Peg from live-action portrayals. Tramp in film title does not establish which of four songs Peg performs; all four are from that film."
+      }
+    },
+    {
+      "questionId": 1248,
+      "hash": "a1b6df608ea7fddc43c7417475bd192280e0958d78327c35a9c9dcde06dcd5eb",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "1959 animated Sleeping Beauty; ballet source composer.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Bruns adapted themes from Tchaikovsky ballet.",
+        "sources": [
+          "b23-sleepmusic"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Tchaikovsky composed the source ballet music.",
+          "sources": [
+            "b23-sleepmusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Beethoven is not the ballet composer identified for this score.",
+          "sources": [
+            "b23-sleepmusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Stravinsky is not the composer credited for the source ballet.",
+          "sources": [
+            "b23-sleepmusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gershwin is not the score source named by Disney.",
+          "sources": [
+            "b23-sleepmusic"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "George Bruns arranged the film score, so is not conflated with the composer whose music it draws from. Fantasia uses other composers but is a separate film."
+      }
+    },
+    {
+      "questionId": 1249,
+      "hash": "7448a0b566546779119d7eb4880b924c747a54c66677eba74b7166a40886259d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "1967 animated Jungle Book, Kaa hypnosis number.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney character profiles assign Trust in Me to Kaa.",
+        "sources": [
+          "b9-jungleprofiles",
+          "b9-junglelist"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Trust in Me is Kaa hypnotic number.",
+          "sources": [
+            "b9-jungleprofiles",
+            "b9-junglelist"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "I Wanna Be Like You is King Louie number.",
+          "sources": [
+            "b9-jungleprofiles",
+            "b9-junglelist"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bare Necessities is Baloo number.",
+          "sources": [
+            "b9-jungleprofiles",
+            "b9-junglelist"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "My Own Home is the girl village song, not Kaa.",
+          "sources": [
+            "b9-jungleprofiles",
+            "b9-junglelist"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Kaa also appears in other musical contexts, but the 1967 hypnotic solo is explicitly assigned in the profiles. King Louie association #460 does not identify Kaa own song."
+      }
+    },
+    {
+      "questionId": 1250,
+      "hash": "8be241de69046f439ccfe945b28b92ea94254e35604ccde74bdb779642253c00",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "1970 Aristocats, band jam at OMalley home.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Scat Cat band plays Everybody Wants to Be a Cat at OMalley home.",
+        "sources": [
+          "b23-aristocats",
+          "b23-aristomusic"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Everybody Wants is the band jam.",
+          "sources": [
+            "b23-aristocats",
+            "b23-aristomusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Scales and Arpeggios is kitten practice at Madame home.",
+          "sources": [
+            "b23-aristocats",
+            "b23-aristomusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Thomas OMalley Cat is his solo introduction.",
+          "sources": [
+            "b23-aristocats",
+            "b23-aristomusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Aristocats is the opening title tune.",
+          "sources": [
+            "b23-aristocats",
+            "b23-aristomusic"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All numbers involve cats, so removed vague feline musicianship and specified band/location. The full song title is long naturally, not an explanation added only to the answer. Raised difficulty for a specific scene association."
+      }
+    },
+    {
+      "questionId": 1251,
+      "hash": "322549e6ba59da8aec690937c0bb82ec136bb9e8843808e444feac9a3ab47612",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "1973 Disney animated Robin Hood, forest celebration.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Phony King is Phil Harris/Little John number mocking John at the celebration.",
+        "sources": [
+          "b23-robinmusic"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Phony King is Little John forest-party ridicule.",
+          "sources": [
+            "b23-robinmusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Oo De Lally is Allan a Dale introductory narration.",
+          "sources": [
+            "b23-robinmusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Love is the romantic interlude sung by Nancy Adams.",
+          "sources": [
+            "b23-robinmusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Not in Nottingham is Allan a Dale lament after the tax crackdown.",
+          "sources": [
+            "b23-robinmusic"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Not in Nottingham also criticizes life under John, so simple mocks rule was too broad. Final requires Little John forest celebration, distinguishing the later sorrowful narrator number."
+      }
+    },
+    {
+      "questionId": 1252,
+      "hash": "49032bc410fe8be0433d307d868bc8f174791ce96793e3600de3d4305dcb0fe1",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "1977 animated Rescuers, opening delegates meeting.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The delegates sing Rescue Aid Society at the opening emergency meeting.",
+        "sources": [
+          "b23-rescuers",
+          "b23-rescuemusic"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Rescue Aid Society is the delegates anthem.",
+          "sources": [
+            "b23-rescuers",
+            "b23-rescuemusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Someone Waiting is the later Penny consolation song.",
+          "sources": [
+            "b23-rescuers",
+            "b23-rescuemusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tomorrow Another Day accompanies travel.",
+          "sources": [
+            "b23-rescuers",
+            "b23-rescuemusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Journey is the opening message-bottle song.",
+          "sources": [
+            "b23-rescuers",
+            "b23-rescuemusic"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The source describes the assembly anthem but does not require custodian Bernard to be one of the singers. Final assigns it to the delegates and avoids that unsupported participation claim. Film title overlap is necessary context, not the full anthem answer."
+      }
+    },
+    {
+      "questionId": 1253,
+      "hash": "28aaca5632fc82efbe42c6cce133a4db0574ae509aa539d29b3c0c39eb40ec95",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "1986 animated Great Mouse Detective, early lair celebration.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Ratigan henchmen praise him in Worlds Greatest Criminal Mind before Bartholomew offense.",
+        "sources": [
+          "b23-ratigan",
+          "b23-ratmusic",
+          "b23-ratalbum"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Worlds Greatest is the lair celebration interrupted by Bartholomew.",
+          "sources": [
+            "b23-ratigan",
+            "b23-ratmusic",
+            "b23-ratalbum"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Goodbye So Soon is the later trap recording, not this henchmen celebration.",
+          "sources": [
+            "b23-ratigan",
+            "b23-ratmusic",
+            "b23-ratalbum"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Let Me Be Good is the tavern entertainment.",
+          "sources": [
+            "b23-ratigan",
+            "b23-ratmusic",
+            "b23-ratalbum"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rat Trap is not one of the three documented vocal numbers and is not the title of this praise number.",
+          "sources": [
+            "b23-ratigan",
+            "b23-ratmusic",
+            "b23-ratalbum"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Ratigan has another vocal recording, so about himself did not uniquely locate the number. The interruption and henchmen make the scene explicit; title Great shares a root with Greatest accidentally."
+      }
+    },
+    {
+      "questionId": 1254,
+      "hash": "e66d8b3a9e14defef9cfee7ebfccbc54569c2046d8a68dcff9e6e83221646217",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "1988 animated Oliver and Company; Rita street lesson.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Rita sings Streets of Gold as Oliver learns street survival.",
+        "sources": [
+          "b23-oliver",
+          "b23-olivermusic",
+          "b23-ritacredits"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Streets of Gold is Rita lesson.",
+          "sources": [
+            "b23-oliver",
+            "b23-olivermusic",
+            "b23-ritacredits"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Why Should I Worry is Dodger vocal.",
+          "sources": [
+            "b23-oliver",
+            "b23-olivermusic",
+            "b23-ritacredits"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Good Company is Jenny vocal.",
+          "sources": [
+            "b23-oliver",
+            "b23-olivermusic",
+            "b23-ritacredits"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Perfect Isnt Easy is Georgette vocal.",
+          "sources": [
+            "b23-oliver",
+            "b23-olivermusic",
+            "b23-ritacredits"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rita speaking voice Sheryl Lee Ralph differs from singing voice Ruth Pointer; question asks character, not performer. The four songs have distinct leads, corroborated by soundtrack assignments."
+      }
+    },
+    {
+      "questionId": 1255,
+      "hash": "75765e1a04b35938b44f8f933511e48387a0e4ed362852e5f98904dee7904837",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+      "context": "1991 animated Beauty and Beast, snowy garden feelings sequence.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Something There accompanies changing feelings in the snowy garden sequence.",
+        "sources": [
+          "b23-beast"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Something There expresses both leads changing perceptions.",
+          "sources": [
+            "b23-beast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Be Our Guest is the earlier dinner presentation.",
+          "sources": [
+            "b23-beast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gaston is tavern praise of Gaston.",
+          "sources": [
+            "b23-beast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mob Song rallies villagers for attack.",
+          "sources": [
+            "b23-beast"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other romantic numbers also express closeness, but none is a listed distractor here. Specified original 1991 snowy-garden sequence; the later transcript includes Human Again restoration, which does not alter this number placement."
+      }
+    }
+  ]
+}

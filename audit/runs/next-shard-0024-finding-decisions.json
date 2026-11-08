@@ -1,0 +1,172 @@
+[
+  {
+    "finding": {
+      "id": "duplicate-1ea2d3f112d55b04fca9",
+      "kind": "duplicate",
+      "questionIds": [
+        1269,
+        1502
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "1ea2d3f112d55b04fca9f3f1523ad3339fd39fafd845e4d74e4d59beead8830e",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "reason": "Independent composer credits for Zootopia and Up; knowing one film score does not establish who scored the other.",
+    "questions": [
+      {
+        "id": 1269,
+        "question": "Who composed the orchestral score for Zootopia (2016)?",
+        "answers": [
+          "Michael Giacchino",
+          "Alan Menken",
+          "James Newton Howard",
+          "Henry Jackman"
+        ],
+        "difficulty": "hard",
+        "category": "music"
+      },
+      {
+        "id": 1502,
+        "question": "Which Academy Award-winning composer wrote the orchestral score for Up (2009), including the beloved 'Married Life' opening montage?",
+        "answers": [
+          "Michael Giacchino",
+          "Hans Zimmer",
+          "Alan Menken",
+          "John Williams"
+        ],
+        "difficulty": "hard",
+        "category": "music"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-08"
+  },
+  {
+    "finding": {
+      "id": "duplicate-5e4f78bf56655957a1f8",
+      "kind": "duplicate",
+      "questionIds": [
+        1271,
+        1298
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "5e4f78bf56655957a1f84fba81977544e6ac377a6feb34449583098a76329dc0",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "reason": "Slinky spring-body rescue and RC remote-car rescue are separate toy identities and actions. Both help, but stretchy versus remote-control makes the answers exclusive.",
+    "questions": [
+      {
+        "id": 1271,
+        "question": "In Toy Story, which stretchy toy helps during the moving truck chase?",
+        "answers": [
+          "Slinky Dog",
+          "Buzz Lightyear",
+          "RC",
+          "Rex"
+        ],
+        "difficulty": "easy",
+        "category": "pixar"
+      },
+      {
+        "id": 1298,
+        "question": "In Toy Story, what remote-control toy helps with the moving truck chase?",
+        "answers": [
+          "RC",
+          "Slinky Dog",
+          "Buzz Lightyear",
+          "Hamm"
+        ],
+        "difficulty": "medium",
+        "category": "pixar"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-08"
+  },
+  {
+    "finding": {
+      "id": "duplicate-f27ba23a6878ef644716",
+      "kind": "duplicate",
+      "questionIds": [
+        1284,
+        1313
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "f27ba23a6878ef6447161012ab1c8cc9975ff89431c94900fef65e6a29c21bf1",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "reason": "Disgust green and Joy yellow are independent character-color mappings. One mapping does not establish the other; other characters and colors exist.",
+    "questions": [
+      {
+        "id": 1284,
+        "question": "In Inside Out, which emotion is green?",
+        "answers": [
+          "Disgust",
+          "Fear",
+          "Anger",
+          "Joy"
+        ],
+        "difficulty": "easy",
+        "category": "pixar"
+      },
+      {
+        "id": 1313,
+        "question": "In Inside Out, what color is the emotion Joy?",
+        "answers": [
+          "Yellow",
+          "Blue",
+          "Purple",
+          "Orange"
+        ],
+        "difficulty": "easy",
+        "category": "pixar"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-08"
+  },
+  {
+    "finding": {
+      "id": "leak-c42fd93452c6375a1bb0",
+      "kind": "leak",
+      "questionIds": [
+        1270
+      ],
+      "detail": {
+        "tier": 2,
+        "token": "wish"
+      },
+      "signature": "c42fd93452c6375a1bb005a64bfc528a0958844f03353daed90e084f8813cf85",
+      "decision": null
+    },
+    "reason": "Wish is the necessary film title, and all four answers are songs from Wish. Removed the redundant wishes verb; film identity alone does not identify this specific Asha solo.",
+    "questions": [
+      {
+        "id": 1270,
+        "question": "In Wish (2023), what solo does Asha sing as she looks to the stars for a better future for the people of Rosas?",
+        "answers": [
+          "This Wish",
+          "I'm a Star",
+          "Knowing What I Know Now",
+          "At All Costs"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-08"
+  }
+]

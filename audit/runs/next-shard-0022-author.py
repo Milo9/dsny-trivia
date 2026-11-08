@@ -1,0 +1,228 @@
+"""Explicit inspected evidence for batch 22. Writes evidence artifacts, not shards."""
+import json
+from pathlib import Path
+R = Path(__file__).resolve().parents[2]
+def read(p): return json.loads((R/p).read_text(encoding='utf-8-sig'))
+def save(p,x): (R/p).write_text(json.dumps(x,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+D = 'https://d23.com/'
+W = 'https://disneyworld.disney.go.com/'
+M = 'https://www.waltdisney.org/'
+# URL, inspected passage locator, source paraphrase, explicit option assessments,
+# separate final challenge. Alternatives are in the final stored order.
+rows = {
+1153: (D+'disney-history/', 'Chronology, March 2002 second Paris park opening',
+ 'The second Paris park opened in March 2002 as Walt Disney Studios; the question asks its opening name.',
+ ['Walt Disney Studios Park is the documented opening identity.', 'Disney Adventure World is not its 2002 opening name.', 'Disney Village Park is not the named second theme park in the opening chronology.', 'Paris DisneySea is not its recorded opening name.'],
+ 'A later rename cannot answer the explicitly historical opening-name question. All four are competing names for the same park, so the recorded 2002 identity excludes the other three.'),
+1156: ('https://www.disneyaulani.com/about-aulani/', 'Opening resort description and The Aulani Resort Story introduction',
+ 'Aulani is in Ko Olina, Hawaii; the resort describes its surrounding area as Ko Olina.',
+ ['Ko Olina is the expressly identified resort area.', 'Waikiki is not the area identified for this property.', 'Kailua is not the identified resort area.', 'Haleiwa is not the identified resort area.'],
+ 'All four options now name Oahu areas, removing the off-island Hilo/Lahaina clue. The question concerns this property location, not places visited on excursions.'),
+1157: (W+'en_CA/attractions/blizzard-beach/chair-lift/', 'Opening Chairlift description; Need a Lift and Know Before You Go',
+ 'Blizzard Beach Chairlift goes to the summit of Mount Gushmore.',
+ ['Mount Gushmore is the mountain expressly named by Disney.', 'Mount Prometheus is not the named Blizzard Beach summit.', 'Mount Mayday is not the mountain identified on this park page.', 'Summit Peak is not the identified mountain name.'],
+ 'This asks the mountain name rather than an individual slide such as Summit Plummet. The official summit identification gives only Gushmore; the other names cannot substitute for it.'),
+1158: (W+'attractions/magic-kingdom/astro-orbiter/', 'Lift Off! and You’re the Captain Now',
+ 'Astro Orbiter takes two-passenger spacecraft above Tomorrowland; a lever controls flight height.',
+ ['Astro Orbiter has the controllable elevated rocket vehicles.', 'Space Mountain is a coaster, not the described controllable orbital ride.', 'Tomorrowland Speedway has road vehicles, not these spacecraft.', 'PeopleMover is a transit tram, not these individually controlled rockets.'],
+ 'Space Mountain has a space theme but its coaster cars do not give riders the Astro Orbiter height lever. The description requires both exposed high orbit and guest height control, excluding generic space transport.'),
+1159: (D+'a-to-z/incredicoaster/', 'Opening entry, June 23 2018 opening and California Screamin replacement',
+ 'Incredicoaster opened June 23, 2018 in Pixar Pier, replacing California Screamin with an Incredibles story.',
+ ['Incredicoaster is the documented 2018 replacement name.', 'Incredible Express is not the name assigned to the rethemed coaster.', 'Parr Family Dash is not the documented retheme name.', 'Jack-Jack’s Escape is not the assigned attraction name.'],
+ 'California Screamin was the same physical coaster before retheming, making the original broad wording vulnerable. The final question asks the new name, with four competing names rather than a prior name of the same structure. Easy difficulty reflects the Incredibles naming cue.'),
+1160: (D+'a-to-z/guardians-galaxy-mission-breakout/', 'Opening attraction entry, final replacement sentence',
+ 'Mission BREAKOUT opened in California in 2017 in place of the Twilight Zone Tower of Terror.',
+ ['The Twilight Zone Tower of Terror is expressly named as the predecessor.', 'California Screamin is not this attraction’s predecessor.', 'Muppet*Vision 3D is not the attraction named as occupying the replaced structure.', 'Soarin Over California is not the documented predecessor.'],
+ 'The California version is explicit; the continuing Florida Tower does not create a competing answer. The complete licensed name is longer than the distractors but is the normal attraction title, not an explanatory answer clue. All four are attraction titles.'),
+1163: ('https://disneyparksblog.com/wdw/walt-disney-world-memories-the-magic-of-making-the-first-disney-resort-hotels/', 'Howard Roland account, first two hotels and October 1 1971 completion paragraphs',
+ 'Contemporary and Polynesian Village were the first two resort hotels, opened alongside Magic Kingdom on October 1, 1971.',
+ ['This is the complete pair explicitly identified as the first two hotels.', 'Grand Floridian and Wilderness Lodge are excluded from the documented first-two pair.', 'Animal Kingdom Lodge and BoardWalk Inn are not members of that opening pair.', 'Pop Century and Art of Animation are not the 1971 pair.'],
+ 'Fort Wilderness camping is not a third hotel in the asked pair. Opening with the resort is distinct from being a later monorail resort in #626; Grand Floridian access does not confer a 1971 opening.'),
+1164: (D+'a-to-z/seven-seas-lagoon/', 'Complete body-of-water entry; ferry and Contemporary dock parenthesis',
+ 'Seven Seas Lagoon lies between TTC and Magic Kingdom and is crossed by its ferry; Contemporary’s other dock is on Bay Lake.',
+ ['Seven Seas Lagoon is explicitly the TTC-to-Magic Kingdom crossing.', 'Bay Lake is distinguished from the TTC crossing and houses the Contemporary dock.', 'World Showcase Lagoon is not the body of water identified between these endpoints.', 'Discovery River is not the identified TTC-to-Magic Kingdom waterway.'],
+ 'Bay Lake is a serious alternative under the original broad Magic Kingdom boat wording. Final wording specifies ferryboats between TTC and the park; the entry explicitly identifies Seven Seas and separately distinguishes Bay Lake.'),
+1165: (W+'guest-services/monorail-transportation/', 'Ride High in the Sky, EPCOT and Express Monorail paragraph',
+ 'EPCOT Monorail originates at TTC and provides round-trip service to EPCOT.',
+ ['Monorail is expressly the system providing this route.', 'Skyliner does not name the documented TTC-to-EPCOT system.', 'Friendship boat is not this TTC service.', 'Wildlife Express Train is not the identified EPCOT Monorail line.'],
+ 'Other systems serve other EPCOT entrances, but the TTC endpoint is essential. A boat reaching EPCOT from a resort is not a competing TTC connection.'),
+1166: (W+'en_CA/attractions/animal-kingdom/wildlife-express-train/', 'All About Animals; boarding at Harambe and return from Conservation Station',
+ 'Wildlife Express Train connects Harambe and Conservation Station; the current page describes Bluey’s Wild World at the destination.',
+ ['Wildlife Express Train is explicitly the named Harambe-Conservation Station service.', 'Walt Disney World Railroad is not the named Animal Kingdom service.', 'Harambe Railway is not the attraction name given for this journey.', 'Discovery Island Express is not the named rail service.'],
+ 'Harambe names the origin, not an alternative official ride title. Current destination wording is Conservation Station; the review makes no claim that the former Rafiki branding remains current or that Bluey television trivia is in scope.'),
+1167: ('https://disneyland.disney.go.com/destinations/disney-california-adventure/avengers-campus/', 'Title, Team Up with the Avengers, California Adventure park identification',
+ 'Avengers Campus is the California Adventure superhero land, with Avengers and other heroes.',
+ ['Avengers Campus is the exact official land identity.', 'Super Hero Island is not the identified California Adventure land name.', 'Marvel Plaza is not the name on the official land page.', 'Stark Expo is not the named California Adventure land.'],
+ 'The question asks the land identity at this specified park, not every Marvel-themed location or in-story event. The official land heading and park placement exclude the other competing titles.'),
+1168: (D+'a-to-z/mickeys-toontown/', 'Opening Disneyland January 24 1993 entry and cartoon residential/downtown description',
+ 'Mickey’s Toontown opened at Disneyland January 24, 1993 as the place where cartoon characters live.',
+ ['Mickey’s Toontown is the documented 1993 cartoon neighborhood.', 'Critter Country is not the named 1993 addition.', 'New Orleans Square is not the 1993 Toon neighborhood.', 'Fantasyland is not this separately named 1993 addition.'],
+ 'Fantasyland contains animated-film attractions but is not the 1993 residential Toon-world addition. #924 asks where a particular ride is located; that does not establish the land opening/design fact here.'),
+1169: (D+'a-to-z/splash-mountain/', 'Opening Disneyland Critter Country entry and later Florida version',
+ 'Disneyland Splash Mountain opened in Critter Country July 17, 1989; the Magic Kingdom version opened in Frontierland in 1992.',
+ ['Critter Country is expressly the original Disneyland location.', 'Frontierland is the Florida version location, not the asked Disneyland opening land.', 'Adventureland is not the opening location given for Disneyland.', 'New Orleans Square is not the Disneyland opening land.'],
+ 'The former land name is intentionally historical. The Florida Frontierland version and later Disneyland Bayou Country rename cannot be substituted for the original California location.'),
+1170: (D+'a-to-z/cinderella-castle/', 'Closing paragraph, Year of a Million Dreams suite and January 25 2007 first family',
+ 'An overnight suite opened in Cinderella Castle in 2007; the first selected family stayed January 25.',
+ ['Cinderella Castle Suite identifies the documented overnight suite.', 'Disneyland Dream Suite is not the accommodation inside Magic Kingdom’s landmark.', 'Port Orleans Royal Guest Room is not the suite opened inside this park landmark.', 'Walt’s Main Street Apartment is not the 2007 Cinderella Castle accommodation.'],
+ 'The final question adds the 2007 opening and avoids repeating castle in the stem. Other rooms may be royal or private but do not satisfy the specified park, interior location and opening event.'),
+1171: (D+'a-to-z/mexico/', 'Opening World Showcase pavilion description, Aztec pyramid',
+ 'Mexico pavilion’s central building is inspired by an Aztec pyramid.',
+ ['Mexico is the pavilion explicitly identified with the pyramid.', 'Norway is not the pavilion identified with this central pyramid.', 'China is not the country assigned to this structure.', 'Morocco is not the pavilion identified in the pyramid entry.'],
+ 'The final wording concerns the main building, avoiding a claim that every outdoor pavilion area is inside. #895 locates Gran Fiesta Tour; the distinct architecture fact is not given in that question.'),
+1172: (D+'a-to-z/matterhorn-bobsleds/', 'Opening Disneyland date, June 14 1959',
+ 'Matterhorn Bobsleds opened June 14, 1959, preceding the later Space, Big Thunder and Splash Mountains.',
+ ['Matterhorn Bobsleds opened in 1959, earliest of this list.', 'Disneyland Space Mountain opened in 1977, after 1959.', 'Disneyland Big Thunder Mountain Railroad opened in 1979, after 1959.', 'Disneyland Splash Mountain opened in 1989, after 1959.'],
+ 'The original called Splash a coaster and used an unattributed often-described claim. Final wording compares opening order of named mountain attractions; their dates explicitly establish one earliest. #1149 tests the Swiss inspiration, not chronology.'),
+1173: ('https://disneyexperiences.com/disneyworld-press/release/nothing-can-stop-them-now-mickey-minnies-runaway-railway-invites-guests-into-a-cartoon-adventure-at-walt-disney-world-resort/', 'Opening March 4 2020 announcement and recreation-of-Chinese-Theatre paragraph',
+ 'Hollywood Studios Runaway Railway opened March 4, 2020 inside the park’s recreation of the Chinese Theatre.',
+ ['Grauman’s Chinese Theatre is the landmark recreated at the Florida ride entrance.', 'Carthay Circle Theatre is not the replica identified for this attraction.', 'El Capitan Theatre is not the documented Florida building.', 'Radio City Music Hall is not the landmark identified for this ride.'],
+ 'The 2020 Florida opening excludes Disneyland’s later El CapiTOON Theater. #2233 asks that different California building, while #898 asks the ride identity from Goofy’s train story, not the real-world architectural source.'),
+1174: ('https://disneyparksblog.com/wdw/11-ways-to-celebrate-july-4th-at-walt-disney-world/', '11. Commemorate the Spirit of America Every Day, See History in Liberty Square',
+ 'Liberty Square has an authentic replica of the Liberty Bell.',
+ ['The Liberty Bell is explicitly the replicated bell.', 'The Freedom Bell is not the identity assigned to this replica.', 'The Old North Bell is not the replicated bell named by Disney.', 'The Centennial Bell is not the replica identified in this land.'],
+ 'Liberty is no longer in the stem, and all four options are parallel bell names. The identification concerns the displayed replica, without adopting disputed stories about its casting or provenance.'),
+1175: (D+'a-to-z/garden-grill-restaurant/', 'Complete Garden Grill entry',
+ 'Garden Grill is a restaurant in The Land at EPCOT; it opened under that name November 15, 1993.',
+ ['The Land is the pavilion expressly containing Garden Grill.', 'The Seas is not the recorded restaurant pavilion.', 'Canada is not the pavilion assigned to Garden Grill.', 'The American Adventure is not its recorded pavilion.'],
+ 'Restaurant location is distinct from Soarin/greenhouse ride location in #1139. Sharing a pavilion does not make the venue facts interchangeable; knowing where Soarin is does not locate this restaurant.'),
+1176: (M+'blog/elias-disney', 'Opening family roster, five children of Elias and Flora',
+ 'The complete family roster is Herbert, Raymond, Roy, Walt and Ruth; removing Walt leaves four siblings.',
+ ['Four is the count of the other children in the five-child roster.', 'Two omits two of the four named siblings.', 'Three omits one named sibling.', 'Five incorrectly includes Walt himself as his own sibling.'],
+ 'This is siblings, not brothers or total children. The exhaustive five-child roster contains three other boys and one girl; Walt is excluded from his own sibling count.'),
+1178: (M+'blog/100-years-ago-first-disney-bros-movie', 'Opening account of Alice’s Wonderland pilot and live-action Virginia Davis',
+ 'Virginia Davis played the live-action young heroine of the 1923 pilot Alice’s Wonderland.',
+ ['Virginia Davis is explicitly the pilot’s live-action heroine.', 'Shirley Temple is not the performer assigned to Alice in this pilot.', 'Annette Funicello is not the identified 1923 pilot star.', 'Margaret Kerry is not the named live-action Alice in this pilot.'],
+ 'The original series wording could hide the later changes of Alice actresses. Final wording isolates the 1923 pilot and its uniquely identified performer, excluding later stars and other Alice portrayals.'),
+1179: (M+'blog/margaret-winkler-first-female-film-distributor', 'October 16 1923 contract discussion and Walt’s letter to Davis’s mother',
+ 'Margaret Winkler contracted to distribute the Alice Comedies and required Virginia Davis to continue as Alice.',
+ ['Margaret Winkler is the contracting distributor.', 'Carl Laemmle is not the contracting Alice distributor identified here.', 'RKO Radio Pictures is not the Alice distribution counterparty.', 'Darryl Zanuck is not the distributor named in the contract account.'],
+ 'Launch is tied to the Alice series contract, not later feature distribution or general studio ownership. The museum reproduces the contractual context, explicitly naming Winkler rather than merely associating her with Disney.'),
+1181: (D+'a-to-z/three-little-pigs-film/', '1933 release and theme-song/Depression anthem paragraphs',
+ 'Who’s Afraid of the Big Bad Wolf is the theme song of Three Little Pigs, released in 1933.',
+ ['Three Little Pigs is directly identified with this theme song.', 'The Skeleton Dance is not the film assigned this song.', 'The Old Mill is not the film identified as introducing this theme.', 'Flowers and Trees is not the film identified with the song.'],
+ 'This asks the original Silly Symphony containing the song rather than later reprisals. #2358 asks the Pigs Oscar ceremony year; that award fact does not identify its theme song.'),
+1182: (M+'blog/seeing-mickeys-true-colors-band-concert-90', 'Overture and closing test-case paragraph; Technicolor introduction to Mickey',
+ 'The Band Concert introduced Technicolor to Mickey’s regular theatrical cartoons in 1935.',
+ ['Technicolor is the color process identified for this 1935 film.', 'Cinecolor is a competing color process, not the one identified for this film.', 'Eastmancolor is not the color process assigned to this film.', 'DeLuxe Color is not the color process identified for this release.'],
+ 'Theatrically released excludes the earlier private Parade of the Award Nominees. Final options are competing color processes rather than simultaneous possible widescreen/depth attributes. The museum explicitly identifies Technicolor. #396 tests Flowers and Trees as the studio Technicolor first; this question asks the process used on a different named film.'),
+1183: (D+'a-to-z/nash-clarence-ducky/', 'Opening Donald voice tenure from 1934 to 1985',
+ 'Clarence Nash voiced Donald from the character’s beginning in 1934 until 1985.',
+ ['Clarence Nash is the original Donald performer expressly identified.', 'Pinto Colvig is not the actor identified for Donald’s original voice.', 'Sterling Holloway is not the identified original Donald voice.', 'Bill Thompson is not the actor assigned this original role.'],
+ 'Original excludes later Donald performers and the explicit English-language context avoids unrelated dubbing casts. Final wording does not repeat Donald’s debut film title, which is the separately tested fact in #933.'),
+1184: (D+'a-to-z/goofy/', 'First newspaper name paragraph; later Mr Geef and Max discussion',
+ 'Goofy was first named Dippy Dawg in newspaper comic strips; Mr Geef and Max belong to later incarnations/family.',
+ ['Dippy Dawg is explicitly the first newspaper-strip name.', 'Goofus is not the initial name in the naming history.', 'George Geef belongs to later cartoons, not the initial newspaper name.', 'Max Goof identifies the later son, not the initial newspaper-strip name.'],
+ 'Earliest appearances was too imprecise because the first film laugh preceded naming. Final wording follows the actual newspaper-name passage and distinguishes the later Geef identity and son Max without asking TV-show trivia.'),
+1185: (D+'a-to-z/pluto/', 'Opening debut bloodhound and subsequent Rover/Pluto chronology',
+ 'The bloodhound who evolved into Pluto debuted in The Chain Gang in 1930, before Rover and named Pluto appearances.',
+ ['The Chain Gang is expressly the bloodhound debut.', 'The Karnival Kid is not the identified bloodhound debut film.', 'The Band Concert is not the film identified for this 1930 debut.', 'The Pointer is not the initial bloodhound appearance.'],
+ 'The question now distinguishes the prototype dog from the later named Pluto. A later appearance by an established Pluto cannot displace the bloodhound origin that Disney identifies here.'),
+1187: (D+'a-to-z/lilly-belle/', 'Opening backyard locomotive entry and other uses of the name',
+ 'Lilly Belle was Walt’s backyard Carolwood Pacific locomotive, built with assistance from Roger Broggie and staff.',
+ ['Lilly Belle is the exact backyard locomotive name.', 'Walter E. Disney is not the backyard engine name in this entry.', 'Roger Broggie is the assisting technician, not this engine’s name.', 'Kimball Special is not the locomotive name assigned to Walt’s backyard engine.'],
+ 'Lilly Belle is also used on other railroad equipment, so the backyard context is explicit. #1144 tests a Magic Kingdom engine namesake; #129 tests the railroad name. Neither supplies the backyard locomotive identity.'),
+1188: (D+'a-to-z/cinderella-film/', '1950 release and postwar package-film financing paragraphs',
+ 'Cinderella was released in 1950 after years of package films, returning to a feature telling a single story.',
+ ['Cinderella is the 1950 single-story return identified here.', 'Alice in Wonderland followed in 1951, not the 1950 return.', 'Peter Pan followed in 1953, not the asked 1950 film.', 'Lady and the Tramp followed in 1955, not the 1950 return.'],
+ 'The return means Disney theatrical animated single-story features after the package era, not every animated production. The live-action Cinderella paired with Frozen Fever in #2205 is a different film and distribution event.'),
+1191: (D+'a-to-z/walt-disney-imagineering/', 'Opening January 1986 name-change statement',
+ 'WED Enterprises adopted the Walt Disney Imagineering name in January 1986.',
+ ['Walt Disney Imagineering is expressly the new 1986 name.', 'Disney Animation Research is not the name in the change record.', 'Walt Disney Archives is not the name adopted by WED.', 'Disney Consumer Products is not the recorded WED rename.'],
+ 'Historical 1986 wording replaces an unbounded today claim. Other divisions may exist, but only one is the named successor in this event. #2357 asks founding year, and #402 asks the initials expansion, both separate facts.'),
+1192: (D+'ask-dave/avi-irvine-california-24/', 'Dave Smith answer quoting Jason Surrell, reverse-angle Lincoln-mask discovery',
+ 'Rolly Crump and Yale Gracey noticed that the reverse of the Lincoln face mold seemed to follow their movement, inspiring the moving-bust illusion.',
+ ['Yale Gracey is the named co-discoverer with Rolly Crump.', 'Ub Iwerks is not the second person identified in this discovery account.', 'Marc Davis is not the named person with Crump in the reverse-mask discovery.', 'John Hench is not the co-discoverer identified in this account.'],
+ 'Many Imagineers contributed Haunted Mansion effects, so general fame was insufficient to exclude Davis or Iwerks. Final wording asks the specific discovery with Crump, whose partner is explicitly named. #2650 asks Claude Coats’s visual-tone role, not this illusion’s origin.'),
+1193: (D+'a-to-z/epcot-film/', 'Complete EPCOT film entry, late-1966 filming and plans',
+ 'Walt’s late-1966 film explains his plans for Walt Disney World and EPCOT to Florida residents.',
+ ['EPCOT is expressly a development outlined in this film.', 'Animal Kingdom is not the development presented in the documented 1966 film.', 'Disney-MGM Studios is not the named plan in that film.', 'Typhoon Lagoon is not the development outlined in the 1966 EPCOT film.'],
+ 'Final wording avoids relying on an absolute final-filmed-appearance claim. It asks association with this film, not the meaning of EPCOT or the city vision in #392; Disney World is another discussed development but is not one of the four choices.'),
+1194: (M+'sites/default/files/Walt_Disney_Timeline.pdf_2014.pdf', '1965 Florida land-purchase entry',
+ 'The museum timeline locates the Florida land purchase in the Orlando area; the other offered cities are farther from this central Florida site.',
+ ['Orlando is the offered city nearest the resort site.', 'Tampa lies farther west than the Orlando-area location.', 'Miami is far to the south of this central Florida site.', 'Jacksonville is far to the north of the Orlando-area site.'],
+ 'Unqualified closest Florida city would admit smaller municipalities such as Bay Lake or Kissimmee. Final wording restricts the comparison to the four choices; the museum’s Orlando-area location excludes the three distant metropolitan alternatives.'),
+1195: ('https://digitalcollections.oscars.org/digital/api/collection/p15759coll4/id/5659/download', 'Fifth Year 1931-1932, Special Award',
+ 'The Academy’s historical award list gives Walt a special award for creating Mickey Mouse in its fifth award year.',
+ ['Mickey Mouse is explicitly named in the special-award citation.', 'Donald Duck is not the character named in the citation.', 'Oswald the Lucky Rabbit is not the cited character.', 'Goofy is not the character identified by this award.'],
+ 'This is the creation citation, not all of Walt’s cartoon awards. The ceremony record dates the fifth awards to November 18, 1932 despite its migrated 1933 URL heading. #2422 concerns the Mintz dispute and Mickey creation, not which character the Academy honored.'),
+1197: ('https://www.oscars.org/sites/oscars/files/complete_animation_activities_guide.pdf', 'Animation history section, Disney studio and first Oscar for animation',
+ 'Flowers and Trees won the first Oscar for animation in 1932, corroborated by the Academy’s fifth-year winner list.',
+ ['Flowers and Trees is the first competitive cartoon Oscar winner.', 'Steamboat Willie is not the first animation Oscar winner.', 'The Skeleton Dance is not the winner identified for the first award.', 'The Old Mill won a later award, not the first in 1932.'],
+ 'Competitive distinguishes this from Mickey’s simultaneous special award. #396 tests the three-strip Technicolor first; that does not establish award history. The separate category question #1196 was retired as the same first-Oscar event.'),
+1198: (M+'blog/disneyland-quintessential-classics-snow-white', 'Production-risk paragraph, critics’ nickname',
+ 'The museum records Disney’s Folly as the nickname critics applied to Snow White during production.',
+ ['Disney’s Folly is the recorded nickname.', 'Walt’s Gamble is not the nickname reported in this account.', 'The Cartoon Castle is not the recorded epithet.', 'Snow White’s Risk is not the reported nickname.'],
+ 'Gamble and risk describe the project but are not the historical nickname being requested. D23 independently repeats the same pre-release nickname; no claim that every skeptic used identical wording is intended.'),
+1199: ('https://www.oscars.org/oscars/ceremonies/1941', 'Music Original Score and Music Song winner lists; Pinocchio two-win film summary',
+ 'The 1941 ceremony honored 1940 releases and awarded Pinocchio both original score and When You Wish Upon a Star as song.',
+ ['Pinocchio is explicitly the winner in both competitive music categories.', 'Fantasia is not the winner in either of the two listed music categories.', 'Dumbo is not the 1940 film receiving this pair of awards.', 'Bambi is not the 1940 film receiving this pair.'],
+ '1940 identifies the film release, not ceremony year. Fantasia’s later special honors are not competitive song-and-score wins; Dumbo’s score award alone cannot satisfy both categories. The exhaustive 1941 winners provide exactly one match.'),
+1200: (D+'a-to-z/edwards-cliff/', 'Opening voice-role entry, Jiminy in Pinocchio',
+ 'Cliff Edwards provided Jiminy Cricket’s voice in Pinocchio and Fun and Fancy Free.',
+ ['Cliff Edwards is the actor explicitly assigned to Jiminy in Pinocchio.', 'Sterling Holloway is not the performer assigned this original English role.', 'Pinto Colvig is not the identified original Jiminy performer.', 'Clarence Nash is not the actor credited here as Jiminy.'],
+ 'Original English Pinocchio isolates this performance from later replacements, dubbing and other Edwards roles. Familiar Disney voice work by a distractor does not confer the specifically assigned Jiminy role.'),
+1201: (D+'a-to-z/snow-white-and-the-seven-dwarfs-film/', 'Voice-casting paragraph, Caselotti selected by Walt; 1937 premiere',
+ 'Walt selected Adriana Caselotti to voice Snow White in the original animated feature.',
+ ['Adriana Caselotti is expressly Snow White’s selected performer.', 'Ilene Woods is not the original Snow White voice assigned in this casting record.', 'Mary Costa is not the named Snow White performer.', 'Kathryn Beaumont is not the performer selected for this role.'],
+ 'The original English 1937 film excludes remakes and dubbing. #1202 asks a separate princess and film; Caselotti and Woods cannot be interchanged. The AFI roster independently credits Caselotti as Snow White.'),
+1202: (D+'a-to-z/cinderella-film/', 'Voice cast and February 15 1950 release paragraph',
+ 'Ilene Woods voiced Cinderella in the 1950 feature; Audley and Felton voiced the stepmother and Fairy Godmother.',
+ ['Ilene Woods is explicitly assigned Cinderella’s original voice.', 'Mary Costa is not the actor identified as Cinderella in this film.', 'Adriana Caselotti is not the named Cinderella performer.', 'Kathryn Beaumont is not the actor assigned this Cinderella role.'],
+ 'The original English 1950 film excludes other-language casts and remakes. #1201 asks Snow White, whose performer is a distractor here; knowing one princess’s credit does not supply the other’s.'),
+1203: ('https://catalog.afi.com/Catalog/moviedetails/5865', 'Production Credits, Distribution Company; December 21 1937 premiere details',
+ 'AFI records RKO Radio Pictures as distributor of the original Snow White, produced by Walt Disney Productions.',
+ ['RKO Radio Pictures is the listed original distributor.', 'United Artists is not the distribution company listed for this feature.', 'Universal Pictures is not the distributor of this 1937 Disney feature.', 'Paramount Pictures is not the listed original distributor.'],
+ 'Original distribution is distinct from production and later Disney reissues. AFI distinguishes Walt Disney Productions from RKO distribution; its note on an earlier Universal Snow White adaptation does not make Universal this film’s distributor.'),
+1204: ('https://catalog.afi.com/Catalog/MovieDetails/5131', 'History, November 3 1940 New York Times report on European market loss under war conditions',
+ 'The Pinocchio history records wartime disruption of Disney’s European market in 1940, during World War II.',
+ ['World War II is the conflict spanning the described early-1940s disruption.', 'World War I had ended before this period.', 'The Korean War began after the early-1940s period.', 'The Spanish Civil War had ended before the early-1940s disruption.'],
+ 'This asks the conflict behind disrupted international revenue, not a disputed exact loss amount. The contemporary 1940 report concerns the European wartime market; chronology excludes the three other conflicts. Easy difficulty recognizes the strong date cue.'),
+}
+
+# Supplemental inspected passages/cached evidence evaluated against final questions.
+extras = {
+ 1158: [('cached:peoplemover-identity',)],
+ 1170: [('https://disneyparksblog.com/community-outreach/disney-and-make-a-wish-celebrate-150000-wishes-granted-together/', 'Mikayla overnight-stay surprise paragraph', 'The overnight accommodation is expressly named Cinderella Castle Suite.')],
+ 1172: [(D+'a-to-z/space-mountain/','Disneyland opening paragraph','Disneyland Space Mountain opened in May 1977.'),(D+'a-to-z/big-thunder-mountain-railroad/','Opening Disneyland date','Disneyland Big Thunder Mountain Railroad opened September 2, 1979.'),(D+'a-to-z/splash-mountain/','Opening Disneyland date','Disneyland Splash Mountain opened July 17, 1989.')],
+ 1176: [('https://www.wrtv.com/news/house-of-the-mouse-chicago-showcases-the-birthplace-of-walt-disney/','Birthplace restoration report, seven Disneys paragraph','The report identifies Walt, four siblings and their two parents, independently matching the museum roster.')],
+ 1179: [(D+'all-new-display-celebrates-the-disney-bros-story/','October 1923 agreement and studio naming paragraphs','The Walt Disney Archives account identifies Margaret Winkler as the distributor who signed the first Alice contract with the brothers.')],
+ 1182: [(D+'a-to-z/band-concert-the-film/','Opening first-color statement','The Band Concert is identified as Mickey’s first color cartoon, released February 23, 1935.')],
+ 1188: [('cached:b17-animation',)],
+ 1192: [(D+'a-to-z/gracey-yale/','Complete professional biography','Gracey created special effects and lighting for Haunted Mansion and Pirates after moving to WED in 1961.')],
+ 1193: [(M+'blog/anniversary-day','1966 Florida film quotation and EPCOT planned-city discussion','The museum describes Walt’s 1966 film explaining the Florida Project and experimental community EPCOT.')],
+ 1194: [('cached:b12-wdw',)],
+ 1195: [('https://www.oscars.org/oscars/ceremonies/1933/F--J?qt-honorees=1','Fifth Academy Awards, November 18 1932; Special Award highlight','The fifth ceremony took place November 18, 1932 and honored Walt for creating Mickey Mouse.')],
+ 1197: [('https://digitalcollections.oscars.org/digital/api/collection/p15759coll4/id/5659/download','Fifth Year 1931-1932, Cartoon short subject and special-award lists','Flowers and Trees is the cartoon short winner; Mickey creation is listed separately as a special award.')],
+ 1198: [(D+'d23s-top-five-disney-academy-award-moments/','1—Walt and the Seven Oscars','D23 reports Snow White’s pre-release nickname as Disney’s Folly.')],
+ 1199: [('cached:b17-animation',)],
+ 1201: [('https://catalog.afi.com/Catalog/moviedetails/5865','Cast, Adriana Caselotti entry','The AFI cast table assigns Caselotti the voice of Snow White.')],
+}
+
+library=read('audit/source-notes.json')
+template=read('audit/runs/next-shard-0022-renewed-template.json')
+checks=['singleAnswer','context','wording','noGiveaway','distinctFact','category','difficulty','scope']
+checked=set()
+for review in template['reviews']:
+    i=review['questionId']
+    url,loc,premise,opts,challenge=rows[i]
+    changing=i in {1156,1157,1158,1164,1165,1166,1167,1171,1174,1175}
+    source_ids=[]
+    for j,source in enumerate([(url,loc,premise)]+extras.get(i,[])):
+        if source[0].startswith('cached:'):
+            sid=source[0][7:]
+            assert sid in library['sources']
+        else:
+            sid=f'b22-{i}-{j}'
+            su,sl,se=source
+            library['sources'][sid]={'url':su,'locator':sl,'evidence':se,'checkedBy':'Codex','checkedAt':'2026-11-08','timeSensitive':changing,'nextReviewAt':'2027-02-06' if changing else None,'topics':['Batch 22'],'limitations':'Institutional text and identified archival/catalog records inspected. No original film/audio/video viewing claimed. Cached chronology and route notes evaluated for the stated comparison; no generic page or search snippet is treated as scene proof. Museum and AFI historical interpretations are identified as such; no exact uncorroborated financial loss or disputed bell-provenance claim is approved.'}
+        source_ids.append(sid)
+        checked.add(sid)
+    review.update(checks=checks,notes='Complete topic digests and all four comparison options read; scope is parks or theatrical/production Disney history. '+challenge,context=premise,timeSensitive=changing,nextReviewAt='2027-02-06' if changing else None)
+    review['premise']={'reason':premise,'sources':source_ids}
+    review['options']=[{'basis':'direct' if n==0 else ('exhaustive-list' if i in {1163,1176,1199} else 'exclusive-inference'),'reason':reason,'sources':source_ids} for n,reason in enumerate(opts)]
+    review['challenge']={'reviewer':'Codex','at':'2026-11-08','premiseChecked':True,'alternativesExcluded':True,'notes':challenge}
+template['sourcesChecked']=sorted(checked)
+assert {r['questionId'] for r in template['reviews']}==set(rows)
+save('audit/source-notes.json',library)
+save('audit/runs/next-shard-0022-evidence-notes.json',template)

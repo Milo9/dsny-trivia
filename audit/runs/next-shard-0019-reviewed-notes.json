@@ -1,0 +1,2833 @@
+{
+  "schema": 1,
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "sourcesChecked": [
+    "b10-incredibles",
+    "b10-toy4",
+    "b12-inside",
+    "b13-tangledcatalog",
+    "b14-bells",
+    "b14-luca",
+    "b19-1005",
+    "b19-1007",
+    "b19-1008",
+    "b19-1009",
+    "b19-1010",
+    "b19-1011",
+    "b19-1012",
+    "b19-1013",
+    "b19-1014",
+    "b19-1015",
+    "b19-1016",
+    "b19-1017",
+    "b19-1018",
+    "b19-1019",
+    "b19-1020",
+    "b19-1021",
+    "b19-1022",
+    "b19-1023",
+    "b19-1024",
+    "b19-1025",
+    "b19-1026",
+    "b19-1027",
+    "b19-1028",
+    "b19-1029",
+    "b19-1030",
+    "b19-1031",
+    "b19-1032",
+    "b19-1033",
+    "b19-1034",
+    "b19-1035",
+    "b19-1036",
+    "b19-1037",
+    "b19-1038",
+    "b19-1039",
+    "b19-1040",
+    "b19-1042",
+    "b19-1043",
+    "b19-1044",
+    "b19-1045",
+    "b19-1046",
+    "b19-1047",
+    "b19-1048",
+    "b19-1049",
+    "b19-1050",
+    "b19-cars",
+    "b19-inside-primary",
+    "b19-ksbe",
+    "b19-mulan-primary",
+    "b19-odie-primary",
+    "b19-plot-toy4",
+    "b19-raya-primary",
+    "b19-schwartz",
+    "b9-dory",
+    "b9-moanaway"
+  ],
+  "reviews": [
+    {
+      "questionId": 1005,
+      "hash": "0d1e90c932044c150800a6644cff50b5965405525a1009ec96dfcf6bb955558d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The marketplace pursuit moves into the One Jump Ahead number. Arabian Nights is the narrator opening; Prince Ali is the later royal parade; A Whole New World is the carpet duet.",
+        "sources": [
+          "b19-1005"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The chase chorus identifies One Jump Ahead.",
+          "sources": [
+            "b19-1005"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Prince Ali accompanies the later parade, not the early escape.",
+          "sources": [
+            "b19-1005"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Arabian Nights precedes Aladdin’s marketplace chase.",
+          "sources": [
+            "b19-1005"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A Whole New World is the later carpet duet.",
+          "sources": [
+            "b19-1005"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the literal final question against the cited passage. The chase chorus identifies One Jump Ahead. Prince Ali accompanies the later parade, not the early escape. Arabian Nights precedes Aladdin’s marketplace chase. A Whole New World is the later carpet duet. The alternatives do not identify the same scene, entity, title or role."
+      }
+    },
+    {
+      "questionId": 1007,
+      "hash": "8a288153522cbc3bc1788b97865b4642c9c15bbba6cfb3bc40984b43e9f3282e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "This Is Halloween introduces the story. Jack’s Lament expresses his dissatisfaction, What’s This concerns Christmas Town, and Town Meeting Song comes later. Overture and spoken narration precede the first sung number.",
+        "sources": [
+          "b19-1007"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "This Is Halloween is the first sung number.",
+          "sources": [
+            "b19-1007"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jack’s Lament follows the opening celebration.",
+          "sources": [
+            "b19-1007"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "What’s This occurs after Jack reaches Christmas Town.",
+          "sources": [
+            "b19-1007"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Town Meeting Song follows his return.",
+          "sources": [
+            "b19-1007"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished a sung musical number from the preceding instrumental overture and spoken narration; none of the later three numbers opens the singing."
+      }
+    },
+    {
+      "questionId": 1008,
+      "hash": "996da63b7d63f62823259b8ef32564fe362b48f92be75e71deb48ddb9f07607e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Out There is Quasimodo’s early wish to experience life outside Notre Dame. The other offered songs concern romantic hope, Esmeralda’s prayer, and the festival celebration.",
+        "sources": [
+          "b19-1008",
+          "b14-bells",
+          "b19-schwartz"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Out There expresses his wish to join the people outside.",
+          "sources": [
+            "b19-1008",
+            "b14-bells",
+            "b19-schwartz"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Heaven’s Light concerns romantic hope later in the story.",
+          "sources": [
+            "b19-1008",
+            "b14-bells",
+            "b19-schwartz"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "God Help the Outcasts is Esmeralda’s cathedral prayer.",
+          "sources": [
+            "b19-1008",
+            "b14-bells",
+            "b19-schwartz"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Topsy Turvy is the festival number, not this private early wish.",
+          "sources": [
+            "b19-1008",
+            "b14-bells",
+            "b19-schwartz"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged Heaven’s Light as another Quasimodo solo; the early wish for a day outside, rather than later romantic hope, uniquely identifies Out There."
+      }
+    },
+    {
+      "questionId": 1009,
+      "hash": "6ee4dd9a1ccaff0f17273f83edc6d40728895eb73484760296d6f48fd8c637aa",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Meg denies being in love in I Won’t Say (I’m in Love). The Muses narrate The Gospel Truth and the finale A Star Is Born; Phil’s training song is One Last Hope.",
+        "sources": [
+          "b19-1009"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Meg’s denial is the subject of I Won’t Say (I’m in Love).",
+          "sources": [
+            "b19-1009"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A Star Is Born is the Muses’ finale.",
+          "sources": [
+            "b19-1009"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Gospel Truth supplies the Muses’ narration.",
+          "sources": [
+            "b19-1009"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "One Last Hope is Phil’s training number.",
+          "sources": [
+            "b19-1009"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the literal final question against the cited passage. Meg’s denial is the subject of I Won’t Say (I’m in Love). A Star Is Born is the Muses’ finale. The Gospel Truth supplies the Muses’ narration. One Last Hope is Phil’s training number. The alternatives do not identify the same scene, entity, title or role."
+      }
+    },
+    {
+      "questionId": 1010,
+      "hash": "59962f2a7c6ff699a1274401df67cd7fe568f771226001fe740898a6e99690da",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Honor to Us All accompanies Mulan’s preparation for the Matchmaker. Reflection follows her failure; the two soldier numbers belong to training and the army march.",
+        "sources": [
+          "b19-1010",
+          "b19-mulan-primary"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Honor to Us All accompanies the makeover and Matchmaker preparation.",
+          "sources": [
+            "b19-1010",
+            "b19-mulan-primary"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Reflection is her subsequent identity lament.",
+          "sources": [
+            "b19-1010",
+            "b19-mulan-primary"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A Girl Worth Fighting For is sung by marching soldiers.",
+          "sources": [
+            "b19-1010",
+            "b19-mulan-primary"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "I’ll Make a Man Out of You accompanies military training.",
+          "sources": [
+            "b19-1010",
+            "b19-mulan-primary"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the 1998 animated version and exact preparation scene, not the 2020 remake or Mulan’s later Reflection."
+      }
+    },
+    {
+      "questionId": 1011,
+      "hash": "0c0f0a5dc39e067564c64485956f1b3e87b70813053c0a6a3996f53620268a5d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Strangers Like Me accompanies Tarzan’s education with Jane. Two Worlds is the opening family montage, Son of Man the growing-up montage, and Trashin’ the Camp the gorillas’ camp percussion.",
+        "sources": [
+          "b19-1011"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Strangers Like Me accompanies the human-world lessons.",
+          "sources": [
+            "b19-1011"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Two Worlds accompanies the opening family montage.",
+          "sources": [
+            "b19-1011"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Son of Man accompanies Tarzan’s childhood growth.",
+          "sources": [
+            "b19-1011"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Trashin’ the Camp accompanies the gorillas’ camp antics.",
+          "sources": [
+            "b19-1011"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Changed follows to accompanies: a broad chronological follows could include later music. The teaching montage uniquely supplies the answer."
+      }
+    },
+    {
+      "questionId": 1012,
+      "hash": "855a75821ddc2fb3b19c43337f32bfc405d32572e73b3032441128f506d85c83",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The sole nomination for The Emperor’s New Groove at the 2001 ceremony was My Funny Friend and Me, with music by Sting and David Hartley and lyrics by Sting.",
+        "sources": [
+          "b19-1012"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "My Funny Friend and Me appears in the nominee list.",
+          "sources": [
+            "b19-1012"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Perfect World is absent from the complete song nominee list.",
+          "sources": [
+            "b19-1012"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "One Day She’ll Love Me is absent from that complete list.",
+          "sources": [
+            "b19-1012"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Snuff Out the Light is absent from that complete list.",
+          "sources": [
+            "b19-1012"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the literal final question against the cited passage. My Funny Friend and Me appears in the nominee list. Perfect World is absent from the complete song nominee list. One Day She’ll Love Me is absent from that complete list. Snuff Out the Light is absent from that complete list. The alternatives do not identify the same scene, entity, title or role."
+      }
+    },
+    {
+      "questionId": 1013,
+      "hash": "1d10bd7f55bd4da6b389b98046c4529b396b9266c49844636eca734968cbefa2",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The opening hula uses He Mele No Lilo.",
+        "sources": [
+          "b19-1013",
+          "b19-ksbe"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The identified opening cue is He Mele No Lilo.",
+          "sources": [
+            "b19-1013",
+            "b19-ksbe"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "This is a different soundtrack song.",
+          "sources": [
+            "b19-1013",
+            "b19-ksbe"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "This is not the identified opening cue.",
+          "sources": [
+            "b19-1013",
+            "b19-ksbe"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "This is not the identified opening cue.",
+          "sources": [
+            "b19-1013",
+            "b19-ksbe"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the 2002 animated opening, not the 2025 remake. The title’s Lilo token comes from the film name and does not disclose the Hawaiian song title."
+      }
+    },
+    {
+      "questionId": 1014,
+      "hash": "8c09d187cc6737a69376f07e83e9fa22bc6ccf0c1458d8ec9e1d1f2f307e65f7",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Mama Odie sings Dig a Little Deeper to distinguish wants from needs. Almost There is Tiana’s restaurant fantasy; Down in New Orleans establishes the city; Friends on the Other Side is Facilier’s deal.",
+        "sources": [
+          "b19-1014",
+          "b19-odie-primary"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Dig a Little Deeper is the advice number in this scene.",
+          "sources": [
+            "b19-1014",
+            "b19-odie-primary"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Almost There is Tiana’s restaurant fantasy.",
+          "sources": [
+            "b19-1014",
+            "b19-odie-primary"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Down in New Orleans is not the wants-versus-needs advice number.",
+          "sources": [
+            "b19-1014",
+            "b19-odie-primary"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Friends on the Other Side belongs to Facilier’s deal.",
+          "sources": [
+            "b19-1014",
+            "b19-odie-primary"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the literal final question against the cited passage. Dig a Little Deeper is the advice number in this scene. Almost There is Tiana’s restaurant fantasy. Down in New Orleans is not the wants-versus-needs advice number. Friends on the Other Side belongs to Facilier’s deal. The alternatives do not identify the same scene, entity, title or role."
+      }
+    },
+    {
+      "questionId": 1015,
+      "hash": "10f416c0aced50c3e99953484457e64bcc3161f978d95870b070755aa83e7ed4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Mother Knows Best is Gothel’s coercive safety warning. When Will My Life Begin is Rapunzel’s routine song, I See the Light the lantern duet, and I’ve Got a Dream the tavern ensemble.",
+        "sources": [
+          "b19-1015",
+          "b13-tangledcatalog"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Mother Knows Best is Gothel’s manipulative warning.",
+          "sources": [
+            "b19-1015",
+            "b13-tangledcatalog"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "When Will My Life Begin introduces Rapunzel’s routine.",
+          "sources": [
+            "b19-1015",
+            "b13-tangledcatalog"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "I See the Light is Rapunzel and Flynn’s lantern duet.",
+          "sources": [
+            "b19-1015",
+            "b13-tangledcatalog"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "I’ve Got a Dream is the tavern ensemble number.",
+          "sources": [
+            "b19-1015",
+            "b13-tangledcatalog"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the literal final question against the cited passage. Mother Knows Best is Gothel’s manipulative warning. When Will My Life Begin introduces Rapunzel’s routine. I See the Light is Rapunzel and Flynn’s lantern duet. I’ve Got a Dream is the tavern ensemble number. The alternatives do not identify the same scene, entity, title or role."
+      }
+    },
+    {
+      "questionId": 1016,
+      "hash": "d51d8f883e7aee575ee354ca0a840dce353b9ce55c9f9185b1756bd6db76fe12",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Love Is an Open Door is Anna and Hans’s romantic duet ending in a proposal. For the First Time in Forever is associated with Anna and Elsa, Fixer Upper with trolls, and Do You Want to Build a Snowman with Anna’s childhood attempts to reconnect.",
+        "sources": [
+          "b19-1016"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Love Is an Open Door is the Anna-Hans duet.",
+          "sources": [
+            "b19-1016"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "For the First Time in Forever is not sung as their duet.",
+          "sources": [
+            "b19-1016"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fixer Upper is the troll matchmaking number.",
+          "sources": [
+            "b19-1016"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Do You Want to Build a Snowman is Anna’s childhood appeal.",
+          "sources": [
+            "b19-1016"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the literal final question against the cited passage. Love Is an Open Door is the Anna-Hans duet. For the First Time in Forever is not sung as their duet. Fixer Upper is the troll matchmaking number. Do You Want to Build a Snowman is Anna’s childhood appeal. The alternatives do not identify the same scene, entity, title or role."
+      }
+    },
+    {
+      "questionId": 1017,
+      "hash": "1d8955eac4a30167f1de3f8da08d0903fa3a1328f3db24cf1c18df7e69f0422b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Gazelle, voiced by Shakira, performs Try Everything in Zootopia. Let It Go is Frozen’s Elsa song; How Far I’ll Go is Moana’s solo; Touch the Sky is from Brave.",
+        "sources": [
+          "b19-1017"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Try Everything is Gazelle’s recording and concert song.",
+          "sources": [
+            "b19-1017"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Let It Go is from Frozen, not Gazelle’s song.",
+          "sources": [
+            "b19-1017"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "How Far I’ll Go is from Moana.",
+          "sources": [
+            "b19-1017"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Touch the Sky is from Brave.",
+          "sources": [
+            "b19-1017"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the literal final question against the cited passage. Try Everything is Gazelle’s recording and concert song. Let It Go is from Frozen, not Gazelle’s song. How Far I’ll Go is from Moana. Touch the Sky is from Brave. The alternatives do not identify the same scene, entity, title or role."
+      }
+    },
+    {
+      "questionId": 1018,
+      "hash": "3e7851d08ee9030d38965a00f72f73726771cb19c509b58e779dce16b6d3d373",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "We Know the Way accompanies the ancestral voyage vision in the hidden canoe cavern. How Far I’ll Go expresses Moana’s longing, Where You Are introduces island duties, and I Am Moana is her later identity affirmation.",
+        "sources": [
+          "b19-1018",
+          "b9-moanaway"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "We Know the Way accompanies the cavern vision.",
+          "sources": [
+            "b19-1018",
+            "b9-moanaway"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "How Far I’ll Go expresses her own longing to sail.",
+          "sources": [
+            "b19-1018",
+            "b9-moanaway"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Where You Are introduces present island life.",
+          "sources": [
+            "b19-1018",
+            "b9-moanaway"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "I Am Moana invokes ancestry later, outside this cavern vision.",
+          "sources": [
+            "b19-1018",
+            "b9-moanaway"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "I Am Moana also mentions voyaging ancestry, so the original broad history wording was insufficient. The drum-triggered cavern vision excludes that later song."
+      }
+    },
+    {
+      "questionId": 1019,
+      "hash": "e9ec6f36361dc32f134befa5aea2748a71667e04efb6a095bbe9a670f451fb0d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Family Madrigal introduces the relatives and gifts at the start. We Don’t Talk About Bruno is the later ensemble account of Bruno, All of You the rebuilding finale, and Waiting on a Miracle Mirabel’s private lament.",
+        "sources": [
+          "b19-1019"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Family Madrigal is the opening roll call.",
+          "sources": [
+            "b19-1019"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "We Don’t Talk About Bruno concerns Bruno later.",
+          "sources": [
+            "b19-1019"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "All of You is the rebuilding finale.",
+          "sources": [
+            "b19-1019"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Waiting on a Miracle is Mirabel’s later private lament.",
+          "sources": [
+            "b19-1019"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the literal final question against the cited passage. The Family Madrigal is the opening roll call. We Don’t Talk About Bruno concerns Bruno later. All of You is the rebuilding finale. Waiting on a Miracle is Mirabel’s later private lament. The alternatives do not identify the same scene, entity, title or role."
+      }
+    },
+    {
+      "questionId": 1020,
+      "hash": "437e07518738dd048b4e13ac131e76074f919e6e4d96e1c47058581861ad7f2e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Disney For Scores interview identifies James Newton Howard as Raya’s score composer and discusses his work incorporating Southeast Asian instruments.",
+        "sources": [
+          "b19-1020",
+          "b19-raya-primary"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Howard is the identified score composer.",
+          "sources": [
+            "b19-1020",
+            "b19-raya-primary"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Menken is a different composer, not the credited score author.",
+          "sources": [
+            "b19-1020",
+            "b19-raya-primary"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Giacchino is a different composer, not the credited score author.",
+          "sources": [
+            "b19-1020",
+            "b19-raya-primary"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Zimmer is a different composer, not the credited score author.",
+          "sources": [
+            "b19-1020",
+            "b19-raya-primary"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the literal final question against the cited passage. Howard is the identified score composer. Menken is a different composer, not the credited score author. Giacchino is a different composer, not the credited score author. Zimmer is a different composer, not the credited score author. The alternatives do not identify the same scene, entity, title or role."
+      }
+    },
+    {
+      "questionId": 1021,
+      "hash": "6d49dcaadfba6c94ea223349a2f2523e0debd18ae4fe0fabd8041196d9bd3e7e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Rex is the insecure plastic dinosaur; Hamm is the piggy bank, Slinky a stretchy toy dog, and Mr. Potato Head a detachable-face toy.",
+        "sources": [
+          "b19-1021"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Rex is the insecure dinosaur.",
+          "sources": [
+            "b19-1021"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Slinky Dog is a dog toy.",
+          "sources": [
+            "b19-1021"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hamm is the piggy bank.",
+          "sources": [
+            "b19-1021"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mr. Potato Head is the potato-shaped toy.",
+          "sources": [
+            "b19-1021"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the literal final question against the cited passage. Rex is the insecure dinosaur. Slinky Dog is a dog toy. Hamm is the piggy bank. Mr. Potato Head is the potato-shaped toy. The alternatives do not identify the same scene, entity, title or role."
+      }
+    },
+    {
+      "questionId": 1022,
+      "hash": "4691f1a4f88e38a0bb9219578ecfdb0a8d120fae1b9ebbb0a05f765333ec661c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Flik’s recruited warrior bugs are actually a circus troupe; they are entertainers, not palace guards, merchants or deserters.",
+        "sources": [
+          "b19-1022"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The recruited bugs are circus performers.",
+          "sources": [
+            "b19-1022"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The troupe is not employed as palace guards.",
+          "sources": [
+            "b19-1022"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Their occupation is performing, not trading goods.",
+          "sources": [
+            "b19-1022"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "They are not deserters from an army.",
+          "sources": [
+            "b19-1022"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the literal final question against the cited passage. The recruited bugs are circus performers. The troupe is not employed as palace guards. Their occupation is performing, not trading goods. They are not deserters from an army. The alternatives do not identify the same scene, entity, title or role."
+      }
+    },
+    {
+      "questionId": 1023,
+      "hash": "2fb92ba1f45d67042aa9099f6b1a10a41d8bb7df4ae042aa5ea4384c6722c480",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Woody is a collectible from the fictional 1950s show Woody’s Roundup. Cowboy Camp is Andy’s destination; the two other offered titles are not the show’s name.",
+        "sources": [
+          "b19-1023"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Woody’s Roundup is explicitly named as the show.",
+          "sources": [
+            "b19-1023"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Roundup Gang is not the identified title.",
+          "sources": [
+            "b19-1023"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sheriff Woody Show is not the identified title.",
+          "sources": [
+            "b19-1023"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cowboy Camp is Andy’s destination, not the program.",
+          "sources": [
+            "b19-1023"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "This tests a fictional program as part of a theatrical Toy Story 2 plot, not real television trivia. The actual program name excludes all alternate titles; the Shanghai attraction asks a separate location fact."
+      }
+    },
+    {
+      "questionId": 1024,
+      "hash": "0d225ca1b397a8377a98225a0d8bb6c3bb4428aa1262374a0a24a7b7c694ca81",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The tank initiation names Nemo Sharkbait. Bubbles is another tank fish; Squirt is Crush’s child; Little Fin is not the name bestowed at this initiation.",
+        "sources": [
+          "b19-1024"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Sharkbait is the name bestowed during initiation.",
+          "sources": [
+            "b19-1024"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Little Fin is not the bestowed name.",
+          "sources": [
+            "b19-1024"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bubbles names another tank resident.",
+          "sources": [
+            "b19-1024"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Squirt names Crush’s offspring.",
+          "sources": [
+            "b19-1024"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the literal final question against the cited passage. Sharkbait is the name bestowed during initiation. Little Fin is not the bestowed name. Bubbles names another tank resident. Squirt names Crush’s offspring. The alternatives do not identify the same scene, entity, title or role."
+      }
+    },
+    {
+      "questionId": 1025,
+      "hash": "bcf19ac906ae6dc203287b20858c9d24a44e184c8297b3fa57c0431de945fd63",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "AFI places Mr. Incredible and Elastigirl’s pre-wedding crime fighting in Metroville. The question is bounded to the 2004 opening rather than a contested generalized home-city label.",
+        "sources": [
+          "b19-1025"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Metroville is the explicitly identified opening city.",
+          "sources": [
+            "b19-1025"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Municiberg is not the city named for this scene.",
+          "sources": [
+            "b19-1025"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Nomanisan is not the city named for this scene.",
+          "sources": [
+            "b19-1025"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Supersburg is not the city named for this scene.",
+          "sources": [
+            "b19-1025"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Avoided carrying sequel geography or generic home-city claims into the opening. The cited synopsis directly identifies Metroville for the specified event."
+      }
+    },
+    {
+      "questionId": 1026,
+      "hash": "c6f9cfe628174620a95b115f5242293f2996ebb4452c42a1c903ffea25525465",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar names Doc Hudson as McQueen’s mentor and Smokey as Doc’s former coach. The King and Chick Hicks are racers, and Mack is McQueen’s transporter, not this mentor.",
+        "sources": [
+          "b19-1026",
+          "b19-cars"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Doc Hudson is the named mentor.",
+          "sources": [
+            "b19-1026",
+            "b19-cars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The King is a competing veteran racer, not the mentor identified here.",
+          "sources": [
+            "b19-1026",
+            "b19-cars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mack transports McQueen rather than mentoring his racing.",
+          "sources": [
+            "b19-1026",
+            "b19-cars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Chick Hicks is McQueen’s rival.",
+          "sources": [
+            "b19-1026",
+            "b19-cars"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the literal final question against the cited passage. Doc Hudson is the named mentor. The King is a competing veteran racer, not the mentor identified here. Mack transports McQueen rather than mentoring his racing. Chick Hicks is McQueen’s rival. The alternatives do not identify the same scene, entity, title or role."
+      }
+    },
+    {
+      "questionId": 1027,
+      "hash": "f4f0e8e90a59daaf35d92aefdb279257c454907f4070f6054d6adeeaa0892850",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar gives Linguini’s initial position as garbage boy. The question asks his hired title, not whether his cleanup duties could include washing dishes.",
+        "sources": [
+          "b19-1027"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Garbage boy is his initial hired title.",
+          "sources": [
+            "b19-1027"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sous-chef is not his initial hired title.",
+          "sources": [
+            "b19-1027"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Waiter is not his initial hired title.",
+          "sources": [
+            "b19-1027"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dishwasher describes a possible cleanup task, not his stated hired title.",
+          "sources": [
+            "b19-1027"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The screenplay calls him a plongeur or something, so general cleanup tasks could overlap dishwasher. The final question explicitly asks the hired title stated in Pixar’s profile."
+      }
+    },
+    {
+      "questionId": 1028,
+      "hash": "ddc67ef76b6d089b497efe08eb87d4ed287194a86b5f65364d4d2a1dd22a3c00",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar describes the Axiom as the refuge of consumer culture built by Buy n’ Large Corporation. Axiom is the ship name, not Axiom Corp; MegaBuy and EarthMart are not the identified corporation.",
+        "sources": [
+          "b19-1028"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Buy n Large is the named corporation.",
+          "sources": [
+            "b19-1028"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Axiom is the ship rather than this corporation.",
+          "sources": [
+            "b19-1028"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "MegaBuy is not the corporation named by Pixar.",
+          "sources": [
+            "b19-1028"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "EarthMart is not the corporation named by Pixar.",
+          "sources": [
+            "b19-1028"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the literal final question against the cited passage. Buy n Large is the named corporation. Axiom is the ship rather than this corporation. MegaBuy is not the corporation named by Pixar. EarthMart is not the corporation named by Pixar. The alternatives do not identify the same scene, entity, title or role."
+      }
+    },
+    {
+      "questionId": 1029,
+      "hash": "f3ef3a7273789d7e227140de46e12ca7345b706c1a4bb43fdb4e373075d3f61c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Russell explicitly says the missing badge he seeks is Assisting the Elderly; the ceremony names the same award.",
+        "sources": [
+          "b19-1029"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Assisting the Elderly is his stated missing badge.",
+          "sources": [
+            "b19-1029"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Animal Tracking is not the badge he says he needs.",
+          "sources": [
+            "b19-1029"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Knot Tying is not the missing badge he identifies.",
+          "sources": [
+            "b19-1029"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Balloon Safety is not the missing badge he identifies.",
+          "sources": [
+            "b19-1029"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the literal final question against the cited passage. Assisting the Elderly is his stated missing badge. Animal Tracking is not the badge he says he needs. Knot Tying is not the missing badge he identifies. Balloon Safety is not the missing badge he identifies. The alternatives do not identify the same scene, entity, title or role."
+      }
+    },
+    {
+      "questionId": 1030,
+      "hash": "d8bf65315fea0f795a06ea62ab487a82486c044f4b54cff6c42ca55a8d8c84d3",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "At the trash center the toys face a shredder before reaching an incinerator; the Aliens’ crane rescue saves them from being burned.",
+        "sources": [
+          "b19-1030"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The landfill incinerator is the imminent burning hazard.",
+          "sources": [
+            "b19-1030"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A shredder threatens earlier but is not the burning hazard at the rescue.",
+          "sources": [
+            "b19-1030"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "They are at the landfill, not a daycare furnace.",
+          "sources": [
+            "b19-1030"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "They are at the landfill, not a museum crusher.",
+          "sources": [
+            "b19-1030"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The earlier shredder also fits the original broad near-destruction wording. The final burn-and-rescue wording excludes that separate hazard."
+      }
+    },
+    {
+      "questionId": 1031,
+      "hash": "bc61b2578beeb81cd0e652dde0e8153ac557f38235dddd10bf0409f0e587897a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Finn is the experienced British spy with years in the field; Holley is a British desk agent turned rookie field spy. Professor Z is a weapons designer and Axlerod the fuel-promoting former oil baron.",
+        "sources": [
+          "b19-1031"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Finn is the veteran British spy.",
+          "sources": [
+            "b19-1031"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Holley is explicitly a rookie field spy.",
+          "sources": [
+            "b19-1031"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Professor Z is the weapons designer.",
+          "sources": [
+            "b19-1031"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Miles Axlerod is the former oil baron and race organizer.",
+          "sources": [
+            "b19-1031"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Both Finn and Holley fit the old spy/mistaken-agent question. The veteran-versus-rookie distinction is explicit in the source and rules out Holley."
+      }
+    },
+    {
+      "questionId": 1032,
+      "hash": "d464ce0099450d9135d7f64b87dcef6c325a8bc2a5f9772eb21fd57e629e35b4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar names the gathering as the Highland Games. It is the suitor competition, not a preliminary test of who is eligible to compete.",
+        "sources": [
+          "b19-1032"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Highland Games is the named gathering.",
+          "sources": [
+            "b19-1032"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Royal Tournament is not its identified name.",
+          "sources": [
+            "b19-1032"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Clan Trials is not its identified name.",
+          "sources": [
+            "b19-1032"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Games of DunBroch is not its identified name.",
+          "sources": [
+            "b19-1032"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the literal final question against the cited passage. The Highland Games is the named gathering. The Royal Tournament is not its identified name. The Clan Trials is not its identified name. The Games of DunBroch is not its identified name. The alternatives do not identify the same scene, entity, title or role."
+      }
+    },
+    {
+      "questionId": 1033,
+      "hash": "0e130dd19795674f3c5537905c6fdb719668340498bf5fed00012f5861c54e9c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The campus inter-fraternity contest is repeatedly named the Scare Games in Pixar’s fraternity profiles.",
+        "sources": [
+          "b19-1033"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Scare Games is the named contest.",
+          "sources": [
+            "b19-1033"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Roar Cup is not the contest’s name.",
+          "sources": [
+            "b19-1033"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Monster Games is not the contest’s name.",
+          "sources": [
+            "b19-1033"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Fear Finals is not the contest’s name.",
+          "sources": [
+            "b19-1033"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the literal final question against the cited passage. The Scare Games is the named contest. The Roar Cup is not the contest’s name. The Monster Games is not the contest’s name. The Fear Finals is not the contest’s name. The alternatives do not identify the same scene, entity, title or role."
+      }
+    },
+    {
+      "questionId": 1034,
+      "hash": "a35d93489989b133a3e1e8cfd8b954920e1de19a91be7549278afa7ac8d5f7ce",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Riley’s experiences become memories stored as colored orbs; core memories are a significant subset, not a separate container shape.",
+        "sources": [
+          "b19-1034",
+          "b12-inside",
+          "b19-inside-primary"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Memory orbs are the spherical recollection containers.",
+          "sources": [
+            "b19-1034",
+            "b12-inside",
+            "b19-inside-primary"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Emotion jars are not the identified containers.",
+          "sources": [
+            "b19-1034",
+            "b12-inside",
+            "b19-inside-primary"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dream reels concern a different concept and are not the spherical memory containers.",
+          "sources": [
+            "b19-1034",
+            "b12-inside",
+            "b19-inside-primary"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Thought cubes are not the identified containers.",
+          "sources": [
+            "b19-1034",
+            "b12-inside",
+            "b19-inside-primary"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished ordinary memory storage from #1312’s special core-memory subset. No source inference from a single emotional ability is used; the passage identifies the physical containers."
+      }
+    },
+    {
+      "questionId": 1035,
+      "hash": "35f6d6d8526d65c76e8b2c306399aef28bc451bd4f45dd44cf010d95961fd54f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar identifies Arlo as an Apatosaurus. The offered alternative genera are distinct from that identification.",
+        "sources": [
+          "b19-1035"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Arlo is an Apatosaurus.",
+          "sources": [
+            "b19-1035"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tyrannosaurus is a different genus.",
+          "sources": [
+            "b19-1035"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Triceratops is a different genus.",
+          "sources": [
+            "b19-1035"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Stegosaurus is a different genus.",
+          "sources": [
+            "b19-1035"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the literal final question against the cited passage. Arlo is an Apatosaurus. Tyrannosaurus is a different genus. Triceratops is a different genus. Stegosaurus is a different genus. The alternatives do not identify the same scene, entity, title or role."
+      }
+    },
+    {
+      "questionId": 1036,
+      "hash": "3d0ef3400d04438e027c0205309dedc29f492c16682a045f5472907c44c81ff1",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Hank is a seven-armed octopus. Fluke and Rudder are sea lions, Bailey a beluga, and Destiny a whale shark.",
+        "sources": [
+          "b19-1036",
+          "b9-dory"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Hank is an octopus despite having seven arms.",
+          "sources": [
+            "b19-1036",
+            "b9-dory"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sea lion describes Fluke and Rudder.",
+          "sources": [
+            "b19-1036",
+            "b9-dory"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Beluga whale describes Bailey.",
+          "sources": [
+            "b19-1036",
+            "b9-dory"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Whale shark describes Destiny.",
+          "sources": [
+            "b19-1036",
+            "b9-dory"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the literal final question against the cited passage. Hank is an octopus despite having seven arms. Sea lion describes Fluke and Rudder. Beluga whale describes Bailey. Whale shark describes Destiny. The alternatives do not identify the same scene, entity, title or role."
+      }
+    },
+    {
+      "questionId": 1037,
+      "hash": "4d661a4af1c115c5ea109f8a728faffe9ced919bf6e29a097232f64d57785b78",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Cruz is McQueen’s trainer at the Rust-eze Racing Center. Sally is his partner, Natalie an analyst, and Miss Fritter a demolition-derby bus.",
+        "sources": [
+          "b19-1037"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Cruz is the trainer helping his comeback.",
+          "sources": [
+            "b19-1037"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sally is his partner, not the assigned trainer.",
+          "sources": [
+            "b19-1037"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Natalie is an analyst, not his trainer.",
+          "sources": [
+            "b19-1037"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Miss Fritter is a demolition-derby competitor.",
+          "sources": [
+            "b19-1037"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the literal final question against the cited passage. Cruz is the trainer helping his comeback. Sally is his partner, not the assigned trainer. Natalie is an analyst, not his trainer. Miss Fritter is a demolition-derby competitor. The alternatives do not identify the same scene, entity, title or role."
+      }
+    },
+    {
+      "questionId": 1038,
+      "hash": "347fc9115d3bace75259fc2f423f7419c288b5a57e1b9cf514dbf6097d564a2d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar explicitly identifies Dante as a Xoloitzcuintli, a Xolo dog. Hairlessness alone does not identify him as some other hairless breed.",
+        "sources": [
+          "b19-1038"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Xoloitzcuintli is Dante’s stated breed.",
+          "sources": [
+            "b19-1038"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Labrador retriever is a different breed.",
+          "sources": [
+            "b19-1038"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Chinese crested is a different hairless breed.",
+          "sources": [
+            "b19-1038"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Peruvian hairless dog is a distinct breed despite a shared hairless appearance.",
+          "sources": [
+            "b19-1038"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged the two hairless alternatives; the answer rests on the explicit breed designation, not an inference from appearance. Replaced short distractors with comparably specific breed names."
+      }
+    },
+    {
+      "questionId": 1039,
+      "hash": "550c8ba5ef2148aeb3796b126efb3b7626dfe464ae98c54800e381c202878885",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Jack-Jack discovers an emerging set of powers, including the backyard encounter. Helen stretches, Dash has speed and Violet invisibility/force fields; these are their established abilities rather than Jack-Jack’s expanding unpredictable set.",
+        "sources": [
+          "b19-1039",
+          "b10-incredibles"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Jack-Jack has the emerging unpredictable set of powers.",
+          "sources": [
+            "b19-1039",
+            "b10-incredibles"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dash has his established super-speed.",
+          "sources": [
+            "b19-1039",
+            "b10-incredibles"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Violet has her established invisibility and force fields.",
+          "sources": [
+            "b19-1039",
+            "b10-incredibles"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Helen has her established elasticity.",
+          "sources": [
+            "b19-1039",
+            "b10-incredibles"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Multiple powers alone would not exclude Violet’s two powers. Rechecked the newly developing, unpredictable set in this sequel; that distinguishes Jack-Jack. Replaced Tony, who is not a Parr family member."
+      }
+    },
+    {
+      "questionId": 1040,
+      "hash": "584da91041c804aba23ea1e6b20480f19945c909ee805a6ae61d2cdfe839622b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Gabby Gabby wants Woody’s working voice box to repair her defective one. Giggle is Bo’s tiny policewoman friend, Dolly belongs to Bonnie, and Bo helps Woody rather than seeking his voice box.",
+        "sources": [
+          "b19-1040",
+          "b10-toy4",
+          "b19-plot-toy4"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Gabby Gabby seeks the working voice box.",
+          "sources": [
+            "b19-1040",
+            "b10-toy4",
+            "b19-plot-toy4"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Giggle McDimples is Bo’s tiny policewoman friend.",
+          "sources": [
+            "b19-1040",
+            "b10-toy4",
+            "b19-plot-toy4"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dolly is Bonnie’s doll, not the antique-store doll seeking this repair.",
+          "sources": [
+            "b19-1040",
+            "b10-toy4",
+            "b19-plot-toy4"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bo Peep is Woody’s ally, not the doll seeking his voice box.",
+          "sources": [
+            "b19-1040",
+            "b10-toy4",
+            "b19-plot-toy4"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the literal final question against the cited passage. Gabby Gabby seeks the working voice box. Giggle McDimples is Bo’s tiny policewoman friend. Dolly is Bonnie’s doll, not the antique-store doll seeking this repair. Bo Peep is Woody’s ally, not the doll seeking his voice box. The alternatives do not identify the same scene, entity, title or role."
+      }
+    },
+    {
+      "questionId": 1042,
+      "hash": "1269ccd4810aa0fa43850c5b1c5a3e8d5cb8de7206bba138b91b78ef68542844",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The counselors are all known as Jerry. Terry keeps the count, Joe is the musician, and Moonwind a living mystic.",
+        "sources": [
+          "b19-1042"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Jerry is the counselors’ shared name.",
+          "sources": [
+            "b19-1042"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Terry is the individual counter.",
+          "sources": [
+            "b19-1042"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Joe is the musician’s name.",
+          "sources": [
+            "b19-1042"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Moonwind names the mystic.",
+          "sources": [
+            "b19-1042"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the literal final question against the cited passage. Jerry is the counselors’ shared name. Terry is the individual counter. Joe is the musician’s name. Moonwind names the mystic. The alternatives do not identify the same scene, entity, title or role."
+      }
+    },
+    {
+      "questionId": 1043,
+      "hash": "a59b24fa7fe15758cdb6fe3188cdb1cd0b9f2ccb6f41c0c1ea953256f67975c0",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar names the local town race the Portorosso Cup. The Vespa-owning bully’s scooter does not make the event a Vespa race.",
+        "sources": [
+          "b19-1043",
+          "b14-luca"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Portorosso Cup is the named local event.",
+          "sources": [
+            "b19-1043",
+            "b14-luca"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Vespa Grand Prix is not the identified event name.",
+          "sources": [
+            "b19-1043",
+            "b14-luca"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cinque Terre Challenge is not the identified name.",
+          "sources": [
+            "b19-1043",
+            "b14-luca"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sea Monster Derby is not the identified name.",
+          "sources": [
+            "b19-1043",
+            "b14-luca"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the literal final question against the cited passage. Portorosso Cup is the named local event. Vespa Grand Prix is not the identified event name. Cinque Terre Challenge is not the identified name. Sea Monster Derby is not the identified name. The alternatives do not identify the same scene, entity, title or role."
+      }
+    },
+    {
+      "questionId": 1044,
+      "hash": "3b0822a31d34b68482f5ceb511534e5c18161b78582ac7645570126502e3a837",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Mei and her friends obsess over the boy band 4*Town; the other offered group names do not identify that band.",
+        "sources": [
+          "b19-1044"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "4*Town is the band named in Mei’s profile.",
+          "sources": [
+            "b19-1044"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "5 Alarm is not the band named in the profile.",
+          "sources": [
+            "b19-1044"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Town4U is not the band named in the profile.",
+          "sources": [
+            "b19-1044"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Red Panda Pop is not the band named in the profile.",
+          "sources": [
+            "b19-1044"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the literal final question against the cited passage. 4*Town is the band named in Mei’s profile. 5 Alarm is not the band named in the profile. Town4U is not the band named in the profile. Red Panda Pop is not the band named in the profile. The alternatives do not identify the same scene, entity, title or role."
+      }
+    },
+    {
+      "questionId": 1045,
+      "hash": "d3f9ec618bea6d511d2d429c5bb44c62d33a28121bb13db48dc191b0a56af63e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Buzz’s robotic companion cat is Sox. Rex is the Toy Story dinosaur, M-O the WALL-E cleaner, and Mittens is not the identified cat companion.",
+        "sources": [
+          "b19-1045"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Sox is the robotic cat.",
+          "sources": [
+            "b19-1045"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mittens is not the named robotic companion.",
+          "sources": [
+            "b19-1045"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rex is a dinosaur toy, not this cat.",
+          "sources": [
+            "b19-1045"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "M.O. is a cleaner robot from WALL-E, not this cat.",
+          "sources": [
+            "b19-1045"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the literal final question against the cited passage. Sox is the robotic cat. Mittens is not the named robotic companion. Rex is a dinosaur toy, not this cat. M.O. is a cleaner robot from WALL-E, not this cat. The alternatives do not identify the same scene, entity, title or role."
+      }
+    },
+    {
+      "questionId": 1046,
+      "hash": "e14610feeb04d7aa8853cae747ba43db718d04a0cceb853596d39b031e618cd4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Wade Ripple is Water, Clod Earth, Gale Wind/Air and Bernie Fire. The specified Water character who meets Ember is Wade.",
+        "sources": [
+          "b19-1046"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Wade Ripple is the Water element.",
+          "sources": [
+            "b19-1046"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Clod is an Earth element.",
+          "sources": [
+            "b19-1046"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gale is a Wind element.",
+          "sources": [
+            "b19-1046"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bernie Lumen is a Fire element.",
+          "sources": [
+            "b19-1046"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the literal final question against the cited passage. Wade Ripple is the Water element. Clod is an Earth element. Gale is a Wind element. Bernie Lumen is a Fire element. The alternatives do not identify the same scene, entity, title or role."
+      }
+    },
+    {
+      "questionId": 1047,
+      "hash": "c084334718a10f9a592cd42120e94c6723b03785db98c693126daa6d92214bfc",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Envy is teal and small, Anxiety orange with electric shapes, Embarrassment pink and giant, and Ennui shaped with limp, slumped posture.",
+        "sources": [
+          "b19-1047"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Envy has the tiny teal design.",
+          "sources": [
+            "b19-1047"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Anxiety has the orange electric design.",
+          "sources": [
+            "b19-1047"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ennui has the lanky limp-noodle posture.",
+          "sources": [
+            "b19-1047"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Embarrassment is large and pink.",
+          "sources": [
+            "b19-1047"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Used the production designer’s explicit color/size account, not a color inference from another emotion or an unviewed image. Removed the unnecessary wide-eyed claim."
+      }
+    },
+    {
+      "questionId": 1048,
+      "hash": "c2092c67ea03f719ae23d1b3b5eec55a6f347c054699691dadf2f146f3e46368",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Hamm is the piggy bank; Rex is a dinosaur and Slinky a dog toy. Lotso is a plush teddy bear from Toy Story 3 rather than Andy’s piggy bank.",
+        "sources": [
+          "b19-1048"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Hamm is the piggy bank.",
+          "sources": [
+            "b19-1048"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rex is a plastic dinosaur.",
+          "sources": [
+            "b19-1048"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Slinky Dog is a dog toy.",
+          "sources": [
+            "b19-1048"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lotso is a plush teddy bear.",
+          "sources": [
+            "b19-1048"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the literal final question against the cited passage. Hamm is the piggy bank. Rex is a plastic dinosaur. Slinky Dog is a dog toy. Lotso is a plush teddy bear. The alternatives do not identify the same scene, entity, title or role."
+      }
+    },
+    {
+      "questionId": 1049,
+      "hash": "6dea1a3c002d165931234ef485d4f7e8d4f062b2cb37adb8ecd32e23bb6bddb8",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Mr. Ray is the class’s teacher; Gill leads the tank gang, Nigel is the pelican who helps the search, and Crush is the turtle parent in the current.",
+        "sources": [
+          "b19-1049"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Mr. Ray teaches the school class.",
+          "sources": [
+            "b19-1049"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gill leads the aquarium fish.",
+          "sources": [
+            "b19-1049"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Nigel is the pelican helper.",
+          "sources": [
+            "b19-1049"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Crush is the turtle parent, not the schoolteacher.",
+          "sources": [
+            "b19-1049"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked the literal final question against the cited passage. Mr. Ray teaches the school class. Gill leads the aquarium fish. Nigel is the pelican helper. Crush is the turtle parent, not the schoolteacher. The alternatives do not identify the same scene, entity, title or role."
+      }
+    },
+    {
+      "questionId": 1050,
+      "hash": "d5ea915730bb89585c8995adad99229ea3d3e807173acd4ded7a65a5701be25e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final wording and all four options. Read the complete union of all 32 packet topic digests (813 unique context questions), including music/Pixar categories and film-specific context, plus cross-bank named-entity matches. Retained facts differ from related character, production, song and location facts. Categories and recall difficulty fit the final version. No real-TV or unbounded-current-status trivia.",
+      "context": "Original English-language theatrical film named in the final question; historical released-film fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Linguini spills and ruins soup; Remy seasons and repairs it. The screenplay mentions leeks but does not establish a complete leek-and-potato recipe.",
+        "sources": [
+          "b19-1050"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Soup is explicitly the spilled and repaired dish.",
+          "sources": [
+            "b19-1050"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Risotto is not the dish in this sequence.",
+          "sources": [
+            "b19-1050"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Souffle is not the dish in this sequence.",
+          "sources": [
+            "b19-1050"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Roast chicken is not the dish in this sequence.",
+          "sources": [
+            "b19-1050"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rejected unsupported recipe specificity: leeks are mentioned but that does not prove potato content or a fixed recipe name. The final dish-level question is fully supported."
+      }
+    }
+  ]
+}

@@ -1,0 +1,922 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-08",
+  "comparisons": [
+    {
+      "findingId": "duplicate-1ead9f2e98307dbfe0d8",
+      "questions": [
+        {
+          "id": 854,
+          "question": "In Peter Pan (1953), what is Wendy Darling's father's name?",
+          "answers": [
+            "George Darling",
+            "John Darling",
+            "Michael Darling",
+            "Edward Darling"
+          ],
+          "difficulty": "hard",
+          "category": "characters"
+        },
+        {
+          "id": 1104,
+          "question": "In Peter Pan (1953), what is Wendy Darling's mother's name?",
+          "answers": [
+            "Mary Darling",
+            "Jane Darling",
+            "Elizabeth Darling",
+            "Margaret Darling"
+          ],
+          "difficulty": "hard",
+          "category": "characters"
+        }
+      ],
+      "verdict": "distinct",
+      "reason": "George is Wendy's father; Mary is her mother. These are distinct family members and names."
+    },
+    {
+      "findingId": "duplicate-240bedcf7b058492901e",
+      "questions": [
+        {
+          "id": 336,
+          "question": "In which Magic Kingdom land can you find Big Thunder Mountain Railroad?",
+          "answers": [
+            "Frontierland",
+            "Tomorrowland",
+            "Adventureland",
+            "Fantasyland"
+          ],
+          "difficulty": "easy",
+          "category": "parks"
+        },
+        {
+          "id": 1138,
+          "question": "In November 2026, which Magic Kingdom land houses Country Bear Musical Jamboree?",
+          "answers": [
+            "Frontierland",
+            "Liberty Square",
+            "Adventureland",
+            "Fantasyland"
+          ],
+          "difficulty": "medium",
+          "category": "parks"
+        }
+      ],
+      "verdict": "distinct",
+      "reason": "Big Thunder Mountain and Country Bear are different attractions; knowing one Frontierland location does not place the other."
+    },
+    {
+      "findingId": "duplicate-2ab79ff8fc34eb6e1963",
+      "questions": [
+        {
+          "id": 536,
+          "question": "In Brother Bear (2003), what is the name of Kenai's eldest brother?",
+          "answers": [
+            "Sitka",
+            "Denahi",
+            "Koda",
+            "Rutt"
+          ],
+          "difficulty": "hard",
+          "category": "movies"
+        },
+        {
+          "id": 1128,
+          "question": "In Brother Bear (2003), who is the shaman of Kenai's tribe?",
+          "answers": [
+            "Tanana",
+            "Denahi",
+            "Sitka",
+            "Tug"
+          ],
+          "difficulty": "hard",
+          "category": "characters"
+        }
+      ],
+      "verdict": "distinct",
+      "reason": "Sitka is Kenai's eldest brother; Tanana is the tribe's shaman. The distinct relationships require different names."
+    },
+    {
+      "findingId": "duplicate-447099a033a01be6f32b",
+      "questions": [
+        {
+          "id": 578,
+          "question": "What is the name of Tiana's frog love interest in The Princess and the Frog?",
+          "answers": [
+            "Prince Naveen",
+            "Prince Phillip",
+            "Prince Eric",
+            "Prince Charming"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        },
+        {
+          "id": 1132,
+          "question": "In The Princess and the Frog, what is Tiana's mother's name?",
+          "answers": [
+            "Eudora",
+            "Charlotte",
+            "Mama Odie",
+            "Georgia"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        }
+      ],
+      "verdict": "distinct",
+      "reason": "Naveen is Tiana's love interest; Eudora is her mother. Knowing one relationship does not identify the other."
+    },
+    {
+      "findingId": "duplicate-44e9a9d98fa7bdf306b6",
+      "questions": [
+        {
+          "id": 441,
+          "question": "Which character sings 'When You Wish Upon a Star' in Pinocchio?",
+          "answers": [
+            "Jiminy Cricket",
+            "Pinocchio",
+            "Geppetto",
+            "The Blue Fairy"
+          ],
+          "difficulty": "easy",
+          "category": "music"
+        },
+        {
+          "id": 1102,
+          "question": "In Pinocchio (1940), who is appointed as Pinocchio's conscience?",
+          "answers": [
+            "Jiminy Cricket",
+            "The Blue Fairy",
+            "Geppetto",
+            "Figaro"
+          ],
+          "difficulty": "easy",
+          "category": "characters"
+        }
+      ],
+      "verdict": "distinct",
+      "reason": "Jiminy's song performance and his appointment as conscience are distinct roles. Knowing a singer does not prove his story office."
+    },
+    {
+      "findingId": "duplicate-4814779229b2f7fdd0ee",
+      "questions": [
+        {
+          "id": 888,
+          "question": "In November 2026, at EPCOT, what kind of spaces do boats pass through on Living with the Land?",
+          "answers": [
+            "Working greenhouses",
+            "Space capsules",
+            "Underwater tunnels",
+            "Movie sets"
+          ],
+          "difficulty": "medium",
+          "category": "parks"
+        },
+        {
+          "id": 1139,
+          "question": "In November 2026, which EPCOT pavilion houses Soarin' and a boat ride through working greenhouses?",
+          "answers": [
+            "The Land",
+            "The Seas",
+            "Imagination",
+            "Wonders of Life"
+          ],
+          "difficulty": "easy",
+          "category": "parks"
+        }
+      ],
+      "verdict": "distinct",
+      "reason": "The greenhouse boat setting does not locate its pavilion. This question adds the Land pavilion and separately locates Soarin there."
+    },
+    {
+      "findingId": "duplicate-4e7fbd71d4801d5f7e9b",
+      "questions": [
+        {
+          "id": 1124,
+          "question": "In The Emperor's New Groove (2000), what animal's language does Kronk use when asking Bucky for directions?",
+          "answers": [
+            "Squirrel",
+            "Llama",
+            "Jaguar",
+            "Parrot"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        },
+        {
+          "id": 2488,
+          "question": "In The Sword in the Stone, besides turning Wart into a fish, what other animal does Merlin transform him into for a lesson involving two smitten female admirers?",
+          "answers": [
+            "A squirrel",
+            "A rabbit",
+            "A sparrow",
+            "A field mouse"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        }
+      ],
+      "verdict": "distinct",
+      "reason": "Kronk's Bucky conversation and Wart's transformed animal in another film are different facts despite both involving squirrels."
+    },
+    {
+      "findingId": "duplicate-4f88d41249c9770604b1",
+      "questions": [
+        {
+          "id": 1115,
+          "question": "In The Great Mouse Detective, what bat works as Ratigan's henchman?",
+          "answers": [
+            "Fidget",
+            "Felicia",
+            "Bartholomew",
+            "Dawson"
+          ],
+          "difficulty": "hard",
+          "category": "characters"
+        },
+        {
+          "id": 2500,
+          "question": "What distinctive physical feature does Ratigan's bat henchman Fidget have in The Great Mouse Detective?",
+          "answers": [
+            "A peg leg",
+            "An eye patch",
+            "A missing ear",
+            "A hook hand"
+          ],
+          "difficulty": "hard",
+          "category": "characters"
+        }
+      ],
+      "verdict": "distinct",
+      "reason": "Fidget's name and his peg leg are separate identity and physical-trait facts. His name alone does not establish his leg."
+    },
+    {
+      "findingId": "duplicate-5302ac356415f4a131f2",
+      "questions": [
+        {
+          "id": 1124,
+          "question": "In The Emperor's New Groove (2000), what animal's language does Kronk use when asking Bucky for directions?",
+          "answers": [
+            "Squirrel",
+            "Llama",
+            "Jaguar",
+            "Parrot"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        },
+        {
+          "id": 1433,
+          "question": "In Up, what single word do all the dogs in Muntz's pack blurt out mid-sentence whenever they spot a particular animal?",
+          "answers": [
+            "Squirrel!",
+            "Bird!",
+            "Cat!",
+            "Danger!"
+          ],
+          "difficulty": "easy",
+          "category": "pixar"
+        }
+      ],
+      "verdict": "distinct",
+      "reason": "Kronk speaks squirrel to Bucky; Up dogs interrupt speech when spotting squirrels. These are different actions in different films."
+    },
+    {
+      "findingId": "duplicate-53ac089ad88e7ceaea1c",
+      "questions": [
+        {
+          "id": 1136,
+          "question": "At Disneyland, which original land is themed to the American Old West?",
+          "answers": [
+            "Frontierland",
+            "Adventureland",
+            "Tomorrowland",
+            "Fantasyland"
+          ],
+          "difficulty": "easy",
+          "category": "parks"
+        },
+        {
+          "id": 2526,
+          "question": "In which Disneyland Paris land is the Phantom Manor attraction located?",
+          "answers": [
+            "Frontierland",
+            "Adventureland",
+            "Fantasyland",
+            "Discoveryland"
+          ],
+          "difficulty": "easy",
+          "category": "parks"
+        }
+      ],
+      "verdict": "distinct",
+      "reason": "Disneyland's broad Old West land theme does not locate Phantom Manor at Disneyland Paris."
+    },
+    {
+      "findingId": "duplicate-5621d942918a5189fbac",
+      "questions": [
+        {
+          "id": 1111,
+          "question": "In Disney's Robin Hood, who is Prince John's snake advisor?",
+          "answers": [
+            "Sir Hiss",
+            "Little John",
+            "Nutsy",
+            "Trigger"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        },
+        {
+          "id": 1251,
+          "question": "In Disney's Robin Hood, what song mocks Prince John's rule?",
+          "answers": [
+            "The Phony King of England",
+            "Oo-De-Lally",
+            "Love",
+            "Not in Nottingham"
+          ],
+          "difficulty": "medium",
+          "category": "music"
+        }
+      ],
+      "verdict": "distinct",
+      "reason": "Sir Hiss's advisor identity does not name the song mocking Prince John's rule."
+    },
+    {
+      "findingId": "duplicate-5791615624cd7fd57987",
+      "questions": [
+        {
+          "id": 1136,
+          "question": "At Disneyland, which original land is themed to the American Old West?",
+          "answers": [
+            "Frontierland",
+            "Adventureland",
+            "Tomorrowland",
+            "Fantasyland"
+          ],
+          "difficulty": "easy",
+          "category": "parks"
+        },
+        {
+          "id": 1138,
+          "question": "In November 2026, which Magic Kingdom land houses Country Bear Musical Jamboree?",
+          "answers": [
+            "Frontierland",
+            "Liberty Square",
+            "Adventureland",
+            "Fantasyland"
+          ],
+          "difficulty": "medium",
+          "category": "parks"
+        }
+      ],
+      "verdict": "distinct",
+      "reason": "Disneyland's western theme and Magic Kingdom's Country Bear location are park-specific facts; neither establishes the other."
+    },
+    {
+      "findingId": "duplicate-6f16731b934524c87056",
+      "questions": [
+        {
+          "id": 275,
+          "question": "In The Rescuers (1977), what is the name of the orphan girl Bernard and Miss Bianca rescue?",
+          "answers": [
+            "Penny",
+            "Jenny",
+            "Molly",
+            "Annie"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 1131,
+          "question": "In Bolt (2008), what is the name of Bolt's human owner?",
+          "answers": [
+            "Penny",
+            "Mittens",
+            "Rhino",
+            "Molly"
+          ],
+          "difficulty": "easy",
+          "category": "characters"
+        }
+      ],
+      "verdict": "distinct",
+      "reason": "Penny the rescued orphan and Penny the owner of Bolt are different characters in different films."
+    },
+    {
+      "findingId": "duplicate-77d557008c78b1a41e2c",
+      "questions": [
+        {
+          "id": 1068,
+          "question": "In The Black Cauldron, what princess joins Taran's quest?",
+          "answers": [
+            "Princess Eilonwy",
+            "Princess Atta",
+            "Princess Kida",
+            "Princess Calla"
+          ],
+          "difficulty": "hard",
+          "category": "movies"
+        },
+        {
+          "id": 1114,
+          "question": "In The Black Cauldron (1985), which wandering minstrel joins Taran's quest?",
+          "answers": [
+            "Fflewddur Fflam",
+            "Taran",
+            "Dallben",
+            "King Eidilleg"
+          ],
+          "difficulty": "hard",
+          "category": "characters"
+        }
+      ],
+      "verdict": "distinct",
+      "reason": "Eilonwy is Taran's princess companion, Fflewddur his minstrel companion. Naming one does not name the other."
+    },
+    {
+      "findingId": "duplicate-8f415c6dd1b7e9082340",
+      "questions": [
+        {
+          "id": 1151,
+          "question": "In what year did Tokyo DisneySea open?",
+          "answers": [
+            "2001",
+            "1983",
+            "1992",
+            "2016"
+          ],
+          "difficulty": "hard",
+          "category": "parks"
+        },
+        {
+          "id": 2241,
+          "question": "In what year did the Fantasy Springs port at Tokyo DisneySea open to guests?",
+          "answers": [
+            "2024",
+            "2022",
+            "2019",
+            "2026"
+          ],
+          "difficulty": "medium",
+          "category": "parks",
+          "factId": "fantasy-springs.opening-year",
+          "explanation": "Fantasy Springs opened on June 6, 2024.",
+          "source": "https://thewaltdisneycompany.com/news/fantasy-springs-tokyo-disneysea-what-you-need-to-know/",
+          "verifiedAt": "2026-10-29"
+        }
+      ],
+      "verdict": "distinct",
+      "reason": "2001 is the entire DisneySea park opening; 2024 is the later Fantasy Springs expansion opening."
+    },
+    {
+      "findingId": "duplicate-964ef26e35df0b31e55e",
+      "questions": [
+        {
+          "id": 336,
+          "question": "In which Magic Kingdom land can you find Big Thunder Mountain Railroad?",
+          "answers": [
+            "Frontierland",
+            "Tomorrowland",
+            "Adventureland",
+            "Fantasyland"
+          ],
+          "difficulty": "easy",
+          "category": "parks"
+        },
+        {
+          "id": 1136,
+          "question": "At Disneyland, which original land is themed to the American Old West?",
+          "answers": [
+            "Frontierland",
+            "Adventureland",
+            "Tomorrowland",
+            "Fantasyland"
+          ],
+          "difficulty": "easy",
+          "category": "parks"
+        }
+      ],
+      "verdict": "distinct",
+      "reason": "Magic Kingdom's Big Thunder land assignment differs from Disneyland's overall Old West theme."
+    },
+    {
+      "findingId": "duplicate-9b207a7e5d7682fada6f",
+      "questions": [
+        {
+          "id": 1139,
+          "question": "In November 2026, which EPCOT pavilion houses Soarin' and a boat ride through working greenhouses?",
+          "answers": [
+            "The Land",
+            "The Seas",
+            "Imagination",
+            "Wonders of Life"
+          ],
+          "difficulty": "easy",
+          "category": "parks"
+        },
+        {
+          "id": 1175,
+          "question": "At EPCOT, which pavilion is home to the Garden Grill restaurant?",
+          "answers": [
+            "The Land",
+            "The Seas",
+            "Canada",
+            "The American Adventure"
+          ],
+          "difficulty": "medium",
+          "category": "parks"
+        }
+      ],
+      "verdict": "distinct",
+      "reason": "The Land's ride locations do not establish its Garden Grill restaurant location; different facilities are mapped to the pavilion."
+    },
+    {
+      "findingId": "duplicate-bc339efe9b12387317e2",
+      "questions": [
+        {
+          "id": 337,
+          "question": "What is the name of the entrance avenue at Magic Kingdom?",
+          "answers": [
+            "Main Street, U.S.A.",
+            "Main Boulevard",
+            "Disney Way",
+            "Fantasyland Road"
+          ],
+          "difficulty": "easy",
+          "category": "parks"
+        },
+        {
+          "id": 1143,
+          "question": "In November 2026, which Disneyland Railroad station is nearest the park entrance turnstiles?",
+          "answers": [
+            "Main Street, U.S.A.",
+            "Mickey's Toontown",
+            "New Orleans Square",
+            "Tomorrowland"
+          ],
+          "difficulty": "medium",
+          "category": "parks"
+        }
+      ],
+      "verdict": "distinct",
+      "reason": "The Magic Kingdom entrance avenue and the Disneyland Railroad entrance station are different park/facility mappings."
+    },
+    {
+      "findingId": "duplicate-c777e0723d36e96c9e7d",
+      "questions": [
+        {
+          "id": 1061,
+          "question": "In The Sword in the Stone, who is Arthur's foster brother?",
+          "answers": [
+            "Kay",
+            "Ector",
+            "Pellinore",
+            "Lancelot"
+          ],
+          "difficulty": "hard",
+          "category": "movies"
+        },
+        {
+          "id": 1108,
+          "question": "In The Sword in the Stone, who is Arthur's foster father?",
+          "answers": [
+            "Sir Ector",
+            "Sir Kay",
+            "Merlin",
+            "Sir Pellinore"
+          ],
+          "difficulty": "hard",
+          "category": "characters"
+        }
+      ],
+      "verdict": "distinct",
+      "reason": "Kay is Arthur's foster brother while Ector is his foster father. These are distinct relationships."
+    },
+    {
+      "findingId": "duplicate-cc1ac2c29132443d1274",
+      "questions": [
+        {
+          "id": 1138,
+          "question": "In November 2026, which Magic Kingdom land houses Country Bear Musical Jamboree?",
+          "answers": [
+            "Frontierland",
+            "Liberty Square",
+            "Adventureland",
+            "Fantasyland"
+          ],
+          "difficulty": "medium",
+          "category": "parks"
+        },
+        {
+          "id": 2526,
+          "question": "In which Disneyland Paris land is the Phantom Manor attraction located?",
+          "answers": [
+            "Frontierland",
+            "Adventureland",
+            "Fantasyland",
+            "Discoveryland"
+          ],
+          "difficulty": "easy",
+          "category": "parks"
+        }
+      ],
+      "verdict": "distinct",
+      "reason": "Country Bear at Magic Kingdom and Phantom Manor in Paris have independent land assignments."
+    },
+    {
+      "findingId": "duplicate-cc983e0e1c02f88b817c",
+      "questions": [
+        {
+          "id": 882,
+          "question": "In Big Hero 6, which team member uses plasma blades?",
+          "answers": [
+            "Wasabi",
+            "Go Go",
+            "Honey Lemon",
+            "Fred"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        },
+        {
+          "id": 1134,
+          "question": "In Big Hero 6, which team member uses chemistry-filled spheres?",
+          "answers": [
+            "Honey Lemon",
+            "Go Go",
+            "Wasabi",
+            "Fred"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        }
+      ],
+      "verdict": "distinct",
+      "reason": "Wasabi's plasma equipment and Honey Lemon's chemistry spheres are different character/equipment mappings."
+    },
+    {
+      "findingId": "duplicate-e05ec23703e9ce24c869",
+      "questions": [
+        {
+          "id": 563,
+          "question": "In A Goofy Movie (1995), what is the name of Goofy's teenage son?",
+          "answers": [
+            "Max",
+            "Pete",
+            "Chumley",
+            "Junior"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        },
+        {
+          "id": 1117,
+          "question": "In The Little Mermaid (1989), what is Prince Eric's dog named?",
+          "answers": [
+            "Max",
+            "Bruno",
+            "Major",
+            "Sultan"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        }
+      ],
+      "verdict": "distinct",
+      "reason": "Goofy's son Max and Eric's pet dog Max are different characters in different films."
+    },
+    {
+      "findingId": "duplicate-ec40d3bb633b7111db53",
+      "questions": [
+        {
+          "id": 282,
+          "question": "What is Simba's mother's name in The Lion King?",
+          "answers": [
+            "Sarabi",
+            "Nala",
+            "Kiara",
+            "Sarafina"
+          ],
+          "difficulty": "easy",
+          "category": "characters"
+        },
+        {
+          "id": 1119,
+          "question": "In The Lion King (1994), what is Nala's mother's name?",
+          "answers": [
+            "Sarafina",
+            "Sarabi",
+            "Zira",
+            "Kiara"
+          ],
+          "difficulty": "hard",
+          "category": "characters"
+        }
+      ],
+      "verdict": "distinct",
+      "reason": "Sarabi is Simba's mother; Sarafina is Nala's mother. Similar spellings do not merge the two family relationships."
+    },
+    {
+      "findingId": "duplicate-f4476f1b83fe9bd3e827",
+      "questions": [
+        {
+          "id": 1133,
+          "question": "In Frozen (2013), which visiting dignitary sends two bodyguards with Hans to search for Anna?",
+          "answers": [
+            "The Duke of Weselton",
+            "Prince Hans",
+            "Oaken",
+            "King Runeard"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        },
+        {
+          "id": 2303,
+          "question": "In Zootopia, Duke Weaselton's surname is a pun on which other animated character, also voiced by Alan Tudyk?",
+          "answers": [
+            "The Duke of Weselton",
+            "Prince Hans",
+            "Jafar",
+            "King Candy"
+          ],
+          "difficulty": "hard",
+          "category": "characters"
+        }
+      ],
+      "verdict": "distinct",
+      "reason": "The Duke's volunteering of bodyguards and the later Zootopia surname/voice-actor pun are separate story and production facts."
+    },
+    {
+      "questions": [
+        {
+          "id": 1123,
+          "question": "In Tarzan, what is Jane's father usually called?",
+          "answers": [
+            "Professor Porter",
+            "Professor Clayton",
+            "Doctor Archimedes",
+            "Sir Porter"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        },
+        {
+          "id": 273,
+          "question": "In Tarzan (1999), what is the full name of Jane's scientist father?",
+          "answers": [
+            "Professor Archimedes Q. Porter",
+            "Professor Augustus J. Porter",
+            "Professor Alexander B. Porter",
+            "Professor Archibald M. Porter"
+          ],
+          "difficulty": "hard",
+          "category": "movies"
+        }
+      ],
+      "verdict": "retire-first",
+      "reason": "Both identify Jane's scientist father as Professor Porter. The full-name question includes the same title/surname and requires additional first-name recall; the shorter identity question adds no fact.",
+      "evidence": "https://en.wikipedia.org/wiki/Tarzan_(1999_film)",
+      "locator": "Voice cast Professor Archimedes Q. Porter; Clayton is the escort",
+      "optionChallenge": "Professor Porter is the named father. Clayton is the hunter; Doctor Archimedes and Sir Porter alter his title. The retained full-name option alone matches Archimedes Q., excluding Augustus J., Alexander B. and Archibald M."
+    },
+    {
+      "questions": [
+        {
+          "id": 1150,
+          "question": "At Magic Kingdom, what indoor roller coaster opened in Tomorrowland in 1975?",
+          "answers": [
+            "Space Mountain",
+            "TRON Lightcycle / Run",
+            "Big Thunder Mountain Railroad",
+            "The Barnstormer"
+          ],
+          "difficulty": "medium",
+          "category": "parks"
+        },
+        {
+          "id": 1366,
+          "question": "In what year did Space Mountain open at Magic Kingdom, becoming one of the first thrill rides at that park?",
+          "answers": [
+            "1975",
+            "1971",
+            "1977",
+            "1980"
+          ],
+          "difficulty": "hard",
+          "category": "parks"
+        }
+      ],
+      "verdict": "retire-first",
+      "reason": "Both encode the Magic Kingdom Space Mountain opening in 1975, with identity and opening year reversed. Retain the dedicated historical-year question.",
+      "evidence": "https://disneyexperiences.com/disneyworld-press/release/walt-disney-world-celebrates-50-years-of-space-mountain/",
+      "locator": "Opening paragraph January 15, 1975; indoor coaster description",
+      "optionChallenge": "Space Mountain is the named 1975 indoor coaster; TRON, Big Thunder and Barnstormer are different attractions. In the retained question, the recorded 1975 date excludes 1971, 1977 and 1980."
+    },
+    {
+      "questions": [
+        {
+          "id": 1110,
+          "question": "In The Aristocats, who leads the alley cat jazz band?",
+          "answers": [
+            "Scat Cat",
+            "Thomas O'Malley",
+            "Roquefort",
+            "Edgar"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        },
+        {
+          "id": 2071,
+          "question": "In The Aristocats, the alley cat jazz band led by Scat Cat includes musicians representing several countries — which instrument does the English cat, Hit Cat, play?",
+          "answers": [
+            "Acoustic guitar",
+            "Trumpet",
+            "Double bass",
+            "Concertina"
+          ],
+          "difficulty": "hard",
+          "category": "characters"
+        },
+        {
+          "id": 2072,
+          "question": "In The Aristocats, what instrument does Scat Cat himself, the jazz band's leader, play?",
+          "answers": [
+            "Trumpet",
+            "Piano",
+            "Double bass",
+            "Drums"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        }
+      ],
+      "verdict": "distinct",
+      "reason": "Band leader identity, Hit Cat's guitar and Scat Cat's trumpet are three role/instrument mappings. Naming a leader does not establish either instrument."
+    },
+    {
+      "questions": [
+        {
+          "id": 1102,
+          "question": "In Pinocchio (1940), who is appointed as Pinocchio's conscience?",
+          "answers": [
+            "Jiminy Cricket",
+            "The Blue Fairy",
+            "Geppetto",
+            "Figaro"
+          ],
+          "difficulty": "easy",
+          "category": "characters"
+        },
+        {
+          "id": 556,
+          "question": "At the end of Pinocchio (1940), what reward certifies Jiminy Cricket as an official conscience?",
+          "answers": [
+            "A gold badge",
+            "A magic umbrella",
+            "A tiny top hat",
+            "A silver whistle"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        }
+      ],
+      "verdict": "distinct",
+      "reason": "The conscience appointment and the gold certification badge at the ending are distinct events and facts."
+    },
+    {
+      "questions": [
+        {
+          "id": 1137,
+          "question": "What was Disneyland's submarine attraction called when it opened in 1959?",
+          "answers": [
+            "Submarine Voyage",
+            "Finding Nemo Submarine Voyage",
+            "20,000 Leagues Under the Sea",
+            "Nautilus Expedition"
+          ],
+          "difficulty": "hard",
+          "category": "parks"
+        },
+        {
+          "id": 624,
+          "question": "What did Disneyland's Submarine Voyage become when it reopened in 2007?",
+          "answers": [
+            "Finding Nemo Submarine Voyage",
+            "Atlantis Submarine Voyage",
+            "Little Mermaid Submarine Voyage",
+            "20,000 Leagues Under the Sea"
+          ],
+          "difficulty": "medium",
+          "category": "parks"
+        }
+      ],
+      "verdict": "distinct",
+      "reason": "The 1959 original opening name and the 2007 Finding Nemo retheme name are different historical names and events."
+    }
+  ]
+}

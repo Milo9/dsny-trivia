@@ -1,0 +1,247 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-08",
+  "scope": "Batch 22 only; replacement questions read as context",
+  "comparisons": [
+    {
+      "retire": 1154,
+      "replacedBy": 2253,
+      "reason": "The retained opening-year question explicitly names Mystic Manor as the trackless ride in Hong Kong Disneyland Mystic Point. Its premise directly supplies the identity asked here; retain the additional date fact.",
+      "removedSnapshot": {
+        "id": 1154,
+        "question": "At Hong Kong Disneyland, what trackless dark ride opened in a land themed to exploration?",
+        "answers": [
+          "Mystic Manor",
+          "Haunted Mansion",
+          "Phantom Manor",
+          "Monster Manor"
+        ],
+        "difficulty": "hard",
+        "category": "parks"
+      },
+      "retainedSnapshot": {
+        "id": 2253,
+        "question": "In what year did Mystic Manor, the trackless dark ride in Hong Kong Disneyland's Mystic Point, open?",
+        "answers": [
+          "2013",
+          "2011",
+          "2015",
+          "2009"
+        ],
+        "difficulty": "hard",
+        "category": "parks"
+      },
+      "challenge": "Read all four options on both questions. The retained question supplies the tested fact; no independent fact is needed to answer the retired question."
+    },
+    {
+      "retire": 1155,
+      "replacedBy": 2257,
+      "reason": "The retained princess-dedication question explicitly names Shanghai Disneyland Enchanted Storybook Castle. This simpler identity is supplied verbatim in its premise.",
+      "removedSnapshot": {
+        "id": 1155,
+        "question": "What is the castle at Shanghai Disneyland called?",
+        "answers": [
+          "Enchanted Storybook Castle",
+          "Sleeping Beauty Castle",
+          "Cinderella Castle",
+          "Castle of Magical Dreams"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      },
+      "retainedSnapshot": {
+        "id": 2257,
+        "question": "Unlike every other Disney castle, whom is Shanghai Disneyland's Enchanted Storybook Castle dedicated to?",
+        "answers": [
+          "All Disney princesses",
+          "Only Elsa and Anna",
+          "Only Cinderella",
+          "No specific character"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      },
+      "challenge": "Read all four options on both questions. The retained question supplies the tested fact; no independent fact is needed to answer the retired question."
+    },
+    {
+      "retire": 1161,
+      "replacedBy": 1365,
+      "reason": "The retained host-pair question explicitly identifies the American Adventure as a US-history show. That premise supplies the country asked here; retain the additional host fact.",
+      "removedSnapshot": {
+        "id": 1161,
+        "question": "At EPCOT, The American Adventure pavilion tells the history of which country?",
+        "answers": [
+          "The United States",
+          "Canada",
+          "France",
+          "United Kingdom"
+        ],
+        "difficulty": "easy",
+        "category": "parks"
+      },
+      "retainedSnapshot": {
+        "id": 1365,
+        "question": "At EPCOT, The American Adventure features two Audio-Animatronic hosts guiding guests through US history. Who are they?",
+        "answers": [
+          "Benjamin Franklin and Mark Twain",
+          "George Washington and Thomas Jefferson",
+          "Abraham Lincoln and Theodore Roosevelt",
+          "Walt Disney and Abraham Lincoln"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      },
+      "challenge": "Read all four options on both questions. The retained question supplies the tested fact; no independent fact is needed to answer the retired question."
+    },
+    {
+      "retire": 1162,
+      "replacedBy": 1475,
+      "reason": "The retained Tiki Room identity question gives the 1963 Disneyland opening and the animatronics milestone. This is the same opening event in reverse, with the year already supplied.",
+      "removedSnapshot": {
+        "id": 1162,
+        "question": "In what year did Walt Disney's Enchanted Tiki Room open at Disneyland?",
+        "answers": [
+          "1963",
+          "1955",
+          "1967",
+          "1971"
+        ],
+        "difficulty": "hard",
+        "category": "parks"
+      },
+      "retainedSnapshot": {
+        "id": 1475,
+        "question": "At Disneyland, what Adventureland attraction opened in 1963 as the first Disney attraction to feature Audio-Animatronic figures and a cast of singing tropical birds?",
+        "answers": [
+          "The Enchanted Tiki Room",
+          "Jungle Cruise",
+          "Indiana Jones Adventure",
+          "Swiss Family Treehouse"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      },
+      "challenge": "Read all four options on both questions. The retained question supplies the tested fact; no independent fact is needed to answer the retired question."
+    },
+    {
+      "retire": 1177,
+      "replacedBy": 682,
+      "reason": "The retained D23-name question answers that 23 commemorates the studio founding in Hollywood in 1923. This standalone founding-year question repeats that fact.",
+      "removedSnapshot": {
+        "id": 1177,
+        "question": "In what year was the Disney Brothers Cartoon Studio founded?",
+        "answers": [
+          "1923",
+          "1928",
+          "1937",
+          "1955"
+        ],
+        "difficulty": "medium",
+        "category": "walt"
+      },
+      "retainedSnapshot": {
+        "id": 682,
+        "question": "What does the number 23 in Disney's D23 fan club name commemorate?",
+        "answers": [
+          "The studio's founding in Hollywood in 1923",
+          "The release of Disney's 23rd animated feature",
+          "Walt Disney's birthday falling on the 23rd",
+          "A group of 23 original Disney characters"
+        ],
+        "difficulty": "medium",
+        "category": "walt"
+      },
+      "challenge": "Read all four options on both questions. The retained question supplies the tested fact; no independent fact is needed to answer the retired question."
+    },
+    {
+      "retire": 1180,
+      "replacedBy": 1372,
+      "reason": "The retained wife-name question explicitly supplies the 1925 marriage date. Memorizing that premise answers this inverse date question.",
+      "removedSnapshot": {
+        "id": 1180,
+        "question": "In what year did Walt Disney marry Lillian Bounds?",
+        "answers": [
+          "1925",
+          "1923",
+          "1928",
+          "1932"
+        ],
+        "difficulty": "hard",
+        "category": "walt"
+      },
+      "retainedSnapshot": {
+        "id": 1372,
+        "question": "What was the first name of Walt Disney's wife, who he married in 1925 and who remained by his side until his death?",
+        "answers": [
+          "Lillian",
+          "Ruth",
+          "Flora",
+          "Edna"
+        ],
+        "difficulty": "medium",
+        "category": "walt"
+      },
+      "challenge": "Read all four options on both questions. The retained question supplies the tested fact; no independent fact is needed to answer the retired question."
+    },
+    {
+      "retire": 1186,
+      "replacedBy": 129,
+      "reason": "Both test Carolwood as the identifying name of Walt backyard railway. Of the street options only Carolwood matches the retained railroad identity; retain the complete railway-name question.",
+      "removedSnapshot": {
+        "id": 1186,
+        "question": "What street inspired the name of Walt Disney's backyard railroad?",
+        "answers": [
+          "Carolwood Drive",
+          "Hyperion Avenue",
+          "Buena Vista Street",
+          "Marceline Road"
+        ],
+        "difficulty": "medium",
+        "category": "walt"
+      },
+      "retainedSnapshot": {
+        "id": 129,
+        "question": "What was the name of Walt Disney's miniature backyard railroad in Holmby Hills?",
+        "answers": [
+          "Carolwood Pacific Railroad",
+          "Disney Home Railway",
+          "Lilly Belle Express",
+          "Riverside Train"
+        ],
+        "difficulty": "medium",
+        "category": "walt"
+      },
+      "challenge": "Read all four options on both questions. The retained question supplies the tested fact; no independent fact is needed to answer the retired question."
+    },
+    {
+      "retire": 1196,
+      "replacedBy": 1197,
+      "reason": "Both concern the same first cartoon Oscar awarded to Flowers and Trees. The category question offers only one cartoon category for the same short-film award event; retain the direct first-competitive-award identity question.",
+      "removedSnapshot": {
+        "id": 1196,
+        "question": "Flowers and Trees won the first Academy Award in which short-film category?",
+        "answers": [
+          "Cartoon Short Subject",
+          "Live Action Short Subject",
+          "Documentary Short Subject",
+          "Animated Feature"
+        ],
+        "difficulty": "hard",
+        "category": "walt"
+      },
+      "retainedSnapshot": {
+        "id": 1197,
+        "question": "Which Disney short gave Walt Disney his first competitive Academy Award?",
+        "answers": [
+          "Flowers and Trees",
+          "Steamboat Willie",
+          "The Skeleton Dance",
+          "The Old Mill"
+        ],
+        "difficulty": "hard",
+        "category": "walt"
+      },
+      "challenge": "Read all four options on both questions. The retained question supplies the tested fact; no independent fact is needed to answer the retired question."
+    }
+  ]
+}

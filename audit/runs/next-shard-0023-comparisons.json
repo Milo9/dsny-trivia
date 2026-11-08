@@ -1,0 +1,158 @@
+[
+  {
+    "questionId": 1206,
+    "replacedBy": 1388,
+    "question": {
+      "id": 1206,
+      "question": "Which songwriting brothers wrote many songs for Mary Poppins?",
+      "answers": [
+        "Robert and Richard Sherman",
+        "Alan and Howard Menken",
+        "Elton and Tim Rice",
+        "Frank and Ollie Thomas"
+      ],
+      "difficulty": "medium",
+      "category": "walt"
+    },
+    "replacement": {
+      "id": 1388,
+      "question": "Which American songwriting brothers wrote beloved songs for both The Jungle Book and Mary Poppins while working at Disney in the 1960s?",
+      "answers": [
+        "Richard M. Sherman and Robert B. Sherman",
+        "Elton John and Tim Rice",
+        "Alan Menken and Howard Ashman",
+        "Phil Collins and Genesis"
+      ],
+      "difficulty": "hard",
+      "category": "music"
+    },
+    "reason": "Same Sherman brothers Mary Poppins songwriting fact; broader film-pair prompt retained.",
+    "reviewer": "Codex",
+    "at": "2026-11-08"
+  },
+  {
+    "questionId": 1212,
+    "replacedBy": 977,
+    "question": {
+      "id": 1212,
+      "question": "On Castaway Cay, what barbecue restaurant serves guests near the family beaches?",
+      "answers": [
+        "Cookie's BBQ",
+        "Cabanas",
+        "Marceline Market",
+        "Flo's Cafe"
+      ],
+      "difficulty": "medium",
+      "category": "cruise"
+    },
+    "replacement": {
+      "id": 977,
+      "question": "At Castaway Cay, which beach is served by Cookie's BBQ?",
+      "answers": [
+        "Family Beach",
+        "Serenity Bay",
+        "Pelican Point",
+        "Scuttle's Cove"
+      ],
+      "difficulty": "easy",
+      "category": "cruise"
+    },
+    "reason": "Same Cookie BBQ and Family Beach relationship in reverse.",
+    "reviewer": "Codex",
+    "at": "2026-11-08"
+  },
+  {
+    "questionId": 1235,
+    "replacedBy": 765,
+    "question": {
+      "id": 1235,
+      "question": "On the Disney Magic, which rotational restaurant is named for Beauty and the Beast's candelabra?",
+      "answers": [
+        "Lumiere's",
+        "Triton's",
+        "Animator's Palate",
+        "Royal Court"
+      ],
+      "difficulty": "medium",
+      "category": "cruise"
+    },
+    "replacement": {
+      "id": 765,
+      "question": "In Beauty and the Beast, what enchanted object is the French ma\u00c3\u00aetre d' Lumiere?",
+      "answers": [
+        "A candelabra",
+        "A clock",
+        "A teapot",
+        "A feather duster"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "reason": "Knowing Lumiere is the candelabra directly selects the restaurant without new knowledge.",
+    "reviewer": "Codex",
+    "at": "2026-11-08"
+  },
+  {
+    "questionId": 1239,
+    "replacedBy": 41,
+    "question": {
+      "id": 1239,
+      "question": "On the Disney Wonder, which rotational restaurant is named for Ariel's father?",
+      "answers": [
+        "Triton's",
+        "Lumiere's",
+        "Animator's Palate",
+        "Royal Palace"
+      ],
+      "difficulty": "medium",
+      "category": "cruise"
+    },
+    "replacement": {
+      "id": 41,
+      "question": "In The Little Mermaid, what is the name of Ariel's father?",
+      "answers": [
+        "King Triton",
+        "King Neptune",
+        "King Poseidon",
+        "King Oceanus"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    },
+    "reason": "Knowing Ariel father is King Triton directly selects the restaurant without new knowledge.",
+    "reviewer": "Codex",
+    "at": "2026-11-08"
+  },
+  {
+    "questionId": 1245,
+    "replacedBy": 1326,
+    "question": {
+      "id": 1245,
+      "question": "In Alice in Wonderland, what song is performed at the Mad Tea Party?",
+      "answers": [
+        "The Unbirthday Song",
+        "The Caucus Race",
+        "Painting the Roses Red",
+        "All in the Golden Afternoon"
+      ],
+      "difficulty": "medium",
+      "category": "music"
+    },
+    "replacement": {
+      "id": 1326,
+      "question": "In Alice in Wonderland, who hosts the famous 'unbirthday' tea party that Alice stumbles upon in the forest?",
+      "answers": [
+        "The Mad Hatter and the March Hare",
+        "The Queen of Hearts and the White Rabbit",
+        "Tweedledee and Tweedledum",
+        "The Caterpillar and the Cheshire Cat"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    },
+    "reason": "The unbirthday tea party and its hosts are the same relationship; #1326 explicitly supplies unbirthday in its stem, directly answering #1245 music prompt.",
+    "reviewer": "Codex",
+    "at": "2026-11-08",
+    "evidence": "https://d23.com/a-to-z/alice-in-wonderland-film/"
+  }
+]

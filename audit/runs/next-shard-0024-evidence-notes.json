@@ -1,0 +1,2766 @@
+{
+  "schema": 1,
+  "reviewer": "Codex",
+  "at": "2026-11-08",
+  "sourcesChecked": [
+    "b10-toy4",
+    "b15-827-1",
+    "b19-1005",
+    "b19-1008",
+    "b19-1009",
+    "b19-1010",
+    "b19-1011",
+    "b19-1012",
+    "b19-1015",
+    "b19-1016",
+    "b19-1024",
+    "b24-abuelita",
+    "b24-aladdin",
+    "b24-alberto",
+    "b24-allinol",
+    "b24-baby",
+    "b24-bear",
+    "b24-bonnie",
+    "b24-boot",
+    "b24-bugs",
+    "b24-bullseye",
+    "b24-cars",
+    "b24-colors",
+    "b24-crystal",
+    "b24-dad",
+    "b24-dean",
+    "b24-dug",
+    "b24-duke",
+    "b24-elena",
+    "b24-embarrassment",
+    "b24-fireplace",
+    "b24-groove",
+    "b24-groove-interview",
+    "b24-hunchback",
+    "b24-hunchback-author",
+    "b24-immortals",
+    "b24-ming",
+    "b24-motel",
+    "b24-mulan",
+    "b24-nemo",
+    "b24-pocahontas",
+    "b24-randall",
+    "b24-range",
+    "b24-rat",
+    "b24-sealions",
+    "b24-spot",
+    "b24-storm",
+    "b24-tarzan",
+    "b24-toy-types",
+    "b24-toys",
+    "b24-winston",
+    "b24-wish",
+    "b24-wish-context",
+    "b24-zootopia"
+  ],
+  "reviews": [
+    {
+      "questionId": 1256,
+      "hash": "b1f74e638b3b8513ca33ad93d6f4a3f286771881565a9c234f18314eccab3c42",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. The first cave summons leads into Genie service demonstration.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The first cave summons leads into Genie service demonstration.",
+        "sources": [
+          "b24-aladdin",
+          "b19-1005"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Friend Like Me is that first demonstration.",
+          "sources": [
+            "b24-aladdin",
+            "b19-1005"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Prince Ali is the later royal parade, not the cave introduction.",
+          "sources": [
+            "b24-aladdin",
+            "b19-1005"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "One Jump Ahead is Aladdin marketplace escape.",
+          "sources": [
+            "b24-aladdin",
+            "b19-1005"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Arabian Nights introduces the film before Aladdin summons Genie.",
+          "sources": [
+            "b24-aladdin",
+            "b19-1005"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Prince Ali is the later royal parade, not the cave introduction. One Jump Ahead is Aladdin marketplace escape. Arabian Nights introduces the film before Aladdin summons Genie. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1257,
+      "hash": "b2273736812a76d4b77888dc607eac0bf532ee72f87116595bf4b30eda993435",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. Grandmother Willow gives spiritual guidance through a specific song.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Grandmother Willow gives spiritual guidance through a specific song.",
+        "sources": [
+          "b24-pocahontas",
+          "b15-827-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Listen with Your Heart is sung during Willow guidance.",
+          "sources": [
+            "b24-pocahontas",
+            "b15-827-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Colors of the Wind is Pocahontas lesson to John Smith, not Willow counsel.",
+          "sources": [
+            "b24-pocahontas",
+            "b15-827-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Just Around the Riverbend is Pocahontas own solo before consulting Willow.",
+          "sources": [
+            "b24-pocahontas",
+            "b15-827-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mine Mine Mine accompanies the settlers gold quest.",
+          "sources": [
+            "b24-pocahontas",
+            "b15-827-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Colors of the Wind is Pocahontas lesson to John Smith, not Willow counsel. Just Around the Riverbend is Pocahontas own solo before consulting Willow. Mine Mine Mine accompanies the settlers gold quest. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1258,
+      "hash": "81bfddab9e8bcb96cdf5311d0c7ca6054a759ae81be5265916d74fb8fd5aada4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. The 1996 film has Esmeralda prayer after seeking cathedral sanctuary.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 1996 film has Esmeralda prayer after seeking cathedral sanctuary.",
+        "sources": [
+          "b24-hunchback",
+          "b24-hunchback-author",
+          "b19-1008"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "God Help the Outcasts is Esmeralda prayer for others.",
+          "sources": [
+            "b24-hunchback",
+            "b24-hunchback-author",
+            "b19-1008"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Out There is Quasimodo wish to experience the outside world.",
+          "sources": [
+            "b24-hunchback",
+            "b24-hunchback-author",
+            "b19-1008"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Heavens Light is Quasimodo romantic hope, not Esmeralda prayer.",
+          "sources": [
+            "b24-hunchback",
+            "b24-hunchback-author",
+            "b19-1008"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Topsy Turvy is the Feast of Fools celebration.",
+          "sources": [
+            "b24-hunchback",
+            "b24-hunchback-author",
+            "b19-1008"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Out There is Quasimodo wish to experience the outside world. Heavens Light is Quasimodo romantic hope, not Esmeralda prayer. Topsy Turvy is the Feast of Fools celebration. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1259,
+      "hash": "07b51fcb539c8b0fb3233236afed258265c01810b0fe3732cfdd39cd5128521a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. Phil trains Hercules with his own musical number.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Phil trains Hercules with his own musical number.",
+        "sources": [
+          "b19-1009"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "One Last Hope is Phil training number.",
+          "sources": [
+            "b19-1009"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Go the Distance is Hercules aspiration song, not Phil training performance.",
+          "sources": [
+            "b19-1009"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Zero to Hero is the Muses fame montage, not Phil lesson.",
+          "sources": [
+            "b19-1009"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A Star Is Born is the Muses finale.",
+          "sources": [
+            "b19-1009"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Go the Distance is Hercules aspiration song, not Phil training performance. Zero to Hero is the Muses fame montage, not Phil lesson. A Star Is Born is the Muses finale. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1260,
+      "hash": "e0890731c5b363943dcb89c13ab264f9a6f7306051e85298ba32c7a5d4e1e076",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. Marching soldiers describe the partners they hope to return to.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Marching soldiers describe the partners they hope to return to.",
+        "sources": [
+          "b24-mulan",
+          "b19-1010"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "A Girl Worth Fighting For is the marching ideal-partner number.",
+          "sources": [
+            "b24-mulan",
+            "b19-1010"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ill Make a Man Out of You belongs to training, not this march.",
+          "sources": [
+            "b24-mulan",
+            "b19-1010"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Honor to Us All accompanies the Matchmaker preparations.",
+          "sources": [
+            "b24-mulan",
+            "b19-1010"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Reflection is Mulan private identity lament.",
+          "sources": [
+            "b24-mulan",
+            "b19-1010"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Ill Make a Man Out of You belongs to training, not this march. Honor to Us All accompanies the Matchmaker preparations. Reflection is Mulan private identity lament. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1261,
+      "hash": "1eb6921f801276e3c65982b7ff05161ac960d76ee2c9df5ee1dc4e716cc520e5",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. Tarzan childhood-to-adult growth montage has a distinct Collins song.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Tarzan childhood-to-adult growth montage has a distinct Collins song.",
+        "sources": [
+          "b19-1011",
+          "b24-tarzan"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Son of Man accompanies his growth and learning jungle skills.",
+          "sources": [
+            "b19-1011",
+            "b24-tarzan"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Two Worlds accompanies the opening family montage.",
+          "sources": [
+            "b19-1011",
+            "b24-tarzan"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Strangers Like Me accompanies learning about humans with Jane.",
+          "sources": [
+            "b19-1011",
+            "b24-tarzan"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Youll Be in My Heart is the comforting bond song, not the growing-up montage.",
+          "sources": [
+            "b19-1011",
+            "b24-tarzan"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Two Worlds accompanies the opening family montage. Strangers Like Me accompanies learning about humans with Jane. Youll Be in My Heart is the comforting bond song, not the growing-up montage. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1262,
+      "hash": "e03123cae10f19fe4423e565fff77d3b7542776b40b9576152058ce373bd84ef",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. Tom Jones introduces Kuzco in the opening number of the finished film.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Tom Jones introduces Kuzco in the opening number of the finished film.",
+        "sources": [
+          "b24-groove",
+          "b24-groove-interview",
+          "b19-1012"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Perfect World is the Tom Jones opening.",
+          "sources": [
+            "b24-groove",
+            "b24-groove-interview",
+            "b19-1012"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "My Funny Friend and Me is Sting end-title song.",
+          "sources": [
+            "b24-groove",
+            "b24-groove-interview",
+            "b19-1012"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Snuff Out the Light is soundtrack material from the abandoned musical, not the finished opening.",
+          "sources": [
+            "b24-groove",
+            "b24-groove-interview",
+            "b19-1012"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "One Day Shell Love Me is another unused soundtrack song.",
+          "sources": [
+            "b24-groove",
+            "b24-groove-interview",
+            "b19-1012"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: My Funny Friend and Me is Sting end-title song. Snuff Out the Light is soundtrack material from the abandoned musical, not the finished opening. One Day Shell Love Me is another unused soundtrack song. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1263,
+      "hash": "95302eac032417981cfdef1485b50f0003b771bfa838fa4ea47146561dc72133",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. The bounded travel montage has Koda singing and the bears riding mammoths.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The bounded travel montage has Koda singing and the bears riding mammoths.",
+        "sources": [
+          "b24-bear"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "On My Way accompanies this travel montage.",
+          "sources": [
+            "b24-bear"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Look Through My Eyes is not the number transcribed across this mammoth-travel sequence.",
+          "sources": [
+            "b24-bear"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "No Way Out accompanies Kenai later confession about Koda mother.",
+          "sources": [
+            "b24-bear"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Great Spirits is the opening spiritual number.",
+          "sources": [
+            "b24-bear"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Look Through My Eyes is not the number transcribed across this mammoth-travel sequence. No Way Out accompanies Kenai later confession about Koda mother. Great Spirits is the opening spiritual number. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1264,
+      "hash": "a5b532aba2c0a160cc6b96d027d9a399b9686e12f187fcdb0c1a4539f0174266",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. The early musical tour presents the farm as an idyllic home.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The early musical tour presents the farm as an idyllic home.",
+        "sources": [
+          "b24-range"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Little Patch of Heaven introduces that dairy farm.",
+          "sources": [
+            "b24-range"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Will the Sun Ever Shine Again is the later sad number after the cows quarrel.",
+          "sources": [
+            "b24-range"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Yodel-Adle-Eedle-Idle-Oo is Slim cattle-hypnosis performance.",
+          "sources": [
+            "b24-range"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wherever the Trail May Lead is the end-title journey song.",
+          "sources": [
+            "b24-range"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Will the Sun Ever Shine Again is the later sad number after the cows quarrel. Yodel-Adle-Eedle-Idle-Oo is Slim cattle-hypnosis performance. Wherever the Trail May Lead is the end-title journey song. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1266,
+      "hash": "f2acdbb3ddf6732e4da95084ed5eb8c0c2bcc4c207d52cc621033bf3877c9c2f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. The tavern patrons reveal their dreams in an ensemble number.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The tavern patrons reveal their dreams in an ensemble number.",
+        "sources": [
+          "b19-1015"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Ive Got a Dream is the tavern ambitions song.",
+          "sources": [
+            "b19-1015"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mother Knows Best is Gothel warning to Rapunzel.",
+          "sources": [
+            "b19-1015"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "When Will My Life Begin introduces Rapunzel tower routine.",
+          "sources": [
+            "b19-1015"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "I See the Light is the later lantern duet.",
+          "sources": [
+            "b19-1015"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Mother Knows Best is Gothel warning to Rapunzel. When Will My Life Begin introduces Rapunzel tower routine. I See the Light is the later lantern duet. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1267,
+      "hash": "5cd5846ad8f0c7d7cb55c2e1adf7f3634847c79f9e425136fcdff7b63def2386",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. Anna childhood attempts to reconnect at Elsa door have their own song.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Anna childhood attempts to reconnect at Elsa door have their own song.",
+        "sources": [
+          "b19-1016"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Do You Want to Build a Snowman is the childhood door sequence.",
+          "sources": [
+            "b19-1016"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "For the First Time in Forever concerns the coronation opening and later adult reprise.",
+          "sources": [
+            "b19-1016"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Love Is an Open Door is Anna and Hans romantic duet.",
+          "sources": [
+            "b19-1016"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fixer Upper is the trolls matchmaking song.",
+          "sources": [
+            "b19-1016"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: For the First Time in Forever concerns the coronation opening and later adult reprise. Love Is an Open Door is Anna and Hans romantic duet. Fixer Upper is the trolls matchmaking song. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1268,
+      "hash": "8f45f0e4faf22f0c0fca81380a95786588fe73968b425960b58f6ecfcabba4cc",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. The label and band describe a commission for the team training sequence.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The label and band describe a commission for the team training sequence.",
+        "sources": [
+          "b24-immortals"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Immortals was commissioned for that super-suit montage.",
+          "sources": [
+            "b24-immortals"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Centuries is a different Fall Out Boy recording, not the commissioned montage song.",
+          "sources": [
+            "b24-immortals"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "My Songs Know What You Did in the Dark is a different song, not the labeled scene recording.",
+          "sources": [
+            "b24-immortals"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Phoenix is a separate title, not the original song identified for this montage.",
+          "sources": [
+            "b24-immortals"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Centuries is a different Fall Out Boy recording, not the commissioned montage song. My Songs Know What You Did in the Dark is a different song, not the labeled scene recording. The Phoenix is a separate title, not the original song identified for this montage. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1269,
+      "hash": "b99e204fc2644da977f2032570c9ae4da77316fe25f6d1944e6ebd484f205467",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. The 2016 film orchestral score has an identified composer.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 2016 film orchestral score has an identified composer.",
+        "sources": [
+          "b24-zootopia"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Giacchino describes composing the score and main theme himself.",
+          "sources": [
+            "b24-zootopia"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Menken is not the credited composer of this score.",
+          "sources": [
+            "b24-zootopia"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Newton Howard is not the credited composer of this score.",
+          "sources": [
+            "b24-zootopia"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jackman is not the credited composer of this score.",
+          "sources": [
+            "b24-zootopia"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Menken is not the credited composer of this score. Newton Howard is not the credited composer of this score. Jackman is not the credited composer of this score. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1270,
+      "hash": "5a160d605b2427b2c2f416b76ad1f51564a78785e466b82609f44e31b6c8957d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. Asha solo expresses her hope for the people of Rosas.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Asha solo expresses her hope for the people of Rosas.",
+        "sources": [
+          "b24-wish",
+          "b24-wish-context"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "This Wish is Asha solo wishing for that future.",
+          "sources": [
+            "b24-wish",
+            "b24-wish-context"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Im a Star is the forest ensemble, not her solitary appeal.",
+          "sources": [
+            "b24-wish",
+            "b24-wish-context"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Knowing What I Know Now is the later resistance ensemble with Amaya.",
+          "sources": [
+            "b24-wish",
+            "b24-wish-context"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "At All Costs is Asha and Magnifico duet, not this solo.",
+          "sources": [
+            "b24-wish",
+            "b24-wish-context"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Im a Star is the forest ensemble, not her solitary appeal. Knowing What I Know Now is the later resistance ensemble with Amaya. At All Costs is Asha and Magnifico duet, not this solo. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1271,
+      "hash": "7aa6879aaaaa9f077850436393ea36d09b68abcaef54f7c18ff9c2bb28237b71",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. Slinky stretches between the truck and Woody during the chase.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Slinky stretches between the truck and Woody during the chase.",
+        "sources": [
+          "b24-toys",
+          "b24-toy-types"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Slinky Dog is the stretching toy reaching from the truck.",
+          "sources": [
+            "b24-toys",
+            "b24-toy-types"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Buzz is a space-ranger figure riding RC, not the stretchy helper.",
+          "sources": [
+            "b24-toys",
+            "b24-toy-types"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "RC is the remote-control car carrying them, not the stretchy dog.",
+          "sources": [
+            "b24-toys",
+            "b24-toy-types"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rex is the dinosaur helping at the truck, not the spring-bodied toy.",
+          "sources": [
+            "b24-toys",
+            "b24-toy-types"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Buzz is a space-ranger figure riding RC, not the stretchy helper. RC is the remote-control car carrying them, not the stretchy dog. Rex is the dinosaur helping at the truck, not the spring-bodied toy. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1272,
+      "hash": "3170b21fce889f336a7a2754d134194498ac4497c648287c03a73a4bc51c2c0f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. Atta, unlike the younger princess Dot, is preparing to inherit the throne.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Atta, unlike the younger princess Dot, is preparing to inherit the throne.",
+        "sources": [
+          "b24-bugs"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Princess Atta is the Queen designated successor.",
+          "sources": [
+            "b24-bugs"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dot is also a princess, but is the younger daughter rather than the preparing successor.",
+          "sources": [
+            "b24-bugs"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Queen Elinor is not the named ant princess succeeding this Queen.",
+          "sources": [
+            "b24-bugs"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Princess Eilonwy is not the named ant princess succeeding this Queen.",
+          "sources": [
+            "b24-bugs"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Dot is also a princess, but is the younger daughter rather than the preparing successor. Queen Elinor is not the named ant princess succeeding this Queen. Princess Eilonwy is not the named ant princess succeeding this Queen. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1273,
+      "hash": "752001c0ab1e261b70f520e24064e0977e05e1e169f9a714a8c0f40d11c2ebdf",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. The horse in the Roundup group has a specific name.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The horse in the Roundup group has a specific name.",
+        "sources": [
+          "b24-bullseye"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Bullseye is the horse ridden by Woody.",
+          "sources": [
+            "b24-bullseye"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Buster is not the Roundup horse named in the synopsis.",
+          "sources": [
+            "b24-bullseye"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Buttercup is not the Roundup horse named in the synopsis.",
+          "sources": [
+            "b24-bullseye"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bongo is not the Roundup horse named in the synopsis.",
+          "sources": [
+            "b24-bullseye"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Buster is not the Roundup horse named in the synopsis. Buttercup is not the Roundup horse named in the synopsis. Bongo is not the Roundup horse named in the synopsis. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1274,
+      "hash": "e823834f1789a107535c5d35c771b651b94956a88ee0bb52a9f62718a62a1148",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. The question names the mechanism of chameleon-like background matching.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The question names the mechanism of chameleon-like background matching.",
+        "sources": [
+          "b24-randall"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Camouflage names the described background-matching mechanism.",
+          "sources": [
+            "b24-randall"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Echolocation is sensing via echoes, not changing appearance to match a background.",
+          "sources": [
+            "b24-randall"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bioluminescence means light production, not the name of Randall background matching.",
+          "sources": [
+            "b24-randall"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hypnosis affects an observer mind rather than naming the chameleon mechanism.",
+          "sources": [
+            "b24-randall"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Echolocation is sensing via echoes, not changing appearance to match a background. Bioluminescence means light production, not the name of Randall background matching. Hypnosis affects an observer mind rather than naming the chameleon mechanism. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1275,
+      "hash": "9addc72bafeac8896458afda5bf0142409202957eb5e1bda6dcc75d3e396c719",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. The turtle parent carries Marlin in the current.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The turtle parent carries Marlin in the current.",
+        "sources": [
+          "b24-nemo"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Crush is the adult parent in this current scene.",
+          "sources": [
+            "b24-nemo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Squirt is his young offspring, excluded by adult.",
+          "sources": [
+            "b24-nemo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Nigel is a pelican, not a sea turtle.",
+          "sources": [
+            "b24-nemo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gill is an aquarium fish, not a sea turtle.",
+          "sources": [
+            "b24-nemo"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Squirt is his young offspring, excluded by adult. Nigel is a pelican, not a sea turtle. Gill is an aquarium fish, not a sea turtle. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1276,
+      "hash": "252a51d2dd49d2a66f697d666f3c5f51a21d252372bb35ef303c448087876867",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. The original Parr family has an identified baby.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The original Parr family has an identified baby.",
+        "sources": [
+          "b24-baby"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Jack-Jack is the baby in the Pixar profile.",
+          "sources": [
+            "b24-baby"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dash is the older boy, not this baby.",
+          "sources": [
+            "b24-baby"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Buddy is not the baby identified in the Parr family.",
+          "sources": [
+            "b24-baby"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tony is not the baby identified in the Parr family.",
+          "sources": [
+            "b24-baby"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Dash is the older boy, not this baby. Buddy is not the baby identified in the Parr family. Tony is not the baby identified in the Parr family. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1277,
+      "hash": "a859a08c2d1cc9fc5896630eb1719a8d6bba425c3b27ad6653a4e489a546d6c1",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. Sally the Porsche offers rooms at the Cozy Cone.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Sally the Porsche offers rooms at the Cozy Cone.",
+        "sources": [
+          "b24-cars",
+          "b24-motel"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Sally Carrera is the Porsche running the motel.",
+          "sources": [
+            "b24-cars",
+            "b24-motel"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Flo is not the Porsche offering Cozy Cone rooms in this scene.",
+          "sources": [
+            "b24-cars",
+            "b24-motel"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lizzie is not the Porsche offering Cozy Cone rooms in this scene.",
+          "sources": [
+            "b24-cars",
+            "b24-motel"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mia is not the Porsche offering Cozy Cone rooms in this scene.",
+          "sources": [
+            "b24-cars",
+            "b24-motel"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Flo is not the Porsche offering Cozy Cone rooms in this scene. Lizzie is not the Porsche offering Cozy Cone rooms in this scene. Mia is not the Porsche offering Cozy Cone rooms in this scene. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1278,
+      "hash": "d42acec200dc5171fad8fd447afb7a445e187d22b258904dce1b9a0716e70b97",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. Skinner initially runs the kitchen after Gusteau death.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Skinner initially runs the kitchen after Gusteau death.",
+        "sources": [
+          "b24-rat"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Head chef matches chef in charge at Linguini arrival.",
+          "sources": [
+            "b24-rat"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Food critic is Ego role, not Skinner.",
+          "sources": [
+            "b24-rat"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Waiter is not his chef-in-charge position.",
+          "sources": [
+            "b24-rat"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Garbage boy is Linguini initial job, not Skinner.",
+          "sources": [
+            "b24-rat"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Food critic is Ego role, not Skinner. Waiter is not his chef-in-charge position. Garbage boy is Linguini initial job, not Skinner. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1279,
+      "hash": "bcc75d6369b7eaf85c204531a0bb0b75939bf52437d70c5a544325df3570f719",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. The early work-site scene shows what directly holds the seedling.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The early work-site scene shows what directly holds the seedling.",
+        "sources": [
+          "b24-boot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "A boot is used to pot the plant.",
+          "sources": [
+            "b24-boot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A lunchbox is a separate collection container; it is not the planter.",
+          "sources": [
+            "b24-boot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A flowerpot is not the object used in the scene.",
+          "sources": [
+            "b24-boot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A toolbox is not the object used as the planter.",
+          "sources": [
+            "b24-boot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: A lunchbox is a separate collection container; it is not the planter. A flowerpot is not the object used in the scene. A toolbox is not the object used as the planter. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1280,
+      "hash": "247a6d26c586d47a954c9845daa6199210f80b5263642828ea867e2a7b009b11",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. Dug thoughts become human speech through an identified device.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Dug thoughts become human speech through an identified device.",
+        "sources": [
+          "b24-dug"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "A special collar is Pixar stated translation device.",
+          "sources": [
+            "b24-dug"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A magic badge is not the device translating his thoughts.",
+          "sources": [
+            "b24-dug"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A translator hat is not the specified collar.",
+          "sources": [
+            "b24-dug"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A radio backpack is not the device he wears for speech.",
+          "sources": [
+            "b24-dug"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: A magic badge is not the device translating his thoughts. A translator hat is not the specified collar. A radio backpack is not the device he wears for speech. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1281,
+      "hash": "ca61d20184c4416503b0b850f4f9b65fb9955919135fcb6ffd1ea12492d990db",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. Andy transfers his toys to a new child at the end of the third film.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Andy transfers his toys to a new child at the end of the third film.",
+        "sources": [
+          "b24-bonnie",
+          "b10-toy4"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Bonnie is the child receiving them.",
+          "sources": [
+            "b24-bonnie",
+            "b10-toy4"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Molly remains Andy sister, not the recipient of this gift.",
+          "sources": [
+            "b24-bonnie",
+            "b10-toy4"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sid is not the child receiving the box at Bonnie house.",
+          "sources": [
+            "b24-bonnie",
+            "b10-toy4"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Daisy is not the recipient at Bonnie house.",
+          "sources": [
+            "b24-bonnie",
+            "b10-toy4"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Molly remains Andy sister, not the recipient of this gift. Sid is not the child receiving the box at Bonnie house. Daisy is not the recipient at Bonnie house. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1282,
+      "hash": "5c4879cb6cbbf0c7b341fa3d029d0a20e85ba38f8be4e211659632f1b61d5609",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. Axlerod promotes a named new fuel through his race.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Axlerod promotes a named new fuel through his race.",
+        "sources": [
+          "b24-allinol"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Allinol is his new wonder-fuel.",
+          "sources": [
+            "b24-allinol"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rust-eze is not the named fuel he promotes in this event.",
+          "sources": [
+            "b24-allinol"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dinoco is not the named Allinol product.",
+          "sources": [
+            "b24-allinol"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Octane Gain is not the named fuel introduced by Axlerod.",
+          "sources": [
+            "b24-allinol"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Rust-eze is not the named fuel he promotes in this event. Dinoco is not the named Allinol product. Octane Gain is not the named fuel introduced by Axlerod. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1283,
+      "hash": "484269c23710b8d5b6fb73cf43915cfe086d40dc336429ebefc57573966dc481",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. The School of Scaring has a specifically identified dean.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The School of Scaring has a specifically identified dean.",
+        "sources": [
+          "b24-dean"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Dean Hardscrabble holds the position.",
+          "sources": [
+            "b24-dean"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dean Roar is not the dean identified by Pixar.",
+          "sources": [
+            "b24-dean"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Squibbles is a student, not this dean.",
+          "sources": [
+            "b24-dean"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Waternoose is not the dean identified in this prequel.",
+          "sources": [
+            "b24-dean"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Dean Roar is not the dean identified by Pixar. Squibbles is a student, not this dean. Waternoose is not the dean identified in this prequel. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1284,
+      "hash": "a2c426d7ec882ae5b73ec17632c40136f0fbdff5c3ff72a0d2e610661a9e9c0c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. The original film uses distinct colors for its emotion characters.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The original film uses distinct colors for its emotion characters.",
+        "sources": [
+          "b24-colors"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disgust is green.",
+          "sources": [
+            "b24-colors"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fear is purple rather than green.",
+          "sources": [
+            "b24-colors"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Anger is red rather than green.",
+          "sources": [
+            "b24-colors"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Joy is yellow rather than green.",
+          "sources": [
+            "b24-colors"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Fear is purple rather than green. Anger is red rather than green. Joy is yellow rather than green. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1285,
+      "hash": "e614335aa5fd42c705c28224e31c1ed20060c3a6755dae10ddd792c5c51bf200",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. Arlo human companion has a unique name.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Arlo human companion has a unique name.",
+        "sources": [
+          "b24-spot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Spot is the human boy in the character description.",
+          "sources": [
+            "b24-spot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Buck is not the boy named Spot.",
+          "sources": [
+            "b24-spot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Forrest is not the boy named Spot.",
+          "sources": [
+            "b24-spot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Nash is a young T rex, not the human child.",
+          "sources": [
+            "b24-spot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Buck is not the boy named Spot. Forrest is not the boy named Spot. Nash is a young T rex, not the human child. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1286,
+      "hash": "7217526e5678d5cc0c5514d45e2369d46e699c894804728e621fe565c9cba2fe",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. Two named sea lions occupy the rock outside the Institute.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Two named sea lions occupy the rock outside the Institute.",
+        "sources": [
+          "b24-sealions",
+          "b24-nemo"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Fluke and Rudder are the two rock-occupying sea lions.",
+          "sources": [
+            "b24-sealions",
+            "b24-nemo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Crush and Squirt are sea turtles.",
+          "sources": [
+            "b24-sealions",
+            "b24-nemo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bailey and Destiny are a beluga and whale shark.",
+          "sources": [
+            "b24-sealions",
+            "b24-nemo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Anchor and Chum are sharks.",
+          "sources": [
+            "b24-sealions",
+            "b24-nemo"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Crush and Squirt are sea turtles. Bailey and Destiny are a beluga and whale shark. Anchor and Chum are sharks. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1287,
+      "hash": "a63072110169cdc82b3b5185eb08940c40ab24f31962505f7769f56bec6af983",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. Cars 3 introduces a next-generation challenger to McQueen.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Cars 3 introduces a next-generation challenger to McQueen.",
+        "sources": [
+          "b24-storm"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Jackson Storm is that next-generation rival.",
+          "sources": [
+            "b24-storm"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Chick Hicks is an earlier-generation rival, not Storm.",
+          "sources": [
+            "b24-storm"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Francesco Bernoulli is the international rival from Cars 2, not Storm.",
+          "sources": [
+            "b24-storm"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The King is a veteran racer, not this next-generation challenger.",
+          "sources": [
+            "b24-storm"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Chick Hicks is an earlier-generation rival, not Storm. Francesco Bernoulli is the international rival from Cars 2, not Storm. The King is a veteran racer, not this next-generation challenger. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1288,
+      "hash": "5939b95b70edf69e00484f9787c9a58b656cbf7e14713c391284b80b2174abac",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. Miguel grandmother is the strict Abuelita enforcing family rules.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Miguel grandmother is the strict Abuelita enforcing family rules.",
+        "sources": [
+          "b24-abuelita",
+          "b24-elena"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Abuelita Elena names that grandmother.",
+          "sources": [
+            "b24-abuelita",
+            "b24-elena"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mama Coco is his great-grandmother, not Abuelita.",
+          "sources": [
+            "b24-abuelita",
+            "b24-elena"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mama Imelda is his great-great-grandmother.",
+          "sources": [
+            "b24-abuelita",
+            "b24-elena"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tia Victoria is an aunt, not this grandmother.",
+          "sources": [
+            "b24-abuelita",
+            "b24-elena"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Mama Coco is his great-grandmother, not Abuelita. Mama Imelda is his great-great-grandmother. Tia Victoria is an aunt, not this grandmother. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1289,
+      "hash": "5a99778a2692a74163cd5fb09a69a708849cd5a5cd63288669d584244178c910",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. DevTech distinguishes public business leadership from technical invention.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "DevTech distinguishes public business leadership from technical invention.",
+        "sources": [
+          "b24-winston"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Winston is the public leader promoting Supers.",
+          "sources": [
+            "b24-winston"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Evelyn is the technical genius behind her brother company, not that public-facing leader.",
+          "sources": [
+            "b24-winston"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rick Dicker is not the named DevTech business leader.",
+          "sources": [
+            "b24-winston"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Screenslaver is the villain identity, not Winston public business role.",
+          "sources": [
+            "b24-winston"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Evelyn is the technical genius behind her brother company, not that public-facing leader. Rick Dicker is not the named DevTech business leader. Screenslaver is the villain identity, not Winston public business role. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1290,
+      "hash": "b8f4c676b385a4b26c274c275f4806ac8c3acef267e44a0c50b89f8057f3c5f5",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. A specific new toy is based on a Canadian stunt performer.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "A specific new toy is based on a Canadian stunt performer.",
+        "sources": [
+          "b24-duke"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Duke Caboom is the Canadian stuntman toy.",
+          "sources": [
+            "b24-duke"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Forky is a craft spork, not this stuntman.",
+          "sources": [
+            "b24-duke"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Combat Carl is not the named Canadian stuntman toy.",
+          "sources": [
+            "b24-duke"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Benson is not the named Canadian stuntman toy.",
+          "sources": [
+            "b24-duke"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Forky is a craft spork, not this stuntman. Combat Carl is not the named Canadian stuntman toy. Benson is not the named Canadian stuntman toy. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1291,
+      "hash": "117246bd8e10a61f555cb2eb6188c3fed00d8ba5c0a7b5ee6e3c6dd3488db929",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. The first attempted visitation restores only Dad bottom half.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The first attempted visitation restores only Dad bottom half.",
+        "sources": [
+          "b24-dad"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "His legs are the restored bottom half.",
+          "sources": [
+            "b24-dad"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "His head is in the missing upper half.",
+          "sources": [
+            "b24-dad"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "His hands are in the missing upper half.",
+          "sources": [
+            "b24-dad"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "His shadow is not the corporeal bottom half brought back.",
+          "sources": [
+            "b24-dad"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: His head is in the missing upper half. His hands are in the missing upper half. His shadow is not the corporeal bottom half brought back. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1293,
+      "hash": "1318dc14aa4600a4637554344e605e61be5151fece6ae40aefca1fc493a833b6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. The two sea-monster friends have distinct family names.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The two sea-monster friends have distinct family names.",
+        "sources": [
+          "b24-alberto"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Scorfano is Alberto surname.",
+          "sources": [
+            "b24-alberto"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Paguro belongs to Luca.",
+          "sources": [
+            "b24-alberto"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Marcovaldo belongs to Giulia.",
+          "sources": [
+            "b24-alberto"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Portorosso is the town name, not Alberto surname.",
+          "sources": [
+            "b24-alberto"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Paguro belongs to Luca. Marcovaldo belongs to Giulia. Portorosso is the town name, not Alberto surname. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1294,
+      "hash": "8d7d80228963c553994e0bdc4ebc081f589f7fb72a8fb0eab58538a0b75d9f6b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. Mei mother is identified as Ming.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Mei mother is identified as Ming.",
+        "sources": [
+          "b24-ming"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Ming Lee is her mother.",
+          "sources": [
+            "b24-ming"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jin Lee is her father.",
+          "sources": [
+            "b24-ming"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Abby is a peer and friend, not her mother.",
+          "sources": [
+            "b24-ming"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Priya is another peer and friend, not her mother.",
+          "sources": [
+            "b24-ming"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Jin Lee is her father. Abby is a peer and friend, not her mother. Priya is another peer and friend, not her mother. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1295,
+      "hash": "6ed8c8e1bf9a629718b088eee056f0ebef15b9b83f5519e2ef6cc65a7f495747",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. Buzz test flights use a specially prepared fuel crystal.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Buzz test flights use a specially prepared fuel crystal.",
+        "sources": [
+          "b24-crystal"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "A hyperspeed crystal is the fuel supplied for his tests.",
+          "sources": [
+            "b24-crystal"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A power stone is not the crystal fuel identified by Pixar.",
+          "sources": [
+            "b24-crystal"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A fuel rod is a different physical form, not the specified crystal.",
+          "sources": [
+            "b24-crystal"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A star battery is not the fuel source supplied for these flights.",
+          "sources": [
+            "b24-crystal"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: A power stone is not the crystal fuel identified by Pixar. A fuel rod is a different physical form, not the specified crystal. A star battery is not the fuel source supplied for these flights. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1296,
+      "hash": "b6f1788a821b6e9ddadef266557672be3ecbd9ff1391b5945d42093d4888d5a3",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. Pixar identifies the family shop through its designed sign.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar identifies the family shop through its designed sign.",
+        "sources": [
+          "b24-fireplace"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Fireplace is the shop sign name.",
+          "sources": [
+            "b24-fireplace"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Firetown Market is not the name on that shop sign.",
+          "sources": [
+            "b24-fireplace"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lumen Hearth is not the name on that shop sign.",
+          "sources": [
+            "b24-fireplace"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hot Stuff is not the name on that shop sign.",
+          "sources": [
+            "b24-fireplace"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Firetown Market is not the name on that shop sign. Lumen Hearth is not the name on that shop sign. Hot Stuff is not the name on that shop sign. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1297,
+      "hash": "c23c834717d91e34a64389cc4730a68542149f58f6aecc37b5c493daec2a5bd8",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. One newly introduced emotion combines large size, pink coloring and shyness.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "One newly introduced emotion combines large size, pink coloring and shyness.",
+        "sources": [
+          "b24-embarrassment"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Embarrassment has all three traits in Pixar description.",
+          "sources": [
+            "b24-embarrassment"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Envy is the small emotion, not the burly pink one.",
+          "sources": [
+            "b24-embarrassment"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ennui is the bored emotion, not the shy pink one.",
+          "sources": [
+            "b24-embarrassment"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Anxiety is energetic and worry-driven, not the quiet pink one.",
+          "sources": [
+            "b24-embarrassment"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Envy is the small emotion, not the burly pink one. Ennui is the bored emotion, not the shy pink one. Anxiety is energetic and worry-driven, not the quiet pink one. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1298,
+      "hash": "7d3c2df15e71a0d333845d2b7a82c8bcf59942c1c8f7bec7cf41b60657eb82c3",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. The chase uses RC as the remote-operated vehicle carrying Woody and Buzz.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The chase uses RC as the remote-operated vehicle carrying Woody and Buzz.",
+        "sources": [
+          "b24-toys",
+          "b24-toy-types"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "RC is the remote-control car in the chase.",
+          "sources": [
+            "b24-toys",
+            "b24-toy-types"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Slinky stretches from the truck; he is not the remote-control car.",
+          "sources": [
+            "b24-toys",
+            "b24-toy-types"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Buzz operates the remote while riding RC; he is not RC.",
+          "sources": [
+            "b24-toys",
+            "b24-toy-types"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hamm is a piggy bank, not the remotely operated vehicle.",
+          "sources": [
+            "b24-toys",
+            "b24-toy-types"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Slinky stretches from the truck; he is not the remote-control car. Buzz operates the remote while riding RC; he is not RC. Hamm is a piggy bank, not the remotely operated vehicle. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1299,
+      "hash": "90fdba0def7a49f774995e44fe32fd539c9d78188778ef96efc43c85a28aaea4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. Crush turtle offspring has a unique name.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Crush turtle offspring has a unique name.",
+        "sources": [
+          "b24-nemo",
+          "b19-1024"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Squirt is explicitly Crush offspring.",
+          "sources": [
+            "b24-nemo",
+            "b19-1024"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sheldon is not the offspring named Squirt.",
+          "sources": [
+            "b24-nemo",
+            "b19-1024"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tad is not the offspring named Squirt.",
+          "sources": [
+            "b24-nemo",
+            "b19-1024"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pearl is not the offspring named Squirt.",
+          "sources": [
+            "b24-nemo",
+            "b19-1024"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Sheldon is not the offspring named Squirt. Tad is not the offspring named Squirt. Pearl is not the offspring named Squirt. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    },
+    {
+      "questionId": 1300,
+      "hash": "4ccfd0c75ee97788deafd3ba37dce9dc8c15e389f332f8715a189e607d0990c7",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read all four options, full topic digests and cross-bank comparisons. Remy rat family distinguishes his brother from his father and human colleagues.",
+      "context": "Original English-language theatrical film; named sequel where specified. Bounded scene or character/credit identity as stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Remy rat family distinguishes his brother from his father and human colleagues.",
+        "sources": [
+          "b24-rat"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Emile is Remy brother.",
+          "sources": [
+            "b24-rat"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Linguini is the human kitchen partner, not a rat sibling.",
+          "sources": [
+            "b24-rat"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Django is Remy father, not brother.",
+          "sources": [
+            "b24-rat"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Skinner is the human head chef, not a rat sibling.",
+          "sources": [
+            "b24-rat"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separate final-wording challenge: Linguini is the human kitchen partner, not a rat sibling. Django is Remy father, not brother. Skinner is the human head chef, not a rat sibling. The cited scene/identity establishes the premise and only option 0 fits this bounded wording."
+      }
+    }
+  ]
+}

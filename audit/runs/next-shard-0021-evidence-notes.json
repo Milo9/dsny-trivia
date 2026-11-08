@@ -1,0 +1,3255 @@
+{
+  "schema": 1,
+  "reviewer": "Codex",
+  "at": "2026-11-08",
+  "sourcesChecked": [
+    "b12-sub",
+    "b16-882-extra-2",
+    "b20-1061",
+    "b21-1102-0",
+    "b21-1102-1",
+    "b21-1103-0",
+    "b21-1103-1",
+    "b21-1104-0",
+    "b21-1104-1",
+    "b21-1105-0",
+    "b21-1105-1",
+    "b21-1106-0",
+    "b21-1106-1",
+    "b21-1107-0",
+    "b21-1107-1",
+    "b21-1108-0",
+    "b21-1109-0",
+    "b21-1109-1",
+    "b21-1110-0",
+    "b21-1110-1",
+    "b21-1111-0",
+    "b21-1111-1",
+    "b21-1112-0",
+    "b21-1112-1",
+    "b21-1113-0",
+    "b21-1113-1",
+    "b21-1114-0",
+    "b21-1114-1",
+    "b21-1115-0",
+    "b21-1115-1",
+    "b21-1116-0",
+    "b21-1116-1",
+    "b21-1117-0",
+    "b21-1117-1",
+    "b21-1118-0",
+    "b21-1118-1",
+    "b21-1119-0",
+    "b21-1119-1",
+    "b21-1120-0",
+    "b21-1120-1",
+    "b21-1121-0",
+    "b21-1121-1",
+    "b21-1122-0",
+    "b21-1122-1",
+    "b21-1124-0",
+    "b21-1124-1",
+    "b21-1125-0",
+    "b21-1125-1",
+    "b21-1126-0",
+    "b21-1126-1",
+    "b21-1128-0",
+    "b21-1128-1",
+    "b21-1129-0",
+    "b21-1129-1",
+    "b21-1130-0",
+    "b21-1130-1",
+    "b21-1131-0",
+    "b21-1131-1",
+    "b21-1132-0",
+    "b21-1132-1",
+    "b21-1133-0",
+    "b21-1133-1",
+    "b21-1134-0",
+    "b21-1134-1",
+    "b21-1135-0",
+    "b21-1135-1",
+    "b21-1136-0",
+    "b21-1137-0",
+    "b21-1138-0",
+    "b21-1138-1",
+    "b21-1139-0",
+    "b21-1139-1",
+    "b21-1139-2",
+    "b21-1140-0",
+    "b21-1141-0",
+    "b21-1141-1",
+    "b21-1142-0",
+    "b21-1142-1",
+    "b21-1143-0",
+    "b21-1143-1",
+    "b21-1144-0",
+    "b21-1144-1",
+    "b21-1145-0",
+    "b21-1145-1",
+    "b21-1146-0",
+    "b21-1147-0",
+    "b21-1147-1",
+    "b21-1148-0",
+    "b21-1148-1",
+    "b21-1149-0",
+    "b21-1151-0",
+    "b21-1152-0",
+    "b21-1152-1"
+  ],
+  "reviews": [
+    {
+      "questionId": 1102,
+      "hash": "6201a2b55973e0729b5969ea3cc01507720285507c0e48addf6b1be9001dc389",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. Helping guide Pinocchio does not by itself confer the specific office. The appointment exchange names Jiminy, excluding the fairy who performs it and the two workshop residents. The final badge in #556 is a different reward fact.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Blue Fairy appoints Jiminy Cricket as Pinocchio's conscience; Geppetto creates the puppet and Figaro is his kitten.",
+        "sources": [
+          "b21-1102-0",
+          "b21-1102-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Jiminy is explicitly assigned this office.",
+          "sources": [
+            "b21-1102-0",
+            "b21-1102-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Blue Fairy appoints the conscience; she is not the appointee.",
+          "sources": [
+            "b21-1102-0",
+            "b21-1102-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Geppetto is the creator and father figure, not the appointed conscience.",
+          "sources": [
+            "b21-1102-0",
+            "b21-1102-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Figaro is Geppetto's kitten, not the appointee.",
+          "sources": [
+            "b21-1102-0",
+            "b21-1102-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Helping guide Pinocchio does not by itself confer the specific office. The appointment exchange names Jiminy, excluding the fairy who performs it and the two workshop residents. The final badge in #556 is a different reward fact."
+      }
+    },
+    {
+      "questionId": 1103,
+      "hash": "8a46f946b098f4b25dd6af30eb84361087859563a4eca0385ef2c72444185ebc",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. The Rabbit does appear at the table, but being a visitor is different from hosting it. Dormouse could also fit the role but is not an option; exactly one of the four choices is a host.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Mad Hatter, March Hare and Dormouse host the party; the White Rabbit arrives later and loses his watch.",
+        "sources": [
+          "b21-1103-0",
+          "b21-1103-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Hatter is one of the hosts alongside the March Hare.",
+          "sources": [
+            "b21-1103-0",
+            "b21-1103-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The White Rabbit is a later visitor whose watch the hosts destroy.",
+          "sources": [
+            "b21-1103-0",
+            "b21-1103-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Caterpillar belongs to the earlier mushroom encounter, not the tea hosts.",
+          "sources": [
+            "b21-1103-0",
+            "b21-1103-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The King belongs to the later royal court, not the tea hosts.",
+          "sources": [
+            "b21-1103-0",
+            "b21-1103-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The Rabbit does appear at the table, but being a visitor is different from hosting it. Dormouse could also fit the role but is not an option; exactly one of the four choices is a host."
+      }
+    },
+    {
+      "questionId": 1104,
+      "hash": "9c15cf6e773b10461648ec6074d05e34e79905c375933f5d6fbd28370bee3806",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. The opening dialogue addresses the mother as Mary and Wendy calls her Mother. The alternatives are competing names for one identified parent, not other maternal roles; the date excludes adaptations.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "George and Mary Darling are the parents of Wendy, John and Michael.",
+        "sources": [
+          "b21-1104-0",
+          "b21-1104-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Mary Darling is explicitly the children's mother.",
+          "sources": [
+            "b21-1104-0",
+            "b21-1104-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jane is not the mother's name in the 1953 parent roster.",
+          "sources": [
+            "b21-1104-0",
+            "b21-1104-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Elizabeth is not the name assigned to Wendy's mother.",
+          "sources": [
+            "b21-1104-0",
+            "b21-1104-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Margaret is not the name assigned to Wendy's mother.",
+          "sources": [
+            "b21-1104-0",
+            "b21-1104-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The opening dialogue addresses the mother as Mary and Wendy calls her Mother. The alternatives are competing names for one identified parent, not other maternal roles; the date excludes adaptations."
+      }
+    },
+    {
+      "questionId": 1105,
+      "hash": "ce14bb7305c37179bc58c53c7797017710e67d11c7be750e535650df660b76fd",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. Tibbs and Rufus are feline names elsewhere, so species alone would not exclude them. The named owner-pair relationship does: the inspected synopsis gives Si and Am. The 1955 version avoids remake changes.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Aunt Sarah brings her two Siamese cats, Si and Am, into Lady's household.",
+        "sources": [
+          "b21-1105-0",
+          "b21-1105-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "AFI explicitly identifies Si and Am as Aunt Sarah's cats.",
+          "sources": [
+            "b21-1105-0",
+            "b21-1105-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jock and Trusty are Lady's neighborhood dog friends.",
+          "sources": [
+            "b21-1105-0",
+            "b21-1105-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tibbs and Rufus is not the pair AFI identifies as Aunt Sarah's cats.",
+          "sources": [
+            "b21-1105-0",
+            "b21-1105-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tito and Rita is not the pair identified as her cats.",
+          "sources": [
+            "b21-1105-0",
+            "b21-1105-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tibbs and Rufus are feline names elsewhere, so species alone would not exclude them. The named owner-pair relationship does: the inspected synopsis gives Si and Am. The 1955 version avoids remake changes."
+      }
+    },
+    {
+      "questionId": 1106,
+      "hash": "09e9817ed80875d37ba096d3bb0511c05d814af56121a9e680c41c563704fdbb",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. The two kings are distinct fathers. A later father-in-law relationship cannot make Hubert Aurora's father under the opening royal family; the film date excludes Maleficent adaptations.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Aurora is Stefan's daughter; Hubert is Phillip's father and Phillip is Aurora's betrothed.",
+        "sources": [
+          "b21-1106-0",
+          "b21-1106-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Stefan is explicitly Aurora's father.",
+          "sources": [
+            "b21-1106-0",
+            "b21-1106-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hubert fathers Phillip, not Aurora.",
+          "sources": [
+            "b21-1106-0",
+            "b21-1106-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Phillip is Aurora's betrothed, not her father.",
+          "sources": [
+            "b21-1106-0",
+            "b21-1106-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Triton is not the father identified in this 1959 family.",
+          "sources": [
+            "b21-1106-0",
+            "b21-1106-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The two kings are distinct fathers. A later father-in-law relationship cannot make Hubert Aurora's father under the opening royal family; the film date excludes Maleficent adaptations."
+      }
+    },
+    {
+      "questionId": 1107,
+      "hash": "580566582550235b83d6d17edb8318899162ab86e7ddb9f1cccb2251269ea78e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. The old puppy-care wording admitted Perdita as well as Nanny. Final wording requires the human household job; the narration specifically identifies Nanny. Easy difficulty acknowledges that two alternatives are animals.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Nanny is the Radcliffes' human cook and housekeeper; Perdita is a Dalmatian mother and Tibbs a cat.",
+        "sources": [
+          "b21-1107-0",
+          "b21-1107-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Nanny is expressly the household cook and housekeeper.",
+          "sources": [
+            "b21-1107-0",
+            "b21-1107-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sergeant Tibbs is a cat helping the countryside rescue, not a human housekeeper.",
+          "sources": [
+            "b21-1107-0",
+            "b21-1107-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Perdita is the puppies' canine mother, not the human housekeeper.",
+          "sources": [
+            "b21-1107-0",
+            "b21-1107-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Miss Birdwell is not the housekeeper identified by the film's cast and Pongo's introduction.",
+          "sources": [
+            "b21-1107-0",
+            "b21-1107-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The old puppy-care wording admitted Perdita as well as Nanny. Final wording requires the human household job; the narration specifically identifies Nanny. Easy difficulty acknowledges that two alternatives are animals."
+      }
+    },
+    {
+      "questionId": 1108,
+      "hash": "b29820cdaee972fdf6382cfe392fff523f7c731534d21d0ce933826b103d1461",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. Merlin's paternal guidance does not make him the named foster parent. Kay's relationship in #1061 is separate from Ector's; the two answers cannot be swapped.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Ector is Arthur's foster father, Kay his foster brother, Merlin his tutor and Pellinore Ector's friend.",
+        "sources": [
+          "b21-1108-0",
+          "b20-1061"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Ector is explicitly the foster father.",
+          "sources": [
+            "b21-1108-0",
+            "b20-1061"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kay is the foster brother and Ector's son.",
+          "sources": [
+            "b21-1108-0",
+            "b20-1061"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Merlin is the tutor, not the foster father.",
+          "sources": [
+            "b21-1108-0",
+            "b20-1061"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pellinore is Ector's friend who announces the tournament.",
+          "sources": [
+            "b21-1108-0",
+            "b20-1061"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Merlin's paternal guidance does not make him the named foster parent. Kay's relationship in #1061 is separate from Ector's; the two answers cannot be swapped."
+      }
+    },
+    {
+      "questionId": 1109,
+      "hash": "9514e9fdf5967199bae233526e5bcd92b615dc3b3dcc269f0b19edaab588e8f8",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. Each wrong set shares three genuine vultures, so familiarity with one name cannot solve it. The fourth member must also fit. The artifact catalogue independently names the same complete quartet.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The four vultures are Buzzie, Dizzy, Flaps and Ziggy; Hathi is an elephant, Louie an orangutan and Kaa a python.",
+        "sources": [
+          "b21-1109-0",
+          "b21-1109-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "This is the complete four-vulture roster.",
+          "sources": [
+            "b21-1109-0",
+            "b21-1109-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hathi replaces Ziggy but is an elephant.",
+          "sources": [
+            "b21-1109-0",
+            "b21-1109-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Louie replaces Flaps but is an orangutan.",
+          "sources": [
+            "b21-1109-0",
+            "b21-1109-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kaa replaces Dizzy but is a snake.",
+          "sources": [
+            "b21-1109-0",
+            "b21-1109-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Each wrong set shares three genuine vultures, so familiarity with one name cannot solve it. The fourth member must also fit. The artifact catalogue independently names the same complete quartet."
+      }
+    },
+    {
+      "questionId": 1110,
+      "hash": "857acd6b1d7468fee37fe1985f8af42659a555c87a8cfdce2e1c25f351a53efc",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. O'Malley participates musically but is not the identified leader. #2072 asks which instrument Scat Cat plays, requiring trumpet knowledge beyond this role; #2071 asks Hit Cat's instrument.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Scat Cat leads the jazz-playing alley cats; O'Malley is his friend, Roquefort a mouse and Edgar the butler.",
+        "sources": [
+          "b21-1110-0",
+          "b21-1110-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Scat Cat is expressly the band leader.",
+          "sources": [
+            "b21-1110-0",
+            "b21-1110-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "O'Malley introduces his friends Scat Cat and his gang, rather than leading them.",
+          "sources": [
+            "b21-1110-0",
+            "b21-1110-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Roquefort is the household mouse.",
+          "sources": [
+            "b21-1110-0",
+            "b21-1110-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Edgar is the human butler and antagonist.",
+          "sources": [
+            "b21-1110-0",
+            "b21-1110-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "O'Malley participates musically but is not the identified leader. #2072 asks which instrument Scat Cat plays, requiring trumpet knowledge beyond this role; #2071 asks Hit Cat's instrument."
+      }
+    },
+    {
+      "questionId": 1111,
+      "hash": "61bd307a2b12e5424a22e8d3c7a17ce7c0626f75201aa24b2229f06fc594aa49",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. All characters can interact with Prince John, but only Hiss combines the advisory role and snake identity. #1251 asks a song title and is distinct.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Sir Hiss is Prince John's snake advisor; Little John is a bear and Nutsy/Trigger are vulture guards.",
+        "sources": [
+          "b21-1111-0",
+          "b21-1111-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Sir Hiss is explicitly the snake counselor.",
+          "sources": [
+            "b21-1111-0",
+            "b21-1111-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Little John is Robin's bear companion.",
+          "sources": [
+            "b21-1111-0",
+            "b21-1111-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Nutsy is a vulture guard, not the snake advisor.",
+          "sources": [
+            "b21-1111-0",
+            "b21-1111-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Trigger is another vulture guard, not the snake advisor.",
+          "sources": [
+            "b21-1111-0",
+            "b21-1111-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All characters can interact with Prince John, but only Hiss combines the advisory role and snake identity. #1251 asks a song title and is distinct."
+      }
+    },
+    {
+      "questionId": 1112,
+      "hash": "2aba03a0d8bd071cda20dbc33f919f1b686d1e89dfa6ca28c8e5b0717e492118",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. The motor wording is figurative propulsion, not a mechanical engine. Evinrude is called by name as the boat starts; the albatross choices concern flight instead.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Evinrude is the dragonfly propelling the leaf boat across Devil's Bayou; Orville provides air transport.",
+        "sources": [
+          "b21-1112-0",
+          "b21-1112-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Evinrude mans the leaf boat and is called on to start his engine.",
+          "sources": [
+            "b21-1112-0",
+            "b21-1112-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Orville is the albatross pilot, not the dragonfly.",
+          "sources": [
+            "b21-1112-0",
+            "b21-1112-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wilbur is not the named dragonfly in the 1977 boat scene.",
+          "sources": [
+            "b21-1112-0",
+            "b21-1112-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rufus is the orphanage cat, not its motor.",
+          "sources": [
+            "b21-1112-0",
+            "b21-1112-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The motor wording is figurative propulsion, not a mechanical engine. Evinrude is called by name as the boat starts; the albatross choices concern flight instead."
+      }
+    },
+    {
+      "questionId": 1113,
+      "hash": "a5f7fa327343df92b2cf7030b91acb737b86cbef6af43fc26b7a5f5c10d1b292",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. Big Mama helps raise and protect Tod, making her a plausible broad caregiver answer. The specific adoption belongs to Tweed; #862 asks the owl's identity rather than the adopter.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Big Mama arranges for Widow Tweed to adopt the orphaned Tod; Amos raises Copper and Vixey later becomes Tod's mate.",
+        "sources": [
+          "b21-1113-0",
+          "b21-1113-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Widow Tweed is the adopting farmer who names him Tod.",
+          "sources": [
+            "b21-1113-0",
+            "b21-1113-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Big Mama helps arrange adoption and advises him, but is not the adopting farmer.",
+          "sources": [
+            "b21-1113-0",
+            "b21-1113-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Amos Slade owns Copper and opposes Tod.",
+          "sources": [
+            "b21-1113-0",
+            "b21-1113-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Vixey is his later fox love interest.",
+          "sources": [
+            "b21-1113-0",
+            "b21-1113-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Big Mama helps raise and protect Tod, making her a plausible broad caregiver answer. The specific adoption belongs to Tweed; #862 asks the owl's identity rather than the adopter."
+      }
+    },
+    {
+      "questionId": 1114,
+      "hash": "d5ab6544ca82e2298069fead5d7f905f265b13d2ebcb3450f3015a118c7436b0",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. Final wording isolates the named minstrel; it does not depend on whether the instrument should be called a harp or lyre. #1068 names the princess, a different companion and role.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney Animation names Fflewddur Fflam as the minstrel accompanying Taran.",
+        "sources": [
+          "b21-1114-0",
+          "b21-1114-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney explicitly names Fflewddur as the minstrel.",
+          "sources": [
+            "b21-1114-0",
+            "b21-1114-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Taran is the assistant pig keeper whose quest this is.",
+          "sources": [
+            "b21-1114-0",
+            "b21-1114-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dallben is Taran's wizard guardian, not this minstrel.",
+          "sources": [
+            "b21-1114-0",
+            "b21-1114-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Eidilleg is the fairy king, not the minstrel.",
+          "sources": [
+            "b21-1114-0",
+            "b21-1114-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Final wording isolates the named minstrel; it does not depend on whether the instrument should be called a harp or lyre. #1068 names the princess, a different companion and role."
+      }
+    },
+    {
+      "questionId": 1115,
+      "hash": "beaa6019b88183c655f3a14a00533736aedd71b0ceb039762069300dddc4a5be",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. Bartholomew also works for Ratigan, but the bat qualification excludes him. #2500 asks Fidget's peg leg, a separate physical trait; knowing that trait and knowing his name are different recall facts.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Fidget is Ratigan's bat henchman, Felicia his cat, Bartholomew a mouse lackey and Dawson Basil's partner.",
+        "sources": [
+          "b21-1115-0",
+          "b21-1115-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Fidget is the bat assistant who kidnaps Olivia's father.",
+          "sources": [
+            "b21-1115-0",
+            "b21-1115-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Felicia is Ratigan's pet cat.",
+          "sources": [
+            "b21-1115-0",
+            "b21-1115-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bartholomew is a mouse lackey, not the bat.",
+          "sources": [
+            "b21-1115-0",
+            "b21-1115-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dawson is Basil's doctor companion, not Ratigan's bat.",
+          "sources": [
+            "b21-1115-0",
+            "b21-1115-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Bartholomew also works for Ratigan, but the bat qualification excludes him. #2500 asks Fidget's peg leg, a separate physical trait; knowing that trait and knowing his name are different recall facts."
+      }
+    },
+    {
+      "questionId": 1116,
+      "hash": "f3ef71dc7648314e3857893d907caf6295048bbb199ebc25cbe1bcac4e4e399b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. All four choices are dogs from the film. Attending Jenny's birthday later does not establish household ownership; Georgette is the dog already living with the family.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Georgette is the Foxworth family's poodle; Rita, Francis and Einstein belong to Fagin's gang.",
+        "sources": [
+          "b21-1116-0",
+          "b21-1116-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Georgette is explicitly the family poodle.",
+          "sources": [
+            "b21-1116-0",
+            "b21-1116-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rita is a gang dog, not Jenny's family poodle.",
+          "sources": [
+            "b21-1116-0",
+            "b21-1116-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Francis is the gang's bulldog.",
+          "sources": [
+            "b21-1116-0",
+            "b21-1116-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Einstein is the gang's Great Dane.",
+          "sources": [
+            "b21-1116-0",
+            "b21-1116-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All four choices are dogs from the film. Attending Jenny's birthday later does not establish household ownership; Georgette is the dog already living with the family."
+      }
+    },
+    {
+      "questionId": 1117,
+      "hash": "5ee8547b773b23c89ad4e4d0bb33aaaa0aec08c9387dce89c4d8a5c659c00a47",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. The identity is a single named dog, not any animal owned by royalty. Other Disney pet names remain wrong. Max in #563 is Goofy's son, an unrelated character.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Max is Eric's pet sheepdog, addressed by name on the ship and at the beach.",
+        "sources": [
+          "b21-1117-0",
+          "b21-1117-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Max is explicitly Eric's named dog.",
+          "sources": [
+            "b21-1117-0",
+            "b21-1117-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bruno is not the name Eric uses for his dog.",
+          "sources": [
+            "b21-1117-0",
+            "b21-1117-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Major is not the name assigned to Eric's dog.",
+          "sources": [
+            "b21-1117-0",
+            "b21-1117-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sultan is not the name Eric uses for this pet.",
+          "sources": [
+            "b21-1117-0",
+            "b21-1117-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The identity is a single named dog, not any animal owned by royalty. Other Disney pet names remain wrong. Max in #563 is Goofy's son, an unrelated character."
+      }
+    },
+    {
+      "questionId": 1118,
+      "hash": "96e083f481a94e39bfa6b81493e58a2f9caed0ddb6829a4ac65ff87f177a7502",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. A sultan can broadly be called a king. Final wording asks the specific address used in the film, so the translation does not create two correct choices.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Jasmine's father is addressed as Sultan; Jafar serves as grand vizier before usurping him.",
+        "sources": [
+          "b21-1118-0",
+          "b21-1118-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Sultan is his specific in-film title.",
+          "sources": [
+            "b21-1118-0",
+            "b21-1118-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "King is a broader translation of a monarch, not the specific title used.",
+          "sources": [
+            "b21-1118-0",
+            "b21-1118-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Vizier is Jafar's office.",
+          "sources": [
+            "b21-1118-0",
+            "b21-1118-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Emir is not the specific title used for Jasmine's father.",
+          "sources": [
+            "b21-1118-0",
+            "b21-1118-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A sultan can broadly be called a king. Final wording asks the specific address used in the film, so the translation does not create two correct choices."
+      }
+    },
+    {
+      "questionId": 1119,
+      "hash": "e261d5f16a9ab163e89c8af597b1f528b5891a5977e6cf3ae99a982f0d6cb4fd",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. Similar names Sarabi and Sarafina are deliberately plausible. The exact relationship and credited name distinguish them; no in-film spoken naming is claimed. #282 asks the other mother.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Sarafina is Nala's mother; Sarabi is Simba's mother. Sarafina's name is a credit identity, not spoken dialogue.",
+        "sources": [
+          "b21-1119-0",
+          "b21-1119-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The cast identifies Sarafina as Nala's mother.",
+          "sources": [
+            "b21-1119-0",
+            "b21-1119-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sarabi is Simba's mother, not Nala's.",
+          "sources": [
+            "b21-1119-0",
+            "b21-1119-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Zira is not the mother named for Nala in the 1994 credits.",
+          "sources": [
+            "b21-1119-0",
+            "b21-1119-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kiara is not the mother named for Nala in the 1994 credits.",
+          "sources": [
+            "b21-1119-0",
+            "b21-1119-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Similar names Sarabi and Sarafina are deliberately plausible. The exact relationship and credited name distinguish them; no in-film spoken naming is claimed. #282 asks the other mother."
+      }
+    },
+    {
+      "questionId": 1120,
+      "hash": "56392477a8ee58fffd8d5127a0764765ff397138805830c4fdc46fc23bad3cb8",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. Percy eventually befriends the other animals and leaves his owner, so the question refers to his established introductory relationship rather than an assertion of permanent ownership.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Percy is Ratcliffe's pug; Meeko is a raccoon, Flit a hummingbird and Wiggins the human manservant.",
+        "sources": [
+          "b21-1120-0",
+          "b21-1120-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Percy is explicitly Ratcliffe's pet pug.",
+          "sources": [
+            "b21-1120-0",
+            "b21-1120-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Meeko is Pocahontas's raccoon companion.",
+          "sources": [
+            "b21-1120-0",
+            "b21-1120-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Flit is her hummingbird companion.",
+          "sources": [
+            "b21-1120-0",
+            "b21-1120-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wiggins is a human servant, not the pug.",
+          "sources": [
+            "b21-1120-0",
+            "b21-1120-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Percy eventually befriends the other animals and leaves his owner, so the question refers to his established introductory relationship rather than an assertion of permanent ownership."
+      }
+    },
+    {
+      "questionId": 1121,
+      "hash": "311838ff46cef079cc63f0a2b49bddccc142ec785395bd439ebfd12af3c8b24f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. The old thread distractor was also something the Fates handle together. Final wording asks a sight-enabling body part. The eye is shared by the trio, not one separate eye per Fate.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The three Fates pass a shared eyeball between them to see.",
+        "sources": [
+          "b21-1121-0",
+          "b21-1121-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The review specifically identifies their shared eyeball.",
+          "sources": [
+            "b21-1121-0",
+            "b21-1121-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "An ear is not the sight organ passed between them.",
+          "sources": [
+            "b21-1121-0",
+            "b21-1121-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A hand is not the sight organ in this exchange.",
+          "sources": [
+            "b21-1121-0",
+            "b21-1121-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A nose is not the shared sight organ.",
+          "sources": [
+            "b21-1121-0",
+            "b21-1121-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The old thread distractor was also something the Fates handle together. Final wording asks a sight-enabling body part. The eye is shared by the trio, not one separate eye per Fate."
+      }
+    },
+    {
+      "questionId": 1122,
+      "hash": "5c83c5ee4dd51d61e440962dca2e587a75d24d33547c092ce48d7212d44472a2",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. Chi-Fu also disparages Mulan later, so a generic insult question could admit him. The final tea-test scene and declaration exclude that later context, and the stem no longer repeats matchmaking.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "After the tea-serving mishap, the Matchmaker declares that Mulan will never bring her family honor.",
+        "sources": [
+          "b21-1122-0",
+          "b21-1122-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The transcribed speaker of the declaration is the Matchmaker.",
+          "sources": [
+            "b21-1122-0",
+            "b21-1122-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Grandmother Fa accompanies preparations but does not deliver this verdict.",
+          "sources": [
+            "b21-1122-0",
+            "b21-1122-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Chi-Fu is the imperial official in the later conscription scene, not the tea examiner.",
+          "sources": [
+            "b21-1122-0",
+            "b21-1122-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fa Li is her mother, not the speaker of this verdict.",
+          "sources": [
+            "b21-1122-0",
+            "b21-1122-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Chi-Fu also disparages Mulan later, so a generic insult question could admit him. The final tea-test scene and declaration exclude that later context, and the stem no longer repeats matchmaking."
+      }
+    },
+    {
+      "questionId": 1124,
+      "hash": "bddd4a178fb68fb5b7baa99a8438a1f0c8663a3f182b0c7ea830e8f45e339727",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. Kronk says he learned all woodland creatures, so merely proving squirrel competence cannot exclude other competence. Final wording asks the particular Bucky conversation; the llama and jaguars are subjects of that conversation.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Kronk converses with the squirrel and asks it for directions to the talking llama.",
+        "sources": [
+          "b21-1124-0",
+          "b21-1124-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Yzma identifies the animal as a squirrel during Kronk's conversation.",
+          "sources": [
+            "b21-1124-0",
+            "b21-1124-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Llama describes Kuzco, the subject of the directions, not Bucky's language.",
+          "sources": [
+            "b21-1124-0",
+            "b21-1124-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jaguars are mentioned in Bucky's story, not the speaker's species.",
+          "sources": [
+            "b21-1124-0",
+            "b21-1124-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A parrot is not the animal Kronk questions in this scene.",
+          "sources": [
+            "b21-1124-0",
+            "b21-1124-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Kronk says he learned all woodland creatures, so merely proving squirrel competence cannot exclude other competence. Final wording asks the particular Bucky conversation; the llama and jaguars are subjects of that conversation."
+      }
+    },
+    {
+      "questionId": 1125,
+      "hash": "ba337fe23aedbf84d3aa76eb5f554f53af1a892cde464d604f7035fb7426bf76",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. Other crew can handle explosives incidentally, but the roster's designated specialty is unique. Whitmore's briefing separately assigns Santorini to demolitions; #522 asks the excavator.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Vinny Santorini is the demolitions expert; Mole handles geology, Sweet medicine and Cookie food.",
+        "sources": [
+          "b21-1125-0",
+          "b21-1125-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Vinny is explicitly assigned demolitions.",
+          "sources": [
+            "b21-1125-0",
+            "b21-1125-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Moliere is the geologist and excavator.",
+          "sources": [
+            "b21-1125-0",
+            "b21-1125-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dr. Sweet is the medical officer.",
+          "sources": [
+            "b21-1125-0",
+            "b21-1125-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cookie is the expedition cook.",
+          "sources": [
+            "b21-1125-0",
+            "b21-1125-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other crew can handle explosives incidentally, but the roster's designated specialty is unique. Whitmore's briefing separately assigns Santorini to demolitions; #522 asks the excavator."
+      }
+    },
+    {
+      "questionId": 1126,
+      "hash": "10a6cf1616ae901331afee752dcac44d05ce0bb6f131e7d6cf449fa723b0ab29",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. The old Captain Gantu answer repeated the captain clue. Final wording instead distinguishes the replacement from the first team and the assigning leader. The 2002 date is essential because the remake changes this plot.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "After Jumba and Pleakley fail, the Grand Councilwoman assigns Gantu to capture Stitch.",
+        "sources": [
+          "b21-1126-0",
+          "b21-1126-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Gantu is the replacement retrieval officer.",
+          "sources": [
+            "b21-1126-0",
+            "b21-1126-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bubbles is the social worker, not the assigned replacement.",
+          "sources": [
+            "b21-1126-0",
+            "b21-1126-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "David is Nani's human friend, not the replacement officer.",
+          "sources": [
+            "b21-1126-0",
+            "b21-1126-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Grand Councilwoman assigns the mission instead of taking it herself.",
+          "sources": [
+            "b21-1126-0",
+            "b21-1126-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The old Captain Gantu answer repeated the captain clue. Final wording instead distinguishes the replacement from the first team and the assigning leader. The 2002 date is essential because the remake changes this plot."
+      }
+    },
+    {
+      "questionId": 1128,
+      "hash": "44ea085f153a0af656d7297d62d6d8a6036afd401a21396e8be9f8f3b580fdee",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. Sitka provides spiritual guidance but is not the human shaman officiating the totem ceremony. The final four choices all occur in the original film, avoiding sequel-only names.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Tanana is the tribe's shaman who gives Kenai his totem and guides him after the transformation.",
+        "sources": [
+          "b21-1128-0",
+          "b21-1128-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Tanana is explicitly the shaman-woman.",
+          "sources": [
+            "b21-1128-0",
+            "b21-1128-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Denahi is Kenai's surviving brother.",
+          "sources": [
+            "b21-1128-0",
+            "b21-1128-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sitka is his eldest brother and later spirit guide.",
+          "sources": [
+            "b21-1128-0",
+            "b21-1128-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tug is a bear at the salmon run, not the tribal shaman.",
+          "sources": [
+            "b21-1128-0",
+            "b21-1128-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Sitka provides spiritual guidance but is not the human shaman officiating the totem ceremony. The final four choices all occur in the original film, avoiding sequel-only names."
+      }
+    },
+    {
+      "questionId": 1129,
+      "hash": "c3fa1b347d5b04e1093b9e7202a97f7fbbf3e6978cc24d88e567b9cd3e59a453",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. The 2005 date excludes the earlier wartime short. Species words in the wrong names make elimination easy, so difficulty is lowered; no second pig is among the choices.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Runt of the Litter is the large pig in Chicken Little's outcast friend group.",
+        "sources": [
+          "b21-1129-0",
+          "b21-1129-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The cast explicitly identifies Runt as the pig.",
+          "sources": [
+            "b21-1129-0",
+            "b21-1129-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Foxy Loxy is a fox and school bully.",
+          "sources": [
+            "b21-1129-0",
+            "b21-1129-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fish Out of Water is a goldfish.",
+          "sources": [
+            "b21-1129-0",
+            "b21-1129-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Goosey Loosey is a goose and Foxy's friend.",
+          "sources": [
+            "b21-1129-0",
+            "b21-1129-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The 2005 date excludes the earlier wartime short. Species words in the wrong names make elimination easy, so difficulty is lowered; no second pig is among the choices."
+      }
+    },
+    {
+      "questionId": 1130,
+      "hash": "77cca869a6a894e0a5fa1351c7cefb7a5e5b10a1ff8d0f992b278702e5689ddc",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. Time travel creates two generations of mothers in the story. The family tree states Wilbur is Franny and Cornelius's son, excluding Lucille's earlier adoption relationship.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Franny is Wilbur's mother; Lucille is his grandmother, Mildred the orphanage head and Doris a robotic hat.",
+        "sources": [
+          "b21-1130-0",
+          "b21-1130-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Franny is expressly Wilbur's mother.",
+          "sources": [
+            "b21-1130-0",
+            "b21-1130-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lucille adopts Lewis and is Wilbur's grandmother.",
+          "sources": [
+            "b21-1130-0",
+            "b21-1130-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mildred runs the orphanage, not Wilbur's future household.",
+          "sources": [
+            "b21-1130-0",
+            "b21-1130-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Doris is the robotic bowler hat, not his mother.",
+          "sources": [
+            "b21-1130-0",
+            "b21-1130-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Time travel creates two generations of mothers in the story. The family tree states Wilbur is Franny and Cornelius's son, excluding Lucille's earlier adoption relationship."
+      }
+    },
+    {
+      "questionId": 1131,
+      "hash": "d9051c55854cdb38a2fedc0d7cb01165d2af02da67d9b41f25cd8cb3e263acb2",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. This is the movie's real owner relationship rather than a plot question about the in-universe television show, preserving scope. Penny in #275 is a different film's orphan.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Penny adopts Bolt and remains his owner outside the fictional television series; Mittens and Rhino are animal companions.",
+        "sources": [
+          "b21-1131-0",
+          "b21-1131-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Penny is the girl who adopts and owns Bolt.",
+          "sources": [
+            "b21-1131-0",
+            "b21-1131-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mittens is the cat companion.",
+          "sources": [
+            "b21-1131-0",
+            "b21-1131-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rhino is the hamster companion.",
+          "sources": [
+            "b21-1131-0",
+            "b21-1131-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Molly is not the owner named by the plot or cast.",
+          "sources": [
+            "b21-1131-0",
+            "b21-1131-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "This is the movie's real owner relationship rather than a plot question about the in-universe television show, preserving scope. Penny in #275 is a different film's orphan."
+      }
+    },
+    {
+      "questionId": 1132,
+      "hash": "42fa55d4f854b2110d1d486e9b45a6625f3e2e56c5a95594e081518de3466614",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. Mama Odie uses maternal language, but the opening household identifies Eudora and James as Tiana's parents. A maternal guide does not replace that explicit family relationship.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Eudora is Tiana's mother; Charlotte is her friend and Mama Odie the bayou priestess.",
+        "sources": [
+          "b21-1132-0",
+          "b21-1132-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The cast explicitly names Eudora as Tiana's mother.",
+          "sources": [
+            "b21-1132-0",
+            "b21-1132-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Charlotte is the wealthy childhood friend.",
+          "sources": [
+            "b21-1132-0",
+            "b21-1132-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mama Odie is the bayou guide, not her birth mother.",
+          "sources": [
+            "b21-1132-0",
+            "b21-1132-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Georgia is not the mother's name assigned by the cast.",
+          "sources": [
+            "b21-1132-0",
+            "b21-1132-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Mama Odie uses maternal language, but the opening household identifies Eudora and James as Tiana's parents. A maternal guide does not replace that explicit family relationship."
+      }
+    },
+    {
+      "questionId": 1133,
+      "hash": "6d598fd3d78a54ebeff23f38004c3856a8af1afd15c1825bd6014490f398cc29",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. Hans also threatens Elsa later, so the final question avoids a broad villainous motive. It asks who supplies the two men to Hans, differentiating supplier from party leader and removing the Weselton giveaway.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Duke volunteers two men to accompany Hans's search party after Anna disappears.",
+        "sources": [
+          "b21-1133-0",
+          "b21-1133-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Duke is the visitor who volunteers his two men.",
+          "sources": [
+            "b21-1133-0",
+            "b21-1133-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hans leads and requests volunteers; he is not the visiting donor of the two bodyguards.",
+          "sources": [
+            "b21-1133-0",
+            "b21-1133-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Oaken is the trading-post proprietor, not a coronation dignitary supplying men.",
+          "sources": [
+            "b21-1133-0",
+            "b21-1133-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Runeard does not appear in this 2013 search-party exchange.",
+          "sources": [
+            "b21-1133-0",
+            "b21-1133-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Hans also threatens Elsa later, so the final question avoids a broad villainous motive. It asks who supplies the two men to Hans, differentiating supplier from party leader and removing the Weselton giveaway."
+      }
+    },
+    {
+      "questionId": 1134,
+      "hash": "06663d0bfbc20f1d4a0da079f6b4444ed05a2e7a8e930679ce4fd3da2ac7c538",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. Other team members can hold or be affected by the spheres, but this asks their equipment user. The Disney-film section is used rather than the different Marvel-comics power set; #882 asks Wasabi's equipment.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Honey Lemon's purse mixes chemicals into spheres; Go Go specializes in electromagnetics, Wasabi in lasers, and Fred is the mascot.",
+        "sources": [
+          "b21-1134-0",
+          "b21-1134-1",
+          "b16-882-extra-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Honey Lemon produces the chemical balls with her purse.",
+          "sources": [
+            "b21-1134-0",
+            "b21-1134-1",
+            "b16-882-extra-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Go Go specializes in electromagnetics, not this chemical purse.",
+          "sources": [
+            "b21-1134-0",
+            "b21-1134-1",
+            "b16-882-extra-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wasabi specializes in laser/plasma equipment.",
+          "sources": [
+            "b21-1134-0",
+            "b21-1134-1",
+            "b16-882-extra-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fred is the mascot, not the chemistry specialist identified with this purse.",
+          "sources": [
+            "b21-1134-0",
+            "b21-1134-1",
+            "b16-882-extra-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other team members can hold or be affected by the spheres, but this asks their equipment user. The Disney-film section is used rather than the different Marvel-comics power set; #882 asks Wasabi's equipment."
+      }
+    },
+    {
+      "questionId": 1135,
+      "hash": "250ae432cbea6c9a6f715da68fe95f2eb87ffaeee38ef2c7ea16f1549c404b66",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. Understanding animal speech differs from supernatural hearing. Isabela is Mirabel's sister rather than cousin, so the final stem uses relatives; each gift has its own named recipient.",
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney assigns extraordinary hearing to Dolores, shapeshifting to Camilo, animal speech to Antonio and plant growth to Isabela.",
+        "sources": [
+          "b21-1135-0",
+          "b21-1135-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Dolores is explicitly assigned extraordinary hearing.",
+          "sources": [
+            "b21-1135-0",
+            "b21-1135-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Camilo transforms his appearance.",
+          "sources": [
+            "b21-1135-0",
+            "b21-1135-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Antonio communicates with animals.",
+          "sources": [
+            "b21-1135-0",
+            "b21-1135-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Isabela grows flowers and plants.",
+          "sources": [
+            "b21-1135-0",
+            "b21-1135-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Understanding animal speech differs from supernatural hearing. Isabela is Mirabel's sister rather than cousin, so the final stem uses relatives; each gift has its own named recipient."
+      }
+    },
+    {
+      "questionId": 1136,
+      "hash": "9da4a22dba2baf784d50c3d1979c7306c970fbe66c802a0b63309a0416bf55b4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. All alternatives are original lands, so original alone does not reveal the answer. The theme differentiates them. Magic Kingdom attraction locations and Paris Phantom Manor are independent park-specific facts.",
+      "context": "The named park and historical event, or the explicitly dated November 2026 configuration.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Frontierland opened in 1955 and depicts the American West of the 1800s.",
+        "sources": [
+          "b21-1136-0"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The fact sheet explicitly assigns the Old West setting to Frontierland.",
+          "sources": [
+            "b21-1136-0"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Adventureland is not the land named by this historical-western description.",
+          "sources": [
+            "b21-1136-0"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tomorrowland is not the historical-western land identified here.",
+          "sources": [
+            "b21-1136-0"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fantasyland is not the land identified as the 1800s American West.",
+          "sources": [
+            "b21-1136-0"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All alternatives are original lands, so original alone does not reveal the answer. The theme differentiates them. Magic Kingdom attraction locations and Paris Phantom Manor are independent park-specific facts."
+      }
+    },
+    {
+      "questionId": 1137,
+      "hash": "eaf46e62bd778523d26744ca9ebbbc880d4f7d470a9e1e97e20c9b819462b8ea",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. A successor can trace its infrastructure to 1959. Final wording asks the name at opening, so Finding Nemo cannot be defended merely as the same lagoon's present attraction. #624 asks the later retheme.",
+      "context": "The named park and historical event, or the explicitly dated November 2026 configuration.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The company's archive account names the 1959 Disneyland attraction Submarine Voyage.",
+        "sources": [
+          "b21-1137-0",
+          "b12-sub"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Submarine Voyage is the name in the 1959 expansion account.",
+          "sources": [
+            "b21-1137-0",
+            "b12-sub"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Finding Nemo is the later 2007 version, not its 1959 opening name.",
+          "sources": [
+            "b21-1137-0",
+            "b12-sub"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "20,000 Leagues Under the Sea is not the Disneyland name listed in the 1959 account.",
+          "sources": [
+            "b21-1137-0",
+            "b12-sub"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Nautilus Expedition is not the opening name in the archive's list.",
+          "sources": [
+            "b21-1137-0",
+            "b12-sub"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A successor can trace its infrastructure to 1959. Final wording asks the name at opening, so Finding Nemo cannot be defended merely as the same lagoon's present attraction. #624 asks the later retheme."
+      }
+    },
+    {
+      "questionId": 1138,
+      "hash": "786fd31719d04617e8e8ac977013f1babb13ae99ebc94b5ac666c2f1746ad098",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. The original and retitled bear shows should not be treated as different locations. Final wording names the current version and dates the configuration; Big Thunder and Paris Phantom Manor are distinct location facts.",
+      "context": "The named park and historical event, or the explicitly dated November 2026 configuration.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-06",
+      "premise": {
+        "reason": "Disney lists Country Bear Musical Jamboree among Frontierland's attractions at Magic Kingdom.",
+        "sources": [
+          "b21-1138-0",
+          "b21-1138-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Frontierland is the land heading above the attraction.",
+          "sources": [
+            "b21-1138-0",
+            "b21-1138-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Liberty Square is not the listed land.",
+          "sources": [
+            "b21-1138-0",
+            "b21-1138-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Adventureland is not the listed land.",
+          "sources": [
+            "b21-1138-0",
+            "b21-1138-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fantasyland is not the listed land.",
+          "sources": [
+            "b21-1138-0",
+            "b21-1138-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The original and retitled bear shows should not be treated as different locations. Final wording names the current version and dates the configuration; Big Thunder and Paris Phantom Manor are distinct location facts."
+      }
+    },
+    {
+      "questionId": 1139,
+      "hash": "14c25659f77e071a71fb5b6a6b499874c8d64d5c18fafac3cff82b7c252029a2",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. Soarin's film program can change without moving the attraction. Final wording keeps the brand rather than an obsolete subtitle and uses four pavilions. #888 asks what the greenhouse ride passes; this asks the enclosing pavilion and also uses Soarin's independent location.",
+      "context": "The named park and historical event, or the explicitly dated November 2026 configuration.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-06",
+      "premise": {
+        "reason": "The Land contains both Soarin' and Living with the Land, whose boat route passes agricultural greenhouses.",
+        "sources": [
+          "b21-1139-0",
+          "b21-1139-1",
+          "b21-1139-2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Land explicitly contains both rides.",
+          "sources": [
+            "b21-1139-0",
+            "b21-1139-1",
+            "b21-1139-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Seas is not their shared pavilion.",
+          "sources": [
+            "b21-1139-0",
+            "b21-1139-1",
+            "b21-1139-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Imagination is a separate pavilion with the Figment attraction.",
+          "sources": [
+            "b21-1139-0",
+            "b21-1139-1",
+            "b21-1139-2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wonders of Life is not the shared pavilion of these rides.",
+          "sources": [
+            "b21-1139-0",
+            "b21-1139-1",
+            "b21-1139-2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Soarin's film program can change without moving the attraction. Final wording keeps the brand rather than an obsolete subtitle and uses four pavilions. #888 asks what the greenhouse ride passes; this asks the enclosing pavilion and also uses Soarin's independent location."
+      }
+    },
+    {
+      "questionId": 1140,
+      "hash": "daa959b2386c24fb4961d7cf3923678330127bb503886d8c5c3dec7435b8a512",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. Other fictional dragons may be purple or appear in parks, but the named attraction relationship is necessary. #2212 asks Dreamfinder, #2213 the sponsor and #2214 the opening year, all additional facts.",
+      "context": "The named park and historical event, or the explicitly dated November 2026 configuration.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Figment is the purple dragon associated with Journey Into Imagination; Dreamfinder is his inventor/mentor.",
+        "sources": [
+          "b21-1140-0"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney explicitly describes Figment as the creative purple dragon.",
+          "sources": [
+            "b21-1140-0"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Elliott is not the dragon identified for Journey Into Imagination.",
+          "sources": [
+            "b21-1140-0"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Spyro is not the dragon identified in this EPCOT history.",
+          "sources": [
+            "b21-1140-0"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dreamfinder is the inventor and storyteller, not the dragon he creates.",
+          "sources": [
+            "b21-1140-0"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other fictional dragons may be purple or appear in parks, but the named attraction relationship is necessary. #2212 asks Dreamfinder, #2213 the sponsor and #2214 the opening year, all additional facts."
+      }
+    },
+    {
+      "questionId": 1141,
+      "hash": "5689c282ea0062fb7958caa6273e77208bbf727b2b2c2de849a63f14da685f81",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. Opening and dedication are different events: the official chronology puts the dedication April 21 and public opening April 22. The four dates are mutually exclusive for this specific event.",
+      "context": "The named park and historical event, or the explicitly dated November 2026 configuration.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Animal Kingdom opened on Earth Day, April 22, 1998, as confirmed by Disney's anniversary and opening-day chronology.",
+        "sources": [
+          "b21-1141-0",
+          "b21-1141-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "April 22, 1998 is the recorded opening date.",
+          "sources": [
+            "b21-1141-0",
+            "b21-1141-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "October 1, 1982 is not Animal Kingdom's recorded opening date.",
+          "sources": [
+            "b21-1141-0",
+            "b21-1141-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "May 1, 1989 is not its recorded opening date.",
+          "sources": [
+            "b21-1141-0",
+            "b21-1141-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "July 17, 1955 is not its recorded opening date.",
+          "sources": [
+            "b21-1141-0",
+            "b21-1141-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Opening and dedication are different events: the official chronology puts the dedication April 21 and public opening April 22. The four dates are mutually exclusive for this specific event."
+      }
+    },
+    {
+      "questionId": 1142,
+      "hash": "b395c6c4f66341ac868e49b15d1da423de0d1b8d406eb3c4b7309424d245cc59",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. Simply standing during 2001–2015 also fit the Tower and theatre. Final wording requires installation in 2001, placement before the theatre and removal in 2015, uniquely selecting the Hat.",
+      "context": "The named park and historical event, or the explicitly dated November 2026 configuration.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The giant Sorcerer's Hat was installed in 2001 before the Chinese Theatre and dismantled in 2015.",
+        "sources": [
+          "b21-1142-0",
+          "b21-1142-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The contemporary removal account identifies the Hat and its 2001 addition.",
+          "sources": [
+            "b21-1142-0",
+            "b21-1142-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Earful Tower is shown as another surviving icon during this demolition, not the object removed here.",
+          "sources": [
+            "b21-1142-0",
+            "b21-1142-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Chinese Theatre stands behind the removed object.",
+          "sources": [
+            "b21-1142-0",
+            "b21-1142-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Animation Arch is not the object identified in the documented removal.",
+          "sources": [
+            "b21-1142-0",
+            "b21-1142-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Simply standing during 2001–2015 also fit the Tower and theatre. Final wording requires installation in 2001, placement before the theatre and removal in 2015, uniquely selecting the Hat."
+      }
+    },
+    {
+      "questionId": 1143,
+      "hash": "edd33bf863b2d7febef418fc0040aae3e8d5683d6a7f4afb4d28d3ded7d03bd9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. The answer is a station, not a locomotive or the analogous Magic Kingdom entrance. All four final choices are actual Disneyland stations; turnstiles avoids repeating the answer word main.",
+      "context": "The named park and historical event, or the explicitly dated November 2026 configuration.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-06",
+      "premise": {
+        "reason": "The Disneyland Railroad station at the park entrance is Main Street, U.S.A.; the official railroad page lists all four stations.",
+        "sources": [
+          "b21-1143-0",
+          "b21-1143-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Main Street, U.S.A. is the entrance station.",
+          "sources": [
+            "b21-1143-0",
+            "b21-1143-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mickey's Toontown is a separate station farther around the park.",
+          "sources": [
+            "b21-1143-0",
+            "b21-1143-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "New Orleans Square is another interior station.",
+          "sources": [
+            "b21-1143-0",
+            "b21-1143-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tomorrowland is another interior station.",
+          "sources": [
+            "b21-1143-0",
+            "b21-1143-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The answer is a station, not a locomotive or the analogous Magic Kingdom entrance. All four final choices are actual Disneyland stations; turnstiles avoids repeating the answer word main."
+      }
+    },
+    {
+      "questionId": 1144,
+      "hash": "859b51e64f81855767bd19c7b5a02c1b6ea66dc20325f0be203b8b26a4277f36",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. Sharing the Disney surname is insufficient: Roy and Walter identify different people. The question is about the honoree, not which locomotive Walt personally rode or built.",
+      "context": "The named park and historical event, or the explicitly dated November 2026 configuration.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Walter E. Disney is a Magic Kingdom locomotive; the roster separately names Roy O. Disney, Lilly Belle and Roger Broggie.",
+        "sources": [
+          "b21-1144-0",
+          "b21-1144-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Walter E. Disney uses Walt's own name.",
+          "sources": [
+            "b21-1144-0",
+            "b21-1144-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Roy O. Disney names Walt's brother rather than Walt.",
+          "sources": [
+            "b21-1144-0",
+            "b21-1144-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lilly Belle honors Walt's wife.",
+          "sources": [
+            "b21-1144-0",
+            "b21-1144-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Roger E. Broggie names the Disney railroad engineer.",
+          "sources": [
+            "b21-1144-0",
+            "b21-1144-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Sharing the Disney surname is insufficient: Roy and Walter identify different people. The question is about the honoree, not which locomotive Walt personally rode or built."
+      }
+    },
+    {
+      "questionId": 1145,
+      "hash": "41b4e6409ac14c5bd5c6e9a5955ee77b1bd20105f55a9d0434e246a3246c09fe",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. Largest could mean area or inventory and could change. Final wording asks the explicitly attributed advertisement at a fixed date; a separate official store page corroborates the largest merchandise collection. World in the clue is ordinary ranking language, not a unique name giveaway.",
+      "context": "The named park and historical event, or the explicitly dated November 2026 configuration.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-06",
+      "premise": {
+        "reason": "Disney advertises Disney Springs' World of Disney as the world's largest Disney character store.",
+        "sources": [
+          "b21-1145-0",
+          "b21-1145-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "World of Disney is the store carrying this specific advertised description.",
+          "sources": [
+            "b21-1145-0",
+            "b21-1145-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "DisneyStyle is not the shop named in the advertisement.",
+          "sources": [
+            "b21-1145-0",
+            "b21-1145-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Marketplace Co-Op is not the shop named in the advertisement.",
+          "sources": [
+            "b21-1145-0",
+            "b21-1145-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Once Upon a Toy is not the shop named in the advertisement.",
+          "sources": [
+            "b21-1145-0",
+            "b21-1145-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Largest could mean area or inventory and could change. Final wording asks the explicitly attributed advertisement at a fixed date; a separate official store page corroborates the largest merchandise collection. World in the clue is ordinary ranking language, not a unique name giveaway."
+      }
+    },
+    {
+      "questionId": 1146,
+      "hash": "9d3a6bdf19131752eda86be536f47741b218a8bb11caf3113436dfbf6c982ad5",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. The former Harambe Nights event could overlap the old broad description. Final options and venue identify the regular Festival; celebrates avoids asserting a scene-for-scene retelling.",
+      "context": "The named park and historical event, or the explicitly dated November 2026 configuration.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-06",
+      "premise": {
+        "reason": "Festival of the Lion King is the Lion King celebration staged at Harambe Theatre.",
+        "sources": [
+          "b21-1146-0"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The official show page identifies Festival and its Harambe venue.",
+          "sources": [
+            "b21-1146-0"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Big Blue and Beyond is a Nemo show, not this Lion King celebration.",
+          "sources": [
+            "b21-1146-0"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Feathered Friends in Flight is a bird show, not this Lion King celebration.",
+          "sources": [
+            "b21-1146-0"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Finding Nemo: The Musical is a different film adaptation and not the Harambe Lion King show.",
+          "sources": [
+            "b21-1146-0"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The former Harambe Nights event could overlap the old broad description. Final options and venue identify the regular Festival; celebrates avoids asserting a scene-for-scene retelling."
+      }
+    },
+    {
+      "questionId": 1147,
+      "hash": "cc4752b9f8c866aa32d40ffbe27df4816345bd16e8bfe6da626cba9a27fb2ef9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. Between means the adjoining pavilion position around the World Showcase promenade, not the distant straight-line area across the lagoon. The country sequence and separate location headings exclude the other three.",
+      "context": "The named park and historical event, or the explicitly dated November 2026 configuration.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-06",
+      "premise": {
+        "reason": "The American Adventure is between Italy and Japan in World Showcase.",
+        "sources": [
+          "b21-1147-0",
+          "b21-1147-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The overview explicitly gives Italy and Japan as its neighbors.",
+          "sources": [
+            "b21-1147-0",
+            "b21-1147-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Germany is on the opposite side of Italy, not between Italy and Japan.",
+          "sources": [
+            "b21-1147-0",
+            "b21-1147-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Morocco is beyond Japan, not between the named neighbors.",
+          "sources": [
+            "b21-1147-0",
+            "b21-1147-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "France is beyond Morocco, not between Italy and Japan.",
+          "sources": [
+            "b21-1147-0",
+            "b21-1147-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Between means the adjoining pavilion position around the World Showcase promenade, not the distant straight-line area across the lagoon. The country sequence and separate location headings exclude the other three."
+      }
+    },
+    {
+      "questionId": 1148,
+      "hash": "56a33eec381ee7a64148c0667f3b54fe7afe1caf3e520e4e3002be7d62b350b5",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. The present-tense premise was obsolete after July 2025. Final wording is explicitly historical and specifies Florida, not the still-existing Disneyland island; the surrounding water name is not confused with a transportation lagoon.",
+      "context": "The named park and historical event, or the explicitly dated November 2026 configuration.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Magic Kingdom's former Tom Sawyer Island stood in the Rivers of America and closed in 2025.",
+        "sources": [
+          "b21-1148-0",
+          "b21-1148-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Rivers of America is the body of water containing the former island.",
+          "sources": [
+            "b21-1148-0",
+            "b21-1148-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Seven Seas Lagoon is outside Magic Kingdom, not the island's river.",
+          "sources": [
+            "b21-1148-0",
+            "b21-1148-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bay Lake is a separate resort lake, not the island's river.",
+          "sources": [
+            "b21-1148-0",
+            "b21-1148-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Discovery River is associated with Animal Kingdom, not this Magic Kingdom island.",
+          "sources": [
+            "b21-1148-0",
+            "b21-1148-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The present-tense premise was obsolete after July 2025. Final wording is explicitly historical and specifies Florida, not the still-existing Disneyland island; the surrounding water name is not confused with a transportation lagoon."
+      }
+    },
+    {
+      "questionId": 1149,
+      "hash": "a0d0c55c8304991848d8d55b33a3818da14010f646ecd0a9c43b4517afb964f0",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. The real mountain also borders Italy, which is not among these choices; the stem does not claim it lies exclusively in Switzerland. None of the three listed wrong countries contains that peak.",
+      "context": "The named park and historical event, or the explicitly dated November 2026 configuration.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The company archive identifies the real Matterhorn peak in Switzerland as the attraction's inspiration.",
+        "sources": [
+          "b21-1149-0"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Switzerland is the country expressly identified in the archive account.",
+          "sources": [
+            "b21-1149-0"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Austria is not the country identified for the inspiration.",
+          "sources": [
+            "b21-1149-0"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Germany is not the country identified for the inspiration.",
+          "sources": [
+            "b21-1149-0"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "France is not the country identified for the inspiration.",
+          "sources": [
+            "b21-1149-0"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The real mountain also borders Italy, which is not among these choices; the stem does not claim it lies exclusively in Switzerland. None of the three listed wrong countries contains that peak."
+      }
+    },
+    {
+      "questionId": 1151,
+      "hash": "5e6c92834af2dc7dc350217dc5bb8d3a4cb997be447bde24adc453e64971ed39",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. The resort's first park and its second park have different openings. #2241 asks the later Fantasy Springs expansion, so its 2024 answer cannot answer this park-opening question.",
+      "context": "The named park and historical event, or the explicitly dated November 2026 configuration.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The operator's fact book records Tokyo DisneySea's opening as September 4, 2001.",
+        "sources": [
+          "b21-1151-0"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "2001 is the year in the operator's recorded date.",
+          "sources": [
+            "b21-1151-0"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1983 is Tokyo Disneyland's opening year in the separate row.",
+          "sources": [
+            "b21-1151-0"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1992 is not DisneySea's recorded opening year.",
+          "sources": [
+            "b21-1151-0"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2016 is not DisneySea's recorded opening year.",
+          "sources": [
+            "b21-1151-0"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The resort's first park and its second park have different openings. #2241 asks the later Fantasy Springs expansion, so its 2024 answer cannot answer this park-opening question."
+      }
+    },
+    {
+      "questionId": 1152,
+      "hash": "dc9c4c81b5d3d82e7855754b730fd64c33d1479f08c0010486abad7ccc9625e3",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final wording and all four options reviewed. This is a constructed park landmark, not a Japanese natural volcano or the Matterhorn. The source repeatedly identifies the same erupting harbor-view mountain, excluding other named Disney mountains.",
+      "context": "The named park and historical event, or the explicitly dated November 2026 configuration.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-06",
+      "premise": {
+        "reason": "Tokyo Disney Resort sponsor Panasonic names the prominent erupting volcano across the entrance harbor Mount Prometheus.",
+        "sources": [
+          "b21-1152-0",
+          "b21-1152-1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The sponsor's named harbor landmark is Mount Prometheus.",
+          "sources": [
+            "b21-1152-0",
+            "b21-1152-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mount Mayday is not the volcano named in this Tokyo park description.",
+          "sources": [
+            "b21-1152-0",
+            "b21-1152-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mount Gushmore is not the volcano named in this Tokyo park description.",
+          "sources": [
+            "b21-1152-0",
+            "b21-1152-1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mount Harrison is not the volcano named in this Tokyo park description.",
+          "sources": [
+            "b21-1152-0",
+            "b21-1152-1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "This is a constructed park landmark, not a Japanese natural volcano or the Matterhorn. The source repeatedly identifies the same erupting harbor-view mountain, excluding other named Disney mountains."
+      }
+    }
+  ]
+}

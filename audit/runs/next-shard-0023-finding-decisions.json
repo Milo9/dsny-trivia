@@ -1,0 +1,571 @@
+[
+  {
+    "finding": {
+      "id": "answer-style-9a637e772a2ea3886ae5",
+      "kind": "answer-style",
+      "questionIds": [
+        1250
+      ],
+      "detail": "Correct answer is unusually verbose relative to distractors.",
+      "signature": "9a637e772a2ea3886ae50d79f0d1e2d4a4a8374d5e334c083ea1610eff1511c0",
+      "decision": null
+    },
+    "reason": "All four are ordinary song titles. Everybody Wants to Be a Cat has its normal full title, not an explanatory answer extension. The band/location scene distinguishes the answer.",
+    "questions": [
+      {
+        "id": 1250,
+        "question": "In The Aristocats (1970), which jazz number do Scat Cat and his band perform at O'Malley's home?",
+        "answers": [
+          "Ev'rybody Wants to Be a Cat",
+          "Scales and Arpeggios",
+          "Thomas O'Malley Cat",
+          "The Aristocats"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-08"
+  },
+  {
+    "finding": {
+      "id": "answer-style-9e82e495e6cc0e610924",
+      "kind": "answer-style",
+      "questionIds": [
+        1241
+      ],
+      "detail": "Correct answer is unusually verbose relative to distractors.",
+      "signature": "9e82e495e6cc0e610924441b4d2fa8f43f69e7a174752abe40cd21d9c2a757a7",
+      "decision": null
+    },
+    "reason": "The full standard film title Snow White and the Seven Dwarfs is longer naturally. All four options are film titles; no explanatory material singles out the answer.",
+    "questions": [
+      {
+        "id": 1241,
+        "question": "In which Disney film does the song With a Smile and a Song appear?",
+        "answers": [
+          "Snow White and the Seven Dwarfs",
+          "Cinderella",
+          "Sleeping Beauty",
+          "Bambi"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-08"
+  },
+  {
+    "finding": {
+      "id": "answer-style-d9dd1638f01da1049772",
+      "kind": "answer-style",
+      "questionIds": [
+        1216
+      ],
+      "detail": "Correct answer is unusually verbose relative to distractors.",
+      "signature": "d9dd1638f01da104977291118b8ebd53af3c8fdb1daf46f1893a5f39a556b9cc",
+      "decision": null
+    },
+    "reason": "Mickey & Friends Festival of Foods is the complete normal venue name. The stem no longer repeats Mickey and Friends; all answers are venue names, not asymmetric explanations.",
+    "questions": [
+      {
+        "id": 1216,
+        "question": "On the Disney Wish, which open-air dining area groups poolside counters serving pizza, tacos, burgers and barbecue?",
+        "answers": [
+          "Mickey & Friends Festival of Foods",
+          "Marceline Market",
+          "Flo's Cafe",
+          "Cabanas"
+        ],
+        "difficulty": "medium",
+        "category": "cruise"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-08"
+  },
+  {
+    "finding": {
+      "id": "duplicate-0cc1f0d9252544fb3034",
+      "kind": "duplicate",
+      "questionIds": [
+        1221,
+        1223
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "0cc1f0d9252544fb3034bb5b98bb305abfc3a553340c97ed7f995328790361e3",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "reason": "Dream Admiral Donald and Wish Cinderella are separate statue-ship assignments. Neither question supplies the other character location; knowing one mapping does not establish the other.",
+    "questions": [
+      {
+        "id": 1221,
+        "question": "Which Disney Cruise Line ship has a bronze statue of Admiral Donald in its atrium?",
+        "answers": [
+          "Disney Dream",
+          "Disney Magic",
+          "Disney Wonder",
+          "Disney Fantasy"
+        ],
+        "difficulty": "hard",
+        "category": "cruise"
+      },
+      {
+        "id": 1223,
+        "question": "Which Disney Cruise Line ship has a bronze statue of Cinderella in its Grand Hall?",
+        "answers": [
+          "Disney Wish",
+          "Disney Fantasy",
+          "Disney Dream",
+          "Disney Magic"
+        ],
+        "difficulty": "hard",
+        "category": "cruise"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-08"
+  },
+  {
+    "finding": {
+      "id": "duplicate-0f7dc73092265c56e76b",
+      "kind": "duplicate",
+      "questionIds": [
+        688,
+        1207
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "0f7dc73092265c56e76bf0de6fb2c9c5236650ac2fedf6b29b9ac3d9af9abae1",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "reason": "First feature released after Walt death (#688) and last personally supervised feature (#1207) are different production milestones. Removed the 1967 stem clue; first posthumous release does not logically establish personal supervision.",
+    "questions": [
+      {
+        "id": 688,
+        "question": "What was the first new Disney animated feature released after Walt Disney's death in 1966?",
+        "answers": [
+          "The Jungle Book",
+          "The Aristocats",
+          "Robin Hood",
+          "Sleeping Beauty"
+        ],
+        "difficulty": "hard",
+        "category": "walt"
+      },
+      {
+        "id": 1207,
+        "question": "Which animated feature was the last that Walt Disney personally supervised?",
+        "answers": [
+          "The Jungle Book",
+          "The Aristocats",
+          "Robin Hood",
+          "The Sword in the Stone"
+        ],
+        "difficulty": "medium",
+        "category": "walt"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-08"
+  },
+  {
+    "finding": {
+      "id": "duplicate-a143b4f17948ae9a85c7",
+      "kind": "duplicate",
+      "questionIds": [
+        1223,
+        2352
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "a143b4f17948ae9a85c7dbe8bc73870ce12c145dcf563ad78391ab00efac4923",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "reason": "Wish Cinderella statue and Treasure sharing Wish dimensions/class concern separate attributes. Ship size does not identify an atrium character.",
+    "questions": [
+      {
+        "id": 1223,
+        "question": "Which Disney Cruise Line ship has a bronze statue of Cinderella in its Grand Hall?",
+        "answers": [
+          "Disney Wish",
+          "Disney Fantasy",
+          "Disney Dream",
+          "Disney Magic"
+        ],
+        "difficulty": "hard",
+        "category": "cruise"
+      },
+      {
+        "id": 2352,
+        "question": "At about 1,119 feet long with 144,000 gross tons, the Disney Treasure shares its exact size and ship class with which earlier Disney Cruise Line ship?",
+        "answers": [
+          "Disney Wish",
+          "Disney Dream",
+          "Disney Fantasy",
+          "Disney Magic"
+        ],
+        "difficulty": "hard",
+        "category": "cruise"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-08"
+  },
+  {
+    "finding": {
+      "id": "duplicate-bda7dea8d2cbcc461c8e",
+      "kind": "duplicate",
+      "questionIds": [
+        1221,
+        2276
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "bda7dea8d2cbcc461c8e3f9cbc35224834ab455c12cb420320c52ea8ba98f6ff",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "reason": "Dream Admiral Donald statue and Dream Beauty and Beast stage show concern different onboard features. Knowing a show ship does not identify the statue ship.",
+    "questions": [
+      {
+        "id": 1221,
+        "question": "Which Disney Cruise Line ship has a bronze statue of Admiral Donald in its atrium?",
+        "answers": [
+          "Disney Dream",
+          "Disney Magic",
+          "Disney Wonder",
+          "Disney Fantasy"
+        ],
+        "difficulty": "hard",
+        "category": "cruise"
+      },
+      {
+        "id": 2276,
+        "question": "The elaborate Beauty and the Beast stage show that debuted in the Walt Disney Theatre in 2017 plays exclusively on which Disney Cruise Line ship?",
+        "answers": [
+          "Disney Dream",
+          "Disney Fantasy",
+          "Disney Wish",
+          "Disney Magic"
+        ],
+        "difficulty": "medium",
+        "category": "cruise"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-08"
+  },
+  {
+    "finding": {
+      "id": "duplicate-bdcdcfaa2f54bb2c8523",
+      "kind": "duplicate",
+      "questionIds": [
+        1222,
+        1223
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "bdcdcfaa2f54bb2c85231a6098dd37a1bb9c0e42825252f641d7f0e5dd2f9a6c",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "reason": "Fantasy Minnie and Wish Cinderella are independent statue assignments, not a repeated character-ship fact. Neither stem provides the other answer.",
+    "questions": [
+      {
+        "id": 1222,
+        "question": "Which Disney Cruise Line ship has a bronze statue of Mademoiselle Minnie in its atrium?",
+        "answers": [
+          "Disney Fantasy",
+          "Disney Dream",
+          "Disney Wonder",
+          "Disney Magic"
+        ],
+        "difficulty": "hard",
+        "category": "cruise"
+      },
+      {
+        "id": 1223,
+        "question": "Which Disney Cruise Line ship has a bronze statue of Cinderella in its Grand Hall?",
+        "answers": [
+          "Disney Wish",
+          "Disney Fantasy",
+          "Disney Dream",
+          "Disney Magic"
+        ],
+        "difficulty": "hard",
+        "category": "cruise"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-08"
+  },
+  {
+    "finding": {
+      "id": "duplicate-d09431dfbcbd8ff5d9c5",
+      "kind": "duplicate",
+      "questionIds": [
+        1221,
+        1222
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "d09431dfbcbd8ff5d9c577fb83380a34115c4c62896087a19adb159f2ba19153",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "reason": "Dream Donald and Fantasy Minnie are independent statue-ship mappings. There is no exhaustive two-ship premise allowing one mapping to deduce the other.",
+    "questions": [
+      {
+        "id": 1221,
+        "question": "Which Disney Cruise Line ship has a bronze statue of Admiral Donald in its atrium?",
+        "answers": [
+          "Disney Dream",
+          "Disney Magic",
+          "Disney Wonder",
+          "Disney Fantasy"
+        ],
+        "difficulty": "hard",
+        "category": "cruise"
+      },
+      {
+        "id": 1222,
+        "question": "Which Disney Cruise Line ship has a bronze statue of Mademoiselle Minnie in its atrium?",
+        "answers": [
+          "Disney Fantasy",
+          "Disney Dream",
+          "Disney Wonder",
+          "Disney Magic"
+        ],
+        "difficulty": "hard",
+        "category": "cruise"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-08"
+  },
+  {
+    "finding": {
+      "id": "duplicate-d7b0b43243f26803bf23",
+      "kind": "duplicate",
+      "questionIds": [
+        1222,
+        2277
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "d7b0b43243f26803bf23291515b18914671535c5bdbc67f27c3d70a33a043d97",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "reason": "Fantasy Minnie statue and Fantasy Aladdin show require knowledge of two different onboard features. Same ship answer does not duplicate the tested fact.",
+    "questions": [
+      {
+        "id": 1222,
+        "question": "Which Disney Cruise Line ship has a bronze statue of Mademoiselle Minnie in its atrium?",
+        "answers": [
+          "Disney Fantasy",
+          "Disney Dream",
+          "Disney Wonder",
+          "Disney Magic"
+        ],
+        "difficulty": "hard",
+        "category": "cruise"
+      },
+      {
+        "id": 2277,
+        "question": "Disney's Aladdin - A Musical Spectacular plays in the Walt Disney Theatre on the Disney Wish and which other ship?",
+        "answers": [
+          "Disney Fantasy",
+          "Disney Dream",
+          "Disney Magic",
+          "Disney Wonder"
+        ],
+        "difficulty": "medium",
+        "category": "cruise"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-08"
+  },
+  {
+    "finding": {
+      "id": "leak-3149f999306fc5dbc794",
+      "kind": "leak",
+      "questionIds": [
+        1236
+      ],
+      "detail": {
+        "tier": 2,
+        "token": "mickey"
+      },
+      "signature": "3149f999306fc5dbc794d43789254dd2a6b0db03224828fe5cf77c8464319080",
+      "decision": null
+    },
+    "reason": "Mickey Mouse identifies which character silhouettes are asked about; hidden was removed from the stem. The needed term is Hidden Mickeys; generic hidden-character wording would include unrelated Easter eggs.",
+    "questions": [
+      {
+        "id": 1236,
+        "question": "What do Disney cruise fans call Mickey Mouse silhouettes subtly worked into decor and design?",
+        "answers": [
+          "Hidden Mickeys",
+          "Magic Marks",
+          "Castaway Icons",
+          "Pixie Prints"
+        ],
+        "difficulty": "easy",
+        "category": "cruise"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-08"
+  },
+  {
+    "finding": {
+      "id": "leak-4889a0fac77b67964057",
+      "kind": "leak",
+      "questionIds": [
+        1247
+      ],
+      "detail": {
+        "tier": 2,
+        "token": "tramp"
+      },
+      "signature": "4889a0fac77b6796405715e2623c292b592c30b015a8eb9f385b9ed84353327b",
+      "decision": null
+    },
+    "reason": "Tramp appears in the necessary film title Lady and the Tramp. It does not supply Peg song: all four options belong to that film and the pound performance determines the answer.",
+    "questions": [
+      {
+        "id": 1247,
+        "question": "In Lady and the Tramp (1955), which song does Peg perform in the dog pound?",
+        "answers": [
+          "He's a Tramp",
+          "Bella Notte",
+          "La La Lu",
+          "Peace on Earth"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-08"
+  },
+  {
+    "finding": {
+      "id": "leak-90f5d4be529a09bf51b4",
+      "kind": "leak",
+      "questionIds": [
+        1254
+      ],
+      "detail": {
+        "tier": 2,
+        "token": "street"
+      },
+      "signature": "90f5d4be529a09bf51b4b4afea51c4f9f6c8c128103b973b4ff1635f006c0ccc",
+      "decision": null
+    },
+    "reason": "Street context describes the scene, but Why Should I Worry also concerns street life. Rita as singer and her lesson uniquely identify Streets of Gold; street alone is not enough.",
+    "questions": [
+      {
+        "id": 1254,
+        "question": "In Oliver & Company (1988), which song does Rita sing to teach Oliver about life on the streets?",
+        "answers": [
+          "Streets of Gold",
+          "Why Should I Worry?",
+          "Good Company",
+          "Perfect Isn't Easy"
+        ],
+        "difficulty": "hard",
+        "category": "music"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-08"
+  },
+  {
+    "finding": {
+      "id": "leak-9bd22d152d7671044c9a",
+      "kind": "leak",
+      "questionIds": [
+        1252
+      ],
+      "detail": {
+        "tier": 2,
+        "token": "rescue"
+      },
+      "signature": "9bd22d152d7671044c9a51367ad44424ccf2b9987112d2fa458524eaee4591a4",
+      "decision": null
+    },
+    "reason": "Rescue is a stemmed overlap from the necessary film title The Rescuers. All four options are songs from that film; the opening delegates anthem distinguishes the answer.",
+    "questions": [
+      {
+        "id": 1252,
+        "question": "In The Rescuers (1977), which anthem do the mouse delegates sing at their opening emergency meeting?",
+        "answers": [
+          "Rescue Aid Society",
+          "Someone's Waiting for You",
+          "Tomorrow Is Another Day",
+          "The Journey"
+        ],
+        "difficulty": "hard",
+        "category": "music"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-08"
+  },
+  {
+    "finding": {
+      "id": "leak-d6ce016b0ce065bc1f5a",
+      "kind": "leak",
+      "questionIds": [
+        1253
+      ],
+      "detail": {
+        "tier": 2,
+        "token": "greatest"
+      },
+      "signature": "d6ce016b0ce065bc1f5a75c6423457bf8c347c330187f015f76d45b009899c0e",
+      "decision": null
+    },
+    "reason": "Great in the film title Great Mouse Detective is stemmed to greatest in the answer. This incidental title overlap does not identify Ratigan henchmen song or the Bartholomew interruption.",
+    "questions": [
+      {
+        "id": 1253,
+        "question": "In The Great Mouse Detective (1986), which song has Ratigan's henchmen praising their boss before Bartholomew calls him a rat?",
+        "answers": [
+          "The World's Greatest Criminal Mind",
+          "Goodbye So Soon",
+          "Let Me Be Good to You",
+          "The Rat Trap"
+        ],
+        "difficulty": "hard",
+        "category": "music"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-08"
+  }
+]

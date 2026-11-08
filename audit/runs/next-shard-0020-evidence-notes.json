@@ -1,0 +1,3037 @@
+{
+  "schema": 1,
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "sourcesChecked": [
+    "b20-1051",
+    "b20-1051-cor1",
+    "b20-1052",
+    "b20-1052-context",
+    "b20-1053",
+    "b20-1053-cor1",
+    "b20-1053-cor2",
+    "b20-1054",
+    "b20-1054-cor1",
+    "b20-1054-context",
+    "b20-1055",
+    "b20-1055-cor1",
+    "b20-1056",
+    "b20-1057",
+    "b20-1057-cor1",
+    "b20-1057-context",
+    "b20-1059",
+    "b20-1059-context",
+    "b20-1060",
+    "b20-1060-cor1",
+    "b20-1060-context",
+    "b20-1061",
+    "b20-1061-context",
+    "b20-1062",
+    "b20-1063",
+    "b20-1064",
+    "b20-1064-context",
+    "b20-1065",
+    "b20-1065-cor1",
+    "b20-1066",
+    "b20-1066-cor1",
+    "b20-1066-context",
+    "b20-1067",
+    "b20-1067-cor1",
+    "b20-1067-context",
+    "b20-1068",
+    "b20-1068-context",
+    "b20-1069",
+    "b20-1069-cor1",
+    "b20-1070",
+    "b20-1070-context",
+    "b20-1071",
+    "b20-1071-cor1",
+    "b20-1071-context",
+    "b20-1072",
+    "b20-1072-cor1",
+    "b20-1073",
+    "b20-1074",
+    "b20-1076",
+    "b20-1076-context",
+    "b20-1077",
+    "b20-1077-context",
+    "b20-1078",
+    "b20-1079",
+    "b20-1079-cor1",
+    "b20-1080",
+    "b20-1080-cor1",
+    "b20-1081",
+    "b20-1081-cor1",
+    "b20-1081-context",
+    "b20-1082",
+    "b20-1083",
+    "b20-1083-cor1",
+    "b20-1083-context",
+    "b20-1084",
+    "b20-1084-cor1",
+    "b20-1084-context",
+    "b20-1085",
+    "b20-1085-cor1",
+    "b20-1086",
+    "b20-1089",
+    "b20-1089-cor1",
+    "b20-1089-context",
+    "b20-1090",
+    "b20-1090-cor1",
+    "b20-1090-context",
+    "b20-1091",
+    "b20-1091-context",
+    "b20-1092",
+    "b20-1092-context",
+    "b20-1093",
+    "b20-1093-context",
+    "b20-1094",
+    "b20-1094-cor1",
+    "b20-1094-context",
+    "b20-1095",
+    "b20-1095-cor1",
+    "b20-1095-context",
+    "b20-1096",
+    "b20-1097",
+    "b20-1097-cor1",
+    "b20-1097-context",
+    "b20-1098",
+    "b20-1098-context",
+    "b20-1099",
+    "b20-1100",
+    "b20-1100-cor1"
+  ],
+  "reviews": [
+    {
+      "questionId": 1051,
+      "hash": "0a87843d98718bb3f51c002e194d1ae08441423cc70c8eb3e2170c76e9886ebf",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. Other gems can also appear; the stem does not claim diamonds are its only product. None of the three metal/coal alternatives names the depicted diamond mine.",
+      "context": "In Snow White and the Seven Dwarfs, what kind of mine do the dwarfs work in? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney identifies the mine from Snow White as a diamond mine; its work sequence contains sparkling jewels.",
+        "sources": [
+          "b20-1051",
+          "b20-1051-cor1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney explicitly calls it the diamond mine from the film.",
+          "sources": [
+            "b20-1051",
+            "b20-1051-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gold is a metal, unlike the jewels identified in this mine.",
+          "sources": [
+            "b20-1051",
+            "b20-1051-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Coal does not match the identified diamond workings.",
+          "sources": [
+            "b20-1051",
+            "b20-1051-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Silver is not the material identified by Disney.",
+          "sources": [
+            "b20-1051",
+            "b20-1051-cor1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other gems can also appear; the stem does not claim diamonds are its only product. None of the three metal/coal alternatives names the depicted diamond mine."
+      }
+    },
+    {
+      "questionId": 1052,
+      "hash": "0aa7e310b502658b955376009a4365615ac6c7a0dbd2c3f6feb4156a9fee8b63",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. Silent means no spoken dialogue, not no sound: Gideon hiccups. The 1940 date excludes the differently named remake sidekick.",
+      "context": "In Pinocchio (1940), what is the name of Honest John's silent cat companion? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Gideon is Honest Johns mute cat accomplice; Figaro is Geppettos kitten, Lampwick a boy and Stromboli a puppeteer.",
+        "sources": [
+          "b20-1052"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Gideon is the named mute feline accomplice.",
+          "sources": [
+            "b20-1052"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Figaro belongs to Geppetto, not Honest John.",
+          "sources": [
+            "b20-1052"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lampwick is the boy at Pleasure Island, not the cat.",
+          "sources": [
+            "b20-1052"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Stromboli is the puppeteer who buys Pinocchio.",
+          "sources": [
+            "b20-1052"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Silent means no spoken dialogue, not no sound: Gideon hiccups. The 1940 date excludes the differently named remake sidekick."
+      }
+    },
+    {
+      "questionId": 1053,
+      "hash": "11a3d7535a7eb61fdb24f80a8d9eaeaf5e3ba333a5fc74609660a11325429c7d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. Ostriches also wear ballet costume, but are not listed. The literal listed choices leave one answer; rated easy because the alternatives are absent from the segment.",
+      "context": "In Fantasia's Dance of the Hours segment, which animal famously wears a tutu? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Hyacinth is the hippo dancer in Dance of the Hours. The ballet groups are ostriches, hippos, elephants and alligators.",
+        "sources": [
+          "b20-1053",
+          "b20-1053-cor1",
+          "b20-1053-cor2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The hippo prima ballerina wears a tutu.",
+          "sources": [
+            "b20-1053",
+            "b20-1053-cor1",
+            "b20-1053-cor2"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Lions are not one of this ballet sequence’s four animal groups.",
+          "sources": [
+            "b20-1053",
+            "b20-1053-cor1",
+            "b20-1053-cor2"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Giraffes are not one of its four animal groups.",
+          "sources": [
+            "b20-1053",
+            "b20-1053-cor1",
+            "b20-1053-cor2"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Zebras are not one of its four animal groups.",
+          "sources": [
+            "b20-1053",
+            "b20-1053-cor1",
+            "b20-1053-cor2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Ostriches also wear ballet costume, but are not listed. The literal listed choices leave one answer; rated easy because the alternatives are absent from the segment."
+      }
+    },
+    {
+      "questionId": 1054,
+      "hash": "70f67569e9a0d7133526d5b483bbedcb2dbbd44137db1b9ce4e75efafa2b0a96",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. The feather has no actual magical power. The question asks confidence rather than the physical source of flight, and specifies the 1941 film.",
+      "context": "In Dumbo (1941), what object gives Dumbo confidence before he realizes he can fly without it? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The crows supply a supposedly magic feather; Timothy admits it is a gag and Dumbo can fly without it.",
+        "sources": [
+          "b20-1054",
+          "b20-1054-cor1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The magic feather is the expressly named confidence aid.",
+          "sources": [
+            "b20-1054",
+            "b20-1054-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The hat is costume, not the flight-confidence device in this exchange.",
+          "sources": [
+            "b20-1054",
+            "b20-1054-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "No peanut is the device Timothy admits was a gag; he names the feather.",
+          "sources": [
+            "b20-1054",
+            "b20-1054-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "No ticket is the device Timothy admits was a gag; he names the feather.",
+          "sources": [
+            "b20-1054",
+            "b20-1054-cor1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The feather has no actual magical power. The question asks confidence rather than the physical source of flight, and specifies the 1941 film."
+      }
+    },
+    {
+      "questionId": 1055,
+      "hash": "466d020f91e054df2941f00456c620b47bc68904227d697a1271d06f49db1516",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. Removed the near-homophone Feline, which tested spelling rather than the relationship. The other three are distinct named forest characters, none Bambi’s depicted romantic partner.",
+      "context": "In Bambi, who becomes Bambi's love interest? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Bambi falls in love with Faline. Flower is his skunk friend, Thumper his rabbit friend, and Ronno the rival stag.",
+        "sources": [
+          "b20-1055",
+          "b20-1055-cor1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Faline is the doe whose affections Bambi wins.",
+          "sources": [
+            "b20-1055",
+            "b20-1055-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Flower is a skunk friend with his own mate.",
+          "sources": [
+            "b20-1055",
+            "b20-1055-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Thumper is a rabbit friend with his own mate.",
+          "sources": [
+            "b20-1055",
+            "b20-1055-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ronno competes against Bambi for Faline.",
+          "sources": [
+            "b20-1055",
+            "b20-1055-cor1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the near-homophone Feline, which tested spelling rather than the relationship. The other three are distinct named forest characters, none Bambi’s depicted romantic partner."
+      }
+    },
+    {
+      "questionId": 1056,
+      "hash": "332239b5d2a7476be9b418b01abadbac812685e3018d6522fd1937baa2a3da28",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. Dropped the unstable yellow-shirt clue. This asks the identity in a specified rescue scene; it does not imply Gus is the only plump mouse or that the other mice never need help.",
+      "context": "In Cinderella (1950), which plump mouse does Cinderella rescue from a mousetrap? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The restoration team identifies the trapped mouse Cinderella leans toward as Gus; the scene is the introduction of the plump mouse.",
+        "sources": [
+          "b20-1056"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The restoration account identifies Gus in the mousetrap.",
+          "sources": [
+            "b20-1056"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The mouse in this specific introduction is identified as Gus, not Jaq.",
+          "sources": [
+            "b20-1056"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The mouse in this specific introduction is identified as Gus, not Suzy.",
+          "sources": [
+            "b20-1056"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The mouse in this specific introduction is identified as Gus, not Perla.",
+          "sources": [
+            "b20-1056"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Dropped the unstable yellow-shirt clue. This asks the identity in a specified rescue scene; it does not imply Gus is the only plump mouse or that the other mice never need help."
+      }
+    },
+    {
+      "questionId": 1057,
+      "hash": "cc54ba54c48ddeea2b9edc55619dc96ec95bdeb769f33977d283a250e9ace2c0",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. Specifies the 1951 animation and first encounter. Later movement or other Wonderland adaptations cannot make a tree, cup or chessboard the identified mushroom.",
+      "context": "In Alice in Wonderland (1951), where is the Caterpillar perched when Alice meets him? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The hookah-smoking Caterpillar occupies a mushroom and explains that its two sides alter Alices size.",
+        "sources": [
+          "b20-1057",
+          "b20-1057-cor1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The mushroom is his perch and the object he tells Alice to eat.",
+          "sources": [
+            "b20-1057",
+            "b20-1057-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The teacup belongs to tea-party imagery, not this encounter’s perch.",
+          "sources": [
+            "b20-1057",
+            "b20-1057-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A tree branch is not the mushroom perch at this encounter.",
+          "sources": [
+            "b20-1057",
+            "b20-1057-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A chessboard is not the mushroom perch at this encounter.",
+          "sources": [
+            "b20-1057",
+            "b20-1057-cor1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Specifies the 1951 animation and first encounter. Later movement or other Wonderland adaptations cannot make a tree, cup or chessboard the identified mushroom."
+      }
+    },
+    {
+      "questionId": 1059,
+      "hash": "a047c1e5ab5c1deacb317bcbe9d2292f8b8a700fd05111d9d006cfddf5f067d4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. The question asks what the owners call one another, not their legal names. Its 1955 context avoids mixing adaptations and distinguishes owners from restaurant staff.",
+      "context": "In Lady and the Tramp (1955), what do Lady's owners call each other? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Lady knows her human owners by the affectionate names Jim Dear and Darling. Tony and Joe are restaurant staff; Jock and Trusty are neighborhood dogs.",
+        "sources": [
+          "b20-1059"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Jim Dear and Darling are the owners’ affectionate names.",
+          "sources": [
+            "b20-1059"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "John and Mary are not the names used by this couple in the 1955 film.",
+          "sources": [
+            "b20-1059"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tony and Joe work at the restaurant.",
+          "sources": [
+            "b20-1059"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jock and Trusty are Lady’s canine neighbors.",
+          "sources": [
+            "b20-1059"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The question asks what the owners call one another, not their legal names. Its 1955 context avoids mixing adaptations and distinguishes owners from restaurant staff."
+      }
+    },
+    {
+      "questionId": 1060,
+      "hash": "063724f448a1f39f144b69ba6b336a0d052a821acab9e52a2d2029bd282e944a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. D23 spells it Radcliff in one entry; Disney Store and cast accounts support Radcliffe. These are spelling variants of the same surname, unlike Dearly; no spelling variant appears as a competing option.",
+      "context": "In the animated 101 Dalmatians (1961), what is Roger and Anita's last name after they marry? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 1961 animated couple are Roger and Anita Radcliffe. Dearly is an adaptation/book variant; Pongo is their dog and Dalmatian the breed.",
+        "sources": [
+          "b20-1060",
+          "b20-1060-cor1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Both human characters are identified as Radcliffe.",
+          "sources": [
+            "b20-1060",
+            "b20-1060-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dearly belongs to another version; the stem now specifies the 1961 animation.",
+          "sources": [
+            "b20-1060",
+            "b20-1060-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dalmatian is the dogs’ breed, not this human surname.",
+          "sources": [
+            "b20-1060",
+            "b20-1060-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pongo is Roger’s dog, not the human surname.",
+          "sources": [
+            "b20-1060",
+            "b20-1060-cor1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "D23 spells it Radcliff in one entry; Disney Store and cast accounts support Radcliffe. These are spelling variants of the same surname, unlike Dearly; no spelling variant appears as a competing option."
+      }
+    },
+    {
+      "questionId": 1061,
+      "hash": "ff76ffa21d1179ccbada0bc4512a7511cce052c4ec94af04ec6d4e0803772576",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. Distinguished #1108: knowing the father Ector does not identify the son Kay without a second relationship fact. Broader Arthurian legends do not replace this film’s household.",
+      "context": "In The Sword in the Stone, who is Arthur's foster brother? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Kay is Arthurs older foster brother and Ectors son; Ector is the foster father; Pellinore is Ectors friend.",
+        "sources": [
+          "b20-1061"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Kay is explicitly Arthur’s foster brother.",
+          "sources": [
+            "b20-1061"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ector is Arthur’s foster father.",
+          "sources": [
+            "b20-1061"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pellinore is Ector’s friend, not Arthur’s foster brother.",
+          "sources": [
+            "b20-1061"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lancelot is not the foster brother identified in this film.",
+          "sources": [
+            "b20-1061"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished #1108: knowing the father Ector does not identify the son Kay without a second relationship fact. Broader Arthurian legends do not replace this film’s household."
+      }
+    },
+    {
+      "questionId": 1062,
+      "hash": "816a0333a05ccd1d9ae7b797efdd2924e2737f4173bab7baca9582f3f4969bd7",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. The date matters: other adaptations have different endings. His previous visits to jungle locations do not satisfy the specified ending.",
+      "context": "In The Jungle Book (1967), where does Mowgli go at the end of the film? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Mowgli follows the girl into the Man-Village; Baloo and Bagheera return to the jungle.",
+        "sources": [
+          "b20-1062"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The final paragraph expressly sends Mowgli into the Man-Village.",
+          "sources": [
+            "b20-1062"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Louie’s temple is an earlier episode, not his final destination.",
+          "sources": [
+            "b20-1062"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The wolf den is his earlier home, not his final destination.",
+          "sources": [
+            "b20-1062"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A river palace is not the village he follows the girl into.",
+          "sources": [
+            "b20-1062"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The date matters: other adaptations have different endings. His previous visits to jungle locations do not satisfy the specified ending."
+      }
+    },
+    {
+      "questionId": 1063,
+      "hash": "f6ede4fa3dd5eb2ed860d8e2b5d77eaf129318cf1f02b7fd5816f246ff02244b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. Ownership is distinct from O’Malley or Roquefort helping the cats. The opening and inheritance plot fix the owner rather than merely where the cats happen to stay.",
+      "context": "In The Aristocats, who owns Duchess and her kittens? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Duchess and the kittens belong to Madame Adelaide Bonfamille; Edgar tries to obtain the inheritance she leaves them.",
+        "sources": [
+          "b20-1063"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "D23 names Madame Bonfamille as the cats’ owner.",
+          "sources": [
+            "b20-1063"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Medusa is not the owner identified in this film.",
+          "sources": [
+            "b20-1063"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lady Tremaine is not the owner identified in this film.",
+          "sources": [
+            "b20-1063"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Anita Radcliffe is not the owner identified in this film.",
+          "sources": [
+            "b20-1063"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Ownership is distinct from O’Malley or Roquefort helping the cats. The opening and inheritance plot fix the owner rather than merely where the cats happen to stay."
+      }
+    },
+    {
+      "questionId": 1064,
+      "hash": "169f81239ea5214108b1199583da4571a3d97431ac4d70789345232ad5c744e7",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. Kept separate from #510, which asks Robin’s species. Being a fox cannot identify his romantic partner. The animated 1973 version is explicit.",
+      "context": "In Disney's animated Robin Hood (1973), who is Robin Hood's love interest? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Robin and Maid Marian declare their love and marry. Lady Kluck is Marians lady-in-waiting.",
+        "sources": [
+          "b20-1064"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Marian is the romantic partner who marries Robin.",
+          "sources": [
+            "b20-1064"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lady Kluck serves Marian and is not the bride.",
+          "sources": [
+            "b20-1064"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sister Sarah is not the bride identified in this film.",
+          "sources": [
+            "b20-1064"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Queen Eleanor is not the bride identified in this film.",
+          "sources": [
+            "b20-1064"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Kept separate from #510, which asks Robin’s species. Being a fox cannot identify his romantic partner. The animated 1973 version is explicit."
+      }
+    },
+    {
+      "questionId": 1065,
+      "hash": "d753b8f2d4e7026f76a6aa9459858f960c23a21af6743e8b293451ce2b91ec6d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. Challenged Owl specifically: he repeats the joke, so the final wording requires the self-introduction, which the transcript assigns uniquely to Gopher.",
+      "context": "When Pooh is stuck in Rabbit's doorway in The Many Adventures of Winnie the Pooh, who introduces himself as 'not in the book'? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The excavation expert says he is not in the book and introduces himself as Gopher. Owl later repeats that Gopher is not in the book.",
+        "sources": [
+          "b20-1065",
+          "b20-1065-cor1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The speaker immediately identifies himself as Gopher.",
+          "sources": [
+            "b20-1065",
+            "b20-1065-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rabbit is the host whose doorway Pooh blocks, not the introducing expert.",
+          "sources": [
+            "b20-1065",
+            "b20-1065-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Owl repeats a third-person comment; he does not introduce himself with the line.",
+          "sources": [
+            "b20-1065",
+            "b20-1065-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Piglet does not introduce himself as the excavation expert.",
+          "sources": [
+            "b20-1065",
+            "b20-1065-cor1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged Owl specifically: he repeats the joke, so the final wording requires the self-introduction, which the transcript assigns uniquely to Gopher."
+      }
+    },
+    {
+      "questionId": 1066,
+      "hash": "c127b034a5a4c8ed7367a329829810a235f357b26431cc063daa8661571c5114",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. The answer names the bayou rather than the Devil’s Eye diamond or New York orphanage. Those are separate facts, and no alternate listed name denotes the same bayou.",
+      "context": "In The Rescuers, what swampy place is Penny taken to? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Penny is imprisoned on an abandoned riverboat in Devils Bayou, Louisiana; Bernard and Bianca follow Medusa there.",
+        "sources": [
+          "b20-1066",
+          "b20-1066-cor1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Devil’s Bayou is the named place of Penny’s captivity.",
+          "sources": [
+            "b20-1066",
+            "b20-1066-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cypress Hollow is not the location named in the captivity sequence.",
+          "sources": [
+            "b20-1066",
+            "b20-1066-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gator Marsh is not the location named in the captivity sequence.",
+          "sources": [
+            "b20-1066",
+            "b20-1066-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Blackwater Bend is not the location named in the captivity sequence.",
+          "sources": [
+            "b20-1066",
+            "b20-1066-cor1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The answer names the bayou rather than the Devil’s Eye diamond or New York orphanage. Those are separate facts, and no alternate listed name denotes the same bayou."
+      }
+    },
+    {
+      "questionId": 1067,
+      "hash": "22ae0f848b15e2ac45b67216cff24dc95f65afc53f40e144582cfae2d091f7ac",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. All final choices are dog names, eliminating the original fox-versus-bird giveaway. #818 tests the hunter Amos Slade; identifying the hunter does not supply Chief’s name.",
+      "context": "In The Fox and the Hound, what is the name of Amos Slade's older hunting dog? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Amos Slade introduces Copper to Chief, his older hunting dog. Chief accompanies the hunt and later breaks his leg.",
+        "sources": [
+          "b20-1067",
+          "b20-1067-cor1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Chief is Slade’s older dog in the plot and cast.",
+          "sources": [
+            "b20-1067",
+            "b20-1067-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bruno is not the older dog named in this household.",
+          "sources": [
+            "b20-1067",
+            "b20-1067-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Trusty is not the older dog named in this household.",
+          "sources": [
+            "b20-1067",
+            "b20-1067-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Napoleon is not the older dog named in this household.",
+          "sources": [
+            "b20-1067",
+            "b20-1067-cor1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All final choices are dog names, eliminating the original fox-versus-bird giveaway. #818 tests the hunter Amos Slade; identifying the hunter does not supply Chief’s name."
+      }
+    },
+    {
+      "questionId": 1068,
+      "hash": "c48aa60307235af784b2eda33563e43cbc5545c47fce0283a941116a21848fd0",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. The stem is about this theatrical film, not every Disney princess. A TV-character name as a wrong option does not turn this into television trivia.",
+      "context": "In The Black Cauldron, what princess joins Taran's quest? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Princess Eilonwy escapes the Horned Kings castle and accompanies Taran, Fflewddur and Gurgi.",
+        "sources": [
+          "b20-1068"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Eilonwy is the princess in the named travel party.",
+          "sources": [
+            "b20-1068"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Atta is not the princess identified in this film’s party.",
+          "sources": [
+            "b20-1068"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kida is not the princess identified in this film’s party.",
+          "sources": [
+            "b20-1068"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Calla is not the princess identified in this film’s party.",
+          "sources": [
+            "b20-1068"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The stem is about this theatrical film, not every Disney princess. A TV-character name as a wrong option does not turn this into television trivia."
+      }
+    },
+    {
+      "questionId": 1069,
+      "hash": "907d872433a837f36e44eface7b851a113e3c46827acdae37ba491e941066972",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. Replaced clockmaker: Flaversham’s mechanical skills could make that seem defensible. The source identifies his actual trade and separately assigns detective and doctor roles.",
+      "context": "In The Great Mouse Detective, what is Hiram Flaversham's profession? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "D23 calls kidnapped Flaversham a toy maker; Basil is the detective and Dawson the doctor.",
+        "sources": [
+          "b20-1069",
+          "b20-1069-cor1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Flaversham is explicitly the toy maker.",
+          "sources": [
+            "b20-1069",
+            "b20-1069-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Basil is the detective hired to find him.",
+          "sources": [
+            "b20-1069",
+            "b20-1069-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Shipbuilder does not match Flaversham’s identified trade.",
+          "sources": [
+            "b20-1069",
+            "b20-1069-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dawson is the doctor assisting Basil.",
+          "sources": [
+            "b20-1069",
+            "b20-1069-cor1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Replaced clockmaker: Flaversham’s mechanical skills could make that seem defensible. The source identifies his actual trade and separately assigns detective and doctor roles."
+      }
+    },
+    {
+      "questionId": 1070,
+      "hash": "06b6d9819feb5def3bd7a9dfaa61adfa30383147c2e7494e084a862f08142bc0",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. The question identifies the on-screen kitten, not a claim that tabby is a pedigree breed. The listed descriptions are distinct, and no black or white coat matches orange.",
+      "context": "In Oliver & Company, what kind of kitten is Oliver? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The kitten left without an adopter at the New York shop is an orange tabby, subsequently named Oliver by Jenny.",
+        "sources": [
+          "b20-1070"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The opening identifies Oliver as an orange tabby.",
+          "sources": [
+            "b20-1070"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Black contradicts the stated orange coloration.",
+          "sources": [
+            "b20-1070"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Siamese does not match the specifically identified orange tabby kitten.",
+          "sources": [
+            "b20-1070"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "White Persian contradicts the stated orange tabby appearance.",
+          "sources": [
+            "b20-1070"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The question identifies the on-screen kitten, not a claim that tabby is a pedigree breed. The listed descriptions are distinct, and no black or white coat matches orange."
+      }
+    },
+    {
+      "questionId": 1071,
+      "hash": "f2fe9cd083dfdf8874b0fec5641620dd42cb78e743da5816ef9c5303ef45e5bc",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. Original crown distractor was also defensible: Ursula acquires the crown as well. Also rejected spear because a trident is a kind of spear. Final choices ask the weapon and use separate weapon forms: trident, sword, bow and battle-axe.",
+      "context": "In The Little Mermaid (1989), which weapon does Ursula wield after taking Triton's power? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Ursula takes Tritons trident and uses it to enlarge herself and attack Ariel and Eric.",
+        "sources": [
+          "b20-1071",
+          "b20-1071-cor1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Ursula wields the trident taken from Triton.",
+          "sources": [
+            "b20-1071",
+            "b20-1071-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The battle weapon is a trident, not a sword.",
+          "sources": [
+            "b20-1071",
+            "b20-1071-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The battle weapon is a trident, not a bow.",
+          "sources": [
+            "b20-1071",
+            "b20-1071-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A battle-axe has an axe blade and does not describe the depicted three-pronged trident.",
+          "sources": [
+            "b20-1071",
+            "b20-1071-cor1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Original crown distractor was also defensible: Ursula acquires the crown as well. Also rejected spear because a trident is a kind of spear. Final choices ask the weapon and use separate weapon forms: trident, sword, bow and battle-axe."
+      }
+    },
+    {
+      "questionId": 1072,
+      "hash": "82af0631a2be2450fa978f4e9c152c2cee9e5a8cde47af1127a9bf2815ad1ed1",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. The original answer gave only Belles love. Final wording tests both halves of the condition and does not mistake earning affection alone for the full requirement.",
+      "context": "In Beauty and the Beast (1991), what must the Beast do before the last rose petal falls to break the curse? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The curse requires the Beast to learn to love another and to be loved in return; Belles confession fulfills this.",
+        "sources": [
+          "b20-1072",
+          "b20-1072-cor1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The condition is reciprocal love, precisely as D23 states.",
+          "sources": [
+            "b20-1072",
+            "b20-1072-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The condition is not a royal pardon.",
+          "sources": [
+            "b20-1072",
+            "b20-1072-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Finding another sorcerer is not the stated way to break the curse.",
+          "sources": [
+            "b20-1072",
+            "b20-1072-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Villagers’ trust is not the required reciprocal love.",
+          "sources": [
+            "b20-1072",
+            "b20-1072-cor1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The original answer gave only Belles love. Final wording tests both halves of the condition and does not mistake earning affection alone for the full requirement."
+      }
+    },
+    {
+      "questionId": 1073,
+      "hash": "0fea3b4dd91b10d1f01d62a382d4f0201088e0dedc0759943e76a2b4ecf92cc1",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. Distinguished cause from object obtained: the ring is what the hypnotized Sultan hands over. The 1992 date fixes the animated scene and the staff mechanism.",
+      "context": "In Aladdin (1992), what does Jafar use to hypnotize the Sultan? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The official character profile states Jafar uses a cobra-headed staff to hypnotize people; the Sultan falls under his influence.",
+        "sources": [
+          "b20-1073"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The cobra staff is explicitly the hypnosis instrument.",
+          "sources": [
+            "b20-1073"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The lamp grants wishes, not the staff-based hypnosis in question.",
+          "sources": [
+            "b20-1073"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Sultan’s ring is obtained through hypnosis, not its instrument.",
+          "sources": [
+            "b20-1073"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A crystal ball is not the instrument Disney identifies.",
+          "sources": [
+            "b20-1073"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished cause from object obtained: the ring is what the hypnotized Sultan hands over. The 1992 date fixes the animated scene and the staff mechanism."
+      }
+    },
+    {
+      "questionId": 1074,
+      "hash": "3242b8dd8090c0b1b9742f8b8619275f6da0720ea0a31f9dde758bb62ec4f936",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. This is his depicted obsession, not a claim that he would refuse all other valuables. The film date also distinguishes fictional plot from historical claims about the real governor.",
+      "context": "In Pocahontas (1995), what treasure is Governor Ratcliffe obsessed with finding? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Ratcliffe leads settlers searching for gold and believes the Powhatan are hiding it.",
+        "sources": [
+          "b20-1074"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Gold is the stated object of Ratcliffe’s search.",
+          "sources": [
+            "b20-1074"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Diamonds are not the treasure specified for his digging campaign.",
+          "sources": [
+            "b20-1074"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Silver is not the treasure specified for his digging campaign.",
+          "sources": [
+            "b20-1074"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pearls are not the treasure specified for his digging campaign.",
+          "sources": [
+            "b20-1074"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "This is his depicted obsession, not a claim that he would refuse all other valuables. The film date also distinguishes fictional plot from historical claims about the real governor."
+      }
+    },
+    {
+      "questionId": 1076,
+      "hash": "d53216e7e773d23ddd225c97b2dcf2a977474241ee8bed35fb3ab173a32d7061",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. The Cyclops operates alongside the attack, but is not a listed competing group. No role of the Fates or Muses makes them released combatants.",
+      "context": "In Hercules, what ancient beings does Hades release to attack Olympus? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Hades frees the Titans to conquer Olympus. The Fates prophesy, the Muses narrate, and Nessus is an earlier centaur opponent.",
+        "sources": [
+          "b20-1076"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Titans are the released force attacking Olympus.",
+          "sources": [
+            "b20-1076"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Fates deliver the prophecy, not the attacking army.",
+          "sources": [
+            "b20-1076"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Muses narrate in song, not attack Olympus.",
+          "sources": [
+            "b20-1076"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The centaurs are not the force Hades unleashes on Olympus.",
+          "sources": [
+            "b20-1076"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The Cyclops operates alongside the attack, but is not a listed competing group. No role of the Fates or Muses makes them released combatants."
+      }
+    },
+    {
+      "questionId": 1077,
+      "hash": "e787728d0a016f4840d74d8d8f4ce4311fda11436ef4957d3b6d323826362ed7",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. The crest is another genuine gift, but it comes from the Emperor and is not listed. All options specifically concern an item of Shan Yu, giving one match.",
+      "context": "In Mulan (1998), what item from Shan Yu does the Emperor give to Mulan? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Emperor gives Mulan his crest and Shan Yus sword; she brings them to her father.",
+        "sources": [
+          "b20-1077"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The named item from Shan Yu is his sword.",
+          "sources": [
+            "b20-1077"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "The gift list contains the sword, not Shan Yu’s helmet.",
+          "sources": [
+            "b20-1077"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "The gift list contains the sword, not Shan Yu’s bow.",
+          "sources": [
+            "b20-1077"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "The gift list contains the sword, not Shan Yu’s banner.",
+          "sources": [
+            "b20-1077"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The crest is another genuine gift, but it comes from the Emperor and is not listed. All options specifically concern an item of Shan Yu, giving one match."
+      }
+    },
+    {
+      "questionId": 1078,
+      "hash": "a11eab98ffad86be7ee4d8801fd1f6b975e73eeb4cb9a0fcd72214132b1dee58",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. Distinguished research subjects from animals used as animation reference. The film’s elephants and primate research behind production do not alter the Porters’ purpose.",
+      "context": "In Tarzan (1999), what animals do Jane and her father travel to study? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Jane and Professor Porter arrive with an expedition studying gorillas; Clayton ultimately plans to capture them.",
+        "sources": [
+          "b20-1078"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Gorillas are the expedition’s identified study subjects.",
+          "sources": [
+            "b20-1078"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Elephants are present in the story but are not the Porters’ stated study subject.",
+          "sources": [
+            "b20-1078"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lions are not the identified study subject.",
+          "sources": [
+            "b20-1078"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Chimpanzees are not interchangeable with the identified gorillas.",
+          "sources": [
+            "b20-1078"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished research subjects from animals used as animation reference. The film’s elephants and primate research behind production do not alter the Porters’ purpose."
+      }
+    },
+    {
+      "questionId": 1079,
+      "hash": "386baa5f7bb93edaab404a6774025e20f0a6a58209374b948143e5e1f29184b7",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. This identifies a fictional character’s assigned species rather than scientific accuracy of the model. Lemurs raise him but do not change his species.",
+      "context": "In Dinosaur, what kind of dinosaur is Aladar? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "D23 identifies Aladar as a three-ton iguanodon raised by lemurs.",
+        "sources": [
+          "b20-1079",
+          "b20-1079-cor1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "D23 expressly identifies Aladar as an iguanodon.",
+          "sources": [
+            "b20-1079",
+            "b20-1079-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Triceratops is a different dinosaur, not the named species.",
+          "sources": [
+            "b20-1079",
+            "b20-1079-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tyrannosaurus is not the species assigned to Aladar.",
+          "sources": [
+            "b20-1079",
+            "b20-1079-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Velociraptor is not the species assigned to Aladar.",
+          "sources": [
+            "b20-1079",
+            "b20-1079-cor1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "This identifies a fictional character’s assigned species rather than scientific accuracy of the model. Lemurs raise him but do not change his species."
+      }
+    },
+    {
+      "questionId": 1080,
+      "hash": "ab9d328decdcc1a70042eefb8e22a991cd0d3644eaca9b2cf91abfd6e7374135",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. Kronk can cook other food; this asks his featured proud snack rather than asserting an exhaustive repertoire. The official named dish excludes the three alternative dish names.",
+      "context": "In The Emperor's New Groove, what snack is Kronk proud of making? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney labels the dish Kronks Spinach Puffs and connects the food to Kuzco and Yzma.",
+        "sources": [
+          "b20-1080",
+          "b20-1080-cor1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Spinach puffs are the explicitly named Kronk dish.",
+          "sources": [
+            "b20-1080",
+            "b20-1080-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cheese souffle is not the named dish.",
+          "sources": [
+            "b20-1080",
+            "b20-1080-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pumpkin empanadas are not the named dish.",
+          "sources": [
+            "b20-1080",
+            "b20-1080-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Meat pies are not the named dish.",
+          "sources": [
+            "b20-1080",
+            "b20-1080-cor1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Kronk can cook other food; this asks his featured proud snack rather than asserting an exhaustive repertoire. The official named dish excludes the three alternative dish names."
+      }
+    },
+    {
+      "questionId": 1081,
+      "hash": "be567bf0366b9f3a1dade379a400c40dd880db2ec35a0ea976f94287b3fc393c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. The dialogue identifies family relationship as well as first name. Being an older benefactor does not make Preston the grandfather; both introductions independently make the distinction.",
+      "context": "In Atlantis: The Lost Empire, what is Milo Thatch's grandfather's first name? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Whitmore identifies Milos grandfather as Thaddeus; Rourke calls Milo the grandson of old Thaddeus. Preston is Whitmore.",
+        "sources": [
+          "b20-1081",
+          "b20-1081-cor1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Thaddeus is explicitly linked to Milo’s grandfather twice.",
+          "sources": [
+            "b20-1081",
+            "b20-1081-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Preston is Whitmore, the financier and grandfather’s friend.",
+          "sources": [
+            "b20-1081",
+            "b20-1081-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jebidiah is not the grandfather named in these introductions.",
+          "sources": [
+            "b20-1081",
+            "b20-1081-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cornelius is not the grandfather named in these introductions.",
+          "sources": [
+            "b20-1081",
+            "b20-1081-cor1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The dialogue identifies family relationship as well as first name. Being an older benefactor does not make Preston the grandfather; both introductions independently make the distinction."
+      }
+    },
+    {
+      "questionId": 1082,
+      "hash": "96c416f26cccc8604a657c66e34a228c0da8d77b857b883af2c46b42bda738dd",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. The date avoids remake differences. A later shared family scene does not make Bubbles or Pleakley the surfer friend identified in the actual beach sequence.",
+      "context": "In Lilo & Stitch (2002), who is Nani's friend and surfing companion? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Nani surfs with Lilo, Stitch and her friend David Kawena. David is a human surfer; Bubbles assesses custody and Pleakley pursues Stitch with Jumba.",
+        "sources": [
+          "b20-1082"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "David Kawena is Nani’s identified surfer friend.",
+          "sources": [
+            "b20-1082"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cobra Bubbles is the social worker, not this surfing companion.",
+          "sources": [
+            "b20-1082"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pleakley is the alien pursuing Stitch during the surfing scene.",
+          "sources": [
+            "b20-1082"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Reuben is not the named human surfing companion in the 2002 film.",
+          "sources": [
+            "b20-1082"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The date avoids remake differences. A later shared family scene does not make Bubbles or Pleakley the surfer friend identified in the actual beach sequence."
+      }
+    },
+    {
+      "questionId": 1083,
+      "hash": "704e06351171c454d5173e9ac4369f9304e48e560e04746ff7447bd6de8500ac",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. Added departure context because Silver later leads the mutiny. Financing a voyage, cooking aboard, or being a different pirate captain cannot satisfy command at departure.",
+      "context": "In Treasure Planet, who captains the RLS Legacy when its voyage begins? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Doppler commissions the RLS Legacy commanded by Amelia; Silver starts as cook and pirate conspirator; Flint belongs to the treasure backstory.",
+        "sources": [
+          "b20-1083",
+          "b20-1083-cor1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Amelia commands the ship at departure.",
+          "sources": [
+            "b20-1083",
+            "b20-1083-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Silver is the cook at departure, before the mutiny.",
+          "sources": [
+            "b20-1083",
+            "b20-1083-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Doppler commissions the ship but is not its appointed captain.",
+          "sources": [
+            "b20-1083",
+            "b20-1083-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Flint is the legendary pirate in the backstory, not the departure captain.",
+          "sources": [
+            "b20-1083",
+            "b20-1083-cor1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Added departure context because Silver later leads the mutiny. Financing a voyage, cooking aboard, or being a different pirate captain cannot satisfy command at departure."
+      }
+    },
+    {
+      "questionId": 1084,
+      "hash": "db25143c2f67c3571dadf2b351511fb67f272fdd6ed562ae8bcc64fd13be60ec",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. All four virtues occur in the ceremony’s thematic context; only love is assigned to Kenai. His wish for a bravery-associated totem is not what he actually receives.",
+      "context": "In Brother Bear, what virtue is Kenai's totem meant to teach him? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Tanana gives Kenai the bear of love. Denahi has wisdom; courage and patience are general guiding traits mentioned before Kenais revelation.",
+        "sources": [
+          "b20-1084",
+          "b20-1084-cor1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Love is the explicit virtue announced for Kenai.",
+          "sources": [
+            "b20-1084",
+            "b20-1084-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wisdom belongs to Denahi’s totem.",
+          "sources": [
+            "b20-1084",
+            "b20-1084-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Courage is a possible guiding trait, not Kenai’s revealed totem.",
+          "sources": [
+            "b20-1084",
+            "b20-1084-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Patience is a possible guiding trait, not Kenai’s revealed totem.",
+          "sources": [
+            "b20-1084",
+            "b20-1084-cor1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All four virtues occur in the ceremony’s thematic context; only love is assigned to Kenai. His wish for a bravery-associated totem is not what he actually receives."
+      }
+    },
+    {
+      "questionId": 1085,
+      "hash": "5f58ac4e757d408972a6670b58fa2f269ff2742b5cd5006a99c3d916d9e7240c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. Original villain wording could include accomplices Rico and Wesley. The final stem uniquely specifies the cows’ reward target instead of asking who is criminal.",
+      "context": "In Home on the Range, which outlaw do the three cows try to capture to collect the reward and save their farm? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The cows pursue Alameda Slim to obtain the reward money and save Patch of Heaven; Rico is the bounty hunter, Buck the stallion and Wesley a dealer.",
+        "sources": [
+          "b20-1085",
+          "b20-1085-cor1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Slim is the named bounty target whose capture saves the farm.",
+          "sources": [
+            "b20-1085",
+            "b20-1085-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rico competes to capture Slim; he is not this reward target.",
+          "sources": [
+            "b20-1085",
+            "b20-1085-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Buck is the stallion joining the action, not the reward target.",
+          "sources": [
+            "b20-1085",
+            "b20-1085-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wesley is a dealer, not the named reward target.",
+          "sources": [
+            "b20-1085",
+            "b20-1085-cor1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Original villain wording could include accomplices Rico and Wesley. The final stem uniquely specifies the cows’ reward target instead of asking who is criminal."
+      }
+    },
+    {
+      "questionId": 1086,
+      "hash": "6394881133c63ff17c14798c47844933b7b39eb7d455c924a772c3b6e4d49522",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. The year excludes the 1943 short. A bird-themed phrase is not enough: the source supplies this character’s exact alias, which only one option matches.",
+      "context": "In Chicken Little (2005), what nickname is given to Abby Mallard? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "D23 explicitly identifies Abby Mallard as also known as Ugly Duckling.",
+        "sources": [
+          "b20-1086"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Ugly Duckling is Abby’s stated nickname.",
+          "sources": [
+            "b20-1086"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Little Goose is not the alias attached to Abby.",
+          "sources": [
+            "b20-1086"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lucky Duck is not the alias attached to Abby.",
+          "sources": [
+            "b20-1086"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ducky Lucky is not the alias attached to Abby.",
+          "sources": [
+            "b20-1086"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The year excludes the 1943 short. A bird-themed phrase is not enough: the source supplies this character’s exact alias, which only one option matches."
+      }
+    },
+    {
+      "questionId": 1089,
+      "hash": "e7aa2d9d73d9ed106312f2e742e66655d9901da33f1360d1d3ec16d20e3a063e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. New Orleans is the visit location, not the kingdom of origin. Royal status alone cannot establish Genovia, Corona or Avalor against his explicit named origin.",
+      "context": "In The Princess and the Frog, what fictional kingdom is Prince Naveen from? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Naveen repeatedly identifies himself as Prince of Maldonia.",
+        "sources": [
+          "b20-1089",
+          "b20-1089-cor1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Maldonia is the kingdom in Naveen’s explicit self-introduction.",
+          "sources": [
+            "b20-1089",
+            "b20-1089-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Genovia does not match the kingdom he names.",
+          "sources": [
+            "b20-1089",
+            "b20-1089-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Corona does not match the kingdom he names.",
+          "sources": [
+            "b20-1089",
+            "b20-1089-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Avalor does not match the kingdom he names.",
+          "sources": [
+            "b20-1089",
+            "b20-1089-cor1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "New Orleans is the visit location, not the kingdom of origin. Royal status alone cannot establish Genovia, Corona or Avalor against his explicit named origin."
+      }
+    },
+    {
+      "questionId": 1090,
+      "hash": "43224007f24c083f3ae8a540ba36d7fcc94c376c0f90aabd438c7a271c405b7e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. The origin is distinct from how Gothel later activates the healing power. The question concerns the theatrical film’s opening, not later television lore.",
+      "context": "In Tangled, what creates the magical golden flower? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "A single drop of sunlight falls from the heavens and produces the magical golden healing flower.",
+        "sources": [
+          "b20-1090",
+          "b20-1090-cor1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The opening narrator directly gives a drop of sunlight as the origin.",
+          "sources": [
+            "b20-1090",
+            "b20-1090-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A star shard is not the substance named in the opening.",
+          "sources": [
+            "b20-1090",
+            "b20-1090-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A fairy spell is not the origin named in the opening.",
+          "sources": [
+            "b20-1090",
+            "b20-1090-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A dragon tear is not the substance named in the opening.",
+          "sources": [
+            "b20-1090",
+            "b20-1090-cor1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The origin is distinct from how Gothel later activates the healing power. The question concerns the theatrical film’s opening, not later television lore."
+      }
+    },
+    {
+      "questionId": 1091,
+      "hash": "aa691f6f7829fc384694639c8e9ce6d8420126fb2d41a7a252cc2ffb8d0bc6bc",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. Removed decorative color adjectives so the evidence tests tool identity. Magical behavior does not make a hammer literally a wand; the final alternatives name different tools.",
+      "context": "In Wreck-It Ralph, what magical tool does Fix-It Felix use? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Ralph explicitly describes Felixs inherited magic hammer, and Felix later heals his face by hitting it with the hammer.",
+        "sources": [
+          "b20-1091"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The dialogue identifies the magic hammer.",
+          "sources": [
+            "b20-1091"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A wrench is not the tool identified in the dialogue.",
+          "sources": [
+            "b20-1091"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A screwdriver is not the tool identified in the dialogue.",
+          "sources": [
+            "b20-1091"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A wand is not the tool identified in the dialogue.",
+          "sources": [
+            "b20-1091"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed decorative color adjectives so the evidence tests tool identity. Magical behavior does not make a hammer literally a wand; the final alternatives name different tools."
+      }
+    },
+    {
+      "questionId": 1092,
+      "hash": "26239ed01b2b27ac03948e85be71dca7c9bb78b56cf8231aa6c578fa988d9877",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. Narrowed helps Anna to the specific childhood healing and memory intervention. Bulda can help the visitors later, but does not perform this identified action.",
+      "context": "In Frozen (2013), which troll heals young Anna and removes her memories of Elsa's magic? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Grand Pabbie heals Anna after the childhood head injury and removes her memories of Elsas magic; Bulda is the adoptive troll mother, Oaken a shopkeeper and Marshmallow a snow guardian.",
+        "sources": [
+          "b20-1092"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Grand Pabbie performs the childhood healing and memory alteration.",
+          "sources": [
+            "b20-1092"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Oaken is the shopkeeper, not the troll healer.",
+          "sources": [
+            "b20-1092"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bulda does not perform the specified memory treatment.",
+          "sources": [
+            "b20-1092"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Marshmallow is Elsa’s snow guardian, not the troll healer.",
+          "sources": [
+            "b20-1092"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Narrowed helps Anna to the specific childhood healing and memory intervention. Bulda can help the visitors later, but does not perform this identified action."
+      }
+    },
+    {
+      "questionId": 1093,
+      "hash": "1692155899a0c97f14832684e71a2be20d6fb08346fcef5e985b129433383051",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. All four final answers are similarly styled institutions from the same city. The correct answer no longer stands out by length against a company and short invented school names.",
+      "context": "In Big Hero 6, what university does Hiro hope to attend? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Tadashi shows Hiro the San Fransokyo Institute of Technology; Hiro enters the showcase to obtain admission there.",
+        "sources": [
+          "b20-1093"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Institute of Technology is the institution expressly named in the plot.",
+          "sources": [
+            "b20-1093"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Academy of Robotics is not the university named in the admission episode.",
+          "sources": [
+            "b20-1093"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "College of Engineering is not the university named in the admission episode.",
+          "sources": [
+            "b20-1093"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "School of Applied Science is not the university named in the admission episode.",
+          "sources": [
+            "b20-1093"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All four final answers are similarly styled institutions from the same city. The correct answer no longer stands out by length against a company and short invented school names."
+      }
+    },
+    {
+      "questionId": 1094,
+      "hash": "ee620d4976fb8fd3451635d7aca4bec23ada24c2c797c368bf5c0d600bfd373e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. The film plot is stable despite possible sequel events. Job location in Zootopia is distinct from childhood home; knowing #204 police officer does not answer this.",
+      "context": "In Zootopia, what is Judy Hopps' hometown? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The departure sign and Judys own statement establish Bunnyburrow as her hometown; the other options are city districts.",
+        "sources": [
+          "b20-1094",
+          "b20-1094-cor1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Judy explicitly says she grew up in Bunnyburrow.",
+          "sources": [
+            "b20-1094",
+            "b20-1094-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sahara Square is a Zootopia district, not the hometown Judy names.",
+          "sources": [
+            "b20-1094",
+            "b20-1094-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tundratown is a Zootopia district, not the hometown Judy names.",
+          "sources": [
+            "b20-1094",
+            "b20-1094-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Savanna Central is the city-center district, not the hometown Judy names.",
+          "sources": [
+            "b20-1094",
+            "b20-1094-cor1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The film plot is stable despite possible sequel events. Job location in Zootopia is distinct from childhood home; knowing #204 police officer does not answer this."
+      }
+    },
+    {
+      "questionId": 1095,
+      "hash": "a2b12c6ccbdf1bafee97d60b64201fea210f2c6f5967ce4da0f2754a3c24fa58",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. Both the name and title must fit; sharing Tui alone cannot make Prince Tui correct. The 2016 date fixes the original animated family.",
+      "context": "In Moana (2016), what is Moana's father's title and name? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Moanas father Tui is chief of Motunui. Tala is her grandmother; Tamatoa is the giant crab.",
+        "sources": [
+          "b20-1095",
+          "b20-1095-cor1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Chief Tui gives the correct title and father’s name.",
+          "sources": [
+            "b20-1095",
+            "b20-1095-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tala is her grandmother, not a king or her father.",
+          "sources": [
+            "b20-1095",
+            "b20-1095-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tamatoa is the giant crab, not her father.",
+          "sources": [
+            "b20-1095",
+            "b20-1095-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tui is a chief rather than a prince.",
+          "sources": [
+            "b20-1095",
+            "b20-1095-cor1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Both the name and title must fit; sharing Tui alone cannot make Prince Tui correct. The 2016 date fixes the original animated family."
+      }
+    },
+    {
+      "questionId": 1096,
+      "hash": "5c9af7cf4fd25e8044b269c3013739b2cf46440018804bcb94a2dcbd83496992",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. Distinct from #1422: that asks Vanellope’s decision to stay, while this identifies Shank’s home game. Knowing the decision does not identify which racer is associated with that game.",
+      "context": "In Ralph Breaks the Internet, what dangerous racing game does Shank drive in? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Shank is the lead racer in the online game Slaughter Race. Sugar Rush is Vanellopes earlier arcade game; Heros Duty and RoadBlasters are other games.",
+        "sources": [
+          "b20-1096"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Shank is expressly identified as a Slaughter Race racer.",
+          "sources": [
+            "b20-1096"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sugar Rush is Vanellope’s earlier game, not Shank’s.",
+          "sources": [
+            "b20-1096"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hero’s Duty is the shooter from the earlier film, not Shank’s game.",
+          "sources": [
+            "b20-1096"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "RoadBlasters is not the online racing game assigned to Shank.",
+          "sources": [
+            "b20-1096"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinct from #1422: that asks Vanellope’s decision to stay, while this identifies Shank’s home game. Knowing the decision does not identify which racer is associated with that game."
+      }
+    },
+    {
+      "questionId": 1097,
+      "hash": "65e15352c7cced7235845368f6d9ed109c099d60cfab078864e78876a3572fa9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. Ahtohallan being a glacier later does not defeat the question: the characters explicitly describe it as a river and explain glaciers are rivers of ice. Mythical describes the initial legend.",
+      "context": "In Frozen 2, what mythical river is said to hold memories of the past? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Iduna names Ahtohallan as the special river containing answers about the past; Elsa later finds it frozen. Northuldra are a people and the Dark Sea lies on the route.",
+        "sources": [
+          "b20-1097",
+          "b20-1097-cor1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Ahtohallan is explicitly the river associated with the past.",
+          "sources": [
+            "b20-1097",
+            "b20-1097-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Northuldra names the people, not the river.",
+          "sources": [
+            "b20-1097",
+            "b20-1097-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Arendelle River is not the name Iduna gives the special river.",
+          "sources": [
+            "b20-1097",
+            "b20-1097-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Dark Sea is crossed to reach Ahtohallan, not that river.",
+          "sources": [
+            "b20-1097",
+            "b20-1097-cor1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Ahtohallan being a glacier later does not defeat the question: the characters explicitly describe it as a river and explain glaciers are rivers of ice. Mythical describes the initial legend."
+      }
+    },
+    {
+      "questionId": 1098,
+      "hash": "b8d6cc3bcff4ee6d4da3c81909896955642ddd96c104d509868e4a113b6a0c8e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. Travelling through all these places does not change where Raya comes from. Kumandra is the larger whole, so #849 is a distinct geographic fact.",
+      "context": "In Raya and the Last Dragon, which land does Raya come from? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Raya is Benjas daughter and warrior princess of Heart. Namaari belongs to Fang, Tong to Spine; Talon is a different chiefdom.",
+        "sources": [
+          "b20-1098"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Raya is expressly a princess of Heart.",
+          "sources": [
+            "b20-1098"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fang is Namaari’s home chiefdom, not Raya’s.",
+          "sources": [
+            "b20-1098"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Spine is Tong’s chiefdom, not Raya’s.",
+          "sources": [
+            "b20-1098"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Talon is another chiefdom, not Raya’s home.",
+          "sources": [
+            "b20-1098"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Travelling through all these places does not change where Raya comes from. Kumandra is the larger whole, so #849 is a distinct geographic fact."
+      }
+    },
+    {
+      "questionId": 1099,
+      "hash": "748763d117f4f236251c1d5d8f83d1c1f94c52a55fcf04b44618237efb4eaa14",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. All four abilities are real gifts, but the primary family roster assigns each to a different person. Understanding animal speech is not Dolores’s long-distance human hearing.",
+      "context": "In Encanto, what is Antonio Madrigal's magical gift? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney assigns animal communication to Antonio, food healing to Julieta, extraordinary hearing to Dolores and emotional weather control to Pepa.",
+        "sources": [
+          "b20-1099"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Antonio speaks with animals.",
+          "sources": [
+            "b20-1099"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Food-based healing belongs to Julieta.",
+          "sources": [
+            "b20-1099"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Extraordinary hearing belongs to Dolores.",
+          "sources": [
+            "b20-1099"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Weather control belongs to Pepa.",
+          "sources": [
+            "b20-1099"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All four abilities are real gifts, but the primary family roster assigns each to a different person. Understanding animal speech is not Dolores’s long-distance human hearing."
+      }
+    },
+    {
+      "questionId": 1100,
+      "hash": "0a0c76f7f8e780c128cc1049a4b2265ff7ab123fad341ce191fb4122e37c8f01",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed final stem and all four options, complete topic digests and additional cross-shard matches. The official cast independently names all three, avoiding inference from only Searcher. Pando and Avalonia are relevant story terms but belong to different kinds of entity.",
+      "context": "In Strange World, what is the last name of Searcher, Jaeger, and Ethan? Stable theatrical-film content; source limitations retained.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "D23 lists Searcher Clade, Jaeger Clade and Ethan Clade as members of the exploring Clade family. Avalonia is their land and Pando the energy plant.",
+        "sources": [
+          "b20-1100",
+          "b20-1100-cor1"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The three full names all end in Clade.",
+          "sources": [
+            "b20-1100",
+            "b20-1100-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Avalonia is the land, not their surname.",
+          "sources": [
+            "b20-1100",
+            "b20-1100-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pando is the energy plant, not their surname.",
+          "sources": [
+            "b20-1100",
+            "b20-1100-cor1"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Voyager is not the surname in any of the three full names.",
+          "sources": [
+            "b20-1100",
+            "b20-1100-cor1"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-07",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The official cast independently names all three, avoiding inference from only Searcher. Pando and Avalonia are relevant story terms but belong to different kinds of entity."
+      }
+    }
+  ]
+}

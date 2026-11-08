@@ -1,0 +1,92 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-08",
+  "topicContext": "Read all 810 unique complete questions from the 30 packet topic digests, plus batch comparisons. Only planned questions are changed.",
+  "retirements": [
+    {
+      "question": {
+        "id": 1265,
+        "question": "In The Princess and the Frog, what song introduces Dr. Facilier's shadow magic?",
+        "answers": [
+          "Friends on the Other Side",
+          "Almost There",
+          "Down in New Orleans",
+          "Dig a Little Deeper"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      },
+      "replacement": {
+        "id": 1511,
+        "question": "Which Disney animated film features the villain song 'Friends on the Other Side,' sung by the shadow-dealing villain Dr. Facilier?",
+        "answers": [
+          "The Princess and the Frog",
+          "Moana",
+          "Encanto",
+          "Coco"
+        ],
+        "difficulty": "easy",
+        "category": "music"
+      },
+      "reason": "Inverse film/song association for the same Dr. Facilier performance; #1511 already names the song, performer and shadow context. Knowing that mapping solves #1265 without a new fact.",
+      "sources": [
+        "b19-1014"
+      ],
+      "reference": "audit/source-notes.json"
+    },
+    {
+      "question": {
+        "id": 1292,
+        "question": "In Soul, what jazz club does Joe Gardner dream of playing?",
+        "answers": [
+          "The Half Note",
+          "The Blue Note",
+          "The Great Before",
+          "The Jazz Palace"
+        ],
+        "difficulty": "medium",
+        "category": "pixar"
+      },
+      "replacement": {
+        "id": 1316,
+        "question": "In Soul, what is the name of the jazz legend Joe Gardner finally gets to perform with at the Half Note club?",
+        "answers": [
+          "Dorothea Williams",
+          "Connie the trombonist",
+          "Paula the drummer",
+          "Libba the bassist"
+        ],
+        "difficulty": "hard",
+        "category": "pixar"
+      },
+      "reason": "#1316 explicitly supplies Half Note as the club where Joe plays. That alone answers #1292; retain the more specific musician-identification question.",
+      "sources": [
+        "https://www.pixar.com/soul"
+      ],
+      "locator": "The Half Note setting and Dorothea Williams character sections"
+    }
+  ],
+  "retainedComparisons": [
+    {
+      "ids": [
+        1269,
+        1502
+      ],
+      "reason": "Independent score credits for Zootopia and Up. Knowing one composer credit does not establish the other."
+    },
+    {
+      "ids": [
+        1271,
+        1298
+      ],
+      "reason": "Slinky stretching from the truck and RC carrying Woody/Buzz are different toy identities and separate rescue actions."
+    },
+    {
+      "ids": [
+        1284,
+        1313
+      ],
+      "reason": "Disgust green and Joy yellow are separate character-color mappings; no exhaustive two-color assignment makes one imply the other."
+    }
+  ]
+}

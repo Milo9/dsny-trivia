@@ -1,0 +1,77 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-07",
+  "comparisons": [
+    {
+      "retire": 1006,
+      "retain": 825,
+      "questions": [
+        {
+          "id": 1006,
+          "question": "What Aladdin song presents Aladdin's royal alter ego to Agrabah?",
+          "answers": [
+            "Prince Ali",
+            "One Jump Ahead",
+            "Friend Like Me",
+            "Arabian Nights"
+          ],
+          "difficulty": "medium",
+          "category": "music"
+        },
+        {
+          "id": 825,
+          "question": "In Aladdin (1992), what full name does Aladdin use for his royal disguise?",
+          "answers": [
+            "Prince Ali Ababwa",
+            "Prince Amir Agrabah",
+            "Prince Aziz Ababwa",
+            "Prince Hakim of Shirabad"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        }
+      ],
+      "reason": "The song is titled with the royal alias tested more precisely by #825; knowing Prince Ali Ababwa selects Prince Ali without additional recall. Retain the full-name question.",
+      "sources": [
+        "https://www.springfieldspringfield.co.uk/movie_script.php?movie=aladdin",
+        "https://en.wikipedia.org/wiki/Prince_Ali_(song)"
+      ],
+      "locator": "Royal parade Prince Ali Ababwa chorus; song Synopsis"
+    },
+    {
+      "retire": 1041,
+      "retain": 1434,
+      "questions": [
+        {
+          "id": 1041,
+          "question": "In Onward, what magical gem do Ian and Barley seek?",
+          "answers": [
+            "Phoenix Gem",
+            "Unicorn Stone",
+            "Wizard Crystal",
+            "Dragon Pearl"
+          ],
+          "difficulty": "medium",
+          "category": "pixar"
+        },
+        {
+          "id": 1434,
+          "question": "In Onward, what three things does the package from Ian and Barley's late father contain that launches their quest?",
+          "answers": [
+            "A wizard's staff, a Phoenix Gem, and a spell to bring him back for one day",
+            "A magical map, a Phoenix Gem, and enchanted armor",
+            "A spellbook, a wand, and a portkey",
+            "A staff, a crystal ball, and an ancient scroll"
+          ],
+          "difficulty": "medium",
+          "category": "pixar"
+        }
+      ],
+      "reason": "#1434 already tests the Phoenix Gem as one part of the initiating gift; every option names it, so that question explicitly supplies the answer to the narrower gem-name question. Retain the fuller package fact.",
+      "sources": [
+        "https://www.pixar.com/onward"
+      ],
+      "locator": "Wilden Lightfoot profile: quest to retrieve a Phoenix Gem"
+    }
+  ]
+}

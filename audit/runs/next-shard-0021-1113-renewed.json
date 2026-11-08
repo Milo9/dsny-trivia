@@ -1,0 +1,223 @@
+[
+  {
+    "schema": 2,
+    "questionId": 1113,
+    "hash": "a5f7fa327343df92b2cf7030b91acb737b86cbef6af43fc26b7a5f5c10d1b292",
+    "questionSnapshot": {
+      "id": 1113,
+      "question": "In The Fox and the Hound, who adopts Tod as a young fox?",
+      "answers": [
+        "Widow Tweed",
+        "Big Mama",
+        "Amos Slade",
+        "Vixey"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-08",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Final wording and all four options reviewed. Big Mama helps raise and protect Tod, making her a plausible broad caregiver answer. The specific adoption belongs to Tweed; #862 asks the owl's identity rather than the adopter.",
+    "verification": {
+      "context": "Original theatrical film and its identified scene/character relationship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Big Mama arranges for Widow Tweed to adopt the orphaned Tod; Amos raises Copper and Vixey later becomes Tod's mate.",
+        "sources": [
+          {
+            "sourceNoteId": "b21-1113-0",
+            "url": "https://en.wikipedia.org/wiki/The_Fox_and_the_Hound",
+            "locator": "Opening Plot, Big Mama arranges Tod's adoption; Voice cast",
+            "evidence": "Big Mama arranges for Widow Tweed to adopt the orphaned Tod; Amos raises Copper and Vixey later becomes Tod's mate.",
+            "checkedBy": "Codex",
+            "checkedAt": "2026-11-08",
+            "timeSensitive": false,
+            "nextReviewAt": null,
+            "topics": [
+              "Batch 21"
+            ],
+            "limitations": "Text passages inspected; no original film, audio or video playback claimed. Wikipedia and fan transcriptions are secondary, not studio-certified transcripts. Where D23 film entries returned only sign-in shells or official summaries omitted detail, the detailed passage and identified corroboration carry the specific fact. Older maps are corroboration only; current dated park questions have a scheduled recheck. The Disney store superlative is explicitly an attributed advertisement."
+          },
+          {
+            "sourceNoteId": "b21-1113-1",
+            "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=fox-and-the-hound-the",
+            "locator": "Opening adoption, lines 13–94; widow/Amos confrontation later",
+            "evidence": "Big Mama declines to keep the fox and arranges for the woman to find him. She takes him in, names him Tod, and calls him one of the family.",
+            "checkedBy": "Codex",
+            "checkedAt": "2026-11-08",
+            "timeSensitive": false,
+            "nextReviewAt": null,
+            "topics": [
+              "Batch 21"
+            ],
+            "limitations": "Text passages inspected; no original film, audio or video playback claimed. Wikipedia and fan transcriptions are secondary, not studio-certified transcripts. Where D23 film entries returned only sign-in shells or official summaries omitted detail, the detailed passage and identified corroboration carry the specific fact. Older maps are corroboration only; current dated park questions have a scheduled recheck. The Disney store superlative is explicitly an attributed advertisement."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Big Mama helps raise and protect Tod, making her a plausible broad caregiver answer. The specific adoption belongs to Tweed; #862 asks the owl's identity rather than the adopter."
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Widow Tweed is the adopting farmer who names him Tod.",
+          "sources": [
+            {
+              "sourceNoteId": "b21-1113-0",
+              "url": "https://en.wikipedia.org/wiki/The_Fox_and_the_Hound",
+              "locator": "Opening Plot, Big Mama arranges Tod's adoption; Voice cast",
+              "evidence": "Big Mama arranges for Widow Tweed to adopt the orphaned Tod; Amos raises Copper and Vixey later becomes Tod's mate.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "topics": [
+                "Batch 21"
+              ],
+              "limitations": "Text passages inspected; no original film, audio or video playback claimed. Wikipedia and fan transcriptions are secondary, not studio-certified transcripts. Where D23 film entries returned only sign-in shells or official summaries omitted detail, the detailed passage and identified corroboration carry the specific fact. Older maps are corroboration only; current dated park questions have a scheduled recheck. The Disney store superlative is explicitly an attributed advertisement."
+            },
+            {
+              "sourceNoteId": "b21-1113-1",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=fox-and-the-hound-the",
+              "locator": "Opening adoption, lines 13–94; widow/Amos confrontation later",
+              "evidence": "Big Mama declines to keep the fox and arranges for the woman to find him. She takes him in, names him Tod, and calls him one of the family.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "topics": [
+                "Batch 21"
+              ],
+              "limitations": "Text passages inspected; no original film, audio or video playback claimed. Wikipedia and fan transcriptions are secondary, not studio-certified transcripts. Where D23 film entries returned only sign-in shells or official summaries omitted detail, the detailed passage and identified corroboration carry the specific fact. Older maps are corroboration only; current dated park questions have a scheduled recheck. The Disney store superlative is explicitly an attributed advertisement."
+            }
+          ],
+          "answer": "Widow Tweed",
+          "verdict": "correct"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Big Mama helps arrange adoption and advises him, but is not the adopting farmer.",
+          "sources": [
+            {
+              "sourceNoteId": "b21-1113-0",
+              "url": "https://en.wikipedia.org/wiki/The_Fox_and_the_Hound",
+              "locator": "Opening Plot, Big Mama arranges Tod's adoption; Voice cast",
+              "evidence": "Big Mama arranges for Widow Tweed to adopt the orphaned Tod; Amos raises Copper and Vixey later becomes Tod's mate.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "topics": [
+                "Batch 21"
+              ],
+              "limitations": "Text passages inspected; no original film, audio or video playback claimed. Wikipedia and fan transcriptions are secondary, not studio-certified transcripts. Where D23 film entries returned only sign-in shells or official summaries omitted detail, the detailed passage and identified corroboration carry the specific fact. Older maps are corroboration only; current dated park questions have a scheduled recheck. The Disney store superlative is explicitly an attributed advertisement."
+            },
+            {
+              "sourceNoteId": "b21-1113-1",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=fox-and-the-hound-the",
+              "locator": "Opening adoption, lines 13–94; widow/Amos confrontation later",
+              "evidence": "Big Mama declines to keep the fox and arranges for the woman to find him. She takes him in, names him Tod, and calls him one of the family.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "topics": [
+                "Batch 21"
+              ],
+              "limitations": "Text passages inspected; no original film, audio or video playback claimed. Wikipedia and fan transcriptions are secondary, not studio-certified transcripts. Where D23 film entries returned only sign-in shells or official summaries omitted detail, the detailed passage and identified corroboration carry the specific fact. Older maps are corroboration only; current dated park questions have a scheduled recheck. The Disney store superlative is explicitly an attributed advertisement."
+            }
+          ],
+          "answer": "Big Mama",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Amos Slade owns Copper and opposes Tod.",
+          "sources": [
+            {
+              "sourceNoteId": "b21-1113-0",
+              "url": "https://en.wikipedia.org/wiki/The_Fox_and_the_Hound",
+              "locator": "Opening Plot, Big Mama arranges Tod's adoption; Voice cast",
+              "evidence": "Big Mama arranges for Widow Tweed to adopt the orphaned Tod; Amos raises Copper and Vixey later becomes Tod's mate.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "topics": [
+                "Batch 21"
+              ],
+              "limitations": "Text passages inspected; no original film, audio or video playback claimed. Wikipedia and fan transcriptions are secondary, not studio-certified transcripts. Where D23 film entries returned only sign-in shells or official summaries omitted detail, the detailed passage and identified corroboration carry the specific fact. Older maps are corroboration only; current dated park questions have a scheduled recheck. The Disney store superlative is explicitly an attributed advertisement."
+            },
+            {
+              "sourceNoteId": "b21-1113-1",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=fox-and-the-hound-the",
+              "locator": "Opening adoption, lines 13–94; widow/Amos confrontation later",
+              "evidence": "Big Mama declines to keep the fox and arranges for the woman to find him. She takes him in, names him Tod, and calls him one of the family.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "topics": [
+                "Batch 21"
+              ],
+              "limitations": "Text passages inspected; no original film, audio or video playback claimed. Wikipedia and fan transcriptions are secondary, not studio-certified transcripts. Where D23 film entries returned only sign-in shells or official summaries omitted detail, the detailed passage and identified corroboration carry the specific fact. Older maps are corroboration only; current dated park questions have a scheduled recheck. The Disney store superlative is explicitly an attributed advertisement."
+            }
+          ],
+          "answer": "Amos Slade",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Vixey is his later fox love interest.",
+          "sources": [
+            {
+              "sourceNoteId": "b21-1113-0",
+              "url": "https://en.wikipedia.org/wiki/The_Fox_and_the_Hound",
+              "locator": "Opening Plot, Big Mama arranges Tod's adoption; Voice cast",
+              "evidence": "Big Mama arranges for Widow Tweed to adopt the orphaned Tod; Amos raises Copper and Vixey later becomes Tod's mate.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "topics": [
+                "Batch 21"
+              ],
+              "limitations": "Text passages inspected; no original film, audio or video playback claimed. Wikipedia and fan transcriptions are secondary, not studio-certified transcripts. Where D23 film entries returned only sign-in shells or official summaries omitted detail, the detailed passage and identified corroboration carry the specific fact. Older maps are corroboration only; current dated park questions have a scheduled recheck. The Disney store superlative is explicitly an attributed advertisement."
+            },
+            {
+              "sourceNoteId": "b21-1113-1",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=fox-and-the-hound-the",
+              "locator": "Opening adoption, lines 13–94; widow/Amos confrontation later",
+              "evidence": "Big Mama declines to keep the fox and arranges for the woman to find him. She takes him in, names him Tod, and calls him one of the family.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "topics": [
+                "Batch 21"
+              ],
+              "limitations": "Text passages inspected; no original film, audio or video playback claimed. Wikipedia and fan transcriptions are secondary, not studio-certified transcripts. Where D23 film entries returned only sign-in shells or official summaries omitted detail, the detailed passage and identified corroboration carry the specific fact. Older maps are corroboration only; current dated park questions have a scheduled recheck. The Disney store superlative is explicitly an attributed advertisement."
+            }
+          ],
+          "answer": "Vixey",
+          "verdict": "incorrect"
+        }
+      ]
+    }
+  }
+]
