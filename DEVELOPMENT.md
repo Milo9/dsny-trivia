@@ -70,8 +70,8 @@ offline after an initial online visit and cache installation. `sw.js` caches onl
 same-origin app assets and questions; database requests remain network-only.
 The service worker never caches the admin page or update probes.
 
-There are 1,896 active questions plus 144 preserved retired duplicates after the
-first eighteen sequential audit batches. See questions/retired.json for the retained
+There are 1,873 active questions plus 167 preserved retired duplicates after the
+first twenty-four sequential audit batches. See questions/retired.json for the retained
 snapshots and replacement IDs. Retired IDs must not be reused. Optional question metadata:
 
 ```json

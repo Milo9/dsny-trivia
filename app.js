@@ -1,4 +1,4 @@
-const APP_VERSION = '1.44';
+const APP_VERSION = '1.45';
 
 const _localMemory = new Map();
 let _localDurable = true;
