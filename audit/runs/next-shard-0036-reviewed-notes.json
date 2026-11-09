@@ -1,0 +1,3308 @@
+{
+  "schema": 1,
+  "reviewer": "Codex",
+  "at": "2026-11-09",
+  "sourcesChecked": [
+    "b29-lion2-family",
+    "b36-bbq",
+    "b36-bruno",
+    "b36-brunocor",
+    "b36-cars",
+    "b36-cinder",
+    "b36-cocktail",
+    "b36-cocktailcor",
+    "b36-coco",
+    "b36-croc",
+    "b36-croccor",
+    "b36-dreamguide",
+    "b36-duck",
+    "b36-duckcor",
+    "b36-fantasy",
+    "b36-flower",
+    "b36-frozen",
+    "b36-geri",
+    "b36-goombay",
+    "b36-house",
+    "b36-housecor",
+    "b36-hunch",
+    "b36-hunchdate",
+    "b36-hunchkiss",
+    "b36-hunchs",
+    "b36-imagineering",
+    "b36-leven",
+    "b36-lion",
+    "b36-mapcity",
+    "b36-mapcor",
+    "b36-meridian",
+    "b36-mermaid",
+    "b36-mermaids",
+    "b36-moana",
+    "b36-molly",
+    "b36-mouse",
+    "b36-mulan",
+    "b36-mulanplot",
+    "b36-nemo",
+    "b36-nemos",
+    "b36-oscar17",
+    "b36-oscar34",
+    "b36-oscar51",
+    "b36-patch",
+    "b36-patchplot",
+    "b36-pink",
+    "b36-pinkava",
+    "b36-pinkcor",
+    "b36-piper",
+    "b36-piperanalysis",
+    "b36-piperaquarium",
+    "b36-piperinterview",
+    "b36-piperstudio",
+    "b36-poca",
+    "b36-pocaplot",
+    "b36-ryman",
+    "b36-ships",
+    "b36-skyline",
+    "b36-wed"
+  ],
+  "reviews": [
+    {
+      "questionId": 2318,
+      "hash": "e503d30b6d70f908c0780f0227307d1b97e87937669274523a9fe72f30f87a07",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Species identification #2317 and Bruce's name #306 do not disclose this remark.",
+      "context": "The shark-pledge exchange explicitly disparages dolphins.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The shark-pledge exchange explicitly disparages dolphins.",
+        "sources": [
+          "b36-nemo",
+          "b36-nemos"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Dolphins are the named exception and subject of the imitation.",
+          "sources": [
+            "b36-nemo",
+            "b36-nemos"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jellyfish are not the animals named in this exchange.",
+          "sources": [
+            "b36-nemo",
+            "b36-nemos"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sea turtles are not the animals named in the exchange.",
+          "sources": [
+            "b36-nemo",
+            "b36-nemos"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Whales are not the animals named in this exchange.",
+          "sources": [
+            "b36-nemo",
+            "b36-nemos"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separated Anchor's exception from Chum's imitation; the shared attribution is now accurate. Other sea creatures elsewhere in the film cannot answer this scene-specific question."
+      }
+    },
+    {
+      "questionId": 2319,
+      "hash": "108f53c9c3714e618cee9375106928499cf673ffcacdf49661bb06d0e41bd8f2",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from Melody's identity, Morgana and Undertow #2018-2020.",
+      "context": "The expedition helpers are the named penguin and walrus duo.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The expedition helpers are the named penguin and walrus duo.",
+        "sources": [
+          "b36-mermaid",
+          "b36-mermaids"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Tip and Dash are the expedition pair.",
+          "sources": [
+            "b36-mermaid",
+            "b36-mermaids"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Flotsam and Jetsam are Ursula's eels, not this pair.",
+          "sources": [
+            "b36-mermaid",
+            "b36-mermaids"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cloak and Dagger are Morgana's rays, not the penguin/walrus.",
+          "sources": [
+            "b36-mermaid",
+            "b36-mermaids"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Timon and Pumbaa are Lion King characters, not Melody's helpers.",
+          "sources": [
+            "b36-mermaid",
+            "b36-mermaids"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked both names together and species/context. Removed one-letter variants that tested spelling rather than recall."
+      }
+    },
+    {
+      "questionId": 2320,
+      "hash": "76bf3bb862a6633b1f57a493ba157e47703b12a01ad135a78c081dfcb1785df4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "The gift differs from the later wall #2321 and Melody's identity #2018.",
+      "context": "Triton's christening gift is a named locket.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Triton's christening gift is a named locket.",
+        "sources": [
+          "b36-mermaid",
+          "b36-mermaids"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The gift is explicitly called a locket.",
+          "sources": [
+            "b36-mermaid",
+            "b36-mermaids"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A trident charm is not the presented gift.",
+          "sources": [
+            "b36-mermaid",
+            "b36-mermaids"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A jeweled crown is not the presented gift.",
+          "sources": [
+            "b36-mermaid",
+            "b36-mermaids"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A pearl bracelet is not the presented gift.",
+          "sources": [
+            "b36-mermaid",
+            "b36-mermaids"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The original seashell-necklace option described the locket too. Replacement choices now denote distinct objects; the locket's shape does not make them equivalent."
+      }
+    },
+    {
+      "questionId": 2321,
+      "hash": "106a208daa444fbd734d3681dd082630088fdfdaef57844e2191233875899d31",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Barrier construction does not disclose the locket gift #2320.",
+      "context": "The castle is separated from the sea by a wall following the threat.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The castle is separated from the sea by a wall following the threat.",
+        "sources": [
+          "b36-mermaid",
+          "b36-mermaids"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The sea wall is explicitly named in the dialogue.",
+          "sources": [
+            "b36-mermaid",
+            "b36-mermaids"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A magical reef is not the constructed barrier.",
+          "sources": [
+            "b36-mermaid",
+            "b36-mermaids"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A moat is not the barrier Melody swims under.",
+          "sources": [
+            "b36-mermaid",
+            "b36-mermaids"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A dam is not the protective sea wall.",
+          "sources": [
+            "b36-mermaid",
+            "b36-mermaids"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed unsupported commissioning by Triton. A stone wall may be a barrier, but it is not a dam or moat under the film's explicit sea-wall description."
+      }
+    },
+    {
+      "questionId": 2322,
+      "hash": "d56d4331a4d701d7fb92b961ea9a8c9d30f7f1b0b317be4e790073fd1aea1bcd",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Anastasia's romantic partner #2049 differs from the object given; Bambi's Flower #218 is a character name.",
+      "context": "The baker finds Anastasia by the fountain and gives the surviving flower.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The baker finds Anastasia by the fountain and gives the surviving flower.",
+        "sources": [
+          "b36-flower",
+          "b36-cinder"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The gift is the flower left from his damaged garland.",
+          "sources": [
+            "b36-flower",
+            "b36-cinder"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He does not present a cake in this meeting.",
+          "sources": [
+            "b36-flower",
+            "b36-cinder"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He does not present a letter in this meeting.",
+          "sources": [
+            "b36-flower",
+            "b36-cinder"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He does not present a ribbon in this meeting.",
+          "sources": [
+            "b36-flower",
+            "b36-cinder"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A baker might plausibly give cake, but this asks what he gives in the fountain scene. Removed the unverified hair placement and subjective proof-of-love wording."
+      }
+    },
+    {
+      "questionId": 2323,
+      "hash": "be4642c4ed7538f04cc699ecb72d75ca5137a410af7aea6dddee35fc7bbc5be7",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "The reassurance is separate from the baker's flower gift and partner identity.",
+      "context": "Cinderella's closing reassurance states that dreams do come true.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Cinderella's closing reassurance states that dreams do come true.",
+        "sources": [
+          "b36-cinder",
+          "b36-flower"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "This paraphrases Cinderella's stated reassurance.",
+          "sources": [
+            "b36-cinder",
+            "b36-flower"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Keeping love secret conflicts with Anastasia publicly defying her mother.",
+          "sources": [
+            "b36-cinder",
+            "b36-flower"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Royal approval is not Cinderella's message in the scene.",
+          "sources": [
+            "b36-cinder",
+            "b36-flower"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The sequence rejects appearances as the decisive value.",
+          "sources": [
+            "b36-cinder",
+            "b36-flower"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the movie title that literally supplied the answer. Checked the closing dialogue rather than assuming any generic romantic advice fits."
+      }
+    },
+    {
+      "questionId": 2324,
+      "hash": "edb39d626ce155d97ee6e844372271335fc2f4f177fe3129bb838670cd355128",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from chess itself #2078 and the dentures prize #2208.",
+      "context": "The glasses-wearing Geri uses a feigned heart attack as the distraction.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The glasses-wearing Geri uses a feigned heart attack as the distraction.",
+        "sources": [
+          "b36-geri",
+          "b36-pinkava"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The apparent collapse is the heart-attack ruse.",
+          "sources": [
+            "b36-geri",
+            "b36-pinkava"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He does not point out a bystander for this distraction.",
+          "sources": [
+            "b36-geri",
+            "b36-pinkava"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A spilled drink does not create the distraction.",
+          "sources": [
+            "b36-geri",
+            "b36-pinkava"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A dropped coin does not create the distraction.",
+          "sources": [
+            "b36-geri",
+            "b36-pinkava"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked which persona wears glasses and which wins. Turning the board is the following cheat, not the distraction asked here; no alternate offered action describes the collapse."
+      }
+    },
+    {
+      "questionId": 2326,
+      "hash": "8b1040e1cbaa44f20e97dd609261323b4c22b15c58039159c142c09075b442b9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Development goal differs from chess gameplay and prize facts.",
+      "context": "Pinkava describes Catmull's human-character development brief.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pinkava describes Catmull's human-character development brief.",
+        "sources": [
+          "b36-pinkava"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The brief concerns a human with expressive face and clothing.",
+          "sources": [
+            "b36-pinkava"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Talking animals are not the specified development target.",
+          "sources": [
+            "b36-pinkava"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Robots are not the specified development target.",
+          "sources": [
+            "b36-pinkava"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Insects are not the specified development target.",
+          "sources": [
+            "b36-pinkava"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tin Toy's baby defeats an unqualified first-human claim. The revised question asks only the director's explicit brief and does not imply humans were absent before Geri."
+      }
+    },
+    {
+      "questionId": 2327,
+      "hash": "d68a27a5fdb0e59b5912891096a3b91971c7be2a0cd72567c05e43f9a4e1ee73",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Retired #2079 preserved the same lesson; its active replacement is this question. Bird species #2209 is separate.",
+      "context": "Piper copies the crab's sand-burrowing response.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Piper copies the crab's sand-burrowing response.",
+        "sources": [
+          "b36-piper",
+          "b36-piperstudio",
+          "b36-piperanalysis"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "She burrows into the sand as the wave covers her.",
+          "sources": [
+            "b36-piper",
+            "b36-piperstudio",
+            "b36-piperanalysis"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "She does not climb driftwood in this copied action.",
+          "sources": [
+            "b36-piper",
+            "b36-piperstudio",
+            "b36-piperanalysis"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "She does not shelter behind a rock in this action.",
+          "sources": [
+            "b36-piper",
+            "b36-piperstudio",
+            "b36-piperanalysis"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Unlike a crab, she does not retreat into a shell.",
+          "sources": [
+            "b36-piper",
+            "b36-piperstudio",
+            "b36-piperanalysis"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Burrowing also puts her beneath water, making the original diving alternative defensible. Replacements describe different actions; the wave and crab context selects only burrowing."
+      }
+    },
+    {
+      "questionId": 2328,
+      "hash": "3ee24400a595d38c224ff8fa2a3c236a91366f0f99b45906956a84042888ff00",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Research location differs from species, burrowing and theatrical pairing.",
+      "context": "The production research visit was to Monterey Bay Aquarium.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The production research visit was to Monterey Bay Aquarium.",
+        "sources": [
+          "b36-piperinterview",
+          "b36-piperaquarium"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The director interview identifies Monterey Bay Aquarium.",
+          "sources": [
+            "b36-piperinterview",
+            "b36-piperaquarium"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Aquarium of the Pacific is not the identified research aquarium.",
+          "sources": [
+            "b36-piperinterview",
+            "b36-piperaquarium"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "California Academy of Sciences is not the identified aquarium.",
+          "sources": [
+            "b36-piperinterview",
+            "b36-piperaquarium"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "SeaWorld San Diego is not the identified aquarium.",
+          "sources": [
+            "b36-piperinterview",
+            "b36-piperaquarium"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The aquarium's own filing corroborates its Piper feather contribution. This asks the identified research destination, not whether staff ever visited other facilities."
+      }
+    },
+    {
+      "questionId": 2329,
+      "hash": "9d9fbbe460b0a24a92f658af633140289be0b90a8586bbed1a718a6c2aad93e1",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Similar template to Bao #2461, but knowing its answer cannot solve Piper's pairing.",
+      "context": "Piper accompanied Finding Dory in theaters in 2016.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Piper accompanied Finding Dory in theaters in 2016.",
+        "sources": [
+          "b36-piper",
+          "b36-piperinterview",
+          "b36-piperaquarium"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Finding Dory is the explicitly documented pairing.",
+          "sources": [
+            "b36-piper",
+            "b36-piperinterview",
+            "b36-piperaquarium"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Good Dinosaur is not the documented feature pairing.",
+          "sources": [
+            "b36-piper",
+            "b36-piperinterview",
+            "b36-piperaquarium"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cars 3 is not the documented feature pairing.",
+          "sources": [
+            "b36-piper",
+            "b36-piperinterview",
+            "b36-piperaquarium"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Coco is not the documented feature pairing.",
+          "sources": [
+            "b36-piper",
+            "b36-piperinterview",
+            "b36-piperaquarium"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked theatrical pairing rather than a later home-video collection. Bao #2461 has another short, feature and year."
+      }
+    },
+    {
+      "questionId": 2330,
+      "hash": "d78bbf45be340636a69cb45e00e667663ad1acacdf722475e29b92ed792b2639",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "The marriage mission #2021 and princess names #2022 concern different facts.",
+      "context": "Mulan's marriage would make Mushu lose his guardian pedestal.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Mulan's marriage would make Mushu lose his guardian pedestal.",
+        "sources": [
+          "b36-mulan",
+          "b36-mulanplot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Loss of his guardian position is the stated consequence.",
+          "sources": [
+            "b36-mulan",
+            "b36-mulanplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Exile from China is not the stated consequence.",
+          "sources": [
+            "b36-mulan",
+            "b36-mulanplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He is not threatened with becoming a stone statue.",
+          "sources": [
+            "b36-mulan",
+            "b36-mulanplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Loss of fire-breathing is not the threatened consequence.",
+          "sources": [
+            "b36-mulan",
+            "b36-mulanplot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Original jealousy was an overlapping broad motive. Final alternatives are distinct consequences; the gong-duty threat directly establishes the first."
+      }
+    },
+    {
+      "questionId": 2331,
+      "hash": "1e9e9eeff034934ebb92917b4a65274a66778136f4f756d22244132176c93da6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Mushu's motive #2330 does not identify this wedding impersonation.",
+      "context": "Mushu impersonates the Golden Dragon of Unity during the wedding.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Mushu impersonates the Golden Dragon of Unity during the wedding.",
+        "sources": [
+          "b36-mulan",
+          "b36-mulanplot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The wedding dialogue explicitly names the Golden Dragon of Unity.",
+          "sources": [
+            "b36-mulan",
+            "b36-mulanplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Great Stone Dragon belongs to the first film's guardian context.",
+          "sources": [
+            "b36-mulan",
+            "b36-mulanplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "No guardian-lion identity is used for this intervention.",
+          "sources": [
+            "b36-mulan",
+            "b36-mulanplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "No Jade Phoenix identity is used for this intervention.",
+          "sources": [
+            "b36-mulan",
+            "b36-mulanplot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the sequel wedding, not Mushu's original Great Stone Dragon assignment. Two dragon names do not denote the same statue here."
+      }
+    },
+    {
+      "questionId": 2332,
+      "hash": "50bc044ecbfaa076d339b22f99b0643c41e58c85a5ab03b5d076dc1c205c851b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Identifying the groom's father is not the same as the mission purpose or princess names.",
+      "context": "The intended husbands are the sons of Lord Qin, also transcribed Chin.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The intended husbands are the sons of Lord Qin, also transcribed Chin.",
+        "sources": [
+          "b36-mulan",
+          "b36-mulanplot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The plot and cast identify Lord Qin.",
+          "sources": [
+            "b36-mulan",
+            "b36-mulanplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lord Shen is not this Qui Gong ruler.",
+          "sources": [
+            "b36-mulan",
+            "b36-mulanplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lord Zhao is not the ruler named in the wedding mission.",
+          "sources": [
+            "b36-mulan",
+            "b36-mulanplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lord Wu is not the ruler named in this mission.",
+          "sources": [
+            "b36-mulan",
+            "b36-mulanplot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Qin and Chin are the same name in different transliterations; the old distractor was defensible. Removed it instead of treating a transcription difference as a factual error."
+      }
+    },
+    {
+      "questionId": 2333,
+      "hash": "8b2b4eb86192b0c3e373a9877b8fa6f82f88a89627544ef8fdcb3e65d0c1290e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from Ratcliffe's bear-baiting #2334 and the king's identity #2335.",
+      "context": "Ratcliffe falsely implicates Smith in treason.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Ratcliffe falsely implicates Smith in treason.",
+        "sources": [
+          "b36-poca",
+          "b36-pocaplot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Ratcliffe supplies the false accusation.",
+          "sources": [
+            "b36-poca",
+            "b36-pocaplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rolfe is the diplomat who later helps expose the lie.",
+          "sources": [
+            "b36-poca",
+            "b36-pocaplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "James initially believes it; he is not its source.",
+          "sources": [
+            "b36-poca",
+            "b36-pocaplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Governor Dale is not the accuser in this film.",
+          "sources": [
+            "b36-poca",
+            "b36-pocaplot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished the source of the lie from the monarch who authorizes action on it. Returning villain wording no longer gives an extra clue."
+      }
+    },
+    {
+      "questionId": 2334,
+      "hash": "4cbd5b6a81c23d1ab6ea02f17d5d4057dc144ec4113eef55665fc902d3e261ef",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "This event differs from the treason framing and court mission.",
+      "context": "Ratcliffe's ball entertainment is bear-baiting.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Ratcliffe's ball entertainment is bear-baiting.",
+        "sources": [
+          "b36-poca",
+          "b36-pocaplot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The dialogue explicitly identifies bear-baiting.",
+          "sources": [
+            "b36-poca",
+            "b36-pocaplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A fox hunt is not the spectacle protested in the ball scene.",
+          "sources": [
+            "b36-poca",
+            "b36-pocaplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A public execution is not that entertainment.",
+          "sources": [
+            "b36-poca",
+            "b36-pocaplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A jousting match is not that entertainment.",
+          "sources": [
+            "b36-poca",
+            "b36-pocaplot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Pocahontas objects to the helpless animal's torture; the scene is not a hunt or an execution. Checked the plot's attribution of the arrangement to Ratcliffe."
+      }
+    },
+    {
+      "questionId": 2335,
+      "hash": "b98147f2ddd0f0ee696d8aa569d9616c5cc674fcaa62b697448e6eb7c160e4c5",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Court host identity differs from Rolfe romance and the bear spectacle.",
+      "context": "King James is the English monarch at the ball.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "King James is the English monarch at the ball.",
+        "sources": [
+          "b36-pocaplot",
+          "b36-poca"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The plot and cast identify King James.",
+          "sources": [
+            "b36-pocaplot",
+            "b36-poca"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "King Charles is not the monarch portrayed.",
+          "sources": [
+            "b36-pocaplot",
+            "b36-poca"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "King Henry is not the monarch portrayed.",
+          "sources": [
+            "b36-pocaplot",
+            "b36-poca"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "King George is not the monarch portrayed.",
+          "sources": [
+            "b36-pocaplot",
+            "b36-poca"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "This is the animated sequel's monarch, not a question about a different historical reign. All alternatives are parallel royal names."
+      }
+    },
+    {
+      "questionId": 2336,
+      "hash": "e13a65171df918300e847e72ac435a3cf1afbfd996707969cd8a62ef16a7751b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from Sarousch's identity #2046 and the bell #2045.",
+      "context": "Madellaine practices a high-wire act and uses it to save Zephyr.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Madellaine practices a high-wire act and uses it to save Zephyr.",
+        "sources": [
+          "b36-hunchs",
+          "b36-hunch"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The high-wire practice and rescue establish tightrope walking.",
+          "sources": [
+            "b36-hunchs",
+            "b36-hunch"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A trapeze involves swinging, unlike her rope crossing.",
+          "sources": [
+            "b36-hunchs",
+            "b36-hunch"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "She does not use lion-taming to rescue Zephyr.",
+          "sources": [
+            "b36-hunchs",
+            "b36-hunch"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "She does not use fire-breathing to rescue Zephyr.",
+          "sources": [
+            "b36-hunchs",
+            "b36-hunch"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished walking a rope from swinging on a trapeze. Circus setting alone does not validate every circus act; the rescue explicitly uses the practiced balance skill."
+      }
+    },
+    {
+      "questionId": 2337,
+      "hash": "b5b52d73139937997f100847f08874082a807d729e4a4eb6c705d8b7cd32e54f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "The old shared six-year answer with Coco #2437 was unrelated; that answer no longer applies.",
+      "context": "Disney's synopsis expressly gives seven elapsed story years.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney's synopsis expressly gives seven elapsed story years.",
+        "sources": [
+          "b36-hunchdate"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Seven is the stated story interval.",
+          "sources": [
+            "b36-hunchdate"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Six is the release-year gap, excluded by the final wording.",
+          "sources": [
+            "b36-hunchdate"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Three is not the stated story interval.",
+          "sources": [
+            "b36-hunchdate"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ten is not the stated story interval.",
+          "sources": [
+            "b36-hunchdate"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked story chronology against the Disney opening sentence. Specifying in the story prevents 1996-to-2002 subtraction from being defensible."
+      }
+    },
+    {
+      "questionId": 2338,
+      "hash": "3ad3f90b556707e819c10cde61a2529dfce195ff8234607457ac654c331e82d9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Wendy's nursery kiss offer #258 is a different film, pair and event.",
+      "context": "The final bell-tower romantic exchange includes a kiss.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The final bell-tower romantic exchange includes a kiss.",
+        "sources": [
+          "b36-hunch",
+          "b36-hunchkiss",
+          "b36-hunchs"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The detailed ending accounts describe the kiss.",
+          "sources": [
+            "b36-hunch",
+            "b36-hunchkiss",
+            "b36-hunchs"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "They do not describe dancing as the shared act in this moment.",
+          "sources": [
+            "b36-hunch",
+            "b36-hunchkiss",
+            "b36-hunchs"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "They do not describe a handshake as that act.",
+          "sources": [
+            "b36-hunch",
+            "b36-hunchkiss",
+            "b36-hunchs"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "They do not describe a toast as that act.",
+          "sources": [
+            "b36-hunch",
+            "b36-hunchkiss",
+            "b36-hunchs"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed first-ever wording to avoid earlier forehead affection. The named bell-ringing finale narrows the question to the romantic kiss, not any earlier dance or greeting."
+      }
+    },
+    {
+      "questionId": 2339,
+      "hash": "29d04394cb17a26d5d45e8a20b738803eb1f34b3ec815dcf4fe7154d72b0a023",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Thunderbolt's identity #2028 and the acting reveal #2340 are different facts.",
+      "context": "Thunderbolt's sidekick is Lightning, introduced as Little Lightning.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Thunderbolt's sidekick is Lightning, introduced as Little Lightning.",
+        "sources": [
+          "b36-patch",
+          "b36-patchplot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Lightning is the introduced sidekick.",
+          "sources": [
+            "b36-patch",
+            "b36-patchplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sparky is not Thunderbolt's sidekick.",
+          "sources": [
+            "b36-patch",
+            "b36-patchplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bolt is not the sidekick named in this sequel.",
+          "sources": [
+            "b36-patch",
+            "b36-patchplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Flash is not the named sidekick.",
+          "sources": [
+            "b36-patch",
+            "b36-patchplot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the fictional TV program within a feature film; this does not introduce real TV-show trivia. Shortening Little Lightning to Lightning does not change the name."
+      }
+    },
+    {
+      "questionId": 2340,
+      "hash": "69e709d0eae235f8030c9546ac97b72ec618f43d78439b8881d002b0192941ee",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "This is an in-universe show reveal in the 2003 feature, distinct from naming Thunderbolt or Lightning.",
+      "context": "Lightning reveals that Thunderbolt's apparent heroics are acting.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Lightning reveals that Thunderbolt's apparent heroics are acting.",
+        "sources": [
+          "b36-patch",
+          "b36-patchplot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Thunderbolt confirms he puts on an act and is an actor.",
+          "sources": [
+            "b36-patch",
+            "b36-patchplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The betrayal does not reveal a stunt-performing twin.",
+          "sources": [
+            "b36-patch",
+            "b36-patchplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The stories are not revealed to be his childhood adventures.",
+          "sources": [
+            "b36-patch",
+            "b36-patchplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The rescues are not revealed as Lightning's genuine exploits.",
+          "sources": [
+            "b36-patch",
+            "b36-patchplot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A dog can be a real dog and an actor, so the old species distractors were poor. New choices concern the same alleged origin of his screen heroics; only acting matches his admission."
+      }
+    },
+    {
+      "questionId": 2342,
+      "hash": "e9f8b9069b5c6a90bac8dfc351b095aa2d428c75b367e5090d4547e677354789",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Earlier leader question #2009 was already retired in favor of this group-name fact; Kovu's identity remains separate.",
+      "context": "Zira leads the exiled pride called the Outsiders.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Zira leads the exiled pride called the Outsiders.",
+        "sources": [
+          "b36-lion",
+          "b29-lion2-family"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Outsiders is the group name in the sequel plot.",
+          "sources": [
+            "b36-lion",
+            "b29-lion2-family"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Night Pride is not Zira's group in this feature.",
+          "sources": [
+            "b36-lion",
+            "b29-lion2-family"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lion Guard is not the exiled Scar-loyalist pride.",
+          "sources": [
+            "b36-lion",
+            "b29-lion2-family"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Shadow Pride is not the group name supplied in this film.",
+          "sources": [
+            "b36-lion",
+            "b29-lion2-family"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed Outlanders and Exiles because they can descriptively fit this same pride. The revised alternatives are distinct group names; no real TV trivia is required."
+      }
+    },
+    {
+      "questionId": 2343,
+      "hash": "e20c60b52be391747b789c5c550fd1e6d4e8fdd90c357e57496fbb28339fbbc5",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "The separate Skyline city-view design #2344 and Pink bottle design #2345 are distinct.",
+      "context": "Meridian has the specified location, audience and seating.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "Meridian has the specified location, audience and seating.",
+        "sources": [
+          "b36-meridian",
+          "b36-dreamguide"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Meridian is explicitly between Palo and Remy.",
+          "sources": [
+            "b36-meridian",
+            "b36-dreamguide"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "District Lounge is on Deck 4, not between those restaurants.",
+          "sources": [
+            "b36-meridian",
+            "b36-dreamguide"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Evolution is not the between-restaurants lounge.",
+          "sources": [
+            "b36-meridian",
+            "b36-dreamguide"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pub 687 is on Deck 4, not the specified Deck 12 location.",
+          "sources": [
+            "b36-meridian",
+            "b36-dreamguide"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other venues also serve adults; that alone is insufficient. The restaurant location plus outdoor seating uniquely selects Meridian."
+      }
+    },
+    {
+      "questionId": 2344,
+      "hash": "10e48370f37f43c7bb6c52782674dc93811108f4b1ab4e51ef4b59a3c0c9d426",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different venue/design fact from Meridian and Pink.",
+      "context": "Skyline is the lounge with changing city imagery.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "Skyline is the lounge with changing city imagery.",
+        "sources": [
+          "b36-skyline",
+          "b36-fantasy",
+          "b36-meridian"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Skyline's transforming city views are explicit.",
+          "sources": [
+            "b36-skyline",
+            "b36-fantasy",
+            "b36-meridian"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Meridian has actual ocean-view seating.",
+          "sources": [
+            "b36-skyline",
+            "b36-fantasy",
+            "b36-meridian"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ooh La La is a French boudoir design.",
+          "sources": [
+            "b36-skyline",
+            "b36-fantasy",
+            "b36-meridian"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "O'Gills is an Irish pub.",
+          "sources": [
+            "b36-skyline",
+            "b36-fantasy",
+            "b36-meridian"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed skyline from the stem. Ocean views and a French-themed interior do not establish changing city images; both Dream and Fantasy context was checked."
+      }
+    },
+    {
+      "questionId": 2345,
+      "hash": "6aec139f7a2d5f36cff3da75420c4e0c8a23863cc0f5d8bca69a457f26366dee",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from identifying The District #967 or Skyline/Meridian.",
+      "context": "Pink is the Disney Dream Champagne-bottle interior.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "Pink is the Disney Dream Champagne-bottle interior.",
+        "sources": [
+          "b36-pink",
+          "b36-pinkcor",
+          "b36-fantasy",
+          "b36-skyline"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Pink is expressly designed as the bottle interior.",
+          "sources": [
+            "b36-pink",
+            "b36-pinkcor",
+            "b36-fantasy",
+            "b36-skyline"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ooh La La uses a French boudoir theme.",
+          "sources": [
+            "b36-pink",
+            "b36-pinkcor",
+            "b36-fantasy",
+            "b36-skyline"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Evolution is not the bottle-themed Champagne bar.",
+          "sources": [
+            "b36-pink",
+            "b36-pinkcor",
+            "b36-fantasy",
+            "b36-skyline"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Skyline uses city images rather than a bottle interior.",
+          "sources": [
+            "b36-pink",
+            "b36-pinkcor",
+            "b36-fantasy",
+            "b36-skyline"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A bar serving Champagne is not necessarily bottle-themed. Official indexed entry and firsthand design account establish the exact Pink design."
+      }
+    },
+    {
+      "questionId": 2346,
+      "hash": "97f024ca1ac558ff0ccf698e9e3f29125edab9e48aa1749dad4cb99afd559614",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Wonder's 1999 entry #961 and Toy Story musical #2274 cannot supply the Frozen premiere fact.",
+      "context": "The November 2016 show was introduced on Disney Wonder.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The November 2016 show was introduced on Disney Wonder.",
+        "sources": [
+          "b36-frozen"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Wonder is the ship named in the announcement.",
+          "sources": [
+            "b36-frozen"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Magic is not the announced premiere ship.",
+          "sources": [
+            "b36-frozen"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dream is not the announced premiere ship.",
+          "sources": [
+            "b36-frozen"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wish is not the announced 2016 premiere ship.",
+          "sources": [
+            "b36-frozen"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other ships may have Frozen entertainment, but this asks the specific show's dated debut. Removed later-performance information that was not needed."
+      }
+    },
+    {
+      "questionId": 2347,
+      "hash": "fec6dcbef95f2280fd3a7aa20f2eeced3e863125b2889f2bd219ca73a8ee35b2",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Tests ride layout, not attraction name or which ship has it.",
+      "context": "AquaDuck's course passes through the forward funnel.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "AquaDuck's course passes through the forward funnel.",
+        "sources": [
+          "b36-duck",
+          "b36-duckcor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The forward funnel is explicitly identified.",
+          "sources": [
+            "b36-duck",
+            "b36-duckcor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The route is not described as passing through the bridge.",
+          "sources": [
+            "b36-duck",
+            "b36-duckcor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A flagpole is not the enclosed structure on its course.",
+          "sources": [
+            "b36-duck",
+            "b36-duckcor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The main mast is not the identified structure.",
+          "sources": [
+            "b36-duck",
+            "b36-duckcor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished the forward funnel passage from the aft loading area. Removed the distracting length claim; naming AquaDuck #733 does not solve its route."
+      }
+    },
+    {
+      "questionId": 2348,
+      "hash": "39f787c895b7af16df312c44ee6335e5242e047ee11fea846c4fe0fcb6f5d3ad",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Company name is separate from the attraction name #418.",
+      "context": "The named Imagineering project coordinator identifies Port Misadventures.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The named Imagineering project coordinator identifies Port Misadventures.",
+        "sources": [
+          "b36-mouse"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Port Misadventures is the company named by Handke.",
+          "sources": [
+            "b36-mouse"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mouseketeer Tours is not the identified company.",
+          "sources": [
+            "b36-mouse"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sea Legs Excursions is not the identified company.",
+          "sources": [
+            "b36-mouse"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Adventure Company is not the identified company.",
+          "sources": [
+            "b36-mouse"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed one-of-two-random-storylines language: the company frames the attraction, and the reported story varied by day. Other tour-like names are not aliases in the evidence."
+      }
+    },
+    {
+      "questionId": 2349,
+      "hash": "db7d586176239394964d826162b996aceb09132b2a905aae59a1a61f74a92069",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "This tests a historical drink name rather than naming Hyperspace Lounge #429.",
+      "context": "The debut menu's $5,000 drink is Kaiburr Crystal.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The debut menu's $5,000 drink is Kaiburr Crystal.",
+        "sources": [
+          "b36-cocktail",
+          "b36-cocktailcor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Kaiburr Crystal is the witnessed drink name.",
+          "sources": [
+            "b36-cocktail",
+            "b36-cocktailcor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sith Holocron is not the witnessed drink name.",
+          "sources": [
+            "b36-cocktail",
+            "b36-cocktailcor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Darksaber is not the witnessed drink name.",
+          "sources": [
+            "b36-cocktail",
+            "b36-cocktailcor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jedi Compass is not the witnessed drink name.",
+          "sources": [
+            "b36-cocktail",
+            "b36-cocktailcor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Two onboard reports agree on the historical price and name. No claim to today's price, menu presence or universal expense record remains."
+      }
+    },
+    {
+      "questionId": 2350,
+      "hash": "91908a3e7dda2cd69db940e2920330b71b168b22887df4ed4bfeba70e8028d22",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from destination identity #1512 and barbecue venue #2351.",
+      "context": "The announced Junkanoo venue is Goombay Cultural Center.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The announced Junkanoo venue is Goombay Cultural Center.",
+        "sources": [
+          "b36-goombay"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Goombay Cultural Center is explicitly named in the design announcement.",
+          "sources": [
+            "b36-goombay"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bahama Heritage House is not the named venue.",
+          "sources": [
+            "b36-goombay"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Island Roots Pavilion is not the named venue.",
+          "sources": [
+            "b36-goombay"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Junkanoo Hall is not the named venue despite repeating the festival word.",
+          "sources": [
+            "b36-goombay"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed cultural center from the question so the answer is not identified by generic word overlap. Junkanoo is the theme, not the venue's name."
+      }
+    },
+    {
+      "questionId": 2351,
+      "hash": "3d6ae367ee6480111c77b75c2d7e22758f6bac976a17630e926d8ed784d14d7d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Venue roster differs from the cultural center and island identity.",
+      "context": "True-True BBQ appears on Disney's opening dining roster.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "True-True BBQ appears on Disney's opening dining roster.",
+        "sources": [
+          "b36-bbq"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "True-True BBQ is explicitly on the roster.",
+          "sources": [
+            "b36-bbq"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Conch Shack BBQ is not listed.",
+          "sources": [
+            "b36-bbq"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Castaway Grill is not listed.",
+          "sources": [
+            "b36-bbq"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Flying Fish BBQ is not listed.",
+          "sources": [
+            "b36-bbq"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "There were multiple actual barbecue venues. The revised which-of-these wording no longer calls True-True the sole main venue; none of the other listed names is on the opening roster."
+      }
+    },
+    {
+      "questionId": 2352,
+      "hash": "94e459c10f6481f91d98c30f0ac2ac335243034775255e2f62208aab60a76d52",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Wish's Cinderella statue #1223 and July 2022 voyage #729 require separate knowledge.",
+      "context": "The joint technical plan covers Wish and Treasure at the listed dimensions.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The joint technical plan covers Wish and Treasure at the listed dimensions.",
+        "sources": [
+          "b36-ships"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Wish is the other ship on the joint plan.",
+          "sources": [
+            "b36-ships"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Dream is not the other ship on this joint plan.",
+          "sources": [
+            "b36-ships"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Fantasy is not the other ship on this joint plan.",
+          "sources": [
+            "b36-ships"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Magic is not the other ship on this joint plan.",
+          "sources": [
+            "b36-ships"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Use the published plan's precise gross-tonnage figure, not a claim that every size measurement of the two ships is identical. Its differing cabin counts show why exact size was too broad."
+      }
+    },
+    {
+      "questionId": 2353,
+      "hash": "987d8a4ed9dfd65820294df5770fc62a800fa8aa03d8089e23204926e5701436",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Map artist and Roy's destination #2354 are different facts.",
+      "context": "Ryman created the 1953 financing illustration with Walt over a weekend.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Ryman created the 1953 financing illustration with Walt over a weekend.",
+        "sources": [
+          "b36-ryman",
+          "b36-imagineering"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Herb Ryman is the explicitly recruited artist.",
+          "sources": [
+            "b36-ryman",
+            "b36-imagineering"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "John Hench is not the artist identified for this weekend map.",
+          "sources": [
+            "b36-ryman",
+            "b36-imagineering"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Marc Davis is not the artist identified for this map.",
+          "sources": [
+            "b36-ryman",
+            "b36-imagineering"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ken Anderson is not the artist identified for this map.",
+          "sources": [
+            "b36-ryman",
+            "b36-imagineering"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other Imagineers worked on park design, but authorship of this particular financing view is Ryman. D23 and Imagineering history agree."
+      }
+    },
+    {
+      "questionId": 2354,
+      "hash": "3cf30ab43717113e03ec0e6d8a38f8999345b466d12c70c4436d2b57cfad82bb",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Ryman's identity #2353 does not supply the city.",
+      "context": "The map was prepared for Roy's New York financing meetings.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The map was prepared for Roy's New York financing meetings.",
+        "sources": [
+          "b36-mapcity",
+          "b36-mapcor",
+          "b36-imagineering"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "New York is explicitly named for the presentation trip.",
+          "sources": [
+            "b36-mapcity",
+            "b36-mapcor",
+            "b36-imagineering"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Chicago is not the named presentation destination.",
+          "sources": [
+            "b36-mapcity",
+            "b36-mapcor",
+            "b36-imagineering"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Washington, D.C. is not the named destination.",
+          "sources": [
+            "b36-mapcity",
+            "b36-mapcor",
+            "b36-imagineering"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "San Francisco is not the named destination.",
+          "sources": [
+            "b36-mapcity",
+            "b36-mapcor",
+            "b36-imagineering"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished the colored presentation piece from its pencil precursor. The location is not inferred from a broadcaster's headquarters; the artifact history directly names New York."
+      }
+    },
+    {
+      "questionId": 2356,
+      "hash": "a271dd74ab3388a078572af7ef88451422cc75ff1f75f386c2435916511fb8d4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Independent from production cost #2103, premiere venue #935 and honorary Oscar #1496.",
+      "context": "Film at Lincoln Center identifies Walt's house as mortgaged for the film.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Film at Lincoln Center identifies Walt's house as mortgaged for the film.",
+        "sources": [
+          "b36-house",
+          "b36-housecor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "His house is the property named by the institutional account.",
+          "sources": [
+            "b36-house",
+            "b36-housecor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A yacht is not the property named by this account.",
+          "sources": [
+            "b36-house",
+            "b36-housecor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "An airplane is not the property named by this account.",
+          "sources": [
+            "b36-house",
+            "b36-housecor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jewelry is not the property named by this account.",
+          "sources": [
+            "b36-house",
+            "b36-housecor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed life insurance because accounts also describe borrowing against it. The attributed which-of-these wording asks what this account identifies, without asserting the house was his only financing resource. No offered alternative is another type of house."
+      }
+    },
+    {
+      "questionId": 2357,
+      "hash": "bf9f7134e29141adf99b8e85e0c2d4b4241fb0ac1c9ea6364cc939c9b5d7828f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "WED acronym #402 and 1986 renaming #1191 are separate facts.",
+      "context": "WED's founding dates to December 1952.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "WED's founding dates to December 1952.",
+        "sources": [
+          "b36-wed"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "1952 is the explicit founding year.",
+          "sources": [
+            "b36-wed"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1955 is not the founding year.",
+          "sources": [
+            "b36-wed"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1961 is the move to Glendale, not the founding.",
+          "sources": [
+            "b36-wed"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1965 is the sale of Walt's interest, not the founding.",
+          "sources": [
+            "b36-wed"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked founding rather than the later WED name adoption or acquisition. The entry distinguishes the distractor milestones."
+      }
+    },
+    {
+      "questionId": 2358,
+      "hash": "51a575963fd0d4725e330575c8258ec6e57d388cdcdd0824df345bc457c1f18b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "The introduced song #1181 and first competitive Oscar #1197 are separate facts.",
+      "context": "Three Little Pigs won at the 1934 ceremony.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Three Little Pigs won at the 1934 ceremony.",
+        "sources": [
+          "b36-oscar34"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "1934 is the dated ceremony containing the win.",
+          "sources": [
+            "b36-oscar34"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1932 predates the 1933 film and is not the listed ceremony.",
+          "sources": [
+            "b36-oscar34"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1936 is not the ceremony listed for the win.",
+          "sources": [
+            "b36-oscar34"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1938 is not that ceremony.",
+          "sources": [
+            "b36-oscar34"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished film year from ceremony year and removed the unneeded consecutive-awards claim. The official dated results uniquely select 1934."
+      }
+    },
+    {
+      "questionId": 2359,
+      "hash": "ca4e4bc942f9e97e21048e5d16980b4ed0c3938921b5bc7eb28a4e8bbd81e898",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "No active topic question already asks this song's composer.",
+      "context": "Churchill composed the tune used for the Peter Pan crocodile.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Churchill composed the tune used for the Peter Pan crocodile.",
+        "sources": [
+          "b36-croc",
+          "b36-croccor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Churchill is the identified composer.",
+          "sources": [
+            "b36-croc",
+            "b36-croccor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bruns is not credited as composer of this song.",
+          "sources": [
+            "b36-croc",
+            "b36-croccor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wallace's film score role does not make him this tune's composer.",
+          "sources": [
+            "b36-croc",
+            "b36-croccor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Smith is not credited as this tune's composer.",
+          "sources": [
+            "b36-croc",
+            "b36-croccor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separated the tune's composition from the broader film score and from Lawrence's lyrics. Removed the unnecessary deleted-vocals production claim."
+      }
+    },
+    {
+      "questionId": 2360,
+      "hash": "cf530dd2e9d43a8be8564fe2bf13e5c06eeed16a22ba886af6e918c3e270535c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from Cruella character identity #226 and the film's xerography #951.",
+      "context": "Disney's film entry attributes the song to Mel Leven.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney's film entry attributes the song to Mel Leven.",
+        "sources": [
+          "b36-leven"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Mel Leven is explicitly credited.",
+          "sources": [
+            "b36-leven"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Sherman Brothers are not the credited writers.",
+          "sources": [
+            "b36-leven"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "George Bruns is not the credited songwriter.",
+          "sources": [
+            "b36-leven"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Terry Gilkyson is not the credited songwriter.",
+          "sources": [
+            "b36-leven"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A film score credit is not a song-writing credit. The original 1961 version and exact song are specified, excluding later adaptations."
+      }
+    },
+    {
+      "questionId": 2361,
+      "hash": "edefe6ead6c38cdd11b0985a6778bef7d998649ac9445f3322f2cf0905e8d671",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from identifying Bibbidi-Bobbidi-Boo in Cinderella #700.",
+      "context": "Cinderella's nominated song lost to Mona Lisa at the 1951 awards.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Cinderella's nominated song lost to Mona Lisa at the 1951 awards.",
+        "sources": [
+          "b36-oscar51"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Mona Lisa is the Music (Song) winner.",
+          "sources": [
+            "b36-oscar51"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Que Sera, Sera is not this ceremony's winner.",
+          "sources": [
+            "b36-oscar51"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Secret Love is not this ceremony's winner.",
+          "sources": [
+            "b36-oscar51"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Buttons and Bows is not this ceremony's winner.",
+          "sources": [
+            "b36-oscar51"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the actual winning row and Cinderella nomination, not simply whether the alternatives are Oscar-winning songs in other years."
+      }
+    },
+    {
+      "questionId": 2362,
+      "hash": "24b035d0c458e6ff47495189362748e82662e913059adc3d737ebfafbf03afbf",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Original Moana collaborators #461 concern another film and team.",
+      "context": "The production notes credit Barlow and Bear with five new songs.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The production notes credit Barlow and Bear with five new songs.",
+        "sources": [
+          "b36-moana"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Abigail Barlow and Emily Bear are the credited duo.",
+          "sources": [
+            "b36-moana"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Anderson-Lopez and Anderson are not this film's credited duo.",
+          "sources": [
+            "b36-moana"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bareilles and Michaelson are not this film's credited duo.",
+          "sources": [
+            "b36-moana"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Michaels and Aarons are not this film's credited duo.",
+          "sources": [
+            "b36-moana"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the five-song process passage and both biographies. Removed first/full-soundtrack language rather than confusing the other music contributors with this original-song assignment."
+      }
+    },
+    {
+      "questionId": 2363,
+      "hash": "a2dc10ab428c9a9cf7a00412c9313d8165d68fe89065b5132d628df3c5692045",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "The song's performer and film-scene questions elsewhere do not supply this award result.",
+      "context": "The 2017 original-song winner was City of Stars.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 2017 original-song winner was City of Stars.",
+        "sources": [
+          "b36-oscar17"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "City of Stars occupies the winner row.",
+          "sources": [
+            "b36-oscar17"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Audition was nominated but did not win.",
+          "sources": [
+            "b36-oscar17"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Another Day of Sun is not the winning song.",
+          "sources": [
+            "b36-oscar17"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A Lovely Night is not the winning song.",
+          "sources": [
+            "b36-oscar17"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Two La La Land songs were nominees, so nomination alone cannot resolve the question. The winning row establishes the distinction from Audition."
+      }
+    },
+    {
+      "questionId": 2364,
+      "hash": "89fee1261d23ccc54c17ad443c2add3a3c070b9092164da1d4f9b8e248ee4a3c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Snow White's seven dwarfs #57 and Bruno's No.1 identity #708 do not disclose this credit count.",
+      "context": "The 2022 chart credit contains six named performers plus Encanto Cast.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 2022 chart credit contains six named performers plus Encanto Cast.",
+        "sources": [
+          "b36-bruno",
+          "b36-brunocor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Six individuals plus one credited ensemble equals seven acts.",
+          "sources": [
+            "b36-bruno",
+            "b36-brunocor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Four is inconsistent with the complete seven-act credit.",
+          "sources": [
+            "b36-bruno",
+            "b36-brunocor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Eight overcounts the seven credited acts.",
+          "sources": [
+            "b36-bruno",
+            "b36-brunocor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Three undercounts the seven credited acts.",
+          "sources": [
+            "b36-bruno",
+            "b36-brunocor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The ensemble contains more people; the revised question counts artist-credit acts, not every singer. The complete named roster and Billboard announcement agree on seven."
+      }
+    },
+    {
+      "questionId": 2365,
+      "hash": "a58f02b5e1bf1c7dc5e316671e74059ed71efd1dbd5f74ce42381ee8e871ca58",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Andy as owner #171 and Bonnie as recipient #1281 are separate facts.",
+      "context": "The opening screenplay identifies Molly as Andy's baby sister.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The opening screenplay identifies Molly as Andy's baby sister.",
+        "sources": [
+          "b36-molly"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Molly is explicitly introduced as his one-year-old sister.",
+          "sources": [
+            "b36-molly"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Emily is not the introduced sister.",
+          "sources": [
+            "b36-molly"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hannah is not the introduced sister; actor names do not establish relationships.",
+          "sources": [
+            "b36-molly"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sarah is not the introduced sister.",
+          "sources": [
+            "b36-molly"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed later-film doll histories and checked the original screenplay introduction. A voice actor named Hannah cannot make Hannah the character's name."
+      }
+    },
+    {
+      "questionId": 2366,
+      "hash": "2ab89bc3ba8557081cd48f255a60f31ccdb7bdc85e7332037a4ab79a2d98be7d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Sally's motel #1277 is a different character/business fact.",
+      "context": "Pixar identifies Flo as the café manager.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar identifies Flo as the café manager.",
+        "sources": [
+          "b36-cars"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Flo has the café-manager role.",
+          "sources": [
+            "b36-cars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sally is the town's attorney/Porsche, not its café manager.",
+          "sources": [
+            "b36-cars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lizzie is not the manager named in the café profile.",
+          "sources": [
+            "b36-cars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ramona is not the manager named by Pixar.",
+          "sources": [
+            "b36-cars"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed marriage and ownership claims not needed to test the manager. Final role selection does not depend on calling it Flo's in the stem."
+      }
+    },
+    {
+      "questionId": 2367,
+      "hash": "6c0681637ae0aa2b2fa4f2b4228a2773a0125b730ec2da41c3b2191947ba4ece",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Shop owner differs from racing number, town name and Fillmore's trade.",
+      "context": "Ramone owns the custom body and paint shop.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Ramone owns the custom body and paint shop.",
+        "sources": [
+          "b36-cars"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Ramone owns the body-art shop.",
+          "sources": [
+            "b36-cars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Luigi runs the tire shop.",
+          "sources": [
+            "b36-cars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Guido assists Luigi with tires.",
+          "sources": [
+            "b36-cars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fillmore brews organic fuel.",
+          "sources": [
+            "b36-cars"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tire service and fuel sales are different from custom paint work; the profiles allocate each role explicitly."
+      }
+    },
+    {
+      "questionId": 2368,
+      "hash": "38ecff0fae2710030c9688e6096010621af37a7f4b3d270e6c10d6ab42db8f7b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Separate roles from Ramone, Flo and Sarge, each requiring its own character mapping.",
+      "context": "Fillmore is the VW bus brewing organic fuel.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Fillmore is the VW bus brewing organic fuel.",
+        "sources": [
+          "b36-cars"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Fillmore is the bus and organic-fuel brewer.",
+          "sources": [
+            "b36-cars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ramone is the low-rider paint specialist.",
+          "sources": [
+            "b36-cars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sarge is the Army Jeep and surplus seller.",
+          "sources": [
+            "b36-cars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mater is the tow truck.",
+          "sources": [
+            "b36-cars"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Vehicle type and described trade align only for Fillmore; shared residence in Radiator Springs does not make another option fit."
+      }
+    },
+    {
+      "questionId": 2369,
+      "hash": "0c8c777432ef0c3c1a96bff6a4251ae5faa819b7e68a1a54ec6625da62cab04d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from Fillmore's organic-fuel trade and Doc's racing mentorship #1026.",
+      "context": "Sarge is the Army Jeep running the surplus hut.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Sarge is the Army Jeep running the surplus hut.",
+        "sources": [
+          "b36-cars"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Sarge has the specified vehicle type and business.",
+          "sources": [
+            "b36-cars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fillmore is the VW bus and organic-fuel brewer.",
+          "sources": [
+            "b36-cars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sheriff is the police cruiser.",
+          "sources": [
+            "b36-cars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Doc Hudson is the doctor/judge and retired racer.",
+          "sources": [
+            "b36-cars"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Patriotism alone could be broad; Army Jeep and surplus-store role jointly identify Sarge. Dropped the unnecessary neighbor claim."
+      }
+    },
+    {
+      "questionId": 2370,
+      "hash": "69ed077ae36f985b88b8c923cfba4fcd1b5ac81adef52a16e738b170d21fa162",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from final-death terminology #496 and Un Poco Loco contest #2287.",
+      "context": "Chicharrón requests his favorite before Héctor earns the guitar.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Chicharrón requests his favorite before Héctor earns the guitar.",
+        "sources": [
+          "b36-coco"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The performed song in this scene is Everyone Knows Juanita.",
+          "sources": [
+            "b36-coco"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Remember Me is not the requested hammock-scene song.",
+          "sources": [
+            "b36-coco"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Un Poco Loco is the later talent-contest number.",
+          "sources": [
+            "b36-coco"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The World Es Mi Familia is not this requested song.",
+          "sources": [
+            "b36-coco"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the guitar bargain, favorite request and ensuing performed song in the studio screenplay. General importance of Remember Me does not override the scene evidence."
+      }
+    }
+  ]
+}

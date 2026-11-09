@@ -1,0 +1,3263 @@
+{
+  "schema": 1,
+  "reviewer": "Codex",
+  "at": "2026-11-08",
+  "sourcesChecked": [
+    "b32-aladdin",
+    "b32-aladdin-cor",
+    "b32-bambi-dialogue",
+    "b32-bambi-history",
+    "b32-bambi-ice",
+    "b32-bambi-models",
+    "b32-bambi-zoo",
+    "b32-bambi-zoo-cor",
+    "b32-bears-songs",
+    "b32-bears-songs-cor",
+    "b32-brother-dialogue",
+    "b32-brother-plot",
+    "b32-brother-production",
+    "b32-brother-ratio",
+    "b32-cookie",
+    "b32-fantasia",
+    "b32-fantasia-cor",
+    "b32-fox-cost",
+    "b32-fox-cost-cor",
+    "b32-fox-production",
+    "b32-groove",
+    "b32-groove-cor",
+    "b32-herc-cloud",
+    "b32-herc-design",
+    "b32-herc-gospel",
+    "b32-herc-hydra-cor",
+    "b32-herc-mouth",
+    "b32-herc-muses",
+    "b32-herc-transcription",
+    "b32-kanga",
+    "b32-lasseter",
+    "b32-mineral",
+    "b32-moana-island",
+    "b32-moana-matangi",
+    "b32-moana-plot",
+    "b32-olaf",
+    "b32-olaf-cor",
+    "b32-onward",
+    "b32-owl",
+    "b32-smokey",
+    "b32-soarin",
+    "b32-soul-city",
+    "b32-soul-credits",
+    "b32-soul-hands",
+    "b32-soul-scientist",
+    "b32-soul-score",
+    "b32-swiss-bombs",
+    "b32-swiss-bombs-cor",
+    "b32-swiss-home",
+    "b32-tangled",
+    "b32-tangled-dialogue",
+    "b32-tangled-keane",
+    "b32-vixey-keane",
+    "b32-vixey-musker"
+  ],
+  "reviews": [
+    {
+      "questionId": 2118,
+      "hash": "2cda4cd298983eee10e744105d5f7b62ba611426647ba9949bc1bc09b37c9922",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Disney live-action film, 1960; final pirate battle.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The dialogue names the improvised weapons used during the attack.",
+        "sources": [
+          "b32-swiss-bombs",
+          "b32-swiss-bombs-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The family explicitly calls for coconut bombs.",
+          "sources": [
+            "b32-swiss-bombs",
+            "b32-swiss-bombs-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Clay firepots are not the named thrown bombs.",
+          "sources": [
+            "b32-swiss-bombs",
+            "b32-swiss-bombs-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bottled firebombs are not the coconut-shell weapons identified.",
+          "sources": [
+            "b32-swiss-bombs",
+            "b32-swiss-bombs-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Exploding gourds are a different container from the coconuts described.",
+          "sources": [
+            "b32-swiss-bombs",
+            "b32-swiss-bombs-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed gunpowder/fuse clue and compared four explosive containers. The evidence identifies coconuts, excluding clay, bottles and gourds; other traps in the battle do not answer this revised question."
+      }
+    },
+    {
+      "questionId": 2119,
+      "hash": "08812e6d9b1759d56554e3a8ceb8c3bbb7984ecc900e540f74945004fb8b18cf",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Swiss Family Robinson, 1960; island home.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney identifies the family home as built in a huge tree.",
+        "sources": [
+          "b32-swiss-home"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "A treehouse is the elevated family home.",
+          "sources": [
+            "b32-swiss-home"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A stone tower is not a home built in a huge tree.",
+          "sources": [
+            "b32-swiss-home"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A stilt house stands on posts rather than in the tree.",
+          "sources": [
+            "b32-swiss-home"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A cliffside cabin is not the tree home in the official account.",
+          "sources": [
+            "b32-swiss-home"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the tree-in-stem giveaway and unneeded skylight/plumbing claims. All four choices describe homes; only the treehouse matches. Park attraction #923 asks the attraction identity, a separate real-world fact."
+      }
+    },
+    {
+      "questionId": 2120,
+      "hash": "bf966121a89450b9a4284aa24d85d465820f890f8be9ad0a76547634f24f51af",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Fantasia initial 1940-1941 exhibition; historical causes, no bankruptcy magnitude claimed.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Institutional histories identify costly installations, rationing and closed European markets.",
+        "sources": [
+          "b32-fantasia",
+          "b32-fantasia-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Wartime losses and sound equipment costs are specifically documented.",
+          "sources": [
+            "b32-fantasia",
+            "b32-fantasia-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The histories describe theatrical runs, contradicting a nationwide animation ban.",
+          "sources": [
+            "b32-fantasia",
+            "b32-fantasia-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Multiple exhibition prints and roadshows contradict destruction of the sole finished print.",
+          "sources": [
+            "b32-fantasia",
+            "b32-fantasia-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ticketed roadshow engagements contradict a decision to exhibit the film free.",
+          "sources": [
+            "b32-fantasia",
+            "b32-fantasia-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked causes against actual exhibition history; removed near-bankruptcy hyperbole. These are explanatory alternatives, and the sources positively establish the cost/war account."
+      }
+    },
+    {
+      "questionId": 2121,
+      "hash": "c6fe5ffc0a1575c80fea6e984ff2fa30f10b2fbc359ab111ad2392674a8c1c14",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Fantasia development before release in 1940.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "AFI names the project working title in the opening history.",
+        "sources": [
+          "b32-fantasia"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Concert Feature is the working title in AFI.",
+          "sources": [
+            "b32-fantasia"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Music Land is not the title identified for this project.",
+          "sources": [
+            "b32-fantasia"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Symphony Hour is not the working title identified.",
+          "sources": [
+            "b32-fantasia"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Melody Parade is not the documented working title.",
+          "sources": [
+            "b32-fantasia"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Replaced an undated inflation-dollar loss estimate with the documented working title. Naming the sound system in #937 does not reveal this development name."
+      }
+    },
+    {
+      "questionId": 2122,
+      "hash": "75d01349feadc3287ba3d06f556286e56fe14d259d8ea62ca86500e9089b42a6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Disney California Adventure opening attraction in 2001, not EPCOT opening.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The dated Disney entry identifies the original California attraction title.",
+        "sources": [
+          "b32-soarin"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Soarin Over California is the opening title.",
+          "sources": [
+            "b32-soarin"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Soarin Over the World is not its 2001 title.",
+          "sources": [
+            "b32-soarin"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ultra Flight is not the published opening title.",
+          "sources": [
+            "b32-soarin"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "California Skyway is not the published title.",
+          "sources": [
+            "b32-soarin"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the conflation with EPCOT. The title is tied to California Adventure in 2001; later global/America versions do not alter it. #597 asks the 2016 global version, not this title."
+      }
+    },
+    {
+      "questionId": 2123,
+      "hash": "e38f1fd378b8f26078406e707f74915b8c7913f155e988c85b27386fe6275337",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Proposed Mineral King resort and later Magic Kingdom attraction.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney explicitly identifies the intended ski-resort show.",
+        "sources": [
+          "b32-mineral"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Country Bear Jamboree was designed for Mineral King.",
+          "sources": [
+            "b32-mineral"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Enchanted Tiki Room is not the Mineral King bear show.",
+          "sources": [
+            "b32-mineral"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Haunted Mansion is not the show named in the resort history.",
+          "sources": [
+            "b32-mineral"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Its a Small World is not the proposed bear entertainment.",
+          "sources": [
+            "b32-mineral"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the unnecessary last-Walt-project claim. The resort origin belongs to the bear show; park location question #1138 requires another fact."
+      }
+    },
+    {
+      "questionId": 2124,
+      "hash": "851e74055727c7e22598dfecd870953b474942cd13b32d067c5956eb939be257",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Original Country Bear Jamboree at Magic Kingdom, before its 2024 replacement.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Two detailed song/performer listings identify the historical soloist.",
+        "sources": [
+          "b32-bears-songs",
+          "b32-bears-songs-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Big Al sings Blood on the Saddle.",
+          "sources": [
+            "b32-bears-songs",
+            "b32-bears-songs-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Liver Lips has My Woman Aint Pretty in that version.",
+          "sources": [
+            "b32-bears-songs",
+            "b32-bears-songs-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Henry leads other numbers including Davy Crockett.",
+          "sources": [
+            "b32-bears-songs",
+            "b32-bears-songs-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Teddi Barra sings Heart We Did All That We Could.",
+          "sources": [
+            "b32-bears-songs",
+            "b32-bears-songs-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The dated original-show wording avoids treating the 2024 Musical Jamboree as unchanged. The complete song assignments exclude all three other bears, without relying on a subjective tone-deaf description."
+      }
+    },
+    {
+      "questionId": 2125,
+      "hash": "cbbc6056a4d41ac1a71a1763608e8ab8679678694a007742812175aec881201f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Moana 2, 2024; island sought to break Nalo curse.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The studio production notes distinguish the lost meeting island from Moana home.",
+        "sources": [
+          "b32-moana-island"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Motufetu is the sunken meeting island.",
+          "sources": [
+            "b32-moana-island"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Motunui is the home island, not the lost meeting place.",
+          "sources": [
+            "b32-moana-island"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lalotai is the first film monster realm, not this island.",
+          "sources": [
+            "b32-moana-island"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Te Fiti is the island goddess/location from the earlier heart quest, not Motufetu.",
+          "sources": [
+            "b32-moana-island"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the island profile and original Moana topic context; all are proper place names but only Motufetu matches this second-film quest."
+      }
+    },
+    {
+      "questionId": 2126,
+      "hash": "e2b8307ae6224deded1e3c7d341cf0984a4ffbe74b3d57dc1bdf399c38743904",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Moana 2; Matangi captivity, escape assistance and credits scene.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The notes identify Nalo placement of Matangi; plot corroborates her assistance.",
+        "sources": [
+          "b32-moana-matangi",
+          "b32-moana-plot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Matangi is the enforcer who helps Moana escape.",
+          "sources": [
+            "b32-moana-matangi",
+            "b32-moana-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tamatoa is the crab, not this bat-associated enforcer.",
+          "sources": [
+            "b32-moana-matangi",
+            "b32-moana-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Te Ka is the earlier lava antagonist, not Matangi.",
+          "sources": [
+            "b32-moana-matangi",
+            "b32-moana-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kakamora are coconut-armored pirates, not this individual enforcer.",
+          "sources": [
+            "b32-moana-matangi",
+            "b32-moana-plot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Matangi helping Moana does not mean she was freely independent of Nalo; the notes and credits consequence support both parts of the premise. Kakamora assistance is a different event and role."
+      }
+    },
+    {
+      "questionId": 2127,
+      "hash": "9e7eb4973aba59e035806f47e87f96674451b30c85e4cd7803791706df2daa07",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Aladdin animated 1992; cave qualification.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The cave uses a specific phrase for its worthy entrant.",
+        "sources": [
+          "b32-aladdin",
+          "b32-aladdin-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "A diamond in the rough is its stated description.",
+          "sources": [
+            "b32-aladdin",
+            "b32-aladdin-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A prince among men is not that phrase.",
+          "sources": [
+            "b32-aladdin",
+            "b32-aladdin-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A hero of Agrabah is not that phrase.",
+          "sources": [
+            "b32-aladdin",
+            "b32-aladdin-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A child of destiny is not that phrase.",
+          "sources": [
+            "b32-aladdin",
+            "b32-aladdin-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Entry permission does not grant permission to take treasures. Removed claim its entrant can claim all treasure; checked exact spoken description against all alternatives."
+      }
+    },
+    {
+      "questionId": 2128,
+      "hash": "bc580412fd570548660e35dcfbe64254f1a36e3850c86e9de16909cf9a22e492",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Aladdin animated 1992; Abu ruby incident.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The scene directions describe lava and collapse after the forbidden ruby is taken.",
+        "sources": [
+          "b32-aladdin",
+          "b32-aladdin-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The water and shrine become lava while debris falls.",
+          "sources": [
+            "b32-aladdin",
+            "b32-aladdin-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Treasure becoming sand is not the described effect.",
+          "sources": [
+            "b32-aladdin",
+            "b32-aladdin-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The guardian becoming a dragon is not the described event.",
+          "sources": [
+            "b32-aladdin",
+            "b32-aladdin-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Frozen walls contradict the lava-filled escape.",
+          "sources": [
+            "b32-aladdin",
+            "b32-aladdin-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Original wording conflated who may enter with who may touch treasure and falsely asserted burial alive. All survive; final choices ask observed cave behavior, not the warning that they will never leave."
+      }
+    },
+    {
+      "questionId": 2129,
+      "hash": "a61ff8b551961c3b4958891499f1bda54565d3ce1e22fd37e2fbf867b88ce39d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Olafs Frozen Adventure, 2017 short; initial belief before the ending reveal.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The sisters initially believe they lack a personal family tradition.",
+        "sources": [
+          "b32-olaf",
+          "b32-olaf-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "They think they lack family holiday traditions.",
+          "sources": [
+            "b32-olaf",
+            "b32-olaf-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lack of a proper tree is not what prompts the search.",
+          "sources": [
+            "b32-olaf",
+            "b32-olaf-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A family portrait is not the missing custom they discuss.",
+          "sources": [
+            "b32-olaf",
+            "b32-olaf-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A royal Christmas ball is not the perceived lack; they have already planned a party.",
+          "sources": [
+            "b32-olaf",
+            "b32-olaf-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The ending shows Olaf was their tradition, so never had was false as an absolute. The final question asks their initial belief. Read the short-film topic context and kept secondary-title coverage modest."
+      }
+    },
+    {
+      "questionId": 2130,
+      "hash": "0584fb6fec5c5b3b9105f08800f3ab1df6b21c782bb24404d20ba0f26cafcce7",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Olafs Frozen Adventure, 2017; town tradition montage.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The townswoman describes one distinctive baked treat; Disney cookbook corroborates it.",
+        "sources": [
+          "b32-olaf",
+          "b32-cookie"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "She describes a large Norway-shaped cookie.",
+          "sources": [
+            "b32-olaf",
+            "b32-cookie"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gingerbread castles are not her described treat.",
+          "sources": [
+            "b32-olaf",
+            "b32-cookie"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Snowflake pastries are not the named shape/type.",
+          "sources": [
+            "b32-olaf",
+            "b32-cookie"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "An ice-palace cake is not the Norway-shaped cookie.",
+          "sources": [
+            "b32-olaf",
+            "b32-cookie"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the Norwegian-roots hint; all four are baked novelties. The source names both cookie and shape, and does not merely describe Scandinavian food generally."
+      }
+    },
+    {
+      "questionId": 2131,
+      "hash": "5a2883c0b851b66b06256c59094acb80953aeb4b10416173b216ca5793f82650",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Disney Winnie the Pooh character relationships.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney character profile directly calls Roo Kanga son.",
+        "sources": [
+          "b32-kanga"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Kanga is his mother.",
+          "sources": [
+            "b32-kanga"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "She is not his sister.",
+          "sources": [
+            "b32-kanga"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "She is not his aunt.",
+          "sources": [
+            "b32-kanga"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "She is not his grandmother.",
+          "sources": [
+            "b32-kanga"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Motherhood is explicitly named, excluding the other generations/relationships. Replaced the long correct choice and unsupported adoption alternative with parallel family roles. Roo species #2373 requires a different fact."
+      }
+    },
+    {
+      "questionId": 2132,
+      "hash": "cff7d6924290c910c336bb938a54b071c035fd7ffd76d1396ce5d0a27ba3c59a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Disney Winnie the Pooh recurring characterization, not a TV episode.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney character profile identifies Owl as the know-it-all adviser.",
+        "sources": [
+          "b32-owl"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Owl is that adviser.",
+          "sources": [
+            "b32-owl"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tigger is the energetic tiger, not the described adviser.",
+          "sources": [
+            "b32-owl"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Piglet is the timid pig, not that know-it-all.",
+          "sources": [
+            "b32-owl"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Eeyore is the gloomy donkey, not that adviser.",
+          "sources": [
+            "b32-owl"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rabbit could overlap with a generic know-it-all prompt, so replaced him with a clearer distractor and retained the source-specific advice characterization. No species inference is needed from the stem."
+      }
+    },
+    {
+      "questionId": 2133,
+      "hash": "1b1efd907db2ff15f6a620c4892b6560f671faa8e8e54c6491b5eaccb9dff921",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "The Emperors New Groove, 2000; botched palace dinner.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Yzma identifies the used vial as extract of llama, and Kronk cites look-alike vials.",
+        "sources": [
+          "b32-groove",
+          "b32-groove-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Kronk uses the wrong vial, extract of llama.",
+          "sources": [
+            "b32-groove",
+            "b32-groove-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "His later moral hesitation is not why the dinner potion changes Kuzco.",
+          "sources": [
+            "b32-groove",
+            "b32-groove-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A flawed recipe is not the error: the used vial contains a different potion.",
+          "sources": [
+            "b32-groove",
+            "b32-groove-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kuzco does not switch vials; the exchange identifies the mistaken vial on Kronk side.",
+          "sources": [
+            "b32-groove",
+            "b32-groove-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished the dosing mistake from Kronk later conscience struggle in #1426. Yzma poor labeling helps explain his error but is not a recipe defect. #530 names the resulting animal; this asks the cause."
+      }
+    },
+    {
+      "questionId": 2134,
+      "hash": "91c94da8745644c75449c9b978e99391bdc97980b2e689ec80f2a72da0db42f0",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Tangled theatrical 2010 finale, after hair-cutting.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The revival is attributed to Rapunzel tear after the hair loses power.",
+        "sources": [
+          "b32-tangled",
+          "b32-tangled-keane"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "A tear from Rapunzel carries the healing magic.",
+          "sources": [
+            "b32-tangled",
+            "b32-tangled-keane"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A kiss is not the mechanism identified in the account.",
+          "sources": [
+            "b32-tangled",
+            "b32-tangled-keane"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gothel provides no revival potion and is already gone.",
+          "sources": [
+            "b32-tangled",
+            "b32-tangled-keane"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pascal performs no revival spell.",
+          "sources": [
+            "b32-tangled",
+            "b32-tangled-keane"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Replaced the Pascal snake event from the television series with a theatrical-film fact. Checked revival separately from campfire hand healing #541 and hair power loss #2135. Hair is already cut, so it cannot be the healing instrument here."
+      }
+    },
+    {
+      "questionId": 2135,
+      "hash": "1d51ddb0a4f2320ba8df036070ce390a8385eba2fc2b937a9fbf5f57d6a25940",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Tangled 2010 tower climax; the hair itself.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Cut hair becomes brown and loses its healing power.",
+        "sources": [
+          "b32-tangled",
+          "b32-tangled-keane",
+          "b32-tangled-dialogue"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The hair becomes brown and powerless.",
+          "sources": [
+            "b32-tangled",
+            "b32-tangled-keane",
+            "b32-tangled-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "It does not regrow longer at the cut.",
+          "sources": [
+            "b32-tangled",
+            "b32-tangled-keane",
+            "b32-tangled-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "It does not become solid gold.",
+          "sources": [
+            "b32-tangled",
+            "b32-tangled-keane",
+            "b32-tangled-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "It remains physically present rather than disappearing.",
+          "sources": [
+            "b32-tangled",
+            "b32-tangled-keane",
+            "b32-tangled-dialogue"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Narrowed all magic to the hair healing power; Rapunzel later tear still heals Eugene. The question does not claim she loses every form of magic or that later series continuity applies."
+      }
+    },
+    {
+      "questionId": 2136,
+      "hash": "3a0f3818b91c709e16a9d40516ef931384ae032d703e15f685a44fdf97023d01",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Bambi animation research; two live fawns at the studio.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney and AFI identify Maine as the source of the fawns.",
+        "sources": [
+          "b32-bambi-models",
+          "b32-bambi-history"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Maine supplied the model fawns.",
+          "sources": [
+            "b32-bambi-models",
+            "b32-bambi-history"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Vermont is not the named source state.",
+          "sources": [
+            "b32-bambi-models",
+            "b32-bambi-history"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Oregon is not the named source state.",
+          "sources": [
+            "b32-bambi-models",
+            "b32-bambi-history"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wisconsin is not the named source state.",
+          "sources": [
+            "b32-bambi-models",
+            "b32-bambi-history"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the live-fawn donation rather than only background film shot in Maine. Removed incidental Hollywood-location wording; origin and later destination #2143 are different facts."
+      }
+    },
+    {
+      "questionId": 2137,
+      "hash": "d1fa28bfab2547bf3e8812953549bd7f2ba2764aa74c405b1aed47bcf3782530",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Bambi 1942 final forest fire.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "AFI explicitly says the fire is sparked by the hunters campfire.",
+        "sources": [
+          "b32-bambi-history"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The hunters campfire starts it.",
+          "sources": [
+            "b32-bambi-history"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lightning is not the initiating event identified.",
+          "sources": [
+            "b32-bambi-history"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A rifle wound endangers Bambi separately but does not ignite the fire.",
+          "sources": [
+            "b32-bambi-history"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "No nearby-town wildfire is the origin in the scene synopsis.",
+          "sources": [
+            "b32-bambi-history"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished Bambi being shot from the subsequent campfire spread. The source positively gives the cause, so absence of lightning in a short summary is not the only evidence."
+      }
+    },
+    {
+      "questionId": 2138,
+      "hash": "ef8f5a859697275c298f4c8e267a63b851c12a91a43ba39deaf25bca45a5c2bb",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Bambi 1942, mother explanation after meadow danger.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The mother explicitly names Man as the danger.",
+        "sources": [
+          "b32-bambi-history",
+          "b32-bambi-dialogue"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Man is the word she uses.",
+          "sources": [
+            "b32-bambi-history",
+            "b32-bambi-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Twolegs is not the spoken term.",
+          "sources": [
+            "b32-bambi-history",
+            "b32-bambi-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Takers is not her term.",
+          "sources": [
+            "b32-bambi-history",
+            "b32-bambi-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hunters describes the people but is not the single word asked for.",
+          "sources": [
+            "b32-bambi-history",
+            "b32-bambi-dialogue"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Changed the broad everyone/whenever claim to the actual speaker and scene. Literal wording asks her chosen word, not any defensible description of the hunters."
+      }
+    },
+    {
+      "questionId": 2139,
+      "hash": "5e255e38d4dc676d2261b486dceca89c3db5c8273068e5d027eb7a21e42281a2",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "U.S. historical forest-fire prevention campaign, 1944.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The official campaign archive places Bambi before Smokey and dates Smokey first poster to 1944.",
+        "sources": [
+          "b32-smokey"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Smokey Bear is the mascot introduced then.",
+          "sources": [
+            "b32-smokey"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Woodsy Owl is not the mascot in the 1944 campaign entry.",
+          "sources": [
+            "b32-smokey"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ranger Rick is not that campaign mascot.",
+          "sources": [
+            "b32-smokey"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bucky Beaver is not the figure identified in the official timeline.",
+          "sources": [
+            "b32-smokey"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Replaced a vague claim that Bambi inspired mascot creation with the documented campaign succession. The living Smokey cub was rescued in 1950, separate from the 1944 illustrated mascot."
+      }
+    },
+    {
+      "questionId": 2140,
+      "hash": "00a2a66cb75e0bc8c9b22b503cde7dcc27f0ef665a210f3fbb2ffea2706bee44",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Bambi 1942 clover scene; source of advice rather than on-screen speaker.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Mother asks what father said and Thumper recites the greens advice.",
+        "sources": [
+          "b32-bambi-dialogue"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "His father is the named source of the advice.",
+          "sources": [
+            "b32-bambi-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "His mother prompts the recitation but is not the named original adviser.",
+          "sources": [
+            "b32-bambi-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Friend Owl is not attributed this advice.",
+          "sources": [
+            "b32-bambi-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Flower is not attributed this advice.",
+          "sources": [
+            "b32-bambi-dialogue"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Original question incorrectly treated father as delivering the on-screen correction. Final asks whose advice; Thumper speaks it and mother prompts him. Explicitly excluded the strongest competing interpretation, mother."
+      }
+    },
+    {
+      "questionId": 2141,
+      "hash": "f65e82bf49cb7ffc4e34252ced6a573c4969127c5ba46a24e621a36b6dad8cd0",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Bambi 1942 annual seasonal progression.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "AFI describes renewed spring and courtship, with new fawns returning at the ending.",
+        "sources": [
+          "b32-bambi-history",
+          "b32-bambi-dialogue"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Spring brings the courtship and renewed life.",
+          "sources": [
+            "b32-bambi-history",
+            "b32-bambi-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Summer is not the season identified for the renewal.",
+          "sources": [
+            "b32-bambi-history",
+            "b32-bambi-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Autumn is not the described courtship season.",
+          "sources": [
+            "b32-bambi-history",
+            "b32-bambi-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Winter is the earlier harsh season, not the spring renewal.",
+          "sources": [
+            "b32-bambi-history",
+            "b32-bambi-dialogue"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Replaced the ill-formed question about opening/closing on a cycle with one clear season and parallel choices. Spring is explicit, not inferred solely from general nature knowledge. Season refers to weather, not a television season."
+      }
+    },
+    {
+      "questionId": 2142,
+      "hash": "d6baf5fd8f560b32afb80867feedf6628bbf11e72e6268a40c5cd7822fb0941b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Bambi 1942 winter skating scene.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney synopsis and AFI use stiff water; dialogue describes water as stiff.",
+        "sources": [
+          "b32-bambi-dialogue",
+          "b32-bambi-ice",
+          "b32-bambi-history"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Stiff water matches the dialogue description.",
+          "sources": [
+            "b32-bambi-dialogue",
+            "b32-bambi-ice",
+            "b32-bambi-history"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Frozen water is a literal definition but not the unusual wording asked for.",
+          "sources": [
+            "b32-bambi-dialogue",
+            "b32-bambi-ice",
+            "b32-bambi-history"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Slick ground is not the scene phrase.",
+          "sources": [
+            "b32-bambi-dialogue",
+            "b32-bambi-ice",
+            "b32-bambi-history"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hard water is not the phrase and would normally describe mineral content.",
+          "sources": [
+            "b32-bambi-dialogue",
+            "b32-bambi-ice",
+            "b32-bambi-history"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Frozen water could describe ice, but the question asks the unusual term used in this scene; three independent texts preserve stiff. No generic physical definition is being graded."
+      }
+    },
+    {
+      "questionId": 2143,
+      "hash": "3ebf47cfed4312777a04551c719a450e2c842a716329acad081ea068956e5ff4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Historical destination of the two adult model deer after Bambi production.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Two named Disney historians identify Griffith Park Zoo as recipient.",
+        "sources": [
+          "b32-bambi-zoo",
+          "b32-bambi-zoo-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Griffith Park Zoo received the model deer.",
+          "sources": [
+            "b32-bambi-zoo",
+            "b32-bambi-zoo-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "San Diego Zoo was visited by artists but was not this donation destination.",
+          "sources": [
+            "b32-bambi-zoo",
+            "b32-bambi-zoo-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lincoln Park Zoo is not the recipient in either account.",
+          "sources": [
+            "b32-bambi-zoo",
+            "b32-bambi-zoo-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Central Park Zoo is not the recipient in either account.",
+          "sources": [
+            "b32-bambi-zoo",
+            "b32-bambi-zoo-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished zoo visits from donation destination and old Griffith Park Zoo from the later Los Angeles Zoo. Primary accession paperwork unavailable; independent historian accounts agree on recipient."
+      }
+    },
+    {
+      "questionId": 2144,
+      "hash": "a875a2e897119b1f0b99ea8ce8c12351ec7bbb04d0801ebf9210285eb4d9784d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Brother Bear development, before release as Brother Bear.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney identifies Bears as the working title.",
+        "sources": [
+          "b32-brother-production"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Bears is the documented working title.",
+          "sources": [
+            "b32-brother-production"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Great Spirit is not the working title listed.",
+          "sources": [
+            "b32-brother-production"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kenais Journey is not the working title listed.",
+          "sources": [
+            "b32-brother-production"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Totem is not the working title listed.",
+          "sources": [
+            "b32-brother-production"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed released under working title contradiction. The bear word repeats the subject but does not establish the exact plural working title against other plausible development names."
+      }
+    },
+    {
+      "questionId": 2145,
+      "hash": "a680d9a33002fe369540b59b855006c690c5507acddc8e9dee079824d0541ed7",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Brother Bear theatrical presentation after transformation.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney and filmmaker presentation account describe a wider image after Kenai changes.",
+        "sources": [
+          "b32-brother-production",
+          "b32-brother-ratio"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The aspect ratio widens.",
+          "sources": [
+            "b32-brother-production",
+            "b32-brother-ratio"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The film does not change to black and white; its color opens up.",
+          "sources": [
+            "b32-brother-production",
+            "b32-brother-ratio"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Slower frame rate is not the described image change.",
+          "sources": [
+            "b32-brother-production",
+            "b32-brother-ratio"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A silent soundtrack is not the visual technique identified.",
+          "sources": [
+            "b32-brother-production",
+            "b32-brother-ratio"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Do not confuse the concurrent richer color with a monochrome palette. Sources explicitly establish widened frame; no exact ratio is asked because sources vary slightly on the initial ratio."
+      }
+    },
+    {
+      "questionId": 2146,
+      "hash": "9801e40b0f9e42c9ad8b781d14ba88a82a0c83893dc539031cb9279b509d4834",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Brother Bear spirit mountain and dancing sky lights.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Opening identifies ancestor spirits with dancing sky lights and the mountain where lights touch earth.",
+        "sources": [
+          "b32-brother-dialogue",
+          "b32-brother-plot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Northern Lights are the dancing auroral lights associated with the spirits.",
+          "sources": [
+            "b32-brother-dialogue",
+            "b32-brother-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A solar eclipse is not a dancing display of sky lights.",
+          "sources": [
+            "b32-brother-dialogue",
+            "b32-brother-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A meteor shower is not the continuous auroral light curtain.",
+          "sources": [
+            "b32-brother-dialogue",
+            "b32-brother-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A lightning storm is not the ancestral sky-light phenomenon.",
+          "sources": [
+            "b32-brother-dialogue",
+            "b32-brother-plot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the claim that a natural phenomenon itself performs magic. The question asks the visual association of the spirit mountain, rather than explaining the supernatural mechanism."
+      }
+    },
+    {
+      "questionId": 2147,
+      "hash": "d913d960311ce3f300ae30dcbf7bcf8b103f2bac3859416b9de8d9c250bc90b5",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Brother Bear reveal at the salmon run.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Koda account reveals the mother was the bear Kenai killed before his own transformation.",
+        "sources": [
+          "b32-brother-plot",
+          "b32-brother-dialogue"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Human Kenai killed her.",
+          "sources": [
+            "b32-brother-plot",
+            "b32-brother-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Denahi pursues transformed Kenai but did not kill Koda mother.",
+          "sources": [
+            "b32-brother-plot",
+            "b32-brother-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A rival bear is not her killer.",
+          "sources": [
+            "b32-brother-plot",
+            "b32-brother-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wolves are not the cause of her death.",
+          "sources": [
+            "b32-brother-plot",
+            "b32-brother-dialogue"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the reveal rather than Kenai initial belief about Sitka death. The two deaths have different immediate causes; the question targets Koda mother only."
+      }
+    },
+    {
+      "questionId": 2148,
+      "hash": "9981c619fa43a263bf0e140575de7db1a41fe60e4acbe2ecfbb18ad088ea3cfb",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Brother Bear production studio location in 2003.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The history locates the Florida feature studio at Disney-MGM Studios, Orlando.",
+        "sources": [
+          "b32-brother-plot",
+          "b32-brother-production"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Orlando is the principal studio city.",
+          "sources": [
+            "b32-brother-plot",
+            "b32-brother-production"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Burbank is the California studio, not this Florida production base.",
+          "sources": [
+            "b32-brother-plot",
+            "b32-brother-production"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Vancouver is not the Florida studio city.",
+          "sources": [
+            "b32-brother-plot",
+            "b32-brother-production"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Toronto is not the Florida studio city.",
+          "sources": [
+            "b32-brother-plot",
+            "b32-brother-production"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed U.S. from stem because two distractors are Canadian. Sources specifically locate the production rather than simply describing the company headquarters; closure date is unnecessary."
+      }
+    },
+    {
+      "questionId": 2149,
+      "hash": "70f7423d8dde514ba34328bb53c4e8ee804225d4361ef3ddc349cb3e9130c9c3",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Hercules 1997 design attribution.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Buena Vista education guide names Gerald Scarfe as the British artist behind the original designs.",
+        "sources": [
+          "b32-herc-design"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Gerald Scarfe is the credited design influence.",
+          "sources": [
+            "b32-herc-design"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ronald Searle is not the named Hercules designer.",
+          "sources": [
+            "b32-herc-design"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Quentin Blake is not the named designer.",
+          "sources": [
+            "b32-herc-design"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Al Hirschfeld is not the named designer.",
+          "sources": [
+            "b32-herc-design"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed an unnecessary job-title/Greek-vase compound claim and retained the supported design attribution. Other artists are real stylists but that does not give them this film credit."
+      }
+    },
+    {
+      "questionId": 2150,
+      "hash": "93a5e4630fe1e3234cf5d7572df0c027d4c4b14e93ff4fd24fddc9fe6033776a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Hercules 1997 Muses storytelling music.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The filmmakers describe choosing a gospel approach for the Muses music.",
+        "sources": [
+          "b32-herc-gospel",
+          "b32-herc-muses"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Gospel is the identified central style.",
+          "sources": [
+            "b32-herc-gospel",
+            "b32-herc-muses"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Opera is not the approach Musker describes.",
+          "sources": [
+            "b32-herc-gospel",
+            "b32-herc-muses"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jazz is not the approach he describes for the Muses.",
+          "sources": [
+            "b32-herc-gospel",
+            "b32-herc-muses"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Doo-wop is not the gospel concept the discussion identifies.",
+          "sources": [
+            "b32-herc-gospel",
+            "b32-herc-muses"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The score uses multiple styles, so final wording says especially rather than exclusively. The Muses role in #69 and their song titles elsewhere do not by themselves name this musical genre; moved to music category."
+      }
+    },
+    {
+      "questionId": 2151,
+      "hash": "57b0f0a30105e8013b4f3d398eade8d01bd7c4295e8c1442ee207894b1cac756",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Eric Goldberg 2017 D23 recollection about Phil animation.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Goldberg singles out DeVito mouth configurations in filmed recording reference.",
+        "sources": [
+          "b32-herc-mouth",
+          "b32-herc-muses"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "His unusual mouth shapes are the feature named.",
+          "sources": [
+            "b32-herc-mouth",
+            "b32-herc-muses"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Eyebrow movement is not the feature Goldberg identifies in this account.",
+          "sources": [
+            "b32-herc-mouth",
+            "b32-herc-muses"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hand gestures are not the facial feature he singles out.",
+          "sources": [
+            "b32-herc-mouth",
+            "b32-herc-muses"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Posture is not the facial feature he singles out.",
+          "sources": [
+            "b32-herc-mouth",
+            "b32-herc-muses"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A generic reference question could allow multiple studied features. Attribution to Goldberg and the unusual feature he described narrows it to the documented mouth shapes, without claiming no other reference was ever observed."
+      }
+    },
+    {
+      "questionId": 2152,
+      "hash": "d7aef355236bfb3e2d98fab78a8d8078c94325806e58272caa28ab5dd010b668",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Hercules 1997 opening birth celebration.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Zeus combines named cloud types into a small cloud that becomes Pegasus.",
+        "sources": [
+          "b32-herc-cloud",
+          "b32-herc-transcription"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "A cloud is the material shaped.",
+          "sources": [
+            "b32-herc-cloud",
+            "b32-herc-transcription"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Marble would be a statue, not the cloud he forms.",
+          "sources": [
+            "b32-herc-cloud",
+            "b32-herc-transcription"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sea foam is not the cirrus/nimbostratus/cumulus mixture.",
+          "sources": [
+            "b32-herc-cloud",
+            "b32-herc-transcription"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Starlight is not the named mixture.",
+          "sources": [
+            "b32-herc-cloud",
+            "b32-herc-transcription"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the original film event, distinct from Pegasus general species #295 and other Greek myths. The named cloud types positively exclude marble, foam and starlight."
+      }
+    },
+    {
+      "questionId": 2153,
+      "hash": "469d3a3f6e6436019ef9978efb49cb5d5399932864b6ca284360ad1a8629982b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Hercules 1997 first Hydra decapitation, not classical mythology.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The specific first regrowth is described as three heads in two detailed scene accounts.",
+        "sources": [
+          "b32-herc-transcription",
+          "b32-herc-hydra-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Three heads emerge from the first severed neck.",
+          "sources": [
+            "b32-herc-transcription",
+            "b32-herc-hydra-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Two is the common myth version, not this Disney scene.",
+          "sources": [
+            "b32-herc-transcription",
+            "b32-herc-hydra-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Four is not the count in that first regrowth.",
+          "sources": [
+            "b32-herc-transcription",
+            "b32-herc-hydra-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Five is not the count in that first regrowth.",
+          "sources": [
+            "b32-herc-transcription",
+            "b32-herc-hydra-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Corrected two to three and restricted to the first cut, since later mass-regrowth visuals are complex. #829 identifies the Hydra as the monster, but that does not supply the count. Two secondary accounts agree; no direct film playback claimed."
+      }
+    },
+    {
+      "questionId": 2154,
+      "hash": "e025d08be606127f145425d1dc0e56e642f1654c46879a4418f2976611429a64",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "The Fox and the Hound production delay, 1979 departure.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney production history names Don Bluth and his departing team.",
+        "sources": [
+          "b32-fox-production"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Don Bluth is the animator whose departure caused the delay.",
+          "sources": [
+            "b32-fox-production"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ralph Bakshi is not the departing Disney team leader named.",
+          "sources": [
+            "b32-fox-production"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Richard Williams is not that departing team leader.",
+          "sources": [
+            "b32-fox-production"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bill Melendez is not that departing team leader.",
+          "sources": [
+            "b32-fox-production"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked that this is the documented staff departure, not merely any rival studio existing at the time. Other listed animators do not fit this specific departure."
+      }
+    },
+    {
+      "questionId": 2155,
+      "hash": "7fb867e67f2adda255fe3533dc069b964b25f41b1ef5e5460fa66e33e93db2dd",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "The Fox and the Hound approximate production cost in nominal 1981 dollars.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Both film histories give a $12 million budget.",
+        "sources": [
+          "b32-fox-cost",
+          "b32-fox-cost-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "$12 million matches the reported approximate budget.",
+          "sources": [
+            "b32-fox-cost",
+            "b32-fox-cost-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "$2 million is not the reported budget.",
+          "sources": [
+            "b32-fox-cost",
+            "b32-fox-cost-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "$44 million belongs to the later Black Cauldron comparison, not this production.",
+          "sources": [
+            "b32-fox-cost",
+            "b32-fox-cost-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "$80 million is not the reported budget.",
+          "sources": [
+            "b32-fox-cost",
+            "b32-fox-cost-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Replaced a broad record claim with approximate nominal budget; no inflation conversion or first-digital-score premise remains. #2478 asks a different film cost/record and cannot determine this figure. Primary studio cost ledger not accessible; secondary accounts agree."
+      }
+    },
+    {
+      "questionId": 2156,
+      "hash": "9161fa5795783c0e1a6036d78911a195a3a11c7c67664a6d263670ec30ca1f16",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Glen Keane recollection of Vixey animation on The Fox and the Hound.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Keane explicitly names Tim Burton as working with him on Vixey; Musker independently recalls it.",
+        "sources": [
+          "b32-vixey-keane",
+          "b32-vixey-musker"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Tim Burton is the artist Keane names.",
+          "sources": [
+            "b32-vixey-keane",
+            "b32-vixey-musker"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "John Lasseter worked on the film but is not the Vixey colleague Keane identifies.",
+          "sources": [
+            "b32-vixey-keane",
+            "b32-vixey-musker"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Brad Bird worked on the film but is not the colleague named here.",
+          "sources": [
+            "b32-vixey-keane",
+            "b32-vixey-musker"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Chris Buck occupied the neighboring room; Keane distinguishes him from Burton doing Vixey.",
+          "sources": [
+            "b32-vixey-keane",
+            "b32-vixey-musker"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "General involvement of all four does not make all four correct. The final wording asks for Keane specific recollection, supported by Musker; removed unneeded uncredited/acclaimed qualifiers."
+      }
+    },
+    {
+      "questionId": 2157,
+      "hash": "ea7a0e13145ff6daafe2f3b601718d4d9cd1edd76e4018633c6730c06faabbb1",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "The Fox and the Hound animator who later held Pixar chief creative officer role.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The animation team includes Lasseter; Disney biography identifies his later role.",
+        "sources": [
+          "b32-lasseter",
+          "b32-fox-cost",
+          "b32-fox-cost-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "John Lasseter meets both the animation and Pixar leadership conditions.",
+          "sources": [
+            "b32-lasseter",
+            "b32-fox-cost",
+            "b32-fox-cost-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tim Burton meets film involvement but not Pixar chief creative officer condition.",
+          "sources": [
+            "b32-lasseter",
+            "b32-fox-cost",
+            "b32-fox-cost-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Brad Bird meets film involvement but not that leadership condition.",
+          "sources": [
+            "b32-lasseter",
+            "b32-fox-cost",
+            "b32-fox-cost-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "John Musker meets film involvement but not that leadership condition.",
+          "sources": [
+            "b32-lasseter",
+            "b32-fox-cost",
+            "b32-fox-cost-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All four worked at Disney, so the later Pixar role is essential. Historical future wording avoids treating Lasseter as current officer; he left in 2018. Removed the debatable co-founder shorthand."
+      }
+    },
+    {
+      "questionId": 2158,
+      "hash": "4b6b2e51baa38e1c90961c93ad071d0b3a0e2ad366b8a989cc0f5438e4b5eb52",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "The Fox and the Hound theatrical 1981; preserve encounter.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney explicitly identifies Tod love interest as the female fox Vixey.",
+        "sources": [
+          "b32-fox-production"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Vixey is Tod love interest.",
+          "sources": [
+            "b32-fox-production"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Faline is Bambi doe love interest.",
+          "sources": [
+            "b32-fox-production"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Duchess is the Aristocats mother cat.",
+          "sources": [
+            "b32-fox-production"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Perdita is the Dalmatian mother.",
+          "sources": [
+            "b32-fox-production"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Read full Fox/Hound context: Vixey name differs from Burton assignment fact #2156. The three other names belong to distinct animals/films, not alternative names for Tod partner."
+      }
+    },
+    {
+      "questionId": 2159,
+      "hash": "a8032c232e84b42f450722775d036d75fe5de49a7eb4849237a14c5bcbd46f8f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Soul production reference for Joe piano hand animation.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney animator interview identifies Batiste hand reference footage.",
+        "sources": [
+          "b32-soul-hands"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Jon Batiste hands were filmed for Joe piano reference.",
+          "sources": [
+            "b32-soul-hands"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Herbie Hancock was an adviser/inspiration but is not the filmed pianist identified here.",
+          "sources": [
+            "b32-soul-hands"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wynton Marsalis is not that reference pianist.",
+          "sources": [
+            "b32-soul-hands"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Questlove voices Curley but is not the piano hand reference.",
+          "sources": [
+            "b32-soul-hands"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Replaced motion-captured/MIDI claim with the documented filmed reference and hand animation. #2289 asks the score Oscar recipient, while this asks a separate production method and performer role."
+      }
+    },
+    {
+      "questionId": 2160,
+      "hash": "617f2b1f197bdca170166dfc9e4be104685772623ae9496991242e9ddb7b503b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Soul 2020 original English voice cast.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney credits Joe Gardner voice to Jamie Foxx.",
+        "sources": [
+          "b32-soul-credits"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Jamie Foxx is the credited voice.",
+          "sources": [
+            "b32-soul-credits"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Denzel Washington is not credited as Joe.",
+          "sources": [
+            "b32-soul-credits"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Chadwick Boseman is not credited as Joe.",
+          "sources": [
+            "b32-soul-credits"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Michael B. Jordan is not credited as Joe.",
+          "sources": [
+            "b32-soul-credits"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the unrelated first-Black-protagonist superlative. Exactly one original English credit answers; #2163 asks another character and actor, so the similar stem is not shared knowledge."
+      }
+    },
+    {
+      "questionId": 2161,
+      "hash": "064f161d976cf6cf48df7ea1d0b7d5123cb0bd39b68711d54e1ca8b05fdeedff",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Soul 2020 directing credits.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney names Pete Docter as director and Kemp Powers as co-director.",
+        "sources": [
+          "b32-soul-credits"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Kemp Powers has this co-directing credit.",
+          "sources": [
+            "b32-soul-credits"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ronnie del Carmen is not credited as Soul co-director.",
+          "sources": [
+            "b32-soul-credits"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Adrian Molina is not credited as Soul co-director.",
+          "sources": [
+            "b32-soul-credits"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Domee Shi is not credited as Soul co-director.",
+          "sources": [
+            "b32-soul-credits"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed an extra first-in-history claim; the question now depends only on the film credit. Other Pixar filmmakers do not share the credited Soul role."
+      }
+    },
+    {
+      "questionId": 2162,
+      "hash": "5011a1d88ad2a46839ad095ed7ae9e6adbde46b4fbf6bb9864c3dd5e3c9c3e19",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Soul 2020 human-world setting.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar synopsis places Joe on New York City streets.",
+        "sources": [
+          "b32-soul-city"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "New York City is the main human-world setting.",
+          "sources": [
+            "b32-soul-city"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Chicago is not the setting identified.",
+          "sources": [
+            "b32-soul-city"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Los Angeles is not the setting identified.",
+          "sources": [
+            "b32-soul-city"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "New Orleans is not the setting; Batiste hometown does not relocate Joe story.",
+          "sources": [
+            "b32-soul-city"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked distinction between performer background and narrative location. City in New York City is a formal name suffix and matches the city-type question, not an answer giveaway; all options are cities."
+      }
+    },
+    {
+      "questionId": 2163,
+      "hash": "3fa5003eb4829049387635cc513ea34d48c90d5ceb27e8f96979194971b02436",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Soul 2020 original English voice cast.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney credits Tina Fey as 22.",
+        "sources": [
+          "b32-soul-credits"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Tina Fey voices 22.",
+          "sources": [
+            "b32-soul-credits"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kristen Bell is not credited as 22.",
+          "sources": [
+            "b32-soul-credits"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rachel McAdams is not credited as 22.",
+          "sources": [
+            "b32-soul-credits"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Amy Poehler voices a different Pixar character, not 22.",
+          "sources": [
+            "b32-soul-credits"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Added the missing film/version context and removed unneeded eons language. Similar wording to Joe voice question does not make the two separate cast assignments duplicates."
+      }
+    },
+    {
+      "questionId": 2164,
+      "hash": "f749974aec76de8535a06842d580b6084e7eaa800ca587db0abd36340baa3408",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Pete Docter development recollection in Soul production notes.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Docter explicitly lists scientist or businessman as earlier possible professions.",
+        "sources": [
+          "b32-soul-scientist"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "A scientist is one of Docter stated possibilities.",
+          "sources": [
+            "b32-soul-scientist"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A doctor is not the profession named in that recollection.",
+          "sources": [
+            "b32-soul-scientist"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "An architect is not named in that recollection.",
+          "sources": [
+            "b32-soul-scientist"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A lawyer is not named in that recollection.",
+          "sources": [
+            "b32-soul-scientist"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Replaced teacher, which is Joe actual job, with architect to avoid confusion with the final story. The attribution asks which option Docter actually named, not every conceivable profession brainstormed."
+      }
+    },
+    {
+      "questionId": 2165,
+      "hash": "bd5b6bb45b14b7dfb6e002b749661d54cec4e91dcb97463d9ae89bd82559d9bb",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Soul 2020 music production; electronic otherworld score.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Production notes name Reznor and Ross for the synthesized soul-world score alongside Batiste jazz.",
+        "sources": [
+          "b32-soul-score"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Trent Reznor and Atticus Ross are the score duo.",
+          "sources": [
+            "b32-soul-score"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hans Zimmer and Pharrell Williams are not the credited duo.",
+          "sources": [
+            "b32-soul-score"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Danny Elfman and Alan Silvestri are not the credited duo.",
+          "sources": [
+            "b32-soul-score"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Thomas Newman and Randy Newman are not the credited duo.",
+          "sources": [
+            "b32-soul-score"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed Oscar-for-these-sequences implication: the Oscar was for the whole score shared by all three musicians. The final question targets different musical roles, not the same award-credit fact as #2289."
+      }
+    },
+    {
+      "questionId": 2166,
+      "hash": "bb6f1442e621916cfc5e0b49b120c24cc2fd40872cf820115cad4abd0d9fc033",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Onward 2020 modern suburban fantasy setting.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar world descriptions identify New Mushroomton and the Lightfoot home setting.",
+        "sources": [
+          "b32-onward"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "New Mushroomton is the town name.",
+          "sources": [
+            "b32-onward"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Elftown is not the named setting.",
+          "sources": [
+            "b32-onward"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mysthaven is not the named setting.",
+          "sources": [
+            "b32-onward"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Willowbrook is not the named setting.",
+          "sources": [
+            "b32-onward"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Official homes and unicorn profiles both use New Mushroomton. Full Onward/category context contains other locations but no second active question asking the town name."
+      }
+    },
+    {
+      "questionId": 2167,
+      "hash": "adf96a30254d494928f9e5339de3eb90368393e1f111e737c00be87fcf808367",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Final question and four options reviewed; topic context and cross-bank fact distinctness checked.",
+      "context": "Onward 2020 everyday unicorn behavior.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar explicitly describes the unicorns as garbage scavengers.",
+        "sources": [
+          "b32-onward"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "They raid garbage bins.",
+          "sources": [
+            "b32-onward"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Delivering parcels is not their described everyday role.",
+          "sources": [
+            "b32-onward"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Guarding malls is not their described role.",
+          "sources": [
+            "b32-onward"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Herding livestock is not their described role.",
+          "sources": [
+            "b32-onward"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Replaced the subjective indignity phrasing with behavior and made all options parallel actions. Pixar distinguishes pet dragons from scavenging unicorns; mythical grace alone would not establish this detail."
+      }
+    }
+  ]
+}

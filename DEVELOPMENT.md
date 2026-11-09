@@ -1,4 +1,4 @@
-# Development and release notes — v1.43
+# Development and release notes — v1.46
 
 This remains a static app. There is no build step. npm dependencies are for
 verification only; production uses the Firebase compat CDN scripts.
@@ -70,8 +70,8 @@ offline after an initial online visit and cache installation. `sw.js` caches onl
 same-origin app assets and questions; database requests remain network-only.
 The service worker never caches the admin page or update probes.
 
-There are 1,873 active questions plus 167 preserved retired duplicates after the
-first twenty-four sequential audit batches. See questions/retired.json for the retained
+There are 1,856 active questions plus 184 preserved retired duplicates after the
+first thirty-six sequential audit batches. See questions/retired.json for the retained
 snapshots and replacement IDs. Retired IDs must not be reused. Optional question metadata:
 
 ```json
@@ -127,6 +127,17 @@ Development dependency overrides pin patched grpc, telemetry, uuid, and re2
 versions. `npm audit` reported zero vulnerabilities after installing them.
 
 ## Deployment
+
+Release v1.46 publishes completed question-audit batches 25 through 36 and the
+completed batch 17 follow-up. Current approval is 1,576 of 1,856 active questions;
+the remaining 280 are the disclosed legacy backlog. Duplicate removals retain
+their historical snapshots in `questions/retired.json`. This release changes no
+Firestore rules or player data.
+
+Local release verification on November 9, 2026 passed the corpus and audit gates,
+48 JavaScript tests, 76 Python tests, both isolated browser suites (150 checks),
+and 10 demo Firestore emulator tests. JavaScript and emulator tests also passed
+using Node 24.22.2. The version and offline cache are synchronized to v1.46.
 
 No production data migration, app publishing, or rule deployment is performed by
 tests. App deployment uses `deploy.ps1`; rules require a separate authenticated

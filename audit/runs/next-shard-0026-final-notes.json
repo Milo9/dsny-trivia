@@ -1,0 +1,3159 @@
+{
+  "schema": 1,
+  "reviewer": "Codex",
+  "at": "2026-11-08",
+  "sourcesChecked": [
+    "b23-beast",
+    "b24-pocahontas",
+    "b26-ages",
+    "b26-arrival",
+    "b26-ashman",
+    "b26-ashman-death",
+    "b26-chant",
+    "b26-club",
+    "b26-element-cast",
+    "b26-gaston",
+    "b26-groove",
+    "b26-groove-plot",
+    "b26-herc",
+    "b26-herc-plot",
+    "b26-io2-camp",
+    "b26-jungle",
+    "b26-navigator",
+    "b26-onward",
+    "b26-order",
+    "b26-poppins",
+    "b26-prepared",
+    "b26-ralph",
+    "b26-ralph-height",
+    "b26-ralph2",
+    "b26-red-cast",
+    "b26-red-dialogue",
+    "b26-red-plot",
+    "b26-red-setting",
+    "b26-river",
+    "b26-scar",
+    "b26-schwartz",
+    "b26-shiny",
+    "b26-snow-scene",
+    "b26-snow-song",
+    "b26-squirrel",
+    "b26-touch",
+    "b26-towels",
+    "b26-up",
+    "b26-val",
+    "b26-wade-job",
+    "b9-moanasolos"
+  ],
+  "reviews": [
+    {
+      "questionId": 1381,
+      "hash": "6fb093d27f384cee2bb8b43a0485452c8a4ef470703fa77d9a249eeada4a26ec",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Separated lyric from music credit; Menken is composer, and none of the three alternative writers shares the lyric credit.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Academy records the lyric credit and song award.",
+        "sources": [
+          "b26-schwartz"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Stephen Schwartz is the sole credited lyricist.",
+          "sources": [
+            "b26-schwartz"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Howard Ashman is not the credited lyricist.",
+          "sources": [
+            "b26-schwartz"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tim Rice is not the credited lyricist.",
+          "sources": [
+            "b26-schwartz"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lin-Manuel Miranda is not the credited lyricist.",
+          "sources": [
+            "b26-schwartz"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separated lyric from music credit; Menken is composer, and none of the three alternative writers shares the lyric credit."
+      }
+    },
+    {
+      "questionId": 1382,
+      "hash": "f22cdda94d7814769201160e83d481869c4839d5ea5a8593b0d7a3d15bf29bdd",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Tested whether adventure themes made Moana also fit: the named song, not a generic theme, restricts the answer to Pocahontas.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The official video catalog and saved river-solo passage identify the song and her dilemma.",
+        "sources": [
+          "b26-river",
+          "b24-pocahontas"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Pocahontas is the film containing this solo.",
+          "sources": [
+            "b26-river",
+            "b24-pocahontas"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Moana is a different film, not this song's source.",
+          "sources": [
+            "b26-river",
+            "b24-pocahontas"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Brave is a different film, not this song's source.",
+          "sources": [
+            "b26-river",
+            "b24-pocahontas"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tangled is a different film, not this song's source.",
+          "sources": [
+            "b26-river",
+            "b24-pocahontas"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tested whether adventure themes made Moana also fit: the named song, not a generic theme, restricts the answer to Pocahontas."
+      }
+    },
+    {
+      "questionId": 1383,
+      "hash": "a3960122b3e2c3e4eff6e412f6ca5f90e071c757422a33be4e5654e021dd9bc8",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Other films have villain numbers, but the exact track and Scar's coup identify one film; lion species comparisons are unrelated.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Soundtrack attribution and coup dialogue establish the Lion King song scene.",
+        "sources": [
+          "b26-prepared",
+          "b26-scar"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Lion King contains Scar's hyena rally.",
+          "sources": [
+            "b26-prepared",
+            "b26-scar"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hercules does not originate the specified song.",
+          "sources": [
+            "b26-prepared",
+            "b26-scar"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Aladdin does not originate the specified song.",
+          "sources": [
+            "b26-prepared",
+            "b26-scar"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Hunchback of Notre Dame does not originate the specified song.",
+          "sources": [
+            "b26-prepared",
+            "b26-scar"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other films have villain numbers, but the exact track and Scar's coup identify one film; lion species comparisons are unrelated."
+      }
+    },
+    {
+      "questionId": 1384,
+      "hash": "93d7f20517561a462377c0632e4dcb39d550f03bd955f706c7253d5b04066e78",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Distinguished a song/film association from Gaston's suitor role and the separate Broadway and Best Picture facts; no alternative film owns this number.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The original soundtrack and tavern passage identify the song.",
+        "sources": [
+          "b26-gaston",
+          "b23-beast"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Beauty and the Beast contains this tavern number.",
+          "sources": [
+            "b26-gaston",
+            "b23-beast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hunchback is not the soundtrack attribution.",
+          "sources": [
+            "b26-gaston",
+            "b23-beast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hercules is not the soundtrack attribution.",
+          "sources": [
+            "b26-gaston",
+            "b23-beast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Great Mouse Detective is not the soundtrack attribution.",
+          "sources": [
+            "b26-gaston",
+            "b23-beast"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished a song/film association from Gaston's suitor role and the separate Broadway and Best Picture facts; no alternative film owns this number."
+      }
+    },
+    {
+      "questionId": 1386,
+      "hash": "c81a76a320bf0854e46865905a3e40d55e23d9dbf401c7ebe85ac96f1550561e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Checked exact title rather than accepting any Moana track; Tamatoa's shiny obsession supports the described context.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney's song catalog names Shiny and its performer; the crab description matches Tamatoa.",
+        "sources": [
+          "b9-moanasolos",
+          "b26-shiny"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Shiny is the named Tamatoa song.",
+          "sources": [
+            "b9-moanasolos",
+            "b26-shiny"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "How Far I'll Go is Moana's solo, separately cataloged.",
+          "sources": [
+            "b9-moanasolos",
+            "b26-shiny"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Know Who You Are is not the Tamatoa song identified by Disney.",
+          "sources": [
+            "b9-moanasolos",
+            "b26-shiny"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "You're Welcome is not the Tamatoa song identified by Disney.",
+          "sources": [
+            "b9-moanasolos",
+            "b26-shiny"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked exact title rather than accepting any Moana track; Tamatoa's shiny obsession supports the described context."
+      }
+    },
+    {
+      "questionId": 1388,
+      "hash": "232f152704106696a1b2d969c52d95908b5b3361250f8559439ab628e784d607",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Removed the brothers clue so all four teams remain grammatically possible; distinguished writing songs from later cover performances.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Both institutional credits identify the same Sherman duo.",
+        "sources": [
+          "b26-jungle",
+          "b26-poppins"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Richard and Robert Sherman are credited on both films.",
+          "sources": [
+            "b26-jungle",
+            "b26-poppins"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "John and Rice are not the credited duo for either original score.",
+          "sources": [
+            "b26-jungle",
+            "b26-poppins"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Menken and Ashman are not the credited duo for these films.",
+          "sources": [
+            "b26-jungle",
+            "b26-poppins"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Lopez duo is not the credited duo for these films.",
+          "sources": [
+            "b26-jungle",
+            "b26-poppins"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the brothers clue so all four teams remain grammatically possible; distinguished writing songs from later cover performances."
+      }
+    },
+    {
+      "questionId": 1389,
+      "hash": "0c46962e59a80d087a91e375183e146b63c21f5a72bb6c0761ff2a1e8ebc6693",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Limited the lineup to Walt Disney Animation Studios, excluding live-action releases and other distributors; chronology, not failed Oscar status, is tested.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The studio's exhaustive feature catalog supplies consecutive release order.",
+        "sources": [
+          "b26-order"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Oliver & Company is the immediately preceding feature.",
+          "sources": [
+            "b26-order"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Great Mouse Detective is earlier, with Oliver in between.",
+          "sources": [
+            "b26-order"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Black Cauldron is earlier, with two listed features in between.",
+          "sources": [
+            "b26-order"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fox and the Hound is earlier than all three alternatives.",
+          "sources": [
+            "b26-order"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Limited the lineup to Walt Disney Animation Studios, excluding live-action releases and other distributors; chronology, not failed Oscar status, is tested."
+      }
+    },
+    {
+      "questionId": 1390,
+      "hash": "f0ae085c360b1383c5a17f375f828de4ba3e887eeedcffbeb9e8dc84ee338bf4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Original-film context excludes later cover versions; removed the unsupported most-covered superlative.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The cottage song belongs to Snow White's original film.",
+        "sources": [
+          "b26-snow-song",
+          "b26-snow-scene"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Snow White sings to the dwarfs about her prince.",
+          "sources": [
+            "b26-snow-song",
+            "b26-snow-scene"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cinderella is not the singer in this original scene.",
+          "sources": [
+            "b26-snow-song",
+            "b26-snow-scene"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Aurora is not the singer in this original scene.",
+          "sources": [
+            "b26-snow-song",
+            "b26-snow-scene"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Belle is not the singer in this original scene.",
+          "sources": [
+            "b26-snow-song",
+            "b26-snow-scene"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Original-film context excludes later cover versions; removed the unsupported most-covered superlative."
+      }
+    },
+    {
+      "questionId": 1391,
+      "hash": "4c8419ebb6fe87b0ca36f4eeccee98b785703fa32d2d8316ddd98707cc75bcf8",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Avoided language-mixture and word-boundary claims; alternate spellings of the opening cannot make another listed phrase correct.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The published transcription identifies the opening phrase.",
+        "sources": [
+          "b26-chant"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Nants ingonyama begins the chant.",
+          "sources": [
+            "b26-chant"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Simba wetu is not the transcribed opening.",
+          "sources": [
+            "b26-chant"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rafiki sema is not the transcribed opening.",
+          "sources": [
+            "b26-chant"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Circle of belongs to the later English song text, not the opening chant.",
+          "sources": [
+            "b26-chant"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Avoided language-mixture and word-boundary claims; alternate spellings of the opening cannot make another listed phrase correct."
+      }
+    },
+    {
+      "questionId": 1392,
+      "hash": "bcc6cd9be9f99ad78482959f6d8e3fcedc89df745685d60e55faf5455d53a149",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. The original allowed Beauty and the Beast too; final wording explicitly excludes it by year and the documented lyricist transition.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Ashman material and Rice's later contribution are specifically documented for Aladdin (1992).",
+        "sources": [
+          "b26-ashman",
+          "b26-ashman-death",
+          "b26-order"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Aladdin is the 1992 Ashman/Rice project.",
+          "sources": [
+            "b26-ashman",
+            "b26-ashman-death",
+            "b26-order"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Beauty and the Beast also followed his death, but is a 1991 film and not the specified Rice project.",
+          "sources": [
+            "b26-ashman",
+            "b26-ashman-death",
+            "b26-order"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lion King is a 1994 film, not this 1992 project.",
+          "sources": [
+            "b26-ashman",
+            "b26-ashman-death",
+            "b26-order"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pocahontas is a 1995 film, not this 1992 project.",
+          "sources": [
+            "b26-ashman",
+            "b26-ashman-death",
+            "b26-order"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The original allowed Beauty and the Beast too; final wording explicitly excludes it by year and the documented lyricist transition."
+      }
+    },
+    {
+      "questionId": 1394,
+      "hash": "4f13b5d586f3b11569da29d70e4c78d7314887578f9bd3e8fa1a33d6ee26dcbc",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Checked current Pearl inclusion and removed the incomplete tier list; plausible nautical invented names are not aliases.",
+      "context": "Disney Cruise Line; dated November 2026 where current.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The current official benefits page names the repeat-sailor program.",
+        "sources": [
+          "b26-club"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Castaway Club is the official program name.",
+          "sources": [
+            "b26-club"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Anchor Club is not that named program.",
+          "sources": [
+            "b26-club"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Navigator's Guild is not that named program.",
+          "sources": [
+            "b26-club"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wave Riders Club is not that named program.",
+          "sources": [
+            "b26-club"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked current Pearl inclusion and removed the incomplete tier list; plausible nautical invented names are not aliases."
+      }
+    },
+    {
+      "questionId": 1396,
+      "hash": "bb15dfb7b58ff26c155b0e3bceb2ce2043679dc662e9e55e2cac24fe7be17e43",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Corrected the old 3-12 range; open-house access is different from supervised reserved programming, and Lab is not among the options.",
+      "context": "Disney Cruise Line; dated November 2026 where current.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Current Disney-hosted age guidance assigns Oceaneer Club reserved programming to ages 3-10.",
+        "sources": [
+          "b26-ages"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney's Oceaneer Club is the named children's club.",
+          "sources": [
+            "b26-ages"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Disney's Adventure Club is not this official venue name.",
+          "sources": [
+            "b26-ages"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wonder Zone is not this official venue name.",
+          "sources": [
+            "b26-ages"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kids at Sea Club is not this official venue name.",
+          "sources": [
+            "b26-ages"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Corrected the old 3-12 range; open-house access is different from supervised reserved programming, and Lab is not among the options."
+      }
+    },
+    {
+      "questionId": 1397,
+      "hash": "43936a14b0ff2dcd6bec51476b54c5ae68f53082bffa435d08865d77c99a2fa4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Distinguished March 3 arrival from March 4 christening and later sailings; the sailings-year and Toy Story Place questions test other events/features.",
+      "context": "Disney Cruise Line; dated November 2026 where current.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The dated journey account places Adventure's Singapore arrival on March 3, 2026.",
+        "sources": [
+          "b26-arrival"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney Adventure is the identified ship.",
+          "sources": [
+            "b26-arrival"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Disney Horizon is not the ship in this arrival record.",
+          "sources": [
+            "b26-arrival"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Disney Voyager is not the ship in this arrival record.",
+          "sources": [
+            "b26-arrival"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Disney Pacific is not the ship in this arrival record.",
+          "sources": [
+            "b26-arrival"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished March 3 arrival from March 4 christening and later sailings; the sailings-year and Toy Story Place questions test other events/features."
+      }
+    },
+    {
+      "questionId": 1399,
+      "hash": "eb9bb3327321fbdfdfc178e2fbc9e269ce3744af6bb7181d097faf961b8fb5b6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Historical wording avoids promising current paper delivery; the separate Navigator app question tests a different product and functionality.",
+      "context": "Disney Cruise Line; dated November 2026 where current.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 2022 answer explicitly calls the former paper activity guide Personal Navigator.",
+        "sources": [
+          "b26-navigator"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Personal Navigator is the printed guide name.",
+          "sources": [
+            "b26-navigator"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Personal Anchor is not the paper guide name.",
+          "sources": [
+            "b26-navigator"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Personal Wave is not the paper guide name.",
+          "sources": [
+            "b26-navigator"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Personal Compass is not the paper guide name.",
+          "sources": [
+            "b26-navigator"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Historical wording avoids promising current paper delivery; the separate Navigator app question tests a different product and functionality."
+      }
+    },
+    {
+      "questionId": 1400,
+      "hash": "50bc5d1d4931284441743eb7688d15442639a6ee632f2e554612e6bc349bb103",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Removed the nightly guarantee and made all options parallel sculptures; incidental chocolates cannot satisfy the described towel tradition.",
+      "context": "Disney Cruise Line; dated November 2026 where current.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "Disney-hosted guidance describes animal shapes made from stateroom towels.",
+        "sources": [
+          "b26-towels"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Folded towel sculptures match the described bed creations.",
+          "sources": [
+            "b26-towels"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Carved chocolate is a different material, not the towel creations.",
+          "sources": [
+            "b26-towels"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Folded paper is a different material, not the towel creations.",
+          "sources": [
+            "b26-towels"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Molded soap is a different material, not the towel creations.",
+          "sources": [
+            "b26-towels"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the nightly guarantee and made all options parallel sculptures; incidental chocolates cannot satisfy the described towel tradition."
+      }
+    },
+    {
+      "questionId": 1401,
+      "hash": "01a4fd7324b738af9db600ab202cfc4ed6f552e07d8cf2914a6781f7d92808b0",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Bao also uses Toronto, but identifying one film's city does not establish the other; the full Turning Red context has no duplicate setting question. Turning Red has 13 topic entries; retained distinct main-theatrical facts under the soft coverage guidance.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar identifies Toronto as the film setting.",
+        "sources": [
+          "b26-red-cast",
+          "b26-red-setting"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Toronto is the named setting.",
+          "sources": [
+            "b26-red-cast",
+            "b26-red-setting"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Vancouver is a different city.",
+          "sources": [
+            "b26-red-cast",
+            "b26-red-setting"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Montreal is a different city.",
+          "sources": [
+            "b26-red-cast",
+            "b26-red-setting"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ottawa is a different city.",
+          "sources": [
+            "b26-red-cast",
+            "b26-red-setting"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Bao also uses Toronto, but identifying one film's city does not establish the other; the full Turning Red context has no duplicate setting question."
+      }
+    },
+    {
+      "questionId": 1402,
+      "hash": "5a2d84a53d30e39efb23c74d7b602741df91c3b544b4baad782ca536de9ddeb0",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Checked exact year rather than inferring it from early-2000s styling; the production quote and Pandapocalypse date agree. Turning Red has 13 topic entries; retained distinct main-theatrical facts under the soft coverage guidance.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The production notes explicitly set the story in 2002.",
+        "sources": [
+          "b26-red-setting",
+          "b26-red-plot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "2002 is the stated year.",
+          "sources": [
+            "b26-red-setting",
+            "b26-red-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2003 is one year later.",
+          "sources": [
+            "b26-red-setting",
+            "b26-red-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2000 is two years earlier.",
+          "sources": [
+            "b26-red-setting",
+            "b26-red-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2004 is two years later.",
+          "sources": [
+            "b26-red-setting",
+            "b26-red-plot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked exact year rather than inferring it from early-2000s styling; the production quote and Pandapocalypse date agree."
+      }
+    },
+    {
+      "questionId": 1403,
+      "hash": "027db66d68f171fe854db5ee5fdcbdeadd5f893b8ad72d4eb8611cd2b70c6e7e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Partial overlap does not make a whole list correct; checked all three names per option, not just Abby/Priya presence. Turning Red has 13 topic entries; retained distinct main-theatrical facts under the soft coverage guidance.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The three friend profiles establish the complete trio.",
+        "sources": [
+          "b26-red-cast"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Miriam, Priya and Abby are the three best friends.",
+          "sources": [
+            "b26-red-cast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Stacy, Jenny and Kim replace all three names.",
+          "sources": [
+            "b26-red-cast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Devon, Abby and Suki includes only Abby from the trio.",
+          "sources": [
+            "b26-red-cast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Priya, Lily and Devon includes only Priya from the trio.",
+          "sources": [
+            "b26-red-cast"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Partial overlap does not make a whole list correct; checked all three names per option, not just Abby/Priya presence."
+      }
+    },
+    {
+      "questionId": 1404,
+      "hash": "972546654dc564e4e1c949bb66a23ba6f6754852845711c26d6d8faaaaed0a5c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. SkyDome's later Rogers Centre name is not Rogers Arena; film-era wording and the explicit production venue exclude that distractor. Turning Red has 13 topic entries; retained distinct main-theatrical facts under the soft coverage guidance.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Production notes identify SkyDome as the concert venue.",
+        "sources": [
+          "b26-red-setting",
+          "b26-red-plot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "SkyDome is the named venue used for the climax.",
+          "sources": [
+            "b26-red-setting",
+            "b26-red-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Air Canada Centre is not that venue.",
+          "sources": [
+            "b26-red-setting",
+            "b26-red-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rogers Arena is not that venue.",
+          "sources": [
+            "b26-red-setting",
+            "b26-red-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Maple Leaf Gardens is not that venue.",
+          "sources": [
+            "b26-red-setting",
+            "b26-red-plot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "SkyDome's later Rogers Centre name is not Rogers Arena; film-era wording and the explicit production venue exclude that distractor."
+      }
+    },
+    {
+      "questionId": 1405,
+      "hash": "abd2dfab24ffad6c21c786ff1ed54c2c5a72075fa3f7c90532bf8fd3240a79ad",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Separated the interrupted first ritual from the final choice; Mei's subsequent transformations exclude permanent removal or transfer. Turning Red has 13 topic entries; retained distinct main-theatrical facts under the soft coverage guidance.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The final spirit-realm decision leaves Mei with her panda.",
+        "sources": [
+          "b26-red-dialogue",
+          "b26-red-plot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Mei keeps it rather than resealing it.",
+          "sources": [
+            "b26-red-dialogue",
+            "b26-red-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sealing is what the other women do, not Mei's final choice.",
+          "sources": [
+            "b26-red-dialogue",
+            "b26-red-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Her friends support her but do not receive her spirit.",
+          "sources": [
+            "b26-red-dialogue",
+            "b26-red-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sun Yee is the ancestor, not the recipient of a surrendered spirit.",
+          "sources": [
+            "b26-red-dialogue",
+            "b26-red-plot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separated the interrupted first ritual from the final choice; Mei's subsequent transformations exclude permanent removal or transfer."
+      }
+    },
+    {
+      "questionId": 1406,
+      "hash": "c882e290e6bff97168883a1157267cecc3ab1ec137715b498b1f1e6f56c9703e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Checked schoolmate versus band-member roles rather than merely asking who likes the band; the concert reveal identifies Tyler uniquely. Turning Red has 13 topic entries; retained distinct main-theatrical facts under the soft coverage guidance.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Concert dialogue reveals Tyler as a fellow fan.",
+        "sources": [
+          "b26-red-dialogue",
+          "b26-red-cast",
+          "b26-red-plot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Tyler is the classmate revealed as a 4-Townie.",
+          "sources": [
+            "b26-red-dialogue",
+            "b26-red-cast",
+            "b26-red-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Devon is the convenience-store crush, not the revealed classmate fan.",
+          "sources": [
+            "b26-red-dialogue",
+            "b26-red-cast",
+            "b26-red-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Aaron Z is a band member, not Mei's classmate.",
+          "sources": [
+            "b26-red-dialogue",
+            "b26-red-cast",
+            "b26-red-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jesse is a band member, not Mei's classmate.",
+          "sources": [
+            "b26-red-dialogue",
+            "b26-red-cast",
+            "b26-red-plot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked schoolmate versus band-member roles rather than merely asking who likes the band; the concert reveal identifies Tyler uniquely."
+      }
+    },
+    {
+      "questionId": 1407,
+      "hash": "cf964649c8d39a8e8e2faba04133664eb0e5e67824abd224c7ea5406c18ed587",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Replaced lunar eclipse and blood moon because they can describe the same event; retained only distinct astronomical alternatives and attributed the terminology to Ming. Turning Red has 13 topic entries; retained distinct main-theatrical facts under the soft coverage guidance.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Ming explicitly says the ritual is performed on the next red moon.",
+        "sources": [
+          "b26-red-dialogue",
+          "b26-red-plot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "A red moon is Ming's stated condition.",
+          "sources": [
+            "b26-red-dialogue",
+            "b26-red-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A passing comet is not the stated lunar condition.",
+          "sources": [
+            "b26-red-dialogue",
+            "b26-red-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A meteor shower is not the stated lunar condition.",
+          "sources": [
+            "b26-red-dialogue",
+            "b26-red-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A solar eclipse is not the stated lunar condition.",
+          "sources": [
+            "b26-red-dialogue",
+            "b26-red-plot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Replaced lunar eclipse and blood moon because they can describe the same event; retained only distinct astronomical alternatives and attributed the terminology to Ming."
+      }
+    },
+    {
+      "questionId": 1408,
+      "hash": "f2b537045a72d00bf879e177ca670d4280856fb20de6cb16edf271d0cc1ef33f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Mei's current generation and grandmother must not be confused with the origin ancestor; passage explicitly describes the gift passing down. Turning Red has 13 topic entries; retained distinct main-theatrical facts under the soft coverage guidance.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Ming's Sun Yee story describes the original gift and inheritance.",
+        "sources": [
+          "b26-red-dialogue",
+          "b26-red-cast"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Sun Yee receives the original transformation power.",
+          "sources": [
+            "b26-red-dialogue",
+            "b26-red-cast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jade Grandmother is not the ancestor named in this account.",
+          "sources": [
+            "b26-red-dialogue",
+            "b26-red-cast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mei Lin is not the ancestor named in this account.",
+          "sources": [
+            "b26-red-dialogue",
+            "b26-red-cast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wu Ling is not the ancestor named in this account.",
+          "sources": [
+            "b26-red-dialogue",
+            "b26-red-cast"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Mei's current generation and grandmother must not be confused with the origin ancestor; passage explicitly describes the gift passing down."
+      }
+    },
+    {
+      "questionId": 1409,
+      "hash": "3bad4c0ea1965bbe5eb8fe3f7486589c0f5cca5c0cb86e561615b079188c9abe",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Checked Cinder's distinct parental role; fire-related plausible names are not alternate identities for Bernie.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar's Bernie profile identifies his daughter and shop succession plan.",
+        "sources": [
+          "b26-element-cast"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Bernie is Ember's father.",
+          "sources": [
+            "b26-element-cast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ash is not the father named in this profile.",
+          "sources": [
+            "b26-element-cast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cinder is Ember's mother, not her father.",
+          "sources": [
+            "b26-element-cast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Blaze is not the father named in this profile.",
+          "sources": [
+            "b26-element-cast"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked Cinder's distinct parental role; fire-related plausible names are not alternate identities for Bernie."
+      }
+    },
+    {
+      "questionId": 1410,
+      "hash": "8004b813dc1816f9e4d367a7de17f18f9ed8be6cae36b1448a5a5bf177f585b4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Working on the water problem later does not make him a bridge builder; removed the shared city token from stem and answer.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The production notes identify Wade as an Element City inspector.",
+        "sources": [
+          "b26-wade-job"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Building inspector is Wade's job.",
+          "sources": [
+            "b26-wade-job"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Firefighter is not his assigned profession.",
+          "sources": [
+            "b26-wade-job"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Weather reporter is not his assigned profession.",
+          "sources": [
+            "b26-wade-job"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bridge builder is not his assigned profession.",
+          "sources": [
+            "b26-wade-job"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Working on the water problem later does not make him a bridge builder; removed the shared city token from stem and answer."
+      }
+    },
+    {
+      "questionId": 1411,
+      "hash": "71829fd403245d1ba88924746d9496383d354534fe30d2dc484f7ad689a3c6ea",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Distinguished Firetown from the city name and Fireplace shop; no competing neighborhood name appears among options.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The world section names the family's fire neighborhood.",
+        "sources": [
+          "b26-element-cast"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Firetown is the identified neighborhood.",
+          "sources": [
+            "b26-element-cast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cinder District is not its name.",
+          "sources": [
+            "b26-element-cast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Hearth is not its name.",
+          "sources": [
+            "b26-element-cast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ember Borough is not its name.",
+          "sources": [
+            "b26-element-cast"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished Firetown from the city name and Fireplace shop; no competing neighborhood name appears among options."
+      }
+    },
+    {
+      "questionId": 1412,
+      "hash": "959a662fddb68efb89a18faa68e53b39d5b954cf3ecfc4e5adac696acf2cd4bb",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Wind and Air refer to the same resident category; checked that alternatives are distinct rather than alternate weather terminology.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Gale's profile explicitly identifies a Wind element and Wade's boss.",
+        "sources": [
+          "b26-element-cast"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Air is the elemental category of Wind.",
+          "sources": [
+            "b26-element-cast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Earth is a different element.",
+          "sources": [
+            "b26-element-cast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lightning is not her element.",
+          "sources": [
+            "b26-element-cast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ice is not her element.",
+          "sources": [
+            "b26-element-cast"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Wind and Air refer to the same resident category; checked that alternatives are distinct rather than alternate weather terminology."
+      }
+    },
+    {
+      "questionId": 1413,
+      "hash": "8162423dc4affae5543d5b089d14b92fae9eed164ed7bc13af75099512785ebf",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Bounded to her fear before the test: the following successful touch disproves the old claim that contact inevitably cancels them out.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Ember explicitly states these two fears immediately before the first touch.",
+        "sources": [
+          "b26-touch"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Vaporizing Wade or extinguishing Ember is her stated concern.",
+          "sources": [
+            "b26-touch"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Turning to stone is not the danger she names.",
+          "sources": [
+            "b26-touch"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Memory loss is not the danger she names.",
+          "sources": [
+            "b26-touch"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Invisibility is not the danger she names.",
+          "sources": [
+            "b26-touch"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Bounded to her fear before the test: the following successful touch disproves the old claim that contact inevitably cancels them out."
+      }
+    },
+    {
+      "questionId": 1414,
+      "hash": "816780e234a75401732bfd2fd34fa6ae1f78c1d218bd6e1e26d37bafd4083b9f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Skates, sticks and hockey-camp signage exclude alternative sports; original-film Hockey Island is a different setting fact. Inside Out 2 has 11 topic entries; distinct theatrical story facts justify this modest soft-cap excess.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The camp sign and rink sequences establish ice hockey.",
+        "sources": [
+          "b26-io2-camp"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Ice hockey is the camp sport.",
+          "sources": [
+            "b26-io2-camp"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Soccer is not the rink sport.",
+          "sources": [
+            "b26-io2-camp"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Swimming is not the rink sport.",
+          "sources": [
+            "b26-io2-camp"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Basketball is not the rink sport.",
+          "sources": [
+            "b26-io2-camp"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Skates, sticks and hockey-camp signage exclude alternative sports; original-film Hockey Island is a different setting fact."
+      }
+    },
+    {
+      "questionId": 1415,
+      "hash": "8becf9a34ec4a4d7a7e64aaf8ced850ed53b33184cc86d0d7a5108ce68f7be20",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Checked first name versus full Valentina alias; Grace's presence at camp does not make her the older varsity captain. Inside Out 2 has 11 topic entries; distinct theatrical story facts justify this modest soft-cap excess.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar and the screenplay identify Riley's admired varsity player as Val Ortiz.",
+        "sources": [
+          "b26-val",
+          "b26-io2-camp"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Val Ortiz is the admired older player.",
+          "sources": [
+            "b26-val",
+            "b26-io2-camp"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Grace is a peer friend, not the varsity idol.",
+          "sources": [
+            "b26-val",
+            "b26-io2-camp"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sierra Flores is not the identified varsity idol.",
+          "sources": [
+            "b26-val",
+            "b26-io2-camp"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jordan Chen is not the identified varsity idol.",
+          "sources": [
+            "b26-val",
+            "b26-io2-camp"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked first name versus full Valentina alias; Grace's presence at camp does not make her the older varsity captain."
+      }
+    },
+    {
+      "questionId": 1416,
+      "hash": "6e7d589c35262a2ca29310697bfabc64e2390590a840a87bda0d3176ca5cf21c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Distinguished memories and the Belief System from the named Sense of Self; similar invented psychological labels do not match it. Inside Out 2 has 11 topic entries; distinct theatrical story facts justify this modest soft-cap excess.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The screenplay labels the old and anxiety-grown structures Sense of Self.",
+        "sources": [
+          "b26-io2-camp"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Sense of Self is the named central identity structure.",
+          "sources": [
+            "b26-io2-camp"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Core Belief Tower is not the labeled structure.",
+          "sources": [
+            "b26-io2-camp"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Memory Archive is not the labeled structure.",
+          "sources": [
+            "b26-io2-camp"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Identity Stream is not the labeled structure.",
+          "sources": [
+            "b26-io2-camp"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished memories and the Belief System from the named Sense of Self; similar invented psychological labels do not match it."
+      }
+    },
+    {
+      "questionId": 1417,
+      "hash": "c78ed782633f7840c7b19a7c1e52163e2fd94daf9b53cb4424d5e677cef0c58c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Corrected location: Vault imprisonment precedes their later journey toward the Back of the Mind; no alternative describes the takeover scene. Inside Out 2 has 11 topic entries; distinct theatrical story facts justify this modest soft-cap excess.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Bottling and imprisonment in the Vault are explicit consecutive screenplay actions.",
+        "sources": [
+          "b26-io2-camp"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "They are put in a sealed jar and imprisoned in the Vault.",
+          "sources": [
+            "b26-io2-camp"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "They remain present and later escape, contradicting deletion.",
+          "sources": [
+            "b26-io2-camp"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The jar confines them; they do not lose all their power by shrinking.",
+          "sources": [
+            "b26-io2-camp"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "They are arrested rather than escaping through a Dream Portal.",
+          "sources": [
+            "b26-io2-camp"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Corrected location: Vault imprisonment precedes their later journey toward the Back of the Mind; no alternative describes the takeover scene."
+      }
+    },
+    {
+      "questionId": 1418,
+      "hash": "dd4259f7d6c4bfba364fa44dad46cefc60c025a3331f455fddecb04dc0ebc921",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Distinguished game title from shooter genre; the medal mission and entrance sign identify Hero's Duty uniquely.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The screenplay follows Ralph into Hero's Duty while he seeks a medal.",
+        "sources": [
+          "b26-ralph"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Hero's Duty is the named game he enters.",
+          "sources": [
+            "b26-ralph"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Combat Zone is not that game.",
+          "sources": [
+            "b26-ralph"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Space Shooter is not that game.",
+          "sources": [
+            "b26-ralph"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Alien Strike is not that game.",
+          "sources": [
+            "b26-ralph"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished game title from shooter genre; the medal mission and entrance sign identify Hero's Duty uniquely."
+      }
+    },
+    {
+      "questionId": 1419,
+      "hash": "e1e6675e970ec0341ef4c5303bc9e79f3839512bd0ace61a30a61f5af3a380be",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Rank and name match Calhoun, whose later Felix relationship does not change her identity; no alias among alternatives.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The screenplay introduces Sergeant Tamora Jean Calhoun commanding the soldiers.",
+        "sources": [
+          "b26-ralph"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Sergeant Calhoun is the commander.",
+          "sources": [
+            "b26-ralph"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Commander Steel is not her name.",
+          "sources": [
+            "b26-ralph"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sergeant Valor is not her name.",
+          "sources": [
+            "b26-ralph"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Captain James is not her name.",
+          "sources": [
+            "b26-ralph"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rank and name match Calhoun, whose later Felix relationship does not change her identity; no alias among alternatives."
+      }
+    },
+    {
+      "questionId": 1420,
+      "hash": "47a7ad075e7d3ab015f19a892d464e18b68d476900457be47279f8913dcfb0f7",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Removed the wrong Game Central Station location; group name and Pac-Man venue are distinct facts, with no claim that venue identification establishes the name.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The meeting-room sign identifies the group as BadAnon.",
+        "sources": [
+          "b26-ralph"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Bad-Anon is the group name, with optional hyphen styling.",
+          "sources": [
+            "b26-ralph"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Villain Support is a description, not the sign's name.",
+          "sources": [
+            "b26-ralph"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Arcade Anonymous is not the sign's name.",
+          "sources": [
+            "b26-ralph"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Wreckers' Circle is not the sign's name.",
+          "sources": [
+            "b26-ralph"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the wrong Game Central Station location; group name and Pac-Man venue are distinct facts, with no claim that venue identification establishes the name."
+      }
+    },
+    {
+      "questionId": 1421,
+      "hash": "c98400af5f7f83b5e0a64e560f7475befd7b62ab2bb92b1bef285d2f7c9e3e72",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Checked exact number in two text renderings; attributed it to Ralph's own introduction rather than an unverified game-description source.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The screenplay and independent transcription give nine feet in his opening introduction.",
+        "sources": [
+          "b26-ralph",
+          "b26-ralph-height"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Nine feet is the stated height.",
+          "sources": [
+            "b26-ralph",
+            "b26-ralph-height"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Six feet contradicts his introduction.",
+          "sources": [
+            "b26-ralph",
+            "b26-ralph-height"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Eight feet contradicts his introduction.",
+          "sources": [
+            "b26-ralph",
+            "b26-ralph-height"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Seven feet contradicts his introduction.",
+          "sources": [
+            "b26-ralph",
+            "b26-ralph-height"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked exact number in two text renderings; attributed it to Ralph's own introduction rather than an unverified game-description source."
+      }
+    },
+    {
+      "questionId": 1422,
+      "hash": "940904fbf638aacbc31363e2f2fd4edcb109e1eba6645ff0d9442055d5e34df2",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. A future visit to Ralph does not undo her new racing life; removed the answer phrase from the stem and avoided a permanent no-visits claim.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Vanellope chooses to live and race with Shank's crew while remaining friends with Ralph.",
+        "sources": [
+          "b26-ralph2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Racing in Slaughter Race matches her new home and ending.",
+          "sources": [
+            "b26-ralph2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ralph returns to the arcade, so they do not tour the internet together.",
+          "sources": [
+            "b26-ralph2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Her ending is with the racing crew, not in a social media world.",
+          "sources": [
+            "b26-ralph2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "She joins an existing racing game rather than founding a kingdom.",
+          "sources": [
+            "b26-ralph2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A future visit to Ralph does not undo her new racing life; removed the answer phrase from the stem and avoided a permanent no-visits claim."
+      }
+    },
+    {
+      "questionId": 1423,
+      "hash": "812e2cd0e2c1090b862954a3b4ec1bcc32c1f774885c02103a15f6bcc6e6bdb2",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Initial plan is distinct from the modest neighboring home in the ending; retained hill context while removing the Kuzco/Kuzcotopia name clue.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The early hilltop plan is a summer home with a pool.",
+        "sources": [
+          "b26-groove",
+          "b26-groove-plot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "His summer home and pool are the planned project.",
+          "sources": [
+            "b26-groove",
+            "b26-groove-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A palace annex and theater are a different project.",
+          "sources": [
+            "b26-groove",
+            "b26-groove-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A hunting ground and stables are a different project.",
+          "sources": [
+            "b26-groove",
+            "b26-groove-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A temple and courtyard are a different project.",
+          "sources": [
+            "b26-groove",
+            "b26-groove-plot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Initial plan is distinct from the modest neighboring home in the ending; retained hill context while removing the Kuzco/Kuzcotopia name clue."
+      }
+    },
+    {
+      "questionId": 1424,
+      "hash": "45816869cdf9f0100e26d8fed661bbba1b30dca3eec131240b932d39c90638ca",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Distinguished professional dismissal from exile and later dinner events; removed misleading very-start chronology and the unsupported on-a-whim gloss.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The advisor is fired and then plots revenge.",
+        "sources": [
+          "b26-groove",
+          "b26-groove-plot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Firing her is the triggering act.",
+          "sources": [
+            "b26-groove",
+            "b26-groove-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He does not destroy her lab in the triggering scene.",
+          "sources": [
+            "b26-groove",
+            "b26-groove-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The firing occurs outside the later murder-at-dinner scheme, not at a royal banquet.",
+          "sources": [
+            "b26-groove",
+            "b26-groove-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dismissal from the job is not banishment from the kingdom.",
+          "sources": [
+            "b26-groove",
+            "b26-groove-plot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished professional dismissal from exile and later dinner events; removed misleading very-start chronology and the unsupported on-a-whim gloss."
+      }
+    },
+    {
+      "questionId": 1425,
+      "hash": "ade38f80b82540bd303f363c1cf0c29a79c7ad80921a1363a87c6ac3a67fb701",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Separated the rapid Kuzco transformations from the potion affecting Yzma; visual cat form is corroborated by the detailed plot.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The climax changes Yzma into a cat, with a meow and tiny voice.",
+        "sources": [
+          "b26-groove",
+          "b26-groove-plot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "A small kitten matches Yzma's potion result.",
+          "sources": [
+            "b26-groove",
+            "b26-groove-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The llama is Kuzco's major transformed identity, not Yzma's result.",
+          "sources": [
+            "b26-groove",
+            "b26-groove-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A parrot is not Yzma's resulting form.",
+          "sources": [
+            "b26-groove",
+            "b26-groove-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A frog is not Yzma's resulting form.",
+          "sources": [
+            "b26-groove",
+            "b26-groove-plot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separated the rapid Kuzco transformations from the potion affecting Yzma; visual cat form is corroborated by the detailed plot."
+      }
+    },
+    {
+      "questionId": 1426,
+      "hash": "4bd40966e9a00a324b774e2c0f2981b0a4fa7657c08c6d6772f7a7ec4448c34e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Focused on a specific rescue dilemma; removed the shoulder token clue and the unbounded whenever claim.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Kronk's angel and devil debate leaving Kuzco to die.",
+        "sources": [
+          "b26-groove"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "An angel and a devil are the two conscience figures.",
+          "sources": [
+            "b26-groove"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Past/future selves are not the depicted roles.",
+          "sources": [
+            "b26-groove"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Inner child/adult are not the depicted roles.",
+          "sources": [
+            "b26-groove"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The figures represent Kronk's conscience, not miniature Yzmas.",
+          "sources": [
+            "b26-groove"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Focused on a specific rescue dilemma; removed the shoulder token clue and the unbounded whenever claim."
+      }
+    },
+    {
+      "questionId": 1427,
+      "hash": "e700174631e876cf14869b04519342ca2ffce26b653eee6ef5eb28be0dec837b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Checked the city named on arrival and during reputation-building, not a generic Greek city or stage adaptation.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Phil selects Thebes to build Hercules' reputation and he becomes famous there.",
+        "sources": [
+          "b26-herc",
+          "b26-herc-plot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Thebes is the city of his heroic rise.",
+          "sources": [
+            "b26-herc",
+            "b26-herc-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Athens is not the selected city.",
+          "sources": [
+            "b26-herc",
+            "b26-herc-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sparta is a proposed place to move away to, not the city where he builds fame.",
+          "sources": [
+            "b26-herc",
+            "b26-herc-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Corinth is not the selected city.",
+          "sources": [
+            "b26-herc",
+            "b26-herc-plot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the city named on arrival and during reputation-building, not a generic Greek city or stage adaptation."
+      }
+    },
+    {
+      "questionId": 1428,
+      "hash": "9067665d41e64144bfe4de478ee1b5397d9ba8136e460e8d93437fb7d69753b5",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Checked Meg's earlier soul contract and the explicit new offer; this is her espionage bargain, distinct from Hercules' later sacrifice of strength.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Hades explicitly offers Meg her freedom for finding Hercules' weakness.",
+        "sources": [
+          "b26-herc"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Freedom from his servitude is the offered reward.",
+          "sources": [
+            "b26-herc"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Olympian membership is not the offered reward.",
+          "sources": [
+            "b26-herc"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Eternal life and beauty are not the offered reward.",
+          "sources": [
+            "b26-herc"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Underworld dominion is not the offered reward.",
+          "sources": [
+            "b26-herc"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked Meg's earlier soul contract and the explicit new offer; this is her espionage bargain, distinct from Hercules' later sacrifice of strength."
+      }
+    },
+    {
+      "questionId": 1429,
+      "hash": "511056561126617e7dbed25c1555780210a17005198f6c95a88b7b9e329c7e81",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Love motivates his choice but does not mechanically remove strength; checked the explicit bargain and the safety condition that later restores it.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Hercules accepts Hades' 24-hour strength bargain to free and protect Meg.",
+        "sources": [
+          "b26-herc",
+          "b26-herc-plot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Meg's freedom and safety are the condition he negotiates.",
+          "sources": [
+            "b26-herc",
+            "b26-herc-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Olympus membership is not offered in this bargain.",
+          "sources": [
+            "b26-herc",
+            "b26-herc-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Memory recovery is not offered in this bargain.",
+          "sources": [
+            "b26-herc",
+            "b26-herc-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The bargain leaves him vulnerable to the Cyclops rather than protecting him from Titans.",
+          "sources": [
+            "b26-herc",
+            "b26-herc-plot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Love motivates his choice but does not mechanically remove strength; checked the explicit bargain and the safety condition that later restores it."
+      }
+    },
+    {
+      "questionId": 1430,
+      "hash": "9d1f45fd15fc35dbd499b529d6cb997fbaab699024b39c05e3ba4592607bbdcc",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. All four can fit former-trainee wording, so the final question explicitly asks about the heel detail; generic almost-greatness wording was too loose.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Phil singles out Achilles' heel after mentioning other former trainees.",
+        "sources": [
+          "b26-herc"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Achilles is the trainee with the heel weakness.",
+          "sources": [
+            "b26-herc"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Perseus is listed but not linked to that heel.",
+          "sources": [
+            "b26-herc"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Odysseus is listed but not linked to that heel.",
+          "sources": [
+            "b26-herc"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jason is associated with sailing, not the heel flaw.",
+          "sources": [
+            "b26-herc"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All four can fit former-trainee wording, so the final question explicitly asks about the heel detail; generic almost-greatness wording was too loose."
+      }
+    },
+    {
+      "questionId": 1431,
+      "hash": "5b569e4a24b33612cc0899cc00d6a9ba2fa7194bf855c8af6131d78506013ec9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Dream-destination and wife-name questions require different facts; similar female names are not her aliases.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar identifies Ellie as Carl's wife and partner in the Paradise Falls dream.",
+        "sources": [
+          "b26-up"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Ellie is Carl's wife.",
+          "sources": [
+            "b26-up"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Emma is not the wife identified by Pixar.",
+          "sources": [
+            "b26-up"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Edna is not the wife identified by Pixar.",
+          "sources": [
+            "b26-up"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Eliza is not the wife identified by Pixar.",
+          "sources": [
+            "b26-up"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Dream-destination and wife-name questions require different facts; similar female names are not her aliases."
+      }
+    },
+    {
+      "questionId": 1432,
+      "hash": "2dd38b3577b50294385df4445e1914169c97248643f9e2301d3304629c428b54",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Compared motives against the explicit discrediting-and-vindication sequence; shortened options without replacing the factual motive.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Muntz vows to bring a live specimen after scientists discredit his discovery.",
+        "sources": [
+          "b26-up"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Vindicating his discovery and reputation is the documented motive.",
+          "sources": [
+            "b26-up"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Claiming land does not answer the scientists' accusation.",
+          "sources": [
+            "b26-up"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The bird is a sought live specimen, not a lost hand-raised pet.",
+          "sources": [
+            "b26-up"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He vows to prove the discovery, not to auction the bird.",
+          "sources": [
+            "b26-up"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Compared motives against the explicit discrediting-and-vindication sequence; shortened options without replacing the factual motive."
+      }
+    },
+    {
+      "questionId": 1433,
+      "hash": "a7f28fbc27bd9761b19d3c0234a91cbb7b481023c0eb32632c56dcd0a0148e9d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Removed all-dogs/whenever absolutes; film-specific squirrel distraction is distinct from Wart's squirrel transformation and Kronk's language skill.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The dogs repeatedly break attention for squirrels.",
+        "sources": [
+          "b26-squirrel",
+          "b26-up"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Squirrel is the repeated distraction word.",
+          "sources": [
+            "b26-squirrel",
+            "b26-up"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bird is their quarry, not the repeated distraction cue.",
+          "sources": [
+            "b26-squirrel",
+            "b26-up"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cat is not the demonstrated recurring cue.",
+          "sources": [
+            "b26-squirrel",
+            "b26-up"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Danger is not the demonstrated recurring cue.",
+          "sources": [
+            "b26-squirrel",
+            "b26-up"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed all-dogs/whenever absolutes; film-specific squirrel distraction is distinct from Wart's squirrel transformation and Kronk's language skill."
+      }
+    },
+    {
+      "questionId": 1434,
+      "hash": "9ba4fdd7525a9a1dba1f02125bb5eade068a27c5195d78e800b5b7726c72d354",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Read full topic context and all four final options; checked bank comparisons. Checked every object in each option; a parchment carrying the spell does not make the final alternative correct because it still lacks the Phoenix Gem.",
+      "context": "Original English-language theatrical film; historical production/award facts where stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The gift-unwrapping scene enumerates the three objects.",
+        "sources": [
+          "b26-onward"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Staff, Phoenix Gem and visitation spell are the actual bundle.",
+          "sources": [
+            "b26-onward"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "This substitutes a map and armor for staff and spell.",
+          "sources": [
+            "b26-onward"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "This substitutes spellbook, wand and key for the actual bundle.",
+          "sources": [
+            "b26-onward"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "This substitutes crystal ball and scroll for the gem and visitation spell.",
+          "sources": [
+            "b26-onward"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked every object in each option; a parchment carrying the spell does not make the final alternative correct because it still lacks the Phoenix Gem."
+      }
+    }
+  ]
+}

@@ -1,0 +1,2748 @@
+{
+  "schema": 1,
+  "reviewer": "Codex",
+  "at": "2026-11-08",
+  "sourcesChecked": [
+    "b29-adventure-cor",
+    "b29-adventure-debut",
+    "b29-adventure-nostops",
+    "b29-anna-song",
+    "b29-chicken",
+    "b29-chicken-manual",
+    "b29-cows",
+    "b29-cruise-nowhere",
+    "b29-destiny-dining",
+    "b29-destiny-show",
+    "b29-destiny-suites",
+    "b29-destiny-theme",
+    "b29-eisner",
+    "b29-eisner-cor",
+    "b29-frozen-chorus",
+    "b29-frozen-music",
+    "b29-frozen-rock",
+    "b29-frozen-scenes",
+    "b29-hotpursuit",
+    "b29-iger",
+    "b29-iger-deals",
+    "b29-king3",
+    "b29-king3-dialogue",
+    "b29-king3-primary",
+    "b29-lion2",
+    "b29-lion2-family",
+    "b29-lion2-romance",
+    "b29-lion2-romance-cor",
+    "b29-lng",
+    "b29-lng-cor",
+    "b29-lucas",
+    "b29-lucas-cor",
+    "b29-marvel",
+    "b29-marvel-cor",
+    "b29-merlin",
+    "b29-nbc",
+    "b29-nbc-cor",
+    "b29-pooh-album",
+    "b29-pooh-nightmare",
+    "b29-pooh-song",
+    "b29-raya",
+    "b29-raya-roles",
+    "b29-return",
+    "b29-return-cor",
+    "b29-riviera",
+    "b29-robinsons",
+    "b29-robinsons-track",
+    "b29-show",
+    "b29-stars",
+    "b29-stars-cor",
+    "b29-toy3",
+    "b29-toy3-cor",
+    "b29-toy3-place",
+    "b29-toy4-benson",
+    "b29-toy4-duke",
+    "b29-toy4-giggle",
+    "b29-toy4-prizes",
+    "b29-wish-songs"
+  ],
+  "reviews": [
+    {
+      "questionId": 1596,
+      "hash": "2d43e30c322b085e17172b2df472db4180a9df410b1c7e231b65a3a7458158e1",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Specified the 2005 film and replaced the second defensible bully option.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 2005 feature has Foxy among the school bullies.",
+        "sources": [
+          "b29-chicken",
+          "b29-chicken-manual"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Foxy Loxy is the mean fox classmate.",
+          "sources": [
+            "b29-chicken",
+            "b29-chicken-manual"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Runt is in the outcast friend group, not a bully.",
+          "sources": [
+            "b29-chicken",
+            "b29-chicken-manual"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Fish is Chicken Little’s outcast friend.",
+          "sources": [
+            "b29-chicken",
+            "b29-chicken-manual"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Abby is his supportive friend.",
+          "sources": [
+            "b29-chicken",
+            "b29-chicken-manual"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Goosey also bullies him, so removed her from the alternatives. None of the three listed friends fills the bully role. Removed the temporary fox-species clue."
+      }
+    },
+    {
+      "questionId": 1597,
+      "hash": "6d0dc3e6583b387bd32ab6fe7606a1a20ad7280dc7877f387d997a4c184a7896",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Corrected the character surname spelling from Calloway to Caloway. No overlapping cow-name fact in the full digests.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The three named cows seek the bounty to save their home.",
+        "sources": [
+          "b29-cows"
+        ]
+      },
+      "options": [
+        {
+          "basis": "exhaustive-list",
+          "reason": "The named cow trio is Maggie, Mrs. Caloway and Grace.",
+          "sources": [
+            "b29-cows"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "The exhaustive protagonist trio does not contain Bessie, Buttercup or Daisy.",
+          "sources": [
+            "b29-cows"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Pearl is the farm owner, not a cow in this trio; Clara and Rose do not complete the trio.",
+          "sources": [
+            "b29-cows"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Molly, Patches and Belle are not the listed cow protagonists.",
+          "sources": [
+            "b29-cows"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked every name in each group against the complete named trio. Corrected Caloway to the spelling used by Disney; none of the alternative groups names these three cows."
+      }
+    },
+    {
+      "questionId": 1598,
+      "hash": "7e570f89216cbd31975d913d602f2540605c9ffb4750ad8d62c6450cd5f4f085",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed complete topic/comparison context, final wording, option balance, category, difficulty and theatrical/secondary scope; distinct fact retained.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Fang’s chief has warrior daughter Namaari, Raya’s rival.",
+        "sources": [
+          "b29-raya",
+          "b29-raya-roles"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Namaari is the Fang chief’s daughter and Raya’s nemesis.",
+          "sources": [
+            "b29-raya",
+            "b29-raya-roles"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Sisu is the dragon.",
+          "sources": [
+            "b29-raya",
+            "b29-raya-roles"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Boun is a boy from Tail.",
+          "sources": [
+            "b29-raya",
+            "b29-raya-roles"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Noi is a toddler from Talon.",
+          "sources": [
+            "b29-raya",
+            "b29-raya-roles"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A later alliance does not change identity; only Namaari fits both Fang royalty and rival. Raya’s Heart origin and Sisu’s identity are separate existing facts."
+      }
+    },
+    {
+      "questionId": 1600,
+      "hash": "be08b181c55b2e0cbd7fb46903206cd96b5e56214ac241f1f477ceb7e4d56dbb",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "The lighting paper and transcript support the final scene wording.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The studio’s lighting paper explicitly locates Elsa’s Show Yourself in Ahtohallan.",
+        "sources": [
+          "b29-show",
+          "b29-frozen-scenes"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Show Yourself is the Ahtohallan number.",
+          "sources": [
+            "b29-show",
+            "b29-frozen-scenes"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Into the Unknown is the earlier voice-summons song in Arendelle.",
+          "sources": [
+            "b29-show",
+            "b29-frozen-scenes"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Let It Go is the original film’s mountain solo.",
+          "sources": [
+            "b29-show",
+            "b29-frozen-scenes"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "All Is Found is Iduna’s lullaby, echoed in the Ahtohallan sequence but not the title of Elsa’s principal number.",
+          "sources": [
+            "b29-show",
+            "b29-frozen-scenes"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All Is Found is thematically and musically recalled, but the studio explicitly names the main Ahtohallan song Show Yourself. Removed the literal mother’s-spirit encounter interpretation."
+      }
+    },
+    {
+      "questionId": 1601,
+      "hash": "f687595ee537290f2c141e00c083907e053d190dc912be942e6d24fd1ef1e5a6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from the later Weezer-cover question: film number versus cover artist.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Kristoff has an 80s-style solo with reindeer harmonies.",
+        "sources": [
+          "b29-frozen-rock",
+          "b29-frozen-music",
+          "b29-frozen-chorus",
+          "b29-frozen-scenes"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Lost in the Woods is the ballad with the reindeer chorus.",
+          "sources": [
+            "b29-frozen-rock",
+            "b29-frozen-music",
+            "b29-frozen-chorus",
+            "b29-frozen-scenes"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Reindeer(s) Are Better Than People is the short separate comic number, not the power ballad.",
+          "sources": [
+            "b29-frozen-rock",
+            "b29-frozen-music",
+            "b29-frozen-chorus",
+            "b29-frozen-scenes"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Fixer Upper is the original film’s troll matchmaking ensemble.",
+          "sources": [
+            "b29-frozen-rock",
+            "b29-frozen-music",
+            "b29-frozen-chorus",
+            "b29-frozen-scenes"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "In Summer is Olaf’s original-film fantasy.",
+          "sources": [
+            "b29-frozen-rock",
+            "b29-frozen-music",
+            "b29-frozen-chorus",
+            "b29-frozen-scenes"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Kristoff also sings Reindeer(s), but the ballad and chorus identify the longer distinct number. Raised difficulty after removing the extra catch-up clause."
+      }
+    },
+    {
+      "questionId": 1602,
+      "hash": "1fa58f78e8272e61f8f58470d140ae4908e272ae7a9cd1f4ff55e59d4f5e623a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Corrected the prior timing error; renewed review after the manual concern.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Olaf’s farewell and disappearance precede Anna’s cave song.",
+        "sources": [
+          "b29-frozen-scenes",
+          "b29-anna-song"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Next Right Thing is Anna’s grieving cave solo.",
+          "sources": [
+            "b29-frozen-scenes",
+            "b29-anna-song"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Show Yourself belongs to Elsa at Ahtohallan.",
+          "sources": [
+            "b29-frozen-scenes",
+            "b29-anna-song"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Some Things Never Change is the early ensemble before the journey.",
+          "sources": [
+            "b29-frozen-scenes",
+            "b29-anna-song"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "When I Am Older belongs to Olaf in the forest.",
+          "sources": [
+            "b29-frozen-scenes",
+            "b29-anna-song"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked literal before/after timing: the farewell is 1202–1227; Anna’s solo begins at 1230. No distractor is the post-disappearance cave song."
+      }
+    },
+    {
+      "questionId": 1603,
+      "hash": "9684c33acdb78e2263d6b9f2469e4f7bacacf2bcd496831409c6aed6f65015d8",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed complete topic/comparison context, final wording, option balance, category, difficulty and theatrical/secondary scope; distinct fact retained.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Magnifico’s underappreciated villain number is separately named in production notes.",
+        "sources": [
+          "b29-wish-songs"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "This Is the Thanks I Get?! is his villain solo.",
+          "sources": [
+            "b29-wish-songs"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "At All Costs is the earlier duet celebrating the wishes.",
+          "sources": [
+            "b29-wish-songs"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Knowing What I Know Now is the heroes’ uprising song.",
+          "sources": [
+            "b29-wish-songs"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Welcome to Rosas introduces the kingdom.",
+          "sources": [
+            "b29-wish-songs"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "At All Costs also includes Magnifico, but its observatory duet context excludes the rages-at-questioning scene."
+      }
+    },
+    {
+      "questionId": 1604,
+      "hash": "cc6a75547a6b40f0313a2283dcba3210dc208c322cd65348a998b3fb1c69b907",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Used institutional creature identification and record listing with explicit secondary scene corroboration.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pooh dreams of Heffalumps and Woozles during the Blustery Day sequence included in Many Adventures.",
+        "sources": [
+          "b29-pooh-nightmare",
+          "b29-pooh-song",
+          "b29-pooh-album"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Heffalumps and Woozles names and accompanies the nightmare creatures.",
+          "sources": [
+            "b29-pooh-nightmare",
+            "b29-pooh-song",
+            "b29-pooh-album"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "The Wonderful Thing About Tiggers is Tigger’s introduction, not the nightmare number.",
+          "sources": [
+            "b29-pooh-nightmare",
+            "b29-pooh-song",
+            "b29-pooh-album"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Rumbly in My Tumbly concerns Pooh’s hunger, not the nightmare creatures.",
+          "sources": [
+            "b29-pooh-nightmare",
+            "b29-pooh-song",
+            "b29-pooh-album"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "A Rather Blustery Day concerns the windy day, not the dream’s creature song.",
+          "sources": [
+            "b29-pooh-nightmare",
+            "b29-pooh-song",
+            "b29-pooh-album"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The compilation includes the earlier featurette’s nightmare; its framing does not turn another listed song into that dream number."
+      }
+    },
+    {
+      "questionId": 1605,
+      "hash": "d6864d94b456e51c7678c62c8a58bb5c537051d176d650b642b95538ca9a645e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed complete topic/comparison context, final wording, option balance, category, difficulty and theatrical/secondary scope; distinct fact retained.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney’s DVD music-video credits identify the Rob Thomas song.",
+        "sources": [
+          "b29-robinsons",
+          "b29-robinsons-track"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Little Wonders is the Rob Thomas track.",
+          "sources": [
+            "b29-robinsons",
+            "b29-robinsons-track"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Keep Moving Forward is not the credited Rob Thomas soundtrack song.",
+          "sources": [
+            "b29-robinsons",
+            "b29-robinsons-track"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Look to the Future is not the Rob Thomas soundtrack title.",
+          "sources": [
+            "b29-robinsons",
+            "b29-robinsons-track"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "The Family Song is not the Rob Thomas soundtrack title.",
+          "sources": [
+            "b29-robinsons",
+            "b29-robinsons-track"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The named recording is unique; removed the montage/end-credit placement claim so bonus-video metadata is not used as scene evidence."
+      }
+    },
+    {
+      "questionId": 1606,
+      "hash": "48015dc0f79dbc3e87b44484717c5e609ac05a7e144eb021130bd498ba9b077f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed complete topic/comparison context, final wording, option balance, category, difficulty and theatrical/secondary scope; distinct fact retained.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "D23 explicitly links Higitus Figitus to magical carpetbag packing.",
+        "sources": [
+          "b29-merlin"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Higitus Figitus is the packing song.",
+          "sources": [
+            "b29-merlin"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The separately named World Go Round number is not the uniquely identified packing song.",
+          "sources": [
+            "b29-merlin"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A Most Befuddling Thing is a separate listed song, not the packing number.",
+          "sources": [
+            "b29-merlin"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Legend of the Sword is not the song D23 identifies for packing.",
+          "sources": [
+            "b29-merlin"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The source directly names the carpetbag action and title, excluding other song titles without inferring from a generic film page."
+      }
+    },
+    {
+      "questionId": 1607,
+      "hash": "f07f73995809e014d95dcd99c42cbbb1702f314c0887e9fe61bd2a204f524236",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Shared Eisner answer retained as separate historical event.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Eisner’s Disney CEO tenure spans 1984–2005.",
+        "sources": [
+          "b29-eisner",
+          "b29-eisner-cor",
+          "b29-iger"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Michael Eisner held the specified tenure.",
+          "sources": [
+            "b29-eisner",
+            "b29-eisner-cor",
+            "b29-iger"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Iger succeeded him in 2005.",
+          "sources": [
+            "b29-eisner",
+            "b29-eisner-cor",
+            "b29-iger"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Michael Ovitz cannot be the CEO for Eisner’s exclusive named tenure.",
+          "sources": [
+            "b29-eisner",
+            "b29-eisner-cor",
+            "b29-iger"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Wells was a separate president, whose death preceded Eisner also assuming that role.",
+          "sources": [
+            "b29-eisner",
+            "b29-eisner-cor",
+            "b29-iger"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The dates distinguish the CEO from company presidents. The 2003 Save Disney question tests a specific campaign target, not the entire tenure."
+      }
+    },
+    {
+      "questionId": 1608,
+      "hash": "5f5586d24fa04784c3505208d1b3510f03bbc5001b9490f59b924df228f2889e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed complete topic/comparison context, final wording, option balance, category, difficulty and theatrical/secondary scope; distinct fact retained.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney completed the Marvel acquisition in 2009.",
+        "sources": [
+          "b29-marvel",
+          "b29-marvel-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Completion is dated December 31, 2009.",
+          "sources": [
+            "b29-marvel",
+            "b29-marvel-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2006 is not the dated completion year.",
+          "sources": [
+            "b29-marvel",
+            "b29-marvel-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2012 is not the dated completion year.",
+          "sources": [
+            "b29-marvel",
+            "b29-marvel-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2015 is not the dated completion year.",
+          "sources": [
+            "b29-marvel",
+            "b29-marvel-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Announcement versus completion cannot create another answer: both occurred in 2009; independently checked Disney press release and archive."
+      }
+    },
+    {
+      "questionId": 1609,
+      "hash": "6fbf9e7009ee88424575eb5a2ed2589b59da9650438504b20aa6173825a89b01",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed complete topic/comparison context, final wording, option balance, category, difficulty and theatrical/secondary scope; distinct fact retained.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Lucasfilm acquisition occurred in 2012.",
+        "sources": [
+          "b29-lucas",
+          "b29-lucas-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Both agreement and completion are in 2012.",
+          "sources": [
+            "b29-lucas",
+            "b29-lucas-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2009 predates the 2012 acquisition.",
+          "sources": [
+            "b29-lucas",
+            "b29-lucas-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2015 is a later film-release year, not acquisition.",
+          "sources": [
+            "b29-lucas",
+            "b29-lucas-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2006 is not the 2012 acquisition year.",
+          "sources": [
+            "b29-lucas",
+            "b29-lucas-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Announcement and completion are both 2012. Cars Land and Grizzly Gulch merely share the year; they test different events."
+      }
+    },
+    {
+      "questionId": 1610,
+      "hash": "b8e29dae3c9c73612519f3cafeedb8675966ad82831032e2f5fdc55bc78fea09",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed complete topic/comparison context, final wording, option balance, category, difficulty and theatrical/secondary scope; distinct fact retained.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The two Walk of Fame records share the 1960 ceremony date.",
+        "sources": [
+          "b29-stars",
+          "b29-stars-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "exhaustive-list",
+          "reason": "Two category/address records are listed for 1960.",
+          "sources": [
+            "b29-stars",
+            "b29-stars-cor"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "One undercounts the two entries.",
+          "sources": [
+            "b29-stars",
+            "b29-stars-cor"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Three exceeds the two 1960 honors.",
+          "sources": [
+            "b29-stars",
+            "b29-stars-cor"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "None contradicts both dated records.",
+          "sources": [
+            "b29-stars",
+            "b29-stars-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Counted distinct addresses/categories, not webpages or ceremonies. Historical dating avoids an unbounded present count and removes the answer’s explanatory length clue."
+      }
+    },
+    {
+      "questionId": 1611,
+      "hash": "9e742a7a3c6bea00578fcc1545eb6d464989558a89623e4a7106a57684a75655",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Replaced the prohibited real-show title question with Walt’s historical business partnership; scope decision explicit.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney changed from ABC to NBC for his 1961 color broadcasts.",
+        "sources": [
+          "b29-nbc",
+          "b29-nbc-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "NBC is the new partner in 1961.",
+          "sources": [
+            "b29-nbc",
+            "b29-nbc-cor"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "ABC is the prior partner that he left.",
+          "sources": [
+            "b29-nbc",
+            "b29-nbc-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "CBS is not the named recipient of the 1961 move.",
+          "sources": [
+            "b29-nbc",
+            "b29-nbc-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "DuMont is not the named recipient of the 1961 move.",
+          "sources": [
+            "b29-nbc",
+            "b29-nbc-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The 1954 Disneyland financing partner was ABC, a distinct transaction. This asks the 1961 business/network transition, not a television title, episode or cast fact."
+      }
+    },
+    {
+      "questionId": 1612,
+      "hash": "3a52e8961f644d8a7b1ce226cfb7d6013e8e591f0f5506506d61868cc78a0dcf",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed complete topic/comparison context, final wording, option balance, category, difficulty and theatrical/secondary scope; distinct fact retained.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Iger succeeded Eisner in 2005 and oversaw the named acquisitions.",
+        "sources": [
+          "b29-iger",
+          "b29-iger-deals",
+          "b29-eisner"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Bob Iger is the named successor.",
+          "sources": [
+            "b29-iger",
+            "b29-iger-deals",
+            "b29-eisner"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Eisner is the departing CEO.",
+          "sources": [
+            "b29-iger",
+            "b29-iger-deals",
+            "b29-eisner"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Roy E. Disney is not the named 2005 successor.",
+          "sources": [
+            "b29-iger",
+            "b29-iger-deals",
+            "b29-eisner"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Michael Ovitz is not the named 2005 successor.",
+          "sources": [
+            "b29-iger",
+            "b29-iger-deals",
+            "b29-eisner"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The historical start year remains valid regardless of later CEO changes. Marvel and Lucasfilm deal years are separate from this executive identity."
+      }
+    },
+    {
+      "questionId": 1614,
+      "hash": "218f3caa75bf027857c9d30f398cd0ab25a0c7cc8eeaa8afd3d69ed90b86f8ea",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed complete topic/comparison context, final wording, option balance, category, difficulty and theatrical/secondary scope; distinct fact retained.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The ship’s announced and debut overall theme is heroes and villains.",
+        "sources": [
+          "b29-destiny-theme"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Heroes & Villains is the stated ship-wide theme.",
+          "sources": [
+            "b29-destiny-theme"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pirates & Princesses is not the stated overall theme, even though pirate events exist.",
+          "sources": [
+            "b29-destiny-theme"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Adventurers & Explorers is not the stated overall theme.",
+          "sources": [
+            "b29-destiny-theme"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Legends & Lore is not the stated overall theme.",
+          "sources": [
+            "b29-destiny-theme"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Presence of pirate events or adventure language does not make them the official overarching theme; final wording asks the 2025 design choice."
+      }
+    },
+    {
+      "questionId": 1615,
+      "hash": "18ef0426d07e721df90443b84a2bbea6a72ab8c9f6dfb48f4e2f28cf6d5101ee",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed complete topic/comparison context, final wording, option balance, category, difficulty and theatrical/secondary scope; distinct fact retained.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Grand Hall’s Black Panther inspiration is Wakanda.",
+        "sources": [
+          "b29-destiny-theme"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Wakanda is the named fictional nation.",
+          "sources": [
+            "b29-destiny-theme"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sokovia is not the named Grand Hall inspiration.",
+          "sources": [
+            "b29-destiny-theme"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Genovia is not the named Grand Hall inspiration.",
+          "sources": [
+            "b29-destiny-theme"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Zamunda is not the named Grand Hall inspiration.",
+          "sources": [
+            "b29-destiny-theme"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Specified fictional nation and historical debut. The general ship theme, Grand Hall nation and Tower Suite hero are three distinct design facts."
+      }
+    },
+    {
+      "questionId": 1616,
+      "hash": "1a1fc6f57ebb0c90955605d085af3689f6732a1f8df1c7631504d5f0ead6fe8f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed complete topic/comparison context, final wording, option balance, category, difficulty and theatrical/secondary scope; distinct fact retained.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-06",
+      "premise": {
+        "reason": "The current ship page identifies the musical Simba dining experience.",
+        "sources": [
+          "b29-destiny-dining"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Pride Lands: Feast of The Lion King is the advertised restaurant.",
+          "sources": [
+            "b29-destiny-dining"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Simba’s Savanna Table is not its advertised name.",
+          "sources": [
+            "b29-destiny-dining"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pride Rock Kitchen is not its advertised name.",
+          "sources": [
+            "b29-destiny-dining"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Circle of Life Dining is not its advertised name.",
+          "sources": [
+            "b29-destiny-dining"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All options evoke the same story. Removed literal Lion King wording from the stem so the correct restaurant is not picked by title repetition."
+      }
+    },
+    {
+      "questionId": 1617,
+      "hash": "7b41d83b0ef97209f3c38fa434920a65c98b9571bdb326b2d28829bee5b0b46d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed complete topic/comparison context, final wording, option balance, category, difficulty and theatrical/secondary scope; distinct fact retained.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-06",
+      "premise": {
+        "reason": "The ship page identifies its exclusive Disney Hercules stage show.",
+        "sources": [
+          "b29-destiny-show"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney Hercules is the named exclusive show.",
+          "sources": [
+            "b29-destiny-show"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fantasia is not the named exclusive show.",
+          "sources": [
+            "b29-destiny-show"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Odyssey is not the named exclusive show.",
+          "sources": [
+            "b29-destiny-show"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Aladdin is not the named exclusive show.",
+          "sources": [
+            "b29-destiny-show"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other productions can share the theater, but the source singles out this exclusive musical. Removed the Greek-mythology clue and used the full title."
+      }
+    },
+    {
+      "questionId": 1618,
+      "hash": "e32902feaa1419a144bc0f422b853196ded20e72d8e4f9330bba5445dc5e00c3",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed complete topic/comparison context, final wording, option balance, category, difficulty and theatrical/secondary scope; distinct fact retained.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The three sister ships were designed for LNG power.",
+        "sources": [
+          "b29-lng",
+          "b29-lng-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Liquefied natural gas is named for all three.",
+          "sources": [
+            "b29-lng",
+            "b29-lng-cor"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Biodiesel is not the stated design fuel.",
+          "sources": [
+            "b29-lng",
+            "b29-lng-cor"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Hydrogen is not the stated design fuel.",
+          "sources": [
+            "b29-lng",
+            "b29-lng-cor"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Nuclear fuel is not the stated design fuel.",
+          "sources": [
+            "b29-lng",
+            "b29-lng-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Dual-fuel capability does not make biodiesel, hydrogen or nuclear the shared named design fuel. Removed broad emissions superiority language and matched fuel-type option forms."
+      }
+    },
+    {
+      "questionId": 1619,
+      "hash": "c7bf73bf48c1f4dd833cb416b91510251fdb119264f02fecea6cc563068431a2",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed complete topic/comparison context, final wording, option balance, category, difficulty and theatrical/secondary scope; distinct fact retained.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Tower Suite’s 2025 design honors Iron Man.",
+        "sources": [
+          "b29-destiny-suites",
+          "b29-destiny-theme"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Iron Man/Tony Stark is the named suite inspiration.",
+          "sources": [
+            "b29-destiny-suites",
+            "b29-destiny-theme"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Captain America is not this suite’s named inspiration.",
+          "sources": [
+            "b29-destiny-suites",
+            "b29-destiny-theme"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Thor is not this suite’s named inspiration.",
+          "sources": [
+            "b29-destiny-suites",
+            "b29-destiny-theme"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Black Panther inspires the Grand Hall instead.",
+          "sources": [
+            "b29-destiny-suites",
+            "b29-destiny-theme"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished the Tower Suite from the Grand Hall and other suites; dropped the potentially disputable top-tier ranking."
+      }
+    },
+    {
+      "questionId": 1620,
+      "hash": "aa7904fadddb2ec6d8057b0b91fa5701ad3d2b08ec33ecd63ef11b6d596efce1",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed complete topic/comparison context, final wording, option balance, category, difficulty and theatrical/secondary scope; distinct fact retained.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Adventure’s maiden Singapore voyage is documented March 10, 2026.",
+        "sources": [
+          "b29-adventure-debut",
+          "b29-adventure-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "2026 is the actual departure year.",
+          "sources": [
+            "b29-adventure-debut",
+            "b29-adventure-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2024 is not the maiden-service year.",
+          "sources": [
+            "b29-adventure-debut",
+            "b29-adventure-cor"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "2025 was an earlier plan, not the actual maiden-service year.",
+          "sources": [
+            "b29-adventure-debut",
+            "b29-adventure-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2027 is later than the documented debut.",
+          "sources": [
+            "b29-adventure-debut",
+            "b29-adventure-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Used the departure-day report rather than the superseded 2025 schedule; independently corroborated the launch year."
+      }
+    },
+    {
+      "questionId": 1621,
+      "hash": "7464dc76f6bb46206d6d2eae7247ab4617859abeaaf43ebd391424f1dd4831b7",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed complete topic/comparison context, final wording, option balance, category, difficulty and theatrical/secondary scope; distinct fact retained.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney calls Adventure its first Asia-based cruise ship.",
+        "sources": [
+          "b29-adventure-debut",
+          "b29-adventure-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Asia is the continent of this first regional homeport deployment.",
+          "sources": [
+            "b29-adventure-debut",
+            "b29-adventure-cor"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Europe is not the region named for Adventure’s debut.",
+          "sources": [
+            "b29-adventure-debut",
+            "b29-adventure-cor"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "South America is not the named region.",
+          "sources": [
+            "b29-adventure-debut",
+            "b29-adventure-cor"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Africa is not the named region.",
+          "sources": [
+            "b29-adventure-debut",
+            "b29-adventure-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Earlier temporary Asia visits or a European building yard do not change the first homebased deployment. Removed Singapore in the stem to avoid a simple city-to-continent giveaway."
+      }
+    },
+    {
+      "questionId": 1622,
+      "hash": "8f266f39255de8597f45b3eea6ba8e61abdd437df53073b5a1971094f53e2901",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed complete topic/comparison context, final wording, option balance, category, difficulty and theatrical/secondary scope; distinct fact retained.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The inaugural short Singapore voyages are round trips without port calls.",
+        "sources": [
+          "b29-adventure-debut",
+          "b29-adventure-nostops",
+          "b29-cruise-nowhere"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Cruises to nowhere is the itinerary term for a round trip with only sea days.",
+          "sources": [
+            "b29-adventure-debut",
+            "b29-adventure-nostops",
+            "b29-cruise-nowhere"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "World cruises travel a global multi-destination itinerary, unlike these short sea-only trips.",
+          "sources": [
+            "b29-adventure-debut",
+            "b29-adventure-nostops",
+            "b29-cruise-nowhere"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Repositioning cruises move between homeports, unlike the specified round trips.",
+          "sources": [
+            "b29-adventure-debut",
+            "b29-adventure-nostops",
+            "b29-cruise-nowhere"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Transatlantic crossings cross the Atlantic, not a Singapore sea-only round trip.",
+          "sources": [
+            "b29-adventure-debut",
+            "b29-adventure-nostops",
+            "b29-cruise-nowhere"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A transit/repositioning voyage before Singapore service is outside the explicitly inaugural Singapore round-trip scope. Historical wording avoids assuming future schedules never add stops."
+      }
+    },
+    {
+      "questionId": 1623,
+      "hash": "54498543984df710a7840d11e7f7d8b35bc9def1e84087d55d256ad28b9587d9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed complete topic/comparison context, final wording, option balance, category, difficulty and theatrical/secondary scope; distinct fact retained.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney identifies the trackless Zootopia attraction and December 2023 debut.",
+        "sources": [
+          "b29-hotpursuit"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Zootopia: Hot Pursuit is the named ride.",
+          "sources": [
+            "b29-hotpursuit"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Zootopia Speedway is not the ride’s name.",
+          "sources": [
+            "b29-hotpursuit"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wild Chase Adventure is not its name.",
+          "sources": [
+            "b29-hotpursuit"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Predator Pursuit is not its name.",
+          "sources": [
+            "b29-hotpursuit"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "This tests the attraction name; land opening-date and first-land questions elsewhere test additional facts. Historical wording avoids a current operating-status claim."
+      }
+    },
+    {
+      "questionId": 1624,
+      "hash": "041ebbe671fe098ebf6aa3b64544a6c11f768defacb166a37655363e5ac55143",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed complete topic/comparison context, final wording, option balance, category, difficulty and theatrical/secondary scope; distinct fact retained.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The opening-day release names Riviera Resort and its European-travel inspiration.",
+        "sources": [
+          "b29-riviera"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney’s Riviera Resort is the named December 2019 opening.",
+          "sources": [
+            "b29-riviera"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "BoardWalk Inn is not the named new resort in the opening-day announcement.",
+          "sources": [
+            "b29-riviera"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Beach Club is not the new resort named in that announcement.",
+          "sources": [
+            "b29-riviera"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Coronado Springs is not the new European-travel resort named in that announcement.",
+          "sources": [
+            "b29-riviera"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Coronado had a new tower in 2019, but the question specifies a hotel opening and the European-travel inspiration; the release names Riviera. Removed Riviera from the stem and the extra ongoing Skyliner claim."
+      }
+    },
+    {
+      "questionId": 2002,
+      "hash": "4d2bcc96f9a795966dd8c91063d9261d3b68dff582662dceef6d7e3ae08ecd10",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Corrected the false location premise.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Chuckles recounts the backstory at Bonnie’s house.",
+        "sources": [
+          "b29-toy3",
+          "b29-toy3-cor",
+          "b29-toy3-place"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Chuckles tells the story.",
+          "sources": [
+            "b29-toy3",
+            "b29-toy3-cor",
+            "b29-toy3-place"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Big Baby is in the backstory and remains with Lotso, not its narrator at Bonnie’s.",
+          "sources": [
+            "b29-toy3",
+            "b29-toy3-cor",
+            "b29-toy3-place"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Ken remains at Sunnyside and is not this narrator.",
+          "sources": [
+            "b29-toy3",
+            "b29-toy3-cor",
+            "b29-toy3-place"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Buzz remains among the daycare toys and is not this narrator.",
+          "sources": [
+            "b29-toy3",
+            "b29-toy3-cor",
+            "b29-toy3-place"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked location: Chuckles formerly lived at Sunnyside but Bonnie took him home. The conversation is at Bonnie’s; removed the clown qualifier to keep all toy options plausible."
+      }
+    },
+    {
+      "questionId": 2003,
+      "hash": "a9b2fd19e23ce38541ec8b734bd582963cc91eb3ccc2cdfa505bd21ab40b37de",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed complete topic/comparison context, final wording, option balance, category, difficulty and theatrical/secondary scope; distinct fact retained.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar names the miniature police officer as Bo’s best friend.",
+        "sources": [
+          "b29-toy4-giggle"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Giggle McDimples is the named officer friend.",
+          "sources": [
+            "b29-toy4-giggle"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Officer Sparkle is not that character’s name.",
+          "sources": [
+            "b29-toy4-giggle"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Deputy Doll is not that character’s name.",
+          "sources": [
+            "b29-toy4-giggle"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tiny Trudy is not that character’s name.",
+          "sources": [
+            "b29-toy4-giggle"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The studio describes shoulder-perching, not the asserted pocket habit. Removed that unsupported detail; no option is another accepted alias."
+      }
+    },
+    {
+      "questionId": 2004,
+      "hash": "12a2ae09d8d71e0e396ca9595133a9c58fbc30d061026a1722c29cd6fc7c5c0d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed complete topic/comparison context, final wording, option balance, category, difficulty and theatrical/secondary scope; distinct fact retained.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The studio identifies Ducky and Bunny as carnival prizes joining the adventure.",
+        "sources": [
+          "b29-toy4-prizes"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Ducky and Bunny are the named pair.",
+          "sources": [
+            "b29-toy4-prizes"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Salt and Pepper are not the pair’s names.",
+          "sources": [
+            "b29-toy4-prizes"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lefty and Righty are not the pair’s names.",
+          "sources": [
+            "b29-toy4-prizes"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Winky and Blinky are not the pair’s names.",
+          "sources": [
+            "b29-toy4-prizes"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The group is an exact two-name identity; removed unneeded county-fair specificity. No related question tests this pair."
+      }
+    },
+    {
+      "questionId": 2005,
+      "hash": "7e04f5c938e724281fe2148d7627f2c138e02b72d74bb64674392b72310c4acb",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Narrowed the asked limitation and replaced unsupported simultaneous-trait distractors.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Duke can ride and pose, but his performance falls short of his commercial.",
+        "sources": [
+          "b29-toy4-duke"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "His admitted limitation is inability to perform the advertised stunts.",
+          "sources": [
+            "b29-toy4-duke"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "The profile explicitly has him riding his powerful stunt-cycle.",
+          "sources": [
+            "b29-toy4-duke"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "The profile explicitly says he confidently performs stunt poses.",
+          "sources": [
+            "b29-toy4-duke"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "The profile identifies him as a Canadian stuntman toy.",
+          "sources": [
+            "b29-toy4-duke"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed afraid-of-heights because it could coexist with insecurity and was not excluded by commercial failure alone. Each final alternative now contradicts a positive studio detail."
+      }
+    },
+    {
+      "questionId": 2006,
+      "hash": "af7f2035dd0daa5c1a82909cd9bfdfb9bd7941f1820c29b91ecc075978e3e0d5",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed complete topic/comparison context, final wording, option balance, category, difficulty and theatrical/secondary scope; distinct fact retained.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar names Benson as the lead dummy.",
+        "sources": [
+          "b29-toy4-benson"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Benson leads the dummy henchmen.",
+          "sources": [
+            "b29-toy4-benson"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Woody is the cowboy sheriff.",
+          "sources": [
+            "b29-toy4-benson"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Duke Caboom is the stuntman toy.",
+          "sources": [
+            "b29-toy4-benson"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Combat Carl is an action figure among the lost toys.",
+          "sources": [
+            "b29-toy4-benson"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Used the named individual leader rather than treating Bensons as an attested collective name; removed the unnecessary night-only patrol detail."
+      }
+    },
+    {
+      "questionId": 2007,
+      "hash": "6a34bb25e1b8482eadc68f387b69ef2ef1429a0ed375915aa5148eb66a7de042",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Secondary-film coverage remains modest: six questions in this title including the related pride-name question.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Kiara is Simba and Nala’s daughter.",
+        "sources": [
+          "b29-lion2",
+          "b29-lion2-family"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Kiara is the daughter named by the archive and cast/plot.",
+          "sources": [
+            "b29-lion2",
+            "b29-lion2-family"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Vitani is Zira’s daughter and Kovu’s sibling.",
+          "sources": [
+            "b29-lion2",
+            "b29-lion2-family"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Zira is Kovu’s mother and the rival pride leader.",
+          "sources": [
+            "b29-lion2",
+            "b29-lion2-family"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kula is not the archive’s named daughter.",
+          "sources": [
+            "b29-lion2",
+            "b29-lion2-family"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Original and sequel generation names are distinct; the listed alternatives cannot be alternate names for Simba’s daughter."
+      }
+    },
+    {
+      "questionId": 2008,
+      "hash": "465e35e129c0611a956aa183dd0e32e920d0654d135ec0f583a6a7458da9454a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed complete topic/comparison context, final wording, option balance, category, difficulty and theatrical/secondary scope; distinct fact retained.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Kiara’s romantic partner is Kovu of the exiled pride.",
+        "sources": [
+          "b29-lion2",
+          "b29-lion2-family"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Kovu is her named romantic partner.",
+          "sources": [
+            "b29-lion2",
+            "b29-lion2-family"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Nuka is Kovu’s older sibling, not Kiara’s partner.",
+          "sources": [
+            "b29-lion2",
+            "b29-lion2-family"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Scar is the deceased predecessor whose loyalists formed the exiled pride.",
+          "sources": [
+            "b29-lion2",
+            "b29-lion2-family"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Zazu is the royal hornbill.",
+          "sources": [
+            "b29-lion2",
+            "b29-lion2-family"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Only Kovu satisfies the romance and upbringing clauses; Kiara’s own name question does not establish her partner’s name."
+      }
+    },
+    {
+      "questionId": 2010,
+      "hash": "1f99a68c9b5e11341477fb44a80904b525ff9ce9e62a777c0b68fec87fd0450e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed complete topic/comparison context, final wording, option balance, category, difficulty and theatrical/secondary scope; distinct fact retained.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The cast and plot identify Nuka and Vitani as Kovu’s siblings.",
+        "sources": [
+          "b29-lion2-family",
+          "b29-lion2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "exhaustive-list",
+          "reason": "Nuka and Vitani are the named siblings.",
+          "sources": [
+            "b29-lion2-family",
+            "b29-lion2"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Timon and Pumbaa are Simba’s companions, not these siblings.",
+          "sources": [
+            "b29-lion2-family",
+            "b29-lion2"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Shenzi and Banzai are hyenas, not Kovu’s siblings.",
+          "sources": [
+            "b29-lion2-family",
+            "b29-lion2"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Simba and Taka are not the named sibling pair.",
+          "sources": [
+            "b29-lion2-family",
+            "b29-lion2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Family relationship is separate from their other narrative roles. Checked all members of each pair rather than matching one familiar name."
+      }
+    },
+    {
+      "questionId": 2011,
+      "hash": "0999b29bf2ad1bf333f70048a97debd686d851794fcc2047b7d968da7956a094",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Primary filmmaker statement was unavailable; secondary plot attribution is corroborated by a contemporary review. No direct filmmaker quotation claimed.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Romeo and Juliet parallel is attested in the film overview and contemporary criticism.",
+        "sources": [
+          "b29-lion2-romance",
+          "b29-lion2-romance-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Romeo and Juliet supplies the feuding-families romance parallel.",
+          "sources": [
+            "b29-lion2-romance",
+            "b29-lion2-romance-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A Midsummer Night’s Dream is not the attested central-romance source.",
+          "sources": [
+            "b29-lion2-romance",
+            "b29-lion2-romance-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Macbeth is not the attested central-romance source.",
+          "sources": [
+            "b29-lion2-romance",
+            "b29-lion2-romance-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Tempest is not the attested central-romance source.",
+          "sources": [
+            "b29-lion2-romance",
+            "b29-lion2-romance-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "This concerns the central romance, not whether another Shakespeare theme can be compared to a scene. Removed the extra Hamlet claim about the first film."
+      }
+    },
+    {
+      "questionId": 2013,
+      "hash": "3bda466813d0cf885987553c4476d9cd5f0e608d2fc3e5b9a0a948d8ab3d7002",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed complete topic/comparison context, final wording, option balance, category, difficulty and theatrical/secondary scope; distinct fact retained.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Iago’s final intervention sends the lamp into lava.",
+        "sources": [
+          "b29-return",
+          "b29-return-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Iago kicks the lamp into the lava despite his injury.",
+          "sources": [
+            "b29-return",
+            "b29-return-cor"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Abu is not the actor of that final kick.",
+          "sources": [
+            "b29-return",
+            "b29-return-cor"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Carpet is shattered until Jafar’s destruction reverses the magic.",
+          "sources": [
+            "b29-return",
+            "b29-return-cor"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "The Sultan is not the actor of the lamp-destroying action.",
+          "sources": [
+            "b29-return",
+            "b29-return-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Unlike the old former-sidekick wording, the final question requires a new sequel action, not merely recalling Iago’s original-film identity. Checked the distinct lava action against the earlier well disposal."
+      }
+    },
+    {
+      "questionId": 2014,
+      "hash": "ac986c5a5d68dc8d1ccbc798a62a31973e792998dc338f991a2068be18c30e18",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed complete topic/comparison context, final wording, option balance, category, difficulty and theatrical/secondary scope; distinct fact retained.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Aladdin identifies Cassim as his father in the thieves’ hideout.",
+        "sources": [
+          "b29-king3",
+          "b29-king3-dialogue"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Cassim is his father.",
+          "sources": [
+            "b29-king3",
+            "b29-king3-dialogue"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "The Sultan is Jasmine’s father, not Aladdin’s.",
+          "sources": [
+            "b29-king3",
+            "b29-king3-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fasir is not the father named in the reveal.",
+          "sources": [
+            "b29-king3",
+            "b29-king3-dialogue"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Sa’luk is Cassim’s rival, not Aladdin’s father.",
+          "sources": [
+            "b29-king3",
+            "b29-king3-dialogue"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished Cassim’s father identity from his job as thief leader; the paired job question does not supply Cassim’s name."
+      }
+    },
+    {
+      "questionId": 2015,
+      "hash": "b3365e58681613b4f6eec8ad291ccfa91cadba9dbbff6e83e5e4d1e72806c694",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Replaced distractors to remove the title-word giveaway.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Cassim leads the group explicitly called Forty Thieves.",
+        "sources": [
+          "b29-king3",
+          "b29-king3-primary"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Forty Thieves is the group’s proper name.",
+          "sources": [
+            "b29-king3",
+            "b29-king3-primary"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Thirty Thieves is not the name.",
+          "sources": [
+            "b29-king3",
+            "b29-king3-primary"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Sixty Thieves is not the name.",
+          "sources": [
+            "b29-king3",
+            "b29-king3-primary"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Fourteen Thieves is not the name.",
+          "sources": [
+            "b29-king3",
+            "b29-king3-primary"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The film title gives thieves but not the number; every final option shares Thieves. This asks the proper name, not the number still free after arrests, which is smaller."
+      }
+    },
+    {
+      "questionId": 2016,
+      "hash": "1af5041e907999921e835f14ca3eebbc0d01f80b4af44f784e6611d5b8775d6d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed complete topic/comparison context, final wording, option balance, category, difficulty and theatrical/secondary scope; distinct fact retained.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Sa’luk betrays Cassim and takes control of the remaining thieves.",
+        "sources": [
+          "b29-king3",
+          "b29-king3-dialogue"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Sa’luk is the usurper and final antagonist.",
+          "sources": [
+            "b29-king3",
+            "b29-king3-dialogue"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Jafar is the earlier films’ villain, not this usurper.",
+          "sources": [
+            "b29-king3",
+            "b29-king3-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mozenrath is not the named usurper in this film.",
+          "sources": [
+            "b29-king3",
+            "b29-king3-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Abis Mal is not the usurper of Cassim’s group.",
+          "sources": [
+            "b29-king3",
+            "b29-king3-dialogue"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The subject is the film’s criminal leadership conflict, not who was a franchise villain generally. The named takeover and final confrontation identify Sa’luk."
+      }
+    },
+    {
+      "questionId": 2017,
+      "hash": "2f7bf86ddcc3512e603a33975ddafa9914ec4e6e2d2ebc487e77cf0bbbe44e32",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reviewed complete topic/comparison context, final wording, option balance, category, difficulty and theatrical/secondary scope; distinct fact retained.",
+      "context": "Final stored wording and four options; exact film/version or dated historical/ship context in the stem.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The thieves seek the gold-making Hand of Midas.",
+        "sources": [
+          "b29-king3",
+          "b29-king3-primary",
+          "b29-king3-dialogue"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Hand of Midas is the gold-making treasure.",
+          "sources": [
+            "b29-king3",
+            "b29-king3-primary",
+            "b29-king3-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Golden Scarab is not the gold-transforming treasure identified here.",
+          "sources": [
+            "b29-king3",
+            "b29-king3-primary",
+            "b29-king3-dialogue"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "The Oracle guides them to the Hand; Oracle’s Eye is not the named gold-making object.",
+          "sources": [
+            "b29-king3",
+            "b29-king3-primary",
+            "b29-king3-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Sultan’s Scepter is not the treasure named for this ability.",
+          "sources": [
+            "b29-king3",
+            "b29-king3-primary",
+            "b29-king3-dialogue"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The Oracle locates the artifact but does not itself turn touched objects to gold. Cassim and Sa’luk identities are separate from the artifact/ability fact."
+      }
+    }
+  ]
+}

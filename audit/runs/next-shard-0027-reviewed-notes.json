@@ -1,0 +1,3086 @@
+{
+  "schema": 1,
+  "reviewer": "Codex",
+  "at": "2026-11-08",
+  "sourcesChecked": [
+    "b13-tangledcatalog",
+    "b19-1014",
+    "b19-1015",
+    "b19-1019",
+    "b25-dorothea",
+    "b26-order",
+    "b27-alcoa",
+    "b27-atlantis",
+    "b27-atlantis-plot",
+    "b27-bear",
+    "b27-bear-end",
+    "b27-blizzard",
+    "b27-bolt",
+    "b27-bolt-primary",
+    "b27-coco-oscar",
+    "b27-corey",
+    "b27-cup",
+    "b27-cup-food",
+    "b27-cup-review",
+    "b27-depth",
+    "b27-encanto-lament",
+    "b27-epcot-new",
+    "b27-epcot-old",
+    "b27-frog-album",
+    "b27-frog-track",
+    "b27-frozen-history",
+    "b27-hall",
+    "b27-hall-critic",
+    "b27-imagineers",
+    "b27-john",
+    "b27-jungle",
+    "b27-jungle-profile",
+    "b27-lantern",
+    "b27-lookout",
+    "b27-lotso",
+    "b27-lotso-plot",
+    "b27-luca",
+    "b27-midship",
+    "b27-pooh",
+    "b27-ray",
+    "b27-raya",
+    "b27-remy",
+    "b27-renaissance",
+    "b27-rise",
+    "b27-roy",
+    "b27-snow-award",
+    "b27-snow-museum",
+    "b27-soul",
+    "b27-surfer",
+    "b27-table",
+    "b27-tiki",
+    "b27-tiki-history",
+    "b27-treasure",
+    "b27-up-oscar",
+    "b27-up-score",
+    "b27-walt-france",
+    "b27-yatra",
+    "b27-zone",
+    "disney-family",
+    "roy-death"
+  ],
+  "reviews": [
+    {
+      "questionId": 1435,
+      "hash": "5b636fbcc8a3c39520470fc57dd6c40559e352c3dbb7a8fdf881a06cd2a1bb9a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Rechecked whether restaurant and warrior refer to different characters: Pixar explicitly identifies the same Corey in both roles. Other names are not aliases.",
+      "context": "Onward (2020), Manticore’s restaurant.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar names the restaurant-owning Manticore Corey.",
+        "sources": [
+          "b27-corey"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Corey is the named Manticore.",
+          "sources": [
+            "b27-corey"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lyria is a different name, not the named proprietor.",
+          "sources": [
+            "b27-corey"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Blaze does not match her established name.",
+          "sources": [
+            "b27-corey"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fiara does not match her established name.",
+          "sources": [
+            "b27-corey"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Rechecked whether restaurant and warrior refer to different characters: Pixar explicitly identifies the same Corey in both roles. Other names are not aliases."
+      }
+    },
+    {
+      "questionId": 1436,
+      "hash": "593e3e80e611b5f078f9e992add3714e9df0ff68301cbe7e5b8ea72b47d18966",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Magic remains usable; loss of everyday use is different from its eradication. The final question asks the reason for that change, not why a specific spell failed.",
+      "context": "Onward’s modernization premise.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar explains that modern conveniences replaced magic and questing.",
+        "sources": [
+          "b27-corey"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Convenient technology displaced difficult magic.",
+          "sources": [
+            "b27-corey"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A legal ban is not the stated replacement mechanism.",
+          "sources": [
+            "b27-corey"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A knowledge-erasing curse conflicts with surviving spells and Corey’s history.",
+          "sources": [
+            "b27-corey"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Underground sealing is not the described social change.",
+          "sources": [
+            "b27-corey"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Magic remains usable; loss of everyday use is different from its eradication. The final question asks the reason for that change, not why a specific spell failed."
+      }
+    },
+    {
+      "questionId": 1437,
+      "hash": "f7a9ebb8b609a264124046c2f797c7bffa62ee13442d674a6f1519da01e897fd",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Restricted to the audition so a music teacher’s ability to demonstrate other instruments cannot create a second answer.",
+      "context": "Soul (2020), Dorothea Williams audition.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Joe is the auditioning pianist; Dorothea plays saxophone and Curley drums.",
+        "sources": [
+          "b27-soul",
+          "b25-dorothea"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Joe auditions at the piano.",
+          "sources": [
+            "b27-soul",
+            "b25-dorothea"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Trumpet is not Joe’s audition instrument.",
+          "sources": [
+            "b27-soul",
+            "b25-dorothea"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Saxophone belongs to Dorothea at this audition.",
+          "sources": [
+            "b27-soul",
+            "b25-dorothea"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Drums belong to Curley in her band.",
+          "sources": [
+            "b27-soul",
+            "b25-dorothea"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Restricted to the audition so a music teacher’s ability to demonstrate other instruments cannot create a second answer."
+      }
+    },
+    {
+      "questionId": 1438,
+      "hash": "85828ebf256c0e904e1835ae3142bd1da82ed4e6da2e471e07ca0f9f96263d50",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Pixar also uses Astral Plane for this broader setting, but that is not a listed distractor. The film dialogue directly calls the specified space the zone.",
+      "context": "Soul, 22 and Joe’s visit to Moonwind.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "22 names the space the zone and Moonwind is encountered there.",
+        "sources": [
+          "b27-zone",
+          "b27-soul"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Zone is the explicit term.",
+          "sources": [
+            "b27-zone",
+            "b27-soul"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Flow describes absorption but is not the named space.",
+          "sources": [
+            "b27-zone",
+            "b27-soul"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Ether is not 22’s term.",
+          "sources": [
+            "b27-zone",
+            "b27-soul"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Great Between is not 22’s term.",
+          "sources": [
+            "b27-zone",
+            "b27-soul"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Pixar also uses Astral Plane for this broader setting, but that is not a listed distractor. The film dialogue directly calls the specified space the zone."
+      }
+    },
+    {
+      "questionId": 1439,
+      "hash": "0dca776eef9e5ee118160fa9494302e6f46e92f483000066a6e40022971a5e4d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Checked Terry versus Jerry despite the similar names. The earlier counselor-name question #1042 concerns a distinct role, not the same identity.",
+      "context": "Soul, count discrepancy after Joe’s detour.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar assigns the soul-count discrepancy to Terry.",
+        "sources": [
+          "b27-soul"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Terry is responsible for the count.",
+          "sources": [
+            "b27-soul"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jerry names the counselors, not the counter.",
+          "sources": [
+            "b27-soul"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "22 is the soul Joe mentors.",
+          "sources": [
+            "b27-soul"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Moonwind is a living mystic who helps Joe.",
+          "sources": [
+            "b27-soul"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked Terry versus Jerry despite the similar names. The earlier counselor-name question #1042 concerns a distinct role, not the same identity."
+      }
+    },
+    {
+      "questionId": 1440,
+      "hash": "6c4f1d9c26ac3f98fb0619753e7fc90762d4ce07d3d0a04986eca2919d419264",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Tested partial overlap in every list. A Vespa is the hoped-for purchase, not the vehicle ridden in the race. Race name #1043 tests a different fact.",
+      "context": "Luca (2021), Portorosso Cup rules.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Giulia’s complete event list establishes all three components.",
+        "sources": [
+          "b27-cup",
+          "b27-cup-food",
+          "b27-cup-review"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Swimming, pasta and cycling are the three events.",
+          "sources": [
+            "b27-cup",
+            "b27-cup-food",
+            "b27-cup-review"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Running replaces pasta in this conventional triathlon list.",
+          "sources": [
+            "b27-cup",
+            "b27-cup-food",
+            "b27-cup-review"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rowing and running replace two of the required events.",
+          "sources": [
+            "b27-cup",
+            "b27-cup-food",
+            "b27-cup-review"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pizza replaces the required pasta.",
+          "sources": [
+            "b27-cup",
+            "b27-cup-food",
+            "b27-cup-review"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tested partial overlap in every list. A Vespa is the hoped-for purchase, not the vehicle ridden in the race. Race name #1043 tests a different fact."
+      }
+    },
+    {
+      "questionId": 1441,
+      "hash": "115c35a89b0348c514bf8b095ae95a199cfd9671cc5364c18522d1f254e76d2e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Removed the unsupported lighthouse designation. #1564 asks why Alberto lives alone, not the structure’s identity.",
+      "context": "Luca, Alberto’s island home at first meeting.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar’s Island section identifies the abandoned Roman tower.",
+        "sources": [
+          "b27-luca"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The reclaimed Roman tower is Alberto’s hideout.",
+          "sources": [
+            "b27-luca"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A harbor cave is a different structure.",
+          "sources": [
+            "b27-luca"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A sunken boat is underwater, unlike the tower.",
+          "sources": [
+            "b27-luca"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A beach shack is not the described structure.",
+          "sources": [
+            "b27-luca"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the unsupported lighthouse designation. #1564 asks why Alberto lives alone, not the structure’s identity."
+      }
+    },
+    {
+      "questionId": 1442,
+      "hash": "2527ac610163c93a8e764b568bf66fa64798666613301044490ff2b300a2fca2",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Distinguished the character from voice actor Marco Barricelli; Ercole’s separate bully identity cannot satisfy the father relationship.",
+      "context": "Luca, Giulia Marcovaldo’s family.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar directly identifies Giulia’s father as Massimo.",
+        "sources": [
+          "b27-luca"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Massimo is Giulia’s fisherman father.",
+          "sources": [
+            "b27-luca"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ercole is the town bully, not her father.",
+          "sources": [
+            "b27-luca"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Marco is not the character’s name; actor Marco Barricelli is different.",
+          "sources": [
+            "b27-luca"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Stefano is not her father’s name.",
+          "sources": [
+            "b27-luca"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished the character from voice actor Marco Barricelli; Ercole’s separate bully identity cannot satisfy the father relationship."
+      }
+    },
+    {
+      "questionId": 1443,
+      "hash": "9955f2834566618d9fe730d7e5af920b935327f125f22131d0790db613f0e5b9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Command and financing are separate roles. The exact financing promise supports the premise, beyond the generic description of a wealthy friend.",
+      "context": "Atlantis: The Lost Empire (2001), Whitmore’s recruitment.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Whitmore explicitly promises to finance the expedition and supplies the crew.",
+        "sources": [
+          "b27-atlantis",
+          "b27-atlantis-plot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Preston B. Whitmore is the financier.",
+          "sources": [
+            "b27-atlantis",
+            "b27-atlantis-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rourke commands the expedition rather than underwriting it.",
+          "sources": [
+            "b27-atlantis",
+            "b27-atlantis-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cornelius Aldrich is not the named financier.",
+          "sources": [
+            "b27-atlantis",
+            "b27-atlantis-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bennett Calloway is not the named financier.",
+          "sources": [
+            "b27-atlantis",
+            "b27-atlantis-plot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Command and financing are separate roles. The exact financing promise supports the premise, beyond the generic description of a wealthy friend."
+      }
+    },
+    {
+      "questionId": 1444,
+      "hash": "a3b4f5203da00b1d889337854e6012058d78913993dae40c1a3c7dbf80d004c0",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Kida’s royal identity and the power crystal are different facts. Confirmed the journal directs the expedition rather than merely recording unrelated lore.",
+      "context": "Atlantis (2001), expedition route text.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Milo describes the Shepherd’s Journal as the route source.",
+        "sources": [
+          "b27-atlantis",
+          "b27-atlantis-plot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Shepherd’s Journal contains the whereabouts.",
+          "sources": [
+            "b27-atlantis",
+            "b27-atlantis-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Atlantean Codex is not this artifact’s title.",
+          "sources": [
+            "b27-atlantis",
+            "b27-atlantis-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Book of Kida is not this artifact’s title.",
+          "sources": [
+            "b27-atlantis",
+            "b27-atlantis-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lost Meridian is not this artifact’s title.",
+          "sources": [
+            "b27-atlantis",
+            "b27-atlantis-plot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Kida’s royal identity and the power crystal are different facts. Confirmed the journal directs the expedition rather than merely recording unrelated lore."
+      }
+    },
+    {
+      "questionId": 1445,
+      "hash": "b30f759a3bcb9a81fc028a1952db5a29c6eb25c802c616f4f607662c82d540b3",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. A descriptive blob nickname is not an alternative proper name. The map sphere in #835 and B.E.N. in #875 are separate objects/characters.",
+      "context": "Treasure Planet (2002), Silver’s galley companion.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Silver’s shapeshifting companion is named Morph.",
+        "sources": [
+          "b27-treasure",
+          "b27-surfer"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Morph is the named shapeshifting pet.",
+          "sources": [
+            "b27-treasure",
+            "b27-surfer"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Splat is not Silver’s pet’s name.",
+          "sources": [
+            "b27-treasure",
+            "b27-surfer"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Glop is not Silver’s pet’s name.",
+          "sources": [
+            "b27-treasure",
+            "b27-surfer"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Blobby is not Silver’s pet’s name.",
+          "sources": [
+            "b27-treasure",
+            "b27-surfer"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A descriptive blob nickname is not an alternative proper name. The map sphere in #835 and B.E.N. in #875 are separate objects/characters."
+      }
+    },
+    {
+      "questionId": 1446,
+      "hash": "af2897e3c3c644c0e19fbd53128227d1b89c7b06145f36095eb91d60fdf3b944",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Building a device does not establish inventing the technology; final wording asks what he rides and avoids that claim.",
+      "context": "Treasure Planet, Jim’s early solar-surfing activity.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Sarah explicitly calls Jim’s board a solar surfer.",
+        "sources": [
+          "b27-surfer"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Solar surfer is the device’s name.",
+          "sources": [
+            "b27-surfer"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Comet board is not the named board.",
+          "sources": [
+            "b27-surfer"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gravity glider is not the named board.",
+          "sources": [
+            "b27-surfer"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rocket board is not the named board.",
+          "sources": [
+            "b27-surfer"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Building a device does not establish inventing the technology; final wording asks what he rides and avoids that claim."
+      }
+    },
+    {
+      "questionId": 1447,
+      "hash": "cd7df55b442dcbf50f5ef33f928216a84ccb21d027eb148638b11ec0bbc77e11",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Replaced subjective most-dangerous ranking with a concrete action, and checked Jim’s apparent guilt against the actual perpetrator.",
+      "context": "Treasure Planet, black-hole encounter.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The black-hole incident identifies Scroop as the lifeline cutter.",
+        "sources": [
+          "b27-treasure"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Scroop cuts Mr. Arrow’s line.",
+          "sources": [
+            "b27-treasure"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hands is a different crew member.",
+          "sources": [
+            "b27-treasure"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Grinder is not the identified attacker.",
+          "sources": [
+            "b27-treasure"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Slaughter is not the identified attacker.",
+          "sources": [
+            "b27-treasure"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Replaced subjective most-dangerous ranking with a concrete action, and checked Jim’s apparent guilt against the actual perpetrator."
+      }
+    },
+    {
+      "questionId": 1448,
+      "hash": "ef3d5aaf646e913c076afc70b77c60c8642159072a206573362e29da94547f86",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. The original conflated Sitka’s death with Denahi’s belief about Kenai. Final wording specifies the latter and leaves the two moose excluded.",
+      "context": "Brother Bear (2003), Denahi’s pursuit.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Denahi misreads Kenai’s transformation as his death.",
+        "sources": [
+          "b27-bear"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Denahi hunts the transformed Kenai.",
+          "sources": [
+            "b27-bear"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sitka has already died and is the transforming spirit.",
+          "sources": [
+            "b27-bear"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tuke is a moose, not Kenai’s human brother.",
+          "sources": [
+            "b27-bear"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rutt is a moose, not Kenai’s human brother.",
+          "sources": [
+            "b27-bear"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The original conflated Sitka’s death with Denahi’s belief about Kenai. Final wording specifies the latter and leaves the two moose excluded."
+      }
+    },
+    {
+      "questionId": 1449,
+      "hash": "803650b31c13096de479a9d50ffd975514ef0978b5710e73e05228b06adbaa75",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Temporary human restoration cannot make the human-life option correct: the question expressly asks his subsequent final choice.",
+      "context": "Brother Bear, mountain resolution and ending narration.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The ending restores humanity briefly before Kenai chooses bear life.",
+        "sources": [
+          "b27-bear",
+          "b27-bear-end"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Kenai returns to bear form to care for Koda.",
+          "sources": [
+            "b27-bear",
+            "b27-bear-end"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He does not remain human to rule the tribe.",
+          "sources": [
+            "b27-bear",
+            "b27-bear-end"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He does not leave life to become Sitka’s fellow spirit.",
+          "sources": [
+            "b27-bear",
+            "b27-bear-end"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Koda is not transformed into a human.",
+          "sources": [
+            "b27-bear",
+            "b27-bear-end"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Temporary human restoration cannot make the human-life option correct: the question expressly asks his subsequent final choice."
+      }
+    },
+    {
+      "questionId": 1453,
+      "hash": "8e7fe03740a090001b2cd20a4ac20f517fc589668b271b8b419a25d83b2983f1",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. A missing mane does not change the species. Mayor Lionheart #2653 is another character in another film, requiring an independent animal identity.",
+      "context": "Robin Hood (1973), Prince John design.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Prince John’s species is explicitly described and explained by the character designer.",
+        "sources": [
+          "b27-john"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Prince John is a lion.",
+          "sources": [
+            "b27-john"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Little John, not Prince John, is a bear.",
+          "sources": [
+            "b27-john"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A wolf is not Prince John’s species.",
+          "sources": [
+            "b27-john"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A weasel is not Prince John’s species.",
+          "sources": [
+            "b27-john"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A missing mane does not change the species. Mayor Lionheart #2653 is another character in another film, requiring an independent animal identity."
+      }
+    },
+    {
+      "questionId": 1458,
+      "hash": "6aec3c60597f2222fc0503a83b784eef0e34750dc7a8c8aac361140d10022cc7",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Disney’s PDF inconsistently uses python and boa constrictor. The final broad-type question removes that disputed distinction and excludes all three other reptiles.",
+      "context": "Disney’s animated The Jungle Book (1967), Kaa.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "All inspected descriptions agree Kaa is a snake.",
+        "sources": [
+          "b27-jungle-profile",
+          "b27-jungle"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Kaa is a snake.",
+          "sources": [
+            "b27-jungle-profile",
+            "b27-jungle"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He is not a crocodile.",
+          "sources": [
+            "b27-jungle-profile",
+            "b27-jungle"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He is not a lizard.",
+          "sources": [
+            "b27-jungle-profile",
+            "b27-jungle"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He is not a turtle.",
+          "sources": [
+            "b27-jungle-profile",
+            "b27-jungle"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Disney’s PDF inconsistently uses python and boa constrictor. The final broad-type question removes that disputed distinction and excludes all three other reptiles."
+      }
+    },
+    {
+      "questionId": 1459,
+      "hash": "493b2af1457b49bec649019dc607d5de80b7f1f7b6f320e1b7c8b71b603b19b5",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Khan also fears guns, so only-fear wording was false. The final scene-specific question excludes guns and the three listed alternatives by the actual action.",
+      "context": "The Jungle Book (1967), final Shere Khan fight.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The bounded final fight ends with a burning branch tied to the tiger’s tail.",
+        "sources": [
+          "b27-jungle"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The burning branch uses fire to drive him away.",
+          "sources": [
+            "b27-jungle"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Water is not the repelling weapon in this fight.",
+          "sources": [
+            "b27-jungle"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Drums are not the repelling weapon in this fight.",
+          "sources": [
+            "b27-jungle"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A hunter’s trap is not used to drive him away.",
+          "sources": [
+            "b27-jungle"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Khan also fears guns, so only-fear wording was false. The final scene-specific question excludes guns and the three listed alternatives by the actual action."
+      }
+    },
+    {
+      "questionId": 1464,
+      "hash": "4649b463601eb7c4316ea4efe0d17dda839c4da25901644bb7a1350a35f0b1d9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. The original also allowed belief that Penny was in danger. All final options concern the abilities, and start-of-film timing avoids his later realization. This is theatrical-film trivia about an in-universe show.",
+      "context": "Bolt (2008), initial belief before leaving the set.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The concealed staging leads Bolt to mistake fictional abilities for real powers.",
+        "sources": [
+          "b27-bolt",
+          "b27-bolt-primary"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Bolt believes his powers are real.",
+          "sources": [
+            "b27-bolt",
+            "b27-bolt-primary"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He does not understand them as a remote-controlled trick.",
+          "sources": [
+            "b27-bolt",
+            "b27-bolt-primary"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He does not believe they require recording cameras.",
+          "sources": [
+            "b27-bolt",
+            "b27-bolt-primary"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Special effects are the actual explanation, not his initial belief.",
+          "sources": [
+            "b27-bolt",
+            "b27-bolt-primary"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The original also allowed belief that Penny was in danger. All final options concern the abilities, and start-of-film timing avoids his later realization. This is theatrical-film trivia about an in-universe show."
+      }
+    },
+    {
+      "questionId": 1465,
+      "hash": "6277439cf12740434080c50608262789175f8dd626fb95130caeec0ec3d1385c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Armadillo-like is visual comparison, not a pure-species assertion. The separate roles exclude all three names without assuming none ever travels with Raya.",
+      "context": "Raya and the Last Dragon (2021), Raya’s steed.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney’s Tuk Tuk profile identifies Raya’s gigantic steed.",
+        "sources": [
+          "b27-raya"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Tuk Tuk is Raya’s mount.",
+          "sources": [
+            "b27-raya"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sisu is the dragon they seek.",
+          "sources": [
+            "b27-raya"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ongis are the small con artists who accompany Noi.",
+          "sources": [
+            "b27-raya"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Boun is a human boat captain.",
+          "sources": [
+            "b27-raya"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Armadillo-like is visual comparison, not a pure-species assertion. The separate roles exclude all three names without assuming none ever travels with Raya."
+      }
+    },
+    {
+      "questionId": 1466,
+      "hash": "22080edbc3aa9c2008d6567222eea0cf05e05892f166d5887a8b63e4d8e3ae0b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Final wording asks the proper name, so a descriptive phrase such as mist spirits cannot become a second answer.",
+      "context": "Raya and the Last Dragon, petrification threat.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Raya profile names the petrifying destructive spirits Druun.",
+        "sources": [
+          "b27-raya"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Druun are the named spirits.",
+          "sources": [
+            "b27-raya"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mist Spirits is not their proper name.",
+          "sources": [
+            "b27-raya"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Stone Shadows is not their proper name.",
+          "sources": [
+            "b27-raya"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kakamora are not the named Kumandra spirits.",
+          "sources": [
+            "b27-raya"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Final wording asks the proper name, so a descriptive phrase such as mist spirits cannot become a second answer."
+      }
+    },
+    {
+      "questionId": 1467,
+      "hash": "6b0c40790d1f2897ab2cc92a7724d52b9facefab5712de7532147e21439c1a3a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Corrected which vessel is captured. Separate questions cover Galaxy’s Edge, Falcon roles, ride technology and opening year; none establishes this particular plot/name association.",
+      "context": "Hollywood Studios attraction as of November 2026.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The official ride story has a captured transport and Resistance-assisted escape.",
+        "sources": [
+          "b27-rise"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Rise of the Resistance has this storyline.",
+          "sources": [
+            "b27-rise"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Smugglers Run is the Falcon flight experience, not this named escape.",
+          "sources": [
+            "b27-rise"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Star Tours is not the attraction described in this official story.",
+          "sources": [
+            "b27-rise"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Force Encounter is not the named ride.",
+          "sources": [
+            "b27-rise"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Corrected which vessel is captured. Separate questions cover Galaxy’s Edge, Falcon roles, ride technology and opening year; none establishes this particular plot/name association."
+      }
+    },
+    {
+      "questionId": 1468,
+      "hash": "775763ba4e998d5e1fc8d2d4235f50869c7deb14b901d7ae80d459246e746267",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Removed the film title from the stem. #2220 asks trackless technology and #2256 another park’s version, not this EPCOT attraction title.",
+      "context": "EPCOT attraction as of November 2026.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The attraction page names the rat-size Gusteau’s chase.",
+        "sources": [
+          "b27-remy"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Remy’s Ratatouille Adventure is the official title.",
+          "sources": [
+            "b27-remy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Remy’s Kitchen Chase is not the official title.",
+          "sources": [
+            "b27-remy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gusteau’s Little Adventure is not the official title.",
+          "sources": [
+            "b27-remy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rat Race Paris is not the official title.",
+          "sources": [
+            "b27-remy"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the film title from the stem. #2220 asks trackless technology and #2256 another park’s version, not this EPCOT attraction title."
+      }
+    },
+    {
+      "questionId": 1474,
+      "hash": "6a7569d25e16148b0a4446afd5e4d6cf3dbc47bfc7d30da9085af44e328d3ce3",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Mount Gushmore #1157 is a mountain name, not this water park’s identity; Typhoon Lagoon #775 asks the other park’s distinct theme.",
+      "context": "Walt Disney World water park as of November 2026.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The official page combines the ski-resort theme with both named attractions.",
+        "sources": [
+          "b27-blizzard"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Blizzard Beach has all these features.",
+          "sources": [
+            "b27-blizzard"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Typhoon Lagoon uses a different storm setting.",
+          "sources": [
+            "b27-blizzard"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "River Country is not the ski-themed park.",
+          "sources": [
+            "b27-blizzard"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Snow Peak is not the park’s name.",
+          "sources": [
+            "b27-blizzard"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Mount Gushmore #1157 is a mountain name, not this water park’s identity; Typhoon Lagoon #775 asks the other park’s distinct theme."
+      }
+    },
+    {
+      "questionId": 1475,
+      "hash": "3913526041b63beed66d1abdb738f09c79add77711a38d86e2ee861bc4d61a37",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Removed singing-birds clues so #910 cannot solve this historical technology question merely by recognizing the musical attraction.",
+      "context": "Disneyland, original 1963 technology debut.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney explicitly dates the public Audio-Animatronics introduction to the Tiki Room in 1963.",
+        "sources": [
+          "b27-tiki",
+          "b27-tiki-history"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Enchanted Tiki Room is the documented introduction.",
+          "sources": [
+            "b27-tiki",
+            "b27-tiki-history"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jungle Cruise is not the attraction named in this 1963 technology debut.",
+          "sources": [
+            "b27-tiki",
+            "b27-tiki-history"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Indiana Jones Adventure is not the 1963 debut.",
+          "sources": [
+            "b27-tiki",
+            "b27-tiki-history"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Swiss Family Treehouse is not the documented debut.",
+          "sources": [
+            "b27-tiki",
+            "b27-tiki-history"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed singing-birds clues so #910 cannot solve this historical technology question merely by recognizing the musical attraction."
+      }
+    },
+    {
+      "questionId": 1479,
+      "hash": "4ce5eab6013535a545d16a61571f290e83062d74838b56c960503d6408c9acca",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Tokyo’s trackless ride #2643/#2644 is a distinct version; the explicit Magic Kingdom location prevents Honey Hunt also fitting.",
+      "context": "Magic Kingdom attraction as of November 2026.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The Magic Kingdom attraction page names the Hunny Pot journey.",
+        "sources": [
+          "b27-pooh"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Many Adventures of Winnie the Pooh is the Magic Kingdom ride.",
+          "sources": [
+            "b27-pooh"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Winnie the Pooh and Friends is not this title.",
+          "sources": [
+            "b27-pooh"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pooh’s Honey Hunt is not the Magic Kingdom attraction.",
+          "sources": [
+            "b27-pooh"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hundred Acre Coaster is not this title.",
+          "sources": [
+            "b27-pooh"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tokyo’s trackless ride #2643/#2644 is a distinct version; the explicit Magic Kingdom location prevents Honey Hunt also fitting."
+      }
+    },
+    {
+      "questionId": 1482,
+      "hash": "c57ba6db94c12868a82cae9ce66f6c08ea4db4bf6526b06f1cf8ac0e7ceb278d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Separated the half-park name from a pavilion and removed misleading implication that all physical redesign occurred in one year.",
+      "context": "EPCOT historical layout before the four-neighborhood arrangement.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The old layout grouped the three present neighborhoods under Future World.",
+        "sources": [
+          "b27-epcot-old",
+          "b27-epcot-new"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Future World named the whole half.",
+          "sources": [
+            "b27-epcot-old",
+            "b27-epcot-new"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Innoventions was a smaller pavilion within it.",
+          "sources": [
+            "b27-epcot-old",
+            "b27-epcot-new"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tomorrow’s World was not the area’s name.",
+          "sources": [
+            "b27-epcot-old",
+            "b27-epcot-new"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Vision Center was not the area’s name.",
+          "sources": [
+            "b27-epcot-old",
+            "b27-epcot-new"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separated the half-park name from a pavilion and removed misleading implication that all physical redesign occurred in one year."
+      }
+    },
+    {
+      "questionId": 1485,
+      "hash": "c69141f143c709a203ab6b116d204ca0cc7805932957f4858689199ebb0e3214",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Removed Cinderella from the stem to avoid title echo. Current character appearances can change, so the dated offering has a scheduled recheck.",
+      "context": "Magic Kingdom dining as of November 2026.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The named restaurant offers princess dining inside the castle.",
+        "sources": [
+          "b27-table"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Cinderella’s Royal Table is the restaurant.",
+          "sources": [
+            "b27-table"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bibbidi Bobbidi Boutique is not this dining restaurant.",
+          "sources": [
+            "b27-table"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Princess Banquet is not this official title.",
+          "sources": [
+            "b27-table"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Royal Family Table is not this official title.",
+          "sources": [
+            "b27-table"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed Cinderella from the stem to avoid title echo. Current character appearances can change, so the dated offering has a scheduled recheck."
+      }
+    },
+    {
+      "questionId": 1486,
+      "hash": "01739f4ccea47af79e969717194439e5c4cc2e0d7905a9004c3704bc72b80f0d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. The original phrasing could invite Maelstrom as the ride that was reimagined. Final wording asks what opened afterward, with four distinct attraction names.",
+      "context": "EPCOT Norway pavilion, 2016 opening event.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The EPCOT opening record places Frozen Ever After in Maelstrom’s site in 2016.",
+        "sources": [
+          "b27-frozen-history"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Frozen Ever After replaced Maelstrom in 2016.",
+          "sources": [
+            "b27-frozen-history"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gran Fiesta Tour is a different pavilion’s ride.",
+          "sources": [
+            "b27-frozen-history"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Na’vi River Journey is not in Norway or this replacement.",
+          "sources": [
+            "b27-frozen-history"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Living with the Land is not the Norway replacement.",
+          "sources": [
+            "b27-frozen-history"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The original phrasing could invite Maelstrom as the ride that was reimagined. Final wording asks what opened afterward, with four distinct attraction names."
+      }
+    },
+    {
+      "questionId": 1487,
+      "hash": "725f2e99da62204f474f67f7945373b92f5dd5ede885a6395b2deb32bc5f1277",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Post-armistice timing corrects the implication of wartime driving in France. Removed poster drawing as a distractor because he did draw during the service.",
+      "context": "Walt’s 1918-1919 Red Cross service in France.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The museum dates Walt’s Red Cross dispatch after the armistice.",
+        "sources": [
+          "b27-walt-france"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Red Cross ambulance driving brought him to France.",
+          "sources": [
+            "b27-walt-france"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Aircraft construction was not the documented volunteer service.",
+          "sources": [
+            "b27-walt-france"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Army Signal Corps service was not his organization.",
+          "sources": [
+            "b27-walt-france"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cavalry horse training was not the documented service.",
+          "sources": [
+            "b27-walt-france"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Post-armistice timing corrects the implication of wartime driving in France. Removed poster drawing as a distractor because he did draw during the service."
+      }
+    },
+    {
+      "questionId": 1490,
+      "hash": "48b913f3ecfc3da8da48768c234ce705fb666b39ff2eda86740da379eedeece6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Avoided saying Roy first took over the company in 1966, since he had long held leadership. Resort completion is separate from his death year and later naming lore.",
+      "context": "Walt Disney World completion and 1971 opening.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The museum attributes completion of the Florida project to Roy O. Disney.",
+        "sources": [
+          "b27-roy",
+          "disney-family",
+          "roy-death"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Roy O., Walt’s older brother, led completion.",
+          "sources": [
+            "b27-roy",
+            "disney-family",
+            "roy-death"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Roy E. was the nephew, not the project leader.",
+          "sources": [
+            "b27-roy",
+            "disney-family",
+            "roy-death"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lillian was Walt’s wife, not the leader of this completion.",
+          "sources": [
+            "b27-roy",
+            "disney-family",
+            "roy-death"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Diane was Walt’s daughter, not the project leader.",
+          "sources": [
+            "b27-roy",
+            "disney-family",
+            "roy-death"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Avoided saying Roy first took over the company in 1966, since he had long held leadership. Resort completion is separate from his death year and later naming lore."
+      }
+    },
+    {
+      "questionId": 1494,
+      "hash": "4f49d4d834661c3d9a52cf41e9ce0cbd20bf46d6962eccee985ec7901778a744",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Removed unsupported claim that Walt coined the word. Final question tests Disney terminology without introducing a contested first-use date.",
+      "context": "Disney theme-park design profession terminology.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney’s own organization calls its designers Imagineers.",
+        "sources": [
+          "b27-imagineers",
+          "b27-alcoa"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Imagineers is Disney’s established name.",
+          "sources": [
+            "b27-imagineers",
+            "b27-alcoa"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Theme Builders is not that formal name.",
+          "sources": [
+            "b27-imagineers",
+            "b27-alcoa"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dream Makers is not that formal name.",
+          "sources": [
+            "b27-imagineers",
+            "b27-alcoa"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Park Designers is a description rather than that formal name.",
+          "sources": [
+            "b27-imagineers",
+            "b27-alcoa"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed unsupported claim that Walt coined the word. Final question tests Disney terminology without introducing a contested first-use date."
+      }
+    },
+    {
+      "questionId": 1495,
+      "hash": "8bf47c70d1dea8913fecf178cc0f5f11bca7810a4b016211a2ee553467a4433a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. All four are parallel effects/processes. No first-ever-camera claim remains; #405 tests rotoscoping itself, a different technique.",
+      "context": "Traditional Disney multiplane animation technique.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The museum explains the depth effect of separately photographed artwork levels.",
+        "sources": [
+          "b27-depth"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Separate layers create apparent depth.",
+          "sources": [
+            "b27-depth"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The camera does not turn monochrome artwork into color.",
+          "sources": [
+            "b27-depth"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "It does not automatically synchronize mouth shapes.",
+          "sources": [
+            "b27-depth"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tracing actors describes rotoscoping, not multiplane photography.",
+          "sources": [
+            "b27-depth"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All four are parallel effects/processes. No first-ever-camera claim remains; #405 tests rotoscoping itself, a different technique."
+      }
+    },
+    {
+      "questionId": 1496,
+      "hash": "a6836427ba9e93daa4685e493eacc496dd28666989d1ecffd915c5e36ddcdd0b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Independently corroborated the exact quantities and sizes. Shortened stem to avoid the Seven Dwarfs title hint; the 1939 ceremony is distinct from 1937 film release.",
+      "context": "1939 special Academy Award for Snow White.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Academy and museum agree on one standard statuette plus seven miniatures.",
+        "sources": [
+          "b27-snow-award",
+          "b27-snow-museum"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "One full-size and seven miniature statuettes matches both records.",
+          "sources": [
+            "b27-snow-award",
+            "b27-snow-museum"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Three miniatures is the wrong count.",
+          "sources": [
+            "b27-snow-award",
+            "b27-snow-museum"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Seven full-size statuettes reverses the sizes.",
+          "sources": [
+            "b27-snow-award",
+            "b27-snow-museum"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Three full-size and one miniature matches neither count.",
+          "sources": [
+            "b27-snow-award",
+            "b27-snow-museum"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Independently corroborated the exact quantities and sizes. Shortened stem to avoid the Seven Dwarfs title hint; the 1939 ceremony is distinct from 1937 film release."
+      }
+    },
+    {
+      "questionId": 1497,
+      "hash": "848f5d36255851946057882e34a6cee1242858e17dec4a05523a98c82cfcf818",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Removed the claim that Mirabel is the only ungifted Madrigal; in-laws also lack powers. The song scene, not universal family status, determines the answer.",
+      "context": "Encanto (2021), Mirabel’s post-ceremony private lament.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Mirabel’s private lament is Waiting on a Miracle.",
+        "sources": [
+          "b27-encanto-lament",
+          "b19-1019"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Waiting on a Miracle is the solo lament.",
+          "sources": [
+            "b27-encanto-lament",
+            "b19-1019"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Family Madrigal is the opening family introduction.",
+          "sources": [
+            "b27-encanto-lament",
+            "b19-1019"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "What Else Can I Do is Isabela’s plant-discovery number.",
+          "sources": [
+            "b27-encanto-lament",
+            "b19-1019"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dos Oruguitas accompanies Alma’s backstory.",
+          "sources": [
+            "b27-encanto-lament",
+            "b19-1019"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the claim that Mirabel is the only ungifted Madrigal; in-laws also lack powers. The song scene, not universal family status, determines the answer."
+      }
+    },
+    {
+      "questionId": 1498,
+      "hash": "5258d2740a7c165e915c3e6618702ac5d67ca756ac1acb5e9091b39f70813323",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Mirabel joins Isabela, but that does not make Mirabel’s separate solo correct. Each option names a different bounded number.",
+      "context": "Encanto, Isabela’s plant-discovery scene.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Isabela’s new-plant number is What Else Can I Do.",
+        "sources": [
+          "b27-encanto-lament",
+          "b19-1019"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "What Else Can I Do is Isabela’s number.",
+          "sources": [
+            "b27-encanto-lament",
+            "b19-1019"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Waiting on a Miracle is Mirabel’s lament.",
+          "sources": [
+            "b27-encanto-lament",
+            "b19-1019"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Surface Pressure concerns Luisa.",
+          "sources": [
+            "b27-encanto-lament",
+            "b19-1019"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "All of You is the rebuilding finale.",
+          "sources": [
+            "b27-encanto-lament",
+            "b19-1019"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Mirabel joins Isabela, but that does not make Mirabel’s separate solo correct. Each option names a different bounded number."
+      }
+    },
+    {
+      "questionId": 1499,
+      "hash": "d62c9782b323fddf73eb39001ff987f0f761072f1abfa4333e8f273677f2a4d4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Corrected collapse timing: the river flashback follows Casita’s fall. The scene and Spanish-language wording exclude the three other numbers.",
+      "context": "Encanto, Alma/Pedro river flashback.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Dos Oruguitas accompanies Alma and Pedro’s backstory.",
+        "sources": [
+          "b27-encanto-lament",
+          "b27-yatra",
+          "b19-1019"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Dos Oruguitas is the flashback song.",
+          "sources": [
+            "b27-encanto-lament",
+            "b27-yatra",
+            "b19-1019"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Colombia, Mi Encanto is the celebration number.",
+          "sources": [
+            "b27-encanto-lament",
+            "b27-yatra",
+            "b19-1019"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Surface Pressure is Luisa’s burden number.",
+          "sources": [
+            "b27-encanto-lament",
+            "b27-yatra",
+            "b19-1019"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "All of You accompanies rebuilding.",
+          "sources": [
+            "b27-encanto-lament",
+            "b27-yatra",
+            "b19-1019"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Corrected collapse timing: the river flashback follows Casita’s fall. The scene and Spanish-language wording exclude the three other numbers."
+      }
+    },
+    {
+      "questionId": 1502,
+      "hash": "5f43469984c5e84198de49d517bb16dc2d58646f2d6d673801f65bb041412e4a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Checked film-score authorship rather than a later performer/arranger; his Zootopia credit #1269 does not independently answer who scored Up.",
+      "context": "Up (2009), original orchestral score.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Giacchino’s own composition account and Academy credit agree.",
+        "sources": [
+          "b27-up-score",
+          "b27-up-oscar"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Michael Giacchino composed the score and Married Life.",
+          "sources": [
+            "b27-up-score",
+            "b27-up-oscar"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hans Zimmer is not the credited Up composer.",
+          "sources": [
+            "b27-up-score",
+            "b27-up-oscar"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Alan Menken is not the credited Up composer.",
+          "sources": [
+            "b27-up-score",
+            "b27-up-oscar"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "John Williams is not the credited Up composer.",
+          "sources": [
+            "b27-up-score",
+            "b27-up-oscar"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked film-score authorship rather than a later performer/arranger; his Zootopia credit #1269 does not independently answer who scored Up."
+      }
+    },
+    {
+      "questionId": 1504,
+      "hash": "9aab343ef61a4d87f330a3cefaa2685bff2584421c22b5753ca8990f80b60700",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. A composer’s involvement elsewhere does not satisfy the precise Oscar-winning original-song condition; the award record assigns this song to Coco.",
+      "context": "Original song award for Coco, following Frozen.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Academy identifies the Lopez team’s winning song in Coco.",
+        "sources": [
+          "b27-coco-oscar"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Coco features their Oscar-winning Remember Me.",
+          "sources": [
+            "b27-coco-oscar"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Inside Out is not the film credited for that song.",
+          "sources": [
+            "b27-coco-oscar"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Soul is not the film credited for that song.",
+          "sources": [
+            "b27-coco-oscar"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Onward is not the film credited for that song.",
+          "sources": [
+            "b27-coco-oscar"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A composer’s involvement elsewhere does not satisfy the precise Oscar-winning original-song condition; the award record assigns this song to Coco."
+      }
+    },
+    {
+      "questionId": 1509,
+      "hash": "9ba071429de452c3ada9eb0945df677e3cb27859a92f0385d6d362cd9164a6e6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Separated lantern subject #842 from the duet title. Other songs express dreams but do not occupy this bounded boat scene.",
+      "context": "Tangled (2010), lantern boat duet.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The lantern duet is I See the Light.",
+        "sources": [
+          "b27-lantern",
+          "b19-1015",
+          "b13-tangledcatalog"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "I See the Light is the boat duet.",
+          "sources": [
+            "b27-lantern",
+            "b19-1015",
+            "b13-tangledcatalog"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "When Will My Life Begin is Rapunzel’s routine song.",
+          "sources": [
+            "b27-lantern",
+            "b19-1015",
+            "b13-tangledcatalog"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "I’ve Got a Dream is the tavern ensemble.",
+          "sources": [
+            "b27-lantern",
+            "b19-1015",
+            "b13-tangledcatalog"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Something That I Want is not the specified duet.",
+          "sources": [
+            "b27-lantern",
+            "b19-1015",
+            "b13-tangledcatalog"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separated lantern subject #842 from the duet title. Other songs express dreams but do not occupy this bounded boat scene."
+      }
+    },
+    {
+      "questionId": 1510,
+      "hash": "2e536b133e0448b5701fda3b3adb86cd0eede80a52e61fe017af0b524a6ca6d6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Ray’s relationship to the star #245 is different from naming this number. A descriptive Ray’s Song label cannot replace the actual soundtrack title.",
+      "context": "The Princess and the Frog (2009), Ray’s evening-star ballad.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Ray sings Ma Belle Evangeline while addressing the star.",
+        "sources": [
+          "b27-ray",
+          "b27-frog-track",
+          "b19-1014"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Ma Belle Evangeline is the named ballad.",
+          "sources": [
+            "b27-ray",
+            "b27-frog-track",
+            "b19-1014"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Almost There is Tiana’s restaurant number.",
+          "sources": [
+            "b27-ray",
+            "b27-frog-track",
+            "b19-1014"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Friends on the Other Side is Facilier’s number.",
+          "sources": [
+            "b27-ray",
+            "b27-frog-track",
+            "b19-1014"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ray’s Song is not the established track title.",
+          "sources": [
+            "b27-ray",
+            "b27-frog-track",
+            "b19-1014"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Ray’s relationship to the star #245 is different from naming this number. A descriptive Ray’s Song label cannot replace the actual soundtrack title."
+      }
+    },
+    {
+      "questionId": 1511,
+      "hash": "23051800c1d7f28541f84c4632a17f8e74902c05b699b77a78269ca3a2c40dab",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Removed Dr. Facilier from the stem so memorizing #27’s villain name no longer solves the question; the actual song/film attribution is required.",
+      "context": "Original theatrical song attribution.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The exact number appears in The Princess and the Frog.",
+        "sources": [
+          "b27-ray",
+          "b27-frog-album",
+          "b19-1014"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Princess and the Frog contains this number.",
+          "sources": [
+            "b27-ray",
+            "b27-frog-album",
+            "b19-1014"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Moana is not its originating film.",
+          "sources": [
+            "b27-ray",
+            "b27-frog-album",
+            "b19-1014"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Encanto is not its originating film.",
+          "sources": [
+            "b27-ray",
+            "b27-frog-album",
+            "b19-1014"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Coco is not its originating film.",
+          "sources": [
+            "b27-ray",
+            "b27-frog-album",
+            "b19-1014"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed Dr. Facilier from the stem so memorizing #27’s villain name no longer solves the question; the actual song/film attribution is required."
+      }
+    },
+    {
+      "questionId": 1512,
+      "hash": "04fca82f32ff533b5eafbf3c3c249ffe21dab10f468f5ac29d3f3b1705f4a76a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Used the destination’s proper name, rather than Lighthouse Point alone, and distinguished a destination on an island from a whole private island. #147 asks the preview date, a separate fact.",
+      "context": "Disney Lookout Cay’s historical 2024 opening.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The dated Disney announcement names Lookout Cay on Eleuthera.",
+        "sources": [
+          "b27-lookout"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney Lookout Cay opened on Eleuthera in 2024.",
+          "sources": [
+            "b27-lookout"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Castaway Cay is the older destination on a different island.",
+          "sources": [
+            "b27-lookout"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Discovery Island is not this Bahamian cruise destination.",
+          "sources": [
+            "b27-lookout"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "River Country is not this Bahamian cruise destination.",
+          "sources": [
+            "b27-lookout"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Used the destination’s proper name, rather than Lighthouse Point alone, and distinguished a destination on an island from a whole private island. #147 asks the preview date, a separate fact."
+      }
+    },
+    {
+      "questionId": 1517,
+      "hash": "aab8480b1e6b31d417fce80c939073047928c80cfe7af4cf12e020375c22ae5f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Avoided calling the game card a generic electronic device and avoided implying every case involves Disney villains; Muppet cases also exist.",
+      "context": "Dream/Fantasy offering as of November 2026.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "DCL names the enchanted-art mystery game on Dream and Fantasy.",
+        "sources": [
+          "b27-midship"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Midship Detective Agency is the advertised game.",
+          "sources": [
+            "b27-midship"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cruise Case Files is not the advertised title.",
+          "sources": [
+            "b27-midship"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Villain Hunt is not the advertised title.",
+          "sources": [
+            "b27-midship"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Magic Mystery is not the advertised title.",
+          "sources": [
+            "b27-midship"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Avoided calling the game card a generic electronic device and avoided implying every case involves Disney villains; Muppet cases also exist."
+      }
+    },
+    {
+      "questionId": 1530,
+      "hash": "f85610fcaa3b837c664a7bf58d1099f53c3b7e6779d164455e69a7b4e0d851de",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Removed teddy-bear words that revealed the only Bear answer. Helpers’ participation in enforcement does not make them the authority who assigns arrivals.",
+      "context": "Toy Story 3 (2010), Sunnyside hierarchy.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Lotso controls Sunnyside’s harsh hierarchy; others carry out subordinate roles.",
+        "sources": [
+          "b27-lotso",
+          "b27-lotso-plot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Lots-o’-Huggin’ Bear, or Lotso, is the ruler.",
+          "sources": [
+            "b27-lotso",
+            "b27-lotso-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Big Baby is his enforcer, not the ruler.",
+          "sources": [
+            "b27-lotso",
+            "b27-lotso-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ken cooperates but does not control assignment policy.",
+          "sources": [
+            "b27-lotso",
+            "b27-lotso-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Monkey monitors security rather than directing the system.",
+          "sources": [
+            "b27-lotso",
+            "b27-lotso-plot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed teddy-bear words that revealed the only Bear answer. Helpers’ participation in enforcement does not make them the authority who assigns arrivals."
+      }
+    },
+    {
+      "questionId": 1535,
+      "hash": "598c1d25f7bf488ad91bba9c6ad99fc2c30bd06d9f80e62c2794dba865af7ee7",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Specified 1961 animation, excluded loosely descriptive De Vil Estate alias, and separated naming the location from #858’s rescue-cat identity.",
+      "context": "101 Dalmatians (1961), country-house captivity.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The stolen puppies are held at Hell Hall in Suffolk.",
+        "sources": [
+          "b27-hall",
+          "b27-hall-critic"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Hell Hall is the named captive-puppy location.",
+          "sources": [
+            "b27-hall",
+            "b27-hall-critic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Toad Hall belongs to another Disney story.",
+          "sources": [
+            "b27-hall",
+            "b27-hall-critic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Devil’s Bayou is not this English house.",
+          "sources": [
+            "b27-hall",
+            "b27-hall-critic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sleepy Hollow is not this English house.",
+          "sources": [
+            "b27-hall",
+            "b27-hall-critic"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Specified 1961 animation, excluded loosely descriptive De Vil Estate alias, and separated naming the location from #858’s rescue-cat identity."
+      }
+    },
+    {
+      "questionId": 1537,
+      "hash": "ecbea7f0781bd6574913c172f36224aa5e31358edd98a689e079eda4b8cb0d63",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Some histories include precursors, but explicit 1989 wording and verified release chronology exclude Oliver. The Under the Sea award #158 and preceding-feature #1389 test other facts.",
+      "context": "Conventional Disney Renaissance periodization and theatrical years.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The standard Renaissance timeline starts with the 1989 Little Mermaid.",
+        "sources": [
+          "b27-renaissance",
+          "b26-order"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Little Mermaid is the 1989 starting film.",
+          "sources": [
+            "b27-renaissance",
+            "b26-order"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Beauty and the Beast came in 1991.",
+          "sources": [
+            "b27-renaissance",
+            "b26-order"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Aladdin came in 1992.",
+          "sources": [
+            "b27-renaissance",
+            "b26-order"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Oliver & Company came in 1988 and is a precursor.",
+          "sources": [
+            "b27-renaissance",
+            "b26-order"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Some histories include precursors, but explicit 1989 wording and verified release chronology exclude Oliver. The Under the Sea award #158 and preceding-feature #1389 test other facts."
+      }
+    }
+  ]
+}

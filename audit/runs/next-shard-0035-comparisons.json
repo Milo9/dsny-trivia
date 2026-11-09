@@ -1,0 +1,543 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-09",
+  "scope": [
+    2268,
+    2269,
+    2270,
+    2271,
+    2272,
+    2273,
+    2274,
+    2275,
+    2276,
+    2277,
+    2278,
+    2279,
+    2280,
+    2281,
+    2282,
+    2283,
+    2284,
+    2285,
+    2286,
+    2287,
+    2288,
+    2289,
+    2290,
+    2291,
+    2292,
+    2293,
+    2294,
+    2295,
+    2296,
+    2297,
+    2298,
+    2299,
+    2300,
+    2301,
+    2302,
+    2303,
+    2304,
+    2305,
+    2306,
+    2307,
+    2308,
+    2309,
+    2310,
+    2311,
+    2312,
+    2313,
+    2314,
+    2315,
+    2316,
+    2317
+  ],
+  "topicContext": "Read the complete combined catalog of 1080 unique questions from all 22 applicable topic digests; followed final wording changes with affected film/ship comparisons and cross-shard name searches.",
+  "findings": [
+    {
+      "id": "duplicate-5404a6922e9ad79c3e98",
+      "kind": "duplicate",
+      "questionIds": [
+        2215,
+        2287
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "5404a6922e9ad79c3e98ec011e7d2e3e1b7e2b983283c27b4b0fe030036b12ea",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null,
+      "questions": [
+        {
+          "id": 2215,
+          "question": "Which Coco song was added to Magic Kingdom's Mickey's PhilharMagic in its 2021 update?",
+          "answers": [
+            "Un Poco Loco",
+            "Remember Me",
+            "Proud Corazon",
+            "The World Es Mi Familia"
+          ],
+          "difficulty": "medium",
+          "category": "parks"
+        },
+        {
+          "id": 2287,
+          "question": "In Coco (2017), which song do Miguel and Héctor perform together at the Land of the Dead talent contest?",
+          "answers": [
+            "Un Poco Loco",
+            "Remember Me",
+            "Proud Corazon",
+            "The World Es Mi Familia"
+          ],
+          "difficulty": "medium",
+          "category": "pixar"
+        }
+      ],
+      "rationale": "The 2021 Philharmagic addition is a theme-park programming fact; identifying the song performed by Miguel and Hector at the film contest is a distinct scene fact. One location relationship does not establish the other."
+    },
+    {
+      "id": "duplicate-a0b286420002ecf4ed54",
+      "kind": "duplicate",
+      "questionIds": [
+        1222,
+        2277
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "a0b286420002ecf4ed54af1caa27c0880137363b68c8032f8917443cf0a49eb8",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null,
+      "questions": [
+        {
+          "id": 1222,
+          "question": "Which Disney Cruise Line ship has a bronze statue of Mademoiselle Minnie in its atrium?",
+          "answers": [
+            "Disney Fantasy",
+            "Disney Dream",
+            "Disney Wonder",
+            "Disney Magic"
+          ],
+          "difficulty": "hard",
+          "category": "cruise"
+        },
+        {
+          "id": 2277,
+          "question": "As of November 2026, Disney's Aladdin - A Musical Spectacular is listed for Disney Wish and which other ship?",
+          "answers": [
+            "Disney Fantasy",
+            "Disney Dream",
+            "Disney Magic",
+            "Disney Wonder"
+          ],
+          "difficulty": "medium",
+          "category": "cruise"
+        }
+      ],
+      "rationale": "Mademoiselle Minnie in the atrium and Aladdin in the theatre are separate entertainment/design facts. The statue identification does not establish the current production assignment."
+    },
+    {
+      "id": "duplicate-a87da87094d9912c3ab0",
+      "kind": "duplicate",
+      "questionIds": [
+        743,
+        2276
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "a87da87094d9912c3ab0e045899e1d627781eeb6c44d5bdecd6b5242476e2a9a",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null,
+      "questions": [
+        {
+          "id": 743,
+          "question": "Which Disney Cruise Line ship sailed its maiden voyage in January 2011?",
+          "answers": [
+            "Disney Dream",
+            "Disney Fantasy",
+            "Disney Wish",
+            "Disney Treasure"
+          ],
+          "difficulty": "hard",
+          "category": "cruise"
+        },
+        {
+          "id": 2276,
+          "question": "Which Disney Cruise Line ship debuted a new Beauty and the Beast stage production in November 2017?",
+          "answers": [
+            "Disney Dream",
+            "Disney Fantasy",
+            "Disney Wish",
+            "Disney Magic"
+          ],
+          "difficulty": "medium",
+          "category": "cruise"
+        }
+      ],
+      "rationale": "The 2011 maiden voyage and the 2017 Beauty and the Beast debut are separate historical events. Identifying the ship in one event does not establish that it hosted the later production."
+    },
+    {
+      "id": "duplicate-af16e889b82c231aba0a",
+      "kind": "duplicate",
+      "questionIds": [
+        2274,
+        2346
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "af16e889b82c231aba0aae43f2ac7f1b7e50c4123fbc3048d0d171a683636e0b",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null,
+      "questions": [
+        {
+          "id": 2274,
+          "question": "Toy Story: The Musical had its 2008 premiere in the Walt Disney Theatre aboard which Disney Cruise Line ship?",
+          "answers": [
+            "Disney Wonder",
+            "Disney Magic",
+            "Disney Dream",
+            "Disney Fantasy"
+          ],
+          "difficulty": "hard",
+          "category": "cruise"
+        },
+        {
+          "id": 2346,
+          "question": "'Frozen: A Musical Spectacular' first premiered on Disney Cruise Line in 2016 aboard which ship, before later also playing on the Disney Fantasy?",
+          "answers": [
+            "Disney Wonder",
+            "Disney Magic",
+            "Disney Dream",
+            "Disney Wish"
+          ],
+          "difficulty": "medium",
+          "category": "cruise"
+        }
+      ],
+      "rationale": "Toy Story in 2008 and Frozen in 2016 are different productions and debut events. Knowing either was on Wonder does not locate the other without another fact."
+    },
+    {
+      "id": "duplicate-b8b1e6ecfc83b585ea02",
+      "kind": "duplicate",
+      "questionIds": [
+        1117,
+        2301
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "b8b1e6ecfc83b585ea02f638a2d7eb96f9a9ed6b7900523c95892e520da0f064",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null,
+      "questions": [
+        {
+          "id": 1117,
+          "question": "In The Little Mermaid (1989), what is Prince Eric's dog named?",
+          "answers": [
+            "Max",
+            "Bruno",
+            "Major",
+            "Sultan"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        },
+        {
+          "id": 2301,
+          "question": "In the animated The Little Mermaid (1989), what is Grimsby's role in Prince Eric's household?",
+          "answers": [
+            "Personal attendant and adviser",
+            "Captain of the royal guard",
+            "Head cook of the palace",
+            "Court composer and musician"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        }
+      ],
+      "rationale": "Eric dog name Max does not establish Grimsby household role. The common film and Prince Eric wording describe different relationships and answers."
+    },
+    {
+      "id": "duplicate-c4872626fbb94a8ae483",
+      "kind": "duplicate",
+      "questionIds": [
+        725,
+        2295
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "c4872626fbb94a8ae483522619722f06437163db65221f170067f9956365db9c",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null,
+      "questions": [
+        {
+          "id": 725,
+          "question": "Who composed the orchestral score for The Hunchback of Notre Dame (1996)?",
+          "answers": [
+            "Alan Menken",
+            "Stephen Schwartz",
+            "Howard Ashman",
+            "Tim Rice"
+          ],
+          "difficulty": "hard",
+          "category": "music"
+        },
+        {
+          "id": 2295,
+          "question": "Which Disney composer completed a competitive EGOT in July 2020?",
+          "answers": [
+            "Alan Menken",
+            "Randy Newman",
+            "Christophe Beck",
+            "Michael Giacchino"
+          ],
+          "difficulty": "medium",
+          "category": "music"
+        }
+      ],
+      "rationale": "Scoring Hunchback does not establish completion of a competitive EGOT in July 2020; an artistic credit and later award milestone are distinct."
+    },
+    {
+      "id": "duplicate-ccc358ec1ff1f43aba0b",
+      "kind": "duplicate",
+      "questionIds": [
+        1133,
+        2303
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "ccc358ec1ff1f43aba0b7fe1f2908b1be9c72d12f5c03a2c5ac3991a464592c8",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null,
+      "questions": [
+        {
+          "id": 1133,
+          "question": "In Frozen (2013), which visiting dignitary sends two bodyguards with Hans to search for Anna?",
+          "answers": [
+            "The Duke of Weselton",
+            "Prince Hans",
+            "Oaken",
+            "King Runeard"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        },
+        {
+          "id": 2303,
+          "question": "Which character does Alan Tudyk voice in the original English-language Frozen (2013)?",
+          "answers": [
+            "The Duke of Weselton",
+            "Prince Hans",
+            "Olaf",
+            "Kristoff"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        }
+      ],
+      "rationale": "The Duke sending bodyguards is a plot action. Alan Tudyk voicing him is an English cast credit. Neither fact establishes the other merely because the character identity is shared."
+    },
+    {
+      "id": "duplicate-d255c327723d9d4e4a76",
+      "kind": "duplicate",
+      "questionIds": [
+        1221,
+        2276
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "d255c327723d9d4e4a760a70993194fbd99a20439580f39152c26dbb157852a2",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null,
+      "questions": [
+        {
+          "id": 1221,
+          "question": "Which Disney Cruise Line ship has a bronze statue of Admiral Donald in its atrium?",
+          "answers": [
+            "Disney Dream",
+            "Disney Magic",
+            "Disney Wonder",
+            "Disney Fantasy"
+          ],
+          "difficulty": "hard",
+          "category": "cruise"
+        },
+        {
+          "id": 2276,
+          "question": "Which Disney Cruise Line ship debuted a new Beauty and the Beast stage production in November 2017?",
+          "answers": [
+            "Disney Dream",
+            "Disney Fantasy",
+            "Disney Wish",
+            "Disney Magic"
+          ],
+          "difficulty": "medium",
+          "category": "cruise"
+        }
+      ],
+      "rationale": "The Admiral Donald atrium statue and 2017 Beauty and the Beast debut are independent ship details. Identifying the statue ship does not locate the later production."
+    },
+    {
+      "id": "duplicate-deeb33c484ddad9b6b48",
+      "kind": "duplicate",
+      "questionIds": [
+        159,
+        2295
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "deeb33c484ddad9b6b489eccbbd33880062bc75e07f9a459d73a26a71cf70223",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null,
+      "questions": [
+        {
+          "id": 159,
+          "question": "Who composed the music for The Little Mermaid, Beauty and the Beast, and Aladdin?",
+          "answers": [
+            "Alan Menken",
+            "Elton John",
+            "Howard Ashman",
+            "Phil Collins"
+          ],
+          "difficulty": "medium",
+          "category": "music"
+        },
+        {
+          "id": 2295,
+          "question": "Which Disney composer completed a competitive EGOT in July 2020?",
+          "answers": [
+            "Alan Menken",
+            "Randy Newman",
+            "Christophe Beck",
+            "Michael Giacchino"
+          ],
+          "difficulty": "medium",
+          "category": "music"
+        }
+      ],
+      "rationale": "Writing Little Mermaid/Beauty/Aladdin music does not establish completion of a competitive EGOT in 2020. The award milestone is not another restatement of those credits."
+    },
+    {
+      "id": "duplicate-e929757d4cf14cef014c",
+      "kind": "duplicate",
+      "questionIds": [
+        2296,
+        2297
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "e929757d4cf14cef014c7b5bd525f6c6d2ed9321c558d75c487710c0fe931c69",
+      "priority": 1,
+      "signals": [
+        "inverse-answer-and-stem"
+      ],
+      "decision": null,
+      "questions": [
+        {
+          "id": 2296,
+          "question": "In Tarzan (1999), what is the name of the gorilla troop leader and Kala's mate?",
+          "answers": [
+            "Kerchak",
+            "Tantor",
+            "Terk",
+            "Sabor"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        },
+        {
+          "id": 2297,
+          "question": "In the 1999 Disney film, who does the dying Kerchak name as his successor to lead the gorilla troop?",
+          "answers": [
+            "Tarzan",
+            "Terk",
+            "Tantor",
+            "Kala"
+          ],
+          "difficulty": "easy",
+          "category": "characters"
+        }
+      ],
+      "rationale": "Kerchak identity as Kala mate and original leader differs from his choice of Tarzan as successor at death. Knowing the original leader does not identify the chosen successor; knowing Tarzan is the successor does not supply Kala mate without the separate earlier relationship."
+    },
+    {
+      "id": "leak-bd67b43ed9b4ebd4c999",
+      "kind": "leak",
+      "questionIds": [
+        2316
+      ],
+      "detail": {
+        "tier": 2,
+        "token": "prince"
+      },
+      "signature": "bd67b43ed9b4ebd4c9992f9e830b5ceee07925089051dbbd387e54d197b19ad5",
+      "decision": null,
+      "questions": [
+        {
+          "id": 2316,
+          "question": "In The Princess and the Frog, what lifelong dream defines much of Charlotte La Bouff's storyline?",
+          "answers": [
+            "Marrying a real prince",
+            "Becoming a famous jazz singer",
+            "Opening her own restaurant",
+            "Winning a beauty pageant"
+          ],
+          "difficulty": "easy",
+          "category": "characters"
+        }
+      ],
+      "rationale": "Princess is part of the required film title, not a statement of Charlotte ambition. Tiana restaurant and Louis musical ambition in the same film show that the title does not make every character seek a royal marriage."
+    },
+    {
+      "id": "manual-6c24a178d2e1e3483a94",
+      "kind": "manual",
+      "questionIds": [
+        2308
+      ],
+      "detail": "The full Kenneth Sean Carson name is not established by the film; the screenplay only uses Kenneth. Correct to the film-backed name.",
+      "signature": "5e7e8f7fc580bb2dbdb16e360c530678b6fc2cfef4728721df27957b95fe8878",
+      "decision": {
+        "signature": "b9f567e225fa694b44e5049d4f4f3c99bd6ebf529cd503958bea83360659aecb",
+        "questionIds": [
+          2308
+        ],
+        "status": "unresolved",
+        "reason": "The full Kenneth Sean Carson name is not established by the film; the screenplay only uses Kenneth. Correct to the film-backed name.",
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "history": []
+      },
+      "questions": [
+        {
+          "id": 2308,
+          "question": "In Toy Story 3 (2010), what longer first name does Lotso use when addressing Ken?",
+          "answers": [
+            "Kenneth",
+            "Kendall",
+            "Kenton",
+            "Kendrick"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        }
+      ],
+      "rationale": "Replaced unsupported full film-name assertion with the screenplay-backed Kenneth exchange; see final schema-2 review."
+    }
+  ],
+  "limitations": "No current local player-report export was available and no live Firestore connector was connected. Player reports were not checked or resolved. Pre-existing manual concern on #2324 is outside this batch."
+}

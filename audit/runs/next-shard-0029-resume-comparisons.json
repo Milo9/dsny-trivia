@@ -1,0 +1,101 @@
+[
+  {
+    "findingId": "duplicate-66496ebf9369d4154a49",
+    "questions": [
+      {
+        "id": 1607,
+        "question": "Which CEO led The Walt Disney Company through the 1984\u20132005 era that included the 'Disney Renaissance' of animated hits?",
+        "answers": [
+          "Michael Eisner",
+          "Bob Iger",
+          "Michael Ovitz",
+          "Frank Wells"
+        ],
+        "difficulty": "medium",
+        "category": "walt"
+      },
+      {
+        "id": 2269,
+        "question": "Roy E. Disney's 2003 resignation and 'Save Disney' campaign publicly called for the ouster of which Disney CEO?",
+        "answers": [
+          "Michael Eisner",
+          "Bob Iger",
+          "Bob Chapek",
+          "Frank Wells"
+        ],
+        "difficulty": "medium",
+        "category": "walt"
+      }
+    ],
+    "decision": "accepted",
+    "reviewer": "Codex",
+    "at": "2026-11-08",
+    "reason": "1607 tests Eisner\u2019s CEO tenure; 2269 tests the target of Roy E. Disney\u2019s 2003 campaign. Shared person, different historical relationships; knowing a CEO tenure does not establish who the campaign sought to oust."
+  },
+  {
+    "findingId": "duplicate-9784a0f0f4cde2cef174",
+    "questions": [
+      {
+        "id": 1609,
+        "question": "In what year did The Walt Disney Company acquire Lucasfilm, gaining the rights to Star Wars?",
+        "answers": [
+          "2012",
+          "2009",
+          "2015",
+          "2006"
+        ],
+        "difficulty": "medium",
+        "category": "walt"
+      },
+      {
+        "id": 2254,
+        "question": "In what year did Grizzly Gulch, home to the Big Grizzly Mountain Runaway Mine Cars coaster, open at Hong Kong Disneyland?",
+        "answers": [
+          "2012",
+          "2010",
+          "2014",
+          "2016"
+        ],
+        "difficulty": "hard",
+        "category": "parks"
+      }
+    ],
+    "decision": "accepted",
+    "reviewer": "Codex",
+    "at": "2026-11-08",
+    "reason": "1609 asks the Lucasfilm acquisition year; 2254 asks Grizzly Gulch opening year. Sharing 2012 does not establish either unrelated event from the other."
+  },
+  {
+    "findingId": "duplicate-b3d31c4c12fa1238f93d",
+    "questions": [
+      {
+        "id": 1609,
+        "question": "In what year did The Walt Disney Company acquire Lucasfilm, gaining the rights to Star Wars?",
+        "answers": [
+          "2012",
+          "2009",
+          "2015",
+          "2006"
+        ],
+        "difficulty": "medium",
+        "category": "walt"
+      },
+      {
+        "id": 2240,
+        "question": "In what year did Cars Land, home to Radiator Springs Racers, open at Disney California Adventure?",
+        "answers": [
+          "2012",
+          "2010",
+          "2015",
+          "2001"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      }
+    ],
+    "decision": "accepted",
+    "reviewer": "Codex",
+    "at": "2026-11-08",
+    "reason": "1609 asks the Lucasfilm acquisition year; 2240 asks Cars Land opening year. Sharing 2012 does not establish either unrelated event from the other."
+  }
+]

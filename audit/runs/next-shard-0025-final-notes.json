@@ -1,0 +1,3159 @@
+{
+  "schema": 1,
+  "reviewer": "Codex",
+  "at": "2026-11-08",
+  "sourcesChecked": [
+    "b12-liberty",
+    "b13-dwarfs",
+    "b17-922",
+    "b20-1054",
+    "b24-colors",
+    "b25-alice",
+    "b25-america",
+    "b25-avengers",
+    "b25-basil",
+    "b25-braveplot",
+    "b25-cake",
+    "b25-core",
+    "b25-croquet",
+    "b25-curse",
+    "b25-cursecor",
+    "b25-darla",
+    "b25-dolly",
+    "b25-dorothea",
+    "b25-dumbo",
+    "b25-ercole",
+    "b25-fergus",
+    "b25-festival",
+    "b25-fire",
+    "b25-firecor",
+    "b25-frozenland",
+    "b25-galaxy",
+    "b25-goob",
+    "b25-hag",
+    "b25-hector",
+    "b25-iago",
+    "b25-legend",
+    "b25-lillian",
+    "b25-louis",
+    "b25-marceline",
+    "b25-mary",
+    "b25-medal",
+    "b25-michael",
+    "b25-mo",
+    "b25-molt",
+    "b25-mulancontext",
+    "b25-nemoport",
+    "b25-pando",
+    "b25-pandora",
+    "b25-parents",
+    "b25-plant",
+    "b25-plus",
+    "b25-presidents",
+    "b25-prince",
+    "b25-pub",
+    "b25-sabor",
+    "b25-saborcor",
+    "b25-sleep",
+    "b25-space",
+    "b25-thunderca",
+    "b25-thunderfl",
+    "b25-tiger",
+    "b25-tokyo",
+    "b25-tokyocor",
+    "b25-tower",
+    "b25-weenie",
+    "b25-weeniecor",
+    "b25-welcome",
+    "b25-wisps",
+    "b25-wolf",
+    "b25-zhou",
+    "matterhorn"
+  ],
+  "reviews": [
+    {
+      "questionId": 1302,
+      "hash": "091899bee58555830de1ed9467e7fc3549e060875d1242cce693e9d176d525c1",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. The question asks the videotape title, not another musical that could also exist in his collection; the particular video is identified.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. The treasured video is Hello, Dolly!.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The treasured video is Hello, Dolly!.",
+        "sources": [
+          "b25-dolly"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The truck description identifies this musical.",
+          "sources": [
+            "b25-dolly"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Singin' in the Rain is a different musical title.",
+          "sources": [
+            "b25-dolly"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Sound of Music is not the identified recording.",
+          "sources": [
+            "b25-dolly"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "West Side Story is not the named video.",
+          "sources": [
+            "b25-dolly"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The question asks the videotape title, not another musical that could also exist in his collection; the particular video is identified."
+      }
+    },
+    {
+      "questionId": 1304,
+      "hash": "5a7310f1f2c5eb77078b2ea0b1c2473e7c2d769eeb7569d72949b5b336f860e7",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. WALL-E initially finds it; EVE discovers it through him. Discover does not claim EVE was first. The plant, rather than general habitability alone, triggers the return protocol.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. The returned plant provides the living evidence needed for the return course.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The returned plant provides the living evidence needed for the return course.",
+        "sources": [
+          "b25-plant"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The green seedling is the item the holo-detector verifies.",
+          "sources": [
+            "b25-plant"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A water source is not the verified specimen.",
+          "sources": [
+            "b25-plant"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "An air pocket is not the specimen EVE brings back.",
+          "sources": [
+            "b25-plant"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A solar panel is equipment, not the returned biological evidence.",
+          "sources": [
+            "b25-plant"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "WALL-E initially finds it; EVE discovers it through him. Discover does not claim EVE was first. The plant, rather than general habitability alone, triggers the return protocol."
+      }
+    },
+    {
+      "questionId": 1305,
+      "hash": "e4032ad8f1e044846c9b7d9ed1e83a4991741d4b6f22c1f73ac927b7f3d838d9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Removed unsupported color and every-surface language; identity rests on the specific robot role, not an assertion about all cleaning everywhere.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. M-O is the contaminant-cleaning robot aboard the Axiom.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "M-O is the contaminant-cleaning robot aboard the Axiom.",
+        "sources": [
+          "b25-mo"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Pixar explicitly identifies M-O with this role.",
+          "sources": [
+            "b25-mo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "D-FIB is a different identifier.",
+          "sources": [
+            "b25-mo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "EVE-2 is not the identified cleaner.",
+          "sources": [
+            "b25-mo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "R-OC is not the name given for the cleaner.",
+          "sources": [
+            "b25-mo"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed unsupported color and every-surface language; identity rests on the specific robot role, not an assertion about all cleaning everywhere."
+      }
+    },
+    {
+      "questionId": 1306,
+      "hash": "22e20827dd87ccd7177155575add90ca050f86387b87627c5a62829a6803498b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Replaced loose supernatural synonyms that could describe wisps; the final options denote different phenomena.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. The film names the guiding lights will-o-the-wisps.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The film names the guiding lights will-o-the-wisps.",
+        "sources": [
+          "b25-wisps"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Pixar names the supernatural guides.",
+          "sources": [
+            "b25-wisps"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fireflies are insects, not the named guides.",
+          "sources": [
+            "b25-wisps"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lanterns are carried or floating objects, not wisps.",
+          "sources": [
+            "b25-wisps"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Falling stars are astronomical phenomena, not these guides.",
+          "sources": [
+            "b25-wisps"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Replaced loose supernatural synonyms that could describe wisps; the final options denote different phenomena."
+      }
+    },
+    {
+      "questionId": 1307,
+      "hash": "bfa8684c7a57c810497567f8a9758c357b84162ca65603058e1b1ebd4fa5c27b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. The original implied Merida herself risked that bear transformation; final wording asks only the revealed prince identity. Clan names cannot substitute for that identity.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. The ruined-castle revelation identifies the prince as Mor'du.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The ruined-castle revelation identifies the prince as Mor'du.",
+        "sources": [
+          "b25-prince",
+          "b25-braveplot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Merida explicitly recognizes Mor'du as the transformed prince.",
+          "sources": [
+            "b25-prince",
+            "b25-braveplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Macintosh is not the revealed prince-bear.",
+          "sources": [
+            "b25-prince",
+            "b25-braveplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dingwall is not the revealed prince-bear.",
+          "sources": [
+            "b25-prince",
+            "b25-braveplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ruadh is not the identity revealed in this scene.",
+          "sources": [
+            "b25-prince",
+            "b25-braveplot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The original implied Merida herself risked that bear transformation; final wording asks only the revealed prince identity. Clan names cannot substitute for that identity."
+      }
+    },
+    {
+      "questionId": 1308,
+      "hash": "75317a05af37f5ef915e7693168ce4cee4744df21e4b1265c909ae7b6ae97795",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Bear-loving was misleading: Fergus hunts bears. Hubert's presence among the triplet names does not make King Hubert her father.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Fergus is Merida's father and lost his leg fighting Mor'du.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Fergus is Merida's father and lost his leg fighting Mor'du.",
+        "sources": [
+          "b25-fergus"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Fergus has the stated family relationship and injury.",
+          "sources": [
+            "b25-fergus"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "King Hubert is not Merida's father.",
+          "sources": [
+            "b25-fergus"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dingwall is a visiting clan lord, not her father.",
+          "sources": [
+            "b25-fergus"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Macintosh is a visiting lord, not her father.",
+          "sources": [
+            "b25-fergus"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Bear-loving was misleading: Fergus hunts bears. Hubert's presence among the triplet names does not make King Hubert her father."
+      }
+    },
+    {
+      "questionId": 1309,
+      "hash": "d80a0cd5385918037218141afeb1a9fec8c1af92f44a27b916b38ac4b803808f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Removed bannock, which can be described as a kind of cake/bread. The specific transformation food is distinguished from food eaten at other times.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. The witch's cake causes Elinor's transformation.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The witch's cake causes Elinor's transformation.",
+        "sources": [
+          "b25-cake",
+          "b25-braveplot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Dialogue calls the spell-food a cake.",
+          "sources": [
+            "b25-cake",
+            "b25-braveplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A pie is not the food given in this sequence.",
+          "sources": [
+            "b25-cake",
+            "b25-braveplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "An apple is not the spell-food in Brave.",
+          "sources": [
+            "b25-cake",
+            "b25-braveplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Soup is not what Elinor eats to transform.",
+          "sources": [
+            "b25-cake",
+            "b25-braveplot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed bannock, which can be described as a kind of cake/bread. The specific transformation food is distinguished from food eaten at other times."
+      }
+    },
+    {
+      "questionId": 1311,
+      "hash": "0b5960d182da3ade83e6ce8d9497fbbbccea74a79f5bc2d771fbc5604654263b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. No inference from being a grasshopper alone: the source explicitly supplies the sibling relation and name.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Molt is Hopper's sibling.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Molt is Hopper's sibling.",
+        "sources": [
+          "b25-molt"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Pixar explicitly gives Molt this relationship.",
+          "sources": [
+            "b25-molt"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Thumper is not the identified sibling.",
+          "sources": [
+            "b25-molt"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Axel is not the named brother.",
+          "sources": [
+            "b25-molt"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Loco is not Hopper's brother in the cited profile.",
+          "sources": [
+            "b25-molt"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "No inference from being a grasshopper alone: the source explicitly supplies the sibling relation and name."
+      }
+    },
+    {
+      "questionId": 1312,
+      "hash": "c03fa62c7d4ca25c1a52da9eea274ab1432ccf8b06729acf15d8e8b529396dff",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Distinct from #1034: memory orbs asks the container; this asks the significant subset and its island-power function. Ordinary memory orbs do not all qualify.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Core memories power the personality islands.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Core memories power the personality islands.",
+        "sources": [
+          "b25-core"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Pixar supplies this exact term.",
+          "sources": [
+            "b25-core"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Key memories is not the film's label for this subset.",
+          "sources": [
+            "b25-core"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Star memories is not the designated term.",
+          "sources": [
+            "b25-core"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Anchor memories is not the designated term.",
+          "sources": [
+            "b25-core"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinct from #1034: memory orbs asks the container; this asks the significant subset and its island-power function. Ordinary memory orbs do not all qualify."
+      }
+    },
+    {
+      "questionId": 1313,
+      "hash": "b10f8385bb4ec59207457734f21a1ed1202b4d781f931c847f0c3fbc2a4f07ad",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Blue hair does not qualify under predominant body color. #188 and #309 ask other emotions; Belle's yellow gown in #205 is unrelated.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Joy's predominant body color is yellow.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Joy's predominant body color is yellow.",
+        "sources": [
+          "b24-colors"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Joy is identified as yellow.",
+          "sources": [
+            "b24-colors"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Blue is not her predominant body color.",
+          "sources": [
+            "b24-colors"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Purple is Fear's color, not Joy's body color.",
+          "sources": [
+            "b24-colors"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Orange is not her predominant body color.",
+          "sources": [
+            "b24-colors"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Blue hair does not qualify under predominant body color. #188 and #309 ask other emotions; Belle's yellow gown in #205 is unrelated."
+      }
+    },
+    {
+      "questionId": 1316,
+      "hash": "7020e00c9f139beffa2a76540d045aca801c74c32f216b5b7768dfd56ead780e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Curley also performs with Joe, so the stem now specifies saxophonist and bandleader. Removed fictitious drummer/bassist labels from other choices.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Joe seeks a place in saxophonist Dorothea Williams' band.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Joe seeks a place in saxophonist Dorothea Williams' band.",
+        "sources": [
+          "b25-dorothea"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Dorothea is the named saxophonist and bandleader.",
+          "sources": [
+            "b25-dorothea"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Connie is not the identified jazz bandleader.",
+          "sources": [
+            "b25-dorothea"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Libba Gardner is not the identified saxophonist.",
+          "sources": [
+            "b25-dorothea"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Curley is the drummer who arranges Joe's audition, not the saxophonist.",
+          "sources": [
+            "b25-dorothea"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Curley also performs with Joe, so the stem now specifies saxophonist and bandleader. Removed fictitious drummer/bassist labels from other choices."
+      }
+    },
+    {
+      "questionId": 1317,
+      "hash": "467f096dc927ed98b89997cc360b18755f6023ab95188e960d4d0420863004b3",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Removed the misleading waiting-at-the-Institute clause: the name question does not depend on their final location outside the facility.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Dory's parents are Jenny and Charlie.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Dory's parents are Jenny and Charlie.",
+        "sources": [
+          "b25-parents"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The named parental pair is Charlie and Jenny.",
+          "sources": [
+            "b25-parents"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bob and Carol does not match that pair.",
+          "sources": [
+            "b25-parents"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gerald and Nemo is not the parental pair.",
+          "sources": [
+            "b25-parents"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Marlin and Pearl is not that pair.",
+          "sources": [
+            "b25-parents"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the misleading waiting-at-the-Institute clause: the name question does not depend on their final location outside the facility."
+      }
+    },
+    {
+      "questionId": 1320,
+      "hash": "dce5a4d421d1712aaefeae5a61fdddc8948c57df6448acc3934ad21fef3ed748",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Repeat champion is supported; each year would overstate a universal record and has been removed. Portorosso Cup naming #1043 tests a different fact.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Ercole Visconti is the bully and repeat champion.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Ercole Visconti is the bully and repeat champion.",
+        "sources": [
+          "b25-ercole"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Pixar identifies Ercole with both roles.",
+          "sources": [
+            "b25-ercole"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Giulio Marcovaldo is not the named bully.",
+          "sources": [
+            "b25-ercole"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Marco Paguro is not the named repeat champion.",
+          "sources": [
+            "b25-ercole"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dario Scorfano is not the identified character.",
+          "sources": [
+            "b25-ercole"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Repeat champion is supported; each year would overstate a universal record and has been removed. Portorosso Cup naming #1043 tests a different fact."
+      }
+    },
+    {
+      "questionId": 1321,
+      "hash": "4f3d4bdbc4a82a1bf0f25434e12ea7892af7037c33c29e65ff3aebabfd4b6a88",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Replaced subterranean-organism description with the cultivated crop to avoid confusing the plant with the giant creature containing Avalonia.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Searcher cultivates Pando as plant-based energy.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Searcher cultivates Pando as plant-based energy.",
+        "sources": [
+          "b25-pando"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The crop is explicitly named Pando.",
+          "sources": [
+            "b25-pando"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Splat is not the cultivated energy crop.",
+          "sources": [
+            "b25-pando"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Meridian is not the crop's name.",
+          "sources": [
+            "b25-pando"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Avia is not the identified energy crop.",
+          "sources": [
+            "b25-pando"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Replaced subterranean-organism description with the cultivated crop to avoid confusing the plant with the giant creature containing Avalonia."
+      }
+    },
+    {
+      "questionId": 1322,
+      "hash": "3ec157c9cfa340a3f109ed5be07dc9e77fab70086d15d31f2569bd5613a2f343",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Legend is a character name here, not a generic description. The three-legged detail is explicit in the Portuguese Disney profile.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Legend is the Clade family's three-legged dog.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Legend is the Clade family's three-legged dog.",
+        "sources": [
+          "b25-pando",
+          "b25-legend"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Both Disney accounts name the dog Legend.",
+          "sources": [
+            "b25-pando",
+            "b25-legend"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Major is not the Clade dog's name.",
+          "sources": [
+            "b25-pando",
+            "b25-legend"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Stomper is not the identified dog.",
+          "sources": [
+            "b25-pando",
+            "b25-legend"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bolt is not the Clade dog.",
+          "sources": [
+            "b25-pando",
+            "b25-legend"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Legend is a character name here, not a generic description. The three-legged detail is explicit in the Portuguese Disney profile."
+      }
+    },
+    {
+      "questionId": 1323,
+      "hash": "09c892d303e086981af195e246a5ccc5f303838b06d7fe0e5083ef120abb5a91",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Wendy is also rescued later, so the princess qualification is essential. The final question fixes the animated version without the older ethnic label.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Tiger Lily is the princess Peter rescues.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Tiger Lily is the princess Peter rescues.",
+        "sources": [
+          "b25-tiger"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "D23 identifies Tiger Lily and this rescue.",
+          "sources": [
+            "b25-tiger"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wendy is a Darling child, not the princess.",
+          "sources": [
+            "b25-tiger"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tinker Bell is the fairy, not that princess.",
+          "sources": [
+            "b25-tiger"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jane is not the princess named in this 1953 rescue.",
+          "sources": [
+            "b25-tiger"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Wendy is also rescued later, so the princess qualification is essential. The final question fixes the animated version without the older ethnic label."
+      }
+    },
+    {
+      "questionId": 1324,
+      "hash": "789426eb9c8305593d237685b4c28cab4425d64a895da1ca1ede700a3d75a2db",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. #310 names the brothers but supplies no age ordering. The fixed 1953 version prevents mixing adaptations.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Michael is the youngest Darling child in the 1953 film.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Michael is the youngest Darling child in the 1953 film.",
+        "sources": [
+          "b25-michael"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The cast description explicitly calls Michael youngest.",
+          "sources": [
+            "b25-michael"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "John is the middle child.",
+          "sources": [
+            "b25-michael"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wendy is older, not youngest.",
+          "sources": [
+            "b25-michael"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cubby is a Lost Boy rather than a Darling child.",
+          "sources": [
+            "b25-michael"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "#310 names the brothers but supplies no age ordering. The fixed 1953 version prevents mixing adaptations."
+      }
+    },
+    {
+      "questionId": 1325,
+      "hash": "bf4af77b3df826118dec792fea6ad5203854b6a23ebf293c44783972ef9b018c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Mallet terminology alone is not proof; the studio product description explicitly names croquet and the detailed plot corroborates the scene.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. The Queen's game is croquet.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Queen's game is croquet.",
+        "sources": [
+          "b25-croquet",
+          "b25-alice"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney identifies the flamingos and hedgehogs as croquet characters.",
+          "sources": [
+            "b25-croquet",
+            "b25-alice"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Polo is not the named game.",
+          "sources": [
+            "b25-croquet",
+            "b25-alice"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cricket is not the Queen's game in this scene.",
+          "sources": [
+            "b25-croquet",
+            "b25-alice"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Badminton is not the identified game.",
+          "sources": [
+            "b25-croquet",
+            "b25-alice"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Mallet terminology alone is not proof; the studio product description explicitly names croquet and the detailed plot corroborates the scene."
+      }
+    },
+    {
+      "questionId": 1327,
+      "hash": "ccd066f5a1ce80d84b8df2ca78684f09c323de9bfd2028c44c45a3ddd80a724a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. All options are now names. Doris is a rogue robot but is the hat, not the man wearing it; this removes the former long correct-answer explanation and misleading invented biography.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Bowler Hat Guy is adult Goob.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Bowler Hat Guy is adult Goob.",
+        "sources": [
+          "b25-goob"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Goob is explicitly revealed as Bowler Hat Guy.",
+          "sources": [
+            "b25-goob"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lewis becomes Cornelius Robinson.",
+          "sources": [
+            "b25-goob"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wilbur is Lewis's future son.",
+          "sources": [
+            "b25-goob"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Carl is the Robinson family robot.",
+          "sources": [
+            "b25-goob"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All options are now names. Doris is a rogue robot but is the hat, not the man wearing it; this removes the former long correct-answer explanation and misleading invented biography."
+      }
+    },
+    {
+      "questionId": 1331,
+      "hash": "41b140a407821f024dcb92efe7511be60fdafd2b7995b3d5c881ecce3e64e404",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Not the broad wish to become human: the question asks the specific skill sought. Shere Khan's fear of fire is a separate character relationship.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Louie wants Mowgli's fire-making skill.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Louie wants Mowgli's fire-making skill.",
+        "sources": [
+          "b25-fire",
+          "b25-firecor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The official character profile explicitly names fire-making.",
+          "sources": [
+            "b25-fire",
+            "b25-firecor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Shelter building is not the requested skill.",
+          "sources": [
+            "b25-fire",
+            "b25-firecor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Growing crops is not the skill he is bargaining for.",
+          "sources": [
+            "b25-fire",
+            "b25-firecor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Writing is not the requested skill.",
+          "sources": [
+            "b25-fire",
+            "b25-firecor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Not the broad wish to become human: the question asks the specific skill sought. Shere Khan's fear of fire is a separate character relationship."
+      }
+    },
+    {
+      "questionId": 1332,
+      "hash": "7225ffea94444993b9f5ee5660076300f6a94640c2d2e35f3db8d15d6e2cefc1",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Beneath means the mouse home below Holmes' floorboards, not that Basil occupies a different postal address. All four complete addresses were compared.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Basil lives underneath 221B Baker Street.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Basil lives underneath 221B Baker Street.",
+        "sources": [
+          "b25-basil"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The contemporary review explicitly gives this address.",
+          "sources": [
+            "b25-basil"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "10 Downing Street is not the named home.",
+          "sources": [
+            "b25-basil"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1 Scotland Yard is not the address in the review.",
+          "sources": [
+            "b25-basil"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "221A Whitehall differs in number and street.",
+          "sources": [
+            "b25-basil"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Beneath means the mouse home below Holmes' floorboards, not that Basil occupies a different postal address. All four complete addresses were compared."
+      }
+    },
+    {
+      "questionId": 1333,
+      "hash": "dd30237f624ecd52b8c7258bbd0ec7af8dd6d38ef811456c82cfbe5c1acdaef9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Removed generic fairy-godmother wording that could overlap an enchantress. The film version is explicit; named crossover characters cannot fit this revealed identity.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. The rejected beggar is an enchantress who curses the prince.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The rejected beggar is an enchantress who curses the prince.",
+        "sources": [
+          "b25-curse",
+          "b25-cursecor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The opening narrator reveals her enchantress identity.",
+          "sources": [
+            "b25-curse",
+            "b25-cursecor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Maleficent is not the revealed visitor.",
+          "sources": [
+            "b25-curse",
+            "b25-cursecor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ursula is not the visitor in the opening narration.",
+          "sources": [
+            "b25-curse",
+            "b25-cursecor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Blue Fairy is not the woman who casts this curse.",
+          "sources": [
+            "b25-curse",
+            "b25-cursecor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed generic fairy-godmother wording that could overlap an enchantress. The film version is explicit; named crossover characters cannot fit this revealed identity."
+      }
+    },
+    {
+      "questionId": 1336,
+      "hash": "99c26045c65c3ac3e757f63f84752055660d4879820ef57fb802dba4d9ce15f2",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Timothy gives the final feather-free reassurance, so the revised question asks the earlier help. Distinct from #1054's object: this asks the bird group.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. The crows help Dumbo gain confidence to fly.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The crows help Dumbo gain confidence to fly.",
+        "sources": [
+          "b25-dumbo",
+          "b20-1054"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The tree scene has the crows assisting Timothy.",
+          "sources": [
+            "b25-dumbo",
+            "b20-1054"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Seagulls are not the birds in that confidence scene.",
+          "sources": [
+            "b25-dumbo",
+            "b20-1054"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pelicans are not that group.",
+          "sources": [
+            "b25-dumbo",
+            "b20-1054"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The stork delivers Dumbo but does not give this flying encouragement.",
+          "sources": [
+            "b25-dumbo",
+            "b20-1054"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Timothy gives the final feather-free reassurance, so the revised question asks the earlier help. Distinct from #1054's object: this asks the bird group."
+      }
+    },
+    {
+      "questionId": 1337,
+      "hash": "08fb33789413ba74f0bad2ceb16aaac1f94d5f6a14e78b7ea0c413fa8eb8027a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Removed the cathedral name from the stem. Visiting other places does not make them his residence; the question asks where he lives.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Quasimodo lives in the cathedral bell tower.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Quasimodo lives in the cathedral bell tower.",
+        "sources": [
+          "b25-tower"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney describes the Notre Dame bell ringer leaving his tower.",
+          "sources": [
+            "b25-tower"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Catacombs are below the city, not his tower residence.",
+          "sources": [
+            "b25-tower"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Left Bank rooftops are not the identified home.",
+          "sources": [
+            "b25-tower"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A palace room is not the Notre Dame tower.",
+          "sources": [
+            "b25-tower"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the cathedral name from the stem. Visiting other places does not make them his residence; the question asks where he lives."
+      }
+    },
+    {
+      "questionId": 1338,
+      "hash": "517ea5e7a66a25e17bee5f98b0ad90e297483b36362bbf6c8bf0fa842b4ea391",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. A separate Disney promotional blurb calls the predator a jaguar while the encyclopedia says leopard. The final named-character question avoids that species conflict; it does not ask the Tarzan II chase in #2197.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Sabor killed the human parents in the 1999 film.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Sabor killed the human parents in the 1999 film.",
+        "sources": [
+          "b25-sabor",
+          "b25-saborcor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The official encyclopedia explicitly attributes the deaths to Sabor.",
+          "sources": [
+            "b25-sabor",
+            "b25-saborcor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Shere Khan is not the killer identified for this film.",
+          "sources": [
+            "b25-sabor",
+            "b25-saborcor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Scar is not the predator in this event.",
+          "sources": [
+            "b25-sabor",
+            "b25-saborcor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kaa is not the identified killer.",
+          "sources": [
+            "b25-sabor",
+            "b25-saborcor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A separate Disney promotional blurb calls the predator a jaguar while the encyclopedia says leopard. The final named-character question avoids that species conflict; it does not ask the Tarzan II chase in #2197."
+      }
+    },
+    {
+      "questionId": 1339,
+      "hash": "72d4f31e48d9d01733dcc13e2fc5d119c24baff51b6307e74390aa8727cf9179",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Both sleep answers were challenged: the curable/uncurable distinction is explicit in the dialogue. Removed the film title's sleep clue from the stem.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Merryweather replaces death with a sleep curable by true love's kiss.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Merryweather replaces death with a sleep curable by true love's kiss.",
+        "sources": [
+          "b25-sleep"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The gift explicitly specifies sleep and that awakening condition.",
+          "sources": [
+            "b25-sleep"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "She does not replace death with banishment.",
+          "sources": [
+            "b25-sleep"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "She does not transform Aurora into a raven.",
+          "sources": [
+            "b25-sleep"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "The sleep has a stated cure, excluding no cure.",
+          "sources": [
+            "b25-sleep"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Both sleep answers were challenged: the curable/uncurable distinction is explicit in the dialogue. Removed the film title's sleep clue from the stem."
+      }
+    },
+    {
+      "questionId": 1340,
+      "hash": "c97d6a9ec1efc0665fb29e43addba326be7aabca29b665303804c11a3fc5c242",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. The original shelter motive was misleading: Flynn hopes she will be scared home. The final question asks the location name, distinct from #1266's song.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Flynn takes Rapunzel to the Snuggly Duckling.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Flynn takes Rapunzel to the Snuggly Duckling.",
+        "sources": [
+          "b25-pub"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "He names the pub at arrival.",
+          "sources": [
+            "b25-pub"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Prancing Pony is not the name he gives.",
+          "sources": [
+            "b25-pub"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Golden Goose is not this pub's name.",
+          "sources": [
+            "b25-pub"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rusty Bucket is not the arrival location.",
+          "sources": [
+            "b25-pub"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The original shelter motive was misleading: Flynn hopes she will be scared home. The final question asks the location name, distinct from #1266's song."
+      }
+    },
+    {
+      "questionId": 1341,
+      "hash": "4650dd71f9908f0bcc7829e8421b90d019e7fd9842648ba036068e8baff865f7",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Removed an unsupported claim about what Darla wants; the relation and behavior are both explicit. Deb's existence as a tank fish does not make her the niece.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Darla is the dentist's niece who shakes fish bags.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Darla is the dentist's niece who shakes fish bags.",
+        "sources": [
+          "b25-darla"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Pixar explicitly identifies Darla.",
+          "sources": [
+            "b25-darla"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Daria is a different name, not an alias supplied for this niece.",
+          "sources": [
+            "b25-darla"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dana does not match the identified niece.",
+          "sources": [
+            "b25-darla"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Deb is not the niece named in the profile.",
+          "sources": [
+            "b25-darla"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed an unsupported claim about what Darla wants; the relation and behavior are both explicit. Deb's existence as a tank fish does not make her the niece."
+      }
+    },
+    {
+      "questionId": 1342,
+      "hash": "746e589f3ceb75525f1908d9e96807090c0fcfc3fc7d048dc1d861b1c7cdabc1",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Louis the cook in #866 is a different film character; the alligator and film context prevent the shared name from creating a duplicate.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Louis is the jazz-loving alligator.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Louis is the jazz-loving alligator.",
+        "sources": [
+          "b25-louis"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney names Louis and his trumpet ambition.",
+          "sources": [
+            "b25-louis"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Raymond is not this alligator's name.",
+          "sources": [
+            "b25-louis"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lawrence is not the named alligator.",
+          "sources": [
+            "b25-louis"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Thibodaux is not the identified character.",
+          "sources": [
+            "b25-louis"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Louis the cook in #866 is a different film character; the alligator and film context prevent the shared name from creating a duplicate."
+      }
+    },
+    {
+      "questionId": 1345,
+      "hash": "10afe438bf60708b8a528066f82a9b9044c493a6ae60650111dc45d62b049d78",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. The parrot-role identity is explicit; scarlet is descriptive rather than a claim about every feather. The later sequel side-switch in #2013 is a separate event.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Iago is Jafar's parrot sidekick.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Iago is Jafar's parrot sidekick.",
+        "sources": [
+          "b25-iago"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The official encyclopedia identifies Iago.",
+          "sources": [
+            "b25-iago"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Zazu is not Jafar's named henchman.",
+          "sources": [
+            "b25-iago"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Archimedes is not that parrot.",
+          "sources": [
+            "b25-iago"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Diablo is not the henchman named in this entry.",
+          "sources": [
+            "b25-iago"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The parrot-role identity is explicit; scarlet is descriptive rather than a claim about every feather. The later sequel side-switch in #2013 is a separate event."
+      }
+    },
+    {
+      "questionId": 1349,
+      "hash": "157ffa50edc74a86fe395775cc21da9cf76824f0b51cad1e9dac64a1036e162a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. The final question asks the mutual-help partnership rather than relying on a genealogy spoiler. Other deceased relatives' ability to visit does not give them Héctor's role.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Héctor partners with Miguel to reach the living.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Héctor partners with Miguel to reach the living.",
+        "sources": [
+          "b25-hector"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Pixar identifies Héctor as the friend seeking help to cross.",
+          "sources": [
+            "b25-hector"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ernesto is the idol, not the named partner in that bargain.",
+          "sources": [
+            "b25-hector"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Chicharrón is not the identified traveling partner.",
+          "sources": [
+            "b25-hector"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tío Oscar is not the skeleton identified in this pact.",
+          "sources": [
+            "b25-hector"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The final question asks the mutual-help partnership rather than relying on a genealogy spoiler. Other deceased relatives' ability to visit does not give them Héctor's role."
+      }
+    },
+    {
+      "questionId": 1350,
+      "hash": "14b56055ff2d63568a92b3f93835a244e459fa4777b61deb391271027ccf11d6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. This is the animated Disney portrayal, not a historical human sheriff. Robin Hood the fox and Friar Tuck the badger test different characters.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. The Sheriff is a wolf in Disney's Robin Hood.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Sheriff is a wolf in Disney's Robin Hood.",
+        "sources": [
+          "b25-wolf"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "D23 explicitly identifies his species as wolf.",
+          "sources": [
+            "b25-wolf"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A weasel is not the stated species.",
+          "sources": [
+            "b25-wolf"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A pig is not the stated species.",
+          "sources": [
+            "b25-wolf"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A rat is not the stated species.",
+          "sources": [
+            "b25-wolf"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "This is the animated Disney portrayal, not a historical human sheriff. Robin Hood the fox and Friar Tuck the badger test different characters."
+      }
+    },
+    {
+      "questionId": 1352,
+      "hash": "12436091611465885c5e5f3a307b5ba9430772ef9edb99d6760d6885a26cec00",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Sharing the Fa family name does not make Fa Li her father. The question asks paternal identity rather than the captain identity in #871.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Fa Zhou is Mulan's father.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Fa Zhou is Mulan's father.",
+        "sources": [
+          "b25-zhou",
+          "b25-mulancontext"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "D23 explicitly names Fa Zhou as the father.",
+          "sources": [
+            "b25-zhou",
+            "b25-mulancontext"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Li Shang is not the named father.",
+          "sources": [
+            "b25-zhou",
+            "b25-mulancontext"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Chi-Fu is not the named father.",
+          "sources": [
+            "b25-zhou",
+            "b25-mulancontext"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fa Li is not the father identified in the entry.",
+          "sources": [
+            "b25-zhou",
+            "b25-mulancontext"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Sharing the Fa family name does not make Fa Li her father. The question asks paternal identity rather than the captain identity in #871."
+      }
+    },
+    {
+      "questionId": 1353,
+      "hash": "542b9b8fb1758ff372abf8ac9c00c14676437e2ee4522b4a348541876f6d4f6d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. The disguise, not the poison fruit in #206, is tested. Slash wording was removed; the disguise formula supplies more than an unsupported visual recollection.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. The Queen becomes an old peddler woman.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Queen becomes an old peddler woman.",
+        "sources": [
+          "b25-hag"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "She explicitly adopts a peddler cloak and old-hag voice.",
+          "sources": [
+            "b25-hag"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A fairy godmother is not the disguise she prepares.",
+          "sources": [
+            "b25-hag"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Purple sorceress robes do not match the described peddler cloak.",
+          "sources": [
+            "b25-hag"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A noblewoman is not the stated peddler identity.",
+          "sources": [
+            "b25-hag"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The disguise, not the poison fruit in #206, is tested. Slash wording was removed; the disguise formula supplies more than an unsupported visual recollection."
+      }
+    },
+    {
+      "questionId": 1354,
+      "hash": "3fda8f0559d4aad89033f0b4707df826767744a0e9730391b5440c237c2c6845",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Inspired does not mean Marceline was the only architectural influence; other influences do not make these three alternative cities Walt's stated childhood town.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Marceline childhood memories inspired Main Street.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Marceline childhood memories inspired Main Street.",
+        "sources": [
+          "b25-marceline"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The hometown museum explicitly links Marceline and Main Street.",
+          "sources": [
+            "b25-marceline"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Springfield is not the childhood town named in that account.",
+          "sources": [
+            "b25-marceline"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Joplin is not the identified source town.",
+          "sources": [
+            "b25-marceline"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hannibal is mentioned as a regional landmark, not Walt's childhood town.",
+          "sources": [
+            "b25-marceline"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Inspired does not mean Marceline was the only architectural influence; other influences do not make these three alternative cities Walt's stated childhood town."
+      }
+    },
+    {
+      "questionId": 1355,
+      "hash": "0583252b97df1b54a7d21e2fcd49f740dac5e5dcd3b58c5064cde509fc03b8fe",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Presidents is necessary subject vocabulary; it is not spelling the title as the answer. All-presidents distinguishes the named Lincoln show; park and land distinguish EPCOT.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. The Liberty Square show is The Hall of Presidents.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-04",
+      "premise": {
+        "reason": "The Liberty Square show is The Hall of Presidents.",
+        "sources": [
+          "b25-presidents",
+          "b12-liberty"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney identifies this as the all-presidents show.",
+          "sources": [
+            "b25-presidents",
+            "b12-liberty"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The American Adventure is not the Liberty Square all-presidents attraction.",
+          "sources": [
+            "b25-presidents",
+            "b12-liberty"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Great Moments with Mr. Lincoln focuses on Lincoln, not the full presidential group.",
+          "sources": [
+            "b25-presidents",
+            "b12-liberty"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Liberty Showcase is not the identified attraction title.",
+          "sources": [
+            "b25-presidents",
+            "b12-liberty"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Presidents is necessary subject vocabulary; it is not spelling the title as the answer. All-presidents distinguishes the named Lincoln show; park and land distinguish EPCOT."
+      }
+    },
+    {
+      "questionId": 1359,
+      "hash": "a69073763e8c920b8a7e3aba1b8eb957ba62c5d545830e9a16090f84f8ce3652",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. The former Avatar word match and fictional near-name distractors are removed. All three alternative lands have explicit other-park and later-date evidence. #1141 asks the park's 1998 opening, not this land's 2017 opening.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Pandora opened at Animal Kingdom in May 2017.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pandora opened at Animal Kingdom in May 2017.",
+        "sources": [
+          "b25-pandora",
+          "b25-galaxy",
+          "b25-avengers",
+          "b25-frozenland"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The official retrospective gives this land and opening date.",
+          "sources": [
+            "b25-pandora",
+            "b25-galaxy",
+            "b25-avengers",
+            "b25-frozenland"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Galaxy's Edge opened at Disneyland and Hollywood Studios in 2019.",
+          "sources": [
+            "b25-pandora",
+            "b25-galaxy",
+            "b25-avengers",
+            "b25-frozenland"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Avengers Campus was announced for California Adventure in 2021.",
+          "sources": [
+            "b25-pandora",
+            "b25-galaxy",
+            "b25-avengers",
+            "b25-frozenland"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "World of Frozen was announced for Hong Kong Disneyland in 2023.",
+          "sources": [
+            "b25-pandora",
+            "b25-galaxy",
+            "b25-avengers",
+            "b25-frozenland"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The former Avatar word match and fictional near-name distractors are removed. All three alternative lands have explicit other-park and later-date evidence. #1141 asks the park's 1998 opening, not this land's 2017 opening."
+      }
+    },
+    {
+      "questionId": 1362,
+      "hash": "b4521fb6fc17fa12f190dc93e5a17b9a4635f1eb6e96cbc4cc0f49daf856f3eb",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Vulcania references can occur within Nemo theming, but the question explicitly asks the park port. Removed island as a word clue.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Nemo's submarine attraction is in Mysterious Island.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-06",
+      "premise": {
+        "reason": "Nemo's submarine attraction is in Mysterious Island.",
+        "sources": [
+          "b25-nemoport"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The official Area field explicitly says Mysterious Island.",
+          "sources": [
+            "b25-nemoport"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Discovery Bay is not the listed port.",
+          "sources": [
+            "b25-nemoport"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Nautical Cove is not the listed port.",
+          "sources": [
+            "b25-nemoport"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Vulcania is not the Area field's port name.",
+          "sources": [
+            "b25-nemoport"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Vulcania references can occur within Nemo theming, but the question explicitly asks the park port. Removed island as a word clue."
+      }
+    },
+    {
+      "questionId": 1364,
+      "hash": "a3426ba45027a3830af9024084395368a48e239a61b5741fafa9b6f43bf81266",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Other EPCOT festivals have food, so the spring 2026 topiary-and-kitchen context is retained. The historical date prevents future offerings from changing the answer.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Flower & Garden had character topiaries and kitchens in spring 2026.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Flower & Garden had character topiaries and kitchens in spring 2026.",
+        "sources": [
+          "b25-festival"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "These are explicitly listed under this festival's 2026 highlights.",
+          "sources": [
+            "b25-festival"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Food & Wine is a separately named festival, not the spring event heading.",
+          "sources": [
+            "b25-festival"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Festival of the Arts is a separate festival.",
+          "sources": [
+            "b25-festival"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Festival of the Holidays is a separate festival.",
+          "sources": [
+            "b25-festival"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other EPCOT festivals have food, so the spring 2026 topiary-and-kitchen context is retained. The historical date prevents future offerings from changing the answer."
+      }
+    },
+    {
+      "questionId": 1365,
+      "hash": "783b7c637a8779dd7bffab28a345138cd3d82eb480998f14f2e2cfa0ae932bb6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Appearing during the show is not equivalent to hosting it: the source separately calls other figures encounters. Both names in each pair must fit.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Franklin and Twain guide The American Adventure.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-06",
+      "premise": {
+        "reason": "Franklin and Twain guide The American Adventure.",
+        "sources": [
+          "b25-america"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney identifies both men as the guides.",
+          "sources": [
+            "b25-america"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Washington and Jefferson are not the designated host pair.",
+          "sources": [
+            "b25-america"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Lincoln and Roosevelt are not the two named guides.",
+          "sources": [
+            "b25-america"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Walt and Lincoln are not the identified host pair.",
+          "sources": [
+            "b25-america"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Appearing during the show is not equivalent to hosting it: the source separately calls other figures encounters. Both names in each pair must fit."
+      }
+    },
+    {
+      "questionId": 1366,
+      "hash": "79fbc452330a4fbb4270f294f7cdbfbf4f18db8a1c78271f24c48484f751e601",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Park version is essential. The Haunted Mansion 1971 question #354 cannot answer this different attraction's date.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Magic Kingdom Space Mountain opened in 1975.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Magic Kingdom Space Mountain opened in 1975.",
+        "sources": [
+          "b25-space"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The official chronology states January 15, 1975.",
+          "sources": [
+            "b25-space"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1971 is not this attraction's opening year.",
+          "sources": [
+            "b25-space"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1977 is Disneyland's opening year, not Magic Kingdom's.",
+          "sources": [
+            "b25-space"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1980 is not the stated year.",
+          "sources": [
+            "b25-space"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Park version is essential. The Haunted Mansion 1971 question #354 cannot answer this different attraction's date."
+      }
+    },
+    {
+      "questionId": 1367,
+      "hash": "7fe97e1ca624986e3798e88c07d949932b162350eb835d8e289c2256fff135eb",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. The question requires the same named attraction at both parks and southwestern gold-mine theming. Additional source notes distinguish each other ride's theme or park.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Big Thunder is the gold-mine train attraction at both named parks.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-06",
+      "premise": {
+        "reason": "Big Thunder is the gold-mine train attraction at both named parks.",
+        "sources": [
+          "b25-thunderfl",
+          "b25-thunderca",
+          "b13-dwarfs",
+          "b17-922",
+          "matterhorn"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Both official park pages identify Big Thunder.",
+          "sources": [
+            "b25-thunderfl",
+            "b25-thunderca",
+            "b13-dwarfs",
+            "b17-922",
+            "matterhorn"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Seven Dwarfs is the Snow White jewel-mine coaster, not the southwestern gold-mine attraction.",
+          "sources": [
+            "b25-thunderfl",
+            "b25-thunderca",
+            "b13-dwarfs",
+            "b17-922",
+            "matterhorn"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Everest is the Animal Kingdom attraction, not the gold-mine ride in these two parks.",
+          "sources": [
+            "b25-thunderfl",
+            "b25-thunderca",
+            "b13-dwarfs",
+            "b17-922",
+            "matterhorn"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Matterhorn is Disneyland's bobsled-run attraction, not a gold-mine train.",
+          "sources": [
+            "b25-thunderfl",
+            "b25-thunderca",
+            "b13-dwarfs",
+            "b17-922",
+            "matterhorn"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The question requires the same named attraction at both parks and southwestern gold-mine theming. Additional source notes distinguish each other ride's theme or park."
+      }
+    },
+    {
+      "questionId": 1368,
+      "hash": "059f275ddc714d1c7f4af3d9cdb7c70493ff6bdf98cb439e49263e9c2cb611c6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Corroborated the first claim through OLC and D23 rather than inferring first from the Tokyo date alone. This is a theme park, not any Disney business presence abroad.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Tokyo Disneyland was the first overseas Disney theme park, in 1983.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Tokyo Disneyland was the first overseas Disney theme park, in 1983.",
+        "sources": [
+          "b25-tokyo",
+          "b25-tokyocor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The operator explicitly establishes both the first and the year.",
+          "sources": [
+            "b25-tokyo",
+            "b25-tokyocor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Disneyland Paris is not the first established by the operator's chronology.",
+          "sources": [
+            "b25-tokyo",
+            "b25-tokyocor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hong Kong Disneyland is not that 1983 first park.",
+          "sources": [
+            "b25-tokyo",
+            "b25-tokyocor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Shanghai Disneyland is not the operator's identified first.",
+          "sources": [
+            "b25-tokyo",
+            "b25-tokyocor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Corroborated the first claim through OLC and D23 rather than inferring first from the Tokyo date alone. This is a theme park, not any Disney business presence abroad."
+      }
+    },
+    {
+      "questionId": 1372,
+      "hash": "790e818fb92d8a848d6fa703845720f640982911c36a07440dcad33a0b28db39",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. The question asks first name, not the maiden surname tested in #929. Removed the unnecessary lifelong-by-his-side characterization.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Walt married Lillian in 1925.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Walt married Lillian in 1925.",
+        "sources": [
+          "b25-lillian"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Disney biography names Lillian Bounds.",
+          "sources": [
+            "b25-lillian"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ruth does not match the bride's name.",
+          "sources": [
+            "b25-lillian"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Flora does not match the bride's name.",
+          "sources": [
+            "b25-lillian"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Edna is not the named bride.",
+          "sources": [
+            "b25-lillian"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The question asks first name, not the maiden surname tested in #929. Removed the unnecessary lifelong-by-his-side characterization."
+      }
+    },
+    {
+      "questionId": 1376,
+      "hash": "71c3ce461baae59f37ecdd2714aa7ccb543cb15aa44e9a9a9b84b86a511d89b8",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Other artists contributed to small world; the revised question asks the defining visual style rather than implying sole creation of all designs. The institutional attribution is explicit.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Mary Blair's visual style defines the original attraction.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Mary Blair's visual style defines the original attraction.",
+        "sources": [
+          "b25-mary"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney explicitly attributes its style and concept to Mary Blair.",
+          "sources": [
+            "b25-mary"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Earle is not the artist given this defining style credit.",
+          "sources": [
+            "b25-mary"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Marc Davis is not the person credited for this overarching color style.",
+          "sources": [
+            "b25-mary"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hench is not the artist named for this defining style.",
+          "sources": [
+            "b25-mary"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other artists contributed to small world; the revised question asks the defining visual style rather than implying sole creation of all designs. The institutional attribution is explicit."
+      }
+    },
+    {
+      "questionId": 1377,
+      "hash": "17debfe34bbf6188cb82b91a2c005c419aa81cb92e4327cac43bdf42e9649053",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Literal generic synonyms could describe the same object, so the stem specifically asks Walt's whimsical vocabulary. It does not demand proving he invented landmark design.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Walt used weenie/wienie for inviting visual landmarks.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Walt used weenie/wienie for inviting visual landmarks.",
+        "sources": [
+          "b25-weenie",
+          "b25-weeniecor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The design history and Hench quotation identify this term.",
+          "sources": [
+            "b25-weenie",
+            "b25-weeniecor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Anchor is generic vocabulary, not the whimsical term identified.",
+          "sources": [
+            "b25-weenie",
+            "b25-weeniecor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Icon describes a landmark but is not the quoted Walt term.",
+          "sources": [
+            "b25-weenie",
+            "b25-weeniecor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Focal point is descriptive, not the identified whimsical term.",
+          "sources": [
+            "b25-weenie",
+            "b25-weeniecor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Literal generic synonyms could describe the same object, so the stem specifically asks Walt's whimsical vocabulary. It does not demand proving he invented landmark design."
+      }
+    },
+    {
+      "questionId": 1378,
+      "hash": "c9354f984d6aca7fdaa1d7211c97b42190c246aa896b09e21d3180da99d1a3a1",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Near-synonyms describe improvement, but the question asks the particular word attributed to Walt, supported directly by the institutional passage.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Walt's term for elevating an experience is plussing.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Walt's term for elevating an experience is plussing.",
+        "sources": [
+          "b25-plus"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney explicitly attributes plussing to Walt.",
+          "sources": [
+            "b25-plus"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Upgrading is a generic near-synonym, not the attributed single term.",
+          "sources": [
+            "b25-plus"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Imagineering names the design discipline, not this improvement term.",
+          "sources": [
+            "b25-plus"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sprucing is not the term identified in the Disney explanation.",
+          "sources": [
+            "b25-plus"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Near-synonyms describe improvement, but the question asks the particular word attributed to Walt, supported directly by the institutional passage."
+      }
+    },
+    {
+      "questionId": 1379,
+      "hash": "0ff750930608700f0fafa29af4bf62880aaa5e202275f27a5ec21696def8f56d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Walt's other honors do not fit this named presenter and year. Removed presidential wording from the stem so the title does not give itself away.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. Johnson presented Walt the Presidential Medal of Freedom in 1964.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Johnson presented Walt the Presidential Medal of Freedom in 1964.",
+        "sources": [
+          "b25-medal"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The dated ceremony title and Walter Disney citation establish this honor.",
+          "sources": [
+            "b25-medal"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "National Medal of Arts is not the award at this ceremony.",
+          "sources": [
+            "b25-medal"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Congressional Gold Medal is not the medal presented in this presidential ceremony.",
+          "sources": [
+            "b25-medal"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Liberty Medal is not the identified award.",
+          "sources": [
+            "b25-medal"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Walt's other honors do not fit this named presenter and year. Removed presidential wording from the stem so the title does not give itself away."
+      }
+    },
+    {
+      "questionId": 1380,
+      "hash": "82fec64488ddfc1ae93716500ecadf98a534f91f07fce1234911154bcc99f454",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "All four final options reviewed; full matching topic digests and cross-bank context read. Checked the exact first sentence rather than similar Disney slogans. The question avoids asserting a separate plaque unveiling event; all choices now have comparable forms.",
+      "context": "Named original Disney/Pixar film, or the explicitly named park/historical setting. The 1955 dedication begins by welcoming all who come to this happy place.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 1955 dedication begins by welcoming all who come to this happy place.",
+        "sources": [
+          "b25-welcome"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "This is the first sentence in the official plaque transcription.",
+          "sources": [
+            "b25-welcome"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The dreams wording is not the opening sentence.",
+          "sources": [
+            "b25-welcome"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The young-at-heart wording is not the opening sentence.",
+          "sources": [
+            "b25-welcome"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The built-with-imagination wording is not the beginning.",
+          "sources": [
+            "b25-welcome"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the exact first sentence rather than similar Disney slogans. The question avoids asserting a separate plaque unveiling event; all choices now have comparable forms."
+      }
+    }
+  ]
+}

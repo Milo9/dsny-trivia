@@ -1,0 +1,3220 @@
+{
+  "schema": 1,
+  "reviewer": "Codex",
+  "at": "2026-11-08",
+  "sourcesChecked": [
+    "b29-frozen-music",
+    "b30-aladdin",
+    "b31-alice-scene",
+    "b31-alice-tale",
+    "b31-alice-transform",
+    "b31-aristo-band",
+    "b31-babbitt-letters",
+    "b31-bambi2",
+    "b31-bambi2-dialogue",
+    "b31-bambi2-official",
+    "b31-band-corroboration",
+    "b31-bao",
+    "b31-bed",
+    "b31-bed-dialogue",
+    "b31-cars3",
+    "b31-cars3-corroboration",
+    "b31-dca",
+    "b31-district",
+    "b31-district-functions",
+    "b31-fantasia",
+    "b31-fantasia-corroboration",
+    "b31-fever",
+    "b31-fox2",
+    "b31-fox2-official",
+    "b31-frozen-album",
+    "b31-frozen-scenes",
+    "b31-gas",
+    "b31-geri",
+    "b31-hit-cat",
+    "b31-hk",
+    "b31-jungle2",
+    "b31-jungle2-official",
+    "b31-kronk",
+    "b31-kronk-official",
+    "b31-mu",
+    "b31-mu-roles",
+    "b31-mu-room",
+    "b31-nemo",
+    "b31-nemo-dialogue",
+    "b31-nemo-plot",
+    "b31-opening",
+    "b31-opening-corroboration",
+    "b31-poppins",
+    "b31-poppins-corroboration",
+    "b31-riverboat",
+    "b31-rose",
+    "b31-snow-cost",
+    "b31-snow-cost-corroboration",
+    "b31-spaceship",
+    "b31-spaceship-history",
+    "b31-strike",
+    "b31-strike-corroboration",
+    "b31-swiss",
+    "b31-swiss-official",
+    "b31-tarzan2",
+    "b31-tarzan2-detail",
+    "b31-tarzan2-dialogue",
+    "b31-wish-goodnight"
+  ],
+  "reviews": [
+    {
+      "questionId": 2068,
+      "hash": "0ec6b0eee243a6887732fefbd77d64d7eab60c0d5a5d65b1ba2720e0b1d9fa81",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different rule from #2067, which tests forced love. No new TV or sequel scope.",
+      "context": "Aladdin, original 1992 film; initial lamp explanation.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The question asks a stated rule, not every conceivable limit on Genie.",
+        "sources": [
+          "b30-aladdin"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Resurrection is one of his three stated prohibitions.",
+          "sources": [
+            "b30-aladdin"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Immortality is not in that three-rule list.",
+          "sources": [
+            "b30-aladdin"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "A ban on healing any injury is not in that list.",
+          "sources": [
+            "b30-aladdin"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "A ban on backward aging is not in that list.",
+          "sources": [
+            "b30-aladdin"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Read the complete rule list separately: killing, forced love and resurrection. Changed cannot to will not because his resurrection wording is a refusal; no unsupported claim about immortality is needed."
+      }
+    },
+    {
+      "questionId": 2069,
+      "hash": "5a6fa72ac3e7d0983aed59e9f2ed6ee1e72558446ad4634c698ee82c3cac9ab7",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from #1057, which asks where the Caterpillar sits.",
+      "context": "Alice in Wonderland, 1951 animated film; mushroom conversation.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 1951 film actually shows this transformation during the mushroom encounter.",
+        "sources": [
+          "b31-alice-transform",
+          "b31-alice-scene"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Both accounts identify a butterfly.",
+          "sources": [
+            "b31-alice-transform",
+            "b31-alice-scene"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The described new insect is a butterfly, not a moth.",
+          "sources": [
+            "b31-alice-transform",
+            "b31-alice-scene"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The same transformation is not into a dragonfly.",
+          "sources": [
+            "b31-alice-transform",
+            "b31-alice-scene"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "It is not a ladybug transformation.",
+          "sources": [
+            "b31-alice-transform",
+            "b31-alice-scene"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Compared moth versus butterfly explicitly; the evidence names butterfly. Specified 1951 to avoid adaptation confusion."
+      }
+    },
+    {
+      "questionId": 2070,
+      "hash": "db9a3adcfe697d3b5b6e30965e7b3aa48881c8baeb4c3f0eb111b6ddb04edc7a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "No other question asks which tale the twins narrate.",
+      "context": "Alice in Wonderland, 1951 animated film; Tweedledee/Tweedledum encounter.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney identifies the tale told by the twins in the animated film.",
+        "sources": [
+          "b31-alice-tale"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney names this exact tale.",
+          "sources": [
+            "b31-alice-tale"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The twins' named tale is not The Lobster Quadrille.",
+          "sources": [
+            "b31-alice-tale"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The named tale is not the Mock Turtle story.",
+          "sources": [
+            "b31-alice-tale"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Queen encounter is separate from the twins' tale.",
+          "sources": [
+            "b31-alice-tale"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Book material is not substituted for the film: the twin narration has one named title. Oysters supply scene context, not an answer title repeated in the stem."
+      }
+    },
+    {
+      "questionId": 2071,
+      "hash": "9507f6ab28aad7de48aeae70218112d646e0ccf2847c0191940b05cb477b58d0",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from #2072 trumpet assignment, #1110 band leader, and #1250 song title.",
+      "context": "The Aristocats (1970); alley-cat band instrument roles.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The question identifies Hit Cat's instrument in Scat Cat's band.",
+        "sources": [
+          "b31-aristo-band",
+          "b31-hit-cat",
+          "b31-band-corroboration"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Hit Cat is explicitly the acoustic guitarist.",
+          "sources": [
+            "b31-aristo-band",
+            "b31-hit-cat",
+            "b31-band-corroboration"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "The trumpet belongs to Scat Cat's band role.",
+          "sources": [
+            "b31-aristo-band",
+            "b31-hit-cat",
+            "b31-band-corroboration"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Billy Boss is the double-bass player.",
+          "sources": [
+            "b31-aristo-band",
+            "b31-hit-cat",
+            "b31-band-corroboration"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Peppo plays the concertina.",
+          "sources": [
+            "b31-aristo-band",
+            "b31-hit-cat",
+            "b31-band-corroboration"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked every band member assignment, rather than inferring absence from a plot summary. This asks the band instrument, not whether Hit Cat could ever learn another instrument."
+      }
+    },
+    {
+      "questionId": 2072,
+      "hash": "1d3dbe3b826309b13e64bb69d1d6eab94ba085b67a6e970f8da7f4a0ad4d432b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "His instrument adds a fact beyond the leader identity in #1110; #2071 asks another member's instrument.",
+      "context": "The Aristocats (1970), named band roles.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Scat Cat is the band leader and its named trumpet player.",
+        "sources": [
+          "b31-aristo-band",
+          "b31-band-corroboration"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The band-role list assigns him trumpet.",
+          "sources": [
+            "b31-aristo-band",
+            "b31-band-corroboration"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Shun Gon has the band's piano role.",
+          "sources": [
+            "b31-aristo-band",
+            "b31-band-corroboration"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Billy Boss has the double-bass role.",
+          "sources": [
+            "b31-aristo-band",
+            "b31-band-corroboration"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Shun Gon has the pot-drums role.",
+          "sources": [
+            "b31-aristo-band",
+            "b31-band-corroboration"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The instrument list expressly distinguishes piano/drums, bass and trumpet. No claim about every instrument Scat Cat is capable of playing is necessary."
+      }
+    },
+    {
+      "questionId": 2073,
+      "hash": "2d80d3f8fbc5efd06ecb36503657833b6856ad3206de014fb5f6d8f366012f09",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct song performance from #2074/#2075 and the other Frozen music questions.",
+      "context": "Frozen (2013), trolls' attempted matchmaking.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The trolls' matchmaking number occurs despite Anna's engagement.",
+        "sources": [
+          "b31-frozen-scenes",
+          "b31-frozen-album",
+          "b29-frozen-music"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The troll sequence is Fixer Upper.",
+          "sources": [
+            "b31-frozen-scenes",
+            "b31-frozen-album",
+            "b29-frozen-music"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "That is Kristoff's earlier Sven-voice solo.",
+          "sources": [
+            "b31-frozen-scenes",
+            "b31-frozen-album",
+            "b29-frozen-music"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "That is Olaf's beach fantasy.",
+          "sources": [
+            "b31-frozen-scenes",
+            "b31-frozen-album",
+            "b29-frozen-music"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "That is Anna and Hans's courtship duet.",
+          "sources": [
+            "b31-frozen-scenes",
+            "b31-frozen-album",
+            "b29-frozen-music"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the competing song scenes, including the engagement interruption during the trolls' number. Different songs are not inferred solely from one correct title."
+      }
+    },
+    {
+      "questionId": 2074,
+      "hash": "c5bb78aeeacaa24b8d6c5f209db07aeabb68238105aa8fd3fb937fa0a1fed7f7",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "No equivalent Olaf-solo question elsewhere in the complete Frozen digest.",
+      "context": "Frozen (2013); Olaf's beach fantasy.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Olaf sings while imagining a warm beach without understanding melting.",
+        "sources": [
+          "b31-frozen-scenes",
+          "b31-frozen-album"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Olaf's warm-weather fantasy uses this song.",
+          "sources": [
+            "b31-frozen-scenes",
+            "b31-frozen-album"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "That is the later trolls' number.",
+          "sources": [
+            "b31-frozen-scenes",
+            "b31-frozen-album"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "That is Anna's childhood appeal at Elsa's door.",
+          "sources": [
+            "b31-frozen-scenes",
+            "b31-frozen-album"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "That is coronation anticipation and a palace reprise.",
+          "sources": [
+            "b31-frozen-scenes",
+            "b31-frozen-album"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed summer from the stem to stop repeating the title. Compared the door, coronation and troll sequences against Olaf's specific fantasy."
+      }
+    },
+    {
+      "questionId": 2075,
+      "hash": "fbdccb5b01be3fdbef59eda586f745d9029344e4a7013931185ceb15079b1d61",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from #1601 Lost in the Woods and the other two batch song scenes; difficulty set to medium.",
+      "context": "Frozen (2013); nighttime scene after Oaken's shop.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Kristoff performs a solo with imitated replies from Sven after the shop encounter.",
+        "sources": [
+          "b31-frozen-scenes",
+          "b31-frozen-album",
+          "b29-frozen-music"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The short Kristoff/Sven solo has this title.",
+          "sources": [
+            "b31-frozen-scenes",
+            "b31-frozen-album",
+            "b29-frozen-music"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "In Summer is Olaf's performance.",
+          "sources": [
+            "b31-frozen-scenes",
+            "b31-frozen-album",
+            "b29-frozen-music"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Fixer Upper is the trolls' performance.",
+          "sources": [
+            "b31-frozen-scenes",
+            "b31-frozen-album",
+            "b29-frozen-music"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Love Is an Open Door is Anna and Hans's duet.",
+          "sources": [
+            "b31-frozen-scenes",
+            "b31-frozen-album",
+            "b29-frozen-music"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed unsupported duration and title-paraphrase clues. Kristoff supplies both voices: Sven does not literally sing. The later Frozen 2 rock ballad is a separate scene."
+      }
+    },
+    {
+      "questionId": 2076,
+      "hash": "eb6d821170712f65c8638a65caa2f08d81e5e5e20d625b796eee415b9f6469d6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from the birthday recipient #2077 and party-guard #2204. The short's coverage remains a small secondary-title group.",
+      "context": "Frozen Fever (2015), recurring sneezes during party preparations.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Elsa's illness makes her create Snowgies while preparing Anna's birthday.",
+        "sources": [
+          "b31-fever"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The filmmaker describes tiny snowmen called Snowgies.",
+          "sources": [
+            "b31-fever"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The sneeze creations are snowmen, not castles.",
+          "sources": [
+            "b31-fever"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The described creatures are not mere confetti-like bursts.",
+          "sources": [
+            "b31-fever"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The recurring sneeze creations are not flower bouquets.",
+          "sources": [
+            "b31-fever"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A sneeze later produces a giant snowball, so changed each sneeze to repeatedly. The final question asks the recurring party complication, not an exhaustive inventory of every sneeze effect. The correct tiny creatures are explicitly identified."
+      }
+    },
+    {
+      "questionId": 2077,
+      "hash": "3c5c99325fe774c6e92ef349cabaf272a2e1f8189e6d60101118c9ce055fdd91",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Recipient is a separate fact from Snowgies, party guard and theatrical pairing.",
+      "context": "Frozen Fever (2015), Anna's party.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The celebration is explicitly Anna's birthday.",
+        "sources": [
+          "b31-fever"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Anna is the birthday recipient.",
+          "sources": [
+            "b31-fever"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kristoff helps organize it, rather than being the birthday recipient.",
+          "sources": [
+            "b31-fever"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Olaf helps with the party, rather than receiving it.",
+          "sources": [
+            "b31-fever"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sven helps, rather than being the birthday recipient.",
+          "sources": [
+            "b31-fever"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished birthday recipient from the named helpers and Elsa, who is organizing. One named recipient excludes the other three."
+      }
+    },
+    {
+      "questionId": 2078,
+      "hash": "719a16ce5ded37f1207ead26452171f306388aacbcfe09ac17a68bb0fb5cb4cf",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different fact from prize #2208, trick #2324 and human-character production claim #2326.",
+      "context": "Geri's Game (1997); park match.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar identifies the park game against himself.",
+        "sources": [
+          "b31-geri"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Pixar names chess.",
+          "sources": [
+            "b31-geri"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Chess and checkers are different games; Pixar names chess.",
+          "sources": [
+            "b31-geri"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pixar's identified game is not dominoes.",
+          "sources": [
+            "b31-geri"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The named game is not cards.",
+          "sources": [
+            "b31-geri"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Compared checkers rather than relying on generic board-game wording; Pixar explicitly calls it chess."
+      }
+    },
+    {
+      "questionId": 2080,
+      "hash": "cd4fa5a6fe4a2fda9d471ac4f01604e6f4ecf08a5978dfd6c3e24c2cefd6d361",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from #2210 ending action, #2211 city and #2460 director. Basic visual identity is easy.",
+      "context": "Bao (2018), living dumpling premise.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar identifies the food that becomes the mother's new child.",
+        "sources": [
+          "b31-bao"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The living child begins as a dumpling.",
+          "sources": [
+            "b31-bao"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The living food-child is not an appliance.",
+          "sources": [
+            "b31-bao"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "It is not a lantern.",
+          "sources": [
+            "b31-bao"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "It is not a bracelet.",
+          "sources": [
+            "b31-bao"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked object identity, not the mother's dream versus reality interpretation. Removed unnecessary award and nationality claims and the answer's parenthetical title repetition."
+      }
+    },
+    {
+      "questionId": 2081,
+      "hash": "6fd703c28e6d64f76b8e77b3d8abd839022db05710f2d1b09cd897604e33ea25",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #683 ceremony date and #109 admission price.",
+      "context": "Disneyland's commemorated July 17, 1955 opening.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The nickname is attached to the July 17, 1955 chaotic preview/opening.",
+        "sources": [
+          "b31-opening",
+          "b31-opening-corroboration"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Both histories identify Black Sunday.",
+          "sources": [
+            "b31-opening",
+            "b31-opening-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "This is a descriptive phrase, not the nickname they identify.",
+          "sources": [
+            "b31-opening",
+            "b31-opening-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Neither account names The Great Meltdown as that nickname.",
+          "sources": [
+            "b31-opening",
+            "b31-opening-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Neither account identifies Chaos Day as that nickname.",
+          "sources": [
+            "b31-opening",
+            "b31-opening-corroboration"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Nickname evidence is explicit; the other labels are not competing documented aliases in these accounts. Kept the date separate from public admission on July 18."
+      }
+    },
+    {
+      "questionId": 2082,
+      "hash": "ea1e9c318af390951daff583395b68803eb835ec991836d72820f6ce93ec2f1f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different fact from #925 riverboat identity and opening nickname #2081.",
+      "context": "Mark Twain, Disneyland, July 17, 1955; historical loading account.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The overloaded opening-day riverboat rode low; literal sinking wording was removed.",
+        "sources": [
+          "b31-riverboat",
+          "b31-opening"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Accounts identify excessive passenger loading.",
+          "sources": [
+            "b31-riverboat",
+            "b31-opening"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The low-riding problem is attributed to passenger loading, not a boiler fault.",
+          "sources": [
+            "b31-riverboat",
+            "b31-opening"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The described loading incident is not a dock collision.",
+          "sources": [
+            "b31-riverboat",
+            "b31-opening"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The account explains low freeboard by crowds, not a construction leak.",
+          "sources": [
+            "b31-riverboat",
+            "b31-opening"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "No claim that the guided boat literally sank or had a known numerical capacity. Compared the specific overloading account against all three mechanical explanations."
+      }
+    },
+    {
+      "questionId": 2083,
+      "hash": "b5de0495cc8a1c457bdea8da6d7193763d0b2482ca15716c6fc7afccb09f483c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Separate opening-day utility incident from the boat-loading and nickname facts.",
+      "context": "Fantasyland, Disneyland, opening day in 1955.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The historical article identifies the cause of Fantasyland's temporary closure.",
+        "sources": [
+          "b31-gas",
+          "b31-opening"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The specified utility emergency is a gas leak.",
+          "sources": [
+            "b31-gas",
+            "b31-opening"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "It is not attributed to an electricity outage.",
+          "sources": [
+            "b31-gas",
+            "b31-opening"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "It is not attributed to a water-main break.",
+          "sources": [
+            "b31-gas",
+            "b31-opening"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "It is not attributed to an electrical fire.",
+          "sources": [
+            "b31-gas",
+            "b31-opening"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the unsupported claim about several evacuated lands. The evidence names the utility fault; the other opening-day mishaps do not change it."
+      }
+    },
+    {
+      "questionId": 2084,
+      "hash": "aa42baf2e3c62486053129d380a2014cf3bc5b69bbb8b20c6558107829098465",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different fact from sponsor #2085 and narrator #2221.",
+      "context": "Spaceship Earth original development, opened 1982.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Bradbury helped develop the attraction's original storyline.",
+        "sources": [
+          "b31-spaceship",
+          "b31-spaceship-history"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The histories identify Ray Bradbury.",
+          "sources": [
+            "b31-spaceship",
+            "b31-spaceship-history"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The original-story contribution is attributed to Bradbury, not Asimov.",
+          "sources": [
+            "b31-spaceship",
+            "b31-spaceship-history"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The identified contributor is Bradbury, not Sagan.",
+          "sources": [
+            "b31-spaceship",
+            "b31-spaceship-history"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The identified contributor is Bradbury, not Spielberg.",
+          "sources": [
+            "b31-spaceship",
+            "b31-spaceship-history"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Question now asks the documented storyline contribution rather than implying he alone designed or scripted the entire attraction. All names are presented in parallel."
+      }
+    },
+    {
+      "questionId": 2085,
+      "hash": "ef537f8c7cc52ddbe714749087a1f25136d0fd085d714d37d93a39a1e07295f6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Sponsor identity differs from author and narrator facts.",
+      "context": "Spaceship Earth, EPCOT opening in 1982.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Both Bell System and AT&T are names used for the opening sponsor lineage.",
+        "sources": [
+          "b31-spaceship",
+          "b31-spaceship-history"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Combines the Bell System opening brand and AT&T parent identity.",
+          "sources": [
+            "b31-spaceship",
+            "b31-spaceship-history"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "General Electric is not the original sponsor in the sponsor histories.",
+          "sources": [
+            "b31-spaceship",
+            "b31-spaceship-history"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Siemens belongs to the much later 2005 sponsorship.",
+          "sources": [
+            "b31-spaceship",
+            "b31-spaceship-history"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "RCA is not the original sponsor in those histories.",
+          "sources": [
+            "b31-spaceship",
+            "b31-spaceship-history"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Original AT&T distractor could also be defended; combined it with Bell System. Siemens is excluded chronologically, not just by failing to appear in a short synopsis."
+      }
+    },
+    {
+      "questionId": 2086,
+      "hash": "f5211cd634a56dedfe86c8a56379798799442117e744d5353efd0b0d35b49429",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from EPCOT city vision #392 and Florida Project announcement #695.",
+      "context": "Florida special district establishment in 1967, not current governance.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The historical district name and 1967 governmental role are documented by its successor.",
+        "sources": [
+          "b31-district",
+          "b31-district-functions"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The legislation created RCID.",
+          "sources": [
+            "b31-district",
+            "b31-district-functions"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "This is not the district's enacted name.",
+          "sources": [
+            "b31-district",
+            "b31-district-functions"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "This is not the district's enacted name.",
+          "sources": [
+            "b31-district",
+            "b31-district-functions"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "This is not the district's enacted name.",
+          "sources": [
+            "b31-district",
+            "b31-district-functions"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Historical wording avoids claiming Disney retains the same current governing powers. The law's specific district identity excludes the three invented titles."
+      }
+    },
+    {
+      "questionId": 2087,
+      "hash": "41e2a154e571d6e3a2d4bb09fdad1a6cd181f11591cb34194b343071d2c6b1f6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "#2262 asks a production-film association; that different fact is not the strike year itself.",
+      "context": "Walt Disney studio labor strike, 1941.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Guild and PBS histories put the labor dispute in 1941.",
+        "sources": [
+          "b31-strike",
+          "b31-strike-corroboration"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Both sources identify 1941.",
+          "sources": [
+            "b31-strike",
+            "b31-strike-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1937 precedes the documented strike.",
+          "sources": [
+            "b31-strike",
+            "b31-strike-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1955 is later than the documented strike.",
+          "sources": [
+            "b31-strike",
+            "b31-strike-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1966 is later than the documented strike.",
+          "sources": [
+            "b31-strike",
+            "b31-strike-corroboration"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Sources disagree on duration, which is not asked. Year is independently corroborated; no conflicting chronology among the four years."
+      }
+    },
+    {
+      "questionId": 2088,
+      "hash": "f4e128cf09c52e84671e0bb4342e6ff76e672a573ffb0f99f297566aa523f3c9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "The trigger identity adds a different fact from the date and production-film questions.",
+      "context": "Disney strike trigger in 1941.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Guild links Babbitt's dismissal to the strike's onset.",
+        "sources": [
+          "b31-strike",
+          "b31-babbitt-letters",
+          "b31-strike-corroboration"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Babbitt is the dismissed union advocate in the source.",
+          "sources": [
+            "b31-strike",
+            "b31-babbitt-letters",
+            "b31-strike-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The stated trigger is Babbitt's dismissal, not Iwerks's.",
+          "sources": [
+            "b31-strike",
+            "b31-babbitt-letters",
+            "b31-strike-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kimball continued working, rather than being this dismissed organizer.",
+          "sources": [
+            "b31-strike",
+            "b31-babbitt-letters",
+            "b31-strike-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The identified dismissed organizer is Babbitt, not Thomas.",
+          "sources": [
+            "b31-strike",
+            "b31-babbitt-letters",
+            "b31-strike-corroboration"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the causal dismissal rather than conflating an animator's later departure with the strike trigger. Avoided an exact dismissal day because accounts differ."
+      }
+    },
+    {
+      "questionId": 2089,
+      "hash": "5bb26debdb59968d4b516da848686e4536ff6c051e133a73d24416cc92d1d4f2",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from #622 park identity and #2122 Soarin' original title.",
+      "context": "Disney California Adventure, original opening.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The park's official fact sheet supplies its opening date.",
+        "sources": [
+          "b31-dca"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The official date is February 8, 2001.",
+          "sources": [
+            "b31-dca"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "July 17 is a different day and month.",
+          "sources": [
+            "b31-dca"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "October 1 is a different day and month.",
+          "sources": [
+            "b31-dca"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "May 5 is a different day and month.",
+          "sources": [
+            "b31-dca"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "This is the park's opening, not Disneyland's anniversary or a reimagining. All four options use the same date form."
+      }
+    },
+    {
+      "questionId": 2090,
+      "hash": "fac809030c5e523a4ac6123691d6b3dc5fa942a91676fd0542a01163ad672b9f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from #1231/#1232/#970, which test other lounges.",
+      "context": "Disney Wish lounge location/theme as of November 2026.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The named Wish lounge is located beside the two adult restaurants.",
+        "sources": [
+          "b31-rose"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The live page names The Rose at those restaurants.",
+          "sources": [
+            "b31-rose"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Bayou is another named Wish lounge, not this named location/theme.",
+          "sources": [
+            "b31-rose"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Nightingale's is another Wish lounge, not this named location/theme.",
+          "sources": [
+            "b31-rose"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Keg & Compass is another Wish lounge, not this named location/theme.",
+          "sources": [
+            "b31-rose"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the word rose from the stem and used real onboard lounge names. Both location and film theme are needed; the official page establishes one venue."
+      }
+    },
+    {
+      "questionId": 2091,
+      "hash": "0a2c6a7ea1d7926e555640e48cbfde80b5c9d7544f272e6d8f442ab10837ee88",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from #1223 statue identity and other cruise musical shows.",
+      "context": "Wish Grand Hall goodnight show described May 30, 2025.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney's 2025 description names the song accompanying the Grand Hall lighting.",
+        "sources": [
+          "b31-wish-goodnight"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The 2025 article names So This Is Love.",
+          "sources": [
+            "b31-wish-goodnight"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The named song is not A Whole New World.",
+          "sources": [
+            "b31-wish-goodnight"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The named song is not Once Upon a Dream.",
+          "sources": [
+            "b31-wish-goodnight"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The named song is not Beauty and the Beast.",
+          "sources": [
+            "b31-wish-goodnight"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The question is now historical to 2025, avoiding a current nightly schedule promise. Source names the exact music cue, rather than inferring from a Cinderella statue."
+      }
+    },
+    {
+      "questionId": 2092,
+      "hash": "b04351a42a3bd5edb0eeb7abfdc3126a07ad9be7182d9eb2582ebd09d88725e9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from #1062 destination and #2093 adoptive brother.",
+      "context": "The Jungle Book 2, Shanti identification and original-film continuity.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Shanti is the named girl who originally drew Mowgli toward the village.",
+        "sources": [
+          "b31-jungle2",
+          "b31-jungle2-official"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney identifies Shanti in this role.",
+          "sources": [
+            "b31-jungle2",
+            "b31-jungle2-official"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ranjan is Mowgli's younger adoptive brother.",
+          "sources": [
+            "b31-jungle2",
+            "b31-jungle2-official"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Messua is not the named village girl in that role.",
+          "sources": [
+            "b31-jungle2",
+            "b31-jungle2-official"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kaa is a different jungle character, not the village girl.",
+          "sources": [
+            "b31-jungle2",
+            "b31-jungle2-official"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Used the sequel's named character, not an invented name for the unnamed first-film girl. The village-girl role excludes the two boys/adults and the snake."
+      }
+    },
+    {
+      "questionId": 2093,
+      "hash": "4b8b271f8dac3ffd6c519f73bacd17575e4b246ea2662ed78b4bf17224c1f495",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different role fact from Shanti and Baloo's return; set medium difficulty.",
+      "context": "The Jungle Book 2, Mowgli's village adoptive family.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney identifies Ranjan as Mowgli's little step/adoptive brother.",
+        "sources": [
+          "b31-jungle2",
+          "b31-jungle2-official"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Ranjan is the named younger brother.",
+          "sources": [
+            "b31-jungle2",
+            "b31-jungle2-official"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Shanti is Mowgli's friend, not his adoptive brother.",
+          "sources": [
+            "b31-jungle2",
+            "b31-jungle2-official"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Baloo is his bear friend, not his human adoptive brother.",
+          "sources": [
+            "b31-jungle2",
+            "b31-jungle2-official"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Akela is not the village family's little boy.",
+          "sources": [
+            "b31-jungle2",
+            "b31-jungle2-official"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Corrected the premise: the old question wrongly called him Shanti's brother. Both official synopses explicitly connect Ranjan to Mowgli."
+      }
+    },
+    {
+      "questionId": 2094,
+      "hash": "0d85d95bb53620d9c36028c693e787f9aad79ad83c9f229f83af13fa9e1a9e5b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "#42 tests the original tiger's name; this item additionally tests the sequel's revenge motive, not just a shared name.",
+      "context": "The Jungle Book 2, main revenge pursuit.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The official sequel synopsis says Shere Khan plans revenge on Mowgli.",
+        "sources": [
+          "b31-jungle2",
+          "b31-jungle2-official"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Shere Khan is explicitly the revenge-seeking returning tiger.",
+          "sources": [
+            "b31-jungle2",
+            "b31-jungle2-official"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kaa returns, but is not the synopsis's revenge-seeking tiger.",
+          "sources": [
+            "b31-jungle2",
+            "b31-jungle2-official"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "King Louie is not the returning revenge pursuer described here.",
+          "sources": [
+            "b31-jungle2",
+            "b31-jungle2-official"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Buldeo is not that returning film villain.",
+          "sources": [
+            "b31-jungle2",
+            "b31-jungle2-official"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Kaa is a returning antagonist, so simply returning would be ambiguous; the revenge-on-Mowgli clause is essential and supported."
+      }
+    },
+    {
+      "questionId": 2095,
+      "hash": "52bc81de5fcd9ae601f291701132b61c73f81acc31748468e92af77e31afd55e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from #2196 brothers and #2197 predator; film coverage remains within the secondary-title guideline.",
+      "context": "Tarzan II, Dark Mountain monster reveal.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Zugor's monster identity is an old ape's vocal deception.",
+        "sources": [
+          "b31-tarzan2",
+          "b31-tarzan2-detail",
+          "b31-tarzan2-dialogue"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Zugor is the ape behind the amplified monster calls.",
+          "sources": [
+            "b31-tarzan2",
+            "b31-tarzan2-detail",
+            "b31-tarzan2-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sabor is a leopard, not this ape.",
+          "sources": [
+            "b31-tarzan2",
+            "b31-tarzan2-detail",
+            "b31-tarzan2-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kerchak is a separate troop leader.",
+          "sources": [
+            "b31-tarzan2",
+            "b31-tarzan2-detail",
+            "b31-tarzan2-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The revealed hermit is Zugor, not Tublat.",
+          "sources": [
+            "b31-tarzan2",
+            "b31-tarzan2-detail",
+            "b31-tarzan2-dialogue"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed in-disguise wording: he uses hollow-tree amplification, not a monster costume. Original 1999 Sabor and Kerchak roles do not establish the hermit reveal."
+      }
+    },
+    {
+      "questionId": 2096,
+      "hash": "238e5a04c90e56ae9ff16f6495b4ab70ddfab38729067b9bf7daac5d06fbbe51",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "A different fact from Zugor reveal and the other Tarzan II characters.",
+      "context": "Tarzan II opening childhood frustration.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Tarzan's initial inability to keep up running creates his self-doubt.",
+        "sources": [
+          "b31-tarzan2-detail",
+          "b31-tarzan2",
+          "b31-tarzan2-dialogue"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The plot explicitly says he cannot run as fast as the young gorillas.",
+          "sources": [
+            "b31-tarzan2-detail",
+            "b31-tarzan2",
+            "b31-tarzan2-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "His difficulty is not inability to hear warning calls.",
+          "sources": [
+            "b31-tarzan2-detail",
+            "b31-tarzan2",
+            "b31-tarzan2-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "It is not inability to see in daylight.",
+          "sources": [
+            "b31-tarzan2-detail",
+            "b31-tarzan2",
+            "b31-tarzan2-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He can move his arms; the stated limitation is comparative running speed.",
+          "sources": [
+            "b31-tarzan2-detail",
+            "b31-tarzan2",
+            "b31-tarzan2-dialogue"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Narrowed broad weaker to the specific sourced running comparison. The final options ask physical limitations, not unrelated personality traits."
+      }
+    },
+    {
+      "questionId": 2097,
+      "hash": "6ad7c2e4602ed8581b015382edfd540c2981ced5314fb8f17ea5f512ac499e6e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from Chernabog name #564 and soundtrack/other segments.",
+      "context": "Fantasia (1940), transition from Bald Mountain to Ave Maria.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "A dawn bell ends the evil gathering before the Ave Maria procession.",
+        "sources": [
+          "b31-fantasia",
+          "b31-fantasia-corroboration"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Angelus/church bell drives the spirits back.",
+          "sources": [
+            "b31-fantasia",
+            "b31-fantasia-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The account does not describe sunlight turning them into stone; the bell drives them back.",
+          "sources": [
+            "b31-fantasia",
+            "b31-fantasia-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The finale shows a procession, not descending angels.",
+          "sources": [
+            "b31-fantasia",
+            "b31-fantasia-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The bell interrupts him; it is not merely spontaneous sleep.",
+          "sources": [
+            "b31-fantasia",
+            "b31-fantasia-corroboration"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished simultaneous dawn from the specific bell cue; a choir is heard, but that does not make visible descending angels defensible."
+      }
+    },
+    {
+      "questionId": 2098,
+      "hash": "09d348eeec52d16eea0d680fad73cdeb012751678620b9403b974570adea3848",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from Papi name #2199, youth product #2200 and camp rivalry #2201.",
+      "context": "Kronk's New Groove, father-visit framing story.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Kronk wants his visiting father to believe he has an impressive settled domestic life.",
+        "sources": [
+          "b31-kronk",
+          "b31-kronk-official"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The plot specifies a house and family, with friends pretending to be wife and children.",
+          "sources": [
+            "b31-kronk",
+            "b31-kronk-official"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He is not fabricating royal status for this visit.",
+          "sources": [
+            "b31-kronk",
+            "b31-kronk-official"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He already is a chef; the domestic claim is what he fakes.",
+          "sources": [
+            "b31-kronk",
+            "b31-kronk-official"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The father-visit deception is not a championship trophy.",
+          "sources": [
+            "b31-kronk",
+            "b31-kronk-official"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The chef distractor could describe a real occupation but not the false claim in this visit. The source separates the domestic deception from earlier Yzma and camp flashbacks."
+      }
+    },
+    {
+      "questionId": 2100,
+      "hash": "0dd84cb6d61294f3892215630a8d6fefd57c0bd2e3d8373c0817ed20c049a83f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from original-film Faline #1055 and the father-son premise.",
+      "context": "Bambi II, Ronno/Faline rivalry.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Ronno is the older fawn and romantic rival.",
+        "sources": [
+          "b31-bambi2",
+          "b31-bambi2-dialogue"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The cast and plot identify Ronno as Faline's other suitor and Bambi's rival.",
+          "sources": [
+            "b31-bambi2",
+            "b31-bambi2-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The film's named rival is Ronno, not Gobo.",
+          "sources": [
+            "b31-bambi2",
+            "b31-bambi2-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Friend Owl is the owl helping Bambi's father, not a rival fawn.",
+          "sources": [
+            "b31-bambi2",
+            "b31-bambi2-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Flower is Bambi's skunk friend, not the rival fawn.",
+          "sources": [
+            "b31-bambi2",
+            "b31-bambi2-dialogue"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Did not import Gobo from Salten's book. Compared roles and species; Ronno's challenges and pursuit of Faline are explicit."
+      }
+    },
+    {
+      "questionId": 2101,
+      "hash": "b725e23d6ab46076b6ba3b573f292d9fd0d1c5f4bea5570314f3642386e71a9e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #2468 father voice actor and #2469 substitute-doe request.",
+      "context": "Bambi II, interval following his mother's death.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The bereaved fawn and his father form the film's central bond.",
+        "sources": [
+          "b31-bambi2-official",
+          "b31-bambi2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney's synopsis identifies father and son learning to become family.",
+          "sources": [
+            "b31-bambi2-official",
+            "b31-bambi2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "His mother is dead, so this is not mother and son raising another fawn.",
+          "sources": [
+            "b31-bambi2-official",
+            "b31-bambi2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A planned wedding is not the documented central relationship.",
+          "sources": [
+            "b31-bambi2-official",
+            "b31-bambi2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bambi and Ronno are rivals, not joint forest rulers.",
+          "sources": [
+            "b31-bambi2-official",
+            "b31-bambi2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All answers now describe relationships. The father-son plot excludes mother-return, wedding and joint-rule premises."
+      }
+    },
+    {
+      "questionId": 2102,
+      "hash": "710323b5d9852bca74cae3124bb72c281eb92c8ff45c806924f827b756674228",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "No other question in the complete park digest asks HKDL's original opening year.",
+      "context": "Hong Kong Disneyland original opening, 2005.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney's opening-day release dates the Hong Kong park to 2005.",
+        "sources": [
+          "b31-hk"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The official opening is September 12, 2005.",
+          "sources": [
+            "b31-hk"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2001 is not the dated opening year.",
+          "sources": [
+            "b31-hk"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2008 is not the dated opening year.",
+          "sources": [
+            "b31-hk"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2016 is not the dated opening year.",
+          "sources": [
+            "b31-hk"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Original opening is distinct from later expansions and Shanghai's debut. The dated contemporary release fixes one year."
+      }
+    },
+    {
+      "questionId": 2103,
+      "hash": "757370e795eb23d7cc713c07969376669b0af95da89f51e9509224925e0a9c01",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #2356 financing method and #1198 production nickname.",
+      "context": "Snow White and the Seven Dwarfs, 1937 final production cost.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "AFI distinguishes final production cost from the original budget.",
+        "sources": [
+          "b31-snow-cost",
+          "b31-snow-cost-corroboration"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "$1,488,423 rounds to $1.5 million.",
+          "sources": [
+            "b31-snow-cost",
+            "b31-snow-cost-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "$0.5 million is far below the cited final cost.",
+          "sources": [
+            "b31-snow-cost",
+            "b31-snow-cost-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "$3 million is roughly double the cited final cost.",
+          "sources": [
+            "b31-snow-cost",
+            "b31-snow-cost-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "$0.75 million is about half the cited final cost.",
+          "sources": [
+            "b31-snow-cost",
+            "b31-snow-cost-corroboration"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the disputed precision of the initial budget and specified nominal dollars. The rounded final amount is corroborated independently."
+      }
+    },
+    {
+      "questionId": 2104,
+      "hash": "d02e7086f3b75158eb38e7d793f3e9a7d796c2f134a8527100314ec132b4c4ab",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Separate from #1037 trainer identity and #1287 rival identity.",
+      "context": "Cars 3, Florida 500 final-lap pass.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The final-lap wall pin ends with Cruz passing over Storm.",
+        "sources": [
+          "b31-cars3",
+          "b31-cars3-corroboration"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "She flips over Storm.",
+          "sources": [
+            "b31-cars3",
+            "b31-cars3-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "She passes over him rather than spinning him backward.",
+          "sources": [
+            "b31-cars3",
+            "b31-cars3-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The pass is a physical flip, not a nitro activation.",
+          "sources": [
+            "b31-cars3",
+            "b31-cars3-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "She goes over him, not under the track.",
+          "sources": [
+            "b31-cars3",
+            "b31-cars3-corroboration"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the unsupported claim that she learned it from footage. Scope is the particular wall-pin escape, not every tactic used during the whole race."
+      }
+    },
+    {
+      "questionId": 2105,
+      "hash": "384d9f6ce0e361027da4e087ae928460645933583f1f8255552ae56094e7658d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from #192 fraternity and #1283 dean facts.",
+      "context": "Monsters University, Mike's Room 319 arrival.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Randy/ Randall introduces himself as Mike's assigned college roommate.",
+        "sources": [
+          "b31-mu-room",
+          "b31-mu-roles",
+          "b31-mu"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Assignment and introduction identify him as the roommate.",
+          "sources": [
+            "b31-mu-room",
+            "b31-mu-roles",
+            "b31-mu"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "They meet as students; he is not introduced as a brother.",
+          "sources": [
+            "b31-mu-room",
+            "b31-mu-roles",
+            "b31-mu"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He is a fellow scaring major, not the professor.",
+          "sources": [
+            "b31-mu-room",
+            "b31-mu-roles",
+            "b31-mu"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He is a fellow assigned resident, not the supervisor.",
+          "sources": [
+            "b31-mu-room",
+            "b31-mu-roles",
+            "b31-mu"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Limited to college arrival and removed the unneeded study-partner/rivalry generalization. Randy is the younger Randall, not a separate monster."
+      }
+    },
+    {
+      "questionId": 2106,
+      "hash": "a40168c293682be1a49e11e2e9707b69133132c6af596207cab88ab2445a94c8",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from the fraternity Mike joins and the dean identity.",
+      "context": "Monsters University, Roar Omega Roar leadership.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar explicitly identifies the ROR president.",
+        "sources": [
+          "b31-mu",
+          "b31-mu-roles"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Johnny Worthington is named president.",
+          "sources": [
+            "b31-mu",
+            "b31-mu-roles"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Randall is a student/member, not the named president.",
+          "sources": [
+            "b31-mu",
+            "b31-mu-roles"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sulley is a student and temporary member, not president.",
+          "sources": [
+            "b31-mu",
+            "b31-mu-roles"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hardscrabble is the dean, not a fraternity president.",
+          "sources": [
+            "b31-mu",
+            "b31-mu-roles"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed top-student superlative. A single named presidency excludes the other members without claiming they lack scaring skill."
+      }
+    },
+    {
+      "questionId": 2107,
+      "hash": "14be0e38cd1177a719b452e2e4aeb9a72132b5cb84db823aaaa4f317612ec202",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Group identity differs from cast voices, scout destination and membership lie.",
+      "context": "The Fox and the Hound 2, Cash's county-fair act.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Copper joins the named musical group led by Cash.",
+        "sources": [
+          "b31-fox2",
+          "b31-fox2-official"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The group is the Singin' Strays.",
+          "sources": [
+            "b31-fox2",
+            "b31-fox2-official"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The named group is not The Barking Brigade.",
+          "sources": [
+            "b31-fox2",
+            "b31-fox2-official"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The named group is not The Howling Harmonizers.",
+          "sources": [
+            "b31-fox2",
+            "b31-fox2-official"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The named group is not The Mutt Chorus.",
+          "sources": [
+            "b31-fox2",
+            "b31-fox2-official"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed singing stray dogs from the stem because it paraphrased the correct name. D23 spells the group Singing Strays, while the detailed plot records Singin' Strays; these denote the same act."
+      }
+    },
+    {
+      "questionId": 2108,
+      "hash": "aa2f610d63da47a232d6ee80622d06091122afe022c4df111634c959776614a4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Venue affiliation adds a fact beyond the group or voice actors.",
+      "context": "The Fox and the Hound 2, county-fair talent scout.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The anticipated scout is linked to the Grand Ole Opry.",
+        "sources": [
+          "b31-fox2",
+          "b31-fox2-official"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The plot explicitly names the Grand Ole Opry scout.",
+          "sources": [
+            "b31-fox2",
+            "b31-fox2-official"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The scout is not described as representing Carnegie Hall.",
+          "sources": [
+            "b31-fox2",
+            "b31-fox2-official"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The named venue is not the Royal Albert Hall.",
+          "sources": [
+            "b31-fox2",
+            "b31-fox2-official"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The named venue is not the Hollywood Bowl.",
+          "sources": [
+            "b31-fox2",
+            "b31-fox2-official"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Changed event-versus-person options into four parallel venues. The precise affiliation, not merely a generic audition, is asked."
+      }
+    },
+    {
+      "questionId": 2109,
+      "hash": "5b53adc5eb17d52ed4ea0cfcd0078f526264f5a99dd78291dc28b46eb79ccb75",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Separate membership deception from group name and scout affiliation.",
+      "context": "The Fox and the Hound 2, Cash recruits Copper after Tod's lie.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Tod falsely presents the owned Copper as a stray so he can join.",
+        "sources": [
+          "b31-fox2",
+          "b31-fox2-official"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Calling Copper a stray means claiming he has no owner.",
+          "sources": [
+            "b31-fox2",
+            "b31-fox2-official"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tod promotes Copper's membership; denying his singing is not the recorded claim.",
+          "sources": [
+            "b31-fox2",
+            "b31-fox2-official"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The lie concerns Copper's ownership status, not ownership of the fair.",
+          "sources": [
+            "b31-fox2",
+            "b31-fox2-official"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The recorded lie is stray status, not an injured leg.",
+          "sources": [
+            "b31-fox2",
+            "b31-fox2-official"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The original why stem had what answers. Final wording asks the false claim; Copper really belongs to Amos Slade, making no owner a lie."
+      }
+    },
+    {
+      "questionId": 2110,
+      "hash": "07cbe61967a92a0dbb86cb5207aecf3f766a366e0687e8d7867917bddc056e34",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Cause differs from #2111 guest group; canonical theatrical film, not later book/TV material.",
+      "context": "Mary Poppins (1964), Uncle Albert visit.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Albert's laughter is the explicit trigger for floating.",
+        "sources": [
+          "b31-poppins",
+          "b31-poppins-corroboration"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Uncontrollable laughter causes his floating.",
+          "sources": [
+            "b31-poppins",
+            "b31-poppins-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Eating cake is not the identified trigger.",
+          "sources": [
+            "b31-poppins",
+            "b31-poppins-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A midnight clock is not the identified trigger.",
+          "sources": [
+            "b31-poppins",
+            "b31-poppins-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Removing his hat is not the identified trigger.",
+          "sources": [
+            "b31-poppins",
+            "b31-poppins-corroboration"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Replaced speculative laughing-gas diagnosis with observable cause. Thinking sad thoughts brings people down rather than causing this ascent."
+      }
+    },
+    {
+      "questionId": 2111,
+      "hash": "a0e7cde49b989f8f41c1cbfe6fcc28b57569c2be80123b705c232a8a86f4d06d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Guest list is distinct from Albert's floating trigger.",
+      "context": "Mary Poppins (1964), floating tea party.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The tea-service dialogue identifies Mary, Bert and both Banks children.",
+        "sources": [
+          "b31-poppins",
+          "b31-poppins-corroboration"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Mary pours for Albert, Bert, Jane and Michael.",
+          "sources": [
+            "b31-poppins",
+            "b31-poppins-corroboration"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "George and Winifred are not among these tea guests.",
+          "sources": [
+            "b31-poppins",
+            "b31-poppins-corroboration"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Ellen, Mrs. Brill and George are not this tea group.",
+          "sources": [
+            "b31-poppins",
+            "b31-poppins-corroboration"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "The servants and Winifred do not replace Bert and the children.",
+          "sources": [
+            "b31-poppins",
+            "b31-poppins-corroboration"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed after laughing too hard: Mary ascends deliberately while disapproving of the laughter. Compared complete four-person groups, not overlapping only-children alternatives."
+      }
+    },
+    {
+      "questionId": 2112,
+      "hash": "76130a2bebfc71817ab2750a13b33be901f2ab073130bcba3611858d7d59a037",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from study motive #2113 and travel object #2114.",
+      "context": "Bedknobs and Broomsticks (1971), evacuees arriving at Miss Price's home.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney identifies the apprentice witch who shelters the London children.",
+        "sources": [
+          "b31-bed"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Eglantine Price is the named host/apprentice.",
+          "sources": [
+            "b31-bed"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mary Poppins is not the named witch in this film.",
+          "sources": [
+            "b31-bed"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Agatha Fritton is not the named host.",
+          "sources": [
+            "b31-bed"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Millicent Bloom is not the named host.",
+          "sources": [
+            "b31-bed"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The wartime-evacuee premise belongs to the 1971 film; Disney's synopsis and Lansbury credit identify one character."
+      }
+    },
+    {
+      "questionId": 2113,
+      "hash": "6a6929f6bcd33f27c905b89a4cec50a2687cdf247ee9eace62e740b2ca120d2b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Motivation is a separate fact from identity and object.",
+      "context": "Bedknobs and Broomsticks (1971), correspondence study and missing final lesson.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "She seeks useful magic for England's war effort through her course.",
+        "sources": [
+          "b31-bed",
+          "b31-bed-dialogue"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney identifies a spell to help England win against Nazi Germany.",
+          "sources": [
+            "b31-bed",
+            "b31-bed-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Her goal is war aid, not an entertainment career.",
+          "sources": [
+            "b31-bed",
+            "b31-bed-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The documented purpose is not a family curse.",
+          "sources": [
+            "b31-bed",
+            "b31-bed-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The documented purpose is not a wager with a sister.",
+          "sources": [
+            "b31-bed",
+            "b31-bed-dialogue"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished Price's sincere wartime goal from Browne's street-performer occupation. The desired final lesson is linked to ending the war."
+      }
+    },
+    {
+      "questionId": 2114,
+      "hash": "2973cae6416e9321d816d6137d5c0e0bc7c0af88a1e2a525bb8ba6671449c224",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from #2113 spell's war purpose; 1971/Lansbury identifies film without naming the answer in the title.",
+      "context": "Bedknobs and Broomsticks (1971), enchanted gift to Paul.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Price enchants Paul's bedknob with the traveling spell.",
+        "sources": [
+          "b31-bed",
+          "b31-bed-dialogue"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The knob operates the bed's travel spell.",
+          "sources": [
+            "b31-bed",
+            "b31-bed-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Her broomstick is a separate attempted flying method, not Paul's gift.",
+          "sources": [
+            "b31-bed",
+            "b31-bed-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The gift is not a carpet.",
+          "sources": [
+            "b31-bed",
+            "b31-bed-dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The gift is not a clock.",
+          "sources": [
+            "b31-bed",
+            "b31-bed-dialogue"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed title giveaway and unqualified anywhere/instantly claim. Paul alone operates this particular spell; broom flight does not make the broom a second correct gift."
+      }
+    },
+    {
+      "questionId": 2115,
+      "hash": "025a4e14e6b8b037367ecf1f3c5e0a95d2b4bde12b1c5576874f981d90214fec",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from #1205 source novel author and #2116 destruction motive.",
+      "context": "20,000 Leagues Under the Sea (1954), Nautilus commander.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The official synopsis names the submarine's captain.",
+        "sources": [
+          "b31-nemo",
+          "b31-nemo-plot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Nemo commands Nautilus.",
+          "sources": [
+            "b31-nemo",
+            "b31-nemo-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Flint is not the named Nautilus captain.",
+          "sources": [
+            "b31-nemo",
+            "b31-nemo-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Amelia is not the named Nautilus captain.",
+          "sources": [
+            "b31-nemo",
+            "b31-nemo-plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hook is not the named Nautilus captain.",
+          "sources": [
+            "b31-nemo",
+            "b31-nemo-plot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Specified the 1954 Disney version. A unique named commander excludes other Disney captains without relying on what kind of vessel they could theoretically command."
+      }
+    },
+    {
+      "questionId": 2116,
+      "hash": "375fb3d06835ec265fc5cdd015e84d17692df6dacad0d11361b55b387494b23a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Motive differs from Nemo identity and film production trivia.",
+      "context": "20,000 Leagues Under the Sea (1954), Vulcania destruction order.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Nemo destroys the discoveries before hostile boarding parties can obtain them.",
+        "sources": [
+          "b31-nemo-dialogue",
+          "b31-nemo-plot",
+          "b31-nemo"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Dialogue orders destruction before the parties reach the lagoon; plot confirms concealment of discoveries.",
+          "sources": [
+            "b31-nemo-dialogue",
+            "b31-nemo-plot",
+            "b31-nemo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The triggering danger is hostile boarding parties, not diverting lava.",
+          "sources": [
+            "b31-nemo-dialogue",
+            "b31-nemo-plot",
+            "b31-nemo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He destroys the base rather than building an exit channel.",
+          "sources": [
+            "b31-nemo-dialogue",
+            "b31-nemo-plot",
+            "b31-nemo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The crew agrees to follow Nemo; he is not punishing a mutiny when planting the bomb.",
+          "sources": [
+            "b31-nemo-dialogue",
+            "b31-nemo-plot",
+            "b31-nemo"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Replaced trap-on-pursuing-ships, which could overlap the defensive explosion, with a distinct channel claim. The motive is denial of knowledge to enemies, not a naturally erupting volcano."
+      }
+    },
+    {
+      "questionId": 2117,
+      "hash": "702091ce98546e05472d05c1fe335a3e1135ff3f407cef7c5870eeb9fb03f49b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from #2118 defensive weapons, #2119 treehouse and park adaptations.",
+      "context": "Swiss Family Robinson (1960), opening shipwreck.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The family's vessel grounds on rocks and becomes a salvageable wreck.",
+        "sources": [
+          "b31-swiss",
+          "b31-swiss-official"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The plot explicitly describes grounding on rocks.",
+          "sources": [
+            "b31-swiss",
+            "b31-swiss-official"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pirates later approach; they do not capture the ship intact in this event.",
+          "sources": [
+            "b31-swiss",
+            "b31-swiss-official"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The family goes ashore after wrecking, rather than sailing away.",
+          "sources": [
+            "b31-swiss",
+            "b31-swiss-official"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The event is a wreck, not a ship sale.",
+          "sources": [
+            "b31-swiss",
+            "b31-swiss-official"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed competing chain-of-causation answers about pirates and storm. Final wording asks the immediate physical fate at the island, not the cause of the whole voyage disruption."
+      }
+    }
+  ]
+}

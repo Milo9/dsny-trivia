@@ -1,0 +1,41 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-08",
+  "questions": [
+    {
+      "id": 2056,
+      "question": "In Moana, what mischievous, coconut-armored pirate creatures ambush Moana's boat to steal Maui's fishhook?",
+      "answers": [
+        "The Kakamora",
+        "The Druun",
+        "The Tamatoa Clan",
+        "The Reef Raiders"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    {
+      "id": 2415,
+      "question": "In Moana 2, which coconut-armored pirate creatures from the first film return and reveal they too were cut off from their home by Nalo's curse?",
+      "answers": [
+        "The Kakamora",
+        "The Matagi",
+        "The Taumata",
+        "The Mo'olele"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    }
+  ],
+  "decision": "retire",
+  "retiredId": 2056,
+  "replacedBy": 2415,
+  "reason": "Both ask the identity of the same coconut-armored pirates. Retain the sequel-context question; the retired original also wrongly says they seek Maui’s fishhook, whereas they seek Te Fiti’s heart.",
+  "sources": [
+    {
+      "url": "https://www.disney.co.jp/movie/moana",
+      "locator": "Character: Kakamora (Japanese official character description; target is Te Fiti’s heart)"
+    }
+  ],
+  "challenge": "Read both complete questions and all options: the same identity/reveal answers both without learning an independent fact."
+}

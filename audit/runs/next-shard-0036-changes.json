@@ -1,0 +1,1216 @@
+{
+  "2318": {
+    "types": [
+      "factual",
+      "clarification"
+    ],
+    "reason": "Anchor excludes dolphins from the pledge; Chum supplies the cute imitation. Correct the conflated attribution.",
+    "before": {
+      "id": 2318,
+      "question": "In Finding Nemo, what does Anchor the hammerhead shark say he can't stand, feeling sharks unfairly get less credit for being 'cute'?",
+      "answers": [
+        "Dolphins",
+        "Jellyfish",
+        "Sea turtles",
+        "Whales"
+      ],
+      "difficulty": "hard",
+      "category": "characters"
+    },
+    "after": {
+      "id": 2318,
+      "question": "In Finding Nemo, which animals do Anchor and Chum disparage during the sharks' support-group meeting?",
+      "answers": [
+        "Dolphins",
+        "Jellyfish",
+        "Sea turtles",
+        "Whales"
+      ],
+      "difficulty": "hard",
+      "category": "characters"
+    }
+  },
+  "2319": {
+    "types": [
+      "distractors"
+    ],
+    "reason": "Replace near-identical name permutations with distinct pairs.",
+    "before": {
+      "id": 2319,
+      "question": "In The Little Mermaid II: Return to the Sea, what are the names of the penguin and walrus who help Melody find Atlantica?",
+      "answers": [
+        "Tip and Dash",
+        "Pip and Dash",
+        "Tip and Splash",
+        "Chip and Dash"
+      ],
+      "difficulty": "hard",
+      "category": "characters"
+    },
+    "after": {
+      "id": 2319,
+      "question": "In The Little Mermaid II: Return to the Sea, what are the names of the penguin and walrus who help Melody find Atlantica?",
+      "answers": [
+        "Tip and Dash",
+        "Flotsam and Jetsam",
+        "Cloak and Dagger",
+        "Timon and Pumbaa"
+      ],
+      "difficulty": "hard",
+      "category": "characters"
+    }
+  },
+  "2320": {
+    "types": [
+      "distractors",
+      "clarification"
+    ],
+    "reason": "A shell-shaped locket is also a seashell necklace; remove the overlapping choice.",
+    "before": {
+      "id": 2320,
+      "question": "In The Little Mermaid II: Return to the Sea, what magical christening gift does King Triton give the newborn Melody, later thrown into the sea for her protection?",
+      "answers": [
+        "A locket",
+        "A trident charm",
+        "A seashell necklace",
+        "A pearl bracelet"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    },
+    "after": {
+      "id": 2320,
+      "question": "In The Little Mermaid II: Return to the Sea, what christening gift from Triton bears Melody's name?",
+      "answers": [
+        "A locket",
+        "A trident charm",
+        "A jeweled crown",
+        "A pearl bracelet"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    }
+  },
+  "2321": {
+    "types": [
+      "factual",
+      "clarification"
+    ],
+    "reason": "The sources establish a wall but do not credit Triton with commissioning it.",
+    "before": {
+      "id": 2321,
+      "question": "In The Little Mermaid II: Return to the Sea, what does King Triton have built to separate Melody's kingdom from the sea after Morgana's threat?",
+      "answers": [
+        "A giant wall",
+        "A magic barrier reef",
+        "A moat",
+        "A stone dam"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    },
+    "after": {
+      "id": 2321,
+      "question": "In The Little Mermaid II: Return to the Sea, what is built around Ariel and Eric's castle after Morgana threatens Melody?",
+      "answers": [
+        "A giant wall",
+        "A magic barrier reef",
+        "A moat",
+        "A stone dam"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    }
+  },
+  "2322": {
+    "types": [
+      "clarification",
+      "distractors"
+    ],
+    "reason": "Ask for the observed gift, not an interpretation of proving love or an unsupported placement detail.",
+    "before": {
+      "id": 2322,
+      "question": "In Cinderella II: Dreams Come True, how does the young baker prove his love for Anastasia after she runs away in tears?",
+      "answers": [
+        "A flower from his garland in her hair",
+        "A wedding cake on her doorstep",
+        "A handwritten love letter",
+        "A serenade outside her window"
+      ],
+      "difficulty": "hard",
+      "category": "movies"
+    },
+    "after": {
+      "id": 2322,
+      "question": "In Cinderella II: Dreams Come True, what does the baker give Anastasia after finding her crying by the fountain?",
+      "answers": [
+        "A flower",
+        "A cake",
+        "A letter",
+        "A ribbon"
+      ],
+      "difficulty": "hard",
+      "category": "movies"
+    }
+  },
+  "2323": {
+    "types": [
+      "clarification",
+      "distractors"
+    ],
+    "reason": "Remove the title-as-answer giveaway and ask about the message of the explicit final dialogue.",
+    "before": {
+      "id": 2323,
+      "question": "In Cinderella II: Dreams Come True, what does Cinderella tell Anastasia as she watches her finally dance with the baker she loves?",
+      "answers": [
+        "\"Dreams do come true!\"",
+        "\"Love finds a way!\"",
+        "\"Believe in your heart!\"",
+        "\"Anything is possible!\""
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    },
+    "after": {
+      "id": 2323,
+      "question": "What message does Cinderella offer Anastasia after she stands up to Lady Tremaine to stay with the baker in the 2002 sequel?",
+      "answers": [
+        "Dreams can come true",
+        "Love must remain a secret",
+        "Royal approval comes first",
+        "Appearances matter most"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    }
+  },
+  "2324": {
+    "types": [
+      "factual",
+      "clarification",
+      "distractors"
+    ],
+    "reason": "White Geri wins; the feigned attack creates the distraction used to reverse the board.",
+    "before": {
+      "id": 2324,
+      "question": "In the Pixar short Geri's Game, how does the mean-spirited 'Black' Geri ultimately win the chess match against himself?",
+      "answers": [
+        "Faking a heart attack",
+        "Cheating by moving pieces early",
+        "Knocking the board over",
+        "Bribing a passing pigeon"
+      ],
+      "difficulty": "hard",
+      "category": "pixar"
+    },
+    "after": {
+      "id": 2324,
+      "question": "In Geri's Game, how does the glasses-wearing Geri distract his opponent before secretly turning the chessboard around?",
+      "answers": [
+        "He pretends to have a heart attack",
+        "He points to someone behind the bench",
+        "He spills a drink across the table",
+        "He drops a coin beneath the bench"
+      ],
+      "difficulty": "hard",
+      "category": "pixar"
+    }
+  },
+  "2326": {
+    "types": [
+      "clarification",
+      "difficulty"
+    ],
+    "reason": "Remove the unneeded first claim; Tin Toy already had a human baby. Ask the director's documented development goal.",
+    "before": {
+      "id": 2326,
+      "question": "Directed by Jan Pinkava, Geri's Game was Pixar's first short to feature what kind of main character?",
+      "answers": [
+        "A human",
+        "A talking animal",
+        "A robot",
+        "An insect"
+      ],
+      "difficulty": "hard",
+      "category": "pixar"
+    },
+    "after": {
+      "id": 2326,
+      "question": "According to director Jan Pinkava, Geri's Game was developed to advance Pixar's animation of which kind of character?",
+      "answers": [
+        "A human",
+        "A talking animal",
+        "A robot",
+        "An insect"
+      ],
+      "difficulty": "medium",
+      "category": "pixar"
+    }
+  },
+  "2327": {
+    "types": [
+      "clarification",
+      "distractors"
+    ],
+    "reason": "Replace underwater diving, which can describe the same event as burrowing.",
+    "before": {
+      "id": 2327,
+      "question": "In the Pixar short Piper, what technique does the baby sandpiper learn from a hermit crab to avoid being swept up by incoming waves?",
+      "answers": [
+        "Burying herself in the sand",
+        "Flying above the waves",
+        "Hiding behind a rock",
+        "Diving underneath the wave"
+      ],
+      "difficulty": "medium",
+      "category": "pixar"
+    },
+    "after": {
+      "id": 2327,
+      "question": "In Piper, what does the hatchling copy from a hermit crab when a wave reaches her?",
+      "answers": [
+        "Burrowing into the sand",
+        "Climbing onto driftwood",
+        "Sheltering behind a rock",
+        "Retreating into a shell"
+      ],
+      "difficulty": "medium",
+      "category": "pixar"
+    }
+  },
+  "2328": {
+    "types": [
+      "distractors"
+    ],
+    "reason": "Use the actual name Aquarium of the Pacific for the Long Beach distractor.",
+    "before": {
+      "id": 2328,
+      "question": "To animate realistic shorebirds for the Pixar short Piper, the production team studied live birds at which California aquarium?",
+      "answers": [
+        "Monterey Bay Aquarium",
+        "Long Beach Aquarium",
+        "California Academy of Sciences",
+        "SeaWorld San Diego"
+      ],
+      "difficulty": "hard",
+      "category": "pixar"
+    },
+    "after": {
+      "id": 2328,
+      "question": "To animate realistic shorebirds for the Pixar short Piper, the production team studied live birds at which California aquarium?",
+      "answers": [
+        "Monterey Bay Aquarium",
+        "Aquarium of the Pacific",
+        "California Academy of Sciences",
+        "SeaWorld San Diego"
+      ],
+      "difficulty": "hard",
+      "category": "pixar"
+    }
+  },
+  "2330": {
+    "types": [
+      "clarification",
+      "distractors"
+    ],
+    "reason": "Jealousy overlaps the stated fear of losing his status; replace it with a separate motive.",
+    "before": {
+      "id": 2330,
+      "question": "In Mulan II, why does Mushu secretly try to sabotage Mulan and Shang's upcoming wedding?",
+      "answers": [
+        "Fear of demotion back to ringing the family gong",
+        "Jealousy of Shang",
+        "A wish for Mulan to stay in the army",
+        "A belief the wedding date is unlucky"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    },
+    "after": {
+      "id": 2330,
+      "question": "In Mulan II, what does Mushu fear will happen to him if Mulan marries Shang?",
+      "answers": [
+        "He will lose his guardian position",
+        "He will be exiled from China",
+        "He will turn into a stone statue",
+        "He will forget how to breathe fire"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    }
+  },
+  "2332": {
+    "types": [
+      "distractors"
+    ],
+    "reason": "Qin and Chin are transliterations of the same character; do not offer both.",
+    "before": {
+      "id": 2332,
+      "question": "In Mulan II, what is the name of the lord whose three sons the Emperor's daughters are betrothed to marry?",
+      "answers": [
+        "Lord Qin",
+        "Lord Chin",
+        "Lord Zhao",
+        "Lord Wu"
+      ],
+      "difficulty": "hard",
+      "category": "movies"
+    },
+    "after": {
+      "id": 2332,
+      "question": "In Mulan II, what is the name of the lord whose three sons the Emperor's daughters are betrothed to marry?",
+      "answers": [
+        "Lord Qin",
+        "Lord Shen",
+        "Lord Zhao",
+        "Lord Wu"
+      ],
+      "difficulty": "hard",
+      "category": "movies"
+    }
+  },
+  "2333": {
+    "types": [
+      "clarification"
+    ],
+    "reason": "Ask about the film's opening false accusation rather than bundling its whole geopolitical motive.",
+    "before": {
+      "id": 2333,
+      "question": "In Pocahontas II: Journey to a New World, which returning villain secretly frames John Smith as a traitor to provoke war against the Powhatan Nation?",
+      "answers": [
+        "Governor Ratcliffe",
+        "John Rolfe",
+        "King James",
+        "Governor Dale"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    },
+    "after": {
+      "id": 2333,
+      "question": "In Pocahontas II: Journey to a New World, who falsely accuses John Smith of treason?",
+      "answers": [
+        "Governor Ratcliffe",
+        "John Rolfe",
+        "King James",
+        "Governor Dale"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    }
+  },
+  "2335": {
+    "types": [
+      "clarification"
+    ],
+    "reason": "Specify the film and simplify the political stakes.",
+    "before": {
+      "id": 2335,
+      "question": "In Pocahontas II, which English monarch must Pocahontas impress at a London ball to prevent an armada from sailing against Jamestown?",
+      "answers": [
+        "King James",
+        "King Charles",
+        "King Henry",
+        "King George"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    },
+    "after": {
+      "id": 2335,
+      "question": "In Pocahontas II: Journey to a New World, which English king must Pocahontas impress at the royal ball?",
+      "answers": [
+        "King James",
+        "King Charles",
+        "King Henry",
+        "King George"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    }
+  },
+  "2336": {
+    "types": [
+      "factual",
+      "clarification"
+    ],
+    "reason": "Dialogue explicitly calls her practice a high-wire act, not a trapeze act.",
+    "before": {
+      "id": 2336,
+      "question": "In The Hunchback of Notre Dame II, what circus role is Madellaine training for when Sarousch sends her to spy on Quasimodo?",
+      "answers": [
+        "Trapeze artist",
+        "Tightrope walker",
+        "Lion tamer",
+        "Fortune teller"
+      ],
+      "difficulty": "hard",
+      "category": "characters"
+    },
+    "after": {
+      "id": 2336,
+      "question": "In The Hunchback of Notre Dame II, which circus skill does Madellaine practice and later use to rescue Zephyr?",
+      "answers": [
+        "Tightrope walking",
+        "Trapeze swinging",
+        "Lion taming",
+        "Fire breathing"
+      ],
+      "difficulty": "hard",
+      "category": "characters"
+    }
+  },
+  "2337": {
+    "types": [
+      "factual",
+      "clarification"
+    ],
+    "reason": "Disney states seven story years; six is the gap between release years.",
+    "before": {
+      "id": 2337,
+      "question": "How many years have passed between the first Hunchback of Notre Dame film and its sequel, The Hunchback of Notre Dame II?",
+      "answers": [
+        "Six years",
+        "Seven years",
+        "Three years",
+        "Ten years"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    },
+    "after": {
+      "id": 2337,
+      "question": "At the start of The Hunchback of Notre Dame II, how many years have passed in the story since the first film?",
+      "answers": [
+        "Seven years",
+        "Six years",
+        "Three years",
+        "Ten years"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    }
+  },
+  "2340": {
+    "types": [
+      "distractors",
+      "clarification"
+    ],
+    "reason": "Replace absurd species alternatives with parallel revelations; identify the fictional in-film hero.",
+    "before": {
+      "id": 2340,
+      "question": "In 101 Dalmatians II, what does Lightning reveal to a heartbroken Patch about his TV hero Thunderbolt?",
+      "answers": [
+        "Thunderbolt is just an actor",
+        "Thunderbolt is retiring from the show",
+        "Thunderbolt is secretly a cat",
+        "Thunderbolt was never a real dog"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    },
+    "after": {
+      "id": 2340,
+      "question": "In 101 Dalmatians II: Patch's London Adventure, what does Lightning reveal to Patch about Thunderbolt?",
+      "answers": [
+        "His heroics are an acting performance",
+        "His stunts are performed by his twin",
+        "His adventures are stories from his youth",
+        "His rescues are carried out by Lightning"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    }
+  },
+  "2342": {
+    "types": [
+      "distractors"
+    ],
+    "reason": "Outlanders and Exiles can describe the same group; use distinct fictional names.",
+    "before": {
+      "id": 2342,
+      "question": "In The Lion King II: Simba's Pride, what name is given to Zira's pride of Scar loyalists exiled from the Pride Lands?",
+      "answers": [
+        "The Outsiders",
+        "The Outlanders",
+        "The Exiles",
+        "The Shadow Pride"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    },
+    "after": {
+      "id": 2342,
+      "question": "In The Lion King II: Simba's Pride, what name is given to Zira's pride of Scar loyalists exiled from the Pride Lands?",
+      "answers": [
+        "The Outsiders",
+        "The Night Pride",
+        "The Lion Guard",
+        "The Shadow Pride"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    }
+  },
+  "2343": {
+    "types": [
+      "clarification"
+    ],
+    "reason": "Keep only the location and indoor/outdoor ocean-view features established by the official venue entry.",
+    "before": {
+      "id": 2343,
+      "question": "On the Disney Dream and Disney Fantasy, what adults-only lounge near Palo, inspired by the golden age of ocean liner travel, features an indoor ocean-view setting and a breezy outdoor deck?",
+      "answers": [
+        "Meridian",
+        "The District Lounge",
+        "Evolution",
+        "Pub 687"
+      ],
+      "difficulty": "hard",
+      "category": "cruise"
+    },
+    "after": {
+      "id": 2343,
+      "question": "In November 2026, which adults-only lounge on Disney Dream and Disney Fantasy sits between Palo and Remy and has indoor and outdoor ocean-view seating?",
+      "answers": [
+        "Meridian",
+        "The District Lounge",
+        "Evolution",
+        "Pub 687"
+      ],
+      "difficulty": "hard",
+      "category": "cruise"
+    }
+  },
+  "2344": {
+    "types": [
+      "clarification"
+    ],
+    "reason": "Bound current venue operation to the audit month.",
+    "before": {
+      "id": 2344,
+      "question": "What adults-only cocktail lounge on the Disney Dream and Disney Fantasy features digital views that transform between famous real-world cityscapes throughout the evening?",
+      "answers": [
+        "Skyline",
+        "Meridian",
+        "Ooh La La",
+        "O'Gills Pub"
+      ],
+      "difficulty": "hard",
+      "category": "cruise"
+    },
+    "after": {
+      "id": 2344,
+      "question": "In November 2026, which lounge on Disney Dream and Disney Fantasy features changing digital views of famous cities?",
+      "answers": [
+        "Skyline",
+        "Meridian",
+        "Ooh La La",
+        "O'Gills Pub"
+      ],
+      "difficulty": "hard",
+      "category": "cruise"
+    }
+  },
+  "2345": {
+    "types": [
+      "clarification"
+    ],
+    "reason": "Bound current venue operation to the audit month.",
+    "before": {
+      "id": 2345,
+      "question": "What Champagne and wine bar aboard the Disney Dream, part of The District, is designed to resemble the inside of a Champagne bottle?",
+      "answers": [
+        "Pink",
+        "Ooh La La",
+        "Evolution",
+        "Skyline"
+      ],
+      "difficulty": "hard",
+      "category": "cruise"
+    },
+    "after": {
+      "id": 2345,
+      "question": "In November 2026, which Disney Dream bar in The District is designed to resemble the inside of a Champagne bottle?",
+      "answers": [
+        "Pink",
+        "Ooh La La",
+        "Evolution",
+        "Skyline"
+      ],
+      "difficulty": "hard",
+      "category": "cruise"
+    }
+  },
+  "2346": {
+    "types": [
+      "clarification"
+    ],
+    "reason": "Limit the question to the well-supported 2016 premiere.",
+    "before": {
+      "id": 2346,
+      "question": "'Frozen: A Musical Spectacular' first premiered on Disney Cruise Line in 2016 aboard which ship, before later also playing on the Disney Fantasy?",
+      "answers": [
+        "Disney Wonder",
+        "Disney Magic",
+        "Disney Dream",
+        "Disney Wish"
+      ],
+      "difficulty": "medium",
+      "category": "cruise"
+    },
+    "after": {
+      "id": 2346,
+      "question": "'Frozen, A Musical Spectacular' debuted on Disney Cruise Line in November 2016 aboard which ship?",
+      "answers": [
+        "Disney Wonder",
+        "Disney Magic",
+        "Disney Dream",
+        "Disney Wish"
+      ],
+      "difficulty": "medium",
+      "category": "cruise"
+    }
+  },
+  "2347": {
+    "types": [
+      "clarification"
+    ],
+    "reason": "Remove an unnecessary length claim from the structure-identification question.",
+    "before": {
+      "id": 2347,
+      "question": "At roughly 765 feet long, the AquaDuck water coaster on the Disney Dream and Disney Fantasy famously loops out over the side of the ship and through what structure near the top deck?",
+      "answers": [
+        "The ship's funnel",
+        "The bridge",
+        "The bow flagpole",
+        "The main mast"
+      ],
+      "difficulty": "hard",
+      "category": "cruise"
+    },
+    "after": {
+      "id": 2347,
+      "question": "On Disney Dream and Disney Fantasy, the AquaDuck water coaster passes through which ship structure?",
+      "answers": [
+        "The forward funnel",
+        "The bridge",
+        "The bow flagpole",
+        "The main mast"
+      ],
+      "difficulty": "hard",
+      "category": "cruise"
+    }
+  },
+  "2348": {
+    "types": [
+      "clarification"
+    ],
+    "reason": "Port Misadventures frames the attraction; avoid an inaccurate claim that it belongs to only one random storyline.",
+    "before": {
+      "id": 2348,
+      "question": "In one of the two random storylines on the Disney Wish's AquaMouse ride, Mickey and Minnie start their own seaside excursion company — what do they name it?",
+      "answers": [
+        "Port Misadventures",
+        "Mouseketeer Tours",
+        "Sea Legs Excursions",
+        "The Adventure Company"
+      ],
+      "difficulty": "hard",
+      "category": "cruise"
+    },
+    "after": {
+      "id": 2348,
+      "question": "When AquaMouse debuted on Disney Wish in 2022, what was Mickey and Minnie's fictional excursion company called?",
+      "answers": [
+        "Port Misadventures",
+        "Mouseketeer Tours",
+        "Sea Legs Excursions",
+        "The Adventure Company"
+      ],
+      "difficulty": "hard",
+      "category": "cruise"
+    }
+  },
+  "2349": {
+    "types": [
+      "clarification"
+    ],
+    "reason": "Use witnessed July 2022 menu reporting instead of an unbounded current price claim.",
+    "before": {
+      "id": 2349,
+      "question": "Star Wars: Hyperspace Lounge on the Disney Wish offers a $5,000 specialty cocktail on its menu named after which famous Star Wars artifact?",
+      "answers": [
+        "The Kaiburr Crystal",
+        "The Sith Holocron",
+        "The Darksaber",
+        "The Jedi Compass"
+      ],
+      "difficulty": "hard",
+      "category": "cruise"
+    },
+    "after": {
+      "id": 2349,
+      "question": "What was the name of the $5,000 cocktail on Disney Wish's Star Wars: Hyperspace Lounge menu during its 2022 debut?",
+      "answers": [
+        "Kaiburr Crystal",
+        "Sith Holocron",
+        "Darksaber",
+        "Jedi Compass"
+      ],
+      "difficulty": "hard",
+      "category": "cruise"
+    }
+  },
+  "2350": {
+    "types": [
+      "clarification"
+    ],
+    "reason": "Use the documented debut theme rather than a vague proximity claim.",
+    "before": {
+      "id": 2350,
+      "question": "At Disney Lookout Cay at Lighthouse Point, what is the name of the Bahamian art and culture pavilion located near most of the island's guest amenities?",
+      "answers": [
+        "Goombay Cultural Center",
+        "Bahama Heritage House",
+        "Island Roots Pavilion",
+        "Junkanoo Hall"
+      ],
+      "difficulty": "hard",
+      "category": "cruise"
+    },
+    "after": {
+      "id": 2350,
+      "question": "Which venue was designed to celebrate Bahamian Junkanoo at Disney Lookout Cay at Lighthouse Point for its 2024 debut?",
+      "answers": [
+        "Goombay Cultural Center",
+        "Bahama Heritage House",
+        "Island Roots Pavilion",
+        "Junkanoo Hall"
+      ],
+      "difficulty": "hard",
+      "category": "cruise"
+    }
+  },
+  "2351": {
+    "types": [
+      "clarification"
+    ],
+    "reason": "There are multiple barbecue venues; ask which listed one appeared in the opening food guide.",
+    "before": {
+      "id": 2351,
+      "question": "What is the name of the main barbecue dining venue at Disney Lookout Cay at Lighthouse Point?",
+      "answers": [
+        "True-True BBQ",
+        "Conch Shack BBQ",
+        "Castaway Grill",
+        "Flying Fish BBQ"
+      ],
+      "difficulty": "hard",
+      "category": "cruise"
+    },
+    "after": {
+      "id": 2351,
+      "question": "Which of these barbecue venues appeared in Disney's opening food guide for Lookout Cay at Lighthouse Point in 2024?",
+      "answers": [
+        "True-True BBQ",
+        "Conch Shack BBQ",
+        "Castaway Grill",
+        "Flying Fish BBQ"
+      ],
+      "difficulty": "hard",
+      "category": "cruise"
+    }
+  },
+  "2352": {
+    "types": [
+      "clarification"
+    ],
+    "reason": "Use published rounded dimensions rather than claiming exact engineering identity.",
+    "before": {
+      "id": 2352,
+      "question": "At about 1,119 feet long with 144,000 gross tons, the Disney Treasure shares its exact size and ship class with which earlier Disney Cruise Line ship?",
+      "answers": [
+        "Disney Wish",
+        "Disney Dream",
+        "Disney Fantasy",
+        "Disney Magic"
+      ],
+      "difficulty": "hard",
+      "category": "cruise"
+    },
+    "after": {
+      "id": 2352,
+      "question": "Disney's joint deck plan lists Disney Treasure and which earlier ship at 1,119 feet long and 144,256 gross tons?",
+      "answers": [
+        "Disney Wish",
+        "Disney Dream",
+        "Disney Fantasy",
+        "Disney Magic"
+      ],
+      "difficulty": "hard",
+      "category": "cruise"
+    }
+  },
+  "2356": {
+    "types": [
+      "distractors",
+      "clarification"
+    ],
+    "reason": "Borrowing against insurance also appears in accounts; replace that distractor and specify residential property.",
+    "before": {
+      "id": 2356,
+      "question": "To help finance Snow White and the Seven Dwarfs' spiraling production costs, what did Walt Disney personally mortgage?",
+      "answers": [
+        "His house",
+        "His car collection",
+        "His life insurance policy",
+        "The studio lot"
+      ],
+      "difficulty": "hard",
+      "category": "walt"
+    },
+    "after": {
+      "id": 2356,
+      "question": "According to Film at Lincoln Center, which of these did Walt Disney mortgage to help finish Snow White and the Seven Dwarfs?",
+      "answers": [
+        "His house",
+        "His yacht",
+        "His airplane",
+        "His jewelry collection"
+      ],
+      "difficulty": "hard",
+      "category": "walt"
+    }
+  },
+  "2358": {
+    "types": [
+      "clarification"
+    ],
+    "reason": "Remove an unnecessary consecutive-win premise; retain the ceremony date fact.",
+    "before": {
+      "id": 2358,
+      "question": "The 1933 Silly Symphony 'Three Little Pigs' won Walt Disney's second consecutive Academy Award for Best Animated Short Film — in what year was that ceremony held?",
+      "answers": [
+        "1934",
+        "1932",
+        "1936",
+        "1938"
+      ],
+      "difficulty": "hard",
+      "category": "walt"
+    },
+    "after": {
+      "id": 2358,
+      "question": "At which year's Academy Awards ceremony did Disney's 1933 short Three Little Pigs win the cartoon short award?",
+      "answers": [
+        "1934",
+        "1932",
+        "1936",
+        "1938"
+      ],
+      "difficulty": "hard",
+      "category": "walt"
+    }
+  },
+  "2359": {
+    "types": [
+      "clarification"
+    ],
+    "reason": "Separate composer attribution from the unneeded cut-vocals detail.",
+    "before": {
+      "id": 2359,
+      "question": "The Peter Pan leitmotif tune 'Never Smile at a Crocodile' was composed by which Disney composer, even though its sung lyrics were ultimately cut from the finished film?",
+      "answers": [
+        "Frank Churchill",
+        "George Bruns",
+        "Oliver Wallace",
+        "Paul Smith"
+      ],
+      "difficulty": "hard",
+      "category": "music"
+    },
+    "after": {
+      "id": 2359,
+      "question": "Who composed the music for 'Never Smile at a Crocodile', the crocodile's instrumental theme in Peter Pan (1953)?",
+      "answers": [
+        "Frank Churchill",
+        "George Bruns",
+        "Oliver Wallace",
+        "Paul Smith"
+      ],
+      "difficulty": "hard",
+      "category": "music"
+    }
+  },
+  "2360": {
+    "types": [
+      "clarification"
+    ],
+    "reason": "Bound the writer credit to the original animated film.",
+    "before": {
+      "id": 2360,
+      "question": "Which songwriter, with a long association with Disney, wrote the villain song 'Cruella de Vil' for 101 Dalmatians?",
+      "answers": [
+        "Mel Leven",
+        "Sherman Brothers",
+        "George Bruns",
+        "Terry Gilkyson"
+      ],
+      "difficulty": "hard",
+      "category": "music"
+    },
+    "after": {
+      "id": 2360,
+      "question": "Who wrote the song 'Cruella de Vil' for the animated 101 Dalmatians (1961)?",
+      "answers": [
+        "Mel Leven",
+        "Sherman Brothers",
+        "George Bruns",
+        "Terry Gilkyson"
+      ],
+      "difficulty": "hard",
+      "category": "music"
+    }
+  },
+  "2362": {
+    "types": [
+      "clarification"
+    ],
+    "reason": "Ask the documented five-song credit without an unneeded record claim.",
+    "before": {
+      "id": 2362,
+      "question": "Which songwriting duo made history in 2024 as the first all-female team to lead a Disney animated film's soundtrack, composing five new songs for Moana 2?",
+      "answers": [
+        "Abigail Barlow and Emily Bear",
+        "Kristen Anderson-Lopez and Kate Anderson",
+        "Sara Bareilles and Ingrid Michaelson",
+        "Julia Michaels and Sarah Aarons"
+      ],
+      "difficulty": "hard",
+      "category": "music"
+    },
+    "after": {
+      "id": 2362,
+      "question": "Which songwriting duo wrote five new original songs for Moana 2 (2024)?",
+      "answers": [
+        "Abigail Barlow and Emily Bear",
+        "Kristen Anderson-Lopez and Kate Anderson",
+        "Sara Bareilles and Ingrid Michaelson",
+        "Julia Michaels and Sarah Aarons"
+      ],
+      "difficulty": "hard",
+      "category": "music"
+    }
+  },
+  "2364": {
+    "types": [
+      "clarification"
+    ],
+    "reason": "Count credited acts, including the ensemble as one, and bound the chart event to 2022.",
+    "before": {
+      "id": 2364,
+      "question": "'We Don't Talk About Bruno' from Encanto set a Billboard record for the most credited artists on a number-one hit — how many artists share the credit?",
+      "answers": [
+        "Seven",
+        "Four",
+        "Eight",
+        "Three"
+      ],
+      "difficulty": "hard",
+      "category": "music"
+    },
+    "after": {
+      "id": 2364,
+      "question": "When 'We Don't Talk About Bruno' reached No. 1 on the US Billboard Hot 100 in 2022, how many acts shared its artist credit, counting Encanto Cast as one act?",
+      "answers": [
+        "Seven",
+        "Four",
+        "Eight",
+        "Three"
+      ],
+      "difficulty": "hard",
+      "category": "music"
+    }
+  },
+  "2365": {
+    "types": [
+      "clarification"
+    ],
+    "reason": "Remove later-film doll disposal details from the sibling-name question.",
+    "before": {
+      "id": 2365,
+      "question": "What is the name of Andy's baby sister in Toy Story, who later gives away her Barbie and Bo Peep dolls as she grows older?",
+      "answers": [
+        "Molly",
+        "Emily",
+        "Hannah",
+        "Sarah"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "after": {
+      "id": 2365,
+      "question": "What is the name of Andy's baby sister in Toy Story (1995)?",
+      "answers": [
+        "Molly",
+        "Emily",
+        "Hannah",
+        "Sarah"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    }
+  },
+  "2366": {
+    "types": [
+      "clarification"
+    ],
+    "reason": "Use Pixar's established manager role without the additional marriage/ownership claims.",
+    "before": {
+      "id": 2366,
+      "question": "In Cars, what is the name of Ramone's wife, who owns and runs the V8 Cafe in Radiator Springs?",
+      "answers": [
+        "Flo",
+        "Sally",
+        "Lizzie",
+        "Ramona"
+      ],
+      "difficulty": "medium",
+      "category": "pixar"
+    },
+    "after": {
+      "id": 2366,
+      "question": "In Cars (2006), who manages the V-8 Café in Radiator Springs?",
+      "answers": [
+        "Flo",
+        "Sally",
+        "Lizzie",
+        "Ramona"
+      ],
+      "difficulty": "medium",
+      "category": "pixar"
+    }
+  },
+  "2367": {
+    "types": [
+      "clarification"
+    ],
+    "reason": "Use the official body-shop role without the unnecessary flame-job claim.",
+    "before": {
+      "id": 2367,
+      "question": "In Cars, what is the name of the low-rider body shop owner who paints custom flame jobs for the cars of Radiator Springs?",
+      "answers": [
+        "Ramone",
+        "Luigi",
+        "Guido",
+        "Fillmore"
+      ],
+      "difficulty": "medium",
+      "category": "pixar"
+    },
+    "after": {
+      "id": 2367,
+      "question": "In Cars (2006), who owns the custom body and paint shop in Radiator Springs?",
+      "answers": [
+        "Ramone",
+        "Luigi",
+        "Guido",
+        "Fillmore"
+      ],
+      "difficulty": "medium",
+      "category": "pixar"
+    }
+  },
+  "2369": {
+    "types": [
+      "clarification"
+    ],
+    "reason": "Drop an unnecessary neighbor detail.",
+    "before": {
+      "id": 2369,
+      "question": "In Cars, what is the name of the patriotic Army Jeep who runs the surplus store next door to his organic-fuel-brewing neighbor?",
+      "answers": [
+        "Sarge",
+        "Fillmore",
+        "Sheriff",
+        "Doc Hudson"
+      ],
+      "difficulty": "medium",
+      "category": "pixar"
+    },
+    "after": {
+      "id": 2369,
+      "question": "In Cars (2006), which patriotic Army Jeep runs the surplus store?",
+      "answers": [
+        "Sarge",
+        "Fillmore",
+        "Sheriff",
+        "Doc Hudson"
+      ],
+      "difficulty": "medium",
+      "category": "pixar"
+    }
+  },
+  "2338": {
+    "before": {
+      "id": 2338,
+      "question": "In The Hunchback of Notre Dame II, what do Quasimodo and Madellaine share for the first time as Zephyr rings the bell La Fidèle at the film's end?",
+      "answers": [
+        "A kiss",
+        "A dance",
+        "A handshake",
+        "A toast"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    },
+    "types": [
+      "clarification"
+    ],
+    "reason": "Remove a needless first-ever claim; the final romantic scene is sufficient.",
+    "after": {
+      "id": 2338,
+      "question": "In The Hunchback of Notre Dame II, what do Quasimodo and Madellaine share at the end while Zephyr rings La Fidèle?",
+      "answers": [
+        "A kiss",
+        "A dance",
+        "A handshake",
+        "A toast"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    }
+  },
+  "2368": {
+    "before": {
+      "id": 2368,
+      "question": "In Cars, what is the name of the hippie Volkswagen bus who brews and sells his own organic fuel in Radiator Springs?",
+      "answers": [
+        "Fillmore",
+        "Ramone",
+        "Sarge",
+        "Mater"
+      ],
+      "difficulty": "medium",
+      "category": "pixar"
+    },
+    "types": [
+      "clarification"
+    ],
+    "reason": "Retain the officially described fuel-brewing role without an unnecessary sales claim.",
+    "after": {
+      "id": 2368,
+      "question": "In Cars (2006), which hippie Volkswagen bus brews his own organic fuel?",
+      "answers": [
+        "Fillmore",
+        "Ramone",
+        "Sarge",
+        "Mater"
+      ],
+      "difficulty": "medium",
+      "category": "pixar"
+    }
+  }
+}

@@ -1,0 +1,314 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-09",
+  "comparisons": [
+    {
+      "findingId": "duplicate-07360ecb0e0958424f6a",
+      "questions": [
+        {
+          "id": 1223,
+          "question": "Which Disney Cruise Line ship has a bronze statue of Cinderella in its Grand Hall?",
+          "answers": [
+            "Disney Wish",
+            "Disney Fantasy",
+            "Disney Dream",
+            "Disney Magic"
+          ],
+          "difficulty": "hard",
+          "category": "cruise"
+        },
+        {
+          "id": 2352,
+          "question": "Disney's joint deck plan lists Disney Treasure and which earlier ship at 1,119 feet long and 144,256 gross tons?",
+          "answers": [
+            "Disney Wish",
+            "Disney Dream",
+            "Disney Fantasy",
+            "Disney Magic"
+          ],
+          "difficulty": "hard",
+          "category": "cruise"
+        }
+      ],
+      "reason": "Different facts: Cinderella statue ship versus joint Wish/Treasure technical dimensions. The statue does not identify a technical-plan pairing.",
+      "challenge": "Codex compared both final stems and all four options; neither answer supplies the other fact."
+    },
+    {
+      "findingId": "duplicate-4a086be9797bba73cb81",
+      "questions": [
+        {
+          "id": 729,
+          "question": "Which Disney Cruise Line ship sailed its maiden voyage in July 2022?",
+          "answers": [
+            "Disney Wish",
+            "Disney Dream",
+            "Disney Fantasy",
+            "Disney Treasure"
+          ],
+          "difficulty": "easy",
+          "category": "cruise"
+        },
+        {
+          "id": 2352,
+          "question": "Disney's joint deck plan lists Disney Treasure and which earlier ship at 1,119 feet long and 144,256 gross tons?",
+          "answers": [
+            "Disney Wish",
+            "Disney Dream",
+            "Disney Fantasy",
+            "Disney Magic"
+          ],
+          "difficulty": "hard",
+          "category": "cruise"
+        }
+      ],
+      "reason": "Different facts: a July 2022 maiden voyage versus dimensions in the joint Treasure/Wish deck plan. A shared ship answer is not shared knowledge.",
+      "challenge": "Codex compared both final stems and all four options; neither answer supplies the other fact."
+    },
+    {
+      "findingId": "duplicate-64cedfea4f6b6bd36fd9",
+      "questions": [
+        {
+          "id": 2274,
+          "question": "Toy Story: The Musical had its 2008 premiere in the Walt Disney Theatre aboard which Disney Cruise Line ship?",
+          "answers": [
+            "Disney Wonder",
+            "Disney Magic",
+            "Disney Dream",
+            "Disney Fantasy"
+          ],
+          "difficulty": "hard",
+          "category": "cruise"
+        },
+        {
+          "id": 2346,
+          "question": "'Frozen, A Musical Spectacular' debuted on Disney Cruise Line in November 2016 aboard which ship?",
+          "answers": [
+            "Disney Wonder",
+            "Disney Magic",
+            "Disney Dream",
+            "Disney Wish"
+          ],
+          "difficulty": "medium",
+          "category": "cruise"
+        }
+      ],
+      "reason": "Different productions and premiere years: Toy Story musical in 2008 versus Frozen in 2016. Knowing either show's ship does not establish the other.",
+      "challenge": "Codex compared both final stems and all four options; neither answer supplies the other fact."
+    },
+    {
+      "findingId": "duplicate-ad5145a8b91ffa702c52",
+      "questions": [
+        {
+          "id": 2329,
+          "question": "The Pixar short Piper premiered in theaters in 2016 alongside which Pixar feature film?",
+          "answers": [
+            "Finding Dory",
+            "The Good Dinosaur",
+            "Cars 3",
+            "Coco"
+          ],
+          "difficulty": "easy",
+          "category": "pixar"
+        },
+        {
+          "id": 2461,
+          "question": "The Pixar short Bao premiered in theaters in 2018 alongside which Pixar feature film?",
+          "answers": [
+            "Incredibles 2",
+            "Coco",
+            "Toy Story 4",
+            "Onward"
+          ],
+          "difficulty": "medium",
+          "category": "pixar"
+        }
+      ],
+      "reason": "Different short/feature pairings and years: Piper with Finding Dory in 2016 versus Bao with Incredibles 2 in 2018. Similar question form does not duplicate the fact.",
+      "challenge": "Codex compared both final stems and all four options; neither answer supplies the other fact."
+    },
+    {
+      "findingId": "duplicate-b80d80c7351e5cc01b4c",
+      "questions": [
+        {
+          "id": 218,
+          "question": "In Bambi, what is the name of Bambi's skunk friend?",
+          "answers": [
+            "Flower",
+            "Daisy",
+            "Blossom",
+            "Thistle"
+          ],
+          "difficulty": "easy",
+          "category": "movies"
+        },
+        {
+          "id": 2322,
+          "question": "In Cinderella II: Dreams Come True, what does the baker give Anastasia after finding her crying by the fountain?",
+          "answers": [
+            "A flower",
+            "A cake",
+            "A letter",
+            "A ribbon"
+          ],
+          "difficulty": "hard",
+          "category": "movies"
+        }
+      ],
+      "reason": "Bambi's skunk name Flower versus a physical flower given by the baker in Cinderella II. A common word does not connect these facts.",
+      "challenge": "Codex compared both final stems and all four options; neither answer supplies the other fact."
+    },
+    {
+      "findingId": "duplicate-d32d4c1a98d366df332d",
+      "questions": [
+        {
+          "id": 961,
+          "question": "Which Disney Cruise Line ship entered service in 1999 as the sister ship to Disney Magic?",
+          "answers": [
+            "Disney Wonder",
+            "Disney Dream",
+            "Disney Fantasy",
+            "Disney Wish"
+          ],
+          "difficulty": "medium",
+          "category": "cruise"
+        },
+        {
+          "id": 2346,
+          "question": "'Frozen, A Musical Spectacular' debuted on Disney Cruise Line in November 2016 aboard which ship?",
+          "answers": [
+            "Disney Wonder",
+            "Disney Magic",
+            "Disney Dream",
+            "Disney Wish"
+          ],
+          "difficulty": "medium",
+          "category": "cruise"
+        }
+      ],
+      "reason": "Wonder's 1999 service introduction differs from hosting the Frozen stage-show debut in November 2016. Ship entry date does not disclose the later show.",
+      "challenge": "Codex compared both final stems and all four options; neither answer supplies the other fact."
+    },
+    {
+      "findingId": "duplicate-dd10105b32c6fda01ba6",
+      "questions": [
+        {
+          "id": 57,
+          "question": "In Snow White, how many dwarfs does Snow White live with?",
+          "answers": [
+            "Seven",
+            "Five",
+            "Eight",
+            "Six"
+          ],
+          "difficulty": "easy",
+          "category": "characters"
+        },
+        {
+          "id": 2364,
+          "question": "When 'We Don't Talk About Bruno' reached No. 1 on the US Billboard Hot 100 in 2022, how many acts shared its artist credit, counting Encanto Cast as one act?",
+          "answers": [
+            "Seven",
+            "Four",
+            "Eight",
+            "Three"
+          ],
+          "difficulty": "hard",
+          "category": "music"
+        }
+      ],
+      "reason": "Seven dwarfs in Snow White versus seven billed recording acts on a 2022 chart credit. These count unrelated sets.",
+      "challenge": "Codex compared both final stems and all four options; neither answer supplies the other fact."
+    },
+    {
+      "findingId": "duplicate-f7b5a6021a862de462e9",
+      "questions": [
+        {
+          "id": 258,
+          "question": "In Peter Pan (1953), what does Wendy offer Peter just before Tinker Bell interrupts them in the nursery?",
+          "answers": [
+            "A kiss",
+            "A hug",
+            "A story",
+            "A dance"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 2338,
+          "question": "In The Hunchback of Notre Dame II, what do Quasimodo and Madellaine share at the end while Zephyr rings La Fidèle?",
+          "answers": [
+            "A kiss",
+            "A dance",
+            "A handshake",
+            "A toast"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        }
+      ],
+      "reason": "Wendy offers Peter a kiss in the nursery; Quasimodo and Madellaine share a kiss in a sequel finale. Separate characters, films and events.",
+      "challenge": "Codex compared both final stems and all four options; neither answer supplies the other fact."
+    }
+  ],
+  "additionalChecks": [
+    {
+      "questions": [
+        {
+          "id": 2337,
+          "question": "At the start of The Hunchback of Notre Dame II, how many years have passed in the story since the first film?",
+          "answers": [
+            "Seven years",
+            "Six years",
+            "Three years",
+            "Ten years"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 2437,
+          "question": "Coco holds the record for the longest development period of any Pixar film up to that point, spending roughly how many years in production?",
+          "answers": [
+            "Six years",
+            "Two years",
+            "Ten years",
+            "Fifteen years"
+          ],
+          "difficulty": "hard",
+          "category": "pixar"
+        }
+      ],
+      "reason": "The old common six-year answer concerned unrelated story chronology and production duration. Disney establishes seven story years for Hunchback II; no duplicate remains."
+    },
+    {
+      "questions": [
+        {
+          "id": 2353,
+          "question": "In 1953, which Disney artist did Walt enlist to hand-draw the famous map, completed over a single intense weekend, that was used to help finance Disneyland?",
+          "answers": [
+            "Herb Ryman",
+            "John Hench",
+            "Marc Davis",
+            "Ken Anderson"
+          ],
+          "difficulty": "hard",
+          "category": "walt"
+        },
+        {
+          "id": 2354,
+          "question": "After Herb Ryman finished the hand-drawn Disneyland presentation map in 1953, Roy Disney took it to which city to help secure financing from network partner ABC?",
+          "answers": [
+            "New York",
+            "Chicago",
+            "Washington, D.C.",
+            "San Francisco"
+          ],
+          "difficulty": "hard",
+          "category": "walt"
+        }
+      ],
+      "reason": "Artist attribution and presentation city are separate facts about the same map. Retain both."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-08",
+  "question": {
+    "id": 1398,
+    "question": "What is the name of the Disney Cruise Line ship that debuted from Fort Lauderdale in late 2025 as a sister ship to the Disney Wish?",
+    "answers": [
+      "Disney Destiny",
+      "Disney Legend",
+      "Disney Aurora",
+      "Disney Europa"
+    ],
+    "difficulty": "medium",
+    "category": "cruise"
+  },
+  "replacement": {
+    "id": 2567,
+    "question": "On what date in 2025 did the Disney Destiny set sail on its maiden voyage from Fort Lauderdale?",
+    "answers": [
+      "November 20, 2025",
+      "October 31, 2025",
+      "December 25, 2025",
+      "January 15, 2026"
+    ],
+    "difficulty": "hard",
+    "category": "cruise"
+  },
+  "reason": "Both test the Disney Destiny maiden voyage from Fort Lauderdale in November 2025. #2567 retains the precise calendar date; #1398 gives the same launch event in reverse. Learning the complete event for #2567 answers #1398 without a new fact.",
+  "sources": [
+    {
+      "url": "https://thewaltdisneycompany.com/news/destiny-cruise-ship-christening/",
+      "locator": "November 10, 2025 article; sister-ship paragraph and final maiden-voyage paragraph",
+      "evidence": "Disney Destiny, sister to Wish and Treasure, launches November 20, 2025 from Fort Lauderdale."
+    }
+  ],
+  "optionAssessment": [
+    "Disney Destiny is the named launch ship.",
+    "Disney Legend is not the named vessel.",
+    "Disney Aurora is not the named vessel.",
+    "Disney Europa is not the named vessel."
+  ],
+  "challenge": "Checked that the Fort Lauderdale launch and Wish sister-ship clues refer to Destiny; no distractor is an alternate name. Retire redundant launch identification and retain exact-date version."
+}

@@ -1,0 +1,41 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-08",
+  "questions": [
+    {
+      "id": 2057,
+      "question": "In Up, despite being named Kevin by Russell, what is later revealed about the giant colorful bird's true gender?",
+      "answers": [
+        "Kevin is actually female",
+        "Kevin is actually a robot",
+        "Kevin is actually two birds",
+        "Kevin is actually Russell's pet from home"
+      ],
+      "difficulty": "medium",
+      "category": "pixar"
+    },
+    {
+      "id": 2580,
+      "question": "In Up, what surprising discovery do Carl and Russell make about the giant bird they've nicknamed Kevin?",
+      "answers": [
+        "Kevin is female",
+        "Kevin can talk",
+        "Kevin belongs to Charles Muntz",
+        "Kevin isn't really a bird"
+      ],
+      "difficulty": "medium",
+      "category": "pixar"
+    }
+  ],
+  "decision": "retire",
+  "retiredId": 2057,
+  "replacedBy": 2580,
+  "reason": "Exact same reveal that Kevin is female. Retain 2580 with more coherent alternative discoveries; the retired question’s gender stem makes its robot/two-birds alternatives conspicuous.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Up_(2009_film)",
+      "locator": "Plot, line 260: Kevin revealed female"
+    }
+  ],
+  "challenge": "Read both complete questions and all options: the same identity/reveal answers both without learning an independent fact."
+}

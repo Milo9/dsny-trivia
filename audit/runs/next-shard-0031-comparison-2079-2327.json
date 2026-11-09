@@ -1,0 +1,36 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-08",
+  "retired": {
+    "id": 2079,
+    "question": "In the Pixar short Piper, what helps the young sandpiper finally overcome her fear of the ocean waves?",
+    "answers": [
+      "A baby hermit crab's advice to look underwater",
+      "Her mother teaching her to fly",
+      "A storm that forces her to adapt",
+      "A friendly seagull's guidance"
+    ],
+    "difficulty": "medium",
+    "category": "pixar"
+  },
+  "replacement": {
+    "id": 2327,
+    "question": "In the Pixar short Piper, what technique does the baby sandpiper learn from a hermit crab to avoid being swept up by incoming waves?",
+    "answers": [
+      "Burying herself in the sand",
+      "Flying above the waves",
+      "Hiding behind a rock",
+      "Diving underneath the wave"
+    ],
+    "difficulty": "medium",
+    "category": "pixar"
+  },
+  "reason": "Both test the same hermit-crab learning episode that lets Piper cope with waves; retain the precise technique question rather than the broad fear-overcoming prompt.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Piper_(film)",
+      "locator": "Plot: crab burrowing and underwater-eye-opening sequence"
+    }
+  ],
+  "challenge": "Compared complete stems and all four options. This is a shared narrative fact rather than a coincidental common answer; no additional fact is required by the removed item."
+}

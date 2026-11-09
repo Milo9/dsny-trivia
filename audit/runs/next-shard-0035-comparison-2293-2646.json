@@ -1,0 +1,31 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-09",
+  "retired": {
+    "id": 2293,
+    "question": "The Pirates of the Caribbean attraction's theme song 'Yo Ho (A Pirate's Life for Me)' has music by George Bruns and lyrics by which Disney Imagineer, professionally credited as 'X'?",
+    "answers": [
+      "Xavier Atencio",
+      "Marc Davis",
+      "Herb Ryman",
+      "Claude Coats"
+    ],
+    "difficulty": "hard",
+    "category": "music"
+  },
+  "replacement": {
+    "id": 2646,
+    "question": "Which Disney Imagineer wrote the lyrics to both 'Grim Grinning Ghosts' for the Haunted Mansion and 'Yo Ho (A Pirate's Life for Me)' for Pirates of the Caribbean?",
+    "answers": [
+      "X Atencio",
+      "Robert B. Sherman",
+      "George Bruns",
+      "Buddy Baker"
+    ],
+    "difficulty": "hard",
+    "category": "walt"
+  },
+  "reason": "#2646 explicitly asks who wrote both Yo Ho and Grim Grinning Ghosts, subsuming the Yo Ho lyricist fact in #2293. Retain the broader two-song relationship.",
+  "evidence": "https://d23.com/a-to-z/atencio-francis-x/",
+  "topicContext": "Complete combined topic digests and cross-bank searches read, including all four options."
+}

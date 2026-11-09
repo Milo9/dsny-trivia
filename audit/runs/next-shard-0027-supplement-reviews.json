@@ -1,0 +1,991 @@
+[
+  {
+    "schema": 2,
+    "questionId": 1445,
+    "hash": "b30f759a3bcb9a81fc028a1952db5a29c6eb25c802c616f4f607662c82d540b3",
+    "questionSnapshot": {
+      "id": 1445,
+      "question": "In Treasure Planet, what is the name of Long John Silver's small, shape-shifting alien blob companion?",
+      "answers": [
+        "Morph",
+        "Splat",
+        "Glop",
+        "Blobby"
+      ],
+      "difficulty": "hard",
+      "category": "movies"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-08",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. A descriptive blob nickname is not an alternative proper name. The map sphere in #835 and B.E.N. in #875 are separate objects/characters.",
+    "verification": {
+      "context": "Treasure Planet (2002), Silver’s galley companion.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Silver’s shapeshifting companion is named Morph.",
+        "sources": [
+          {
+            "sourceNoteId": "b27-treasure",
+            "url": "https://en.wikipedia.org/wiki/Treasure_Planet",
+            "locator": "Plot, galley assignment and black-hole incident; Voice cast Morph/Scroop",
+            "evidence": "Morph is Silver’s small shapeshifting pet. Scroop is the arachnid pirate who cuts Arrow’s lifeline; Hands is another crew member.",
+            "checkedBy": "Codex",
+            "checkedAt": "2026-11-08",
+            "timeSensitive": false,
+            "nextReviewAt": null,
+            "limitations": "Detailed secondary plot and cast inspected; Silver/Morph names corroborated by film dialogue. No original playback claimed.",
+            "topics": [
+              "Batch 27",
+              "treasure"
+            ]
+          },
+          {
+            "sourceNoteId": "b27-surfer",
+            "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=treasure-planet",
+            "locator": "Sarah and Doppler discuss Jim, lines 235-248; Silver/Morph cabin scene 1192-1226",
+            "evidence": "Sarah says Jim built his first solar surfer at eight. Silver addresses his pet as Morphy; Jim calls it Morph.",
+            "checkedBy": "Codex",
+            "checkedAt": "2026-11-08",
+            "timeSensitive": false,
+            "nextReviewAt": null,
+            "limitations": "Third-party film transcription, corroborated by film plot/cast for Morph; the solar-surfer term is explicit dialogue. No claim that Jim invented the device type.",
+            "topics": [
+              "Batch 27",
+              "surfer"
+            ]
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A descriptive blob nickname is not an alternative proper name. The map sphere in #835 and B.E.N. in #875 are separate objects/characters."
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Morph is the named shapeshifting pet.",
+          "sources": [
+            {
+              "sourceNoteId": "b27-treasure",
+              "url": "https://en.wikipedia.org/wiki/Treasure_Planet",
+              "locator": "Plot, galley assignment and black-hole incident; Voice cast Morph/Scroop",
+              "evidence": "Morph is Silver’s small shapeshifting pet. Scroop is the arachnid pirate who cuts Arrow’s lifeline; Hands is another crew member.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Detailed secondary plot and cast inspected; Silver/Morph names corroborated by film dialogue. No original playback claimed.",
+              "topics": [
+                "Batch 27",
+                "treasure"
+              ]
+            },
+            {
+              "sourceNoteId": "b27-surfer",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=treasure-planet",
+              "locator": "Sarah and Doppler discuss Jim, lines 235-248; Silver/Morph cabin scene 1192-1226",
+              "evidence": "Sarah says Jim built his first solar surfer at eight. Silver addresses his pet as Morphy; Jim calls it Morph.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Third-party film transcription, corroborated by film plot/cast for Morph; the solar-surfer term is explicit dialogue. No claim that Jim invented the device type.",
+              "topics": [
+                "Batch 27",
+                "surfer"
+              ]
+            }
+          ],
+          "answer": "Morph",
+          "verdict": "correct"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Splat is not Silver’s pet’s name.",
+          "sources": [
+            {
+              "sourceNoteId": "b27-treasure",
+              "url": "https://en.wikipedia.org/wiki/Treasure_Planet",
+              "locator": "Plot, galley assignment and black-hole incident; Voice cast Morph/Scroop",
+              "evidence": "Morph is Silver’s small shapeshifting pet. Scroop is the arachnid pirate who cuts Arrow’s lifeline; Hands is another crew member.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Detailed secondary plot and cast inspected; Silver/Morph names corroborated by film dialogue. No original playback claimed.",
+              "topics": [
+                "Batch 27",
+                "treasure"
+              ]
+            },
+            {
+              "sourceNoteId": "b27-surfer",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=treasure-planet",
+              "locator": "Sarah and Doppler discuss Jim, lines 235-248; Silver/Morph cabin scene 1192-1226",
+              "evidence": "Sarah says Jim built his first solar surfer at eight. Silver addresses his pet as Morphy; Jim calls it Morph.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Third-party film transcription, corroborated by film plot/cast for Morph; the solar-surfer term is explicit dialogue. No claim that Jim invented the device type.",
+              "topics": [
+                "Batch 27",
+                "surfer"
+              ]
+            }
+          ],
+          "answer": "Splat",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Glop is not Silver’s pet’s name.",
+          "sources": [
+            {
+              "sourceNoteId": "b27-treasure",
+              "url": "https://en.wikipedia.org/wiki/Treasure_Planet",
+              "locator": "Plot, galley assignment and black-hole incident; Voice cast Morph/Scroop",
+              "evidence": "Morph is Silver’s small shapeshifting pet. Scroop is the arachnid pirate who cuts Arrow’s lifeline; Hands is another crew member.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Detailed secondary plot and cast inspected; Silver/Morph names corroborated by film dialogue. No original playback claimed.",
+              "topics": [
+                "Batch 27",
+                "treasure"
+              ]
+            },
+            {
+              "sourceNoteId": "b27-surfer",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=treasure-planet",
+              "locator": "Sarah and Doppler discuss Jim, lines 235-248; Silver/Morph cabin scene 1192-1226",
+              "evidence": "Sarah says Jim built his first solar surfer at eight. Silver addresses his pet as Morphy; Jim calls it Morph.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Third-party film transcription, corroborated by film plot/cast for Morph; the solar-surfer term is explicit dialogue. No claim that Jim invented the device type.",
+              "topics": [
+                "Batch 27",
+                "surfer"
+              ]
+            }
+          ],
+          "answer": "Glop",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Blobby is not Silver’s pet’s name.",
+          "sources": [
+            {
+              "sourceNoteId": "b27-treasure",
+              "url": "https://en.wikipedia.org/wiki/Treasure_Planet",
+              "locator": "Plot, galley assignment and black-hole incident; Voice cast Morph/Scroop",
+              "evidence": "Morph is Silver’s small shapeshifting pet. Scroop is the arachnid pirate who cuts Arrow’s lifeline; Hands is another crew member.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Detailed secondary plot and cast inspected; Silver/Morph names corroborated by film dialogue. No original playback claimed.",
+              "topics": [
+                "Batch 27",
+                "treasure"
+              ]
+            },
+            {
+              "sourceNoteId": "b27-surfer",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=treasure-planet",
+              "locator": "Sarah and Doppler discuss Jim, lines 235-248; Silver/Morph cabin scene 1192-1226",
+              "evidence": "Sarah says Jim built his first solar surfer at eight. Silver addresses his pet as Morphy; Jim calls it Morph.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Third-party film transcription, corroborated by film plot/cast for Morph; the solar-surfer term is explicit dialogue. No claim that Jim invented the device type.",
+              "topics": [
+                "Batch 27",
+                "surfer"
+              ]
+            }
+          ],
+          "answer": "Blobby",
+          "verdict": "incorrect"
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 1446,
+    "hash": "af2897e3c3c644c0e19fbd53128227d1b89c7b06145f36095eb91d60fdf3b944",
+    "questionSnapshot": {
+      "id": 1446,
+      "question": "In Treasure Planet, what flying board does Jim Hawkins ride near the start of the film?",
+      "answers": [
+        "A solar surfer",
+        "A comet board",
+        "A gravity glider",
+        "A rocket board"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-08",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Building a device does not establish inventing the technology; final wording asks what he rides and avoids that claim.",
+    "verification": {
+      "context": "Treasure Planet, Jim’s early solar-surfing activity.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Sarah explicitly calls Jim’s board a solar surfer.",
+        "sources": [
+          {
+            "sourceNoteId": "b27-surfer",
+            "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=treasure-planet",
+            "locator": "Sarah and Doppler discuss Jim, lines 235-248; Silver/Morph cabin scene 1192-1226",
+            "evidence": "Sarah says Jim built his first solar surfer at eight. Silver addresses his pet as Morphy; Jim calls it Morph.",
+            "checkedBy": "Codex",
+            "checkedAt": "2026-11-08",
+            "timeSensitive": false,
+            "nextReviewAt": null,
+            "limitations": "Third-party film transcription, corroborated by film plot/cast for Morph; the solar-surfer term is explicit dialogue. No claim that Jim invented the device type.",
+            "topics": [
+              "Batch 27",
+              "surfer"
+            ]
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Building a device does not establish inventing the technology; final wording asks what he rides and avoids that claim."
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Solar surfer is the device’s name.",
+          "sources": [
+            {
+              "sourceNoteId": "b27-surfer",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=treasure-planet",
+              "locator": "Sarah and Doppler discuss Jim, lines 235-248; Silver/Morph cabin scene 1192-1226",
+              "evidence": "Sarah says Jim built his first solar surfer at eight. Silver addresses his pet as Morphy; Jim calls it Morph.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Third-party film transcription, corroborated by film plot/cast for Morph; the solar-surfer term is explicit dialogue. No claim that Jim invented the device type.",
+              "topics": [
+                "Batch 27",
+                "surfer"
+              ]
+            }
+          ],
+          "answer": "A solar surfer",
+          "verdict": "correct"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Comet board is not the named board.",
+          "sources": [
+            {
+              "sourceNoteId": "b27-surfer",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=treasure-planet",
+              "locator": "Sarah and Doppler discuss Jim, lines 235-248; Silver/Morph cabin scene 1192-1226",
+              "evidence": "Sarah says Jim built his first solar surfer at eight. Silver addresses his pet as Morphy; Jim calls it Morph.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Third-party film transcription, corroborated by film plot/cast for Morph; the solar-surfer term is explicit dialogue. No claim that Jim invented the device type.",
+              "topics": [
+                "Batch 27",
+                "surfer"
+              ]
+            }
+          ],
+          "answer": "A comet board",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gravity glider is not the named board.",
+          "sources": [
+            {
+              "sourceNoteId": "b27-surfer",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=treasure-planet",
+              "locator": "Sarah and Doppler discuss Jim, lines 235-248; Silver/Morph cabin scene 1192-1226",
+              "evidence": "Sarah says Jim built his first solar surfer at eight. Silver addresses his pet as Morphy; Jim calls it Morph.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Third-party film transcription, corroborated by film plot/cast for Morph; the solar-surfer term is explicit dialogue. No claim that Jim invented the device type.",
+              "topics": [
+                "Batch 27",
+                "surfer"
+              ]
+            }
+          ],
+          "answer": "A gravity glider",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rocket board is not the named board.",
+          "sources": [
+            {
+              "sourceNoteId": "b27-surfer",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=treasure-planet",
+              "locator": "Sarah and Doppler discuss Jim, lines 235-248; Silver/Morph cabin scene 1192-1226",
+              "evidence": "Sarah says Jim built his first solar surfer at eight. Silver addresses his pet as Morphy; Jim calls it Morph.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Third-party film transcription, corroborated by film plot/cast for Morph; the solar-surfer term is explicit dialogue. No claim that Jim invented the device type.",
+              "topics": [
+                "Batch 27",
+                "surfer"
+              ]
+            }
+          ],
+          "answer": "A rocket board",
+          "verdict": "incorrect"
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 1510,
+    "hash": "2e536b133e0448b5701fda3b3adb86cd0eede80a52e61fe017af0b524a6ca6d6",
+    "questionSnapshot": {
+      "id": 1510,
+      "question": "In The Princess and the Frog, what is the name of the touching ballad that the Cajun firefly Ray sings to his beloved Evening Star?",
+      "answers": [
+        "Ma Belle Evangeline",
+        "Almost There",
+        "Friends on the Other Side",
+        "Ray's Song"
+      ],
+      "difficulty": "hard",
+      "category": "music"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-08",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Ray’s relationship to the star #245 is different from naming this number. A descriptive Ray’s Song label cannot replace the actual soundtrack title.",
+    "verification": {
+      "context": "The Princess and the Frog (2009), Ray’s evening-star ballad.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Ray sings Ma Belle Evangeline while addressing the star.",
+        "sources": [
+          {
+            "sourceNoteId": "b27-ray",
+            "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=the-princess-and-the-frog",
+            "locator": "Evangeline evening-star scene, lines 1496-1545; Facilier’s number 467-554",
+            "evidence": "Ray sings Ma Belle Evangeline to the star. Friends on the Other Side is Facilier’s number; Almost There belongs to Tiana’s restaurant dream.",
+            "checkedBy": "Codex",
+            "checkedAt": "2026-11-08",
+            "timeSensitive": false,
+            "nextReviewAt": null,
+            "limitations": "Third-party transcription corroborated by saved song/scene note b19-1014 and original soundtrack metadata. No playback claimed.",
+            "topics": [
+              "Batch 27",
+              "ray"
+            ]
+          },
+          {
+            "sourceNoteId": "b27-frog-track",
+            "url": "https://music.apple.com/us/song/ma-belle-evangeline-feat-terence-blanchard/1417397893",
+            "locator": "Song title, Jim Cummings performer and original-motion-picture soundtrack attribution",
+            "evidence": "The track is titled Ma Belle Evangeline, performed by Jim Cummings, on the 2009 Princess and the Frog soundtrack.",
+            "checkedBy": "Codex",
+            "checkedAt": "2026-11-08",
+            "timeSensitive": false,
+            "nextReviewAt": null,
+            "limitations": "Label-distributed original soundtrack metadata; no audio playback claimed.",
+            "topics": [
+              "Batch 27",
+              "frog-track"
+            ]
+          },
+          {
+            "sourceNoteId": "b19-1014",
+            "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=the-princess-and-the-frog",
+            "locator": "Mama Odie’s advice and song, lines 1620-1705; contrast Tiana restaurant fantasy, New Orleans opening and Facilier deal",
+            "evidence": "Mama Odie sings Dig a Little Deeper to distinguish wants from needs. Almost There is Tiana’s restaurant fantasy; Down in New Orleans establishes the city; Friends on the Other Side is Facilier’s deal.",
+            "checkedBy": "Codex",
+            "checkedAt": "2026-11-07",
+            "timeSensitive": false,
+            "nextReviewAt": null,
+            "topics": [
+              "Batch 19"
+            ],
+            "limitations": "Text passage inspected; no film/audio playback claimed. Transcripts are third-party transcriptions; institutional material and corroboration are identified separately."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Ray’s relationship to the star #245 is different from naming this number. A descriptive Ray’s Song label cannot replace the actual soundtrack title."
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Ma Belle Evangeline is the named ballad.",
+          "sources": [
+            {
+              "sourceNoteId": "b27-ray",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=the-princess-and-the-frog",
+              "locator": "Evangeline evening-star scene, lines 1496-1545; Facilier’s number 467-554",
+              "evidence": "Ray sings Ma Belle Evangeline to the star. Friends on the Other Side is Facilier’s number; Almost There belongs to Tiana’s restaurant dream.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Third-party transcription corroborated by saved song/scene note b19-1014 and original soundtrack metadata. No playback claimed.",
+              "topics": [
+                "Batch 27",
+                "ray"
+              ]
+            },
+            {
+              "sourceNoteId": "b27-frog-track",
+              "url": "https://music.apple.com/us/song/ma-belle-evangeline-feat-terence-blanchard/1417397893",
+              "locator": "Song title, Jim Cummings performer and original-motion-picture soundtrack attribution",
+              "evidence": "The track is titled Ma Belle Evangeline, performed by Jim Cummings, on the 2009 Princess and the Frog soundtrack.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Label-distributed original soundtrack metadata; no audio playback claimed.",
+              "topics": [
+                "Batch 27",
+                "frog-track"
+              ]
+            },
+            {
+              "sourceNoteId": "b19-1014",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=the-princess-and-the-frog",
+              "locator": "Mama Odie’s advice and song, lines 1620-1705; contrast Tiana restaurant fantasy, New Orleans opening and Facilier deal",
+              "evidence": "Mama Odie sings Dig a Little Deeper to distinguish wants from needs. Almost There is Tiana’s restaurant fantasy; Down in New Orleans establishes the city; Friends on the Other Side is Facilier’s deal.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-07",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "topics": [
+                "Batch 19"
+              ],
+              "limitations": "Text passage inspected; no film/audio playback claimed. Transcripts are third-party transcriptions; institutional material and corroboration are identified separately."
+            }
+          ],
+          "answer": "Ma Belle Evangeline",
+          "verdict": "correct"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Almost There is Tiana’s restaurant number.",
+          "sources": [
+            {
+              "sourceNoteId": "b27-ray",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=the-princess-and-the-frog",
+              "locator": "Evangeline evening-star scene, lines 1496-1545; Facilier’s number 467-554",
+              "evidence": "Ray sings Ma Belle Evangeline to the star. Friends on the Other Side is Facilier’s number; Almost There belongs to Tiana’s restaurant dream.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Third-party transcription corroborated by saved song/scene note b19-1014 and original soundtrack metadata. No playback claimed.",
+              "topics": [
+                "Batch 27",
+                "ray"
+              ]
+            },
+            {
+              "sourceNoteId": "b27-frog-track",
+              "url": "https://music.apple.com/us/song/ma-belle-evangeline-feat-terence-blanchard/1417397893",
+              "locator": "Song title, Jim Cummings performer and original-motion-picture soundtrack attribution",
+              "evidence": "The track is titled Ma Belle Evangeline, performed by Jim Cummings, on the 2009 Princess and the Frog soundtrack.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Label-distributed original soundtrack metadata; no audio playback claimed.",
+              "topics": [
+                "Batch 27",
+                "frog-track"
+              ]
+            },
+            {
+              "sourceNoteId": "b19-1014",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=the-princess-and-the-frog",
+              "locator": "Mama Odie’s advice and song, lines 1620-1705; contrast Tiana restaurant fantasy, New Orleans opening and Facilier deal",
+              "evidence": "Mama Odie sings Dig a Little Deeper to distinguish wants from needs. Almost There is Tiana’s restaurant fantasy; Down in New Orleans establishes the city; Friends on the Other Side is Facilier’s deal.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-07",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "topics": [
+                "Batch 19"
+              ],
+              "limitations": "Text passage inspected; no film/audio playback claimed. Transcripts are third-party transcriptions; institutional material and corroboration are identified separately."
+            }
+          ],
+          "answer": "Almost There",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Friends on the Other Side is Facilier’s number.",
+          "sources": [
+            {
+              "sourceNoteId": "b27-ray",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=the-princess-and-the-frog",
+              "locator": "Evangeline evening-star scene, lines 1496-1545; Facilier’s number 467-554",
+              "evidence": "Ray sings Ma Belle Evangeline to the star. Friends on the Other Side is Facilier’s number; Almost There belongs to Tiana’s restaurant dream.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Third-party transcription corroborated by saved song/scene note b19-1014 and original soundtrack metadata. No playback claimed.",
+              "topics": [
+                "Batch 27",
+                "ray"
+              ]
+            },
+            {
+              "sourceNoteId": "b27-frog-track",
+              "url": "https://music.apple.com/us/song/ma-belle-evangeline-feat-terence-blanchard/1417397893",
+              "locator": "Song title, Jim Cummings performer and original-motion-picture soundtrack attribution",
+              "evidence": "The track is titled Ma Belle Evangeline, performed by Jim Cummings, on the 2009 Princess and the Frog soundtrack.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Label-distributed original soundtrack metadata; no audio playback claimed.",
+              "topics": [
+                "Batch 27",
+                "frog-track"
+              ]
+            },
+            {
+              "sourceNoteId": "b19-1014",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=the-princess-and-the-frog",
+              "locator": "Mama Odie’s advice and song, lines 1620-1705; contrast Tiana restaurant fantasy, New Orleans opening and Facilier deal",
+              "evidence": "Mama Odie sings Dig a Little Deeper to distinguish wants from needs. Almost There is Tiana’s restaurant fantasy; Down in New Orleans establishes the city; Friends on the Other Side is Facilier’s deal.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-07",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "topics": [
+                "Batch 19"
+              ],
+              "limitations": "Text passage inspected; no film/audio playback claimed. Transcripts are third-party transcriptions; institutional material and corroboration are identified separately."
+            }
+          ],
+          "answer": "Friends on the Other Side",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ray’s Song is not the established track title.",
+          "sources": [
+            {
+              "sourceNoteId": "b27-ray",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=the-princess-and-the-frog",
+              "locator": "Evangeline evening-star scene, lines 1496-1545; Facilier’s number 467-554",
+              "evidence": "Ray sings Ma Belle Evangeline to the star. Friends on the Other Side is Facilier’s number; Almost There belongs to Tiana’s restaurant dream.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Third-party transcription corroborated by saved song/scene note b19-1014 and original soundtrack metadata. No playback claimed.",
+              "topics": [
+                "Batch 27",
+                "ray"
+              ]
+            },
+            {
+              "sourceNoteId": "b27-frog-track",
+              "url": "https://music.apple.com/us/song/ma-belle-evangeline-feat-terence-blanchard/1417397893",
+              "locator": "Song title, Jim Cummings performer and original-motion-picture soundtrack attribution",
+              "evidence": "The track is titled Ma Belle Evangeline, performed by Jim Cummings, on the 2009 Princess and the Frog soundtrack.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Label-distributed original soundtrack metadata; no audio playback claimed.",
+              "topics": [
+                "Batch 27",
+                "frog-track"
+              ]
+            },
+            {
+              "sourceNoteId": "b19-1014",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=the-princess-and-the-frog",
+              "locator": "Mama Odie’s advice and song, lines 1620-1705; contrast Tiana restaurant fantasy, New Orleans opening and Facilier deal",
+              "evidence": "Mama Odie sings Dig a Little Deeper to distinguish wants from needs. Almost There is Tiana’s restaurant fantasy; Down in New Orleans establishes the city; Friends on the Other Side is Facilier’s deal.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-07",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "topics": [
+                "Batch 19"
+              ],
+              "limitations": "Text passage inspected; no film/audio playback claimed. Transcripts are third-party transcriptions; institutional material and corroboration are identified separately."
+            }
+          ],
+          "answer": "Ray's Song",
+          "verdict": "incorrect"
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 1511,
+    "hash": "23051800c1d7f28541f84c4632a17f8e74902c05b699b77a78269ca3a2c40dab",
+    "questionSnapshot": {
+      "id": 1511,
+      "question": "Which Disney animated film features the song 'Friends on the Other Side'?",
+      "answers": [
+        "The Princess and the Frog",
+        "Moana",
+        "Encanto",
+        "Coco"
+      ],
+      "difficulty": "medium",
+      "category": "music"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-08",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Codex read final stem and all four options; complete packet topic catalog and additional cross-shard matches reviewed. Removed Dr. Facilier from the stem so memorizing #27’s villain name no longer solves the question; the actual song/film attribution is required.",
+    "verification": {
+      "context": "Original theatrical song attribution.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The exact number appears in The Princess and the Frog.",
+        "sources": [
+          {
+            "sourceNoteId": "b27-ray",
+            "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=the-princess-and-the-frog",
+            "locator": "Evangeline evening-star scene, lines 1496-1545; Facilier’s number 467-554",
+            "evidence": "Ray sings Ma Belle Evangeline to the star. Friends on the Other Side is Facilier’s number; Almost There belongs to Tiana’s restaurant dream.",
+            "checkedBy": "Codex",
+            "checkedAt": "2026-11-08",
+            "timeSensitive": false,
+            "nextReviewAt": null,
+            "limitations": "Third-party transcription corroborated by saved song/scene note b19-1014 and original soundtrack metadata. No playback claimed.",
+            "topics": [
+              "Batch 27",
+              "ray"
+            ]
+          },
+          {
+            "sourceNoteId": "b27-frog-album",
+            "url": "https://music.apple.com/us/album/the-princess-and-the-frog-original/1417397114",
+            "locator": "Original soundtrack heading, opening editorial track descriptions and Walt Disney Records copyright",
+            "evidence": "The original album attributes Friends on the Other Side to Keith David and Almost There to Anika Noni Rose.",
+            "checkedBy": "Codex",
+            "checkedAt": "2026-11-08",
+            "timeSensitive": false,
+            "nextReviewAt": null,
+            "limitations": "Label-distributed original soundtrack metadata, with film dialogue establishing the characters and scenes.",
+            "topics": [
+              "Batch 27",
+              "frog-album"
+            ]
+          },
+          {
+            "sourceNoteId": "b19-1014",
+            "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=the-princess-and-the-frog",
+            "locator": "Mama Odie’s advice and song, lines 1620-1705; contrast Tiana restaurant fantasy, New Orleans opening and Facilier deal",
+            "evidence": "Mama Odie sings Dig a Little Deeper to distinguish wants from needs. Almost There is Tiana’s restaurant fantasy; Down in New Orleans establishes the city; Friends on the Other Side is Facilier’s deal.",
+            "checkedBy": "Codex",
+            "checkedAt": "2026-11-07",
+            "timeSensitive": false,
+            "nextReviewAt": null,
+            "topics": [
+              "Batch 19"
+            ],
+            "limitations": "Text passage inspected; no film/audio playback claimed. Transcripts are third-party transcriptions; institutional material and corroboration are identified separately."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed Dr. Facilier from the stem so memorizing #27’s villain name no longer solves the question; the actual song/film attribution is required."
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Princess and the Frog contains this number.",
+          "sources": [
+            {
+              "sourceNoteId": "b27-ray",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=the-princess-and-the-frog",
+              "locator": "Evangeline evening-star scene, lines 1496-1545; Facilier’s number 467-554",
+              "evidence": "Ray sings Ma Belle Evangeline to the star. Friends on the Other Side is Facilier’s number; Almost There belongs to Tiana’s restaurant dream.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Third-party transcription corroborated by saved song/scene note b19-1014 and original soundtrack metadata. No playback claimed.",
+              "topics": [
+                "Batch 27",
+                "ray"
+              ]
+            },
+            {
+              "sourceNoteId": "b27-frog-album",
+              "url": "https://music.apple.com/us/album/the-princess-and-the-frog-original/1417397114",
+              "locator": "Original soundtrack heading, opening editorial track descriptions and Walt Disney Records copyright",
+              "evidence": "The original album attributes Friends on the Other Side to Keith David and Almost There to Anika Noni Rose.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Label-distributed original soundtrack metadata, with film dialogue establishing the characters and scenes.",
+              "topics": [
+                "Batch 27",
+                "frog-album"
+              ]
+            },
+            {
+              "sourceNoteId": "b19-1014",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=the-princess-and-the-frog",
+              "locator": "Mama Odie’s advice and song, lines 1620-1705; contrast Tiana restaurant fantasy, New Orleans opening and Facilier deal",
+              "evidence": "Mama Odie sings Dig a Little Deeper to distinguish wants from needs. Almost There is Tiana’s restaurant fantasy; Down in New Orleans establishes the city; Friends on the Other Side is Facilier’s deal.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-07",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "topics": [
+                "Batch 19"
+              ],
+              "limitations": "Text passage inspected; no film/audio playback claimed. Transcripts are third-party transcriptions; institutional material and corroboration are identified separately."
+            }
+          ],
+          "answer": "The Princess and the Frog",
+          "verdict": "correct"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Moana is not its originating film.",
+          "sources": [
+            {
+              "sourceNoteId": "b27-ray",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=the-princess-and-the-frog",
+              "locator": "Evangeline evening-star scene, lines 1496-1545; Facilier’s number 467-554",
+              "evidence": "Ray sings Ma Belle Evangeline to the star. Friends on the Other Side is Facilier’s number; Almost There belongs to Tiana’s restaurant dream.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Third-party transcription corroborated by saved song/scene note b19-1014 and original soundtrack metadata. No playback claimed.",
+              "topics": [
+                "Batch 27",
+                "ray"
+              ]
+            },
+            {
+              "sourceNoteId": "b27-frog-album",
+              "url": "https://music.apple.com/us/album/the-princess-and-the-frog-original/1417397114",
+              "locator": "Original soundtrack heading, opening editorial track descriptions and Walt Disney Records copyright",
+              "evidence": "The original album attributes Friends on the Other Side to Keith David and Almost There to Anika Noni Rose.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Label-distributed original soundtrack metadata, with film dialogue establishing the characters and scenes.",
+              "topics": [
+                "Batch 27",
+                "frog-album"
+              ]
+            },
+            {
+              "sourceNoteId": "b19-1014",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=the-princess-and-the-frog",
+              "locator": "Mama Odie’s advice and song, lines 1620-1705; contrast Tiana restaurant fantasy, New Orleans opening and Facilier deal",
+              "evidence": "Mama Odie sings Dig a Little Deeper to distinguish wants from needs. Almost There is Tiana’s restaurant fantasy; Down in New Orleans establishes the city; Friends on the Other Side is Facilier’s deal.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-07",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "topics": [
+                "Batch 19"
+              ],
+              "limitations": "Text passage inspected; no film/audio playback claimed. Transcripts are third-party transcriptions; institutional material and corroboration are identified separately."
+            }
+          ],
+          "answer": "Moana",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Encanto is not its originating film.",
+          "sources": [
+            {
+              "sourceNoteId": "b27-ray",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=the-princess-and-the-frog",
+              "locator": "Evangeline evening-star scene, lines 1496-1545; Facilier’s number 467-554",
+              "evidence": "Ray sings Ma Belle Evangeline to the star. Friends on the Other Side is Facilier’s number; Almost There belongs to Tiana’s restaurant dream.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Third-party transcription corroborated by saved song/scene note b19-1014 and original soundtrack metadata. No playback claimed.",
+              "topics": [
+                "Batch 27",
+                "ray"
+              ]
+            },
+            {
+              "sourceNoteId": "b27-frog-album",
+              "url": "https://music.apple.com/us/album/the-princess-and-the-frog-original/1417397114",
+              "locator": "Original soundtrack heading, opening editorial track descriptions and Walt Disney Records copyright",
+              "evidence": "The original album attributes Friends on the Other Side to Keith David and Almost There to Anika Noni Rose.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Label-distributed original soundtrack metadata, with film dialogue establishing the characters and scenes.",
+              "topics": [
+                "Batch 27",
+                "frog-album"
+              ]
+            },
+            {
+              "sourceNoteId": "b19-1014",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=the-princess-and-the-frog",
+              "locator": "Mama Odie’s advice and song, lines 1620-1705; contrast Tiana restaurant fantasy, New Orleans opening and Facilier deal",
+              "evidence": "Mama Odie sings Dig a Little Deeper to distinguish wants from needs. Almost There is Tiana’s restaurant fantasy; Down in New Orleans establishes the city; Friends on the Other Side is Facilier’s deal.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-07",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "topics": [
+                "Batch 19"
+              ],
+              "limitations": "Text passage inspected; no film/audio playback claimed. Transcripts are third-party transcriptions; institutional material and corroboration are identified separately."
+            }
+          ],
+          "answer": "Encanto",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Coco is not its originating film.",
+          "sources": [
+            {
+              "sourceNoteId": "b27-ray",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=the-princess-and-the-frog",
+              "locator": "Evangeline evening-star scene, lines 1496-1545; Facilier’s number 467-554",
+              "evidence": "Ray sings Ma Belle Evangeline to the star. Friends on the Other Side is Facilier’s number; Almost There belongs to Tiana’s restaurant dream.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Third-party transcription corroborated by saved song/scene note b19-1014 and original soundtrack metadata. No playback claimed.",
+              "topics": [
+                "Batch 27",
+                "ray"
+              ]
+            },
+            {
+              "sourceNoteId": "b27-frog-album",
+              "url": "https://music.apple.com/us/album/the-princess-and-the-frog-original/1417397114",
+              "locator": "Original soundtrack heading, opening editorial track descriptions and Walt Disney Records copyright",
+              "evidence": "The original album attributes Friends on the Other Side to Keith David and Almost There to Anika Noni Rose.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Label-distributed original soundtrack metadata, with film dialogue establishing the characters and scenes.",
+              "topics": [
+                "Batch 27",
+                "frog-album"
+              ]
+            },
+            {
+              "sourceNoteId": "b19-1014",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=the-princess-and-the-frog",
+              "locator": "Mama Odie’s advice and song, lines 1620-1705; contrast Tiana restaurant fantasy, New Orleans opening and Facilier deal",
+              "evidence": "Mama Odie sings Dig a Little Deeper to distinguish wants from needs. Almost There is Tiana’s restaurant fantasy; Down in New Orleans establishes the city; Friends on the Other Side is Facilier’s deal.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-07",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "topics": [
+                "Batch 19"
+              ],
+              "limitations": "Text passage inspected; no film/audio playback claimed. Transcripts are third-party transcriptions; institutional material and corroboration are identified separately."
+            }
+          ],
+          "answer": "Coco",
+          "verdict": "incorrect"
+        }
+      ]
+    }
+  }
+]

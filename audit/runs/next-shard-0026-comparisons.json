@@ -1,0 +1,418 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-08",
+  "comparisons": [
+    {
+      "findingId": "duplicate-224156014d78d5b21cb4",
+      "questions": [
+        {
+          "id": 1384,
+          "question": "Which Disney film features the rousing song 'Gaston,' in which the villain's admirers celebrate his vanity and brawn?",
+          "answers": [
+            "Beauty and the Beast",
+            "The Hunchback of Notre Dame",
+            "Hercules",
+            "The Great Mouse Detective"
+          ],
+          "difficulty": "easy",
+          "category": "music"
+        },
+        {
+          "id": 2420,
+          "question": "Up became only the second animated film ever nominated for the Academy Award for Best Picture. Which animated film was the first, nominated in 1991?",
+          "answers": [
+            "Beauty and the Beast",
+            "The Lion King",
+            "Toy Story",
+            "Aladdin"
+          ],
+          "difficulty": "medium",
+          "category": "movies",
+          "film": "Beauty and the Beast"
+        }
+      ],
+      "decision": "accepted",
+      "reason": "Gaston soundtrack attribution is separate from Beauty and the Beast earning a Best Picture nomination; neither answer establishes the other fact."
+    },
+    {
+      "findingId": "duplicate-35fa3550c903c59d6395",
+      "questions": [
+        {
+          "id": 1124,
+          "question": "In The Emperor's New Groove (2000), what animal's language does Kronk use when asking Bucky for directions?",
+          "answers": [
+            "Squirrel",
+            "Llama",
+            "Jaguar",
+            "Parrot"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        },
+        {
+          "id": 1433,
+          "question": "In Up, what word repeatedly distracts the talking dogs from what they are doing?",
+          "answers": [
+            "Squirrel!",
+            "Bird!",
+            "Cat!",
+            "Danger!"
+          ],
+          "difficulty": "easy",
+          "category": "pixar"
+        }
+      ],
+      "decision": "accepted",
+      "reason": "Kronk speaking squirrel and Up dogs being distracted by squirrels concern different films, characters and actions."
+    },
+    {
+      "findingId": "duplicate-52f86a68fafb1b3611a3",
+      "questions": [
+        {
+          "id": 698,
+          "question": "What song opens The Lion King (1994)?",
+          "answers": [
+            "Circle of Life",
+            "Hakuna Matata",
+            "I Just Can't Wait to Be King",
+            "Be Prepared"
+          ],
+          "difficulty": "easy",
+          "category": "music"
+        },
+        {
+          "id": 1391,
+          "question": "Which phrase begins the opening chant in The Lion King (1994)?",
+          "answers": [
+            "Nants ingonyama",
+            "Simba wetu",
+            "Rafiki sema",
+            "Circle of"
+          ],
+          "difficulty": "hard",
+          "category": "music"
+        }
+      ],
+      "decision": "accepted",
+      "reason": "Circle of Life is the opening song title; Nants ingonyama is its opening phrase. Knowing the title does not establish the non-English opening words."
+    },
+    {
+      "findingId": "duplicate-68459b8cbf4f5a578fdc",
+      "questions": [
+        {
+          "id": 1384,
+          "question": "Which Disney film features the rousing song 'Gaston,' in which the villain's admirers celebrate his vanity and brawn?",
+          "answers": [
+            "Beauty and the Beast",
+            "The Hunchback of Notre Dame",
+            "Hercules",
+            "The Great Mouse Detective"
+          ],
+          "difficulty": "easy",
+          "category": "music"
+        },
+        {
+          "id": 2577,
+          "question": "What was the first stage musical produced by Walt Disney Theatrical, premiering on Broadway in 1994?",
+          "answers": [
+            "Beauty and the Beast",
+            "The Lion King",
+            "Aida",
+            "Mary Poppins"
+          ],
+          "difficulty": "medium",
+          "category": "walt"
+        }
+      ],
+      "decision": "accepted",
+      "reason": "The song Gaston and the first Broadway production are different music/theater facts; a shared film title does not determine both."
+    },
+    {
+      "findingId": "duplicate-6fbeaa3cada7137c25c7",
+      "questions": [
+        {
+          "id": 1401,
+          "question": "In what Canadian city does Turning Red take place?",
+          "answers": [
+            "Toronto",
+            "Vancouver",
+            "Montreal",
+            "Ottawa"
+          ],
+          "difficulty": "easy",
+          "category": "pixar"
+        },
+        {
+          "id": 2211,
+          "question": "In the Pixar short Bao, in which city does the Chinese-Canadian family live?",
+          "answers": [
+            "Toronto",
+            "Vancouver",
+            "Chicago",
+            "San Francisco"
+          ],
+          "difficulty": "medium",
+          "category": "pixar"
+        }
+      ],
+      "decision": "accepted",
+      "reason": "Turning Red and Bao are different works; each independently requires knowing its Canadian setting. Shared Toronto answer is not a duplicate fact."
+    },
+    {
+      "findingId": "duplicate-7417bb1d017ddb311376",
+      "questions": [
+        {
+          "id": 1383,
+          "question": "Which Disney film features the villain song 'Be Prepared,' in which the villain rallies hyenas for a royal takeover?",
+          "answers": [
+            "The Lion King",
+            "Hercules",
+            "Aladdin",
+            "The Hunchback of Notre Dame"
+          ],
+          "difficulty": "easy",
+          "category": "music"
+        },
+        {
+          "id": 2653,
+          "question": "In Zootopia, what species of animal is Mayor Lionheart, whose administration is revealed to have secretly imprisoned 'savage' predators?",
+          "answers": [
+            "A lion",
+            "A tiger",
+            "A bear",
+            "A wolf"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        }
+      ],
+      "decision": "accepted",
+      "reason": "Be Prepared soundtrack attribution and Mayor Lionheart species are unrelated. The Lion King title is normalized like lion by the detector, but the facts differ."
+    },
+    {
+      "findingId": "duplicate-93ee04aa438a0a694f34",
+      "questions": [
+        {
+          "id": 1382,
+          "question": "Which Disney film features the song 'Just Around the Riverbend,' in which the heroine debates choosing adventure over a comfortable future?",
+          "answers": [
+            "Pocahontas",
+            "Moana",
+            "Brave",
+            "Tangled"
+          ],
+          "difficulty": "medium",
+          "category": "music"
+        },
+        {
+          "id": 2284,
+          "question": "Randy Newman's 'You've Got a Friend in Me' lost the Academy Award for Best Original Song in 1996 to a song from which Disney film?",
+          "answers": [
+            "Pocahontas",
+            "The Lion King",
+            "Beauty and the Beast",
+            "Aladdin"
+          ],
+          "difficulty": "hard",
+          "category": "music"
+        }
+      ],
+      "decision": "accepted",
+      "reason": "Just Around the Riverbend belongs to Pocahontas; the 1996 Oscar defeat of Toy Story is a separate award fact about Colors of the Wind."
+    },
+    {
+      "findingId": "duplicate-94323521c1bd4323b19a",
+      "questions": [
+        {
+          "id": 1397,
+          "question": "Which Disney Cruise Line ship arrived in Singapore for the first time on March 3, 2026?",
+          "answers": [
+            "Disney Adventure",
+            "Disney Horizon",
+            "Disney Voyager",
+            "Disney Pacific"
+          ],
+          "difficulty": "medium",
+          "category": "cruise",
+          "factId": "disney-adventure.first-singapore-arrival",
+          "explanation": "The ship completed a two-month journey to Singapore before its inaugural season.",
+          "source": "https://www.disney.sg/article-disney-adventure-journey-to-singapore",
+          "verifiedAt": "2026-10-29"
+        },
+        {
+          "id": 1620,
+          "question": "In what year did the Disney Adventure begin regular sailings from its Singapore homeport?",
+          "answers": [
+            "2026",
+            "2024",
+            "2025",
+            "2027"
+          ],
+          "difficulty": "medium",
+          "category": "cruise"
+        }
+      ],
+      "decision": "accepted",
+      "reason": "March 3 arrival at Singapore is not the date of beginning regular passenger sailings. Knowing a 2026 sailing year cannot establish the earlier arrival date."
+    },
+    {
+      "findingId": "duplicate-95ad4d681d0184606a20",
+      "questions": [
+        {
+          "id": 1383,
+          "question": "Which Disney film features the villain song 'Be Prepared,' in which the villain rallies hyenas for a royal takeover?",
+          "answers": [
+            "The Lion King",
+            "Hercules",
+            "Aladdin",
+            "The Hunchback of Notre Dame"
+          ],
+          "difficulty": "easy",
+          "category": "music"
+        },
+        {
+          "id": 1453,
+          "question": "In Disney's animated Robin Hood (1973), what type of animal is the greedy, cowardly Prince John who usurps the throne?",
+          "answers": [
+            "A lion",
+            "A bear",
+            "A wolf",
+            "A weasel"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        }
+      ],
+      "decision": "accepted",
+      "reason": "Song-film attribution for Be Prepared does not establish Prince John being a lion in Robin Hood; shared normalized lion tokens are incidental."
+    },
+    {
+      "findingId": "duplicate-9b1c1f3d9a2bf4b89c8c",
+      "questions": [
+        {
+          "id": 151,
+          "question": "Which Disney animated film introduced the song 'A Whole New World' in 1992?",
+          "answers": [
+            "Aladdin",
+            "Beauty and the Beast",
+            "The Little Mermaid",
+            "Pocahontas"
+          ],
+          "difficulty": "easy",
+          "category": "music"
+        },
+        {
+          "id": 1392,
+          "question": "Which 1992 Disney animated film retained Howard Ashman's lyrics after Tim Rice joined the project following Ashman's death?",
+          "answers": [
+            "Aladdin",
+            "Beauty and the Beast",
+            "The Lion King",
+            "Pocahontas"
+          ],
+          "difficulty": "hard",
+          "category": "music"
+        }
+      ],
+      "decision": "accepted",
+      "reason": "A Whole New World film association is different from the Ashman-to-Rice transition after a death; the common Aladdin title does not establish the production history."
+    },
+    {
+      "findingId": "duplicate-bc181c74e3eddb339126",
+      "questions": [
+        {
+          "id": 1397,
+          "question": "Which Disney Cruise Line ship arrived in Singapore for the first time on March 3, 2026?",
+          "answers": [
+            "Disney Adventure",
+            "Disney Horizon",
+            "Disney Voyager",
+            "Disney Pacific"
+          ],
+          "difficulty": "medium",
+          "category": "cruise",
+          "factId": "disney-adventure.first-singapore-arrival",
+          "explanation": "The ship completed a two-month journey to Singapore before its inaugural season.",
+          "source": "https://www.disney.sg/article-disney-adventure-journey-to-singapore",
+          "verifiedAt": "2026-10-29"
+        },
+        {
+          "id": 2569,
+          "question": "Which Disney Cruise Line ship, homeported in Singapore, features a dedicated Toy Story-themed water-play area called Toy Story Place?",
+          "answers": [
+            "Disney Adventure",
+            "Disney Wish",
+            "Disney Treasure",
+            "Disney Destiny"
+          ],
+          "difficulty": "medium",
+          "category": "cruise"
+        }
+      ],
+      "decision": "accepted",
+      "reason": "Singapore arrival date and the ship carrying Toy Story Place are distinct events/design facts; identifying one feature does not supply an arrival date."
+    },
+    {
+      "findingId": "duplicate-d4d4f7c750115c298043",
+      "questions": [
+        {
+          "id": 1433,
+          "question": "In Up, what word repeatedly distracts the talking dogs from what they are doing?",
+          "answers": [
+            "Squirrel!",
+            "Bird!",
+            "Cat!",
+            "Danger!"
+          ],
+          "difficulty": "easy",
+          "category": "pixar"
+        },
+        {
+          "id": 2488,
+          "question": "In The Sword in the Stone, besides turning Wart into a fish, what other animal does Merlin transform him into for a lesson involving two smitten female admirers?",
+          "answers": [
+            "A squirrel",
+            "A rabbit",
+            "A sparrow",
+            "A field mouse"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        }
+      ],
+      "decision": "accepted",
+      "reason": "The Up dog distraction cue and Wart becoming a squirrel during a lesson are independent facts from different films."
+    },
+    {
+      "findingId": "duplicate-e2d972412000fce7064c",
+      "questions": [
+        {
+          "id": 1420,
+          "question": "In Wreck-It Ralph, what is the name of the support group Ralph attends with other video game villains?",
+          "answers": [
+            "Bad-Anon",
+            "Villain Support",
+            "Arcade Anonymous",
+            "The Wreckers' Circle"
+          ],
+          "difficulty": "hard",
+          "category": "movies"
+        },
+        {
+          "id": 2063,
+          "question": "In Wreck-It Ralph, where are the Bad-Anon support group meetings for video game villains held?",
+          "answers": [
+            "Inside the Ghost Pen of the game Pac-Man",
+            "Inside Game Central Station",
+            "Inside Sugar Rush's castle",
+            "Inside Hero's Duty's bunker"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        }
+      ],
+      "decision": "accepted",
+      "reason": "Bad-Anon is the support group name; the Pac-Man ghost pen is its meeting location. The group name does not establish which arcade game hosts it, and the location answer alone does not name the group."
+    }
+  ]
+}

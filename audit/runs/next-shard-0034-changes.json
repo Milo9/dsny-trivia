@@ -1,0 +1,555 @@
+{
+  "2218": {
+    "types": [
+      "clarification",
+      "distractors"
+    ],
+    "reason": "Bound song identity to the 1964 debut and replace a near-identical title option.",
+    "before": {
+      "id": 2218,
+      "question": "What is the title of the theme song heard throughout Walt Disney's Carousel of Progress at Magic Kingdom?",
+      "answers": [
+        "There's a Great Big Beautiful Tomorrow",
+        "It's a Small World (After All)",
+        "The Best Time of Your Life",
+        "A Great Big Beautiful Tomorrow"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "after": {
+      "id": 2218,
+      "question": "Which song debuted with Carousel of Progress at the 1964 New York World's Fair?",
+      "answers": [
+        "There's a Great Big Beautiful Tomorrow",
+        "It's a Small World (After All)",
+        "The Best Time of Your Life",
+        "One Little Spark"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    }
+  },
+  "2219": {
+    "types": [
+      "factual",
+      "clarification"
+    ],
+    "reason": "Replace unsupported keyed precision with Disney's approximately 50-foot advertised figure; specify measurement basis.",
+    "before": {
+      "id": 2219,
+      "question": "How tall is the climactic drop on Tiana's Bayou Adventure at Magic Kingdom?",
+      "answers": [
+        "52.5 feet",
+        "35 feet",
+        "70 feet",
+        "20 feet"
+      ],
+      "difficulty": "hard",
+      "category": "parks"
+    },
+    "after": {
+      "id": 2219,
+      "question": "About how tall is the climactic drop on Tiana's Bayou Adventure at Magic Kingdom, according to Disney?",
+      "answers": [
+        "50 feet",
+        "35 feet",
+        "70 feet",
+        "20 feet"
+      ],
+      "difficulty": "hard",
+      "category": "parks"
+    }
+  },
+  "2220": {
+    "types": [
+      "clarification",
+      "difficulty"
+    ],
+    "reason": "Remove definition supplying trackless and calibrate technology recall to medium.",
+    "before": {
+      "id": 2220,
+      "question": "What type of ride vehicle system does Remy's Ratatouille Adventure at EPCOT use, letting cars move and rotate freely instead of following a fixed rail?",
+      "answers": [
+        "Trackless",
+        "Monorail",
+        "Suspended coaster",
+        "Omnimover"
+      ],
+      "difficulty": "hard",
+      "category": "parks"
+    },
+    "after": {
+      "id": 2220,
+      "question": "What type of ride vehicle system does Remy's Ratatouille Adventure at EPCOT use?",
+      "answers": [
+        "Trackless",
+        "Monorail",
+        "Suspended coaster",
+        "Omnimover"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    }
+  },
+  "2221": {
+    "types": [
+      "clarification"
+    ],
+    "reason": "Specify English and official 2008 reopening; 2007 was the preview period, not an error to count as factual.",
+    "before": {
+      "id": 2221,
+      "question": "Which actress has narrated EPCOT's Spaceship Earth attraction since 2007?",
+      "answers": [
+        "Dame Judi Dench",
+        "Dame Maggie Smith",
+        "Emma Thompson",
+        "Helen Mirren"
+      ],
+      "difficulty": "hard",
+      "category": "parks"
+    },
+    "after": {
+      "id": 2221,
+      "question": "Which actress provided the English narration for EPCOT's Spaceship Earth when its refurbished version officially opened in 2008?",
+      "answers": [
+        "Dame Judi Dench",
+        "Dame Maggie Smith",
+        "Emma Thompson",
+        "Helen Mirren"
+      ],
+      "difficulty": "hard",
+      "category": "parks"
+    }
+  },
+  "2226": {
+    "types": [
+      "factual",
+      "clarification"
+    ],
+    "reason": "Replace wrong keyed threshold and unsupported construction motive with documented castle height.",
+    "before": {
+      "id": 2226,
+      "question": "Cinderella Castle at Magic Kingdom was built to exactly 189 feet tall in part to avoid a federal requirement affecting structures of what height or taller?",
+      "answers": [
+        "190 feet",
+        "200 feet",
+        "150 feet",
+        "250 feet"
+      ],
+      "difficulty": "hard",
+      "category": "parks"
+    },
+    "after": {
+      "id": 2226,
+      "question": "How tall is Cinderella Castle at Magic Kingdom, according to Disney?",
+      "answers": [
+        "189 feet",
+        "200 feet",
+        "150 feet",
+        "250 feet"
+      ],
+      "difficulty": "hard",
+      "category": "parks"
+    }
+  },
+  "2229": {
+    "types": [
+      "clarification"
+    ],
+    "reason": "Specify California and remove unnecessary opening-interval premise.",
+    "before": {
+      "id": 2229,
+      "question": "In what year did Star Wars: Rise of the Resistance open at Disneyland, roughly six weeks after debuting at Disney's Hollywood Studios?",
+      "answers": [
+        "2020",
+        "2019",
+        "2021",
+        "2018"
+      ],
+      "difficulty": "hard",
+      "category": "parks"
+    },
+    "after": {
+      "id": 2229,
+      "question": "In what year did Star Wars: Rise of the Resistance open at Disneyland Park in California?",
+      "answers": [
+        "2020",
+        "2019",
+        "2021",
+        "2018"
+      ],
+      "difficulty": "hard",
+      "category": "parks"
+    }
+  },
+  "2234": {
+    "types": [
+      "clarification",
+      "distractors"
+    ],
+    "reason": "Remove old Gadget name clue and normalize final coaster title.",
+    "before": {
+      "id": 2234,
+      "question": "As part of Mickey's Toontown's 2023 reimagining at Disneyland, the former Gadget's Go Coaster was rethemed and renamed to what?",
+      "answers": [
+        "Chip 'n Dale's GADGETcoaster",
+        "Roger Rabbit's Wild Ride",
+        "Goofy's Whirlwind",
+        "Minnie's Mad Mixer"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "after": {
+      "id": 2234,
+      "question": "What was the updated name of the junior roller coaster when Disneyland's reimagined Mickey's Toontown reopened in 2023?",
+      "answers": [
+        "Chip 'n' Dale's GADGETcoaster",
+        "Roger Rabbit's Wild Ride",
+        "Goofy's Whirlwind",
+        "Minnie's Mad Mixer"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    }
+  },
+  "2237": {
+    "types": [
+      "clarification"
+    ],
+    "reason": "Ask seat capacity instead of asserting every dispatch holds six riders.",
+    "before": {
+      "id": 2237,
+      "question": "How many guests ride together in each vehicle on Radiator Springs Racers at Disney California Adventure's Cars Land?",
+      "answers": [
+        "Six",
+        "Four",
+        "Eight",
+        "Two"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "after": {
+      "id": 2237,
+      "question": "How many passenger seats are in each Radiator Springs Racers vehicle at Disney California Adventure?",
+      "answers": [
+        "Six",
+        "Four",
+        "Eight",
+        "Two"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    }
+  },
+  "2239": {
+    "types": [
+      "clarification"
+    ],
+    "reason": "Specify that only a section of Paradise Pier was replaced.",
+    "before": {
+      "id": 2239,
+      "question": "Before its 2018 reimagining into Pixar Pier, what was this seaside area of Disney California Adventure called?",
+      "answers": [
+        "Paradise Pier",
+        "Golden State",
+        "Sunshine Plaza",
+        "Hollywood Land"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "after": {
+      "id": 2239,
+      "question": "Pixar Pier opened in 2018 in a section of which former Disney California Adventure land?",
+      "answers": [
+        "Paradise Pier",
+        "Golden State",
+        "Sunshine Plaza",
+        "Hollywood Land"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    }
+  },
+  "2246": {
+    "types": [
+      "clarification"
+    ],
+    "reason": "Remove unnecessary first/largest marketing comparison.",
+    "before": {
+      "id": 2246,
+      "question": "In what month and year did World of Frozen, billed as the world's first and largest Frozen-themed land, open at Hong Kong Disneyland?",
+      "answers": [
+        "November 2023",
+        "December 2023",
+        "June 2024",
+        "March 2023"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "after": {
+      "id": 2246,
+      "question": "In what month and year did World of Frozen open at Hong Kong Disneyland?",
+      "answers": [
+        "November 2023",
+        "December 2023",
+        "June 2024",
+        "March 2023"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    }
+  },
+  "2249": {
+    "types": [
+      "clarification"
+    ],
+    "reason": "Distinguish Power Run from the Florida counterpart; remove park-opening-year clue.",
+    "before": {
+      "id": 2249,
+      "question": "Before it opened at Magic Kingdom in 2023, which Disney park was the original home of the TRON Lightcycle / Run coaster?",
+      "answers": [
+        "Shanghai Disneyland",
+        "Disneyland Paris",
+        "Hong Kong Disneyland",
+        "Tokyo DisneySea"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "after": {
+      "id": 2249,
+      "question": "Which park was home to TRON Lightcycle Power Run before Magic Kingdom opened its own version in 2023?",
+      "answers": [
+        "Shanghai Disneyland",
+        "Disneyland Paris",
+        "Hong Kong Disneyland",
+        "Tokyo DisneySea"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    }
+  },
+  "2255": {
+    "types": [
+      "clarification",
+      "distractors",
+      "difficulty"
+    ],
+    "reason": "Replace unbalanced French titles with parallel princess identities; medium recall.",
+    "before": {
+      "id": 2255,
+      "question": "What is the official name of the castle at the center of Disneyland Park in Paris?",
+      "answers": [
+        "Le Chateau de la Belle au Bois Dormant",
+        "Cendrillon's Castle",
+        "Chateau Enchante",
+        "Le Chateau Magique"
+      ],
+      "difficulty": "hard",
+      "category": "parks"
+    },
+    "after": {
+      "id": 2255,
+      "question": "The central castle at Disneyland Park in Paris is named for which princess?",
+      "answers": [
+        "Sleeping Beauty",
+        "Cinderella",
+        "Snow White",
+        "Rapunzel"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    }
+  },
+  "2256": {
+    "types": [
+      "clarification",
+      "distractors"
+    ],
+    "reason": "Use an individual park and a historical opening event; remove resort/park mismatch.",
+    "before": {
+      "id": 2256,
+      "question": "Besides EPCOT's France pavilion, at which international Disney park can guests ride a Ratatouille-themed dark ride?",
+      "answers": [
+        "Disneyland Paris",
+        "Tokyo DisneySea",
+        "Hong Kong Disneyland",
+        "Shanghai Disneyland"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "after": {
+      "id": 2256,
+      "question": "Which Disney theme park opened Ratatouille: The Adventure in 2014?",
+      "answers": [
+        "Walt Disney Studios Park",
+        "Disneyland Park",
+        "Tokyo DisneySea",
+        "Hong Kong Disneyland"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    }
+  },
+  "2257": {
+    "types": [
+      "factual",
+      "clarification",
+      "distractors"
+    ],
+    "reason": "Remove false unique multi-princess-castle premise and use parallel tribute groups.",
+    "before": {
+      "id": 2257,
+      "question": "Unlike every other Disney castle, whom is Shanghai Disneyland's Enchanted Storybook Castle dedicated to?",
+      "answers": [
+        "All Disney princesses",
+        "Only Elsa and Anna",
+        "Only Cinderella",
+        "No specific character"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "after": {
+      "id": 2257,
+      "question": "Which group does Shanghai Disneyland's Enchanted Storybook Castle celebrate?",
+      "answers": [
+        "Disney princesses and queens",
+        "Disney villains and henchmen",
+        "Disney pirates and sailors",
+        "Disney inventors and explorers"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    }
+  },
+  "2258": {
+    "types": [
+      "clarification",
+      "difficulty"
+    ],
+    "reason": "Replace unsupported global size ranking with dated primary fact-sheet area; hard numeric recall.",
+    "before": {
+      "id": 2258,
+      "question": "Which Disney resort is the smallest of all Disney theme park resorts by area?",
+      "answers": [
+        "Hong Kong Disneyland",
+        "Tokyo Disney Resort",
+        "Disneyland Paris",
+        "Shanghai Disney Resort"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "after": {
+      "id": 2258,
+      "question": "According to Disney's January 2026 fact sheet, about how many acres does Hong Kong Disneyland Resort cover?",
+      "answers": [
+        "310 acres",
+        "100 acres",
+        "1,000 acres",
+        "5,000 acres"
+      ],
+      "difficulty": "hard",
+      "category": "parks"
+    }
+  },
+  "2262": {
+    "types": [
+      "clarification",
+      "distractors"
+    ],
+    "reason": "Bambi also was in production; alternatives now are already-released features and no exclusivity across all films is claimed.",
+    "before": {
+      "id": 2262,
+      "question": "The 1941 Disney animators' strike, which lasted nearly four months, took place during the production of which film?",
+      "answers": [
+        "Dumbo",
+        "Bambi",
+        "Fantasia",
+        "Pinocchio"
+      ],
+      "difficulty": "hard",
+      "category": "walt"
+    },
+    "after": {
+      "id": 2262,
+      "question": "Which of these films was still in production during the 1941 Disney animators' strike?",
+      "answers": [
+        "Dumbo",
+        "Snow White and the Seven Dwarfs",
+        "Fantasia",
+        "Pinocchio"
+      ],
+      "difficulty": "hard",
+      "category": "walt"
+    }
+  },
+  "2263": {
+    "types": [
+      "difficulty"
+    ],
+    "reason": "Exact launch-day recall is hard rather than easy.",
+    "before": {
+      "id": 2263,
+      "question": "On what date did the Disney+ streaming service officially launch in the United States?",
+      "answers": [
+        "November 12, 2019",
+        "May 4, 2019",
+        "December 25, 2019",
+        "January 1, 2020"
+      ],
+      "difficulty": "easy",
+      "category": "walt"
+    },
+    "after": {
+      "id": 2263,
+      "question": "On what date did the Disney+ streaming service officially launch in the United States?",
+      "answers": [
+        "November 12, 2019",
+        "May 4, 2019",
+        "December 25, 2019",
+        "January 1, 2020"
+      ],
+      "difficulty": "hard",
+      "category": "walt"
+    }
+  },
+  "2267": {
+    "types": [
+      "factual",
+      "clarification"
+    ],
+    "reason": "Remove false universal claim excluding women from other departments; ask documented cel-finishing work.",
+    "before": {
+      "id": 2267,
+      "question": "During the 1930s, which Disney animation department was the only one open to women?",
+      "answers": [
+        "Ink and Paint",
+        "Story",
+        "Layout",
+        "Camera"
+      ],
+      "difficulty": "medium",
+      "category": "walt"
+    },
+    "after": {
+      "id": 2267,
+      "question": "In Disney's traditional animation process, which department traced drawings onto transparent cels and colored them?",
+      "answers": [
+        "Ink and Paint",
+        "Story",
+        "Layout",
+        "Camera"
+      ],
+      "difficulty": "medium",
+      "category": "walt"
+    }
+  }
+}

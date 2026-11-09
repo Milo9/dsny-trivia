@@ -1,0 +1,3153 @@
+{
+  "schema": 1,
+  "reviewer": "Codex",
+  "at": "2026-11-08",
+  "sourcesChecked": [
+    "b30-aladdin",
+    "b30-aladdin2",
+    "b30-bear",
+    "b30-bear2",
+    "b30-bongo",
+    "b30-cab",
+    "b30-cabdetail",
+    "b30-cars",
+    "b30-carsplot",
+    "b30-carsscript",
+    "b30-cinder2",
+    "b30-cinder3",
+    "b30-cinder3script",
+    "b30-coco",
+    "b30-cocolatino",
+    "b30-dogplot",
+    "b30-dogscript",
+    "b30-fantasia",
+    "b30-hunch",
+    "b30-hunchplot",
+    "b30-hunchscript",
+    "b30-light",
+    "b30-lightscript",
+    "b30-lulu",
+    "b30-mermaid",
+    "b30-mermaidplot",
+    "b30-mermaidscript",
+    "b30-mulan",
+    "b30-mulanplot",
+    "b30-never",
+    "b30-neverplot",
+    "b30-objects",
+    "b30-patch",
+    "b30-patchscript",
+    "b30-poca",
+    "b30-pocaplot",
+    "b30-princess",
+    "b30-princessnews",
+    "b30-ralph",
+    "b30-ralphproduction",
+    "b30-ralphscript",
+    "b30-rescuers",
+    "b30-rescuersplot",
+    "b30-xmas",
+    "b30-xmasplot",
+    "b30-xmasscript"
+  ],
+  "reviews": [
+    {
+      "questionId": 2018,
+      "hash": "1c486c60c55fa25f456fa318964386a46a70aec01723466725496ff6ad048415",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from Melody’s helpers #2319 and her locket/wall #2320–2321. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The sequel explicitly identifies Ariel and Eric’s daughter as Melody.",
+        "sources": [
+          "b30-mermaid"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Melody is the named daughter.",
+          "sources": [
+            "b30-mermaid"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Marina is not the daughter identified in this family.",
+          "sources": [
+            "b30-mermaid"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Coral is not the daughter identified in this family.",
+          "sources": [
+            "b30-mermaid"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pearl is not the daughter identified in this family.",
+          "sources": [
+            "b30-mermaid"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the specific sequel family rather than any mermaid character: only Melody is Ariel and Eric’s daughter."
+      }
+    },
+    {
+      "questionId": 2019,
+      "hash": "ba793d0a525efcd759fb47dab2ff12651fb337bdd60549ac7930b04caf611780",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from original Ursula identity and Vanessa disguise #822. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The villain Morgana is Ursula’s sister and threatens Triton’s family.",
+        "sources": [
+          "b30-mermaid",
+          "b30-mermaidscript"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Morgana is the named sibling.",
+          "sources": [
+            "b30-mermaid",
+            "b30-mermaidscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Vanessa is not the sibling identified in this sequel.",
+          "sources": [
+            "b30-mermaid",
+            "b30-mermaidscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Marina del Rey is not the sibling identified here.",
+          "sources": [
+            "b30-mermaid",
+            "b30-mermaidscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ursulina is not the sibling identified here.",
+          "sources": [
+            "b30-mermaid",
+            "b30-mermaidscript"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Sibling identity is unique; removed unnecessary age comparison. Vanessa’s original-film disguise cannot meet this sequel relationship."
+      }
+    },
+    {
+      "questionId": 2020,
+      "hash": "df9bd78c036ddd128374a737a8a03ed36399cfd9a9ac1fcb82d168d1667a0a24",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Original-film eel pair #68 tests a different employer and identity. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Morgana’s named shark henchman is Undertow, correcting the eel premise.",
+        "sources": [
+          "b30-mermaidplot",
+          "b30-mermaidscript"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Undertow is summoned as the shark threat.",
+          "sources": [
+            "b30-mermaidplot",
+            "b30-mermaidscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Flotsam is not Morgana’s named shark.",
+          "sources": [
+            "b30-mermaidplot",
+            "b30-mermaidscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jetsam is not Morgana’s named shark.",
+          "sources": [
+            "b30-mermaidplot",
+            "b30-mermaidscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Glut is not the named sequel henchman.",
+          "sources": [
+            "b30-mermaidplot",
+            "b30-mermaidscript"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged the shark/piranha transformation: Undertow is originally a shark despite being shrunk for much of the film; neither original-film eel nor Glut is him."
+      }
+    },
+    {
+      "questionId": 2021,
+      "hash": "52dfbea9f0a6fd1752ed9888c9ecbbc5f8b4496b17a84aca16ebe47e67fd7d63",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from daughters’ names, their new romances, and Mushu’s own motive #2330. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The assigned mission is arranged royal marriages to secure an alliance with Qui Gong.",
+        "sources": [
+          "b30-mulan",
+          "b30-mulanplot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Emperor arranges the marriages for an alliance.",
+          "sources": [
+            "b30-mulan",
+            "b30-mulanplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Seeking refuge is not his stated purpose.",
+          "sources": [
+            "b30-mulan",
+            "b30-mulanplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A trade agreement is not the stated marriage mission.",
+          "sources": [
+            "b30-mulan",
+            "b30-mulanplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Warrior training is not the daughters’ assigned mission.",
+          "sources": [
+            "b30-mulan",
+            "b30-mulanplot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separated the Emperor’s original order from the later romance and cancelled marriages; only the alliance answer describes the assignment."
+      }
+    },
+    {
+      "questionId": 2022,
+      "hash": "3d03b30c0ac65a8d64e7250b83836815027a9874f79f85e50fdaab7896eefade",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Names differ from the marriage mission and love-count facts. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The complete daughter roster is Ting-Ting, Mei and Su.",
+        "sources": [
+          "b30-mulan",
+          "b30-mulanplot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "This is the complete named trio.",
+          "sources": [
+            "b30-mulan",
+            "b30-mulanplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lin replaces Mei and is not in the roster.",
+          "sources": [
+            "b30-mulan",
+            "b30-mulanplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fa replaces Ting-Ting and is not in the roster.",
+          "sources": [
+            "b30-mulan",
+            "b30-mulanplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Xiu and Ting do not give the complete named roster.",
+          "sources": [
+            "b30-mulan",
+            "b30-mulanplot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked complete sets, not just shared Mei/Su names. Only the first option contains all three daughters."
+      }
+    },
+    {
+      "questionId": 2023,
+      "hash": "d3d780657b73c4c623411f892dfde5a6108603413d232501628144cae86644df",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from identifying the princesses or their intended spouses. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Each princess pairs romantically with one of the three escorting soldiers.",
+        "sources": [
+          "b30-mulan",
+          "b30-mulanplot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "All three soldiers fall in love, one per princess.",
+          "sources": [
+            "b30-mulan",
+            "b30-mulanplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Only one contradicts the three pairings.",
+          "sources": [
+            "b30-mulan",
+            "b30-mulanplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Only two omits one pairing.",
+          "sources": [
+            "b30-mulan",
+            "b30-mulanplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "None contradicts every pairing.",
+          "sources": [
+            "b30-mulan",
+            "b30-mulanplot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All is a count of the named soldiers, not all men in the film; the sources enumerate a romance for each soldier."
+      }
+    },
+    {
+      "questionId": 2024,
+      "hash": "fef07eec57c2bb0e81405719fe0a7a00687f895756851ecba9d2acef07a346cd",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Separate from fuel name #1282 and veteran spy identity #1031. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The final reveal exposes Axlerod as the hidden architect of the fuel-sabotage plot.",
+        "sources": [
+          "b30-carsplot",
+          "b30-carsscript",
+          "b30-cars"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Axlerod is exposed and his voice disarms the bomb.",
+          "sources": [
+            "b30-carsplot",
+            "b30-carsscript",
+            "b30-cars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Zündapp serves the hidden mastermind and cannot disarm it.",
+          "sources": [
+            "b30-carsplot",
+            "b30-carsscript",
+            "b30-cars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Finn investigates the sabotage as a British spy.",
+          "sources": [
+            "b30-carsplot",
+            "b30-carsscript",
+            "b30-cars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Francesco is a racing competitor, not the revealed mastermind.",
+          "sources": [
+            "b30-carsplot",
+            "b30-carsscript",
+            "b30-cars"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Zündapp also directs villains, but the final hidden-mastermind reveal and bomb test identify Axlerod alone."
+      }
+    },
+    {
+      "questionId": 2025,
+      "hash": "60db2082a161487d9cdaefc62339a5a1d0d20f0111dc073483800d2b8f63b036",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Equipment type adds a fact beyond the spy-role comparison #1031. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar’s Holley biography explicitly lists a telescoping utility arm in her equipment.",
+        "sources": [
+          "b30-cars"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Pixar names the telescoping utility arm.",
+          "sources": [
+            "b30-cars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A folding crane boom is a different arm mechanism.",
+          "sources": [
+            "b30-cars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "An inflatable lifting arm is not the identified telescoping device.",
+          "sources": [
+            "b30-cars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A scissor-lift platform is not the identified arm.",
+          "sources": [
+            "b30-cars"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Asks the named kind of extendable arm, not which of several weapons she might also possess. Removed the unestablished primary-weapon ranking."
+      }
+    },
+    {
+      "questionId": 2026,
+      "hash": "c0fecbe7c783ba66f9340dca92f0a4eb03f555f8ae9350d1777527c5eedd71a4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from the hidden-mastermind reveal. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Professor Z is the abbreviated form of Professor Zündapp in Cars 2.",
+        "sources": [
+          "b30-carsplot",
+          "b30-carsscript"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Zündapp is the character’s full name.",
+          "sources": [
+            "b30-carsplot",
+            "b30-carsscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Zweig is not his stated surname.",
+          "sources": [
+            "b30-carsplot",
+            "b30-carsscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Zeller is not his stated surname.",
+          "sources": [
+            "b30-carsplot",
+            "b30-carsscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Zorn is not his stated surname.",
+          "sources": [
+            "b30-carsplot",
+            "b30-carsscript"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All options now share Professor and Z; neither title nor initial picks the answer. Transcript and cast/plot establish the full surname."
+      }
+    },
+    {
+      "questionId": 2027,
+      "hash": "6e1405d863c9d9f14b498941c0bddbd31b6f2de607be1d636e846b42e039f1d4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Distinct from his hero’s name and Lucky’s later reminder #2464. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Patch is the puppy left behind during the family move in the 2003 sequel.",
+        "sources": [
+          "b30-patch"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney identifies Patch as left behind.",
+          "sources": [
+            "b30-patch"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rolly is not the puppy identified in this moving-day event.",
+          "sources": [
+            "b30-patch"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lucky is not the puppy identified here.",
+          "sources": [
+            "b30-patch"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pepper is not the puppy identified here.",
+          "sources": [
+            "b30-patch"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The question omits the sequel subtitle, avoiding a Patch giveaway; only Patch is the accidentally forgotten puppy."
+      }
+    },
+    {
+      "questionId": 2028,
+      "hash": "ea7dc7799907b57214b2fbcf9006e2332757172ecdf94b4e3126324675ee7f83",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Separate from Lightning’s sidekick identity #2339; the two questions assign distinct roles. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Patch idolizes the fictional television dog Thunderbolt within the film.",
+        "sources": [
+          "b30-patch",
+          "b30-patchscript"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Thunderbolt is the heroic star Patch seeks.",
+          "sources": [
+            "b30-patch",
+            "b30-patchscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lightning is Thunderbolt’s sidekick, not the hero asked for.",
+          "sources": [
+            "b30-patch",
+            "b30-patchscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ace is not Patch’s named TV hero.",
+          "sources": [
+            "b30-patch",
+            "b30-patchscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Blaze is not Patch’s named TV hero.",
+          "sources": [
+            "b30-patch",
+            "b30-patchscript"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Lightning is a genuine show character but is explicitly the sidekick. This is an in-universe plot reference, not real TV trivia."
+      }
+    },
+    {
+      "questionId": 2029,
+      "hash": "f1ef44fed214fa9ef16043afda85fbf45f0d8ef9e8ee122de82312f256cf1c12",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from Lars’s identity and art commission #2463. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The fur seller explicitly cites Cruella’s probation as the reason he cannot sell her furs.",
+        "sources": [
+          "b30-patchscript"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Her probation bars the sale.",
+          "sources": [
+            "b30-patchscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "She describes herself as overfinanced, not penniless.",
+          "sources": [
+            "b30-patchscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "She begs for furs, disproving reformation or lost interest.",
+          "sources": [
+            "b30-patchscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The exchange occurs in London and cites probation, not total city banishment.",
+          "sources": [
+            "b30-patchscript"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A restraining order also exists, but the shopkeeper expressly gives probation as the purchase restriction; no other listed motive fits."
+      }
+    },
+    {
+      "questionId": 2030,
+      "hash": "46135579df3c500fb325fa018de6b7ddedbc005a10cf87af9b989e464204470f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from the wartime setting and Hook’s mistaken identity motive. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Jane is Wendy’s skeptical daughter in the 2002 sequel.",
+        "sources": [
+          "b30-never",
+          "b30-neverplot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Jane is the daughter named in the film.",
+          "sources": [
+            "b30-never",
+            "b30-neverplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Danny is her younger brother, not Wendy’s daughter.",
+          "sources": [
+            "b30-never",
+            "b30-neverplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Molly is not the daughter identified in this sequel.",
+          "sources": [
+            "b30-never",
+            "b30-neverplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Alice is not the daughter identified here.",
+          "sources": [
+            "b30-never",
+            "b30-neverplot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Initial skepticism is scene context, not an assertion that she never changes; Danny’s different family role excludes him."
+      }
+    },
+    {
+      "questionId": 2031,
+      "hash": "e846a35b472ea788b6b91d8e190ac673ee5d51e3200a1db49aaedb8f691efd54",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Sharing WWII with studio revenue question #1204 does not establish this film’s setting. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney places this sequel’s London story during World War II.",
+        "sources": [
+          "b30-never"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "World War II is the stated setting.",
+          "sources": [
+            "b30-never"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "World War I is a different conflict.",
+          "sources": [
+            "b30-never"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Napoleonic Wars are a different period.",
+          "sources": [
+            "b30-never"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Crimean War is a different period.",
+          "sources": [
+            "b30-never"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the sequel rather than the original Edwardian Peter Pan; only WWII is its setting. All options are wars."
+      }
+    },
+    {
+      "questionId": 2032,
+      "hash": "f38bf1b9614978c85eec67b6ae5b2b9cecb352739bbf1fad0e06a02d47ef7b30",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from naming Jane; knowing Wendy’s daughter does not explain Hook’s mistake. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Hook mistakes Jane for Wendy and takes her as bait for Peter Pan.",
+        "sources": [
+          "b30-never"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Mistaking Jane for Wendy is the stated cause.",
+          "sources": [
+            "b30-never"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A need for a cook is not the stated kidnapping motive.",
+          "sources": [
+            "b30-never"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A stolen treasure map is not the stated cause.",
+          "sources": [
+            "b30-never"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "An insult to Hook’s mustache is not the stated cause.",
+          "sources": [
+            "b30-never"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Hook’s ultimate target is Peter, but the question asks why Jane was selected: his mistaken identification is explicit."
+      }
+    },
+    {
+      "questionId": 2033,
+      "hash": "d05e793e97362b08db2478f0fbccc8d7352bffecc2a23b8a64c074d921d51631",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from Caballeros character introductions in Saludos Amigos. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Brazilian pop-up book is the gift Donald and José enter after José’s shrinking magic.",
+        "sources": [
+          "b30-cab",
+          "b30-cabdetail"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Brasil pop-up book carries them into Bahia.",
+          "sources": [
+            "b30-cab",
+            "b30-cabdetail"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "They do not enter a miniature theater in this gift scene.",
+          "sources": [
+            "b30-cab",
+            "b30-cabdetail"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mexico is explored later via Panchito’s flying serape, not this map.",
+          "sources": [
+            "b30-cab",
+            "b30-cabdetail"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The piñata is a separate gift, not the entered book.",
+          "sources": [
+            "b30-cab",
+            "b30-cabdetail"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Fixed agency: José shrinks them; the book does not itself shrink them. Both detailed accounts identify the entered gift as a book."
+      }
+    },
+    {
+      "questionId": 2034,
+      "hash": "46a61dc78740073bfa6c15f75563e718704feb911a99646e7f9e216f0c7c18f1",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Character relationship differs from Bongo’s occupation. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney identifies Lulubelle as Bongo’s girlfriend.",
+        "sources": [
+          "b30-lulu"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Lulubelle is the named girlfriend.",
+          "sources": [
+            "b30-lulu"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lumpjaw is not the girlfriend identified by Disney.",
+          "sources": [
+            "b30-lulu"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Daisy is not the named girlfriend in Bongo.",
+          "sources": [
+            "b30-lulu"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bearbelle is not the named girlfriend in Bongo.",
+          "sources": [
+            "b30-lulu"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the unsupported cub age. The relationship identifies Lulubelle uniquely among all four names."
+      }
+    },
+    {
+      "questionId": 2035,
+      "hash": "2142199c1be53070b554341ff0a4e1806e94dd6fba699df5f22fada75fc64d14",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from naming Lulubelle and the film’s other giant/harp story. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Bongo is a circus bear before his escape.",
+        "sources": [
+          "b30-bongo"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "He performs in the circus.",
+          "sources": [
+            "b30-bongo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He is not employed as a lumberjack’s helper in this setup.",
+          "sources": [
+            "b30-bongo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A zoo exhibit is a different captivity setting from his circus job.",
+          "sources": [
+            "b30-bongo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A logging-camp mascot is a different occupation.",
+          "sources": [
+            "b30-bongo"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Asked his occupation before escape, not any act he can perform. Circus context excludes the other workplaces without relying on the unicycle detail."
+      }
+    },
+    {
+      "questionId": 2036,
+      "hash": "520aaba0fcad4d86dc76407e3db5656bec9d4bf21aab19a464dbcc8ea64c5a3f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from Rhapsody city #539, original Rite of Spring #389 and Firebird forest sequence. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pines of Rome is the Fantasia 2000 composition paired with flying whales.",
+        "sources": [
+          "b30-fantasia"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Respighi’s Pines of Rome accompanies the whales.",
+          "sources": [
+            "b30-fantasia"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Firebird Suite accompanies forest destruction and renewal.",
+          "sources": [
+            "b30-fantasia"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rhapsody in Blue accompanies Manhattan stories.",
+          "sources": [
+            "b30-fantasia"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Symphony No. 5 accompanies abstract forms.",
+          "sources": [
+            "b30-fantasia"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked all four segment pairings, not merely the composer; only Pines of Rome is the whale sequence."
+      }
+    },
+    {
+      "questionId": 2037,
+      "hash": "344af9fbde65dffdeacd17fb35757ce162cd0bd0c15d04024b6b8c055e0e5022",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Separate from whales, Manhattan, and flamingo hobby #2387. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Firebird Suite is the forest destruction-and-regeneration segment.",
+        "sources": [
+          "b30-fantasia"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Firebird Suite follows the sprite and ravaged forest.",
+          "sources": [
+            "b30-fantasia"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pines of Rome follows flying whales.",
+          "sources": [
+            "b30-fantasia"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rhapsody in Blue follows city residents.",
+          "sources": [
+            "b30-fantasia"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Carnival of the Animals follows flamingos and a yo-yo.",
+          "sources": [
+            "b30-fantasia"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Only Firebird has the nature-spirit forest renewal plot; other segment settings are explicitly different."
+      }
+    },
+    {
+      "questionId": 2038,
+      "hash": "1bfdf72f245b38ec154e3e5a0f2ebe8f5d28dff28d24eb32c754f191784b48ab",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from Forte’s motivation and Cadenza’s transformation in #2065. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Forte is the pipe-organ antagonist in The Enchanted Christmas.",
+        "sources": [
+          "b30-xmas"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Forte is the named villain.",
+          "sources": [
+            "b30-xmas"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Maestro is a title, not his name.",
+          "sources": [
+            "b30-xmas"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cadenza belongs to the separate 2017 film, not this villain.",
+          "sources": [
+            "b30-xmas"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Crescendo is not the villain identified in this film.",
+          "sources": [
+            "b30-xmas"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The film version excludes Cadenza, another genuine musical character. Forte’s proper name differs from a musical title."
+      }
+    },
+    {
+      "questionId": 2039,
+      "hash": "b09fa7c1d27f3b478c2c59db228231f566a1d67006376acbddea0b0343f6a3e1",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. A motive fact, not the pipe organ’s name or Beast’s reason for hating Christmas. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Forte wants his valued place as the Beast’s musical confidant to continue.",
+        "sources": [
+          "b30-xmasscript",
+          "b30-xmasplot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The cursed Beast now depends on his music and counsel.",
+          "sources": [
+            "b30-xmasscript",
+            "b30-xmasplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Forte does not cite a theft of treasure as his motive.",
+          "sources": [
+            "b30-xmasscript",
+            "b30-xmasplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He does not cite an Enchantress promise of a throne.",
+          "sources": [
+            "b30-xmasscript",
+            "b30-xmasplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He does not claim a romance with Belle as his goal.",
+          "sources": [
+            "b30-xmasscript",
+            "b30-xmasplot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Replaced the false loss-of-talent premise. His own explanation contrasts former neglect with present influence, excluding the three alternate motives."
+      }
+    },
+    {
+      "questionId": 2040,
+      "hash": "75420bf7aa2ed825a38257f11c7b8c7aa2e9e6b1cba5e812319474f409d78c49",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from Forte’s preference for the curse and the original rose deadline. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Beast associates Christmas with the day he was cursed.",
+        "sources": [
+          "b30-xmasplot",
+          "b30-xmasscript"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The spell was cast at Christmas.",
+          "sources": [
+            "b30-xmasplot",
+            "b30-xmasscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Christmas itself is not the mechanism that can break the spell.",
+          "sources": [
+            "b30-xmasplot",
+            "b30-xmasscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "His late father is not the stated holiday association.",
+          "sources": [
+            "b30-xmasplot",
+            "b30-xmasscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He was transformed by the curse, rather than specifically enchanted to hate Christmas.",
+          "sources": [
+            "b30-xmasplot",
+            "b30-xmasscript"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separated the curse’s timing from an invented instruction to hate a holiday; only the transformation date explains the stated aversion."
+      }
+    },
+    {
+      "questionId": 2041,
+      "hash": "3805debad83cf3216f3108d494c3c7fd5772dab6d6fbe7b6471834ec6f95770b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from original-film love interest #33 and Smith’s hooded rescue. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The sequel ends with Pocahontas choosing Rolfe and sailing with him.",
+        "sources": [
+          "b30-pocaplot",
+          "b30-poca"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "John Rolfe is the partner she chooses.",
+          "sources": [
+            "b30-pocaplot",
+            "b30-poca"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "She parts from John Smith as a friend.",
+          "sources": [
+            "b30-pocaplot",
+            "b30-poca"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ratcliffe is the antagonist, not her chosen partner.",
+          "sources": [
+            "b30-pocaplot",
+            "b30-poca"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Thomas is not the partner in the ending.",
+          "sources": [
+            "b30-pocaplot",
+            "b30-poca"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The first-film romance would make Smith plausible, so anchored the question to the sequel’s ending; removed the marriage/history conflation."
+      }
+    },
+    {
+      "questionId": 2042,
+      "hash": "cf8f25d2002d7230d90628831b8367f33a19c19ee5b58b62d77539130d373b8d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from King James’s identity and the bear-baiting provocation. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pocahontas travels in Powhatan’s stead for diplomatic peace negotiations.",
+        "sources": [
+          "b30-poca",
+          "b30-pocaplot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Seeking peace is the mission Disney describes.",
+          "sources": [
+            "b30-poca",
+            "b30-pocaplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Smith is believed dead; finding him is not her mission.",
+          "sources": [
+            "b30-poca",
+            "b30-pocaplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "She travels as an envoy, not to take a royal household post.",
+          "sources": [
+            "b30-poca",
+            "b30-pocaplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "No stolen artifact is the diplomatic mission described.",
+          "sources": [
+            "b30-poca",
+            "b30-pocaplot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished her eventual reunion with Smith from her original purpose; the named peace mission excludes the other proposed goals."
+      }
+    },
+    {
+      "questionId": 2043,
+      "hash": "b1f67b6987cf42b8957b1fa5b0f4acdf5cb0e95feb3405ca42f8557725eab389",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Shared Smith answer with #33 tests a different scene and relationship. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The hooded rescuer reveals himself as John Smith, who was presumed dead.",
+        "sources": [
+          "b30-pocaplot",
+          "b30-poca"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Smith is the disguised returning rescuer.",
+          "sources": [
+            "b30-pocaplot",
+            "b30-poca"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ratcliffe is the opponent who framed Smith.",
+          "sources": [
+            "b30-pocaplot",
+            "b30-poca"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kocoum is not the hooded rescuer in this sequel.",
+          "sources": [
+            "b30-pocaplot",
+            "b30-poca"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Thomas is not the hooded rescuer.",
+          "sources": [
+            "b30-pocaplot",
+            "b30-poca"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Used presumed dead rather than requiring deliberate death-faking. The specific hooded rescue identifies Smith independently of the first-film romance."
+      }
+    },
+    {
+      "questionId": 2044,
+      "hash": "a1f3edd935afe0e24412dd1fe7ac644674d28d55bc1b305c6e4146976973d66d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Distinct from the ending kiss #2338 and seven-year chronology #2337. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Zephyr is the son of Esmeralda and Phoebus.",
+        "sources": [
+          "b30-hunch",
+          "b30-hunchscript"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Zephyr is the named son.",
+          "sources": [
+            "b30-hunch",
+            "b30-hunchscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Zephyrus is not his stated name.",
+          "sources": [
+            "b30-hunch",
+            "b30-hunchscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Django is not the son’s stated name.",
+          "sources": [
+            "b30-hunch",
+            "b30-hunchscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Marcel is not the son’s stated name.",
+          "sources": [
+            "b30-hunch",
+            "b30-hunchscript"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed ward: both parents are alive and parent him. Checked the exact name Zephyr rather than a similar Greek-derived variant."
+      }
+    },
+    {
+      "questionId": 2045,
+      "hash": "3558b025410358962d6d36589fcaec03db1e5e51f15163175b0a813fe05925b6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from the villain’s identity and the ending action when Zephyr rings it. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Sarousch targets the treasured bell La Fidèle, decorated inside.",
+        "sources": [
+          "b30-hunchplot",
+          "b30-hunchscript"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "La Fidèle is the named target bell.",
+          "sources": [
+            "b30-hunchplot",
+            "b30-hunchscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "La Cloche d’Or is not the bell’s stated name.",
+          "sources": [
+            "b30-hunchplot",
+            "b30-hunchscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Le Grand Bourdon is not the target name in this film.",
+          "sources": [
+            "b30-hunchplot",
+            "b30-hunchscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "L’Esprit Sacré is not the target name in this film.",
+          "sources": [
+            "b30-hunchplot",
+            "b30-hunchscript"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the fictional film bell rather than names of real Notre-Dame bells. Its decoration is inside; the proper name remains unique."
+      }
+    },
+    {
+      "questionId": 2046,
+      "hash": "f97bcc774fb7dc6921911e3020490c469c2d78c45b28c81a7ed6edaf8e096d2d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from Madellaine’s performance aspiration #2336 and the stolen bell’s name. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Sarousch is the circus master coercing Madellaine to distract Quasimodo.",
+        "sources": [
+          "b30-hunch"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Sarousch is the named circus villain.",
+          "sources": [
+            "b30-hunch"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Frollo is not this sequel’s circus master.",
+          "sources": [
+            "b30-hunch"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Clopin is not the coercing circus master.",
+          "sources": [
+            "b30-hunch"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Phoebus is not the coercing circus master.",
+          "sources": [
+            "b30-hunch"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Specified the sequel’s circus and coercion; the earlier villain and returning Parisian characters cannot replace Sarousch."
+      }
+    },
+    {
+      "questionId": 2047,
+      "hash": "3968afcd550779ac9a82f56c3337c1f56445913b8935e9f92cadf9917853da2d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from #2446’s slipper recipient and #2049’s baker romance. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Anastasia first takes the dropped wand before giving it to her mother.",
+        "sources": [
+          "b30-cinder3",
+          "b30-cinder3script"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Anastasia takes and brings home the wand.",
+          "sources": [
+            "b30-cinder3",
+            "b30-cinder3script"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Drizella is at home and does not first take it.",
+          "sources": [
+            "b30-cinder3",
+            "b30-cinder3script"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cinderella does not first take the dropped wand.",
+          "sources": [
+            "b30-cinder3",
+            "b30-cinder3script"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tremaine acquires it from Anastasia later.",
+          "sources": [
+            "b30-cinder3",
+            "b30-cinder3script"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Later possession would make Tremaine arguable under broad steals wording, so final wording asks the first pickup after the drop."
+      }
+    },
+    {
+      "questionId": 2048,
+      "hash": "025f7e2b7a18a262d3396d0649ca1c42b9aac7a62d5bfefb66bc618947da8bb8",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from #2446: reversal destination versus whose foot the slipper fits. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Tremaine rewinds the story to the Grand Duke’s slipper fitting.",
+        "sources": [
+          "b30-cinder3",
+          "b30-cinder3script"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Grand Duke’s visit is where time resumes.",
+          "sources": [
+            "b30-cinder3",
+            "b30-cinder3script"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "It does not resume at Cinderella meeting the mice.",
+          "sources": [
+            "b30-cinder3",
+            "b30-cinder3script"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "It does not resume during the Prince’s childhood.",
+          "sources": [
+            "b30-cinder3",
+            "b30-cinder3script"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Fairy Godmother’s earlier visit is not the return point.",
+          "sources": [
+            "b30-cinder3",
+            "b30-cinder3script"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the exact destination of the reversal, distinct from the later enlargement spell and altered slipper result."
+      }
+    },
+    {
+      "questionId": 2049,
+      "hash": "33b3b85ce30d76e9b62d72aee3ad6bbb5bf489ff1e6e0cd2f75efb108996f0bd",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from the baker’s gesture #2322, Cinderella’s line #2323, and wand/slipper facts. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The baker romance belongs to Cinderella II and features Anastasia.",
+        "sources": [
+          "b30-cinder2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Anastasia is the stepsister in the baker romance.",
+          "sources": [
+            "b30-cinder2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Drizella is not the stepsister in that romance.",
+          "sources": [
+            "b30-cinder2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Only Anastasia, not both sisters, has this storyline.",
+          "sources": [
+            "b30-cinder2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Neither is false because Anastasia does.",
+          "sources": [
+            "b30-cinder2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Corrected the movie from III to II. Only Anastasia is identified in the baker relationship; the third film’s prince subplot is separate."
+      }
+    },
+    {
+      "questionId": 2050,
+      "hash": "0d47d1e5fa3ff4187c80f034465e853358fe155b2b4ead490e3c27d1b8cd56bf",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from shaman identity #2194 and the site’s participants/romantic history. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Kenai gave Nita an amulet whose spiritual bond requires their joint burning ritual.",
+        "sources": [
+          "b30-bear",
+          "b30-bear2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The object is explicitly an amulet.",
+          "sources": [
+            "b30-bear",
+            "b30-bear2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The ritual object is not a painted mask.",
+          "sources": [
+            "b30-bear",
+            "b30-bear2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The ritual object is not a woven bracelet.",
+          "sources": [
+            "b30-bear",
+            "b30-bear2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The ritual object is not a feather headdress.",
+          "sources": [
+            "b30-bear",
+            "b30-bear2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "An amulet can also be a carved necklace, so removed that overlapping distractor. The surviving alternatives are different objects."
+      }
+    },
+    {
+      "questionId": 2051,
+      "hash": "49b68c443866c91f020c4131f2946efbfc29ffcd355792eb2500b271f2b651c0",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from Atka’s betrothal #2193 and amulet object #2050. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Nita knew Kenai as his childhood human friend.",
+        "sources": [
+          "b30-bear"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "She is his childhood friend.",
+          "sources": [
+            "b30-bear"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The described relationship is not adoptive motherhood.",
+          "sources": [
+            "b30-bear"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The described relationship is not rival chief.",
+          "sources": [
+            "b30-bear"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The described relationship is friendship, not siblinghood.",
+          "sources": [
+            "b30-bear"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed childhood from the stem and shortened parallel answers. The friend relationship excludes parental, political and sibling relationships."
+      }
+    },
+    {
+      "questionId": 2052,
+      "hash": "aa6616c5ed218c1934786c4be345ffc42b9ff04b2a28ef69671f0c16648fd2a0",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from original pilot #861 and country setting #523. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Wilbur is the albatross transport for the Australian rescue.",
+        "sources": [
+          "b30-rescuers",
+          "b30-rescuersplot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Wilbur is the sequel’s albatross pilot.",
+          "sources": [
+            "b30-rescuers",
+            "b30-rescuersplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Orville is the original film’s pilot, replaced by his brother.",
+          "sources": [
+            "b30-rescuers",
+            "b30-rescuersplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Marahute is the eagle, not the albatross pilot.",
+          "sources": [
+            "b30-rescuers",
+            "b30-rescuersplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Frank is the captive lizard, not the pilot.",
+          "sources": [
+            "b30-rescuers",
+            "b30-rescuersplot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The two albatross brothers make the sequel version essential; only Wilbur handles this Australian flight."
+      }
+    },
+    {
+      "questionId": 2053,
+      "hash": "f2a93c6f9ce932820af987ff1aba9241e4d3233be287454f438d2831c5024941",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from the albatross pilot and the eagle species #254. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Frank is the captive lizard and Jake the local guide, in that order.",
+        "sources": [
+          "b30-rescuers",
+          "b30-rescuersplot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Frank and Jake match the two stated roles respectively.",
+          "sources": [
+            "b30-rescuers",
+            "b30-rescuersplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wilbur is an albatross and Cody a human boy, not this pair.",
+          "sources": [
+            "b30-rescuers",
+            "b30-rescuersplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rex and Sydney do not name the stated lizard/guide pair.",
+          "sources": [
+            "b30-rescuers",
+            "b30-rescuersplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bruce and Digger do not name the stated lizard/guide pair.",
+          "sources": [
+            "b30-rescuers",
+            "b30-rescuersplot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the false joint-guide description. Captive Frank and guide Jake have separate roles; order is explicit."
+      }
+    },
+    {
+      "questionId": 2054,
+      "hash": "234e945e2f03214a15abf2bcd61ab8f19f989304c6281ef4df2353b15cc0011e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from Pepita’s individual name #771 or animal components #2438. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Coco uses alebrijes as the specific name for its folk-art spirit-guide creatures.",
+        "sources": [
+          "b30-coco",
+          "b30-cocolatino"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Alebrijes is the explicit creature name.",
+          "sources": [
+            "b30-coco",
+            "b30-cocolatino"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ofrendas is not the specific creature name given by Pixar.",
+          "sources": [
+            "b30-coco",
+            "b30-cocolatino"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cempasúchiles is not the specific creature name given by Pixar.",
+          "sources": [
+            "b30-coco",
+            "b30-cocolatino"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Calaveras is not the specific creature name given by Pixar.",
+          "sources": [
+            "b30-coco",
+            "b30-cocolatino"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Generic spirits or guardians could describe their function, so replaced those options. Asked the specific named creature class, not a broad description."
+      }
+    },
+    {
+      "questionId": 2055,
+      "hash": "b2c7e03482c27903b8ae906c3898ef76f3d9091705b3b5d5f6d1bef45ae4e1b4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from #2178, which asks whose disguise Héctor wears, not who creates the performance. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Frida Kahlo is the real artist depicted as Miguel’s Land-of-the-Dead artistic ally.",
+        "sources": [
+          "b30-coco",
+          "b30-cocolatino"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Frida Kahlo is the artist identified by Disney.",
+          "sources": [
+            "b30-coco",
+            "b30-cocolatino"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Diego Rivera is not the artist identified in this scene.",
+          "sources": [
+            "b30-coco",
+            "b30-cocolatino"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dolores del Río is not the artist staging this scene.",
+          "sources": [
+            "b30-coco",
+            "b30-cocolatino"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cantinflas is not the artist staging this scene.",
+          "sources": [
+            "b30-coco",
+            "b30-cocolatino"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other cultural figures may appear elsewhere; the specific artistic ally/performance scene identifies Kahlo alone."
+      }
+    },
+    {
+      "questionId": 2058,
+      "hash": "5190263609df1472c289573d5f09b412c33a305393791994f0f2113d6a4a0a7f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from fuel crystal #1295 and time dilation cause #2059. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Lightyear reveals Zurg as an older alternate-timeline Buzz.",
+        "sources": [
+          "b30-light",
+          "b30-lightscript"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "He is the older alternate Buzz.",
+          "sources": [
+            "b30-light",
+            "b30-lightscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Buzz guesses father and is explicitly corrected.",
+          "sources": [
+            "b30-light",
+            "b30-lightscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The armor hides Buzz, not an alien-built robot identity.",
+          "sources": [
+            "b30-light",
+            "b30-lightscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Buzz’s former commander is Alisha, not Zurg’s revealed identity.",
+          "sources": [
+            "b30-light",
+            "b30-lightscript"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Kept Lightyear separate from Toy Story 2’s father joke; a robotic suit is not the identity of its wearer."
+      }
+    },
+    {
+      "questionId": 2059,
+      "hash": "a2ee9da77dcc825a210a16c8161053fce08a3fc28b75d213654444a2f760dcfa",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from Zurg’s identity and the tested fuel source. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Hawthorne explicitly explains the elapsed years as time dilation near hyperspeed.",
+        "sources": [
+          "b30-light",
+          "b30-lightscript"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Relative travel speed causes time dilation.",
+          "sources": [
+            "b30-light",
+            "b30-lightscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hawthorne explains travel speed, not a broken stasis pod.",
+          "sources": [
+            "b30-light",
+            "b30-lightscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The returning flights advance relative time, not repeat a time loop.",
+          "sources": [
+            "b30-light",
+            "b30-lightscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The explanation is speed-dependent, not an unusual planetary orbit.",
+          "sources": [
+            "b30-light",
+            "b30-lightscript"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The colony does age while he flies; the later time-travel plot does not change Hawthorne’s explicit explanation of this effect."
+      }
+    },
+    {
+      "questionId": 2060,
+      "hash": "038c6dd7aaaf04388f59a5949a8c0aac2bcc1a2f41a2210d30697e1c6eadb152",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from Vanellope’s chosen racing career #1422 and Yesss’s role #848. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Rapunzel’s final question is about outsiders assuming a strong man solved their problems.",
+        "sources": [
+          "b30-princess",
+          "b30-princessnews"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Vanellope agrees with this assumption being made about her.",
+          "sources": [
+            "b30-princess",
+            "b30-princessnews"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A lost glass slipper is not Rapunzel’s final question.",
+          "sources": [
+            "b30-princess",
+            "b30-princessnews"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Singing instruction from pets is not the agreed assumption.",
+          "sources": [
+            "b30-princess",
+            "b30-princessnews"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A universal wicked-stepmother history is not the agreed assumption.",
+          "sources": [
+            "b30-princess",
+            "b30-princessnews"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Corrected the distinction between what actually solves their problems and what people assume; no claim every princess shares Cinderella’s biography."
+      }
+    },
+    {
+      "questionId": 2061,
+      "hash": "194832c337970836406b333320389b117690f7a444c4b584bf7d8ac43d91301d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Location removed from the stem so #2063 retains its independent setting fact. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Clyde directs the Bad-Anon meeting and its closing affirmation.",
+        "sources": [
+          "b30-ralphproduction",
+          "b30-ralph",
+          "b30-ralphscript"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Clyde is the directing ghost identified in the scene discussion.",
+          "sources": [
+            "b30-ralphproduction",
+            "b30-ralph",
+            "b30-ralphscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Zangief shares advice as a member, not the leader.",
+          "sources": [
+            "b30-ralphproduction",
+            "b30-ralph",
+            "b30-ralphscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "King Candy is not the meeting leader.",
+          "sources": [
+            "b30-ralphproduction",
+            "b30-ralph",
+            "b30-ralphscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bowser attends as a member, not the leader.",
+          "sources": [
+            "b30-ralphproduction",
+            "b30-ralph",
+            "b30-ralphscript"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Speaking advice does not imply leadership: Zangief and Bowser are fellow members; the source describing Clyde’s directing role supplies the identification. Fan transcript’s Blinky label is not used for his name."
+      }
+    },
+    {
+      "questionId": 2062,
+      "hash": "bd5a34c0a6e2bd0b2c6dd9d5cb8287b3d9b979734e5947f6676fd86b4f7e3085",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Separate from meeting leader #2061 and venue #2063. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Bowser is one of the opening Bad-Anon attendees.",
+        "sources": [
+          "b30-ralph",
+          "b30-ralphscript"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Bowser reacts in the meeting and is listed by the museum.",
+          "sources": [
+            "b30-ralph",
+            "b30-ralphscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sonic’s station PSA is a different scene, not meeting attendance.",
+          "sources": [
+            "b30-ralph",
+            "b30-ralphscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mario is not among the attendees in this opening scene.",
+          "sources": [
+            "b30-ralph",
+            "b30-ralphscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pac-Man appears at Felix’s party, not as a Bad-Anon attendee.",
+          "sources": [
+            "b30-ralph",
+            "b30-ralphscript"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A cameo somewhere in the film is insufficient; only Bowser attends this meeting among these four. Its location in Pac-Man does not make Pac-Man a participant."
+      }
+    },
+    {
+      "questionId": 2063,
+      "hash": "ea533c031cf861d1e5526789e47e4fef2d8dbbcee0bfb3f2d1f87c8f032d7b5f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Independent venue fact now absent from #2061’s stem; #1420 asks group name. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The opening pullback places Bad-Anon in Pac-Man’s central ghost room.",
+        "sources": [
+          "b30-ralphscript",
+          "b30-ralphproduction"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The pullback reveals Pac-Man’s ghost pen.",
+          "sources": [
+            "b30-ralphscript",
+            "b30-ralphproduction"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "They ride from Pac-Man to the station afterward.",
+          "sources": [
+            "b30-ralphscript",
+            "b30-ralphproduction"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sugar Rush’s castle is not the room revealed by the pullback.",
+          "sources": [
+            "b30-ralphscript",
+            "b30-ralphproduction"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hero’s Duty is not the game housing the opening group.",
+          "sources": [
+            "b30-ralphscript",
+            "b30-ralphproduction"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished a game’s room from the later station concourse; the explicit journey between them excludes the station answer."
+      }
+    },
+    {
+      "questionId": 2064,
+      "hash": "5b1fe7f4b717d3a2c6ef3c37df47c6273ff74456be080cb4993385a1dd58dfb7",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from the animated clock/candelabra questions and Cadenza/dog transformations. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Garderobe’s cursed form in the 2017 film is a wardrobe.",
+        "sources": [
+          "b30-objects"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "She becomes a wardrobe.",
+          "sources": [
+            "b30-objects"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cadenza, not Garderobe, becomes a harpsichord.",
+          "sources": [
+            "b30-objects"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A footstool is not her described enchanted form.",
+          "sources": [
+            "b30-objects"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A music box is not her described enchanted form.",
+          "sources": [
+            "b30-objects"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Specified the 2017 version rather than assuming the animated wardrobe’s name. Garderobe and Cadenza have different cursed forms."
+      }
+    },
+    {
+      "questionId": 2065,
+      "hash": "c692c8e64ca16946503477d3013a116f99547b7b9e13be2b367c58dffdae08e5",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from Garderobe, dog and Forte’s identity/motivation. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Cadenza’s cursed form in the 2017 film is a harpsichord.",
+        "sources": [
+          "b30-objects"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "He becomes a harpsichord.",
+          "sources": [
+            "b30-objects"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A grand piano is not the named instrument.",
+          "sources": [
+            "b30-objects"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A pipe organ belongs to Forte’s separate film, not Cadenza.",
+          "sources": [
+            "b30-objects"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A spinet piano is not the named instrument.",
+          "sources": [
+            "b30-objects"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Replaced non-instrument distractors; all four are keyboard instruments but only harpsichord matches Cadenza. Forte is a plausible different-film confusion."
+      }
+    },
+    {
+      "questionId": 2066,
+      "hash": "48d475b55cb4f3171aa7c8ba1fe5549a36009ce67aa1c30bda3d25fc3241c692",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from the two owners’ transformations; each maps a different character to an object. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 2017 film turns the couple’s dog into a stool.",
+        "sources": [
+          "b30-dogscript",
+          "b30-dogplot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "A stool matches both the screenplay and final-film account.",
+          "sources": [
+            "b30-dogscript",
+            "b30-dogplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A rug is not the dog’s enchanted form.",
+          "sources": [
+            "b30-dogscript",
+            "b30-dogplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A lamp is not the dog’s enchanted form.",
+          "sources": [
+            "b30-dogscript",
+            "b30-dogplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A cushion is not the dog’s enchanted form.",
+          "sources": [
+            "b30-dogscript",
+            "b30-dogplot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The screenplay calls it a piano stool while the final-film account calls it a footstool. Broader stool is supported by both and cannot mean any other listed object."
+      }
+    },
+    {
+      "questionId": 2067,
+      "hash": "62db6c97348ed61a2f4408aef6d27e36a2ebacf9ec825d56be56da5fc67809e1",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic/category digests and cross-bank comparisons read. Different from #2068’s no-resurrection rule; knowing one prohibition does not establish the other. Category and recall difficulty fit; sequel/in-universe scope checked.",
+      "context": "Released film/version named in the final question; English-language character names and story. Historical fictional fact.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Genie’s initial list of three wish limitations includes an inability to force love.",
+        "sources": [
+          "b30-aladdin",
+          "b30-aladdin2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Forcing love is explicitly rule two.",
+          "sources": [
+            "b30-aladdin",
+            "b30-aladdin2"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Leaving the cave is not in the three rules; he soon does so.",
+          "sources": [
+            "b30-aladdin",
+            "b30-aladdin2"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Two simultaneous masters is not one of this enumerated three-rule list.",
+          "sources": [
+            "b30-aladdin",
+            "b30-aladdin2"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Invisibility is not one of this enumerated three-rule list.",
+          "sources": [
+            "b30-aladdin",
+            "b30-aladdin2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The question asks membership in the explicit three-rule list, not all imaginable constraints on a genie. The list is exhaustive for that wording."
+      }
+    }
+  ]
+}

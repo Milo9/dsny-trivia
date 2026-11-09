@@ -1,0 +1,966 @@
+[
+  {
+    "schema": 2,
+    "questionId": 2073,
+    "hash": "2d80d3f8fbc5efd06ecb36503657833b6856ad3206de014fb5f6d8f366012f09",
+    "questionSnapshot": {
+      "id": 2073,
+      "question": "In Frozen, what song do Kristoff's troll family sing, trying to matchmake him with Anna despite her being engaged to someone else?",
+      "answers": [
+        "Fixer Upper",
+        "Reindeer(s) Are Better Than People",
+        "In Summer",
+        "Love Is an Open Door"
+      ],
+      "difficulty": "medium",
+      "category": "music"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-08",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Distinct song performance from #2074/#2075 and the other Frozen music questions.",
+    "verification": {
+      "context": "Frozen (2013), trolls' attempted matchmaking.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The trolls' matchmaking number occurs despite Anna's engagement.",
+        "sources": [
+          {
+            "sourceNoteId": "b31-frozen-scenes",
+            "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=frozen-2013",
+            "locator": "Coronation 230-307; Anna/Hans duet 448-518; Kristoff/Sven 805-832; Olaf 1075-1126; trolls 1627-1714; childhood door song near opening",
+            "evidence": "Kristoff supplies Sven's replies in his solo. Olaf imagines a warm beach. Trolls try pairing Anna and Kristoff despite her engagement. Other numbers belong to Anna's childhood door appeal, coronation anticipation, and the Anna/Hans courtship.",
+            "checkedBy": "Codex",
+            "checkedAt": "2026-11-08",
+            "timeSensitive": false,
+            "nextReviewAt": null,
+            "limitations": "Third-party dialogue transcription inspected and compared with the existing film-song notes, including b29-frozen-music. No lyrics reproduced in these notes and no original playback claimed.",
+            "topics": [
+              "Batch 31"
+            ]
+          },
+          {
+            "sourceNoteId": "b31-frozen-album",
+            "url": "https://christophebeck.com/projects/frozen/",
+            "locator": "Frozen soundtrack > Disc 1 tracks 2-9, lines 43-50",
+            "evidence": "The film composer's album listing credits the Kristoff solo to Jonathan Groff, the Olaf solo to Josh Gad, Fixer Upper to cast and Maia Wilson, and the Anna/Hans duet to Kristen Bell and Santino Fontana.",
+            "checkedBy": "Codex",
+            "checkedAt": "2026-11-08",
+            "timeSensitive": false,
+            "nextReviewAt": null,
+            "limitations": "Primary soundtrack-credit listing from the film composer; used to corroborate song titles/performers, with scene context established by the separately inspected transcription. No audio playback claimed.",
+            "topics": [
+              "Batch 31"
+            ]
+          },
+          {
+            "sourceNoteId": "b29-frozen-music",
+            "url": "https://news.disney.com/frozen-2-music",
+            "locator": "Song discussion after introduction",
+            "evidence": "Disney identifies Lost in the Woods as Jonathan Groff/Kristoff’s number, distinct from the shorter Reindeer(s) Are Better Than People song.",
+            "checkedBy": "Codex",
+            "checkedAt": "2026-11-08",
+            "timeSensitive": false,
+            "nextReviewAt": null,
+            "topics": [
+              "Batch 29",
+              "frozen-music"
+            ],
+            "limitations": "Institutional text inspected; no film, audio or video playback claimed."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the competing song scenes, including the engagement interruption during the trolls' number. Different songs are not inferred solely from one correct title."
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The troll sequence is Fixer Upper.",
+          "sources": [
+            {
+              "sourceNoteId": "b31-frozen-scenes",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=frozen-2013",
+              "locator": "Coronation 230-307; Anna/Hans duet 448-518; Kristoff/Sven 805-832; Olaf 1075-1126; trolls 1627-1714; childhood door song near opening",
+              "evidence": "Kristoff supplies Sven's replies in his solo. Olaf imagines a warm beach. Trolls try pairing Anna and Kristoff despite her engagement. Other numbers belong to Anna's childhood door appeal, coronation anticipation, and the Anna/Hans courtship.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Third-party dialogue transcription inspected and compared with the existing film-song notes, including b29-frozen-music. No lyrics reproduced in these notes and no original playback claimed.",
+              "topics": [
+                "Batch 31"
+              ]
+            },
+            {
+              "sourceNoteId": "b31-frozen-album",
+              "url": "https://christophebeck.com/projects/frozen/",
+              "locator": "Frozen soundtrack > Disc 1 tracks 2-9, lines 43-50",
+              "evidence": "The film composer's album listing credits the Kristoff solo to Jonathan Groff, the Olaf solo to Josh Gad, Fixer Upper to cast and Maia Wilson, and the Anna/Hans duet to Kristen Bell and Santino Fontana.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Primary soundtrack-credit listing from the film composer; used to corroborate song titles/performers, with scene context established by the separately inspected transcription. No audio playback claimed.",
+              "topics": [
+                "Batch 31"
+              ]
+            },
+            {
+              "sourceNoteId": "b29-frozen-music",
+              "url": "https://news.disney.com/frozen-2-music",
+              "locator": "Song discussion after introduction",
+              "evidence": "Disney identifies Lost in the Woods as Jonathan Groff/Kristoff’s number, distinct from the shorter Reindeer(s) Are Better Than People song.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "topics": [
+                "Batch 29",
+                "frozen-music"
+              ],
+              "limitations": "Institutional text inspected; no film, audio or video playback claimed."
+            }
+          ],
+          "answer": "Fixer Upper",
+          "verdict": "correct"
+        },
+        {
+          "basis": "contradiction",
+          "reason": "That is Kristoff's earlier Sven-voice solo.",
+          "sources": [
+            {
+              "sourceNoteId": "b31-frozen-scenes",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=frozen-2013",
+              "locator": "Coronation 230-307; Anna/Hans duet 448-518; Kristoff/Sven 805-832; Olaf 1075-1126; trolls 1627-1714; childhood door song near opening",
+              "evidence": "Kristoff supplies Sven's replies in his solo. Olaf imagines a warm beach. Trolls try pairing Anna and Kristoff despite her engagement. Other numbers belong to Anna's childhood door appeal, coronation anticipation, and the Anna/Hans courtship.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Third-party dialogue transcription inspected and compared with the existing film-song notes, including b29-frozen-music. No lyrics reproduced in these notes and no original playback claimed.",
+              "topics": [
+                "Batch 31"
+              ]
+            },
+            {
+              "sourceNoteId": "b31-frozen-album",
+              "url": "https://christophebeck.com/projects/frozen/",
+              "locator": "Frozen soundtrack > Disc 1 tracks 2-9, lines 43-50",
+              "evidence": "The film composer's album listing credits the Kristoff solo to Jonathan Groff, the Olaf solo to Josh Gad, Fixer Upper to cast and Maia Wilson, and the Anna/Hans duet to Kristen Bell and Santino Fontana.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Primary soundtrack-credit listing from the film composer; used to corroborate song titles/performers, with scene context established by the separately inspected transcription. No audio playback claimed.",
+              "topics": [
+                "Batch 31"
+              ]
+            },
+            {
+              "sourceNoteId": "b29-frozen-music",
+              "url": "https://news.disney.com/frozen-2-music",
+              "locator": "Song discussion after introduction",
+              "evidence": "Disney identifies Lost in the Woods as Jonathan Groff/Kristoff’s number, distinct from the shorter Reindeer(s) Are Better Than People song.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "topics": [
+                "Batch 29",
+                "frozen-music"
+              ],
+              "limitations": "Institutional text inspected; no film, audio or video playback claimed."
+            }
+          ],
+          "answer": "Reindeer(s) Are Better Than People",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "contradiction",
+          "reason": "That is Olaf's beach fantasy.",
+          "sources": [
+            {
+              "sourceNoteId": "b31-frozen-scenes",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=frozen-2013",
+              "locator": "Coronation 230-307; Anna/Hans duet 448-518; Kristoff/Sven 805-832; Olaf 1075-1126; trolls 1627-1714; childhood door song near opening",
+              "evidence": "Kristoff supplies Sven's replies in his solo. Olaf imagines a warm beach. Trolls try pairing Anna and Kristoff despite her engagement. Other numbers belong to Anna's childhood door appeal, coronation anticipation, and the Anna/Hans courtship.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Third-party dialogue transcription inspected and compared with the existing film-song notes, including b29-frozen-music. No lyrics reproduced in these notes and no original playback claimed.",
+              "topics": [
+                "Batch 31"
+              ]
+            },
+            {
+              "sourceNoteId": "b31-frozen-album",
+              "url": "https://christophebeck.com/projects/frozen/",
+              "locator": "Frozen soundtrack > Disc 1 tracks 2-9, lines 43-50",
+              "evidence": "The film composer's album listing credits the Kristoff solo to Jonathan Groff, the Olaf solo to Josh Gad, Fixer Upper to cast and Maia Wilson, and the Anna/Hans duet to Kristen Bell and Santino Fontana.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Primary soundtrack-credit listing from the film composer; used to corroborate song titles/performers, with scene context established by the separately inspected transcription. No audio playback claimed.",
+              "topics": [
+                "Batch 31"
+              ]
+            },
+            {
+              "sourceNoteId": "b29-frozen-music",
+              "url": "https://news.disney.com/frozen-2-music",
+              "locator": "Song discussion after introduction",
+              "evidence": "Disney identifies Lost in the Woods as Jonathan Groff/Kristoff’s number, distinct from the shorter Reindeer(s) Are Better Than People song.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "topics": [
+                "Batch 29",
+                "frozen-music"
+              ],
+              "limitations": "Institutional text inspected; no film, audio or video playback claimed."
+            }
+          ],
+          "answer": "In Summer",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "contradiction",
+          "reason": "That is Anna and Hans's courtship duet.",
+          "sources": [
+            {
+              "sourceNoteId": "b31-frozen-scenes",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=frozen-2013",
+              "locator": "Coronation 230-307; Anna/Hans duet 448-518; Kristoff/Sven 805-832; Olaf 1075-1126; trolls 1627-1714; childhood door song near opening",
+              "evidence": "Kristoff supplies Sven's replies in his solo. Olaf imagines a warm beach. Trolls try pairing Anna and Kristoff despite her engagement. Other numbers belong to Anna's childhood door appeal, coronation anticipation, and the Anna/Hans courtship.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Third-party dialogue transcription inspected and compared with the existing film-song notes, including b29-frozen-music. No lyrics reproduced in these notes and no original playback claimed.",
+              "topics": [
+                "Batch 31"
+              ]
+            },
+            {
+              "sourceNoteId": "b31-frozen-album",
+              "url": "https://christophebeck.com/projects/frozen/",
+              "locator": "Frozen soundtrack > Disc 1 tracks 2-9, lines 43-50",
+              "evidence": "The film composer's album listing credits the Kristoff solo to Jonathan Groff, the Olaf solo to Josh Gad, Fixer Upper to cast and Maia Wilson, and the Anna/Hans duet to Kristen Bell and Santino Fontana.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Primary soundtrack-credit listing from the film composer; used to corroborate song titles/performers, with scene context established by the separately inspected transcription. No audio playback claimed.",
+              "topics": [
+                "Batch 31"
+              ]
+            },
+            {
+              "sourceNoteId": "b29-frozen-music",
+              "url": "https://news.disney.com/frozen-2-music",
+              "locator": "Song discussion after introduction",
+              "evidence": "Disney identifies Lost in the Woods as Jonathan Groff/Kristoff’s number, distinct from the shorter Reindeer(s) Are Better Than People song.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "topics": [
+                "Batch 29",
+                "frozen-music"
+              ],
+              "limitations": "Institutional text inspected; no film, audio or video playback claimed."
+            }
+          ],
+          "answer": "Love Is an Open Door",
+          "verdict": "incorrect"
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 2074,
+    "hash": "c5bb78aeeacaa24b8d6c5f209db07aeabb68238105aa8fd3fb937fa0a1fed7f7",
+    "questionSnapshot": {
+      "id": 2074,
+      "question": "In Frozen (2013), which song accompanies Olaf's fantasy of relaxing on a warm, sunny beach?",
+      "answers": [
+        "In Summer",
+        "Fixer Upper",
+        "Do You Want to Build a Snowman?",
+        "For the First Time in Forever"
+      ],
+      "difficulty": "easy",
+      "category": "music"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-08",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "No equivalent Olaf-solo question elsewhere in the complete Frozen digest.",
+    "verification": {
+      "context": "Frozen (2013); Olaf's beach fantasy.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Olaf sings while imagining a warm beach without understanding melting.",
+        "sources": [
+          {
+            "sourceNoteId": "b31-frozen-scenes",
+            "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=frozen-2013",
+            "locator": "Coronation 230-307; Anna/Hans duet 448-518; Kristoff/Sven 805-832; Olaf 1075-1126; trolls 1627-1714; childhood door song near opening",
+            "evidence": "Kristoff supplies Sven's replies in his solo. Olaf imagines a warm beach. Trolls try pairing Anna and Kristoff despite her engagement. Other numbers belong to Anna's childhood door appeal, coronation anticipation, and the Anna/Hans courtship.",
+            "checkedBy": "Codex",
+            "checkedAt": "2026-11-08",
+            "timeSensitive": false,
+            "nextReviewAt": null,
+            "limitations": "Third-party dialogue transcription inspected and compared with the existing film-song notes, including b29-frozen-music. No lyrics reproduced in these notes and no original playback claimed.",
+            "topics": [
+              "Batch 31"
+            ]
+          },
+          {
+            "sourceNoteId": "b31-frozen-album",
+            "url": "https://christophebeck.com/projects/frozen/",
+            "locator": "Frozen soundtrack > Disc 1 tracks 2-9, lines 43-50",
+            "evidence": "The film composer's album listing credits the Kristoff solo to Jonathan Groff, the Olaf solo to Josh Gad, Fixer Upper to cast and Maia Wilson, and the Anna/Hans duet to Kristen Bell and Santino Fontana.",
+            "checkedBy": "Codex",
+            "checkedAt": "2026-11-08",
+            "timeSensitive": false,
+            "nextReviewAt": null,
+            "limitations": "Primary soundtrack-credit listing from the film composer; used to corroborate song titles/performers, with scene context established by the separately inspected transcription. No audio playback claimed.",
+            "topics": [
+              "Batch 31"
+            ]
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed summer from the stem to stop repeating the title. Compared the door, coronation and troll sequences against Olaf's specific fantasy."
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Olaf's warm-weather fantasy uses this song.",
+          "sources": [
+            {
+              "sourceNoteId": "b31-frozen-scenes",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=frozen-2013",
+              "locator": "Coronation 230-307; Anna/Hans duet 448-518; Kristoff/Sven 805-832; Olaf 1075-1126; trolls 1627-1714; childhood door song near opening",
+              "evidence": "Kristoff supplies Sven's replies in his solo. Olaf imagines a warm beach. Trolls try pairing Anna and Kristoff despite her engagement. Other numbers belong to Anna's childhood door appeal, coronation anticipation, and the Anna/Hans courtship.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Third-party dialogue transcription inspected and compared with the existing film-song notes, including b29-frozen-music. No lyrics reproduced in these notes and no original playback claimed.",
+              "topics": [
+                "Batch 31"
+              ]
+            },
+            {
+              "sourceNoteId": "b31-frozen-album",
+              "url": "https://christophebeck.com/projects/frozen/",
+              "locator": "Frozen soundtrack > Disc 1 tracks 2-9, lines 43-50",
+              "evidence": "The film composer's album listing credits the Kristoff solo to Jonathan Groff, the Olaf solo to Josh Gad, Fixer Upper to cast and Maia Wilson, and the Anna/Hans duet to Kristen Bell and Santino Fontana.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Primary soundtrack-credit listing from the film composer; used to corroborate song titles/performers, with scene context established by the separately inspected transcription. No audio playback claimed.",
+              "topics": [
+                "Batch 31"
+              ]
+            }
+          ],
+          "answer": "In Summer",
+          "verdict": "correct"
+        },
+        {
+          "basis": "contradiction",
+          "reason": "That is the later trolls' number.",
+          "sources": [
+            {
+              "sourceNoteId": "b31-frozen-scenes",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=frozen-2013",
+              "locator": "Coronation 230-307; Anna/Hans duet 448-518; Kristoff/Sven 805-832; Olaf 1075-1126; trolls 1627-1714; childhood door song near opening",
+              "evidence": "Kristoff supplies Sven's replies in his solo. Olaf imagines a warm beach. Trolls try pairing Anna and Kristoff despite her engagement. Other numbers belong to Anna's childhood door appeal, coronation anticipation, and the Anna/Hans courtship.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Third-party dialogue transcription inspected and compared with the existing film-song notes, including b29-frozen-music. No lyrics reproduced in these notes and no original playback claimed.",
+              "topics": [
+                "Batch 31"
+              ]
+            },
+            {
+              "sourceNoteId": "b31-frozen-album",
+              "url": "https://christophebeck.com/projects/frozen/",
+              "locator": "Frozen soundtrack > Disc 1 tracks 2-9, lines 43-50",
+              "evidence": "The film composer's album listing credits the Kristoff solo to Jonathan Groff, the Olaf solo to Josh Gad, Fixer Upper to cast and Maia Wilson, and the Anna/Hans duet to Kristen Bell and Santino Fontana.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Primary soundtrack-credit listing from the film composer; used to corroborate song titles/performers, with scene context established by the separately inspected transcription. No audio playback claimed.",
+              "topics": [
+                "Batch 31"
+              ]
+            }
+          ],
+          "answer": "Fixer Upper",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "contradiction",
+          "reason": "That is Anna's childhood appeal at Elsa's door.",
+          "sources": [
+            {
+              "sourceNoteId": "b31-frozen-scenes",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=frozen-2013",
+              "locator": "Coronation 230-307; Anna/Hans duet 448-518; Kristoff/Sven 805-832; Olaf 1075-1126; trolls 1627-1714; childhood door song near opening",
+              "evidence": "Kristoff supplies Sven's replies in his solo. Olaf imagines a warm beach. Trolls try pairing Anna and Kristoff despite her engagement. Other numbers belong to Anna's childhood door appeal, coronation anticipation, and the Anna/Hans courtship.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Third-party dialogue transcription inspected and compared with the existing film-song notes, including b29-frozen-music. No lyrics reproduced in these notes and no original playback claimed.",
+              "topics": [
+                "Batch 31"
+              ]
+            },
+            {
+              "sourceNoteId": "b31-frozen-album",
+              "url": "https://christophebeck.com/projects/frozen/",
+              "locator": "Frozen soundtrack > Disc 1 tracks 2-9, lines 43-50",
+              "evidence": "The film composer's album listing credits the Kristoff solo to Jonathan Groff, the Olaf solo to Josh Gad, Fixer Upper to cast and Maia Wilson, and the Anna/Hans duet to Kristen Bell and Santino Fontana.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Primary soundtrack-credit listing from the film composer; used to corroborate song titles/performers, with scene context established by the separately inspected transcription. No audio playback claimed.",
+              "topics": [
+                "Batch 31"
+              ]
+            }
+          ],
+          "answer": "Do You Want to Build a Snowman?",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "contradiction",
+          "reason": "That is coronation anticipation and a palace reprise.",
+          "sources": [
+            {
+              "sourceNoteId": "b31-frozen-scenes",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=frozen-2013",
+              "locator": "Coronation 230-307; Anna/Hans duet 448-518; Kristoff/Sven 805-832; Olaf 1075-1126; trolls 1627-1714; childhood door song near opening",
+              "evidence": "Kristoff supplies Sven's replies in his solo. Olaf imagines a warm beach. Trolls try pairing Anna and Kristoff despite her engagement. Other numbers belong to Anna's childhood door appeal, coronation anticipation, and the Anna/Hans courtship.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Third-party dialogue transcription inspected and compared with the existing film-song notes, including b29-frozen-music. No lyrics reproduced in these notes and no original playback claimed.",
+              "topics": [
+                "Batch 31"
+              ]
+            },
+            {
+              "sourceNoteId": "b31-frozen-album",
+              "url": "https://christophebeck.com/projects/frozen/",
+              "locator": "Frozen soundtrack > Disc 1 tracks 2-9, lines 43-50",
+              "evidence": "The film composer's album listing credits the Kristoff solo to Jonathan Groff, the Olaf solo to Josh Gad, Fixer Upper to cast and Maia Wilson, and the Anna/Hans duet to Kristen Bell and Santino Fontana.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Primary soundtrack-credit listing from the film composer; used to corroborate song titles/performers, with scene context established by the separately inspected transcription. No audio playback claimed.",
+              "topics": [
+                "Batch 31"
+              ]
+            }
+          ],
+          "answer": "For the First Time in Forever",
+          "verdict": "incorrect"
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 2075,
+    "hash": "fbdccb5b01be3fdbef59eda586f745d9029344e4a7013931185ceb15079b1d61",
+    "questionSnapshot": {
+      "id": 2075,
+      "question": "In Frozen (2013), which song does Kristoff perform outside Oaken's shop, pretending to answer himself in Sven's voice?",
+      "answers": [
+        "Reindeer(s) Are Better Than People",
+        "In Summer",
+        "Fixer Upper",
+        "Love Is an Open Door"
+      ],
+      "difficulty": "medium",
+      "category": "music"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-08",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Distinct from #1601 Lost in the Woods and the other two batch song scenes; difficulty set to medium.",
+    "verification": {
+      "context": "Frozen (2013); nighttime scene after Oaken's shop.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Kristoff performs a solo with imitated replies from Sven after the shop encounter.",
+        "sources": [
+          {
+            "sourceNoteId": "b31-frozen-scenes",
+            "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=frozen-2013",
+            "locator": "Coronation 230-307; Anna/Hans duet 448-518; Kristoff/Sven 805-832; Olaf 1075-1126; trolls 1627-1714; childhood door song near opening",
+            "evidence": "Kristoff supplies Sven's replies in his solo. Olaf imagines a warm beach. Trolls try pairing Anna and Kristoff despite her engagement. Other numbers belong to Anna's childhood door appeal, coronation anticipation, and the Anna/Hans courtship.",
+            "checkedBy": "Codex",
+            "checkedAt": "2026-11-08",
+            "timeSensitive": false,
+            "nextReviewAt": null,
+            "limitations": "Third-party dialogue transcription inspected and compared with the existing film-song notes, including b29-frozen-music. No lyrics reproduced in these notes and no original playback claimed.",
+            "topics": [
+              "Batch 31"
+            ]
+          },
+          {
+            "sourceNoteId": "b31-frozen-album",
+            "url": "https://christophebeck.com/projects/frozen/",
+            "locator": "Frozen soundtrack > Disc 1 tracks 2-9, lines 43-50",
+            "evidence": "The film composer's album listing credits the Kristoff solo to Jonathan Groff, the Olaf solo to Josh Gad, Fixer Upper to cast and Maia Wilson, and the Anna/Hans duet to Kristen Bell and Santino Fontana.",
+            "checkedBy": "Codex",
+            "checkedAt": "2026-11-08",
+            "timeSensitive": false,
+            "nextReviewAt": null,
+            "limitations": "Primary soundtrack-credit listing from the film composer; used to corroborate song titles/performers, with scene context established by the separately inspected transcription. No audio playback claimed.",
+            "topics": [
+              "Batch 31"
+            ]
+          },
+          {
+            "sourceNoteId": "b29-frozen-music",
+            "url": "https://news.disney.com/frozen-2-music",
+            "locator": "Song discussion after introduction",
+            "evidence": "Disney identifies Lost in the Woods as Jonathan Groff/Kristoff’s number, distinct from the shorter Reindeer(s) Are Better Than People song.",
+            "checkedBy": "Codex",
+            "checkedAt": "2026-11-08",
+            "timeSensitive": false,
+            "nextReviewAt": null,
+            "topics": [
+              "Batch 29",
+              "frozen-music"
+            ],
+            "limitations": "Institutional text inspected; no film, audio or video playback claimed."
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed unsupported duration and title-paraphrase clues. Kristoff supplies both voices: Sven does not literally sing. The later Frozen 2 rock ballad is a separate scene."
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The short Kristoff/Sven solo has this title.",
+          "sources": [
+            {
+              "sourceNoteId": "b31-frozen-scenes",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=frozen-2013",
+              "locator": "Coronation 230-307; Anna/Hans duet 448-518; Kristoff/Sven 805-832; Olaf 1075-1126; trolls 1627-1714; childhood door song near opening",
+              "evidence": "Kristoff supplies Sven's replies in his solo. Olaf imagines a warm beach. Trolls try pairing Anna and Kristoff despite her engagement. Other numbers belong to Anna's childhood door appeal, coronation anticipation, and the Anna/Hans courtship.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Third-party dialogue transcription inspected and compared with the existing film-song notes, including b29-frozen-music. No lyrics reproduced in these notes and no original playback claimed.",
+              "topics": [
+                "Batch 31"
+              ]
+            },
+            {
+              "sourceNoteId": "b31-frozen-album",
+              "url": "https://christophebeck.com/projects/frozen/",
+              "locator": "Frozen soundtrack > Disc 1 tracks 2-9, lines 43-50",
+              "evidence": "The film composer's album listing credits the Kristoff solo to Jonathan Groff, the Olaf solo to Josh Gad, Fixer Upper to cast and Maia Wilson, and the Anna/Hans duet to Kristen Bell and Santino Fontana.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Primary soundtrack-credit listing from the film composer; used to corroborate song titles/performers, with scene context established by the separately inspected transcription. No audio playback claimed.",
+              "topics": [
+                "Batch 31"
+              ]
+            },
+            {
+              "sourceNoteId": "b29-frozen-music",
+              "url": "https://news.disney.com/frozen-2-music",
+              "locator": "Song discussion after introduction",
+              "evidence": "Disney identifies Lost in the Woods as Jonathan Groff/Kristoff’s number, distinct from the shorter Reindeer(s) Are Better Than People song.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "topics": [
+                "Batch 29",
+                "frozen-music"
+              ],
+              "limitations": "Institutional text inspected; no film, audio or video playback claimed."
+            }
+          ],
+          "answer": "Reindeer(s) Are Better Than People",
+          "verdict": "correct"
+        },
+        {
+          "basis": "contradiction",
+          "reason": "In Summer is Olaf's performance.",
+          "sources": [
+            {
+              "sourceNoteId": "b31-frozen-scenes",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=frozen-2013",
+              "locator": "Coronation 230-307; Anna/Hans duet 448-518; Kristoff/Sven 805-832; Olaf 1075-1126; trolls 1627-1714; childhood door song near opening",
+              "evidence": "Kristoff supplies Sven's replies in his solo. Olaf imagines a warm beach. Trolls try pairing Anna and Kristoff despite her engagement. Other numbers belong to Anna's childhood door appeal, coronation anticipation, and the Anna/Hans courtship.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Third-party dialogue transcription inspected and compared with the existing film-song notes, including b29-frozen-music. No lyrics reproduced in these notes and no original playback claimed.",
+              "topics": [
+                "Batch 31"
+              ]
+            },
+            {
+              "sourceNoteId": "b31-frozen-album",
+              "url": "https://christophebeck.com/projects/frozen/",
+              "locator": "Frozen soundtrack > Disc 1 tracks 2-9, lines 43-50",
+              "evidence": "The film composer's album listing credits the Kristoff solo to Jonathan Groff, the Olaf solo to Josh Gad, Fixer Upper to cast and Maia Wilson, and the Anna/Hans duet to Kristen Bell and Santino Fontana.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Primary soundtrack-credit listing from the film composer; used to corroborate song titles/performers, with scene context established by the separately inspected transcription. No audio playback claimed.",
+              "topics": [
+                "Batch 31"
+              ]
+            },
+            {
+              "sourceNoteId": "b29-frozen-music",
+              "url": "https://news.disney.com/frozen-2-music",
+              "locator": "Song discussion after introduction",
+              "evidence": "Disney identifies Lost in the Woods as Jonathan Groff/Kristoff’s number, distinct from the shorter Reindeer(s) Are Better Than People song.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "topics": [
+                "Batch 29",
+                "frozen-music"
+              ],
+              "limitations": "Institutional text inspected; no film, audio or video playback claimed."
+            }
+          ],
+          "answer": "In Summer",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Fixer Upper is the trolls' performance.",
+          "sources": [
+            {
+              "sourceNoteId": "b31-frozen-scenes",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=frozen-2013",
+              "locator": "Coronation 230-307; Anna/Hans duet 448-518; Kristoff/Sven 805-832; Olaf 1075-1126; trolls 1627-1714; childhood door song near opening",
+              "evidence": "Kristoff supplies Sven's replies in his solo. Olaf imagines a warm beach. Trolls try pairing Anna and Kristoff despite her engagement. Other numbers belong to Anna's childhood door appeal, coronation anticipation, and the Anna/Hans courtship.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Third-party dialogue transcription inspected and compared with the existing film-song notes, including b29-frozen-music. No lyrics reproduced in these notes and no original playback claimed.",
+              "topics": [
+                "Batch 31"
+              ]
+            },
+            {
+              "sourceNoteId": "b31-frozen-album",
+              "url": "https://christophebeck.com/projects/frozen/",
+              "locator": "Frozen soundtrack > Disc 1 tracks 2-9, lines 43-50",
+              "evidence": "The film composer's album listing credits the Kristoff solo to Jonathan Groff, the Olaf solo to Josh Gad, Fixer Upper to cast and Maia Wilson, and the Anna/Hans duet to Kristen Bell and Santino Fontana.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Primary soundtrack-credit listing from the film composer; used to corroborate song titles/performers, with scene context established by the separately inspected transcription. No audio playback claimed.",
+              "topics": [
+                "Batch 31"
+              ]
+            },
+            {
+              "sourceNoteId": "b29-frozen-music",
+              "url": "https://news.disney.com/frozen-2-music",
+              "locator": "Song discussion after introduction",
+              "evidence": "Disney identifies Lost in the Woods as Jonathan Groff/Kristoff’s number, distinct from the shorter Reindeer(s) Are Better Than People song.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "topics": [
+                "Batch 29",
+                "frozen-music"
+              ],
+              "limitations": "Institutional text inspected; no film, audio or video playback claimed."
+            }
+          ],
+          "answer": "Fixer Upper",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Love Is an Open Door is Anna and Hans's duet.",
+          "sources": [
+            {
+              "sourceNoteId": "b31-frozen-scenes",
+              "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=frozen-2013",
+              "locator": "Coronation 230-307; Anna/Hans duet 448-518; Kristoff/Sven 805-832; Olaf 1075-1126; trolls 1627-1714; childhood door song near opening",
+              "evidence": "Kristoff supplies Sven's replies in his solo. Olaf imagines a warm beach. Trolls try pairing Anna and Kristoff despite her engagement. Other numbers belong to Anna's childhood door appeal, coronation anticipation, and the Anna/Hans courtship.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Third-party dialogue transcription inspected and compared with the existing film-song notes, including b29-frozen-music. No lyrics reproduced in these notes and no original playback claimed.",
+              "topics": [
+                "Batch 31"
+              ]
+            },
+            {
+              "sourceNoteId": "b31-frozen-album",
+              "url": "https://christophebeck.com/projects/frozen/",
+              "locator": "Frozen soundtrack > Disc 1 tracks 2-9, lines 43-50",
+              "evidence": "The film composer's album listing credits the Kristoff solo to Jonathan Groff, the Olaf solo to Josh Gad, Fixer Upper to cast and Maia Wilson, and the Anna/Hans duet to Kristen Bell and Santino Fontana.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Primary soundtrack-credit listing from the film composer; used to corroborate song titles/performers, with scene context established by the separately inspected transcription. No audio playback claimed.",
+              "topics": [
+                "Batch 31"
+              ]
+            },
+            {
+              "sourceNoteId": "b29-frozen-music",
+              "url": "https://news.disney.com/frozen-2-music",
+              "locator": "Song discussion after introduction",
+              "evidence": "Disney identifies Lost in the Woods as Jonathan Groff/Kristoff’s number, distinct from the shorter Reindeer(s) Are Better Than People song.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "topics": [
+                "Batch 29",
+                "frozen-music"
+              ],
+              "limitations": "Institutional text inspected; no film, audio or video playback claimed."
+            }
+          ],
+          "answer": "Love Is an Open Door",
+          "verdict": "incorrect"
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 2090,
+    "hash": "fac809030c5e523a4ac6123691d6b3dc5fa942a91676fd0542a01163ad672b9f",
+    "questionSnapshot": {
+      "id": 2090,
+      "question": "In November 2026, which Beauty and the Beast-themed lounge on Disney Wish is at the entrance to Palo Steakhouse and Enchanté?",
+      "answers": [
+        "The Rose",
+        "The Bayou",
+        "Nightingale's",
+        "Keg & Compass"
+      ],
+      "difficulty": "hard",
+      "category": "cruise"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-08",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Distinct from #1231/#1232/#970, which test other lounges.",
+    "verification": {
+      "context": "Disney Wish lounge location/theme as of November 2026.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The named Wish lounge is located beside the two adult restaurants.",
+        "sources": [
+          {
+            "sourceNoteId": "b31-rose",
+            "url": "https://disneycruise.disney.go.com/en-ca/onboard-activities/rose-lounge/",
+            "locator": "Title, Ship Locations, introduction and Step Into a Fairy Tale, lines 0-21",
+            "evidence": "The Rose is on Disney Wish at the entrance to Palo Steakhouse and Enchanté, themed to Beauty and the Beast.",
+            "checkedBy": "Codex",
+            "checkedAt": "2026-11-08",
+            "timeSensitive": true,
+            "nextReviewAt": "2027-02-05",
+            "limitations": "Institutional text inspected; no original film, audio or video playback claimed.",
+            "topics": [
+              "Batch 31"
+            ]
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the word rose from the stem and used real onboard lounge names. Both location and film theme are needed; the official page establishes one venue."
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The live page names The Rose at those restaurants.",
+          "sources": [
+            {
+              "sourceNoteId": "b31-rose",
+              "url": "https://disneycruise.disney.go.com/en-ca/onboard-activities/rose-lounge/",
+              "locator": "Title, Ship Locations, introduction and Step Into a Fairy Tale, lines 0-21",
+              "evidence": "The Rose is on Disney Wish at the entrance to Palo Steakhouse and Enchanté, themed to Beauty and the Beast.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-05",
+              "limitations": "Institutional text inspected; no original film, audio or video playback claimed.",
+              "topics": [
+                "Batch 31"
+              ]
+            }
+          ],
+          "answer": "The Rose",
+          "verdict": "correct"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Bayou is another named Wish lounge, not this named location/theme.",
+          "sources": [
+            {
+              "sourceNoteId": "b31-rose",
+              "url": "https://disneycruise.disney.go.com/en-ca/onboard-activities/rose-lounge/",
+              "locator": "Title, Ship Locations, introduction and Step Into a Fairy Tale, lines 0-21",
+              "evidence": "The Rose is on Disney Wish at the entrance to Palo Steakhouse and Enchanté, themed to Beauty and the Beast.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-05",
+              "limitations": "Institutional text inspected; no original film, audio or video playback claimed.",
+              "topics": [
+                "Batch 31"
+              ]
+            }
+          ],
+          "answer": "The Bayou",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Nightingale's is another Wish lounge, not this named location/theme.",
+          "sources": [
+            {
+              "sourceNoteId": "b31-rose",
+              "url": "https://disneycruise.disney.go.com/en-ca/onboard-activities/rose-lounge/",
+              "locator": "Title, Ship Locations, introduction and Step Into a Fairy Tale, lines 0-21",
+              "evidence": "The Rose is on Disney Wish at the entrance to Palo Steakhouse and Enchanté, themed to Beauty and the Beast.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-05",
+              "limitations": "Institutional text inspected; no original film, audio or video playback claimed.",
+              "topics": [
+                "Batch 31"
+              ]
+            }
+          ],
+          "answer": "Nightingale's",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Keg & Compass is another Wish lounge, not this named location/theme.",
+          "sources": [
+            {
+              "sourceNoteId": "b31-rose",
+              "url": "https://disneycruise.disney.go.com/en-ca/onboard-activities/rose-lounge/",
+              "locator": "Title, Ship Locations, introduction and Step Into a Fairy Tale, lines 0-21",
+              "evidence": "The Rose is on Disney Wish at the entrance to Palo Steakhouse and Enchanté, themed to Beauty and the Beast.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-08",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-05",
+              "limitations": "Institutional text inspected; no original film, audio or video playback claimed.",
+              "topics": [
+                "Batch 31"
+              ]
+            }
+          ],
+          "answer": "Keg & Compass",
+          "verdict": "incorrect"
+        }
+      ]
+    }
+  }
+]

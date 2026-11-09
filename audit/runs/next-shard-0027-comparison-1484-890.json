@@ -1,0 +1,41 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-08",
+  "retiredOriginal": {
+    "id": 1484,
+    "question": "At Disney's Animal Kingdom, what African-village-themed area is home to Kilimanjaro Safaris and features authentic African architecture and cultural details?",
+    "answers": [
+      "Harambe",
+      "Oasis",
+      "Discovery Island",
+      "Gorilla Falls"
+    ],
+    "difficulty": "hard",
+    "category": "parks"
+  },
+  "retiredFinal": {
+    "id": 1484,
+    "question": "As of November 2026, what fictional African village at Animal Kingdom is the departure point for Kilimanjaro Safaris?",
+    "answers": [
+      "Harambe",
+      "Oasis",
+      "Discovery Island",
+      "Gorilla Falls"
+    ],
+    "difficulty": "hard",
+    "category": "parks"
+  },
+  "replacement": {
+    "id": 890,
+    "question": "In November 2026, at Animal Kingdom, which attraction takes guests on a guided truck ride through Harambe Wildlife Reserve?",
+    "answers": [
+      "Kilimanjaro Safaris",
+      "Kali River Rapids",
+      "Wildlife Express Train",
+      "Maharajah Jungle Trek"
+    ],
+    "difficulty": "medium",
+    "category": "parks"
+  },
+  "reason": "Inverse Harambe/Kilimanjaro Safaris association; retain the verified truck-ride question."
+}

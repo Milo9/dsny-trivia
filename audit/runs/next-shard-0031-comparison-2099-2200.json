@@ -1,0 +1,36 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-08",
+  "retired": {
+    "id": 2099,
+    "question": "In Kronk's New Groove, which returning villainess from the first film schemes with Kronk to help him impress his father?",
+    "answers": [
+      "Yzma",
+      "Zira",
+      "Morgana",
+      "Sarousch"
+    ],
+    "difficulty": "medium",
+    "category": "characters"
+  },
+  "replacement": {
+    "id": 2200,
+    "question": "In Kronk's New Groove, what product does Yzma convince Kronk to sell to residents of a senior home?",
+    "answers": [
+      "A new youth potion",
+      "Squirrel-shaped candy",
+      "Llama feed",
+      "Spinach puffs"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "reason": "Both test Yzma and Kronks fake youth-potion partnership; the retained product question already names Yzma and therefore supplies this villain-identity answer.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Kronk%27s_New_Groove",
+      "locator": "Plot: first flashback, youth-potion scam"
+    }
+  ],
+  "challenge": "Compared complete stems and all four options. This is a shared narrative fact rather than a coincidental common answer; no additional fact is required by the removed item."
+}

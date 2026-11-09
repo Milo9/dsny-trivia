@@ -1,0 +1,36 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-08",
+  "retiredQuestion": {
+    "id": 1326,
+    "question": "In Alice in Wonderland, who hosts the famous 'unbirthday' tea party that Alice stumbles upon in the forest?",
+    "answers": [
+      "The Mad Hatter and the March Hare",
+      "The Queen of Hearts and the White Rabbit",
+      "Tweedledee and Tweedledum",
+      "The Caterpillar and the Cheshire Cat"
+    ],
+    "difficulty": "medium",
+    "category": "movies"
+  },
+  "retainedQuestion": {
+    "id": 1103,
+    "question": "In Alice in Wonderland (1951), who hosts the tea party with the March Hare?",
+    "answers": [
+      "The Mad Hatter",
+      "The White Rabbit",
+      "The Caterpillar",
+      "The King of Hearts"
+    ],
+    "difficulty": "easy",
+    "category": "characters"
+  },
+  "reason": "Both test the same Mad Hatter/March Hare tea-party host pairing. The unbirthday setting adds no independent fact to the requested answer. Retain the shorter, already reviewed #1103.",
+  "sourceIds": [
+    "b23-alice",
+    "b25-alice",
+    "b25-alice"
+  ],
+  "challenge": "The alternative pairs do not host this party. The Dormouse is present but neither question asks for an exhaustive guest list.",
+  "evidence": "Detailed 1951 plot/cast account identifies the same host pair; the Dormouse is also present, but no offered alternative pair fits."
+}

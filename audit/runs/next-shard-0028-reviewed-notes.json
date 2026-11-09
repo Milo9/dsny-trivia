@@ -1,0 +1,3216 @@
+{
+  "schema": 1,
+  "reviewer": "Codex",
+  "at": "2026-11-08",
+  "sourcesChecked": [
+    "b28-auto",
+    "b28-brunifire",
+    "b28-bugcast",
+    "b28-butterfly",
+    "b28-captain",
+    "b28-cars",
+    "b28-cda",
+    "b28-cornelius",
+    "b28-corona",
+    "b28-dallben",
+    "b28-death",
+    "b28-dez",
+    "b28-friar",
+    "b28-frozencharacters",
+    "b28-frozendialogue",
+    "b28-frozenplot",
+    "b28-glass",
+    "b28-hair",
+    "b28-heimlich",
+    "b28-i2assets",
+    "b28-i2dialogue",
+    "b28-i2plot",
+    "b28-io2",
+    "b28-lucaabandon",
+    "b28-lucaparents",
+    "b28-lucaplot",
+    "b28-lucastars",
+    "b28-nostalgia-corroboration",
+    "b28-olafvisual",
+    "b28-onward",
+    "b28-pipes",
+    "b28-ratcast",
+    "b28-ratplot",
+    "b28-robinsonsplot",
+    "b28-roy",
+    "b28-roz",
+    "b28-rozreveal",
+    "b28-slogan",
+    "b28-soulbody",
+    "b28-soulcast",
+    "b28-voyd",
+    "b28-wade",
+    "b28-wall700",
+    "b28-wallplot",
+    "b28-wayfinding",
+    "b28-wish",
+    "b28-witches"
+  ],
+  "reviews": [
+    {
+      "questionId": 1538,
+      "hash": "5fb63e2bea99ff04d6a4842928d1d55c92099ff0fda21241cce60ccc2d0a2c6e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #842 birthday lantern purpose and #43 Frozen kingdom. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Rapunzel royal identity is explicitly tied to Corona.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Rapunzel royal identity is explicitly tied to Corona.",
+        "sources": [
+          "b28-corona"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Corona is her named kingdom.",
+          "sources": [
+            "b28-corona"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Arendelle is a different named kingdom, not Corona.",
+          "sources": [
+            "b28-corona"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "DunBroch is not the kingdom named for Rapunzel.",
+          "sources": [
+            "b28-corona"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Agrabah is not her named kingdom.",
+          "sources": [
+            "b28-corona"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed lantern timing and parental-rule clauses; the character biography establishes the one proper kingdom name without relying on TV plot trivia."
+      }
+    },
+    {
+      "questionId": 1540,
+      "hash": "43d59d82a4b65734efe796eeb31204f15e661de069625f7d0b7f7932dd1d767e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #1027 initial job, #1278 Skinner role and #263 parentage. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "The secret ghost-cooking partnership is Linguini and Remy.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The secret ghost-cooking partnership is Linguini and Remy.",
+        "sources": [
+          "b28-ratcast"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Linguini supplies the human movements for Remy cooking.",
+          "sources": [
+            "b28-ratcast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Colette is Linguini trainer, not the secret human partner.",
+          "sources": [
+            "b28-ratcast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gusteau is already dead and appears in Remy imagination.",
+          "sources": [
+            "b28-ratcast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Skinner is the restaurant boss opposing the partnership.",
+          "sources": [
+            "b28-ratcast"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Colette later helps in the kitchen, so checked the word secretly: this asks the established concealed partnership, not everyone who ever cooks with Remy."
+      }
+    },
+    {
+      "questionId": 1541,
+      "hash": "d3d41d83a1cda03b354c29e050f3310f62adb55be2546e007c1f9d17018e7171",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #1018 ancestral song, #544 shapeshifting and Moana geographic questions. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Maui explicitly calls the skill he explains wayfinding.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Maui explicitly calls the skill he explains wayfinding.",
+        "sources": [
+          "b28-wayfinding"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Wayfinding is the named traditional navigation skill.",
+          "sources": [
+            "b28-wayfinding"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The lesson is not making maps.",
+          "sources": [
+            "b28-wayfinding"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The named skill does not require a magnetic compass.",
+          "sources": [
+            "b28-wayfinding"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The named lesson is not navigation by clock-based dead reckoning.",
+          "sources": [
+            "b28-wayfinding"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Replaced Star-reading and Sky navigation because they could describe parts of wayfinding. The question now asks Maui named skill, not every generic synonym for navigation."
+      }
+    },
+    {
+      "questionId": 1544,
+      "hash": "2b1ca83f83bc90a2bde54dfdbf7784fd2e4d3a031a187b2681290661067df639",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Asks the year, unlike #693 illness, #688 first posthumous feature, #687 opening date. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Walt death is dated December 15, 1966.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Walt death is dated December 15, 1966.",
+        "sources": [
+          "b28-death"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "1966 matches the dated death.",
+          "sources": [
+            "b28-death"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1967 is a year after the recorded death.",
+          "sources": [
+            "b28-death"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1968 is two years after the recorded death.",
+          "sources": [
+            "b28-death"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1964 is two years before the recorded death.",
+          "sources": [
+            "b28-death"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked death year versus resort opening and posthumous film releases; only 1966 matches the dated event. Cached b17-death and b12-death also agree."
+      }
+    },
+    {
+      "questionId": 1545,
+      "hash": "36ccc84d3359a7cff1d3f028d66e6b4e2982a204d73f8f5303d40c26f27f4db1",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from #1490 who completed the resort and #695 Florida Project announcement name. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Roy insisted that the resort name honor Walt, despite marketing advice.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Roy insisted that the resort name honor Walt, despite marketing advice.",
+        "sources": [
+          "b28-roy"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Honoring Walt explains Roy insistence in the naming account.",
+          "sources": [
+            "b28-roy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The account describes a personal naming decision, not an Oscar condition.",
+          "sources": [
+            "b28-roy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Roy insistence and its stated tribute motive are not a state-charter requirement.",
+          "sources": [
+            "b28-roy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The account concerns completion of one Florida project after Walt death, not two Florida resorts built by Walt.",
+          "sources": [
+            "b28-roy"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the invented award premise and the giveaway None answer. Checked whether a legal or award requirement could explain the stated insistence; the historical account identifies the tribute and marketing disagreement."
+      }
+    },
+    {
+      "questionId": 1546,
+      "hash": "d27f29d6fb1c8a559e7e10db2ca9b02df7cb74e0833d9b661a703a6a642edf35",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #1380 dedication opening words and park opening-date questions. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Disney own fact sheet labels Disneyland The Happiest Place on Earth.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney own fact sheet labels Disneyland The Happiest Place on Earth.",
+        "sources": [
+          "b28-slogan"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "This is the classic Disneyland slogan printed in the location heading.",
+          "sources": [
+            "b28-slogan"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Most Magical is not the classic slogan the Disneyland fact sheet identifies.",
+          "sources": [
+            "b28-slogan"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Vacation Kingdom is not the Disneyland slogan in this record.",
+          "sources": [
+            "b28-slogan"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Place Where Dreams Begin is not the identified classic slogan.",
+          "sources": [
+            "b28-slogan"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed both original-slogan chronology and false dedication-plaque claim. Replaced the shared Where Dreams Come True campaign so another genuine Disney campaign would not fit."
+      }
+    },
+    {
+      "questionId": 1550,
+      "hash": "5de736be47073c44112e35cafdeaa44fbd620cb97b056a9e651496e08a66af26",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #293 Mater, #488 tire shop, #1277 motel and the Cars Land attraction names. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "McQueen gets lost in Radiator Springs in the original Cars.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "McQueen gets lost in Radiator Springs in the original Cars.",
+        "sources": [
+          "b28-cars"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Radiator Springs is the named town.",
+          "sources": [
+            "b28-cars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Carburetor County is not that town name.",
+          "sources": [
+            "b28-cars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Piston Peak is not the town named in McQueen profile.",
+          "sources": [
+            "b28-cars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ornament Valley is not the town name in the profile.",
+          "sources": [
+            "b28-cars"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Kept the question specifically about a town: regional names do not become town aliases. Removed an unnecessary claim that community service itself transforms the town."
+      }
+    },
+    {
+      "questionId": 1553,
+      "hash": "b6e34274028a5a22b3e1488cf99dba64e00d8d0336b5d62cfacfa72b85059b3d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #495 spaceship name and #1305 cleaning robot. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "AUTO is the Axiom autopilot following the hidden no-return directive.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "AUTO is the Axiom autopilot following the hidden no-return directive.",
+        "sources": [
+          "b28-auto",
+          "b28-wallplot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "AUTO is the named autopilot enforcing the mandate.",
+          "sources": [
+            "b28-auto",
+            "b28-wallplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "OTTO is not the autopilot name.",
+          "sources": [
+            "b28-auto",
+            "b28-wallplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "NAVI-9 is not the named Axiom autopilot.",
+          "sources": [
+            "b28-auto",
+            "b28-wallplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "PILOT PRIME is not the named Axiom autopilot.",
+          "sources": [
+            "b28-auto",
+            "b28-wallplot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Confirmed that the hidden order concerns remaining away from Earth, rather than confusing AUTO with captain or GO-4. Alternate spellings are not accepted character names."
+      }
+    },
+    {
+      "questionId": 1554,
+      "hash": "9fae7b8acf5e5b6cd2fb8c75d31adb002d72bbc431efdda358d3446181e905f3",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from acronym #28, ship #495 and plant #1304. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "The opening robot chronology is approximately 700 years.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The opening robot chronology is approximately 700 years.",
+        "sources": [
+          "b28-wall700",
+          "b28-wallplot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "700 years matches Pixar heading and evacuation chronology.",
+          "sources": [
+            "b28-wall700",
+            "b28-wallplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "300 is not the stated interval.",
+          "sources": [
+            "b28-wall700",
+            "b28-wallplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1,000 is not the stated interval.",
+          "sources": [
+            "b28-wall700",
+            "b28-wallplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "50 is not the stated interval.",
+          "sources": [
+            "b28-wall700",
+            "b28-wallplot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed alone: the 700-year work interval does not prove he was the sole robot for every one of those years. Pixar and the independent plot chronology agree on the approximate figure."
+      }
+    },
+    {
+      "questionId": 1555,
+      "hash": "e87d7bef04ded17739acb34f45f93b070ac4f612ea24aa3ccc946632ee3f409c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #1553 AUTO identity and #495 ship name. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "The human commander who defies AUTO is Captain McCrea.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The human commander who defies AUTO is Captain McCrea.",
+        "sources": [
+          "b28-captain",
+          "b28-wallplot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "McCrea is the recorded captain name.",
+          "sources": [
+            "b28-captain",
+            "b28-wallplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Turnbuckle is not the identified captain.",
+          "sources": [
+            "b28-captain",
+            "b28-wallplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Holbrook is not the identified captain.",
+          "sources": [
+            "b28-captain",
+            "b28-wallplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sorrenson is not the identified captain.",
+          "sources": [
+            "b28-captain",
+            "b28-wallplot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked human captain versus autopilot. Pixar verifies the role and return-home decision; the secondary cast account supplies the surname and notes it is seen on a portrait rather than spoken."
+      }
+    },
+    {
+      "questionId": 1556,
+      "hash": "f29169e3a55c568f3a7e371e8a7fce9f8b6ddad7199ada36206d340e8007b71d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #1022 circus occupation and other A Bug Life character identities. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Heimlich explicitly says he wants to be a beautiful butterfly.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Heimlich explicitly says he wants to be a beautiful butterfly.",
+        "sources": [
+          "b28-butterfly",
+          "b28-heimlich"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Butterfly is his stated dream.",
+          "sources": [
+            "b28-butterfly",
+            "b28-heimlich"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A moth is not the creature he says he wants to become.",
+          "sources": [
+            "b28-butterfly",
+            "b28-heimlich"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A dragonfly is not his stated dream.",
+          "sources": [
+            "b28-butterfly",
+            "b28-heimlich"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A queen ant is not his stated dream.",
+          "sources": [
+            "b28-butterfly",
+            "b28-heimlich"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "This asks what he dreams, not real-world caterpillar taxonomy; the explicit statement excludes the moth distractor even though real caterpillars can become moths."
+      }
+    },
+    {
+      "questionId": 1557,
+      "hash": "c8b4f5c444f552929c0d014f631ba4e3ae6a425983880c170be85df763f62af8",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #1558 circus proprietor and #2583 pill-bug twins. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Francis is specifically the male ladybug mistaken for female.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Francis is specifically the male ladybug mistaken for female.",
+        "sources": [
+          "b28-bugcast"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Francis is the male ladybug.",
+          "sources": [
+            "b28-bugcast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Manny is a mantis magician.",
+          "sources": [
+            "b28-bugcast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Slim is a walking stick.",
+          "sources": [
+            "b28-bugcast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dim is a rhinoceros beetle.",
+          "sources": [
+            "b28-bugcast"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Read each named performer role rather than excluding them by absence from a synopsis; only Francis has the ladybug identity."
+      }
+    },
+    {
+      "questionId": 1558,
+      "hash": "21a4864f3108e79179e289c70ebf5584b70c1620b3e9ad261d567f14c8039af5",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #1022 circus performers and #1557 Francis species. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "P.T. Flea is the circus proprietor.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "P.T. Flea is the circus proprietor.",
+        "sources": [
+          "b28-bugcast"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "P.T. Flea owns the troupe.",
+          "sources": [
+            "b28-bugcast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ringmaster Bob is not its named proprietor.",
+          "sources": [
+            "b28-bugcast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Big Top Pete is not its named proprietor.",
+          "sources": [
+            "b28-bugcast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Colonel Buzz is not its named proprietor.",
+          "sources": [
+            "b28-bugcast"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed flea from the stem so species no longer singles out the correct option. Checked that this asks who runs the troupe, unlike what occupation it has."
+      }
+    },
+    {
+      "questionId": 1559,
+      "hash": "fbf93e7c2a311ebf2a1226461b44a9327417321dd25dfdbe02c3304643ffee6e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #1560 boyfriend name and #2170 mother voice actor. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Laurel Lightfoot is Ian and Barley mother and Colt partner.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Laurel Lightfoot is Ian and Barley mother and Colt partner.",
+        "sources": [
+          "b28-onward"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Laurel is the named mother.",
+          "sources": [
+            "b28-onward"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Guinevere is the van, not their mother.",
+          "sources": [
+            "b28-onward"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fawn is not their mother name.",
+          "sources": [
+            "b28-onward"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Willow is not their mother name.",
+          "sources": [
+            "b28-onward"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Compared all four options and #1560: knowing the mother name does not supply Colt name. The shared relationship is context, not the tested fact."
+      }
+    },
+    {
+      "questionId": 1560,
+      "hash": "81fb273b6108515ebd9ad7b66d9f689746203ab40a95a99c7f1f2f9d729c323b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #1559 mother identity and #1561 game name. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Officer Colt Bronco is the centaur partner of Laurel.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Officer Colt Bronco is the centaur partner of Laurel.",
+        "sources": [
+          "b28-onward"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Colt Bronco is explicitly named as the centaur cop.",
+          "sources": [
+            "b28-onward"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Deputy Hoofington is not his name.",
+          "sources": [
+            "b28-onward"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sergeant Mane is not his name.",
+          "sources": [
+            "b28-onward"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Officer Trot is not his name.",
+          "sources": [
+            "b28-onward"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Compared the full mother question: Colt identity is a second fact, not an inverse question asking for Laurel again. Exact official proper name excludes the invented alternatives."
+      }
+    },
+    {
+      "questionId": 1561,
+      "hash": "34a2c10067056d9fd560d3f2413fa29246dc9b9810485e9bc6f22e90b0059965",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #558 Guinevere and #1434 visitation items. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Pixar names Barley role-playing game Quests of Yore.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar names Barley role-playing game Quests of Yore.",
+        "sources": [
+          "b28-onward"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Quests of Yore is the named game.",
+          "sources": [
+            "b28-onward"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Realm of Wizards is not the named game.",
+          "sources": [
+            "b28-onward"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Legends of Old is not the named game.",
+          "sources": [
+            "b28-onward"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Path of the Phoenix is not the named game.",
+          "sources": [
+            "b28-onward"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the extra real-clues assertion because the direct profile establishes the title without requiring that additional plot claim."
+      }
+    },
+    {
+      "questionId": 1562,
+      "hash": "1ff6c5ddbcf81496421262002aef06801ab3b07b5e353a5dcbb9e74cc922e772",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #1440 race events and #1442 Giulia father. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Giulia telescope lesson addresses stars and Saturn.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Giulia telescope lesson addresses stars and Saturn.",
+        "sources": [
+          "b28-lucastars"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Astronomy studies the stars and planets being explained.",
+          "sources": [
+            "b28-lucastars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Marine biology does not describe this celestial lesson; fish was the mistaken interpretation.",
+          "sources": [
+            "b28-lucastars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "History is not the subject of this telescope lesson.",
+          "sources": [
+            "b28-lucastars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mathematics is related to astronomy but is not what the identified stars-and-planets explanation is about.",
+          "sources": [
+            "b28-lucastars"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed a broad favorite-school-subject claim; asked the specific lesson subject and moved scene trivia to pixar. A topic using mathematics does not make mathematics an equally precise answer."
+      }
+    },
+    {
+      "questionId": 1563,
+      "hash": "67231873484ef8ef867ce41860706e406e46b2a35de4708d26a263a1f4de82ae",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #2444 Daniela voice actor and #1293 Alberto surname. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Daniela and Lorenzo are Luca sea-monster parents.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Daniela and Lorenzo are Luca sea-monster parents.",
+        "sources": [
+          "b28-lucaparents"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "This pair is explicitly his mother and father.",
+          "sources": [
+            "b28-lucaparents"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Alberto is Luca friend, so Marina and Alberto cannot be the parent pair.",
+          "sources": [
+            "b28-lucaparents"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Giulia and Massimo are a daughter and her human father.",
+          "sources": [
+            "b28-lucaparents"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ercole is the town bully, not Luca father; Sofia and Ercole is not the parent pair.",
+          "sources": [
+            "b28-lucaparents"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked both names in every pair rather than validating only Daniela; the explicit parental pair excludes all alternatives."
+      }
+    },
+    {
+      "questionId": 1564,
+      "hash": "9a59a3e38009d049ae39813e044d4c5aa7f7fc5637ccf4e0edbb2c782d1b5ad2",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #1441 tower structure: cause of living alone is a separate fact. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Alberto explains his father left him alone and he waited for a change of mind.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Alberto explains his father left him alone and he waited for a change of mind.",
+        "sources": [
+          "b28-lucaabandon",
+          "b28-lucaplot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Abandonment by his father is the explicit explanation.",
+          "sources": [
+            "b28-lucaabandon",
+            "b28-lucaplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He describes his father choosing to leave, not parents lost at sea.",
+          "sources": [
+            "b28-lucaabandon",
+            "b28-lucaplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He waited for his father rather than running away from family.",
+          "sources": [
+            "b28-lucaabandon",
+            "b28-lucaplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "His account describes paternal abandonment, not a sea-monster banishment.",
+          "sources": [
+            "b28-lucaabandon",
+            "b28-lucaplot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The wall marks count days since father left, not a known death or legal exile. Both transcript and independent plot account establish abandonment."
+      }
+    },
+    {
+      "questionId": 1565,
+      "hash": "5280105c8a03bd5d68f7d04da2321f726292568d5b043973d626167f8f7dbbc8",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #1046 Wade name and #1410 inspector occupation. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Wade openly expresses emotion and cries during the inspection scene.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Wade openly expresses emotion and cries during the inspection scene.",
+        "sources": [
+          "b28-wade",
+          "b28-pipes"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "His tears express the strong emotion.",
+          "sources": [
+            "b28-wade",
+            "b28-pipes"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "His emotional reaction is not petrification.",
+          "sources": [
+            "b28-wade",
+            "b28-pipes"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "His emotional reaction is not invisibility.",
+          "sources": [
+            "b28-wade",
+            "b28-pipes"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "His emotional reaction is not emitting sparks.",
+          "sources": [
+            "b28-wade",
+            "b28-pipes"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed subjective most-defining ranking; checked the observed expressive behavior, not an assertion that his only trait is crying. Scene text explicitly records tears."
+      }
+    },
+    {
+      "questionId": 1566,
+      "hash": "344983e1b131e927c7c8499e7aeebb25c585307dd4e753d5e9f4c49af8c9e913",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #1413 fear before touching Wade and family-shop identity. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Ember seals the culvert with melted sand before the family dinner.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Ember seals the culvert with melted sand before the family dinner.",
+        "sources": [
+          "b28-glass"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The scene explicitly melts sandbags into glass.",
+          "sources": [
+            "b28-glass"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The repair is glass, not frozen water.",
+          "sources": [
+            "b28-glass"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The scene uses no growing roots as the repair.",
+          "sources": [
+            "b28-glass"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "It seals with glass rather than steel plates.",
+          "sources": [
+            "b28-glass"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Replaced the false city-saving climax premise with the earlier repair scene. Glass can later fail without contradicting what material sealed the doors in this scene."
+      }
+    },
+    {
+      "questionId": 1567,
+      "hash": "06bd9207a1176f172ac2465f0aca1adbd6abe70819de8cea154fe8038a79b1e4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #1410 Wade job and #1566 culvert repair. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "A pipe cracks after Ember loses her temper and Wade emerges into the flooded basement.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "A pipe cracks after Ember loses her temper and Wade emerges into the flooded basement.",
+        "sources": [
+          "b28-pipes"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "A water pipe bursts and sprays the room.",
+          "sources": [
+            "b28-pipes"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The depicted break is not a gas valve leak.",
+          "sources": [
+            "b28-pipes"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "No ceiling-beam collapse is the event bringing Wade in.",
+          "sources": [
+            "b28-pipes"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A blocked chimney flue is not his route into the shop.",
+          "sources": [
+            "b28-pipes"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed unneeded corroded descriptor; checked the immediate pipe burst rather than confusing it with the later citywide culvert flood."
+      }
+    },
+    {
+      "questionId": 1568,
+      "hash": "226c6c9591cff9b790e9b7cd4b6fbe72bd64a5f999bffbc5813045e5d0bba648",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #471 Anxiety planning, #1414 sport and #1417 original emotions imprisonment. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Riley is 13 and the puberty alarm initiates the HQ change before new emotions arrive.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Riley is 13 and the puberty alarm initiates the HQ change before new emotions arrive.",
+        "sources": [
+          "b28-io2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Puberty is the depicted developmental change.",
+          "sources": [
+            "b28-io2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The arrival is not caused by a new-city move; that belongs to the original film.",
+          "sources": [
+            "b28-io2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Her parents divorce is not the depicted trigger.",
+          "sources": [
+            "b28-io2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Friends school plans matter at camp, but loss of a best friend is not the biological trigger for new emotions.",
+          "sources": [
+            "b28-io2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked cause versus later camp stressors: puberty precedes the new arrivals and is not merely inferred from Anxiety behavior."
+      }
+    },
+    {
+      "questionId": 1569,
+      "hash": "45536f757c56cff4bba789bfe3473f8b0cc3cc67dcb71acf859417109d22b9f3",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #1416 Sense of Self and other original-film memory locations. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "A worker explicitly names the sarcastic-echo gap Sar-chasm.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "A worker explicitly names the sarcastic-echo gap Sar-chasm.",
+        "sources": [
+          "b28-io2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Sar-Chasm is the spoken pun name.",
+          "sources": [
+            "b28-io2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Snark Pit is not the spoken name.",
+          "sources": [
+            "b28-io2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Irony Gap is not the spoken name.",
+          "sources": [
+            "b28-io2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wit End is not the spoken name.",
+          "sources": [
+            "b28-io2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed chasm from the stem to avoid giving away its unique name component. Confirmed it changes how listeners hear an echo rather than literally changing every thought or all speech."
+      }
+    },
+    {
+      "questionId": 1570,
+      "hash": "bb76416c5d05ade5646e908f70cbe1dcf51435efda82a614304d3dc959a61636",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #480 Ennui and #1047 Envy identity. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Anxiety tells Nostalgia she has about ten years before she is invited.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Anxiety tells Nostalgia she has about ten years before she is invited.",
+        "sources": [
+          "b28-io2",
+          "b28-nostalgia-corroboration"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "About ten matches the explicit line.",
+          "sources": [
+            "b28-io2",
+            "b28-nostalgia-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Two years does not match Anxiety line.",
+          "sources": [
+            "b28-io2",
+            "b28-nostalgia-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Twenty years does not match Anxiety line.",
+          "sources": [
+            "b28-io2",
+            "b28-nostalgia-corroboration"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Six months does not match Anxiety line.",
+          "sources": [
+            "b28-io2",
+            "b28-nostalgia-corroboration"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked that this asks the fictional joke as attributed to Anxiety, not a real claim about when humans can feel nostalgia. Contemporary review independently corroborates ten."
+      }
+    },
+    {
+      "questionId": 1571,
+      "hash": "bc8a112867c6331a22a7496f02959a524e8f67300f2c98e0b77404b5a9758dfe",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #489 Violet two powers and #1039 Jack-Jack unpredictable powers. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Voyd signature ability connects two locations using portals.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Voyd signature ability connects two locations using portals.",
+        "sources": [
+          "b28-voyd",
+          "b28-i2plot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Creating portals is the power described by Pixar production authors.",
+          "sources": [
+            "b28-voyd",
+            "b28-i2plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Invisibility is Violet established ability, not the described Voyd effect.",
+          "sources": [
+            "b28-voyd",
+            "b28-i2plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Electricity belongs to He-Lectrix in the roster, not Voyd portal power.",
+          "sources": [
+            "b28-voyd",
+            "b28-i2plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Super speed belongs to Dash, not the described spatial portal effect.",
+          "sources": [
+            "b28-voyd",
+            "b28-i2plot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the specific depicted spatial effect rather than treating one visual glow as proof of another power. Primary paper explicitly says her power creates openings connecting locations; roster distinguishes the competing hero abilities."
+      }
+    },
+    {
+      "questionId": 1572,
+      "hash": "cc813c1df9aa356c5f0610610b83b6ebc7353fc436bc0c2de207ad4c201b33ff",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #1039 Jack-Jack powers and #1276 baby name. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Pixar describes Jack-Jack backyard fight with a raccoon.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar describes Jack-Jack backyard fight with a raccoon.",
+        "sources": [
+          "b28-i2assets"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "A raccoon is explicitly the opponent.",
+          "sources": [
+            "b28-i2assets"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A possum is not the identified animal.",
+          "sources": [
+            "b28-i2assets"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A skunk is not the identified animal.",
+          "sources": [
+            "b28-i2assets"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A coyote is not the identified animal.",
+          "sources": [
+            "b28-i2assets"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The production character heading identifies the specific scene animal; the mask-like face is not used to guess among species."
+      }
+    },
+    {
+      "questionId": 1573,
+      "hash": "9a38f9a43b23e3afec4f37ee95015e6b39f2f66ea2cb2f29e203b53f3bf24648",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #483 who masterminds Screenslaver; this asks the control device. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Evelyn holds Helen under hypnosis with goggles.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Evelyn holds Helen under hypnosis with goggles.",
+        "sources": [
+          "b28-i2plot",
+          "b28-i2dialogue"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Goggles are the device applied to her eyes.",
+          "sources": [
+            "b28-i2plot",
+            "b28-i2dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A cloth blindfold blocks sight but is not the device in this scene.",
+          "sources": [
+            "b28-i2plot",
+            "b28-i2dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A mirrored helmet is not the hypnosis device.",
+          "sources": [
+            "b28-i2plot",
+            "b28-i2dialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A sleep mask is not the hypnosis device.",
+          "sources": [
+            "b28-i2plot",
+            "b28-i2dialogue"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separated screen broadcasts from goggles worn by controlled victims; removed unsupported spiral-pattern specificity. Plot and dialogue both identify goggles controlling the adults."
+      }
+    },
+    {
+      "questionId": 1574,
+      "hash": "52214c3610e01c91854ca1f0322f0c3fcb0aea7acc357774e6b855ac7e1e938d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #71 Syndrome civilian identity and other Violet power questions. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Dicker wipes Tony memory after he recognizes unmasked Violet.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Dicker wipes Tony memory after he recognizes unmasked Violet.",
+        "sources": [
+          "b28-i2dialogue",
+          "b28-i2plot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Tony Rydinger is the interviewed witness.",
+          "sources": [
+            "b28-i2dialogue",
+            "b28-i2plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dash is Violet brother, not this witness.",
+          "sources": [
+            "b28-i2dialogue",
+            "b28-i2plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Buddy Pine is not the boy Dicker interviews.",
+          "sources": [
+            "b28-i2dialogue",
+            "b28-i2plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Winston is not the classmate whose memory is wiped.",
+          "sources": [
+            "b28-i2dialogue",
+            "b28-i2plot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed later restored: Bob arranges a renewed meeting, not recovery of Tony erased memory. The opening interview names Tony and the later call confirms the wipe."
+      }
+    },
+    {
+      "questionId": 1575,
+      "hash": "8b527bae75fc5ed3ffcd3796d41600600aff74f9fddfa39f56460293592f6295",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #1576 yacht and #1159 park coaster name. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Elastigirl new motorcycle is called the Elasticycle.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Elastigirl new motorcycle is called the Elasticycle.",
+        "sources": [
+          "b28-i2assets"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Elasticycle is Pixar heading for the motorcycle.",
+          "sources": [
+            "b28-i2assets"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Incredimobile is not the motorcycle name.",
+          "sources": [
+            "b28-i2assets"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Parr Racer is not its name.",
+          "sources": [
+            "b28-i2assets"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Stretch Cycle is not its official name.",
+          "sources": [
+            "b28-i2assets"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked motorcycle versus the family supercar; the similar invented Stretch Cycle is not the documented proper name."
+      }
+    },
+    {
+      "questionId": 1576,
+      "hash": "9cd42b53243f20fd2e52f226e851504b1f119dc74aa729b1726cbc7f0de9f60a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #1289 DevTech public leader and #1575 motorcycle. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Winston announces the televised signing ceremony aboard the Everjust.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Winston announces the televised signing ceremony aboard the Everjust.",
+        "sources": [
+          "b28-i2dialogue",
+          "b28-i2assets",
+          "b28-i2plot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Everjust is the name spoken in the announcement.",
+          "sources": [
+            "b28-i2dialogue",
+            "b28-i2assets",
+            "b28-i2plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Incredible Voyager is not the announced boat name.",
+          "sources": [
+            "b28-i2dialogue",
+            "b28-i2assets",
+            "b28-i2plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Deavor Star is not the announced boat name.",
+          "sources": [
+            "b28-i2dialogue",
+            "b28-i2assets",
+            "b28-i2plot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Municiberg Pearl is not the announced boat name.",
+          "sources": [
+            "b28-i2dialogue",
+            "b28-i2assets",
+            "b28-i2plot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the conflation of the earlier world summit with the signing ceremony at sea. Confirmed proper name in dialogue, not merely Hydroliner production design label."
+      }
+    },
+    {
+      "questionId": 1577,
+      "hash": "9ccda9affaef2359407524046a9f8e9c1e2469d7ae0c531875928892b0ac4999",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #661 22 identity, #1438 Zone and #1439 Terry. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Joe and 22 arrive in separate wrong bodies at the hospital.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Joe and 22 arrive in separate wrong bodies at the hospital.",
+        "sources": [
+          "b28-soulbody"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The script explicitly places 22 in Joe body and Joe in the cat.",
+          "sources": [
+            "b28-soulbody"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The two occupy different bodies, not one body.",
+          "sources": [
+            "b28-soulbody"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Joe is in a cat and 22 in his adult body; becoming a ghost and human is not the described pairing.",
+          "sources": [
+            "b28-soulbody"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Joe adult body and a cat are present; neither becomes a child.",
+          "sources": [
+            "b28-soulbody"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked both sides of the swap. Soul in the film title supplies no clue as to which body contains which character; this is not a character-number or afterlife-location duplicate."
+      }
+    },
+    {
+      "questionId": 1578,
+      "hash": "2598711341e85bee1f3fb9aafad9292c64e7b2885823cb214eb8940a582b0ddf",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #1316 jazz bandleader and #1437 Joe instrument. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Dez, Joe barber, explicitly identifies his former veterinary ambition.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Dez, Joe barber, explicitly identifies his former veterinary ambition.",
+        "sources": [
+          "b28-dez",
+          "b28-soulcast"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Veterinarian is his stated planned career.",
+          "sources": [
+            "b28-dez",
+            "b28-soulcast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jazz is Joe ambition, not Dez stated career plan.",
+          "sources": [
+            "b28-dez",
+            "b28-soulcast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Physician means a human medical doctor, not the veterinary career he names.",
+          "sources": [
+            "b28-dez",
+            "b28-soulcast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pilot is not his stated career plan.",
+          "sources": [
+            "b28-dez",
+            "b28-soulcast"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Replaced doctor with physician because veterinarian is also a doctor. Corrected barbershop regular to barber; the specific dialogue establishes the ambition."
+      }
+    },
+    {
+      "questionId": 1579,
+      "hash": "0fba19eef26aad448541319795952e55691b22670d08afb813812fb29d567929",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #1580 organization name and #657 company chief. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Roz the dispatch manager appears as CDA Number One.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Roz the dispatch manager appears as CDA Number One.",
+        "sources": [
+          "b28-roz",
+          "b28-rozreveal"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Roz is the revealed undercover leader.",
+          "sources": [
+            "b28-roz",
+            "b28-rozreveal"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Celia is the receptionist, which the original stem incorrectly attributed to Roz.",
+          "sources": [
+            "b28-roz",
+            "b28-rozreveal"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Needleman is not the Number One revealed in this scene.",
+          "sources": [
+            "b28-roz",
+            "b28-rozreveal"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Smitty is not the Number One revealed in this scene.",
+          "sources": [
+            "b28-roz",
+            "b28-rozreveal"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Corrected the job rather than accepting Roz under a false receptionist premise. The reveal names Roz, excluding all three other workers."
+      }
+    },
+    {
+      "questionId": 1580,
+      "hash": "819a1543d5d5d26779652ae885afc6e7386929181b1050933f9d9ef7c38aa4c0",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #1579 individual undercover leader and #640 scream energy. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Pixar names the yellow-suited human-contamination response teams CDA.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar names the yellow-suited human-contamination response teams CDA.",
+        "sources": [
+          "b28-cda"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Child Detection Agency is the official organization name.",
+          "sources": [
+            "b28-cda"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Human Containment Bureau is not the identified team.",
+          "sources": [
+            "b28-cda"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Scare Safety Board is not its name.",
+          "sources": [
+            "b28-cda"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Monster Homeland Security is not its name.",
+          "sources": [
+            "b28-cda"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Read the actual team description, not just a generic Monsters synopsis. Human contamination is the monsters in-universe belief; no real-world toxicity claim is being made."
+      }
+    },
+    {
+      "questionId": 1581,
+      "hash": "9ec751e1d74cc85e51976f9a94202ed73a336d69c5ae1e3f440e70d486ec0d97",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #1300 brother identity and #263 Linguini human father. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Django is explicitly Remy father and rat-clan patriarch.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Django is explicitly Remy father and rat-clan patriarch.",
+        "sources": [
+          "b28-ratcast"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Django is the father and colony leader.",
+          "sources": [
+            "b28-ratcast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Emile is Remy brother.",
+          "sources": [
+            "b28-ratcast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Auguste is the human chef Gusteau, not Remy father.",
+          "sources": [
+            "b28-ratcast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Horst is not the rat-clan father named Django.",
+          "sources": [
+            "b28-ratcast"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed food-loving characterization that is more prominently associated with Emile. Explicit parentage supplies the discriminator, not food preferences."
+      }
+    },
+    {
+      "questionId": 1582,
+      "hash": "f2a779c9550dac3692211df728c2c2c284015a306f1867bc162bc7256458c687",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #1540 secret Remy partnership and #1278 head-chef identity. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Colette is assigned to train Linguini in the kitchen.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Colette is assigned to train Linguini in the kitchen.",
+        "sources": [
+          "b28-ratcast"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Colette is explicitly the assigned trainer.",
+          "sources": [
+            "b28-ratcast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Danielle is not the trainer named in the profile.",
+          "sources": [
+            "b28-ratcast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Solange is not the trainer named in the profile.",
+          "sources": [
+            "b28-ratcast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Brigitte is not the trainer named in the profile.",
+          "sources": [
+            "b28-ratcast"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed fiery stereotype and unnecessary romance clause; checked the specific work assignment, not any female name appearing in wider adaptations."
+      }
+    },
+    {
+      "questionId": 1583,
+      "hash": "7170499f0415849e57656ef22412a0441fae7fee7a8107d42f086e0cae3c9306",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #1540 partner identity and #1050 rescued soup. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Remy steers Linguini physically by pulling his hair beneath the toque.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Remy steers Linguini physically by pulling his hair beneath the toque.",
+        "sources": [
+          "b28-hair",
+          "b28-ratplot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Hair pulling is the control mechanism.",
+          "sources": [
+            "b28-hair",
+            "b28-ratplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He does not direct this secret movement mechanism by whispered words.",
+          "sources": [
+            "b28-hair",
+            "b28-ratplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Glove hand signals are not how Remy controls his movements.",
+          "sources": [
+            "b28-hair",
+            "b28-ratplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A hidden earpiece is not the mechanism.",
+          "sources": [
+            "b28-hair",
+            "b28-ratplot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Hair-yanking dialogue alone could describe annoyance, so corroborated the specific control mechanism with the plot account. The scene is physical steering, not translation of rat speech."
+      }
+    },
+    {
+      "questionId": 1584,
+      "hash": "d22fcd635ea3ec986b2f3fbcdcde2f9b5612a9471fedf664a35e11dd7dbaf43f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #540 earth giants and #783 Elemental protagonist Ember. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Bruni is the salamander and Disney identifies him as the fire spirit.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Bruni is the salamander and Disney identifies him as the fire spirit.",
+        "sources": [
+          "b28-frozencharacters",
+          "b28-brunifire"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Bruni is the named salamander.",
+          "sources": [
+            "b28-frozencharacters",
+            "b28-brunifire"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ember is not this Frozen spirit name.",
+          "sources": [
+            "b28-frozencharacters",
+            "b28-brunifire"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Flicker is not the salamander name.",
+          "sources": [
+            "b28-frozencharacters",
+            "b28-brunifire"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Spark is not the salamander name.",
+          "sources": [
+            "b28-frozencharacters",
+            "b28-brunifire"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Used two primary passages to join species and elemental role rather than assuming that any salamander is the fire spirit."
+      }
+    },
+    {
+      "questionId": 1585,
+      "hash": "068d3c5630f0c2c4bdd8a6fe324b051f2ff5d992d482b60f9f964154a95e3d63",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #1097 Ahtohallan and #758 Northuldra people identity. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Runeard built the dam to weaken Northuldra land.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Runeard built the dam to weaken Northuldra land.",
+        "sources": [
+          "b28-frozendialogue",
+          "b28-frozenplot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Runeard is explicitly responsible in the memory.",
+          "sources": [
+            "b28-frozendialogue",
+            "b28-frozenplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Duke is not the king in that historical memory.",
+          "sources": [
+            "b28-frozendialogue",
+            "b28-frozenplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hans is not the king in that historical memory.",
+          "sources": [
+            "b28-frozendialogue",
+            "b28-frozenplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pabbie is not the dam-building king.",
+          "sources": [
+            "b28-frozendialogue",
+            "b28-frozenplot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed long unequal answer and broad central-mystery wording. The flashback specifically identifies intent and actor; the later dam destruction is a separate action."
+      }
+    },
+    {
+      "questionId": 1586,
+      "hash": "48adf07bc72bdd7f2f920cafe2ff80a4549f30faef9ef434f3bb8e9e9b1ac840",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #1587 new monarch and #1600 Show Yourself song. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Elsa is explicitly identified as the fifth spirit.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Elsa is explicitly identified as the fifth spirit.",
+        "sources": [
+          "b28-frozendialogue",
+          "b28-frozenplot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Fifth is the number used in the reveal.",
+          "sources": [
+            "b28-frozendialogue",
+            "b28-frozenplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Third is not the number used for Elsa.",
+          "sources": [
+            "b28-frozendialogue",
+            "b28-frozenplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fourth is not the number used for Elsa.",
+          "sources": [
+            "b28-frozendialogue",
+            "b28-frozenplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sixth is not the number used for Elsa.",
+          "sources": [
+            "b28-frozendialogue",
+            "b28-frozenplot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Replaced Snow Queen because it can also describe Elsa. Asked for the numbered spirit and checked the explicit fifth-spirit reveal, without denying Anna role as the other side of the bridge."
+      }
+    },
+    {
+      "questionId": 1587,
+      "hash": "dd6f73be3624683dd92780d145ecc4a5815af07a6b4204e71e32bb0cd0cb42c8",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #14 sister relationship and #1586 spirit identity. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "At the ending, Anna is introduced as Queen of Arendelle.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "At the ending, Anna is introduced as Queen of Arendelle.",
+        "sources": [
+          "b28-frozendialogue",
+          "b28-frozenplot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Anna is the new queen.",
+          "sources": [
+            "b28-frozendialogue",
+            "b28-frozenplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kristoff becomes Anna fiance, not queen.",
+          "sources": [
+            "b28-frozendialogue",
+            "b28-frozenplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Iduna is their deceased mother, not the new queen.",
+          "sources": [
+            "b28-frozendialogue",
+            "b28-frozenplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Honeymaren remains a Northuldra character, not the crowned queen.",
+          "sources": [
+            "b28-frozendialogue",
+            "b28-frozenplot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the final succession and Elsa move rather than assuming the initial queen continues ruling; final introduction explicitly names Anna."
+      }
+    },
+    {
+      "questionId": 1588,
+      "hash": "6297f4b2a1c0ce868ca34ee436d647bacff04404fc2730591bd5873807f9dc4e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #1584 salamander and #1412 Elemental Gale air element; same name in different films is not the same character fact. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Gale is explicitly the wind spirit.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Gale is explicitly the wind spirit.",
+        "sources": [
+          "b28-frozencharacters"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Gale is the documented name.",
+          "sources": [
+            "b28-frozencharacters"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Zephyr is not the spirit name.",
+          "sources": [
+            "b28-frozencharacters"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Breeze is not the spirit name.",
+          "sources": [
+            "b28-frozencharacters"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Squall is not the spirit name.",
+          "sources": [
+            "b28-frozencharacters"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed specific hats-and-papers behavior so the primary character description fully establishes the remaining premise and name."
+      }
+    },
+    {
+      "questionId": 1589,
+      "hash": "0c2cf8728e5415b82a63847b4a041bf087ff7eb46b366f7408b2f70237559f8d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #202 Olaf identity and #1602 Anna song timing; the latter has a separately recorded next-batch concern. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "After Elsa freezes, Olaf physical form breaks into snowflakes.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "After Elsa freezes, Olaf physical form breaks into snowflakes.",
+        "sources": [
+          "b28-frozendialogue",
+          "b28-frozenplot",
+          "b28-olafvisual"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "His form disintegrates into snowflakes.",
+          "sources": [
+            "b28-frozendialogue",
+            "b28-frozenplot",
+            "b28-olafvisual"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He does not become a solid ice block; Elsa freezing is a different event.",
+          "sources": [
+            "b28-frozendialogue",
+            "b28-frozenplot",
+            "b28-olafvisual"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He does not simply become a small intact snowball.",
+          "sources": [
+            "b28-frozendialogue",
+            "b28-frozenplot",
+            "b28-olafvisual"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The described event is snowflake disintegration, not melting into liquid.",
+          "sources": [
+            "b28-frozendialogue",
+            "b28-frozenplot",
+            "b28-olafvisual"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Replaced losing speech, which could also follow disappearance, with mutually exclusive physical-form alternatives. Corroborated transcript fading language with a visual-scene account."
+      }
+    },
+    {
+      "questionId": 1590,
+      "hash": "2649b3822d8d4b73520c520f1c43fcf60d4673ee3211907df66a4249cd6bc61c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #850 goat name and #528 Magnifico identity. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Asha wish calls a celestial being named Star from the sky.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Asha wish calls a celestial being named Star from the sky.",
+        "sources": [
+          "b28-wish"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Star is the official character name.",
+          "sources": [
+            "b28-wish"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Spark is not the named celestial helper.",
+          "sources": [
+            "b28-wish"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wisp is not the named helper.",
+          "sources": [
+            "b28-wish"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Glimmer is not the named helper.",
+          "sources": [
+            "b28-wish"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The official trailer text explicitly names the being, not just an unnamed star-shaped object. Other luminous names are not aliases in the stated film."
+      }
+    },
+    {
+      "questionId": 1591,
+      "hash": "091be26171af95ab92034df9fd9a265ca2303f04f3c8ef654bffd4e2c58c2ff1",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #528 ruler identity and #1590 celestial helper identity. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Disney names the kingdom ruled by Magnifico Rosas.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney names the kingdom ruled by Magnifico Rosas.",
+        "sources": [
+          "b28-wish"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Rosas is the named kingdom.",
+          "sources": [
+            "b28-wish"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Auradon is not the kingdom named in Wish.",
+          "sources": [
+            "b28-wish"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Coronado is not the kingdom name.",
+          "sources": [
+            "b28-wish"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Valoria is not the kingdom name.",
+          "sources": [
+            "b28-wish"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the ruler and kingdom association in the same source passage; the names are not competing translations of Rosas."
+      }
+    },
+    {
+      "questionId": 1592,
+      "hash": "744d570adcd355e5e3d5d8ab78061f8103b5e910d1e569ea61eb58da8c8a77f5",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #863 Taran occupation and #1114 wandering minstrel. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Dallben is the wizard and Taran mentor in the 1985 film.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Dallben is the wizard and Taran mentor in the 1985 film.",
+        "sources": [
+          "b28-dallben"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Dallben is explicitly identified as mentor.",
+          "sources": [
+            "b28-dallben"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fflewddur is not the wizard mentor named Dallben.",
+          "sources": [
+            "b28-dallben"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gurgi is not the wizard mentor named Dallben.",
+          "sources": [
+            "b28-dallben"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Coll is not the film mentor named by Disney.",
+          "sources": [
+            "b28-dallben"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Specified Disney film and removed novel-derived farm/ownership details; Coll role in the source novels cannot create a second answer to the film-specific wizard question."
+      }
+    },
+    {
+      "questionId": 1593,
+      "hash": "941f515e9a8735c2dd33761933ff7a2b194d0d6ca80acec8552ff722f458d4e2",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #47 Horned King and #2476 source-book series. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "D23 supplies the complete trio of Morva witches.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "D23 supplies the complete trio of Morva witches.",
+        "sources": [
+          "b28-witches"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "These are all three listed Morva witches, in a different harmless order.",
+          "sources": [
+            "b28-witches"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Sleeping Beauty fairy trio is not the Morva witches.",
+          "sources": [
+            "b28-witches"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "These three Disney villains are not the named Morva trio.",
+          "sources": [
+            "b28-witches"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "These mythological names are not the film trio.",
+          "sources": [
+            "b28-witches"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed ancient, shape-shifting and sword-trade clauses; matched all three proper names to the exhaustive character entry rather than approving a group from one shared name."
+      }
+    },
+    {
+      "questionId": 1594,
+      "hash": "9b3260942342cf3dc463cf9d18509d36a8a91f0efd34490201de2ea823dc2de0",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #859 Little John bear, #510 Robin fox and #2484 narrator bird. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "D23 explicitly identifies Friar Tuck as a badger.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "D23 explicitly identifies Friar Tuck as a badger.",
+        "sources": [
+          "b28-friar"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Badger is his identified species.",
+          "sources": [
+            "b28-friar"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bear is not Friar Tuck species.",
+          "sources": [
+            "b28-friar"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mouse is not Friar Tuck species.",
+          "sources": [
+            "b28-friar"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Donkey is not Friar Tuck species.",
+          "sources": [
+            "b28-friar"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked Disney animated portrayal rather than the human character in other Robin Hood adaptations; Little John being a bear does not transfer to Friar Tuck."
+      }
+    },
+    {
+      "questionId": 1595,
+      "hash": "7a0b7315fb511f938a0f346b8ee39b37c08971d0c5685ed0aa147f022bd7e730",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different from #1327 adult Goob villain identity, #1130 Franny mother identity and #839 motto. Complete category/topic context and all four final options reviewed. Static theatrical-film/history fact; difficulty calibrated editorially.",
+      "context": "Lewis grown-up identity is Cornelius Robinson.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Lewis grown-up identity is Cornelius Robinson.",
+        "sources": [
+          "b28-cornelius",
+          "b28-robinsonsplot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Cornelius is the adult Lewis name.",
+          "sources": [
+            "b28-cornelius",
+            "b28-robinsonsplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bud is Lewis adoptive father, not his future self.",
+          "sources": [
+            "b28-cornelius",
+            "b28-robinsonsplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fritz is Bud brother, not Lewis future self.",
+          "sources": [
+            "b28-cornelius",
+            "b28-robinsonsplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Joe is another of Bud brothers, not Lewis future self.",
+          "sources": [
+            "b28-cornelius",
+            "b28-robinsonsplot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed Wilbur father as a competing option because it is also Cornelius. All final choices are parallel names of distinct relatives, verified by the family-tree dialogue and cast account."
+      }
+    }
+  ]
+}

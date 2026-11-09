@@ -1,0 +1,3269 @@
+{
+  "schema": 1,
+  "reviewer": "Codex",
+  "at": "2026-11-09",
+  "sourcesChecked": [
+    "b34-abc",
+    "b34-abc2",
+    "b34-albert",
+    "b34-area",
+    "b34-beast",
+    "b34-beasttech",
+    "b34-bier",
+    "b34-bug",
+    "b34-carousel",
+    "b34-cars",
+    "b34-castle",
+    "b34-castle2",
+    "b34-china",
+    "b34-dench",
+    "b34-denchdate",
+    "b34-dumbo",
+    "b34-earn2023",
+    "b34-epcotmap",
+    "b34-fantasy",
+    "b34-fantasyactual",
+    "b34-films",
+    "b34-fox",
+    "b34-hassan",
+    "b34-hk",
+    "b34-hkfrozen",
+    "b34-hondo",
+    "b34-ink",
+    "b34-jobs",
+    "b34-manorscene",
+    "b34-manortech",
+    "b34-miramax",
+    "b34-morocco",
+    "b34-muppets",
+    "b34-muppetsdone",
+    "b34-oaken",
+    "b34-olc",
+    "b34-one",
+    "b34-oneactual",
+    "b34-paris",
+    "b34-pariscastle",
+    "b34-pier",
+    "b34-plus",
+    "b34-racers",
+    "b34-racers2",
+    "b34-ratparis",
+    "b34-remy",
+    "b34-rise",
+    "b34-rose",
+    "b34-shcastle",
+    "b34-shzoo",
+    "b34-strike",
+    "b34-theater",
+    "b34-tiana",
+    "b34-toon",
+    "b34-touch",
+    "b34-tours",
+    "b34-toursfl",
+    "b34-tron",
+    "b34-women",
+    "b34-zoo"
+  ],
+  "reviews": [
+    {
+      "questionId": 2218,
+      "hash": "015fd6b7c38a8e1bd8d1d496e2b33531a62cbba4b6bd328b7d98a05390fbb877",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Song identity differs from #955's sponsor and #369's revolving-theater identification. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 1964 fair show debuted with the original Sherman anthem.",
+        "sources": [
+          "b34-carousel"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney names There's a Great Big Beautiful Tomorrow as the original anthem.",
+          "sources": [
+            "b34-carousel"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "It's a Small World belongs to a separate fair attraction, not the identified Carousel anthem.",
+          "sources": [
+            "b34-carousel"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Best Time of Your Life is the later Florida replacement, not the fair debut song.",
+          "sources": [
+            "b34-carousel"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "One Little Spark is not the original song named in this history.",
+          "sources": [
+            "b34-carousel"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The Best Time of Your Life really was a Carousel theme; the 1964 debut boundary excludes it. Removed the near-identical title distractor."
+      }
+    },
+    {
+      "questionId": 2219,
+      "hash": "44983635b5efadcad9c20e67cc5e0be2e23a4fcacf07c0a408f3005664e80987",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Drop dimension differs from #773's attraction replacement identity. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "Disney advertises the final drop as approximately 50 feet.",
+        "sources": [
+          "b34-tiana",
+          "b34-fantasyactual"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The primary riding guide explicitly gives 50 feet.",
+          "sources": [
+            "b34-tiana",
+            "b34-fantasyactual"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "35 feet is not the advertised drop figure.",
+          "sources": [
+            "b34-tiana",
+            "b34-fantasyactual"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "70 feet exceeds the advertised drop figure.",
+          "sources": [
+            "b34-tiana",
+            "b34-fantasyactual"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "20 feet is below the advertised drop figure.",
+          "sources": [
+            "b34-tiana",
+            "b34-fantasyactual"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The final question asks Disney's rounded advertised figure, avoiding the former unsupported precision of 52.5 feet. Both inspected Disney accounts agree."
+      }
+    },
+    {
+      "questionId": 2220,
+      "hash": "1061390736af911b21dcf8fb66c964385f44379cd15b2d88a10d1f3b572b63ec",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "#2637 asks a different attraction's technology; #1468 asks the Remy ride name, not its mechanism. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "The Remy vehicles use a trackless system.",
+        "sources": [
+          "b34-remy"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The designer account explicitly calls the vehicles trackless.",
+          "sources": [
+            "b34-remy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Monorail uses a rail rather than this identified trackless system.",
+          "sources": [
+            "b34-remy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A suspended coaster is not the identified vehicle technology.",
+          "sources": [
+            "b34-remy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Omnimover is not the trackless Remy system identified here.",
+          "sources": [
+            "b34-remy"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Trackless technology is the requested system class, not vehicle theme. Removed a definition that supplied the answer; other rides sharing the class do not change this ride's technology."
+      }
+    },
+    {
+      "questionId": 2221,
+      "hash": "2f27b8573660d5d98a0bd3bb85abdfeae66578a68314fc8ff11a9ea82999f20c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Narrator credit differs from #2084's Ray Bradbury writing contribution. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 2008 refurbishment's English narrator was Judi Dench.",
+        "sources": [
+          "b34-dench",
+          "b34-denchdate"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney Files explicitly credits Judi Dench for English.",
+          "sources": [
+            "b34-dench",
+            "b34-denchdate"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Maggie Smith is not the credited English narrator.",
+          "sources": [
+            "b34-dench",
+            "b34-denchdate"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Emma Thompson is not the credited English narrator.",
+          "sources": [
+            "b34-dench",
+            "b34-denchdate"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Helen Mirren is not the credited English narrator.",
+          "sources": [
+            "b34-dench",
+            "b34-denchdate"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Specified English to exclude other language tracks. Late-2007 previews make the original date defensible; the revised official-2008 opening is a clarification, not a factual correction."
+      }
+    },
+    {
+      "questionId": 2222,
+      "hash": "1a4c7fb7f72f59a08842efd04fa922398deb843318f949f85dad018550b9172a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct UK restaurant name; #333 concerns a Canadian film, not this venue. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-01-08",
+      "premise": {
+        "reason": "Rose & Crown is the named UK pavilion pub.",
+        "sources": [
+          "b34-rose",
+          "b34-epcotmap"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Official title and EPCOT directory identify Rose & Crown.",
+          "sources": [
+            "b34-rose",
+            "b34-epcotmap"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Crown & Anchor is not the UK venue listed in the directory.",
+          "sources": [
+            "b34-rose",
+            "b34-epcotmap"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "King's Arms is not the UK venue listed in the directory.",
+          "sources": [
+            "b34-rose",
+            "b34-epcotmap"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Red Lion is not the UK venue listed in the directory.",
+          "sources": [
+            "b34-rose",
+            "b34-epcotmap"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "British pub names elsewhere cannot answer the EPCOT-specific question. The exact venue identification excludes all three alternatives; maintenance does not rename the pub."
+      }
+    },
+    {
+      "questionId": 2223,
+      "hash": "ddf7b4b08f8e76599f7885427ffff6788c437c429e057f99b88764d6be30aa09",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from UK pub and other pavilion architecture questions. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "Biergarten is the German pavilion restaurant with Bavarian setting and Polka music.",
+        "sources": [
+          "b34-bier",
+          "b34-epcotmap"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The official Biergarten page describes the setting and oompah band.",
+          "sources": [
+            "b34-bier",
+            "b34-epcotmap"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sommerhaus is not the named venue; the directory's separate quick-service name is Sommerfest.",
+          "sources": [
+            "b34-bier",
+            "b34-epcotmap"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rathskeller is not the identified EPCOT restaurant.",
+          "sources": [
+            "b34-bier",
+            "b34-epcotmap"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Oktoberfest Hall describes a plausible setting but is not its venue name.",
+          "sources": [
+            "b34-bier",
+            "b34-epcotmap"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Oktoberfest is a celebration/theme, not an alternate official title in this directory. The named restaurant makes the answer exclusive."
+      }
+    },
+    {
+      "questionId": 2224,
+      "hash": "21b9b78c8eeb4013de18a60a007294e81e71d827fd4cad210408a441264523aa",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different pavilion and film from #333's Canada Far and Wide. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "The current China pavilion Circle-Vision film is Reflections of China.",
+        "sources": [
+          "b34-china"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Official attraction title is Reflections of China.",
+          "sources": [
+            "b34-china"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wonders of China is not the current title on the inspected page.",
+          "sources": [
+            "b34-china"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Journey Through China is not the film title identified there.",
+          "sources": [
+            "b34-china"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Voices of China is not the film title identified there.",
+          "sources": [
+            "b34-china"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "An earlier film can be a plausible distractor, but the question asks the film currently shown, not the pavilion's opening-era film. Future recheck scheduled."
+      }
+    },
+    {
+      "questionId": 2225,
+      "hash": "93c62121a1b1deed8e55da1f2bdbf705bce8bb594c026bd0d9e465763f18ca1b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Artisan patron differs from pavilion opening year and #902-904's landmarks. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Hassan II is the monarch identified as sending the artisans.",
+        "sources": [
+          "b34-hassan",
+          "b34-morocco"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The interview-based account explicitly identifies Hassan II.",
+          "sources": [
+            "b34-hassan",
+            "b34-morocco"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mohammed V is not the king credited in this construction account.",
+          "sources": [
+            "b34-hassan",
+            "b34-morocco"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mohammed VI is discussed separately from Hassan II's construction role.",
+          "sources": [
+            "b34-hassan",
+            "b34-morocco"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Idris I is not the credited Moroccan patron.",
+          "sources": [
+            "b34-hassan",
+            "b34-morocco"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Personal attribution rests on the reported pavilion interviews; the official D23 account independently confirms the country's artisans. It does not identify a different king; no inference from government sponsorship alone was used."
+      }
+    },
+    {
+      "questionId": 2226,
+      "hash": "f8326b31e80c9722f864e635af36739ffd11f758041291b0554b9507dba2578c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Dimension differs from #88 identity and #1170 suite location. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "Disney gives Cinderella Castle's height as 189 feet.",
+        "sources": [
+          "b34-castle",
+          "b34-castle2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Two Disney historical accounts give 189 feet.",
+          "sources": [
+            "b34-castle",
+            "b34-castle2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "200 feet is not Disney's published castle height.",
+          "sources": [
+            "b34-castle",
+            "b34-castle2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "150 feet is not Disney's published castle height.",
+          "sources": [
+            "b34-castle",
+            "b34-castle2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "250 feet is not Disney's published castle height.",
+          "sources": [
+            "b34-castle",
+            "b34-castle2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The original threshold answer 190 and asserted construction motive were unsupported. Final wording asks only the directly published height, with Magic Kingdom distinguished from Tokyo."
+      }
+    },
+    {
+      "questionId": 2227,
+      "hash": "b8ea368bdb250113596172c012903ca64f7897035f4ddddb9cd779b8f35667c9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Employer identity differs from #778's ride identity and #2228's crew station. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "Hondo Ohnaka recruits the Falcon crews at both US resorts.",
+        "sources": [
+          "b34-hondo"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "StarWars.com explicitly names Hondo as the recruiter.",
+          "sources": [
+            "b34-hondo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Greedo is not the named recruiter in the mission description.",
+          "sources": [
+            "b34-hondo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lando is associated with the Falcon but is not this mission's recruiter.",
+          "sources": [
+            "b34-hondo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Watto is not the named recruiter in the mission description.",
+          "sources": [
+            "b34-hondo"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Association with the Falcon cannot make Lando correct: the target is the attraction's transport operation/recruitment role. The current mission description still identifies Hondo."
+      }
+    },
+    {
+      "questionId": 2228,
+      "hash": "96810039ddcb7c26131f2700337a036370775182ebf408c853957379b35ff43a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Crew job list differs from recruiter and attraction identification. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "Pilot, gunner and engineer are the three assigned station names.",
+        "sources": [
+          "b34-jobs"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Engineer completes Disney's explicit three-role list.",
+          "sources": [
+            "b34-jobs"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Navigator is not an assigned station name, even if engineers now choose a destination.",
+          "sources": [
+            "b34-jobs"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Medic is absent from the exhaustive three-station list.",
+          "sources": [
+            "b34-jobs"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Quartermaster is absent from the exhaustive three-station list.",
+          "sources": [
+            "b34-jobs"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "An engineer's navigation task does not rename the assigned station Navigator. The explicit job list, rather than a list of possible duties, establishes exclusivity."
+      }
+    },
+    {
+      "questionId": 2229,
+      "hash": "542bf172c9bbbbacc8811a93187638ef0a3878944682e1dc89f397125ce2f6d3",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "#2251 is a different Tokyo attraction that coincidentally opened in 2020. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The California attraction opened January 17, 2020.",
+        "sources": [
+          "b34-rise"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The historical article explicitly gives the 2020 opening.",
+          "sources": [
+            "b34-rise"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2019 is the land's opening year, not this California ride opening.",
+          "sources": [
+            "b34-rise"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2021 is later than the documented ride debut.",
+          "sources": [
+            "b34-rise"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2018 is earlier than the documented ride debut.",
+          "sources": [
+            "b34-rise"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Disneyland Park in California is explicit; the Florida ride's earlier opening and the land's 2019 opening do not answer this question."
+      }
+    },
+    {
+      "questionId": 2230,
+      "hash": "bdb783baaba87c3073a98b2d082bb863ede78326f4807b19d528146e1761744e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Update title differs from the original attraction, Smugglers Run and Rise opening facts. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 2011 update was Star Tours: The Adventures Continue.",
+        "sources": [
+          "b34-tours",
+          "b34-toursfl"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Both the anniversary history and Florida cast credit give this title.",
+          "sources": [
+            "b34-tours",
+            "b34-toursfl"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Star Tours II: Galactic Voyage is not the identified 2011 title.",
+          "sources": [
+            "b34-tours",
+            "b34-toursfl"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Secrets of the Empire is not the 2011 Star Tours update identified by these sources.",
+          "sources": [
+            "b34-tours",
+            "b34-toursfl"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rebel Mission is not the identified 2011 title.",
+          "sources": [
+            "b34-tours",
+            "b34-toursfl"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A later expansion in available combinations does not change the named 2011 version. The title is not inferred just from generic Star Wars branding."
+      }
+    },
+    {
+      "questionId": 2231,
+      "hash": "eb9074df6239da1657439aa85ae498ea94e1973696bb7b6e5707f4929f48ee8e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "#2232 asks when the predecessor closed, not what replaced it; #1623 concerns Shanghai's ride. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Better Zoogether is the November 2025 Tree of Life Theater show.",
+        "sources": [
+          "b34-zoo",
+          "b34-bug"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The official dated opening announcement identifies Better Zoogether.",
+          "sources": [
+            "b34-zoo",
+            "b34-bug"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "UP! A Great Bird Adventure is not the named Tree of Life replacement.",
+          "sources": [
+            "b34-zoo",
+            "b34-bug"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rivers of Light is not the named Tree of Life replacement.",
+          "sources": [
+            "b34-zoo",
+            "b34-bug"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Festival of the Lion King is not the named Tree of Life replacement.",
+          "sources": [
+            "b34-zoo",
+            "b34-bug"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The answer must match both venue and dated replacement event, not merely be another Animal Kingdom show. The closure report corroborates the replaced show."
+      }
+    },
+    {
+      "questionId": 2232,
+      "hash": "ffaecdc4cc22f7c77b399cf37abe202e7fdb785ff3c57ea177aaadc9e3e3c3b0",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Closure year adds a fact beyond #545's original show identity and #2231's replacement title. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The original bug show closed in 2025.",
+        "sources": [
+          "b34-bug",
+          "b34-zoo"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The contemporary March 2025 report records its final performance.",
+          "sources": [
+            "b34-bug",
+            "b34-zoo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2020 is not the permanent closure recorded by this report.",
+          "sources": [
+            "b34-bug",
+            "b34-zoo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2023 is not the permanent closure recorded by this report.",
+          "sources": [
+            "b34-bug",
+            "b34-zoo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2018 is not the permanent closure recorded by this report.",
+          "sources": [
+            "b34-bug",
+            "b34-zoo"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Pandemic interruption is not the permanent closure. The 2025 final-performance report and 2025 replacement announcement support the historical event."
+      }
+    },
+    {
+      "questionId": 2233,
+      "hash": "83d265aaf9a6a6bca4e886817821cf5f716fddf484d55cb1de90aa607208f8f3",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different park/building fact from #1173's Florida Chinese Theatre. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "Disneyland's Railway is housed inside El CapiTOON Theater.",
+        "sources": [
+          "b34-theater"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney explicitly names El CapiTOON Theater as the building.",
+          "sources": [
+            "b34-theater"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Main Street Cinema is not the building named for this attraction.",
+          "sources": [
+            "b34-theater"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Carnation Theater is not the building named for this attraction.",
+          "sources": [
+            "b34-theater"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fantasyland Theatre is not the building named for this attraction.",
+          "sources": [
+            "b34-theater"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The question says Disneyland; Hollywood Studios' Chinese Theatre and the real El Capitan do not satisfy the named cartoon theater context."
+      }
+    },
+    {
+      "questionId": 2234,
+      "hash": "c06eccdbbed370cb90e8076e23515cd3a6f84801127ccb44b4a4f7b02987b76b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Name differs from #1168's land-opening year and the new park/play-space fact. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 2023 junior coaster name is Chip 'n' Dale's GADGETcoaster.",
+        "sources": [
+          "b34-toon",
+          "b34-theater"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Both Toontown accounts identify the GADGETcoaster name.",
+          "sources": [
+            "b34-toon",
+            "b34-theater"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Roger Rabbit's Wild Ride is not the junior coaster's updated name.",
+          "sources": [
+            "b34-toon",
+            "b34-theater"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Goofy's Whirlwind is not the junior coaster's updated name.",
+          "sources": [
+            "b34-toon",
+            "b34-theater"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Minnie's Mad Mixer is not the junior coaster's updated name.",
+          "sources": [
+            "b34-toon",
+            "b34-theater"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The rewritten stem removes Gadget's old name as an answer clue. Roger Rabbit's Car Toon Spin is a separate attraction, not an alternate name for this coaster."
+      }
+    },
+    {
+      "questionId": 2235,
+      "hash": "3fc3233f1f3541ad1c34985723d1c19f2fe6e2e77b95400c406d27a9fc37d635",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "New play-space identity differs from land reopening date and coaster name. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The new interactive natural play space is CenTOONial Park.",
+        "sources": [
+          "b34-toon"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney names CenTOONial Park and describes its fountain and dreaming tree.",
+          "sources": [
+            "b34-toon"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Toon Meadow is not the named new play space.",
+          "sources": [
+            "b34-toon"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "ImaginationLand is not the named new play space.",
+          "sources": [
+            "b34-toon"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mickey's Backyard is not the named new play space.",
+          "sources": [
+            "b34-toon"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other play areas also opened, but none of the alternative names appears as the specified fountain/tree park. The question asks its unique name, not whether other play spaces exist."
+      }
+    },
+    {
+      "questionId": 2236,
+      "hash": "32052f22eb5880410232be36352ea0df5dc1eb67bda8fb9fe64e7ee377e054a8",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reopening date differs from #1168's original 1993 land opening and the 2023 attractions' names. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The reimagined land actually reopened March 19, 2023.",
+        "sources": [
+          "b34-toon",
+          "b34-earn2023"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Opening-day article and earnings retrospective agree on March 19.",
+          "sources": [
+            "b34-toon",
+            "b34-earn2023"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "January 27 is the Railway opening, not the full land reopening.",
+          "sources": [
+            "b34-toon",
+            "b34-earn2023"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "May 20 is not the documented reopening date.",
+          "sources": [
+            "b34-toon",
+            "b34-earn2023"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "November 18 is not the documented reopening date.",
+          "sources": [
+            "b34-toon",
+            "b34-earn2023"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Used the actual opening report rather than the superseded March 8 announcement; the attraction and entire land had different opening dates."
+      }
+    },
+    {
+      "questionId": 2237,
+      "hash": "7bc8c884e978e815683d9f9609d124b0a95847ab7f1cbd364ea55d12c9c16136",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Unrelated to #2636's song count and #412's ship count despite the shared number Six. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "A Racers vehicle has six passenger seats.",
+        "sources": [
+          "b34-racers",
+          "b34-racers2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Both accounts give six seats; the load-station description specifies two rows of three.",
+          "sources": [
+            "b34-racers",
+            "b34-racers2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Four is not the total seat capacity described.",
+          "sources": [
+            "b34-racers",
+            "b34-racers2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Eight exceeds the described six-seat layout.",
+          "sources": [
+            "b34-racers",
+            "b34-racers2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Two is the number of rows, not passenger seats.",
+          "sources": [
+            "b34-racers",
+            "b34-racers2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Seat count fixes the original assumption of a full dispatch. Two rows do not mean two passengers; the explicit three seats per row excludes the remaining numeric alternatives."
+      }
+    },
+    {
+      "questionId": 2238,
+      "hash": "29944d0fa319bcbe983143f5b42b1ab1b26e32cdb6a471412a13eca400731fb5",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Version identity adds a fact beyond #907's original World of Color debut. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 2023 version was World of Color – ONE.",
+        "sources": [
+          "b34-one",
+          "b34-oneactual"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The 2023 Disney100 announcement names World of Color – ONE.",
+          "sources": [
+            "b34-one",
+            "b34-oneactual"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Celebrate! is not the title identified for the 2023 premiere.",
+          "sources": [
+            "b34-one",
+            "b34-oneactual"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dreams is not the title identified for the 2023 premiere.",
+          "sources": [
+            "b34-one",
+            "b34-oneactual"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Luminous is not the title identified for the 2023 premiere.",
+          "sources": [
+            "b34-one",
+            "b34-oneactual"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The question is bounded to the 2023 premiere; later versions or other parks' nighttime titles cannot change that historical credit."
+      }
+    },
+    {
+      "questionId": 2239,
+      "hash": "d98dfe3e55d3ca936f85fad80b16c95c7cfd73b0d326867b62a1d4734c960b1d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distinct from #1159's California Screamin retheme: land history versus coaster name. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar Pier replaced part of Paradise Pier.",
+        "sources": [
+          "b34-pier"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "D23 directly identifies the former section as Paradise Pier.",
+          "sources": [
+            "b34-pier"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Golden State is not the former land identified in the entry.",
+          "sources": [
+            "b34-pier"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sunshine Plaza is not the former land identified in the entry.",
+          "sources": [
+            "b34-pier"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hollywood Land is not the former land identified in the entry.",
+          "sources": [
+            "b34-pier"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The word section avoids claiming that all of Paradise Pier became Pixar Pier. Pier in the proper name is contextual; it does not supply the distinctive former name Paradise."
+      }
+    },
+    {
+      "questionId": 2240,
+      "hash": "da575a29cba794f3810088ecaa5906dbce4a5cc285354da45679176200b1e65a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different place/event from #2254; #623 asks the land's name, not the date. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Cars Land opened June 15, 2012.",
+        "sources": [
+          "b34-cars"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The anniversary article explicitly gives 2012.",
+          "sources": [
+            "b34-cars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2010 is earlier than the documented opening.",
+          "sources": [
+            "b34-cars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2015 is later than the documented opening.",
+          "sources": [
+            "b34-cars"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2001 is the park's opening year, not Cars Land's.",
+          "sources": [
+            "b34-cars"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Park and land opening years differ. Grizzly Gulch opening in the same year does not establish Cars Land's opening."
+      }
+    },
+    {
+      "questionId": 2241,
+      "hash": "1134262bc4d9e009060a53c3bf828c2eb84ec79f762eb504d1b572f1ce25c6e6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Opening year differs from area and attraction names in #2242-2245. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Fantasy Springs opened June 6, 2024.",
+        "sources": [
+          "b34-fantasy",
+          "b34-fantasyactual"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The retrospective confirms 2024, matching the advance announcement.",
+          "sources": [
+            "b34-fantasy",
+            "b34-fantasyactual"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2022 is earlier than the actual opening.",
+          "sources": [
+            "b34-fantasy",
+            "b34-fantasyactual"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2019 is earlier than the actual opening.",
+          "sources": [
+            "b34-fantasy",
+            "b34-fantasyactual"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2026 is later than the actual opening.",
+          "sources": [
+            "b34-fantasy",
+            "b34-fantasyactual"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A completed-opening retrospective, not solely an announced schedule, establishes the year. Future changes cannot alter this dated debut."
+      }
+    },
+    {
+      "questionId": 2242,
+      "hash": "9e5ad4f93eb23a1fe3516e7bc3c6c83f3335122525a01c5114f57b1288f18ece",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "The complete film set differs from the port's opening date and named ride titles. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "The third film is Peter Pan.",
+        "sources": [
+          "b34-fantasy",
+          "b34-fantasyactual"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The complete three-area list includes Peter Pan's Never Land.",
+          "sources": [
+            "b34-fantasy",
+            "b34-fantasyactual"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Cinderella is absent from the exhaustive three-area film list.",
+          "sources": [
+            "b34-fantasy",
+            "b34-fantasyactual"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Beauty and the Beast is absent from the exhaustive three-area film list.",
+          "sources": [
+            "b34-fantasy",
+            "b34-fantasyactual"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Aladdin is absent from the exhaustive three-area film list.",
+          "sources": [
+            "b34-fantasy",
+            "b34-fantasyactual"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Arabian Coast is adjacent to Fantasy Springs, not one of its three themed areas. A nearby Aladdin setting cannot make that distractor correct."
+      }
+    },
+    {
+      "questionId": 2243,
+      "hash": "31fa2c73e98f4cc54210d5767ef8b614d6215e14805d76b009f80b8305ac0e70",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Area title differs from #43's fictional kingdom Arendelle and #2245's ride name. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "The Frozen area is called Frozen Kingdom.",
+        "sources": [
+          "b34-fantasy"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney uses Frozen Kingdom as the area heading and description.",
+          "sources": [
+            "b34-fantasy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Arendelle Bay is not the named themed area.",
+          "sources": [
+            "b34-fantasy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "North Mountain Cove is not the named themed area.",
+          "sources": [
+            "b34-fantasy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Elsa's Realm is not the named themed area.",
+          "sources": [
+            "b34-fantasy"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Arendelle is the fictional setting, not this area's official title. Frozen identifies the franchise but does not itself establish the missing word Kingdom."
+      }
+    },
+    {
+      "questionId": 2244,
+      "hash": "3ce8340a08701f44e583133d0fd71f1a634c106ecfc4cc6d5d7cde78b8a8dd33",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different film and ride from #2245; film song/lantern questions do not establish the attraction title. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "The Tangled gondola ride is Rapunzel's Lantern Festival.",
+        "sources": [
+          "b34-fantasy"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Rapunzel section names this ride and describes the gondola trip.",
+          "sources": [
+            "b34-fantasy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rapunzel's Tower Voyage is not the identified attraction title.",
+          "sources": [
+            "b34-fantasy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pascal's River Run is not the identified attraction title.",
+          "sources": [
+            "b34-fantasy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Flynn's Lantern Chase is not the identified attraction title.",
+          "sources": [
+            "b34-fantasy"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All options are plausible character-based ride titles. The source identifies the lantern-festival gondola rather than a tower, river-run or chase title."
+      }
+    },
+    {
+      "questionId": 2245,
+      "hash": "9fe389a3d1113ed823d8e416e1e3495ab9d54ad7c2881fbda7b5a644efa6d9dd",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different ride credit from #2244 and #1486's EPCOT replacement. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "The Tokyo Frozen boat ride is Anna and Elsa's Frozen Journey.",
+        "sources": [
+          "b34-fantasy",
+          "b34-hkfrozen"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Tokyo account explicitly gives this title.",
+          "sources": [
+            "b34-fantasy",
+            "b34-hkfrozen"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Frozen Ever After is a different attraction identified in the Hong Kong source, not the Tokyo ride's title.",
+          "sources": [
+            "b34-fantasy",
+            "b34-hkfrozen"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Elsa's Ice Palace Voyage is not the Tokyo attraction title.",
+          "sources": [
+            "b34-fantasy",
+            "b34-hkfrozen"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Arendelle River Adventure is not the Tokyo attraction title.",
+          "sources": [
+            "b34-fantasy",
+            "b34-hkfrozen"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Frozen Ever After really is a Disney Frozen boat ride, but the specified Tokyo Fantasy Springs location excludes it. Separate Tokyo and Hong Kong sources prevent a franchise-level inference."
+      }
+    },
+    {
+      "questionId": 2246,
+      "hash": "0b4fcda31a9e5ea8496337f30141e4ddd2b5cd3dd8db5c8ee2d81edef4b0698c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Land expansion date differs from #2102's 2005 resort opening. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Hong Kong's World of Frozen opened in November 2023.",
+        "sources": [
+          "b34-hkfrozen"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The dated release gives November 20, 2023.",
+          "sources": [
+            "b34-hkfrozen"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "December 2023 is not its stated opening month.",
+          "sources": [
+            "b34-hkfrozen"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "June 2024 corresponds to a different expansion's period, not this opening.",
+          "sources": [
+            "b34-hkfrozen"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "March 2023 is not its stated opening month.",
+          "sources": [
+            "b34-hkfrozen"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "November 16 dedication and November 20 public opening are in the same month; neither makes December correct. Removed unnecessary largest/first marketing superlatives."
+      }
+    },
+    {
+      "questionId": 2247,
+      "hash": "47c530e6bad71fcc1022539d406507c77671f5b0fede9d9ac61d0f53a69dc34a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Attraction identity differs from #2532's sub-area and #2533's designer credit. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "Wandering Oaken's Sliding Sleighs is the coaster in the land.",
+        "sources": [
+          "b34-hkfrozen",
+          "b34-oaken"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The official land guide names Oaken's attraction as the rollicking sleigh ride.",
+          "sources": [
+            "b34-hkfrozen",
+            "b34-oaken"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Frozen Ever After is the separate boat adventure in the same guide.",
+          "sources": [
+            "b34-hkfrozen",
+            "b34-oaken"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Elsa's Ice Coaster is not a named attraction in the land guide.",
+          "sources": [
+            "b34-hkfrozen",
+            "b34-oaken"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Arendelle Express is not a named attraction in the land guide.",
+          "sources": [
+            "b34-hkfrozen",
+            "b34-oaken"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Frozen Ever After's presence in the same land is insufficient: it is the separate boat attraction, not the sleigh coaster. The named-attraction distinction excludes the strongest distractor."
+      }
+    },
+    {
+      "questionId": 2248,
+      "hash": "844636fd4a9f9005f99ea054576c639bda9710b10ad1c83ab1adc5b19c419c75",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Paris opening year differs from #1167's California land name. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Paris Avengers Campus opened July 20, 2022.",
+        "sources": [
+          "b34-paris"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney's 2022 earnings call reports the July 20 opening.",
+          "sources": [
+            "b34-paris"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2019 is earlier than the reported opening.",
+          "sources": [
+            "b34-paris"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2021 is not the Paris opening year.",
+          "sources": [
+            "b34-paris"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2023 is later than the reported opening.",
+          "sources": [
+            "b34-paris"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The historical Walt Disney Studios Park location is appropriate to 2022; California's Avengers Campus opening does not answer the Paris question."
+      }
+    },
+    {
+      "questionId": 2249,
+      "hash": "86359ae1ed506a2a976d57497e3853cc766c40804ae711ef4408ba2c097c4349",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "A park's own opening year (#111) or geographic name (#105) does not establish that it housed the original TRON coaster. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The original Shanghai TRON coaster preceded the Magic Kingdom counterpart.",
+        "sources": [
+          "b34-tron",
+          "b34-earn2023"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The primary history places Power Run at Shanghai's 2016 opening.",
+          "sources": [
+            "b34-tron",
+            "b34-earn2023"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Disneyland Paris is not the original Power Run location identified.",
+          "sources": [
+            "b34-tron",
+            "b34-earn2023"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hong Kong Disneyland is not the original Power Run location identified.",
+          "sources": [
+            "b34-tron",
+            "b34-earn2023"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tokyo DisneySea is not the original Power Run location identified.",
+          "sources": [
+            "b34-tron",
+            "b34-earn2023"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The revised question distinguishes Power Run from Lightcycle / Run and does not imply a physical ride was moved. The 2023 earnings account confirms the counterpart date."
+      }
+    },
+    {
+      "questionId": 2250,
+      "hash": "33c8b3c007457370ce9b0e42fc978de60b38757a13a00e987c83a02bfc902134",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Ownership model differs from Tokyo park opening dates and port names. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "The two licensed OLC parks are Tokyo Disneyland and Tokyo DisneySea.",
+        "sources": [
+          "b34-olc",
+          "b34-earn2023"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "OLC lists both; Disney's investor footnote confirms ownership/operation.",
+          "sources": [
+            "b34-olc",
+            "b34-earn2023"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Neither Chinese park appears in the OLC two-park list.",
+          "sources": [
+            "b34-olc",
+            "b34-earn2023"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "The French pair is not the Tokyo Disney Resort two-park set.",
+          "sources": [
+            "b34-olc",
+            "b34-earn2023"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Only Tokyo DisneySea belongs; Shanghai makes this pair incorrect.",
+          "sources": [
+            "b34-olc",
+            "b34-earn2023"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The shared Disney brand does not mean Disney owns Tokyo. The mixed Shanghai/Tokyo option contains one correct park but fails the requested two-park set."
+      }
+    },
+    {
+      "questionId": 2251,
+      "hash": "64e5d2bda1055bcf930071fe853eaec5921093c296da1c025a38acb0eec36059",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Tokyo Beauty and Beast date differs from #2229's California Star Wars date. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Enchanted Tale opened with the September 2020 expansion.",
+        "sources": [
+          "b34-beast",
+          "b34-beasttech"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The dated operator release identifies September 28, 2020.",
+          "sources": [
+            "b34-beast",
+            "b34-beasttech"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2018 is earlier than the operator's opening date.",
+          "sources": [
+            "b34-beast",
+            "b34-beasttech"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2016 is earlier than the operator's opening date.",
+          "sources": [
+            "b34-beast",
+            "b34-beasttech"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2022 is later than the operator's opening date.",
+          "sources": [
+            "b34-beast",
+            "b34-beasttech"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The expansion and its specifically named attraction are linked in the operator release. A ride elsewhere with the same opening year does not establish this opening."
+      }
+    },
+    {
+      "questionId": 2252,
+      "hash": "8d2e1f48392f2d368b303821d6bf56d94fe359ecbdf5fe5784036a51e001b308",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Monkey identity differs from the attraction opening year and other Manor locations. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "The monkey in Mystic Manor is Albert.",
+        "sources": [
+          "b34-albert",
+          "b34-manorscene"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Disney account explicitly identifies Albert as the monkey.",
+          "sources": [
+            "b34-albert",
+            "b34-manorscene"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Winston is not the monkey's name in the account.",
+          "sources": [
+            "b34-albert",
+            "b34-manorscene"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jasper is not the monkey's name in the account.",
+          "sources": [
+            "b34-albert",
+            "b34-manorscene"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rudy is not the monkey's name in the account.",
+          "sources": [
+            "b34-albert",
+            "b34-manorscene"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Lord Henry Mystic is Albert's companion, not another name for the monkey. The three alternatives are excluded by the uniquely identified character."
+      }
+    },
+    {
+      "questionId": 2253,
+      "hash": "208e743b1f42eaf982ee213fecacc06193b2aedf1273da0a5c8491e71ca525a5",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Opening event differs from #2252's monkey identity. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Mystic Manor opened in May 2013.",
+        "sources": [
+          "b34-hk",
+          "b34-albert",
+          "b34-manortech"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The milestone entry and Disney retrospective agree on 2013.",
+          "sources": [
+            "b34-hk",
+            "b34-albert",
+            "b34-manortech"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2011 is Toy Story Land's milestone, not Mystic Manor's.",
+          "sources": [
+            "b34-hk",
+            "b34-albert",
+            "b34-manortech"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2015 is later than Mystic Manor's documented opening.",
+          "sources": [
+            "b34-hk",
+            "b34-albert",
+            "b34-manortech"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2009 is earlier than Mystic Manor's documented opening.",
+          "sources": [
+            "b34-hk",
+            "b34-albert",
+            "b34-manortech"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Mystic Point's official opening entry explicitly names the Manor ride system; the retrospective independently states the attraction debuted in 2013."
+      }
+    },
+    {
+      "questionId": 2254,
+      "hash": "4f371be5884f619de3868a460809d7567727232eb5774bbe7d95b90fc824523c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Separate land opening from #2240; shared 2012 answer is coincidental. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Grizzly Gulch opened July 14, 2012.",
+        "sources": [
+          "b34-hk"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The official milestone identifies 2012 and the named coaster.",
+          "sources": [
+            "b34-hk"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2010 is earlier than the official opening.",
+          "sources": [
+            "b34-hk"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2014 is later than the official opening.",
+          "sources": [
+            "b34-hk"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2016 is later than the official opening.",
+          "sources": [
+            "b34-hk"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The milestone is for Grizzly Gulch itself and explicitly links the coaster; later additions or anniversaries do not change this opening year."
+      }
+    },
+    {
+      "questionId": 2255,
+      "hash": "49f25e0de0323a968257c31922f1018553e71facad8a209462e461404c34524f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "#58 asks a villain's film and #950 asks film technology; neither establishes the Paris castle dedication. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "The Paris landmark is Sleeping Beauty Castle.",
+        "sources": [
+          "b34-pariscastle",
+          "b34-castle2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Official English title identifies Sleeping Beauty.",
+          "sources": [
+            "b34-pariscastle",
+            "b34-castle2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cinderella is not the Paris castle's named princess.",
+          "sources": [
+            "b34-pariscastle",
+            "b34-castle2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Snow White is not the Paris castle's named princess.",
+          "sources": [
+            "b34-pariscastle",
+            "b34-castle2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rapunzel is not the Paris castle's named princess.",
+          "sources": [
+            "b34-pariscastle",
+            "b34-castle2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The exact park is Disneyland Park in Paris, not Magic Kingdom or California. Replaced an unbalanced French-title quiz with parallel princess names while retaining castle dedication identity."
+      }
+    },
+    {
+      "questionId": 2256,
+      "hash": "5bad2b2a992e484a165d18f1acebf6949d16f243354bec296cb4bf9e41deca00",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "#1153 asks the 2002 park name; knowing the name alone does not place this 2014 attraction there. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 2014 Paris ride opened in Walt Disney Studios Park.",
+        "sources": [
+          "b34-ratparis"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "D23 names Walt Disney Studios Park as the 2014 location.",
+          "sources": [
+            "b34-ratparis"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Disneyland Park is the other Paris park, not this ride's location.",
+          "sources": [
+            "b34-ratparis"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tokyo DisneySea is not the named Paris opening location.",
+          "sources": [
+            "b34-ratparis"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hong Kong Disneyland is not the named Paris opening location.",
+          "sources": [
+            "b34-ratparis"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The historic park name avoids drift from the 2026 renaming. The original answer gave a resort rather than a park; now all options name individual parks."
+      }
+    },
+    {
+      "questionId": 2257,
+      "hash": "d78c88601c179d45522f481f54a4ef287b948dae7abc35ebc90a7106b731bf13",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Shanghai's dedication group differs from #2531's Hong Kong castle name and from single-princess castle identities. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "The Shanghai castle celebrates Disney princesses and queens.",
+        "sources": [
+          "b34-shcastle"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The primary castle description names princesses and queens.",
+          "sources": [
+            "b34-shcastle"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Villains and henchmen are not the tribute group identified.",
+          "sources": [
+            "b34-shcastle"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pirates and sailors are not the tribute group identified.",
+          "sources": [
+            "b34-shcastle"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Inventors and explorers are not the tribute group identified.",
+          "sources": [
+            "b34-shcastle"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A character can appear in a castle experience without being its tribute subject. Removed the false uniqueness claim: #2531 also describes Hong Kong's multi-princess castle."
+      }
+    },
+    {
+      "questionId": 2258,
+      "hash": "ad6218c0af7fc9bea372840ca4825fa5b13b690af06d16758af9a40c7cc9761f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "New bounded dimension is distinct from #2102's resort opening year and #106's resort count. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The January 2026 resort fact sheet reports 310 acres.",
+        "sources": [
+          "b34-area"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "LAND AREA in the dated fact box is 310 acres.",
+          "sources": [
+            "b34-area"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "100 acres is not the figure in that fact box.",
+          "sources": [
+            "b34-area"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1,000 acres is not the figure in that fact box.",
+          "sources": [
+            "b34-area"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "5,000 acres is not the figure in that fact box.",
+          "sources": [
+            "b34-area"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The answer is explicitly a figure in a dated resort fact sheet. It makes no comparison among differently defined resort boundaries or global smallest claim; other area measures cannot override the specified document."
+      }
+    },
+    {
+      "questionId": 2259,
+      "hash": "f8f86ec5e54211d1cea7e7a4b059a6be68d2f6a54fae51ed4b2462d1ad072d6d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Land-opening month differs from #1623's Hot Pursuit ride identity. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Shanghai's Zootopia land opened in December 2023.",
+        "sources": [
+          "b34-shzoo"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The December 20, 2023 opening-day account explicitly confirms it.",
+          "sources": [
+            "b34-shzoo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "October 2023 is earlier than its public opening.",
+          "sources": [
+            "b34-shzoo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "June 2024 is later than its public opening.",
+          "sources": [
+            "b34-shzoo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "December 2022 is a year earlier than its public opening.",
+          "sources": [
+            "b34-shzoo"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The source is an actual opening-day account, not a forecast or the date of the original film. #1623 supplies the ride name but does not turn that into the land's opening-month fact."
+      }
+    },
+    {
+      "questionId": 2260,
+      "hash": "151ec6d3d4d9680cf1fa2679fdcfebdb54469ef5bcd48631c085ab7cae5f2c10",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different acquisition from Pixar, Marvel, Lucasfilm and ABC questions. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney completed the Fox acquisition in March 2019.",
+        "sources": [
+          "b34-fox"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The earnings report gives March 20, 2019 as acquisition date.",
+          "sources": [
+            "b34-fox"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2017 is not the completed-acquisition year.",
+          "sources": [
+            "b34-fox"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2021 is later than the completed-acquisition year.",
+          "sources": [
+            "b34-fox"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2015 is earlier than the completed-acquisition year.",
+          "sources": [
+            "b34-fox"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Completion is distinguished from announcement or negotiations. The report describes the completed acquisition and subsequent consolidation, not a proposed future deal."
+      }
+    },
+    {
+      "questionId": 2261,
+      "hash": "1baa7812bc61cd5e0a9efdf45eaff621714c7f93dfe462d21d973098ad9cde62",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "ABC deal valuation differs from #1374's financing agreement and other acquisitions' dates. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Capital Cities/ABC transaction was approximately $19 billion.",
+        "sources": [
+          "b34-abc",
+          "b34-abc2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Both company accounts give $19 billion.",
+          "sources": [
+            "b34-abc",
+            "b34-abc2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "$7 billion is not the stated gross transaction value.",
+          "sources": [
+            "b34-abc",
+            "b34-abc2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "$40 billion is not the stated gross transaction value.",
+          "sources": [
+            "b34-abc",
+            "b34-abc2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "$71 billion is not the stated gross transaction value.",
+          "sources": [
+            "b34-abc",
+            "b34-abc2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Gross transaction value is not a later net-cost or revaluation estimate. Both independent company passages identify $19 billion for this specific deal, excluding the other numeric values."
+      }
+    },
+    {
+      "questionId": 2262,
+      "hash": "aa62d85d68afe8bd53d28f71916acc56494bca58448679449488726be7dd4a96",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Production overlap differs from #2087's strike year, #2088's triggering firing, and #940's film-financing strategy. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Dumbo was being produced during the 1941 strike period.",
+        "sources": [
+          "b34-dumbo",
+          "b34-films",
+          "b34-strike"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The museum situates Dumbo in the 1941 production and labor-crisis context.",
+          "sources": [
+            "b34-dumbo",
+            "b34-films",
+            "b34-strike"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Snow White's feature had already been released in 1937, before the strike.",
+          "sources": [
+            "b34-dumbo",
+            "b34-films",
+            "b34-strike"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fantasia had already been released in 1940, before the strike.",
+          "sources": [
+            "b34-dumbo",
+            "b34-films",
+            "b34-strike"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pinocchio had already been released in 1940, before the strike.",
+          "sources": [
+            "b34-dumbo",
+            "b34-films",
+            "b34-strike"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Bambi also had concurrent production and was removed as an ambiguous distractor. Final alternatives all completed their original feature releases before the strike; do not infer that Dumbo was the studio's only production."
+      }
+    },
+    {
+      "questionId": 2263,
+      "hash": "357b59b07b5cebc7a19846cffbb3f257978bba7afe4c97386f09accf4fe0a070",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Company distribution launch is distinct from film release and acquisition dates. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney+ launched commercially in the US November 12, 2019.",
+        "sources": [
+          "b34-plus"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The dated primary launch release says the service launched today in the US.",
+          "sources": [
+            "b34-plus"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "May 4 is not the release's US launch date.",
+          "sources": [
+            "b34-plus"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "December 25 is not the release's US launch date.",
+          "sources": [
+            "b34-plus"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "January 1, 2020 is not the release's US launch date.",
+          "sources": [
+            "b34-plus"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "United States excludes later regional launches and earlier testing elsewhere. Exact day recall is calibrated hard, not easy; the source establishes the whole date."
+      }
+    },
+    {
+      "questionId": 2264,
+      "hash": "3378dc2780388b0b9e3f2baab034099ef6da27c0e7e76f9531d11813fd78ea9a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Different acquired studio and date from Fox and Pixar history. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 1993 Weinstein-founded studio acquisition was Miramax.",
+        "sources": [
+          "b34-miramax"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "D23 identifies Miramax, the founders and June 1993 purchase.",
+          "sources": [
+            "b34-miramax"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lionsgate is not the studio named in the 1993 transaction.",
+          "sources": [
+            "b34-miramax"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "New Line Cinema is not the studio named in the 1993 transaction.",
+          "sources": [
+            "b34-miramax"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Focus Features is not the studio named in the 1993 transaction.",
+          "sources": [
+            "b34-miramax"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The question identifies one transaction using both year and founders; later ownership or unrelated studios do not produce another defensible answer."
+      }
+    },
+    {
+      "questionId": 2265,
+      "hash": "fd2284baccfc5ffc7657cc8d39dcbd5a5e026bcdc1277d12dbde7b41c769551f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "First label release differs from label ownership and acquired-studio facts. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Splash was the first Touchstone release in 1984.",
+        "sources": [
+          "b34-touch",
+          "b34-films"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The official label history explicitly names Splash as first.",
+          "sources": [
+            "b34-touch",
+            "b34-films"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Roger Rabbit was released in 1988, after Splash.",
+          "sources": [
+            "b34-touch",
+            "b34-films"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pretty Woman was released in 1990, after Splash.",
+          "sources": [
+            "b34-touch",
+            "b34-films"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Good Morning Vietnam was released in 1987, after Splash.",
+          "sources": [
+            "b34-touch",
+            "b34-films"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The first label release, not first mature Disney film under any label, is asked. The independent chronological catalog excludes all three later Touchstone alternatives."
+      }
+    },
+    {
+      "questionId": 2266,
+      "hash": "f855943b4e390de05fad71605f29f8530c606c4d23df4d6cbb9a89aa8a0c319e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Corporate asset sale is in scope; it does not ask TV-show plot trivia. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The seller of the 2004 Muppets/Bear properties was The Jim Henson Company.",
+        "sources": [
+          "b34-muppets",
+          "b34-muppetsdone"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The agreement names Henson as seller; the history confirms completion.",
+          "sources": [
+            "b34-muppets",
+            "b34-muppetsdone"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sesame Workshop separately owned Sesame Street characters, expressly excluded from the sale.",
+          "sources": [
+            "b34-muppets",
+            "b34-muppetsdone"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Nickelodeon is not the named seller in the agreement.",
+          "sources": [
+            "b34-muppets",
+            "b34-muppetsdone"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Warner Bros. is not the named seller in the agreement.",
+          "sources": [
+            "b34-muppets",
+            "b34-muppetsdone"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The deal purchased properties, not the entire Henson company, and excluded Sesame Street. Those boundaries defeat the most plausible alternative; company in the stem does not identify Jim Henson."
+      }
+    },
+    {
+      "questionId": 2267,
+      "hash": "a3a16dab3293f56d20095a511d930eaa15fbba8ef43861bc3985907a90d64861",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Manual cel finishing differs from #2578's digital CAPS elimination and #951's xerography transfer. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+      "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Ink and Paint performed cel tracing and coloring.",
+        "sources": [
+          "b34-ink",
+          "b34-women"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The museum describes both tracing and reverse-side painting in Ink and Paint.",
+          "sources": [
+            "b34-ink",
+            "b34-women"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Story is not the department assigned the described cel finishing work.",
+          "sources": [
+            "b34-ink",
+            "b34-women"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Layout is not the department assigned the described cel finishing work.",
+          "sources": [
+            "b34-ink",
+            "b34-women"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Camera photographs the prepared cels rather than performing the named finishing operation.",
+          "sources": [
+            "b34-ink",
+            "b34-women"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Asked a specific production operation, not whether women were categorically barred from creative work. The museum's documented 1935 Story hire directly defeats the original universal premise."
+      }
+    }
+  ]
+}

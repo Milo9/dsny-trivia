@@ -1,0 +1,103 @@
+[
+  {
+    "schema": 2,
+    "questionId": 922,
+    "hash": "91d79506a44c984e8c83315e410fb81cc7895d9ac3059502d64b535ff1d38151",
+    "questionSnapshot": {
+      "id": 922,
+      "question": "At Animal Kingdom, which land includes Expedition Everest?",
+      "answers": [
+        "Asia",
+        "Africa",
+        "DinoLand U.S.A.",
+        "Discovery Island"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "reviewer": "Codex",
+    "at": "2026-11-08",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Rechecked the reopened shared-answer finding against #1621 and read the complete parks topic digest. #98 asks coaster identity/story, #357 its opening year, and #922 its named land: different facts. #1621 asks a cruise deployment continent; knowing that answer supplies no attraction-location association.",
+    "verification": {
+      "context": "Disney's Animal Kingdom, Florida; current park land assignment checked 2026-11-08.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-05",
+      "premise": {
+        "reason": "The official park directory explicitly lists Expedition Everest beneath Asia, identifying its park land rather than merely its Himalayan theme.",
+        "sources": [
+          {
+            "url": "https://disneyworld.disney.go.com/destinations/animal-kingdom/",
+            "locator": "Asia section, Expedition Everest listing (lines 79-85); separate Africa and Discovery Island sections (lines 65-76 and 88-94)"
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-08",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tested whether the Himalayas theme alone was being mistaken for a land assignment, or whether another listed land could contain the attraction. The directory explicitly places it under Asia, with Africa and Discovery Island separate; DinoLand is not a synonym for Asia. The question asks a named park land, not a physical continent or cruise deployment. All four choices are land names; the answer is not supplied by the stem. Medium recall difficulty and parks scope remain appropriate. Compared all parks digest questions and cross-bank Everest/Asia matches: coaster identity, opening year, and cruise deployment remain separate facts."
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The park directory lists Expedition Everest under Asia.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/destinations/animal-kingdom/",
+              "locator": "Asia section, Expedition Everest listing (lines 79-85); separate Africa and Discovery Island sections (lines 65-76 and 88-94)"
+            }
+          ],
+          "answer": "Asia",
+          "verdict": "correct"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Africa is a separate park land in the directory; the explicit Asia assignment excludes Africa as the land containing this attraction.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/destinations/animal-kingdom/",
+              "locator": "Asia section, Expedition Everest listing (lines 79-85); separate Africa and Discovery Island sections (lines 65-76 and 88-94)"
+            }
+          ],
+          "answer": "Africa",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "DinoLand U.S.A. is a different named land, not another name for Asia; the explicit Asia assignment excludes this option regardless of DinoLand closure status.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/destinations/animal-kingdom/",
+              "locator": "Asia section, Expedition Everest listing (lines 79-85); separate Africa and Discovery Island sections (lines 65-76 and 88-94)"
+            }
+          ],
+          "answer": "DinoLand U.S.A.",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Discovery Island is separately headed in the directory; the attraction is assigned to Asia, not Discovery Island.",
+          "sources": [
+            {
+              "url": "https://disneyworld.disney.go.com/destinations/animal-kingdom/",
+              "locator": "Asia section, Expedition Everest listing (lines 79-85); separate Africa and Discovery Island sections (lines 65-76 and 88-94)"
+            }
+          ],
+          "answer": "Discovery Island",
+          "verdict": "incorrect"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-08",
+  "findingId": "duplicate-c39f2966f10464a8f75a",
+  "questions": [
+    {
+      "id": 922,
+      "question": "At Animal Kingdom, which land includes Expedition Everest?",
+      "answers": [
+        "Asia",
+        "Africa",
+        "DinoLand U.S.A.",
+        "Discovery Island"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    {
+      "id": 1621,
+      "question": "Disney Adventure's 2026 debut made it Disney Cruise Line's first ship based on which continent?",
+      "answers": [
+        "Asia",
+        "Europe",
+        "South America",
+        "Africa"
+      ],
+      "difficulty": "medium",
+      "category": "cruise"
+    }
+  ],
+  "decision": "accepted",
+  "reason": "Shared answer only: #922 asks the named Animal Kingdom land containing Expedition Everest; #1621 asks the continent associated with Disney Adventure deployment. Memorizing either answer does not establish the other relationship. Neither stem supplies the other fact.",
+  "source": {
+    "url": "https://disneyworld.disney.go.com/destinations/animal-kingdom/",
+    "locator": "Asia section, Expedition Everest listing (lines 79-85); separate Africa and Discovery Island sections (lines 65-76 and 88-94)"
+  }
+}

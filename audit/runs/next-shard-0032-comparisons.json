@@ -1,0 +1,701 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-08",
+  "scope": [
+    2118,
+    2119,
+    2120,
+    2121,
+    2122,
+    2123,
+    2124,
+    2125,
+    2126,
+    2127,
+    2128,
+    2129,
+    2130,
+    2131,
+    2132,
+    2133,
+    2134,
+    2135,
+    2136,
+    2137,
+    2138,
+    2139,
+    2140,
+    2141,
+    2142,
+    2143,
+    2144,
+    2145,
+    2146,
+    2147,
+    2148,
+    2149,
+    2150,
+    2151,
+    2152,
+    2153,
+    2154,
+    2155,
+    2156,
+    2157,
+    2158,
+    2159,
+    2160,
+    2161,
+    2162,
+    2163,
+    2164,
+    2165,
+    2166,
+    2167
+  ],
+  "findings": [
+    {
+      "id": "duplicate-2e0e76861497dcd965b0",
+      "kind": "duplicate",
+      "questionIds": [
+        2160,
+        2163
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "2e0e76861497dcd965b0f863a31422f831cffce057e6c1ec9cef9f2f4882db14",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null,
+      "comparisonQuestions": [
+        {
+          "id": 2160,
+          "question": "Who voices Joe Gardner in the original English-language version of Soul (2020)?",
+          "answers": [
+            "Jamie Foxx",
+            "Denzel Washington",
+            "Chadwick Boseman",
+            "Michael B. Jordan"
+          ],
+          "difficulty": "easy",
+          "category": "pixar"
+        },
+        {
+          "id": 2163,
+          "question": "Who voices 22 in the original English-language version of Soul (2020)?",
+          "answers": [
+            "Tina Fey",
+            "Kristen Bell",
+            "Rachel McAdams",
+            "Amy Poehler"
+          ],
+          "difficulty": "medium",
+          "category": "pixar"
+        }
+      ],
+      "rationale": "Different cast assignments: Joe Gardner is Jamie Foxx, while 22 is Tina Fey. Memorizing either actor does not identify the other character voice."
+    },
+    {
+      "id": "duplicate-95ff74ee98c0952273a7",
+      "kind": "duplicate",
+      "questionIds": [
+        2159,
+        2289
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "95ff74ee98c0952273a7b478e6a5ddd15df3ef85f45523c8b8c9a11a3d2981b0",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null,
+      "comparisonQuestions": [
+        {
+          "id": 2159,
+          "question": "Whose piano playing provided the filmed hand reference for Joe Gardner's performances in Soul?",
+          "answers": [
+            "Jon Batiste",
+            "Herbie Hancock",
+            "Wynton Marsalis",
+            "Questlove"
+          ],
+          "difficulty": "hard",
+          "category": "pixar"
+        },
+        {
+          "id": 2289,
+          "question": "Soul (2020) won the Oscar for Best Original Score for music co-written by Trent Reznor and Atticus Ross alongside which jazz pianist and bandleader?",
+          "answers": [
+            "Jon Batiste",
+            "Herbie Hancock",
+            "Wynton Marsalis",
+            "Robert Glasper"
+          ],
+          "difficulty": "medium",
+          "category": "pixar"
+        }
+      ],
+      "rationale": "Distinct production facts: 2159 asks who supplied filmed piano-hand reference; 2289 asks the score Oscar recipient. Being a composer/award recipient does not establish animation-reference performance."
+    },
+    {
+      "id": "duplicate-bfeb09e4e913ca3511db",
+      "kind": "duplicate",
+      "questionIds": [
+        415,
+        2153
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "bfeb09e4e913ca3511dba8b2c2e3655a6ed5240d25a3a84edb365fb900a5ed76",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null,
+      "comparisonQuestions": [
+        {
+          "id": 415,
+          "question": "How many main restaurants are in a guest's rotational dinner schedule aboard the Disney Wish?",
+          "answers": [
+            "Three",
+            "Two",
+            "Four",
+            "Five"
+          ],
+          "difficulty": "easy",
+          "category": "cruise"
+        },
+        {
+          "id": 2153,
+          "question": "In Hercules (1997), how many heads emerge after Hercules cuts off the Hydra's original head?",
+          "answers": [
+            "Three",
+            "Two",
+            "Four",
+            "Five"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        }
+      ],
+      "rationale": "Unrelated counts: three first-regrowth Hydra heads versus three Disney Wish rotational restaurants. Neither supplies the other fact."
+    },
+    {
+      "id": "duplicate-daa77c481be06a9e9036",
+      "kind": "duplicate",
+      "questionIds": [
+        5,
+        2153
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "daa77c481be06a9e90368686a20c582d83f2644c7bce0f297ac6c28c238a8c2a",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null,
+      "comparisonQuestions": [
+        {
+          "id": 5,
+          "question": "In Aladdin, how many wishes does Aladdin receive from the Genie?",
+          "answers": [
+            "Three",
+            "One",
+            "Seven",
+            "Unlimited"
+          ],
+          "difficulty": "easy",
+          "category": "movies"
+        },
+        {
+          "id": 2153,
+          "question": "In Hercules (1997), how many heads emerge after Hercules cuts off the Hydra's original head?",
+          "answers": [
+            "Three",
+            "Two",
+            "Four",
+            "Five"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        }
+      ],
+      "rationale": "Unrelated counts: three Hydra heads versus three Genie wishes in Aladdin. The shared number is not a shared fact."
+    },
+    {
+      "id": "duplicate-e756061b55084ebb030d",
+      "kind": "duplicate",
+      "questionIds": [
+        2153,
+        2551
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "e756061b55084ebb030d7ef0e9a440d58b28893695e4b21f8dc02c53c23370cd",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null,
+      "comparisonQuestions": [
+        {
+          "id": 2153,
+          "question": "In Hercules (1997), how many heads emerge after Hercules cuts off the Hydra's original head?",
+          "answers": [
+            "Three",
+            "Two",
+            "Four",
+            "Five"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 2551,
+          "question": "At the 1995 Academy Awards, The Lion King achieved a rare feat by earning Best Original Song nominations for how many of its own songs?",
+          "answers": [
+            "Three",
+            "Two",
+            "Four",
+            "Five"
+          ],
+          "difficulty": "hard",
+          "category": "music"
+        }
+      ],
+      "rationale": "Unrelated counts: Hydra heads versus Lion King Oscar song nominations. The number three alone does not connect their factual premises."
+    },
+    {
+      "id": "leak-328dbc7ba878036d478d",
+      "kind": "leak",
+      "questionIds": [
+        2144
+      ],
+      "detail": {
+        "tier": 2,
+        "token": "bear"
+      },
+      "signature": "328dbc7ba878036d478d347f70c1b45f26fee5e16ded25295b830531d27adf94",
+      "decision": null,
+      "comparisonQuestions": [
+        {
+          "id": 2144,
+          "question": "What early working title was used for Brother Bear?",
+          "answers": [
+            "Bears",
+            "The Great Spirit",
+            "Kenai's Journey",
+            "Totem"
+          ],
+          "difficulty": "hard",
+          "category": "movies"
+        }
+      ],
+      "rationale": "Bear identifies the film subject, but not the exact plural development title Bears. Other plausible titles remain; the stem does not state the working title."
+    },
+    {
+      "id": "leak-7aa96deef744dfa7a9fc",
+      "kind": "leak",
+      "questionIds": [
+        2162
+      ],
+      "detail": {
+        "tier": 2,
+        "token": "city"
+      },
+      "signature": "7aa96deef744dfa7a9fcdf31be402e4f86f9a3a486ac4f203b1fea0e5bfe10ed",
+      "decision": null,
+      "comparisonQuestions": [
+        {
+          "id": 2162,
+          "question": "In what real U.S. city is the human world of Soul primarily set?",
+          "answers": [
+            "New York City",
+            "Chicago",
+            "Los Angeles",
+            "New Orleans"
+          ],
+          "difficulty": "easy",
+          "category": "pixar"
+        }
+      ],
+      "rationale": "City is a generic location type and formal suffix in New York City; all four options are cities. The stem does not identify New York."
+    },
+    {
+      "id": "scope-03385285c30272cde420",
+      "kind": "scope",
+      "questionIds": [
+        2141
+      ],
+      "detail": "Check the no-TV-shows boundary; incidental mentions may be valid.",
+      "signature": "03385285c30272cde420e90ddd750be9bb2611585556f198ee8995a3611903d3",
+      "decision": null,
+      "comparisonQuestions": [
+        {
+          "id": 2141,
+          "question": "In Bambi (1942), which season brings courtship and the return of new life to the forest?",
+          "answers": [
+            "Spring",
+            "Summer",
+            "Autumn",
+            "Winter"
+          ],
+          "difficulty": "easy",
+          "category": "movies"
+        }
+      ],
+      "rationale": "Season here means spring/summer/autumn/winter in the 1942 theatrical Bambi film; no television series or episode trivia is involved."
+    }
+  ],
+  "additionalComparisons": [
+    {
+      "questionIds": [
+        2153,
+        829
+      ],
+      "questions": [
+        {
+          "id": 2153,
+          "question": "In Hercules (1997), how many heads emerge after Hercules cuts off the Hydra's original head?",
+          "answers": [
+            "Three",
+            "Two",
+            "Four",
+            "Five"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 829,
+          "question": "In Hercules (1997), which of these monsters grows multiple heads during its battle with Hercules?",
+          "answers": [
+            "The Hydra",
+            "The Minotaur",
+            "The Cyclops",
+            "The Kraken"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        }
+      ],
+      "rationale": "Exact first-regrowth count versus monster identity: numerical options now require a new fact."
+    },
+    {
+      "questionIds": [
+        2155,
+        2478
+      ],
+      "questions": [
+        {
+          "id": 2155,
+          "question": "About how much did The Fox and the Hound cost to make, in 1981 U.S. dollars?",
+          "answers": [
+            "$12 million",
+            "$2 million",
+            "$44 million",
+            "$80 million"
+          ],
+          "difficulty": "hard",
+          "category": "movies"
+        },
+        {
+          "id": 2478,
+          "question": "At a cost of about $44 million, The Black Cauldron set what record for an animated film at the time of its 1985 release?",
+          "answers": [
+            "Most expensive animated film ever made",
+            "Highest-grossing animated film ever made",
+            "First animated film shot in 3D",
+            "First animated film with a full orchestral score"
+          ],
+          "difficulty": "hard",
+          "category": "movies"
+        }
+      ],
+      "rationale": "Nominal Fox/Hound budget versus Black Cauldron record; original shared-answer warning no longer applies."
+    },
+    {
+      "questionIds": [
+        2165,
+        2289
+      ],
+      "questions": [
+        {
+          "id": 2165,
+          "question": "Which duo composed the electronic music for Soul's otherworldly realms, alongside Jon Batiste's jazz music?",
+          "answers": [
+            "Trent Reznor and Atticus Ross",
+            "Hans Zimmer and Pharrell Williams",
+            "Danny Elfman and Alan Silvestri",
+            "Thomas Newman and Randy Newman"
+          ],
+          "difficulty": "hard",
+          "category": "pixar"
+        },
+        {
+          "id": 2289,
+          "question": "Soul (2020) won the Oscar for Best Original Score for music co-written by Trent Reznor and Atticus Ross alongside which jazz pianist and bandleader?",
+          "answers": [
+            "Jon Batiste",
+            "Herbie Hancock",
+            "Wynton Marsalis",
+            "Robert Glasper"
+          ],
+          "difficulty": "medium",
+          "category": "pixar"
+        }
+      ],
+      "rationale": "Electronic otherworld composers versus overall score Oscar recipient; musical role and award are different facts."
+    }
+  ],
+  "retirements": [],
+  "contentClassifications": {
+    "2118": {
+      "types": [
+        "clarification",
+        "distractors"
+      ],
+      "reason": "Specified the 1960 film and replaced a gunpowder/fuse giveaway with parallel explosive-container choices."
+    },
+    "2119": {
+      "types": [
+        "clarification",
+        "distractors"
+      ],
+      "reason": "Removed tree-in-stem giveaway and unnecessary plumbing/skylight details; made all choices elevated homes."
+    },
+    "2120": {
+      "types": [
+        "clarification",
+        "distractors"
+      ],
+      "reason": "Removed unsupported near-bankruptcy rhetoric and made the causal alternatives explicit."
+    },
+    "2121": {
+      "types": [
+        "clarification",
+        "distractors"
+      ],
+      "reason": "Replaced an undated inflation-adjusted loss estimate with the documented development title."
+    },
+    "2122": {
+      "types": [
+        "clarification"
+      ],
+      "reason": "Separated the California opening title from the later EPCOT attraction."
+    },
+    "2123": {
+      "types": [
+        "clarification"
+      ],
+      "reason": "Removed an unnecessary last-Walt-project claim."
+    },
+    "2124": {
+      "types": [
+        "clarification"
+      ],
+      "reason": "Specified the historical original show and used its documented song assignment instead of subjective tone-deafness."
+    },
+    "2127": {
+      "types": [
+        "factual",
+        "clarification"
+      ],
+      "reason": "Removed the false implication that the worthy entrant may claim the cave treasures."
+    },
+    "2128": {
+      "types": [
+        "factual",
+        "clarification",
+        "distractors"
+      ],
+      "reason": "Replaced an incorrect eligibility/burial premise with the actual Abu ruby, lava and collapse scene."
+    },
+    "2129": {
+      "types": [
+        "factual",
+        "clarification"
+      ],
+      "reason": "Framed absence of traditions as the sisters initial belief; the ending reveals they already have one."
+    },
+    "2130": {
+      "types": [
+        "clarification"
+      ],
+      "reason": "Removed Norway/Norwegian-roots hint from the question."
+    },
+    "2131": {
+      "types": [
+        "clarification",
+        "distractors"
+      ],
+      "reason": "Made family relationship options parallel and removed unsupported adoption scenario."
+    },
+    "2132": {
+      "types": [
+        "clarification",
+        "distractors"
+      ],
+      "reason": "Narrowed Owl characterization and replaced potentially overlapping Rabbit distractor."
+    },
+    "2134": {
+      "types": [
+        "factual",
+        "clarification",
+        "distractors",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "reason": "Replaced a TV-series Pascal snake incident misattributed to the movie with the theatrical-film tear revival; moved to movies/medium."
+    },
+    "2135": {
+      "types": [
+        "clarification"
+      ],
+      "reason": "Specified loss of healing power in the hair, preserving the separate tear revival."
+    },
+    "2136": {
+      "types": [
+        "clarification"
+      ],
+      "reason": "Focused on live fawn origin and removed incidental studio-location language."
+    },
+    "2138": {
+      "types": [
+        "clarification"
+      ],
+      "reason": "Specified the mother actual word instead of an unbounded all-animals/whenever claim."
+    },
+    "2139": {
+      "types": [
+        "clarification"
+      ],
+      "reason": "Replaced vague causal influence with documented historical campaign succession."
+    },
+    "2140": {
+      "types": [
+        "factual",
+        "clarification"
+      ],
+      "reason": "Distinguished father as source of advice from mother as prompter and Thumper as on-screen speaker."
+    },
+    "2141": {
+      "types": [
+        "clarification",
+        "distractors",
+        "difficulty"
+      ],
+      "reason": "Replaced ill-formed cycle wording with one season and four parallel seasonal answers; calibrated easy."
+    },
+    "2144": {
+      "types": [
+        "clarification"
+      ],
+      "reason": "Distinguished a development working title from release title."
+    },
+    "2146": {
+      "types": [
+        "clarification",
+        "distractors"
+      ],
+      "reason": "Asked about auroral association of the spirit mountain rather than natural lights performing magic."
+    },
+    "2148": {
+      "types": [
+        "clarification"
+      ],
+      "reason": "Removed U.S. clue against Canadian distractors and unnecessary closure date."
+    },
+    "2149": {
+      "types": [
+        "clarification"
+      ],
+      "reason": "Focused on supported character-design attribution without compound job-title and style claims."
+    },
+    "2150": {
+      "types": [
+        "clarification",
+        "category"
+      ],
+      "reason": "Specified predominant musical influence rather than exclusivity; moved to music."
+    },
+    "2151": {
+      "types": [
+        "clarification"
+      ],
+      "reason": "Bound the reference-feature answer to Goldberg specific recollection, avoiding broad simultaneous-reference possibilities."
+    },
+    "2153": {
+      "types": [
+        "factual",
+        "clarification",
+        "distractors"
+      ],
+      "reason": "Corrected two to three heads in the Disney first-regrowth scene; used parallel numeric alternatives and distinguished monster-identification question 829."
+    },
+    "2155": {
+      "types": [
+        "clarification",
+        "distractors"
+      ],
+      "reason": "Replaced a record superlative with approximate nominal 1981 production budget."
+    },
+    "2156": {
+      "types": [
+        "clarification"
+      ],
+      "reason": "Attributed the Vixey assignment to Keane firsthand recollection and removed unnecessary uncredited/acclaimed claims."
+    },
+    "2157": {
+      "types": [
+        "clarification"
+      ],
+      "reason": "Used the documented historical Pixar leadership role instead of co-founder shorthand."
+    },
+    "2159": {
+      "types": [
+        "factual",
+        "clarification"
+      ],
+      "reason": "Replaced motion-capture/MIDI characterization with documented filmed hand reference for frame-by-frame animation."
+    },
+    "2160": {
+      "types": [
+        "clarification"
+      ],
+      "reason": "Specified original English voice credit and removed extra historical superlative."
+    },
+    "2161": {
+      "types": [
+        "clarification"
+      ],
+      "reason": "Focused on directing credit and removed extra first-in-history claim."
+    },
+    "2163": {
+      "types": [
+        "clarification"
+      ],
+      "reason": "Added missing film/version context and removed eons rhetoric."
+    },
+    "2164": {
+      "types": [
+        "clarification",
+        "distractors"
+      ],
+      "reason": "Attributed brainstorm to Docter and replaced actual final-job teacher distractor."
+    },
+    "2165": {
+      "types": [
+        "clarification"
+      ],
+      "reason": "Distinguished electronic soul-world music from jazz; removed implication Oscar was awarded for specific sequences."
+    },
+    "2167": {
+      "types": [
+        "clarification",
+        "distractors"
+      ],
+      "reason": "Asked observed behavior in neutral language with parallel action choices."
+    }
+  }
+}

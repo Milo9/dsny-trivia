@@ -1,0 +1,563 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-09",
+  "scope": [
+    2168,
+    2169,
+    2170,
+    2171,
+    2172,
+    2173,
+    2174,
+    2175,
+    2176,
+    2177,
+    2178,
+    2179,
+    2180,
+    2181,
+    2182,
+    2183,
+    2184,
+    2185,
+    2186,
+    2187,
+    2188,
+    2189,
+    2190,
+    2191,
+    2192,
+    2193,
+    2194,
+    2195,
+    2196,
+    2197,
+    2198,
+    2199,
+    2200,
+    2201,
+    2202,
+    2203,
+    2204,
+    2205,
+    2206,
+    2207,
+    2208,
+    2209,
+    2210,
+    2211,
+    2212,
+    2213,
+    2214,
+    2215,
+    2216,
+    2217
+  ],
+  "findings": [
+    {
+      "id": "duplicate-4c8c167434d4f8c1e8b8",
+      "kind": "duplicate",
+      "questionIds": [
+        1188,
+        2205
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "4c8c167434d4f8c1e8b8b65b847dfb5317f86d731de0553e044b7d5819b45930",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null,
+      "comparisonQuestions": [
+        {
+          "id": 1188,
+          "question": "Which 1950 animated feature marked Disney's return to single-story animated features after the wartime package films?",
+          "answers": [
+            "Cinderella",
+            "Alice in Wonderland",
+            "Peter Pan",
+            "Lady and the Tramp"
+          ],
+          "difficulty": "medium",
+          "category": "walt"
+        },
+        {
+          "id": 2205,
+          "question": "Frozen Fever premiered in theaters in 2015 alongside which Disney feature?",
+          "answers": [
+            "Cinderella",
+            "Tomorrowland",
+            "Into the Woods",
+            "Maleficent"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        }
+      ],
+      "rationale": "Different works and facts: Cinderella 1950 animation production history versus the live-action Cinderella 2015 theatrical pairing with Frozen Fever. The shared short title does not establish the pairing."
+    },
+    {
+      "id": "duplicate-5ecd68e0ce9b1f6e44e4",
+      "kind": "duplicate",
+      "questionIds": [
+        2163,
+        2170
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "5ecd68e0ce9b1f6e44e44810910f9261011b814b228143bc671c41d596524d6e",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null,
+      "comparisonQuestions": [
+        {
+          "id": 2163,
+          "question": "Who voices 22 in the original English-language version of Soul (2020)?",
+          "answers": [
+            "Tina Fey",
+            "Kristen Bell",
+            "Rachel McAdams",
+            "Amy Poehler"
+          ],
+          "difficulty": "medium",
+          "category": "pixar"
+        },
+        {
+          "id": 2170,
+          "question": "Who voices Laurel Lightfoot in the original English-language version of Onward (2020)?",
+          "answers": [
+            "Julia Louis-Dreyfus",
+            "Tina Fey",
+            "Allison Janney",
+            "Melissa McCarthy"
+          ],
+          "difficulty": "medium",
+          "category": "pixar"
+        }
+      ],
+      "rationale": "Different original English cast assignments: Tina Fey as Soul 22 versus Julia Louis-Dreyfus as Onward Laurel. Memorizing either credit does not identify the other role."
+    },
+    {
+      "id": "duplicate-8348d148246a36242230",
+      "kind": "duplicate",
+      "questionIds": [
+        2055,
+        2178
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "8348d148246a362422306b6a6b30f3da3aa8bf34e9e422f487252ebcac62ef86",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null,
+      "comparisonQuestions": [
+        {
+          "id": 2055,
+          "question": "In Coco, which real-life Mexican artist appears as a colorful skeleton cameo in the Land of the Dead, helping stage a surreal performance?",
+          "answers": [
+            "Frida Kahlo",
+            "Diego Rivera",
+            "Dolores del Río",
+            "Cantinflas"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        },
+        {
+          "id": 2178,
+          "question": "In Coco (2017), whom does Héctor impersonate when he tries to get past the bridge checkpoint?",
+          "answers": [
+            "Frida Kahlo",
+            "A mariachi band member",
+            "A police officer",
+            "Ernesto de la Cruz"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        }
+      ],
+      "rationale": "An actual Frida Kahlo cameo helping stage a performance and Héctor impersonating her at the departures checkpoint are separate actions by separate characters. The cameo alone does not establish the disguise; both scenes were inspected."
+    },
+    {
+      "id": "duplicate-b24fe42ecf3063375e09",
+      "kind": "duplicate",
+      "questionIds": [
+        2160,
+        2170
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "b24fe42ecf3063375e098da8bfc86a95c029f4daefd39daf8d34de6e810f20d6",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null,
+      "comparisonQuestions": [
+        {
+          "id": 2160,
+          "question": "Who voices Joe Gardner in the original English-language version of Soul (2020)?",
+          "answers": [
+            "Jamie Foxx",
+            "Denzel Washington",
+            "Chadwick Boseman",
+            "Michael B. Jordan"
+          ],
+          "difficulty": "easy",
+          "category": "pixar"
+        },
+        {
+          "id": 2170,
+          "question": "Who voices Laurel Lightfoot in the original English-language version of Onward (2020)?",
+          "answers": [
+            "Julia Louis-Dreyfus",
+            "Tina Fey",
+            "Allison Janney",
+            "Melissa McCarthy"
+          ],
+          "difficulty": "medium",
+          "category": "pixar"
+        }
+      ],
+      "rationale": "Different original English cast assignments: Jamie Foxx as Soul Joe versus Julia Louis-Dreyfus as Onward Laurel. Similar question structure is not a duplicate credit."
+    },
+    {
+      "id": "duplicate-dbf41ec7a88227b72dd9",
+      "kind": "duplicate",
+      "questionIds": [
+        232,
+        2204
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "dbf41ec7a88227b72dd95a37ad26cfd51960ba1e25b8dda40657e145ae9cd098",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null,
+      "comparisonQuestions": [
+        {
+          "id": 232,
+          "question": "In Frozen, who is the ice harvester who helps Anna find Elsa?",
+          "answers": [
+            "Kristoff",
+            "Hans",
+            "The Duke of Weselton",
+            "Olaf"
+          ],
+          "difficulty": "easy",
+          "category": "movies"
+        },
+        {
+          "id": 2204,
+          "question": "In Frozen Fever, whom does Elsa explicitly ask if she can leave in charge of the courtyard?",
+          "answers": [
+            "Kristoff",
+            "Olaf",
+            "Sven",
+            "the Duke of Weselton"
+          ],
+          "difficulty": "easy",
+          "category": "movies"
+        }
+      ],
+      "rationale": "Kristoff being an ice harvester in Frozen does not establish Elsa explicitly delegates the courtyard to him in the different short Frozen Fever. Different role and event."
+    },
+    {
+      "id": "duplicate-e0b7801e475f5791fc3d",
+      "kind": "duplicate",
+      "questionIds": [
+        2215,
+        2287
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "e0b7801e475f5791fc3da23fd4ee5addf61d38ca1e2dd97c86c25f8e294295bf",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null,
+      "comparisonQuestions": [
+        {
+          "id": 2215,
+          "question": "Which Coco song was added to Magic Kingdom's Mickey's PhilharMagic in its 2021 update?",
+          "answers": [
+            "Un Poco Loco",
+            "Remember Me",
+            "Proud Corazon",
+            "The World Es Mi Familia"
+          ],
+          "difficulty": "medium",
+          "category": "parks"
+        },
+        {
+          "id": 2287,
+          "question": "In Coco, what is the title of the fast-paced son jarocho-style song Miguel performs at the plaza talent show, whose title translates to roughly 'A Little Crazy'?",
+          "answers": [
+            "Un Poco Loco",
+            "Remember Me",
+            "Proud Corazon",
+            "The World Es Mi Familia"
+          ],
+          "difficulty": "medium",
+          "category": "pixar"
+        }
+      ],
+      "rationale": "Coco plaza-performance song identity/translation and a later Magic Kingdom attraction update require distinct knowledge. Knowing a song is in Coco does not show it was chosen for PhilharMagic."
+    },
+    {
+      "id": "leak-6adb6857bd15078da18a",
+      "kind": "leak",
+      "questionIds": [
+        2183
+      ],
+      "detail": {
+        "tier": 2,
+        "token": "adventure"
+      },
+      "signature": "6adb6857bd15078da18a5e11b53aad64c4f404bcfa002d711f98633fc7c60570",
+      "decision": null,
+      "comparisonQuestions": [
+        {
+          "id": 2183,
+          "question": "In Up (2009), what does Ellie's final note in the Adventure Book encourage Carl to do?",
+          "answers": [
+            "Go have a new adventure",
+            "Stay home and preserve their belongings",
+            "Take the house back to their old street",
+            "Give up his friendship with Russell"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        }
+      ],
+      "rationale": "Adventure Book is the identifying prop name. It does not state the final note or tell the player whether Ellie encourages a new adventure, returning home, preserving belongings or rejecting Russell. The note passage establishes the chosen interpretation."
+    },
+    {
+      "id": "leak-7ee64969fba9c8adbae7",
+      "kind": "leak",
+      "questionIds": [
+        2195
+      ],
+      "detail": {
+        "tier": 2,
+        "token": "nita"
+      },
+      "signature": "7ee64969fba9c8adbae7a3b1649a6e1b36fa971eaedce7ea3476974dcb4e5a31",
+      "decision": null,
+      "comparisonQuestions": [
+        {
+          "id": 2195,
+          "question": "In Brother Bear 2, what do the Spirits do at the end so Nita can live with Kenai?",
+          "answers": [
+            "Turn Nita into a bear",
+            "Turn Kenai back into a human",
+            "Turn Atka into a bear",
+            "Turn Koda into a human"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        }
+      ],
+      "rationale": "Nita names the subject whose future is at stake, not which character is transformed or into what. Kenai restoration is a plausible competing story proposal that the ending expressly rejects."
+    },
+    {
+      "id": "leak-c95c7cb0215728d6f6dc",
+      "kind": "leak",
+      "questionIds": [
+        2173
+      ],
+      "detail": {
+        "tier": 2,
+        "token": "underdog"
+      },
+      "signature": "c95c7cb0215728d6f6dc45fe49b1dd72eea37da40e7cbdb76e7563cffb4b4071",
+      "decision": null,
+      "comparisonQuestions": [
+        {
+          "id": 2173,
+          "question": "What team name do Luca, Alberto, and Giulia race under in the Portorosso Cup?",
+          "answers": [
+            "The Underdogs",
+            "The Sea Devils",
+            "Team Portorosso",
+            "The Speedsters"
+          ],
+          "difficulty": "medium",
+          "category": "pixar"
+        }
+      ],
+      "rationale": "The stem contains the ordinary preposition under in race under, not the answer Underdogs. It supplies neither dogs nor the team name; all four possible team names remain grammatical."
+    }
+  ],
+  "additionalComparisons": [
+    {
+      "questionIds": [
+        2208,
+        2324
+      ],
+      "questions": [
+        {
+          "id": 2208,
+          "question": "In the Pixar short Geri's Game, what is the prize handed over at the end of the chess match?",
+          "answers": [
+            "His dentures",
+            "His glasses",
+            "His coat",
+            "His chess set"
+          ],
+          "difficulty": "medium",
+          "category": "pixar"
+        },
+        {
+          "id": 2324,
+          "question": "In the Pixar short Geri's Game, how does the mean-spirited 'Black' Geri ultimately win the chess match against himself?",
+          "answers": [
+            "Faking a heart attack",
+            "Cheating by moving pieces early",
+            "Knocking the board over",
+            "Bribing a passing pigeon"
+          ],
+          "difficulty": "hard",
+          "category": "pixar"
+        }
+      ],
+      "rationale": "Prize item and the mechanism of winning are separate facts. 2324 retains a reversed-persona premise and is tracked as manual-3b00745a4acea7907790, outside this batch; it was not approved or edited."
+    },
+    {
+      "questionIds": [
+        2199,
+        2098
+      ],
+      "questions": [
+        {
+          "id": 2199,
+          "question": "In Kronk's New Groove, what is the name of Kronk's disapproving father who comes to visit?",
+          "answers": [
+            "Papi",
+            "Pacha",
+            "Bucky",
+            "Yzma"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        },
+        {
+          "id": 2098,
+          "question": "In Kronk's New Groove, what is Kronk desperate to fake in order to impress his visiting father, 'Papi'?",
+          "answers": [
+            "A successful home and family life",
+            "A royal title",
+            "A career as a chef at a fancy restaurant",
+            "A championship trophy"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        }
+      ],
+      "rationale": "Papi name versus successful home/family life Kronk pretends to have; different factual targets."
+    },
+    {
+      "questionIds": [
+        2185,
+        2188
+      ],
+      "questions": [
+        {
+          "id": 2185,
+          "question": "In Cinderella II: Dreams Come True, what is the title of the first segment in which Cinderella struggles with royal duties after returning from her honeymoon?",
+          "answers": [
+            "Aim to Please",
+            "Tall Tail",
+            "An Uncommon Romance",
+            "A Royal Welcome"
+          ],
+          "difficulty": "hard",
+          "category": "movies"
+        },
+        {
+          "id": 2188,
+          "question": "In Cinderella II: Dreams Come True, what event must Cinderella organize while the King and Prince are away in 'Aim to Please'?",
+          "answers": [
+            "A royal banquet",
+            "A treasury inspection",
+            "A royal wedding",
+            "A coronation"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        }
+      ],
+      "rationale": "Segment title versus the assigned banquet task; a title does not supply the task."
+    },
+    {
+      "questionIds": [
+        2202,
+        2203
+      ],
+      "questions": [
+        {
+          "id": 2202,
+          "question": "In Bambi II, what does Bambi playfully practice with his father before Friend Owl introduces Mena?",
+          "answers": [
+            "Headbutting",
+            "Running fast",
+            "Jumping over logs",
+            "Swimming"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 2203,
+          "question": "In Bambi II, what does the Great Prince do to Bambi's belly just before Friend Owl interrupts their play?",
+          "answers": [
+            "Blows a raspberry",
+            "Grooms his fur",
+            "Checks for thorns",
+            "Brushes off snow"
+          ],
+          "difficulty": "hard",
+          "category": "characters"
+        }
+      ],
+      "rationale": "Bambi headbutting practice and his father blowing a raspberry are different actions, despite being in the same play scene."
+    },
+    {
+      "questionIds": [
+        2211,
+        1401
+      ],
+      "questions": [
+        {
+          "id": 2211,
+          "question": "In the Pixar short Bao, in which city does the Chinese-Canadian family live?",
+          "answers": [
+            "Toronto",
+            "Vancouver",
+            "Chicago",
+            "San Francisco"
+          ],
+          "difficulty": "medium",
+          "category": "pixar"
+        },
+        {
+          "id": 1401,
+          "question": "In what Canadian city does Turning Red take place?",
+          "answers": [
+            "Toronto",
+            "Vancouver",
+            "Montreal",
+            "Ottawa"
+          ],
+          "difficulty": "easy",
+          "category": "pixar"
+        }
+      ],
+      "rationale": "Independently rechecked existing accepted comparison: Bao and Turning Red are separate Toronto-set works."
+    }
+  ],
+  "retirementReference": "audit/runs/next-shard-0033-comparison-2196-2198.json",
+  "scopeLimitations": "No connected production flag export was available locally. Player flags were not changed or resolved. Detailed secondary text corroboration was used where primary scene playback was unavailable; limitations are embedded in source notes."
+}

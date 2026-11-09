@@ -1,0 +1,34 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-08",
+  "questionSnapshots": [
+    {
+      "id": 1559,
+      "question": "In Onward, what is the name of Ian and Barley's mother, who is dating a centaur police officer during the film?",
+      "answers": [
+        "Laurel Lightfoot",
+        "Guinevere Lightfoot",
+        "Fawn Lightfoot",
+        "Willow Lightfoot"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    {
+      "id": 1560,
+      "question": "In Onward, what is the name of the centaur police officer who is dating Ian and Barley's mother?",
+      "answers": [
+        "Colt Bronco",
+        "Deputy Hoofington",
+        "Sergeant Mane",
+        "Officer Trot"
+      ],
+      "difficulty": "hard",
+      "category": "characters"
+    }
+  ],
+  "decision": "retain-both",
+  "reason": "Different tested identities: mother Laurel versus partner Colt. Neither answer supplies the other name.",
+  "evidence": "audit/source-notes.json#b28-onward",
+  "fullContext": "All 351 character, 444 movie, 296 Pixar and 171 Walt category records plus additional named-topic records read with all four answers. Final edits compared against the unchanged context; no duplicate retirement warranted."
+}

@@ -1,0 +1,56 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-09",
+  "retireId": 2196,
+  "replacedBy": 2198,
+  "originalPlannedQuestion": {
+    "id": 2196,
+    "question": "In Tarzan II, what are the names of the two feared gorilla brothers who rule over Dark Mountain?",
+    "answers": [
+      "Uto and Kago",
+      "Terk and Tantor",
+      "Kerchak and Kala",
+      "Sabor and Zugor"
+    ],
+    "difficulty": "hard",
+    "category": "characters"
+  },
+  "retiredSnapshot": {
+    "id": 2196,
+    "question": "In Tarzan II, which pair of gorilla brothers lives near Dark Mountain with Mama Gunda?",
+    "answers": [
+      "Uto and Kago",
+      "Terk and Tantor",
+      "Kerchak and Kala",
+      "Sabor and Zugor"
+    ],
+    "difficulty": "hard",
+    "category": "characters"
+  },
+  "replacement": {
+    "id": 2198,
+    "question": "In Tarzan II, who is the domineering mother of the gorilla brothers Uto and Kago?",
+    "answers": [
+      "Mama Gunda",
+      "Kala",
+      "Terk",
+      "Tantor"
+    ],
+    "difficulty": "hard",
+    "category": "characters"
+  },
+  "reason": "Reciprocal identification of the Mama Gunda/Uto/Kago family: the revised 2196 supplies Mama Gunda and asks for her two sons, while 2198 supplies the sons and asks for their mother. Retain the more precise mother question; do not retain the unsupported original claim that the boys rule Dark Mountain.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Tarzan_II",
+      "locator": "Plot and Voice cast: Uto, Kago and Mama Gunda; trapped by fear of Zugor",
+      "evidence": "Uto and Kago are Gunda sons; all three fear Zugor and are trapped in the valley."
+    },
+    {
+      "url": "https://www.springfieldspringfield.co.uk/movie_script.php?movie=tarzan-ii",
+      "locator": "Lines 909-928, Mama Gunda reacts to Zugor reveal",
+      "evidence": "Gunda identifies the boys as her sons and complains they have been stuck in the valley."
+    }
+  ],
+  "challenge": "The pair names are not a separate new scene fact under the revised mother-anchored wording; they reconstruct the same family relationship. Other pairings do not describe Gunda sons."
+}
