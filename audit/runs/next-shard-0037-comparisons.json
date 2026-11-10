@@ -1,0 +1,341 @@
+{
+  "schema": 1,
+  "comparisons": [
+    {
+      "findingId": "duplicate-3701a2ca5b99ed4c8bdc",
+      "questionIds": [
+        2406,
+        2505
+      ],
+      "questions": [
+        {
+          "id": 2406,
+          "question": "John Hench worked on the Oscar-winning special effects of which 1954 Disney film?",
+          "answers": [
+            "20,000 Leagues Under the Sea",
+            "Davy Crockett",
+            "The Living Desert",
+            "Old Yeller"
+          ],
+          "difficulty": "hard",
+          "category": "walt"
+        },
+        {
+          "id": 2505,
+          "question": "At Tokyo DisneySea's Mysterious Island, what submarine-themed dark ride puts guests aboard a 'Neptune' vehicle with a mini searchlight?",
+          "answers": [
+            "20,000 Leagues Under the Sea",
+            "Journey to the Center of the Earth",
+            "Nemo & Friends SeaRider",
+            "Aquatopia"
+          ],
+          "difficulty": "medium",
+          "category": "parks"
+        }
+      ],
+      "reviewer": "Codex",
+      "at": "2026-11-09",
+      "decision": "accepted",
+      "reason": "Hench’s work on a 1954 film versus a Tokyo DisneySea submarine ride: shared title, separate production and attraction identities."
+    },
+    {
+      "findingId": "duplicate-44d253e09f523a111025",
+      "questionIds": [
+        1384,
+        2420
+      ],
+      "questions": [
+        {
+          "id": 1384,
+          "question": "Which Disney film features the rousing song 'Gaston,' in which the villain's admirers celebrate his vanity and brawn?",
+          "answers": [
+            "Beauty and the Beast",
+            "The Hunchback of Notre Dame",
+            "Hercules",
+            "The Great Mouse Detective"
+          ],
+          "difficulty": "easy",
+          "category": "music"
+        },
+        {
+          "id": 2420,
+          "question": "Which film became the first animated Best Picture nominee at the 1992 Academy Awards ceremony?",
+          "answers": [
+            "Beauty and the Beast",
+            "The Lion King",
+            "Toy Story",
+            "Aladdin"
+          ],
+          "difficulty": "medium",
+          "category": "movies",
+          "film": "Beauty and the Beast"
+        }
+      ],
+      "reviewer": "Codex",
+      "at": "2026-11-09",
+      "decision": "accepted",
+      "reason": "Identifying the film containing Gaston versus its Best Picture milestone: different music-context and awards facts."
+    },
+    {
+      "findingId": "duplicate-54192f87e98fba5d58e2",
+      "questionIds": [
+        463,
+        2420
+      ],
+      "questions": [
+        {
+          "id": 463,
+          "question": "In what year did 'Beauty and the Beast' win the Academy Award for Best Original Song?",
+          "answers": [
+            "1992",
+            "1990",
+            "1994",
+            "1988"
+          ],
+          "difficulty": "hard",
+          "category": "music"
+        },
+        {
+          "id": 2420,
+          "question": "Which film became the first animated Best Picture nominee at the 1992 Academy Awards ceremony?",
+          "answers": [
+            "Beauty and the Beast",
+            "The Lion King",
+            "Toy Story",
+            "Aladdin"
+          ],
+          "difficulty": "medium",
+          "category": "movies",
+          "film": "Beauty and the Beast"
+        }
+      ],
+      "reviewer": "Codex",
+      "at": "2026-11-09",
+      "decision": "accepted",
+      "reason": "The title song’s Original Song win and the film’s Best Picture nomination are separate categories and achievements, even though both involve the 1992 ceremony."
+    },
+    {
+      "findingId": "duplicate-5751fa1cc04f69ed27a5",
+      "questionIds": [
+        120,
+        2422
+      ],
+      "questions": [
+        {
+          "id": 120,
+          "question": "What is the name of the famous mouse character Walt Disney created?",
+          "answers": [
+            "Mickey Mouse",
+            "Stuart Little",
+            "Danger Mouse",
+            "Jerry Mouse"
+          ],
+          "difficulty": "easy",
+          "category": "walt"
+        },
+        {
+          "id": 2422,
+          "question": "After losing control of Oswald following his dealings with distributor Charles Mintz in 1928, which new character did Walt Disney develop?",
+          "answers": [
+            "Mickey Mouse",
+            "Donald Duck",
+            "Julius the Cat",
+            "Goofy"
+          ],
+          "difficulty": "medium",
+          "category": "walt"
+        }
+      ],
+      "reviewer": "Codex",
+      "at": "2026-11-09",
+      "decision": "accepted",
+      "reason": "Generic famous-mouse identification versus the historical successor developed after the Oswald contract loss: the latter adds the causal chronology, not just another mouse description."
+    },
+    {
+      "findingId": "duplicate-62abc061ca8a836d2f0b",
+      "questionIds": [
+        2420,
+        2577
+      ],
+      "questions": [
+        {
+          "id": 2420,
+          "question": "Which film became the first animated Best Picture nominee at the 1992 Academy Awards ceremony?",
+          "answers": [
+            "Beauty and the Beast",
+            "The Lion King",
+            "Toy Story",
+            "Aladdin"
+          ],
+          "difficulty": "medium",
+          "category": "movies",
+          "film": "Beauty and the Beast"
+        },
+        {
+          "id": 2577,
+          "question": "What was the first stage musical produced by Walt Disney Theatrical, premiering on Broadway in 1994?",
+          "answers": [
+            "Beauty and the Beast",
+            "The Lion King",
+            "Aida",
+            "Mary Poppins"
+          ],
+          "difficulty": "medium",
+          "category": "walt"
+        }
+      ],
+      "reviewer": "Codex",
+      "at": "2026-11-09",
+      "decision": "accepted",
+      "reason": "First animated Best Picture nomination versus first Disney Broadway stage production: separate film-award and theater-history milestones."
+    },
+    {
+      "findingId": "duplicate-697b38bbefa63ae89a6e",
+      "questionIds": [
+        2394,
+        2395
+      ],
+      "questions": [
+        {
+          "id": 2394,
+          "question": "In Encanto, who is Pepa's husband?",
+          "answers": [
+            "Félix",
+            "Agustín",
+            "Bruno",
+            "Camilo"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        },
+        {
+          "id": 2395,
+          "question": "In Encanto, who is Julieta's husband?",
+          "answers": [
+            "Agustín",
+            "Félix",
+            "Bruno",
+            "Antonio"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        }
+      ],
+      "reviewer": "Codex",
+      "at": "2026-11-09",
+      "decision": "accepted",
+      "reason": "Pepa/Félix and Julieta/Agustín are two different marriages. Knowing one husband does not establish the other wife’s spouse."
+    },
+    {
+      "findingId": "duplicate-77dc73896c43e6fb7b7a",
+      "questionIds": [
+        1195,
+        2422
+      ],
+      "questions": [
+        {
+          "id": 1195,
+          "question": "For which character did Walt Disney receive a special Academy Award in 1932?",
+          "answers": [
+            "Mickey Mouse",
+            "Donald Duck",
+            "Oswald the Lucky Rabbit",
+            "Goofy"
+          ],
+          "difficulty": "medium",
+          "category": "walt"
+        },
+        {
+          "id": 2422,
+          "question": "After losing control of Oswald following his dealings with distributor Charles Mintz in 1928, which new character did Walt Disney develop?",
+          "answers": [
+            "Mickey Mouse",
+            "Donald Duck",
+            "Julius the Cat",
+            "Goofy"
+          ],
+          "difficulty": "medium",
+          "category": "walt"
+        }
+      ],
+      "reviewer": "Codex",
+      "at": "2026-11-09",
+      "decision": "accepted",
+      "reason": "Character honored by the 1932 honorary Oscar versus the character developed after losing Oswald in 1928: separate award and creation-history relationships."
+    },
+    {
+      "findingId": "duplicate-a295eb5a0dcfd3a80386",
+      "questionIds": [
+        530,
+        2380
+      ],
+      "questions": [
+        {
+          "id": 530,
+          "question": "In The Emperor's New Groove (2000), what animal does Kuzco become after the palace dinner?",
+          "answers": [
+            "A llama",
+            "A frog",
+            "A bear",
+            "A parrot"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 2380,
+          "question": "What animal does Donald Duck try to ride across a bridge in Saludos Amigos' 'Lake Titicaca' segment?",
+          "answers": [
+            "A llama",
+            "An alpaca",
+            "A donkey",
+            "A goat"
+          ],
+          "difficulty": "hard",
+          "category": "movies"
+        }
+      ],
+      "reviewer": "Codex",
+      "at": "2026-11-09",
+      "decision": "accepted",
+      "reason": "Kuzco’s transformation species versus Donald’s bridge mount in a different film: two different character events sharing llama."
+    },
+    {
+      "findingId": "duplicate-f98931fdcf8a0f59ee87",
+      "questionIds": [
+        266,
+        2408
+      ],
+      "questions": [
+        {
+          "id": 266,
+          "question": "In Pinocchio (1940), what is the name of the island where boys are turned into donkeys?",
+          "answers": [
+            "Pleasure Island",
+            "Treasure Island",
+            "Pony Land",
+            "Donkey Island"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 2408,
+          "question": "In Pinocchio (1940), which boy plays pool with Pinocchio at Pleasure Island before turning into a donkey?",
+          "answers": [
+            "Lampwick",
+            "Honest John",
+            "Gideon",
+            "Alexander"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        }
+      ],
+      "reviewer": "Codex",
+      "at": "2026-11-09",
+      "decision": "accepted",
+      "reason": "Name of the donkey-transforming island versus identity of Pinocchio’s pool companion: knowing a place name does not establish a boy’s identity."
+    }
+  ]
+}

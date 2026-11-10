@@ -1,0 +1,3292 @@
+{
+  "schema": 1,
+  "reviewer": "Codex",
+  "at": "2026-11-09",
+  "sourcesChecked": [
+    "b37-balloons",
+    "b37-balloonscor",
+    "b37-beastfirst",
+    "b37-bergen",
+    "b37-carl",
+    "b37-elio",
+    "b37-elioamb",
+    "b37-encanto",
+    "b37-fantasia",
+    "b37-fantasiacor",
+    "b37-fantasiadetail",
+    "b37-flash",
+    "b37-frog",
+    "b37-frogcast",
+    "b37-frogdialogue",
+    "b37-hench",
+    "b37-hero",
+    "b37-herocor",
+    "b37-holloway",
+    "b37-ichabod",
+    "b37-island",
+    "b37-jose",
+    "b37-lampwick",
+    "b37-lampwickcor",
+    "b37-lithgow",
+    "b37-marc",
+    "b37-marcnine",
+    "b37-melody",
+    "b37-melodywdas",
+    "b37-mintz",
+    "b37-moana",
+    "b37-moana2",
+    "b37-nana",
+    "b37-nanacor",
+    "b37-nanadisney",
+    "b37-oscar1955",
+    "b37-oscar1992",
+    "b37-pooh",
+    "b37-poohroles",
+    "b37-roo",
+    "b37-saludos",
+    "b37-saludosdetail",
+    "b37-saludoswdas",
+    "b37-shadow",
+    "b37-shadowcor",
+    "b37-shadowstudy",
+    "b37-tamatoa",
+    "b37-up3d",
+    "b37-upscript",
+    "b37-ward",
+    "b37-zoo",
+    "b37-zoo2",
+    "b37-zoo2script"
+  ],
+  "reviews": [
+    {
+      "questionId": 2371,
+      "hash": "00bb8b351499469ed71b34bbf429c30216baaaa3d8e95d86ec806f8957a75244",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Specified the animated 2016 version. Transformation fact differs from #22’s stolen-object fact and #70’s crab identity.",
+      "context": "The 2016 film’s revealed lava form is Te Kā; this is distinct from sequel entities.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 2016 film’s revealed lava form is Te Kā; this is distinct from sequel entities.",
+        "sources": [
+          "b37-moana",
+          "b37-moana2",
+          "b37-tamatoa"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney identifies the corrupted Te Fiti as Te Kā.",
+          "sources": [
+            "b37-moana",
+            "b37-moana2",
+            "b37-tamatoa"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tamatoa is a separate crab, not the goddess’s transformed body.",
+          "sources": [
+            "b37-moana",
+            "b37-moana2",
+            "b37-tamatoa"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Nalo is the sequel storm god, not Te Fiti.",
+          "sources": [
+            "b37-moana",
+            "b37-moana2",
+            "b37-tamatoa"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Matangi is the sequel figure serving Nalo, not Te Fiti.",
+          "sources": [
+            "b37-moana",
+            "b37-moana2",
+            "b37-tamatoa"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged whether the lava creature is merely an opponent: the recap expressly identifies her as Te Fiti herself. Neither sequel character supplies another identity."
+      }
+    },
+    {
+      "questionId": 2372,
+      "hash": "c31f9b273c9999435de9666fd2f229114389f81c886163d20d9a776cab01898d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Hard multi-credit history; different from #533’s Earle background-art fact and attraction-specific designer questions.",
+      "context": "Davis’s documented combined animation and attraction credits identify one animator.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Davis’s documented combined animation and attraction credits identify one animator.",
+        "sources": [
+          "b37-marc",
+          "b37-marcnine"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Disney biography assigns the two villains and both attractions to Davis.",
+          "sources": [
+            "b37-marc",
+            "b37-marcnine"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Johnston is not the artist identified for this combined portfolio.",
+          "sources": [
+            "b37-marc",
+            "b37-marcnine"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Thomas is not the artist credited with this complete set.",
+          "sources": [
+            "b37-marc",
+            "b37-marcnine"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kimball is not the artist assigned this portfolio.",
+          "sources": [
+            "b37-marc",
+            "b37-marcnine"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other Nine Old Men worked on these films; that does not make them the designer with this specific combined portfolio. The biography identifies Davis explicitly."
+      }
+    },
+    {
+      "questionId": 2373,
+      "hash": "20f39d339000b342b79e15f4f404c475d3e4d45d4621e84a47a5f2793b41c4c5",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Easy character identification. #2131 asks the mother-son relationship, which is a distinct fact.",
+      "context": "Roo’s Disney species identification is a baby kangaroo.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Roo’s Disney species identification is a baby kangaroo.",
+        "sources": [
+          "b37-roo"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The official entry calls Roo a baby kangaroo.",
+          "sources": [
+            "b37-roo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Koala is a different species from the stated kangaroo.",
+          "sources": [
+            "b37-roo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wallaby is a different identification from Disney’s stated kangaroo.",
+          "sources": [
+            "b37-roo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rabbit is not Roo’s stated species.",
+          "sources": [
+            "b37-roo"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Wallabies are similar marsupials, but the explicit character species is kangaroo. The question asks Roo’s species, not the meaning of his name."
+      }
+    },
+    {
+      "questionId": 2374,
+      "hash": "2492f8114f9e7be71c75cf3d4bf5dc0558d1f985fae111ccd4ed38cdc393d8b7",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Hard plot-role identification; distinct from Charlotte’s dream and her father’s identity. Secondary plot detail corroborated by dialogue and official cast.",
+      "context": "Facilier transforms Lawrence into Naveen’s double for the Charlotte marriage scheme.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Facilier transforms Lawrence into Naveen’s double for the Charlotte marriage scheme.",
+        "sources": [
+          "b37-frog",
+          "b37-frogdialogue",
+          "b37-frogcast"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Lawrence is the valet and disguised bridegroom in the plot.",
+          "sources": [
+            "b37-frog",
+            "b37-frogdialogue",
+            "b37-frogcast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Louis is the alligator musician, not the disguised valet.",
+          "sources": [
+            "b37-frog",
+            "b37-frogdialogue",
+            "b37-frogcast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ray is the firefly helping the heroes, not that valet.",
+          "sources": [
+            "b37-frog",
+            "b37-frogdialogue",
+            "b37-frogcast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Big Daddy is Charlotte’s father and target of the fortune scheme, not its disguised bridegroom.",
+          "sources": [
+            "b37-frog",
+            "b37-frogdialogue",
+            "b37-frogcast"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Disguise versus actual identity checked: the prince-shaped man is Lawrence. Big Daddy’s wealth makes him relevant but not the disguised groom."
+      }
+    },
+    {
+      "questionId": 2376,
+      "hash": "2a4fa62e562be9e943979117d8bb36ac80b659ba77379e44ce1db24e5489e448",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Removed incidental horse/sweetheart clauses. Medium package-film recall; no duplicate of the pioneer or poem questions.",
+      "context": "The ordered seven-part film ends with the Pecos Bill story.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The ordered seven-part film ends with the Pecos Bill story.",
+        "sources": [
+          "b37-melody",
+          "b37-melodywdas"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Pecos Bill is the seventh and closing sequence.",
+          "sources": [
+            "b37-melody",
+            "b37-melodywdas"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Johnny Appleseed is third rather than the cowboy finale.",
+          "sources": [
+            "b37-melody",
+            "b37-melodywdas"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Paul Bunyan is not among the seven sequences.",
+          "sources": [
+            "b37-melody",
+            "b37-melodywdas"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Casey Jones is not among the seven sequences.",
+          "sources": [
+            "b37-melody",
+            "b37-melodywdas"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the complete order rather than simply presence: Pecos is last; Appleseed is in the film but earlier."
+      }
+    },
+    {
+      "questionId": 2377,
+      "hash": "f4b6f6f2cebc774ba7fc0935da974e49439ede44dc18c65bdee08b471835e16b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Removed generic legend repetition and apple/answer lexical overlap; uses Disney’s shorter segment label. Distinct from the closing-order question.",
+      "context": "The pioneer planting orchards in the western trek is Johnny Appleseed.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The pioneer planting orchards in the western trek is Johnny Appleseed.",
+        "sources": [
+          "b37-melody",
+          "b37-melodywdas"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The official synopsis assigns apple planting to Johnny Appleseed.",
+          "sources": [
+            "b37-melody",
+            "b37-melodywdas"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pecos Bill is the cowboy finale, not the orchard pioneer.",
+          "sources": [
+            "b37-melody",
+            "b37-melodywdas"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Little Toot is a tugboat story, not a pioneer trek.",
+          "sources": [
+            "b37-melody",
+            "b37-melodywdas"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wintertime concerns a skating romance, not orchard planting.",
+          "sources": [
+            "b37-melody",
+            "b37-melodywdas"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Each competing segment was read in the complete list. The pioneer is not Pecos simply because both are American folklore figures."
+      }
+    },
+    {
+      "questionId": 2378,
+      "hash": "ff02e38dc6396d35b6b7531bfd51d4b5856bf377c52a1f0ad0eaa4b61614ed60",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Replaced overlapping steamboat distractor; concise medium vessel identification, distinct from name/order facts.",
+      "context": "Little Toot is explicitly a small tugboat.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Little Toot is explicitly a small tugboat.",
+        "sources": [
+          "b37-melody",
+          "b37-melodywdas"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Both Disney accounts identify him as a tugboat.",
+          "sources": [
+            "b37-melody",
+            "b37-melodywdas"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A fishing trawler is not the vessel function assigned to Toot.",
+          "sources": [
+            "b37-melody",
+            "b37-melodywdas"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A ferry is not the vessel function assigned to Toot.",
+          "sources": [
+            "b37-melody",
+            "b37-melodywdas"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The ocean liner is rescued by Toot; he is not a cargo ship.",
+          "sources": [
+            "b37-melody",
+            "b37-melodywdas"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Original steamboat could coexist with tugboat because propulsion and function differ. The final three alternatives are competing vessel roles, not propulsion types."
+      }
+    },
+    {
+      "questionId": 2379,
+      "hash": "3501ee3fd307da6b725789832993e2526953f1133cc0023dec6caefa5741cef9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Hard segment/order recall. Distinct from pioneer and closing-cowboy facts; no Frozen content despite the topic selector.",
+      "context": "The opening sequence is the sleigh/skating romance Once Upon a Wintertime.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The opening sequence is the sleigh/skating romance Once Upon a Wintertime.",
+        "sources": [
+          "b37-melody",
+          "b37-melodywdas"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The numbered first sequence is Wintertime.",
+          "sources": [
+            "b37-melody",
+            "b37-melodywdas"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bumble Boogie is second and concerns a bee’s nightmare.",
+          "sources": [
+            "b37-melody",
+            "b37-melodywdas"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Trees is fifth and adapts a poem.",
+          "sources": [
+            "b37-melody",
+            "b37-melodywdas"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Samba is sixth and features Donald/José.",
+          "sources": [
+            "b37-melody",
+            "b37-melodywdas"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the unsupported fall-through-water detail. Disney’s ordered list and skating synopsis jointly establish the final premise."
+      }
+    },
+    {
+      "questionId": 2380,
+      "hash": "1793539c0bf72576e7122c01973838ee476fd85ba05f53c0d081aa2de8304489",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Hard scene recall; the llama in Emperor’s New Groove is a different transformation fact, not a duplicate.",
+      "context": "Donald’s bridge-riding encounter in Lake Titicaca is with a llama.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Donald’s bridge-riding encounter in Lake Titicaca is with a llama.",
+        "sources": [
+          "b37-saludoswdas",
+          "b37-saludosdetail"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The official synopsis names a llama and the detailed scene places it on the bridge.",
+          "sources": [
+            "b37-saludoswdas",
+            "b37-saludosdetail"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Alpaca is a similar Andean animal but not the animal identified in this scene.",
+          "sources": [
+            "b37-saludoswdas",
+            "b37-saludosdetail"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Donkey is not the specified bridge animal.",
+          "sources": [
+            "b37-saludoswdas",
+            "b37-saludosdetail"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Goat is not the specified bridge animal.",
+          "sources": [
+            "b37-saludoswdas",
+            "b37-saludosdetail"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Alpaca resemblance challenged against the explicit official species identification; rewrote the vague outwitting claim to the documented bridge action."
+      }
+    },
+    {
+      "questionId": 2381,
+      "hash": "afa5423a7c491a616986fbacbdfd002aa9fffedd23e8b6b8ca031af30654a325",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Hard package-film character naming; separate from gaucho and samba-teacher facts.",
+      "context": "Pedro is the named baby airplane who substitutes on his father’s mail service.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pedro is the named baby airplane who substitutes on his father’s mail service.",
+        "sources": [
+          "b37-saludos"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The segment description identifies Pedro as that airplane.",
+          "sources": [
+            "b37-saludos"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Panchito is not the plane named in the Pedro description.",
+          "sources": [
+            "b37-saludos"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jose is not the plane named by this specific segment synopsis.",
+          "sources": [
+            "b37-saludos"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Paco is not the named mail plane.",
+          "sources": [
+            "b37-saludos"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked that the subject is the aircraft himself, not a pilot. The final question removes the unneeded cold/Andes subclaims."
+      }
+    },
+    {
+      "questionId": 2382,
+      "hash": "436e4a1a7b312da9206bd7f7f9a0335dac23ced0d0622ab784c6febf34e387af",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium role recall; full Saludos context read, with no duplicate gaucho question.",
+      "context": "El Gaucho Goofy makes Goofy the Argentine cowboy.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "El Gaucho Goofy makes Goofy the Argentine cowboy.",
+        "sources": [
+          "b37-saludos",
+          "b37-saludoswdas"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Both studio accounts assign the gaucho role to Goofy.",
+          "sources": [
+            "b37-saludos",
+            "b37-saludoswdas"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Donald belongs to the tourist/samba stories, not the gaucho role.",
+          "sources": [
+            "b37-saludos",
+            "b37-saludoswdas"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mickey is not the named character in this gaucho segment.",
+          "sources": [
+            "b37-saludos",
+            "b37-saludoswdas"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pluto is not the named gaucho.",
+          "sources": [
+            "b37-saludos",
+            "b37-saludoswdas"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Donald appears in the same feature, but the complete segment breakdown assigns his scenes separately from Goofy’s gaucho role."
+      }
+    },
+    {
+      "questionId": 2383,
+      "hash": "2663bdc41f79ce22bc4cd6a1faec27674365284a8a24d11a2459485de068d330",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium film/role recall; not duplicated by #2410’s Aracuan participation in a different film.",
+      "context": "Saludos introduces José Carioca, the parrot who teaches samba in Aquarela do Brasil.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Saludos introduces José Carioca, the parrot who teaches samba in Aquarela do Brasil.",
+        "sources": [
+          "b37-saludos",
+          "b37-saludosdetail",
+          "b37-jose"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The debut account and Disney segment list identify José Carioca.",
+          "sources": [
+            "b37-saludos",
+            "b37-saludosdetail",
+            "b37-jose"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Panchito is not the teacher identified in this segment.",
+          "sources": [
+            "b37-saludos",
+            "b37-saludosdetail",
+            "b37-jose"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Zazu is not the teacher identified in the Brazilian segment.",
+          "sources": [
+            "b37-saludos",
+            "b37-saludosdetail",
+            "b37-jose"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Iago is a parrot but not José, the named teacher in this sequence.",
+          "sources": [
+            "b37-saludos",
+            "b37-saludosdetail",
+            "b37-jose"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Iago’s species alone could fit a parrot description, so checked the film and exact teaching role, which name José uniquely."
+      }
+    },
+    {
+      "questionId": 2384,
+      "hash": "659b235035fb5dde59f8b8090b7fc9259ca7154dc8ee2d33a03c4e29d8d6c967",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Hard performance-history fact; separate from the Bongo narrator and package-film title questions.",
+      "context": "The 1947 live-action framing has Bergen with McCarthy and Snerd telling Mickey and the Beanstalk.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 1947 live-action framing has Bergen with McCarthy and Snerd telling Mickey and the Beanstalk.",
+        "sources": [
+          "b37-bergen"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney names Bergen as the host/storyteller with these two puppets.",
+          "sources": [
+            "b37-bergen"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Henson is not the storyteller in this specified framing scene.",
+          "sources": [
+            "b37-bergen"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lewis is not the named storyteller with these puppets.",
+          "sources": [
+            "b37-bergen"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Winchell is a ventriloquist, but not the credited storyteller with McCarthy and Snerd here.",
+          "sources": [
+            "b37-bergen"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Winchell’s genuine ventriloquism does not establish this film credit. Disney identifies both puppet pair and narrator together."
+      }
+    },
+    {
+      "questionId": 2386,
+      "hash": "485e2f1d85d291bef71d20cd0485db5f641b5b5120a63f2c0f877439a10c651e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium role identification; different from the other Fantasia 2000 music and animal stories.",
+      "context": "Pomp and Circumstance casts Donald as Noah’s ark assistant.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pomp and Circumstance casts Donald as Noah’s ark assistant.",
+        "sources": [
+          "b37-fantasia",
+          "b37-fantasiadetail"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The official segment catalogue explicitly names Noah.",
+          "sources": [
+            "b37-fantasia",
+            "b37-fantasiadetail"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Moses is not the biblical figure assigned to this ark story.",
+          "sources": [
+            "b37-fantasia",
+            "b37-fantasiadetail"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Adam is not the named ark figure.",
+          "sources": [
+            "b37-fantasia",
+            "b37-fantasiadetail"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jonah is not the named ark figure.",
+          "sources": [
+            "b37-fantasia",
+            "b37-fantasiadetail"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Verified film casting rather than assuming the biblical Ark clue alone; Disney identifies Noah and Donald’s role."
+      }
+    },
+    {
+      "questionId": 2387,
+      "hash": "35abe2000b36e931309024bed2ee59157884b02c57aa769735ab8670fb0c1ae2",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Hard specific visual-gag recall; all four options reviewed as the cause of this conflict, not claims of lifetime abilities.",
+      "context": "The flamingo’s yo-yo play is the nonconforming activity of Carnival of the Animals.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The flamingo’s yo-yo play is the nonconforming activity of Carnival of the Animals.",
+        "sources": [
+          "b37-fantasia",
+          "b37-fantasiacor",
+          "b37-fantasiadetail"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney and contemporary review identify the yo-yo.",
+          "sources": [
+            "b37-fantasia",
+            "b37-fantasiacor",
+            "b37-fantasiadetail"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Shell collecting is not the activity identified as this segment’s conflict.",
+          "sources": [
+            "b37-fantasia",
+            "b37-fantasiacor",
+            "b37-fantasiadetail"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The segment uses dancing, but the distinctive activity opposed by the flock is yo-yo play, not tap dancing.",
+          "sources": [
+            "b37-fantasia",
+            "b37-fantasiacor",
+            "b37-fantasiadetail"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fish juggling is not the specific conflicting hobby documented for the outcast.",
+          "sources": [
+            "b37-fantasia",
+            "b37-fantasiacor",
+            "b37-fantasiadetail"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A general dance description would be too broad. The cited sequence accounts identify the yo-yo as the gag distinguishing him from the flock."
+      }
+    },
+    {
+      "questionId": 2388,
+      "hash": "d19e40b4626de8d5c48b9e8d770948e8dcad953313368ff4d8990aab84fe24a6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Hard adaptation-specific outcome; detailed reviews carry the fire claim, not the general Disney film homepage.",
+      "context": "In the Disney Tin Soldier adaptation the Jack-in-the-Box is the villain that falls into the fire.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "In the Disney Tin Soldier adaptation the Jack-in-the-Box is the villain that falls into the fire.",
+        "sources": [
+          "b37-fantasia",
+          "b37-fantasiadetail",
+          "b37-fantasiacor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The detailed violence account explicitly describes his fiery death.",
+          "sources": [
+            "b37-fantasia",
+            "b37-fantasiadetail",
+            "b37-fantasiacor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The nutcracker is not the villain identified as falling into the fire.",
+          "sources": [
+            "b37-fantasia",
+            "b37-fantasiadetail",
+            "b37-fantasiacor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The wind-up monkey is not the attacker identified in this account.",
+          "sources": [
+            "b37-fantasia",
+            "b37-fantasiadetail",
+            "b37-fantasiacor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The rocking horse is not the attacker identified in this account.",
+          "sources": [
+            "b37-fantasia",
+            "b37-fantasiadetail",
+            "b37-fantasiacor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished Andersen’s original ending from Disney’s: the cited Disney scene review assigns the fire to the villain, not the soldier and ballerina."
+      }
+    },
+    {
+      "questionId": 2389,
+      "hash": "09c53205027f94ef0b432e340411d4c782f5756c77e31f7d072e039412d65c13",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Hard segment-specific narrator fact; complementary, not duplicate of the other segment’s separate credit.",
+      "context": "Wind in the Willows is introduced by Basil Rathbone in the film’s library framing.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Wind in the Willows is introduced by Basil Rathbone in the film’s library framing.",
+        "sources": [
+          "b37-ichabod"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The official synopsis names Rathbone.",
+          "sources": [
+            "b37-ichabod"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Crosby takes over for the other story, Sleepy Hollow.",
+          "sources": [
+            "b37-ichabod"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Holloway is not the specified narrator in this framing.",
+          "sources": [
+            "b37-ichabod"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Nash is not the specified narrator in this framing.",
+          "sources": [
+            "b37-ichabod"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Both narrators share the film, but the source explicitly marks the story transition and excludes Crosby for this segment."
+      }
+    },
+    {
+      "questionId": 2390,
+      "hash": "4e2b5eedd84dc40d6b65c8d7805b0fbda195aa1a8870799aee17a1d5625ede4d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Removed extra singing clause; hard narrator credit, distinct from Rathbone’s other segment.",
+      "context": "Crosby narrates Legend of Sleepy Hollow after the return to the library.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Crosby narrates Legend of Sleepy Hollow after the return to the library.",
+        "sources": [
+          "b37-ichabod"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The source explicitly gives this story to Crosby.",
+          "sources": [
+            "b37-ichabod"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rathbone introduces Wind in the Willows, not this story.",
+          "sources": [
+            "b37-ichabod"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sinatra is not the narrator named for Sleepy Hollow.",
+          "sources": [
+            "b37-ichabod"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Martin is not the narrator named for Sleepy Hollow.",
+          "sources": [
+            "b37-ichabod"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Narration and singing had been bundled; the final wording asks only the explicit narrator credit. Rathbone is the plausible other-segment trap."
+      }
+    },
+    {
+      "questionId": 2393,
+      "hash": "b4145a01751f4b344af271d425a629315a922b6cf63edee3c7206b16df5b011d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium gift assignment, separate from each other relative’s gift and the no-gift question.",
+      "context": "Julieta’s gift heals through food; the other listed women have different explicitly assigned gifts.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Julieta’s gift heals through food; the other listed women have different explicitly assigned gifts.",
+        "sources": [
+          "b37-encanto"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Julieta’s magic is in her food.",
+          "sources": [
+            "b37-encanto"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pepa’s stated gift controls weather.",
+          "sources": [
+            "b37-encanto"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Isabela’s stated gift grows plants and flowers.",
+          "sources": [
+            "b37-encanto"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Luisa’s stated gift is super strength.",
+          "sources": [
+            "b37-encanto"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed triplets restriction because Isabela and Luisa are daughters. Full gift roster excludes the other options as the food healer."
+      }
+    },
+    {
+      "questionId": 2394,
+      "hash": "2218e4402da7274dcd5548e70d4afc4483651463d3d0dbb0c2c3164212820f4b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Removed the gift qualifier and restored accents. Medium family recall; #2395 identifies a separate marriage.",
+      "context": "Pepa is married to Félix in the official paired family profiles.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pepa is married to Félix in the official paired family profiles.",
+        "sources": [
+          "b37-encanto"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Pepa/Félix profile identifies him as her husband.",
+          "sources": [
+            "b37-encanto"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Agustín is paired with Julieta, not Pepa.",
+          "sources": [
+            "b37-encanto"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bruno is Pepa’s triplet brother, not her husband.",
+          "sources": [
+            "b37-encanto"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Camilo is Pepa and Félix’s son, not her husband.",
+          "sources": [
+            "b37-encanto"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked relationships, not merely lack of magic: Agustín also married into the family but has a different spouse."
+      }
+    },
+    {
+      "questionId": 2395,
+      "hash": "0ac20269173cb4efe4ec527f957f3ef90fb148765de31f94b8afa963d6eb8eb3",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Removed the cross-question hint and restored accents. Medium family recall; knowing Pepa’s husband does not teach Julieta’s spouse.",
+      "context": "Julieta is married to Agustín in the official paired family profiles.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Julieta is married to Agustín in the official paired family profiles.",
+        "sources": [
+          "b37-encanto"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Agustín is the father paired with Julieta.",
+          "sources": [
+            "b37-encanto"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Félix is Pepa’s husband, not Julieta’s.",
+          "sources": [
+            "b37-encanto"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bruno is Julieta’s triplet brother, not her husband.",
+          "sources": [
+            "b37-encanto"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Antonio is Pepa/Félix’s child, not Julieta’s husband.",
+          "sources": [
+            "b37-encanto"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Félix also lacks a gift, so that trait alone cannot choose. Final wording asks only the unique spouse relationship."
+      }
+    },
+    {
+      "questionId": 2396,
+      "hash": "15b2d90e265dd16ff3bdfc6a5e671a671f55861c057a3ec299fd671e8a09c93b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium role/voice recall; parallel bare names, no title-based answer cue.",
+      "context": "Bogo is the Cape buffalo chief; Disney credits Idris Elba as the returning character.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Bogo is the Cape buffalo chief; Disney credits Idris Elba as the returning character.",
+        "sources": [
+          "b37-zoo",
+          "b37-zoo2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The briefing identifies Bogo as the buffalo chief.",
+          "sources": [
+            "b37-zoo",
+            "b37-zoo2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Clawhauser is the cheetah receptionist.",
+          "sources": [
+            "b37-zoo",
+            "b37-zoo2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lionheart is the mayor rather than the buffalo chief.",
+          "sources": [
+            "b37-zoo",
+            "b37-zoo2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Higgins takes orders and hands case files to Bogo rather than leading the department.",
+          "sources": [
+            "b37-zoo",
+            "b37-zoo2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed titles that made the correct answer the only real chief option. The scene establishes the superior/subordinate distinction for Higgins."
+      }
+    },
+    {
+      "questionId": 2397,
+      "hash": "836642aead2dba984042cca5c70327db0d649bce8004e174c340d73a49af97c6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Hard full-name recall; primary licensing document plus scene identification rather than inferring surname from generic sloth description.",
+      "context": "The DMV scene names Flash; licensed Disney material gives his full name as Flash Slothmore.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The DMV scene names Flash; licensed Disney material gives his full name as Flash Slothmore.",
+        "sources": [
+          "b37-flash",
+          "b37-zoo"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The licensed checklist prints Flash Slothmore.",
+          "sources": [
+            "b37-flash",
+            "b37-zoo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Flash Slowly is not the printed full name.",
+          "sources": [
+            "b37-flash",
+            "b37-zoo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Flash Sloth truncates/changes the documented surname.",
+          "sources": [
+            "b37-flash",
+            "b37-zoo"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Speedy Slothmore changes the documented first name.",
+          "sources": [
+            "b37-flash",
+            "b37-zoo"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The screenplay alone proves only Flash, so the full-name question also uses the licensed checklist. Full name excludes nicknames and truncated forms."
+      }
+    },
+    {
+      "questionId": 2398,
+      "hash": "034910d34d828c83d1ae3f230ba54742c3b3a35561b184319b567cc5ed32c117",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium species recall; distinct from Lionheart’s species and Fru Fru’s family/plot details.",
+      "context": "Mr Big is the established shrew crime boss, explicitly an arctic shrew in Disney’s returning profile.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Mr Big is the established shrew crime boss, explicitly an arctic shrew in Disney’s returning profile.",
+        "sources": [
+          "b37-zoo",
+          "b37-zoo2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney expressly calls him a tiny arctic shrew.",
+          "sources": [
+            "b37-zoo",
+            "b37-zoo2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Field mouse is a different species identification.",
+          "sources": [
+            "b37-zoo",
+            "b37-zoo2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Vole is a different species identification.",
+          "sources": [
+            "b37-zoo",
+            "b37-zoo2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Chipmunk is a different species identification.",
+          "sources": [
+            "b37-zoo",
+            "b37-zoo2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Small size does not establish species; the official profile explicitly identifies an arctic shrew and the original script confirms the crime boss role."
+      }
+    },
+    {
+      "questionId": 2399,
+      "hash": "307e14d48f8656a5a8844a635bdf7f30dc5ac3edf63e10ebb1010fe0eaa77e03",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium version-sensitive breed fact. Official Disney confirms nursemaid identity; the literary-centre account supplies the breed detail.",
+      "context": "This question is limited to the 1953 animated Nana, identified as a St Bernard in the Moat Brae account.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "This question is limited to the 1953 animated Nana, identified as a St Bernard in the Moat Brae account.",
+        "sources": [
+          "b37-nana",
+          "b37-nanadisney",
+          "b37-nanacor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The version-specific account says Disney imagined Nana as a St Bernard.",
+          "sources": [
+            "b37-nana",
+            "b37-nanadisney",
+            "b37-nanacor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Newfoundland describes the theatrical reference dog Luath, not this animated depiction.",
+          "sources": [
+            "b37-nana",
+            "b37-nanadisney",
+            "b37-nanacor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Great Dane is neither breed in the documented stage/Disney distinction.",
+          "sources": [
+            "b37-nana",
+            "b37-nanadisney",
+            "b37-nanacor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bernese Mountain Dog is not Disney’s stated animated breed.",
+          "sources": [
+            "b37-nana",
+            "b37-nanadisney",
+            "b37-nanacor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Newfoundland is defensible in Barrie/stage contexts, so retained the explicit Disney 1953 restriction. The source directly contrasts the two versions."
+      }
+    },
+    {
+      "questionId": 2400,
+      "hash": "10d1c1963ded418f8896ef88cac9a68122b31acf662b73974a00b017e546b03a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Easy scene action; final wording fixes the lexical giveaway without conflating Wendy’s kiss offer in #258.",
+      "context": "Wendy says the loose shadow needs sewing during the 1953 nursery scene.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Wendy says the loose shadow needs sewing during the 1953 nursery scene.",
+        "sources": [
+          "b37-shadow",
+          "b37-shadowcor",
+          "b37-shadowstudy"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The scene dialogue and academic analysis specify sewing with needle and thread.",
+          "sources": [
+            "b37-shadow",
+            "b37-shadowcor",
+            "b37-shadowstudy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Glue is not the repair method Wendy chooses; sticking is expressly rejected.",
+          "sources": [
+            "b37-shadow",
+            "b37-shadowcor",
+            "b37-shadowstudy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tying is a different attachment action from the stated sewing method.",
+          "sources": [
+            "b37-shadow",
+            "b37-shadowcor",
+            "b37-shadowstudy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pinning is a different attachment action from the stated sewing method.",
+          "sources": [
+            "b37-shadow",
+            "b37-shadowcor",
+            "b37-shadowstudy"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All answers now address shadow attachment, removing the sole shadow mention clue. Needle and thread distinguish sewing from the other fastening methods."
+      }
+    },
+    {
+      "questionId": 2401,
+      "hash": "961b0799721dba4b4361d25548d1ccd50820f1537e1b9310236f08ce9dd1abb7",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Hard historical voice credit, distinct from modern dual-role #2619.",
+      "context": "The original English Honey Tree Pooh performer was Sterling Holloway, later a Disney Legend.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The original English Honey Tree Pooh performer was Sterling Holloway, later a Disney Legend.",
+        "sources": [
+          "b37-pooh",
+          "b37-poohroles",
+          "b37-holloway"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The 1966 cast names Holloway as Pooh; the Legend profile confirms his later honor.",
+          "sources": [
+            "b37-pooh",
+            "b37-poohroles",
+            "b37-holloway"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Winchell’s Pooh-series identity does not make him the Honey Tree Pooh performer.",
+          "sources": [
+            "b37-pooh",
+            "b37-poohroles",
+            "b37-holloway"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cummings is explicitly a later Pooh performer.",
+          "sources": [
+            "b37-pooh",
+            "b37-poohroles",
+            "b37-holloway"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Smith is explicitly a later Pooh performer, not Honey Tree’s Pooh.",
+          "sources": [
+            "b37-pooh",
+            "b37-poohroles",
+            "b37-holloway"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Smith and Cummings really voiced Pooh, so checked the first 1966 featurette rather than rejecting them as never voicing the role."
+      }
+    },
+    {
+      "questionId": 2403,
+      "hash": "11ab20c2f5c9a38ad6cbeeca0b0fff3acb18a96f6af6eec35cb0a973dabc28de",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium film ability/equipment fact; differs from Fred’s mascot job and family wealth, and stays outside TV trivia.",
+      "context": "In the theatrical film Fred wears the monster suit while the others use distinct equipment.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "In the theatrical film Fred wears the monster suit while the others use distinct equipment.",
+        "sources": [
+          "b37-hero",
+          "b37-herocor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Fred’s monster suit fulfills his fire-breathing-lizard wish.",
+          "sources": [
+            "b37-hero",
+            "b37-herocor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wasabi has plasma/laser blade equipment rather than the monster suit.",
+          "sources": [
+            "b37-hero",
+            "b37-herocor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Go Go uses electromagnetic equipment rather than Fred’s monster suit.",
+          "sources": [
+            "b37-hero",
+            "b37-herocor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Honey Lemon uses chemical mixtures rather than Fred’s monster suit.",
+          "sources": [
+            "b37-hero",
+            "b37-herocor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The Fredzilla nickname was not securely established as film dialogue; revised to the film’s documented suit assignment. Incidental flames from chemistry do not make Honey Lemon its wearer."
+      }
+    },
+    {
+      "questionId": 2404,
+      "hash": "3b7dda1094c872fcbf30a7a17eef114cfcd53333de4f570924c211613233db75",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Hard animator music-history fact; no duplication of the Nine Old Men animation or design questions.",
+      "context": "The museum names Ward Kimball as the band’s chief and leader.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The museum names Ward Kimball as the band’s chief and leader.",
+        "sources": [
+          "b37-ward"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Kimball is explicitly leader and trombonist.",
+          "sources": [
+            "b37-ward"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Johnston is not the leader named in the band history.",
+          "sources": [
+            "b37-ward"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Davis is not the leader named in the band history.",
+          "sources": [
+            "b37-ward"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Thomas participated but the account identifies Kimball as leader.",
+          "sources": [
+            "b37-ward"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Frank Thomas is a genuine band connection, not a fabricated wrong answer. Participation does not equal leadership; the source separates them."
+      }
+    },
+    {
+      "questionId": 2405,
+      "hash": "c5dfc6da592d59b328242a746f2ee5a9c7dcc537d777841f841aff2e8388863f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Hard official-assignment history; different from Ryman’s park map and Hench’s film effects work.",
+      "context": "John Hench held the official corporate Mickey portrait assignment for the listed milestones.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "John Hench held the official corporate Mickey portrait assignment for the listed milestones.",
+        "sources": [
+          "b37-hench"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The biography explicitly names Hench and the five birthday portraits.",
+          "sources": [
+            "b37-hench"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ryman is not the designated artist for this portrait series.",
+          "sources": [
+            "b37-hench"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Davis is not the designated artist for this portrait series.",
+          "sources": [
+            "b37-hench"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Blair is not the designated artist for this portrait series.",
+          "sources": [
+            "b37-hench"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other artists could paint Mickey; the unique claim is the official corporate series, not every portrait ever made. The milestones and office are explicit."
+      }
+    },
+    {
+      "questionId": 2406,
+      "hash": "abe2dc998c0116a6f8046b9b462c21ce8cb5f0a87d016a1537714e2b705d2628",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Corrected award attribution/context without changing the title answer. Film-effects fact differs from Tokyo DisneySea’s ride in #2505.",
+      "context": "Hench’s film effects work was on 20,000 Leagues; the award belongs to the studio at the 1955 ceremony.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Hench’s film effects work was on 20,000 Leagues; the award belongs to the studio at the 1955 ceremony.",
+        "sources": [
+          "b37-hench",
+          "b37-oscar1955"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Hench’s biography and the Academy record align on 20,000 Leagues.",
+          "sources": [
+            "b37-hench",
+            "b37-oscar1955"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Davy Crockett is not the named winning effects film.",
+          "sources": [
+            "b37-hench",
+            "b37-oscar1955"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Living Desert appears in Hench’s credits but is not this effects winner.",
+          "sources": [
+            "b37-hench",
+            "b37-oscar1955"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Old Yeller is not the named winning effects film.",
+          "sources": [
+            "b37-hench",
+            "b37-oscar1955"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The biography loosely calls it Hench’s Oscar; Academy credits Walt Disney Studios. Final wording avoids individual-recipient and conflicting transfer-year claims."
+      }
+    },
+    {
+      "questionId": 2407,
+      "hash": "7dd706cdcc1d1324f227790261821c802ae47cdc53fbe06c6775ba5319512c09",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Hard bounded park history; different from film titles sharing Treasure Island, and no current-operation claim requiring recheck.",
+      "context": "The historical Bay Lake preserve opened in 1974 as Treasure Island.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The historical Bay Lake preserve opened in 1974 as Treasure Island.",
+        "sources": [
+          "b37-island"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "D23 states Treasure Island as the opening name.",
+          "sources": [
+            "b37-island"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Adventure Island is not the stated historical opening name.",
+          "sources": [
+            "b37-island"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wilderness Island is not the stated historical opening name.",
+          "sources": [
+            "b37-island"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Explorer’s Island is not the stated historical opening name.",
+          "sources": [
+            "b37-island"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished the Bay Lake preserve from Animal Kingdom’s later Discovery Island area. The exact opening history establishes one name."
+      }
+    },
+    {
+      "questionId": 2408,
+      "hash": "b1fa781e8b84b711b3a721f3010faff83bcdf2b9abb6a87ad0792af9100a0a56",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium character/scene fact. #266 asks the island’s name, not the companion’s identity.",
+      "context": "Lampwick is the pool companion whose transformation Pinocchio witnesses.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Lampwick is the pool companion whose transformation Pinocchio witnesses.",
+        "sources": [
+          "b37-lampwick",
+          "b37-lampwickcor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The plot places Lampwick with Pinocchio in the pool room before the transformation.",
+          "sources": [
+            "b37-lampwick",
+            "b37-lampwickcor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Honest John is the recruiting fox, not that boy.",
+          "sources": [
+            "b37-lampwick",
+            "b37-lampwickcor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gideon is the recruiting cat, not that boy.",
+          "sources": [
+            "b37-lampwick",
+            "b37-lampwickcor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Alexander is another transformed child examined by the Coachman, not the pool companion.",
+          "sources": [
+            "b37-lampwick",
+            "b37-lampwickcor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Original first-to-transform assertion fails because Alexander and other boys are already donkeys. Final scene role distinguishes Lampwick without chronological overclaim."
+      }
+    },
+    {
+      "questionId": 2409,
+      "hash": "1a143a6314b62230ad90c51b31b8cf4e7dbc2e815635de7a961eec1781f36730",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Hard literary-source recall; different from the opening/closing sequence facts.",
+      "context": "Melody Time’s poem adaptation is Kilmer’s Trees.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Melody Time’s poem adaptation is Kilmer’s Trees.",
+        "sources": [
+          "b37-melody",
+          "b37-melodywdas"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The complete segment list explicitly names Trees and Joyce Kilmer.",
+          "sources": [
+            "b37-melody",
+            "b37-melodywdas"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Road Not Taken is not the poem identified in the film’s seven-segment list.",
+          "sources": [
+            "b37-melody",
+            "b37-melodywdas"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Leaves of Grass is not the poem identified in this film.",
+          "sources": [
+            "b37-melody",
+            "b37-melodywdas"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Woodland Song is not the identified Kilmer adaptation.",
+          "sources": [
+            "b37-melody",
+            "b37-melodywdas"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Read the full segment catalogue rather than assuming any nature poem fits. Removed the unneeded exact publication-year clause."
+      }
+    },
+    {
+      "questionId": 2410,
+      "hash": "8963923a240b52d768721cc185b74302bb95795af814d69963b9f7d176403ac1",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Hard companion/segment fact; #2383 concerns José’s debut in a different film, not this other teacher.",
+      "context": "The official Melody Time synopsis pairs José and the Aracuan bird as Donald’s samba teachers.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The official Melody Time synopsis pairs José and the Aracuan bird as Donald’s samba teachers.",
+        "sources": [
+          "b37-melodywdas"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "WDAS explicitly names the Aracuan bird alongside José.",
+          "sources": [
+            "b37-melodywdas"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Panchito is not the second teacher named in this sequence.",
+          "sources": [
+            "b37-melodywdas"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Zazu is not the second teacher named in the sequence.",
+          "sources": [
+            "b37-melodywdas"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Iago is not the second teacher named in the sequence.",
+          "sources": [
+            "b37-melodywdas"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "José also teaches samba and would fit a vague question, so final wording asks who joins José. Parallel named characters replace generic bird-type alternatives."
+      }
+    },
+    {
+      "questionId": 2411,
+      "hash": "6549f473a4de660d6cf8a6b9a1ae42c23dbba049d739d64c1a004a66661a052b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Factual premise correction; medium character identification. Released-film fact, no changing release-status claim.",
+      "context": "Gary is the blue pit viper voiced by Ke Huy Quan, described as sweet rather than a villain.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Gary is the blue pit viper voiced by Ke Huy Quan, described as sweet rather than a villain.",
+        "sources": [
+          "b37-zoo2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The official cast profile names Gary De’Snake.",
+          "sources": [
+            "b37-zoo2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sly Slitherton is not the credited name of Quan’s pit viper.",
+          "sources": [
+            "b37-zoo2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Victor Venom is not the credited name of Quan’s pit viper.",
+          "sources": [
+            "b37-zoo2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rex Rattler is not the credited name of Quan’s pit viper.",
+          "sources": [
+            "b37-zoo2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed antagonist label because the official profile gives Gary a sympathetic mission. Exact voice/character pairing excludes the invented alternate names."
+      }
+    },
+    {
+      "questionId": 2412,
+      "hash": "e0f0b5b0b063468b75e4483bd3fd0de17ead8e38ea543cca213b4aba8c81f032",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium program-purpose recall; different from the therapist’s name in #2413.",
+      "context": "Partners in Crisis is Dr Fuzzby’s therapy workshop for mismatched police partners.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Partners in Crisis is Dr Fuzzby’s therapy workshop for mismatched police partners.",
+        "sources": [
+          "b37-zoo2",
+          "b37-zoo2script"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The screenplay introduces it as therapy for mismatched duos; notes call it partners therapy.",
+          "sources": [
+            "b37-zoo2",
+            "b37-zoo2script"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The named session concerns relationship dysfunction, not driving instruction.",
+          "sources": [
+            "b37-zoo2",
+            "b37-zoo2script"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The named session concerns police partnership, not physical conditioning.",
+          "sources": [
+            "b37-zoo2",
+            "b37-zoo2script"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The named session concerns partnership, not medical first-aid instruction.",
+          "sources": [
+            "b37-zoo2",
+            "b37-zoo2script"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Original couples therapy overlapped colloquially with partners counseling. Final alternatives are distinct program purposes excluded by Fuzzby’s stated class purpose."
+      }
+    },
+    {
+      "questionId": 2413,
+      "hash": "6cf0629fe22f10fa4d7bc792e01cbf26ee4bcdc811e7227da0c56b045d444207",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Hard therapist-name recall; the class purpose does not reveal this name.",
+      "context": "The quokka therapist is Dr Fuzzby, voiced by Quinta Brunson.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The quokka therapist is Dr Fuzzby, voiced by Quinta Brunson.",
+        "sources": [
+          "b37-zoo2",
+          "b37-zoo2script"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The official profile and screenplay name Dr Fuzzby.",
+          "sources": [
+            "b37-zoo2",
+            "b37-zoo2script"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dr Puffington is not the credited therapist name.",
+          "sources": [
+            "b37-zoo2",
+            "b37-zoo2script"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dr Wobbles is not the credited therapist name.",
+          "sources": [
+            "b37-zoo2",
+            "b37-zoo2script"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dr Snuggs is not the credited therapist name.",
+          "sources": [
+            "b37-zoo2",
+            "b37-zoo2script"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked exact title/name and performer, not just quokka species. Every final answer now has the same Dr title."
+      }
+    },
+    {
+      "questionId": 2414,
+      "hash": "9094c0b9cb6607448c201130d8650fce82fb422b061ddaa895bdc15f8567f454",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Hard dual-cast family identification; no duplicate of Gary, therapist or program questions.",
+      "context": "Samberg’s Pawbert and Culkin’s Cattrick belong to the central Lynxley family.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Samberg’s Pawbert and Culkin’s Cattrick belong to the central Lynxley family.",
+        "sources": [
+          "b37-zoo2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The cast profiles assign both characters to the Lynxleys.",
+          "sources": [
+            "b37-zoo2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bogo is the police chief, not this family’s surname.",
+          "sources": [
+            "b37-zoo2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Big’s shrew crime family does not contain the two named performers’ Lynxley roles.",
+          "sources": [
+            "b37-zoo2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Weaselton is not the surname assigned to Pawbert and Cattrick.",
+          "sources": [
+            "b37-zoo2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Mr Big really has a powerful family, so power alone is insufficient. The two actors and their named roles uniquely identify Lynxley."
+      }
+    },
+    {
+      "questionId": 2415,
+      "hash": "37b7c4b252a0dcb6446f6a75a626b2df37a8afa94028204e3e41e940974bd6ad",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium sequel group identification; distinct from the cursed island and Matangi questions; secondary-title coverage remains modest.",
+      "context": "Kotu is explicitly the returning Kakamora group’s warrior who joins the crew.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Kotu is explicitly the returning Kakamora group’s warrior who joins the crew.",
+        "sources": [
+          "b37-moana2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The production notes name Kotu as Kakamora.",
+          "sources": [
+            "b37-moana2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Matagi is not the group assigned to Kotu; Matangi is a distinct individual.",
+          "sources": [
+            "b37-moana2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Taumata is not the group assigned to Kotu.",
+          "sources": [
+            "b37-moana2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mo’olele is not the group assigned to Kotu.",
+          "sources": [
+            "b37-moana2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Replaced the longer curse explanation with Kotu’s explicit group affiliation. The answer is the group, not the individual warrior."
+      }
+    },
+    {
+      "questionId": 2416,
+      "hash": "ffa419f407f3ce7878e1f267e5badb3b91418957b54148ef103be6ab74cb37c9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium Pixar world-name recall; distinct from Elio’s diplomatic role in #2417.",
+      "context": "Pixar’s world description identifies the Communiverse as the cooperative interspecies society.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar’s world description identifies the Communiverse as the cooperative interspecies society.",
+        "sources": [
+          "b37-elio"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The world section explicitly names the Communiverse.",
+          "sources": [
+            "b37-elio"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Nexus is not the society’s name in Pixar’s description.",
+          "sources": [
+            "b37-elio"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Galactic Central is not the society’s named identity.",
+          "sources": [
+            "b37-elio"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Concordance is not the society’s named identity.",
+          "sources": [
+            "b37-elio"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Clarified that the name describes the society as well as its setting; no unsupported trade-only purpose is required."
+      }
+    },
+    {
+      "questionId": 2417,
+      "hash": "842ee5410cdc6cf18de2286673175dd3bffe22212b83af627ad7b5af2aa91129",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Simplified to the sourced role and calibrated easy. Different fact from naming the Communiverse.",
+      "context": "Disney’s caption explicitly says Elio is mistaken for Earth’s ambassador.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney’s caption explicitly says Elio is mistaken for Earth’s ambassador.",
+        "sources": [
+          "b37-elioamb"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Ambassador is the mistaken diplomatic assignment named by Disney.",
+          "sources": [
+            "b37-elioamb"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "President is not the assigned representative title in that caption.",
+          "sources": [
+            "b37-elioamb"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Prisoner is not the diplomatic assignment being asked about.",
+          "sources": [
+            "b37-elioamb"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Translator is not the assigned diplomatic title.",
+          "sources": [
+            "b37-elioamb"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A character can be detained or translate at another time; the final question asks the specific mistaken representative role, not every event or ability."
+      }
+    },
+    {
+      "questionId": 2418,
+      "hash": "cbd3c98b35dd72caf73cf61ff3c4299d70500db419f3319a6d31306f4ea5c93b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium production milestone; contemporary creator testimony rather than current-format assumptions, separate from other Up story facts.",
+      "context": "The contemporary Pixar stereoscopy interview identifies Up as the studio’s first released stereoscopic feature.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The contemporary Pixar stereoscopy interview identifies Up as the studio’s first released stereoscopic feature.",
+        "sources": [
+          "b37-up3d"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The release-day interview names Up as the first stereoscopic 3D feature.",
+          "sources": [
+            "b37-up3d"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "WALL-E supplied test material rather than being the released first identified by Pixar’s leaders.",
+          "sources": [
+            "b37-up3d"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ratatouille supplied test material, not the first stereoscopic release.",
+          "sources": [
+            "b37-up3d"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cars is not the first feature named in the release-day interview.",
+          "sources": [
+            "b37-up3d"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Replaced mixed sound/screen/film formats with film titles. Tests or later 3D versions do not overturn the explicit first theatrical feature milestone."
+      }
+    },
+    {
+      "questionId": 2419,
+      "hash": "98e228374b0d0c35527057fb2a5ee2aa79d2ae30639b5fa0f41ad8a32bfb0d09",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Corrected false lift/count and commentary attribution. Hard exact production number, independently corroborated; no physics claim.",
+      "context": "Disney’s anniversary item gives 10,297 for floating shots, separately from liftoff.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney’s anniversary item gives 10,297 for floating shots, separately from liftoff.",
+        "sources": [
+          "b37-balloons",
+          "b37-balloonscor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Item 5 gives 10,297 for the floating scenes.",
+          "sources": [
+            "b37-balloons",
+            "b37-balloonscor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "5,000 is not the floating-scene figure in the item.",
+          "sources": [
+            "b37-balloons",
+            "b37-balloonscor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "25,000 is not the floating-scene figure in the item.",
+          "sources": [
+            "b37-balloons",
+            "b37-balloonscor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "100,000 is not the floating-scene figure in the item.",
+          "sources": [
+            "b37-balloons",
+            "b37-balloonscor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the major trap: liftoff uses 20,622, while real physical lift needs vastly more. The final question is explicitly about Disney’s stated floating-scene count."
+      }
+    },
+    {
+      "questionId": 2420,
+      "hash": "1c84b0fca4f04ed135fc1a8dbc844d60f00b6c2998f7f2569d54b975971df956",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Factual date correction; medium awards milestone, different from #463’s song award and #2577’s stage debut.",
+      "context": "Beauty and the Beast was the first animated Best Picture nominee, honored at the 1992 ceremony for a 1991 film.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Beauty and the Beast was the first animated Best Picture nominee, honored at the 1992 ceremony for a 1991 film.",
+        "sources": [
+          "b37-oscar1992",
+          "b37-beastfirst"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Academy lists Beauty and the Beast; Disney independently confirms the first-animated distinction.",
+          "sources": [
+            "b37-oscar1992",
+            "b37-beastfirst"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lion King is not in that ceremony’s complete Best Picture list.",
+          "sources": [
+            "b37-oscar1992",
+            "b37-beastfirst"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Toy Story is not in that ceremony’s complete Best Picture list.",
+          "sources": [
+            "b37-oscar1992",
+            "b37-beastfirst"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Aladdin is not in that ceremony’s complete Best Picture list.",
+          "sources": [
+            "b37-oscar1992",
+            "b37-beastfirst"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Separated film year from nomination ceremony year; 1991 is the release year, not the 1992 ceremony. Full nominee list excludes all distractors."
+      }
+    },
+    {
+      "questionId": 2421,
+      "hash": "a1119a15c20a699dd3b9ecd6338fcde3f05a7f25048994cd87673104eed0c827",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium character age; replaced ambiguous endpoint, distinct from Russell’s identity and Carl’s occupation.",
+      "context": "Pixar identifies Carl as 78 at the start of his South American adventure.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar identifies Carl as 78 at the start of his South American adventure.",
+        "sources": [
+          "b37-carl"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The official profile explicitly gives 78 for this departure.",
+          "sources": [
+            "b37-carl"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "65 conflicts with the stated age at departure.",
+          "sources": [
+            "b37-carl"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "92 conflicts with the stated age at departure.",
+          "sources": [
+            "b37-carl"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "84 conflicts with the stated age at departure.",
+          "sources": [
+            "b37-carl"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "End-of-film wording could imply a birthday/timeskip unsupported by the profile. The final question asks the clearly sourced departure age."
+      }
+    },
+    {
+      "questionId": 2422,
+      "hash": "afdf28dd6e5cb4a5d2ddd9e95f7ff81509f73fbdb58882db035373e3fa3f9d1f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium chronological relationship; different from #375’s distributor name, #120’s generic mouse identity and #1195’s honorary award.",
+      "context": "The Oswald contract loss led Walt to develop Mickey, as the museum’s chronology explicitly states.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Oswald contract loss led Walt to develop Mickey, as the museum’s chronology explicitly states.",
+        "sources": [
+          "b37-mintz"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The museum directly connects the loss of Oswald to creation of Mickey Mouse.",
+          "sources": [
+            "b37-mintz"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Donald is not the successor character identified in that chronology.",
+          "sources": [
+            "b37-mintz"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Julius belongs to the earlier Alice era, before this contract collapse.",
+          "sources": [
+            "b37-mintz"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Goofy is not the new character identified in the immediate Oswald-loss account.",
+          "sources": [
+            "b37-mintz"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Original Muntz/Mintz same-surname claim is false even in spelling. Removed it and the Oswald-as-new-character distractor; the museum establishes the successor relationship."
+      }
+    },
+    {
+      "questionId": 2423,
+      "hash": "5fd92cee1669baf0af3d811b05b8970587736340427730856496bd1dc73b3b08",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Medium montage fact; clarification preserves the original answer and does not duplicate Carl’s age or name.",
+      "context": "The married-life montage places Carl with a balloon cart at the zoo while Ellie is the zookeeper.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The married-life montage places Carl with a balloon cart at the zoo while Ellie is the zookeeper.",
+        "sources": [
+          "b37-carl",
+          "b37-upscript"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The script shows Carl’s balloon cart; Pixar calls him a retired balloon salesman.",
+          "sources": [
+            "b37-carl",
+            "b37-upscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ellie, not Carl, wears the zookeeper uniform in this scene.",
+          "sources": [
+            "b37-carl",
+            "b37-upscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The montage assigns Carl balloon sales, not ticket collection.",
+          "sources": [
+            "b37-carl",
+            "b37-upscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The montage assigns Carl balloon sales, not tour guiding.",
+          "sources": [
+            "b37-carl",
+            "b37-upscript"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked Carl versus Ellie and on-screen montage versus before all events. The final wording identifies the exact scene and occupation."
+      }
+    },
+    {
+      "questionId": 2424,
+      "hash": "7f3650399cf483341f33f7e81891d4adb758fad544742ff5412c039218056ad8",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Hard fictional place-name recall; no current real-world retirement-service claim or recheck needed.",
+      "context": "Shady Oaks Retirement Village is printed on Carl’s pamphlet and the nurses’ collection van.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Shady Oaks Retirement Village is printed on Carl’s pamphlet and the nurses’ collection van.",
+        "sources": [
+          "b37-upscript"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The screenplay names Shady Oaks on both props.",
+          "sources": [
+            "b37-upscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sunny Acres is not the named residence on either prop.",
+          "sources": [
+            "b37-upscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Golden Years Manor is not the named residence on either prop.",
+          "sources": [
+            "b37-upscript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Evergreen is not the named residence on either prop.",
+          "sources": [
+            "b37-upscript"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The move follows the court/public-menace incident, not Carl’s voluntary travel plan. Two named props establish one residence."
+      }
+    },
+    {
+      "questionId": 2425,
+      "hash": "fe2b50c0c306f1ce6f28bc0046ad10c5f1c9565f252ab35ad2590be06d6f757c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Hard development casting fact, not the final-film voice credit; primary participant testimony supports the narrowed claim.",
+      "context": "James Woods confirms that John Lithgow had been performing Hades before the filmmakers recast the character.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "James Woods confirms that John Lithgow had been performing Hades before the filmmakers recast the character.",
+        "sources": [
+          "b37-lithgow"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Woods directly confirms Lithgow was doing Hades before him.",
+          "sources": [
+            "b37-lithgow"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Nicholson is not the actor Woods identifies as the replaced recorded performer.",
+          "sources": [
+            "b37-lithgow"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Williams is mentioned as another voice-audition example, not the prior Hades.",
+          "sources": [
+            "b37-lithgow"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Goodman is not the prior Hades identified in this account.",
+          "sources": [
+            "b37-lithgow"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished proposed/auditioned actors from someone actually doing the role. Removed unsupported replacement year and the erroneous phrase recorded test animation."
+      }
+    }
+  ]
+}

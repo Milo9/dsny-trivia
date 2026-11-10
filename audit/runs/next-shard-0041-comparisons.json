@@ -1,0 +1,128 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-10",
+  "comparisons": [
+    {
+      "questionIds": [
+        2579,
+        186,
+        1029
+      ],
+      "questions": [
+        {
+          "id": 2579,
+          "question": "In Up, what youth organization is young Russell working to earn merit badges in?",
+          "answers": [
+            "Wilderness Explorers",
+            "Adventure Scouts",
+            "Trailblazer Rangers",
+            "Junior Park Rangers"
+          ],
+          "difficulty": "medium",
+          "category": "pixar"
+        },
+        {
+          "id": 186,
+          "question": "In Up, what is the name of the young Wilderness Explorer who accompanies Carl?",
+          "answers": [
+            "Russell",
+            "Kevin",
+            "Dug",
+            "Charles"
+          ],
+          "difficulty": "easy",
+          "category": "pixar"
+        },
+        {
+          "id": 1029,
+          "question": "In Up, what Wilderness Explorer badge is Russell trying to earn?",
+          "answers": [
+            "Assisting the Elderly",
+            "Animal Tracking",
+            "Knot Tying",
+            "Balloon Safety"
+          ],
+          "difficulty": "medium",
+          "category": "pixar"
+        }
+      ],
+      "decision": "retire 2579; retain 186 and 1029",
+      "reason": "186 explicitly identifies Russell as the young Wilderness Explorer. Memorizing that association answers 2579 without a new fact. 1029 instead asks which specific badge he lacks and remains distinct.",
+      "source": "https://imsdb.com/scripts/Up.html",
+      "locator": "Russell doorstep introduction lines 1273-1282 and badge dialogue 1406-1412",
+      "challenge": "The invented organizations do not match Russell’s explicit identification. Retirement preserves the original four answers rather than approving a redundant fact."
+    },
+    {
+      "questionIds": [
+        2456,
+        2591
+      ],
+      "questions": [
+        {
+          "id": 2456,
+          "question": "Who voices both Waylon and Floyd in the original English-language The Fox and the Hound 2?",
+          "answers": [
+            "Jim Cummings",
+            "Jeff Foxworthy",
+            "Stephen Root",
+            "Rob Paulsen"
+          ],
+          "difficulty": "hard",
+          "category": "movies"
+        },
+        {
+          "id": 2591,
+          "question": "Who voices the adult Copper in the original English-language The Fox and the Hound (1981)?",
+          "answers": [
+            "Kurt Russell",
+            "Mickey Rooney",
+            "Corey Feldman",
+            "Pat Buttram"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        }
+      ],
+      "decision": "distinct",
+      "reason": "Cummings voices Waylon/Floyd in the 2006 sequel; Russell voices adult Copper in the 1981 original. Different roles, performers and film versions.",
+      "challenge": "The other question supplies no credit for the roles asked here. Generic voice-question structure and a shared performer do not establish duplicate facts.",
+      "reference": "audit/runs/next-shard-0041-reviews.json"
+    },
+    {
+      "questionIds": [
+        2456,
+        2619
+      ],
+      "questions": [
+        {
+          "id": 2456,
+          "question": "Who voices both Waylon and Floyd in the original English-language The Fox and the Hound 2?",
+          "answers": [
+            "Jim Cummings",
+            "Jeff Foxworthy",
+            "Stephen Root",
+            "Rob Paulsen"
+          ],
+          "difficulty": "hard",
+          "category": "movies"
+        },
+        {
+          "id": 2619,
+          "question": "Who voices both Pooh and Tigger in the original English-language Winnie the Pooh (2011)?",
+          "answers": [
+            "Jim Cummings",
+            "Sterling Holloway",
+            "Paul Winchell",
+            "Jim Carrey"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        }
+      ],
+      "decision": "distinct",
+      "reason": "Cummings is a shared performer, but Waylon/Floyd in the 2006 sequel and Pooh/Tigger in the 2011 feature are separate role assignments.",
+      "challenge": "The other question supplies no credit for the roles asked here. Generic voice-question structure and a shared performer do not establish duplicate facts.",
+      "reference": "audit/runs/next-shard-0041-reviews.json"
+    }
+  ]
+}

@@ -1,0 +1,3281 @@
+{
+  "schema": 1,
+  "reviewer": "Codex",
+  "at": "2026-11-09",
+  "sourcesChecked": [
+    "b17-calarts",
+    "b19-1019",
+    "b27-encanto-lament",
+    "b40-aladdin",
+    "b40-aladdin-end",
+    "b40-beauty",
+    "b40-bolton",
+    "b40-bolton-end",
+    "b40-bruno",
+    "b40-calarts",
+    "b40-castle",
+    "b40-coco",
+    "b40-coco-interview",
+    "b40-demi",
+    "b40-dining",
+    "b40-donald",
+    "b40-donald-oscar",
+    "b40-elton",
+    "b40-elton-all",
+    "b40-encanto-cor",
+    "b40-encanto-final",
+    "b40-firstlegend",
+    "b40-forest",
+    "b40-franco",
+    "b40-franco-cor",
+    "b40-french",
+    "b40-french-loc",
+    "b40-frozen2",
+    "b40-gorda",
+    "b40-halloween",
+    "b40-human",
+    "b40-insignia",
+    "b40-insignia-cor",
+    "b40-islandopen",
+    "b40-julia",
+    "b40-julia-cor",
+    "b40-lands",
+    "b40-lease",
+    "b40-lease-cor",
+    "b40-legends",
+    "b40-lion",
+    "b40-lion-cor",
+    "b40-maiden",
+    "b40-maiden-cor",
+    "b40-maze",
+    "b40-michel",
+    "b40-moana",
+    "b40-moana-end",
+    "b40-nelbert",
+    "b40-orbit",
+    "b40-party",
+    "b40-reflection",
+    "b40-santa",
+    "b40-secada",
+    "b40-secada-context",
+    "b40-shakira",
+    "b40-skull",
+    "b40-speechless",
+    "b40-splash",
+    "b40-splash-destiny",
+    "b40-tiana",
+    "b40-toyplace",
+    "b40-vanessa",
+    "b40-verne",
+    "b40-wish-splash",
+    "b40-wishclass",
+    "b40-zurg"
+  ],
+  "reviews": [
+    {
+      "questionId": 2525,
+      "hash": "1f232c77c27289168cfebbb3bd096d88677d172f820a4c4035719ada57937f42",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. A pirate landmark is not assigned to Frontierland merely because both feature adventure; the named location is explicit.",
+      "context": "Skull Rock location, Disneyland Paris; dated current layout.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "Skull Rock location, Disneyland Paris; dated current layout. Official 2026 article locates it in Adventureland.",
+        "sources": [
+          "b40-skull",
+          "b40-lands"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Official 2026 article locates it in Adventureland.",
+          "sources": [
+            "b40-skull",
+            "b40-lands"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Frontierland is the separate western land containing Phantom Manor.",
+          "sources": [
+            "b40-skull",
+            "b40-lands"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fantasyland is the separate fairy-tale land.",
+          "sources": [
+            "b40-skull",
+            "b40-lands"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Discoveryland is the separate space-themed land.",
+          "sources": [
+            "b40-skull",
+            "b40-lands"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A pirate landmark is not assigned to Frontierland merely because both feature adventure; the named location is explicit. Final options challenged individually: Frontierland is the separate western land containing Phantom Manor.; Fantasyland is the separate fairy-tale land.; Discoveryland is the separate space-themed land."
+      }
+    },
+    {
+      "questionId": 2526,
+      "hash": "e37e70733a8d97ebbbbd606eb92a5c0219b5cf647748c937dfe844c939a04306",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Other parks’ Haunted Mansion locations do not apply to the specifically named Paris attraction.",
+      "context": "Phantom Manor location, Paris, not another resort’s Haunted Mansion.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "Phantom Manor location, Paris, not another resort’s Haunted Mansion. The land directory places Phantom Manor in Frontierland.",
+        "sources": [
+          "b40-lands"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The land directory places Phantom Manor in Frontierland.",
+          "sources": [
+            "b40-lands"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Adventureland is a separate land.",
+          "sources": [
+            "b40-lands"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fantasyland is a separate land.",
+          "sources": [
+            "b40-lands"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Discoveryland is a separate land.",
+          "sources": [
+            "b40-lands"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other parks’ Haunted Mansion locations do not apply to the specifically named Paris attraction. Final options challenged individually: Adventureland is a separate land.; Fantasyland is a separate land.; Discoveryland is a separate land."
+      }
+    },
+    {
+      "questionId": 2527,
+      "hash": "518ca37237a85902dd241ca01f4ab744db470ff74d01fe7be808e02811739450",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Other Verne inspirations elsewhere in Disney parks cannot satisfy this original-attraction attribution.",
+      "context": "Original 1995 theme, not later Mission 2 or Star Wars overlays.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Original 1995 theme, not later Mission 2 or Star Wars overlays. The history names From the Earth to the Moon.",
+        "sources": [
+          "b40-verne"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The history names From the Earth to the Moon.",
+          "sources": [
+            "b40-verne"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The submarine novel is not the named original Space Mountain story.",
+          "sources": [
+            "b40-verne"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The global-travel novel is not the named original story.",
+          "sources": [
+            "b40-verne"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The subterranean novel is not the named original story.",
+          "sources": [
+            "b40-verne"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other Verne inspirations elsewhere in Disney parks cannot satisfy this original-attraction attribution. Final options challenged individually: The submarine novel is not the named original Space Mountain story.; The global-travel novel is not the named original story.; The subterranean novel is not the named original story."
+      }
+    },
+    {
+      "questionId": 2528,
+      "hash": "e85b0cd903ad6f2687b33c668fa4c6e2993e2b211e3b5c9e21d168593dec9a2e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. The claim concerns this attraction’s central battle, not every Pixar villain or later Lightyear continuity.",
+      "context": "Paris Laser Blast target villain.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "Paris Laser Blast target villain. Disney identifies Emperor Zurg as Buzz’s opponent.",
+        "sources": [
+          "b40-zurg"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney identifies Emperor Zurg as Buzz’s opponent.",
+          "sources": [
+            "b40-zurg"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hopper is not the opponent identified for this attraction.",
+          "sources": [
+            "b40-zurg"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Syndrome is not the opponent identified for this attraction.",
+          "sources": [
+            "b40-zurg"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Randall Boggs is not the opponent identified for this attraction.",
+          "sources": [
+            "b40-zurg"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The claim concerns this attraction’s central battle, not every Pixar villain or later Lightyear continuity. Final options challenged individually: Hopper is not the opponent identified for this attraction.; Syndrome is not the opponent identified for this attraction.; Randall Boggs is not the opponent identified for this attraction."
+      }
+    },
+    {
+      "questionId": 2529,
+      "hash": "c685604cc1b3c863602ef1faef50e32c5d44816ecc2823372ec56d5a43c451b5",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. The shared space theme does not equate a simulator or coaster with the explicitly documented revolving rockets.",
+      "context": "Rotating rockets and planets, not a generic space theme.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "Rotating rockets and planets, not a generic space theme. Orbitron’s described rocket-and-planet rotation matches.",
+        "sources": [
+          "b40-orbit",
+          "b40-lands"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Orbitron’s described rocket-and-planet rotation matches.",
+          "sources": [
+            "b40-orbit",
+            "b40-lands"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Star Tours does not identify this rocket spinner.",
+          "sources": [
+            "b40-orbit",
+            "b40-lands"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Space Mountain is separately identified, not the described Orbitron system.",
+          "sources": [
+            "b40-orbit",
+            "b40-lands"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Autopia is not the named rocket-and-planet attraction.",
+          "sources": [
+            "b40-orbit",
+            "b40-lands"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The shared space theme does not equate a simulator or coaster with the explicitly documented revolving rockets. Final options challenged individually: Star Tours does not identify this rocket spinner.; Space Mountain is separately identified, not the described Orbitron system.; Autopia is not the named rocket-and-planet attraction."
+      }
+    },
+    {
+      "questionId": 2530,
+      "hash": "67a6fe8093c8c87b7d85633517a24577f4dc9e8a766fd6cb0ed13669c08dfdeb",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. An informal description of the setting does not replace the guide’s attraction title; the stem no longer repeats Alice.",
+      "context": "Official attraction name and hedge-maze form.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "Official attraction name and hedge-maze form. The guide names Alice’s Curious Labyrinth as the hedge maze.",
+        "sources": [
+          "b40-maze",
+          "b40-lands"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The guide names Alice’s Curious Labyrinth as the hedge maze.",
+          "sources": [
+            "b40-maze",
+            "b40-lands"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Mad Hatter’s Maze is not its official name.",
+          "sources": [
+            "b40-maze",
+            "b40-lands"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wonderland Woods is not its official name.",
+          "sources": [
+            "b40-maze",
+            "b40-lands"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Queen’s Garden is not its official name.",
+          "sources": [
+            "b40-maze",
+            "b40-lands"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "An informal description of the setting does not replace the guide’s attraction title; the stem no longer repeats Alice. Final options challenged individually: The Mad Hatter’s Maze is not its official name.; Wonderland Woods is not its official name.; The Queen’s Garden is not its official name."
+      }
+    },
+    {
+      "questionId": 2531,
+      "hash": "4ed27e8e52a7c2e27c6c92c29e0a2b9e97db6b5ac9d6fb901e93b33e03be7001",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Removed all-princess and replaced-building overstatements; the transformation’s proper name excludes other castles.",
+      "context": "Named November 2020 transformation, not a wholly rebuilt castle or every princess claim.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Named November 2020 transformation, not a wholly rebuilt castle or every princess claim. Disney names Castle of Magical Dreams.",
+        "sources": [
+          "b40-castle"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney names Castle of Magical Dreams.",
+          "sources": [
+            "b40-castle"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Enchanted Storybook Castle is not the Hong Kong name.",
+          "sources": [
+            "b40-castle"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cinderella Castle is not the Hong Kong name.",
+          "sources": [
+            "b40-castle"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Castle of Wishes is not the announced name.",
+          "sources": [
+            "b40-castle"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed all-princess and replaced-building overstatements; the transformation’s proper name excludes other castles. Final options challenged individually: Enchanted Storybook Castle is not the Hong Kong name.; Cinderella Castle is not the Hong Kong name.; Castle of Wishes is not the announced name."
+      }
+    },
+    {
+      "questionId": 2532,
+      "hash": "d8b16687e86c554ded7fa478f7591b89f2dc5385e3862723b31579ad9814df9a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. A thematic link to Elsa does not put the Playhouse in her palace; the forest is explicit.",
+      "context": "Only the Playhouse location is asked; no unproved claim about two venues.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "Only the Playhouse location is asked; no unproved claim about two venues. The resort explicitly says Arendelle Forest.",
+        "sources": [
+          "b40-forest"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The resort explicitly says Arendelle Forest.",
+          "sources": [
+            "b40-forest"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Frozen Kingdom is not the named Hong Kong Playhouse location.",
+          "sources": [
+            "b40-forest"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Elsa’s Ice Palace is not the named Playhouse location.",
+          "sources": [
+            "b40-forest"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Troll Valley is not the named Playhouse location.",
+          "sources": [
+            "b40-forest"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A thematic link to Elsa does not put the Playhouse in her palace; the forest is explicit. Final options challenged individually: Frozen Kingdom is not the named Hong Kong Playhouse location.; Elsa’s Ice Palace is not the named Playhouse location.; Troll Valley is not the named Playhouse location."
+      }
+    },
+    {
+      "questionId": 2533,
+      "hash": "10005700a281d04d1ba859076fb386b3e8149c4b49c6e8ffed96a32a5e09d585",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Team collaboration is acknowledged; no unsupported claim that one person engineered the coaster remains.",
+      "context": "Project creative leadership, not sole engineering/design authorship.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Project creative leadership, not sole engineering/design authorship. Den Dulk is named executive creative director in the project update.",
+        "sources": [
+          "b40-michel"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Den Dulk is named executive creative director in the project update.",
+          "sources": [
+            "b40-michel"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The update does not assign the identified role to Joe Rohde.",
+          "sources": [
+            "b40-michel"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The update does not assign the identified role to Tony Baxter.",
+          "sources": [
+            "b40-michel"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The update does not assign the identified role to Bob Weis.",
+          "sources": [
+            "b40-michel"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Team collaboration is acknowledged; no unsupported claim that one person engineered the coaster remains. Final options challenged individually: The update does not assign the identified role to Joe Rohde.; The update does not assign the identified role to Tony Baxter.; The update does not assign the identified role to Bob Weis."
+      }
+    },
+    {
+      "questionId": 2534,
+      "hash": "2e071432721d1a352543a09f91ce94bb61152a9b166128e50bd5a59a879415e1",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Excluded film-vocalists confusion and later covers; removed awards attached incorrectly to a particular recording.",
+      "context": "Original English 1992 film’s pop end-credit recording.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Original English 1992 film’s pop end-credit recording. The credited recording pair is Bryson and Belle.",
+        "sources": [
+          "b40-aladdin",
+          "b40-aladdin-end"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The credited recording pair is Bryson and Belle.",
+          "sources": [
+            "b40-aladdin",
+            "b40-aladdin-end"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dion replaces Belle and so is the wrong pair.",
+          "sources": [
+            "b40-aladdin",
+            "b40-aladdin-end"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Neither listed performer is the credited pair.",
+          "sources": [
+            "b40-aladdin",
+            "b40-aladdin-end"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "This is not the label-credited pop pair.",
+          "sources": [
+            "b40-aladdin",
+            "b40-aladdin-end"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Excluded film-vocalists confusion and later covers; removed awards attached incorrectly to a particular recording. Final options challenged individually: Dion replaces Belle and so is the wrong pair.; Neither listed performer is the credited pair.; This is not the label-credited pop pair."
+      }
+    },
+    {
+      "questionId": 2535,
+      "hash": "0c200de1db22943e36d8769dbd6ea406598033939477a29f8de1c855f0db7ef2",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. A later cover would not satisfy the original film end-credits qualifier; Roger Bart’s film version is distinct.",
+      "context": "Original English Hercules 1997 pop end-credit version.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Original English Hercules 1997 pop end-credit version. Bolton’s biography and song history identify his recording.",
+        "sources": [
+          "b40-bolton",
+          "b40-bolton-end"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Bolton’s biography and song history identify his recording.",
+          "sources": [
+            "b40-bolton",
+            "b40-bolton-end"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Elton John is not credited for this end-title recording.",
+          "sources": [
+            "b40-bolton",
+            "b40-bolton-end"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Peabo Bryson is not credited for this end-title recording.",
+          "sources": [
+            "b40-bolton",
+            "b40-bolton-end"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Josh Groban is not credited for this end-title recording.",
+          "sources": [
+            "b40-bolton",
+            "b40-bolton-end"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A later cover would not satisfy the original film end-credits qualifier; Roger Bart’s film version is distinct. Final options challenged individually: Elton John is not credited for this end-title recording.; Peabo Bryson is not credited for this end-title recording.; Josh Groban is not credited for this end-title recording."
+      }
+    },
+    {
+      "questionId": 2536,
+      "hash": "a68757746c19dae3cd792b4b861a0cdcccc83086a909709d9436fc8b987595a1",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. The question asks recording identity; the removed Grammy qualifier had blurred songwriter and performer awards.",
+      "context": "Original 1995 English pop end-title recording.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Original 1995 English pop end-title recording. Disney Records names Vanessa Williams.",
+        "sources": [
+          "b40-vanessa"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney Records names Vanessa Williams.",
+          "sources": [
+            "b40-vanessa"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Whitney Houston is not the credited end-title performer.",
+          "sources": [
+            "b40-vanessa"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Toni Braxton is not the credited end-title performer.",
+          "sources": [
+            "b40-vanessa"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mariah Carey is not the credited end-title performer.",
+          "sources": [
+            "b40-vanessa"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The question asks recording identity; the removed Grammy qualifier had blurred songwriter and performer awards. Final options challenged individually: Whitney Houston is not the credited end-title performer.; Toni Braxton is not the credited end-title performer.; Mariah Carey is not the credited end-title performer."
+      }
+    },
+    {
+      "questionId": 2537,
+      "hash": "1072944d10e81e8801dff869e10b4cbf3ed46dd591a584e4bcc514726613280a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Removed breakout/debut single claim, which was unnecessary; other singers’ Disney work cannot replace this recording credit.",
+      "context": "Original 1998 pop recording contrasted with Lea Salonga.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Original 1998 pop recording contrasted with Lea Salonga. Disney explicitly credits Aguilera.",
+        "sources": [
+          "b40-reflection"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney explicitly credits Aguilera.",
+          "sources": [
+            "b40-reflection"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mandy Moore is not this credited recording artist.",
+          "sources": [
+            "b40-reflection"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jessica Simpson is not this credited recording artist.",
+          "sources": [
+            "b40-reflection"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Britney Spears is not this credited recording artist.",
+          "sources": [
+            "b40-reflection"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed breakout/debut single claim, which was unnecessary; other singers’ Disney work cannot replace this recording credit. Final options challenged individually: Mandy Moore is not this credited recording artist.; Jessica Simpson is not this credited recording artist.; Britney Spears is not this credited recording artist."
+      }
+    },
+    {
+      "questionId": 2538,
+      "hash": "c692983f08db09792cae717473b19c9a485d9ffc236e7949dc71dcc653883f47",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Angela Lansbury’s narrative performance and later remake duet do not qualify; no recording is said to have won the songwriting Oscar.",
+      "context": "1991 English animation, not the 2017 remake.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "1991 English animation, not the 2017 remake. Disney credits Dion and Bryson over the closing credits.",
+        "sources": [
+          "b40-beauty"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney credits Dion and Bryson over the closing credits.",
+          "sources": [
+            "b40-beauty"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Belle replaces Dion and is the wrong pair.",
+          "sources": [
+            "b40-beauty"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Houston and Kenny G are not this credited pair.",
+          "sources": [
+            "b40-beauty"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Williams replaces Dion and is the wrong pair.",
+          "sources": [
+            "b40-beauty"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Angela Lansbury’s narrative performance and later remake duet do not qualify; no recording is said to have won the songwriting Oscar. Final options challenged individually: Belle replaces Dion and is the wrong pair.; Houston and Kenny G are not this credited pair.; Williams replaces Dion and is the wrong pair."
+      }
+    },
+    {
+      "questionId": 2539,
+      "hash": "139582d68e2a2c8d4a281ad3680049634b7758338580c72c329e6eca1639744b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Historical category wording is retained; composition and recording categories are distinct.",
+      "context": "1995 recording-performance Grammy, not the song’s Oscar.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "1995 recording-performance Grammy, not the song’s Oscar. The Academy category page identifies Male Pop Vocal Performance.",
+        "sources": [
+          "b40-elton",
+          "b40-elton-all"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Academy category page identifies Male Pop Vocal Performance.",
+          "sources": [
+            "b40-elton",
+            "b40-elton-all"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Song of the Year is listed as a nomination, not the winning category.",
+          "sources": [
+            "b40-elton",
+            "b40-elton-all"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Record of the Year is not a listed nomination or win for this recording.",
+          "sources": [
+            "b40-elton",
+            "b40-elton-all"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pop Solo Performance is not the historical category named.",
+          "sources": [
+            "b40-elton",
+            "b40-elton-all"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Historical category wording is retained; composition and recording categories are distinct. Final options challenged individually: Song of the Year is listed as a nomination, not the winning category.; Record of the Year is not a listed nomination or win for this recording.; Pop Solo Performance is not the historical category named."
+      }
+    },
+    {
+      "questionId": 2540,
+      "hash": "3d6c1a7c142c4e1c070d5d78654f518b5a4ad330fc440eb2c7f19b0cf6b4312c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Broadway used the song earlier but does not meet fully animated; 2002 no longer appears in the stem to eliminate dated options.",
+      "context": "First fully animated addition to the original film.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "First fully animated addition to the original film. The documented animated addition was the 2002 IMAX edition.",
+        "sources": [
+          "b40-beauty",
+          "b40-human"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The documented animated addition was the 2002 IMAX edition.",
+          "sources": [
+            "b40-beauty",
+            "b40-human"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The separate video is not the original film’s animated-sequence reissue.",
+          "sources": [
+            "b40-beauty",
+            "b40-human"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The 2012 3D release is later than the documented addition.",
+          "sources": [
+            "b40-beauty",
+            "b40-human"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The 1994 stage production is not a fully animated film release.",
+          "sources": [
+            "b40-beauty",
+            "b40-human"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Broadway used the song earlier but does not meet fully animated; 2002 no longer appears in the stem to eliminate dated options. Final options challenged individually: The separate video is not the original film’s animated-sequence reissue.; The 2012 3D release is later than the documented addition.; The 1994 stage production is not a fully animated film release."
+      }
+    },
+    {
+      "questionId": 2541,
+      "hash": "283fcf74c6162747592ad1c325feaecc767b8d67bfc916b3ca02ea52fa4b9e2c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Removed duo/group and deleted-from-film ambiguity: the question now asks only the original end-title performers.",
+      "context": "Original English 1995 end titles.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Original English 1995 end titles. The label credits Secada and Shanice.",
+        "sources": [
+          "b40-secada",
+          "b40-secada-context"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The label credits Secada and Shanice.",
+          "sources": [
+            "b40-secada",
+            "b40-secada-context"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bryson and Belle are not the credited End Title performers.",
+          "sources": [
+            "b40-secada",
+            "b40-secada-context"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "McKnight and Williams are not the credited End Title performers.",
+          "sources": [
+            "b40-secada",
+            "b40-secada-context"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Boyz II Men is not the credited End Title act.",
+          "sources": [
+            "b40-secada",
+            "b40-secada-context"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed duo/group and deleted-from-film ambiguity: the question now asks only the original end-title performers. Final options challenged individually: Bryson and Belle are not the credited End Title performers.; McKnight and Williams are not the credited End Title performers.; Boyz II Men is not the credited End Title act."
+      }
+    },
+    {
+      "questionId": 2542,
+      "hash": "055a25953067003d81e1851fb89cfb42b75f6ecef1228caf3bf29f32e03a514c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Idina’s Elsa performance and later covers are excluded by the end-credit context.",
+      "context": "Original English Frozen 2013 end-credit recording.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Original English Frozen 2013 end-credit recording. Disney Records explicitly names Demi Lovato.",
+        "sources": [
+          "b40-demi"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney Records explicitly names Demi Lovato.",
+          "sources": [
+            "b40-demi"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ariana Grande is not the credited end-title singer.",
+          "sources": [
+            "b40-demi"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Selena Gomez is not the credited end-title singer.",
+          "sources": [
+            "b40-demi"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kesha is not the credited end-title singer.",
+          "sources": [
+            "b40-demi"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Idina’s Elsa performance and later covers are excluded by the end-credit context. Final options challenged individually: Ariana Grande is not the credited end-title singer.; Selena Gomez is not the credited end-title singer.; Kesha is not the credited end-title singer."
+      }
+    },
+    {
+      "questionId": 2543,
+      "hash": "b279e1b0a000ab1937b7da02d919b7db613e0fb199360adb44c39484e3ad7154",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. The film performance by Cravalho is distinct; another Disney pop vocalist does not satisfy this particular credit.",
+      "context": "Original English Moana 2016 end credits.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Original English Moana 2016 end credits. The track and Disney announcement name Alessia Cara.",
+        "sources": [
+          "b40-moana",
+          "b40-moana-end"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The track and Disney announcement name Alessia Cara.",
+          "sources": [
+            "b40-moana",
+            "b40-moana-end"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Demi Lovato is not credited for this Moana end-title track.",
+          "sources": [
+            "b40-moana",
+            "b40-moana-end"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Meghan Trainor is not credited for this track.",
+          "sources": [
+            "b40-moana",
+            "b40-moana-end"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Shawn Mendes is not credited for this track.",
+          "sources": [
+            "b40-moana",
+            "b40-moana-end"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The film performance by Cravalho is distinct; another Disney pop vocalist does not satisfy this particular credit. Final options challenged individually: Demi Lovato is not credited for this Moana end-title track.; Meghan Trainor is not credited for this track.; Shawn Mendes is not credited for this track."
+      }
+    },
+    {
+      "questionId": 2544,
+      "hash": "265e1e5eb9cbc306f979abe21787ad0f012a01c7120c888f0047dd299972c0da",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Question now requests the band credit rather than a frontman while supplying band answers; cast and end-credit versions remain distinct.",
+      "context": "Original English Frozen 2 end-credit track 9.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Original English Frozen 2 end-credit track 9. Panic! At The Disco is the credited act.",
+        "sources": [
+          "b40-frozen2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Panic! At The Disco is the credited act.",
+          "sources": [
+            "b40-frozen2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Weezer is credited for Lost in the Woods instead.",
+          "sources": [
+            "b40-frozen2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Imagine Dragons is not the track 9 act.",
+          "sources": [
+            "b40-frozen2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fall Out Boy is not the track 9 act.",
+          "sources": [
+            "b40-frozen2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Question now requests the band credit rather than a frontman while supplying band answers; cast and end-credit versions remain distinct. Final options challenged individually: Weezer is credited for Lost in the Woods instead.; Imagine Dragons is not the track 9 act.; Fall Out Boy is not the track 9 act."
+      }
+    },
+    {
+      "questionId": 2545,
+      "hash": "d9b3526fe365da5be6a3e77cb9360bc267e8541f330a5d483771e1af500ddc34",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Groff’s Kristoff recording is the narrative version; the record’s distinct end-title credit excludes other bands.",
+      "context": "Original English Frozen 2 end-credit track 11.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Original English Frozen 2 end-credit track 11. Weezer is credited for the end-credit Lost in the Woods.",
+        "sources": [
+          "b40-frozen2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Weezer is credited for the end-credit Lost in the Woods.",
+          "sources": [
+            "b40-frozen2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Panic! is credited for Into the Unknown instead.",
+          "sources": [
+            "b40-frozen2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fall Out Boy is not the track 11 act.",
+          "sources": [
+            "b40-frozen2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "OneRepublic is not the track 11 act.",
+          "sources": [
+            "b40-frozen2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Groff’s Kristoff recording is the narrative version; the record’s distinct end-title credit excludes other bands. Final options challenged individually: Panic! is credited for Into the Unknown instead.; Fall Out Boy is not the track 11 act.; OneRepublic is not the track 11 act."
+      }
+    },
+    {
+      "questionId": 2546,
+      "hash": "f3d46db1e83ccb6cb65f78a698f73ef0d5fd2fa7f77eefeea3b12690262b6803",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Evan Rachel Wood’s film recording is not the end-title recording; genre resemblance does not change the performer credit.",
+      "context": "Original English Frozen 2 end-credit track 10.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Original English Frozen 2 end-credit track 10. The recording credits Kacey Musgraves.",
+        "sources": [
+          "b40-frozen2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The recording credits Kacey Musgraves.",
+          "sources": [
+            "b40-frozen2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Carrie Underwood is not the track 10 artist.",
+          "sources": [
+            "b40-frozen2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Miranda Lambert is not the track 10 artist.",
+          "sources": [
+            "b40-frozen2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Maren Morris is not the track 10 artist.",
+          "sources": [
+            "b40-frozen2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Evan Rachel Wood’s film recording is not the end-title recording; genre resemblance does not change the performer credit. Final options challenged individually: Carrie Underwood is not the track 10 artist.; Miranda Lambert is not the track 10 artist.; Maren Morris is not the track 10 artist."
+      }
+    },
+    {
+      "questionId": 2547,
+      "hash": "ec9dc5d910f3e204ab841d8dca9176418a13219ccbebb1e87f97b75c6a029381",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. A duet credit is asked, not the in-film Maui performance or any later cover.",
+      "context": "Original English Moana end-credit version featuring Miranda.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Original English Moana end-credit version featuring Miranda. Jordan Fisher is the credited singer featuring Miranda.",
+        "sources": [
+          "b40-moana",
+          "b40-moana-end"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Jordan Fisher is the credited singer featuring Miranda.",
+          "sources": [
+            "b40-moana",
+            "b40-moana-end"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Nick Jonas is not that credited singer.",
+          "sources": [
+            "b40-moana",
+            "b40-moana-end"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Shawn Mendes is not that credited singer.",
+          "sources": [
+            "b40-moana",
+            "b40-moana-end"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jason Derulo is not that credited singer.",
+          "sources": [
+            "b40-moana",
+            "b40-moana-end"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A duet credit is asked, not the in-film Maui performance or any later cover. Final options challenged individually: Nick Jonas is not that credited singer.; Shawn Mendes is not that credited singer.; Jason Derulo is not that credited singer."
+      }
+    },
+    {
+      "questionId": 2548,
+      "hash": "572fbf13d8b3d7fc6fc6d26075f2b45dc53702c1f37d0ea074e5eb9ed84a684d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Nationality clue removed; the original-language role prevents regional dubbing from creating another valid interpretation.",
+      "context": "English Zootopia 2016 role and song credit.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "English Zootopia 2016 role and song credit. Disney identifies Shakira as Gazelle and the song artist.",
+        "sources": [
+          "b40-shakira"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney identifies Shakira as Gazelle and the song artist.",
+          "sources": [
+            "b40-shakira"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cabello is not the credited Gazelle voice.",
+          "sources": [
+            "b40-shakira"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Estefan is not the credited Gazelle voice.",
+          "sources": [
+            "b40-shakira"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Becky G is not the credited Gazelle voice.",
+          "sources": [
+            "b40-shakira"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Nationality clue removed; the original-language role prevents regional dubbing from creating another valid interpretation. Final options challenged individually: Cabello is not the credited Gazelle voice.; Estefan is not the credited Gazelle voice.; Becky G is not the credited Gazelle voice."
+      }
+    },
+    {
+      "questionId": 2549,
+      "hash": "e5e0c872f164ab3daa34621020ea178dcae19250a43c0d56ab89fb9c473b502f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Franco’s Coco music contributions cannot make Pixar correct for the explicitly named Encanto milestone.",
+      "context": "Encanto’s original orchestral score, not songs or music contributions to Coco.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Encanto’s original orchestral score, not songs or music contributions to Coco. The milestone is specifically Disney Animation.",
+        "sources": [
+          "b40-franco",
+          "b40-franco-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The milestone is specifically Disney Animation.",
+          "sources": [
+            "b40-franco",
+            "b40-franco-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pixar is not the studio for this Encanto score.",
+          "sources": [
+            "b40-franco",
+            "b40-franco-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "DreamWorks is not the studio for this Encanto score.",
+          "sources": [
+            "b40-franco",
+            "b40-franco-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sony Pictures Animation is not the studio for this Encanto score.",
+          "sources": [
+            "b40-franco",
+            "b40-franco-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Franco’s Coco music contributions cannot make Pixar correct for the explicitly named Encanto milestone. Final options challenged individually: Pixar is not the studio for this Encanto score.; DreamWorks is not the studio for this Encanto score.; Sony Pictures Animation is not the studio for this Encanto score."
+      }
+    },
+    {
+      "questionId": 2550,
+      "hash": "1fa93076eebc56bca9c64038756f4ed8e8613885dd37525dec52f44a07f3abc2",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Distinguished the songwriters’ Grammy from Oscar terminology and cast-performance categories.",
+      "context": "2023 Grammy ceremony, songwriting category.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "2023 Grammy ceremony, songwriting category. The winners table names Best Song Written for Visual Media.",
+        "sources": [
+          "b40-bruno"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The winners table names Best Song Written for Visual Media.",
+          "sources": [
+            "b40-bruno"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Best Original Song is not the Grammy category listed.",
+          "sources": [
+            "b40-bruno"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Song of the Year is not Bruno’s listed winning category.",
+          "sources": [
+            "b40-bruno"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pop Duo/Group Performance is not Bruno’s listed winning category.",
+          "sources": [
+            "b40-bruno"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished the songwriters’ Grammy from Oscar terminology and cast-performance categories. Final options challenged individually: Best Original Song is not the Grammy category listed.; Song of the Year is not Bruno’s listed winning category.; Pop Duo/Group Performance is not Bruno’s listed winning category."
+      }
+    },
+    {
+      "questionId": 2551,
+      "hash": "b784ea1b7234765f6a936309688cc55532dab3f022c434261f13f61324794c33",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Counted titles rather than the website’s grouped film nomination summary; winning song is still a nominated song.",
+      "context": "Count individual nominated song titles, including the winner.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Count individual nominated song titles, including the winner. The full category contains three Lion King titles.",
+        "sources": [
+          "b40-lion",
+          "b40-lion-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The full category contains three Lion King titles.",
+          "sources": [
+            "b40-lion",
+            "b40-lion-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Two omits one of those three titles.",
+          "sources": [
+            "b40-lion",
+            "b40-lion-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Four exceeds the three listed titles.",
+          "sources": [
+            "b40-lion",
+            "b40-lion-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Five incorrectly includes other films’ nominees.",
+          "sources": [
+            "b40-lion",
+            "b40-lion-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Counted titles rather than the website’s grouped film nomination summary; winning song is still a nominated song. Final options challenged individually: Two omits one of those three titles.; Four exceeds the three listed titles.; Five incorrectly includes other films’ nominees."
+      }
+    },
+    {
+      "questionId": 2552,
+      "hash": "618351bea457a29361c63220ea4146e4edf95fd017203cd6549113fffed7ac8c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Attribution fixes temporal scope and avoids converting songwriting into an orchestral-score claim; other milestones do not answer what the notes attribute.",
+      "context": "Disney’s specific 2023 attributed distinction; songs versus Metzger’s score.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney’s specific 2023 attributed distinction; songs versus Metzger’s score. The production notes give exactly this all-songs youngest-person distinction.",
+        "sources": [
+          "b40-julia",
+          "b40-julia-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The production notes give exactly this all-songs youngest-person distinction.",
+          "sources": [
+            "b40-julia",
+            "b40-julia-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The notes do not attribute this nationality first.",
+          "sources": [
+            "b40-julia",
+            "b40-julia-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The notes do not attribute an Oscar win for a debut.",
+          "sources": [
+            "b40-julia",
+            "b40-julia-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The notes do not attribute a Disney Legend induction.",
+          "sources": [
+            "b40-julia",
+            "b40-julia-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Attribution fixes temporal scope and avoids converting songwriting into an orchestral-score claim; other milestones do not answer what the notes attribute. Final options challenged individually: The notes do not attribute this nationality first.; The notes do not attribute an Oscar win for a debut.; The notes do not attribute a Disney Legend induction."
+      }
+    },
+    {
+      "questionId": 2553,
+      "hash": "138f4caa943ceb6dd304ddf59981471695c86919836aad036311559314d79771",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. The finale quotes earlier musical ideas, but the credited number is All of You; title and scene, not every melody, are asked.",
+      "context": "Encanto 2021 rebuilding sequence, near 1:25.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Encanto 2021 rebuilding sequence, near 1:25. The final big ensemble number rebuilding Casita is All of You.",
+        "sources": [
+          "b40-encanto-final",
+          "b40-encanto-cor",
+          "b19-1019",
+          "b27-encanto-lament"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The final big ensemble number rebuilding Casita is All of You.",
+          "sources": [
+            "b40-encanto-final",
+            "b40-encanto-cor",
+            "b19-1019",
+            "b27-encanto-lament"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bruno’s earlier number describes ominous predictions; its brief musical callback is not this number’s title.",
+          "sources": [
+            "b40-encanto-final",
+            "b40-encanto-cor",
+            "b19-1019",
+            "b27-encanto-lament"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dos Oruguitas accompanies Alma’s backstory before the rebuilding.",
+          "sources": [
+            "b40-encanto-final",
+            "b40-encanto-cor",
+            "b19-1019",
+            "b27-encanto-lament"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Family Madrigal introduces the family at the opening.",
+          "sources": [
+            "b40-encanto-final",
+            "b40-encanto-cor",
+            "b19-1019",
+            "b27-encanto-lament"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The finale quotes earlier musical ideas, but the credited number is All of You; title and scene, not every melody, are asked. Final options challenged individually: Bruno’s earlier number describes ominous predictions; its brief musical callback is not this number’s title.; Dos Oruguitas accompanies Alma’s backstory before the rebuilding.; Family Madrigal introduces the family at the opening."
+      }
+    },
+    {
+      "questionId": 2554,
+      "hash": "953a979e7452428df4ce587ce6e5b70cb687b799b0bdc53c8b28e4ecc80cbfac",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Removed tenderly/gentle giveaway framing; filmmakers’ lullaby explanation and reunion credits establish the specific version, not all arrangements.",
+      "context": "Miguel’s late reunion version, not Ernesto’s show number or the pop duet.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Miguel’s late reunion version, not Ernesto’s show number or the pop duet. The reunion revisits the song’s intimate acoustic lullaby form.",
+        "sources": [
+          "b40-coco",
+          "b40-coco-interview"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The reunion revisits the song’s intimate acoustic lullaby form.",
+          "sources": [
+            "b40-coco",
+            "b40-coco-interview"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "This performance is not an upbeat mariachi march.",
+          "sources": [
+            "b40-coco",
+            "b40-coco-interview"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "This performance is not a choral hymn.",
+          "sources": [
+            "b40-coco",
+            "b40-coco-interview"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "This performance is not a rock ballad.",
+          "sources": [
+            "b40-coco",
+            "b40-coco-interview"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed tenderly/gentle giveaway framing; filmmakers’ lullaby explanation and reunion credits establish the specific version, not all arrangements. Final options challenged individually: This performance is not an upbeat mariachi march.; This performance is not a choral hymn.; This performance is not a rock ballad."
+      }
+    },
+    {
+      "questionId": 2555,
+      "hash": "92f0414c90528ea3b689a341452f91b58cb11e649000cf406f45dba19ef4fbf4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. The complete composer list excludes the distractors even though Proud of Your Boy has a separate Aladdin stage/development connection.",
+      "context": "2019 live-action Aladdin, Jasmine’s new solo.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "2019 live-action Aladdin, Jasmine’s new solo. The composer lists Speechless Parts 1 and 2 as Jasmine’s new song.",
+        "sources": [
+          "b40-speechless"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The composer lists Speechless Parts 1 and 2 as Jasmine’s new song.",
+          "sources": [
+            "b40-speechless"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A Million Dreams is absent from this film’s complete song list.",
+          "sources": [
+            "b40-speechless"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Waving Through a Window is absent from this song list.",
+          "sources": [
+            "b40-speechless"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Proud of Your Boy is absent from this song list.",
+          "sources": [
+            "b40-speechless"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The complete composer list excludes the distractors even though Proud of Your Boy has a separate Aladdin stage/development connection. Final options challenged individually: A Million Dreams is absent from this film’s complete song list.; Waving Through a Window is absent from this song list.; Proud of Your Boy is absent from this song list."
+      }
+    },
+    {
+      "questionId": 2556,
+      "hash": "dfa4fbb016d2f22952afa7211c18a1bf6de9cf5a106be89fff2f4ad2ca961135",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. An island’s former proper name excludes other Bahamian cay names; no present ownership claim is needed.",
+      "context": "Historical island name, no blanket assertion about modern ownership.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Historical island name, no blanket assertion about modern ownership. Disney’s history gives Gorda Cay.",
+        "sources": [
+          "b40-gorda"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney’s history gives Gorda Cay.",
+          "sources": [
+            "b40-gorda"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pelican Cay is not the former name given.",
+          "sources": [
+            "b40-gorda"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Treasure Cay is not the former name given.",
+          "sources": [
+            "b40-gorda"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Green Turtle Cay is not the former name given.",
+          "sources": [
+            "b40-gorda"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "An island’s former proper name excludes other Bahamian cay names; no present ownership claim is needed. Final options challenged individually: Pelican Cay is not the former name given.; Treasure Cay is not the former name given.; Green Turtle Cay is not the former name given."
+      }
+    },
+    {
+      "questionId": 2557,
+      "hash": "5ddff38954aabc99162e908cfe1ebe002d5f8a3a8cbe0586d70c4c90600092d6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Removed 2096: acquisition chronologies and ownership descriptions vary. Independent reports agree on the historical term; no expiry or present legal status is inferred.",
+      "context": "Historical original lease duration, not disputed start/expiry calculation.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Historical original lease duration, not disputed start/expiry calculation. Both historical reports state a 99-year lease.",
+        "sources": [
+          "b40-lease",
+          "b40-lease-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Both historical reports state a 99-year lease.",
+          "sources": [
+            "b40-lease",
+            "b40-lease-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "25 years is not the reported term.",
+          "sources": [
+            "b40-lease",
+            "b40-lease-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "50 years is not the reported term.",
+          "sources": [
+            "b40-lease",
+            "b40-lease-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "75 years is not the reported term.",
+          "sources": [
+            "b40-lease",
+            "b40-lease-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed 2096: acquisition chronologies and ownership descriptions vary. Independent reports agree on the historical term; no expiry or present legal status is inferred. Final options challenged individually: 25 years is not the reported term.; 50 years is not the reported term.; 75 years is not the reported term."
+      }
+    },
+    {
+      "questionId": 2558,
+      "hash": "fa9ac058e6509fc2627d3b1e08ba7d81a8be455666c9f552029bd13bbade71fe",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. The name refers to the founding milestone, not any date associated with Disneyland or Mickey; distinct from the general company-founding question because it asks restaurant naming.",
+      "context": "Wish’s 2022 debut restaurant naming, not every fact about 1923.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Wish’s 2022 debut restaurant naming, not every fact about 1923. The naming explanation commemorates the company’s founding.",
+        "sources": [
+          "b40-dining"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The naming explanation commemorates the company’s founding.",
+          "sources": [
+            "b40-dining"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Disneyland’s opening is not the naming explanation.",
+          "sources": [
+            "b40-dining"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mickey’s debut is not the naming explanation.",
+          "sources": [
+            "b40-dining"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Walt’s birth is not the naming explanation.",
+          "sources": [
+            "b40-dining"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The name refers to the founding milestone, not any date associated with Disneyland or Mickey; distinct from the general company-founding question because it asks restaurant naming. Final options challenged individually: Disneyland’s opening is not the naming explanation.; Mickey’s debut is not the naming explanation.; Walt’s birth is not the naming explanation."
+      }
+    },
+    {
+      "questionId": 2559,
+      "hash": "6460ee196362a832cf9bdcf0fab430c46fddb791b78406273a0d71deea62320b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Removed brothers from the stem, which had eliminated nearly every distractor before testing the room names.",
+      "context": "The two named Wish dining rooms at debut.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The two named Wish dining rooms at debut. The two names are Walt Disney and Roy O. Disney.",
+        "sources": [
+          "b40-dining"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The two names are Walt Disney and Roy O. Disney.",
+          "sources": [
+            "b40-dining"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Thomas and Johnston are not the dining-room names.",
+          "sources": [
+            "b40-dining"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Roy E. replaces Walt and is the wrong pair.",
+          "sources": [
+            "b40-dining"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ub Iwerks replaces Roy and is the wrong pair.",
+          "sources": [
+            "b40-dining"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed brothers from the stem, which had eliminated nearly every distractor before testing the room names. Final options challenged individually: Thomas and Johnston are not the dining-room names.; Roy E. replaces Walt and is the wrong pair.; Ub Iwerks replaces Roy and is the wrong pair."
+      }
+    },
+    {
+      "questionId": 2560,
+      "hash": "734998a59f345db23510c29e8a0481c24fded79f84a543f430d84d1481fa4a6d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Other spooky Disney films do not qualify: the named characters are specifically the Sanderson Sisters.",
+      "context": "Dated DCL listing, Sanderson Sisters costume inspiration.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "Dated DCL listing, Sanderson Sisters costume inspiration. The listing explicitly identifies Hocus Pocus.",
+        "sources": [
+          "b40-halloween"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The listing explicitly identifies Hocus Pocus.",
+          "sources": [
+            "b40-halloween"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Haunted Mansion is not the identified costume film.",
+          "sources": [
+            "b40-halloween"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Something Wicked This Way Comes is not the identified costume film.",
+          "sources": [
+            "b40-halloween"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Watcher in the Woods is not the identified costume film.",
+          "sources": [
+            "b40-halloween"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other spooky Disney films do not qualify: the named characters are specifically the Sanderson Sisters. Final options challenged individually: The Haunted Mansion is not the identified costume film.; Something Wicked This Way Comes is not the identified costume film.; The Watcher in the Woods is not the identified costume film."
+      }
+    },
+    {
+      "questionId": 2561,
+      "hash": "ed853f24d31739303ca8a994d1468705d6767d6a92732c0efb0056896c6502fd",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Removed the unsupported combination of deck party and atrium trick-or-treat route; listing identifies the celebration independently of location.",
+      "context": "Dated Halloween listing’s costume celebration; no deck/atrium conflation.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "Dated Halloween listing’s costume celebration; no deck/atrium conflation. Disney names Mickey’s Mouse-querade Party.",
+        "sources": [
+          "b40-halloween",
+          "b40-party"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney names Mickey’s Mouse-querade Party.",
+          "sources": [
+            "b40-halloween",
+            "b40-party"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pirates IN the Caribbean is not the named Halloween costume celebration.",
+          "sources": [
+            "b40-halloween",
+            "b40-party"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Frozen Games Party is not its listed name.",
+          "sources": [
+            "b40-halloween",
+            "b40-party"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pixar Play Parade is not its listed name.",
+          "sources": [
+            "b40-halloween",
+            "b40-party"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the unsupported combination of deck party and atrium trick-or-treat route; listing identifies the celebration independently of location. Final options challenged individually: Pirates IN the Caribbean is not the named Halloween costume celebration.; Frozen Games Party is not its listed name.; Pixar Play Parade is not its listed name."
+      }
+    },
+    {
+      "questionId": 2562,
+      "hash": "d5154eca2e9aa096d8d03ee4eff2e806e1be5784f7ece7a0ee2a0bcd008d26c5",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. The report’s specific guest is explicit; no claim that every future holiday itinerary repeats this staging remains.",
+      "context": "Disney’s 2024 published tree-lighting description.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney’s 2024 published tree-lighting description. The article explicitly introduces Santa after the lighting.",
+        "sources": [
+          "b40-santa"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The article explicitly introduces Santa after the lighting.",
+          "sources": [
+            "b40-santa"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Frosty is not the introduced guest.",
+          "sources": [
+            "b40-santa"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jack Frost is not the introduced guest.",
+          "sources": [
+            "b40-santa"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Nutcracker Prince is not the introduced guest.",
+          "sources": [
+            "b40-santa"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The report’s specific guest is explicit; no claim that every future holiday itinerary repeats this staging remains. Final options challenged individually: Frosty is not the introduced guest.; Jack Frost is not the introduced guest.; The Nutcracker Prince is not the introduced guest."
+      }
+    },
+    {
+      "questionId": 2563,
+      "hash": "1c313bb7c8259642709a8e61df7825ee98c460d02a12893bf160800b41bbc4cd",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. New Orleans-themed descriptors are not interchangeable official venue titles; Wish’s Bayou lounge is a different ship.",
+      "context": "Wonder venue name and nearby location, dated current listing.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "Wonder venue name and nearby location, dated current listing. French Quarter Lounge matches both official name and location.",
+        "sources": [
+          "b40-french",
+          "b40-french-loc"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "French Quarter Lounge matches both official name and location.",
+          "sources": [
+            "b40-french",
+            "b40-french-loc"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bayou Bar is not this named Wonder lounge.",
+          "sources": [
+            "b40-french",
+            "b40-french-loc"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mardi Gras Lounge is not this named Wonder lounge.",
+          "sources": [
+            "b40-french",
+            "b40-french-loc"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Royal Street Room is not this named Wonder lounge.",
+          "sources": [
+            "b40-french",
+            "b40-french-loc"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "New Orleans-themed descriptors are not interchangeable official venue titles; Wish’s Bayou lounge is a different ship. Final options challenged individually: Bayou Bar is not this named Wonder lounge.; Mardi Gras Lounge is not this named Wonder lounge.; Royal Street Room is not this named Wonder lounge."
+      }
+    },
+    {
+      "questionId": 2564,
+      "hash": "963ddc42701dd397b72628bfdeaf4cf7bca5242eb10e84087a659ed350a5169b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Distinguished Gonna Take You There during the parade from the final sing-along; final wording explicitly asks what this report observed.",
+      "context": "Dated firsthand 2023 performance report, not guaranteed nightly staging.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Dated firsthand 2023 performance report, not guaranteed nightly staging. The report explicitly says everyone ends by singing Dig a Little Deeper.",
+        "sources": [
+          "b40-tiana",
+          "b40-french-loc"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The report explicitly says everyone ends by singing Dig a Little Deeper.",
+          "sources": [
+            "b40-tiana",
+            "b40-french-loc"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Almost There describes Tiana’s costume inspiration, not the reported concluding sing-along.",
+          "sources": [
+            "b40-tiana",
+            "b40-french-loc"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Friends on the Other Side is not the reported concluding song.",
+          "sources": [
+            "b40-tiana",
+            "b40-french-loc"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Down in New Orleans is not the reported concluding song.",
+          "sources": [
+            "b40-tiana",
+            "b40-french-loc"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished Gonna Take You There during the parade from the final sing-along; final wording explicitly asks what this report observed. Final options challenged individually: Almost There describes Tiana’s costume inspiration, not the reported concluding sing-along.; Friends on the Other Side is not the reported concluding song.; Down in New Orleans is not the reported concluding song."
+      }
+    },
+    {
+      "questionId": 2565,
+      "hash": "7fea370300ea4ae695bee53b9edebb1e03fbf76093e624a93cfe0c27eaceca30",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Removed Toy Story from the stem; separately inspected both ships rather than extending evidence from one vessel to another.",
+      "context": "Current named venue on each of the two specified ships.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "Current named venue on each of the two specified ships. Both ship pages name Toy Story Splash Zone and its bath toys.",
+        "sources": [
+          "b40-splash",
+          "b40-splash-destiny"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Both ship pages name Toy Story Splash Zone and its bath toys.",
+          "sources": [
+            "b40-splash",
+            "b40-splash-destiny"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Andy’s Splash Pad is not that official venue name.",
+          "sources": [
+            "b40-splash",
+            "b40-splash-destiny"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pixar Play Zone is not that official venue name.",
+          "sources": [
+            "b40-splash",
+            "b40-splash-destiny"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Buzz’s Water Works is not that official venue name.",
+          "sources": [
+            "b40-splash",
+            "b40-splash-destiny"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed Toy Story from the stem; separately inspected both ships rather than extending evidence from one vessel to another. Final options challenged individually: Andy’s Splash Pad is not that official venue name.; Pixar Play Zone is not that official venue name.; Buzz’s Water Works is not that official venue name."
+      }
+    },
+    {
+      "questionId": 2566,
+      "hash": "d289a3b84c4b8cd5777b42f5ee49a3c79a85f93aedeeccc9fb52ac95d6d49587",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Wish was removed from the stem so the correct class is not simply copied from a listed ship; Dream/Magic groupings remain distinct.",
+      "context": "Disney’s August 2026 class terminology.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney’s August 2026 class terminology. The article groups Treasure and Destiny with the Wish-class ships.",
+        "sources": [
+          "b40-wishclass"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The article groups Treasure and Destiny with the Wish-class ships.",
+          "sources": [
+            "b40-wishclass"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dream class is a separate older grouping.",
+          "sources": [
+            "b40-wishclass"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Magic class is a separate original grouping.",
+          "sources": [
+            "b40-wishclass"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Destiny-class is not the class name used.",
+          "sources": [
+            "b40-wishclass"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Wish was removed from the stem so the correct class is not simply copied from a listed ship; Dream/Magic groupings remain distinct. Final options challenged individually: Dream class is a separate older grouping.; Magic class is a separate original grouping.; Destiny-class is not the class name used."
+      }
+    },
+    {
+      "questionId": 2567,
+      "hash": "99106a2ffa1554f15672d5a3415967704d1dd0f1260f6383d06f3026cc31003f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. The original 2025 stem had eliminated one option by year alone; now all dates must be assessed against the maiden voyage, not delivery or preview events.",
+      "context": "Actual maiden voyage from Fort Lauderdale, not delivery or christening.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Actual maiden voyage from Fort Lauderdale, not delivery or christening. The November 20, 2025 entry announces the maiden sailing that day.",
+        "sources": [
+          "b40-maiden",
+          "b40-maiden-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The November 20, 2025 entry announces the maiden sailing that day.",
+          "sources": [
+            "b40-maiden",
+            "b40-maiden-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "October 31 is not the dated maiden-voyage entry.",
+          "sources": [
+            "b40-maiden",
+            "b40-maiden-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Christmas Day is not the dated maiden-voyage entry.",
+          "sources": [
+            "b40-maiden",
+            "b40-maiden-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "January 15, 2026 is not the dated maiden-voyage entry.",
+          "sources": [
+            "b40-maiden",
+            "b40-maiden-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The original 2025 stem had eliminated one option by year alone; now all dates must be assessed against the maiden voyage, not delivery or preview events. Final options challenged individually: October 31 is not the dated maiden-voyage entry.; Christmas Day is not the dated maiden-voyage entry.; January 15, 2026 is not the dated maiden-voyage entry."
+      }
+    },
+    {
+      "questionId": 2568,
+      "hash": "ef99651ffc95d54842abb1d73e8753038745797f2514f4fa58dbadf9c5e95668",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Same year as fleet launch does not make it the same fact: the island’s first guest opening must be known separately.",
+      "context": "First guest opening, not acquisition or construction.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "First guest opening, not acquisition or construction. The industry account gives July 1998.",
+        "sources": [
+          "b40-islandopen"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The industry account gives July 1998.",
+          "sources": [
+            "b40-islandopen"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1996 concerns acquisition/development, not guest opening.",
+          "sources": [
+            "b40-islandopen"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2000 is later than the documented opening.",
+          "sources": [
+            "b40-islandopen"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2004 is later than the documented opening.",
+          "sources": [
+            "b40-islandopen"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Same year as fleet launch does not make it the same fact: the island’s first guest opening must be known separately. Final options challenged individually: 1996 concerns acquisition/development, not guest opening.; 2000 is later than the documented opening.; 2004 is later than the documented opening."
+      }
+    },
+    {
+      "questionId": 2569,
+      "hash": "765d0c63a244a44ff4dc617570bde7beff05881f7b857137538221794115ae2e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Distinguished Place from Splash Zone and removed the Singapore clue, which could be solved from another homeport question.",
+      "context": "Named Toy Story Place, no Singapore homeport giveaway.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-07",
+      "premise": {
+        "reason": "Named Toy Story Place, no Singapore homeport giveaway. The Disney Adventure article identifies this dedicated area.",
+        "sources": [
+          "b40-toyplace",
+          "b40-splash",
+          "b40-splash-destiny",
+          "b40-wish-splash"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Disney Adventure article identifies this dedicated area.",
+          "sources": [
+            "b40-toyplace",
+            "b40-splash",
+            "b40-splash-destiny",
+            "b40-wish-splash"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wish’s venue directory lists Toy Story Splash Zone, not Place.",
+          "sources": [
+            "b40-toyplace",
+            "b40-splash",
+            "b40-splash-destiny",
+            "b40-wish-splash"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Treasure’s documented venue directory lists Toy Story Splash Zone, not Place.",
+          "sources": [
+            "b40-toyplace",
+            "b40-splash",
+            "b40-splash-destiny",
+            "b40-wish-splash"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Destiny’s documented venue directory lists Toy Story Splash Zone, not Place.",
+          "sources": [
+            "b40-toyplace",
+            "b40-splash",
+            "b40-splash-destiny",
+            "b40-wish-splash"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished Place from Splash Zone and removed the Singapore clue, which could be solved from another homeport question. Final options challenged individually: Wish’s venue directory lists Toy Story Splash Zone, not Place.; Treasure’s documented venue directory lists Toy Story Splash Zone, not Place.; Destiny’s documented venue directory lists Toy Story Splash Zone, not Place."
+      }
+    },
+    {
+      "questionId": 2570,
+      "hash": "5ac46118d3a9e2f9766bff131fbd55a5875a797a8d69f93819444cedee59625b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Checked the complete list as well as the explicit first-recipient biography; later classes cannot satisfy inaugural 1987.",
+      "context": "Inaugural Disney Legends class, not first actor of a later year.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Inaugural Disney Legends class, not first actor of a later year. The sole 1987 honoree is Fred MacMurray.",
+        "sources": [
+          "b40-legends",
+          "b40-firstlegend"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The sole 1987 honoree is Fred MacMurray.",
+          "sources": [
+            "b40-legends",
+            "b40-firstlegend"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Andrews appears in the 1991 class.",
+          "sources": [
+            "b40-legends",
+            "b40-firstlegend"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Funicello appears in the 1992 class.",
+          "sources": [
+            "b40-legends",
+            "b40-firstlegend"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jones appears in the 1995 class.",
+          "sources": [
+            "b40-legends",
+            "b40-firstlegend"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the complete list as well as the explicit first-recipient biography; later classes cannot satisfy inaugural 1987. Final options challenged individually: Andrews appears in the 1991 class.; Funicello appears in the 1992 class.; Jones appears in the 1995 class."
+      }
+    },
+    {
+      "questionId": 2571,
+      "hash": "811f4f70bd5314b6877e9eb73de45d92c628d9f20d1f6668bb54762be330f2cc",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. The 1970 campus opening is distinct from the 1961 formation; no similarly named Los Angeles art school substitutes for the documented partner.",
+      "context": "1961 institutional merger, not the later opening of the campus.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "1961 institutional merger, not the later opening of the campus. CalArts identifies Chouinard as the art-school merger partner.",
+        "sources": [
+          "b40-calarts",
+          "b17-calarts"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "CalArts identifies Chouinard as the art-school merger partner.",
+          "sources": [
+            "b40-calarts",
+            "b17-calarts"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Otis is not either of the two merger institutions.",
+          "sources": [
+            "b40-calarts",
+            "b17-calarts"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Art Center is not either merger institution.",
+          "sources": [
+            "b40-calarts",
+            "b17-calarts"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pasadena Art School is not either merger institution.",
+          "sources": [
+            "b40-calarts",
+            "b17-calarts"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The 1970 campus opening is distinct from the 1961 formation; no similarly named Los Angeles art school substitutes for the documented partner. Final options challenged individually: Otis is not either of the two merger institutions.; Art Center is not either merger institution.; Pasadena Art School is not either merger institution."
+      }
+    },
+    {
+      "questionId": 2572,
+      "hash": "454049e98556b11f03cb24c2b0d7ad1ef7e98d8ff7e417bb2f115764474bf6ea",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Removed the unverified exact 1929 start date; CalArts independently confirms Nelbert as founder, excluding a first-name mix-up.",
+      "context": "Named educator behind the deferred-payment arrangement.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Named educator behind the deferred-payment arrangement. The museum explicitly names Nelbert Chouinard.",
+        "sources": [
+          "b40-nelbert",
+          "b40-calarts"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The museum explicitly names Nelbert Chouinard.",
+          "sources": [
+            "b40-nelbert",
+            "b40-calarts"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Edith Chouinard is not the educator named.",
+          "sources": [
+            "b40-nelbert",
+            "b40-calarts"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Margaret Otis is not the educator named.",
+          "sources": [
+            "b40-nelbert",
+            "b40-calarts"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Grace Nicholson is not the educator named.",
+          "sources": [
+            "b40-nelbert",
+            "b40-calarts"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the unverified exact 1929 start date; CalArts independently confirms Nelbert as founder, excluding a first-name mix-up. Final options challenged individually: Edith Chouinard is not the educator named.; Margaret Otis is not the educator named.; Grace Nicholson is not the educator named."
+      }
+    },
+    {
+      "questionId": 2573,
+      "hash": "e864419f378af5ea5b93321e839ff6ecf78af836bb531f8cb02d7e493b1ddcbd",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Removed the unbounded only-Donald-Oscar claim; the conjunction of documented title, plot and release excludes the other wartime shorts.",
+      "context": "Specific released short and Nazi-Germany nightmare, not all Donald war shorts.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Specific released short and Nazi-Germany nightmare, not all Donald war shorts. Disney identifies Der Fuehrer’s Face with this plot and release.",
+        "sources": [
+          "b40-donald",
+          "b40-donald-oscar"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Disney identifies Der Fuehrer’s Face with this plot and release.",
+          "sources": [
+            "b40-donald",
+            "b40-donald-oscar"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Donald’s Decision is not the identified nightmare short.",
+          "sources": [
+            "b40-donald",
+            "b40-donald-oscar"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The Old Army Game is not the identified nightmare short.",
+          "sources": [
+            "b40-donald",
+            "b40-donald-oscar"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sky Trooper is not the identified nightmare short.",
+          "sources": [
+            "b40-donald",
+            "b40-donald-oscar"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the unbounded only-Donald-Oscar claim; the conjunction of documented title, plot and release excludes the other wartime shorts. Final options challenged individually: Donald’s Decision is not the identified nightmare short.; The Old Army Game is not the identified nightmare short.; Sky Trooper is not the identified nightmare short."
+      }
+    },
+    {
+      "questionId": 2574,
+      "hash": "853966ebef35b5afd36d97e7a5636e2707b23a31c33461b8caf941d9d050e43b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full matched topic catalogs and cross-bank alternatives reviewed. Sources use differing totals and scopes. Final wording names the historian, counts designs rather than units, and includes Allied recipients; museum’s over-1,200 corroborates the approximate scale.",
+      "context": "Baxter’s attributed approximate design total, not a U.S.-unit census.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Baxter’s attributed approximate design total, not a U.S.-unit census. Baxter’s nearly 1,300 matches this approximation.",
+        "sources": [
+          "b40-insignia",
+          "b40-insignia-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Baxter’s nearly 1,300 matches this approximation.",
+          "sources": [
+            "b40-insignia",
+            "b40-insignia-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "300 is far below Baxter’s stated estimate.",
+          "sources": [
+            "b40-insignia",
+            "b40-insignia-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "5,000 is far above Baxter’s stated estimate.",
+          "sources": [
+            "b40-insignia",
+            "b40-insignia-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "600 is far below Baxter’s stated estimate.",
+          "sources": [
+            "b40-insignia",
+            "b40-insignia-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Sources use differing totals and scopes. Final wording names the historian, counts designs rather than units, and includes Allied recipients; museum’s over-1,200 corroborates the approximate scale. Final options challenged individually: 300 is far below Baxter’s stated estimate.; 5,000 is far above Baxter’s stated estimate.; 600 is far below Baxter’s stated estimate."
+      }
+    }
+  ]
+}

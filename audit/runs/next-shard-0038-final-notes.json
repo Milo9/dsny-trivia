@@ -1,0 +1,3285 @@
+{
+  "schema": 1,
+  "reviewer": "Codex",
+  "at": "2026-11-09",
+  "sourcesChecked": [
+    "b38-argocor",
+    "b38-bambicast",
+    "b38-bambidialogue",
+    "b38-bambimusic",
+    "b38-bambiplot",
+    "b38-bao",
+    "b38-baofirst",
+    "b38-baofirstcor",
+    "b38-baorelease",
+    "b38-baowriter",
+    "b38-burger",
+    "b38-burgercor",
+    "b38-cindy",
+    "b38-cococast",
+    "b38-cocoofficial",
+    "b38-dalmatians",
+    "b38-egan",
+    "b38-fox",
+    "b38-foxcast",
+    "b38-foxcastcor",
+    "b38-frozen",
+    "b38-frozencor",
+    "b38-gonzalez",
+    "b38-herc",
+    "b38-hercdialogue",
+    "b38-jungle",
+    "b38-junglecast",
+    "b38-jungledialogue",
+    "b38-lavacor",
+    "b38-lucaname",
+    "b38-lucanamecor",
+    "b38-lucanotes",
+    "b38-lucascript",
+    "b38-lyle",
+    "b38-lylecor",
+    "b38-olaf",
+    "b38-olafdirectors",
+    "b38-olivecor",
+    "b38-oncast",
+    "b38-oncor",
+    "b38-onremy",
+    "b38-onscript",
+    "b38-oscar",
+    "b38-patch",
+    "b38-patchdialogue",
+    "b38-patchplot",
+    "b38-pepita",
+    "b38-ratingcor",
+    "b38-ratings",
+    "b38-six",
+    "b38-sixcor",
+    "b38-tarzan",
+    "b38-tarzan2",
+    "b38-tarzanmusic",
+    "b38-trademark",
+    "b38-wizards"
+  ],
+  "reviews": [
+    {
+      "questionId": 2426,
+      "hash": "afe77cd0025c14f13d1182f8fac9b5488a02616eb0fea75bb3cce4c68b427929",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Phil explicitly identifies a piece of the Argo inside the hut.",
+        "sources": [
+          "b38-hercdialogue",
+          "b38-argocor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Phil names the mast.",
+          "sources": [
+            "b38-hercdialogue",
+            "b38-argocor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He does not identify a sail.",
+          "sources": [
+            "b38-hercdialogue",
+            "b38-argocor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The identified fragment is not an anchor.",
+          "sources": [
+            "b38-hercdialogue",
+            "b38-argocor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The fragment is a mast, not a rudder.",
+          "sources": [
+            "b38-hercdialogue",
+            "b38-argocor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Challenged other ship parts: dialogue names the mast uniquely. Removed the unsupported Jason-death interpretation; no claim about the classical death remains."
+      }
+    },
+    {
+      "questionId": 2427,
+      "hash": "9e40858074162a2c3681ada3f44ecbd058a8fc923ab0d2520ca6c05266e9a989",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The adaptation uses Greek gods and heroes.",
+        "sources": [
+          "b38-herc"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Zeus, Hera and Olympus belong to Greek myth.",
+          "sources": [
+            "b38-herc"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The named pantheon is not Norse.",
+          "sources": [
+            "b38-herc"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The named pantheon is not Egyptian.",
+          "sources": [
+            "b38-herc"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The named pantheon is not Celtic.",
+          "sources": [
+            "b38-herc"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A historical story and Broadway adaptation cannot replace the film source tradition; final choices are parallel myth traditions. Removed first-ever claim."
+      }
+    },
+    {
+      "questionId": 2428,
+      "hash": "b63caf33f8401d373f8cc2e0dabc1e6aa9035d8de5532e3b3e459355930a7af4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Phil names Thebes on arrival.",
+        "sources": [
+          "b38-hercdialogue",
+          "b38-olivecor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Phil calls it the Big Olive.",
+          "sources": [
+            "b38-hercdialogue",
+            "b38-olivecor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Big Grape is not his nickname.",
+          "sources": [
+            "b38-hercdialogue",
+            "b38-olivecor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Golden City is not the quoted nickname.",
+          "sources": [
+            "b38-hercdialogue",
+            "b38-olivecor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Marble Metropolis is not the quoted nickname.",
+          "sources": [
+            "b38-hercdialogue",
+            "b38-olivecor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tested whether alternative descriptions could be figuratively true: asks Phil nickname, not any poetic description. Exact line excludes the other three."
+      }
+    },
+    {
+      "questionId": 2429,
+      "hash": "09629ae8bef2ee9116e1fe7b0c4e6ce5cfad6844f34eaf79b8de05f516a4304c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The original Belle and Hercules Meg credit refer to Susan Egan.",
+        "sources": [
+          "b38-herc",
+          "b38-egan"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Egan has both credits.",
+          "sources": [
+            "b38-herc",
+            "b38-egan"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "OHara is not the credited Meg.",
+          "sources": [
+            "b38-herc",
+            "b38-egan"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Benson is not the credited Meg.",
+          "sources": [
+            "b38-herc",
+            "b38-egan"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kuhn is not the credited Meg.",
+          "sources": [
+            "b38-herc",
+            "b38-egan"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Broadway and animated voice roles were checked separately; original Belle refers to stage, not OHara original film performance."
+      }
+    },
+    {
+      "questionId": 2430,
+      "hash": "23dc862e0bb1a829ccf46cdc769be31f820847c3ddee2829067c0813fca1dfeb",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Original English cast assigns Ian to Holland.",
+        "sources": [
+          "b38-oncast"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Holland voices Ian.",
+          "sources": [
+            "b38-oncast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pratt voices Barley.",
+          "sources": [
+            "b38-oncast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Chalamet is not the Ian actor.",
+          "sources": [
+            "b38-oncast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Butterfield is not the Ian actor.",
+          "sources": [
+            "b38-oncast"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed Spider-Man clue; Ian is not Barley. The unique English role assignment excludes all other names."
+      }
+    },
+    {
+      "questionId": 2431,
+      "hash": "c742d8dd2770c4d77cd1c316078d53c25df0cd036c3e0488786aedb05dd7707e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The credited D&D publisher is explicitly named.",
+        "sources": [
+          "b38-wizards"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Wizards is thanked.",
+          "sources": [
+            "b38-wizards"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Paizo is not the named D&D publisher.",
+          "sources": [
+            "b38-wizards"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Games Workshop is not the named publisher.",
+          "sources": [
+            "b38-wizards"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Chaosium is not the named publisher.",
+          "sources": [
+            "b38-wizards"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Narrowed to the credit instead of unverifiable design assistance for the Manticore. Removed Hasbro corporate overlap from options."
+      }
+    },
+    {
+      "questionId": 2432,
+      "hash": "726243d0ac6e7459eed330fa510b222ab4a09c792ec91ff1fab99f806fdc24fa",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Final home scene has Officer Gore radio dispatch.",
+        "sources": [
+          "b38-onscript",
+          "b38-oncor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The spoken a 113 echoes A113.",
+          "sources": [
+            "b38-onscript",
+            "b38-oncor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "B227 does not match the dispatch.",
+          "sources": [
+            "b38-onscript",
+            "b38-oncor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "C118 does not match the dispatch.",
+          "sources": [
+            "b38-onscript",
+            "b38-oncor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "T809 does not match the dispatch.",
+          "sources": [
+            "b38-onscript",
+            "b38-oncor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "No answer number remains in the stem. Checked audio-word/article distinction: this asks which recurring code is echoed, not that the letter is visually printed."
+      }
+    },
+    {
+      "questionId": 2433,
+      "hash": "908a8339c406299fee56863869f96e8e96925700a9a4e2cdf442f922782b09af",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Two scene reports identify the kitchen rat cameo.",
+        "sources": [
+          "b38-onremy",
+          "b38-oncor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Remy is the rat cook identified.",
+          "sources": [
+            "b38-onremy",
+            "b38-oncor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Linguini is not the kitchen rat.",
+          "sources": [
+            "b38-onremy",
+            "b38-oncor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Colette is not the kitchen rat.",
+          "sources": [
+            "b38-onremy",
+            "b38-oncor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gusteau is not the kitchen rat.",
+          "sources": [
+            "b38-onremy",
+            "b38-oncor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tried treating any Ratatouille chef as defensible: cameo identity is the rat Remy, not merely the occupation chef. The question no longer asserts permanent employment. Secondary corroboration limitation retained."
+      }
+    },
+    {
+      "questionId": 2434,
+      "hash": "65030847c74b3f7fd36997861999fe94ecc8141948d721a063458fad43dfcb1b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The early breakfast stop displays the Tolkien joke.",
+        "sources": [
+          "b38-burger",
+          "b38-burgercor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The restaurant is Burger Shire.",
+          "sources": [
+            "b38-burger",
+            "b38-burgercor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Prancing Pony Grill is not the sign.",
+          "sources": [
+            "b38-burger",
+            "b38-burgercor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hobbit Burger Hut is not the sign.",
+          "sources": [
+            "b38-burger",
+            "b38-burgercor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rivendell Diner is not the sign.",
+          "sources": [
+            "b38-burger",
+            "b38-burgercor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All four are fantasy-themed restaurant names; only Burger Shire is the displayed name. Second breakfast supports the reference, not an invented menu quotation."
+      }
+    },
+    {
+      "questionId": 2435,
+      "hash": "51eea9d180d1fdb63452b745bb4a1bfd36d0a98d625e3c8f846cffed9fc8aa4e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Historical production/release/award record; fixed date context. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 2013 reported applications and withdrawal name one holiday.",
+        "sources": [
+          "b38-trademark"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Applications named Dia de los Muertos.",
+          "sources": [
+            "b38-trademark"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Reyes is not the application name.",
+          "sources": [
+            "b38-trademark"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Candelaria is not the application name.",
+          "sources": [
+            "b38-trademark"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Independencia is not the application name.",
+          "sources": [
+            "b38-trademark"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Specific reported application identifies one phrase; no legal conclusion about exclusive ownership of a holiday. Removed unnecessary poster and title chronology details."
+      }
+    },
+    {
+      "questionId": 2436,
+      "hash": "02fef4c3cf3a9e881f50994bb85d79e9c8367b138e40f8f84de85f90bd5b2a86",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Gonzalez says additional songs followed disclosure of his singing experience.",
+        "sources": [
+          "b38-gonzalez"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Singing is his stated talent.",
+          "sources": [
+            "b38-gonzalez"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Dancing is not the reason he gives.",
+          "sources": [
+            "b38-gonzalez"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Whistling is not the reason he gives.",
+          "sources": [
+            "b38-gonzalez"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Songwriting is not the reason he gives.",
+          "sources": [
+            "b38-gonzalez"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The earlier only-guitar premise was false: Remember Me already existed. Attribution asks his explanation of added performances, not whether he might possess other talents."
+      }
+    },
+    {
+      "questionId": 2437,
+      "hash": "55d066b225d16a0f779bfbf23a2934b5d5611b2476dac9d723a50d23df9888b3",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Historical production/release/award record; fixed date context. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Unkrich explicitly describes six years at release.",
+        "sources": [
+          "b38-six",
+          "b38-sixcor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "He says six years.",
+          "sources": [
+            "b38-six",
+            "b38-sixcor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Two conflicts with his duration.",
+          "sources": [
+            "b38-six",
+            "b38-sixcor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ten conflicts with his duration.",
+          "sources": [
+            "b38-six",
+            "b38-sixcor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fifteen conflicts with his duration.",
+          "sources": [
+            "b38-six",
+            "b38-sixcor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed longest-Pixar-development assertion; independent filmmaker interview corroborates six years. Rounded duration belongs to quoted 2017 account, not an exact production-start record."
+      }
+    },
+    {
+      "questionId": 2438,
+      "hash": "ab516ce6692b58c1df93db7b2ed175edf6984f49d2ea33cbb233827088fa5970",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The modeler assigns different animal parts to Pepita.",
+        "sources": [
+          "b38-pepita",
+          "b38-cococast"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Eagle supplies wings and bird feet.",
+          "sources": [
+            "b38-pepita",
+            "b38-cococast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ram supplies horns.",
+          "sources": [
+            "b38-pepita",
+            "b38-cococast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tiger supplies head and forelimbs.",
+          "sources": [
+            "b38-pepita",
+            "b38-cococast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lizard supplies tail.",
+          "sources": [
+            "b38-pepita",
+            "b38-cococast"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A hybrid contains all listed animals, but the question is specifically about wings/birdlike feet. It does not treat every foot as eagle anatomy."
+      }
+    },
+    {
+      "questionId": 2439,
+      "hash": "d80e76c99a7e98da1ca14d2d9f5d425e9719ebfc0f03b3f56f126ceb995e9634",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "English spoken Ernesto role is Bratt.",
+        "sources": [
+          "b38-cococast",
+          "b38-cocoofficial"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Bratt is Ernesto.",
+          "sources": [
+            "b38-cococast",
+            "b38-cocoofficial"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bernal is Hector.",
+          "sources": [
+            "b38-cococast",
+            "b38-cocoofficial"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gonzalez is Miguel.",
+          "sources": [
+            "b38-cococast",
+            "b38-cocoofficial"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Arau is Papa Julio.",
+          "sources": [
+            "b38-cococast",
+            "b38-cocoofficial"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked voice versus singing credit: question is actor voicing Ernesto, not every singing performance. Only Bratt holds that spoken role."
+      }
+    },
+    {
+      "questionId": 2440,
+      "hash": "e821365a60b37ad429f4957bdb7a3f43b8513479748ea5752db8f41bbd56c3cd",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Production notes explicitly connect Portorosso design to Cinque Terre.",
+        "sources": [
+          "b38-lucanotes"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Cinque Terre is the named design source.",
+          "sources": [
+            "b38-lucanotes"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Amalfi Coast is not that named source.",
+          "sources": [
+            "b38-lucanotes"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sicily is not that named source.",
+          "sources": [
+            "b38-lucanotes"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lake Como is not that named source.",
+          "sources": [
+            "b38-lucanotes"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All four are real Italian destinations; checked the stated design source instead of assuming all Italian landscapes inspired it. Removed the five-towns clue and imprecise administrative-region wording."
+      }
+    },
+    {
+      "questionId": 2441,
+      "hash": "428dfa7b5826730c109a0c824f66b95890a83f5a204bdb68344ff7fcaec7f582",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Casarosa explains a blend of Italian names.",
+        "sources": [
+          "b38-lucaname",
+          "b38-lucanamecor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Portofino and Monterosso are both named inspirations.",
+          "sources": [
+            "b38-lucaname",
+            "b38-lucanamecor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sorrento is not part of the described pair.",
+          "sources": [
+            "b38-lucaname",
+            "b38-lucanamecor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Positano is not in the described blend.",
+          "sources": [
+            "b38-lucaname",
+            "b38-lucanamecor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Neither Portoferraio nor Ravello is the described pair.",
+          "sources": [
+            "b38-lucaname",
+            "b38-lucanamecor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Porto Venere is also discussed, but its paired Positano distractor is still false. Correct pair independently corroborated; no unsupported claim of intentional Porco Rosso homage remains."
+      }
+    },
+    {
+      "questionId": 2442,
+      "hash": "a87fa4a9c0fbaf187a060f864a3bce9e3e314abdb8b35926393f03d2bdf7ee8d",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Dinner scene names the served dish.",
+        "sources": [
+          "b38-lucascript"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Massimo names trenette al pesto.",
+          "sources": [
+            "b38-lucascript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Not carbonara in this dinner.",
+          "sources": [
+            "b38-lucascript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Not lasagna in this dinner.",
+          "sources": [
+            "b38-lucascript"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Not risotto in this dinner.",
+          "sources": [
+            "b38-lucascript"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the actual dinner rather than inferring food from Italian setting. Massimo names the single dish; other things he might cook do not answer this scene."
+      }
+    },
+    {
+      "questionId": 2443,
+      "hash": "b03b617de19ee10e5b617e8f4b211f55eb39f98cd9b8713c253cacd0365ceb20",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Luca casting identifies Tremblay.",
+        "sources": [
+          "b38-lucanotes"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Tremblay voices Luca.",
+          "sources": [
+            "b38-lucanotes"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Grazer voices Alberto.",
+          "sources": [
+            "b38-lucanotes"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Raimondo voices Ercole.",
+          "sources": [
+            "b38-lucanotes"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gaffigan voices Lorenzo.",
+          "sources": [
+            "b38-lucanotes"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinct characters and their cast assignments exclude the three actors who do appear in other Luca roles."
+      }
+    },
+    {
+      "questionId": 2444,
+      "hash": "b980a5a6577419681cb967e2aa8d6ceb8db95624f73e13eb3749c64746869bca",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Daniela English voice credit is Rudolph.",
+        "sources": [
+          "b38-lucanotes"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Rudolph voices Daniela.",
+          "sources": [
+            "b38-lucanotes"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hunter is not Daniela actor.",
+          "sources": [
+            "b38-lucanotes"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Louis-Dreyfus is not Daniela actor.",
+          "sources": [
+            "b38-lucanotes"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mirren is not Daniela actor.",
+          "sources": [
+            "b38-lucanotes"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished Daniela character from the production designer with the same first name. Unique role assignment excludes other mothers or other Pixar casts."
+      }
+    },
+    {
+      "questionId": 2445,
+      "hash": "bae127e0920000979cffb9a500b4c83185e649c99e7e398494a114dffb602f6f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Director describes a late-1950s/early-1960s setting.",
+        "sources": [
+          "b38-lucanotes"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "That combined period matches the notes.",
+          "sources": [
+            "b38-lucanotes"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1970s/80s is later.",
+          "sources": [
+            "b38-lucanotes"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1990s/2000s is later.",
+          "sources": [
+            "b38-lucanotes"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "1910s/20s is earlier.",
+          "sources": [
+            "b38-lucanotes"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Corrected single-decade overprecision. The film timeless design does not erase the explicitly described reference period."
+      }
+    },
+    {
+      "questionId": 2446,
+      "hash": "404d60e702591a22a5905b6dd8a49b75af6267f16b8da3c1b30d248216dff0f4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Changed slipper fit selects Anastasia.",
+        "sources": [
+          "b38-cindy"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Anastasia receives the altered fit.",
+          "sources": [
+            "b38-cindy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Drizella is not selected.",
+          "sources": [
+            "b38-cindy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cinderella is displaced by this alteration.",
+          "sources": [
+            "b38-cindy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lady Tremaine casts it rather than receiving the fit.",
+          "sources": [
+            "b38-cindy"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The original slipper fit would support Cinderella, so final wording fixes the altered scene. Wand first finder and slipper recipient are separate actions."
+      }
+    },
+    {
+      "questionId": 2447,
+      "hash": "b3efe56680bb5910a1506d7c5c1de48728f0a94218035c1820eae09383c13adb",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney lists both roles under Russi Taylor.",
+        "sources": [
+          "b38-cindy"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Taylor has both roles.",
+          "sources": [
+            "b38-cindy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Blakeslee plays stepmother.",
+          "sources": [
+            "b38-cindy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hale plays Cinderella.",
+          "sources": [
+            "b38-cindy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "MacNeille plays Anastasia.",
+          "sources": [
+            "b38-cindy"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A two-role question needs both credits: Taylor alone is assigned the specified pair, even though the other actresses are in this film."
+      }
+    },
+    {
+      "questionId": 2448,
+      "hash": "4f6957cb270a9f87896032ca6c6cbf3031dbcc55ca5bdc7027a362a1f32a1833",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Prince English credit gives Barnes.",
+        "sources": [
+          "b38-cindy"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Barnes plays Prince.",
+          "sources": [
+            "b38-cindy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Paulsen plays Jaq/Duke/Bishop.",
+          "sources": [
+            "b38-cindy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Corti is not the Prince actor.",
+          "sources": [
+            "b38-cindy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Farmer is not the Prince actor.",
+          "sources": [
+            "b38-cindy"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Expanded initials to full credited name. Grand Duke and King are distinct roles from Prince; original English version is explicit."
+      }
+    },
+    {
+      "questionId": 2449,
+      "hash": "b5c4e2ebe7fae4cc96d27ce70851f2cb5da37c38e8135185aa27596a23574b28",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney gives the 2007 home-video release.",
+        "sources": [
+          "b38-cindy"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Release year is 2007.",
+          "sources": [
+            "b38-cindy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2002 is not this release.",
+          "sources": [
+            "b38-cindy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2004 is not this release.",
+          "sources": [
+            "b38-cindy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "2005 is not this release.",
+          "sources": [
+            "b38-cindy"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "No region-dependent theatrical premiere confused with original direct-to-DVD release. Raised difficulty for obscure sequel date."
+      }
+    },
+    {
+      "questionId": 2450,
+      "hash": "86d5b393fcfe11cad7a2b8e95495b63520181bac757982f01f5dea2f63bcdb94",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "King credit assigns Andre Stojka.",
+        "sources": [
+          "b38-cindy"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Stojka voices King.",
+          "sources": [
+            "b38-cindy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bennett is not credited King.",
+          "sources": [
+            "b38-cindy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Burton voices Gus.",
+          "sources": [
+            "b38-cindy"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Farmer is not credited King.",
+          "sources": [
+            "b38-cindy"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "King is not Prince or Grand Duke. Unique credited role excludes other prolific Disney voice actors."
+      }
+    },
+    {
+      "questionId": 2451,
+      "hash": "63cf74e3c6708939d88c473fa436111f519bcf2c4cdb446de0e606c9c548a4eb",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Baloo enters to bring Mowgli back.",
+        "sources": [
+          "b38-jungle",
+          "b38-jungledialogue"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Baloo takes Mowgli.",
+          "sources": [
+            "b38-jungle",
+            "b38-jungledialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bagheera tries to prevent the trip.",
+          "sources": [
+            "b38-jungle",
+            "b38-jungledialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Louie is absent from the action.",
+          "sources": [
+            "b38-jungle",
+            "b38-jungledialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kaa is not the visitor retrieving him.",
+          "sources": [
+            "b38-jungle",
+            "b38-jungledialogue"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Shere Khan also enters village but is not a listed answer and seeks revenge. Among listed options only Baloo enters with this purpose."
+      }
+    },
+    {
+      "questionId": 2452,
+      "hash": "2f67b5168191bc7b7742dc6081553c29d85898b68291aabb868514dd48d42363",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Mowgli and Baloo identify the old temple owner.",
+        "sources": [
+          "b38-jungle",
+          "b38-jungledialogue"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "It was Louie place.",
+          "sources": [
+            "b38-jungle",
+            "b38-jungledialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kaa is not the former owner.",
+          "sources": [
+            "b38-jungle",
+            "b38-jungledialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hathi is not the former owner.",
+          "sources": [
+            "b38-jungle",
+            "b38-jungledialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Shere Khan is not the former owner.",
+          "sources": [
+            "b38-jungle",
+            "b38-jungledialogue"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Do not confuse party temple with final lava temple. Dialogue directly identifies King Louie place, with Louie now gone."
+      }
+    },
+    {
+      "questionId": 2453,
+      "hash": "9ce05802f0e4c30b116a1d385532531f6b039a0628b1eea106e90367e35b2bed",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Baloo assigns Ranjan to Bagheera before the rescue.",
+        "sources": [
+          "b38-jungle",
+          "b38-jungledialogue"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Bagheera gets that assignment.",
+          "sources": [
+            "b38-jungle",
+            "b38-jungledialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hathi is not the assigned guardian.",
+          "sources": [
+            "b38-jungle",
+            "b38-jungledialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Louie is not present.",
+          "sources": [
+            "b38-jungle",
+            "b38-jungledialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kaa is not assigned to protect Ranjan.",
+          "sources": [
+            "b38-jungle",
+            "b38-jungledialogue"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "General guardian identity does not establish this scene: checked specific Baloo order and separate child Ranjan, not Mowgli."
+      }
+    },
+    {
+      "questionId": 2454,
+      "hash": "fd96b77105f1a4626756735f53b545007ea861b03142335c31b18252c8b74cf6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Original English Mowgli role is Osment.",
+        "sources": [
+          "b38-junglecast"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Osment voices Mowgli.",
+          "sources": [
+            "b38-junglecast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bobo is not this Mowgli.",
+          "sources": [
+            "b38-junglecast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cranston is not this Mowgli.",
+          "sources": [
+            "b38-junglecast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ritter is not this Mowgli.",
+          "sources": [
+            "b38-junglecast"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Original/sequel casts differ; verified 2003 sequel rather than original Mowgli actor or later live-action film."
+      }
+    },
+    {
+      "questionId": 2455,
+      "hash": "d4118c9b0532e872c0463bcd2dadb045ad8a18ac28d2eed2c69547d86740deb5",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Detailed plot identifies final temple above lava.",
+        "sources": [
+          "b38-jungle",
+          "b38-lavacor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The hazard is a lava lake.",
+          "sources": [
+            "b38-jungle",
+            "b38-lavacor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Not a crocodile river.",
+          "sources": [
+            "b38-jungle",
+            "b38-lavacor"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Not a bottomless ravine.",
+          "sources": [
+            "b38-jungle",
+            "b38-lavacor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Not a waterfall.",
+          "sources": [
+            "b38-jungle",
+            "b38-lavacor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tested other hazards: the scene is above lava, with a stone base, not a bottomless ravine. Detailed synopsis and independent contemporary film criticism agree on lava; no original film playback is claimed."
+      }
+    },
+    {
+      "questionId": 2456,
+      "hash": "970382ff71bda6b5322e430227ada432fb1ac7846b36ac2a43127ddbd0a6d215",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The two dog credits share Cummings.",
+        "sources": [
+          "b38-foxcast",
+          "b38-foxcastcor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Cummings plays both.",
+          "sources": [
+            "b38-foxcast",
+            "b38-foxcastcor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Foxworthy is Lyle.",
+          "sources": [
+            "b38-foxcast",
+            "b38-foxcastcor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Root is talent scout.",
+          "sources": [
+            "b38-foxcast",
+            "b38-foxcastcor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Paulsen is Chief.",
+          "sources": [
+            "b38-foxcast",
+            "b38-foxcastcor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed unneeded twin relationship claim. Sharing actor with Pooh/Tigger is a separate casting fact, not evidence for these two dogs."
+      }
+    },
+    {
+      "questionId": 2457,
+      "hash": "20e7d531d271368f22ef800c6333325c2859e618d06b974a0e6dc076947726fa",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Dixie voice is McEntire.",
+        "sources": [
+          "b38-fox"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "McEntire is Dixie.",
+          "sources": [
+            "b38-fox"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Parton is not Dixie voice.",
+          "sources": [
+            "b38-fox"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Judd is not Dixie voice.",
+          "sources": [
+            "b38-fox"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Yearwood contributes songs, not Dixie voice.",
+          "sources": [
+            "b38-fox"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Specifically challenged Yearwood: participation on soundtrack does not confer Dixie role. Official archive distinguishes cast and guest vocals."
+      }
+    },
+    {
+      "questionId": 2458,
+      "hash": "0df73bc1a59b1a63b888bc7d053e4b2748bbaf665f1063992f3b1123f1e999dd",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Cash bandleader is voiced by Swayze.",
+        "sources": [
+          "b38-fox",
+          "b38-foxcast"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Swayze is Cash.",
+          "sources": [
+            "b38-fox",
+            "b38-foxcast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Foxworthy is Lyle.",
+          "sources": [
+            "b38-fox",
+            "b38-foxcast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Root is scout.",
+          "sources": [
+            "b38-fox",
+            "b38-foxcast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cummings plays Waylon/Floyd.",
+          "sources": [
+            "b38-fox",
+            "b38-foxcast"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All choices can be in the film; only one is Cash. Role credit rather than broad cast membership is decisive."
+      }
+    },
+    {
+      "questionId": 2459,
+      "hash": "704d4333322c69833f35cd08c5e27ee40d3ef85b97f83f4c54aba1951f1c85f5",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Lyle owns the dogs and plays banjo.",
+        "sources": [
+          "b38-lyle",
+          "b38-lylecor",
+          "b38-fox",
+          "b38-foxcast"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "He is the banjo-playing owner.",
+          "sources": [
+            "b38-lyle",
+            "b38-lylecor",
+            "b38-fox",
+            "b38-foxcast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Scout is Bickerstaff.",
+          "sources": [
+            "b38-lyle",
+            "b38-lylecor",
+            "b38-fox",
+            "b38-foxcast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Copper owner is Amos Slade.",
+          "sources": [
+            "b38-lyle",
+            "b38-lylecor",
+            "b38-fox",
+            "b38-foxcast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fair judge is not Lyle role.",
+          "sources": [
+            "b38-lyle",
+            "b38-lylecor",
+            "b38-fox",
+            "b38-foxcast"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Ownership refers to Singin Strays, not Copper. Two explicit scene/character accounts corroborate banjo and owner; official cast corroborates Foxworthy."
+      }
+    },
+    {
+      "questionId": 2460,
+      "hash": "1afbe22b190a3a2e6881e57a4d54ff0573e837ea84950c623606fb3d235f8328",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Shi wrote/directed Bao and achieved the short-director milestone.",
+        "sources": [
+          "b38-bao",
+          "b38-baofirst",
+          "b38-baowriter",
+          "b38-baofirstcor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Shi has the writing/directing credit.",
+          "sources": [
+            "b38-bao",
+            "b38-baofirst",
+            "b38-baowriter",
+            "b38-baofirstcor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Chapman is not Bao director.",
+          "sources": [
+            "b38-bao",
+            "b38-baofirst",
+            "b38-baowriter",
+            "b38-baofirstcor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mann is not Bao director.",
+          "sources": [
+            "b38-bao",
+            "b38-baofirst",
+            "b38-baowriter",
+            "b38-baofirstcor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hunt is not Bao director.",
+          "sources": [
+            "b38-bao",
+            "b38-baofirst",
+            "b38-baowriter",
+            "b38-baofirstcor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Chapman earlier feature milestone does not contradict first woman directing a Pixar short. Both writing and directing verified, with two institutional milestone accounts."
+      }
+    },
+    {
+      "questionId": 2461,
+      "hash": "984ceee6a62b4deb4fd6e8ca7e1745fb27dfe38e08797618e8e7afe756591457",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "2018 theatrical pairing is Incredibles 2.",
+        "sources": [
+          "b38-baorelease",
+          "b38-baofirst"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Bao paired with Incredibles 2.",
+          "sources": [
+            "b38-baorelease",
+            "b38-baofirst"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Not Coco.",
+          "sources": [
+            "b38-baorelease",
+            "b38-baofirst"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Not Toy Story 4.",
+          "sources": [
+            "b38-baorelease",
+            "b38-baofirst"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Not Onward.",
+          "sources": [
+            "b38-baorelease",
+            "b38-baofirst"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The question concerns original theatrical pairing, not later streaming bundles or festival premiere; explicit studio timeline establishes it."
+      }
+    },
+    {
+      "questionId": 2462,
+      "hash": "cc7fd0bd35b9e1d7e0f949c55e0d57a42e3b7f0b63903828ff4076afbc12f02c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Historical production/release/award record; fixed date context. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Academy identifies Bao as winner at its 91st ceremony.",
+        "sources": [
+          "b38-oscar",
+          "b38-baorelease"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "91st ceremony is the Bao win.",
+          "sources": [
+            "b38-oscar",
+            "b38-baorelease"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "90th is the prior ceremony.",
+          "sources": [
+            "b38-oscar",
+            "b38-baorelease"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "92nd is the next ceremony.",
+          "sources": [
+            "b38-oscar",
+            "b38-baorelease"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "93rd is two ceremonies later.",
+          "sources": [
+            "b38-oscar",
+            "b38-baorelease"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished 2018 film from 2019 awards ceremony; ordinal and year checked together. One awarded win cannot also belong to adjacent ceremonies."
+      }
+    },
+    {
+      "questionId": 2463,
+      "hash": "b5c0f4d912f4728df5febb655f646a2ef02a55f8dc1028b1586dd2dab982c8f3",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Cruella recruits spot-painter Lars.",
+        "sources": [
+          "b38-patch",
+          "b38-patchplot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Lars is the named artist.",
+          "sources": [
+            "b38-patch",
+            "b38-patchplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Jean-Pierre is not the recruited artist.",
+          "sources": [
+            "b38-patch",
+            "b38-patchplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Henri is not the recruited artist.",
+          "sources": [
+            "b38-patch",
+            "b38-patchplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Etienne is not the recruited artist.",
+          "sources": [
+            "b38-patch",
+            "b38-patchplot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed literal portrait claim and unnecessary national/style labels. Single character name, not a generic claim that any French artist could paint spots."
+      }
+    },
+    {
+      "questionId": 2464,
+      "hash": "41f056979f9a39199deeb2a332e6be276fc5eaf9fae74a75de2f31badd2d8d02",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Lucky gives the cage-escape reminder.",
+        "sources": [
+          "b38-patchplot",
+          "b38-patchdialogue"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Lucky prompts Patch.",
+          "sources": [
+            "b38-patchplot",
+            "b38-patchdialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rolly does not give this reminder.",
+          "sources": [
+            "b38-patchplot",
+            "b38-patchdialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Freckles does not give it.",
+          "sources": [
+            "b38-patchplot",
+            "b38-patchdialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pepper does not give it.",
+          "sources": [
+            "b38-patchplot",
+            "b38-patchdialogue"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The film dialogue follows Patch addressing Lucky; synopsis identifies same speaker. In-universe TV reference is film plot, not real TV-show trivia."
+      }
+    },
+    {
+      "questionId": 2465,
+      "hash": "aead5aab382c277dfa92e9a665ad0ea73d1460a0428580e104b776d72ab18a1a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Original 1961 and sequel 2003 releases are documented.",
+        "sources": [
+          "b38-patch",
+          "b38-dalmatians"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "2003 minus 1961 is 42.",
+          "sources": [
+            "b38-patch",
+            "b38-dalmatians"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "35 gives the wrong interval.",
+          "sources": [
+            "b38-patch",
+            "b38-dalmatians"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "38 gives the wrong interval.",
+          "sources": [
+            "b38-patch",
+            "b38-dalmatians"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "45 gives the wrong interval.",
+          "sources": [
+            "b38-patch",
+            "b38-dalmatians"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Calendar-year interval avoids claiming exactly 42 elapsed anniversaries: Jan 21 precedes Jan 25. Removed both dates from stem to avoid supplying the calculation."
+      }
+    },
+    {
+      "questionId": 2466,
+      "hash": "cfe2a817fac14cef8d2f8f88a02b03acbd09ee835705bf4e49775fadb0c90aac",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Collins supplied new Tarzan II songs after writing original songs.",
+        "sources": [
+          "b38-tarzan2",
+          "b38-tarzan",
+          "b38-tarzanmusic"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Collins is the songwriter and performer.",
+          "sources": [
+            "b38-tarzan2",
+            "b38-tarzan",
+            "b38-tarzanmusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Menken is not this songwriter.",
+          "sources": [
+            "b38-tarzan2",
+            "b38-tarzan",
+            "b38-tarzanmusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mancina score/production work is not song authorship.",
+          "sources": [
+            "b38-tarzan2",
+            "b38-tarzan",
+            "b38-tarzanmusic"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "John is not this songwriter.",
+          "sources": [
+            "b38-tarzan2",
+            "b38-tarzan",
+            "b38-tarzanmusic"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Two newly written songs distinguished from reused Son of Man and alternate end-credit recording. Collins remains correct despite Mancina scoring/arranging involvement."
+      }
+    },
+    {
+      "questionId": 2467,
+      "hash": "039be85f31954b5d8028cbabe77255de2e2d58986ccc4c7c99e3aabd8ba8b0b5",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Mama Gunda English voice is Harris.",
+        "sources": [
+          "b38-tarzan2"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Harris is Gunda.",
+          "sources": [
+            "b38-tarzan2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Soucie is not Gunda.",
+          "sources": [
+            "b38-tarzan2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lawrence is not Gunda.",
+          "sources": [
+            "b38-tarzan2"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Benson is not Gunda.",
+          "sources": [
+            "b38-tarzan2"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed ambiguous Toy Story ancillary clue; role credit itself excludes the other actresses without relying on franchise memory."
+      }
+    },
+    {
+      "questionId": 2468,
+      "hash": "9145d07be924b20620481b1ed0b8269fe409091a98e64891393376adf5e54222",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Great Prince original English voice is Stewart.",
+        "sources": [
+          "b38-bambicast"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Stewart voices Great Prince.",
+          "sources": [
+            "b38-bambicast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "McKellen is not that voice.",
+          "sources": [
+            "b38-bambicast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rickman is not that voice.",
+          "sources": [
+            "b38-bambicast"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Plummer is not that voice.",
+          "sources": [
+            "b38-bambicast"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Not the 1942 Great Prince actor. Sequel credit is unique; similar British vocal styles cannot make another answer valid."
+      }
+    },
+    {
+      "questionId": 2469,
+      "hash": "eee853e6d0d4bf106a20e38251b036deaf3ca7d4dc72cb0e6d123ea251f814e6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Opening conversation assigns doe search to Owl.",
+        "sources": [
+          "b38-bambidialogue",
+          "b38-bambiplot"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Friend Owl is directly addressed.",
+          "sources": [
+            "b38-bambidialogue",
+            "b38-bambiplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Thumper is not asked.",
+          "sources": [
+            "b38-bambidialogue",
+            "b38-bambiplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Flower is not asked.",
+          "sources": [
+            "b38-bambidialogue",
+            "b38-bambiplot"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ronno is not asked.",
+          "sources": [
+            "b38-bambidialogue",
+            "b38-bambiplot"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Distinguished the request recipient from eventual selected doe Mena. Opening dialogue and detailed plot agree."
+      }
+    },
+    {
+      "questionId": 2470,
+      "hash": "5abaa379c8a5bb9be17c22b546e8d572e620f542a90bc974f49f9f24953831f2",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Bonding montage is accompanied by First Sign of Spring.",
+        "sources": [
+          "b38-bambimusic",
+          "b38-bambidialogue"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "First Sign of Spring belongs to bonding montage.",
+          "sources": [
+            "b38-bambimusic",
+            "b38-bambidialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "There Is Life is the earlier seasonal montage.",
+          "sources": [
+            "b38-bambimusic",
+            "b38-bambidialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Through Your Eyes is end credits.",
+          "sources": [
+            "b38-bambimusic",
+            "b38-bambidialogue"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Healing of a Heart is end credits.",
+          "sources": [
+            "b38-bambimusic",
+            "b38-bambidialogue"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed unsupported annual stag run. Checked all song placements explicitly, not just whether each appears somewhere on soundtrack."
+      }
+    },
+    {
+      "questionId": 2471,
+      "hash": "09e466221fc5698845d8d13a9326a0b59c468c6dd85964cb3c7c77665d79b26a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Buck/Lee return for Frozen Fever.",
+        "sources": [
+          "b38-frozen",
+          "b38-frozencor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Buck and Lee direct it.",
+          "sources": [
+            "b38-frozen",
+            "b38-frozencor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bush/Howard do not direct it.",
+          "sources": [
+            "b38-frozen",
+            "b38-frozencor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hall/Williams do not direct it.",
+          "sources": [
+            "b38-frozen",
+            "b38-frozencor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "DeBlois/Sanders do not direct it.",
+          "sources": [
+            "b38-frozen",
+            "b38-frozencor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Original Frozen team reunion and short directors independently agree; other two-director pairings belong to different productions."
+      }
+    },
+    {
+      "questionId": 2472,
+      "hash": "016a3325d71384c8094ad600a28247247aee4792f7c8ab32ea890129673f5af8",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney Records names the short original song.",
+        "sources": [
+          "b38-frozen"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Making Today a Perfect Day is named.",
+          "sources": [
+            "b38-frozen"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Some Things Never Change is not that song.",
+          "sources": [
+            "b38-frozen"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "True Love is not that song.",
+          "sources": [
+            "b38-frozen"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fixer Upper is not that song.",
+          "sources": [
+            "b38-frozen"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Official announcement identifies the singular new song; cut songs/other Frozen installments do not satisfy written-for-this-short wording."
+      }
+    },
+    {
+      "questionId": 2473,
+      "hash": "6afc4094cf932957f2fea6753b21f626ffcf5c749be3e93acbe560075c591c21",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The theatrical featurette credits Deters/Wermers-Skelton.",
+        "sources": [
+          "b38-olaf",
+          "b38-olafdirectors"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Deters/Wermers-Skelton direct it.",
+          "sources": [
+            "b38-olaf",
+            "b38-olafdirectors"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Buck/Lee direct other Frozen films.",
+          "sources": [
+            "b38-olaf",
+            "b38-olafdirectors"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hall/Williams are not its directors.",
+          "sources": [
+            "b38-olaf",
+            "b38-olafdirectors"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Lee/Del Vecho is not its directing team.",
+          "sources": [
+            "b38-olaf",
+            "b38-olafdirectors"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Del Vecho producing work is not co-direction. Both institutional credits agree; pairs must have both correct directors."
+      }
+    },
+    {
+      "questionId": 2474,
+      "hash": "c3eb1c910d5668c2f2311ef5f14152e655803b3104755ce01bc9d7cbd73faa21",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Original English-language film/credits; specified sequel/short and event. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Opening track lists Bell, Menzel and Gad.",
+        "sources": [
+          "b38-olaf"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Gad is the third credited singer.",
+          "sources": [
+            "b38-olaf"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Groff performs other songs, not this opening track.",
+          "sources": [
+            "b38-olaf"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Brown is not in this track trio.",
+          "sources": [
+            "b38-olaf"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wood is not in this track trio.",
+          "sources": [
+            "b38-olaf"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked opening full track separately from reprise and ensemble finale. Season is song title, not evidence of TV-show scope."
+      }
+    },
+    {
+      "questionId": 2475,
+      "hash": "b585574ebbc724fbc40d23c1cd7d1afbd346fc407719bf0895279f1a1f763ea3",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog and all four options reviewed. Distinct fact checked across bank; secondary-title counts remain within the approximate cap. ",
+      "context": "Historical production/release/award record; fixed date context. ",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney records the first animated PG milestone.",
+        "sources": [
+          "b38-ratings",
+          "b38-ratingcor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "PG is the assigned rating.",
+          "sources": [
+            "b38-ratings",
+            "b38-ratingcor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "G is not its rating.",
+          "sources": [
+            "b38-ratings",
+            "b38-ratingcor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "PG-13 is not its rating.",
+          "sources": [
+            "b38-ratings",
+            "b38-ratingcor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "R is not its rating.",
+          "sources": [
+            "b38-ratings",
+            "b38-ratingcor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-09",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Primary institutional history establishes first Disney animated PG, while AFI independently confirms film rating. Live-action Black Hole earlier PG does not defeat animated qualifier."
+      }
+    }
+  ]
+}

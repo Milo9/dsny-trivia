@@ -1,0 +1,711 @@
+[
+  {
+    "finding": {
+      "id": "duplicate-0b4b4d8f2212d7293c0d",
+      "kind": "duplicate",
+      "questionIds": [
+        1397,
+        2569
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "0b4b4d8f2212d7293c0d7bb82360754950a0f9bdd636fd84717566ae939bcc52",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 1397,
+        "question": "Which Disney Cruise Line ship arrived in Singapore for the first time on March 3, 2026?",
+        "answers": [
+          "Disney Adventure",
+          "Disney Horizon",
+          "Disney Voyager",
+          "Disney Pacific"
+        ],
+        "difficulty": "medium",
+        "category": "cruise",
+        "factId": "disney-adventure.first-singapore-arrival",
+        "explanation": "The ship completed a two-month journey to Singapore before its inaugural season.",
+        "source": "https://www.disney.sg/article-disney-adventure-journey-to-singapore",
+        "verifiedAt": "2026-10-29"
+      },
+      {
+        "id": 2569,
+        "question": "In November 2026, which Disney Cruise Line ship features the water-play area Toy Story Place?",
+        "answers": [
+          "Disney Adventure",
+          "Disney Wish",
+          "Disney Treasure",
+          "Disney Destiny"
+        ],
+        "difficulty": "medium",
+        "category": "cruise"
+      }
+    ],
+    "verdict": "distinct",
+    "reason": "Different facts: first Singapore arrival date versus the ship assignment of Toy Story Place. Knowing Adventure arrived in Singapore does not establish its water-play venue.",
+    "reviewer": "Codex",
+    "at": "2026-11-09"
+  },
+  {
+    "finding": {
+      "id": "duplicate-10bfba11c73f701f6b29",
+      "kind": "duplicate",
+      "questionIds": [
+        100,
+        2525
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "10bfba11c73f701f6b293b2f4927f5de67aabfa006b521413bbefc41d5d6b2d6",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 100,
+        "question": "What is the land in Magic Kingdom that is home to Pirates of the Caribbean?",
+        "answers": [
+          "Adventureland",
+          "Frontierland",
+          "Tomorrowland",
+          "Liberty Square"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      },
+      {
+        "id": 2525,
+        "question": "In November 2026, in which Disneyland Paris land is Skull Rock located?",
+        "answers": [
+          "Adventureland",
+          "Frontierland",
+          "Fantasyland",
+          "Discoveryland"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      }
+    ],
+    "verdict": "distinct",
+    "reason": "Different attractions and resorts: Magic Kingdom Pirates of the Caribbean versus Paris Skull Rock. A common Adventureland answer does not establish either location from the other.",
+    "reviewer": "Codex",
+    "at": "2026-11-09"
+  },
+  {
+    "finding": {
+      "id": "duplicate-2dbfe83a0cbc198aa571",
+      "kind": "duplicate",
+      "questionIds": [
+        2153,
+        2551
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "2dbfe83a0cbc198aa571dc4f3af98114ef8a04af04fca05376fd7e6f2e6ef028",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2153,
+        "question": "In Hercules (1997), how many heads emerge after Hercules cuts off the Hydra's original head?",
+        "answers": [
+          "Three",
+          "Two",
+          "Four",
+          "Five"
+        ],
+        "difficulty": "medium",
+        "category": "movies"
+      },
+      {
+        "id": 2551,
+        "question": "How many songs from The Lion King were nominated for Best Original Song at the 1995 Academy Awards?",
+        "answers": [
+          "Three",
+          "Two",
+          "Four",
+          "Five"
+        ],
+        "difficulty": "hard",
+        "category": "music"
+      }
+    ],
+    "verdict": "distinct",
+    "reason": "Unrelated counts: Hydra replacement heads in Hercules versus individual Lion King Oscar-nominated songs. The common answer Three conveys no shared fact.",
+    "reviewer": "Codex",
+    "at": "2026-11-09"
+  },
+  {
+    "finding": {
+      "id": "duplicate-36fa324feb4fa0c14016",
+      "kind": "duplicate",
+      "questionIds": [
+        1014,
+        2564
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "36fa324feb4fa0c1401665213014e170167780d6f7688f5319480d05e978af73",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 1014,
+        "question": "In The Princess and the Frog, which song does Mama Odie sing while teaching Tiana and Naveen about what they need?",
+        "answers": [
+          "Dig a Little Deeper",
+          "Almost There",
+          "Down in New Orleans",
+          "Friends on the Other Side"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      },
+      {
+        "id": 2564,
+        "question": "In WDWNT's December 2023 review of Tiana's Place on Disney Wonder, which song ends the guests' Mardi Gras sing-along?",
+        "answers": [
+          "Dig a Little Deeper",
+          "Almost There",
+          "Friends on the Other Side",
+          "Down in New Orleans"
+        ],
+        "difficulty": "hard",
+        "category": "cruise"
+      }
+    ],
+    "verdict": "distinct",
+    "reason": "Different performances: Mama Odie’s film lesson versus a dated eyewitness account of the Disney Wonder restaurant finale. The same song may be reused, but its shipboard use is new information.",
+    "reviewer": "Codex",
+    "at": "2026-11-09"
+  },
+  {
+    "finding": {
+      "id": "duplicate-88f44715becb6edfed03",
+      "kind": "duplicate",
+      "questionIds": [
+        336,
+        2526
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "88f44715becb6edfed030341cdcd7b98bd942dc99608869833238f7fdb0bdeff",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 336,
+        "question": "In which Magic Kingdom land can you find Big Thunder Mountain Railroad?",
+        "answers": [
+          "Frontierland",
+          "Tomorrowland",
+          "Adventureland",
+          "Fantasyland"
+        ],
+        "difficulty": "easy",
+        "category": "parks"
+      },
+      {
+        "id": 2526,
+        "question": "In November 2026, in which Disneyland Paris land is Phantom Manor located?",
+        "answers": [
+          "Frontierland",
+          "Adventureland",
+          "Fantasyland",
+          "Discoveryland"
+        ],
+        "difficulty": "easy",
+        "category": "parks"
+      }
+    ],
+    "verdict": "distinct",
+    "reason": "Different attractions and resorts: Magic Kingdom Big Thunder Mountain versus Paris Phantom Manor. Both answering Frontierland does not make the locations interchangeable.",
+    "reviewer": "Codex",
+    "at": "2026-11-09"
+  },
+  {
+    "finding": {
+      "id": "duplicate-8efff4c2e3a841bc2629",
+      "kind": "duplicate",
+      "questionIds": [
+        5,
+        2551
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "8efff4c2e3a841bc26298775af83efb2d5c96e8a07787a5c1b74d51e1660a217",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 5,
+        "question": "In Aladdin, how many wishes does Aladdin receive from the Genie?",
+        "answers": [
+          "Three",
+          "One",
+          "Seven",
+          "Unlimited"
+        ],
+        "difficulty": "easy",
+        "category": "movies"
+      },
+      {
+        "id": 2551,
+        "question": "How many songs from The Lion King were nominated for Best Original Song at the 1995 Academy Awards?",
+        "answers": [
+          "Three",
+          "Two",
+          "Four",
+          "Five"
+        ],
+        "difficulty": "hard",
+        "category": "music"
+      }
+    ],
+    "verdict": "distinct",
+    "reason": "Unrelated counts: Aladdin’s wishes versus Lion King Oscar song nominations. Knowing one count supplies no reason for the other.",
+    "reviewer": "Codex",
+    "at": "2026-11-09"
+  },
+  {
+    "finding": {
+      "id": "duplicate-a96a1c4c7e227c2d1e73",
+      "kind": "duplicate",
+      "questionIds": [
+        886,
+        2525
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "a96a1c4c7e227c2d1e736029c3a9a9b36a74b052eefefe6b94992ce82a8c1dcd",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 886,
+        "question": "In November 2026, at Disneyland, which land is home to Indiana Jones Adventure?",
+        "answers": [
+          "Adventureland",
+          "Frontierland",
+          "Fantasyland",
+          "Tomorrowland"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      },
+      {
+        "id": 2525,
+        "question": "In November 2026, in which Disneyland Paris land is Skull Rock located?",
+        "answers": [
+          "Adventureland",
+          "Frontierland",
+          "Fantasyland",
+          "Discoveryland"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      }
+    ],
+    "verdict": "distinct",
+    "reason": "Different attractions and resorts: California Indiana Jones Adventure versus Paris Skull Rock. Sharing Adventureland is not a repeated attraction-location fact.",
+    "reviewer": "Codex",
+    "at": "2026-11-09"
+  },
+  {
+    "finding": {
+      "id": "duplicate-ac9f987abc84b5ec8dde",
+      "kind": "duplicate",
+      "questionIds": [
+        458,
+        2551
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "ac9f987abc84b5ec8dde60c532b72d247c00959c6b42f2d7f2bfa79af8ebc1df",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 458,
+        "question": "Which song from The Lion King actually won the Academy Award for Best Original Song?",
+        "answers": [
+          "Can You Feel the Love Tonight",
+          "Hakuna Matata",
+          "Circle of Life",
+          "Be Prepared"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      },
+      {
+        "id": 2551,
+        "question": "How many songs from The Lion King were nominated for Best Original Song at the 1995 Academy Awards?",
+        "answers": [
+          "Three",
+          "Two",
+          "Four",
+          "Five"
+        ],
+        "difficulty": "hard",
+        "category": "music"
+      }
+    ],
+    "verdict": "distinct",
+    "reason": "Different award facts: identity of the winning Lion King song versus the number of nominated songs. A winner’s identity cannot establish the number of other nominated titles.",
+    "reviewer": "Codex",
+    "at": "2026-11-09"
+  },
+  {
+    "finding": {
+      "id": "duplicate-b21c89ba12422bb61bea",
+      "kind": "duplicate",
+      "questionIds": [
+        2525,
+        2526
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "b21c89ba12422bb61bea0376fed7a5e40245ceefef3363237a6e55b5266cda26",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2525,
+        "question": "In November 2026, in which Disneyland Paris land is Skull Rock located?",
+        "answers": [
+          "Adventureland",
+          "Frontierland",
+          "Fantasyland",
+          "Discoveryland"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      },
+      {
+        "id": 2526,
+        "question": "In November 2026, in which Disneyland Paris land is Phantom Manor located?",
+        "answers": [
+          "Frontierland",
+          "Adventureland",
+          "Fantasyland",
+          "Discoveryland"
+        ],
+        "difficulty": "easy",
+        "category": "parks"
+      }
+    ],
+    "verdict": "distinct",
+    "reason": "Different Paris landmark-location facts: Skull Rock in Adventureland versus Phantom Manor in Frontierland. Neither answer identifies the other landmark’s land.",
+    "reviewer": "Codex",
+    "at": "2026-11-09"
+  },
+  {
+    "finding": {
+      "id": "duplicate-c27ea7f45a07d4e4b402",
+      "kind": "duplicate",
+      "questionIds": [
+        1136,
+        2526
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "c27ea7f45a07d4e4b4028f93eaf02d9798b697768824072bcc0b5ff6401d214b",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 1136,
+        "question": "At Disneyland, which original land is themed to the American Old West?",
+        "answers": [
+          "Frontierland",
+          "Adventureland",
+          "Tomorrowland",
+          "Fantasyland"
+        ],
+        "difficulty": "easy",
+        "category": "parks"
+      },
+      {
+        "id": 2526,
+        "question": "In November 2026, in which Disneyland Paris land is Phantom Manor located?",
+        "answers": [
+          "Frontierland",
+          "Adventureland",
+          "Fantasyland",
+          "Discoveryland"
+        ],
+        "difficulty": "easy",
+        "category": "parks"
+      }
+    ],
+    "verdict": "distinct",
+    "reason": "Different facts: California Frontierland’s Old West theme versus Paris Phantom Manor’s location. Knowledge of a land theme alone does not locate a named attraction in another resort.",
+    "reviewer": "Codex",
+    "at": "2026-11-09"
+  },
+  {
+    "finding": {
+      "id": "duplicate-d33abcbb1099f7de20cd",
+      "kind": "duplicate",
+      "questionIds": [
+        1620,
+        2569
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "d33abcbb1099f7de20cdb550d95c7f267b555142708e527c54d38bda639cb767",
+      "priority": 1,
+      "signals": [
+        "inverse-answer-and-stem"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 1620,
+        "question": "In what year did the Disney Adventure begin regular sailings from its Singapore homeport?",
+        "answers": [
+          "2026",
+          "2024",
+          "2025",
+          "2027"
+        ],
+        "difficulty": "medium",
+        "category": "cruise"
+      },
+      {
+        "id": 2569,
+        "question": "In November 2026, which Disney Cruise Line ship features the water-play area Toy Story Place?",
+        "answers": [
+          "Disney Adventure",
+          "Disney Wish",
+          "Disney Treasure",
+          "Disney Destiny"
+        ],
+        "difficulty": "medium",
+        "category": "cruise"
+      }
+    ],
+    "verdict": "distinct",
+    "reason": "Different facts after removing the Singapore clue: Adventure’s sailing-start year versus its Toy Story Place venue. Neither answer directly supplies the other fact.",
+    "reviewer": "Codex",
+    "at": "2026-11-09"
+  },
+  {
+    "finding": {
+      "id": "duplicate-d89a31b77c9ecc147421",
+      "kind": "duplicate",
+      "questionIds": [
+        1138,
+        2526
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "d89a31b77c9ecc1474218726f2acb80c9020bbf53a1ded87bf8aae5839682848",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 1138,
+        "question": "In November 2026, which Magic Kingdom land houses Country Bear Musical Jamboree?",
+        "answers": [
+          "Frontierland",
+          "Liberty Square",
+          "Adventureland",
+          "Fantasyland"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      },
+      {
+        "id": 2526,
+        "question": "In November 2026, in which Disneyland Paris land is Phantom Manor located?",
+        "answers": [
+          "Frontierland",
+          "Adventureland",
+          "Fantasyland",
+          "Discoveryland"
+        ],
+        "difficulty": "easy",
+        "category": "parks"
+      }
+    ],
+    "verdict": "distinct",
+    "reason": "Different attractions and resorts: Magic Kingdom Country Bear Musical Jamboree versus Paris Phantom Manor. Common Frontierland location does not establish the second attraction’s location.",
+    "reviewer": "Codex",
+    "at": "2026-11-09"
+  },
+  {
+    "finding": {
+      "id": "duplicate-df4055207afc388aa77b",
+      "kind": "duplicate",
+      "questionIds": [
+        137,
+        2568
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "df4055207afc388aa77b86fb206e7bf5110920cc94c6f3a0ebbe376a96ef20e3",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 137,
+        "question": "In what year did Disney Cruise Line begin operating?",
+        "answers": [
+          "1998",
+          "1994",
+          "2002",
+          "2006"
+        ],
+        "difficulty": "easy",
+        "category": "cruise"
+      },
+      {
+        "id": 2568,
+        "question": "In what year did Castaway Cay first welcome Disney Cruise Line guests?",
+        "answers": [
+          "1998",
+          "1996",
+          "2000",
+          "2004"
+        ],
+        "difficulty": "medium",
+        "category": "cruise"
+      }
+    ],
+    "verdict": "distinct",
+    "reason": "Different historical openings: fleet operations versus first guest use of the island. Both occurred in 1998, but the island could have opened later; knowing the fleet launch does not establish the island opening.",
+    "reviewer": "Codex",
+    "at": "2026-11-09"
+  },
+  {
+    "finding": {
+      "id": "duplicate-f19cb150c6859f93ae63",
+      "kind": "duplicate",
+      "questionIds": [
+        415,
+        2551
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "f19cb150c6859f93ae63c238d55dcdb8bf6bf081975dbcce22f53a91b606d145",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 415,
+        "question": "How many main restaurants are in a guest's rotational dinner schedule aboard the Disney Wish?",
+        "answers": [
+          "Three",
+          "Two",
+          "Four",
+          "Five"
+        ],
+        "difficulty": "easy",
+        "category": "cruise"
+      },
+      {
+        "id": 2551,
+        "question": "How many songs from The Lion King were nominated for Best Original Song at the 1995 Academy Awards?",
+        "answers": [
+          "Three",
+          "Two",
+          "Four",
+          "Five"
+        ],
+        "difficulty": "hard",
+        "category": "music"
+      }
+    ],
+    "verdict": "distinct",
+    "reason": "Unrelated counts: Wish rotational dining restaurants versus Lion King song nominations. Sharing Three is a coincidental answer collision.",
+    "reviewer": "Codex",
+    "at": "2026-11-09"
+  },
+  {
+    "finding": {
+      "id": "duplicate-f6c9496f64a053373955",
+      "kind": "duplicate",
+      "questionIds": [
+        2560,
+        2561
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "f6c9496f64a0533739552968146f714aec03fa060521141347e998a5a7e92e30",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2560,
+        "question": "In Disney Cruise Line's November 2026 Halloween event listing, Minnie, Daisy, and Clarabelle wear costumes from which film?",
+        "answers": [
+          "Hocus Pocus",
+          "The Haunted Mansion",
+          "Something Wicked This Way Comes",
+          "The Watcher in the Woods"
+        ],
+        "difficulty": "medium",
+        "category": "cruise"
+      },
+      {
+        "id": 2561,
+        "question": "In Disney Cruise Line's November 2026 Halloween event listing, what is the costume celebration called?",
+        "answers": [
+          "Mickey's Mouse-querade Party",
+          "Pirates IN the Caribbean Deck Party",
+          "Frozen Games Party",
+          "Pixar Play Parade"
+        ],
+        "difficulty": "medium",
+        "category": "cruise"
+      }
+    ],
+    "verdict": "distinct",
+    "reason": "Different Halloween facts: film inspiration for three characters’ costumes versus the celebration’s name. Neither answer supplies the other; the listing supports both independently.",
+    "reviewer": "Codex",
+    "at": "2026-11-09"
+  }
+]

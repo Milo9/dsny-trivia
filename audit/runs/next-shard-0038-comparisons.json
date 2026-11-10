@@ -1,0 +1,490 @@
+{
+  "schema": 1,
+  "reviewer": "Codex",
+  "at": "2026-11-09",
+  "scope": [
+    2426,
+    2427,
+    2428,
+    2429,
+    2430,
+    2431,
+    2432,
+    2433,
+    2434,
+    2435,
+    2436,
+    2437,
+    2438,
+    2439,
+    2440,
+    2441,
+    2442,
+    2443,
+    2444,
+    2445,
+    2446,
+    2447,
+    2448,
+    2449,
+    2450,
+    2451,
+    2452,
+    2453,
+    2454,
+    2455,
+    2456,
+    2457,
+    2458,
+    2459,
+    2460,
+    2461,
+    2462,
+    2463,
+    2464,
+    2465,
+    2466,
+    2467,
+    2468,
+    2469,
+    2470,
+    2471,
+    2472,
+    2473,
+    2474,
+    2475
+  ],
+  "contextCatalog": "artifacts/question-audit/b38-context.json",
+  "comparisons": [
+    {
+      "findingId": "duplicate-0ed794d81d165b213e88",
+      "questionIds": [
+        223,
+        2453
+      ],
+      "questions": [
+        {
+          "id": 223,
+          "question": "In The Jungle Book, who is Mowgli's protective panther guardian?",
+          "answers": [
+            "Bagheera",
+            "Baloo",
+            "Shere Khan",
+            "King Louie"
+          ],
+          "difficulty": "easy",
+          "category": "movies"
+        },
+        {
+          "id": 2453,
+          "question": "In The Jungle Book 2, who does Baloo ask to protect young Ranjan while he rescues Mowgli and Shanti from Shere Khan?",
+          "answers": [
+            "Bagheera",
+            "Colonel Hathi",
+            "King Louie",
+            "Kaa"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        }
+      ],
+      "reason": "Original Mowgli panther identity versus a specific Baloo assignment to guard Ranjan in the sequel: different child and event.",
+      "decision": "accepted"
+    },
+    {
+      "findingId": "duplicate-2600034d2e7cecad9878",
+      "questionIds": [
+        2170,
+        2430
+      ],
+      "questions": [
+        {
+          "id": 2170,
+          "question": "Who voices Laurel Lightfoot in the original English-language version of Onward (2020)?",
+          "answers": [
+            "Julia Louis-Dreyfus",
+            "Tina Fey",
+            "Allison Janney",
+            "Melissa McCarthy"
+          ],
+          "difficulty": "medium",
+          "category": "pixar"
+        },
+        {
+          "id": 2430,
+          "question": "Who voices Ian Lightfoot in the original English-language Onward (2020)?",
+          "answers": [
+            "Tom Holland",
+            "Chris Pratt",
+            "Timothee Chalamet",
+            "Asa Butterfield"
+          ],
+          "difficulty": "medium",
+          "category": "pixar"
+        }
+      ],
+      "reason": "Laurel actor versus Ian actor: separate characters and cast assignments; same question form is not the same fact.",
+      "decision": "accepted"
+    },
+    {
+      "findingId": "duplicate-50132847f6ec64f47ec7",
+      "questionIds": [
+        78,
+        2451
+      ],
+      "questions": [
+        {
+          "id": 78,
+          "question": "In The Jungle Book, what is the name of the friendly bear?",
+          "answers": [
+            "Baloo",
+            "Bagheera",
+            "Shere Khan",
+            "King Louie"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        },
+        {
+          "id": 2451,
+          "question": "In The Jungle Book 2, who sneaks into the Man-Village to lure Mowgli back into the jungle?",
+          "answers": [
+            "Baloo",
+            "Bagheera",
+            "King Louie",
+            "Kaa"
+          ],
+          "difficulty": "easy",
+          "category": "characters"
+        }
+      ],
+      "reason": "Baloo bear identity in the original versus Baloo entering the man-village for Mowgli in the sequel; separate action fact.",
+      "decision": "accepted"
+    },
+    {
+      "findingId": "duplicate-87c8344e1c9ee7e12aad",
+      "questionIds": [
+        148,
+        2433
+      ],
+      "questions": [
+        {
+          "id": 148,
+          "question": "What is the name of the adults-only French specialty restaurant aboard the Disney Dream and Disney Fantasy?",
+          "answers": [
+            "Remy",
+            "Palo",
+            "Lumiere's",
+            "Triton's"
+          ],
+          "difficulty": "hard",
+          "category": "cruise"
+        },
+        {
+          "id": 2433,
+          "question": "Which Ratatouille character makes a cooking cameo in the Manticore's Tavern in Onward (2020)?",
+          "answers": [
+            "Remy",
+            "Alfredo Linguini",
+            "Colette Tatou",
+            "Auguste Gusteau"
+          ],
+          "difficulty": "hard",
+          "category": "pixar"
+        }
+      ],
+      "reason": "Ship restaurant name versus rat cameo in Onward: separate venue and screen appearance, despite shared Remy name.",
+      "decision": "accepted"
+    },
+    {
+      "findingId": "duplicate-a49a52dbf0e714658b8d",
+      "questionIds": [
+        2047,
+        2446
+      ],
+      "questions": [
+        {
+          "id": 2047,
+          "question": "In Cinderella III: A Twist in Time, who first takes the wand after the Fairy Godmother drops it?",
+          "answers": [
+            "Anastasia",
+            "Drizella",
+            "Cinderella",
+            "Lady Tremaine"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        },
+        {
+          "id": 2446,
+          "question": "At the altered slipper fitting in Cinderella III: A Twist in Time, whose foot does Lady Tremaine magically make the slipper fit?",
+          "answers": [
+            "Anastasia",
+            "Drizella",
+            "Cinderella",
+            "Lady Tremaine"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        }
+      ],
+      "reason": "Anastasia first picks up the dropped wand; later Lady Tremaine makes the slipper fit Anastasia. Possession and magically altered fit are separate events.",
+      "decision": "accepted"
+    },
+    {
+      "findingId": "duplicate-ad5145a8b91ffa702c52",
+      "questionIds": [
+        2329,
+        2461
+      ],
+      "questions": [
+        {
+          "id": 2329,
+          "question": "The Pixar short Piper premiered in theaters in 2016 alongside which Pixar feature film?",
+          "answers": [
+            "Finding Dory",
+            "The Good Dinosaur",
+            "Cars 3",
+            "Coco"
+          ],
+          "difficulty": "easy",
+          "category": "pixar"
+        },
+        {
+          "id": 2461,
+          "question": "The Pixar short Bao premiered in theaters in 2018 alongside which Pixar feature film?",
+          "answers": [
+            "Incredibles 2",
+            "Coco",
+            "Toy Story 4",
+            "Onward"
+          ],
+          "difficulty": "medium",
+          "category": "pixar"
+        }
+      ],
+      "reason": "Piper/Finding Dory in 2016 versus Bao/Incredibles 2 in 2018: different short/feature release pairings.",
+      "decision": "accepted"
+    },
+    {
+      "findingId": "duplicate-b49009a90ee8c3808798",
+      "questionIds": [
+        2456,
+        2619
+      ],
+      "questions": [
+        {
+          "id": 2456,
+          "question": "Who voices both Waylon and Floyd in the original English-language The Fox and the Hound 2?",
+          "answers": [
+            "Jim Cummings",
+            "Jeff Foxworthy",
+            "Stephen Root",
+            "Rob Paulsen"
+          ],
+          "difficulty": "hard",
+          "category": "movies"
+        },
+        {
+          "id": 2619,
+          "question": "Which actor voices both Winnie the Pooh and Tigger across the modern Disney films?",
+          "answers": [
+            "Jim Cummings",
+            "Sterling Holloway",
+            "Paul Winchell",
+            "Jim Carrey"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        }
+      ],
+      "reason": "Cummings Waylon/Floyd credits versus Pooh/Tigger credits require separate role knowledge; shared actor alone is not a duplicate.",
+      "decision": "accepted"
+    },
+    {
+      "findingId": "duplicate-bc6b58ad989bfddc36d5",
+      "questionIds": [
+        254,
+        2438
+      ],
+      "questions": [
+        {
+          "id": 254,
+          "question": "In The Rescuers Down Under (1990), what kind of animal is Marahute?",
+          "answers": [
+            "An eagle",
+            "A kangaroo",
+            "A parrot",
+            "A crocodile"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 2438,
+          "question": "In Coco, which animal inspired Pepita's wings and birdlike feet?",
+          "answers": [
+            "Eagle",
+            "Ram",
+            "Tiger",
+            "Lizard"
+          ],
+          "difficulty": "hard",
+          "category": "characters"
+        }
+      ],
+      "reason": "Marahute eagle species versus eagle contribution to Pepita hybrid anatomy: different characters and facts.",
+      "decision": "accepted"
+    },
+    {
+      "findingId": "duplicate-f78078726a1c3678d023",
+      "questionIds": [
+        172,
+        2433
+      ],
+      "questions": [
+        {
+          "id": 172,
+          "question": "What is the name of the rat who dreams of being a chef in Ratatouille?",
+          "answers": [
+            "Remy",
+            "Emile",
+            "Gusteau",
+            "Linguini"
+          ],
+          "difficulty": "easy",
+          "category": "pixar"
+        },
+        {
+          "id": 2433,
+          "question": "Which Ratatouille character makes a cooking cameo in the Manticore's Tavern in Onward (2020)?",
+          "answers": [
+            "Remy",
+            "Alfredo Linguini",
+            "Colette Tatou",
+            "Auguste Gusteau"
+          ],
+          "difficulty": "hard",
+          "category": "pixar"
+        }
+      ],
+      "reason": "Remy identity in Ratatouille versus his hidden cooking cameo in Onward: knowing his name does not establish the separate-film appearance.",
+      "decision": "accepted"
+    },
+    {
+      "findingId": "duplicate-f7ba9b83be50fa0d476e",
+      "questionIds": [
+        2049,
+        2446
+      ],
+      "questions": [
+        {
+          "id": 2049,
+          "question": "In Cinderella II: Dreams Come True, which stepsister falls in love with the town baker?",
+          "answers": [
+            "Anastasia",
+            "Drizella",
+            "Both stepsisters",
+            "Neither stepsister"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        },
+        {
+          "id": 2446,
+          "question": "At the altered slipper fitting in Cinderella III: A Twist in Time, whose foot does Lady Tremaine magically make the slipper fit?",
+          "answers": [
+            "Anastasia",
+            "Drizella",
+            "Cinderella",
+            "Lady Tremaine"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        }
+      ],
+      "reason": "Anastasia baker romance in Cinderella II versus altered slipper fit in Cinderella III; different films and events.",
+      "decision": "accepted"
+    },
+    {
+      "findingId": "scope-4aad3322493582b3c6bc",
+      "questionIds": [
+        2464
+      ],
+      "questions": [
+        {
+          "id": 2464,
+          "question": "While the puppies are caged in 101 Dalmatians II: Patch's London Adventure, which sibling reminds Patch of Thunderbolt's escape in a TV episode?",
+          "answers": [
+            "Lucky",
+            "Rolly",
+            "Freckles",
+            "Pepper"
+          ],
+          "difficulty": "hard",
+          "category": "characters"
+        }
+      ],
+      "reason": "The Thunderbolt episode is fictional TV within the theatrical-story sequel, and this asks a puppy action in that film; no real TV-show trivia.",
+      "decision": "accepted"
+    },
+    {
+      "findingId": "scope-e80646843fb9d67c8080",
+      "questionIds": [
+        2474
+      ],
+      "questions": [
+        {
+          "id": 2474,
+          "question": "The opening song of Olaf's Frozen Adventure, \"Ring in the Season,\" is performed by Kristen Bell and Idina Menzel alongside which other actor?",
+          "answers": [
+            "Josh Gad",
+            "Jonathan Groff",
+            "Sterling K. Brown",
+            "Evan Rachel Wood"
+          ],
+          "difficulty": "medium",
+          "category": "music"
+        }
+      ],
+      "reason": "Season is part of a song title in a theatrically released featurette; this is a soundtrack vocal credit, not TV-show trivia.",
+      "decision": "accepted"
+    }
+  ],
+  "additionalManualComparisons": [
+    {
+      "questionIds": [
+        2448,
+        2450
+      ],
+      "questions": [
+        {
+          "id": 2448,
+          "question": "Who voices Prince Charming in the original English-language Cinderella III: A Twist in Time?",
+          "answers": [
+            "Christopher Daniel Barnes",
+            "Rob Paulsen",
+            "Jesse Corti",
+            "Bill Farmer"
+          ],
+          "difficulty": "hard",
+          "category": "movies"
+        },
+        {
+          "id": 2450,
+          "question": "Which longtime Disney voice performer provides the voice of the King in Cinderella III: A Twist in Time?",
+          "answers": [
+            "Andre Stojka",
+            "Jeff Bennett",
+            "Corey Burton",
+            "Bill Farmer"
+          ],
+          "difficulty": "hard",
+          "category": "movies"
+        }
+      ],
+      "reason": "Prince and King are distinct characters voiced by different actors; similar wording does not repeat a casting fact."
+    }
+  ],
+  "topicReview": "Complete merged catalog of 862 question objects read once, with all four options; refreshed final questions and new comparisons rechecked. Secondary film totals: Cinderella III 7, Jungle Book 2 8, Fox and Hound 2 7, 101 Dalmatians II 8, Tarzan II 6, Bambi II 6, Frozen Fever 6, Olaf featurette 6. All below approximate 8-10 cap."
+}

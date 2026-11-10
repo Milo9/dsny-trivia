@@ -1,0 +1,730 @@
+[
+  {
+    "finding": {
+      "id": "duplicate-0011a8586b9c21c68785",
+      "kind": "duplicate",
+      "questionIds": [
+        2220,
+        2637
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "0011a8586b9c21c6878599fec977168f4590e364e4dc7916930687ef5b246b6b",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2220,
+        "question": "What type of ride vehicle system does Remy's Ratatouille Adventure at EPCOT use?",
+        "answers": [
+          "Trackless",
+          "Monorail",
+          "Suspended coaster",
+          "Omnimover"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      },
+      {
+        "id": 2637,
+        "question": "What type of vehicle system carries guests through the Star Destroyer escape on Rise of the Resistance at Hollywood Studios?",
+        "answers": [
+          "Trackless",
+          "Suspended coaster",
+          "Fixed monorail",
+          "Cable-guided"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      }
+    ],
+    "decision": "accepted",
+    "reason": "These identify vehicle systems of different named attractions. Sharing Trackless does not establish which other attractions also use it."
+  },
+  {
+    "finding": {
+      "id": "duplicate-00fd4612d3d5378e21b2",
+      "kind": "duplicate",
+      "questionIds": [
+        2220,
+        2643
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "00fd4612d3d5378e21b2fb4e83efe616a63839f7d02192bd0a8744a2ea2fefd1",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2220,
+        "question": "What type of ride vehicle system does Remy's Ratatouille Adventure at EPCOT use?",
+        "answers": [
+          "Trackless",
+          "Monorail",
+          "Suspended coaster",
+          "Omnimover"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      },
+      {
+        "id": 2643,
+        "question": "What type of vehicle system does Tokyo Disneyland's Pooh's Hunny Hunt use?",
+        "answers": [
+          "Trackless",
+          "Suspended coaster",
+          "Fixed monorail",
+          "Cable-guided"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      }
+    ],
+    "decision": "accepted",
+    "reason": "These identify vehicle systems of different named attractions. Sharing Trackless does not establish which other attractions also use it."
+  },
+  {
+    "finding": {
+      "id": "duplicate-423aa5eeeffa33e2d05c",
+      "kind": "duplicate",
+      "questionIds": [
+        196,
+        2633
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "423aa5eeeffa33e2d05c886a12c474f9dea3e0753b9544b316e239b75724bb17",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 196,
+        "question": "In Toy Story, what is the name of the space-themed pizza restaurant that Woody and Buzz both visit?",
+        "answers": [
+          "Pizza Planet",
+          "Cosmic Pizza",
+          "Galaxy Slice",
+          "Star Pizza"
+        ],
+        "difficulty": "medium",
+        "category": "pixar"
+      },
+      {
+        "id": 2633,
+        "question": "In the backstory of Alien Swirling Saucers at Hollywood Studios, where did Andy win the play set that inspired the attraction?",
+        "answers": [
+          "Pizza Planet",
+          "Al's Toy Barn",
+          "Sunnyside Daycare",
+          "Andy's House"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      }
+    ],
+    "decision": "accepted",
+    "reason": "#196 identifies the restaurant Woody and Buzz visit; #2633 asks where Andy won this specific park play set. The prize/backstory link is new information."
+  },
+  {
+    "finding": {
+      "id": "duplicate-8bffce662a25a4bf2b5c",
+      "kind": "duplicate",
+      "questionIds": [
+        1383,
+        2653
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "8bffce662a25a4bf2b5cd1120b714c4a93a0df22a6c7871c2fc68992e6e77e50",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 1383,
+        "question": "Which Disney film features the villain song 'Be Prepared,' in which the villain rallies hyenas for a royal takeover?",
+        "answers": [
+          "The Lion King",
+          "Hercules",
+          "Aladdin",
+          "The Hunchback of Notre Dame"
+        ],
+        "difficulty": "easy",
+        "category": "music"
+      },
+      {
+        "id": 2653,
+        "question": "In Zootopia (2016), what species is the mayor Judy arrests after finding the missing predators?",
+        "answers": [
+          "A lion",
+          "A tiger",
+          "A bear",
+          "A wolf"
+        ],
+        "difficulty": "medium",
+        "category": "characters"
+      }
+    ],
+    "decision": "accepted",
+    "reason": "The Lion King is the answer to a Be Prepared song/film identification; lion is the species of the Zootopia mayor. Normalization matches a word, but these are different answers and facts."
+  },
+  {
+    "finding": {
+      "id": "duplicate-8faf1f545ff3aaeaaa83",
+      "kind": "duplicate",
+      "questionIds": [
+        2237,
+        2636
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "8faf1f545ff3aaeaaa832c85847fbdca479c4597113aad73779d7cb6ad74405e",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2237,
+        "question": "How many passenger seats are in each Radiator Springs Racers vehicle at Disney California Adventure?",
+        "answers": [
+          "Six",
+          "Four",
+          "Eight",
+          "Two"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      },
+      {
+        "id": 2636,
+        "question": "How many songs were on the original 2022 ride soundtrack playlist for EPCOT's Guardians of the Galaxy: Cosmic Rewind?",
+        "answers": [
+          "Six",
+          "Three",
+          "Ten",
+          "One"
+        ],
+        "difficulty": "hard",
+        "category": "parks"
+      }
+    ],
+    "decision": "accepted",
+    "reason": "A soundtrack song count is independent of seat counts and other numeric facts; the shared answer Six supplies no relationship."
+  },
+  {
+    "finding": {
+      "id": "duplicate-9191d34d52b77b8062c2",
+      "kind": "duplicate",
+      "questionIds": [
+        1453,
+        2653
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "9191d34d52b77b8062c212157ef056b1953f3ec89ae2ad8ed26c8941669894cd",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 1453,
+        "question": "In Disney's animated Robin Hood (1973), what type of animal is the greedy, cowardly Prince John who usurps the throne?",
+        "answers": [
+          "A lion",
+          "A bear",
+          "A wolf",
+          "A weasel"
+        ],
+        "difficulty": "medium",
+        "category": "movies"
+      },
+      {
+        "id": 2653,
+        "question": "In Zootopia (2016), what species is the mayor Judy arrests after finding the missing predators?",
+        "answers": [
+          "A lion",
+          "A tiger",
+          "A bear",
+          "A wolf"
+        ],
+        "difficulty": "medium",
+        "category": "characters"
+      }
+    ],
+    "decision": "accepted",
+    "reason": "Different characters and films share the species lion; knowing a different character's species does not establish the Zootopia mayor's species."
+  },
+  {
+    "finding": {
+      "id": "duplicate-abf0525b2bbdaf0184b9",
+      "kind": "duplicate",
+      "questionIds": [
+        2637,
+        2643
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "abf0525b2bbdaf0184b9b59d57c41b5e67fd752479e0d289b54f47944e35b5b9",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2637,
+        "question": "What type of vehicle system carries guests through the Star Destroyer escape on Rise of the Resistance at Hollywood Studios?",
+        "answers": [
+          "Trackless",
+          "Suspended coaster",
+          "Fixed monorail",
+          "Cable-guided"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      },
+      {
+        "id": 2643,
+        "question": "What type of vehicle system does Tokyo Disneyland's Pooh's Hunny Hunt use?",
+        "answers": [
+          "Trackless",
+          "Suspended coaster",
+          "Fixed monorail",
+          "Cable-guided"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      }
+    ],
+    "decision": "accepted",
+    "reason": "These identify vehicle systems of different named attractions. Sharing Trackless does not establish which other attractions also use it."
+  },
+  {
+    "finding": {
+      "id": "duplicate-af2cd9888474375f55a6",
+      "kind": "duplicate",
+      "questionIds": [
+        412,
+        2636
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "af2cd9888474375f55a6aa3e3a63b2f4f9229b12662f716fa9a7e1d107caae3e",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 412,
+        "question": "Including Disney Treasure, how many ships were in Disney Cruise Line's fleet when Treasure began its maiden voyage in December 2024?",
+        "answers": [
+          "Six",
+          "Four",
+          "Five",
+          "Seven"
+        ],
+        "difficulty": "easy",
+        "category": "cruise"
+      },
+      {
+        "id": 2636,
+        "question": "How many songs were on the original 2022 ride soundtrack playlist for EPCOT's Guardians of the Galaxy: Cosmic Rewind?",
+        "answers": [
+          "Six",
+          "Three",
+          "Ten",
+          "One"
+        ],
+        "difficulty": "hard",
+        "category": "parks"
+      }
+    ],
+    "decision": "accepted",
+    "reason": "A soundtrack song count is independent of seat counts and other numeric facts; the shared answer Six supplies no relationship."
+  },
+  {
+    "finding": {
+      "id": "duplicate-e2b8f6268a594ad109f4",
+      "kind": "duplicate",
+      "questionIds": [
+        239,
+        2638
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "e2b8f6268a594ad109f4edc9123a312df723a652784b443fd0be0ffb3dbf2d5c",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 239,
+        "question": "In The Nightmare Before Christmas, what is the name of Jack Skellington's ghost dog?",
+        "answers": [
+          "Zero",
+          "Ghost",
+          "Boo",
+          "Bones"
+        ],
+        "difficulty": "medium",
+        "category": "movies"
+      },
+      {
+        "id": 2638,
+        "question": "When Shanghai Disneyland's Zootopia land opened in 2023, how many other Disney parks already had a land dedicated to that film?",
+        "answers": [
+          "Zero",
+          "One",
+          "Two",
+          "Three"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      }
+    ],
+    "decision": "accepted",
+    "reason": "Zero earlier Zootopia lands is a historical park precedence fact independent of the other zero-valued fact."
+  },
+  {
+    "finding": {
+      "id": "leak-b74a1b53412fdd46d86a",
+      "kind": "leak",
+      "questionIds": [
+        2642
+      ],
+      "detail": {
+        "tier": 2,
+        "token": "pixar"
+      },
+      "signature": "b74a1b53412fdd46d86ad4cbd11b5cb2f872cbc48bc5eb44e897004d5609dd57",
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2642,
+        "question": "At Pixar Pier's 2018 debut, which neighborhood included the Pixar Pal-A-Round wheel?",
+        "answers": [
+          "Pixar Promenade",
+          "Incredibles Park",
+          "Toy Story Boardwalk",
+          "Inside Out Headquarters"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      }
+    ],
+    "decision": "accepted",
+    "reason": "Pixar names the setting and wheel; the options are four real neighborhoods with plausible thematic brands. The wheel-location fact determines the answer."
+  },
+  {
+    "finding": {
+      "id": "leak-c4ac18422da78fa49446",
+      "kind": "leak",
+      "questionIds": [
+        2641
+      ],
+      "detail": {
+        "tier": 2,
+        "token": "disneysea"
+      },
+      "signature": "c4ac18422da78fa49446d6093c95e811e6c4f1955e67cacbc2c8eb7467aeb035",
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2641,
+        "question": "In November 2026, which elevated trolley carries guests between American Waterfront and Port Discovery at Tokyo DisneySea?",
+        "answers": [
+          "DisneySea Electric Railway",
+          "Disney Skyliner",
+          "Disney Resort Line",
+          "WEDway PeopleMover"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      }
+    ],
+    "decision": "accepted",
+    "reason": "DisneySea identifies the setting, while all options are transportation brands; the endpoint and trolley facts determine the answer."
+  },
+  {
+    "questions": [
+      {
+        "id": 196,
+        "question": "In Toy Story, what is the name of the space-themed pizza restaurant that Woody and Buzz both visit?",
+        "answers": [
+          "Pizza Planet",
+          "Cosmic Pizza",
+          "Galaxy Slice",
+          "Star Pizza"
+        ],
+        "difficulty": "medium",
+        "category": "pixar"
+      },
+      {
+        "id": 2633,
+        "question": "In the backstory of Alien Swirling Saucers at Hollywood Studios, where did Andy win the play set that inspired the attraction?",
+        "answers": [
+          "Pizza Planet",
+          "Al's Toy Barn",
+          "Sunnyside Daycare",
+          "Andy's House"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      }
+    ],
+    "reason": "Manually compared complete wording and all options: separate character/credit, date/precedence, backstory or vehicle-design fact; retained. See per-question challenge."
+  },
+  {
+    "questions": [
+      {
+        "id": 2259,
+        "question": "In what month and year did the Zootopia-themed land open at Shanghai Disneyland?",
+        "answers": [
+          "December 2023",
+          "October 2023",
+          "June 2024",
+          "December 2022"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      },
+      {
+        "id": 2638,
+        "question": "When Shanghai Disneyland's Zootopia land opened in 2023, how many other Disney parks already had a land dedicated to that film?",
+        "answers": [
+          "Zero",
+          "One",
+          "Two",
+          "Three"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      }
+    ],
+    "reason": "Manually compared complete wording and all options: separate character/credit, date/precedence, backstory or vehicle-design fact; retained. See per-question challenge."
+  },
+  {
+    "questions": [
+      {
+        "id": 1623,
+        "question": "Which trackless ride debuted with Shanghai Disneyland's Zootopia land in December 2023?",
+        "answers": [
+          "Zootopia: Hot Pursuit",
+          "Zootopia Speedway",
+          "Wild Chase Adventure",
+          "Predator Pursuit"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      },
+      {
+        "id": 2638,
+        "question": "When Shanghai Disneyland's Zootopia land opened in 2023, how many other Disney parks already had a land dedicated to that film?",
+        "answers": [
+          "Zero",
+          "One",
+          "Two",
+          "Three"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      }
+    ],
+    "reason": "Manually compared complete wording and all options: separate character/credit, date/precedence, backstory or vehicle-design fact; retained. See per-question challenge."
+  },
+  {
+    "questions": [
+      {
+        "id": 2294,
+        "question": "Which composer wrote the music for the Haunted Mansion's theme song 'Grim Grinning Ghosts'?",
+        "answers": [
+          "Buddy Baker",
+          "George Bruns",
+          "Xavier Atencio",
+          "Richard Sherman"
+        ],
+        "difficulty": "hard",
+        "category": "music"
+      },
+      {
+        "id": 2646,
+        "question": "Which Disney Imagineer wrote the lyrics to both 'Grim Grinning Ghosts' for the Haunted Mansion and 'Yo Ho (A Pirate's Life for Me)' for Pirates of the Caribbean?",
+        "answers": [
+          "X Atencio",
+          "Robert B. Sherman",
+          "George Bruns",
+          "Buddy Baker"
+        ],
+        "difficulty": "hard",
+        "category": "walt"
+      }
+    ],
+    "reason": "Manually compared complete wording and all options: separate character/credit, date/precedence, backstory or vehicle-design fact; retained. See per-question challenge."
+  },
+  {
+    "questions": [
+      {
+        "id": 1479,
+        "question": "As of November 2026, which Magic Kingdom ride takes guests through the Hundred Acre Wood in oversized honey pots?",
+        "answers": [
+          "The Many Adventures of Winnie the Pooh",
+          "Winnie the Pooh and Friends",
+          "Pooh's Honey Hunt",
+          "Hundred Acre Coaster"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      },
+      {
+        "id": 2644,
+        "question": "What do guests ride in during Tokyo Disneyland's Pooh's Hunny Hunt?",
+        "answers": [
+          "Giant honey pots",
+          "Bumblebee balloons",
+          "Acorn carts",
+          "Rabbit-hole carts"
+        ],
+        "difficulty": "easy",
+        "category": "parks"
+      }
+    ],
+    "reason": "Manually compared complete wording and all options: separate character/credit, date/precedence, backstory or vehicle-design fact; retained. See per-question challenge."
+  },
+  {
+    "questions": [
+      {
+        "id": 2643,
+        "question": "What type of vehicle system does Tokyo Disneyland's Pooh's Hunny Hunt use?",
+        "answers": [
+          "Trackless",
+          "Suspended coaster",
+          "Fixed monorail",
+          "Cable-guided"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      },
+      {
+        "id": 2644,
+        "question": "What do guests ride in during Tokyo Disneyland's Pooh's Hunny Hunt?",
+        "answers": [
+          "Giant honey pots",
+          "Bumblebee balloons",
+          "Acorn carts",
+          "Rabbit-hole carts"
+        ],
+        "difficulty": "easy",
+        "category": "parks"
+      }
+    ],
+    "reason": "Manually compared complete wording and all options: separate character/credit, date/precedence, backstory or vehicle-design fact; retained. See per-question challenge."
+  },
+  {
+    "questions": [
+      {
+        "id": 2653,
+        "question": "In Zootopia (2016), what species is the mayor Judy arrests after finding the missing predators?",
+        "answers": [
+          "A lion",
+          "A tiger",
+          "A bear",
+          "A wolf"
+        ],
+        "difficulty": "medium",
+        "category": "characters"
+      },
+      {
+        "id": 2654,
+        "question": "At Cliffside Asylum in Zootopia (2016), why does the mayor object when the doctor suggests telling the public about the affected predators?",
+        "answers": [
+          "He fears his political career will be ruined",
+          "He plans to sell the captives to poachers",
+          "He wants to recruit the captives as spies",
+          "He has secretly gone savage himself"
+        ],
+        "difficulty": "hard",
+        "category": "characters"
+      }
+    ],
+    "reason": "Manually compared complete wording and all options: separate character/credit, date/precedence, backstory or vehicle-design fact; retained. See per-question challenge."
+  },
+  {
+    "questions": [
+      {
+        "id": 1192,
+        "question": "Which Imagineer discovered the Haunted Mansion's follow-you bust illusion alongside Rolly Crump?",
+        "answers": [
+          "Yale Gracey",
+          "Ub Iwerks",
+          "Marc Davis",
+          "John Hench"
+        ],
+        "difficulty": "hard",
+        "category": "walt"
+      },
+      {
+        "id": 2650,
+        "question": "Which Haunted Mansion show designer had earlier painted watercolor backgrounds for Pinocchio?",
+        "answers": [
+          "Claude Coats",
+          "Blaine Gibson",
+          "Bob Gurr",
+          "Mary Blair"
+        ],
+        "difficulty": "hard",
+        "category": "walt"
+      }
+    ],
+    "reason": "Manually compared complete wording and all options: separate character/credit, date/precedence, backstory or vehicle-design fact; retained. See per-question challenge."
+  },
+  {
+    "questions": [
+      {
+        "id": 2372,
+        "question": "Which member of Disney's 'Nine Old Men' animators designed classic villains like Cruella de Vil and Maleficent, and later helped create Pirates of the Caribbean and the Haunted Mansion attractions?",
+        "answers": [
+          "Marc Davis",
+          "Ollie Johnston",
+          "Frank Thomas",
+          "Ward Kimball"
+        ],
+        "difficulty": "hard",
+        "category": "walt"
+      },
+      {
+        "id": 2649,
+        "question": "Which Imagineer created sculptures used to produce figures for Great Moments with Mr. Lincoln and Pirates of the Caribbean?",
+        "answers": [
+          "Blaine Gibson",
+          "Claude Coats",
+          "Marc Davis",
+          "Yale Gracey"
+        ],
+        "difficulty": "hard",
+        "category": "walt"
+      }
+    ],
+    "reason": "Manually compared complete wording and all options: separate character/credit, date/precedence, backstory or vehicle-design fact; retained. See per-question challenge."
+  }
+]

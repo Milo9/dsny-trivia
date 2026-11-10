@@ -1,0 +1,592 @@
+{
+  "reviewer": "Codex",
+  "at": "2026-11-09",
+  "decisions": {
+    "duplicate-0ff7ec2c2cf7eb09e1c4": "Distinct facts: #2498 asks for the source book title; #2499 asks who created the original books. The title answer does not establish the author.",
+    "duplicate-187767dc69fed18cad62": "Distinct facts: Up's dogs are distracted by the word squirrel; Wart takes squirrel form during a specific lesson in The Sword in the Stone.",
+    "duplicate-228ba68c0540fd0cc91f": "Distinct facts: #2406 identifies the 1954 film on which John Hench did special effects; #2505 identifies a Tokyo DisneySea submarine attraction by its Atlantis mission.",
+    "duplicate-48fee2f65cb1d85eeaf4": "Different named dogs and breeds: Lady is a cocker spaniel; Jock is a Scottish terrier. Knowing Lady's breed cannot solve Jock's.",
+    "duplicate-53939b28991859e28649": "Different household characters: #328 asks the butler Edgar; #2501 asks the horse Frou-Frou. Neither name establishes the other.",
+    "duplicate-64cb5d8e3d37ab51171b": "Ratigan's species in The Great Mouse Detective and the animal Tramp fights in the nursery are unrelated facts despite the shared answer rat.",
+    "duplicate-85cd28568f7b9302f163": "Different named pound dogs: Boris is a Borzoi; Pedro is a Chihuahua. Each breed is independently established.",
+    "duplicate-a05e289c48b6e38b04f0": "#1023 asks the fictional Toy Story 2 television show's name. Rewritten #2523 removes the TV clue and requires identifying Shanghai's pony-cart corral attraction; sharing the franchise name does not establish the ride mechanism/location.",
+    "duplicate-c988934ea117599532ae": "Sherlock Holmes as Basil's fictional model differs from Eve Titus as the original books' real author.",
+    "duplicate-ed15fdfefcdd8810321d": "Napoleon's breed in The Aristocats and Copper's breed in The Fox and the Hound are separate character/breed identities. Shared Bloodhound alone does not solve either character from the other.",
+    "duplicate-ed2e5cdbe169ac95a977": "Kronk speaking squirrel in The Emperor's New Groove and Wart becoming a squirrel for Merlin's romantic pursuit lesson are independent scene facts.",
+    "scope-3183345831ccb376ea8a": "Series refers to Lloyd Alexander's fantasy books, the literary source of the theatrical 1985 Disney feature. No television-show trivia is asked."
+  },
+  "comparisons": [
+    {
+      "id": "duplicate-0ff7ec2c2cf7eb09e1c4",
+      "kind": "duplicate",
+      "questionIds": [
+        2498,
+        2499
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "0ff7ec2c2cf7eb09e1c4636ccfa4ab924bf0da38aa85befc3412fc553890c88a",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": {
+        "signature": "0ff7ec2c2cf7eb09e1c4636ccfa4ab924bf0da38aa85befc3412fc553890c88a",
+        "questionIds": [
+          2498,
+          2499
+        ],
+        "status": "accepted",
+        "at": "2026-11-10",
+        "reviewer": "Codex",
+        "reason": "Distinct facts: #2498 asks for the source book title; #2499 asks who created the original books. The title answer does not establish the author.",
+        "reference": "audit/runs/next-shard-0039-comparisons.json",
+        "history": []
+      }
+    },
+    {
+      "id": "duplicate-187767dc69fed18cad62",
+      "kind": "duplicate",
+      "questionIds": [
+        1433,
+        2488
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "187767dc69fed18cad624fc1a4e776b5abae1a8ab26a6ac198f70eb98339dcd7",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": {
+        "signature": "187767dc69fed18cad624fc1a4e776b5abae1a8ab26a6ac198f70eb98339dcd7",
+        "questionIds": [
+          1433,
+          2488
+        ],
+        "status": "accepted",
+        "at": "2026-11-10",
+        "reviewer": "Codex",
+        "reason": "Distinct facts: Up's dogs are distracted by the word squirrel; Wart takes squirrel form during a specific lesson in The Sword in the Stone.",
+        "reference": "audit/runs/next-shard-0039-comparisons.json",
+        "history": []
+      }
+    },
+    {
+      "id": "duplicate-228ba68c0540fd0cc91f",
+      "kind": "duplicate",
+      "questionIds": [
+        2406,
+        2505
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "228ba68c0540fd0cc91f9a316d727daa39e29f428e24b5354fe809ce0ac034f2",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": {
+        "signature": "228ba68c0540fd0cc91f9a316d727daa39e29f428e24b5354fe809ce0ac034f2",
+        "questionIds": [
+          2406,
+          2505
+        ],
+        "status": "accepted",
+        "at": "2026-11-10",
+        "reviewer": "Codex",
+        "reason": "Distinct facts: #2406 identifies the 1954 film on which John Hench did special effects; #2505 identifies a Tokyo DisneySea submarine attraction by its Atlantis mission.",
+        "reference": "audit/runs/next-shard-0039-comparisons.json",
+        "history": []
+      }
+    },
+    {
+      "id": "duplicate-48fee2f65cb1d85eeaf4",
+      "kind": "duplicate",
+      "questionIds": [
+        855,
+        2480
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "48fee2f65cb1d85eeaf43bdf3b6968c13ca54155d0b49bb3e98d6855deb4fc61",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": {
+        "signature": "48fee2f65cb1d85eeaf43bdf3b6968c13ca54155d0b49bb3e98d6855deb4fc61",
+        "questionIds": [
+          855,
+          2480
+        ],
+        "status": "accepted",
+        "at": "2026-11-10",
+        "reviewer": "Codex",
+        "reason": "Different named dogs and breeds: Lady is a cocker spaniel; Jock is a Scottish terrier. Knowing Lady's breed cannot solve Jock's.",
+        "reference": "audit/runs/next-shard-0039-comparisons.json",
+        "history": []
+      }
+    },
+    {
+      "id": "duplicate-53939b28991859e28649",
+      "kind": "duplicate",
+      "questionIds": [
+        328,
+        2501
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "53939b28991859e28649eb85982e777dc13eadde08fcd293b99d531cb3032a21",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": {
+        "signature": "53939b28991859e28649eb85982e777dc13eadde08fcd293b99d531cb3032a21",
+        "questionIds": [
+          328,
+          2501
+        ],
+        "status": "accepted",
+        "at": "2026-11-10",
+        "reviewer": "Codex",
+        "reason": "Different household characters: #328 asks the butler Edgar; #2501 asks the horse Frou-Frou. Neither name establishes the other.",
+        "reference": "audit/runs/next-shard-0039-comparisons.json",
+        "history": []
+      }
+    },
+    {
+      "id": "duplicate-64cb5d8e3d37ab51171b",
+      "kind": "duplicate",
+      "questionIds": [
+        325,
+        2481
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "64cb5d8e3d37ab51171b602706a2d53e5e859cc5cc56d44c5b844a4da05bdcb5",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": {
+        "signature": "64cb5d8e3d37ab51171b602706a2d53e5e859cc5cc56d44c5b844a4da05bdcb5",
+        "questionIds": [
+          325,
+          2481
+        ],
+        "status": "accepted",
+        "at": "2026-11-10",
+        "reviewer": "Codex",
+        "reason": "Ratigan's species in The Great Mouse Detective and the animal Tramp fights in the nursery are unrelated facts despite the shared answer rat.",
+        "reference": "audit/runs/next-shard-0039-comparisons.json",
+        "history": []
+      }
+    },
+    {
+      "id": "duplicate-85cd28568f7b9302f163",
+      "kind": "duplicate",
+      "questionIds": [
+        2482,
+        2483
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "85cd28568f7b9302f1637840c86c741e4618b20967c85c486963c04422e1995f",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": {
+        "signature": "85cd28568f7b9302f1637840c86c741e4618b20967c85c486963c04422e1995f",
+        "questionIds": [
+          2482,
+          2483
+        ],
+        "status": "accepted",
+        "at": "2026-11-10",
+        "reviewer": "Codex",
+        "reason": "Different named pound dogs: Boris is a Borzoi; Pedro is a Chihuahua. Each breed is independently established.",
+        "reference": "audit/runs/next-shard-0039-comparisons.json",
+        "history": []
+      }
+    },
+    {
+      "id": "duplicate-a05e289c48b6e38b04f0",
+      "kind": "duplicate",
+      "questionIds": [
+        1023,
+        2523
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "a05e289c48b6e38b04f05d275ef8d5bce6058bfd1b80789611494479527c19b2",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": {
+        "signature": "a05e289c48b6e38b04f05d275ef8d5bce6058bfd1b80789611494479527c19b2",
+        "questionIds": [
+          1023,
+          2523
+        ],
+        "status": "accepted",
+        "at": "2026-11-10",
+        "reviewer": "Codex",
+        "reason": "#1023 asks the fictional Toy Story 2 television show's name. Rewritten #2523 removes the TV clue and requires identifying Shanghai's pony-cart corral attraction; sharing the franchise name does not establish the ride mechanism/location.",
+        "reference": "audit/runs/next-shard-0039-comparisons.json",
+        "history": []
+      }
+    },
+    {
+      "id": "duplicate-c988934ea117599532ae",
+      "kind": "duplicate",
+      "questionIds": [
+        534,
+        2499
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "c988934ea117599532aeb698dbfbc57fb70001f456309a7545546d17dda3b748",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": {
+        "signature": "c988934ea117599532aeb698dbfbc57fb70001f456309a7545546d17dda3b748",
+        "questionIds": [
+          534,
+          2499
+        ],
+        "status": "accepted",
+        "at": "2026-11-10",
+        "reviewer": "Codex",
+        "reason": "Sherlock Holmes as Basil's fictional model differs from Eve Titus as the original books' real author.",
+        "reference": "audit/runs/next-shard-0039-comparisons.json",
+        "history": []
+      }
+    },
+    {
+      "id": "duplicate-ed15fdfefcdd8810321d",
+      "kind": "duplicate",
+      "questionIds": [
+        2502,
+        2591
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "ed15fdfefcdd8810321df60149ee7a8939bde83a6c428a881cf3db344ea8d4e6",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": {
+        "signature": "ed15fdfefcdd8810321df60149ee7a8939bde83a6c428a881cf3db344ea8d4e6",
+        "questionIds": [
+          2502,
+          2591
+        ],
+        "status": "accepted",
+        "at": "2026-11-10",
+        "reviewer": "Codex",
+        "reason": "Napoleon's breed in The Aristocats and Copper's breed in The Fox and the Hound are separate character/breed identities. Shared Bloodhound alone does not solve either character from the other.",
+        "reference": "audit/runs/next-shard-0039-comparisons.json",
+        "history": []
+      }
+    },
+    {
+      "id": "duplicate-ed2e5cdbe169ac95a977",
+      "kind": "duplicate",
+      "questionIds": [
+        1124,
+        2488
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "ed2e5cdbe169ac95a9779e1b8705cecd9fc545377feb66918076f94e23b07aff",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": {
+        "signature": "ed2e5cdbe169ac95a9779e1b8705cecd9fc545377feb66918076f94e23b07aff",
+        "questionIds": [
+          1124,
+          2488
+        ],
+        "status": "accepted",
+        "at": "2026-11-10",
+        "reviewer": "Codex",
+        "reason": "Kronk speaking squirrel in The Emperor's New Groove and Wart becoming a squirrel for Merlin's romantic pursuit lesson are independent scene facts.",
+        "reference": "audit/runs/next-shard-0039-comparisons.json",
+        "history": []
+      }
+    },
+    {
+      "id": "scope-3183345831ccb376ea8a",
+      "kind": "scope",
+      "questionIds": [
+        2476
+      ],
+      "detail": "Check the no-TV-shows boundary; incidental mentions may be valid.",
+      "signature": "3183345831ccb376ea8a30c79fbbbdd85a2d7e12fbe5aa89aa2ebf6f7d3f2bbf",
+      "decision": {
+        "signature": "3183345831ccb376ea8a30c79fbbbdd85a2d7e12fbe5aa89aa2ebf6f7d3f2bbf",
+        "questionIds": [
+          2476
+        ],
+        "status": "accepted",
+        "at": "2026-11-10",
+        "reviewer": "Codex",
+        "reason": "Series refers to Lloyd Alexander's fantasy books, the literary source of the theatrical 1985 Disney feature. No television-show trivia is asked.",
+        "reference": "audit/runs/next-shard-0039-comparisons.json",
+        "history": []
+      }
+    }
+  ],
+  "questionSnapshots": {
+    "325": {
+      "id": 325,
+      "question": "In The Great Mouse Detective, what is Professor Ratigan's true species (despite his protests)?",
+      "answers": [
+        "A rat",
+        "A mouse",
+        "A shrew",
+        "A vole"
+      ],
+      "difficulty": "hard",
+      "category": "characters"
+    },
+    "328": {
+      "id": 328,
+      "question": "In The Aristocats (1970), what is Madame Bonfamille's butler called?",
+      "answers": [
+        "Edgar",
+        "Georges",
+        "Napoleon",
+        "Lafayette"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "534": {
+      "id": 534,
+      "question": "Which fictional detective inspired Basil of Baker Street in The Great Mouse Detective (1986)?",
+      "answers": [
+        "Sherlock Holmes",
+        "Hercule Poirot",
+        "Philip Marlowe",
+        "Sam Spade"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    },
+    "855": {
+      "id": 855,
+      "question": "In Lady and the Tramp (1955), what breed is Lady?",
+      "answers": [
+        "Cocker spaniel",
+        "Scottish terrier",
+        "Bloodhound",
+        "Schnauzer"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "1023": {
+      "id": 1023,
+      "question": "In Toy Story 2, what fictional 1950s television show featured Woody?",
+      "answers": [
+        "Woody's Roundup",
+        "The Roundup Gang",
+        "Sheriff Woody Show",
+        "Cowboy Camp"
+      ],
+      "difficulty": "medium",
+      "category": "pixar"
+    },
+    "1124": {
+      "id": 1124,
+      "question": "In The Emperor's New Groove (2000), what animal's language does Kronk use when asking Bucky for directions?",
+      "answers": [
+        "Squirrel",
+        "Llama",
+        "Jaguar",
+        "Parrot"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "1433": {
+      "id": 1433,
+      "question": "In Up, what word repeatedly distracts the talking dogs from what they are doing?",
+      "answers": [
+        "Squirrel!",
+        "Bird!",
+        "Cat!",
+        "Danger!"
+      ],
+      "difficulty": "easy",
+      "category": "pixar"
+    },
+    "2406": {
+      "id": 2406,
+      "question": "John Hench worked on the Oscar-winning special effects of which 1954 Disney film?",
+      "answers": [
+        "20,000 Leagues Under the Sea",
+        "Davy Crockett",
+        "The Living Desert",
+        "Old Yeller"
+      ],
+      "difficulty": "hard",
+      "category": "walt"
+    },
+    "2476": {
+      "id": 2476,
+      "question": "Which fantasy series by Lloyd Alexander inspired Disney's The Black Cauldron (1985)?",
+      "answers": [
+        "The Chronicles of Prydain",
+        "The Chronicles of Narnia",
+        "Earthsea",
+        "The Dark Is Rising"
+      ],
+      "difficulty": "hard",
+      "category": "movies"
+    },
+    "2480": {
+      "id": 2480,
+      "question": "What breed is Lady's neighbor Jock in the animated Lady and the Tramp (1955)?",
+      "answers": [
+        "Scottish Terrier",
+        "West Highland Terrier",
+        "Cairn Terrier",
+        "Yorkshire Terrier"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "2481": {
+      "id": 2481,
+      "question": "In Lady and the Tramp (1955), what creature does Tramp fight to protect Jim Dear and Darling's baby?",
+      "answers": [
+        "A rat",
+        "A snake",
+        "A raccoon",
+        "A hawk"
+      ],
+      "difficulty": "easy",
+      "category": "movies"
+    },
+    "2482": {
+      "id": 2482,
+      "question": "In Lady and the Tramp (1955), what breed is Boris, one of the dogs Lady meets in the pound?",
+      "answers": [
+        "Borzoi",
+        "Siberian Husky",
+        "Alaskan Malamute",
+        "German Shepherd"
+      ],
+      "difficulty": "hard",
+      "category": "characters"
+    },
+    "2483": {
+      "id": 2483,
+      "question": "In Lady and the Tramp, what breed is Pedro, the fast-talking dog Lady meets in the pound?",
+      "answers": [
+        "Chihuahua",
+        "Dachshund",
+        "Pug",
+        "Terrier"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "2488": {
+      "id": 2488,
+      "question": "In The Sword in the Stone (1963), what animal form does Wart take during the lesson in which a female admirer pursues him through the trees?",
+      "answers": [
+        "A squirrel",
+        "A rabbit",
+        "A sparrow",
+        "A field mouse"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    },
+    "2498": {
+      "id": 2498,
+      "question": "Which book inspired Disney's The Great Mouse Detective (1986)?",
+      "answers": [
+        "Basil of Baker Street",
+        "Sherlock Mouse",
+        "The Mouse Detective",
+        "Basil Baker's Mysteries"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    },
+    "2499": {
+      "id": 2499,
+      "question": "Who created the original Basil of Baker Street books that inspired The Great Mouse Detective (1986)?",
+      "answers": [
+        "Eve Titus",
+        "Margery Sharp",
+        "Lloyd Alexander",
+        "Dodie Smith"
+      ],
+      "difficulty": "hard",
+      "category": "movies"
+    },
+    "2501": {
+      "id": 2501,
+      "question": "What is the name of Madame Bonfamille's horse in The Aristocats (1970)?",
+      "answers": [
+        "Frou-Frou",
+        "Philippe",
+        "Samson",
+        "Major"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "2502": {
+      "id": 2502,
+      "question": "What breed is Napoleon, one of the two farm dogs that chase off the villainous butler Edgar in The Aristocats?",
+      "answers": [
+        "Bloodhound",
+        "Basset Hound",
+        "Beagle",
+        "Foxhound"
+      ],
+      "difficulty": "medium",
+      "category": "characters"
+    },
+    "2505": {
+      "id": 2505,
+      "question": "Which Mysterious Island attraction at Tokyo DisneySea sends guests in Captain Nemo's small submarines to search for Atlantis?",
+      "answers": [
+        "20,000 Leagues Under the Sea",
+        "Journey to the Center of the Earth",
+        "Nemo & Friends SeaRider",
+        "Aquatopia"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "2523": {
+      "id": 2523,
+      "question": "Which Shanghai Disneyland Toy Story Land attraction swings guests in pony-drawn carts around a horse corral?",
+      "answers": [
+        "Woody's Roundup",
+        "Rex's Racer",
+        "Slinky Dog Spin",
+        "Jessie's Critter Carousel"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "2591": {
+      "id": 2591,
+      "question": "What breed of dog is Copper, the hound puppy who becomes best friends with a fox kit in The Fox and the Hound?",
+      "answers": [
+        "Bloodhound",
+        "Beagle",
+        "Basset Hound",
+        "Coonhound"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    }
+  }
+}

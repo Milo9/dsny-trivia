@@ -1,0 +1,1967 @@
+{
+  "schema": 1,
+  "reviewer": "Codex",
+  "at": "2026-11-10",
+  "sourcesChecked": [
+    "b42-2625",
+    "b42-2626",
+    "b42-2627",
+    "b42-2628",
+    "b42-2629",
+    "b42-2630",
+    "b42-2631",
+    "b42-2632",
+    "b42-2633",
+    "b42-2634",
+    "b42-2635",
+    "b42-2636",
+    "b42-2637",
+    "b42-2638",
+    "b42-2639",
+    "b42-2640",
+    "b42-2641",
+    "b42-2642",
+    "b42-2643",
+    "b42-2644",
+    "b42-2645",
+    "b42-2646",
+    "b42-2647",
+    "b42-2648",
+    "b42-2649",
+    "b42-2650",
+    "b42-2651",
+    "b42-2652",
+    "b42-2653",
+    "b42-2654",
+    "b42-2655",
+    "b42-2626-cor",
+    "b42-2630-cor",
+    "b42-2636-cor",
+    "b42-2639-cor",
+    "b42-2646-cor",
+    "b42-2651-cor"
+  ],
+  "reviews": [
+    {
+      "questionId": 2625,
+      "hash": "6960a4f4754246bb53e8c45c2759d9aba3a1ad451d22cb31e9c4eb73c9e1f42a",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. Accessories can change powers; they do not change the documented baseline gesture interface.",
+      "context": "On the WEB Slinger vehicles in Avengers Campus's Spider-Man ride, guests sling webs using what kind of built-in technology?",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-08",
+      "premise": {
+        "reason": "The web-slinging interface detects arm and hand movements.",
+        "sources": [
+          "b42-2625"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Gesture detection supplies the web-slinging input.",
+          "sources": [
+            "b42-2625"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Speech is not the described hand-motion input.",
+          "sources": [
+            "b42-2625"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gaze is not the described hand-motion input.",
+          "sources": [
+            "b42-2625"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pedals are not the described hand-motion input.",
+          "sources": [
+            "b42-2625"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Accessories can change powers; they do not change the documented baseline gesture interface."
+      }
+    },
+    {
+      "questionId": 2626,
+      "hash": "8adce96d6d74d1a076e59cbfc448c9600d352fd2bc9068432ec4bd2c74c26c05",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. The final wording asks the predecessor land, avoiding the unsupported implication that a single ride replaced an entire land. Pixar branding no longer narrows the choices.",
+      "context": "Which former land at Disney California Adventure closed in 2018 to make way for Avengers Campus?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The former insect-themed area closed in 2018 and was replaced by Avengers Campus.",
+        "sources": [
+          "b42-2626",
+          "b42-2626-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "A Bug's Land is the identified predecessor.",
+          "sources": [
+            "b42-2626",
+            "b42-2626-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cars Land is a different area, not that predecessor.",
+          "sources": [
+            "b42-2626",
+            "b42-2626-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Grizzly Peak is a different area, not that predecessor.",
+          "sources": [
+            "b42-2626",
+            "b42-2626-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hollywood Land is a different area, not that predecessor.",
+          "sources": [
+            "b42-2626",
+            "b42-2626-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The final wording asks the predecessor land, avoiding the unsupported implication that a single ride replaced an entire land. Pixar branding no longer narrows the choices."
+      }
+    },
+    {
+      "questionId": 2627,
+      "hash": "d807ce94048ec461dfcbb38c6d266501bd517454b119d2053225b47a45a45956",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. All options now measure the same company anniversary; unrelated park and movie anniversaries cannot supply an alternative.",
+      "context": "Journey of Water, Inspired by Moana opened in 2023 on which anniversary of The Walt Disney Company's founding?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The opening was timed to the company centenary in October 2023.",
+        "sources": [
+          "b42-2627"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "100th means the stated centenary.",
+          "sources": [
+            "b42-2627"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "75th is not the stated centenary.",
+          "sources": [
+            "b42-2627"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "50th is not the stated centenary.",
+          "sources": [
+            "b42-2627"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "25th is not the stated centenary.",
+          "sources": [
+            "b42-2627"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All options now measure the same company anniversary; unrelated park and movie anniversaries cannot supply an alternative."
+      }
+    },
+    {
+      "questionId": 2628,
+      "hash": "ec2337b8a72a73c6e3c5e9c456eb12be5b2f1a31895ac0ec818ec27e009b8911",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. Historical opening context fixes the neighborhood assignment; the nearby Celebration gardens do not move the trail into that neighborhood.",
+      "context": "When Journey of Water, Inspired by Moana opened in 2023, which EPCOT neighborhood was it part of?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The 2023 opening announcement places the trail in World Nature.",
+        "sources": [
+          "b42-2628"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "World Nature is the named neighborhood.",
+          "sources": [
+            "b42-2628"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "World Celebration is separately discussed as gardens, not the trail location.",
+          "sources": [
+            "b42-2628"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "World Discovery is not the identified neighborhood.",
+          "sources": [
+            "b42-2628"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "World Showcase is not the identified neighborhood.",
+          "sources": [
+            "b42-2628"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Historical opening context fixes the neighborhood assignment; the nearby Celebration gardens do not move the trail into that neighborhood."
+      }
+    },
+    {
+      "questionId": 2629,
+      "hash": "d2a23793a6183879a0314a77f09e7b5f0fc2ff1f5a5258fcfe7f22fe5af66ff9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. The question asks the hall opening, not an EPCOT festival or the separate World Celebration gardens opening.",
+      "context": "In what month and year did EPCOT's CommuniCore Hall open to guests?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The new hall was announced to open June 10, 2024.",
+        "sources": [
+          "b42-2629"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "June 2024 contains the specified opening day.",
+          "sources": [
+            "b42-2629"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "October 2023 precedes that opening.",
+          "sources": [
+            "b42-2629"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "March 2022 precedes that opening.",
+          "sources": [
+            "b42-2629"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "December 2024 follows that opening.",
+          "sources": [
+            "b42-2629"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The question asks the hall opening, not an EPCOT festival or the separate World Celebration gardens opening."
+      }
+    },
+    {
+      "questionId": 2630,
+      "hash": "45aaf08a8030f4eed60ce5d01d447519958d0eb08d9b905aa6d38ebbd665bbe3",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. This is the identity of the notorious historical sample, not a claim that every dispenser has it today; distinct brand names cannot all identify Beverly.",
+      "context": "Which bitter Italian soda became notorious among guests sampling drinks at EPCOT's Club Cool?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The historical soda review identifies the famously bitter Italian sample as Beverly.",
+        "sources": [
+          "b42-2630",
+          "b42-2630-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Beverly is the named Italian bitter sample.",
+          "sources": [
+            "b42-2630",
+            "b42-2630-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sparelli is not the named Beverly beverage.",
+          "sources": [
+            "b42-2630",
+            "b42-2630-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mezzo Mix is a different named beverage, not Beverly.",
+          "sources": [
+            "b42-2630",
+            "b42-2630-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Krest is a different named beverage, not Beverly.",
+          "sources": [
+            "b42-2630",
+            "b42-2630-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "This is the identity of the notorious historical sample, not a claim that every dispenser has it today; distinct brand names cannot all identify Beverly."
+      }
+    },
+    {
+      "questionId": 2631,
+      "hash": "5710fcd4227dcf0a8bbbe7b90e459594c52ec8a3e2c65faa91708557b1d399ca",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. Florida is explicit: the different rubber-wheel propulsion of Disneyland's historical PeopleMover cannot be substituted.",
+      "context": "What propulsion system powers Magic Kingdom's Tomorrowland Transit Authority PeopleMover?",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-08",
+      "premise": {
+        "reason": "The Florida PeopleMover uses magnetic linear induction propulsion.",
+        "sources": [
+          "b42-2631"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Linear induction motors are the specified propulsion.",
+          "sources": [
+            "b42-2631"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Hydraulic pistons are not magnetic induction propulsion.",
+          "sources": [
+            "b42-2631"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A cable tow is not magnetic induction propulsion.",
+          "sources": [
+            "b42-2631"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Air jets are not magnetic induction propulsion.",
+          "sources": [
+            "b42-2631"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Florida is explicit: the different rubber-wheel propulsion of Disneyland's historical PeopleMover cannot be substituted."
+      }
+    },
+    {
+      "questionId": 2632,
+      "hash": "179e9235d1d39f6b48e56323cc3f7a4dd7608a9117c256b216acf4bc4c8d6d66",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. A group containing Donald alone is insufficient: all three members must match the explicitly identified trio.",
+      "context": "EPCOT's Gran Fiesta Tour boat ride in the Mexico pavilion stars which trio of animated Disney characters?",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-08",
+      "premise": {
+        "reason": "The boat attraction follows Donald and the other two Caballeros, Jose and Panchito.",
+        "sources": [
+          "b42-2632"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "This lists the three specified birds.",
+          "sources": [
+            "b42-2632"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mickey and Goofy replace two of the specified birds.",
+          "sources": [
+            "b42-2632"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "This Coco trio does not name the specified birds.",
+          "sources": [
+            "b42-2632"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "This Br'er trio does not name the specified birds.",
+          "sources": [
+            "b42-2632"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A group containing Donald alone is insufficient: all three members must match the explicitly identified trio."
+      }
+    },
+    {
+      "questionId": 2633,
+      "hash": "59db9c2f2e172a7211caa07e16cc5f111e67b0b225b38bed0ccf20f74175790e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. The final wording asks where Andy won this attraction's play set, not where Woody and Buzz ate in the movie; #196 does not establish this park backstory.",
+      "context": "In the backstory of Alien Swirling Saucers at Hollywood Studios, where did Andy win the play set that inspired the attraction?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney identifies the ride's play set as a prize Andy won at Pizza Planet.",
+        "sources": [
+          "b42-2633"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Pizza Planet is the stated prize location.",
+          "sources": [
+            "b42-2633"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Al's Toy Barn is not the stated prize location.",
+          "sources": [
+            "b42-2633"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sunnyside is not the stated prize location.",
+          "sources": [
+            "b42-2633"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Andy's home is not the stated prize location.",
+          "sources": [
+            "b42-2633"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The final wording asks where Andy won this attraction's play set, not where Woody and Buzz ate in the movie; #196 does not establish this park backstory."
+      }
+    },
+    {
+      "questionId": 2634,
+      "hash": "42b31114fcb4b9b62904150063cf6b4a39c3ff0327b55d586a041b9e277d31b9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. A themed region or a different park waterway cannot replace the specific river name; removed the unnecessary illegal-logging claim.",
+      "context": "Which fictional river is the setting for Kali River Rapids at Disney's Animal Kingdom?",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-08",
+      "premise": {
+        "reason": "The official park guide names Chakranadi as the rafting river.",
+        "sources": [
+          "b42-2634"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Chakranadi is the guide's specific river name.",
+          "sources": [
+            "b42-2634"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Discovery is not the named rafting river.",
+          "sources": [
+            "b42-2634"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kilimanjaro is not the named rafting river.",
+          "sources": [
+            "b42-2634"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Anandapur is not the named rafting river.",
+          "sources": [
+            "b42-2634"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "A themed region or a different park waterway cannot replace the specific river name; removed the unnecessary illegal-logging claim."
+      }
+    },
+    {
+      "questionId": 2635,
+      "hash": "a44a6b7fc88d386763c488934c398fc4a668d6e7c4f59ed761ca0b1ac877caa6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. An elder could be a general description, but the question asks the specific musical character; removed the unbounded complexity record and guaranteed animatronic finale.",
+      "context": "Which Na'vi character shares her music with guests on Animal Kingdom's Na'vi River Journey?",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-08",
+      "premise": {
+        "reason": "The musical Na'vi encountered on the river is named Shaman of Songs.",
+        "sources": [
+          "b42-2635"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Shaman of Songs is the identified character title.",
+          "sources": [
+            "b42-2635"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tree Spirit is not that title.",
+          "sources": [
+            "b42-2635"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Eywa's Guardian is not that title.",
+          "sources": [
+            "b42-2635"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Na'vi Elder is not that title.",
+          "sources": [
+            "b42-2635"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "An elder could be a general description, but the question asks the specific musical character; removed the unbounded complexity record and guaranteed animatronic finale."
+      }
+    },
+    {
+      "questionId": 2636,
+      "hash": "d5e40317800a0b975839f47b77e90c74d3646958c2e6e06a10b9d8a0c00f517f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. Original 2022 playlist excludes later holiday overlays, pre-launch incidental music and single-song special days.",
+      "context": "How many songs were on the original 2022 ride soundtrack playlist for EPCOT's Guardians of the Galaxy: Cosmic Rewind?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The launch playlist contained September, Disco Inferno, Conga, Everybody Wants to Rule the World, I Ran and One Way or Another.",
+        "sources": [
+          "b42-2636",
+          "b42-2636-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "exhaustive-list",
+          "reason": "There are six tracks in the complete list.",
+          "sources": [
+            "b42-2636",
+            "b42-2636-cor"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Three undercounts the complete list.",
+          "sources": [
+            "b42-2636",
+            "b42-2636-cor"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Ten overcounts the complete list.",
+          "sources": [
+            "b42-2636",
+            "b42-2636-cor"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "One undercounts the complete list.",
+          "sources": [
+            "b42-2636",
+            "b42-2636-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Original 2022 playlist excludes later holiday overlays, pre-launch incidental music and single-song special days."
+      }
+    },
+    {
+      "questionId": 2637,
+      "hash": "5694b3c05c67660e1cd8bd0169cb8cd0e5199819636daddfb22852036aae0579",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. Other sequences use other ride systems, so the escape sequence is explicit; trackless does not prove random paths every ride.",
+      "context": "What type of vehicle system carries guests through the Star Destroyer escape on Rise of the Resistance at Hollywood Studios?",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-08",
+      "premise": {
+        "reason": "The Star Destroyer escape uses low-profile vehicles that navigate without a track.",
+        "sources": [
+          "b42-2637"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Trackless is the stated vehicle system.",
+          "sources": [
+            "b42-2637"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The described low-profile escape vehicle is not a suspended coaster.",
+          "sources": [
+            "b42-2637"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Trackless navigation is incompatible with a fixed monorail for this sequence.",
+          "sources": [
+            "b42-2637"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "The stated trackless system is not cable-guided.",
+          "sources": [
+            "b42-2637"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Other sequences use other ride systems, so the escape sequence is explicit; trackless does not prove random paths every ride."
+      }
+    },
+    {
+      "questionId": 2638,
+      "hash": "72402fcd489f95d60bc0c8204094bd717418159e035a6e0e3b3b2e5c209cb6f4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. Earlier film screenings, character appearances or isolated attractions are not dedicated lands. This tests historical precedence, separate from #2259's opening month.",
+      "context": "When Shanghai Disneyland's Zootopia land opened in 2023, how many other Disney parks already had a land dedicated to that film?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney identifies Shanghai's 2023 opening as the first Zootopia-themed land worldwide.",
+        "sources": [
+          "b42-2638"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "A worldwide first means zero earlier counterparts.",
+          "sources": [
+            "b42-2638"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "One earlier counterpart would contradict first.",
+          "sources": [
+            "b42-2638"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Two earlier counterparts would contradict first.",
+          "sources": [
+            "b42-2638"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Three earlier counterparts would contradict first.",
+          "sources": [
+            "b42-2638"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Earlier film screenings, character appearances or isolated attractions are not dedicated lands. This tests historical precedence, separate from #2259's opening month."
+      }
+    },
+    {
+      "questionId": 2639,
+      "hash": "237c22abec19dacd6a1d86e52ed95927a4a113af418564fd6259409b31eee363",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. Pendulum oscillation itself is not the Earth-rotation effect; the changing direction against the floor is. Attraction location is corroborated by the operator's exhibit description.",
+      "context": "Tokyo DisneySea's Fortress Explorations lets guests examine a Foucault pendulum, a device famous for demonstrating what phenomenon?",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-08",
+      "premise": {
+        "reason": "The installed Foucault pendulum demonstrates Earth turning beneath its oscillation plane.",
+        "sources": [
+          "b42-2639",
+          "b42-2639-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Earth's rotation is the stated demonstration.",
+          "sources": [
+            "b42-2639",
+            "b42-2639-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Ocean tides are not this pendulum's demonstrated phenomenon.",
+          "sources": [
+            "b42-2639",
+            "b42-2639-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Magnetic north is not the source of its precession.",
+          "sources": [
+            "b42-2639",
+            "b42-2639-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Sound frequency is not the stated demonstration.",
+          "sources": [
+            "b42-2639",
+            "b42-2639-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Pendulum oscillation itself is not the Earth-rotation effect; the changing direction against the floor is. Attraction location is corroborated by the operator's exhibit description."
+      }
+    },
+    {
+      "questionId": 2640,
+      "hash": "ab82d3da7dcb788a8741e7d1ac321bc586ca292e13c2764b8066257340205417",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. The museum is dedicated to humanity's dream of flight; it celebrates Camellia rather than being dedicated exclusively to her. The final wording preserves that distinction.",
+      "context": "Which fictional aviation pioneer is celebrated in the museum at Tokyo DisneySea's Soaring: Fantastic Flight?",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-08",
+      "premise": {
+        "reason": "The museum retrospective celebrates aviation innovator Camellia Falco and her Dream Flyer.",
+        "sources": [
+          "b42-2640"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Camellia Falco is the named retrospective subject.",
+          "sources": [
+            "b42-2640"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Amelia Earfeather is not the named subject.",
+          "sources": [
+            "b42-2640"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Delphine Skye is not the named subject.",
+          "sources": [
+            "b42-2640"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Isabella Windham is not the named subject.",
+          "sources": [
+            "b42-2640"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The museum is dedicated to humanity's dream of flight; it celebrates Camellia rather than being dedicated exclusively to her. The final wording preserves that distinction."
+      }
+    },
+    {
+      "questionId": 2641,
+      "hash": "afd2324dc1a15b4009988c6801ede0c612853e89a7bf3e6805e3bfbbffab9496",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. Removed Mediterranean Harbor: the railway has no station there. The resort monorail and in-park steamer are different systems; this asks the elevated trolley.",
+      "context": "In November 2026, which elevated trolley carries guests between American Waterfront and Port Discovery at Tokyo DisneySea?",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-08",
+      "premise": {
+        "reason": "The elevated Electric Railway links American Waterfront with Port Discovery.",
+        "sources": [
+          "b42-2641"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Electric Railway is the named trolley.",
+          "sources": [
+            "b42-2641"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Disney Skyliner is a gondola system, not this trolley.",
+          "sources": [
+            "b42-2641"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Disney Resort Line is not the named in-park trolley.",
+          "sources": [
+            "b42-2641"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "WEDway PeopleMover is not this Tokyo trolley.",
+          "sources": [
+            "b42-2641"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed Mediterranean Harbor: the railway has no station there. The resort monorail and in-park steamer are different systems; this asks the elevated trolley."
+      }
+    },
+    {
+      "questionId": 2642,
+      "hash": "12a7867ef8f3e5c9272b8cd9d1272d522839b40c88ac6e69ff1b3bd7fe45be8c",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. All four answers are real neighborhoods. Historical 2018 framing avoids the newer fact sheet counting Pixar Pier Entry as a fifth neighborhood; Pixar in the answer is not sufficient to choose it.",
+      "context": "At Pixar Pier's 2018 debut, which neighborhood included the Pixar Pal-A-Round wheel?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "At the 2018 opening the wheel was assigned to Pixar Promenade; the coaster was in Incredibles Park and Midway Mania in Toy Story Boardwalk.",
+        "sources": [
+          "b42-2642"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Pixar Promenade is explicitly the wheel neighborhood.",
+          "sources": [
+            "b42-2642"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Incredibles Park is explicitly the coaster neighborhood.",
+          "sources": [
+            "b42-2642"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Toy Story Boardwalk is explicitly the Midway Mania neighborhood.",
+          "sources": [
+            "b42-2642"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Inside Out Headquarters is identified separately for the forthcoming emotion ride.",
+          "sources": [
+            "b42-2642"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All four answers are real neighborhoods. Historical 2018 framing avoids the newer fact sheet counting Pixar Pier Entry as a fifth neighborhood; Pixar in the answer is not sufficient to choose it."
+      }
+    },
+    {
+      "questionId": 2643,
+      "hash": "45cdc39336d2b308e7066121cc2f956a4bbc8fc5680aeffdfce2f90fa38ae21f",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. Removed the overbroad first-attraction claim because earlier Disney attractions used trackless movement in parts; asking the documented system requires no priority claim.",
+      "context": "What type of vehicle system does Tokyo Disneyland's Pooh's Hunny Hunt use?",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-08",
+      "premise": {
+        "reason": "Imagineering names Pooh's Hunny Hunt as an example of a trackless vehicle.",
+        "sources": [
+          "b42-2643"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Trackless matches the specified system.",
+          "sources": [
+            "b42-2643"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Suspended coaster does not match the specified system.",
+          "sources": [
+            "b42-2643"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Fixed monorail does not match the specified system.",
+          "sources": [
+            "b42-2643"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Cable-guided does not match the specified system.",
+          "sources": [
+            "b42-2643"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed the overbroad first-attraction claim because earlier Disney attractions used trackless movement in parts; asking the documented system requires no priority claim."
+      }
+    },
+    {
+      "questionId": 2644,
+      "hash": "afb74f6949b585cdc7cac143453aed13a968e103b2bd58b1fbb0033f1fd05865",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. The ride's vehicle shell is being asked, separate from its trackless guidance (#2643) and the similarly shaped vehicle at Magic Kingdom (#1479).",
+      "context": "What do guests ride in during Tokyo Disneyland's Pooh's Hunny Hunt?",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-08",
+      "premise": {
+        "reason": "The operator says visitors board a honey pot.",
+        "sources": [
+          "b42-2644"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Honey pots are the stated vehicle design.",
+          "sources": [
+            "b42-2644"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bumblebee balloons are not the stated vehicle design.",
+          "sources": [
+            "b42-2644"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Acorn carts are not the stated vehicle design.",
+          "sources": [
+            "b42-2644"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rabbit-hole carts are not the stated vehicle design.",
+          "sources": [
+            "b42-2644"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The ride's vehicle shell is being asked, separate from its trackless guidance (#2643) and the similarly shaped vehicle at Magic Kingdom (#1479)."
+      }
+    },
+    {
+      "questionId": 2645,
+      "hash": "9352acdf5717295293a28f67b09e6e5a916dbfcc6b0b9c7765226516bdfc65e6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. Marquee is more precise than facade. Other artists worked on the pavilion, but the named tower design is specifically credited to Crump.",
+      "context": "Which Imagineer designed the Tower of the Four Winds marquee for it's a small world at the 1964-65 New York World's Fair?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Crump designed the wind-tower marquee for the fair's small world pavilion.",
+        "sources": [
+          "b42-2645"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Rolly Crump receives the explicit design credit.",
+          "sources": [
+            "b42-2645"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Herb Ryman is not the credited tower designer.",
+          "sources": [
+            "b42-2645"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Marc Davis is not the credited tower designer.",
+          "sources": [
+            "b42-2645"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Yale Gracey is not the credited tower designer.",
+          "sources": [
+            "b42-2645"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Marquee is more precise than facade. Other artists worked on the pavilion, but the named tower design is specifically credited to Crump."
+      }
+    },
+    {
+      "questionId": 2646,
+      "hash": "0337ab4edfedf202d340d795ab3198fa34289503ebe4af581143bca2cb664b55",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. Songwriting is separated into lyrics and composition. #2294 asks the composer, so learning Baker does not answer this lyricist question.",
+      "context": "Which Disney Imagineer wrote the lyrics to both 'Grim Grinning Ghosts' for the Haunted Mansion and 'Yo Ho (A Pirate's Life for Me)' for Pirates of the Caribbean?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Atencio supplied the attraction lyrics; Baker composed the Mansion music.",
+        "sources": [
+          "b42-2646",
+          "b42-2646-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "X Atencio is credited for the lyrics.",
+          "sources": [
+            "b42-2646",
+            "b42-2646-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Robert Sherman is not the credited lyricist.",
+          "sources": [
+            "b42-2646",
+            "b42-2646-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "George Bruns is not the credited lyricist.",
+          "sources": [
+            "b42-2646",
+            "b42-2646-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Buddy Baker composed the Mansion music rather than its lyrics.",
+          "sources": [
+            "b42-2646",
+            "b42-2646-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Songwriting is separated into lyrics and composition. #2294 asks the composer, so learning Baker does not answer this lyricist question."
+      }
+    },
+    {
+      "questionId": 2647,
+      "hash": "cd31e32d45c510355b3a118da48460ffb50afc20a1543bce09372e3f58a2e334",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. Ride vehicle engineering is distinct from show art, sculpture and later attraction leadership; incidental contributions do not supply the specified original vehicle-design credit.",
+      "context": "Which Imagineer designed the original ride vehicles for Autopia, the Disneyland Monorail, and the Matterhorn Bobsleds?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Gurr's attraction vehicle designs include Autopia, Matterhorn and Disney monorails.",
+        "sources": [
+          "b42-2647"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Bob Gurr is the named vehicle designer.",
+          "sources": [
+            "b42-2647"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tony Baxter is not the named designer of this original vehicle set.",
+          "sources": [
+            "b42-2647"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Blaine Gibson is not the named designer of this original vehicle set.",
+          "sources": [
+            "b42-2647"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Claude Coats is not the named designer of this original vehicle set.",
+          "sources": [
+            "b42-2647"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Ride vehicle engineering is distinct from show art, sculpture and later attraction leadership; incidental contributions do not supply the specified original vehicle-design credit."
+      }
+    },
+    {
+      "questionId": 2648,
+      "hash": "7229ceb539b16617e492207bbdee4dfd07c0e203006f08753751968351f66db6",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. Originating the idea is exclusive in this source; the final wording avoids suggesting one artist personally designed every aspect of three collaborative attractions.",
+      "context": "Which Imagineer originated the idea for Disneyland's Splash Mountain?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Disney explicitly credits the initial Splash Mountain idea to Tony Baxter alone.",
+        "sources": [
+          "b42-2648"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Tony Baxter is the credited originator.",
+          "sources": [
+            "b42-2648"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bob Gurr is not the credited originator.",
+          "sources": [
+            "b42-2648"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Rolly Crump is not the credited originator.",
+          "sources": [
+            "b42-2648"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "X Atencio is not the credited originator.",
+          "sources": [
+            "b42-2648"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Originating the idea is exclusive in this source; the final wording avoids suggesting one artist personally designed every aspect of three collaborative attractions."
+      }
+    },
+    {
+      "questionId": 2649,
+      "hash": "0c83479f3fc21a782e9c161f760080f7bb3f9238109487f86239629298a6e154",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. The question asks sculpture used in production, not robotics engineering or conceptual character sketches; multiple contributors do not make all these roles equivalent.",
+      "context": "Which Imagineer created sculptures used to produce figures for Great Moments with Mr. Lincoln and Pirates of the Caribbean?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Gibson made sculptures from which figures for Lincoln and Pirates were produced.",
+        "sources": [
+          "b42-2649"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Blaine Gibson receives the sculptural-model credit.",
+          "sources": [
+            "b42-2649"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Claude Coats's show design is a different role.",
+          "sources": [
+            "b42-2649"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Marc Davis's character concepts are a different role.",
+          "sources": [
+            "b42-2649"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Yale Gracey's effects work is a different role.",
+          "sources": [
+            "b42-2649"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The question asks sculpture used in production, not robotics engineering or conceptual character sketches; multiple contributors do not make all these roles equivalent."
+      }
+    },
+    {
+      "questionId": 2650,
+      "hash": "a5caf52995ec08c745276af57bc16d757c9922ba2345324b44c2c95244a53fe9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. Mary Blair is also a background and color artist, so job title alone was insufficient; the specific earlier film credit establishes Coats.",
+      "context": "Which Haunted Mansion show designer had earlier painted watercolor backgrounds for Pinocchio?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Coats painted Pinocchio backgrounds and later designed attraction environments including Mansion.",
+        "sources": [
+          "b42-2650"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Claude Coats has both named credits.",
+          "sources": [
+            "b42-2650"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Blaine Gibson is not the credited Pinocchio watercolor background painter.",
+          "sources": [
+            "b42-2650"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bob Gurr is not the credited Pinocchio watercolor background painter.",
+          "sources": [
+            "b42-2650"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Mary Blair is not the credited painter with this particular Pinocchio/Mansion career pairing.",
+          "sources": [
+            "b42-2650"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Mary Blair is also a background and color artist, so job title alone was insufficient; the specific earlier film credit establishes Coats."
+      }
+    },
+    {
+      "questionId": 2651,
+      "hash": "f17870bf2d19382480df2547286c8b3a0780ec9d382cf9e9045f0f1c995f1114",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. All pairs are plausible Disney animators; professional fame or shared studio membership cannot substitute for the explicit joint book credit.",
+      "context": "Which pair of Disney animators co-wrote Disney Animation: The Illusion of Life?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The book is credited jointly to Thomas and Johnston.",
+        "sources": [
+          "b42-2651",
+          "b42-2651-cor"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Thomas and Johnston are the credited authors.",
+          "sources": [
+            "b42-2651",
+            "b42-2651-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kimball and Davis are not the credited pair.",
+          "sources": [
+            "b42-2651",
+            "b42-2651-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Kahl and Larson are not the credited pair.",
+          "sources": [
+            "b42-2651",
+            "b42-2651-cor"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Clark and Reitherman are not the credited pair.",
+          "sources": [
+            "b42-2651",
+            "b42-2651-cor"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "All pairs are plausible Disney animators; professional fame or shared studio membership cannot substitute for the explicit joint book credit."
+      }
+    },
+    {
+      "questionId": 2652,
+      "hash": "2b1d3a940f6835686cb052a8adb7f32377896b6ec67bb4f6450779d15d6e158e",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. Removed gold-versus-silver denominations: both are coins. The question asks the familiar dive material, not an exhaustive list of everything Scrooge ever owns. General comic-character lore, no TV-episode fact.",
+      "context": "What does Scrooge McDuck famously dive into inside his Money Bin?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The artifact account identifies the stored money primarily as coins and describes Scrooge diving into it.",
+        "sources": [
+          "b42-2652"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Coins identify the described material.",
+          "sources": [
+            "b42-2652"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pearls do not identify the described money.",
+          "sources": [
+            "b42-2652"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Postage stamps do not identify the described money.",
+          "sources": [
+            "b42-2652"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Gemstones do not identify the described money.",
+          "sources": [
+            "b42-2652"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed gold-versus-silver denominations: both are coins. The question asks the familiar dive material, not an exhaustive list of everything Scrooge ever owns. General comic-character lore, no TV-episode fact."
+      }
+    },
+    {
+      "questionId": 2653,
+      "hash": "4b49c0939d4ea637f2460c9528f097b0f1f8d3cf0546509d2ade72f8dda4ad48",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. Removed Lionheart from the stem so the name cannot give away lion. The wolves guarding the facility are not the mayor; the paired motive question no longer supplies his name or species.",
+      "context": "In Zootopia (2016), what species is the mayor Judy arrests after finding the missing predators?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The mayor explicitly identifies his own species as lion.",
+        "sources": [
+          "b42-2653"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Lion is the expressly identified species.",
+          "sources": [
+            "b42-2653"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tiger conflicts with that self-identification.",
+          "sources": [
+            "b42-2653"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Bear conflicts with that self-identification.",
+          "sources": [
+            "b42-2653"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Wolf conflicts with that self-identification.",
+          "sources": [
+            "b42-2653"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Removed Lionheart from the stem so the name cannot give away lion. The wolves guarding the facility are not the mayor; the paired motive question no longer supplies his name or species."
+      }
+    },
+    {
+      "questionId": 2654,
+      "hash": "68af600f3f723616b490c60b31a7fe44ccfb1c14db4f89e084b14a1030ca2178",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. The final question asks his spoken objection in this scene, avoiding an inference that his only underlying motive was public safety. Diagnostic work is not confused with an experiment motive.",
+      "context": "At Cliffside Asylum in Zootopia (2016), why does the mayor object when the doctor suggests telling the public about the affected predators?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "He rejects disclosure because he expects his own career to be ruined by public fear of a predator mayor.",
+        "sources": [
+          "b42-2654"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Fear of political ruin is his explicit objection.",
+          "sources": [
+            "b42-2654"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He voices no poacher-sale plan in this exchange; it is a different motive.",
+          "sources": [
+            "b42-2654"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He voices no spy-recruitment plan in this exchange; it is a different motive.",
+          "sources": [
+            "b42-2654"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "He is conversing rationally and fears public reaction, not hiding his own transformation.",
+          "sources": [
+            "b42-2654"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The final question asks his spoken objection in this scene, avoiding an inference that his only underlying motive was public safety. Diagnostic work is not confused with an experiment motive."
+      }
+    },
+    {
+      "questionId": 2655,
+      "hash": "b901bf538537b017b1fe702b69d5136ad9d9d2517d6937da5402dfa84040baa8",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Full topic catalog, all four options and cross-bank context reviewed. The wording explicitly asks the mythology adapted by the theatrical film; it makes no claim about a TV-series episode or an unsupported on-screen sibling statement.",
+      "context": "In the mythology adapted by Disney's Hercules (1997), which god rules the seas?",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The film tie-in identifies Poseidon as sea ruler and distinguishes Hades, Apollo and Hermes.",
+        "sources": [
+          "b42-2655"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Poseidon is the sea ruler.",
+          "sources": [
+            "b42-2655"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Hades rules the underworld.",
+          "sources": [
+            "b42-2655"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Hermes is the messenger god.",
+          "sources": [
+            "b42-2655"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Apollo governs light, music and related arts.",
+          "sources": [
+            "b42-2655"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Codex",
+        "at": "2026-11-10",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The wording explicitly asks the mythology adapted by the theatrical film; it makes no claim about a TV-series episode or an unsupported on-screen sibling statement."
+      }
+    }
+  ]
+}

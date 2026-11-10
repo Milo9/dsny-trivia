@@ -1,0 +1,736 @@
+{
+  "2476": {
+    "sources": [
+      "b39-cauldron"
+    ],
+    "premise": "This asks the literary source of the 1985 Disney feature, not a television series.",
+    "reasons": [
+      "Disney identifies Alexander's Chronicles of Prydain as the acquired screen source.",
+      "Narnia is not the source series named in Disney's rights history.",
+      "Earthsea is not the source series named in Disney's rights history.",
+      "The Dark Is Rising is not the source series named in Disney's rights history."
+    ],
+    "challenge": "Tested the literal source-series identity, rather than whether another series could have fantasy themes; only Prydain is the documented adaptation source.",
+    "distinct": "Source series differs from Taran's identity, Hen Wen's ability, witches' names and film rating."
+  },
+  "2477": {
+    "sources": [
+      "b39-gurgi",
+      "b39-gurgicor"
+    ],
+    "premise": "Repeated dialogue in Gurgi's apple encounter establishes his food-request phrase.",
+    "reasons": [
+      "The transcript repeats munchings and crunchings when Gurgi wants the apple and searches for food.",
+      "Nibbles and bites is not the phrase spoken in the cited repeated requests.",
+      "Snacks and treats is not the phrase spoken in those requests.",
+      "Chompings and stompings is not the repeated phrase; rhyming alone does not match the dialogue."
+    ],
+    "challenge": "Checked exact phrasing, including and as a third word; removed the false two-word constraint. Alternate rhyming phrases do not match the food requests.",
+    "distinct": "Gurgi's catchphrase is separate from naming Taran's companion."
+  },
+  "2478": {
+    "sources": [
+      "b39-budget",
+      "b39-cauldron"
+    ],
+    "premise": "The final question expressly asks what AFI's cited 1985 trade report said about comparative production cost.",
+    "reasons": [
+      "The cited Backstage item identifies it as the most expensive animated feature yet.",
+      "The reported maximum contradicts a lowest-cost interpretation.",
+      "Setting the then-highest cost is a new maximum, not merely matching an earlier record.",
+      "AFI actually reports a cost and identifies the contemporary source, so unreported is contradicted."
+    ],
+    "challenge": "Challenged budget disagreement: Disney's entry reports over $25 million while later accounts cite $44 million. Removed that uncertain number and attributed the historical comparison to the exact AFI-cited report; no box-office, 3D or score claim remains.",
+    "distinct": "Production-cost comparison is distinct from the previously approved PG-rating question."
+  },
+  "2479": {
+    "sources": [
+      "b39-cauldron"
+    ],
+    "premise": "The 1985 feature's original voice credit identifies the performer for Taran.",
+    "reasons": [
+      "Disney credits Grant Bardsley as Taran.",
+      "The single Taran credit is Bardsley, not Corey Burton.",
+      "Rob Paulsen is not the actor assigned Taran in that cast list.",
+      "Will Ryan is not the actor assigned Taran in that cast list."
+    ],
+    "challenge": "Tested voice rather than animation or later adaptations; the named original role has one credited performer among these four.",
+    "distinct": "Performer identity differs from Taran's character name and pig-keeper job."
+  },
+  "2480": {
+    "sources": [
+      "b39-jock",
+      "b39-jockart",
+      "b39-dogs"
+    ],
+    "premise": "The specified 1955 animated Jock is consistently identified as a Scottish terrier.",
+    "reasons": [
+      "The production-drawing account and breed guide identify Jock as a Scottish terrier.",
+      "West Highland is a different terrier breed; the cited character designation is Scottish.",
+      "Cairn is a different breed from Jock's documented Scottish terrier identity.",
+      "Yorkshire is a different breed from Jock's documented Scottish terrier identity."
+    ],
+    "challenge": "Tested Scottish as an accent or geographic adjective rather than breed: the sources explicitly use Scottish terrier as the breed; 1955 context excludes the live-action casting.",
+    "distinct": "Jock's breed differs from Lady's cocker-spaniel breed and the pair Jock/Trusty names."
+  },
+  "2481": {
+    "sources": [
+      "b39-lady"
+    ],
+    "premise": "Disney's synopsis assigns the baby's rat rescue to Tramp, correcting the original Lady premise.",
+    "reasons": [
+      "The synopsis explicitly says Tramp saves the baby from a rat.",
+      "The stated attacker in this rescue is a rat, not a snake.",
+      "The stated attacker is a rat, not a raccoon.",
+      "The stated attacker is a rat, not a hawk."
+    ],
+    "challenge": "Rechecked actor and incident together: Lady's barking is not the fight itself; Tramp fights the rat threatening the baby. No inference from a generic animal encounter is needed.",
+    "distinct": "The nursery attacker is unrelated to Ratigan's rat species despite a shared answer."
+  },
+  "2482": {
+    "sources": [
+      "b39-boris",
+      "b39-dogs"
+    ],
+    "premise": "The pound dog Boris in the 1955 film is a Borzoi, also called Russian wolfhound.",
+    "reasons": [
+      "The guide equates Borzoi with the former Russian wolfhound designation used by the production-art account.",
+      "Siberian Husky is a separate breed and not the designation for Boris.",
+      "Alaskan Malamute is a separate breed and not the designation for Boris.",
+      "German Shepherd is a separate breed and not the designation for Boris."
+    ],
+    "challenge": "Tested whether the Russian accent alone could establish breed; it cannot. The artifact description and independent breed entry supply the actual designation. Removed Russian from stem and the long explanatory correct answer.",
+    "distinct": "Boris's breed differs from Pedro's breed; neither dog's answer solves the other."
+  },
+  "2483": {
+    "sources": [
+      "b39-pedro",
+      "b39-dogs"
+    ],
+    "premise": "Pedro is the Chihuahua seen among the dogs at the pound in the animated film.",
+    "reasons": [
+      "The production-cel description identifies Pedro as a Chihuahua at the pound sequence.",
+      "Dachshund is not Pedro's explicit breed designation.",
+      "Pug is not Pedro's explicit breed designation.",
+      "Terrier does not fit the documented Chihuahua designation."
+    ],
+    "challenge": "Considered whether another pound dog or the similarly typed Tito could be substituted; the stem names Pedro and the film, and the production cel supports exactly that identity.",
+    "distinct": "Pedro's breed is separate from Tito's identity in Oliver and from Boris's Borzoi breed."
+  },
+  "2484": {
+    "sources": [
+      "b39-allan"
+    ],
+    "premise": "Disney's character entry identifies the Robin Hood narrator's bird type and spelling.",
+    "reasons": [
+      "Allan-a-Dale is explicitly a rooster.",
+      "Crow contradicts the rooster designation.",
+      "Owl contradicts the rooster designation.",
+      "Sparrow contradicts the rooster designation."
+    ],
+    "challenge": "Checked the Disney animated character rather than the human folkloric minstrel; the corrected Allan spelling and 1973 context make the referent precise.",
+    "distinct": "Narrator species is separate from Robin's fox species and the sheriff's wolf species."
+  },
+  "2485": {
+    "sources": [
+      "b39-kluck"
+    ],
+    "premise": "Disney identifies the female lady-in-waiting Kluck as a chicken.",
+    "reasons": [
+      "A female chicken is a hen, matching Kluck's character designation.",
+      "Duck is a different bird type from chicken.",
+      "Goose is a different bird type from chicken.",
+      "Peacock is a different bird type from chicken."
+    ],
+    "challenge": "Checked whether hen is being used for an arbitrary female bird: the source explicitly says chicken, making hen the correct familiar type among the species options.",
+    "distinct": "Kluck's species differs from the narrator rooster and the sheriff's vulture soldiers."
+  },
+  "2486": {
+    "sources": [
+      "b39-vultures"
+    ],
+    "premise": "Disney's entry applies vulture to both named sheriff soldiers.",
+    "reasons": [
+      "The entry explicitly identifies both Trigger and Nutsy as vulture soldiers.",
+      "Crows contradicts the two-vulture identification.",
+      "Hawks contradicts the two-vulture identification.",
+      "Ravens contradicts the two-vulture identification."
+    ],
+    "challenge": "Tested the pair rather than one bird alone; the source names both and calls them two vultures.",
+    "distinct": "This tests soldiers' species, not their voice actors, names or Kluck's bird type."
+  },
+  "2487": {
+    "sources": [
+      "b39-robin",
+      "b39-jungle",
+      "b39-aristo"
+    ],
+    "premise": "The three original animated feature credits align on one performer.",
+    "reasons": [
+      "Harris is credited as Little John, Baloo and Thomas O'Malley across the three entries.",
+      "Holloway voices Kaa and Roquefort, rather than the stated trio.",
+      "Sanders voices Shere Khan, not Baloo and the stated trio.",
+      "Buttram voices the sheriff and Napoleon, not the stated trio."
+    ],
+    "challenge": "Checked all three credits independently; a distractor being in one or more of the same films does not satisfy the conjunction of these three roles.",
+    "distinct": "The cross-film performer connection is new beyond character or species identification."
+  },
+  "2488": {
+    "sources": [
+      "b39-sword",
+      "b39-swordafi"
+    ],
+    "premise": "The amorous pursuit happens in Wart's squirrel lesson, distinguished from his fish and sparrow lessons.",
+    "reasons": [
+      "Wart explicitly says he is a squirrel as the female pursues him, then resumes human form.",
+      "Rabbit is not the animal form in the cited pursuit.",
+      "Sparrow is another lesson, but not the female-admirer sequence specified.",
+      "Field mouse is not Wart's form in the cited squirrel pursuit."
+    ],
+    "challenge": "Tried sparrow because Merlin does transform Wart into a bird elsewhere; the lesson's pursuit context and explicit squirrel dialogue exclude it. Removed fish preamble that repeated another question.",
+    "distinct": "Animal form in this scene differs from the first fish lesson, Kronk's language and Up's distracting word."
+  },
+  "2489": {
+    "sources": [
+      "b39-sword",
+      "b39-swordcor"
+    ],
+    "premise": "The question isolates Merlin's illness-causing transformation that wins the duel.",
+    "reasons": [
+      "Merlin identifies himself as a germ caught by Mim, corroborated by the separate film account.",
+      "A flea might transmit illness in reality, but is not the form Merlin says he takes in this scene.",
+      "An ant is not the named winning form.",
+      "A mosquito might transmit illness in reality, but is not the form Merlin names."
+    ],
+    "challenge": "Challenged real-world disease vectors as alternate tiny forms; the literal transformation in the film is a germ, not any insect. The stem no longer reveals Mim's separate dragon answer.",
+    "distinct": "Merlin's final germ form differs from Mim's forbidden transformation; reciprocal stem giveaway removed."
+  },
+  "2490": {
+    "sources": [
+      "b39-sword"
+    ],
+    "premise": "Mim answers the no-dragons reminder by invoking the purple color of her transformation.",
+    "reasons": [
+      "The dialogue specifically contrasts no dragons with her purple dragon excuse.",
+      "Phoenix is not the creature named in the no-dragons exchange.",
+      "Griffin is not the creature named in that exchange.",
+      "Unicorn is not the creature named in that exchange."
+    ],
+    "challenge": "Tested whether Mim had actually banned the creature versus merely being accused of cheating: the reminder and her color-based reply explicitly establish the exception claim. Correct option no longer has a uniquely long color qualifier.",
+    "distinct": "Mim's forbidden creature is separate from the tiny form Merlin uses to defeat her."
+  },
+  "2491": {
+    "sources": [
+      "b39-rescuers"
+    ],
+    "premise": "The original English 1977 cast assigns Bernard's voice to Bob Newhart.",
+    "reasons": [
+      "Disney credits Newhart as Bernard, the custodian.",
+      "Knotts is not the performer credited for Bernard.",
+      "Van Dyke is not the performer credited for Bernard.",
+      "Conway is not the performer credited for Bernard."
+    ],
+    "challenge": "Tested janitor versus performer and original film versus other roles; exact English cast credit excludes all three. Removed television biography so the question stays entirely on film casting.",
+    "distinct": "Bernard's voice actor differs from his albatross pilot and from Bianca's actress."
+  },
+  "2492": {
+    "sources": [
+      "b39-caps",
+      "b39-capscor",
+      "b39-downunder"
+    ],
+    "premise": "The 1990 feature's digital ink-and-paint/compositing workflow is CAPS; animation drawings remained hand made.",
+    "reasons": [
+      "Guinness identifies the feature's digital ink-and-paint system as CAPS, and Disney explains its compositing function.",
+      "The documented ink-and-paint/compositing workflow is CAPS, not RenderMan.",
+      "The documented workflow for this 1990 production is CAPS, not Deep Canvas.",
+      "The documented workflow for this production is CAPS, not Hyperion."
+    ],
+    "challenge": "Tried treating any computer assistance or renderer as satisfying the question. It specifies the ink-and-paint/compositing system throughout this film; sources identify CAPS and expressly retain hand drawing. Removed misleading produced entirely on computer phrasing.",
+    "distinct": "Identifying the system differs from #2578's specific traditional step it replaced; knowing hand-painting alone does not identify CAPS."
+  },
+  "2493": {
+    "sources": [
+      "b39-rescuers",
+      "b39-aristo"
+    ],
+    "premise": "Both original feature casts credit Eva Gabor for the two named characters.",
+    "reasons": [
+      "Gabor is credited as Bianca and Duchess.",
+      "Zsa Zsa Gabor is not credited for either of these named roles.",
+      "Baddeley is Madame Bonfamille in The Aristocats, not Duchess or Bianca.",
+      "Kulp is Frou-Frou in The Aristocats, not Duchess or Bianca."
+    ],
+    "challenge": "Checked the two Gabor sisters explicitly and both film credits; similarly surnamed Zsa Zsa cannot satisfy the conjunction. Reversed the question to ask the performer, avoiding the already-tested mother-cat name.",
+    "distinct": "Cross-film voice connection adds a fact beyond #48's Duchess identity; no duplicate mother-cat recall."
+  },
+  "2494": {
+    "sources": [
+      "b39-dobermans"
+    ],
+    "premise": "Disney identifies Sykes's two henchmen as Dobermans.",
+    "reasons": [
+      "The named pair is explicitly designated Doberman, i.e. Doberman Pinscher.",
+      "Rottweilers is not the pair's documented breed.",
+      "German Shepherds is not the pair's documented breed.",
+      "Pit Bulls is not the pair's documented breed."
+    ],
+    "challenge": "Checked both dogs, not a generic intimidating-dog stereotype; the institutional entry names both under Doberman.",
+    "distinct": "Sykes's guard-dog breed differs from the identities and performers of Fagin's gang."
+  },
+  "2495": {
+    "sources": [
+      "b39-oliver"
+    ],
+    "premise": "The feature's original voice-cast list pairs Tito with Cheech Marin.",
+    "reasons": [
+      "Disney credits Cheech Marin as Tito.",
+      "Tommy Chong is not Tito's credited performer despite the comedy partnership.",
+      "George Lopez is not credited as Tito in this film.",
+      "Paul Rodriguez is not credited as Tito in this film."
+    ],
+    "challenge": "Tried the comedy-partner confusion and later Latino voice performers; only the exact Tito credit supports Marin.",
+    "distinct": "Performer identity adds information beyond #865's identification of the Chihuahua as Tito."
+  },
+  "2496": {
+    "sources": [
+      "b39-oliver"
+    ],
+    "premise": "Disney's voice cast identifies Sykes's performer.",
+    "reasons": [
+      "Robert Loggia is credited as Sykes.",
+      "Robert De Niro is not the actor credited for Sykes.",
+      "Dennis Hopper is not the actor credited for Sykes.",
+      "James Caan is not the actor credited for Sykes."
+    ],
+    "challenge": "Checked Loggia versus the similarly named Robert option and other plausible crime-film actors; only the credited voice counts.",
+    "distinct": "Voice performer differs from Sykes's character name and occupation."
+  },
+  "2497": {
+    "sources": [
+      "b39-detective"
+    ],
+    "premise": "Ratigan's original feature voice credit is Vincent Price.",
+    "reasons": [
+      "Disney credits Vincent Price as Ratigan.",
+      "Christopher Lee is not Ratigan's credited performer.",
+      "Peter Cushing is not Ratigan's credited performer.",
+      "Boris Karloff is not Ratigan's credited performer."
+    ],
+    "challenge": "Tested shared horror-film associations; genre reputation alone cannot select an actor, but the exact cast credit does.",
+    "distinct": "Ratigan's performer is distinct from his rat species, villain role and Big Ben confrontation."
+  },
+  "2498": {
+    "sources": [
+      "b39-detective",
+      "b39-titus"
+    ],
+    "premise": "Disney names the source book and its publisher confirms the title.",
+    "reasons": [
+      "Basil of Baker Street is the exact source title identified by Disney.",
+      "Sherlock Mouse does not match the documented source-book title.",
+      "The Mouse Detective does not match the documented source-book title.",
+      "Basil Baker's Mysteries does not match the documented source-book title."
+    ],
+    "challenge": "Distinguished a book title from the modern series branding The Great Mouse Detective and the separate Sherlock Holmes inspiration; only the exact source title fits.",
+    "distinct": "Book title differs from author #2499 and Holmes inspiration #534."
+  },
+  "2499": {
+    "sources": [
+      "b39-detective",
+      "b39-titus"
+    ],
+    "premise": "The original source books are by Eve Titus; modern continuation authors are outside the stated original scope.",
+    "reasons": [
+      "Publisher credits Eve Titus for the original book, matching Disney's source attribution.",
+      "Margery Sharp is not credited as creator of Basil; Disney's Rescuers attribution is a separate work.",
+      "Lloyd Alexander is not Basil's credited creator; his Prydain books are a separate source.",
+      "Dodie Smith is not Basil's credited creator."
+    ],
+    "challenge": "Challenged the continuing series' later authorship: original books wording correctly identifies Titus without denying Cathy Hapka's later contributions. Book title alone does not name its author.",
+    "distinct": "Original creator differs from the book-title and fictional detective-model facts."
+  },
+  "2500": {
+    "sources": [
+      "b39-fidget"
+    ],
+    "premise": "Olivia's description and Basil's identification tie the peg leg to Fidget.",
+    "reasons": [
+      "AFI describes the abductor as a bat with a peg leg and names him Fidget.",
+      "A metal spring is not the leg replacement described for Fidget.",
+      "A roller skate is not the described replacement.",
+      "A mechanical claw is not the described replacement."
+    ],
+    "challenge": "Avoided inferring that one physical feature excludes every other feature: the final question asks specifically about a leg replacement. The peg described in the source excludes other replacements in that position.",
+    "distinct": "The prosthesis fact differs from #1115's identification of the bat as Fidget."
+  },
+  "2501": {
+    "sources": [
+      "b39-frou",
+      "b39-aristoplot"
+    ],
+    "premise": "The named horse is Frou-Frou, associated with Madame's household and carriage.",
+    "reasons": [
+      "Disney names Frou-Frou as the film's horse; the illustrated dialogue establishes the household context.",
+      "Philippe does not match the documented name of this horse.",
+      "Samson does not match this horse's documented name.",
+      "Major does not match this horse's documented name."
+    ],
+    "challenge": "Checked whether Roquefort owns the horse: removed elderly and ally phrasing, and used the household association supported by the carriage dialogue. Other Disney horse names do not fit.",
+    "distinct": "Horse name differs from Madame's butler Edgar and mouse Roquefort."
+  },
+  "2502": {
+    "sources": [
+      "b39-houndart",
+      "b39-aristoplot",
+      "b39-dogs"
+    ],
+    "premise": "The two sources separately designate Napoleon as Bloodhound and Lafayette as Basset Hound.",
+    "reasons": [
+      "Napoleon is explicitly the Bloodhound.",
+      "Basset Hound is Lafayette's designation, not Napoleon's.",
+      "Beagle is not Napoleon's documented breed.",
+      "Foxhound is not Napoleon's documented breed."
+    ],
+    "challenge": "Challenged the swap between the two dogs; separate names and designs support Bloodhound for Napoleon. Sharing Bloodhound with Copper does not establish a duplicate fact.",
+    "distinct": "Napoleon's breed differs from Lafayette's and from Copper's breed in another film."
+  },
+  "2503": {
+    "sources": [
+      "b39-houndart",
+      "b39-aristoplot",
+      "b39-dogs"
+    ],
+    "premise": "Lafayette is the Basset Hound in the pair.",
+    "reasons": [
+      "The sources explicitly identify Lafayette as a Basset Hound.",
+      "Bloodhound belongs to Napoleon in the named pair.",
+      "Dachshund is not Lafayette's documented breed despite short-legged resemblance.",
+      "Corgi is not Lafayette's documented breed."
+    ],
+    "challenge": "Tried short legs as a reason to defend Dachshund or Corgi; the evidence is the explicit character breed designation, not just a visual guess. Checked Napoleon/Lafayette order.",
+    "distinct": "The second dog's breed requires a separate identity fact from Napoleon's."
+  },
+  "2504": {
+    "sources": [
+      "b39-journey",
+      "b39-terravator",
+      "b39-terravatorcor",
+      "b39-subs",
+      "b39-raging",
+      "b39-indy"
+    ],
+    "premise": "The queue elevators precede a separate subterranean ride vehicle on Journey.",
+    "reasons": [
+      "The two walkthroughs identify Journey's terravators and subsequent vehicle boarding; Disney identifies the underground vehicle ride.",
+      "20,000 Leagues uses small submarines for Atlantis exploration, not this elevator-to-excavator sequence.",
+      "Raging Spirits is the ceremonial-ruins coaster, not the subterranean Nemo ride.",
+      "Indiana Jones Adventure explores a temple in Lost River Delta, not Nemo's subterranean vehicle base."
+    ],
+    "challenge": "Tested the original terravator-as-ride-vehicle premise and corrected it: these are elevators before boarding. Both walkthroughs distinguish the stages, corroborated by Disney's ride vehicle description.",
+    "distinct": "Queue/attraction identity adds a fact beyond naming Mysterious Island's theme or Mount Prometheus."
+  },
+  "2505": {
+    "sources": [
+      "b39-subs",
+      "b39-journey",
+      "b39-searider",
+      "b39-aquatopia"
+    ],
+    "premise": "The official attraction story names the search for Atlantis and the small submarines.",
+    "reasons": [
+      "The official 20,000 Leagues story explicitly sends guests with Captain Nemo searching for Atlantis.",
+      "Journey uses subterranean vehicles through underground realms rather than the stated submarine mission.",
+      "SeaRider is the fish-size Nemo/Dory encounter in Port Discovery, not Captain Nemo's Atlantis search.",
+      "Aquatopia is the shallow-pool hydro-glider ride, not an Atlantis submarine mission."
+    ],
+    "challenge": "Distinguished Captain Nemo from the Pixar fish Nemo: small submarines plus Atlantis and Mysterious Island identify the Jules Verne attraction. Removed unsupported Neptune/searchlight embellishments.",
+    "distinct": "Tokyo attraction identity differs from #2406's 1954 film special-effects credit and #1362's port identification."
+  },
+  "2506": {
+    "sources": [
+      "b39-lagoon",
+      "b39-lagooncor",
+      "b39-ports"
+    ],
+    "premise": "Two illustrated park accounts agree on the lagoon's proper name; official overview confirms the caldera setting.",
+    "reasons": [
+      "Both park accounts identify the caldera water as Vulcania Lagoon.",
+      "Mermaid Lagoon is the separate Ariel-themed port in the official overview, not this water body's name.",
+      "Discovery Bay does not match the agreed proper name Vulcania Lagoon.",
+      "Prometheus Harbor does not match the agreed lagoon name; Mount Prometheus is the volcano context."
+    ],
+    "challenge": "Challenged naming a whole port versus its water body: final wording asks for the lagoon inside the caldera. Independent accounts agree, with official support for the caldera context; primary naming limitation is disclosed.",
+    "distinct": "Water-body proper name is distinct from the volcano icon and the port name."
+  },
+  "2507": {
+    "sources": [
+      "b39-ports"
+    ],
+    "premise": "The resort explicitly locates Lost River Delta's fictional setting in 1930s Central America.",
+    "reasons": [
+      "Official overview specifies Central American jungles and ancient ruins.",
+      "Southeast Asia contradicts the specified Central American setting.",
+      "Egypt contradicts the specified Central American setting.",
+      "Sub-Saharan Africa contradicts the specified Central American setting."
+    ],
+    "challenge": "Tried generic jungle/temple similarities as support for Asia or Africa; the question asks this designed setting, and the official geographic identification is explicit.",
+    "distinct": "Geographic inspiration differs from port and ride names."
+  },
+  "2508": {
+    "sources": [
+      "b39-raging",
+      "b39-indy",
+      "b39-rapids"
+    ],
+    "premise": "Raging Spirits is the Lost River Delta coaster through ruins; Indiana Jones shares that port.",
+    "reasons": [
+      "Disney identifies Raging Spirits as the coaster through Lost River Delta ceremonial ruins.",
+      "Roaring Rapids is a Shanghai rafting ride, not this Tokyo coaster.",
+      "Wandering Oaken's Sliding Sleighs does not match the uniquely named Lost River Delta ruins coaster.",
+      "Big Grizzly Mountain Runaway Mine Cars does not match that identified Tokyo coaster."
+    ],
+    "challenge": "Tried the similar Raging/Roaring names: the evidence assigns coaster/ruins/Tokyo to Raging Spirits and rafting/Shanghai to Roaring Rapids. No same-day operating-status claim is required.",
+    "distinct": "Ruins-coaster identity differs from the Indiana Jones subtitle and region facts."
+  },
+  "2509": {
+    "sources": [
+      "b39-indy"
+    ],
+    "premise": "The official Tokyo attraction's full title supplies its exact subtitle.",
+    "reasons": [
+      "The official title is Indiana Jones Adventure: Temple of the Crystal Skull.",
+      "Temple of the Forbidden Eye is not the subtitle on the Tokyo title.",
+      "Temple of Doom is not the official Tokyo attraction subtitle.",
+      "Curse of the Lost Idol is not the official Tokyo attraction subtitle."
+    ],
+    "challenge": "Checked movie-versus-ride confusion and the California subtitle; the requested Tokyo attraction title is explicit. Temporary closure does not alter its name.",
+    "distinct": "Tokyo subtitle is a separate location-specific fact from California's Forbidden Eye subtitle."
+  },
+  "2510": {
+    "sources": [
+      "b39-attractions",
+      "b39-ports"
+    ],
+    "premise": "Both named rides are explicitly cataloged under Arabian Coast.",
+    "reasons": [
+      "The official directory places both rides in Arabian Coast.",
+      "Mermaid Lagoon is a distinct Ariel-themed port and is not the directory location of these rides.",
+      "Lost River Delta is not the listed location of these two rides.",
+      "Mysterious Island is not their listed location."
+    ],
+    "challenge": "Tried using general film associations alone; both actual attraction listings agree on the port. Corrected Sindbad's official spelling.",
+    "distinct": "This port's attraction grouping differs from the film Aladdin's city, songs or cast."
+  },
+  "2511": {
+    "sources": [
+      "b39-searider",
+      "b39-aquatopia",
+      "b39-subs",
+      "b39-triton"
+    ],
+    "premise": "The final question fixes the historic 2017 opening and fish-size submersible premise.",
+    "reasons": [
+      "Disney's SeaRider entry gives May 12, 2017, Port Discovery and the shrinking submersible.",
+      "Aquatopia opened in 2001 and spins water vehicles rather than the fish-size submersible story.",
+      "20,000 Leagues is the Mysterious Island submarine exploration, not this 2017 Port Discovery opening.",
+      "Mermaid Lagoon Theater is not the named 2017 Port Discovery submersible attraction."
+    ],
+    "challenge": "Tried the other submarine attraction and nearby water ride; the combination of 2017 opening, Port Discovery and fish-size shrink excludes them. Removed Finding Nemo title leakage.",
+    "distinct": "Opening story identifies a distinct ride, separate from Nemo fish facts and Aquatopia."
+  },
+  "2512": {
+    "sources": [
+      "b39-aquatopia",
+      "b39-searider",
+      "b39-raging",
+      "b39-rapids"
+    ],
+    "premise": "Aquatopia's documented vehicle behavior and shallow pool establish the attraction.",
+    "reasons": [
+      "Disney describes Aquatopia's vehicles spinning through the shallow pool, rocks and whirlpools.",
+      "SeaRider uses the shrinking submersible experience, not this open shallow-pool course.",
+      "Raging Spirits is a coaster in Lost River Delta, not this Port Discovery water vehicle course.",
+      "Roaring Rapids is the Shanghai raft ride, not this Port Discovery pool ride."
+    ],
+    "challenge": "Challenged whether any splash ride could fit: the shallow pool and twirling vehicles, together with Port Discovery, uniquely fit Aquatopia. Removed unsupported Autopia-reimagining claim.",
+    "distinct": "Ride mechanics and name differ from the neighboring SeaRider attraction."
+  },
+  "2513": {
+    "sources": [
+      "b39-ports",
+      "b39-triton"
+    ],
+    "premise": "The official overview identifies Ariel's undersea home as Mermaid Lagoon, with King Triton Castle in the same port.",
+    "reasons": [
+      "The official overview names Mermaid Lagoon as Ariel's undersea kingdom.",
+      "Arabian Coast is Genie's Arabian Nights port, not Ariel's home.",
+      "American Waterfront represents New York/Cape Cod harbors, not Ariel's kingdom.",
+      "Port Discovery is the futuristic marina, not Ariel's kingdom."
+    ],
+    "challenge": "Checked literal location versus a broad sea theme: all ports have water associations but only Mermaid Lagoon is identified as Ariel's home. Removed The Little Mermaid title overlap.",
+    "distinct": "Port identity differs from indoor subarea Triton's Kingdom."
+  },
+  "2514": {
+    "sources": [
+      "b39-triton"
+    ],
+    "premise": "Disney's entry identifies Triton's Kingdom and lists both rides.",
+    "reasons": [
+      "The entry explicitly includes Jumpin' Jellyfish and Blowfish Balloon Race in Triton's Kingdom.",
+      "Ariel's Grotto is not the area name assigned to this ride grouping.",
+      "Neptune's Court is not the area name assigned to this ride grouping.",
+      "Coral Cove is not the area name assigned to this ride grouping."
+    ],
+    "challenge": "Tested confusion between a playground, individual ride and indoor area: final wording asks the named area containing both specified attractions.",
+    "distinct": "Indoor area is a finer and separate fact from the Mermaid Lagoon port identity."
+  },
+  "2515": {
+    "sources": [
+      "b39-rapids",
+      "b39-raging",
+      "b39-camp"
+    ],
+    "premise": "Disney dates Roaring Rapids' Adventure Isle rafting opening to June 16, 2016.",
+    "reasons": [
+      "Roaring Rapids is explicitly the Adventure Isle rafting attraction opened in 2016.",
+      "Raging Spirits is Tokyo's coaster, not the Shanghai rafting ride.",
+      "Camp Discovery has rope courses and digging, not the specified rafting attraction.",
+      "Soaring Over the Horizon is not the rafting attraction named in the Disney entry."
+    ],
+    "challenge": "Checked the near-homophone Raging Spirits and opening-day peers; the mode rafting and exact venue establish one answer.",
+    "distinct": "Shanghai rafting identity differs from the beast and mountain names."
+  },
+  "2516": {
+    "sources": [
+      "b39-rapids",
+      "b39-apucor"
+    ],
+    "premise": "The Roaring Rapids cavern encounter is named Q'aráq in Disney's own attraction entry.",
+    "reasons": [
+      "Disney explicitly names the reptilian cavern creature Q'aráq.",
+      "Shiriki Utundu is not the name Disney assigns the Roaring Rapids creature.",
+      "Albert is not the creature's documented name.",
+      "Camellia Falco is not the creature's documented name."
+    ],
+    "challenge": "Tested fictional mountain versus creature and other theme-park character names: the final answers are character names and only Q'aráq matches the explicit ride encounter.",
+    "distinct": "Beast identity differs from Roaring Mountain's local name, which is no longer disclosed in this stem."
+  },
+  "2517": {
+    "sources": [
+      "b39-apu",
+      "b39-apucor"
+    ],
+    "premise": "Disney labels Apu Taku at Shanghai's rapids; the ride account explains it as Roaring Mountain's local name.",
+    "reasons": [
+      "Disney's map detail names Apu Taku; the ride description explicitly equates it with Roaring Mountain.",
+      "Vulcania is not the identified local name of this Shanghai mountain.",
+      "Mount Prometheus is not the local name Apu Taku established for Roaring Mountain.",
+      "Grizzly Peak is not this mountain's documented local name."
+    ],
+    "challenge": "Checked Q'aráq as a beast rather than a mountain and the foreign park mountain alternatives; Apu Taku is the name in Disney's map and the separate mountain explanation.",
+    "distinct": "Mountain naming requires a separate fact from the ride name and its beast."
+  },
+  "2518": {
+    "sources": [
+      "b39-camp",
+      "b39-rapids"
+    ],
+    "premise": "Camp Discovery's entry explicitly pairs the rope course with an archaeological dig.",
+    "reasons": [
+      "Disney lists both elevated rope-course exploration and archaeological digging at Camp Discovery.",
+      "Roaring Rapids is the raft attraction rather than the rope-course/dig activity.",
+      "Soaring Over the Horizon is not the attraction assigned this paired activity in the entry.",
+      "Explorer's Canoes is not the attraction assigned this rope-course/dig pairing."
+    ],
+    "challenge": "Challenged whether all are broadly exploration adventures; the concrete paired activities, not just theme, select Camp Discovery.",
+    "distinct": "Hands-on exploration identity differs from rafting and mountain/beast lore."
+  },
+  "2519": {
+    "sources": [
+      "b39-gardens",
+      "b39-carousel"
+    ],
+    "premise": "The historical opening-day attraction list places Dumbo and Fantasia Carousel in Gardens of Imagination.",
+    "reasons": [
+      "Disney explicitly lists both in Gardens of Imagination on June 16, 2016.",
+      "Adventure Isle is not the opening-day land assigned to these two attractions.",
+      "Mickey Avenue is not the opening-day land assigned to this pair.",
+      "Treasure Cove is not the opening-day land assigned to this pair."
+    ],
+    "challenge": "Removed first-ever and Chinese-style-garden wording; verified the specific dated pair instead. No garden keyword hints the answer and no current operational assertion is needed.",
+    "distinct": "Opening-day land identity differs from the carousel's horse count."
+  },
+  "2520": {
+    "sources": [
+      "b39-tea"
+    ],
+    "premise": "Disney identifies the named restaurant's location, service type and poet inspiration.",
+    "reasons": [
+      "The entry identifies Wandering Moon Teahouse in Gardens of Imagination and its tribute to poets and landscapes.",
+      "Tangled Tree Tavern is not the restaurant identified by that location and inspiration.",
+      "Barbossa's Bounty is not the restaurant identified by that combination.",
+      "Explorer's Club Restaurant is not the restaurant identified by that combination."
+    ],
+    "challenge": "Tested a restaurant name inferred merely from wandering: removed that adjective from the clue; the documented location and creative inspiration still select one restaurant.",
+    "distinct": "Restaurant identity differs from the land and carousel attraction facts."
+  },
+  "2521": {
+    "sources": [
+      "b39-carousel",
+      "b39-carouselcor"
+    ],
+    "premise": "Two official Disney sources independently state that the opening carousel had 62 flying horses.",
+    "reasons": [
+      "Both the attraction entry and Parks Blog's art paragraph give 62 horses.",
+      "50 conflicts with the explicit count of 62.",
+      "72 conflicts with the horse count; it is not substituted for the number of horses.",
+      "48 conflicts with the explicit count of 62."
+    ],
+    "challenge": "Challenged counting chariots or confusing the palette's 72 colors with horses: the question asks flying horses created for the opening, and both official sources independently give 62.",
+    "distinct": "Exact opening horse count differs from the carousel's land identity."
+  },
+  "2522": {
+    "sources": [
+      "b39-toyrides"
+    ],
+    "premise": "The official Shanghai attraction guide assigns the U-shaped forward/backward half-pipe to Rex's Racer.",
+    "reasons": [
+      "The guide explicitly describes Rex's Racer's U-shaped track and bidirectional travel.",
+      "Slinky Dog Spin circles in spirals rather than traversing the towering half-pipe.",
+      "Woody's Roundup swings pony carts around a corral, not a U-shaped coaster track.",
+      "Buzz Lightyear Planet Rescue is the shooting attraction, not the U-shaped coaster."
+    ],
+    "challenge": "Tested another moving ride rather than using Rex/Trixie as a name giveaway; the motion and track shape distinguish the alternatives. Corrected the Shanghai Buzz distractor's title.",
+    "distinct": "Track/attraction identification adds new information beyond Rex's film identity."
+  },
+  "2523": {
+    "sources": [
+      "b39-toyrides"
+    ],
+    "premise": "The official guide specifically assigns pony carts and a horse corral to Woody's Roundup.",
+    "reasons": [
+      "The guide describes Woody's Roundup as a pony-cart corral ride.",
+      "Rex's Racer uses the half-pipe rather than pony-drawn corral carts.",
+      "Slinky Dog Spin uses the dog/spiral ride rather than pony carts.",
+      "Jessie's Critter Carousel is California Adventure's carousel, not Shanghai's pony-cart corral ride."
+    ],
+    "challenge": "Challenged the fictional TV-show clue that could be solved from #1023; removed it entirely. The final question requires Shanghai ride knowledge and the guide distinguishes its mechanism from the other rides.",
+    "distinct": "Shanghai pony-cart attraction differs from the same-named in-film television program."
+  },
+  "2524": {
+    "sources": [
+      "b39-tree",
+      "b39-parislist"
+    ],
+    "premise": "The resort describes La Cabane des Robinson as the shipwrecked family's Adventureland treehouse.",
+    "reasons": [
+      "The official attraction page identifies La Cabane des Robinson as the treehouse.",
+      "Le Passage Enchanté d'Aladdin is separately named as the Aladdin passage, not the documented treehouse.",
+      "La Tanière du Dragon is a separately named dragon attraction, not this family treehouse.",
+      "Le Château de la Belle au Bois Dormant is the separately named castle, not this treehouse."
+    ],
+    "challenge": "Removed Robinson from the English clue and replaced inaccurate/unaccented invented distractor titles with real French attraction names. The official title plus treehouse description establishes the answer.",
+    "distinct": "Treehouse name differs from the film's type of home and other Paris attractions."
+  }
+}

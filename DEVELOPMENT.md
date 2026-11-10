@@ -1,4 +1,4 @@
-# Development and release notes — v1.46
+# Development and release notes — v1.47
 
 This remains a static app. There is no build step. npm dependencies are for
 verification only; production uses the Firebase compat CDN scripts.
@@ -70,8 +70,8 @@ offline after an initial online visit and cache installation. `sw.js` caches onl
 same-origin app assets and questions; database requests remain network-only.
 The service worker never caches the admin page or update probes.
 
-There are 1,856 active questions plus 184 preserved retired duplicates after the
-first thirty-six sequential audit batches. See questions/retired.json for the retained
+There are 1,855 active questions plus 185 preserved retired duplicates after all
+forty-two sequential audit batches. See questions/retired.json for the retained
 snapshots and replacement IDs. Retired IDs must not be reused. Optional question metadata:
 
 ```json
@@ -85,8 +85,9 @@ snapshots and replacement IDs. Retired IDs must not be reused. Optional question
 ```
 
 Fact IDs must be unique across active questions. Sources must be HTTPS. Seven
-active questions include verified explanations and links; adding metadata is
-incremental, not a claim that all 2,037 facts were independently reverified.
+active questions include verified explanations and links. All 1,855 active questions
+now have current manual review and four-option evidence; explanations and links
+embedded in the playable question objects remain incremental metadata.
 The admin page exports difficulty recommendations once a question has at least
 20 attempts: 80%+ correct suggests easy, 45%+ medium, otherwise hard. These are
 review suggestions, not automatic changes. Existing labels remain editorial
@@ -128,16 +129,16 @@ versions. `npm audit` reported zero vulnerabilities after installing them.
 
 ## Deployment
 
-Release v1.46 publishes completed question-audit batches 25 through 36 and the
-completed batch 17 follow-up. Current approval is 1,576 of 1,856 active questions;
-the remaining 280 are the disclosed legacy backlog. Duplicate removals retain
+Release v1.47 publishes completed question-audit batches 37 through 42.
+Current approval is 1,855 of 1,855 active questions, with no remaining legacy
+verification backlog or open findings. Duplicate removals retain
 their historical snapshots in `questions/retired.json`. This release changes no
 Firestore rules or player data.
 
-Local release verification on November 9, 2026 passed the corpus and audit gates,
-48 JavaScript tests, 76 Python tests, both isolated browser suites (150 checks),
-and 10 demo Firestore emulator tests. JavaScript and emulator tests also passed
-using Node 24.22.2. The version and offline cache are synchronized to v1.46.
+The version and offline cache are synchronized to v1.47. Release verification
+results are recorded in audit/runs/release-1.47-notes.md. The next question audit
+work follows new content, new concerns, or scheduled rechecks; the sequential
+queue has no remaining unaudited chunk.
 
 No production data migration, app publishing, or rule deployment is performed by
 tests. App deployment uses `deploy.ps1`; rules require a separate authenticated
