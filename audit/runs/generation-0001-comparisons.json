@@ -1,0 +1,307 @@
+[
+  {
+    "finding": {
+      "id": "duplicate-77494db80a37efd85163",
+      "kind": "duplicate",
+      "questionIds": [
+        2674,
+        2675
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "77494db80a37efd85163697a9ff980d1a24e3ff2db3ca3f9c1a5fc87f93decc5",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": {
+        "signature": "77494db80a37efd85163697a9ff980d1a24e3ff2db3ca3f9c1a5fc87f93decc5",
+        "questionIds": [
+          2674,
+          2675
+        ],
+        "status": "accepted",
+        "at": "2026-11-10",
+        "reviewer": "Codex",
+        "reason": "Different family relationships: Sabino is Asha's grandfather and Sakina is her mother. Neither name or relationship answers the other question; all options were compared.",
+        "reference": "audit/runs/generation-0001-coverage.json",
+        "history": []
+      }
+    },
+    "questions": [
+      {
+        "id": 2674,
+        "question": "In Wish (2023), what is the name of Asha's grandfather?",
+        "answers": [
+          "Sabino",
+          "Magnifico",
+          "Simon",
+          "Gabo"
+        ],
+        "difficulty": "medium",
+        "category": "characters",
+        "factId": "wish.asha-grandfather",
+        "film": "Wish",
+        "explanation": "Sabino is Asha's grandfather.",
+        "source": "https://d23.com/meet-the-characters-of-disney-animations-wish/",
+        "verifiedAt": "2026-11-10"
+      },
+      {
+        "id": 2675,
+        "question": "In Wish (2023), what is the name of Asha's mother?",
+        "answers": [
+          "Sakina",
+          "Amaya",
+          "Dahlia",
+          "Bazeema"
+        ],
+        "difficulty": "medium",
+        "category": "characters",
+        "factId": "wish.asha-mother",
+        "film": "Wish",
+        "explanation": "Sakina is Asha's mother.",
+        "source": "https://d23.com/meet-the-characters-of-disney-animations-wish/",
+        "verifiedAt": "2026-11-10"
+      }
+    ]
+  },
+  {
+    "finding": {
+      "id": "duplicate-ba1a2edb21f86df452a2",
+      "kind": "duplicate",
+      "questionIds": [
+        2354,
+        2684
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "ba1a2edb21f86df452a2b29c7f9694a7b728d80852729e1f318de7a0bfd482ee",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": {
+        "signature": "ba1a2edb21f86df452a2b29c7f9694a7b728d80852729e1f318de7a0bfd482ee",
+        "questionIds": [
+          2354,
+          2684
+        ],
+        "status": "accepted",
+        "at": "2026-11-10",
+        "reviewer": "Codex",
+        "reason": "New York is a shared location, but Roy Disney's 1953 financing trip and Bolt's accidental shipment are independent historical and fictional events.",
+        "reference": "audit/runs/generation-0001-coverage.json",
+        "history": []
+      }
+    },
+    "questions": [
+      {
+        "id": 2354,
+        "question": "After Herb Ryman finished the hand-drawn Disneyland presentation map in 1953, Roy Disney took it to which city to help secure financing from network partner ABC?",
+        "answers": [
+          "New York",
+          "Chicago",
+          "Washington, D.C.",
+          "San Francisco"
+        ],
+        "difficulty": "hard",
+        "category": "walt"
+      },
+      {
+        "id": 2684,
+        "question": "In Bolt (2008), to which city is Bolt accidentally shipped from his Hollywood soundstage?",
+        "answers": [
+          "New York",
+          "Chicago",
+          "Seattle",
+          "Miami"
+        ],
+        "difficulty": "medium",
+        "category": "movies",
+        "factId": "bolt.accidental-shipping-destination",
+        "film": "Bolt",
+        "explanation": "Bolt is shipped to New York City before beginning his cross-country return.",
+        "source": "https://d23.com/a-to-z/bolt-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ]
+  },
+  {
+    "finding": {
+      "id": "duplicate-cabf798d2a9326fa8f52",
+      "kind": "duplicate",
+      "questionIds": [
+        982,
+        2688
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "cabf798d2a9326fa8f5249d0198e7b4cd42d508e24a711351f312799a3f33ff8",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": {
+        "signature": "cabf798d2a9326fa8f5249d0198e7b4cd42d508e24a711351f312799a3f33ff8",
+        "questionIds": [
+          982,
+          2688
+        ],
+        "status": "accepted",
+        "at": "2026-11-10",
+        "reviewer": "Codex",
+        "reason": "Pearl names a cruise loyalty tier in 982 and a fictional farm owner in 2688. Unrelated entities and facts despite matching answer text.",
+        "reference": "audit/runs/generation-0001-coverage.json",
+        "history": []
+      }
+    },
+    "questions": [
+      {
+        "id": 982,
+        "question": "What Castaway Club tier was introduced above Platinum in 2023?",
+        "answers": [
+          "Pearl",
+          "Diamond",
+          "Emerald",
+          "Captain"
+        ],
+        "difficulty": "hard",
+        "category": "cruise"
+      },
+      {
+        "id": 2688,
+        "question": "In Home on the Range (2004), who owns the dairy farm the animals try to save?",
+        "answers": [
+          "Pearl",
+          "Maggie",
+          "Grace",
+          "Mrs. Caloway"
+        ],
+        "difficulty": "medium",
+        "category": "characters",
+        "factId": "home-on-the-range.farm-owner",
+        "film": "Home on the Range",
+        "explanation": "Pearl owns the farm; Maggie, Grace and Mrs. Caloway are the cows.",
+        "source": "https://d23.com/a-to-z/home-on-the-range-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ]
+  },
+  {
+    "finding": {
+      "id": "duplicate-ddf8555910d7cc1629c0",
+      "kind": "duplicate",
+      "questionIds": [
+        2613,
+        2693
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "ddf8555910d7cc1629c00f73e1816f1734f78c57fdaabdabc0f0ad3ed13d14af",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": {
+        "signature": "ddf8555910d7cc1629c00f73e1816f1734f78c57fdaabdabc0f0ad3ed13d14af",
+        "questionIds": [
+          2613,
+          2693
+        ],
+        "status": "accepted",
+        "at": "2026-11-10",
+        "reviewer": "Codex",
+        "reason": "Separate cast credits: Martin Short voices BEN, while Joseph Gordon-Levitt voices teenage Jim. Learning either actor-character attribution does not establish the other.",
+        "reference": "audit/runs/generation-0001-reviews.json",
+        "history": []
+      }
+    },
+    "questions": [
+      {
+        "id": 2613,
+        "question": "Who voices the robot B.E.N. in the original English-language Treasure Planet (2002)?",
+        "answers": [
+          "Martin Short",
+          "Robin Williams",
+          "Eddie Murphy",
+          "John Goodman"
+        ],
+        "difficulty": "medium",
+        "category": "movies"
+      },
+      {
+        "id": 2693,
+        "question": "Who voices the teenage Jim Hawkins in the original English-language Treasure Planet (2002)?",
+        "answers": [
+          "Joseph Gordon-Levitt",
+          "Martin Short",
+          "David Hyde Pierce",
+          "Brian Murray"
+        ],
+        "difficulty": "medium",
+        "category": "movies",
+        "factId": "treasure-planet.jim-voice",
+        "film": "Treasure Planet",
+        "explanation": "Joseph Gordon-Levitt voices teenage Jim; Austin Majors voices young Jim.",
+        "source": "https://d23.com/a-to-z/treasure-planet-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ]
+  },
+  {
+    "finding": {
+      "id": "duplicate-fc6f4c8653beb06d02f2",
+      "kind": "duplicate",
+      "questionIds": [
+        2052,
+        2680
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "fc6f4c8653beb06d02f26e3e9c259c53a94ffc274addfdcecf713af58a72b36d",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": {
+        "signature": "fc6f4c8653beb06d02f26e3e9c259c53a94ffc274addfdcecf713af58a72b36d",
+        "questionIds": [
+          2052,
+          2680
+        ],
+        "status": "accepted",
+        "at": "2026-11-10",
+        "reviewer": "Codex",
+        "reason": "Wilbur is an albatross in The Rescuers Down Under and a human time traveler in Meet the Robinsons. Different characters, films and tested actions.",
+        "reference": "audit/runs/generation-0001-coverage.json",
+        "history": []
+      }
+    },
+    "questions": [
+      {
+        "id": 2052,
+        "question": "In The Rescuers Down Under, what albatross pilot flies Bernard and Miss Bianca to Australia on behalf of the Rescue Aid Society?",
+        "answers": [
+          "Wilbur",
+          "Orville",
+          "Marahute",
+          "Frank"
+        ],
+        "difficulty": "medium",
+        "category": "characters"
+      },
+      {
+        "id": 2680,
+        "question": "In Meet the Robinsons (2007), which boy takes Lewis into the future?",
+        "answers": [
+          "Wilbur",
+          "Goob",
+          "Carl",
+          "Uncle Art"
+        ],
+        "difficulty": "easy",
+        "category": "characters",
+        "factId": "meet-the-robinsons.wilbur-time-travel-companion",
+        "film": "Meet the Robinsons",
+        "explanation": "Wilbur is the boy who brings Lewis forward in time to meet the Robinson family.",
+        "source": "https://d23.com/a-to-z/meet-the-robinsons-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ]
+  }
+]

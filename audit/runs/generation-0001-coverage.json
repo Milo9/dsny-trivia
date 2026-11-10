@@ -1,0 +1,710 @@
+{
+  "asOf": "2026-11-10",
+  "totalBefore": 1855,
+  "totalAfter": 1895,
+  "countMethod": "Whole-title matches in stem/correct answer/film metadata; Wish restricted to movie-specific wording and Lightyear restricted to its Pixar-film questions. Full options manually reviewed; unnamed references may be missed.",
+  "categoryBefore": {
+    "movies": 444,
+    "pixar": 293,
+    "characters": 342,
+    "parks": 271,
+    "walt": 170,
+    "cruise": 149,
+    "music": 186
+  },
+  "difficultyBefore": {
+    "medium": 943,
+    "easy": 369,
+    "hard": 543
+  },
+  "topics": {
+    "The Good Dinosaur": {
+      "before": 3,
+      "added": 6,
+      "after": 9,
+      "existingQuestions": [
+        {
+          "id": 557,
+          "question": "In The Good Dinosaur, what kind of work does Arlo's family do?",
+          "answers": [
+            "Farming",
+            "Mining",
+            "Fishing",
+            "Trading"
+          ],
+          "difficulty": "medium",
+          "category": "pixar"
+        },
+        {
+          "id": 1035,
+          "question": "In The Good Dinosaur, what kind of dinosaur is Arlo?",
+          "answers": [
+            "Apatosaurus",
+            "Tyrannosaurus",
+            "Triceratops",
+            "Stegosaurus"
+          ],
+          "difficulty": "medium",
+          "category": "pixar"
+        },
+        {
+          "id": 1285,
+          "question": "In The Good Dinosaur, what is the name of the human child Arlo befriends?",
+          "answers": [
+            "Spot",
+            "Buck",
+            "Forrest",
+            "Nash"
+          ],
+          "difficulty": "medium",
+          "category": "pixar"
+        }
+      ],
+      "newQuestionIds": [
+        2656,
+        2657,
+        2658,
+        2659,
+        2660,
+        2661
+      ]
+    },
+    "Lightyear": {
+      "before": 4,
+      "added": 6,
+      "after": 10,
+      "existingQuestions": [
+        {
+          "id": 1045,
+          "question": "In Lightyear, what robotic cat accompanies Buzz?",
+          "answers": [
+            "Sox",
+            "Mittens",
+            "Rex",
+            "M.O."
+          ],
+          "difficulty": "easy",
+          "category": "pixar"
+        },
+        {
+          "id": 1295,
+          "question": "In Lightyear, what fuel source does Buzz repeatedly test in an effort to get the stranded crew home?",
+          "answers": [
+            "A hyperspeed crystal",
+            "A power stone",
+            "A fuel rod",
+            "A star battery"
+          ],
+          "difficulty": "easy",
+          "category": "pixar"
+        },
+        {
+          "id": 2058,
+          "question": "In Lightyear, what shocking twist is revealed about the villain Zurg's true identity?",
+          "answers": [
+            "He's an alternate-timeline version of Buzz",
+            "Zurg is secretly Buzz's father",
+            "Zurg is a robot built by the aliens",
+            "Zurg is Buzz's former commanding officer"
+          ],
+          "difficulty": "hard",
+          "category": "pixar"
+        },
+        {
+          "id": 2059,
+          "question": "In Lightyear, what scientific phenomenon causes years to pass on the planet each time Buzz returns from a short hyperspeed test flight?",
+          "answers": [
+            "Time dilation from near-light-speed travel",
+            "A malfunctioning stasis pod",
+            "A time-loop anomaly",
+            "The planet's unusual orbit"
+          ],
+          "difficulty": "hard",
+          "category": "pixar"
+        }
+      ],
+      "newQuestionIds": [
+        2662,
+        2663,
+        2664,
+        2665,
+        2666,
+        2667
+      ]
+    },
+    "Strange World": {
+      "before": 3,
+      "added": 6,
+      "after": 9,
+      "existingQuestions": [
+        {
+          "id": 1100,
+          "question": "In Strange World, what is the last name of Searcher, Jaeger, and Ethan?",
+          "answers": [
+            "Clade",
+            "Avalonia",
+            "Pando",
+            "Voyager"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 1321,
+          "question": "In Strange World, what crop does Searcher cultivate as Avalonia's energy source?",
+          "answers": [
+            "Pando",
+            "Splat",
+            "Meridian",
+            "Avia"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 1322,
+          "question": "In Strange World, what is the name of the Clade family's enthusiastic three-legged dog?",
+          "answers": [
+            "Legend",
+            "Major",
+            "Stomper",
+            "Bolt"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        }
+      ],
+      "newQuestionIds": [
+        2668,
+        2669,
+        2670,
+        2671,
+        2672,
+        2673
+      ]
+    },
+    "Wish": {
+      "before": 7,
+      "added": 5,
+      "after": 12,
+      "existingQuestions": [
+        {
+          "id": 528,
+          "question": "In Wish (2023), who is the villain who hoards the wishes of his kingdom's people?",
+          "answers": [
+            "King Magnifico",
+            "King Aldric",
+            "Prince Florian",
+            "Duke Desmond"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 850,
+          "question": "In Wish, what is the name of Asha's pet goat?",
+          "answers": [
+            "Valentino",
+            "Star",
+            "Sakina",
+            "Dahlia"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 1270,
+          "question": "In Wish (2023), what solo does Asha sing as she looks to the stars for a better future for the people of Rosas?",
+          "answers": [
+            "This Wish",
+            "I'm a Star",
+            "Knowing What I Know Now",
+            "At All Costs"
+          ],
+          "difficulty": "medium",
+          "category": "music"
+        },
+        {
+          "id": 1590,
+          "question": "In Wish (2023), what is the name of the small, glowing magical being who falls from the sky to help Asha?",
+          "answers": [
+            "Star",
+            "Spark",
+            "Wisp",
+            "Glimmer"
+          ],
+          "difficulty": "easy",
+          "category": "characters"
+        },
+        {
+          "id": 1591,
+          "question": "In Wish (2023), what is the name of the kingdom ruled by King Magnifico?",
+          "answers": [
+            "Rosas",
+            "Auradon",
+            "Coronado",
+            "Valoria"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 1603,
+          "question": "In Wish (2023), what is the title of King Magnifico's villain song, in which he rages at being questioned?",
+          "answers": [
+            "This Is the Thanks I Get?!",
+            "At All Costs",
+            "Knowing What I Know Now",
+            "Welcome to Rosas"
+          ],
+          "difficulty": "hard",
+          "category": "music"
+        },
+        {
+          "id": 2552,
+          "question": "In its 2023 production notes for Wish, what distinction did Disney attribute to songwriter Julia Michaels?",
+          "answers": [
+            "Youngest person to write all songs for a Disney Animation feature",
+            "First songwriter from outside the United States to work on a Disney feature",
+            "First songwriter to win an Oscar for a debut film",
+            "Youngest person inducted as a Disney Legend"
+          ],
+          "difficulty": "hard",
+          "category": "music"
+        }
+      ],
+      "newQuestionIds": [
+        2674,
+        2675,
+        2676,
+        2677,
+        2678
+      ]
+    },
+    "Meet the Robinsons": {
+      "before": 6,
+      "added": 5,
+      "after": 11,
+      "existingQuestions": [
+        {
+          "id": 839,
+          "question": "In Meet the Robinsons, what motto does Lewis learn to embrace?",
+          "answers": [
+            "Keep moving forward",
+            "Never grow up",
+            "Dream it, do it",
+            "Believe in tomorrow"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 878,
+          "question": "In Meet the Robinsons, what is the name of the robotic bowler hat?",
+          "answers": [
+            "Doris",
+            "Carl",
+            "Lefty",
+            "Goob"
+          ],
+          "difficulty": "hard",
+          "category": "characters"
+        },
+        {
+          "id": 1130,
+          "question": "In Meet the Robinsons, what is the name of Wilbur Robinson's mother?",
+          "answers": [
+            "Franny Robinson",
+            "Lucille Krunklehorn",
+            "Mildred Duffy",
+            "Doris Robinson"
+          ],
+          "difficulty": "hard",
+          "category": "characters"
+        },
+        {
+          "id": 1327,
+          "question": "In Meet the Robinsons, who grows up to become Bowler Hat Guy?",
+          "answers": [
+            "Goob",
+            "Lewis",
+            "Wilbur",
+            "Carl"
+          ],
+          "difficulty": "hard",
+          "category": "movies"
+        },
+        {
+          "id": 1595,
+          "question": "In Meet the Robinsons, what name does Lewis use as an adult?",
+          "answers": [
+            "Cornelius Robinson",
+            "Bud Robinson",
+            "Fritz Robinson",
+            "Joe Robinson"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 1605,
+          "question": "Which Rob Thomas song appears on the Meet the Robinsons soundtrack?",
+          "answers": [
+            "Little Wonders",
+            "Keep Moving Forward",
+            "Look to the Future",
+            "The Family Song"
+          ],
+          "difficulty": "hard",
+          "category": "music"
+        }
+      ],
+      "newQuestionIds": [
+        2679,
+        2680,
+        2681,
+        2682,
+        2683
+      ]
+    },
+    "Bolt": {
+      "before": 7,
+      "added": 4,
+      "after": 11,
+      "existingQuestions": [
+        {
+          "id": 840,
+          "question": "In Bolt, what kind of pet is Rhino?",
+          "answers": [
+            "A hamster",
+            "A cat",
+            "A guinea pig",
+            "A rabbit"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 879,
+          "question": "In Bolt (2008), what stray cat helps Bolt find Penny?",
+          "answers": [
+            "Mittens",
+            "Rhino",
+            "Whiskers",
+            "Penny"
+          ],
+          "difficulty": "medium",
+          "category": "characters"
+        },
+        {
+          "id": 1131,
+          "question": "In Bolt (2008), what is the name of Bolt's human owner?",
+          "answers": [
+            "Penny",
+            "Mittens",
+            "Rhino",
+            "Molly"
+          ],
+          "difficulty": "easy",
+          "category": "characters"
+        },
+        {
+          "id": 1464,
+          "question": "At the start of Bolt (2008), what does Bolt believe about the abilities he uses on his TV show?",
+          "answers": [
+            "They are real superpowers",
+            "They come from a hidden remote control",
+            "They work only while cameras are recording",
+            "They are special effects added by the crew"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 2610,
+          "question": "Who provides the voice of the title canine character in Bolt?",
+          "answers": [
+            "John Travolta",
+            "Nicolas Cage",
+            "Matthew McConaughey",
+            "Owen Wilson"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 2611,
+          "question": "In Bolt (2008), what is the name of the villain in Bolt and Penny's fictional TV show?",
+          "answers": [
+            "Dr. Calico",
+            "Dr. Facilier",
+            "Dr. Doofenshmirtz",
+            "Dr. Doppler"
+          ],
+          "difficulty": "hard",
+          "category": "characters"
+        },
+        {
+          "id": 2612,
+          "question": "Before a creative overhaul reworked its concept, Bolt was in early development under what different title?",
+          "answers": [
+            "American Dog",
+            "Super Bolt",
+            "Freaky Friday Dog",
+            "Radar"
+          ],
+          "difficulty": "hard",
+          "category": "movies"
+        }
+      ],
+      "newQuestionIds": [
+        2684,
+        2685,
+        2686,
+        2687
+      ]
+    },
+    "Home on the Range": {
+      "before": 8,
+      "added": 4,
+      "after": 12,
+      "existingQuestions": [
+        {
+          "id": 837,
+          "question": "In Home on the Range, what type of animals are the three main heroines?",
+          "answers": [
+            "Cows",
+            "Horses",
+            "Goats",
+            "Pigs"
+          ],
+          "difficulty": "easy",
+          "category": "movies"
+        },
+        {
+          "id": 1085,
+          "question": "In Home on the Range, which outlaw do the three cows try to capture to collect the reward and save their farm?",
+          "answers": [
+            "Alameda Slim",
+            "Rico",
+            "Buck",
+            "Wesley"
+          ],
+          "difficulty": "hard",
+          "category": "movies"
+        },
+        {
+          "id": 1264,
+          "question": "In Home on the Range (2004), which early song introduces the idyllic dairy farm where Maggie arrives?",
+          "answers": [
+            "Little Patch of Heaven",
+            "Will the Sun Ever Shine Again",
+            "Yodel-Adle-Eedle-Idle-Oo",
+            "Wherever the Trail May Lead"
+          ],
+          "difficulty": "hard",
+          "category": "music"
+        },
+        {
+          "id": 1597,
+          "question": "In Home on the Range, what are the names of the three main cow heroines who set out to catch a cattle rustler?",
+          "answers": [
+            "Maggie, Mrs. Caloway, and Grace",
+            "Bessie, Buttercup, and Daisy",
+            "Clara, Rose, and Pearl",
+            "Molly, Patches, and Belle"
+          ],
+          "difficulty": "hard",
+          "category": "characters"
+        },
+        {
+          "id": 2598,
+          "question": "In Home on the Range, what unusual ability does the villain Alameda Slim use to hypnotize cattle into following him?",
+          "answers": [
+            "Yodeling",
+            "Hypnotic dancing",
+            "Playing a fiddle",
+            "Whistling"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 2599,
+          "question": "In Home on the Range, what is the name of the peg-legged jackrabbit who joins the cows' posse?",
+          "answers": [
+            "Lucky Jack",
+            "Rico",
+            "Buck",
+            "Sam"
+          ],
+          "difficulty": "hard",
+          "category": "characters"
+        },
+        {
+          "id": 2600,
+          "question": "Which comedian voices Maggie, the brash lead cow, in Home on the Range?",
+          "answers": [
+            "Roseanne Barr",
+            "Bette Midler",
+            "Whoopi Goldberg",
+            "Kathy Bates"
+          ],
+          "difficulty": "hard",
+          "category": "movies"
+        },
+        {
+          "id": 2601,
+          "question": "In Home on the Range, what type of animal is Buck, the vain, kung-fu-loving sidekick of bounty hunter Rico?",
+          "answers": [
+            "Horse",
+            "Donkey",
+            "Mule",
+            "Ox"
+          ],
+          "difficulty": "easy",
+          "category": "characters"
+        }
+      ],
+      "newQuestionIds": [
+        2688,
+        2689,
+        2690,
+        2691
+      ]
+    },
+    "Treasure Planet": {
+      "before": 10,
+      "added": 4,
+      "after": 14,
+      "existingQuestions": [
+        {
+          "id": 521,
+          "question": "What classic novel is Disney's Treasure Planet based on?",
+          "answers": [
+            "Treasure Island",
+            "Gulliver's Travels",
+            "Robinson Crusoe",
+            "20,000 Leagues Under the Sea"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 537,
+          "question": "In Treasure Planet, what is the name of the cyborg cook who serves as both mentor and villain?",
+          "answers": [
+            "John Silver",
+            "Captain Amelia",
+            "Doctor Doppler",
+            "B.E.N."
+          ],
+          "difficulty": "hard",
+          "category": "movies"
+        },
+        {
+          "id": 835,
+          "question": "In Treasure Planet, what object does Jim unlock to reveal the holographic treasure map?",
+          "answers": [
+            "A small sphere",
+            "A paper scroll",
+            "A crystal sword",
+            "A silver compass"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 875,
+          "question": "In Treasure Planet (2002), whose missing memory circuit does Jim find in Captain Flint's skeletal hand?",
+          "answers": [
+            "B.E.N.",
+            "M.O.",
+            "Auto",
+            "DOR-15"
+          ],
+          "difficulty": "hard",
+          "category": "characters"
+        },
+        {
+          "id": 1083,
+          "question": "In Treasure Planet, who captains the RLS Legacy when its voyage begins?",
+          "answers": [
+            "Captain Amelia",
+            "John Silver",
+            "Doctor Doppler",
+            "Captain Flint"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 1445,
+          "question": "In Treasure Planet, what is the name of Long John Silver's small, shape-shifting alien blob companion?",
+          "answers": [
+            "Morph",
+            "Splat",
+            "Glop",
+            "Blobby"
+          ],
+          "difficulty": "hard",
+          "category": "movies"
+        },
+        {
+          "id": 1446,
+          "question": "In Treasure Planet, what flying board does Jim Hawkins ride near the start of the film?",
+          "answers": [
+            "A solar surfer",
+            "A comet board",
+            "A gravity glider",
+            "A rocket board"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 1447,
+          "question": "In Treasure Planet, which spider-like pirate cuts Mr. Arrow's lifeline?",
+          "answers": [
+            "Scroop",
+            "Hands",
+            "Grinder",
+            "Slaughter"
+          ],
+          "difficulty": "hard",
+          "category": "movies"
+        },
+        {
+          "id": 2613,
+          "question": "Who voices the robot B.E.N. in the original English-language Treasure Planet (2002)?",
+          "answers": [
+            "Martin Short",
+            "Robin Williams",
+            "Eddie Murphy",
+            "John Goodman"
+          ],
+          "difficulty": "medium",
+          "category": "movies"
+        },
+        {
+          "id": 2614,
+          "question": "Treasure Planet received an Academy Award nomination in which category?",
+          "answers": [
+            "Best Animated Feature",
+            "Best Original Score",
+            "Best Visual Effects",
+            "Best Original Song"
+          ],
+          "difficulty": "hard",
+          "category": "movies"
+        }
+      ],
+      "newQuestionIds": [
+        2692,
+        2693,
+        2694,
+        2695
+      ]
+    }
+  }
+}

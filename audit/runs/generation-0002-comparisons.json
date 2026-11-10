@@ -1,0 +1,2088 @@
+[
+  {
+    "finding": {
+      "id": "duplicate-03a9eefbc21f7e61a50f",
+      "kind": "duplicate",
+      "questionIds": [
+        895,
+        2743
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "03a9eefbc21f7e61a50fde9b836d7aede8c58a2d9b53d077f13227602c09ee4e",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 895,
+        "question": "In November 2026, at EPCOT, which World Showcase pavilion contains Gran Fiesta Tour?",
+        "answers": [
+          "Mexico",
+          "Norway",
+          "Germany",
+          "Italy"
+        ],
+        "difficulty": "medium",
+        "category": "parks"
+      },
+      {
+        "id": 2743,
+        "question": "In The Three Caballeros (1944), Panchito represents which country?",
+        "answers": [
+          "Mexico",
+          "Brazil",
+          "Argentina",
+          "Chile"
+        ],
+        "difficulty": "medium",
+        "category": "movies",
+        "factId": "the-three-caballeros.panchito-nationality",
+        "film": "The Three Caballeros",
+        "explanation": "Panchito is the Mexican charro rooster.",
+        "source": "https://d23.com/a-to-z/three-caballeros-the-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Panchito's Mexican nationality and the location of EPCOT's Gran Fiesta Tour are different character and attraction facts; neither establishes the other."
+  },
+  {
+    "finding": {
+      "id": "duplicate-050d0853828e10d20041",
+      "kind": "duplicate",
+      "questionIds": [
+        1199,
+        2764
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "050d0853828e10d20041c2bca14f116b29198ba67946522655e043ac0f64e7e3",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 1199,
+        "question": "Which 1940 Disney feature won competitive Oscars for both song and score?",
+        "answers": [
+          "Pinocchio",
+          "Fantasia",
+          "Dumbo",
+          "Bambi"
+        ],
+        "difficulty": "hard",
+        "category": "walt"
+      },
+      {
+        "id": 2764,
+        "question": "The Fun and Fancy Free song \"I'm a Happy Go Lucky Fellow\" was originally written for which earlier film?",
+        "answers": [
+          "Pinocchio",
+          "Dumbo",
+          "Bambi",
+          "Fantasia"
+        ],
+        "difficulty": "hard",
+        "category": "music",
+        "factId": "fun-and-fancy-free.opening-song-original-film",
+        "film": "Fun and Fancy Free",
+        "explanation": "The song was originally written and recorded for Pinocchio.",
+        "source": "https://d23.com/a-to-z/fun-and-fancy-free-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Pinocchio's Oscar history does not establish which unused song was intended for it. The song-origin connection is a separate production fact."
+  },
+  {
+    "finding": {
+      "id": "duplicate-064c48fcf425b6cd394a",
+      "kind": "duplicate",
+      "questionIds": [
+        2716,
+        2717
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "064c48fcf425b6cd394af5e9e7c0be45f2f1beb6cd78352ebff37e4be84451cf",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2716,
+        "question": "Who voices Lady in the original English-language Lady and the Tramp (1955)?",
+        "answers": [
+          "Barbara Luddy",
+          "Peggy Lee",
+          "Verna Felton",
+          "Eleanor Audley"
+        ],
+        "difficulty": "hard",
+        "category": "movies",
+        "factId": "lady-and-the-tramp.lady-voice",
+        "film": "Lady and the Tramp",
+        "explanation": "Barbara Luddy voices Lady.",
+        "source": "https://d23.com/a-to-z/lady-and-the-tramp-film/",
+        "verifiedAt": "2026-11-10"
+      },
+      {
+        "id": 2717,
+        "question": "Who voices Tramp in the original English-language Lady and the Tramp (1955)?",
+        "answers": [
+          "Larry Roberts",
+          "Phil Harris",
+          "Bill Thompson",
+          "Sterling Holloway"
+        ],
+        "difficulty": "hard",
+        "category": "movies",
+        "factId": "lady-and-the-tramp.tramp-voice",
+        "film": "Lady and the Tramp",
+        "explanation": "Larry Roberts voices Tramp.",
+        "source": "https://d23.com/a-to-z/lady-and-the-tramp-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Barbara Luddy voices Lady and Larry Roberts voices Tramp. These are distinct actor-character credits, with no interchangeable correct options."
+  },
+  {
+    "finding": {
+      "id": "duplicate-079eea6fa309063b7e7f",
+      "kind": "duplicate",
+      "questionIds": [
+        2706,
+        2707
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "079eea6fa309063b7e7feae404093eac4408567a213c92c41b7ae0fabd81f95c",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2706,
+        "question": "In Raya and the Last Dragon (2021), what is Raya's father's name?",
+        "answers": [
+          "Benja",
+          "Tong",
+          "Boun",
+          "Dang Hu"
+        ],
+        "difficulty": "medium",
+        "category": "characters",
+        "factId": "raya-and-the-last-dragon.father-benja",
+        "film": "Raya and the Last Dragon",
+        "explanation": "Chief Benja is Raya's father.",
+        "source": "https://d23.com/meet-the-characters-of-raya-and-the-last-dragon/",
+        "verifiedAt": "2026-11-10"
+      },
+      {
+        "id": 2707,
+        "question": "In Raya and the Last Dragon (2021), what is Boun's boat called?",
+        "answers": [
+          "Shrimporium",
+          "Dragonfly",
+          "River Pearl",
+          "Jade Lantern"
+        ],
+        "difficulty": "hard",
+        "category": "movies",
+        "factId": "raya-and-the-last-dragon.boun-boat",
+        "film": "Raya and the Last Dragon",
+        "explanation": "Boun calls his boat the Shrimporium.",
+        "source": "https://d23.com/meet-the-characters-of-raya-and-the-last-dragon/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Benja being Raya's father does not establish the name of Boun's boat, Shrimporium. Different characters and relationships."
+  },
+  {
+    "finding": {
+      "id": "duplicate-1136bc7f3cbea8a2eb51",
+      "kind": "duplicate",
+      "questionIds": [
+        1102,
+        2762
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "1136bc7f3cbea8a2eb515463d4f6b017da58e9a9d78aa08f3cc84fb56505d432",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 1102,
+        "question": "In Pinocchio (1940), who is appointed as Pinocchio's conscience?",
+        "answers": [
+          "Jiminy Cricket",
+          "The Blue Fairy",
+          "Geppetto",
+          "Figaro"
+        ],
+        "difficulty": "easy",
+        "category": "characters"
+      },
+      {
+        "id": 2762,
+        "question": "Which character opens Fun and Fancy Free (1947) by playing a record of Bongo's story?",
+        "answers": [
+          "Jiminy Cricket",
+          "Mickey Mouse",
+          "Donald Duck",
+          "Goofy"
+        ],
+        "difficulty": "medium",
+        "category": "movies",
+        "factId": "fun-and-fancy-free.jiminy-framing",
+        "film": "Fun and Fancy Free",
+        "explanation": "Jiminy Cricket plays the record that introduces Bongo.",
+        "source": "https://d23.com/a-to-z/fun-and-fancy-free-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Jiminy's appointment as Pinocchio's conscience and his record-playing opening in Fun and Fancy Free are independent actions in different features."
+  },
+  {
+    "finding": {
+      "id": "duplicate-1189aa9979131d207306",
+      "kind": "duplicate",
+      "questionIds": [
+        2768,
+        2770
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "1189aa9979131d2073061059bbd2b6b3c7b71c6de5e636411184d708f014b398",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2768,
+        "question": "In The Adventures of Ichabod and Mr. Toad (1949), who is Ichabod's rival for Katrina?",
+        "answers": [
+          "Brom Bones",
+          "Cyril Proudbottom",
+          "Angus MacBadger",
+          "Mr. Rat"
+        ],
+        "difficulty": "medium",
+        "category": "characters",
+        "factId": "the-adventures-of-ichabod-and-mr-toad.katrina-suitor",
+        "film": "The Adventures of Ichabod and Mr. Toad",
+        "explanation": "Brom Bones is Katrina's suitor and Ichabod's rival.",
+        "source": "https://d23.com/a-to-z/adventures-of-ichabod-and-mr-toad-the-film/",
+        "verifiedAt": "2026-11-10"
+      },
+      {
+        "id": 2770,
+        "question": "In The Adventures of Ichabod and Mr. Toad (1949), what is Mr. Toad's horse called?",
+        "answers": [
+          "Cyril",
+          "Winkie",
+          "Brom",
+          "Ratty"
+        ],
+        "difficulty": "medium",
+        "category": "characters",
+        "factId": "the-adventures-of-ichabod-and-mr-toad.cyril-horse",
+        "film": "The Adventures of Ichabod and Mr. Toad",
+        "explanation": "Cyril is Mr. Toad's horse.",
+        "source": "https://d23.com/a-to-z/adventures-of-ichabod-and-mr-toad-the-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Brom Bones as Ichabod's romantic rival and Cyril as Toad's horse belong to different stories and test distinct identities."
+  },
+  {
+    "finding": {
+      "id": "duplicate-1ce0639e1ecd6c17f61a",
+      "kind": "duplicate",
+      "questionIds": [
+        1103,
+        2712
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "1ce0639e1ecd6c17f61a0064a7cc612f4adad8265f642cf936354e30f6d92ed0",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 1103,
+        "question": "In Alice in Wonderland (1951), who hosts the tea party with the March Hare?",
+        "answers": [
+          "The Mad Hatter",
+          "The White Rabbit",
+          "The Caterpillar",
+          "The King of Hearts"
+        ],
+        "difficulty": "easy",
+        "category": "characters"
+      },
+      {
+        "id": 2712,
+        "question": "In Alice in Wonderland (1951), what occasion are the Mad Hatter and March Hare celebrating at tea?",
+        "answers": [
+          "An unbirthday",
+          "A wedding anniversary",
+          "A royal coronation",
+          "A graduation"
+        ],
+        "difficulty": "easy",
+        "category": "movies",
+        "factId": "alice-in-wonderland.tea-party-occasion",
+        "film": "Alice in Wonderland",
+        "explanation": "The tea party celebrates an unbirthday.",
+        "source": "https://d23.com/a-to-z/alice-in-wonderland-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Identifying the Mad Hatter as a tea-party host does not identify the unbirthday occasion. Host and celebration are separate facts."
+  },
+  {
+    "finding": {
+      "id": "duplicate-1e2a91ef264b9f83f313",
+      "kind": "duplicate",
+      "questionIds": [
+        1020,
+        2698
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "1e2a91ef264b9f83f3139895a57c256ee231ebf254ae9a97b87ced0504907abf",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 1020,
+        "question": "In Raya and the Last Dragon, who composed the film's orchestral score?",
+        "answers": [
+          "James Newton Howard",
+          "Alan Menken",
+          "Michael Giacchino",
+          "Hans Zimmer"
+        ],
+        "difficulty": "hard",
+        "category": "music"
+      },
+      {
+        "id": 2698,
+        "question": "Who composed the orchestral score for Dinosaur (2000)?",
+        "answers": [
+          "James Newton Howard",
+          "Alan Silvestri",
+          "Jerry Goldsmith",
+          "Danny Elfman"
+        ],
+        "difficulty": "hard",
+        "category": "music",
+        "factId": "dinosaur.score-composer",
+        "film": "Dinosaur",
+        "explanation": "James Newton Howard composed the score.",
+        "source": "https://d23.com/a-to-z/dinosaur-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "James Newton Howard's scores for Raya and Dinosaur are different film-composer attributions. Knowing one commission does not establish the other."
+  },
+  {
+    "finding": {
+      "id": "duplicate-3047d8d5f22e13dbc5fe",
+      "kind": "duplicate",
+      "questionIds": [
+        993,
+        2764
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "3047d8d5f22e13dbc5fee5b5e32e8eea3fbe972dcf9706dc8e9abe058514b8fd",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 993,
+        "question": "Which original animated Disney film introduced Give a Little Whistle?",
+        "answers": [
+          "Pinocchio",
+          "Dumbo",
+          "Bambi",
+          "Peter Pan"
+        ],
+        "difficulty": "medium",
+        "category": "music"
+      },
+      {
+        "id": 2764,
+        "question": "The Fun and Fancy Free song \"I'm a Happy Go Lucky Fellow\" was originally written for which earlier film?",
+        "answers": [
+          "Pinocchio",
+          "Dumbo",
+          "Bambi",
+          "Fantasia"
+        ],
+        "difficulty": "hard",
+        "category": "music",
+        "factId": "fun-and-fancy-free.opening-song-original-film",
+        "film": "Fun and Fancy Free",
+        "explanation": "The song was originally written and recorded for Pinocchio.",
+        "source": "https://d23.com/a-to-z/fun-and-fancy-free-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Give a Little Whistle appearing in Pinocchio does not identify the original intended film for Happy Go Lucky Fellow. Separate songs and production histories."
+  },
+  {
+    "finding": {
+      "id": "duplicate-396d22ae1968778c9fb8",
+      "kind": "duplicate",
+      "questionIds": [
+        2792,
+        2795
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "396d22ae1968778c9fb8c8587c82de8e6a1f4b530056a8e630c7bdd445185fd4",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2792,
+        "question": "Who voices Wilbur in the original English-language The Rescuers Down Under (1990)?",
+        "answers": [
+          "John Candy",
+          "Jim Jordan",
+          "Bob Newhart",
+          "Tristan Rogers"
+        ],
+        "difficulty": "medium",
+        "category": "movies",
+        "factId": "the-rescuers-down-under.wilbur-voice",
+        "film": "The Rescuers Down Under",
+        "explanation": "John Candy voices Wilbur.",
+        "source": "https://d23.com/a-to-z/rescuers-down-under-the-film/",
+        "verifiedAt": "2026-11-10"
+      },
+      {
+        "id": 2795,
+        "question": "Who voices Jake in the original English-language The Rescuers Down Under (1990)?",
+        "answers": [
+          "Tristan Rogers",
+          "Wayne Robson",
+          "Adam Ryen",
+          "George C. Scott"
+        ],
+        "difficulty": "hard",
+        "category": "movies",
+        "factId": "the-rescuers-down-under.jake-voice",
+        "film": "The Rescuers Down Under",
+        "explanation": "Tristan Rogers voices Jake.",
+        "source": "https://d23.com/a-to-z/rescuers-down-under-the-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "John Candy voices Wilbur while Tristan Rogers voices Jake. Different actor-character credits even though both are in the same film."
+  },
+  {
+    "finding": {
+      "id": "duplicate-408f3ec9b7d50ef4349d",
+      "kind": "duplicate",
+      "questionIds": [
+        2781,
+        2782
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "408f3ec9b7d50ef4349d6e12867c1bbb5dbd75d87660d12702989944e3c759a8",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2781,
+        "question": "Who conducts the orchestra in the original Fantasia (1940)?",
+        "answers": [
+          "Leopold Stokowski",
+          "James Levine",
+          "Irwin Kostal",
+          "Leonard Bernstein"
+        ],
+        "difficulty": "medium",
+        "category": "music",
+        "factId": "fantasia.original-conductor",
+        "film": "Fantasia",
+        "explanation": "Leopold Stokowski conducts the original film.",
+        "source": "https://d23.com/a-to-z/fantasia-film/",
+        "verifiedAt": "2026-11-10"
+      },
+      {
+        "id": 2782,
+        "question": "Which orchestra performs in the original Fantasia (1940)?",
+        "answers": [
+          "Philadelphia Orchestra",
+          "Chicago Symphony Orchestra",
+          "London Philharmonic",
+          "Boston Symphony Orchestra"
+        ],
+        "difficulty": "hard",
+        "category": "music",
+        "factId": "fantasia.original-orchestra",
+        "film": "Fantasia",
+        "explanation": "The Philadelphia Orchestra performs in the original film.",
+        "source": "https://d23.com/a-to-z/fantasia-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Stokowski is the conductor; Philadelphia is the performing orchestra. A person and an ensemble are separately identified production roles."
+  },
+  {
+    "finding": {
+      "id": "duplicate-428e52c97e7ef5068b53",
+      "kind": "duplicate",
+      "questionIds": [
+        2401,
+        2750
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "428e52c97e7ef5068b5365e96a929988eb033c0833484d19bdbe64607367c324",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2401,
+        "question": "Which actor, later named a Disney Legend, was the original voice of Winnie the Pooh starting with 1966's Winnie the Pooh and the Honey Tree?",
+        "answers": [
+          "Sterling Holloway",
+          "Paul Winchell",
+          "Jim Cummings",
+          "Hal Smith"
+        ],
+        "difficulty": "hard",
+        "category": "walt"
+      },
+      {
+        "id": 2750,
+        "question": "Who narrates Peter and the Wolf in Make Mine Music (1946)?",
+        "answers": [
+          "Sterling Holloway",
+          "Bing Crosby",
+          "Basil Rathbone",
+          "Jerry Colonna"
+        ],
+        "difficulty": "hard",
+        "category": "movies",
+        "factId": "make-mine-music.peter-wolf-narrator",
+        "film": "Make Mine Music",
+        "explanation": "Sterling Holloway narrates Peter and the Wolf.",
+        "source": "https://d23.com/a-to-z/make-mine-music-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Holloway's Pooh voice and his Peter and the Wolf narration are separate performances in different productions."
+  },
+  {
+    "finding": {
+      "id": "duplicate-5b247641b8f3e30711c2",
+      "kind": "duplicate",
+      "questionIds": [
+        2713,
+        2714
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "5b247641b8f3e30711c2a6994d2d47efb7f59882dad616834e4b7d836cd3bf7f",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2713,
+        "question": "Who voices Alice in the original English-language Alice in Wonderland (1951)?",
+        "answers": [
+          "Kathryn Beaumont",
+          "Verna Felton",
+          "Ilene Woods",
+          "Mary Costa"
+        ],
+        "difficulty": "medium",
+        "category": "movies",
+        "factId": "alice-in-wonderland.alice-voice",
+        "film": "Alice in Wonderland",
+        "explanation": "Kathryn Beaumont voices Alice.",
+        "source": "https://d23.com/a-to-z/alice-in-wonderland-film/",
+        "verifiedAt": "2026-11-10"
+      },
+      {
+        "id": 2714,
+        "question": "Who voices the Cheshire Cat in the original English-language Alice in Wonderland (1951)?",
+        "answers": [
+          "Sterling Holloway",
+          "Ed Wynn",
+          "Jerry Colonna",
+          "Bill Thompson"
+        ],
+        "difficulty": "hard",
+        "category": "movies",
+        "factId": "alice-in-wonderland.cheshire-voice",
+        "film": "Alice in Wonderland",
+        "explanation": "Sterling Holloway voices the Cheshire Cat.",
+        "source": "https://d23.com/a-to-z/alice-in-wonderland-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Kathryn Beaumont voices Alice and Sterling Holloway voices the Cheshire Cat. These are distinct credits for different characters."
+  },
+  {
+    "finding": {
+      "id": "duplicate-61897634536a341aa041",
+      "kind": "duplicate",
+      "questionIds": [
+        1129,
+        2702
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "61897634536a341aa0412153a8a725e4c5c76fcc2d87004d3a4bd166976b5ad3",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 1129,
+        "question": "In Chicken Little (2005), which large pig is Chicken Little's friend?",
+        "answers": [
+          "Runt of the Litter",
+          "Foxy Loxy",
+          "Fish Out of Water",
+          "Goosey Loosey"
+        ],
+        "difficulty": "easy",
+        "category": "characters"
+      },
+      {
+        "id": 2702,
+        "question": "In Chicken Little (2005), what is Chicken Little's father called?",
+        "answers": [
+          "Buck Cluck",
+          "Turkey Lurkey",
+          "Mr. Woolensworth",
+          "Principal Fetchit"
+        ],
+        "difficulty": "medium",
+        "category": "characters",
+        "factId": "chicken-little.father-name",
+        "film": "Chicken Little",
+        "explanation": "Buck Cluck is Chicken Little's father.",
+        "source": "https://manualzilla.com/doc/7054510/disney-interactive-studios-chicken-little-user-s-manual",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Runt is Chicken Little's pig friend; Buck Cluck is his father. Friend/species identification does not establish a parent's identity."
+  },
+  {
+    "finding": {
+      "id": "duplicate-6d3fd88e77bc97af22ba",
+      "kind": "duplicate",
+      "questionIds": [
+        2788,
+        2789
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "6d3fd88e77bc97af22baebc11c6c6b47c093a5927883fc8d92df69a60690e0cd",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2788,
+        "question": "Who voices Madame Medusa in the original English-language The Rescuers (1977)?",
+        "answers": [
+          "Geraldine Page",
+          "Eva Gabor",
+          "Michelle Stacy",
+          "Hermione Baddeley"
+        ],
+        "difficulty": "hard",
+        "category": "movies",
+        "factId": "the-rescuers.medusa-voice",
+        "film": "The Rescuers",
+        "explanation": "Geraldine Page voices Madame Medusa.",
+        "source": "https://d23.com/a-to-z/rescuers-the-film/",
+        "verifiedAt": "2026-11-10"
+      },
+      {
+        "id": 2789,
+        "question": "Who voices Orville in the original English-language The Rescuers (1977)?",
+        "answers": [
+          "Jim Jordan",
+          "John Candy",
+          "Bob Newhart",
+          "John McIntire"
+        ],
+        "difficulty": "hard",
+        "category": "movies",
+        "factId": "the-rescuers.orville-voice",
+        "film": "The Rescuers",
+        "explanation": "Jim Jordan voices Orville.",
+        "source": "https://d23.com/a-to-z/rescuers-the-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Geraldine Page voices Medusa and Jim Jordan voices Orville. Different characters and cast credits; neither answer solves the other."
+  },
+  {
+    "finding": {
+      "id": "duplicate-7a82f3924e1674f63a5e",
+      "kind": "duplicate",
+      "questionIds": [
+        2728,
+        2772
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "7a82f3924e1674f63a5e83cfca59d3e17bcbfcb714a54c859c1e0d994ac96ae6",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2728,
+        "question": "Who wrote the songs for The Sword in the Stone (1963)?",
+        "answers": [
+          "Richard and Robert Sherman",
+          "Alan Menken and Howard Ashman",
+          "Sonny Burke and Peggy Lee",
+          "Sammy Fain and Bob Hilliard"
+        ],
+        "difficulty": "medium",
+        "category": "music",
+        "factId": "the-sword-in-the-stone.songwriters",
+        "film": "The Sword in the Stone",
+        "explanation": "Richard M. Sherman and Robert B. Sherman wrote the songs.",
+        "source": "https://d23.com/a-to-z/sword-in-the-stone-the-film/",
+        "verifiedAt": "2026-11-10"
+      },
+      {
+        "id": 2772,
+        "question": "Which pair wrote the music and lyrics for The Many Adventures of Winnie the Pooh (1977)?",
+        "answers": [
+          "Richard and Robert Sherman",
+          "Robert Lopez and Kristen Anderson-Lopez",
+          "George and Ira Gershwin",
+          "Alan Menken and Howard Ashman"
+        ],
+        "difficulty": "medium",
+        "category": "music",
+        "factId": "the-many-adventures-of-winnie-the-pooh.songwriters",
+        "film": "The Many Adventures of Winnie the Pooh",
+        "explanation": "Richard M. Sherman and Robert B. Sherman wrote the music and lyrics.",
+        "source": "https://d23.com/a-to-z/many-adventures-of-winnie-the-pooh-the-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "The Shermans wrote songs for both films, but The Sword in the Stone and Pooh are separate credits. Knowing one film does not establish the other."
+  },
+  {
+    "finding": {
+      "id": "duplicate-7c2c13291f00a19383b1",
+      "kind": "duplicate",
+      "questionIds": [
+        2707,
+        2709
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "7c2c13291f00a19383b15a1165fcb514dd86d7657f9bbcb9a50698cbdc5dbd26",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2707,
+        "question": "In Raya and the Last Dragon (2021), what is Boun's boat called?",
+        "answers": [
+          "Shrimporium",
+          "Dragonfly",
+          "River Pearl",
+          "Jade Lantern"
+        ],
+        "difficulty": "hard",
+        "category": "movies",
+        "factId": "raya-and-the-last-dragon.boun-boat",
+        "film": "Raya and the Last Dragon",
+        "explanation": "Boun calls his boat the Shrimporium.",
+        "source": "https://d23.com/meet-the-characters-of-raya-and-the-last-dragon/",
+        "verifiedAt": "2026-11-10"
+      },
+      {
+        "id": 2709,
+        "question": "In Raya and the Last Dragon (2021), who is Namaari's mother?",
+        "answers": [
+          "Virana",
+          "Sisu",
+          "Dang Hu",
+          "Noi"
+        ],
+        "difficulty": "medium",
+        "category": "characters",
+        "factId": "raya-and-the-last-dragon.namaari-mother",
+        "film": "Raya and the Last Dragon",
+        "explanation": "Virana is the chief of Fang and Namaari's mother.",
+        "source": "https://d23.com/meet-the-characters-of-raya-and-the-last-dragon/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Shrimporium names Boun's boat, while Virana names Namaari's mother. No shared tested entity or relation."
+  },
+  {
+    "finding": {
+      "id": "duplicate-87f8d91985b0f51ff299",
+      "kind": "duplicate",
+      "questionIds": [
+        2706,
+        2709
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "87f8d91985b0f51ff29999f5659d49d28b4e0183b2a98a51eabbf9208060e853",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2706,
+        "question": "In Raya and the Last Dragon (2021), what is Raya's father's name?",
+        "answers": [
+          "Benja",
+          "Tong",
+          "Boun",
+          "Dang Hu"
+        ],
+        "difficulty": "medium",
+        "category": "characters",
+        "factId": "raya-and-the-last-dragon.father-benja",
+        "film": "Raya and the Last Dragon",
+        "explanation": "Chief Benja is Raya's father.",
+        "source": "https://d23.com/meet-the-characters-of-raya-and-the-last-dragon/",
+        "verifiedAt": "2026-11-10"
+      },
+      {
+        "id": 2709,
+        "question": "In Raya and the Last Dragon (2021), who is Namaari's mother?",
+        "answers": [
+          "Virana",
+          "Sisu",
+          "Dang Hu",
+          "Noi"
+        ],
+        "difficulty": "medium",
+        "category": "characters",
+        "factId": "raya-and-the-last-dragon.namaari-mother",
+        "film": "Raya and the Last Dragon",
+        "explanation": "Virana is the chief of Fang and Namaari's mother.",
+        "source": "https://d23.com/meet-the-characters-of-raya-and-the-last-dragon/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Benja is Raya's father and Virana is Namaari's mother. Distinct parent-child relationships; neither supplies the other parent's name."
+  },
+  {
+    "finding": {
+      "id": "duplicate-886ee639bcc965464374",
+      "kind": "duplicate",
+      "questionIds": [
+        2732,
+        2733
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "886ee639bcc96546437431e4a7c1ff7d2fd58a882770505a55c5d2862e2f1c09",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2732,
+        "question": "Who voices Oliver in the original English-language Oliver & Company (1988)?",
+        "answers": [
+          "Joey Lawrence",
+          "Billy Joel",
+          "Cheech Marin",
+          "Dom DeLuise"
+        ],
+        "difficulty": "medium",
+        "category": "movies",
+        "factId": "oliver-company.oliver-voice",
+        "film": "Oliver & Company",
+        "explanation": "Joey Lawrence voices Oliver.",
+        "source": "https://d23.com/a-to-z/oliver-company-film/",
+        "verifiedAt": "2026-11-10"
+      },
+      {
+        "id": 2733,
+        "question": "Who voices Georgette in the original English-language Oliver & Company (1988)?",
+        "answers": [
+          "Bette Midler",
+          "Sheryl Lee Ralph",
+          "Ruth Pointer",
+          "Natalie Cole"
+        ],
+        "difficulty": "medium",
+        "category": "movies",
+        "factId": "oliver-company.georgette-voice",
+        "film": "Oliver & Company",
+        "explanation": "Bette Midler voices Georgette.",
+        "source": "https://d23.com/a-to-z/oliver-company-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Joey Lawrence voices Oliver and Bette Midler voices Georgette. Distinct characters and performers."
+  },
+  {
+    "finding": {
+      "id": "duplicate-8ee5c4ab2e3f1ce8d21a",
+      "kind": "duplicate",
+      "questionIds": [
+        2766,
+        2768
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "8ee5c4ab2e3f1ce8d21a4c9ca08bd0bac64ebf9e090233d47e875fb44be89818",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2766,
+        "question": "In The Adventures of Ichabod and Mr. Toad (1949), what crime is Mr. Toad accused of?",
+        "answers": [
+          "Car theft",
+          "Bank robbery",
+          "Art forgery",
+          "Smuggling jewels"
+        ],
+        "difficulty": "medium",
+        "category": "movies",
+        "factId": "the-adventures-of-ichabod-and-mr-toad.toad-charge",
+        "film": "The Adventures of Ichabod and Mr. Toad",
+        "explanation": "Toad faces a charge of car theft.",
+        "source": "https://d23.com/a-to-z/adventures-of-ichabod-and-mr-toad-the-film/",
+        "verifiedAt": "2026-11-10"
+      },
+      {
+        "id": 2768,
+        "question": "In The Adventures of Ichabod and Mr. Toad (1949), who is Ichabod's rival for Katrina?",
+        "answers": [
+          "Brom Bones",
+          "Cyril Proudbottom",
+          "Angus MacBadger",
+          "Mr. Rat"
+        ],
+        "difficulty": "medium",
+        "category": "characters",
+        "factId": "the-adventures-of-ichabod-and-mr-toad.katrina-suitor",
+        "film": "The Adventures of Ichabod and Mr. Toad",
+        "explanation": "Brom Bones is Katrina's suitor and Ichabod's rival.",
+        "source": "https://d23.com/a-to-z/adventures-of-ichabod-and-mr-toad-the-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Mr. Toad's car-theft charge and Ichabod's rival Brom Bones are separate plot facts in different halves of the feature."
+  },
+  {
+    "finding": {
+      "id": "duplicate-90a15c088eb76bf03ce7",
+      "kind": "duplicate",
+      "questionIds": [
+        2766,
+        2770
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "90a15c088eb76bf03ce763aab5ee948a5b11695ad13a51cf2c036e936f13461d",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2766,
+        "question": "In The Adventures of Ichabod and Mr. Toad (1949), what crime is Mr. Toad accused of?",
+        "answers": [
+          "Car theft",
+          "Bank robbery",
+          "Art forgery",
+          "Smuggling jewels"
+        ],
+        "difficulty": "medium",
+        "category": "movies",
+        "factId": "the-adventures-of-ichabod-and-mr-toad.toad-charge",
+        "film": "The Adventures of Ichabod and Mr. Toad",
+        "explanation": "Toad faces a charge of car theft.",
+        "source": "https://d23.com/a-to-z/adventures-of-ichabod-and-mr-toad-the-film/",
+        "verifiedAt": "2026-11-10"
+      },
+      {
+        "id": 2770,
+        "question": "In The Adventures of Ichabod and Mr. Toad (1949), what is Mr. Toad's horse called?",
+        "answers": [
+          "Cyril",
+          "Winkie",
+          "Brom",
+          "Ratty"
+        ],
+        "difficulty": "medium",
+        "category": "characters",
+        "factId": "the-adventures-of-ichabod-and-mr-toad.cyril-horse",
+        "film": "The Adventures of Ichabod and Mr. Toad",
+        "explanation": "Cyril is Mr. Toad's horse.",
+        "source": "https://d23.com/a-to-z/adventures-of-ichabod-and-mr-toad-the-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Toad's criminal charge and the name of his horse are distinct legal-event and character facts; car theft does not reveal Cyril."
+  },
+  {
+    "finding": {
+      "id": "duplicate-93a61b23ef3a9d4ea835",
+      "kind": "duplicate",
+      "questionIds": [
+        441,
+        2762
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "93a61b23ef3a9d4ea83536ffdc4224115d110a03a188d186c37f791dbb7112ba",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 441,
+        "question": "Which character sings 'When You Wish Upon a Star' in Pinocchio?",
+        "answers": [
+          "Jiminy Cricket",
+          "Pinocchio",
+          "Geppetto",
+          "The Blue Fairy"
+        ],
+        "difficulty": "easy",
+        "category": "music"
+      },
+      {
+        "id": 2762,
+        "question": "Which character opens Fun and Fancy Free (1947) by playing a record of Bongo's story?",
+        "answers": [
+          "Jiminy Cricket",
+          "Mickey Mouse",
+          "Donald Duck",
+          "Goofy"
+        ],
+        "difficulty": "medium",
+        "category": "movies",
+        "factId": "fun-and-fancy-free.jiminy-framing",
+        "film": "Fun and Fancy Free",
+        "explanation": "Jiminy Cricket plays the record that introduces Bongo.",
+        "source": "https://d23.com/a-to-z/fun-and-fancy-free-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Jiminy singing When You Wish Upon a Star and playing the Bongo record are distinct musical/framing actions in different features."
+  },
+  {
+    "finding": {
+      "id": "duplicate-93cb7d34aefdcb13b1e0",
+      "kind": "duplicate",
+      "questionIds": [
+        1171,
+        2743
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "93cb7d34aefdcb13b1e078ab361d911ad2824243e17f801d5749d32f7a068f59",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 1171,
+        "question": "In November 2026, which EPCOT World Showcase pavilion has a large pyramid as its main building?",
+        "answers": [
+          "Mexico",
+          "Norway",
+          "China",
+          "Morocco"
+        ],
+        "difficulty": "easy",
+        "category": "parks"
+      },
+      {
+        "id": 2743,
+        "question": "In The Three Caballeros (1944), Panchito represents which country?",
+        "answers": [
+          "Mexico",
+          "Brazil",
+          "Argentina",
+          "Chile"
+        ],
+        "difficulty": "medium",
+        "category": "movies",
+        "factId": "the-three-caballeros.panchito-nationality",
+        "film": "The Three Caballeros",
+        "explanation": "Panchito is the Mexican charro rooster.",
+        "source": "https://d23.com/a-to-z/three-caballeros-the-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Panchito's nationality and EPCOT's pyramid pavilion share Mexico as an answer but test independent character and park-design facts."
+  },
+  {
+    "finding": {
+      "id": "duplicate-98d104ca387c081eade4",
+      "kind": "duplicate",
+      "questionIds": [
+        2697,
+        2699
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "98d104ca387c081eade4e7b6a0afc3ab8ed3cec46b99b64c57324773f45a6ec7",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2697,
+        "question": "Who voices Aladar in the original English-language Dinosaur (2000)?",
+        "answers": [
+          "D.B. Sweeney",
+          "Samuel E. Wright",
+          "Ossie Davis",
+          "Max Casella"
+        ],
+        "difficulty": "hard",
+        "category": "movies",
+        "factId": "dinosaur.aladar-voice",
+        "film": "Dinosaur",
+        "explanation": "D.B. Sweeney voices Aladar.",
+        "source": "https://d23.com/a-to-z/dinosaur-film/",
+        "verifiedAt": "2026-11-10"
+      },
+      {
+        "id": 2699,
+        "question": "Who voices Eema in the original English-language Dinosaur (2000)?",
+        "answers": [
+          "Della Reese",
+          "Joan Plowright",
+          "Alfre Woodard",
+          "Julianna Margulies"
+        ],
+        "difficulty": "hard",
+        "category": "movies",
+        "factId": "dinosaur.eema-voice",
+        "film": "Dinosaur",
+        "explanation": "Della Reese voices Eema.",
+        "source": "https://d23.com/a-to-z/dinosaur-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "D.B. Sweeney voices Aladar and Della Reese voices Eema. Separate cast credits for different characters."
+  },
+  {
+    "finding": {
+      "id": "duplicate-a53a84f97d1d5d59dc92",
+      "kind": "duplicate",
+      "questionIds": [
+        2491,
+        2789
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "a53a84f97d1d5d59dc9218759a0f1a2c77e8b1845b5f6a9bf5c8b43c35517c2a",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2491,
+        "question": "Who voices Bernard, the Rescue Aid Society's custodian, in the original English-language The Rescuers (1977)?",
+        "answers": [
+          "Bob Newhart",
+          "Don Knotts",
+          "Dick Van Dyke",
+          "Tim Conway"
+        ],
+        "difficulty": "medium",
+        "category": "movies"
+      },
+      {
+        "id": 2789,
+        "question": "Who voices Orville in the original English-language The Rescuers (1977)?",
+        "answers": [
+          "Jim Jordan",
+          "John Candy",
+          "Bob Newhart",
+          "John McIntire"
+        ],
+        "difficulty": "hard",
+        "category": "movies",
+        "factId": "the-rescuers.orville-voice",
+        "film": "The Rescuers",
+        "explanation": "Jim Jordan voices Orville.",
+        "source": "https://d23.com/a-to-z/rescuers-the-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Bob Newhart voices Bernard and Jim Jordan voices Orville. A custodian's actor does not establish a pilot's actor."
+  },
+  {
+    "finding": {
+      "id": "duplicate-b2c2edd4b534290200c5",
+      "kind": "duplicate",
+      "questionIds": [
+        2702,
+        2704
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "b2c2edd4b534290200c5adc09cc2b8b4eb51ffb712af16469785a51c88fb4cc1",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2702,
+        "question": "In Chicken Little (2005), what is Chicken Little's father called?",
+        "answers": [
+          "Buck Cluck",
+          "Turkey Lurkey",
+          "Mr. Woolensworth",
+          "Principal Fetchit"
+        ],
+        "difficulty": "medium",
+        "category": "characters",
+        "factId": "chicken-little.father-name",
+        "film": "Chicken Little",
+        "explanation": "Buck Cluck is Chicken Little's father.",
+        "source": "https://manualzilla.com/doc/7054510/disney-interactive-studios-chicken-little-user-s-manual",
+        "verifiedAt": "2026-11-10"
+      },
+      {
+        "id": 2704,
+        "question": "In Chicken Little (2005), what is the mayor's name?",
+        "answers": [
+          "Turkey Lurkey",
+          "Buck Cluck",
+          "Foxy Loxy",
+          "Runt of the Litter"
+        ],
+        "difficulty": "medium",
+        "category": "characters",
+        "factId": "chicken-little.mayor-name",
+        "film": "Chicken Little",
+        "explanation": "Turkey Lurkey is explicitly identified as mayor.",
+        "source": "https://d23.com/a-to-z/chicken-little-film-2005/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Buck Cluck is the father, while Turkey Lurkey is the mayor. These are different social roles with different correct characters."
+  },
+  {
+    "finding": {
+      "id": "duplicate-be2df9e0b0afc404e8e1",
+      "kind": "duplicate",
+      "questionIds": [
+        2401,
+        2714
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "be2df9e0b0afc404e8e1ff596e666637b6fd53cc45e188d2d952ebb54403b26b",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2401,
+        "question": "Which actor, later named a Disney Legend, was the original voice of Winnie the Pooh starting with 1966's Winnie the Pooh and the Honey Tree?",
+        "answers": [
+          "Sterling Holloway",
+          "Paul Winchell",
+          "Jim Cummings",
+          "Hal Smith"
+        ],
+        "difficulty": "hard",
+        "category": "walt"
+      },
+      {
+        "id": 2714,
+        "question": "Who voices the Cheshire Cat in the original English-language Alice in Wonderland (1951)?",
+        "answers": [
+          "Sterling Holloway",
+          "Ed Wynn",
+          "Jerry Colonna",
+          "Bill Thompson"
+        ],
+        "difficulty": "hard",
+        "category": "movies",
+        "factId": "alice-in-wonderland.cheshire-voice",
+        "film": "Alice in Wonderland",
+        "explanation": "Sterling Holloway voices the Cheshire Cat.",
+        "source": "https://d23.com/a-to-z/alice-in-wonderland-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Holloway's Cheshire Cat performance and his Pooh performance are different actor-character attributions."
+  },
+  {
+    "finding": {
+      "id": "duplicate-c1528616bbfa294003ce",
+      "kind": "duplicate",
+      "questionIds": [
+        2773,
+        2775
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "c1528616bbfa294003ce8e3a6cdd9069c19339cf808939ea722950405956ac54",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2773,
+        "question": "Who narrates the Tigger Too story included in The Many Adventures of Winnie the Pooh (1977)?",
+        "answers": [
+          "Sebastian Cabot",
+          "Sterling Holloway",
+          "Paul Winchell",
+          "John Fiedler"
+        ],
+        "difficulty": "hard",
+        "category": "movies",
+        "factId": "the-many-adventures-of-winnie-the-pooh.narrator-cabot",
+        "film": "The Many Adventures of Winnie the Pooh",
+        "explanation": "Sebastian Cabot narrates Tigger Too, a story included in the 1977 feature.",
+        "source": "https://d23.com/a-to-z/winnie-the-pooh-and-tigger-too-film/",
+        "verifiedAt": "2026-11-10"
+      },
+      {
+        "id": 2775,
+        "question": "In the Tigger Too story in The Many Adventures of Winnie the Pooh (1977), what happens when Rabbit tries to lose Tigger in the woods?",
+        "answers": [
+          "The plotters themselves get lost",
+          "Tigger joins a circus",
+          "The forest catches fire",
+          "Christopher Robin moves away"
+        ],
+        "difficulty": "medium",
+        "category": "movies",
+        "factId": "the-many-adventures-of-winnie-the-pooh.rabbit-woods-plan",
+        "film": "The Many Adventures of Winnie the Pooh",
+        "explanation": "Rabbit's plan backfires when the plotters themselves become lost and need Tigger.",
+        "source": "https://d23.com/a-to-z/winnie-the-pooh-and-tigger-too-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Cabot's narration credit does not establish the plot result of Rabbit's plan. Performer identity and getting lost are distinct facts."
+  },
+  {
+    "finding": {
+      "id": "duplicate-ce00f8f6eb92726e866e",
+      "kind": "duplicate",
+      "questionIds": [
+        938,
+        2764
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "ce00f8f6eb92726e866eef0e73d94859bfed912c9196d365564f0c262f0414be",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 938,
+        "question": "What was Walt Disney Studios' second full-length animated feature?",
+        "answers": [
+          "Pinocchio",
+          "Fantasia",
+          "Dumbo",
+          "Bambi"
+        ],
+        "difficulty": "medium",
+        "category": "walt"
+      },
+      {
+        "id": 2764,
+        "question": "The Fun and Fancy Free song \"I'm a Happy Go Lucky Fellow\" was originally written for which earlier film?",
+        "answers": [
+          "Pinocchio",
+          "Dumbo",
+          "Bambi",
+          "Fantasia"
+        ],
+        "difficulty": "hard",
+        "category": "music",
+        "factId": "fun-and-fancy-free.opening-song-original-film",
+        "film": "Fun and Fancy Free",
+        "explanation": "The song was originally written and recorded for Pinocchio.",
+        "source": "https://d23.com/a-to-z/fun-and-fancy-free-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Pinocchio's release-order position does not establish the intended home of the unused Happy Go Lucky Fellow song. Separate chronology and song-origin facts."
+  },
+  {
+    "finding": {
+      "id": "duplicate-d0425bf5bb22bc23c323",
+      "kind": "duplicate",
+      "questionIds": [
+        2722,
+        2776
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "d0425bf5bb22bc23c3236ace3da896b82637069f2d96753405c5b7a6066daa75",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2722,
+        "question": "Who voices Robin Hood in Disney's original English-language animated film (1973)?",
+        "answers": [
+          "Brian Bedford",
+          "Phil Harris",
+          "Peter Ustinov",
+          "Terry-Thomas"
+        ],
+        "difficulty": "hard",
+        "category": "movies",
+        "factId": "robin-hood.robin-voice",
+        "film": "Robin Hood",
+        "explanation": "Brian Bedford voices Robin Hood.",
+        "source": "https://d23.com/a-to-z/robin-hood-film/",
+        "verifiedAt": "2026-11-10"
+      },
+      {
+        "id": 2776,
+        "question": "Who voices Peter Pan in Disney's original English-language animated film (1953)?",
+        "answers": [
+          "Bobby Driscoll",
+          "Tommy Kirk",
+          "Paul Petersen",
+          "Kevin Corcoran"
+        ],
+        "difficulty": "medium",
+        "category": "movies",
+        "factId": "peter-pan.peter-voice",
+        "film": "Peter Pan",
+        "explanation": "Bobby Driscoll voices Peter Pan.",
+        "source": "https://d23.com/a-to-z/peter-pan-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Brian Bedford voices Robin Hood while Bobby Driscoll voices Peter Pan. Shared cast-question syntax masks independent credits in different films."
+  },
+  {
+    "finding": {
+      "id": "duplicate-d06d1fd0213482ff50f0",
+      "kind": "duplicate",
+      "questionIds": [
+        2713,
+        2777
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "d06d1fd0213482ff50f040f39179c8847b86f39d86770cf4d3d0b3921fafe9d4",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2713,
+        "question": "Who voices Alice in the original English-language Alice in Wonderland (1951)?",
+        "answers": [
+          "Kathryn Beaumont",
+          "Verna Felton",
+          "Ilene Woods",
+          "Mary Costa"
+        ],
+        "difficulty": "medium",
+        "category": "movies",
+        "factId": "alice-in-wonderland.alice-voice",
+        "film": "Alice in Wonderland",
+        "explanation": "Kathryn Beaumont voices Alice.",
+        "source": "https://d23.com/a-to-z/alice-in-wonderland-film/",
+        "verifiedAt": "2026-11-10"
+      },
+      {
+        "id": 2777,
+        "question": "Who voices Wendy in the original English-language Peter Pan (1953)?",
+        "answers": [
+          "Kathryn Beaumont",
+          "Barbara Luddy",
+          "Ilene Woods",
+          "Mary Costa"
+        ],
+        "difficulty": "medium",
+        "category": "movies",
+        "factId": "peter-pan.wendy-voice",
+        "film": "Peter Pan",
+        "explanation": "Kathryn Beaumont voices Wendy.",
+        "source": "https://d23.com/a-to-z/peter-pan-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Beaumont voices both Alice and Wendy, but each actor-character link is a separate credit and cannot be established by knowing only the other."
+  },
+  {
+    "finding": {
+      "id": "duplicate-da342e638e384910728f",
+      "kind": "duplicate",
+      "questionIds": [
+        2722,
+        2723
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "da342e638e384910728fa5961fd46b41b0fabae9a4eb50e0157d5737ac0996f4",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2722,
+        "question": "Who voices Robin Hood in Disney's original English-language animated film (1973)?",
+        "answers": [
+          "Brian Bedford",
+          "Phil Harris",
+          "Peter Ustinov",
+          "Terry-Thomas"
+        ],
+        "difficulty": "hard",
+        "category": "movies",
+        "factId": "robin-hood.robin-voice",
+        "film": "Robin Hood",
+        "explanation": "Brian Bedford voices Robin Hood.",
+        "source": "https://d23.com/a-to-z/robin-hood-film/",
+        "verifiedAt": "2026-11-10"
+      },
+      {
+        "id": 2723,
+        "question": "Who voices Sir Hiss in the original English-language Robin Hood (1973)?",
+        "answers": [
+          "Terry-Thomas",
+          "Pat Buttram",
+          "Andy Devine",
+          "Ken Curtis"
+        ],
+        "difficulty": "hard",
+        "category": "movies",
+        "factId": "robin-hood.hiss-voice",
+        "film": "Robin Hood",
+        "explanation": "Terry-Thomas voices Sir Hiss.",
+        "source": "https://d23.com/a-to-z/robin-hood-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Brian Bedford voices Robin Hood and Terry-Thomas voices Sir Hiss. Different characters and actors within the film."
+  },
+  {
+    "finding": {
+      "id": "duplicate-dca267b4f449cb41c949",
+      "kind": "duplicate",
+      "questionIds": [
+        816,
+        2725
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "dca267b4f449cb41c94935e69264e959c6ea7266895954d0fd287933f0cf6e5b",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 816,
+        "question": "In Disney's Robin Hood, who rules England while King Richard is away?",
+        "answers": [
+          "Prince John",
+          "Sir Hiss",
+          "The Sheriff of Nottingham",
+          "Little John"
+        ],
+        "difficulty": "medium",
+        "category": "movies"
+      },
+      {
+        "id": 2725,
+        "question": "According to the story of Disney's Robin Hood (1973), where was King Richard captured while away from England?",
+        "answers": [
+          "On the Crusades",
+          "On a voyage to India",
+          "During a hunt in Sherwood Forest",
+          "At a tournament in Nottingham"
+        ],
+        "difficulty": "hard",
+        "category": "movies",
+        "factId": "robin-hood.richard-absence",
+        "film": "Robin Hood",
+        "explanation": "The story describes Richard as captured on the Crusades.",
+        "source": "https://d23.com/a-to-z/robin-hood-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Prince John ruling in Richard's absence does not establish the Crusades as the context of Richard's capture. Substitute ruler and cause/context of absence are distinct facts."
+  },
+  {
+    "finding": {
+      "id": "duplicate-df2c49fcd55f1894c53f",
+      "kind": "duplicate",
+      "questionIds": [
+        1596,
+        2704
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "df2c49fcd55f1894c53fec528143afec137af4b447dd586722aa63c71d8848a2",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 1596,
+        "question": "In Chicken Little (2005), which of these classmates bullies Chicken Little?",
+        "answers": [
+          "Foxy Loxy",
+          "Runt of the Litter",
+          "Fish Out of Water",
+          "Abby Mallard"
+        ],
+        "difficulty": "medium",
+        "category": "characters"
+      },
+      {
+        "id": 2704,
+        "question": "In Chicken Little (2005), what is the mayor's name?",
+        "answers": [
+          "Turkey Lurkey",
+          "Buck Cluck",
+          "Foxy Loxy",
+          "Runt of the Litter"
+        ],
+        "difficulty": "medium",
+        "category": "characters",
+        "factId": "chicken-little.mayor-name",
+        "film": "Chicken Little",
+        "explanation": "Turkey Lurkey is explicitly identified as mayor.",
+        "source": "https://d23.com/a-to-z/chicken-little-film-2005/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Foxy Loxy being a school bully does not identify Mayor Turkey Lurkey. Schoolmate and political office are different roles."
+  },
+  {
+    "finding": {
+      "id": "duplicate-df877d980c2628cfa7f5",
+      "kind": "duplicate",
+      "questionIds": [
+        2773,
+        2774
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "df877d980c2628cfa7f551b7c7cd9944e8ce87dad76b80273cd63c7ed41441e3",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2773,
+        "question": "Who narrates the Tigger Too story included in The Many Adventures of Winnie the Pooh (1977)?",
+        "answers": [
+          "Sebastian Cabot",
+          "Sterling Holloway",
+          "Paul Winchell",
+          "John Fiedler"
+        ],
+        "difficulty": "hard",
+        "category": "movies",
+        "factId": "the-many-adventures-of-winnie-the-pooh.narrator-cabot",
+        "film": "The Many Adventures of Winnie the Pooh",
+        "explanation": "Sebastian Cabot narrates Tigger Too, a story included in the 1977 feature.",
+        "source": "https://d23.com/a-to-z/winnie-the-pooh-and-tigger-too-film/",
+        "verifiedAt": "2026-11-10"
+      },
+      {
+        "id": 2774,
+        "question": "In the Tigger Too story in The Many Adventures of Winnie the Pooh (1977), what does Tigger promise so he can be rescued from a tree?",
+        "answers": [
+          "Never to bounce again",
+          "Never to eat honey again",
+          "Never to leave his house",
+          "Never to speak to Rabbit"
+        ],
+        "difficulty": "medium",
+        "category": "movies",
+        "factId": "the-many-adventures-of-winnie-the-pooh.tigger-no-bouncing-promise",
+        "film": "The Many Adventures of Winnie the Pooh",
+        "explanation": "Tigger promises to stop bouncing in exchange for help down from the tree.",
+        "source": "https://d23.com/a-to-z/winnie-the-pooh-and-tigger-too-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Cabot narrating the story does not establish Tigger's no-bouncing promise. Production credit and tree-rescue bargain are different facts."
+  },
+  {
+    "finding": {
+      "id": "duplicate-e7b424f61a82bad8e184",
+      "kind": "duplicate",
+      "questionIds": [
+        2714,
+        2750
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "e7b424f61a82bad8e184d2ff7c1560a9940a53df4ec6779ae757a857f73b8af3",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2714,
+        "question": "Who voices the Cheshire Cat in the original English-language Alice in Wonderland (1951)?",
+        "answers": [
+          "Sterling Holloway",
+          "Ed Wynn",
+          "Jerry Colonna",
+          "Bill Thompson"
+        ],
+        "difficulty": "hard",
+        "category": "movies",
+        "factId": "alice-in-wonderland.cheshire-voice",
+        "film": "Alice in Wonderland",
+        "explanation": "Sterling Holloway voices the Cheshire Cat.",
+        "source": "https://d23.com/a-to-z/alice-in-wonderland-film/",
+        "verifiedAt": "2026-11-10"
+      },
+      {
+        "id": 2750,
+        "question": "Who narrates Peter and the Wolf in Make Mine Music (1946)?",
+        "answers": [
+          "Sterling Holloway",
+          "Bing Crosby",
+          "Basil Rathbone",
+          "Jerry Colonna"
+        ],
+        "difficulty": "hard",
+        "category": "movies",
+        "factId": "make-mine-music.peter-wolf-narrator",
+        "film": "Make Mine Music",
+        "explanation": "Sterling Holloway narrates Peter and the Wolf.",
+        "source": "https://d23.com/a-to-z/make-mine-music-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Holloway voices the Cheshire Cat and narrates Peter and the Wolf. Different character and narration performances in different films."
+  },
+  {
+    "finding": {
+      "id": "duplicate-ee1a2f3b7740c0dd1cdd",
+      "kind": "duplicate",
+      "questionIds": [
+        216,
+        2769
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "ee1a2f3b7740c0dd1cdd1963bf3b8c535e65700369a0889c797a5056a678ae85",
+      "priority": 3,
+      "signals": [
+        "shared-answer"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 216,
+        "question": "In The Nightmare Before Christmas, Jack Skellington is the Pumpkin King of a town devoted to which holiday?",
+        "answers": [
+          "Halloween",
+          "Christmas",
+          "Easter",
+          "Thanksgiving"
+        ],
+        "difficulty": "easy",
+        "category": "movies"
+      },
+      {
+        "id": 2769,
+        "question": "On which holiday evening does Ichabod encounter the Headless Horseman in Disney's 1949 film?",
+        "answers": [
+          "Halloween",
+          "Christmas Eve",
+          "New Year's Eve",
+          "Thanksgiving"
+        ],
+        "difficulty": "easy",
+        "category": "movies",
+        "factId": "the-adventures-of-ichabod-and-mr-toad.horseman-holiday",
+        "film": "The Adventures of Ichabod and Mr. Toad",
+        "explanation": "Ichabod encounters the phantom while riding home on Halloween.",
+        "source": "https://d23.com/a-to-z/adventures-of-ichabod-and-mr-toad-the-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Halloween is a shared holiday, but Jack's town theme and the date of Ichabod's encounter are independent fictional settings/events."
+  },
+  {
+    "finding": {
+      "id": "duplicate-f1a25ce479ff16e56a2c",
+      "kind": "duplicate",
+      "questionIds": [
+        2776,
+        2777
+      ],
+      "detail": "Could memorizing one answer solve the other without learning a new fact?",
+      "signature": "f1a25ce479ff16e56a2c7316172c2dc89d7bae9f602965bef2bd160838e10d93",
+      "priority": 2,
+      "signals": [
+        "similar-stems"
+      ],
+      "decision": null
+    },
+    "questions": [
+      {
+        "id": 2776,
+        "question": "Who voices Peter Pan in Disney's original English-language animated film (1953)?",
+        "answers": [
+          "Bobby Driscoll",
+          "Tommy Kirk",
+          "Paul Petersen",
+          "Kevin Corcoran"
+        ],
+        "difficulty": "medium",
+        "category": "movies",
+        "factId": "peter-pan.peter-voice",
+        "film": "Peter Pan",
+        "explanation": "Bobby Driscoll voices Peter Pan.",
+        "source": "https://d23.com/a-to-z/peter-pan-film/",
+        "verifiedAt": "2026-11-10"
+      },
+      {
+        "id": 2777,
+        "question": "Who voices Wendy in the original English-language Peter Pan (1953)?",
+        "answers": [
+          "Kathryn Beaumont",
+          "Barbara Luddy",
+          "Ilene Woods",
+          "Mary Costa"
+        ],
+        "difficulty": "medium",
+        "category": "movies",
+        "factId": "peter-pan.wendy-voice",
+        "film": "Peter Pan",
+        "explanation": "Kathryn Beaumont voices Wendy.",
+        "source": "https://d23.com/a-to-z/peter-pan-film/",
+        "verifiedAt": "2026-11-10"
+      }
+    ],
+    "reviewer": "Codex",
+    "at": "2026-11-10",
+    "status": "accepted",
+    "reason": "Bobby Driscoll voices Peter and Kathryn Beaumont voices Wendy. Different actor-character credits, not a reworded attribution."
+  }
+]

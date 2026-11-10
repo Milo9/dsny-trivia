@@ -1,4 +1,4 @@
-# Development and release notes — v1.47
+# Development and release notes — v1.48
 
 This remains a static app. There is no build step. npm dependencies are for
 verification only; production uses the Firebase compat CDN scripts.
@@ -70,8 +70,11 @@ offline after an initial online visit and cache installation. `sw.js` caches onl
 same-origin app assets and questions; database requests remain network-only.
 The service worker never caches the admin page or update probes.
 
-There are 1,855 active questions plus 185 preserved retired duplicates after all
-forty-two sequential audit batches. See questions/retired.json for the retained
+There are 1,995 active questions plus 185 preserved retired duplicates after all
+forty-two sequential audit batches and two generation rounds adding 140 questions.
+The latest round adds 100 questions across 20 theatrical films; evidence and coverage
+are recorded in audit/runs/generation-0002-notes.md. The earlier 40-question round
+is recorded in audit/runs/generation-0001-notes.md. See questions/retired.json for the retained
 snapshots and replacement IDs. Retired IDs must not be reused. Optional question metadata:
 
 ```json
@@ -84,8 +87,8 @@ snapshots and replacement IDs. Retired IDs must not be reused. Optional question
 }
 ```
 
-Fact IDs must be unique across active questions. Sources must be HTTPS. Seven
-active questions include verified explanations and links. All 1,855 active questions
+Fact IDs must be unique across active questions. Sources must be HTTPS. There are 147
+active questions with verified explanations and links. All 1,995 active questions
 now have current manual review and four-option evidence; explanations and links
 embedded in the playable question objects remain incremental metadata.
 The admin page exports difficulty recommendations once a question has at least
@@ -129,14 +132,14 @@ versions. `npm audit` reported zero vulnerabilities after installing them.
 
 ## Deployment
 
-Release v1.47 publishes completed question-audit batches 37 through 42.
-Current approval is 1,855 of 1,855 active questions, with no remaining legacy
-verification backlog or open findings. Duplicate removals retain
-their historical snapshots in `questions/retired.json`. This release changes no
-Firestore rules or player data.
+Release v1.48 publishes both question-generation rounds: 140 new questions,
+bringing current approval to 1,995 of 1,995 active questions with no open findings.
+The new q-010 shard is included in the question manifest. The 185 retired
+historical snapshots remain preserved. This release changes no Firestore rules
+or player data.
 
-The version and offline cache are synchronized to v1.47. Release verification
-results are recorded in audit/runs/release-1.47-notes.md. The next question audit
+The version and offline cache are synchronized to v1.48. Release verification
+results are recorded in audit/runs/release-1.48-notes.md. The next question audit
 work follows new content, new concerns, or scheduled rechecks; the sequential
 queue has no remaining unaudited chunk.
 
