@@ -22,4 +22,6 @@ The initial sandbox test attempt failed on temporary-directory permissions, and 
 
 Raw local verification logs and screenshots are under ignored `artifacts/`. Publication verification will check GitHub App checks, Pages deployment and the live version/cache plus both changed active shards and the retired snapshots against the committed release.
 
+The first GitHub App checks run for commit 66c8069 passed unit tests, demo emulator tests, corpus validation, the audit gate and Python tests, then failed before browser tests because ubuntu-latest had moved to Ubuntu 26.04. Its log explicitly reports that Playwright 1.60.0 cannot install Chromium on that platform. The App checks runner is now pinned to ubuntu-24.04, which the pinned Playwright dependency supports. This CI-only follow-up preserves v1.47's app and question content; the replacement workflow run verifies the runner correction.
+
 The unrelated APP_AUDIT.md deletion and debug.log are excluded from the release commit. The completed audits' original notes remain historical records of their local completion; this release records their subsequent publication scope.
