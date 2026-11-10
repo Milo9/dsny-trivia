@@ -1,4 +1,4 @@
-# Development and release notes — v1.49
+# Development and release notes — v1.50
 
 This remains a static app. There is no build step. npm dependencies are for
 verification only; production uses the Firebase compat CDN scripts.
@@ -70,13 +70,14 @@ offline after an initial online visit and cache installation. `sw.js` caches onl
 same-origin app assets and questions; database requests remain network-only.
 The service worker never caches the admin page or update probes.
 
-There are 2,095 active questions plus 185 preserved retired duplicates after all
-forty-two sequential audit batches and three generation rounds adding 240 questions.
-The latest round adds 100 questions across 20 underrepresented classic live-action
-theatrical films; evidence and coverage are recorded in audit/runs/generation-0003-notes.md.
-The prior rounds are recorded in audit/runs/generation-0002-notes.md and
-audit/runs/generation-0001-notes.md. See questions/retired.json for the retained
-snapshots and replacement IDs. Retired IDs must not be reused. Optional question metadata:
+There are 2,195 active questions plus 185 preserved retired duplicates in the
+working bank after forty-two sequential audit batches and four generation rounds
+adding 340 questions. The latest 100 questions cover 16 live-action films, two
+Pixar features, Disneyland Paris and Disney Adventure. See
+audit/runs/generation-0004-notes.md for coverage and evidence. The prior rounds
+are recorded in audit/runs/generation-0001-notes.md through generation-0003-notes.md.
+See questions/retired.json for preserved snapshots and replacement IDs.
+Optional question metadata:
 
 ```json
 {
@@ -88,8 +89,8 @@ snapshots and replacement IDs. Retired IDs must not be reused. Optional question
 }
 ```
 
-Fact IDs must be unique across active questions. Sources must be HTTPS. There are 247
-active questions with verified explanations and links. All 2,095 active questions
+Fact IDs must be unique across active questions. Sources must be HTTPS. There are 347
+active questions with verified explanations and links. All 2,195 active questions
 now have current manual review and four-option evidence; explanations and links
 embedded in the playable question objects remain incremental metadata.
 The admin page exports difficulty recommendations once a question has at least
@@ -132,6 +133,10 @@ Development dependency overrides pin patched grpc, telemetry, uuid, and re2
 versions. `npm audit` reported zero vulnerabilities after installing them.
 
 ## Deployment
+
+Release v1.50 publishes generation round 4 and brings the active bank to
+2,195 approved questions. q-010 contains 220 questions. The app and offline cache
+use v1.50. See audit/runs/release-1.50-notes.md for release verification.
 
 Release v1.49 publishes generation round 3: 100 new questions across 20 classic
 live-action theatrical films, bringing approval to 2,095 of 2,095 active questions
