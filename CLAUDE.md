@@ -92,8 +92,10 @@ deleting a line. Full procedure: QUESTION_AUDIT.md.
   player data (this happened once, 2026-08-12).
 - Deploy: `.\deploy.ps1 -Message "..."` (or `-MessageFile <path outside repo>` for
   multi-line). It refuses untracked files unless `-IncludeUntracked`; `-DryRun` stops
-  before commit. It bumps `APP_VERSION`, syncs every `?v=` and the `sw.js` cache name —
-  don't hand-bump.
+  before commit. It bumps `APP_VERSION` (only when a code file changed), syncs every `?v=`
+  and the `sw.js` cache name. **Content-only releases** (questions/) don't trigger the
+  bump: set `APP_VERSION` +1 in app.js yourself so installed apps refresh their offline
+  bank; the script then syncs everything else.
 - `question_audit.py check` fails once a scheduled recheck is overdue, which blocks
   deploy and CI (see backlog #5).
 

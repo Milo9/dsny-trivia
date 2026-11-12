@@ -34,3 +34,11 @@ Upon a Star, while Dream-class ships play several tunes (the likely source of th
 
 Result: complete-for-scope, 11 reviewed, 10 approved, 10 edited, 1 retired.
 Gate: 0 errors. Leak findings for the scope are fixed or decided.
+
+## Player flags closed (production, owner-authorized via backlog #6)
+
+After 510bd87 was live on Pages, all six open flags were closed with the same atomic
+write review.html performs (immutable `resolutions` event + parent `_resolved`),
+reviewer "Claude (for Milo)", outcome `fixed`, each referencing the commit that
+published its fix: #911 x2 -> 4082fb7 (retired), #2432 -> 510bd87, #2080 / #708 /
+#138 -> f46f0a4. Read-back confirmed; 0 of 13 flags open on 2026-11-12.

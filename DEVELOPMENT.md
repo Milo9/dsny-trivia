@@ -139,6 +139,10 @@ GitHub Pages builds `main` with Jekyll; `_config.yml` excludes `audit/`, `docs/`
 (they remain public in the repository). Anything the app or review.html fetches must
 stay published; add new runtime files outside those excluded paths.
 
+`deploy.ps1` bumps APP_VERSION only when a code file changed. For a question-only
+release, raise APP_VERSION in app.js by hand first so installed clients refresh the
+offline bank; the script then syncs `?v=` strings and the service-worker cache.
+
 Release v1.52 removes answer giveaways from ten questions, replaces #2432's
 implausible distractors, and retires #976 (leak; duplicate of #1399's fact), leaving
 2,194 approved active questions. See audit/runs/release-1.52-flag-followup-notes.md.
