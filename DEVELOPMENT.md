@@ -73,7 +73,13 @@ wifi) is served from the cache while the network request finishes in the backgro
 for 30 s after a stall, later requests wait only 300 ms. `loadQuestions()` publishes
 `QUESTIONS` only after every file loads, so the static practice button cannot open
 settings mid-boot. The isolated browser suite serves the test copy through
-`scripts/stall_server.py` and checks a stalled-wifi reload in both browsers.
+`scripts/stall_server.py` and checks a stalled-wifi reload in both browsers, plus a
+stall with the real FirebaseAdapter and a never-answering Firebase CDN/Firestore
+(practice must start and stay running past bootstrap's CDN time limits).
+
+The home hero shrinks on short screens (style.css, max-height 760/700/600 px) so the
+first two players fit at 375x667 (~60 px spare) and at Safari's ~548 px usable
+height. The browser suite asserts the 667 px case and prints 647/548 px positions.
 The service worker never caches the admin page or update probes.
 
 There are 2,194 active questions plus 186 preserved retired snapshots in the
@@ -120,6 +126,10 @@ npm run test:emulator
 python scripts/visual_check.py --out artifacts/chromium
 python scripts/visual_check.py --browser webkit --out artifacts/webkit
 ```
+
+`visual_check.py` aborts with exit code 3 if a run exceeds 20 minutes
+(`VISUAL_CHECK_WATCHDOG_S`), printing the last completed check, so a hung browser
+step fails deploy/CI instead of freezing it.
 
 The emulator command explicitly uses `demo-disney-trivia`; it must never target
 production. Browser checks cover keyboard controls, persistence, lost save

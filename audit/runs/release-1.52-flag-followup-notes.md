@@ -48,6 +48,11 @@ says "reworded in v1.43" and links f46f0a4, but the reword actually shipped in v
 (f65c42a). Resolution events are immutable; correcting it needs a reopen + re-resolve
 in review.html, pending the owner's OK.
 
+**Corrected 2026-11-12 (owner OK):** appended `reopened` event JKMWKEkTuH58HGmZE6ls
+(explaining the wrong link) and a new `fixed` event UbxZUxAyCj9uoTEhIHBQ linking
+f65c42aea0b6e40d80f8e950e96277983084f800 (v1.46). Read-back: flag resolved, current
+decision is the corrected one; the original event remains as history.
+
 Follow-up the same day: #1236's ship-decor source was replaced with one actually
 inspected (KennyThePirate, Dec 2019; the AllEars page returned 403), and #427's
 challenge note was narrowed to what the January 2026 answer states. Both reviews were

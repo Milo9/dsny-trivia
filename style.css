@@ -1859,3 +1859,11 @@ body { background: radial-gradient(ellipse at 50% 0%, #343451, transparent 55%),
   .library-caption { font-size: 13px; margin: 0; }
   .magic-welcome { font-size: 14px; line-height: 1.35; margin: 8px 0 0; text-wrap: balance; }
 }
+@media (max-height: 700px) {
+  .enchanted-rose { width: min(100%, 260px, max(100px, 20vh)); }
+  .library-caption { display: none; }
+}
+@media (max-height: 600px) {
+  /* Safari with toolbars on a 667px phone leaves ~548px. */
+  .magic-kicker, .magic-welcome { display: none; }
+}

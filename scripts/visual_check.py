@@ -20,11 +20,13 @@ Usage (from project root):
 Requires: pip install playwright && python -m playwright install chromium
 """
 import argparse
+import os
 import shutil
 import socket
 import subprocess
 import sys
 import tempfile
+import threading
 import time
 from pathlib import Path
 
@@ -37,6 +39,11 @@ ROOT = Path(__file__).resolve().parent.parent
 FIREBASE_LINE = "const storage = new FirebaseAdapter();"
 LOCAL_LINE = "const storage = new LocalStorageAdapter();"
 SETTLE_MS = 450  # circle-wipe screen transition is 0.35s
+# A hung browser step (e.g. a context close waiting on a stalled request; Playwright
+# has no close timeout) must fail the run, not freeze deploy.ps1/CI indefinitely.
+# A full run takes a few minutes; this bound is generous for slow CI runners.
+WATCHDOG_S = int(os.environ.get("VISUAL_CHECK_WATCHDOG_S", "1200"))
+LAST_LABEL = ["(none yet)"]
 
 
 def copy_site(dest: Path) -> None:
@@ -73,7 +80,8 @@ class Check:
         self.page, self.out, self.failures, self.n = page, out, [], 0
 
     def ok(self, cond, label):
-        print(("  PASS  " if cond else "  FAIL  ") + label)
+        LAST_LABEL[0] = label
+        print(("  PASS  " if cond else "  FAIL  ") + label, flush=True)
         if not cond:
             self.failures.append(label)
 
@@ -107,6 +115,16 @@ def main():
     set_stall = lambda on: stall_flag.touch() if on else stall_flag.unlink(missing_ok=True)
     server = subprocess.Popen([sys.executable, str(Path(__file__).resolve().parent / "stall_server.py"), str(port), str(stall_flag)],
                               cwd=site, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    def watchdog():
+        print(f"ABORT: browser checks hung for {WATCHDOG_S}s; last completed check: {LAST_LABEL[0]}", flush=True)
+        try:
+            server.terminate()
+        except Exception:
+            pass
+        os._exit(3)
+    timer = threading.Timer(WATCHDOG_S, watchdog)
+    timer.daemon = True
+    timer.start()
     firestore_hits, errors = [], []
     try:
         time.sleep(1.0)
@@ -181,6 +199,13 @@ def main():
             bottom = page.evaluate("() => { const u = document.querySelectorAll('.user-card'); "
                                    "return u.length > 1 ? u[1].getBoundingClientRect().bottom : 1e9; }")
             c.ok(bottom <= 667, f"first two players visible above the fold at 375x667 (bottom {bottom:.0f}px)")
+            # Informational: Safari's toolbars leave ~548px on a 667px-tall phone.
+            for h in (647, 548):
+                page.set_viewport_size({"width": 375, "height": h})
+                page.wait_for_timeout(200)
+                b = page.evaluate("() => [...document.querySelectorAll('.user-card')].map(u => Math.round(u.getBoundingClientRect().bottom))")
+                print(f"  INFO  375x{h}: player card bottoms {b[:2]}")
+            page.set_viewport_size({"width": 375, "height": 667})
             pick_player("Kristen")
             c.ok(not c.visible("#confirm-overlay"), "no resume prompt with no checkpoint")
             c.shot("settings")
@@ -385,6 +410,7 @@ def main():
             run_regressions(browser, base, c, lambda: (server.terminate(), server.wait(timeout=5)), set_stall)
             browser.close()
     finally:
+        timer.cancel()
         server.terminate()
         shutil.rmtree(site, ignore_errors=True)
 

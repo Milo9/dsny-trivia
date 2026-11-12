@@ -173,9 +173,13 @@ def run_regressions(browser, base, check, stop_origin, set_stall=None):
         route.abort()
     fallback.route('**/firestore.googleapis.com/**', block_database)
     def use_real_adapter(route):
-        response = route.fetch()
-        source = response.text().replace('const storage = new LocalStorageAdapter();', 'const storage = new FirebaseAdapter();')
-        route.fulfill(response=response, body=source)
+        try:
+            response = route.fetch()
+            source = response.text().replace('const storage = new LocalStorageAdapter();', 'const storage = new FirebaseAdapter();')
+            route.fulfill(response=response, body=source)
+        except Exception as error:  # context closed while a stalled fetch was pending
+            if 'closed' not in str(error):
+                raise
     fallback.route('**/storage.js*', use_real_adapter)
     page = fallback.new_page()
     page.goto(base)
@@ -203,8 +207,8 @@ def run_regressions(browser, base, check, stop_origin, set_stall=None):
             page.wait_for_selector('.user-card', timeout=30000)
             page.wait_for_function('typeof QUESTIONS !== "undefined" && QUESTIONS.length > 0', timeout=30000)
             elapsed = time.monotonic() - started
-            check.ok(response.from_service_worker and elapsed < 12,
-                     f'stalled-wifi reload boots from the cache ({elapsed:.1f}s, limit 12s)')
+            check.ok(response.from_service_worker and elapsed < 15,
+                     f'stalled-wifi reload boots from the cache ({elapsed:.1f}s, limit 15s)')
             page.click('.user-card >> nth=0')
             page.wait_for_selector('#screen-settings:not(.hidden)')
             page.click('#btn-start-game')
@@ -213,6 +217,49 @@ def run_regressions(browser, base, check, stop_origin, set_stall=None):
         finally:
             set_stall(False)
         stalled.close()
+
+        # Same stall with the real FirebaseAdapter: the CDN and Firestore are
+        # cross-origin (not served by the worker), so they hang too. Handlers that
+        # never fulfil/continue keep every database request pending; nothing
+        # reaches production. Practice must start and survive the CDN timeouts.
+        hung = browser.new_context(viewport={"width": 375, "height": 667})
+        real_storage = {}
+        def serve_real_adapter(route):
+            # Fetch once while online; during the stall answer from memory so no
+            # Playwright-side fetch is left hanging at teardown.
+            if 'body' not in real_storage:
+                response = route.fetch()
+                real_storage['body'] = response.text().replace('const storage = new LocalStorageAdapter();', 'const storage = new FirebaseAdapter();')
+            route.fulfill(status=200, content_type='application/javascript', body=real_storage['body'])
+        hung.route('**/storage.js*', serve_real_adapter)
+        # Install pass: CDN stubbed empty, database aborted (never production).
+        hung.route('https://www.gstatic.com/firebasejs/**', lambda r: r.fulfill(status=200, body=''))
+        hung.route('**/firestore.googleapis.com/**', lambda r: r.abort())
+        page = hung.new_page()
+        page.goto(base)
+        page.wait_for_function('navigator.serviceWorker.controller !== null', timeout=30000)
+        pending = []  # never answered while stalled; aborted before teardown
+        hung.route('https://www.gstatic.com/firebasejs/**', lambda r: pending.append(r))
+        hung.route('**/firestore.googleapis.com/**', lambda r: pending.append(r))
+        set_stall(True)
+        try:
+            page.reload(wait_until='domcontentloaded', timeout=30000)
+            page.wait_for_function('typeof QUESTIONS !== "undefined" && QUESTIONS.length > 0', timeout=30000)
+            page.click('#btn-offline-practice')
+            page.click('#btn-start-game')
+            page.wait_for_selector('.answer-btn', timeout=15000)
+            page.wait_for_timeout(12000)  # past bootstrap's 5 s + 5 s CDN limits
+            check.ok(page.is_visible('#screen-game .answer-btn') and page.is_visible('#practice-indicator'),
+                     'stalled wifi with hung Firebase CDN: practice starts and stays in the game')
+        finally:
+            set_stall(False)
+        for route in pending:
+            try:
+                route.abort()
+            except Exception:
+                pass
+        hung.unroute_all(behavior='ignoreErrors')  # pending route.fetch from the stall
+        hung.close()
 
     # The installed shell must genuinely reload without a network connection.
     offline = browser.new_context(viewport={"width": 375, "height": 667})

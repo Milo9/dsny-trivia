@@ -132,7 +132,8 @@ never exercised. Prefer pinning the dev dependency to 10.12 over bumping product
 before the cruise. *Small.*
 
 **14. ✅ DONE 2026-11-12 (v1.53) — Home screen at 375×667: player list below the fold.**
-Hero tightens under 760 px tall; browser check asserts both players are above the fold.
+Hero tightens under 760/700/600 px tall; both players fit at 375x667 and at ~548 px
+(Safari with toolbars); browser check asserts the 667 case. Not yet seen on a real phone.
 Original item: Belle hero card fills the
 first viewport; "Who's playing?" sits at the bottom edge, Cara is off-screen. Confirm
 on a real phone; shrink hero on small heights. Only 2 of 19 screenshots were viewed —
