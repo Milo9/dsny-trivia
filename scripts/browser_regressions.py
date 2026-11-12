@@ -1,5 +1,7 @@
 """Adversarial UI checks on the same isolated LocalStorageAdapter test site."""
-def run_regressions(browser, base, check, stop_origin):
+import time
+
+def run_regressions(browser, base, check, stop_origin, set_stall=None):
     ctx = browser.new_context(viewport={"width": 375, "height": 667}, service_workers="block")
     ctx.route("**/firestore.googleapis.com/**", lambda r: r.abort())
     ctx.route("https://www.gstatic.com/firebasejs/**", lambda r: r.fulfill(status=200, body=""))
@@ -183,6 +185,34 @@ def run_regressions(browser, base, check, stop_origin):
     page.wait_for_selector('.answer-btn')
     check.ok(page.is_visible('#practice-indicator') and not hits, 'blocked Firebase CDN leaves practice usable without database traffic')
     fallback.close()
+
+    # Stalled wifi (connected, but requests never answer) must fall back to the
+    # cache quickly instead of hanging until the app's own 10 s fetch timeouts.
+    if set_stall:
+        stalled = browser.new_context(viewport={"width": 375, "height": 667})
+        stalled.route('https://www.gstatic.com/firebasejs/**', lambda r: r.fulfill(status=200, body=''))
+        stalled.route('**/firestore.googleapis.com/**', lambda r: r.abort())
+        page = stalled.new_page()
+        page.goto(base)
+        page.wait_for_selector('.user-card')
+        page.wait_for_function('navigator.serviceWorker.controller !== null', timeout=20000)
+        set_stall(True)
+        try:
+            started = time.monotonic()
+            response = page.reload(wait_until='domcontentloaded', timeout=30000)
+            page.wait_for_selector('.user-card', timeout=30000)
+            page.wait_for_function('typeof QUESTIONS !== "undefined" && QUESTIONS.length > 0', timeout=30000)
+            elapsed = time.monotonic() - started
+            check.ok(response.from_service_worker and elapsed < 12,
+                     f'stalled-wifi reload boots from the cache ({elapsed:.1f}s, limit 12s)')
+            page.click('.user-card >> nth=0')
+            page.wait_for_selector('#screen-settings:not(.hidden)')
+            page.click('#btn-start-game')
+            page.wait_for_selector('.answer-btn', timeout=15000)
+            check.ok(True, 'stalled-wifi boot can start a game from cached questions')
+        finally:
+            set_stall(False)
+        stalled.close()
 
     # The installed shell must genuinely reload without a network connection.
     offline = browser.new_context(viewport={"width": 375, "height": 667})

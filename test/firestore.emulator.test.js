@@ -2,7 +2,14 @@ const {test,before,after,beforeEach}=require('node:test');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const {initializeTestEnvironment,assertFails,assertSucceeds}=require('@firebase/rules-unit-testing');
-const firebase=require('firebase/compat/app');require('firebase/compat/firestore');
+// Same Firebase compat version production loads from the CDN (bootstrap.js,
+// review.html); keep the firebase-cdn alias in package.json in step with it.
+// rules-unit-testing keeps its own newer firebase peer for the rules context.
+const firebase=require('firebase-cdn/compat/app');require('firebase-cdn/compat/firestore');
+for(const page of ['bootstrap.js','review.html']) {
+  const cdn=[...fs.readFileSync(page,'utf8').matchAll(/firebasejs\/([0-9.]+)\//g)].map(m=>m[1]);
+  assert.ok(cdn.length && cdn.every(v=>v===firebase.SDK_VERSION),`${page} CDN Firebase ${cdn} must match the tested SDK ${firebase.SDK_VERSION} (package.json firebase-cdn)`);
+}
 const L=require('../game-logic.js');const {scoreReset}=require('../data-logic.js');
 const project='demo-disney-trivia';
 let env,adapter,db;

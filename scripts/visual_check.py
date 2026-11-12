@@ -101,7 +101,11 @@ def main():
     copy_site(site)
     port = free_port()
     base = f"http://127.0.0.1:{port}/index.html"
-    server = subprocess.Popen([sys.executable, "-m", "http.server", str(port), "--bind", "127.0.0.1"],
+    # Stall flag lives outside the served copy; while it exists the server accepts
+    # requests but never answers (simulated stalled wifi, backlog #12).
+    stall_flag = site.parent / (site.name + ".stall")
+    set_stall = lambda on: stall_flag.touch() if on else stall_flag.unlink(missing_ok=True)
+    server = subprocess.Popen([sys.executable, str(Path(__file__).resolve().parent / "stall_server.py"), str(port), str(stall_flag)],
                               cwd=site, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     firestore_hits, errors = [], []
     try:
@@ -112,7 +116,7 @@ def main():
                 c = Check(None, out)
                 run_admin_checks(browser, base, c)
                 if not args.admin_only:
-                    run_regressions(browser, base, c, lambda: (server.terminate(), server.wait(timeout=5)))
+                    run_regressions(browser, base, c, lambda: (server.terminate(), server.wait(timeout=5)), set_stall)
                 browser.close()
                 print(f"Screenshots: {out}")
                 return 1 if c.failures else 0
@@ -172,6 +176,11 @@ def main():
             page.goto(base)
             boot()
             c.shot("home")
+            # Backlog #14: at 375x667 the first two players must be fully visible
+            # without scrolling (the hero card used to push them below the fold).
+            bottom = page.evaluate("() => { const u = document.querySelectorAll('.user-card'); "
+                                   "return u.length > 1 ? u[1].getBoundingClientRect().bottom : 1e9; }")
+            c.ok(bottom <= 667, f"first two players visible above the fold at 375x667 (bottom {bottom:.0f}px)")
             pick_player("Kristen")
             c.ok(not c.visible("#confirm-overlay"), "no resume prompt with no checkpoint")
             c.shot("settings")
@@ -373,7 +382,7 @@ def main():
                 idx.write_text(orig, encoding="utf-8")
 
             run_admin_checks(browser, base, c)
-            run_regressions(browser, base, c, lambda: (server.terminate(), server.wait(timeout=5)))
+            run_regressions(browser, base, c, lambda: (server.terminate(), server.wait(timeout=5)), set_stall)
             browser.close()
     finally:
         server.terminate()

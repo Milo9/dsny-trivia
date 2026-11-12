@@ -68,6 +68,12 @@ after there is relevant history. Practice does not award competitive points or
 update competitive accuracy. The separate home-screen practice entry also works
 offline after an initial online visit and cache installation. `sw.js` caches only
 same-origin app assets and questions; database requests remain network-only.
+Requests are network-first, but a request that gets no answer within 4 s (stalled
+wifi) is served from the cache while the network request finishes in the background;
+for 30 s after a stall, later requests wait only 300 ms. `loadQuestions()` publishes
+`QUESTIONS` only after every file loads, so the static practice button cannot open
+settings mid-boot. The isolated browser suite serves the test copy through
+`scripts/stall_server.py` and checks a stalled-wifi reload in both browsers.
 The service worker never caches the admin page or update probes.
 
 There are 2,194 active questions plus 186 preserved retired snapshots in the
@@ -129,8 +135,14 @@ and asserts the reload is served by the service worker. This avoids Playwright's
 [known WebKit offline-emulation defect](https://github.com/microsoft/playwright/issues/42775),
 fixed upstream in 1.64. This is not a substitute for a real iPhone airplane-mode test.
 
-Development dependency overrides pin patched grpc, telemetry, uuid, and re2
-versions. `npm audit` reported zero vulnerabilities after installing them.
+Development dependency overrides pin patched grpc, telemetry, uuid, re2 and undici
+versions. On 2026-11-12 `npm audit` reported 11 moderate advisories, all in the
+firebase-tools dependency tree (CLI/emulator tooling, never shipped).
+
+The emulator tests load Firebase through the `firebase-cdn` alias
+(`npm:firebase@10.12.0`), the same compat SDK version that bootstrap.js and review.html
+load from the CDN, and fail if those versions diverge. Upgrade the CDN URLs and the
+alias together. `@firebase/rules-unit-testing` keeps its own newer `firebase` peer.
 
 ## Deployment
 

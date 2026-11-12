@@ -116,18 +116,24 @@ evidence for all; backfilling `explanation`/`source` is feasible. *Medium.*
 
 ## D. Verify before changing
 
-**12. Offline fallback likely fails on stalled (not dead) wifi.** `sw.js` is
+**12. ✅ DONE 2026-11-12 (v1.53) — Offline fallback likely fails on stalled (not dead) wifi.**
+Confirmed: with the old sw.js a stalled reload hung >30 s. Now 4 s network wait then cache
+(300 ms while stalled); stalled-wifi browser test added; also fixed a boot race where
+the practice button opened settings and boot sent it back home. Original item: `sw.js` is
 network-first with no timeout. `fetchWithTimeout` (app.js ~1799) aborts at 10 s, which
 probably surfaces the load error before the SW cache fallback runs. Browser tests only
 cover an unavailable origin. Verify with a throttled/stalled connection; fix by racing
 network vs ~4 s then cache in sw.js. *Small–Medium; most cruise-relevant item.*
 
-**13. Firebase SDK mismatch.** Production CDN 10.12.0 (bootstrap.js, review.html);
+**13. ✅ DONE 2026-11-12 (v1.53) — Firebase SDK mismatch.** Emulator tests now use
+`firebase-cdn` (npm:firebase@10.12.0) and assert it matches the CDN URLs. Original item: Production CDN 10.12.0 (bootstrap.js, review.html);
 emulator tests use firebase 13.1.0; browser tests stub the CDN. Production SDK path
 never exercised. Prefer pinning the dev dependency to 10.12 over bumping production
 before the cruise. *Small.*
 
-**14. Home screen at 375×667: player list below the fold.** Belle hero card fills the
+**14. ✅ DONE 2026-11-12 (v1.53) — Home screen at 375×667: player list below the fold.**
+Hero tightens under 760 px tall; browser check asserts both players are above the fold.
+Original item: Belle hero card fills the
 first viewport; "Who's playing?" sits at the bottom edge, Cara is off-screen. Confirm
 on a real phone; shrink hero on small heights. Only 2 of 19 screenshots were viewed —
 a fuller visual pass may find more. *Small.*

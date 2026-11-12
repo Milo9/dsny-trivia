@@ -1,4 +1,4 @@
-const APP_VERSION = '1.52';
+const APP_VERSION = '1.53';
 
 const _localMemory = new Map();
 let _localDurable = true;
@@ -1793,9 +1793,13 @@ function fetchWithTimeout(url, opts = {}, timeoutMs = 10000) {
 async function loadQuestions() {
   const manifest = await fetchWithTimeout('questions/manifest.json', { cache: 'no-cache' }).then(r => r.json());
   const shards = await Promise.all(manifest.shards.map(s => fetchWithTimeout(s, { cache: 'no-cache' }).then(r => r.json())));
-  QUESTIONS = shards.flat();
-  if(!QUESTIONS.length || !QUESTIONS.every(validQuestion)) throw new Error('Question data could not be verified.');
+  const active = shards.flat();
+  if(!active.length || !active.every(validQuestion)) throw new Error('Question data could not be verified.');
   if(manifest.retired) RETIRED_QUESTIONS=await fetchWithTimeout(manifest.retired,{cache:'no-cache'}).then(r=>r.json());
+  // Publish only once loading is complete: the static "Practice without saving"
+  // button checks QUESTIONS.length, and on slow wifi a tap during the retired.json
+  // fetch would open settings only for init()'s renderHome() to send it back home.
+  QUESTIONS = active;
 }
 
 async function loadMovies() {
