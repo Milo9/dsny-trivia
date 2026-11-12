@@ -166,8 +166,8 @@ release, raise APP_VERSION in app.js by hand first so installed clients refresh 
 offline bank; the script then syncs `?v=` strings and the service-worker cache.
 
 Release v1.55 tiers scheduled rechecks (QUESTION_AUDIT.md rule 7, backlog #5): the
-220 rechecks due 2027-01/02 became 48 historical (no recheck), 6 changeable (due
-2027-01/02) and 163 stable (staggered 2027-07..10, ~50/month), and #2560, #2561
+220 rechecks due 2027-01/02 became 48 historical (no recheck), 11 changeable (due
+2027-01/02) and 158 stable (staggered 2027-07..10, ~50/month), and #2560, #2561
 and #2277 (single-listing questions) were retired without replacement, leaving
 2,191 approved active questions. `status` prints the upcoming recheck calendar.
 See audit/runs/2026-11-12-recheck-tiers-notes.md.

@@ -198,6 +198,11 @@ def reschedule_reviews(corpus, ledger, request, as_of):
         review = current_review(entry, by_id[qid], as_of)
         if not review or not review.get('verification'):
             raise ValueError(f'#{qid}: needs a current source-verified review to reschedule')
+        # An open manual concern must be settled by a renewed review; rescheduling would
+        # change the review digest that `decide` uses to detect that renewal.
+        if any(qid in issue.get('questionIds', []) and updated['decisions'].get(key, {}).get('status') == 'unresolved'
+               for key, issue in updated.get('issues', {}).items()):
+            raise ValueError(f'#{qid}: has an unresolved manual concern; settle it before rescheduling')
         previous = {k: review['verification'].get(k) for k in ('timeSensitive', 'nextReviewAt')}
         if previous['nextReviewAt'] and previous['nextReviewAt'] <= as_of:
             raise ValueError(f'#{qid}: recheck is already due; perform it instead of rescheduling')

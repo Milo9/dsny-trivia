@@ -60,7 +60,7 @@ Mostly `release-*-tmp` / `release-*-temp` full site copies. Prune only those —
 **5. ✅ DONE 2026-11-12 (v1.55) — 220 scheduled rechecks fall due Jan–Feb 2027.**
 Done: rule 7 now tiers rechecks (historical none / stable 12 months / changeable ~90
 days, from the evidence date). New `reschedule` command re-tiered the wave without
-touching evidence: 48 historical, 6 changeable (1 due 2027-01, 5 due 2027-02), 163
+touching evidence: 48 historical, 11 changeable (1 due 2027-01-08, 10 due 2027-02), 158
 stable staggered by topic 2027-07..10 (~50/month, one session each). #2560, #2561,
 #2277 retired with the new `retire --no-replacement`. `status` shows the recheck
 calendar. See audit/runs/2026-11-12-recheck-tiers-notes.md. Original item:

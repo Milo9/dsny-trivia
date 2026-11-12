@@ -447,6 +447,14 @@ class RescheduleTests(unittest.TestCase):
                            {'questionId': 1, 'tier': 'historical', 'nextReviewAt': None, 'reason': 'r'})
         self.assertEqual(self.ledger, before)
 
+    def test_unresolved_manual_concern_blocks_rescheduling(self):
+        self.ledger['issues'] = {'manual-x': {'questionIds': [2], 'reason': 'r'}}
+        self.ledger['decisions'] = {'manual-x': {'status': 'unresolved'}}
+        with self.assertRaisesRegex(ValueError, 'unresolved manual concern'):
+            self.run_items({'questionId': 2, 'tier': 'historical', 'nextReviewAt': None, 'reason': 'r'})
+        self.ledger['decisions']['manual-x']['status'] = 'fixed'
+        self.assertTrue(self.run_items({'questionId': 2, 'tier': 'historical', 'nextReviewAt': None, 'reason': 'r'}))
+
     def test_review_dates_beyond_twelve_months_are_rejected_and_calendar_counts_months(self):
         r = reviewed(self.qs[0], True, '2027-11-03')
         self.assertIn('nextReviewAt must fall within 12 months of the review (rule 7)', audit.validate_review(r, AS_OF))

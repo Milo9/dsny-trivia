@@ -41080,6 +41080,142 @@
               ]
             }
           }
+        },
+        {
+          "hash": "2460d05855556f13923c2e6395500fec312f4b239976f7f444dcc36405981cac",
+          "review": {
+            "schema": 2,
+            "questionId": 345,
+            "hash": "2460d05855556f13923c2e6395500fec312f4b239976f7f444dcc36405981cac",
+            "questionSnapshot": {
+              "id": 345,
+              "question": "What is the name of the famous nighttime spectacular at Disneyland featuring Mickey Mouse battling villains?",
+              "answers": [
+                "Fantasmic!",
+                "SpectroMagic",
+                "World of Color",
+                "Illuminations"
+              ],
+              "difficulty": "easy",
+              "category": "parks"
+            },
+            "reviewer": "Codex",
+            "at": "2026-11-06",
+            "manual": {
+              "singleAnswer": true,
+              "context": true,
+              "wording": true,
+              "noGiveaway": true,
+              "distinctFact": true,
+              "category": true,
+              "difficulty": true,
+              "scope": true
+            },
+            "notes": "Checked the specific Disneyland version against the official current description and the historical entry. World of Color has water effects but does not become this named Disneyland production. 1477 asks the Hollywood Studios version; shared title does not establish the second park location. Retained park-specific coverage, with a scheduled recheck for changeable entertainment. Full topic digests, ranked comparisons, both category digests, and additional cross-bank title/name searches were read for distinctness; only this saved plan is in scope.",
+            "verification": {
+              "context": "What is the name of the famous nighttime spectacular at Disneyland featuring Mickey Mouse battling villains? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-10-06",
+              "premise": {
+                "reason": "The Disneyland show page names Fantasmic! and describes Mickey confronting villains. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
+                "sources": [
+                  {
+                    "url": "https://disneyland.disney.go.com/entertainment/disneyland/fantasmic/",
+                    "locator": "Title and When Dreams Come to Life: Disneyland Rivers of America, Mickey dreaming and defeating villains"
+                  },
+                  {
+                    "url": "https://d23.com/a-to-z/fantasmic/",
+                    "locator": "Opening Disneyland production description and later paragraph describing separate Hollywood Studios version"
+                  }
+                ]
+              },
+              "challenge": {
+                "reviewer": "Codex",
+                "at": "2026-11-06",
+                "premiseChecked": true,
+                "alternativesExcluded": true,
+                "notes": "Checked the specific Disneyland version against the official current description and the historical entry. World of Color has water effects but does not become this named Disneyland production. 1477 asks the Hollywood Studios version; shared title does not establish the second park location. Retained park-specific coverage, with a scheduled recheck for changeable entertainment."
+              },
+              "options": [
+                {
+                  "answer": "Fantasmic!",
+                  "verdict": "correct",
+                  "basis": "direct",
+                  "reason": "The Disneyland show page names Fantasmic! and describes Mickey confronting villains.",
+                  "sources": [
+                    {
+                      "url": "https://disneyland.disney.go.com/entertainment/disneyland/fantasmic/",
+                      "locator": "Title and When Dreams Come to Life: Disneyland Rivers of America, Mickey dreaming and defeating villains"
+                    },
+                    {
+                      "url": "https://d23.com/a-to-z/fantasmic/",
+                      "locator": "Opening Disneyland production description and later paragraph describing separate Hollywood Studios version"
+                    }
+                  ]
+                },
+                {
+                  "answer": "SpectroMagic",
+                  "verdict": "incorrect",
+                  "basis": "exclusive-inference",
+                  "reason": "SpectroMagic is not the production named by the Disneyland show page.",
+                  "sources": [
+                    {
+                      "url": "https://disneyland.disney.go.com/entertainment/disneyland/fantasmic/",
+                      "locator": "Title and When Dreams Come to Life: Disneyland Rivers of America, Mickey dreaming and defeating villains"
+                    },
+                    {
+                      "url": "https://d23.com/a-to-z/fantasmic/",
+                      "locator": "Opening Disneyland production description and later paragraph describing separate Hollywood Studios version"
+                    }
+                  ]
+                },
+                {
+                  "answer": "World of Color",
+                  "verdict": "incorrect",
+                  "basis": "exclusive-inference",
+                  "reason": "World of Color is a separate production, not this Disneyland Mickey dream show.",
+                  "sources": [
+                    {
+                      "url": "https://disneyland.disney.go.com/entertainment/disneyland/fantasmic/",
+                      "locator": "Title and When Dreams Come to Life: Disneyland Rivers of America, Mickey dreaming and defeating villains"
+                    },
+                    {
+                      "url": "https://d23.com/a-to-z/fantasmic/",
+                      "locator": "Opening Disneyland production description and later paragraph describing separate Hollywood Studios version"
+                    }
+                  ]
+                },
+                {
+                  "answer": "Illuminations",
+                  "verdict": "incorrect",
+                  "basis": "exclusive-inference",
+                  "reason": "Illuminations is not the production named by the Disneyland show page.",
+                  "sources": [
+                    {
+                      "url": "https://disneyland.disney.go.com/entertainment/disneyland/fantasmic/",
+                      "locator": "Title and When Dreams Come to Life: Disneyland Rivers of America, Mickey dreaming and defeating villains"
+                    },
+                    {
+                      "url": "https://d23.com/a-to-z/fantasmic/",
+                      "locator": "Opening Disneyland production description and later paragraph describing separate Hollywood Studios version"
+                    }
+                  ]
+                }
+              ]
+            },
+            "schedule": {
+              "tier": "stable",
+              "reason": "Long-standing name/location/design fact; changes are announced well ahead, so a 12-month cycle catches them.",
+              "reviewer": "Claude",
+              "at": "2026-11-12",
+              "evidenceDate": "2026-11-06",
+              "sourcesReinspected": false,
+              "previous": {
+                "timeSensitive": true,
+                "nextReviewAt": "2027-02-04"
+              }
+            }
+          }
         }
       ],
       "hash": "2460d05855556f13923c2e6395500fec312f4b239976f7f444dcc36405981cac",
@@ -41117,7 +41253,7 @@
         "verification": {
           "context": "What is the name of the famous nighttime spectacular at Disneyland featuring Mickey Mouse battling villains? English-language Disney version; park/venue/version qualifications are literal. Historical events are reviewed as historical events.",
           "timeSensitive": true,
-          "nextReviewAt": "2027-10-06",
+          "nextReviewAt": "2027-02-04",
           "premise": {
             "reason": "The Disneyland show page names Fantasmic! and describes Mickey confronting villains. The cited locator establishes the named role, list, place, preparation, or event in the final stem.",
             "sources": [
@@ -41206,15 +41342,15 @@
           ]
         },
         "schedule": {
-          "tier": "stable",
-          "reason": "Long-standing name/location/design fact; changes are announced well ahead, so a 12-month cycle catches them.",
+          "tier": "changeable",
+          "reason": "Evidence flags changeable nighttime entertainment.",
           "reviewer": "Claude",
           "at": "2026-11-12",
           "evidenceDate": "2026-11-06",
           "sourcesReinspected": false,
           "previous": {
             "timeSensitive": true,
-            "nextReviewAt": "2027-02-04"
+            "nextReviewAt": "2027-10-06"
           }
         }
       }
@@ -68147,6 +68283,172 @@
               ]
             }
           }
+        },
+        {
+          "hash": "b2f2870e870dcb0a3f38e9d37ae0266e7e2c472b698a50e024f1c6828cb57d41",
+          "review": {
+            "schema": 2,
+            "questionId": 333,
+            "hash": "b2f2870e870dcb0a3f38e9d37ae0266e7e2c472b698a50e024f1c6828cb57d41",
+            "questionSnapshot": {
+              "id": 333,
+              "question": "At EPCOT, which World Showcase pavilion presents the Circle-Vision film Far and Wide?",
+              "answers": [
+                "Canada",
+                "United Kingdom",
+                "France",
+                "The American Adventure"
+              ],
+              "difficulty": "medium",
+              "category": "parks"
+            },
+            "reviewer": "Codex",
+            "at": "2026-11-07",
+            "manual": {
+              "singleAnswer": true,
+              "context": true,
+              "wording": true,
+              "noGiveaway": true,
+              "distinctFact": true,
+              "category": true,
+              "difficulty": true,
+              "scope": true
+            },
+            "notes": "Medium park-film location; q2224 asks China's separate Circle-Vision title. Current attraction recheck scheduled.",
+            "verification": {
+              "context": "EPCOT World Showcase location of Far and Wide; not the full answer-giving title in the stem.",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-10-07",
+              "premise": {
+                "reason": "Disney names the Canada presentation Canada Far and Wide in Circle-Vision 360.",
+                "sources": [
+                  {
+                    "sourceNoteId": "b10-canada",
+                    "url": "https://disneyworld.disney.go.com/attractions/epcot/canada-far-and-wide/",
+                    "locator": "Title and Sweeping Scenic Views section",
+                    "evidence": "Canada Far and Wide is EPCOT's Circle-Vision 360 presentation of Canada.",
+                    "topics": [
+                      "parks"
+                    ],
+                    "checkedBy": "Codex",
+                    "checkedAt": "2026-11-07",
+                    "timeSensitive": true,
+                    "nextReviewAt": "2027-02-05",
+                    "limitations": "Primary institutional text inspected; no film/video playback claimed."
+                  }
+                ]
+              },
+              "challenge": {
+                "reviewer": "Codex",
+                "at": "2026-11-07",
+                "premiseChecked": true,
+                "alternativesExcluded": true,
+                "notes": "The shortened title preserves a meaningful location question. Sharing projection technology with other countries does not move this particular named film."
+              },
+              "options": [
+                {
+                  "basis": "direct",
+                  "reason": "Canada is the identified pavilion.",
+                  "sources": [
+                    {
+                      "sourceNoteId": "b10-canada",
+                      "url": "https://disneyworld.disney.go.com/attractions/epcot/canada-far-and-wide/",
+                      "locator": "Title and Sweeping Scenic Views section",
+                      "evidence": "Canada Far and Wide is EPCOT's Circle-Vision 360 presentation of Canada.",
+                      "topics": [
+                        "parks"
+                      ],
+                      "checkedBy": "Codex",
+                      "checkedAt": "2026-11-07",
+                      "timeSensitive": true,
+                      "nextReviewAt": "2027-02-05",
+                      "limitations": "Primary institutional text inspected; no film/video playback claimed."
+                    }
+                  ],
+                  "answer": "Canada",
+                  "verdict": "correct"
+                },
+                {
+                  "basis": "exclusive-inference",
+                  "reason": "United Kingdom is a different pavilion, not the named Canada presentation's location.",
+                  "sources": [
+                    {
+                      "sourceNoteId": "b10-canada",
+                      "url": "https://disneyworld.disney.go.com/attractions/epcot/canada-far-and-wide/",
+                      "locator": "Title and Sweeping Scenic Views section",
+                      "evidence": "Canada Far and Wide is EPCOT's Circle-Vision 360 presentation of Canada.",
+                      "topics": [
+                        "parks"
+                      ],
+                      "checkedBy": "Codex",
+                      "checkedAt": "2026-11-07",
+                      "timeSensitive": true,
+                      "nextReviewAt": "2027-02-05",
+                      "limitations": "Primary institutional text inspected; no film/video playback claimed."
+                    }
+                  ],
+                  "answer": "United Kingdom",
+                  "verdict": "incorrect"
+                },
+                {
+                  "basis": "exclusive-inference",
+                  "reason": "France is a different pavilion, not this presentation's location.",
+                  "sources": [
+                    {
+                      "sourceNoteId": "b10-canada",
+                      "url": "https://disneyworld.disney.go.com/attractions/epcot/canada-far-and-wide/",
+                      "locator": "Title and Sweeping Scenic Views section",
+                      "evidence": "Canada Far and Wide is EPCOT's Circle-Vision 360 presentation of Canada.",
+                      "topics": [
+                        "parks"
+                      ],
+                      "checkedBy": "Codex",
+                      "checkedAt": "2026-11-07",
+                      "timeSensitive": true,
+                      "nextReviewAt": "2027-02-05",
+                      "limitations": "Primary institutional text inspected; no film/video playback claimed."
+                    }
+                  ],
+                  "answer": "France",
+                  "verdict": "incorrect"
+                },
+                {
+                  "basis": "exclusive-inference",
+                  "reason": "The American Adventure is a different pavilion, not this Canadian presentation's location.",
+                  "sources": [
+                    {
+                      "sourceNoteId": "b10-canada",
+                      "url": "https://disneyworld.disney.go.com/attractions/epcot/canada-far-and-wide/",
+                      "locator": "Title and Sweeping Scenic Views section",
+                      "evidence": "Canada Far and Wide is EPCOT's Circle-Vision 360 presentation of Canada.",
+                      "topics": [
+                        "parks"
+                      ],
+                      "checkedBy": "Codex",
+                      "checkedAt": "2026-11-07",
+                      "timeSensitive": true,
+                      "nextReviewAt": "2027-02-05",
+                      "limitations": "Primary institutional text inspected; no film/video playback claimed."
+                    }
+                  ],
+                  "answer": "The American Adventure",
+                  "verdict": "incorrect"
+                }
+              ]
+            },
+            "schedule": {
+              "tier": "stable",
+              "reason": "Long-standing name/location/design fact; changes are announced well ahead, so a 12-month cycle catches them.",
+              "reviewer": "Claude",
+              "at": "2026-11-12",
+              "evidenceDate": "2026-11-07",
+              "sourcesReinspected": false,
+              "previous": {
+                "timeSensitive": true,
+                "nextReviewAt": "2027-02-05"
+              }
+            }
+          }
         }
       ],
       "hash": "b2f2870e870dcb0a3f38e9d37ae0266e7e2c472b698a50e024f1c6828cb57d41",
@@ -68184,7 +68486,7 @@
         "verification": {
           "context": "EPCOT World Showcase location of Far and Wide; not the full answer-giving title in the stem.",
           "timeSensitive": true,
-          "nextReviewAt": "2027-10-07",
+          "nextReviewAt": "2027-02-05",
           "premise": {
             "reason": "Disney names the Canada presentation Canada Far and Wide in Circle-Vision 360.",
             "sources": [
@@ -68303,15 +68605,15 @@
           ]
         },
         "schedule": {
-          "tier": "stable",
-          "reason": "Long-standing name/location/design fact; changes are announced well ahead, so a 12-month cycle catches them.",
+          "tier": "changeable",
+          "reason": "Evidence: asks the Circle-Vision film currently shown; pavilion films get replaced.",
           "reviewer": "Claude",
           "at": "2026-11-12",
           "evidenceDate": "2026-11-07",
           "sourcesReinspected": false,
           "previous": {
             "timeSensitive": true,
-            "nextReviewAt": "2027-02-05"
+            "nextReviewAt": "2027-10-07"
           }
         }
       }
@@ -232169,6 +232471,382 @@
               ]
             }
           }
+        },
+        {
+          "hash": "a5c611b37146f208f4f36828a54e41213f0d30da7bb40eab424714767acd5fc9",
+          "review": {
+            "schema": 2,
+            "questionId": 1211,
+            "hash": "a5c611b37146f208f4f36828a54e41213f0d30da7bb40eab424714767acd5fc9",
+            "questionSnapshot": {
+              "id": 1211,
+              "question": "On Castaway Cay, what offshore play structure includes water slides for families?",
+              "answers": [
+                "Pelican Plunge",
+                "Scuttle's Cove",
+                "Spring-a-Leak",
+                "Monstro Point"
+              ],
+              "difficulty": "medium",
+              "category": "cruise"
+            },
+            "reviewer": "Codex",
+            "at": "2026-11-08",
+            "manual": {
+              "singleAnswer": true,
+              "context": true,
+              "wording": true,
+              "noGiveaway": true,
+              "distinctFact": true,
+              "category": true,
+              "difficulty": true,
+              "scope": true
+            },
+            "notes": "Complete topic digests and full four-option comparisons read; category, difficulty and scope checked on final wording. Distinct fact except documented retirements.",
+            "verification": {
+              "context": "Castaway Cay attraction identity, checked November 2026.",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-07-07",
+              "premise": {
+                "reason": "Disney names Pelican Plunge as the offshore platform with two twisting waterslides.",
+                "sources": [
+                  {
+                    "sourceNoteId": "b23-island",
+                    "url": "https://disneycruise.disney.go.com/en-ca/disney-island-destinations/castaway-cay/",
+                    "locator": "Pelican Plunge, Post Office, Port Adventures and Olaf location sections",
+                    "evidence": "Pelican Plunge has two twisting waterslides into the lagoon. The dock post office gives mail the Castaway Cay postmark. Private cabanas are reservable extras. Olaf is near the Pelican Point tram stop.",
+                    "checkedBy": "Codex",
+                    "checkedAt": "2026-11-08",
+                    "timeSensitive": true,
+                    "nextReviewAt": "2027-02-05",
+                    "limitations": "Institutional text inspected; no film or video playback claimed.",
+                    "topics": [
+                      "Batch 23"
+                    ]
+                  },
+                  {
+                    "sourceNoteId": "b23-spring",
+                    "url": "https://plandisney.disney.go.com/question/water-spring-leak-castaway-cay-clean-chlorinated-568774/",
+                    "locator": "March 11 2024 answer, first descriptive paragraph",
+                    "evidence": "Spring-A-Leak is a freshwater play area with splash pads, misters and dripping pipes.",
+                    "checkedBy": "Codex",
+                    "checkedAt": "2026-11-08",
+                    "timeSensitive": true,
+                    "nextReviewAt": "2027-02-05",
+                    "limitations": "Disney-hosted panelist reports a conversation with a crew member; no promise of daily availability.",
+                    "topics": [
+                      "Batch 23"
+                    ]
+                  },
+                  {
+                    "sourceNoteId": "b18-island",
+                    "url": "https://disneycruise.disney.go.com/en-ca/disney-island-destinations/castaway-cay/",
+                    "locator": "Castaway Family Beach; Serenity Bay; Scuttle's Cove",
+                    "evidence": "Cookie's BBQ serves Castaway Family Beach; Serenity Bay is adults-only; Scuttle's Cove is supervised children's play with a whale-bone dig site.",
+                    "checkedBy": "Codex",
+                    "checkedAt": "2026-11-07",
+                    "timeSensitive": true,
+                    "nextReviewAt": "2027-02-05",
+                    "limitations": "Institutional text inspected; no film or video playback claimed.",
+                    "topics": [
+                      "Batch 18"
+                    ]
+                  },
+                  {
+                    "sourceNoteId": "b23-islandmap",
+                    "url": "https://disneysquared.com/wp-content/uploads/2019/06/CastawayCayMap2018.pdf",
+                    "locator": "Map attractions list, G Monstro Point; E Scuttles Cove; P Pelican Plunge",
+                    "evidence": "The Disney-issued map labels Monstro Point as the whale dig site, Scuttles Cove as childrens program areas and Pelican Plunge separately.",
+                    "checkedBy": "Codex",
+                    "checkedAt": "2026-11-08",
+                    "timeSensitive": false,
+                    "nextReviewAt": null,
+                    "limitations": "Official map hosted by third party; indexed full map legend inspected. PDF fetch had no readable lines; no claim to have visually inspected its map geometry.",
+                    "topics": [
+                      "Batch 23"
+                    ]
+                  }
+                ]
+              },
+              "challenge": {
+                "reviewer": "Codex",
+                "at": "2026-11-08",
+                "premiseChecked": true,
+                "alternativesExcluded": true,
+                "notes": "Spring a Leak has water play, but not this offshore pair of slides; Scuttle and Monstro are land play. Refurbishment can affect opening, so no promise of availability is inferred."
+              },
+              "options": [
+                {
+                  "basis": "direct",
+                  "reason": "Pelican Plunge is the platform with slides into the lagoon.",
+                  "sources": [
+                    {
+                      "sourceNoteId": "b23-island",
+                      "url": "https://disneycruise.disney.go.com/en-ca/disney-island-destinations/castaway-cay/",
+                      "locator": "Pelican Plunge, Post Office, Port Adventures and Olaf location sections",
+                      "evidence": "Pelican Plunge has two twisting waterslides into the lagoon. The dock post office gives mail the Castaway Cay postmark. Private cabanas are reservable extras. Olaf is near the Pelican Point tram stop.",
+                      "checkedBy": "Codex",
+                      "checkedAt": "2026-11-08",
+                      "timeSensitive": true,
+                      "nextReviewAt": "2027-02-05",
+                      "limitations": "Institutional text inspected; no film or video playback claimed.",
+                      "topics": [
+                        "Batch 23"
+                      ]
+                    },
+                    {
+                      "sourceNoteId": "b23-spring",
+                      "url": "https://plandisney.disney.go.com/question/water-spring-leak-castaway-cay-clean-chlorinated-568774/",
+                      "locator": "March 11 2024 answer, first descriptive paragraph",
+                      "evidence": "Spring-A-Leak is a freshwater play area with splash pads, misters and dripping pipes.",
+                      "checkedBy": "Codex",
+                      "checkedAt": "2026-11-08",
+                      "timeSensitive": true,
+                      "nextReviewAt": "2027-02-05",
+                      "limitations": "Disney-hosted panelist reports a conversation with a crew member; no promise of daily availability.",
+                      "topics": [
+                        "Batch 23"
+                      ]
+                    },
+                    {
+                      "sourceNoteId": "b18-island",
+                      "url": "https://disneycruise.disney.go.com/en-ca/disney-island-destinations/castaway-cay/",
+                      "locator": "Castaway Family Beach; Serenity Bay; Scuttle's Cove",
+                      "evidence": "Cookie's BBQ serves Castaway Family Beach; Serenity Bay is adults-only; Scuttle's Cove is supervised children's play with a whale-bone dig site.",
+                      "checkedBy": "Codex",
+                      "checkedAt": "2026-11-07",
+                      "timeSensitive": true,
+                      "nextReviewAt": "2027-02-05",
+                      "limitations": "Institutional text inspected; no film or video playback claimed.",
+                      "topics": [
+                        "Batch 18"
+                      ]
+                    },
+                    {
+                      "sourceNoteId": "b23-islandmap",
+                      "url": "https://disneysquared.com/wp-content/uploads/2019/06/CastawayCayMap2018.pdf",
+                      "locator": "Map attractions list, G Monstro Point; E Scuttles Cove; P Pelican Plunge",
+                      "evidence": "The Disney-issued map labels Monstro Point as the whale dig site, Scuttles Cove as childrens program areas and Pelican Plunge separately.",
+                      "checkedBy": "Codex",
+                      "checkedAt": "2026-11-08",
+                      "timeSensitive": false,
+                      "nextReviewAt": null,
+                      "limitations": "Official map hosted by third party; indexed full map legend inspected. PDF fetch had no readable lines; no claim to have visually inspected its map geometry.",
+                      "topics": [
+                        "Batch 23"
+                      ]
+                    }
+                  ],
+                  "answer": "Pelican Plunge",
+                  "verdict": "correct"
+                },
+                {
+                  "basis": "exclusive-inference",
+                  "reason": "Scuttle Cove is supervised sand-and-games play.",
+                  "sources": [
+                    {
+                      "sourceNoteId": "b23-island",
+                      "url": "https://disneycruise.disney.go.com/en-ca/disney-island-destinations/castaway-cay/",
+                      "locator": "Pelican Plunge, Post Office, Port Adventures and Olaf location sections",
+                      "evidence": "Pelican Plunge has two twisting waterslides into the lagoon. The dock post office gives mail the Castaway Cay postmark. Private cabanas are reservable extras. Olaf is near the Pelican Point tram stop.",
+                      "checkedBy": "Codex",
+                      "checkedAt": "2026-11-08",
+                      "timeSensitive": true,
+                      "nextReviewAt": "2027-02-05",
+                      "limitations": "Institutional text inspected; no film or video playback claimed.",
+                      "topics": [
+                        "Batch 23"
+                      ]
+                    },
+                    {
+                      "sourceNoteId": "b23-spring",
+                      "url": "https://plandisney.disney.go.com/question/water-spring-leak-castaway-cay-clean-chlorinated-568774/",
+                      "locator": "March 11 2024 answer, first descriptive paragraph",
+                      "evidence": "Spring-A-Leak is a freshwater play area with splash pads, misters and dripping pipes.",
+                      "checkedBy": "Codex",
+                      "checkedAt": "2026-11-08",
+                      "timeSensitive": true,
+                      "nextReviewAt": "2027-02-05",
+                      "limitations": "Disney-hosted panelist reports a conversation with a crew member; no promise of daily availability.",
+                      "topics": [
+                        "Batch 23"
+                      ]
+                    },
+                    {
+                      "sourceNoteId": "b18-island",
+                      "url": "https://disneycruise.disney.go.com/en-ca/disney-island-destinations/castaway-cay/",
+                      "locator": "Castaway Family Beach; Serenity Bay; Scuttle's Cove",
+                      "evidence": "Cookie's BBQ serves Castaway Family Beach; Serenity Bay is adults-only; Scuttle's Cove is supervised children's play with a whale-bone dig site.",
+                      "checkedBy": "Codex",
+                      "checkedAt": "2026-11-07",
+                      "timeSensitive": true,
+                      "nextReviewAt": "2027-02-05",
+                      "limitations": "Institutional text inspected; no film or video playback claimed.",
+                      "topics": [
+                        "Batch 18"
+                      ]
+                    },
+                    {
+                      "sourceNoteId": "b23-islandmap",
+                      "url": "https://disneysquared.com/wp-content/uploads/2019/06/CastawayCayMap2018.pdf",
+                      "locator": "Map attractions list, G Monstro Point; E Scuttles Cove; P Pelican Plunge",
+                      "evidence": "The Disney-issued map labels Monstro Point as the whale dig site, Scuttles Cove as childrens program areas and Pelican Plunge separately.",
+                      "checkedBy": "Codex",
+                      "checkedAt": "2026-11-08",
+                      "timeSensitive": false,
+                      "nextReviewAt": null,
+                      "limitations": "Official map hosted by third party; indexed full map legend inspected. PDF fetch had no readable lines; no claim to have visually inspected its map geometry.",
+                      "topics": [
+                        "Batch 23"
+                      ]
+                    }
+                  ],
+                  "answer": "Scuttle's Cove",
+                  "verdict": "incorrect"
+                },
+                {
+                  "basis": "exclusive-inference",
+                  "reason": "Spring a Leak is the shore splash pad, not the offshore slide platform.",
+                  "sources": [
+                    {
+                      "sourceNoteId": "b23-island",
+                      "url": "https://disneycruise.disney.go.com/en-ca/disney-island-destinations/castaway-cay/",
+                      "locator": "Pelican Plunge, Post Office, Port Adventures and Olaf location sections",
+                      "evidence": "Pelican Plunge has two twisting waterslides into the lagoon. The dock post office gives mail the Castaway Cay postmark. Private cabanas are reservable extras. Olaf is near the Pelican Point tram stop.",
+                      "checkedBy": "Codex",
+                      "checkedAt": "2026-11-08",
+                      "timeSensitive": true,
+                      "nextReviewAt": "2027-02-05",
+                      "limitations": "Institutional text inspected; no film or video playback claimed.",
+                      "topics": [
+                        "Batch 23"
+                      ]
+                    },
+                    {
+                      "sourceNoteId": "b23-spring",
+                      "url": "https://plandisney.disney.go.com/question/water-spring-leak-castaway-cay-clean-chlorinated-568774/",
+                      "locator": "March 11 2024 answer, first descriptive paragraph",
+                      "evidence": "Spring-A-Leak is a freshwater play area with splash pads, misters and dripping pipes.",
+                      "checkedBy": "Codex",
+                      "checkedAt": "2026-11-08",
+                      "timeSensitive": true,
+                      "nextReviewAt": "2027-02-05",
+                      "limitations": "Disney-hosted panelist reports a conversation with a crew member; no promise of daily availability.",
+                      "topics": [
+                        "Batch 23"
+                      ]
+                    },
+                    {
+                      "sourceNoteId": "b18-island",
+                      "url": "https://disneycruise.disney.go.com/en-ca/disney-island-destinations/castaway-cay/",
+                      "locator": "Castaway Family Beach; Serenity Bay; Scuttle's Cove",
+                      "evidence": "Cookie's BBQ serves Castaway Family Beach; Serenity Bay is adults-only; Scuttle's Cove is supervised children's play with a whale-bone dig site.",
+                      "checkedBy": "Codex",
+                      "checkedAt": "2026-11-07",
+                      "timeSensitive": true,
+                      "nextReviewAt": "2027-02-05",
+                      "limitations": "Institutional text inspected; no film or video playback claimed.",
+                      "topics": [
+                        "Batch 18"
+                      ]
+                    },
+                    {
+                      "sourceNoteId": "b23-islandmap",
+                      "url": "https://disneysquared.com/wp-content/uploads/2019/06/CastawayCayMap2018.pdf",
+                      "locator": "Map attractions list, G Monstro Point; E Scuttles Cove; P Pelican Plunge",
+                      "evidence": "The Disney-issued map labels Monstro Point as the whale dig site, Scuttles Cove as childrens program areas and Pelican Plunge separately.",
+                      "checkedBy": "Codex",
+                      "checkedAt": "2026-11-08",
+                      "timeSensitive": false,
+                      "nextReviewAt": null,
+                      "limitations": "Official map hosted by third party; indexed full map legend inspected. PDF fetch had no readable lines; no claim to have visually inspected its map geometry.",
+                      "topics": [
+                        "Batch 23"
+                      ]
+                    }
+                  ],
+                  "answer": "Spring-a-Leak",
+                  "verdict": "incorrect"
+                },
+                {
+                  "basis": "exclusive-inference",
+                  "reason": "Monstro Point is the whale-bone dig area, not the slide platform.",
+                  "sources": [
+                    {
+                      "sourceNoteId": "b23-island",
+                      "url": "https://disneycruise.disney.go.com/en-ca/disney-island-destinations/castaway-cay/",
+                      "locator": "Pelican Plunge, Post Office, Port Adventures and Olaf location sections",
+                      "evidence": "Pelican Plunge has two twisting waterslides into the lagoon. The dock post office gives mail the Castaway Cay postmark. Private cabanas are reservable extras. Olaf is near the Pelican Point tram stop.",
+                      "checkedBy": "Codex",
+                      "checkedAt": "2026-11-08",
+                      "timeSensitive": true,
+                      "nextReviewAt": "2027-02-05",
+                      "limitations": "Institutional text inspected; no film or video playback claimed.",
+                      "topics": [
+                        "Batch 23"
+                      ]
+                    },
+                    {
+                      "sourceNoteId": "b23-spring",
+                      "url": "https://plandisney.disney.go.com/question/water-spring-leak-castaway-cay-clean-chlorinated-568774/",
+                      "locator": "March 11 2024 answer, first descriptive paragraph",
+                      "evidence": "Spring-A-Leak is a freshwater play area with splash pads, misters and dripping pipes.",
+                      "checkedBy": "Codex",
+                      "checkedAt": "2026-11-08",
+                      "timeSensitive": true,
+                      "nextReviewAt": "2027-02-05",
+                      "limitations": "Disney-hosted panelist reports a conversation with a crew member; no promise of daily availability.",
+                      "topics": [
+                        "Batch 23"
+                      ]
+                    },
+                    {
+                      "sourceNoteId": "b18-island",
+                      "url": "https://disneycruise.disney.go.com/en-ca/disney-island-destinations/castaway-cay/",
+                      "locator": "Castaway Family Beach; Serenity Bay; Scuttle's Cove",
+                      "evidence": "Cookie's BBQ serves Castaway Family Beach; Serenity Bay is adults-only; Scuttle's Cove is supervised children's play with a whale-bone dig site.",
+                      "checkedBy": "Codex",
+                      "checkedAt": "2026-11-07",
+                      "timeSensitive": true,
+                      "nextReviewAt": "2027-02-05",
+                      "limitations": "Institutional text inspected; no film or video playback claimed.",
+                      "topics": [
+                        "Batch 18"
+                      ]
+                    },
+                    {
+                      "sourceNoteId": "b23-islandmap",
+                      "url": "https://disneysquared.com/wp-content/uploads/2019/06/CastawayCayMap2018.pdf",
+                      "locator": "Map attractions list, G Monstro Point; E Scuttles Cove; P Pelican Plunge",
+                      "evidence": "The Disney-issued map labels Monstro Point as the whale dig site, Scuttles Cove as childrens program areas and Pelican Plunge separately.",
+                      "checkedBy": "Codex",
+                      "checkedAt": "2026-11-08",
+                      "timeSensitive": false,
+                      "nextReviewAt": null,
+                      "limitations": "Official map hosted by third party; indexed full map legend inspected. PDF fetch had no readable lines; no claim to have visually inspected its map geometry.",
+                      "topics": [
+                        "Batch 23"
+                      ]
+                    }
+                  ],
+                  "answer": "Monstro Point",
+                  "verdict": "incorrect"
+                }
+              ]
+            },
+            "schedule": {
+              "tier": "stable",
+              "reason": "Long-standing name/location/design fact; changes are announced well ahead, so a 12-month cycle catches them.",
+              "reviewer": "Claude",
+              "at": "2026-11-12",
+              "evidenceDate": "2026-11-07",
+              "sourcesReinspected": false,
+              "previous": {
+                "timeSensitive": true,
+                "nextReviewAt": "2027-02-05"
+              }
+            }
+          }
         }
       ],
       "hash": "a5c611b37146f208f4f36828a54e41213f0d30da7bb40eab424714767acd5fc9",
@@ -232206,7 +232884,7 @@
         "verification": {
           "context": "Castaway Cay attraction identity, checked November 2026.",
           "timeSensitive": true,
-          "nextReviewAt": "2027-07-07",
+          "nextReviewAt": "2027-02-05",
           "premise": {
             "reason": "Disney names Pelican Plunge as the offshore platform with two twisting waterslides.",
             "sources": [
@@ -232535,15 +233213,15 @@
           ]
         },
         "schedule": {
-          "tier": "stable",
-          "reason": "Long-standing name/location/design fact; changes are announced well ahead, so a 12-month cycle catches them.",
+          "tier": "changeable",
+          "reason": "Evidence notes refurbishment can affect the play structure.",
           "reviewer": "Claude",
           "at": "2026-11-12",
           "evidenceDate": "2026-11-07",
           "sourcesReinspected": false,
           "previous": {
             "timeSensitive": true,
-            "nextReviewAt": "2027-02-05"
+            "nextReviewAt": "2027-07-07"
           }
         }
       }
@@ -382927,6 +383605,177 @@
               ]
             }
           }
+        },
+        {
+          "hash": "21b9b78c8eeb4013de18a60a007294e81e71d827fd4cad210408a441264523aa",
+          "review": {
+            "schema": 2,
+            "questionId": 2224,
+            "hash": "21b9b78c8eeb4013de18a60a007294e81e71d827fd4cad210408a441264523aa",
+            "questionSnapshot": {
+              "id": 2224,
+              "question": "What is the title of the Circle-Vision 360 film shown at EPCOT's China pavilion?",
+              "answers": [
+                "Reflections of China",
+                "Wonders of China",
+                "Journey Through China",
+                "Voices of China"
+              ],
+              "difficulty": "medium",
+              "category": "parks"
+            },
+            "reviewer": "Codex",
+            "at": "2026-11-09",
+            "manual": {
+              "singleAnswer": true,
+              "context": true,
+              "wording": true,
+              "noGiveaway": true,
+              "distinctFact": true,
+              "category": true,
+              "difficulty": true,
+              "scope": true
+            },
+            "notes": "Different pavilion and film from #333's Canada Far and Wide. Full combined topic digests and cross-category bank search read; category, difficulty, wording and scope checked.",
+            "verification": {
+              "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-10-09",
+              "premise": {
+                "reason": "The current China pavilion Circle-Vision film is Reflections of China.",
+                "sources": [
+                  {
+                    "sourceNoteId": "b34-china",
+                    "url": "https://disneyworld.disney.go.com/en_CA/attractions/epcot/reflections-of-china/",
+                    "locator": "Title, introduction and Go Behind the Great Wall",
+                    "evidence": "The China pavilion film is Reflections of China, a 14-minute Circle-Vision 360 film.",
+                    "checkedBy": "Codex",
+                    "checkedAt": "2026-11-09",
+                    "timeSensitive": false,
+                    "nextReviewAt": null,
+                    "limitations": "Current attraction page; operating film titles may change, so the review has a future date.",
+                    "topics": [
+                      "parks",
+                      "walt"
+                    ]
+                  }
+                ]
+              },
+              "challenge": {
+                "reviewer": "Codex",
+                "at": "2026-11-09",
+                "premiseChecked": true,
+                "alternativesExcluded": true,
+                "notes": "An earlier film can be a plausible distractor, but the question asks the film currently shown, not the pavilion's opening-era film. Future recheck scheduled."
+              },
+              "options": [
+                {
+                  "basis": "direct",
+                  "reason": "Official attraction title is Reflections of China.",
+                  "sources": [
+                    {
+                      "sourceNoteId": "b34-china",
+                      "url": "https://disneyworld.disney.go.com/en_CA/attractions/epcot/reflections-of-china/",
+                      "locator": "Title, introduction and Go Behind the Great Wall",
+                      "evidence": "The China pavilion film is Reflections of China, a 14-minute Circle-Vision 360 film.",
+                      "checkedBy": "Codex",
+                      "checkedAt": "2026-11-09",
+                      "timeSensitive": false,
+                      "nextReviewAt": null,
+                      "limitations": "Current attraction page; operating film titles may change, so the review has a future date.",
+                      "topics": [
+                        "parks",
+                        "walt"
+                      ]
+                    }
+                  ],
+                  "answer": "Reflections of China",
+                  "verdict": "correct"
+                },
+                {
+                  "basis": "exclusive-inference",
+                  "reason": "Wonders of China is not the current title on the inspected page.",
+                  "sources": [
+                    {
+                      "sourceNoteId": "b34-china",
+                      "url": "https://disneyworld.disney.go.com/en_CA/attractions/epcot/reflections-of-china/",
+                      "locator": "Title, introduction and Go Behind the Great Wall",
+                      "evidence": "The China pavilion film is Reflections of China, a 14-minute Circle-Vision 360 film.",
+                      "checkedBy": "Codex",
+                      "checkedAt": "2026-11-09",
+                      "timeSensitive": false,
+                      "nextReviewAt": null,
+                      "limitations": "Current attraction page; operating film titles may change, so the review has a future date.",
+                      "topics": [
+                        "parks",
+                        "walt"
+                      ]
+                    }
+                  ],
+                  "answer": "Wonders of China",
+                  "verdict": "incorrect"
+                },
+                {
+                  "basis": "exclusive-inference",
+                  "reason": "Journey Through China is not the film title identified there.",
+                  "sources": [
+                    {
+                      "sourceNoteId": "b34-china",
+                      "url": "https://disneyworld.disney.go.com/en_CA/attractions/epcot/reflections-of-china/",
+                      "locator": "Title, introduction and Go Behind the Great Wall",
+                      "evidence": "The China pavilion film is Reflections of China, a 14-minute Circle-Vision 360 film.",
+                      "checkedBy": "Codex",
+                      "checkedAt": "2026-11-09",
+                      "timeSensitive": false,
+                      "nextReviewAt": null,
+                      "limitations": "Current attraction page; operating film titles may change, so the review has a future date.",
+                      "topics": [
+                        "parks",
+                        "walt"
+                      ]
+                    }
+                  ],
+                  "answer": "Journey Through China",
+                  "verdict": "incorrect"
+                },
+                {
+                  "basis": "exclusive-inference",
+                  "reason": "Voices of China is not the film title identified there.",
+                  "sources": [
+                    {
+                      "sourceNoteId": "b34-china",
+                      "url": "https://disneyworld.disney.go.com/en_CA/attractions/epcot/reflections-of-china/",
+                      "locator": "Title, introduction and Go Behind the Great Wall",
+                      "evidence": "The China pavilion film is Reflections of China, a 14-minute Circle-Vision 360 film.",
+                      "checkedBy": "Codex",
+                      "checkedAt": "2026-11-09",
+                      "timeSensitive": false,
+                      "nextReviewAt": null,
+                      "limitations": "Current attraction page; operating film titles may change, so the review has a future date.",
+                      "topics": [
+                        "parks",
+                        "walt"
+                      ]
+                    }
+                  ],
+                  "answer": "Voices of China",
+                  "verdict": "incorrect"
+                }
+              ]
+            },
+            "schedule": {
+              "tier": "stable",
+              "reason": "Long-standing name/location/design fact; changes are announced well ahead, so a 12-month cycle catches them.",
+              "reviewer": "Claude",
+              "at": "2026-11-12",
+              "evidenceDate": "2026-11-09",
+              "sourcesReinspected": false,
+              "previous": {
+                "timeSensitive": true,
+                "nextReviewAt": "2027-02-07"
+              }
+            }
+          }
         }
       ],
       "hash": "21b9b78c8eeb4013de18a60a007294e81e71d827fd4cad210408a441264523aa",
@@ -382964,7 +383813,7 @@
         "verification": {
           "context": "Final stored wording; park/location, historical event or production operation as specified. English attraction titles unless otherwise stated.",
           "timeSensitive": true,
-          "nextReviewAt": "2027-10-09",
+          "nextReviewAt": "2027-02-07",
           "premise": {
             "reason": "The current China pavilion Circle-Vision film is Reflections of China.",
             "sources": [
@@ -383088,15 +383937,15 @@
           ]
         },
         "schedule": {
-          "tier": "stable",
-          "reason": "Long-standing name/location/design fact; changes are announced well ahead, so a 12-month cycle catches them.",
+          "tier": "changeable",
+          "reason": "Evidence: asks the film currently shown, not the opening-era film.",
           "reviewer": "Claude",
           "at": "2026-11-12",
           "evidenceDate": "2026-11-09",
           "sourcesReinspected": false,
           "previous": {
             "timeSensitive": true,
-            "nextReviewAt": "2027-02-07"
+            "nextReviewAt": "2027-10-09"
           }
         }
       }
@@ -482682,6 +483531,172 @@
               ]
             }
           }
+        },
+        {
+          "hash": "b7f95bfd26d43d2fb1747bd47f219e450040c4d2641fba5a9c9a736c10159421",
+          "review": {
+            "schema": 2,
+            "questionId": 2509,
+            "hash": "b7f95bfd26d43d2fb1747bd47f219e450040c4d2641fba5a9c9a736c10159421",
+            "questionSnapshot": {
+              "id": 2509,
+              "question": "What is the full subtitle of the Indiana Jones dark ride at Tokyo DisneySea?",
+              "answers": [
+                "Temple of the Crystal Skull",
+                "Temple of the Forbidden Eye",
+                "Temple of Doom",
+                "Curse of the Lost Idol"
+              ],
+              "difficulty": "medium",
+              "category": "parks"
+            },
+            "reviewer": "Codex",
+            "at": "2026-11-09",
+            "manual": {
+              "singleAnswer": true,
+              "context": true,
+              "wording": true,
+              "noGiveaway": true,
+              "distinctFact": true,
+              "category": true,
+              "difficulty": true,
+              "scope": true
+            },
+            "notes": "Tokyo subtitle is a separate location-specific fact from California's Forbidden Eye subtitle. Full combined topic catalog and all four options read; final category, recall difficulty, parallel options and theatrical/park scope checked.",
+            "verification": {
+              "context": "The official Tokyo attraction's full title supplies its exact subtitle.",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-09-09",
+              "premise": {
+                "reason": "The official Tokyo attraction's full title supplies its exact subtitle.",
+                "sources": [
+                  {
+                    "sourceNoteId": "b39-indy",
+                    "url": "https://www.tokyodisneyresort.jp/en/tds/attraction/detail/222/",
+                    "locator": "Attraction title and area, lines 41 and 78",
+                    "evidence": "Tokyo DisneySea's Indiana Jones Adventure subtitle is Temple of the Crystal Skull, in Lost River Delta.",
+                    "checkedBy": "Codex",
+                    "checkedAt": "2026-11-09",
+                    "timeSensitive": true,
+                    "nextReviewAt": "2027-02-07",
+                    "limitations": "Institutional text inspected; no film or ride playback claimed.",
+                    "topics": [
+                      "Batch 39"
+                    ]
+                  }
+                ]
+              },
+              "challenge": {
+                "reviewer": "Codex",
+                "at": "2026-11-09",
+                "premiseChecked": true,
+                "alternativesExcluded": true,
+                "notes": "Checked movie-versus-ride confusion and the California subtitle; the requested Tokyo attraction title is explicit. Temporary closure does not alter its name."
+              },
+              "options": [
+                {
+                  "basis": "direct",
+                  "reason": "The official title is Indiana Jones Adventure: Temple of the Crystal Skull.",
+                  "sources": [
+                    {
+                      "sourceNoteId": "b39-indy",
+                      "url": "https://www.tokyodisneyresort.jp/en/tds/attraction/detail/222/",
+                      "locator": "Attraction title and area, lines 41 and 78",
+                      "evidence": "Tokyo DisneySea's Indiana Jones Adventure subtitle is Temple of the Crystal Skull, in Lost River Delta.",
+                      "checkedBy": "Codex",
+                      "checkedAt": "2026-11-09",
+                      "timeSensitive": true,
+                      "nextReviewAt": "2027-02-07",
+                      "limitations": "Institutional text inspected; no film or ride playback claimed.",
+                      "topics": [
+                        "Batch 39"
+                      ]
+                    }
+                  ],
+                  "answer": "Temple of the Crystal Skull",
+                  "verdict": "correct"
+                },
+                {
+                  "basis": "exclusive-inference",
+                  "reason": "Temple of the Forbidden Eye is not the subtitle on the Tokyo title.",
+                  "sources": [
+                    {
+                      "sourceNoteId": "b39-indy",
+                      "url": "https://www.tokyodisneyresort.jp/en/tds/attraction/detail/222/",
+                      "locator": "Attraction title and area, lines 41 and 78",
+                      "evidence": "Tokyo DisneySea's Indiana Jones Adventure subtitle is Temple of the Crystal Skull, in Lost River Delta.",
+                      "checkedBy": "Codex",
+                      "checkedAt": "2026-11-09",
+                      "timeSensitive": true,
+                      "nextReviewAt": "2027-02-07",
+                      "limitations": "Institutional text inspected; no film or ride playback claimed.",
+                      "topics": [
+                        "Batch 39"
+                      ]
+                    }
+                  ],
+                  "answer": "Temple of the Forbidden Eye",
+                  "verdict": "incorrect"
+                },
+                {
+                  "basis": "exclusive-inference",
+                  "reason": "Temple of Doom is not the official Tokyo attraction subtitle.",
+                  "sources": [
+                    {
+                      "sourceNoteId": "b39-indy",
+                      "url": "https://www.tokyodisneyresort.jp/en/tds/attraction/detail/222/",
+                      "locator": "Attraction title and area, lines 41 and 78",
+                      "evidence": "Tokyo DisneySea's Indiana Jones Adventure subtitle is Temple of the Crystal Skull, in Lost River Delta.",
+                      "checkedBy": "Codex",
+                      "checkedAt": "2026-11-09",
+                      "timeSensitive": true,
+                      "nextReviewAt": "2027-02-07",
+                      "limitations": "Institutional text inspected; no film or ride playback claimed.",
+                      "topics": [
+                        "Batch 39"
+                      ]
+                    }
+                  ],
+                  "answer": "Temple of Doom",
+                  "verdict": "incorrect"
+                },
+                {
+                  "basis": "exclusive-inference",
+                  "reason": "Curse of the Lost Idol is not the official Tokyo attraction subtitle.",
+                  "sources": [
+                    {
+                      "sourceNoteId": "b39-indy",
+                      "url": "https://www.tokyodisneyresort.jp/en/tds/attraction/detail/222/",
+                      "locator": "Attraction title and area, lines 41 and 78",
+                      "evidence": "Tokyo DisneySea's Indiana Jones Adventure subtitle is Temple of the Crystal Skull, in Lost River Delta.",
+                      "checkedBy": "Codex",
+                      "checkedAt": "2026-11-09",
+                      "timeSensitive": true,
+                      "nextReviewAt": "2027-02-07",
+                      "limitations": "Institutional text inspected; no film or ride playback claimed.",
+                      "topics": [
+                        "Batch 39"
+                      ]
+                    }
+                  ],
+                  "answer": "Curse of the Lost Idol",
+                  "verdict": "incorrect"
+                }
+              ]
+            },
+            "schedule": {
+              "tier": "stable",
+              "reason": "Long-standing name/location/design fact; changes are announced well ahead, so a 12-month cycle catches them.",
+              "reviewer": "Claude",
+              "at": "2026-11-12",
+              "evidenceDate": "2026-11-09",
+              "sourcesReinspected": false,
+              "previous": {
+                "timeSensitive": true,
+                "nextReviewAt": "2027-02-07"
+              }
+            }
+          }
         }
       ],
       "hash": "b7f95bfd26d43d2fb1747bd47f219e450040c4d2641fba5a9c9a736c10159421",
@@ -482719,7 +483734,7 @@
         "verification": {
           "context": "The official Tokyo attraction's full title supplies its exact subtitle.",
           "timeSensitive": true,
-          "nextReviewAt": "2027-09-09",
+          "nextReviewAt": "2027-02-07",
           "premise": {
             "reason": "The official Tokyo attraction's full title supplies its exact subtitle.",
             "sources": [
@@ -482838,15 +483853,15 @@
           ]
         },
         "schedule": {
-          "tier": "stable",
-          "reason": "Long-standing name/location/design fact; changes are announced well ahead, so a 12-month cycle catches them.",
+          "tier": "changeable",
+          "reason": "Evidence notes a temporary closure; kept on the short cycle.",
           "reviewer": "Claude",
           "at": "2026-11-12",
           "evidenceDate": "2026-11-09",
           "sourcesReinspected": false,
           "previous": {
             "timeSensitive": true,
-            "nextReviewAt": "2027-02-07"
+            "nextReviewAt": "2027-09-09"
           }
         }
       }

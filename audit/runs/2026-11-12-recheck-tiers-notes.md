@@ -36,10 +36,13 @@ refurbishment or mutable policy stay changeable. When unsure, the shorter tier w
   #433 (built in Italy), #968 (replaced Beat Street in 2013), #799 and #737
   (debuted on the Wish), #2511 (opened 2017), #2515 (opened 2016).
   #356 stays stable: "opened in 1999" alone does not exclude Journey Into Imagination.
-- changeable (6, dates unchanged): #2222 (announced maintenance from 2027-01-11),
+- changeable (11, original dates kept): #2222 (announced maintenance from 2027-01-11),
   #369 (2026-27 refurbishment), #424/#425 (advertised club ages), #430 (Palo meal
-  periods), #916 (uncertain future plans).
-- stable (163): staggered by topic so related questions (often sharing sources)
+  periods), #916 (uncertain future plans). Moved back from stable in a second pass
+  (`2026-11-12-recheck-reschedule-2.json`) because their evidence flags change:
+  #333 and #2224 (film currently shown), #345 (changeable entertainment), #1211
+  (refurbishment), #2509 (temporary closure).
+- stable (158): staggered by topic so related questions (often sharing sources)
   come due together: Castaway Cay 2027-07, other DCL ships 2027-08, Magic Kingdom
   and international parks 2027-09, other WDW and Disneyland Resort 2027-10.
   About 50 per month, which is one session each.
