@@ -1,7 +1,8 @@
 # Disney Trivia App — Claude Reference
 
-Static single-page trivia app for Kristen, Cara and family to practice before a Disney
-Cruise. No build step, no framework; npm is used **only** for verification tooling
+Static single-page general Disney trivia app for Kristen, Cara and family (started as
+Disney Cruise trivia practice; now played for fun too, so category mix need not
+favor cruise content). No build step, no framework; npm is used **only** for verification tooling
 (tests, emulator, Firebase CLI) — production loads Firebase compat from the CDN.
 
 - **Live:** https://milo9.github.io/dsny-trivia/ — admin: `/review.html`
@@ -37,6 +38,7 @@ The owner explicitly declined accounts/passwords. Preserve that choice.
 | `app.js` | DOM, screens, wiring. Never redeclare a top-level name from the files above (duplicate `const` = SyntaxError that kills the app; duplicate `function` silently shadows the tested one). |
 | `sw.js` | Service worker: offline practice cache for same-origin app files and questions; Firestore stays network-only. |
 | `review.html` | Admin page: flags (immutable resolution events), resets/restores, backups, difficulty hints. |
+| `_config.yml` | Jekyll excludes for GitHub Pages: keeps `audit/`, `docs/`, `scripts/`, `test/`, `*.md` off the published site. Runtime files must stay outside those paths. |
 | `firestore.rules`, `firebase.json` | Versioned rules; deployed separately (see SECURITY.md). |
 | `questions/manifest.json` | `{shards: [...], retired: "questions/retired.json"}`. |
 | `questions/q-001…q-010.json` | Active questions, one compact object per line. |

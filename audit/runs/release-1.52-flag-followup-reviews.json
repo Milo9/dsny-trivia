@@ -1,0 +1,1652 @@
+[
+  {
+    "schema": 2,
+    "questionId": 2432,
+    "hash": "364ac396f7979566bba8e7461c7e8a5452468d4eaf9b1f91b50fd91d6b528df8",
+    "questionSnapshot": {
+      "id": 2432,
+      "question": "Which recurring Pixar code is echoed by a police radio call near the end of Onward (2020)?",
+      "answers": [
+        "A113",
+        "A131",
+        "B113",
+        "A311"
+      ],
+      "difficulty": "medium",
+      "category": "pixar"
+    },
+    "reviewer": "Claude",
+    "at": "2026-11-12",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Pixar topic and A113 cross-bank search read; no other A113 question. Distractors replaced with near-miss codes after the player flag said the old ones made no sense.",
+    "verification": {
+      "context": "Onward (2020) final police radio dispatch; recurring CalArts code.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Onward screenplay has a police radio call \"a 113 in progress\"; A113 is the recurring CalArts classroom code in Pixar films.",
+        "sources": [
+          {
+            "sourceNoteId": "b38-onscript",
+            "url": "https://bluecatscreenplay.com/wp-content/uploads/2024/03/Onward-Script.pdf",
+            "locator": "Printed p.125: Officer Gore radio call",
+            "evidence": "A police radio dispatch calls a 113 in progress.",
+            "checkedBy": "Codex",
+            "checkedAt": "2026-11-09",
+            "timeSensitive": false,
+            "nextReviewAt": null,
+            "topics": [
+              "Batch 38"
+            ],
+            "limitations": "Institutional text, participant interview, or studio-authored screenplay inspected; no film/audio playback claimed."
+          },
+          {
+            "sourceNoteId": "r152-a113",
+            "url": "https://en.wikipedia.org/wiki/A113",
+            "locator": "Lead paragraph",
+            "evidence": "A113 is an inside joke referring to a CalArts animation classroom; it appears in almost every Pixar film. The code is written A113.",
+            "checkedBy": "Claude",
+            "checkedAt": "2026-11-12",
+            "timeSensitive": false,
+            "nextReviewAt": null,
+            "limitations": "Encyclopedia lead inspected; corroborates widely documented production facts. No film viewing claimed.",
+            "topics": [
+              "pixar"
+            ]
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Claude",
+        "at": "2026-11-12",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tried each near-miss as a variant: the source says A113 \"and its variants\" exist across media, but none of A131/B113/A311 is the classroom number or the spoken 113. Exactly one option matches."
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The radio call echoes A113, the recurring Pixar code.",
+          "sources": [
+            {
+              "sourceNoteId": "b38-onscript",
+              "url": "https://bluecatscreenplay.com/wp-content/uploads/2024/03/Onward-Script.pdf",
+              "locator": "Printed p.125: Officer Gore radio call",
+              "evidence": "A police radio dispatch calls a 113 in progress.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-09",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "topics": [
+                "Batch 38"
+              ],
+              "limitations": "Institutional text, participant interview, or studio-authored screenplay inspected; no film/audio playback claimed."
+            },
+            {
+              "sourceNoteId": "r152-a113",
+              "url": "https://en.wikipedia.org/wiki/A113",
+              "locator": "Lead paragraph",
+              "evidence": "A113 is an inside joke referring to a CalArts animation classroom; it appears in almost every Pixar film. The code is written A113.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Encyclopedia lead inspected; corroborates widely documented production facts. No film viewing claimed.",
+              "topics": [
+                "pixar"
+              ]
+            }
+          ],
+          "answer": "A113",
+          "verdict": "correct"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A131 transposes the digits; the recurring code is A113 and the dispatch says 113.",
+          "sources": [
+            {
+              "sourceNoteId": "b38-onscript",
+              "url": "https://bluecatscreenplay.com/wp-content/uploads/2024/03/Onward-Script.pdf",
+              "locator": "Printed p.125: Officer Gore radio call",
+              "evidence": "A police radio dispatch calls a 113 in progress.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-09",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "topics": [
+                "Batch 38"
+              ],
+              "limitations": "Institutional text, participant interview, or studio-authored screenplay inspected; no film/audio playback claimed."
+            },
+            {
+              "sourceNoteId": "r152-a113",
+              "url": "https://en.wikipedia.org/wiki/A113",
+              "locator": "Lead paragraph",
+              "evidence": "A113 is an inside joke referring to a CalArts animation classroom; it appears in almost every Pixar film. The code is written A113.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Encyclopedia lead inspected; corroborates widely documented production facts. No film viewing claimed.",
+              "topics": [
+                "pixar"
+              ]
+            }
+          ],
+          "answer": "A131",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "B113 changes the letter; the CalArts classroom code is A113.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-a113",
+              "url": "https://en.wikipedia.org/wiki/A113",
+              "locator": "Lead paragraph",
+              "evidence": "A113 is an inside joke referring to a CalArts animation classroom; it appears in almost every Pixar film. The code is written A113.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Encyclopedia lead inspected; corroborates widely documented production facts. No film viewing claimed.",
+              "topics": [
+                "pixar"
+              ]
+            }
+          ],
+          "answer": "B113",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A311 reverses the digits; neither the dispatch nor the recurring code uses 311.",
+          "sources": [
+            {
+              "sourceNoteId": "b38-onscript",
+              "url": "https://bluecatscreenplay.com/wp-content/uploads/2024/03/Onward-Script.pdf",
+              "locator": "Printed p.125: Officer Gore radio call",
+              "evidence": "A police radio dispatch calls a 113 in progress.",
+              "checkedBy": "Codex",
+              "checkedAt": "2026-11-09",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "topics": [
+                "Batch 38"
+              ],
+              "limitations": "Institutional text, participant interview, or studio-authored screenplay inspected; no film/audio playback claimed."
+            },
+            {
+              "sourceNoteId": "r152-a113",
+              "url": "https://en.wikipedia.org/wiki/A113",
+              "locator": "Lead paragraph",
+              "evidence": "A113 is an inside joke referring to a CalArts animation classroom; it appears in almost every Pixar film. The code is written A113.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Encyclopedia lead inspected; corroborates widely documented production facts. No film viewing claimed.",
+              "topics": [
+                "pixar"
+              ]
+            }
+          ],
+          "answer": "A311",
+          "verdict": "incorrect"
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 1355,
+    "hash": "013457c87358a3d9819271c638bbc8aec78169c773c5151b29f7a0b575048ae9",
+    "questionSnapshot": {
+      "id": 1355,
+      "question": "At Magic Kingdom, in which land is The Hall of Presidents?",
+      "answers": [
+        "Liberty Square",
+        "Frontierland",
+        "Main Street, U.S.A.",
+        "Tomorrowland"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "reviewer": "Claude",
+    "at": "2026-11-12",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Reframed from the attraction name (which repeated \"presidents\") to its land. Read Magic Kingdom land questions #94, #100, #599, #779, #1138: other attractions; #599 shares the Liberty Square answer but asks Haunted Mansion, a different fact.",
+    "verification": {
+      "context": "Walt Disney World Magic Kingdom land placement, November 2026.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-09",
+      "premise": {
+        "reason": "Disney's official page places The Hall of Presidents in Liberty Square at Magic Kingdom.",
+        "sources": [
+          {
+            "sourceNoteId": "r152-hall-presidents",
+            "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/hall-of-presidents/",
+            "locator": "Location line: Located in Liberty Square at Magic Kingdom Park",
+            "evidence": "The Hall of Presidents is in Liberty Square at Magic Kingdom and features Audio-Animatronics figures of all U.S. presidents.",
+            "checkedBy": "Claude",
+            "checkedAt": "2026-11-12",
+            "timeSensitive": true,
+            "nextReviewAt": "2027-02-09",
+            "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+            "topics": [
+              "parks"
+            ]
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Claude",
+        "at": "2026-11-12",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked that this is Magic Kingdom, not Disneyland (no Hall of Presidents there) and that the attraction is listed as current. Single location; no land boundary ambiguity."
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Official page: located in Liberty Square.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-hall-presidents",
+              "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/hall-of-presidents/",
+              "locator": "Location line: Located in Liberty Square at Magic Kingdom Park",
+              "evidence": "The Hall of Presidents is in Liberty Square at Magic Kingdom and features Audio-Animatronics figures of all U.S. presidents.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-09",
+              "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+              "topics": [
+                "parks"
+              ]
+            }
+          ],
+          "answer": "Liberty Square",
+          "verdict": "correct"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Frontierland is a different land; the official location is Liberty Square.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-hall-presidents",
+              "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/hall-of-presidents/",
+              "locator": "Location line: Located in Liberty Square at Magic Kingdom Park",
+              "evidence": "The Hall of Presidents is in Liberty Square at Magic Kingdom and features Audio-Animatronics figures of all U.S. presidents.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-09",
+              "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+              "topics": [
+                "parks"
+              ]
+            }
+          ],
+          "answer": "Frontierland",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Main Street, U.S.A. is a different land; the official location is Liberty Square.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-hall-presidents",
+              "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/hall-of-presidents/",
+              "locator": "Location line: Located in Liberty Square at Magic Kingdom Park",
+              "evidence": "The Hall of Presidents is in Liberty Square at Magic Kingdom and features Audio-Animatronics figures of all U.S. presidents.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-09",
+              "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+              "topics": [
+                "parks"
+              ]
+            }
+          ],
+          "answer": "Main Street, U.S.A.",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tomorrowland is a different land; the official location is Liberty Square.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-hall-presidents",
+              "url": "https://disneyworld.disney.go.com/attractions/magic-kingdom/hall-of-presidents/",
+              "locator": "Location line: Located in Liberty Square at Magic Kingdom Park",
+              "evidence": "The Hall of Presidents is in Liberty Square at Magic Kingdom and features Audio-Animatronics figures of all U.S. presidents.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-09",
+              "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+              "topics": [
+                "parks"
+              ]
+            }
+          ],
+          "answer": "Tomorrowland",
+          "verdict": "incorrect"
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 2243,
+    "hash": "f2416ade4000b68aa320bcd9be1b4aa4bf0e5789fd76cc0a8278fdeec5a209e4",
+    "questionSnapshot": {
+      "id": 2243,
+      "question": "What is the name of the Frozen-themed area within Tokyo DisneySea's Fantasy Springs?",
+      "answers": [
+        "Frozen Kingdom",
+        "Frozen Fjord",
+        "Frozen Village",
+        "Frozen Harbor"
+      ],
+      "difficulty": "hard",
+      "category": "parks"
+    },
+    "reviewer": "Claude",
+    "at": "2026-11-12",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Replaced distractors with Frozen-prefixed names so the stem's \"Frozen-themed\" no longer singles out the answer. Fantasy Springs digest read: #2241 year, #2242 third film, #2244/#2245 ride names; #2532 is Hong Kong.",
+    "verification": {
+      "context": "Tokyo DisneySea Fantasy Springs area names (opened June 2024).",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-09",
+      "premise": {
+        "reason": "Disney's naming announcement lists exactly three areas, one named Frozen Kingdom.",
+        "sources": [
+          {
+            "sourceNoteId": "r152-fantasy-springs-names",
+            "url": "https://disneyparksblog.com/disney-experiences/tokyo-disney-resort-announces-names-of-eighth-port-inspired-by-frozen-tangled-and-peter-pan",
+            "locator": "Oct 27, 2022 announcement; area name list",
+            "evidence": "Fantasy Springs has three areas: Frozen Kingdom, Rapunzel's Forest and Peter Pan's Never Land.",
+            "checkedBy": "Claude",
+            "checkedAt": "2026-11-12",
+            "timeSensitive": true,
+            "nextReviewAt": "2027-02-09",
+            "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+            "topics": [
+              "parks"
+            ]
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Claude",
+        "at": "2026-11-12",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Exhaustive three-name list excludes all distractors. Checked Hong Kong's World of Frozen is not Fantasy Springs; the stem pins Tokyo DisneySea."
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Frozen Kingdom is the announced Frozen area.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-fantasy-springs-names",
+              "url": "https://disneyparksblog.com/disney-experiences/tokyo-disney-resort-announces-names-of-eighth-port-inspired-by-frozen-tangled-and-peter-pan",
+              "locator": "Oct 27, 2022 announcement; area name list",
+              "evidence": "Fantasy Springs has three areas: Frozen Kingdom, Rapunzel's Forest and Peter Pan's Never Land.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-09",
+              "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+              "topics": [
+                "parks"
+              ]
+            }
+          ],
+          "answer": "Frozen Kingdom",
+          "verdict": "correct"
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Frozen Fjord is not among the three announced area names.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-fantasy-springs-names",
+              "url": "https://disneyparksblog.com/disney-experiences/tokyo-disney-resort-announces-names-of-eighth-port-inspired-by-frozen-tangled-and-peter-pan",
+              "locator": "Oct 27, 2022 announcement; area name list",
+              "evidence": "Fantasy Springs has three areas: Frozen Kingdom, Rapunzel's Forest and Peter Pan's Never Land.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-09",
+              "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+              "topics": [
+                "parks"
+              ]
+            }
+          ],
+          "answer": "Frozen Fjord",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Frozen Village is not among the three announced area names.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-fantasy-springs-names",
+              "url": "https://disneyparksblog.com/disney-experiences/tokyo-disney-resort-announces-names-of-eighth-port-inspired-by-frozen-tangled-and-peter-pan",
+              "locator": "Oct 27, 2022 announcement; area name list",
+              "evidence": "Fantasy Springs has three areas: Frozen Kingdom, Rapunzel's Forest and Peter Pan's Never Land.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-09",
+              "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+              "topics": [
+                "parks"
+              ]
+            }
+          ],
+          "answer": "Frozen Village",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Frozen Harbor is not among the three announced area names.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-fantasy-springs-names",
+              "url": "https://disneyparksblog.com/disney-experiences/tokyo-disney-resort-announces-names-of-eighth-port-inspired-by-frozen-tangled-and-peter-pan",
+              "locator": "Oct 27, 2022 announcement; area name list",
+              "evidence": "Fantasy Springs has three areas: Frozen Kingdom, Rapunzel's Forest and Peter Pan's Never Land.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-09",
+              "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+              "topics": [
+                "parks"
+              ]
+            }
+          ],
+          "answer": "Frozen Harbor",
+          "verdict": "incorrect"
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 2642,
+    "hash": "e5cb8e1493f1aa4e039655c322646a4beb0bd508f8a33334d82bf2313aa5fc49",
+    "questionSnapshot": {
+      "id": 2642,
+      "question": "At Pixar Pier's 2018 debut, which neighborhood held the pier's giant Ferris wheel?",
+      "answers": [
+        "Pixar Promenade",
+        "Incredibles Park",
+        "Toy Story Boardwalk",
+        "Inside Out Headquarters"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "reviewer": "Claude",
+    "at": "2026-11-12",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Removed the wheel's \"Pixar Pal-A-Round\" name, which paired with the Pixar Promenade answer. Remaining \"Pixar\" token is the land name shared by all four real neighborhoods (decision recorded). Pixar Pier digest read: #623, #2239 ask other facts.",
+    "verification": {
+      "context": "Disney California Adventure Pixar Pier at its June 2018 opening.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "At opening the Pixar Pal-A-Round Ferris wheel was the focal point of Pixar Promenade.",
+        "sources": [
+          {
+            "sourceNoteId": "r152-pixar-pier-neighborhoods",
+            "url": "https://wdwnt.com/2018/05/four-neighborhoods-will-welcome-you-into-pixar-pier-at-disney-california-adventure/",
+            "locator": "May 2018 neighborhood rundown; Pixar Promenade section",
+            "evidence": "Four neighborhoods: Incredibles Park, Toy Story Boardwalk, Pixar Promenade and Inside Out Headquarters; the Pixar Pal-A-Round Ferris wheel is the focal point of Pixar Promenade.",
+            "checkedBy": "Claude",
+            "checkedAt": "2026-11-12",
+            "timeSensitive": false,
+            "nextReviewAt": null,
+            "limitations": "Specialist news report of the Disneyland Resort announcement at opening; corroborated by the D23 neighborhood list.",
+            "topics": [
+              "parks"
+            ]
+          },
+          {
+            "sourceNoteId": "r152-d23-inside-out",
+            "url": "https://d23.com/inside-out-attraction-pixar-pier/",
+            "locator": "June 22, 2018 article; neighborhood list",
+            "evidence": "D23 lists the Pixar Pier neighborhoods, including Inside Out Headquarters and Pixar Promenade.",
+            "checkedBy": "Claude",
+            "checkedAt": "2026-11-12",
+            "timeSensitive": false,
+            "nextReviewAt": null,
+            "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+            "topics": [
+              "parks"
+            ]
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Claude",
+        "at": "2026-11-12",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked that the wheel is the only giant Ferris wheel on the pier and is assigned to one neighborhood, Pixar Promenade. Historical 2018 anchor avoids later re-theming."
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Ferris wheel is the focal point of Pixar Promenade.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-pixar-pier-neighborhoods",
+              "url": "https://wdwnt.com/2018/05/four-neighborhoods-will-welcome-you-into-pixar-pier-at-disney-california-adventure/",
+              "locator": "May 2018 neighborhood rundown; Pixar Promenade section",
+              "evidence": "Four neighborhoods: Incredibles Park, Toy Story Boardwalk, Pixar Promenade and Inside Out Headquarters; the Pixar Pal-A-Round Ferris wheel is the focal point of Pixar Promenade.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Specialist news report of the Disneyland Resort announcement at opening; corroborated by the D23 neighborhood list.",
+              "topics": [
+                "parks"
+              ]
+            }
+          ],
+          "answer": "Pixar Promenade",
+          "verdict": "correct"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Incredibles Park holds the Incredicoaster, not the wheel.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-pixar-pier-neighborhoods",
+              "url": "https://wdwnt.com/2018/05/four-neighborhoods-will-welcome-you-into-pixar-pier-at-disney-california-adventure/",
+              "locator": "May 2018 neighborhood rundown; Pixar Promenade section",
+              "evidence": "Four neighborhoods: Incredibles Park, Toy Story Boardwalk, Pixar Promenade and Inside Out Headquarters; the Pixar Pal-A-Round Ferris wheel is the focal point of Pixar Promenade.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Specialist news report of the Disneyland Resort announcement at opening; corroborated by the D23 neighborhood list.",
+              "topics": [
+                "parks"
+              ]
+            }
+          ],
+          "answer": "Incredibles Park",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Toy Story Boardwalk holds Toy Story Midway Mania! and the carousel, not the wheel.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-pixar-pier-neighborhoods",
+              "url": "https://wdwnt.com/2018/05/four-neighborhoods-will-welcome-you-into-pixar-pier-at-disney-california-adventure/",
+              "locator": "May 2018 neighborhood rundown; Pixar Promenade section",
+              "evidence": "Four neighborhoods: Incredibles Park, Toy Story Boardwalk, Pixar Promenade and Inside Out Headquarters; the Pixar Pal-A-Round Ferris wheel is the focal point of Pixar Promenade.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Specialist news report of the Disneyland Resort announcement at opening; corroborated by the D23 neighborhood list.",
+              "topics": [
+                "parks"
+              ]
+            }
+          ],
+          "answer": "Toy Story Boardwalk",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Inside Out Headquarters is the western-end neighborhood with the Inside Out attraction, not the wheel.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-pixar-pier-neighborhoods",
+              "url": "https://wdwnt.com/2018/05/four-neighborhoods-will-welcome-you-into-pixar-pier-at-disney-california-adventure/",
+              "locator": "May 2018 neighborhood rundown; Pixar Promenade section",
+              "evidence": "Four neighborhoods: Incredibles Park, Toy Story Boardwalk, Pixar Promenade and Inside Out Headquarters; the Pixar Pal-A-Round Ferris wheel is the focal point of Pixar Promenade.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Specialist news report of the Disneyland Resort announcement at opening; corroborated by the D23 neighborhood list.",
+              "topics": [
+                "parks"
+              ]
+            },
+            {
+              "sourceNoteId": "r152-d23-inside-out",
+              "url": "https://d23.com/inside-out-attraction-pixar-pier/",
+              "locator": "June 22, 2018 article; neighborhood list",
+              "evidence": "D23 lists the Pixar Pier neighborhoods, including Inside Out Headquarters and Pixar Promenade.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+              "topics": [
+                "parks"
+              ]
+            }
+          ],
+          "answer": "Inside Out Headquarters",
+          "verdict": "incorrect"
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 1236,
+    "hash": "f0c36c10d5d58538f3809501d8e06f7fbaaa611d90ee59b5bb8ad518250c100b",
+    "questionSnapshot": {
+      "id": 1236,
+      "question": "What do Disney fans call the three-circle mouse-head silhouettes subtly worked into cruise ship decor?",
+      "answers": [
+        "Hidden Mickeys",
+        "Magic Marks",
+        "Castaway Icons",
+        "Pixie Prints"
+      ],
+      "difficulty": "easy",
+      "category": "cruise"
+    },
+    "reviewer": "Claude",
+    "at": "2026-11-12",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Removed \"Mickey Mouse\" from the stem; the answer is still easy by design. No other Hidden Mickey question in the bank.",
+    "verification": {
+      "context": "Fan term used across Disney parks and ships.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "D23 defines Hidden Mickeys as subtle three-circle Mickey silhouettes; fans hunt them aboard Disney ships.",
+        "sources": [
+          {
+            "sourceNoteId": "r152-hidden-mickeys-d23",
+            "url": "https://d23.com/a-to-z/hidden-mickeys/",
+            "locator": "Complete entry",
+            "evidence": "Hidden Mickeys are subtle silhouettes of Mickey Mouse, commonly the three-circle head form, worked into Disney designs.",
+            "checkedBy": "Claude",
+            "checkedAt": "2026-11-12",
+            "timeSensitive": false,
+            "nextReviewAt": null,
+            "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+            "topics": [
+              "cruise"
+            ]
+          },
+          {
+            "sourceNoteId": "r152-hidden-mickeys-ship",
+            "url": "https://allears.net/2014/10/27/disney-magic-cruise-ship-hidden-mickeys/",
+            "locator": "Opening paragraphs and photo captions",
+            "evidence": "Fans hunt Hidden Mickeys aboard the Disney Magic cruise ship.",
+            "checkedBy": "Claude",
+            "checkedAt": "2026-11-12",
+            "timeSensitive": false,
+            "nextReviewAt": null,
+            "limitations": "Fan/specialist site; establishes the term is used for cruise ship decor.",
+            "topics": [
+              "cruise"
+            ]
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Claude",
+        "at": "2026-11-12",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "\"Mouse-head silhouettes\" still points at Mickey but no longer contains the answer word. Checked none of the distractors is an established fan term."
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Hidden Mickeys is the documented term.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-hidden-mickeys-d23",
+              "url": "https://d23.com/a-to-z/hidden-mickeys/",
+              "locator": "Complete entry",
+              "evidence": "Hidden Mickeys are subtle silhouettes of Mickey Mouse, commonly the three-circle head form, worked into Disney designs.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+              "topics": [
+                "cruise"
+              ]
+            },
+            {
+              "sourceNoteId": "r152-hidden-mickeys-ship",
+              "url": "https://allears.net/2014/10/27/disney-magic-cruise-ship-hidden-mickeys/",
+              "locator": "Opening paragraphs and photo captions",
+              "evidence": "Fans hunt Hidden Mickeys aboard the Disney Magic cruise ship.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Fan/specialist site; establishes the term is used for cruise ship decor.",
+              "topics": [
+                "cruise"
+              ]
+            }
+          ],
+          "answer": "Hidden Mickeys",
+          "verdict": "correct"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Magic Marks is not the term; D23 names these Hidden Mickeys.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-hidden-mickeys-d23",
+              "url": "https://d23.com/a-to-z/hidden-mickeys/",
+              "locator": "Complete entry",
+              "evidence": "Hidden Mickeys are subtle silhouettes of Mickey Mouse, commonly the three-circle head form, worked into Disney designs.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+              "topics": [
+                "cruise"
+              ]
+            }
+          ],
+          "answer": "Magic Marks",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Castaway Icons is not the term; D23 names these Hidden Mickeys.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-hidden-mickeys-d23",
+              "url": "https://d23.com/a-to-z/hidden-mickeys/",
+              "locator": "Complete entry",
+              "evidence": "Hidden Mickeys are subtle silhouettes of Mickey Mouse, commonly the three-circle head form, worked into Disney designs.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+              "topics": [
+                "cruise"
+              ]
+            }
+          ],
+          "answer": "Castaway Icons",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pixie Prints is not the term; D23 names these Hidden Mickeys.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-hidden-mickeys-d23",
+              "url": "https://d23.com/a-to-z/hidden-mickeys/",
+              "locator": "Complete entry",
+              "evidence": "Hidden Mickeys are subtle silhouettes of Mickey Mouse, commonly the three-circle head form, worked into Disney designs.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+              "topics": [
+                "cruise"
+              ]
+            }
+          ],
+          "answer": "Pixie Prints",
+          "verdict": "incorrect"
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 427,
+    "hash": "3302b7a041a32f7780ef3aa65f43babec24cec68a2ac0b4e2ee48c49dbdd58ff",
+    "questionSnapshot": {
+      "id": 427,
+      "question": "As of November 2026, how long is the self-paced run or walk that Disney cruise guests can complete on Castaway Cay?",
+      "answers": [
+        "5K",
+        "10K",
+        "Half marathon",
+        "1 mile"
+      ],
+      "difficulty": "medium",
+      "category": "cruise"
+    },
+    "reviewer": "Claude",
+    "at": "2026-11-12",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Answers are now distances, so \"Castaway Cay\" in the stem no longer matches the answer text. No other Castaway Cay run question.",
+    "verification": {
+      "context": "Castaway Cay self-paced run/walk, as of November 2026.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-09",
+      "premise": {
+        "reason": "A January 2026 planDisney answer describes the self-paced Castaway Cay 5K (two laps, medal at the bike stand).",
+        "sources": [
+          {
+            "sourceNoteId": "r152-castaway-5k",
+            "url": "https://plandisney.disney.go.com/question/register-castaway-cay-run-628629/",
+            "locator": "January 1, 2026 panelist answer",
+            "evidence": "The Castaway Cay 5K is self-paced with no pre-registration; it is two laps and finishers collect a 5K medal at the bike rental stand.",
+            "checkedBy": "Claude",
+            "checkedAt": "2026-11-12",
+            "timeSensitive": true,
+            "nextReviewAt": "2027-02-09",
+            "limitations": "Official Disney planning-forum answer (planDisney panelist), dated; not a formal policy page.",
+            "topics": [
+              "cruise"
+            ]
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Claude",
+        "at": "2026-11-12",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Two laps make up the 5K, not a 10K. Checked that no other self-paced distance is offered on Castaway Cay; Lookout Cay has no equivalent. Changeable: recheck scheduled."
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The self-paced event is the 5K.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-castaway-5k",
+              "url": "https://plandisney.disney.go.com/question/register-castaway-cay-run-628629/",
+              "locator": "January 1, 2026 panelist answer",
+              "evidence": "The Castaway Cay 5K is self-paced with no pre-registration; it is two laps and finishers collect a 5K medal at the bike rental stand.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-09",
+              "limitations": "Official Disney planning-forum answer (planDisney panelist), dated; not a formal policy page.",
+              "topics": [
+                "cruise"
+              ]
+            }
+          ],
+          "answer": "5K",
+          "verdict": "correct"
+        },
+        {
+          "basis": "contradiction",
+          "reason": "10K contradicts the documented 5K distance.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-castaway-5k",
+              "url": "https://plandisney.disney.go.com/question/register-castaway-cay-run-628629/",
+              "locator": "January 1, 2026 panelist answer",
+              "evidence": "The Castaway Cay 5K is self-paced with no pre-registration; it is two laps and finishers collect a 5K medal at the bike rental stand.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-09",
+              "limitations": "Official Disney planning-forum answer (planDisney panelist), dated; not a formal policy page.",
+              "topics": [
+                "cruise"
+              ]
+            }
+          ],
+          "answer": "10K",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "contradiction",
+          "reason": "A half marathon contradicts the documented 5K distance.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-castaway-5k",
+              "url": "https://plandisney.disney.go.com/question/register-castaway-cay-run-628629/",
+              "locator": "January 1, 2026 panelist answer",
+              "evidence": "The Castaway Cay 5K is self-paced with no pre-registration; it is two laps and finishers collect a 5K medal at the bike rental stand.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-09",
+              "limitations": "Official Disney planning-forum answer (planDisney panelist), dated; not a formal policy page.",
+              "topics": [
+                "cruise"
+              ]
+            }
+          ],
+          "answer": "Half marathon",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "contradiction",
+          "reason": "One mile contradicts the documented 5K distance.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-castaway-5k",
+              "url": "https://plandisney.disney.go.com/question/register-castaway-cay-run-628629/",
+              "locator": "January 1, 2026 panelist answer",
+              "evidence": "The Castaway Cay 5K is self-paced with no pre-registration; it is two laps and finishers collect a 5K medal at the bike rental stand.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-09",
+              "limitations": "Official Disney planning-forum answer (planDisney panelist), dated; not a formal policy page.",
+              "topics": [
+                "cruise"
+              ]
+            }
+          ],
+          "answer": "1 mile",
+          "verdict": "incorrect"
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 2589,
+    "hash": "3f42368b799ee758254287fe6e3f9bb03ace27a51c9b81d712edc8a0ecffb6d8",
+    "questionSnapshot": {
+      "id": 2589,
+      "question": "In Pixar's Elemental (2023), what is the name of the metropolis where fire, water, earth, and air residents live together?",
+      "answers": [
+        "Element City",
+        "Elementia",
+        "Element Bay",
+        "Elemental Heights"
+      ],
+      "difficulty": "easy",
+      "category": "pixar"
+    },
+    "reviewer": "Claude",
+    "at": "2026-11-12",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Distractors now all share the Element- stem, so \"Elemental\" in the stem no longer singles out the answer. Elemental digest read: #1411 asks Firetown (a borough), a different fact.",
+    "verification": {
+      "context": "Pixar's Elemental (2023) setting.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar's synopsis: set in Element City, where Fire, Water, Earth and Air residents live together.",
+        "sources": [
+          {
+            "sourceNoteId": "r152-elemental",
+            "url": "https://www.pixar.com/elemental",
+            "locator": "Opening synopsis",
+            "evidence": "Elemental is set in Element City, where Fire-, Water-, Earth- and Air-residents live together.",
+            "checkedBy": "Claude",
+            "checkedAt": "2026-11-12",
+            "timeSensitive": false,
+            "nextReviewAt": null,
+            "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+            "topics": [
+              "pixar"
+            ]
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Claude",
+        "at": "2026-11-12",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked Firetown (a district) is not among the options, so the city/district distinction cannot create a second answer."
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Element City is named in the synopsis.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-elemental",
+              "url": "https://www.pixar.com/elemental",
+              "locator": "Opening synopsis",
+              "evidence": "Elemental is set in Element City, where Fire-, Water-, Earth- and Air-residents live together.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+              "topics": [
+                "pixar"
+              ]
+            }
+          ],
+          "answer": "Element City",
+          "verdict": "correct"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Elementia is not the city named by Pixar.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-elemental",
+              "url": "https://www.pixar.com/elemental",
+              "locator": "Opening synopsis",
+              "evidence": "Elemental is set in Element City, where Fire-, Water-, Earth- and Air-residents live together.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+              "topics": [
+                "pixar"
+              ]
+            }
+          ],
+          "answer": "Elementia",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Element Bay is not the city named by Pixar.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-elemental",
+              "url": "https://www.pixar.com/elemental",
+              "locator": "Opening synopsis",
+              "evidence": "Elemental is set in Element City, where Fire-, Water-, Earth- and Air-residents live together.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+              "topics": [
+                "pixar"
+              ]
+            }
+          ],
+          "answer": "Element Bay",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Elemental Heights is not the city named by Pixar.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-elemental",
+              "url": "https://www.pixar.com/elemental",
+              "locator": "Opening synopsis",
+              "evidence": "Elemental is set in Element City, where Fire-, Water-, Earth- and Air-residents live together.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+              "topics": [
+                "pixar"
+              ]
+            }
+          ],
+          "answer": "Elemental Heights",
+          "verdict": "incorrect"
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 518,
+    "hash": "9226ed6dc409787b238c9ebd6660f2f98259ce41b49d6980c43aa33f71b254da",
+    "questionSnapshot": {
+      "id": 518,
+      "question": "Which Disney animated feature is a loose adaptation of a Charles Dickens novel?",
+      "answers": [
+        "Oliver & Company",
+        "The Great Mouse Detective",
+        "The Aristocats",
+        "Lady and the Tramp"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    },
+    "reviewer": "Claude",
+    "at": "2026-11-12",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Inverted: the stem names Dickens, the answer is the film, so the film title no longer echoes \"Oliver Twist\". Read the Oliver & Company digest and adaptation questions (#2499, #2787 etc.); none asks the Dickens source.",
+    "verification": {
+      "context": "Source novels of Disney animated features.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Oliver & Company is inspired by Dickens's Oliver Twist.",
+        "sources": [
+          {
+            "sourceNoteId": "r152-oliver-d23",
+            "url": "https://d23.com/a-to-z/oliver-company-film/",
+            "locator": "Complete entry, first sentence",
+            "evidence": "Oliver & Company is the Oliver Twist story animated with a twist.",
+            "checkedBy": "Claude",
+            "checkedAt": "2026-11-12",
+            "timeSensitive": false,
+            "nextReviewAt": null,
+            "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+            "topics": [
+              "movies"
+            ]
+          },
+          {
+            "sourceNoteId": "r152-oliver-wiki",
+            "url": "https://en.wikipedia.org/wiki/Oliver_%26_Company",
+            "locator": "Lead paragraph",
+            "evidence": "Oliver & Company is inspired by the Charles Dickens novel Oliver Twist.",
+            "checkedBy": "Claude",
+            "checkedAt": "2026-11-12",
+            "timeSensitive": false,
+            "nextReviewAt": null,
+            "limitations": "Encyclopedia lead inspected; corroborates widely documented production facts. No film viewing claimed.",
+            "topics": [
+              "movies"
+            ]
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Claude",
+        "at": "2026-11-12",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The Great Mouse Detective's Victorian London setting is a plausible Dickens confusion, but its source is Eve Titus. Disney's A Christmas Carol (2009) would also qualify but is not an option."
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Inspired by Dickens's Oliver Twist.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-oliver-d23",
+              "url": "https://d23.com/a-to-z/oliver-company-film/",
+              "locator": "Complete entry, first sentence",
+              "evidence": "Oliver & Company is the Oliver Twist story animated with a twist.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+              "topics": [
+                "movies"
+              ]
+            },
+            {
+              "sourceNoteId": "r152-oliver-wiki",
+              "url": "https://en.wikipedia.org/wiki/Oliver_%26_Company",
+              "locator": "Lead paragraph",
+              "evidence": "Oliver & Company is inspired by the Charles Dickens novel Oliver Twist.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Encyclopedia lead inspected; corroborates widely documented production facts. No film viewing claimed.",
+              "topics": [
+                "movies"
+              ]
+            }
+          ],
+          "answer": "Oliver & Company",
+          "verdict": "correct"
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Based on Eve Titus's Basil of Baker Street books, not Dickens.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-gmd-wiki",
+              "url": "https://en.wikipedia.org/wiki/The_Great_Mouse_Detective",
+              "locator": "Lead paragraph",
+              "evidence": "The Great Mouse Detective is based on the Basil of Baker Street books by Eve Titus and Paul Galdone.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Encyclopedia lead inspected; corroborates widely documented production facts. No film viewing claimed.",
+              "topics": [
+                "movies"
+              ]
+            }
+          ],
+          "answer": "The Great Mouse Detective",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Based on a story by Tom McGowan and Tom Rowe, not Dickens.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-aristocats-wiki",
+              "url": "https://en.wikipedia.org/wiki/The_Aristocats",
+              "locator": "Lead paragraphs",
+              "evidence": "The Aristocats is based on a story by Tom McGowan and Tom Rowe, begun as a live-action TV script.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Encyclopedia lead inspected; corroborates widely documented production facts. No film viewing claimed.",
+              "topics": [
+                "movies"
+              ]
+            }
+          ],
+          "answer": "The Aristocats",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Based on Ward Greene's story, not Dickens.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-lady-wiki",
+              "url": "https://en.wikipedia.org/wiki/Lady_and_the_Tramp",
+              "locator": "Lead paragraph",
+              "evidence": "Lady and the Tramp is based on Ward Greene's 1945 Cosmopolitan story Happy Dan, the Cynical Dog.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Encyclopedia lead inspected; corroborates widely documented production facts. No film viewing claimed.",
+              "topics": [
+                "movies"
+              ]
+            }
+          ],
+          "answer": "Lady and the Tramp",
+          "verdict": "incorrect"
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 521,
+    "hash": "f0b65c0ff65e8d10b5029b639509cba4140e9b2f1cd5f5311d0e112ea4d83633",
+    "questionSnapshot": {
+      "id": 521,
+      "question": "Which Disney animated feature reimagines a Robert Louis Stevenson novel?",
+      "answers": [
+        "Treasure Planet",
+        "The Jungle Book",
+        "Pinocchio",
+        "The Hunchback of Notre Dame"
+      ],
+      "difficulty": "medium",
+      "category": "movies"
+    },
+    "reviewer": "Claude",
+    "at": "2026-11-12",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Inverted: the stem names Stevenson, so the film title no longer echoes \"Treasure Island\". Treasure Planet digest read; #404/#2861-2865 concern the live-action 1950 Treasure Island, excluded by \"animated\".",
+    "verification": {
+      "context": "Source novels of Disney animated features.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Treasure Planet is built on Stevenson's Treasure Island.",
+        "sources": [
+          {
+            "sourceNoteId": "r152-treasure-d23",
+            "url": "https://d23.com/a-to-z/treasure-planet-film/",
+            "locator": "Complete entry, first sentence",
+            "evidence": "Treasure Planet is made with a nod to Robert Louis Stevenson's Treasure Island.",
+            "checkedBy": "Claude",
+            "checkedAt": "2026-11-12",
+            "timeSensitive": false,
+            "nextReviewAt": null,
+            "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+            "topics": [
+              "movies"
+            ]
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Claude",
+        "at": "2026-11-12",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the live-action Treasure Island (1950) is excluded by \"animated feature\" and is not an option. Each distractor has a different, named literary source."
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "D23: a nod to Stevenson's Treasure Island.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-treasure-d23",
+              "url": "https://d23.com/a-to-z/treasure-planet-film/",
+              "locator": "Complete entry, first sentence",
+              "evidence": "Treasure Planet is made with a nod to Robert Louis Stevenson's Treasure Island.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+              "topics": [
+                "movies"
+              ]
+            }
+          ],
+          "answer": "Treasure Planet",
+          "verdict": "correct"
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Based on Kipling's Jungle Book stories.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-jungle-wiki",
+              "url": "https://en.wikipedia.org/wiki/The_Jungle_Book_(1967_film)",
+              "locator": "Lead paragraph",
+              "evidence": "The Jungle Book (1967) is based on the Mowgli stories from Rudyard Kipling's 1894 book.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Encyclopedia lead inspected; corroborates widely documented production facts. No film viewing claimed.",
+              "topics": [
+                "movies"
+              ]
+            }
+          ],
+          "answer": "The Jungle Book",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Based on Collodi's novel.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-pinocchio-wiki",
+              "url": "https://en.wikipedia.org/wiki/Pinocchio_(1940_film)",
+              "locator": "Lead paragraph",
+              "evidence": "Pinocchio (1940) is loosely based on Carlo Collodi's 1883 novel The Adventures of Pinocchio.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Encyclopedia lead inspected; corroborates widely documented production facts. No film viewing claimed.",
+              "topics": [
+                "movies"
+              ]
+            }
+          ],
+          "answer": "Pinocchio",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Based on Victor Hugo's novel.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-hunchback-wiki",
+              "url": "https://en.wikipedia.org/wiki/The_Hunchback_of_Notre_Dame_(1996_film)",
+              "locator": "Lead paragraph",
+              "evidence": "The Hunchback of Notre Dame (1996) is loosely based on the 1831 novel by Victor Hugo.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Encyclopedia lead inspected; corroborates widely documented production facts. No film viewing claimed.",
+              "topics": [
+                "movies"
+              ]
+            }
+          ],
+          "answer": "The Hunchback of Notre Dame",
+          "verdict": "incorrect"
+        }
+      ]
+    }
+  },
+  {
+    "schema": 2,
+    "questionId": 925,
+    "hash": "7dec0cf1e78e2ef14b9d39fb641d4f5cb15ca24ef15978aeeac180d7279fb7d4",
+    "questionSnapshot": {
+      "id": 925,
+      "question": "At Disneyland, which paddle-wheel riverboat circles the Rivers of America?",
+      "answers": [
+        "Mark Twain",
+        "Liberty Belle",
+        "Columbia",
+        "Admiral Joe Fowler"
+      ],
+      "difficulty": "medium",
+      "category": "parks"
+    },
+    "reviewer": "Claude",
+    "at": "2026-11-12",
+    "manual": {
+      "singleAnswer": true,
+      "context": true,
+      "wording": true,
+      "noGiveaway": true,
+      "distinctFact": true,
+      "category": true,
+      "difficulty": true,
+      "scope": true
+    },
+    "notes": "Removed \"Riverboat\"/\"Sailing Ship\" from the options so the answer text no longer matches the stem. Read #909, #918, #1148, #2082 river questions; #918 asks the Liberty Belle renaming, a different fact.",
+    "verification": {
+      "context": "Disneyland Rivers of America vessels, November 2026.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-09",
+      "premise": {
+        "reason": "Disneyland's Mark Twain is a steam paddle boat on the Rivers of America.",
+        "sources": [
+          {
+            "sourceNoteId": "r152-mark-twain",
+            "url": "https://disneyland.disney.go.com/attractions/disneyland/mark-twain-riverboat/",
+            "locator": "Along the Mississippi; Alternate Adventures",
+            "evidence": "The Mark Twain Riverboat is a steam-powered 19th-century-style paddle boat on Disneyland's Rivers of America; it shares the route with the Sailing Ship Columbia.",
+            "checkedBy": "Claude",
+            "checkedAt": "2026-11-12",
+            "timeSensitive": true,
+            "nextReviewAt": "2027-02-09",
+            "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+            "topics": [
+              "parks"
+            ]
+          }
+        ]
+      },
+      "challenge": {
+        "reviewer": "Claude",
+        "at": "2026-11-12",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Columbia circles the same river, so the paddle-wheel qualifier is what excludes it; the official page names it the Sailing Ship Columbia. #2082's stem also names the Mark Twain Riverboat; accepted as incidental context."
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Mark Twain is Disneyland's paddle boat on the Rivers of America.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-mark-twain",
+              "url": "https://disneyland.disney.go.com/attractions/disneyland/mark-twain-riverboat/",
+              "locator": "Along the Mississippi; Alternate Adventures",
+              "evidence": "The Mark Twain Riverboat is a steam-powered 19th-century-style paddle boat on Disneyland's Rivers of America; it shares the route with the Sailing Ship Columbia.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-09",
+              "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+              "topics": [
+                "parks"
+              ]
+            }
+          ],
+          "answer": "Mark Twain",
+          "verdict": "correct"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Liberty Belle is the renamed Walt Disney World paddle-wheeler, not Disneyland's.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-irvine",
+              "url": "https://d23.com/walt-disney-legend/richard-irvine/",
+              "locator": "Final paragraph",
+              "evidence": "Walt Disney World's second paddle-wheel steamship, the Richard F. Irvine, was renamed Liberty Belle in 1996.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+              "topics": [
+                "parks"
+              ]
+            }
+          ],
+          "answer": "Liberty Belle",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Columbia shares the route but is a sailing ship, not a paddle-wheel riverboat.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-mark-twain",
+              "url": "https://disneyland.disney.go.com/attractions/disneyland/mark-twain-riverboat/",
+              "locator": "Along the Mississippi; Alternate Adventures",
+              "evidence": "The Mark Twain Riverboat is a steam-powered 19th-century-style paddle boat on Disneyland's Rivers of America; it shares the route with the Sailing Ship Columbia.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-09",
+              "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+              "topics": [
+                "parks"
+              ]
+            }
+          ],
+          "answer": "Columbia",
+          "verdict": "incorrect"
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Admiral Joe Fowler ran at Magic Kingdom (1971-1980), not Disneyland.",
+          "sources": [
+            {
+              "sourceNoteId": "r152-fowler",
+              "url": "https://d23.com/a-to-z/admiral-joe-fowler-riverboat/",
+              "locator": "Complete entry",
+              "evidence": "The Admiral Joe Fowler riverboat ran in Frontierland at Magic Kingdom from 1971 until fall 1980.",
+              "checkedBy": "Claude",
+              "checkedAt": "2026-11-12",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+              "topics": [
+                "parks"
+              ]
+            }
+          ],
+          "answer": "Admiral Joe Fowler",
+          "verdict": "incorrect"
+        }
+      ]
+    }
+  }
+]

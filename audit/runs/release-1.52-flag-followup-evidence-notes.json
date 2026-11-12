@@ -1,0 +1,651 @@
+{
+  "schema": 1,
+  "reviewer": "Claude",
+  "at": "2026-11-12",
+  "sourcesChecked": [
+    "b38-onscript",
+    "r152-a113",
+    "r152-aristocats-wiki",
+    "r152-castaway-5k",
+    "r152-d23-inside-out",
+    "r152-elemental",
+    "r152-fantasy-springs-names",
+    "r152-fowler",
+    "r152-gmd-wiki",
+    "r152-hall-presidents",
+    "r152-hidden-mickeys-d23",
+    "r152-hidden-mickeys-ship",
+    "r152-hunchback-wiki",
+    "r152-irvine",
+    "r152-jungle-wiki",
+    "r152-lady-wiki",
+    "r152-mark-twain",
+    "r152-oliver-d23",
+    "r152-oliver-wiki",
+    "r152-pinocchio-wiki",
+    "r152-pixar-pier-neighborhoods",
+    "r152-treasure-d23"
+  ],
+  "reviews": [
+    {
+      "questionId": 2432,
+      "hash": "364ac396f7979566bba8e7461c7e8a5452468d4eaf9b1f91b50fd91d6b528df8",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Pixar topic and A113 cross-bank search read; no other A113 question. Distractors replaced with near-miss codes after the player flag said the old ones made no sense.",
+      "context": "Onward (2020) final police radio dispatch; recurring CalArts code.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "The Onward screenplay has a police radio call \"a 113 in progress\"; A113 is the recurring CalArts classroom code in Pixar films.",
+        "sources": [
+          "b38-onscript",
+          "r152-a113"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The radio call echoes A113, the recurring Pixar code.",
+          "sources": [
+            "b38-onscript",
+            "r152-a113"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A131 transposes the digits; the recurring code is A113 and the dispatch says 113.",
+          "sources": [
+            "b38-onscript",
+            "r152-a113"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "B113 changes the letter; the CalArts classroom code is A113.",
+          "sources": [
+            "r152-a113"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "A311 reverses the digits; neither the dispatch nor the recurring code uses 311.",
+          "sources": [
+            "b38-onscript",
+            "r152-a113"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Claude",
+        "at": "2026-11-12",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Tried each near-miss as a variant: the source says A113 \"and its variants\" exist across media, but none of A131/B113/A311 is the classroom number or the spoken 113. Exactly one option matches."
+      }
+    },
+    {
+      "questionId": 1355,
+      "hash": "013457c87358a3d9819271c638bbc8aec78169c773c5151b29f7a0b575048ae9",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Reframed from the attraction name (which repeated \"presidents\") to its land. Read Magic Kingdom land questions #94, #100, #599, #779, #1138: other attractions; #599 shares the Liberty Square answer but asks Haunted Mansion, a different fact.",
+      "context": "Walt Disney World Magic Kingdom land placement, November 2026.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-09",
+      "premise": {
+        "reason": "Disney's official page places The Hall of Presidents in Liberty Square at Magic Kingdom.",
+        "sources": [
+          "r152-hall-presidents"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Official page: located in Liberty Square.",
+          "sources": [
+            "r152-hall-presidents"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Frontierland is a different land; the official location is Liberty Square.",
+          "sources": [
+            "r152-hall-presidents"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Main Street, U.S.A. is a different land; the official location is Liberty Square.",
+          "sources": [
+            "r152-hall-presidents"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Tomorrowland is a different land; the official location is Liberty Square.",
+          "sources": [
+            "r152-hall-presidents"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Claude",
+        "at": "2026-11-12",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked that this is Magic Kingdom, not Disneyland (no Hall of Presidents there) and that the attraction is listed as current. Single location; no land boundary ambiguity."
+      }
+    },
+    {
+      "questionId": 2243,
+      "hash": "f2416ade4000b68aa320bcd9be1b4aa4bf0e5789fd76cc0a8278fdeec5a209e4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Replaced distractors with Frozen-prefixed names so the stem's \"Frozen-themed\" no longer singles out the answer. Fantasy Springs digest read: #2241 year, #2242 third film, #2244/#2245 ride names; #2532 is Hong Kong.",
+      "context": "Tokyo DisneySea Fantasy Springs area names (opened June 2024).",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-09",
+      "premise": {
+        "reason": "Disney's naming announcement lists exactly three areas, one named Frozen Kingdom.",
+        "sources": [
+          "r152-fantasy-springs-names"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Frozen Kingdom is the announced Frozen area.",
+          "sources": [
+            "r152-fantasy-springs-names"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Frozen Fjord is not among the three announced area names.",
+          "sources": [
+            "r152-fantasy-springs-names"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Frozen Village is not among the three announced area names.",
+          "sources": [
+            "r152-fantasy-springs-names"
+          ]
+        },
+        {
+          "basis": "exhaustive-list",
+          "reason": "Frozen Harbor is not among the three announced area names.",
+          "sources": [
+            "r152-fantasy-springs-names"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Claude",
+        "at": "2026-11-12",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Exhaustive three-name list excludes all distractors. Checked Hong Kong's World of Frozen is not Fantasy Springs; the stem pins Tokyo DisneySea."
+      }
+    },
+    {
+      "questionId": 2642,
+      "hash": "e5cb8e1493f1aa4e039655c322646a4beb0bd508f8a33334d82bf2313aa5fc49",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Removed the wheel's \"Pixar Pal-A-Round\" name, which paired with the Pixar Promenade answer. Remaining \"Pixar\" token is the land name shared by all four real neighborhoods (decision recorded). Pixar Pier digest read: #623, #2239 ask other facts.",
+      "context": "Disney California Adventure Pixar Pier at its June 2018 opening.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "At opening the Pixar Pal-A-Round Ferris wheel was the focal point of Pixar Promenade.",
+        "sources": [
+          "r152-pixar-pier-neighborhoods",
+          "r152-d23-inside-out"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The Ferris wheel is the focal point of Pixar Promenade.",
+          "sources": [
+            "r152-pixar-pier-neighborhoods"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Incredibles Park holds the Incredicoaster, not the wheel.",
+          "sources": [
+            "r152-pixar-pier-neighborhoods"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Toy Story Boardwalk holds Toy Story Midway Mania! and the carousel, not the wheel.",
+          "sources": [
+            "r152-pixar-pier-neighborhoods"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Inside Out Headquarters is the western-end neighborhood with the Inside Out attraction, not the wheel.",
+          "sources": [
+            "r152-pixar-pier-neighborhoods",
+            "r152-d23-inside-out"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Claude",
+        "at": "2026-11-12",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked that the wheel is the only giant Ferris wheel on the pier and is assigned to one neighborhood, Pixar Promenade. Historical 2018 anchor avoids later re-theming."
+      }
+    },
+    {
+      "questionId": 1236,
+      "hash": "f0c36c10d5d58538f3809501d8e06f7fbaaa611d90ee59b5bb8ad518250c100b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Removed \"Mickey Mouse\" from the stem; the answer is still easy by design. No other Hidden Mickey question in the bank.",
+      "context": "Fan term used across Disney parks and ships.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "D23 defines Hidden Mickeys as subtle three-circle Mickey silhouettes; fans hunt them aboard Disney ships.",
+        "sources": [
+          "r152-hidden-mickeys-d23",
+          "r152-hidden-mickeys-ship"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Hidden Mickeys is the documented term.",
+          "sources": [
+            "r152-hidden-mickeys-d23",
+            "r152-hidden-mickeys-ship"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Magic Marks is not the term; D23 names these Hidden Mickeys.",
+          "sources": [
+            "r152-hidden-mickeys-d23"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Castaway Icons is not the term; D23 names these Hidden Mickeys.",
+          "sources": [
+            "r152-hidden-mickeys-d23"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pixie Prints is not the term; D23 names these Hidden Mickeys.",
+          "sources": [
+            "r152-hidden-mickeys-d23"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Claude",
+        "at": "2026-11-12",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "\"Mouse-head silhouettes\" still points at Mickey but no longer contains the answer word. Checked none of the distractors is an established fan term."
+      }
+    },
+    {
+      "questionId": 427,
+      "hash": "3302b7a041a32f7780ef3aa65f43babec24cec68a2ac0b4e2ee48c49dbdd58ff",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Answers are now distances, so \"Castaway Cay\" in the stem no longer matches the answer text. No other Castaway Cay run question.",
+      "context": "Castaway Cay self-paced run/walk, as of November 2026.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-09",
+      "premise": {
+        "reason": "A January 2026 planDisney answer describes the self-paced Castaway Cay 5K (two laps, medal at the bike stand).",
+        "sources": [
+          "r152-castaway-5k"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The self-paced event is the 5K.",
+          "sources": [
+            "r152-castaway-5k"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "10K contradicts the documented 5K distance.",
+          "sources": [
+            "r152-castaway-5k"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "A half marathon contradicts the documented 5K distance.",
+          "sources": [
+            "r152-castaway-5k"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "One mile contradicts the documented 5K distance.",
+          "sources": [
+            "r152-castaway-5k"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Claude",
+        "at": "2026-11-12",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Two laps make up the 5K, not a 10K. Checked that no other self-paced distance is offered on Castaway Cay; Lookout Cay has no equivalent. Changeable: recheck scheduled."
+      }
+    },
+    {
+      "questionId": 2589,
+      "hash": "3f42368b799ee758254287fe6e3f9bb03ace27a51c9b81d712edc8a0ecffb6d8",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Distractors now all share the Element- stem, so \"Elemental\" in the stem no longer singles out the answer. Elemental digest read: #1411 asks Firetown (a borough), a different fact.",
+      "context": "Pixar's Elemental (2023) setting.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Pixar's synopsis: set in Element City, where Fire, Water, Earth and Air residents live together.",
+        "sources": [
+          "r152-elemental"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Element City is named in the synopsis.",
+          "sources": [
+            "r152-elemental"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Elementia is not the city named by Pixar.",
+          "sources": [
+            "r152-elemental"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Element Bay is not the city named by Pixar.",
+          "sources": [
+            "r152-elemental"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Elemental Heights is not the city named by Pixar.",
+          "sources": [
+            "r152-elemental"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Claude",
+        "at": "2026-11-12",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked Firetown (a district) is not among the options, so the city/district distinction cannot create a second answer."
+      }
+    },
+    {
+      "questionId": 518,
+      "hash": "9226ed6dc409787b238c9ebd6660f2f98259ce41b49d6980c43aa33f71b254da",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Inverted: the stem names Dickens, the answer is the film, so the film title no longer echoes \"Oliver Twist\". Read the Oliver & Company digest and adaptation questions (#2499, #2787 etc.); none asks the Dickens source.",
+      "context": "Source novels of Disney animated features.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Oliver & Company is inspired by Dickens's Oliver Twist.",
+        "sources": [
+          "r152-oliver-d23",
+          "r152-oliver-wiki"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Inspired by Dickens's Oliver Twist.",
+          "sources": [
+            "r152-oliver-d23",
+            "r152-oliver-wiki"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Based on Eve Titus's Basil of Baker Street books, not Dickens.",
+          "sources": [
+            "r152-gmd-wiki"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Based on a story by Tom McGowan and Tom Rowe, not Dickens.",
+          "sources": [
+            "r152-aristocats-wiki"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Based on Ward Greene's story, not Dickens.",
+          "sources": [
+            "r152-lady-wiki"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Claude",
+        "at": "2026-11-12",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "The Great Mouse Detective's Victorian London setting is a plausible Dickens confusion, but its source is Eve Titus. Disney's A Christmas Carol (2009) would also qualify but is not an option."
+      }
+    },
+    {
+      "questionId": 521,
+      "hash": "f0b65c0ff65e8d10b5029b639509cba4140e9b2f1cd5f5311d0e112ea4d83633",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Inverted: the stem names Stevenson, so the film title no longer echoes \"Treasure Island\". Treasure Planet digest read; #404/#2861-2865 concern the live-action 1950 Treasure Island, excluded by \"animated\".",
+      "context": "Source novels of Disney animated features.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "Treasure Planet is built on Stevenson's Treasure Island.",
+        "sources": [
+          "r152-treasure-d23"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "D23: a nod to Stevenson's Treasure Island.",
+          "sources": [
+            "r152-treasure-d23"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Based on Kipling's Jungle Book stories.",
+          "sources": [
+            "r152-jungle-wiki"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Based on Collodi's novel.",
+          "sources": [
+            "r152-pinocchio-wiki"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Based on Victor Hugo's novel.",
+          "sources": [
+            "r152-hunchback-wiki"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Claude",
+        "at": "2026-11-12",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Checked the live-action Treasure Island (1950) is excluded by \"animated feature\" and is not an option. Each distractor has a different, named literary source."
+      }
+    },
+    {
+      "questionId": 925,
+      "hash": "7dec0cf1e78e2ef14b9d39fb641d4f5cb15ca24ef15978aeeac180d7279fb7d4",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Removed \"Riverboat\"/\"Sailing Ship\" from the options so the answer text no longer matches the stem. Read #909, #918, #1148, #2082 river questions; #918 asks the Liberty Belle renaming, a different fact.",
+      "context": "Disneyland Rivers of America vessels, November 2026.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-09",
+      "premise": {
+        "reason": "Disneyland's Mark Twain is a steam paddle boat on the Rivers of America.",
+        "sources": [
+          "r152-mark-twain"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Mark Twain is Disneyland's paddle boat on the Rivers of America.",
+          "sources": [
+            "r152-mark-twain"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Liberty Belle is the renamed Walt Disney World paddle-wheeler, not Disneyland's.",
+          "sources": [
+            "r152-irvine"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "Columbia shares the route but is a sailing ship, not a paddle-wheel riverboat.",
+          "sources": [
+            "r152-mark-twain"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Admiral Joe Fowler ran at Magic Kingdom (1971-1980), not Disneyland.",
+          "sources": [
+            "r152-fowler"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Claude",
+        "at": "2026-11-12",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Columbia circles the same river, so the paddle-wheel qualifier is what excludes it; the official page names it the Sailing Ship Columbia. #2082's stem also names the Mark Twain Riverboat; accepted as incidental context."
+      }
+    }
+  ]
+}

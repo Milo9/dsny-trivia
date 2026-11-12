@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "workflow": "release-followup",
+  "createdAt": "2026-11-11",
+  "questionIds": [
+    2432,
+    1355,
+    2243,
+    2642,
+    1236,
+    976,
+    427,
+    2589,
+    518,
+    521,
+    925
+  ],
+  "startingHashes": {
+    "2432": "726243d0ac6e7459eed330fa510b222ab4a09c792ec91ff1fab99f806fdc24fa",
+    "1355": "0583252b97df1b54a7d21e2fcd49f740dac5e5dcd3b58c5064cde509fc03b8fe",
+    "2243": "31fa2c73e98f4cc54210d5767ef8b614d6215e14805d76b009f80b8305ac0e70",
+    "2642": "12a7867ef8f3e5c9272b8cd9d1272d522839b40c88ac6e69ff1b3bd7fe45be8c",
+    "1236": "70cab2c7003da0b370118ca4653ec35c64038b92761b8b989b589a26fecaec35",
+    "976": "e9e163a1dfc5bf170a8c6d4208f12766b27334c9895b277aa5cf0766a4b615e1",
+    "427": "e4e51ecfa71707949d841a023c7ac317677ecdf9d7fdfc6743d7bec7bee59b86",
+    "2589": "b18f13978f69284625339921abc9cf63575409f3e7b66f67d394a35a824faf22",
+    "518": "26ca67a25e24d04cbd4674f23f559765eddee4f0b85c438b7af95c2795681a74",
+    "521": "15693e42d42b9d9357a1eef8ad51838e28101d80f398da422c1d44e82385fb10",
+    "925": "2cdd8454b1f658b99a3c527dbda5ea01cd6df77b9c82586cedbea2d64611a9fb"
+  },
+  "reason": "Backlog #6: remove answer giveaways flagged by find_leaks.py --tier2 and replace #2432 nonsense distractors (player flag) so the open player flags can be closed after publication."
+}

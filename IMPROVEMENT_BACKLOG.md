@@ -63,7 +63,10 @@ time-anchored facts. Once one is overdue, `question_audit.py check` fails, block
 `deploy.ps1` and CI. Plan December recheck batches (or consciously re-date — not
 recommended, it games the gate).
 
-**6. Close the 6 open player flags + fix the answer-in-question pattern.** *Small (flags) / Medium (rewords).*
+**6. ✅ DONE 2026-11-12 (v1.52) — Close the 6 open player flags + fix the answer-in-question pattern.**
+Done: 10 rewords + #976 retired (audit/runs/release-1.52-flag-followup-notes.md); #138
+left as is (Magic-class wording verified); flags closed in Firestore after publish
+(see notes). Original item: *Small (flags) / Medium (rewords).*
 Firestore flags on #911 (x2), #2432, #2080, #708, #138 have no `resolutions` records —
 content was already reworded/retired but flags were never closed (production write,
 needs OK; do it via review.html). Still worth a look: #2432's distractors
@@ -76,7 +79,9 @@ Disney Cruise Line Navigator), #427 (Castaway Cay → Castaway Cay 5K), #2589
 (Elemental → Element City), #518 (Oliver & Company → Oliver Twist), #521 (Treasure
 Planet → Treasure Island), #925 (riverboat). Source: `find_leaks.py --tier2`.
 
-**7. 144 MB of audit records tracked in git and publicly served on GitHub Pages.** *Medium.*
+**7. ✅ DONE 2026-11-12 (v1.52) — 144 MB of audit records tracked in git and publicly served on GitHub Pages.**
+Done: `_config.yml` Jekyll `exclude` keeps audit/, docs/, scripts/, test/, *.md off
+Pages (no settings change). Still public in the GitHub repo by design. Original item: *Medium.*
 `audit/ledger.json` (28 MB, +~0.7 MB/release) is public at
 `/dsny-trivia/audit/ledger.json`; each `audit/runs/*-result.json` embeds a ~1.4 MB
 whole-bank `report`. Git pack is only 3 MB (compresses well) — this is Pages/checkout
@@ -87,7 +92,9 @@ but audit policy treats run records as history — leave them.
 
 ## C. Content direction — owner's call
 
-**8. Category mix drifting from cruise prep.** Last 340 added: movies 217, characters
+**8. ✅ CLOSED 2026-11-12 — owner decision: fine as is.** The app is now a general
+Disney trivia app (still used for cruise prep, but also for fun), so no rebalancing
+toward cruise. Original item: Category mix drifting from cruise prep. Last 340 added: movies 217, characters
 60, music 31, pixar 22, parks 5, cruise 5, walt 0. Totals: movies 661, characters 402,
 pixar 315, parks 276, music 217, walt 170, cruise 154 (smallest). Audit retirements
 also shrank parks (306→276), walt (207→170), cruise (167→154). Suggest next

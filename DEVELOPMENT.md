@@ -70,7 +70,7 @@ offline after an initial online visit and cache installation. `sw.js` caches onl
 same-origin app assets and questions; database requests remain network-only.
 The service worker never caches the admin page or update probes.
 
-There are 2,195 active questions plus 185 preserved retired duplicates in the
+There are 2,194 active questions plus 186 preserved retired snapshots in the
 working bank after forty-two sequential audit batches and four generation rounds
 adding 340 questions. The latest 100 questions cover 16 live-action films, two
 Pixar features, Disneyland Paris and Disney Adventure. See
@@ -90,7 +90,7 @@ Optional question metadata:
 ```
 
 Fact IDs must be unique across active questions. Sources must be HTTPS. There are 347
-active questions with verified explanations and links. All 2,195 active questions
+active questions with verified explanations and links. All 2,194 active questions
 now have current manual review and four-option evidence; explanations and links
 embedded in the playable question objects remain incremental metadata.
 The admin page exports difficulty recommendations once a question has at least
@@ -133,6 +133,15 @@ Development dependency overrides pin patched grpc, telemetry, uuid, and re2
 versions. `npm audit` reported zero vulnerabilities after installing them.
 
 ## Deployment
+
+GitHub Pages builds `main` with Jekyll; `_config.yml` excludes `audit/`, `docs/`,
+`scripts/`, `test/`, Markdown and other development files from the published site
+(they remain public in the repository). Anything the app or review.html fetches must
+stay published; add new runtime files outside those excluded paths.
+
+Release v1.52 removes answer giveaways from ten questions, replaces #2432's
+implausible distractors, and retires #976 (leak; duplicate of #1399's fact), leaving
+2,194 approved active questions. See audit/runs/release-1.52-flag-followup-notes.md.
 
 Release v1.50 publishes generation round 4 and brings the active bank to
 2,195 approved questions. q-010 contains 220 questions. The app and offline cache

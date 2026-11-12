@@ -1,0 +1,19 @@
+# GitHub Pages builds this branch with Jekyll. The app needs no Jekyll processing;
+# this file only keeps development/audit material out of the published site
+# (backlog #7). Everything the app or review.html fetches must stay published:
+# index.html, review.html, *.js, style.css, manifest.json, movies.json,
+# questions/, icons/. The files below remain public in the GitHub repository.
+exclude:
+  - audit
+  - artifacts
+  - docs
+  - scripts
+  - test
+  - node_modules
+  - package.json
+  - package-lock.json
+  - deploy.ps1
+  - firebase.json
+  - firestore.rules
+  - "*.md"
+  - "*.log"
