@@ -1,4 +1,4 @@
-const APP_VERSION = '1.50';
+const APP_VERSION = '1.51';
 
 const _localMemory = new Map();
 let _localDurable = true;
@@ -307,9 +307,6 @@ const CAT_LABELS = {
 };
 
 function catLabel(c) { return CAT_LABELS[c] || c; }
-
-// Thin wrappers binding game-logic.js's pure functions to app globals.
-function pickFromMoviePool(excludeIds) { return pickMovie(MOVIES, excludeIds); }
 
 // excludeIds only matters for a brand-new day's pin generation (see the
 // btn-daily-challenge handler) — the review screen's regenerate-from-live-pool
@@ -685,7 +682,7 @@ async function renderHome() {
     const streakText = streak > 0 ? ` · 🔥 ${streak}` : '';
     // Home-card points mirror the leaderboard's "This Month" view (not
     // totalPoints) so this rivalry-facing number is the one that's always
-    // winnable — see the monthly-leaderboard note in CLAUDE.md.
+    // winnable — see DEVELOPMENT.md (Saved games: monthlyTotals).
     const pts        = Number(effectivePeriodPoints(user,curMonth))||0;
     const stat       = user.totalAnswered
       ? `${pts.toLocaleString()} pts this month · ${pct(user.totalCorrect, user.totalAnswered)} correct${streakText}`
@@ -908,19 +905,10 @@ function normalizeHomeworkState(state) {
   return { ...rest, watched };
 }
 
-// Adds/updates a {id, watchedAt} entry for id, keeping one entry per movie.
-function upsertWatched(watched, id, watchedAt) {
-  const idx = watched.findIndex(w => w.id === id);
-  if (idx === -1) return [...watched, { id, watchedAt }];
-  const copy = [...watched];
-  copy[idx] = { id, watchedAt };
-  return copy;
-}
-
-// Called once at boot. If the stored pick belongs to a prior homework week, the
-// outgoing movie is assumed watched (homework complete!) and a fresh one is drawn
-// from the unwatched pool. Never called by the shuffle button — rollover and veto
-// must stay separate, since only rollover marks a movie watched.
+// Homework actions are applied by storage.updateHomework() via data-logic.js.
+// 'refresh' (boot/foreground) rolls a past week to a new pick; the outgoing movie
+// is NOT assumed watched — only an explicit 'watch' marks it. 'shuffle' re-draws
+// this week's pick; 'unwatch' returns a movie to the pool.
 let _homeworkRequest=0;
 async function changeHomework(action) {
   const request=++_homeworkRequest;

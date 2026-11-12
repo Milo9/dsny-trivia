@@ -1,5 +1,5 @@
 """
-Whole-corpus check for CLAUDE.md rule #9: Pixar films must be tagged
+Whole-corpus check for docs/history/CLAUDE-through-v1.50.md rule #9: Pixar films must be tagged
 `pixar`, not `movies` (Zootopia-style non-film-identity categories like
 `characters` are unaffected -- this only checks the movies/pixar boundary).
 

@@ -104,7 +104,7 @@ def _tokens_overlap(a, b):
 
 def find_answer_leaks(q):
     """Detect the correct answer (answers[0]) leaking into the question's own
-    text -- CLAUDE.md rule #2. Two tiers:
+    text -- docs/history/CLAUDE-through-v1.50.md rule #2. Two tiers:
 
     Tier 1 (high precision): the full normalized answer string appears
     verbatim inside the question text. This is the original validate_batch.py
@@ -161,7 +161,7 @@ def find_answer_leaks(q):
 
 
 # Direct-to-video sequels and theatrical shorts historically under-mined
-# relative to their parent film (see CLAUDE.md "richest under-mined veins").
+# relative to their parent film (see docs/history/CLAUDE-through-v1.50.md "richest under-mined veins").
 # `parent` names a key in count_topics.py's film_keywords so its matches can
 # be excluded from the parent's count -- None means no tracked parent.
 SEQUELS_AND_SHORTS = [

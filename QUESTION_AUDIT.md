@@ -1,7 +1,7 @@
 # Question audit procedure
 
 This is the current authority for question creation and audits. It supersedes
-historical audit instructions in CLAUDE.md. DEVELOPMENT.md remains authoritative
+historical audit instructions in docs/history/CLAUDE-through-v1.50.md. DEVELOPMENT.md remains authoritative
 for game persistence and historical question snapshots. An audit checks content;
 passing structural validation alone never establishes factual correctness.
 

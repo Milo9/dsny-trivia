@@ -1,545 +1,116 @@
 # Disney Trivia App — Claude Reference
 
-> **Question audits and additions:** [QUESTION_AUDIT.md](QUESTION_AUDIT.md) is the
-> current authoritative checklist. Run `python scripts/question_audit.py check`
-> before release. Historical audit notes below are context, not current policy.
-> "Audit the next shard" / "Audit the next chunk" means perform the next resumable
-> 50-question batch using `python scripts/question_audit.py next`; see AGENTS.md.
-> "Audit status" uses `python scripts/question_audit.py status` without starting work.
+Static single-page trivia app for Kristen, Cara and family to practice before a Disney
+Cruise. No build step, no framework; npm is used **only** for verification tooling
+(tests, emulator, Firebase CLI) — production loads Firebase compat from the CDN.
 
-> **v1.39 audit fixes:** Read [DEVELOPMENT.md](DEVELOPMENT.md) and
-> [SECURITY.md](SECURITY.md) before changing runtime, storage, scoring, daily pins,
-> release checks, or offline behavior. These supersede older historical notes
-> below about ID-only pins, all-or-nothing repeat exclusion, per-device overwrite,
-> synchronous Firebase boot, score resets, and the absence of a service worker.
-> The owner explicitly declined adding accounts/passwords. Preserve that choice.
+- **Live:** https://milo9.github.io/dsny-trivia/ — admin: `/review.html`
+- **Repo:** https://github.com/Milo9/dsny-trivia (GitHub Pages from `main`)
+- **Firebase project:** `disneytrivia-38ac6` (production — never test against it)
 
-## What This Is
-A static single-page trivia app built for Kristen and Cara to practice before a Disney Cruise. No build step, no framework, no package manager.
+## Read these first — they are authoritative
 
-**Live URL:** https://milo9.github.io/dsny-trivia/
-**GitHub repo:** https://github.com/Milo9/dsny-trivia
+This file is a thin pointer. The docs below are shared with the other agent that works
+on this repo (Codex, via AGENTS.md); **update those, not this file**, when behavior
+changes, so the two never drift apart again.
 
-## File Map
-| File | Role |
+| Topic | Authority |
 |---|---|
-| `index.html` | Single-page shell. All 6 screens live here as hidden divs. |
-| `style.css` | All styling. Dark Disney theme, mobile-first, CSS variables at the top. |
-| `game-logic.js` | Pure game rules — shuffle, date keys (`dayKey`/`monthKey`/`prevMonthKey`/`homeworkWeekKey`, all taking an optional `now`), daily selection (`pickDailyQuestions`, `seededShuffle`), regular selection (`pickRegularQuestions`), `SCORING`/`scoreBreakdown`, `buildCatStats`, checkpoint reconcile (`reconcileDailyProgress`, `reconcileRegularCheckpoint`), and the game-log helpers (`appendGameLog`, `buildGameLogEntry`, `GAME_LOG_MAX`). No DOM/storage/globals. Loaded as a classic script before `app.js` (its top-level names become browser globals) and `require()`-able from Node for tests. **Change a rule here and add a test — don't reimplement it inline in `app.js`.** Don't redeclare any of its names in `app.js`: a duplicate top-level `const` is a SyntaxError that kills the whole app; a duplicate `function` silently shadows the tested one. |
-| `test/game-logic.test.js` | Unit tests for `game-logic.js` (`node --test test/game-logic.test.js` — built-in `node:test`, no npm/package.json). Run automatically by `deploy.ps1`. |
-| `app.js` | DOM, storage, and screen logic. Loaded last. Depends on `storage.js`, `game-logic.js`, and the `questions/` shards. |
-| `deploy.ps1` | Deploy script — version bump, `?v=` sync, gates, commit, push. See Deploying Changes. Keep it pure ASCII (PowerShell 5.1 reads a BOM-less script as ANSI). |
-| `storage.js` | Storage abstraction. `FirebaseAdapter` is active. `LocalStorageAdapter` is kept below it as a fallback. |
-| `questions/manifest.json` | Lists the shard filenames. `app.js` fetches this first, then fetches each shard. |
-| `questions/q-001.json` | Questions 1–250 (249 active). |
-| `questions/q-002.json` | Questions 251–500 (245 active). |
-| `questions/q-003.json` | Questions 501–799 (222 active; gaps from audit and dedup passes). |
-| `questions/q-004.json` | Questions 801–1050 (246 active). |
-| `questions/q-005.json` | Questions 1051–1300 (247 active). |
-| `questions/q-006.json` | Questions 1302–2017 (250 active). |
-| `questions/q-007.json` | Questions 2018–2267 (250 active). |
-| `questions/q-008.json` | Questions 2268–2524 (250 active). |
-| `questions/q-009.json` | Questions 2525–2655 (131 active). |
-| `movies.json` | Weekly Homework movie pool — flat array of `{id, title, year, studio}`, Disney animated + Pixar canon. Fetched by `app.js` at boot alongside questions. |
-| `review.html` | Standalone admin page for reviewing flagged questions. Shares the same Firestore `flags` collection. |
-| `manifest.json` | Web app manifest (PWA). Referenced from `index.html`'s `<head>`. See PWA / Home Screen Install below. |
-| `icons/` | Generated PNG icons for the manifest, apple-touch-icon, and favicon — see `scripts/generate_icons.py`. Not hand-edited; re-run the script to regenerate. |
-| `scripts/generate_icons.py` | Synthesizes all files in `icons/` from scratch with Pillow (gold Mickey-ears silhouette on the app's navy-purple gradient) — no external art. Run from project root: `python scripts/generate_icons.py`. Re-run after any theme-color change. Requires `pip install pillow`. |
-| `scripts/count_topics.py` | Counts questions per Disney/Pixar film (question + correct answer only, not distractors); parent-film counts exclude sequel/short matches, which are reported separately. Run from project root: `python scripts/count_topics.py`. Re-run after large batches of additions to update the Per-film coverage map in this file. |
-| `scripts/_common.py` | Shared helpers (corpus loader, text normalization, the `SEQUELS_AND_SHORTS` registry) used by the scripts below. Not run directly. |
-| `scripts/recon.py` | Compact `id + question` dump for a keyword/film — token-cheap alternative to reading full Grep hits during pre-draft recon. See Question-Bank Tooling below. |
-| `scripts/find_gaps.py` | Novelty gap-finder: distractor-only entities and sequel/short coverage, lowest-covered first. See Question-Bank Tooling below. |
-| `scripts/find_near_dupes.py` | Lexical near-duplicate detector, whole-corpus or `--new` against a draft batch. See Question-Bank Tooling below. |
-| `scripts/validate_batch.py` | Pre-append sanity check for a drafted batch (IDs, enums, exact dupes, answer-format heuristics). See Question-Bank Tooling below. |
-| `scripts/find_leaks.py` | Whole-corpus scan for rule #2 (answer leaked into the question text), using the same two-tier detector `validate_batch.py` runs on drafts. See Question-Bank Tooling below. |
-| `scripts/validate_corpus.py` | Whole-corpus structural gate (valid JSON, manifest files exist, unique IDs, 4 distinct non-empty answers, valid enums, no all/none-of-the-above). Exit 1 on any error. Run automatically by `deploy.ps1` when anything under `questions/` changed. Advisory checks (leaks, near-dupes, categories) are deliberately not gates. |
-| `scripts/visual_check.py` | End-to-end Playwright smoke test against an **isolated copy** of the app switched to `LocalStorageAdapter` (asserted), with Firestore requests blocked — safe to run any time, never touches live player data. Covers a full game, leaderboard modes, kill-and-resume (regular + daily), Back button mid-game, "Start new" with a leftover checkpoint, daily exit-and-resume, daily review, the per-player game log (including a Firestore-style "no undefined fields" check the local adapter would otherwise hide), and the update toast. Run `python scripts/visual_check.py [--out DIR]`, then **look at the screenshots** — a pass doesn't prove the layout is right. |
-| `scripts/find_category_bugs.py` | Whole-corpus scan for rule #9 (Pixar films tagged `movies`, or vice versa), via `check_category()`, also wired into `validate_batch.py` so new drafts get the same check. Advisory/lexical only — always eyeball hits. See Question-Bank Tooling below. |
+| Runtime, storage, scoring, daily pins, offline/service worker, verification, release | [DEVELOPMENT.md](DEVELOPMENT.md) |
+| Firestore rules, password-free access trade-off, admin/backups, rules deploy | [SECURITY.md](SECURITY.md) |
+| Creating, editing, retiring or auditing questions | [QUESTION_AUDIT.md](QUESTION_AUDIT.md), [audit/EFFICIENT_WORKFLOW.md](audit/EFFICIENT_WORKFLOW.md), [audit/README.md](audit/README.md) |
+| "Audit the next shard" / "Audit status" shortcuts | [AGENTS.md](AGENTS.md) |
+| Open improvement ideas (numbered, "backlog #N") | [IMPROVEMENT_BACKLOG.md](IMPROVEMENT_BACKLOG.md) |
+| Historical notes, past batches and audits (context only, often stale) | [docs/history/CLAUDE-through-v1.50.md](docs/history/CLAUDE-through-v1.50.md) |
 
-## The 6 Screens
-Screens are `<div class="screen">` elements that get `.hidden` toggled. Only one is visible at a time. Navigation is handled by `showScreen(id)` in `app.js`.
+The owner explicitly declined accounts/passwords. Preserve that choice.
 
-1. `screen-home` — player selection, add new player; shows today's and yesterday's daily challenge comparison cards, plus the Weekly Homework card (this week's assigned movie)
-2. `screen-settings` — difficulty, categories, question count; daily button becomes "Review Today's Questions" after the player has played
-3. `screen-game` — active game
-4. `screen-results` — score, category breakdown, missed question review; shows "Review All Questions" button for daily games
-5. `screen-daily-review` — all 10 daily questions with each player's answer and the correct answer; reachable from results (after playing today), settings daily button (once played today), or the "View Questions →" link on yesterday's home card; title updates dynamically (Today's Review / Yesterday's Review)
-6. `screen-leaderboard` — all players ranked by points; 3-way toggle between **Lifetime** (all-time `totalPoints`), **This Month** (`monthlyPoints`, resets each calendar month), and **Last Month** (`prevMonthlyPoints`, the month that just ended) — see Storage Layer below
+## File map
 
-## Question Format
+| Path | Role |
+|---|---|
+| `index.html` | Shell; screens are hidden `.screen` divs toggled by `showScreen()` (home, settings, game, results, daily-review, leaderboard). |
+| `bootstrap.js` | Loads `game-logic.js` → `data-logic.js` → `storage.js` → `app.js`; loads Firebase CDN independently with bounded waits. |
+| `game-logic.js` | Pure game rules (dates, selection, `SCORING`, checkpoints, game log). No DOM/storage. |
+| `data-logic.js` | Pure stats/reset/homework transforms shared by both storage adapters. |
+| `storage.js` | `FirebaseAdapter` (active) and `LocalStorageAdapter`. |
+| `app.js` | DOM, screens, wiring. Never redeclare a top-level name from the files above (duplicate `const` = SyntaxError that kills the app; duplicate `function` silently shadows the tested one). |
+| `sw.js` | Service worker: offline practice cache for same-origin app files and questions; Firestore stays network-only. |
+| `review.html` | Admin page: flags (immutable resolution events), resets/restores, backups, difficulty hints. |
+| `firestore.rules`, `firebase.json` | Versioned rules; deployed separately (see SECURITY.md). |
+| `questions/manifest.json` | `{shards: [...], retired: "questions/retired.json"}`. |
+| `questions/q-001…q-010.json` | Active questions, one compact object per line. |
+| `questions/retired.json` | Preserved snapshots of removed questions (needed for old dailies/checkpoints). |
+| `movies.json` | Weekly Homework movie pool. |
+| `audit/` | Question-audit ledger, baseline, queue and run records (managed by `scripts/question_audit.py`). |
+| `scripts/` | Python content tooling, browser checks (`visual_check.py`), emulator runner. |
+| `test/` | `node:test` JS tests and Python `unittest` tests. |
+| `deploy.ps1` | Version bump, `?v=`/cache sync, all gates, commit, push. Keep it pure ASCII. |
+| `icons/`, `manifest.json` | PWA icons (generated by `scripts/generate_icons.py`) and web manifest. |
+
+## Question format
+
 ```js
-{
-  id: 1,                        // unique integer, never reuse
-  question: "Question text?",
-  answers: ["Correct", "Wrong1", "Wrong2", "Wrong3"],  // correct answer is always index 0; app.js shuffles display order
-  difficulty: "easy",           // "easy" | "medium" | "hard"
-  category: "movies"            // see categories below
-}
+{ "id": 1, "question": "…?", "answers": ["Correct", "Wrong1", "Wrong2", "Wrong3"],
+  "difficulty": "easy|medium|hard", "category": "movies|characters|parks|walt|cruise|music|pixar" }
 ```
 
-**Categories:** `movies` | `characters` | `parks` | `walt` | `cruise` | `music` | `pixar`
+Correct answer is always index 0 (display order is shuffled). Optional metadata:
+`factId`, `film`, `explanation`, `source` (HTTPS), `verifiedAt`. IDs are never reused.
+Get the current shard, next ID and counts from the data, not from docs:
+`python scripts/validate_corpus.py` and `python scripts/question_audit.py status`.
 
-**No TV shows** — the requirement explicitly excludes Disney Channel, streaming series, etc. This is easy to accidentally violate (Mandalorian, WandaVision, DuckTales reboot, etc.) — hold the line.
+Every new or edited question needs a manual review and four-option source evidence in
+the ledger before release; **any field change invalidates the prior approval**.
+Remove questions with `question_audit.py retire` (preserves the snapshot), never by
+deleting a line. Full procedure: QUESTION_AUDIT.md.
 
-**Shard format:** Each shard is a JSON array with **one question object per line** (compact, not pretty-printed). `app.js` loads shards via `r.json()` so indentation is irrelevant to the app. The compact format means each line contains the full question + all answers, making Grep results immediately useful for duplicate checking without reading whole files.
+### Durable content rules (lessons from past audits)
 
-Example line:
+1. **No TV shows** (Disney Channel, Disney+ series, etc.). Easy to violate — hold the line.
+2. **Never leak the answer in the question** (including morphological variants, e.g.
+   "shoemaker" → "Shoemaking"). Players flag this more than anything else.
+3. Keep answers concise and parallel; don't make the correct one uniquely elaborate.
+4. Wrong answers must actually be wrong; no "all/none of the above".
+5. No time-sensitive superlatives ("newest"); anchor changeable park/cruise facts to a
+   date and schedule a recheck (QUESTION_AUDIT.md rule 7).
+6. DCL venues differ by ship — always pin a ship.
+7. Pixar films use `pixar`, not `movies` (Zootopia, Big Hero 6, Frozen etc. are not Pixar).
+8. Direct-to-video sequels/shorts are soft-capped at ~8–10 questions per title.
+9. Same fact asked with different wording is a duplicate even when lexical tools miss it —
+   read the full topic digest (`scripts/recon.py`, `question_audit.py view`) before drafting.
+
+## Verification and deploy
+
+- Full commands: DEVELOPMENT.md → Verification. Quick set: `npm test`,
+  `python -m unittest discover -s test -p "test_*.py"`, `python scripts/validate_corpus.py`,
+  `python scripts/question_audit.py check`, `npm run test:emulator`, `python scripts/visual_check.py`.
+- **UI checks: only `scripts/visual_check.py`** (isolated copy, LocalStorageAdapter,
+  Firestore blocked). Never drive the real app with Playwright — it writes to live
+  player data (this happened once, 2026-08-12).
+- Deploy: `.\deploy.ps1 -Message "..."` (or `-MessageFile <path outside repo>` for
+  multi-line). It refuses untracked files unless `-IncludeUntracked`; `-DryRun` stops
+  before commit. It bumps `APP_VERSION`, syncs every `?v=` and the `sw.js` cache name —
+  don't hand-bump.
+- `question_audit.py check` fails once a scheduled recheck is overdue, which blocks
+  deploy and CI (see backlog #5).
+
+## Diagnosing player reports (read-only)
+
 ```
-{"id": 1, "question": "What color is Cinderella's iconic ball gown?", "answers": ["Blue", "Pink", "Yellow", "White"], "difficulty": "easy", "category": "movies"},
-```
-
-**Adding questions:** Append to the last shard (`questions/q-009.json` is current), one object per line, no pretty-printing. Use the next available integer ID (2579+). Correct answer must be at index 0. When a shard reaches ~250 questions, create the next shard (`q-010.json`, etc.) and add it to `questions/manifest.json` — no change to `index.html` needed.
-
-**Dedup workflow (grep-first, mandatory):** Before writing any new question, grep all shards for 2–3 key terms from the topic. Because each question is one line, a Grep hit returns the entire question + all answers — eyeball it immediately to confirm it's a true duplicate or a distinct angle. Do not read whole shard files for dedup. For the initial "has this stem/angle been asked at all" scan on a saturated film, `scripts/recon.py` is a cheaper first pass (compact one-line-per-question digest instead of full Grep hits) — but it hides the correct answer by default (`--show-answer` adds only answers[0], never distractors), so once a candidate stem looks close, confirm with a real Grep hit or `--show-answer` before judging it a true duplicate; recon narrows the search, it doesn't replace the eyeball. Before appending a drafted batch, run `scripts/validate_batch.py` (format/enum/exact-dup checks) and `scripts/find_near_dupes.py --new` (lexical near-duplicate check, new-vs-existing and new-vs-new) — see Question-Bank Tooling below for the full workflow.
-
-**Current count:** 2,037 active questions plus three retained retired snapshots (IDs 1–2655, with historical gaps). Current active distribution:
-- movies 462, characters 369, pixar 306, parks 306, music 220, walt 207, cruise 167
-
-**Per-film coverage map** (questions that are *about* this film — correct answer or question text, not distractors). **The counts below are a rough signal, not a cap.** A film at 30 can still take a 31st question if the fact is genuinely un-asked — the real gate is always "is this a distinct fact, verified against a grep of the existing stems," never "is the count already high." Treat "Saturated" as "the obvious tier-1 facts are probably taken, go deeper (secondary characters, specific scenes/songs, production trivia, direct-to-video sequels, shorts) rather than skip the film," not as "stop." Under-covered rows are just as likely to reflect the count_topics.py regex undercounting (see note below) as genuinely thin coverage — grep the real stems before assuming either way.
-
-| Film | Count | Status |
-|---|---|---|
-| Toy Story | 56 | Saturated |
-| Frozen | 55 | Saturated |
-| Beauty and the Beast | 35 | Saturated |
-| The Little Mermaid | 30 | Saturated |
-| The Lion King | 30 | Saturated |
-| Moana | 30 | Saturated |
-| Finding Nemo / Finding Dory | 30 | Saturated |
-| Cinderella | 29 | Saturated |
-| Aladdin | 27 | Saturated |
-| Zootopia | 26 | Saturated |
-| Encanto | 24 | Saturated |
-| Inside Out | 22 | Saturated |
-| The Incredibles | 22 | Saturated |
-| Tangled | 21 | Saturated |
-| Pocahontas | 20 | Saturated |
-| Ratatouille | 19 | Well-covered |
-| The Emperor's New Groove | 19 | Well-covered |
-| Cars | 18 | Well-covered |
-| The Hunchback of Notre Dame | 17 | Well-covered |
-| Tarzan | 17 | Well-covered |
-| Monsters Inc. / Monsters University | 17 | Well-covered |
-| Bambi | 17 | Well-covered |
-| The Jungle Book | 17 | Well-covered |
-| Mulan | 16 | Well-covered |
-| Wreck-It Ralph | 15 | Well-covered |
-| Atlantis: The Lost Empire | 15 | Well-covered |
-| Elemental | 15 | Well-covered |
-| A Bug's Life | 14 | Well-covered |
-| 101 Dalmatians | 14 | Well-covered |
-| Brother Bear | 14 | Well-covered |
-| Brave | 13 | Well-covered |
-| Big Hero 6 | 13 | Well-covered |
-| Turning Red | 13 | Well-covered |
-| The Fox and the Hound | 13 | Well-covered |
-| WALL-E | 12 | Well-covered |
-| Soul | 12 | Well-covered |
-| Inside Out 2 | 11 | Well-covered |
-| Hercules | 9 | Under-covered (unreliable — see note) |
-| Coco | 9 | Under-covered (unreliable — see note) |
-| Up | 7 | Under-covered (unreliable — see note) |
-| Onward | 7 | Under-covered (unreliable — see note) |
-| Luca | 7 | Under-covered (unreliable — see note) |
-
-**Note on Hercules/Coco/Onward/Luca/Up specifically:** the 2026-07-24 batch added 5–7 new questions to each of these per the table above, but a fork's recon during that batch found 30–38 *existing* Grep hits per film — 3–5x what this regex-based table shows. The count_topics.py regex undercounts these five badly (likely a phrasing/keyword-co-occurrence gap in the script, not a real coverage gap). Treat these five rows as especially unreliable; grep the actual stems before assuming they're wide open. **Reconfirmed 2026-07-29:** a fork targeting exactly these five films for the 100-question batch below recon'd all five and found Hercules, Coco, Onward, and Soul (also mistakenly assumed under-covered) fully saturated on every fresh angle it tried — it added zero questions to any of them and redirected its budget to Up, A Bug's Life, Brave, Elemental, Fox and the Hound, and Atlantis instead. Up still took only 3 clean new questions before thinning out. **These five rows should be treated as effectively saturated already, not as open opportunities**, despite what the table's raw number suggests.
-
-These counts still fold numbered theatrical sequels into their parent row (Frozen includes Frozen II, Toy Story includes 2–4, etc.) since that's one continuously-active franchise, not a stale catalog title. **Direct-to-video sequels and shorts are excluded from the parent row and tracked separately** — run `python scripts/count_topics.py` for their counts or `python scripts/find_gaps.py --sequels` for the same list sorted lowest-coverage-first; see `scripts/_common.py:SEQUELS_AND_SHORTS` for the tracked list (Lion King II, Return of Jafar, King of Thieves, Little Mermaid II, Mulan II, Pocahontas II, Hunchback II, Cinderella II/III, Brother Bear 2, 101 Dalmatians II, Jungle Book 2, Tarzan II, Fox and the Hound 2, Kronk's New Groove, Bambi II, Frozen Fever, Olaf's Frozen Adventure, Geri's Game, Piper, Bao). **These titles are soft-capped, not a priority vein — see "Content balance" rule 10 below; a low/zero count here is no longer, by itself, a reason to draft for one.**
-
-**Content policy (2026-07-29): sequels/shorts/made-for-TV soft-capped.** Earlier batches (2026-07-21 through 2026-07-24, see the dated notes below) explicitly hunted for zero-coverage direct-to-video sequels and shorts because they were the easiest source of "genuinely novel" facts, and this worked — but repeated often enough that it risked pulling the bank's balance away from theatrical/main-canon content over time. As of this date, sequels/shorts/made-for-TV movies sit at ~126 questions across 20 tracked titles (~6.4% of the corpus, averaging ~6.3/title) against theatrical films running 6–55 (most "well-covered" titles at 15–20+) — not yet imbalanced, but the old framing ("richest under-mined vein," "wide open") actively pulled future batches toward growing this bucket further just because it scores low on the gap-finder, not because the fact is actually important to the bank. Going forward: soft-cap each sequel/short/made-for-TV title at ~8–10 questions (roughly today's average), and prefer theatrical/main-canon gaps first when choosing what to research next. See rule 10 below.
-
-This table is updated manually; re-run `scripts/count_topics.py` to regenerate it after large batches of additions. Note: the script's keyword regexes only match question text + correct answer, and require fairly specific phrase co-occurrence (e.g. Coco requires `coco`+`pixar` or `miguel`+`guitar` etc. in the same string) — some films are likely undercounted relative to their true coverage; treat this table as a floor, not an exact census.
-
-**Duplicate audit (2026-07-21):** Players reported near-duplicate questions — same fact tested with reworded question text (not exact text matches). Ran a script-assisted audit: grouped all questions by normalized correct answer (ignoring honorifics/articles) plus a film/category-blocked word-overlap pass, then manually reviewed ~150 candidate clusters to separate true duplicates (same fact, reworded) from coincidental matches (different facts that happen to share an answer, e.g. two unrelated questions both answering "1971"). Removed 116 true duplicates, always keeping the better-worded/more-accurately-categorized copy. This is a one-time cleanup — the existing grep-first dedup workflow above remains the process for preventing new duplicates.
-
-**Content generation strategy (2026-07-21, revised same day):** An initial attempt to add 250 questions from memory recall landed at only 72 clean ones — memory of "obvious" facts per film runs out fast in a bank this size. Revised approach, which then added a further 135 questions cleanly in one sitting: **generate WebSearch-primary, not memory-primary.** Research a film/topic's plot, characters, and production details via search, then harvest the facts not already in the bank from that same reading — the source you're reading from doubles as the verification, so this is nearly free of the hallucination risk memory-only drafting carries. One search reliably yields enough material for 5–10 questions. The richest under-mined veins turned out to be: direct-to-video sequels (The Lion King II, Return of Jafar/King of Thieves, Little Mermaid II, Mulan II, Pocahontas II, Hunchback II, Cinderella III, Brother Bear 2, 101 Dalmatians II, Jungle Book 2, Tarzan II, Fox and the Hound 2, Kronk's New Groove, Bambi II — nearly all had zero prior coverage), theatrical shorts (Frozen Fever, Olaf's Frozen Adventure, Geri's Game, Piper, Bao), classic package-film segments (Three Caballeros, Fun and Fancy Free, Fantasia/Fantasia 2000 segments beyond the two or three already covered), specific songs that only ever appeared as wrong-answer distractors and were never the actual target of a question, and verified post-2023 park/cruise facts. Still corroborate surprising specifics (dates, "first/only" claims, exact figures) — two invented-sounding facts were caught and fixed this way before deploy (see git log). The dedup gate is unchanged and non-negotiable: recon-first grep, then an end-of-batch answer-normalized pass covering new-vs-new AND new-vs-existing, PLUS an ignore-thresholds same-answer0 dump (a real duplicate — WALL-E's Axiom ship name — slipped past the thresholded pass in the first round and was only caught this way).
-
-**Content expansion (2026-07-21):** Added 72 new questions (IDs 1553–1624, gaps intentional) after discovering the bank is far more comprehensively mined than raw per-film counts suggest — grepping candidate films before drafting repeatedly turned up existing coverage of the "obvious" facts, even for films the coverage table shows as under-covered. The effective workflow that worked: grep/dump existing coverage for a whole category or film *before* drafting a single question (not after), harvest only facts you're fully certain of, and WebSearch-verify anything post-2023 (new cruise ships, recent park changes) rather than guessing. A dedup pass (answer-normalized, new-vs-new and new-vs-existing) at the end caught 3 genuine duplicates a per-topic grep had missed. This is why the batch landed at 72 rather than a pre-set target — see the deploy notes/commit for the honest accounting.
-
-**Content expansion (2026-07-23):** User asked for 500 new questions; landed at 183 clean (IDs 2136–2318) after generating 185 and cutting 2 true near-duplicates at the merge gate — 500 was never realistic for a single sitting given how mined the bank already was (see the 72/135 precedents above), and padding toward a number would have meant shipping unverified or duplicate content, which the project's dedup gate exists to prevent. **Parallelized via 10 fork agents**, each given a disjoint topic bucket (under-covered classics: Bambi/Brother Bear/Hercules/Fox and the Hound; under-covered Pixar: Soul/Onward/Luca/Coco/Up; direct-to-video sequels & shorts, including Cinderella II: Dreams Come True which had zero prior coverage; parks split three ways — WDW Magic Kingdom+EPCOT, WDW Hollywood Studios+Animal Kingdom+Disneyland/DCA, international parks; Walt/company history; Disney Cruise Line; music; and a secondary-character deep dive using the distractor-only gap report) so each fork's WebSearch-verify-then-draft work stayed independent and out of the main context. **Coordination lesson:** parallel forks can't see each other's drafts, so new-vs-new duplication across forks — not new-vs-existing — was the real risk; each fork wrote to its own scratch file with non-colliding placeholder IDs (bucket-prefixed, e.g. 91000s, 92000s), and the dedup/validation gate ran exactly once on the concatenated union of all 10 files before any renumbering or shard append, which is what caught the two cross-fork-adjacent true duplicates (a Carousel of Progress identification question redundant with existing #369, and a Grimsby/Vanessa question redundant with existing #822 — both same fact as an existing question, different surface wording). Also fixed two pre-existing miscategorized entries found incidentally by a fork during recon (#2076 Frozen Fever and #2133 The Emperor's New Groove were tagged `pixar`; both are Disney, not Pixar — corrected to `movies`). Added a new shard, `questions/q-008.json`, since q-007 filled to 250. Category "walt" and cruise-ship-restaurant/venue trivia were confirmed as the most heavily mined non-film categories — clean yield there came from corporate-history and stage-show angles rather than core biography/ship-amenity facts, which are close to exhausted.
-
-**Content expansion (2026-07-23, single-session no-subagent batch):** User asked for 150 more questions in one sitting, explicitly without forking subagents. First pass landed at 76 clean; an advisor review before declaring done flagged that "the bank is saturated" wasn't fully earned yet — several productive veins (the distractor-gap report, package-film segments, brand-new films) were still untapped, and stopping at 76 without surfacing the shortfall would have quietly under-delivered. A second pass mined those veins further — Disney Legend/Imagineer bios (Sterling Holloway, Ward Kimball, John Hench), two more Melody Time segments, and, richest of all, films with **zero prior coverage**: Zootopia 2 (2025, released 8 months before this session) and Pixar's Elio (2025) — and landed the total at 93 clean (IDs 2319–2417, gaps from 7 questions cut at the dedup/quality gates across both passes; one of those cuts was a Mickey Mouse Club question pulled proactively for brushing against the project's no-TV-shows rule even though a same-topic precedent existed). Still short of 150, but every additional pass was still finding genuine, verified, non-duplicate facts when it stopped — the honest read is that a single non-parallel session has a real but not-yet-found ceiling above 93 for this corpus, not that 93 is the wall. The same lessons as the 2026-07-21 and prior 2026-07-23 batches held: worked through topic buckets sequentially (sequels/shorts, cruise, walt history, music, secondary characters, package films, then a second round of Imagineer bios + brand-new-film coverage), recon-checked every topic before drafting, and ran `find_near_dupes.py --new` once per merged batch. That end-of-batch pass caught 6 true "same fact, different wording" duplicates in the first round alone — two near-identical to existing question phrasing (Wendy's brothers' names, Simba/Nala's daughter Kiara) and four with different wording but the same correct answer (Bruno and Pepa's Madrigal gifts, Ray the firefly, Geri's Game dentures/teeth) — reconfirming the answer-normalized Pass B is load-bearing every batch, not just an edge case. Also caught and fixed a real categorization bug the advisor review found post-hoc: three drafted Zootopia questions were mistagged `pixar` (Zootopia is Walt Disney Animation, not Pixar; existing corpus already tags it `characters`) — `validate_batch.py` only checks enum membership, not semantic correctness, so a wrong-but-valid category sailed through undetected.
-
-**Content expansion (2026-07-24):** User asked for another 150 questions. Landed at 161 clean (IDs 2418–2578, one gap from a cut duplicate) via **6 parallel fork agents** on disjoint buckets: under-covered core films (Hercules/Onward/Luca/Coco/Up), low-tier direct-to-video sequels & shorts, classic lesser-mined films with no dedicated coverage row (Black Cauldron, Lady and the Tramp, Robin Hood, Sword in the Stone, Rescuers, Oliver & Company, Great Mouse Detective, Aristocats — a genuinely fresh vein, all previously under 15 questions each), international parks (Tokyo DisneySea, Shanghai Disneyland, Disneyland Paris, Hong Kong Disneyland), a music deep dive, and cruise/Walt history. Raw yield was 162; the merge-gate `find_near_dupes.py --new` pass on the concatenated union caught exactly one true cross-fork duplicate (Walt's 22-Oscar record, same fact as existing #679, asked two ways). Two buckets came in under their 28-question target for reasons worth keeping: music (22) and cruise/Walt (24) are — as the 2026-07-23 note below already flagged — the most heavily-mined non-film territory in the bank; both forks explicitly reported hitting saturation on the obvious angles and pivoted to genuinely fresh but narrower veins (real-world pop cover versions of film songs, cut songs, and awards trivia for music; the newest ships/venues — Disney Treasure, Disney Adventure, Disney Destiny, Lookout Cay — for cruise). **New finding that revises the coverage table's reliability further:** the Bucket A fork's recon turned up 30–38 existing Grep hits for Up/Coco/Hercules/Onward/Luca — several times what count_topics.py's regex reports — confirming the table undercounts these films specifically; see the note added to the Per-film coverage map. This pushed q-008.json to its 250-question cap; the overflow (54 questions) started a new shard, `questions/q-009.json`.
-
-**Quality audit (2026-07-29):** Full-corpus pass looking for duplicates, factual drift, and poorly-worded questions (not a content-expansion batch). `find_near_dupes.py`'s Pass A (raised to `--threshold 0.75` to cut noise) and Pass B were both run whole-corpus and read in full; nearly every Pass B cluster was the expected false-positive pattern (different facts sharing a one-word answer, e.g. two questions both answering "1971") — only one true duplicate surfaced this way (#132/#1496, Walt's 1939 honorary Snow White Oscar, reworded; #132 removed). A second true duplicate (#2310/#2402, Big Hero 6's "Fred's family is secretly wealthy" fact) was caught only by manually reading a cluster the scripts couldn't group, because the two answer strings ("They are extremely wealthy" vs "His family is enormously wealthy") don't normalize to the same text — a reminder that Pass B's answer-normalization can still miss same-fact/different-wording pairs when the answer itself is reworded, not just the question. Removed #2402. Separately ran a scratch script (not checked in) applying `validate_batch.py`'s sentence-like-answer and answer-leaked-in-question heuristics across all 1,973 questions instead of just a draft batch, plus a category-consistency check against a Pixar-film-title allowlist. Findings and fixes: **20 category bugs** — #2402/#2403 (Big Hero 6, Walt Disney Animation not Pixar) were tagged `pixar`; #2403 recategorized to `characters`. Separately, 19 questions whose core subject is a Pixar film were tagged `movies` instead of `pixar` per rule 9 — #8, #12, #19, #28, #30, #35, #37, #214, #222, #242, #244, #263 (all from the original q-001/q-002 shards, predating rule 9's codification) plus #1540, #1572–#1576, #2024 (Incredibles 2 and Cars 2, from later batches — showing the rule 9 bug recurs, not just legacy drift); all recategorized to `pixar`. **1 stale superlative** — #1614 called the Disney Destiny "Disney Cruise Line's newest ship as of 2026"; confirmed via WebSearch that Disney Adventure's maiden voyage slipped from December 2025 to March 2026, making Destiny no longer the newest ship — reworded to drop the claim entirely rather than re-pin it to a date that will just rot again. **3 answer-leaked-in-question fixes** — #1386 ("boasting about his collection of shiny objects" → answer "Shiny"), #1590 ("small, star-shaped magical being" → answer "Star"), and #2027 (question named the film's full subtitle, *101 Dalmatians II: Patch's London Adventure*, which contains the answer "Patch" outright) — all reworded to remove the giveaway phrase/title while preserving the fact tested. The sentence-like-answer heuristic itself threw ~350 hits but nearly all were legitimate multi-part names ("Huey, Dewey, and Louie") or intentionally explanatory answers to "why"/"what happens" questions — an established, accepted style in this bank, not a defect; it was not worth a bulk rewrite and none were changed. Net: corpus went from 1,975 to 1,973 questions (two true duplicates removed); category distribution shifted (movies 464→445, pixar 279→296, characters 354→355, walt 203→202) — table above and this file updated in the same commit as the fixes, per the project's always-keep-docs-current rule.
-
-**Distractor-correctness first pass — done 2026-09-08, see that section below.** This item was flagged 2026-07-29 as never verified at scale; it no longer is, though it's a first pass (~260 of 2,040 questions individually WebSearch-verified, all 795 risk-flagged candidates reviewed) not an exhaustive one — see the dated note below for what's still unchecked.
-
-**Superlative sweep (2026-07-29):** Grepped all shards for "first/only/largest/biggest/smallest/longest/record/unprecedented/ever made" in question text — 137 hits. Nearly all were permanently-true historical facts (e.g. "first Mickey Mouse cartoon," "Walt's father's first name") that can't rot regardless of what launches later, so they needed no check. WebSearch-verified the ~10 that were genuinely current-record claims about an active/ongoing category (World of Disney "world's largest Disney character store," World of Frozen "world's first and largest Frozen-themed land," Germaine Franco "first woman to score a WDAS feature," Barlow & Bear "first all-female songwriting team" for Moana 2, Disney Adventure's "cruises to nowhere" itinerary) — all still hold up as of today. **Found one genuine factual error this way:** #2364 asked how many artists share the Billboard-record credit on 'We Don't Talk About Bruno,' with "Six" as the stored correct answer — multiple sources (Forbes, Billboard) confirm the actual record-breaking count is **seven** (six named performers plus the ensemble "Encanto cast" credit). Fixed to "Seven." This was not a stale-superlative case (nothing changed over time) — the fact was wrong from whenever it was drafted, only surfaced by actually checking a "record" claim instead of assuming a stored number was right. Worth remembering: a "current record" claim needs the same real verification as a "first/only" claim, even if it isn't the time-sensitive-superlative pattern rule 6 warns about.
-
-**Content expansion (2026-07-29, first batch under the rule 10 sequel/short soft cap):** User asked for 100 new questions. Landed at 77 clean (IDs 2579–2655, one gap from a cut duplicate) via **4 parallel fork agents** on disjoint buckets, explicitly excluding direct-to-video sequels/shorts per the same-day rule 10 policy: (A) the five films CLAUDE.md's table calls "under-covered" — Hercules/Coco/Onward/Luca/Up/Soul, landed 20/25 after confirming on recon that Hercules, Coco, Onward, Soul, and Luca are already fully saturated (redirected to Up/A Bug's Life/Brave/Elemental/Fox and the Hound/Atlantis instead); (B) films with no row at all in the coverage table, confirmed genuinely thin via an advisor-recommended pre-dispatch recon spot-check (4–14 existing hits vs. the corpus's 15–40 norm) — Home on the Range, Chicken Little, Dinosaur, Bolt, Treasure Planet, Lilo & Stitch, Rescuers Down Under, Winnie the Pooh, Dumbo — landed the full 25/25, confirming this was the strongest vein in the batch; (C) parks (secondary/lesser attractions plus international-park depth), landed 22/25 after cutting 5 drafts that turned out to be true duplicates caught during the fork's own recon; (D) music/walt/cruise/secondary characters, landed only 11/25 — recon confirmed this territory (already flagged as heavily-mined in the 2026-07-23 and -24 notes) is now close to exhausted on any angle other than individual Imagineer biographies, which is where this fork's yield came from. Raw yield across all 4 files was 78; the merge-gate `find_near_dupes.py --new` pass caught one true duplicate (Up's Best Original Score composer, Michael Giacchino — same fact as existing #410 and #1502, just phrased with an added "first Pixar win" qualifier that didn't change the underlying tested fact) among several coincidental shared-answer matches (different facts that happen to share a one-word answer, e.g. multiple unrelated questions all answering "Six") that were correctly not duplicates. **This batch is the first real-world test of the rule 10 soft cap** — zero sequel/short questions were drafted by design, and the fork-A recon reconfirmed (a third time now, after 2026-07-24 and this same batch) that the coverage table's "under-covered" label on Hercules/Coco/Onward/Luca/Soul is actively misleading; the table and its reliability note above were updated in the same commit as this batch to say so plainly rather than just flag it as "unreliable."
-
-**Rule 2 leak-detection overhaul (2026-08-29):** Two players flagged questions (#1230 "Youth activities" answering a question about "supervised youth spaces"; #2177 "Shoemaking" answering a question that quoted "a Rivera is a shoemaker") that the 2026-07-29 quality audit's leak check should have caught but didn't. Root cause: that check (now `validate_batch.py`'s tier 1, moved into `find_answer_leaks()` in `_common.py`) only matches the *entire* answer string verbatim inside the question — it can't see a single shared key word ("youth"/"youth" — the full phrase "youth activities" never appears in the question) or a morphological variant ("shoemaker" vs. "shoemaking" don't share a literal substring, and the existing `stem()` helper strips `-ies/-ing/-ed/-es/-s` but not `-er`, so a plain stemmed-set match still wouldn't catch this pair). It was also never checked in — the July pass ran as a one-off scratch script, so nothing re-ran it since. Fix, per advisor consult: added a tier 2 to `find_answer_leaks()` — a stemmed-or-length-≥5-prefix token match between the question and the correct answer, kept in check by a *differential* requirement (the shared word must not also appear, by the same matching rule, in any of the 3 distractors) that filters out ordinary shared category vocabulary. Validated against all 5 known historical leaks (the 3 from 2026-07-29 plus these 2) before trusting it on the live corpus — confirmed it fires on every pre-fix wording and stays silent on every fixed wording. The check is now checked in (`scripts/find_leaks.py` for a whole-corpus pass, wired into `validate_batch.py` for future drafts) instead of living only in a scratch file, so it won't silently lapse again.
-
-Ran it whole-corpus: 3 tier-1 hits, 235 tier-2 hits. Tier 2's raw count is dominated by two unavoidable/false-positive classes described in the Question-Bank Tooling entry above (proper-noun ride/song names sharing a generic word with the question; necessary scene-setting words). Filtered those out programmatically (excluding Title-Case multi-word answers, and matches confined to the question's leading "In X,"/"At X," film-or-park-name clause) down to 50 real candidates, then eyeballed every one. **Fixed 15 genuine violations** (question text reworded, answers untouched): #921 (Africa/"African village"), #1553 (WALL-E's AUTO/"autopilot"), #974 (Cabanas/"themed like a beach cabana"), #988 (Port of call/"a port during a sailing"), #1034 (Memory orbs/"memories"), #1136 (Frontierland/"American frontier"), #1168 (Mickey's Toontown/"home of Mickey"), #1295 (hyperspeed crystal/"hyperspeed travel"), #1400 (Towel animal sculptures/"crafted from towels"), #2110 (Mary Poppins — double leak, "float" and "laughs" both restated), #2118 (Coconut grenades/question listed "coconuts" as an ingredient), #2400 (Peter Pan — question quoted `'sewing on'` verbatim, the answer's own verb; missed by both tiers since the shared stem "sew" is only 3 characters, under tier 2's length-4 noise floor — caught by manual read, not the tool), #2412 (Zootopia 2 — double leak, "counseling" and "partners" both restated), #2523 (Woody's Roundup/"Woody's old TV show"), #2578 (hand-painting cels/"traditional hand-done process"). Two of the first-draft rewordings for #1400 and #2578 introduced *new* accidental overlaps ("animal"/"animation") — re-ran the detector after every fix, not just once at the end, which is what caught and fixed those before commit. **Left 3 as judgment calls, not auto-fixed:** #197 (Hopper/"grasshopper" — coincidental compound word, "hopper" is a real species term independent of the villain's name), #886 (Adventureland/"Indiana Jones Adventure" — the ride's own name needs stating for the question to make sense), #1426 (Kronk's shoulder angel/devil/"on Kronk's shoulders" — same necessary-context class). Corpus count unchanged at 2,050 (rewords only, no additions/removals).
-
-**Full-corpus audit (2026-09-08), phases 1–4 — flags, mechanics, categories, dupes/leaks re-check:** User asked for a full audit of the question bank. Read all 6 Firestore `flags` docs first (all already `_resolved: true`, matching recent commits) and spot-checked the underlying shard content for each — all 5 prior fixes (#476 Forky/Sporky, #1230 youth-activities leak, #2177 shoemaking leak, #412 ship-count rewording, #386 Walt's daughters) verified correct in the live shards. Ran a new mechanical sweep (not previously checked in, since it checks things the existing scripts don't): exactly-4-non-empty-answers, ID uniqueness, enum validity, "all/none of the above," and — genuinely new — **within-question duplicate answers after normalization** (a distractor equal to answers[0] mod case/article would make a question unanswerable); zero hits on all of these. Also grepped for TV-show terms (rule 8); 18 hits, all false positives (Jessie the Toy Story cowgirl vs. the Disney Channel show; "series"/"season" as generic words; Woody's Roundup as in-universe Toy Story lore, not real TV) — no violations.
-
-Wrote and checked in `scripts/find_category_bugs.py` (rule #9 movies-vs-pixar check, was a one-off scratch script in the 2026-07-29 audit that never got checked in) and wired it into `validate_batch.py` so new drafts get it too, not just whole-corpus sweeps — closing the same kind of tooling gap the 2026-08-29 leak-detector rewrite closed for rule #2. Whole-corpus run found only the same 3 permanent false positives (incidental mentions, e.g. citing an actress's Toy Story role to identify her while asking about a different film) — no real rule #9 regressions since July.
-
-Re-ran `find_near_dupes.py` whole-corpus and read **all** of Pass A and Pass B end-to-end (not just algorithmically-flagged clusters) — this is what caught what the July audits missed. Found **9 true duplicates** the prior audits' Pass B reads had accepted as coincidental: they all share a specific pattern — a bare fact-identification question and a second, more elaborately-worded question testing the *same* underlying fact, where the elaboration lowers question-text Jaccard similarity just enough to dodge Pass A's threshold (e.g. "In what year did Walt Disney pass away?" vs. "In what year did Walt Disney die, cutting short his personal involvement in the planning of Walt Disney World?" — both #121/#1544, answer 1966). The test applied: *could someone who only memorized the first question's answer answer the second with zero additional knowledge?* If yes, duplicate. Removed the less-informative copy of each pair (kept the more descriptive one): #121 (dup of #1544, Walt's death year), #187 (dup of #1550, Radiator Springs), #1483 (dup of #368, Contemporary Resort monorail-through-lobby), #372 (dup of #1475, Enchanted Tiki Room first-AA-attraction), #339 (dup of #94, Fantasyland/Cinderella Castle), #1058 (dup of #1323, Tiger Lily), #410 (dup of #1502, Michael Giacchino/Up score — already flagged as related to #1502 in the 2026-07-29 note but the pair itself was never resolved), #384 (dup of #1354, Marceline), #343 (dup of #1474, Blizzard Beach). Also deleted #145 (AquaDuck) as a separate, non-duplicate defect: it was garbled (asks "what is the name of the AquaDuck" after already naming it "the AquaDuck" in the same sentence) and fully redundant with the clean existing #733 ("name of the overwater water coaster found on Disney Dream and Disney Fantasy" → AquaDuck). **Tooling insight:** this "bare + elaborated" duplicate pattern will keep evading Pass A by design (more words = lower Jaccard) and evaded Pass B's manual read too, twice — the only defense is reading Pass B in full every audit, not trusting "no algorithmic flag" as clearance.
-
-Also filtered and read all tier-2 leak hits (same Title-Case/leading-clause filter as 2026-08-29, 220 raw → 99 filtered candidates) and found **8 more genuine leaks** the 2026-08-29 pass's whole-corpus run had left unaddressed (that pass was scoped to the 50 candidates existing then; these are additional, longer-standing ones the same filter surfaces). **Tooling insight — now in `find_leaks.py`'s docstring:** 5 of the 8 were in the `music` category, all the same shape — a question describing a song's content necessarily paraphrases the title so closely that a tier-2 hit there is close to a guaranteed real leak, not noise (unlike tier-2 hits in other categories, which are mostly necessary scene-setting). Fixed by dropping the paraphrased description and substituting a different identifying detail (a scene, not the song's own theme): #704 (Ariel/"Part of Your World" — was "wishes to be part of the human world"), #724 (Cinderella/"A Dream Is a Wish..." — was "wishes and dreams"), #792 (Simba/"I Just Can't Wait to Be King" — was "impatience to become king"), #793 (Pocahontas/"Just Around the Riverbend" — was "around the next bend in the river"), #1601 (Kristoff/"Lost in the Woods" — was "while getting lost"). Also fixed: #2070 (Alice in Wonderland — question named "a Walrus and a Carpenter" outright, missed by tier 1 only because of the article mismatch), #2379 (Melody Time — "winter-themed segment" leaked "Wintertime"), #2171 (Onward — "father-and-sons story" leaked that the director's personal loss involved a father, ahead of the 4 answer choices). Three more fixed for a related but distinct smell — the correct answer's phrasing echoing a word from the question in a way the distractors don't, independent of the tier-2 differential's normal noise: #987 (reworded question off "what *service*..." so it stops echoing "Room service"), #679 (answer reworded off "Most *competitive* wins" so it stops echoing "What *competitive* record"), #742 (correct answer was uniquely verbose — "One — the Disney Magic launched first" — against three bare-number distractors, itself a tell; trimmed to bare "One"), #647 (trailing filler word "creature" in the correct answer echoed the question's own "what type of *creature*"; trimmed). Left roughly 70 tier-2 hits as judgment calls, matching the 2026-08-29 precedent (e.g. #20 "magical object"/"magic mirror," #90 "around the world"/"It's a Small World," #609 "drop tower"/"Tower of Terror" — generic ride-type or category vocabulary that doesn't discriminate between the actual answer choices).
-
-Fixed two tooling bugs found while running the above: `find_near_dupes.py` crashed under output redirection on a non-cp1252 character (`ā`) — `_common.py` now calls `sys.stdout.reconfigure(encoding="utf-8")` at import, fixing this for every script that imports it, not just this one. `find_category_bugs.py` returned exit 1 on its 3 known-false-positive hits even though it's advisory-only like `find_leaks.py`'s tier 2 — now always returns 0.
-
-Net: corpus went from 2,050 to 2,040 questions (10 removed, 0 added — all other fixes were rewords). Category distribution: movies 465→464, characters 370 (unchanged), pixar 307→306, parks 310→306, music 221→220, walt 209→207, cruise 168→167. Table above and this file updated in the same commit, per the project's always-keep-docs-current rule.
-
-**Distractor-correctness audit (2026-09-08):** The 2026-07-29 audit's deferred item — rule 5 ("wrong answers must be wrong") never verified at scale — is the actual point of this pass; the phases above it in this file were regression-checking prior audits, not this. Built a triage script (scratch, not checked in — it's a one-time-per-audit tool, not a repeatable gate) combining two signals: risk-shape regexes on question text (superlative/record claims, inverted logic, voice-cast questions, ship-specific venue facts, song/composer attribution, "which character has X" attribute questions) and a cross-answer collision heuristic (a distractor in one question equals another question's answers[0], with ≥3 shared content tokens between the two questions — candidate "two entities both claimed correct for the same specific attribute"). This flagged 795 of the corpus's 2,040 questions (39%) as worth a real WebSearch fact-check pass — too many for one inline session, so per the user's explicit choice it was split into 6 topic buckets (music 184, characters 120, cruise 119, parks 118, movies 108, pixar+walt 146) and dispatched as parallel fork agents, each producing a findings report rather than editing shards directly (avoids concurrent-edit conflicts across 6 simultaneous writers; a coordinator applies and re-verifies fixes afterward, same read-only-tooling/human-editor split as every other script-assisted pass in this file).
-
-Combined, the 6 forks individually WebSearch-verified ~260 of the 795 candidates (the rest were read and judged low-risk enough — well-established mainstream facts — not to spend search budget on) and found **8 confirmed errors**, a genuinely useful hit rate that validates this as the highest-value phase of the audit:
-- **#791** (music) — claimed Phil Collins composed "both the songs and the full orchestral score" for Tarzan (1999); he wrote/performed the songs, but Mark Mancina composed the score. Reworded to ask only about the songs, crediting Mancina in the question stem instead of hiding the error.
-- **#1389** (music) — asked which film immediately preceded The Little Mermaid (1989) without an Oscar win; stored answer "The Great Mouse Detective (1986)" was wrong (it's two films earlier) — the true immediate predecessor, Oliver & Company (1988), was sitting in the corpus as a *distractor* on the same question. Swapped the two into their correct slots.
-- **#2066** (characters) — misattributed the 2017 live-action Beauty and the Beast's transformed footstool dog to Lumiere; it belongs to Maestro Cadenza and Madame de Garderobe. Reworded.
-- **#2337** (movies) — Hunchback of Notre Dame II's timeskip stored as "Seven years"; multiple sources confirm six. Swapped Six/Seven into their correct correct-answer/distractor slots.
-- **#2425** (movies) — asked who was "originally considered" to voice Hades before James Woods, answer "Jack Nicholson" (technically true but the much more documented predecessor — John Lithgow, who was fully cast and had test animation recorded before being let go — wasn't even an answer option). Reworded to target the better-documented fact and added Lithgow as the new correct answer, keeping Nicholson as a legitimate distractor.
-- **#2117** (movies) — presented "shipwreck in a storm" vs. "pirate attack" as mutually exclusive causes of the Swiss Family Robinson's stranding, but in the film pirates chase the ship into the storm that wrecks it — both were technically true, making the "wrong" answer not actually wrong. Reworded to establish the pirate-chase as given context and ask what the storm itself then does, resolving the either/or. (First reword shared the token "storm" between question and answer, a new tier-2 leak caught by re-running `find_leaks.py` immediately after — reworded again to "rough weather" per the project's own re-check-after-every-fix rule.)
-- **#1540** (pixar) — asked for chef Linguini's "first name" but "Linguini" is his surname (full name Alfredo Linguini). Dropped "first" from the question.
-- **#2358** (walt) — claimed Three Little Pigs (1933) won "the very first" Best Animated Short Oscar; Flowers and Trees (1932) won that a year earlier — Three Little Pigs won the second one. Reworded to "second consecutive," keeping the stored 1934 ceremony-year answer (which was already correct).
-
-Also independently verified id #2144 (Brother Bear's "Bears" working title claim, flagged by the coordinator before dispatch since it fell on a category boundary between buckets) — confirmed accurate via WebSearch (the project actually was retitled "Bears" in 2001 before reverting to "Brother Bear" in January 2003); no fix needed.
-
-Three of the six buckets (cruise, parks, and — after 8 fixes — everything else) came back clean or near-clean, which is itself informative: cruise (0/47 checked) and parks (0/92 checked) show no signs of memory-drafting error despite being flagged in earlier notes as "heavily mined" — the errors that exist are concentrated in specific-fact-attribution questions (who composed/voiced/cast what, exact year gaps, "who was first") rather than the broad "which film/park has X" identification questions that make up most of the bank. **This is the actual guidance for scoping a future rule-5 pass**, sharper than the 2026-07-29 note's generic "high-risk categories first": prioritize specific attribution and record claims over identification questions, regardless of category.
-
-**Not yet done:** ~535 of the 795 flagged candidates were reviewed by the forks but not individually WebSearched (judged low-risk from general knowledge) — a genuine gap, not a false-negative-free pass. The corpus's other ~1,245 questions (60%) were never triaged at all, since the risk-shape/collision heuristic only flags specific question shapes; a differently-shaped error (e.g. a wrong plot detail with no superlative, cast, or collision signal) would not have surfaced. Next audit should either widen the triage heuristic's risk shapes or accept this as a standing, sampling-based check rather than a completeness guarantee.
-
-**Removing a question:** Move its original object to `questions/retired.json` before removing it from the active shard. Keep its ID and ledger history; IDs must never be reused. See QUESTION_AUDIT.md.
-
-**Local testing note:** `fetch()` is blocked on `file://`. Run a local server to test (`python -m http.server 8000`). On GitHub Pages it works fine.
-
-**Browser-driving this app for QA (added 2026-08-12):** `storage.js`'s active adapter is live production Firestore (project `disneytrivia-38ac6` — see Storage Layer below), not a sandbox. A headless-browser verification pass (Playwright, etc.) that clicks through Play Game / answers questions / exits will call the real `storage.updateStats()` against whichever player card it clicks (almost always the first-listed one) — this happened during the 2026-08-12 Disney-theming pass and inflated Cara's `gamesPlayed`/`totalPoints`/`monthlyPoints`/`totalAnswered` with test-game data, and also **overwrote her `recentQuestionIds` seen-history** down to just the fresh browser profile's tiny local list (see the per-device-state limitation under Regular Game: Answer Order & Repeat Avoidance) — the exact pre-test deltas weren't reconstructible after the fact. **For UI verification, use `python scripts/visual_check.py`** (added 2026-10-05) — it runs against a throwaway copy with `LocalStorageAdapter` and Firestore requests blocked, so the working tree's `storage.js` is never touched. For a narrower one-off Playwright script, follow the same pattern (copy the site to the scratchpad, switch the copy's adapter, serve that) rather than editing the real `storage.js` and remembering to switch it back.
-
-## Question-Bank Tooling (scripts/)
-All scripts are read-only against the shards — they print reports/candidates for a human to eyeball, they never edit shard JSON (adding/removing a question is still always a manual shard edit, per the rule below). Run from the project root with `python scripts/<name>.py`.
-
-| Script | Purpose |
-|---|---|
-| `recon.py <regex>` | `id + question` dump for a keyword/film — a token-cheap first pass over full Grep hits during the mandatory pre-draft recon scan. Hides answers by default (`--show-answer` adds only the correct answer, never distractors) — good for "has this stem/angle been asked," not a substitute for a real Grep hit when judging whether a specific fact+answer is already covered. `--all-fields` also searches wrong answers. **Read the full digest for the topic you're drafting about, not just what `find_near_dupes.py` algorithmically flags** — a film is usually 15–40 lines, cheap to read end-to-end with semantic intent. This is the actual catch for "same fact, different answer wording" (e.g. "What weapon is X skilled with? → Bow and arrow" vs. "X's signature skill? → Archery") — no lexical script can judge that two answer strings mean the same thing, only a read can. |
-| `find_gaps.py` | Two novelty reports: distractor-only entities (names/terms that have appeared as a wrong answer but never as a correct one — candidate seeds for new questions) and sequel/short coverage counts, lowest first. Run before drafting to find genuinely unmined material instead of relying on memory for what's "obviously" missing. `--distractors` / `--sequels` isolates one report; `--min-count`/`--limit` tune the distractor report (expect some noise — generic words and colors show up; it's advisory, not a verdict). **The `--sequels` report is a coverage census, not a to-do list** — a low count there means a title is under the ~8–10 soft cap (rule 10), not that it's owed more questions; keep theatrical/main-canon gaps as the default target. |
-| `find_near_dupes.py` | Lexical near-duplicate detector. No args = whole-corpus self-audit (same method as the 2026-07-21 audit below, but scriptable/repeatable) — groups above `--max-group-size` (default 6) are skipped as likely just a common name. `--new drafts.json` checks a drafted batch against the existing corpus and against itself before appending; Pass B is NOT size-capped in this mode, since output is already scoped to groups touching the draft — capping there would hide exactly the "draft answer matches a common existing answer, worded differently" case this pass exists to catch. Two passes: question-text Jaccard similarity (`--threshold`, default 0.5, tokens lightly stemmed so "kitten"/"kittens" or "sings"/"singing" count as the same token) catches reworded restatements; same-normalized-answer grouping catches same-fact-different-wording that a text-similarity threshold can miss (Pass B is also why this tool independently catches most "semantically equivalent, low word overlap" dupes — same fact usually means same correct answer, regardless of phrasing). Catches lexical overlap only — semantically-equivalent questions with **low word overlap AND a differently-worded answer** (e.g. "bow and arrow" vs. "archery") still need a human read; see the recon.py note below for how that residual case gets caught. Always eyeball flagged pairs; a shared answer or wording doesn't automatically mean duplicate (e.g. two different songs both answering "Pocahontas"). |
-| `validate_batch.py drafts.json` | Pre-append sanity check: valid JSON, ID collisions (against the corpus and within the batch), next-available-ID, category/difficulty enum membership, exact-duplicate question text, and advisory heuristics for the Answer structure rules below (sentence-like answers, and a two-tier answers[0]-leaked-into-the-question check — see `find_leaks.py` below for what tier 2 adds). Exits non-zero on errors. |
-| `find_leaks.py` | Whole-corpus rule #2 scan, using `find_answer_leaks()` in `_common.py` (also what `validate_batch.py` calls per-draft, so new questions get the same check before they ever reach the corpus). Tier 1: the full answer string appears verbatim in the question — high precision, fix on sight. Tier 2 (`--tier2` to isolate): a stemmed/prefix-matched content word from the correct answer also appears in the question, **and does not appear in any of the 3 distractors** — this differential is what keeps ordinary shared category vocabulary (a question and its answer both about the same ride/film) from flooding the report, and it's also what catches morphological variants a verbatim check misses (e.g. "shoemaker" in the question vs. "Shoemaking" as the answer). Both tiers are lexical/stem-based only — a pure-synonym leak ("canine" in the question, "Dog" as the answer) shares no stem and won't be caught. Tier 2 still throws real noise from two structurally-unavoidable classes: proper-noun answers that legitimately share a generic word with the question (e.g. "The Haunted Mansion" answering "what is the haunted attraction..." — other haunted attractions exist, so "haunted" alone doesn't give it away), and necessary scene-setting words the question can't omit without becoming incomprehensible (e.g. having to say "sea monsters" to ask about Luca, or "Cave of Wonders" to ask about Aladdin). Always eyeball tier 2 hits before touching anything. |
-| `find_category_bugs.py` | Whole-corpus rule #9 scan (Pixar film tagged `movies`, or a non-Pixar Disney film tagged `pixar`), via `check_category()` (also called by `validate_batch.py` per-draft). Matches question text + answers[0] against a small Pixar-vs-Disney film-identity pattern list. Advisory/lexical only — a pattern match on an incidental mention (e.g. an actor's other, unrelated role named in passing to identify them) is common and not itself a bug; always returns 0 and always eyeball hits. |
-| `count_topics.py` | Per-film coverage counts — see Per-film coverage map below. |
-
-**Required batch workflow:** Follow QUESTION_AUDIT.md: recon/read the full topic digest → research and draft → `validate_batch.py` and `find_near_dupes.py --new` → append survivors → `question_audit.py sync` → record the final wording's manual review and evidence for all four options → decide applicable warnings → `question_audit.py check`. Keep IDs/counts current. Structural success alone is not factual verification.
-
-## Storage Layer — Firebase (active)
-User stats and flags are stored in **Firestore**, project `disneytrivia-38ac6`.
-
-Collections:
-- `users` — one doc per player, keyed by user ID
-- `flags` — one doc per flag report (auto-ID)
-- `dailies` — one doc per calendar day, keyed by `"YYYY-MM-DD"` date key; stores `{ questionIds: [id, ...] }` written by the first player who plays that day
-- `weeklyHomework` — single doc `state`; stores the current Weekly Homework movie pick (see below)
-
-Document shape:
-```js
-// users/{userId}
-{ id, name, totalAnswered, totalCorrect, gamesPlayed,
-  totalPoints,        // accumulated lifetime points — PRIMARY STATE, not derived (sequence-dependent bonuses make it non-recomputable)
-  monthlyPoints,       // points accumulated since monthlyKey was set — PRIMARY STATE, same reason as totalPoints.
-  monthlyKey,          // "YYYY-MM" (see monthKey() in game-logic.js) this monthlyPoints total belongs to. Every
-                       // updateStats() call passes the current monthKey(); if it doesn't match the stored
-                       // monthlyKey, monthlyPoints resets to just this game's points instead of accumulating —
-                       // this is what makes the leaderboard's "This Month" view winnable even for a player who's
-                       // far behind on lifetime totalPoints. Absent on old docs (treated as monthlyPoints: 0).
-  prevMonthlyKey,      // "YYYY-MM" of the month before monthlyKey — populated when the month rolls (first game
-  prevMonthlyPoints,   // played in a new month shifts the outgoing monthlyKey/monthlyPoints here first, same
-                       // lastDailyDate→prevDailyDate pattern below). Powers the leaderboard's "Last Month" view.
-                       // Absent until the first rollover a given user experiences after this field was added.
-  dailyStreak,        // consecutive days with a daily challenge
-  lastDailyDate,      // "YYYY-MM-DD" of last daily played
-  lastDailyScore,     // correct count (0–10) in last daily
-  lastDailyPoints,    // pts earned in last daily
-  lastDailyAnswers,   // [{questionId, correct, selectedText}] — per-question picks from last daily; used by screen-daily-review
-  prevDailyDate,      // "YYYY-MM-DD" of the daily before last (populated when day rolls)
-  prevDailyScore,     // correct count (0–10) for prevDailyDate
-  prevDailyPoints,    // pts earned for prevDailyDate
-  prevDailyAnswers,   // [{questionId, correct, selectedText}] — per-question picks shifted from lastDailyAnswers when day rolls
-  categoryStats,      // { movies: {answered, correct}, characters: ..., ... } — per-category counters, absent on old docs (treated as {})
-  recentQuestionIds,  // [id, ...] — mirror of this device's local disney_seen_{userId} list (capped at SEEN_MAX, see below), synced on every
-                       // completed/exited game; unioned across all users to exclude recently-played questions when generating a new day's
-                       // daily-challenge pin. Absent on old docs (treated as []). See "Regular Game: Answer Order & Repeat Avoidance" below.
-  gameLog }           // [{at, day, mode, status, questionIds, answered, correct, points, resumed, firstDaily?, device, platform, v}, ...]
-                       // newest first, capped at GAME_LOG_MAX (30). Diagnostics only — nothing in the app reads it. See Game Log below.
-
-// flags/{autoId}
-{ questionId, questionText, correctAnswer, allAnswers, difficulty, category,
-  reportedBy, comment, timestamp, _resolved? }
-
-// weeklyHomework/state
-{ weekKey,   // "YYYY-MM-DD" of the Thursday this pick belongs to, from homeworkWeekKey()
-  movieId,   // id into movies.json for the current pick
-  pickedAt,  // ISO timestamp of the last pick/shuffle
-  watched }  // [{id, watchedAt}, ...] movies already assigned in a past week, with the date
-             // watched — excluded from future picks and rendered as watch history.
-             // Older docs may have a bare `watchedIds:[id,...]` instead; app.js's
-             // normalizeHomeworkState() upgrades that shape in memory on read.
-             // NOT seed-derived like the daily challenge — watched-exclusion and the
-             // shuffle veto make the pick stateful and non-reproducible. Do not "simplify"
-             // this back to a deterministic weekly shuffle.
+curl -s "https://firestore.googleapis.com/v1/projects/disneytrivia-38ac6/databases/(default)/documents/users/<userId>"
 ```
 
-Stats stored as raw counters (`totalAnswered`, `totalCorrect`, `categoryStats`); percentages are always derived, never stored. `totalPoints` looks like a derived value but is **primary state** — streak and bonus mechanics make it non-recomputable from counters alone. `monthlyPoints`/`monthlyKey` (and `prevMonthlyPoints`/`prevMonthlyKey`) are the same kind of primary state, just reset/shift-on-new-key instead of ever-accumulating (see the Document shape comment above and getLeaderboard's `targetMonthKey` param below) — `getLeaderboard()`'s `effectivePeriodPoints` is the one legitimate derived value here, computed for display only and never written back. `updateStats` uses a Firestore transaction to avoid race conditions when two players finish at the same time. The `dailyUpdate` payload (score, points, dateKey, streak, answers), the `catStats` per-category delta, the optional `recentQuestionIds` seen-ids mirror, and `monthKey` are all written inside the same transaction so all fields are always consistent.
+`gameLog` on the user doc holds the last 30 games (mode, question IDs, device, version).
+A `dailies/{date}` doc whose `updateTime` ≠ `createTime` was overwritten. Flags live in
+`flags/{id}`; resolutions in `flags/{id}/resolutions/{event}`. Never write to production
+without the owner's OK.
 
-**Monthly leaderboard (added 2026-08):** `totalPoints` never resets, so a player who falls behind early has no realistic way to catch up on the lifetime board — a permanently stale race for whoever's trailing. `storage.getLeaderboard(targetMonthKey)` takes an optional `"YYYY-MM"`; when passed, it sorts by each user's `effectivePeriodPoints` instead of `totalPoints`, via `_effectivePeriodPoints(u, targetMonthKey)`: returns `monthlyPoints` if `monthlyKey` matches the target (the month they're currently accumulating), else `prevMonthlyPoints` if `prevMonthlyKey` matches (the month they just rolled out of), else 0 (they didn't play at all that month — correctly handles a player skipping a month entirely, not just the immediately-prior one). The leaderboard screen's 3-way pill toggle (`#lb-mode-group`, `_lbMode` in `app.js`: `'lifetime' | 'month' | 'lastmonth'`) calls `getLeaderboard(null)`, `getLeaderboard(monthKey())`, or `getLeaderboard(prevMonthKey())` respectively — `monthKey()`/`prevMonthKey()` both in `app.js`, same 8h-shifted boundary as `dayKey()`. `updateStats()` is what actually shifts `monthlyKey`/`monthlyPoints` into `prevMonthlyKey`/`prevMonthlyPoints` on a new key before resetting — see the Document shape comment above. Note: `prevMonthlyKey`/`prevMonthlyPoints` only get populated the first time a given user's month actually rolls over after this field was added, so "Last Month" reads as 0 for everyone until each player's first game in the month following whenever this shipped. **The home screen's per-player card (`renderHome()`) uses this same effective-points logic for the current month (`user.monthlyKey === monthKey() ? user.monthlyPoints : 0`), not `totalPoints`**, for its "pts this month" line — inlined rather than calling `getLeaderboard()` (it already has `users` loaded and only needs the one field) — so the rivalry-facing number a player sees first is always the winnable one, consistent with the leaderboard.
+## What NOT to do
 
-**Firebase console:** https://console.firebase.google.com/project/disneytrivia-38ac6
-
-**Switching back to localStorage:** Change the last line of `storage.js` from `new FirebaseAdapter()` to `new LocalStorageAdapter()`. The rest of the app is unaffected.
-
-**Firestore security rules** (currently set to open — URL is the only guard for this private family app):
-```
-rules_version = '2';
-service cloud.firestore {
-  match /databases/{database}/documents {
-    match /{document=**} {
-      allow read, write: if true;
-    }
-  }
-}
-```
-
-## Flag / Review System
-- Players tap **👎 Flag** after answering to report a bad question
-- Stored in Firestore `flags` collection via `storage.flagReport()`
-- `review.html` is the admin triage page — open it at https://milo9.github.io/dsny-trivia/review.html
-- After fixing a question in the appropriate shard JSON, mark the flag Resolved in `review.html`
-- Flagging does NOT auto-remove the question; that's always a manual edit to the shard JSON
-
-## PWA / Home Screen Install (added 2026-08)
-The app installs like a native app when added to a phone's home screen — no service worker, no offline mode (deliberately: the app is Firestore-first, so "working offline" would mean silently stale/unsaved data, which is worse than just failing to load). This is icon + manifest polish only, not an offline-capable PWA.
-
-- **`manifest.json`** (repo root) — `display: "standalone"` (hides browser chrome), `theme_color`/`background_color` matching `--bg` (`#060614`), `start_url`/`scope` are relative (`./index.html` / `./`) so this works whether the site is served from a domain root or a GitHub Pages subpath. Two icon purposes per size (192/512): `"any"` (rounded-square, used as-is) and `"maskable"` (opaque full-bleed square with the glyph padded into a safe zone, since Android launchers apply their own shape mask and would clip an unpadded icon).
-- **`icons/`** — all 7 files (`favicon-16/32.png`, `apple-touch-icon.png` @180, `icon-192/512.png`, `icon-192/512-maskable.png`) are generated, not hand-drawn — see `scripts/generate_icons.py` in the File Map above. Re-run that script rather than editing PNGs directly if the theme colors or icon glyph ever change.
-- **`index.html` `<head>`** — `<link rel="manifest">`, favicon links, `<link rel="apple-touch-icon">`, and the `apple-mobile-web-app-*` / `mobile-web-app-capable` meta tags (iOS still needs these even though it now also reads the manifest, for older-Safari compatibility). The viewport meta has `viewport-fit=cover` so the page can draw under the iPhone notch/Dynamic Island and home indicator when installed standalone (no browser chrome to naturally avoid them).
-- **Safe-area insets** — `body` in `style.css` has `padding: env(safe-area-inset-*)` on all four sides. This only has any effect in standalone mode on a notched device (resolves to `0px` everywhere else, including normal browser tabs), so it's safe to leave on unconditionally.
-- **Why no service worker:** a service worker's main value here would be offline play, but every write (scores, streaks, leaderboard, flags) goes straight to Firestore with no local queue/sync layer — an offline session would let someone play a full game that then silently fails to save. Adding a cache-only service worker just for "installs faster" without solving that would be a half-feature; skip it unless offline play is explicitly requested as its own project. (The "new version available" toast does not need one either — see Update-Available Toast below.)
-
-## Disney Theming Pass (added 2026-08-12, v1.32)
-A look-and-feel pass — no gameplay/mode changes, CSS/JS/SVG-only, no new external assets. Requested explicitly as "make it feel more Disney" for this non-commercial household app.
-
-- **Script headings** — `.screen-title` (all screen `h2`s, including `#results-title`) and `.homework-movie-title` now use the `Pacifico` font already loaded for the home `app-title`, instead of `Fredoka One`. Numeric displays (`game-score`, `results-pct`) intentionally stay on Fredoka One. *Not* the fan-made "Waltograph" font specifically — no safe way to source/redistribute that file — Pacifico was the practical substitute; swap it in later if the user supplies the font file.
-- **Night-sky castle** — `.castle-deco` opacity raised 0.13→0.2 on home; both castle SVGs (home + results) gained a `.castle-windows` group of small twinkling gold circles (`windowTwinkle` keyframe). Added a second, dimmer "Tinker Bell" sparkle trail (`body::before`, `tinkerTrail` keyframe) alongside the existing shooting-star trail (`body::after`).
-- **Pixie-dust sparkle burst** — `spawnSparkles()` in `app.js`, called from `handleAnswer()` only on a correct answer. Spawns 7 `.pixie-spark` spans at `document.body` (fixed-position, coords from the tapped button's `getBoundingClientRect()` — appending inside the button risks ancestor clipping/transform issues). Skipped entirely under `prefers-reduced-motion` via `matchMedia`, not just left to the global animation-duration override, since that alone wouldn't stop the DOM churn.
-- **Circle-wipe screen transitions** — `.screen`'s old `fadeIn` keyframe replaced with `circleWipeIn` (`clip-path: circle()` iris wipe, 0.35s). `display:none → flex` restarts it automatically on every `showScreen()` call; no JS timing changes needed, and the existing reduced-motion media query still neutralizes it.
-- **Musical motifs** — see Sound Effects above. `sounds.fanfare()` now plays "When You Wish Upon a Star"'s opening phrase instead of a generic C-major arpeggio; `sounds.wrong()` is now a slide-whistle-down frequency ramp (new `slide()` helper in the `sounds` IIFE) instead of a flat thud.
-- **Hidden Mickeys** — `.hidden-mickey` (reuses the `.user-avatar` three-circle ear trick), one each on home/settings/results at ~0.06 opacity, `aria-hidden`, non-interactive. Classic Disney-fan easter egg, purely decorative.
-- **Mickey-head progress dots** — `#progress-dots` in `renderGameQuestion()`, one mini Mickey-silhouette dot per question, only rendered for ≤12 questions (falls back to the existing progress bar above it for longer games — dots would crowd/wrap at the 375px floor). `#game-progress` text is unchanged and remains the accessible equivalent; the dot row is `aria-hidden`. `handleAnswer()` colors the *current* dot green/red immediately on tap, ahead of the next `renderGameQuestion()` call, so it reacts to the answer instead of only updating on the next question.
-- **"Wishing on a star" boot screen** — the static "Gathering pixie dust…" boot text is now a twinkling star + a rotating real Walt Disney quote (`BOOT_QUOTES` in `app.js`, `startBootQuotes()`/`stopBootQuotes()`, started at the top of `init()` and stopped once loading finishes). Guards `document.body.contains(el)` in the interval tick so a stray late tick after `renderHome()` replaces the list can't throw.
-- **Ticket-stub player cards** — `.user-card` gained a corner "ADMIT ONE" ribbon (`::after`) and a perforated divider. The divider is a `border-left: dashed` **on `.user-arrow` itself** (in-flow), not an absolutely-positioned overlay — an earlier version used an absolutely-positioned `::before` line, which visually crossed through the stats line's text on cards where it wraps (e.g. a long "pts this month · NN% correct · 🔥 streak" line at 375-390px). Keep any future ticket-stub tweaks in-flow for the same reason.
-- **Storybook results page** — `.storybook-page` wraps the existing results-header/breakdown/missed-section content, reusing the `.question-card`-style filigree corner-wedge technique (gold corner accents + inset border) via its own `::after`. A `.storybook-end` "~ The End ~" flourish (also Pacifico) sits below it, before the action buttons. `.storybook-page` is `display:flex; flex-direction:column; gap:22px` to preserve the original `.screen`-level spacing now that those elements are nested one level deeper.
-
-**Bug found and fixed during this pass (unrelated to theming):** `btn-go-leaderboard` and `btn-results-leaderboard` were bound directly as `renderLeaderboard`'s click listener (`addEventListener('click', renderLeaderboard)`), which forwards the click `Event` object as `renderLeaderboard`'s `mode` argument — a truthy non-string value corrupts `_lbMode`, and `LB_PERIOD_KEY[_lbMode]()` then throws `is not a function`, breaking the leaderboard screen from either entry point. Fixed to `addEventListener('click', () => renderLeaderboard())`. The pill-group binding (`renderLeaderboard(pill.dataset.mode)`) was already correct and untouched.
-
-**Verification note:** this pass was checked by browser-driving the app with Playwright against the live `FirebaseAdapter` (not `LocalStorageAdapter`), which polluted the "Cara" player's stats with test-game data and reset her `recentQuestionIds` seen-history to the test browser's empty local list — see the browser-driving-for-QA note under Local testing note above. Disclosed to the user rather than guess-corrected; not repeated in future verification passes.
-
-## Loading Resilience (added 2026-08-16, v1.33)
-Users reported the home screen's player list / leaderboard sometimes just never loads (no error, no data — a permanently empty screen). Root causes, found by reading the actual load paths rather than guessing:
-
-- **`renderLeaderboard()` had no try/catch at all** — a genuinely unhandled path, not just a missing-timeout one. If `storage.getLeaderboard()` ever rejected, the leaderboard screen was already shown with an empty list and stayed that way forever, no error UI, no retry link. `renderHome()`'s `storage.getUsers()` call *did* have a try/catch, but that only helps if the underlying call actually rejects.
-- **Nothing had a timeout.** Firestore's compat SDK does not reject promptly on a degraded-but-not-fully-offline connection (spotty hotel/ship wifi, etc.) — its internal stream just keeps retrying indefinitely. A stalled (not failed) `fetch()` for the question shards behaves the same way. Existing try/catch blocks are useless against a promise that never settles either way — this is why the failure looked like "sometimes doesn't load" rather than a reproducible error.
-
-Fixes, all read-only (writes are deliberately untouched — see below):
-- `FirebaseAdapter._withTimeout(fn, {attempts=2, timeoutMs=8000})` in `storage.js` wraps every Firestore **read** method (`getUsers`, `getLeaderboard`, `getHomeworkState`, `getDailyPins`, `getAllDailyQuestionIds`, `getFlags`) — races each attempt against an 8s timeout, retries once, then rejects for real so the caller's existing try/catch actually fires. `fn` is re-invoked fresh on each attempt (a new Firestore call, not a re-await of the same stuck one).
-- `renderLeaderboard()` (`app.js`) now has the same try/catch + "Tap to retry" pattern `renderHome()` already used, plus both now show a `.load-status` loading placeholder (new class, `style.css`) *before* the await so a slow-but-eventually-successful load doesn't look identical to a blank/broken screen while it's in flight.
-- `fetchWithTimeout()` (`app.js`) wraps the question-shard/movies-pool `fetch()` calls in `loadQuestions()`/`loadMovies()` with an `AbortController` 10s timeout, so a stalled boot fetch becomes a real rejection the existing boot error screen ("Failed to load questions… Tap to retry") can catch, instead of hanging behind the quote rotation forever.
-
-**Writes are deliberately excluded from the retry wrapper** (`updateStats`, `saveUser`, `saveDailyPins`, `saveHomeworkState`, `flagReport`, `saveRecentQuestionIds`) — a timed-out write whose first attempt actually landed server-side (Firestore transactions aren't instantly abortable client-side) would double-apply on an automatic retry, e.g. double-counting points. If write-path hangs turn out to be a real problem too, that needs a timeout-without-retry treatment, not this same wrapper — not done here since it wasn't the reported symptom.
-
-## Update-Available Toast (added 2026-10-05, v1.34)
-Ported from the Offline Trivia repo's "new version is ready" toast so players don't have to kill and relaunch the installed app to pick up a deploy. **Not service-worker based** (that repo's version is; this app deliberately has none — see PWA above). Instead, `checkForUpdate()` in `app.js` re-fetches `index.html?t=<now>` with `cache: 'no-store'` (the `?t=` buster is needed to get past GitHub Pages' ~10 min CDN `max-age`; `no-store` alone only bypasses the browser cache), extracts its `app.js?v=` value, and compares it to the `app.js?v=` of the `<script>` tag the running page actually loaded (`loadedAppVersion()`) — deliberately *not* to the `APP_VERSION` constant, so a mismatch between the two can't produce a toast that never goes away.
-
-- **When it checks:** once after `init()` finishes, on every `visibilitychange` → visible (the real case: resuming the home-screen app from the background), and every 20 min while visible. Throttled to at most once a minute. All errors are swallowed silently — offline/flaky wifi never surfaces anything.
-- **Never shown mid-game.** Since v1.35 a reload mid-game no longer loses anything (see Game Checkpoint & Resume), so this is about not interrupting play, not data safety: `maybeShowUpdateToast()` returns early while `screen-game` is visible; the pending version is surfaced by `showScreen()` the next time the player lands on any other screen.
-- **"Later"** stores the dismissed version in `sessionStorage` (`disney_update_dismissed`) so it doesn't re-pop on every app resume for the same build; a newer build still shows it. **"Update now"** is just `location.reload()`.
-- Markup is `#update-toast` in `index.html`, outside `#app` (so the boot error screen's `#app` innerHTML replacement can't remove it); styles are at the bottom of `style.css`.
-
-## Game Checkpoint & Resume, Back Button, Confirm Sheet (added 2026-10-05, v1.35)
-Ported from Offline Trivia. Before this, a regular game was lost outright if the app was killed (iOS does this to backgrounded PWAs), reloaded, or updated, and a daily only saved progress if the player tapped Exit — a killed app mid-daily replayed the same questions with no saved answers.
-
-- **Checkpoint after every answer** — `checkpointGame()` (`app.js`), called from `handleAnswer()` right after the answer is recorded. Deliberately on the *tap*, not on Next: the correct answer is revealed on tap, so saving later would let a killed app re-answer a revealed question. Dailies write the existing `disney_daily_progress_{userId}` (so the existing "▶️ Resume Daily Challenge (n/10)" button covers them, no extra prompt); regular games write `disney_game_progress_{userId}` = `{questionIds, answers, savedAt}`. Both per-device localStorage, like the app's other `disney_*` keys.
-- **Regular checkpoint lifecycle** — cleared only after its answers are committed to Firestore (`endGame()` success, or a successful Exit). **Kept on a failed save** (offline) instead of the old alert-and-lose behavior; the results screen's save warning says so. In `endGame()`, `saveFailed` means "`updateStats` rejected" and nothing else: the follow-up `getUsers()` refresh has its own try/catch, and on failure patches `currentUser.lastDailyDate`/`dailyStreak` locally. Otherwise a refresh timeout after a landed write would show a false "kept on this device" warning (the checkpoint was already cleared) and leave a finished daily replayable.
-- **Accepted trade-off:** a user-initiated retry ("Save it" / "Start new") of a write whose first attempt actually landed but lost its ack would double-count. This is accepted over the old drop-on-failure behavior; there is still no *automatic* write retry (see Loading Resilience).
-- **Resume** — `offerGameResume(mode)`, rebuilt via `reconcileRegularCheckpoint()` (game-logic.js; drops questions deleted from the shards since, answered-first ordering so `currentIndex === answers.length`). A fully-answered checkpoint (save failed) offers "Save it", which calls `endGame()` directly.
-  - `'select'` (picking a player): Resume / "Not now". "Not now" and dismissing both keep the checkpoint for later.
-  - `'start'` (Start Game, Rematch, or Daily while a checkpoint exists): Resume / "Start new". "Start new" commits the leftover answers to stats first (`commitRegularAnswers()`, same as Exit) so they're never silently dropped; dismissing aborts the new game.
-- **Back button** — `syncHistory()`/`popstate` in `app.js`. History holds at most two entries: home (depth 0) and the current other screen (depth 1, replaced on each screen change). Back = the visible screen's own `.btn-back` (falls back to home), mid-game = the same `exitGameFlow()` as the Exit button, and Back while a confirm sheet is open just dismisses it. Route every screen change through `showScreen()`; don't push history entries elsewhere. No unconditional `replaceState` at boot: a reload from a depth-1 screen keeps that entry and `renderHome()`'s `syncHistory` collapses it.
-- **Confirm sheet** — `showConfirm({title, message, confirmText, cancelText, danger, single})` / `showAlert(title, message)` replace every native `confirm()`/`alert()` in `app.js`. Resolves `true` (confirm), `false` (cancel button), or `null` (dismissed: Escape, backdrop tap, phone Back) — `offerGameResume` relies on `false` vs `null` being different. Never stacks (a second call while one is open resolves `null`). `#confirm-overlay` sits outside `#app` (which goes `inert` while open) and at z-index 1100, above the update toast. Don't reintroduce native dialogs.
-
-## Game Log (added 2026-10-24)
-Added after a "the Oldies got different questions than us" report (they'd played a regular game, not the daily) could only be confirmed by piecing together `lastDailyDate`, the doc's `updateTime`, and the order of `recentQuestionIds`. Each player's doc now carries `gameLog`: the last 30 games, newest first, one entry per stats commit.
-
-- **Entry:** `at` (ISO time), `day` (`dayKey` the game belongs to), `mode` (`daily`/`regular`), `status`, `questionIds` (the whole game in play order — the first `answered` of them were shown), `answered`, `correct`, `points`, `resumed` (continued from a checkpoint or saved progress), `firstDaily` (dailies only — false would mean a replay), `device` (random 6-char id from localStorage `disney_device_id`), `platform` (coarse, e.g. "iPhone app" / "Windows browser"), `v` (`APP_VERSION`).
-- **Statuses:** `complete` (`endGame()`, including a late "Save it"), `exited` (Exit mid-game — for a daily nothing is committed to stats, so `points` is 0), `abandoned` (an unfinished checkpoint committed by "Start new").
-- **Written** inside the existing `updateStats` transaction (new trailing `logEntry` arg), and for a partial daily exit via `saveRecentQuestionIds(userId, ids, logEntry)`, which uses a small transaction when given an entry (a blind update can't prepend/cap). Not `arrayUnion` — it can't order or cap.
-- **Never fails a save:** Firestore rejects `undefined` field values, so `buildGameLogEntry()` coerces every field to a real value (unit-tested), and `gameLogEntry()` in `app.js` returns `null` (no entry) rather than throw.
-- **Not logged:** a save that never reached Firestore (offline — a later successful "Save it" logs it then), an Exit with 0 answers, and anything about on-screen taps.
-- **Reading it:** `curl -s "https://firestore.googleapis.com/v1/projects/disneytrivia-38ac6/databases/(default)/documents/users/<userId>"`, read-only — first place to look for any "what did they play" report.
-
-## Deploying Changes
-The app is hosted on GitHub Pages from the `main` branch. Use the deploy script:
-
-```powershell
-.\deploy.ps1 -Message "your commit message"
-```
-
-For a multi-line message (e.g. with a Co-Authored-By trailer), write it to a file **outside the repo** (scratchpad) and pass `-MessageFile <path>` — PowerShell 5.1 mangles multi-line/quoted native arguments, and a same-repo file would get swept in by `git add -A`.
-
-In order, `deploy.ps1` (modeled on Offline Trivia's `ship`):
-1. **Untracked-file guard** — lists untracked files and aborts unless `-IncludeUntracked` is passed, so stray scratch/draft files never ride along in an unrelated commit. Check the list, then re-run with the switch when the new files are intended.
-2. **Version bump** — if any of `app.js`, `style.css`, `storage.js`, `game-logic.js`, `index.html` changed vs HEAD and `APP_VERSION` still equals HEAD's, bumps the minor version (1.35 → 1.36). A hand-bump in the same change is respected.
-3. **`?v=` sync** — rewrites every `.js?v=`/`.css?v=` in `index.html` to `APP_VERSION` and asserts they all match. Reads/writes via .NET with UTF-8-no-BOM (PowerShell `Set-Content`/`-replace` would mangle the emoji in `index.html`).
-4. **Gates** (skip with `-SkipChecks`) — `scripts/validate_corpus.py` if anything under `questions/` changed; `node --test test/game-logic.test.js` always (skipped with a warning if node is missing). A failure aborts before anything is staged.
-5. `git add -A`, commit, push. `-DryRun` stops before this step (the bump/sync from steps 2–3 still lands in the working tree).
-
-**Cache-busting:** `index.html` loads `style.css`, `storage.js`, `game-logic.js`, and `app.js` with `?v=` matching `APP_VERSION` (see `app.js` line 1 — not recorded here since every code deploy bumps it). `deploy.ps1` handles it — **don't hand-bump**. The `app.js?v=` change is also what triggers the update-available toast (see above): a deploy that skipped it would never tell already-open apps a new build exists. If you ever must edit `index.html` outside the Edit tool, use `sed`/.NET, not PowerShell `Set-Content`/`-replace`. Question shard files and `movies.json` (fetched via `fetch()`) use `{ cache: 'no-cache' }` and don't need versioning.
-
-**Manual fallback** (skips the bump and gates — only if `deploy.ps1` itself is broken):
-```
-git add -A && git commit -m "your message" && git push
-```
-
-## Regular Game: Answer Order & Repeat Avoidance
-
-**Answer order** is reshuffled fresh every time a question renders (`renderGameQuestion()` in `app.js`, `const indices = shuffle([0, 1, 2, 3])`), using the plain `shuffle()` Fisher-Yates (`Math.random()`-based). This is a correct, unbiased shuffle — verified 2026-07-29 by simulating the exact function 2,000,000 times, which landed the correct answer in each of the 4 display positions ~25.0% of the time. A player *feeling* like the correct answer lands in position A unusually often is expected perceptual pattern-matching on a genuinely random sequence, not a bug — true randomness clusters more than intuition expects. (The daily-review screen, `screen-daily-review`, uses a *different*, deterministic `seededShuffle([0,1,2,3], q.id)` so a question's displayed answer order is stable across repeated views of that review page — this only affects the review screen, not live gameplay, and does not correlate with what order players actually saw during the game.)
-
-**Local per-player repeat avoidance** — `getSeenIds`/`computeSeenIds`/`saveSeenIds` in `app.js` track up to `SEEN_MAX` (currently 300, ~30 games' worth at the default 10 questions/game) most-recently-played question IDs per player in `localStorage` key `disney_seen_{userId}` — **per-device**, like the other `disney_*` localStorage keys; this is what **regular Play Game / Rematch** uses to pick its pool (post difficulty/category filter is split into fresh (unseen) vs. all — if enough fresh questions exist to fill the requested count, only fresh ones are used, otherwise **the exclusion is dropped entirely** for that game rather than partially topping off with repeats; a narrow filter well under ~300 matching questions can therefore serve repeats sooner than the default all-categories setting would). `SEEN_MAX` was 100 originally, raised to 300 on 2026-06-21 (commit `3339707`), briefly tried 500 on 2026-07-29 same-day, then reverted back to 300.
-
-**Recording** happens for both regular games and daily challenges, on full completion (`endGame()`, unconditional) and on mid-game exit with ≥1 answered question — including a partial daily exit, fixed 2026-07-29 (previously only regular-game mid-exit recorded seen-ids; exiting a daily partway through saved progress for resuming but never marked the already-answered questions as seen, so one of them could still show up in a regular game played before the player went back to finish that day's daily).
-
-**Cross-player daily exclusion (added 2026-07-29):** the daily challenge's own selection (`getDailyQuestions`) is deliberately deterministic and identical for every player, so it can't consult any one player's local seen-ids directly — but it needed *some* way to avoid repeating something any player just saw, in any mode. Solution: each player's capped seen-ids list is also mirrored to their own Firestore user doc as `recentQuestionIds` (written inside the same `updateStats` transaction on full completion / regular-game exit; via the standalone `storage.saveRecentQuestionIds()` on a partial daily exit, since nothing else is committed to Firestore at that point). When a brand-new day's pin is generated — `getDailyQuestions(10, 0, excludeIds)` in the `btn-daily-challenge` handler, and the pin-backfill branch that tops up a shard-deleted pinned ID — `dailyExclusionSet()` builds the exclusion set, then that combined set is excluded from the day's pick (falling back to the unexcluded pool if exclusion would leave fewer than the requested count, same pattern as regular-game selection). This only runs at the moment a *new* pin is actually created for the day — every subsequent player that day just reads the already-pinned list, and the daily-review screen's "regenerate from live pool" last-resort fallback deliberately passes no `excludeIds`, since "what's recently seen right now" has no meaning when reconstructing a past day.
-
-**Daily-pin history, independent of play (added 2026-07-31):** `recentQuestionIds`-only exclusion had two gaps — a pinned daily that nobody ever finishes or exits-with-progress never marks its questions seen anywhere, and `recentQuestionIds` is capped at `SEEN_MAX` per user, so heavy regular-game play (which shares the same capped list) can push a genuinely-recent daily question out of the window well before it should be eligible to repeat as a daily. Fix: every day's pinned IDs already live in Firestore `dailies/{dateKey}` regardless of whether anyone plays; `storage.getAllDailyQuestionIds(sinceDateKey)` unions every `questionIds` from `dailies/*` on or after `sinceDateKey`. `dailyExclusionSet()` (`app.js`, formerly `recentlySeenByAnyone()`) unions this with the existing `recentQuestionIds` union before excluding from a new day's pick. This uses the *pin*, not actual play, as the source of truth for "already used as a daily" — so unlike `recentQuestionIds`, it doesn't require anyone to have played.
-
-**Rolling window, not all-time (same day):** an unbounded all-time union was tried first and immediately flagged as unsafe — with a ~2,050-question corpus and 10 new exclusions/day, permanent history exhausts the corpus in ~205 days, and `getDailyQuestions`' fresh/src fallback (`fresh.length >= count ? fresh : shuffled`) doesn't degrade gracefully when that happens: it drops exclusion to *zero* for that day, and since that day's picks then also get saved into `dailies`, the fallback triggers every day thereafter — the whole mechanism silently turns permanently off once saturated. Fixed by capping the lookback to `DAILY_HISTORY_DAYS` (180, `app.js`) — `dailyExclusionSet()` passes `dayKey(180)` as `sinceDateKey`. 180 days keeps ~1,800 IDs excluded at steady state, safely under the corpus size with headroom, while still being far longer than anyone would remember a specific daily's questions. Doc IDs in `dailies` are `"YYYY-MM-DD"`, which sort lexically = chronologically, so the Firestore adapter does the filtering server-side via `.where(FieldPath.documentId(), '>=', sinceDateKey)` instead of reading the whole collection — this also keeps the read cost flat as the app ages instead of growing ~1 doc/day forever.
-
-Why per-user Firestore fields (mirroring each player's own list) rather than one shared "recently used" log: `updateStats` already runs each player's stat update inside its own per-user transaction (existing pattern, avoids the race two simultaneous finishes would hit if they both tried to append to one shared mutable document instead).
-
-Known limitation, accepted rather than engineered around: `computeSeenIds` bases "already seen" purely on *this device's* local list, then overwrites the Firestore field wholesale — so a player switching devices doesn't merge histories, it resets what that device's plays contribute to the shared exclusion set going forward (the *other* player's contributions are untouched, since it's a separate document field). Consistent with this app's existing accepted per-device-state trade-offs (daily progress, mute state, etc.) rather than a new problem introduced here.
-
-Seen-ids are recorded only after a *completed* game or a mid-game exit with at least one answered question — an unsaved/failed game leaves seen-ids untouched so its questions can come back around.
-
-## Daily Challenge
-A second game mode accessible from the settings screen. Always 10 questions, all categories, no difficulty filter. Uses a deterministic seeded shuffle so **all players see the same questions on a given calendar day**.
-
-- Date key: `"YYYY-MM-DD"` via `dayKey(daysAgo=0)` (or the `todayKey()` wrapper), which subtracts 8h from UTC so the day rolls over at 2am MDT (Mountain Daylight Time) = 4am EDT. This ensures both Eastern and Alberta players always share the same question set. `dayKey(1)` gives yesterday using the same offset — do not compute yesterday via string arithmetic.
-- **Pinned question IDs**: When the first player starts the daily challenge, the 10 question IDs are written to `dailies/{dateKey}` in Firestore. Every subsequent player (and the review screen) reads from this doc, so everyone plays the same questions regardless of question deploys that happen later in the day. `getDailyPins(dateKey)` / `claimDailyPins(dateKey, ids)` / `saveDailyPins(dateKey, ids)` in `storage.js`.
-  - **A new day's pin is only ever written via `claimDailyPins`** — a Firestore transaction that writes only if no pin exists yet and returns whichever pin is actually stored; the game-start handler plays what it returns, not its own candidates. If that claim can't reach Firestore, the handler shows an alert and aborts rather than playing an unpinned set. **Why (2026-10-21 incident):** the old handler treated a *failed* `getDailyPins` read (8s×2 timeout on flaky wifi) the same as "no pin yet", generated a fresh set, and plain-`set()` it over the pin Kristen had already played at 09:25 UTC — Cara and another player then got a completely different 10 (zero overlap, since the regenerated pick's exclusion set already contained Kristen's questions). Visible in Firestore as a `dailies/{date}` doc whose `updateTime` ≠ `createTime`. `saveDailyPins` (unconditional `set()`) is now only used by the backfill below, which still has a minor last-writer-wins race between two simultaneous backfills — accepted, it needs a shard deletion and two near-simultaneous starts to matter.
-  - If a pinned ID no longer exists in the shards by the time someone reads it (e.g. it was removed as a duplicate after being pinned), the game-start handler backfills the missing slot(s) from the live pool and re-saves the pins so the day stays at its original count; the review screen instead just omits the missing question (it can't reconstruct what a removed question's text/choices were, so a day whose pins referenced a since-deleted question may show fewer than 10 entries in review — this is expected, not a bug).
-- Seed: `dateToSeed(key)` hashes the string; `seededShuffle()` uses an inline mulberry32 step
-- Questions are stable-sorted by `id` before shuffling so shard load order doesn't affect results
-- Streak (`dailyStreak`, `lastDailyDate`) stored in Firestore on the user doc — cross-device
-- **Replay is blocked** — each player can play the daily exactly once per calendar day. The settings button becomes "📋 Review Today's Questions" after playing; the results-screen Rematch button is hidden for daily games.
-- **Exit (or a killed app) mid-daily → resume, don't restart.** Nothing is committed to Firestore stats until all 10 are answered. Every answer is checkpointed the moment it's tapped (`checkpointGame()`, since v1.35 — before that only the Exit button saved it, so a killed app lost progress) to `localStorage` (`disney_daily_progress_{userId}`, via `saveDailyProgress`/`getDailyProgress`/`clearDailyProgress` in `app.js`, keyed by `gameState.dateKey`, the day the daily belongs to) — not Firestore, so this is per-device, like the other `disney_*` localStorage keys. Re-opening the Daily Challenge (`buildDailyGameState()` → `reconcileDailyProgress()` in game-logic.js) resumes at the next unanswered question with the locked-in answers' score/streak already applied; those questions are never re-shown or re-editable. If a resume's saved answers no longer line up position-by-position with today's pinned questions (e.g. a backfill re-pinned the day after the exit), only the still-matching prefix is kept and the rest is treated as unanswered — never silently miscounted. Progress is cleared only after a successful Firestore save in `endGame()`; if that save fails (offline), progress is kept and the next "Daily Challenge" tap detects the already-complete answer set and retries `endGame()` directly instead of restarting the game. The settings screen shows a "▶️ Resume Daily Challenge (n/10)" state (reading the same localStorage progress) so a mid-exit isn't silently invisible. `endGame()` sets `gameState.ended` as a re-entrancy guard so a double-click on the final question (or two near-simultaneous resume-complete calls) can't double-commit stats.
-- Per-question answers stored in Firestore as `lastDailyAnswers` on first play; shifted to `prevDailyAnswers` when the next day's challenge is played. Used by `screen-daily-review` for both today and yesterday views.
-- Counts toward leaderboard stats just like a regular game
-- `gameState.isDaily = true` when a daily challenge is active; `endGame()` checks this flag
-
-New user doc fields (Firestore): `dailyStreak: number`, `lastDailyDate: "YYYY-MM-DD"`, `lastDailyAnswers: [{questionId, correct, selectedText}]`. Existing docs without these fields default gracefully.
-
-## Weekly Homework
-A tongue-in-cheek "assignment" feature: a Disney/Pixar movie is picked for family movie night, refreshed every Thursday. Movie pool lives in `movies.json`; pick state lives in Firestore `weeklyHomework/state` (see Document shape above). Card shows on `screen-home`.
-
-- **Not seed-derived.** Unlike the daily challenge, the pick is not deterministic from a seed — watched-exclusion and the shuffle veto make it genuinely stateful. `rollHomeworkIfStale()` reads the stored state; if it's absent or belongs to a past week, it rolls to a new one.
-- **Week boundary:** `homeworkWeekKey()` reuses the daily challenge's 8h-UTC-shift trick to roll over at 08:00 UTC = 3am EST / 4am EDT **Thursday**, returning that Thursday's date key. Like the daily challenge, this is a client-triggered check on app load — there is no server-side cron. The new week's movie is picked (and written to Firestore) by whichever player's device happens to load the app first after the boundary passes.
-- **Rollover vs. shuffle — two separate code paths, not a shared helper:**
-  - `rollHomeworkIfStale()` (boot-time, automatic): the outgoing movie is assumed watched ("homework complete") and pushed onto `watchedIds`, then a new movie is drawn from the unwatched pool.
-  - `shuffleHomework()` (manual veto button): draws a new movie excluding `watchedIds` **and** the current pick, but does **not** touch `watchedIds` — a vetoed movie goes back into the pool for a future week.
-- **Pool exhaustion:** if every movie is watched, `pickFromMoviePool()` resets and draws from the full pool again (`watchedIds` cleared in the caller).
-- **Kristen-only shuffle:** the 🔀 Shuffle button (`#btn-shuffle-homework`) is shown only when `currentUser.id === 'kristen'` — i.e. she has actually selected her own card *this session*. It deliberately does not key off `localStorage.disney_last_user`, since that persists across sessions on a shared device and would show the button to anyone opening the app after Kristen last used it, before they'd selected a player at all this session (this caused an accidental shuffle). Still a loose, client-side-only gate consistent with the rest of the app's security model — it's a light veto-power joke for a 2-person household, not access control.
-- **Full movie list:** a `🎬 View Full Movie List` toggle (`#btn-toggle-watched`) expands `#homework-watched-list`, showing the *entire* pool as two groups (current week's pick is excluded from both — it's already shown above):
-  - **✅ Watched** — sorted newest-watched first (`watchedAt` descending), each row has an ✕. Clicking it calls `removeFromWatched(movieId)`, pulling that entry out of `watched` and saving — the movie goes back in the pool for future picks/shuffles.
-  - **🍿 Not Yet Assigned** — everything else, alphabetical, read-only.
-  - **Open to any player, no Kristen gate** on the ✕ (unlike shuffle).
-- Graceful degradation: if `movies.json` or the Firestore read fails, the card just stays hidden (`init()` catches the error separately from question loading so a homework failure never blocks the trivia app itself).
-
-## Sound Effects
-Web Audio API (synthesized, no audio files). Wrapped in the `sounds` IIFE in `app.js`:
-
-- `sounds.correct()` — two-note ascending chime (C5 → E5)
-- `sounds.wrong()` — comedic slide-whistle-down (520Hz → 140Hz frequency ramp via `slide()`, added 2026-08-12; was a flat A3 thud)
-- `sounds.fanfare()` — the opening phrase of "When You Wish Upon a Star" (D4-D5-C#5-B4-G#4-A4-E5, added 2026-08-12; was a generic C-major arpeggio), plays at results screen
-- `sounds.toggle()` — flip muted state; persists in `localStorage` key `disney_sound_muted`
-- Mute button (🔊/🔇) is in the game screen top bar next to Exit
-- A wrong answer also triggers `navigator.vibrate(80)` (`handleAnswer()`, app.js) on devices that support it — no mute gate on this, it's independent of the sound toggle
-
-## Scoring System
-Points are computed by `scoreBreakdown(answers, earnDailyBonus, dailyStreak, awardPerfect = true)` in `game-logic.js` and stored atomically to Firestore inside the `updateStats` transaction. `awardPerfect` is passed `false` only from the mid-game exit handler — otherwise "all answered so far were correct" on a partial (unfinished) set would incorrectly earn the perfect-game bonus. Earning formula:
-
-| Component | Value |
-|---|---|
-| Correct answer — easy | 100 pts |
-| Correct answer — medium | 150 pts |
-| Correct answer — hard | 200 pts |
-| In-game streak bonus (run ≥ 3) | +25 per correct while streak holds |
-| Perfect game (all correct) | +500 pts |
-| Daily challenge completion (first play of day) | +200 pts flat |
-| Daily streak scaling (first play of day) | +10 × min(dailyStreak, 30) |
-
-- `SCORING` constant object in `game-logic.js` holds all values — edit there to rebalance (and update `test/game-logic.test.js`)
-- `scoreBreakdown()` returns `{ base, streakBonus, perfectBonus, dailyBonus, total }`
-- Leaderboard sorts by `totalPoints` descending; percentage is the secondary tiebreaker
-- Results screen shows full breakdown when more than one component contributed
-- Exiting mid-game awards base + streak bonus for answered questions only, no perfect/daily bonus
-
-## Key app.js Globals
-| Variable | What it holds |
-|---|---|
-| `QUESTIONS` | Flat array of all question objects, populated at boot by `loadQuestions()` |
-| `MOVIES` | Flat array of all movie objects, populated at boot by `loadMovies()` |
-| `currentUser` | The user object selected on the home screen |
-| `gameSettings` | `{ difficulty, categories[], questionCount }` — set on settings screen |
-| `gameState` | `{ questions[], currentIndex, answers[], score, currentStreak, isDaily, pointsEarned, scoreBreakdown, dateKey?, ended? }` — active game. `dateKey` is set for dailies (the day the daily belongs to, so a checkpoint written past the 2am rollover still matches); `ended` is endGame()'s re-entrancy guard |
-| `shuffledOpts` | `[{text, originalIndex}]` — display order for current question's answers |
-| `homeworkState` | `{ weekKey, movieId, pickedAt, watched: [{id, watchedAt}] }` — this week's Weekly Homework pick, mirrors Firestore `weeklyHomework/state` |
-
-## Styling Conventions
-- CSS variables defined in `:root` at the top of `style.css` — use these, don't hardcode colors
-- Key variables: `--bg`, `--bg-card`, `--bg-hover`, `--border`, `--primary`, `--gold`, `--green`, `--red`, `--text`, `--muted`
-- Border-radius variables: `--r` (cards), `--r-sm` (buttons/inputs)
-- All new screens follow the pattern: `.screen` div → `screen-header` → content → actions at bottom
-- Mobile-first. Max width 480px centered. Test at 375px (iPhone SE) as the floor.
-
-## Accessibility (added 2026-08)
-- `showScreen(id)` (`app.js`) moves focus to the new screen's `h1`/`h2` (falling back to the screen `<div>` itself if it has none) on every navigation, adding `tabindex="-1"` the first time so it's focusable without joining the normal Tab order. This announces screen changes to screen-reader users instead of leaving focus stranded on a now-hidden button.
-- `renderGameQuestion()` additionally focuses `#question-text` (also `tabindex="-1"`) on every call — each new question is effectively its own "screen" for a screen reader, and `showScreen('screen-game')` only fires once per game, not once per question.
-- `style.css` suppresses the default `:focus` outline on any `tabindex="-1"` element (`[tabindex="-1"]:focus { outline: none; }`) since these are reachable only by script, never by Tab — the browser's default ring there would just be visual noise on every screen change, not a real keyboard cue. Real interactive elements (buttons/pills/inputs) keep their existing `:focus-visible` gold outline, unaffected.
-- The confirm sheet (`showConfirm()`) is a real modal: `role="dialog" aria-modal="true"` with `aria-labelledby`/`aria-describedby`, `#app` set `inert` while open, focus moved to Cancel (the safe default) and restored afterwards, Tab cycling between its two buttons, Escape dismissing.
-- `#feedback-msg` (correct/wrong text) and `#flag-thanks` (flag-report confirmation) both have `role="status" aria-live="polite"`. `handleAnswer()` unhides `#feedback-area` *before* setting `feedbackMsg.textContent` — a screen reader won't reliably announce a text change to a node that was still `display:none` at the moment the change happened, so the unhide has to come first for the live region to actually fire.
-
-## Players
-Default users seeded on first load: **Kristen** and **Cara**. Seeding is in `FirebaseAdapter._seed()` — it checks if the doc exists before writing, so it's safe to run on every page load. Do not remove them from the seed.
-
-## Question Quality Rules (Lessons from Audits)
-
-These rules were derived from real mistakes found during shard audits. Follow them every time questions are generated.
-
-**Before adding any new question:**
-1. **Cross-shard duplicate check** — Grep all shard files for key terms (character name, attraction name, film title) before writing. Because shards are one-question-per-line, each Grep hit shows the full question + answers — no need to open the file. Questions about the same topic often exist already. Easy/obvious topics (Mickey's dog, Donald's nephews, Tinker Bell's dress color, Simba's father) are almost certainly covered — check first. Also check the Per-film coverage map above: if a film is Saturated (≥20), skip it unless the angle is clearly distinct from what's there.
-
-**Answer structure:**
-2. **Never embed the answer in the question text.** If the question says "What type of animal is Geppetto's cat?" and the answer is "Figaro is a kitten," the word "cat" telegraphs the answer. Ask "What is the name of Geppetto's kitten?" instead.
-3. **Keep answers concise and parallel.** Prefer short noun phrases for identification questions. Why/what-happens questions may use explanatory answers if all four options have comparable form and length; avoid making the correct answer uniquely elaborate.
-4. **Never use "All of the above" as a wrong answer** if all the listed options could plausibly be correct. Verify that wrong answers are actually wrong before using them.
-5. **Wrong answers must be wrong.** If a question lists three "wrong" options and all three happen to be correct real-world answers, the question is broken. Replace them with genuinely incorrect options.
-
-**Factual accuracy:**
-6. **Avoid time-sensitive superlatives.** Phrases like "newest," "latest," or "most recent" become false when new things launch. Name the specific year instead: "the ship that launched in 2022" rather than "the newest ship."
-7. **Verify ride/attraction names and statuses.** Names, branding and operating status change. Use current official evidence or explicitly anchor the question to a historical date; schedule a recheck for changing facts.
-8. **Verify ship-specific facts.** DCL restaurant and venue names vary by ship (After Hours on Magic/Wonder, The District on Dream, Europa on Fantasy, Enchanté on Wish). Never write a question about "the adult area on Disney ships" — pin it to a specific ship.
-
-**Category:**
-9. **Pixar films use `pixar`, not `movies`.** Brave, Coco, Up, Inside Out, Finding Dory, Onward, Luca, Elemental, Toy Story, Monsters Inc., A Bug's Life, Cars, Ratatouille, WALL-E — all are `pixar`. If in doubt, check whether Pixar Animation Studios is the credited studio.
-
-**Content balance:**
-10. **Direct-to-video sequels, shorts, and made-for-TV movies are secondary content — soft-capped at ~8–10 questions per title**, not a floor to fill just because they're unmined. `find_gaps.py --sequels` (or the tracked list in `scripts/_common.py:SEQUELS_AND_SHORTS`) showing a title at or near zero is not, by itself, a reason to draft for it — a title already near the cap should only take another question for a fact that's clearly exceptional, the same bar a Saturated theatrical film gets under rule 1. When choosing what to research next, default to theatrical/main-canon gaps (going deeper on a Saturated film per rule 1, or filling an Under-covered one) over topping up a low-coverage sequel/short. See the Per-film coverage map's 2026-07-29 policy note for the rationale.
-
-## What NOT to Do
-- Do not introduce a build step, bundler, or npm unless explicitly asked
-- Do not add a backend or server — this is intentionally fully static
-- Do not store derived values (percentages) — always compute from raw counters
-- Do not add TV show questions
-- Do not reuse question IDs
+- No bundler/framework/build step; no backend server.
+- Don't store derived values (percentages).
+- Don't reuse question IDs or hard-delete questions.
+- Don't switch the real `storage.js` to `LocalStorageAdapter` to test.
+- Don't add accounts/passwords.
+- Don't reintroduce native `confirm()`/`alert()` in the player app (use `showConfirm()`).

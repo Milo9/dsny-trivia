@@ -1,6 +1,6 @@
 """
 Novelty gap-finder: surfaces content the bank is most likely still missing,
-per the "richest under-mined veins" note in CLAUDE.md's content generation
+per the "richest under-mined veins" note in docs/history/CLAUDE-through-v1.50.md's content generation
 strategy section.
 
 Two signals:

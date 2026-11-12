@@ -1,5 +1,5 @@
 """
-Whole-corpus scan for CLAUDE.md rule #2 (answer leaked into the question
+Whole-corpus scan for docs/history/CLAUDE-through-v1.50.md rule #2 (answer leaked into the question
 text) using the shared two-tier detector in _common.py's find_answer_leaks().
 
 This exists because the check that caught 3 leaks in the 2026-07-29 quality

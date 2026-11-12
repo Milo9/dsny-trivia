@@ -1,5 +1,5 @@
 """
-Compact recon digest for the grep-first dedup workflow in CLAUDE.md.
+Compact recon digest for the grep-first dedup workflow in docs/history/CLAUDE-through-v1.50.md.
 
 Prints "#id [cat/diff]  question" for every question matching a
 keyword/regex, instead of the full 4-answer object a Grep hit returns --

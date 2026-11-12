@@ -6,7 +6,7 @@ Checks: valid JSON, required fields present, id type/uniqueness (against
 both the existing corpus and within the batch itself), difficulty/category
 enum membership, exactly 4 answers, exact-duplicate question text against
 the corpus, and advisory heuristics for the "Answer structure" rules in
-CLAUDE.md: answers that read like sentences rather than short noun phrases,
+docs/history/CLAUDE-through-v1.50.md: answers that read like sentences rather than short noun phrases,
 plus a two-tier answers[0]-leaked-into-the-question check (see
 find_answer_leaks() in _common.py -- tier 1 is a verbatim substring match,
 tier 2 catches morphological variants and partial-phrase overlaps a

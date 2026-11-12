@@ -156,7 +156,7 @@ tests. App deployment uses `deploy.ps1`; rules require a separate authenticated
 Firebase deployment. See `SECURITY.md` for the password-free access tradeoff and
 rule deployment command. The app and rules should be deployed together.
 
-Older historical sections in `CLAUDE.md` describe previous versions. This file
+Older historical notes (archived from CLAUDE.md) live in `docs/history/CLAUDE-through-v1.50.md`. This file
 and the current code take precedence for the behaviors changed in v1.39.
 
 ## Completed verification — October 29, 2026
