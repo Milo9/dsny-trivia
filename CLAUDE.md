@@ -97,7 +97,8 @@ deleting a line. Full procedure: QUESTION_AUDIT.md.
   bump: set `APP_VERSION` +1 in app.js yourself so installed apps refresh their offline
   bank; the script then syncs everything else.
 - `question_audit.py check` fails once a scheduled recheck is overdue, which blocks
-  deploy and CI (see backlog #5).
+  deploy and CI. `status` shows the upcoming recheck calendar; tiers are in
+  QUESTION_AUDIT.md rule 7.
 
 ## Diagnosing player reports (read-only)
 

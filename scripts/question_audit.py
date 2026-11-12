@@ -8,7 +8,7 @@ See QUESTION_AUDIT.md for the editorial procedure and command examples.
 import argparse
 import copy
 from collections import Counter, defaultdict
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 import hashlib
 import json
 from pathlib import Path
@@ -25,6 +25,9 @@ ROOT = Path(BASE)
 CHECKS = ('singleAnswer', 'context', 'wording', 'noGiveaway', 'distinctFact',
           'category', 'difficulty', 'scope')
 EVIDENCE_BASES = ('direct', 'contradiction', 'exclusive-inference', 'exhaustive-list')
+# QUESTION_AUDIT.md rule 7: longest recheck interval, in days from the evidence date.
+# 'historical' (date-anchored or past-event) facts take no recheck at all.
+RECHECK_TIERS = {'changeable': 92, 'stable': 366}
 CHANGE_TYPES = ('factual', 'clarification', 'distractors', 'explanation',
                 'difficulty', 'category', 'scope', 'metadata')
 RISK_PATTERNS = {
@@ -107,6 +110,9 @@ def validate_review(review, as_of):
             errors.append('nextReviewAt must be a real date after the review date')
         if verified.get('timeSensitive') and due is None:
             errors.append('changing facts require nextReviewAt')
+        if valid_date(due) and valid_date(review.get('at')) and \
+                (date.fromisoformat(due)-date.fromisoformat(review['at'])).days > RECHECK_TIERS['stable']:
+            errors.append('nextReviewAt must fall within 12 months of the review (rule 7)')
         if review.get('schema') == 2:
             premise = verified.get('premise', {})
             if not isinstance(premise, dict) or not nonblank(premise.get('reason')) \
@@ -180,6 +186,24 @@ def record_reviews(corpus, ledger, reviews, as_of):
             entry['history'].append({'hash': entry['hash'], 'review': entry['review']})
         entry['review'] = copy.deepcopy(review)
     return updated
+
+
+def evidence_date(review):
+    """Earliest recorded source inspection behind a review, else the review date."""
+    verified = review.get('verification') or {}
+    parts = [verified.get('premise') or {}] + [o for o in verified.get('options') or [] if isinstance(o, dict)]
+    dates = [s['checkedAt'] for part in parts if isinstance(part, dict) for s in part.get('sources') or []
+             if isinstance(s, dict) and valid_date(s.get('checkedAt'))]
+    return min(dates + [review['at']])
+
+
+def recheck_calendar(report, as_of, months=12):
+    """Scheduled factual rechecks per month, so a due wave is visible before the gate fails."""
+    dues = [q['nextReviewAt'] for q in report['questions'] if q.get('nextReviewAt')]
+    horizon = (date.fromisoformat(as_of)+timedelta(days=31*months)).isoformat()
+    upcoming = Counter(d[:7] for d in dues if as_of < d <= horizon)
+    return {'overdue': sum(d <= as_of for d in dues), 'byMonth': dict(sorted(upcoming.items())),
+            'later': sum(d > horizon for d in dues)}
 
 
 def current_review(entry, q, as_of):
@@ -420,16 +444,21 @@ def gate_errors(corpus, ledger, baseline, as_of, findings=None):
 
 def valid_retirement(record, snapshot=None, as_of=None):
     if not isinstance(record, dict) or not all(nonblank(record.get(k)) for k in ('reviewer', 'reason', 'reference', 'retiredHash')) \
-            or not valid_date(record.get('at')) or type(record.get('replacedBy')) is not int \
-            or not isinstance(record.get('replacementSnapshot'), dict) \
-            or type(record.get('retiredId')) is not int or record['retiredId'] == record['replacedBy'] \
+            or not valid_date(record.get('at')) or type(record.get('retiredId')) is not int \
             or (as_of is not None and record['at'] > as_of):
         return False
-    replacement = record['replacementSnapshot']
-    if record['replacedBy'] != replacement.get('id') or record.get('replacementHash') != digest(replacement) \
-            or not nonblank(replacement.get('question')) or not isinstance(replacement.get('answers'), list) \
-            or len(replacement['answers']) != 4 or not all(nonblank(a) for a in replacement['answers']):
-        return False
+    if record.get('replacedBy') is None:
+        # Retired without a replacement (e.g. not worth its recheck upkeep).
+        if record.get('replacementSnapshot') is not None or record.get('replacementHash') is not None:
+            return False
+    else:
+        replacement = record.get('replacementSnapshot')
+        if type(record['replacedBy']) is not int or record['retiredId'] == record['replacedBy'] \
+                or not isinstance(replacement, dict) \
+                or record['replacedBy'] != replacement.get('id') or record.get('replacementHash') != digest(replacement) \
+                or not nonblank(replacement.get('question')) or not isinstance(replacement.get('answers'), list) \
+                or len(replacement['answers']) != 4 or not all(nonblank(a) for a in replacement['answers']):
+            return False
     if snapshot is not None:
         original = {k: v for k, v in snapshot.items() if k != 'replacedBy'}
         if record['retiredId'] != snapshot.get('id') or record['retiredHash'] != digest(original) \
@@ -549,12 +578,17 @@ def main(argv=None):
     many = sub.add_parser('record-many', help='Validate all supplied reviews before one ledger write')
     many.add_argument('files', nargs='+', type=Path)
     for command in ('retire', 'record-retirement'):
-        retirement = sub.add_parser(command, help='Preserve a duplicate snapshot and evidence, or document an existing retirement')
+        retirement = sub.add_parser(command, help='Preserve a retired snapshot and evidence, or document an existing retirement')
         retirement.add_argument('id', type=int)
-        retirement.add_argument('--replaced-by', type=int, required=True)
+        replacement = retirement.add_mutually_exclusive_group(required=True)
+        replacement.add_argument('--replaced-by', type=int, help='Active question that keeps the fact (duplicates)')
+        replacement.add_argument('--no-replacement', action='store_true',
+                                 help='Retire without a replacement, e.g. not worth its recheck upkeep')
         retirement.add_argument('--reviewer', required=True)
         retirement.add_argument('--reason', required=True)
         retirement.add_argument('--reference', required=True)
+    reschedule = sub.add_parser('reschedule', help='Re-tier recheck dates of current reviews (rule 7); evidence unchanged')
+    reschedule.add_argument('file', type=Path)
     sub.add_parser('recover-retirement', help='Roll back a process-interrupted retirement transaction')
     classify = sub.add_parser('classify', help='Classify an edit without implying source approval')
     classify.add_argument('id', type=int)
@@ -636,13 +670,22 @@ def main(argv=None):
             from question_audit_operations import retire_question
             retire_question(ROOT, args.ledger, args.id, args.replaced_by, args.reviewer, args.reason,
                             args.reference, as_of, preserved=args.command == 'record-retirement')
-            print(f'Retirement #{args.id} -> #{args.replaced_by} recorded; original snapshot and history preserved.')
+            target = f'#{args.replaced_by}' if args.replaced_by is not None else 'no replacement'
+            print(f'Retirement #{args.id} -> {target} recorded; original snapshot and history preserved.')
             # Structural checks and fresh warnings immediately follow the mutation.
             if validate_corpus():
                 return 1
             refreshed = audit_report(load_corpus(), read_json(args.ledger), baseline, as_of)
             write_json(ROOT/'artifacts/question-audit.json', refreshed)
             print(f"Refreshed report: {len(refreshed['openFindings'])} advisory findings; review applicable decisions before closing.")
+        elif args.command == 'reschedule':
+            from question_audit_operations import reschedule_reviews
+            request = read_json(args.file)
+            updated = reschedule_reviews(corpus, ledger, request, as_of)
+            write_json(args.ledger, updated)
+            tiers = Counter(item['tier'] for item in request['items'])
+            print(f"Rescheduled {len(request['items'])} recheck(s): "+', '.join(f'{k} {v}' for k, v in sorted(tiers.items()))
+                  + '; recorded evidence unchanged, sources not re-inspected.')
         elif args.command == 'classify':
             from question_audit_operations import classify_change
             updated = classify_change(corpus, ledger, args.id, args.types, args.reviewer,
@@ -714,6 +757,10 @@ def main(argv=None):
                 state = prepare_next(ROOT, corpus, ledger, report, as_of,
                                      getattr(args, 'size', None), preview=preview)
                 print_status(state, preview=preview)
+                calendar = recheck_calendar(report, as_of)
+                print(f"Scheduled rechecks: {calendar['overdue']} overdue; next 12 months "
+                      + (', '.join(f'{m}: {n}' for m, n in calendar['byMonth'].items()) or 'none')
+                      + f"; {calendar['later']} later.")
             elif args.command == 'report':
                 from question_audit_compact import finding_changes
                 changes = finding_changes(read_json(args.since), report) if args.since else None

@@ -110,8 +110,23 @@ For every new or edited question, and every question selected for a factual audi
    theatrical coverage; sequels/shorts/made-for-TV remain secondary, soft-capped at
    roughly 8–10 questions/title. Coverage counts are approximate signals, not quotas.
 7. Avoid unbounded current-status claims. State the historical date where useful.
-   Explicitly mark whether the fact can change and give changing facts a next review
-   date (normally within 90 days, sooner around announced openings/launches).
+   Explicitly mark whether the fact can change, and set the recheck by tier (counted
+   from the evidence date, i.e. when the sources were inspected):
+   - **historical**: wording anchored to a date ("In November 2026, …") or a past
+     event (built in, opened in, debuted on, replaced in YEAR). `timeSensitive: false`,
+     no recheck. Prefer anchoring a dated stem over a short recheck cycle when it
+     reads naturally.
+   - **stable**: long-standing names, locations, designs and ride systems that
+     change only with announced projects. Recheck within **12 months**.
+   - **changeable**: offerings, menus/meal periods, show or ship assignments, age
+     and other policies, seasonal listings, anything with an announced closure,
+     refurbishment or opening. Recheck within **~90 days**, sooner around
+     announced dates.
+   When unsure, use the shorter tier. Stagger dates so rechecks arrive in
+   session-sized groups (about 50 a month), grouping related topics together
+   because they often share sources. The validator rejects any `nextReviewAt` more than 12
+   months after the review. Questions whose upkeep outweighs their value (e.g.
+   about a single listing) can be retired without a replacement instead.
 8. Run the structural check and audit report again **after every content fix**.
    Review fresh warnings and renew the review on the final wording. Do not resolve
    a player flag until its fix is present in the published version.
@@ -206,6 +221,8 @@ Use the supported commands instead of temporary shard-editing scripts:
 python scripts/question_audit.py retire 123 --replaced-by 456 --reviewer REVIEWER --reason "Same character-object fact in reverse; retain the more precise question." --reference audit/runs/comparison-123-456.json
 python scripts/question_audit.py recover-retirement
 python scripts/question_audit.py record-retirement 123 --replaced-by 456 --reviewer REVIEWER --reason "Document the already-preserved duplicate decision." --reference audit/runs/comparison-123-456.json
+python scripts/question_audit.py retire 321 --no-replacement --reviewer REVIEWER --reason "Asks about a single dated listing; not worth its recheck upkeep." --reference audit/runs/notes.md
+python scripts/question_audit.py reschedule audit/runs/YYYY-MM-DD-recheck-reschedule.json
 python scripts/question_audit.py classify 789 --type clarification --type difficulty --reviewer REVIEWER --reason "Specified the film version and calibrated recall difficulty." --reference audit/runs/review-789.json
 ```
 
@@ -214,6 +231,21 @@ python scripts/question_audit.py classify 789 --type clarification --type diffic
 then rerun sync/report/check. `record-retirement` documents an existing intact
 snapshot without changing it. Both retirement commands require the actual
 duplicate comparison; moving a question is not evidence that it was audited.
+`--no-replacement` (instead of `--replaced-by`) retires a question that duplicates
+nothing, e.g. one not worth its recheck upkeep; its snapshot has no `replacedBy`.
+
+`reschedule` re-tiers the recheck of current, not-yet-due reviews under rule 7
+without touching evidence. Its file is `{"schema": 1, "reviewer": "...", "items":
+[{"questionId": 1, "tier": "historical|stable|changeable", "nextReviewAt":
+"YYYY-MM-DD" or null, "reason": "..."}]}`. Only `timeSensitive`/`nextReviewAt`
+change. The prior review moves to history, and the new one gains a `schedule`
+record (tier, reason, actor, evidence date, previous values,
+`sourcesReinspected: false`). Dates are capped at the tier interval from the
+earliest recorded `checkedAt`, and a due recheck is refused: perform it instead
+(a new `record-many` review on re-inspected sources). Moving a date to get past
+the gate, without a volatility reason, is not allowed.
+`status` prints the upcoming rechecks per month so a wave is visible early.
+First use: audit/runs/2026-11-12-recheck-tiers-notes.md.
 
 Classify each edited retained question before closing the plan. Supported types
 are `factual`, `clarification`, `distractors`, `explanation`, `difficulty`, `category`,

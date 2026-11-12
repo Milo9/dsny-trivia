@@ -71,13 +71,15 @@ def commit_retirement(root, changes):
 
 
 def retirement_record(original, replacement, reviewer, reason, reference, as_of):
+    """replacement is the active question keeping the fact, or None (no replacement)."""
     from question_audit import digest, nonblank
     if not all(nonblank(v) for v in (reviewer, reason, reference)):
-        raise ValueError('retirement needs reviewer, duplicate rationale and evidence reference')
-    if original['id'] == replacement['id']:
+        raise ValueError('retirement needs reviewer, rationale and evidence reference')
+    if replacement is not None and original['id'] == replacement['id']:
         raise ValueError('a retired question cannot replace itself')
     return {'retiredId': original['id'], 'retiredHash': digest(original),
-            'replacedBy': replacement['id'], 'replacementHash': digest(replacement),
+            'replacedBy': replacement['id'] if replacement else None,
+            'replacementHash': digest(replacement) if replacement else None,
             'replacementSnapshot': copy.deepcopy(replacement), 'reviewer': reviewer.strip(),
             'reason': reason.strip(), 'reference': reference.strip(), 'at': as_of}
 
@@ -94,20 +96,21 @@ def retire_question(root, ledger_path, qid, replacement_id, reviewer, reason, re
     ledger = audit.read_json(ledger_path)
     corpus = [q for _, qs in shards for q in qs]
     by_id = {q['id']: q for q in corpus}
-    if replacement_id not in by_id:
+    if replacement_id is not None and replacement_id not in by_id:
         raise ValueError('replacement must be an active question')
     if preserved:
         if qid in by_id:
             raise ValueError('record-retirement requires an already retired question; use retire')
         snapshot = next((q for q in retired if q['id'] == qid), None)
-        if snapshot is None or snapshot.get('replacedBy') != replacement_id:
+        if snapshot is None or snapshot.get('replacedBy') != replacement_id:  # both None without replacement
             raise ValueError('preserved snapshot/replacedBy does not match')
         original = {k: v for k, v in snapshot.items() if k != 'replacedBy'}
     else:
         if qid not in by_id or any(q['id'] == qid for q in retired):
             raise ValueError('retire requires an active ID absent from retired snapshots')
         original = by_id[qid]
-    record = retirement_record(original, by_id[replacement_id], reviewer, reason, reference, as_of)
+    replacement = by_id[replacement_id] if replacement_id is not None else None
+    record = retirement_record(original, replacement, reviewer, reason, reference, as_of)
     entry = ledger.get('questions', {}).get(str(qid), {})
     expected = entry.get('hash') or audit.read_json(root/'audit/baseline.json').get('questions', {}).get(str(qid))
     if expected and expected != audit.digest(original):
@@ -120,7 +123,7 @@ def retire_question(root, ledger_path, qid, replacement_id, reviewer, reason, re
     serialize = lambda value: json.dumps(value, ensure_ascii=False, indent=2)+'\n'
     changes = {ledger_path: serialize(ledger)}
     if not preserved:
-        retired.append(dict(copy.deepcopy(original), replacedBy=replacement_id))
+        retired.append(dict(copy.deepcopy(original), **({'replacedBy': replacement_id} if replacement_id is not None else {})))
         changes[retired_path] = serialize(retired)
         path, qs = next((path, qs) for path, qs in shards if any(q['id'] == qid for q in qs))
         remaining = [q for q in qs if q['id'] != qid]
@@ -156,3 +159,66 @@ def save_completion(path, result):
             if not archive.exists():
                 write_json(archive, previous)
     write_json(path, result)
+
+
+SCHEDULE_TIERS = ('historical', 'stable', 'changeable')
+
+
+def reschedule_reviews(corpus, ledger, request, as_of):
+    """Re-tier recheck dates of current reviews under rule 7, without touching evidence.
+
+    Only timeSensitive/nextReviewAt change. The prior review moves to history and the
+    new one carries a 'schedule' record stating the tier, reason, actor and that no
+    source was re-inspected. Due rechecks must be performed, not rescheduled; the new
+    date is bounded by the tier interval from the recorded evidence date. Validates
+    every item before returning a changed copy (no partial writes).
+    """
+    from datetime import date, timedelta
+    from question_audit import (RECHECK_TIERS, current_review, evidence_date, nonblank,
+                                valid_date, validate_review)
+    if not isinstance(request, dict) or request.get('schema') != 1 or not nonblank(request.get('reviewer')) \
+            or not isinstance(request.get('items'), list) or not request['items']:
+        raise ValueError('reschedule file needs schema 1, a reviewer and a nonempty items array')
+    by_id = {q['id']: q for q in corpus}
+    updated = copy.deepcopy(ledger)
+    seen = set()
+    for item in request['items']:
+        qid = item.get('questionId') if isinstance(item, dict) else None
+        if type(qid) is not int or qid not in by_id:
+            raise ValueError(f'#{qid}: not an active question')
+        if qid in seen:
+            raise ValueError(f'#{qid}: listed twice')
+        seen.add(qid)
+        tier, due = item.get('tier'), item.get('nextReviewAt')
+        if tier not in SCHEDULE_TIERS:
+            raise ValueError(f'#{qid}: tier must be one of {", ".join(SCHEDULE_TIERS)}')
+        if not nonblank(item.get('reason')):
+            raise ValueError(f'#{qid}: a volatility reason is required')
+        entry = updated['questions'].get(str(qid), {})
+        review = current_review(entry, by_id[qid], as_of)
+        if not review or not review.get('verification'):
+            raise ValueError(f'#{qid}: needs a current source-verified review to reschedule')
+        previous = {k: review['verification'].get(k) for k in ('timeSensitive', 'nextReviewAt')}
+        if previous['nextReviewAt'] and previous['nextReviewAt'] <= as_of:
+            raise ValueError(f'#{qid}: recheck is already due; perform it instead of rescheduling')
+        if tier == 'historical':
+            if due is not None:
+                raise ValueError(f'#{qid}: historical facts take no recheck date')
+        else:
+            if not valid_date(due) or due <= as_of:
+                raise ValueError(f'#{qid}: {tier} needs a future nextReviewAt')
+            limit = date.fromisoformat(evidence_date(review)) + timedelta(days=RECHECK_TIERS[tier])
+            if date.fromisoformat(due) > limit:
+                raise ValueError(f'#{qid}: {tier} recheck must fall by {limit.isoformat()} '
+                                 f'({RECHECK_TIERS[tier]} days after the evidence date)')
+        new = copy.deepcopy(review)
+        new['verification'].update(timeSensitive=tier != 'historical', nextReviewAt=due)
+        new['schedule'] = {'tier': tier, 'reason': item['reason'].strip(), 'reviewer': request['reviewer'].strip(),
+                           'at': as_of, 'evidenceDate': evidence_date(review), 'sourcesReinspected': False,
+                           'previous': previous}
+        errors = validate_review(new, as_of)
+        if errors:
+            raise ValueError(f'#{qid}: ' + '; '.join(errors))
+        entry['history'].append({'hash': entry['hash'], 'review': entry['review']})
+        entry['review'] = new
+    return updated

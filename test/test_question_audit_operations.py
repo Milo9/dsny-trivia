@@ -261,6 +261,19 @@ class RetirementAndReportingTests(unittest.TestCase):
         self.assertEqual(partial['scopeCounts']['unresolved'], 1)
         with self.assertRaises(ValueError): audit.completion_report(plan, report, self.qs[1:], retired, AS_OF, 'T')
 
+    def test_retirement_without_replacement_preserves_snapshot_and_stays_valid(self):
+        record = operations.retire_question(self.root, self.ledger_path, 1, None, 'Tester',
+            'Short-lived listing; not worth its recheck upkeep.', 'audit/notes.md', AS_OF)
+        self.assertIsNone(record['replacedBy']); self.assertIsNone(record['replacementSnapshot'])
+        snapshot = audit.read_json(self.root/'questions/retired.json')[0]
+        self.assertEqual(snapshot, self.qs[0])
+        self.assertTrue(audit.valid_retirement(record, snapshot, AS_OF))
+        self.assertFalse(audit.valid_retirement(dict(record, replacementHash='x'), snapshot, AS_OF))
+        self.assertFalse(audit.valid_retirement(record, dict(snapshot, replacedBy=2), AS_OF))
+        before = (self.root/'questions/retired.json').read_bytes()
+        operations.retire_question(self.root, self.ledger_path, 1, None, 'Tester', 'again', 'ref', AS_OF, preserved=True)
+        self.assertEqual((self.root/'questions/retired.json').read_bytes(), before)
+
     def test_retirement_packet_contains_both_complete_question_objects(self):
         self.retire(); ledger=audit.read_json(self.ledger_path)
         report=audit.audit_report(self.qs[1:],ledger,{'questions':{}},AS_OF,[])
@@ -371,6 +384,75 @@ class RetirementAndReportingTests(unittest.TestCase):
         ledger=audit.read_json(self.ledger_path); fid=next(iter(ledger['issues']))
         self.assertEqual(self.main(['decide',fid,'accepted','--reviewer','T','--reason','Claimed false alarm.','--reference','ref']),1)
         self.assertEqual(audit.read_json(self.ledger_path)['decisions'][fid]['status'],'unresolved')
+
+
+class RescheduleTests(unittest.TestCase):
+    """Rule 7 tiers: re-dating changes only the schedule, never the evidence."""
+    def setUp(self):
+        self.qs = [question(1), question(2), question(3)]
+        self.ledger = ledger_for(self.qs)
+        for q in self.qs:
+            self.ledger['questions'][str(q['id'])]['review'] = reviewed(q, True, '2026-12-01')
+        self.as_of = '2026-11-15'
+
+    def run_items(self, *items, ledger=None):
+        return operations.reschedule_reviews(self.qs, ledger or self.ledger,
+                                             {'schema': 1, 'reviewer': 'Tester', 'items': list(items)}, self.as_of)
+
+    def test_tiers_update_only_schedule_and_keep_prior_review_in_history(self):
+        updated = self.run_items({'questionId': 1, 'tier': 'historical', 'nextReviewAt': None, 'reason': 'Dated stem.'},
+                                 {'questionId': 2, 'tier': 'stable', 'nextReviewAt': '2027-10-01', 'reason': 'Long-standing name.'},
+                                 {'questionId': 3, 'tier': 'changeable', 'nextReviewAt': '2027-01-20', 'reason': 'Show listing.'})
+        for qid, sensitive, due in ((1, False, None), (2, True, '2027-10-01'), (3, True, '2027-01-20')):
+            entry, old = updated['questions'][str(qid)], self.ledger['questions'][str(qid)]['review']
+            new = entry['review']
+            self.assertEqual((new['verification']['timeSensitive'], new['verification']['nextReviewAt']), (sensitive, due))
+            self.assertFalse(new['schedule']['sourcesReinspected'])
+            self.assertEqual(new['schedule']['previous'], {'timeSensitive': True, 'nextReviewAt': '2026-12-01'})
+            self.assertEqual(entry['history'][-1]['review'], old)
+            strip = lambda r: {**{k: v for k, v in r.items() if k not in ('schedule', 'verification')},
+                               'verification': {k: v for k, v in r['verification'].items() if k not in ('timeSensitive', 'nextReviewAt')}}
+            self.assertEqual(strip(new), strip(old))
+            self.assertIsNotNone(audit.current_review(entry, self.qs[qid-1], self.as_of))
+        self.assertEqual(self.ledger['questions']['1']['review']['verification']['nextReviewAt'], '2026-12-01')
+
+    def test_tier_limits_count_from_the_evidence_date(self):
+        # AS_OF is the evidence date: stable allows 366 days, changeable 92.
+        self.assertTrue(self.run_items({'questionId': 2, 'tier': 'stable', 'nextReviewAt': '2027-11-02', 'reason': 'r'}))
+        bad = [{'questionId': 2, 'tier': 'stable', 'nextReviewAt': '2027-11-03', 'reason': 'r'},
+               {'questionId': 3, 'tier': 'changeable', 'nextReviewAt': '2027-02-02', 'reason': 'r'},
+               {'questionId': 1, 'tier': 'historical', 'nextReviewAt': '2027-01-01', 'reason': 'r'},
+               {'questionId': 1, 'tier': 'stable', 'nextReviewAt': self.as_of, 'reason': 'r'},
+               {'questionId': 1, 'tier': 'weekly', 'nextReviewAt': '2027-01-01', 'reason': 'r'},
+               {'questionId': 1, 'tier': 'stable', 'nextReviewAt': '2027-01-01', 'reason': ' '},
+               {'questionId': 99, 'tier': 'historical', 'nextReviewAt': None, 'reason': 'r'}]
+        for item in bad:
+            with self.subTest(item=item), self.assertRaises(ValueError):
+                self.run_items(item)
+
+    def test_older_source_inspection_shortens_the_window(self):
+        r = self.ledger['questions']['2']['review']
+        r['verification']['premise']['sources'][0]['checkedAt'] = '2026-09-01'
+        with self.assertRaisesRegex(ValueError, '2027-09-02'):
+            self.run_items({'questionId': 2, 'tier': 'stable', 'nextReviewAt': '2027-10-01', 'reason': 'r'})
+
+    def test_due_rechecks_are_performed_not_rescheduled_and_batch_is_all_or_nothing(self):
+        self.as_of = '2026-12-01'
+        with self.assertRaisesRegex(ValueError, 'already due'):
+            self.run_items({'questionId': 1, 'tier': 'historical', 'nextReviewAt': None, 'reason': 'r'})
+        self.as_of = '2026-11-15'
+        before = copy.deepcopy(self.ledger)
+        with self.assertRaises(ValueError):
+            self.run_items({'questionId': 1, 'tier': 'historical', 'nextReviewAt': None, 'reason': 'r'},
+                           {'questionId': 1, 'tier': 'historical', 'nextReviewAt': None, 'reason': 'r'})
+        self.assertEqual(self.ledger, before)
+
+    def test_review_dates_beyond_twelve_months_are_rejected_and_calendar_counts_months(self):
+        r = reviewed(self.qs[0], True, '2027-11-03')
+        self.assertIn('nextReviewAt must fall within 12 months of the review (rule 7)', audit.validate_review(r, AS_OF))
+        report = {'questions': [{'nextReviewAt': d} for d in ('2026-11-01', '2027-01-05', '2027-01-30', '2028-06-01', None)]}
+        self.assertEqual(audit.recheck_calendar(report, '2026-11-15'),
+                         {'overdue': 1, 'byMonth': {'2027-01': 2}, 'later': 1})
 
 
 if __name__ == '__main__':

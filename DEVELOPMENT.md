@@ -82,7 +82,7 @@ first two players fit at 375x667 (~60 px spare) and at Safari's ~548 px usable
 height. The browser suite asserts the 667 px case and prints 647/548 px positions.
 The service worker never caches the admin page or update probes.
 
-There are 2,194 active questions plus 186 preserved retired snapshots in the
+There are 2,191 active questions plus 189 preserved retired snapshots in the
 working bank after forty-two sequential audit batches and four generation rounds
 adding 340 questions. The latest 100 questions cover 16 live-action films, two
 Pixar features, Disneyland Paris and Disney Adventure. See
@@ -102,7 +102,7 @@ Optional question metadata:
 ```
 
 Fact IDs must be unique across active questions. Sources must be HTTPS. There are 347
-active questions with verified explanations and links. All 2,194 active questions
+active questions with verified explanations and links. All 2,191 active questions
 now have current manual review and four-option evidence; explanations and links
 embedded in the playable question objects remain incremental metadata.
 The admin page exports difficulty recommendations once a question has at least
@@ -164,6 +164,13 @@ stay published; add new runtime files outside those excluded paths.
 `deploy.ps1` bumps APP_VERSION only when a code file changed. For a question-only
 release, raise APP_VERSION in app.js by hand first so installed clients refresh the
 offline bank; the script then syncs `?v=` strings and the service-worker cache.
+
+Release v1.55 tiers scheduled rechecks (QUESTION_AUDIT.md rule 7, backlog #5): the
+220 rechecks due 2027-01/02 became 48 historical (no recheck), 6 changeable (due
+2027-01/02) and 163 stable (staggered 2027-07..10, ~50/month), and #2560, #2561
+and #2277 (single-listing questions) were retired without replacement, leaving
+2,191 approved active questions. `status` prints the upcoming recheck calendar.
+See audit/runs/2026-11-12-recheck-tiers-notes.md.
 
 Release v1.52 removes answer giveaways from ten questions, replaces #2432's
 implausible distractors, and retires #976 (leak; duplicate of #1399's fact), leaving

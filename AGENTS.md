@@ -31,7 +31,8 @@ audit" as instructions to **perform** the next queued content audit:
    review templates separately from the regenerable packet. Never infer that an
    existing source link or a prior partial review proves all four options.
 4. Use `record-many` for validated bulk imports, `retire` for preserved duplicate
-   removals, and `classify` to distinguish factual fixes from editorial changes.
+   removals (`--no-replacement` for upkeep-only removals), `reschedule` to re-tier
+   recheck dates under QUESTION_AUDIT.md rule 7, and `classify` to distinguish factual fixes from editorial changes.
    Run sync/report/check as appropriate after fixes. Close the plan to its printed
    result path with the actual reviewer. Use --partial when evidence or review is
    unfinished; record unresolved concerns. Do not silently advance past them. If

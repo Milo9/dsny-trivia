@@ -57,7 +57,14 @@ Mostly `release-*-tmp` / `release-*-temp` full site copies. Prune only those —
 
 ## B. Needs owner OK / decision
 
-**5. 220 scheduled rechecks fall due Jan–Feb 2027** (221 at audit; #976 retired in v1.52). *Large if done properly.*
+**5. ✅ DONE 2026-11-12 (v1.55) — 220 scheduled rechecks fall due Jan–Feb 2027.**
+Done: rule 7 now tiers rechecks (historical none / stable 12 months / changeable ~90
+days, from the evidence date). New `reschedule` command re-tiered the wave without
+touching evidence: 48 historical, 6 changeable (1 due 2027-01, 5 due 2027-02), 163
+stable staggered by topic 2027-07..10 (~50/month, one session each). #2560, #2561,
+#2277 retired with the new `retire --no-replacement`. `status` shows the recheck
+calendar. See audit/runs/2026-11-12-recheck-tiers-notes.md. Original item:
+(221 at audit; #976 retired in v1.52). *Large if done properly.*
 `nextReviewAt`: 9 in 2027-01 (first 2027-01-08), 212 in 2027-02 — mostly parks/cruise
 time-anchored facts. Once one is overdue, `question_audit.py check` fails, blocking
 `deploy.ps1` and CI. Plan December recheck batches (or consciously re-date — not

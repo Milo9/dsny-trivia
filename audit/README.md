@@ -51,7 +51,8 @@ concerns, and completed approval without any open findings.
 
 Use `record-many` to validate all supplied review files before one ledger update.
 Use `retire` to preserve a duplicate's exact snapshot and decision with a checked
-replacement. An interrupted retirement requires `recover-retirement` before other
+replacement, or `--no-replacement` for upkeep-only removals. `reschedule` re-tiers
+recheck dates (rule 7) without changing evidence. An interrupted retirement requires `recover-retirement` before other
 commands can proceed. `record-retirement` documents an existing preserved removal.
 Use `classify` to label factual, clarification, distractor, explanation, difficulty,
 category, scope or metadata changes. Complete closes require documented retirements
