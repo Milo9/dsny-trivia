@@ -16,7 +16,7 @@ S = {
  'r152-pixar-pier-neighborhoods': ('https://wdwnt.com/2018/05/four-neighborhoods-will-welcome-you-into-pixar-pier-at-disney-california-adventure/', 'May 2018 neighborhood rundown; Pixar Promenade section', 'Four neighborhoods: Incredibles Park, Toy Story Boardwalk, Pixar Promenade and Inside Out Headquarters; the Pixar Pal-A-Round Ferris wheel is the focal point of Pixar Promenade.', 'Specialist news report of the Disneyland Resort announcement at opening; corroborated by the D23 neighborhood list.', False, ['parks']),
  'r152-d23-inside-out': ('https://d23.com/inside-out-attraction-pixar-pier/', 'June 22, 2018 article; neighborhood list', 'D23 lists the Pixar Pier neighborhoods, including Inside Out Headquarters and Pixar Promenade.', LIM_OFFICIAL, False, ['parks']),
  'r152-hidden-mickeys-d23': ('https://d23.com/a-to-z/hidden-mickeys/', 'Complete entry', 'Hidden Mickeys are subtle silhouettes of Mickey Mouse, commonly the three-circle head form, worked into Disney designs.', LIM_OFFICIAL, False, ['cruise']),
- 'r152-hidden-mickeys-ship': ('https://allears.net/2014/10/27/disney-magic-cruise-ship-hidden-mickeys/', 'Opening paragraphs and photo captions', 'Fans hunt Hidden Mickeys aboard the Disney Magic cruise ship.', 'Fan/specialist site; establishes the term is used for cruise ship decor.', False, ['cruise']),
+ 'r152-hidden-mickeys-ship': ('https://www.kennythepirate.com/2019/12/06/hidden-mickeys-how-many-can-you-find/', 'Dec 6, 2019 article; Disney Cruise Line paragraph', 'Hidden Mickeys can also be found at sea on Disney Cruise Line ships and on Castaway Cay.', 'Fan/specialist site; establishes the term is used for cruise ship decor. (An AllEars ship article returned HTTP 403 and was not used.)', False, ['cruise']),
  'r152-castaway-5k': ('https://plandisney.disney.go.com/question/register-castaway-cay-run-628629/', 'January 1, 2026 panelist answer', 'The Castaway Cay 5K is self-paced with no pre-registration; it is two laps and finishers collect a 5K medal at the bike rental stand.', LIM_FAN, True, ['cruise']),
  'r152-elemental': ('https://www.pixar.com/elemental', 'Opening synopsis', 'Elemental is set in Element City, where Fire-, Water-, Earth- and Air-residents live together.', LIM_OFFICIAL, False, ['pixar']),
  'r152-oliver-d23': ('https://d23.com/a-to-z/oliver-company-film/', 'Complete entry, first sentence', 'Oliver & Company is the Oliver Twist story animated with a twist.', LIM_OFFICIAL, False, ['movies']),
@@ -88,7 +88,7 @@ R = {
          (C, '10K contradicts the documented 5K distance.', ['r152-castaway-5k']),
          (C, 'A half marathon contradicts the documented 5K distance.', ['r152-castaway-5k']),
          (C, 'One mile contradicts the documented 5K distance.', ['r152-castaway-5k'])],
-   ch='Two laps make up the 5K, not a 10K. Checked that no other self-paced distance is offered on Castaway Cay; Lookout Cay has no equivalent. Changeable: recheck scheduled.'),
+   ch='Two laps make up the 5K, not a 10K. The January 2026 answer describes a single self-paced 5K and names no other distance; the stem asks about that one event. Changeable: recheck scheduled.'),
  2589: dict(ctx="Pixar's Elemental (2023) setting.", ts=False,
    notes='Distractors now all share the Element- stem, so "Elemental" in the stem no longer singles out the answer. Elemental digest read: #1411 asks Firetown (a borough), a different fact.',
    premise=("Pixar's synopsis: set in Element City, where Fire, Water, Earth and Air residents live together.", ['r152-elemental']),
@@ -133,4 +133,7 @@ for r in n['reviews']:
     r['challenge'] = dict(reviewer='Claude', at=AT, premiseChecked=True, alternativesExcluded=True, notes=d['ch'])
 n['sourcesChecked'] = sorted(used)
 write('audit/runs/release-1.52-flag-followup-evidence-notes.json', n)
+n2 = dict(n, reviews=[r for r in n['reviews'] if r['questionId'] in (1236, 427)])
+n2['sourcesChecked'] = sorted({s for r in n2['reviews'] for s in r['premise']['sources'] + [x for o in r['options'] for x in o['sources']]})
+write('audit/runs/release-1.52-flag-followup-renewal-notes.json', n2)
 print('ok', len(n['reviews']))

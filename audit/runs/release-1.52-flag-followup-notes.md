@@ -42,3 +42,13 @@ write review.html performs (immutable `resolutions` event + parent `_resolved`),
 reviewer "Claude (for Milo)", outcome `fixed`, each referencing the commit that
 published its fix: #911 x2 -> 4082fb7 (retired), #2432 -> 510bd87, #2080 / #708 /
 #138 -> f46f0a4. Read-back confirmed; 0 of 13 flags open on 2026-11-12.
+
+**Correction:** the #2080 event (flag Mi98FbAgDPIO6kJmpg4k, event N8u0ZJgFUECZqycYFrlJ)
+says "reworded in v1.43" and links f46f0a4, but the reword actually shipped in v1.46
+(f65c42a). Resolution events are immutable; correcting it needs a reopen + re-resolve
+in review.html, pending the owner's OK.
+
+Follow-up the same day: #1236's ship-decor source was replaced with one actually
+inspected (KennyThePirate, Dec 2019; the AllEars page returned 403), and #427's
+challenge note was narrowed to what the January 2026 answer states. Both reviews were
+re-recorded (release-1.52-flag-followup-renewal-*.json) and the plan re-closed.

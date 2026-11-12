@@ -62480,6 +62480,160 @@
               ]
             }
           }
+        },
+        {
+          "hash": "3302b7a041a32f7780ef3aa65f43babec24cec68a2ac0b4e2ee48c49dbdd58ff",
+          "review": {
+            "schema": 2,
+            "questionId": 427,
+            "hash": "3302b7a041a32f7780ef3aa65f43babec24cec68a2ac0b4e2ee48c49dbdd58ff",
+            "questionSnapshot": {
+              "id": 427,
+              "question": "As of November 2026, how long is the self-paced run or walk that Disney cruise guests can complete on Castaway Cay?",
+              "answers": [
+                "5K",
+                "10K",
+                "Half marathon",
+                "1 mile"
+              ],
+              "difficulty": "medium",
+              "category": "cruise"
+            },
+            "reviewer": "Claude",
+            "at": "2026-11-12",
+            "manual": {
+              "singleAnswer": true,
+              "context": true,
+              "wording": true,
+              "noGiveaway": true,
+              "distinctFact": true,
+              "category": true,
+              "difficulty": true,
+              "scope": true
+            },
+            "notes": "Answers are now distances, so \"Castaway Cay\" in the stem no longer matches the answer text. No other Castaway Cay run question.",
+            "verification": {
+              "context": "Castaway Cay self-paced run/walk, as of November 2026.",
+              "timeSensitive": true,
+              "nextReviewAt": "2027-02-09",
+              "premise": {
+                "reason": "A January 2026 planDisney answer describes the self-paced Castaway Cay 5K (two laps, medal at the bike stand).",
+                "sources": [
+                  {
+                    "sourceNoteId": "r152-castaway-5k",
+                    "url": "https://plandisney.disney.go.com/question/register-castaway-cay-run-628629/",
+                    "locator": "January 1, 2026 panelist answer",
+                    "evidence": "The Castaway Cay 5K is self-paced with no pre-registration; it is two laps and finishers collect a 5K medal at the bike rental stand.",
+                    "checkedBy": "Claude",
+                    "checkedAt": "2026-11-12",
+                    "timeSensitive": true,
+                    "nextReviewAt": "2027-02-09",
+                    "limitations": "Official Disney planning-forum answer (planDisney panelist), dated; not a formal policy page.",
+                    "topics": [
+                      "cruise"
+                    ]
+                  }
+                ]
+              },
+              "challenge": {
+                "reviewer": "Claude",
+                "at": "2026-11-12",
+                "premiseChecked": true,
+                "alternativesExcluded": true,
+                "notes": "Two laps make up the 5K, not a 10K. Checked that no other self-paced distance is offered on Castaway Cay; Lookout Cay has no equivalent. Changeable: recheck scheduled."
+              },
+              "options": [
+                {
+                  "basis": "direct",
+                  "reason": "The self-paced event is the 5K.",
+                  "sources": [
+                    {
+                      "sourceNoteId": "r152-castaway-5k",
+                      "url": "https://plandisney.disney.go.com/question/register-castaway-cay-run-628629/",
+                      "locator": "January 1, 2026 panelist answer",
+                      "evidence": "The Castaway Cay 5K is self-paced with no pre-registration; it is two laps and finishers collect a 5K medal at the bike rental stand.",
+                      "checkedBy": "Claude",
+                      "checkedAt": "2026-11-12",
+                      "timeSensitive": true,
+                      "nextReviewAt": "2027-02-09",
+                      "limitations": "Official Disney planning-forum answer (planDisney panelist), dated; not a formal policy page.",
+                      "topics": [
+                        "cruise"
+                      ]
+                    }
+                  ],
+                  "answer": "5K",
+                  "verdict": "correct"
+                },
+                {
+                  "basis": "contradiction",
+                  "reason": "10K contradicts the documented 5K distance.",
+                  "sources": [
+                    {
+                      "sourceNoteId": "r152-castaway-5k",
+                      "url": "https://plandisney.disney.go.com/question/register-castaway-cay-run-628629/",
+                      "locator": "January 1, 2026 panelist answer",
+                      "evidence": "The Castaway Cay 5K is self-paced with no pre-registration; it is two laps and finishers collect a 5K medal at the bike rental stand.",
+                      "checkedBy": "Claude",
+                      "checkedAt": "2026-11-12",
+                      "timeSensitive": true,
+                      "nextReviewAt": "2027-02-09",
+                      "limitations": "Official Disney planning-forum answer (planDisney panelist), dated; not a formal policy page.",
+                      "topics": [
+                        "cruise"
+                      ]
+                    }
+                  ],
+                  "answer": "10K",
+                  "verdict": "incorrect"
+                },
+                {
+                  "basis": "contradiction",
+                  "reason": "A half marathon contradicts the documented 5K distance.",
+                  "sources": [
+                    {
+                      "sourceNoteId": "r152-castaway-5k",
+                      "url": "https://plandisney.disney.go.com/question/register-castaway-cay-run-628629/",
+                      "locator": "January 1, 2026 panelist answer",
+                      "evidence": "The Castaway Cay 5K is self-paced with no pre-registration; it is two laps and finishers collect a 5K medal at the bike rental stand.",
+                      "checkedBy": "Claude",
+                      "checkedAt": "2026-11-12",
+                      "timeSensitive": true,
+                      "nextReviewAt": "2027-02-09",
+                      "limitations": "Official Disney planning-forum answer (planDisney panelist), dated; not a formal policy page.",
+                      "topics": [
+                        "cruise"
+                      ]
+                    }
+                  ],
+                  "answer": "Half marathon",
+                  "verdict": "incorrect"
+                },
+                {
+                  "basis": "contradiction",
+                  "reason": "One mile contradicts the documented 5K distance.",
+                  "sources": [
+                    {
+                      "sourceNoteId": "r152-castaway-5k",
+                      "url": "https://plandisney.disney.go.com/question/register-castaway-cay-run-628629/",
+                      "locator": "January 1, 2026 panelist answer",
+                      "evidence": "The Castaway Cay 5K is self-paced with no pre-registration; it is two laps and finishers collect a 5K medal at the bike rental stand.",
+                      "checkedBy": "Claude",
+                      "checkedAt": "2026-11-12",
+                      "timeSensitive": true,
+                      "nextReviewAt": "2027-02-09",
+                      "limitations": "Official Disney planning-forum answer (planDisney panelist), dated; not a formal policy page.",
+                      "topics": [
+                        "cruise"
+                      ]
+                    }
+                  ],
+                  "answer": "1 mile",
+                  "verdict": "incorrect"
+                }
+              ]
+            }
+          }
         }
       ],
       "hash": "3302b7a041a32f7780ef3aa65f43babec24cec68a2ac0b4e2ee48c49dbdd58ff",
@@ -62542,7 +62696,7 @@
             "at": "2026-11-12",
             "premiseChecked": true,
             "alternativesExcluded": true,
-            "notes": "Two laps make up the 5K, not a 10K. Checked that no other self-paced distance is offered on Castaway Cay; Lookout Cay has no equivalent. Changeable: recheck scheduled."
+            "notes": "Two laps make up the 5K, not a 10K. The January 2026 answer describes a single self-paced 5K and names no other distance; the stem asks about that one event. Changeable: recheck scheduled."
           },
           "options": [
             {
@@ -218204,6 +218358,188 @@
               ]
             }
           }
+        },
+        {
+          "hash": "f0c36c10d5d58538f3809501d8e06f7fbaaa611d90ee59b5bb8ad518250c100b",
+          "review": {
+            "schema": 2,
+            "questionId": 1236,
+            "hash": "f0c36c10d5d58538f3809501d8e06f7fbaaa611d90ee59b5bb8ad518250c100b",
+            "questionSnapshot": {
+              "id": 1236,
+              "question": "What do Disney fans call the three-circle mouse-head silhouettes subtly worked into cruise ship decor?",
+              "answers": [
+                "Hidden Mickeys",
+                "Magic Marks",
+                "Castaway Icons",
+                "Pixie Prints"
+              ],
+              "difficulty": "easy",
+              "category": "cruise"
+            },
+            "reviewer": "Claude",
+            "at": "2026-11-12",
+            "manual": {
+              "singleAnswer": true,
+              "context": true,
+              "wording": true,
+              "noGiveaway": true,
+              "distinctFact": true,
+              "category": true,
+              "difficulty": true,
+              "scope": true
+            },
+            "notes": "Removed \"Mickey Mouse\" from the stem; the answer is still easy by design. No other Hidden Mickey question in the bank.",
+            "verification": {
+              "context": "Fan term used across Disney parks and ships.",
+              "timeSensitive": false,
+              "nextReviewAt": null,
+              "premise": {
+                "reason": "D23 defines Hidden Mickeys as subtle three-circle Mickey silhouettes; fans hunt them aboard Disney ships.",
+                "sources": [
+                  {
+                    "sourceNoteId": "r152-hidden-mickeys-d23",
+                    "url": "https://d23.com/a-to-z/hidden-mickeys/",
+                    "locator": "Complete entry",
+                    "evidence": "Hidden Mickeys are subtle silhouettes of Mickey Mouse, commonly the three-circle head form, worked into Disney designs.",
+                    "checkedBy": "Claude",
+                    "checkedAt": "2026-11-12",
+                    "timeSensitive": false,
+                    "nextReviewAt": null,
+                    "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+                    "topics": [
+                      "cruise"
+                    ]
+                  },
+                  {
+                    "sourceNoteId": "r152-hidden-mickeys-ship",
+                    "url": "https://allears.net/2014/10/27/disney-magic-cruise-ship-hidden-mickeys/",
+                    "locator": "Opening paragraphs and photo captions",
+                    "evidence": "Fans hunt Hidden Mickeys aboard the Disney Magic cruise ship.",
+                    "checkedBy": "Claude",
+                    "checkedAt": "2026-11-12",
+                    "timeSensitive": false,
+                    "nextReviewAt": null,
+                    "limitations": "Fan/specialist site; establishes the term is used for cruise ship decor.",
+                    "topics": [
+                      "cruise"
+                    ]
+                  }
+                ]
+              },
+              "challenge": {
+                "reviewer": "Claude",
+                "at": "2026-11-12",
+                "premiseChecked": true,
+                "alternativesExcluded": true,
+                "notes": "\"Mouse-head silhouettes\" still points at Mickey but no longer contains the answer word. Checked none of the distractors is an established fan term."
+              },
+              "options": [
+                {
+                  "basis": "direct",
+                  "reason": "Hidden Mickeys is the documented term.",
+                  "sources": [
+                    {
+                      "sourceNoteId": "r152-hidden-mickeys-d23",
+                      "url": "https://d23.com/a-to-z/hidden-mickeys/",
+                      "locator": "Complete entry",
+                      "evidence": "Hidden Mickeys are subtle silhouettes of Mickey Mouse, commonly the three-circle head form, worked into Disney designs.",
+                      "checkedBy": "Claude",
+                      "checkedAt": "2026-11-12",
+                      "timeSensitive": false,
+                      "nextReviewAt": null,
+                      "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+                      "topics": [
+                        "cruise"
+                      ]
+                    },
+                    {
+                      "sourceNoteId": "r152-hidden-mickeys-ship",
+                      "url": "https://allears.net/2014/10/27/disney-magic-cruise-ship-hidden-mickeys/",
+                      "locator": "Opening paragraphs and photo captions",
+                      "evidence": "Fans hunt Hidden Mickeys aboard the Disney Magic cruise ship.",
+                      "checkedBy": "Claude",
+                      "checkedAt": "2026-11-12",
+                      "timeSensitive": false,
+                      "nextReviewAt": null,
+                      "limitations": "Fan/specialist site; establishes the term is used for cruise ship decor.",
+                      "topics": [
+                        "cruise"
+                      ]
+                    }
+                  ],
+                  "answer": "Hidden Mickeys",
+                  "verdict": "correct"
+                },
+                {
+                  "basis": "exclusive-inference",
+                  "reason": "Magic Marks is not the term; D23 names these Hidden Mickeys.",
+                  "sources": [
+                    {
+                      "sourceNoteId": "r152-hidden-mickeys-d23",
+                      "url": "https://d23.com/a-to-z/hidden-mickeys/",
+                      "locator": "Complete entry",
+                      "evidence": "Hidden Mickeys are subtle silhouettes of Mickey Mouse, commonly the three-circle head form, worked into Disney designs.",
+                      "checkedBy": "Claude",
+                      "checkedAt": "2026-11-12",
+                      "timeSensitive": false,
+                      "nextReviewAt": null,
+                      "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+                      "topics": [
+                        "cruise"
+                      ]
+                    }
+                  ],
+                  "answer": "Magic Marks",
+                  "verdict": "incorrect"
+                },
+                {
+                  "basis": "exclusive-inference",
+                  "reason": "Castaway Icons is not the term; D23 names these Hidden Mickeys.",
+                  "sources": [
+                    {
+                      "sourceNoteId": "r152-hidden-mickeys-d23",
+                      "url": "https://d23.com/a-to-z/hidden-mickeys/",
+                      "locator": "Complete entry",
+                      "evidence": "Hidden Mickeys are subtle silhouettes of Mickey Mouse, commonly the three-circle head form, worked into Disney designs.",
+                      "checkedBy": "Claude",
+                      "checkedAt": "2026-11-12",
+                      "timeSensitive": false,
+                      "nextReviewAt": null,
+                      "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+                      "topics": [
+                        "cruise"
+                      ]
+                    }
+                  ],
+                  "answer": "Castaway Icons",
+                  "verdict": "incorrect"
+                },
+                {
+                  "basis": "exclusive-inference",
+                  "reason": "Pixie Prints is not the term; D23 names these Hidden Mickeys.",
+                  "sources": [
+                    {
+                      "sourceNoteId": "r152-hidden-mickeys-d23",
+                      "url": "https://d23.com/a-to-z/hidden-mickeys/",
+                      "locator": "Complete entry",
+                      "evidence": "Hidden Mickeys are subtle silhouettes of Mickey Mouse, commonly the three-circle head form, worked into Disney designs.",
+                      "checkedBy": "Claude",
+                      "checkedAt": "2026-11-12",
+                      "timeSensitive": false,
+                      "nextReviewAt": null,
+                      "limitations": "Official Disney/Pixar page text inspected via fetch; no film viewing or in-person visit claimed.",
+                      "topics": [
+                        "cruise"
+                      ]
+                    }
+                  ],
+                  "answer": "Pixie Prints",
+                  "verdict": "incorrect"
+                }
+              ]
+            }
+          }
         }
       ],
       "hash": "f0c36c10d5d58538f3809501d8e06f7fbaaa611d90ee59b5bb8ad518250c100b",
@@ -218261,14 +218597,14 @@
               },
               {
                 "sourceNoteId": "r152-hidden-mickeys-ship",
-                "url": "https://allears.net/2014/10/27/disney-magic-cruise-ship-hidden-mickeys/",
-                "locator": "Opening paragraphs and photo captions",
-                "evidence": "Fans hunt Hidden Mickeys aboard the Disney Magic cruise ship.",
+                "url": "https://www.kennythepirate.com/2019/12/06/hidden-mickeys-how-many-can-you-find/",
+                "locator": "Dec 6, 2019 article; Disney Cruise Line paragraph",
+                "evidence": "Hidden Mickeys can also be found at sea on Disney Cruise Line ships and on Castaway Cay.",
                 "checkedBy": "Claude",
                 "checkedAt": "2026-11-12",
                 "timeSensitive": false,
                 "nextReviewAt": null,
-                "limitations": "Fan/specialist site; establishes the term is used for cruise ship decor.",
+                "limitations": "Fan/specialist site; establishes the term is used for cruise ship decor. (An AllEars ship article returned HTTP 403 and was not used.)",
                 "topics": [
                   "cruise"
                 ]
@@ -218303,14 +218639,14 @@
                 },
                 {
                   "sourceNoteId": "r152-hidden-mickeys-ship",
-                  "url": "https://allears.net/2014/10/27/disney-magic-cruise-ship-hidden-mickeys/",
-                  "locator": "Opening paragraphs and photo captions",
-                  "evidence": "Fans hunt Hidden Mickeys aboard the Disney Magic cruise ship.",
+                  "url": "https://www.kennythepirate.com/2019/12/06/hidden-mickeys-how-many-can-you-find/",
+                  "locator": "Dec 6, 2019 article; Disney Cruise Line paragraph",
+                  "evidence": "Hidden Mickeys can also be found at sea on Disney Cruise Line ships and on Castaway Cay.",
                   "checkedBy": "Claude",
                   "checkedAt": "2026-11-12",
                   "timeSensitive": false,
                   "nextReviewAt": null,
-                  "limitations": "Fan/specialist site; establishes the term is used for cruise ship decor.",
+                  "limitations": "Fan/specialist site; establishes the term is used for cruise ship decor. (An AllEars ship article returned HTTP 403 and was not used.)",
                   "topics": [
                     "cruise"
                   ]

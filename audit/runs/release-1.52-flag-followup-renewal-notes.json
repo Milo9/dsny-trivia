@@ -1,0 +1,136 @@
+{
+  "schema": 1,
+  "reviewer": "Claude",
+  "at": "2026-11-12",
+  "sourcesChecked": [
+    "r152-castaway-5k",
+    "r152-hidden-mickeys-d23",
+    "r152-hidden-mickeys-ship"
+  ],
+  "reviews": [
+    {
+      "questionId": 1236,
+      "hash": "f0c36c10d5d58538f3809501d8e06f7fbaaa611d90ee59b5bb8ad518250c100b",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Removed \"Mickey Mouse\" from the stem; the answer is still easy by design. No other Hidden Mickey question in the bank.",
+      "context": "Fan term used across Disney parks and ships.",
+      "timeSensitive": false,
+      "nextReviewAt": null,
+      "premise": {
+        "reason": "D23 defines Hidden Mickeys as subtle three-circle Mickey silhouettes; fans hunt them aboard Disney ships.",
+        "sources": [
+          "r152-hidden-mickeys-d23",
+          "r152-hidden-mickeys-ship"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "Hidden Mickeys is the documented term.",
+          "sources": [
+            "r152-hidden-mickeys-d23",
+            "r152-hidden-mickeys-ship"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Magic Marks is not the term; D23 names these Hidden Mickeys.",
+          "sources": [
+            "r152-hidden-mickeys-d23"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Castaway Icons is not the term; D23 names these Hidden Mickeys.",
+          "sources": [
+            "r152-hidden-mickeys-d23"
+          ]
+        },
+        {
+          "basis": "exclusive-inference",
+          "reason": "Pixie Prints is not the term; D23 names these Hidden Mickeys.",
+          "sources": [
+            "r152-hidden-mickeys-d23"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Claude",
+        "at": "2026-11-12",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "\"Mouse-head silhouettes\" still points at Mickey but no longer contains the answer word. Checked none of the distractors is an established fan term."
+      }
+    },
+    {
+      "questionId": 427,
+      "hash": "3302b7a041a32f7780ef3aa65f43babec24cec68a2ac0b4e2ee48c49dbdd58ff",
+      "checks": [
+        "singleAnswer",
+        "context",
+        "wording",
+        "noGiveaway",
+        "distinctFact",
+        "category",
+        "difficulty",
+        "scope"
+      ],
+      "notes": "Answers are now distances, so \"Castaway Cay\" in the stem no longer matches the answer text. No other Castaway Cay run question.",
+      "context": "Castaway Cay self-paced run/walk, as of November 2026.",
+      "timeSensitive": true,
+      "nextReviewAt": "2027-02-09",
+      "premise": {
+        "reason": "A January 2026 planDisney answer describes the self-paced Castaway Cay 5K (two laps, medal at the bike stand).",
+        "sources": [
+          "r152-castaway-5k"
+        ]
+      },
+      "options": [
+        {
+          "basis": "direct",
+          "reason": "The self-paced event is the 5K.",
+          "sources": [
+            "r152-castaway-5k"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "10K contradicts the documented 5K distance.",
+          "sources": [
+            "r152-castaway-5k"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "A half marathon contradicts the documented 5K distance.",
+          "sources": [
+            "r152-castaway-5k"
+          ]
+        },
+        {
+          "basis": "contradiction",
+          "reason": "One mile contradicts the documented 5K distance.",
+          "sources": [
+            "r152-castaway-5k"
+          ]
+        }
+      ],
+      "challenge": {
+        "reviewer": "Claude",
+        "at": "2026-11-12",
+        "premiseChecked": true,
+        "alternativesExcluded": true,
+        "notes": "Two laps make up the 5K, not a 10K. The January 2026 answer describes a single self-paced 5K and names no other distance; the stem asks about that one event. Changeable: recheck scheduled."
+      }
+    }
+  ]
+}

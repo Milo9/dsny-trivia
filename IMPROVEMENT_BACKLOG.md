@@ -57,7 +57,7 @@ Mostly `release-*-tmp` / `release-*-temp` full site copies. Prune only those —
 
 ## B. Needs owner OK / decision
 
-**5. 221 scheduled rechecks fall due Jan–Feb 2027.** *Large if done properly.*
+**5. 220 scheduled rechecks fall due Jan–Feb 2027** (221 at audit; #976 retired in v1.52). *Large if done properly.*
 `nextReviewAt`: 9 in 2027-01 (first 2027-01-08), 212 in 2027-02 — mostly parks/cruise
 time-anchored facts. Once one is overdue, `question_audit.py check` fails, blocking
 `deploy.ps1` and CI. Plan December recheck batches (or consciously re-date — not
