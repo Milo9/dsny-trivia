@@ -157,6 +157,7 @@ def run_regressions(browser, base, check, stop_origin, set_stall=None):
     check.ok(answered() == before + 10 and page.evaluate("storage._load().users.kristen.lastDailyDate") == day,
              'daily closed on its last answer while offline saves itself on reopen')
     check.ok(page.evaluate("Object.keys(pendingDailies('kristen')).length") == 0, 'recovered daily is cleared from the phone')
+    check.ok(page.evaluate("storage._load().users.kristen.gameLog[0].recovered") is True, 'automatic save is marked recovered in the game log')
 
     # Online, closing on the last answer is already enough: the save starts there.
     select('Cara')

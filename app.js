@@ -1,4 +1,4 @@
-const APP_VERSION = '1.56';
+const APP_VERSION = '1.57';
 
 const _localMemory = new Map();
 let _localDurable = true;
@@ -100,6 +100,7 @@ function gameLogEntry(state, status, points, firstDaily) {
       dateKey:     state.dateKey || todayKey(),
       resumed:     state.resumed,
       firstDaily,
+      recovered:   state.recovered,
       device:      deviceTag(),
       platform:    platformTag(),
       version:     APP_VERSION
@@ -1670,9 +1671,10 @@ function friendlyDate(dateKey) {
 }
 
 let _recoveredNote='', _lastUsers=[];
+function possessive(name) { return /s$/i.test(name) ? name+"'" : name+"'s"; }   // "The Oldies'", "Cara's"
 function announceRecoveredGames(states) {
   const names=new Map(_lastUsers.map(u=>[u.id,u.name]));
-  _recoveredNote='✓ Saved '+states.map(st=>`${names.get(st.userId) || 'a player'}'s ${st.isDaily ? 'challenge from '+friendlyDate(st.dateKey) : 'game'}`).join(', ')+'.';
+  _recoveredNote='✓ Saved '+states.map(st=>`${possessive(names.get(st.userId) || 'a player')} ${st.isDaily ? 'challenge from '+friendlyDate(st.dateKey) : 'game'}`).join(', ')+'.';
   refreshVisibleData();
 }
 
