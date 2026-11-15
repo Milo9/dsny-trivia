@@ -287,3 +287,49 @@ test('runtime question validation rejects malformed published data', () => {
   assert.equal(!!L.validQuestion({...q(1),answers:['a','a','c','d']}),false);
   assert.equal(!!L.validQuestion({...q(1),question:''}),false);
 });
+
+// --- Automatic recovery of unsaved games ---------------------------------------
+
+test('completedUnsavedGames returns fully answered dailies and regular games, oldest first', () => {
+  const qs = [q(1), q(2), q(3)];
+  const ans = ids => ids.map((id, i) => ({ questionId: id, selectedText: 'a', correct: i % 2 === 0 }));
+  const archives = {
+    oldies: {
+      '2026-11-15': { dateKey: '2026-11-15', questions: qs, answers: ans([1, 2, 3]) },
+      '2026-11-14': { dateKey: '2026-11-14', questions: qs, answers: ans([1, 2, 3]), resetRevision: 2 },
+      '2026-11-13': { dateKey: '2026-11-13', questions: qs, answers: ans([1, 2]) }        // unfinished: left alone
+    },
+    cara: { '2026-11-12': { dateKey: '2026-11-12', answers: ans([1, 2, 3]) } }           // no snapshot: cannot rebuild
+  };
+  const checkpoints = {
+    kristen: { gameId: 'g1', dateKey: '2026-11-14', questionIds: [1, 2], questions: [q(1), q(2)], answers: ans([1, 2]) },
+    milo: { gameId: 'g2', dateKey: '2026-11-14', questionIds: [1, 2, 3], answers: ans([1]) }  // unfinished
+  };
+  const games = L.completedUnsavedGames(archives, checkpoints, new Map(qs.map(x => [x.id, x])));
+  assert.deepEqual(games.map(g => [g.userId, g.gameId, g.dateKey]), [
+    ['oldies', 'daily_2026-11-14', '2026-11-14'],
+    ['kristen', 'g1', '2026-11-14'],
+    ['oldies', 'daily_2026-11-15', '2026-11-15']
+  ]);
+  const [first] = games;
+  assert.equal(first.isDaily, true);
+  assert.equal(first.resetRevision, 2);
+  assert.equal(first.score, 2);
+  assert.equal(first.answers.length, 3);
+  assert.equal(first.recovered, true);
+  assert.equal(games[1].isDaily, false);
+});
+
+test('completedUnsavedGames rejects answers that no longer line up with the daily snapshot', () => {
+  const qs = [q(1), q(2)];
+  const archives = { a: { '2026-11-14': { dateKey: '2026-11-14', questions: qs,
+    answers: [{ questionId: 1, correct: true }, { questionId: 9, correct: true }] } } };
+  assert.deepEqual(L.completedUnsavedGames(archives, {}), []);
+  assert.deepEqual(L.completedUnsavedGames(null, null), []);
+});
+
+test('buildGameLogEntry marks automatically recovered saves', () => {
+  const base = { mode: 'daily', status: 'complete', answers: [], now: 0 };
+  assert.equal(L.buildGameLogEntry({ ...base, recovered: true }).recovered, true);
+  assert.equal('recovered' in L.buildGameLogEntry(base), false);
+});

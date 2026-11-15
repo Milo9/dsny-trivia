@@ -265,8 +265,38 @@ function appendGameLog(log, entry, max = GAME_LOG_MAX) {
 // order; the first `answered` of them were shown. A daily exit commits no
 // stats, so its points are 0. Every value is non-undefined: Firestore rejects
 // undefined fields, which would fail the stats transaction this rides in.
+// Fully answered games that this device never committed: the app was closed on
+// the last answer, or the save failed (no signal, stalled wifi). Rebuilt as
+// gameStates so they can be saved automatically with no player action.
+//   dailyArchives — {userId: {dateKey: {dateKey, answers, questions, resetRevision}}}
+//   checkpoints   — {userId: regular-game checkpoint}
+//   questionsById — Map of active + retired questions (for regular checkpoints)
+// Partially answered games are excluded: the player may still finish them.
+// Oldest first, dailies before regular games on the same day, because the daily
+// bonus streak is computed from the dates already saved when a daily commits.
+function completedUnsavedGames(dailyArchives, checkpoints, questionsById = new Map()) {
+  const games = [];
+  for (const [userId, entries] of Object.entries(dailyArchives || {})) {
+    for (const entry of Object.values(entries || {})) {
+      if (!entry?.dateKey || !Array.isArray(entry.questions) || !entry.questions.length) continue;
+      const gs = reconcileDailyProgress(entry.questions, entry, entry.dateKey);
+      if (gs.answers.length !== entry.questions.length) continue;
+      games.push({ ...gs, gameId: 'daily_' + entry.dateKey, dateKey: entry.dateKey, userId,
+        resetRevision: entry.resetRevision || 0, resumed: true, recovered: true });
+    }
+  }
+  for (const [userId, cp] of Object.entries(checkpoints || {})) {
+    const byId = new Map(questionsById);
+    for (const question of cp?.questions || []) if (question && !byId.has(question.id)) byId.set(question.id, question);
+    const gs = reconcileRegularCheckpoint(cp, byId);
+    if (!gs || gs.isPractice || !gs.answers.length || gs.answers.length !== gs.questions.length) continue;
+    games.push({ ...gs, userId, resumed: true, recovered: true });
+  }
+  return games.sort((a, b) => a.dateKey.localeCompare(b.dateKey) || Number(b.isDaily) - Number(a.isDaily));
+}
+
 function buildGameLogEntry({ mode, status, questionIds, answers, points, dateKey,
-                             resumed, firstDaily, device, platform, version, now = Date.now() }) {
+                             resumed, firstDaily, recovered, device, platform, version, now = Date.now() }) {
   const entry = {
     at:          new Date(now).toISOString(),
     day:         dateKey ?? null,
@@ -282,6 +312,7 @@ function buildGameLogEntry({ mode, status, questionIds, answers, points, dateKey
     v:           version ?? null
   };
   if (mode === 'daily') entry.firstDaily = !!firstDaily;
+  if (recovered) entry.recovered = true;   // saved later, automatically, from this device
   return entry;
 }
 
@@ -292,6 +323,6 @@ if (typeof module !== 'undefined' && module.exports) {
     seededShuffle, dateToSeed, pickDailyQuestions, pickMovie,
     SCORING, scoreBreakdown, buildCatStats, validQuestion,
     serializeAnswers, trailingStreak, reconcileDailyProgress, reconcileRegularCheckpoint,
-    GAME_LOG_MAX, appendGameLog, buildGameLogEntry
+    completedUnsavedGames, GAME_LOG_MAX, appendGameLog, buildGameLogEntry
   };
 }

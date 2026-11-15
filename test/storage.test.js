@@ -74,3 +74,20 @@ test('homework updates preserve server history and rollover does not assume a wa
   assert.equal(watched.watched.length,2);assert.equal(old.watched.length,1);
 });
 module.exports={adapter,question};
+test('a Firebase load that failed at start-up is retried, never cached as permanent',async()=>{
+  // A phone that opened the app on bad wifi must be able to save later without a restart.
+  const context=vm.createContext({console,Date,Math,Set,Map,Promise,setTimeout,clearTimeout});
+  for(const file of ['game-logic.js','data-logic.js','storage.js']) vm.runInContext(fs.readFileSync(require.resolve('../'+file),'utf8')
+    .replace('const storage = new FirebaseAdapter();','globalThis.storage = new FirebaseAdapter();'),context);
+  let loads=0;
+  context.loadFirebase=async()=>{
+    loads++;
+    if(loads===1) throw new Error('Connection timed out.');
+    context.firebase={apps:[1],firestore:()=>({runTransaction:async()=>{}})};
+  };
+  context.storage._seed=async()=>{};
+  await assert.rejects(context.storage._ready(),/timed out/);
+  await Promise.all([context.storage._ready(),context.storage._ready()]);   // concurrent callers share one retry
+  assert.equal(loads,2);
+  assert.ok(context.storage.db);
+});

@@ -28,7 +28,19 @@ tests. Both the local adapter and actual Firebase transactions are exercised.
   completing the same daily share one receipt and one score award. Daily bonus
   eligibility is computed from fresh stored data inside the transaction.
 - Local cleanup happens after server success and cannot reclassify the server
-  write as failed. The UI displays Saving, Saved, Already saved, or Retry.
+  write as failed. The UI displays Saving, Saved, Already saved, or "Not saved yet
+  · it will save by itself" (with an optional "Try again now").
+- Saving needs no player action (app.js `saveGame` / `syncUnsavedGames`, pure
+  selection in `completedUnsavedGames`). The save starts when the last answer is
+  recorded, not on "See Results". Every fully answered game left on the device, for
+  any player, is saved automatically at launch, on return to the foreground, on the
+  `online` event and on a 15 s to 5 min backoff, oldest first per player so the daily
+  streak bonus counts earlier days; starting a newer daily first flushes older ones
+  (bounded 5 s wait). Partially answered games are never auto-committed: picking a
+  player offers an unfinished earlier challenge instead. Recovered saves carry
+  `recovered: true` in the game log. Firebase loading (`loadFirebase` in bootstrap.js)
+  retries after a failed launch, and `updateStats` is bounded at 20 s; the receipt
+  makes a late-landing transaction plus a retry count once.
 - Reset and restore increment `resetRevision`. Older unfinished games cannot
   bring reset points back. Each admin reset/restore backs up the outgoing player.
 - Points belong to the game's captured start month (daily: challenge month).

@@ -1867,3 +1867,8 @@ body { background: radial-gradient(ellipse at 50% 0%, #343451, transparent 55%),
   /* Safari with toolbars on a 667px phone leaves ~548px. */
   .magic-kicker, .magic-welcome { display: none; }
 }
+
+/* Date on the Today/Yesterday cards, and the automatic-save note on home. */
+.daily-card-date { color: var(--muted); font-weight: 700; letter-spacing: 0.04em; margin-left: 4px; }
+.sync-status { text-align: center; color: var(--muted); font-size: 14px; margin: 8px 0; }
+.sync-status:empty { display: none; }

@@ -55,11 +55,10 @@ def run_regressions(browser, base, check, stop_origin, set_stall=None):
     }""")
     page.click('#btn-start-game')
     play(10)
-    page.wait_for_selector('#btn-retry-save:not(.hidden)')
-    before = answered()
-    page.click('#btn-retry-save')
+    # The save starts on the last answer; its response is lost. "See Results"
+    # retries by itself, and the receipt makes the retry count the game once.
     page.wait_for_function("document.getElementById('save-status').textContent.includes('Already saved')")
-    check.ok(answered() == before == 10, 'lost response followed by Retry counts a game once')
+    check.ok(answered() == 10, 'lost response is retried automatically and counts a game once')
 
     # Restore the real adapter by reloading. Block only incidental local writes,
     # leaving the test adapter's database available as a stand-in for Firestore.
@@ -119,6 +118,59 @@ def run_regressions(browser, base, check, stop_origin, set_stall=None):
              and page.evaluate("storage._load().users.cara.monthlyKey") == '2026-10', 'past daily saves under its challenge date and month')
     page.click('#btn-play-again')
     check.ok('Review' not in page.inner_text('#btn-daily-challenge'), 'saving yesterday does not block the new daily')
+
+    # An unsaved finished day N is saved before day N+1 starts, so the N+1 daily
+    # bonus counts the full streak (Oct 31 + Nov 1 + Nov 2 = 3), not a broken one.
+    page.evaluate("() => {storage.updateStats=()=>Promise.reject(Error('offline'));}")
+    page.click('#btn-daily-challenge')
+    page.wait_for_selector('.answer-btn')
+    play(10)
+    page.wait_for_selector('#btn-retry-save:not(.hidden)')
+    check.ok('by itself' in page.inner_text('#save-status'), 'failed save tells the player it will save by itself')
+    page.evaluate("() => {todayKey=()=> '2026-11-02';storage.updateStats=storage._realSave;}")
+    page.click('#btn-play-again')
+    page.click('#btn-daily-challenge')
+    page.wait_for_selector('.answer-btn')
+    play(10)
+    page.wait_for_function("document.getElementById('save-status').textContent==='Saved ✓'")
+    streak = page.evaluate("""(() => {const d=storage._load();return {streak:d.users.cara.dailyStreak,
+      dates:d.users.cara.completedDailyDates,bonus:d.receipts['cara/0_daily_2026-11-02'].breakdown.dailyBonus,
+      want:SCORING.dailyFlat+3*SCORING.dailyPerDay};})()""")
+    check.ok('2026-11-01' in streak['dates'] and streak['streak'] == 3 and streak['bonus'] == streak['want'],
+             'unsaved earlier daily saves first, so the next daily earns the full streak bonus')
+
+    # Closing the app on the final answer, offline, never tapping "See Results":
+    # reopening saves it with no taps, under its own challenge date.
+    boot()
+    select('Kristen')
+    page.click('#btn-daily-challenge')
+    page.wait_for_selector('.answer-btn')
+    page.evaluate("() => {storage.updateStats=()=>Promise.reject(Error('offline'));}")
+    for i in range(10):
+        page.locator('.answer-btn').first.click()
+        if i < 9:
+            page.click('#btn-next')
+    before = answered()
+    day = page.evaluate('todayKey()')
+    boot()  # reopening restores the real adapter
+    page.wait_for_function("document.getElementById('sync-status').textContent.includes('Saved Kristen')")
+    check.ok(answered() == before + 10 and page.evaluate("storage._load().users.kristen.lastDailyDate") == day,
+             'daily closed on its last answer while offline saves itself on reopen')
+    check.ok(page.evaluate("Object.keys(pendingDailies('kristen')).length") == 0, 'recovered daily is cleared from the phone')
+
+    # Online, closing on the last answer is already enough: the save starts there.
+    select('Cara')
+    page.click('#btn-start-game')
+    page.wait_for_selector('.answer-btn')
+    cara_before = page.evaluate("storage._load().users.cara.totalAnswered")
+    for i in range(10):
+        page.locator('.answer-btn').first.click()
+        if i < 9:
+            page.click('#btn-next')
+    page.wait_for_function(f"storage._load().users.cara.totalAnswered === {cara_before} + 10")
+    check.ok(True, 'last answer saves the game before "See Results" is tapped')
+    boot()
+    check.ok(page.evaluate("storage._load().users.cara.totalAnswered") == cara_before + 10, 'reopening does not count it twice')
 
     # Homework failures retain the confirmed state; successful watches are explicit.
     boot()

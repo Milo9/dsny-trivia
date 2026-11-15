@@ -92,7 +92,8 @@ class FirebaseAdapter {
   constructor() { this.initialization=null; }
   async _initialize() {
     try {
-      if(globalThis.firebaseReady) await globalThis.firebaseReady;
+      if(globalThis.loadFirebase) await globalThis.loadFirebase();
+      else if(globalThis.firebaseReady) await globalThis.firebaseReady;
       if (typeof firebase === 'undefined') throw new Error('The online connection could not load. Check your connection or use offline practice.');
       if (!firebase.apps.length) firebase.initializeApp({
         apiKey:'AIzaSyC_keHyGc1Z46rzqB9wNKJ36wZgHscfGrQ', authDomain:'disneytrivia-38ac6.firebaseapp.com',
@@ -101,12 +102,14 @@ class FirebaseAdapter {
       });
       this.db = firebase.firestore();
       this.seedReady = this._seed(); this.seedReady.catch(()=>{});
-    } catch (e) { this.initError=e; }
+    } catch (e) { return e; }
   }
   async _ready() {
-    this.initialization ||= this._initialize();
-    await this.initialization;
-    if(this.initError) throw this.initError;
+    // A failed load is not permanent: clear it so the next call retries the CDN
+    // (see bootstrap.js). Each caller checks the attempt it actually awaited.
+    const attempt=this.initialization ||= this._initialize();
+    const error=await attempt;
+    if(error) { if(this.initialization===attempt) this.initialization=null; throw error; }
   }
   async _withTimeout(fn, {attempts=2,timeoutMs=8000}={}) {
     await this._ready(); let error;
@@ -146,7 +149,10 @@ class FirebaseAdapter {
     const ref=this.db.collection('users').doc(userId);
     const key=`${op.resetRevision || 0}_${daily ? 'daily_'+daily.dateKey : op.gameId}`;
     const receiptRef=ref.collection('games').doc(key);
-    return this.db.runTransaction(async tx=>{
+    // Bounded so a stalled connection reports failure (and the app retries)
+    // instead of "Saving…" forever. A timed-out transaction may still land; the
+    // receipt makes the retry return it as already saved, never a second award.
+    return this._withTimeout(()=>this.db.runTransaction(async tx=>{
       const [snap,saved]=await Promise.all([tx.get(ref),tx.get(receiptRef)]);
       if(!snap.exists) throw new Error('Player not found.');
       const u=snap.data();
@@ -158,7 +164,7 @@ class FirebaseAdapter {
       const result=prepareStatsUpdate(u,[answered,correct,points,daily,cats,recent,period,log],op);
       const receipt={...result}; delete receipt.user;
       tx.set(receiptRef,receipt); tx.update(ref,result.user); return result;
-    });
+    }),{attempts:1,timeoutMs:20000});
   }
   async saveRecentQuestionIds(userId,ids,log) {
     await this._ready(); const ref=this.db.collection('users').doc(userId);

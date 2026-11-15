@@ -1,7 +1,7 @@
 // Offline practice only. Firestore and all cross-origin requests stay network-only.
-const CACHE = 'disney-practice-1.55';
-const CORE = ['./', 'index.html', 'style.css?v=1.55', 'bootstrap.js?v=1.55',
-  'game-logic.js?v=1.55', 'data-logic.js?v=1.55', 'storage.js?v=1.55', 'app.js?v=1.55',
+const CACHE = 'disney-practice-1.56';
+const CORE = ['./', 'index.html', 'style.css?v=1.56', 'bootstrap.js?v=1.56',
+  'game-logic.js?v=1.56', 'data-logic.js?v=1.56', 'storage.js?v=1.56', 'app.js?v=1.56',
   'questions/manifest.json', 'movies.json', 'manifest.json', 'icons/icon-192.png', 'icons/icon-512.png'];
 self.addEventListener('install', event => event.waitUntil((async () => {
   const cache = await caches.open(CACHE);

@@ -1,11 +1,16 @@
-const APP_VERSION = '1.55';
+const APP_VERSION = '1.56';
 
 const _localMemory = new Map();
 let _localDurable = true;
 const safeLocal = {
   getItem(key) { try { return localStorage.getItem(key) ?? _localMemory.get(key) ?? null; } catch { _localDurable=false; return _localMemory.get(key) ?? null; } },
   setItem(key,value) { _localMemory.set(key,value); try { localStorage.setItem(key,value); return true; } catch { _localDurable=false; return false; } },
-  removeItem(key) { _localMemory.delete(key); try { localStorage.removeItem(key); } catch { _localDurable=false; } }
+  removeItem(key) { _localMemory.delete(key); try { localStorage.removeItem(key); } catch { _localDurable=false; } },
+  keys() {
+    const keys=new Set(_localMemory.keys());
+    try { for(let i=0;i<localStorage.length;i++) keys.add(localStorage.key(i)); } catch { _localDurable=false; }
+    return [...keys].filter(Boolean);
+  }
 };
 function newGameId() { return globalThis.crypto?.randomUUID?.() || `game_${Date.now()}_${Math.random().toString(36).slice(2)}`; }
 function saveSettings() { safeLocal.setItem('disney_settings',JSON.stringify(gameSettings)); }
@@ -474,7 +479,9 @@ function historyDepth() {
 function syncHistory(id) {
   try {
     if (id === 'screen-home') {
-      if (historyDepth() > 0) {
+      // back() is asynchronous: until its popstate lands, depth still reads 1, and a
+      // second back() (two quick renderHome calls) would walk off the app entirely.
+      if (historyDepth() > 0 && !_ignoreNextPop) {
         _ignoreNextPop = true; // the popstate this back() triggers isn't a user Back press
         history.back();
       }
@@ -637,8 +644,9 @@ document.getElementById('btn-update-dismiss').addEventListener('click', () => {
   document.getElementById('update-toast').classList.add('hidden');
 });
 document.addEventListener('visibilitychange', () => {
-  if (document.visibilityState === 'visible') { checkForUpdate(); refreshDayState(); }
+  if (document.visibilityState === 'visible') { checkForUpdate(); refreshDayState(); syncUnsavedGames(); }
 });
+window.addEventListener('online', () => { syncUnsavedGames(); if (_currentScreen === 'screen-home') renderHome(); });
 setInterval(() => {
   if (document.visibilityState === 'visible') checkForUpdate();
 }, UPDATE_CHECK_INTERVAL_MS);
@@ -646,6 +654,7 @@ setInterval(() => {
 // =============================================================================
 // HOME SCREEN
 // =============================================================================
+let _homeRetryTimer = null;
 async function renderHome() {
   showScreen('screen-home');
   updateResetClock();
@@ -661,13 +670,17 @@ async function renderHome() {
   const epoch=_navigationEpoch;
 
   let users;
+  clearTimeout(_homeRetryTimer);
   try {
     users = await storage.getUsers();
   } catch (e) {
-    list.innerHTML = `<p class="load-error">Couldn't load players.<br><small>${esc(e.message || e)}</small><br><a href="" onclick="location.reload()">Tap to retry</a></p>`;
+    if(epoch!==_navigationEpoch || _currentScreen!=='screen-home') return;
+    list.innerHTML = `<p class="load-error">Couldn't load players. Trying again automatically…<br><small>${esc(e.message || e)}</small><br><a href="" onclick="location.reload()">Tap to retry now</a></p>`;
+    _homeRetryTimer = setTimeout(() => { if (_currentScreen === 'screen-home' && document.visibilityState === 'visible') renderHome(); }, 10000);
     return;
   }
   if(epoch!==_navigationEpoch || _currentScreen!=='screen-home') return;
+  _lastUsers = users;
   list.innerHTML = '';
 
   const lastId = safeLocal.getItem('disney_last_user');
@@ -700,6 +713,10 @@ async function renderHome() {
     list.appendChild(card);
     if (user.id === lastId) card.style.borderColor = 'var(--primary)';
   });
+
+  // Dated, so a card rolling over at the daily reset never looks like a lost score.
+  document.getElementById('daily-card-date').textContent = friendlyDate(today);
+  document.getElementById('yesterday-card-date').textContent = friendlyDate(dayKey(1));
 
   // Daily challenge comparison card
   const dailyCard = document.getElementById('daily-card');
@@ -758,13 +775,35 @@ async function renderHome() {
   yesterdayCard.classList.toggle('hidden', !anyYesterday);
 
   renderHomeworkCard();
+  renderSyncStatus(_syncTimer ? 1 : 0);
 }
 
-function selectUser(user) {
+async function selectUser(user) {
   currentUser = user; _offlinePractice=false;
   safeLocal.setItem('disney_last_user', user.id);
   renderSettings();
-  offerGameResume('select');
+  const hadCheckpoint = !!getGameCheckpoint(user.id);
+  await offerGameResume('select');
+  if (!hadCheckpoint) offerUnfinishedDaily(user);
+}
+
+// An earlier day's challenge that was started but not finished on this phone.
+// Asked as soon as the player is picked, so nobody has to remember the button.
+async function offerUnfinishedDaily(user) {
+  const pending=oldestPendingDaily(user.id);
+  if(!pending || currentUser?.id!==user.id || _currentScreen!=='screen-settings') return;
+  const left=pending.questions?.length ? pending.questions.length-pending.answers.length : null;
+  if(left===0) return;   // fully answered: syncUnsavedGames saves it without asking
+  const ok=await showConfirm({
+    title:'Finish your challenge?',
+    message:`You started the Daily Challenge from ${friendlyDate(pending.dateKey)}${left ? ` and have ${left} question${left!==1?'s':''} left` : ''}. Finish it now so it counts?`,
+    confirmText:'Finish it', cancelText:'Not now'
+  });
+  if(ok===true && currentUser?.id===user.id && _currentScreen==='screen-settings') startDaily(pending.dateKey,pending);
+}
+function oldestPendingDaily(userId) {
+  return Object.values(pendingDailies(userId)).filter(p=>p.dateKey!==todayKey() && p.answers?.length && (p.resetRevision||0)===(currentUser.resetRevision||0))
+    .sort((a,b)=>a.dateKey.localeCompare(b.dateKey))[0] || null;
 }
 
 // Add player
@@ -1099,6 +1138,10 @@ async function startDaily(date=todayKey(),pending=null) {
   const owner=currentUser, epoch=_navigationEpoch;
   const btn=document.getElementById('btn-daily-challenge'); btn.disabled=true;
   try {
+    if(Object.keys(pendingDailies(owner.id)).some(d=>d<date)) {
+      await Promise.race([syncUnsavedGames(),new Promise(r=>setTimeout(r,5000))]);
+      if(epoch!==_navigationEpoch || currentUser?.id!==owner.id) return;
+    }
     if(await offerGameResume('start')!=='proceed') return;
     let questions=pending?.questions;
     if(!questions?.length) {
@@ -1119,7 +1162,7 @@ async function startDaily(date=todayKey(),pending=null) {
 }
 document.getElementById('btn-daily-challenge').addEventListener('click',()=>startDaily());
 document.getElementById('btn-pending-daily').addEventListener('click',()=>{
-  const pending=Object.values(pendingDailies(currentUser.id)).filter(p=>p.dateKey!==todayKey() && p.answers?.length && (p.resetRevision||0)===(currentUser.resetRevision||0)).sort((a,b)=>a.dateKey.localeCompare(b.dateKey))[0];
+  const pending=oldestPendingDaily(currentUser.id);
   if(pending) startDaily(pending.dateKey,pending);
 });
 
@@ -1331,6 +1374,9 @@ function handleAnswer(selectedIdx) {
 
   gameState.answers.push({ question: q, selectedText: chosen.text, correct: isCorrect });
   checkpointGame();
+  // Save the moment the last answer is in, not on "See Results": closing the app
+  // on the final answer must not lose the game.
+  if (!gameState.isPractice && gameState.answers.length === gameState.questions.length) saveGame(gameState);
   document.getElementById('game-score-display').textContent = `${gameState.score} ✓`;
 
   renderExplanation(q);
@@ -1365,6 +1411,9 @@ let _exitInFlight = false;
 
 async function exitGameFlow() {
   if (gameState.ended || _exitInFlight) return;
+  // Every question answered: the save is already under way (handleAnswer), so
+  // leaving just shows the results instead of a "come back later" prompt.
+  if (!gameState.isPractice && gameState.answers.length >= gameState.questions.length) { endGame(); return; }
   _exitInFlight = true;
   try {
     if(gameState.isPractice) {renderSettings();return;}
@@ -1487,41 +1536,158 @@ async function submitFlag() {
 // RESULTS SCREEN
 // =============================================================================
 async function endGame() {
-  const state=gameState, owner=currentUser;
-  if(state.saving || (state.ended && !state.saveFailed)) return;
-  state.ended=true; state.saving=true; state.saveFailed=false;
-  state.gameId ||= state.isDaily ? 'daily_'+state.dateKey : newGameId();
-  const date=state.dateKey || todayKey(); state.dateKey=date;
-  state.scoreBreakdown=state.isPractice ? {base:0,streakBonus:0,perfectBonus:0,dailyBonus:0,total:0}
-    : scoreBreakdown(state.answers,state.isDaily && owner.lastDailyDate!==date,nextDailyStreak(owner.lastDailyDate,owner.dailyStreak,date));
-  state.pointsEarned=state.scoreBreakdown.total;
+  const state=gameState;
+  if(state.ended && (state.saving || !state.saveFailed)) return;   // again only to retry a failure
+  if(!state.ended) {
+    state.ended=true;
+    state.dateKey ||= todayKey();
+    state.gameId ||= state.isDaily ? 'daily_'+state.dateKey : newGameId();
+    // Provisional points while saving; the server's breakdown replaces them.
+    if(!state.saved) {
+      const owner=currentUser;
+      state.scoreBreakdown=state.isPractice ? {base:0,streakBonus:0,perfectBonus:0,dailyBonus:0,total:0}
+        : scoreBreakdown(state.answers,state.isDaily && owner.lastDailyDate!==state.dateKey,nextDailyStreak(owner.lastDailyDate,owner.dailyStreak,state.dateKey));
+      state.pointsEarned=state.scoreBreakdown.total;
+    }
+  }
   renderResults();
-  if(state.isPractice) {state.saving=false;renderResults();return;}
-  const daily=state.isDaily ? {score:state.score,points:0,dateKey:date,streak:null,answers:serializeAnswers(state.answers)} : null;
-  try {
-    const result=await storage.updateStats(owner.id,state.answers.length,state.score,0,daily,buildCatStats(state.answers),
-      state.answers.map(a=>a.question.id),date.slice(0,7),gameLogEntry(state,'complete',0,false),
-      {gameId:state.gameId,resetRevision:state.resetRevision||0,dateKey:date,answers:state.answers,complete:true});
-    state.alreadySaved=!!result.alreadySaved;
-    state.scoreBreakdown=result.breakdown || state.scoreBreakdown;
-    state.pointsEarned=result.points;
-    if(result.answers?.length) {
-      const map=new Map(state.questions.map(q=>[q.id,q]));
-      state.answers=result.answers.map(a=>({question:map.get(a.questionId),correct:a.correct,selectedText:a.selectedText})).filter(a=>a.question);
-      state.score=result.score;
+  if(!state.isPractice) await saveGame(state);
+}
+
+// =============================================================================
+// SAVING - one path for the results screen and automatic background recovery
+// =============================================================================
+// Commits a fully answered game. Idempotent: the server receipt (users/{id}/games)
+// means a repeat for the same gameId returns "already saved" and never awards
+// twice, so retrying automatically is always safe. The local copy (daily archive
+// or regular checkpoint) is removed only once the server has the game.
+function saveGame(state) {
+  if(state.isPractice || state.saved || state.resetInvalid) return Promise.resolve(state);
+  if(state._savePromise) return state._savePromise;
+  const attempt=(async()=>{
+    const userId=state.userId || currentUser.id;
+    state.userId=userId; state.saving=true; state.saveFailed=false;
+    state.dateKey ||= todayKey();
+    state.gameId ||= state.isDaily ? 'daily_'+state.dateKey : newGameId();
+    const date=state.dateKey, score=state.answers.filter(a=>a.correct).length;
+    const daily=state.isDaily ? {score,points:0,dateKey:date,streak:null,answers:serializeAnswers(state.answers)} : null;
+    try {
+      const result=await storage.updateStats(userId,state.answers.length,score,0,daily,buildCatStats(state.answers),
+        state.answers.map(a=>a.question.id),date.slice(0,7),gameLogEntry(state,'complete',0,false),
+        {gameId:state.gameId,resetRevision:state.resetRevision||0,dateKey:date,answers:state.answers,complete:true});
+      state.saved=true;
+      state.alreadySaved=!!result.alreadySaved;
+      state.scoreBreakdown=result.breakdown || state.scoreBreakdown;
+      state.pointsEarned=result.points;
+      if(result.answers?.length) {
+        const map=new Map(state.questions.map(q=>[q.id,q]));
+        state.answers=result.answers.map(a=>({question:map.get(a.questionId),correct:a.correct,selectedText:a.selectedText})).filter(a=>a.question);
+        state.score=result.score;
+      }
+      // Background saves refresh the player list through refreshVisibleData().
+      if(currentUser?.id===userId && gameState===state) currentUser=result.user;
+      try { saveSeenIds(userId,result.user.recentQuestionIds||[]); } catch {}
+      if(state.isDaily) clearDailyProgress(userId,date); else clearGameCheckpoint(userId,state.gameId);
+    } catch(e) {
+      state.saveFailed=true; state.saveError=e.message;
+      if(e.code==='reset-game') {
+        state.resetInvalid=true;
+        if(state.isDaily) clearDailyProgress(userId,date); else clearGameCheckpoint(userId,state.gameId);
+      } else scheduleSync();
+    } finally {
+      state.saving=false;
+      if(gameState===state && _currentScreen==='screen-results') renderResults();
     }
-    if(currentUser?.id===owner.id && gameState===state) currentUser=result.user;
-    saveSeenIds(owner.id,result.user.recentQuestionIds||[]);
-    if(state.isDaily) clearDailyProgress(owner.id,date); else clearGameCheckpoint(owner.id,state.gameId);
-  } catch(e) {
-    state.saveFailed=true; state.saveError=e.message;
-    if(e.code==='reset-game') {
-      state.resetInvalid=true;
-      if(state.isDaily) clearDailyProgress(owner.id,date);else clearGameCheckpoint(owner.id,state.gameId);
-    }
-  } finally {
-    state.saving=false;
-    if(gameState===state && _currentScreen==='screen-results') renderResults();
+    return state;
+  })();
+  return singleFlight(attempt,()=>state._savePromise,p=>{state._savePromise=p;});
+}
+
+// Holds `promise` in a slot until it settles. Cleared afterwards, never before it
+// is stored: an async body that finishes without awaiting would otherwise clear
+// the slot first and leave a settled promise in it for good.
+function singleFlight(promise,get,set) {
+  set(promise);
+  promise.finally(()=>{ if(get()===promise) set(null); }).catch(()=>{});
+  return promise;
+}
+
+// Finds every fully answered game on this device that the server doesn't have
+// yet (any player: the phone may be shared) and saves it, oldest first. Runs at
+// start-up, when the app returns to the foreground, when the connection comes
+// back, and on a backoff timer while anything is still waiting - the player
+// never has to do anything.
+let _syncPromise=null, _syncTimer=null, _syncDelayMs=0;
+const SYNC_RETRY_MIN_MS=15000, SYNC_RETRY_MAX_MS=5*60000;
+
+function localUnsavedGames() {
+  const archives={}, checkpoints={};
+  for(const key of safeLocal.keys()) {
+    const m=key.match(/^disney_(daily_archive|daily_progress|game_progress)_(.+)$/);
+    if(!m || m[2]==='offline') continue;
+    if(m[1]==='game_progress') { const cp=getGameCheckpoint(m[2]); if(cp) checkpoints[m[2]]=cp; }
+    else archives[m[2]] ||= pendingDailies(m[2]);
+  }
+  const byId=new Map([...QUESTIONS,...RETIRED_QUESTIONS].map(q=>[q.id,q]));
+  return completedUnsavedGames(archives,checkpoints,byId);
+}
+
+function syncUnsavedGames() {
+  if(!QUESTIONS.length) return Promise.resolve({saved:[],waiting:0});
+  if(_syncPromise) return _syncPromise;
+  const run=(async()=>{
+    const saved=[], blocked=new Set(); let waiting=0;
+    try {
+      for(const found of localUnsavedGames()) {
+        if(blocked.has(found.userId)) { waiting++; continue; }   // keep each player's dates in order
+        // The game on screen is saved through its own state so its results
+        // screen updates; an unfinished one is never touched.
+        const live=gameState.userId===found.userId && gameState.gameId===found.gameId;
+        if(live && gameState.answers.length<gameState.questions.length) continue;
+        const state=live ? gameState : found;
+        if(state.saved) continue;
+        await saveGame(state);
+        if(state.saved && !live) saved.push(state);
+        else if(state.saveFailed && !state.resetInvalid) { waiting++; blocked.add(found.userId); }   // try again later
+      }
+    } catch {}
+    if(waiting) scheduleSync(); else { _syncDelayMs=0; clearTimeout(_syncTimer); _syncTimer=null; }
+    if(saved.length) announceRecoveredGames(saved);
+    renderSyncStatus(waiting);
+    return {saved,waiting};
+  })();
+  return singleFlight(run,()=>_syncPromise,p=>{_syncPromise=p;});
+}
+
+function scheduleSync() {
+  if(_syncTimer) return;
+  _syncDelayMs=Math.min(SYNC_RETRY_MAX_MS,Math.max(SYNC_RETRY_MIN_MS,_syncDelayMs*2));
+  _syncTimer=setTimeout(()=>{ _syncTimer=null; if(document.visibilityState==='visible') syncUnsavedGames(); else scheduleSync(); },_syncDelayMs);
+}
+
+function friendlyDate(dateKey) {
+  return new Date(dateKey+'T12:00:00Z').toLocaleDateString([],{weekday:'short',month:'short',day:'numeric',timeZone:'UTC'});
+}
+
+let _recoveredNote='', _lastUsers=[];
+function announceRecoveredGames(states) {
+  const names=new Map(_lastUsers.map(u=>[u.id,u.name]));
+  _recoveredNote='✓ Saved '+states.map(st=>`${names.get(st.userId) || 'a player'}'s ${st.isDaily ? 'challenge from '+friendlyDate(st.dateKey) : 'game'}`).join(', ')+'.';
+  refreshVisibleData();
+}
+
+function renderSyncStatus(waiting) {
+  const el=document.getElementById('sync-status');
+  if(el) el.textContent=waiting ? 'A finished game is waiting for a connection. It will save by itself.' : _recoveredNote;
+}
+
+// Re-reads players for whichever screen is showing (never mid-game).
+async function refreshVisibleData() {
+  if(_currentScreen==='screen-game' || gameState.saving) return;
+  if(_currentScreen==='screen-home') renderHome();
+  else if(_currentScreen==='screen-settings' && currentUser && !_offlinePractice) {
+    const owner=currentUser.id,epoch=_navigationEpoch;
+    try {const users=await storage.getUsers();if(epoch!==_navigationEpoch||currentUser?.id!==owner)return;currentUser=users.find(u=>u.id===owner)||currentUser;renderSettings();}catch{}
   }
 }
 
@@ -1530,8 +1696,8 @@ function renderResults() {
   if(!gameState.fanfarePlayed) {sounds.fanfare();gameState.fanfarePlayed=true;}
 
   const status=document.getElementById('save-status');
-  status.textContent=gameState.isPractice ? 'Practice complete · leaderboard unchanged' : gameState.saving ? 'Saving…' : gameState.saveFailed ? (gameState.saveError || 'Could not save. Your game is kept on this device.') : gameState.alreadySaved ? 'Already saved · counted once' : 'Saved ✓';
-  document.getElementById('btn-retry-save').classList.toggle('hidden',!gameState.saveFailed || gameState.resetInvalid);
+  status.textContent=gameState.isPractice ? 'Practice complete · leaderboard unchanged' : gameState.saving ? 'Saving…' : gameState.resetInvalid ? (gameState.saveError || 'Scores were reset. Start a new game.') : gameState.saveFailed ? 'Not saved yet · it will save by itself when the connection is back' : gameState.alreadySaved ? 'Already saved · counted once' : 'Saved ✓';
+  document.getElementById('btn-retry-save').classList.toggle('hidden',!gameState.saveFailed || !!gameState.resetInvalid);
   document.getElementById('btn-retry-save').disabled=!!gameState.saving;
   const total      = gameState.questions.length;
   const score      = gameState.score;
@@ -1547,7 +1713,7 @@ function renderResults() {
   document.getElementById('results-emoji').textContent    = emoji;
   document.getElementById('results-title').textContent    = title;
   document.getElementById('results-fireworks').classList.toggle('perfect', percentage === 100);
-  document.getElementById('save-warning').classList.toggle('hidden', !gameState.saveFailed);
+  document.getElementById('save-warning').classList.toggle('hidden', !gameState.saveFailed || !!gameState.resetInvalid);
   document.getElementById('results-fraction').textContent = `${score} out of ${total} correct`;
   document.getElementById('results-pct').textContent      = percentage + '%';
 
@@ -1849,6 +2015,7 @@ async function init() {
   }
   stopBootQuotes();
   renderHome();
+  syncUnsavedGames();
   loadOptionalHomework();
   checkForUpdate();
   if('serviceWorker' in navigator && location.protocol!=='file:') navigator.serviceWorker.register('sw.js').catch(()=>{});
@@ -1879,12 +2046,7 @@ async function refreshDayState() {
   // Shared homework can change on another device within the same week too.
   // Refresh independently; it must never interrupt or block an active game.
   loadOptionalHomework();
-  if(_currentScreen==='screen-game' || gameState.saving) return;
-  if(_currentScreen==='screen-home') renderHome();
-  else if(_currentScreen==='screen-settings' && currentUser && !_offlinePractice) {
-    const owner=currentUser.id,epoch=_navigationEpoch;
-    try {const users=await storage.getUsers();if(epoch!==_navigationEpoch||currentUser?.id!==owner)return;currentUser=users.find(u=>u.id===owner)||currentUser;renderSettings();}catch{}
-  }
+  await refreshVisibleData();
 }
 setInterval(()=>{if(document.visibilityState==='visible'){updateResetClock();if(_lastDay!==todayKey())refreshDayState();}},30000);
 document.getElementById('btn-retry-save').addEventListener('click',()=>endGame());

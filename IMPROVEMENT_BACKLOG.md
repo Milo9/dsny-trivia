@@ -145,3 +145,18 @@ Original item: Belle hero card fills the
 first viewport; "Who's playing?" sits at the bottom edge, Cara is off-screen. Confirm
 on a real phone; shrink hero on small heights. Only 2 of 19 screenshots were viewed —
 a fuller visual pass may find more. *Small.*
+
+**15. ✅ DONE 2026-11-15 (v1.56) — Finished games could be silently lost.** Player report:
+The Oldies' 2026-11-14 daily never reached Firestore (no receipt, user doc untouched
+since the Nov 13 save; no reset/restore). A game only saved on "See Results", so closing
+the app on the last answer sent nothing; a failed save needed a tapped Retry or a buried
+settings button; a Firebase CDN timeout at launch was cached for the whole session. Now:
+save starts on the last answer; every fully answered game on the device (any player)
+saves itself at launch / foreground / reconnect / backoff timer, oldest first (streak
+order), and before a newer daily starts; Firebase loading retries; `updateStats` is
+bounded at 20 s; the player list retries itself; picking a player offers an unfinished
+earlier challenge; Today/Yesterday cards show their date (a rolled-over card was
+mistaken for a vanished score). Also fixed two latent bugs found on the way: a double
+`history.back()` that could leave the app after a reload, and the Retry button's
+`classList.toggle(…, undefined)` flipping instead of showing. Not covered: playing a
+daily that has never been loaded while offline (pins come from the server).
