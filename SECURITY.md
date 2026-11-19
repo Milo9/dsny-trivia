@@ -21,6 +21,12 @@ Deploy the updated app together with these rules. Old app versions cannot create
 new ID-only daily pins under this policy; existing ID-only pins can be upgraded
 once, preserving their IDs. Published snapshots remain immutable.
 
+`meta/dailyHistory` (`{days: {date: [ids]}}`, at most 400 days) caches recent daily
+pins for picking new days. Days can be added or pruned, never rewritten. It is
+only a cache: the app writes it best effort and rebuilds missing days from
+`dailies/*`, so the app keeps working, just more slowly, if these rules are not
+yet deployed.
+
 Run emulator checks against a demo project, never the production project:
 
 ```

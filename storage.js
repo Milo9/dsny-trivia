@@ -57,9 +57,10 @@ class LocalStorageAdapter {
     if (!d.dailies[date]) { d.dailies[date] = ids; this._save(d); }
   }
   async claimDailyPins(date, ids) { await this.saveDailyPins(date,ids); return this.getDailyPins(date); }
-  async getAllDailyQuestionIds(since) {
-    return [...new Set(Object.entries(this._load().dailies || {}).filter(([date]) => date >= since)
-      .sort(([a],[b])=>a.localeCompare(b)).flatMap(([,d]) => Array.isArray(d) ? d : d.questionIds || []))];
+  // Local dailies are already one small map, so they are the history.
+  async getDailyHistory(since) {
+    return mergeDailyHistory(since, Object.fromEntries(Object.entries(this._load().dailies || {})
+      .map(([date, d]) => [date, Array.isArray(d) ? d : d.questionIds || []])));
   }
   async getHomeworkState() { return this._load().weeklyHomework || null; }
   async updateHomework(action, movies, week, at) {
@@ -181,14 +182,32 @@ class FirebaseAdapter {
   async getDailyQuestions(date) {
     return this._withTimeout(async()=>{const s=await this.db.collection('dailies').doc(date).get();return s.exists?s.data().questions||null:null;});
   }
-  async claimDailyQuestions(date,candidates,pool) {
-    return this._withTimeout(()=>this.db.runTransaction(async tx=>{
+  // `history` ({since, days} from getDailyHistory) is optional. Recording it is
+  // best effort and separate from the claim: meta/dailyHistory is only a cache
+  // of dailies/*, and getDailyHistory refills any day it lacks.
+  async claimDailyQuestions(date,candidates,pool,history=null) {
+    const questions=await this._withTimeout(()=>this.db.runTransaction(async tx=>{
       const ref=this.db.collection('dailies').doc(date), s=await tx.get(ref);
       const old=s.exists?s.data():null;
       const canonical=canonicalDaily(old,candidates,pool);
       if(!old?.questions?.length) tx.set(ref,canonical);
       return canonical.questions;
     }));
+    if(history) {
+      await this._withTimeout(()=>this._recordDailyHistory(history.since,history.days,date,questions.map(q=>q.id)),
+        {attempts:1,timeoutMs:5000}).catch(()=>{});
+    }
+    return questions;
+  }
+  // Stored entries win over new ones, so no existing day is ever rewritten
+  // (the rules allow adding and pruning days only).
+  async _recordDailyHistory(since,days,date,ids) {
+    const ref=this.db.collection('meta').doc('dailyHistory');
+    await this.db.runTransaction(async tx=>{
+      const s=await tx.get(ref), stored=s.exists?s.data().days||{}:{};
+      const next=mergeDailyHistory(since,stored,days,{[date]:ids});
+      if(!s.exists || JSON.stringify(next)!==JSON.stringify(mergeDailyHistory('',stored))) tx.set(ref,{days:next});
+    });
   }
   async saveDailyPins(date,ids) { return this.claimDailyPins(date,ids); }
   async claimDailyPins(date,ids) {
@@ -198,11 +217,28 @@ class FirebaseAdapter {
       tx.set(ref,{questionIds:ids});return ids;
     }));
   }
-  async getAllDailyQuestionIds(since) {
+  // Daily pins from `since` up to (not including) `before`, as {date: [ids]}.
+  // Reads the small meta/dailyHistory cache, then fills gaps from dailies/*
+  // directly: a few missing days one by one, many (first run, or an old app
+  // version pinned days without recording them) with one query. Days with no
+  // pin are recorded as [] so they aren't re-read. Throws if the pins can't be
+  // read; the caller must not pick a new daily without them.
+  async getDailyHistory(since,before) {
     return this._withTimeout(async()=>{
-      const s=await this.db.collection('dailies').where(firebase.firestore.FieldPath.documentId(),'>=',since).get();
-      return [...new Set(s.docs.sort((a,b)=>a.id.localeCompare(b.id)).flatMap(d=>d.data().questionIds||[]))];
-    });
+      let stored={};
+      try { const s=await this.db.collection('meta').doc('dailyHistory').get(); stored=s.exists?s.data().days||{}:{}; }
+      catch(e) { /* a missing or unreadable cache only means more reads below */ }
+      let days=mergeDailyHistory(since,stored);
+      const missing=missingHistoryDates(days,since,before);
+      if(missing.length>14) {
+        const s=await this.db.collection('dailies').where(firebase.firestore.FieldPath.documentId(),'>=',since).get();
+        days=mergeDailyHistory(since,days,Object.fromEntries(s.docs.map(d=>[d.id,d.data().questionIds||[]])));
+      } else if(missing.length) {
+        const docs=await Promise.all(missing.map(d=>this.db.collection('dailies').doc(d).get()));
+        days=mergeDailyHistory(since,days,Object.fromEntries(docs.filter(d=>d.exists).map(d=>[d.id,d.data().questionIds||[]])));
+      }
+      return mergeDailyHistory(since,days,Object.fromEntries(missingHistoryDates(days,since,before).map(d=>[d,[]])));
+    },{attempts:3,timeoutMs:10000});
   }
   async getHomeworkState() {
     return this._withTimeout(async()=>{const s=await this.db.collection('weeklyHomework').doc('state').get();return s.exists?s.data():null;});

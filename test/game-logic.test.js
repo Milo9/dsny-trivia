@@ -79,13 +79,63 @@ test('pickDailyQuestions ignores pool order and honors exclusions', () => {
   assert.ok(c.every(x => !excl.has(x.id)));
 });
 
+const ids = list => list.map(x => x.id).sort((a, b) => a - b);
+
 test('pickDailyQuestions preserves fresh questions and relaxes oldest exclusions first', () => {
   const pool = Array.from({ length: 12 }, (_, i) => q(i + 1));
   const excl = new Set([1, 2, 3, 4, 5]);
   const picked = L.pickDailyQuestions(pool, '2026-10-05', 10, excl);
   assert.equal(picked.length, 10);
-  assert.ok(picked.slice(0,7).every(x=>x.id>5));
-  assert.deepEqual(picked.slice(7).map(x=>x.id),[1,2,3]);
+  assert.deepEqual(ids(picked), [1, 2, 3, 6, 7, 8, 9, 10, 11, 12]);
+});
+
+// 7 categories x 3 difficulties, 10 of each combination (210 questions).
+const CATS = ['movies','characters','parks','walt','cruise','music','pixar'];
+const mixedPool = () => CATS.flatMap((c, ci) => ['easy','medium','hard'].flatMap((d, di) =>
+  Array.from({ length: 10 }, (_, i) => q(ci * 100 + di * 10 + i + 1, d, c))));
+const tally = (list, key) => list.reduce((m, x) => (m[x[key]] = (m[x[key]] || 0) + 1, m), {});
+
+test('difficultyTargets splits rounds 20/50/30', () => {
+  assert.deepEqual(L.difficultyTargets(10), { easy: 2, medium: 5, hard: 3 });
+  assert.deepEqual(L.difficultyTargets(20), { easy: 4, medium: 10, hard: 6 });
+  assert.deepEqual(L.difficultyTargets(30), { easy: 6, medium: 15, hard: 9 });
+  assert.deepEqual(L.difficultyTargets(50), { easy: 10, medium: 25, hard: 15 });
+});
+
+test('daily rounds are 2/5/3 with at most 3 per category and at least 5 categories', () => {
+  const pool = mixedPool();
+  for (const date of ['2026-11-19', '2026-11-20', '2026-12-25', '2027-03-01']) {
+    const picked = L.pickDailyQuestions(pool, date, 10);
+    assert.deepEqual(tally(picked, 'difficulty'), { easy: 2, medium: 5, hard: 3 });
+    const cats = tally(picked, 'category');
+    assert.ok(Math.max(...Object.values(cats)) <= 3, JSON.stringify(cats));
+    assert.ok(Object.keys(cats).length >= 5, JSON.stringify(cats));
+    assert.deepEqual(ids(picked), ids(L.pickDailyQuestions([...pool].reverse(), date, 10)));
+  }
+});
+
+test('freshness beats mix: excluded questions are only used once fresh ones run out', () => {
+  const pool = mixedPool();
+  const excl = new Set(pool.filter(x => x.difficulty !== 'hard').map(x => x.id));
+  const picked = L.pickDailyQuestions(pool, '2026-11-19', 10, excl);
+  assert.ok(picked.every(x => x.difficulty === 'hard'));
+  assert.ok(Math.max(...Object.values(tally(picked, 'category'))) <= 3);
+});
+
+test('a medium stands in when easy questions run dry', () => {
+  const pool = mixedPool().filter(x => x.difficulty !== 'easy' || x.id === 1);
+  const picked = L.pickBalanced([L.seededShuffle(pool, 7)], 10, L.roundMix(pool));
+  assert.deepEqual(tally(picked, 'difficulty'), { easy: 1, medium: 6, hard: 3 });
+});
+
+test('player filters win over balancing', () => {
+  const easyOnly = mixedPool().filter(x => x.difficulty === 'easy');
+  assert.ok(L.pickRegularQuestions(easyOnly, [], 10, seqRng(2)).every(x => x.difficulty === 'easy'));
+  const twoCats = mixedPool().filter(x => x.category === 'walt' || x.category === 'cruise');
+  const cats = tally(L.pickRegularQuestions(twoCats, [], 10, seqRng(2)), 'category');
+  assert.deepEqual(cats, { walt: 5, cruise: 5 });
+  const oneCat = mixedPool().filter(x => x.category === 'walt');
+  assert.equal(L.pickRegularQuestions(oneCat, [], 20, seqRng(2)).length, 20);
 });
 
 test('pickRegularQuestions preserves unseen questions and tops up with oldest repeats', () => {
@@ -96,10 +146,33 @@ test('pickRegularQuestions preserves unseen questions and tops up with oldest re
   assert.ok(fresh.every(x => x.id > 8));
   const seen15 = Array.from({ length: 15 }, (_, i) => i + 1);
   const mixed = L.pickRegularQuestions(pool, seen15, 10, seqRng(3));
-  assert.equal(mixed.length, 10);
-  assert.equal(new Set(mixed.map(x => x.id)).size, 10);
-  assert.ok(mixed.slice(0,5).every(x=>x.id>15));
-  assert.deepEqual(mixed.slice(5).map(x=>x.id),[1,2,3,4,5]);
+  assert.deepEqual(ids(mixed), [1, 2, 3, 4, 5, 16, 17, 18, 19, 20]);
+});
+
+test('pickRegularQuestions serves never-answered before long-ago, fewest answers first', () => {
+  const pool = Array.from({ length: 30 }, (_, i) => q(i + 1));
+  const recent = [1, 2, 3, 4, 5];
+  // 6-20 answered before (fell out of the recent window); 21-30 never answered.
+  const answered = new Map(Array.from({ length: 15 }, (_, i) => [i + 6, i < 5 ? 1 : 3]));
+  const first = L.pickRegularQuestions(pool, recent, 10, seqRng(4), answered);
+  assert.deepEqual(ids(first), [21, 22, 23, 24, 25, 26, 27, 28, 29, 30]);
+  const more = L.pickRegularQuestions(pool, recent, 15, seqRng(4), answered);
+  assert.deepEqual(ids(more), [6, 7, 8, 9, 10, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]);
+  const all = L.pickRegularQuestions(pool, recent, 27, seqRng(4), answered);
+  assert.deepEqual(ids(all).slice(0, 2), [1, 2]);
+  assert.ok(!all.some(x => x.id === 4 || x.id === 5));
+});
+
+test('daily history merges without rewriting days and finds gaps', () => {
+  const merged = L.mergeDailyHistory('2026-11-02', { '2026-11-03': [1], '2026-11-01': [9] },
+    { '2026-11-03': [2], '2026-11-02': [3] });
+  assert.deepEqual(merged, { '2026-11-02': [3], '2026-11-03': [1] });
+  assert.deepEqual(Object.keys(merged), ['2026-11-02', '2026-11-03']);
+  assert.deepEqual(L.missingHistoryDates({ '2026-11-02': [], '2026-11-04': [5] }, '2026-11-01', '2026-11-05'),
+    ['2026-11-01', '2026-11-03']);
+  assert.deepEqual(L.dailyHistoryIds({ '2026-11-04': [5, 6], '2026-11-02': [], '2026-11-01': [7] }), [7, 5, 6]);
+  assert.equal(L.addDays('2026-12-31', 1), '2027-01-01');
+  assert.equal(L.addDays('2026-03-08', -180), '2025-09-09');
 });
 
 test('capSeenIds keeps only the most recent entries', () => {

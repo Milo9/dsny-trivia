@@ -60,6 +60,14 @@ test('published daily snapshots survive content removal and competing candidates
   const again=await s.claimDailyQuestions('2026-10-29',[{...question,id:99}],[]);
   assert.equal(again.length,10);assert.equal(again[0].id,first[0].id);
 });
+test('local daily history lists pins in the window, legacy and snapshot alike',async()=>{
+  const s=adapter();const qs=Array.from({length:10},(_,i)=>({...question,id:i+1}));
+  await s.saveDailyPins('2026-10-01',[50,51]);await s.claimDailyQuestions('2026-10-29',qs,qs);
+  await s.saveDailyPins('2026-09-01',[60]);
+  const days=await s.getDailyHistory('2026-09-15','2026-10-30');
+  assert.deepEqual(Object.keys(days),['2026-10-01','2026-10-29']);
+  assert.deepEqual(Array.from(days['2026-10-01']),[50,51]);assert.equal(days['2026-10-29'].length,10);
+});
 test('legacy pins migrate in order and missing ids never get private replacements',async()=>{
   const s=adapter();await s.saveDailyPins('2026-10-29',[10]);
   await assert.rejects(s.claimDailyQuestions('2026-10-29',[question],[]));

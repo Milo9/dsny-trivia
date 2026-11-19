@@ -100,6 +100,30 @@ def run_regressions(browser, base, check, stop_origin, set_stall=None):
 
     page.evaluate("clearGameCheckpoint('kristen')")
 
+    # Unreadable past pins block a new daily instead of saving an unprotected
+    # pick for everyone (2026-11-03 repeated 6 of 10). Once readable, the pick is
+    # balanced and avoids recent pins.
+    boot()
+    page.evaluate("todayKey=()=> '2026-10-15'")
+    page.evaluate("""() => {const d=storage._load();d.dailies=d.dailies||{};
+      d.dailies['2026-10-14']={questionIds:QUESTIONS.slice(0,10).map(q=>q.id),questions:QUESTIONS.slice(0,10)};storage._save(d);
+      storage._realHistory=storage.getDailyHistory;storage.getDailyHistory=()=>Promise.reject(Error('timed out'));}""")
+    select('Cara')
+    page.click('#btn-daily-challenge')
+    page.wait_for_selector('#confirm-overlay:not(.hidden)')
+    check.ok("weren't picked" in page.inner_text('#confirm-overlay')
+             and page.evaluate("!storage._load().dailies['2026-10-15']"), 'unreadable past pins block the daily instead of pinning without them')
+    page.click('#confirm-ok')
+    page.evaluate("() => { storage.getDailyHistory=storage._realHistory; }")
+    page.click('#btn-daily-challenge')
+    page.wait_for_selector('.answer-btn')
+    mix = page.evaluate("""(() => {const qs=storage._load().dailies['2026-10-15'].questions, old=new Set(QUESTIONS.slice(0,10).map(q=>q.id));
+      const d={easy:0,medium:0,hard:0},c={};qs.forEach(q=>{d[q.difficulty]++;c[q.category]=(c[q.category]||0)+1;});
+      return {d, maxCat:Math.max(...Object.values(c)), cats:Object.keys(c).length, repeats:qs.filter(q=>old.has(q.id)).length};})()""")
+    check.ok(mix['d'] == {'easy': 2, 'medium': 5, 'hard': 3} and mix['maxCat'] <= 3 and mix['cats'] >= 5
+             and mix['repeats'] == 0, f'new daily is balanced and avoids recent pins: {mix}')
+    page.evaluate("clearDailyProgress('cara')")
+
     # A failed daily remains available after rollover and credits its own month.
     boot()
     page.evaluate("todayKey=()=> '2026-10-31'")

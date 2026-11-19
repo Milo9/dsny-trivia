@@ -160,3 +160,17 @@ mistaken for a vanished score). Also fixed two latent bugs found on the way: a d
 `history.back()` that could leave the app after a reload, and the Retry button's
 `classList.toggle(…, undefined)` flipping instead of showing. Not covered: playing a
 daily that has never been loaded while offline (pins come from the server).
+
+**16. ✅ DONE 2026-11-18 (v1.58) — Question selection audit: repeats, difficulty and topic mix.**
+Found: daily exclusions failed open, so a timed-out read pinned a pick with no
+protection for everyone (2026-10-13: history read failed, 4 repeats; 2026-11-03: both
+reads failed, 6 of 10 repeated, confirmed by replaying the picker). Neither mode
+balanced anything (10% of dailies had no easy question, 13% had 5+ from one
+category), and regular games forgot answers after 300, so heavy players got ~20-30%
+repeats with hundreds of questions never seen. Done: the daily refuses to pick
+without past pins (`meta/dailyHistory` cache + gap fill, rules added); both modes
+use `pickBalanced` (2/5/3, ≤30% per category, ≥5 categories, filters win); regular
+games serve never-answered questions first (`questionStats`). See DEVELOPMENT.md →
+Question selection. Not covered: answers before 2026-10-29 are only known through
+the 300-ID recent window; same-film clustering is unmeasured (`film` is on 339 of
+2,191 questions).

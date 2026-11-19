@@ -75,6 +75,37 @@ test('legacy ID-only pins can be upgraded once without changing the IDs',async()
   assert.equal(r.length,10);assert.equal(r[0].id,1);
   await assertFails(db.collection('dailies').doc('2026-10-29').update({questions:[]}));
 });
+test('daily history backfills from dailies, records new pins, and never rewrites a day',async()=>{
+  const day=(n,base)=>Array.from({length:10},(_,i)=>({...question,id:base+i}));
+  await env.withSecurityRulesDisabled(async ctx=>{
+    for(const [date,base] of [['2026-10-01',100],['2026-10-20',200],['2026-09-01',300]]) {
+      const qs=day(10,base);await ctx.firestore().collection('dailies').doc(date).set({questionIds:qs.map(q=>q.id),questions:qs});
+    }
+  });
+  // No cache yet: many missing days -> one query; unplayed days recorded as [].
+  let days=await adapter.getDailyHistory('2026-09-20','2026-10-22');
+  assert.deepEqual(Array.from(days['2026-10-01']),day(10,100).map(q=>q.id));
+  assert.deepEqual(Array.from(days['2026-10-02']),[]);assert.ok(!('2026-09-01' in days));
+  const pick=day(10,400);
+  await adapter.claimDailyQuestions('2026-10-22',pick,pick,{since:'2026-09-20',days});
+  const cache=(await db.collection('meta').doc('dailyHistory').get()).data().days;
+  assert.deepEqual(Array.from(cache['2026-10-22']),pick.map(q=>q.id));
+  assert.deepEqual(Array.from(cache['2026-10-20']),day(10,200).map(q=>q.id));
+  // A day pinned without the cache (old app version) is read directly next time.
+  await env.withSecurityRulesDisabled(async ctx=>{
+    const qs=day(10,500);await ctx.firestore().collection('dailies').doc('2026-10-23').set({questionIds:qs.map(q=>q.id),questions:qs});
+  });
+  days=await adapter.getDailyHistory('2026-09-20','2026-10-24');
+  assert.deepEqual(Array.from(days['2026-10-23']),day(10,500).map(q=>q.id));
+  // Rules: days can be added or pruned, never rewritten; other fields rejected.
+  const ref=db.collection('meta').doc('dailyHistory');
+  await assertFails(ref.update({'days.2026-10-22':[1,2,3]}));
+  await assertFails(ref.update({extra:true}));
+  await assertFails(ref.delete());
+  await assertSucceeds(ref.update({'days.2026-10-25':[7,8]}));
+  const pruned={...cache};delete pruned['2026-09-20'];
+  await assertSucceeds(ref.set({days:pruned}));
+});
 test('transactional homework changes merge against fresh server history',async()=>{
   const movies=[{id:1},{id:2},{id:3}];
   await adapter.updateHomework({type:'refresh'},movies,'2026-10-29','2026-10-29');

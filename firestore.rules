@@ -32,6 +32,18 @@ service cloud.firestore {
         && d.questions[6].id == d.questionIds[6] && d.questions[7].id == d.questionIds[7]
         && d.questions[8].id == d.questionIds[8] && d.questions[9].id == d.questionIds[9];
     }
+    // Cache of recent daily pins, {days: {"YYYY-MM-DD": [ids]}}, so picking a new
+    // day needs one small read. Days may be added or pruned, never rewritten.
+    function dailyHistory(d) {
+      return d.keys().hasOnly(['days']) && d.days is map && d.days.size() <= 400;
+    }
+    match /meta/dailyHistory {
+      allow read: if true;
+      allow create: if dailyHistory(request.resource.data);
+      allow update: if dailyHistory(request.resource.data)
+        && request.resource.data.days.diff(resource.data.days).changedKeys().size() == 0;
+      allow delete: if false;
+    }
     match /users/{id} {
       allow read: if true;
       allow create: if player(request.resource.data,id)

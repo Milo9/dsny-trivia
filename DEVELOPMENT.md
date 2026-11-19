@@ -61,9 +61,37 @@ legacy daily migration and old checkpoints, and never enter a new game's pool.
 Never randomly replace a missing historical question. Show an unavailable state
 if its original record cannot be recovered.
 
-Unseen questions are selected first. Regular games top up from oldest seen IDs;
-daily selection relaxes oldest exclusions first. Shared recent history is merged
-inside transactions, deduplicated, and capped at 300 IDs.
+### Question selection (game-logic.js)
+
+Both modes pick from priority tiers with `pickBalanced`; an earlier tier always
+wins over a later one, so freshness beats mix.
+
+- **Mix:** when the pool has more than one difficulty, targets are 20/50/30
+  easy/medium/hard (`difficultyTargets`: 2/5/3 per 10). No category fills more
+  than 30% of a round (3 of 10) unless fewer categories are in play, and a round
+  touches at least 5 categories when 5 are available. When a tier runs dry, a
+  medium stands in for a missing easy or hard, then limits relax in order.
+  Player filters always win: a single-difficulty or single-category pool is not
+  balanced against itself. Easy is capped at 20% because the bank has ~420 easy
+  questions and the daily excludes 180 days of pins; a one-year simulation from
+  real 2026-11 data gave 2/5/3, at most 3 per category, at least 5 categories and
+  no repeats every day.
+- **Daily:** tiers are fresh, then excluded (oldest exclusion first). Exclusions are
+  every pin of the last `DAILY_HISTORY_DAYS` (180) days plus every player's
+  `recentQuestionIds`. Past pins come from `meta/dailyHistory`, a small cache of
+  `dailies/*` written best effort after each claim; `getDailyHistory` fills
+  missing days from `dailies/*` (one query when more than 14 are missing) and
+  records unplayed days as `[]`. **If past pins can't be read, the daily is not
+  picked** and the player is asked to retry: the first pick is saved for
+  everyone and is immutable. Failing open caused 4 repeats on 2026-10-13 and 6 on
+  2026-11-03. Other players' recent IDs fall back to the current player's own.
+- **Regular games:** tiers are never answered by this player (`questionStats`,
+  kept since 2026-10-29, and `missedQuestionIds`), then answered before but
+  outside the recent window (fewest answers first), then the recent window (least
+  recently seen first). The final order is shuffled.
+
+Shared recent history is merged inside transactions, deduplicated, and capped at
+300 IDs.
 
 ## Practice and content
 

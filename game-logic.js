@@ -25,14 +25,91 @@ function capSeenIds(seen, newIds, max = SEEN_MAX) {
   return all.length > max ? all.slice(all.length - max) : all;
 }
 
-// Unseen first, then the least recently seen. Never discard fresh questions.
-function pickRegularQuestions(pool, seenIds, count, rng = Math.random) {
-  const seen  = new Set(seenIds);
-  const fresh = pool.filter(q => !seen.has(q.id));
+// --- Round mix -----------------------------------------------------------------
+
+// Difficulty shares for a round whose pool has more than one difficulty:
+// 2 easy / 5 medium / 3 hard per 10. Easy stays at 20% because the bank has only
+// ~420 easy questions and the daily keeps 180 days of pins out of play.
+const MIX_SHARES = { easy: 0.2, medium: 0.5, hard: 0.3 };
+// No category fills more than 30% of a round (3 of 10), unless too few
+// categories are in play for that to be possible.
+const CATEGORY_CAP_SHARE = 0.3;
+
+// Whole-question targets per difficulty (largest remainder), e.g. 10 → 2/5/3.
+function difficultyTargets(count, shares = MIX_SHARES) {
+  const keys = Object.keys(shares), raw = keys.map(k => shares[k] * count);
+  const out = Object.fromEntries(keys.map((k, i) => [k, Math.floor(raw[i] + 1e-9)]));
+  let left = count - Object.values(out).reduce((a, b) => a + b, 0);
+  keys.map((k, i) => [k, raw[i] - out[k]]).sort((a, b) => b[1] - a[1])
+    .forEach(([k]) => { if (left > 0) { out[k]++; left--; } });
+  return out;
+}
+
+// Balancing options derived from the pool itself, so player filters win: a
+// single-difficulty or single-category pool is never "balanced" against itself.
+function roundMix(pool) {
+  return { balanceDifficulty: new Set(pool.map(q => q.difficulty)).size > 1,
+    categoryCount: new Set(pool.map(q => q.category)).size };
+}
+
+// A round should touch at least this many categories (when that many are in play).
+const MIN_ROUND_CATEGORIES = 5;
+
+// Picks `count` questions from priority tiers. An earlier tier always wins over
+// a later one (freshness beats mix). Inside a tier it walks the tier's order and
+// takes questions that keep the round balanced, relaxing only when the tier
+// can't supply a balanced fill:
+//   1. difficulty under its target, category under its cap, and enough slots
+//      left to still reach the minimum number of categories
+//   2. as 1, but a medium may stand in for a missing easy or hard
+//   3. category cap only
+//   4. anything
+function pickBalanced(tiers, count, { balanceDifficulty = true, categoryCount = 1 } = {}) {
+  const targets = balanceDifficulty ? difficultyTargets(count) : null;
+  const cap = categoryCount > 1
+    ? Math.max(Math.round(count * CATEGORY_CAP_SHARE), Math.ceil(count / categoryCount)) : Infinity;
+  const minCats = Math.min(MIN_ROUND_CATEGORIES, categoryCount, Math.ceil(count / 2));
+  const picked = [], ids = new Set(), byDiff = {}, byCat = {};
+  const diffOk = q => !targets || (byDiff[q.difficulty] || 0) < (targets[q.difficulty] || 0);
+  const catOk = q => (byCat[q.category] || 0) < cap;
+  // Taking q must leave enough slots to bring in the categories still missing.
+  const spreadOk = q => {
+    const distinct = Object.keys(byCat).length + (byCat[q.category] ? 0 : 1);
+    return minCats - distinct <= count - picked.length - 1;
+  };
+  const passes = [
+    q => diffOk(q) && catOk(q) && spreadOk(q),
+    q => (diffOk(q) || q.difficulty === 'medium') && catOk(q) && spreadOk(q),
+    q => catOk(q),
+    () => true
+  ];
+  for (const tier of tiers) for (const ok of passes) for (const q of tier) {
+    if (picked.length >= count) return picked;
+    if (ids.has(q.id) || !ok(q)) continue;
+    picked.push(q); ids.add(q.id);
+    byDiff[q.difficulty] = (byDiff[q.difficulty] || 0) + 1;
+    byCat[q.category] = (byCat[q.category] || 0) + 1;
+  }
+  return picked;
+}
+
+// Regular games, in priority order:
+//   1. questions this player has never answered (random)
+//   2. answered before but not recently: fewest answers first (random ties)
+//   3. the recent window (seenIds), least recently seen first
+// `answered` maps question id → times answered (built from questionStats and
+// missedQuestionIds), so a question from 301 answers ago is no longer treated
+// as new. The final order is shuffled.
+function pickRegularQuestions(pool, seenIds, count, rng = Math.random, answered = new Map()) {
+  const recent = new Set(seenIds);
+  const times = id => answered.get(id) || 0;
   const age = new Map(seenIds.map((id, i) => [id, i]));
-  const repeats = shuffle(pool.filter(q => seen.has(q.id)), rng)
+  const never = shuffle(pool.filter(q => !recent.has(q.id) && !times(q.id)), rng);
+  const older = shuffle(pool.filter(q => !recent.has(q.id) && times(q.id)), rng)
+    .sort((a, b) => times(a.id) - times(b.id));
+  const repeats = shuffle(pool.filter(q => recent.has(q.id)), rng)
     .sort((a, b) => age.get(a.id) - age.get(b.id));
-  return shuffle(fresh, rng).concat(repeats).slice(0, count);
+  return shuffle(pickBalanced([never, older, repeats], count, roundMix(pool)), rng);
 }
 
 // --- Dates -------------------------------------------------------------------
@@ -108,15 +185,53 @@ function dateToSeed(key) {
 }
 
 // Stable-sorts by id first so shard/load order doesn't affect the result.
-// Exclusions are insertion-ordered oldest first, allowing gradual cooldown relaxation.
+// Exclusions are insertion-ordered oldest first, allowing gradual cooldown
+// relaxation. Fresh questions always win over excluded ones; within each, the
+// round is balanced (pickBalanced) and the final order is shuffled by the date.
 function pickDailyQuestions(pool, dateKeyStr, count = 10, excludeIds = new Set()) {
+  const seed     = dateToSeed(dateKeyStr);
   const sorted   = [...pool].sort((a, b) => a.id - b.id);
-  const shuffled = seededShuffle(sorted, dateToSeed(dateKeyStr));
+  const shuffled = seededShuffle(sorted, seed);
   const fresh    = shuffled.filter(q => !excludeIds.has(q.id));
   const age = new Map([...excludeIds].map((id, i) => [id, i]));
   const repeats = shuffled.filter(q => excludeIds.has(q.id))
     .sort((a, b) => age.get(a.id) - age.get(b.id));
-  return fresh.concat(repeats).slice(0, count);
+  return seededShuffle(pickBalanced([fresh, repeats], count, roundMix(pool)), seed ^ 0x5bd1e995);
+}
+
+// --- Daily history (meta/dailyHistory: {days: {"YYYY-MM-DD": [ids]}}) --------
+
+// How far back past daily pins are excluded when picking a new day. A rolling
+// window, not all-time: 10 pins/day for 180 days keeps ~1,800 IDs out of play,
+// safely under the ~2,200-question bank, and far longer than anyone remembers
+// a specific daily.
+const DAILY_HISTORY_DAYS = 180;
+
+function addDays(key, n) {
+  return new Date(Date.parse(key + 'T12:00:00Z') + n * 86400000).toISOString().slice(0, 10);
+}
+
+// Merges history maps, keeping dates >= since. Earlier maps win for a date
+// present in several (an existing entry is never rewritten), so pass the
+// stored history first.
+function mergeDailyHistory(since, ...maps) {
+  const out = {};
+  for (const m of maps) for (const [date, ids] of Object.entries(m || {})) {
+    if (date >= since && !Object.hasOwn(out, date) && Array.isArray(ids)) out[date] = ids;
+  }
+  return Object.fromEntries(Object.entries(out).sort(([a], [b]) => a.localeCompare(b)));
+}
+
+// Dates in [since, before) with no entry. An empty array marks a day nobody played.
+function missingHistoryDates(days, since, before) {
+  const out = [];
+  for (let d = since; d < before; d = addDays(d, 1)) if (!Object.hasOwn(days || {}, d)) out.push(d);
+  return out;
+}
+
+// Pinned IDs, oldest day first.
+function dailyHistoryIds(days) {
+  return Object.keys(days || {}).sort().flatMap(d => days[d]);
 }
 
 // Picks a random movie not in excludeIds. If that leaves nothing, falls back to the
@@ -319,8 +434,10 @@ function buildGameLogEntry({ mode, status, questionIds, answers, points, dateKey
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = {
     shuffle, SEEN_MAX, capSeenIds, pickRegularQuestions,
+    MIX_SHARES, CATEGORY_CAP_SHARE, MIN_ROUND_CATEGORIES, difficultyTargets, roundMix, pickBalanced,
     dayKey, todayKey, monthKey, prevMonthKey, computeDaysDiff, nextDailyStreak, homeworkWeekKey,
     seededShuffle, dateToSeed, pickDailyQuestions, pickMovie,
+    DAILY_HISTORY_DAYS, addDays, mergeDailyHistory, missingHistoryDates, dailyHistoryIds,
     SCORING, scoreBreakdown, buildCatStats, validQuestion,
     serializeAnswers, trailingStreak, reconcileDailyProgress, reconcileRegularCheckpoint,
     completedUnsavedGames, GAME_LOG_MAX, appendGameLog, buildGameLogEntry

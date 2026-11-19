@@ -1,4 +1,4 @@
-const APP_VERSION = '1.57';
+const APP_VERSION = '1.58';
 
 const _localMemory = new Map();
 let _localDurable = true;
@@ -108,37 +108,36 @@ function gameLogEntry(state, status, points, firstDaily) {
   } catch (e) { return null; }
 }
 
-// How far back to exclude past daily-challenge pins when generating a new
-// day's pick. A rolling window, not all-time: with a ~2,050-question corpus
-// and 10 exclusions added/day, permanent history would exhaust the corpus in
-// ~205 days and then silently fall back to zero exclusion every day after
-// (see getDailyQuestions' fresh/src fallback) — 180 days keeps ~1,800 IDs
-// excluded at steady state, safely under the corpus size, while still being
-// far longer than anyone will remember a specific daily's questions.
-const DAILY_HISTORY_DAYS = 180;
+// Exclusion set for generating a brand new day's daily-challenge pin, oldest
+// first: (a) every question pinned as a daily in the last DAILY_HISTORY_DAYS
+// days (game-logic.js), whether or not anyone played it, then (b) every
+// player's recently-seen IDs (`recentQuestionIds`, any mode, any device).
+// (a) is required: the first player's pick is saved for everyone and can never
+// be replaced, so if past pins can't be read this throws and the player is
+// asked to retry instead of saving an unprotected pick. Before 2026-11 it
+// failed open, which repeated 6 of 10 questions on 2026-11-03. (b) falls back
+// to this player's own lists, since other players' recent IDs are mostly
+// daily pins already covered by (a).
+async function dailyExclusionSet(date) {
+  const since=dayKey(DAILY_HISTORY_DAYS);
+  const [past,users]=await Promise.allSettled([storage.getDailyHistory(since,date),storage.getUsers()]);
+  if(past.status!=='fulfilled') throw new Error("Couldn't check recent challenges, so today's questions weren't picked yet. Check your connection and try again.");
+  const ids=new Set(), append=id=>{ids.delete(id);ids.add(id);};
+  dailyHistoryIds(past.value).forEach(append);
+  const players=users.status==='fulfilled' ? users.value : [currentUser];
+  players.forEach(u=>(u?.recentQuestionIds||[]).forEach(append));
+  if(currentUser) getSeenIds(currentUser.id).forEach(append);
+  return {ids,history:{since,days:past.value}};
+}
 
-// Exclusion set for generating a brand new day's daily-challenge pin: the
-// union of (a) every player's recently-seen question IDs (synced to each
-// user's Firestore doc as `recentQuestionIds`), so it doesn't repeat
-// something any player, in any mode, on any device, *just* played, and
-// (b) every question ID pinned as a daily challenge in the last
-// DAILY_HISTORY_DAYS days (`dailies/*`), regardless of whether anyone
-// actually played that day. (b) exists because (a) alone has two gaps: a
-// pinned daily nobody ever finishes/exits never marks its questions seen
-// anywhere, and (a) is capped at SEEN_MAX per user — heavy regular-game play
-// can push a genuinely-recent daily question out of that window well before
-// it should be eligible to repeat as a daily. Each source fails open
-// (silently contributes nothing) on its own read error — daily generation
-// must never be blocked by this.
-async function dailyExclusionSet() {
-  const ids = new Set();
-  const [past,users]=await Promise.allSettled([
-    storage.getAllDailyQuestionIds(dayKey(DAILY_HISTORY_DAYS)),storage.getUsers()
-  ]);
-  const append=id=>{ids.delete(id);ids.add(id);};
-  if(past.status==='fulfilled') past.value.forEach(append);
-  if(users.status==='fulfilled') users.value.forEach(u=>(u.recentQuestionIds||[]).forEach(append));
-  return ids;
+// Times this player has answered each question (questionStats, kept since
+// 2026-10-29; missed IDs count as at least once). Lets regular games serve
+// never-answered questions before ones that merely fell out of the recent 300.
+function answeredCounts(user) {
+  const counts=new Map();
+  for(const [id,s] of Object.entries(user?.questionStats||{})) counts.set(Number(id),s?.answered||1);
+  for(const id of user?.missedQuestionIds||[]) if(!counts.has(id)) counts.set(id,1);
+  return counts;
 }
 
 // --- Daily challenge in-progress state (per-device, per-user) ---
@@ -1148,9 +1147,9 @@ async function startDaily(date=todayKey(),pending=null) {
     if(!questions?.length) {
       questions=await storage.getDailyQuestions(date);
       if(!questions?.length) {
-        const exclusions=await dailyExclusionSet();
-        const candidates=pickDailyQuestions(QUESTIONS,date,10,exclusions);
-        questions=await storage.claimDailyQuestions(date,candidates,QUESTIONS.concat(RETIRED_QUESTIONS));
+        const {ids,history}=await dailyExclusionSet(date);
+        const candidates=pickDailyQuestions(QUESTIONS,date,10,ids);
+        questions=await storage.claimDailyQuestions(date,candidates,QUESTIONS.concat(RETIRED_QUESTIONS),history);
       }
     }
     if(!questions.length || !questions.every(validQuestion) || new Set(questions.map(q=>q.id)).size!==questions.length) throw new Error('This challenge could not be verified. Please try again.');
@@ -1230,7 +1229,7 @@ async function startRegularGame(practicePool=null) {
     if(epoch!==_navigationEpoch || currentUser?.id!==owner.id) return;
     const count=Math.min(gameSettings.questionCount,pool.length);
     gameState={gameId:newGameId(),userId:owner.id,resetRevision:owner.resetRevision||0,dateKey:todayKey(),
-      questions:pickRegularQuestions(pool,capSeenIds(owner.recentQuestionIds||[],getSeenIds(owner.id)),count),
+      questions:pickRegularQuestions(pool,capSeenIds(owner.recentQuestionIds||[],getSeenIds(owner.id)),count,Math.random,answeredCounts(owner)),
       currentIndex:0,answers:[],score:0,currentStreak:0,isDaily:false,isPractice:!!practicePool || _offlinePractice,pointsEarned:0,scoreBreakdown:null};
     renderGameQuestion();
   } finally {_startInFlight=false;}
