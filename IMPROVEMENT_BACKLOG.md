@@ -171,6 +171,8 @@ repeats with hundreds of questions never seen. Done: the daily refuses to pick
 without past pins (`meta/dailyHistory` cache + gap fill, rules added); both modes
 use `pickBalanced` (2/5/3, ≤30% per category, ≥5 categories, filters win); regular
 games serve never-answered questions first (`questionStats`). See DEVELOPMENT.md →
-Question selection. Not covered: answers before 2026-10-29 are only known through
+Question selection. Rules deployed and `meta/dailyHistory` seeded from production
+pins on 2026-11-19 (181 days: 145 pinned, 36 pre-launch marked empty), so the first
+v1.58 pick needs no full read. Not covered: answers before 2026-10-29 are only known through
 the 300-ID recent window; same-film clustering is unmeasured (`film` is on 339 of
 2,191 questions).
