@@ -1,4 +1,4 @@
-const APP_VERSION = '1.58';
+const APP_VERSION = '1.59';
 
 const _localMemory = new Map();
 let _localDurable = true;
@@ -111,7 +111,8 @@ function gameLogEntry(state, status, points, firstDaily) {
 // Exclusion set for generating a brand new day's daily-challenge pin, oldest
 // first: (a) every question pinned as a daily in the last DAILY_HISTORY_DAYS
 // days (game-logic.js), whether or not anyone played it, then (b) every
-// player's recently-seen IDs (`recentQuestionIds`, any mode, any device).
+// player's recently-seen IDs (`recentQuestionIds`, any mode, any device), plus
+// the surviving question for any of those that were retired as duplicates.
 // (a) is required: the first player's pick is saved for everyone and can never
 // be replaced, so if past pins can't be read this throws and the player is
 // asked to retry instead of saving an unprotected pick. Before 2026-11 it
@@ -127,7 +128,7 @@ async function dailyExclusionSet(date) {
   const players=users.status==='fulfilled' ? users.value : [currentUser];
   players.forEach(u=>(u?.recentQuestionIds||[]).forEach(append));
   if(currentUser) getSeenIds(currentUser.id).forEach(append);
-  return {ids,history:{since,days:past.value}};
+  return {ids:withReplacements(ids,RETIRED_QUESTIONS),history:{since,days:past.value}};
 }
 
 // Times this player has answered each question (questionStats, kept since

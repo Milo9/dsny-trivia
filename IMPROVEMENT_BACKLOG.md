@@ -113,6 +113,10 @@ walt 12, cruise 32, music 37, parks 44, characters 84, pixar 89, movies 125. Som
 Freaky Friday 1976). Use admin difficulty hints once attempts accrue; target easy in
 the thin categories.
 
+Update 2026-11-24 (#17): new easy labels re-reviewed, 26 moved to medium/hard. Easy is
+now 396 and is the daily's tightest resource, so a generation round aimed at genuinely
+easy questions is the most useful next content.
+
 **10. Formulaic cast questions.** ~31 "Who voices X in the original English-language
 Y (year)?" + ~35 "Who plays X in Y (year)?", many on obscure 1960s–70s live-action
 films. Decide if that's the desired flavor; if not, stop generating more rather than
@@ -176,3 +180,15 @@ pins on 2026-11-19 (181 days: 145 pinned, 36 pre-launch marked empty), so the fi
 v1.58 pick needs no full read. Not covered: answers before 2026-10-29 are only known through
 the 300-ID recent window; same-film clustering is unmeasured (`film` is on 339 of
 2,191 questions).
+
+**17. ✅ DONE 2026-11-24 (v1.59) — "Dailies got harder", plus a repeat gap.**
+Family accuracy fell from 59% (10-29 to 11-10) to 43% (11-11 to 11-24). About 5 of the
+16 points came from the 340 new questions (35% correct, 36% of dailies but 16% of the
+bank), 4 from an unusually easy early November, and 7 from older questions, unexplained
+(never-edited ones fell most; audit-edited ones held, 56% to 53%). The v1.58 picker did
+not cause it: the drop started a week earlier and its 2/5/3 matches the Aug-Oct average.
+Done: at most 1 new question per daily; 79 relabels (classic live-action round hard,
+audit/runs/release-1.59-difficulty-notes.md); retired duplicates also exclude their
+replacement (42 were eligible to repeat); a fast device clock can no longer blank a
+day's history. 2 easy per daily kept. Not covered: regular games don't map retired IDs
+to survivors. Revisit accuracy once v1.59 has ~3 weeks of receipts.

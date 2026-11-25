@@ -86,6 +86,8 @@ test('daily history backfills from dailies, records new pins, and never rewrites
   let days=await adapter.getDailyHistory('2026-09-20','2026-10-22');
   assert.deepEqual(Array.from(days['2026-10-01']),day(10,100).map(q=>q.id));
   assert.deepEqual(Array.from(days['2026-10-02']),[]);assert.ok(!('2026-09-01' in days));
+  // Recent gaps stay open: another player may still pin that day.
+  assert.ok(!('2026-10-21' in days));
   const pick=day(10,400);
   await adapter.claimDailyQuestions('2026-10-22',pick,pick,{since:'2026-09-20',days});
   const cache=(await db.collection('meta').doc('dailyHistory').get()).data().days;

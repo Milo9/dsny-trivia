@@ -72,19 +72,28 @@ wins over a later one, so freshness beats mix.
   touches at least 5 categories when 5 are available. When a tier runs dry, a
   medium stands in for a missing easy or hard, then limits relax in order.
   Player filters always win: a single-difficulty or single-category pool is not
-  balanced against itself. Easy is capped at 20% because the bank has ~420 easy
-  questions and the daily excludes 180 days of pins; a one-year simulation from
-  real 2026-11 data gave 2/5/3, at most 3 per category, at least 5 categories and
-  no repeats every day.
+  balanced against itself. Easy is capped at 20% because the bank has 396 easy
+  questions and the daily excludes 180 days of pins; a 500-day simulation from real
+  2026-11-24 data gave no repeats and 2/5/3 on every day but one (1/6/3 in 2028-02;
+  easy stock bottoms out at 36 fresh). Relabelling or retiring more easy questions
+  needs new ones, or a shorter `DAILY_HISTORY_DAYS` (170 removed the shortfall).
 - **Daily:** tiers are fresh, then excluded (oldest exclusion first). Exclusions are
   every pin of the last `DAILY_HISTORY_DAYS` (180) days plus every player's
-  `recentQuestionIds`. Past pins come from `meta/dailyHistory`, a small cache of
+  `recentQuestionIds`, plus the surviving question of any that were retired as
+  duplicates (`withReplacements` over `replacedBy`): without it a fact pinned under
+  its retired ID came back under the survivor (#242 2026-09-10, #656 2026-11-21).
+  Past pins come from `meta/dailyHistory`, a small cache of
   `dailies/*` written best effort after each claim; `getDailyHistory` fills
   missing days from `dailies/*` (one query when more than 14 are missing) and
-  records unplayed days as `[]`. **If past pins can't be read, the daily is not
+  records unplayed days as `[]`, but only those more than 7 days before the newest
+  pin (`unplayedDays`): recorded days are immutable, so a device with a fast clock
+  must not blank a day others will still play. **If past pins can't be read, the daily is not
   picked** and the player is asked to retry: the first pick is saved for
   everyone and is immutable. Failing open caused 4 repeats on 2026-10-13 and 6 on
   2026-11-03. Other players' recent IDs fall back to the current player's own.
+- **New questions:** a daily takes at most `MAX_NEW_PER_DAILY` (1) question with ID
+  >= `NEW_QUESTION_MIN_ID` (2656, the v1.48-v1.50 rounds), unless fresh older
+  questions run out. Uncapped they were 36% of dailies. Regular games are not capped.
 - **Regular games:** tiers are never answered by this player (`questionStats`,
   kept since 2026-10-29, and `missedQuestionIds`), then answered before but
   outside the recent window (fewest answers first), then the recent window (least

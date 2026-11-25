@@ -114,6 +114,46 @@ test('daily rounds are 2/5/3 with at most 3 per category and at least 5 categori
   }
 });
 
+test('a daily takes at most one new question, unless fresh questions run out', () => {
+  const base = mixedPool(), from = L.NEW_QUESTION_MIN_ID;
+  const recent = CATS.flatMap((c, ci) => ['easy','medium','hard'].flatMap((d, di) =>
+    Array.from({ length: 20 }, (_, i) => q(from + ci * 60 + di * 20 + i, d, c))));
+  const newIn = list => list.filter(x => x.id >= from).length;
+  let used = 0;
+  for (let i = 0, date = '2026-11-25'; i < 60; i++, date = L.addDays(date, 1)) {
+    const picked = L.pickDailyQuestions(base.concat(recent), date, 10);
+    assert.ok(newIn(picked) <= L.MAX_NEW_PER_DAILY, date);
+    used += newIn(picked);
+    assert.deepEqual(tally(picked, 'difficulty'), { easy: 2, medium: 5, hard: 3 });
+  }
+  assert.ok(used > 0);
+  // Every older question was used recently: fresh new ones beat repeats.
+  const spent = L.pickDailyQuestions(base.concat(recent), '2026-11-25', 10, new Set(base.map(x => x.id)));
+  assert.equal(newIn(spent), 10);
+  // Regular games are not capped.
+  assert.equal(newIn(L.pickRegularQuestions(recent, [], 10, seqRng(2))), 10);
+});
+
+test('a retired duplicate also excludes the question that replaced it', () => {
+  const retired = [{ id: 1, replacedBy: 2 }, { id: 2, replacedBy: 3 }, { id: 4 },
+    { id: 8, replacedBy: 9 }, { id: 9, replacedBy: 8 }];
+  assert.deepEqual([...L.withReplacements([1, 5], retired)], [1, 2, 3, 5]);
+  assert.deepEqual([...L.withReplacements(new Set([3, 5, 2]), retired)], [5, 2, 3]);
+  assert.deepEqual([...L.withReplacements([4, 8], retired)], [4, 8, 9]);
+  assert.deepEqual([...L.withReplacements([7], undefined)], [7]);
+});
+
+test('only settled gaps count as unplayed, so a fast clock cannot blank a live day', () => {
+  const days = { '2026-11-01': [1], '2026-11-20': [2], '2026-11-24': [3] };
+  const empties = L.unplayedDays(days, '2026-10-31', '2026-11-26');
+  assert.equal(empties[0], '2026-10-31');
+  assert.equal(empties.at(-1), '2026-11-16');
+  // A clock a year ahead still can't blank the days after the newest real pin.
+  assert.equal(L.unplayedDays(days, '2026-11-01', '2027-11-25').at(-1), '2026-11-16');
+  assert.deepEqual(L.unplayedDays({}, '2026-11-01', '2026-11-25'), []);
+  assert.deepEqual(L.unplayedDays({ '2026-11-02': [] }, '2026-11-01', '2026-11-25'), []);
+});
+
 test('freshness beats mix: excluded questions are only used once fresh ones run out', () => {
   const pool = mixedPool();
   const excl = new Set(pool.filter(x => x.difficulty !== 'hard').map(x => x.id));

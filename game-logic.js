@@ -29,7 +29,7 @@ function capSeenIds(seen, newIds, max = SEEN_MAX) {
 
 // Difficulty shares for a round whose pool has more than one difficulty:
 // 2 easy / 5 medium / 3 hard per 10. Easy stays at 20% because the bank has only
-// ~420 easy questions and the daily keeps 180 days of pins out of play.
+// ~400 easy questions and the daily keeps 180 days of pins out of play.
 const MIX_SHARES = { easy: 0.2, medium: 0.5, hard: 0.3 };
 // No category fills more than 30% of a round (3 of 10), unless too few
 // categories are in play for that to be possible.
@@ -64,23 +64,27 @@ const MIN_ROUND_CATEGORIES = 5;
 //   2. as 1, but a medium may stand in for a missing easy or hard
 //   3. category cap only
 //   4. anything
-function pickBalanced(tiers, count, { balanceDifficulty = true, categoryCount = 1 } = {}) {
+// Passes 1-3 also keep questions with id >= newFromId to at most maxNew.
+function pickBalanced(tiers, count, { balanceDifficulty = true, categoryCount = 1,
+                                      newFromId = Infinity, maxNew = Infinity } = {}) {
   const targets = balanceDifficulty ? difficultyTargets(count) : null;
   const cap = categoryCount > 1
     ? Math.max(Math.round(count * CATEGORY_CAP_SHARE), Math.ceil(count / categoryCount)) : Infinity;
   const minCats = Math.min(MIN_ROUND_CATEGORIES, categoryCount, Math.ceil(count / 2));
   const picked = [], ids = new Set(), byDiff = {}, byCat = {};
+  let newCount = 0;
   const diffOk = q => !targets || (byDiff[q.difficulty] || 0) < (targets[q.difficulty] || 0);
   const catOk = q => (byCat[q.category] || 0) < cap;
+  const newOk = q => q.id < newFromId || newCount < maxNew;
   // Taking q must leave enough slots to bring in the categories still missing.
   const spreadOk = q => {
     const distinct = Object.keys(byCat).length + (byCat[q.category] ? 0 : 1);
     return minCats - distinct <= count - picked.length - 1;
   };
   const passes = [
-    q => diffOk(q) && catOk(q) && spreadOk(q),
-    q => (diffOk(q) || q.difficulty === 'medium') && catOk(q) && spreadOk(q),
-    q => catOk(q),
+    q => diffOk(q) && catOk(q) && newOk(q) && spreadOk(q),
+    q => (diffOk(q) || q.difficulty === 'medium') && catOk(q) && newOk(q) && spreadOk(q),
+    q => catOk(q) && newOk(q),
     () => true
   ];
   for (const tier of tiers) for (const ok of passes) for (const q of tier) {
@@ -89,6 +93,7 @@ function pickBalanced(tiers, count, { balanceDifficulty = true, categoryCount = 
     picked.push(q); ids.add(q.id);
     byDiff[q.difficulty] = (byDiff[q.difficulty] || 0) + 1;
     byCat[q.category] = (byCat[q.category] || 0) + 1;
+    if (q.id >= newFromId) newCount++;
   }
   return picked;
 }
@@ -184,10 +189,32 @@ function dateToSeed(key) {
   return h;
 }
 
+// The generation rounds of 2026-11 (v1.48-v1.50) start at this id. They score well
+// below the older bank and, never having been pinned, made up a third of the
+// daily's fresh pool, so each daily takes at most one. After another generation
+// round, leave this unless the older rounds no longer need pacing.
+const NEW_QUESTION_MIN_ID = 2656;
+const MAX_NEW_PER_DAILY = 1;
+
+// Adds the active question that replaced each retired duplicate (following
+// chains), so a fact pinned under its retired id isn't asked again under the
+// surviving one. Keeps the order; a replacement's latest position wins.
+function withReplacements(ids, retired) {
+  const next = new Map((retired || []).filter(q => q.replacedBy).map(q => [q.id, q.replacedBy]));
+  const out = new Set(), append = id => { out.delete(id); out.add(id); };
+  for (const id of ids) {
+    append(id);
+    const visited = new Set([id]);
+    for (let r = next.get(id); r && !visited.has(r); r = next.get(r)) { visited.add(r); append(r); }
+  }
+  return out;
+}
+
 // Stable-sorts by id first so shard/load order doesn't affect the result.
 // Exclusions are insertion-ordered oldest first, allowing gradual cooldown
 // relaxation. Fresh questions always win over excluded ones; within each, the
-// round is balanced (pickBalanced) and the final order is shuffled by the date.
+// round is balanced and capped on new questions (pickBalanced), and the final
+// order is shuffled by the date.
 function pickDailyQuestions(pool, dateKeyStr, count = 10, excludeIds = new Set()) {
   const seed     = dateToSeed(dateKeyStr);
   const sorted   = [...pool].sort((a, b) => a.id - b.id);
@@ -196,7 +223,8 @@ function pickDailyQuestions(pool, dateKeyStr, count = 10, excludeIds = new Set()
   const age = new Map([...excludeIds].map((id, i) => [id, i]));
   const repeats = shuffled.filter(q => excludeIds.has(q.id))
     .sort((a, b) => age.get(a.id) - age.get(b.id));
-  return seededShuffle(pickBalanced([fresh, repeats], count, roundMix(pool)), seed ^ 0x5bd1e995);
+  return seededShuffle(pickBalanced([fresh, repeats], count,
+    { ...roundMix(pool), newFromId: NEW_QUESTION_MIN_ID, maxNew: MAX_NEW_PER_DAILY }), seed ^ 0x5bd1e995);
 }
 
 // --- Daily history (meta/dailyHistory: {days: {"YYYY-MM-DD": [ids]}}) --------
@@ -227,6 +255,16 @@ function missingHistoryDates(days, since, before) {
   const out = [];
   for (let d = since; d < before; d = addDays(d, 1)) if (!Object.hasOwn(days || {}, d)) out.push(d);
   return out;
+}
+
+// Missing days that can safely be recorded as unplayed ([]): only those more
+// than a week before the newest known pin. A recorded day can never be
+// rewritten, so a device whose clock runs ahead must not mark a day empty that
+// others are still about to play; newer gaps are simply re-read next time.
+const UNPLAYED_SETTLE_DAYS = 7;
+function unplayedDays(days, since, before) {
+  const latest = Object.keys(days || {}).filter(d => days[d].length && d < before).sort().pop();
+  return latest ? missingHistoryDates(days, since, addDays(latest, -UNPLAYED_SETTLE_DAYS)) : [];
 }
 
 // Pinned IDs, oldest day first.
@@ -436,8 +474,8 @@ if (typeof module !== 'undefined' && module.exports) {
     shuffle, SEEN_MAX, capSeenIds, pickRegularQuestions,
     MIX_SHARES, CATEGORY_CAP_SHARE, MIN_ROUND_CATEGORIES, difficultyTargets, roundMix, pickBalanced,
     dayKey, todayKey, monthKey, prevMonthKey, computeDaysDiff, nextDailyStreak, homeworkWeekKey,
-    seededShuffle, dateToSeed, pickDailyQuestions, pickMovie,
-    DAILY_HISTORY_DAYS, addDays, mergeDailyHistory, missingHistoryDates, dailyHistoryIds,
+    seededShuffle, dateToSeed, NEW_QUESTION_MIN_ID, MAX_NEW_PER_DAILY, withReplacements, pickDailyQuestions, pickMovie,
+    DAILY_HISTORY_DAYS, addDays, mergeDailyHistory, missingHistoryDates, unplayedDays, dailyHistoryIds,
     SCORING, scoreBreakdown, buildCatStats, validQuestion,
     serializeAnswers, trailingStreak, reconcileDailyProgress, reconcileRegularCheckpoint,
     completedUnsavedGames, GAME_LOG_MAX, appendGameLog, buildGameLogEntry

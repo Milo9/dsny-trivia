@@ -221,7 +221,7 @@ class FirebaseAdapter {
   // Reads the small meta/dailyHistory cache, then fills gaps from dailies/*
   // directly: a few missing days one by one, many (first run, or an old app
   // version pinned days without recording them) with one query. Days with no
-  // pin are recorded as [] so they aren't re-read. Throws if the pins can't be
+  // pin are recorded as [] once old enough (unplayedDays) so they aren't re-read. Throws if the pins can't be
   // read; the caller must not pick a new daily without them.
   async getDailyHistory(since,before) {
     return this._withTimeout(async()=>{
@@ -237,7 +237,7 @@ class FirebaseAdapter {
         const docs=await Promise.all(missing.map(d=>this.db.collection('dailies').doc(d).get()));
         days=mergeDailyHistory(since,days,Object.fromEntries(docs.filter(d=>d.exists).map(d=>[d.id,d.data().questionIds||[]])));
       }
-      return mergeDailyHistory(since,days,Object.fromEntries(missingHistoryDates(days,since,before).map(d=>[d,[]])));
+      return mergeDailyHistory(since,days,Object.fromEntries(unplayedDays(days,since,before).map(d=>[d,[]])));
     },{attempts:3,timeoutMs:10000});
   }
   async getHomeworkState() {
