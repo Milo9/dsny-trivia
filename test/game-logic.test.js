@@ -115,10 +115,11 @@ test('daily rounds are 2/5/3 with at most 3 per category and at least 5 categori
 });
 
 test('a daily takes at most one new question, unless fresh questions run out', () => {
-  const base = mixedPool(), from = L.NEW_QUESTION_MIN_ID;
+  const base = mixedPool(), from = L.NEW_QUESTION_MIN_ID, to = L.NEW_QUESTION_MAX_ID;
   const recent = CATS.flatMap((c, ci) => ['easy','medium','hard'].flatMap((d, di) =>
-    Array.from({ length: 20 }, (_, i) => q(from + ci * 60 + di * 20 + i, d, c))));
-  const newIn = list => list.filter(x => x.id >= from).length;
+    Array.from({ length: 14 }, (_, i) => q(from + ci * 42 + di * 14 + i, d, c))));
+  assert.ok(recent.every(x => x.id >= from && x.id <= to));
+  const newIn = list => list.filter(x => x.id >= from && x.id <= to).length;
   let used = 0;
   for (let i = 0, date = '2026-11-25'; i < 60; i++, date = L.addDays(date, 1)) {
     const picked = L.pickDailyQuestions(base.concat(recent), date, 10);
@@ -132,6 +133,19 @@ test('a daily takes at most one new question, unless fresh questions run out', (
   assert.equal(newIn(spent), 10);
   // Regular games are not capped.
   assert.equal(newIn(L.pickRegularQuestions(recent, [], 10, seqRng(2))), 10);
+});
+
+test('the new-question cap has an upper bound: later rounds are not paced', () => {
+  const to = L.NEW_QUESTION_MAX_ID;
+  const pool = first => CATS.flatMap((c, ci) => ['easy','medium','hard'].flatMap((d, di) =>
+    Array.from({ length: 5 }, (_, i) => q(first + ci * 15 + di * 5 + i, d, c))));
+  const opts = { newFromId: L.NEW_QUESTION_MIN_ID, newToId: to, maxNew: 1, categoryCount: 7 };
+  const later = L.pickBalanced([pool(to + 1)], 10, opts);
+  assert.deepEqual(tally(later, 'difficulty'), { easy: 2, medium: 5, hard: 3 });
+  // One paced question, then later ones fill the round, with the boundary id still paced.
+  const paced = [q(to, 'easy', 'walt'), q(to - 1, 'easy', 'parks')];
+  const mixed = L.pickBalanced([[...paced, ...pool(to + 1)]], 10, opts);
+  assert.deepEqual(ids(mixed).filter(id => id <= to), [to]);
 });
 
 test('a retired duplicate also excludes the question that replaced it', () => {

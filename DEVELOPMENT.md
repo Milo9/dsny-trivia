@@ -92,8 +92,9 @@ wins over a later one, so freshness beats mix.
   everyone and is immutable. Failing open caused 4 repeats on 2026-10-13 and 6 on
   2026-11-03. Other players' recent IDs fall back to the current player's own.
 - **New questions:** a daily takes at most `MAX_NEW_PER_DAILY` (1) question with ID
-  >= `NEW_QUESTION_MIN_ID` (2656, the v1.48-v1.50 rounds), unless fresh older
-  questions run out. Uncapped they were 36% of dailies. Regular games are not capped.
+  from `NEW_QUESTION_MIN_ID` (2656) to `NEW_QUESTION_MAX_ID` (2995), the v1.48-v1.50
+  rounds, unless fresh uncapped questions run out. Uncapped they were 36% of dailies.
+  Later rounds (the 2996+ easy batch) and regular games are not capped.
 - **Regular games:** tiers are never answered by this player (`questionStats`,
   kept since 2026-10-29, and `missedQuestionIds`), then answered before but
   outside the recent window (fewest answers first), then the recent window (least
@@ -131,7 +132,7 @@ first two players fit at 375x667 (~60 px spare) and at Safari's ~548 px usable
 height. The browser suite asserts the 667 px case and prints 647/548 px positions.
 The service worker never caches the admin page or update probes.
 
-There are 2,191 active questions plus 189 preserved retired snapshots in the
+There are 2,391 active questions plus 189 preserved retired snapshots in the
 working bank after forty-two sequential audit batches and four generation rounds
 adding 340 questions. The latest 100 questions cover 16 live-action films, two
 Pixar features, Disneyland Paris and Disney Adventure. See
@@ -151,7 +152,7 @@ Optional question metadata:
 ```
 
 Fact IDs must be unique across active questions. Sources must be HTTPS. There are 347
-active questions with verified explanations and links. All 2,191 active questions
+active questions with verified explanations and links. All 2,391 active questions
 now have current manual review and four-option evidence; explanations and links
 embedded in the playable question objects remain incremental metadata.
 The admin page exports difficulty recommendations once a question has at least
@@ -218,8 +219,12 @@ Release v1.55 tiers scheduled rechecks (QUESTION_AUDIT.md rule 7, backlog #5): t
 220 rechecks due 2027-01/02 became 48 historical (no recheck), 11 changeable (due
 2027-01/02) and 158 stable (staggered 2027-07..10, ~50/month), and #2560, #2561
 and #2277 (single-listing questions) were retired without replacement, leaving
-2,191 approved active questions. `status` prints the upcoming recheck calendar.
+2,391 approved active questions. `status` prints the upcoming recheck calendar.
 See audit/runs/2026-11-12-recheck-tiers-notes.md.
+
+Release v1.60 publishes generation round 5: 200 easy questions (IDs 2996-3195) in the
+new q-011.json, and bounds the daily new-question cap at ID 2995. See
+audit/runs/generation-0005-notes.md.
 
 Release v1.52 removes answer giveaways from ten questions, replaces #2432's
 implausible distractors, and retires #976 (leak; duplicate of #1399's fact), leaving

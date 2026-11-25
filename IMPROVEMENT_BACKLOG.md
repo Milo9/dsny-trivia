@@ -193,7 +193,10 @@ replacement (42 were eligible to repeat); a fast device clock can no longer blan
 day's history. 2 easy per daily kept. Not covered: regular games don't map retired IDs
 to survivors. Revisit accuracy once v1.59 has ~3 weeks of receipts.
 
-**18. NEXT (owner request 2026-11-24) — Generate 200 easy questions.** Read
-audit/runs/generation-0005-brief.md first. It has the start state, what "easy" must
-mean, where there is room, and one required code change: the daily's new-question cap
-must get an upper bound (2995) or the batch barely reaches the daily.
+**18. ✅ DONE 2026-11-25 (v1.60) — Generate 200 easy questions.** IDs 2996-3195 in
+q-011.json: 75 movies, 44 characters, 35 pixar, 19 music, 16 parks, 6 walt, 5 cruise.
+Easy is now 596 of 2,391. The daily's new-question cap ends at ID 2995; simulated
+dailies take 0.9-1.3 of the new questions a day (at most 2) with no repeats. The walt
+and cruise shares are small because most famous facts there were already asked. The
+"famous title, few easy" table in the brief is mostly used up; next easy supply should
+come from relabelling headline mediums. Check accuracy around 2026-12-15 (see the brief).

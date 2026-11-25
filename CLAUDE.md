@@ -41,7 +41,7 @@ The owner explicitly declined accounts/passwords. Preserve that choice.
 | `_config.yml` | Jekyll excludes for GitHub Pages: keeps `audit/`, `docs/`, `scripts/`, `test/`, `*.md` off the published site. Runtime files must stay outside those paths. |
 | `firestore.rules`, `firebase.json` | Versioned rules; deployed separately (see SECURITY.md). |
 | `questions/manifest.json` | `{shards: [...], retired: "questions/retired.json"}`. |
-| `questions/q-001…q-010.json` | Active questions, one compact object per line. |
+| `questions/q-001…q-011.json` | Active questions, one compact object per line. |
 | `questions/retired.json` | Preserved snapshots of removed questions (needed for old dailies/checkpoints). |
 | `movies.json` | Weekly Homework movie pool. |
 | `audit/` | Question-audit ledger, baseline, queue and run records (managed by `scripts/question_audit.py`). |

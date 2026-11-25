@@ -64,9 +64,9 @@ const MIN_ROUND_CATEGORIES = 5;
 //   2. as 1, but a medium may stand in for a missing easy or hard
 //   3. category cap only
 //   4. anything
-// Passes 1-3 also keep questions with id >= newFromId to at most maxNew.
+// Passes 1-3 also keep questions with id from newFromId to newToId to at most maxNew.
 function pickBalanced(tiers, count, { balanceDifficulty = true, categoryCount = 1,
-                                      newFromId = Infinity, maxNew = Infinity } = {}) {
+                                      newFromId = Infinity, newToId = Infinity, maxNew = Infinity } = {}) {
   const targets = balanceDifficulty ? difficultyTargets(count) : null;
   const cap = categoryCount > 1
     ? Math.max(Math.round(count * CATEGORY_CAP_SHARE), Math.ceil(count / categoryCount)) : Infinity;
@@ -75,7 +75,8 @@ function pickBalanced(tiers, count, { balanceDifficulty = true, categoryCount = 
   let newCount = 0;
   const diffOk = q => !targets || (byDiff[q.difficulty] || 0) < (targets[q.difficulty] || 0);
   const catOk = q => (byCat[q.category] || 0) < cap;
-  const newOk = q => q.id < newFromId || newCount < maxNew;
+  const isNew = q => q.id >= newFromId && q.id <= newToId;
+  const newOk = q => !isNew(q) || newCount < maxNew;
   // Taking q must leave enough slots to bring in the categories still missing.
   const spreadOk = q => {
     const distinct = Object.keys(byCat).length + (byCat[q.category] ? 0 : 1);
@@ -93,7 +94,7 @@ function pickBalanced(tiers, count, { balanceDifficulty = true, categoryCount = 
     picked.push(q); ids.add(q.id);
     byDiff[q.difficulty] = (byDiff[q.difficulty] || 0) + 1;
     byCat[q.category] = (byCat[q.category] || 0) + 1;
-    if (q.id >= newFromId) newCount++;
+    if (isNew(q)) newCount++;
   }
   return picked;
 }
@@ -189,11 +190,12 @@ function dateToSeed(key) {
   return h;
 }
 
-// The generation rounds of 2026-11 (v1.48-v1.50) start at this id. They score well
+// The generation rounds of 2026-11 (v1.48-v1.50) have these ids. They score well
 // below the older bank and, never having been pinned, made up a third of the
-// daily's fresh pool, so each daily takes at most one. After another generation
-// round, leave this unless the older rounds no longer need pacing.
+// daily's fresh pool, so each daily takes at most one. Later rounds have higher ids
+// and are not capped; leave these bounds unless the paced rounds no longer need it.
 const NEW_QUESTION_MIN_ID = 2656;
+const NEW_QUESTION_MAX_ID = 2995;
 const MAX_NEW_PER_DAILY = 1;
 
 // Adds the active question that replaced each retired duplicate (following
@@ -224,7 +226,7 @@ function pickDailyQuestions(pool, dateKeyStr, count = 10, excludeIds = new Set()
   const repeats = shuffled.filter(q => excludeIds.has(q.id))
     .sort((a, b) => age.get(a.id) - age.get(b.id));
   return seededShuffle(pickBalanced([fresh, repeats], count,
-    { ...roundMix(pool), newFromId: NEW_QUESTION_MIN_ID, maxNew: MAX_NEW_PER_DAILY }), seed ^ 0x5bd1e995);
+    { ...roundMix(pool), newFromId: NEW_QUESTION_MIN_ID, newToId: NEW_QUESTION_MAX_ID, maxNew: MAX_NEW_PER_DAILY }), seed ^ 0x5bd1e995);
 }
 
 // --- Daily history (meta/dailyHistory: {days: {"YYYY-MM-DD": [ids]}}) --------
@@ -474,7 +476,7 @@ if (typeof module !== 'undefined' && module.exports) {
     shuffle, SEEN_MAX, capSeenIds, pickRegularQuestions,
     MIX_SHARES, CATEGORY_CAP_SHARE, MIN_ROUND_CATEGORIES, difficultyTargets, roundMix, pickBalanced,
     dayKey, todayKey, monthKey, prevMonthKey, computeDaysDiff, nextDailyStreak, homeworkWeekKey,
-    seededShuffle, dateToSeed, NEW_QUESTION_MIN_ID, MAX_NEW_PER_DAILY, withReplacements, pickDailyQuestions, pickMovie,
+    seededShuffle, dateToSeed, NEW_QUESTION_MIN_ID, NEW_QUESTION_MAX_ID, MAX_NEW_PER_DAILY, withReplacements, pickDailyQuestions, pickMovie,
     DAILY_HISTORY_DAYS, addDays, mergeDailyHistory, missingHistoryDates, unplayedDays, dailyHistoryIds,
     SCORING, scoreBreakdown, buildCatStats, validQuestion,
     serializeAnswers, trailingStreak, reconcileDailyProgress, reconcileRegularCheckpoint,
