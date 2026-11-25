@@ -192,3 +192,8 @@ audit/runs/release-1.59-difficulty-notes.md); retired duplicates also exclude th
 replacement (42 were eligible to repeat); a fast device clock can no longer blank a
 day's history. 2 easy per daily kept. Not covered: regular games don't map retired IDs
 to survivors. Revisit accuracy once v1.59 has ~3 weeks of receipts.
+
+**18. NEXT (owner request 2026-11-24) — Generate 200 easy questions.** Read
+audit/runs/generation-0005-brief.md first. It has the start state, what "easy" must
+mean, where there is room, and one required code change: the daily's new-question cap
+must get an upper bound (2995) or the batch barely reaches the daily.
